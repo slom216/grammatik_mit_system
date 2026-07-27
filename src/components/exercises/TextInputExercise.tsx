@@ -22,6 +22,12 @@ export function TextInputExercise({
   const fieldRef = useRef<HTMLInputElement | HTMLTextAreaElement>(null);
   const pendingCaret = useRef<number | null>(null);
 
+  // Focuses the field as soon as this exercise appears, so learners can start
+  // typing straight away instead of having to click into it first.
+  useEffect(() => {
+    fieldRef.current?.focus();
+  }, []);
+
   // Restores the caret after a helper insertion, once React has written the
   // new value to the DOM.
   useEffect(() => {

@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it } from 'vitest';
-import { act, screen, within } from '@testing-library/react';
+import { act, screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { PracticePage } from './PracticePage';
 import { renderWithRouter } from '../test/helpers/renderWithRouter';
@@ -14,13 +14,23 @@ function renderPractice() {
   });
 }
 
-/** Answers the current single-choice exercise correctly and moves on. */
+/**
+ * Selects a single-choice option. The answer is checked automatically a
+ * moment after selection, with no separate submit step.
+ */
+async function selectOption(user: ReturnType<typeof userEvent.setup>, text: string) {
+  await user.click(screen.getByRole('radio', { name: new RegExp(text) }));
+}
+
+/** Answers the current single-choice exercise correctly and waits for feedback. */
 async function answerChoiceCorrectly(
   user: ReturnType<typeof userEvent.setup>,
   text: string,
 ) {
-  await user.click(screen.getByRole('radio', { name: new RegExp(text) }));
-  await user.click(screen.getByRole('button', { name: /check answer/i }));
+  await selectOption(user, text);
+  await waitFor(() =>
+    expect(screen.getByTestId('exercise-feedback')).toHaveTextContent('Correct'),
+  );
 }
 
 describe('PracticePage', () => {
@@ -42,15 +52,14 @@ describe('PracticePage', () => {
     expect(screen.getByRole('progressbar')).toHaveAttribute('aria-valuenow', '0');
   });
 
-  it('keeps the submit button disabled until an option is selected', async () => {
+  it('checks a single-choice answer automatically, with no submit button', async () => {
     const user = userEvent.setup();
     renderPractice();
 
-    const submit = screen.getByRole('button', { name: /check answer/i });
-    expect(submit).toBeDisabled();
+    expect(screen.queryByRole('button', { name: /check answer/i })).not.toBeInTheDocument();
 
-    await user.click(screen.getByRole('radio', { name: /wir/ }));
-    expect(submit).toBeEnabled();
+    await answerChoiceCorrectly(user, 'wir');
+    expect(within(screen.getByTestId('exercise-feedback')).getByText('Correct')).toBeInTheDocument();
   });
 
   it('scores a correct first attempt with one point and shows feedback', async () => {
@@ -72,10 +81,10 @@ describe('PracticePage', () => {
     const user = userEvent.setup();
     renderPractice();
 
-    await user.click(screen.getByRole('radio', { name: /^ihr$/ }));
-    await user.click(screen.getByRole('button', { name: /check answer/i }));
-
-    expect(screen.getByTestId('exercise-feedback')).toHaveTextContent('Not correct yet');
+    await selectOption(user, '^ihr$');
+    await waitFor(() =>
+      expect(screen.getByTestId('exercise-feedback')).toHaveTextContent('Not correct yet'),
+    );
     expect(screen.getByText(/one more attempt/i)).toBeInTheDocument();
     expect(usePracticeStore.getState().results['demo-ex-01']).toBeUndefined();
 
@@ -91,13 +100,16 @@ describe('PracticePage', () => {
     const user = userEvent.setup();
     renderPractice();
 
-    await user.click(screen.getByRole('radio', { name: /^ihr$/ }));
-    await user.click(screen.getByRole('button', { name: /check answer/i }));
+    await selectOption(user, '^ihr$');
+    await waitFor(() =>
+      expect(screen.getByTestId('exercise-feedback')).toHaveTextContent('Not correct yet'),
+    );
     await user.click(screen.getByRole('button', { name: /try again/i }));
-    await user.click(screen.getByRole('radio', { name: /^sie$/ }));
-    await user.click(screen.getByRole('button', { name: /check answer/i }));
+    await selectOption(user, '^sie$');
+    await waitFor(() =>
+      expect(screen.getByTestId('exercise-feedback')).toHaveTextContent(/Expected answer/),
+    );
 
-    expect(screen.getByTestId('exercise-feedback')).toHaveTextContent(/Expected answer/);
     expect(usePracticeStore.getState().results['demo-ex-01']?.outcome).toBe('incorrect');
     expect(screen.queryByRole('button', { name: /try again/i })).not.toBeInTheDocument();
   });
@@ -106,8 +118,10 @@ describe('PracticePage', () => {
     const user = userEvent.setup();
     renderPractice();
 
-    await user.click(screen.getByRole('radio', { name: /^ihr$/ }));
-    await user.click(screen.getByRole('button', { name: /check answer/i }));
+    await selectOption(user, '^ihr$');
+    await waitFor(() =>
+      expect(screen.getByTestId('exercise-feedback')).toHaveTextContent('Not correct yet'),
+    );
     await user.click(screen.getByRole('button', { name: /show answer/i }));
 
     const feedback = screen.getByTestId('exercise-feedback');
@@ -183,8 +197,10 @@ describe('PracticePage', () => {
     await user.keyboard(' '); // select with the space bar
     expect(screen.getByRole('radio', { name: /wir/ })).toBeChecked();
 
-    await user.keyboard('{Enter}'); // submit the form
-    expect(screen.getByTestId('exercise-feedback')).toHaveTextContent('Correct');
+    // The answer is checked automatically a moment after selection.
+    await waitFor(() =>
+      expect(screen.getByTestId('exercise-feedback')).toHaveTextContent('Correct'),
+    );
 
     // Feedback receives focus so screen-reader users land on it.
     expect(screen.getByTestId('exercise-feedback')).toHaveFocus();

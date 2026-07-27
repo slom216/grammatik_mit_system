@@ -2,6 +2,8 @@ import { Button } from '../common/Button';
 
 export interface ExerciseNavigationProps {
   canSubmit: boolean;
+  /** False when the answer is submitted automatically on selection (e.g. single choice). */
+  showCheckAnswer: boolean;
   resolved: boolean;
   canRetry: boolean;
   isLast: boolean;
@@ -14,6 +16,7 @@ export interface ExerciseNavigationProps {
 
 export function ExerciseNavigation({
   canSubmit,
+  showCheckAnswer,
   resolved,
   canRetry,
   isLast,
@@ -26,7 +29,7 @@ export function ExerciseNavigation({
   return (
     <div className="exercise-navigation">
       <div className="row">
-        {!resolved && !canRetry && (
+        {showCheckAnswer && !resolved && !canRetry && (
           <Button type="submit" disabled={!canSubmit}>
             Check answer
           </Button>

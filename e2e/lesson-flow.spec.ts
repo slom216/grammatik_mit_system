@@ -21,14 +21,15 @@ async function answerCurrentExercise(page: Page, index: number) {
   );
 
   if (exercise.type === 'singleChoice') {
+    // Selecting an option checks it immediately, with no separate submit step.
     await page
       .getByRole('radio', { name: correctAnswerFor(exercise), exact: true })
       .check();
   } else {
     await page.getByRole('textbox').fill(correctAnswerFor(exercise));
+    await page.getByRole('button', { name: 'Check answer' }).click();
   }
 
-  await page.getByRole('button', { name: 'Check answer' }).click();
   await expect(page.getByTestId('exercise-feedback')).toContainText('Correct');
 }
 
@@ -98,7 +99,6 @@ test.describe('lesson flow', () => {
     );
 
     await page.getByRole('radio', { name: distractor?.text ?? '', exact: true }).check();
-    await page.getByRole('button', { name: 'Check answer' }).click();
 
     const feedback = page.getByTestId('exercise-feedback');
     await expect(feedback).toContainText('Not correct yet');
@@ -177,14 +177,13 @@ test.describe('lesson flow', () => {
       await page.keyboard.press('Tab');
     }
     // Options may be shuffled, so walk the radio group with the arrow keys.
+    // The answer is checked automatically a moment after the selection
+    // settles, so no separate submit action is needed.
     const correctOption = page.getByRole('radio', { name: 'wir', exact: true });
-    await page.keyboard.press('Space');
     for (let step = 0; step < 5 && !(await correctOption.isChecked()); step += 1) {
       await page.keyboard.press('ArrowDown');
     }
     await expect(correctOption).toBeChecked();
-
-    await page.keyboard.press('Enter'); // submits the form
     await expect(page.getByTestId('exercise-feedback')).toContainText('Correct');
 
     await page.keyboard.press('Tab');
