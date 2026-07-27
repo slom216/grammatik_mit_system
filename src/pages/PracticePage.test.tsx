@@ -1,0 +1,245 @@
+import { beforeEach, describe, expect, it } from 'vitest';
+import { act, screen, within } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { PracticePage } from './PracticePage';
+import { renderWithRouter } from '../test/helpers/renderWithRouter';
+import { usePracticeStore } from '../features/practice/practiceStore';
+import { useProgressStore } from '../features/progress/progressStore';
+import { useSettingsStore } from '../features/settings/settingsStore';
+
+function renderPractice() {
+  return renderWithRouter(<PracticePage />, {
+    route: '/chapter/0/practice',
+    path: '/chapter/:chapterNumber/practice',
+  });
+}
+
+/** Answers the current single-choice exercise correctly and moves on. */
+async function answerChoiceCorrectly(
+  user: ReturnType<typeof userEvent.setup>,
+  text: string,
+) {
+  await user.click(screen.getByRole('radio', { name: new RegExp(text) }));
+  await user.click(screen.getByRole('button', { name: /check answer/i }));
+}
+
+describe('PracticePage', () => {
+  beforeEach(() => {
+    window.localStorage.clear();
+    useProgressStore.getState().resetProgress();
+    usePracticeStore.getState().exitSession();
+    useSettingsStore.setState({ shuffleOptions: false });
+  });
+
+  it('starts a session and shows the first exercise', () => {
+    renderPractice();
+
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(/practice/i);
+    expect(screen.getByTestId('exercise-counter')).toHaveTextContent(
+      'Exercise 1 of 24 · multiple choice',
+    );
+    expect(screen.getByText('Wir sind heute zu Hause.')).toBeInTheDocument();
+    expect(screen.getByRole('progressbar')).toHaveAttribute('aria-valuenow', '0');
+  });
+
+  it('keeps the submit button disabled until an option is selected', async () => {
+    const user = userEvent.setup();
+    renderPractice();
+
+    const submit = screen.getByRole('button', { name: /check answer/i });
+    expect(submit).toBeDisabled();
+
+    await user.click(screen.getByRole('radio', { name: /wir/ }));
+    expect(submit).toBeEnabled();
+  });
+
+  it('scores a correct first attempt with one point and shows feedback', async () => {
+    const user = userEvent.setup();
+    renderPractice();
+
+    await answerChoiceCorrectly(user, 'wir');
+
+    const feedback = screen.getByTestId('exercise-feedback');
+    expect(within(feedback).getByText('Correct')).toBeInTheDocument();
+    expect(feedback).toHaveTextContent(/The subject of the sentence is wir/);
+
+    const result = usePracticeStore.getState().results['demo-ex-01'];
+    expect(result?.outcome).toBe('correctFirstAttempt');
+    expect(result?.score).toBe(1);
+  });
+
+  it('offers a second attempt after a wrong answer and scores it with half a point', async () => {
+    const user = userEvent.setup();
+    renderPractice();
+
+    await user.click(screen.getByRole('radio', { name: /^ihr$/ }));
+    await user.click(screen.getByRole('button', { name: /check answer/i }));
+
+    expect(screen.getByTestId('exercise-feedback')).toHaveTextContent('Not correct yet');
+    expect(screen.getByText(/one more attempt/i)).toBeInTheDocument();
+    expect(usePracticeStore.getState().results['demo-ex-01']).toBeUndefined();
+
+    await user.click(screen.getByRole('button', { name: /try again/i }));
+    await answerChoiceCorrectly(user, 'wir');
+
+    const result = usePracticeStore.getState().results['demo-ex-01'];
+    expect(result?.outcome).toBe('correctSecondAttempt');
+    expect(result?.score).toBe(0.5);
+  });
+
+  it('shows the expected answer after the second incorrect attempt', async () => {
+    const user = userEvent.setup();
+    renderPractice();
+
+    await user.click(screen.getByRole('radio', { name: /^ihr$/ }));
+    await user.click(screen.getByRole('button', { name: /check answer/i }));
+    await user.click(screen.getByRole('button', { name: /try again/i }));
+    await user.click(screen.getByRole('radio', { name: /^sie$/ }));
+    await user.click(screen.getByRole('button', { name: /check answer/i }));
+
+    expect(screen.getByTestId('exercise-feedback')).toHaveTextContent(/Expected answer/);
+    expect(usePracticeStore.getState().results['demo-ex-01']?.outcome).toBe('incorrect');
+    expect(screen.queryByRole('button', { name: /try again/i })).not.toBeInTheDocument();
+  });
+
+  it('reveals the answer on request and scores it with zero', async () => {
+    const user = userEvent.setup();
+    renderPractice();
+
+    await user.click(screen.getByRole('radio', { name: /^ihr$/ }));
+    await user.click(screen.getByRole('button', { name: /check answer/i }));
+    await user.click(screen.getByRole('button', { name: /show answer/i }));
+
+    const feedback = screen.getByTestId('exercise-feedback');
+    expect(feedback).toHaveTextContent('Answer shown');
+    expect(feedback).toHaveTextContent('wir');
+    expect(usePracticeStore.getState().results['demo-ex-01']?.outcome).toBe('revealed');
+    expect(usePracticeStore.getState().results['demo-ex-01']?.score).toBe(0);
+  });
+
+  it('moves to the next exercise and updates the progress bar', async () => {
+    const user = userEvent.setup();
+    renderPractice();
+
+    await answerChoiceCorrectly(user, 'wir');
+    await user.click(screen.getByRole('button', { name: /next exercise/i }));
+
+    expect(screen.getByTestId('exercise-counter')).toHaveTextContent('Exercise 2 of 24');
+    expect(screen.getByRole('progressbar')).toHaveAttribute('aria-valuenow', '1');
+    expect(screen.queryByTestId('exercise-feedback')).not.toBeInTheDocument();
+  });
+
+  it('checks a text answer, keeps it visible and accepts a retry', async () => {
+    const user = userEvent.setup();
+    renderPractice();
+
+    // Jump to the first text-input exercise.
+    act(() => usePracticeStore.setState({ currentIndex: 12 }));
+
+    const field = screen.getByLabelText('Ich ___ heute müde.');
+    await user.type(field, 'bist');
+    await user.click(screen.getByRole('button', { name: /check answer/i }));
+
+    const feedback = screen.getByTestId('exercise-feedback');
+    expect(feedback).toHaveTextContent('Not correct yet');
+    expect(feedback).toHaveTextContent('bist');
+    expect(field).toHaveValue('bist');
+
+    await user.click(screen.getByRole('button', { name: /try again/i }));
+    await user.clear(field);
+    await user.type(field, 'bin');
+    await user.click(screen.getByRole('button', { name: /check answer/i }));
+
+    expect(screen.getByTestId('exercise-feedback')).toHaveTextContent('Correct');
+    expect(usePracticeStore.getState().results['demo-ex-13']?.outcome).toBe(
+      'correctSecondAttempt',
+    );
+  });
+
+  it('writes umlauts through the helper buttons', async () => {
+    const user = userEvent.setup();
+    renderPractice();
+
+    act(() => usePracticeStore.setState({ currentIndex: 22 }));
+
+    const field = screen.getByLabelText(/You \(several friends\) are late/);
+    await user.type(field, 'Ihr seid sp');
+    await user.click(screen.getByRole('button', { name: /insert a umlaut, lowercase/i }));
+    await user.type(field, 't.');
+
+    expect(field).toHaveValue('Ihr seid spät.');
+
+    await user.click(screen.getByRole('button', { name: /check answer/i }));
+    expect(screen.getByTestId('exercise-feedback')).toHaveTextContent('Correct');
+  });
+
+  it('can be completed with the keyboard alone', async () => {
+    const user = userEvent.setup();
+    renderPractice();
+
+    await user.tab(); // first radio option
+    expect(screen.getByRole('radio', { name: /wir/ })).toHaveFocus();
+
+    await user.keyboard(' '); // select with the space bar
+    expect(screen.getByRole('radio', { name: /wir/ })).toBeChecked();
+
+    await user.keyboard('{Enter}'); // submit the form
+    expect(screen.getByTestId('exercise-feedback')).toHaveTextContent('Correct');
+
+    // Feedback receives focus so screen-reader users land on it.
+    expect(screen.getByTestId('exercise-feedback')).toHaveFocus();
+
+    await user.tab();
+    await user.keyboard('{Enter}');
+    expect(screen.getByTestId('exercise-counter')).toHaveTextContent('Exercise 2 of 24');
+  });
+
+  it('asks for confirmation before leaving and resumes the session afterwards', async () => {
+    const user = userEvent.setup();
+    const view = renderPractice();
+
+    await answerChoiceCorrectly(user, 'wir');
+    await user.click(screen.getByRole('button', { name: /next exercise/i }));
+    await user.click(screen.getByRole('button', { name: /exit practice/i }));
+
+    const dialog = screen.getByRole('dialog');
+    expect(dialog).toHaveTextContent(/leave this practice session/i);
+
+    await user.click(within(dialog).getByRole('button', { name: /leave practice/i }));
+    expect(usePracticeStore.getState().status).toBe('idle');
+
+    // Simulate a page refresh: unmount, clear the in-memory session, remount.
+    view.unmount();
+    usePracticeStore.setState({
+      status: 'idle',
+      chapterNumber: null,
+      exerciseIds: [],
+      results: {},
+      currentIndex: 0,
+    });
+
+    renderPractice();
+
+    expect(screen.getByTestId('exercise-counter')).toHaveTextContent('Exercise 2 of 24');
+    expect(usePracticeStore.getState().results['demo-ex-01']?.outcome).toBe(
+      'correctFirstAttempt',
+    );
+  });
+
+  it('records progress that survives a reload', async () => {
+    const user = userEvent.setup();
+    renderPractice();
+
+    await answerChoiceCorrectly(user, 'wir');
+
+    act(() =>
+      useProgressStore.setState({ chapters: {}, exerciseHistory: {}, hydrated: false }),
+    );
+    act(() => useProgressStore.getState().hydrate());
+
+    expect(useProgressStore.getState().chapters[0]?.status).toBe('inProgress');
+    expect(useProgressStore.getState().exerciseHistory['demo-ex-01']?.timesCorrect).toBe(
+      1,
+    );
+  });
+});
