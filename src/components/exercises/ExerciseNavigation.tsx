@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import { Button } from '../common/Button';
 
 export interface ExerciseNavigationProps {
@@ -26,6 +27,20 @@ export function ExerciseNavigation({
   onFinish,
   onExit,
 }: ExerciseNavigationProps) {
+  const tryAgainRef = useRef<HTMLButtonElement>(null);
+  const continueRef = useRef<HTMLButtonElement>(null);
+
+  // Moves keyboard focus straight to the next action: "Try again" for an
+  // answer that can still be retried, otherwise "Next exercise" / "Finish"
+  // once the exercise is resolved (correct, revealed, or out of attempts).
+  useEffect(() => {
+    if (canRetry) {
+      tryAgainRef.current?.focus();
+    } else if (resolved) {
+      continueRef.current?.focus();
+    }
+  }, [canRetry, resolved]);
+
   return (
     <div className="exercise-navigation">
       <div className="row">
@@ -37,7 +52,7 @@ export function ExerciseNavigation({
 
         {canRetry && (
           <>
-            <Button type="button" onClick={onRetry}>
+            <Button type="button" ref={tryAgainRef} onClick={onRetry}>
               Try again
             </Button>
             <Button type="button" variant="secondary" onClick={onReveal}>
@@ -48,11 +63,11 @@ export function ExerciseNavigation({
 
         {resolved &&
           (isLast ? (
-            <Button type="button" onClick={onFinish}>
+            <Button type="button" ref={continueRef} onClick={onFinish}>
               Finish and see results
             </Button>
           ) : (
-            <Button type="button" onClick={onNext}>
+            <Button type="button" ref={continueRef} onClick={onNext}>
               Next exercise
             </Button>
           ))}

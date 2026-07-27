@@ -109,6 +109,28 @@ describe('checkTextAnswer', () => {
     expect(result.matchedAnswer).toBe('Wir sind im Kino.');
   });
 
+  it('accepts a declarative sentence missing its final full stop', () => {
+    const result = checkTextAnswer(textExercise(), 'Wir sind im Kino');
+    expect(result.correct).toBe(true);
+    expect(result.matchedAnswer).toBe('Wir sind im Kino.');
+  });
+
+  it('accepts a declarative sentence with an extra final full stop', () => {
+    const exercise = textExercise({ acceptedAnswers: ['Wir sind im Kino'] });
+    expect(checkTextAnswer(exercise, 'Wir sind im Kino.').correct).toBe(true);
+  });
+
+  it('still requires the question mark on a question', () => {
+    const exercise = textExercise({ acceptedAnswers: ['Sind Sie Lehrer?'] });
+    expect(checkTextAnswer(exercise, 'Sind Sie Lehrer?').correct).toBe(true);
+    expect(checkTextAnswer(exercise, 'Sind Sie Lehrer').correct).toBe(false);
+  });
+
+  it('does not forgive a missing full stop in exact mode', () => {
+    const exercise = textExercise({ answerMode: 'exact' });
+    expect(checkTextAnswer(exercise, 'Wir sind im Kino').correct).toBe(false);
+  });
+
   it('rejects a wrong capitalisation in normalized mode and explains why', () => {
     const result = checkTextAnswer(textExercise(), 'wir sind im kino.');
     expect(result.correct).toBe(false);

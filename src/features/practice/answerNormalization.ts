@@ -38,6 +38,11 @@ export function normalizeForMode(value: string, mode: AnswerMode): string {
   }
 }
 
+/** Strips a single trailing full stop, if present. Question and exclamation marks are untouched. */
+function withoutOptionalFullStop(value: string): string {
+  return value.endsWith('.') ? value.slice(0, -1) : value;
+}
+
 export function tokenize(value: string): string[] {
   return normalizeBasic(value)
     .replace(PUNCTUATION, ' ')
@@ -69,9 +74,20 @@ export function checkTextAnswer(
   const mode = exercise.answerMode;
   const normalizedAnswer = normalizeForMode(rawAnswer, mode);
 
-  const matchedAnswer = exercise.acceptedAnswers.find(
-    (accepted) => normalizeForMode(accepted, mode) === normalizedAnswer,
-  );
+  // A missing final full stop still counts as correct for a declarative
+  // sentence — but a question mark is never optional, so a question is only
+  // matched when it was actually asked. 'exact' stays byte-strict on request;
+  // 'punctuationInsensitive' already ignores all punctuation.
+  const fullStopOptional = mode === 'normalized' || mode === 'caseInsensitive';
+  const matchedAnswer = exercise.acceptedAnswers.find((accepted) => {
+    const normalizedAccepted = normalizeForMode(accepted, mode);
+    if (normalizedAccepted === normalizedAnswer) return true;
+    if (!fullStopOptional || normalizedAccepted.endsWith('?')) return false;
+    return (
+      withoutOptionalFullStop(normalizedAccepted) ===
+      withoutOptionalFullStop(normalizedAnswer)
+    );
+  });
 
   const answerTokens = new Set(tokenize(rawAnswer));
   const missingTokens = (exercise.requiredTokens ?? []).filter(

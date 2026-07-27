@@ -214,12 +214,24 @@ describe('PracticePage', () => {
       expect(screen.getByTestId('exercise-feedback')).toHaveTextContent('Correct'),
     );
 
-    // Feedback receives focus so screen-reader users land on it.
-    expect(screen.getByTestId('exercise-feedback')).toHaveFocus();
+    // Focus moves straight to "Next exercise" so the learner can keep going.
+    await waitFor(() =>
+      expect(screen.getByRole('button', { name: /next exercise/i })).toHaveFocus(),
+    );
 
-    await user.tab();
     await user.keyboard('{Enter}');
     expect(screen.getByTestId('exercise-counter')).toHaveTextContent('Exercise 2 of 24');
+  });
+
+  it('moves focus to "Try again" after an incorrect answer', async () => {
+    const user = userEvent.setup();
+    renderPractice();
+
+    await selectOption(user, '^ihr$');
+
+    await waitFor(() =>
+      expect(screen.getByRole('button', { name: /try again/i })).toHaveFocus(),
+    );
   });
 
   it('asks for confirmation before leaving and resumes the session afterwards', async () => {

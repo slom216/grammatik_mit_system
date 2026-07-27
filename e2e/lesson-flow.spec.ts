@@ -182,8 +182,9 @@ test.describe('lesson flow', () => {
     await expect(correctOption).toBeChecked();
     await expect(page.getByTestId('exercise-feedback')).toContainText('Correct');
 
-    await page.keyboard.press('Tab');
-    await page.keyboard.press('Enter'); // next exercise
+    // Focus moves straight to "Next exercise", no extra Tab needed.
+    await expect(page.getByRole('button', { name: 'Next exercise' })).toBeFocused();
+    await page.keyboard.press('Enter');
     await expect(page.getByTestId('exercise-counter')).toContainText('Exercise 2 of 24');
   });
 

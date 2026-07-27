@@ -1,4 +1,3 @@
-import { useEffect, useRef } from 'react';
 import type { FeedbackState } from '../../features/practice/practiceStore';
 
 export interface ExerciseFeedbackProps {
@@ -15,22 +14,16 @@ const HEADLINES: Record<FeedbackState['kind'], { icon: string; text: string }> =
 
 /**
  * Feedback is announced through an aria-live region and never relies on colour
- * alone: every state also has an icon and a text label.
+ * alone: every state also has an icon and a text label. Keyboard focus moves
+ * straight to the next action button (see ExerciseNavigation) rather than to
+ * this element, so the learner can keep going without an extra Tab press.
  */
 export function ExerciseFeedback({ feedback, explanation }: ExerciseFeedbackProps) {
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (feedback) containerRef.current?.focus();
-  }, [feedback]);
-
   return (
     <div aria-live="polite" aria-atomic="true">
       {feedback && (
         <div
           className={`feedback feedback--${feedback.kind}`}
-          ref={containerRef}
-          tabIndex={-1}
           data-testid="exercise-feedback"
         >
           <p className="feedback__headline">
