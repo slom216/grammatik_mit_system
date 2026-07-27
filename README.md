@@ -4,10 +4,10 @@ A browser-based German grammar course for levels A1–B1, built with React, Vite
 TypeScript. Every chapter provides an explanation, examples, common mistakes, a short
 summary and at least 24 graded exercises. Progress is stored in the browser.
 
-The build in this repository is at **Phase 0**: the application shell, the lesson and
-exercise engine, scoring, review scheduling and persistence are complete, and one
-non-production demo chapter proves the engine end to end. The 85 course chapters are added
-phase by phase (see `DEVELOPMENT_INSTRUCTIONS.md`).
+The build in this repository is at **Phase 2**: the application shell, the lesson and
+exercise engine, scoring, review scheduling and persistence are complete, and chapters
+1-20 are shipped with full content. The remaining course chapters are added phase by
+phase (see `DEVELOPMENT_INSTRUCTIONS.md`).
 
 ## Getting started
 

@@ -13,6 +13,16 @@ import { chapter007 } from './chapters/chapter-007-modal-verbs-usage-part-2';
 import { chapter008 } from './chapters/chapter-008-separable-verbs';
 import { chapter009 } from './chapters/chapter-009-the-imperative';
 import { chapter010 } from './chapters/chapter-010-questions-with-interrogative-words';
+import { chapter011 } from './chapters/chapter-011-yes-no-questions-and-answers';
+import { chapter012 } from './chapters/chapter-012-the-verb-in-position-2';
+import { chapter013 } from './chapters/chapter-013-sentences-with-two-fixed-verb-positions';
+import { chapter014 } from './chapters/chapter-014-plural-forms-of-nouns';
+import { chapter015 } from './chapters/chapter-015-definite-indefinite-and-zero-articles';
+import { chapter016 } from './chapters/chapter-016-negation-with-nicht-and-kein';
+import { chapter017 } from './chapters/chapter-017-the-accusative-case';
+import { chapter018 } from './chapters/chapter-018-the-dative-case';
+import { chapter019 } from './chapters/chapter-019-possessive-articles';
+import { chapter020 } from './chapters/chapter-020-interrogative-and-demonstrative-articles';
 
 export interface ChapterRegistryEntry {
   number: number;
@@ -424,7 +434,7 @@ export const chapterRegistry = [
 ] as const satisfies readonly ChapterRegistryEntry[];
 
 /**
- * Chapter content that currently ships. Phase 1 ships chapters 1-10;
+ * Chapter content that currently ships. Phase 2 ships chapters 1-20;
  * further chapters are added phase by phase. The Phase 0 engine demo
  * (chapter-000-demo.ts) is no longer part of the shipped catalogue but
  * stays in the repo as a fixture for engine-level tests.
@@ -440,6 +450,16 @@ export const chapters: readonly ChapterDefinition[] = [
   chapter008,
   chapter009,
   chapter010,
+  chapter011,
+  chapter012,
+  chapter013,
+  chapter014,
+  chapter015,
+  chapter016,
+  chapter017,
+  chapter018,
+  chapter019,
+  chapter020,
 ];
 
 const chaptersByNumber = new Map(chapters.map((chapter) => [chapter.number, chapter]));

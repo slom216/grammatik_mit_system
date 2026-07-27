@@ -42,7 +42,7 @@ describe('chapter selectors', () => {
     const cards = selectChapterCards(useProgressStore.getState());
     expect(cards).toHaveLength(85);
     expect(cards.some((card) => card.isDemo)).toBe(false);
-    expect(cards.filter((card) => card.available)).toHaveLength(10);
+    expect(cards.filter((card) => card.available)).toHaveLength(20);
   });
 
   it('groups chapters by section, without a demo group', () => {
@@ -107,7 +107,11 @@ describe('chapter selectors', () => {
     expect(selectNextChapter(1)?.number).toBe(2);
   });
 
+  it('finds the next chapter with content across a phase boundary', () => {
+    expect(selectNextChapter(10)?.number).toBe(11);
+  });
+
   it('has no next chapter after the last chapter with content', () => {
-    expect(selectNextChapter(10)).toBeUndefined();
+    expect(selectNextChapter(20)).toBeUndefined();
   });
 });
