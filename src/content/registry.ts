@@ -3,7 +3,16 @@ import type {
   ChapterDefinition,
   ChapterSection,
 } from '../schemas/chapterSchema';
-import { demoChapter } from './chapters/chapter-000-demo';
+import { chapter001 } from './chapters/chapter-001-personal-pronouns';
+import { chapter002 } from './chapters/chapter-002-present-tense-conjugation';
+import { chapter003 } from './chapters/chapter-003-sein-haben-and-special-irregular-verbs';
+import { chapter004 } from './chapters/chapter-004-verbs-with-vowel-changes';
+import { chapter005 } from './chapters/chapter-005-modal-verbs-conjugation-and-sentence-position';
+import { chapter006 } from './chapters/chapter-006-modal-verbs-usage-part-1';
+import { chapter007 } from './chapters/chapter-007-modal-verbs-usage-part-2';
+import { chapter008 } from './chapters/chapter-008-separable-verbs';
+import { chapter009 } from './chapters/chapter-009-the-imperative';
+import { chapter010 } from './chapters/chapter-010-questions-with-interrogative-words';
 
 export interface ChapterRegistryEntry {
   number: number;
@@ -415,10 +424,23 @@ export const chapterRegistry = [
 ] as const satisfies readonly ChapterRegistryEntry[];
 
 /**
- * Chapter content that currently ships. Phase 0 ships the engine demo only;
- * production chapters are added phase by phase.
+ * Chapter content that currently ships. Phase 1 ships chapters 1-10;
+ * further chapters are added phase by phase. The Phase 0 engine demo
+ * (chapter-000-demo.ts) is no longer part of the shipped catalogue but
+ * stays in the repo as a fixture for engine-level tests.
  */
-export const chapters: readonly ChapterDefinition[] = [demoChapter];
+export const chapters: readonly ChapterDefinition[] = [
+  chapter001,
+  chapter002,
+  chapter003,
+  chapter004,
+  chapter005,
+  chapter006,
+  chapter007,
+  chapter008,
+  chapter009,
+  chapter010,
+];
 
 const chaptersByNumber = new Map(chapters.map((chapter) => [chapter.number, chapter]));
 const registryByNumber = new Map<number, ChapterRegistryEntry>(

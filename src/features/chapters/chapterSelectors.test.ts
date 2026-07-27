@@ -38,27 +38,27 @@ describe('chapter selectors', () => {
     useProgressStore.getState().resetProgress();
   });
 
-  it('builds a card for every registry chapter plus the demo chapter', () => {
+  it('builds a card for every registry chapter, with no demo chapter', () => {
     const cards = selectChapterCards(useProgressStore.getState());
-    expect(cards).toHaveLength(86);
-    expect(cards[0]?.isDemo).toBe(true);
-    expect(cards.filter((card) => card.available)).toHaveLength(1);
+    expect(cards).toHaveLength(85);
+    expect(cards.some((card) => card.isDemo)).toBe(false);
+    expect(cards.filter((card) => card.available)).toHaveLength(10);
   });
 
-  it('groups chapters by section with the demo first', () => {
+  it('groups chapters by section, without a demo group', () => {
     const groups = groupBySection(selectChapterCards(useProgressStore.getState()));
-    expect(groups[0]?.section.id).toBe('demo');
-    expect(groups[1]?.section.id).toBe('verbs-1');
-    expect(groups.reduce((sum, group) => sum + group.chapters.length, 0)).toBe(86);
+    expect(groups.some((group) => group.section.id === 'demo')).toBe(false);
+    expect(groups[0]?.section.id).toBe('verbs-1');
+    expect(groups.reduce((sum, group) => sum + group.chapters.length, 0)).toBe(85);
   });
 
   it('filters by level and status', () => {
     const cards = selectChapterCards(useProgressStore.getState());
     const a1 = cards.filter((card) => matchesFilter(card, 'A1'));
     expect(a1.every((card) => card.level === 'A1')).toBe(true);
-    expect(cards.filter((card) => matchesFilter(card, 'all'))).toHaveLength(86);
+    expect(cards.filter((card) => matchesFilter(card, 'all'))).toHaveLength(85);
     expect(cards.filter((card) => matchesFilter(card, 'mastered'))).toHaveLength(0);
-    expect(cards.filter((card) => matchesFilter(card, 'notStarted'))).toHaveLength(86);
+    expect(cards.filter((card) => matchesFilter(card, 'notStarted'))).toHaveLength(85);
   });
 
   it('reflects mastery in the filters and level statistics', () => {
@@ -80,8 +80,8 @@ describe('chapter selectors', () => {
 
   it('marks a chapter as review due when an exercise is due', () => {
     useProgressStore.getState().recordAttempt({
-      exerciseId: 'demo-ex-01',
-      chapterNumber: 0,
+      exerciseId: 'ch02-ex-01',
+      chapterNumber: 2,
       outcome: 'incorrect',
       now: new Date('2026-03-01T09:00:00.000Z'),
     });
@@ -90,20 +90,24 @@ describe('chapter selectors', () => {
       useProgressStore.getState(),
       new Date('2026-03-03T09:00:00.000Z'),
     );
-    expect(cards.find((card) => card.number === 0)?.reviewDue).toBe(true);
+    expect(cards.find((card) => card.number === 2)?.reviewDue).toBe(true);
     expect(cards.filter((card) => matchesFilter(card, 'reviewDue'))).toHaveLength(1);
   });
 
-  it('suggests the demo chapter to continue while nothing else has content', () => {
-    expect(selectContinueChapter(useProgressStore.getState())?.number).toBe(0);
+  it('suggests the first available chapter to continue while nothing has progress', () => {
+    expect(selectContinueChapter(useProgressStore.getState())?.number).toBe(1);
   });
 
   it('prefers the last opened chapter when it still has content', () => {
-    useProgressStore.getState().setLastOpenedChapter(0);
-    expect(selectContinueChapter(useProgressStore.getState())?.number).toBe(0);
+    useProgressStore.getState().setLastOpenedChapter(2);
+    expect(selectContinueChapter(useProgressStore.getState())?.number).toBe(2);
   });
 
-  it('has no next chapter while only the demo chapter exists', () => {
-    expect(selectNextChapter(0)).toBeUndefined();
+  it('finds the next chapter with content after the given one', () => {
+    expect(selectNextChapter(1)?.number).toBe(2);
+  });
+
+  it('has no next chapter after the last chapter with content', () => {
+    expect(selectNextChapter(10)).toBeUndefined();
   });
 });

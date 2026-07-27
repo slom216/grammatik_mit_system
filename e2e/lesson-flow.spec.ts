@@ -1,8 +1,8 @@
 import { expect, test, type Page } from '@playwright/test';
-import { demoChapter } from '../src/content/chapters/chapter-000-demo';
+import { chapter001 } from '../src/content/chapters/chapter-001-personal-pronouns';
 import { chapterRegistry } from '../src/content/registry';
 
-const exercises = [...demoChapter.exercises].sort((a, b) => a.order - b.order);
+const exercises = [...chapter001.exercises].sort((a, b) => a.order - b.order);
 
 function correctAnswerFor(exercise: (typeof exercises)[number]): string {
   return exercise.type === 'singleChoice'
@@ -48,17 +48,13 @@ test.describe('lesson flow', () => {
     ).toBeVisible();
 
     await page
-      .getByRole('link', { name: new RegExp(demoChapter.title) })
+      .getByRole('link', { name: new RegExp(chapter001.title) })
       .first()
       .click();
-    await expect(page.getByRole('heading', { level: 1 })).toContainText(
-      demoChapter.title,
-    );
+    await expect(page.getByRole('heading', { level: 1 })).toContainText(chapter001.title);
 
     await page.getByRole('link', { name: 'Read the lesson' }).click();
-    await expect(
-      page.getByRole('table', { name: /Present tense of sein/i }),
-    ).toBeVisible();
+    await expect(page.getByRole('table', { name: /Subject pronouns/i })).toBeVisible();
     await expect(page.getByRole('complementary', { name: 'Remember' })).toBeVisible();
 
     await page.getByRole('link', { name: /Start practice/ }).click();
@@ -88,7 +84,7 @@ test.describe('lesson flow', () => {
   test('a failed exercise can be retried and lands in the review queue', async ({
     page,
   }) => {
-    await page.goto('/chapter/0/practice');
+    await page.goto('/chapter/1/practice');
 
     const wrongOption = exercises[0];
     if (!wrongOption || wrongOption.type !== 'singleChoice') {
@@ -116,7 +112,7 @@ test.describe('lesson flow', () => {
       const progress = JSON.parse(raw) as {
         exerciseHistory: Record<string, { dueAt?: string }>;
       };
-      const history = progress.exerciseHistory['demo-ex-01'];
+      const history = progress.exerciseHistory['ch01-ex-01'];
       if (!history?.dueAt) throw new Error('the exercise did not enter the review queue');
       history.dueAt = new Date(Date.now() - 60_000).toISOString();
       window.localStorage.setItem(key, JSON.stringify(progress));
@@ -128,7 +124,7 @@ test.describe('lesson flow', () => {
   });
 
   test('a session survives a refresh in the middle of practice', async ({ page }) => {
-    await page.goto('/chapter/0/practice');
+    await page.goto('/chapter/1/practice');
 
     await answerCurrentExercise(page, 0);
     await page.getByRole('button', { name: 'Next exercise' }).click();
@@ -144,7 +140,7 @@ test.describe('lesson flow', () => {
   test('a text-input exercise can be answered with umlauts from the helper', async ({
     page,
   }) => {
-    await page.goto('/chapter/0/practice');
+    await page.goto('/chapter/1/practice');
 
     // Exercise 23 asks for "Ihr seid spät."
     for (let index = 0; index < 22; index += 1) {
@@ -166,7 +162,7 @@ test.describe('lesson flow', () => {
   });
 
   test('the whole app can be used with the keyboard only', async ({ page }) => {
-    await page.goto('/chapter/0/practice');
+    await page.goto('/chapter/1/practice');
 
     // Tab from the top of the page until the first answer option has focus.
     for (let step = 0; step < 20; step += 1) {
@@ -194,7 +190,7 @@ test.describe('lesson flow', () => {
   test('the catalogue can be filtered', async ({ page }) => {
     await page.goto('/chapters');
 
-    const total = chapterRegistry.length + 1; // registry chapters plus the demo
+    const total = chapterRegistry.length;
     const b1Count = chapterRegistry.filter((entry) => entry.level === 'B1').length;
 
     await expect(page.getByText(`${total} chapters shown.`)).toBeVisible();

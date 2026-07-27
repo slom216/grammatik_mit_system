@@ -58,9 +58,8 @@ describe('shipped content', () => {
     },
   );
 
-  it('ships exactly one demo chapter in Phase 0', () => {
-    expect(demoChapters).toHaveLength(1);
-    expect(demoChapters[0]?.isDemo).toBe(true);
+  it('ships no demo chapters from Phase 1 onward', () => {
+    expect(demoChapters).toHaveLength(0);
   });
 });
 
