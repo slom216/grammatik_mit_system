@@ -125,6 +125,12 @@ export interface PersistedSessionV1 {
   exerciseIds: string[];
   /** Display order of the answer options, kept stable across a page refresh. */
   optionOrder: Record<string, string[]>;
+  /** Display order of segment ids for sentence-ordering exercises. */
+  segmentOrder: Record<string, string[]>;
+  /** Display order of word-bank indices for drag-to-slots exercises. */
+  wordBankOrder: Record<string, number[]>;
+  /** Display order of pair ids for the right column of matching exercises. */
+  matchingRightOrder: Record<string, string[]>;
   currentIndex: number;
   results: Record<string, ExerciseAttemptRecord>;
   startedAt: string;
@@ -145,6 +151,9 @@ export const persistedSessionV1Schema = z.object({
   mode: z.enum(['chapter', 'review', 'cumulative']),
   exerciseIds: z.array(z.string().min(1)),
   optionOrder: z.record(z.string(), z.array(z.string().min(1))),
+  segmentOrder: z.record(z.string(), z.array(z.string().min(1))),
+  wordBankOrder: z.record(z.string(), z.array(z.number().int().min(0))),
+  matchingRightOrder: z.record(z.string(), z.array(z.string().min(1))),
   currentIndex: z.number().int().min(0),
   results: z.record(z.string(), exerciseAttemptRecordSchema),
   startedAt: z.string().min(1),

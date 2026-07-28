@@ -1,7 +1,11 @@
 import { z } from 'zod';
 import {
   exerciseSchema,
+  type DragToSlotsExercise,
+  type ErrorSpottingExercise,
   type Exercise,
+  type MatchingExercise,
+  type SentenceOrderingExercise,
   type SingleChoiceExercise,
   type TextInputExercise,
 } from './exerciseSchema';
@@ -9,6 +13,13 @@ import {
 /** Content thresholds required by the specification. */
 export const CONTENT_RULES = {
   minExercises: 24,
+  /**
+   * Not yet enforced by `minExercises` — chapters 1-85 still ship the
+   * original 24, and raising the enforced minimum is a content-authoring
+   * project of its own. `maxExercises` is enforced now so future authoring
+   * stays inside the target 50-100 range from the start.
+   */
+  maxExercises: 100,
   minSingleChoice: 12,
   minTextInput: 12,
   minExamples: 8,
@@ -223,6 +234,14 @@ export const chapterSchema = z
       });
     }
 
+    if (exercises.length > CONTENT_RULES.maxExercises) {
+      ctx.addIssue({
+        code: 'custom',
+        path: ['exercises'],
+        message: `Chapter ${chapter.number} has ${exercises.length} exercises, at most ${CONTENT_RULES.maxExercises} are allowed`,
+      });
+    }
+
     const singleChoiceCount = exercises.filter((e) => e.type === 'singleChoice').length;
     if (singleChoiceCount < CONTENT_RULES.minSingleChoice) {
       ctx.addIssue({
@@ -303,4 +322,12 @@ export type ChapterSchemaMatchesInterface = AssertAssignable<
   z.infer<typeof chapterSchema>
 >;
 
-export type { Exercise, SingleChoiceExercise, TextInputExercise };
+export type {
+  Exercise,
+  SingleChoiceExercise,
+  TextInputExercise,
+  SentenceOrderingExercise,
+  DragToSlotsExercise,
+  MatchingExercise,
+  ErrorSpottingExercise,
+};

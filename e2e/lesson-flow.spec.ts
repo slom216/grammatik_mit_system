@@ -5,10 +5,15 @@ import { chapterRegistry } from '../src/content/registry';
 const exercises = [...chapter001.exercises].sort((a, b) => a.order - b.order);
 
 function correctAnswerFor(exercise: (typeof exercises)[number]): string {
-  return exercise.type === 'singleChoice'
-    ? (exercise.options.find((option) => option.id === exercise.correctOptionId)?.text ??
-        '')
-    : (exercise.acceptedAnswers[0] ?? '');
+  if (exercise.type === 'singleChoice') {
+    return (
+      exercise.options.find((option) => option.id === exercise.correctOptionId)?.text ?? ''
+    );
+  }
+  if (exercise.type === 'textInput') {
+    return exercise.acceptedAnswers[0] ?? '';
+  }
+  throw new Error(`Unsupported exercise type in this e2e fixture: ${exercise.type}`);
 }
 
 /** Answers the exercise currently on screen correctly and submits it. */

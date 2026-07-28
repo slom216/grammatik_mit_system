@@ -1,13 +1,29 @@
 import { describe, expect, it } from 'vitest';
 import {
+  checkDragToSlotsAnswer,
+  checkErrorSpottingAnswer,
+  checkMatchingAnswer,
+  checkSentenceOrderingAnswer,
   checkSingleChoiceAnswer,
   checkTextAnswer,
+  correctDragToSlotsText,
+  correctErrorSpottingText,
+  correctMatchingText,
+  correctSentenceOrderingText,
+  dragToSlotsAnswerText,
+  errorSpottingAnswerText,
+  matchingAnswerText,
   normalizeBasic,
   normalizeForMode,
   primaryAcceptedAnswer,
+  sentenceOrderingAnswerText,
   tokenize,
 } from './answerNormalization';
 import type {
+  DragToSlotsExercise,
+  ErrorSpottingExercise,
+  MatchingExercise,
+  SentenceOrderingExercise,
   SingleChoiceExercise,
   TextInputExercise,
 } from '../../schemas/exerciseSchema';
@@ -196,5 +212,190 @@ describe('checkSingleChoiceAnswer', () => {
 describe('primaryAcceptedAnswer', () => {
   it('returns the first accepted answer for the reveal feature', () => {
     expect(primaryAcceptedAnswer(textExercise())).toBe('Wir sind im Kino.');
+  });
+});
+
+function sentenceOrderingExercise(): SentenceOrderingExercise {
+  return {
+    id: 'test-ordering-1',
+    chapterNumber: 0,
+    order: 3,
+    type: 'sentenceOrdering',
+    prompt: 'Bring the words into the correct order.',
+    level: 'production',
+    grammarFocus: ['word order'],
+    explanation: 'The verb comes second.',
+    segments: [
+      { id: 's1', text: 'Ich' },
+      { id: 's2', text: 'gehe' },
+      { id: 's3', text: 'heute' },
+      { id: 's4', text: 'ins Kino' },
+    ],
+  };
+}
+
+describe('checkSentenceOrderingAnswer', () => {
+  const exercise = sentenceOrderingExercise();
+
+  it('accepts the segments in their authored order', () => {
+    expect(checkSentenceOrderingAnswer(exercise, ['s1', 's2', 's3', 's4'])).toBe(true);
+  });
+
+  it('rejects any other order', () => {
+    expect(checkSentenceOrderingAnswer(exercise, ['s1', 's3', 's2', 's4'])).toBe(false);
+  });
+
+  it('rejects an incomplete order', () => {
+    expect(checkSentenceOrderingAnswer(exercise, ['s1', 's2'])).toBe(false);
+  });
+});
+
+describe('sentenceOrdering answer text', () => {
+  const exercise = sentenceOrderingExercise();
+
+  it('joins the submitted segments in the order given', () => {
+    expect(sentenceOrderingAnswerText(exercise, ['s3', 's1'])).toBe('heute Ich');
+  });
+
+  it('renders the correct sentence', () => {
+    expect(correctSentenceOrderingText(exercise)).toBe('Ich gehe heute ins Kino');
+  });
+});
+
+function dragToSlotsExercise(): DragToSlotsExercise {
+  return {
+    id: 'test-slots-1',
+    chapterNumber: 0,
+    order: 4,
+    type: 'dragToSlots',
+    prompt: 'Fill in the modal verb.',
+    level: 'controlled',
+    grammarFocus: ['modal verbs'],
+    explanation: 'ich takes kann.',
+    templateParts: ['Ich ', ' heute nicht arbeiten.'],
+    slots: [{ id: 'slot1', correctWord: 'kann' }],
+    wordBank: ['kann', 'können', 'kannst'],
+  };
+}
+
+describe('checkDragToSlotsAnswer', () => {
+  const exercise = dragToSlotsExercise();
+
+  it('accepts the correct word in every slot', () => {
+    expect(checkDragToSlotsAnswer(exercise, { slot1: 'kann' })).toBe(true);
+  });
+
+  it('rejects a distractor', () => {
+    expect(checkDragToSlotsAnswer(exercise, { slot1: 'können' })).toBe(false);
+  });
+
+  it('rejects a missing slot', () => {
+    expect(checkDragToSlotsAnswer(exercise, {})).toBe(false);
+  });
+});
+
+describe('dragToSlots answer text', () => {
+  const exercise = dragToSlotsExercise();
+
+  it('assembles the sentence around the placed words', () => {
+    expect(dragToSlotsAnswerText(exercise, { slot1: 'kannst' })).toBe(
+      'Ich kannst heute nicht arbeiten.',
+    );
+  });
+
+  it('shows a placeholder for an empty slot', () => {
+    expect(dragToSlotsAnswerText(exercise, {})).toBe('Ich ___ heute nicht arbeiten.');
+  });
+
+  it('renders the correct sentence', () => {
+    expect(correctDragToSlotsText(exercise)).toBe('Ich kann heute nicht arbeiten.');
+  });
+});
+
+function matchingExercise(): MatchingExercise {
+  return {
+    id: 'test-matching-1',
+    chapterNumber: 0,
+    order: 5,
+    type: 'matching',
+    prompt: 'Match the pronoun to its possessive.',
+    level: 'recognition',
+    grammarFocus: ['possessives'],
+    explanation: 'Each pronoun has one matching possessive.',
+    pairs: [
+      { id: 'p1', left: 'ich', right: 'mein' },
+      { id: 'p2', left: 'du', right: 'dein' },
+      { id: 'p3', left: 'er', right: 'sein' },
+    ],
+  };
+}
+
+describe('checkMatchingAnswer', () => {
+  const exercise = matchingExercise();
+
+  it('accepts every left item matched to its own pair id', () => {
+    expect(checkMatchingAnswer(exercise, { p1: 'p1', p2: 'p2', p3: 'p3' })).toBe(true);
+  });
+
+  it('rejects a swapped pairing', () => {
+    expect(checkMatchingAnswer(exercise, { p1: 'p2', p2: 'p1', p3: 'p3' })).toBe(false);
+  });
+
+  it('rejects an incomplete set of pairings', () => {
+    expect(checkMatchingAnswer(exercise, { p1: 'p1' })).toBe(false);
+  });
+});
+
+describe('matching answer text', () => {
+  const exercise = matchingExercise();
+
+  it('renders the submitted pairing', () => {
+    expect(matchingAnswerText(exercise, { p1: 'p2' })).toBe(
+      'ich → dein, du → ?, er → ?',
+    );
+  });
+
+  it('renders the correct pairing', () => {
+    expect(correctMatchingText(exercise)).toBe('ich → mein, du → dein, er → sein');
+  });
+});
+
+function errorSpottingExercise(): ErrorSpottingExercise {
+  return {
+    id: 'test-errorspotting-1',
+    chapterNumber: 0,
+    order: 6,
+    type: 'errorSpotting',
+    prompt: 'Click the word that is wrong.',
+    level: 'controlled',
+    grammarFocus: ['verb conjugation'],
+    explanation: 'ihr takes seid, not sind.',
+    tokens: ['Ihr', 'sind', 'sehr', 'freundlich.'],
+    errorTokenIndex: 1,
+    correction: 'seid',
+  };
+}
+
+describe('checkErrorSpottingAnswer', () => {
+  const exercise = errorSpottingExercise();
+
+  it('accepts the erroneous token index', () => {
+    expect(checkErrorSpottingAnswer(exercise, 1)).toBe(true);
+  });
+
+  it('rejects any other index', () => {
+    expect(checkErrorSpottingAnswer(exercise, 0)).toBe(false);
+  });
+});
+
+describe('errorSpotting answer text', () => {
+  const exercise = errorSpottingExercise();
+
+  it('returns the token the learner clicked', () => {
+    expect(errorSpottingAnswerText(exercise, 2)).toBe('sehr');
+  });
+
+  it('renders the error and its correction', () => {
+    expect(correctErrorSpottingText(exercise)).toBe('sind → seid');
   });
 });

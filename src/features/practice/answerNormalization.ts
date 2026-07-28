@@ -1,5 +1,9 @@
 import type {
   AnswerMode,
+  DragToSlotsExercise,
+  ErrorSpottingExercise,
+  MatchingExercise,
+  SentenceOrderingExercise,
   SingleChoiceExercise,
   TextInputExercise,
 } from '../../schemas/exerciseSchema';
@@ -122,6 +126,140 @@ export function checkSingleChoiceAnswer(
 /** The answer shown to the learner when an answer is revealed. */
 export function primaryAcceptedAnswer(exercise: TextInputExercise): string {
   return exercise.acceptedAnswers[0] ?? '';
+}
+
+/* ------------------------------------------------------------------ */
+/* Sentence ordering                                                   */
+/* ------------------------------------------------------------------ */
+
+export function checkSentenceOrderingAnswer(
+  exercise: SentenceOrderingExercise,
+  orderedIds: string[],
+): boolean {
+  const correctOrder = exercise.segments.map((segment) => segment.id);
+  return (
+    orderedIds.length === correctOrder.length &&
+    orderedIds.every((id, index) => id === correctOrder[index])
+  );
+}
+
+function sentenceOrderingText(exercise: SentenceOrderingExercise, ids: string[]): string {
+  return ids
+    .map((id) => exercise.segments.find((segment) => segment.id === id)?.text ?? '')
+    .join(' ');
+}
+
+export function sentenceOrderingAnswerText(
+  exercise: SentenceOrderingExercise,
+  orderedIds: string[],
+): string {
+  return sentenceOrderingText(exercise, orderedIds);
+}
+
+export function correctSentenceOrderingText(exercise: SentenceOrderingExercise): string {
+  return sentenceOrderingText(
+    exercise,
+    exercise.segments.map((segment) => segment.id),
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/* Drag words into sentence slots                                      */
+/* ------------------------------------------------------------------ */
+
+export function checkDragToSlotsAnswer(
+  exercise: DragToSlotsExercise,
+  placedWords: Record<string, string>,
+): boolean {
+  return exercise.slots.every(
+    (slot) => placedWords[slot.id]?.trim() === slot.correctWord.trim(),
+  );
+}
+
+function assembleDragToSlotsSentence(
+  exercise: DragToSlotsExercise,
+  wordForSlot: (slotId: string) => string,
+): string {
+  return exercise.templateParts.reduce((sentence, part, index) => {
+    const slot = exercise.slots[index];
+    return sentence + part + (slot ? wordForSlot(slot.id) : '');
+  }, '');
+}
+
+export function dragToSlotsAnswerText(
+  exercise: DragToSlotsExercise,
+  placedWords: Record<string, string>,
+): string {
+  return assembleDragToSlotsSentence(exercise, (slotId) => placedWords[slotId] ?? '___');
+}
+
+export function correctDragToSlotsText(exercise: DragToSlotsExercise): string {
+  return assembleDragToSlotsSentence(
+    exercise,
+    (slotId) => exercise.slots.find((slot) => slot.id === slotId)?.correctWord ?? '',
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/* Matching                                                             */
+/* ------------------------------------------------------------------ */
+
+/**
+ * `matches` maps a pair's id (the left item chosen) to the pair id of the
+ * right item the learner connected it to. A match is correct exactly when a
+ * left item is connected to the right item sharing its own pair id.
+ */
+export function checkMatchingAnswer(
+  exercise: MatchingExercise,
+  matches: Record<string, string>,
+): boolean {
+  return exercise.pairs.every((pair) => matches[pair.id] === pair.id);
+}
+
+function matchingText(
+  exercise: MatchingExercise,
+  rightIdFor: (pair: MatchingExercise['pairs'][number]) => string | undefined,
+): string {
+  return exercise.pairs
+    .map((pair) => {
+      const rightId = rightIdFor(pair);
+      const rightText = exercise.pairs.find((candidate) => candidate.id === rightId)?.right;
+      return `${pair.left} → ${rightText ?? '?'}`;
+    })
+    .join(', ');
+}
+
+export function matchingAnswerText(
+  exercise: MatchingExercise,
+  matches: Record<string, string>,
+): string {
+  return matchingText(exercise, (pair) => matches[pair.id]);
+}
+
+export function correctMatchingText(exercise: MatchingExercise): string {
+  return matchingText(exercise, (pair) => pair.id);
+}
+
+/* ------------------------------------------------------------------ */
+/* Error spotting                                                       */
+/* ------------------------------------------------------------------ */
+
+export function checkErrorSpottingAnswer(
+  exercise: ErrorSpottingExercise,
+  tokenIndex: number,
+): boolean {
+  return tokenIndex === exercise.errorTokenIndex;
+}
+
+export function errorSpottingAnswerText(
+  exercise: ErrorSpottingExercise,
+  tokenIndex: number,
+): string {
+  return exercise.tokens[tokenIndex] ?? '';
+}
+
+export function correctErrorSpottingText(exercise: ErrorSpottingExercise): string {
+  return `${exercise.tokens[exercise.errorTokenIndex] ?? ''} → ${exercise.correction}`;
 }
 
 /** Characters offered by the umlaut helper next to every text input. */

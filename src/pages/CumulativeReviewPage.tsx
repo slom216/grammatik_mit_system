@@ -6,7 +6,10 @@ import { Modal } from '../components/common/Modal';
 import { ProgressBar } from '../components/common/ProgressBar';
 import { ExerciseRenderer } from '../components/exercises/ExerciseRenderer';
 import { getChapter } from '../content/registry';
-import { findExerciseAcrossChapters } from '../features/chapters/chapterUtils';
+import {
+  EXERCISE_TYPE_LABELS,
+  findExerciseAcrossChapters,
+} from '../features/chapters/chapterUtils';
 import { buildCumulativeExerciseIds } from '../features/practice/cumulativeSession';
 import {
   selectAnsweredCount,
@@ -164,7 +167,7 @@ export function CumulativeReviewPage() {
         />
         <p className="text-sm text-muted" data-testid="exercise-counter">
           Exercise {position} of {total} · from chapter {exercise.chapterNumber} ·{' '}
-          {exercise.type === 'singleChoice' ? 'multiple choice' : 'text input'}
+          {EXERCISE_TYPE_LABELS[exercise.type]}
         </p>
       </header>
 
@@ -176,6 +179,22 @@ export function CumulativeReviewPage() {
           (exercise.type === 'singleChoice'
             ? exercise.options.map((option) => option.id)
             : [])
+        }
+        segmentOrder={
+          practice.segmentOrder[exercise.id] ??
+          (exercise.type === 'sentenceOrdering'
+            ? exercise.segments.map((segment) => segment.id)
+            : [])
+        }
+        wordBankOrder={
+          practice.wordBankOrder[exercise.id] ??
+          (exercise.type === 'dragToSlots'
+            ? exercise.wordBank.map((_word, index) => index)
+            : [])
+        }
+        matchingRightOrder={
+          practice.matchingRightOrder[exercise.id] ??
+          (exercise.type === 'matching' ? exercise.pairs.map((pair) => pair.id) : [])
         }
         feedback={feedback}
         resolved={resolved}
@@ -190,6 +209,26 @@ export function CumulativeReviewPage() {
         onSubmitText={(value) => {
           if (exercise.type === 'textInput') {
             practice.submitTextAnswer(exercise, value);
+          }
+        }}
+        onSubmitOrdering={(orderedIds) => {
+          if (exercise.type === 'sentenceOrdering') {
+            practice.submitSentenceOrdering(exercise, orderedIds);
+          }
+        }}
+        onSubmitSlots={(placedWords) => {
+          if (exercise.type === 'dragToSlots') {
+            practice.submitDragToSlots(exercise, placedWords);
+          }
+        }}
+        onSubmitMatching={(matches) => {
+          if (exercise.type === 'matching') {
+            practice.submitMatching(exercise, matches);
+          }
+        }}
+        onSubmitErrorSpotting={(tokenIndex) => {
+          if (exercise.type === 'errorSpotting') {
+            practice.submitErrorSpotting(exercise, tokenIndex);
           }
         }}
         onRetry={() => usePracticeStore.setState({ feedback: null })}

@@ -1,7 +1,11 @@
 import { create } from 'zustand';
 import type { ChapterDefinition } from '../../schemas/chapterSchema';
 import type {
+  DragToSlotsExercise,
+  ErrorSpottingExercise,
   Exercise,
+  MatchingExercise,
+  SentenceOrderingExercise,
   SingleChoiceExercise,
   TextInputExercise,
 } from '../../schemas/exerciseSchema';
@@ -13,13 +17,31 @@ import {
   type PersistedSessionV1,
   type PracticeMode,
 } from '../../schemas/progressSchema';
-import { optionOrderFor, sortedExercises } from '../chapters/chapterUtils';
+import {
+  matchingRightOrderFor,
+  optionOrderFor,
+  segmentOrderFor,
+  sortedExercises,
+  wordBankOrderFor,
+} from '../chapters/chapterUtils';
 import { createJsonStore } from '../progress/progressPersistence';
 import { useProgressStore } from '../progress/progressStore';
 import {
+  checkDragToSlotsAnswer,
+  checkErrorSpottingAnswer,
+  checkMatchingAnswer,
+  checkSentenceOrderingAnswer,
   checkSingleChoiceAnswer,
   checkTextAnswer,
+  correctDragToSlotsText,
+  correctErrorSpottingText,
+  correctMatchingText,
+  correctSentenceOrderingText,
+  dragToSlotsAnswerText,
+  errorSpottingAnswerText,
+  matchingAnswerText,
   primaryAcceptedAnswer,
+  sentenceOrderingAnswerText,
 } from './answerNormalization';
 import {
   MAX_ATTEMPTS,
@@ -59,6 +81,9 @@ export interface PracticeState {
   chapterNumbers: number[] | null;
   exerciseIds: string[];
   optionOrder: Record<string, string[]>;
+  segmentOrder: Record<string, string[]>;
+  wordBankOrder: Record<string, number[]>;
+  matchingRightOrder: Record<string, string[]>;
   currentIndex: number;
   results: Record<string, ExerciseAttemptRecord>;
   attempts: Record<string, number>;
@@ -84,6 +109,22 @@ export interface PracticeState {
   hasStoredSession: (chapterNumber: number) => boolean;
   submitSingleChoice: (exercise: SingleChoiceExercise, optionId: string) => FeedbackState;
   submitTextAnswer: (exercise: TextInputExercise, value: string) => FeedbackState;
+  submitSentenceOrdering: (
+    exercise: SentenceOrderingExercise,
+    orderedIds: string[],
+  ) => FeedbackState;
+  submitDragToSlots: (
+    exercise: DragToSlotsExercise,
+    placedWords: Record<string, string>,
+  ) => FeedbackState;
+  submitMatching: (
+    exercise: MatchingExercise,
+    matches: Record<string, string>,
+  ) => FeedbackState;
+  submitErrorSpotting: (
+    exercise: ErrorSpottingExercise,
+    tokenIndex: number,
+  ) => FeedbackState;
   revealAnswer: (exercise: Exercise) => FeedbackState;
   goToNext: () => void;
   finish: (chapter: ChapterDefinition) => SessionSummary;
@@ -96,10 +137,68 @@ export interface PracticeState {
 }
 
 function expectedAnswerFor(exercise: Exercise): string {
-  return exercise.type === 'textInput'
-    ? primaryAcceptedAnswer(exercise)
-    : (exercise.options.find((option) => option.id === exercise.correctOptionId)?.text ??
-        '');
+  switch (exercise.type) {
+    case 'textInput':
+      return primaryAcceptedAnswer(exercise);
+    case 'singleChoice':
+      return (
+        exercise.options.find((option) => option.id === exercise.correctOptionId)?.text ??
+        ''
+      );
+    case 'sentenceOrdering':
+      return correctSentenceOrderingText(exercise);
+    case 'dragToSlots':
+      return correctDragToSlotsText(exercise);
+    case 'matching':
+      return correctMatchingText(exercise);
+    case 'errorSpotting':
+      return correctErrorSpottingText(exercise);
+  }
+}
+
+interface DisplayOrders {
+  optionOrder: Record<string, string[]>;
+  segmentOrder: Record<string, string[]>;
+  wordBankOrder: Record<string, number[]>;
+  matchingRightOrder: Record<string, string[]>;
+}
+
+/**
+ * Computes every exercise-type's shuffled display order up front, once per
+ * session start, so it stays stable across re-renders and page refreshes
+ * (mirrors the pre-existing `optionOrder` approach for single-choice).
+ */
+function displayOrdersFor(
+  exercises: readonly Exercise[],
+  includedIds: readonly string[],
+  shuffle: boolean,
+): DisplayOrders {
+  const optionOrder: Record<string, string[]> = {};
+  const segmentOrder: Record<string, string[]> = {};
+  const wordBankOrder: Record<string, number[]> = {};
+  const matchingRightOrder: Record<string, string[]> = {};
+
+  for (const exercise of exercises) {
+    if (!includedIds.includes(exercise.id)) continue;
+    switch (exercise.type) {
+      case 'singleChoice':
+        optionOrder[exercise.id] = optionOrderFor(exercise, shuffle);
+        break;
+      case 'sentenceOrdering':
+        segmentOrder[exercise.id] = segmentOrderFor(exercise, shuffle);
+        break;
+      case 'dragToSlots':
+        wordBankOrder[exercise.id] = wordBankOrderFor(exercise, shuffle);
+        break;
+      case 'matching':
+        matchingRightOrder[exercise.id] = matchingRightOrderFor(exercise, shuffle);
+        break;
+      default:
+        break;
+    }
+  }
+
+  return { optionOrder, segmentOrder, wordBankOrder, matchingRightOrder };
 }
 
 export const usePracticeStore = create<PracticeState>()((set, get) => {
@@ -112,6 +211,9 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
       mode: state.mode,
       exerciseIds: state.exerciseIds,
       optionOrder: state.optionOrder,
+      segmentOrder: state.segmentOrder,
+      wordBankOrder: state.wordBankOrder,
+      matchingRightOrder: state.matchingRightOrder,
       currentIndex: state.currentIndex,
       results: state.results,
       startedAt: state.startedAt ?? new Date().toISOString(),
@@ -156,6 +258,9 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
     chapterNumbers: null,
     exerciseIds: [],
     optionOrder: {},
+    segmentOrder: {},
+    wordBankOrder: {},
+    matchingRightOrder: {},
     currentIndex: 0,
     results: {},
     attempts: {},
@@ -173,12 +278,7 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
           : ordered.map((exercise) => exercise.id);
 
       const shuffleOptions = options.shuffleOptions ?? true;
-      const optionOrder: Record<string, string[]> = {};
-      for (const exercise of ordered) {
-        if (exercise.type === 'singleChoice' && exerciseIds.includes(exercise.id)) {
-          optionOrder[exercise.id] = optionOrderFor(exercise, shuffleOptions);
-        }
-      }
+      const orders = displayOrdersFor(ordered, exerciseIds, shuffleOptions);
 
       set({
         status: 'active',
@@ -186,7 +286,7 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
         chapterNumber: chapter.number,
         chapterNumbers: null,
         exerciseIds,
-        optionOrder,
+        ...orders,
         currentIndex: 0,
         results: {},
         attempts: {},
@@ -199,14 +299,8 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
 
     startCumulativeSession: (chapters, exerciseIds, options = {}) => {
       const shuffleOptions = options.shuffleOptions ?? true;
-      const optionOrder: Record<string, string[]> = {};
-      for (const chapter of chapters) {
-        for (const exercise of chapter.exercises) {
-          if (exercise.type === 'singleChoice' && exerciseIds.includes(exercise.id)) {
-            optionOrder[exercise.id] = optionOrderFor(exercise, shuffleOptions);
-          }
-        }
-      }
+      const allExercises = chapters.flatMap((chapter) => chapter.exercises);
+      const orders = displayOrdersFor(allExercises, exerciseIds, shuffleOptions);
 
       set({
         status: 'active',
@@ -214,7 +308,7 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
         chapterNumber: null,
         chapterNumbers: chapters.map((chapter) => chapter.number),
         exerciseIds,
-        optionOrder,
+        ...orders,
         currentIndex: 0,
         results: {},
         attempts: {},
@@ -246,6 +340,9 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
         chapterNumbers: null,
         exerciseIds,
         optionOrder: stored.optionOrder,
+        segmentOrder: stored.segmentOrder,
+        wordBankOrder: stored.wordBankOrder,
+        matchingRightOrder: stored.matchingRightOrder,
         currentIndex: Math.min(stored.currentIndex, exerciseIds.length - 1),
         results: stored.results,
         attempts: {},
@@ -335,6 +432,142 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
       });
     },
 
+    submitSentenceOrdering: (exercise, orderedIds) => {
+      const attempts = (get().attempts[exercise.id] ?? 0) + 1;
+      set((state) => ({ attempts: { ...state.attempts, [exercise.id]: attempts } }));
+
+      const correct = checkSentenceOrderingAnswer(exercise, orderedIds);
+      const submittedAnswer = sentenceOrderingAnswerText(exercise, orderedIds);
+
+      if (correct) {
+        const outcome = outcomeForAttempt(attempts, true);
+        resolveExercise(exercise, outcome, attempts, submittedAnswer);
+        return setFeedback({
+          exerciseId: exercise.id,
+          kind: 'correct',
+          attempts,
+          canRetry: false,
+          submittedAnswer,
+          expectedAnswer: expectedAnswerFor(exercise),
+        });
+      }
+
+      const canRetry = attempts < MAX_ATTEMPTS;
+      if (!canRetry) {
+        resolveExercise(exercise, 'incorrect', attempts, submittedAnswer);
+      }
+      return setFeedback({
+        exerciseId: exercise.id,
+        kind: 'incorrect',
+        attempts,
+        canRetry,
+        submittedAnswer,
+        ...(canRetry ? {} : { expectedAnswer: expectedAnswerFor(exercise) }),
+      });
+    },
+
+    submitDragToSlots: (exercise, placedWords) => {
+      const attempts = (get().attempts[exercise.id] ?? 0) + 1;
+      set((state) => ({ attempts: { ...state.attempts, [exercise.id]: attempts } }));
+
+      const correct = checkDragToSlotsAnswer(exercise, placedWords);
+      const submittedAnswer = dragToSlotsAnswerText(exercise, placedWords);
+
+      if (correct) {
+        const outcome = outcomeForAttempt(attempts, true);
+        resolveExercise(exercise, outcome, attempts, submittedAnswer);
+        return setFeedback({
+          exerciseId: exercise.id,
+          kind: 'correct',
+          attempts,
+          canRetry: false,
+          submittedAnswer,
+          expectedAnswer: expectedAnswerFor(exercise),
+        });
+      }
+
+      const canRetry = attempts < MAX_ATTEMPTS;
+      if (!canRetry) {
+        resolveExercise(exercise, 'incorrect', attempts, submittedAnswer);
+      }
+      return setFeedback({
+        exerciseId: exercise.id,
+        kind: 'incorrect',
+        attempts,
+        canRetry,
+        submittedAnswer,
+        ...(canRetry ? {} : { expectedAnswer: expectedAnswerFor(exercise) }),
+      });
+    },
+
+    submitMatching: (exercise, matches) => {
+      const attempts = (get().attempts[exercise.id] ?? 0) + 1;
+      set((state) => ({ attempts: { ...state.attempts, [exercise.id]: attempts } }));
+
+      const correct = checkMatchingAnswer(exercise, matches);
+      const submittedAnswer = matchingAnswerText(exercise, matches);
+
+      if (correct) {
+        const outcome = outcomeForAttempt(attempts, true);
+        resolveExercise(exercise, outcome, attempts, submittedAnswer);
+        return setFeedback({
+          exerciseId: exercise.id,
+          kind: 'correct',
+          attempts,
+          canRetry: false,
+          submittedAnswer,
+          expectedAnswer: expectedAnswerFor(exercise),
+        });
+      }
+
+      const canRetry = attempts < MAX_ATTEMPTS;
+      if (!canRetry) {
+        resolveExercise(exercise, 'incorrect', attempts, submittedAnswer);
+      }
+      return setFeedback({
+        exerciseId: exercise.id,
+        kind: 'incorrect',
+        attempts,
+        canRetry,
+        submittedAnswer,
+        ...(canRetry ? {} : { expectedAnswer: expectedAnswerFor(exercise) }),
+      });
+    },
+
+    submitErrorSpotting: (exercise, tokenIndex) => {
+      const attempts = (get().attempts[exercise.id] ?? 0) + 1;
+      set((state) => ({ attempts: { ...state.attempts, [exercise.id]: attempts } }));
+
+      const correct = checkErrorSpottingAnswer(exercise, tokenIndex);
+      const submittedAnswer = errorSpottingAnswerText(exercise, tokenIndex);
+
+      if (correct) {
+        const outcome = outcomeForAttempt(attempts, true);
+        resolveExercise(exercise, outcome, attempts, submittedAnswer);
+        return setFeedback({
+          exerciseId: exercise.id,
+          kind: 'correct',
+          attempts,
+          canRetry: false,
+          submittedAnswer,
+          expectedAnswer: expectedAnswerFor(exercise),
+        });
+      }
+
+      const canRetry = attempts < MAX_ATTEMPTS;
+      if (!canRetry) {
+        resolveExercise(exercise, 'incorrect', attempts, submittedAnswer);
+      }
+      return setFeedback({
+        exerciseId: exercise.id,
+        kind: 'incorrect',
+        attempts,
+        canRetry,
+        submittedAnswer,
+        ...(canRetry ? {} : { expectedAnswer: expectedAnswerFor(exercise) }),
+      });
+    },
+
     revealAnswer: (exercise) => {
       const attempts = get().attempts[exercise.id] ?? 0;
       const submitted = get().feedback?.submittedAnswer ?? '';
@@ -398,6 +631,9 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
         chapterNumbers: null,
         exerciseIds: [],
         optionOrder: {},
+        segmentOrder: {},
+        wordBankOrder: {},
+        matchingRightOrder: {},
         currentIndex: 0,
         results: {},
         attempts: {},

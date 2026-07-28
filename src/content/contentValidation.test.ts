@@ -47,7 +47,7 @@ describe('shipped content', () => {
           expect(
             exercise.options.some((option) => option.id === exercise.correctOptionId),
           ).toBe(true);
-        } else {
+        } else if (exercise.type === 'textInput') {
           expect(exercise.acceptedAnswers.length).toBeGreaterThan(0);
         }
       }
