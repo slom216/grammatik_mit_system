@@ -75,7 +75,7 @@ describe('LearnPage', () => {
   });
 
   it('reports an unavailable chapter instead of crashing', () => {
-    renderLearn(72);
+    renderLearn(81);
     expect(screen.getByText(/has not been written yet/i)).toBeInTheDocument();
   });
 });

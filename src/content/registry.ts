@@ -73,6 +73,16 @@ import { chapter067 } from './chapters/chapter-067-position-and-direction-verbs'
 import { chapter068 } from './chapters/chapter-068-the-genitive-case';
 import { chapter069 } from './chapters/chapter-069-the-n-declension';
 import { chapter070 } from './chapters/chapter-070-adjectives-used-as-nouns-for-people';
+import { chapter071 } from './chapters/chapter-071-adjectives-used-as-neuter-nouns';
+import { chapter072 } from './chapters/chapter-072-indirect-questions';
+import { chapter073 } from './chapters/chapter-073-infinitive-constructions-with-zu';
+import { chapter074 } from './chapters/chapter-074-infinitive-constructions-without-zu';
+import { chapter075 } from './chapters/chapter-075-relative-clauses-part-1';
+import { chapter076 } from './chapters/chapter-076-relative-clauses-part-2';
+import { chapter077 } from './chapters/chapter-077-temporal-clauses-with-wenn-and-als';
+import { chapter078 } from './chapters/chapter-078-temporal-clauses-with-wahrend-bevor-nachdem-and-seit';
+import { chapter079 } from './chapters/chapter-079-purpose-clauses-with-um-zu-and-damit';
+import { chapter080 } from './chapters/chapter-080-paired-conjunctions';
 
 export interface ChapterRegistryEntry {
   number: number;
@@ -560,6 +570,16 @@ export const chapters: readonly ChapterDefinition[] = [
   chapter068,
   chapter069,
   chapter070,
+  chapter071,
+  chapter072,
+  chapter073,
+  chapter074,
+  chapter075,
+  chapter076,
+  chapter077,
+  chapter078,
+  chapter079,
+  chapter080,
 ];
 
 const chaptersByNumber = new Map(chapters.map((chapter) => [chapter.number, chapter]));

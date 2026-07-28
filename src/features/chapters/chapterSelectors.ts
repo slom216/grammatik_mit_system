@@ -231,9 +231,11 @@ export interface CourseCheckpoint {
 }
 
 /**
- * Ten-chapter review blocks, added as each phase of the course ships.
- * A checkpoint only appears in the app once every chapter in its range has
- * content (see `selectAvailableCheckpoints`).
+ * Ten-chapter review blocks, added as each phase of the course ships, plus
+ * the occasional topic-scoped block spanning less than ten chapters (e.g.
+ * the Phase 8 "B1 Clause Connections" checkpoint over the whole
+ * `sentence-connections-2` section). A checkpoint only appears in the app
+ * once every chapter in its range has content (see `selectAvailableCheckpoints`).
  */
 export const COURSE_CHECKPOINTS: readonly CourseCheckpoint[] = [
   { id: 'checkpoint-21-30', title: 'Chapters 21-30', from: 21, to: 30 },
@@ -241,6 +243,13 @@ export const COURSE_CHECKPOINTS: readonly CourseCheckpoint[] = [
   { id: 'checkpoint-41-50', title: 'Chapters 41-50', from: 41, to: 50 },
   { id: 'checkpoint-51-60', title: 'Chapters 51-60', from: 51, to: 60 },
   { id: 'checkpoint-61-70', title: 'Chapters 61-70', from: 61, to: 70 },
+  { id: 'checkpoint-71-80', title: 'Chapters 71-80', from: 71, to: 80 },
+  {
+    id: 'checkpoint-b1-clause-connections',
+    title: 'B1 Clause Connections (Ch. 72-80)',
+    from: 72,
+    to: 80,
+  },
 ];
 
 /** Checkpoints whose full chapter range currently has content. */

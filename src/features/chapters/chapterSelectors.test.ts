@@ -43,7 +43,7 @@ describe('chapter selectors', () => {
     const cards = selectChapterCards(useProgressStore.getState());
     expect(cards).toHaveLength(85);
     expect(cards.some((card) => card.isDemo)).toBe(false);
-    expect(cards.filter((card) => card.available)).toHaveLength(70);
+    expect(cards.filter((card) => card.available)).toHaveLength(80);
   });
 
   it('groups chapters by section, without a demo group', () => {
@@ -115,13 +115,14 @@ describe('chapter selectors', () => {
     expect(selectNextChapter(40)?.number).toBe(41);
     expect(selectNextChapter(50)?.number).toBe(51);
     expect(selectNextChapter(60)?.number).toBe(61);
+    expect(selectNextChapter(70)?.number).toBe(71);
   });
 
   it('has no next chapter after the last chapter with content', () => {
-    expect(selectNextChapter(70)).toBeUndefined();
+    expect(selectNextChapter(80)).toBeUndefined();
   });
 
-  it('lists the chapters 21-30, 51-60, and 61-70 checkpoints now that their whole ranges have content', () => {
+  it('lists the chapters 21-30, 51-60, 61-70, and 71-80 checkpoints now that their whole ranges have content', () => {
     const checkpoints = selectAvailableCheckpoints();
     expect(checkpoints).toContainEqual({
       id: 'checkpoint-21-30',
@@ -140,6 +141,18 @@ describe('chapter selectors', () => {
       title: 'Chapters 61-70',
       from: 61,
       to: 70,
+    });
+    expect(checkpoints).toContainEqual({
+      id: 'checkpoint-71-80',
+      title: 'Chapters 71-80',
+      from: 71,
+      to: 80,
+    });
+    expect(checkpoints).toContainEqual({
+      id: 'checkpoint-b1-clause-connections',
+      title: 'B1 Clause Connections (Ch. 72-80)',
+      from: 72,
+      to: 80,
     });
   });
 });

@@ -4,11 +4,15 @@ A browser-based German grammar course for levels A1–B1, built with React, Vite
 TypeScript. Every chapter provides an explanation, examples, common mistakes, a short
 summary and at least 24 graded exercises. Progress is stored in the browser.
 
-The build in this repository is at **Phase 7**: the application shell, the lesson and
+The build in this repository is at **Phase 8**: the application shell, the lesson and
 exercise engine, scoring, review scheduling and persistence are complete, and chapters
-1-70 are shipped with full content. Chapters 21-30, 31-40, 41-50, 51-60, and 61-70 each
-add a cumulative review session that mixes exercises across their ten-chapter block (see
-"Cumulative review" below). Grammar tables can visually tag columns with the grammatical
+1-80 are shipped with full content. Chapters 21-30, 31-40, 41-50, 51-60, 61-70, and
+71-80 each add a cumulative review session that mixes exercises across their
+ten-chapter block, and chapters 72-80 (the whole "Sentences and Sentence Connections 2"
+section — indirect questions, infinitive constructions, relative clauses, temporal and
+purpose clauses, and paired conjunctions) additionally get a topic-scoped "B1 Clause
+Connections" checkpoint (see "Cumulative review" below). Grammar tables can visually tag
+columns with the grammatical
 case they represent (see "Case-highlighted grammar tables" below), which chapters 31-40
 and 56 use for their preposition-case and reflexive-pronoun-case content. Exercises can
 also present a short dialogue for context before the prompt (see "Dialogue-style
@@ -94,13 +98,17 @@ files are checked against it automatically.
 
 ### Cumulative review
 
-Once every chapter in a ten-chapter block has content, `/review` offers a checkpoint for
-that block (currently chapters 21-30, 31-40, 41-50, 51-60, and 61-70) at `/review/:from/:to`. The session mixes
-every exercise from the range that is due for spaced-repetition review with a shuffled
-sample from each chapter, so it stays useful before anything has been marked wrong. Each
-answer still updates that exercise's own chapter history and review schedule; the session
-itself is not tied to one chapter, so it is never persisted across a page reload and does
-not evaluate any single chapter's mastery. Future phases register their own block in
+Once every chapter in a checkpoint's range has content, `/review` offers it at
+`/review/:from/:to` (currently the ten-chapter blocks 21-30, 31-40, 41-50, 51-60, 61-70,
+and 71-80). The session mixes every exercise from the range that is due for
+spaced-repetition review with a shuffled sample from each chapter, so it stays useful
+before anything has been marked wrong. Each answer still updates that exercise's own
+chapter history and review schedule; the session itself is not tied to one chapter, so
+it is never persisted across a page reload and does not evaluate any single chapter's
+mastery. A checkpoint need not span exactly ten chapters — Phase 8 also adds a
+topic-scoped "B1 Clause Connections" checkpoint over chapters 72-80 (the whole
+"Sentences and Sentence Connections 2" section), reusing the same `/review/:from/:to`
+mechanism with a narrower, contiguous range. Future phases register their own block in
 `COURSE_CHECKPOINTS` (`src/features/chapters/chapterSelectors.ts`).
 
 ### Case-highlighted grammar tables
