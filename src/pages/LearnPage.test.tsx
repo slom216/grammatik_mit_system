@@ -70,7 +70,9 @@ describe('LearnPage', () => {
     const remember = screen.getByRole('complementary', { name: /remember/i });
     expect(remember).toBeInTheDocument();
     expect(
-      screen.getByRole('link', { name: /start practice \(24 exercises\)/i }),
+      screen.getByRole('link', {
+        name: new RegExp(`start practice \\(${chapter001.exercises.length} exercises\\)`, 'i'),
+      }),
     ).toHaveAttribute('href', '/chapter/1/practice');
   });
 

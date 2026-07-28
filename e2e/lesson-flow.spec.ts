@@ -4,6 +4,10 @@ import { chapterRegistry } from '../src/content/registry';
 
 const exercises = [...chapter001.exercises].sort((a, b) => a.order - b.order);
 
+function escapeRegExp(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
 function correctAnswerFor(exercise: (typeof exercises)[number]): string {
   if (exercise.type === 'singleChoice') {
     return (
@@ -13,10 +17,16 @@ function correctAnswerFor(exercise: (typeof exercises)[number]): string {
   if (exercise.type === 'textInput') {
     return exercise.acceptedAnswers[0] ?? '';
   }
-  throw new Error(`Unsupported exercise type in this e2e fixture: ${exercise.type}`);
+  throw new Error(`Unsupported exercise type for correctAnswerFor: ${exercise.type}`);
 }
 
-/** Answers the exercise currently on screen correctly and submits it. */
+/**
+ * Answers the exercise currently on screen correctly and submits it, using the
+ * interaction pattern for whichever of the 6 exercise types is showing. Move
+ * buttons / click-click selection are used throughout instead of simulating
+ * native drag-and-drop, matching the keyboard-accessible fallback path each
+ * component provides.
+ */
 async function answerCurrentExercise(page: Page, index: number) {
   const exercise = exercises[index];
   if (!exercise) throw new Error(`No exercise at index ${index}`);
@@ -25,21 +35,95 @@ async function answerCurrentExercise(page: Page, index: number) {
     `Exercise ${index + 1} of ${exercises.length}`,
   );
 
-  if (exercise.type === 'singleChoice') {
-    // Selecting an option checks it immediately, with no separate submit step.
-    await page
-      .getByRole('radio', { name: correctAnswerFor(exercise), exact: true })
-      .check();
-  } else {
-    await page.getByRole('textbox').fill(correctAnswerFor(exercise));
-    await page.getByRole('button', { name: 'Check answer' }).click();
+  switch (exercise.type) {
+    case 'singleChoice': {
+      // Selecting an option checks it immediately, with no separate submit step.
+      await page
+        .getByRole('radio', { name: correctAnswerFor(exercise), exact: true })
+        .check();
+      break;
+    }
+    case 'textInput': {
+      await page.getByRole('textbox').fill(correctAnswerFor(exercise));
+      await page.getByRole('button', { name: 'Check answer' }).click();
+      break;
+    }
+    case 'errorSpotting': {
+      // Auto-submits like singleChoice, after the same debounce.
+      await page
+        .locator('.error-spotting__token')
+        .nth(exercise.errorTokenIndex)
+        .click();
+      break;
+    }
+    case 'sentenceOrdering': {
+      const correctTexts = exercise.segments.map((segment) => segment.text);
+      for (let target = 0; target < correctTexts.length; target += 1) {
+        const text = correctTexts[target] ?? '';
+        const moveEarlier = page.getByRole('button', {
+          name: `Move "${text}" earlier in the sentence`,
+        });
+        // Re-read the current position each time: earlier clicks shift indices.
+        while (true) {
+          const currentTexts = await page
+            .locator('.sentence-ordering__text')
+            .allTextContents();
+          const currentIndex = currentTexts.indexOf(text);
+          if (currentIndex <= target) break;
+          await moveEarlier.click();
+        }
+      }
+      await page.getByRole('button', { name: 'Check answer' }).click();
+      break;
+    }
+    case 'dragToSlots': {
+      const usedWordIndices = new Set<number>();
+      for (let slotIndex = 0; slotIndex < exercise.slots.length; slotIndex += 1) {
+        const slot = exercise.slots[slotIndex];
+        if (!slot) continue;
+        const wordIndex = exercise.wordBank.findIndex(
+          (word, i) => word === slot.correctWord && !usedWordIndices.has(i),
+        );
+        if (wordIndex === -1) {
+          throw new Error(`No unused word bank entry for slot "${slot.id}"`);
+        }
+        usedWordIndices.add(wordIndex);
+        const exactWord = new RegExp(`^${escapeRegExp(slot.correctWord)}$`);
+        await page
+          .locator('.drag-slots__word:not(.drag-slots__word--used)', { hasText: exactWord })
+          .first()
+          .click();
+        await page.locator('.drag-slots__slot').nth(slotIndex).click();
+      }
+      await page.getByRole('button', { name: 'Check answer' }).click();
+      break;
+    }
+    case 'matching': {
+      for (let pairIndex = 0; pairIndex < exercise.pairs.length; pairIndex += 1) {
+        const pair = exercise.pairs[pairIndex];
+        if (!pair) continue;
+        await page
+          .locator('.matching__column')
+          .first()
+          .locator('.matching__item')
+          .nth(pairIndex)
+          .click();
+        await page
+          .locator('.matching__column')
+          .nth(1)
+          .getByRole('button', { name: pair.right, exact: true })
+          .click();
+      }
+      await page.getByRole('button', { name: 'Check answer' }).click();
+      break;
+    }
   }
 
   await expect(page.getByTestId('exercise-feedback')).toContainText('Correct');
 }
 
 test.describe('lesson flow', () => {
-  test('a learner can read a lesson, complete all 24 exercises and master the chapter', async ({
+  test(`a learner can read a lesson, complete all ${exercises.length} exercises and master the chapter`, async ({
     page,
   }) => {
     await page.goto('/');
@@ -74,7 +158,9 @@ test.describe('lesson flow', () => {
     await page.getByRole('button', { name: 'Finish and see results' }).click();
 
     await expect(page.getByRole('heading', { level: 1 })).toContainText('Results');
-    await expect(page.getByText('Answered: 24 of 24')).toBeVisible();
+    await expect(
+      page.getByText(`Answered: ${exercises.length} of ${exercises.length}`),
+    ).toBeVisible();
     await expect(
       page.getByRole('heading', { level: 2, name: 'Chapter mastered' }),
     ).toBeVisible();
@@ -138,7 +224,9 @@ test.describe('lesson flow', () => {
 
     await page.reload();
 
-    await expect(page.getByTestId('exercise-counter')).toContainText('Exercise 3 of 24');
+    await expect(page.getByTestId('exercise-counter')).toContainText(
+      `Exercise 3 of ${exercises.length}`,
+    );
     await expect(page.getByRole('progressbar')).toHaveAttribute('aria-valuenow', '2');
   });
 
@@ -153,7 +241,9 @@ test.describe('lesson flow', () => {
       await page.getByRole('button', { name: 'Next exercise' }).click();
     }
 
-    await expect(page.getByTestId('exercise-counter')).toContainText('Exercise 23 of 24');
+    await expect(page.getByTestId('exercise-counter')).toContainText(
+      `Exercise 23 of ${exercises.length}`,
+    );
 
     const field = page.getByRole('textbox');
     await field.fill('Ihr seid sp');
@@ -190,7 +280,9 @@ test.describe('lesson flow', () => {
     // Focus moves straight to "Next exercise", no extra Tab needed.
     await expect(page.getByRole('button', { name: 'Next exercise' })).toBeFocused();
     await page.keyboard.press('Enter');
-    await expect(page.getByTestId('exercise-counter')).toContainText('Exercise 2 of 24');
+    await expect(page.getByTestId('exercise-counter')).toContainText(
+      `Exercise 2 of ${exercises.length}`,
+    );
   });
 
   test('the catalogue can be filtered', async ({ page }) => {

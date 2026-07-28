@@ -6,6 +6,9 @@ import { renderWithRouter } from '../test/helpers/renderWithRouter';
 import { usePracticeStore } from '../features/practice/practiceStore';
 import { useProgressStore } from '../features/progress/progressStore';
 import { useSettingsStore } from '../features/settings/settingsStore';
+import { chapter001 } from '../content/chapters/chapter-001-personal-pronouns';
+
+const CHAPTER_1_EXERCISE_COUNT = chapter001.exercises.length;
 
 function renderPractice() {
   return renderWithRouter(<PracticePage />, {
@@ -46,7 +49,7 @@ describe('PracticePage', () => {
 
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(/practice/i);
     expect(screen.getByTestId('exercise-counter')).toHaveTextContent(
-      'Exercise 1 of 24 · multiple choice',
+      `Exercise 1 of ${CHAPTER_1_EXERCISE_COUNT} · multiple choice`,
     );
     expect(screen.getByText('Wir sind heute im Park.')).toBeInTheDocument();
     expect(screen.getByRole('progressbar')).toHaveAttribute('aria-valuenow', '0');
@@ -150,7 +153,9 @@ describe('PracticePage', () => {
     await answerChoiceCorrectly(user, 'wir');
     await user.click(screen.getByRole('button', { name: /next exercise/i }));
 
-    expect(screen.getByTestId('exercise-counter')).toHaveTextContent('Exercise 2 of 24');
+    expect(screen.getByTestId('exercise-counter')).toHaveTextContent(
+      `Exercise 2 of ${CHAPTER_1_EXERCISE_COUNT}`,
+    );
     expect(screen.getByRole('progressbar')).toHaveAttribute('aria-valuenow', '1');
     expect(screen.queryByTestId('exercise-feedback')).not.toBeInTheDocument();
   });
@@ -220,7 +225,9 @@ describe('PracticePage', () => {
     );
 
     await user.keyboard('{Enter}');
-    expect(screen.getByTestId('exercise-counter')).toHaveTextContent('Exercise 2 of 24');
+    expect(screen.getByTestId('exercise-counter')).toHaveTextContent(
+      `Exercise 2 of ${CHAPTER_1_EXERCISE_COUNT}`,
+    );
   });
 
   it('moves focus to "Try again" after an incorrect answer', async () => {
@@ -260,7 +267,9 @@ describe('PracticePage', () => {
 
     renderPractice();
 
-    expect(screen.getByTestId('exercise-counter')).toHaveTextContent('Exercise 2 of 24');
+    expect(screen.getByTestId('exercise-counter')).toHaveTextContent(
+      `Exercise 2 of ${CHAPTER_1_EXERCISE_COUNT}`,
+    );
     expect(usePracticeStore.getState().results['ch01-ex-01']?.outcome).toBe(
       'correctFirstAttempt',
     );
