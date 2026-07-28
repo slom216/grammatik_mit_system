@@ -27,6 +27,12 @@ export const ANSWER_MODES = [
 ] as const;
 export type AnswerMode = (typeof ANSWER_MODES)[number];
 
+export interface DialogueLine {
+  speaker: string;
+  german: string;
+  english?: string;
+}
+
 export interface ExerciseBase {
   id: string;
   chapterNumber: number;
@@ -38,6 +44,12 @@ export interface ExerciseBase {
   grammarFocus: string[];
   hint?: string;
   explanation: string;
+  /**
+   * Optional short conversational exchange shown above the prompt, for
+   * exercises where the answer depends on register or pragmatics (modal
+   * particles, connectors, conjunctions) rather than on the sentence alone.
+   */
+  dialogue?: DialogueLine[];
 }
 
 export interface ExerciseOption {
@@ -64,6 +76,12 @@ export interface TextInputExercise extends ExerciseBase {
 
 export type Exercise = SingleChoiceExercise | TextInputExercise;
 
+export const dialogueLineSchema = z.object({
+  speaker: z.string().min(1),
+  german: z.string().min(1),
+  english: z.string().min(1).optional(),
+});
+
 const exerciseBaseShape = {
   id: z.string().min(1, 'Exercise id is required'),
   chapterNumber: z.number().int().min(0),
@@ -74,6 +92,10 @@ const exerciseBaseShape = {
   grammarFocus: z.array(z.string().min(1)).min(1, 'At least one grammar focus tag'),
   hint: z.string().min(1).optional(),
   explanation: z.string().min(1, 'Every exercise needs an answer explanation'),
+  dialogue: z
+    .array(dialogueLineSchema)
+    .min(2, 'A dialogue needs at least two lines')
+    .optional(),
 };
 
 export const exerciseOptionSchema = z.object({

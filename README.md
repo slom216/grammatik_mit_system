@@ -4,14 +4,17 @@ A browser-based German grammar course for levels A1–B1, built with React, Vite
 TypeScript. Every chapter provides an explanation, examples, common mistakes, a short
 summary and at least 24 graded exercises. Progress is stored in the browser.
 
-The build in this repository is at **Phase 4**: the application shell, the lesson and
+The build in this repository is at **Phase 5**: the application shell, the lesson and
 exercise engine, scoring, review scheduling and persistence are complete, and chapters
-1-40 are shipped with full content. Chapters 21-30 and 31-40 each add a cumulative review
-session that mixes exercises across their ten-chapter block (see "Cumulative review"
-below). Grammar tables can now visually tag columns with the grammatical case they
-represent (see "Case-highlighted grammar tables" below), which chapters 31-40 use for
-their preposition-case content. The remaining course chapters are added phase by phase
-(see `DEVELOPMENT_INSTRUCTIONS.md`).
+1-50 are shipped with full content. Chapters 21-30, 31-40, and 41-50 each add a
+cumulative review session that mixes exercises across their ten-chapter block (see
+"Cumulative review" below). Grammar tables can visually tag columns with the grammatical
+case they represent (see "Case-highlighted grammar tables" below), which chapters 31-40
+use for their preposition-case content. Exercises can also present a short dialogue for
+context before the prompt (see "Dialogue-style exercises" below), which chapters 44, 45,
+46, and 50 use where a particle or connector's meaning depends on pragmatics rather than
+the sentence alone. The remaining course chapters are added phase by phase (see
+`DEVELOPMENT_INSTRUCTIONS.md`).
 
 ## Getting started
 
@@ -86,7 +89,7 @@ files are checked against it automatically.
 ### Cumulative review
 
 Once every chapter in a ten-chapter block has content, `/review` offers a checkpoint for
-that block (currently chapters 21-30 and 31-40) at `/review/:from/:to`. The session mixes
+that block (currently chapters 21-30, 31-40, and 41-50) at `/review/:from/:to`. The session mixes
 every exercise from the range that is due for spaced-repetition review with a shuffled
 sample from each chapter, so it stays useful before anything has been marked wrong. Each
 answer still updates that exercise's own chapter history and review schedule; the session
@@ -104,6 +107,17 @@ that column's header — never color alone, so it stays accessible. This is aime
 preposition-and-case content: chapters 33-40 use it to show at a glance which case a
 preposition or adjective ending governs, and chapter 36 uses it for a two-column
 wo?/wohin? contrast table.
+
+### Dialogue-style exercises
+
+An exercise can set `dialogue`, a short list of `{ speaker, german, english? }` lines
+shown as chat bubbles above the exercise prompt (`DialogueExchange`,
+`src/components/exercises/DialogueExchange.tsx`). This is for exercises where the
+correct answer depends on the conversational context rather than the sentence alone —
+chapters 44 and 45 use it where choosing a conjunction or connector depends on what was
+just said, chapter 46 uses it for a couple of clauses that answer a spoken question, and
+chapter 50 (modal particles) uses it throughout, since a particle's function is
+inherently pragmatic.
 
 ### Persistence
 

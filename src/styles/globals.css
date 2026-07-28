@@ -472,6 +472,58 @@ a {
 
 /* Exercises */
 
+.dialogue {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-2);
+}
+
+.dialogue__line {
+  display: flex;
+}
+
+.dialogue__line--a {
+  justify-content: flex-start;
+}
+
+.dialogue__line--b {
+  justify-content: flex-end;
+}
+
+.dialogue__bubble {
+  display: grid;
+  gap: var(--space-1);
+  max-width: 34rem;
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  border: var(--border-width) solid var(--color-border-strong);
+  background: var(--color-surface-muted);
+}
+
+.dialogue__line--b .dialogue__bubble {
+  background: var(--color-accent-soft);
+  border-color: var(--color-accent);
+}
+
+.dialogue__speaker {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+}
+
+.dialogue__german {
+  font-size: var(--text-lg);
+}
+
+.dialogue__english {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
 .exercise__prompt {
   font-size: var(--text-xl);
   font-weight: 600;

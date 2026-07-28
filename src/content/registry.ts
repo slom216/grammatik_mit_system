@@ -43,6 +43,16 @@ import { chapter037 } from './chapters/chapter-037-local-prepositions-answering-
 import { chapter038 } from './chapters/chapter-038-local-prepositions-answering-wo';
 import { chapter039 } from './chapters/chapter-039-local-prepositions-answering-woher';
 import { chapter040 } from './chapters/chapter-040-adjective-endings-in-the-nominative-and-accusative';
+import { chapter041 } from './chapters/chapter-041-adjective-endings-in-the-nominative-accusative-and-dative';
+import { chapter042 } from './chapters/chapter-042-comparative-forms-and-comparative-sentences';
+import { chapter043 } from './chapters/chapter-043-superlative-forms';
+import { chapter044 } from './chapters/chapter-044-coordinating-conjunctions';
+import { chapter045 } from './chapters/chapter-045-connectors-deshalb-sonst-dann-and-danach';
+import { chapter046 } from './chapters/chapter-046-subordinate-clauses-with-weil-wenn-and-dass';
+import { chapter047 } from './chapters/chapter-047-compound-nouns';
+import { chapter048 } from './chapters/chapter-048-compound-verbs';
+import { chapter049 } from './chapters/chapter-049-rules-for-grammatical-gender';
+import { chapter050 } from './chapters/chapter-050-modal-and-conversational-particles';
 
 export interface ChapterRegistryEntry {
   number: number;
@@ -500,6 +510,16 @@ export const chapters: readonly ChapterDefinition[] = [
   chapter038,
   chapter039,
   chapter040,
+  chapter041,
+  chapter042,
+  chapter043,
+  chapter044,
+  chapter045,
+  chapter046,
+  chapter047,
+  chapter048,
+  chapter049,
+  chapter050,
 ];
 
 const chaptersByNumber = new Map(chapters.map((chapter) => [chapter.number, chapter]));

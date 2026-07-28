@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import type { FormEvent } from 'react';
 import type { Exercise } from '../../schemas/exerciseSchema';
 import type { FeedbackState } from '../../features/practice/practiceStore';
+import { DialogueExchange } from './DialogueExchange';
 import { ExerciseFeedback } from './ExerciseFeedback';
 import { ExerciseNavigation } from './ExerciseNavigation';
 import { SingleChoiceExercise } from './SingleChoiceExercise';
@@ -92,6 +93,8 @@ export function ExerciseRenderer({
   return (
     <form className="stack" onSubmit={handleSubmit} noValidate>
       {exercise.instruction && <p className="text-muted">{exercise.instruction}</p>}
+
+      {exercise.dialogue && <DialogueExchange lines={exercise.dialogue} />}
 
       {exercise.type === 'singleChoice' ? (
         <SingleChoiceExercise

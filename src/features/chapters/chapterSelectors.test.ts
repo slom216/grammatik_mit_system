@@ -43,7 +43,7 @@ describe('chapter selectors', () => {
     const cards = selectChapterCards(useProgressStore.getState());
     expect(cards).toHaveLength(85);
     expect(cards.some((card) => card.isDemo)).toBe(false);
-    expect(cards.filter((card) => card.available)).toHaveLength(40);
+    expect(cards.filter((card) => card.available)).toHaveLength(50);
   });
 
   it('groups chapters by section, without a demo group', () => {
@@ -115,7 +115,7 @@ describe('chapter selectors', () => {
   });
 
   it('has no next chapter after the last chapter with content', () => {
-    expect(selectNextChapter(40)).toBeUndefined();
+    expect(selectNextChapter(50)).toBeUndefined();
   });
 
   it('lists the chapters 21-30 checkpoint now that its whole range has content', () => {
