@@ -4,17 +4,20 @@ A browser-based German grammar course for levels A1–B1, built with React, Vite
 TypeScript. Every chapter provides an explanation, examples, common mistakes, a short
 summary and at least 24 graded exercises. Progress is stored in the browser.
 
-The build in this repository is at **Phase 5**: the application shell, the lesson and
+The build in this repository is at **Phase 6**: the application shell, the lesson and
 exercise engine, scoring, review scheduling and persistence are complete, and chapters
-1-50 are shipped with full content. Chapters 21-30, 31-40, and 41-50 each add a
+1-60 are shipped with full content. Chapters 21-30, 31-40, 41-50, and 51-60 each add a
 cumulative review session that mixes exercises across their ten-chapter block (see
 "Cumulative review" below). Grammar tables can visually tag columns with the grammatical
 case they represent (see "Case-highlighted grammar tables" below), which chapters 31-40
-use for their preposition-case content. Exercises can also present a short dialogue for
-context before the prompt (see "Dialogue-style exercises" below), which chapters 44, 45,
-46, and 50 use where a particle or connector's meaning depends on pragmatics rather than
-the sentence alone. The remaining course chapters are added phase by phase (see
-`DEVELOPMENT_INSTRUCTIONS.md`).
+and 56 use for their preposition-case and reflexive-pronoun-case content. Exercises can
+also present a short dialogue for context before the prompt (see "Dialogue-style
+exercises" below), which chapters 44, 45, 46, 50, and 53 use where a particle,
+connector, or perspective-dependent adverb's meaning depends on pragmatics rather than
+the sentence alone. Generated word forms (simple past, past participle, Konjunktiv II,
+reflexive pronouns, pronominal adverbs) are cross-checked by a shared morphology
+validator (see "Morphology validation" below), which chapters 51 and 54-60 rely on. The
+remaining course chapters are added phase by phase (see `DEVELOPMENT_INSTRUCTIONS.md`).
 
 ## Getting started
 
@@ -89,7 +92,7 @@ files are checked against it automatically.
 ### Cumulative review
 
 Once every chapter in a ten-chapter block has content, `/review` offers a checkpoint for
-that block (currently chapters 21-30, 31-40, and 41-50) at `/review/:from/:to`. The session mixes
+that block (currently chapters 21-30, 31-40, 41-50, and 51-60) at `/review/:from/:to`. The session mixes
 every exercise from the range that is due for spaced-repetition review with a shuffled
 sample from each chapter, so it stays useful before anything has been marked wrong. Each
 answer still updates that exercise's own chapter history and review schedule; the session
@@ -105,8 +108,9 @@ tags a column with the grammatical case it represents (`nominative`, `accusative
 (`src/components/grammar/GrammarTable.tsx`) renders a color-coded, text-labelled badge in
 that column's header — never color alone, so it stays accessible. This is aimed at
 preposition-and-case content: chapters 33-40 use it to show at a glance which case a
-preposition or adjective ending governs, and chapter 36 uses it for a two-column
-wo?/wohin? contrast table.
+preposition or adjective ending governs, chapter 36 uses it for a two-column
+wo?/wohin? contrast table, and chapter 56 uses it to contrast the accusative and dative
+reflexive pronoun columns.
 
 ### Dialogue-style exercises
 
@@ -115,9 +119,20 @@ shown as chat bubbles above the exercise prompt (`DialogueExchange`,
 `src/components/exercises/DialogueExchange.tsx`). This is for exercises where the
 correct answer depends on the conversational context rather than the sentence alone —
 chapters 44 and 45 use it where choosing a conjunction or connector depends on what was
-just said, chapter 46 uses it for a couple of clauses that answer a spoken question, and
+just said, chapter 46 uses it for a couple of clauses that answer a spoken question,
 chapter 50 (modal particles) uses it throughout, since a particle's function is
-inherently pragmatic.
+inherently pragmatic, and chapter 53 uses it for hin/her adverbs whose direction depends
+on where the speaker in the exchange is standing.
+
+### Morphology validation
+
+`src/content/morphologyValidation.ts` derives and validates German inflected forms
+(simple past, past participle, Konjunktiv II, reflexive pronouns, pronominal adverbs)
+from a lookup table of common irregular verbs plus rule-based derivation for regular
+verbs — including the linking-`e` and du/ihr sibilant-collapse rules. Its tests
+(`morphologyValidation.test.ts`) both exercise the derivation rules directly and check
+every generated form quoted in chapters 51 and 54-60 against them, so an authoring slip
+in a conjugated or derived word form fails the test suite instead of shipping silently.
 
 ### Persistence
 

@@ -53,6 +53,16 @@ import { chapter047 } from './chapters/chapter-047-compound-nouns';
 import { chapter048 } from './chapters/chapter-048-compound-verbs';
 import { chapter049 } from './chapters/chapter-049-rules-for-grammatical-gender';
 import { chapter050 } from './chapters/chapter-050-modal-and-conversational-particles';
+import { chapter051 } from './chapters/chapter-051-forming-new-words-with-prefixes-and-suffixes';
+import { chapter052 } from './chapters/chapter-052-negation-expressions';
+import { chapter053 } from './chapters/chapter-053-local-adverbs-expressing-position-and-direction';
+import { chapter054 } from './chapters/chapter-054-simple-past-of-regular-and-irregular-verbs';
+import { chapter055 } from './chapters/chapter-055-the-past-perfect';
+import { chapter056 } from './chapters/chapter-056-reflexive-pronouns-in-the-accusative-and-dative';
+import { chapter057 } from './chapters/chapter-057-separable-and-inseparable-verbs';
+import { chapter058 } from './chapters/chapter-058-verbs-with-fixed-prepositions';
+import { chapter059 } from './chapters/chapter-059-pronominal-adverbs-and-prepositional-pronouns';
+import { chapter060 } from './chapters/chapter-060-konjunktiv-ii-formation';
 
 export interface ChapterRegistryEntry {
   number: number;
@@ -520,6 +530,16 @@ export const chapters: readonly ChapterDefinition[] = [
   chapter048,
   chapter049,
   chapter050,
+  chapter051,
+  chapter052,
+  chapter053,
+  chapter054,
+  chapter055,
+  chapter056,
+  chapter057,
+  chapter058,
+  chapter059,
+  chapter060,
 ];
 
 const chaptersByNumber = new Map(chapters.map((chapter) => [chapter.number, chapter]));
