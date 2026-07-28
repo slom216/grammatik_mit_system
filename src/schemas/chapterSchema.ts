@@ -36,6 +36,16 @@ export const CHAPTER_SECTIONS = [
 ] as const;
 export type ChapterSection = (typeof CHAPTER_SECTIONS)[number];
 
+/** Grammatical cases a grammar-table column can be tagged with for visual highlighting. */
+export const CASE_LABELS = [
+  'nominative',
+  'accusative',
+  'dative',
+  'genitive',
+  'two-way',
+] as const;
+export type CaseLabel = (typeof CASE_LABELS)[number];
+
 export interface GrammarRule {
   id: string;
   heading: string;
@@ -49,6 +59,13 @@ export interface GrammarTableDefinition {
   columns: string[];
   rows: string[][];
   note?: string;
+  /**
+   * Optional case tag per column (same length as `columns`), used to render a
+   * color-coded case badge in the column header. `null` leaves a column
+   * untagged. Use `'two-way'` for columns covering two-way prepositions that
+   * govern either the accusative or the dative depending on context.
+   */
+  columnCases?: (CaseLabel | null)[];
 }
 
 export interface GrammarExample {
@@ -113,6 +130,7 @@ export const grammarTableSchema = z
     columns: z.array(z.string().min(1)).min(2),
     rows: z.array(z.array(z.string())).min(1),
     note: z.string().min(1).optional(),
+    columnCases: z.array(z.enum(CASE_LABELS).nullable()).optional(),
   })
   .superRefine((table, ctx) => {
     table.rows.forEach((row, index) => {
@@ -124,6 +142,13 @@ export const grammarTableSchema = z
         });
       }
     });
+    if (table.columnCases && table.columnCases.length !== table.columns.length) {
+      ctx.addIssue({
+        code: 'custom',
+        path: ['columnCases'],
+        message: `Table "${table.id}" has ${table.columnCases.length} columnCases entries but ${table.columns.length} columns`,
+      });
+    }
   });
 
 export const grammarExampleSchema = z.object({

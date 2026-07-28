@@ -46,7 +46,7 @@ describe('CumulativeReviewPage', () => {
   });
 
   it('reports the range as unavailable when a chapter in it has no content', () => {
-    renderCumulativeReview('/review/29/32');
+    renderCumulativeReview('/review/39/42');
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
       /cumulative review unavailable/i,
     );

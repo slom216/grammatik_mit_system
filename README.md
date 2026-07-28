@@ -4,11 +4,14 @@ A browser-based German grammar course for levels A1–B1, built with React, Vite
 TypeScript. Every chapter provides an explanation, examples, common mistakes, a short
 summary and at least 24 graded exercises. Progress is stored in the browser.
 
-The build in this repository is at **Phase 3**: the application shell, the lesson and
+The build in this repository is at **Phase 4**: the application shell, the lesson and
 exercise engine, scoring, review scheduling and persistence are complete, and chapters
-1-30 are shipped with full content. Chapters 21-30 also add a cumulative review session
-that mixes exercises across a whole ten-chapter block (see "Cumulative review" below).
-The remaining course chapters are added phase by phase (see `DEVELOPMENT_INSTRUCTIONS.md`).
+1-40 are shipped with full content. Chapters 21-30 and 31-40 each add a cumulative review
+session that mixes exercises across their ten-chapter block (see "Cumulative review"
+below). Grammar tables can now visually tag columns with the grammatical case they
+represent (see "Case-highlighted grammar tables" below), which chapters 31-40 use for
+their preposition-case content. The remaining course chapters are added phase by phase
+(see `DEVELOPMENT_INSTRUCTIONS.md`).
 
 ## Getting started
 
@@ -83,13 +86,24 @@ files are checked against it automatically.
 ### Cumulative review
 
 Once every chapter in a ten-chapter block has content, `/review` offers a checkpoint for
-that block (currently chapters 21-30) at `/review/:from/:to`. The session mixes every
-exercise from the range that is due for spaced-repetition review with a shuffled sample
-from each chapter, so it stays useful before anything has been marked wrong. Each answer
-still updates that exercise's own chapter history and review schedule; the session itself
-is not tied to one chapter, so it is never persisted across a page reload and does not
-evaluate any single chapter's mastery. Future phases register their own block in
+that block (currently chapters 21-30 and 31-40) at `/review/:from/:to`. The session mixes
+every exercise from the range that is due for spaced-repetition review with a shuffled
+sample from each chapter, so it stays useful before anything has been marked wrong. Each
+answer still updates that exercise's own chapter history and review schedule; the session
+itself is not tied to one chapter, so it is never persisted across a page reload and does
+not evaluate any single chapter's mastery. Future phases register their own block in
 `COURSE_CHECKPOINTS` (`src/features/chapters/chapterSelectors.ts`).
+
+### Case-highlighted grammar tables
+
+A `GrammarTableDefinition` can set `columnCases`, an array aligned with `columns` that
+tags a column with the grammatical case it represents (`nominative`, `accusative`,
+`dative`, `genitive`, or `two-way` for a column covering both). `GrammarTable`
+(`src/components/grammar/GrammarTable.tsx`) renders a color-coded, text-labelled badge in
+that column's header — never color alone, so it stays accessible. This is aimed at
+preposition-and-case content: chapters 33-40 use it to show at a glance which case a
+preposition or adjective ending governs, and chapter 36 uses it for a two-column
+wo?/wohin? contrast table.
 
 ### Persistence
 

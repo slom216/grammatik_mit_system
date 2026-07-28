@@ -326,6 +326,40 @@ a {
   border-color: var(--color-warning-border);
 }
 
+.badge--case-nominative {
+  background: var(--color-surface-muted);
+  color: var(--color-text-muted);
+  border-color: var(--color-border-strong);
+}
+
+.badge--case-accusative {
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.badge--case-dative {
+  background: var(--color-success-soft);
+  color: var(--color-success);
+  border-color: var(--color-success-border);
+}
+
+.badge--case-genitive {
+  background: var(--color-genitive-soft);
+  color: var(--color-genitive);
+  border-color: var(--color-genitive-border);
+}
+
+.badge--case-two-way {
+  background: linear-gradient(
+    90deg,
+    var(--color-accent-soft) 50%,
+    var(--color-success-soft) 50%
+  );
+  color: var(--color-text);
+  border-color: var(--color-border-strong);
+}
+
 .progress-bar {
   width: 100%;
 }
@@ -380,6 +414,13 @@ a {
 
 .grammar-table thead th {
   background: var(--color-surface-muted);
+}
+
+.grammar-table__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
 }
 
 .example-list {

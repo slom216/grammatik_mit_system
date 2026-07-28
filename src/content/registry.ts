@@ -33,6 +33,16 @@ import { chapter027 } from './chapters/chapter-027-present-perfect-with-sein';
 import { chapter028 } from './chapters/chapter-028-formation-of-the-past-participle';
 import { chapter029 } from './chapters/chapter-029-simple-past-of-modal-verbs';
 import { chapter030 } from './chapters/chapter-030-choosing-and-using-past-tenses';
+import { chapter031 } from './chapters/chapter-031-reflexive-and-reciprocal-verbs';
+import { chapter032 } from './chapters/chapter-032-basic-temporal-prepositions';
+import { chapter033 } from './chapters/chapter-033-prepositions-governing-the-dative';
+import { chapter034 } from './chapters/chapter-034-prepositions-governing-the-accusative';
+import { chapter035 } from './chapters/chapter-035-two-way-prepositions-used-with-the-dative';
+import { chapter036 } from './chapters/chapter-036-two-way-prepositions-with-dative-or-accusative';
+import { chapter037 } from './chapters/chapter-037-local-prepositions-answering-wohin';
+import { chapter038 } from './chapters/chapter-038-local-prepositions-answering-wo';
+import { chapter039 } from './chapters/chapter-039-local-prepositions-answering-woher';
+import { chapter040 } from './chapters/chapter-040-adjective-endings-in-the-nominative-and-accusative';
 
 export interface ChapterRegistryEntry {
   number: number;
@@ -444,7 +454,7 @@ export const chapterRegistry = [
 ] as const satisfies readonly ChapterRegistryEntry[];
 
 /**
- * Chapter content that currently ships. Phase 3 ships chapters 1-30;
+ * Chapter content that currently ships. Phase 4 ships chapters 1-40;
  * further chapters are added phase by phase. The Phase 0 engine demo
  * (chapter-000-demo.ts) is no longer part of the shipped catalogue but
  * stays in the repo as a fixture for engine-level tests.
@@ -480,6 +490,16 @@ export const chapters: readonly ChapterDefinition[] = [
   chapter028,
   chapter029,
   chapter030,
+  chapter031,
+  chapter032,
+  chapter033,
+  chapter034,
+  chapter035,
+  chapter036,
+  chapter037,
+  chapter038,
+  chapter039,
+  chapter040,
 ];
 
 const chaptersByNumber = new Map(chapters.map((chapter) => [chapter.number, chapter]));

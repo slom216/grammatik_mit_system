@@ -237,6 +237,7 @@ export interface CourseCheckpoint {
  */
 export const COURSE_CHECKPOINTS: readonly CourseCheckpoint[] = [
   { id: 'checkpoint-21-30', title: 'Chapters 21-30', from: 21, to: 30 },
+  { id: 'checkpoint-31-40', title: 'Chapters 31-40', from: 31, to: 40 },
 ];
 
 /** Checkpoints whose full chapter range currently has content. */

@@ -70,6 +70,10 @@
   --color-warning-soft: #fdf0d8;
   --color-warning-border: #d9b676;
 
+  --color-genitive: #6a3f9e;
+  --color-genitive-soft: #efe4f9;
+  --color-genitive-border: #b79bd6;
+
   --color-focus: #0b5fff;
   --focus-ring: 3px solid var(--color-focus);
   --focus-offset: 2px;
@@ -99,6 +103,10 @@
     --color-warning: #f2cd88;
     --color-warning-soft: #362a12;
     --color-warning-border: #8a7038;
+
+    --color-genitive: #d2b6ee;
+    --color-genitive-soft: #2c2340;
+    --color-genitive-border: #6f4f96;
 
     --color-focus: #9dc0ff;
     --shadow-sm: 0 1px 2px rgb(0 0 0 / 40%);
