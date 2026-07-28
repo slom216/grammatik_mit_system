@@ -4,10 +4,10 @@ A browser-based German grammar course for levels A1–B1, built with React, Vite
 TypeScript. Every chapter provides an explanation, examples, common mistakes, a short
 summary and at least 24 graded exercises. Progress is stored in the browser.
 
-The build in this repository is at **Phase 6**: the application shell, the lesson and
+The build in this repository is at **Phase 7**: the application shell, the lesson and
 exercise engine, scoring, review scheduling and persistence are complete, and chapters
-1-60 are shipped with full content. Chapters 21-30, 31-40, 41-50, and 51-60 each add a
-cumulative review session that mixes exercises across their ten-chapter block (see
+1-70 are shipped with full content. Chapters 21-30, 31-40, 41-50, 51-60, and 61-70 each
+add a cumulative review session that mixes exercises across their ten-chapter block (see
 "Cumulative review" below). Grammar tables can visually tag columns with the grammatical
 case they represent (see "Case-highlighted grammar tables" below), which chapters 31-40
 and 56 use for their preposition-case and reflexive-pronoun-case content. Exercises can
@@ -16,8 +16,11 @@ exercises" below), which chapters 44, 45, 46, 50, and 53 use where a particle,
 connector, or perspective-dependent adverb's meaning depends on pragmatics rather than
 the sentence alone. Generated word forms (simple past, past participle, Konjunktiv II,
 reflexive pronouns, pronominal adverbs) are cross-checked by a shared morphology
-validator (see "Morphology validation" below), which chapters 51 and 54-60 rely on. The
-remaining course chapters are added phase by phase (see `DEVELOPMENT_INSTRUCTIONS.md`).
+validator (see "Morphology validation" below), which chapters 51 and 54-60 rely on.
+Sentence-level transformations (active/passive conversion, Futur I, genitive noun
+endings, the N-declension) are cross-checked by a second shared validator (see
+"Sentence transformation validation" below), which chapters 62-65, 68, and 69 rely on.
+The remaining course chapters are added phase by phase (see `DEVELOPMENT_INSTRUCTIONS.md`).
 
 ## Getting started
 
@@ -92,7 +95,7 @@ files are checked against it automatically.
 ### Cumulative review
 
 Once every chapter in a ten-chapter block has content, `/review` offers a checkpoint for
-that block (currently chapters 21-30, 31-40, 41-50, and 51-60) at `/review/:from/:to`. The session mixes
+that block (currently chapters 21-30, 31-40, 41-50, 51-60, and 61-70) at `/review/:from/:to`. The session mixes
 every exercise from the range that is due for spaced-repetition review with a shuffled
 sample from each chapter, so it stays useful before anything has been marked wrong. Each
 answer still updates that exercise's own chapter history and review schedule; the session
@@ -133,6 +136,17 @@ verbs — including the linking-`e` and du/ihr sibilant-collapse rules. Its test
 (`morphologyValidation.test.ts`) both exercise the derivation rules directly and check
 every generated form quoted in chapters 51 and 54-60 against them, so an authoring slip
 in a conjugated or derived word form fails the test suite instead of shipping silently.
+
+### Sentence transformation validation
+
+`src/content/sentenceTransformation.ts` builds on the morphology validator to check
+sentence-level transformations: the present, simple-past, and present-perfect passive
+auxiliaries (including the "worden" vs. "geworden" distinction), Futur I's shared
+present-tense `werden` conjugation, regular and hand-picked-exception genitive noun
+endings plus proper-name genitives, and the N-declension's weak-noun endings (including
+the `Herr`/`Herrn`/`Herren` exception). Its tests (`sentenceTransformation.test.ts`) both
+exercise these rules directly and check every generated form quoted in chapters 62-65,
+68, and 69 against them.
 
 ### Persistence
 

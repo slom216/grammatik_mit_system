@@ -63,6 +63,16 @@ import { chapter057 } from './chapters/chapter-057-separable-and-inseparable-ver
 import { chapter058 } from './chapters/chapter-058-verbs-with-fixed-prepositions';
 import { chapter059 } from './chapters/chapter-059-pronominal-adverbs-and-prepositional-pronouns';
 import { chapter060 } from './chapters/chapter-060-konjunktiv-ii-formation';
+import { chapter061 } from './chapters/chapter-061-konjunktiv-ii-usage';
+import { chapter062 } from './chapters/chapter-062-the-passive-voice';
+import { chapter063 } from './chapters/chapter-063-the-passive-voice-in-the-past';
+import { chapter064 } from './chapters/chapter-064-predictions-and-future-events-with-futur-i';
+import { chapter065 } from './chapters/chapter-065-different-functions-of-werden';
+import { chapter066 } from './chapters/chapter-066-the-verb-lassen';
+import { chapter067 } from './chapters/chapter-067-position-and-direction-verbs';
+import { chapter068 } from './chapters/chapter-068-the-genitive-case';
+import { chapter069 } from './chapters/chapter-069-the-n-declension';
+import { chapter070 } from './chapters/chapter-070-adjectives-used-as-nouns-for-people';
 
 export interface ChapterRegistryEntry {
   number: number;
@@ -540,6 +550,16 @@ export const chapters: readonly ChapterDefinition[] = [
   chapter058,
   chapter059,
   chapter060,
+  chapter061,
+  chapter062,
+  chapter063,
+  chapter064,
+  chapter065,
+  chapter066,
+  chapter067,
+  chapter068,
+  chapter069,
+  chapter070,
 ];
 
 const chaptersByNumber = new Map(chapters.map((chapter) => [chapter.number, chapter]));

@@ -43,7 +43,7 @@ describe('chapter selectors', () => {
     const cards = selectChapterCards(useProgressStore.getState());
     expect(cards).toHaveLength(85);
     expect(cards.some((card) => card.isDemo)).toBe(false);
-    expect(cards.filter((card) => card.available)).toHaveLength(60);
+    expect(cards.filter((card) => card.available)).toHaveLength(70);
   });
 
   it('groups chapters by section, without a demo group', () => {
@@ -114,13 +114,14 @@ describe('chapter selectors', () => {
     expect(selectNextChapter(30)?.number).toBe(31);
     expect(selectNextChapter(40)?.number).toBe(41);
     expect(selectNextChapter(50)?.number).toBe(51);
+    expect(selectNextChapter(60)?.number).toBe(61);
   });
 
   it('has no next chapter after the last chapter with content', () => {
-    expect(selectNextChapter(60)).toBeUndefined();
+    expect(selectNextChapter(70)).toBeUndefined();
   });
 
-  it('lists the chapters 21-30 and 51-60 checkpoints now that their whole ranges have content', () => {
+  it('lists the chapters 21-30, 51-60, and 61-70 checkpoints now that their whole ranges have content', () => {
     const checkpoints = selectAvailableCheckpoints();
     expect(checkpoints).toContainEqual({
       id: 'checkpoint-21-30',
@@ -133,6 +134,12 @@ describe('chapter selectors', () => {
       title: 'Chapters 51-60',
       from: 51,
       to: 60,
+    });
+    expect(checkpoints).toContainEqual({
+      id: 'checkpoint-61-70',
+      title: 'Chapters 61-70',
+      from: 61,
+      to: 70,
     });
   });
 });
