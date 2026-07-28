@@ -86,7 +86,7 @@ describe('ExerciseRenderer with sentenceOrdering', () => {
 });
 
 describe('ExerciseRenderer with dragToSlots', () => {
-  const exercise: DragToSlotsExercise = {
+  const singleSlotExercise: DragToSlotsExercise = {
     id: 'ex-slots',
     chapterNumber: 0,
     order: 1,
@@ -100,14 +100,31 @@ describe('ExerciseRenderer with dragToSlots', () => {
     wordBank: ['kann', 'können', 'kannst'],
   };
 
-  it('lets the learner select a word then click the slot to fill it', async () => {
+  const twoSlotExercise: DragToSlotsExercise = {
+    id: 'ex-slots-2',
+    chapterNumber: 0,
+    order: 2,
+    type: 'dragToSlots',
+    prompt: 'Fill in both modal verbs.',
+    level: 'controlled',
+    grammarFocus: ['modal verbs'],
+    explanation: 'ich takes kann, du takes kannst.',
+    templateParts: ['Ich ', ' das, du ', ' das auch.'],
+    slots: [
+      { id: 'slot1', correctWord: 'kann' },
+      { id: 'slot2', correctWord: 'kannst' },
+    ],
+    wordBank: ['kann', 'kannst'],
+  };
+
+  it('fills the sole empty slot immediately when a word is selected', async () => {
     const user = userEvent.setup();
     const onSubmitSlots = vi.fn();
 
     render(
       <ExerciseRenderer
         {...baseProps()}
-        exercise={exercise}
+        exercise={singleSlotExercise}
         wordBankOrder={[0, 1, 2]}
         onSubmitSlots={onSubmitSlots}
       />,
@@ -116,13 +133,42 @@ describe('ExerciseRenderer with dragToSlots', () => {
     expect(screen.getByRole('button', { name: /check answer/i })).toBeDisabled();
 
     await user.click(screen.getByRole('button', { name: 'kann' }));
-    await user.click(screen.getByRole('button', { name: /empty slot/i }));
 
     expect(screen.getByRole('button', { name: /slot filled with "kann"/i })).toBeInTheDocument();
 
     await user.click(screen.getByRole('button', { name: /check answer/i }));
 
     expect(onSubmitSlots).toHaveBeenCalledWith({ slot1: 'kann' });
+  });
+
+  it('lets the learner select a word then click a slot to fill it when multiple slots are empty', async () => {
+    const user = userEvent.setup();
+    const onSubmitSlots = vi.fn();
+
+    render(
+      <ExerciseRenderer
+        {...baseProps()}
+        exercise={twoSlotExercise}
+        wordBankOrder={[0, 1]}
+        onSubmitSlots={onSubmitSlots}
+      />,
+    );
+
+    expect(screen.getByRole('button', { name: /check answer/i })).toBeDisabled();
+
+    await user.click(screen.getByRole('button', { name: 'kannst' }));
+    const emptySlots = screen.getAllByRole('button', { name: /empty slot/i });
+    await user.click(emptySlots[1]!);
+
+    expect(screen.getByRole('button', { name: /slot filled with "kannst"/i })).toBeInTheDocument();
+
+    await user.click(screen.getByRole('button', { name: 'kann' }));
+
+    expect(screen.getByRole('button', { name: /slot filled with "kann"/i })).toBeInTheDocument();
+
+    await user.click(screen.getByRole('button', { name: /check answer/i }));
+
+    expect(onSubmitSlots).toHaveBeenCalledWith({ slot1: 'kann', slot2: 'kannst' });
   });
 });
 

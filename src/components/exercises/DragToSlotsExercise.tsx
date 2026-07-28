@@ -30,6 +30,7 @@ export function DragToSlotsExercise({
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   const usedIndices = new Set(Object.values(placedIndices));
+  const emptySlots = exercise.slots.filter((slot) => placedIndices[slot.id] === undefined);
 
   const placeInSlot = (slotId: string, bankIndex: number) => {
     if (disabled) return;
@@ -122,9 +123,14 @@ export function DragToSlotsExercise({
                 disabled={disabled || isUsed}
                 onDragStart={() => setDraggedIndex(bankIndex)}
                 onDragEnd={() => setDraggedIndex(null)}
-                onClick={() =>
-                  setSelectedIndex(selectedIndex === bankIndex ? null : bankIndex)
-                }
+                onClick={() => {
+                  const [onlyEmptySlot] = emptySlots;
+                  if (onlyEmptySlot && emptySlots.length === 1) {
+                    placeInSlot(onlyEmptySlot.id, bankIndex);
+                  } else {
+                    setSelectedIndex(selectedIndex === bankIndex ? null : bankIndex);
+                  }
+                }}
                 lang="de"
               >
                 {word}
