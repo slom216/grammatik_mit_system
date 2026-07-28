@@ -83,6 +83,11 @@ import { chapter077 } from './chapters/chapter-077-temporal-clauses-with-wenn-an
 import { chapter078 } from './chapters/chapter-078-temporal-clauses-with-wahrend-bevor-nachdem-and-seit';
 import { chapter079 } from './chapters/chapter-079-purpose-clauses-with-um-zu-and-damit';
 import { chapter080 } from './chapters/chapter-080-paired-conjunctions';
+import { chapter081 } from './chapters/chapter-081-comparative-constructions-with-je-desto';
+import { chapter082 } from './chapters/chapter-082-prepositions-governing-the-genitive';
+import { chapter083 } from './chapters/chapter-083-advanced-temporal-prepositions-and-expressions';
+import { chapter084 } from './chapters/chapter-084-adjective-declension-with-and-without-an-article';
+import { chapter085 } from './chapters/chapter-085-present-participles-used-as-adjectives';
 
 export interface ChapterRegistryEntry {
   number: number;
@@ -580,6 +585,11 @@ export const chapters: readonly ChapterDefinition[] = [
   chapter078,
   chapter079,
   chapter080,
+  chapter081,
+  chapter082,
+  chapter083,
+  chapter084,
+  chapter085,
 ];
 
 const chaptersByNumber = new Map(chapters.map((chapter) => [chapter.number, chapter]));

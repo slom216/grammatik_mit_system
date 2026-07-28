@@ -21,7 +21,8 @@ const ROUTES: Array<[string, RegExp]> = [
   ['/review/51/60', /cumulative review/i],
   ['/review/61/70', /cumulative review/i],
   ['/review/71/80', /cumulative review/i],
-  ['/review/81/85', /cumulative review unavailable/i],
+  ['/review/81/85', /cumulative review/i],
+  ['/review/84/90', /cumulative review unavailable/i],
   ['/progress', /progress/i],
   ['/activity', /activity/i],
   ['/settings', /settings/i],
@@ -36,8 +37,8 @@ describe('application routes', () => {
   });
 
   it('renders a chapter route without content as unavailable', () => {
-    renderRoute('/chapter/81');
-    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(/chapter 81/i);
+    renderRoute('/chapter/86');
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(/chapter 86/i);
     expect(screen.getByText(/has not been written yet/i)).toBeInTheDocument();
   });
 

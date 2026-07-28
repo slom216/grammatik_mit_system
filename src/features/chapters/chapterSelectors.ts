@@ -250,6 +250,7 @@ export const COURSE_CHECKPOINTS: readonly CourseCheckpoint[] = [
     from: 72,
     to: 80,
   },
+  { id: 'checkpoint-81-85', title: 'Chapters 81-85', from: 81, to: 85 },
 ];
 
 /** Checkpoints whose full chapter range currently has content. */

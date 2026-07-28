@@ -4,17 +4,18 @@ A browser-based German grammar course for levels A1–B1, built with React, Vite
 TypeScript. Every chapter provides an explanation, examples, common mistakes, a short
 summary and at least 24 graded exercises. Progress is stored in the browser.
 
-The build in this repository is at **Phase 8**: the application shell, the lesson and
-exercise engine, scoring, review scheduling and persistence are complete, and chapters
-1-80 are shipped with full content. Chapters 21-30, 31-40, 41-50, 51-60, 61-70, and
-71-80 each add a cumulative review session that mixes exercises across their
-ten-chapter block, and chapters 72-80 (the whole "Sentences and Sentence Connections 2"
+The build in this repository is at **Phase 9**: the application shell, the lesson and
+exercise engine, scoring, review scheduling and persistence are complete, and all 85
+chapters are shipped with full content. Chapters 21-30, 31-40, 41-50, 51-60, 61-70,
+71-80, and 81-85 each add a cumulative review session that mixes exercises across their
+chapter block, and chapters 72-80 (the whole "Sentences and Sentence Connections 2"
 section — indirect questions, infinitive constructions, relative clauses, temporal and
 purpose clauses, and paired conjunctions) additionally get a topic-scoped "B1 Clause
 Connections" checkpoint (see "Cumulative review" below). Grammar tables can visually tag
 columns with the grammatical
-case they represent (see "Case-highlighted grammar tables" below), which chapters 31-40
-and 56 use for their preposition-case and reflexive-pronoun-case content. Exercises can
+case they represent (see "Case-highlighted grammar tables" below), which chapters 31-40,
+56, 82, 83, and 84 use for their preposition-case, reflexive-pronoun-case, and full
+four-case adjective-declension content. Exercises can
 also present a short dialogue for context before the prompt (see "Dialogue-style
 exercises" below), which chapters 44, 45, 46, 50, and 53 use where a particle,
 connector, or perspective-dependent adverb's meaning depends on pragmatics rather than
@@ -24,7 +25,8 @@ validator (see "Morphology validation" below), which chapters 51 and 54-60 rely 
 Sentence-level transformations (active/passive conversion, Futur I, genitive noun
 endings, the N-declension) are cross-checked by a second shared validator (see
 "Sentence transformation validation" below), which chapters 62-65, 68, and 69 rely on.
-The remaining course chapters are added phase by phase (see `DEVELOPMENT_INSTRUCTIONS.md`).
+Phase 10 (course-wide quality review, accessibility/performance audits, and production
+release) is the only phase remaining (see `DEVELOPMENT_INSTRUCTIONS.md`).
 
 ## Getting started
 
@@ -100,16 +102,17 @@ files are checked against it automatically.
 
 Once every chapter in a checkpoint's range has content, `/review` offers it at
 `/review/:from/:to` (currently the ten-chapter blocks 21-30, 31-40, 41-50, 51-60, 61-70,
-and 71-80). The session mixes every exercise from the range that is due for
-spaced-repetition review with a shuffled sample from each chapter, so it stays useful
-before anything has been marked wrong. Each answer still updates that exercise's own
-chapter history and review schedule; the session itself is not tied to one chapter, so
-it is never persisted across a page reload and does not evaluate any single chapter's
-mastery. A checkpoint need not span exactly ten chapters — Phase 8 also adds a
-topic-scoped "B1 Clause Connections" checkpoint over chapters 72-80 (the whole
-"Sentences and Sentence Connections 2" section), reusing the same `/review/:from/:to`
-mechanism with a narrower, contiguous range. Future phases register their own block in
-`COURSE_CHECKPOINTS` (`src/features/chapters/chapterSelectors.ts`).
+and 71-80, plus the final five-chapter block 81-85). The session mixes every exercise
+from the range that is due for spaced-repetition review with a shuffled sample from
+each chapter, so it stays useful before anything has been marked wrong. Each answer
+still updates that exercise's own chapter history and review schedule; the session
+itself is not tied to one chapter, so it is never persisted across a page reload and
+does not evaluate any single chapter's mastery. A checkpoint need not span exactly ten
+chapters — Phase 8 also adds a topic-scoped "B1 Clause Connections" checkpoint over
+chapters 72-80 (the whole "Sentences and Sentence Connections 2" section), reusing the
+same `/review/:from/:to` mechanism with a narrower, contiguous range. Future checkpoints
+(A1/A2/B1-wide, a final mixed review) are registered the same way in
+`COURSE_CHECKPOINTS` (`src/features/chapters/chapterSelectors.ts`) as part of Phase 10.
 
 ### Case-highlighted grammar tables
 
