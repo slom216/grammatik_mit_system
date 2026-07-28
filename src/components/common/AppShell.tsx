@@ -5,6 +5,7 @@ const NAV_ITEMS = [
   { to: '/chapters', label: 'Chapters', end: false },
   { to: '/review', label: 'Review', end: false },
   { to: '/progress', label: 'Progress', end: false },
+  { to: '/activity', label: 'Activity', end: false },
   { to: '/settings', label: 'Settings', end: false },
   { to: '/about', label: 'About', end: false },
 ];

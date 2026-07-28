@@ -77,6 +77,13 @@
   --color-focus: #0b5fff;
   --focus-ring: 3px solid var(--color-focus);
   --focus-offset: 2px;
+
+  /* Sequential ramp for the activity heatmap, 0 (none) to 4 (busiest) */
+  --color-heat-0: var(--color-surface-muted);
+  --color-heat-1: #c9d6f7;
+  --color-heat-2: #93a9ef;
+  --color-heat-3: #5c7ee0;
+  --color-heat-4: var(--color-accent);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -111,5 +118,11 @@
     --color-focus: #9dc0ff;
     --shadow-sm: 0 1px 2px rgb(0 0 0 / 40%);
     --shadow-md: 0 8px 24px rgb(0 0 0 / 45%);
+
+    --color-heat-0: var(--color-surface-muted);
+    --color-heat-1: #33456e;
+    --color-heat-2: #4c5f95;
+    --color-heat-3: #6f85c2;
+    --color-heat-4: var(--color-accent);
   }
 }

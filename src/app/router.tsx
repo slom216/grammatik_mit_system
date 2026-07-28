@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { AppShell } from '../components/common/AppShell';
 import { AboutPage } from '../pages/AboutPage';
+import { ActivityPage } from '../pages/ActivityPage';
 import { ChapterPage } from '../pages/ChapterPage';
 import { ChaptersPage } from '../pages/ChaptersPage';
 import { CumulativeReviewPage } from '../pages/CumulativeReviewPage';
@@ -27,6 +28,7 @@ export const routes = [
       { path: 'review', element: <ReviewPage /> },
       { path: 'review/:from/:to', element: <CumulativeReviewPage /> },
       { path: 'progress', element: <ProgressPage /> },
+      { path: 'activity', element: <ActivityPage /> },
       { path: 'settings', element: <SettingsPage /> },
       { path: 'about', element: <AboutPage /> },
       { path: '*', element: <NotFoundPage /> },
