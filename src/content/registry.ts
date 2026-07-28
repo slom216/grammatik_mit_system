@@ -23,6 +23,16 @@ import { chapter017 } from './chapters/chapter-017-the-accusative-case';
 import { chapter018 } from './chapters/chapter-018-the-dative-case';
 import { chapter019 } from './chapters/chapter-019-possessive-articles';
 import { chapter020 } from './chapters/chapter-020-interrogative-and-demonstrative-articles';
+import { chapter021 } from './chapters/chapter-021-personal-pronouns-in-the-accusative-and-dative';
+import { chapter022 } from './chapters/chapter-022-verbs-taking-both-accusative-and-dative-objects';
+import { chapter023 } from './chapters/chapter-023-verbs-taking-a-dative-object';
+import { chapter024 } from './chapters/chapter-024-asking-about-people-and-things-with-the-correct-case';
+import { chapter025 } from './chapters/chapter-025-simple-past-of-sein-and-haben';
+import { chapter026 } from './chapters/chapter-026-present-perfect-with-haben';
+import { chapter027 } from './chapters/chapter-027-present-perfect-with-sein';
+import { chapter028 } from './chapters/chapter-028-formation-of-the-past-participle';
+import { chapter029 } from './chapters/chapter-029-simple-past-of-modal-verbs';
+import { chapter030 } from './chapters/chapter-030-choosing-and-using-past-tenses';
 
 export interface ChapterRegistryEntry {
   number: number;
@@ -434,7 +444,7 @@ export const chapterRegistry = [
 ] as const satisfies readonly ChapterRegistryEntry[];
 
 /**
- * Chapter content that currently ships. Phase 2 ships chapters 1-20;
+ * Chapter content that currently ships. Phase 3 ships chapters 1-30;
  * further chapters are added phase by phase. The Phase 0 engine demo
  * (chapter-000-demo.ts) is no longer part of the shipped catalogue but
  * stays in the repo as a fixture for engine-level tests.
@@ -460,6 +470,16 @@ export const chapters: readonly ChapterDefinition[] = [
   chapter018,
   chapter019,
   chapter020,
+  chapter021,
+  chapter022,
+  chapter023,
+  chapter024,
+  chapter025,
+  chapter026,
+  chapter027,
+  chapter028,
+  chapter029,
+  chapter030,
 ];
 
 const chaptersByNumber = new Map(chapters.map((chapter) => [chapter.number, chapter]));

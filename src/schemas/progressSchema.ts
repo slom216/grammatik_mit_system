@@ -116,7 +116,7 @@ export interface ExerciseAttemptRecord {
   submittedAnswers: string[];
 }
 
-export type PracticeMode = 'chapter' | 'review';
+export type PracticeMode = 'chapter' | 'review' | 'cumulative';
 
 export interface PersistedSessionV1 {
   schemaVersion: typeof SESSION_SCHEMA_VERSION;
@@ -142,7 +142,7 @@ export const exerciseAttemptRecordSchema = z.object({
 export const persistedSessionV1Schema = z.object({
   schemaVersion: z.literal(SESSION_SCHEMA_VERSION),
   chapterNumber: z.number().int().min(0),
-  mode: z.enum(['chapter', 'review']),
+  mode: z.enum(['chapter', 'review', 'cumulative']),
   exerciseIds: z.array(z.string().min(1)),
   optionOrder: z.record(z.string(), z.array(z.string().min(1))),
   currentIndex: z.number().int().min(0),

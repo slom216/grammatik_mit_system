@@ -16,6 +16,8 @@ const ROUTES: Array<[string, RegExp]> = [
   ['/chapter/1/practice', /practice/i],
   ['/chapter/1/results', /results/i],
   ['/review', /review queue/i],
+  ['/review/21/30', /cumulative review/i],
+  ['/review/31/35', /cumulative review unavailable/i],
   ['/progress', /progress/i],
   ['/settings', /settings/i],
   ['/about', /about this app/i],

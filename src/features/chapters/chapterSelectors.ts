@@ -223,6 +223,32 @@ export function selectContinueChapter(
   );
 }
 
+export interface CourseCheckpoint {
+  id: string;
+  title: string;
+  from: number;
+  to: number;
+}
+
+/**
+ * Ten-chapter review blocks, added as each phase of the course ships.
+ * A checkpoint only appears in the app once every chapter in its range has
+ * content (see `selectAvailableCheckpoints`).
+ */
+export const COURSE_CHECKPOINTS: readonly CourseCheckpoint[] = [
+  { id: 'checkpoint-21-30', title: 'Chapters 21-30', from: 21, to: 30 },
+];
+
+/** Checkpoints whose full chapter range currently has content. */
+export function selectAvailableCheckpoints(): CourseCheckpoint[] {
+  return COURSE_CHECKPOINTS.filter((checkpoint) => {
+    for (let number = checkpoint.from; number <= checkpoint.to; number += 1) {
+      if (getChapter(number) === undefined) return false;
+    }
+    return true;
+  });
+}
+
 /** The next chapter with content after the given one. */
 export function selectNextChapter(chapterNumber: number): ChapterCardModel | undefined {
   const ordered = [...chapterRegistry].sort((a, b) => a.number - b.number);

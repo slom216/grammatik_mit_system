@@ -21,6 +21,18 @@ export function findExercise(
   return chapter.exercises.find((exercise) => exercise.id === exerciseId);
 }
 
+/** Looks up an exercise across several chapters, for cumulative sessions. */
+export function findExerciseAcrossChapters(
+  chapters: readonly ChapterDefinition[],
+  exerciseId: string,
+): Exercise | undefined {
+  for (const chapter of chapters) {
+    const exercise = findExercise(chapter, exerciseId);
+    if (exercise) return exercise;
+  }
+  return undefined;
+}
+
 export type RandomSource = () => number;
 
 /** Fisher–Yates with an injectable random source so tests stay deterministic. */

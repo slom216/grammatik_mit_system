@@ -3,6 +3,7 @@ import { AppShell } from '../components/common/AppShell';
 import { AboutPage } from '../pages/AboutPage';
 import { ChapterPage } from '../pages/ChapterPage';
 import { ChaptersPage } from '../pages/ChaptersPage';
+import { CumulativeReviewPage } from '../pages/CumulativeReviewPage';
 import { DashboardPage } from '../pages/DashboardPage';
 import { LearnPage } from '../pages/LearnPage';
 import { NotFoundPage } from '../pages/NotFoundPage';
@@ -24,6 +25,7 @@ export const routes = [
       { path: 'chapter/:chapterNumber/practice', element: <PracticePage /> },
       { path: 'chapter/:chapterNumber/results', element: <ResultsPage /> },
       { path: 'review', element: <ReviewPage /> },
+      { path: 'review/:from/:to', element: <CumulativeReviewPage /> },
       { path: 'progress', element: <ProgressPage /> },
       { path: 'settings', element: <SettingsPage /> },
       { path: 'about', element: <AboutPage /> },

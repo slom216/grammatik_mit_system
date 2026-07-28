@@ -4,10 +4,11 @@ A browser-based German grammar course for levels A1–B1, built with React, Vite
 TypeScript. Every chapter provides an explanation, examples, common mistakes, a short
 summary and at least 24 graded exercises. Progress is stored in the browser.
 
-The build in this repository is at **Phase 2**: the application shell, the lesson and
+The build in this repository is at **Phase 3**: the application shell, the lesson and
 exercise engine, scoring, review scheduling and persistence are complete, and chapters
-1-20 are shipped with full content. The remaining course chapters are added phase by
-phase (see `DEVELOPMENT_INSTRUCTIONS.md`).
+1-30 are shipped with full content. Chapters 21-30 also add a cumulative review session
+that mixes exercises across a whole ten-chapter block (see "Cumulative review" below).
+The remaining course chapters are added phase by phase (see `DEVELOPMENT_INSTRUCTIONS.md`).
 
 ## Getting started
 
@@ -78,6 +79,17 @@ files are checked against it automatically.
   `punctuationInsensitive`); nothing is lowercased globally, because German capitalisation
   is grammatically meaningful.
 - Wrong answers enter a review queue: 1 day → 3 days → 7 days → stable.
+
+### Cumulative review
+
+Once every chapter in a ten-chapter block has content, `/review` offers a checkpoint for
+that block (currently chapters 21-30) at `/review/:from/:to`. The session mixes every
+exercise from the range that is due for spaced-repetition review with a shuffled sample
+from each chapter, so it stays useful before anything has been marked wrong. Each answer
+still updates that exercise's own chapter history and review schedule; the session itself
+is not tied to one chapter, so it is never persisted across a page reload and does not
+evaluate any single chapter's mastery. Future phases register their own block in
+`COURSE_CHECKPOINTS` (`src/features/chapters/chapterSelectors.ts`).
 
 ### Persistence
 

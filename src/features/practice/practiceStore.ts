@@ -55,6 +55,8 @@ export interface PracticeState {
   status: PracticeStatus;
   mode: PracticeMode;
   chapterNumber: number | null;
+  /** Set instead of `chapterNumber` for a cumulative, multi-chapter session. */
+  chapterNumbers: number[] | null;
   exerciseIds: string[];
   optionOrder: Record<string, string[]>;
   currentIndex: number;
@@ -68,6 +70,16 @@ export interface PracticeState {
     chapter: ChapterDefinition,
     options?: { mode?: PracticeMode; exerciseIds?: string[]; shuffleOptions?: boolean },
   ) => void;
+  /**
+   * Starts a session pooling exercises from several chapters at once (a
+   * "cumulative review"). Unlike `startSession`, this is never persisted
+   * across a page refresh, since the session isn't tied to one chapter.
+   */
+  startCumulativeSession: (
+    chapters: ChapterDefinition[],
+    exerciseIds: string[],
+    options?: { shuffleOptions?: boolean },
+  ) => void;
   resumeSession: (chapter: ChapterDefinition) => boolean;
   hasStoredSession: (chapterNumber: number) => boolean;
   submitSingleChoice: (exercise: SingleChoiceExercise, optionId: string) => FeedbackState;
@@ -75,6 +87,8 @@ export interface PracticeState {
   revealAnswer: (exercise: Exercise) => FeedbackState;
   goToNext: () => void;
   finish: (chapter: ChapterDefinition) => SessionSummary;
+  /** Ends a cumulative session. No single chapter's mastery is updated. */
+  finishCumulative: () => SessionSummary;
   /** Leaves the session but keeps it stored so it can be resumed. */
   pauseSession: () => void;
   /** Discards the session, including the stored copy. */
@@ -139,6 +153,7 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
     status: 'idle',
     mode: 'chapter',
     chapterNumber: null,
+    chapterNumbers: null,
     exerciseIds: [],
     optionOrder: {},
     currentIndex: 0,
@@ -169,6 +184,7 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
         status: 'active',
         mode: options.mode ?? 'chapter',
         chapterNumber: chapter.number,
+        chapterNumbers: null,
         exerciseIds,
         optionOrder,
         currentIndex: 0,
@@ -179,6 +195,35 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
         summary: null,
       });
       persistSession();
+    },
+
+    startCumulativeSession: (chapters, exerciseIds, options = {}) => {
+      const shuffleOptions = options.shuffleOptions ?? true;
+      const optionOrder: Record<string, string[]> = {};
+      for (const chapter of chapters) {
+        for (const exercise of chapter.exercises) {
+          if (exercise.type === 'singleChoice' && exerciseIds.includes(exercise.id)) {
+            optionOrder[exercise.id] = optionOrderFor(exercise, shuffleOptions);
+          }
+        }
+      }
+
+      set({
+        status: 'active',
+        mode: 'cumulative',
+        chapterNumber: null,
+        chapterNumbers: chapters.map((chapter) => chapter.number),
+        exerciseIds,
+        optionOrder,
+        currentIndex: 0,
+        results: {},
+        attempts: {},
+        feedback: null,
+        startedAt: new Date().toISOString(),
+        summary: null,
+      });
+      // Not persisted: persistSession() no-ops while chapterNumber is null,
+      // since a cumulative session isn't tied to one chapter.
     },
 
     hasStoredSession: (chapterNumber) => {
@@ -198,6 +243,7 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
         status: 'active',
         mode: stored.mode,
         chapterNumber: stored.chapterNumber,
+        chapterNumbers: null,
         exerciseIds,
         optionOrder: stored.optionOrder,
         currentIndex: Math.min(stored.currentIndex, exerciseIds.length - 1),
@@ -328,6 +374,17 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
       return summary;
     },
 
+    finishCumulative: () => {
+      const state = get();
+      const records = state.exerciseIds
+        .map((id) => state.results[id])
+        .filter((record): record is ExerciseAttemptRecord => record !== undefined);
+      const summary = summarizeSession(records, state.exerciseIds.length);
+
+      set({ status: 'finished', summary, feedback: null });
+      return summary;
+    },
+
     pauseSession: () => {
       persistSession();
       set({ status: 'idle', feedback: null });
@@ -338,6 +395,7 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
       set({
         status: 'idle',
         chapterNumber: null,
+        chapterNumbers: null,
         exerciseIds: [],
         optionOrder: {},
         currentIndex: 0,

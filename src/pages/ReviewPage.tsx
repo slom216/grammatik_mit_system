@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { Card } from '../components/common/Card';
 import { getChapter, getRegistryEntry } from '../content/registry';
+import { selectAvailableCheckpoints } from '../features/chapters/chapterSelectors';
 import { chapterPath, formatChapterNumber } from '../features/chapters/chapterUtils';
 import { selectDueHistories, useProgressStore } from '../features/progress/progressStore';
 
@@ -9,6 +10,7 @@ export function ReviewPage() {
   const progress = useProgressStore();
 
   const due = useMemo(() => selectDueHistories(progress), [progress]);
+  const checkpoints = selectAvailableCheckpoints();
 
   const byChapter = useMemo(() => {
     const map = new Map<number, number>();
@@ -75,6 +77,28 @@ export function ReviewPage() {
             })}
           </div>
         </>
+      )}
+
+      {checkpoints.length > 0 && (
+        <section className="stack stack--tight">
+          <h2>Course checkpoints</h2>
+          <p className="text-muted prose">
+            A mixed practice session pulling exercises from a whole block of chapters, so
+            older topics stay fresh once you have moved on.
+          </p>
+          <div className="grid">
+            {checkpoints.map((checkpoint) => (
+              <Card key={checkpoint.id} title={checkpoint.title}>
+                <Link
+                  className="button button--secondary"
+                  to={`/review/${checkpoint.from}/${checkpoint.to}`}
+                >
+                  Start cumulative review
+                </Link>
+              </Card>
+            ))}
+          </div>
+        </section>
       )}
     </div>
   );

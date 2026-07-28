@@ -3,6 +3,7 @@ import {
   chapterPath,
   exerciseCounts,
   findExercise,
+  findExerciseAcrossChapters,
   formatChapterNumber,
   optionOrderFor,
   shuffle,
@@ -90,5 +91,16 @@ describe('findExercise and exerciseCounts', () => {
       singleChoice: 12,
       textInput: 12,
     });
+  });
+});
+
+describe('findExerciseAcrossChapters', () => {
+  it('finds an exercise in whichever chapter has it', () => {
+    const other = makeChapter({ number: 2, exercises: [] });
+    expect(findExerciseAcrossChapters([other, demoChapter], 'demo-ex-01')?.order).toBe(1);
+  });
+
+  it('returns undefined when no chapter has the exercise', () => {
+    expect(findExerciseAcrossChapters([demoChapter], 'nope')).toBeUndefined();
   });
 });
