@@ -3,14 +3,16 @@ import { act, screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { CumulativeReviewPage } from './CumulativeReviewPage';
 import { renderWithRouter } from '../test/helpers/renderWithRouter';
+import { cumulativeRouteLoader } from '../features/practice/cumulativeRoute';
 import { usePracticeStore } from '../features/practice/practiceStore';
 import { useProgressStore } from '../features/progress/progressStore';
 import { useSettingsStore } from '../features/settings/settingsStore';
 
-function renderCumulativeReview(route = '/review/21/22') {
+async function renderCumulativeReview(route = '/review/21/22') {
   return renderWithRouter(<CumulativeReviewPage />, {
     route,
     path: '/review/:from/:to',
+    loader: cumulativeRouteLoader,
   });
 }
 
@@ -45,15 +47,15 @@ describe('CumulativeReviewPage', () => {
     useSettingsStore.setState({ shuffleOptions: false });
   });
 
-  it('reports the range as unavailable when a chapter in it has no content', () => {
-    renderCumulativeReview('/review/84/90');
+  it('reports the range as unavailable when a chapter in it has no content', async () => {
+    await renderCumulativeReview('/review/84/90');
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
       /cumulative review unavailable/i,
     );
   });
 
-  it('starts a mixed session pulling exercises from every chapter in the range', () => {
-    renderCumulativeReview('/review/21/22');
+  it('starts a mixed session pulling exercises from every chapter in the range', async () => {
+    await renderCumulativeReview('/review/21/22');
 
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
       /cumulative review · chapters 21–22/i,
@@ -66,7 +68,7 @@ describe('CumulativeReviewPage', () => {
   it('answers exercises from different chapters and attributes progress to their own chapter', async () => {
     const user = userEvent.setup();
     seedKnownSession();
-    renderCumulativeReview();
+    await renderCumulativeReview();
 
     expect(screen.getByText('Ich sehe ___. (du)')).toBeInTheDocument();
     await user.click(screen.getByRole('radio', { name: /^dich$/ }));
@@ -110,7 +112,7 @@ describe('CumulativeReviewPage', () => {
   it('restarts with a fresh sample after finishing', async () => {
     const user = userEvent.setup();
     seedKnownSession();
-    renderCumulativeReview();
+    await renderCumulativeReview();
 
     await user.click(screen.getByRole('radio', { name: /^dich$/ }));
     await waitFor(() =>
@@ -131,7 +133,7 @@ describe('CumulativeReviewPage', () => {
 
   it('leaves the review and returns to the review queue', async () => {
     const user = userEvent.setup();
-    renderCumulativeReview('/review/21/22');
+    await renderCumulativeReview('/review/21/22');
 
     await user.click(screen.getByRole('button', { name: /exit practice|exit review/i }));
     const dialog = screen.getByRole('dialog');

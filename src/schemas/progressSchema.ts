@@ -182,6 +182,7 @@ export interface PersistedSettingsV1 {
   /** Default answer mode used by authoring tools and tests. */
   defaultAnswerMode: (typeof ANSWER_MODES)[number];
   theme: Theme;
+  pronunciationAudio: boolean;
 }
 
 export const persistedSettingsV1Schema = z.object({
@@ -196,6 +197,7 @@ export const persistedSettingsV1Schema = z.object({
   // would otherwise fail the whole parse, and a failed parse resets every
   // other setting back to its default.
   theme: z.enum(THEMES).catch('system'),
+  pronunciationAudio: z.boolean().catch(true),
 });
 
 /** Compile-time proof that the Zod schemas and the interfaces stay in sync. */

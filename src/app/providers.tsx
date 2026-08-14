@@ -1,21 +1,6 @@
 import { useEffect, type ReactNode } from 'react';
-import { formatIssues, validateAllContent } from '../content/contentValidation';
 import { useProgressStore } from '../features/progress/progressStore';
 import { useSettingsStore } from '../features/settings/settingsStore';
-
-let contentValidated = false;
-
-/** In development, invalid chapter content must be loud rather than silent. */
-function validateContentInDevelopment() {
-  if (contentValidated || !import.meta.env.DEV) return;
-  contentValidated = true;
-  const result = validateAllContent();
-  if (!result.valid) {
-    console.error(
-      `[content] ${result.issues.length} validation issue(s):\n${formatIssues(result.issues)}`,
-    );
-  }
-}
 
 export interface AppProvidersProps {
   children: ReactNode;
@@ -31,8 +16,6 @@ export function AppProviders({ children }: AppProvidersProps) {
   const reducedMotion = useSettingsStore((state) => state.reducedMotion);
   const theme = useSettingsStore((state) => state.theme);
   const settingsHydrated = useSettingsStore((state) => state.hydrated);
-
-  validateContentInDevelopment();
 
   useEffect(() => {
     hydrateProgress();

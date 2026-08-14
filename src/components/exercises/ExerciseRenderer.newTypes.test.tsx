@@ -30,6 +30,7 @@ function baseProps() {
     isLast: false,
     showHints: false,
     showUmlautHelper: false,
+    autoAdvance: false,
     onSubmitChoice: noop,
     onSubmitText: noop,
     onSubmitOrdering: noop,

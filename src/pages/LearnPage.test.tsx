@@ -3,17 +3,19 @@ import { screen, within } from '@testing-library/react';
 import { LearnPage } from './LearnPage';
 import { renderWithRouter } from '../test/helpers/renderWithRouter';
 import { chapter001 } from '../content/chapters/chapter-001-personal-pronouns';
+import { chapterRouteLoader } from '../features/chapters/useChapterParam';
 
-function renderLearn(chapterNumber = 1) {
+async function renderLearn(chapterNumber = 1) {
   return renderWithRouter(<LearnPage />, {
     route: `/chapter/${chapterNumber}/learn`,
     path: '/chapter/:chapterNumber/learn',
+    loader: chapterRouteLoader,
   });
 }
 
 describe('LearnPage', () => {
-  it('renders the lesson entirely from chapter data', () => {
-    renderLearn();
+  it('renders the lesson entirely from chapter data', async () => {
+    await renderLearn();
 
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(chapter001.title);
     expect(screen.getByText(chapter001.objective)).toBeInTheDocument();
@@ -27,8 +29,8 @@ describe('LearnPage', () => {
     }
   });
 
-  it('renders grammar tables with row and column headers', () => {
-    renderLearn();
+  it('renders grammar tables with row and column headers', async () => {
+    await renderLearn();
 
     const table = screen.getByRole('table', { name: /subject pronouns/i });
     expect(
@@ -40,22 +42,22 @@ describe('LearnPage', () => {
     expect(within(table).getByRole('cell', { name: 'ihr (you)' })).toBeInTheDocument();
   });
 
-  it('shows every example with its English translation', () => {
-    renderLearn();
+  it('shows every example with its English translation', async () => {
+    await renderLearn();
 
     for (const example of chapter001.explanation.examples) {
       expect(screen.getByText(example.english)).toBeInTheDocument();
     }
   });
 
-  it('marks the highlighted form inside an example', () => {
-    const { container } = renderLearn();
+  it('marks the highlighted form inside an example', async () => {
+    const { container } = await renderLearn();
     const marks = container.querySelectorAll('mark');
     expect(marks.length).toBeGreaterThan(0);
   });
 
-  it('shows common mistakes with text labels, not colour alone', () => {
-    renderLearn();
+  it('shows common mistakes with text labels, not colour alone', async () => {
+    await renderLearn();
 
     const mistake = chapter001.explanation.commonMistakes[0];
     expect(mistake).toBeDefined();
@@ -64,8 +66,8 @@ describe('LearnPage', () => {
     expect(screen.getAllByText('Incorrect:').length).toBeGreaterThan(0);
   });
 
-  it('shows the remember summary and a link into practice', () => {
-    renderLearn();
+  it('shows the remember summary and a link into practice', async () => {
+    await renderLearn();
 
     const remember = screen.getByRole('complementary', { name: /remember/i });
     expect(remember).toBeInTheDocument();
@@ -79,8 +81,8 @@ describe('LearnPage', () => {
     ).toHaveAttribute('href', '/chapter/1/practice?mode=quick');
   });
 
-  it('reports an unavailable chapter instead of crashing', () => {
-    renderLearn(86);
+  it('reports an unavailable chapter instead of crashing', async () => {
+    await renderLearn(86);
     expect(screen.getByText(/has not been written yet/i)).toBeInTheDocument();
   });
 });

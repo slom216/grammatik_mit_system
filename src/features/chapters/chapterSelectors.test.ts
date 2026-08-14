@@ -39,16 +39,16 @@ describe('chapter selectors', () => {
     useProgressStore.getState().resetProgress();
   });
 
-  it('builds a card for every registry chapter, with no demo chapter', () => {
+  it('builds a card for every registry chapter, without loading chapter content', () => {
     const cards = selectChapterCards(useProgressStore.getState());
     expect(cards).toHaveLength(85);
-    expect(cards.some((card) => card.isDemo)).toBe(false);
     expect(cards.filter((card) => card.available)).toHaveLength(85);
+    // Comes from the registry now, not from the chapter body.
+    expect(cards.every((card) => card.estimatedMinutes > 0)).toBe(true);
   });
 
-  it('groups chapters by section, without a demo group', () => {
+  it('groups chapters by section', () => {
     const groups = groupBySection(selectChapterCards(useProgressStore.getState()));
-    expect(groups.some((group) => group.section.id === 'demo')).toBe(false);
     expect(groups[0]?.section.id).toBe('verbs-1');
     expect(groups.reduce((sum, group) => sum + group.chapters.length, 0)).toBe(85);
   });

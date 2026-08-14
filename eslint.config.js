@@ -34,6 +34,32 @@ export default tseslint.config(
     },
   },
   {
+    // Chapter bodies are ~5.4 MB in total. Importing one directly (or the eager
+    // allChapters barrel) puts the entire course back into the entry bundle,
+    // which is exactly the regression this rule exists to prevent.
+    files: ['src/**/*.{ts,tsx}'],
+    ignores: [
+      'src/**/*.test.{ts,tsx}',
+      'src/content/allChapters.ts',
+      'src/content/chapterLoader.ts',
+      'src/test/**',
+    ],
+    rules: {
+      'no-restricted-imports': [
+        'error',
+        {
+          patterns: [
+            {
+              group: ['**/content/allChapters', '**/chapters/chapter-*'],
+              message:
+                'Load chapter content with loadChapter() from content/chapterLoader instead.',
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
     files: ['src/**/*.tsx'],
     plugins: { 'react-refresh': reactRefresh },
     rules: {

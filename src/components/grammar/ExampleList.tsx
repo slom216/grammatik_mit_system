@@ -1,4 +1,5 @@
 import type { GrammarExample } from '../../schemas/chapterSchema';
+import { SpeakButton } from '../common/SpeakButton';
 import { highlightGerman } from './highlightGerman';
 
 export interface ExampleListProps {
@@ -12,6 +13,7 @@ export function ExampleList({ examples }: ExampleListProps) {
         <li key={`${example.german}-${index}`}>
           <p className="example-list__german" lang="de">
             {highlightGerman(example.german, example.highlight)}
+            <SpeakButton text={example.german} />
           </p>
           <p className="example-list__english" lang="en">
             {example.english}

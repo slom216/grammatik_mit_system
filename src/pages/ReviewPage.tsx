@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { Card } from '../components/common/Card';
-import { getChapter, getRegistryEntry } from '../content/registry';
+import { getRegistryEntry, hasChapter } from '../content/registry';
 import { selectAvailableCheckpoints } from '../features/chapters/chapterSelectors';
 import { chapterPath, formatChapterNumber } from '../features/chapters/chapterUtils';
 import { selectDueHistories, useProgressStore } from '../features/progress/progressStore';
@@ -51,11 +51,8 @@ export function ReviewPage() {
 
           <div className="grid">
             {byChapter.map(({ chapterNumber, count }) => {
-              const title =
-                getRegistryEntry(chapterNumber)?.title ??
-                getChapter(chapterNumber)?.title ??
-                'Chapter';
-              const available = getChapter(chapterNumber) !== undefined;
+              const title = getRegistryEntry(chapterNumber)?.title ?? 'Chapter';
+              const available = hasChapter(chapterNumber);
               return (
                 <Card
                   key={chapterNumber}

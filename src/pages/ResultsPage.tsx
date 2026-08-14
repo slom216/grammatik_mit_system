@@ -2,7 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Card } from '../components/common/Card';
 import { Button } from '../components/common/Button';
 import { ChapterUnavailable } from '../components/common/ChapterUnavailable';
-import { ProgressBar } from '../components/common/ProgressBar';
+import { SessionSummary } from '../components/practice/SessionSummary';
 import { MasteryBadge } from '../components/progress/MasteryBadge';
 import { selectNextChapter } from '../features/chapters/chapterSelectors';
 import { chapterPath, formatChapterNumber } from '../features/chapters/chapterUtils';
@@ -56,25 +56,7 @@ export function ResultsPage() {
 
       {summary ? (
         <Card title="This session" titleLevel={2}>
-          <div className="stack">
-            <ProgressBar
-              label="Weighted score"
-              value={summary.scorePercent}
-              valueText={`${summary.scorePercent}%`}
-            />
-            <ul>
-              <li>
-                Answered: {summary.answeredCount} of {summary.totalExercises}
-              </li>
-              <li>
-                Points: {summary.rawScore} of {summary.maxScore} (1 point for a correct
-                first attempt, 0.5 for a correct second attempt)
-              </li>
-              <li>First-attempt accuracy: {summary.firstAttemptAccuracy}%</li>
-              <li>Correct text-input exercises: {summary.correctTextInputs}</li>
-              <li>Exercises in the review queue for this chapter: {openFlags}</li>
-            </ul>
-          </div>
+          <SessionSummary summary={summary} openReviewFlags={openFlags} />
         </Card>
       ) : (
         <Card title="Latest recorded result" titleLevel={2}>

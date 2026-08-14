@@ -13,12 +13,22 @@ import { useProgressStore } from '../features/progress/progressStore';
 export function ChaptersPage() {
   const progress = useProgressStore();
   const [filter, setFilter] = useState<ChapterFilter>('all');
+  const [query, setQuery] = useState('');
 
   const cards = useMemo(() => selectChapterCards(progress), [progress]);
-  const groups = useMemo(
-    () => groupBySection(cards.filter((card) => matchesFilter(card, filter))),
-    [cards, filter],
-  );
+  const groups = useMemo(() => {
+    const needle = query.trim().toLowerCase();
+    return groupBySection(
+      cards.filter(
+        (card) =>
+          matchesFilter(card, filter) &&
+          (needle === '' ||
+            card.title.toLowerCase().includes(needle) ||
+            card.level.toLowerCase() === needle ||
+            String(card.number) === needle),
+      ),
+    );
+  }, [cards, filter, query]);
   const visibleCount = groups.reduce((sum, group) => sum + group.chapters.length, 0);
 
   return (
@@ -30,6 +40,18 @@ export function ChaptersPage() {
           listed so the outline stays visible while the course is being written.
         </p>
       </header>
+
+      <div className="search-field">
+        <label htmlFor="chapter-search">Search chapters</label>
+        <input
+          id="chapter-search"
+          type="search"
+          className="text-answer__field"
+          placeholder="Konjunktiv, dative, 42…"
+          value={query}
+          onChange={(event) => setQuery(event.target.value)}
+        />
+      </div>
 
       <div className="filter-bar" role="group" aria-label="Filter chapters">
         {CHAPTER_FILTERS.map((option) => (
@@ -61,7 +83,9 @@ export function ChaptersPage() {
         </section>
       ))}
 
-      {visibleCount === 0 && <p>No chapters match this filter.</p>}
+      {visibleCount === 0 && (
+        <p>No chapters match {query.trim() === '' ? 'this filter' : `“${query.trim()}”`}.</p>
+      )}
     </div>
   );
 }

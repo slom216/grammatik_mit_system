@@ -1,7 +1,6 @@
 import {
   chapterRegistry,
-  demoChapters,
-  getChapter,
+  hasChapter,
   type ChapterRegistryEntry,
 } from '../../content/registry';
 import { sections, type SectionDefinition } from '../../content/sections';
@@ -42,10 +41,9 @@ export interface ChapterCardModel {
   available: boolean;
   status: ChapterStatus;
   bestScorePercent: number;
-  estimatedMinutes?: number;
+  estimatedMinutes: number;
   bookmarked: boolean;
   reviewDue: boolean;
-  isDemo: boolean;
 }
 
 function dueChapterNumbers(state: ProgressState, now: Date): Set<number> {
@@ -61,22 +59,20 @@ export function buildChapterCard(
   state: ProgressState,
   due: Set<number>,
 ): ChapterCardModel {
-  const chapter = getChapter(entry.number);
   const progress = selectChapterProgress(state, entry.number);
-  const card: ChapterCardModel = {
+  return {
     number: entry.number,
     title: entry.title,
     level: entry.level,
     section: entry.section,
-    available: chapter !== undefined,
+    // Every registry entry has a content file; content validation asserts it.
+    available: true,
     status: progress.status,
     bestScorePercent: progress.bestScorePercent,
+    estimatedMinutes: entry.estimatedMinutes,
     bookmarked: progress.bookmarked,
     reviewDue: due.has(entry.number),
-    isDemo: chapter?.isDemo === true,
   };
-  if (chapter) card.estimatedMinutes = chapter.estimatedMinutes;
-  return card;
 }
 
 export function selectChapterCards(
@@ -84,22 +80,7 @@ export function selectChapterCards(
   now: Date = new Date(),
 ): ChapterCardModel[] {
   const due = dueChapterNumbers(state, now);
-  const registryCards = chapterRegistry.map((entry) =>
-    buildChapterCard(entry, state, due),
-  );
-  const demoCards = demoChapters.map((chapter) =>
-    buildChapterCard(
-      {
-        number: chapter.number,
-        title: chapter.title,
-        section: chapter.section,
-        level: chapter.level,
-      },
-      state,
-      due,
-    ),
-  );
-  return [...demoCards, ...registryCards];
+  return chapterRegistry.map((entry) => buildChapterCard(entry, state, due));
 }
 
 export function matchesFilter(card: ChapterCardModel, filter: ChapterFilter): boolean {
@@ -121,34 +102,16 @@ export function matchesFilter(card: ChapterCardModel, filter: ChapterFilter): bo
   }
 }
 
-export interface DemoSectionDefinition {
-  id: 'demo';
-  order: number;
-  title: string;
-  description: string;
-}
-
 export interface SectionGroup {
-  section: SectionDefinition | DemoSectionDefinition;
+  section: SectionDefinition;
   chapters: ChapterCardModel[];
 }
-
-const demoSection: DemoSectionDefinition = {
-  id: 'demo',
-  order: 0,
-  title: 'Engine demo (not part of the course)',
-  description:
-    'A sample chapter used to demonstrate the lesson and practice engine during development.',
-};
 
 export function groupBySection(cards: readonly ChapterCardModel[]): SectionGroup[] {
   const groups: SectionGroup[] = [];
 
-  const demo = cards.filter((card) => card.isDemo);
-  if (demo.length > 0) groups.push({ section: demoSection, chapters: demo });
-
   for (const section of [...sections].sort((a, b) => a.order - b.order)) {
-    const chapters = cards.filter((card) => !card.isDemo && card.section === section.id);
+    const chapters = cards.filter((card) => card.section === section.id);
     if (chapters.length > 0) groups.push({ section, chapters });
   }
 
@@ -177,7 +140,7 @@ export function selectLevelProgress(state: ProgressState): LevelProgress[] {
     return {
       level,
       total: entries.length,
-      available: entries.filter((entry) => getChapter(entry.number) !== undefined).length,
+      available: entries.length,
       completed,
       mastered,
       percentComplete:
@@ -257,7 +220,7 @@ export const COURSE_CHECKPOINTS: readonly CourseCheckpoint[] = [
 export function selectAvailableCheckpoints(): CourseCheckpoint[] {
   return COURSE_CHECKPOINTS.filter((checkpoint) => {
     for (let number = checkpoint.from; number <= checkpoint.to; number += 1) {
-      if (getChapter(number) === undefined) return false;
+      if (!hasChapter(number)) return false;
     }
     return true;
   });
@@ -266,9 +229,7 @@ export function selectAvailableCheckpoints(): CourseCheckpoint[] {
 /** The next chapter with content after the given one. */
 export function selectNextChapter(chapterNumber: number): ChapterCardModel | undefined {
   const ordered = [...chapterRegistry].sort((a, b) => a.number - b.number);
-  const next = ordered.find(
-    (entry) => entry.number > chapterNumber && getChapter(entry.number) !== undefined,
-  );
+  const next = ordered.find((entry) => entry.number > chapterNumber);
   if (!next) return undefined;
   return {
     number: next.number,
@@ -278,8 +239,8 @@ export function selectNextChapter(chapterNumber: number): ChapterCardModel | und
     available: true,
     status: 'notStarted',
     bestScorePercent: 0,
+    estimatedMinutes: next.estimatedMinutes,
     bookmarked: false,
     reviewDue: false,
-    isDemo: false,
   };
 }

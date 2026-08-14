@@ -7,13 +7,16 @@ import { usePracticeStore } from '../features/practice/practiceStore';
 import { useProgressStore } from '../features/progress/progressStore';
 import { useSettingsStore } from '../features/settings/settingsStore';
 import { chapter001 } from '../content/chapters/chapter-001-personal-pronouns';
+import { chapterRouteLoader } from '../features/chapters/useChapterParam';
+import { AUTO_ADVANCE_DELAY_MS } from '../components/exercises/ExerciseRenderer';
 
 const CHAPTER_1_EXERCISE_COUNT = chapter001.exercises.length;
 
-function renderPractice(search = '') {
+async function renderPractice(search = '') {
   return renderWithRouter(<PracticePage />, {
     route: `/chapter/1/practice${search}`,
     path: '/chapter/:chapterNumber/practice',
+    loader: chapterRouteLoader,
   });
 }
 
@@ -44,8 +47,8 @@ describe('PracticePage', () => {
     useSettingsStore.setState({ shuffleOptions: false });
   });
 
-  it('starts a session and shows the first exercise', () => {
-    renderPractice();
+  it('starts a session and shows the first exercise', async () => {
+    await renderPractice();
 
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(/practice/i);
     expect(screen.getByTestId('exercise-counter')).toHaveTextContent(
@@ -55,8 +58,8 @@ describe('PracticePage', () => {
     expect(screen.getByRole('progressbar')).toHaveAttribute('aria-valuenow', '0');
   });
 
-  it('runs a 24-exercise sample in quick mode', () => {
-    renderPractice('?mode=quick');
+  it('runs a 24-exercise sample in quick mode', async () => {
+    await renderPractice('?mode=quick');
 
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(/\(quick\)/i);
     expect(screen.getByTestId('exercise-counter')).toHaveTextContent('Exercise 1 of 24');
@@ -66,7 +69,7 @@ describe('PracticePage', () => {
 
   it('checks a single-choice answer automatically, with no submit button', async () => {
     const user = userEvent.setup();
-    renderPractice();
+    await renderPractice();
 
     expect(
       screen.queryByRole('button', { name: /check answer/i }),
@@ -80,7 +83,7 @@ describe('PracticePage', () => {
 
   it('scores a correct first attempt with one point and shows feedback', async () => {
     const user = userEvent.setup();
-    renderPractice();
+    await renderPractice();
 
     await answerChoiceCorrectly(user, 'wir');
 
@@ -95,7 +98,7 @@ describe('PracticePage', () => {
 
   it('offers a second attempt after a wrong answer and scores it with half a point', async () => {
     const user = userEvent.setup();
-    renderPractice();
+    await renderPractice();
 
     await selectOption(user, '^ihr$');
     await waitFor(() =>
@@ -116,7 +119,7 @@ describe('PracticePage', () => {
 
   it('shows the expected answer after the second incorrect attempt', async () => {
     const user = userEvent.setup();
-    renderPractice();
+    await renderPractice();
 
     await selectOption(user, '^ihr$');
     await waitFor(() =>
@@ -138,7 +141,7 @@ describe('PracticePage', () => {
 
   it('reveals the answer on request and scores it with zero', async () => {
     const user = userEvent.setup();
-    renderPractice();
+    await renderPractice();
 
     await selectOption(user, '^ihr$');
     await waitFor(() =>
@@ -155,9 +158,37 @@ describe('PracticePage', () => {
     expect(usePracticeStore.getState().results['ch01-ex-01']?.score).toBe(0);
   });
 
+  it('moves on by itself once "Move on automatically" is enabled', async () => {
+    const user = userEvent.setup();
+    useSettingsStore.setState({ autoAdvance: true });
+    await renderPractice();
+
+    await answerChoiceCorrectly(user, 'wir');
+
+    await waitFor(
+      () =>
+        expect(screen.getByTestId('exercise-counter')).toHaveTextContent(
+          `Exercise 2 of ${CHAPTER_1_EXERCISE_COUNT}`,
+        ),
+      { timeout: 3000 },
+    );
+  });
+
+  it('stays put when "Move on automatically" is off', async () => {
+    const user = userEvent.setup();
+    await renderPractice();
+
+    await answerChoiceCorrectly(user, 'wir');
+    await new Promise((resolve) => setTimeout(resolve, AUTO_ADVANCE_DELAY_MS + 200));
+
+    expect(screen.getByTestId('exercise-counter')).toHaveTextContent(
+      `Exercise 1 of ${CHAPTER_1_EXERCISE_COUNT}`,
+    );
+  });
+
   it('moves to the next exercise and updates the progress bar', async () => {
     const user = userEvent.setup();
-    renderPractice();
+    await renderPractice();
 
     await answerChoiceCorrectly(user, 'wir');
     await user.click(screen.getByRole('button', { name: /next exercise/i }));
@@ -171,7 +202,7 @@ describe('PracticePage', () => {
 
   it('checks a text answer, keeps it visible and accepts a retry', async () => {
     const user = userEvent.setup();
-    renderPractice();
+    await renderPractice();
 
     // Jump to the first text-input exercise.
     act(() => usePracticeStore.setState({ currentIndex: 12 }));
@@ -198,7 +229,7 @@ describe('PracticePage', () => {
 
   it('writes umlauts through the helper buttons', async () => {
     const user = userEvent.setup();
-    renderPractice();
+    await renderPractice();
 
     act(() => usePracticeStore.setState({ currentIndex: 22 }));
 
@@ -215,7 +246,7 @@ describe('PracticePage', () => {
 
   it('can be completed with the keyboard alone', async () => {
     const user = userEvent.setup();
-    renderPractice();
+    await renderPractice();
 
     await user.tab(); // first radio option
     expect(screen.getByRole('radio', { name: /wir/ })).toHaveFocus();
@@ -241,7 +272,7 @@ describe('PracticePage', () => {
 
   it('moves focus to "Try again" after an incorrect answer', async () => {
     const user = userEvent.setup();
-    renderPractice();
+    await renderPractice();
 
     await selectOption(user, '^ihr$');
 
@@ -252,7 +283,7 @@ describe('PracticePage', () => {
 
   it('asks for confirmation before leaving and resumes the session afterwards', async () => {
     const user = userEvent.setup();
-    const view = renderPractice();
+    const view = await renderPractice();
 
     await answerChoiceCorrectly(user, 'wir');
     await user.click(screen.getByRole('button', { name: /next exercise/i }));
@@ -274,7 +305,7 @@ describe('PracticePage', () => {
       currentIndex: 0,
     });
 
-    renderPractice();
+    await renderPractice();
 
     expect(screen.getByTestId('exercise-counter')).toHaveTextContent(
       `Exercise 2 of ${CHAPTER_1_EXERCISE_COUNT}`,
@@ -286,7 +317,7 @@ describe('PracticePage', () => {
 
   it('records progress that survives a reload', async () => {
     const user = userEvent.setup();
-    renderPractice();
+    await renderPractice();
 
     await answerChoiceCorrectly(user, 'wir');
 

@@ -4,7 +4,9 @@ import userEvent from '@testing-library/user-event';
 import { SettingsPage } from './SettingsPage';
 import { renderWithRouter } from '../test/helpers/renderWithRouter';
 import { useProgressStore } from '../features/progress/progressStore';
-import { useSettingsStore } from '../features/settings/settingsStore';
+import { defaultSettings, useSettingsStore } from '../features/settings/settingsStore';
+import { createBackup } from '../features/progress/backup';
+import { createEmptyProgress } from '../features/progress/progressPersistence';
 
 describe('SettingsPage', () => {
   beforeEach(() => {
@@ -13,9 +15,38 @@ describe('SettingsPage', () => {
     useSettingsStore.getState().resetSettings();
   });
 
+  it('imports a backup after confirming, and rejects a foreign file', async () => {
+    const user = userEvent.setup();
+    await renderWithRouter(<SettingsPage />, { route: '/settings' });
+
+    const input = screen.getByLabelText(/backup file to import/i);
+
+    await user.upload(
+      input,
+      new File(['{"hello":"world"}'], 'other.json', { type: 'application/json' }),
+    );
+    expect(await screen.findByText(/was not exported from this app/i)).toBeVisible();
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+
+    const backup = createBackup(
+      { ...createEmptyProgress(), lastOpenedChapter: 4 },
+      { ...defaultSettings, showHints: false },
+    );
+    await user.upload(
+      input,
+      new File([JSON.stringify(backup)], 'backup.json', { type: 'application/json' }),
+    );
+
+    const dialog = await screen.findByRole('dialog');
+    await user.click(within(dialog).getByRole('button', { name: /restore backup/i }));
+
+    expect(useProgressStore.getState().lastOpenedChapter).toBe(4);
+    expect(useSettingsStore.getState().showHints).toBe(false);
+  });
+
   it('changes the theme and stores it', async () => {
     const user = userEvent.setup();
-    renderWithRouter(<SettingsPage />, { route: '/settings' });
+    await renderWithRouter(<SettingsPage />, { route: '/settings' });
 
     const group = screen.getByRole('radiogroup', { name: /theme/i });
     expect(within(group).getByRole('radio', { name: 'System' })).toBeChecked();
@@ -30,7 +61,7 @@ describe('SettingsPage', () => {
 
   it('toggles a setting and stores it', async () => {
     const user = userEvent.setup();
-    renderWithRouter(<SettingsPage />, { route: '/settings' });
+    await renderWithRouter(<SettingsPage />, { route: '/settings' });
 
     const shuffle = screen.getByRole('checkbox', { name: /shuffle answer options/i });
     expect(shuffle).toBeChecked();
@@ -46,7 +77,7 @@ describe('SettingsPage', () => {
 
   it('restores the default settings', async () => {
     const user = userEvent.setup();
-    renderWithRouter(<SettingsPage />, { route: '/settings' });
+    await renderWithRouter(<SettingsPage />, { route: '/settings' });
 
     await user.click(screen.getByRole('checkbox', { name: /show hints/i }));
     expect(useSettingsStore.getState().showHints).toBe(false);
@@ -63,7 +94,7 @@ describe('SettingsPage', () => {
       outcome: 'incorrect',
     });
 
-    renderWithRouter(<SettingsPage />, { route: '/settings' });
+    await renderWithRouter(<SettingsPage />, { route: '/settings' });
     await user.click(screen.getByRole('button', { name: /delete all progress/i }));
 
     const dialog = screen.getByRole('dialog');
@@ -81,7 +112,7 @@ describe('SettingsPage', () => {
       outcome: 'incorrect',
     });
 
-    renderWithRouter(<SettingsPage />, { route: '/settings' });
+    await renderWithRouter(<SettingsPage />, { route: '/settings' });
     await user.click(screen.getByRole('button', { name: /delete all progress/i }));
     await user.click(
       within(screen.getByRole('dialog')).getByRole('button', {
@@ -96,7 +127,7 @@ describe('SettingsPage', () => {
 
   it('closes the confirmation dialog with Escape', async () => {
     const user = userEvent.setup();
-    renderWithRouter(<SettingsPage />, { route: '/settings' });
+    await renderWithRouter(<SettingsPage />, { route: '/settings' });
 
     await user.click(screen.getByRole('button', { name: /delete all progress/i }));
     expect(screen.getByRole('dialog')).toBeInTheDocument();

@@ -4,7 +4,8 @@ import {
   validateChapter,
   validateChapterCollection,
 } from './contentValidation';
-import { chapterRegistry, chapters, demoChapters, getChapter } from './registry';
+import { allChapters, chapterModules } from './allChapters';
+import { chapterRegistry } from './registry';
 import { CHAPTER_SECTIONS, CONTENT_RULES } from '../schemas/chapterSchema';
 import { sections } from './sections';
 import {
@@ -20,7 +21,7 @@ describe('shipped content', () => {
     expect(result.valid).toBe(true);
   });
 
-  it.each(chapters.map((chapter) => [chapter.number, chapter] as const))(
+  it.each(allChapters.map((chapter) => [chapter.number, chapter] as const))(
     'chapter %i satisfies the content rules',
     (_number, chapter) => {
       expect(validateChapter(chapter)).toEqual([]);
@@ -58,8 +59,22 @@ describe('shipped content', () => {
     },
   );
 
-  it('ships no demo chapters from Phase 1 onward', () => {
-    expect(demoChapters).toHaveLength(0);
+  it('ships a content file for every registry chapter, and no others', () => {
+    expect(allChapters.map((chapter) => chapter.number)).toEqual(
+      chapterRegistry.map((entry) => entry.number),
+    );
+  });
+
+  it('exports exactly one value per chapter file', () => {
+    // chapterLoader reads the module's single export; a second one would make
+    // which chapter it loads ambiguous.
+    for (const { path, exportCount } of chapterModules) {
+      expect([path, exportCount]).toEqual([path, 1]);
+    }
+  });
+
+  it('ships no demo chapters', () => {
+    expect(allChapters.filter((chapter) => chapter.isDemo)).toHaveLength(0);
   });
 });
 
@@ -90,14 +105,16 @@ describe('chapter registry', () => {
     expect(new Set(titles).size).toBe(titles.length);
   });
 
-  it('resolves content only for chapters that are implemented', () => {
+  it('matches the metadata in every chapter file', () => {
+    const byNumber = new Map(allChapters.map((chapter) => [chapter.number, chapter]));
     for (const entry of chapterRegistry) {
-      const chapter = getChapter(entry.number);
-      if (chapter) {
-        expect(chapter.title).toBe(entry.title);
-        expect(chapter.level).toBe(entry.level);
-        expect(chapter.section).toBe(entry.section);
-      }
+      const chapter = byNumber.get(entry.number);
+      expect(chapter).toBeDefined();
+      expect(chapter?.title).toBe(entry.title);
+      expect(chapter?.level).toBe(entry.level);
+      expect(chapter?.section).toBe(entry.section);
+      // The catalogue reads this from the registry instead of the chapter body.
+      expect(chapter?.estimatedMinutes).toBe(entry.estimatedMinutes);
     }
   });
 });
@@ -249,17 +266,33 @@ describe('validateChapterCollection', () => {
       title: 'Personal Pronouns',
       section: 'verbs-1' as const,
       level: 'A1' as const,
+      estimatedMinutes: 20,
     },
     {
       number: 2,
       title: 'Present-Tense Conjugation',
       section: 'verbs-1' as const,
       level: 'A1' as const,
+      estimatedMinutes: 20,
     },
   ];
 
   it('accepts chapters that match the registry', () => {
-    expect(validateChapterCollection([makeChapter()], registry)).toEqual([]);
+    const chapter2 = makeChapter({
+      number: 2,
+      title: 'Present-Tense Conjugation',
+      exercises: makeChapter().exercises.map((exercise, index) => ({
+        ...exercise,
+        id: `ch2-ex-${index + 1}`,
+        chapterNumber: 2,
+      })),
+    });
+    expect(validateChapterCollection([makeChapter(), chapter2], registry)).toEqual([]);
+  });
+
+  it('rejects a registry chapter with no content file', () => {
+    const issues = validateChapterCollection([makeChapter()], registry);
+    expect(issues.some((issue) => issue.message.includes('no content file'))).toBe(true);
   });
 
   it('rejects duplicate chapter numbers', () => {

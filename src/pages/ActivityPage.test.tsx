@@ -30,14 +30,14 @@ describe('ActivityPage', () => {
     useProgressStore.getState().resetProgress();
   });
 
-  it('prompts to pick a chapter when nothing has been completed yet', () => {
-    renderWithRouter(<ActivityPage />, { route: '/activity' });
+  it('prompts to pick a chapter when nothing has been completed yet', async () => {
+    await renderWithRouter(<ActivityPage />, { route: '/activity' });
 
     expect(screen.getByRole('heading', { level: 1, name: /activity/i })).toBeInTheDocument();
     expect(screen.getByText(/no chapter has been completed yet/i)).toBeInTheDocument();
   });
 
-  it('lists a day a chapter was completed on', () => {
+  it('lists a day a chapter was completed on', async () => {
     const summary = summarizeSession([perfectRecord('demo-ex-01')], 1);
     useProgressStore.getState().recordSessionResult({
       chapterNumber: 0,
@@ -46,7 +46,7 @@ describe('ActivityPage', () => {
       now: new Date('2026-03-10T09:00:00.000Z'),
     });
 
-    renderWithRouter(<ActivityPage />, { route: '/activity' });
+    await renderWithRouter(<ActivityPage />, { route: '/activity' });
 
     expect(screen.getByText(/1 chapter completed across 1 day/i)).toBeInTheDocument();
     expect(screen.getByRole('columnheader', { name: /date/i })).toBeInTheDocument();

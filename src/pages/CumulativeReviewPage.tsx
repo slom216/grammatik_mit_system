@@ -1,15 +1,16 @@
-import { useEffect, useMemo, useState } from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Link, useLoaderData, useNavigate } from 'react-router-dom';
 import { Button } from '../components/common/Button';
 import { Card } from '../components/common/Card';
 import { Modal } from '../components/common/Modal';
 import { ProgressBar } from '../components/common/ProgressBar';
-import { ExerciseRenderer } from '../components/exercises/ExerciseRenderer';
-import { getChapter } from '../content/registry';
+import { PracticeExercise } from '../components/practice/PracticeExercise';
+import { SessionSummary } from '../components/practice/SessionSummary';
 import {
   EXERCISE_TYPE_LABELS,
   findExerciseAcrossChapters,
 } from '../features/chapters/chapterUtils';
+import type { CumulativeRouteResult } from '../features/practice/cumulativeRoute';
 import { buildCumulativeExerciseIds } from '../features/practice/cumulativeSession';
 import {
   selectAnsweredCount,
@@ -21,32 +22,21 @@ import { useProgressStore } from '../features/progress/progressStore';
 import { useSettingsStore } from '../features/settings/settingsStore';
 
 export function CumulativeReviewPage() {
-  const { from, to } = useParams();
+  const {
+    from: fromNumber,
+    to: toNumber,
+    chapters,
+    complete,
+  } = useLoaderData() as CumulativeRouteResult;
   const navigate = useNavigate();
   const practice = usePracticeStore();
   const exerciseHistory = useProgressStore((state) => state.exerciseHistory);
   const shuffleOptions = useSettingsStore((state) => state.shuffleOptions);
-  const showHints = useSettingsStore((state) => state.showHints);
-  const showUmlautHelper = useSettingsStore((state) => state.showUmlautHelper);
   const [exitDialogOpen, setExitDialogOpen] = useState(false);
 
-  const fromNumber = Number(from);
-  const toNumber = Number(to);
-  const rangeValid =
-    Number.isInteger(fromNumber) && Number.isInteger(toNumber) && fromNumber <= toNumber;
-
-  const chapters = useMemo(() => {
-    if (!rangeValid) return [];
-    const list = [];
-    for (let number = fromNumber; number <= toNumber; number += 1) {
-      const chapter = getChapter(number);
-      if (chapter) list.push(chapter);
-    }
-    return list;
-  }, [rangeValid, fromNumber, toNumber]);
-
-  const complete = rangeValid && chapters.length === toNumber - fromNumber + 1;
-
+  // `chapters` comes from the route loader, so its identity is stable for the
+  // whole navigation — adding revalidation to this route would restart the
+  // session mid-review.
   useEffect(() => {
     if (!complete) return;
     const store = usePracticeStore.getState();
@@ -68,7 +58,8 @@ export function CumulativeReviewPage() {
       <div className="stack">
         <h1>Cumulative review unavailable</h1>
         <p className="text-muted">
-          This review needs chapters {from}–{to}, and not all of them have content yet.
+          This review needs chapters {fromNumber}–{toNumber}, and not all of them have
+          content yet.
         </p>
         <Link className="button button--secondary" to="/review">
           Back to the review queue
@@ -90,24 +81,7 @@ export function CumulativeReviewPage() {
           Cumulative Review · Chapters {fromNumber}–{toNumber}
         </h1>
         <Card title="Session summary" titleLevel={2}>
-          <div className="stack">
-            <ProgressBar
-              label="Weighted score"
-              value={summary.scorePercent}
-              valueText={`${summary.scorePercent}%`}
-            />
-            <ul>
-              <li>
-                Answered: {summary.answeredCount} of {summary.totalExercises}
-              </li>
-              <li>
-                Points: {summary.rawScore} of {summary.maxScore} (1 point for a correct
-                first attempt, 0.5 for a correct second attempt)
-              </li>
-              <li>First-attempt accuracy: {summary.firstAttemptAccuracy}%</li>
-              <li>Correct text-input exercises: {summary.correctTextInputs}</li>
-            </ul>
-          </div>
+          <SessionSummary summary={summary} />
         </Card>
         <p className="text-muted text-sm">
           This mixes exercises from chapters {fromNumber}–{toNumber}, so it doesn't count
@@ -141,12 +115,11 @@ export function CumulativeReviewPage() {
   const total = practice.exerciseIds.length;
   const position = practice.currentIndex + 1;
   const answered = selectAnsweredCount(practice);
-  const resolved = practice.results[exercise.id] !== undefined;
   const isLast = selectIsLastExercise(practice);
-  const feedback =
-    practice.feedback && practice.feedback.exerciseId === exercise.id
-      ? practice.feedback
-      : null;
+
+  const handleFinish = () => {
+    practice.finishCumulative();
+  };
 
   const handleExit = () => {
     practice.exitSession();
@@ -165,76 +138,16 @@ export function CumulativeReviewPage() {
           max={total}
           valueText={`${answered} of ${total} answered`}
         />
-        <p className="text-sm text-muted" data-testid="exercise-counter">
+        <p className="text-sm text-muted" data-testid="exercise-counter" aria-live="polite">
           Exercise {position} of {total} · from chapter {exercise.chapterNumber} ·{' '}
           {EXERCISE_TYPE_LABELS[exercise.type]}
         </p>
       </header>
 
-      <ExerciseRenderer
-        key={exercise.id}
+      <PracticeExercise
         exercise={exercise}
-        optionOrder={
-          practice.optionOrder[exercise.id] ??
-          (exercise.type === 'singleChoice'
-            ? exercise.options.map((option) => option.id)
-            : [])
-        }
-        segmentOrder={
-          practice.segmentOrder[exercise.id] ??
-          (exercise.type === 'sentenceOrdering'
-            ? exercise.segments.map((segment) => segment.id)
-            : [])
-        }
-        wordBankOrder={
-          practice.wordBankOrder[exercise.id] ??
-          (exercise.type === 'dragToSlots'
-            ? exercise.wordBank.map((_word, index) => index)
-            : [])
-        }
-        matchingRightOrder={
-          practice.matchingRightOrder[exercise.id] ??
-          (exercise.type === 'matching' ? exercise.pairs.map((pair) => pair.id) : [])
-        }
-        feedback={feedback}
-        resolved={resolved}
         isLast={isLast}
-        showHints={showHints}
-        showUmlautHelper={showUmlautHelper}
-        onSubmitChoice={(optionId) => {
-          if (exercise.type === 'singleChoice') {
-            practice.submitSingleChoice(exercise, optionId);
-          }
-        }}
-        onSubmitText={(value) => {
-          if (exercise.type === 'textInput') {
-            practice.submitTextAnswer(exercise, value);
-          }
-        }}
-        onSubmitOrdering={(orderedIds) => {
-          if (exercise.type === 'sentenceOrdering') {
-            practice.submitSentenceOrdering(exercise, orderedIds);
-          }
-        }}
-        onSubmitSlots={(placedWords) => {
-          if (exercise.type === 'dragToSlots') {
-            practice.submitDragToSlots(exercise, placedWords);
-          }
-        }}
-        onSubmitMatching={(matches) => {
-          if (exercise.type === 'matching') {
-            practice.submitMatching(exercise, matches);
-          }
-        }}
-        onSubmitErrorSpotting={(tokenIndex) => {
-          if (exercise.type === 'errorSpotting') {
-            practice.submitErrorSpotting(exercise, tokenIndex);
-          }
-        }}
-        onRetry={() => usePracticeStore.setState({ feedback: null })}
-        onReveal={() => practice.revealAnswer(exercise)}
-        onNext={practice.goToNext}
-        onFinish={() => practice.finishCumulative()}
+        onFinish={handleFinish}
         onExit={() => setExitDialogOpen(true)}
       />
 

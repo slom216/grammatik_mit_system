@@ -1,5 +1,6 @@
 import { chapterSchema, type ChapterDefinition } from '../schemas/chapterSchema';
-import { chapterRegistry, chapters, type ChapterRegistryEntry } from './registry';
+import { allChapters as shippedChapters } from './allChapters';
+import { chapterRegistry, type ChapterRegistryEntry } from './registry';
 
 export interface ContentIssue {
   chapter: number | string;
@@ -67,6 +68,18 @@ export function validateChapterCollection(
 
   const registryByNumber = new Map(registry.map((entry) => [entry.number, entry]));
 
+  // The chapter loader discovers files by glob, so a file named off-convention
+  // is dropped silently. This is the only check that catches that.
+  for (const entry of registry) {
+    if (!seenNumbers.has(entry.number)) {
+      issues.push({
+        chapter: entry.number,
+        path: 'number',
+        message: `Registry chapter ${entry.number} has no content file matching chapter-NNN-*.ts`,
+      });
+    }
+  }
+
   for (const chapter of allChapters) {
     const entry = registryByNumber.get(chapter.number);
 
@@ -111,6 +124,15 @@ export function validateChapterCollection(
         message: `Level "${chapter.level}" does not match the registry level "${entry.level}"`,
       });
     }
+    // The catalogue reads this from the registry so it never loads a chapter
+    // body, which only works while the two copies agree.
+    if (entry.estimatedMinutes !== chapter.estimatedMinutes) {
+      issues.push({
+        chapter: chapter.number,
+        path: 'estimatedMinutes',
+        message: `estimatedMinutes ${chapter.estimatedMinutes} does not match the registry value ${entry.estimatedMinutes}`,
+      });
+    }
 
     for (const prerequisite of chapter.prerequisites) {
       if (!registryByNumber.has(prerequisite)) {
@@ -134,7 +156,7 @@ export function validateChapterCollection(
 
 /** Validates every chapter that ships with the app. */
 export function validateAllContent(
-  allChapters: readonly ChapterDefinition[] = chapters,
+  allChapters: readonly ChapterDefinition[] = shippedChapters,
   registry: readonly ChapterRegistryEntry[] = chapterRegistry,
 ): ContentValidationResult {
   const issues = [

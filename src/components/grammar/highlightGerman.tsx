@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 
 /** Wraps every highlighted fragment of a German sentence in a <mark>. */
+/** German fragments are wrapped by callers that already set `lang="de"`. */
 export function highlightGerman(
   sentence: string,
   highlight?: readonly string[],

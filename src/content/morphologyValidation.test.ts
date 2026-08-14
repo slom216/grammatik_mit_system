@@ -17,7 +17,7 @@ import {
   synthesizeWuerdeForm,
   type Person,
 } from './morphologyValidation';
-import { getChapter } from './registry';
+import { allChapters } from './allChapters';
 import type { GrammarTableDefinition } from '../schemas/chapterSchema';
 
 describe('synthesizeSimplePast / isValidSimplePastForm', () => {
@@ -189,8 +189,10 @@ describe('Phase 6 chapters: generated forms match the morphology rules', () => {
     'sie/Sie': 'sie',
   };
 
+  const chapterByNumber = new Map(allChapters.map((chapter) => [chapter.number, chapter]));
+
   function requireTable(chapterNumber: number, tableId: string): GrammarTableDefinition {
-    const chapter = getChapter(chapterNumber);
+    const chapter = chapterByNumber.get(chapterNumber);
     if (!chapter) throw new Error(`Chapter ${chapterNumber} has no content`);
     const table = chapter.explanation.tables.find((t) => t.id === tableId);
     if (!table) throw new Error(`Chapter ${chapterNumber} has no table with id "${tableId}"`);

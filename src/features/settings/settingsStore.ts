@@ -18,6 +18,7 @@ export const defaultSettings: PersistedSettingsV1 = {
   autoAdvance: false,
   defaultAnswerMode: 'normalized',
   theme: 'system',
+  pronunciationAudio: true,
 };
 
 const store = createJsonStore(SETTINGS_STORAGE_KEY, persistedSettingsV1Schema);
@@ -33,13 +34,21 @@ export interface SettingsState extends PersistedSettingsV1 {
   setSetting: <Key extends SettingsToggle>(key: Key, value: boolean) => void;
   toggleSetting: (key: SettingsToggle) => void;
   setTheme: (theme: Theme) => void;
+  /** Replaces every setting at once, e.g. when restoring a backup. */
+  replaceSettings: (settings: PersistedSettingsV1) => void;
   resetSettings: () => void;
 }
 
 export const useSettingsStore = create<SettingsState>()((set, get) => {
   const persist = () => {
-    const { shuffleOptions, showHints, showUmlautHelper, reducedMotion, autoAdvance } =
-      get();
+    const {
+      shuffleOptions,
+      showHints,
+      showUmlautHelper,
+      reducedMotion,
+      autoAdvance,
+      pronunciationAudio,
+    } = get();
     store.write({
       schemaVersion: SETTINGS_SCHEMA_VERSION,
       shuffleOptions,
@@ -47,6 +56,7 @@ export const useSettingsStore = create<SettingsState>()((set, get) => {
       showUmlautHelper,
       reducedMotion,
       autoAdvance,
+      pronunciationAudio,
       defaultAnswerMode: get().defaultAnswerMode,
       theme: get().theme,
     });
@@ -73,6 +83,11 @@ export const useSettingsStore = create<SettingsState>()((set, get) => {
 
     setTheme: (theme) => {
       set({ theme });
+      persist();
+    },
+
+    replaceSettings: (settings) => {
+      set({ ...settings, hydrated: true });
       persist();
     },
 

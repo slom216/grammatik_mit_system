@@ -1,4 +1,5 @@
 import type { DialogueLine } from '../../schemas/exerciseSchema';
+import { SpeakButton } from '../common/SpeakButton';
 
 export interface DialogueExchangeProps {
   lines: DialogueLine[];
@@ -23,6 +24,7 @@ export function DialogueExchange({ lines }: DialogueExchangeProps) {
               <span className="dialogue__speaker">{line.speaker}</span>
               <span className="dialogue__german" lang="de">
                 {line.german}
+                <SpeakButton text={line.german} label={`Listen to ${line.speaker}`} />
               </span>
               {line.english && <span className="dialogue__english">{line.english}</span>}
             </div>

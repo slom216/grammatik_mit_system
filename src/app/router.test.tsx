@@ -30,21 +30,25 @@ const ROUTES: Array<[string, RegExp]> = [
   ['/does-not-exist', /page not found/i],
 ];
 
+// Pages and chapter content are loaded on demand, so every assertion has to
+// wait for the route's chunk and loader to settle.
 describe('application routes', () => {
-  it.each(ROUTES)('renders %s', (path, heading) => {
+  it.each(ROUTES)('renders %s', async (path, heading) => {
     renderRoute(path);
-    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(heading);
+    expect(await screen.findByRole('heading', { level: 1 })).toHaveTextContent(heading);
   });
 
-  it('renders a chapter route without content as unavailable', () => {
+  it('renders a chapter route without content as unavailable', async () => {
     renderRoute('/chapter/86');
-    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(/chapter 86/i);
+    expect(await screen.findByRole('heading', { level: 1 })).toHaveTextContent(
+      /chapter 86/i,
+    );
     expect(screen.getByText(/has not been written yet/i)).toBeInTheDocument();
   });
 
-  it('rejects a non-numeric chapter parameter', () => {
+  it('rejects a non-numeric chapter parameter', async () => {
     renderRoute('/chapter/abc');
-    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
+    expect(await screen.findByRole('heading', { level: 1 })).toHaveTextContent(
       /unknown chapter/i,
     );
   });

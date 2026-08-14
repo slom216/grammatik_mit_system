@@ -4,7 +4,7 @@ import { Button } from '../components/common/Button';
 import { ChapterUnavailable } from '../components/common/ChapterUnavailable';
 import { Modal } from '../components/common/Modal';
 import { ProgressBar } from '../components/common/ProgressBar';
-import { ExerciseRenderer } from '../components/exercises/ExerciseRenderer';
+import { PracticeExercise } from '../components/practice/PracticeExercise';
 import {
   EXERCISE_TYPE_LABELS,
   chapterPath,
@@ -18,7 +18,11 @@ import {
   selectIsLastExercise,
   usePracticeStore,
 } from '../features/practice/practiceStore';
-import { buildQuickExerciseIds, quickMasteryRule } from '../features/practice/quickSession';
+import {
+  QUICK_SESSION_SIZE,
+  buildQuickExerciseIds,
+  quickMasteryRule,
+} from '../features/practice/quickSession';
 import { isDue } from '../features/practice/reviewScheduler';
 import { useProgressStore } from '../features/progress/progressStore';
 import { useSettingsStore } from '../features/settings/settingsStore';
@@ -30,17 +34,10 @@ export function PracticePage() {
   const practice = usePracticeStore();
   const exerciseHistory = useProgressStore((state) => state.exerciseHistory);
   const shuffleOptions = useSettingsStore((state) => state.shuffleOptions);
-  const showHints = useSettingsStore((state) => state.showHints);
-  const showUmlautHelper = useSettingsStore((state) => state.showUmlautHelper);
   const [exitDialogOpen, setExitDialogOpen] = useState(false);
 
   const reviewMode = searchParams.get('mode') === 'review';
   const quickMode = searchParams.get('mode') === 'quick';
-
-  const quickExerciseIds = useMemo(
-    () => (chapter && quickMode ? buildQuickExerciseIds(chapter) : []),
-    [chapter, quickMode],
-  );
 
   const dueExerciseIds = useMemo(() => {
     if (!chapter) return [];
@@ -51,6 +48,20 @@ export function PracticePage() {
       )
       .map((history) => history.exerciseId);
   }, [chapter, exerciseHistory]);
+
+  const quickExerciseIds = useMemo(
+    () =>
+      chapter
+        ? buildQuickExerciseIds(chapter, QUICK_SESSION_SIZE, Math.random, dueExerciseIds)
+        : [],
+    // dueExerciseIds is read once, when the sample is drawn.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [chapter, quickMode],
+  );
+
+  const quickDueCount = quickMode
+    ? quickExerciseIds.filter((id) => dueExerciseIds.includes(id)).length
+    : 0;
 
   useEffect(() => {
     if (!chapter) return;
@@ -106,12 +117,7 @@ export function PracticePage() {
   const total = practice.exerciseIds.length;
   const position = practice.currentIndex + 1;
   const answered = selectAnsweredCount(practice);
-  const resolved = practice.results[exercise.id] !== undefined;
   const isLast = selectIsLastExercise(practice);
-  const feedback =
-    practice.feedback && practice.feedback.exerciseId === exercise.id
-      ? practice.feedback
-      : null;
 
   const handleFinish = () => {
     // A quick session is scored against thresholds scaled to its own size.
@@ -136,6 +142,8 @@ export function PracticePage() {
           Chapter {formatChapterNumber(chapter.number)}
           {reviewMode && ' · review'}
           {quickMode && ' · quick session'}
+          {quickDueCount > 0 &&
+            ` · ${quickDueCount} due ${quickDueCount === 1 ? 'exercise' : 'exercises'} included`}
         </span>
         <h1>
           Practice · {chapter.title}
@@ -148,74 +156,14 @@ export function PracticePage() {
           max={total}
           valueText={`${answered} of ${total} answered`}
         />
-        <p className="practice__meta" data-testid="exercise-counter">
+        <p className="practice__meta" data-testid="exercise-counter" aria-live="polite">
           Exercise {position} of {total} · {EXERCISE_TYPE_LABELS[exercise.type]}
         </p>
       </header>
 
-      <ExerciseRenderer
-        key={exercise.id}
+      <PracticeExercise
         exercise={exercise}
-        optionOrder={
-          practice.optionOrder[exercise.id] ??
-          (exercise.type === 'singleChoice'
-            ? exercise.options.map((option) => option.id)
-            : [])
-        }
-        segmentOrder={
-          practice.segmentOrder[exercise.id] ??
-          (exercise.type === 'sentenceOrdering'
-            ? exercise.segments.map((segment) => segment.id)
-            : [])
-        }
-        wordBankOrder={
-          practice.wordBankOrder[exercise.id] ??
-          (exercise.type === 'dragToSlots'
-            ? exercise.wordBank.map((_word, index) => index)
-            : [])
-        }
-        matchingRightOrder={
-          practice.matchingRightOrder[exercise.id] ??
-          (exercise.type === 'matching' ? exercise.pairs.map((pair) => pair.id) : [])
-        }
-        feedback={feedback}
-        resolved={resolved}
         isLast={isLast}
-        showHints={showHints}
-        showUmlautHelper={showUmlautHelper}
-        onSubmitChoice={(optionId) => {
-          if (exercise.type === 'singleChoice') {
-            practice.submitSingleChoice(exercise, optionId);
-          }
-        }}
-        onSubmitText={(value) => {
-          if (exercise.type === 'textInput') {
-            practice.submitTextAnswer(exercise, value);
-          }
-        }}
-        onSubmitOrdering={(orderedIds) => {
-          if (exercise.type === 'sentenceOrdering') {
-            practice.submitSentenceOrdering(exercise, orderedIds);
-          }
-        }}
-        onSubmitSlots={(placedWords) => {
-          if (exercise.type === 'dragToSlots') {
-            practice.submitDragToSlots(exercise, placedWords);
-          }
-        }}
-        onSubmitMatching={(matches) => {
-          if (exercise.type === 'matching') {
-            practice.submitMatching(exercise, matches);
-          }
-        }}
-        onSubmitErrorSpotting={(tokenIndex) => {
-          if (exercise.type === 'errorSpotting') {
-            practice.submitErrorSpotting(exercise, tokenIndex);
-          }
-        }}
-        onRetry={() => usePracticeStore.setState({ feedback: null })}
-        onReveal={() => practice.revealAnswer(exercise)}
-        onNext={practice.goToNext}
         onFinish={handleFinish}
         onExit={() => setExitDialogOpen(true)}
       />

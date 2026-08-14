@@ -1,8 +1,18 @@
-import { useState } from 'react';
+import { useRef, useState, type ChangeEvent } from 'react';
 import { Button } from '../components/common/Button';
 import { Card } from '../components/common/Card';
 import { Modal } from '../components/common/Modal';
+import { loadChapter } from '../content/chapterLoader';
+import { chapterRegistry } from '../content/registry';
 import { usePracticeStore } from '../features/practice/practiceStore';
+import {
+  backupFileName,
+  createBackup,
+  describeBackup,
+  parseBackup,
+  type ProgressBackup,
+} from '../features/progress/backup';
+import { SETTINGS_SCHEMA_VERSION } from '../schemas/progressSchema';
 import { useProgressStore } from '../features/progress/progressStore';
 import {
   useSettingsStore,
@@ -44,6 +54,12 @@ const TOGGLES: ToggleDefinition[] = [
     description: 'Go to the next exercise as soon as an answer is correct.',
   },
   {
+    key: 'pronunciationAudio',
+    label: 'Pronunciation audio',
+    description:
+      'Show a listen button on German sentences, read by a voice from your device.',
+  },
+  {
     key: 'reducedMotion',
     label: 'Reduce motion',
     description: 'Turn off transitions, in addition to your system setting.',
@@ -54,15 +70,83 @@ export function SettingsPage() {
   const settings = useSettingsStore();
   const resetSettings = useSettingsStore((state) => state.resetSettings);
   const resetProgress = useProgressStore((state) => state.resetProgress);
+  const replaceProgress = useProgressStore((state) => state.replaceProgress);
+  const snapshot = useProgressStore((state) => state.snapshot);
+  const replaceSettings = useSettingsStore((state) => state.replaceSettings);
   const exitSession = usePracticeStore((state) => state.exitSession);
   const [confirmOpen, setConfirmOpen] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
+  const [downloaded, setDownloaded] = useState<number | null>(null);
+  const [pendingBackup, setPendingBackup] = useState<ProgressBackup | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  /**
+   * Chapters are fetched as they are opened. This walks the whole course so it
+   * is all in the browser's cache before going offline. Sequential on purpose:
+   * 85 parallel requests would stall everything else the learner does.
+   */
+  const downloadAllChapters = async () => {
+    setDownloaded(0);
+    for (const [index, entry] of chapterRegistry.entries()) {
+      await loadChapter(entry.number);
+      setDownloaded(index + 1);
+    }
+  };
 
   const handleReset = () => {
     resetProgress();
     exitSession();
     setConfirmOpen(false);
     setMessage('All progress has been deleted from this browser.');
+  };
+
+  const handleExport = () => {
+    const backup = createBackup(snapshot(), {
+      schemaVersion: SETTINGS_SCHEMA_VERSION,
+      shuffleOptions: settings.shuffleOptions,
+      showHints: settings.showHints,
+      showUmlautHelper: settings.showUmlautHelper,
+      reducedMotion: settings.reducedMotion,
+      autoAdvance: settings.autoAdvance,
+      defaultAnswerMode: settings.defaultAnswerMode,
+      theme: settings.theme,
+      pronunciationAudio: settings.pronunciationAudio,
+    });
+
+    const url = URL.createObjectURL(
+      new Blob([JSON.stringify(backup, null, 2)], { type: 'application/json' }),
+    );
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = backupFileName();
+    link.click();
+    URL.revokeObjectURL(url);
+    setMessage('Backup downloaded.');
+  };
+
+  const handleFileChosen = async (event: ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    // Clear the input so choosing the same file twice fires a change event.
+    event.target.value = '';
+    if (!file) return;
+
+    const result = parseBackup(await file.text());
+    if (!result.ok) {
+      setPendingBackup(null);
+      setMessage(result.error);
+      return;
+    }
+    setMessage(null);
+    setPendingBackup(result.backup);
+  };
+
+  const handleImport = () => {
+    if (!pendingBackup) return;
+    replaceProgress(pendingBackup.progress);
+    replaceSettings(pendingBackup.settings);
+    exitSession();
+    setPendingBackup(null);
+    setMessage('Progress and settings were restored from the backup.');
   };
 
   return (
@@ -133,18 +217,77 @@ export function SettingsPage() {
         </p>
       </Card>
 
+      <Card title="Offline use" titleLevel={2}>
+        <p>
+          Each chapter is downloaded the first time you open it. Fetch all{' '}
+          {chapterRegistry.length} now to use the whole course without a connection.
+        </p>
+        <Button
+          variant="secondary"
+          onClick={() => void downloadAllChapters()}
+          disabled={downloaded !== null && downloaded < chapterRegistry.length}
+        >
+          Download all chapters
+        </Button>
+        <p aria-live="polite" className="text-sm text-muted">
+          {downloaded === null
+            ? ''
+            : downloaded < chapterRegistry.length
+              ? `Downloading ${downloaded} of ${chapterRegistry.length}…`
+              : `All ${chapterRegistry.length} chapters are available offline.`}
+        </p>
+      </Card>
+
       <Card title="Your data" titleLevel={2}>
         <p>
           Progress, review dates and settings are saved in this browser using
-          localStorage. Nothing is sent anywhere.
+          localStorage, and nothing is sent anywhere. That also means clearing your
+          browser data — or studying in a private window — removes them for good. Export
+          a backup to keep a copy, or to move your progress to another browser.
         </p>
-        <Button variant="danger" onClick={() => setConfirmOpen(true)}>
-          Delete all progress
-        </Button>
+        <div className="row">
+          <Button variant="secondary" onClick={handleExport}>
+            Export backup
+          </Button>
+          <Button variant="secondary" onClick={() => fileInputRef.current?.click()}>
+            Import backup
+          </Button>
+          <input
+            ref={fileInputRef}
+            type="file"
+            accept="application/json,.json"
+            className="visually-hidden"
+            aria-label="Backup file to import"
+            onChange={(event) => void handleFileChosen(event)}
+          />
+        </div>
+        <p className="row" style={{ marginTop: 'var(--space-4)' }}>
+          <Button variant="danger" onClick={() => setConfirmOpen(true)}>
+            Delete all progress
+          </Button>
+        </p>
         <p aria-live="polite" className="text-sm text-muted">
           {message}
         </p>
       </Card>
+
+      <Modal
+        open={pendingBackup !== null}
+        title="Restore this backup?"
+        description={
+          pendingBackup
+            ? `The backup holds ${describeBackup(pendingBackup)}. It replaces all progress and settings in this browser.`
+            : ''
+        }
+        onClose={() => setPendingBackup(null)}
+      >
+        <div className="row">
+          <Button variant="secondary" onClick={() => setPendingBackup(null)}>
+            Cancel
+          </Button>
+          <Button onClick={handleImport}>Restore backup</Button>
+        </div>
+      </Modal>
 
       <Modal
         open={confirmOpen}

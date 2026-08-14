@@ -16,6 +16,14 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
+      testIgnore: /offline\.spec\.ts/,
+      // These specs assert app behaviour, not caching; a service worker
+      // installing mid-test would only add flake.
+      use: { ...devices['Desktop Chrome'], serviceWorkers: 'block' },
+    },
+    {
+      name: 'pwa',
+      testMatch: /offline\.spec\.ts/,
       use: { ...devices['Desktop Chrome'] },
     },
   ],

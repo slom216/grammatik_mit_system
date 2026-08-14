@@ -39,6 +39,7 @@ function renderChoice(overrides: Partial<Parameters<typeof ExerciseRenderer>[0]>
       isLast={false}
       showHints={false}
       showUmlautHelper={false}
+      autoAdvance={false}
       onSubmitChoice={onSubmitChoice}
       onSubmitText={noop}
       onSubmitOrdering={noop}

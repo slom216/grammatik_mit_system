@@ -40,8 +40,11 @@ export interface ProgressState {
   exerciseHistory: Record<string, ExerciseHistory>;
   lastOpenedChapter?: number;
   hydrated: boolean;
+  /** True when stored progress could not be read and was reset on load. */
+  recovered: boolean;
 
   hydrate: () => void;
+  acknowledgeRecovery: () => void;
   recordAttempt: (input: RecordAttemptInput) => void;
   recordSessionResult: (input: RecordSessionInput) => { mastered: boolean };
   setLastOpenedChapter: (chapterNumber: number) => void;
@@ -89,16 +92,20 @@ export const useProgressStore = create<ProgressState>()((set, get) => {
   return {
     ...createEmptyProgress(),
     hydrated: false,
+    recovered: false,
 
     hydrate: () => {
-      const { state } = loadProgress();
+      const { state, recovered } = loadProgress();
       set({
         chapters: state.chapters,
         exerciseHistory: state.exerciseHistory,
         lastOpenedChapter: state.lastOpenedChapter,
         hydrated: true,
+        recovered,
       });
     },
+
+    acknowledgeRecovery: () => set({ recovered: false }),
 
     recordAttempt: ({ exerciseId, chapterNumber, outcome, now = new Date() }) => {
       const previous = get().exerciseHistory[exerciseId];

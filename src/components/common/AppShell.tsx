@@ -1,8 +1,11 @@
-import { useMemo } from 'react';
-import { Link, NavLink, Outlet } from 'react-router-dom';
+import { useEffect, useMemo, useRef } from 'react';
+import { Link, NavLink, Outlet, useLocation, useNavigation } from 'react-router-dom';
 import { selectContinueChapter } from '../../features/chapters/chapterSelectors';
 import { chapterPath } from '../../features/chapters/chapterUtils';
 import { useProgressStore } from '../../features/progress/progressStore';
+import { ReloadPrompt } from './ReloadPrompt';
+
+const APP_NAME = 'Grammatik mit System';
 
 const NAV_ITEMS = [
   { to: '/', label: 'Dashboard', end: true },
@@ -45,6 +48,34 @@ export function AppShell() {
   const progress = useProgressStore();
   const continueChapter = useMemo(() => selectContinueChapter(progress), [progress]);
 
+  const { pathname } = useLocation();
+  const navigation = useNavigation();
+  const mainRef = useRef<HTMLElement>(null);
+  const isFirstRender = useRef(true);
+
+  // A single-page navigation leaves screen-reader focus on the link that was
+  // clicked, so the new page is never announced. Moving focus to <main> makes
+  // the change audible, and the heading is read from the top.
+  // The page's own h1 is its name, so taking the title from there means the tab
+  // and the history entry can never drift from what is on screen.
+  // navigation.state is a dependency because a cold load renders the route
+  // fallback first: the heading only exists once the route's chunk has settled.
+  useEffect(() => {
+    const heading = mainRef.current?.querySelector('h1')?.textContent?.trim();
+    document.title = heading ? `${heading} · ${APP_NAME}` : APP_NAME;
+  }, [pathname, navigation.state]);
+
+  useEffect(() => {
+    // Not on the first render: focus belongs where the browser put it when the
+    // page was opened, and the page was not scrolled by us.
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+    mainRef.current?.focus();
+    window.scrollTo({ top: 0 });
+  }, [pathname]);
+
   return (
     <div className="app-shell">
       <a className="skip-link" href="#main-content">
@@ -52,6 +83,9 @@ export function AppShell() {
       </a>
 
       <header className="app-header">
+        {navigation.state === 'loading' && (
+          <span className="app-header__progress" aria-hidden="true" />
+        )}
         <div className="app-header__inner">
           <NavLink to="/" className="app-brand">
             Grammatik mit System
@@ -80,7 +114,7 @@ export function AppShell() {
         </div>
       </header>
 
-      <main className="app-main" id="main-content" tabIndex={-1}>
+      <main className="app-main" id="main-content" tabIndex={-1} ref={mainRef}>
         <div className="app-main__inner">
           <Outlet />
         </div>
@@ -107,6 +141,8 @@ export function AppShell() {
           </p>
         </div>
       </footer>
+
+      <ReloadPrompt />
     </div>
   );
 }

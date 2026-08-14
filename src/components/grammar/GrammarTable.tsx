@@ -47,7 +47,11 @@ export function GrammarTable({ table }: GrammarTableProps) {
                     {cell}
                   </th>
                 ) : (
-                  <td key={`${table.id}-${rowIndex}-${cellIndex}`}>{cell}</td>
+                  // Cells hold German forms; without lang a screen reader reads
+                  // them with English pronunciation rules.
+                  <td key={`${table.id}-${rowIndex}-${cellIndex}`} lang="de">
+                    {cell}
+                  </td>
                 ),
               )}
             </tr>

@@ -130,6 +130,10 @@ test.describe('lesson flow', () => {
   test(`a learner can read a lesson, complete all ${exercises.length} exercises and master the chapter`, async ({
     page,
   }) => {
+    // Answering a whole chapter in one walk-through does not fit the default
+    // 30s budget once entrance animations are counted in.
+    test.slow();
+
     await page.goto('/');
     await expect(
       page.getByRole('heading', { level: 1, name: 'Dashboard' }),
@@ -264,6 +268,9 @@ test.describe('lesson flow', () => {
 
   test('the whole app can be used with the keyboard only', async ({ page }) => {
     await page.goto('/chapter/1/practice');
+    // The page and its chapter arrive as separate chunks, so wait for the
+    // exercise before sending keystrokes at it.
+    await expect(page.getByTestId('exercise-counter')).toBeVisible();
 
     // Tab from the top of the page until the first answer option has focus.
     for (let step = 0; step < 20; step += 1) {

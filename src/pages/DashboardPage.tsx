@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
+import { Button } from '../components/common/Button';
 import { Card } from '../components/common/Card';
 import { ProgressBar } from '../components/common/ProgressBar';
 import { StreakDisplay } from '../components/progress/StreakDisplay';
@@ -11,7 +12,7 @@ import {
 } from '../features/chapters/chapterSelectors';
 import { chapterPath, formatChapterNumber } from '../features/chapters/chapterUtils';
 import { selectDueHistories, useProgressStore } from '../features/progress/progressStore';
-import { getRegistryEntry, getChapter } from '../content/registry';
+import { getRegistryEntry } from '../content/registry';
 
 export function DashboardPage() {
   const progress = useProgressStore();
@@ -43,6 +44,19 @@ export function DashboardPage() {
           exercise pool. Everything you answer stays in this browser.
         </p>
       </header>
+
+      {progress.recovered && (
+        <div className="notice" role="status">
+          <p>
+            <strong>Saved progress could not be read and was reset.</strong> This happens
+            when browser storage is damaged or written by an older version. If you have a
+            backup file, restore it in <Link to="/settings">Settings</Link>.
+          </p>
+          <Button variant="ghost" onClick={progress.acknowledgeRecovery}>
+            Dismiss
+          </Button>
+        </div>
+      )}
 
       <div className="split">
         <Card className="card--elevated" title="Continue learning" titleLevel={2}>
@@ -143,10 +157,7 @@ export function DashboardPage() {
         ) : (
           <ul>
             {recentlyCompleted.map((chapter) => {
-              const title =
-                getRegistryEntry(chapter.chapterNumber)?.title ??
-                getChapter(chapter.chapterNumber)?.title ??
-                'Chapter';
+              const title = getRegistryEntry(chapter.chapterNumber)?.title ?? 'Chapter';
               return (
                 <li key={chapter.chapterNumber}>
                   <Link to={chapterPath(chapter.chapterNumber)}>

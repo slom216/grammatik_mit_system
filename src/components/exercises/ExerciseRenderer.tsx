@@ -27,6 +27,8 @@ export interface ExerciseRendererProps {
   isLast: boolean;
   showHints: boolean;
   showUmlautHelper: boolean;
+  /** Move on by itself once an answer is correct ("Move on automatically"). */
+  autoAdvance: boolean;
   onSubmitChoice: (optionId: string) => void;
   onSubmitText: (value: string) => void;
   onSubmitOrdering: (orderedIds: string[]) => void;
@@ -50,6 +52,9 @@ export interface ExerciseRendererProps {
  */
 const CHOICE_COMMIT_DELAY_MS = 300;
 
+/** Long enough to read "Correct" and the explanation before moving on. */
+export const AUTO_ADVANCE_DELAY_MS = 1200;
+
 /** Exercise types resolved by a single click rather than an explicit "Check answer". */
 const AUTO_SUBMIT_TYPES = new Set<Exercise['type']>(['singleChoice', 'errorSpotting']);
 
@@ -69,6 +74,7 @@ export function ExerciseRenderer({
   isLast,
   showHints,
   showUmlautHelper,
+  autoAdvance,
   onSubmitChoice,
   onSubmitText,
   onSubmitOrdering,
@@ -135,6 +141,26 @@ export function ExerciseRenderer({
       if (!resolvedRef.current) onSubmitErrorSpotting(index);
     }, CHOICE_COMMIT_DELAY_MS);
   };
+
+  /**
+   * "Move on automatically": once an answer is right, step to the next exercise
+   * after a beat long enough to read the feedback. Any key or click cancels it,
+   * so it never takes the session away from someone still reading.
+   */
+  useEffect(() => {
+    if (!autoAdvance || !resolved || isLast || feedback?.kind !== 'correct') return;
+
+    const timer = window.setTimeout(onNext, AUTO_ADVANCE_DELAY_MS);
+    const cancel = () => window.clearTimeout(timer);
+    window.addEventListener('pointerdown', cancel);
+    window.addEventListener('keydown', cancel);
+
+    return () => {
+      cancel();
+      window.removeEventListener('pointerdown', cancel);
+      window.removeEventListener('keydown', cancel);
+    };
+  }, [autoAdvance, resolved, isLast, feedback?.kind, onNext]);
 
   /** Number keys pick the matching option and check it right away. */
   useEffect(() => {

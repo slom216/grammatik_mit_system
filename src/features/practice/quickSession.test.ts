@@ -37,6 +37,22 @@ describe('buildQuickExerciseIds', () => {
     expect(first).not.toEqual(second);
   });
 
+  it('always includes the exercises that are due for review', () => {
+    const due = ['ch1-ex-58', 'ch1-ex-59', 'ch1-ex-60'];
+    const ids = buildQuickExerciseIds(chapter, QUICK_SESSION_SIZE, Math.random, due);
+
+    expect(ids).toHaveLength(QUICK_SESSION_SIZE);
+    for (const id of due) expect(ids).toContain(id);
+  });
+
+  it('ignores due exercises that belong to another chapter', () => {
+    const ids = buildQuickExerciseIds(chapter, QUICK_SESSION_SIZE, Math.random, [
+      'ch9-ex-01',
+    ]);
+    expect(ids).toHaveLength(QUICK_SESSION_SIZE);
+    expect(ids).not.toContain('ch9-ex-01');
+  });
+
   it('never asks for more exercises than the chapter has', () => {
     const small = makeChapter({ exercises: chapter.exercises.slice(0, 10) });
     expect(buildQuickExerciseIds(small)).toHaveLength(10);

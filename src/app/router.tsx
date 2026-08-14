@@ -1,36 +1,66 @@
-import { createBrowserRouter } from 'react-router-dom';
+import type { ComponentType } from 'react';
+import { createBrowserRouter, type RouteObject } from 'react-router-dom';
 import { AppShell } from '../components/common/AppShell';
-import { AboutPage } from '../pages/AboutPage';
-import { ActivityPage } from '../pages/ActivityPage';
-import { ChapterPage } from '../pages/ChapterPage';
-import { ChaptersPage } from '../pages/ChaptersPage';
-import { CumulativeReviewPage } from '../pages/CumulativeReviewPage';
 import { DashboardPage } from '../pages/DashboardPage';
-import { LearnPage } from '../pages/LearnPage';
 import { NotFoundPage } from '../pages/NotFoundPage';
-import { PracticePage } from '../pages/PracticePage';
-import { ProgressPage } from '../pages/ProgressPage';
-import { ResultsPage } from '../pages/ResultsPage';
-import { ReviewPage } from '../pages/ReviewPage';
-import { SettingsPage } from '../pages/SettingsPage';
+import { chapterRouteLoader } from '../features/chapters/useChapterParam';
+import { cumulativeRouteLoader } from '../features/practice/cumulativeRoute';
 
-export const routes = [
+/**
+ * Loads a page's chunk on first visit. React Router keeps the previous page
+ * mounted until the chunk and the route's loader have both settled, so no
+ * Suspense fallback is needed and the layout never flashes.
+ */
+function page(
+  load: () => Promise<Record<string, unknown>>,
+  name: string,
+): RouteObject['lazy'] {
+  return async () => ({ Component: (await load())[name] as ComponentType });
+}
+
+export const routes: RouteObject[] = [
   {
     path: '/',
     element: <AppShell />,
+    // Shown only on a cold deep link, while the first loader runs.
+    HydrateFallback: () => <p className="text-muted">Loading…</p>,
     children: [
+      // The dashboard is the most common first paint, so it stays in the
+      // entry chunk rather than costing an extra round trip.
       { index: true, element: <DashboardPage /> },
-      { path: 'chapters', element: <ChaptersPage /> },
-      { path: 'chapter/:chapterNumber', element: <ChapterPage /> },
-      { path: 'chapter/:chapterNumber/learn', element: <LearnPage /> },
-      { path: 'chapter/:chapterNumber/practice', element: <PracticePage /> },
-      { path: 'chapter/:chapterNumber/results', element: <ResultsPage /> },
-      { path: 'review', element: <ReviewPage /> },
-      { path: 'review/:from/:to', element: <CumulativeReviewPage /> },
-      { path: 'progress', element: <ProgressPage /> },
-      { path: 'activity', element: <ActivityPage /> },
-      { path: 'settings', element: <SettingsPage /> },
-      { path: 'about', element: <AboutPage /> },
+      { path: 'chapters', lazy: page(() => import('../pages/ChaptersPage'), 'ChaptersPage') },
+      {
+        path: 'chapter/:chapterNumber',
+        // `loader` is declared statically so the chapter downloads in parallel
+        // with the page chunk instead of waiting for it.
+        loader: chapterRouteLoader,
+        lazy: page(() => import('../pages/ChapterPage'), 'ChapterPage'),
+      },
+      {
+        path: 'chapter/:chapterNumber/learn',
+        loader: chapterRouteLoader,
+        lazy: page(() => import('../pages/LearnPage'), 'LearnPage'),
+      },
+      {
+        path: 'chapter/:chapterNumber/practice',
+        loader: chapterRouteLoader,
+        lazy: page(() => import('../pages/PracticePage'), 'PracticePage'),
+      },
+      {
+        path: 'chapter/:chapterNumber/results',
+        loader: chapterRouteLoader,
+        lazy: page(() => import('../pages/ResultsPage'), 'ResultsPage'),
+      },
+      { path: 'review', lazy: page(() => import('../pages/ReviewPage'), 'ReviewPage') },
+      {
+        path: 'review/:from/:to',
+        loader: cumulativeRouteLoader,
+        lazy: page(() => import('../pages/CumulativeReviewPage'), 'CumulativeReviewPage'),
+      },
+      { path: 'progress', lazy: page(() => import('../pages/ProgressPage'), 'ProgressPage') },
+      { path: 'activity', lazy: page(() => import('../pages/ActivityPage'), 'ActivityPage') },
+      { path: 'settings', lazy: page(() => import('../pages/SettingsPage'), 'SettingsPage') },
+      { path: 'about', lazy: page(() => import('../pages/AboutPage'), 'AboutPage') },
       { path: '*', element: <NotFoundPage /> },
     ],
   },

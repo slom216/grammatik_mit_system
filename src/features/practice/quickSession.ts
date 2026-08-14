@@ -6,23 +6,31 @@ import { shuffle, sortedExercises, type RandomSource } from '../chapters/chapter
 export const QUICK_SESSION_SIZE = 24;
 
 /**
- * Picks a random subset of a chapter's exercises for a short session. Chapters
- * hold 50-100 exercises, which is a long sit-down; a quick session samples a
- * different slice each time so repeated runs still cover the whole pool.
+ * Picks a subset of a chapter's exercises for a short session. Chapters hold
+ * 50-100 exercises, which is a long sit-down; a quick session takes exercises
+ * that are due for review first, then fills up at random, so repeated runs
+ * still cover the whole pool.
  */
 export function buildQuickExerciseIds(
   chapter: ChapterDefinition,
   size: number = QUICK_SESSION_SIZE,
   random: RandomSource = Math.random,
+  /** Exercises of this chapter that are due for review, which come first. */
+  dueIds: readonly string[] = [],
 ): string[] {
-  const picked = new Set(
-    shuffle(sortedExercises(chapter), random)
-      .slice(0, size)
-      .map((exercise) => exercise.id),
-  );
+  const chapterExercises = sortedExercises(chapter);
+  const known = new Set(chapterExercises.map((exercise) => exercise.id));
+  // Anything the learner got wrong earns its place before a random pick does.
+  const due = dueIds.filter((id) => known.has(id)).slice(0, size);
+
+  const picked = new Set(due);
+  for (const exercise of shuffle(chapterExercises, random)) {
+    if (picked.size >= size) break;
+    picked.add(exercise.id);
+  }
   // Keep the chapter's own order within the sample: exercises are authored from
   // recognition to production, and that progression is worth preserving.
-  return sortedExercises(chapter)
+  return chapterExercises
     .filter((exercise) => picked.has(exercise.id))
     .map((exercise) => exercise.id);
 }

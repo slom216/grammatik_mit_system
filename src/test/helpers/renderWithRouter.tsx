@@ -1,25 +1,44 @@
-import { render, type RenderResult } from '@testing-library/react';
+import { render, waitFor, type RenderResult } from '@testing-library/react';
 import type { ReactElement } from 'react';
-import { MemoryRouter, Route, Routes } from 'react-router-dom';
+import {
+  createMemoryRouter,
+  RouterProvider,
+  type LoaderFunction,
+} from 'react-router-dom';
 
 export interface RenderWithRouterOptions {
   /** Initial URL, e.g. `/chapter/0/practice`. */
   route?: string;
   /** Route pattern the element is mounted at, e.g. `/chapter/:chapterNumber/practice`. */
   path?: string;
+  /** Route loader, for pages that read their data with `useLoaderData`. */
+  loader?: LoaderFunction;
 }
 
-/** Renders a page component inside a memory router. */
-export function renderWithRouter(
+/**
+ * Renders a page component inside a memory data router and waits for its route
+ * to finish loading. A data router (rather than `<MemoryRouter>`) is required
+ * because chapter pages get their content from a route loader, and loading a
+ * chapter is asynchronous — hence the promise.
+ */
+export async function renderWithRouter(
   element: ReactElement,
-  { route = '/', path = '*' }: RenderWithRouterOptions = {},
-): RenderResult {
-  return render(
-    <MemoryRouter initialEntries={[route]}>
-      <Routes>
-        <Route path={path} element={element} />
-        {path !== '*' && <Route path="*" element={<div data-testid="other-route" />} />}
-      </Routes>
-    </MemoryRouter>,
+  { route = '/', path = '*', loader }: RenderWithRouterOptions = {},
+): Promise<RenderResult> {
+  const router = createMemoryRouter(
+    [
+      {
+        path,
+        element,
+        loader,
+        HydrateFallback: () => <div data-testid="route-loading" />,
+      },
+      ...(path !== '*' ? [{ path: '*', element: <div data-testid="other-route" /> }] : []),
+    ],
+    { initialEntries: [route] },
   );
+
+  const result = render(<RouterProvider router={router} />);
+  await waitFor(() => expect(router.state.initialized).toBe(true));
+  return result;
 }
