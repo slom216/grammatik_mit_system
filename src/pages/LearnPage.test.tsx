@@ -71,9 +71,12 @@ describe('LearnPage', () => {
     expect(remember).toBeInTheDocument();
     expect(
       screen.getByRole('link', {
-        name: new RegExp(`start practice \\(${chapter001.exercises.length} exercises\\)`, 'i'),
+        name: new RegExp(`full practice \\(${chapter001.exercises.length} exercises\\)`, 'i'),
       }),
     ).toHaveAttribute('href', '/chapter/1/practice');
+    expect(
+      screen.getByRole('link', { name: /quick practice \(24 exercises\)/i }),
+    ).toHaveAttribute('href', '/chapter/1/practice?mode=quick');
   });
 
   it('reports an unavailable chapter instead of crashing', () => {

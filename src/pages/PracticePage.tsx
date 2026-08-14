@@ -9,6 +9,7 @@ import {
   EXERCISE_TYPE_LABELS,
   chapterPath,
   findExercise,
+  formatChapterNumber,
 } from '../features/chapters/chapterUtils';
 import { useChapterParam } from '../features/chapters/useChapterParam';
 import {
@@ -17,6 +18,7 @@ import {
   selectIsLastExercise,
   usePracticeStore,
 } from '../features/practice/practiceStore';
+import { buildQuickExerciseIds, quickMasteryRule } from '../features/practice/quickSession';
 import { isDue } from '../features/practice/reviewScheduler';
 import { useProgressStore } from '../features/progress/progressStore';
 import { useSettingsStore } from '../features/settings/settingsStore';
@@ -33,6 +35,12 @@ export function PracticePage() {
   const [exitDialogOpen, setExitDialogOpen] = useState(false);
 
   const reviewMode = searchParams.get('mode') === 'review';
+  const quickMode = searchParams.get('mode') === 'quick';
+
+  const quickExerciseIds = useMemo(
+    () => (chapter && quickMode ? buildQuickExerciseIds(chapter) : []),
+    [chapter, quickMode],
+  );
 
   const dueExerciseIds = useMemo(() => {
     if (!chapter) return [];
@@ -51,17 +59,19 @@ export function PracticePage() {
       store.status === 'active' && store.chapterNumber === chapter.number;
     if (alreadyRunning) return;
 
-    if (!reviewMode && store.resumeSession(chapter)) return;
+    if (!reviewMode && !quickMode && store.resumeSession(chapter)) return;
 
     store.startSession(chapter, {
       shuffleOptions,
       ...(reviewMode
         ? { mode: 'review' as const, exerciseIds: dueExerciseIds }
-        : { mode: 'chapter' as const }),
+        : quickMode
+          ? { mode: 'quick' as const, exerciseIds: quickExerciseIds }
+          : { mode: 'chapter' as const }),
     });
     // dueExerciseIds is intentionally read once when the session starts.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [chapter, reviewMode, shuffleOptions]);
+  }, [chapter, reviewMode, quickMode, quickExerciseIds, shuffleOptions]);
 
   if (!chapter) {
     return (
@@ -104,7 +114,12 @@ export function PracticePage() {
       : null;
 
   const handleFinish = () => {
-    practice.finish(chapter);
+    // A quick session is scored against thresholds scaled to its own size.
+    practice.finish(
+      quickMode
+        ? { ...chapter, mastery: quickMasteryRule(chapter, practice.exerciseIds) }
+        : chapter,
+    );
     navigate(chapterPath(chapter.number, 'results'));
   };
 
@@ -115,11 +130,17 @@ export function PracticePage() {
   };
 
   return (
-    <div className="stack">
+    <div className="stack practice">
       <header className="stack stack--tight">
+        <span className="eyebrow">
+          Chapter {formatChapterNumber(chapter.number)}
+          {reviewMode && ' · review'}
+          {quickMode && ' · quick session'}
+        </span>
         <h1>
           Practice · {chapter.title}
           {reviewMode && ' (review)'}
+          {quickMode && ' (quick)'}
         </h1>
         <ProgressBar
           label={`Exercise ${position} of ${total}`}
@@ -127,7 +148,7 @@ export function PracticePage() {
           max={total}
           valueText={`${answered} of ${total} answered`}
         />
-        <p className="text-sm text-muted" data-testid="exercise-counter">
+        <p className="practice__meta" data-testid="exercise-counter">
           Exercise {position} of {total} · {EXERCISE_TYPE_LABELS[exercise.type]}
         </p>
       </header>

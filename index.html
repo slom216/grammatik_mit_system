@@ -8,6 +8,21 @@
       content="Grammatik mit System — a browser-based German grammar course for levels A1 to B1."
     />
     <title>Grammatik mit System</title>
+    <script>
+      // Applies the saved theme before the first paint, so an explicit choice
+      // never flashes the other theme. The key and shape must stay in step with
+      // SETTINGS_STORAGE_KEY and persistedSettingsV1Schema in src/.
+      try {
+        var theme = JSON.parse(
+          localStorage.getItem('grammatik-mit-system:settings') || '{}',
+        ).theme;
+        if (theme === 'light' || theme === 'dark') {
+          document.documentElement.dataset.theme = theme;
+        }
+      } catch (error) {
+        // Unreadable storage: fall back to the system theme.
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

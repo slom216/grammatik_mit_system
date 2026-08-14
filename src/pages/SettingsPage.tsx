@@ -8,12 +8,19 @@ import {
   useSettingsStore,
   type SettingsToggle,
 } from '../features/settings/settingsStore';
+import type { Theme } from '../schemas/progressSchema';
 
 interface ToggleDefinition {
   key: SettingsToggle;
   label: string;
   description: string;
 }
+
+const THEME_OPTIONS: { value: Theme; label: string }[] = [
+  { value: 'system', label: 'System' },
+  { value: 'light', label: 'Light' },
+  { value: 'dark', label: 'Dark' },
+];
 
 const TOGGLES: ToggleDefinition[] = [
   {
@@ -66,6 +73,36 @@ export function SettingsPage() {
           Settings are stored in this browser next to your progress.
         </p>
       </header>
+
+      <Card title="Appearance" titleLevel={2}>
+        <div className="setting-row">
+          <div id="setting-theme-label">
+            <strong>Theme</strong>
+            <br />
+            <span className="text-sm text-muted">
+              Follow your system setting, or keep this browser light or dark.
+            </span>
+          </div>
+          <span
+            className="segmented"
+            role="radiogroup"
+            aria-labelledby="setting-theme-label"
+          >
+            {THEME_OPTIONS.map((option) => (
+              <label className="segmented__option" key={option.value}>
+                <input
+                  type="radio"
+                  name="theme"
+                  value={option.value}
+                  checked={settings.theme === option.value}
+                  onChange={() => settings.setTheme(option.value)}
+                />
+                <span>{option.label}</span>
+              </label>
+            ))}
+          </span>
+        </div>
+      </Card>
 
       <Card title="Practice" titleLevel={2}>
         <div>

@@ -136,6 +136,25 @@ export function ExerciseRenderer({
     }, CHOICE_COMMIT_DELAY_MS);
   };
 
+  /** Number keys pick the matching option and check it right away. */
+  useEffect(() => {
+    if (exercise.type !== 'singleChoice' || resolved) return;
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.metaKey || event.ctrlKey || event.altKey) return;
+      const target = event.target as HTMLElement | null;
+      if (target?.closest('input:not([type="radio"]), textarea, select')) return;
+      const index = Number(event.key) - 1;
+      const optionId = optionOrder[index];
+      if (!Number.isInteger(index) || index < 0 || !optionId) return;
+      event.preventDefault();
+      window.clearTimeout(commitTimeoutRef.current);
+      setSelectedOptionId(optionId);
+      onSubmitChoice(optionId);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [exercise.type, resolved, optionOrder, onSubmitChoice]);
+
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (resolved || canRetry || !canSubmit || isAutoSubmit) return;

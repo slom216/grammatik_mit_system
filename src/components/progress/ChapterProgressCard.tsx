@@ -8,28 +8,29 @@ export interface ChapterProgressCardProps {
 }
 
 export function ChapterProgressCard({ chapter }: ChapterProgressCardProps) {
-  const heading = (
+  const title = (
     <>
-      <span className="chapter-card__number">
-        Chapter {formatChapterNumber(chapter.number)}
-      </span>
-      <br />
+      <span className="visually-hidden">Chapter {formatChapterNumber(chapter.number)}: </span>
       {chapter.title}
     </>
   );
 
   return (
-    <article className="card">
+    <article className={`card chapter-card${chapter.available ? ' card--interactive' : ''}`}>
       <div className="chapter-card__header">
-        <h3 className="card__title">
-          {chapter.available ? (
-            <Link to={chapterPath(chapter.number)}>{heading}</Link>
-          ) : (
-            heading
-          )}
-        </h3>
+        <span className="chapter-card__number" aria-hidden="true">
+          {formatChapterNumber(chapter.number)}
+        </span>
         <span className="badge">{chapter.level}</span>
       </div>
+
+      <h3 className="card__title">
+        {chapter.available ? (
+          <Link to={chapterPath(chapter.number)}>{title}</Link>
+        ) : (
+          title
+        )}
+      </h3>
 
       <p className="chapter-card__meta">
         <MasteryBadge

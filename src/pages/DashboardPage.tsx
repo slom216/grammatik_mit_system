@@ -35,68 +35,86 @@ export function DashboardPage() {
 
   return (
     <div className="stack">
-      <header>
+      <header className="page-header">
+        <span className="eyebrow">A1–B1 grammar course</span>
         <h1>Dashboard</h1>
-        <p className="text-muted prose">
-          Work through the course chapter by chapter. Every chapter has an explanation and
-          24 exercises; your progress stays in this browser.
+        <p className="lead">
+          {completion.availableChapters} chapters, each with a lesson and its own
+          exercise pool. Everything you answer stays in this browser.
         </p>
       </header>
 
-      <Card title="Course completion" titleLevel={2}>
-        <ProgressBar
-          label="Chapters completed"
-          value={completion.completedChapters}
-          max={completion.totalChapters}
-          valueText={`${completion.completedChapters} / ${completion.totalChapters} (${completion.percentComplete}%)`}
-        />
-        <p className="text-sm text-muted">
-          {completion.masteredChapters} mastered · {completion.availableChapters} chapters
-          available in this build.
-        </p>
-        <StreakDisplay histories={histories} />
-      </Card>
-
-      <Card title="Continue learning" titleLevel={2}>
-        {continueChapter ? (
-          <div className="stack stack--tight">
+      <div className="split">
+        <Card className="card--elevated" title="Continue learning" titleLevel={2}>
+          {continueChapter ? (
+            <div className="stack stack--tight">
+              <span className="display-number">
+                {formatChapterNumber(continueChapter.number)}
+              </span>
+              <h3>{continueChapter.title}</h3>
+              <p className="row">
+                <MasteryBadge
+                  status={continueChapter.status}
+                  bestScorePercent={continueChapter.bestScorePercent}
+                />
+                <span className="badge">{continueChapter.level}</span>
+              </p>
+              <p className="row">
+                <Link
+                  className="button button--primary"
+                  to={chapterPath(continueChapter.number)}
+                >
+                  Open chapter
+                </Link>
+                <Link
+                  className="button button--secondary"
+                  to={chapterPath(continueChapter.number, 'practice')}
+                >
+                  Start practice
+                </Link>
+              </p>
+            </div>
+          ) : (
             <p>
-              <strong>
-                Chapter {formatChapterNumber(continueChapter.number)} ·{' '}
-                {continueChapter.title}
-              </strong>
+              No chapter content is available yet.{' '}
+              <Link to="/chapters">See the catalogue</Link> for the full course outline.
             </p>
-            <p className="row">
-              <MasteryBadge
-                status={continueChapter.status}
-                bestScorePercent={continueChapter.bestScorePercent}
-              />
-              <span className="badge">{continueChapter.level}</span>
-            </p>
-            <p className="row">
-              <Link
-                className="button button--primary"
-                to={chapterPath(continueChapter.number)}
-              >
-                Open chapter
-              </Link>
-              <Link
-                className="button button--secondary"
-                to={chapterPath(continueChapter.number, 'practice')}
-              >
-                Start practice
-              </Link>
-            </p>
-          </div>
-        ) : (
-          <p>
-            No chapter content is available yet.{' '}
-            <Link to="/chapters">See the catalogue</Link> for the full course outline.
-          </p>
-        )}
-      </Card>
+          )}
+        </Card>
 
-      <Card title="Due for review" titleLevel={2}>
+        <div className="stack">
+          <dl className="stat-grid">
+            <div className="stat">
+              <dt className="stat__label">Chapters completed</dt>
+              <dd className="stat__value">{completion.completedChapters}</dd>
+            </div>
+            <div className="stat">
+              <dt className="stat__label">Mastered</dt>
+              <dd className="stat__value">{completion.masteredChapters}</dd>
+            </div>
+            <div className="stat">
+              <dt className="stat__label">Of the course</dt>
+              <dd className="stat__value">{completion.percentComplete}%</dd>
+            </div>
+            <div className="stat">
+              <dt className="stat__label">Due for review</dt>
+              <dd className="stat__value">{due.length}</dd>
+            </div>
+          </dl>
+          <StreakDisplay histories={histories} />
+          <ProgressBar
+            label="Chapters completed"
+            value={completion.completedChapters}
+            max={completion.totalChapters}
+            valueText={`${completion.completedChapters} / ${completion.totalChapters} (${completion.percentComplete}%)`}
+          />
+        </div>
+      </div>
+
+      <section className="panel" aria-labelledby="dashboard-review-heading">
+        <h2 className="panel__title" id="dashboard-review-heading">
+          Due for review
+        </h2>
         {due.length === 0 ? (
           <p className="text-muted">
             Nothing is due. Exercises you get wrong appear here.
@@ -114,9 +132,12 @@ export function DashboardPage() {
             </p>
           </div>
         )}
-      </Card>
+      </section>
 
-      <Card title="Recently completed" titleLevel={2}>
+      <section className="panel" aria-labelledby="dashboard-recent-heading">
+        <h2 className="panel__title" id="dashboard-recent-heading">
+          Recently completed
+        </h2>
         {recentlyCompleted.length === 0 ? (
           <p className="text-muted">No chapter has been completed yet.</p>
         ) : (
@@ -139,9 +160,12 @@ export function DashboardPage() {
             })}
           </ul>
         )}
-      </Card>
+      </section>
 
-      <Card title="Level progress" titleLevel={2}>
+      <section className="panel" aria-labelledby="dashboard-levels-heading">
+        <h2 className="panel__title" id="dashboard-levels-heading">
+          Level progress
+        </h2>
         <div className="stack">
           {levels.map((level) => (
             <ProgressBar
@@ -153,7 +177,7 @@ export function DashboardPage() {
             />
           ))}
         </div>
-      </Card>
+      </section>
     </div>
   );
 }

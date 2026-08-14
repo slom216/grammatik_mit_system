@@ -13,6 +13,21 @@ describe('SettingsPage', () => {
     useSettingsStore.getState().resetSettings();
   });
 
+  it('changes the theme and stores it', async () => {
+    const user = userEvent.setup();
+    renderWithRouter(<SettingsPage />, { route: '/settings' });
+
+    const group = screen.getByRole('radiogroup', { name: /theme/i });
+    expect(within(group).getByRole('radio', { name: 'System' })).toBeChecked();
+
+    await user.click(within(group).getByRole('radio', { name: 'Dark' }));
+
+    expect(useSettingsStore.getState().theme).toBe('dark');
+    expect(window.localStorage.getItem('grammatik-mit-system:settings')).toContain(
+      '"theme":"dark"',
+    );
+  });
+
   it('toggles a setting and stores it', async () => {
     const user = userEvent.setup();
     renderWithRouter(<SettingsPage />, { route: '/settings' });

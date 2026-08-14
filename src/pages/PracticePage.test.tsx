@@ -10,9 +10,9 @@ import { chapter001 } from '../content/chapters/chapter-001-personal-pronouns';
 
 const CHAPTER_1_EXERCISE_COUNT = chapter001.exercises.length;
 
-function renderPractice() {
+function renderPractice(search = '') {
   return renderWithRouter(<PracticePage />, {
-    route: '/chapter/1/practice',
+    route: `/chapter/1/practice${search}`,
     path: '/chapter/:chapterNumber/practice',
   });
 }
@@ -53,6 +53,15 @@ describe('PracticePage', () => {
     );
     expect(screen.getByText('Wir sind heute im Park.')).toBeInTheDocument();
     expect(screen.getByRole('progressbar')).toHaveAttribute('aria-valuenow', '0');
+  });
+
+  it('runs a 24-exercise sample in quick mode', () => {
+    renderPractice('?mode=quick');
+
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(/\(quick\)/i);
+    expect(screen.getByTestId('exercise-counter')).toHaveTextContent('Exercise 1 of 24');
+    expect(usePracticeStore.getState().mode).toBe('quick');
+    expect(usePracticeStore.getState().exerciseIds).toHaveLength(24);
   });
 
   it('checks a single-choice answer automatically, with no submit button', async () => {

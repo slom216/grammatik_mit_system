@@ -8,6 +8,7 @@ import { RememberBox } from '../components/grammar/RememberBox';
 import { getRegistryEntry } from '../content/registry';
 import { chapterPath, formatChapterNumber } from '../features/chapters/chapterUtils';
 import { useChapterParam } from '../features/chapters/useChapterParam';
+import { QUICK_SESSION_SIZE } from '../features/practice/quickSession';
 
 /**
  * Lesson screen. The order of the blocks follows the specification:
@@ -26,15 +27,15 @@ export function LearnPage() {
   const { explanation } = chapter;
 
   return (
-    <article className="stack">
+    <article className="stack lesson">
       <header className="stack stack--tight">
-        <p className="chapter-card__number">
+        <p className="eyebrow">
           <Link to={chapterPath(chapter.number)}>
             Chapter {formatChapterNumber(chapter.number)}
           </Link>
         </p>
         <h1>{chapter.title}</h1>
-        <p className="text-muted">{chapter.objective}</p>
+        <p className="lead">{chapter.objective}</p>
         {chapter.prerequisites.length > 0 && (
           <p className="text-sm text-muted">
             Prerequisites:{' '}
@@ -104,9 +105,16 @@ export function LearnPage() {
       <p className="row">
         <Link
           className="button button--primary"
+          to={`${chapterPath(chapter.number, 'practice')}?mode=quick`}
+        >
+          Quick practice ({Math.min(QUICK_SESSION_SIZE, chapter.exercises.length)}{' '}
+          exercises)
+        </Link>
+        <Link
+          className="button button--secondary"
           to={chapterPath(chapter.number, 'practice')}
         >
-          Start practice ({chapter.exercises.length} exercises)
+          Full practice ({chapter.exercises.length} exercises)
         </Link>
         <Link className="button button--ghost" to={chapterPath(chapter.number)}>
           Back to chapter overview

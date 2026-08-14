@@ -12,6 +12,7 @@ import {
   formatChapterNumber,
 } from '../features/chapters/chapterUtils';
 import { useChapterParam } from '../features/chapters/useChapterParam';
+import { QUICK_SESSION_SIZE } from '../features/practice/quickSession';
 import {
   selectChapterProgress,
   useProgressStore,
@@ -40,7 +41,7 @@ export function ChapterPage() {
   return (
     <div className="stack">
       <header className="stack stack--tight">
-        <p className="chapter-card__number">
+        <p className="eyebrow">
           {section.title} · Chapter {formatChapterNumber(chapter.number)}
         </p>
         <h1>
@@ -100,9 +101,15 @@ export function ChapterPage() {
         </Link>
         <Link
           className="button button--secondary"
+          to={`${chapterPath(chapter.number, 'practice')}?mode=quick`}
+        >
+          Quick practice ({Math.min(QUICK_SESSION_SIZE, counts.total)})
+        </Link>
+        <Link
+          className="button button--secondary"
           to={chapterPath(chapter.number, 'practice')}
         >
-          Start practice
+          Full practice ({counts.total})
         </Link>
         <Button variant="ghost" onClick={() => toggleBookmark(chapter.number)}>
           {chapterProgress.bookmarked ? 'Remove bookmark' : 'Bookmark chapter'}

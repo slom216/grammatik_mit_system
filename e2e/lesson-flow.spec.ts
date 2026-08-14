@@ -93,7 +93,11 @@ async function answerCurrentExercise(page: Page, index: number) {
           .locator('.drag-slots__word:not(.drag-slots__word--used)', { hasText: exactWord })
           .first()
           .click();
-        await page.locator('.drag-slots__slot').nth(slotIndex).click();
+        // Selecting a word fills the slot straight away when only one is left,
+        // in which case clicking the slot would clear it again.
+        const slotButton = page.locator('.drag-slots__slot').nth(slotIndex);
+        const label = await slotButton.getAttribute('aria-label');
+        if (label?.startsWith('Empty slot')) await slotButton.click();
       }
       await page.getByRole('button', { name: 'Check answer' }).click();
       break;
@@ -146,7 +150,9 @@ test.describe('lesson flow', () => {
     await expect(page.getByRole('table', { name: /Subject pronouns/i })).toBeVisible();
     await expect(page.getByRole('complementary', { name: 'Remember' })).toBeVisible();
 
-    await page.getByRole('link', { name: /Start practice/ }).click();
+    // The full pool, not the 24-exercise quick session: this walk answers every
+    // exercise in the chapter.
+    await page.getByRole('link', { name: /Full practice/ }).click();
 
     for (let index = 0; index < exercises.length; index += 1) {
       await answerCurrentExercise(page, index);

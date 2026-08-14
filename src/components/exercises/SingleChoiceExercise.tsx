@@ -31,7 +31,7 @@ export function SingleChoiceExercise({
         {exercise.prompt}
       </legend>
       <ul className="option-list">
-        {options.map((option) => {
+        {options.map((option, index) => {
           const isSelected = selectedOptionId === option.id;
           const isCorrect = option.id === exercise.correctOptionId;
           const classes = ['option'];
@@ -50,6 +50,9 @@ export function SingleChoiceExercise({
                   disabled={disabled}
                   onChange={() => onSelect(option.id)}
                 />
+                <span className="option__number" aria-hidden="true">
+                  {index + 1}
+                </span>
                 <span lang="de">{option.text}</span>
                 {showAnswer && (isCorrect || isSelected) && (
                   <span className="option__marker">

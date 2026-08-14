@@ -155,6 +155,7 @@ describe('createJsonStore', () => {
       reducedMotion: false,
       autoAdvance: false,
       defaultAnswerMode: 'normalized',
+      theme: 'system',
     });
     expect(store.read()?.shuffleOptions).toBe(false);
 

@@ -116,7 +116,7 @@ export interface ExerciseAttemptRecord {
   submittedAnswers: string[];
 }
 
-export type PracticeMode = 'chapter' | 'review' | 'cumulative';
+export type PracticeMode = 'chapter' | 'review' | 'cumulative' | 'quick';
 
 export interface PersistedSessionV1 {
   schemaVersion: typeof SESSION_SCHEMA_VERSION;
@@ -148,7 +148,7 @@ export const exerciseAttemptRecordSchema = z.object({
 export const persistedSessionV1Schema = z.object({
   schemaVersion: z.literal(SESSION_SCHEMA_VERSION),
   chapterNumber: z.number().int().min(0),
-  mode: z.enum(['chapter', 'review', 'cumulative']),
+  mode: z.enum(['chapter', 'review', 'cumulative', 'quick']),
   exerciseIds: z.array(z.string().min(1)),
   optionOrder: z.record(z.string(), z.array(z.string().min(1))),
   segmentOrder: z.record(z.string(), z.array(z.string().min(1))),
@@ -168,6 +168,10 @@ export type SessionMatchesInterface =
 
 export const SETTINGS_SCHEMA_VERSION = 1;
 
+/** `system` follows the operating system's light/dark preference. */
+export const THEMES = ['system', 'light', 'dark'] as const;
+export type Theme = (typeof THEMES)[number];
+
 export interface PersistedSettingsV1 {
   schemaVersion: typeof SETTINGS_SCHEMA_VERSION;
   shuffleOptions: boolean;
@@ -177,6 +181,7 @@ export interface PersistedSettingsV1 {
   autoAdvance: boolean;
   /** Default answer mode used by authoring tools and tests. */
   defaultAnswerMode: (typeof ANSWER_MODES)[number];
+  theme: Theme;
 }
 
 export const persistedSettingsV1Schema = z.object({
@@ -187,6 +192,10 @@ export const persistedSettingsV1Schema = z.object({
   reducedMotion: z.boolean(),
   autoAdvance: z.boolean(),
   defaultAnswerMode: z.enum(ANSWER_MODES),
+  // `.catch` rather than `.default`: settings written before the theme existed
+  // would otherwise fail the whole parse, and a failed parse resets every
+  // other setting back to its default.
+  theme: z.enum(THEMES).catch('system'),
 });
 
 /** Compile-time proof that the Zod schemas and the interfaces stay in sync. */

@@ -3,6 +3,7 @@ import {
   SETTINGS_SCHEMA_VERSION,
   persistedSettingsV1Schema,
   type PersistedSettingsV1,
+  type Theme,
 } from '../../schemas/progressSchema';
 import { createJsonStore } from '../progress/progressPersistence';
 
@@ -16,13 +17,14 @@ export const defaultSettings: PersistedSettingsV1 = {
   reducedMotion: false,
   autoAdvance: false,
   defaultAnswerMode: 'normalized',
+  theme: 'system',
 };
 
 const store = createJsonStore(SETTINGS_STORAGE_KEY, persistedSettingsV1Schema);
 
 export type SettingsToggle = Exclude<
   keyof PersistedSettingsV1,
-  'schemaVersion' | 'defaultAnswerMode'
+  'schemaVersion' | 'defaultAnswerMode' | 'theme'
 >;
 
 export interface SettingsState extends PersistedSettingsV1 {
@@ -30,6 +32,7 @@ export interface SettingsState extends PersistedSettingsV1 {
   hydrate: () => void;
   setSetting: <Key extends SettingsToggle>(key: Key, value: boolean) => void;
   toggleSetting: (key: SettingsToggle) => void;
+  setTheme: (theme: Theme) => void;
   resetSettings: () => void;
 }
 
@@ -45,6 +48,7 @@ export const useSettingsStore = create<SettingsState>()((set, get) => {
       reducedMotion,
       autoAdvance,
       defaultAnswerMode: get().defaultAnswerMode,
+      theme: get().theme,
     });
   };
 
@@ -64,6 +68,11 @@ export const useSettingsStore = create<SettingsState>()((set, get) => {
 
     toggleSetting: (key) => {
       set({ [key]: !get()[key] } as Pick<SettingsState, typeof key>);
+      persist();
+    },
+
+    setTheme: (theme) => {
+      set({ theme });
       persist();
     },
 
