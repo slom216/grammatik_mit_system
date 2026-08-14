@@ -683,7 +683,8 @@ export const chapter010: ChapterDefinition = {
         { id: 'd', text: 'wann' },
       ],
       correctOptionId: 'a',
-      explanation: 'liegen describes a fixed location, not a movement, so the question word is wo.',
+      explanation:
+        'liegen describes a fixed location, not a movement, so the question word is wo.',
     },
     {
       id: 'ch10-ex-28',
@@ -702,7 +703,8 @@ export const chapter010: ChapterDefinition = {
         { id: 'd', text: 'wann' },
       ],
       correctOptionId: 'a',
-      explanation: 'The answer gives the goal of the movement (zum Park), so the question word is wohin.',
+      explanation:
+        'The answer gives the goal of the movement (zum Park), so the question word is wohin.',
     },
     {
       id: 'ch10-ex-29',
@@ -721,7 +723,8 @@ export const chapter010: ChapterDefinition = {
         { id: 'd', text: 'wann' },
       ],
       correctOptionId: 'a',
-      explanation: 'The answer gives an origin (aus Polen), so the question word is woher.',
+      explanation:
+        'The answer gives an origin (aus Polen), so the question word is woher.',
     },
     {
       id: 'ch10-ex-30',
@@ -739,7 +742,8 @@ export const chapter010: ChapterDefinition = {
         { id: 'd', text: 'wo' },
       ],
       correctOptionId: 'a',
-      explanation: 'The answer gives a point in time (um sechs Uhr), so the question word is wann.',
+      explanation:
+        'The answer gives a point in time (um sechs Uhr), so the question word is wann.',
     },
     {
       id: 'ch10-ex-31',
@@ -757,7 +761,8 @@ export const chapter010: ChapterDefinition = {
         { id: 'd', text: 'was' },
       ],
       correctOptionId: 'a',
-      explanation: 'The answer gives a reason introduced with weil, so the question word is warum.',
+      explanation:
+        'The answer gives a reason introduced with weil, so the question word is warum.',
     },
     {
       id: 'ch10-ex-32',
@@ -852,7 +857,8 @@ export const chapter010: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'question word',
       maxLength: 10,
-      explanation: 'The answer gives the origin of the idea, so the question word is woher.',
+      explanation:
+        'The answer gives the origin of the idea, so the question word is woher.',
     },
     {
       id: 'ch10-ex-38',
@@ -956,7 +962,11 @@ export const chapter010: ChapterDefinition = {
       prompt: 'Questions and their matching answers.',
       pairs: [
         { id: 'ch10-m43-wer', left: 'Wer kommt heute vorbei?', right: 'Mein Freund.' },
-        { id: 'ch10-m43-was', left: 'Was isst du zum Frühstück?', right: 'Ein Brötchen.' },
+        {
+          id: 'ch10-m43-was',
+          left: 'Was isst du zum Frühstück?',
+          right: 'Ein Brötchen.',
+        },
         { id: 'ch10-m43-wo', left: 'Wo bist du gerade?', right: 'Zu Hause.' },
         { id: 'ch10-m43-wohin', left: 'Wohin gehst du gleich?', right: 'Ins Büro.' },
         {

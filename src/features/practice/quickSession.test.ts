@@ -1,5 +1,9 @@
 import { describe, expect, it } from 'vitest';
-import { buildQuickExerciseIds, QUICK_SESSION_SIZE, quickMasteryRule } from './quickSession';
+import {
+  buildQuickExerciseIds,
+  QUICK_SESSION_SIZE,
+  quickMasteryRule,
+} from './quickSession';
 import {
   makeChapter,
   makeSingleChoice,

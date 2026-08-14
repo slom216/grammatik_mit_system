@@ -1,11 +1,12 @@
 import type { z } from 'zod';
 import {
   PROGRESS_SCHEMA_VERSION,
-  persistedProgressV1Schema,
+  persistedProgressV2Schema,
   type ChapterProgress,
   type ExerciseHistory,
-  type PersistedProgressV1,
+  type PersistedProgressV2,
 } from '../../schemas/progressSchema';
+import { toDayKey } from './dayKey';
 
 export const PROGRESS_STORAGE_KEY = 'grammatik-mit-system:progress';
 
@@ -28,11 +29,12 @@ export function getDefaultStorage(): StorageLike | null {
   }
 }
 
-export function createEmptyProgress(): PersistedProgressV1 {
+export function createEmptyProgress(): PersistedProgressV2 {
   return {
     schemaVersion: PROGRESS_SCHEMA_VERSION,
     chapters: {},
     exerciseHistory: {},
+    answersByDay: {},
   };
 }
 
@@ -40,9 +42,50 @@ export function createEmptyProgress(): PersistedProgressV1 {
  * Migrations from older persisted formats. Each entry upgrades from its key
  * version to the next one. Add a migration whenever the persisted shape changes.
  */
-export const progressMigrations: Record<number, (state: unknown) => unknown> = {};
+export const progressMigrations: Record<number, (state: unknown) => unknown> = {
+  /**
+   * v1 → v2: adds `answersByDay` and `ExerciseHistory.grammarFocus`.
+   *
+   * v1 kept no day log, so the best available seed is each exercise's
+   * `lastAnsweredAt`. That undercounts — a day whose exercises were all answered
+   * again later has vanished from the record — but it never invents a day the
+   * learner did not practise, so an existing streak survives the upgrade rather
+   * than resetting to zero. `grammarFocus` is left to the schema's default and
+   * fills in as exercises are answered again.
+   */
+  1: (state) => {
+    const previous = state as {
+      exerciseHistory?: Record<
+        string,
+        { lastAnsweredAt?: string; timesIncorrect?: number; lastOutcome?: string }
+      >;
+    };
+    const answersByDay: Record<string, number> = {};
+    const exerciseHistory: Record<string, unknown> = {};
 
-export function migrateProgress(raw: unknown): PersistedProgressV1 | null {
+    for (const [id, history] of Object.entries(previous.exerciseHistory ?? {})) {
+      const answeredAt = history.lastAnsweredAt;
+      if (answeredAt !== undefined) {
+        const day = toDayKey(new Date(answeredAt));
+        answersByDay[day] = (answersByDay[day] ?? 0) + 1;
+      }
+      // v1 had no such flag; recover it from what it did record. A history that
+      // was only ever corrected on a second attempt is indistinguishable unless
+      // that was the last outcome, so a few clean-looking entries may land on
+      // the slow ladder — which errs towards reviewing less, not more.
+      exerciseHistory[id] = {
+        ...history,
+        hasBeenWrong:
+          (history.timesIncorrect ?? 0) > 0 ||
+          history.lastOutcome === 'correctSecondAttempt',
+      };
+    }
+
+    return { ...previous, schemaVersion: 2, answersByDay, exerciseHistory };
+  },
+};
+
+export function migrateProgress(raw: unknown): PersistedProgressV2 | null {
   if (raw === null || typeof raw !== 'object') return null;
 
   let candidate: unknown = raw;
@@ -55,15 +98,15 @@ export function migrateProgress(raw: unknown): PersistedProgressV1 | null {
     version = (candidate as { schemaVersion?: unknown }).schemaVersion;
   }
 
-  const parsed = persistedProgressV1Schema.safeParse(candidate);
+  const parsed = persistedProgressV2Schema.safeParse(candidate);
   if (!parsed.success) return null;
   return normalizeProgress(parsed.data);
 }
 
 /** Zod parses record keys as strings; the domain model uses chapter numbers. */
 function normalizeProgress(
-  data: z.infer<typeof persistedProgressV1Schema>,
-): PersistedProgressV1 {
+  data: z.infer<typeof persistedProgressV2Schema>,
+): PersistedProgressV2 {
   const chapters: Record<number, ChapterProgress> = {};
   for (const progress of Object.values(data.chapters)) {
     chapters[progress.chapterNumber] = progress;
@@ -72,10 +115,11 @@ function normalizeProgress(
   for (const history of Object.values(data.exerciseHistory)) {
     exerciseHistory[history.exerciseId] = history;
   }
-  const migrated: PersistedProgressV1 = {
+  const migrated: PersistedProgressV2 = {
     schemaVersion: PROGRESS_SCHEMA_VERSION,
     chapters,
     exerciseHistory,
+    answersByDay: data.answersByDay,
   };
   if (data.lastOpenedChapter !== undefined) {
     migrated.lastOpenedChapter = data.lastOpenedChapter;
@@ -84,7 +128,7 @@ function normalizeProgress(
 }
 
 export function loadProgress(storage: StorageLike | null = getDefaultStorage()): {
-  state: PersistedProgressV1;
+  state: PersistedProgressV2;
   recovered: boolean;
 } {
   if (!storage) return { state: createEmptyProgress(), recovered: false };
@@ -104,7 +148,7 @@ export function loadProgress(storage: StorageLike | null = getDefaultStorage()):
 }
 
 export function saveProgress(
-  state: PersistedProgressV1,
+  state: PersistedProgressV2,
   storage: StorageLike | null = getDefaultStorage(),
 ): boolean {
   if (!storage) return false;

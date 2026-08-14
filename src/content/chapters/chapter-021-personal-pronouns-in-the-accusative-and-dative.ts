@@ -52,7 +52,7 @@ export const chapter021: ChapterDefinition = {
         paragraphs: [
           'The hardest part of this chapter is not memorising the forms but knowing which case a given verb needs, because German case does not always match English intuition. Verbs such as sehen (to see), hören (to hear), kennen (to know), lieben (to love), brauchen (to need), fragen (to ask), and besuchen (to visit) all take the accusative: Ich brauche dich. (I need you.)',
           'Other very common verbs take the dative even though the English translation looks exactly like a direct object: helfen (to help), danken (to thank), gefallen (to please/like), gehören (to belong to), antworten (to answer), and glauben (to believe) all take the dative: Ich helfe dir. (I help you.) — even though "you" looks like a direct object in English, dir is dative in German because helfen is a dative verb.',
-          'There is no shortcut other than learning which group a verb belongs to. When in doubt, learn the case together with the verb, as if it were part of the verb\'s spelling.',
+          "There is no shortcut other than learning which group a verb belongs to. When in doubt, learn the case together with the verb, as if it were part of the verb's spelling.",
         ],
       },
       {
@@ -132,94 +132,110 @@ export const chapter021: ChapterDefinition = {
         german: 'Er sieht mich nicht.',
         english: 'He does not see me.',
         highlight: ['mich'],
-        explanation: 'mich is the accusative form of ich, needed because sehen takes a direct object.',
+        explanation:
+          'mich is the accusative form of ich, needed because sehen takes a direct object.',
       },
       {
         german: 'Wir besuchen sie am Wochenende.',
         english: 'We are visiting her at the weekend.',
         highlight: ['sie'],
-        explanation: 'sie (feminine singular) is accusative here because besuchen takes a direct object; the same form sie is also used for the plural "them".',
+        explanation:
+          'sie (feminine singular) is accusative here because besuchen takes a direct object; the same form sie is also used for the plural "them".',
       },
       {
         german: 'Kennst du ihn schon?',
         english: 'Do you already know him?',
         highlight: ['ihn'],
-        explanation: 'ihn is the accusative form of er, used because kennen is an accusative verb.',
+        explanation:
+          'ihn is the accusative form of er, used because kennen is an accusative verb.',
       },
       {
         german: 'Ich helfe dir gern.',
         english: 'I am happy to help you.',
         highlight: ['dir'],
-        explanation: 'dir is the dative form of du, required because helfen is a dative verb, even though the English sentence looks like a direct object.',
+        explanation:
+          'dir is the dative form of du, required because helfen is a dative verb, even though the English sentence looks like a direct object.',
       },
       {
         german: 'Er dankt mir für das Geschenk.',
         english: 'He thanks me for the present.',
         highlight: ['mir'],
-        explanation: 'mir is the dative form of ich, needed because danken takes the dative.',
+        explanation:
+          'mir is the dative form of ich, needed because danken takes the dative.',
       },
       {
         german: 'Das Buch gehört ihr.',
         english: 'The book belongs to her.',
         highlight: ['ihr'],
-        explanation: 'ihr is the dative form of sie (feminine), used because gehören is a dative verb.',
+        explanation:
+          'ihr is the dative form of sie (feminine), used because gehören is a dative verb.',
       },
       {
         german: 'Kannst du uns morgen helfen?',
         english: 'Can you help us tomorrow?',
         highlight: ['uns'],
-        explanation: 'uns is the dative form of wir; helfen requires the dative, and uns is the same in both the accusative and the dative.',
+        explanation:
+          'uns is the dative form of wir; helfen requires the dative, and uns is the same in both the accusative and the dative.',
       },
       {
         german: 'Wir schreiben ihnen eine Postkarte.',
         english: 'We are writing them a postcard.',
         highlight: ['ihnen'],
-        explanation: 'ihnen is the dative form of sie (plural), the indirect object of schreiben; eine Postkarte is the accusative direct object.',
+        explanation:
+          'ihnen is the dative form of sie (plural), the indirect object of schreiben; eine Postkarte is the accusative direct object.',
       },
       {
         german: 'Er gibt es mir.',
         english: 'He is giving it to me.',
         highlight: ['es', 'mir'],
-        explanation: 'When two pronoun objects appear together, the accusative pronoun es comes before the dative pronoun mir.',
+        explanation:
+          'When two pronoun objects appear together, the accusative pronoun es comes before the dative pronoun mir.',
       },
       {
         german: 'Besuchen Sie uns bald!',
         english: 'Visit us soon!',
         highlight: ['uns'],
-        explanation: 'uns is the accusative form of wir, the direct object of the imperative verb besuchen.',
+        explanation:
+          'uns is the accusative form of wir, the direct object of the imperative verb besuchen.',
       },
       {
         german: 'Ich sehe dich, aber ich helfe dir nicht.',
         english: 'I see you, but I am not helping you.',
         highlight: ['dich', 'dir'],
-        explanation: 'The same person "you" appears twice with two different cases: dich (accusative, after sehen) and dir (dative, after helfen).',
+        explanation:
+          'The same person "you" appears twice with two different cases: dich (accusative, after sehen) and dir (dative, after helfen).',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich helfe mich.',
         correct: 'Ich helfe mir.',
-        explanation: 'helfen is a dative verb, so the pronoun must be mir, not the accusative mich.',
+        explanation:
+          'helfen is a dative verb, so the pronoun must be mir, not the accusative mich.',
       },
       {
         incorrect: 'Er sieht mir jeden Tag.',
         correct: 'Er sieht mich jeden Tag.',
-        explanation: 'sehen is an accusative verb, so the pronoun must be mich, not the dative mir.',
+        explanation:
+          'sehen is an accusative verb, so the pronoun must be mich, not the dative mir.',
       },
       {
         incorrect: 'Ich danke dich für die Hilfe.',
         correct: 'Ich danke dir für die Hilfe.',
-        explanation: 'danken is a dative verb, so the pronoun must be dir, not the accusative dich.',
+        explanation:
+          'danken is a dative verb, so the pronoun must be dir, not the accusative dich.',
       },
       {
         incorrect: 'Wir sehen ihnen jeden Tag in der Schule.',
         correct: 'Wir sehen sie jeden Tag in der Schule.',
-        explanation: 'sehen is an accusative verb; the plural accusative pronoun is sie, not the dative ihnen.',
+        explanation:
+          'sehen is an accusative verb; the plural accusative pronoun is sie, not the dative ihnen.',
       },
       {
         incorrect: 'Das Auto gehört ihn.',
         correct: 'Das Auto gehört ihm.',
-        explanation: 'gehören is a dative verb, so the masculine pronoun must be ihm, not the accusative ihn.',
+        explanation:
+          'gehören is a dative verb, so the masculine pronoun must be ihm, not the accusative ihn.',
       },
     ],
     remember: [
@@ -360,7 +376,8 @@ export const chapter021: ChapterDefinition = {
         { id: 'd', text: 'ihm' },
       ],
       correctOptionId: 'b',
-      explanation: 'the plural sie (them) becomes ihnen in the dative; antworten is a dative verb.',
+      explanation:
+        'the plural sie (them) becomes ihnen in the dative; antworten is a dative verb.',
     },
     {
       id: 'ch21-ex-08',
@@ -396,7 +413,8 @@ export const chapter021: ChapterDefinition = {
         { id: 'd', text: 'mein' },
       ],
       correctOptionId: 'b',
-      explanation: 'helfen takes the dative, so ich becomes mir, not the accusative mich.',
+      explanation:
+        'helfen takes the dative, so ich becomes mir, not the accusative mich.',
     },
     {
       id: 'ch21-ex-10',
@@ -432,7 +450,8 @@ export const chapter021: ChapterDefinition = {
         { id: 'd', text: 'dein' },
       ],
       correctOptionId: 'b',
-      explanation: 'gefallen takes the dative, so du becomes dir, not the accusative dich.',
+      explanation:
+        'gefallen takes the dative, so du becomes dir, not the accusative dich.',
     },
     {
       id: 'ch21-ex-12',
@@ -450,7 +469,8 @@ export const chapter021: ChapterDefinition = {
         { id: 'd', text: 'dein' },
       ],
       correctOptionId: 'a',
-      explanation: 'brauchen takes the accusative, so du becomes dich, not the dative dir.',
+      explanation:
+        'brauchen takes the accusative, so du becomes dich, not the dative dir.',
     },
     {
       id: 'ch21-ex-13',
@@ -495,7 +515,8 @@ export const chapter021: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'euch',
       maxLength: 15,
-      explanation: 'helfen is a dative verb; ihr (plural you) becomes euch, the same form as the accusative.',
+      explanation:
+        'helfen is a dative verb; ihr (plural you) becomes euch, the same form as the accusative.',
     },
     {
       id: 'ch21-ex-16',
@@ -519,7 +540,8 @@ export const chapter021: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['dative pronoun', 'du'],
-      instruction: 'Write the correct pronoun to complete the question. Capitalisation is not checked.',
+      instruction:
+        'Write the correct pronoun to complete the question. Capitalisation is not checked.',
       prompt: 'Gehört das Handy ___? (du, dative)',
       acceptedAnswers: ['dir'],
       answerMode: 'caseInsensitive',
@@ -534,13 +556,15 @@ export const chapter021: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['accusative pronoun', 'sie-plural'],
-      instruction: 'Write the correct pronoun to complete the sentence. Capitalisation is not checked.',
+      instruction:
+        'Write the correct pronoun to complete the sentence. Capitalisation is not checked.',
       prompt: 'Ich besuche ___ jedes Jahr im Sommer. (sie = them, accusative)',
       acceptedAnswers: ['sie'],
       answerMode: 'caseInsensitive',
       placeholder: 'sie',
       maxLength: 15,
-      explanation: 'besuchen is an accusative verb; the plural sie (them) keeps the same form sie in the accusative.',
+      explanation:
+        'besuchen is an accusative verb; the plural sie (them) keeps the same form sie in the accusative.',
     },
     {
       id: 'ch21-ex-19',
@@ -549,7 +573,8 @@ export const chapter021: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['dative pronoun', 'ich'],
-      instruction: 'Write the correct pronoun to complete the question. Capitalisation is not checked.',
+      instruction:
+        'Write the correct pronoun to complete the question. Capitalisation is not checked.',
       prompt: 'Können Sie ___ bitte antworten? (ich, dative)',
       acceptedAnswers: ['mir'],
       answerMode: 'caseInsensitive',
@@ -564,7 +589,8 @@ export const chapter021: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['accusative pronoun', 'ihr-plural'],
-      instruction: 'Write the correct pronoun to complete the sentence. Capitalisation is not checked.',
+      instruction:
+        'Write the correct pronoun to complete the sentence. Capitalisation is not checked.',
       prompt: 'Wir laden ___ herzlich zur Feier ein. (ihr, plural, accusative)',
       acceptedAnswers: ['euch'],
       answerMode: 'caseInsensitive',
@@ -586,7 +612,8 @@ export const chapter021: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Ich helfe ...',
       maxLength: 60,
-      explanation: 'helfen takes the dative, so the correct pronoun is dir, not the accusative dich.',
+      explanation:
+        'helfen takes the dative, so the correct pronoun is dir, not the accusative dich.',
     },
     {
       id: 'ch21-ex-22',
@@ -602,7 +629,8 @@ export const chapter021: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Er sieht ...',
       maxLength: 60,
-      explanation: 'sehen takes the accusative, so the correct pronoun is mich, not the dative mir.',
+      explanation:
+        'sehen takes the accusative, so the correct pronoun is mich, not the dative mir.',
     },
     {
       id: 'ch21-ex-23',
@@ -618,7 +646,8 @@ export const chapter021: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Ich kenne ...',
       maxLength: 60,
-      explanation: 'kennen is an accusative verb; er becomes ihn as the direct object: Ich kenne ihn.',
+      explanation:
+        'kennen is an accusative verb; er becomes ihn as the direct object: Ich kenne ihn.',
     },
     {
       id: 'ch21-ex-24',
@@ -634,7 +663,8 @@ export const chapter021: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Er gibt ...',
       maxLength: 60,
-      explanation: 'When both objects are pronouns, the accusative pronoun es comes before the dative pronoun mir: Er gibt es mir.',
+      explanation:
+        'When both objects are pronouns, the accusative pronoun es comes before the dative pronoun mir: Er gibt es mir.',
     },
     {
       id: 'ch21-ex-25',
@@ -726,7 +756,8 @@ export const chapter021: ChapterDefinition = {
         { id: 'ch21-ex-29-p4', left: 'brauchen', right: 'to need (accusative object)' },
         { id: 'ch21-ex-29-p5', left: 'besuchen', right: 'to visit (accusative object)' },
       ],
-      explanation: 'sehen, hören, kennen, brauchen, and besuchen all take a direct object in the accusative.',
+      explanation:
+        'sehen, hören, kennen, brauchen, and besuchen all take a direct object in the accusative.',
     },
     {
       id: 'ch21-ex-30',
@@ -740,7 +771,11 @@ export const chapter021: ChapterDefinition = {
       pairs: [
         { id: 'ch21-ex-30-p1', left: 'helfen', right: 'to help (dative object)' },
         { id: 'ch21-ex-30-p2', left: 'danken', right: 'to thank (dative object)' },
-        { id: 'ch21-ex-30-p3', left: 'gefallen', right: 'to please/like (dative object)' },
+        {
+          id: 'ch21-ex-30-p3',
+          left: 'gefallen',
+          right: 'to please/like (dative object)',
+        },
         { id: 'ch21-ex-30-p4', left: 'gehören', right: 'to belong to (dative object)' },
         { id: 'ch21-ex-30-p5', left: 'antworten', right: 'to answer (dative object)' },
         { id: 'ch21-ex-30-p6', left: 'glauben', right: 'to believe (dative object)' },
@@ -755,7 +790,8 @@ export const chapter021: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['accusative pronoun', 'noun-to-pronoun'],
-      instruction: 'Match each accusative noun phrase with the pronoun that can replace it.',
+      instruction:
+        'Match each accusative noun phrase with the pronoun that can replace it.',
       prompt: 'Match the accusative noun phrase to its replacement pronoun.',
       pairs: [
         { id: 'ch21-ex-31-p1', left: 'den Mann', right: 'ihn' },
@@ -824,7 +860,8 @@ export const chapter021: ChapterDefinition = {
       templateParts: ['Ich kenne ', ' schon lange.'],
       slots: [{ id: 'ch21-ex-35-s1', correctWord: 'sie' }],
       wordBank: ['sie', 'ihr', 'ihre', 'ihn'],
-      explanation: 'kennen is an accusative verb; the feminine sie (she) stays sie in the accusative.',
+      explanation:
+        'kennen is an accusative verb; the feminine sie (she) stays sie in the accusative.',
     },
     {
       id: 'ch21-ex-36',
@@ -838,7 +875,8 @@ export const chapter021: ChapterDefinition = {
       templateParts: ['Er antwortet ', ' nicht.'],
       slots: [{ id: 'ch21-ex-36-s1', correctWord: 'ihnen' }],
       wordBank: ['ihnen', 'ihr', 'sie', 'ihm'],
-      explanation: 'antworten is a dative verb; the plural sie (they) becomes ihnen in the dative.',
+      explanation:
+        'antworten is a dative verb; the plural sie (they) becomes ihnen in the dative.',
     },
     {
       id: 'ch21-ex-37',
@@ -898,7 +936,8 @@ export const chapter021: ChapterDefinition = {
       templateParts: ['Ich danke ', ' vielmals.'],
       slots: [{ id: 'ch21-ex-40-s1', correctWord: 'Ihnen' }],
       wordBank: ['Ihnen', 'Sie', 'Ihr', 'ihnen'],
-      explanation: 'danken is a dative verb, so the formal Sie becomes Ihnen (capitalised) in the dative.',
+      explanation:
+        'danken is a dative verb, so the formal Sie becomes Ihnen (capitalised) in the dative.',
     },
     {
       id: 'ch21-ex-41',
@@ -952,7 +991,8 @@ export const chapter021: ChapterDefinition = {
         { id: 'd', text: 'ihre' },
       ],
       correctOptionId: 'a',
-      explanation: 'lieben is an accusative verb; the plural sie (them) stays sie in the accusative.',
+      explanation:
+        'lieben is an accusative verb; the plural sie (them) stays sie in the accusative.',
     },
     {
       id: 'ch21-ex-44',
@@ -1060,7 +1100,8 @@ export const chapter021: ChapterDefinition = {
         { id: 'd', text: 'Ihr' },
       ],
       correctOptionId: 'a',
-      explanation: 'brauchen is an accusative verb; the formal Sie stays Sie in the accusative.',
+      explanation:
+        'brauchen is an accusative verb; the formal Sie stays Sie in the accusative.',
     },
     {
       id: 'ch21-ex-50',
@@ -1093,7 +1134,8 @@ export const chapter021: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'sie',
       maxLength: 15,
-      explanation: 'sehen is an accusative verb; the feminine sie (she) stays sie in the accusative.',
+      explanation:
+        'sehen is an accusative verb; the feminine sie (she) stays sie in the accusative.',
     },
     {
       id: 'ch21-ex-52',
@@ -1117,13 +1159,15 @@ export const chapter021: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['accusative pronoun', 'Sie-formal'],
-      instruction: 'Write the correct pronoun to complete the sentence. Capitalisation is not checked.',
+      instruction:
+        'Write the correct pronoun to complete the sentence. Capitalisation is not checked.',
       prompt: 'Wir besuchen ___ am Wochenende. (Sie, formal, accusative)',
       acceptedAnswers: ['Sie'],
       answerMode: 'caseInsensitive',
       placeholder: 'Sie',
       maxLength: 15,
-      explanation: 'besuchen is an accusative verb; the formal Sie stays Sie in the accusative.',
+      explanation:
+        'besuchen is an accusative verb; the formal Sie stays Sie in the accusative.',
     },
     {
       id: 'ch21-ex-54',
@@ -1132,7 +1176,8 @@ export const chapter021: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['dative pronoun', 'du'],
-      instruction: 'Write the correct pronoun to complete the sentence. Capitalisation is not checked.',
+      instruction:
+        'Write the correct pronoun to complete the sentence. Capitalisation is not checked.',
       prompt: 'Das schmeckt ___ gut. (du, dative)',
       acceptedAnswers: ['dir'],
       answerMode: 'caseInsensitive',
@@ -1147,13 +1192,15 @@ export const chapter021: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['accusative pronoun', 'sie-plural'],
-      instruction: 'Write the correct pronoun to complete the question. Capitalisation is not checked.',
+      instruction:
+        'Write the correct pronoun to complete the question. Capitalisation is not checked.',
       prompt: 'Kennst du ___ schon? (sie = they, accusative)',
       acceptedAnswers: ['sie'],
       answerMode: 'caseInsensitive',
       placeholder: 'sie',
       maxLength: 15,
-      explanation: 'kennen is an accusative verb; the plural sie (them) stays sie in the accusative.',
+      explanation:
+        'kennen is an accusative verb; the plural sie (them) stays sie in the accusative.',
     },
     {
       id: 'ch21-ex-56',
@@ -1169,7 +1216,8 @@ export const chapter021: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Er hilft ...',
       maxLength: 60,
-      explanation: 'helfen takes the dative, so the correct pronoun is mir, not the accusative mich.',
+      explanation:
+        'helfen takes the dative, so the correct pronoun is mir, not the accusative mich.',
     },
     {
       id: 'ch21-ex-57',
@@ -1185,7 +1233,8 @@ export const chapter021: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Ich sehe ...',
       maxLength: 60,
-      explanation: 'sehen takes the accusative, so the correct pronoun is ihn, not the dative ihm.',
+      explanation:
+        'sehen takes the accusative, so the correct pronoun is ihn, not the dative ihm.',
     },
     {
       id: 'ch21-ex-58',
@@ -1201,7 +1250,8 @@ export const chapter021: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Du fragst ...',
       maxLength: 60,
-      explanation: 'fragen is an accusative verb; ich becomes mich as the direct object: Du fragst mich.',
+      explanation:
+        'fragen is an accusative verb; ich becomes mich as the direct object: Du fragst mich.',
     },
     {
       id: 'ch21-ex-59',
@@ -1215,7 +1265,8 @@ export const chapter021: ChapterDefinition = {
       tokens: ['Ich', 'sehe', 'ihm', 'jeden', 'Tag.'],
       errorTokenIndex: 2,
       correction: 'ihn',
-      explanation: 'sehen takes the accusative, so the pronoun must be ihn, not the dative ihm.',
+      explanation:
+        'sehen takes the accusative, so the pronoun must be ihn, not the dative ihm.',
     },
     {
       id: 'ch21-ex-60',
@@ -1229,7 +1280,8 @@ export const chapter021: ChapterDefinition = {
       tokens: ['Er', 'hilft', 'sie', 'heute.'],
       errorTokenIndex: 2,
       correction: 'ihr',
-      explanation: 'helfen takes the dative, so the feminine pronoun must be ihr, not the accusative sie.',
+      explanation:
+        'helfen takes the dative, so the feminine pronoun must be ihr, not the accusative sie.',
     },
     {
       id: 'ch21-ex-61',
@@ -1243,7 +1295,8 @@ export const chapter021: ChapterDefinition = {
       tokens: ['Wir', 'danken', 'sie', 'für', 'die', 'Einladung.'],
       errorTokenIndex: 2,
       correction: 'ihnen',
-      explanation: 'danken takes the dative, so the plural pronoun must be ihnen, not the accusative sie.',
+      explanation:
+        'danken takes the dative, so the plural pronoun must be ihnen, not the accusative sie.',
     },
     {
       id: 'ch21-ex-62',
@@ -1257,7 +1310,8 @@ export const chapter021: ChapterDefinition = {
       tokens: ['Das', 'Auto', 'gehört', 'ihn.'],
       errorTokenIndex: 3,
       correction: 'ihm.',
-      explanation: 'gehören takes the dative, so the masculine pronoun must be ihm, not the accusative ihn.',
+      explanation:
+        'gehören takes the dative, so the masculine pronoun must be ihm, not the accusative ihn.',
     },
   ],
 };

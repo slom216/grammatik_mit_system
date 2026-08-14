@@ -903,8 +903,7 @@ export const chapter009: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'imperative form',
       maxLength: 15,
-      explanation:
-        'The formal imperative puts the verb first and keeps Sie: Zeigen Sie.',
+      explanation: 'The formal imperative puts the verb first and keeps Sie: Zeigen Sie.',
     },
     {
       id: 'ch09-ex-39',
@@ -912,7 +911,12 @@ export const chapter009: ChapterDefinition = {
       order: 39,
       type: 'textInput',
       level: 'production',
-      grammarFocus: ['du-imperative', 'vowel-change', 'statement-to-command', 'punctuation'],
+      grammarFocus: [
+        'du-imperative',
+        'vowel-change',
+        'statement-to-command',
+        'punctuation',
+      ],
       instruction:
         'Turn the statement into a command for du. Capitalisation and punctuation are checked.',
       prompt: 'Du isst dein Gemüse nicht. (Tell the child to eat their vegetables.)',
@@ -1269,8 +1273,7 @@ export const chapter009: ChapterDefinition = {
       tokens: ['Sein', 'Sie', 'bitte', 'ruhig!'],
       errorTokenIndex: 0,
       correction: 'Seien',
-      explanation:
-        'sein has the irregular formal imperative Seien Sie, not Sein Sie.',
+      explanation: 'sein has the irregular formal imperative Seien Sie, not Sein Sie.',
     },
     {
       id: 'ch09-ex-58',
@@ -1280,8 +1283,7 @@ export const chapter009: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['audience-choice', 'formal-imperative', 'error-correction'],
       instruction: 'Find the token that uses the wrong register, and correct it.',
-      prompt:
-        'A receptionist says this to an unfamiliar visitor. Something is wrong.',
+      prompt: 'A receptionist says this to an unfamiliar visitor. Something is wrong.',
       tokens: ['Wartet', 'bitte', 'hier', 'drüben!'],
       errorTokenIndex: 0,
       correction: 'Warten Sie',

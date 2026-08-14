@@ -86,7 +86,11 @@ export const chapter080: ChapterDefinition = {
         rows: [
           ['entweder ... oder', 'either ... or', 'Ich trinke entweder Kaffee oder Tee.'],
           ['weder ... noch', 'neither ... nor', 'Sie mag weder Fisch noch Fleisch.'],
-          ['sowohl ... als auch', 'both ... and', 'Sie spielt sowohl Klavier als auch Gitarre.'],
+          [
+            'sowohl ... als auch',
+            'both ... and',
+            'Sie spielt sowohl Klavier als auch Gitarre.',
+          ],
           [
             'nicht nur ... sondern auch',
             'not only ... but also',
@@ -98,7 +102,12 @@ export const chapter080: ChapterDefinition = {
       {
         id: 'ch80-table-02',
         title: 'Word order when a pair opens a clause',
-        columns: ['Pair', 'Does it open the clause and trigger inversion?', 'Effect on word order', 'Example'],
+        columns: [
+          'Pair',
+          'Does it open the clause and trigger inversion?',
+          'Effect on word order',
+          'Example',
+        ],
         rows: [
           [
             'entweder ... oder',
@@ -153,19 +162,22 @@ export const chapter080: ChapterDefinition = {
         german: 'Sie mag weder Fisch noch Fleisch.',
         english: 'She likes neither fish nor meat.',
         highlight: ['weder', 'noch'],
-        explanation: 'weder ... noch already carries the negation, so no additional nicht or kein is needed.',
+        explanation:
+          'weder ... noch already carries the negation, so no additional nicht or kein is needed.',
       },
       {
         german: 'Sowohl mein Bruder als auch meine Schwester kommen zur Party.',
         english: 'Both my brother and my sister are coming to the party.',
         highlight: ['Sowohl', 'als auch'],
-        explanation: 'Two parallel subjects joined by sowohl ... als auch take a plural verb, kommen.',
+        explanation:
+          'Two parallel subjects joined by sowohl ... als auch take a plural verb, kommen.',
       },
       {
         german: 'Sie spielt sowohl Klavier als auch Gitarre.',
         english: 'She plays both piano and guitar.',
         highlight: ['sowohl', 'als auch'],
-        explanation: 'sowohl ... als auch joins two parallel objects inside a single clause.',
+        explanation:
+          'sowohl ... als auch joins two parallel objects inside a single clause.',
       },
       {
         german: 'Nicht nur kocht sie gut, sondern sie backt auch hervorragend.',
@@ -199,7 +211,8 @@ export const chapter080: ChapterDefinition = {
         german: 'Das Restaurant ist sowohl günstig als auch lecker.',
         english: 'The restaurant is both affordable and delicious.',
         highlight: ['sowohl', 'als auch'],
-        explanation: 'sowohl ... als auch joins two parallel adjectives describing the same subject.',
+        explanation:
+          'sowohl ... als auch joins two parallel adjectives describing the same subject.',
       },
       {
         german: 'Sie lernt nicht nur fleißig, sondern hilft auch anderen Studenten.',
@@ -219,7 +232,8 @@ export const chapter080: ChapterDefinition = {
       {
         incorrect: 'Weder mag ich Fisch, oder Fleisch.',
         correct: 'Weder mag ich Fisch, noch Fleisch.',
-        explanation: 'weder must be completed with noch, not oder — oder belongs only to the entweder ... oder pair.',
+        explanation:
+          'weder must be completed with noch, not oder — oder belongs only to the entweder ... oder pair.',
       },
       {
         incorrect: 'Er spricht nicht nur Deutsch.',
@@ -272,7 +286,8 @@ export const chapter080: ChapterDefinition = {
         { id: 'd', text: 'nicht nur ... sondern auch' },
       ],
       correctOptionId: 'a',
-      explanation: 'entweder ... oder presents two mutually exclusive alternatives — exactly "either ... or".',
+      explanation:
+        'entweder ... oder presents two mutually exclusive alternatives — exactly "either ... or".',
     },
     {
       id: 'ch80-ex-02',
@@ -290,7 +305,8 @@ export const chapter080: ChapterDefinition = {
         { id: 'd', text: 'nicht nur ... sondern auch' },
       ],
       correctOptionId: 'a',
-      explanation: 'weder ... noch negates both alternatives at once — "neither ... nor".',
+      explanation:
+        'weder ... noch negates both alternatives at once — "neither ... nor".',
     },
     {
       id: 'ch80-ex-03',
@@ -308,7 +324,8 @@ export const chapter080: ChapterDefinition = {
         { id: 'd', text: 'nicht nur ... sondern auch' },
       ],
       correctOptionId: 'a',
-      explanation: 'sowohl ... als auch states that both alternatives are true — "both ... and".',
+      explanation:
+        'sowohl ... als auch states that both alternatives are true — "both ... and".',
     },
     {
       id: 'ch80-ex-04',
@@ -488,7 +505,8 @@ export const chapter080: ChapterDefinition = {
         },
         {
           speaker: 'Paul',
-          german: 'Das weiß ich noch nicht. ___ komme ich mit, ___ ich bleibe zu Hause und lerne.',
+          german:
+            'Das weiß ich noch nicht. ___ komme ich mit, ___ ich bleibe zu Hause und lerne.',
           english: "I don't know yet. ... I'll come along, ... I'll stay home and study.",
         },
       ],
@@ -530,13 +548,15 @@ export const chapter080: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['pair-completion', 'entweder-oder'],
-      instruction: 'Fill in the missing first word of the pair. Capitalisation is not checked.',
+      instruction:
+        'Fill in the missing first word of the pair. Capitalisation is not checked.',
       prompt: '___ regnet es, oder es schneit.',
       acceptedAnswers: ['entweder'],
       answerMode: 'caseInsensitive',
       placeholder: 'entweder/weder/sowohl',
       maxLength: 15,
-      explanation: 'oder signals the entweder ... oder pair, so the missing first word is entweder.',
+      explanation:
+        'oder signals the entweder ... oder pair, so the missing first word is entweder.',
     },
     {
       id: 'ch80-ex-16',
@@ -545,7 +565,8 @@ export const chapter080: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['pair-completion', 'weder-noch'],
-      instruction: 'Fill in the missing second word of the pair. Capitalisation is not checked.',
+      instruction:
+        'Fill in the missing second word of the pair. Capitalisation is not checked.',
       prompt: 'Weder Tim ___ Lisa mag das Konzert.',
       acceptedAnswers: ['noch'],
       answerMode: 'caseInsensitive',
@@ -560,7 +581,8 @@ export const chapter080: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['pair-completion', 'sowohl-als-auch'],
-      instruction: 'Fill in the missing words to complete the pair. Capitalisation is not checked.',
+      instruction:
+        'Fill in the missing words to complete the pair. Capitalisation is not checked.',
       prompt: 'Er ist sowohl klug ___ ___ fleißig.',
       acceptedAnswers: ['als auch'],
       answerMode: 'caseInsensitive',
@@ -575,7 +597,8 @@ export const chapter080: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['pair-completion', 'nicht-nur-sondern-auch'],
-      instruction: 'Fill in the missing words to complete the pair. Capitalisation is not checked.',
+      instruction:
+        'Fill in the missing words to complete the pair. Capitalisation is not checked.',
       prompt: 'Sie ist nicht nur nett, ___ ___ hilfsbereit.',
       acceptedAnswers: ['sondern auch'],
       answerMode: 'caseInsensitive',
@@ -631,7 +654,8 @@ export const chapter080: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Er mag sowohl ... als auch ...',
       maxLength: 50,
-      explanation: 'sowohl ... als auch joins the two parallel objects Äpfel and Birnen within a single clause.',
+      explanation:
+        'sowohl ... als auch joins the two parallel objects Äpfel and Birnen within a single clause.',
     },
     {
       id: 'ch80-ex-22',
@@ -657,7 +681,8 @@ export const chapter080: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['error-correction', 'entweder-oder'],
-      instruction: 'Correct the mismatched pair. Write the full corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mismatched pair. Write the full corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Entweder komme ich, noch ich rufe an.',
       acceptedAnswers: ['Entweder komme ich, oder ich rufe an.'],
       answerMode: 'normalized',
@@ -673,7 +698,8 @@ export const chapter080: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['error-correction', 'weder-noch'],
-      instruction: 'Correct the mismatched pair. Write the full corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mismatched pair. Write the full corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Weder mag ich Fisch, oder Fleisch.',
       acceptedAnswers: ['Weder mag ich Fisch, noch Fleisch.'],
       answerMode: 'normalized',
@@ -705,7 +731,8 @@ export const chapter080: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['parallel-structure', 'sowohl-als-auch', 'error-correction'],
-      instruction: 'Fix the broken parallel structure. Write the full corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Fix the broken parallel structure. Write the full corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Sowohl er kommt als auch seine Schwester.',
       acceptedAnswers: ['Sowohl er als auch seine Schwester kommen.'],
       answerMode: 'normalized',
@@ -855,7 +882,8 @@ export const chapter080: ChapterDefinition = {
         { id: 's2', correctWord: 'als auch' },
       ],
       wordBank: ['sowohl', 'als auch', 'entweder', 'oder', 'weder', 'noch'],
-      explanation: 'sowohl only ever pairs with als auch, joining the two parallel adjectives.',
+      explanation:
+        'sowohl only ever pairs with als auch, joining the two parallel adjectives.',
     },
     {
       id: 'ch80-ex-36',
@@ -918,7 +946,8 @@ export const chapter080: ChapterDefinition = {
         { id: 'p3', left: 'sowohl', right: 'als auch' },
         { id: 'p4', left: 'nicht nur', right: 'sondern auch' },
       ],
-      explanation: 'Each paired conjunction is a fixed unit: entweder/oder, weder/noch, sowohl/als auch, nicht nur/sondern auch.',
+      explanation:
+        'Each paired conjunction is a fixed unit: entweder/oder, weder/noch, sowohl/als auch, nicht nur/sondern auch.',
     },
     {
       id: 'ch80-ex-40',
@@ -948,7 +977,11 @@ export const chapter080: ChapterDefinition = {
       instruction: 'Match each sentence opening to its correct continuation.',
       prompt: 'Welcher Satzanfang passt zu welcher Fortsetzung?',
       pairs: [
-        { id: 'p1', left: 'Er spricht nicht nur Deutsch,', right: 'sondern auch Französisch.' },
+        {
+          id: 'p1',
+          left: 'Er spricht nicht nur Deutsch,',
+          right: 'sondern auch Französisch.',
+        },
         { id: 'p2', left: 'Sie mag weder Fisch', right: 'noch Fleisch.' },
         { id: 'p3', left: 'Ich trinke entweder Kaffee', right: 'oder Tee.' },
         { id: 'p4', left: 'Sie spielt sowohl Klavier', right: 'als auch Gitarre.' },
@@ -965,10 +998,26 @@ export const chapter080: ChapterDefinition = {
       instruction: 'Match each word-order effect to the pair that causes it.',
       prompt: 'Welcher Effekt gehört zu welchem Wortpaar?',
       pairs: [
-        { id: 'p1', left: 'Inversion in both clauses when each half opens its own clause', right: 'weder ... noch' },
-        { id: 'p2', left: 'Inversion only in the first clause (the second stays normal after oder)', right: 'entweder ... oder' },
-        { id: 'p3', left: 'Inversion only in the first clause (the second stays normal after sondern)', right: 'nicht nur ... sondern auch' },
-        { id: 'p4', left: 'Usually no clause-opening inversion at all', right: 'sowohl ... als auch' },
+        {
+          id: 'p1',
+          left: 'Inversion in both clauses when each half opens its own clause',
+          right: 'weder ... noch',
+        },
+        {
+          id: 'p2',
+          left: 'Inversion only in the first clause (the second stays normal after oder)',
+          right: 'entweder ... oder',
+        },
+        {
+          id: 'p3',
+          left: 'Inversion only in the first clause (the second stays normal after sondern)',
+          right: 'nicht nur ... sondern auch',
+        },
+        {
+          id: 'p4',
+          left: 'Usually no clause-opening inversion at all',
+          right: 'sowohl ... als auch',
+        },
       ],
       explanation:
         'oder and sondern are true coordinating conjunctions and never trigger inversion, while entweder, weder, noch, and nicht nur can each occupy position 1.',
@@ -983,10 +1032,26 @@ export const chapter080: ChapterDefinition = {
       instruction: 'Match each incorrect sentence to its corrected version.',
       prompt: 'Welcher falsche Satz gehört zu welcher Korrektur?',
       pairs: [
-        { id: 'p1', left: 'Entweder komme ich, noch ich rufe an.', right: 'Entweder komme ich, oder ich rufe an.' },
-        { id: 'p2', left: 'Weder mag ich Fisch, oder Fleisch.', right: 'Weder mag ich Fisch, noch Fleisch.' },
-        { id: 'p3', left: 'Sowohl er kommt als auch seine Schwester.', right: 'Sowohl er als auch seine Schwester kommen.' },
-        { id: 'p4', left: 'Er hat weder nicht angerufen noch geschrieben.', right: 'Er hat weder angerufen noch geschrieben.' },
+        {
+          id: 'p1',
+          left: 'Entweder komme ich, noch ich rufe an.',
+          right: 'Entweder komme ich, oder ich rufe an.',
+        },
+        {
+          id: 'p2',
+          left: 'Weder mag ich Fisch, oder Fleisch.',
+          right: 'Weder mag ich Fisch, noch Fleisch.',
+        },
+        {
+          id: 'p3',
+          left: 'Sowohl er kommt als auch seine Schwester.',
+          right: 'Sowohl er als auch seine Schwester kommen.',
+        },
+        {
+          id: 'p4',
+          left: 'Er hat weder nicht angerufen noch geschrieben.',
+          right: 'Er hat weder angerufen noch geschrieben.',
+        },
       ],
       explanation:
         'Each incorrect sentence either mixes halves from different pairs, breaks parallel structure, or adds a redundant negation.',
@@ -1001,12 +1066,29 @@ export const chapter080: ChapterDefinition = {
       instruction: 'Match each German sentence to its English translation.',
       prompt: 'Welcher deutsche Satz gehört zu welcher englischen Übersetzung?',
       pairs: [
-        { id: 'p1', left: 'Er kommt entweder heute oder morgen.', right: 'He is coming either today or tomorrow.' },
-        { id: 'p2', left: 'Sie mag weder Fisch noch Fleisch.', right: 'She likes neither fish nor meat.' },
-        { id: 'p3', left: 'Das Restaurant ist sowohl günstig als auch lecker.', right: 'The restaurant is both affordable and delicious.' },
-        { id: 'p4', left: 'Er spricht nicht nur Deutsch, sondern auch Französisch.', right: 'He speaks not only German, but also French.' },
+        {
+          id: 'p1',
+          left: 'Er kommt entweder heute oder morgen.',
+          right: 'He is coming either today or tomorrow.',
+        },
+        {
+          id: 'p2',
+          left: 'Sie mag weder Fisch noch Fleisch.',
+          right: 'She likes neither fish nor meat.',
+        },
+        {
+          id: 'p3',
+          left: 'Das Restaurant ist sowohl günstig als auch lecker.',
+          right: 'The restaurant is both affordable and delicious.',
+        },
+        {
+          id: 'p4',
+          left: 'Er spricht nicht nur Deutsch, sondern auch Französisch.',
+          right: 'He speaks not only German, but also French.',
+        },
       ],
-      explanation: 'Each sentence uses one paired conjunction with its characteristic meaning.',
+      explanation:
+        'Each sentence uses one paired conjunction with its characteristic meaning.',
     },
     {
       id: 'ch80-ex-45',
@@ -1018,12 +1100,29 @@ export const chapter080: ChapterDefinition = {
       instruction: 'Match each situation to the pair that fits it best.',
       prompt: 'Welches Wortpaar passt zu welcher Situation?',
       pairs: [
-        { id: 'p1', left: 'You want to state two exclusive options; only one will happen', right: 'entweder ... oder' },
-        { id: 'p2', left: 'You want to rule out both options at once', right: 'weder ... noch' },
-        { id: 'p3', left: 'You want to say both things are true, nothing excluded', right: 'sowohl ... als auch' },
-        { id: 'p4', left: 'You want to add a second, often surprising, fact', right: 'nicht nur ... sondern auch' },
+        {
+          id: 'p1',
+          left: 'You want to state two exclusive options; only one will happen',
+          right: 'entweder ... oder',
+        },
+        {
+          id: 'p2',
+          left: 'You want to rule out both options at once',
+          right: 'weder ... noch',
+        },
+        {
+          id: 'p3',
+          left: 'You want to say both things are true, nothing excluded',
+          right: 'sowohl ... als auch',
+        },
+        {
+          id: 'p4',
+          left: 'You want to add a second, often surprising, fact',
+          right: 'nicht nur ... sondern auch',
+        },
       ],
-      explanation: 'Each pair carries a distinct logical relationship between its two halves.',
+      explanation:
+        'Each pair carries a distinct logical relationship between its two halves.',
     },
     {
       id: 'ch80-ex-46',
@@ -1035,12 +1134,29 @@ export const chapter080: ChapterDefinition = {
       instruction: 'Match each pair to a sentence that uses it correctly.',
       prompt: 'Welches Wortpaar gehört zu welchem Beispielsatz?',
       pairs: [
-        { id: 'p1', left: 'entweder ... oder', right: 'Entweder komme ich, oder ich rufe an.' },
-        { id: 'p2', left: 'weder ... noch', right: 'Weder hat er angerufen, noch hat er geschrieben.' },
-        { id: 'p3', left: 'sowohl ... als auch', right: 'Sowohl mein Bruder als auch meine Schwester kommen zur Party.' },
-        { id: 'p4', left: 'nicht nur ... sondern auch', right: 'Nicht nur kocht sie gut, sondern sie backt auch hervorragend.' },
+        {
+          id: 'p1',
+          left: 'entweder ... oder',
+          right: 'Entweder komme ich, oder ich rufe an.',
+        },
+        {
+          id: 'p2',
+          left: 'weder ... noch',
+          right: 'Weder hat er angerufen, noch hat er geschrieben.',
+        },
+        {
+          id: 'p3',
+          left: 'sowohl ... als auch',
+          right: 'Sowohl mein Bruder als auch meine Schwester kommen zur Party.',
+        },
+        {
+          id: 'p4',
+          left: 'nicht nur ... sondern auch',
+          right: 'Nicht nur kocht sie gut, sondern sie backt auch hervorragend.',
+        },
       ],
-      explanation: 'Each pair is illustrated by one of the chapter’s core example sentences.',
+      explanation:
+        'Each pair is illustrated by one of the chapter’s core example sentences.',
     },
     {
       id: 'ch80-ex-47',
@@ -1082,7 +1198,8 @@ export const chapter080: ChapterDefinition = {
       tokens: ['Sie', 'ist', 'sowohl', 'klug', 'oder', 'fleißig.'],
       errorTokenIndex: 4,
       correction: 'als auch',
-      explanation: 'sowohl only pairs with als auch; oder belongs only to entweder ... oder.',
+      explanation:
+        'sowohl only pairs with als auch; oder belongs only to entweder ... oder.',
     },
     {
       id: 'ch80-ex-50',
@@ -1096,7 +1213,8 @@ export const chapter080: ChapterDefinition = {
       tokens: ['Er', 'ist', 'nicht', 'nur', 'nett,', 'oder', 'hilfsbereit.'],
       errorTokenIndex: 5,
       correction: 'sondern auch',
-      explanation: 'nicht nur only pairs with sondern auch; oder belongs only to entweder ... oder.',
+      explanation:
+        'nicht nur only pairs with sondern auch; oder belongs only to entweder ... oder.',
     },
     {
       id: 'ch80-ex-51',
@@ -1121,10 +1239,21 @@ export const chapter080: ChapterDefinition = {
       grammarFocus: ['error-correction', 'entweder-oder'],
       instruction: 'Find the token that breaks the pair and give its correction.',
       prompt: 'Entweder bleiben wir zu Hause, noch wir gehen spazieren.',
-      tokens: ['Entweder', 'bleiben', 'wir', 'zu', 'Hause,', 'noch', 'wir', 'gehen', 'spazieren.'],
+      tokens: [
+        'Entweder',
+        'bleiben',
+        'wir',
+        'zu',
+        'Hause,',
+        'noch',
+        'wir',
+        'gehen',
+        'spazieren.',
+      ],
       errorTokenIndex: 5,
       correction: 'oder',
-      explanation: 'entweder only pairs with oder; the second clause keeps normal order after oder.',
+      explanation:
+        'entweder only pairs with oder; the second clause keeps normal order after oder.',
     },
     {
       id: 'ch80-ex-53',
@@ -1135,10 +1264,22 @@ export const chapter080: ChapterDefinition = {
       grammarFocus: ['error-correction', 'nicht-nur-sondern-auch'],
       instruction: 'Find the token that breaks the pair and give its correction.',
       prompt: 'Sie lernt nicht nur fleißig, noch hilft sie auch anderen.',
-      tokens: ['Sie', 'lernt', 'nicht', 'nur', 'fleißig,', 'noch', 'hilft', 'sie', 'auch', 'anderen.'],
+      tokens: [
+        'Sie',
+        'lernt',
+        'nicht',
+        'nur',
+        'fleißig,',
+        'noch',
+        'hilft',
+        'sie',
+        'auch',
+        'anderen.',
+      ],
       errorTokenIndex: 5,
       correction: 'sondern',
-      explanation: 'nicht nur only pairs with sondern (auch); noch belongs only to weder ... noch.',
+      explanation:
+        'nicht nur only pairs with sondern (auch); noch belongs only to weder ... noch.',
     },
     {
       id: 'ch80-ex-54',
@@ -1290,7 +1431,8 @@ export const chapter080: ChapterDefinition = {
         { id: 's7', text: 'auch' },
         { id: 's8', text: 'lecker.' },
       ],
-      explanation: 'sowohl ... als auch joins two parallel adjectives describing the same subject.',
+      explanation:
+        'sowohl ... als auch joins two parallel adjectives describing the same subject.',
     },
     {
       id: 'ch80-ex-61',
@@ -1362,8 +1504,10 @@ export const chapter080: ChapterDefinition = {
         },
         {
           speaker: 'Ben',
-          german: 'Ich habe keine Lust auf Sport. Ich gehe ___ joggen ___ ins Fitnessstudio.',
-          english: "I don't feel like exercising. I'm going neither jogging nor to the gym.",
+          german:
+            'Ich habe keine Lust auf Sport. Ich gehe ___ joggen ___ ins Fitnessstudio.',
+          english:
+            "I don't feel like exercising. I'm going neither jogging nor to the gym.",
         },
       ],
       prompt: 'Ich gehe ___ joggen ___ ins Fitnessstudio.',
@@ -1393,7 +1537,8 @@ export const chapter080: ChapterDefinition = {
         },
         {
           speaker: 'Schülerin',
-          german: 'Eigentlich kommen alle mit! ___ die Jungen ___ die Mädchen kommen mit.',
+          german:
+            'Eigentlich kommen alle mit! ___ die Jungen ___ die Mädchen kommen mit.',
           english: 'Actually everyone is coming! Both the boys and the girls are coming.',
         },
       ],
@@ -1418,9 +1563,18 @@ export const chapter080: ChapterDefinition = {
       instruction: 'Choose the grammatically correct sentence.',
       prompt: 'Welcher Satz ist grammatisch korrekt?',
       options: [
-        { id: 'a', text: 'Nicht nur kocht sie gut, sondern sie backt auch hervorragend.' },
-        { id: 'b', text: 'Nicht nur sie kocht gut, sondern sie backt auch hervorragend.' },
-        { id: 'c', text: 'Nicht nur kocht sie gut, sondern auch sie backt hervorragend.' },
+        {
+          id: 'a',
+          text: 'Nicht nur kocht sie gut, sondern sie backt auch hervorragend.',
+        },
+        {
+          id: 'b',
+          text: 'Nicht nur sie kocht gut, sondern sie backt auch hervorragend.',
+        },
+        {
+          id: 'c',
+          text: 'Nicht nur kocht sie gut, sondern auch sie backt hervorragend.',
+        },
       ],
       correctOptionId: 'a',
       explanation:
@@ -1434,12 +1588,14 @@ export const chapter080: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['subject-verb-agreement', 'sowohl-als-auch'],
       instruction: 'Fill in the correct verb form. Capitalisation is not checked.',
-      prompt: 'Sowohl der Lehrer als auch die Schüler ___ zufrieden. (Verbform von "sein")',
+      prompt:
+        'Sowohl der Lehrer als auch die Schüler ___ zufrieden. (Verbform von "sein")',
       acceptedAnswers: ['sind'],
       answerMode: 'caseInsensitive',
       placeholder: 'sind/ist',
       maxLength: 10,
-      explanation: 'Two subjects joined by sowohl ... als auch count as plural together, so the verb is sind.',
+      explanation:
+        'Two subjects joined by sowohl ... als auch count as plural together, so the verb is sind.',
     },
     {
       id: 'ch80-ex-68',
@@ -1484,7 +1640,9 @@ export const chapter080: ChapterDefinition = {
       instruction:
         'Combine the two sentences into one with nicht nur ... sondern auch, keeping the shared subject only once. Capitalisation and punctuation are checked.',
       prompt: 'Sie lernt fleißig. Sie hilft anderen Studenten.',
-      acceptedAnswers: ['Sie lernt nicht nur fleißig, sondern hilft auch anderen Studenten.'],
+      acceptedAnswers: [
+        'Sie lernt nicht nur fleißig, sondern hilft auch anderen Studenten.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Sie lernt nicht nur fleißig, sondern ...',
       maxLength: 80,
@@ -1498,13 +1656,15 @@ export const chapter080: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['error-correction', 'sowohl-als-auch'],
-      instruction: 'Correct the mismatched pair. Write the full corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mismatched pair. Write the full corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Sie ist sowohl klug, oder fleißig.',
       acceptedAnswers: ['Sie ist sowohl klug als auch fleißig.'],
       answerMode: 'normalized',
       placeholder: 'Sie ist sowohl klug als auch ...',
       maxLength: 50,
-      explanation: 'sowohl only pairs with als auch; oder belongs only to entweder ... oder.',
+      explanation:
+        'sowohl only pairs with als auch; oder belongs only to entweder ... oder.',
     },
     {
       id: 'ch80-ex-72',

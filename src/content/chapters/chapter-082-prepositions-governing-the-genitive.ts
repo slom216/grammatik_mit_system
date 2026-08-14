@@ -134,7 +134,11 @@ export const chapter082: ChapterDefinition = {
         rows: [
           ['wegen des Regens', 'wegen dem Regen', 'because of the rain'],
           ['trotz des Wetters', 'trotz dem Wetter', 'despite the weather'],
-          ['während der Pause', 'während der Pause', 'during the break (feminine looks the same)'],
+          [
+            'während der Pause',
+            'während der Pause',
+            'during the break (feminine looks the same)',
+          ],
           ['statt des Autos', 'statt dem Auto', 'instead of the car'],
         ],
         note: 'The colloquial dative is widely heard but non-standard; prefer the genitive, especially in writing.',
@@ -151,25 +155,29 @@ export const chapter082: ChapterDefinition = {
         german: 'Wir gehen trotz des schlechten Wetters spazieren.',
         english: 'We are going for a walk despite the bad weather.',
         highlight: ['trotz des schlechten Wetters'],
-        explanation: 'Wetter is neuter and takes plain -s; the adjective schlecht takes the genitive ending -en.',
+        explanation:
+          'Wetter is neuter and takes plain -s; the adjective schlecht takes the genitive ending -en.',
       },
       {
         german: 'Während der Ferien fahren wir ans Meer.',
         english: 'During the vacation, we are going to the seaside.',
         highlight: ['Während der Ferien'],
-        explanation: 'Ferien is plural, so the genitive article is der and the noun itself takes no added ending.',
+        explanation:
+          'Ferien is plural, so the genitive article is der and the noun itself takes no added ending.',
       },
       {
         german: 'Während des Konzerts war es sehr laut.',
         english: 'During the concert, it was very loud.',
         highlight: ['Während des Konzerts'],
-        explanation: 'Konzert is neuter and polysyllabic, non-sibilant, so it takes plain -s: des Konzerts.',
+        explanation:
+          'Konzert is neuter and polysyllabic, non-sibilant, so it takes plain -s: des Konzerts.',
       },
       {
         german: 'Wegen der Verspätung mussten wir warten.',
         english: 'Because of the delay, we had to wait.',
         highlight: ['Wegen der Verspätung'],
-        explanation: 'Verspätung is feminine, so the genitive article is der and the noun stays unchanged.',
+        explanation:
+          'Verspätung is feminine, so the genitive article is der and the noun stays unchanged.',
       },
       {
         german: 'Wegen des Staus kamen wir zu spät.',
@@ -181,69 +189,81 @@ export const chapter082: ChapterDefinition = {
         german: 'Statt eines Kaffees trinke ich heute einen Tee.',
         english: 'Instead of a coffee, I am drinking a tea today.',
         highlight: ['Statt eines Kaffees'],
-        explanation: 'Kaffee is masculine, so the indefinite genitive article eines is used and the noun adds -s.',
+        explanation:
+          'Kaffee is masculine, so the indefinite genitive article eines is used and the noun adds -s.',
       },
       {
         german: 'Anstatt des Autos nahmen wir das Fahrrad.',
         english: 'Instead of the car, we took the bike.',
         highlight: ['Anstatt des Autos'],
-        explanation: 'anstatt is the fuller form of statt, with exactly the same genitive government: des Autos.',
+        explanation:
+          'anstatt is the fuller form of statt, with exactly the same genitive government: des Autos.',
       },
       {
         german: 'Wegen des Kindes musste sie früher gehen.',
         english: 'Because of the child, she had to leave earlier.',
         highlight: ['Wegen des Kindes'],
-        explanation: 'Kind is in the hand-picked monosyllabic group that adds -es: des Kindes.',
+        explanation:
+          'Kind is in the hand-picked monosyllabic group that adds -es: des Kindes.',
       },
       {
         german: 'Trotz seiner Krankheit arbeitet er weiter.',
         english: 'Despite his illness, he keeps working.',
         highlight: ['seiner Krankheit'],
-        explanation: 'Krankheit is feminine, so the possessive article takes the genitive ending -er: seiner.',
+        explanation:
+          'Krankheit is feminine, so the possessive article takes the genitive ending -er: seiner.',
       },
       {
         german: 'Wegen dem Regen bleiben wir zu Hause.',
         english: 'Because of the rain, we are staying home. (colloquial)',
         highlight: ['Wegen dem Regen'],
-        explanation: 'This dative form is common in casual speech, but wegen des Regens is the standard, expected form in writing.',
+        explanation:
+          'This dative form is common in casual speech, but wegen des Regens is the standard, expected form in writing.',
       },
       {
         german: 'Während des Studiums arbeitete er nebenbei.',
         english: 'During his studies, he worked on the side.',
         highlight: ['Während des Studiums'],
-        explanation: 'Studium is neuter and takes plain -s in the genitive: des Studiums.',
+        explanation:
+          'Studium is neuter and takes plain -s in the genitive: des Studiums.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'trotz der Regen',
         correct: 'trotz des Regens',
-        explanation: 'Regen is masculine, so the genitive article is des, and the noun itself adds -s: des Regens.',
+        explanation:
+          'Regen is masculine, so the genitive article is des, and the noun itself adds -s: des Regens.',
       },
       {
         incorrect: 'wegen das Kind',
         correct: 'wegen des Kindes',
-        explanation: 'wegen governs the genitive, not the accusative; Kind is neuter and in the hand-picked group that adds -es.',
+        explanation:
+          'wegen governs the genitive, not the accusative; Kind is neuter and in the hand-picked group that adds -es.',
       },
       {
         incorrect: 'während die Ferien',
         correct: 'während der Ferien',
-        explanation: 'Ferien is plural, so the genitive article is der, not the nominative/accusative die.',
+        explanation:
+          'Ferien is plural, so the genitive article is der, not the nominative/accusative die.',
       },
       {
         incorrect: 'statt einen Kaffee',
         correct: 'statt eines Kaffees',
-        explanation: 'statt governs the genitive, so the indefinite article must be eines and the noun adds -s, not the accusative einen Kaffee.',
+        explanation:
+          'statt governs the genitive, so the indefinite article must be eines and the noun adds -s, not the accusative einen Kaffee.',
       },
       {
         incorrect: 'Wegen der Verspätung mussten wir warten wegen der Verspätung.',
         correct: 'Wegen der Verspätung mussten wir warten.',
-        explanation: 'A genitive prepositional phrase, like any other sentence element, should appear once, not be repeated.',
+        explanation:
+          'A genitive prepositional phrase, like any other sentence element, should appear once, not be repeated.',
       },
       {
         incorrect: 'wegen dem Regen (in a formal essay)',
         correct: 'wegen des Regens',
-        explanation: 'The dative after wegen is common in casual speech but is considered non-standard in formal writing, where the genitive is expected.',
+        explanation:
+          'The dative after wegen is common in casual speech but is considered non-standard in formal writing, where the genitive is expected.',
       },
     ],
     remember: [
@@ -341,7 +361,8 @@ export const chapter082: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['genitive-prepositions', 'case-government'],
       instruction: 'Choose the case these four prepositions govern in standard German.',
-      prompt: 'Welchen Fall verlangen trotz, während, wegen und statt im Standarddeutschen?',
+      prompt:
+        'Welchen Fall verlangen trotz, während, wegen und statt im Standarddeutschen?',
       options: [
         { id: 'a', text: 'Genitiv' },
         { id: 'b', text: 'Dativ' },
@@ -349,7 +370,8 @@ export const chapter082: ChapterDefinition = {
         { id: 'd', text: 'Nominativ' },
       ],
       correctOptionId: 'a',
-      explanation: 'trotz, während, wegen, and statt/anstatt all govern the genitive case in standard German.',
+      explanation:
+        'trotz, während, wegen, and statt/anstatt all govern the genitive case in standard German.',
     },
     {
       id: 'ch82-ex-06',
@@ -403,7 +425,8 @@ export const chapter082: ChapterDefinition = {
         { id: 'd', text: 'der Kindes' },
       ],
       correctOptionId: 'a',
-      explanation: 'Kind is neuter and belongs to the hand-picked monosyllabic group that adds -es: des Kindes.',
+      explanation:
+        'Kind is neuter and belongs to the hand-picked monosyllabic group that adds -es: des Kindes.',
     },
     {
       id: 'ch82-ex-09',
@@ -421,7 +444,8 @@ export const chapter082: ChapterDefinition = {
         { id: 'd', text: 'während die Ferien' },
       ],
       correctOptionId: 'a',
-      explanation: 'Ferien is plural, so the genitive article is der and the noun stays unchanged: während der Ferien.',
+      explanation:
+        'Ferien is plural, so the genitive article is der and the noun stays unchanged: während der Ferien.',
     },
     {
       id: 'ch82-ex-10',
@@ -439,7 +463,8 @@ export const chapter082: ChapterDefinition = {
         { id: 'd', text: 'einer Kaffee' },
       ],
       correctOptionId: 'a',
-      explanation: 'Kaffee is masculine, so the genitive indefinite article eines is used and the noun adds -s: eines Kaffees.',
+      explanation:
+        'Kaffee is masculine, so the genitive indefinite article eines is used and the noun adds -s: eines Kaffees.',
     },
     {
       id: 'ch82-ex-11',
@@ -475,7 +500,8 @@ export const chapter082: ChapterDefinition = {
         { id: 'd', text: 'dem Jahr' },
       ],
       correctOptionId: 'a',
-      explanation: 'Jahr belongs to the hand-picked monosyllabic group that adds -es: des Jahres.',
+      explanation:
+        'Jahr belongs to the hand-picked monosyllabic group that adds -es: des Jahres.',
     },
     {
       id: 'ch82-ex-13',
@@ -493,7 +519,8 @@ export const chapter082: ChapterDefinition = {
         { id: 'd', text: 'der Autos' },
       ],
       correctOptionId: 'a',
-      explanation: 'Auto is neuter, polysyllabic, and non-sibilant, so it takes plain -s in the genitive: des Autos.',
+      explanation:
+        'Auto is neuter, polysyllabic, and non-sibilant, so it takes plain -s in the genitive: des Autos.',
     },
     {
       id: 'ch82-ex-14',
@@ -511,7 +538,8 @@ export const chapter082: ChapterDefinition = {
         { id: 'd', text: 'seinen' },
       ],
       correctOptionId: 'a',
-      explanation: 'Krankheit is feminine, so the possessive article takes the genitive ending -er: seiner.',
+      explanation:
+        'Krankheit is feminine, so the possessive article takes the genitive ending -er: seiner.',
     },
     {
       id: 'ch82-ex-15',
@@ -529,7 +557,8 @@ export const chapter082: ChapterDefinition = {
         { id: 'd', text: 'Trotzdem' },
       ],
       correctOptionId: 'a',
-      explanation: 'wegen introduces a reason or cause, which fits here: because of the heavy rain, the match was cancelled.',
+      explanation:
+        'wegen introduces a reason or cause, which fits here: because of the heavy rain, the match was cancelled.',
     },
     {
       id: 'ch82-ex-16',
@@ -547,7 +576,8 @@ export const chapter082: ChapterDefinition = {
         { id: 'd', text: 'Trotz' },
       ],
       correctOptionId: 'a',
-      explanation: 'während indicates a time period during which something happens: during the concert, it was very loud.',
+      explanation:
+        'während indicates a time period during which something happens: during the concert, it was very loud.',
     },
     {
       id: 'ch82-ex-17',
@@ -565,7 +595,8 @@ export const chapter082: ChapterDefinition = {
         { id: 'd', text: 'Statt' },
       ],
       correctOptionId: 'a',
-      explanation: 'trotz signals a contrast — going for a walk anyway despite the bad weather.',
+      explanation:
+        'trotz signals a contrast — going for a walk anyway despite the bad weather.',
     },
     {
       id: 'ch82-ex-18',
@@ -577,13 +608,17 @@ export const chapter082: ChapterDefinition = {
       instruction: 'Choose the correct description of this sentence.',
       prompt: 'Wie ist der Satz "Wegen dem Regen bleiben wir zu Hause" einzuordnen?',
       options: [
-        { id: 'a', text: 'umgangssprachlich korrekt, aber in formeller Schriftsprache sollte der Genitiv (wegen des Regens) stehen' },
+        {
+          id: 'a',
+          text: 'umgangssprachlich korrekt, aber in formeller Schriftsprache sollte der Genitiv (wegen des Regens) stehen',
+        },
         { id: 'b', text: 'grammatisch falsch in jedem Kontext' },
         { id: 'c', text: 'die einzig richtige Form in geschriebenem Deutsch' },
         { id: 'd', text: 'eine veraltete Form, die niemand mehr benutzt' },
       ],
       correctOptionId: 'a',
-      explanation: 'The dative after wegen is widely used in casual speech but is considered informal; formal writing expects the genitive, wegen des Regens.',
+      explanation:
+        'The dative after wegen is widely used in casual speech but is considered informal; formal writing expects the genitive, wegen des Regens.',
     },
     {
       id: 'ch82-ex-19',
@@ -595,12 +630,22 @@ export const chapter082: ChapterDefinition = {
       instruction: 'Choose the sentence more appropriate for a formal written report.',
       prompt: 'Welcher Satz passt besser in einen formellen, schriftlichen Bericht?',
       options: [
-        { id: 'a', text: 'Wegen des Staus kamen die Mitarbeiter zu spät zur Besprechung.' },
-        { id: 'b', text: 'Wegen dem Stau kamen die Mitarbeiter zu spät zur Besprechung.' },
-        { id: 'c', text: 'Wegen der Stau kamen die Mitarbeiter zu spät zur Besprechung.' },
+        {
+          id: 'a',
+          text: 'Wegen des Staus kamen die Mitarbeiter zu spät zur Besprechung.',
+        },
+        {
+          id: 'b',
+          text: 'Wegen dem Stau kamen die Mitarbeiter zu spät zur Besprechung.',
+        },
+        {
+          id: 'c',
+          text: 'Wegen der Stau kamen die Mitarbeiter zu spät zur Besprechung.',
+        },
       ],
       correctOptionId: 'a',
-      explanation: 'Formal written German expects the genitive after wegen: wegen des Staus, not the colloquial dative wegen dem Stau.',
+      explanation:
+        'Formal written German expects the genitive after wegen: wegen des Staus, not the colloquial dative wegen dem Stau.',
     },
     {
       id: 'ch82-ex-20',
@@ -610,7 +655,8 @@ export const chapter082: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['genitive', 'sentence-building', 'statt'],
       instruction: 'Choose the correctly formed sentence.',
-      prompt: 'Which sentence correctly expresses: "Instead of a car, we bought a bike."?',
+      prompt:
+        'Which sentence correctly expresses: "Instead of a car, we bought a bike."?',
       options: [
         { id: 'a', text: 'Statt eines Autos haben wir ein Fahrrad gekauft.' },
         { id: 'b', text: 'Statt ein Auto haben wir ein Fahrrad gekauft.' },
@@ -618,7 +664,8 @@ export const chapter082: ChapterDefinition = {
         { id: 'd', text: 'Statt der Auto haben wir ein Fahrrad gekauft.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Auto is neuter, so the genitive indefinite article eines is required and the noun adds -s: eines Autos.',
+      explanation:
+        'Auto is neuter, so the genitive indefinite article eines is required and the noun adds -s: eines Autos.',
     },
     {
       id: 'ch82-ex-21',
@@ -702,7 +749,8 @@ export const chapter082: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['genitive', 'noun-endings', 'sibilant', 'wegen'],
-      instruction: 'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
+      instruction:
+        'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
       prompt: 'wegen + das Haus →',
       acceptedAnswers: ['des Hauses'],
       answerMode: 'caseInsensitive',
@@ -717,13 +765,15 @@ export const chapter082: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['genitive', 'noun-endings', 'hand-picked', 'trotz'],
-      instruction: 'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
+      instruction:
+        'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
       prompt: 'trotz + das Kind →',
       acceptedAnswers: ['des Kindes'],
       answerMode: 'caseInsensitive',
       placeholder: 'des ...',
       maxLength: 25,
-      explanation: 'Kind is in the hand-picked monosyllabic group, so it takes -es: des Kindes.',
+      explanation:
+        'Kind is in the hand-picked monosyllabic group, so it takes -es: des Kindes.',
     },
     {
       id: 'ch82-ex-28',
@@ -732,13 +782,15 @@ export const chapter082: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['genitive', 'noun-endings', 'plain-s', 'waehrend'],
-      instruction: 'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
+      instruction:
+        'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
       prompt: 'während + der Sommer →',
       acceptedAnswers: ['des Sommers'],
       answerMode: 'caseInsensitive',
       placeholder: 'des ...',
       maxLength: 25,
-      explanation: 'Sommer is masculine, polysyllabic, and non-sibilant, so it takes plain -s: des Sommers.',
+      explanation:
+        'Sommer is masculine, polysyllabic, and non-sibilant, so it takes plain -s: des Sommers.',
     },
     {
       id: 'ch82-ex-29',
@@ -747,13 +799,15 @@ export const chapter082: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['genitive', 'feminine', 'no-ending', 'wegen'],
-      instruction: 'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
+      instruction:
+        'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
       prompt: 'wegen + die Verspätung →',
       acceptedAnswers: ['der Verspätung'],
       answerMode: 'caseInsensitive',
       placeholder: 'der ...',
       maxLength: 25,
-      explanation: 'Verspätung is feminine, so only the article changes; the noun itself never takes an ending: der Verspätung.',
+      explanation:
+        'Verspätung is feminine, so only the article changes; the noun itself never takes an ending: der Verspätung.',
     },
     {
       id: 'ch82-ex-30',
@@ -762,13 +816,15 @@ export const chapter082: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['genitive', 'plural', 'no-ending', 'waehrend'],
-      instruction: 'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
+      instruction:
+        'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
       prompt: 'während + die Ferien →',
       acceptedAnswers: ['der Ferien'],
       answerMode: 'caseInsensitive',
       placeholder: 'der ...',
       maxLength: 25,
-      explanation: 'Ferien is plural, so only the article changes to der; the noun stays the same.',
+      explanation:
+        'Ferien is plural, so only the article changes to der; the noun stays the same.',
     },
     {
       id: 'ch82-ex-31',
@@ -777,13 +833,15 @@ export const chapter082: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['genitive', 'indefinite', 'statt'],
-      instruction: 'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
+      instruction:
+        'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
       prompt: 'statt + ein Kaffee →',
       acceptedAnswers: ['eines Kaffees'],
       answerMode: 'caseInsensitive',
       placeholder: 'eines ...',
       maxLength: 25,
-      explanation: 'Kaffee is masculine, so the indefinite genitive article eines is used and the noun adds -s: eines Kaffees.',
+      explanation:
+        'Kaffee is masculine, so the indefinite genitive article eines is used and the noun adds -s: eines Kaffees.',
     },
     {
       id: 'ch82-ex-32',
@@ -792,9 +850,13 @@ export const chapter082: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['genitive', 'sentence-building', 'trotz'],
-      instruction: 'Build a complete sentence from the cue words, using the genitive after trotz. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete sentence from the cue words, using the genitive after trotz. Capitalisation and punctuation are checked.',
       prompt: 'wir – gehen – spazieren – trotz – der Regen',
-      acceptedAnswers: ['Wir gehen trotz des Regens spazieren.', 'Trotz des Regens gehen wir spazieren.'],
+      acceptedAnswers: [
+        'Wir gehen trotz des Regens spazieren.',
+        'Trotz des Regens gehen wir spazieren.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wir gehen trotz ...',
       maxLength: 60,
@@ -807,13 +869,15 @@ export const chapter082: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['genitive', 'sentence-building', 'wegen'],
-      instruction: 'Build a complete sentence from the cue words, using the genitive after wegen. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete sentence from the cue words, using the genitive after wegen. Capitalisation and punctuation are checked.',
       prompt: 'wegen – die Verspätung – mussten – wir – warten',
       acceptedAnswers: ['Wegen der Verspätung mussten wir warten.'],
       answerMode: 'normalized',
       placeholder: 'Wegen der Verspätung ...',
       maxLength: 60,
-      explanation: 'die Verspätung becomes der Verspätung in the genitive after wegen; only the article changes.',
+      explanation:
+        'die Verspätung becomes der Verspätung in the genitive after wegen; only the article changes.',
     },
     {
       id: 'ch82-ex-34',
@@ -822,13 +886,15 @@ export const chapter082: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['genitive', 'sentence-building', 'waehrend'],
-      instruction: 'Build a complete sentence from the cue words, using the genitive after während. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete sentence from the cue words, using the genitive after während. Capitalisation and punctuation are checked.',
       prompt: 'während – die Ferien – fahren – wir – ans Meer',
       acceptedAnswers: ['Während der Ferien fahren wir ans Meer.'],
       answerMode: 'normalized',
       placeholder: 'Während der Ferien ...',
       maxLength: 60,
-      explanation: 'die Ferien becomes der Ferien in the genitive after während; the plural noun takes no added ending.',
+      explanation:
+        'die Ferien becomes der Ferien in the genitive after während; the plural noun takes no added ending.',
     },
     {
       id: 'ch82-ex-35',
@@ -837,13 +903,15 @@ export const chapter082: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['genitive', 'sentence-building', 'statt'],
-      instruction: 'Build a complete sentence from the cue words, using the genitive after statt. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete sentence from the cue words, using the genitive after statt. Capitalisation and punctuation are checked.',
       prompt: 'statt – das Auto – nahmen – wir – das Fahrrad',
       acceptedAnswers: ['Statt des Autos nahmen wir das Fahrrad.'],
       answerMode: 'normalized',
       placeholder: 'Statt des Autos ...',
       maxLength: 60,
-      explanation: 'das Auto becomes des Autos in the genitive after statt; Auto is neuter and takes plain -s.',
+      explanation:
+        'das Auto becomes des Autos in the genitive after statt; Auto is neuter and takes plain -s.',
     },
     {
       id: 'ch82-ex-36',
@@ -852,13 +920,16 @@ export const chapter082: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['genitive', 'register', 'transformation', 'wegen'],
-      instruction: 'Rewrite the colloquial sentence in standard, formal German using the genitive. Capitalisation and punctuation are checked.',
-      prompt: 'Umgangssprachlich: Wegen dem Regen bleiben wir zu Hause. → Standarddeutsch:',
+      instruction:
+        'Rewrite the colloquial sentence in standard, formal German using the genitive. Capitalisation and punctuation are checked.',
+      prompt:
+        'Umgangssprachlich: Wegen dem Regen bleiben wir zu Hause. → Standarddeutsch:',
       acceptedAnswers: ['Wegen des Regens bleiben wir zu Hause.'],
       answerMode: 'normalized',
       placeholder: 'Wegen des Regens ...',
       maxLength: 60,
-      explanation: 'The formal, written standard replaces the colloquial dative dem Regen with the genitive des Regens.',
+      explanation:
+        'The formal, written standard replaces the colloquial dative dem Regen with the genitive des Regens.',
     },
     {
       id: 'ch82-ex-37',
@@ -867,13 +938,15 @@ export const chapter082: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['genitive', 'sentence-building', 'possessive-articles', 'trotz'],
-      instruction: 'Build a complete sentence from the cue words, using the genitive possessive article after trotz. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete sentence from the cue words, using the genitive possessive article after trotz. Capitalisation and punctuation are checked.',
       prompt: 'trotz – seine Krankheit – arbeitet – er – weiter',
       acceptedAnswers: ['Trotz seiner Krankheit arbeitet er weiter.'],
       answerMode: 'normalized',
       placeholder: 'Trotz seiner Krankheit ...',
       maxLength: 60,
-      explanation: 'seine Krankheit is feminine, so the possessive article takes the genitive ending -er: seiner Krankheit.',
+      explanation:
+        'seine Krankheit is feminine, so the possessive article takes the genitive ending -er: seiner Krankheit.',
     },
     {
       id: 'ch82-ex-38',
@@ -882,13 +955,16 @@ export const chapter082: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['genitive', 'sentence-building', 'hand-picked', 'wegen'],
-      instruction: 'Build a complete sentence from the cue words, using the correct genitive noun ending. Capitalisation and punctuation are checked.',
-      prompt: 'wegen – das Jahr – war – der Umsatz – niedriger (i.e. because of the [difficult] year, revenue was lower)',
+      instruction:
+        'Build a complete sentence from the cue words, using the correct genitive noun ending. Capitalisation and punctuation are checked.',
+      prompt:
+        'wegen – das Jahr – war – der Umsatz – niedriger (i.e. because of the [difficult] year, revenue was lower)',
       acceptedAnswers: ['Wegen des Jahres war der Umsatz niedriger.'],
       answerMode: 'normalized',
       placeholder: 'Wegen des Jahres ...',
       maxLength: 60,
-      explanation: 'Jahr is in the hand-picked monosyllabic group that adds -es: wegen des Jahres.',
+      explanation:
+        'Jahr is in the hand-picked monosyllabic group that adds -es: wegen des Jahres.',
     },
     {
       id: 'ch82-ex-39',
@@ -898,7 +974,8 @@ export const chapter082: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['genitive-prepositions', 'meaning', 'aufgrund'],
       instruction: 'Choose the preposition that matches the English meaning.',
-      prompt: "Which preposition means 'on the basis of, due to' (formal, governs the genitive)?",
+      prompt:
+        "Which preposition means 'on the basis of, due to' (formal, governs the genitive)?",
       options: [
         { id: 'a', text: 'aufgrund' },
         { id: 'b', text: 'angesichts' },
@@ -924,7 +1001,8 @@ export const chapter082: ChapterDefinition = {
         { id: 'd', text: 'anstelle' },
       ],
       correctOptionId: 'a',
-      explanation: 'angesichts means "in view of, given, considering" and governs the genitive.',
+      explanation:
+        'angesichts means "in view of, given, considering" and governs the genitive.',
     },
     {
       id: 'ch82-ex-41',
@@ -934,7 +1012,8 @@ export const chapter082: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['genitive-prepositions', 'meaning', 'anstelle'],
       instruction: 'Choose the preposition that matches the English meaning.',
-      prompt: "Which preposition means 'in place of, instead of' (a formal synonym of statt)?",
+      prompt:
+        "Which preposition means 'in place of, instead of' (a formal synonym of statt)?",
       options: [
         { id: 'a', text: 'anstelle' },
         { id: 'b', text: 'aufgrund' },
@@ -942,7 +1021,8 @@ export const chapter082: ChapterDefinition = {
         { id: 'd', text: 'mithilfe' },
       ],
       correctOptionId: 'a',
-      explanation: 'anstelle means "in place of, instead of" and governs the genitive, like statt.',
+      explanation:
+        'anstelle means "in place of, instead of" and governs the genitive, like statt.',
     },
     {
       id: 'ch82-ex-42',
@@ -1014,7 +1094,8 @@ export const chapter082: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'a',
-      explanation: 'Dorf is neuter, so the genitive definite article is des; the noun itself adds -es: des Dorfes.',
+      explanation:
+        'Dorf is neuter, so the genitive definite article is des; the noun itself adds -es: des Dorfes.',
     },
     {
       id: 'ch82-ex-46',
@@ -1050,7 +1131,8 @@ export const chapter082: ChapterDefinition = {
         { id: 'd', text: 'ein' },
       ],
       correctOptionId: 'a',
-      explanation: 'Wörterbuch is neuter, so the genitive indefinite article is eines: eines Wörterbuchs.',
+      explanation:
+        'Wörterbuch is neuter, so the genitive indefinite article is eines: eines Wörterbuchs.',
     },
     {
       id: 'ch82-ex-48',
@@ -1068,7 +1150,8 @@ export const chapter082: ChapterDefinition = {
         { id: 'd', text: 'Innerhalb' },
       ],
       correctOptionId: 'a',
-      explanation: 'infolge highlights a direct consequence — the road was closed as a result of the accident.',
+      explanation:
+        'infolge highlights a direct consequence — the road was closed as a result of the accident.',
     },
     {
       id: 'ch82-ex-49',
@@ -1087,7 +1170,8 @@ export const chapter082: ChapterDefinition = {
         { id: 'p5', left: 'innerhalb', right: 'within, inside of' },
         { id: 'p6', left: 'oberhalb', right: 'above' },
       ],
-      explanation: 'All six words are genitive prepositions with distinct, specific meanings used mainly in formal or written German.',
+      explanation:
+        'All six words are genitive prepositions with distinct, specific meanings used mainly in formal or written German.',
     },
     {
       id: 'ch82-ex-50',
@@ -1105,7 +1189,8 @@ export const chapter082: ChapterDefinition = {
         { id: 'p4', left: 'mithilfe', right: 'with the help of' },
         { id: 'p5', left: 'infolge', right: 'as a result of, owing to' },
       ],
-      explanation: 'diesseits and jenseits form a spatial pair, just like oberhalb/unterhalb and innerhalb/außerhalb.',
+      explanation:
+        'diesseits and jenseits form a spatial pair, just like oberhalb/unterhalb and innerhalb/außerhalb.',
     },
     {
       id: 'ch82-ex-51',
@@ -1114,7 +1199,8 @@ export const chapter082: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['genitive', 'noun-endings', 'articles'],
-      instruction: 'Match each preposition-plus-noun cue to its correctly formed genitive phrase.',
+      instruction:
+        'Match each preposition-plus-noun cue to its correctly formed genitive phrase.',
       prompt: 'Match the cues to the correct genitive noun phrase.',
       pairs: [
         { id: 'p1', left: 'aufgrund + das Wetter', right: 'des Wetters' },
@@ -1124,7 +1210,8 @@ export const chapter082: ChapterDefinition = {
         { id: 'p5', left: 'jenseits + die Grenze', right: 'der Grenze' },
         { id: 'p6', left: 'mithilfe + ein Wörterbuch', right: 'eines Wörterbuchs' },
       ],
-      explanation: 'Masculine and neuter nouns take des/eines with -s or -es; feminine nouns take der/einer with no added ending.',
+      explanation:
+        'Masculine and neuter nouns take des/eines with -s or -es; feminine nouns take der/einer with no added ending.',
     },
     {
       id: 'ch82-ex-52',
@@ -1152,7 +1239,8 @@ export const chapter082: ChapterDefinition = {
       templateParts: ['Angesichts ', ' musste die Regierung handeln.'],
       slots: [{ id: 'slot1', correctWord: 'der Lage' }],
       wordBank: ['der Lage', 'die Lage', 'dem Lage', 'des Lage'],
-      explanation: 'Lage is feminine, so the genitive article is der and the noun takes no added ending.',
+      explanation:
+        'Lage is feminine, so the genitive article is der and the noun takes no added ending.',
     },
     {
       id: 'ch82-ex-54',
@@ -1166,7 +1254,8 @@ export const chapter082: ChapterDefinition = {
       templateParts: ['Anstelle ', ' unterschrieb die Assistentin.'],
       slots: [{ id: 'slot1', correctWord: 'des Chefs' }],
       wordBank: ['des Chefs', 'dem Chef', 'den Chef', 'der Chef'],
-      explanation: 'Chef is masculine, so the genitive article is des and the noun adds plain -s: des Chefs.',
+      explanation:
+        'Chef is masculine, so the genitive article is des and the noun adds plain -s: des Chefs.',
     },
     {
       id: 'ch82-ex-55',
@@ -1180,7 +1269,8 @@ export const chapter082: ChapterDefinition = {
       templateParts: ['Außerhalb ', ' ist es viel ruhiger.'],
       slots: [{ id: 'slot1', correctWord: 'der Stadt' }],
       wordBank: ['der Stadt', 'die Stadt', 'dem Stadt', 'des Stadt'],
-      explanation: 'Stadt is feminine, so the genitive article is der and the noun takes no added ending.',
+      explanation:
+        'Stadt is feminine, so the genitive article is der and the noun takes no added ending.',
     },
     {
       id: 'ch82-ex-56',
@@ -1194,7 +1284,8 @@ export const chapter082: ChapterDefinition = {
       templateParts: ['Innerhalb ', ' muss die Rechnung bezahlt werden.'],
       slots: [{ id: 'slot1', correctWord: 'einer Woche' }],
       wordBank: ['einer Woche', 'eine Woche', 'einem Woche', 'eines Woche'],
-      explanation: 'Woche is feminine, so the genitive indefinite article is einer and the noun takes no added ending.',
+      explanation:
+        'Woche is feminine, so the genitive indefinite article is einer and the noun takes no added ending.',
     },
     {
       id: 'ch82-ex-57',
@@ -1208,7 +1299,8 @@ export const chapter082: ChapterDefinition = {
       templateParts: ['Oberhalb ', ' liegt die alte Burg.'],
       slots: [{ id: 'slot1', correctWord: 'des Dorfes' }],
       wordBank: ['des Dorfes', 'dem Dorf', 'das Dorf', 'der Dorfes'],
-      explanation: 'Dorf belongs to the hand-picked monosyllabic group that adds -es: des Dorfes.',
+      explanation:
+        'Dorf belongs to the hand-picked monosyllabic group that adds -es: des Dorfes.',
     },
     {
       id: 'ch82-ex-58',
@@ -1222,7 +1314,8 @@ export const chapter082: ChapterDefinition = {
       templateParts: ['Diesseits ', ' liegt das kleine Dorf.'],
       slots: [{ id: 'slot1', correctWord: 'des Flusses' }],
       wordBank: ['des Flusses', 'dem Fluss', 'den Fluss', 'der Flusses'],
-      explanation: 'Fluss is sibilant-final, so it takes -es in the genitive: des Flusses.',
+      explanation:
+        'Fluss is sibilant-final, so it takes -es in the genitive: des Flusses.',
     },
     {
       id: 'ch82-ex-59',
@@ -1236,7 +1329,8 @@ export const chapter082: ChapterDefinition = {
       templateParts: ['Jenseits ', ' beginnt ein anderes Land.'],
       slots: [{ id: 'slot1', correctWord: 'der Grenze' }],
       wordBank: ['der Grenze', 'die Grenze', 'dem Grenze', 'des Grenze'],
-      explanation: 'Grenze is feminine, so the genitive article is der and the noun takes no added ending.',
+      explanation:
+        'Grenze is feminine, so the genitive article is der and the noun takes no added ending.',
     },
     {
       id: 'ch82-ex-60',
@@ -1250,7 +1344,8 @@ export const chapter082: ChapterDefinition = {
       tokens: ['Aufgrund', 'dem', 'Wetters', 'wurde', 'das', 'Spiel', 'abgesagt.'],
       errorTokenIndex: 1,
       correction: 'des',
-      explanation: 'aufgrund governs the genitive, so the article must be des, not the dative dem.',
+      explanation:
+        'aufgrund governs the genitive, so the article must be des, not the dative dem.',
     },
     {
       id: 'ch82-ex-61',
@@ -1264,7 +1359,8 @@ export const chapter082: ChapterDefinition = {
       tokens: ['Angesichts', 'dem', 'Problems', 'musste', 'die', 'Firma', 'reagieren.'],
       errorTokenIndex: 1,
       correction: 'des',
-      explanation: 'angesichts governs the genitive, so the article must be des, not the dative dem.',
+      explanation:
+        'angesichts governs the genitive, so the article must be des, not the dative dem.',
     },
     {
       id: 'ch82-ex-62',
@@ -1273,12 +1369,14 @@ export const chapter082: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'production',
       grammarFocus: ['genitive', 'noun-endings', 'masculine', 'infolge'],
-      instruction: 'Find the token that is missing its genitive ending and give its correction.',
+      instruction:
+        'Find the token that is missing its genitive ending and give its correction.',
       prompt: 'Infolge des Unfall war die Straße gesperrt.',
       tokens: ['Infolge', 'des', 'Unfall', 'war', 'die', 'Straße', 'gesperrt.'],
       errorTokenIndex: 2,
       correction: 'Unfalls',
-      explanation: 'Unfall is masculine and polysyllabic, so it takes plain -s in the genitive: des Unfalls.',
+      explanation:
+        'Unfall is masculine and polysyllabic, so it takes plain -s in the genitive: des Unfalls.',
     },
     {
       id: 'ch82-ex-63',
@@ -1287,12 +1385,14 @@ export const chapter082: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'production',
       grammarFocus: ['genitive', 'noun-endings', 'hand-picked', 'unterhalb'],
-      instruction: 'Find the token that is missing its genitive ending and give its correction.',
+      instruction:
+        'Find the token that is missing its genitive ending and give its correction.',
       prompt: 'Unterhalb des Dorf fließt der Fluss ruhig.',
       tokens: ['Unterhalb', 'des', 'Dorf', 'fließt', 'der', 'Fluss', 'ruhig.'],
       errorTokenIndex: 2,
       correction: 'Dorfes',
-      explanation: 'Dorf belongs to the hand-picked monosyllabic group that adds -es in the genitive: des Dorfes.',
+      explanation:
+        'Dorf belongs to the hand-picked monosyllabic group that adds -es in the genitive: des Dorfes.',
     },
     {
       id: 'ch82-ex-64',
@@ -1301,12 +1401,14 @@ export const chapter082: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'production',
       grammarFocus: ['genitive', 'articles', 'gender', 'mithilfe'],
-      instruction: 'Find the token with the wrong gendered article and give its correction.',
+      instruction:
+        'Find the token with the wrong gendered article and give its correction.',
       prompt: 'Mithilfe einer Wörterbuchs übersetzte sie den Text.',
       tokens: ['Mithilfe', 'einer', 'Wörterbuchs', 'übersetzte', 'sie', 'den', 'Text.'],
       errorTokenIndex: 1,
       correction: 'eines',
-      explanation: 'Wörterbuch is neuter, so the genitive indefinite article is eines, not the feminine einer.',
+      explanation:
+        'Wörterbuch is neuter, so the genitive indefinite article is eines, not the feminine einer.',
     },
     {
       id: 'ch82-ex-65',
@@ -1320,7 +1422,8 @@ export const chapter082: ChapterDefinition = {
       tokens: ['Infolge', 'dem', 'Sturms', 'fielen', 'viele', 'Bäume', 'um.'],
       errorTokenIndex: 1,
       correction: 'des',
-      explanation: 'infolge governs the genitive, so the article must be des, not the dative dem.',
+      explanation:
+        'infolge governs the genitive, so the article must be des, not the dative dem.',
     },
     {
       id: 'ch82-ex-66',
@@ -1337,7 +1440,8 @@ export const chapter082: ChapterDefinition = {
         { id: 'seg3', text: 'das Spiel' },
         { id: 'seg4', text: 'abgesagt.' },
       ],
-      explanation: 'The genitive phrase Aufgrund des schlechten Wetters can open the sentence, with the finite verb wurde in position 2.',
+      explanation:
+        'The genitive phrase Aufgrund des schlechten Wetters can open the sentence, with the finite verb wurde in position 2.',
     },
     {
       id: 'ch82-ex-67',
@@ -1354,7 +1458,8 @@ export const chapter082: ChapterDefinition = {
         { id: 'seg3', text: 'es' },
         { id: 'seg4', text: 'viel ruhiger.' },
       ],
-      explanation: 'Außerhalb der Stadt opens the sentence, with the finite verb ist in position 2.',
+      explanation:
+        'Außerhalb der Stadt opens the sentence, with the finite verb ist in position 2.',
     },
     {
       id: 'ch82-ex-68',
@@ -1371,7 +1476,8 @@ export const chapter082: ChapterDefinition = {
         { id: 'seg3', text: 'sie' },
         { id: 'seg4', text: 'den Text.' },
       ],
-      explanation: 'Mithilfe eines Wörterbuchs opens the sentence, with the finite verb übersetzte in position 2.',
+      explanation:
+        'Mithilfe eines Wörterbuchs opens the sentence, with the finite verb übersetzte in position 2.',
     },
     {
       id: 'ch82-ex-69',
@@ -1386,7 +1492,8 @@ export const chapter082: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'preposition',
       maxLength: 15,
-      explanation: 'angesichts means "in view of, given, considering" and governs the genitive.',
+      explanation:
+        'angesichts means "in view of, given, considering" and governs the genitive.',
     },
     {
       id: 'ch82-ex-70',
@@ -1410,13 +1517,15 @@ export const chapter082: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['genitive', 'noun-endings', 'masculine', 'aufgrund'],
-      instruction: 'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
+      instruction:
+        'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
       prompt: 'aufgrund + der Unfall →',
       acceptedAnswers: ['des Unfalls'],
       answerMode: 'caseInsensitive',
       placeholder: 'des ...',
       maxLength: 25,
-      explanation: 'Unfall is masculine, polysyllabic, and non-sibilant, so it takes plain -s: des Unfalls.',
+      explanation:
+        'Unfall is masculine, polysyllabic, and non-sibilant, so it takes plain -s: des Unfalls.',
     },
     {
       id: 'ch82-ex-72',
@@ -1425,13 +1534,15 @@ export const chapter082: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['genitive', 'feminine', 'no-ending', 'jenseits'],
-      instruction: 'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
+      instruction:
+        'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
       prompt: 'jenseits + die Grenze →',
       acceptedAnswers: ['der Grenze'],
       answerMode: 'caseInsensitive',
       placeholder: 'der ...',
       maxLength: 25,
-      explanation: 'Grenze is feminine, so only the article changes to der; the noun stays unchanged.',
+      explanation:
+        'Grenze is feminine, so only the article changes to der; the noun stays unchanged.',
     },
     {
       id: 'ch82-ex-73',
@@ -1440,13 +1551,15 @@ export const chapter082: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['genitive', 'indefinite', 'neuter', 'mithilfe'],
-      instruction: 'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
+      instruction:
+        'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
       prompt: 'mithilfe + ein Wörterbuch →',
       acceptedAnswers: ['eines Wörterbuchs'],
       answerMode: 'caseInsensitive',
       placeholder: 'eines ...',
       maxLength: 25,
-      explanation: 'Wörterbuch is neuter, so the genitive indefinite article eines is used and the noun adds -s: eines Wörterbuchs.',
+      explanation:
+        'Wörterbuch is neuter, so the genitive indefinite article eines is used and the noun adds -s: eines Wörterbuchs.',
     },
     {
       id: 'ch82-ex-74',
@@ -1455,13 +1568,17 @@ export const chapter082: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['genitive', 'sentence-building', 'adjective-endings', 'angesichts'],
-      instruction: 'Build a complete sentence from the cue words, using the genitive after angesichts. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete sentence from the cue words, using the genitive after angesichts. Capitalisation and punctuation are checked.',
       prompt: 'angesichts – die schwierige Lage – handelte – die Regierung – schnell',
-      acceptedAnswers: ['Angesichts der schwierigen Lage handelte die Regierung schnell.'],
+      acceptedAnswers: [
+        'Angesichts der schwierigen Lage handelte die Regierung schnell.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Angesichts der schwierigen Lage ...',
       maxLength: 70,
-      explanation: 'die schwierige Lage becomes der schwierigen Lage in the genitive: the feminine article changes to der and the adjective takes the genitive ending -en.',
+      explanation:
+        'die schwierige Lage becomes der schwierigen Lage in the genitive: the feminine article changes to der and the adjective takes the genitive ending -en.',
     },
     {
       id: 'ch82-ex-75',
@@ -1470,13 +1587,15 @@ export const chapter082: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['genitive', 'sentence-building', 'adjective-endings', 'infolge'],
-      instruction: 'Build a complete sentence from the cue words, using the genitive after infolge. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete sentence from the cue words, using the genitive after infolge. Capitalisation and punctuation are checked.',
       prompt: 'infolge – der starke Sturm – fielen – viele Bäume – um',
       acceptedAnswers: ['Infolge des starken Sturms fielen viele Bäume um.'],
       answerMode: 'normalized',
       placeholder: 'Infolge des starken Sturms ...',
       maxLength: 70,
-      explanation: 'der starke Sturm becomes des starken Sturms in the genitive: the masculine article changes to des, the noun adds -s, and the adjective takes the genitive ending -en.',
+      explanation:
+        'der starke Sturm becomes des starken Sturms in the genitive: the masculine article changes to des, the noun adds -s, and the adjective takes the genitive ending -en.',
     },
     {
       id: 'ch82-ex-76',
@@ -1485,13 +1604,16 @@ export const chapter082: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['genitive', 'register', 'case-government'],
-      instruction: 'Complete the sentence about register with one word. Capitalisation is not checked.',
-      prompt: 'Anders als wegen und trotz, die in der Umgangssprache oft mit dem Dativ stehen, verlangen aufgrund, infolge und angesichts in formellen Texten immer den ___.',
+      instruction:
+        'Complete the sentence about register with one word. Capitalisation is not checked.',
+      prompt:
+        'Anders als wegen und trotz, die in der Umgangssprache oft mit dem Dativ stehen, verlangen aufgrund, infolge und angesichts in formellen Texten immer den ___.',
       acceptedAnswers: ['Genitiv'],
       answerMode: 'caseInsensitive',
       placeholder: 'case',
       maxLength: 15,
-      explanation: 'Unlike wegen and trotz, which are frequently heard with the dative in casual speech, formal words like aufgrund, infolge, and angesichts are essentially always used with the genitive.',
+      explanation:
+        'Unlike wegen and trotz, which are frequently heard with the dative in casual speech, formal words like aufgrund, infolge, and angesichts are essentially always used with the genitive.',
     },
     {
       id: 'ch82-ex-77',
@@ -1500,13 +1622,15 @@ export const chapter082: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['genitive', 'sentence-building', 'jenseits'],
-      instruction: 'Build a complete sentence from the cue words, using the genitive after jenseits. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete sentence from the cue words, using the genitive after jenseits. Capitalisation and punctuation are checked.',
       prompt: 'jenseits – die Grenze – beginnt – ein anderes Land',
       acceptedAnswers: ['Jenseits der Grenze beginnt ein anderes Land.'],
       answerMode: 'normalized',
       placeholder: 'Jenseits der Grenze ...',
       maxLength: 60,
-      explanation: 'die Grenze becomes der Grenze in the genitive after jenseits; the feminine noun takes no added ending.',
+      explanation:
+        'die Grenze becomes der Grenze in the genitive after jenseits; the feminine noun takes no added ending.',
     },
   ],
 };

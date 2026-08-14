@@ -103,7 +103,7 @@ export interface PracticeState {
   startCumulativeSession: (
     chapters: ChapterDefinition[],
     exerciseIds: string[],
-    options?: { shuffleOptions?: boolean },
+    options?: { shuffleOptions?: boolean; mode?: 'cumulative' | 'placement' },
   ) => void;
   resumeSession: (chapter: ChapterDefinition) => boolean;
   hasStoredSession: (chapterNumber: number) => boolean;
@@ -238,11 +238,17 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
       submittedAnswers: [...previousAnswers, submittedAnswer],
     };
     set((state) => ({ results: { ...state.results, [exercise.id]: record } }));
-    useProgressStore.getState().recordAttempt({
-      exerciseId: exercise.id,
-      chapterNumber: exercise.chapterNumber,
-      outcome,
-    });
+    // A placement test probes chapters the learner has not studied. Recording
+    // it would mark those chapters as started and flood the review queue with
+    // material they were never taught, so it stays out of progress entirely.
+    if (get().mode !== 'placement') {
+      useProgressStore.getState().recordAttempt({
+        exerciseId: exercise.id,
+        chapterNumber: exercise.chapterNumber,
+        outcome,
+        grammarFocus: exercise.grammarFocus,
+      });
+    }
     persistSession();
   };
 
@@ -304,7 +310,7 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
 
       set({
         status: 'active',
-        mode: 'cumulative',
+        mode: options.mode ?? 'cumulative',
         chapterNumber: null,
         chapterNumbers: chapters.map((chapter) => chapter.number),
         exerciseIds,

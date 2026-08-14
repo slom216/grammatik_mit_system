@@ -49,10 +49,11 @@ export function makeTextInput(
   };
 }
 
+/** Enough to clear `CONTENT_RULES.minExercises`, split evenly by type. */
 export function makeExercises(): Exercise[] {
   return [
-    ...Array.from({ length: 12 }, (_unused, index) => makeSingleChoice(index + 1)),
-    ...Array.from({ length: 12 }, (_unused, index) => makeTextInput(index + 13)),
+    ...Array.from({ length: 25 }, (_unused, index) => makeSingleChoice(index + 1)),
+    ...Array.from({ length: 25 }, (_unused, index) => makeTextInput(index + 26)),
   ];
 }
 

@@ -223,7 +223,9 @@ function matchingText(
   return exercise.pairs
     .map((pair) => {
       const rightId = rightIdFor(pair);
-      const rightText = exercise.pairs.find((candidate) => candidate.id === rightId)?.right;
+      const rightText = exercise.pairs.find(
+        (candidate) => candidate.id === rightId,
+      )?.right;
       return `${pair.left} → ${rightText ?? '?'}`;
     })
     .join(', ');

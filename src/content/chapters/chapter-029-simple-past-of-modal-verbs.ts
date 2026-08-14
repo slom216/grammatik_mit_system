@@ -98,15 +98,18 @@ export const chapter029: ChapterDefinition = {
       },
       {
         german: 'Kanntest du damals schon Deutsch? – Nein, aber ich konnte Englisch.',
-        english: 'Did you already know German back then? – No, but I could speak English.',
+        english:
+          'Did you already know German back then? – No, but I could speak English.',
         highlight: ['konnte'],
-        explanation: 'A simple past ability statement using können, following the fixed-ellipsis pattern from chapter 5 (kann/konnte + language).',
+        explanation:
+          'A simple past ability statement using können, following the fixed-ellipsis pattern from chapter 5 (kann/konnte + language).',
       },
       {
         german: 'Er musste gestern den ganzen Tag arbeiten.',
         english: 'He had to work all day yesterday.',
         highlight: ['musste'],
-        explanation: 'müssen becomes musste; the stem loses its umlaut, just as in the present-tense singular.',
+        explanation:
+          'müssen becomes musste; the stem loses its umlaut, just as in the present-tense singular.',
       },
       {
         german: 'Wir mussten die Prüfung zweimal machen.',
@@ -115,14 +118,16 @@ export const chapter029: ChapterDefinition = {
         explanation: 'wir takes the plural ending -ten: mussten.',
       },
       {
-        german: 'Ich wollte letztes Jahr nach Italien fahren, aber es hat nicht geklappt.',
+        german:
+          'Ich wollte letztes Jahr nach Italien fahren, aber es hat nicht geklappt.',
         english: 'I wanted to go to Italy last year, but it did not work out.',
         highlight: ['wollte'],
-        explanation: 'wollen has no umlaut in the infinitive, so its past stem woll- looks like the infinitive stem plus -te.',
+        explanation:
+          'wollen has no umlaut in the infinitive, so its past stem woll- looks like the infinitive stem plus -te.',
       },
       {
         german: 'Wolltet ihr wirklich schon um sechs Uhr losfahren?',
-        english: 'Did you really want to leave already at six o\'clock?',
+        english: "Did you really want to leave already at six o'clock?",
         highlight: ['Wolltet'],
         explanation: 'ihr takes the ending -tet: wolltet.',
       },
@@ -130,19 +135,22 @@ export const chapter029: ChapterDefinition = {
         german: 'Als Kind durfte ich abends nicht lange fernsehen.',
         english: 'As a child, I was not allowed to watch TV for long in the evening.',
         highlight: ['durfte'],
-        explanation: 'dürfen becomes durfte, losing its umlaut (dürfen → durfte, not dürfte).',
+        explanation:
+          'dürfen becomes durfte, losing its umlaut (dürfen → durfte, not dürfte).',
       },
       {
         german: 'Ihr durftet früher nicht allein zur Schule gehen.',
         english: 'You (plural) were not allowed to go to school alone before.',
         highlight: ['durftet'],
-        explanation: 'ihr takes -tet: durftet, describing a permission that used to apply.',
+        explanation:
+          'ihr takes -tet: durftet, describing a permission that used to apply.',
       },
       {
         german: 'Du solltest deine Hausaufgaben machen, bevor du spielst.',
         english: 'You were supposed to do your homework before playing.',
         highlight: ['solltest'],
-        explanation: 'sollen becomes sollte in the past, describing an obligation set by someone else.',
+        explanation:
+          'sollen becomes sollte in the past, describing an obligation set by someone else.',
       },
       {
         german: 'Sie sollten pünktlich am Bahnhof sein.',
@@ -154,7 +162,8 @@ export const chapter029: ChapterDefinition = {
         german: 'Ich mochte diesen Lehrer sehr.',
         english: 'I liked this teacher a lot.',
         highlight: ['mochte'],
-        explanation: 'mögen becomes mochte: the umlaut disappears and the g changes to ch.',
+        explanation:
+          'mögen becomes mochte: the umlaut disappears and the g changes to ch.',
       },
       {
         german: 'Wir mochten das Restaurant nicht besonders.',
@@ -166,40 +175,47 @@ export const chapter029: ChapterDefinition = {
         german: 'Ich konnte gestern nicht kommen, weil ich krank war.',
         english: 'I could not come yesterday because I was sick.',
         highlight: ['konnte', 'war'],
-        explanation: 'The simple past of a modal verb combines naturally with the simple past of sein, exactly as in casual spoken German.',
+        explanation:
+          'The simple past of a modal verb combines naturally with the simple past of sein, exactly as in casual spoken German.',
       },
       {
         german: 'Musstest du wirklich schon so früh aufstehen?',
         english: 'Did you really have to get up that early?',
         highlight: ['Musstest'],
-        explanation: 'In a yes/no question, the modal opens position 1; the infinitive aufstehen still closes the clause.',
+        explanation:
+          'In a yes/no question, the modal opens position 1; the infinitive aufstehen still closes the clause.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich könnte gestern nicht kommen.',
         correct: 'Ich konnte gestern nicht kommen.',
-        explanation: 'könnte (with umlaut) is Konjunktiv II, a different form covered in a later chapter. The simple past of können has no umlaut: konnte.',
+        explanation:
+          'könnte (with umlaut) is Konjunktiv II, a different form covered in a later chapter. The simple past of können has no umlaut: konnte.',
       },
       {
         incorrect: 'Er müsste letzte Woche arbeiten.',
         correct: 'Er musste letzte Woche arbeiten.',
-        explanation: 'müsste carries the umlaut of Konjunktiv II. The simple past drops the umlaut entirely: musste.',
+        explanation:
+          'müsste carries the umlaut of Konjunktiv II. The simple past drops the umlaut entirely: musste.',
       },
       {
         incorrect: 'Ich mögte diesen Film sehr.',
         correct: 'Ich mochte diesen Film sehr.',
-        explanation: 'mögen forms its simple past with the stem mocht-, changing both the vowel and the consonant: mochte, not mögte.',
+        explanation:
+          'mögen forms its simple past with the stem mocht-, changing both the vowel and the consonant: mochte, not mögte.',
       },
       {
         incorrect: 'Sie durfte spielen draußen.',
         correct: 'Sie durfte draußen spielen.',
-        explanation: 'The dependent infinitive spielen must move to the very end of the clause, after draußen, just as it would in the present tense.',
+        explanation:
+          'The dependent infinitive spielen must move to the very end of the clause, after draußen, just as it would in the present tense.',
       },
       {
         incorrect: 'Wir wollten gehen nach Hause.',
         correct: 'Wir wollten nach Hause gehen.',
-        explanation: 'The infinitive gehen belongs at the end of the clause, after the destination phrase nach Hause, not right after the modal.',
+        explanation:
+          'The infinitive gehen belongs at the end of the clause, after the destination phrase nach Hause, not right after the modal.',
       },
     ],
     remember: [
@@ -376,7 +392,8 @@ export const chapter029: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['simple-past', 'modal-verbs', 'transformation'],
-      instruction: 'Choose the correct simple-past version of the present-tense sentence.',
+      instruction:
+        'Choose the correct simple-past version of the present-tense sentence.',
       prompt: 'Present: Ich kann gut kochen.',
       options: [
         { id: 'a', text: 'Ich kochte gut können.' },
@@ -415,7 +432,8 @@ export const chapter029: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['simple-past', 'modal-verbs', 'meaning'],
       instruction: 'Choose the modal verb that best fits the meaning.',
-      prompt: 'Als Kind ___ ich abends nicht lange fernsehen. (a rule that used to apply)',
+      prompt:
+        'Als Kind ___ ich abends nicht lange fernsehen. (a rule that used to apply)',
       options: [
         { id: 'a', text: 'musste' },
         { id: 'b', text: 'konnte' },
@@ -452,7 +470,8 @@ export const chapter029: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['simple-past', 'modal-verbs', 'koennen'],
-      instruction: 'Write the missing simple-past form of können. Capitalisation is not checked.',
+      instruction:
+        'Write the missing simple-past form of können. Capitalisation is not checked.',
       prompt: 'Ich ___ das Fenster nicht öffnen, es war zu schwer.',
       acceptedAnswers: ['konnte'],
       answerMode: 'caseInsensitive',
@@ -467,7 +486,8 @@ export const chapter029: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['simple-past', 'modal-verbs', 'muessen'],
-      instruction: 'Write the missing simple-past form of müssen. Capitalisation is not checked.',
+      instruction:
+        'Write the missing simple-past form of müssen. Capitalisation is not checked.',
       prompt: 'Du ___ heute Morgen sehr früh aufstehen.',
       acceptedAnswers: ['musstest'],
       answerMode: 'caseInsensitive',
@@ -482,7 +502,8 @@ export const chapter029: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['simple-past', 'modal-verbs', 'moegen'],
-      instruction: 'Write the missing simple-past form of mögen. Capitalisation is not checked.',
+      instruction:
+        'Write the missing simple-past form of mögen. Capitalisation is not checked.',
       prompt: 'Wir ___ diesen Film sehr, wir haben ihn zweimal gesehen.',
       acceptedAnswers: ['mochten'],
       answerMode: 'caseInsensitive',
@@ -498,7 +519,8 @@ export const chapter029: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['simple-past', 'modal-verbs', 'sollen'],
-      instruction: 'Write the missing simple-past form of sollen. Capitalisation is not checked.',
+      instruction:
+        'Write the missing simple-past form of sollen. Capitalisation is not checked.',
       prompt: 'Ihr ___ pünktlich zur Prüfung kommen.',
       acceptedAnswers: ['solltet'],
       answerMode: 'caseInsensitive',
@@ -512,7 +534,12 @@ export const chapter029: ChapterDefinition = {
       order: 17,
       type: 'textInput',
       level: 'production',
-      grammarFocus: ['simple-past', 'modal-verbs', 'word-order', 'sentence-reconstruction'],
+      grammarFocus: [
+        'simple-past',
+        'modal-verbs',
+        'word-order',
+        'sentence-reconstruction',
+      ],
       instruction:
         'Build a complete, correctly ordered sentence in the simple past from these words. Capitalisation and punctuation are checked.',
       prompt: 'ich – als Kind – nicht – schwimmen – können',
@@ -529,7 +556,12 @@ export const chapter029: ChapterDefinition = {
       order: 18,
       type: 'textInput',
       level: 'production',
-      grammarFocus: ['simple-past', 'modal-verbs', 'word-order', 'sentence-reconstruction'],
+      grammarFocus: [
+        'simple-past',
+        'modal-verbs',
+        'word-order',
+        'sentence-reconstruction',
+      ],
       instruction:
         'Build a complete, correctly ordered sentence in the simple past from these words. Capitalisation and punctuation are checked.',
       prompt: 'er – gestern – zum Arzt – gehen – müssen',
@@ -546,7 +578,12 @@ export const chapter029: ChapterDefinition = {
       order: 19,
       type: 'textInput',
       level: 'production',
-      grammarFocus: ['simple-past', 'modal-verbs', 'word-order', 'sentence-reconstruction'],
+      grammarFocus: [
+        'simple-past',
+        'modal-verbs',
+        'word-order',
+        'sentence-reconstruction',
+      ],
       instruction:
         'Build a complete, correctly ordered sentence in the simple past from these words. Capitalisation and punctuation are checked.',
       prompt: 'wir – letztes Jahr – nach Italien – fahren – wollen',
@@ -563,7 +600,12 @@ export const chapter029: ChapterDefinition = {
       order: 20,
       type: 'textInput',
       level: 'production',
-      grammarFocus: ['simple-past', 'modal-verbs', 'word-order', 'sentence-reconstruction'],
+      grammarFocus: [
+        'simple-past',
+        'modal-verbs',
+        'word-order',
+        'sentence-reconstruction',
+      ],
       instruction:
         'Build a complete, correctly ordered sentence in the simple past from these words. Capitalisation and punctuation are checked.',
       prompt: 'sie (plural) – die Prüfung – bestehen – müssen',
@@ -581,7 +623,8 @@ export const chapter029: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['simple-past', 'modal-verbs', 'transformation'],
-      instruction: 'Rewrite the sentence in the simple past. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence in the simple past. Capitalisation and punctuation are checked.',
       prompt: 'Present: Ich muss jetzt gehen.',
       acceptedAnswers: ['Ich musste jetzt gehen.'],
       answerMode: 'normalized',
@@ -614,7 +657,8 @@ export const chapter029: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['simple-past', 'modal-verbs', 'word-order', 'error-correction'],
-      instruction: 'Correct the word order and write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the word order and write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Sie wollte fahren nach Berlin.',
       acceptedAnswers: ['Sie wollte nach Berlin fahren.'],
       answerMode: 'normalized',
@@ -629,7 +673,12 @@ export const chapter029: ChapterDefinition = {
       order: 24,
       type: 'textInput',
       level: 'transfer',
-      grammarFocus: ['simple-past', 'modal-verbs', 'word-order', 'sentence-reconstruction'],
+      grammarFocus: [
+        'simple-past',
+        'modal-verbs',
+        'word-order',
+        'sentence-reconstruction',
+      ],
       instruction:
         'Build a complete, correctly ordered sentence in the simple past from these words. Capitalisation and punctuation are checked.',
       prompt: 'ich – als Kind – abends – nicht – fernsehen – dürfen',
@@ -800,7 +849,8 @@ export const chapter029: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['simple-past', 'modal-verbs', 'meaning'],
       instruction: 'Choose the modal verb that best fits the meaning.',
-      prompt: 'Er ___ pünktlich sein, aber er kam trotzdem zu spät. (an obligation set by someone else)',
+      prompt:
+        'Er ___ pünktlich sein, aber er kam trotzdem zu spät. (an obligation set by someone else)',
       options: [
         { id: 'a', text: 'konnte' },
         { id: 'b', text: 'durfte' },
@@ -837,7 +887,8 @@ export const chapter029: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['simple-past', 'modal-verbs', 'transformation'],
-      instruction: 'Choose the correct simple-past version of the present-tense sentence.',
+      instruction:
+        'Choose the correct simple-past version of the present-tense sentence.',
       prompt: 'Present: Sie will nach Hause fahren.',
       options: [
         { id: 'a', text: 'Sie wollte nach Hause fahren.' },
@@ -875,7 +926,8 @@ export const chapter029: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['simple-past', 'modal-verbs', 'duerfen'],
-      instruction: 'Write the missing simple-past form of dürfen. Capitalisation is not checked.',
+      instruction:
+        'Write the missing simple-past form of dürfen. Capitalisation is not checked.',
       prompt: 'Er ___ als Kind nicht allein zur Schule gehen.',
       acceptedAnswers: ['durfte'],
       answerMode: 'caseInsensitive',
@@ -890,7 +942,8 @@ export const chapter029: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['simple-past', 'modal-verbs', 'wollen'],
-      instruction: 'Write the missing simple-past form of wollen. Capitalisation is not checked.',
+      instruction:
+        'Write the missing simple-past form of wollen. Capitalisation is not checked.',
       prompt: 'Sie (plural) ___ unbedingt das Spiel gewinnen.',
       acceptedAnswers: ['wollten'],
       answerMode: 'caseInsensitive',
@@ -905,7 +958,8 @@ export const chapter029: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['simple-past', 'modal-verbs', 'sollen'],
-      instruction: 'Write the missing simple-past form of sollen. Capitalisation is not checked.',
+      instruction:
+        'Write the missing simple-past form of sollen. Capitalisation is not checked.',
       prompt: 'Ich ___ eigentlich anrufen, aber ich hatte keine Zeit.',
       acceptedAnswers: ['sollte'],
       answerMode: 'caseInsensitive',
@@ -920,7 +974,8 @@ export const chapter029: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['simple-past', 'modal-verbs', 'duerfen'],
-      instruction: 'Write the missing simple-past form of dürfen. Capitalisation is not checked.',
+      instruction:
+        'Write the missing simple-past form of dürfen. Capitalisation is not checked.',
       prompt: 'Du ___ als Teenager abends länger wegbleiben.',
       acceptedAnswers: ['durftest'],
       answerMode: 'caseInsensitive',
@@ -935,7 +990,8 @@ export const chapter029: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['simple-past', 'modal-verbs', 'koennen'],
-      instruction: 'Write the missing simple-past form of können. Capitalisation is not checked.',
+      instruction:
+        'Write the missing simple-past form of können. Capitalisation is not checked.',
       prompt: 'Wir ___ die Aufgabe leider nicht lösen.',
       acceptedAnswers: ['konnten'],
       answerMode: 'caseInsensitive',
@@ -950,7 +1006,8 @@ export const chapter029: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['simple-past', 'modal-verbs', 'muessen'],
-      instruction: 'Write the missing simple-past form of müssen. Capitalisation is not checked.',
+      instruction:
+        'Write the missing simple-past form of müssen. Capitalisation is not checked.',
       prompt: 'Ihr ___ die Rechnung bezahlen, bevor ihr gegangen seid.',
       acceptedAnswers: ['musstet'],
       answerMode: 'caseInsensitive',
@@ -964,7 +1021,12 @@ export const chapter029: ChapterDefinition = {
       order: 43,
       type: 'textInput',
       level: 'production',
-      grammarFocus: ['simple-past', 'modal-verbs', 'word-order', 'sentence-reconstruction'],
+      grammarFocus: [
+        'simple-past',
+        'modal-verbs',
+        'word-order',
+        'sentence-reconstruction',
+      ],
       instruction:
         'Build a complete, correctly ordered sentence in the simple past from these words. Capitalisation and punctuation are checked.',
       prompt: 'du – gestern – nicht – kommen – können',
@@ -981,7 +1043,12 @@ export const chapter029: ChapterDefinition = {
       order: 44,
       type: 'textInput',
       level: 'production',
-      grammarFocus: ['simple-past', 'modal-verbs', 'word-order', 'sentence-reconstruction'],
+      grammarFocus: [
+        'simple-past',
+        'modal-verbs',
+        'word-order',
+        'sentence-reconstruction',
+      ],
       instruction:
         'Build a complete, correctly ordered sentence in the simple past from these words. Capitalisation and punctuation are checked.',
       prompt: 'ihr – als Kinder – lange – draußen – spielen – dürfen',
@@ -999,7 +1066,8 @@ export const chapter029: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['simple-past', 'modal-verbs', 'transformation'],
-      instruction: 'Rewrite the sentence in the simple past. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence in the simple past. Capitalisation and punctuation are checked.',
       prompt: 'Present: Wir müssen jetzt losfahren.',
       acceptedAnswers: ['Wir mussten jetzt losfahren.'],
       answerMode: 'normalized',
@@ -1015,7 +1083,8 @@ export const chapter029: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['simple-past', 'modal-verbs', 'transformation'],
-      instruction: 'Rewrite the sentence in the simple past. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence in the simple past. Capitalisation and punctuation are checked.',
       prompt: 'Present: Sie will Ärztin werden.',
       acceptedAnswers: ['Sie wollte Ärztin werden.'],
       answerMode: 'normalized',
@@ -1279,7 +1348,12 @@ export const chapter029: ChapterDefinition = {
       order: 62,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['simple-past', 'modal-verbs', 'error-correction', 'person-agreement'],
+      grammarFocus: [
+        'simple-past',
+        'modal-verbs',
+        'error-correction',
+        'person-agreement',
+      ],
       instruction: 'Find the token that is wrong and correct it.',
       prompt: 'Er mussten gestern arbeiten.',
       tokens: ['Er', 'mussten', 'gestern', 'arbeiten', '.'],
@@ -1294,7 +1368,12 @@ export const chapter029: ChapterDefinition = {
       order: 63,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['simple-past', 'modal-verbs', 'error-correction', 'person-agreement'],
+      grammarFocus: [
+        'simple-past',
+        'modal-verbs',
+        'error-correction',
+        'person-agreement',
+      ],
       instruction: 'Find the token that is wrong and correct it.',
       prompt: 'Wir wollte letztes Jahr verreisen.',
       tokens: ['Wir', 'wollte', 'letztes', 'Jahr', 'verreisen', '.'],
@@ -1309,14 +1388,18 @@ export const chapter029: ChapterDefinition = {
       order: 64,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['simple-past', 'modal-verbs', 'error-correction', 'person-agreement'],
+      grammarFocus: [
+        'simple-past',
+        'modal-verbs',
+        'error-correction',
+        'person-agreement',
+      ],
       instruction: 'Find the token that is wrong and correct it.',
       prompt: 'Du durfte als Kind nicht fernsehen.',
       tokens: ['Du', 'durfte', 'als', 'Kind', 'nicht', 'fernsehen', '.'],
       errorTokenIndex: 1,
       correction: 'durftest',
-      explanation:
-        'du takes the ending -test: durftest, not the ich/er-form durfte.',
+      explanation: 'du takes the ending -test: durftest, not the ich/er-form durfte.',
     },
     {
       id: 'ch29-ex-65',
@@ -1324,14 +1407,18 @@ export const chapter029: ChapterDefinition = {
       order: 65,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['simple-past', 'modal-verbs', 'error-correction', 'person-agreement'],
+      grammarFocus: [
+        'simple-past',
+        'modal-verbs',
+        'error-correction',
+        'person-agreement',
+      ],
       instruction: 'Find the token that is wrong and correct it.',
       prompt: 'Ihr sollten pünktlich kommen.',
       tokens: ['Ihr', 'sollten', 'pünktlich', 'kommen', '.'],
       errorTokenIndex: 1,
       correction: 'solltet',
-      explanation:
-        'ihr takes the ending -tet: solltet, not the wir/sie-form sollten.',
+      explanation: 'ihr takes the ending -tet: solltet, not the wir/sie-form sollten.',
     },
     {
       id: 'ch29-ex-66',
@@ -1339,7 +1426,12 @@ export const chapter029: ChapterDefinition = {
       order: 66,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['simple-past', 'modal-verbs', 'error-correction', 'person-agreement'],
+      grammarFocus: [
+        'simple-past',
+        'modal-verbs',
+        'error-correction',
+        'person-agreement',
+      ],
       instruction: 'Find the token that is wrong and correct it.',
       prompt: 'Wir mochte diesen Film sehr.',
       tokens: ['Wir', 'mochte', 'diesen', 'Film', 'sehr', '.'],
@@ -1369,14 +1461,18 @@ export const chapter029: ChapterDefinition = {
       order: 68,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['simple-past', 'modal-verbs', 'error-correction', 'person-agreement'],
+      grammarFocus: [
+        'simple-past',
+        'modal-verbs',
+        'error-correction',
+        'person-agreement',
+      ],
       instruction: 'Find the token that is wrong and correct it.',
       prompt: 'Du sollte deine Hausaufgaben machen.',
       tokens: ['Du', 'sollte', 'deine', 'Hausaufgaben', 'machen', '.'],
       errorTokenIndex: 1,
       correction: 'solltest',
-      explanation:
-        'du takes the ending -test: solltest, not the ich/er-form sollte.',
+      explanation: 'du takes the ending -test: solltest, not the ich/er-form sollte.',
     },
     {
       id: 'ch29-ex-69',
@@ -1400,7 +1496,12 @@ export const chapter029: ChapterDefinition = {
       order: 70,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['simple-past', 'modal-verbs', 'error-correction', 'person-agreement'],
+      grammarFocus: [
+        'simple-past',
+        'modal-verbs',
+        'error-correction',
+        'person-agreement',
+      ],
       instruction: 'Find the token that is wrong and correct it.',
       prompt: 'Sie sollte pünktlich am Bahnhof sein.',
       tokens: ['Sie', 'sollte', 'pünktlich', 'am', 'Bahnhof', 'sein', '.'],

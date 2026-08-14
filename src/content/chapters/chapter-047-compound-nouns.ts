@@ -102,8 +102,18 @@ export const chapter047: ChapterDefinition = {
         rows: [
           ['die Haustür', 'das Haus', 'die Tür', 'Tür (die) → die Haustür'],
           ['der Blumentopf', 'die Blume', 'der Topf', 'Topf (der) → der Blumentopf'],
-          ['das Kinderzimmer', 'das Kind', 'das Zimmer', 'Zimmer (das) → das Kinderzimmer'],
-          ['das Schlüsselwort', 'der Schlüssel', 'das Wort', 'Wort (das) → das Schlüsselwort'],
+          [
+            'das Kinderzimmer',
+            'das Kind',
+            'das Zimmer',
+            'Zimmer (das) → das Kinderzimmer',
+          ],
+          [
+            'das Schlüsselwort',
+            'der Schlüssel',
+            'das Wort',
+            'Wort (das) → das Schlüsselwort',
+          ],
           ['die Straßenbahn', 'die Straße', 'die Bahn', 'Bahn (die) → die Straßenbahn'],
           ['der Küchentisch', 'die Küche', 'der Tisch', 'Tisch (der) → der Küchentisch'],
           ['die Sonnenblume', 'die Sonne', 'die Blume', 'Blume (die) → die Sonnenblume'],
@@ -116,25 +126,29 @@ export const chapter047: ChapterDefinition = {
         german: 'das Haus + die Tür → die Haustür',
         english: 'house + door → front door',
         highlight: ['die Haustür'],
-        explanation: 'The head noun is Tür (feminine), so the compound is feminine: die Haustür.',
+        explanation:
+          'The head noun is Tür (feminine), so the compound is feminine: die Haustür.',
       },
       {
         german: 'die Blume + der Topf → der Blumentopf',
         english: 'flower + pot → flower pot',
         highlight: ['der Blumentopf'],
-        explanation: 'The head noun is Topf (masculine), so the compound is masculine, even though Blume itself is feminine.',
+        explanation:
+          'The head noun is Topf (masculine), so the compound is masculine, even though Blume itself is feminine.',
       },
       {
         german: 'das Kind + das Zimmer → das Kinderzimmer',
         english: 'child + room → children’s room, nursery',
         highlight: ['das Kinderzimmer'],
-        explanation: 'The plural form Kinder is used as the modifier, but the head Zimmer (neuter) still decides the gender.',
+        explanation:
+          'The plural form Kinder is used as the modifier, but the head Zimmer (neuter) still decides the gender.',
       },
       {
         german: 'die Arbeit + der Platz → der Arbeitsplatz',
         english: 'work + place → workplace, job',
         highlight: ['der Arbeitsplatz'],
-        explanation: 'A linking -s- joins Arbeit and Platz; the head Platz (masculine) decides the gender.',
+        explanation:
+          'A linking -s- joins Arbeit and Platz; the head Platz (masculine) decides the gender.',
       },
       {
         german: 'die Blume + die Vase → die Blumenvase',
@@ -146,7 +160,8 @@ export const chapter047: ChapterDefinition = {
         german: 'der Mensch + das Recht → das Menschenrecht',
         english: 'human + right → human right',
         highlight: ['das Menschenrecht'],
-        explanation: 'A linking -en- joins Mensch (plural Menschen) and Recht; the head Recht (neuter) decides the gender.',
+        explanation:
+          'A linking -en- joins Mensch (plural Menschen) and Recht; the head Recht (neuter) decides the gender.',
       },
       {
         german: 'der Hund + die Hütte → die Hundehütte',
@@ -158,53 +173,62 @@ export const chapter047: ChapterDefinition = {
         german: 'der Gast + das Zimmer → das Gästezimmer',
         english: 'guest + room → guest room',
         highlight: ['das Gästezimmer'],
-        explanation: 'The linking -e- appears with an umlaut, matching the plural Gäste; the head Zimmer (neuter) decides the gender.',
+        explanation:
+          'The linking -e- appears with an umlaut, matching the plural Gäste; the head Zimmer (neuter) decides the gender.',
       },
       {
         german: 'der Regen + der Schirm → der Regenschirm',
         english: 'rain + screen → umbrella',
         highlight: ['der Regenschirm'],
-        explanation: 'No linking element is needed here; the two nouns are simply joined directly.',
+        explanation:
+          'No linking element is needed here; the two nouns are simply joined directly.',
       },
       {
         german: 'die Hand + der Schuh → der Handschuh',
         english: 'hand + shoe → glove',
         highlight: ['der Handschuh'],
-        explanation: 'A literal reading ("hand shoe") would be misleading; the established meaning is "glove".',
+        explanation:
+          'A literal reading ("hand shoe") would be misleading; the established meaning is "glove".',
       },
       {
         german: 'früh + das Stück → das Frühstück',
         english: 'early + piece → breakfast',
         highlight: ['das Frühstück'],
-        explanation: 'The literal parts ("early piece") do not predict the actual meaning, which must be learned as vocabulary.',
+        explanation:
+          'The literal parts ("early piece") do not predict the actual meaning, which must be learned as vocabulary.',
       },
       {
         german: 'der Fuß + der Ball + die Mannschaft → die Fußballmannschaft',
         english: 'foot + ball + team → football/soccer team',
         highlight: ['die Fußballmannschaft'],
-        explanation: 'A chain of three nouns; only the final noun, Mannschaft (feminine), decides the gender of the whole compound.',
+        explanation:
+          'A chain of three nouns; only the final noun, Mannschaft (feminine), decides the gender of the whole compound.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'die Haus Tür',
         correct: 'die Haustür',
-        explanation: 'German compound nouns are written as a single word with no space, unlike the equivalent English phrase "house door" / "front door".',
+        explanation:
+          'German compound nouns are written as a single word with no space, unlike the equivalent English phrase "house door" / "front door".',
       },
       {
         incorrect: 'die Blumentopf',
         correct: 'der Blumentopf',
-        explanation: 'The gender of a compound comes from the final head noun (Topf, masculine), not from the first part (Blume, feminine).',
+        explanation:
+          'The gender of a compound comes from the final head noun (Topf, masculine), not from the first part (Blume, feminine).',
       },
       {
         incorrect: 'der Arbeitplatz',
         correct: 'der Arbeitsplatz',
-        explanation: 'The linking element -s- between Arbeit and Platz is part of the fixed spelling and cannot be left out.',
+        explanation:
+          'The linking element -s- between Arbeit and Platz is part of the fixed spelling and cannot be left out.',
       },
       {
         incorrect: 'der arbeitsplatz',
         correct: 'der Arbeitsplatz',
-        explanation: 'Like all German nouns, a compound noun is capitalised — as a single word, with only the first letter capitalised, not each part.',
+        explanation:
+          'Like all German nouns, a compound noun is capitalised — as a single word, with only the first letter capitalised, not each part.',
       },
     ],
     remember: [
@@ -230,7 +254,8 @@ export const chapter047: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['head-noun', 'gender'],
       instruction: 'Choose the correct rule.',
-      prompt: 'In a German compound noun, which part determines the gender of the whole word?',
+      prompt:
+        'In a German compound noun, which part determines the gender of the whole word?',
       options: [
         { id: 'a', text: 'The first noun' },
         { id: 'b', text: 'The last noun' },
@@ -238,7 +263,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'd', text: 'It is random and must be memorised for every compound' },
       ],
       correctOptionId: 'b',
-      explanation: 'The last noun (the Grundwort, or head) decides the gender, plural, and core meaning of the whole compound.',
+      explanation:
+        'The last noun (the Grundwort, or head) decides the gender, plural, and core meaning of the whole compound.',
     },
     {
       id: 'ch47-ex-02',
@@ -248,7 +274,8 @@ export const chapter047: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['head-noun'],
       instruction: 'Identify the head noun.',
-      prompt: 'der Blumentopf (die Blume + der Topf) — which part is the head noun that decides the gender?',
+      prompt:
+        'der Blumentopf (die Blume + der Topf) — which part is the head noun that decides the gender?',
       options: [
         { id: 'a', text: 'Blume' },
         { id: 'b', text: 'Topf' },
@@ -256,7 +283,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'd', text: 'Neither part' },
       ],
       correctOptionId: 'b',
-      explanation: 'Topf is the final noun (the head), so it decides the compound’s gender: der Blumentopf.',
+      explanation:
+        'Topf is the final noun (the head), so it decides the compound’s gender: der Blumentopf.',
     },
     {
       id: 'ch47-ex-03',
@@ -266,7 +294,8 @@ export const chapter047: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['head-noun'],
       instruction: 'Identify the head noun.',
-      prompt: 'das Kinderzimmer (das Kind + das Zimmer) — which part determines that the compound is neuter?',
+      prompt:
+        'das Kinderzimmer (das Kind + das Zimmer) — which part determines that the compound is neuter?',
       options: [
         { id: 'a', text: 'Kind' },
         { id: 'b', text: 'Kinder' },
@@ -274,7 +303,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'd', text: 'Kinderzimmer' },
       ],
       correctOptionId: 'c',
-      explanation: 'Zimmer, the final head noun, is neuter, so the whole compound is neuter: das Kinderzimmer.',
+      explanation:
+        'Zimmer, the final head noun, is neuter, so the whole compound is neuter: das Kinderzimmer.',
     },
     {
       id: 'ch47-ex-04',
@@ -292,7 +322,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'd', text: 'With a space, but capitalising both parts' },
       ],
       correctOptionId: 'a',
-      explanation: 'German compound nouns are fused into a single word with only the first letter capitalised, e.g. die Haustür.',
+      explanation:
+        'German compound nouns are fused into a single word with only the first letter capitalised, e.g. die Haustür.',
     },
     {
       id: 'ch47-ex-05',
@@ -301,13 +332,15 @@ export const chapter047: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['article', 'head-noun'],
-      instruction: 'Write the correct article for the compound. Capitalisation is not checked.',
+      instruction:
+        'Write the correct article for the compound. Capitalisation is not checked.',
       prompt: '___ Haustür (das Haus + die Tür)',
       acceptedAnswers: ['die'],
       answerMode: 'caseInsensitive',
       placeholder: 'der/die/das',
       maxLength: 10,
-      explanation: 'The head noun is Tür (feminine), so the compound is feminine: die Haustür.',
+      explanation:
+        'The head noun is Tür (feminine), so the compound is feminine: die Haustür.',
     },
     {
       id: 'ch47-ex-06',
@@ -316,13 +349,15 @@ export const chapter047: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['article', 'head-noun'],
-      instruction: 'Write the correct article for the compound. Capitalisation is not checked.',
+      instruction:
+        'Write the correct article for the compound. Capitalisation is not checked.',
       prompt: '___ Blumentopf (die Blume + der Topf)',
       acceptedAnswers: ['der'],
       answerMode: 'caseInsensitive',
       placeholder: 'der/die/das',
       maxLength: 10,
-      explanation: 'The head noun is Topf (masculine), so the compound is masculine: der Blumentopf.',
+      explanation:
+        'The head noun is Topf (masculine), so the compound is masculine: der Blumentopf.',
     },
     {
       id: 'ch47-ex-07',
@@ -340,7 +375,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'd', text: '-en-' },
       ],
       correctOptionId: 'a',
-      explanation: 'Regen and Schirm are joined directly, with no linking element: Regenschirm.',
+      explanation:
+        'Regen and Schirm are joined directly, with no linking element: Regenschirm.',
     },
     {
       id: 'ch47-ex-08',
@@ -368,7 +404,8 @@ export const chapter047: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['linking-element'],
       instruction: 'Identify the linking element.',
-      prompt: 'das Menschenrecht (der Mensch + das Recht) — which linking element is used?',
+      prompt:
+        'das Menschenrecht (der Mensch + das Recht) — which linking element is used?',
       options: [
         { id: 'a', text: '-s-' },
         { id: 'b', text: '-n-' },
@@ -376,7 +413,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'd', text: '-e-' },
       ],
       correctOptionId: 'c',
-      explanation: 'Mensch, whose plural is Menschen, adds a linking -en- before Recht: Menschenrecht.',
+      explanation:
+        'Mensch, whose plural is Menschen, adds a linking -en- before Recht: Menschenrecht.',
     },
     {
       id: 'ch47-ex-10',
@@ -412,7 +450,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'd', text: 'Hundenhütte' },
       ],
       correctOptionId: 'c',
-      explanation: 'Hund, whose plural is Hunde, adds a linking -e- before Hütte: Hundehütte.',
+      explanation:
+        'Hund, whose plural is Hunde, adds a linking -e- before Hütte: Hundehütte.',
     },
     {
       id: 'ch47-ex-12',
@@ -421,13 +460,15 @@ export const chapter047: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['building-compounds', 'linking-element'],
-      instruction: 'Write the compound noun formed from these two nouns (no article). Capitalisation is checked.',
+      instruction:
+        'Write the compound noun formed from these two nouns (no article). Capitalisation is checked.',
       prompt: 'der Geburtstag + das Geschenk → ?',
       acceptedAnswers: ['Geburtstagsgeschenk'],
       answerMode: 'exact',
       placeholder: 'Geburtstagsgeschenk',
       maxLength: 30,
-      explanation: 'Geburtstag takes a linking -s- before Geschenk: Geburtstagsgeschenk (birthday present).',
+      explanation:
+        'Geburtstag takes a linking -s- before Geschenk: Geburtstagsgeschenk (birthday present).',
     },
     {
       id: 'ch47-ex-13',
@@ -436,13 +477,15 @@ export const chapter047: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['building-compounds', 'linking-element'],
-      instruction: 'Write the compound noun formed from these two nouns (no article). Capitalisation is checked.',
+      instruction:
+        'Write the compound noun formed from these two nouns (no article). Capitalisation is checked.',
       prompt: 'die Straße + die Bahn → ?',
       acceptedAnswers: ['Straßenbahn'],
       answerMode: 'exact',
       placeholder: 'Straßenbahn',
       maxLength: 30,
-      explanation: 'Straße, which ends in -e, adds a linking -n- before Bahn: Straßenbahn (tram/streetcar).',
+      explanation:
+        'Straße, which ends in -e, adds a linking -n- before Bahn: Straßenbahn (tram/streetcar).',
     },
     {
       id: 'ch47-ex-14',
@@ -451,13 +494,15 @@ export const chapter047: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['building-compounds', 'linking-element'],
-      instruction: 'Write the compound noun formed from these two nouns (no article). Capitalisation is checked.',
+      instruction:
+        'Write the compound noun formed from these two nouns (no article). Capitalisation is checked.',
       prompt: 'der Gast + das Zimmer → ?',
       acceptedAnswers: ['Gästezimmer'],
       answerMode: 'exact',
       placeholder: 'Gästezimmer',
       maxLength: 30,
-      explanation: 'Gast, whose plural is Gäste, adds a linking -e- (with umlaut) before Zimmer: Gästezimmer (guest room).',
+      explanation:
+        'Gast, whose plural is Gäste, adds a linking -e- (with umlaut) before Zimmer: Gästezimmer (guest room).',
     },
     {
       id: 'ch47-ex-15',
@@ -466,13 +511,15 @@ export const chapter047: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['article', 'head-noun'],
-      instruction: 'Write the correct article for the compound. Capitalisation is not checked.',
+      instruction:
+        'Write the correct article for the compound. Capitalisation is not checked.',
       prompt: '___ Gästezimmer (der Gast + das Zimmer)',
       acceptedAnswers: ['das'],
       answerMode: 'caseInsensitive',
       placeholder: 'der/die/das',
       maxLength: 10,
-      explanation: 'The head noun is Zimmer (neuter), so the compound is neuter: das Gästezimmer.',
+      explanation:
+        'The head noun is Zimmer (neuter), so the compound is neuter: das Gästezimmer.',
     },
     {
       id: 'ch47-ex-16',
@@ -500,7 +547,8 @@ export const chapter047: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['head-noun', 'chain-compounds'],
       instruction: 'Identify the head noun in this three-part compound.',
-      prompt: 'die Fußballmannschaft (Fuß + Ball + Mannschaft) — which part is the head noun?',
+      prompt:
+        'die Fußballmannschaft (Fuß + Ball + Mannschaft) — which part is the head noun?',
       options: [
         { id: 'a', text: 'Fuß' },
         { id: 'b', text: 'Ball' },
@@ -508,7 +556,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'd', text: 'Fußball' },
       ],
       correctOptionId: 'c',
-      explanation: 'Only the final noun in a chain decides the gender: Mannschaft (feminine) makes die Fußballmannschaft feminine.',
+      explanation:
+        'Only the final noun in a chain decides the gender: Mannschaft (feminine) makes die Fußballmannschaft feminine.',
     },
     {
       id: 'ch47-ex-18',
@@ -526,7 +575,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'd', text: 'sleeve' },
       ],
       correctOptionId: 'a',
-      explanation: 'Despite the literal parts "hand" and "shoe", der Handschuh means "glove".',
+      explanation:
+        'Despite the literal parts "hand" and "shoe", der Handschuh means "glove".',
     },
     {
       id: 'ch47-ex-19',
@@ -544,7 +594,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'd', text: 'appetiser' },
       ],
       correctOptionId: 'b',
-      explanation: 'Despite the literal parts "early" and "piece", das Frühstück means "breakfast".',
+      explanation:
+        'Despite the literal parts "early" and "piece", das Frühstück means "breakfast".',
     },
     {
       id: 'ch47-ex-20',
@@ -553,13 +604,15 @@ export const chapter047: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['splitting-compounds'],
-      instruction: 'Split the compound into its two component nouns, each with its article, joined by "+". Capitalisation is checked.',
+      instruction:
+        'Split the compound into its two component nouns, each with its article, joined by "+". Capitalisation is checked.',
       prompt: 'der Regenschirm → ?',
       acceptedAnswers: ['der Regen + der Schirm'],
       answerMode: 'normalized',
       placeholder: 'der Regen + der Schirm',
       maxLength: 40,
-      explanation: 'der Regenschirm is built from der Regen and der Schirm, joined with no linking element.',
+      explanation:
+        'der Regenschirm is built from der Regen and der Schirm, joined with no linking element.',
     },
     {
       id: 'ch47-ex-21',
@@ -568,13 +621,15 @@ export const chapter047: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['splitting-compounds'],
-      instruction: 'Split the compound into its two component nouns, each with its article, joined by "+". Capitalisation is checked.',
+      instruction:
+        'Split the compound into its two component nouns, each with its article, joined by "+". Capitalisation is checked.',
       prompt: 'das Schlüsselwort → ?',
       acceptedAnswers: ['der Schlüssel + das Wort'],
       answerMode: 'normalized',
       placeholder: 'der Schlüssel + das Wort',
       maxLength: 40,
-      explanation: 'das Schlüsselwort is built from der Schlüssel and das Wort, joined with no linking element.',
+      explanation:
+        'das Schlüsselwort is built from der Schlüssel and das Wort, joined with no linking element.',
     },
     {
       id: 'ch47-ex-22',
@@ -583,13 +638,15 @@ export const chapter047: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['building-compounds', 'linking-element'],
-      instruction: 'Write the compound noun formed from these two nouns (no article). Capitalisation is checked.',
+      instruction:
+        'Write the compound noun formed from these two nouns (no article). Capitalisation is checked.',
       prompt: 'die Küche + der Tisch → ?',
       acceptedAnswers: ['Küchentisch'],
       answerMode: 'exact',
       placeholder: 'Küchentisch',
       maxLength: 30,
-      explanation: 'Küche, which ends in -e, adds a linking -n- before Tisch: Küchentisch (kitchen table).',
+      explanation:
+        'Küche, which ends in -e, adds a linking -n- before Tisch: Küchentisch (kitchen table).',
     },
     {
       id: 'ch47-ex-23',
@@ -598,13 +655,15 @@ export const chapter047: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['building-compounds', 'linking-element'],
-      instruction: 'Write the compound noun formed from these two nouns (no article). Capitalisation is checked.',
+      instruction:
+        'Write the compound noun formed from these two nouns (no article). Capitalisation is checked.',
       prompt: 'die Sonne + die Blume → ?',
       acceptedAnswers: ['Sonnenblume'],
       answerMode: 'exact',
       placeholder: 'Sonnenblume',
       maxLength: 30,
-      explanation: 'Sonne, which ends in -e, adds a linking -n- before Blume: Sonnenblume (sunflower).',
+      explanation:
+        'Sonne, which ends in -e, adds a linking -n- before Blume: Sonnenblume (sunflower).',
     },
     {
       id: 'ch47-ex-24',
@@ -614,7 +673,8 @@ export const chapter047: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['head-noun', 'transfer'],
       instruction: 'Apply what you know to a new compound.',
-      prompt: 'das Wochenende (die Woche + das Ende) — which part is the head noun that makes the compound neuter?',
+      prompt:
+        'das Wochenende (die Woche + das Ende) — which part is the head noun that makes the compound neuter?',
       options: [
         { id: 'a', text: 'Woche' },
         { id: 'b', text: 'Ende' },
@@ -622,7 +682,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'd', text: 'Neither part' },
       ],
       correctOptionId: 'b',
-      explanation: 'Ende, the final head noun, is neuter, so the whole compound is neuter: das Wochenende.',
+      explanation:
+        'Ende, the final head noun, is neuter, so the whole compound is neuter: das Wochenende.',
     },
     {
       id: 'ch47-ex-25',
@@ -649,13 +710,15 @@ export const chapter047: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'spelling'],
-      instruction: 'Correct the mistake. Write the full, corrected phrase with article. Capitalisation is checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected phrase with article. Capitalisation is checked.',
       prompt: 'Falsch: die Haus Tür',
       acceptedAnswers: ['die Haustür'],
       answerMode: 'normalized',
       placeholder: 'die Haustür',
       maxLength: 20,
-      explanation: 'German compound nouns are written as one word with no space: die Haustür.',
+      explanation:
+        'German compound nouns are written as one word with no space: die Haustür.',
     },
     {
       id: 'ch47-ex-27',
@@ -664,13 +727,15 @@ export const chapter047: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'linking-element'],
-      instruction: 'Correct the mistake. Write the full, corrected phrase with article. Capitalisation is checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected phrase with article. Capitalisation is checked.',
       prompt: 'Falsch: der Arbeitplatz',
       acceptedAnswers: ['der Arbeitsplatz'],
       answerMode: 'normalized',
       placeholder: 'der Arbeitsplatz',
       maxLength: 20,
-      explanation: 'The linking -s- between Arbeit and Platz cannot be omitted: der Arbeitsplatz.',
+      explanation:
+        'The linking -s- between Arbeit and Platz cannot be omitted: der Arbeitsplatz.',
     },
     {
       id: 'ch47-ex-28',
@@ -680,7 +745,8 @@ export const chapter047: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['head-noun'],
       instruction: 'Identify the head noun.',
-      prompt: 'der Kühlschrank (kühl + der Schrank) — which part is the head noun that decides the gender?',
+      prompt:
+        'der Kühlschrank (kühl + der Schrank) — which part is the head noun that decides the gender?',
       options: [
         { id: 'a', text: 'kühl' },
         { id: 'b', text: 'Schrank' },
@@ -688,7 +754,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'd', text: 'Neither part' },
       ],
       correctOptionId: 'b',
-      explanation: 'Schrank is the final noun (the head), so it decides the compound’s gender: der Kühlschrank.',
+      explanation:
+        'Schrank is the final noun (the head), so it decides the compound’s gender: der Kühlschrank.',
     },
     {
       id: 'ch47-ex-29',
@@ -698,7 +765,8 @@ export const chapter047: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['head-noun'],
       instruction: 'Identify the head noun.',
-      prompt: 'die Waschmaschine (waschen + die Maschine) — which part decides the gender of the whole compound?',
+      prompt:
+        'die Waschmaschine (waschen + die Maschine) — which part decides the gender of the whole compound?',
       options: [
         { id: 'a', text: 'wasch-' },
         { id: 'b', text: 'Maschine' },
@@ -706,7 +774,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'd', text: 'Neither part' },
       ],
       correctOptionId: 'b',
-      explanation: 'Maschine, the final head noun, is feminine, so the whole compound is feminine: die Waschmaschine.',
+      explanation:
+        'Maschine, the final head noun, is feminine, so the whole compound is feminine: die Waschmaschine.',
     },
     {
       id: 'ch47-ex-30',
@@ -716,7 +785,8 @@ export const chapter047: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['linking-element'],
       instruction: 'Identify the linking element.',
-      prompt: 'der Zeitungsartikel (die Zeitung + der Artikel) — which linking element is used?',
+      prompt:
+        'der Zeitungsartikel (die Zeitung + der Artikel) — which linking element is used?',
       options: [
         { id: 'a', text: '-s-' },
         { id: 'b', text: '-n-' },
@@ -724,7 +794,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'd', text: 'no linking element' },
       ],
       correctOptionId: 'a',
-      explanation: 'Zeitung, which ends in -ung, adds a linking -s- before Artikel: Zeitungsartikel.',
+      explanation:
+        'Zeitung, which ends in -ung, adds a linking -s- before Artikel: Zeitungsartikel.',
     },
     {
       id: 'ch47-ex-31',
@@ -752,7 +823,8 @@ export const chapter047: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['linking-element'],
       instruction: 'Identify the linking element.',
-      prompt: 'der Blumenstrauß (die Blume + der Strauß) — which linking element is used?',
+      prompt:
+        'der Blumenstrauß (die Blume + der Strauß) — which linking element is used?',
       options: [
         { id: 'a', text: 'no linking element' },
         { id: 'b', text: '-s-' },
@@ -760,7 +832,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'd', text: '-en-' },
       ],
       correctOptionId: 'c',
-      explanation: 'Blume, which ends in -e, adds a linking -n- before Strauß: Blumenstrauß (bouquet).',
+      explanation:
+        'Blume, which ends in -e, adds a linking -n- before Strauß: Blumenstrauß (bouquet).',
     },
     {
       id: 'ch47-ex-33',
@@ -778,7 +851,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'd', text: 'Orangenssaft' },
       ],
       correctOptionId: 'a',
-      explanation: 'Orange, which ends in -e, adds a linking -n- before Saft: Orangensaft.',
+      explanation:
+        'Orange, which ends in -e, adds a linking -n- before Saft: Orangensaft.',
     },
     {
       id: 'ch47-ex-34',
@@ -814,7 +888,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'd', text: 'household budget' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Hausaufgabe means "homework", the task a student does at home for school.',
+      explanation:
+        'die Hausaufgabe means "homework", the task a student does at home for school.',
     },
     {
       id: 'ch47-ex-36',
@@ -832,7 +907,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'd', text: 'shopping cart' },
       ],
       correctOptionId: 'a',
-      explanation: 'der Kinderwagen means "stroller/baby carriage", the vehicle used to push a small child around.',
+      explanation:
+        'der Kinderwagen means "stroller/baby carriage", the vehicle used to push a small child around.',
     },
     {
       id: 'ch47-ex-37',
@@ -878,7 +954,8 @@ export const chapter047: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['head-noun', 'chain-compounds'],
       instruction: 'Identify the head noun in this three-part compound.',
-      prompt: 'die Geburtstagsfeier (Geburt + Tag + Feier) — which part is the head noun?',
+      prompt:
+        'die Geburtstagsfeier (Geburt + Tag + Feier) — which part is the head noun?',
       options: [
         { id: 'a', text: 'Geburt' },
         { id: 'b', text: 'Tag' },
@@ -886,7 +963,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'd', text: 'Geburtstag' },
       ],
       correctOptionId: 'c',
-      explanation: 'Only the final noun in a chain decides the gender: Feier (feminine) makes die Geburtstagsfeier feminine.',
+      explanation:
+        'Only the final noun in a chain decides the gender: Feier (feminine) makes die Geburtstagsfeier feminine.',
     },
     {
       id: 'ch47-ex-40',
@@ -913,13 +991,15 @@ export const chapter047: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['article', 'head-noun'],
-      instruction: 'Write the correct article for the compound. Capitalisation is not checked.',
+      instruction:
+        'Write the correct article for the compound. Capitalisation is not checked.',
       prompt: '___ Kühlschrank (kühl + der Schrank)',
       acceptedAnswers: ['der'],
       answerMode: 'caseInsensitive',
       placeholder: 'der/die/das',
       maxLength: 10,
-      explanation: 'The head noun is Schrank (masculine), so the compound is masculine: der Kühlschrank.',
+      explanation:
+        'The head noun is Schrank (masculine), so the compound is masculine: der Kühlschrank.',
     },
     {
       id: 'ch47-ex-42',
@@ -928,13 +1008,15 @@ export const chapter047: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['article', 'head-noun'],
-      instruction: 'Write the correct article for the compound. Capitalisation is not checked.',
+      instruction:
+        'Write the correct article for the compound. Capitalisation is not checked.',
       prompt: '___ Handtuch (die Hand + das Tuch)',
       acceptedAnswers: ['das'],
       answerMode: 'caseInsensitive',
       placeholder: 'der/die/das',
       maxLength: 10,
-      explanation: 'The head noun is Tuch (neuter), so the compound is neuter: das Handtuch.',
+      explanation:
+        'The head noun is Tuch (neuter), so the compound is neuter: das Handtuch.',
     },
     {
       id: 'ch47-ex-43',
@@ -943,13 +1025,15 @@ export const chapter047: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['article', 'head-noun'],
-      instruction: 'Write the correct article for the compound. Capitalisation is not checked.',
+      instruction:
+        'Write the correct article for the compound. Capitalisation is not checked.',
       prompt: '___ Autobahn (das Auto + die Bahn)',
       acceptedAnswers: ['die'],
       answerMode: 'caseInsensitive',
       placeholder: 'der/die/das',
       maxLength: 10,
-      explanation: 'The head noun is Bahn (feminine), so the compound is feminine: die Autobahn.',
+      explanation:
+        'The head noun is Bahn (feminine), so the compound is feminine: die Autobahn.',
     },
     {
       id: 'ch47-ex-44',
@@ -958,13 +1042,15 @@ export const chapter047: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['building-compounds', 'linking-element'],
-      instruction: 'Write the compound noun formed from these two nouns (no article). Capitalisation is checked.',
+      instruction:
+        'Write the compound noun formed from these two nouns (no article). Capitalisation is checked.',
       prompt: 'der Fisch + die Suppe → ?',
       acceptedAnswers: ['Fischsuppe'],
       answerMode: 'exact',
       placeholder: 'Fischsuppe',
       maxLength: 30,
-      explanation: 'Fisch and Suppe join with no linking element: Fischsuppe (fish soup).',
+      explanation:
+        'Fisch and Suppe join with no linking element: Fischsuppe (fish soup).',
     },
     {
       id: 'ch47-ex-45',
@@ -973,13 +1059,15 @@ export const chapter047: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['building-compounds', 'linking-element'],
-      instruction: 'Write the compound noun formed from these two nouns (no article). Capitalisation is checked.',
+      instruction:
+        'Write the compound noun formed from these two nouns (no article). Capitalisation is checked.',
       prompt: 'die Kartoffel + der Salat → ?',
       acceptedAnswers: ['Kartoffelsalat'],
       answerMode: 'exact',
       placeholder: 'Kartoffelsalat',
       maxLength: 30,
-      explanation: 'Kartoffel and Salat join with no linking element: Kartoffelsalat (potato salad).',
+      explanation:
+        'Kartoffel and Salat join with no linking element: Kartoffelsalat (potato salad).',
     },
     {
       id: 'ch47-ex-46',
@@ -988,13 +1076,15 @@ export const chapter047: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['building-compounds', 'linking-element'],
-      instruction: 'Write the compound noun formed from these two nouns (no article). Capitalisation is checked.',
+      instruction:
+        'Write the compound noun formed from these two nouns (no article). Capitalisation is checked.',
       prompt: 'der Apfel + der Saft → ?',
       acceptedAnswers: ['Apfelsaft'],
       answerMode: 'exact',
       placeholder: 'Apfelsaft',
       maxLength: 30,
-      explanation: 'Apfel and Saft join with no linking element: Apfelsaft (apple juice).',
+      explanation:
+        'Apfel and Saft join with no linking element: Apfelsaft (apple juice).',
     },
     {
       id: 'ch47-ex-47',
@@ -1003,13 +1093,15 @@ export const chapter047: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['building-compounds', 'linking-element'],
-      instruction: 'Write the compound noun formed from these two nouns (no article). Capitalisation is checked.',
+      instruction:
+        'Write the compound noun formed from these two nouns (no article). Capitalisation is checked.',
       prompt: 'die Orange + der Saft → ?',
       acceptedAnswers: ['Orangensaft'],
       answerMode: 'exact',
       placeholder: 'Orangensaft',
       maxLength: 30,
-      explanation: 'Orange, which ends in -e, adds a linking -n- before Saft: Orangensaft (orange juice).',
+      explanation:
+        'Orange, which ends in -e, adds a linking -n- before Saft: Orangensaft (orange juice).',
     },
     {
       id: 'ch47-ex-48',
@@ -1018,13 +1110,15 @@ export const chapter047: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['building-compounds', 'linking-element'],
-      instruction: 'Write the compound noun formed from these two nouns (no article). Capitalisation is checked.',
+      instruction:
+        'Write the compound noun formed from these two nouns (no article). Capitalisation is checked.',
       prompt: 'die Zeitung + der Artikel → ?',
       acceptedAnswers: ['Zeitungsartikel'],
       answerMode: 'exact',
       placeholder: 'Zeitungsartikel',
       maxLength: 30,
-      explanation: 'Zeitung, which ends in -ung, adds a linking -s- before Artikel: Zeitungsartikel (newspaper article).',
+      explanation:
+        'Zeitung, which ends in -ung, adds a linking -s- before Artikel: Zeitungsartikel (newspaper article).',
     },
     {
       id: 'ch47-ex-49',
@@ -1033,7 +1127,8 @@ export const chapter047: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['building-compounds', 'linking-element'],
-      instruction: 'Write the compound noun formed from these two nouns (no article). Capitalisation is checked.',
+      instruction:
+        'Write the compound noun formed from these two nouns (no article). Capitalisation is checked.',
       prompt: 'der Kranke + das Haus → ?',
       acceptedAnswers: ['Krankenhaus'],
       answerMode: 'exact',
@@ -1048,13 +1143,15 @@ export const chapter047: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['splitting-compounds'],
-      instruction: 'Split the compound into its two component nouns, each with its article, joined by "+". Capitalisation is checked.',
+      instruction:
+        'Split the compound into its two component nouns, each with its article, joined by "+". Capitalisation is checked.',
       prompt: 'die Wasserflasche → ?',
       acceptedAnswers: ['das Wasser + die Flasche'],
       answerMode: 'normalized',
       placeholder: 'das Wasser + die Flasche',
       maxLength: 40,
-      explanation: 'die Wasserflasche is built from das Wasser and die Flasche, joined with no linking element.',
+      explanation:
+        'die Wasserflasche is built from das Wasser and die Flasche, joined with no linking element.',
     },
     {
       id: 'ch47-ex-51',
@@ -1063,13 +1160,15 @@ export const chapter047: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['splitting-compounds'],
-      instruction: 'Split the compound into its two component nouns, each with its article, joined by "+". Capitalisation is checked.',
+      instruction:
+        'Split the compound into its two component nouns, each with its article, joined by "+". Capitalisation is checked.',
       prompt: 'der Briefkasten → ?',
       acceptedAnswers: ['der Brief + der Kasten'],
       answerMode: 'normalized',
       placeholder: 'der Brief + der Kasten',
       maxLength: 40,
-      explanation: 'der Briefkasten is built from der Brief and der Kasten, joined with no linking element.',
+      explanation:
+        'der Briefkasten is built from der Brief and der Kasten, joined with no linking element.',
     },
     {
       id: 'ch47-ex-52',
@@ -1078,13 +1177,15 @@ export const chapter047: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'linking-element'],
-      instruction: 'Correct the mistake. Write the full, corrected phrase with article. Capitalisation is checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected phrase with article. Capitalisation is checked.',
       prompt: 'Falsch: der Zeitungartikel',
       acceptedAnswers: ['der Zeitungsartikel'],
       answerMode: 'normalized',
       placeholder: 'der Zeitungsartikel',
       maxLength: 25,
-      explanation: 'The linking -s- between Zeitung and Artikel cannot be omitted: der Zeitungsartikel.',
+      explanation:
+        'The linking -s- between Zeitung and Artikel cannot be omitted: der Zeitungsartikel.',
     },
     {
       id: 'ch47-ex-53',
@@ -1102,7 +1203,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'p4', left: 'die Wand + der Schrank', right: 'der Wandschrank' },
         { id: 'p5', left: 'der Brief + der Kasten', right: 'der Briefkasten' },
       ],
-      explanation: 'Each compound is formed by joining the two nouns, with the last noun deciding the gender.',
+      explanation:
+        'Each compound is formed by joining the two nouns, with the last noun deciding the gender.',
     },
     {
       id: 'ch47-ex-54',
@@ -1121,7 +1223,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'p5', left: 'Sonnenblume', right: 'die Sonnenblume' },
         { id: 'p6', left: 'Wochenende', right: 'das Wochenende' },
       ],
-      explanation: 'The article of each compound is decided by the gender of its final (head) noun.',
+      explanation:
+        'The article of each compound is decided by the gender of its final (head) noun.',
     },
     {
       id: 'ch47-ex-55',
@@ -1139,7 +1242,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'p4', left: 'Krankenhaus', right: '-en-' },
         { id: 'p5', left: 'Gästezimmer', right: '-e-' },
       ],
-      explanation: 'The linking element is fixed for each compound and must be memorised or checked in a dictionary.',
+      explanation:
+        'The linking element is fixed for each compound and must be memorised or checked in a dictionary.',
     },
     {
       id: 'ch47-ex-56',
@@ -1158,7 +1262,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'p5', left: 'die Waschmaschine', right: 'washing machine' },
         { id: 'p6', left: 'das Butterbrot', right: 'open sandwich (bread and butter)' },
       ],
-      explanation: 'Compounds are built predictably from their parts, but the exact meaning is still learned as vocabulary.',
+      explanation:
+        'Compounds are built predictably from their parts, but the exact meaning is still learned as vocabulary.',
     },
     {
       id: 'ch47-ex-57',
@@ -1176,7 +1281,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'p4', left: 'die Tür + die Klingel', right: 'die Türklingel' },
         { id: 'p5', left: 'das Eisen + die Bahn', right: 'die Eisenbahn' },
       ],
-      explanation: 'Each compound is formed by joining the two nouns, with the last noun deciding the gender.',
+      explanation:
+        'Each compound is formed by joining the two nouns, with the last noun deciding the gender.',
     },
     {
       id: 'ch47-ex-58',
@@ -1194,7 +1300,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'p4', left: 'der Blumenstrauß', right: 'Strauß' },
         { id: 'p5', left: 'die Gemüsesuppe', right: 'Suppe' },
       ],
-      explanation: 'The head noun is always the last noun in the compound; it decides gender, plural, and meaning category.',
+      explanation:
+        'The head noun is always the last noun in the compound; it decides gender, plural, and meaning category.',
     },
     {
       id: 'ch47-ex-59',
@@ -1213,7 +1320,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'p5', left: 'die Nacht + der Tisch', right: 'der Nachttisch' },
         { id: 'p6', left: 'das Fahrrad + der Weg', right: 'der Fahrradweg' },
       ],
-      explanation: 'Each compound is formed by joining the two nouns, with the last noun deciding the gender.',
+      explanation:
+        'Each compound is formed by joining the two nouns, with the last noun deciding the gender.',
     },
     {
       id: 'ch47-ex-60',
@@ -1231,7 +1339,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'p4', left: 'Fernsehsendung', right: 'die Fernsehsendung' },
         { id: 'p5', left: 'Marmeladenbrot', right: 'das Marmeladenbrot' },
       ],
-      explanation: 'The article of each compound is decided by the gender of its final (head) noun.',
+      explanation:
+        'The article of each compound is decided by the gender of its final (head) noun.',
     },
     {
       id: 'ch47-ex-61',
@@ -1259,7 +1368,8 @@ export const chapter047: ChapterDefinition = {
       templateParts: ['Zum Frühstück trinke ich ein Glas ', '.'],
       slots: [{ id: 's1', correctWord: 'Orangensaft' }],
       wordBank: ['Orangensaft', 'Orangesaft', 'Orangeensaft', 'Orangenssaft'],
-      explanation: 'Orange, which ends in -e, adds a linking -n- before Saft: der Orangensaft.',
+      explanation:
+        'Orange, which ends in -e, adds a linking -n- before Saft: der Orangensaft.',
     },
     {
       id: 'ch47-ex-63',
@@ -1272,8 +1382,14 @@ export const chapter047: ChapterDefinition = {
       prompt: 'Complete the sentence.',
       templateParts: ['Er liest jeden Tag einen interessanten ', ' in der Zeitung.'],
       slots: [{ id: 's1', correctWord: 'Zeitungsartikel' }],
-      wordBank: ['Zeitungsartikel', 'Zeitungartikel', 'Zeitungenartikel', 'Zeitungeartikel'],
-      explanation: 'Zeitung, which ends in -ung, adds a linking -s- before Artikel: der Zeitungsartikel.',
+      wordBank: [
+        'Zeitungsartikel',
+        'Zeitungartikel',
+        'Zeitungenartikel',
+        'Zeitungeartikel',
+      ],
+      explanation:
+        'Zeitung, which ends in -ung, adds a linking -s- before Artikel: der Zeitungsartikel.',
     },
     {
       id: 'ch47-ex-64',
@@ -1301,7 +1417,8 @@ export const chapter047: ChapterDefinition = {
       templateParts: ['Heute scheint die Sonne, es gibt viel ', '.'],
       slots: [{ id: 's1', correctWord: 'Sonnenschein' }],
       wordBank: ['Sonnenschein', 'Sonneschein', 'Sonnensschein', 'Sonnenenschein'],
-      explanation: 'Sonne, which ends in -e, adds a linking -n- before Schein: der Sonnenschein.',
+      explanation:
+        'Sonne, which ends in -e, adds a linking -n- before Schein: der Sonnenschein.',
     },
     {
       id: 'ch47-ex-66',
@@ -1315,7 +1432,8 @@ export const chapter047: ChapterDefinition = {
       templateParts: ['Zum Geburtstag hat sie einen wunderschönen ', ' bekommen.'],
       slots: [{ id: 's1', correctWord: 'Blumenstrauß' }],
       wordBank: ['Blumenstrauß', 'Blumestrauß', 'Blumensstrauß', 'Blumeenstrauß'],
-      explanation: 'Blume, which ends in -e, adds a linking -n- before Strauß: der Blumenstrauß.',
+      explanation:
+        'Blume, which ends in -e, adds a linking -n- before Strauß: der Blumenstrauß.',
     },
     {
       id: 'ch47-ex-67',
@@ -1343,7 +1461,8 @@ export const chapter047: ChapterDefinition = {
       templateParts: ['Zum Frühstück isst er gern ein ', '.'],
       slots: [{ id: 's1', correctWord: 'Marmeladenbrot' }],
       wordBank: ['Marmeladenbrot', 'Marmeladebrot', 'Marmeladesbrot', 'Marmeladeenbrot'],
-      explanation: 'Marmelade, which ends in -e, adds a linking -n- before Brot: das Marmeladenbrot.',
+      explanation:
+        'Marmelade, which ends in -e, adds a linking -n- before Brot: das Marmeladenbrot.',
     },
     {
       id: 'ch47-ex-69',
@@ -1357,7 +1476,8 @@ export const chapter047: ChapterDefinition = {
       tokens: ['Die', 'Kühlschrank', 'ist', 'kaputt', '.'],
       errorTokenIndex: 0,
       correction: 'Der',
-      explanation: 'The head noun is Schrank (masculine), so the compound is masculine: der Kühlschrank, not die Kühlschrank.',
+      explanation:
+        'The head noun is Schrank (masculine), so the compound is masculine: der Kühlschrank, not die Kühlschrank.',
     },
     {
       id: 'ch47-ex-70',
@@ -1371,7 +1491,8 @@ export const chapter047: ChapterDefinition = {
       tokens: ['Der', 'Handtuch', 'liegt', 'im', 'Bad', '.'],
       errorTokenIndex: 0,
       correction: 'Das',
-      explanation: 'The head noun is Tuch (neuter), so the compound is neuter: das Handtuch, not der Handtuch.',
+      explanation:
+        'The head noun is Tuch (neuter), so the compound is neuter: das Handtuch, not der Handtuch.',
     },
     {
       id: 'ch47-ex-71',
@@ -1385,7 +1506,8 @@ export const chapter047: ChapterDefinition = {
       tokens: ['Das', 'Autobahn', 'ist', 'sehr', 'lang', '.'],
       errorTokenIndex: 0,
       correction: 'Die',
-      explanation: 'The head noun is Bahn (feminine), so the compound is feminine: die Autobahn, not das Autobahn.',
+      explanation:
+        'The head noun is Bahn (feminine), so the compound is feminine: die Autobahn, not das Autobahn.',
     },
     {
       id: 'ch47-ex-72',
@@ -1399,7 +1521,8 @@ export const chapter047: ChapterDefinition = {
       tokens: ['Die', 'Buchladen', 'öffnet', 'um', 'neun', 'Uhr', '.'],
       errorTokenIndex: 0,
       correction: 'Der',
-      explanation: 'The head noun is Laden (masculine), so the compound is masculine: der Buchladen, not die Buchladen.',
+      explanation:
+        'The head noun is Laden (masculine), so the compound is masculine: der Buchladen, not die Buchladen.',
     },
     {
       id: 'ch47-ex-73',
@@ -1413,7 +1536,8 @@ export const chapter047: ChapterDefinition = {
       tokens: ['Der', 'Sonnenblume', 'wächst', 'im', 'Garten', '.'],
       errorTokenIndex: 0,
       correction: 'Die',
-      explanation: 'The head noun is Blume (feminine), so the compound is feminine: die Sonnenblume, not der Sonnenblume.',
+      explanation:
+        'The head noun is Blume (feminine), so the compound is feminine: die Sonnenblume, not der Sonnenblume.',
     },
     {
       id: 'ch47-ex-74',
@@ -1427,7 +1551,8 @@ export const chapter047: ChapterDefinition = {
       tokens: ['Das', 'Gartenzaun', 'ist', 'neu', 'gestrichen', '.'],
       errorTokenIndex: 0,
       correction: 'Der',
-      explanation: 'The head noun is Zaun (masculine), so the compound is masculine: der Gartenzaun, not das Gartenzaun.',
+      explanation:
+        'The head noun is Zaun (masculine), so the compound is masculine: der Gartenzaun, not das Gartenzaun.',
     },
     {
       id: 'ch47-ex-75',
@@ -1441,7 +1566,8 @@ export const chapter047: ChapterDefinition = {
       tokens: ['Die', 'Wintermantel', 'hängt', 'im', 'Schrank', '.'],
       errorTokenIndex: 0,
       correction: 'Der',
-      explanation: 'The head noun is Mantel (masculine), so the compound is masculine: der Wintermantel, not die Wintermantel.',
+      explanation:
+        'The head noun is Mantel (masculine), so the compound is masculine: der Wintermantel, not die Wintermantel.',
     },
     {
       id: 'ch47-ex-76',
@@ -1455,7 +1581,8 @@ export const chapter047: ChapterDefinition = {
       tokens: ['Der', 'Hausaufgabe', 'ist', 'fertig', '.'],
       errorTokenIndex: 0,
       correction: 'Die',
-      explanation: 'The head noun is Aufgabe (feminine), so the compound is feminine: die Hausaufgabe, not der Hausaufgabe.',
+      explanation:
+        'The head noun is Aufgabe (feminine), so the compound is feminine: die Hausaufgabe, not der Hausaufgabe.',
     },
   ],
 };

@@ -1188,8 +1188,16 @@ export const chapter008: ChapterDefinition = {
       instruction: 'Match each cue to the correct sentence with a modal verb.',
       prompt: 'Match the cue with the correct sentence.',
       pairs: [
-        { id: 'ch08-ex55-p1', left: 'ich / müssen / früh / aufstehen', right: 'Ich muss früh aufstehen.' },
-        { id: 'ch08-ex55-p2', left: 'wir / wollen / heute / einkaufen', right: 'Wir wollen heute einkaufen.' },
+        {
+          id: 'ch08-ex55-p1',
+          left: 'ich / müssen / früh / aufstehen',
+          right: 'Ich muss früh aufstehen.',
+        },
+        {
+          id: 'ch08-ex55-p2',
+          left: 'wir / wollen / heute / einkaufen',
+          right: 'Wir wollen heute einkaufen.',
+        },
         {
           id: 'ch08-ex55-p3',
           left: 'sie / können / heute Abend / mitkommen',
@@ -1216,7 +1224,8 @@ export const chapter008: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'production',
       grammarFocus: ['separable-verbs', 'error-correction'],
-      instruction: 'Find the token where the prefix was wrongly left attached, and correct it.',
+      instruction:
+        'Find the token where the prefix was wrongly left attached, and correct it.',
       prompt: 'A student writes about their morning routine. Something is wrong.',
       tokens: ['Ich', 'aufstehe', 'sehr', 'früh.'],
       errorTokenIndex: 1,
@@ -1231,7 +1240,8 @@ export const chapter008: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'production',
       grammarFocus: ['separable-verbs', 'error-correction'],
-      instruction: 'Find the token where the prefix was wrongly left attached, and correct it.',
+      instruction:
+        'Find the token where the prefix was wrongly left attached, and correct it.',
       prompt: 'A student writes about a phone call. Something is wrong.',
       tokens: ['Er', 'anruft', 'seinen', 'Bruder.'],
       errorTokenIndex: 1,
@@ -1246,7 +1256,8 @@ export const chapter008: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['separable-verbs', 'error-correction'],
-      instruction: 'Find the token where the prefix was wrongly left attached, and correct it.',
+      instruction:
+        'Find the token where the prefix was wrongly left attached, and correct it.',
       prompt: 'A student writes about their shopping habits. Something is wrong.',
       tokens: ['Wir', 'einkaufen', 'jeden', 'Freitag.'],
       errorTokenIndex: 1,
@@ -1261,7 +1272,8 @@ export const chapter008: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['separable-verbs', 'error-correction'],
-      instruction: 'Find the token where the prefix was wrongly left attached, and correct it.',
+      instruction:
+        'Find the token where the prefix was wrongly left attached, and correct it.',
       prompt: 'A teacher writes a note to the class. Something is wrong.',
       tokens: ['Ihr', 'aufräumt', 'das', 'Klassenzimmer.'],
       errorTokenIndex: 1,
@@ -1277,7 +1289,8 @@ export const chapter008: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['separable-verbs', 'error-correction', 'questions'],
       hint: 'In a yes/no question, the conjugated stem moves to the very front.',
-      instruction: 'Find the token where the prefix was wrongly left attached, and correct it.',
+      instruction:
+        'Find the token where the prefix was wrongly left attached, and correct it.',
       prompt: 'A student asks a friend along. Something is wrong.',
       tokens: ['Mitkommst', 'du', 'heute', 'Abend?'],
       errorTokenIndex: 0,

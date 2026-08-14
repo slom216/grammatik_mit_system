@@ -8,9 +8,9 @@ import {
 } from './backup';
 import { defaultSettings } from '../settings/settingsStore';
 import { createEmptyProgress } from './progressPersistence';
-import type { PersistedProgressV1 } from '../../schemas/progressSchema';
+import type { PersistedProgressV2 } from '../../schemas/progressSchema';
 
-const progress: PersistedProgressV1 = {
+const progress: PersistedProgressV2 = {
   ...createEmptyProgress(),
   lastOpenedChapter: 7,
   chapters: {
@@ -30,6 +30,8 @@ const progress: PersistedProgressV1 = {
     'ch07-ex-03': {
       exerciseId: 'ch07-ex-03',
       chapterNumber: 7,
+      grammarFocus: ['perfekt'],
+      hasBeenWrong: true,
       timesAnswered: 2,
       timesCorrect: 1,
       timesIncorrect: 1,
@@ -61,7 +63,11 @@ describe('progress backup', () => {
   });
 
   it('summarises what an import would replace', () => {
-    const backup = createBackup(progress, defaultSettings, new Date('2026-08-14T00:00:00Z'));
+    const backup = createBackup(
+      progress,
+      defaultSettings,
+      new Date('2026-08-14T00:00:00Z'),
+    );
     expect(describeBackup(backup)).toBe(
       '1 chapter and 1 answered exercise, exported on 2026-08-14',
     );

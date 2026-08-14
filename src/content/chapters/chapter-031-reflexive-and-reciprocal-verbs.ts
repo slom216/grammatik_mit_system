@@ -101,19 +101,31 @@ export const chapter031: ChapterDefinition = {
       {
         id: 'ch31-table-02',
         title: 'Truly reflexive verbs vs. verbs also used with a different object',
-        columns: ['Truly reflexive (always with sich)', 'Also used with a different object'],
+        columns: [
+          'Truly reflexive (always with sich)',
+          'Also used with a different object',
+        ],
         rows: [
-          ['sich beeilen (to hurry)', 'waschen (to wash something) → sich waschen (to wash oneself)'],
+          [
+            'sich beeilen (to hurry)',
+            'waschen (to wash something) → sich waschen (to wash oneself)',
+          ],
           [
             'sich erkälten (to catch a cold)',
             'anziehen (to put clothes on someone) → sich anziehen (to get dressed)',
           ],
-          ['sich freuen (to be glad)', 'setzen (to put/place something) → sich setzen (to sit down)'],
+          [
+            'sich freuen (to be glad)',
+            'setzen (to put/place something) → sich setzen (to sit down)',
+          ],
           [
             'sich interessieren (to be interested)',
             'vorstellen (to introduce someone) → sich vorstellen (to introduce oneself)',
           ],
-          ['sich ausruhen (to rest)', 'duschen (to shower) → sich duschen (to shower oneself)'],
+          [
+            'sich ausruhen (to rest)',
+            'duschen (to shower) → sich duschen (to shower oneself)',
+          ],
         ],
         note: 'The left column has no meaningful use without sich; the right column keeps the same verb but changes the object.',
       },
@@ -123,100 +135,117 @@ export const chapter031: ChapterDefinition = {
         german: 'Ich beeile mich, weil der Bus gleich kommt.',
         english: 'I am hurrying because the bus is coming soon.',
         highlight: ['mich'],
-        explanation: 'sich beeilen is a truly reflexive verb; ich takes the reflexive pronoun mich.',
+        explanation:
+          'sich beeilen is a truly reflexive verb; ich takes the reflexive pronoun mich.',
       },
       {
         german: 'Du wäschst dich jeden Morgen.',
         english: 'You wash yourself every morning.',
         highlight: ['dich'],
-        explanation: 'du takes the reflexive pronoun dich, the same form as the accusative personal pronoun you already know.',
+        explanation:
+          'du takes the reflexive pronoun dich, the same form as the accusative personal pronoun you already know.',
       },
       {
         german: 'Er zieht sich schnell an.',
         english: 'He gets dressed quickly.',
         highlight: ['sich'],
-        explanation: 'er uses the reflexive pronoun sich, not the accusative personal pronoun ihn.',
+        explanation:
+          'er uses the reflexive pronoun sich, not the accusative personal pronoun ihn.',
       },
       {
         german: 'Wir freuen uns auf die Ferien.',
         english: 'We are looking forward to the holidays.',
         highlight: ['uns'],
-        explanation: 'sich freuen auf is a truly reflexive verb; wir takes the reflexive pronoun uns.',
+        explanation:
+          'sich freuen auf is a truly reflexive verb; wir takes the reflexive pronoun uns.',
       },
       {
         german: 'Interessiert ihr euch für Kunst?',
         english: 'Are you interested in art?',
         highlight: ['euch'],
-        explanation: 'sich interessieren für is truly reflexive; ihr takes the reflexive pronoun euch.',
+        explanation:
+          'sich interessieren für is truly reflexive; ihr takes the reflexive pronoun euch.',
       },
       {
         german: 'Die Kinder setzen sich auf den Boden.',
         english: 'The children sit down on the floor.',
         highlight: ['sich'],
-        explanation: 'third-person plural (die Kinder = sie) uses the reflexive pronoun sich, not the personal pronoun sie.',
+        explanation:
+          'third-person plural (die Kinder = sie) uses the reflexive pronoun sich, not the personal pronoun sie.',
       },
       {
         german: 'Ich erkälte mich fast jeden Winter.',
         english: 'I catch a cold almost every winter.',
         highlight: ['mich'],
-        explanation: 'sich erkälten has no meaningful use without the reflexive pronoun; ich takes mich.',
+        explanation:
+          'sich erkälten has no meaningful use without the reflexive pronoun; ich takes mich.',
       },
       {
         german: 'Ich stehe früh auf und dusche mich sofort.',
         english: 'I get up early and shower right away.',
         highlight: ['dusche mich'],
-        explanation: 'the daily-routine verb sich duschen takes the reflexive pronoun mich for ich.',
+        explanation:
+          'the daily-routine verb sich duschen takes the reflexive pronoun mich for ich.',
       },
       {
         german: 'Wir umarmen uns zur Begrüßung.',
         english: 'We hug each other in greeting.',
         highlight: ['uns'],
-        explanation: 'here uns has a reciprocal meaning, "each other", describing a mutual action between the people involved, not each person hugging themselves.',
+        explanation:
+          'here uns has a reciprocal meaning, "each other", describing a mutual action between the people involved, not each person hugging themselves.',
       },
       {
         german: 'Ihr kennt euch schon seit der Schule.',
         english: 'You have known each other since school.',
         highlight: ['euch'],
-        explanation: 'euch is reciprocal here: "you know each other", not "you know yourselves".',
+        explanation:
+          'euch is reciprocal here: "you know each other", not "you know yourselves".',
       },
       {
         german: 'Sie treffen sich jeden Samstag im Park.',
         english: 'They meet each other every Saturday in the park.',
         highlight: ['sich'],
-        explanation: 'sich treffen with a plural subject usually has a reciprocal meaning: the people meet one another.',
+        explanation:
+          'sich treffen with a plural subject usually has a reciprocal meaning: the people meet one another.',
       },
       {
         german: 'Ich ruhe mich nach der Arbeit aus.',
         english: 'I rest after work.',
         highlight: ['ruhe mich', 'aus'],
-        explanation: 'sich ausruhen is separable and reflexive; the pronoun mich comes right after the conjugated verb, and aus moves to the end.',
+        explanation:
+          'sich ausruhen is separable and reflexive; the pronoun mich comes right after the conjugated verb, and aus moves to the end.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich beeile.',
         correct: 'Ich beeile mich.',
-        explanation: 'sich beeilen always requires the reflexive pronoun; it cannot stand alone.',
+        explanation:
+          'sich beeilen always requires the reflexive pronoun; it cannot stand alone.',
       },
       {
         incorrect: 'Er sich zieht schnell an.',
         correct: 'Er zieht sich schnell an.',
-        explanation: 'the reflexive pronoun stands right after the conjugated verb, not before it.',
+        explanation:
+          'the reflexive pronoun stands right after the conjugated verb, not before it.',
       },
       {
         incorrect: 'Wir freuen sich auf die Party.',
         correct: 'Wir freuen uns auf die Party.',
-        explanation: 'the reflexive pronoun must agree with the subject; wir takes uns, not the third-person sich.',
+        explanation:
+          'the reflexive pronoun must agree with the subject; wir takes uns, not the third-person sich.',
       },
       {
         incorrect: 'Du interessierst dir für Sport.',
         correct: 'Du interessierst dich für Sport.',
-        explanation: 'sich interessieren takes the accusative reflexive pronoun dich, not the dative dir.',
+        explanation:
+          'sich interessieren takes the accusative reflexive pronoun dich, not the dative dir.',
       },
       {
         incorrect: 'Wir treffen am Freitag.',
         correct: 'Wir treffen uns am Freitag.',
-        explanation: 'treffen used with a reciprocal, "meet up" meaning needs the reflexive/reciprocal pronoun uns; without it, treffen would need a direct-object noun instead.',
+        explanation:
+          'treffen used with a reciprocal, "meet up" meaning needs the reflexive/reciprocal pronoun uns; without it, treffen would need a direct-object noun instead.',
       },
     ],
     remember: [
@@ -249,7 +278,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'd', text: 'mein' },
       ],
       correctOptionId: 'a',
-      explanation: 'sich beeilen is a truly reflexive verb; ich takes the accusative reflexive pronoun mich.',
+      explanation:
+        'sich beeilen is a truly reflexive verb; ich takes the accusative reflexive pronoun mich.',
     },
     {
       id: 'ch31-ex-02',
@@ -267,7 +297,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'd', text: 'dein' },
       ],
       correctOptionId: 'a',
-      explanation: 'du takes the reflexive pronoun dich, the same form as the accusative personal pronoun.',
+      explanation:
+        'du takes the reflexive pronoun dich, the same form as the accusative personal pronoun.',
     },
     {
       id: 'ch31-ex-03',
@@ -285,7 +316,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'd', text: 'er' },
       ],
       correctOptionId: 'a',
-      explanation: 'the third person er uses the reflexive pronoun sich, not the accusative personal pronoun ihn.',
+      explanation:
+        'the third person er uses the reflexive pronoun sich, not the accusative personal pronoun ihn.',
     },
     {
       id: 'ch31-ex-04',
@@ -339,7 +371,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'd', text: 'ihr' },
       ],
       correctOptionId: 'a',
-      explanation: 'third-person plural (die Kinder = sie) also uses the reflexive pronoun sich, not the personal pronoun sie.',
+      explanation:
+        'third-person plural (die Kinder = sie) also uses the reflexive pronoun sich, not the personal pronoun sie.',
     },
     {
       id: 'ch31-ex-07',
@@ -357,7 +390,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'd', text: 'Ihre' },
       ],
       correctOptionId: 'a',
-      explanation: 'the formal Sie also uses the reflexive pronoun sich, never Sie itself.',
+      explanation:
+        'the formal Sie also uses the reflexive pronoun sich, never Sie itself.',
     },
     {
       id: 'ch31-ex-08',
@@ -375,7 +409,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'd', text: 'meiner' },
       ],
       correctOptionId: 'a',
-      explanation: 'sich interessieren takes the accusative reflexive pronoun; ich becomes mich, not the dative mir.',
+      explanation:
+        'sich interessieren takes the accusative reflexive pronoun; ich becomes mich, not the dative mir.',
     },
     {
       id: 'ch31-ex-09',
@@ -384,7 +419,8 @@ export const chapter031: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['reflexive-vs-reciprocal'],
-      instruction: 'Choose the sentence that expresses a reciprocal meaning ("each other").',
+      instruction:
+        'Choose the sentence that expresses a reciprocal meaning ("each other").',
       prompt: 'Welcher Satz drückt eine reziproke Bedeutung ("each other") aus?',
       options: [
         { id: 'a', text: 'Wir waschen uns jeden Morgen.' },
@@ -393,7 +429,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'd', text: 'Ich stehe früh auf.' },
       ],
       correctOptionId: 'b',
-      explanation: 'Wir umarmen uns describes a mutual action between two or more people (they hug each other), which is the reciprocal use of uns; sich waschen and sich duschen describe ordinary reflexive actions performed on oneself, and aufstehen is not reflexive at all.',
+      explanation:
+        'Wir umarmen uns describes a mutual action between two or more people (they hug each other), which is the reciprocal use of uns; sich waschen and sich duschen describe ordinary reflexive actions performed on oneself, and aufstehen is not reflexive at all.',
     },
     {
       id: 'ch31-ex-10',
@@ -403,7 +440,8 @@ export const chapter031: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['truly-reflexive-vs-object'],
       instruction: 'Choose the verb that always needs a reflexive pronoun.',
-      prompt: 'Welches Verb braucht immer ein Reflexivpronomen (kein Satz ohne sich ist möglich)?',
+      prompt:
+        'Welches Verb braucht immer ein Reflexivpronomen (kein Satz ohne sich ist möglich)?',
       options: [
         { id: 'a', text: 'waschen' },
         { id: 'b', text: 'sich beeilen' },
@@ -411,7 +449,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'd', text: 'setzen' },
       ],
       correctOptionId: 'b',
-      explanation: 'sich beeilen is a truly reflexive verb with no independent, non-reflexive use, unlike waschen, anziehen and setzen, which can also take a different accusative object.',
+      explanation:
+        'sich beeilen is a truly reflexive verb with no independent, non-reflexive use, unlike waschen, anziehen and setzen, which can also take a different accusative object.',
     },
     {
       id: 'ch31-ex-11',
@@ -429,7 +468,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'd', text: 'Sich zieht er schnell an.' },
       ],
       correctOptionId: 'b',
-      explanation: 'the reflexive pronoun stands right after the conjugated verb; the separable prefix an moves to the very end of the clause.',
+      explanation:
+        'the reflexive pronoun stands right after the conjugated verb; the separable prefix an moves to the very end of the clause.',
     },
     {
       id: 'ch31-ex-12',
@@ -447,7 +487,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'd', text: 'Du interessierst euch für Musik.' },
       ],
       correctOptionId: 'a',
-      explanation: 'sich interessieren takes the accusative reflexive pronoun matching the subject du, which is dich — not the dative dir, the third-person sich, or the plural euch.',
+      explanation:
+        'sich interessieren takes the accusative reflexive pronoun matching the subject du, which is dich — not the dative dir, the third-person sich, or the plural euch.',
     },
     {
       id: 'ch31-ex-13',
@@ -492,7 +533,8 @@ export const chapter031: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'sich',
       maxLength: 10,
-      explanation: 'third-person plural (die Kinder = sie) takes the reflexive pronoun sich.',
+      explanation:
+        'third-person plural (die Kinder = sie) takes the reflexive pronoun sich.',
     },
     {
       id: 'ch31-ex-16',
@@ -516,7 +558,8 @@ export const chapter031: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['reflexive pronoun', 'er'],
-      instruction: 'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
       prompt: 'Er erkältet ___ fast jeden Winter.',
       acceptedAnswers: ['sich'],
       answerMode: 'caseInsensitive',
@@ -531,13 +574,15 @@ export const chapter031: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['reflexive pronoun', 'ihr'],
-      instruction: 'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
       prompt: 'Ihr müsst ___ beeilen, der Zug fährt gleich.',
       acceptedAnswers: ['euch'],
       answerMode: 'caseInsensitive',
       placeholder: 'euch',
       maxLength: 10,
-      explanation: 'ihr takes the reflexive pronoun euch; sich beeilen is truly reflexive.',
+      explanation:
+        'ihr takes the reflexive pronoun euch; sich beeilen is truly reflexive.',
     },
     {
       id: 'ch31-ex-19',
@@ -546,13 +591,15 @@ export const chapter031: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['reflexive pronoun', 'daily-routine'],
-      instruction: 'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
       prompt: 'Ich stehe früh auf und dusche ___ sofort.',
       acceptedAnswers: ['mich'],
       answerMode: 'caseInsensitive',
       placeholder: 'mich',
       maxLength: 10,
-      explanation: 'the daily-routine verb sich duschen takes the reflexive pronoun mich for ich.',
+      explanation:
+        'the daily-routine verb sich duschen takes the reflexive pronoun mich for ich.',
     },
     {
       id: 'ch31-ex-20',
@@ -561,13 +608,15 @@ export const chapter031: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['reflexive pronoun', 'reciprocal', 'wir'],
-      instruction: 'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
       prompt: 'Wann treffen wir ___ am Samstag?',
       acceptedAnswers: ['uns'],
       answerMode: 'caseInsensitive',
       placeholder: 'uns',
       maxLength: 10,
-      explanation: 'sich treffen with wir has a reciprocal meaning ("when are we meeting up"), and wir takes the reflexive pronoun uns.',
+      explanation:
+        'sich treffen with wir has a reciprocal meaning ("when are we meeting up"), and wir takes the reflexive pronoun uns.',
     },
     {
       id: 'ch31-ex-21',
@@ -576,7 +625,8 @@ export const chapter031: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['truly-reflexive', 'error-correction'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ich beeile.',
       acceptedAnswers: ['Ich beeile mich.'],
       answerMode: 'normalized',
@@ -591,13 +641,15 @@ export const chapter031: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['reflexive-agreement', 'error-correction'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Wir freuen sich auf die Party.',
       acceptedAnswers: ['Wir freuen uns auf die Party.'],
       answerMode: 'normalized',
       placeholder: 'Wir freuen ...',
       maxLength: 40,
-      explanation: 'the reflexive pronoun must agree with the subject; wir takes uns, not the third-person sich.',
+      explanation:
+        'the reflexive pronoun must agree with the subject; wir takes uns, not the third-person sich.',
     },
     {
       id: 'ch31-ex-23',
@@ -606,13 +658,15 @@ export const chapter031: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['word-order', 'error-correction'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Sich er beeilt, weil er spät dran ist.',
       acceptedAnswers: ['Er beeilt sich, weil er spät dran ist.'],
       answerMode: 'normalized',
       placeholder: 'Er beeilt sich, ...',
       maxLength: 60,
-      explanation: 'the reflexive pronoun sich comes right after the conjugated verb (beeilt), not before the subject.',
+      explanation:
+        'the reflexive pronoun sich comes right after the conjugated verb (beeilt), not before the subject.',
     },
     {
       id: 'ch31-ex-24',
@@ -621,13 +675,15 @@ export const chapter031: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['reciprocal', 'sentence-building'],
-      instruction: 'Write a complete sentence using the cues. The pronoun expresses a reciprocal meaning ("each other"). Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence using the cues. The pronoun expresses a reciprocal meaning ("each other"). Capitalisation is checked; no full stop is required.',
       prompt: 'ihr – sich treffen – am Freitag',
       acceptedAnswers: ['Ihr trefft euch am Freitag.', 'Ihr trefft euch am Freitag'],
       answerMode: 'normalized',
       placeholder: 'Ihr trefft ...',
       maxLength: 60,
-      explanation: 'sich treffen with ihr takes the reflexive/reciprocal pronoun euch: "you are meeting (each other) on Friday."',
+      explanation:
+        'sich treffen with ihr takes the reflexive/reciprocal pronoun euch: "you are meeting (each other) on Friday."',
     },
     {
       id: 'ch31-ex-25',
@@ -645,7 +701,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'd', text: 'ihn' },
       ],
       correctOptionId: 'a',
-      explanation: 'the third person es also takes the reflexive pronoun sich, just like er and sie.',
+      explanation:
+        'the third person es also takes the reflexive pronoun sich, just like er and sie.',
     },
     {
       id: 'ch31-ex-26',
@@ -674,7 +731,8 @@ export const chapter031: ChapterDefinition = {
       templateParts: ['Wir beeilen ', ', der Film beginnt gleich.'],
       slots: [{ id: 's1', correctWord: 'uns' }],
       wordBank: ['uns', 'sich', 'euch', 'mich'],
-      explanation: 'wir takes the reflexive pronoun uns; sich beeilen is truly reflexive.',
+      explanation:
+        'wir takes the reflexive pronoun uns; sich beeilen is truly reflexive.',
     },
     {
       id: 'ch31-ex-28',
@@ -692,7 +750,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'p4', left: 'ihr', right: 'euch' },
         { id: 'p5', left: 'er/sie/es/sie (Pl.)/Sie', right: 'sich' },
       ],
-      explanation: 'four reflexive pronouns match the accusative personal pronouns you already know (mich, dich, uns, euch), while every third-person form and the formal Sie use sich.',
+      explanation:
+        'four reflexive pronouns match the accusative personal pronouns you already know (mich, dich, uns, euch), while every third-person form and the formal Sie use sich.',
     },
     {
       id: 'ch31-ex-29',
@@ -706,7 +765,8 @@ export const chapter031: ChapterDefinition = {
       tokens: ['Ich', 'wasche', 'dich', 'jeden', 'Tag', '.'],
       errorTokenIndex: 2,
       correction: 'mich',
-      explanation: 'ich requires the reflexive pronoun mich; dich would wrongly refer to a different person (du) instead of the subject itself.',
+      explanation:
+        'ich requires the reflexive pronoun mich; dich would wrongly refer to a different person (du) instead of the subject itself.',
     },
     {
       id: 'ch31-ex-30',
@@ -724,7 +784,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'd', text: 'ich' },
       ],
       correctOptionId: 'a',
-      explanation: 'with sich die Zähne putzen, die Zähne is already the accusative object, so the reflexive pronoun takes the dative form mir instead of the accusative mich.',
+      explanation:
+        'with sich die Zähne putzen, die Zähne is already the accusative object, so the reflexive pronoun takes the dative form mir instead of the accusative mich.',
     },
     {
       id: 'ch31-ex-31',
@@ -733,13 +794,15 @@ export const chapter031: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['reflexive pronoun', 'dative', 'du', 'body-part-verb'],
-      instruction: 'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
       prompt: 'Du putzt ___ die Zähne vor dem Schlafen. (du)',
       acceptedAnswers: ['dir'],
       answerMode: 'caseInsensitive',
       placeholder: 'dir',
       maxLength: 10,
-      explanation: 'die Zähne is the accusative object here, so du takes the dative reflexive pronoun dir, not the accusative dich.',
+      explanation:
+        'die Zähne is the accusative object here, so du takes the dative reflexive pronoun dir, not the accusative dich.',
     },
     {
       id: 'ch31-ex-32',
@@ -753,7 +816,8 @@ export const chapter031: ChapterDefinition = {
       templateParts: ['Wir waschen ', ' die Hände vor dem Essen.'],
       slots: [{ id: 's1', correctWord: 'uns' }],
       wordBank: ['uns', 'sich', 'euch', 'ihnen'],
-      explanation: 'die Hände is the accusative object, so wir takes the dative reflexive pronoun, which happens to have the same form as the accusative: uns.',
+      explanation:
+        'die Hände is the accusative object, so wir takes the dative reflexive pronoun, which happens to have the same form as the accusative: uns.',
     },
     {
       id: 'ch31-ex-33',
@@ -772,7 +836,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'p5', left: 'sich ausruhen', right: 'to rest' },
         { id: 'p6', left: 'sich vorstellen', right: 'to introduce oneself' },
       ],
-      explanation: 'these verbs always appear with a reflexive pronoun, and each has a fixed English meaning built around that reflexive use.',
+      explanation:
+        'these verbs always appear with a reflexive pronoun, and each has a fixed English meaning built around that reflexive use.',
     },
     {
       id: 'ch31-ex-34',
@@ -786,7 +851,8 @@ export const chapter031: ChapterDefinition = {
       tokens: ['Ich', 'putze', 'mich', 'die', 'Zähne', '.'],
       errorTokenIndex: 2,
       correction: 'mir',
-      explanation: 'die Zähne is already the accusative object, so the reflexive pronoun must be the dative mir, not the accusative mich.',
+      explanation:
+        'die Zähne is already the accusative object, so the reflexive pronoun must be the dative mir, not the accusative mich.',
     },
     {
       id: 'ch31-ex-35',
@@ -804,7 +870,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'd', text: 'er' },
       ],
       correctOptionId: 'a',
-      explanation: 'sich weh tun governs the dative, but the third-person reflexive pronoun sich is identical for accusative and dative, so er still takes sich, not the personal dative pronoun ihm.',
+      explanation:
+        'sich weh tun governs the dative, but the third-person reflexive pronoun sich is identical for accusative and dative, so er still takes sich, not the personal dative pronoun ihm.',
     },
     {
       id: 'ch31-ex-36',
@@ -813,13 +880,15 @@ export const chapter031: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['reflexive pronoun', 'dative', 'ich', 'body-part-verb'],
-      instruction: 'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
       prompt: 'Ich kämme ___ die Haare vor dem Ausgehen. (ich)',
       acceptedAnswers: ['mir'],
       answerMode: 'caseInsensitive',
       placeholder: 'mir',
       maxLength: 10,
-      explanation: 'die Haare is the accusative object, so ich takes the dative reflexive pronoun mir, not the accusative mich.',
+      explanation:
+        'die Haare is the accusative object, so ich takes the dative reflexive pronoun mir, not the accusative mich.',
     },
     {
       id: 'ch31-ex-37',
@@ -833,7 +902,8 @@ export const chapter031: ChapterDefinition = {
       templateParts: ['Wäscht ihr ', ' die Hände?'],
       slots: [{ id: 's1', correctWord: 'euch' }],
       wordBank: ['euch', 'uns', 'sich', 'dir'],
-      explanation: 'die Hände is the accusative object, so ihr takes the dative reflexive pronoun, which has the same form as the accusative: euch.',
+      explanation:
+        'die Hände is the accusative object, so ihr takes the dative reflexive pronoun, which has the same form as the accusative: euch.',
     },
     {
       id: 'ch31-ex-38',
@@ -851,7 +921,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'p4', left: 'sich umarmen', right: 'to hug each other' },
         { id: 'p5', left: 'sich verstehen', right: 'to understand each other' },
       ],
-      explanation: 'with a plural subject, these verbs commonly express a reciprocal, "each other" meaning rather than a strictly reflexive one.',
+      explanation:
+        'with a plural subject, these verbs commonly express a reciprocal, "each other" meaning rather than a strictly reflexive one.',
     },
     {
       id: 'ch31-ex-39',
@@ -865,7 +936,8 @@ export const chapter031: ChapterDefinition = {
       tokens: ['Ich', 'freue', 'dich', 'auf', 'die', 'Ferien', '.'],
       errorTokenIndex: 2,
       correction: 'mich',
-      explanation: 'sich freuen auf is reflexive and must agree with the subject; ich requires mich, not dich.',
+      explanation:
+        'sich freuen auf is reflexive and must agree with the subject; ich requires mich, not dich.',
     },
     {
       id: 'ch31-ex-40',
@@ -874,7 +946,8 @@ export const chapter031: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['reflexive-vs-reciprocal'],
-      instruction: 'Choose the sentence that expresses a reflexive (not reciprocal) meaning.',
+      instruction:
+        'Choose the sentence that expresses a reflexive (not reciprocal) meaning.',
       prompt: 'Welcher Satz drückt eine reflexive (nicht reziproke) Bedeutung aus?',
       options: [
         { id: 'a', text: 'Sie kennen sich seit der Schule.' },
@@ -883,7 +956,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'd', text: 'Sie lieben sich sehr.' },
       ],
       correctOptionId: 'b',
-      explanation: 'Sie waschen sich describes each person washing themselves, a plain reflexive action, while kennen, umarmen, and lieben with a plural subject naturally describe a mutual, reciprocal action.',
+      explanation:
+        'Sie waschen sich describes each person washing themselves, a plain reflexive action, while kennen, umarmen, and lieben with a plural subject naturally describe a mutual, reciprocal action.',
     },
     {
       id: 'ch31-ex-41',
@@ -892,13 +966,15 @@ export const chapter031: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['reflexive pronoun', 'dative', 'error-correction', 'body-part-verb'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ich putze mich die Zähne.',
       acceptedAnswers: ['Ich putze mir die Zähne.'],
       answerMode: 'normalized',
       placeholder: 'Ich putze ...',
       maxLength: 40,
-      explanation: 'die Zähne is the accusative object, so the reflexive pronoun must be dative: Ich putze mir die Zähne.',
+      explanation:
+        'die Zähne is the accusative object, so the reflexive pronoun must be dative: Ich putze mir die Zähne.',
     },
     {
       id: 'ch31-ex-42',
@@ -912,7 +988,8 @@ export const chapter031: ChapterDefinition = {
       templateParts: ['Möchten Sie ', ' kurz vorstellen?'],
       slots: [{ id: 's1', correctWord: 'sich' }],
       wordBank: ['sich', 'Ihnen', 'euch', 'uns'],
-      explanation: 'the formal Sie always uses the reflexive pronoun sich, never the personal dative pronoun Ihnen.',
+      explanation:
+        'the formal Sie always uses the reflexive pronoun sich, never the personal dative pronoun Ihnen.',
     },
     {
       id: 'ch31-ex-43',
@@ -930,7 +1007,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'p4', left: 'ihr (sich beeilen)', right: 'euch' },
         { id: 'p5', left: 'er (sich ausruhen)', right: 'sich' },
       ],
-      explanation: 'the reflexive pronoun always agrees with the subject, regardless of which reflexive verb is used.',
+      explanation:
+        'the reflexive pronoun always agrees with the subject, regardless of which reflexive verb is used.',
     },
     {
       id: 'ch31-ex-44',
@@ -944,7 +1022,8 @@ export const chapter031: ChapterDefinition = {
       tokens: ['Du', 'putzt', 'dich', 'die', 'Zähne', '.'],
       errorTokenIndex: 2,
       correction: 'dir',
-      explanation: 'die Zähne is already the accusative object, so du needs the dative reflexive pronoun dir, not the accusative dich.',
+      explanation:
+        'die Zähne is already the accusative object, so du needs the dative reflexive pronoun dir, not the accusative dich.',
     },
     {
       id: 'ch31-ex-45',
@@ -962,7 +1041,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'd', text: 'sie' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Freunde = sie (Plural); the reflexive/reciprocal pronoun for third-person plural is always sich.',
+      explanation:
+        'die Freunde = sie (Plural); the reflexive/reciprocal pronoun for third-person plural is always sich.',
     },
     {
       id: 'ch31-ex-46',
@@ -971,13 +1051,15 @@ export const chapter031: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['reflexive pronoun', 'reciprocal', 'wir'],
-      instruction: 'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
       prompt: 'Wir verstehen ___ ohne Worte. (wir)',
       acceptedAnswers: ['uns'],
       answerMode: 'caseInsensitive',
       placeholder: 'uns',
       maxLength: 10,
-      explanation: 'sich verstehen with wir has a reciprocal meaning ("we understand each other"), and wir takes uns.',
+      explanation:
+        'sich verstehen with wir has a reciprocal meaning ("we understand each other"), and wir takes uns.',
     },
     {
       id: 'ch31-ex-47',
@@ -991,7 +1073,8 @@ export const chapter031: ChapterDefinition = {
       templateParts: ['Ihr liebt ', ' schon seit Jahren.'],
       slots: [{ id: 's1', correctWord: 'euch' }],
       wordBank: ['euch', 'uns', 'sich', 'dich'],
-      explanation: 'ihr takes the reflexive/reciprocal pronoun euch: "you love each other."',
+      explanation:
+        'ihr takes the reflexive/reciprocal pronoun euch: "you love each other."',
     },
     {
       id: 'ch31-ex-48',
@@ -1006,10 +1089,19 @@ export const chapter031: ChapterDefinition = {
         { id: 'p1', left: 'sich beeilen', right: 'to hurry (always reflexive)' },
         { id: 'p2', left: 'sich erkälten', right: 'to catch a cold (always reflexive)' },
         { id: 'p3', left: 'sich setzen', right: 'to sit down (reflexive use of setzen)' },
-        { id: 'p4', left: 'sich vorstellen', right: 'to introduce oneself (reflexive use of vorstellen)' },
-        { id: 'p5', left: 'sich anziehen', right: 'to get dressed (reflexive use of anziehen)' },
+        {
+          id: 'p4',
+          left: 'sich vorstellen',
+          right: 'to introduce oneself (reflexive use of vorstellen)',
+        },
+        {
+          id: 'p5',
+          left: 'sich anziehen',
+          right: 'to get dressed (reflexive use of anziehen)',
+        },
       ],
-      explanation: 'some verbs are truly reflexive with no other use, while others share a verb with a non-reflexive meaning and add a reflexive one.',
+      explanation:
+        'some verbs are truly reflexive with no other use, while others share a verb with a non-reflexive meaning and add a reflexive one.',
     },
     {
       id: 'ch31-ex-49',
@@ -1023,7 +1115,8 @@ export const chapter031: ChapterDefinition = {
       tokens: ['Wir', 'interessieren', 'sich', 'für', 'Kunst', '.'],
       errorTokenIndex: 2,
       correction: 'uns',
-      explanation: 'the reflexive pronoun must agree with the subject; wir takes uns, not the third-person sich.',
+      explanation:
+        'the reflexive pronoun must agree with the subject; wir takes uns, not the third-person sich.',
     },
     {
       id: 'ch31-ex-50',
@@ -1041,7 +1134,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'd', text: 'Er interessiert ihn für Sport.' },
       ],
       correctOptionId: 'a',
-      explanation: 'er requires the third-person singular verb form interessiert and the reflexive pronoun sich; dich and ihn belong to other persons, and interessieren is the wrong verb form for er.',
+      explanation:
+        'er requires the third-person singular verb form interessiert and the reflexive pronoun sich; dich and ihn belong to other persons, and interessieren is the wrong verb form for er.',
     },
     {
       id: 'ch31-ex-51',
@@ -1050,13 +1144,15 @@ export const chapter031: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['reflexive pronoun', 'dative', 'wir', 'body-part-verb'],
-      instruction: 'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
       prompt: 'Wir putzen ___ die Zähne nach dem Essen. (wir)',
       acceptedAnswers: ['uns'],
       answerMode: 'caseInsensitive',
       placeholder: 'uns',
       maxLength: 10,
-      explanation: 'die Zähne is the accusative object, so wir takes the dative reflexive pronoun, which has the same form as the accusative: uns.',
+      explanation:
+        'die Zähne is the accusative object, so wir takes the dative reflexive pronoun, which has the same form as the accusative: uns.',
     },
     {
       id: 'ch31-ex-52',
@@ -1070,7 +1166,8 @@ export const chapter031: ChapterDefinition = {
       templateParts: ['Er tut ', ' beim Fußball oft weh.'],
       slots: [{ id: 's1', correctWord: 'sich' }],
       wordBank: ['sich', 'ihm', 'ihn', 'er'],
-      explanation: 'sich weh tun governs the dative, but the third-person reflexive pronoun is sich for both cases, not the personal dative pronoun ihm.',
+      explanation:
+        'sich weh tun governs the dative, but the third-person reflexive pronoun is sich for both cases, not the personal dative pronoun ihm.',
     },
     {
       id: 'ch31-ex-53',
@@ -1079,7 +1176,8 @@ export const chapter031: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['reflexive pronoun', 'dative', 'body-part-verb'],
-      instruction: 'Match each subject-and-verb cue to its correct dative reflexive pronoun.',
+      instruction:
+        'Match each subject-and-verb cue to its correct dative reflexive pronoun.',
       prompt: 'Ordne jeden Hinweis dem passenden Reflexivpronomen (Dativ) zu.',
       pairs: [
         { id: 'p1', left: 'ich (die Zähne putzen)', right: 'mir' },
@@ -1088,7 +1186,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'p4', left: 'ihr (weh tun)', right: 'euch' },
         { id: 'p5', left: 'er/sie/es/sie (Pl.)/Sie', right: 'sich' },
       ],
-      explanation: 'the dative reflexive pronouns are identical to the accusative ones except for ich (mir, not mich) and du (dir, not dich).',
+      explanation:
+        'the dative reflexive pronouns are identical to the accusative ones except for ich (mir, not mich) and du (dir, not dich).',
     },
     {
       id: 'ch31-ex-54',
@@ -1102,7 +1201,8 @@ export const chapter031: ChapterDefinition = {
       tokens: ['Er', 'wäscht', 'ihm', 'die', 'Hände', '.'],
       errorTokenIndex: 2,
       correction: 'sich',
-      explanation: 'the dative reflexive pronoun for the third person is sich, not the personal dative pronoun ihm.',
+      explanation:
+        'the dative reflexive pronoun for the third person is sich, not the personal dative pronoun ihm.',
     },
     {
       id: 'ch31-ex-55',
@@ -1120,7 +1220,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'd', text: 'Ich stehe auf, dusche mir und ziehe dich an.' },
       ],
       correctOptionId: 'a',
-      explanation: 'aufstehen is not reflexive, while sich duschen and sich anziehen both need the reflexive pronoun mich for ich.',
+      explanation:
+        'aufstehen is not reflexive, while sich duschen and sich anziehen both need the reflexive pronoun mich for ich.',
     },
     {
       id: 'ch31-ex-56',
@@ -1129,13 +1230,15 @@ export const chapter031: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['reflexive pronoun', 'reciprocal', 'dative', 'wir'],
-      instruction: 'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
       prompt: 'Wir helfen ___ immer gegenseitig. (wir)',
       acceptedAnswers: ['uns'],
       answerMode: 'caseInsensitive',
       placeholder: 'uns',
       maxLength: 10,
-      explanation: 'sich helfen governs the dative and has a reciprocal meaning here ("we always help each other"); for wir the dative reflexive form is uns, same as the accusative.',
+      explanation:
+        'sich helfen governs the dative and has a reciprocal meaning here ("we always help each other"); for wir the dative reflexive form is uns, same as the accusative.',
     },
     {
       id: 'ch31-ex-57',
@@ -1149,7 +1252,8 @@ export const chapter031: ChapterDefinition = {
       templateParts: ['Möchten Sie ', ' kurz vorstellen, bevor wir anfangen?'],
       slots: [{ id: 's1', correctWord: 'sich' }],
       wordBank: ['sich', 'Ihnen', 'euch', 'uns'],
-      explanation: 'the formal Sie always takes the reflexive pronoun sich, whether accusative or dative.',
+      explanation:
+        'the formal Sie always takes the reflexive pronoun sich, whether accusative or dative.',
     },
     {
       id: 'ch31-ex-58',
@@ -1167,7 +1271,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'p4', left: 'Ihr wascht euch.', right: 'You wash yourselves.' },
         { id: 'p5', left: 'Sie treffen sich.', right: 'They meet each other.' },
       ],
-      explanation: 'the same reflexive pronoun forms can be reflexive ("themselves") or reciprocal ("each other") depending on the verb and context.',
+      explanation:
+        'the same reflexive pronoun forms can be reflexive ("themselves") or reciprocal ("each other") depending on the verb and context.',
     },
     {
       id: 'ch31-ex-59',
@@ -1181,7 +1286,8 @@ export const chapter031: ChapterDefinition = {
       tokens: ['Ihr', 'wascht', 'sich', 'jeden', 'Tag', '.'],
       errorTokenIndex: 2,
       correction: 'euch',
-      explanation: 'the reflexive pronoun must agree with the subject; ihr takes euch, not the third-person sich.',
+      explanation:
+        'the reflexive pronoun must agree with the subject; ihr takes euch, not the third-person sich.',
     },
     {
       id: 'ch31-ex-60',
@@ -1199,7 +1305,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'd', text: 'ihn' },
       ],
       correctOptionId: 'a',
-      explanation: 'the indefinite pronoun man also takes the third-person reflexive pronoun sich.',
+      explanation:
+        'the indefinite pronoun man also takes the third-person reflexive pronoun sich.',
     },
     {
       id: 'ch31-ex-61',
@@ -1217,7 +1324,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'd', text: 'Ich dusche mir und putze mir die Zähne.' },
       ],
       correctOptionId: 'a',
-      explanation: 'sich duschen has no other object, so it takes the accusative mich; sich die Zähne putzen already has die Zähne as its accusative object, so the reflexive pronoun there must be the dative mir.',
+      explanation:
+        'sich duschen has no other object, so it takes the accusative mich; sich die Zähne putzen already has die Zähne as its accusative object, so the reflexive pronoun there must be the dative mir.',
     },
     {
       id: 'ch31-ex-62',
@@ -1235,7 +1343,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'd', text: 'Setzt euch bitte!' },
       ],
       correctOptionId: 'b',
-      explanation: 'Ich setze die Tasse auf den Tisch has a different accusative object (die Tasse), so setzen is used non-reflexively there; the other sentences all use the reflexive sich setzen (to sit down).',
+      explanation:
+        'Ich setze die Tasse auf den Tisch has a different accusative object (die Tasse), so setzen is used non-reflexively there; the other sentences all use the reflexive sich setzen (to sit down).',
     },
     {
       id: 'ch31-ex-63',
@@ -1253,7 +1362,8 @@ export const chapter031: ChapterDefinition = {
         { id: 'd', text: 'Ich stelle es vor.' },
       ],
       correctOptionId: 'b',
-      explanation: 'Ich stelle mich vor uses the reflexive pronoun mich, meaning the subject introduces itself; the other options introduce someone or something else and are not reflexive.',
+      explanation:
+        'Ich stelle mich vor uses the reflexive pronoun mich, meaning the subject introduces itself; the other options introduce someone or something else and are not reflexive.',
     },
     {
       id: 'ch31-ex-64',
@@ -1262,13 +1372,15 @@ export const chapter031: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['reflexive pronoun', 'reciprocal', 'ihr'],
-      instruction: 'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
       prompt: 'Ruft ihr ___ jeden Abend an? (ihr, reziprok)',
       acceptedAnswers: ['euch'],
       answerMode: 'caseInsensitive',
       placeholder: 'euch',
       maxLength: 10,
-      explanation: 'sich anrufen with ihr has a reciprocal meaning ("do you call each other"), and ihr takes euch.',
+      explanation:
+        'sich anrufen with ihr has a reciprocal meaning ("do you call each other"), and ihr takes euch.',
     },
     {
       id: 'ch31-ex-65',
@@ -1277,13 +1389,15 @@ export const chapter031: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['reflexive-vs-personal-pronoun', 'error-correction'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Er zieht ihn schnell an.',
       acceptedAnswers: ['Er zieht sich schnell an.'],
       answerMode: 'normalized',
       placeholder: 'Er zieht ...',
       maxLength: 40,
-      explanation: 'a reflexive meaning ("he gets dressed") needs the reflexive pronoun sich, not the personal accusative pronoun ihn, which would wrongly refer to someone else.',
+      explanation:
+        'a reflexive meaning ("he gets dressed") needs the reflexive pronoun sich, not the personal accusative pronoun ihn, which would wrongly refer to someone else.',
     },
     {
       id: 'ch31-ex-66',
@@ -1292,13 +1406,15 @@ export const chapter031: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['reflexive pronoun', 'dative', 'error-correction', 'body-part-verb'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Du putzt dich die Zähne.',
       acceptedAnswers: ['Du putzt dir die Zähne.'],
       answerMode: 'normalized',
       placeholder: 'Du putzt ...',
       maxLength: 40,
-      explanation: 'die Zähne is the accusative object, so du needs the dative reflexive pronoun dir, not the accusative dich.',
+      explanation:
+        'die Zähne is the accusative object, so du needs the dative reflexive pronoun dir, not the accusative dich.',
     },
     {
       id: 'ch31-ex-67',
@@ -1312,7 +1428,8 @@ export const chapter031: ChapterDefinition = {
       templateParts: ['Die Kinder kämmen ', ' die Haare vor der Schule.'],
       slots: [{ id: 's1', correctWord: 'sich' }],
       wordBank: ['sich', 'ihnen', 'ihre', 'euch'],
-      explanation: 'die Kinder = sie (Plural); the third-person dative reflexive pronoun is sich (same as accusative), not the personal dative pronoun ihnen.',
+      explanation:
+        'die Kinder = sie (Plural); the third-person dative reflexive pronoun is sich (same as accusative), not the personal dative pronoun ihnen.',
     },
   ],
 };

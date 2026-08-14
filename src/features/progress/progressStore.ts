@@ -5,7 +5,7 @@ import type {
   ChapterProgress,
   ChapterStatus,
   ExerciseHistory,
-  PersistedProgressV1,
+  PersistedProgressV2,
 } from '../../schemas/progressSchema';
 import { PROGRESS_SCHEMA_VERSION } from '../../schemas/progressSchema';
 import {
@@ -14,6 +14,7 @@ import {
   selectDueExercises,
 } from '../practice/reviewScheduler';
 import { evaluateMastery, type SessionSummary } from '../practice/scoring';
+import { toDayKey } from './dayKey';
 import {
   clearProgress,
   createEmptyProgress,
@@ -26,6 +27,8 @@ export interface RecordAttemptInput {
   chapterNumber: number;
   outcome: AttemptOutcome;
   now?: Date;
+  /** The exercise's grammar tags, kept on the history entry for topic summaries. */
+  grammarFocus?: readonly string[];
 }
 
 export interface RecordSessionInput {
@@ -38,6 +41,8 @@ export interface RecordSessionInput {
 export interface ProgressState {
   chapters: Record<number, ChapterProgress>;
   exerciseHistory: Record<string, ExerciseHistory>;
+  /** Exercises answered per local day, `YYYY-MM-DD` → count. */
+  answersByDay: Record<string, number>;
   lastOpenedChapter?: number;
   hydrated: boolean;
   /** True when stored progress could not be read and was reset on load. */
@@ -50,8 +55,8 @@ export interface ProgressState {
   setLastOpenedChapter: (chapterNumber: number) => void;
   toggleBookmark: (chapterNumber: number) => void;
   resetProgress: () => void;
-  replaceProgress: (state: PersistedProgressV1) => void;
-  snapshot: () => PersistedProgressV1;
+  replaceProgress: (state: PersistedProgressV2) => void;
+  snapshot: () => PersistedProgressV2;
 }
 
 export function createChapterProgress(chapterNumber: number): ChapterProgress {
@@ -71,12 +76,14 @@ export function createChapterProgress(chapterNumber: number): ChapterProgress {
 function toPersisted(state: {
   chapters: Record<number, ChapterProgress>;
   exerciseHistory: Record<string, ExerciseHistory>;
+  answersByDay: Record<string, number>;
   lastOpenedChapter?: number;
-}): PersistedProgressV1 {
-  const persisted: PersistedProgressV1 = {
+}): PersistedProgressV2 {
+  const persisted: PersistedProgressV2 = {
     schemaVersion: PROGRESS_SCHEMA_VERSION,
     chapters: state.chapters,
     exerciseHistory: state.exerciseHistory,
+    answersByDay: state.answersByDay,
   };
   if (state.lastOpenedChapter !== undefined) {
     persisted.lastOpenedChapter = state.lastOpenedChapter;
@@ -99,6 +106,7 @@ export const useProgressStore = create<ProgressState>()((set, get) => {
       set({
         chapters: state.chapters,
         exerciseHistory: state.exerciseHistory,
+        answersByDay: state.answersByDay,
         lastOpenedChapter: state.lastOpenedChapter,
         hydrated: true,
         recovered,
@@ -107,7 +115,13 @@ export const useProgressStore = create<ProgressState>()((set, get) => {
 
     acknowledgeRecovery: () => set({ recovered: false }),
 
-    recordAttempt: ({ exerciseId, chapterNumber, outcome, now = new Date() }) => {
+    recordAttempt: ({
+      exerciseId,
+      chapterNumber,
+      outcome,
+      now = new Date(),
+      grammarFocus,
+    }) => {
       const previous = get().exerciseHistory[exerciseId];
       const history = scheduleNextReview({
         exerciseId,
@@ -115,6 +129,7 @@ export const useProgressStore = create<ProgressState>()((set, get) => {
         outcome,
         now,
         ...(previous ? { previous } : {}),
+        ...(grammarFocus ? { grammarFocus } : {}),
       });
 
       const chapter =
@@ -122,8 +137,13 @@ export const useProgressStore = create<ProgressState>()((set, get) => {
       const status: ChapterStatus =
         chapter.status === 'notStarted' ? 'inProgress' : chapter.status;
 
+      const day = toDayKey(now);
       set((state) => ({
         exerciseHistory: { ...state.exerciseHistory, [exerciseId]: history },
+        answersByDay: {
+          ...state.answersByDay,
+          [day]: (state.answersByDay[day] ?? 0) + 1,
+        },
         chapters: {
           ...state.chapters,
           [chapterNumber]: { ...chapter, status, lastPracticedAt: now.toISOString() },
@@ -195,6 +215,7 @@ export const useProgressStore = create<ProgressState>()((set, get) => {
       set({
         chapters: state.chapters,
         exerciseHistory: state.exerciseHistory,
+        answersByDay: state.answersByDay,
         lastOpenedChapter: state.lastOpenedChapter,
         hydrated: true,
       });

@@ -74,7 +74,7 @@ export const chapter034: ChapterDefinition = {
         heading: 'um: around — and the separate fixed time phrase',
         paragraphs: [
           'As an accusative-governing preposition, um usually means "around": um den Tisch (around the table), um die Ecke (around the corner), um den Block (around the block).',
-          'Um also appears in the fixed clock-time expression you learned in Chapter 33, um acht Uhr (at eight o\'clock). That time phrase is a set expression for telling time and should simply be learned as a fixed pattern; it is not something you need to analyse case by case, unlike the spatial and abstract uses of um practised in this chapter.',
+          "Um also appears in the fixed clock-time expression you learned in Chapter 33, um acht Uhr (at eight o'clock). That time phrase is a set expression for telling time and should simply be learned as a fixed pattern; it is not something you need to analyse case by case, unlike the spatial and abstract uses of um practised in this chapter.",
         ],
       },
       {
@@ -156,7 +156,8 @@ export const chapter034: ChapterDefinition = {
         german: 'Ich kaufe eine Blume für meine Mutter.',
         english: 'I am buying a flower for my mother.',
         highlight: ['für meine Mutter'],
-        explanation: 'meine stays the same in the feminine accusative; only masculine articles change.',
+        explanation:
+          'meine stays the same in the feminine accusative; only masculine articles change.',
       },
       {
         german: 'Er hat nichts gegen den Plan.',
@@ -180,13 +181,15 @@ export const chapter034: ChapterDefinition = {
         german: 'Sie kommt ohne ihren Bruder.',
         english: 'She is coming without her brother.',
         highlight: ['ohne ihren Bruder'],
-        explanation: 'ihren shows the masculine accusative ending -en, matching der Bruder → den/ihren Bruder.',
+        explanation:
+          'ihren shows the masculine accusative ending -en, matching der Bruder → den/ihren Bruder.',
       },
       {
         german: 'Der Supermarkt ist um die Ecke.',
         english: 'The supermarket is around the corner.',
         highlight: ['um die Ecke'],
-        explanation: 'um die Ecke is a common fixed phrase; die Ecke is feminine and stays unchanged.',
+        explanation:
+          'um die Ecke is a common fixed phrase; die Ecke is feminine and stays unchanged.',
       },
       {
         german: 'Die Kinder laufen um den Baum.',
@@ -196,22 +199,25 @@ export const chapter034: ChapterDefinition = {
       },
       {
         german: 'Wir treffen uns um acht Uhr.',
-        english: 'We are meeting at eight o\'clock.',
+        english: "We are meeting at eight o'clock.",
         highlight: ['um acht Uhr'],
-        explanation: 'This is the fixed clock-time expression from Chapter 33, separate from the spatial use of um practised in this chapter.',
+        explanation:
+          'This is the fixed clock-time expression from Chapter 33, separate from the spatial use of um practised in this chapter.',
       },
       {
         german: 'Ohne dich ist die Party langweilig.',
         english: 'Without you the party is boring.',
         highlight: ['Ohne dich'],
-        explanation: 'ohne + accusative pronoun dich, placed at the start of the sentence for emphasis.',
+        explanation:
+          'ohne + accusative pronoun dich, placed at the start of the sentence for emphasis.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich gehe durch der Park.',
         correct: 'Ich gehe durch den Park.',
-        explanation: 'durch always takes the accusative, so the masculine article must be den, not the nominative der.',
+        explanation:
+          'durch always takes the accusative, so the masculine article must be den, not the nominative der.',
       },
       {
         incorrect: 'Das Geschenk ist für ich.',
@@ -221,17 +227,20 @@ export const chapter034: ChapterDefinition = {
       {
         incorrect: 'Er ist gegen dem Plan.',
         correct: 'Er ist gegen den Plan.',
-        explanation: 'gegen always takes the accusative, never the dative, so the masculine article is den, not the dative dem.',
+        explanation:
+          'gegen always takes the accusative, never the dative, so the masculine article is den, not the dative dem.',
       },
       {
         incorrect: 'Wir fahren ohne dem Auto.',
         correct: 'Wir fahren ohne das Auto.',
-        explanation: 'ohne always takes the accusative, so the neuter article stays das; the dative dem is not allowed after ohne.',
+        explanation:
+          'ohne always takes the accusative, so the neuter article stays das; the dative dem is not allowed after ohne.',
       },
       {
         incorrect: 'Die Kinder laufen um dem Baum.',
         correct: 'Die Kinder laufen um den Baum.',
-        explanation: 'um always takes the accusative, so the masculine article is den; the dative dem does not appear after um.',
+        explanation:
+          'um always takes the accusative, so the masculine article is den; the dative dem does not appear after um.',
       },
     ],
     remember: [
@@ -264,7 +273,8 @@ export const chapter034: ChapterDefinition = {
         { id: 'd', text: 'bei' },
       ],
       correctOptionId: 'a',
-      explanation: 'durch means "through" and always takes the accusative: durch den Park.',
+      explanation:
+        'durch means "through" and always takes the accusative: durch den Park.',
     },
     {
       id: 'ch34-ex-02',
@@ -300,7 +310,8 @@ export const chapter034: ChapterDefinition = {
         { id: 'd', text: 'um' },
       ],
       correctOptionId: 'a',
-      explanation: 'gegen means "against" and always takes the accusative: gegen den Plan.',
+      explanation:
+        'gegen means "against" and always takes the accusative: gegen den Plan.',
     },
     {
       id: 'ch34-ex-04',
@@ -354,7 +365,8 @@ export const chapter034: ChapterDefinition = {
         { id: 'd', text: 'das' },
       ],
       correctOptionId: 'a',
-      explanation: 'für takes the accusative, but the feminine article die does not change.',
+      explanation:
+        'für takes the accusative, but the feminine article die does not change.',
     },
     {
       id: 'ch34-ex-07',
@@ -372,7 +384,8 @@ export const chapter034: ChapterDefinition = {
         { id: 'd', text: 'des' },
       ],
       correctOptionId: 'a',
-      explanation: 'gegen takes the accusative, but the neuter article das does not change.',
+      explanation:
+        'gegen takes the accusative, but the neuter article das does not change.',
     },
     {
       id: 'ch34-ex-08',
@@ -390,7 +403,8 @@ export const chapter034: ChapterDefinition = {
         { id: 'd', text: 'der' },
       ],
       correctOptionId: 'a',
-      explanation: 'ohne takes the accusative, but the plural article die does not change.',
+      explanation:
+        'ohne takes the accusative, but the plural article die does not change.',
     },
     {
       id: 'ch34-ex-09',
@@ -408,7 +422,8 @@ export const chapter034: ChapterDefinition = {
         { id: 'd', text: 'mein' },
       ],
       correctOptionId: 'a',
-      explanation: 'für always takes the accusative, so ich becomes mich, not the dative mir.',
+      explanation:
+        'für always takes the accusative, so ich becomes mich, not the dative mir.',
     },
     {
       id: 'ch34-ex-10',
@@ -426,7 +441,8 @@ export const chapter034: ChapterDefinition = {
         { id: 'd', text: 'ohne dein' },
       ],
       correctOptionId: 'a',
-      explanation: 'ohne always takes the accusative, so du becomes dich, not the dative dir.',
+      explanation:
+        'ohne always takes the accusative, so du becomes dich, not the dative dir.',
     },
     {
       id: 'ch34-ex-11',
@@ -462,7 +478,8 @@ export const chapter034: ChapterDefinition = {
         { id: 'd', text: 'ohne ihm' },
       ],
       correctOptionId: 'a',
-      explanation: 'ohne always takes the accusative; the plural sie (them) keeps the form sie in the accusative, not the dative ihnen.',
+      explanation:
+        'ohne always takes the accusative; the plural sie (them) keeps the form sie in the accusative, not the dative ihnen.',
     },
     {
       id: 'ch34-ex-13',
@@ -537,7 +554,8 @@ export const chapter034: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'die',
       maxLength: 10,
-      explanation: 'durch takes the accusative, but the feminine article die does not change.',
+      explanation:
+        'durch takes the accusative, but the feminine article die does not change.',
     },
     {
       id: 'ch34-ex-18',
@@ -567,7 +585,8 @@ export const chapter034: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'die',
       maxLength: 10,
-      explanation: 'gegen takes the accusative, but the feminine article die does not change.',
+      explanation:
+        'gegen takes the accusative, but the feminine article die does not change.',
     },
     {
       id: 'ch34-ex-20',
@@ -582,7 +601,8 @@ export const chapter034: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'die',
       maxLength: 10,
-      explanation: 'um takes the accusative, but the feminine article die does not change; um die Ecke is a common fixed phrase.',
+      explanation:
+        'um takes the accusative, but the feminine article die does not change; um die Ecke is a common fixed phrase.',
     },
     {
       id: 'ch34-ex-21',
@@ -598,7 +618,8 @@ export const chapter034: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Ich gehe durch ...',
       maxLength: 60,
-      explanation: 'durch always takes the accusative, so the masculine article must be den, not der.',
+      explanation:
+        'durch always takes the accusative, so the masculine article must be den, not der.',
     },
     {
       id: 'ch34-ex-22',
@@ -614,7 +635,8 @@ export const chapter034: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Er ist gegen ...',
       maxLength: 60,
-      explanation: 'gegen always takes the accusative, never the dative, so dem must be corrected to den.',
+      explanation:
+        'gegen always takes the accusative, never the dative, so dem must be corrected to den.',
     },
     {
       id: 'ch34-ex-23',
@@ -630,7 +652,8 @@ export const chapter034: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Wir fahren ...',
       maxLength: 60,
-      explanation: 'ohne takes the accusative, but the neuter article das does not change: Wir fahren ohne das Auto.',
+      explanation:
+        'ohne takes the accusative, but the neuter article das does not change: Wir fahren ohne das Auto.',
     },
     {
       id: 'ch34-ex-24',
@@ -642,11 +665,15 @@ export const chapter034: ChapterDefinition = {
       instruction:
         'Write a complete sentence from the cues, using the correct accusative article. Capitalisation is checked; no full stop is required.',
       prompt: 'die Kinder – laufen – um – der Baum',
-      acceptedAnswers: ['Die Kinder laufen um den Baum.', 'Die Kinder laufen um den Baum'],
+      acceptedAnswers: [
+        'Die Kinder laufen um den Baum.',
+        'Die Kinder laufen um den Baum',
+      ],
       answerMode: 'normalized',
       placeholder: 'Die Kinder laufen ...',
       maxLength: 60,
-      explanation: 'um takes the accusative, so the masculine article der becomes den: Die Kinder laufen um den Baum.',
+      explanation:
+        'um takes the accusative, so the masculine article der becomes den: Die Kinder laufen um den Baum.',
     },
     {
       id: 'ch34-ex-25',
@@ -664,7 +691,8 @@ export const chapter034: ChapterDefinition = {
         { id: 'd', text: 'für das' },
       ],
       correctOptionId: 'a',
-      explanation: 'durchs is the common contraction of durch + das, used with neuter nouns like das Tor.',
+      explanation:
+        'durchs is the common contraction of durch + das, used with neuter nouns like das Tor.',
     },
     {
       id: 'ch34-ex-26',
@@ -682,7 +710,8 @@ export const chapter034: ChapterDefinition = {
         { id: 'd', text: 'gegen das' },
       ],
       correctOptionId: 'a',
-      explanation: 'fürs is the contraction of für + das, used with neuter nouns like das Baby.',
+      explanation:
+        'fürs is the contraction of für + das, used with neuter nouns like das Baby.',
     },
     {
       id: 'ch34-ex-27',
@@ -700,7 +729,8 @@ export const chapter034: ChapterDefinition = {
         { id: 'd', text: 'durchs' },
       ],
       correctOptionId: 'a',
-      explanation: 'ums is the contraction of um + das, used with neuter nouns like das Haus.',
+      explanation:
+        'ums is the contraction of um + das, used with neuter nouns like das Haus.',
     },
     {
       id: 'ch34-ex-28',
@@ -718,7 +748,8 @@ export const chapter034: ChapterDefinition = {
         { id: 'd', text: 'ohne' },
       ],
       correctOptionId: 'a',
-      explanation: 'für expresses being in favour of something and always takes the accusative.',
+      explanation:
+        'für expresses being in favour of something and always takes the accusative.',
     },
     {
       id: 'ch34-ex-29',
@@ -736,7 +767,8 @@ export const chapter034: ChapterDefinition = {
         { id: 'd', text: 'für' },
       ],
       correctOptionId: 'a',
-      explanation: 'um means "around" here and always takes the accusative: um den Block.',
+      explanation:
+        'um means "around" here and always takes the accusative: um den Block.',
     },
     {
       id: 'ch34-ex-30',
@@ -772,7 +804,8 @@ export const chapter034: ChapterDefinition = {
         { id: 'd', text: 'Nominativ' },
       ],
       correctOptionId: 'a',
-      explanation: 'ohne, like durch, für, gegen, and um, always governs the accusative case.',
+      explanation:
+        'ohne, like durch, für, gegen, and um, always governs the accusative case.',
     },
     {
       id: 'ch34-ex-32',
@@ -781,7 +814,8 @@ export const chapter034: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['contraction', 'durchs', 'durch das'],
-      instruction: 'Write the contracted form of durch + das. Capitalisation is not checked.',
+      instruction:
+        'Write the contracted form of durch + das. Capitalisation is not checked.',
       prompt: 'Wir gehen ___ Tor. (durch + das)',
       acceptedAnswers: ['durchs'],
       answerMode: 'caseInsensitive',
@@ -796,7 +830,8 @@ export const chapter034: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['contraction', 'fürs', 'für das'],
-      instruction: 'Write the contracted form of für + das. Capitalisation is not checked.',
+      instruction:
+        'Write the contracted form of für + das. Capitalisation is not checked.',
       prompt: 'Das ist ein Geschenk ___ Kind. (für + das)',
       acceptedAnswers: ['fürs'],
       answerMode: 'caseInsensitive',
@@ -811,7 +846,8 @@ export const chapter034: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['contraction', 'ums', 'um das'],
-      instruction: 'Write the contracted form of um + das. Capitalisation is not checked.',
+      instruction:
+        'Write the contracted form of um + das. Capitalisation is not checked.',
       prompt: 'Die Katze läuft ___ Haus. (um + das)',
       acceptedAnswers: ['ums'],
       answerMode: 'caseInsensitive',
@@ -832,7 +868,8 @@ export const chapter034: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'durch',
       maxLength: 15,
-      explanation: 'durch means "through" and always takes the accusative: durch die Straße.',
+      explanation:
+        'durch means "through" and always takes the accusative: durch die Straße.',
     },
     {
       id: 'ch34-ex-36',
@@ -841,13 +878,15 @@ export const chapter034: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['accusative pronoun', 'für', 'sie-singular'],
-      instruction: 'Write the missing preposition and pronoun. Capitalisation is not checked.',
+      instruction:
+        'Write the missing preposition and pronoun. Capitalisation is not checked.',
       prompt: 'Der Brief ist ___. (für + sie = for her)',
       acceptedAnswers: ['für sie'],
       answerMode: 'caseInsensitive',
       placeholder: 'für sie',
       maxLength: 20,
-      explanation: 'für takes the accusative; the feminine pronoun sie (her) is unchanged in the accusative.',
+      explanation:
+        'für takes the accusative; the feminine pronoun sie (her) is unchanged in the accusative.',
     },
     {
       id: 'ch34-ex-37',
@@ -863,7 +902,8 @@ export const chapter034: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Wir laufen um ...',
       maxLength: 60,
-      explanation: 'um always takes the accusative, never the dative, so dem must be corrected to den.',
+      explanation:
+        'um always takes the accusative, never the dative, so dem must be corrected to den.',
     },
     {
       id: 'ch34-ex-38',
@@ -875,11 +915,15 @@ export const chapter034: ChapterDefinition = {
       instruction:
         'Write a complete sentence from the cues, using the correct accusative article. Capitalisation is checked; no full stop is required.',
       prompt: 'ich – kaufen – ein Geschenk – für – mein Vater',
-      acceptedAnswers: ['Ich kaufe ein Geschenk für meinen Vater.', 'Ich kaufe ein Geschenk für meinen Vater'],
+      acceptedAnswers: [
+        'Ich kaufe ein Geschenk für meinen Vater.',
+        'Ich kaufe ein Geschenk für meinen Vater',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich kaufe ...',
       maxLength: 60,
-      explanation: 'für takes the accusative, so the masculine possessive mein becomes meinen: für meinen Vater.',
+      explanation:
+        'für takes the accusative, so the masculine possessive mein becomes meinen: für meinen Vater.',
     },
     {
       id: 'ch34-ex-39',
@@ -893,7 +937,8 @@ export const chapter034: ChapterDefinition = {
       templateParts: ['Wir laufen ', ' den Park.'],
       slots: [{ id: 's1', correctWord: 'durch' }],
       wordBank: ['durch', 'für', 'mit', 'bei'],
-      explanation: 'durch means "through" and always takes the accusative: durch den Park.',
+      explanation:
+        'durch means "through" and always takes the accusative: durch den Park.',
     },
     {
       id: 'ch34-ex-40',
@@ -921,7 +966,8 @@ export const chapter034: ChapterDefinition = {
       templateParts: ['Er ist gegen ', ' Regel.'],
       slots: [{ id: 's1', correctWord: 'die' }],
       wordBank: ['die', 'der', 'den', 'dem'],
-      explanation: 'gegen takes the accusative, but the feminine article die does not change.',
+      explanation:
+        'gegen takes the accusative, but the feminine article die does not change.',
     },
     {
       id: 'ch34-ex-42',
@@ -935,7 +981,8 @@ export const chapter034: ChapterDefinition = {
       templateParts: ['Wir kommen nicht ohne ', '.'],
       slots: [{ id: 's1', correctWord: 'dich' }],
       wordBank: ['dich', 'dir', 'du', 'dein'],
-      explanation: 'ohne always takes the accusative, so du becomes dich, not the dative dir.',
+      explanation:
+        'ohne always takes the accusative, so du becomes dich, not the dative dir.',
     },
     {
       id: 'ch34-ex-43',
@@ -949,7 +996,8 @@ export const chapter034: ChapterDefinition = {
       templateParts: ['Der Ball fliegt ', ' Fenster.'],
       slots: [{ id: 's1', correctWord: 'durchs' }],
       wordBank: ['durchs', 'durch', 'fürs', 'ums'],
-      explanation: 'durchs contracts durch + das and is used with the neuter noun das Fenster.',
+      explanation:
+        'durchs contracts durch + das and is used with the neuter noun das Fenster.',
     },
     {
       id: 'ch34-ex-44',
@@ -980,7 +1028,8 @@ export const chapter034: ChapterDefinition = {
         { id: 's2', correctWord: 'den' },
       ],
       wordBank: ['um', 'den', 'durch', 'dem'],
-      explanation: 'um takes the accusative, so der Baum becomes den Baum: Die Kinder laufen um den Baum.',
+      explanation:
+        'um takes the accusative, so der Baum becomes den Baum: Die Kinder laufen um den Baum.',
     },
     {
       id: 'ch34-ex-46',
@@ -1012,7 +1061,8 @@ export const chapter034: ChapterDefinition = {
         { id: 'p4', left: 'ohne', right: 'without' },
         { id: 'p5', left: 'um', right: 'around' },
       ],
-      explanation: 'durch, für, gegen, ohne, and um always take the accusative; each has a distinct core meaning.',
+      explanation:
+        'durch, für, gegen, ohne, and um always take the accusative; each has a distinct core meaning.',
     },
     {
       id: 'ch34-ex-48',
@@ -1030,7 +1080,8 @@ export const chapter034: ChapterDefinition = {
         { id: 'p4', left: 'ohne', right: 'ohne dich' },
         { id: 'p5', left: 'um', right: 'um die Ecke' },
       ],
-      explanation: 'These fixed phrases are worth learning as whole chunks, not just built word by word.',
+      explanation:
+        'These fixed phrases are worth learning as whole chunks, not just built word by word.',
     },
     {
       id: 'ch34-ex-49',
@@ -1046,7 +1097,8 @@ export const chapter034: ChapterDefinition = {
         { id: 'p2', left: 'fürs', right: 'für das' },
         { id: 'p3', left: 'ums', right: 'um das' },
       ],
-      explanation: 'durchs, fürs, and ums are common spoken and written contractions of durch/für/um + das.',
+      explanation:
+        'durchs, fürs, and ums are common spoken and written contractions of durch/für/um + das.',
     },
     {
       id: 'ch34-ex-50',
@@ -1055,7 +1107,8 @@ export const chapter034: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['accusative pronoun'],
-      instruction: 'Match each nominative pronoun to its accusative form after these prepositions.',
+      instruction:
+        'Match each nominative pronoun to its accusative form after these prepositions.',
       prompt: 'Match the nominative pronoun to its accusative form.',
       pairs: [
         { id: 'p1', left: 'ich', right: 'mich' },
@@ -1064,7 +1117,8 @@ export const chapter034: ChapterDefinition = {
         { id: 'p4', left: 'wir', right: 'uns' },
         { id: 'p5', left: 'ihr', right: 'euch' },
       ],
-      explanation: 'These are the same accusative pronoun forms from Chapter 21, now triggered by durch, für, gegen, ohne, or um.',
+      explanation:
+        'These are the same accusative pronoun forms from Chapter 21, now triggered by durch, für, gegen, ohne, or um.',
     },
     {
       id: 'ch34-ex-51',
@@ -1092,7 +1146,8 @@ export const chapter034: ChapterDefinition = {
       tokens: ['Die', 'Kinder', 'laufen', 'um', 'dem', 'Baum', '.'],
       errorTokenIndex: 4,
       correction: 'den',
-      explanation: 'um always takes the accusative, never the dative, so dem must be corrected to den.',
+      explanation:
+        'um always takes the accusative, never the dative, so dem must be corrected to den.',
     },
   ],
 };

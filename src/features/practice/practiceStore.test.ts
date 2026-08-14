@@ -63,14 +63,18 @@ describe('practiceStore sessions', () => {
     expect(feedback.kind).toBe('correct');
     expect(usePracticeStore.getState().results['ch1-ex-01']?.score).toBe(1);
     // The attempt is reported to the progress store as it happens.
-    expect(useProgressStore.getState().exerciseHistory['ch1-ex-01']?.timesCorrect).toBe(1);
+    expect(useProgressStore.getState().exerciseHistory['ch1-ex-01']?.timesCorrect).toBe(
+      1,
+    );
   });
 
   it('offers one retry, then resolves the exercise', () => {
     start();
     const wrong = first.options.find((option) => option.id !== first.correctOptionId);
 
-    const firstTry = usePracticeStore.getState().submitSingleChoice(first, wrong?.id ?? '');
+    const firstTry = usePracticeStore
+      .getState()
+      .submitSingleChoice(first, wrong?.id ?? '');
     expect(firstTry.canRetry).toBe(true);
     expect(usePracticeStore.getState().results['ch1-ex-01']).toBeUndefined();
 
@@ -96,7 +100,9 @@ describe('practiceStore sessions', () => {
     usePracticeStore.getState().goToNext();
     usePracticeStore.getState().goToNext();
 
-    expect(usePracticeStore.getState().submitTextAnswer(text, 'bist').kind).toBe('correct');
+    expect(usePracticeStore.getState().submitTextAnswer(text, 'bist').kind).toBe(
+      'correct',
+    );
     expect(usePracticeStore.getState().results['ch1-ex-03']?.outcome).toBe(
       'correctFirstAttempt',
     );
@@ -132,7 +138,9 @@ describe('practiceStore sessions', () => {
     start();
     for (const exercise of chapter.exercises) {
       if (exercise.type === 'singleChoice') {
-        usePracticeStore.getState().submitSingleChoice(exercise, exercise.correctOptionId);
+        usePracticeStore
+          .getState()
+          .submitSingleChoice(exercise, exercise.correctOptionId);
       } else if (exercise.type === 'textInput') {
         usePracticeStore.getState().submitTextAnswer(exercise, 'bist');
       }

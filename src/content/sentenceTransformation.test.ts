@@ -131,7 +131,7 @@ describe('N-declension (weak masculine nouns)', () => {
     expect(isValidWeakNounPlural('Student', 'Studenten')).toBe(true);
   });
 
-  it("Herr: -n in the oblique singular but -en in the plural", () => {
+  it('Herr: -n in the oblique singular but -en in the plural', () => {
     expect(isValidWeakNounObliqueSingular('Herr', 'Herrn')).toBe(true);
     expect(isValidWeakNounPlural('Herr', 'Herren')).toBe(true);
     expect(isValidWeakNounPlural('Herr', 'Herrn')).toBe(false);
@@ -158,13 +158,16 @@ describe('Phase 7 chapters: generated forms match the sentence-transformation ru
     'sie/Sie': 'sie',
   };
 
-  const chapterByNumber = new Map(allChapters.map((chapter) => [chapter.number, chapter]));
+  const chapterByNumber = new Map(
+    allChapters.map((chapter) => [chapter.number, chapter]),
+  );
 
   function requireTable(chapterNumber: number, tableId: string): GrammarTableDefinition {
     const chapter = chapterByNumber.get(chapterNumber);
     if (!chapter) throw new Error(`Chapter ${chapterNumber} has no content`);
     const table = chapter.explanation.tables.find((t) => t.id === tableId);
-    if (!table) throw new Error(`Chapter ${chapterNumber} has no table with id "${tableId}"`);
+    if (!table)
+      throw new Error(`Chapter ${chapterNumber} has no table with id "${tableId}"`);
     return table;
   }
 
@@ -216,7 +219,9 @@ describe('Phase 7 chapters: generated forms match the sentence-transformation ru
   it('chapter 63: sein (present-perfect passive auxiliary) conjugation table', () => {
     const table = requireTable(63, 'ch63-table-02');
     for (const [subject, form] of table.rows) {
-      expect(isValidPresentPerfectPassiveAuxiliary(personFor(subject!), form!)).toBe(true);
+      expect(isValidPresentPerfectPassiveAuxiliary(personFor(subject!), form!)).toBe(
+        true,
+      );
     }
   });
 
@@ -320,7 +325,9 @@ describe('Phase 7 chapters: generated forms match the sentence-transformation ru
     const table = requireTable(69, 'ch69-table-04');
     for (const [caseName, singular, plural] of table.rows) {
       if (caseName !== 'Nominative') {
-        expect(isValidWeakNounObliqueSingular('Herr', stripArticle(singular!))).toBe(true);
+        expect(isValidWeakNounObliqueSingular('Herr', stripArticle(singular!))).toBe(
+          true,
+        );
       }
       expect(isValidWeakNounPlural('Herr', stripArticle(plural!))).toBe(true);
     }

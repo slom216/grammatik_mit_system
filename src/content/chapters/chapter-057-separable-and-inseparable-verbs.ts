@@ -69,7 +69,7 @@ export const chapter057: ChapterDefinition = {
         heading: 'The zu-infinitive with inseparable verbs: zu stands in front',
         paragraphs: [
           'An inseparable verb cannot be split, so zu cannot go inside it either. Instead, zu simply stands as its own word directly in front of the whole verb, exactly as it would for any simple verb: verstehen becomes zu verstehen, besuchen becomes zu besuchen, verkaufen becomes zu verkaufen.',
-          'Ich habe keine Zeit, das zu verstehen. Er hat vor, uns morgen zu besuchen. Because zu is a free word here, not part of the verb, only the verb\'s own objects or adverbs can sit in front of it — but zu and the verb itself always stay glued together, at the very end of the clause.',
+          "Ich habe keine Zeit, das zu verstehen. Er hat vor, uns morgen zu besuchen. Because zu is a free word here, not part of the verb, only the verb's own objects or adverbs can sit in front of it — but zu and the verb itself always stay glued together, at the very end of the clause.",
         ],
       },
       {
@@ -154,7 +154,11 @@ export const chapter057: ChapterDefinition = {
             'unterstellen — to place underneath, to shelter',
             'unterstellen — to insinuate, to impute',
           ],
-          ['durch-', 'durchlesen — to read through', 'durchqueren — to cross, to traverse'],
+          [
+            'durch-',
+            'durchlesen — to read through',
+            'durchqueren — to cross, to traverse',
+          ],
           ['wieder-', 'wiederkommen — to come again', 'wiederholen — to repeat'],
         ],
         note: 'When the prefix and stem belong to the same verb (übersetzen, unterstellen), only the stress tells the two meanings apart.',
@@ -165,7 +169,8 @@ export const chapter057: ChapterDefinition = {
         german: 'Ich rufe meine Schwester an.',
         english: 'I call my sister.',
         highlight: ['rufe', 'an'],
-        explanation: 'anrufen is separable: rufe stays in position 2, an moves to the end.',
+        explanation:
+          'anrufen is separable: rufe stays in position 2, an moves to the end.',
       },
       {
         german: 'Er versteht die Regel sofort.',
@@ -184,7 +189,8 @@ export const chapter057: ChapterDefinition = {
         german: 'Wir haben unsere Großeltern besucht.',
         english: 'We visited our grandparents.',
         highlight: ['besucht'],
-        explanation: 'be- is inseparable and blocks ge- completely: besucht, not gebesucht.',
+        explanation:
+          'be- is inseparable and blocks ge- completely: besucht, not gebesucht.',
       },
       {
         german: 'Es ist wichtig, früh aufzustehen.',
@@ -197,13 +203,15 @@ export const chapter057: ChapterDefinition = {
         german: 'Ich habe keine Zeit, das zu verstehen.',
         english: 'I do not have time to understand that.',
         highlight: ['zu verstehen'],
-        explanation: 'With an inseparable verb, zu stands in front of the whole verb, as its own word.',
+        explanation:
+          'With an inseparable verb, zu stands in front of the whole verb, as its own word.',
       },
       {
         german: 'Vergiss nicht, deine Eltern anzurufen.',
         english: 'Do not forget to call your parents.',
         highlight: ['anzurufen'],
-        explanation: 'anrufen is separable, so zu slides inside: an-zu-rufen, written as one word.',
+        explanation:
+          'anrufen is separable, so zu slides inside: an-zu-rufen, written as one word.',
       },
       {
         german: 'Er hat vor, uns morgen zu besuchen.',
@@ -302,7 +310,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'c', text: 'ambiguous (either, depending on meaning)' },
       ],
       correctOptionId: 'a',
-      explanation: 'an- is a stressed, separable prefix: ANrufen, and it splits in a main clause.',
+      explanation:
+        'an- is a stressed, separable prefix: ANrufen, and it splits in a main clause.',
     },
     {
       id: 'ch57-ex-02',
@@ -319,7 +328,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'c', text: 'ambiguous (either, depending on meaning)' },
       ],
       correctOptionId: 'b',
-      explanation: 'ver- belongs to the fixed set of eight inseparable prefixes; it is never stressed and never splits.',
+      explanation:
+        'ver- belongs to the fixed set of eight inseparable prefixes; it is never stressed and never splits.',
     },
     {
       id: 'ch57-ex-03',
@@ -336,7 +346,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'c', text: 'ambiguous (either, depending on meaning)' },
       ],
       correctOptionId: 'b',
-      explanation: 'ein- is stressed and separable: EINkaufen, and it moves to the end of a main clause.',
+      explanation:
+        'ein- is stressed and separable: EINkaufen, and it moves to the end of a main clause.',
     },
     {
       id: 'ch57-ex-04',
@@ -353,7 +364,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'c', text: 'ambiguous (either, depending on meaning)' },
       ],
       correctOptionId: 'b',
-      explanation: 'be- is always unstressed and always inseparable: beSUCHEN never splits.',
+      explanation:
+        'be- is always unstressed and always inseparable: beSUCHEN never splits.',
     },
     {
       id: 'ch57-ex-05',
@@ -363,14 +375,16 @@ export const chapter057: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['separable-verbs', 'stress'],
       instruction: 'Use the stress pattern to classify the prefix.',
-      prompt: 'The verb MITkommen is stressed on the first syllable. What does that tell you about mit-?',
+      prompt:
+        'The verb MITkommen is stressed on the first syllable. What does that tell you about mit-?',
       options: [
         { id: 'a', text: 'It is a separable prefix.' },
         { id: 'b', text: 'It is an inseparable prefix.' },
         { id: 'c', text: 'Stress has nothing to do with separability.' },
       ],
       correctOptionId: 'a',
-      explanation: 'A stressed prefix is the clearest sign of a separable verb, since inseparable prefixes are never stressed.',
+      explanation:
+        'A stressed prefix is the clearest sign of a separable verb, since inseparable prefixes are never stressed.',
     },
     {
       id: 'ch57-ex-06',
@@ -388,7 +402,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'd', text: 'Ich rufe heute an meine Eltern.' },
       ],
       correctOptionId: 'a',
-      explanation: 'rufe stays in position 2, and the prefix an moves all the way to the end of the clause.',
+      explanation:
+        'rufe stays in position 2, and the prefix an moves all the way to the end of the clause.',
     },
     {
       id: 'ch57-ex-07',
@@ -406,7 +421,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'd', text: 'Wir verstehen sofort ver das Problem.' },
       ],
       correctOptionId: 'a',
-      explanation: 'verstehen is inseparable, so it stays whole in position 2: Wir verstehen das Problem sofort.',
+      explanation:
+        'verstehen is inseparable, so it stays whole in position 2: Wir verstehen das Problem sofort.',
     },
     {
       id: 'ch57-ex-08',
@@ -436,7 +452,8 @@ export const chapter057: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'prefix',
       maxLength: 10,
-      explanation: 'mitkommen splits: kommen stays in position 2, mit goes to the end, after nicht.',
+      explanation:
+        'mitkommen splits: kommen stays in position 2, mit goes to the end, after nicht.',
     },
     {
       id: 'ch57-ex-10',
@@ -454,7 +471,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'd', text: 'gestanden' },
       ],
       correctOptionId: 'a',
-      explanation: 'aufstehen is separable: ge- goes between the prefix auf- and the base participle gestanden.',
+      explanation:
+        'aufstehen is separable: ge- goes between the prefix auf- and the base participle gestanden.',
     },
     {
       id: 'ch57-ex-11',
@@ -487,7 +505,8 @@ export const chapter057: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'ein...t',
       maxLength: 20,
-      explanation: 'einkaufen is separable: kaufen becomes gekauft, and ein- goes in front, giving eingekauft.',
+      explanation:
+        'einkaufen is separable: kaufen becomes gekauft, and ein- goes in front, giving eingekauft.',
     },
     {
       id: 'ch57-ex-13',
@@ -502,7 +521,8 @@ export const chapter057: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'an...en',
       maxLength: 20,
-      explanation: 'rufen is strong (gerufen); with the separable prefix an-, the ge- moves inside: angerufen.',
+      explanation:
+        'rufen is strong (gerufen); with the separable prefix an-, the ge- moves inside: angerufen.',
     },
     {
       id: 'ch57-ex-14',
@@ -532,7 +552,8 @@ export const chapter057: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'be...',
       maxLength: 20,
-      explanation: 'kommen is strong (gekommen); be- blocks the ge-, so the participle is identical to the infinitive: bekommen.',
+      explanation:
+        'kommen is strong (gekommen); be- blocks the ge-, so the participle is identical to the infinitive: bekommen.',
     },
     {
       id: 'ch57-ex-16',
@@ -547,7 +568,8 @@ export const chapter057: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'mit...en',
       maxLength: 20,
-      explanation: 'nehmen is strong (genommen); with the separable prefix mit-, the ge- moves inside: mitgenommen.',
+      explanation:
+        'nehmen is strong (genommen); with the separable prefix mit-, the ge- moves inside: mitgenommen.',
     },
     {
       id: 'ch57-ex-17',
@@ -562,7 +584,8 @@ export const chapter057: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'ver...t',
       maxLength: 20,
-      explanation: 'ver- is inseparable and blocks ge-; kaufen becomes gekauft, so verkaufen becomes verkauft.',
+      explanation:
+        'ver- is inseparable and blocks ge-; kaufen becomes gekauft, so verkaufen becomes verkauft.',
     },
     {
       id: 'ch57-ex-18',
@@ -580,7 +603,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'd', text: 'geeinkauft' },
       ],
       correctOptionId: 'a',
-      explanation: 'Ich habe gestern eingekauft. — the participle stays together as one word at the end.',
+      explanation:
+        'Ich habe gestern eingekauft. — the participle stays together as one word at the end.',
     },
     {
       id: 'ch57-ex-19',
@@ -598,7 +622,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'd', text: 'verstehen' },
       ],
       correctOptionId: 'a',
-      explanation: 'Er hat die Regel sofort verstanden. — verstehen is strong and inseparable, so no ge- is added.',
+      explanation:
+        'Er hat die Regel sofort verstanden. — verstehen is strong and inseparable, so no ge- is added.',
     },
     {
       id: 'ch57-ex-20',
@@ -608,15 +633,23 @@ export const chapter057: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['zu-infinitive', 'separable-verbs'],
       instruction: 'Choose the correct rule.',
-      prompt: 'In the zu-infinitive of a separable verb like aufstehen, where does zu go?',
+      prompt:
+        'In the zu-infinitive of a separable verb like aufstehen, where does zu go?',
       options: [
-        { id: 'a', text: 'Between the prefix and the base verb, written as one word: aufzustehen.' },
-        { id: 'b', text: 'In front of the whole verb, as a separate word: zu aufstehen.' },
+        {
+          id: 'a',
+          text: 'Between the prefix and the base verb, written as one word: aufzustehen.',
+        },
+        {
+          id: 'b',
+          text: 'In front of the whole verb, as a separate word: zu aufstehen.',
+        },
         { id: 'c', text: 'After the whole verb: aufstehen zu.' },
         { id: 'd', text: 'Separable verbs never form a zu-infinitive.' },
       ],
       correctOptionId: 'a',
-      explanation: 'zu is inserted right after the prefix, exactly where ge- goes in the participle: aufzustehen.',
+      explanation:
+        'zu is inserted right after the prefix, exactly where ge- goes in the participle: aufzustehen.',
     },
     {
       id: 'ch57-ex-21',
@@ -626,15 +659,23 @@ export const chapter057: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['zu-infinitive', 'inseparable-verbs'],
       instruction: 'Choose the correct rule.',
-      prompt: 'In the zu-infinitive of an inseparable verb like verstehen, where does zu go?',
+      prompt:
+        'In the zu-infinitive of an inseparable verb like verstehen, where does zu go?',
       options: [
-        { id: 'a', text: 'In front of the whole verb, as a separate word: zu verstehen.' },
-        { id: 'b', text: 'Inside the verb, between the prefix and the stem: verzustehen.' },
+        {
+          id: 'a',
+          text: 'In front of the whole verb, as a separate word: zu verstehen.',
+        },
+        {
+          id: 'b',
+          text: 'Inside the verb, between the prefix and the stem: verzustehen.',
+        },
         { id: 'c', text: 'After the whole verb: verstehen zu.' },
         { id: 'd', text: 'Inseparable verbs never form a zu-infinitive.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Since the verb cannot be split, zu simply stands in front of it as its own word: zu verstehen.',
+      explanation:
+        'Since the verb cannot be split, zu simply stands in front of it as its own word: zu verstehen.',
     },
     {
       id: 'ch57-ex-22',
@@ -652,7 +693,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'd', text: 'aufstehen zu' },
       ],
       correctOptionId: 'a',
-      explanation: 'Es ist wichtig, früh aufzustehen. — zu is glued between the prefix and the base verb.',
+      explanation:
+        'Es ist wichtig, früh aufzustehen. — zu is glued between the prefix and the base verb.',
     },
     {
       id: 'ch57-ex-23',
@@ -670,7 +712,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'd', text: 'anrufen zu' },
       ],
       correctOptionId: 'a',
-      explanation: 'Vergiss nicht, deine Mutter anzurufen. — an-zu-rufen is written as a single word.',
+      explanation:
+        'Vergiss nicht, deine Mutter anzurufen. — an-zu-rufen is written as a single word.',
     },
     {
       id: 'ch57-ex-24',
@@ -688,7 +731,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'd', text: 'zu verstehen zu' },
       ],
       correctOptionId: 'a',
-      explanation: 'Ich habe keine Zeit, das zu verstehen. — zu stays a separate word in front of the inseparable verb.',
+      explanation:
+        'Ich habe keine Zeit, das zu verstehen. — zu stays a separate word in front of the inseparable verb.',
     },
     {
       id: 'ch57-ex-25',
@@ -697,13 +741,15 @@ export const chapter057: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['zu-infinitive', 'separable-verbs'],
-      instruction: 'Complete the sentence with the correct zu-infinitive. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct zu-infinitive. Capitalisation is not checked.',
       prompt: 'Es macht Spaß, sonntags ___. (einkaufen)',
       acceptedAnswers: ['einzukaufen'],
       answerMode: 'caseInsensitive',
       placeholder: 'einzukaufen',
       maxLength: 20,
-      explanation: 'einkaufen is separable: zu goes between ein- and kaufen, giving einzukaufen.',
+      explanation:
+        'einkaufen is separable: zu goes between ein- and kaufen, giving einzukaufen.',
     },
     {
       id: 'ch57-ex-26',
@@ -712,13 +758,15 @@ export const chapter057: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['zu-infinitive', 'inseparable-verbs'],
-      instruction: 'Complete the sentence with the correct zu-infinitive. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct zu-infinitive. Capitalisation is not checked.',
       prompt: 'Er hat vor, uns morgen ___. (besuchen)',
       acceptedAnswers: ['zu besuchen'],
       answerMode: 'caseInsensitive',
       placeholder: 'zu besuchen',
       maxLength: 20,
-      explanation: 'besuchen is inseparable: zu stands in front of the whole verb, zu besuchen.',
+      explanation:
+        'besuchen is inseparable: zu stands in front of the whole verb, zu besuchen.',
     },
     {
       id: 'ch57-ex-27',
@@ -727,13 +775,15 @@ export const chapter057: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['zu-infinitive', 'separable-verbs'],
-      instruction: 'Complete the sentence with the correct zu-infinitive. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct zu-infinitive. Capitalisation is not checked.',
       prompt: 'Vergiss nicht, das Fenster ___. (zumachen)',
       acceptedAnswers: ['zuzumachen'],
       answerMode: 'caseInsensitive',
       placeholder: 'zuzumachen',
       maxLength: 20,
-      explanation: 'zumachen is separable, so the infinitive marker zu slides inside the prefix zu-, giving zuzumachen.',
+      explanation:
+        'zumachen is separable, so the infinitive marker zu slides inside the prefix zu-, giving zuzumachen.',
     },
     {
       id: 'ch57-ex-28',
@@ -742,13 +792,15 @@ export const chapter057: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['zu-infinitive', 'inseparable-verbs'],
-      instruction: 'Complete the sentence with the correct zu-infinitive. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct zu-infinitive. Capitalisation is not checked.',
       prompt: 'Sie hat keine Lust, das Geschenk ___. (verkaufen)',
       acceptedAnswers: ['zu verkaufen'],
       answerMode: 'caseInsensitive',
       placeholder: 'zu verkaufen',
       maxLength: 20,
-      explanation: 'verkaufen is inseparable: zu verkaufen, with zu as a free word in front of the verb.',
+      explanation:
+        'verkaufen is inseparable: zu verkaufen, with zu as a free word in front of the verb.',
     },
     {
       id: 'ch57-ex-29',
@@ -758,14 +810,16 @@ export const chapter057: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['ambiguous-prefixes', 'two-way-prefixes'],
       instruction: 'Choose the correct classification.',
-      prompt: 'durchlesen (den Vertrag genau durchlesen, "to read a contract through") — separable or inseparable?',
+      prompt:
+        'durchlesen (den Vertrag genau durchlesen, "to read a contract through") — separable or inseparable?',
       options: [
         { id: 'a', text: 'separable' },
         { id: 'b', text: 'inseparable' },
         { id: 'c', text: 'neither — it is not a real verb' },
       ],
       correctOptionId: 'a',
-      explanation: 'In this literal, spatial sense, durch- is stressed and separable: Ich lese den Vertrag durch.',
+      explanation:
+        'In this literal, spatial sense, durch- is stressed and separable: Ich lese den Vertrag durch.',
     },
     {
       id: 'ch57-ex-30',
@@ -775,14 +829,16 @@ export const chapter057: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['ambiguous-prefixes', 'two-way-prefixes'],
       instruction: 'Choose the correct classification.',
-      prompt: 'durchqueren (die Wüste durchqueren, "to cross the desert") — separable or inseparable?',
+      prompt:
+        'durchqueren (die Wüste durchqueren, "to cross the desert") — separable or inseparable?',
       options: [
         { id: 'a', text: 'inseparable' },
         { id: 'b', text: 'separable' },
         { id: 'c', text: 'neither — it is not a real verb' },
       ],
       correctOptionId: 'a',
-      explanation: 'durchqueren stresses the stem, not the prefix, and is inseparable: Das Schiff durchquert den Atlantik.',
+      explanation:
+        'durchqueren stresses the stem, not the prefix, and is inseparable: Das Schiff durchquert den Atlantik.',
     },
     {
       id: 'ch57-ex-31',
@@ -800,7 +856,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'd', text: 'to hand something over' },
       ],
       correctOptionId: 'a',
-      explanation: 'The stressed, separable reading of übersetzen keeps the literal, spatial meaning: to ferry across.',
+      explanation:
+        'The stressed, separable reading of übersetzen keeps the literal, spatial meaning: to ferry across.',
     },
     {
       id: 'ch57-ex-32',
@@ -810,14 +867,16 @@ export const chapter057: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['ambiguous-prefixes', 'two-way-prefixes'],
       instruction: 'Choose the correct classification.',
-      prompt: 'umgeben (Ein hoher Zaun umgibt das Grundstück, "to surround") — separable or inseparable?',
+      prompt:
+        'umgeben (Ein hoher Zaun umgibt das Grundstück, "to surround") — separable or inseparable?',
       options: [
         { id: 'a', text: 'inseparable' },
         { id: 'b', text: 'separable' },
         { id: 'c', text: 'neither — it is not a real verb' },
       ],
       correctOptionId: 'a',
-      explanation: 'In this meaning, um- is unstressed and inseparable: Ein hoher Zaun umgibt das Grundstück.',
+      explanation:
+        'In this meaning, um- is unstressed and inseparable: Ein hoher Zaun umgibt das Grundstück.',
     },
     {
       id: 'ch57-ex-33',
@@ -827,14 +886,16 @@ export const chapter057: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['ambiguous-prefixes', 'two-way-prefixes'],
       instruction: 'Choose the correct classification.',
-      prompt: 'unterstellen (Ich stelle das Fahrrad im Regen unter, "to shelter something underneath") — separable or inseparable?',
+      prompt:
+        'unterstellen (Ich stelle das Fahrrad im Regen unter, "to shelter something underneath") — separable or inseparable?',
       options: [
         { id: 'a', text: 'separable' },
         { id: 'b', text: 'inseparable' },
         { id: 'c', text: 'neither — it is not a real verb' },
       ],
       correctOptionId: 'a',
-      explanation: 'In this literal, spatial sense ("to place underneath"), unter- is stressed and separable.',
+      explanation:
+        'In this literal, spatial sense ("to place underneath"), unter- is stressed and separable.',
     },
     {
       id: 'ch57-ex-34',
@@ -844,7 +905,8 @@ export const chapter057: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['ambiguous-prefixes', 'two-way-prefixes'],
       instruction: 'Choose the verb that is inseparable.',
-      prompt: 'Which of these two is inseparable: wiederholen (etwas noch einmal sagen, "to repeat") or wiederkommen (zurückkehren, "to come again")?',
+      prompt:
+        'Which of these two is inseparable: wiederholen (etwas noch einmal sagen, "to repeat") or wiederkommen (zurückkehren, "to come again")?',
       options: [
         { id: 'a', text: 'wiederholen' },
         { id: 'b', text: 'wiederkommen' },
@@ -852,7 +914,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'd', text: 'neither is inseparable' },
       ],
       correctOptionId: 'a',
-      explanation: 'wiederholen ("to repeat") is inseparable and stressed on -holen; wiederkommen ("to come again") is separable.',
+      explanation:
+        'wiederholen ("to repeat") is inseparable and stressed on -holen; wiederkommen ("to come again") is separable.',
     },
     {
       id: 'ch57-ex-35',
@@ -861,13 +924,15 @@ export const chapter057: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['zu-infinitive', 'inseparable-verbs', 'error-correction'],
-      instruction: 'Correct the mistake and write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake and write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Fehler: Ich versuche, verzustehen die Aufgabe.',
       acceptedAnswers: ['Ich versuche, die Aufgabe zu verstehen.'],
       answerMode: 'normalized',
       placeholder: 'Ich versuche, ...',
       maxLength: 60,
-      explanation: 'verstehen is inseparable, so zu cannot go inside it; it stands in front, with the object before it: Ich versuche, die Aufgabe zu verstehen.',
+      explanation:
+        'verstehen is inseparable, so zu cannot go inside it; it stands in front, with the object before it: Ich versuche, die Aufgabe zu verstehen.',
     },
     {
       id: 'ch57-ex-36',
@@ -876,13 +941,15 @@ export const chapter057: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['inseparable-verbs', 'partizip-ii', 'error-correction'],
-      instruction: 'Correct the mistake and write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake and write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Fehler: Er hat die Rechnung geverkauft.',
       acceptedAnswers: ['Er hat die Rechnung verkauft.'],
       answerMode: 'normalized',
       placeholder: 'Er hat ...',
       maxLength: 60,
-      explanation: 'ver- is inseparable and blocks ge- completely: Er hat die Rechnung verkauft.',
+      explanation:
+        'ver- is inseparable and blocks ge- completely: Er hat die Rechnung verkauft.',
     },
     {
       id: 'ch57-ex-37',
@@ -892,7 +959,8 @@ export const chapter057: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['separable-verbs', 'word-order'],
       instruction: 'Drag the segments into the correct order.',
-      prompt: 'Put the words in order to form a correct sentence with anrufen (separable).',
+      prompt:
+        'Put the words in order to form a correct sentence with anrufen (separable).',
       segments: [
         { id: 's1', text: 'Ich' },
         { id: 's2', text: 'rufe' },
@@ -900,7 +968,8 @@ export const chapter057: ChapterDefinition = {
         { id: 's4', text: 'heute Abend' },
         { id: 's5', text: 'an' },
       ],
-      explanation: 'anrufen splits: rufe stays in position 2, an moves to the very end: Ich rufe meine Schwester heute Abend an.',
+      explanation:
+        'anrufen splits: rufe stays in position 2, an moves to the very end: Ich rufe meine Schwester heute Abend an.',
     },
     {
       id: 'ch57-ex-38',
@@ -918,7 +987,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'p4', left: 'ankommen', right: 'angekommen' },
         { id: 'p5', left: 'abfahren', right: 'abgefahren' },
       ],
-      explanation: 'Each separable participle inserts ge- between the prefix and the base participle.',
+      explanation:
+        'Each separable participle inserts ge- between the prefix and the base participle.',
     },
     {
       id: 'ch57-ex-39',
@@ -936,7 +1006,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'd', text: 'Ich schlage dir vor ein Restaurant.' },
       ],
       correctOptionId: 'a',
-      explanation: 'schlage stays in position 2, and the prefix vor moves to the end: Ich schlage dir ein Restaurant vor.',
+      explanation:
+        'schlage stays in position 2, and the prefix vor moves to the end: Ich schlage dir ein Restaurant vor.',
     },
     {
       id: 'ch57-ex-40',
@@ -950,7 +1021,8 @@ export const chapter057: ChapterDefinition = {
       tokens: ['Der', 'Lehrer', 'hat', 'die', 'Regel', 'geerklärt'],
       errorTokenIndex: 5,
       correction: 'erklärt',
-      explanation: 'erklären is inseparable (er- is one of the eight inseparable prefixes) and blocks ge-: the participle is erklärt, not geerklärt.',
+      explanation:
+        'erklären is inseparable (er- is one of the eight inseparable prefixes) and blocks ge-: the participle is erklärt, not geerklärt.',
     },
     {
       id: 'ch57-ex-41',
@@ -964,7 +1036,8 @@ export const chapter057: ChapterDefinition = {
       templateParts: ['Mach bitte das Fenster ', '!'],
       slots: [{ id: 'slot1', correctWord: 'auf' }],
       wordBank: ['auf', 'zu', 'mit', 'ab'],
-      explanation: 'aufmachen splits: the prefix auf goes to the very end of the imperative clause.',
+      explanation:
+        'aufmachen splits: the prefix auf goes to the very end of the imperative clause.',
     },
     {
       id: 'ch57-ex-42',
@@ -979,7 +1052,8 @@ export const chapter057: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'prefix',
       maxLength: 10,
-      explanation: 'abfahren splits: fährt stays in position 2, ab goes to the end: Der Zug fährt um acht Uhr ab.',
+      explanation:
+        'abfahren splits: fährt stays in position 2, ab goes to the end: Der Zug fährt um acht Uhr ab.',
     },
     {
       id: 'ch57-ex-43',
@@ -996,7 +1070,8 @@ export const chapter057: ChapterDefinition = {
         { id: 's3', text: 'heute Abend' },
         { id: 's4', text: 'mit?' },
       ],
-      explanation: 'kommst stays in position 2, and the separable prefix mit moves to the very end: Kommst du heute Abend mit?',
+      explanation:
+        'kommst stays in position 2, and the separable prefix mit moves to the very end: Kommst du heute Abend mit?',
     },
     {
       id: 'ch57-ex-44',
@@ -1014,7 +1089,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'd', text: 'Der Zug kommt pünktlich.' },
       ],
       correctOptionId: 'a',
-      explanation: 'kommt stays in position 2, an moves to the end: Der Zug kommt pünktlich an.',
+      explanation:
+        'kommt stays in position 2, an moves to the end: Der Zug kommt pünktlich an.',
     },
     {
       id: 'ch57-ex-45',
@@ -1032,7 +1108,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'p4', left: 'bezahlen', right: 'bezahlt' },
         { id: 'p5', left: 'entscheiden', right: 'entschieden' },
       ],
-      explanation: 'Inseparable prefixes block ge- completely, so each participle keeps its prefix but never adds ge-.',
+      explanation:
+        'Inseparable prefixes block ge- completely, so each participle keeps its prefix but never adds ge-.',
     },
     {
       id: 'ch57-ex-46',
@@ -1047,7 +1124,8 @@ export const chapter057: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'vor...en',
       maxLength: 20,
-      explanation: 'schlagen is strong (geschlagen); with the separable prefix vor-, the ge- moves inside: vorgeschlagen.',
+      explanation:
+        'schlagen is strong (geschlagen); with the separable prefix vor-, the ge- moves inside: vorgeschlagen.',
     },
     {
       id: 'ch57-ex-47',
@@ -1061,7 +1139,8 @@ export const chapter057: ChapterDefinition = {
       tokens: ['Sie', 'hat', 'sich', 'schnell', 'entscheidet'],
       errorTokenIndex: 4,
       correction: 'entschieden',
-      explanation: 'entscheiden is strong; its participle is entschieden, not entscheidet — and since ent- is inseparable, there is no ge-.',
+      explanation:
+        'entscheiden is strong; its participle is entschieden, not entscheidet — and since ent- is inseparable, there is no ge-.',
     },
     {
       id: 'ch57-ex-48',
@@ -1075,7 +1154,8 @@ export const chapter057: ChapterDefinition = {
       templateParts: ['Bitte mach die Tür ', '.'],
       slots: [{ id: 'slot1', correctWord: 'zu' }],
       wordBank: ['zu', 'auf', 'mit', 'ab'],
-      explanation: 'zumachen splits: the prefix zu goes to the very end of the imperative clause.',
+      explanation:
+        'zumachen splits: the prefix zu goes to the very end of the imperative clause.',
     },
     {
       id: 'ch57-ex-49',
@@ -1093,7 +1173,8 @@ export const chapter057: ChapterDefinition = {
         { id: 's4', text: 'ein Restaurant' },
         { id: 's5', text: 'vorschlagen' },
       ],
-      explanation: 'With a modal in position 2, the separable verb stays whole, in the infinitive, at the end: Ich möchte dir ein Restaurant vorschlagen.',
+      explanation:
+        'With a modal in position 2, the separable verb stays whole, in the infinitive, at the end: Ich möchte dir ein Restaurant vorschlagen.',
     },
     {
       id: 'ch57-ex-50',
@@ -1111,7 +1192,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'd', text: 'vor zu schlagen' },
       ],
       correctOptionId: 'a',
-      explanation: 'vorschlagen is separable: zu slides inside, between vor- and schlagen: vorzuschlagen.',
+      explanation:
+        'vorschlagen is separable: zu slides inside, between vor- and schlagen: vorzuschlagen.',
     },
     {
       id: 'ch57-ex-51',
@@ -1120,13 +1202,15 @@ export const chapter057: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['zu-infinitive', 'inseparable-verbs'],
-      instruction: 'Complete the sentence with the correct zu-infinitive. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct zu-infinitive. Capitalisation is not checked.',
       prompt: 'Es ist schwer, sich schnell ___. (entscheiden)',
       acceptedAnswers: ['zu entscheiden'],
       answerMode: 'caseInsensitive',
       placeholder: 'zu entscheiden',
       maxLength: 20,
-      explanation: 'entscheiden is inseparable: zu stands in front of the whole verb, zu entscheiden.',
+      explanation:
+        'entscheiden is inseparable: zu stands in front of the whole verb, zu entscheiden.',
     },
     {
       id: 'ch57-ex-52',
@@ -1144,7 +1228,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'p4', left: 'mitkommen', right: 'mitzukommen' },
         { id: 'p5', left: 'vorschlagen', right: 'vorzuschlagen' },
       ],
-      explanation: 'For separable verbs, zu is inserted between the prefix and the base verb, written as one word.',
+      explanation:
+        'For separable verbs, zu is inserted between the prefix and the base verb, written as one word.',
     },
     {
       id: 'ch57-ex-53',
@@ -1158,7 +1243,8 @@ export const chapter057: ChapterDefinition = {
       tokens: ['Es', 'macht', 'Spaß,', 'sonntags', 'zueinkaufen'],
       errorTokenIndex: 4,
       correction: 'einzukaufen',
-      explanation: 'einkaufen is separable: zu must slide between ein- and kaufen, giving einzukaufen, not zueinkaufen.',
+      explanation:
+        'einkaufen is separable: zu must slide between ein- and kaufen, giving einzukaufen, not zueinkaufen.',
     },
     {
       id: 'ch57-ex-54',
@@ -1172,7 +1258,8 @@ export const chapter057: ChapterDefinition = {
       templateParts: ['Kommst du heute Abend ', '?'],
       slots: [{ id: 'slot1', correctWord: 'mit' }],
       wordBank: ['mit', 'ab', 'auf', 'zu'],
-      explanation: 'mitkommen splits: the prefix mit moves to the very end of the question.',
+      explanation:
+        'mitkommen splits: the prefix mit moves to the very end of the question.',
     },
     {
       id: 'ch57-ex-55',
@@ -1182,14 +1269,16 @@ export const chapter057: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['separable-verbs', 'word-order'],
       instruction: 'Drag the segments into the correct order.',
-      prompt: 'Put the words in order to form a correct sentence with abfahren (separable).',
+      prompt:
+        'Put the words in order to form a correct sentence with abfahren (separable).',
       segments: [
         { id: 's1', text: 'Der Bus' },
         { id: 's2', text: 'fährt' },
         { id: 's3', text: 'in fünf Minuten' },
         { id: 's4', text: 'ab' },
       ],
-      explanation: 'fährt stays in position 2, ab moves to the end: Der Bus fährt in fünf Minuten ab.',
+      explanation:
+        'fährt stays in position 2, ab moves to the end: Der Bus fährt in fünf Minuten ab.',
     },
     {
       id: 'ch57-ex-56',
@@ -1207,7 +1296,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'd', text: 'Ich bezahle sofort be die Rechnung.' },
       ],
       correctOptionId: 'a',
-      explanation: 'bezahlen is inseparable, so it stays whole in position 2: Ich bezahle die Rechnung sofort.',
+      explanation:
+        'bezahlen is inseparable, so it stays whole in position 2: Ich bezahle die Rechnung sofort.',
     },
     {
       id: 'ch57-ex-57',
@@ -1222,7 +1312,8 @@ export const chapter057: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'ge...',
       maxLength: 20,
-      explanation: 'fallen becomes gefallen; ge- is itself inseparable, so no additional ge- is added, and the participle is identical to the infinitive: gefallen.',
+      explanation:
+        'fallen becomes gefallen; ge- is itself inseparable, so no additional ge- is added, and the participle is identical to the infinitive: gefallen.',
     },
     {
       id: 'ch57-ex-58',
@@ -1241,7 +1332,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'p5', left: 'wiederholen', right: 'to repeat (inseparable)' },
         { id: 'p6', left: 'wiederkommen', right: 'to come again (separable)' },
       ],
-      explanation: 'Two-way prefixes such as über-, unter-, and wieder- split their meaning: the separable reading tends to be literal and spatial, the inseparable reading more abstract.',
+      explanation:
+        'Two-way prefixes such as über-, unter-, and wieder- split their meaning: the separable reading tends to be literal and spatial, the inseparable reading more abstract.',
     },
     {
       id: 'ch57-ex-59',
@@ -1255,7 +1347,8 @@ export const chapter057: ChapterDefinition = {
       tokens: ['Ich', 'habe', 'es', 'gestern', 'geversucht'],
       errorTokenIndex: 4,
       correction: 'versucht',
-      explanation: 'versuchen is inseparable (ver-) and blocks ge- completely: versucht, not geversucht.',
+      explanation:
+        'versuchen is inseparable (ver-) and blocks ge- completely: versucht, not geversucht.',
     },
     {
       id: 'ch57-ex-60',
@@ -1269,7 +1362,8 @@ export const chapter057: ChapterDefinition = {
       templateParts: ['Der Zug kommt um zehn Uhr ', '.'],
       slots: [{ id: 'slot1', correctWord: 'an' }],
       wordBank: ['an', 'ab', 'auf', 'mit'],
-      explanation: 'ankommen splits: kommt stays in position 2, an goes to the end: Der Zug kommt um zehn Uhr an.',
+      explanation:
+        'ankommen splits: kommt stays in position 2, an goes to the end: Der Zug kommt um zehn Uhr an.',
     },
     {
       id: 'ch57-ex-61',
@@ -1279,14 +1373,16 @@ export const chapter057: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['zu-infinitive', 'separable-verbs', 'word-order'],
       instruction: 'Drag the segments into the correct order.',
-      prompt: 'Put the words in order to form a correct zu-infinitive clause with abfahren (separable).',
+      prompt:
+        'Put the words in order to form a correct zu-infinitive clause with abfahren (separable).',
       segments: [
         { id: 's1', text: 'Es' },
         { id: 's2', text: 'ist Zeit,' },
         { id: 's3', text: 'endlich' },
         { id: 's4', text: 'abzufahren' },
       ],
-      explanation: 'abfahren is separable: zu is inserted between ab- and fahren, giving abzufahren.',
+      explanation:
+        'abfahren is separable: zu is inserted between ab- and fahren, giving abzufahren.',
     },
     {
       id: 'ch57-ex-62',
@@ -1304,7 +1400,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'd', text: 'gemacht zu' },
       ],
       correctOptionId: 'a',
-      explanation: 'machen becomes gemacht; with the separable prefix zu-, ge- moves inside: zugemacht.',
+      explanation:
+        'machen becomes gemacht; with the separable prefix zu-, ge- moves inside: zugemacht.',
     },
     {
       id: 'ch57-ex-63',
@@ -1319,7 +1416,8 @@ export const chapter057: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'auf...t',
       maxLength: 20,
-      explanation: 'machen becomes gemacht; with the separable prefix auf-, ge- moves inside: aufgemacht.',
+      explanation:
+        'machen becomes gemacht; with the separable prefix auf-, ge- moves inside: aufgemacht.',
     },
     {
       id: 'ch57-ex-64',
@@ -1338,7 +1436,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'p5', left: 'versuchen', right: 'to try' },
         { id: 'p6', left: 'gefallen', right: 'to please, to like' },
       ],
-      explanation: 'Each of these verbs carries one of the eight fixed inseparable prefixes and never splits.',
+      explanation:
+        'Each of these verbs carries one of the eight fixed inseparable prefixes and never splits.',
     },
     {
       id: 'ch57-ex-65',
@@ -1348,7 +1447,8 @@ export const chapter057: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['separable-verbs', 'word-order', 'negation'],
       instruction: 'Drag the segments into the correct order.',
-      prompt: 'Put the words in order to form a negated sentence with abfahren (separable).',
+      prompt:
+        'Put the words in order to form a negated sentence with abfahren (separable).',
       segments: [
         { id: 's1', text: 'Der Zug' },
         { id: 's2', text: 'fährt' },
@@ -1356,7 +1456,8 @@ export const chapter057: ChapterDefinition = {
         { id: 's4', text: 'nicht' },
         { id: 's5', text: 'ab' },
       ],
-      explanation: 'fährt stays in position 2; nicht comes before the very end, and the separable prefix ab still goes last: Der Zug fährt heute nicht ab.',
+      explanation:
+        'fährt stays in position 2; nicht comes before the very end, and the separable prefix ab still goes last: Der Zug fährt heute nicht ab.',
     },
     {
       id: 'ch57-ex-66',
@@ -1374,7 +1475,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'd', text: 'erklärte' },
       ],
       correctOptionId: 'a',
-      explanation: 'erklären is inseparable (er-) and blocks ge-: Der Lehrer hat die Regel genau erklärt.',
+      explanation:
+        'erklären is inseparable (er-) and blocks ge-: Der Lehrer hat die Regel genau erklärt.',
     },
     {
       id: 'ch57-ex-67',
@@ -1383,13 +1485,15 @@ export const chapter057: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['separable-verbs', 'partizip-ii', 'error-correction'],
-      instruction: 'Correct the mistake and write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake and write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Fehler: Er hat mir ein Restaurant vorgeschlagt.',
       acceptedAnswers: ['Er hat mir ein Restaurant vorgeschlagen.'],
       answerMode: 'normalized',
       placeholder: 'Er hat ...',
       maxLength: 60,
-      explanation: 'schlagen is strong (geschlagen), not weak; with the separable prefix vor-, the correct participle is vorgeschlagen: Er hat mir ein Restaurant vorgeschlagen.',
+      explanation:
+        'schlagen is strong (geschlagen), not weak; with the separable prefix vor-, the correct participle is vorgeschlagen: Er hat mir ein Restaurant vorgeschlagen.',
     },
     {
       id: 'ch57-ex-68',
@@ -1399,14 +1503,16 @@ export const chapter057: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['zu-infinitive', 'inseparable-verbs', 'word-order'],
       instruction: 'Drag the segments into the correct order.',
-      prompt: 'Put the words in order to form a correct zu-infinitive clause with besuchen (inseparable).',
+      prompt:
+        'Put the words in order to form a correct zu-infinitive clause with besuchen (inseparable).',
       segments: [
         { id: 's1', text: 'Er' },
         { id: 's2', text: 'hat vor,' },
         { id: 's3', text: 'seine Oma' },
         { id: 's4', text: 'zu besuchen' },
       ],
-      explanation: 'besuchen is inseparable: zu stands as its own word directly in front of the whole verb, at the end of the clause: Er hat vor, seine Oma zu besuchen.',
+      explanation:
+        'besuchen is inseparable: zu stands as its own word directly in front of the whole verb, at the end of the clause: Er hat vor, seine Oma zu besuchen.',
     },
     {
       id: 'ch57-ex-69',
@@ -1423,7 +1529,8 @@ export const chapter057: ChapterDefinition = {
         { id: 'c', text: 'ambiguous, cannot tell' },
       ],
       correctOptionId: 'a',
-      explanation: 'Stress falls on -setzen (überSETZEN), the inseparable reading, meaning "to translate."',
+      explanation:
+        'Stress falls on -setzen (überSETZEN), the inseparable reading, meaning "to translate."',
     },
     {
       id: 'ch57-ex-70',
@@ -1433,12 +1540,14 @@ export const chapter057: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['ambiguous-prefixes', 'two-way-prefixes', 'word-order'],
       instruction: 'Write only the missing prefix. Capitalisation does not matter here.',
-      prompt: 'Lies den Vertrag bitte genau ___! (durchlesen, separable "to read through")',
+      prompt:
+        'Lies den Vertrag bitte genau ___! (durchlesen, separable "to read through")',
       acceptedAnswers: ['durch'],
       answerMode: 'caseInsensitive',
       placeholder: 'prefix',
       maxLength: 10,
-      explanation: 'In this literal sense, durch- is stressed and separable: Lies den Vertrag bitte genau durch!',
+      explanation:
+        'In this literal sense, durch- is stressed and separable: Lies den Vertrag bitte genau durch!',
     },
     {
       id: 'ch57-ex-71',
@@ -1448,14 +1557,16 @@ export const chapter057: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['separable-verbs', 'word-order', 'modal-verbs'],
       instruction: 'Drag the segments into the correct order.',
-      prompt: 'Put the words in order to form a question with mitkommen (modal + separable verb, unsplit).',
+      prompt:
+        'Put the words in order to form a question with mitkommen (modal + separable verb, unsplit).',
       segments: [
         { id: 's1', text: 'Kannst' },
         { id: 's2', text: 'du' },
         { id: 's3', text: 'heute Abend' },
         { id: 's4', text: 'mitkommen?' },
       ],
-      explanation: 'With a modal in position 2, mitkommen stays whole, in the infinitive, at the end: Kannst du heute Abend mitkommen?',
+      explanation:
+        'With a modal in position 2, mitkommen stays whole, in the infinitive, at the end: Kannst du heute Abend mitkommen?',
     },
   ],
 };

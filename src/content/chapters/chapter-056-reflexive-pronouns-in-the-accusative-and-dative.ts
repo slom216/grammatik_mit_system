@@ -56,7 +56,7 @@ export const chapter056: ChapterDefinition = {
         id: 'ch56-rule-04',
         heading: 'Body parts and personal items: the definite article, not a possessive',
         paragraphs: [
-          'German has a whole family of everyday expressions built on this pattern: sich die Zähne putzen (to brush one\'s teeth), sich die Hände waschen (to wash one\'s hands), sich das Gesicht waschen (to wash one\'s face), and sich die Haare kämmen (to comb one\'s hair). In every case, the body part takes the accusative case with the definite article, not a possessive article.',
+          "German has a whole family of everyday expressions built on this pattern: sich die Zähne putzen (to brush one's teeth), sich die Hände waschen (to wash one's hands), sich das Gesicht waschen (to wash one's face), and sich die Haare kämmen (to comb one's hair). In every case, the body part takes the accusative case with the definite article, not a possessive article.",
           'Ich putze mir die Zähne. — not Ich putze meine Zähne mir, and not (usually) Ich putze mir meine Zähne. The dative reflexive pronoun mir already shows whose teeth are being brushed, so adding a possessive on top of it is redundant; German simply uses die Zähne, dem Kontext nach clearly "my" teeth.',
           'This pattern is extremely common in daily-routine descriptions: Sie wäscht sich das Gesicht. Wir putzen uns die Zähne vor dem Schlafen. Kämmst du dir die Haare? — the article stays definite in every person.',
         ],
@@ -110,12 +110,24 @@ export const chapter056: ChapterDefinition = {
         rows: [
           ['sich die Zähne putzen', 'Ich putze mir die Zähne.', 'I brush my teeth.'],
           ['sich die Hände waschen', 'Du wäschst dir die Hände.', 'You wash your hands.'],
-          ['sich das Gesicht waschen', 'Sie wäscht sich das Gesicht.', 'She washes her face.'],
+          [
+            'sich das Gesicht waschen',
+            'Sie wäscht sich das Gesicht.',
+            'She washes her face.',
+          ],
           ['sich die Haare kämmen', 'Er kämmt sich die Haare.', 'He combs his hair.'],
-          ['sich etwas kaufen', 'Wir kaufen uns ein neues Sofa.', 'We buy ourselves a new sofa.'],
+          [
+            'sich etwas kaufen',
+            'Wir kaufen uns ein neues Sofa.',
+            'We buy ourselves a new sofa.',
+          ],
           ['sich etwas wünschen', 'Ich wünsche mir Frieden.', 'I wish for peace.'],
           ['sich etwas überlegen', 'Überleg dir das gut!', 'Think it over carefully!'],
-          ['sich etwas vorstellen', 'Kannst du dir das vorstellen?', 'Can you imagine that?'],
+          [
+            'sich etwas vorstellen',
+            'Kannst du dir das vorstellen?',
+            'Can you imagine that?',
+          ],
         ],
         note: 'In every row, the noun after the reflexive pronoun (die Zähne, die Hände, ein neues Sofa, das) is the accusative object — that is exactly why the reflexive pronoun itself must be dative.',
       },
@@ -125,83 +137,97 @@ export const chapter056: ChapterDefinition = {
         german: 'Ich putze mir die Zähne.',
         english: 'I brush my teeth.',
         highlight: ['mir'],
-        explanation: 'die Zähne is already the accusative object, so ich needs the dative reflexive pronoun mir.',
+        explanation:
+          'die Zähne is already the accusative object, so ich needs the dative reflexive pronoun mir.',
       },
       {
         german: 'Ich wasche mich.',
         english: 'I wash (myself).',
         highlight: ['mich'],
-        explanation: 'there is no separate accusative object here — mich itself is the object, so it stays accusative.',
+        explanation:
+          'there is no separate accusative object here — mich itself is the object, so it stays accusative.',
       },
       {
         german: 'Ich wasche mir die Hände.',
         english: 'I wash my hands.',
         highlight: ['mir', 'die Hände'],
-        explanation: 'once die Hände appears as the accusative object, the reflexive pronoun for ich switches from mich to mir.',
+        explanation:
+          'once die Hände appears as the accusative object, the reflexive pronoun for ich switches from mich to mir.',
       },
       {
         german: 'Du kämmst dir die Haare.',
         english: 'You comb your hair.',
         highlight: ['dir'],
-        explanation: 'die Haare is the accusative object, so du takes the dative reflexive pronoun dir, not dich.',
+        explanation:
+          'die Haare is the accusative object, so du takes the dative reflexive pronoun dir, not dich.',
       },
       {
         german: 'Er kämmt sich die Haare.',
         english: 'He combs his hair.',
         highlight: ['sich'],
-        explanation: 'er also uses sich for the dative reflexive — the same form as the accusative, but here required by the object die Haare.',
+        explanation:
+          'er also uses sich for the dative reflexive — the same form as the accusative, but here required by the object die Haare.',
       },
       {
         german: 'Wir kaufen uns ein neues Sofa.',
         english: 'We are buying ourselves a new sofa.',
         highlight: ['uns'],
-        explanation: 'ein neues Sofa is the accusative object of kaufen, so uns is a dative reflexive pronoun here.',
+        explanation:
+          'ein neues Sofa is the accusative object of kaufen, so uns is a dative reflexive pronoun here.',
       },
       {
         german: 'Ich wünsche mir ein Fahrrad zum Geburtstag.',
         english: 'I wish for a bike for my birthday.',
         highlight: ['mir'],
-        explanation: 'ein Fahrrad is the accusative object of wünschen, so ich takes the dative reflexive pronoun mir.',
+        explanation:
+          'ein Fahrrad is the accusative object of wünschen, so ich takes the dative reflexive pronoun mir.',
       },
       {
         german: 'Stell dir das mal vor!',
         english: 'Just imagine that!',
         highlight: ['dir'],
-        explanation: 'das is the accusative object here; sich (Dat.) etwas vorstellen means "to imagine something", unlike sich vorstellen "to introduce oneself".',
+        explanation:
+          'das is the accusative object here; sich (Dat.) etwas vorstellen means "to imagine something", unlike sich vorstellen "to introduce oneself".',
       },
       {
         german: 'Ich stelle mich kurz vor.',
         english: 'I introduce myself briefly.',
         highlight: ['mich'],
-        explanation: 'with no separate object, vorstellen here means "to introduce oneself" and takes the accusative reflexive pronoun mich.',
+        explanation:
+          'with no separate object, vorstellen here means "to introduce oneself" and takes the accusative reflexive pronoun mich.',
       },
       {
         german: 'Überleg dir gut, was du sagst.',
         english: 'Think carefully about what you say.',
         highlight: ['dir'],
-        explanation: 'sich überlegen always takes the dative reflexive pronoun; the clause was du sagst functions like the accusative object.',
+        explanation:
+          'sich überlegen always takes the dative reflexive pronoun; the clause was du sagst functions like the accusative object.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich putze mich die Zähne.',
         correct: 'Ich putze mir die Zähne.',
-        explanation: 'die Zähne is already the accusative object of the sentence, so the reflexive pronoun for ich must be the dative mir, not the accusative mich.',
+        explanation:
+          'die Zähne is already the accusative object of the sentence, so the reflexive pronoun for ich must be the dative mir, not the accusative mich.',
       },
       {
         incorrect: 'Ich wasche mir.',
         correct: 'Ich wasche mich.',
-        explanation: 'with no separate accusative object, the reflexive pronoun is itself the direct object and must be accusative (mich), not dative (mir).',
+        explanation:
+          'with no separate accusative object, the reflexive pronoun is itself the direct object and must be accusative (mich), not dative (mir).',
       },
       {
         incorrect: 'Er kämmt ihm die Haare.',
         correct: 'Er kämmt sich die Haare.',
-        explanation: 'a reflexive action always uses the reflexive pronoun sich, never the ordinary personal pronoun ihm/ihn — even when there is also an accusative object.',
+        explanation:
+          'a reflexive action always uses the reflexive pronoun sich, never the ordinary personal pronoun ihm/ihn — even when there is also an accusative object.',
       },
       {
         incorrect: 'Ich überlege mich, ob ich mitkomme.',
         correct: 'Ich überlege mir, ob ich mitkomme.',
-        explanation: 'sich überlegen is always used with the dative reflexive pronoun (mir), because the ob-clause functions as its accusative object.',
+        explanation:
+          'sich überlegen is always used with the dative reflexive pronoun (mir), because the ob-clause functions as its accusative object.',
       },
     ],
     remember: [
@@ -235,7 +261,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'sich' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Zähne is already the accusative object, so ich needs the dative reflexive pronoun mir.',
+      explanation:
+        'die Zähne is already the accusative object, so ich needs the dative reflexive pronoun mir.',
     },
     {
       id: 'ch56-ex-02',
@@ -253,7 +280,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'sich' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Haare is the accusative object, so du needs the dative reflexive pronoun dir, not dich.',
+      explanation:
+        'die Haare is the accusative object, so du needs the dative reflexive pronoun dir, not dich.',
     },
     {
       id: 'ch56-ex-03',
@@ -271,7 +299,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'mir' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Hände is the accusative object, so wir takes the dative reflexive pronoun uns (identical in shape to the accusative here).',
+      explanation:
+        'die Hände is the accusative object, so wir takes the dative reflexive pronoun uns (identical in shape to the accusative here).',
     },
     {
       id: 'ch56-ex-04',
@@ -289,7 +318,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'ihr' },
       ],
       correctOptionId: 'a',
-      explanation: 'ein Eis is the accusative object of kaufen, so ihr takes the dative reflexive pronoun euch.',
+      explanation:
+        'ein Eis is the accusative object of kaufen, so ihr takes the dative reflexive pronoun euch.',
     },
     {
       id: 'ch56-ex-05',
@@ -307,7 +337,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'dir' },
       ],
       correctOptionId: 'a',
-      explanation: 'there is no separate accusative object here, so ich takes the accusative reflexive pronoun mich.',
+      explanation:
+        'there is no separate accusative object here, so ich takes the accusative reflexive pronoun mich.',
     },
     {
       id: 'ch56-ex-06',
@@ -325,7 +356,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'dich' },
       ],
       correctOptionId: 'a',
-      explanation: 'das Gesicht is now the accusative object, so ich switches to the dative reflexive pronoun mir.',
+      explanation:
+        'das Gesicht is now the accusative object, so ich switches to the dative reflexive pronoun mir.',
     },
     {
       id: 'ch56-ex-07',
@@ -343,7 +375,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'euch' },
       ],
       correctOptionId: 'a',
-      explanation: 'sich interessieren für is a truly reflexive verb that always takes the accusative; für Musik is a prepositional phrase, not a second accusative object.',
+      explanation:
+        'sich interessieren für is a truly reflexive verb that always takes the accusative; für Musik is a prepositional phrase, not a second accusative object.',
     },
     {
       id: 'ch56-ex-08',
@@ -361,7 +394,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'euch' },
       ],
       correctOptionId: 'a',
-      explanation: 'sich überlegen always takes the dative reflexive pronoun; the clause was du kochen sollst functions like its accusative object.',
+      explanation:
+        'sich überlegen always takes the dative reflexive pronoun; the clause was du kochen sollst functions like its accusative object.',
     },
     {
       id: 'ch56-ex-09',
@@ -379,7 +413,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'er' },
       ],
       correctOptionId: 'a',
-      explanation: 'reflexive actions always use the reflexive pronoun sich, never the ordinary personal pronoun ihm/ihn — here required by the accusative object ein neues Fahrrad.',
+      explanation:
+        'reflexive actions always use the reflexive pronoun sich, never the ordinary personal pronoun ihm/ihn — here required by the accusative object ein neues Fahrrad.',
     },
     {
       id: 'ch56-ex-10',
@@ -388,8 +423,10 @@ export const chapter056: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['case-choice', 'accusative-object-recognition'],
-      instruction: 'Choose the sentence that has a separate accusative object and therefore needs the dative reflexive pronoun.',
-      prompt: 'Welcher Satz hat ein zusätzliches Akkusativobjekt und braucht deshalb das Dativ-Reflexivpronomen?',
+      instruction:
+        'Choose the sentence that has a separate accusative object and therefore needs the dative reflexive pronoun.',
+      prompt:
+        'Welcher Satz hat ein zusätzliches Akkusativobjekt und braucht deshalb das Dativ-Reflexivpronomen?',
       options: [
         { id: 'a', text: 'Ich dusche mich.' },
         { id: 'b', text: 'Ich putze mir die Zähne.' },
@@ -397,7 +434,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'Wir treffen uns.' },
       ],
       correctOptionId: 'b',
-      explanation: 'die Zähne is a separate accusative object, so the reflexive pronoun in that sentence is dative; the other sentences have no other object, so their reflexive pronouns are accusative.',
+      explanation:
+        'die Zähne is a separate accusative object, so the reflexive pronoun in that sentence is dative; the other sentences have no other object, so their reflexive pronouns are accusative.',
     },
     {
       id: 'ch56-ex-11',
@@ -406,8 +444,10 @@ export const chapter056: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['case-choice', 'accusative-object-recognition'],
-      instruction: 'Choose the sentence that needs the accusative reflexive pronoun, because there is no separate object.',
-      prompt: 'Welcher Satz braucht das Akkusativ-Reflexivpronomen, weil kein zusätzliches Objekt vorhanden ist?',
+      instruction:
+        'Choose the sentence that needs the accusative reflexive pronoun, because there is no separate object.',
+      prompt:
+        'Welcher Satz braucht das Akkusativ-Reflexivpronomen, weil kein zusätzliches Objekt vorhanden ist?',
       options: [
         { id: 'a', text: 'Sie kämmt sich die Haare.' },
         { id: 'b', text: 'Ich setze mich.' },
@@ -415,7 +455,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'Ihr wünscht euch Glück.' },
       ],
       correctOptionId: 'b',
-      explanation: 'Ich setze mich. has no separate accusative object — mich is the only object — so it stays accusative, unlike the other sentences, which each have an accusative object (die Haare, ein Auto, Glück) and therefore a dative reflexive pronoun.',
+      explanation:
+        'Ich setze mich. has no separate accusative object — mich is the only object — so it stays accusative, unlike the other sentences, which each have an accusative object (die Haare, ein Auto, Glück) and therefore a dative reflexive pronoun.',
     },
     {
       id: 'ch56-ex-12',
@@ -433,7 +474,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'sich' },
       ],
       correctOptionId: 'a',
-      explanation: 'sich (Dat.) etwas vorstellen means "to imagine something"; the dass-clause acts like the accusative object, so ich takes the dative reflexive pronoun mir.',
+      explanation:
+        'sich (Dat.) etwas vorstellen means "to imagine something"; the dass-clause acts like the accusative object, so ich takes the dative reflexive pronoun mir.',
     },
     {
       id: 'ch56-ex-13',
@@ -451,7 +493,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'euch' },
       ],
       correctOptionId: 'a',
-      explanation: 'this is "to imagine", not "to introduce oneself", so du takes the dative reflexive pronoun dir; the wie-clause functions as the accusative object.',
+      explanation:
+        'this is "to imagine", not "to introduce oneself", so du takes the dative reflexive pronoun dir; the wie-clause functions as the accusative object.',
     },
     {
       id: 'ch56-ex-14',
@@ -469,7 +512,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'Ich putze die Zähne mich.' },
       ],
       correctOptionId: 'b',
-      explanation: 'die Zähne is the accusative object, so the reflexive pronoun must be dative (mir), and it must stand right after the conjugated verb, before die Zähne.',
+      explanation:
+        'die Zähne is the accusative object, so the reflexive pronoun must be dative (mir), and it must stand right after the conjugated verb, before die Zähne.',
     },
     {
       id: 'ch56-ex-15',
@@ -487,7 +531,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'Er kämmt sein die Haare.' },
       ],
       correctOptionId: 'c',
-      explanation: 'a reflexive action needs the reflexive pronoun sich, never the personal pronoun ihm/ihn or the possessive sein.',
+      explanation:
+        'a reflexive action needs the reflexive pronoun sich, never the personal pronoun ihm/ihn or the possessive sein.',
     },
     {
       id: 'ch56-ex-16',
@@ -502,7 +547,8 @@ export const chapter056: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'mir',
       maxLength: 10,
-      explanation: 'die Zähne is the accusative object, so ich needs the dative reflexive pronoun mir.',
+      explanation:
+        'die Zähne is the accusative object, so ich needs the dative reflexive pronoun mir.',
     },
     {
       id: 'ch56-ex-17',
@@ -517,7 +563,8 @@ export const chapter056: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dir',
       maxLength: 10,
-      explanation: 'die Hände is the accusative object, so du needs the dative reflexive pronoun dir.',
+      explanation:
+        'die Hände is the accusative object, so du needs the dative reflexive pronoun dir.',
     },
     {
       id: 'ch56-ex-18',
@@ -532,7 +579,8 @@ export const chapter056: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'uns',
       maxLength: 10,
-      explanation: 'die Haare is the accusative object, so wir takes the dative reflexive pronoun uns.',
+      explanation:
+        'die Haare is the accusative object, so wir takes the dative reflexive pronoun uns.',
     },
     {
       id: 'ch56-ex-19',
@@ -547,7 +595,8 @@ export const chapter056: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'euch',
       maxLength: 10,
-      explanation: 'neue Schuhe is the accusative object of kaufen, so ihr takes the dative reflexive pronoun euch.',
+      explanation:
+        'neue Schuhe is the accusative object of kaufen, so ihr takes the dative reflexive pronoun euch.',
     },
     {
       id: 'ch56-ex-20',
@@ -562,7 +611,8 @@ export const chapter056: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'mich',
       maxLength: 10,
-      explanation: 'there is no separate accusative object here, so ich takes the accusative reflexive pronoun mich.',
+      explanation:
+        'there is no separate accusative object here, so ich takes the accusative reflexive pronoun mich.',
     },
     {
       id: 'ch56-ex-21',
@@ -577,7 +627,8 @@ export const chapter056: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'mir',
       maxLength: 10,
-      explanation: 'das Gesicht is now the accusative object, so ich switches to the dative reflexive pronoun mir.',
+      explanation:
+        'das Gesicht is now the accusative object, so ich switches to the dative reflexive pronoun mir.',
     },
     {
       id: 'ch56-ex-22',
@@ -592,7 +643,8 @@ export const chapter056: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'sich',
       maxLength: 10,
-      explanation: 'there is no separate accusative object, so er takes the accusative reflexive pronoun sich.',
+      explanation:
+        'there is no separate accusative object, so er takes the accusative reflexive pronoun sich.',
     },
     {
       id: 'ch56-ex-23',
@@ -607,7 +659,8 @@ export const chapter056: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'sich',
       maxLength: 10,
-      explanation: 'ein neues Handy is the accusative object, so er needs the dative reflexive pronoun sich (identical in shape to the accusative here).',
+      explanation:
+        'ein neues Handy is the accusative object, so er needs the dative reflexive pronoun sich (identical in shape to the accusative here).',
     },
     {
       id: 'ch56-ex-24',
@@ -616,13 +669,15 @@ export const chapter056: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['reflexive pronoun', 'accusative', 'daily-routine'],
-      instruction: 'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
       prompt: 'Ich dusche ___ und putze mir danach die Zähne.',
       acceptedAnswers: ['mich'],
       answerMode: 'caseInsensitive',
       placeholder: 'mich',
       maxLength: 10,
-      explanation: 'sich duschen has no separate accusative object, so ich takes the accusative reflexive pronoun mich, unlike putze mir die Zähne right after it.',
+      explanation:
+        'sich duschen has no separate accusative object, so ich takes the accusative reflexive pronoun mich, unlike putze mir die Zähne right after it.',
     },
     {
       id: 'ch56-ex-25',
@@ -631,13 +686,15 @@ export const chapter056: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['reflexive pronoun', 'dative', 'wir', 'sich-überlegen'],
-      instruction: 'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
       prompt: 'Wir überlegen ___, ob wir mitkommen.',
       acceptedAnswers: ['uns'],
       answerMode: 'caseInsensitive',
       placeholder: 'uns',
       maxLength: 10,
-      explanation: 'sich überlegen always takes the dative reflexive pronoun; the ob-clause functions as its accusative object, so wir takes uns.',
+      explanation:
+        'sich überlegen always takes the dative reflexive pronoun; the ob-clause functions as its accusative object, so wir takes uns.',
     },
     {
       id: 'ch56-ex-26',
@@ -646,13 +703,15 @@ export const chapter056: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['reflexive pronoun', 'dative', 'ihr', 'sich-wünschen'],
-      instruction: 'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct reflexive pronoun. Capitalisation is not checked.',
       prompt: 'Ihr wünscht ___ ein schönes neues Jahr.',
       acceptedAnswers: ['euch'],
       answerMode: 'caseInsensitive',
       placeholder: 'euch',
       maxLength: 10,
-      explanation: 'ein schönes neues Jahr is the accusative object of wünschen, so ihr takes the dative reflexive pronoun euch.',
+      explanation:
+        'ein schönes neues Jahr is the accusative object of wünschen, so ihr takes the dative reflexive pronoun euch.',
     },
     {
       id: 'ch56-ex-27',
@@ -661,13 +720,15 @@ export const chapter056: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['case-choice', 'error-correction'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ich putze mich die Zähne.',
       acceptedAnswers: ['Ich putze mir die Zähne.'],
       answerMode: 'normalized',
       placeholder: 'Ich putze ...',
       maxLength: 40,
-      explanation: 'die Zähne is already the accusative object, so the reflexive pronoun for ich must be the dative mir, not the accusative mich.',
+      explanation:
+        'die Zähne is already the accusative object, so the reflexive pronoun for ich must be the dative mir, not the accusative mich.',
     },
     {
       id: 'ch56-ex-28',
@@ -676,13 +737,15 @@ export const chapter056: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['reflexive-vs-personal-pronoun', 'error-correction'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Er kämmt ihm die Haare.',
       acceptedAnswers: ['Er kämmt sich die Haare.'],
       answerMode: 'normalized',
       placeholder: 'Er kämmt ...',
       maxLength: 40,
-      explanation: 'a reflexive action always uses the reflexive pronoun sich, never the ordinary personal pronoun ihm.',
+      explanation:
+        'a reflexive action always uses the reflexive pronoun sich, never the ordinary personal pronoun ihm.',
     },
     {
       id: 'ch56-ex-29',
@@ -691,13 +754,15 @@ export const chapter056: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['reflexive-agreement', 'error-correction'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Wir waschen sich die Hände.',
       acceptedAnswers: ['Wir waschen uns die Hände.'],
       answerMode: 'normalized',
       placeholder: 'Wir waschen ...',
       maxLength: 40,
-      explanation: 'the reflexive pronoun must agree with the subject; wir takes uns, not the third-person sich.',
+      explanation:
+        'the reflexive pronoun must agree with the subject; wir takes uns, not the third-person sich.',
     },
     {
       id: 'ch56-ex-30',
@@ -706,13 +771,18 @@ export const chapter056: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['dative-reflexive', 'sich-vorstellen', 'sentence-building'],
-      instruction: 'Write a complete sentence using the cues. Capitalisation and punctuation are checked; no full stop is required at the end unless shown.',
+      instruction:
+        'Write a complete sentence using the cues. Capitalisation and punctuation are checked; no full stop is required at the end unless shown.',
       prompt: 'ich – sich vorstellen – eine Reise nach Berlin',
-      acceptedAnswers: ['Ich stelle mir eine Reise nach Berlin vor.', 'Ich stelle mir eine Reise nach Berlin vor'],
+      acceptedAnswers: [
+        'Ich stelle mir eine Reise nach Berlin vor.',
+        'Ich stelle mir eine Reise nach Berlin vor',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich stelle mir ...',
       maxLength: 60,
-      explanation: 'sich (Dat.) etwas vorstellen means "to imagine something"; eine Reise nach Berlin is the accusative object, so ich takes the dative reflexive pronoun mir.',
+      explanation:
+        'sich (Dat.) etwas vorstellen means "to imagine something"; eine Reise nach Berlin is the accusative object, so ich takes the dative reflexive pronoun mir.',
     },
     {
       id: 'ch56-ex-31',
@@ -728,7 +798,8 @@ export const chapter056: ChapterDefinition = {
         { id: 's2', text: 'beeilt' },
         { id: 's3', text: 'euch.' },
       ],
-      explanation: 'sich beeilen has no separate accusative object, so the accusative reflexive pronoun euch stands right after the conjugated verb.',
+      explanation:
+        'sich beeilen has no separate accusative object, so the accusative reflexive pronoun euch stands right after the conjugated verb.',
     },
     {
       id: 'ch56-ex-32',
@@ -742,7 +813,8 @@ export const chapter056: ChapterDefinition = {
       tokens: ['Er', 'wünscht', 'ihm', 'ein', 'neues', 'Fahrrad', '.'],
       errorTokenIndex: 2,
       correction: 'sich',
-      explanation: 'a reflexive action always uses the reflexive pronoun sich, never the ordinary personal pronoun ihm — here required by the accusative object ein neues Fahrrad.',
+      explanation:
+        'a reflexive action always uses the reflexive pronoun sich, never the ordinary personal pronoun ihm — here required by the accusative object ein neues Fahrrad.',
     },
     {
       id: 'ch56-ex-33',
@@ -760,7 +832,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'sich' },
       ],
       correctOptionId: 'a',
-      explanation: 'there is no separate accusative object here, so ich takes the accusative reflexive pronoun mich.',
+      explanation:
+        'there is no separate accusative object here, so ich takes the accusative reflexive pronoun mich.',
     },
     {
       id: 'ch56-ex-34',
@@ -778,7 +851,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'sie' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Jacke is the accusative object, so the reflexive pronoun must be dative sich, never the personal pronoun ihr.',
+      explanation:
+        'die Jacke is the accusative object, so the reflexive pronoun must be dative sich, never the personal pronoun ihr.',
     },
     {
       id: 'ch56-ex-35',
@@ -796,7 +870,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'sich' },
       ],
       correctOptionId: 'a',
-      explanation: 'there is no separate accusative object, so du takes the accusative reflexive pronoun dich.',
+      explanation:
+        'there is no separate accusative object, so du takes the accusative reflexive pronoun dich.',
     },
     {
       id: 'ch56-ex-36',
@@ -814,7 +889,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'sich' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Nägel is the accusative object, so du needs the dative reflexive pronoun dir, not dich.',
+      explanation:
+        'die Nägel is the accusative object, so du needs the dative reflexive pronoun dir, not dich.',
     },
     {
       id: 'ch56-ex-37',
@@ -832,7 +908,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'mir' },
       ],
       correctOptionId: 'a',
-      explanation: 'sich freuen auf is a truly reflexive verb that always takes the accusative; auf die Ferien is a prepositional phrase, not a second accusative object.',
+      explanation:
+        'sich freuen auf is a truly reflexive verb that always takes the accusative; auf die Ferien is a prepositional phrase, not a second accusative object.',
     },
     {
       id: 'ch56-ex-38',
@@ -850,7 +927,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'er' },
       ],
       correctOptionId: 'a',
-      explanation: 'einen teuren Urlaub is the accusative object of leisten, so er takes the dative reflexive pronoun sich, never the personal pronoun ihm.',
+      explanation:
+        'einen teuren Urlaub is the accusative object of leisten, so er takes the dative reflexive pronoun sich, never the personal pronoun ihm.',
     },
     {
       id: 'ch56-ex-39',
@@ -868,7 +946,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'sich' },
       ],
       correctOptionId: 'a',
-      explanation: 'sich beeilen has no separate accusative object, so ich takes the accusative reflexive pronoun mich.',
+      explanation:
+        'sich beeilen has no separate accusative object, so ich takes the accusative reflexive pronoun mich.',
     },
     {
       id: 'ch56-ex-40',
@@ -886,7 +965,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'sich' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Adresse is the accusative object, so ich needs the dative reflexive pronoun mir.',
+      explanation:
+        'die Adresse is the accusative object, so ich needs the dative reflexive pronoun mir.',
     },
     {
       id: 'ch56-ex-41',
@@ -904,7 +984,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'sich' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Telefonnummer is the accusative object of merken, so du needs the dative reflexive pronoun dir.',
+      explanation:
+        'die Telefonnummer is the accusative object of merken, so du needs the dative reflexive pronoun dir.',
     },
     {
       id: 'ch56-ex-42',
@@ -922,7 +1003,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'mir' },
       ],
       correctOptionId: 'a',
-      explanation: 'auf die Bank is a prepositional phrase, not a second accusative object, so uns is the accusative reflexive pronoun here.',
+      explanation:
+        'auf die Bank is a prepositional phrase, not a second accusative object, so uns is the accusative reflexive pronoun here.',
     },
     {
       id: 'ch56-ex-43',
@@ -940,7 +1022,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'ihr' },
       ],
       correctOptionId: 'a',
-      explanation: 'there is no separate accusative object here, so ihr takes the accusative reflexive pronoun euch.',
+      explanation:
+        'there is no separate accusative object here, so ihr takes the accusative reflexive pronoun euch.',
     },
     {
       id: 'ch56-ex-44',
@@ -958,7 +1041,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'sich' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Nase is the accusative object, so du needs the dative reflexive pronoun dir, not dich.',
+      explanation:
+        'die Nase is the accusative object, so du needs the dative reflexive pronoun dir, not dich.',
     },
     {
       id: 'ch56-ex-45',
@@ -976,7 +1060,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'd', text: 'Ihr beeilt euch.' },
       ],
       correctOptionId: 'c',
-      explanation: 'die Adresse is a separate accusative object, so that sentence needs the dative reflexive pronoun; the others have no other object and stay accusative.',
+      explanation:
+        'die Adresse is a separate accusative object, so that sentence needs the dative reflexive pronoun; the others have no other object and stay accusative.',
     },
     {
       id: 'ch56-ex-46',
@@ -991,7 +1076,8 @@ export const chapter056: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'mich',
       maxLength: 10,
-      explanation: 'there is no separate accusative object here, so ich takes the accusative reflexive pronoun mich.',
+      explanation:
+        'there is no separate accusative object here, so ich takes the accusative reflexive pronoun mich.',
     },
     {
       id: 'ch56-ex-47',
@@ -1006,7 +1092,8 @@ export const chapter056: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'sich',
       maxLength: 10,
-      explanation: 'die Jacke is the accusative object, so the reflexive pronoun must be dative sich.',
+      explanation:
+        'die Jacke is the accusative object, so the reflexive pronoun must be dative sich.',
     },
     {
       id: 'ch56-ex-48',
@@ -1021,7 +1108,8 @@ export const chapter056: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dich',
       maxLength: 10,
-      explanation: 'there is no separate accusative object, so du takes the accusative reflexive pronoun dich.',
+      explanation:
+        'there is no separate accusative object, so du takes the accusative reflexive pronoun dich.',
     },
     {
       id: 'ch56-ex-49',
@@ -1036,7 +1124,8 @@ export const chapter056: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dir',
       maxLength: 10,
-      explanation: 'die Nägel is the accusative object, so du needs the dative reflexive pronoun dir.',
+      explanation:
+        'die Nägel is the accusative object, so du needs the dative reflexive pronoun dir.',
     },
     {
       id: 'ch56-ex-50',
@@ -1051,7 +1140,8 @@ export const chapter056: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'uns',
       maxLength: 10,
-      explanation: 'auf das Wochenende is a prepositional phrase, not an accusative object, so wir takes the accusative reflexive pronoun uns.',
+      explanation:
+        'auf das Wochenende is a prepositional phrase, not an accusative object, so wir takes the accusative reflexive pronoun uns.',
     },
     {
       id: 'ch56-ex-51',
@@ -1066,7 +1156,8 @@ export const chapter056: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'sich',
       maxLength: 10,
-      explanation: 'ein neues Auto is the accusative object of leisten, so er needs the dative reflexive pronoun sich.',
+      explanation:
+        'ein neues Auto is the accusative object of leisten, so er needs the dative reflexive pronoun sich.',
     },
     {
       id: 'ch56-ex-52',
@@ -1081,7 +1172,8 @@ export const chapter056: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'mich',
       maxLength: 10,
-      explanation: 'sich beeilen has no separate accusative object, so ich takes the accusative reflexive pronoun mich.',
+      explanation:
+        'sich beeilen has no separate accusative object, so ich takes the accusative reflexive pronoun mich.',
     },
     {
       id: 'ch56-ex-53',
@@ -1096,7 +1188,8 @@ export const chapter056: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dir',
       maxLength: 10,
-      explanation: 'die Adresse is the accusative object of notieren, so du needs the dative reflexive pronoun dir.',
+      explanation:
+        'die Adresse is the accusative object of notieren, so du needs the dative reflexive pronoun dir.',
     },
     {
       id: 'ch56-ex-54',
@@ -1111,7 +1204,8 @@ export const chapter056: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'uns',
       maxLength: 10,
-      explanation: 'auf die Bank is a prepositional phrase, not a second accusative object, so wir takes the accusative reflexive pronoun uns.',
+      explanation:
+        'auf die Bank is a prepositional phrase, not a second accusative object, so wir takes the accusative reflexive pronoun uns.',
     },
     {
       id: 'ch56-ex-55',
@@ -1126,7 +1220,8 @@ export const chapter056: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'euch',
       maxLength: 10,
-      explanation: 'there is no separate accusative object here, so ihr takes the accusative reflexive pronoun euch.',
+      explanation:
+        'there is no separate accusative object here, so ihr takes the accusative reflexive pronoun euch.',
     },
     {
       id: 'ch56-ex-56',
@@ -1141,7 +1236,8 @@ export const chapter056: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dir',
       maxLength: 10,
-      explanation: 'die Haare is the accusative object, so du needs the dative reflexive pronoun dir.',
+      explanation:
+        'die Haare is the accusative object, so du needs the dative reflexive pronoun dir.',
     },
     {
       id: 'ch56-ex-57',
@@ -1150,13 +1246,15 @@ export const chapter056: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['case-choice', 'error-correction', 'sich-anziehen'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Sie zieht sie die Jacke an.',
       acceptedAnswers: ['Sie zieht sich die Jacke an.'],
       answerMode: 'normalized',
       placeholder: 'Sie zieht ...',
       maxLength: 40,
-      explanation: 'a reflexive action always uses the reflexive pronoun sich, never the ordinary personal pronoun sie — even when there is also an accusative object like die Jacke.',
+      explanation:
+        'a reflexive action always uses the reflexive pronoun sich, never the ordinary personal pronoun sie — even when there is also an accusative object like die Jacke.',
     },
     {
       id: 'ch56-ex-58',
@@ -1165,13 +1263,18 @@ export const chapter056: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['dative-reflexive', 'sich-kaufen', 'sentence-building'],
-      instruction: 'Write a complete sentence using the cues. Capitalisation and punctuation are checked; no full stop is required at the end unless shown.',
+      instruction:
+        'Write a complete sentence using the cues. Capitalisation and punctuation are checked; no full stop is required at the end unless shown.',
       prompt: 'wir – sich etwas kaufen – ein neues Auto',
-      acceptedAnswers: ['Wir kaufen uns ein neues Auto.', 'Wir kaufen uns ein neues Auto'],
+      acceptedAnswers: [
+        'Wir kaufen uns ein neues Auto.',
+        'Wir kaufen uns ein neues Auto',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wir kaufen uns ...',
       maxLength: 60,
-      explanation: 'ein neues Auto is the accusative object of kaufen, so wir takes the dative reflexive pronoun uns.',
+      explanation:
+        'ein neues Auto is the accusative object of kaufen, so wir takes the dative reflexive pronoun uns.',
     },
     {
       id: 'ch56-ex-59',
@@ -1188,7 +1291,8 @@ export const chapter056: ChapterDefinition = {
         { id: 's3', text: 'mir' },
         { id: 's4', text: 'die Zähne.' },
       ],
-      explanation: 'The reflexive pronoun mir stands right after the conjugated verb, before the accusative object die Zähne.',
+      explanation:
+        'The reflexive pronoun mir stands right after the conjugated verb, before the accusative object die Zähne.',
     },
     {
       id: 'ch56-ex-60',
@@ -1205,7 +1309,8 @@ export const chapter056: ChapterDefinition = {
         { id: 's3', text: 'dir' },
         { id: 's4', text: 'die Hände.' },
       ],
-      explanation: 'The dative reflexive pronoun dir comes right after the verb wäschst, before the accusative object die Hände.',
+      explanation:
+        'The dative reflexive pronoun dir comes right after the verb wäschst, before the accusative object die Hände.',
     },
     {
       id: 'ch56-ex-61',
@@ -1222,7 +1327,8 @@ export const chapter056: ChapterDefinition = {
         { id: 's3', text: 'uns' },
         { id: 's4', text: 'ein neues Sofa.' },
       ],
-      explanation: 'The reflexive pronoun uns stands directly after the verb, before the accusative object ein neues Sofa.',
+      explanation:
+        'The reflexive pronoun uns stands directly after the verb, before the accusative object ein neues Sofa.',
     },
     {
       id: 'ch56-ex-62',
@@ -1240,7 +1346,8 @@ export const chapter056: ChapterDefinition = {
         { id: 's4', text: 'das' },
         { id: 's5', text: 'vorstellen?' },
       ],
-      explanation: 'After the inverted verb and subject, the dative reflexive pronoun dir comes right before the accusative object das.',
+      explanation:
+        'After the inverted verb and subject, the dative reflexive pronoun dir comes right before the accusative object das.',
     },
     {
       id: 'ch56-ex-63',
@@ -1257,7 +1364,8 @@ export const chapter056: ChapterDefinition = {
         { id: 's3', text: 'sich' },
         { id: 's4', text: 'die Haare.' },
       ],
-      explanation: 'The dative reflexive pronoun sich stands right after the verb kämmt, before the accusative object die Haare.',
+      explanation:
+        'The dative reflexive pronoun sich stands right after the verb kämmt, before the accusative object die Haare.',
     },
     {
       id: 'ch56-ex-64',
@@ -1274,7 +1382,8 @@ export const chapter056: ChapterDefinition = {
         { id: 's3', text: 'gut,' },
         { id: 's4', text: 'was du sagst.' },
       ],
-      explanation: 'sich überlegen always takes the dative reflexive pronoun dir, placed right after the imperative verb.',
+      explanation:
+        'sich überlegen always takes the dative reflexive pronoun dir, placed right after the imperative verb.',
     },
     {
       id: 'ch56-ex-65',
@@ -1288,7 +1397,8 @@ export const chapter056: ChapterDefinition = {
       templateParts: ['Ich putze ', ' die Zähne.'],
       slots: [{ id: 'slot1', correctWord: 'mir' }],
       wordBank: ['mir', 'mich', 'dir', 'sich'],
-      explanation: 'die Zähne is the accusative object, so ich needs the dative reflexive pronoun mir.',
+      explanation:
+        'die Zähne is the accusative object, so ich needs the dative reflexive pronoun mir.',
     },
     {
       id: 'ch56-ex-66',
@@ -1302,7 +1412,8 @@ export const chapter056: ChapterDefinition = {
       templateParts: ['Du wäschst ', ' die Hände.'],
       slots: [{ id: 'slot1', correctWord: 'dir' }],
       wordBank: ['dir', 'dich', 'mir', 'sich'],
-      explanation: 'die Hände is the accusative object, so du needs the dative reflexive pronoun dir, not dich.',
+      explanation:
+        'die Hände is the accusative object, so du needs the dative reflexive pronoun dir, not dich.',
     },
     {
       id: 'ch56-ex-67',
@@ -1316,7 +1427,8 @@ export const chapter056: ChapterDefinition = {
       templateParts: ['Wir kaufen ', ' ein neues Sofa.'],
       slots: [{ id: 'slot1', correctWord: 'uns' }],
       wordBank: ['uns', 'euch', 'sich', 'mir'],
-      explanation: 'ein neues Sofa is the accusative object, so wir needs the dative reflexive pronoun uns.',
+      explanation:
+        'ein neues Sofa is the accusative object, so wir needs the dative reflexive pronoun uns.',
     },
     {
       id: 'ch56-ex-68',
@@ -1330,7 +1442,8 @@ export const chapter056: ChapterDefinition = {
       templateParts: ['Ich wasche ', '.'],
       slots: [{ id: 'slot1', correctWord: 'mich' }],
       wordBank: ['mich', 'mir', 'dich', 'dir'],
-      explanation: 'there is no separate accusative object here, so ich takes the accusative reflexive pronoun mich.',
+      explanation:
+        'there is no separate accusative object here, so ich takes the accusative reflexive pronoun mich.',
     },
     {
       id: 'ch56-ex-69',
@@ -1344,7 +1457,8 @@ export const chapter056: ChapterDefinition = {
       templateParts: ['Er kämmt ', ' die Haare.'],
       slots: [{ id: 'slot1', correctWord: 'sich' }],
       wordBank: ['sich', 'ihm', 'ihn', 'ihr'],
-      explanation: 'a reflexive action always uses the reflexive pronoun sich, never the ordinary personal pronoun ihm/ihn.',
+      explanation:
+        'a reflexive action always uses the reflexive pronoun sich, never the ordinary personal pronoun ihm/ihn.',
     },
     {
       id: 'ch56-ex-70',
@@ -1358,7 +1472,8 @@ export const chapter056: ChapterDefinition = {
       templateParts: ['Ihr wünscht ', ' ein schönes Fest.'],
       slots: [{ id: 'slot1', correctWord: 'euch' }],
       wordBank: ['euch', 'uns', 'sich', 'dir'],
-      explanation: 'ein schönes Fest is the accusative object of wünschen, so ihr needs the dative reflexive pronoun euch.',
+      explanation:
+        'ein schönes Fest is the accusative object of wünschen, so ihr needs the dative reflexive pronoun euch.',
     },
     {
       id: 'ch56-ex-71',
@@ -1372,7 +1487,8 @@ export const chapter056: ChapterDefinition = {
       templateParts: ['Stell ', ' das mal vor!'],
       slots: [{ id: 'slot1', correctWord: 'dir' }],
       wordBank: ['dir', 'dich', 'mir', 'sich'],
-      explanation: 'this is "to imagine", not "to introduce oneself", so du takes the dative reflexive pronoun dir; das is the accusative object.',
+      explanation:
+        'this is "to imagine", not "to introduce oneself", so du takes the dative reflexive pronoun dir; das is the accusative object.',
     },
     {
       id: 'ch56-ex-72',
@@ -1386,7 +1502,8 @@ export const chapter056: ChapterDefinition = {
       templateParts: ['Wir setzen ', ' auf die Bank.'],
       slots: [{ id: 'slot1', correctWord: 'uns' }],
       wordBank: ['uns', 'sich', 'euch', 'mich'],
-      explanation: 'auf die Bank is a prepositional phrase, not a second accusative object, so wir takes the accusative reflexive pronoun uns.',
+      explanation:
+        'auf die Bank is a prepositional phrase, not a second accusative object, so wir takes the accusative reflexive pronoun uns.',
     },
     {
       id: 'ch56-ex-73',
@@ -1404,7 +1521,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'p4', left: 'ihr', right: 'euch' },
         { id: 'p5', left: 'er/sie/es', right: 'sich' },
       ],
-      explanation: 'Only ich and du change shape in the dative (mir, dir); the other persons look identical to their accusative forms.',
+      explanation:
+        'Only ich and du change shape in the dative (mir, dir); the other persons look identical to their accusative forms.',
     },
     {
       id: 'ch56-ex-74',
@@ -1422,7 +1540,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'p4', left: 'ihr', right: 'euch' },
         { id: 'p5', left: 'sie (Plural)', right: 'sich' },
       ],
-      explanation: 'The accusative reflexive pronouns are mich, dich, sich, uns, euch, sich — only ich and du differ from the dative set.',
+      explanation:
+        'The accusative reflexive pronouns are mich, dich, sich, uns, euch, sich — only ich and du differ from the dative set.',
     },
     {
       id: 'ch56-ex-75',
@@ -1431,7 +1550,8 @@ export const chapter056: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['case-choice', 'accusative-object-recognition'],
-      instruction: 'Match each sentence fragment to the reflexive pronoun that correctly completes it.',
+      instruction:
+        'Match each sentence fragment to the reflexive pronoun that correctly completes it.',
       prompt: 'Match each fragment to its correct reflexive pronoun.',
       pairs: [
         { id: 'p1', left: 'Ich putze ___ die Zähne.', right: 'mir' },
@@ -1440,7 +1560,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'p4', left: 'Du duschst ___.', right: 'dich' },
         { id: 'p5', left: 'Wir kaufen ___ ein Auto.', right: 'uns' },
       ],
-      explanation: 'A separate accusative object (die Zähne, die Haare, ein Auto) forces the dative reflexive pronoun; without one, the accusative pronoun is used.',
+      explanation:
+        'A separate accusative object (die Zähne, die Haare, ein Auto) forces the dative reflexive pronoun; without one, the accusative pronoun is used.',
     },
     {
       id: 'ch56-ex-76',
@@ -1459,7 +1580,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'p5', left: 'sich freuen auf', right: 'to look forward to' },
         { id: 'p6', left: 'sich rasieren', right: 'to shave' },
       ],
-      explanation: 'Recognising the meaning of each reflexive verb helps predict whether it needs a dative reflexive pronoun (when it takes an accusative object) or an accusative one.',
+      explanation:
+        'Recognising the meaning of each reflexive verb helps predict whether it needs a dative reflexive pronoun (when it takes an accusative object) or an accusative one.',
     },
     {
       id: 'ch56-ex-77',
@@ -1477,7 +1599,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'p4', left: 'Stell dir das vor!', right: 'Imagine that!' },
         { id: 'p5', left: 'Ich putze mir die Zähne.', right: 'I brush my teeth.' },
       ],
-      explanation: 'In every German sentence, the noun after the reflexive pronoun is the accusative object, which is why the reflexive pronoun itself is dative.',
+      explanation:
+        'In every German sentence, the noun after the reflexive pronoun is the accusative object, which is why the reflexive pronoun itself is dative.',
     },
     {
       id: 'ch56-ex-78',
@@ -1491,11 +1614,20 @@ export const chapter056: ChapterDefinition = {
       pairs: [
         { id: 'p1', left: 'sich etwas kaufen', right: 'Er kauft sich ein Handy.' },
         { id: 'p2', left: 'sich etwas wünschen', right: 'Sie wünscht sich Ruhe.' },
-        { id: 'p3', left: 'sich etwas überlegen', right: 'Ich überlege mir die Antwort.' },
-        { id: 'p4', left: 'sich etwas vorstellen', right: 'Kannst du dir das vorstellen?' },
+        {
+          id: 'p3',
+          left: 'sich etwas überlegen',
+          right: 'Ich überlege mir die Antwort.',
+        },
+        {
+          id: 'p4',
+          left: 'sich etwas vorstellen',
+          right: 'Kannst du dir das vorstellen?',
+        },
         { id: 'p5', left: 'sich etwas leisten', right: 'Wir leisten uns ein Hotel.' },
       ],
-      explanation: 'These five verbs always take a dative reflexive pronoun, because the noun or clause that follows is the accusative object.',
+      explanation:
+        'These five verbs always take a dative reflexive pronoun, because the noun or clause that follows is the accusative object.',
     },
     {
       id: 'ch56-ex-79',
@@ -1504,7 +1636,8 @@ export const chapter056: ChapterDefinition = {
       type: 'matching',
       level: 'transfer',
       grammarFocus: ['case-choice', 'accusative-object-recognition'],
-      instruction: 'Match each sentence fragment to the reflexive pronoun that correctly completes it.',
+      instruction:
+        'Match each sentence fragment to the reflexive pronoun that correctly completes it.',
       prompt: 'Match each fragment to its correct reflexive pronoun.',
       pairs: [
         { id: 'p1', left: 'Du schneidest ___ die Nägel.', right: 'dir' },
@@ -1513,7 +1646,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'p4', left: 'Er beeilt ___.', right: 'sich' },
         { id: 'p5', left: 'Ich kaufe ___ ein Kleid.', right: 'mir' },
       ],
-      explanation: 'die Nägel and ein Kleid are accusative objects that trigger a dative reflexive pronoun; the other verbs have no separate object and stay accusative.',
+      explanation:
+        'die Nägel and ein Kleid are accusative objects that trigger a dative reflexive pronoun; the other verbs have no separate object and stay accusative.',
     },
     {
       id: 'ch56-ex-80',
@@ -1530,7 +1664,8 @@ export const chapter056: ChapterDefinition = {
         { id: 'p3', left: 'sich die Haare kämmen', right: 'to comb one’s hair' },
         { id: 'p4', left: 'sich die Nase putzen', right: 'to blow one’s nose' },
       ],
-      explanation: 'All four expressions use the definite article with the body part, plus a dative reflexive pronoun to show whose body part it is.',
+      explanation:
+        'All four expressions use the definite article with the body part, plus a dative reflexive pronoun to show whose body part it is.',
     },
     {
       id: 'ch56-ex-81',
@@ -1544,7 +1679,8 @@ export const chapter056: ChapterDefinition = {
       tokens: ['Ich', 'putze', 'mich', 'die', 'Zähne', '.'],
       errorTokenIndex: 2,
       correction: 'mir',
-      explanation: 'die Zähne is already the accusative object, so the reflexive pronoun for ich must be the dative mir, not the accusative mich.',
+      explanation:
+        'die Zähne is already the accusative object, so the reflexive pronoun for ich must be the dative mir, not the accusative mich.',
     },
     {
       id: 'ch56-ex-82',
@@ -1558,7 +1694,8 @@ export const chapter056: ChapterDefinition = {
       tokens: ['Er', 'kämmt', 'ihm', 'die', 'Haare', '.'],
       errorTokenIndex: 2,
       correction: 'sich',
-      explanation: 'a reflexive action always uses the reflexive pronoun sich, never the ordinary personal pronoun ihm — even when there is also an accusative object.',
+      explanation:
+        'a reflexive action always uses the reflexive pronoun sich, never the ordinary personal pronoun ihm — even when there is also an accusative object.',
     },
     {
       id: 'ch56-ex-83',
@@ -1572,7 +1709,8 @@ export const chapter056: ChapterDefinition = {
       tokens: ['Wir', 'waschen', 'sich', 'die', 'Hände', '.'],
       errorTokenIndex: 2,
       correction: 'uns',
-      explanation: 'the reflexive pronoun must agree with the subject; wir takes uns, not the third-person sich.',
+      explanation:
+        'the reflexive pronoun must agree with the subject; wir takes uns, not the third-person sich.',
     },
     {
       id: 'ch56-ex-84',
@@ -1586,7 +1724,8 @@ export const chapter056: ChapterDefinition = {
       tokens: ['Ich', 'überlege', 'mich', 'ob', 'ich', 'mitkomme', '.'],
       errorTokenIndex: 2,
       correction: 'mir',
-      explanation: 'sich überlegen is always used with the dative reflexive pronoun mir, because the ob-clause functions as its accusative object.',
+      explanation:
+        'sich überlegen is always used with the dative reflexive pronoun mir, because the ob-clause functions as its accusative object.',
     },
   ],
 };

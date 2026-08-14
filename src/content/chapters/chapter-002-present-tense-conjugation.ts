@@ -640,7 +640,8 @@ export const chapter002: ChapterDefinition = {
         { id: 'd', text: 'spi' },
       ],
       correctOptionId: 'a',
-      explanation: 'Remove the ending -en from the infinitive spielen to get the stem spiel-.',
+      explanation:
+        'Remove the ending -en from the infinitive spielen to get the stem spiel-.',
     },
     {
       id: 'ch02-ex-26',
@@ -658,7 +659,8 @@ export const chapter002: ChapterDefinition = {
         { id: 'd', text: 'kau' },
       ],
       correctOptionId: 'a',
-      explanation: 'Remove the ending -en from the infinitive kaufen to get the stem kauf-.',
+      explanation:
+        'Remove the ending -en from the infinitive kaufen to get the stem kauf-.',
     },
     {
       id: 'ch02-ex-27',
@@ -772,7 +774,8 @@ export const chapter002: ChapterDefinition = {
         { id: 'p4', left: 'kommen', right: 'kommst' },
         { id: 'p5', left: 'lernen', right: 'lernst' },
       ],
-      explanation: 'The subject du always takes the ending -st, added directly to the stem.',
+      explanation:
+        'The subject du always takes the ending -st, added directly to the stem.',
     },
     {
       id: 'ch02-ex-34',
@@ -1026,7 +1029,8 @@ export const chapter002: ChapterDefinition = {
       tokens: ['Du', 'lernt', 'Deutsch', 'jeden', 'Tag.'],
       errorTokenIndex: 1,
       correction: 'lernst',
-      explanation: 'du always takes the ending -st, not -t, which belongs to er/sie/es and ihr.',
+      explanation:
+        'du always takes the ending -st, not -t, which belongs to er/sie/es and ihr.',
     },
     {
       id: 'ch02-ex-50',
@@ -1295,7 +1299,8 @@ export const chapter002: ChapterDefinition = {
         { id: 'd', text: 'Sie (formal) kommst aus Spanien.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The formal Sie takes the ending -en, just like wir and the plural sie: Sie kommen.',
+      explanation:
+        'The formal Sie takes the ending -en, just like wir and the plural sie: Sie kommen.',
     },
     {
       id: 'ch02-ex-66',
@@ -1339,8 +1344,7 @@ export const chapter002: ChapterDefinition = {
       tokens: ['Er', 'kaufst', 'frisches', 'Brot.'],
       errorTokenIndex: 1,
       correction: 'kauft',
-      explanation:
-        'er/sie/es takes the ending -t, not -st, which belongs to du.',
+      explanation: 'er/sie/es takes the ending -t, not -st, which belongs to du.',
     },
     {
       id: 'ch02-ex-69',
@@ -1348,7 +1352,11 @@ export const chapter002: ChapterDefinition = {
       order: 69,
       type: 'matching',
       level: 'transfer',
-      grammarFocus: ['present-tense-endings', 'extra-e-spelling', 'subject-verb-agreement'],
+      grammarFocus: [
+        'present-tense-endings',
+        'extra-e-spelling',
+        'subject-verb-agreement',
+      ],
       instruction: 'Match each pronoun-and-verb prompt to its correctly conjugated form.',
       prompt: 'Ordne jede Vorgabe der richtigen Form zu.',
       pairs: [

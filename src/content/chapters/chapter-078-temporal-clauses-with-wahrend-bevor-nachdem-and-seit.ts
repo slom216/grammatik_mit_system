@@ -69,7 +69,8 @@ export const chapter078: ChapterDefinition = {
       },
       {
         id: 'ch78-rule-05',
-        heading: 'seit / seitdem — an action that started in the past and still continues',
+        heading:
+          'seit / seitdem — an action that started in the past and still continues',
         paragraphs: [
           'seit and seitdem both correspond to English "since" and introduce an action or state that began at some point in the past and is still ongoing now. They are largely interchangeable as conjunctions, though seit is more common in everyday speech. Chapter 32 already introduced seit as a preposition with a dative time expression (seit zwei Jahren); here seit/seitdem instead introduces a whole clause with its own verb.',
           'The key difference from English is the tense: German normally uses the present tense in both clauses for an ongoing situation, where English uses the present perfect. Seit ich hier wohne, fühle ich mich viel wohler. (Since I have been living here, I feel much happier — wohne is present, not a perfect form.) Seitdem sie in Berlin lebt, spricht sie fließend Deutsch. (Since she has been living in Berlin, she speaks German fluently.)',
@@ -80,7 +81,7 @@ export const chapter078: ChapterDefinition = {
         id: 'ch78-rule-06',
         heading: 'Clause order and word order recap',
         paragraphs: [
-          'Like every subordinate clause, one built with während, bevor, nachdem, or seit/seitdem can come before or after the main clause. When it comes first, it fills position 1 of the whole sentence by itself, so the main clause\'s finite verb must follow immediately after the comma, before its own subject (inversion) — exactly as with weil and wenn.',
+          "Like every subordinate clause, one built with während, bevor, nachdem, or seit/seitdem can come before or after the main clause. When it comes first, it fills position 1 of the whole sentence by itself, so the main clause's finite verb must follow immediately after the comma, before its own subject (inversion) — exactly as with weil and wenn.",
           'Während ich kochte, las er die Zeitung. (las stands right after the comma, before er.) Inside the subordinate clause itself, the verb-final rule still applies within whatever tense is used: for a past-perfect nachdem-clause, the participle comes first and the auxiliary hatte/war closes the clause (gegessen hatte); for a present-perfect one, the participle comes first and habe/bin closes it (gegessen habe).',
         ],
       },
@@ -143,17 +144,29 @@ export const chapter078: ChapterDefinition = {
       {
         id: 'ch78-table-03',
         title: 'Word order: subordinate clause first vs. second',
-        columns: ['Main clause first (neutral order)', 'Subordinate clause first (inversion)'],
+        columns: [
+          'Main clause first (neutral order)',
+          'Subordinate clause first (inversion)',
+        ],
         rows: [
-          ['Er las die Zeitung, während ich kochte.', 'Während ich kochte, las er die Zeitung.'],
-          ['Wir deckten den Tisch, bevor wir aßen.', 'Bevor wir aßen, deckten wir den Tisch.'],
+          [
+            'Er las die Zeitung, während ich kochte.',
+            'Während ich kochte, las er die Zeitung.',
+          ],
+          [
+            'Wir deckten den Tisch, bevor wir aßen.',
+            'Bevor wir aßen, deckten wir den Tisch.',
+          ],
           [
             'Ich ging spazieren, nachdem ich gegessen hatte.',
             'Nachdem ich gegessen hatte, ging ich spazieren.',
           ],
-          ['Ich fühle mich wohler, seit ich hier wohne.', 'Seit ich hier wohne, fühle ich mich wohler.'],
+          [
+            'Ich fühle mich wohler, seit ich hier wohne.',
+            'Seit ich hier wohne, fühle ich mich wohler.',
+          ],
         ],
-        note: 'Whichever clause opens the sentence fills position 1; the other clause\'s finite verb then stands immediately after the comma, in position 2.',
+        note: "Whichever clause opens the sentence fills position 1; the other clause's finite verb then stands immediately after the comma, in position 2.",
       },
     ],
     examples: [
@@ -161,7 +174,8 @@ export const chapter078: ChapterDefinition = {
         german: 'Während ich kochte, las er die Zeitung.',
         english: 'While I was cooking, he was reading the newspaper.',
         highlight: ['Während ich kochte', 'las'],
-        explanation: 'während links two actions happening at the same time; both clauses are in the simple past.',
+        explanation:
+          'während links two actions happening at the same time; both clauses are in the simple past.',
       },
       {
         german: 'Während ich arbeite, hört meine Schwester Musik.',
@@ -173,71 +187,83 @@ export const chapter078: ChapterDefinition = {
         german: 'Bevor wir aßen, deckten wir den Tisch.',
         english: 'Before we ate, we set the table.',
         highlight: ['Bevor wir aßen', 'deckten'],
-        explanation: 'The bevor-clause names the later event (eating); the main clause names the earlier event (setting the table). No tense-back marking is needed.',
+        explanation:
+          'The bevor-clause names the later event (eating); the main clause names the earlier event (setting the table). No tense-back marking is needed.',
       },
       {
         german: 'Bevor du gehst, ruf mich bitte an.',
         english: 'Before you leave, please call me.',
         highlight: ['Bevor du gehst'],
-        explanation: 'bevor also works with a present-tense clause and an imperative main clause.',
+        explanation:
+          'bevor also works with a present-tense clause and an imperative main clause.',
       },
       {
         german: 'Nachdem ich gegessen hatte, ging ich spazieren.',
         english: 'After I had eaten, I went for a walk.',
         highlight: ['gegessen hatte', 'ging'],
-        explanation: 'Tense-back rule: the main clause is simple past (ging), so the earlier event steps back to the past perfect (gegessen hatte).',
+        explanation:
+          'Tense-back rule: the main clause is simple past (ging), so the earlier event steps back to the past perfect (gegessen hatte).',
       },
       {
         german: 'Nachdem ich gegessen habe, gehe ich spazieren.',
         english: 'After I have eaten, I go for a walk.',
         highlight: ['gegessen habe', 'gehe'],
-        explanation: 'Tense-back rule: the main clause is present (gehe), so the earlier event steps back to the present perfect (gegessen habe).',
+        explanation:
+          'Tense-back rule: the main clause is present (gehe), so the earlier event steps back to the present perfect (gegessen habe).',
       },
       {
         german: 'Nachdem er die Prüfung bestanden hatte, feierte er die ganze Nacht.',
         english: 'After he had passed the exam, he celebrated all night.',
         highlight: ['bestanden hatte', 'feierte'],
-        explanation: 'Another past-tense pairing: past perfect in the nachdem-clause, simple past in the main clause.',
+        explanation:
+          'Another past-tense pairing: past perfect in the nachdem-clause, simple past in the main clause.',
       },
       {
         german: 'Seit ich hier wohne, fühle ich mich viel wohler.',
         english: "Since I've been living here, I feel much happier.",
         highlight: ['Seit ich hier wohne', 'fühle'],
-        explanation: 'seit pairs with the present tense for an ongoing action, unlike the English present perfect "have been living".',
+        explanation:
+          'seit pairs with the present tense for an ongoing action, unlike the English present perfect "have been living".',
       },
       {
         german: 'Seitdem sie in Berlin lebt, spricht sie fließend Deutsch.',
         english: 'Since she has been living in Berlin, she speaks German fluently.',
         highlight: ['Seitdem sie in Berlin lebt'],
-        explanation: 'seitdem works exactly like seit as a conjunction, also with the present tense for the ongoing state.',
+        explanation:
+          'seitdem works exactly like seit as a conjunction, also with the present tense for the ongoing state.',
       },
       {
         german: 'Seit er umgezogen ist, sehen wir uns seltener.',
         english: 'Since he moved, we see each other less often.',
         highlight: ['umgezogen ist'],
-        explanation: 'When the seit-clause names a single completed event rather than a drawn-out activity, the present perfect can appear there instead of the present.',
+        explanation:
+          'When the seit-clause names a single completed event rather than a drawn-out activity, the present perfect can appear there instead of the present.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Nachdem ich gegessen habe, ging ich spazieren.',
         correct: 'Nachdem ich gegessen hatte, ging ich spazieren.',
-        explanation: 'The most common mistake with nachdem: using the same tense in both clauses instead of stepping the nachdem-clause one tense back. Because the main clause is simple past, the earlier event needs the past perfect, not the present perfect.',
+        explanation:
+          'The most common mistake with nachdem: using the same tense in both clauses instead of stepping the nachdem-clause one tense back. Because the main clause is simple past, the earlier event needs the past perfect, not the present perfect.',
       },
       {
         incorrect: 'Seit ich hier gewohnt habe, fühle ich mich wohl.',
         correct: 'Seit ich hier wohne, fühle ich mich wohl.',
-        explanation: 'German uses the present tense with seit for an action that began in the past and still continues, not the present perfect as English "have lived" might suggest.',
+        explanation:
+          'German uses the present tense with seit for an action that began in the past and still continues, not the present perfect as English "have lived" might suggest.',
       },
       {
         incorrect: 'Während ich koche, meine Schwester hört Musik.',
         correct: 'Während ich koche, hört meine Schwester Musik.',
-        explanation: 'When the subordinate clause opens the sentence, the main-clause verb must come immediately after the comma (inversion), not the subject.',
+        explanation:
+          'When the subordinate clause opens the sentence, the main-clause verb must come immediately after the comma (inversion), not the subject.',
       },
       {
         incorrect: 'Bevor ich gegessen hatte, ging ich spazieren.',
         correct: 'Nachdem ich gegessen hatte, ging ich spazieren.',
-        explanation: 'Choosing the wrong connector reverses the event order: bevor\'s clause names the later event, so it cannot introduce an event that already happened first. nachdem is needed here instead.',
+        explanation:
+          "Choosing the wrong connector reverses the event order: bevor's clause names the later event, so it cannot introduce an event that already happened first. nachdem is needed here instead.",
       },
     ],
     remember: [
@@ -246,7 +272,7 @@ export const chapter078: ChapterDefinition = {
       'nachdem = "after": the nachdem-clause names the earlier event and must be one tense back from the main clause — past perfect with a simple-past main clause, present perfect with a present-tense main clause.',
       'seit / seitdem = "since": an action that started in the past and still continues normally takes the present tense in German, not the present perfect as in English.',
       'All four connectors send the finite verb to the end of their clause, and a comma always separates the two clauses.',
-      'When the subordinate clause opens the sentence, the main clause\'s verb comes immediately after the comma (inversion).',
+      "When the subordinate clause opens the sentence, the main clause's verb comes immediately after the comma (inversion).",
     ],
   },
   mastery: {
@@ -272,7 +298,8 @@ export const chapter078: ChapterDefinition = {
         { id: 'd', text: 'since' },
       ],
       correctOptionId: 'a',
-      explanation: 'während introduces a clause describing an action happening at the same time as the main clause — "while".',
+      explanation:
+        'während introduces a clause describing an action happening at the same time as the main clause — "while".',
     },
     {
       id: 'ch78-ex-02',
@@ -290,7 +317,8 @@ export const chapter078: ChapterDefinition = {
         { id: 'd', text: 'since' },
       ],
       correctOptionId: 'a',
-      explanation: 'bevor introduces the event that happens later than the main clause — "before".',
+      explanation:
+        'bevor introduces the event that happens later than the main clause — "before".',
     },
     {
       id: 'ch78-ex-03',
@@ -308,7 +336,8 @@ export const chapter078: ChapterDefinition = {
         { id: 'd', text: 'since' },
       ],
       correctOptionId: 'a',
-      explanation: 'nachdem introduces the event that happened earlier than the main clause — "after".',
+      explanation:
+        'nachdem introduces the event that happened earlier than the main clause — "after".',
     },
     {
       id: 'ch78-ex-04',
@@ -326,7 +355,8 @@ export const chapter078: ChapterDefinition = {
         { id: 'd', text: 'while' },
       ],
       correctOptionId: 'a',
-      explanation: 'seit (and seitdem) introduces an action that began in the past and still continues — "since".',
+      explanation:
+        'seit (and seitdem) introduces an action that began in the past and still continues — "since".',
     },
     {
       id: 'ch78-ex-05',
@@ -344,7 +374,8 @@ export const chapter078: ChapterDefinition = {
         { id: 'd', text: 'Während ich Musik höre koche, meine Schwester.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The während-clause has verb-final order (ich koche); the main clause has the verb hört immediately after the comma, before its subject.',
+      explanation:
+        'The während-clause has verb-final order (ich koche); the main clause has the verb hört immediately after the comma, before its subject.',
     },
     {
       id: 'ch78-ex-06',
@@ -353,8 +384,10 @@ export const chapter078: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['connector-choice', 'wahrend', 'controlled'],
-      instruction: 'Choose the connector that fits the described relationship between the two events.',
-      prompt: '___ ich das Abendessen kochte, sah er fern. (While I was cooking dinner, he was watching TV.)',
+      instruction:
+        'Choose the connector that fits the described relationship between the two events.',
+      prompt:
+        '___ ich das Abendessen kochte, sah er fern. (While I was cooking dinner, he was watching TV.)',
       options: [
         { id: 'a', text: 'Während' },
         { id: 'b', text: 'Bevor' },
@@ -362,7 +395,8 @@ export const chapter078: ChapterDefinition = {
         { id: 'd', text: 'Seit' },
       ],
       correctOptionId: 'a',
-      explanation: 'The two actions happen at the same time, so während ("while") is the correct connector.',
+      explanation:
+        'The two actions happen at the same time, so während ("while") is the correct connector.',
     },
     {
       id: 'ch78-ex-07',
@@ -371,8 +405,10 @@ export const chapter078: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['connector-choice', 'nachdem', 'controlled'],
-      instruction: 'Choose the connector that fits the described relationship between the two events.',
-      prompt: '___ ich gegessen hatte, ging ich spazieren. (After I had eaten, I went for a walk.)',
+      instruction:
+        'Choose the connector that fits the described relationship between the two events.',
+      prompt:
+        '___ ich gegessen hatte, ging ich spazieren. (After I had eaten, I went for a walk.)',
       options: [
         { id: 'a', text: 'Nachdem' },
         { id: 'b', text: 'Bevor' },
@@ -380,7 +416,8 @@ export const chapter078: ChapterDefinition = {
         { id: 'd', text: 'Seit' },
       ],
       correctOptionId: 'a',
-      explanation: 'nachdem introduces the earlier event (eating), which is why it pairs here with the past perfect gegessen hatte.',
+      explanation:
+        'nachdem introduces the earlier event (eating), which is why it pairs here with the past perfect gegessen hatte.',
     },
     {
       id: 'ch78-ex-08',
@@ -389,7 +426,8 @@ export const chapter078: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['connector-choice', 'bevor', 'controlled'],
-      instruction: 'Choose the connector that fits the described relationship between the two events.',
+      instruction:
+        'Choose the connector that fits the described relationship between the two events.',
       prompt: '___ wir aßen, deckten wir den Tisch. (Before we ate, we set the table.)',
       options: [
         { id: 'a', text: 'Bevor' },
@@ -398,7 +436,8 @@ export const chapter078: ChapterDefinition = {
         { id: 'd', text: 'Während' },
       ],
       correctOptionId: 'a',
-      explanation: 'bevor introduces the later event (eating); setting the table happened first, in the main clause.',
+      explanation:
+        'bevor introduces the later event (eating); setting the table happened first, in the main clause.',
     },
     {
       id: 'ch78-ex-09',
@@ -407,8 +446,10 @@ export const chapter078: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['connector-choice', 'seit', 'controlled'],
-      instruction: 'Choose the connector that fits the described relationship between the two events.',
-      prompt: '___ ich hier wohne, fühle ich mich viel wohler. (Since I have been living here, I feel much happier.)',
+      instruction:
+        'Choose the connector that fits the described relationship between the two events.',
+      prompt:
+        '___ ich hier wohne, fühle ich mich viel wohler. (Since I have been living here, I feel much happier.)',
       options: [
         { id: 'a', text: 'Seit' },
         { id: 'b', text: 'Bevor' },
@@ -416,7 +457,8 @@ export const chapter078: ChapterDefinition = {
         { id: 'd', text: 'Während' },
       ],
       correctOptionId: 'a',
-      explanation: 'seit introduces an action that started in the past and is still ongoing, expressed here with the present tense wohne.',
+      explanation:
+        'seit introduces an action that started in the past and is still ongoing, expressed here with the present tense wohne.',
     },
     {
       id: 'ch78-ex-10',
@@ -425,8 +467,10 @@ export const chapter078: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['nachdem', 'tense-back', 'controlled'],
-      instruction: 'Choose the sentence that correctly applies the nachdem tense-back rule.',
-      prompt: 'Which sentence correctly pairs the tenses for "After I had eaten, I went for a walk"?',
+      instruction:
+        'Choose the sentence that correctly applies the nachdem tense-back rule.',
+      prompt:
+        'Which sentence correctly pairs the tenses for "After I had eaten, I went for a walk"?',
       options: [
         { id: 'a', text: 'Nachdem ich gegessen hatte, ging ich spazieren.' },
         { id: 'b', text: 'Nachdem ich gegessen habe, ging ich spazieren.' },
@@ -434,7 +478,8 @@ export const chapter078: ChapterDefinition = {
         { id: 'd', text: 'Nachdem ich gegessen, ging ich spazieren.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The main clause is simple past (ging), so the nachdem-clause must step one tense back to the past perfect (gegessen hatte).',
+      explanation:
+        'The main clause is simple past (ging), so the nachdem-clause must step one tense back to the past perfect (gegessen hatte).',
     },
     {
       id: 'ch78-ex-11',
@@ -443,8 +488,10 @@ export const chapter078: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['nachdem', 'tense-back', 'controlled'],
-      instruction: 'Choose the sentence that correctly applies the nachdem tense-back rule.',
-      prompt: 'Which sentence correctly pairs the tenses for "After I have eaten, I go for a walk"?',
+      instruction:
+        'Choose the sentence that correctly applies the nachdem tense-back rule.',
+      prompt:
+        'Which sentence correctly pairs the tenses for "After I have eaten, I go for a walk"?',
       options: [
         { id: 'a', text: 'Nachdem ich gegessen habe, gehe ich spazieren.' },
         { id: 'b', text: 'Nachdem ich esse, gehe ich spazieren.' },
@@ -452,7 +499,8 @@ export const chapter078: ChapterDefinition = {
         { id: 'd', text: 'Nachdem ich gehe spazieren, esse ich.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The main clause is present (gehe), so the nachdem-clause must step one tense back to the present perfect (gegessen habe) — not the plain present, and not the past perfect.',
+      explanation:
+        'The main clause is present (gehe), so the nachdem-clause must step one tense back to the present perfect (gegessen habe) — not the plain present, and not the past perfect.',
     },
     {
       id: 'ch78-ex-12',
@@ -462,7 +510,8 @@ export const chapter078: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['event-ordering', 'nachdem', 'controlled'],
       instruction: 'Read the sentence and identify which event happened first.',
-      prompt: 'Nachdem er die Prüfung bestanden hatte, feierte er die ganze Nacht. Which event happened first?',
+      prompt:
+        'Nachdem er die Prüfung bestanden hatte, feierte er die ganze Nacht. Which event happened first?',
       options: [
         { id: 'a', text: 'Passing the exam (bestanden hatte)' },
         { id: 'b', text: 'Celebrating (feierte)' },
@@ -470,7 +519,8 @@ export const chapter078: ChapterDefinition = {
         { id: 'd', text: 'It cannot be determined' },
       ],
       correctOptionId: 'a',
-      explanation: 'The past perfect (bestanden hatte) marks the earlier event; the simple past (feierte) marks the event that followed it.',
+      explanation:
+        'The past perfect (bestanden hatte) marks the earlier event; the simple past (feierte) marks the event that followed it.',
     },
     {
       id: 'ch78-ex-13',
@@ -488,7 +538,8 @@ export const chapter078: ChapterDefinition = {
         { id: 'd', text: 'It cannot be determined' },
       ],
       correctOptionId: 'a',
-      explanation: 'bevor\'s clause names the later event (aßen); the main clause (deckten wir den Tisch) happened first, before eating.',
+      explanation:
+        "bevor's clause names the later event (aßen); the main clause (deckten wir den Tisch) happened first, before eating.",
     },
     {
       id: 'ch78-ex-14',
@@ -497,7 +548,8 @@ export const chapter078: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['seit', 'present-tense', 'controlled'],
-      instruction: 'Choose the grammatically correct sentence for an action that started in the past and still continues.',
+      instruction:
+        'Choose the grammatically correct sentence for an action that started in the past and still continues.',
       prompt: 'Which sentence correctly describes an ongoing action with seit?',
       options: [
         { id: 'a', text: 'Seit ich hier wohne, fühle ich mich wohl.' },
@@ -506,7 +558,8 @@ export const chapter078: ChapterDefinition = {
         { id: 'd', text: 'Seit ich hier werde wohnen, fühle ich mich wohl.' },
       ],
       correctOptionId: 'a',
-      explanation: 'German normally uses the present tense with seit for an ongoing action, unlike English\'s present perfect ("have lived").',
+      explanation:
+        'German normally uses the present tense with seit for an ongoing action, unlike English\'s present perfect ("have lived").',
     },
     {
       id: 'ch78-ex-15',
@@ -516,7 +569,8 @@ export const chapter078: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['connector-choice', 'nachdem', 'bevor', 'transfer'],
       instruction: 'Choose the sentence that correctly expresses the given meaning.',
-      prompt: 'Which sentence correctly expresses "After I had eaten, I went for a walk" (not "before")?',
+      prompt:
+        'Which sentence correctly expresses "After I had eaten, I went for a walk" (not "before")?',
       options: [
         { id: 'a', text: 'Nachdem ich gegessen hatte, ging ich spazieren.' },
         { id: 'b', text: 'Bevor ich gegessen hatte, ging ich spazieren.' },
@@ -524,7 +578,8 @@ export const chapter078: ChapterDefinition = {
         { id: 'd', text: 'Seit ich gegessen hatte, ging ich spazieren.' },
       ],
       correctOptionId: 'a',
-      explanation: 'nachdem names the earlier event (eating), which already happened before the later event (the walk); bevor would reverse the event order.',
+      explanation:
+        'nachdem names the earlier event (eating), which already happened before the later event (the walk); bevor would reverse the event order.',
     },
     {
       id: 'ch78-ex-16',
@@ -569,7 +624,8 @@ export const chapter078: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'Nachdem',
       maxLength: 15,
-      explanation: 'nachdem means "after" and introduces the earlier of the two events, marked here with the past perfect.',
+      explanation:
+        'nachdem means "after" and introduces the earlier of the two events, marked here with the past perfect.',
     },
     {
       id: 'ch78-ex-19',
@@ -584,7 +640,8 @@ export const chapter078: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'Seit',
       maxLength: 15,
-      explanation: 'seit means "since" and introduces an action that started in the past and still continues, in the present tense.',
+      explanation:
+        'seit means "since" and introduces an action that started in the past and still continues, in the present tense.',
     },
     {
       id: 'ch78-ex-20',
@@ -593,13 +650,15 @@ export const chapter078: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['nachdem', 'tense-back', 'past-perfect', 'controlled'],
-      instruction: 'Complete the sentence with the correct auxiliary and past participle to form the past perfect. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct auxiliary and past participle to form the past perfect. Capitalisation is not checked.',
       prompt: 'Nachdem ich ___ ___, ging ich spazieren. (essen)',
       acceptedAnswers: ['gegessen hatte'],
       answerMode: 'caseInsensitive',
       placeholder: 'gegessen hatte',
       maxLength: 25,
-      explanation: 'The main clause is simple past (ging), so the nachdem-clause needs the past perfect: gegessen hatte.',
+      explanation:
+        'The main clause is simple past (ging), so the nachdem-clause needs the past perfect: gegessen hatte.',
     },
     {
       id: 'ch78-ex-21',
@@ -608,13 +667,15 @@ export const chapter078: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['nachdem', 'tense-back', 'present-perfect', 'controlled'],
-      instruction: 'Complete the sentence with the correct auxiliary and past participle to form the present perfect. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct auxiliary and past participle to form the present perfect. Capitalisation is not checked.',
       prompt: 'Nachdem ich ___ ___, gehe ich spazieren. (essen)',
       acceptedAnswers: ['gegessen habe'],
       answerMode: 'caseInsensitive',
       placeholder: 'gegessen habe',
       maxLength: 25,
-      explanation: 'The main clause is present (gehe), so the nachdem-clause needs the present perfect: gegessen habe — one tense back from present.',
+      explanation:
+        'The main clause is present (gehe), so the nachdem-clause needs the present perfect: gegessen habe — one tense back from present.',
     },
     {
       id: 'ch78-ex-22',
@@ -623,13 +684,16 @@ export const chapter078: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['seit', 'present-tense', 'conjugation', 'controlled'],
-      instruction: 'Write only the correct present-tense form that belongs in the gap. Capitalisation is not checked.',
-      prompt: 'Seit ich hier ___, fühle ich mich viel wohler. (wohnen, ich-Form, Präsens)',
+      instruction:
+        'Write only the correct present-tense form that belongs in the gap. Capitalisation is not checked.',
+      prompt:
+        'Seit ich hier ___, fühle ich mich viel wohler. (wohnen, ich-Form, Präsens)',
       acceptedAnswers: ['wohne'],
       answerMode: 'caseInsensitive',
       placeholder: 'wohne',
       maxLength: 15,
-      explanation: 'An ongoing action started in the past and continuing takes seit + present tense (wohne), not the perfect.',
+      explanation:
+        'An ongoing action started in the past and continuing takes seit + present tense (wohne), not the perfect.',
     },
     {
       id: 'ch78-ex-23',
@@ -638,13 +702,15 @@ export const chapter078: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['wahrend', 'sentence-combination', 'production'],
-      instruction: 'Combine the two sentences with während. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with während. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich koche. + Meine Schwester hört Musik. (während)',
       acceptedAnswers: ['Während ich koche, hört meine Schwester Musik.'],
       answerMode: 'normalized',
       placeholder: 'Während ich koche, ...',
       maxLength: 60,
-      explanation: 'während introduces the simultaneous action; the main clause verb hört follows immediately after the comma (inversion).',
+      explanation:
+        'während introduces the simultaneous action; the main clause verb hört follows immediately after the comma (inversion).',
     },
     {
       id: 'ch78-ex-24',
@@ -653,13 +719,15 @@ export const chapter078: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['bevor', 'sentence-combination', 'production'],
-      instruction: 'Combine the two sentences with bevor. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with bevor. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Wir deckten den Tisch. + Wir aßen. (bevor)',
       acceptedAnswers: ['Wir deckten den Tisch, bevor wir aßen.'],
       answerMode: 'normalized',
       placeholder: 'Wir deckten den Tisch, bevor ...',
       maxLength: 60,
-      explanation: 'bevor\'s clause names the later event (aßen); the main clause names the earlier event (deckten den Tisch).',
+      explanation:
+        "bevor's clause names the later event (aßen); the main clause names the earlier event (deckten den Tisch).",
     },
     {
       id: 'ch78-ex-25',
@@ -668,13 +736,17 @@ export const chapter078: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['nachdem', 'tense-back', 'sentence-combination', 'production'],
-      instruction: 'Combine the two sentences with nachdem: the earlier event goes in the past perfect, the later event stays in the simple past. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with nachdem: the earlier event goes in the past perfect, the later event stays in the simple past. Capitalisation and punctuation are checked.',
       prompt: 'Er bestand die Prüfung. + Er feierte die ganze Nacht. (nachdem)',
-      acceptedAnswers: ['Nachdem er die Prüfung bestanden hatte, feierte er die ganze Nacht.'],
+      acceptedAnswers: [
+        'Nachdem er die Prüfung bestanden hatte, feierte er die ganze Nacht.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Nachdem er die Prüfung bestanden hatte, ...',
       maxLength: 80,
-      explanation: 'The earlier event (passing the exam) takes the past perfect (bestanden hatte); the later event (celebrating) stays in the simple past (feierte).',
+      explanation:
+        'The earlier event (passing the exam) takes the past perfect (bestanden hatte); the later event (celebrating) stays in the simple past (feierte).',
     },
     {
       id: 'ch78-ex-26',
@@ -683,13 +755,15 @@ export const chapter078: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['seitdem', 'sentence-combination', 'production'],
-      instruction: 'Combine the two sentences with seitdem. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with seitdem. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Sie lebt in Berlin. + Sie spricht fließend Deutsch. (seitdem)',
       acceptedAnswers: ['Seitdem sie in Berlin lebt, spricht sie fließend Deutsch.'],
       answerMode: 'normalized',
       placeholder: 'Seitdem sie in Berlin lebt, ...',
       maxLength: 70,
-      explanation: 'seitdem, like seit, pairs with the present tense for an ongoing situation that started in the past; the main clause verb spricht follows the comma.',
+      explanation:
+        'seitdem, like seit, pairs with the present tense for an ongoing situation that started in the past; the main clause verb spricht follows the comma.',
     },
     {
       id: 'ch78-ex-27',
@@ -698,13 +772,15 @@ export const chapter078: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'nachdem', 'tense-back', 'transfer'],
-      instruction: 'Correct the mistake in tense. Write the full corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake in tense. Write the full corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Nachdem ich gegessen habe, ging ich spazieren.',
       acceptedAnswers: ['Nachdem ich gegessen hatte, ging ich spazieren.'],
       answerMode: 'normalized',
       placeholder: 'Nachdem ich gegessen hatte, ...',
       maxLength: 60,
-      explanation: 'With a simple-past main clause (ging), the nachdem-clause needs the past perfect (gegessen hatte), not the present perfect (gegessen habe).',
+      explanation:
+        'With a simple-past main clause (ging), the nachdem-clause needs the past perfect (gegessen hatte), not the present perfect (gegessen habe).',
     },
     {
       id: 'ch78-ex-28',
@@ -713,13 +789,15 @@ export const chapter078: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'seit', 'present-tense', 'transfer'],
-      instruction: 'Correct the mistake in tense. Write the full corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake in tense. Write the full corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Seit ich hier gewohnt habe, fühle ich mich wohl.',
       acceptedAnswers: ['Seit ich hier wohne, fühle ich mich wohl.'],
       answerMode: 'normalized',
       placeholder: 'Seit ich hier wohne, ...',
       maxLength: 60,
-      explanation: 'German uses the present tense with seit for an action that began in the past and still continues, not the present perfect as in English.',
+      explanation:
+        'German uses the present tense with seit for an action that began in the past and still continues, not the present perfect as in English.',
     },
     {
       id: 'ch78-ex-29',
@@ -727,14 +805,22 @@ export const chapter078: ChapterDefinition = {
       order: 29,
       type: 'textInput',
       level: 'transfer',
-      grammarFocus: ['error-correction', 'wahrend', 'inversion', 'word-order', 'transfer'],
-      instruction: 'Correct the mistake in word order. Write the full corrected sentence. Capitalisation and punctuation are checked.',
+      grammarFocus: [
+        'error-correction',
+        'wahrend',
+        'inversion',
+        'word-order',
+        'transfer',
+      ],
+      instruction:
+        'Correct the mistake in word order. Write the full corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Während ich koche, meine Schwester hört Musik.',
       acceptedAnswers: ['Während ich koche, hört meine Schwester Musik.'],
       answerMode: 'normalized',
       placeholder: 'Während ich koche, ...',
       maxLength: 60,
-      explanation: 'When the subordinate clause opens the sentence, the main-clause verb (hört) must come immediately after the comma, before its subject.',
+      explanation:
+        'When the subordinate clause opens the sentence, the main-clause verb (hört) must come immediately after the comma, before its subject.',
     },
     {
       id: 'ch78-ex-30',
@@ -743,13 +829,15 @@ export const chapter078: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['event-ordering', 'nachdem', 'transfer'],
-      instruction: 'Read the sentence, then answer in German with a short phrase naming the action that happened first. Capitalisation is not checked.',
+      instruction:
+        'Read the sentence, then answer in German with a short phrase naming the action that happened first. Capitalisation is not checked.',
       prompt: 'Nachdem ich gegessen hatte, ging ich spazieren. Was geschah zuerst?',
       acceptedAnswers: ['essen', 'das Essen', 'ich habe gegessen', 'ich aß'],
       answerMode: 'normalized',
       placeholder: 'essen',
       maxLength: 30,
-      explanation: 'The past perfect (gegessen hatte) marks the earlier event: eating happened before the walk.',
+      explanation:
+        'The past perfect (gegessen hatte) marks the earlier event: eating happened before the walk.',
     },
     {
       id: 'ch78-ex-31',
@@ -758,8 +846,10 @@ export const chapter078: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['nachdem', 'tense-back', 'controlled'],
-      instruction: 'Choose the sentence that correctly applies the nachdem tense-back rule.',
-      prompt: 'Which sentence correctly expresses "After she had finished her homework, she watched TV"?',
+      instruction:
+        'Choose the sentence that correctly applies the nachdem tense-back rule.',
+      prompt:
+        'Which sentence correctly expresses "After she had finished her homework, she watched TV"?',
       options: [
         { id: 'a', text: 'Nachdem sie ihre Hausaufgaben gemacht hatte, sah sie fern.' },
         { id: 'b', text: 'Nachdem sie ihre Hausaufgaben gemacht hat, sah sie fern.' },
@@ -767,7 +857,8 @@ export const chapter078: ChapterDefinition = {
         { id: 'd', text: 'Bevor sie ihre Hausaufgaben gemacht hatte, sah sie fern.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The main clause is simple past (sah), so the nachdem-clause must step one tense back to the past perfect (gemacht hatte).',
+      explanation:
+        'The main clause is simple past (sah), so the nachdem-clause must step one tense back to the past perfect (gemacht hatte).',
     },
     {
       id: 'ch78-ex-32',
@@ -781,7 +872,8 @@ export const chapter078: ChapterDefinition = {
       templateParts: ['', ' die Kinder spielten, kochte die Mutter das Abendessen.'],
       slots: [{ id: 'ch78-ex32-slot1', correctWord: 'Während' }],
       wordBank: ['Während', 'Nachdem', 'Bevor', 'Seit'],
-      explanation: 'The two actions (the children playing, the mother cooking) happen at the same time, so während is correct.',
+      explanation:
+        'The two actions (the children playing, the mother cooking) happen at the same time, so während is correct.',
     },
     {
       id: 'ch78-ex-33',
@@ -795,7 +887,8 @@ export const chapter078: ChapterDefinition = {
       tokens: ['Nachdem', 'ich', 'geduscht', 'habe,', 'zog', 'ich', 'mich', 'an.'],
       errorTokenIndex: 3,
       correction: 'hatte,',
-      explanation: 'The main clause is simple past (zog), so the nachdem-clause needs the past perfect (geduscht hatte), not the present perfect (geduscht habe).',
+      explanation:
+        'The main clause is simple past (zog), so the nachdem-clause needs the past perfect (geduscht hatte), not the present perfect (geduscht habe).',
     },
     {
       id: 'ch78-ex-34',
@@ -812,7 +905,8 @@ export const chapter078: ChapterDefinition = {
         { id: 's3', text: 'die Kinder' },
         { id: 's4', text: 'draußen.' },
       ],
-      explanation: 'The nachdem-clause (der Regen aufgehört hatte) opens the sentence, so the main-clause verb spielten follows immediately after the comma (inversion).',
+      explanation:
+        'The nachdem-clause (der Regen aufgehört hatte) opens the sentence, so the main-clause verb spielten follows immediately after the comma (inversion).',
     },
     {
       id: 'ch78-ex-35',
@@ -821,13 +915,15 @@ export const chapter078: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['nachdem', 'tense-back', 'present-perfect', 'production'],
-      instruction: 'Complete the sentence with the correct auxiliary and past participle to form the present perfect. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct auxiliary and past participle to form the present perfect. Capitalisation is not checked.',
       prompt: 'Nachdem ich die Arbeit ___ ___, rufe ich dich an. (beenden)',
       acceptedAnswers: ['beendet habe'],
       answerMode: 'caseInsensitive',
       placeholder: 'beendet habe',
       maxLength: 25,
-      explanation: 'The main clause is present (rufe ... an), so the nachdem-clause needs the present perfect: beendet habe.',
+      explanation:
+        'The main clause is present (rufe ... an), so the nachdem-clause needs the present perfect: beendet habe.',
     },
     {
       id: 'ch78-ex-36',
@@ -836,15 +932,33 @@ export const chapter078: ChapterDefinition = {
       type: 'matching',
       level: 'transfer',
       grammarFocus: ['nachdem', 'tense-back', 'matching'],
-      instruction: 'Match each pair of events with the sentence that correctly connects them using nachdem and the right tense.',
+      instruction:
+        'Match each pair of events with the sentence that correctly connects them using nachdem and the right tense.',
       prompt: 'Match each event pair to its correctly tense-shifted nachdem-sentence.',
       pairs: [
-        { id: 'p1', left: 'aufwachen / dann frühstücken (Präteritum)', right: 'Nachdem er aufgewacht war, frühstückte er.' },
-        { id: 'p2', left: 'die Arbeit beenden / dann nach Hause gehen (Präteritum)', right: 'Nachdem wir die Arbeit beendet hatten, gingen wir nach Hause.' },
-        { id: 'p3', left: 'das Buch lesen / dann einen Film schauen (Präsens)', right: 'Nachdem sie das Buch gelesen hat, schaut sie einen Film.' },
-        { id: 'p4', left: 'das Zimmer aufräumen / dann Freunde einladen (Präsens)', right: 'Nachdem ich das Zimmer aufgeräumt habe, lade ich Freunde ein.' },
+        {
+          id: 'p1',
+          left: 'aufwachen / dann frühstücken (Präteritum)',
+          right: 'Nachdem er aufgewacht war, frühstückte er.',
+        },
+        {
+          id: 'p2',
+          left: 'die Arbeit beenden / dann nach Hause gehen (Präteritum)',
+          right: 'Nachdem wir die Arbeit beendet hatten, gingen wir nach Hause.',
+        },
+        {
+          id: 'p3',
+          left: 'das Buch lesen / dann einen Film schauen (Präsens)',
+          right: 'Nachdem sie das Buch gelesen hat, schaut sie einen Film.',
+        },
+        {
+          id: 'p4',
+          left: 'das Zimmer aufräumen / dann Freunde einladen (Präsens)',
+          right: 'Nachdem ich das Zimmer aufgeräumt habe, lade ich Freunde ein.',
+        },
       ],
-      explanation: 'Each nachdem-clause steps one tense back from its main clause: past perfect pairs with a simple-past main clause, present perfect pairs with a present-tense main clause.',
+      explanation:
+        'Each nachdem-clause steps one tense back from its main clause: past perfect pairs with a simple-past main clause, present perfect pairs with a present-tense main clause.',
     },
     {
       id: 'ch78-ex-37',
@@ -853,7 +967,8 @@ export const chapter078: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['seit', 'present-tense', 'controlled'],
-      instruction: 'Choose the grammatically correct sentence for an action that started in the past and still continues.',
+      instruction:
+        'Choose the grammatically correct sentence for an action that started in the past and still continues.',
       prompt: 'Which sentence correctly describes an ongoing action with seit?',
       options: [
         { id: 'a', text: 'Seit er in München arbeitet, ist er viel zufriedener.' },
@@ -862,7 +977,8 @@ export const chapter078: ChapterDefinition = {
         { id: 'd', text: 'Seit er in München wird arbeiten, ist er viel zufriedener.' },
       ],
       correctOptionId: 'a',
-      explanation: 'German normally uses the present tense with seit for an ongoing action: arbeitet, not the present perfect, simple past, or future.',
+      explanation:
+        'German normally uses the present tense with seit for an ongoing action: arbeitet, not the present perfect, simple past, or future.',
     },
     {
       id: 'ch78-ex-38',
@@ -876,7 +992,8 @@ export const chapter078: ChapterDefinition = {
       templateParts: ['', ' wir die Koffer gepackt hatten, fuhren wir zum Flughafen.'],
       slots: [{ id: 'ch78-ex38-slot1', correctWord: 'Nachdem' }],
       wordBank: ['Nachdem', 'Während', 'Bevor', 'Seit'],
-      explanation: 'The earlier event (packing the suitcases) is marked with the past perfect, which is exactly the pairing nachdem requires.',
+      explanation:
+        'The earlier event (packing the suitcases) is marked with the past perfect, which is exactly the pairing nachdem requires.',
     },
     {
       id: 'ch78-ex-39',
@@ -887,10 +1004,21 @@ export const chapter078: ChapterDefinition = {
       grammarFocus: ['seit', 'tense-back', 'error-correction'],
       instruction: 'Find the token with the mistake.',
       prompt: 'Someone talks about a friend who moved away. Find the mistake.',
-      tokens: ['Seit', 'sie', 'umgezogen', 'war,', 'sieht', 'sie', 'ihre', 'Freunde', 'seltener.'],
+      tokens: [
+        'Seit',
+        'sie',
+        'umgezogen',
+        'war,',
+        'sieht',
+        'sie',
+        'ihre',
+        'Freunde',
+        'seltener.',
+      ],
       errorTokenIndex: 3,
       correction: 'ist,',
-      explanation: 'For a single completed event whose result continues, seit pairs with the present perfect (ist), not the past perfect (war).',
+      explanation:
+        'For a single completed event whose result continues, seit pairs with the present perfect (ist), not the past perfect (war).',
     },
     {
       id: 'ch78-ex-40',
@@ -906,7 +1034,8 @@ export const chapter078: ChapterDefinition = {
         { id: 's2', text: 'putz' },
         { id: 's3', text: 'dir die Zähne.' },
       ],
-      explanation: 'The bevor-clause opens the sentence, so the imperative verb putz follows immediately after the comma.',
+      explanation:
+        'The bevor-clause opens the sentence, so the imperative verb putz follows immediately after the comma.',
     },
     {
       id: 'ch78-ex-41',
@@ -915,13 +1044,15 @@ export const chapter078: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['nachdem', 'tense-back', 'past-perfect', 'production'],
-      instruction: 'Complete the sentence with the correct auxiliary and past participle to form the past perfect. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct auxiliary and past participle to form the past perfect. Capitalisation is not checked.',
       prompt: 'Nachdem der Zug ___ ___, stiegen die Passagiere aus. (ankommen)',
       acceptedAnswers: ['angekommen war'],
       answerMode: 'caseInsensitive',
       placeholder: 'angekommen war',
       maxLength: 25,
-      explanation: 'The main clause is simple past (stiegen aus), so the nachdem-clause needs the past perfect; ankommen is a sein-verb, so it forms angekommen war.',
+      explanation:
+        'The main clause is simple past (stiegen aus), so the nachdem-clause needs the past perfect; ankommen is a sein-verb, so it forms angekommen war.',
     },
     {
       id: 'ch78-ex-42',
@@ -933,12 +1064,21 @@ export const chapter078: ChapterDefinition = {
       instruction: 'Match each connector with its defining feature.',
       prompt: 'Match the connectors to how they relate two events.',
       pairs: [
-        { id: 'p1', left: 'während', right: 'gleichzeitige Handlungen, gleiche Zeitform' },
+        {
+          id: 'p1',
+          left: 'während',
+          right: 'gleichzeitige Handlungen, gleiche Zeitform',
+        },
         { id: 'p2', left: 'bevor', right: 'Nebensatz nennt das spätere Ereignis' },
-        { id: 'p3', left: 'nachdem', right: 'Nebensatz nennt das frühere Ereignis, eine Zeitform zurück' },
+        {
+          id: 'p3',
+          left: 'nachdem',
+          right: 'Nebensatz nennt das frühere Ereignis, eine Zeitform zurück',
+        },
         { id: 'p4', left: 'seit', right: 'andauernde Handlung, meist im Präsens' },
       ],
-      explanation: 'während marks simultaneity, bevor marks the later event, nachdem marks the earlier event with a tense shift, and seit marks an ongoing action, usually in the present.',
+      explanation:
+        'während marks simultaneity, bevor marks the later event, nachdem marks the earlier event with a tense shift, and seit marks an ongoing action, usually in the present.',
     },
     {
       id: 'ch78-ex-43',
@@ -947,8 +1087,10 @@ export const chapter078: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['connector-choice', 'bevor', 'event-ordering', 'transfer'],
-      instruction: 'Choose the connector that fits the described relationship between the two events.',
-      prompt: 'Er rief mich an, ___ ich nach Hause kam. (He called me before I came home.)',
+      instruction:
+        'Choose the connector that fits the described relationship between the two events.',
+      prompt:
+        'Er rief mich an, ___ ich nach Hause kam. (He called me before I came home.)',
       options: [
         { id: 'a', text: 'bevor' },
         { id: 'b', text: 'nachdem' },
@@ -956,7 +1098,8 @@ export const chapter078: ChapterDefinition = {
         { id: 'd', text: 'seit' },
       ],
       correctOptionId: 'a',
-      explanation: 'bevor\'s clause names the later event (ich nach Hause kam); the call happened first, in the main clause.',
+      explanation:
+        "bevor's clause names the later event (ich nach Hause kam); the call happened first, in the main clause.",
     },
     {
       id: 'ch78-ex-44',
@@ -970,7 +1113,8 @@ export const chapter078: ChapterDefinition = {
       templateParts: ['', ' meine Eltern nach Spanien gezogen sind, rufen wir öfter an.'],
       slots: [{ id: 'ch78-ex44-slot1', correctWord: 'Seit' }],
       wordBank: ['Seit', 'Nachdem', 'Bevor', 'Während'],
-      explanation: 'The move is a completed event whose result continues, which seit pairs with the present perfect (gezogen sind) to express.',
+      explanation:
+        'The move is a completed event whose result continues, which seit pairs with the present perfect (gezogen sind) to express.',
     },
     {
       id: 'ch78-ex-45',
@@ -981,10 +1125,23 @@ export const chapter078: ChapterDefinition = {
       grammarFocus: ['connector-choice', 'bevor', 'nachdem', 'error-correction'],
       instruction: 'Find the token with the mistake.',
       prompt: 'Someone talks about an exam. Find the mistake.',
-      tokens: ['Bevor', 'sie', 'die', 'Prüfung', 'bestanden', 'hatte,', 'feierte', 'sie', 'die', 'ganze', 'Nacht.'],
+      tokens: [
+        'Bevor',
+        'sie',
+        'die',
+        'Prüfung',
+        'bestanden',
+        'hatte,',
+        'feierte',
+        'sie',
+        'die',
+        'ganze',
+        'Nacht.',
+      ],
       errorTokenIndex: 0,
       correction: 'Nachdem',
-      explanation: 'bevor\'s clause names the later event, but passing the exam happened before the celebration; nachdem is needed to mark the earlier event.',
+      explanation:
+        "bevor's clause names the later event, but passing the exam happened before the celebration; nachdem is needed to mark the earlier event.",
     },
     {
       id: 'ch78-ex-46',
@@ -1001,7 +1158,8 @@ export const chapter078: ChapterDefinition = {
         { id: 's3', text: 'ich' },
         { id: 's4', text: 'sie ab.' },
       ],
-      explanation: 'The nachdem-clause opens the sentence, so the separable main-clause verb sende ... ab follows immediately after the comma, with ab at the very end.',
+      explanation:
+        'The nachdem-clause opens the sentence, so the separable main-clause verb sende ... ab follows immediately after the comma, with ab at the very end.',
     },
     {
       id: 'ch78-ex-47',
@@ -1010,13 +1168,15 @@ export const chapter078: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['nachdem', 'tense-back', 'present-perfect', 'production'],
-      instruction: 'Complete the sentence with the correct auxiliary and past participle to form the present perfect. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct auxiliary and past participle to form the present perfect. Capitalisation is not checked.',
       prompt: 'Nachdem ich meine Mutter ___ ___, gehe ich einkaufen. (anrufen)',
       acceptedAnswers: ['angerufen habe'],
       answerMode: 'caseInsensitive',
       placeholder: 'angerufen habe',
       maxLength: 25,
-      explanation: 'The main clause is present (gehe), so the nachdem-clause needs the present perfect: angerufen habe.',
+      explanation:
+        'The main clause is present (gehe), so the nachdem-clause needs the present perfect: angerufen habe.',
     },
     {
       id: 'ch78-ex-48',
@@ -1025,15 +1185,29 @@ export const chapter078: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['connector-choice', 'matching'],
-      instruction: 'Match each situation with the connector that best expresses the relationship.',
+      instruction:
+        'Match each situation with the connector that best expresses the relationship.',
       prompt: 'Match the situations to the connectors that best link them.',
       pairs: [
-        { id: 'p1', left: 'Er kocht. / Sie deckt den Tisch. (gleichzeitig)', right: 'während' },
-        { id: 'p2', left: 'Sie packt die Koffer. / Sie fährt los. (danach)', right: 'nachdem' },
+        {
+          id: 'p1',
+          left: 'Er kocht. / Sie deckt den Tisch. (gleichzeitig)',
+          right: 'während',
+        },
+        {
+          id: 'p2',
+          left: 'Sie packt die Koffer. / Sie fährt los. (danach)',
+          right: 'nachdem',
+        },
         { id: 'p3', left: 'Er räumt auf. / Gäste kommen. (vorher)', right: 'bevor' },
-        { id: 'p4', left: 'Sie wohnt in Wien. / Das dauert bis heute an.', right: 'seit' },
+        {
+          id: 'p4',
+          left: 'Sie wohnt in Wien. / Das dauert bis heute an.',
+          right: 'seit',
+        },
       ],
-      explanation: 'während links simultaneous events, nachdem the earlier of two sequential events, bevor the later of two sequential events, and seit an ongoing action.',
+      explanation:
+        'während links simultaneous events, nachdem the earlier of two sequential events, bevor the later of two sequential events, and seit an ongoing action.',
     },
     {
       id: 'ch78-ex-49',
@@ -1051,7 +1225,8 @@ export const chapter078: ChapterDefinition = {
         { id: 'd', text: 'Ich seit hier wohne, fühle ich mich wohler.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The seit-clause has verb-final order (ich hier wohne); the main clause has fühle immediately after the comma, before its subject.',
+      explanation:
+        'The seit-clause has verb-final order (ich hier wohne); the main clause has fühle immediately after the comma, before its subject.',
     },
     {
       id: 'ch78-ex-50',
@@ -1065,7 +1240,8 @@ export const chapter078: ChapterDefinition = {
       templateParts: ['', ' du duschst, mache ich das Frühstück.'],
       slots: [{ id: 'ch78-ex50-slot1', correctWord: 'Während' }],
       wordBank: ['Während', 'Bevor', 'Nachdem', 'Seit'],
-      explanation: 'Showering and making breakfast happen at the same time, so während is correct.',
+      explanation:
+        'Showering and making breakfast happen at the same time, so während is correct.',
     },
     {
       id: 'ch78-ex-51',
@@ -1079,7 +1255,8 @@ export const chapter078: ChapterDefinition = {
       tokens: ['Seit', 'ich', 'hier', 'wohnte,', 'fühle', 'ich', 'mich', 'wohler.'],
       errorTokenIndex: 3,
       correction: 'wohne,',
-      explanation: 'seit with an ongoing action takes the present tense (wohne), not the simple past (wohnte).',
+      explanation:
+        'seit with an ongoing action takes the present tense (wohne), not the simple past (wohnte).',
     },
     {
       id: 'ch78-ex-52',
@@ -1096,7 +1273,8 @@ export const chapter078: ChapterDefinition = {
         { id: 's3', text: 'wir' },
         { id: 's4', text: 'uns seltener.' },
       ],
-      explanation: 'The seit-clause opens the sentence, so the main-clause verb sehen follows immediately after the comma.',
+      explanation:
+        'The seit-clause opens the sentence, so the main-clause verb sehen follows immediately after the comma.',
     },
     {
       id: 'ch78-ex-53',
@@ -1105,13 +1283,15 @@ export const chapter078: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'nachdem', 'tense-back', 'transfer'],
-      instruction: 'Correct the mistake in tense. Write the full corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake in tense. Write the full corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Nachdem ich die Arbeit beendet hatte, rufe ich dich an.',
       acceptedAnswers: ['Nachdem ich die Arbeit beendet habe, rufe ich dich an.'],
       answerMode: 'normalized',
       placeholder: 'Nachdem ich die Arbeit beendet habe, ...',
       maxLength: 60,
-      explanation: 'The main clause is present (rufe ... an), so the nachdem-clause needs the present perfect (beendet habe), not the past perfect (beendet hatte).',
+      explanation:
+        'The main clause is present (rufe ... an), so the nachdem-clause needs the present perfect (beendet habe), not the past perfect (beendet hatte).',
     },
     {
       id: 'ch78-ex-54',
@@ -1123,12 +1303,29 @@ export const chapter078: ChapterDefinition = {
       instruction: 'Match each situation with the tense pairing it requires.',
       prompt: 'Match the situations to the correct tense pairing.',
       pairs: [
-        { id: 'p1', left: 'Hauptsatz im Präsens (gehe)', right: 'nachdem-Satz im Perfekt (gegessen habe)' },
-        { id: 'p2', left: 'Hauptsatz im Präteritum (ging)', right: 'nachdem-Satz im Plusquamperfekt (gegessen hatte)' },
-        { id: 'p3', left: 'gleichzeitige Handlungen', right: 'während + gleiche Zeitform' },
-        { id: 'p4', left: 'andauernde Handlung seit der Vergangenheit', right: 'seit + Präsens' },
+        {
+          id: 'p1',
+          left: 'Hauptsatz im Präsens (gehe)',
+          right: 'nachdem-Satz im Perfekt (gegessen habe)',
+        },
+        {
+          id: 'p2',
+          left: 'Hauptsatz im Präteritum (ging)',
+          right: 'nachdem-Satz im Plusquamperfekt (gegessen hatte)',
+        },
+        {
+          id: 'p3',
+          left: 'gleichzeitige Handlungen',
+          right: 'während + gleiche Zeitform',
+        },
+        {
+          id: 'p4',
+          left: 'andauernde Handlung seit der Vergangenheit',
+          right: 'seit + Präsens',
+        },
       ],
-      explanation: 'The nachdem-clause is always exactly one grammatical step further back than the main clause, während keeps both clauses in the same tense, and seit for an ongoing action normally uses the present.',
+      explanation:
+        'The nachdem-clause is always exactly one grammatical step further back than the main clause, während keeps both clauses in the same tense, and seit for an ongoing action normally uses the present.',
     },
     {
       id: 'ch78-ex-55',
@@ -1138,7 +1335,8 @@ export const chapter078: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['seit', 'present-perfect', 'transfer'],
       instruction: 'Choose the grammatically correct sentence.',
-      prompt: 'Which sentence correctly uses seit for a single completed event with a continuing result?',
+      prompt:
+        'Which sentence correctly uses seit for a single completed event with a continuing result?',
       options: [
         { id: 'a', text: 'Seit er umgezogen ist, sehen wir uns seltener.' },
         { id: 'b', text: 'Seit er umzieht, sehen wir uns seltener.' },
@@ -1146,7 +1344,8 @@ export const chapter078: ChapterDefinition = {
         { id: 'd', text: 'Seit er umziehen wird, sehen wir uns seltener.' },
       ],
       correctOptionId: 'a',
-      explanation: 'For a single completed event whose result continues, seit pairs with the present perfect (umgezogen ist), not the plain present, past perfect, or future.',
+      explanation:
+        'For a single completed event whose result continues, seit pairs with the present perfect (umgezogen ist), not the plain present, past perfect, or future.',
     },
     {
       id: 'ch78-ex-56',
@@ -1160,7 +1359,8 @@ export const chapter078: ChapterDefinition = {
       templateParts: ['', ' ich geduscht habe, ziehe ich mich an.'],
       slots: [{ id: 'ch78-ex56-slot1', correctWord: 'Nachdem' }],
       wordBank: ['Nachdem', 'Bevor', 'Während', 'Seit'],
-      explanation: 'The present perfect (geduscht habe) marks the earlier event relative to the present-tense main clause, which is exactly the pairing nachdem requires.',
+      explanation:
+        'The present perfect (geduscht habe) marks the earlier event relative to the present-tense main clause, which is exactly the pairing nachdem requires.',
     },
     {
       id: 'ch78-ex-57',
@@ -1174,7 +1374,8 @@ export const chapter078: ChapterDefinition = {
       tokens: ['Während', 'ich', 'koche,', 'hörte', 'meine', 'Schwester', 'Musik.'],
       errorTokenIndex: 3,
       correction: 'hört',
-      explanation: 'während links simultaneous actions in the same tense; since the main clause is present (koche), the other clause needs present too: hört, not the simple past hörte.',
+      explanation:
+        'während links simultaneous actions in the same tense; since the main clause is present (koche), the other clause needs present too: hört, not the simple past hörte.',
     },
     {
       id: 'ch78-ex-58',
@@ -1190,7 +1391,8 @@ export const chapter078: ChapterDefinition = {
         { id: 's2', text: 'schließ' },
         { id: 's3', text: 'bitte die Fenster.' },
       ],
-      explanation: 'The bevor-clause opens the sentence, so the imperative verb schließ follows immediately after the comma.',
+      explanation:
+        'The bevor-clause opens the sentence, so the imperative verb schließ follows immediately after the comma.',
     },
     {
       id: 'ch78-ex-59',
@@ -1199,13 +1401,15 @@ export const chapter078: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['nachdem', 'tense-back', 'past-perfect', 'production'],
-      instruction: 'Complete the sentence with the correct auxiliary and past participle to form the past perfect. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct auxiliary and past participle to form the past perfect. Capitalisation is not checked.',
       prompt: 'Nachdem er ___ ___, machte er Frühstück. (aufstehen)',
       acceptedAnswers: ['aufgestanden war'],
       answerMode: 'caseInsensitive',
       placeholder: 'aufgestanden war',
       maxLength: 25,
-      explanation: 'The main clause is simple past (machte), so the nachdem-clause needs the past perfect; aufstehen is a sein-verb, so it forms aufgestanden war.',
+      explanation:
+        'The main clause is simple past (machte), so the nachdem-clause needs the past perfect; aufstehen is a sein-verb, so it forms aufgestanden war.',
     },
     {
       id: 'ch78-ex-60',
@@ -1219,7 +1423,8 @@ export const chapter078: ChapterDefinition = {
       tokens: ['Nachdem', 'wir', 'gegessen', 'hatten,', 'gehen', 'wir', 'spazieren.'],
       errorTokenIndex: 3,
       correction: 'haben,',
-      explanation: 'The main clause is present (gehen), so the nachdem-clause needs the present perfect (gegessen haben), not the past perfect (gegessen hatten).',
+      explanation:
+        'The main clause is present (gehen), so the nachdem-clause needs the present perfect (gegessen haben), not the past perfect (gegessen hatten).',
     },
     {
       id: 'ch78-ex-61',
@@ -1233,7 +1438,8 @@ export const chapter078: ChapterDefinition = {
       templateParts: ['', ' sie in Berlin wohnt, spricht sie fließend Deutsch.'],
       slots: [{ id: 'ch78-ex61-slot1', correctWord: 'Seit' }],
       wordBank: ['Seit', 'Nachdem', 'Bevor', 'Während'],
-      explanation: 'Living in Berlin is an ongoing action, which seit pairs with the present tense (wohnt) to express.',
+      explanation:
+        'Living in Berlin is an ongoing action, which seit pairs with the present tense (wohnt) to express.',
     },
     {
       id: 'ch78-ex-62',
@@ -1243,7 +1449,8 @@ export const chapter078: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['event-ordering', 'bevor', 'controlled'],
       instruction: 'Read the sentence and identify which event happened first.',
-      prompt: 'Bevor die Gäste kamen, räumte sie die Wohnung auf. Which event happened first?',
+      prompt:
+        'Bevor die Gäste kamen, räumte sie die Wohnung auf. Which event happened first?',
       options: [
         { id: 'a', text: 'Cleaning the apartment (räumte sie die Wohnung auf)' },
         { id: 'b', text: 'The guests arriving (die Gäste kamen)' },
@@ -1251,7 +1458,8 @@ export const chapter078: ChapterDefinition = {
         { id: 'd', text: 'It cannot be determined' },
       ],
       correctOptionId: 'a',
-      explanation: 'bevor\'s clause names the later event (die Gäste kamen); the main clause (räumte sie die Wohnung auf) happened first.',
+      explanation:
+        "bevor's clause names the later event (die Gäste kamen); the main clause (räumte sie die Wohnung auf) happened first.",
     },
     {
       id: 'ch78-ex-63',
@@ -1265,7 +1473,8 @@ export const chapter078: ChapterDefinition = {
       tokens: ['Nachdem', 'wir', 'aßen,', 'deckten', 'wir', 'den', 'Tisch.'],
       errorTokenIndex: 0,
       correction: 'Bevor',
-      explanation: 'The table was set before eating, so bevor is needed to mark the later event (aßen); nachdem would wrongly claim eating already happened.',
+      explanation:
+        'The table was set before eating, so bevor is needed to mark the later event (aßen); nachdem would wrongly claim eating already happened.',
     },
     {
       id: 'ch78-ex-64',
@@ -1274,13 +1483,15 @@ export const chapter078: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['seit', 'present-tense', 'conjugation', 'controlled'],
-      instruction: 'Write only the correct present-tense form that belongs in the gap. Capitalisation is not checked.',
+      instruction:
+        'Write only the correct present-tense form that belongs in the gap. Capitalisation is not checked.',
       prompt: 'Seit ich hier ___, verdiene ich mehr Geld. (arbeiten, ich-Form, Präsens)',
       acceptedAnswers: ['arbeite'],
       answerMode: 'caseInsensitive',
       placeholder: 'arbeite',
       maxLength: 15,
-      explanation: 'An ongoing action started in the past and continuing takes seit + present tense (arbeite), not the perfect.',
+      explanation:
+        'An ongoing action started in the past and continuing takes seit + present tense (arbeite), not the perfect.',
     },
     {
       id: 'ch78-ex-65',
@@ -1294,7 +1505,8 @@ export const chapter078: ChapterDefinition = {
       templateParts: ['', ' die Sonne untergegangen war, wurde es kalt.'],
       slots: [{ id: 'ch78-ex65-slot1', correctWord: 'Nachdem' }],
       wordBank: ['Nachdem', 'Bevor', 'Seit', 'Während'],
-      explanation: 'The sunset is the earlier event, marked with the past perfect (untergegangen war), which is exactly the pairing nachdem requires.',
+      explanation:
+        'The sunset is the earlier event, marked with the past perfect (untergegangen war), which is exactly the pairing nachdem requires.',
     },
     {
       id: 'ch78-ex-66',
@@ -1308,7 +1520,8 @@ export const chapter078: ChapterDefinition = {
       tokens: ['Seit', 'sie', 'Deutsch', 'lernte,', 'versteht', 'sie', 'mehr.'],
       errorTokenIndex: 3,
       correction: 'lernt,',
-      explanation: 'seit with an ongoing action takes the present tense (lernt), not the simple past (lernte).',
+      explanation:
+        'seit with an ongoing action takes the present tense (lernt), not the simple past (lernte).',
     },
     {
       id: 'ch78-ex-67',
@@ -1317,8 +1530,10 @@ export const chapter078: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['connector-choice', 'bevor', 'controlled'],
-      instruction: 'Choose the connector that fits the described relationship between the two events.',
-      prompt: '___ das Konzert begann, suchten wir unsere Plätze. (Before the concert began, we looked for our seats.)',
+      instruction:
+        'Choose the connector that fits the described relationship between the two events.',
+      prompt:
+        '___ das Konzert begann, suchten wir unsere Plätze. (Before the concert began, we looked for our seats.)',
       options: [
         { id: 'a', text: 'Bevor' },
         { id: 'b', text: 'Nachdem' },
@@ -1326,7 +1541,8 @@ export const chapter078: ChapterDefinition = {
         { id: 'd', text: 'Seit' },
       ],
       correctOptionId: 'a',
-      explanation: 'bevor introduces the later event (das Konzert begann); finding the seats happened first, in the main clause.',
+      explanation:
+        'bevor introduces the later event (das Konzert begann); finding the seats happened first, in the main clause.',
     },
     {
       id: 'ch78-ex-68',
@@ -1335,13 +1551,15 @@ export const chapter078: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['nachdem', 'tense-back', 'sentence-combination', 'production'],
-      instruction: 'Combine the two sentences with nachdem: the main clause is in the present tense, so the nachdem-clause needs the present perfect. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with nachdem: the main clause is in the present tense, so the nachdem-clause needs the present perfect. Capitalisation and punctuation are checked.',
       prompt: 'Ich räume mein Zimmer auf. + Ich gehe raus. (nachdem)',
       acceptedAnswers: ['Nachdem ich mein Zimmer aufgeräumt habe, gehe ich raus.'],
       answerMode: 'normalized',
       placeholder: 'Nachdem ich mein Zimmer aufgeräumt habe, ...',
       maxLength: 60,
-      explanation: 'The main clause is present (gehe), so the earlier event steps back to the present perfect: aufgeräumt habe.',
+      explanation:
+        'The main clause is present (gehe), so the earlier event steps back to the present perfect: aufgeräumt habe.',
     },
     {
       id: 'ch78-ex-69',
@@ -1355,7 +1573,8 @@ export const chapter078: ChapterDefinition = {
       templateParts: ['', ' wir losfahren, tanken wir das Auto.'],
       slots: [{ id: 'ch78-ex69-slot1', correctWord: 'Bevor' }],
       wordBank: ['Bevor', 'Nachdem', 'Während', 'Seit'],
-      explanation: 'The bevor-clause names the later event (losfahren); fuelling the car happens first, in the main clause.',
+      explanation:
+        'The bevor-clause names the later event (losfahren); fuelling the car happens first, in the main clause.',
     },
     {
       id: 'ch78-ex-70',
@@ -1369,7 +1588,8 @@ export const chapter078: ChapterDefinition = {
       tokens: ['Während', 'wir', 'aßen,', 'hört', 'er', 'Musik.'],
       errorTokenIndex: 3,
       correction: 'hörte',
-      explanation: 'während links simultaneous actions in the same tense; since the main clause is simple past (aßen), the other clause needs simple past too: hörte, not the present hört.',
+      explanation:
+        'während links simultaneous actions in the same tense; since the main clause is simple past (aßen), the other clause needs simple past too: hörte, not the present hört.',
     },
     {
       id: 'ch78-ex-71',
@@ -1378,8 +1598,10 @@ export const chapter078: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['nachdem', 'tense-back', 'transfer'],
-      instruction: 'Choose the sentence that correctly applies the nachdem tense-back rule.',
-      prompt: 'Which sentence correctly pairs the tenses for "After the movie had ended, we went home"?',
+      instruction:
+        'Choose the sentence that correctly applies the nachdem tense-back rule.',
+      prompt:
+        'Which sentence correctly pairs the tenses for "After the movie had ended, we went home"?',
       options: [
         { id: 'a', text: 'Nachdem der Film geendet hatte, gingen wir nach Hause.' },
         { id: 'b', text: 'Nachdem der Film geendet hat, gingen wir nach Hause.' },
@@ -1387,7 +1609,8 @@ export const chapter078: ChapterDefinition = {
         { id: 'd', text: 'Bevor der Film geendet hatte, gingen wir nach Hause.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The main clause is simple past (gingen), so the nachdem-clause must step one tense back to the past perfect (geendet hatte).',
+      explanation:
+        'The main clause is simple past (gingen), so the nachdem-clause must step one tense back to the past perfect (geendet hatte).',
     },
     {
       id: 'ch78-ex-72',
@@ -1396,13 +1619,15 @@ export const chapter078: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['nachdem', 'tense-back', 'past-perfect', 'production'],
-      instruction: 'Complete the sentence with the correct auxiliary and past participle to form the past perfect. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct auxiliary and past participle to form the past perfect. Capitalisation is not checked.',
       prompt: 'Nachdem sie von der Reise ___ ___, erzählte sie uns alles. (zurückkommen)',
       acceptedAnswers: ['zurückgekommen war'],
       answerMode: 'caseInsensitive',
       placeholder: 'zurückgekommen war',
       maxLength: 25,
-      explanation: 'The main clause is simple past (erzählte), so the nachdem-clause needs the past perfect; zurückkommen is a sein-verb, so it forms zurückgekommen war.',
+      explanation:
+        'The main clause is simple past (erzählte), so the nachdem-clause needs the past perfect; zurückkommen is a sein-verb, so it forms zurückgekommen war.',
     },
     {
       id: 'ch78-ex-73',
@@ -1416,7 +1641,8 @@ export const chapter078: ChapterDefinition = {
       templateParts: ['', ' er das Rauchen aufgegeben hat, fühlt er sich gesünder.'],
       slots: [{ id: 'ch78-ex73-slot1', correctWord: 'Seit' }],
       wordBank: ['Seit', 'Nachdem', 'Bevor', 'Während'],
-      explanation: 'Giving up smoking is a single completed event with a continuing result, which seit pairs with the present perfect (aufgegeben hat) to express.',
+      explanation:
+        'Giving up smoking is a single completed event with a continuing result, which seit pairs with the present perfect (aufgegeben hat) to express.',
     },
     {
       id: 'ch78-ex-74',
@@ -1427,10 +1653,21 @@ export const chapter078: ChapterDefinition = {
       grammarFocus: ['nachdem', 'tense-back', 'auxiliary-choice', 'error-correction'],
       instruction: 'Find the token with the mistake.',
       prompt: 'Someone talks about a train arriving. Find the mistake.',
-      tokens: ['Nachdem', 'der', 'Zug', 'angekommen', 'hatte,', 'stiegen', 'die', 'Passagiere', 'aus.'],
+      tokens: [
+        'Nachdem',
+        'der',
+        'Zug',
+        'angekommen',
+        'hatte,',
+        'stiegen',
+        'die',
+        'Passagiere',
+        'aus.',
+      ],
       errorTokenIndex: 4,
       correction: 'war,',
-      explanation: 'ankommen is an intransitive verb of motion and takes sein in the perfect tenses, so the past perfect is angekommen war, not angekommen hatte.',
+      explanation:
+        'ankommen is an intransitive verb of motion and takes sein in the perfect tenses, so the past perfect is angekommen war, not angekommen hatte.',
     },
   ],
 };

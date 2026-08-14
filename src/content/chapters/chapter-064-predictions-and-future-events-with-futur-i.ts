@@ -26,7 +26,7 @@ export const chapter064: ChapterDefinition = {
   explanation: {
     introduction: [
       'German has a dedicated grammatical future tense, Futur I, built with the present tense of werden plus the plain infinitive of the main verb at the end of the clause — exactly the same bracket pattern you already know from modal verbs (chapter 5) and the würde-construction (chapter 60). Ich werde kommen (I will come). Du wirst arbeiten (You will work).',
-      'But Futur I is not the everyday way German talks about the future — the present tense, combined with a time expression like morgen, nächste Woche, or in zwei Jahren, does that job most of the time: Ich fliege morgen nach Berlin (I\'m flying to Berlin tomorrow). This is not casual or sloppy German; it is the standard, unmarked way to describe planned, arranged, or scheduled future events.',
+      "But Futur I is not the everyday way German talks about the future — the present tense, combined with a time expression like morgen, nächste Woche, or in zwei Jahren, does that job most of the time: Ich fliege morgen nach Berlin (I'm flying to Berlin tomorrow). This is not casual or sloppy German; it is the standard, unmarked way to describe planned, arranged, or scheduled future events.",
       'Futur I earns its keep elsewhere: it is the normal tool for making predictions and assumptions, whether about the future (Es wird morgen regnen — It will rain tomorrow) or, just as commonly, about the present (Er wird jetzt wohl zu Hause sein — He is probably at home now). Adverbs like wohl, wahrscheinlich, sicher, bestimmt, and vermutlich frequently ride along with Futur I to mark exactly this note of a guess rather than a fact.',
       'Futur I also shows up for firm intentions, promises, and resolutions (Ich werde das nie vergessen — I will never forget that), and in formal or emphatic announcements (Der Minister wird morgen eine Erklärung abgeben). Learning to choose between plain present and Futur I depending on what you actually mean — a scheduled fact versus a guess, a plan versus a promise — matters more here than the mechanics of the form itself.',
     ],
@@ -53,9 +53,9 @@ export const chapter064: ChapterDefinition = {
         id: 'ch64-rule-03',
         heading: 'When Futur I is used instead: predictions and assumptions',
         paragraphs: [
-          'Futur I\'s main everyday job in modern German is less about marking future time and more about signaling a prediction, guess, or assumption — something the speaker believes but is not stating as a plain fact. Es wird morgen wahrscheinlich regnen (It will probably rain tomorrow) is a forecast, not a certainty.',
+          "Futur I's main everyday job in modern German is less about marking future time and more about signaling a prediction, guess, or assumption — something the speaker believes but is not stating as a plain fact. Es wird morgen wahrscheinlich regnen (It will probably rain tomorrow) is a forecast, not a certainty.",
           'Crucially, this assumption can be about the present just as easily as about the future. Er wird jetzt wohl zu Hause sein does not mean "he will be at home" at some future point — it means "he is probably at home right now." The werden + infinitive form here expresses the speaker\'s best guess about a present situation, not a future event at all.',
-          'Adverbs of probability — wohl, wahrscheinlich, sicher, bestimmt, vermutlich — very commonly accompany Futur I in exactly this use, softening the sentence from a flat statement into an educated guess: Sie wird sicher pünktlich kommen (She\'ll surely arrive on time).',
+          "Adverbs of probability — wohl, wahrscheinlich, sicher, bestimmt, vermutlich — very commonly accompany Futur I in exactly this use, softening the sentence from a flat statement into an educated guess: Sie wird sicher pünktlich kommen (She'll surely arrive on time).",
         ],
       },
       {
@@ -106,11 +106,31 @@ export const chapter064: ChapterDefinition = {
         title: 'Present tense vs. Futur I for future time',
         columns: ['German', 'Function', 'English'],
         rows: [
-          ['Ich fliege morgen nach Berlin.', 'scheduled/arranged plan (present + time word)', "I'm flying to Berlin tomorrow."],
-          ['Der Film beginnt um 20 Uhr.', 'fixed timetable event', 'The film starts at 8 p.m.'],
-          ['Es wird morgen regnen.', 'prediction/forecast, not a stated fact', 'It will rain tomorrow.'],
-          ['Er wird jetzt wohl zu Hause sein.', 'assumption about the present', "He's probably at home now."],
-          ['Ich werde nächstes Jahr mehr Sport machen.', 'firm intention/resolution', "I'm going to do more sport next year."],
+          [
+            'Ich fliege morgen nach Berlin.',
+            'scheduled/arranged plan (present + time word)',
+            "I'm flying to Berlin tomorrow.",
+          ],
+          [
+            'Der Film beginnt um 20 Uhr.',
+            'fixed timetable event',
+            'The film starts at 8 p.m.',
+          ],
+          [
+            'Es wird morgen regnen.',
+            'prediction/forecast, not a stated fact',
+            'It will rain tomorrow.',
+          ],
+          [
+            'Er wird jetzt wohl zu Hause sein.',
+            'assumption about the present',
+            "He's probably at home now.",
+          ],
+          [
+            'Ich werde nächstes Jahr mehr Sport machen.',
+            'firm intention/resolution',
+            "I'm going to do more sport next year.",
+          ],
         ],
       },
       {
@@ -130,10 +150,26 @@ export const chapter064: ChapterDefinition = {
         title: 'Word order: main clause vs. subordinate clause',
         columns: ['Clause type', 'Example', 'Note'],
         rows: [
-          ['Main clause', 'Es wird morgen regnen.', 'werden in position 2, infinitive at the very end'],
-          ['Main clause with adverb', 'Er wird wohl noch schlafen.', 'wohl sits right before the infinitive, inside the bracket'],
-          ['Subordinate clause (dass)', 'Ich glaube, dass es morgen regnen wird.', 'werden itself moves to the very end, after the infinitive'],
-          ['Subordinate clause (weil)', 'Wir bleiben zu Hause, weil es wohl regnen wird.', 'the same verb-final rule applies'],
+          [
+            'Main clause',
+            'Es wird morgen regnen.',
+            'werden in position 2, infinitive at the very end',
+          ],
+          [
+            'Main clause with adverb',
+            'Er wird wohl noch schlafen.',
+            'wohl sits right before the infinitive, inside the bracket',
+          ],
+          [
+            'Subordinate clause (dass)',
+            'Ich glaube, dass es morgen regnen wird.',
+            'werden itself moves to the very end, after the infinitive',
+          ],
+          [
+            'Subordinate clause (weil)',
+            'Wir bleiben zu Hause, weil es wohl regnen wird.',
+            'the same verb-final rule applies',
+          ],
         ],
       },
     ],
@@ -142,53 +178,61 @@ export const chapter064: ChapterDefinition = {
         german: 'Es wird morgen regnen.',
         english: 'It will rain tomorrow.',
         highlight: ['wird', 'regnen'],
-        explanation: 'A straightforward weather prediction: werden + infinitive at the end of the clause.',
+        explanation:
+          'A straightforward weather prediction: werden + infinitive at the end of the clause.',
       },
       {
         german: 'Ich werde dir helfen.',
         english: 'I will help you.',
         highlight: ['werde', 'helfen'],
-        explanation: 'A firm intention or promise, expressed with Futur I rather than the plain present.',
+        explanation:
+          'A firm intention or promise, expressed with Futur I rather than the plain present.',
       },
       {
         german: 'Wir werden nächstes Jahr heiraten.',
         english: 'We are going to get married next year.',
         highlight: ['werden', 'heiraten'],
-        explanation: 'Futur I stating a resolved, announced intention, not just a loose plan.',
+        explanation:
+          'Futur I stating a resolved, announced intention, not just a loose plan.',
       },
       {
         german: 'Er wird jetzt wohl zu Hause sein.',
         english: 'He is probably at home now.',
         highlight: ['wird', 'wohl', 'sein'],
-        explanation: 'An assumption about the present, not the future — wohl marks it as a guess, not a fact.',
+        explanation:
+          'An assumption about the present, not the future — wohl marks it as a guess, not a fact.',
       },
       {
         german: 'Sie wird das schon schaffen.',
         english: "She'll manage it, don't worry.",
         highlight: ['wird', 'schaffen'],
-        explanation: 'A confident prediction about someone else\'s near future, softened by schon rather than a probability adverb.',
+        explanation:
+          "A confident prediction about someone else's near future, softened by schon rather than a probability adverb.",
       },
       {
         german: 'Ich fliege morgen nach Berlin.',
         english: "I'm flying to Berlin tomorrow.",
         highlight: ['fliege', 'morgen'],
-        explanation: 'Present tense plus a time expression: the standard way to describe an already-arranged future plan.',
+        explanation:
+          'Present tense plus a time expression: the standard way to describe an already-arranged future plan.',
       },
       {
         german: 'Der Zug kommt um 8 Uhr an.',
-        english: 'The train arrives at 8 o\'clock.',
+        english: "The train arrives at 8 o'clock.",
         highlight: ['kommt', 'um 8 Uhr'],
-        explanation: 'A fixed timetable event, stated with the present tense — Futur I would sound oddly uncertain here.',
+        explanation:
+          'A fixed timetable event, stated with the present tense — Futur I would sound oddly uncertain here.',
       },
       {
         german: 'In zehn Jahren wird die Welt anders aussehen.',
         english: 'In ten years, the world will look different.',
         highlight: ['wird', 'aussehen'],
-        explanation: 'A long-range prediction; the separable verb aussehen stays joined together as the infinitive at the end.',
+        explanation:
+          'A long-range prediction; the separable verb aussehen stays joined together as the infinitive at the end.',
       },
       {
         german: 'Du wirst das bestimmt schaffen!',
-        english: "You will definitely manage that!",
+        english: 'You will definitely manage that!',
         highlight: ['wirst', 'bestimmt'],
         explanation: 'A reassuring prediction, strengthened by the adverb bestimmt.',
       },
@@ -196,57 +240,66 @@ export const chapter064: ChapterDefinition = {
         german: 'Ich werde das nie vergessen.',
         english: 'I will never forget that.',
         highlight: ['werde', 'vergessen'],
-        explanation: 'A strong, emphatic promise — Futur I adds weight that the plain present (Ich vergesse das nie) would not.',
+        explanation:
+          'A strong, emphatic promise — Futur I adds weight that the plain present (Ich vergesse das nie) would not.',
       },
       {
         german: 'Wo ist Peter? Er wird wohl noch schlafen.',
         english: "Where's Peter? He's probably still asleep.",
         highlight: ['wird', 'wohl'],
-        explanation: 'An assumption about a present situation, prompted by a question — one of the most common everyday uses of Futur I.',
+        explanation:
+          'An assumption about a present situation, prompted by a question — one of the most common everyday uses of Futur I.',
       },
       {
         german: 'Das werden wir schon sehen.',
         english: "We'll see about that.",
         highlight: ['werden', 'sehen'],
-        explanation: 'An idiomatic, slightly skeptical future expression built on the same werden + infinitive pattern.',
+        explanation:
+          'An idiomatic, slightly skeptical future expression built on the same werden + infinitive pattern.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Du werdest kommen.',
         correct: 'Du wirst kommen.',
-        explanation: 'The du-form of the Futur I auxiliary is wirst, with the irregular e → i stem change; werdest is not used for this construction.',
+        explanation:
+          'The du-form of the Futur I auxiliary is wirst, with the irregular e → i stem change; werdest is not used for this construction.',
       },
       {
         incorrect: 'Er werdet helfen.',
         correct: 'Er wird helfen.',
-        explanation: 'werdet is the ihr-form, not er/sie/es; the correct er/sie/es-form is wird.',
+        explanation:
+          'werdet is the ihr-form, not er/sie/es; the correct er/sie/es-form is wird.',
       },
       {
         incorrect: 'Ich werde kaufen ein neues Auto.',
         correct: 'Ich werde ein neues Auto kaufen.',
-        explanation: 'The infinitive must be sent to the very end of the clause, not placed right after werden.',
+        explanation:
+          'The infinitive must be sent to the very end of the clause, not placed right after werden.',
       },
       {
         incorrect: 'Ich glaube, dass es morgen wird regnen.',
         correct: 'Ich glaube, dass es morgen regnen wird.',
-        explanation: 'In a subordinate clause introduced by dass, the conjugated werden moves to the very end, after the infinitive.',
+        explanation:
+          'In a subordinate clause introduced by dass, the conjugated werden moves to the very end, after the infinitive.',
       },
       {
         incorrect: 'Der Zug wird um 8 Uhr ankommen.',
         correct: 'Der Zug kommt um 8 Uhr an.',
-        explanation: 'Fixed, scheduled timetable events are normally expressed with the present tense in German; using Futur I here sounds unnaturally uncertain or marked.',
+        explanation:
+          'Fixed, scheduled timetable events are normally expressed with the present tense in German; using Futur I here sounds unnaturally uncertain or marked.',
       },
       {
         incorrect: 'Er wird Arzt sein. (intending: "he is becoming a doctor")',
         correct: 'Er wird Arzt.',
-        explanation: 'To describe a process of becoming happening now, plain present-tense werden is used as a full verb; adding sein (wird … sein) instead predicts a future state ("he will be a doctor"), a different meaning from "becoming."',
+        explanation:
+          'To describe a process of becoming happening now, plain present-tense werden is used as a full verb; adding sein (wird … sein) instead predicts a future state ("he will be a doctor"), a different meaning from "becoming."',
       },
     ],
     remember: [
       'Futur I = the present tense of werden (ich werde, du wirst, er/sie/es wird, wir werden, ihr werdet, sie/Sie werden) + the plain infinitive at the end of the clause — the same bracket as modal verbs and the würde-construction.',
       'German very often expresses future time with the plain present tense plus a time expression (morgen, nächste Woche, …) instead of Futur I, especially for planned, scheduled, or arranged events.',
-      'Futur I\'s main everyday job is not marking future time but expressing predictions and assumptions — about the future (Es wird regnen) or, just as often, about the present (Er wird wohl zu Hause sein).',
+      "Futur I's main everyday job is not marking future time but expressing predictions and assumptions — about the future (Es wird regnen) or, just as often, about the present (Er wird wohl zu Hause sein).",
       'Adverbs like wohl, wahrscheinlich, sicher, bestimmt, and vermutlich frequently accompany Futur I to soften it into a guess or assumption.',
       'Futur I is also used for firm intentions, promises, resolutions, and formal or emphatic announcements.',
       'In subordinate clauses (dass, weil, wenn, …), werden moves to the very end of the clause, after the infinitive: …, dass es regnen wird.',
@@ -266,7 +319,8 @@ export const chapter064: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['futur-i', 'werden-konjugation'],
-      instruction: 'Choose the correct present-tense form of werden for the Futur I auxiliary.',
+      instruction:
+        'Choose the correct present-tense form of werden for the Futur I auxiliary.',
       prompt: 'Ich ___ dir helfen.',
       options: [
         { id: 'a', text: 'werde' },
@@ -284,7 +338,8 @@ export const chapter064: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['futur-i', 'werden-konjugation'],
-      instruction: 'Choose the correct present-tense form of werden for the Futur I auxiliary.',
+      instruction:
+        'Choose the correct present-tense form of werden for the Futur I auxiliary.',
       prompt: 'Du ___ das bestimmt schaffen.',
       options: [
         { id: 'a', text: 'wirst' },
@@ -293,7 +348,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'wird' },
       ],
       correctOptionId: 'a',
-      explanation: 'The du-form is wirst, with the irregular e → i stem change; werdest is not a Futur I form.',
+      explanation:
+        'The du-form is wirst, with the irregular e → i stem change; werdest is not a Futur I form.',
     },
     {
       id: 'ch64-ex-03',
@@ -302,7 +358,8 @@ export const chapter064: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['futur-i', 'werden-konjugation'],
-      instruction: 'Choose the correct present-tense form of werden for the Futur I auxiliary.',
+      instruction:
+        'Choose the correct present-tense form of werden for the Futur I auxiliary.',
       prompt: 'Er ___ jetzt wohl zu Hause sein.',
       options: [
         { id: 'a', text: 'wird' },
@@ -311,7 +368,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'werde' },
       ],
       correctOptionId: 'a',
-      explanation: 'The er/sie/es-form is wird; werdet belongs to ihr, wirst to du, werde to ich.',
+      explanation:
+        'The er/sie/es-form is wird; werdet belongs to ihr, wirst to du, werde to ich.',
     },
     {
       id: 'ch64-ex-04',
@@ -320,7 +378,8 @@ export const chapter064: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['futur-i', 'werden-konjugation'],
-      instruction: 'Choose the correct present-tense form of werden for the Futur I auxiliary.',
+      instruction:
+        'Choose the correct present-tense form of werden for the Futur I auxiliary.',
       prompt: 'Wir ___ nächstes Jahr nach Italien reisen.',
       options: [
         { id: 'a', text: 'werden' },
@@ -329,7 +388,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'wird' },
       ],
       correctOptionId: 'a',
-      explanation: 'The wir-form of werden is werden, identical in shape to the infinitive.',
+      explanation:
+        'The wir-form of werden is werden, identical in shape to the infinitive.',
     },
     {
       id: 'ch64-ex-05',
@@ -338,7 +398,8 @@ export const chapter064: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['futur-i', 'werden-konjugation'],
-      instruction: 'Choose the correct present-tense form of werden for the Futur I auxiliary.',
+      instruction:
+        'Choose the correct present-tense form of werden for the Futur I auxiliary.',
       prompt: 'Ihr ___ das schon schaffen.',
       options: [
         { id: 'a', text: 'werdet' },
@@ -365,7 +426,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'Ich aufstehen werde morgen früh.' },
       ],
       correctOptionId: 'a',
-      explanation: 'werden stays in position 2, and the infinitive aufstehen is sent to the very end of the clause.',
+      explanation:
+        'werden stays in position 2, and the infinitive aufstehen is sent to the very end of the clause.',
     },
     {
       id: 'ch64-ex-07',
@@ -383,7 +445,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'Ich glaube, dass es morgen wird regnen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'In a dass-clause, werden itself moves to the very end, after the infinitive: regnen wird.',
+      explanation:
+        'In a dass-clause, werden itself moves to the very end, after the infinitive: regnen wird.',
     },
     {
       id: 'ch64-ex-08',
@@ -401,7 +464,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'Wohl er wird noch schlafen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The adverb wohl sits inside the bracket, directly before the infinitive: wohl noch schlafen.',
+      explanation:
+        'The adverb wohl sits inside the bracket, directly before the infinitive: wohl noch schlafen.',
     },
     {
       id: 'ch64-ex-09',
@@ -419,7 +483,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'Es wird morgen wahrscheinlich regnet.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Es requires the singular wird, not werden; the main verb must appear as the plain infinitive regnen, not the participle geregnet or a second conjugated form.',
+      explanation:
+        'Es requires the singular wird, not werden; the main verb must appear as the plain infinitive regnen, not the participle geregnet or a second conjugated form.',
     },
     {
       id: 'ch64-ex-10',
@@ -428,11 +493,20 @@ export const chapter064: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['futur-i', 'assumptions', 'dialogue'],
-      instruction: 'Read the exchange, then choose the option that best completes the final line.',
+      instruction:
+        'Read the exchange, then choose the option that best completes the final line.',
       prompt: 'Complete: "Er ___ wohl noch im Bett sein."',
       dialogue: [
-        { speaker: 'Anna', german: 'Wo ist Tom? Er antwortet nicht auf mein Handy.', english: "Where's Tom? He's not answering his phone." },
-        { speaker: 'Lea', german: 'Keine Ahnung, er ___ wohl noch im Bett sein.', english: "No idea, he's probably still in bed." },
+        {
+          speaker: 'Anna',
+          german: 'Wo ist Tom? Er antwortet nicht auf mein Handy.',
+          english: "Where's Tom? He's not answering his phone.",
+        },
+        {
+          speaker: 'Lea',
+          german: 'Keine Ahnung, er ___ wohl noch im Bett sein.',
+          english: "No idea, he's probably still in bed.",
+        },
       ],
       options: [
         { id: 'a', text: 'wird' },
@@ -441,7 +515,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'war' },
       ],
       correctOptionId: 'a',
-      explanation: 'wird ... sein + wohl expresses a guess about the present ("he\'s probably..."); ist would be a flat statement of fact, wäre is the unrelated Konjunktiv II ("would be"), and war is simple past.',
+      explanation:
+        'wird ... sein + wohl expresses a guess about the present ("he\'s probably..."); ist would be a flat statement of fact, wäre is the unrelated Konjunktiv II ("would be"), and war is simple past.',
     },
     {
       id: 'ch64-ex-11',
@@ -459,7 +534,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'a narration of a past event' },
       ],
       correctOptionId: 'a',
-      explanation: 'wird ... sein combined with wohl expresses the speaker\'s guess about her current state, not a plan, order, or past narrative.',
+      explanation:
+        "wird ... sein combined with wohl expresses the speaker's guess about her current state, not a plan, order, or past narrative.",
     },
     {
       id: 'ch64-ex-12',
@@ -469,7 +545,8 @@ export const chapter064: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['futur-i', 'present-for-future', 'natural-choice'],
       instruction: 'Choose the most natural way to express the meaning.',
-      prompt: 'Choose the most natural way to state an already-booked plan: "I\'m flying to Berlin tomorrow."',
+      prompt:
+        'Choose the most natural way to state an already-booked plan: "I\'m flying to Berlin tomorrow."',
       options: [
         { id: 'a', text: 'Ich fliege morgen nach Berlin.' },
         { id: 'b', text: 'Ich werde morgen nach Berlin fliegen.' },
@@ -477,7 +554,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'Ich fliege morgen nach Berlin geworden.' },
       ],
       correctOptionId: 'a',
-      explanation: 'For a concrete, already-arranged plan, German normally uses the present tense plus a time expression; c uses the wrong tense (present perfect) and d is ungrammatical.',
+      explanation:
+        'For a concrete, already-arranged plan, German normally uses the present tense plus a time expression; c uses the wrong tense (present perfect) and d is ungrammatical.',
     },
     {
       id: 'ch64-ex-13',
@@ -487,7 +565,8 @@ export const chapter064: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['futur-i', 'predictions', 'natural-choice'],
       instruction: 'Choose the most natural way to express the meaning.',
-      prompt: 'Choose the most natural way to make an uncertain forecast: "It will probably rain tomorrow."',
+      prompt:
+        'Choose the most natural way to make an uncertain forecast: "It will probably rain tomorrow."',
       options: [
         { id: 'a', text: 'Es regnete wahrscheinlich morgen.' },
         { id: 'b', text: 'Es wird morgen wahrscheinlich regnen.' },
@@ -495,7 +574,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'Es wurde morgen wahrscheinlich regnen.' },
       ],
       correctOptionId: 'b',
-      explanation: 'Futur I with wahrscheinlich is the natural way to hedge a forecast; a and c and d combine a past-tense verb form with a future time word, which is contradictory.',
+      explanation:
+        'Futur I with wahrscheinlich is the natural way to hedge a forecast; a and c and d combine a past-tense verb form with a future time word, which is contradictory.',
     },
     {
       id: 'ch64-ex-14',
@@ -513,7 +593,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'Ich vergäße das nie.' },
       ],
       correctOptionId: 'a',
-      explanation: 'werde ... vergessen expresses a firm, emphatic promise; b changes the meaning entirely, c is present perfect (a claim about the past), and d is the unrelated Konjunktiv II ("I would never forget").',
+      explanation:
+        'werde ... vergessen expresses a firm, emphatic promise; b changes the meaning entirely, c is present perfect (a claim about the past), and d is the unrelated Konjunktiv II ("I would never forget").',
     },
     {
       id: 'ch64-ex-15',
@@ -531,7 +612,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'Die Bundeskanzlerin hielt gestern eine Rede.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Only a uses werden + infinitive (wird ... halten); b is plain present, c is present perfect, d is simple past.',
+      explanation:
+        'Only a uses werden + infinitive (wird ... halten); b is plain present, c is present perfect, d is simple past.',
     },
     {
       id: 'ch64-ex-16',
@@ -549,7 +631,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'He would be a doctor.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Here werden is the full verb "to become" in the present tense, describing a process happening now, not the Futur I auxiliary.',
+      explanation:
+        'Here werden is the full verb "to become" in the present tense, describing a process happening now, not the Futur I auxiliary.',
     },
     {
       id: 'ch64-ex-17',
@@ -567,7 +650,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'He would be a doctor.' },
       ],
       correctOptionId: 'a',
-      explanation: 'wird ... sein predicts a future state ("will be"), distinct from the present-tense wird Arzt ("is becoming").',
+      explanation:
+        'wird ... sein predicts a future state ("will be"), distinct from the present-tense wird Arzt ("is becoming").',
     },
     {
       id: 'ch64-ex-18',
@@ -576,7 +660,8 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['futur-i', 'werden-konjugation'],
-      instruction: 'Write the present-tense form of werden used in Futur I for ich. Capitalisation is not checked.',
+      instruction:
+        'Write the present-tense form of werden used in Futur I for ich. Capitalisation is not checked.',
       prompt: 'ich → werden (Futur I auxiliary)',
       acceptedAnswers: ['werde'],
       answerMode: 'caseInsensitive',
@@ -591,13 +676,15 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['futur-i', 'werden-konjugation'],
-      instruction: 'Write the present-tense form of werden used in Futur I for du. Capitalisation is not checked.',
+      instruction:
+        'Write the present-tense form of werden used in Futur I for du. Capitalisation is not checked.',
       prompt: 'du → werden (Futur I auxiliary)',
       acceptedAnswers: ['wirst'],
       answerMode: 'caseInsensitive',
       placeholder: 'wirst',
       maxLength: 15,
-      explanation: 'The du-form of the Futur I auxiliary werden is wirst, with the irregular e → i stem change.',
+      explanation:
+        'The du-form of the Futur I auxiliary werden is wirst, with the irregular e → i stem change.',
     },
     {
       id: 'ch64-ex-20',
@@ -606,7 +693,8 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['futur-i', 'werden-konjugation'],
-      instruction: 'Write the present-tense form of werden used in Futur I for er/sie/es. Capitalisation is not checked.',
+      instruction:
+        'Write the present-tense form of werden used in Futur I for er/sie/es. Capitalisation is not checked.',
       prompt: 'er/sie/es → werden (Futur I auxiliary)',
       acceptedAnswers: ['wird'],
       answerMode: 'caseInsensitive',
@@ -621,7 +709,8 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['futur-i', 'werden-konjugation'],
-      instruction: 'Write the present-tense form of werden used in Futur I for wir. Capitalisation is not checked.',
+      instruction:
+        'Write the present-tense form of werden used in Futur I for wir. Capitalisation is not checked.',
       prompt: 'wir → werden (Futur I auxiliary)',
       acceptedAnswers: ['werden'],
       answerMode: 'caseInsensitive',
@@ -636,7 +725,8 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['futur-i', 'werden-konjugation'],
-      instruction: 'Write the present-tense form of werden used in Futur I for ihr. Capitalisation is not checked.',
+      instruction:
+        'Write the present-tense form of werden used in Futur I for ihr. Capitalisation is not checked.',
       prompt: 'ihr → werden (Futur I auxiliary)',
       acceptedAnswers: ['werdet'],
       answerMode: 'caseInsensitive',
@@ -651,13 +741,15 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['futur-i', 'sentence-building', 'kommen'],
-      instruction: 'Write the full Futur I form for ich + kommen. Capitalisation is not checked.',
+      instruction:
+        'Write the full Futur I form for ich + kommen. Capitalisation is not checked.',
       prompt: 'ich → kommen (Futur I)',
       acceptedAnswers: ['ich werde kommen'],
       answerMode: 'normalized',
       placeholder: 'ich werde kommen',
       maxLength: 30,
-      explanation: 'werde (ich-form) + the infinitive kommen at the end: ich werde kommen.',
+      explanation:
+        'werde (ich-form) + the infinitive kommen at the end: ich werde kommen.',
     },
     {
       id: 'ch64-ex-24',
@@ -666,13 +758,15 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['futur-i', 'sentence-building', 'arbeiten'],
-      instruction: 'Write the full Futur I form for du + arbeiten. Capitalisation is not checked.',
+      instruction:
+        'Write the full Futur I form for du + arbeiten. Capitalisation is not checked.',
       prompt: 'du → arbeiten (Futur I)',
       acceptedAnswers: ['du wirst arbeiten'],
       answerMode: 'normalized',
       placeholder: 'du wirst arbeiten',
       maxLength: 30,
-      explanation: 'wirst (du-form) + the infinitive arbeiten at the end: du wirst arbeiten.',
+      explanation:
+        'wirst (du-form) + the infinitive arbeiten at the end: du wirst arbeiten.',
     },
     {
       id: 'ch64-ex-25',
@@ -681,7 +775,8 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['futur-i', 'sentence-building', 'helfen'],
-      instruction: 'Write the full Futur I form for er + helfen. Capitalisation is not checked.',
+      instruction:
+        'Write the full Futur I form for er + helfen. Capitalisation is not checked.',
       prompt: 'er → helfen (Futur I)',
       acceptedAnswers: ['er wird helfen'],
       answerMode: 'normalized',
@@ -696,13 +791,15 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['futur-i', 'sentence-building', 'bleiben'],
-      instruction: 'Write the full Futur I form for wir + bleiben. Capitalisation is not checked.',
+      instruction:
+        'Write the full Futur I form for wir + bleiben. Capitalisation is not checked.',
       prompt: 'wir → bleiben (Futur I)',
       acceptedAnswers: ['wir werden bleiben'],
       answerMode: 'normalized',
       placeholder: 'wir werden bleiben',
       maxLength: 30,
-      explanation: 'werden (wir-form) + the infinitive bleiben at the end: wir werden bleiben.',
+      explanation:
+        'werden (wir-form) + the infinitive bleiben at the end: wir werden bleiben.',
     },
     {
       id: 'ch64-ex-27',
@@ -711,13 +808,15 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['futur-i', 'transformation', 'lernen'],
-      instruction: 'Rewrite the present-tense sentence in Futur I. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the present-tense sentence in Futur I. Capitalisation and punctuation are checked.',
       prompt: 'Ich lerne Deutsch. → Futur I',
       acceptedAnswers: ['Ich werde Deutsch lernen.', 'Ich werde Deutsch lernen'],
       answerMode: 'normalized',
       placeholder: 'Ich werde ...',
       maxLength: 40,
-      explanation: 'lerne becomes werde ... lernen, with the infinitive sent to the end: Ich werde Deutsch lernen.',
+      explanation:
+        'lerne becomes werde ... lernen, with the infinitive sent to the end: Ich werde Deutsch lernen.',
     },
     {
       id: 'ch64-ex-28',
@@ -726,13 +825,18 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['futur-i', 'transformation', 'kaufen'],
-      instruction: 'Rewrite the present-tense sentence in Futur I. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the present-tense sentence in Futur I. Capitalisation and punctuation are checked.',
       prompt: 'Sie kauft ein neues Auto. → Futur I',
-      acceptedAnswers: ['Sie wird ein neues Auto kaufen.', 'Sie wird ein neues Auto kaufen'],
+      acceptedAnswers: [
+        'Sie wird ein neues Auto kaufen.',
+        'Sie wird ein neues Auto kaufen',
+      ],
       answerMode: 'normalized',
       placeholder: 'Sie wird ...',
       maxLength: 50,
-      explanation: 'kauft becomes wird ... kaufen, with the infinitive at the end: Sie wird ein neues Auto kaufen.',
+      explanation:
+        'kauft becomes wird ... kaufen, with the infinitive at the end: Sie wird ein neues Auto kaufen.',
     },
     {
       id: 'ch64-ex-29',
@@ -741,13 +845,18 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['futur-i', 'transformation', 'subordinate-clause', 'regnen'],
-      instruction: 'Rewrite the sentence so the dass-clause uses Futur I. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence so the dass-clause uses Futur I. Capitalisation and punctuation are checked.',
       prompt: 'Ich glaube, dass es regnet. → dass-Satz mit Futur I',
-      acceptedAnswers: ['Ich glaube, dass es regnen wird.', 'Ich glaube, dass es regnen wird'],
+      acceptedAnswers: [
+        'Ich glaube, dass es regnen wird.',
+        'Ich glaube, dass es regnen wird',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich glaube, dass es ...',
       maxLength: 50,
-      explanation: 'In the dass-clause, werden moves to the very end, after the infinitive: dass es regnen wird.',
+      explanation:
+        'In the dass-clause, werden moves to the very end, after the infinitive: dass es regnen wird.',
     },
     {
       id: 'ch64-ex-30',
@@ -756,17 +865,27 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['futur-i', 'sentence-building', 'modal-adverbs', 'dialogue'],
-      instruction: 'Read the exchange, then build a complete sentence from the cue words for the reply. Capitalisation and punctuation are checked.',
+      instruction:
+        'Read the exchange, then build a complete sentence from the cue words for the reply. Capitalisation and punctuation are checked.',
       prompt: 'Cue: er – wohl – noch – schlafen (Futur I)',
       dialogue: [
-        { speaker: 'Nina', german: 'Warum kommt Max nicht ans Telefon?', english: "Why isn't Max answering the phone?" },
-        { speaker: 'Jonas', german: 'Er wird wohl noch schlafen.', english: "He's probably still sleeping." },
+        {
+          speaker: 'Nina',
+          german: 'Warum kommt Max nicht ans Telefon?',
+          english: "Why isn't Max answering the phone?",
+        },
+        {
+          speaker: 'Jonas',
+          german: 'Er wird wohl noch schlafen.',
+          english: "He's probably still sleeping.",
+        },
       ],
       acceptedAnswers: ['Er wird wohl noch schlafen.', 'Er wird wohl noch schlafen'],
       answerMode: 'normalized',
       placeholder: 'Er wird wohl ...',
       maxLength: 40,
-      explanation: 'schlafen takes wird, with the adverb wohl placed right before the infinitive: Er wird wohl noch schlafen.',
+      explanation:
+        'schlafen takes wird, with the adverb wohl placed right before the infinitive: Er wird wohl noch schlafen.',
     },
     {
       id: 'ch64-ex-31',
@@ -775,13 +894,18 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['futur-i', 'sentence-building', 'intentions', 'heiraten'],
-      instruction: 'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
       prompt: 'Cue: wir – nächstes Jahr – heiraten (Futur I)',
-      acceptedAnswers: ['Wir werden nächstes Jahr heiraten.', 'Wir werden nächstes Jahr heiraten'],
+      acceptedAnswers: [
+        'Wir werden nächstes Jahr heiraten.',
+        'Wir werden nächstes Jahr heiraten',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wir werden ...',
       maxLength: 45,
-      explanation: 'werden (wir-form) plus the infinitive heiraten at the end, with nächstes Jahr in the middle field: Wir werden nächstes Jahr heiraten.',
+      explanation:
+        'werden (wir-form) plus the infinitive heiraten at the end, with nächstes Jahr in the middle field: Wir werden nächstes Jahr heiraten.',
     },
     {
       id: 'ch64-ex-32',
@@ -790,13 +914,18 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['futur-i', 'present-for-future', 'translation'],
-      instruction: 'Translate into German, using the present tense for this fixed, already-booked plan. Capitalisation and punctuation are checked.',
+      instruction:
+        'Translate into German, using the present tense for this fixed, already-booked plan. Capitalisation and punctuation are checked.',
       prompt: 'I am flying to Berlin tomorrow. (already-booked plan)',
-      acceptedAnswers: ['Ich fliege morgen nach Berlin.', 'Ich fliege morgen nach Berlin'],
+      acceptedAnswers: [
+        'Ich fliege morgen nach Berlin.',
+        'Ich fliege morgen nach Berlin',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich fliege ...',
       maxLength: 40,
-      explanation: 'A concrete, arranged plan is expressed with the present tense plus the time word morgen, not Futur I.',
+      explanation:
+        'A concrete, arranged plan is expressed with the present tense plus the time word morgen, not Futur I.',
     },
     {
       id: 'ch64-ex-33',
@@ -805,17 +934,32 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['futur-i', 'predictions', 'translation', 'dialogue'],
-      instruction: 'Read the exchange, then translate the reply into German using Futur I with an adverb of probability. Capitalisation and punctuation are checked.',
+      instruction:
+        'Read the exchange, then translate the reply into German using Futur I with an adverb of probability. Capitalisation and punctuation are checked.',
       prompt: 'Translate the reply: "It will probably rain tomorrow."',
       dialogue: [
-        { speaker: 'Paul', german: 'Sollen wir morgen im Garten grillen?', english: 'Should we grill in the garden tomorrow?' },
-        { speaker: 'Mira', german: 'Es wird morgen wahrscheinlich regnen.', english: 'It will probably rain tomorrow.' },
+        {
+          speaker: 'Paul',
+          german: 'Sollen wir morgen im Garten grillen?',
+          english: 'Should we grill in the garden tomorrow?',
+        },
+        {
+          speaker: 'Mira',
+          german: 'Es wird morgen wahrscheinlich regnen.',
+          english: 'It will probably rain tomorrow.',
+        },
       ],
-      acceptedAnswers: ['Es wird morgen wahrscheinlich regnen.', 'Es wird wahrscheinlich morgen regnen.', 'Es wird morgen wahrscheinlich regnen', 'Es wird wahrscheinlich morgen regnen'],
+      acceptedAnswers: [
+        'Es wird morgen wahrscheinlich regnen.',
+        'Es wird wahrscheinlich morgen regnen.',
+        'Es wird morgen wahrscheinlich regnen',
+        'Es wird wahrscheinlich morgen regnen',
+      ],
       answerMode: 'normalized',
       placeholder: 'Es wird ...',
       maxLength: 45,
-      explanation: 'wird + the infinitive regnen at the end, with the probability adverb wahrscheinlich inside the bracket: Es wird morgen wahrscheinlich regnen.',
+      explanation:
+        'wird + the infinitive regnen at the end, with the probability adverb wahrscheinlich inside the bracket: Es wird morgen wahrscheinlich regnen.',
     },
     {
       id: 'ch64-ex-34',
@@ -829,10 +973,19 @@ export const chapter064: ChapterDefinition = {
       pairs: [
         { id: 'p1', left: 'Du werdest kommen.', right: 'Du wirst kommen.' },
         { id: 'p2', left: 'Er werdet helfen.', right: 'Er wird helfen.' },
-        { id: 'p3', left: 'Ich werde kaufen ein neues Auto.', right: 'Ich werde ein neues Auto kaufen.' },
-        { id: 'p4', left: 'Ich glaube, dass es morgen wird regnen.', right: 'Ich glaube, dass es morgen regnen wird.' },
+        {
+          id: 'p3',
+          left: 'Ich werde kaufen ein neues Auto.',
+          right: 'Ich werde ein neues Auto kaufen.',
+        },
+        {
+          id: 'p4',
+          left: 'Ich glaube, dass es morgen wird regnen.',
+          right: 'Ich glaube, dass es morgen regnen wird.',
+        },
       ],
-      explanation: 'Common mistakes involve the wrong werden conjugation or placing the infinitive/werden in the wrong position in the clause.',
+      explanation:
+        'Common mistakes involve the wrong werden conjugation or placing the infinitive/werden in the wrong position in the clause.',
     },
     {
       id: 'ch64-ex-35',
@@ -841,13 +994,18 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['futur-i', 'intentions', 'translation'],
-      instruction: 'Translate into German using Futur I to express a resolution. Capitalisation and punctuation are checked.',
-      prompt: "Starting tomorrow, I am going to exercise every day.",
-      acceptedAnswers: ['Ab morgen werde ich jeden Tag Sport machen.', 'Ab morgen werde ich jeden Tag Sport machen'],
+      instruction:
+        'Translate into German using Futur I to express a resolution. Capitalisation and punctuation are checked.',
+      prompt: 'Starting tomorrow, I am going to exercise every day.',
+      acceptedAnswers: [
+        'Ab morgen werde ich jeden Tag Sport machen.',
+        'Ab morgen werde ich jeden Tag Sport machen',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ab morgen werde ich ...',
       maxLength: 45,
-      explanation: 'werde (ich-form) + the infinitive machen at the end; the time expression ab morgen opens the clause, pushing werde into position 2 and ich after it.',
+      explanation:
+        'werde (ich-form) + the infinitive machen at the end; the time expression ab morgen opens the clause, pushing werde into position 2 and ich after it.',
     },
     {
       id: 'ch64-ex-36',
@@ -865,7 +1023,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'wahrscheinlich' },
         { id: 'e', text: 'regnen.' },
       ],
-      explanation: 'wird takes position 2; the adverb wahrscheinlich sits right before the infinitive regnen at the end.',
+      explanation:
+        'wird takes position 2; the adverb wahrscheinlich sits right before the infinitive regnen at the end.',
     },
     {
       id: 'ch64-ex-37',
@@ -882,7 +1041,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'c', text: 'dir' },
         { id: 'd', text: 'helfen.' },
       ],
-      explanation: 'werde (ich-form) stays in position 2; the infinitive helfen goes to the very end.',
+      explanation:
+        'werde (ich-form) stays in position 2; the infinitive helfen goes to the very end.',
     },
     {
       id: 'ch64-ex-38',
@@ -899,7 +1059,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'c', text: 'nächstes Jahr' },
         { id: 'd', text: 'heiraten.' },
       ],
-      explanation: 'werden (wir-form) in position 2, the time expression nächstes Jahr in the middle field, and the infinitive heiraten at the end.',
+      explanation:
+        'werden (wir-form) in position 2, the time expression nächstes Jahr in the middle field, and the infinitive heiraten at the end.',
     },
     {
       id: 'ch64-ex-39',
@@ -917,7 +1078,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'noch' },
         { id: 'e', text: 'schlafen.' },
       ],
-      explanation: 'wird in position 2, and the adverb wohl sits right before the infinitive schlafen, inside the bracket.',
+      explanation:
+        'wird in position 2, and the adverb wohl sits right before the infinitive schlafen, inside the bracket.',
     },
     {
       id: 'ch64-ex-40',
@@ -935,7 +1097,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'pünktlich' },
         { id: 'e', text: 'kommen.' },
       ],
-      explanation: 'wird in position 2; sicher and pünktlich sit inside the bracket, before the infinitive kommen.',
+      explanation:
+        'wird in position 2; sicher and pünktlich sit inside the bracket, before the infinitive kommen.',
     },
     {
       id: 'ch64-ex-41',
@@ -954,7 +1117,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'e', text: 'regnen' },
         { id: 'f', text: 'wird.' },
       ],
-      explanation: 'In a dass-clause, the conjugated werden moves to the very end, after the infinitive: regnen wird.',
+      explanation:
+        'In a dass-clause, the conjugated werden moves to the very end, after the infinitive: regnen wird.',
     },
     {
       id: 'ch64-ex-42',
@@ -972,7 +1136,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'bestimmt' },
         { id: 'e', text: 'schaffen.' },
       ],
-      explanation: 'wirst (du-form) in position 2; the adverb bestimmt sits right before the infinitive schaffen.',
+      explanation:
+        'wirst (du-form) in position 2; the adverb bestimmt sits right before the infinitive schaffen.',
     },
     {
       id: 'ch64-ex-43',
@@ -982,14 +1147,15 @@ export const chapter064: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['futur-i', 'word-order', 'werden-konjugation'],
       instruction: 'Put the segments into the correct order.',
-      prompt: "You (pl.) will pass the exam.",
+      prompt: 'You (pl.) will pass the exam.',
       segments: [
         { id: 'a', text: 'Ihr' },
         { id: 'b', text: 'werdet' },
         { id: 'c', text: 'die Prüfung' },
         { id: 'd', text: 'bestehen.' },
       ],
-      explanation: 'werdet (ihr-form) in position 2, with the infinitive bestehen sent to the end.',
+      explanation:
+        'werdet (ihr-form) in position 2, with the infinitive bestehen sent to the end.',
     },
     {
       id: 'ch64-ex-44',
@@ -1006,7 +1172,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'c', text: 'im Garten' },
         { id: 'd', text: 'spielen.' },
       ],
-      explanation: 'werden (sie-plural form) in position 2, with the infinitive spielen sent to the end.',
+      explanation:
+        'werden (sie-plural form) in position 2, with the infinitive spielen sent to the end.',
     },
     {
       id: 'ch64-ex-45',
@@ -1025,7 +1192,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'e', text: 'regnen' },
         { id: 'f', text: 'wird.' },
       ],
-      explanation: 'In a weil-clause, werden also moves to the very end, after the infinitive: regnen wird.',
+      explanation:
+        'In a weil-clause, werden also moves to the very end, after the infinitive: regnen wird.',
     },
     {
       id: 'ch64-ex-46',
@@ -1043,7 +1211,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'mehr Sport' },
         { id: 'e', text: 'machen.' },
       ],
-      explanation: 'werde in position 2, with nächstes Jahr and mehr Sport in the middle field, and the infinitive machen at the end.',
+      explanation:
+        'werde in position 2, with nächstes Jahr and mehr Sport in the middle field, and the infinitive machen at the end.',
     },
     {
       id: 'ch64-ex-47',
@@ -1061,7 +1230,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'Verspätung' },
         { id: 'e', text: 'haben.' },
       ],
-      explanation: 'wird in position 2; wahrscheinlich sits inside the bracket before the infinitive haben.',
+      explanation:
+        'wird in position 2; wahrscheinlich sits inside the bracket before the infinitive haben.',
     },
     {
       id: 'ch64-ex-48',
@@ -1079,7 +1249,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'nie' },
         { id: 'e', text: 'vergessen.' },
       ],
-      explanation: 'werde in position 2; the negating adverb nie sits inside the bracket, right before the infinitive vergessen.',
+      explanation:
+        'werde in position 2; the negating adverb nie sits inside the bracket, right before the infinitive vergessen.',
     },
     {
       id: 'ch64-ex-49',
@@ -1097,7 +1268,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'anders' },
         { id: 'e', text: 'aussehen.' },
       ],
-      explanation: 'The time expression opens the clause, pushing wird into position 2; the separable verb aussehen stays joined as the infinitive at the end.',
+      explanation:
+        'The time expression opens the clause, pushing wird into position 2; the separable verb aussehen stays joined as the infinitive at the end.',
     },
     {
       id: 'ch64-ex-50',
@@ -1115,7 +1287,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'eine Entscheidung' },
         { id: 'e', text: 'treffen.' },
       ],
-      explanation: 'werden in position 2, with morgen and eine Entscheidung in the middle field, and the infinitive treffen at the end.',
+      explanation:
+        'werden in position 2, with morgen and eine Entscheidung in the middle field, and the infinitive treffen at the end.',
     },
     {
       id: 'ch64-ex-51',
@@ -1133,7 +1306,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'noch' },
         { id: 'e', text: 'arbeiten.' },
       ],
-      explanation: 'wird in position 2; vermutlich sits inside the bracket, right before noch arbeiten.',
+      explanation:
+        'wird in position 2; vermutlich sits inside the bracket, right before noch arbeiten.',
     },
     {
       id: 'ch64-ex-52',
@@ -1147,7 +1321,8 @@ export const chapter064: ChapterDefinition = {
       tokens: ['Du', 'werdest', 'das', 'schaffen.'],
       errorTokenIndex: 1,
       correction: 'wirst',
-      explanation: 'The du-form of the Futur I auxiliary is wirst, with the irregular e → i stem change; werdest is not a form of werden.',
+      explanation:
+        'The du-form of the Futur I auxiliary is wirst, with the irregular e → i stem change; werdest is not a form of werden.',
     },
     {
       id: 'ch64-ex-53',
@@ -1203,7 +1378,8 @@ export const chapter064: ChapterDefinition = {
       tokens: ['Es', 'wird', 'morgen', 'wahrscheinlich', 'geregnet.'],
       errorTokenIndex: 4,
       correction: 'regnen.',
-      explanation: 'The main verb after werden must be the plain infinitive, not the past participle: geregnet must be regnen.',
+      explanation:
+        'The main verb after werden must be the plain infinitive, not the past participle: geregnet must be regnen.',
     },
     {
       id: 'ch64-ex-57',
@@ -1217,7 +1393,8 @@ export const chapter064: ChapterDefinition = {
       tokens: ['Wir', 'werden', 'nächstes', 'Jahr', 'geheiratet.'],
       errorTokenIndex: 4,
       correction: 'heiraten.',
-      explanation: 'werden requires the plain infinitive at the end, not the past participle: geheiratet must be heiraten.',
+      explanation:
+        'werden requires the plain infinitive at the end, not the past participle: geheiratet must be heiraten.',
     },
     {
       id: 'ch64-ex-58',
@@ -1231,7 +1408,8 @@ export const chapter064: ChapterDefinition = {
       tokens: ['Er', 'wird', 'wohl', 'noch', 'geschlafen.'],
       errorTokenIndex: 4,
       correction: 'schlafen.',
-      explanation: 'The infinitive schlafen belongs at the end after werden, not the past participle geschlafen.',
+      explanation:
+        'The infinitive schlafen belongs at the end after werden, not the past participle geschlafen.',
     },
     {
       id: 'ch64-ex-59',
@@ -1245,7 +1423,8 @@ export const chapter064: ChapterDefinition = {
       tokens: ['Ich', 'werde', 'dir', 'geholfen.'],
       errorTokenIndex: 3,
       correction: 'helfen.',
-      explanation: 'werde needs the plain infinitive helfen at the end, not the past participle geholfen.',
+      explanation:
+        'werde needs the plain infinitive helfen at the end, not the past participle geholfen.',
     },
     {
       id: 'ch64-ex-60',
@@ -1259,7 +1438,8 @@ export const chapter064: ChapterDefinition = {
       tokens: ['Du', 'wirst', 'das', 'bestimmt', 'geschafft.'],
       errorTokenIndex: 4,
       correction: 'schaffen.',
-      explanation: 'wirst requires the plain infinitive schaffen at the end, not the past participle geschafft.',
+      explanation:
+        'wirst requires the plain infinitive schaffen at the end, not the past participle geschafft.',
     },
     {
       id: 'ch64-ex-61',
@@ -1273,7 +1453,8 @@ export const chapter064: ChapterDefinition = {
       tokens: ['Sie', 'wird', 'sicher', 'pünktlich', 'gekommen.'],
       errorTokenIndex: 4,
       correction: 'kommen.',
-      explanation: 'wird needs the plain infinitive kommen at the end of the clause, not the past participle gekommen.',
+      explanation:
+        'wird needs the plain infinitive kommen at the end of the clause, not the past participle gekommen.',
     },
     {
       id: 'ch64-ex-62',
@@ -1301,7 +1482,8 @@ export const chapter064: ChapterDefinition = {
       templateParts: ['Du ', ' das bestimmt schaffen.'],
       slots: [{ id: 'slot1', correctWord: 'wirst' }],
       wordBank: ['wirst', 'werde', 'wird', 'werdet'],
-      explanation: 'The du-form of the Futur I auxiliary werden is wirst, with the irregular e → i stem change.',
+      explanation:
+        'The du-form of the Futur I auxiliary werden is wirst, with the irregular e → i stem change.',
     },
     {
       id: 'ch64-ex-64',
@@ -1374,7 +1556,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'slot2', correctWord: 'regnen' },
       ],
       wordBank: ['wird', 'regnen', 'wirst', 'geregnet', 'werden'],
-      explanation: 'Es takes the singular wird, and the main verb stays as the plain infinitive regnen at the end.',
+      explanation:
+        'Es takes the singular wird, and the main verb stays as the plain infinitive regnen at the end.',
     },
     {
       id: 'ch64-ex-69',
@@ -1388,7 +1571,8 @@ export const chapter064: ChapterDefinition = {
       templateParts: ['Ich glaube, dass es morgen regnen ', '.'],
       slots: [{ id: 'slot1', correctWord: 'wird' }],
       wordBank: ['wird', 'werde', 'wirst', 'werden'],
-      explanation: 'In a dass-clause, the conjugated werden moves to the very end, after the infinitive regnen.',
+      explanation:
+        'In a dass-clause, the conjugated werden moves to the very end, after the infinitive regnen.',
     },
     {
       id: 'ch64-ex-70',
@@ -1396,17 +1580,36 @@ export const chapter064: ChapterDefinition = {
       order: 70,
       type: 'matching',
       level: 'production',
-      grammarFocus: ['futur-i', 'predictions', 'assumptions', 'intentions', 'formal-announcements'],
+      grammarFocus: [
+        'futur-i',
+        'predictions',
+        'assumptions',
+        'intentions',
+        'formal-announcements',
+      ],
       instruction: 'Match each sentence to the function it expresses.',
       prompt: 'Match the Futur I sentence to its function.',
       pairs: [
         { id: 'p1', left: 'Es wird morgen regnen.', right: 'a weather prediction' },
-        { id: 'p2', left: 'Er wird wohl noch schlafen.', right: 'an assumption about the present' },
+        {
+          id: 'p2',
+          left: 'Er wird wohl noch schlafen.',
+          right: 'an assumption about the present',
+        },
         { id: 'p3', left: 'Ich werde dir helfen.', right: 'a promise' },
-        { id: 'p4', left: 'Der Minister wird morgen eine Erklärung abgeben.', right: 'a formal announcement' },
-        { id: 'p5', left: 'Ich fliege morgen nach Berlin.', right: 'an arranged plan (present tense)' },
+        {
+          id: 'p4',
+          left: 'Der Minister wird morgen eine Erklärung abgeben.',
+          right: 'a formal announcement',
+        },
+        {
+          id: 'p5',
+          left: 'Ich fliege morgen nach Berlin.',
+          right: 'an arranged plan (present tense)',
+        },
       ],
-      explanation: 'Futur I covers predictions, assumptions, promises, and formal announcements; arranged plans normally stay in the present tense.',
+      explanation:
+        'Futur I covers predictions, assumptions, promises, and formal announcements; arranged plans normally stay in the present tense.',
     },
     {
       id: 'ch64-ex-71',
@@ -1425,7 +1628,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'p5', left: 'ihr', right: 'ihr werdet kommen' },
         { id: 'p6', left: 'sie/Sie', right: 'sie werden kommen' },
       ],
-      explanation: 'werden conjugates ich werde, du wirst, er/sie/es wird, wir werden, ihr werdet, sie/Sie werden.',
+      explanation:
+        'werden conjugates ich werde, du wirst, er/sie/es wird, wir werden, ihr werdet, sie/Sie werden.',
     },
     {
       id: 'ch64-ex-72',
@@ -1443,7 +1647,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'p4', left: 'bestimmt', right: 'definitely' },
         { id: 'p5', left: 'vermutlich', right: 'presumably' },
       ],
-      explanation: 'These adverbs commonly ride along with Futur I to mark a guess or assumption rather than a stated fact.',
+      explanation:
+        'These adverbs commonly ride along with Futur I to mark a guess or assumption rather than a stated fact.',
     },
     {
       id: 'ch64-ex-73',
@@ -1455,13 +1660,34 @@ export const chapter064: ChapterDefinition = {
       instruction: 'Match each German sentence to its English translation.',
       prompt: 'Match German to English.',
       pairs: [
-        { id: 'p1', left: 'Der Film beginnt um 20 Uhr.', right: 'The film starts at 8 p.m. (fixed schedule)' },
-        { id: 'p2', left: 'Es wird wahrscheinlich regnen.', right: 'It will probably rain.' },
-        { id: 'p3', left: 'Ich werde das nie vergessen.', right: 'I will never forget that.' },
-        { id: 'p4', left: 'Wir werden nächstes Jahr heiraten.', right: 'We are going to get married next year.' },
-        { id: 'p5', left: 'Ich fliege morgen nach Berlin.', right: "I'm flying to Berlin tomorrow." },
+        {
+          id: 'p1',
+          left: 'Der Film beginnt um 20 Uhr.',
+          right: 'The film starts at 8 p.m. (fixed schedule)',
+        },
+        {
+          id: 'p2',
+          left: 'Es wird wahrscheinlich regnen.',
+          right: 'It will probably rain.',
+        },
+        {
+          id: 'p3',
+          left: 'Ich werde das nie vergessen.',
+          right: 'I will never forget that.',
+        },
+        {
+          id: 'p4',
+          left: 'Wir werden nächstes Jahr heiraten.',
+          right: 'We are going to get married next year.',
+        },
+        {
+          id: 'p5',
+          left: 'Ich fliege morgen nach Berlin.',
+          right: "I'm flying to Berlin tomorrow.",
+        },
       ],
-      explanation: 'Fixed schedules and arranged plans use the present tense; predictions, promises, and resolutions use Futur I.',
+      explanation:
+        'Fixed schedules and arranged plans use the present tense; predictions, promises, and resolutions use Futur I.',
     },
     {
       id: 'ch64-ex-74',
@@ -1473,12 +1699,29 @@ export const chapter064: ChapterDefinition = {
       instruction: 'Match each example to the description of its word order.',
       prompt: 'Match example to word-order description.',
       pairs: [
-        { id: 'p1', left: 'Es wird morgen regnen.', right: 'main clause: werden in position 2' },
-        { id: 'p2', left: 'Ich glaube, dass es morgen regnen wird.', right: 'subordinate clause: werden at the very end' },
-        { id: 'p3', left: 'Er wird wohl noch schlafen.', right: 'main clause with adverb before the infinitive' },
-        { id: 'p4', left: 'Wir bleiben zu Hause, weil es wohl regnen wird.', right: 'subordinate clause (weil): werden at the end' },
+        {
+          id: 'p1',
+          left: 'Es wird morgen regnen.',
+          right: 'main clause: werden in position 2',
+        },
+        {
+          id: 'p2',
+          left: 'Ich glaube, dass es morgen regnen wird.',
+          right: 'subordinate clause: werden at the very end',
+        },
+        {
+          id: 'p3',
+          left: 'Er wird wohl noch schlafen.',
+          right: 'main clause with adverb before the infinitive',
+        },
+        {
+          id: 'p4',
+          left: 'Wir bleiben zu Hause, weil es wohl regnen wird.',
+          right: 'subordinate clause (weil): werden at the end',
+        },
       ],
-      explanation: 'In main clauses werden takes position 2 with the infinitive at the end; in dass/weil-clauses, werden itself moves to the very end, after the infinitive.',
+      explanation:
+        'In main clauses werden takes position 2 with the infinitive at the end; in dass/weil-clauses, werden itself moves to the very end, after the infinitive.',
     },
     {
       id: 'ch64-ex-75',
@@ -1486,17 +1729,40 @@ export const chapter064: ChapterDefinition = {
       order: 75,
       type: 'matching',
       level: 'transfer',
-      grammarFocus: ['futur-i', 'predictions', 'assumptions', 'intentions', 'formal-announcements'],
+      grammarFocus: [
+        'futur-i',
+        'predictions',
+        'assumptions',
+        'intentions',
+        'formal-announcements',
+      ],
       instruction: 'Match each use of Futur I to a matching example.',
       prompt: 'Match use to example.',
       pairs: [
-        { id: 'p1', left: 'prediction about the future', right: 'Es wird morgen regnen.' },
-        { id: 'p2', left: 'assumption about the present', right: 'Er wird jetzt wohl zu Hause sein.' },
+        {
+          id: 'p1',
+          left: 'prediction about the future',
+          right: 'Es wird morgen regnen.',
+        },
+        {
+          id: 'p2',
+          left: 'assumption about the present',
+          right: 'Er wird jetzt wohl zu Hause sein.',
+        },
         { id: 'p3', left: 'firm promise', right: 'Ich werde dir helfen.' },
-        { id: 'p4', left: 'formal announcement', right: 'Die Bundeskanzlerin wird morgen eine Rede halten.' },
-        { id: 'p5', left: 'resolution/intention', right: 'Ich werde ab morgen jeden Tag Sport machen.' },
+        {
+          id: 'p4',
+          left: 'formal announcement',
+          right: 'Die Bundeskanzlerin wird morgen eine Rede halten.',
+        },
+        {
+          id: 'p5',
+          left: 'resolution/intention',
+          right: 'Ich werde ab morgen jeden Tag Sport machen.',
+        },
       ],
-      explanation: 'Futur I serves several related functions: predicting, assuming, promising, resolving, and announcing.',
+      explanation:
+        'Futur I serves several related functions: predicting, assuming, promising, resolving, and announcing.',
     },
     {
       id: 'ch64-ex-76',
@@ -1505,7 +1771,8 @@ export const chapter064: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['futur-i', 'werden-konjugation'],
-      instruction: 'Choose the correct present-tense form of werden for the Futur I auxiliary.',
+      instruction:
+        'Choose the correct present-tense form of werden for the Futur I auxiliary.',
       prompt: 'Die Kinder ___ im Garten spielen.',
       options: [
         { id: 'a', text: 'werden' },
@@ -1514,7 +1781,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'werdet' },
       ],
       correctOptionId: 'a',
-      explanation: 'Die Kinder is a plural subject (equivalent to sie), so it takes werden.',
+      explanation:
+        'Die Kinder is a plural subject (equivalent to sie), so it takes werden.',
     },
     {
       id: 'ch64-ex-77',
@@ -1532,7 +1800,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'a scheduled appointment' },
       ],
       correctOptionId: 'a',
-      explanation: 'wird ... arbeiten with vermutlich expresses the speaker\'s guess about a present situation, not an order, a past report, or a fixed appointment.',
+      explanation:
+        "wird ... arbeiten with vermutlich expresses the speaker's guess about a present situation, not an order, a past report, or a fixed appointment.",
     },
     {
       id: 'ch64-ex-78',
@@ -1550,7 +1819,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'Der Kanzler eine Rede wird morgen halten.' },
       ],
       correctOptionId: 'a',
-      explanation: 'wird stays in position 2, morgen and eine Rede fill the middle field, and the infinitive halten goes to the very end.',
+      explanation:
+        'wird stays in position 2, morgen and eine Rede fill the middle field, and the infinitive halten goes to the very end.',
     },
     {
       id: 'ch64-ex-79',
@@ -1559,7 +1829,8 @@ export const chapter064: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['futur-i', 'werden-konjugation', 'separable-verbs'],
-      instruction: 'Choose the correct present-tense form of werden for the Futur I auxiliary.',
+      instruction:
+        'Choose the correct present-tense form of werden for the Futur I auxiliary.',
       prompt: 'Wir ___ morgen in Wien ankommen.',
       options: [
         { id: 'a', text: 'werden' },
@@ -1568,7 +1839,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'werdet' },
       ],
       correctOptionId: 'a',
-      explanation: 'The wir-form of werden is werden; the separable verb ankommen stays joined together as the infinitive at the end.',
+      explanation:
+        'The wir-form of werden is werden; the separable verb ankommen stays joined together as the infinitive at the end.',
     },
     {
       id: 'ch64-ex-80',
@@ -1578,7 +1850,8 @@ export const chapter064: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['futur-i', 'present-for-future', 'natural-choice'],
       instruction: 'Choose the most natural way to express the meaning.',
-      prompt: 'Choose the most natural way to state a fixed timetable event: "The film starts at 8 p.m."',
+      prompt:
+        'Choose the most natural way to state a fixed timetable event: "The film starts at 8 p.m."',
       options: [
         { id: 'a', text: 'Der Film beginnt um 20 Uhr.' },
         { id: 'b', text: 'Der Film wird um 20 Uhr beginnen.' },
@@ -1586,7 +1859,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'Der Film hat um 20 Uhr begonnen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'A fixed timetable event is normally described with the present tense; c is simple past and d is present perfect, both wrong tenses for a future showing.',
+      explanation:
+        'A fixed timetable event is normally described with the present tense; c is simple past and d is present perfect, both wrong tenses for a future showing.',
     },
     {
       id: 'ch64-ex-81',
@@ -1595,7 +1869,8 @@ export const chapter064: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['futur-i', 'assumptions', 'natural-choice'],
-      instruction: 'Choose the sentence that expresses an assumption about the present, not the future.',
+      instruction:
+        'Choose the sentence that expresses an assumption about the present, not the future.',
       prompt: 'Choose the sentence expressing a present-time assumption.',
       options: [
         { id: 'a', text: 'Sie wird jetzt wohl im Büro sein.' },
@@ -1604,7 +1879,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'Sie wird morgen ins Büro gehen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'wird ... sein with jetzt and wohl guesses about her current location; the others describe the future or the past as plain facts.',
+      explanation:
+        'wird ... sein with jetzt and wohl guesses about her current location; the others describe the future or the past as plain facts.',
     },
     {
       id: 'ch64-ex-82',
@@ -1613,11 +1889,20 @@ export const chapter064: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['futur-i', 'assumptions', 'dialogue'],
-      instruction: 'Read the exchange, then choose the option that best completes the final line.',
+      instruction:
+        'Read the exchange, then choose the option that best completes the final line.',
       prompt: 'Complete: "Sie ___ wohl noch im Stau stehen."',
       dialogue: [
-        { speaker: 'Ben', german: 'Wo ist Lisa? Sie ist schon spät dran.', english: "Where's Lisa? She's already late." },
-        { speaker: 'Nora', german: 'Keine Ahnung, sie ___ wohl noch im Stau stehen.', english: "No idea, she's probably still stuck in traffic." },
+        {
+          speaker: 'Ben',
+          german: 'Wo ist Lisa? Sie ist schon spät dran.',
+          english: "Where's Lisa? She's already late.",
+        },
+        {
+          speaker: 'Nora',
+          german: 'Keine Ahnung, sie ___ wohl noch im Stau stehen.',
+          english: "No idea, she's probably still stuck in traffic.",
+        },
       ],
       options: [
         { id: 'a', text: 'wird' },
@@ -1626,7 +1911,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'war' },
       ],
       correctOptionId: 'a',
-      explanation: 'wird ... stehen + wohl expresses a guess about the present ("she\'s probably..."); ist would be a flat statement of fact, wäre is Konjunktiv II, and war is simple past.',
+      explanation:
+        'wird ... stehen + wohl expresses a guess about the present ("she\'s probably..."); ist would be a flat statement of fact, wäre is Konjunktiv II, and war is simple past.',
     },
     {
       id: 'ch64-ex-83',
@@ -1644,7 +1930,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'Ihr werdet bestehen die Prüfung bestimmt.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Ihr requires werdet, and the infinitive bestehen must stand at the very end of the clause.',
+      explanation:
+        'Ihr requires werdet, and the infinitive bestehen must stand at the very end of the clause.',
     },
     {
       id: 'ch64-ex-84',
@@ -1662,7 +1949,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'Wir bleiben zu Hause, weil es regnen wohl wird.' },
       ],
       correctOptionId: 'a',
-      explanation: 'In a weil-clause, the conjugated werden moves to the very end, after the infinitive: wohl regnen wird.',
+      explanation:
+        'In a weil-clause, the conjugated werden moves to the very end, after the infinitive: wohl regnen wird.',
     },
     {
       id: 'ch64-ex-85',
@@ -1680,7 +1968,8 @@ export const chapter064: ChapterDefinition = {
         { id: 'd', text: 'a fixed, scheduled plan' },
       ],
       correctOptionId: 'a',
-      explanation: 'This idiomatic expression uses werden + infinitive to state a confident, slightly skeptical prediction about how something will turn out.',
+      explanation:
+        'This idiomatic expression uses werden + infinitive to state a confident, slightly skeptical prediction about how something will turn out.',
     },
     {
       id: 'ch64-ex-86',
@@ -1689,7 +1978,8 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['futur-i', 'werden-konjugation'],
-      instruction: 'Write the present-tense form of werden used in Futur I for sie (Plural). Capitalisation is not checked.',
+      instruction:
+        'Write the present-tense form of werden used in Futur I for sie (Plural). Capitalisation is not checked.',
       prompt: 'sie (Pl.) → werden (Futur I auxiliary)',
       acceptedAnswers: ['werden'],
       answerMode: 'caseInsensitive',
@@ -1704,13 +1994,15 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['futur-i', 'sentence-building', 'separable-verbs'],
-      instruction: 'Write the full Futur I form for ich + ankommen. Capitalisation is not checked.',
+      instruction:
+        'Write the full Futur I form for ich + ankommen. Capitalisation is not checked.',
       prompt: 'ich → ankommen (Futur I)',
       acceptedAnswers: ['ich werde ankommen'],
       answerMode: 'normalized',
       placeholder: 'ich werde ankommen',
       maxLength: 30,
-      explanation: 'werde (ich-form) + the separable verb ankommen, kept joined together as the infinitive at the end.',
+      explanation:
+        'werde (ich-form) + the separable verb ankommen, kept joined together as the infinitive at the end.',
     },
     {
       id: 'ch64-ex-88',
@@ -1719,13 +2011,15 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['futur-i', 'sentence-building', 'intentions'],
-      instruction: 'Write the full Futur I form for du + versprechen. Capitalisation is not checked.',
+      instruction:
+        'Write the full Futur I form for du + versprechen. Capitalisation is not checked.',
       prompt: 'du → versprechen (Futur I)',
       acceptedAnswers: ['du wirst versprechen'],
       answerMode: 'normalized',
       placeholder: 'du wirst versprechen',
       maxLength: 30,
-      explanation: 'wirst (du-form) + the infinitive versprechen at the end: du wirst versprechen.',
+      explanation:
+        'wirst (du-form) + the infinitive versprechen at the end: du wirst versprechen.',
     },
     {
       id: 'ch64-ex-89',
@@ -1734,13 +2028,15 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['futur-i', 'sentence-building'],
-      instruction: 'Write the full Futur I form for sie (sg.) + kommen. Capitalisation is not checked.',
+      instruction:
+        'Write the full Futur I form for sie (sg.) + kommen. Capitalisation is not checked.',
       prompt: 'sie (Sg.) → kommen (Futur I)',
       acceptedAnswers: ['sie wird kommen'],
       answerMode: 'normalized',
       placeholder: 'sie wird kommen',
       maxLength: 30,
-      explanation: 'wird (sie-singular-form) + the infinitive kommen at the end: sie wird kommen.',
+      explanation:
+        'wird (sie-singular-form) + the infinitive kommen at the end: sie wird kommen.',
     },
     {
       id: 'ch64-ex-90',
@@ -1749,13 +2045,15 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['futur-i', 'transformation', 'helfen'],
-      instruction: 'Rewrite the present-tense sentence in Futur I. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the present-tense sentence in Futur I. Capitalisation and punctuation are checked.',
       prompt: 'Er hilft mir. → Futur I',
       acceptedAnswers: ['Er wird mir helfen.', 'Er wird mir helfen'],
       answerMode: 'normalized',
       placeholder: 'Er wird ...',
       maxLength: 30,
-      explanation: 'hilft becomes wird ... helfen, with the infinitive sent to the end: Er wird mir helfen.',
+      explanation:
+        'hilft becomes wird ... helfen, with the infinitive sent to the end: Er wird mir helfen.',
     },
     {
       id: 'ch64-ex-91',
@@ -1764,13 +2062,15 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['futur-i', 'transformation', 'separable-verbs'],
-      instruction: 'Rewrite the present-tense sentence in Futur I. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the present-tense sentence in Futur I. Capitalisation and punctuation are checked.',
       prompt: 'Wir kommen um acht an. → Futur I',
       acceptedAnswers: ['Wir werden um acht ankommen.', 'Wir werden um acht ankommen'],
       answerMode: 'normalized',
       placeholder: 'Wir werden ...',
       maxLength: 40,
-      explanation: 'The separable verb ankommen stays joined together as the infinitive at the end: Wir werden um acht ankommen.',
+      explanation:
+        'The separable verb ankommen stays joined together as the infinitive at the end: Wir werden um acht ankommen.',
     },
     {
       id: 'ch64-ex-92',
@@ -1779,13 +2079,18 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['futur-i', 'transformation', 'subordinate-clause'],
-      instruction: 'Rewrite the sentence so the dass-clause uses Futur I. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence so the dass-clause uses Futur I. Capitalisation and punctuation are checked.',
       prompt: 'Ich hoffe, dass er kommt. → dass-Satz mit Futur I',
-      acceptedAnswers: ['Ich hoffe, dass er kommen wird.', 'Ich hoffe, dass er kommen wird'],
+      acceptedAnswers: [
+        'Ich hoffe, dass er kommen wird.',
+        'Ich hoffe, dass er kommen wird',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich hoffe, dass er ...',
       maxLength: 45,
-      explanation: 'In the dass-clause, werden moves to the very end, after the infinitive: dass er kommen wird.',
+      explanation:
+        'In the dass-clause, werden moves to the very end, after the infinitive: dass er kommen wird.',
     },
     {
       id: 'ch64-ex-93',
@@ -1794,13 +2099,18 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['futur-i', 'predictions', 'translation'],
-      instruction: 'Translate into German using Futur I with an adverb of probability. Capitalisation and punctuation are checked.',
-      prompt: "She will definitely arrive on time.",
-      acceptedAnswers: ['Sie wird sicher pünktlich kommen.', 'Sie wird sicher pünktlich kommen'],
+      instruction:
+        'Translate into German using Futur I with an adverb of probability. Capitalisation and punctuation are checked.',
+      prompt: 'She will definitely arrive on time.',
+      acceptedAnswers: [
+        'Sie wird sicher pünktlich kommen.',
+        'Sie wird sicher pünktlich kommen',
+      ],
       answerMode: 'normalized',
       placeholder: 'Sie wird ...',
       maxLength: 45,
-      explanation: 'wird + the infinitive kommen at the end, with the adverb sicher inside the bracket: Sie wird sicher pünktlich kommen.',
+      explanation:
+        'wird + the infinitive kommen at the end, with the adverb sicher inside the bracket: Sie wird sicher pünktlich kommen.',
     },
     {
       id: 'ch64-ex-94',
@@ -1809,13 +2119,15 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['futur-i', 'assumptions', 'translation'],
-      instruction: 'Translate into German using Futur I with an adverb of probability. Capitalisation and punctuation are checked.',
+      instruction:
+        'Translate into German using Futur I with an adverb of probability. Capitalisation and punctuation are checked.',
       prompt: 'He is probably still working.',
       acceptedAnswers: ['Er wird wohl noch arbeiten.', 'Er wird wohl noch arbeiten'],
       answerMode: 'normalized',
       placeholder: 'Er wird ...',
       maxLength: 40,
-      explanation: 'wird + the infinitive arbeiten at the end, with wohl inside the bracket marking this as a guess about the present: Er wird wohl noch arbeiten.',
+      explanation:
+        'wird + the infinitive arbeiten at the end, with wohl inside the bracket marking this as a guess about the present: Er wird wohl noch arbeiten.',
     },
     {
       id: 'ch64-ex-95',
@@ -1824,17 +2136,30 @@ export const chapter064: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['futur-i', 'sentence-building', 'predictions', 'dialogue'],
-      instruction: 'Read the exchange, then build a complete sentence from the cue words for the reply. Capitalisation and punctuation are checked.',
+      instruction:
+        'Read the exchange, then build a complete sentence from the cue words for the reply. Capitalisation and punctuation are checked.',
       prompt: 'Cue: der Zug – wahrscheinlich – Verspätung – haben (Futur I)',
       dialogue: [
-        { speaker: 'Timo', german: 'Kommt der Zug pünktlich?', english: 'Is the train arriving on time?' },
-        { speaker: 'Julia', german: 'Der Zug wird wahrscheinlich Verspätung haben.', english: 'The train will probably be delayed.' },
+        {
+          speaker: 'Timo',
+          german: 'Kommt der Zug pünktlich?',
+          english: 'Is the train arriving on time?',
+        },
+        {
+          speaker: 'Julia',
+          german: 'Der Zug wird wahrscheinlich Verspätung haben.',
+          english: 'The train will probably be delayed.',
+        },
       ],
-      acceptedAnswers: ['Der Zug wird wahrscheinlich Verspätung haben.', 'Der Zug wird wahrscheinlich Verspätung haben'],
+      acceptedAnswers: [
+        'Der Zug wird wahrscheinlich Verspätung haben.',
+        'Der Zug wird wahrscheinlich Verspätung haben',
+      ],
       answerMode: 'normalized',
       placeholder: 'Der Zug wird ...',
       maxLength: 45,
-      explanation: 'wird + the infinitive haben at the end, with the adverb wahrscheinlich inside the bracket: Der Zug wird wahrscheinlich Verspätung haben.',
+      explanation:
+        'wird + the infinitive haben at the end, with the adverb wahrscheinlich inside the bracket: Der Zug wird wahrscheinlich Verspätung haben.',
     },
   ],
 };

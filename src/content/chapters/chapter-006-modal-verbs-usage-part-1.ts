@@ -717,11 +717,31 @@ export const chapter006: ChapterDefinition = {
       instruction: 'Match each meaning to the modal verb that expresses it.',
       prompt: 'Match the meaning with the correct modal verb.',
       pairs: [
-        { id: 'ch06-ex29-p1', left: 'You are physically able to do something.', right: 'können' },
-        { id: 'ch06-ex29-p2', left: 'Something is required, with no real choice.', right: 'müssen' },
-        { id: 'ch06-ex29-p3', left: 'A rule or person allows you to do something.', right: 'dürfen' },
-        { id: 'ch06-ex29-p4', left: 'You have a strong wish or firm plan.', right: 'wollen' },
-        { id: 'ch06-ex29-p5', left: 'You politely ask for or offer something.', right: 'möchten' },
+        {
+          id: 'ch06-ex29-p1',
+          left: 'You are physically able to do something.',
+          right: 'können',
+        },
+        {
+          id: 'ch06-ex29-p2',
+          left: 'Something is required, with no real choice.',
+          right: 'müssen',
+        },
+        {
+          id: 'ch06-ex29-p3',
+          left: 'A rule or person allows you to do something.',
+          right: 'dürfen',
+        },
+        {
+          id: 'ch06-ex29-p4',
+          left: 'You have a strong wish or firm plan.',
+          right: 'wollen',
+        },
+        {
+          id: 'ch06-ex29-p5',
+          left: 'You politely ask for or offer something.',
+          right: 'möchten',
+        },
       ],
       explanation:
         'Each modal verb has one core meaning: können = ability, müssen = necessity, dürfen = permission, wollen = a strong wish or plan, möchten = a polite request.',
@@ -830,7 +850,8 @@ export const chapter006: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['dürfen', 'permission-vs-ability'],
       instruction: 'Write the missing modal verb form. Capitalisation is not checked.',
-      prompt: 'Mit 15 Jahren ___ man in Deutschland nicht bis Mitternacht draußen bleiben.',
+      prompt:
+        'Mit 15 Jahren ___ man in Deutschland nicht bis Mitternacht draußen bleiben.',
       acceptedAnswers: ['darf'],
       answerMode: 'caseInsensitive',
       placeholder: 'modal verb',

@@ -82,7 +82,8 @@ export const chapter030: ChapterDefinition = {
       },
       {
         id: 'ch30-table-02',
-        title: 'High-frequency Präteritum forms worth knowing for speech (ich / er-sie-es)',
+        title:
+          'High-frequency Präteritum forms worth knowing for speech (ich / er-sie-es)',
         columns: ['Infinitive', 'Präteritum (ich)', 'Präteritum (er/sie/es)', 'Meaning'],
         rows: [
           ['sein', 'war', 'war', 'to be'],
@@ -113,105 +114,132 @@ export const chapter030: ChapterDefinition = {
         german: 'Ich habe gestern meiner Schwester geholfen.',
         english: 'I helped my sister yesterday.',
         highlight: ['habe', 'geholfen'],
-        explanation: 'A typical spoken sentence: an ordinary verb (helfen) appears in the Perfekt, as expected in conversation.',
+        explanation:
+          'A typical spoken sentence: an ordinary verb (helfen) appears in the Perfekt, as expected in conversation.',
       },
       {
         german: 'Ich war gestern sehr müde, aber ich habe trotzdem gearbeitet.',
         english: 'I was very tired yesterday, but I worked anyway.',
         highlight: ['war', 'habe', 'gearbeitet'],
-        explanation: 'In the same spoken sentence, sein stays in the Präteritum (war) while the ordinary verb arbeiten uses the Perfekt — this mixing is completely normal.',
+        explanation:
+          'In the same spoken sentence, sein stays in the Präteritum (war) while the ordinary verb arbeiten uses the Perfekt — this mixing is completely normal.',
       },
       {
         german: 'Er konnte gestern nicht kommen, weil er krank war.',
         english: 'He could not come yesterday because he was sick.',
         highlight: ['konnte', 'war'],
-        explanation: 'The modal verb können and sein both appear in the Präteritum, even though this is a spoken-style sentence about yesterday.',
+        explanation:
+          'The modal verb können and sein both appear in the Präteritum, even though this is a spoken-style sentence about yesterday.',
       },
       {
-        german: 'Früher wohnte die Familie in einem kleinen Dorf. Der Vater arbeitete auf einem Bauernhof, und die Kinder gingen jeden Tag zu Fuß zur Schule.',
-        english: 'In earlier times, the family lived in a small village. The father worked on a farm, and the children walked to school every day.',
+        german:
+          'Früher wohnte die Familie in einem kleinen Dorf. Der Vater arbeitete auf einem Bauernhof, und die Kinder gingen jeden Tag zu Fuß zur Schule.',
+        english:
+          'In earlier times, the family lived in a small village. The father worked on a farm, and the children walked to school every day.',
         highlight: ['wohnte', 'arbeitete', 'gingen'],
-        explanation: 'A written narrative: every verb, not only sein and haben, appears in the Präteritum, because this is the normal narrative tense in a story.',
+        explanation:
+          'A written narrative: every verb, not only sein and haben, appears in the Präteritum, because this is the normal narrative tense in a story.',
       },
       {
-        german: 'Letztes Wochenende haben wir einen Ausflug gemacht und sind an einen See gefahren.',
+        german:
+          'Letztes Wochenende haben wir einen Ausflug gemacht und sind an einen See gefahren.',
         english: 'Last weekend we went on a trip and drove to a lake.',
         highlight: ['haben', 'gemacht', 'sind', 'gefahren'],
-        explanation: 'A spoken retelling of a weekend: both the haben-Perfekt and the sein-Perfekt are used, matching how this would actually be said aloud.',
+        explanation:
+          'A spoken retelling of a weekend: both the haben-Perfekt and the sein-Perfekt are used, matching how this would actually be said aloud.',
       },
       {
         german: 'Letztes Wochenende machten wir einen Ausflug und fuhren an einen See.',
         english: 'Last weekend we went on a trip and drove to a lake.',
         highlight: ['machten', 'fuhren'],
-        explanation: 'The same event told as a short written narrative instead: both verbs shift to the Präteritum, and the meaning stays exactly the same.',
+        explanation:
+          'The same event told as a short written narrative instead: both verbs shift to the Präteritum, and the meaning stays exactly the same.',
       },
       {
         german: 'Es gab gestern kein warmes Wasser in der Küche.',
         english: 'There was no hot water in the kitchen yesterday.',
         highlight: ['Es gab'],
-        explanation: 'es gab is the Präteritum of es gibt and is used far more often than es hat gegeben, even in casual speech.',
+        explanation:
+          'es gab is the Präteritum of es gibt and is used far more often than es hat gegeben, even in casual speech.',
       },
       {
         german: 'Ich habe den Ring verloren, dann habe ich ihn zum Glück wiedergefunden.',
         english: 'I lost the ring, then luckily I found it again.',
         highlight: ['habe', 'verloren', 'habe', 'wiedergefunden'],
-        explanation: 'A consistent spoken account: both verbs stay in the Perfekt from one sentence to the next, without switching for no reason.',
+        explanation:
+          'A consistent spoken account: both verbs stay in the Perfekt from one sentence to the next, without switching for no reason.',
       },
       {
         german: 'Meine Oma hat mir oft Geschichten erzählt, wenn ich klein war.',
         english: 'My grandmother often told me stories when I was little.',
         highlight: ['hat', 'erzählt', 'war'],
-        explanation: 'erzählen uses the Perfekt as expected in speech, while sein still appears in its usual Präteritum form war.',
+        explanation:
+          'erzählen uses the Perfekt as expected in speech, while sein still appears in its usual Präteritum form war.',
       },
       {
-        german: 'Der Zug hatte Verspätung, deshalb sind die Passagiere lange auf dem Bahnsteig gestanden.',
-        english: 'The train was delayed, so the passengers stood on the platform for a long time.',
+        german:
+          'Der Zug hatte Verspätung, deshalb sind die Passagiere lange auf dem Bahnsteig gestanden.',
+        english:
+          'The train was delayed, so the passengers stood on the platform for a long time.',
         highlight: ['hatte', 'sind', 'gestanden'],
-        explanation: 'haben appears in the Präteritum (hatte Verspätung), while stehen (a sein-verb) uses the Perfekt — a natural spoken mix.',
+        explanation:
+          'haben appears in the Präteritum (hatte Verspätung), while stehen (a sein-verb) uses the Perfekt — a natural spoken mix.',
       },
       {
         german: 'Wolltest du mich gestern Abend anrufen?',
         english: 'Did you want to call me yesterday evening?',
         highlight: ['Wolltest'],
-        explanation: 'The modal verb wollen appears naturally in the Präteritum even in a spoken question about yesterday.',
+        explanation:
+          'The modal verb wollen appears naturally in the Präteritum even in a spoken question about yesterday.',
       },
       {
         german: 'Sie hat mir das Foto gezeigt, das sie im Urlaub gemacht hat.',
         english: 'She showed me the photo that she took on vacation.',
         highlight: ['hat', 'gezeigt', 'gemacht hat'],
-        explanation: 'Both verb phrases stay in the Perfekt throughout the sentence, keeping the spoken register consistent.',
+        explanation:
+          'Both verb phrases stay in the Perfekt throughout the sentence, keeping the spoken register consistent.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich bin müde gewesen, deshalb habe ich früh geschlafen.',
         correct: 'Ich war müde, deshalb habe ich früh geschlafen.',
-        explanation: 'sein is normally used in the Präteritum (war), not in the Perfekt (bin gewesen), even in a sentence that otherwise uses the Perfekt.',
+        explanation:
+          'sein is normally used in the Präteritum (war), not in the Perfekt (bin gewesen), even in a sentence that otherwise uses the Perfekt.',
       },
       {
         incorrect: 'Er hat gestern nicht kommen gekonnt, weil er hat krank gewesen.',
         correct: 'Er konnte gestern nicht kommen, weil er krank war.',
-        explanation: 'Modal verbs and sein are the exception to the spoken preference for the Perfekt; konnte and war are the natural forms here, not their (rarely used) Perfekt equivalents.',
+        explanation:
+          'Modal verbs and sein are the exception to the spoken preference for the Perfekt; konnte and war are the natural forms here, not their (rarely used) Perfekt equivalents.',
       },
       {
         incorrect: 'Die Frau öffnete die Tür und hat ihren Freund gesehen.',
-        correct: 'Die Frau öffnete die Tür und sah ihren Freund. / Die Frau hat die Tür geöffnet und hat ihren Freund gesehen.',
-        explanation: 'Within one written narrative sentence, keep the tense consistent: either both verbs in the Präteritum for a story, or both in the Perfekt for a spoken-style account — not one of each without reason.',
+        correct:
+          'Die Frau öffnete die Tür und sah ihren Freund. / Die Frau hat die Tür geöffnet und hat ihren Freund gesehen.',
+        explanation:
+          'Within one written narrative sentence, keep the tense consistent: either both verbs in the Präteritum for a story, or both in the Perfekt for a spoken-style account — not one of each without reason.',
       },
       {
         incorrect: 'Präteritum ist im Gespräch immer falsch.',
-        correct: 'Präteritum ist im Gespräch nicht falsch, aber im Gespräch weniger üblich (außer bei sein, haben und den Modalverben).',
-        explanation: 'There is no rule that the Präteritum is wrong in speech — both tenses are grammatically correct; this chapter is about natural style, not correctness.',
+        correct:
+          'Präteritum ist im Gespräch nicht falsch, aber im Gespräch weniger üblich (außer bei sein, haben und den Modalverben).',
+        explanation:
+          'There is no rule that the Präteritum is wrong in speech — both tenses are grammatically correct; this chapter is about natural style, not correctness.',
       },
       {
-        incorrect: 'Ich ging ins Kino. Ich habe einen Film gesehen. Danach ging ich nach Hause.',
-        correct: 'Ich ging ins Kino. Ich sah einen Film. Danach ging ich nach Hause. (or entirely in the Perfekt: Ich bin ins Kino gegangen. Ich habe einen Film gesehen. Danach bin ich nach Hause gegangen.)',
-        explanation: 'Switching tense mid-story for no reason (Präteritum, then Perfekt, then Präteritum again) reads as inconsistent; pick one register and stay with it.',
+        incorrect:
+          'Ich ging ins Kino. Ich habe einen Film gesehen. Danach ging ich nach Hause.',
+        correct:
+          'Ich ging ins Kino. Ich sah einen Film. Danach ging ich nach Hause. (or entirely in the Perfekt: Ich bin ins Kino gegangen. Ich habe einen Film gesehen. Danach bin ich nach Hause gegangen.)',
+        explanation:
+          'Switching tense mid-story for no reason (Präteritum, then Perfekt, then Präteritum again) reads as inconsistent; pick one register and stay with it.',
       },
       {
         incorrect: 'Es hat gestern kein Brot mehr gegeben.',
         correct: 'Es gab gestern kein Brot mehr.',
-        explanation: 'geben in the es gibt construction almost always appears as es gab in the past, even in casual conversation; the Perfekt es hat gegeben sounds unnatural here.',
+        explanation:
+          'geben in the es gibt construction almost always appears as es gab in the past, even in casual conversation; the Perfekt es hat gegeben sounds unnatural here.',
       },
     ],
     remember: [
@@ -237,7 +265,8 @@ export const chapter030: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['register', 'spoken-german'],
       instruction: 'Decide which tense sounds more natural in the given context.',
-      prompt: 'A friend tells you on the phone about her day: "___ ich habe viel gearbeitet." Which tense is this?',
+      prompt:
+        'A friend tells you on the phone about her day: "___ ich habe viel gearbeitet." Which tense is this?',
       options: [
         { id: 'a', text: 'Perfekt' },
         { id: 'b', text: 'Präteritum' },
@@ -245,7 +274,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'd', text: 'Präsens' },
       ],
       correctOptionId: 'a',
-      explanation: 'habe ... gearbeitet is the Perfekt, the tense most naturally used for ordinary verbs in spoken conversation.',
+      explanation:
+        'habe ... gearbeitet is the Perfekt, the tense most naturally used for ordinary verbs in spoken conversation.',
     },
     {
       id: 'ch30-ex-02',
@@ -255,7 +285,8 @@ export const chapter030: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['register', 'narrative'],
       instruction: 'Decide which tense sounds more natural in the given context.',
-      prompt: 'The opening line of a short story reads: "Der Mann ging langsam durch den Wald." Which tense is this?',
+      prompt:
+        'The opening line of a short story reads: "Der Mann ging langsam durch den Wald." Which tense is this?',
       options: [
         { id: 'a', text: 'Perfekt' },
         { id: 'b', text: 'Präteritum' },
@@ -263,7 +294,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'd', text: 'Futur' },
       ],
       correctOptionId: 'b',
-      explanation: 'ging is the Präteritum of gehen, the typical narrative tense for written stories.',
+      explanation:
+        'ging is the Präteritum of gehen, the typical narrative tense for written stories.',
     },
     {
       id: 'ch30-ex-03',
@@ -273,7 +305,8 @@ export const chapter030: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['sein', 'haben', 'exception'],
       instruction: 'Identify the verb group that prefers the Präteritum even in speech.',
-      prompt: 'Which group of verbs is commonly used in the Präteritum even in casual conversation?',
+      prompt:
+        'Which group of verbs is commonly used in the Präteritum even in casual conversation?',
       options: [
         { id: 'a', text: 'sein, haben, and the modal verbs' },
         { id: 'b', text: 'all separable verbs' },
@@ -281,7 +314,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'd', text: 'all verbs ending in -ieren' },
       ],
       correctOptionId: 'a',
-      explanation: 'sein, haben, and the modal verbs (können, müssen, wollen, dürfen, sollen, mögen) are the well-known exception, favoured in the Präteritum even in speech.',
+      explanation:
+        'sein, haben, and the modal verbs (können, müssen, wollen, dürfen, sollen, mögen) are the well-known exception, favoured in the Präteritum even in speech.',
     },
     {
       id: 'ch30-ex-04',
@@ -290,16 +324,22 @@ export const chapter030: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['meaning', 'perfekt-vs-präteritum'],
-      instruction: 'Choose the statement that correctly describes the meaning difference.',
-      prompt: 'What is the main difference in meaning between Ich habe das gemacht and Ich machte das?',
+      instruction:
+        'Choose the statement that correctly describes the meaning difference.',
+      prompt:
+        'What is the main difference in meaning between Ich habe das gemacht and Ich machte das?',
       options: [
-        { id: 'a', text: 'There is basically no difference in meaning; it is a difference in style.' },
+        {
+          id: 'a',
+          text: 'There is basically no difference in meaning; it is a difference in style.',
+        },
         { id: 'b', text: 'Ich habe das gemacht happened more recently.' },
         { id: 'c', text: 'Ich machte das is grammatically incorrect.' },
         { id: 'd', text: 'Ich habe das gemacht refers to the future.' },
       ],
       correctOptionId: 'a',
-      explanation: 'At this level, the Perfekt and the Präteritum describe the same past event with the same meaning; the choice is about natural register, not meaning.',
+      explanation:
+        'At this level, the Perfekt and the Präteritum describe the same past event with the same meaning; the choice is about natural register, not meaning.',
     },
     {
       id: 'ch30-ex-05',
@@ -308,7 +348,8 @@ export const chapter030: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['identification', 'tense-form'],
-      instruction: 'Identify the tense of the underlined-style verb form in the sentence.',
+      instruction:
+        'Identify the tense of the underlined-style verb form in the sentence.',
       prompt: 'In "Wir mussten gestern früh aufstehen," which tense is mussten?',
       options: [
         { id: 'a', text: 'Präteritum' },
@@ -317,7 +358,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'd', text: 'Konjunktiv' },
       ],
       correctOptionId: 'a',
-      explanation: 'mussten is the Präteritum of müssen, the normal form for a modal verb even in an everyday spoken sentence.',
+      explanation:
+        'mussten is the Präteritum of müssen, the normal form for a modal verb even in an everyday spoken sentence.',
     },
     {
       id: 'ch30-ex-06',
@@ -327,7 +369,8 @@ export const chapter030: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['identification', 'tense-form'],
       instruction: 'Identify the tense of the verb form in the sentence.',
-      prompt: 'In "Sie hat mir gestern die Fotos gezeigt," which tense is hat ... gezeigt?',
+      prompt:
+        'In "Sie hat mir gestern die Fotos gezeigt," which tense is hat ... gezeigt?',
       options: [
         { id: 'a', text: 'Perfekt' },
         { id: 'b', text: 'Präteritum' },
@@ -335,7 +378,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'd', text: 'Präsens' },
       ],
       correctOptionId: 'a',
-      explanation: 'hat ... gezeigt is the Perfekt of zeigen, the expected form for an ordinary verb in a spoken-style sentence.',
+      explanation:
+        'hat ... gezeigt is the Perfekt of zeigen, the expected form for an ordinary verb in a spoken-style sentence.',
     },
     {
       id: 'ch30-ex-07',
@@ -353,7 +397,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'd', text: 'Imperativ' },
       ],
       correctOptionId: 'a',
-      explanation: 'gab is the Präteritum of geben; es gab is the natural way to say "there was/were" in the past, even in speech.',
+      explanation:
+        'gab is the Präteritum of geben; es gab is the natural way to say "there was/were" in the past, even in speech.',
     },
     {
       id: 'ch30-ex-08',
@@ -362,8 +407,10 @@ export const chapter030: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['identification', 'mixed-tense'],
-      instruction: 'Identify which two tenses appear together in this natural spoken sentence.',
-      prompt: 'In "Ich hatte keine Zeit, deshalb habe ich nicht angerufen," which two tenses are used?',
+      instruction:
+        'Identify which two tenses appear together in this natural spoken sentence.',
+      prompt:
+        'In "Ich hatte keine Zeit, deshalb habe ich nicht angerufen," which two tenses are used?',
       options: [
         { id: 'a', text: 'Präteritum (hatte) and Perfekt (habe ... angerufen)' },
         { id: 'b', text: 'Präsens and Futur' },
@@ -371,7 +418,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'd', text: 'Präteritum and Präsens' },
       ],
       correctOptionId: 'a',
-      explanation: 'haben appears in the Präteritum (hatte), while anrufen appears in the Perfekt (habe ... angerufen) — a very common and natural mix in speech.',
+      explanation:
+        'haben appears in the Präteritum (hatte), while anrufen appears in the Perfekt (habe ... angerufen) — a very common and natural mix in speech.',
     },
     {
       id: 'ch30-ex-09',
@@ -381,7 +429,8 @@ export const chapter030: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['register-choice', 'spoken'],
       instruction: 'Choose the more natural option for the given context.',
-      prompt: 'You are chatting casually with a colleague about the weekend. Which sentence sounds more natural?',
+      prompt:
+        'You are chatting casually with a colleague about the weekend. Which sentence sounds more natural?',
       options: [
         { id: 'a', text: 'Ich habe am Samstag meine Eltern besucht.' },
         { id: 'b', text: 'Ich besuchte am Samstag meine Eltern.' },
@@ -389,7 +438,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'd', text: 'Ich hatte am Samstag meine Eltern besucht gehabt.' },
       ],
       correctOptionId: 'a',
-      explanation: 'For an ordinary verb like besuchen in a casual spoken exchange, the Perfekt (habe besucht) is the natural choice.',
+      explanation:
+        'For an ordinary verb like besuchen in a casual spoken exchange, the Perfekt (habe besucht) is the natural choice.',
     },
     {
       id: 'ch30-ex-10',
@@ -399,15 +449,20 @@ export const chapter030: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['register-choice', 'narrative'],
       instruction: 'Choose the more natural option for the given context.',
-      prompt: 'You are writing the next sentence of a short story. Which option fits the narrative style best?',
+      prompt:
+        'You are writing the next sentence of a short story. Which option fits the narrative style best?',
       options: [
         { id: 'a', text: 'Der Junge fand einen Hund und brachte ihn nach Hause.' },
-        { id: 'b', text: 'Der Junge hat einen Hund gefunden und hat ihn nach Hause gebracht.' },
+        {
+          id: 'b',
+          text: 'Der Junge hat einen Hund gefunden und hat ihn nach Hause gebracht.',
+        },
         { id: 'c', text: 'Der Junge findet einen Hund und bringt ihn nach Hause.' },
         { id: 'd', text: 'Der Junge wird einen Hund finden und nach Hause bringen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'A written narrative normally uses the Präteritum throughout (fand, brachte), even for ordinary verbs.',
+      explanation:
+        'A written narrative normally uses the Präteritum throughout (fand, brachte), even for ordinary verbs.',
     },
     {
       id: 'ch30-ex-11',
@@ -417,7 +472,8 @@ export const chapter030: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['register-choice', 'sein-haben-modal'],
       instruction: 'Choose the more natural option for the given context.',
-      prompt: 'A spoken sentence about being unable to attend a party. Which option is most natural?',
+      prompt:
+        'A spoken sentence about being unable to attend a party. Which option is most natural?',
       options: [
         { id: 'a', text: 'Ich konnte nicht kommen, weil ich krank war.' },
         { id: 'b', text: 'Ich habe nicht kommen gekonnt, weil ich krank gewesen bin.' },
@@ -425,7 +481,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'd', text: 'Ich bin nicht gekonnt zu kommen, weil ich hatte krank.' },
       ],
       correctOptionId: 'a',
-      explanation: 'können and sein naturally appear in the Präteritum (konnte, war), even in a spoken sentence about the past.',
+      explanation:
+        'können and sein naturally appear in the Präteritum (konnte, war), even in a spoken sentence about the past.',
     },
     {
       id: 'ch30-ex-12',
@@ -434,7 +491,8 @@ export const chapter030: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['consistency', 'narrative'],
-      instruction: 'Choose the sentence pair that keeps the tense consistent for a written story.',
+      instruction:
+        'Choose the sentence pair that keeps the tense consistent for a written story.',
       prompt: 'Which pair of sentences keeps a consistent narrative tense?',
       options: [
         { id: 'a', text: 'Sie öffnete das Fenster und sah den Garten.' },
@@ -443,7 +501,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'd', text: 'Sie öffnet das Fenster und hat den Garten gesehen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Both verbs stay in the Präteritum (öffnete, sah), matching the consistent tense expected in a short written narrative.',
+      explanation:
+        'Both verbs stay in the Präteritum (öffnete, sah), matching the consistent tense expected in a short written narrative.',
     },
     {
       id: 'ch30-ex-13',
@@ -452,7 +511,8 @@ export const chapter030: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['sein', 'präteritum'],
-      instruction: 'Complete the sentence with the correct Präteritum form of sein. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct Präteritum form of sein. Capitalisation is not checked.',
       prompt: 'Gestern ___ ich den ganzen Tag zu Hause. (sein, ich)',
       acceptedAnswers: ['war'],
       answerMode: 'caseInsensitive',
@@ -467,7 +527,8 @@ export const chapter030: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['haben', 'präteritum'],
-      instruction: 'Complete the sentence with the correct Präteritum form of haben. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct Präteritum form of haben. Capitalisation is not checked.',
       prompt: 'Er ___ leider keine Zeit für das Treffen. (haben, er)',
       acceptedAnswers: ['hatte'],
       answerMode: 'caseInsensitive',
@@ -482,13 +543,15 @@ export const chapter030: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['modal-verb', 'präteritum'],
-      instruction: 'Complete the sentence with the correct Präteritum form of wollen. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct Präteritum form of wollen. Capitalisation is not checked.',
       prompt: 'Wir ___ gestern ins Kino gehen, aber es war schon voll. (wollen, wir)',
       acceptedAnswers: ['wollten'],
       answerMode: 'caseInsensitive',
       placeholder: 'wollten',
       maxLength: 10,
-      explanation: 'The Präteritum of wollen for wir is wollten, natural even in casual speech.',
+      explanation:
+        'The Präteritum of wollen for wir is wollten, natural even in casual speech.',
     },
     {
       id: 'ch30-ex-16',
@@ -497,13 +560,15 @@ export const chapter030: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['es-gab'],
-      instruction: 'Complete the sentence with the natural past-tense expression for "there was." Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the natural past-tense expression for "there was." Capitalisation is not checked.',
       prompt: '___ gestern keinen Kaffee mehr im Büro. (es gibt, past)',
       acceptedAnswers: ['es gab'],
       answerMode: 'caseInsensitive',
       placeholder: 'Es gab',
       maxLength: 15,
-      explanation: 'es gab is the natural past-tense form of es gibt, used in speech far more than es hat gegeben.',
+      explanation:
+        'es gab is the natural past-tense form of es gibt, used in speech far more than es hat gegeben.',
     },
     {
       id: 'ch30-ex-17',
@@ -515,11 +580,15 @@ export const chapter030: ChapterDefinition = {
       instruction:
         'Rewrite the sentence in the Perfekt, as you would naturally say it in conversation. Capitalisation is checked; no full stop is required.',
       prompt: 'Er schrieb seiner Freundin eine lange E-Mail. (rewrite in the Perfekt)',
-      acceptedAnswers: ['Er hat seiner Freundin eine lange E-Mail geschrieben.', 'Er hat seiner Freundin eine lange E-Mail geschrieben'],
+      acceptedAnswers: [
+        'Er hat seiner Freundin eine lange E-Mail geschrieben.',
+        'Er hat seiner Freundin eine lange E-Mail geschrieben',
+      ],
       answerMode: 'normalized',
       placeholder: 'Er hat ...',
       maxLength: 70,
-      explanation: 'schreiben forms its Perfekt with haben and the participle geschrieben: Er hat seiner Freundin eine lange E-Mail geschrieben.',
+      explanation:
+        'schreiben forms its Perfekt with haben and the participle geschrieben: Er hat seiner Freundin eine lange E-Mail geschrieben.',
     },
     {
       id: 'ch30-ex-18',
@@ -531,11 +600,15 @@ export const chapter030: ChapterDefinition = {
       instruction:
         'Rewrite the sentence in the Präteritum, as it would appear in a written story. Capitalisation is checked; no full stop is required.',
       prompt: 'Die Kinder haben im Garten gespielt. (rewrite in the Präteritum)',
-      acceptedAnswers: ['Die Kinder spielten im Garten.', 'Die Kinder spielten im Garten'],
+      acceptedAnswers: [
+        'Die Kinder spielten im Garten.',
+        'Die Kinder spielten im Garten',
+      ],
       answerMode: 'normalized',
       placeholder: 'Die Kinder ...',
       maxLength: 70,
-      explanation: 'spielen forms a regular Präteritum with -te: spielten. In a written narrative, this replaces the spoken haben gespielt.',
+      explanation:
+        'spielen forms a regular Präteritum with -te: spielten. In a written narrative, this replaces the spoken haben gespielt.',
     },
     {
       id: 'ch30-ex-19',
@@ -546,12 +619,17 @@ export const chapter030: ChapterDefinition = {
       grammarFocus: ['mixed-tense', 'sein-modal-exception'],
       instruction:
         'Complete the spoken sentence, remembering that sein and modal verbs stay in the Präteritum while the other verb takes the Perfekt. Capitalisation is checked.',
-      prompt: 'Ich ___ müde, deshalb ___ ich früh ins Bett gegangen. (sein: war; gehen: bin ... gegangen — write the full sentence)',
-      acceptedAnswers: ['Ich war müde, deshalb bin ich früh ins Bett gegangen.', 'Ich war müde, deshalb bin ich früh ins Bett gegangen'],
+      prompt:
+        'Ich ___ müde, deshalb ___ ich früh ins Bett gegangen. (sein: war; gehen: bin ... gegangen — write the full sentence)',
+      acceptedAnswers: [
+        'Ich war müde, deshalb bin ich früh ins Bett gegangen.',
+        'Ich war müde, deshalb bin ich früh ins Bett gegangen',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich war ..., deshalb bin ich ...',
       maxLength: 90,
-      explanation: 'sein stays in the Präteritum (war), while gehen (a sein-verb) appears in the Perfekt (bin ... gegangen) — the typical spoken mix.',
+      explanation:
+        'sein stays in the Präteritum (war), while gehen (a sein-verb) appears in the Perfekt (bin ... gegangen) — the typical spoken mix.',
     },
     {
       id: 'ch30-ex-20',
@@ -560,13 +638,16 @@ export const chapter030: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['sentence-completion', 'modal-präteritum'],
-      instruction: 'Complete the sentence with the correct Präteritum form of müssen. Capitalisation is checked.',
-      prompt: 'Complete: "___ du gestern lange arbeiten?" (müssen, du — write the full question with question mark)',
+      instruction:
+        'Complete the sentence with the correct Präteritum form of müssen. Capitalisation is checked.',
+      prompt:
+        'Complete: "___ du gestern lange arbeiten?" (müssen, du — write the full question with question mark)',
       acceptedAnswers: ['Musstest du gestern lange arbeiten?'],
       answerMode: 'normalized',
       placeholder: 'Musstest du ...?',
       maxLength: 50,
-      explanation: 'The Präteritum of müssen for du is musstest, the natural spoken form for asking about a past obligation.',
+      explanation:
+        'The Präteritum of müssen for du is musstest, the natural spoken form for asking about a past obligation.',
     },
     {
       id: 'ch30-ex-21',
@@ -577,12 +658,14 @@ export const chapter030: ChapterDefinition = {
       grammarFocus: ['error-spotting', 'mixed-tense'],
       instruction:
         'This short story is told in the Präteritum, but one verb accidentally breaks the pattern. Write only the corrected verb form (in the Präteritum) that should replace it. Capitalisation is not checked.',
-      prompt: 'Story: "Der alte Mann wohnte allein in einem kleinen Haus. Jeden Morgen ging er in den Park. Er hat immer die Vögel gefüttert. Danach kehrte er nach Hause zurück." Which Präteritum form should replace hat ... gefüttert?',
+      prompt:
+        'Story: "Der alte Mann wohnte allein in einem kleinen Haus. Jeden Morgen ging er in den Park. Er hat immer die Vögel gefüttert. Danach kehrte er nach Hause zurück." Which Präteritum form should replace hat ... gefüttert?',
       acceptedAnswers: ['fütterte'],
       answerMode: 'caseInsensitive',
       placeholder: 'fütterte',
       maxLength: 15,
-      explanation: 'The rest of the story is told in the Präteritum (wohnte, ging, kehrte zurück); to stay consistent, füttern should also appear as fütterte, not as the Perfekt hat gefüttert.',
+      explanation:
+        'The rest of the story is told in the Präteritum (wohnte, ging, kehrte zurück); to stay consistent, füttern should also appear as fütterte, not as the Perfekt hat gefüttert.',
     },
     {
       id: 'ch30-ex-22',
@@ -593,12 +676,17 @@ export const chapter030: ChapterDefinition = {
       grammarFocus: ['register-judgment', 'both-correct'],
       instruction:
         'Rewrite the sentence so that it fits a spoken conversation instead of a written story: change the Präteritum verb to the Perfekt. Capitalisation is checked; no full stop is required.',
-      prompt: 'Written narrative: "Wir kauften das Geschenk zusammen." Rewrite it as you would say it out loud.',
-      acceptedAnswers: ['Wir haben das Geschenk zusammen gekauft.', 'Wir haben das Geschenk zusammen gekauft'],
+      prompt:
+        'Written narrative: "Wir kauften das Geschenk zusammen." Rewrite it as you would say it out loud.',
+      acceptedAnswers: [
+        'Wir haben das Geschenk zusammen gekauft.',
+        'Wir haben das Geschenk zusammen gekauft',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wir haben ...',
       maxLength: 60,
-      explanation: 'Both Wir kauften das Geschenk zusammen and Wir haben das Geschenk zusammen gekauft are correct and describe the same event; the Perfekt is the natural spoken version.',
+      explanation:
+        'Both Wir kauften das Geschenk zusammen and Wir haben das Geschenk zusammen gekauft are correct and describe the same event; the Perfekt is the natural spoken version.',
     },
     {
       id: 'ch30-ex-23',
@@ -609,13 +697,18 @@ export const chapter030: ChapterDefinition = {
       grammarFocus: ['rewrite', 'perfekt-to-präteritum'],
       instruction:
         'Rewrite this short two-sentence narrative from the Perfekt (spoken style) into the Präteritum (written narrative style). Capitalisation is checked.',
-      prompt: 'Rewrite: "Die Frau hat den Brief gelesen. Danach hat sie geweint." into the Präteritum.',
-      acceptedAnswers: ['Die Frau las den Brief. Danach weinte sie.', 'Die Frau las den Brief. Danach weinte sie'],
+      prompt:
+        'Rewrite: "Die Frau hat den Brief gelesen. Danach hat sie geweint." into the Präteritum.',
+      acceptedAnswers: [
+        'Die Frau las den Brief. Danach weinte sie.',
+        'Die Frau las den Brief. Danach weinte sie',
+      ],
       answerMode: 'normalized',
       placeholder: 'Die Frau ... Danach ...',
       multiline: true,
       maxLength: 90,
-      explanation: 'lesen becomes las and weinen becomes weinte in the Präteritum, giving the natural written-narrative version of the same two events.',
+      explanation:
+        'lesen becomes las and weinen becomes weinte in the Präteritum, giving the natural written-narrative version of the same two events.',
     },
     {
       id: 'ch30-ex-24',
@@ -626,13 +719,18 @@ export const chapter030: ChapterDefinition = {
       grammarFocus: ['rewrite', 'consistency', 'mixed-review'],
       instruction:
         'Complete this natural spoken sentence: sollen and sein go in the Präteritum, and "there was no food" uses the es gab construction. Capitalisation is checked.',
-      prompt: 'Complete: "Ich sollte zur Party kommen, aber ich war krank, und es ___ dort sowieso kein Essen." (geben, past)',
-      acceptedAnswers: ['Ich sollte zur Party kommen, aber ich war krank, und es gab dort sowieso kein Essen.', 'Ich sollte zur Party kommen, aber ich war krank, und es gab dort sowieso kein Essen'],
+      prompt:
+        'Complete: "Ich sollte zur Party kommen, aber ich war krank, und es ___ dort sowieso kein Essen." (geben, past)',
+      acceptedAnswers: [
+        'Ich sollte zur Party kommen, aber ich war krank, und es gab dort sowieso kein Essen.',
+        'Ich sollte zur Party kommen, aber ich war krank, und es gab dort sowieso kein Essen',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich sollte ..., aber ich war ..., und es gab ...',
       multiline: true,
       maxLength: 110,
-      explanation: 'sollen and sein correctly stay in the Präteritum (sollte, war), and geben also takes its natural Präteritum form es gab rather than the unnatural es hat gegeben.',
+      explanation:
+        'sollen and sein correctly stay in the Präteritum (sollte, war), and geben also takes its natural Präteritum form es gab rather than the unnatural es hat gegeben.',
     },
     {
       id: 'ch30-ex-25',
@@ -642,7 +740,8 @@ export const chapter030: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['register', 'sein-exception'],
       instruction: 'Decide which form sounds more natural in casual speech.',
-      prompt: 'A text message to a friend says: "Bist du gestern zu Hause gewesen?" Which form would sound more natural here?',
+      prompt:
+        'A text message to a friend says: "Bist du gestern zu Hause gewesen?" Which form would sound more natural here?',
       options: [
         { id: 'a', text: 'gewesen — Warst du gestern zu Hause? would be more natural' },
         { id: 'b', text: 'Bist — it is already the most natural form' },
@@ -650,7 +749,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'd', text: 'zu Hause — it should be daheim' },
       ],
       correctOptionId: 'a',
-      explanation: 'sein is normally used in the Präteritum (war) even in casual speech, so Warst du gestern zu Hause? is more natural than bist ... gewesen.',
+      explanation:
+        'sein is normally used in the Präteritum (war) even in casual speech, so Warst du gestern zu Hause? is more natural than bist ... gewesen.',
     },
     {
       id: 'ch30-ex-26',
@@ -668,7 +768,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'd', text: 'Imperativ' },
       ],
       correctOptionId: 'a',
-      explanation: 'sollten is the Präteritum of sollen, the natural form for this modal verb even in speech.',
+      explanation:
+        'sollten is the Präteritum of sollen, the natural form for this modal verb even in speech.',
     },
     {
       id: 'ch30-ex-27',
@@ -678,7 +779,8 @@ export const chapter030: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['register', 'narrative'],
       instruction: 'Decide what kind of text this sentence most likely comes from.',
-      prompt: 'Which type of text is "Meine Großeltern lebten in einer kleinen Stadt" most likely from?',
+      prompt:
+        'Which type of text is "Meine Großeltern lebten in einer kleinen Stadt" most likely from?',
       options: [
         { id: 'a', text: 'A written story or narrative' },
         { id: 'b', text: 'A phone call' },
@@ -686,7 +788,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'd', text: 'A spoken greeting' },
       ],
       correctOptionId: 'a',
-      explanation: 'An ordinary verb (leben) in the Präteritum, describing background, is typical of written narration rather than casual speech.',
+      explanation:
+        'An ordinary verb (leben) in the Präteritum, describing background, is typical of written narration rather than casual speech.',
     },
     {
       id: 'ch30-ex-28',
@@ -696,7 +799,8 @@ export const chapter030: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['register-choice', 'spoken'],
       instruction: 'Choose the more natural option for the given context.',
-      prompt: 'You are telling a colleague about last night\'s dinner. Which sentence sounds more natural?',
+      prompt:
+        "You are telling a colleague about last night's dinner. Which sentence sounds more natural?",
       options: [
         { id: 'a', text: 'Wir haben gestern Abend zusammen gegessen.' },
         { id: 'b', text: 'Wir aßen gestern Abend zusammen.' },
@@ -704,7 +808,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'd', text: 'Wir sind gestern Abend zusammen gegessen gehabt.' },
       ],
       correctOptionId: 'a',
-      explanation: 'For an ordinary verb like essen in a casual spoken account, the Perfekt (haben gegessen) is the natural choice.',
+      explanation:
+        'For an ordinary verb like essen in a casual spoken account, the Perfekt (haben gegessen) is the natural choice.',
     },
     {
       id: 'ch30-ex-29',
@@ -714,7 +819,8 @@ export const chapter030: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['register-choice', 'narrative'],
       instruction: 'Choose the more natural option for the given context.',
-      prompt: 'You are writing a detective story. Which sentence fits the narrative style best?',
+      prompt:
+        'You are writing a detective story. Which sentence fits the narrative style best?',
       options: [
         { id: 'a', text: 'Der Detektiv untersuchte den Tatort genau.' },
         { id: 'b', text: 'Der Detektiv hat den Tatort genau untersucht.' },
@@ -722,7 +828,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'd', text: 'Der Detektiv wird den Tatort genau untersuchen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'A written narrative normally uses the Präteritum (untersuchte), even for an ordinary verb.',
+      explanation:
+        'A written narrative normally uses the Präteritum (untersuchte), even for an ordinary verb.',
     },
     {
       id: 'ch30-ex-30',
@@ -732,7 +839,8 @@ export const chapter030: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['register-choice', 'modal-verb', 'dürfen'],
       instruction: 'Choose the more natural option for the given context.',
-      prompt: 'You are telling a friend about your childhood. Which sentence sounds more natural?',
+      prompt:
+        'You are telling a friend about your childhood. Which sentence sounds more natural?',
       options: [
         { id: 'a', text: 'Als Kind durfte ich nicht spät fernsehen.' },
         { id: 'b', text: 'Als Kind habe ich nicht spät fernsehen gedurft.' },
@@ -740,7 +848,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'd', text: 'Als Kind werde ich nicht spät ferngesehen haben.' },
       ],
       correctOptionId: 'a',
-      explanation: 'dürfen naturally appears in the Präteritum (durfte), even in a spoken account of the past.',
+      explanation:
+        'dürfen naturally appears in the Präteritum (durfte), even in a spoken account of the past.',
     },
     {
       id: 'ch30-ex-31',
@@ -750,7 +859,8 @@ export const chapter030: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['register-choice', 'modal-verb', 'mögen'],
       instruction: 'Choose the more natural option for the given context.',
-      prompt: 'You are describing a childhood habit to a friend. Which sentence sounds more natural?',
+      prompt:
+        'You are describing a childhood habit to a friend. Which sentence sounds more natural?',
       options: [
         { id: 'a', text: 'Sie mochte als Kind keinen Fisch.' },
         { id: 'b', text: 'Sie hat als Kind keinen Fisch gemocht.' },
@@ -758,7 +868,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'd', text: 'Sie wird als Kind keinen Fisch mögen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'mögen prefers the Präteritum (mochte), even in casual conversation about the past.',
+      explanation:
+        'mögen prefers the Präteritum (mochte), even in casual conversation about the past.',
     },
     {
       id: 'ch30-ex-32',
@@ -767,16 +878,21 @@ export const chapter030: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['register-choice', 'modal-verb', 'sollen'],
-      instruction: 'Choose the sentence that keeps sollen in its natural spoken past form.',
+      instruction:
+        'Choose the sentence that keeps sollen in its natural spoken past form.',
       prompt: 'Which sentence correctly keeps sollen in its natural spoken past form?',
       options: [
         { id: 'a', text: 'Ich sollte um acht Uhr da sein, aber ich kam zu spät.' },
-        { id: 'b', text: 'Ich habe um acht Uhr da sein gesollt, aber ich bin zu spät gekommen.' },
+        {
+          id: 'b',
+          text: 'Ich habe um acht Uhr da sein gesollt, aber ich bin zu spät gekommen.',
+        },
         { id: 'c', text: 'Ich soll um acht Uhr da sein gehabt.' },
         { id: 'd', text: 'Ich werde um acht Uhr da gewesen sein.' },
       ],
       correctOptionId: 'a',
-      explanation: 'sollen naturally appears in the Präteritum (sollte), the form used even in relaxed speech.',
+      explanation:
+        'sollen naturally appears in the Präteritum (sollte), the form used even in relaxed speech.',
     },
     {
       id: 'ch30-ex-33',
@@ -785,8 +901,10 @@ export const chapter030: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['consistency', 'narrative'],
-      instruction: 'Choose the sentence that keeps a consistent narrative tense throughout.',
-      prompt: 'Which sentence keeps a consistent narrative tense for a written story about a king?',
+      instruction:
+        'Choose the sentence that keeps a consistent narrative tense throughout.',
+      prompt:
+        'Which sentence keeps a consistent narrative tense for a written story about a king?',
       options: [
         { id: 'a', text: 'Der König herrschte lange und regierte weise.' },
         { id: 'b', text: 'Der König herrschte lange und hat weise regiert.' },
@@ -794,7 +912,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'd', text: 'Der König herrscht lange und hat weise regiert.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Both verbs stay in the Präteritum (herrschte, regierte), matching the consistent tense expected in a short written narrative.',
+      explanation:
+        'Both verbs stay in the Präteritum (herrschte, regierte), matching the consistent tense expected in a short written narrative.',
     },
     {
       id: 'ch30-ex-34',
@@ -803,8 +922,10 @@ export const chapter030: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['consistency', 'mixed-tense', 'spoken'],
-      instruction: 'Choose the sentence that mixes tenses correctly for natural spoken German.',
-      prompt: 'Which spoken sentence correctly mixes tenses (modal in the Präteritum, ordinary verb in the Perfekt)?',
+      instruction:
+        'Choose the sentence that mixes tenses correctly for natural spoken German.',
+      prompt:
+        'Which spoken sentence correctly mixes tenses (modal in the Präteritum, ordinary verb in the Perfekt)?',
       options: [
         { id: 'a', text: 'Ich musste früh aufstehen und habe den Bus verpasst.' },
         { id: 'b', text: 'Ich musste früh aufstehen und verpasste den Bus.' },
@@ -812,7 +933,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'd', text: 'Ich muss früh aufstehen und habe den Bus verpasst gehabt.' },
       ],
       correctOptionId: 'a',
-      explanation: 'musste (a modal, in the Präteritum) combined with habe ... verpasst (an ordinary verb, in the Perfekt) is the natural spoken mix.',
+      explanation:
+        'musste (a modal, in the Präteritum) combined with habe ... verpasst (an ordinary verb, in the Perfekt) is the natural spoken mix.',
     },
     {
       id: 'ch30-ex-35',
@@ -822,7 +944,8 @@ export const chapter030: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['regional-variation'],
       instruction: 'Choose the fact that correctly describes regional variation.',
-      prompt: 'In southern Germany, Austria, and Switzerland, which tense is even more dominant in speech than in the north?',
+      prompt:
+        'In southern Germany, Austria, and Switzerland, which tense is even more dominant in speech than in the north?',
       options: [
         { id: 'a', text: 'Perfekt' },
         { id: 'b', text: 'Präteritum' },
@@ -830,7 +953,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'd', text: 'Futur II' },
       ],
       correctOptionId: 'a',
-      explanation: 'In the south, the Perfekt is preferred even more strongly in speech, sometimes for almost every verb.',
+      explanation:
+        'In the south, the Perfekt is preferred even more strongly in speech, sometimes for almost every verb.',
     },
     {
       id: 'ch30-ex-36',
@@ -840,7 +964,8 @@ export const chapter030: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['safe-default', 'spoken'],
       instruction: 'Choose the generally safer default for spoken German.',
-      prompt: 'If you are unsure whether to use the Perfekt or the Präteritum in a spoken sentence, which is generally the safer choice?',
+      prompt:
+        'If you are unsure whether to use the Perfekt or the Präteritum in a spoken sentence, which is generally the safer choice?',
       options: [
         { id: 'a', text: 'Perfekt' },
         { id: 'b', text: 'Präteritum' },
@@ -848,7 +973,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'd', text: 'Futur I' },
       ],
       correctOptionId: 'a',
-      explanation: 'The Perfekt is always a safe, correct choice in spoken German, even when a verb could also take the Präteritum.',
+      explanation:
+        'The Perfekt is always a safe, correct choice in spoken German, even when a verb could also take the Präteritum.',
     },
     {
       id: 'ch30-ex-37',
@@ -857,7 +983,8 @@ export const chapter030: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['meaning', 'perfekt-vs-präteritum'],
-      instruction: 'Choose the statement that correctly describes the meaning difference.',
+      instruction:
+        'Choose the statement that correctly describes the meaning difference.',
       prompt: 'What is true of Er ist gefahren and Er fuhr?',
       options: [
         { id: 'a', text: 'Both describe the same event with the same meaning.' },
@@ -866,7 +993,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'd', text: 'Er ist gefahren means he is still travelling now.' },
       ],
       correctOptionId: 'a',
-      explanation: 'At this level, the Perfekt and the Präteritum describe the same past event with the same meaning; only the register differs.',
+      explanation:
+        'At this level, the Perfekt and the Präteritum describe the same past event with the same meaning; only the register differs.',
     },
     {
       id: 'ch30-ex-38',
@@ -876,7 +1004,8 @@ export const chapter030: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['register', 'narrative'],
       instruction: 'Decide which register this sentence belongs to.',
-      prompt: 'A newspaper article reports on an accident: "Ein Fahrer verlor die Kontrolle über sein Auto." Which register is this?',
+      prompt:
+        'A newspaper article reports on an accident: "Ein Fahrer verlor die Kontrolle über sein Auto." Which register is this?',
       options: [
         { id: 'a', text: 'Written narration (Präteritum)' },
         { id: 'b', text: 'Casual spoken German (Perfekt)' },
@@ -884,7 +1013,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'd', text: 'A future prediction' },
       ],
       correctOptionId: 'a',
-      explanation: 'verlor is the Präteritum of verlieren, the normal tense for a news report describing a past event.',
+      explanation:
+        'verlor is the Präteritum of verlieren, the normal tense for a news report describing a past event.',
     },
     {
       id: 'ch30-ex-39',
@@ -894,7 +1024,8 @@ export const chapter030: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['register-choice', 'spoken'],
       instruction: 'Choose the more natural option for a casual text message.',
-      prompt: 'Choose the most natural way to text a friend: "Guess what happened to me today!"',
+      prompt:
+        'Choose the most natural way to text a friend: "Guess what happened to me today!"',
       options: [
         { id: 'a', text: 'Stell dir vor, was mir heute passiert ist!' },
         { id: 'b', text: 'Stell dir vor, was mir heute passierte!' },
@@ -902,7 +1033,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'd', text: 'Stell dir vor, was mir heute passieren wird!' },
       ],
       correctOptionId: 'a',
-      explanation: 'passiert ist (Perfekt) is the natural choice for an ordinary verb in a casual written message.',
+      explanation:
+        'passiert ist (Perfekt) is the natural choice for an ordinary verb in a casual written message.',
     },
     {
       id: 'ch30-ex-40',
@@ -911,16 +1043,22 @@ export const chapter030: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['narrative', 'stylistics'],
-      instruction: 'Choose the correct explanation for why narratives favour the Präteritum.',
-      prompt: 'Why do written narratives often prefer the Präteritum over the Perfekt for a whole story?',
+      instruction:
+        'Choose the correct explanation for why narratives favour the Präteritum.',
+      prompt:
+        'Why do written narratives often prefer the Präteritum over the Perfekt for a whole story?',
       options: [
-        { id: 'a', text: 'It avoids repeating haben or sein as an auxiliary in every sentence.' },
+        {
+          id: 'a',
+          text: 'It avoids repeating haben or sein as an auxiliary in every sentence.',
+        },
         { id: 'b', text: 'The Perfekt is grammatically wrong in stories.' },
         { id: 'c', text: 'The Präteritum only exists in stories.' },
         { id: 'd', text: 'The Perfekt can only refer to the future.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Using the Präteritum lets a writer move a story forward without repeating an auxiliary verb in every sentence.',
+      explanation:
+        'Using the Präteritum lets a writer move a story forward without repeating an auxiliary verb in every sentence.',
     },
     {
       id: 'ch30-ex-41',
@@ -929,12 +1067,14 @@ export const chapter030: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'recognition',
       grammarFocus: ['sein', 'register', 'error-correction'],
-      instruction: 'Find the token that uses a less natural form for spoken German, and give the natural correction.',
+      instruction:
+        'Find the token that uses a less natural form for spoken German, and give the natural correction.',
       prompt: 'Ein Freund erzählt von seinem Tag. Etwas klingt unnatürlich.',
       tokens: ['Ich', 'bin', 'gestern', 'sehr', 'müde', 'gewesen.'],
       errorTokenIndex: 1,
       correction: 'war',
-      explanation: 'sein is normally used in the Präteritum (war), even in speech, rather than the Perfekt (bin ... gewesen): Ich war gestern sehr müde.',
+      explanation:
+        'sein is normally used in the Präteritum (war), even in speech, rather than the Perfekt (bin ... gewesen): Ich war gestern sehr müde.',
     },
     {
       id: 'ch30-ex-42',
@@ -943,12 +1083,14 @@ export const chapter030: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'recognition',
       grammarFocus: ['haben', 'register', 'error-correction'],
-      instruction: 'Find the token that uses a less natural form for spoken German, and give the natural correction.',
+      instruction:
+        'Find the token that uses a less natural form for spoken German, and give the natural correction.',
       prompt: 'Jemand beschreibt seinen Terminplan. Etwas klingt unnatürlich.',
       tokens: ['Er', 'hat', 'keine', 'Zeit', 'gehabt.'],
       errorTokenIndex: 1,
       correction: 'hatte',
-      explanation: 'haben prefers the Präteritum (hatte) even in speech; hat ... gehabt sounds unusual compared to Er hatte keine Zeit.',
+      explanation:
+        'haben prefers the Präteritum (hatte) even in speech; hat ... gehabt sounds unusual compared to Er hatte keine Zeit.',
     },
     {
       id: 'ch30-ex-43',
@@ -957,12 +1099,15 @@ export const chapter030: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'controlled',
       grammarFocus: ['modal-verb', 'können', 'register', 'error-correction'],
-      instruction: 'Find the token that uses a less natural form for spoken German, and give the natural correction.',
-      prompt: 'Jemand erklärt, warum sie etwas nicht begriffen hat. Etwas klingt unnatürlich.',
+      instruction:
+        'Find the token that uses a less natural form for spoken German, and give the natural correction.',
+      prompt:
+        'Jemand erklärt, warum sie etwas nicht begriffen hat. Etwas klingt unnatürlich.',
       tokens: ['Sie', 'hat', 'das', 'nicht', 'verstehen', 'gekonnt.'],
       errorTokenIndex: 1,
       correction: 'konnte',
-      explanation: 'können naturally appears in the Präteritum (konnte) even in speech; the natural sentence is Sie konnte das nicht verstehen.',
+      explanation:
+        'können naturally appears in the Präteritum (konnte) even in speech; the natural sentence is Sie konnte das nicht verstehen.',
     },
     {
       id: 'ch30-ex-44',
@@ -971,12 +1116,14 @@ export const chapter030: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'controlled',
       grammarFocus: ['modal-verb', 'müssen', 'register', 'error-correction'],
-      instruction: 'Find the token that uses a less natural form for spoken German, and give the natural correction.',
+      instruction:
+        'Find the token that uses a less natural form for spoken German, and give the natural correction.',
       prompt: 'Jemand erzählt vom Morgen. Etwas klingt unnatürlich.',
       tokens: ['Wir', 'haben', 'früh', 'aufstehen', 'gemusst.'],
       errorTokenIndex: 1,
       correction: 'mussten',
-      explanation: 'müssen naturally appears in the Präteritum (mussten) even in speech; the natural sentence is Wir mussten früh aufstehen.',
+      explanation:
+        'müssen naturally appears in the Präteritum (mussten) even in speech; the natural sentence is Wir mussten früh aufstehen.',
     },
     {
       id: 'ch30-ex-45',
@@ -985,12 +1132,14 @@ export const chapter030: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'controlled',
       grammarFocus: ['modal-verb', 'wollen', 'register', 'error-correction'],
-      instruction: 'Find the token that uses a less natural form for spoken German, and give the natural correction.',
+      instruction:
+        'Find the token that uses a less natural form for spoken German, and give the natural correction.',
       prompt: 'Jemand erklärt, warum er etwas abgelehnt hat. Etwas klingt unnatürlich.',
       tokens: ['Ich', 'habe', 'das', 'nicht', 'gewollt.'],
       errorTokenIndex: 1,
       correction: 'wollte',
-      explanation: 'wollen naturally appears in the Präteritum (wollte) even in speech; the natural sentence is Ich wollte das nicht.',
+      explanation:
+        'wollen naturally appears in the Präteritum (wollte) even in speech; the natural sentence is Ich wollte das nicht.',
     },
     {
       id: 'ch30-ex-46',
@@ -999,12 +1148,14 @@ export const chapter030: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'controlled',
       grammarFocus: ['modal-verb', 'dürfen', 'register', 'error-correction'],
-      instruction: 'Find the token that uses a less natural form for spoken German, and give the natural correction.',
+      instruction:
+        'Find the token that uses a less natural form for spoken German, and give the natural correction.',
       prompt: 'Jemand erzählt von seiner Kindheit. Etwas klingt unnatürlich.',
       tokens: ['Er', 'hat', 'als', 'Kind', 'nicht', 'fernsehen', 'gedurft.'],
       errorTokenIndex: 1,
       correction: 'durfte',
-      explanation: 'dürfen naturally appears in the Präteritum (durfte) even in speech; the natural sentence is Er durfte als Kind nicht fernsehen.',
+      explanation:
+        'dürfen naturally appears in the Präteritum (durfte) even in speech; the natural sentence is Er durfte als Kind nicht fernsehen.',
     },
     {
       id: 'ch30-ex-47',
@@ -1013,12 +1164,14 @@ export const chapter030: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'controlled',
       grammarFocus: ['modal-verb', 'sollen', 'register', 'error-correction'],
-      instruction: 'Find the token that uses a less natural form for spoken German, and give the natural correction.',
+      instruction:
+        'Find the token that uses a less natural form for spoken German, and give the natural correction.',
       prompt: 'Jemand macht einem Freund einen Vorwurf. Etwas klingt unnatürlich.',
       tokens: ['Du', 'hast', 'pünktlich', 'kommen', 'gesollt.'],
       errorTokenIndex: 1,
       correction: 'solltest',
-      explanation: 'sollen naturally appears in the Präteritum (solltest) even in speech; the natural sentence is Du solltest pünktlich kommen.',
+      explanation:
+        'sollen naturally appears in the Präteritum (solltest) even in speech; the natural sentence is Du solltest pünktlich kommen.',
     },
     {
       id: 'ch30-ex-48',
@@ -1027,12 +1180,14 @@ export const chapter030: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'production',
       grammarFocus: ['es-gab', 'register', 'error-correction'],
-      instruction: 'Find the token that uses a less natural form for spoken German, and give the natural correction.',
+      instruction:
+        'Find the token that uses a less natural form for spoken German, and give the natural correction.',
       prompt: 'Jemand beschreibt einen Engpass in der Küche. Etwas klingt unnatürlich.',
       tokens: ['Es', 'hat', 'gestern', 'kein', 'Brot', 'mehr', 'gegeben.'],
       errorTokenIndex: 1,
       correction: 'gab',
-      explanation: 'es gab is the natural past-tense expression for "there was/were"; es hat ... gegeben sounds unnatural even though it is grammatically possible.',
+      explanation:
+        'es gab is the natural past-tense expression for "there was/were"; es hat ... gegeben sounds unnatural even though it is grammatically possible.',
     },
     {
       id: 'ch30-ex-49',
@@ -1041,12 +1196,15 @@ export const chapter030: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'production',
       grammarFocus: ['modal-verb', 'mögen', 'register', 'error-correction'],
-      instruction: 'Find the token that uses a less natural form for spoken German, and give the natural correction.',
-      prompt: 'Jemand erzählt von den Essgewohnheiten einer Freundin als Kind. Etwas klingt unnatürlich.',
+      instruction:
+        'Find the token that uses a less natural form for spoken German, and give the natural correction.',
+      prompt:
+        'Jemand erzählt von den Essgewohnheiten einer Freundin als Kind. Etwas klingt unnatürlich.',
       tokens: ['Sie', 'hat', 'als', 'Kind', 'keinen', 'Fisch', 'gemocht.'],
       errorTokenIndex: 1,
       correction: 'mochte',
-      explanation: 'mögen naturally appears in the Präteritum (mochte) even in speech; the natural sentence is Sie mochte als Kind keinen Fisch.',
+      explanation:
+        'mögen naturally appears in the Präteritum (mochte) even in speech; the natural sentence is Sie mochte als Kind keinen Fisch.',
     },
     {
       id: 'ch30-ex-50',
@@ -1055,12 +1213,26 @@ export const chapter030: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['narrative', 'consistency', 'error-correction'],
-      instruction: 'Find the token that breaks the narrative tense pattern, and give the natural correction.',
-      prompt: 'Eine Geschichte wird im Präteritum erzählt, aber ein Verb bricht das Muster.',
-      tokens: ['Die', 'Frau', 'öffnete', 'die', 'Tür', 'und', 'hat', 'ihren', 'Freund', 'gesehen.'],
+      instruction:
+        'Find the token that breaks the narrative tense pattern, and give the natural correction.',
+      prompt:
+        'Eine Geschichte wird im Präteritum erzählt, aber ein Verb bricht das Muster.',
+      tokens: [
+        'Die',
+        'Frau',
+        'öffnete',
+        'die',
+        'Tür',
+        'und',
+        'hat',
+        'ihren',
+        'Freund',
+        'gesehen.',
+      ],
       errorTokenIndex: 6,
       correction: 'sah',
-      explanation: 'The rest of the sentence is in the Präteritum (öffnete); to stay consistent, sehen should also appear as sah, not as the Perfekt hat ... gesehen.',
+      explanation:
+        'The rest of the sentence is in the Präteritum (öffnete); to stay consistent, sehen should also appear as sah, not as the Perfekt hat ... gesehen.',
     },
     {
       id: 'ch30-ex-51',
@@ -1069,12 +1241,25 @@ export const chapter030: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['narrative', 'consistency', 'error-correction'],
-      instruction: 'Find the token that breaks the narrative tense pattern, and give the natural correction.',
-      prompt: 'Eine Geschichte wird im Präteritum erzählt, aber ein Verb bricht das Muster.',
-      tokens: ['Der', 'Junge', 'lief', 'durch', 'den', 'Park', 'und', 'ist', 'gestolpert.'],
+      instruction:
+        'Find the token that breaks the narrative tense pattern, and give the natural correction.',
+      prompt:
+        'Eine Geschichte wird im Präteritum erzählt, aber ein Verb bricht das Muster.',
+      tokens: [
+        'Der',
+        'Junge',
+        'lief',
+        'durch',
+        'den',
+        'Park',
+        'und',
+        'ist',
+        'gestolpert.',
+      ],
       errorTokenIndex: 7,
       correction: 'stolperte',
-      explanation: 'The rest of the sentence is in the Präteritum (lief); to stay consistent, stolpern should also appear as stolperte, not as the Perfekt ist gestolpert.',
+      explanation:
+        'The rest of the sentence is in the Präteritum (lief); to stay consistent, stolpern should also appear as stolperte, not as the Perfekt ist gestolpert.',
     },
     {
       id: 'ch30-ex-52',
@@ -1083,12 +1268,26 @@ export const chapter030: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['spoken-register', 'consistency', 'error-correction'],
-      instruction: 'Find the token that breaks the spoken tense pattern, and give the natural correction.',
-      prompt: 'Jemand erzählt mündlich von seinem Urlaub, wechselt aber ohne Grund die Zeitform.',
-      tokens: ['Wir', 'sind', 'ans', 'Meer', 'gefahren', 'und', 'badeten', 'den', 'ganzen', 'Tag.'],
+      instruction:
+        'Find the token that breaks the spoken tense pattern, and give the natural correction.',
+      prompt:
+        'Jemand erzählt mündlich von seinem Urlaub, wechselt aber ohne Grund die Zeitform.',
+      tokens: [
+        'Wir',
+        'sind',
+        'ans',
+        'Meer',
+        'gefahren',
+        'und',
+        'badeten',
+        'den',
+        'ganzen',
+        'Tag.',
+      ],
       errorTokenIndex: 6,
       correction: 'haben gebadet',
-      explanation: 'This spoken account starts in the Perfekt (sind ... gefahren); for consistency, baden should also stay in the Perfekt (haben gebadet) instead of switching to the Präteritum badeten without reason.',
+      explanation:
+        'This spoken account starts in the Perfekt (sind ... gefahren); for consistency, baden should also stay in the Perfekt (haben gebadet) instead of switching to the Präteritum badeten without reason.',
     },
     {
       id: 'ch30-ex-53',
@@ -1097,13 +1296,15 @@ export const chapter030: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['modal-verb', 'dürfen', 'präteritum'],
-      instruction: 'Complete the sentence with the correct Präteritum form of dürfen. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct Präteritum form of dürfen. Capitalisation is not checked.',
       prompt: 'Als Kind ___ ich nicht allein zur Schule gehen. (dürfen, ich)',
       acceptedAnswers: ['durfte'],
       answerMode: 'caseInsensitive',
       placeholder: 'durfte',
       maxLength: 10,
-      explanation: 'The Präteritum of dürfen for ich is durfte, the normal form even in casual speech.',
+      explanation:
+        'The Präteritum of dürfen for ich is durfte, the normal form even in casual speech.',
     },
     {
       id: 'ch30-ex-54',
@@ -1112,13 +1313,15 @@ export const chapter030: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['modal-verb', 'sollen', 'präteritum'],
-      instruction: 'Complete the sentence with the correct Präteritum form of sollen. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct Präteritum form of sollen. Capitalisation is not checked.',
       prompt: 'Du ___ mich gestern anrufen. (sollen, du)',
       acceptedAnswers: ['solltest'],
       answerMode: 'caseInsensitive',
       placeholder: 'solltest',
       maxLength: 12,
-      explanation: 'The Präteritum of sollen for du is solltest, the normal form even in casual speech.',
+      explanation:
+        'The Präteritum of sollen for du is solltest, the normal form even in casual speech.',
     },
     {
       id: 'ch30-ex-55',
@@ -1127,13 +1330,15 @@ export const chapter030: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['modal-verb', 'mögen', 'präteritum'],
-      instruction: 'Complete the sentence with the correct Präteritum form of mögen. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct Präteritum form of mögen. Capitalisation is not checked.',
       prompt: 'Sie ___ als Kind kein Gemüse. (mögen, sie/singular)',
       acceptedAnswers: ['mochte'],
       answerMode: 'caseInsensitive',
       placeholder: 'mochte',
       maxLength: 10,
-      explanation: 'The Präteritum of mögen for sie (singular) is mochte, the normal form even in casual speech.',
+      explanation:
+        'The Präteritum of mögen for sie (singular) is mochte, the normal form even in casual speech.',
     },
     {
       id: 'ch30-ex-56',
@@ -1142,13 +1347,15 @@ export const chapter030: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['modal-verb', 'können', 'präteritum'],
-      instruction: 'Complete the sentence with the correct Präteritum form of können. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct Präteritum form of können. Capitalisation is not checked.',
       prompt: 'Wir ___ leider nicht kommen. (können, wir)',
       acceptedAnswers: ['konnten'],
       answerMode: 'caseInsensitive',
       placeholder: 'konnten',
       maxLength: 12,
-      explanation: 'The Präteritum of können for wir is konnten, the normal form even in casual speech.',
+      explanation:
+        'The Präteritum of können for wir is konnten, the normal form even in casual speech.',
     },
     {
       id: 'ch30-ex-57',
@@ -1159,7 +1366,8 @@ export const chapter030: ChapterDefinition = {
       grammarFocus: ['perfekt', 'spoken-register'],
       instruction:
         'Rewrite the sentence in the Perfekt, as you would naturally say it in conversation. Capitalisation is checked; no full stop is required.',
-      prompt: 'Die Kinder spielten den ganzen Nachmittag im Garten. (rewrite in the Perfekt)',
+      prompt:
+        'Die Kinder spielten den ganzen Nachmittag im Garten. (rewrite in the Perfekt)',
       acceptedAnswers: [
         'Die Kinder haben den ganzen Nachmittag im Garten gespielt.',
         'Die Kinder haben den ganzen Nachmittag im Garten gespielt',
@@ -1167,7 +1375,8 @@ export const chapter030: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Die Kinder haben ...',
       maxLength: 80,
-      explanation: 'spielen forms its Perfekt with haben and the participle gespielt: Die Kinder haben den ganzen Nachmittag im Garten gespielt.',
+      explanation:
+        'spielen forms its Perfekt with haben and the participle gespielt: Die Kinder haben den ganzen Nachmittag im Garten gespielt.',
     },
     {
       id: 'ch30-ex-58',
@@ -1178,7 +1387,8 @@ export const chapter030: ChapterDefinition = {
       grammarFocus: ['präteritum', 'narrative-register'],
       instruction:
         'Rewrite the sentence in the Präteritum, as it would appear in a written story. Capitalisation is checked; no full stop is required.',
-      prompt: 'Der Mann hat die Zeitung gelesen und hat Kaffee getrunken. (rewrite in the Präteritum)',
+      prompt:
+        'Der Mann hat die Zeitung gelesen und hat Kaffee getrunken. (rewrite in the Präteritum)',
       acceptedAnswers: [
         'Der Mann las die Zeitung und trank Kaffee.',
         'Der Mann las die Zeitung und trank Kaffee',
@@ -1187,7 +1397,8 @@ export const chapter030: ChapterDefinition = {
       placeholder: 'Der Mann las ...',
       multiline: true,
       maxLength: 80,
-      explanation: 'lesen becomes las and trinken becomes trank in the Präteritum, giving the natural written-narrative version of the same two events.',
+      explanation:
+        'lesen becomes las and trinken becomes trank in the Präteritum, giving the natural written-narrative version of the same two events.',
     },
     {
       id: 'ch30-ex-59',
@@ -1198,7 +1409,8 @@ export const chapter030: ChapterDefinition = {
       grammarFocus: ['mixed-tense', 'modal-exception'],
       instruction:
         'Complete the spoken sentence, remembering that müssen stays in the Präteritum while verpassen takes the Perfekt. Capitalisation is checked.',
-      prompt: 'Complete: "Ich ___ mich beeilen, aber ich ___ trotzdem den Zug verpasst." (müssen: musste; verpassen: habe ... verpasst — write the full sentence)',
+      prompt:
+        'Complete: "Ich ___ mich beeilen, aber ich ___ trotzdem den Zug verpasst." (müssen: musste; verpassen: habe ... verpasst — write the full sentence)',
       acceptedAnswers: [
         'Ich musste mich beeilen, aber ich habe trotzdem den Zug verpasst.',
         'Ich musste mich beeilen, aber ich habe trotzdem den Zug verpasst',
@@ -1207,7 +1419,8 @@ export const chapter030: ChapterDefinition = {
       placeholder: 'Ich musste ..., aber ich habe ...',
       multiline: true,
       maxLength: 100,
-      explanation: 'müssen correctly stays in the Präteritum (musste), while the ordinary verb verpassen appears in the Perfekt (habe ... verpasst) — the typical spoken mix.',
+      explanation:
+        'müssen correctly stays in the Präteritum (musste), while the ordinary verb verpassen appears in the Perfekt (habe ... verpasst) — the typical spoken mix.',
     },
     {
       id: 'ch30-ex-60',
@@ -1218,12 +1431,14 @@ export const chapter030: ChapterDefinition = {
       grammarFocus: ['error-spotting', 'mixed-tense'],
       instruction:
         'This short story is told in the Präteritum, but one verb accidentally breaks the pattern. Write only the corrected verb form (in the Präteritum) that should replace it. Capitalisation is not checked.',
-      prompt: 'Story: "Die Kinder rannten zum See. Sie sprangen ins Wasser. Sie haben laut gelacht. Danach liefen sie nach Hause." Which Präteritum form should replace haben ... gelacht?',
+      prompt:
+        'Story: "Die Kinder rannten zum See. Sie sprangen ins Wasser. Sie haben laut gelacht. Danach liefen sie nach Hause." Which Präteritum form should replace haben ... gelacht?',
       acceptedAnswers: ['lachten'],
       answerMode: 'caseInsensitive',
       placeholder: 'lachten',
       maxLength: 15,
-      explanation: 'The rest of the story is told in the Präteritum (rannten, sprangen, liefen); to stay consistent, lachen should also appear as lachten, not as the Perfekt haben gelacht.',
+      explanation:
+        'The rest of the story is told in the Präteritum (rannten, sprangen, liefen); to stay consistent, lachen should also appear as lachten, not as the Perfekt haben gelacht.',
     },
     {
       id: 'ch30-ex-61',
@@ -1232,8 +1447,10 @@ export const chapter030: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['präteritum', 'narrative', 'word-order'],
-      instruction: 'Put the words in order to form a correct Präteritum narrative sentence.',
-      prompt: 'Ordne die Wörter zu einem Satz im Präteritum: "Der alte Mann ging langsam nach Hause."',
+      instruction:
+        'Put the words in order to form a correct Präteritum narrative sentence.',
+      prompt:
+        'Ordne die Wörter zu einem Satz im Präteritum: "Der alte Mann ging langsam nach Hause."',
       segments: [
         { id: 'ch30-ex61-seg1', text: 'Der' },
         { id: 'ch30-ex61-seg2', text: 'alte' },
@@ -1243,7 +1460,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'ch30-ex61-seg6', text: 'nach' },
         { id: 'ch30-ex61-seg7', text: 'Hause.' },
       ],
-      explanation: 'ging is the Präteritum of gehen, placed in second position, with the rest of the sentence following the normal German word order.',
+      explanation:
+        'ging is the Präteritum of gehen, placed in second position, with the rest of the sentence following the normal German word order.',
     },
     {
       id: 'ch30-ex-62',
@@ -1252,8 +1470,10 @@ export const chapter030: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['präteritum', 'narrative', 'word-order'],
-      instruction: 'Put the words in order to form a correct Präteritum narrative sentence.',
-      prompt: 'Ordne die Wörter zu einem Satz im Präteritum: "Die Kinder spielten fröhlich im Garten."',
+      instruction:
+        'Put the words in order to form a correct Präteritum narrative sentence.',
+      prompt:
+        'Ordne die Wörter zu einem Satz im Präteritum: "Die Kinder spielten fröhlich im Garten."',
       segments: [
         { id: 'ch30-ex62-seg1', text: 'Die' },
         { id: 'ch30-ex62-seg2', text: 'Kinder' },
@@ -1262,7 +1482,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'ch30-ex62-seg5', text: 'im' },
         { id: 'ch30-ex62-seg6', text: 'Garten.' },
       ],
-      explanation: 'spielten is the Präteritum of spielen, placed in second position, a typical sentence in a written story.',
+      explanation:
+        'spielten is the Präteritum of spielen, placed in second position, a typical sentence in a written story.',
     },
     {
       id: 'ch30-ex-63',
@@ -1271,8 +1492,10 @@ export const chapter030: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['präteritum', 'narrative', 'separable-verb', 'word-order'],
-      instruction: 'Put the words in order to form a correct Präteritum narrative sentence with a separable verb.',
-      prompt: 'Ordne die Wörter zu einem Satz im Präteritum: "Der Zug fuhr pünktlich um acht Uhr ab."',
+      instruction:
+        'Put the words in order to form a correct Präteritum narrative sentence with a separable verb.',
+      prompt:
+        'Ordne die Wörter zu einem Satz im Präteritum: "Der Zug fuhr pünktlich um acht Uhr ab."',
       segments: [
         { id: 'ch30-ex63-seg1', text: 'Der' },
         { id: 'ch30-ex63-seg2', text: 'Zug' },
@@ -1283,7 +1506,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'ch30-ex63-seg7', text: 'Uhr' },
         { id: 'ch30-ex63-seg8', text: 'ab.' },
       ],
-      explanation: 'abfahren is separable: fuhr stays in second position while the prefix ab moves to the end of the sentence, as usual in the Präteritum.',
+      explanation:
+        'abfahren is separable: fuhr stays in second position while the prefix ab moves to the end of the sentence, as usual in the Präteritum.',
     },
     {
       id: 'ch30-ex-64',
@@ -1321,7 +1545,8 @@ export const chapter030: ChapterDefinition = {
           right: 'es gab, nicht es hat gegeben',
         },
       ],
-      explanation: 'Spoken contexts generally favour the Perfekt except for sein, haben, modals, and es gab, while written narration favours the Präteritum for nearly every verb.',
+      explanation:
+        'Spoken contexts generally favour the Perfekt except for sein, haben, modals, and es gab, while written narration favours the Präteritum for nearly every verb.',
     },
     {
       id: 'ch30-ex-65',
@@ -1340,7 +1565,8 @@ export const chapter030: ChapterDefinition = {
         { id: 'ch30-ex65-pair5', left: 'wollen', right: 'wollte' },
         { id: 'ch30-ex65-pair6', left: 'dürfen', right: 'durfte' },
       ],
-      explanation: 'These are the high-frequency Präteritum forms (ich) of sein, haben, and the modal verbs, all worth knowing actively for speech.',
+      explanation:
+        'These are the high-frequency Präteritum forms (ich) of sein, haben, and the modal verbs, all worth knowing actively for speech.',
     },
   ],
 };

@@ -25,16 +25,18 @@ export function ReviewPage() {
       <header>
         <h1>Review queue</h1>
         <p className="text-muted prose">
-          Exercises you answered incorrectly come back here. Getting one right pushes it
-          further into the future; three correct answers in a row retire it.
+          Exercises come back here to be checked again. Ones you got wrong return quickly
+          — after a day, then three, then a week. Ones you have only ever got right return
+          slowly, after a week and then three. Three correct answers in a row retire an
+          exercise either way.
         </p>
       </header>
 
       {due.length === 0 ? (
         <Card title="Nothing is due" titleLevel={2}>
           <p>
-            Practise a chapter first. Every exercise you get wrong is scheduled for review
-            the next day.
+            Practise a chapter first. Everything you answer is scheduled to come back —
+            what you get wrong returns the next day.
           </p>
           <p>
             <Link className="button button--primary" to="/chapters">

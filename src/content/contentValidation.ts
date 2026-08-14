@@ -133,6 +133,15 @@ export function validateChapterCollection(
         message: `estimatedMinutes ${chapter.estimatedMinutes} does not match the registry value ${entry.estimatedMinutes}`,
       });
     }
+    // Same bargain as estimatedMinutes: catalogue search reads these without
+    // loading a chapter, so the two copies have to stay identical.
+    if (entry.tags.join('|') !== chapter.tags.join('|')) {
+      issues.push({
+        chapter: chapter.number,
+        path: 'tags',
+        message: `Tags [${chapter.tags.join(', ')}] do not match the registry tags [${entry.tags.join(', ')}]`,
+      });
+    }
 
     for (const prerequisite of chapter.prerequisites) {
       if (!registryByNumber.has(prerequisite)) {

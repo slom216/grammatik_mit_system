@@ -105,7 +105,11 @@ export const chapter048: ChapterDefinition = {
         title: 'Two-way prefixes: separable vs. inseparable',
         columns: ['Prefix', 'Separable (stressed prefix)', 'Inseparable (stressed stem)'],
         rows: [
-          ['durch-', 'durchlesen — to read through', 'durchqueren — to cross, to traverse'],
+          [
+            'durch-',
+            'durchlesen — to read through',
+            'durchqueren — to cross, to traverse',
+          ],
           ['über-', 'übersetzen — to ferry across', 'übersetzen — to translate'],
           ['um-', 'umziehen — to move house / change clothes', 'umgeben — to surround'],
           ['unter-', 'untergehen — to sink, to set (sun)', 'unterschreiben — to sign'],
@@ -143,7 +147,8 @@ export const chapter048: ChapterDefinition = {
         german: 'Sie schlägt ein neues Restaurant vor.',
         english: 'She suggests a new restaurant.',
         highlight: ['schlägt', 'vor'],
-        explanation: 'vorschlagen splits: schlägt stays in position 2, vor moves to the end.',
+        explanation:
+          'vorschlagen splits: schlägt stays in position 2, vor moves to the end.',
       },
       {
         german: 'Der Lehrer erklärt die Grammatik.',
@@ -154,19 +159,22 @@ export const chapter048: ChapterDefinition = {
         german: 'Wir ziehen nächsten Monat um.',
         english: 'We are moving (house) next month.',
         highlight: ['ziehen', 'um'],
-        explanation: 'Here umziehen means "to move house" and is separable: um goes to the end.',
+        explanation:
+          'Here umziehen means "to move house" and is separable: um goes to the end.',
       },
       {
         german: 'Die Mauer umgibt die Altstadt.',
         english: 'The wall surrounds the old town.',
         highlight: ['umgibt'],
-        explanation: 'Here umgeben means "to surround" and is inseparable: it never splits.',
+        explanation:
+          'Here umgeben means "to surround" and is inseparable: it never splits.',
       },
       {
         german: 'Der Fährmann setzt die Passagiere über den Fluss über.',
         english: 'The ferryman takes the passengers across the river.',
         highlight: ['setzt', 'über'],
-        explanation: 'übersetzen ("to ferry across") is separable here: über moves to the end.',
+        explanation:
+          'übersetzen ("to ferry across") is separable here: über moves to the end.',
       },
       {
         german: 'Die Übersetzerin übersetzt den Roman ins Englische.',
@@ -178,7 +186,8 @@ export const chapter048: ChapterDefinition = {
         german: 'Ich lese den Vertrag genau durch.',
         english: 'I read through the contract carefully.',
         highlight: ['lese', 'durch'],
-        explanation: 'durchlesen ("to read through") is separable: durch moves to the end.',
+        explanation:
+          'durchlesen ("to read through") is separable: durch moves to the end.',
       },
       {
         german: 'Das Schiff durchquert den Atlantik.',
@@ -190,7 +199,8 @@ export const chapter048: ChapterDefinition = {
         german: 'Bitte unterschreiben Sie hier.',
         english: 'Please sign here.',
         highlight: ['unterschreiben'],
-        explanation: 'unterschreiben ("to sign") is inseparable: it stays whole even as an imperative.',
+        explanation:
+          'unterschreiben ("to sign") is inseparable: it stays whole even as an imperative.',
       },
       {
         german: 'Die Sonne geht um sieben Uhr unter.',
@@ -300,7 +310,8 @@ export const chapter048: ChapterDefinition = {
         { id: 'd', text: 'er-' },
       ],
       correctOptionId: 'a',
-      explanation: 'verstehen is built from ver- + stehen; ver- is the inseparable prefix here.',
+      explanation:
+        'verstehen is built from ver- + stehen; ver- is the inseparable prefix here.',
     },
     {
       id: 'ch48-ex-04',
@@ -318,7 +329,8 @@ export const chapter048: ChapterDefinition = {
         { id: 'd', text: 'zer-' },
       ],
       correctOptionId: 'a',
-      explanation: 'bezahlen is built from be- + zahlen; be- is the inseparable prefix here.',
+      explanation:
+        'bezahlen is built from be- + zahlen; be- is the inseparable prefix here.',
     },
     {
       id: 'ch48-ex-05',
@@ -354,7 +366,8 @@ export const chapter048: ChapterDefinition = {
         { id: 'd', text: 'only used in questions' },
       ],
       correctOptionId: 'b',
-      explanation: 'ver- belongs to the fixed set of prefixes that are always inseparable.',
+      explanation:
+        'ver- belongs to the fixed set of prefixes that are always inseparable.',
     },
     {
       id: 'ch48-ex-07',
@@ -391,7 +404,8 @@ export const chapter048: ChapterDefinition = {
         { id: 'd', text: 'Ich das Fenster mache auf.' },
       ],
       correctOptionId: 'a',
-      explanation: 'mache stays in position 2, and auf moves to the very end of the clause.',
+      explanation:
+        'mache stays in position 2, and auf moves to the very end of the clause.',
     },
     {
       id: 'ch48-ex-09',
@@ -465,7 +479,8 @@ export const chapter048: ChapterDefinition = {
         { id: 'd', text: 'to watch out' },
       ],
       correctOptionId: 'a',
-      explanation: 'aussehen means "to look/appear (a certain way)", not a literal "see out".',
+      explanation:
+        'aussehen means "to look/appear (a certain way)", not a literal "see out".',
     },
     {
       id: 'ch48-ex-13',
@@ -533,7 +548,8 @@ export const chapter048: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'prefix',
       maxLength: 10,
-      explanation: 'umziehen ("to move house") splits: ziehen stays in position 2, um goes to the end.',
+      explanation:
+        'umziehen ("to move house") splits: ziehen stays in position 2, um goes to the end.',
     },
     {
       id: 'ch48-ex-17',
@@ -548,7 +564,8 @@ export const chapter048: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'prefix',
       maxLength: 10,
-      explanation: 'vorschlagen splits: schlägt stays in position 2, vor goes to the end.',
+      explanation:
+        'vorschlagen splits: schlägt stays in position 2, vor goes to the end.',
     },
     {
       id: 'ch48-ex-18',
@@ -563,7 +580,8 @@ export const chapter048: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'prefix',
       maxLength: 10,
-      explanation: 'durchlesen ("to read through") is separable here: durch goes to the end.',
+      explanation:
+        'durchlesen ("to read through") is separable here: durch goes to the end.',
     },
     {
       id: 'ch48-ex-19',
@@ -572,13 +590,15 @@ export const chapter048: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['separable-verbs', 'infinitive-form'],
-      instruction: 'Write the infinitive as a single word. Capitalisation does not matter here.',
+      instruction:
+        'Write the infinitive as a single word. Capitalisation does not matter here.',
       prompt: 'ab + holen → ?',
       acceptedAnswers: ['abholen'],
       answerMode: 'caseInsensitive',
       placeholder: 'infinitive',
       maxLength: 20,
-      explanation: 'Prefix and base verb combine into one word in the infinitive: abholen.',
+      explanation:
+        'Prefix and base verb combine into one word in the infinitive: abholen.',
     },
     {
       id: 'ch48-ex-20',
@@ -587,13 +607,15 @@ export const chapter048: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['separable-verbs', 'infinitive-form'],
-      instruction: 'Write the infinitive as a single word. Capitalisation does not matter here.',
+      instruction:
+        'Write the infinitive as a single word. Capitalisation does not matter here.',
       prompt: 'vor + schlagen → ?',
       acceptedAnswers: ['vorschlagen'],
       answerMode: 'caseInsensitive',
       placeholder: 'infinitive',
       maxLength: 20,
-      explanation: 'Prefix and base verb combine into one word in the infinitive: vorschlagen.',
+      explanation:
+        'Prefix and base verb combine into one word in the infinitive: vorschlagen.',
     },
     {
       id: 'ch48-ex-21',
@@ -619,13 +641,15 @@ export const chapter048: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['separable-verbs', 'word-order'],
-      instruction: 'Write the complete sentence. Capitalisation and the full stop are checked.',
+      instruction:
+        'Write the complete sentence. Capitalisation and the full stop are checked.',
       prompt: 'ich – meine Schwester – vom Bahnhof – abholen',
       acceptedAnswers: ['Ich hole meine Schwester vom Bahnhof ab.'],
       answerMode: 'normalized',
       placeholder: 'Ich ...',
       maxLength: 80,
-      explanation: 'hole stays in position 2, ab moves to the very end: Ich hole meine Schwester vom Bahnhof ab.',
+      explanation:
+        'hole stays in position 2, ab moves to the very end: Ich hole meine Schwester vom Bahnhof ab.',
     },
     {
       id: 'ch48-ex-23',
@@ -634,13 +658,15 @@ export const chapter048: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['inseparable-verbs', 'word-order'],
-      instruction: 'Write the complete sentence. Capitalisation and the full stop are checked.',
+      instruction:
+        'Write the complete sentence. Capitalisation and the full stop are checked.',
       prompt: 'der Lehrer – die Grammatik – erklären',
       acceptedAnswers: ['Der Lehrer erklärt die Grammatik.'],
       answerMode: 'normalized',
       placeholder: 'Der Lehrer ...',
       maxLength: 80,
-      explanation: 'er- is inseparable, so erklärt stays whole: Der Lehrer erklärt die Grammatik.',
+      explanation:
+        'er- is inseparable, so erklärt stays whole: Der Lehrer erklärt die Grammatik.',
     },
     {
       id: 'ch48-ex-24',
@@ -666,7 +692,8 @@ export const chapter048: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['two-way-prefixes', 'word-order'],
-      instruction: 'Write the complete sentence. Capitalisation and the full stop are checked.',
+      instruction:
+        'Write the complete sentence. Capitalisation and the full stop are checked.',
       prompt: 'wir – nächsten Monat – umziehen',
       acceptedAnswers: ['Wir ziehen nächsten Monat um.'],
       answerMode: 'normalized',
@@ -703,7 +730,8 @@ export const chapter048: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Ich ...',
       maxLength: 80,
-      explanation: 'ver- is inseparable and never splits off: Ich verstehe die Aufgabe nicht.',
+      explanation:
+        'ver- is inseparable and never splits off: Ich verstehe die Aufgabe nicht.',
     },
     {
       id: 'ch48-ex-28',
@@ -718,7 +746,8 @@ export const chapter048: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Ich ...',
       maxLength: 80,
-      explanation: 'The prefix an always travels to the very end: Ich rufe meine Mutter an.',
+      explanation:
+        'The prefix an always travels to the very end: Ich rufe meine Mutter an.',
     },
     {
       id: 'ch48-ex-29',
@@ -736,7 +765,8 @@ export const chapter048: ChapterDefinition = {
         { id: 'd', text: 'Mutter' },
       ],
       correctOptionId: 'a',
-      explanation: 'anrufen splits: ruft stays in position 2, an moves to the end of the clause.',
+      explanation:
+        'anrufen splits: ruft stays in position 2, an moves to the end of the clause.',
     },
     {
       id: 'ch48-ex-30',
@@ -827,7 +857,8 @@ export const chapter048: ChapterDefinition = {
         { id: 'd', text: 'Bitte unter Sie schreiben hier.' },
       ],
       correctOptionId: 'a',
-      explanation: 'unterschreiben is inseparable, so it stays whole even in the imperative: Bitte unterschreiben Sie hier.',
+      explanation:
+        'unterschreiben is inseparable, so it stays whole even in the imperative: Bitte unterschreiben Sie hier.',
     },
     {
       id: 'ch48-ex-35',
@@ -857,7 +888,8 @@ export const chapter048: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'prefix',
       maxLength: 10,
-      explanation: 'wiederkommen ("to come again") is separable here: wieder goes to the end.',
+      explanation:
+        'wiederkommen ("to come again") is separable here: wieder goes to the end.',
     },
     {
       id: 'ch48-ex-37',
@@ -866,13 +898,15 @@ export const chapter048: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['inseparable-verbs', 'infinitive-form'],
-      instruction: 'Write the infinitive as a single word. Capitalisation does not matter here.',
+      instruction:
+        'Write the infinitive as a single word. Capitalisation does not matter here.',
       prompt: 'durch + queren → ?',
       acceptedAnswers: ['durchqueren'],
       answerMode: 'caseInsensitive',
       placeholder: 'infinitive',
       maxLength: 20,
-      explanation: 'Prefix and base verb combine into one word: durchqueren (inseparable, "to cross").',
+      explanation:
+        'Prefix and base verb combine into one word: durchqueren (inseparable, "to cross").',
     },
     {
       id: 'ch48-ex-38',
@@ -888,7 +922,8 @@ export const chapter048: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'infinitive',
       maxLength: 20,
-      explanation: 'Prefix and base verb combine into one word: untergehen (separable in this meaning).',
+      explanation:
+        'Prefix and base verb combine into one word: untergehen (separable in this meaning).',
     },
     {
       id: 'ch48-ex-39',
@@ -904,7 +939,8 @@ export const chapter048: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'infinitive',
       maxLength: 20,
-      explanation: 'wiederholen ("to repeat") is inseparable and stressed on the stem: wiederHOLen.',
+      explanation:
+        'wiederholen ("to repeat") is inseparable and stressed on the stem: wiederHOLen.',
     },
     {
       id: 'ch48-ex-40',
@@ -913,7 +949,8 @@ export const chapter048: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['separable-verbs', 'word-order'],
-      instruction: 'Write the complete sentence. Capitalisation and the full stop are checked.',
+      instruction:
+        'Write the complete sentence. Capitalisation and the full stop are checked.',
       prompt: 'die Sonne – um sieben Uhr – untergehen',
       acceptedAnswers: ['Die Sonne geht um sieben Uhr unter.'],
       answerMode: 'normalized',
@@ -936,7 +973,8 @@ export const chapter048: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Bitte ...',
       maxLength: 80,
-      explanation: 'unterschreiben is inseparable and stays whole even in the imperative: Bitte unterschreiben Sie hier.',
+      explanation:
+        'unterschreiben is inseparable and stays whole even in the imperative: Bitte unterschreiben Sie hier.',
     },
     {
       id: 'ch48-ex-42',
@@ -951,7 +989,8 @@ export const chapter048: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Ich ...',
       maxLength: 80,
-      explanation: 'unterschreiben is inseparable and never splits off unter at the end: Ich unterschreibe hier.',
+      explanation:
+        'unterschreiben is inseparable and never splits off unter at the end: Ich unterschreibe hier.',
     },
     {
       id: 'ch48-ex-43',
@@ -995,7 +1034,8 @@ export const chapter048: ChapterDefinition = {
       templateParts: ['Sie schlägt ein neues Restaurant ', '.'],
       slots: [{ id: 'ch48-ex45-slot1', correctWord: 'vor' }],
       wordBank: ['vor', 'an', 'um', 'durch'],
-      explanation: 'vorschlagen splits: schlägt stays in position 2, vor moves to the end.',
+      explanation:
+        'vorschlagen splits: schlägt stays in position 2, vor moves to the end.',
     },
     {
       id: 'ch48-ex-46',
@@ -1009,7 +1049,8 @@ export const chapter048: ChapterDefinition = {
       templateParts: ['Wir ziehen nächsten Monat ', '.'],
       slots: [{ id: 'ch48-ex46-slot1', correctWord: 'um' }],
       wordBank: ['um', 'unter', 'wieder', 'ab'],
-      explanation: 'Here umziehen means "to move house" and is separable: um moves to the end.',
+      explanation:
+        'Here umziehen means "to move house" and is separable: um moves to the end.',
     },
     {
       id: 'ch48-ex-47',
@@ -1051,7 +1092,8 @@ export const chapter048: ChapterDefinition = {
       templateParts: ['Er kommt nächste Woche ', '.'],
       slots: [{ id: 'ch48-ex49-slot1', correctWord: 'wieder' }],
       wordBank: ['wieder', 'vor', 'ab', 'um'],
-      explanation: 'wiederkommen ("to come again") is separable here: wieder moves to the end.',
+      explanation:
+        'wiederkommen ("to come again") is separable here: wieder moves to the end.',
     },
     {
       id: 'ch48-ex-50',
@@ -1060,7 +1102,8 @@ export const chapter048: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'production',
       grammarFocus: ['separable-verbs', 'modal-verbs', 'word-order'],
-      instruction: 'Drag the word that correctly completes the sentence with a modal verb.',
+      instruction:
+        'Drag the word that correctly completes the sentence with a modal verb.',
       prompt: 'Kannst du das Fenster bitte ___?',
       templateParts: ['Kannst du das Fenster bitte ', '?'],
       slots: [{ id: 'ch48-ex50-slot1', correctWord: 'aufmachen' }],
@@ -1119,7 +1162,7 @@ export const chapter048: ChapterDefinition = {
         { id: 'ch48-ex53-p6', left: 'zerstören', right: 'to destroy' },
       ],
       explanation:
-        'be-, ge-, er-, ver-, ent- and zer- are always-inseparable prefixes; each shifts its base verb\'s meaning.',
+        "be-, ge-, er-, ver-, ent- and zer- are always-inseparable prefixes; each shifts its base verb's meaning.",
     },
     {
       id: 'ch48-ex-54',
@@ -1128,7 +1171,8 @@ export const chapter048: ChapterDefinition = {
       type: 'matching',
       level: 'transfer',
       grammarFocus: ['two-way-prefixes', 'meaning-shift'],
-      instruction: 'Match each two-way prefix verb (with its separability) to its meaning.',
+      instruction:
+        'Match each two-way prefix verb (with its separability) to its meaning.',
       prompt: 'Match the compound verb to its meaning.',
       pairs: [
         { id: 'ch48-ex54-p1', left: 'übersetzen (separable)', right: 'to ferry across' },
@@ -1208,7 +1252,8 @@ export const chapter048: ChapterDefinition = {
       tokens: ['Er', 'beklärt', 'die', 'Grammatik', '.'],
       errorTokenIndex: 1,
       correction: 'erklärt',
-      explanation: 'erklären is built with the inseparable prefix er-, not be-: Er erklärt die Grammatik.',
+      explanation:
+        'erklären is built with the inseparable prefix er-, not be-: Er erklärt die Grammatik.',
     },
     {
       id: 'ch48-ex-59',

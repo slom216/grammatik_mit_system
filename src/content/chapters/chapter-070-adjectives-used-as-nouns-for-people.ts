@@ -9,7 +9,7 @@ export const chapter070: ChapterDefinition = {
   level: 'B1',
   section: 'nouns-2',
   objective:
-    'Recognize and correctly capitalize and decline German adjectives that function as nouns for people (der Deutsche, eine Bekannte, die Erwachsenen), applying the same weak, strong, and mixed adjective-ending patterns from Chapter 41 as if a noun still followed the adjective, and infer the missing word\'s gender and number entirely from its article and context.',
+    "Recognize and correctly capitalize and decline German adjectives that function as nouns for people (der Deutsche, eine Bekannte, die Erwachsenen), applying the same weak, strong, and mixed adjective-ending patterns from Chapter 41 as if a noun still followed the adjective, and infer the missing word's gender and number entirely from its article and context.",
   prerequisites: [41],
   estimatedMinutes: 28,
   tags: [
@@ -53,7 +53,7 @@ export const chapter070: ChapterDefinition = {
         heading: 'After ein-words or with no article: strong and mixed endings',
         paragraphs: [
           'Ein, kein, and the possessives (mein, dein, sein...) do not always show gender as clearly as der/die/das does, so — exactly as with ordinary adjectives — the masculine nominative singular has to carry that information itself, with the strong ending -er: ein Deutscher, ein Fremder, ein Bekannter. Compare this with the feminine, which still takes the familiar -e: eine Deutsche, eine Fremde, eine Bekannte — ein and eine already mark the feminine clearly enough that no extra signal is needed there.',
-          'Outside the masculine nominative singular, ein-words behave just like der-words: einen Deutschen (accusative), einem Deutschen (dative), eines Deutschen (genitive); einer Deutschen (feminine dative and genitive). Only that one cell of the whole paradigm — masculine, nominative, singular, after ein — is different, and it is different for the same reason ein guter Mann has -er instead of der gute Mann\'s -e.',
+          "Outside the masculine nominative singular, ein-words behave just like der-words: einen Deutschen (accusative), einem Deutschen (dative), eines Deutschen (genitive); einer Deutschen (feminine dative and genitive). Only that one cell of the whole paradigm — masculine, nominative, singular, after ein — is different, and it is different for the same reason ein guter Mann has -er instead of der gute Mann's -e.",
           'Two adjectives can stack in front of the same phantom noun without any conflict: an ordinary, lowercase adjective plus the substantivized one, each taking its own normal ending — ein guter Bekannter (a good acquaintance), eine nette Fremde (a nice stranger). The ordinary adjective and the substantivized one simply agree with each other, exactly as two adjectives before any real noun would.',
         ],
       },
@@ -97,12 +97,17 @@ export const chapter070: ChapterDefinition = {
           ['obdachlos', 'der Obdachlose', 'die Obdachlose', 'homeless person'],
           ['fremd', 'der Fremde', 'die Fremde', 'stranger, foreigner'],
         ],
-        note: 'Each word is still, grammatically, the plain adjective on the left — it simply appears without a following noun and is capitalized because it is doing a noun\'s job.',
+        note: "Each word is still, grammatically, the plain adjective on the left — it simply appears without a following noun and is capitalized because it is doing a noun's job.",
       },
       {
         id: 'ch70-table-02',
         title: 'Weak Declension After der-words (der Deutsche)',
-        columns: ['Case', 'Masculine — der Deutsche', 'Feminine — die Deutsche', 'Plural — die Deutschen'],
+        columns: [
+          'Case',
+          'Masculine — der Deutsche',
+          'Feminine — die Deutsche',
+          'Plural — die Deutschen',
+        ],
         rows: [
           ['Nominative', 'der Deutsche', 'die Deutsche', 'die Deutschen'],
           ['Accusative', 'den Deutschen', 'die Deutsche', 'die Deutschen'],
@@ -114,7 +119,12 @@ export const chapter070: ChapterDefinition = {
       {
         id: 'ch70-table-03',
         title: 'Strong/Mixed Declension After ein-words (ein Deutscher)',
-        columns: ['Case', 'Masculine — ein Deutscher', 'Feminine — eine Deutsche', 'Plural — keine Deutschen'],
+        columns: [
+          'Case',
+          'Masculine — ein Deutscher',
+          'Feminine — eine Deutsche',
+          'Plural — keine Deutschen',
+        ],
         rows: [
           ['Nominative', 'ein Deutscher', 'eine Deutsche', 'keine Deutschen'],
           ['Accusative', 'einen Deutschen', 'eine Deutsche', 'keine Deutschen'],
@@ -130,7 +140,12 @@ export const chapter070: ChapterDefinition = {
         columnCases: [null, 'genitive', 'genitive', 'genitive'],
         rows: [
           ['des/der/der (definite)', 'des Deutschen', 'der Deutschen', 'der Deutschen'],
-          ['eines/einer/keiner (indefinite)', 'eines Deutschen', 'einer Deutschen', 'keiner Deutschen'],
+          [
+            'eines/einer/keiner (indefinite)',
+            'eines Deutschen',
+            'einer Deutschen',
+            'keiner Deutschen',
+          ],
         ],
         note: 'In the genitive, masculine and feminine forms already look alike after both article types — only the article itself distinguishes them.',
       },
@@ -140,10 +155,26 @@ export const chapter070: ChapterDefinition = {
         columns: ['Context', 'Example', 'English'],
         columnCases: [null, 'nominative', null],
         rows: [
-          ['Predicate, masculine (Ich bin ...)', 'Ich bin Deutscher.', 'I am German (a German man).'],
-          ['Predicate, feminine (Sie ist ...)', 'Sie ist Deutsche.', 'She is German (a German woman).'],
-          ['Bare plural, general statement', 'Deutsche reisen gern.', 'Germans like to travel.'],
-          ['Bare plural, general statement', 'Erwachsene müssen das entscheiden.', 'Adults have to decide that.'],
+          [
+            'Predicate, masculine (Ich bin ...)',
+            'Ich bin Deutscher.',
+            'I am German (a German man).',
+          ],
+          [
+            'Predicate, feminine (Sie ist ...)',
+            'Sie ist Deutsche.',
+            'She is German (a German woman).',
+          ],
+          [
+            'Bare plural, general statement',
+            'Deutsche reisen gern.',
+            'Germans like to travel.',
+          ],
+          [
+            'Bare plural, general statement',
+            'Erwachsene müssen das entscheiden.',
+            'Adults have to decide that.',
+          ],
         ],
         note: 'With no article, the strong endings appear (-er masculine, -e feminine and plural) because the ending alone must carry the grammatical information.',
       },
@@ -153,105 +184,123 @@ export const chapter070: ChapterDefinition = {
         german: 'Der Deutsche wohnt seit zehn Jahren in Spanien.',
         english: 'The German man has lived in Spain for ten years.',
         highlight: ['Der Deutsche'],
-        explanation: 'Masculine nominative singular after der: the weak ending -e, capitalized because Deutsche is doing a noun\'s job.',
+        explanation:
+          "Masculine nominative singular after der: the weak ending -e, capitalized because Deutsche is doing a noun's job.",
       },
       {
         german: 'Ich kenne eine Bekannte aus meinem Deutschkurs.',
         english: 'I know a (female) acquaintance from my German course.',
         highlight: ['eine Bekannte'],
-        explanation: 'Feminine accusative singular after eine: the ending -e, the same shape it would have in the nominative.',
+        explanation:
+          'Feminine accusative singular after eine: the ending -e, the same shape it would have in the nominative.',
       },
       {
         german: 'Wir haben mit dem Angestellten gesprochen.',
         english: 'We spoke with the employee.',
         highlight: ['dem Angestellten'],
-        explanation: 'Dative masculine singular after dem: the ending switches to -en, exactly like an ordinary adjective in the dative.',
+        explanation:
+          'Dative masculine singular after dem: the ending switches to -en, exactly like an ordinary adjective in the dative.',
       },
       {
         german: 'Die Erwachsenen müssen für die Kinder ein Vorbild sein.',
         english: 'The adults have to be a role model for the children.',
         highlight: ['Die Erwachsenen'],
-        explanation: 'Plural after die: -en in every case, regardless of the gender the word would have in the singular.',
+        explanation:
+          'Plural after die: -en in every case, regardless of the gender the word would have in the singular.',
       },
       {
         german: 'Er hilft einem Obdachlosen jeden Tag.',
         english: 'He helps a homeless person every day.',
         highlight: ['einem Obdachlosen'],
-        explanation: 'Dative masculine singular after einem: -en, matching the der-word dative exactly.',
+        explanation:
+          'Dative masculine singular after einem: -en, matching the der-word dative exactly.',
       },
       {
         german: 'Meine Verwandte aus Hamburg besucht uns morgen.',
         english: 'My relative from Hamburg is visiting us tomorrow.',
         highlight: ['Meine Verwandte'],
-        explanation: 'meine behaves like a der-word here; feminine nominative singular takes -e.',
+        explanation:
+          'meine behaves like a der-word here; feminine nominative singular takes -e.',
       },
       {
         german: 'Die Firma hat drei neue Angestellte eingestellt.',
         english: 'The company has hired three new employees.',
         highlight: ['neue Angestellte'],
-        explanation: 'A number with no article: bare plural, strong accusative ending -e, just like an ordinary adjective would take here.',
+        explanation:
+          'A number with no article: bare plural, strong accusative ending -e, just like an ordinary adjective would take here.',
       },
       {
         german: 'Ich bin Deutscher, aber ich wohne in Frankreich.',
         english: 'I am German (a German man), but I live in France.',
         highlight: ['Deutscher'],
-        explanation: 'Predicate nominative with no article: masculine strong ending -er, the same ending that appears after ein.',
+        explanation:
+          'Predicate nominative with no article: masculine strong ending -er, the same ending that appears after ein.',
       },
       {
         german: 'Sie ist Deutsche und spricht drei Sprachen.',
         english: 'She is German (a German woman) and speaks three languages.',
         highlight: ['Deutsche'],
-        explanation: 'Feminine predicate nominative with no article: -e, identical in shape to the feminine ending everywhere else.',
+        explanation:
+          'Feminine predicate nominative with no article: -e, identical in shape to the feminine ending everywhere else.',
       },
       {
         german: 'Das Schicksal der Arbeitslosen beschäftigt die Politik.',
         english: 'The fate of the unemployed concerns politics.',
         highlight: ['der Arbeitslosen'],
-        explanation: 'Genitive plural after der: -en, following the ordinary Chapter 41 plural pattern.',
+        explanation:
+          'Genitive plural after der: -en, following the ordinary Chapter 41 plural pattern.',
       },
       {
         german: 'Kennst du den Bekannten von Julia?',
-        english: 'Do you know Julia\'s (male) acquaintance?',
+        english: "Do you know Julia's (male) acquaintance?",
         highlight: ['den Bekannten'],
-        explanation: 'Accusative masculine singular after den: -en, exactly like den guten Mann.',
+        explanation:
+          'Accusative masculine singular after den: -en, exactly like den guten Mann.',
       },
       {
         german: 'Ein Fremder fragte mich nach dem Weg.',
         english: 'A stranger asked me for directions.',
         highlight: ['Ein Fremder'],
-        explanation: 'Nominative masculine singular after ein: the strong ending -er, since ein does not mark gender on its own.',
+        explanation:
+          'Nominative masculine singular after ein: the strong ending -er, since ein does not mark gender on its own.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'der deutsche',
         correct: 'der Deutsche',
-        explanation: 'A substantivized adjective is capitalized like the noun it stands in for, even though it still declines like an adjective — do not leave it lowercase.',
+        explanation:
+          'A substantivized adjective is capitalized like the noun it stands in for, even though it still declines like an adjective — do not leave it lowercase.',
       },
       {
         incorrect: 'der Deutsche Mann',
         correct: 'der deutsche Mann (or simply: der Deutsche)',
-        explanation: 'Do not combine both patterns: either keep deutsch lowercase as an ordinary adjective in front of the real noun Mann, or drop Mann and let Deutsche carry the meaning alone, capitalized.',
+        explanation:
+          'Do not combine both patterns: either keep deutsch lowercase as an ordinary adjective in front of the real noun Mann, or drop Mann and let Deutsche carry the meaning alone, capitalized.',
       },
       {
         incorrect: 'der Deutscher',
         correct: 'der Deutsche',
-        explanation: 'After a der-word, the nominative ending is always -e, not -er; -er only appears after ein or with no article, where nothing else marks the masculine gender.',
+        explanation:
+          'After a der-word, the nominative ending is always -e, not -er; -er only appears after ein or with no article, where nothing else marks the masculine gender.',
       },
       {
         incorrect: 'ein Deutsche',
         correct: 'ein Deutscher',
-        explanation: 'After ein, the masculine nominative singular needs the strong ending -er, because ein alone does not show that the noun is masculine; -e is reserved for the feminine.',
+        explanation:
+          'After ein, the masculine nominative singular needs the strong ending -er, because ein alone does not show that the noun is masculine; -e is reserved for the feminine.',
       },
       {
         incorrect: 'Ich spreche mit der Deutsche.',
         correct: 'Ich spreche mit der Deutschen.',
-        explanation: 'mit takes the dative; the feminine dative singular ending is -en, not the nominative/accusative -e.',
+        explanation:
+          'mit takes the dative; the feminine dative singular ending is -en, not the nominative/accusative -e.',
       },
       {
         incorrect: 'Die Erwachsene sind hier verantwortlich.',
         correct: 'Die Erwachsenen sind hier verantwortlich.',
-        explanation: 'After the plural article die, the ending is always -en, not the bare strong -e used only when there is no article at all.',
+        explanation:
+          'After the plural article die, the ending is always -en, not the bare strong -e used only when there is no article at all.',
       },
     ],
     remember: [
@@ -260,7 +309,7 @@ export const chapter070: ChapterDefinition = {
       'After ein-words or with no article, the masculine nominative singular needs the strong ending -er (ein Deutscher), since nothing else marks the gender; the feminine still takes -e (eine Deutsche) in every one of these contexts.',
       'The word itself carries no fixed gender or number — der Deutsche, die Deutsche, and die Deutschen are the same underlying idea wearing three different articles and endings.',
       'The plural takes -en after die/keine/possessives, and the strong -e (nominative/accusative) or -en (dative) with no article at all, for general statements like Deutsche reisen gern.',
-      'With no article, stating someone\'s nationality, age group, or role after sein/werden uses the strong ending directly: Ich bin Deutscher. Sie ist Deutsche.',
+      "With no article, stating someone's nationality, age group, or role after sein/werden uses the strong ending directly: Ich bin Deutscher. Sie ist Deutsche.",
     ],
   },
   mastery: {
@@ -278,7 +327,8 @@ export const chapter070: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['substantivized-adjectives', 'capitalization'],
       instruction: 'Choose the correctly capitalized and spelled form.',
-      prompt: 'Which is correct? "___ wohnt seit zehn Jahren in Spanien." (the German man)',
+      prompt:
+        'Which is correct? "___ wohnt seit zehn Jahren in Spanien." (the German man)',
       options: [
         { id: 'a', text: 'Der Deutsche' },
         { id: 'b', text: 'der deutsche' },
@@ -286,7 +336,8 @@ export const chapter070: ChapterDefinition = {
         { id: 'd', text: 'Der Deutsche Mann' },
       ],
       correctOptionId: 'a',
-      explanation: 'Der Deutsche is the correctly capitalized substantivized adjective; "Mann" is redundant once Deutsche is capitalized and stands for the noun itself.',
+      explanation:
+        'Der Deutsche is the correctly capitalized substantivized adjective; "Mann" is redundant once Deutsche is capitalized and stands for the noun itself.',
     },
     {
       id: 'ch70-ex-02',
@@ -304,7 +355,8 @@ export const chapter070: ChapterDefinition = {
         { id: 'd', text: 'er ist ein guter Bekannter von mir.' },
       ],
       correctOptionId: 'a',
-      explanation: 'guter is an ordinary adjective agreeing with Bekannter, which is capitalized (it is the substantivized noun) and takes the masculine -er ending after ein.',
+      explanation:
+        'guter is an ordinary adjective agreeing with Bekannter, which is capitalized (it is the substantivized noun) and takes the masculine -er ending after ein.',
     },
     {
       id: 'ch70-ex-03',
@@ -322,7 +374,8 @@ export const chapter070: ChapterDefinition = {
         { id: 'd', text: 'Die Deutsche' },
       ],
       correctOptionId: 'a',
-      explanation: 'After der, the masculine nominative singular ending is -e: Der Deutsche.',
+      explanation:
+        'After der, the masculine nominative singular ending is -e: Der Deutsche.',
     },
     {
       id: 'ch70-ex-04',
@@ -340,7 +393,8 @@ export const chapter070: ChapterDefinition = {
         { id: 'd', text: 'einen Fremden' },
       ],
       correctOptionId: 'a',
-      explanation: 'After ein, the masculine nominative singular takes the strong ending -er, since ein does not mark gender on its own.',
+      explanation:
+        'After ein, the masculine nominative singular takes the strong ending -er, since ein does not mark gender on its own.',
     },
     {
       id: 'ch70-ex-05',
@@ -358,7 +412,8 @@ export const chapter070: ChapterDefinition = {
         { id: 'd', text: 'dem Bekannten' },
       ],
       correctOptionId: 'a',
-      explanation: 'Masculine accusative singular after den: -en, exactly like den guten Mann.',
+      explanation:
+        'Masculine accusative singular after den: -en, exactly like den guten Mann.',
     },
     {
       id: 'ch70-ex-06',
@@ -394,7 +449,8 @@ export const chapter070: ChapterDefinition = {
         { id: 'd', text: 'den Verwandten' },
       ],
       correctOptionId: 'a',
-      explanation: 'helfen takes the dative; the feminine dative singular ending is -en, not the nominative/accusative -e.',
+      explanation:
+        'helfen takes the dative; the feminine dative singular ending is -en, not the nominative/accusative -e.',
     },
     {
       id: 'ch70-ex-08',
@@ -412,7 +468,8 @@ export const chapter070: ChapterDefinition = {
         { id: 'd', text: 'dem Bekannten' },
       ],
       correctOptionId: 'a',
-      explanation: 'Masculine genitive singular after des: -en, exactly like des guten Mannes would use -en on the adjective.',
+      explanation:
+        'Masculine genitive singular after des: -en, exactly like des guten Mannes would use -en on the adjective.',
     },
     {
       id: 'ch70-ex-09',
@@ -448,7 +505,8 @@ export const chapter070: ChapterDefinition = {
         { id: 'd', text: 'der Arbeitslosen' },
       ],
       correctOptionId: 'a',
-      explanation: 'helfen takes the dative; the plural dative article is den, and the adjective ending is -en: den Arbeitslosen.',
+      explanation:
+        'helfen takes the dative; the plural dative article is den, and the adjective ending is -en: den Arbeitslosen.',
     },
     {
       id: 'ch70-ex-11',
@@ -466,7 +524,8 @@ export const chapter070: ChapterDefinition = {
         { id: 'd', text: 'Der Deutsche' },
       ],
       correctOptionId: 'a',
-      explanation: 'With no article, a general statement about the group takes the bare strong plural ending -e: Deutsche reisen gern.',
+      explanation:
+        'With no article, a general statement about the group takes the bare strong plural ending -e: Deutsche reisen gern.',
     },
     {
       id: 'ch70-ex-12',
@@ -484,7 +543,8 @@ export const chapter070: ChapterDefinition = {
         { id: 'd', text: 'Deutschen' },
       ],
       correctOptionId: 'a',
-      explanation: 'A man stating his nationality with sein and no article uses the strong masculine ending: Ich bin Deutscher.',
+      explanation:
+        'A man stating his nationality with sein and no article uses the strong masculine ending: Ich bin Deutscher.',
     },
     {
       id: 'ch70-ex-13',
@@ -492,7 +552,12 @@ export const chapter070: ChapterDefinition = {
       order: 13,
       type: 'singleChoice',
       level: 'production',
-      grammarFocus: ['substantivized-adjectives', 'predicate-nominative', 'no-article', 'feminine'],
+      grammarFocus: [
+        'substantivized-adjectives',
+        'predicate-nominative',
+        'no-article',
+        'feminine',
+      ],
       instruction: 'Choose the correct predicate form with no article.',
       prompt: 'Sie ist ___, kommt aber ursprünglich aus Polen.',
       options: [
@@ -502,7 +567,8 @@ export const chapter070: ChapterDefinition = {
         { id: 'd', text: 'Deutschen' },
       ],
       correctOptionId: 'a',
-      explanation: 'A woman stating her nationality with sein and no article uses the ending -e: Sie ist Deutsche.',
+      explanation:
+        'A woman stating her nationality with sein and no article uses the ending -e: Sie ist Deutsche.',
     },
     {
       id: 'ch70-ex-14',
@@ -511,8 +577,10 @@ export const chapter070: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['substantivized-adjectives', 'noun-vs-adjective-declension'],
-      instruction: 'Choose the word that declines like an adjective, not like a regular noun.',
-      prompt: 'Which of these words changes its ending with every case, exactly like an attributive adjective?',
+      instruction:
+        'Choose the word that declines like an adjective, not like a regular noun.',
+      prompt:
+        'Which of these words changes its ending with every case, exactly like an attributive adjective?',
       options: [
         { id: 'a', text: 'der Deutsche' },
         { id: 'b', text: 'der Amerikaner' },
@@ -520,7 +588,8 @@ export const chapter070: ChapterDefinition = {
         { id: 'd', text: 'der Student' },
       ],
       correctOptionId: 'a',
-      explanation: 'der Deutsche is a substantivized adjective and declines like one (den/dem/des Deutschen); der Amerikaner and der Lehrer barely change, and der Student is a regular weak-masculine noun with its own separate pattern.',
+      explanation:
+        'der Deutsche is a substantivized adjective and declines like one (den/dem/des Deutschen); der Amerikaner and der Lehrer barely change, and der Student is a regular weak-masculine noun with its own separate pattern.',
     },
     {
       id: 'ch70-ex-15',
@@ -538,7 +607,8 @@ export const chapter070: ChapterDefinition = {
         { id: 'd', text: 'die Bekannte' },
       ],
       correctOptionId: 'a',
-      explanation: 'The feminine nominative singular ending after eine is -e, exactly as after der: eine Bekannte.',
+      explanation:
+        'The feminine nominative singular ending after eine is -e, exactly as after der: eine Bekannte.',
     },
     {
       id: 'ch70-ex-16',
@@ -556,7 +626,8 @@ export const chapter070: ChapterDefinition = {
         { id: 'd', text: 'Der Angestellte brauchen mehr Unterstützung.' },
       ],
       correctOptionId: 'a',
-      explanation: 'A general statement with no article about a plural group uses the bare strong plural ending -e: Angestellte brauchen mehr Unterstützung.',
+      explanation:
+        'A general statement with no article about a plural group uses the bare strong plural ending -e: Angestellte brauchen mehr Unterstützung.',
     },
     {
       id: 'ch70-ex-17',
@@ -564,14 +635,21 @@ export const chapter070: ChapterDefinition = {
       order: 17,
       type: 'textInput',
       level: 'recognition',
-      grammarFocus: ['substantivized-adjectives', 'capitalization', 'der-words', 'nominative'],
-      instruction: 'Write the correctly capitalized and declined form. Capitalisation is checked.',
+      grammarFocus: [
+        'substantivized-adjectives',
+        'capitalization',
+        'der-words',
+        'nominative',
+      ],
+      instruction:
+        'Write the correctly capitalized and declined form. Capitalisation is checked.',
       prompt: 'der + deutsch (person, masculine, nominative)',
       acceptedAnswers: ['der Deutsche'],
       answerMode: 'normalized',
       placeholder: 'der Deutsche',
       maxLength: 20,
-      explanation: 'After der, the masculine nominative singular ending is -e: der Deutsche.',
+      explanation:
+        'After der, the masculine nominative singular ending is -e: der Deutsche.',
     },
     {
       id: 'ch70-ex-18',
@@ -579,14 +657,22 @@ export const chapter070: ChapterDefinition = {
       order: 18,
       type: 'textInput',
       level: 'recognition',
-      grammarFocus: ['substantivized-adjectives', 'capitalization', 'ein-words', 'feminine', 'nominative'],
-      instruction: 'Write the correctly capitalized and declined form. Capitalisation is checked.',
+      grammarFocus: [
+        'substantivized-adjectives',
+        'capitalization',
+        'ein-words',
+        'feminine',
+        'nominative',
+      ],
+      instruction:
+        'Write the correctly capitalized and declined form. Capitalisation is checked.',
       prompt: 'eine + bekannt (person, feminine, nominative)',
       acceptedAnswers: ['eine Bekannte'],
       answerMode: 'normalized',
       placeholder: 'eine Bekannte',
       maxLength: 20,
-      explanation: 'The feminine nominative singular ending after eine is -e: eine Bekannte.',
+      explanation:
+        'The feminine nominative singular ending after eine is -e: eine Bekannte.',
     },
     {
       id: 'ch70-ex-19',
@@ -685,13 +771,15 @@ export const chapter070: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['substantivized-adjectives', 'ein-words', 'nominative'],
-      instruction: 'Write the correctly declined form (masculine, no der-word). Capitalisation is checked.',
+      instruction:
+        'Write the correctly declined form (masculine, no der-word). Capitalisation is checked.',
       prompt: 'ein + fremd (masculine, nominative)',
       acceptedAnswers: ['ein Fremder'],
       answerMode: 'normalized',
       placeholder: 'ein Fremder',
       maxLength: 20,
-      explanation: 'After ein, the masculine nominative singular needs the strong ending -er: ein Fremder.',
+      explanation:
+        'After ein, the masculine nominative singular needs the strong ending -er: ein Fremder.',
     },
     {
       id: 'ch70-ex-26',
@@ -706,7 +794,8 @@ export const chapter070: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'eine Obdachlose',
       maxLength: 20,
-      explanation: 'The feminine nominative singular ending after eine is -e: eine Obdachlose.',
+      explanation:
+        'The feminine nominative singular ending after eine is -e: eine Obdachlose.',
     },
     {
       id: 'ch70-ex-27',
@@ -715,13 +804,18 @@ export const chapter070: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['substantivized-adjectives', 'conversion', 'nominative'],
-      instruction: 'Rewrite the sentence using a substantivized adjective instead of the adjective + noun phrase. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence using a substantivized adjective instead of the adjective + noun phrase. Capitalisation and punctuation are checked.',
       prompt: 'Der deutsche Mann wohnt in Spanien. → substantivized',
-      acceptedAnswers: ['Der Deutsche wohnt in Spanien.', 'Der Deutsche wohnt in Spanien'],
+      acceptedAnswers: [
+        'Der Deutsche wohnt in Spanien.',
+        'Der Deutsche wohnt in Spanien',
+      ],
       answerMode: 'normalized',
       placeholder: 'Der Deutsche wohnt in Spanien.',
       maxLength: 40,
-      explanation: 'Dropping Mann and capitalizing deutsch keeps the same nominative ending -e: Der Deutsche wohnt in Spanien.',
+      explanation:
+        'Dropping Mann and capitalizing deutsch keeps the same nominative ending -e: Der Deutsche wohnt in Spanien.',
     },
     {
       id: 'ch70-ex-28',
@@ -730,13 +824,18 @@ export const chapter070: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['substantivized-adjectives', 'conversion', 'nominative', 'feminine'],
-      instruction: 'Rewrite the sentence using a substantivized adjective instead of the adjective + noun phrase. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence using a substantivized adjective instead of the adjective + noun phrase. Capitalisation and punctuation are checked.',
       prompt: 'Die deutsche Frau spricht drei Sprachen. → substantivized',
-      acceptedAnswers: ['Die Deutsche spricht drei Sprachen.', 'Die Deutsche spricht drei Sprachen'],
+      acceptedAnswers: [
+        'Die Deutsche spricht drei Sprachen.',
+        'Die Deutsche spricht drei Sprachen',
+      ],
       answerMode: 'normalized',
       placeholder: 'Die Deutsche spricht drei Sprachen.',
       maxLength: 45,
-      explanation: 'Dropping Frau and capitalizing deutsch keeps the feminine nominative ending -e: Die Deutsche spricht drei Sprachen.',
+      explanation:
+        'Dropping Frau and capitalizing deutsch keeps the feminine nominative ending -e: Die Deutsche spricht drei Sprachen.',
     },
     {
       id: 'ch70-ex-29',
@@ -745,13 +844,15 @@ export const chapter070: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['substantivized-adjectives', 'conversion', 'dative'],
-      instruction: 'Rewrite the sentence using a substantivized adjective instead of the adjective + noun phrase. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence using a substantivized adjective instead of the adjective + noun phrase. Capitalisation and punctuation are checked.',
       prompt: 'Er hilft der bekannten Frau. → substantivized',
       acceptedAnswers: ['Er hilft der Bekannten.', 'Er hilft der Bekannten'],
       answerMode: 'normalized',
       placeholder: 'Er hilft der Bekannten.',
       maxLength: 35,
-      explanation: 'Dropping Frau and capitalizing bekannten keeps the feminine dative ending -en, unchanged: Er hilft der Bekannten.',
+      explanation:
+        'Dropping Frau and capitalizing bekannten keeps the feminine dative ending -en, unchanged: Er hilft der Bekannten.',
     },
     {
       id: 'ch70-ex-30',
@@ -760,13 +861,15 @@ export const chapter070: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['substantivized-adjectives', 'conversion', 'plural', 'accusative'],
-      instruction: 'Rewrite the sentence using a substantivized adjective instead of the adjective + noun phrase. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence using a substantivized adjective instead of the adjective + noun phrase. Capitalisation and punctuation are checked.',
       prompt: 'Wir kennen die erwachsenen Kinder. → substantivized',
       acceptedAnswers: ['Wir kennen die Erwachsenen.', 'Wir kennen die Erwachsenen'],
       answerMode: 'normalized',
       placeholder: 'Wir kennen die Erwachsenen.',
       maxLength: 35,
-      explanation: 'Dropping Kinder and capitalizing erwachsenen keeps the plural ending -en, unchanged: Wir kennen die Erwachsenen.',
+      explanation:
+        'Dropping Kinder and capitalizing erwachsenen keeps the plural ending -en, unchanged: Wir kennen die Erwachsenen.',
     },
     {
       id: 'ch70-ex-31',
@@ -775,13 +878,15 @@ export const chapter070: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['substantivized-adjectives', 'predicate-nominative', 'no-article'],
-      instruction: 'Complete the sentence with the correct form (masculine, no article). Capitalisation is checked.',
+      instruction:
+        'Complete the sentence with the correct form (masculine, no article). Capitalisation is checked.',
       prompt: 'Ich bin ___ (deutsch, masculine, predicate, no article).',
       acceptedAnswers: ['Deutscher'],
       answerMode: 'normalized',
       placeholder: 'Deutscher',
       maxLength: 15,
-      explanation: 'A man stating his nationality with sein and no article uses the strong ending -er: Deutscher.',
+      explanation:
+        'A man stating his nationality with sein and no article uses the strong ending -er: Deutscher.',
     },
     {
       id: 'ch70-ex-32',
@@ -789,14 +894,21 @@ export const chapter070: ChapterDefinition = {
       order: 32,
       type: 'textInput',
       level: 'production',
-      grammarFocus: ['substantivized-adjectives', 'predicate-nominative', 'no-article', 'feminine'],
-      instruction: 'Complete the sentence with the correct form (feminine, no article). Capitalisation is checked.',
+      grammarFocus: [
+        'substantivized-adjectives',
+        'predicate-nominative',
+        'no-article',
+        'feminine',
+      ],
+      instruction:
+        'Complete the sentence with the correct form (feminine, no article). Capitalisation is checked.',
       prompt: 'Sie ist ___ (deutsch, feminine, predicate, no article).',
       acceptedAnswers: ['Deutsche'],
       answerMode: 'normalized',
       placeholder: 'Deutsche',
       maxLength: 15,
-      explanation: 'A woman stating her nationality with sein and no article uses the ending -e: Deutsche.',
+      explanation:
+        'A woman stating her nationality with sein and no article uses the ending -e: Deutsche.',
     },
     {
       id: 'ch70-ex-33',
@@ -824,7 +936,8 @@ export const chapter070: ChapterDefinition = {
       templateParts: ['Der Arzt untersucht den ', '.'],
       slots: [{ id: 'slot-1', correctWord: 'Kranken' }],
       wordBank: ['Kranken', 'Kranke', 'Kranker', 'Bekannten'],
-      explanation: 'Masculine accusative singular after den: -en. Der Arzt untersucht den Kranken.',
+      explanation:
+        'Masculine accusative singular after den: -en. Der Arzt untersucht den Kranken.',
     },
     {
       id: 'ch70-ex-35',
@@ -852,7 +965,8 @@ export const chapter070: ChapterDefinition = {
       templateParts: ['Die Akte des ', ' liegt hier.'],
       slots: [{ id: 'slot-1', correctWord: 'Kranken' }],
       wordBank: ['Kranken', 'Kranke', 'Kranker', 'Arbeitslosen'],
-      explanation: 'Masculine genitive singular after des: -en. Die Akte des Kranken liegt hier.',
+      explanation:
+        'Masculine genitive singular after des: -en. Die Akte des Kranken liegt hier.',
     },
     {
       id: 'ch70-ex-37',
@@ -866,7 +980,8 @@ export const chapter070: ChapterDefinition = {
       templateParts: ['Die ', ' wartet im Flur.'],
       slots: [{ id: 'slot-1', correctWord: 'Reisende' }],
       wordBank: ['Reisende', 'Reisenden', 'Reisender', 'Kranke'],
-      explanation: 'Feminine nominative singular after die: -e. Die Reisende wartet im Flur.',
+      explanation:
+        'Feminine nominative singular after die: -e. Die Reisende wartet im Flur.',
     },
     {
       id: 'ch70-ex-38',
@@ -890,11 +1005,13 @@ export const chapter070: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['substantivized-adjectives', 'ein-words', 'nominative'],
       instruction: 'Drag the correct form into the slot.',
-      prompt: 'Complete the sentence with the correct masculine nominative form after ein.',
+      prompt:
+        'Complete the sentence with the correct masculine nominative form after ein.',
       templateParts: ['Ein ', ' betrat den Warteraum.'],
       slots: [{ id: 'slot-1', correctWord: 'Reisender' }],
       wordBank: ['Reisender', 'Reisende', 'Reisenden', 'Fremder'],
-      explanation: 'After ein, the masculine nominative singular needs the strong ending -er: ein Reisender.',
+      explanation:
+        'After ein, the masculine nominative singular needs the strong ending -er: ein Reisender.',
     },
     {
       id: 'ch70-ex-40',
@@ -946,11 +1063,13 @@ export const chapter070: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['substantivized-adjectives', 'ein-words', 'nominative', 'feminine'],
       instruction: 'Drag the correct form into the slot.',
-      prompt: 'Complete the sentence with the correct feminine nominative form after eine.',
+      prompt:
+        'Complete the sentence with the correct feminine nominative form after eine.',
       templateParts: ['Sie ist eine ', ' aus Berlin.'],
       slots: [{ id: 'slot-1', correctWord: 'Bekannte' }],
       wordBank: ['Bekannte', 'Bekannten', 'Bekannter', 'Fremde'],
-      explanation: 'Feminine nominative singular after eine: -e, the same shape as after die.',
+      explanation:
+        'Feminine nominative singular after eine: -e, the same shape as after die.',
     },
     {
       id: 'ch70-ex-44',
@@ -1034,7 +1153,8 @@ export const chapter070: ChapterDefinition = {
       templateParts: ['', ' brauchen oft mehr Freiheit.'],
       slots: [{ id: 'slot-1', correctWord: 'Jugendliche' }],
       wordBank: ['Jugendliche', 'Jugendlichen', 'Jugendlicher', 'Erwachsene'],
-      explanation: 'With no article, the bare plural nominative takes the strong ending -e: Jugendliche brauchen oft mehr Freiheit.',
+      explanation:
+        'With no article, the bare plural nominative takes the strong ending -e: Jugendliche brauchen oft mehr Freiheit.',
     },
     {
       id: 'ch70-ex-50',
@@ -1048,7 +1168,8 @@ export const chapter070: ChapterDefinition = {
       templateParts: ['Der Staat hilft ', ' finanziell.'],
       slots: [{ id: 'slot-1', correctWord: 'Arbeitslosen' }],
       wordBank: ['Arbeitslosen', 'Arbeitslose', 'Arbeitsloser', 'Kranken'],
-      explanation: 'With no article, the bare plural dative takes the strong ending -en: Arbeitslosen.',
+      explanation:
+        'With no article, the bare plural dative takes the strong ending -en: Arbeitslosen.',
     },
     {
       id: 'ch70-ex-51',
@@ -1062,7 +1183,8 @@ export const chapter070: ChapterDefinition = {
       templateParts: ['Er ist ', ' bei dieser Firma.'],
       slots: [{ id: 'slot-1', correctWord: 'Angestellter' }],
       wordBank: ['Angestellter', 'Angestellte', 'Angestellten', 'Reisender'],
-      explanation: 'A man stating his role with sein and no article uses the strong masculine ending -er: Angestellter.',
+      explanation:
+        'A man stating his role with sein and no article uses the strong masculine ending -er: Angestellter.',
     },
     {
       id: 'ch70-ex-52',
@@ -1070,13 +1192,19 @@ export const chapter070: ChapterDefinition = {
       order: 52,
       type: 'dragToSlots',
       level: 'production',
-      grammarFocus: ['substantivized-adjectives', 'predicate-nominative', 'no-article', 'feminine'],
+      grammarFocus: [
+        'substantivized-adjectives',
+        'predicate-nominative',
+        'no-article',
+        'feminine',
+      ],
       instruction: 'Drag the correct form into the slot.',
       prompt: 'Complete the sentence stating her job with no article.',
       templateParts: ['Sie wird ', ' bei der neuen Firma.'],
       slots: [{ id: 'slot-1', correctWord: 'Angestellte' }],
       wordBank: ['Angestellte', 'Angestellter', 'Angestellten', 'Bekannte'],
-      explanation: 'A woman stating her role with werden and no article uses the ending -e: Angestellte.',
+      explanation:
+        'A woman stating her role with werden and no article uses the ending -e: Angestellte.',
     },
     {
       id: 'ch70-ex-53',
@@ -1085,13 +1213,15 @@ export const chapter070: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['substantivized-adjectives', 'der-words', 'nominative'],
-      instruction: 'Write the correctly capitalized and declined form. Capitalisation is checked.',
+      instruction:
+        'Write the correctly capitalized and declined form. Capitalisation is checked.',
       prompt: 'der + verwandt (person, masculine, nominative)',
       acceptedAnswers: ['der Verwandte'],
       answerMode: 'normalized',
       placeholder: 'der Verwandte',
       maxLength: 20,
-      explanation: 'After der, the masculine nominative singular ending is -e: der Verwandte.',
+      explanation:
+        'After der, the masculine nominative singular ending is -e: der Verwandte.',
     },
     {
       id: 'ch70-ex-54',
@@ -1175,13 +1305,15 @@ export const chapter070: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['substantivized-adjectives', 'ein-words', 'nominative'],
-      instruction: 'Write the correctly declined form (masculine, no der-word). Capitalisation is checked.',
+      instruction:
+        'Write the correctly declined form (masculine, no der-word). Capitalisation is checked.',
       prompt: 'ein + verwandt (masculine, nominative)',
       acceptedAnswers: ['ein Verwandter'],
       answerMode: 'normalized',
       placeholder: 'ein Verwandter',
       maxLength: 20,
-      explanation: 'After ein, the masculine nominative singular needs the strong ending -er: ein Verwandter.',
+      explanation:
+        'After ein, the masculine nominative singular needs the strong ending -er: ein Verwandter.',
     },
     {
       id: 'ch70-ex-60',
@@ -1196,7 +1328,8 @@ export const chapter070: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'eine Fremde',
       maxLength: 20,
-      explanation: 'The feminine nominative singular ending after eine is -e: eine Fremde.',
+      explanation:
+        'The feminine nominative singular ending after eine is -e: eine Fremde.',
     },
     {
       id: 'ch70-ex-61',
@@ -1211,7 +1344,8 @@ export const chapter070: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'einen Kranken',
       maxLength: 20,
-      explanation: 'After einen, the masculine accusative singular ending is -en: einen Kranken.',
+      explanation:
+        'After einen, the masculine accusative singular ending is -en: einen Kranken.',
     },
     {
       id: 'ch70-ex-62',
@@ -1226,7 +1360,8 @@ export const chapter070: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'einem Reisenden',
       maxLength: 20,
-      explanation: 'After einem, the masculine dative singular ending is -en: einem Reisenden.',
+      explanation:
+        'After einem, the masculine dative singular ending is -en: einem Reisenden.',
     },
     {
       id: 'ch70-ex-63',
@@ -1265,13 +1400,15 @@ export const chapter070: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['substantivized-adjectives', 'predicate-nominative', 'no-article'],
-      instruction: 'Complete the sentence with the correct form (masculine, no article). Capitalisation is checked.',
+      instruction:
+        'Complete the sentence with the correct form (masculine, no article). Capitalisation is checked.',
       prompt: 'Ich bin ___ (angestellt, masculine, predicate, no article).',
       acceptedAnswers: ['Angestellter'],
       answerMode: 'normalized',
       placeholder: 'Angestellter',
       maxLength: 15,
-      explanation: 'A man stating his role with sein and no article uses the strong ending -er: Angestellter.',
+      explanation:
+        'A man stating his role with sein and no article uses the strong ending -er: Angestellter.',
     },
     {
       id: 'ch70-ex-66',
@@ -1280,13 +1417,15 @@ export const chapter070: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['substantivized-adjectives', 'bare-plural', 'no-article'],
-      instruction: 'Complete the sentence with the correct form (plural, no article). Capitalisation is checked.',
+      instruction:
+        'Complete the sentence with the correct form (plural, no article). Capitalisation is checked.',
       prompt: 'Wir sind ___ (verwandt, plural, predicate, no article).',
       acceptedAnswers: ['Verwandte'],
       answerMode: 'normalized',
       placeholder: 'Verwandte',
       maxLength: 15,
-      explanation: 'A plural predicate with no article uses the strong ending -e: Wir sind Verwandte.',
+      explanation:
+        'A plural predicate with no article uses the strong ending -e: Wir sind Verwandte.',
     },
     {
       id: 'ch70-ex-67',
@@ -1295,13 +1434,15 @@ export const chapter070: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['substantivized-adjectives', 'conversion', 'nominative'],
-      instruction: 'Rewrite the sentence using a substantivized adjective instead of the adjective + noun phrase. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence using a substantivized adjective instead of the adjective + noun phrase. Capitalisation and punctuation are checked.',
       prompt: 'Der kranke Mann liegt im Bett. → substantivized',
       acceptedAnswers: ['Der Kranke liegt im Bett.', 'Der Kranke liegt im Bett'],
       answerMode: 'normalized',
       placeholder: 'Der Kranke liegt im Bett.',
       maxLength: 35,
-      explanation: 'Dropping Mann and capitalizing krank keeps the same nominative ending -e: Der Kranke liegt im Bett.',
+      explanation:
+        'Dropping Mann and capitalizing krank keeps the same nominative ending -e: Der Kranke liegt im Bett.',
     },
     {
       id: 'ch70-ex-68',
@@ -1310,13 +1451,15 @@ export const chapter070: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['substantivized-adjectives', 'conversion', 'nominative', 'feminine'],
-      instruction: 'Rewrite the sentence using a substantivized adjective instead of the adjective + noun phrase. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence using a substantivized adjective instead of the adjective + noun phrase. Capitalisation and punctuation are checked.',
       prompt: 'Die fremde Frau kam näher. → substantivized',
       acceptedAnswers: ['Die Fremde kam näher.', 'Die Fremde kam näher'],
       answerMode: 'normalized',
       placeholder: 'Die Fremde kam näher.',
       maxLength: 35,
-      explanation: 'Dropping Frau and capitalizing fremde keeps the feminine nominative ending -e: Die Fremde kam näher.',
+      explanation:
+        'Dropping Frau and capitalizing fremde keeps the feminine nominative ending -e: Die Fremde kam näher.',
     },
     {
       id: 'ch70-ex-69',
@@ -1330,7 +1473,8 @@ export const chapter070: ChapterDefinition = {
       tokens: ['Der', 'Deutsche', 'Mann', 'wohnt', 'hier.'],
       errorTokenIndex: 1,
       correction: 'deutsche',
-      explanation: 'Do not combine both patterns: either keep deutsche lowercase before the real noun Mann, or drop Mann and capitalize Deutsche alone.',
+      explanation:
+        'Do not combine both patterns: either keep deutsche lowercase before the real noun Mann, or drop Mann and capitalize Deutsche alone.',
     },
     {
       id: 'ch70-ex-70',
@@ -1344,7 +1488,8 @@ export const chapter070: ChapterDefinition = {
       tokens: ['Ich', 'spreche', 'mit', 'der', 'Deutsche.'],
       errorTokenIndex: 4,
       correction: 'Deutschen.',
-      explanation: 'mit takes the dative; the feminine dative singular ending is -en, not the nominative/accusative -e.',
+      explanation:
+        'mit takes the dative; the feminine dative singular ending is -en, not the nominative/accusative -e.',
     },
     {
       id: 'ch70-ex-71',
@@ -1358,7 +1503,8 @@ export const chapter070: ChapterDefinition = {
       tokens: ['Der', 'Deutscher', 'kommt', 'aus', 'Berlin.'],
       errorTokenIndex: 1,
       correction: 'Deutsche',
-      explanation: 'After a der-word, the nominative ending is always -e, not -er; -er only appears after ein or with no article.',
+      explanation:
+        'After a der-word, the nominative ending is always -e, not -er; -er only appears after ein or with no article.',
     },
     {
       id: 'ch70-ex-72',
@@ -1372,7 +1518,8 @@ export const chapter070: ChapterDefinition = {
       tokens: ['Ein', 'Deutsche', 'steht', 'vor', 'der', 'Tür.'],
       errorTokenIndex: 1,
       correction: 'Deutscher',
-      explanation: 'After ein, the masculine nominative singular needs the strong ending -er, because ein alone does not show gender.',
+      explanation:
+        'After ein, the masculine nominative singular needs the strong ending -er, because ein alone does not show gender.',
     },
     {
       id: 'ch70-ex-73',
@@ -1386,7 +1533,8 @@ export const chapter070: ChapterDefinition = {
       tokens: ['Die', 'Erwachsene', 'sind', 'hier', 'verantwortlich.'],
       errorTokenIndex: 1,
       correction: 'Erwachsenen',
-      explanation: 'After the plural article die, the ending is always -en, not the bare strong -e used only when there is no article.',
+      explanation:
+        'After the plural article die, the ending is always -en, not the bare strong -e used only when there is no article.',
     },
     {
       id: 'ch70-ex-74',
@@ -1400,7 +1548,8 @@ export const chapter070: ChapterDefinition = {
       tokens: ['Ich', 'helfe', 'die', 'Kranken.'],
       errorTokenIndex: 2,
       correction: 'den',
-      explanation: 'helfen takes the dative, not the accusative; it should be den Kranken.',
+      explanation:
+        'helfen takes the dative, not the accusative; it should be den Kranken.',
     },
     {
       id: 'ch70-ex-75',
@@ -1414,7 +1563,8 @@ export const chapter070: ChapterDefinition = {
       tokens: ['Wir', 'kennen', 'den', 'Bekannte.'],
       errorTokenIndex: 3,
       correction: 'Bekannten.',
-      explanation: 'Masculine accusative singular after den takes -en, not -e: den Bekannten.',
+      explanation:
+        'Masculine accusative singular after den takes -en, not -e: den Bekannten.',
     },
     {
       id: 'ch70-ex-76',
@@ -1428,7 +1578,8 @@ export const chapter070: ChapterDefinition = {
       tokens: ['Er', 'ist', 'ein', 'Angestellte', 'bei', 'der', 'Firma.'],
       errorTokenIndex: 3,
       correction: 'Angestellter',
-      explanation: 'After ein, the masculine nominative singular needs the strong ending -er: ein Angestellter.',
+      explanation:
+        'After ein, the masculine nominative singular needs the strong ending -er: ein Angestellter.',
     },
     {
       id: 'ch70-ex-77',
@@ -1442,7 +1593,8 @@ export const chapter070: ChapterDefinition = {
       tokens: ['Das', 'Auto', 'des', 'Bekannte', 'steht', 'hier.'],
       errorTokenIndex: 3,
       correction: 'Bekannten',
-      explanation: 'Masculine genitive singular after des takes -en, not -e: des Bekannten.',
+      explanation:
+        'Masculine genitive singular after des takes -en, not -e: des Bekannten.',
     },
     {
       id: 'ch70-ex-78',
@@ -1456,7 +1608,8 @@ export const chapter070: ChapterDefinition = {
       tokens: ['Die', 'Jugendliche', 'reisen', 'gern.'],
       errorTokenIndex: 1,
       correction: 'Jugendlichen',
-      explanation: 'After the plural article die, the ending is always -en: Die Jugendlichen reisen gern.',
+      explanation:
+        'After the plural article die, the ending is always -en: Die Jugendlichen reisen gern.',
     },
     {
       id: 'ch70-ex-79',
@@ -1466,14 +1619,16 @@ export const chapter070: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['substantivized-adjectives', 'der-words', 'ein-words', 'nominative'],
       instruction: 'Match the der-word form to its ein-word counterpart.',
-      prompt: 'Match each definite masculine nominative form to the matching indefinite form.',
+      prompt:
+        'Match each definite masculine nominative form to the matching indefinite form.',
       pairs: [
         { id: 'p1', left: 'der Deutsche', right: 'ein Deutscher' },
         { id: 'p2', left: 'der Kranke', right: 'ein Kranker' },
         { id: 'p3', left: 'der Reisende', right: 'ein Reisender' },
         { id: 'p4', left: 'der Fremde', right: 'ein Fremder' },
       ],
-      explanation: 'After der the masculine nominative ending is -e; after ein it is the strong ending -er, since ein does not mark gender on its own.',
+      explanation:
+        'After der the masculine nominative ending is -e; after ein it is the strong ending -er, since ein does not mark gender on its own.',
     },
     {
       id: 'ch70-ex-80',
@@ -1481,16 +1636,24 @@ export const chapter070: ChapterDefinition = {
       order: 80,
       type: 'matching',
       level: 'controlled',
-      grammarFocus: ['substantivized-adjectives', 'der-words', 'ein-words', 'nominative', 'feminine'],
+      grammarFocus: [
+        'substantivized-adjectives',
+        'der-words',
+        'ein-words',
+        'nominative',
+        'feminine',
+      ],
       instruction: 'Match the der-word form to its ein-word counterpart.',
-      prompt: 'Match each definite feminine nominative form to the matching indefinite form.',
+      prompt:
+        'Match each definite feminine nominative form to the matching indefinite form.',
       pairs: [
         { id: 'p1', left: 'die Bekannte', right: 'eine Bekannte' },
         { id: 'p2', left: 'die Verwandte', right: 'eine Verwandte' },
         { id: 'p3', left: 'die Angestellte', right: 'eine Angestellte' },
         { id: 'p4', left: 'die Fremde', right: 'eine Fremde' },
       ],
-      explanation: 'The feminine nominative singular ending is -e both after die and after eine.',
+      explanation:
+        'The feminine nominative singular ending is -e both after die and after eine.',
     },
     {
       id: 'ch70-ex-81',
@@ -1517,14 +1680,16 @@ export const chapter070: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['substantivized-adjectives', 'der-words', 'ein-words', 'dative'],
       instruction: 'Match the der-word form to its ein-word counterpart.',
-      prompt: 'Match each definite masculine dative form to the matching indefinite form.',
+      prompt:
+        'Match each definite masculine dative form to the matching indefinite form.',
       pairs: [
         { id: 'p1', left: 'dem Deutschen', right: 'einem Deutschen' },
         { id: 'p2', left: 'dem Kranken', right: 'einem Kranken' },
         { id: 'p3', left: 'dem Reisenden', right: 'einem Reisenden' },
         { id: 'p4', left: 'dem Bekannten', right: 'einem Bekannten' },
       ],
-      explanation: 'Outside the masculine nominative singular, ein-words take exactly the same endings as der-words: -en in the dative.',
+      explanation:
+        'Outside the masculine nominative singular, ein-words take exactly the same endings as der-words: -en in the dative.',
     },
     {
       id: 'ch70-ex-83',
@@ -1534,14 +1699,16 @@ export const chapter070: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['substantivized-adjectives', 'predicate-nominative', 'no-article'],
       instruction: 'Match each masculine predicate form to its feminine counterpart.',
-      prompt: 'Match each masculine no-article predicate form to the matching feminine form.',
+      prompt:
+        'Match each masculine no-article predicate form to the matching feminine form.',
       pairs: [
         { id: 'p1', left: 'Deutscher', right: 'Deutsche' },
         { id: 'p2', left: 'Angestellter', right: 'Angestellte' },
         { id: 'p3', left: 'Reisender', right: 'Reisende' },
         { id: 'p4', left: 'Verwandter', right: 'Verwandte' },
       ],
-      explanation: 'With no article, the masculine predicate ending is -er and the feminine is -e.',
+      explanation:
+        'With no article, the masculine predicate ending is -er and the feminine is -e.',
     },
     {
       id: 'ch70-ex-84',
@@ -1558,7 +1725,8 @@ export const chapter070: ChapterDefinition = {
         { id: 'p3', left: 'der Jugendliche', right: 'the teenager' },
         { id: 'p4', left: 'der Arbeitslose', right: 'the unemployed person' },
       ],
-      explanation: 'Each substantivized adjective describes a person who has that quality.',
+      explanation:
+        'Each substantivized adjective describes a person who has that quality.',
     },
     {
       id: 'ch70-ex-85',
@@ -1568,7 +1736,8 @@ export const chapter070: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['substantivized-adjectives', 'der-words', 'ein-words', 'genitive'],
       instruction: 'Match the der-word form to its ein-word counterpart.',
-      prompt: 'Match each definite masculine genitive form to the matching indefinite form.',
+      prompt:
+        'Match each definite masculine genitive form to the matching indefinite form.',
       pairs: [
         { id: 'p1', left: 'des Deutschen', right: 'eines Deutschen' },
         { id: 'p2', left: 'des Kranken', right: 'eines Kranken' },
@@ -1592,7 +1761,8 @@ export const chapter070: ChapterDefinition = {
         { id: 'p3', left: 'jugendlich', right: 'der Jugendliche' },
         { id: 'p4', left: 'arbeitslos', right: 'der Arbeitslose' },
       ],
-      explanation: 'Every substantivized adjective is grammatically still the plain adjective on the left, capitalized and standing alone.',
+      explanation:
+        'Every substantivized adjective is grammatically still the plain adjective on the left, capitalized and standing alone.',
     },
     {
       id: 'ch70-ex-87',
@@ -1609,7 +1779,8 @@ export const chapter070: ChapterDefinition = {
         { id: 's3', text: 'braucht' },
         { id: 's4', text: 'Ruhe.' },
       ],
-      explanation: 'Der Kranke braucht Ruhe. Masculine nominative singular after der: -e.',
+      explanation:
+        'Der Kranke braucht Ruhe. Masculine nominative singular after der: -e.',
     },
     {
       id: 'ch70-ex-88',
@@ -1627,7 +1798,8 @@ export const chapter070: ChapterDefinition = {
         { id: 's4', text: 'Reisenden' },
         { id: 's5', text: 'gern.' },
       ],
-      explanation: 'Ich helfe dem Reisenden gern. helfen takes the dative; masculine dative ending after dem is -en.',
+      explanation:
+        'Ich helfe dem Reisenden gern. helfen takes the dative; masculine dative ending after dem is -en.',
     },
     {
       id: 'ch70-ex-89',
@@ -1665,7 +1837,8 @@ export const chapter070: ChapterDefinition = {
         { id: 's6', text: 'dem' },
         { id: 's7', text: 'Weg.' },
       ],
-      explanation: 'Ein Fremder fragte mich nach dem Weg. After ein, masculine nominative singular needs the strong ending -er.',
+      explanation:
+        'Ein Fremder fragte mich nach dem Weg. After ein, masculine nominative singular needs the strong ending -er.',
     },
     {
       id: 'ch70-ex-91',
@@ -1675,7 +1848,7 @@ export const chapter070: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['substantivized-adjectives', 'predicate-nominative', 'no-article'],
       instruction: 'Choose the correct sentence.',
-      prompt: 'Which sentence correctly states a man\'s nationality with no article?',
+      prompt: "Which sentence correctly states a man's nationality with no article?",
       options: [
         { id: 'a', text: 'Ich bin Deutscher.' },
         { id: 'b', text: 'Ich bin Deutsche.' },
@@ -1683,7 +1856,8 @@ export const chapter070: ChapterDefinition = {
         { id: 'd', text: 'Ich bin Deutschen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'A man stating his nationality with sein and no article uses the strong masculine ending -er: Ich bin Deutscher.',
+      explanation:
+        'A man stating his nationality with sein and no article uses the strong masculine ending -er: Ich bin Deutscher.',
     },
     {
       id: 'ch70-ex-92',
@@ -1701,7 +1875,8 @@ export const chapter070: ChapterDefinition = {
         { id: 'd', text: 'den Obdachlose' },
       ],
       correctOptionId: 'a',
-      explanation: 'helfen takes the dative; the plural dative article is den, and the ending is -en: den Obdachlosen.',
+      explanation:
+        'helfen takes the dative; the plural dative article is den, and the ending is -en: den Obdachlosen.',
     },
     {
       id: 'ch70-ex-93',
@@ -1737,7 +1912,8 @@ export const chapter070: ChapterDefinition = {
         { id: 'd', text: 'Einen Fremden half mir.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Ein Fremder is the masculine nominative subject form after ein: the strong ending -er, since ein does not mark gender.',
+      explanation:
+        'Ein Fremder is the masculine nominative subject form after ein: the strong ending -er, since ein does not mark gender.',
     },
     {
       id: 'ch70-ex-95',
@@ -1746,7 +1922,8 @@ export const chapter070: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['substantivized-adjectives', 'noun-vs-adjective-declension'],
-      instruction: 'Choose the word that is a genuine noun, not a substantivized adjective.',
+      instruction:
+        'Choose the word that is a genuine noun, not a substantivized adjective.',
       prompt: 'Which of these words does NOT decline like an attributive adjective?',
       options: [
         { id: 'a', text: 'der Lehrer' },
@@ -1755,7 +1932,8 @@ export const chapter070: ChapterDefinition = {
         { id: 'd', text: 'der Deutsche' },
       ],
       correctOptionId: 'a',
-      explanation: 'der Lehrer is an ordinary noun and barely changes across cases; der Kranke, der Reisende, and der Deutsche are all substantivized adjectives that decline like adjectives.',
+      explanation:
+        'der Lehrer is an ordinary noun and barely changes across cases; der Kranke, der Reisende, and der Deutsche are all substantivized adjectives that decline like adjectives.',
     },
     {
       id: 'ch70-ex-96',
@@ -1773,7 +1951,8 @@ export const chapter070: ChapterDefinition = {
         { id: 'd', text: 'die Verwandte' },
       ],
       correctOptionId: 'a',
-      explanation: 'The feminine nominative singular ending after eine is -e: eine Verwandte.',
+      explanation:
+        'The feminine nominative singular ending after eine is -e: eine Verwandte.',
     },
   ],
 };

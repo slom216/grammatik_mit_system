@@ -1,7 +1,11 @@
 import { describe, expect, it } from 'vitest';
 import { auditChapter, auditChapters, similarity } from './contentAudit';
 import { allChapters } from './allChapters';
-import { makeChapter, makeSingleChoice, makeTextInput } from '../test/fixtures/chapterFixture';
+import {
+  makeChapter,
+  makeSingleChoice,
+  makeTextInput,
+} from '../test/fixtures/chapterFixture';
 
 describe('similarity', () => {
   it('ignores case and punctuation', () => {

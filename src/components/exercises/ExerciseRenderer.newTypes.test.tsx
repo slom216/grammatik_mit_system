@@ -135,7 +135,9 @@ describe('ExerciseRenderer with dragToSlots', () => {
 
     await user.click(screen.getByRole('button', { name: 'kann' }));
 
-    expect(screen.getByRole('button', { name: /slot filled with "kann"/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole('button', { name: /slot filled with "kann"/i }),
+    ).toBeInTheDocument();
 
     await user.click(screen.getByRole('button', { name: /check answer/i }));
 
@@ -161,11 +163,15 @@ describe('ExerciseRenderer with dragToSlots', () => {
     const emptySlots = screen.getAllByRole('button', { name: /empty slot/i });
     await user.click(emptySlots[1]!);
 
-    expect(screen.getByRole('button', { name: /slot filled with "kannst"/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole('button', { name: /slot filled with "kannst"/i }),
+    ).toBeInTheDocument();
 
     await user.click(screen.getByRole('button', { name: 'kann' }));
 
-    expect(screen.getByRole('button', { name: /slot filled with "kann"/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole('button', { name: /slot filled with "kann"/i }),
+    ).toBeInTheDocument();
 
     await user.click(screen.getByRole('button', { name: /check answer/i }));
 

@@ -101,31 +101,36 @@ export const chapter020: ChapterDefinition = {
         german: 'Welcher Mantel gefällt dir am besten?',
         english: 'Which coat do you like best?',
         highlight: ['Welcher'],
-        explanation: 'Mantel is masculine and is the subject, so welcher takes the nominative ending -er.',
+        explanation:
+          'Mantel is masculine and is the subject, so welcher takes the nominative ending -er.',
       },
       {
         german: 'Dieser Mantel hier ist wirklich warm.',
         english: 'This coat here is really warm.',
         highlight: ['Dieser'],
-        explanation: 'dieser points out a specific coat and agrees with the masculine subject Mantel.',
+        explanation:
+          'dieser points out a specific coat and agrees with the masculine subject Mantel.',
       },
       {
         german: 'Welche Jacke möchten Sie?',
         english: 'Which jacket would you like?',
         highlight: ['Welche'],
-        explanation: 'Jacke is feminine and the direct object; feminine accusative looks like feminine nominative, so welche is used.',
+        explanation:
+          'Jacke is feminine and the direct object; feminine accusative looks like feminine nominative, so welche is used.',
       },
       {
         german: 'Ich nehme diese Jacke.',
         english: 'I will take this jacket.',
         highlight: ['diese'],
-        explanation: 'Jacke is the direct object of nehme; feminine accusative is the same form as nominative, diese.',
+        explanation:
+          'Jacke is the direct object of nehme; feminine accusative is the same form as nominative, diese.',
       },
       {
         german: 'Welches Hemd ist billiger, das rote oder das blaue?',
         english: 'Which shirt is cheaper, the red one or the blue one?',
         highlight: ['Welches'],
-        explanation: 'Hemd is neuter and the subject, so welches takes the nominative/accusative neuter ending -es.',
+        explanation:
+          'Hemd is neuter and the subject, so welches takes the nominative/accusative neuter ending -es.',
       },
       {
         german: 'Dieses Hemd hier kostet nur zwanzig Euro.',
@@ -137,19 +142,22 @@ export const chapter020: ChapterDefinition = {
         german: 'Welchen Rock findest du schöner?',
         english: 'Which skirt do you find nicer?',
         highlight: ['Welchen'],
-        explanation: 'Rock is masculine and the direct object of findest, so welcher takes the accusative ending -en: welchen.',
+        explanation:
+          'Rock is masculine and the direct object of findest, so welcher takes the accusative ending -en: welchen.',
       },
       {
         german: 'Ich kaufe diesen Rock, nicht den anderen.',
         english: 'I am buying this skirt, not the other one.',
         highlight: ['diesen'],
-        explanation: 'Rock is the direct object of kaufe; masculine accusative changes the ending to -en: diesen.',
+        explanation:
+          'Rock is the direct object of kaufe; masculine accusative changes the ending to -en: diesen.',
       },
       {
         german: 'Welche Schuhe sind im Angebot?',
         english: 'Which shoes are on sale?',
         highlight: ['Welche'],
-        explanation: 'Schuhe is plural and the subject; the plural ending is -e in both nominative and accusative: welche.',
+        explanation:
+          'Schuhe is plural and the subject; the plural ending is -e in both nominative and accusative: welche.',
       },
       {
         german: 'Diese Schuhe hier sind im Angebot.',
@@ -161,58 +169,68 @@ export const chapter020: ChapterDefinition = {
         german: 'Welchen Kuchen möchtest du probieren?',
         english: 'Which cake would you like to try?',
         highlight: ['Welchen'],
-        explanation: 'Kuchen is masculine and the direct object of möchtest ... probieren, so the accusative ending -en is used.',
+        explanation:
+          'Kuchen is masculine and the direct object of möchtest ... probieren, so the accusative ending -en is used.',
       },
       {
         german: 'Verkäuferin: Welche Jacke möchten Sie? Kundin: Diese hier, bitte.',
-        english: 'Shop assistant: Which jacket would you like? Customer: This one here, please.',
+        english:
+          'Shop assistant: Which jacket would you like? Customer: This one here, please.',
         highlight: ['Welche', 'Diese'],
-        explanation: 'A typical shopping exchange: a welcher-question is answered with a matching dieser-answer, both feminine accusative.',
+        explanation:
+          'A typical shopping exchange: a welcher-question is answered with a matching dieser-answer, both feminine accusative.',
       },
       {
         german: 'Was für ein Auto hast du?',
         english: 'What kind of car do you have?',
         highlight: ['Was für ein'],
-        explanation: 'was für ein asks more generally about the type of thing, not about choosing among specific, known cars.',
+        explanation:
+          'was für ein asks more generally about the type of thing, not about choosing among specific, known cars.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Welcher Jacke möchten Sie?',
         correct: 'Welche Jacke möchten Sie?',
-        explanation: 'Jacke is feminine, so welcher must take the feminine ending -e (welche), not the masculine ending -er.',
+        explanation:
+          'Jacke is feminine, so welcher must take the feminine ending -e (welche), not the masculine ending -er.',
       },
       {
         incorrect: 'Ich kaufe dieser Rock.',
         correct: 'Ich kaufe diesen Rock.',
-        explanation: 'Rock is the direct object of kaufe, so the masculine accusative ending -en is required: diesen, not the nominative dieser.',
+        explanation:
+          'Rock is the direct object of kaufe, so the masculine accusative ending -en is required: diesen, not the nominative dieser.',
       },
       {
         incorrect: 'Welches Auto ist neu? — Welches ist rot.',
         correct: 'Welches Auto ist neu? — Dieses ist rot.',
-        explanation: 'A statement pointing something out uses dieser, not welcher; welcher only asks a question, it does not answer one.',
+        explanation:
+          'A statement pointing something out uses dieser, not welcher; welcher only asks a question, it does not answer one.',
       },
       {
         incorrect: 'Dieses Mann ist mein Lehrer.',
         correct: 'Dieser Mann ist mein Lehrer.',
-        explanation: 'Mann is masculine and the subject, so dieser needs the masculine nominative ending -er, not the neuter ending -es.',
+        explanation:
+          'Mann is masculine and the subject, so dieser needs the masculine nominative ending -er, not the neuter ending -es.',
       },
       {
         incorrect: 'Welche Kuchen möchtest du probieren?',
         correct: 'Welchen Kuchen möchtest du probieren?',
-        explanation: 'Kuchen is masculine and the direct object here, so welcher needs the accusative ending -en, not the plural/feminine ending -e.',
+        explanation:
+          'Kuchen is masculine and the direct object here, so welcher needs the accusative ending -en, not the plural/feminine ending -e.',
       },
       {
         incorrect: 'Diese Schuh ist zu klein.',
         correct: 'Dieser Schuh ist zu klein.',
-        explanation: 'Schuh is masculine singular and the subject, so dieser takes the masculine nominative ending -er, not the feminine/plural ending -e.',
+        explanation:
+          'Schuh is masculine singular and the subject, so dieser takes the masculine nominative ending -er, not the feminine/plural ending -e.',
       },
     ],
     remember: [
       'welcher asks a question (which one, out of a known set); dieser makes a statement (pointing this one out).',
       'Both decline exactly like the definite article: -er/-e/-es/-e in the nominative, -en/-e/-es/-e in the accusative.',
       'Only the masculine ending changes between nominative and accusative (welcher → welchen, dieser → diesen); feminine, neuter, and plural stay the same.',
-      'The case depends on the noun\'s job in the sentence: subject = nominative, direct object = accusative.',
+      "The case depends on the noun's job in the sentence: subject = nominative, direct object = accusative.",
     ],
   },
   mastery: {
@@ -238,7 +256,8 @@ export const chapter020: ChapterDefinition = {
         { id: 'd', text: 'Welchen' },
       ],
       correctOptionId: 'a',
-      explanation: 'Mantel is masculine and the subject of the sentence, so welcher takes the nominative masculine ending -er.',
+      explanation:
+        'Mantel is masculine and the subject of the sentence, so welcher takes the nominative masculine ending -er.',
     },
     {
       id: 'ch20-ex-02',
@@ -256,7 +275,8 @@ export const chapter020: ChapterDefinition = {
         { id: 'd', text: 'Welchen' },
       ],
       correctOptionId: 'b',
-      explanation: 'Jacke is feminine and the subject, so welcher takes the nominative feminine ending -e: welche.',
+      explanation:
+        'Jacke is feminine and the subject, so welcher takes the nominative feminine ending -e: welche.',
     },
     {
       id: 'ch20-ex-03',
@@ -274,7 +294,8 @@ export const chapter020: ChapterDefinition = {
         { id: 'd', text: 'Welchen' },
       ],
       correctOptionId: 'c',
-      explanation: 'Hemd is neuter and the subject, so welcher takes the nominative neuter ending -es: welches.',
+      explanation:
+        'Hemd is neuter and the subject, so welcher takes the nominative neuter ending -es: welches.',
     },
     {
       id: 'ch20-ex-04',
@@ -292,7 +313,8 @@ export const chapter020: ChapterDefinition = {
         { id: 'd', text: 'Welchen' },
       ],
       correctOptionId: 'b',
-      explanation: 'Schuhe is plural and the subject; the plural nominative ending is -e: welche.',
+      explanation:
+        'Schuhe is plural and the subject; the plural nominative ending is -e: welche.',
     },
     {
       id: 'ch20-ex-05',
@@ -310,7 +332,8 @@ export const chapter020: ChapterDefinition = {
         { id: 'd', text: 'Diesen' },
       ],
       correctOptionId: 'a',
-      explanation: 'Rock is masculine and the subject, so dieser takes the nominative masculine ending -er.',
+      explanation:
+        'Rock is masculine and the subject, so dieser takes the nominative masculine ending -er.',
     },
     {
       id: 'ch20-ex-06',
@@ -328,7 +351,8 @@ export const chapter020: ChapterDefinition = {
         { id: 'd', text: 'Diesen' },
       ],
       correctOptionId: 'b',
-      explanation: 'Hose is feminine and the subject, so dieser takes the nominative feminine ending -e: diese.',
+      explanation:
+        'Hose is feminine and the subject, so dieser takes the nominative feminine ending -e: diese.',
     },
     {
       id: 'ch20-ex-07',
@@ -337,7 +361,8 @@ export const chapter020: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['welcher-vs-dieser', 'function'],
-      instruction: 'Choose the word that fits: welcher asks, dieser points something out.',
+      instruction:
+        'Choose the word that fits: welcher asks, dieser points something out.',
       prompt: '___ Auto ist deins? – Dieses da drüben.',
       options: [
         { id: 'a', text: 'Welches' },
@@ -346,7 +371,8 @@ export const chapter020: ChapterDefinition = {
         { id: 'd', text: 'Diese' },
       ],
       correctOptionId: 'a',
-      explanation: 'A question about which one is meant needs welcher; Auto is neuter and the subject, so welches.',
+      explanation:
+        'A question about which one is meant needs welcher; Auto is neuter and the subject, so welches.',
     },
     {
       id: 'ch20-ex-08',
@@ -364,7 +390,8 @@ export const chapter020: ChapterDefinition = {
         { id: 'd', text: 'diesen' },
       ],
       correctOptionId: 'd',
-      explanation: 'Mantel is masculine and the direct object of kaufe, so dieser takes the accusative masculine ending -en: diesen.',
+      explanation:
+        'Mantel is masculine and the direct object of kaufe, so dieser takes the accusative masculine ending -en: diesen.',
     },
     {
       id: 'ch20-ex-09',
@@ -382,7 +409,8 @@ export const chapter020: ChapterDefinition = {
         { id: 'd', text: 'Welches' },
       ],
       correctOptionId: 'c',
-      explanation: 'Rock is masculine and the direct object of findest, so welcher takes the accusative masculine ending -en: welchen.',
+      explanation:
+        'Rock is masculine and the direct object of findest, so welcher takes the accusative masculine ending -en: welchen.',
     },
     {
       id: 'ch20-ex-10',
@@ -400,7 +428,8 @@ export const chapter020: ChapterDefinition = {
         { id: 'd', text: 'Welchen' },
       ],
       correctOptionId: 'b',
-      explanation: 'Feminine accusative has the same form as feminine nominative, so welche is correct here, too.',
+      explanation:
+        'Feminine accusative has the same form as feminine nominative, so welche is correct here, too.',
     },
     {
       id: 'ch20-ex-11',
@@ -418,7 +447,8 @@ export const chapter020: ChapterDefinition = {
         { id: 'd', text: 'diesen' },
       ],
       correctOptionId: 'c',
-      explanation: 'Neuter accusative has the same form as neuter nominative, so dieses is correct: das Hemd behaves like dieses Hemd, unchanged in the accusative.',
+      explanation:
+        'Neuter accusative has the same form as neuter nominative, so dieses is correct: das Hemd behaves like dieses Hemd, unchanged in the accusative.',
     },
     {
       id: 'ch20-ex-12',
@@ -436,7 +466,8 @@ export const chapter020: ChapterDefinition = {
         { id: 'd', text: 'Welches' },
       ],
       correctOptionId: 'c',
-      explanation: 'Plural accusative has the same ending as plural nominative, -e, so welche is correct.',
+      explanation:
+        'Plural accusative has the same ending as plural nominative, -e, so welche is correct.',
     },
     {
       id: 'ch20-ex-13',
@@ -452,7 +483,8 @@ export const chapter020: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dieser / diese / dieses / diesen',
       maxLength: 15,
-      explanation: 'Tasche is feminine and the direct object; the matching answer uses the feminine accusative form diese.',
+      explanation:
+        'Tasche is feminine and the direct object; the matching answer uses the feminine accusative form diese.',
     },
     {
       id: 'ch20-ex-14',
@@ -468,7 +500,8 @@ export const chapter020: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dieser / diese / dieses / diesen',
       maxLength: 15,
-      explanation: 'Wein is masculine and the subject of schmeckt, so the matching answer uses the masculine nominative form dieser.',
+      explanation:
+        'Wein is masculine and the subject of schmeckt, so the matching answer uses the masculine nominative form dieser.',
     },
     {
       id: 'ch20-ex-15',
@@ -484,7 +517,8 @@ export const chapter020: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dieser / diese / dieses / diesen',
       maxLength: 15,
-      explanation: 'Kuchen is masculine and the direct object of nimmst, so the matching answer uses the masculine accusative form diesen.',
+      explanation:
+        'Kuchen is masculine and the direct object of nimmst, so the matching answer uses the masculine accusative form diesen.',
     },
     {
       id: 'ch20-ex-16',
@@ -499,7 +533,8 @@ export const chapter020: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'welcher / welche / welches / welchen',
       maxLength: 15,
-      explanation: 'Pullover is masculine and the subject, so welcher takes the nominative masculine ending -er.',
+      explanation:
+        'Pullover is masculine and the subject, so welcher takes the nominative masculine ending -er.',
     },
     {
       id: 'ch20-ex-17',
@@ -514,7 +549,8 @@ export const chapter020: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dieser / diese / dieses / diesen',
       maxLength: 15,
-      explanation: 'Buch is neuter and the subject, so dieser takes the nominative neuter ending -es.',
+      explanation:
+        'Buch is neuter and the subject, so dieser takes the nominative neuter ending -es.',
     },
     {
       id: 'ch20-ex-18',
@@ -529,7 +565,8 @@ export const chapter020: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'welcher / welche / welches / welchen',
       maxLength: 15,
-      explanation: 'Käse is masculine and the direct object of möchten ... probieren, so welcher takes the accusative masculine ending -en: welchen.',
+      explanation:
+        'Käse is masculine and the direct object of möchten ... probieren, so welcher takes the accusative masculine ending -en: welchen.',
     },
     {
       id: 'ch20-ex-19',
@@ -544,7 +581,8 @@ export const chapter020: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dieser / diese / dieses / diesen',
       maxLength: 15,
-      explanation: 'Käse is the direct object of probiere, so dieser takes the accusative masculine ending -en: diesen.',
+      explanation:
+        'Käse is the direct object of probiere, so dieser takes the accusative masculine ending -en: diesen.',
     },
     {
       id: 'ch20-ex-20',
@@ -554,12 +592,14 @@ export const chapter020: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['welcher', 'accusative', 'plural'],
       instruction: 'Write the correct form of welcher. Capitalisation is not checked.',
-      prompt: '___ Äpfel nimmst du, die roten oder die grünen? (Äpfel = plural, direct object)',
+      prompt:
+        '___ Äpfel nimmst du, die roten oder die grünen? (Äpfel = plural, direct object)',
       acceptedAnswers: ['welche'],
       answerMode: 'caseInsensitive',
       placeholder: 'welcher / welche / welches / welchen',
       maxLength: 15,
-      explanation: 'Äpfel is plural and the direct object of nimmst; the plural accusative ending is -e: welche.',
+      explanation:
+        'Äpfel is plural and the direct object of nimmst; the plural accusative ending is -e: welche.',
     },
     {
       id: 'ch20-ex-21',
@@ -575,7 +615,8 @@ export const chapter020: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Welcher ...',
       maxLength: 60,
-      explanation: 'Rock is masculine and the subject of gefällt, so welcher takes the nominative masculine ending -er: Welcher Rock gefällt dir?',
+      explanation:
+        'Rock is masculine and the subject of gefällt, so welcher takes the nominative masculine ending -er: Welcher Rock gefällt dir?',
     },
     {
       id: 'ch20-ex-22',
@@ -591,7 +632,8 @@ export const chapter020: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Ich nehme ...',
       maxLength: 60,
-      explanation: 'Tasche is feminine and the direct object of nehme; feminine accusative has the same form as feminine nominative, diese: Ich nehme diese Tasche.',
+      explanation:
+        'Tasche is feminine and the direct object of nehme; feminine accusative has the same form as feminine nominative, diese: Ich nehme diese Tasche.',
     },
     {
       id: 'ch20-ex-23',
@@ -607,7 +649,8 @@ export const chapter020: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Welches ...',
       maxLength: 60,
-      explanation: 'Hemd is neuter and the direct object of möchten ... kaufen; neuter accusative equals neuter nominative, -es: Welches Hemd möchten Sie kaufen?',
+      explanation:
+        'Hemd is neuter and the direct object of möchten ... kaufen; neuter accusative equals neuter nominative, -es: Welches Hemd möchten Sie kaufen?',
     },
     {
       id: 'ch20-ex-24',
@@ -617,13 +660,15 @@ export const chapter020: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['welcher-dieser-dialogue', 'shopping'],
       instruction:
-        'Complete the shop assistant\'s question and the customer\'s answer with the correct forms of welcher and dieser. Write both sentences separated by a space; capitalisation and punctuation are checked.',
-      prompt: '___ Schuhe möchten Sie? (plural, direct object) – ___ hier, bitte. (plural, direct object)',
+        "Complete the shop assistant's question and the customer's answer with the correct forms of welcher and dieser. Write both sentences separated by a space; capitalisation and punctuation are checked.",
+      prompt:
+        '___ Schuhe möchten Sie? (plural, direct object) – ___ hier, bitte. (plural, direct object)',
       acceptedAnswers: ['Welche Schuhe möchten Sie? – Diese hier, bitte.'],
       answerMode: 'normalized',
       placeholder: 'Welche ... – Diese ...',
       maxLength: 80,
-      explanation: 'Schuhe is plural and the direct object in both parts; the plural accusative ending -e gives welche in the question and diese in the matching answer.',
+      explanation:
+        'Schuhe is plural and the direct object in both parts; the plural accusative ending -e gives welche in the question and diese in the matching answer.',
     },
     {
       id: 'ch20-ex-25',
@@ -641,7 +686,8 @@ export const chapter020: ChapterDefinition = {
         { id: 'd', text: 'Welchen' },
       ],
       correctOptionId: 'a',
-      explanation: 'Anzug is masculine and the subject of the sentence, so welcher takes the nominative masculine ending -er.',
+      explanation:
+        'Anzug is masculine and the subject of the sentence, so welcher takes the nominative masculine ending -er.',
     },
     {
       id: 'ch20-ex-26',
@@ -659,7 +705,8 @@ export const chapter020: ChapterDefinition = {
         { id: 'd', text: 'Welchen' },
       ],
       correctOptionId: 'b',
-      explanation: 'Bluse is feminine and the subject, so welcher takes the nominative feminine ending -e: welche.',
+      explanation:
+        'Bluse is feminine and the subject, so welcher takes the nominative feminine ending -e: welche.',
     },
     {
       id: 'ch20-ex-27',
@@ -677,7 +724,8 @@ export const chapter020: ChapterDefinition = {
         { id: 'd', text: 'Diesen' },
       ],
       correctOptionId: 'c',
-      explanation: 'Kleid is neuter and the subject, so dieser takes the nominative neuter ending -es: dieses.',
+      explanation:
+        'Kleid is neuter and the subject, so dieser takes the nominative neuter ending -es: dieses.',
     },
     {
       id: 'ch20-ex-28',
@@ -695,7 +743,8 @@ export const chapter020: ChapterDefinition = {
         { id: 'd', text: 'Diesen' },
       ],
       correctOptionId: 'b',
-      explanation: 'Handschuhe is plural and the subject; the plural nominative ending is -e: diese.',
+      explanation:
+        'Handschuhe is plural and the subject; the plural nominative ending is -e: diese.',
     },
     {
       id: 'ch20-ex-29',
@@ -713,7 +762,8 @@ export const chapter020: ChapterDefinition = {
         { id: 'd', text: 'Welchen' },
       ],
       correctOptionId: 'c',
-      explanation: 'Neuter accusative has the same form as neuter nominative, so welches is correct here.',
+      explanation:
+        'Neuter accusative has the same form as neuter nominative, so welches is correct here.',
     },
     {
       id: 'ch20-ex-30',
@@ -731,7 +781,8 @@ export const chapter020: ChapterDefinition = {
         { id: 'd', text: 'diesen' },
       ],
       correctOptionId: 'b',
-      explanation: 'Feminine accusative has the same form as feminine nominative, so diese is correct here, too.',
+      explanation:
+        'Feminine accusative has the same form as feminine nominative, so diese is correct here, too.',
     },
     {
       id: 'ch20-ex-31',
@@ -740,7 +791,8 @@ export const chapter020: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['welcher-vs-dieser', 'function', 'plural'],
-      instruction: 'Choose the word that fits: welcher asks, dieser points something out.',
+      instruction:
+        'Choose the word that fits: welcher asks, dieser points something out.',
       prompt: '___ Handschuhe gefallen dir? – Diese hier.',
       options: [
         { id: 'a', text: 'Welche' },
@@ -749,7 +801,8 @@ export const chapter020: ChapterDefinition = {
         { id: 'd', text: 'Dieser' },
       ],
       correctOptionId: 'a',
-      explanation: 'A question about which ones are meant needs welcher; Handschuhe is plural and the subject, so welche.',
+      explanation:
+        'A question about which ones are meant needs welcher; Handschuhe is plural and the subject, so welche.',
     },
     {
       id: 'ch20-ex-32',
@@ -767,7 +820,8 @@ export const chapter020: ChapterDefinition = {
         { id: 'd', text: 'diesen' },
       ],
       correctOptionId: 'b',
-      explanation: 'Plural accusative has the same ending as plural nominative, -e, so diese is correct.',
+      explanation:
+        'Plural accusative has the same ending as plural nominative, -e, so diese is correct.',
     },
     {
       id: 'ch20-ex-33',
@@ -782,7 +836,8 @@ export const chapter020: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'welcher / welche / welches / welchen',
       maxLength: 15,
-      explanation: 'Tasche is feminine and the subject, so welcher takes the nominative feminine ending -e: welche.',
+      explanation:
+        'Tasche is feminine and the subject, so welcher takes the nominative feminine ending -e: welche.',
     },
     {
       id: 'ch20-ex-34',
@@ -797,7 +852,8 @@ export const chapter020: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dieser / diese / dieses / diesen',
       maxLength: 15,
-      explanation: 'Anzug is masculine and the subject, so dieser takes the nominative masculine ending -er.',
+      explanation:
+        'Anzug is masculine and the subject, so dieser takes the nominative masculine ending -er.',
     },
     {
       id: 'ch20-ex-35',
@@ -812,7 +868,8 @@ export const chapter020: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'welcher / welche / welches / welchen',
       maxLength: 15,
-      explanation: 'Anzug is masculine and the direct object of möchten ... anprobieren, so welcher takes the accusative masculine ending -en: welchen.',
+      explanation:
+        'Anzug is masculine and the direct object of möchten ... anprobieren, so welcher takes the accusative masculine ending -en: welchen.',
     },
     {
       id: 'ch20-ex-36',
@@ -827,7 +884,8 @@ export const chapter020: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dieser / diese / dieses / diesen',
       maxLength: 15,
-      explanation: 'Kleid is the direct object of nehme; neuter accusative equals neuter nominative, so dieses is correct.',
+      explanation:
+        'Kleid is the direct object of nehme; neuter accusative equals neuter nominative, so dieses is correct.',
     },
     {
       id: 'ch20-ex-37',
@@ -842,7 +900,8 @@ export const chapter020: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'welcher / welche / welches / welchen',
       maxLength: 15,
-      explanation: 'Handschuhe is plural and the subject; the plural nominative ending is -e: welche.',
+      explanation:
+        'Handschuhe is plural and the subject; the plural nominative ending is -e: welche.',
     },
     {
       id: 'ch20-ex-38',
@@ -858,7 +917,8 @@ export const chapter020: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Ich kaufe ...',
       maxLength: 60,
-      explanation: 'Rock is masculine and the direct object of kaufe, so dieser takes the accusative masculine ending -en: Ich kaufe diesen Rock.',
+      explanation:
+        'Rock is masculine and the direct object of kaufe, so dieser takes the accusative masculine ending -en: Ich kaufe diesen Rock.',
     },
     {
       id: 'ch20-ex-39',
@@ -874,7 +934,8 @@ export const chapter020: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Welche ...',
       maxLength: 60,
-      explanation: 'Bluse is feminine and the direct object of möchten ... anprobieren; feminine accusative equals feminine nominative, -e: Welche Bluse möchten Sie anprobieren?',
+      explanation:
+        'Bluse is feminine and the direct object of möchten ... anprobieren; feminine accusative equals feminine nominative, -e: Welche Bluse möchten Sie anprobieren?',
     },
     {
       id: 'ch20-ex-40',
@@ -890,7 +951,8 @@ export const chapter020: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Dieses ...',
       maxLength: 60,
-      explanation: 'Kleid is neuter and the subject of ist, so dieser takes the nominative neuter ending -es: Dieses Kleid ist sehr schön.',
+      explanation:
+        'Kleid is neuter and the subject of ist, so dieser takes the nominative neuter ending -es: Dieses Kleid ist sehr schön.',
     },
     {
       id: 'ch20-ex-41',
@@ -900,13 +962,15 @@ export const chapter020: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['welcher-dieser-dialogue', 'shopping'],
       instruction:
-        'Complete the shop assistant\'s question and the customer\'s answer with the correct forms of welcher and dieser. Write both sentences separated by a space; capitalisation and punctuation are checked.',
-      prompt: '___ Mantel möchten Sie? (masculine, direct object) – ___ hier, bitte. (masculine, direct object)',
+        "Complete the shop assistant's question and the customer's answer with the correct forms of welcher and dieser. Write both sentences separated by a space; capitalisation and punctuation are checked.",
+      prompt:
+        '___ Mantel möchten Sie? (masculine, direct object) – ___ hier, bitte. (masculine, direct object)',
       acceptedAnswers: ['Welchen Mantel möchten Sie? – Diesen hier, bitte.'],
       answerMode: 'normalized',
       placeholder: 'Welchen ... – Diesen ...',
       maxLength: 80,
-      explanation: 'Mantel is masculine and the direct object in both parts; the masculine accusative ending -en gives welchen in the question and diesen in the matching answer.',
+      explanation:
+        'Mantel is masculine and the direct object in both parts; the masculine accusative ending -en gives welchen in the question and diesen in the matching answer.',
     },
     {
       id: 'ch20-ex-42',
@@ -920,7 +984,8 @@ export const chapter020: ChapterDefinition = {
       templateParts: ['', ' Mantel gefällt dir?'],
       slots: [{ id: 'ch20-ex42-slot1', correctWord: 'Welcher' }],
       wordBank: ['Welcher', 'Welche', 'Welches', 'Welchen'],
-      explanation: 'Mantel is masculine and the subject, so welcher takes the nominative masculine ending -er.',
+      explanation:
+        'Mantel is masculine and the subject, so welcher takes the nominative masculine ending -er.',
     },
     {
       id: 'ch20-ex-43',
@@ -934,7 +999,8 @@ export const chapter020: ChapterDefinition = {
       templateParts: ['', ' Jacke möchten Sie?'],
       slots: [{ id: 'ch20-ex43-slot1', correctWord: 'Welche' }],
       wordBank: ['Welche', 'Welcher', 'Welches', 'Welchen'],
-      explanation: 'Jacke is feminine and the direct object; feminine accusative equals feminine nominative, so welche is correct.',
+      explanation:
+        'Jacke is feminine and the direct object; feminine accusative equals feminine nominative, so welche is correct.',
     },
     {
       id: 'ch20-ex-44',
@@ -948,7 +1014,8 @@ export const chapter020: ChapterDefinition = {
       templateParts: ['Ich kaufe ', ' Rock.'],
       slots: [{ id: 'ch20-ex44-slot1', correctWord: 'diesen' }],
       wordBank: ['diesen', 'dieser', 'diese', 'dieses'],
-      explanation: 'Rock is masculine and the direct object of kaufe, so dieser takes the accusative masculine ending -en: diesen.',
+      explanation:
+        'Rock is masculine and the direct object of kaufe, so dieser takes the accusative masculine ending -en: diesen.',
     },
     {
       id: 'ch20-ex-45',
@@ -962,7 +1029,8 @@ export const chapter020: ChapterDefinition = {
       templateParts: ['', ' Hemd ist billiger?'],
       slots: [{ id: 'ch20-ex45-slot1', correctWord: 'Welches' }],
       wordBank: ['Welches', 'Welcher', 'Welche', 'Welchen'],
-      explanation: 'Hemd is neuter and the subject, so welcher takes the nominative neuter ending -es: welches.',
+      explanation:
+        'Hemd is neuter and the subject, so welcher takes the nominative neuter ending -es: welches.',
     },
     {
       id: 'ch20-ex-46',
@@ -976,7 +1044,8 @@ export const chapter020: ChapterDefinition = {
       templateParts: ['', ' Schuhe sind im Angebot?'],
       slots: [{ id: 'ch20-ex46-slot1', correctWord: 'Welche' }],
       wordBank: ['Welche', 'Welcher', 'Welches', 'Welchen'],
-      explanation: 'Schuhe is plural and the subject; the plural nominative ending is -e: welche.',
+      explanation:
+        'Schuhe is plural and the subject; the plural nominative ending is -e: welche.',
     },
     {
       id: 'ch20-ex-47',
@@ -990,7 +1059,8 @@ export const chapter020: ChapterDefinition = {
       templateParts: ['', ' Buch liest du?'],
       slots: [{ id: 'ch20-ex47-slot1', correctWord: 'Welches' }],
       wordBank: ['Welches', 'Welcher', 'Welche', 'Welchen'],
-      explanation: 'Buch is neuter and the direct object of liest; neuter accusative equals neuter nominative, so welches is correct.',
+      explanation:
+        'Buch is neuter and the direct object of liest; neuter accusative equals neuter nominative, so welches is correct.',
     },
     {
       id: 'ch20-ex-48',
@@ -1004,7 +1074,8 @@ export const chapter020: ChapterDefinition = {
       templateParts: ['Ich nehme ', ' Tasche.'],
       slots: [{ id: 'ch20-ex48-slot1', correctWord: 'diese' }],
       wordBank: ['diese', 'dieser', 'dieses', 'diesen'],
-      explanation: 'Tasche is feminine and the direct object of nehme; feminine accusative equals feminine nominative, so diese is correct.',
+      explanation:
+        'Tasche is feminine and the direct object of nehme; feminine accusative equals feminine nominative, so diese is correct.',
     },
     {
       id: 'ch20-ex-49',
@@ -1013,15 +1084,29 @@ export const chapter020: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['welcher', 'declension'],
-      instruction: 'Match each noun (with its gender and case) to the correct form of welcher.',
+      instruction:
+        'Match each noun (with its gender and case) to the correct form of welcher.',
       prompt: 'Match the noun to the correct form of welcher.',
       pairs: [
         { id: 'ch20-ex49-p1', left: 'Rock (masculine, subject)', right: 'Welcher' },
-        { id: 'ch20-ex49-p2', left: 'Anzug (masculine, direct object)', right: 'Welchen' },
-        { id: 'ch20-ex49-p3', left: 'Bluse (feminine, subject or object)', right: 'Welche' },
-        { id: 'ch20-ex49-p4', left: 'Kleid (neuter, subject or object)', right: 'Welches' },
+        {
+          id: 'ch20-ex49-p2',
+          left: 'Anzug (masculine, direct object)',
+          right: 'Welchen',
+        },
+        {
+          id: 'ch20-ex49-p3',
+          left: 'Bluse (feminine, subject or object)',
+          right: 'Welche',
+        },
+        {
+          id: 'ch20-ex49-p4',
+          left: 'Kleid (neuter, subject or object)',
+          right: 'Welches',
+        },
       ],
-      explanation: 'welcher takes -er in the masculine nominative, -en in the masculine accusative, -e for feminine, and -es for neuter — the same endings as der, den, die, das.',
+      explanation:
+        'welcher takes -er in the masculine nominative, -en in the masculine accusative, -e for feminine, and -es for neuter — the same endings as der, den, die, das.',
     },
     {
       id: 'ch20-ex-50',
@@ -1030,15 +1115,25 @@ export const chapter020: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['dieser', 'declension'],
-      instruction: 'Match each noun (with its gender and case) to the correct form of dieser.',
+      instruction:
+        'Match each noun (with its gender and case) to the correct form of dieser.',
       prompt: 'Match the noun to the correct form of dieser.',
       pairs: [
         { id: 'ch20-ex50-p1', left: 'Schuh (masculine, subject)', right: 'Dieser' },
-        { id: 'ch20-ex50-p2', left: 'Pullover (masculine, direct object)', right: 'Diesen' },
-        { id: 'ch20-ex50-p3', left: 'Hose (feminine, subject or object)', right: 'Diese' },
+        {
+          id: 'ch20-ex50-p2',
+          left: 'Pullover (masculine, direct object)',
+          right: 'Diesen',
+        },
+        {
+          id: 'ch20-ex50-p3',
+          left: 'Hose (feminine, subject or object)',
+          right: 'Diese',
+        },
         { id: 'ch20-ex50-p4', left: 'Hemd (neuter, subject or object)', right: 'Dieses' },
       ],
-      explanation: 'dieser takes -er in the masculine nominative, -en in the masculine accusative, -e for feminine, and -es for neuter — the same endings as der, den, die, das.',
+      explanation:
+        'dieser takes -er in the masculine nominative, -en in the masculine accusative, -e for feminine, and -es for neuter — the same endings as der, den, die, das.',
     },
     {
       id: 'ch20-ex-51',
@@ -1047,15 +1142,21 @@ export const chapter020: ChapterDefinition = {
       type: 'matching',
       level: 'production',
       grammarFocus: ['welcher', 'declension', 'plural'],
-      instruction: 'Match each noun (with its gender, number, and case) to the correct form of welcher.',
+      instruction:
+        'Match each noun (with its gender, number, and case) to the correct form of welcher.',
       prompt: 'Match the noun to the correct form of welcher.',
       pairs: [
         { id: 'ch20-ex51-p1', left: 'Tisch (masculine, subject)', right: 'Welcher' },
-        { id: 'ch20-ex51-p2', left: 'Stuhl (masculine, direct object)', right: 'Welchen' },
+        {
+          id: 'ch20-ex51-p2',
+          left: 'Stuhl (masculine, direct object)',
+          right: 'Welchen',
+        },
         { id: 'ch20-ex51-p3', left: 'Handschuhe (plural, subject)', right: 'Welche' },
         { id: 'ch20-ex51-p4', left: 'Hemd (neuter, subject)', right: 'Welches' },
       ],
-      explanation: 'welcher takes -er masculine nominative, -en masculine accusative, -e plural, and -es neuter — the plural ending -e looks the same as the feminine, but the noun here is plural.',
+      explanation:
+        'welcher takes -er masculine nominative, -en masculine accusative, -e plural, and -es neuter — the plural ending -e looks the same as the feminine, but the noun here is plural.',
     },
     {
       id: 'ch20-ex-52',
@@ -1064,7 +1165,8 @@ export const chapter020: ChapterDefinition = {
       type: 'matching',
       level: 'production',
       grammarFocus: ['dieser', 'declension', 'plural'],
-      instruction: 'Match each noun (with its gender, number, and case) to the correct form of dieser.',
+      instruction:
+        'Match each noun (with its gender, number, and case) to the correct form of dieser.',
       prompt: 'Match the noun to the correct form of dieser.',
       pairs: [
         { id: 'ch20-ex52-p1', left: 'Tisch (masculine, subject)', right: 'Dieser' },
@@ -1072,7 +1174,8 @@ export const chapter020: ChapterDefinition = {
         { id: 'ch20-ex52-p3', left: 'Handschuhe (plural, subject)', right: 'Diese' },
         { id: 'ch20-ex52-p4', left: 'Hemd (neuter, subject)', right: 'Dieses' },
       ],
-      explanation: 'dieser takes -er masculine nominative, -en masculine accusative, -e plural, and -es neuter — the plural ending -e looks the same as the feminine, but the noun here is plural.',
+      explanation:
+        'dieser takes -er masculine nominative, -en masculine accusative, -e plural, and -es neuter — the plural ending -e looks the same as the feminine, but the noun here is plural.',
     },
     {
       id: 'ch20-ex-53',
@@ -1081,15 +1184,21 @@ export const chapter020: ChapterDefinition = {
       type: 'matching',
       level: 'transfer',
       grammarFocus: ['welcher-dieser-dialogue', 'shopping'],
-      instruction: 'Match each welcher-question to the dieser-answer that fits it in gender, number, and case.',
+      instruction:
+        'Match each welcher-question to the dieser-answer that fits it in gender, number, and case.',
       prompt: 'Match the question with the matching answer.',
       pairs: [
         { id: 'ch20-ex53-p1', left: 'Welcher Rock gefällt dir?', right: 'Dieser hier.' },
         { id: 'ch20-ex53-p2', left: 'Welche Jacke möchten Sie?', right: 'Diese hier.' },
         { id: 'ch20-ex53-p3', left: 'Welches Hemd nimmst du?', right: 'Dieses hier.' },
-        { id: 'ch20-ex53-p4', left: 'Welche Schuhe sind billiger?', right: 'Diese hier, glaube ich.' },
+        {
+          id: 'ch20-ex53-p4',
+          left: 'Welche Schuhe sind billiger?',
+          right: 'Diese hier, glaube ich.',
+        },
       ],
-      explanation: 'A dieser-answer matches the welcher-question in gender, number, and case, because both refer to the same noun and the same grammatical role.',
+      explanation:
+        'A dieser-answer matches the welcher-question in gender, number, and case, because both refer to the same noun and the same grammatical role.',
     },
     {
       id: 'ch20-ex-54',
@@ -1098,15 +1207,33 @@ export const chapter020: ChapterDefinition = {
       type: 'matching',
       level: 'transfer',
       grammarFocus: ['welcher', 'dieser', 'accusative'],
-      instruction: 'Match each noun (with its gender, number, and case) to the correctly declined welcher/dieser form.',
+      instruction:
+        'Match each noun (with its gender, number, and case) to the correctly declined welcher/dieser form.',
       prompt: 'Match the noun to the correctly declined form.',
       pairs: [
-        { id: 'ch20-ex54-p1', left: 'Rock (masculine, direct object, welcher)', right: 'Welchen' },
-        { id: 'ch20-ex54-p2', left: 'Kuchen (masculine, direct object, dieser)', right: 'Diesen' },
-        { id: 'ch20-ex54-p3', left: 'Hemd (neuter, direct object, welcher)', right: 'Welches' },
-        { id: 'ch20-ex54-p4', left: 'Schuhe (plural, direct object, dieser)', right: 'Diese' },
+        {
+          id: 'ch20-ex54-p1',
+          left: 'Rock (masculine, direct object, welcher)',
+          right: 'Welchen',
+        },
+        {
+          id: 'ch20-ex54-p2',
+          left: 'Kuchen (masculine, direct object, dieser)',
+          right: 'Diesen',
+        },
+        {
+          id: 'ch20-ex54-p3',
+          left: 'Hemd (neuter, direct object, welcher)',
+          right: 'Welches',
+        },
+        {
+          id: 'ch20-ex54-p4',
+          left: 'Schuhe (plural, direct object, dieser)',
+          right: 'Diese',
+        },
       ],
-      explanation: 'In the accusative, only the masculine form changes (-en); neuter stays -es and plural stays -e, whichever word — welcher or dieser — is used.',
+      explanation:
+        'In the accusative, only the masculine form changes (-en); neuter stays -es and plural stays -e, whichever word — welcher or dieser — is used.',
     },
     {
       id: 'ch20-ex-55',
@@ -1120,7 +1247,8 @@ export const chapter020: ChapterDefinition = {
       tokens: ['Welche', 'Mantel', 'gefällt', 'dir', '?'],
       errorTokenIndex: 0,
       correction: 'Welcher',
-      explanation: 'Mantel is masculine and the subject, so welcher needs the masculine nominative ending -er, not the feminine/plural ending -e.',
+      explanation:
+        'Mantel is masculine and the subject, so welcher needs the masculine nominative ending -er, not the feminine/plural ending -e.',
     },
     {
       id: 'ch20-ex-56',
@@ -1134,7 +1262,8 @@ export const chapter020: ChapterDefinition = {
       tokens: ['Ich', 'kaufe', 'dieser', 'Rock', '.'],
       errorTokenIndex: 2,
       correction: 'diesen',
-      explanation: 'Rock is masculine and the direct object of kaufe, so dieser needs the accusative masculine ending -en, not the nominative ending -er.',
+      explanation:
+        'Rock is masculine and the direct object of kaufe, so dieser needs the accusative masculine ending -en, not the nominative ending -er.',
     },
     {
       id: 'ch20-ex-57',
@@ -1148,7 +1277,8 @@ export const chapter020: ChapterDefinition = {
       tokens: ['Welcher', 'Jacke', 'möchten', 'Sie', '?'],
       errorTokenIndex: 0,
       correction: 'Welche',
-      explanation: 'Jacke is feminine, so welcher needs the feminine ending -e, not the masculine ending -er.',
+      explanation:
+        'Jacke is feminine, so welcher needs the feminine ending -e, not the masculine ending -er.',
     },
     {
       id: 'ch20-ex-58',
@@ -1162,7 +1292,8 @@ export const chapter020: ChapterDefinition = {
       tokens: ['Dieses', 'Mann', 'ist', 'mein', 'Lehrer', '.'],
       errorTokenIndex: 0,
       correction: 'Dieser',
-      explanation: 'Mann is masculine and the subject, so dieser needs the masculine nominative ending -er, not the neuter ending -es.',
+      explanation:
+        'Mann is masculine and the subject, so dieser needs the masculine nominative ending -er, not the neuter ending -es.',
     },
   ],
 };

@@ -26,9 +26,9 @@ export const chapter072: ChapterDefinition = {
   ],
   explanation: {
     introduction: [
-      "A direct question stands on its own, with the verb either in position 2 after a question word (Wo wohnst du?) or in position 1 for a yes/no question (Kommst du mit?). An indirect question is different: it is not asked on its own but embedded inside a larger sentence, introduced by a phrase like Ich weiß nicht, ..., Können Sie mir sagen, ..., or Ich frage mich, .... Once a question is folded into a sentence this way, it behaves exactly like the subordinate clauses you already know from weil, wenn, and dass (Chapter 46): the finite verb moves all the way to the end of its own clause, and a comma separates it from the introductory clause.",
+      'A direct question stands on its own, with the verb either in position 2 after a question word (Wo wohnst du?) or in position 1 for a yes/no question (Kommst du mit?). An indirect question is different: it is not asked on its own but embedded inside a larger sentence, introduced by a phrase like Ich weiß nicht, ..., Können Sie mir sagen, ..., or Ich frage mich, .... Once a question is folded into a sentence this way, it behaves exactly like the subordinate clauses you already know from weil, wenn, and dass (Chapter 46): the finite verb moves all the way to the end of its own clause, and a comma separates it from the introductory clause.',
       'Indirect questions come in two shapes, depending on the original direct question. If the direct question has a question word (wer, was, wann, wo, wie, warum, wohin, woher, wie viel, wie lange, welche...), that same question word is kept and now also functions as the subordinating conjunction: Wo wohnst du? becomes ..., wo du wohnst. If the direct question has no question word — a yes/no question like Kommst du mit? — German cannot simply drop the question and leave nothing behind, so it inserts ob (whether/if) to do the job a question word would otherwise do: ..., ob du mitkommst. In both cases the verb-final rule applies exactly as it did for weil, wenn, and dass.',
-      "Punctuation follows the sentence as a whole, not the embedded question. Ich weiß nicht, wo der Bahnhof ist. ends with a period, because Ich weiß nicht is a statement — even though it contains a question inside it, that inner question no longer has its own question mark. But Können Sie mir sagen, wo der Bahnhof ist? ends with a question mark, because the introductory clause Können Sie mir sagen ...? is itself a genuine question. This last pattern — wrapping a blunt direct question inside a polite introductory phrase — is one of the most common and useful jobs indirect questions do in everyday German: Wo ist der Bahnhof? sounds abrupt to a stranger, while Können Sie mir sagen, wo der Bahnhof ist? sounds like a courteous request.",
+      'Punctuation follows the sentence as a whole, not the embedded question. Ich weiß nicht, wo der Bahnhof ist. ends with a period, because Ich weiß nicht is a statement — even though it contains a question inside it, that inner question no longer has its own question mark. But Können Sie mir sagen, wo der Bahnhof ist? ends with a question mark, because the introductory clause Können Sie mir sagen ...? is itself a genuine question. This last pattern — wrapping a blunt direct question inside a polite introductory phrase — is one of the most common and useful jobs indirect questions do in everyday German: Wo ist der Bahnhof? sounds abrupt to a stranger, while Können Sie mir sagen, wo der Bahnhof ist? sounds like a courteous request.',
     ],
     rules: [
       {
@@ -65,9 +65,10 @@ export const chapter072: ChapterDefinition = {
       },
       {
         id: 'ch72-rule-05',
-        heading: 'Punctuation: the question mark belongs to the whole sentence, not the embedded question',
+        heading:
+          'Punctuation: the question mark belongs to the whole sentence, not the embedded question',
         paragraphs: [
-          'An indirect question never has its own question mark, because it is not asked on its own — it is part of a larger sentence, and that sentence\'s own type decides the final punctuation. If the introductory clause is a statement (Ich weiß nicht, ... / Ich frage mich, ... / Er hat gefragt, ...), the whole sentence ends with a period, even though a question sits inside it: Ich weiß nicht, wer das ist.',
+          "An indirect question never has its own question mark, because it is not asked on its own — it is part of a larger sentence, and that sentence's own type decides the final punctuation. If the introductory clause is a statement (Ich weiß nicht, ... / Ich frage mich, ... / Er hat gefragt, ...), the whole sentence ends with a period, even though a question sits inside it: Ich weiß nicht, wer das ist.",
           'If the introductory clause is itself phrased as a question (Können Sie mir sagen, ...? / Weißt du, ...? / Kannst du mir erklären, ...?), the whole sentence ends with a question mark, because you really are asking something — you are just asking it indirectly: Können Sie mir sagen, wo der Bahnhof ist?',
         ],
       },
@@ -104,7 +105,10 @@ export const chapter072: ChapterDefinition = {
         rows: [
           ['Kommst du morgen?', 'Ich weiß nicht, ob du morgen kommst.'],
           ['Ist der Laden geöffnet?', 'Können Sie mir sagen, ob der Laden geöffnet ist?'],
-          ['Hat er die Prüfung bestanden?', 'Ich frage mich, ob er die Prüfung bestanden hat.'],
+          [
+            'Hat er die Prüfung bestanden?',
+            'Ich frage mich, ob er die Prüfung bestanden hat.',
+          ],
           ['Regnet es?', 'Weißt du, ob es regnet?'],
           ['Kannst du mir helfen?', 'Ich möchte wissen, ob du mir helfen kannst.'],
         ],
@@ -115,13 +119,33 @@ export const chapter072: ChapterDefinition = {
         title: 'Common Introductory Phrases',
         columns: ['Phrase', 'English', 'Note'],
         rows: [
-          ['Ich weiß nicht, ...', "I don't know ...", 'statement — sentence ends with a period'],
-          ['Ich frage mich, ...', 'I wonder ...', 'reflexive sich fragen — statement, period'],
+          [
+            'Ich weiß nicht, ...',
+            "I don't know ...",
+            'statement — sentence ends with a period',
+          ],
+          [
+            'Ich frage mich, ...',
+            'I wonder ...',
+            'reflexive sich fragen — statement, period',
+          ],
           ['Ich möchte wissen, ...', 'I would like to know ...', 'statement, period'],
-          ['Können Sie mir sagen, ...?', 'Can you tell me ...?', 'polite request — question mark'],
+          [
+            'Können Sie mir sagen, ...?',
+            'Can you tell me ...?',
+            'polite request — question mark',
+          ],
           ['Weißt du, ...?', 'Do you know ...?', 'informal question — question mark'],
-          ['Er/Sie hat gefragt, ...', 'He/She asked ...', 'reported question — statement, period'],
-          ['Es ist unklar, ob ...', "It's unclear whether ...", 'impersonal statement, period'],
+          [
+            'Er/Sie hat gefragt, ...',
+            'He/She asked ...',
+            'reported question — statement, period',
+          ],
+          [
+            'Es ist unklar, ob ...',
+            "It's unclear whether ...",
+            'impersonal statement, period',
+          ],
         ],
         note: 'Whether the final sentence ends in a period or a question mark depends entirely on the introductory phrase, never on the embedded question.',
       },
@@ -144,7 +168,8 @@ export const chapter072: ChapterDefinition = {
         german: 'Ich weiß nicht, wo er wohnt.',
         english: "I don't know where he lives.",
         highlight: ['wo er wohnt'],
-        explanation: 'The question word wo is kept; the verb wohnt moves to the end of its clause.',
+        explanation:
+          'The question word wo is kept; the verb wohnt moves to the end of its clause.',
       },
       {
         german: 'Können Sie mir sagen, wo der Bahnhof ist?',
@@ -171,7 +196,8 @@ export const chapter072: ChapterDefinition = {
         german: 'Ich verstehe nicht, warum sie so still ist.',
         english: "I don't understand why she is so quiet.",
         highlight: ['warum sie so still ist'],
-        explanation: 'warum is kept as the introducing word; the verb ist moves to the very end.',
+        explanation:
+          'warum is kept as the introducing word; the verb ist moves to the very end.',
       },
       {
         german: 'Ich weiß nicht, ob er die Prüfung bestanden hat.',
@@ -184,48 +210,56 @@ export const chapter072: ChapterDefinition = {
         german: 'Ich möchte wissen, ob du mir helfen kannst.',
         english: 'I would like to know whether you can help me.',
         highlight: ['helfen kannst'],
-        explanation: 'The modal verb kannst goes to the very end, after the infinitive helfen.',
+        explanation:
+          'The modal verb kannst goes to the very end, after the infinitive helfen.',
       },
       {
         german: 'Sag mir, wie viel das Ticket kostet.',
         english: 'Tell me how much the ticket costs.',
         highlight: ['wie viel das Ticket kostet'],
-        explanation: 'The two-word question phrase wie viel stays together at the front of the clause; the verb kostet goes to the end.',
+        explanation:
+          'The two-word question phrase wie viel stays together at the front of the clause; the verb kostet goes to the end.',
       },
       {
         german: 'Er hat mich gefragt, ob ich Zeit habe.',
         english: 'He asked me whether I have time.',
         highlight: ['ob ich Zeit habe'],
-        explanation: 'Reporting someone else\'s yes/no question also uses ob; the sentence is a statement about what he asked, so it ends with a period.',
+        explanation:
+          "Reporting someone else's yes/no question also uses ob; the sentence is a statement about what he asked, so it ends with a period.",
       },
       {
         german: 'Wo ist der Bahnhof?',
         english: 'Where is the train station?',
-        explanation: 'The direct version: blunt and perfectly grammatical, but less courteous toward a stranger than the indirect version below.',
+        explanation:
+          'The direct version: blunt and perfectly grammatical, but less courteous toward a stranger than the indirect version below.',
       },
       {
         german: 'Entschuldigung, können Sie mir sagen, wo der Bahnhof ist?',
         english: 'Excuse me, could you tell me where the train station is?',
         highlight: ['können Sie mir sagen'],
-        explanation: 'The same question wrapped in a polite introductory phrase — a typical use of indirect questions as a politeness strategy.',
+        explanation:
+          'The same question wrapped in a polite introductory phrase — a typical use of indirect questions as a politeness strategy.',
       },
       {
         german: 'Ich weiß nicht, wer das ist.',
         english: "I don't know who that is.",
         highlight: ['wer das ist'],
-        explanation: 'Even though a question is embedded, the whole sentence is a statement, so it ends with a period, not a question mark.',
+        explanation:
+          'Even though a question is embedded, the whole sentence is a statement, so it ends with a period, not a question mark.',
       },
       {
         german: 'Es ist unklar, ob das Geschäft heute geöffnet ist.',
         english: "It's unclear whether the shop is open today.",
         highlight: ['ob das Geschäft heute geöffnet ist'],
-        explanation: 'An impersonal introductory phrase (Es ist unklar, ...) still triggers the same ob + verb-final pattern.',
+        explanation:
+          'An impersonal introductory phrase (Es ist unklar, ...) still triggers the same ob + verb-final pattern.',
       },
       {
         german: 'Kannst du mir erklären, warum der Zug Verspätung hat?',
         english: 'Can you explain to me why the train is delayed?',
         highlight: ['warum der Zug Verspätung hat'],
-        explanation: 'The introductory clause is a question, so the whole sentence ends with a question mark, even though warum sits inside it.',
+        explanation:
+          'The introductory clause is a question, so the whole sentence ends with a question mark, even though warum sits inside it.',
       },
     ],
     commonMistakes: [
@@ -256,7 +290,8 @@ export const chapter072: ChapterDefinition = {
       {
         incorrect: 'Ich frage mich ob er kommt.',
         correct: 'Ich frage mich, ob er kommt.',
-        explanation: 'A comma always separates the introductory clause from the embedded question, exactly as with weil-, wenn-, and dass-clauses.',
+        explanation:
+          'A comma always separates the introductory clause from the embedded question, exactly as with weil-, wenn-, and dass-clauses.',
       },
       {
         incorrect: 'Ich weiß nicht, ob er hat die Prüfung bestanden.',
@@ -297,7 +332,8 @@ export const chapter072: ChapterDefinition = {
         { id: 'd', text: 'Ich weiß nicht, wohnt er wo.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The question word wo is kept, and the finite verb wohnt moves to the end of its clause.',
+      explanation:
+        'The question word wo is kept, and the finite verb wohnt moves to the end of its clause.',
     },
     {
       id: 'ch72-ex-02',
@@ -315,7 +351,8 @@ export const chapter072: ChapterDefinition = {
         { id: 'd', text: 'Ich weiß nicht, er ob morgen kommt.' },
       ],
       correctOptionId: 'a',
-      explanation: 'ob replaces the missing question word and sends the finite verb kommt to the end of its clause.',
+      explanation:
+        'ob replaces the missing question word and sends the finite verb kommt to the end of its clause.',
     },
     {
       id: 'ch72-ex-03',
@@ -333,7 +370,8 @@ export const chapter072: ChapterDefinition = {
         { id: 'd', text: 'wer' },
       ],
       correctOptionId: 'a',
-      explanation: 'wie viel (how much) is the question word from the original direct question Wie viel kostet das Ticket?',
+      explanation:
+        'wie viel (how much) is the question word from the original direct question Wie viel kostet das Ticket?',
     },
     {
       id: 'ch72-ex-04',
@@ -351,7 +389,8 @@ export const chapter072: ChapterDefinition = {
         { id: 'd', text: 'wie' },
       ],
       correctOptionId: 'a',
-      explanation: 'Ist der Laden geöffnet? has no question word, so ob introduces the indirect yes/no question.',
+      explanation:
+        'Ist der Laden geöffnet? has no question word, so ob introduces the indirect yes/no question.',
     },
     {
       id: 'ch72-ex-05',
@@ -369,7 +408,8 @@ export const chapter072: ChapterDefinition = {
         { id: 'd', text: 'Weißt du, wann ankommt der Bus?' },
       ],
       correctOptionId: 'a',
-      explanation: 'The separable verb ankommen rejoins as one word (ankommt) at the end of the embedded clause.',
+      explanation:
+        'The separable verb ankommen rejoins as one word (ankommt) at the end of the embedded clause.',
     },
     {
       id: 'ch72-ex-06',
@@ -387,7 +427,8 @@ export const chapter072: ChapterDefinition = {
         { id: 'd', text: 'Ich frage mich, ob du mir kannst helfen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The modal verb kannst goes to the very end of the clause, after the infinitive helfen.',
+      explanation:
+        'The modal verb kannst goes to the very end of the clause, after the infinitive helfen.',
     },
     {
       id: 'ch72-ex-07',
@@ -405,7 +446,8 @@ export const chapter072: ChapterDefinition = {
         { id: 'd', text: 'Ich weiß nicht, ob hat er die Prüfung bestanden.' },
       ],
       correctOptionId: 'a',
-      explanation: 'In the perfect tense, the participle (bestanden) comes first and the auxiliary (hat) comes last, at the very end.',
+      explanation:
+        'In the perfect tense, the participle (bestanden) comes first and the auxiliary (hat) comes last, at the very end.',
     },
     {
       id: 'ch72-ex-08',
@@ -423,7 +465,8 @@ export const chapter072: ChapterDefinition = {
         { id: 'd', text: 'Ich weiß nicht wo der Bahnhof, ist.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The comma goes directly before the question word that introduces the embedded clause.',
+      explanation:
+        'The comma goes directly before the question word that introduces the embedded clause.',
     },
     {
       id: 'ch72-ex-09',
@@ -460,7 +503,8 @@ export const chapter072: ChapterDefinition = {
         { id: 'd', text: 'Können Sie mir sagen, wo der Bahnhof, ist?' },
       ],
       correctOptionId: 'a',
-      explanation: 'The introductory clause Können Sie mir sagen ...? is itself a question, so the whole sentence ends with a question mark.',
+      explanation:
+        'The introductory clause Können Sie mir sagen ...? is itself a question, so the whole sentence ends with a question mark.',
     },
     {
       id: 'ch72-ex-11',
@@ -471,10 +515,19 @@ export const chapter072: ChapterDefinition = {
       grammarFocus: ['indirect-question', 'politeness', 'dialogue'],
       instruction: 'Choose the more polite way to ask the same question.',
       dialogue: [
-        { speaker: 'Tourist', german: 'Wo ist der Bahnhof?', english: 'Where is the train station?' },
-        { speaker: 'Freund', german: 'Frag doch höflicher, du redest mit einer fremden Person!', english: "Ask more politely, you're talking to a stranger!" },
+        {
+          speaker: 'Tourist',
+          german: 'Wo ist der Bahnhof?',
+          english: 'Where is the train station?',
+        },
+        {
+          speaker: 'Freund',
+          german: 'Frag doch höflicher, du redest mit einer fremden Person!',
+          english: "Ask more politely, you're talking to a stranger!",
+        },
       ],
-      prompt: 'Rephrase the tourist\'s question more politely, addressing a stranger with Sie.',
+      prompt:
+        "Rephrase the tourist's question more politely, addressing a stranger with Sie.",
       options: [
         { id: 'a', text: 'Können Sie mir sagen, wo der Bahnhof ist?' },
         { id: 'b', text: 'Wo ist der Bahnhof, können Sie mir sagen?' },
@@ -482,7 +535,8 @@ export const chapter072: ChapterDefinition = {
         { id: 'd', text: 'Können Sie mir sagen wo ist der Bahnhof?' },
       ],
       correctOptionId: 'a',
-      explanation: 'Wrapping the question inside Können Sie mir sagen, ...? with verb-final order softens the direct question into a polite request.',
+      explanation:
+        'Wrapping the question inside Können Sie mir sagen, ...? with verb-final order softens the direct question into a polite request.',
     },
     {
       id: 'ch72-ex-12',
@@ -492,7 +546,8 @@ export const chapter072: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['indirect-question', 'ob', 'conversion'],
       instruction: 'Choose the correct conversion.',
-      prompt: '"Ist das Geschäft heute geöffnet?" → indirect, beginning with "Weißt du, ...?"',
+      prompt:
+        '"Ist das Geschäft heute geöffnet?" → indirect, beginning with "Weißt du, ...?"',
       options: [
         { id: 'a', text: 'Weißt du, ob das Geschäft heute geöffnet ist?' },
         { id: 'b', text: 'Weißt du, ist das Geschäft heute geöffnet?' },
@@ -500,7 +555,8 @@ export const chapter072: ChapterDefinition = {
         { id: 'd', text: 'Weißt du, das Geschäft heute geöffnet ist?' },
       ],
       correctOptionId: 'a',
-      explanation: 'ob replaces the missing question word, and the verb ist moves to the end: ob das Geschäft heute geöffnet ist.',
+      explanation:
+        'ob replaces the missing question word, and the verb ist moves to the end: ob das Geschäft heute geöffnet ist.',
     },
     {
       id: 'ch72-ex-13',
@@ -510,7 +566,8 @@ export const chapter072: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['indirect-question', 'question-word', 'conversion'],
       instruction: 'Choose the correct conversion.',
-      prompt: '"Warum ist sie so still?" → indirect, beginning with "Ich verstehe nicht, ..."',
+      prompt:
+        '"Warum ist sie so still?" → indirect, beginning with "Ich verstehe nicht, ..."',
       options: [
         { id: 'a', text: 'Ich verstehe nicht, warum sie so still ist.' },
         { id: 'b', text: 'Ich verstehe nicht, warum ist sie so still.' },
@@ -518,7 +575,8 @@ export const chapter072: ChapterDefinition = {
         { id: 'd', text: 'Ich verstehe nicht, warum sie ist so still.' },
       ],
       correctOptionId: 'a',
-      explanation: 'warum is kept, and the verb ist moves all the way to the end of the clause: warum sie so still ist.',
+      explanation:
+        'warum is kept, and the verb ist moves all the way to the end of the clause: warum sie so still ist.',
     },
     {
       id: 'ch72-ex-14',
@@ -536,7 +594,8 @@ export const chapter072: ChapterDefinition = {
         { id: 'd', text: 'Kannst du mir sagen, wann der Film beginnt?' },
       ],
       correctOptionId: 'c',
-      explanation: 'ob must send the finite verb to the end of its clause: it should be ob sie morgen kommt, not ob kommt sie morgen.',
+      explanation:
+        'ob must send the finite verb to the end of its clause: it should be ob sie morgen kommt, not ob kommt sie morgen.',
     },
     {
       id: 'ch72-ex-15',
@@ -562,7 +621,8 @@ export const chapter072: ChapterDefinition = {
         { id: 'd', text: 'ob kommt Tom heute Abend zur Party.' },
       ],
       correctOptionId: 'a',
-      explanation: "Anna's question has no question word, so ob introduces the indirect question, with the verb kommt at the end.",
+      explanation:
+        "Anna's question has no question word, so ob introduces the indirect question, with the verb kommt at the end.",
     },
     {
       id: 'ch72-ex-16',
@@ -577,7 +637,8 @@ export const chapter072: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'wohnt',
       maxLength: 10,
-      explanation: 'The verb moves to the end of the clause; the er-form of wohnen is wohnt.',
+      explanation:
+        'The verb moves to the end of the clause; the er-form of wohnen is wohnt.',
     },
     {
       id: 'ch72-ex-17',
@@ -592,7 +653,8 @@ export const chapter072: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'ob',
       maxLength: 5,
-      explanation: 'ob introduces an indirect yes/no question when there is no question word to keep.',
+      explanation:
+        'ob introduces an indirect yes/no question when there is no question word to keep.',
     },
     {
       id: 'ch72-ex-18',
@@ -607,7 +669,8 @@ export const chapter072: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'sagt',
       maxLength: 10,
-      explanation: 'The finite verb goes to the end of the ob-clause; the sie-form of sagen is sagt.',
+      explanation:
+        'The finite verb goes to the end of the ob-clause; the sie-form of sagen is sagt.',
     },
     {
       id: 'ch72-ex-19',
@@ -622,7 +685,8 @@ export const chapter072: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'abfährt',
       maxLength: 15,
-      explanation: 'The separable verb abfahren rejoins as one word (abfährt) at the end of the embedded clause.',
+      explanation:
+        'The separable verb abfahren rejoins as one word (abfährt) at the end of the embedded clause.',
     },
     {
       id: 'ch72-ex-20',
@@ -637,7 +701,8 @@ export const chapter072: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'muss',
       maxLength: 10,
-      explanation: 'The modal verb goes to the very end, after the infinitive arbeiten: ob ich morgen arbeiten muss.',
+      explanation:
+        'The modal verb goes to the very end, after the infinitive arbeiten: ob ich morgen arbeiten muss.',
     },
     {
       id: 'ch72-ex-21',
@@ -646,13 +711,16 @@ export const chapter072: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['ob', 'perfect-tense', 'verb-final'],
-      instruction: 'Write only the missing words (two words). Capitalisation is not checked.',
-      prompt: 'Ich weiß nicht, ob er die Prüfung ___. (bestehen, Perfekt mit haben, er-Form)',
+      instruction:
+        'Write only the missing words (two words). Capitalisation is not checked.',
+      prompt:
+        'Ich weiß nicht, ob er die Prüfung ___. (bestehen, Perfekt mit haben, er-Form)',
       acceptedAnswers: ['bestanden hat'],
       answerMode: 'caseInsensitive',
       placeholder: 'bestanden hat',
       maxLength: 20,
-      explanation: 'In the perfect tense, the participle (bestanden) comes first and the auxiliary (hat) comes last, at the end of the clause.',
+      explanation:
+        'In the perfect tense, the participle (bestanden) comes first and the auxiliary (hat) comes last, at the end of the clause.',
     },
     {
       id: 'ch72-ex-22',
@@ -661,13 +729,15 @@ export const chapter072: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['indirect-question', 'question-word', 'conversion'],
-      instruction: 'Convert the direct question into an indirect question starting with the given phrase. Capitalisation and punctuation are checked.',
+      instruction:
+        'Convert the direct question into an indirect question starting with the given phrase. Capitalisation and punctuation are checked.',
       prompt: 'Wo wohnst du? → Ich weiß nicht, ...',
       acceptedAnswers: ['Ich weiß nicht, wo du wohnst.'],
       answerMode: 'normalized',
       placeholder: 'Ich weiß nicht, wo du wohnst.',
       maxLength: 40,
-      explanation: 'The question word wo is kept, and the verb wohnst moves to the end: Ich weiß nicht, wo du wohnst.',
+      explanation:
+        'The question word wo is kept, and the verb wohnst moves to the end: Ich weiß nicht, wo du wohnst.',
     },
     {
       id: 'ch72-ex-23',
@@ -676,13 +746,15 @@ export const chapter072: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['indirect-question', 'ob', 'conversion'],
-      instruction: 'Convert the direct question into an indirect question starting with the given phrase. Capitalisation and punctuation are checked.',
+      instruction:
+        'Convert the direct question into an indirect question starting with the given phrase. Capitalisation and punctuation are checked.',
       prompt: 'Kommst du morgen? → Ich weiß nicht, ...',
       acceptedAnswers: ['Ich weiß nicht, ob du morgen kommst.'],
       answerMode: 'normalized',
       placeholder: 'Ich weiß nicht, ob du morgen kommst.',
       maxLength: 45,
-      explanation: 'The direct question has no question word, so ob introduces the clause: Ich weiß nicht, ob du morgen kommst.',
+      explanation:
+        'The direct question has no question word, so ob introduces the clause: Ich weiß nicht, ob du morgen kommst.',
     },
     {
       id: 'ch72-ex-24',
@@ -691,7 +763,8 @@ export const chapter072: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['indirect-question', 'politeness', 'punctuation', 'conversion'],
-      instruction: 'Convert the direct question into a polite indirect question starting with the given phrase. Capitalisation and punctuation are checked.',
+      instruction:
+        'Convert the direct question into a polite indirect question starting with the given phrase. Capitalisation and punctuation are checked.',
       prompt: 'Wo ist der Bahnhof? → Können Sie mir sagen, ...?',
       acceptedAnswers: ['Können Sie mir sagen, wo der Bahnhof ist?'],
       answerMode: 'normalized',
@@ -707,13 +780,15 @@ export const chapter072: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['indirect-question', 'ob', 'conversion'],
-      instruction: 'Convert the direct question into an indirect question starting with the given phrase. Capitalisation and punctuation are checked.',
+      instruction:
+        'Convert the direct question into an indirect question starting with the given phrase. Capitalisation and punctuation are checked.',
       prompt: 'Regnet es morgen? → Ich frage mich, ...',
       acceptedAnswers: ['Ich frage mich, ob es morgen regnet.'],
       answerMode: 'normalized',
       placeholder: 'Ich frage mich, ob es morgen regnet.',
       maxLength: 45,
-      explanation: 'Ich frage mich is a statement, so the sentence ends with a period; ob introduces the embedded yes/no question.',
+      explanation:
+        'Ich frage mich is a statement, so the sentence ends with a period; ob introduces the embedded yes/no question.',
     },
     {
       id: 'ch72-ex-26',
@@ -722,13 +797,15 @@ export const chapter072: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['indirect-question', 'ob', 'punctuation', 'conversion'],
-      instruction: 'Convert the direct question into an indirect question starting with the given phrase. Capitalisation and punctuation are checked.',
+      instruction:
+        'Convert the direct question into an indirect question starting with the given phrase. Capitalisation and punctuation are checked.',
       prompt: 'Ist der Laden heute geöffnet? → Weißt du, ...?',
       acceptedAnswers: ['Weißt du, ob der Laden heute geöffnet ist?'],
       answerMode: 'normalized',
       placeholder: 'Weißt du, ob der Laden heute geöffnet ist?',
       maxLength: 50,
-      explanation: 'Weißt du ...? is itself a question, so the sentence keeps its question mark; ob introduces the embedded yes/no question.',
+      explanation:
+        'Weißt du ...? is itself a question, so the sentence keeps its question mark; ob introduces the embedded yes/no question.',
     },
     {
       id: 'ch72-ex-27',
@@ -737,13 +814,15 @@ export const chapter072: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'verb-final'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ich weiß nicht, wo ist der Bahnhof.',
       acceptedAnswers: ['Ich weiß nicht, wo der Bahnhof ist.'],
       answerMode: 'normalized',
       placeholder: 'Ich weiß nicht, wo der Bahnhof ist.',
       maxLength: 40,
-      explanation: 'The question word wo sends the finite verb to the end of its clause: wo der Bahnhof ist, not wo ist der Bahnhof.',
+      explanation:
+        'The question word wo sends the finite verb to the end of its clause: wo der Bahnhof ist, not wo ist der Bahnhof.',
     },
     {
       id: 'ch72-ex-28',
@@ -752,13 +831,15 @@ export const chapter072: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'ob'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ich frage mich, kommt er morgen.',
       acceptedAnswers: ['Ich frage mich, ob er morgen kommt.'],
       answerMode: 'normalized',
       placeholder: 'Ich frage mich, ob er morgen kommt.',
       maxLength: 45,
-      explanation: 'A yes/no question with no question word needs ob to introduce the embedded clause: ob er morgen kommt.',
+      explanation:
+        'A yes/no question with no question word needs ob to introduce the embedded clause: ob er morgen kommt.',
     },
     {
       id: 'ch72-ex-29',
@@ -767,7 +848,8 @@ export const chapter072: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['indirect-question', 'ob', 'dialogue', 'verb-final'],
-      instruction: 'Complete the reply. Write only the missing words. Capitalisation is not checked.',
+      instruction:
+        'Complete the reply. Write only the missing words. Capitalisation is not checked.',
       dialogue: [
         {
           speaker: 'Chef',
@@ -776,7 +858,8 @@ export const chapter072: ChapterDefinition = {
         },
         {
           speaker: 'Kollege',
-          german: 'Sie hat gesagt, dass sie am Montag zurückkommt. Aber ich weiß nicht, ___.',
+          german:
+            'Sie hat gesagt, dass sie am Montag zurückkommt. Aber ich weiß nicht, ___.',
           english: "She said she's coming back on Monday. But I don't know ___.",
         },
       ],
@@ -785,7 +868,8 @@ export const chapter072: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'ob sie pünktlich kommt',
       maxLength: 30,
-      explanation: 'The original question (Kommt sie pünktlich?) has no question word, so ob introduces the clause with the verb kommt at the end.',
+      explanation:
+        'The original question (Kommt sie pünktlich?) has no question word, so ob introduces the clause with the verb kommt at the end.',
     },
     {
       id: 'ch72-ex-30',
@@ -794,13 +878,15 @@ export const chapter072: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['indirect-question', 'ob', 'modal-verb', 'conversion', 'politeness'],
-      instruction: 'Convert the direct question into a polite indirect question starting with the given phrase. Capitalisation and punctuation are checked.',
+      instruction:
+        'Convert the direct question into a polite indirect question starting with the given phrase. Capitalisation and punctuation are checked.',
       prompt: 'Kannst du mir helfen? → Ich möchte wissen, ...',
       acceptedAnswers: ['Ich möchte wissen, ob du mir helfen kannst.'],
       answerMode: 'normalized',
       placeholder: 'Ich möchte wissen, ob du mir helfen kannst.',
       maxLength: 45,
-      explanation: 'ob introduces the clause, and the modal kannst moves to the very end, after the infinitive helfen.',
+      explanation:
+        'ob introduces the clause, and the modal kannst moves to the very end, after the infinitive helfen.',
     },
     {
       id: 'ch72-ex-31',
@@ -819,7 +905,8 @@ export const chapter072: ChapterDefinition = {
         { id: 's5', text: 'er' },
         { id: 's6', text: 'kommt.' },
       ],
-      explanation: 'ob replaces the missing question word and sends the finite verb kommt to the end of its clause.',
+      explanation:
+        'ob replaces the missing question word and sends the finite verb kommt to the end of its clause.',
     },
     {
       id: 'ch72-ex-32',
@@ -838,7 +925,8 @@ export const chapter072: ChapterDefinition = {
         { id: 's5', text: 'der Film' },
         { id: 's6', text: 'beginnt.' },
       ],
-      explanation: 'The question word wann is kept and now introduces the clause, so the finite verb beginnt moves to the end.',
+      explanation:
+        'The question word wann is kept and now introduces the clause, so the finite verb beginnt moves to the end.',
     },
     {
       id: 'ch72-ex-33',
@@ -858,7 +946,8 @@ export const chapter072: ChapterDefinition = {
         { id: 's6', text: 'der Bahnhof' },
         { id: 's7', text: 'ist?' },
       ],
-      explanation: 'The introductory clause Können Sie mir sagen ...? is itself a question, and wo der Bahnhof ist keeps the verb at the end.',
+      explanation:
+        'The introductory clause Können Sie mir sagen ...? is itself a question, and wo der Bahnhof ist keeps the verb at the end.',
     },
     {
       id: 'ch72-ex-34',
@@ -879,7 +968,8 @@ export const chapter072: ChapterDefinition = {
         { id: 's7', text: 'bestanden' },
         { id: 's8', text: 'hat.' },
       ],
-      explanation: 'In the perfect tense, the participle bestanden comes first and the auxiliary hat comes last, at the very end.',
+      explanation:
+        'In the perfect tense, the participle bestanden comes first and the auxiliary hat comes last, at the very end.',
     },
     {
       id: 'ch72-ex-35',
@@ -900,7 +990,8 @@ export const chapter072: ChapterDefinition = {
         { id: 's7', text: 'kommen' },
         { id: 's8', text: 'kannst.' },
       ],
-      explanation: 'warum introduces the clause and the modal kannst goes to the very end, after the infinitive kommen.',
+      explanation:
+        'warum introduces the clause and the modal kannst goes to the very end, after the infinitive kommen.',
     },
     {
       id: 'ch72-ex-36',
@@ -908,7 +999,12 @@ export const chapter072: ChapterDefinition = {
       order: 36,
       type: 'sentenceOrdering',
       level: 'controlled',
-      grammarFocus: ['indirect-question', 'question-word', 'separable-verb', 'verb-final'],
+      grammarFocus: [
+        'indirect-question',
+        'question-word',
+        'separable-verb',
+        'verb-final',
+      ],
       instruction: 'Drag the segments into the correct order.',
       prompt: 'Put the words in order: "Do you know when the train departs?"',
       segments: [
@@ -918,7 +1014,8 @@ export const chapter072: ChapterDefinition = {
         { id: 's4', text: 'der Zug' },
         { id: 's5', text: 'abfährt?' },
       ],
-      explanation: 'The separable verb abfahren rejoins into one word (abfährt) at the end of the embedded clause.',
+      explanation:
+        'The separable verb abfahren rejoins into one word (abfährt) at the end of the embedded clause.',
     },
     {
       id: 'ch72-ex-37',
@@ -939,7 +1036,8 @@ export const chapter072: ChapterDefinition = {
         { id: 's7', text: 'Zeit' },
         { id: 's8', text: 'habe.' },
       ],
-      explanation: 'Reporting a yes/no question also uses ob; the whole sentence is a statement about what he asked, so it ends with a period.',
+      explanation:
+        'Reporting a yes/no question also uses ob; the whole sentence is a statement about what he asked, so it ends with a period.',
     },
     {
       id: 'ch72-ex-38',
@@ -959,7 +1057,8 @@ export const chapter072: ChapterDefinition = {
         { id: 's6', text: 'so still' },
         { id: 's7', text: 'ist.' },
       ],
-      explanation: 'warum is kept as the introducing word, and the verb ist moves to the very end of the clause.',
+      explanation:
+        'warum is kept as the introducing word, and the verb ist moves to the very end of the clause.',
     },
     {
       id: 'ch72-ex-39',
@@ -977,7 +1076,8 @@ export const chapter072: ChapterDefinition = {
         { id: 's4', text: 'das Ticket' },
         { id: 's5', text: 'kostet.' },
       ],
-      explanation: 'The two-word question phrase wie viel stays together at the front of the clause, and the verb kostet moves to the end.',
+      explanation:
+        'The two-word question phrase wie viel stays together at the front of the clause, and the verb kostet moves to the end.',
     },
     {
       id: 'ch72-ex-40',
@@ -998,7 +1098,8 @@ export const chapter072: ChapterDefinition = {
         { id: 's7', text: 'geöffnet' },
         { id: 's8', text: 'ist.' },
       ],
-      explanation: 'An impersonal introductory phrase (Es ist unklar, ...) still triggers the same ob + verb-final pattern.',
+      explanation:
+        'An impersonal introductory phrase (Es ist unklar, ...) still triggers the same ob + verb-final pattern.',
     },
     {
       id: 'ch72-ex-41',
@@ -1008,7 +1109,8 @@ export const chapter072: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['question-word-choice', 'ob'],
       instruction: 'Drag the correct word into the gap.',
-      prompt: 'Ich weiß nicht, ___ er heute kommt. (no question word in the original question)',
+      prompt:
+        'Ich weiß nicht, ___ er heute kommt. (no question word in the original question)',
       templateParts: ['Ich weiß nicht, ', ' er heute kommt.'],
       slots: [{ id: 'slot1', correctWord: 'ob' }],
       wordBank: ['ob', 'wo', 'wann', 'wer'],
@@ -1026,7 +1128,8 @@ export const chapter072: ChapterDefinition = {
       templateParts: ['Ich weiß nicht, ', ' das Buch geschrieben hat.'],
       slots: [{ id: 'slot1', correctWord: 'wer' }],
       wordBank: ['wer', 'was', 'ob', 'wie'],
-      explanation: 'The question word wer (who) is kept from Wer hat das Buch geschrieben?',
+      explanation:
+        'The question word wer (who) is kept from Wer hat das Buch geschrieben?',
     },
     {
       id: 'ch72-ex-43',
@@ -1040,7 +1143,8 @@ export const chapter072: ChapterDefinition = {
       templateParts: ['Können Sie mir sagen, ', ' die Toilette ist?'],
       slots: [{ id: 'slot1', correctWord: 'wo' }],
       wordBank: ['wo', 'wohin', 'woher', 'ob'],
-      explanation: 'wo (where) fits a location question that does not involve movement, from Wo ist die Toilette?',
+      explanation:
+        'wo (where) fits a location question that does not involve movement, from Wo ist die Toilette?',
     },
     {
       id: 'ch72-ex-44',
@@ -1054,7 +1158,8 @@ export const chapter072: ChapterDefinition = {
       templateParts: ['Ich frage mich, ', ' du im Urlaub fährst.'],
       slots: [{ id: 'slot1', correctWord: 'wohin' }],
       wordBank: ['wohin', 'wo', 'woher', 'ob'],
-      explanation: 'wohin (where to) keeps the direction sense of Wohin fährst du im Urlaub?',
+      explanation:
+        'wohin (where to) keeps the direction sense of Wohin fährst du im Urlaub?',
     },
     {
       id: 'ch72-ex-45',
@@ -1082,7 +1187,8 @@ export const chapter072: ChapterDefinition = {
       templateParts: ['Ich weiß nicht, ob ich morgen arbeiten ', '.'],
       slots: [{ id: 'slot1', correctWord: 'muss' }],
       wordBank: ['muss', 'müssen', 'musst', 'müsst'],
-      explanation: 'The ich-form of müssen is muss, and the modal goes to the very end of the clause.',
+      explanation:
+        'The ich-form of müssen is muss, and the modal goes to the very end of the clause.',
     },
     {
       id: 'ch72-ex-47',
@@ -1096,7 +1202,8 @@ export const chapter072: ChapterDefinition = {
       templateParts: ['Weißt du, wann der Bus ', '?'],
       slots: [{ id: 'slot1', correctWord: 'ankommt' }],
       wordBank: ['ankommt', 'kommt an', 'ankommen', 'kommt'],
-      explanation: 'The separable verb ankommen rejoins as one word (ankommt) at the end of the embedded clause.',
+      explanation:
+        'The separable verb ankommen rejoins as one word (ankommt) at the end of the embedded clause.',
     },
     {
       id: 'ch72-ex-48',
@@ -1106,11 +1213,13 @@ export const chapter072: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['ob', 'perfect-tense', 'verb-final'],
       instruction: 'Drag the correct auxiliary into the gap.',
-      prompt: 'Ich weiß nicht, ob er die Prüfung bestanden ___. (Perfekt mit haben, er-Form)',
+      prompt:
+        'Ich weiß nicht, ob er die Prüfung bestanden ___. (Perfekt mit haben, er-Form)',
       templateParts: ['Ich weiß nicht, ob er die Prüfung bestanden ', '.'],
       slots: [{ id: 'slot1', correctWord: 'hat' }],
       wordBank: ['hat', 'ist', 'war', 'hatte'],
-      explanation: 'bestehen forms its perfect tense with haben, so the auxiliary hat comes last, after the participle bestanden.',
+      explanation:
+        'bestehen forms its perfect tense with haben, so the auxiliary hat comes last, after the participle bestanden.',
     },
     {
       id: 'ch72-ex-49',
@@ -1152,7 +1261,8 @@ export const chapter072: ChapterDefinition = {
       tokens: ['Ich', 'weiß', 'nicht,', 'wo', 'ist', 'der', 'Bahnhof.'],
       errorTokenIndex: 4,
       correction: 'der',
-      explanation: 'The verb ist must move to the end of the clause: wo der Bahnhof ist, not wo ist der Bahnhof.',
+      explanation:
+        'The verb ist must move to the end of the clause: wo der Bahnhof ist, not wo ist der Bahnhof.',
     },
     {
       id: 'ch72-ex-52',
@@ -1166,7 +1276,8 @@ export const chapter072: ChapterDefinition = {
       tokens: ['Ich', 'frage', 'mich,', 'kommt', 'er', 'morgen.'],
       errorTokenIndex: 3,
       correction: 'ob',
-      explanation: 'A yes/no question has no question word to embed, so ob must be inserted at the start of the clause.',
+      explanation:
+        'A yes/no question has no question word to embed, so ob must be inserted at the start of the clause.',
     },
     {
       id: 'ch72-ex-53',
@@ -1177,10 +1288,21 @@ export const chapter072: ChapterDefinition = {
       grammarFocus: ['error-correction', 'verb-final', 'perfect-tense'],
       instruction: 'Find the incorrect word and give its correction.',
       prompt: 'Ich weiß nicht, ob er hat die Prüfung bestanden.',
-      tokens: ['Ich', 'weiß', 'nicht,', 'ob', 'er', 'hat', 'die', 'Prüfung', 'bestanden.'],
+      tokens: [
+        'Ich',
+        'weiß',
+        'nicht,',
+        'ob',
+        'er',
+        'hat',
+        'die',
+        'Prüfung',
+        'bestanden.',
+      ],
       errorTokenIndex: 5,
       correction: 'die',
-      explanation: 'In the perfect tense both parts move to the end, with the auxiliary hat last: ob er die Prüfung bestanden hat.',
+      explanation:
+        'In the perfect tense both parts move to the end, with the auxiliary hat last: ob er die Prüfung bestanden hat.',
     },
     {
       id: 'ch72-ex-54',
@@ -1194,7 +1316,8 @@ export const chapter072: ChapterDefinition = {
       tokens: ['Ich', 'frage', 'mich', 'ob', 'er', 'kommt.'],
       errorTokenIndex: 2,
       correction: 'mich,',
-      explanation: 'A comma always separates the introductory clause from the embedded question: Ich frage mich, ob er kommt.',
+      explanation:
+        'A comma always separates the introductory clause from the embedded question: Ich frage mich, ob er kommt.',
     },
     {
       id: 'ch72-ex-55',
@@ -1208,7 +1331,8 @@ export const chapter072: ChapterDefinition = {
       tokens: ['Ich', 'weiß', 'nicht,', 'wer', 'das', 'ist?'],
       errorTokenIndex: 5,
       correction: 'ist.',
-      explanation: 'Ich weiß nicht is a statement, so the whole sentence ends with a period, not a question mark.',
+      explanation:
+        'Ich weiß nicht is a statement, so the whole sentence ends with a period, not a question mark.',
     },
     {
       id: 'ch72-ex-56',
@@ -1222,7 +1346,8 @@ export const chapter072: ChapterDefinition = {
       tokens: ['Ich', 'frage', 'mich,', 'ob', 'du', 'kannst', 'mir', 'helfen.'],
       errorTokenIndex: 5,
       correction: 'mir',
-      explanation: 'The modal verb kannst must move to the very end of the clause, after the infinitive: ob du mir helfen kannst.',
+      explanation:
+        'The modal verb kannst must move to the very end of the clause, after the infinitive: ob du mir helfen kannst.',
     },
     {
       id: 'ch72-ex-57',
@@ -1232,15 +1357,29 @@ export const chapter072: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['indirect-question', 'question-word', 'conversion'],
       instruction: 'Match each direct question to its correct indirect form.',
-      prompt: 'Direct questions and their indirect equivalents (with Ich weiß nicht, ...).',
+      prompt:
+        'Direct questions and their indirect equivalents (with Ich weiß nicht, ...).',
       pairs: [
         { id: 'p1', left: 'Wo wohnst du?', right: 'Ich weiß nicht, wo du wohnst.' },
-        { id: 'p2', left: 'Wann kommt der Bus?', right: 'Ich weiß nicht, wann der Bus kommt.' },
-        { id: 'p3', left: 'Wer hat angerufen?', right: 'Ich weiß nicht, wer angerufen hat.' },
+        {
+          id: 'p2',
+          left: 'Wann kommt der Bus?',
+          right: 'Ich weiß nicht, wann der Bus kommt.',
+        },
+        {
+          id: 'p3',
+          left: 'Wer hat angerufen?',
+          right: 'Ich weiß nicht, wer angerufen hat.',
+        },
         { id: 'p4', left: 'Warum weint sie?', right: 'Ich weiß nicht, warum sie weint.' },
-        { id: 'p5', left: 'Wie funktioniert das?', right: 'Ich weiß nicht, wie das funktioniert.' },
+        {
+          id: 'p5',
+          left: 'Wie funktioniert das?',
+          right: 'Ich weiß nicht, wie das funktioniert.',
+        },
       ],
-      explanation: 'Each question word is kept and now introduces the subordinate clause, sending the finite verb to the end.',
+      explanation:
+        'Each question word is kept and now introduces the subordinate clause, sending the finite verb to the end.',
     },
     {
       id: 'ch72-ex-58',
@@ -1250,15 +1389,29 @@ export const chapter072: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['indirect-question', 'ob', 'conversion'],
       instruction: 'Match each direct yes/no question to its correct indirect form.',
-      prompt: 'Direct yes/no questions and their indirect equivalents (with Ich frage mich, ...).',
+      prompt:
+        'Direct yes/no questions and their indirect equivalents (with Ich frage mich, ...).',
       pairs: [
-        { id: 'p1', left: 'Kommt er morgen?', right: 'Ich frage mich, ob er morgen kommt.' },
+        {
+          id: 'p1',
+          left: 'Kommt er morgen?',
+          right: 'Ich frage mich, ob er morgen kommt.',
+        },
         { id: 'p2', left: 'Regnet es?', right: 'Ich frage mich, ob es regnet.' },
         { id: 'p3', left: 'Hat sie Zeit?', right: 'Ich frage mich, ob sie Zeit hat.' },
-        { id: 'p4', left: 'Ist der Laden geöffnet?', right: 'Ich frage mich, ob der Laden geöffnet ist.' },
-        { id: 'p5', left: 'Kann er mir helfen?', right: 'Ich frage mich, ob er mir helfen kann.' },
+        {
+          id: 'p4',
+          left: 'Ist der Laden geöffnet?',
+          right: 'Ich frage mich, ob der Laden geöffnet ist.',
+        },
+        {
+          id: 'p5',
+          left: 'Kann er mir helfen?',
+          right: 'Ich frage mich, ob er mir helfen kann.',
+        },
       ],
-      explanation: 'Every direct yes/no question has no question word to keep, so ob fills that role in each indirect version.',
+      explanation:
+        'Every direct yes/no question has no question word to keep, so ob fills that role in each indirect version.',
     },
     {
       id: 'ch72-ex-59',
@@ -1277,7 +1430,8 @@ export const chapter072: ChapterDefinition = {
         { id: 'p5', left: 'wohin', right: 'where to' },
         { id: 'p6', left: 'woher', right: 'where from' },
       ],
-      explanation: 'These question words keep both their form and their meaning when they introduce an indirect question.',
+      explanation:
+        'These question words keep both their form and their meaning when they introduce an indirect question.',
     },
     {
       id: 'ch72-ex-60',
@@ -1289,13 +1443,34 @@ export const chapter072: ChapterDefinition = {
       instruction: 'Match each introductory phrase to its correct final punctuation.',
       prompt: 'Introductory phrases and the punctuation of the whole sentence.',
       pairs: [
-        { id: 'p1', left: 'Ich weiß nicht, ...', right: 'statement — ends with a period' },
-        { id: 'p2', left: 'Können Sie mir sagen, ...?', right: 'polite question — ends with a question mark' },
-        { id: 'p3', left: 'Er hat mich gefragt, ...', right: 'reported statement — ends with a period' },
-        { id: 'p4', left: 'Weißt du, ...?', right: 'informal question — ends with a question mark' },
-        { id: 'p5', left: 'Es ist unklar, ...', right: 'impersonal statement — ends with a period' },
+        {
+          id: 'p1',
+          left: 'Ich weiß nicht, ...',
+          right: 'statement — ends with a period',
+        },
+        {
+          id: 'p2',
+          left: 'Können Sie mir sagen, ...?',
+          right: 'polite question — ends with a question mark',
+        },
+        {
+          id: 'p3',
+          left: 'Er hat mich gefragt, ...',
+          right: 'reported statement — ends with a period',
+        },
+        {
+          id: 'p4',
+          left: 'Weißt du, ...?',
+          right: 'informal question — ends with a question mark',
+        },
+        {
+          id: 'p5',
+          left: 'Es ist unklar, ...',
+          right: 'impersonal statement — ends with a period',
+        },
       ],
-      explanation: 'The final punctuation always follows the introductory clause, never the embedded question inside it.',
+      explanation:
+        'The final punctuation always follows the introductory clause, never the embedded question inside it.',
     },
     {
       id: 'ch72-ex-61',
@@ -1304,15 +1479,33 @@ export const chapter072: ChapterDefinition = {
       type: 'matching',
       level: 'production',
       grammarFocus: ['indirect-question', 'politeness', 'conversion'],
-      instruction: 'Match each blunt direct question to its more polite indirect version.',
+      instruction:
+        'Match each blunt direct question to its more polite indirect version.',
       prompt: 'Blunt questions and their polite indirect equivalents.',
       pairs: [
-        { id: 'p1', left: 'Wo ist der Bahnhof?', right: 'Können Sie mir sagen, wo der Bahnhof ist?' },
-        { id: 'p2', left: 'Wie viel kostet das?', right: 'Können Sie mir sagen, wie viel das kostet?' },
-        { id: 'p3', left: 'Wann öffnet das Geschäft?', right: 'Können Sie mir sagen, wann das Geschäft öffnet?' },
-        { id: 'p4', left: 'Ist hier noch frei?', right: 'Können Sie mir sagen, ob hier noch frei ist?' },
+        {
+          id: 'p1',
+          left: 'Wo ist der Bahnhof?',
+          right: 'Können Sie mir sagen, wo der Bahnhof ist?',
+        },
+        {
+          id: 'p2',
+          left: 'Wie viel kostet das?',
+          right: 'Können Sie mir sagen, wie viel das kostet?',
+        },
+        {
+          id: 'p3',
+          left: 'Wann öffnet das Geschäft?',
+          right: 'Können Sie mir sagen, wann das Geschäft öffnet?',
+        },
+        {
+          id: 'p4',
+          left: 'Ist hier noch frei?',
+          right: 'Können Sie mir sagen, ob hier noch frei ist?',
+        },
       ],
-      explanation: 'Wrapping a blunt question inside Können Sie mir sagen, ...? with verb-final order softens it into a polite request.',
+      explanation:
+        'Wrapping a blunt question inside Können Sie mir sagen, ...? with verb-final order softens it into a polite request.',
     },
     {
       id: 'ch72-ex-62',
@@ -1330,7 +1523,8 @@ export const chapter072: ChapterDefinition = {
         { id: 'd', text: 'ob' },
       ],
       correctOptionId: 'a',
-      explanation: 'welche (which) is kept from the direct question Welche Farbe gefällt ihm besser?',
+      explanation:
+        'welche (which) is kept from the direct question Welche Farbe gefällt ihm besser?',
     },
     {
       id: 'ch72-ex-63',
@@ -1348,7 +1542,8 @@ export const chapter072: ChapterDefinition = {
         { id: 'd', text: 'Er hat mich gefragt, warum ich war zu spät.' },
       ],
       correctOptionId: 'a',
-      explanation: 'warum is kept, and the finite verb war moves all the way to the end of the reported question.',
+      explanation:
+        'warum is kept, and the finite verb war moves all the way to the end of the reported question.',
     },
     {
       id: 'ch72-ex-64',
@@ -1366,7 +1561,8 @@ export const chapter072: ChapterDefinition = {
         { id: 'd', text: 'Weißt du, der Film wie lange dauert?' },
       ],
       correctOptionId: 'a',
-      explanation: 'The two-word phrase wie lange stays together at the front, and the verb dauert moves to the end.',
+      explanation:
+        'The two-word phrase wie lange stays together at the front, and the verb dauert moves to the end.',
     },
     {
       id: 'ch72-ex-65',
@@ -1384,7 +1580,8 @@ export const chapter072: ChapterDefinition = {
         { id: 'd', text: 'Ich frage mich, ob regnet es morgen.' },
       ],
       correctOptionId: 'd',
-      explanation: 'ob must send the finite verb to the end: it should be ob es morgen regnet, not ob regnet es morgen.',
+      explanation:
+        'ob must send the finite verb to the end: it should be ob es morgen regnet, not ob regnet es morgen.',
     },
     {
       id: 'ch72-ex-66',
@@ -1393,13 +1590,15 @@ export const chapter072: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['indirect-question', 'question-word', 'conversion'],
-      instruction: 'Convert the direct question into an indirect question starting with the given phrase. Capitalisation and punctuation are checked.',
+      instruction:
+        'Convert the direct question into an indirect question starting with the given phrase. Capitalisation and punctuation are checked.',
       prompt: 'Wer hat angerufen? → Ich weiß nicht, ...',
       acceptedAnswers: ['Ich weiß nicht, wer angerufen hat.'],
       answerMode: 'normalized',
       placeholder: 'Ich weiß nicht, wer angerufen hat.',
       maxLength: 40,
-      explanation: 'wer is kept, and in the perfect tense the participle angerufen comes before the auxiliary hat, which moves to the end.',
+      explanation:
+        'wer is kept, and in the perfect tense the participle angerufen comes before the auxiliary hat, which moves to the end.',
     },
     {
       id: 'ch72-ex-67',
@@ -1408,13 +1607,15 @@ export const chapter072: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['indirect-question', 'question-word', 'conversion'],
-      instruction: 'Convert the direct question into an indirect question starting with the given phrase. Capitalisation and punctuation are checked.',
+      instruction:
+        'Convert the direct question into an indirect question starting with the given phrase. Capitalisation and punctuation are checked.',
       prompt: 'Wie viel kostet das Ticket? → Ich möchte wissen, ...',
       acceptedAnswers: ['Ich möchte wissen, wie viel das Ticket kostet.'],
       answerMode: 'normalized',
       placeholder: 'Ich möchte wissen, wie viel das Ticket kostet.',
       maxLength: 50,
-      explanation: 'The two-word phrase wie viel stays together at the front of the clause, and the verb kostet moves to the end.',
+      explanation:
+        'The two-word phrase wie viel stays together at the front of the clause, and the verb kostet moves to the end.',
     },
     {
       id: 'ch72-ex-68',
@@ -1423,13 +1624,15 @@ export const chapter072: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['indirect-question', 'politeness', 'punctuation', 'conversion'],
-      instruction: 'Convert the direct question into a polite indirect question starting with the given phrase. Capitalisation and punctuation are checked.',
+      instruction:
+        'Convert the direct question into a polite indirect question starting with the given phrase. Capitalisation and punctuation are checked.',
       prompt: 'Wann öffnet das Geschäft? → Können Sie mir sagen, ...?',
       acceptedAnswers: ['Können Sie mir sagen, wann das Geschäft öffnet?'],
       answerMode: 'normalized',
       placeholder: 'Können Sie mir sagen, wann das Geschäft öffnet?',
       maxLength: 50,
-      explanation: 'The introductory clause is itself a question, so the whole sentence keeps the question mark; wann is kept and öffnet moves to the end.',
+      explanation:
+        'The introductory clause is itself a question, so the whole sentence keeps the question mark; wann is kept and öffnet moves to the end.',
     },
     {
       id: 'ch72-ex-69',
@@ -1438,13 +1641,15 @@ export const chapter072: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'verb-final', 'punctuation'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Können Sie mir sagen, wo ist die Toilette?',
       acceptedAnswers: ['Können Sie mir sagen, wo die Toilette ist?'],
       answerMode: 'normalized',
       placeholder: 'Können Sie mir sagen, wo die Toilette ist?',
       maxLength: 45,
-      explanation: 'Even inside a polite question, the embedded clause still needs verb-final order: wo die Toilette ist, not wo ist die Toilette.',
+      explanation:
+        'Even inside a polite question, the embedded clause still needs verb-final order: wo die Toilette ist, not wo ist die Toilette.',
     },
     {
       id: 'ch72-ex-70',
@@ -1453,7 +1658,8 @@ export const chapter072: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['indirect-question', 'ob', 'dialogue', 'verb-final'],
-      instruction: 'Complete the reply. Write only the missing words. Capitalisation is not checked.',
+      instruction:
+        'Complete the reply. Write only the missing words. Capitalisation is not checked.',
       dialogue: [
         {
           speaker: 'Lena',
@@ -1466,12 +1672,14 @@ export const chapter072: ChapterDefinition = {
           english: "No, I don't know. I also wonder ___.",
         },
       ],
-      prompt: 'Ich frage mich auch, ___. (ob / es / am Montag / geöffnet / sein, Präsens)',
+      prompt:
+        'Ich frage mich auch, ___. (ob / es / am Montag / geöffnet / sein, Präsens)',
       acceptedAnswers: ['ob es am Montag geöffnet ist'],
       answerMode: 'caseInsensitive',
       placeholder: 'ob es am Montag geöffnet ist',
       maxLength: 35,
-      explanation: 'The original question (Ist es am Montag geöffnet?) has no question word, so ob introduces the clause with the verb ist at the end.',
+      explanation:
+        'The original question (Ist es am Montag geöffnet?) has no question word, so ob introduces the clause with the verb ist at the end.',
     },
   ],
 };

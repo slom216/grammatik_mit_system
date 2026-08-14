@@ -37,7 +37,7 @@ export const chapter071: ChapterDefinition = {
         heading: 'What a neuter substantivized adjective expresses',
         paragraphs: [
           'A neuter substantivized adjective turns a quality into an abstract noun: instead of describing a specific thing, it names the quality itself, or "something/nothing/a certain amount possessing that quality." Neu becomes etwas Neues (something new); wichtig becomes nichts Wichtiges (nothing important); gut becomes das Gute (the good, goodness). English usually needs extra words — "something," "the ... thing," "-ness" — to express the same idea that German packs into a single capitalized adjective.',
-          'Because this adjective is doing a noun\'s job, it is capitalized exactly the way a real noun would be: etwas Neues, not etwas neues. Grammatically, though, nothing else changes — it is still the adjective neu, still declining exactly as neu would decline in front of an invisible noun like Ding (thing) or Sache (matter). Keep that invisible noun in mind throughout this chapter: every ending you see here is the ending that noun would force onto neu, gut, or wichtig if it were actually written out.',
+          "Because this adjective is doing a noun's job, it is capitalized exactly the way a real noun would be: etwas Neues, not etwas neues. Grammatically, though, nothing else changes — it is still the adjective neu, still declining exactly as neu would decline in front of an invisible noun like Ding (thing) or Sache (matter). Keep that invisible noun in mind throughout this chapter: every ending you see here is the ending that noun would force onto neu, gut, or wichtig if it were actually written out.",
           'This pattern is restricted to the neuter singular — these words describe an abstract quality or an unspecified quantity of something, not a countable, pluralizable object, so there is no plural form of etwas Neues the way there is a plural die Deutschen in Chapter 70.',
         ],
       },
@@ -71,7 +71,7 @@ export const chapter071: ChapterDefinition = {
         id: 'ch71-rule-05',
         heading: 'Substantivized superlatives: das Beste, das Wichtigste',
         paragraphs: [
-          'German very frequently substantivizes the superlative form of an adjective to mean "the best/most important/nicest thing (about something)": Das ist das Beste, was ich je gehört habe. (That\'s the best thing I\'ve ever heard.) Das Wichtigste ist deine Gesundheit. (The most important thing is your health.) Was ist das Schönste an deinem Job? (What\'s the nicest thing about your job?).',
+          "German very frequently substantivizes the superlative form of an adjective to mean \"the best/most important/nicest thing (about something)\": Das ist das Beste, was ich je gehört habe. (That's the best thing I've ever heard.) Das Wichtigste ist deine Gesundheit. (The most important thing is your health.) Was ist das Schönste an deinem Job? (What's the nicest thing about your job?).",
           'These follow exactly the same rules as any other neuter substantivized adjective: after das they take the weak -e (das Beste, das Wichtigste), and after etwas/nichts they would take the strong -es (etwas Wichtigeres — something more important). The only thing that changed is that the base adjective itself is already a superlative, formed the normal way with -st- plus the ending.',
         ],
       },
@@ -79,7 +79,7 @@ export const chapter071: ChapterDefinition = {
         id: 'ch71-rule-06',
         heading: 'A capitalization exception: ander- stays lowercase',
         paragraphs: [
-          'One very common word breaks the capitalization rule you have just learned: ander- (other, different) is conventionally written in lowercase after etwas, nichts, and viel, even though it is functioning exactly like the other adjectives in this chapter. Das ist etwas ganz anderes. (That\'s something completely different.) Ich habe nichts anderes erwartet. (I expected nothing else.) Er hat sich für nichts anderes interessiert.',
+          "One very common word breaks the capitalization rule you have just learned: ander- (other, different) is conventionally written in lowercase after etwas, nichts, and viel, even though it is functioning exactly like the other adjectives in this chapter. Das ist etwas ganz anderes. (That's something completely different.) Ich habe nichts anderes erwartet. (I expected nothing else.) Er hat sich für nichts anderes interessiert.",
           'This is a well-established exception recognized by standard German spelling references (Duden), not a mistake in the source material — so resist the urge to "correct" ander- to Anderes the way you would correct etwas neues to etwas Neues. Everything else about the word behaves normally: it still takes the strong -es ending after etwas/nichts/viel (anderes), just without the capital letter.',
         ],
       },
@@ -130,8 +130,16 @@ export const chapter071: ChapterDefinition = {
         columns: ['Pattern', 'After an indefinite pronoun', 'After a der-word'],
         columnCases: [null, 'genitive', 'genitive'],
         rows: [
-          ['Typical use', 'rare — replaced by von + dative: von etwas Neuem', 'des Guten (common: trotz des Guten in ihm)'],
-          ['Superlative', 'rare — replaced by von + dative: von etwas Besserem', 'des Besten (common: trotz des Besten, was er geben konnte)'],
+          [
+            'Typical use',
+            'rare — replaced by von + dative: von etwas Neuem',
+            'des Guten (common: trotz des Guten in ihm)',
+          ],
+          [
+            'Superlative',
+            'rare — replaced by von + dative: von etwas Besserem',
+            'des Besten (common: trotz des Besten, was er geben konnte)',
+          ],
         ],
         note: 'German largely avoids the genitive after etwas/nichts/viel/wenig/genug; it stays fully productive after der-words.',
       },
@@ -141,7 +149,12 @@ export const chapter071: ChapterDefinition = {
         columns: ['Positive', 'Superlative (attributive)', 'Substantivized', 'English'],
         rows: [
           ['gut', 'besser / am besten', 'das Beste', 'the best thing'],
-          ['wichtig', 'wichtiger / am wichtigsten', 'das Wichtigste', 'the most important thing'],
+          [
+            'wichtig',
+            'wichtiger / am wichtigsten',
+            'das Wichtigste',
+            'the most important thing',
+          ],
           ['schön', 'schöner / am schönsten', 'das Schönste', 'the nicest thing'],
           ['schlimm', 'schlimmer / am schlimmsten', 'das Schlimmste', 'the worst thing'],
         ],
@@ -159,13 +172,15 @@ export const chapter071: ChapterDefinition = {
         german: 'Ich habe heute nichts Wichtiges zu tun.',
         english: 'I have nothing important to do today.',
         highlight: ['nichts Wichtiges'],
-        explanation: 'Accusative after nichts: the strong ending -es, same shape as the nominative.',
+        explanation:
+          'Accusative after nichts: the strong ending -es, same shape as the nominative.',
       },
       {
         german: 'Wir haben auf der Reise viel Interessantes gesehen.',
         english: 'We saw a lot of interesting things on the trip.',
         highlight: ['viel Interessantes'],
-        explanation: 'viel is invariable here; the adjective carries the strong accusative ending -es.',
+        explanation:
+          'viel is invariable here; the adjective carries the strong accusative ending -es.',
       },
       {
         german: 'Es gibt zu diesem Thema wenig Neues zu berichten.',
@@ -177,7 +192,8 @@ export const chapter071: ChapterDefinition = {
         german: 'Du hast heute schon genug Positives gehört.',
         english: 'You have already heard enough positive things today.',
         highlight: ['genug Positives'],
-        explanation: 'genug is invariable; the following adjective takes the strong ending -es.',
+        explanation:
+          'genug is invariable; the following adjective takes the strong ending -es.',
       },
       {
         german: 'Ich kann mit etwas Neuem im Moment nichts anfangen.',
@@ -189,7 +205,8 @@ export const chapter071: ChapterDefinition = {
         german: 'Das Gute an diesem Plan ist seine Einfachheit.',
         english: 'The good thing about this plan is its simplicity.',
         highlight: ['Das Gute'],
-        explanation: 'Nominative after das: the weak ending -e, exactly like the Chapter 41 weak-adjective table.',
+        explanation:
+          'Nominative after das: the weak ending -e, exactly like the Chapter 41 weak-adjective table.',
       },
       {
         german: 'Wir müssen zwischen dem Guten und dem Bösen unterscheiden.',
@@ -207,51 +224,60 @@ export const chapter071: ChapterDefinition = {
         german: 'Gesundheit ist das Wichtigste in unserem Leben.',
         english: 'Health is the most important thing in our lives.',
         highlight: ['das Wichtigste'],
-        explanation: 'A substantivized superlative: nominative after das takes the weak ending -e.',
+        explanation:
+          'A substantivized superlative: nominative after das takes the weak ending -e.',
       },
       {
         german: 'Ich wünsche dir alles Gute zum Geburtstag!',
         english: 'I wish you all the best for your birthday!',
         highlight: ['alles Gute'],
-        explanation: 'alles behaves like a der-word here: the weak ending -e, not the strong -es.',
+        explanation:
+          'alles behaves like a der-word here: the weak ending -e, not the strong -es.',
       },
       {
         german: 'Das ist etwas ganz anderes als das, was du gesagt hast.',
         english: "That's something completely different from what you said.",
         highlight: ['etwas ganz anderes'],
-        explanation: 'ander- is a fixed exception: it stays lowercase after etwas, even though it still takes the strong ending -es.',
+        explanation:
+          'ander- is a fixed exception: it stays lowercase after etwas, even though it still takes the strong ending -es.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Etwas Neu ist passiert.',
         correct: 'Etwas Neues ist passiert.',
-        explanation: 'The adjective cannot stand as a bare stem after etwas — it must carry the strong neuter ending -es, since etwas itself shows no case or gender.',
+        explanation:
+          'The adjective cannot stand as a bare stem after etwas — it must carry the strong neuter ending -es, since etwas itself shows no case or gender.',
       },
       {
         incorrect: 'Gestern ist etwas neues passiert.',
         correct: 'Gestern ist etwas Neues passiert.',
-        explanation: 'Neues is functioning as a noun and must be capitalized, even though etwas itself stays lowercase.',
+        explanation:
+          'Neues is functioning as a noun and must be capitalized, even though etwas itself stays lowercase.',
       },
       {
         incorrect: 'Ich kann mit etwas Neues nichts anfangen.',
         correct: 'Ich kann mit etwas Neuem nichts anfangen.',
-        explanation: 'mit takes the dative; after etwas the dative ending is the strong -em, not the nominative/accusative -es.',
+        explanation:
+          'mit takes the dative; after etwas the dative ending is the strong -em, not the nominative/accusative -es.',
       },
       {
         incorrect: 'Ich wünsche dir alles Gutes zum Geburtstag!',
         correct: 'Ich wünsche dir alles Gute zum Geburtstag!',
-        explanation: 'alles patterns like a der-word and triggers the weak ending -e on the following adjective — not the strong -es used after etwas/nichts/viel/wenig/genug.',
+        explanation:
+          'alles patterns like a der-word and triggers the weak ending -e on the following adjective — not the strong -es used after etwas/nichts/viel/wenig/genug.',
       },
       {
         incorrect: 'Das Gutes an diesem Plan ist seine Einfachheit.',
         correct: 'Das Gute an diesem Plan ist seine Einfachheit.',
-        explanation: 'After the der-word das, the neuter nominative singular takes the weak ending -e; the strong -es belongs only after etwas/nichts-type pronouns.',
+        explanation:
+          'After the der-word das, the neuter nominative singular takes the weak ending -e; the strong -es belongs only after etwas/nichts-type pronouns.',
       },
       {
         incorrect: 'Das ist etwas ganz Anderes.',
         correct: 'Das ist etwas ganz anderes.',
-        explanation: 'ander- is a conventional exception to the capitalization rule: it stays lowercase after etwas/nichts/viel, unlike every other substantivized adjective in this chapter.',
+        explanation:
+          'ander- is a conventional exception to the capitalization rule: it stays lowercase after etwas/nichts/viel, unlike every other substantivized adjective in this chapter.',
       },
     ],
     remember: [
@@ -286,7 +312,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'd', text: 'nichts Wichtige' },
       ],
       correctOptionId: 'a',
-      explanation: 'nichts is a lowercase indefinite pronoun; the adjective following it is capitalized and takes the strong neuter ending -es: nichts Wichtiges.',
+      explanation:
+        'nichts is a lowercase indefinite pronoun; the adjective following it is capitalized and takes the strong neuter ending -es: nichts Wichtiges.',
     },
     {
       id: 'ch71-ex-02',
@@ -304,7 +331,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'd', text: 'etwas Neue' },
       ],
       correctOptionId: 'a',
-      explanation: 'etwas stays lowercase (it is a pronoun, not a noun); Neues is capitalized because it functions as the noun and takes the strong neuter ending -es.',
+      explanation:
+        'etwas stays lowercase (it is a pronoun, not a noun); Neues is capitalized because it functions as the noun and takes the strong neuter ending -es.',
     },
     {
       id: 'ch71-ex-03',
@@ -322,7 +350,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'd', text: 'vielen Interessantes' },
       ],
       correctOptionId: 'a',
-      explanation: 'viel is invariable here (not viele, which needs a plural countable noun); the adjective takes the strong neuter accusative ending -es: viel Interessantes.',
+      explanation:
+        'viel is invariable here (not viele, which needs a plural countable noun); the adjective takes the strong neuter accusative ending -es: viel Interessantes.',
     },
     {
       id: 'ch71-ex-04',
@@ -340,7 +369,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'd', text: 'Etwas Seltsam' },
       ],
       correctOptionId: 'a',
-      explanation: 'Sentence-initial etwas is capitalized because it starts the sentence; the adjective still takes the strong nominative neuter ending -es: Etwas Seltsames.',
+      explanation:
+        'Sentence-initial etwas is capitalized because it starts the sentence; the adjective still takes the strong nominative neuter ending -es: Etwas Seltsames.',
     },
     {
       id: 'ch71-ex-05',
@@ -348,7 +378,12 @@ export const chapter071: ChapterDefinition = {
       order: 5,
       type: 'singleChoice',
       level: 'controlled',
-      grammarFocus: ['substantivized-adjectives', 'strong-declension', 'accusative', 'nichts'],
+      grammarFocus: [
+        'substantivized-adjectives',
+        'strong-declension',
+        'accusative',
+        'nichts',
+      ],
       instruction: 'Choose the correct accusative form.',
       prompt: 'Er hat mir ___ erzählt. (nothing special)',
       options: [
@@ -358,7 +393,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'd', text: 'nichts Besonders' },
       ],
       correctOptionId: 'a',
-      explanation: 'After nichts, the accusative neuter adjective ending is the strong -es: nichts Besonderes.',
+      explanation:
+        'After nichts, the accusative neuter adjective ending is the strong -es: nichts Besonderes.',
     },
     {
       id: 'ch71-ex-06',
@@ -366,7 +402,12 @@ export const chapter071: ChapterDefinition = {
       order: 6,
       type: 'singleChoice',
       level: 'controlled',
-      grammarFocus: ['substantivized-adjectives', 'strong-declension', 'nominative', 'wenig'],
+      grammarFocus: [
+        'substantivized-adjectives',
+        'strong-declension',
+        'nominative',
+        'wenig',
+      ],
       instruction: 'Choose the correct nominative form.',
       prompt: 'Zu diesem Thema gibt es ___ zu sagen. (little new)',
       options: [
@@ -376,7 +417,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'd', text: 'wenig Neuen' },
       ],
       correctOptionId: 'a',
-      explanation: 'wenig behaves like etwas/nichts: it is invariable, and the following adjective takes the strong ending -es: wenig Neues.',
+      explanation:
+        'wenig behaves like etwas/nichts: it is invariable, and the following adjective takes the strong ending -es: wenig Neues.',
     },
     {
       id: 'ch71-ex-07',
@@ -384,7 +426,12 @@ export const chapter071: ChapterDefinition = {
       order: 7,
       type: 'singleChoice',
       level: 'controlled',
-      grammarFocus: ['substantivized-adjectives', 'strong-declension', 'accusative', 'genug'],
+      grammarFocus: [
+        'substantivized-adjectives',
+        'strong-declension',
+        'accusative',
+        'genug',
+      ],
       instruction: 'Choose the correct accusative form.',
       prompt: 'Du hast heute schon ___ gehört. (enough positive [news])',
       options: [
@@ -394,7 +441,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'd', text: 'genug Positiven' },
       ],
       correctOptionId: 'a',
-      explanation: 'genug is invariable; the adjective following it takes the strong accusative ending -es: genug Positives.',
+      explanation:
+        'genug is invariable; the adjective following it takes the strong accusative ending -es: genug Positives.',
     },
     {
       id: 'ch71-ex-08',
@@ -412,7 +460,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'd', text: 'etwas Neuen' },
       ],
       correctOptionId: 'a',
-      explanation: 'mit takes the dative; after etwas the strong dative neuter ending is -em, not the nominative/accusative -es: mit etwas Neuem.',
+      explanation:
+        'mit takes the dative; after etwas the strong dative neuter ending is -em, not the nominative/accusative -es: mit etwas Neuem.',
     },
     {
       id: 'ch71-ex-09',
@@ -420,7 +469,12 @@ export const chapter071: ChapterDefinition = {
       order: 9,
       type: 'singleChoice',
       level: 'production',
-      grammarFocus: ['substantivized-adjectives', 'weak-declension', 'nominative', 'das-gute'],
+      grammarFocus: [
+        'substantivized-adjectives',
+        'weak-declension',
+        'nominative',
+        'das-gute',
+      ],
       instruction: 'Choose the correct nominative form.',
       prompt: '___ an diesem Plan ist seine Einfachheit. (the good thing)',
       options: [
@@ -430,7 +484,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'd', text: 'Der Gute' },
       ],
       correctOptionId: 'a',
-      explanation: 'After das, the neuter nominative singular takes the weak ending -e, exactly like the Chapter 41 weak-adjective table: Das Gute.',
+      explanation:
+        'After das, the neuter nominative singular takes the weak ending -e, exactly like the Chapter 41 weak-adjective table: Das Gute.',
     },
     {
       id: 'ch71-ex-10',
@@ -448,7 +503,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'd', text: 'des Guten' },
       ],
       correctOptionId: 'a',
-      explanation: 'zwischen ... und ... takes the dative here; the neuter dative singular ending after dem is -en: dem Guten.',
+      explanation:
+        'zwischen ... und ... takes the dative here; the neuter dative singular ending after dem is -en: dem Guten.',
     },
     {
       id: 'ch71-ex-11',
@@ -466,7 +522,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'd', text: 'des Gute' },
       ],
       correctOptionId: 'a',
-      explanation: 'trotz takes the genitive; the neuter genitive singular ending after des is -en: des Guten.',
+      explanation:
+        'trotz takes the genitive; the neuter genitive singular ending after des is -en: des Guten.',
     },
     {
       id: 'ch71-ex-12',
@@ -484,7 +541,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'd', text: 'alles Gut' },
       ],
       correctOptionId: 'a',
-      explanation: 'alles behaves like a der-word: it triggers the weak ending -e on the following adjective, not the strong -es used after etwas/nichts/viel/wenig/genug: alles Gute.',
+      explanation:
+        'alles behaves like a der-word: it triggers the weak ending -e on the following adjective, not the strong -es used after etwas/nichts/viel/wenig/genug: alles Gute.',
     },
     {
       id: 'ch71-ex-13',
@@ -502,7 +560,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'd', text: 'dem Wichtigsten' },
       ],
       correctOptionId: 'a',
-      explanation: 'Superlatives are often substantivized this way to mean "the most important thing"; the nominative neuter after das takes the weak ending -e: das Wichtigste.',
+      explanation:
+        'Superlatives are often substantivized this way to mean "the most important thing"; the nominative neuter after das takes the weak ending -e: das Wichtigste.',
     },
     {
       id: 'ch71-ex-14',
@@ -520,7 +579,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'd', text: 'Das ist etwas ganz anders.' },
       ],
       correctOptionId: 'a',
-      explanation: 'ander- is a conventional exception: after etwas/nichts/viel it is written lowercase, unlike other substantivized adjectives — etwas anderes, not etwas Anderes.',
+      explanation:
+        'ander- is a conventional exception: after etwas/nichts/viel it is written lowercase, unlike other substantivized adjectives — etwas anderes, not etwas Anderes.',
     },
     {
       id: 'ch71-ex-15',
@@ -538,7 +598,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'd', text: 'Dem Neue kann ich nichts abgewinnen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'After das, the weak ending -e is correct: Das Neue. Option b wrongly uses the strong -es after a der-word; c and d use the wrong ending for their case and context.',
+      explanation:
+        'After das, the weak ending -e is correct: Das Neue. Option b wrongly uses the strong -es after a der-word; c and d use the wrong ending for their case and context.',
     },
     {
       id: 'ch71-ex-16',
@@ -556,7 +617,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'd', text: 'Es gibt nichts neues unter der Sonne.' },
       ],
       correctOptionId: 'a',
-      explanation: '"Es gibt nichts Neues unter der Sonne" (there is nothing new under the sun) is correct: nichts stays lowercase, Neues is capitalized and takes the strong ending -es.',
+      explanation:
+        '"Es gibt nichts Neues unter der Sonne" (there is nothing new under the sun) is correct: nichts stays lowercase, Neues is capitalized and takes the strong ending -es.',
     },
     {
       id: 'ch71-ex-17',
@@ -564,14 +626,21 @@ export const chapter071: ChapterDefinition = {
       order: 17,
       type: 'textInput',
       level: 'recognition',
-      grammarFocus: ['substantivized-adjectives', 'capitalization', 'strong-declension', 'nominative'],
-      instruction: 'Write the correctly capitalized and declined form. Capitalisation is checked.',
+      grammarFocus: [
+        'substantivized-adjectives',
+        'capitalization',
+        'strong-declension',
+        'nominative',
+      ],
+      instruction:
+        'Write the correctly capitalized and declined form. Capitalisation is checked.',
       prompt: 'etwas + neu (nominative)',
       acceptedAnswers: ['etwas Neues'],
       answerMode: 'normalized',
       placeholder: 'etwas Neues',
       maxLength: 20,
-      explanation: 'After etwas, the strong nominative neuter ending is -es: etwas Neues.',
+      explanation:
+        'After etwas, the strong nominative neuter ending is -es: etwas Neues.',
     },
     {
       id: 'ch71-ex-18',
@@ -579,14 +648,21 @@ export const chapter071: ChapterDefinition = {
       order: 18,
       type: 'textInput',
       level: 'recognition',
-      grammarFocus: ['substantivized-adjectives', 'capitalization', 'strong-declension', 'accusative'],
-      instruction: 'Write the correctly capitalized and declined form. Capitalisation is checked.',
+      grammarFocus: [
+        'substantivized-adjectives',
+        'capitalization',
+        'strong-declension',
+        'accusative',
+      ],
+      instruction:
+        'Write the correctly capitalized and declined form. Capitalisation is checked.',
       prompt: 'nichts + wichtig (accusative)',
       acceptedAnswers: ['nichts Wichtiges'],
       answerMode: 'normalized',
       placeholder: 'nichts Wichtiges',
       maxLength: 25,
-      explanation: 'After nichts, the strong accusative neuter ending is -es: nichts Wichtiges.',
+      explanation:
+        'After nichts, the strong accusative neuter ending is -es: nichts Wichtiges.',
     },
     {
       id: 'ch71-ex-19',
@@ -594,14 +670,20 @@ export const chapter071: ChapterDefinition = {
       order: 19,
       type: 'textInput',
       level: 'controlled',
-      grammarFocus: ['substantivized-adjectives', 'strong-declension', 'accusative', 'viel'],
+      grammarFocus: [
+        'substantivized-adjectives',
+        'strong-declension',
+        'accusative',
+        'viel',
+      ],
       instruction: 'Write the correctly declined form. Capitalisation is checked.',
       prompt: 'viel + gut (accusative)',
       acceptedAnswers: ['viel Gutes'],
       answerMode: 'normalized',
       placeholder: 'viel Gutes',
       maxLength: 20,
-      explanation: 'viel is invariable; the adjective takes the strong accusative ending -es: viel Gutes.',
+      explanation:
+        'viel is invariable; the adjective takes the strong accusative ending -es: viel Gutes.',
     },
     {
       id: 'ch71-ex-20',
@@ -609,14 +691,20 @@ export const chapter071: ChapterDefinition = {
       order: 20,
       type: 'textInput',
       level: 'controlled',
-      grammarFocus: ['substantivized-adjectives', 'strong-declension', 'nominative', 'wenig'],
+      grammarFocus: [
+        'substantivized-adjectives',
+        'strong-declension',
+        'nominative',
+        'wenig',
+      ],
       instruction: 'Write the correctly declined form. Capitalisation is checked.',
       prompt: 'wenig + neu (nominative)',
       acceptedAnswers: ['wenig Neues'],
       answerMode: 'normalized',
       placeholder: 'wenig Neues',
       maxLength: 20,
-      explanation: 'wenig is invariable; the adjective takes the strong nominative ending -es: wenig Neues.',
+      explanation:
+        'wenig is invariable; the adjective takes the strong nominative ending -es: wenig Neues.',
     },
     {
       id: 'ch71-ex-21',
@@ -624,14 +712,20 @@ export const chapter071: ChapterDefinition = {
       order: 21,
       type: 'textInput',
       level: 'controlled',
-      grammarFocus: ['substantivized-adjectives', 'strong-declension', 'accusative', 'genug'],
+      grammarFocus: [
+        'substantivized-adjectives',
+        'strong-declension',
+        'accusative',
+        'genug',
+      ],
       instruction: 'Write the correctly declined form. Capitalisation is checked.',
       prompt: 'genug + positiv (accusative)',
       acceptedAnswers: ['genug Positives'],
       answerMode: 'normalized',
       placeholder: 'genug Positives',
       maxLength: 20,
-      explanation: 'genug is invariable; the adjective takes the strong accusative ending -es: genug Positives.',
+      explanation:
+        'genug is invariable; the adjective takes the strong accusative ending -es: genug Positives.',
     },
     {
       id: 'ch71-ex-22',
@@ -640,13 +734,15 @@ export const chapter071: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['substantivized-adjectives', 'strong-declension', 'dative'],
-      instruction: 'Write the correctly declined phrase, including the preposition. Capitalisation is checked.',
+      instruction:
+        'Write the correctly declined phrase, including the preposition. Capitalisation is checked.',
       prompt: 'mit + etwas + neu (dative)',
       acceptedAnswers: ['mit etwas Neuem'],
       answerMode: 'normalized',
       placeholder: 'mit etwas Neuem',
       maxLength: 25,
-      explanation: 'mit takes the dative; after etwas the strong dative ending is -em: mit etwas Neuem.',
+      explanation:
+        'mit takes the dative; after etwas the strong dative ending is -em: mit etwas Neuem.',
     },
     {
       id: 'ch71-ex-23',
@@ -654,7 +750,12 @@ export const chapter071: ChapterDefinition = {
       order: 23,
       type: 'textInput',
       level: 'production',
-      grammarFocus: ['substantivized-adjectives', 'weak-declension', 'nominative', 'das-gute'],
+      grammarFocus: [
+        'substantivized-adjectives',
+        'weak-declension',
+        'nominative',
+        'das-gute',
+      ],
       instruction: 'Write the correctly declined form. Capitalisation is checked.',
       prompt: 'das + gut (nominative)',
       acceptedAnswers: ['das Gute'],
@@ -685,7 +786,8 @@ export const chapter071: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['substantivized-adjectives', 'weak-declension', 'genitive'],
-      instruction: 'Write the correctly declined form (used after trotz). Capitalisation is checked.',
+      instruction:
+        'Write the correctly declined form (used after trotz). Capitalisation is checked.',
       prompt: 'des + gut (genitive, after trotz)',
       acceptedAnswers: ['des Guten'],
       answerMode: 'normalized',
@@ -700,13 +802,15 @@ export const chapter071: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['substantivized-adjectives', 'alles', 'weak-declension'],
-      instruction: 'Write the correctly declined idiomatic form. Capitalisation is checked.',
+      instruction:
+        'Write the correctly declined idiomatic form. Capitalisation is checked.',
       prompt: 'alles + gut (idiom, accusative)',
       acceptedAnswers: ['alles Gute'],
       answerMode: 'normalized',
       placeholder: 'alles Gute',
       maxLength: 15,
-      explanation: 'alles triggers the weak ending -e on the adjective, not the strong -es: alles Gute.',
+      explanation:
+        'alles triggers the weak ending -e on the adjective, not the strong -es: alles Gute.',
     },
     {
       id: 'ch71-ex-27',
@@ -715,13 +819,15 @@ export const chapter071: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['substantivized-adjectives', 'superlatives', 'nominative'],
-      instruction: 'Write the correctly declined substantivized superlative. Capitalisation is checked.',
+      instruction:
+        'Write the correctly declined substantivized superlative. Capitalisation is checked.',
       prompt: 'das + wichtig (superlative, nominative)',
       acceptedAnswers: ['das Wichtigste'],
       answerMode: 'normalized',
       placeholder: 'das Wichtigste',
       maxLength: 20,
-      explanation: 'The superlative wichtigst- is substantivized like any other adjective: after das, the weak ending -e: das Wichtigste.',
+      explanation:
+        'The superlative wichtigst- is substantivized like any other adjective: after das, the weak ending -e: das Wichtigste.',
     },
     {
       id: 'ch71-ex-28',
@@ -730,13 +836,15 @@ export const chapter071: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['substantivized-adjectives', 'superlatives', 'nominative'],
-      instruction: 'Write the correctly declined substantivized superlative. Capitalisation is checked.',
+      instruction:
+        'Write the correctly declined substantivized superlative. Capitalisation is checked.',
       prompt: 'das + best (superlative, nominative)',
       acceptedAnswers: ['das Beste'],
       answerMode: 'normalized',
       placeholder: 'das Beste',
       maxLength: 15,
-      explanation: 'gut → best- (irregular superlative stem); substantivized after das with the weak ending -e: das Beste.',
+      explanation:
+        'gut → best- (irregular superlative stem); substantivized after das with the weak ending -e: das Beste.',
     },
     {
       id: 'ch71-ex-29',
@@ -744,14 +852,20 @@ export const chapter071: ChapterDefinition = {
       order: 29,
       type: 'textInput',
       level: 'transfer',
-      grammarFocus: ['substantivized-adjectives', 'strong-declension', 'accusative', 'nichts'],
+      grammarFocus: [
+        'substantivized-adjectives',
+        'strong-declension',
+        'accusative',
+        'nichts',
+      ],
       instruction: 'Write the correctly declined form. Capitalisation is checked.',
       prompt: 'nichts + besonder (accusative)',
       acceptedAnswers: ['nichts Besonderes'],
       answerMode: 'normalized',
       placeholder: 'nichts Besonderes',
       maxLength: 25,
-      explanation: 'After nichts, the strong accusative ending is -es: nichts Besonderes.',
+      explanation:
+        'After nichts, the strong accusative ending is -es: nichts Besonderes.',
     },
     {
       id: 'ch71-ex-30',
@@ -759,14 +873,21 @@ export const chapter071: ChapterDefinition = {
       order: 30,
       type: 'textInput',
       level: 'transfer',
-      grammarFocus: ['substantivized-adjectives', 'ander-exception', 'capitalization', 'nominative'],
-      instruction: 'Write the correctly declined form. This adjective is an exception — check the capitalization rule carefully.',
+      grammarFocus: [
+        'substantivized-adjectives',
+        'ander-exception',
+        'capitalization',
+        'nominative',
+      ],
+      instruction:
+        'Write the correctly declined form. This adjective is an exception — check the capitalization rule carefully.',
       prompt: 'etwas + ander (exception, nominative)',
       acceptedAnswers: ['etwas anderes'],
       answerMode: 'normalized',
       placeholder: 'etwas anderes',
       maxLength: 20,
-      explanation: 'ander- is conventionally kept lowercase after etwas, unlike every other adjective in this chapter: etwas anderes.',
+      explanation:
+        'ander- is conventionally kept lowercase after etwas, unlike every other adjective in this chapter: etwas anderes.',
     },
     {
       id: 'ch71-ex-31',
@@ -774,14 +895,20 @@ export const chapter071: ChapterDefinition = {
       order: 31,
       type: 'textInput',
       level: 'transfer',
-      grammarFocus: ['substantivized-adjectives', 'sentence-completion', 'strong-declension'],
-      instruction: 'Complete the sentence with the correctly capitalized and declined adjective. Capitalisation is checked.',
+      grammarFocus: [
+        'substantivized-adjectives',
+        'sentence-completion',
+        'strong-declension',
+      ],
+      instruction:
+        'Complete the sentence with the correctly capitalized and declined adjective. Capitalisation is checked.',
       prompt: 'Er hat mir nichts ___ (interessant) erzählt.',
       acceptedAnswers: ['Interessantes'],
       answerMode: 'normalized',
       placeholder: 'Interessantes',
       maxLength: 20,
-      explanation: 'After nichts, the strong accusative ending is -es: nichts Interessantes.',
+      explanation:
+        'After nichts, the strong accusative ending is -es: nichts Interessantes.',
     },
     {
       id: 'ch71-ex-32',
@@ -789,8 +916,14 @@ export const chapter071: ChapterDefinition = {
       order: 32,
       type: 'textInput',
       level: 'transfer',
-      grammarFocus: ['substantivized-adjectives', 'sentence-completion', 'alles', 'weak-declension'],
-      instruction: 'Complete the sentence with the correctly capitalized and declined adjective. Capitalisation is checked.',
+      grammarFocus: [
+        'substantivized-adjectives',
+        'sentence-completion',
+        'alles',
+        'weak-declension',
+      ],
+      instruction:
+        'Complete the sentence with the correctly capitalized and declined adjective. Capitalisation is checked.',
       prompt: 'Ich wünsche dir alles ___ (gut) zum Geburtstag!',
       acceptedAnswers: ['Gute'],
       answerMode: 'normalized',
@@ -814,7 +947,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'd', text: 'etwas Komplizierte' },
       ],
       correctOptionId: 'a',
-      explanation: 'etwas stays lowercase mid-sentence; the adjective is capitalized and takes the strong neuter ending -es: etwas Kompliziertes.',
+      explanation:
+        'etwas stays lowercase mid-sentence; the adjective is capitalized and takes the strong neuter ending -es: etwas Kompliziertes.',
     },
     {
       id: 'ch71-ex-34',
@@ -832,7 +966,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'd', text: 'Nichts Langweiliges' },
       ],
       correctOptionId: 'a',
-      explanation: 'nichts is a lowercase indefinite pronoun; the adjective following it is capitalized with the strong ending -es: nichts Langweiliges.',
+      explanation:
+        'nichts is a lowercase indefinite pronoun; the adjective following it is capitalized with the strong ending -es: nichts Langweiliges.',
     },
     {
       id: 'ch71-ex-35',
@@ -840,7 +975,12 @@ export const chapter071: ChapterDefinition = {
       order: 35,
       type: 'singleChoice',
       level: 'controlled',
-      grammarFocus: ['substantivized-adjectives', 'strong-declension', 'accusative', 'viel'],
+      grammarFocus: [
+        'substantivized-adjectives',
+        'strong-declension',
+        'accusative',
+        'viel',
+      ],
       instruction: 'Choose the correct accusative form.',
       prompt: 'Auf dem Festival haben wir ___ erlebt. (a lot of exciting things)',
       options: [
@@ -850,7 +990,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'd', text: 'vielem Aufregendes' },
       ],
       correctOptionId: 'a',
-      explanation: 'viel is invariable before an abstract adjective; the strong accusative ending -es carries the case: viel Aufregendes.',
+      explanation:
+        'viel is invariable before an abstract adjective; the strong accusative ending -es carries the case: viel Aufregendes.',
     },
     {
       id: 'ch71-ex-36',
@@ -868,7 +1009,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'd', text: 'etwas Schönen' },
       ],
       correctOptionId: 'a',
-      explanation: 'bei takes the dative; after etwas the strong dative neuter ending is -em, not the nominative/accusative -es: bei etwas Schönem.',
+      explanation:
+        'bei takes the dative; after etwas the strong dative neuter ending is -em, not the nominative/accusative -es: bei etwas Schönem.',
     },
     {
       id: 'ch71-ex-37',
@@ -886,7 +1028,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'd', text: 'Der Einfache' },
       ],
       correctOptionId: 'a',
-      explanation: 'After das, the neuter nominative singular takes the weak ending -e: Das Einfache.',
+      explanation:
+        'After das, the neuter nominative singular takes the weak ending -e: Das Einfache.',
     },
     {
       id: 'ch71-ex-38',
@@ -904,7 +1047,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'd', text: 'alles Gut' },
       ],
       correctOptionId: 'a',
-      explanation: 'alles behaves like a der-word and triggers the weak ending -e: alles Gute, never alles Gutes.',
+      explanation:
+        'alles behaves like a der-word and triggers the weak ending -e: alles Gute, never alles Gutes.',
     },
     {
       id: 'ch71-ex-39',
@@ -914,7 +1058,8 @@ export const chapter071: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['substantivized-adjectives', 'superlatives', 'nominative'],
       instruction: 'Choose the correct substantivized superlative.',
-      prompt: 'Der Verlust des Spiels war ___ , was uns passieren konnte. (the worst thing)',
+      prompt:
+        'Der Verlust des Spiels war ___ , was uns passieren konnte. (the worst thing)',
       options: [
         { id: 'a', text: 'das Schlechteste' },
         { id: 'b', text: 'das Schlechtestes' },
@@ -922,7 +1067,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'd', text: 'die Schlechteste' },
       ],
       correctOptionId: 'a',
-      explanation: 'A substantivized superlative after das takes the weak nominative ending -e: das Schlechteste.',
+      explanation:
+        'A substantivized superlative after das takes the weak nominative ending -e: das Schlechteste.',
     },
     {
       id: 'ch71-ex-40',
@@ -940,7 +1086,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'd', text: 'Sie hat mir nichts einfaches erklärt.' },
       ],
       correctOptionId: 'a',
-      explanation: 'nichts stays lowercase; the following adjective is capitalized and takes the strong accusative ending -es: nichts Einfaches.',
+      explanation:
+        'nichts stays lowercase; the following adjective is capitalized and takes the strong accusative ending -es: nichts Einfaches.',
     },
     {
       id: 'ch71-ex-41',
@@ -949,13 +1096,15 @@ export const chapter071: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['substantivized-adjectives', 'strong-declension', 'nominative'],
-      instruction: 'Write the correctly capitalized and declined form. Capitalisation is checked.',
+      instruction:
+        'Write the correctly capitalized and declined form. Capitalisation is checked.',
       prompt: 'etwas + schlecht (nominative)',
       acceptedAnswers: ['etwas Schlechtes'],
       answerMode: 'normalized',
       placeholder: 'etwas Schlechtes',
       maxLength: 20,
-      explanation: 'After etwas, the strong nominative neuter ending is -es: etwas Schlechtes.',
+      explanation:
+        'After etwas, the strong nominative neuter ending is -es: etwas Schlechtes.',
     },
     {
       id: 'ch71-ex-42',
@@ -964,13 +1113,15 @@ export const chapter071: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['substantivized-adjectives', 'strong-declension', 'accusative'],
-      instruction: 'Write the correctly capitalized and declined form. Capitalisation is checked.',
+      instruction:
+        'Write the correctly capitalized and declined form. Capitalisation is checked.',
       prompt: 'nichts + einfach (accusative)',
       acceptedAnswers: ['nichts Einfaches'],
       answerMode: 'normalized',
       placeholder: 'nichts Einfaches',
       maxLength: 20,
-      explanation: 'After nichts, the strong accusative neuter ending is -es: nichts Einfaches.',
+      explanation:
+        'After nichts, the strong accusative neuter ending is -es: nichts Einfaches.',
     },
     {
       id: 'ch71-ex-43',
@@ -978,14 +1129,20 @@ export const chapter071: ChapterDefinition = {
       order: 43,
       type: 'textInput',
       level: 'controlled',
-      grammarFocus: ['substantivized-adjectives', 'strong-declension', 'accusative', 'viel'],
+      grammarFocus: [
+        'substantivized-adjectives',
+        'strong-declension',
+        'accusative',
+        'viel',
+      ],
       instruction: 'Write the correctly declined form. Capitalisation is checked.',
       prompt: 'viel + schön (accusative)',
       acceptedAnswers: ['viel Schönes'],
       answerMode: 'normalized',
       placeholder: 'viel Schönes',
       maxLength: 20,
-      explanation: 'viel is invariable; the adjective takes the strong accusative ending -es: viel Schönes.',
+      explanation:
+        'viel is invariable; the adjective takes the strong accusative ending -es: viel Schönes.',
     },
     {
       id: 'ch71-ex-44',
@@ -993,14 +1150,20 @@ export const chapter071: ChapterDefinition = {
       order: 44,
       type: 'textInput',
       level: 'controlled',
-      grammarFocus: ['substantivized-adjectives', 'strong-declension', 'nominative', 'wenig'],
+      grammarFocus: [
+        'substantivized-adjectives',
+        'strong-declension',
+        'nominative',
+        'wenig',
+      ],
       instruction: 'Write the correctly declined form. Capitalisation is checked.',
       prompt: 'wenig + kompliziert (nominative)',
       acceptedAnswers: ['wenig Kompliziertes'],
       answerMode: 'normalized',
       placeholder: 'wenig Kompliziertes',
       maxLength: 25,
-      explanation: 'wenig is invariable; the adjective takes the strong nominative ending -es: wenig Kompliziertes.',
+      explanation:
+        'wenig is invariable; the adjective takes the strong nominative ending -es: wenig Kompliziertes.',
     },
     {
       id: 'ch71-ex-45',
@@ -1009,13 +1172,15 @@ export const chapter071: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['substantivized-adjectives', 'strong-declension', 'dative'],
-      instruction: 'Write the correctly declined phrase, including the preposition. Capitalisation is checked.',
+      instruction:
+        'Write the correctly declined phrase, including the preposition. Capitalisation is checked.',
       prompt: 'bei + etwas + aufregend (dative)',
       acceptedAnswers: ['bei etwas Aufregendem'],
       answerMode: 'normalized',
       placeholder: 'bei etwas Aufregendem',
       maxLength: 30,
-      explanation: 'bei takes the dative; after etwas the strong dative ending is -em: bei etwas Aufregendem.',
+      explanation:
+        'bei takes the dative; after etwas the strong dative ending is -em: bei etwas Aufregendem.',
     },
     {
       id: 'ch71-ex-46',
@@ -1054,7 +1219,8 @@ export const chapter071: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['substantivized-adjectives', 'weak-declension', 'genitive'],
-      instruction: 'Write the correctly declined form (used after trotz). Capitalisation is checked.',
+      instruction:
+        'Write the correctly declined form (used after trotz). Capitalisation is checked.',
       prompt: 'des + schön (genitive, after trotz)',
       acceptedAnswers: ['des Schönen'],
       answerMode: 'normalized',
@@ -1069,13 +1235,15 @@ export const chapter071: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['substantivized-adjectives', 'alles', 'weak-declension'],
-      instruction: 'Write the correctly declined idiomatic form. Capitalisation is checked.',
+      instruction:
+        'Write the correctly declined idiomatic form. Capitalisation is checked.',
       prompt: 'alles + langweilig (accusative)',
       acceptedAnswers: ['alles Langweilige'],
       answerMode: 'normalized',
       placeholder: 'alles Langweilige',
       maxLength: 25,
-      explanation: 'alles triggers the weak ending -e on the following adjective, not the strong -es: alles Langweilige.',
+      explanation:
+        'alles triggers the weak ending -e on the following adjective, not the strong -es: alles Langweilige.',
     },
     {
       id: 'ch71-ex-50',
@@ -1084,13 +1252,15 @@ export const chapter071: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['substantivized-adjectives', 'superlatives', 'nominative'],
-      instruction: 'Write the correctly declined substantivized superlative. Capitalisation is checked.',
+      instruction:
+        'Write the correctly declined substantivized superlative. Capitalisation is checked.',
       prompt: 'das + schlecht (superlative, nominative)',
       acceptedAnswers: ['das Schlechteste'],
       answerMode: 'normalized',
       placeholder: 'das Schlechteste',
       maxLength: 20,
-      explanation: 'The superlative schlechtest- is substantivized like any other adjective: after das, the weak ending -e: das Schlechteste.',
+      explanation:
+        'The superlative schlechtest- is substantivized like any other adjective: after das, the weak ending -e: das Schlechteste.',
     },
     {
       id: 'ch71-ex-51',
@@ -1098,14 +1268,21 @@ export const chapter071: ChapterDefinition = {
       order: 51,
       type: 'textInput',
       level: 'transfer',
-      grammarFocus: ['substantivized-adjectives', 'sentence-completion', 'strong-declension', 'viel'],
-      instruction: 'Complete the sentence with the correctly capitalized and declined adjective. Capitalisation is checked.',
+      grammarFocus: [
+        'substantivized-adjectives',
+        'sentence-completion',
+        'strong-declension',
+        'viel',
+      ],
+      instruction:
+        'Complete the sentence with the correctly capitalized and declined adjective. Capitalisation is checked.',
       prompt: 'Ich habe im Urlaub viel ___ (aufregend) erlebt.',
       acceptedAnswers: ['Aufregendes'],
       answerMode: 'normalized',
       placeholder: 'Aufregendes',
       maxLength: 20,
-      explanation: 'viel is invariable; the following adjective takes the strong accusative ending -es: viel Aufregendes.',
+      explanation:
+        'viel is invariable; the following adjective takes the strong accusative ending -es: viel Aufregendes.',
     },
     {
       id: 'ch71-ex-52',
@@ -1119,7 +1296,8 @@ export const chapter071: ChapterDefinition = {
       templateParts: ['Etwas ', ' ist passiert.'],
       slots: [{ id: 'slot1', correctWord: 'Kompliziertes' }],
       wordBank: ['Kompliziertes', 'Komplizierte', 'Komplizierten', 'Kompliziertem'],
-      explanation: 'After etwas, the strong nominative neuter ending is -es: Kompliziertes.',
+      explanation:
+        'After etwas, the strong nominative neuter ending is -es: Kompliziertes.',
     },
     {
       id: 'ch71-ex-53',
@@ -1127,13 +1305,19 @@ export const chapter071: ChapterDefinition = {
       order: 53,
       type: 'dragToSlots',
       level: 'controlled',
-      grammarFocus: ['substantivized-adjectives', 'strong-declension', 'accusative', 'nichts'],
+      grammarFocus: [
+        'substantivized-adjectives',
+        'strong-declension',
+        'accusative',
+        'nichts',
+      ],
       instruction: 'Drag the correctly declined word into the slot.',
       prompt: 'Ich habe nichts ___ gesagt.',
       templateParts: ['Ich habe nichts ', ' gesagt.'],
       slots: [{ id: 'slot1', correctWord: 'Schlechtes' }],
       wordBank: ['Schlechtes', 'Schlechte', 'Schlechten', 'Schlechtem'],
-      explanation: 'After nichts, the strong accusative neuter ending is -es: Schlechtes.',
+      explanation:
+        'After nichts, the strong accusative neuter ending is -es: Schlechtes.',
     },
     {
       id: 'ch71-ex-54',
@@ -1141,13 +1325,19 @@ export const chapter071: ChapterDefinition = {
       order: 54,
       type: 'dragToSlots',
       level: 'controlled',
-      grammarFocus: ['substantivized-adjectives', 'strong-declension', 'accusative', 'viel'],
+      grammarFocus: [
+        'substantivized-adjectives',
+        'strong-declension',
+        'accusative',
+        'viel',
+      ],
       instruction: 'Drag the correctly declined word into the slot.',
       prompt: 'Wir haben viel ___ erlebt.',
       templateParts: ['Wir haben viel ', ' erlebt.'],
       slots: [{ id: 'slot1', correctWord: 'Aufregendes' }],
       wordBank: ['Aufregendes', 'Aufregende', 'Aufregenden', 'Aufregendem'],
-      explanation: 'viel is invariable; the adjective carries the strong accusative ending -es: Aufregendes.',
+      explanation:
+        'viel is invariable; the adjective carries the strong accusative ending -es: Aufregendes.',
     },
     {
       id: 'ch71-ex-55',
@@ -1155,13 +1345,19 @@ export const chapter071: ChapterDefinition = {
       order: 55,
       type: 'dragToSlots',
       level: 'controlled',
-      grammarFocus: ['substantivized-adjectives', 'strong-declension', 'nominative', 'wenig'],
+      grammarFocus: [
+        'substantivized-adjectives',
+        'strong-declension',
+        'nominative',
+        'wenig',
+      ],
       instruction: 'Drag the correctly declined word into the slot.',
       prompt: 'Es gibt wenig ___ zu berichten.',
       templateParts: ['Es gibt wenig ', ' zu berichten.'],
       slots: [{ id: 'slot1', correctWord: 'Interessantes' }],
       wordBank: ['Interessantes', 'Interessante', 'Interessanten', 'Interessantem'],
-      explanation: 'wenig is invariable; the adjective takes the strong nominative ending -es: Interessantes.',
+      explanation:
+        'wenig is invariable; the adjective takes the strong nominative ending -es: Interessantes.',
     },
     {
       id: 'ch71-ex-56',
@@ -1175,7 +1371,8 @@ export const chapter071: ChapterDefinition = {
       templateParts: ['Ich kann mit ', ' nichts anfangen.'],
       slots: [{ id: 'slot1', correctWord: 'Einfachem' }],
       wordBank: ['Einfachem', 'Einfaches', 'Einfache', 'Einfachen'],
-      explanation: 'mit takes the dative; after etwas the strong dative ending is -em: Einfachem.',
+      explanation:
+        'mit takes the dative; after etwas the strong dative ending is -em: Einfachem.',
     },
     {
       id: 'ch71-ex-57',
@@ -1203,7 +1400,8 @@ export const chapter071: ChapterDefinition = {
       templateParts: ['Wir müssen zwischen dem Einfachen und ', ' unterscheiden.'],
       slots: [{ id: 'slot1', correctWord: 'Komplizierten' }],
       wordBank: ['Komplizierten', 'Kompliziertes', 'Komplizierte', 'Komplizierter'],
-      explanation: 'zwischen ... und ... takes the dative; the weak dative neuter ending after dem is -en: Komplizierten.',
+      explanation:
+        'zwischen ... und ... takes the dative; the weak dative neuter ending after dem is -en: Komplizierten.',
     },
     {
       id: 'ch71-ex-59',
@@ -1217,7 +1415,8 @@ export const chapter071: ChapterDefinition = {
       templateParts: ['Trotz des ', ' hat sie den Fehler gemacht.'],
       slots: [{ id: 'slot1', correctWord: 'Einfachen' }],
       wordBank: ['Einfachen', 'Einfaches', 'Einfache', 'Einfachem'],
-      explanation: 'trotz takes the genitive; after des the weak genitive neuter ending is -en: Einfachen.',
+      explanation:
+        'trotz takes the genitive; after des the weak genitive neuter ending is -en: Einfachen.',
     },
     {
       id: 'ch71-ex-60',
@@ -1245,7 +1444,8 @@ export const chapter071: ChapterDefinition = {
       templateParts: ['Das ', ' ist, dass wir zusammen sind.'],
       slots: [{ id: 'slot1', correctWord: 'Wichtigste' }],
       wordBank: ['Wichtigste', 'Wichtigstes', 'Wichtigsten', 'Wichtiger'],
-      explanation: 'A substantivized superlative after das takes the weak nominative ending -e: das Wichtigste.',
+      explanation:
+        'A substantivized superlative after das takes the weak nominative ending -e: das Wichtigste.',
     },
     {
       id: 'ch71-ex-62',
@@ -1259,7 +1459,8 @@ export const chapter071: ChapterDefinition = {
       templateParts: ['Das war das ', ' , was ich je gesehen habe.'],
       slots: [{ id: 'slot1', correctWord: 'Schönste' }],
       wordBank: ['Schönste', 'Schönstes', 'Schönsten', 'Schöner'],
-      explanation: 'A substantivized superlative after das takes the weak nominative ending -e: das Schönste.',
+      explanation:
+        'A substantivized superlative after das takes the weak nominative ending -e: das Schönste.',
     },
     {
       id: 'ch71-ex-63',
@@ -1267,13 +1468,19 @@ export const chapter071: ChapterDefinition = {
       order: 63,
       type: 'dragToSlots',
       level: 'controlled',
-      grammarFocus: ['substantivized-adjectives', 'strong-declension', 'accusative', 'nichts'],
+      grammarFocus: [
+        'substantivized-adjectives',
+        'strong-declension',
+        'accusative',
+        'nichts',
+      ],
       instruction: 'Drag the correctly declined word into the slot.',
       prompt: 'Sie hat mir ___ erzählt.',
       templateParts: ['Sie hat mir nichts ', ' erzählt.'],
       slots: [{ id: 'slot1', correctWord: 'Langweiliges' }],
       wordBank: ['Langweiliges', 'Langweilige', 'Langweiligen', 'Langweiligem'],
-      explanation: 'After nichts, the strong accusative neuter ending is -es: Langweiliges.',
+      explanation:
+        'After nichts, the strong accusative neuter ending is -es: Langweiliges.',
     },
     {
       id: 'ch71-ex-64',
@@ -1287,7 +1494,8 @@ export const chapter071: ChapterDefinition = {
       templateParts: ['Er hat sich für etwas ', ' interessiert.'],
       slots: [{ id: 'slot1', correctWord: 'Aufregendes' }],
       wordBank: ['Aufregendes', 'Aufregende', 'Aufregenden', 'Aufregendem'],
-      explanation: 'für takes the accusative; after etwas the strong accusative ending is -es: Aufregendes.',
+      explanation:
+        'für takes the accusative; after etwas the strong accusative ending is -es: Aufregendes.',
     },
     {
       id: 'ch71-ex-65',
@@ -1301,7 +1509,8 @@ export const chapter071: ChapterDefinition = {
       templateParts: ['Von etwas ', ' wollte er nichts wissen.'],
       slots: [{ id: 'slot1', correctWord: 'Schlechtem' }],
       wordBank: ['Schlechtem', 'Schlechtes', 'Schlechte', 'Schlechten'],
-      explanation: 'von takes the dative; after etwas the strong dative ending is -em: Schlechtem.',
+      explanation:
+        'von takes the dative; after etwas the strong dative ending is -em: Schlechtem.',
     },
     {
       id: 'ch71-ex-66',
@@ -1309,7 +1518,13 @@ export const chapter071: ChapterDefinition = {
       order: 66,
       type: 'dragToSlots',
       level: 'transfer',
-      grammarFocus: ['substantivized-adjectives', 'strong-declension', 'accusative', 'viel', 'wenig'],
+      grammarFocus: [
+        'substantivized-adjectives',
+        'strong-declension',
+        'accusative',
+        'viel',
+        'wenig',
+      ],
       instruction: 'Drag the correctly declined words into the slots.',
       prompt: 'Es gab auf der Reise viel ___ und wenig ___.',
       templateParts: ['Es gab auf der Reise viel ', ' und wenig ', '.'],
@@ -1318,7 +1533,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'slot2', correctWord: 'Langweiliges' },
       ],
       wordBank: ['Interessantes', 'Langweiliges', 'Interessante', 'Langweilige'],
-      explanation: 'Both viel and wenig are invariable; each following adjective takes the strong accusative ending -es: viel Interessantes, wenig Langweiliges.',
+      explanation:
+        'Both viel and wenig are invariable; each following adjective takes the strong accusative ending -es: viel Interessantes, wenig Langweiliges.',
     },
     {
       id: 'ch71-ex-67',
@@ -1326,8 +1542,14 @@ export const chapter071: ChapterDefinition = {
       order: 67,
       type: 'matching',
       level: 'recognition',
-      grammarFocus: ['substantivized-adjectives', 'capitalization', 'etwas', 'strong-declension'],
-      instruction: 'Match each base adjective to its nominalized neuter form after etwas.',
+      grammarFocus: [
+        'substantivized-adjectives',
+        'capitalization',
+        'etwas',
+        'strong-declension',
+      ],
+      instruction:
+        'Match each base adjective to its nominalized neuter form after etwas.',
       prompt: 'etwas + Adjektiv',
       pairs: [
         { id: 'p1', left: 'neu', right: 'etwas Neues' },
@@ -1337,7 +1559,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'p5', left: 'schön', right: 'etwas Schönes' },
         { id: 'p6', left: 'schlecht', right: 'etwas Schlechtes' },
       ],
-      explanation: 'After etwas, every adjective is capitalized and takes the strong neuter ending -es.',
+      explanation:
+        'After etwas, every adjective is capitalized and takes the strong neuter ending -es.',
     },
     {
       id: 'ch71-ex-68',
@@ -1345,8 +1568,14 @@ export const chapter071: ChapterDefinition = {
       order: 68,
       type: 'matching',
       level: 'recognition',
-      grammarFocus: ['substantivized-adjectives', 'capitalization', 'nichts', 'strong-declension'],
-      instruction: 'Match each base adjective to its nominalized neuter form after nichts.',
+      grammarFocus: [
+        'substantivized-adjectives',
+        'capitalization',
+        'nichts',
+        'strong-declension',
+      ],
+      instruction:
+        'Match each base adjective to its nominalized neuter form after nichts.',
       prompt: 'nichts + Adjektiv',
       pairs: [
         { id: 'p1', left: 'einfach', right: 'nichts Einfaches' },
@@ -1356,7 +1585,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'p5', left: 'besonder-', right: 'nichts Besonderes' },
         { id: 'p6', left: 'positiv', right: 'nichts Positives' },
       ],
-      explanation: 'After nichts, every adjective is capitalized and takes the strong neuter ending -es, the same shape as after etwas.',
+      explanation:
+        'After nichts, every adjective is capitalized and takes the strong neuter ending -es, the same shape as after etwas.',
     },
     {
       id: 'ch71-ex-69',
@@ -1375,7 +1605,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'p5', left: 'wichtig', right: 'das Wichtige' },
         { id: 'p6', left: 'neu', right: 'das Neue' },
       ],
-      explanation: 'After the der-word das, every adjective takes the weak neuter nominative/accusative ending -e.',
+      explanation:
+        'After the der-word das, every adjective takes the weak neuter nominative/accusative ending -e.',
     },
     {
       id: 'ch71-ex-70',
@@ -1384,7 +1615,8 @@ export const chapter071: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['substantivized-adjectives', 'superlatives', 'weak-declension'],
-      instruction: 'Match each base adjective to its substantivized superlative after das.',
+      instruction:
+        'Match each base adjective to its substantivized superlative after das.',
       prompt: 'das + Superlativ',
       pairs: [
         { id: 'p1', left: 'gut', right: 'das Beste' },
@@ -1394,7 +1626,8 @@ export const chapter071: ChapterDefinition = {
         { id: 'p5', left: 'einfach', right: 'das Einfachste' },
         { id: 'p6', left: 'langweilig', right: 'das Langweiligste' },
       ],
-      explanation: 'Substantivized superlatives follow the same weak-ending rule after das as any other neuter substantivized adjective: -e.',
+      explanation:
+        'Substantivized superlatives follow the same weak-ending rule after das as any other neuter substantivized adjective: -e.',
     },
     {
       id: 'ch71-ex-71',
@@ -1408,7 +1641,8 @@ export const chapter071: ChapterDefinition = {
       tokens: ['Ich', 'habe', 'etwas', 'neues', 'gesehen.'],
       errorTokenIndex: 3,
       correction: 'Neues',
-      explanation: 'Neues functions as a noun after etwas and must be capitalized: etwas Neues, not etwas neues.',
+      explanation:
+        'Neues functions as a noun after etwas and must be capitalized: etwas Neues, not etwas neues.',
     },
     {
       id: 'ch71-ex-72',
@@ -1416,13 +1650,19 @@ export const chapter071: ChapterDefinition = {
       order: 72,
       type: 'errorSpotting',
       level: 'production',
-      grammarFocus: ['substantivized-adjectives', 'strong-declension', 'accusative', 'nichts'],
+      grammarFocus: [
+        'substantivized-adjectives',
+        'strong-declension',
+        'accusative',
+        'nichts',
+      ],
       instruction: 'Click the token that contains the error.',
       prompt: 'Er hat mir nichts Besondere erzählt.',
       tokens: ['Er', 'hat', 'mir', 'nichts', 'Besondere', 'erzählt.'],
       errorTokenIndex: 4,
       correction: 'Besonderes',
-      explanation: 'After nichts, the adjective must take the strong accusative ending -es: nichts Besonderes.',
+      explanation:
+        'After nichts, the adjective must take the strong accusative ending -es: nichts Besonderes.',
     },
     {
       id: 'ch71-ex-73',
@@ -1430,13 +1670,19 @@ export const chapter071: ChapterDefinition = {
       order: 73,
       type: 'errorSpotting',
       level: 'production',
-      grammarFocus: ['substantivized-adjectives', 'strong-declension', 'accusative', 'viel'],
+      grammarFocus: [
+        'substantivized-adjectives',
+        'strong-declension',
+        'accusative',
+        'viel',
+      ],
       instruction: 'Click the token that contains the error.',
       prompt: 'Wir haben viel Interessante erlebt.',
       tokens: ['Wir', 'haben', 'viel', 'Interessante', 'erlebt.'],
       errorTokenIndex: 3,
       correction: 'Interessantes',
-      explanation: 'viel is invariable; the adjective needs the strong accusative ending -es: viel Interessantes.',
+      explanation:
+        'viel is invariable; the adjective needs the strong accusative ending -es: viel Interessantes.',
     },
     {
       id: 'ch71-ex-74',
@@ -1450,7 +1696,8 @@ export const chapter071: ChapterDefinition = {
       tokens: ['Ich', 'wünsche', 'dir', 'alles', 'Gutes', 'zum', 'Geburtstag!'],
       errorTokenIndex: 4,
       correction: 'Gute',
-      explanation: 'alles behaves like a der-word and triggers the weak ending -e, not the strong -es: alles Gute.',
+      explanation:
+        'alles behaves like a der-word and triggers the weak ending -e, not the strong -es: alles Gute.',
     },
     {
       id: 'ch71-ex-75',
@@ -1464,7 +1711,8 @@ export const chapter071: ChapterDefinition = {
       tokens: ['Das', 'Gutes', 'an', 'diesem', 'Plan', 'ist', 'seine', 'Einfachheit.'],
       errorTokenIndex: 1,
       correction: 'Gute',
-      explanation: 'After the der-word das, the neuter nominative singular takes the weak ending -e: Das Gute.',
+      explanation:
+        'After the der-word das, the neuter nominative singular takes the weak ending -e: Das Gute.',
     },
     {
       id: 'ch71-ex-76',
@@ -1478,7 +1726,8 @@ export const chapter071: ChapterDefinition = {
       tokens: ['Ich', 'kann', 'mit', 'etwas', 'Neues', 'nichts', 'anfangen.'],
       errorTokenIndex: 4,
       correction: 'Neuem',
-      explanation: 'mit takes the dative; after etwas the dative ending is the strong -em, not the nominative/accusative -es: mit etwas Neuem.',
+      explanation:
+        'mit takes the dative; after etwas the dative ending is the strong -em, not the nominative/accusative -es: mit etwas Neuem.',
     },
     {
       id: 'ch71-ex-77',
@@ -1492,7 +1741,8 @@ export const chapter071: ChapterDefinition = {
       tokens: ['Gesundheit', 'ist', 'das', 'Wichtigstes', 'im', 'Leben.'],
       errorTokenIndex: 3,
       correction: 'Wichtigste',
-      explanation: 'A substantivized superlative after das takes the weak nominative ending -e: das Wichtigste.',
+      explanation:
+        'A substantivized superlative after das takes the weak nominative ending -e: das Wichtigste.',
     },
     {
       id: 'ch71-ex-78',
@@ -1506,7 +1756,8 @@ export const chapter071: ChapterDefinition = {
       tokens: ['Das', 'ist', 'etwas', 'ganz', 'Anderes.'],
       errorTokenIndex: 4,
       correction: 'anderes.',
-      explanation: 'ander- is a conventional exception: after etwas/nichts/viel it stays lowercase, unlike every other substantivized adjective: etwas ganz anderes.',
+      explanation:
+        'ander- is a conventional exception: after etwas/nichts/viel it stays lowercase, unlike every other substantivized adjective: etwas ganz anderes.',
     },
     {
       id: 'ch71-ex-79',
@@ -1514,7 +1765,12 @@ export const chapter071: ChapterDefinition = {
       order: 79,
       type: 'sentenceOrdering',
       level: 'controlled',
-      grammarFocus: ['substantivized-adjectives', 'strong-declension', 'accusative', 'viel'],
+      grammarFocus: [
+        'substantivized-adjectives',
+        'strong-declension',
+        'accusative',
+        'viel',
+      ],
       instruction: 'Put the segments into the correct order.',
       prompt: 'Ich habe im Urlaub viel Interessantes gesehen.',
       segments: [
@@ -1524,7 +1780,8 @@ export const chapter071: ChapterDefinition = {
         { id: 's4', text: 'viel Interessantes' },
         { id: 's5', text: 'gesehen.' },
       ],
-      explanation: 'The perfect tense puts habe in second position and the past participle gesehen at the end, with viel Interessantes as the accusative object.',
+      explanation:
+        'The perfect tense puts habe in second position and the past participle gesehen at the end, with viel Interessantes as the accusative object.',
     },
     {
       id: 'ch71-ex-80',
@@ -1532,7 +1789,12 @@ export const chapter071: ChapterDefinition = {
       order: 80,
       type: 'sentenceOrdering',
       level: 'controlled',
-      grammarFocus: ['substantivized-adjectives', 'weak-declension', 'nominative', 'das-gute'],
+      grammarFocus: [
+        'substantivized-adjectives',
+        'weak-declension',
+        'nominative',
+        'das-gute',
+      ],
       instruction: 'Put the segments into the correct order.',
       prompt: 'Das Gute an diesem Vorschlag ist die Einfachheit.',
       segments: [
@@ -1541,7 +1803,8 @@ export const chapter071: ChapterDefinition = {
         { id: 's3', text: 'ist' },
         { id: 's4', text: 'die Einfachheit.' },
       ],
-      explanation: 'Das Gute is the subject and stands first; the verb ist takes second position, followed by the predicate noun.',
+      explanation:
+        'Das Gute is the subject and stands first; the verb ist takes second position, followed by the predicate noun.',
     },
     {
       id: 'ch71-ex-81',
@@ -1549,7 +1812,12 @@ export const chapter071: ChapterDefinition = {
       order: 81,
       type: 'sentenceOrdering',
       level: 'production',
-      grammarFocus: ['substantivized-adjectives', 'strong-declension', 'accusative', 'nichts'],
+      grammarFocus: [
+        'substantivized-adjectives',
+        'strong-declension',
+        'accusative',
+        'nichts',
+      ],
       instruction: 'Put the segments into the correct order.',
       prompt: 'Sie hat mir heute nichts Wichtiges gesagt.',
       segments: [
@@ -1560,7 +1828,8 @@ export const chapter071: ChapterDefinition = {
         { id: 's5', text: 'nichts Wichtiges' },
         { id: 's6', text: 'gesagt.' },
       ],
-      explanation: 'The perfect tense frames the sentence with hat ... gesagt; the dative pronoun mir, the time adverb heute, and the accusative nichts Wichtiges fill the middle field in that order.',
+      explanation:
+        'The perfect tense frames the sentence with hat ... gesagt; the dative pronoun mir, the time adverb heute, and the accusative nichts Wichtiges fill the middle field in that order.',
     },
     {
       id: 'ch71-ex-82',
@@ -1578,7 +1847,8 @@ export const chapter071: ChapterDefinition = {
         { id: 's4', text: 'alles Gute' },
         { id: 's5', text: 'zum neuen Jahr.' },
       ],
-      explanation: 'wünsche takes the dative dir and the accusative alles Gute, followed by the prepositional phrase zum neuen Jahr.',
+      explanation:
+        'wünsche takes the dative dir and the accusative alles Gute, followed by the prepositional phrase zum neuen Jahr.',
     },
   ],
 };

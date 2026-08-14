@@ -45,52 +45,306 @@ const SIBILANT_END = /[sßzx]$/;
 const LINKING_E_STEM = /(t|d|chn|ffn|gn|dn|tm|dm)$/;
 
 export const IRREGULAR_VERBS: Record<string, VerbEntry> = {
-  sein: { category: 'strong', pastStem: 'war', participle: 'gewesen', auxiliary: 'sein', k2Stem: 'wär' },
-  haben: { category: 'mixed', pastStem: 'hatt', participle: 'gehabt', auxiliary: 'haben', k2Stem: 'hätt' },
-  werden: { category: 'mixed', pastStem: 'wurd', participle: 'geworden', auxiliary: 'sein', k2Stem: 'würd' },
-  gehen: { category: 'strong', pastStem: 'ging', participle: 'gegangen', auxiliary: 'sein', k2Stem: 'ging' },
-  kommen: { category: 'strong', pastStem: 'kam', participle: 'gekommen', auxiliary: 'sein', k2Stem: 'käm' },
-  sehen: { category: 'strong', pastStem: 'sah', participle: 'gesehen', auxiliary: 'haben', k2Stem: 'säh' },
-  geben: { category: 'strong', pastStem: 'gab', participle: 'gegeben', auxiliary: 'haben', k2Stem: 'gäb' },
-  nehmen: { category: 'strong', pastStem: 'nahm', participle: 'genommen', auxiliary: 'haben', k2Stem: 'nähm' },
-  fahren: { category: 'strong', pastStem: 'fuhr', participle: 'gefahren', auxiliary: 'sein', k2Stem: 'führ' },
-  bleiben: { category: 'strong', pastStem: 'blieb', participle: 'geblieben', auxiliary: 'sein', k2Stem: 'blieb' },
-  essen: { category: 'strong', pastStem: 'aß', participle: 'gegessen', auxiliary: 'haben', k2Stem: 'äß' },
-  trinken: { category: 'strong', pastStem: 'trank', participle: 'getrunken', auxiliary: 'haben', k2Stem: 'tränk' },
-  lesen: { category: 'strong', pastStem: 'las', participle: 'gelesen', auxiliary: 'haben', k2Stem: 'läs' },
-  schreiben: { category: 'strong', pastStem: 'schrieb', participle: 'geschrieben', auxiliary: 'haben', k2Stem: 'schrieb' },
-  sprechen: { category: 'strong', pastStem: 'sprach', participle: 'gesprochen', auxiliary: 'haben', k2Stem: 'spräch' },
-  finden: { category: 'strong', pastStem: 'fand', participle: 'gefunden', auxiliary: 'haben', k2Stem: 'fänd' },
-  wissen: { category: 'mixed', pastStem: 'wusst', participle: 'gewusst', auxiliary: 'haben', k2Stem: 'wüsst' },
-  bringen: { category: 'mixed', pastStem: 'bracht', participle: 'gebracht', auxiliary: 'haben' },
-  denken: { category: 'mixed', pastStem: 'dacht', participle: 'gedacht', auxiliary: 'haben' },
-  kennen: { category: 'mixed', pastStem: 'kannt', participle: 'gekannt', auxiliary: 'haben' },
-  nennen: { category: 'mixed', pastStem: 'nannt', participle: 'genannt', auxiliary: 'haben' },
-  stehen: { category: 'strong', pastStem: 'stand', participle: 'gestanden', auxiliary: 'haben', k2Stem: 'stünd' },
-  tun: { category: 'strong', pastStem: 'tat', participle: 'getan', auxiliary: 'haben', k2Stem: 'tät' },
-  laufen: { category: 'strong', pastStem: 'lief', participle: 'gelaufen', auxiliary: 'sein' },
-  tragen: { category: 'strong', pastStem: 'trug', participle: 'getragen', auxiliary: 'haben' },
-  schlafen: { category: 'strong', pastStem: 'schlief', participle: 'geschlafen', auxiliary: 'haben' },
-  waschen: { category: 'strong', pastStem: 'wusch', participle: 'gewaschen', auxiliary: 'haben', k2Stem: 'wüsch' },
-  treffen: { category: 'strong', pastStem: 'traf', participle: 'getroffen', auxiliary: 'haben' },
-  beginnen: { category: 'strong', pastStem: 'begann', participle: 'begonnen', auxiliary: 'haben' },
-  gewinnen: { category: 'strong', pastStem: 'gewann', participle: 'gewonnen', auxiliary: 'haben' },
-  heißen: { category: 'strong', pastStem: 'hieß', participle: 'geheißen', auxiliary: 'haben' },
-  fliegen: { category: 'strong', pastStem: 'flog', participle: 'geflogen', auxiliary: 'sein' },
-  ziehen: { category: 'strong', pastStem: 'zog', participle: 'gezogen', auxiliary: 'haben' },
-  rufen: { category: 'strong', pastStem: 'rief', participle: 'gerufen', auxiliary: 'haben', k2Stem: 'rief' },
-  können: { category: 'mixed', pastStem: 'konnt', participle: 'gekonnt', auxiliary: 'haben', k2Stem: 'könnt' },
-  müssen: { category: 'mixed', pastStem: 'musst', participle: 'gemusst', auxiliary: 'haben', k2Stem: 'müsst' },
-  wollen: { category: 'mixed', pastStem: 'wollt', participle: 'gewollt', auxiliary: 'haben', k2Stem: 'wollt' },
-  mögen: { category: 'mixed', pastStem: 'mocht', participle: 'gemocht', auxiliary: 'haben', k2Stem: 'möcht' },
-  dürfen: { category: 'mixed', pastStem: 'durft', participle: 'gedurft', auxiliary: 'haben', k2Stem: 'dürft' },
-  sollen: { category: 'mixed', pastStem: 'sollt', participle: 'gesollt', auxiliary: 'haben', k2Stem: 'sollt' },
+  sein: {
+    category: 'strong',
+    pastStem: 'war',
+    participle: 'gewesen',
+    auxiliary: 'sein',
+    k2Stem: 'wär',
+  },
+  haben: {
+    category: 'mixed',
+    pastStem: 'hatt',
+    participle: 'gehabt',
+    auxiliary: 'haben',
+    k2Stem: 'hätt',
+  },
+  werden: {
+    category: 'mixed',
+    pastStem: 'wurd',
+    participle: 'geworden',
+    auxiliary: 'sein',
+    k2Stem: 'würd',
+  },
+  gehen: {
+    category: 'strong',
+    pastStem: 'ging',
+    participle: 'gegangen',
+    auxiliary: 'sein',
+    k2Stem: 'ging',
+  },
+  kommen: {
+    category: 'strong',
+    pastStem: 'kam',
+    participle: 'gekommen',
+    auxiliary: 'sein',
+    k2Stem: 'käm',
+  },
+  sehen: {
+    category: 'strong',
+    pastStem: 'sah',
+    participle: 'gesehen',
+    auxiliary: 'haben',
+    k2Stem: 'säh',
+  },
+  geben: {
+    category: 'strong',
+    pastStem: 'gab',
+    participle: 'gegeben',
+    auxiliary: 'haben',
+    k2Stem: 'gäb',
+  },
+  nehmen: {
+    category: 'strong',
+    pastStem: 'nahm',
+    participle: 'genommen',
+    auxiliary: 'haben',
+    k2Stem: 'nähm',
+  },
+  fahren: {
+    category: 'strong',
+    pastStem: 'fuhr',
+    participle: 'gefahren',
+    auxiliary: 'sein',
+    k2Stem: 'führ',
+  },
+  bleiben: {
+    category: 'strong',
+    pastStem: 'blieb',
+    participle: 'geblieben',
+    auxiliary: 'sein',
+    k2Stem: 'blieb',
+  },
+  essen: {
+    category: 'strong',
+    pastStem: 'aß',
+    participle: 'gegessen',
+    auxiliary: 'haben',
+    k2Stem: 'äß',
+  },
+  trinken: {
+    category: 'strong',
+    pastStem: 'trank',
+    participle: 'getrunken',
+    auxiliary: 'haben',
+    k2Stem: 'tränk',
+  },
+  lesen: {
+    category: 'strong',
+    pastStem: 'las',
+    participle: 'gelesen',
+    auxiliary: 'haben',
+    k2Stem: 'läs',
+  },
+  schreiben: {
+    category: 'strong',
+    pastStem: 'schrieb',
+    participle: 'geschrieben',
+    auxiliary: 'haben',
+    k2Stem: 'schrieb',
+  },
+  sprechen: {
+    category: 'strong',
+    pastStem: 'sprach',
+    participle: 'gesprochen',
+    auxiliary: 'haben',
+    k2Stem: 'spräch',
+  },
+  finden: {
+    category: 'strong',
+    pastStem: 'fand',
+    participle: 'gefunden',
+    auxiliary: 'haben',
+    k2Stem: 'fänd',
+  },
+  wissen: {
+    category: 'mixed',
+    pastStem: 'wusst',
+    participle: 'gewusst',
+    auxiliary: 'haben',
+    k2Stem: 'wüsst',
+  },
+  bringen: {
+    category: 'mixed',
+    pastStem: 'bracht',
+    participle: 'gebracht',
+    auxiliary: 'haben',
+  },
+  denken: {
+    category: 'mixed',
+    pastStem: 'dacht',
+    participle: 'gedacht',
+    auxiliary: 'haben',
+  },
+  kennen: {
+    category: 'mixed',
+    pastStem: 'kannt',
+    participle: 'gekannt',
+    auxiliary: 'haben',
+  },
+  nennen: {
+    category: 'mixed',
+    pastStem: 'nannt',
+    participle: 'genannt',
+    auxiliary: 'haben',
+  },
+  stehen: {
+    category: 'strong',
+    pastStem: 'stand',
+    participle: 'gestanden',
+    auxiliary: 'haben',
+    k2Stem: 'stünd',
+  },
+  tun: {
+    category: 'strong',
+    pastStem: 'tat',
+    participle: 'getan',
+    auxiliary: 'haben',
+    k2Stem: 'tät',
+  },
+  laufen: {
+    category: 'strong',
+    pastStem: 'lief',
+    participle: 'gelaufen',
+    auxiliary: 'sein',
+  },
+  tragen: {
+    category: 'strong',
+    pastStem: 'trug',
+    participle: 'getragen',
+    auxiliary: 'haben',
+  },
+  schlafen: {
+    category: 'strong',
+    pastStem: 'schlief',
+    participle: 'geschlafen',
+    auxiliary: 'haben',
+  },
+  waschen: {
+    category: 'strong',
+    pastStem: 'wusch',
+    participle: 'gewaschen',
+    auxiliary: 'haben',
+    k2Stem: 'wüsch',
+  },
+  treffen: {
+    category: 'strong',
+    pastStem: 'traf',
+    participle: 'getroffen',
+    auxiliary: 'haben',
+  },
+  beginnen: {
+    category: 'strong',
+    pastStem: 'begann',
+    participle: 'begonnen',
+    auxiliary: 'haben',
+  },
+  gewinnen: {
+    category: 'strong',
+    pastStem: 'gewann',
+    participle: 'gewonnen',
+    auxiliary: 'haben',
+  },
+  heißen: {
+    category: 'strong',
+    pastStem: 'hieß',
+    participle: 'geheißen',
+    auxiliary: 'haben',
+  },
+  fliegen: {
+    category: 'strong',
+    pastStem: 'flog',
+    participle: 'geflogen',
+    auxiliary: 'sein',
+  },
+  ziehen: {
+    category: 'strong',
+    pastStem: 'zog',
+    participle: 'gezogen',
+    auxiliary: 'haben',
+  },
+  rufen: {
+    category: 'strong',
+    pastStem: 'rief',
+    participle: 'gerufen',
+    auxiliary: 'haben',
+    k2Stem: 'rief',
+  },
+  können: {
+    category: 'mixed',
+    pastStem: 'konnt',
+    participle: 'gekonnt',
+    auxiliary: 'haben',
+    k2Stem: 'könnt',
+  },
+  müssen: {
+    category: 'mixed',
+    pastStem: 'musst',
+    participle: 'gemusst',
+    auxiliary: 'haben',
+    k2Stem: 'müsst',
+  },
+  wollen: {
+    category: 'mixed',
+    pastStem: 'wollt',
+    participle: 'gewollt',
+    auxiliary: 'haben',
+    k2Stem: 'wollt',
+  },
+  mögen: {
+    category: 'mixed',
+    pastStem: 'mocht',
+    participle: 'gemocht',
+    auxiliary: 'haben',
+    k2Stem: 'möcht',
+  },
+  dürfen: {
+    category: 'mixed',
+    pastStem: 'durft',
+    participle: 'gedurft',
+    auxiliary: 'haben',
+    k2Stem: 'dürft',
+  },
+  sollen: {
+    category: 'mixed',
+    pastStem: 'sollt',
+    participle: 'gesollt',
+    auxiliary: 'haben',
+    k2Stem: 'sollt',
+  },
 };
 
-export const INSEPARABLE_PREFIXES = ['be', 'ge', 'er', 'ver', 'zer', 'ent', 'emp', 'miss'];
+export const INSEPARABLE_PREFIXES = [
+  'be',
+  'ge',
+  'er',
+  'ver',
+  'zer',
+  'ent',
+  'emp',
+  'miss',
+];
 export const SEPARABLE_PREFIXES = [
-  'zurück', 'zusammen', 'weiter', 'fest', 'statt', 'teil',
-  'ab', 'an', 'auf', 'aus', 'bei', 'ein', 'her', 'hin', 'los', 'mit', 'nach', 'vor', 'weg', 'zu',
+  'zurück',
+  'zusammen',
+  'weiter',
+  'fest',
+  'statt',
+  'teil',
+  'ab',
+  'an',
+  'auf',
+  'aus',
+  'bei',
+  'ein',
+  'her',
+  'hin',
+  'los',
+  'mit',
+  'nach',
+  'vor',
+  'weg',
+  'zu',
 ].sort((a, b) => b.length - a.length);
 
 function weakStem(infinitive: string): string {
@@ -148,7 +402,10 @@ export function synthesizeSimplePast(infinitive: string, person: Person): string
 }
 
 /** Synthetic Konjunktiv II for a verb known to have a common synthetic form, else null. */
-export function synthesizeKonjunktivII(infinitive: string, person: Person): string | null {
+export function synthesizeKonjunktivII(
+  infinitive: string,
+  person: Person,
+): string | null {
   const entry = IRREGULAR_VERBS[infinitive];
   if (!entry?.k2Stem) return null;
   return entry.k2Stem + K2_ENDINGS[person];
@@ -169,7 +426,11 @@ export function synthesizeWuerdeForm(infinitive: string, person: Person): string
 }
 
 /** Accepts either the würde-construction or a known synthetic Konjunktiv II form. */
-export function isValidKonjunktivIIForm(infinitive: string, person: Person, form: string): boolean {
+export function isValidKonjunktivIIForm(
+  infinitive: string,
+  person: Person,
+  form: string,
+): boolean {
   const normalized = form.trim().toLowerCase();
   const synthetic = synthesizeKonjunktivII(infinitive, person);
   if (synthetic && normalized === synthetic.toLowerCase()) return true;
@@ -226,8 +487,14 @@ export function isValidPastParticiple(infinitive: string, participle: string): b
 }
 
 /** Validates a simple-past form for a given person against the irregular table or the weak rule. */
-export function isValidSimplePastForm(infinitive: string, person: Person, form: string): boolean {
-  return synthesizeSimplePast(infinitive, person).toLowerCase() === form.trim().toLowerCase();
+export function isValidSimplePastForm(
+  infinitive: string,
+  person: Person,
+  form: string,
+): boolean {
+  return (
+    synthesizeSimplePast(infinitive, person).toLowerCase() === form.trim().toLowerCase()
+  );
 }
 
 export const ACCUSATIVE_REFLEXIVE_PRONOUNS: Record<Person, string> = {
@@ -267,14 +534,34 @@ export function isValidDativeReflexivePronoun(person: Person, word: string): boo
 }
 
 export const PRONOMINAL_ADVERB_PREPOSITIONS = [
-  'an', 'auf', 'aus', 'bei', 'durch', 'für', 'gegen', 'hinter', 'in', 'mit',
-  'nach', 'neben', 'über', 'um', 'unter', 'von', 'vor', 'zu', 'zwischen',
+  'an',
+  'auf',
+  'aus',
+  'bei',
+  'durch',
+  'für',
+  'gegen',
+  'hinter',
+  'in',
+  'mit',
+  'nach',
+  'neben',
+  'über',
+  'um',
+  'unter',
+  'von',
+  'vor',
+  'zu',
+  'zwischen',
 ];
 
 const VOWEL_START = /^[aeiouäöü]/;
 
 /** da(r)-/wo(r)- + preposition, with the linking r inserted before a vowel-initial preposition. */
-export function synthesizePronominalAdverb(base: 'da' | 'wo', preposition: string): string {
+export function synthesizePronominalAdverb(
+  base: 'da' | 'wo',
+  preposition: string,
+): string {
   const needsR = VOWEL_START.test(preposition);
   return `${base}${needsR ? 'r' : ''}${preposition}`;
 }

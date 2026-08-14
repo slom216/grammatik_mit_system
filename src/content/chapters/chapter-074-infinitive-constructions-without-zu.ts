@@ -51,7 +51,7 @@ export const chapter074: ChapterDefinition = {
         id: 'ch74-rule-03',
         heading: 'Movement verbs + bare infinitive: gehen, kommen, fahren',
         paragraphs: [
-          'When gehen, kommen, or fahren are combined with an activity that describes the purpose of the movement, the activity appears as a bare infinitive directly before the movement verb\'s final position — with no zu and no "um...zu": Ich gehe einkaufen (I\'m going shopping). Wir gehen schwimmen (We\'re going swimming). Er kommt mich besuchen (He\'s coming to visit me). Wir fahren einkaufen (We\'re driving to go shopping).',
+          "When gehen, kommen, or fahren are combined with an activity that describes the purpose of the movement, the activity appears as a bare infinitive directly before the movement verb's final position — with no zu and no \"um...zu\": Ich gehe einkaufen (I'm going shopping). Wir gehen schwimmen (We're going swimming). Er kommt mich besuchen (He's coming to visit me). Wir fahren einkaufen (We're driving to go shopping).",
           'This pattern is limited to a fairly fixed, everyday set of activity combinations — einkaufen gehen, schwimmen gehen, essen gehen, spazieren gehen, tanzen gehen, besuchen kommen, abholen kommen, and similar pairs. It is not a fully open pattern the way modal verbs are; you are essentially learning set expressions built on this bare-infinitive template.',
           'Do not confuse this with the um...zu construction, which expresses purpose with a full subordinate-clause-like structure (Ich gehe in die Stadt, um einzukaufen). The gehen/kommen/fahren + bare infinitive pattern is more compact and only works with this small set of activity verbs directly attached to the movement verb.',
         ],
@@ -88,11 +88,36 @@ export const chapter074: ChapterDefinition = {
         title: 'Verbs that take a bare infinitive (no zu)',
         columns: ['Category', 'Verbs', 'Example', 'English'],
         rows: [
-          ['Modal verbs', 'können, müssen, wollen, sollen, dürfen, mögen', 'Ich kann schwimmen.', 'I can swim.'],
-          ['Causative', 'lassen', 'Ich lasse mein Auto reparieren.', 'I am having my car repaired.'],
-          ['Movement + activity', 'gehen, kommen, fahren', 'Ich gehe einkaufen.', "I'm going shopping."],
-          ['Perception', 'sehen, hören, fühlen', 'Ich höre ihn singen.', 'I hear him sing / singing.'],
-          ['Learning / teaching', 'lernen, lehren', 'Sie lernt schwimmen.', 'She is learning to swim.'],
+          [
+            'Modal verbs',
+            'können, müssen, wollen, sollen, dürfen, mögen',
+            'Ich kann schwimmen.',
+            'I can swim.',
+          ],
+          [
+            'Causative',
+            'lassen',
+            'Ich lasse mein Auto reparieren.',
+            'I am having my car repaired.',
+          ],
+          [
+            'Movement + activity',
+            'gehen, kommen, fahren',
+            'Ich gehe einkaufen.',
+            "I'm going shopping.",
+          ],
+          [
+            'Perception',
+            'sehen, hören, fühlen',
+            'Ich höre ihn singen.',
+            'I hear him sing / singing.',
+          ],
+          [
+            'Learning / teaching',
+            'lernen, lehren',
+            'Sie lernt schwimmen.',
+            'She is learning to swim.',
+          ],
         ],
         note: 'This is a closed, memorizable list — unlike the open-ended group of verbs that require zu.',
       },
@@ -101,12 +126,37 @@ export const chapter074: ChapterDefinition = {
         title: 'zu-infinitive vs. bare infinitive: side-by-side contrast',
         columns: ['Governing verb', 'Construction', 'Example', 'English'],
         rows: [
-          ['versuchen (to try)', 'zu + infinitive', 'Ich versuche zu schwimmen.', 'I am trying to swim.'],
+          [
+            'versuchen (to try)',
+            'zu + infinitive',
+            'Ich versuche zu schwimmen.',
+            'I am trying to swim.',
+          ],
           ['können (modal)', 'bare infinitive', 'Ich kann schwimmen.', 'I can swim.'],
-          ['hoffen (to hope)', 'zu + infinitive', 'Er hofft, mich bald zu besuchen.', 'He hopes to visit me soon.'],
-          ['lassen (causative)', 'bare infinitive', 'Ich lasse ihn schwimmen.', 'I let him swim.'],
-          ['beginnen (to begin)', 'zu + infinitive', 'Er beginnt zu schwimmen.', 'He starts to swim.'],
-          ['sehen (perception)', 'bare infinitive', 'Ich sehe ihn schwimmen.', 'I see him swim / swimming.'],
+          [
+            'hoffen (to hope)',
+            'zu + infinitive',
+            'Er hofft, mich bald zu besuchen.',
+            'He hopes to visit me soon.',
+          ],
+          [
+            'lassen (causative)',
+            'bare infinitive',
+            'Ich lasse ihn schwimmen.',
+            'I let him swim.',
+          ],
+          [
+            'beginnen (to begin)',
+            'zu + infinitive',
+            'Er beginnt zu schwimmen.',
+            'He starts to swim.',
+          ],
+          [
+            'sehen (perception)',
+            'bare infinitive',
+            'Ich sehe ihn schwimmen.',
+            'I see him swim / swimming.',
+          ],
         ],
         note: 'The governing verb decides the whole pattern: it either always requires zu or never allows it.',
       },
@@ -120,7 +170,11 @@ export const chapter074: ChapterDefinition = {
           ['essen gehen', 'Gehst du heute essen?', 'Are you going out to eat today?'],
           ['spazieren gehen', 'Sie geht spazieren.', 'She is going for a walk.'],
           ['besuchen kommen', 'Er kommt mich besuchen.', 'He is coming to visit me.'],
-          ['abholen kommen', 'Meine Mutter kommt mich abholen.', 'My mother is coming to pick me up.'],
+          [
+            'abholen kommen',
+            'Meine Mutter kommt mich abholen.',
+            'My mother is coming to pick me up.',
+          ],
           ['einkaufen fahren', 'Wir fahren einkaufen.', "We're driving to go shopping."],
         ],
       },
@@ -130,7 +184,8 @@ export const chapter074: ChapterDefinition = {
         german: 'Ich kann gut schwimmen.',
         english: 'I can swim well.',
         highlight: ['kann', 'schwimmen'],
-        explanation: 'Modal verb kann in position 2, bare infinitive schwimmen at the end — no zu.',
+        explanation:
+          'Modal verb kann in position 2, bare infinitive schwimmen at the end — no zu.',
       },
       {
         german: 'Er muss früh aufstehen.',
@@ -148,43 +203,50 @@ export const chapter074: ChapterDefinition = {
         german: 'Er lässt mich fahren.',
         english: 'He lets me drive.',
         highlight: ['lässt', 'fahren'],
-        explanation: 'Another lassen example: the bare infinitive fahren at the end of the clause.',
+        explanation:
+          'Another lassen example: the bare infinitive fahren at the end of the clause.',
       },
       {
         german: 'Ich gehe einkaufen.',
         english: "I'm going shopping.",
         highlight: ['gehe', 'einkaufen'],
-        explanation: 'Movement verb gehen + bare infinitive einkaufen, a fixed activity combination.',
+        explanation:
+          'Movement verb gehen + bare infinitive einkaufen, a fixed activity combination.',
       },
       {
         german: 'Er kommt mich besuchen.',
         english: 'He is coming to visit me.',
         highlight: ['kommt', 'besuchen'],
-        explanation: 'Movement verb kommen + bare infinitive besuchen, with the accusative object mich in between.',
+        explanation:
+          'Movement verb kommen + bare infinitive besuchen, with the accusative object mich in between.',
       },
       {
         german: 'Wir fahren einkaufen.',
         english: "We're driving to go shopping.",
         highlight: ['fahren', 'einkaufen'],
-        explanation: 'Movement verb fahren + bare infinitive einkaufen, the same fixed pattern as gehen and kommen.',
+        explanation:
+          'Movement verb fahren + bare infinitive einkaufen, the same fixed pattern as gehen and kommen.',
       },
       {
         german: 'Ich höre ihn singen.',
         english: 'I hear him sing / singing.',
         highlight: ['höre', 'ihn', 'singen'],
-        explanation: 'Perception verb hören + accusative object ihn + bare infinitive singen (accusative-with-infinitive).',
+        explanation:
+          'Perception verb hören + accusative object ihn + bare infinitive singen (accusative-with-infinitive).',
       },
       {
         german: 'Ich sehe sie kommen.',
         english: 'I see her coming.',
         highlight: ['sehe', 'sie', 'kommen'],
-        explanation: 'Perception verb sehen + accusative object sie + bare infinitive kommen.',
+        explanation:
+          'Perception verb sehen + accusative object sie + bare infinitive kommen.',
       },
       {
         german: 'Ich fühle mein Herz klopfen.',
         english: 'I feel my heart pounding.',
         highlight: ['fühle', 'mein Herz', 'klopfen'],
-        explanation: 'Perception verb fühlen + accusative object mein Herz + bare infinitive klopfen.',
+        explanation:
+          'Perception verb fühlen + accusative object mein Herz + bare infinitive klopfen.',
       },
       {
         german: 'Sie lernt schwimmen.',
@@ -202,40 +264,47 @@ export const chapter074: ChapterDefinition = {
         german: 'Ich versuche zu schwimmen.',
         english: 'I am trying to swim.',
         highlight: ['versuche', 'zu', 'schwimmen'],
-        explanation: 'Contrast: versuchen is not part of the closed bare-infinitive list, so it requires zu.',
+        explanation:
+          'Contrast: versuchen is not part of the closed bare-infinitive list, so it requires zu.',
       },
       {
         german: 'Er hofft, mich bald zu besuchen.',
         english: 'He hopes to visit me soon.',
         highlight: ['hofft', 'zu', 'besuchen'],
-        explanation: 'Contrast: hoffen also requires a zu-infinitive, unlike the verbs covered in this chapter.',
+        explanation:
+          'Contrast: hoffen also requires a zu-infinitive, unlike the verbs covered in this chapter.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich kann zu schwimmen.',
         correct: 'Ich kann schwimmen.',
-        explanation: 'Modal verbs always take a bare infinitive — zu must never appear after können, müssen, wollen, sollen, dürfen, or mögen.',
+        explanation:
+          'Modal verbs always take a bare infinitive — zu must never appear after können, müssen, wollen, sollen, dürfen, or mögen.',
       },
       {
         incorrect: 'Ich lasse mein Auto zu reparieren.',
         correct: 'Ich lasse mein Auto reparieren.',
-        explanation: 'lassen behaves exactly like a modal verb and never allows zu before its infinitive.',
+        explanation:
+          'lassen behaves exactly like a modal verb and never allows zu before its infinitive.',
       },
       {
         incorrect: 'Ich höre ihn zu singen.',
         correct: 'Ich höre ihn singen.',
-        explanation: 'Perception verbs (sehen, hören, fühlen) take a bare infinitive in the accusative-with-infinitive construction — no zu.',
+        explanation:
+          'Perception verbs (sehen, hören, fühlen) take a bare infinitive in the accusative-with-infinitive construction — no zu.',
       },
       {
         incorrect: 'Ich gehe zu einkaufen.',
         correct: 'Ich gehe einkaufen.',
-        explanation: 'Movement verbs (gehen, kommen, fahren) combine with a bare infinitive in fixed activity expressions like einkaufen gehen — never with zu.',
+        explanation:
+          'Movement verbs (gehen, kommen, fahren) combine with a bare infinitive in fixed activity expressions like einkaufen gehen — never with zu.',
       },
       {
         incorrect: 'Ich versuche schwimmen.',
         correct: 'Ich versuche zu schwimmen.',
-        explanation: 'versuchen is not part of the closed bare-infinitive group; like most German verbs, it requires a zu-infinitive.',
+        explanation:
+          'versuchen is not part of the closed bare-infinitive group; like most German verbs, it requires a zu-infinitive.',
       },
     ],
     remember: [
@@ -288,7 +357,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'd', text: 'reparieren zu' },
       ],
       correctOptionId: 'a',
-      explanation: 'lassen sends a bare infinitive to the end of the clause, exactly like a modal verb.',
+      explanation:
+        'lassen sends a bare infinitive to the end of the clause, exactly like a modal verb.',
     },
     {
       id: 'ch74-ex-03',
@@ -306,7 +376,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'd', text: 'gegessen' },
       ],
       correctOptionId: 'a',
-      explanation: 'gehen + bare infinitive forms the fixed activity combination essen gehen — no zu.',
+      explanation:
+        'gehen + bare infinitive forms the fixed activity combination essen gehen — no zu.',
     },
     {
       id: 'ch74-ex-04',
@@ -342,7 +413,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'd', text: 'geschwommen' },
       ],
       correctOptionId: 'a',
-      explanation: 'lernen takes a bare infinitive when naming a skill directly: Sie lernt schwimmen.',
+      explanation:
+        'lernen takes a bare infinitive when naming a skill directly: Sie lernt schwimmen.',
     },
     {
       id: 'ch74-ex-06',
@@ -360,7 +432,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'd', text: 'Ich muss gehen zu.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The modal verb muss takes a bare infinitive at the end — no zu anywhere in the clause.',
+      explanation:
+        'The modal verb muss takes a bare infinitive at the end — no zu anywhere in the clause.',
     },
     {
       id: 'ch74-ex-07',
@@ -378,7 +451,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'd', text: 'Er lässt fahren mich.' },
       ],
       correctOptionId: 'a',
-      explanation: 'lassen takes a bare infinitive, and the object mich comes before the infinitive at the end.',
+      explanation:
+        'lassen takes a bare infinitive, and the object mich comes before the infinitive at the end.',
     },
     {
       id: 'ch74-ex-08',
@@ -396,7 +470,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'd', text: 'Ich versuche schwimmen zu.' },
       ],
       correctOptionId: 'a',
-      explanation: 'versuchen is not in the closed bare-infinitive class, so it requires a zu-infinitive.',
+      explanation:
+        'versuchen is not in the closed bare-infinitive class, so it requires a zu-infinitive.',
     },
     {
       id: 'ch74-ex-09',
@@ -414,7 +489,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'd', text: 'Ich sehe kommen sie.' },
       ],
       correctOptionId: 'a',
-      explanation: 'sehen + accusative object + bare infinitive at the end — no zu, and the infinitive stays last.',
+      explanation:
+        'sehen + accusative object + bare infinitive at the end — no zu, and the infinitive stays last.',
     },
     {
       id: 'ch74-ex-10',
@@ -424,7 +500,8 @@ export const chapter074: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['identify-governing-verb', 'movement-verbs'],
       instruction: 'Identify the verb that governs the infinitive construction.',
-      prompt: 'In "Er kommt mich morgen besuchen," which verb governs the bare infinitive besuchen?',
+      prompt:
+        'In "Er kommt mich morgen besuchen," which verb governs the bare infinitive besuchen?',
       options: [
         { id: 'a', text: 'kommt' },
         { id: 'b', text: 'besuchen' },
@@ -432,7 +509,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'd', text: 'mich' },
       ],
       correctOptionId: 'a',
-      explanation: 'kommt is the conjugated movement verb in position 2; it governs the bare infinitive besuchen at the end.',
+      explanation:
+        'kommt is the conjugated movement verb in position 2; it governs the bare infinitive besuchen at the end.',
     },
     {
       id: 'ch74-ex-11',
@@ -442,7 +520,8 @@ export const chapter074: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['identify-governing-verb', 'perception-verbs'],
       instruction: 'Identify the verb that governs the infinitive construction.',
-      prompt: 'In "Ich höre die Vögel singen," which verb governs the bare infinitive singen?',
+      prompt:
+        'In "Ich höre die Vögel singen," which verb governs the bare infinitive singen?',
       options: [
         { id: 'a', text: 'höre' },
         { id: 'b', text: 'singen' },
@@ -450,7 +529,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'd', text: 'Ich' },
       ],
       correctOptionId: 'a',
-      explanation: 'höre is the conjugated perception verb; it governs the accusative-with-infinitive construction die Vögel singen.',
+      explanation:
+        'höre is the conjugated perception verb; it governs the accusative-with-infinitive construction die Vögel singen.',
     },
     {
       id: 'ch74-ex-12',
@@ -468,7 +548,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'd', text: 'Ich reisen will zu.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The modal verb will never takes zu before its infinitive: Ich will reisen.',
+      explanation:
+        'The modal verb will never takes zu before its infinitive: Ich will reisen.',
     },
     {
       id: 'ch74-ex-13',
@@ -486,7 +567,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'd', text: 'Ich zu höre ihn singen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'hören takes a bare infinitive in the accusative-with-infinitive construction: Ich höre ihn singen.',
+      explanation:
+        'hören takes a bare infinitive in the accusative-with-infinitive construction: Ich höre ihn singen.',
     },
     {
       id: 'ch74-ex-14',
@@ -504,7 +586,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'd', text: 'Er hofft mich bald zu besuchen zu.' },
       ],
       correctOptionId: 'a',
-      explanation: 'hoffen requires a zu-infinitive, unlike the closed group of bare-infinitive verbs.',
+      explanation:
+        'hoffen requires a zu-infinitive, unlike the closed group of bare-infinitive verbs.',
     },
     {
       id: 'ch74-ex-15',
@@ -522,7 +605,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'd', text: 'Er mich kommt besuchen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'kommt occupies position 2, the accusative object mich follows, and the bare infinitive besuchen ends the clause.',
+      explanation:
+        'kommt occupies position 2, the accusative object mich follows, and the bare infinitive besuchen ends the clause.',
     },
     {
       id: 'ch74-ex-16',
@@ -534,13 +618,17 @@ export const chapter074: ChapterDefinition = {
       instruction: 'Choose the correct general rule.',
       prompt: 'Which group of verbs always takes a bare infinitive (no zu)?',
       options: [
-        { id: 'a', text: 'Modal verbs, lassen, gehen/kommen/fahren in fixed combinations, sehen/hören/fühlen, lernen/lehren' },
+        {
+          id: 'a',
+          text: 'Modal verbs, lassen, gehen/kommen/fahren in fixed combinations, sehen/hören/fühlen, lernen/lehren',
+        },
         { id: 'b', text: 'versuchen, hoffen, beginnen, vergessen' },
         { id: 'c', text: 'All German verbs that are followed by another verb' },
         { id: 'd', text: 'Only strong verbs' },
       ],
       correctOptionId: 'a',
-      explanation: 'This closed list — modals, lassen, gehen/kommen/fahren, sehen/hören/fühlen, lernen/lehren — is exactly the group covered in this chapter; every other verb requires zu.',
+      explanation:
+        'This closed list — modals, lassen, gehen/kommen/fahren, sehen/hören/fühlen, lernen/lehren — is exactly the group covered in this chapter; every other verb requires zu.',
     },
     {
       id: 'ch74-ex-17',
@@ -549,13 +637,15 @@ export const chapter074: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['modal-verbs', 'fill-in'],
-      instruction: 'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
       prompt: 'Er muss jeden Tag früh ___. (aufstehen)',
       acceptedAnswers: ['aufstehen'],
       answerMode: 'caseInsensitive',
       placeholder: 'aufstehen',
       maxLength: 20,
-      explanation: 'The modal verb muss governs the bare infinitive aufstehen at the end of the clause.',
+      explanation:
+        'The modal verb muss governs the bare infinitive aufstehen at the end of the clause.',
     },
     {
       id: 'ch74-ex-18',
@@ -564,13 +654,15 @@ export const chapter074: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['lassen', 'fill-in'],
-      instruction: 'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
       prompt: 'Ich lasse mein Fahrrad ___. (reparieren)',
       acceptedAnswers: ['reparieren'],
       answerMode: 'caseInsensitive',
       placeholder: 'reparieren',
       maxLength: 20,
-      explanation: 'lassen governs the bare infinitive reparieren — the causative meaning of lassen.',
+      explanation:
+        'lassen governs the bare infinitive reparieren — the causative meaning of lassen.',
     },
     {
       id: 'ch74-ex-19',
@@ -579,13 +671,15 @@ export const chapter074: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['movement-verbs', 'fill-in'],
-      instruction: 'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
       prompt: 'Wir gehen heute Nachmittag ___. (schwimmen)',
       acceptedAnswers: ['schwimmen'],
       answerMode: 'caseInsensitive',
       placeholder: 'schwimmen',
       maxLength: 20,
-      explanation: 'gehen + bare infinitive forms the fixed activity combination schwimmen gehen.',
+      explanation:
+        'gehen + bare infinitive forms the fixed activity combination schwimmen gehen.',
     },
     {
       id: 'ch74-ex-20',
@@ -594,13 +688,15 @@ export const chapter074: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['movement-verbs', 'fill-in'],
-      instruction: 'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
       prompt: 'Meine Oma kommt mich am Sonntag ___. (besuchen)',
       acceptedAnswers: ['besuchen'],
       answerMode: 'caseInsensitive',
       placeholder: 'besuchen',
       maxLength: 20,
-      explanation: 'kommen + bare infinitive: besuchen kommen, expressing the purpose of coming.',
+      explanation:
+        'kommen + bare infinitive: besuchen kommen, expressing the purpose of coming.',
     },
     {
       id: 'ch74-ex-21',
@@ -609,13 +705,15 @@ export const chapter074: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['movement-verbs', 'fill-in'],
-      instruction: 'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
       prompt: 'Wir fahren am Samstag ___. (einkaufen)',
       acceptedAnswers: ['einkaufen'],
       answerMode: 'caseInsensitive',
       placeholder: 'einkaufen',
       maxLength: 20,
-      explanation: 'fahren + bare infinitive: einkaufen fahren, the same fixed pattern as gehen and kommen.',
+      explanation:
+        'fahren + bare infinitive: einkaufen fahren, the same fixed pattern as gehen and kommen.',
     },
     {
       id: 'ch74-ex-22',
@@ -624,7 +722,8 @@ export const chapter074: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['perception-verbs', 'fill-in'],
-      instruction: 'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
       prompt: 'Ich höre die Kinder im Garten ___. (spielen)',
       acceptedAnswers: ['spielen'],
       answerMode: 'caseInsensitive',
@@ -639,7 +738,8 @@ export const chapter074: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['perception-verbs', 'fill-in'],
-      instruction: 'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
       prompt: 'Ich sehe ihn jeden Morgen zur Arbeit ___. (gehen)',
       acceptedAnswers: ['gehen'],
       answerMode: 'caseInsensitive',
@@ -654,7 +754,8 @@ export const chapter074: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['perception-verbs', 'fill-in'],
-      instruction: 'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
       prompt: 'Ich fühle mein Herz schnell ___. (schlagen)',
       acceptedAnswers: ['schlagen'],
       answerMode: 'caseInsensitive',
@@ -669,13 +770,15 @@ export const chapter074: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['learning-teaching-verbs', 'fill-in'],
-      instruction: 'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
       prompt: 'Mein kleiner Bruder lernt gerade ___. (lesen)',
       acceptedAnswers: ['lesen'],
       answerMode: 'caseInsensitive',
       placeholder: 'lesen',
       maxLength: 20,
-      explanation: 'lernen + bare infinitive names the skill being learned directly: lesen lernen.',
+      explanation:
+        'lernen + bare infinitive names the skill being learned directly: lesen lernen.',
     },
     {
       id: 'ch74-ex-26',
@@ -684,7 +787,8 @@ export const chapter074: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['learning-teaching-verbs', 'fill-in'],
-      instruction: 'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
       prompt: 'Meine Mutter lehrt mich ___. (kochen)',
       acceptedAnswers: ['kochen'],
       answerMode: 'caseInsensitive',
@@ -699,13 +803,15 @@ export const chapter074: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['sentence-building', 'modal-verbs'],
-      instruction: 'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
       prompt: 'ich – müssen (Präsens) – jetzt – gehen',
       acceptedAnswers: ['Ich muss jetzt gehen.', 'Ich muss jetzt gehen'],
       answerMode: 'normalized',
       placeholder: 'Ich muss jetzt gehen.',
       maxLength: 30,
-      explanation: 'müssen conjugates to muss for ich, and the bare infinitive gehen goes to the end: Ich muss jetzt gehen.',
+      explanation:
+        'müssen conjugates to muss for ich, and the bare infinitive gehen goes to the end: Ich muss jetzt gehen.',
     },
     {
       id: 'ch74-ex-28',
@@ -714,13 +820,18 @@ export const chapter074: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['sentence-building', 'lassen'],
-      instruction: 'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
       prompt: 'er – lassen (Präsens) – sein Auto – reparieren',
-      acceptedAnswers: ['Er lässt sein Auto reparieren.', 'Er lässt sein Auto reparieren'],
+      acceptedAnswers: [
+        'Er lässt sein Auto reparieren.',
+        'Er lässt sein Auto reparieren',
+      ],
       answerMode: 'normalized',
       placeholder: 'Er lässt sein Auto reparieren.',
       maxLength: 40,
-      explanation: 'lassen conjugates to lässt for er, and the bare infinitive reparieren goes to the end.',
+      explanation:
+        'lassen conjugates to lässt for er, and the bare infinitive reparieren goes to the end.',
     },
     {
       id: 'ch74-ex-29',
@@ -735,7 +846,8 @@ export const chapter074: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Ich gehe einkaufen.',
       maxLength: 30,
-      explanation: 'gehen + bare infinitive einkaufen: the fixed activity combination einkaufen gehen.',
+      explanation:
+        'gehen + bare infinitive einkaufen: the fixed activity combination einkaufen gehen.',
     },
     {
       id: 'ch74-ex-30',
@@ -759,7 +871,8 @@ export const chapter074: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['correcting-errors', 'contrast', 'modal-verbs'],
-      instruction: 'Rewrite the sentence correctly, fixing the zu-error. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence correctly, fixing the zu-error. Capitalisation and punctuation are checked.',
       prompt: 'Fix: "Ich kann zu schwimmen."',
       acceptedAnswers: ['Ich kann schwimmen.', 'Ich kann schwimmen'],
       answerMode: 'normalized',
@@ -774,13 +887,15 @@ export const chapter074: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['correcting-errors', 'contrast', 'versuchen'],
-      instruction: 'Rewrite the sentence correctly, adding zu where needed. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence correctly, adding zu where needed. Capitalisation and punctuation are checked.',
       prompt: 'Fix: "Ich versuche schwimmen."',
       acceptedAnswers: ['Ich versuche zu schwimmen.', 'Ich versuche zu schwimmen'],
       answerMode: 'normalized',
       placeholder: 'Ich versuche zu schwimmen.',
       maxLength: 30,
-      explanation: 'versuchen is not part of the closed bare-infinitive list, so it requires a zu-infinitive: Ich versuche zu schwimmen.',
+      explanation:
+        'versuchen is not part of the closed bare-infinitive list, so it requires a zu-infinitive: Ich versuche zu schwimmen.',
     },
     {
       id: 'ch74-ex-33',
@@ -816,7 +931,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'd', text: 'schneiden zu' },
       ],
       correctOptionId: 'a',
-      explanation: 'lassen governs a bare infinitive here, expressing having something done: Sie lässt ihre Haare schneiden.',
+      explanation:
+        'lassen governs a bare infinitive here, expressing having something done: Sie lässt ihre Haare schneiden.',
     },
     {
       id: 'ch74-ex-35',
@@ -834,7 +950,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'd', text: 'abholen zu' },
       ],
       correctOptionId: 'a',
-      explanation: 'kommen + bare infinitive forms the fixed activity combination abholen kommen — no zu.',
+      explanation:
+        'kommen + bare infinitive forms the fixed activity combination abholen kommen — no zu.',
     },
     {
       id: 'ch74-ex-36',
@@ -852,7 +969,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'd', text: 'gezittert' },
       ],
       correctOptionId: 'a',
-      explanation: 'fühlen + accusative object (den Boden) + bare infinitive zittern — the accusative-with-infinitive pattern.',
+      explanation:
+        'fühlen + accusative object (den Boden) + bare infinitive zittern — the accusative-with-infinitive pattern.',
     },
     {
       id: 'ch74-ex-37',
@@ -870,7 +988,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'd', text: 'getanzt' },
       ],
       correctOptionId: 'a',
-      explanation: 'lehren + accusative object (seine Tochter) + bare infinitive tanzen, naming the skill directly.',
+      explanation:
+        'lehren + accusative object (seine Tochter) + bare infinitive tanzen, naming the skill directly.',
     },
     {
       id: 'ch74-ex-38',
@@ -888,7 +1007,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'd', text: 'Er zu beginnt arbeiten.' },
       ],
       correctOptionId: 'a',
-      explanation: 'beginnen is not part of the closed bare-infinitive list from this chapter, so it requires a zu-infinitive.',
+      explanation:
+        'beginnen is not part of the closed bare-infinitive list from this chapter, so it requires a zu-infinitive.',
     },
     {
       id: 'ch74-ex-39',
@@ -898,7 +1018,8 @@ export const chapter074: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['identify-governing-verb', 'lassen'],
       instruction: 'Identify the verb that governs the infinitive construction.',
-      prompt: 'In "Ich lasse mein Zimmer streichen," which verb governs the bare infinitive streichen?',
+      prompt:
+        'In "Ich lasse mein Zimmer streichen," which verb governs the bare infinitive streichen?',
       options: [
         { id: 'a', text: 'lasse' },
         { id: 'b', text: 'streichen' },
@@ -906,7 +1027,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'd', text: 'Ich' },
       ],
       correctOptionId: 'a',
-      explanation: 'lasse is the conjugated form of lassen in position 2; it governs the bare infinitive streichen at the end.',
+      explanation:
+        'lasse is the conjugated form of lassen in position 2; it governs the bare infinitive streichen at the end.',
     },
     {
       id: 'ch74-ex-40',
@@ -916,15 +1038,23 @@ export const chapter074: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['perception-verbs', 'accusative-with-infinitive', 'overview'],
       instruction: 'Choose the best explanation.',
-      prompt: 'What does "Ich sehe ihn kommen" express, and why is there no zu before kommen?',
+      prompt:
+        'What does "Ich sehe ihn kommen" express, and why is there no zu before kommen?',
       options: [
-        { id: 'a', text: 'A directly perceived action; sehen takes a bare infinitive in the accusative-with-infinitive construction.' },
-        { id: 'b', text: 'A planned future action; sehen always needs zu before an infinitive.' },
+        {
+          id: 'a',
+          text: 'A directly perceived action; sehen takes a bare infinitive in the accusative-with-infinitive construction.',
+        },
+        {
+          id: 'b',
+          text: 'A planned future action; sehen always needs zu before an infinitive.',
+        },
         { id: 'c', text: 'A completed action; kommen is in the perfect tense here.' },
         { id: 'd', text: 'A polite request; zu is simply optional after sehen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'sehen belongs to the closed group of perception verbs that take an accusative object plus a bare infinitive to describe something directly perceived happening.',
+      explanation:
+        'sehen belongs to the closed group of perception verbs that take an accusative object plus a bare infinitive to describe something directly perceived happening.',
     },
     {
       id: 'ch74-ex-41',
@@ -933,13 +1063,15 @@ export const chapter074: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['modal-verbs', 'fill-in'],
-      instruction: 'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
       prompt: 'Wir dürfen hier nicht ___. (parken)',
       acceptedAnswers: ['parken'],
       answerMode: 'caseInsensitive',
       placeholder: 'parken',
       maxLength: 20,
-      explanation: 'The modal verb dürfen governs the bare infinitive parken at the end of the clause.',
+      explanation:
+        'The modal verb dürfen governs the bare infinitive parken at the end of the clause.',
     },
     {
       id: 'ch74-ex-42',
@@ -948,13 +1080,15 @@ export const chapter074: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['movement-verbs', 'fill-in'],
-      instruction: 'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
       prompt: 'Ich gehe heute Abend ___. (tanzen)',
       acceptedAnswers: ['tanzen'],
       answerMode: 'caseInsensitive',
       placeholder: 'tanzen',
       maxLength: 20,
-      explanation: 'gehen + bare infinitive forms the fixed activity combination tanzen gehen.',
+      explanation:
+        'gehen + bare infinitive forms the fixed activity combination tanzen gehen.',
     },
     {
       id: 'ch74-ex-43',
@@ -963,7 +1097,8 @@ export const chapter074: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['perception-verbs', 'fill-in'],
-      instruction: 'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
       prompt: 'Ich höre das Baby ___. (weinen)',
       acceptedAnswers: ['weinen'],
       answerMode: 'caseInsensitive',
@@ -978,13 +1113,15 @@ export const chapter074: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['learning-teaching-verbs', 'fill-in'],
-      instruction: 'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct bare infinitive. Capitalisation is not checked.',
       prompt: 'Meine Schwester lernt gerade ___. (reiten)',
       acceptedAnswers: ['reiten'],
       answerMode: 'caseInsensitive',
       placeholder: 'reiten',
       maxLength: 20,
-      explanation: 'lernen + bare infinitive names the skill being learned directly: reiten lernen.',
+      explanation:
+        'lernen + bare infinitive names the skill being learned directly: reiten lernen.',
     },
     {
       id: 'ch74-ex-45',
@@ -993,13 +1130,18 @@ export const chapter074: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['sentence-building', 'lassen'],
-      instruction: 'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
       prompt: 'sie (she) – lassen (Präsens) – ihre Haare – schneiden',
-      acceptedAnswers: ['Sie lässt ihre Haare schneiden.', 'Sie lässt ihre Haare schneiden'],
+      acceptedAnswers: [
+        'Sie lässt ihre Haare schneiden.',
+        'Sie lässt ihre Haare schneiden',
+      ],
       answerMode: 'normalized',
       placeholder: 'Sie lässt ihre Haare schneiden.',
       maxLength: 40,
-      explanation: 'lassen conjugates to lässt for sie, and the bare infinitive schneiden goes to the end.',
+      explanation:
+        'lassen conjugates to lässt for sie, and the bare infinitive schneiden goes to the end.',
     },
     {
       id: 'ch74-ex-46',
@@ -1014,7 +1156,8 @@ export const chapter074: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Wir gehen schwimmen.',
       maxLength: 30,
-      explanation: 'gehen + bare infinitive schwimmen: the fixed activity combination schwimmen gehen.',
+      explanation:
+        'gehen + bare infinitive schwimmen: the fixed activity combination schwimmen gehen.',
     },
     {
       id: 'ch74-ex-47',
@@ -1023,13 +1166,15 @@ export const chapter074: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['correcting-errors', 'contrast', 'movement-verbs'],
-      instruction: 'Rewrite the sentence correctly, fixing the zu-error. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence correctly, fixing the zu-error. Capitalisation and punctuation are checked.',
       prompt: 'Fix: "Er kommt mich zu besuchen."',
       acceptedAnswers: ['Er kommt mich besuchen.', 'Er kommt mich besuchen'],
       answerMode: 'normalized',
       placeholder: 'Er kommt mich besuchen.',
       maxLength: 30,
-      explanation: 'kommen takes a bare infinitive in the fixed activity combination besuchen kommen — never zu.',
+      explanation:
+        'kommen takes a bare infinitive in the fixed activity combination besuchen kommen — never zu.',
     },
     {
       id: 'ch74-ex-48',
@@ -1046,7 +1191,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'w3', text: 'gut' },
         { id: 'w4', text: 'kochen.' },
       ],
-      explanation: 'The modal verb kann occupies position 2, and the bare infinitive kochen is sent to the end: Ich kann gut kochen.',
+      explanation:
+        'The modal verb kann occupies position 2, and the bare infinitive kochen is sent to the end: Ich kann gut kochen.',
     },
     {
       id: 'ch74-ex-49',
@@ -1063,7 +1209,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'w3', text: 'heute' },
         { id: 'w4', text: 'arbeiten.' },
       ],
-      explanation: 'The modal verb muss occupies position 2, and the bare infinitive arbeiten is sent to the end.',
+      explanation:
+        'The modal verb muss occupies position 2, and the bare infinitive arbeiten is sent to the end.',
     },
     {
       id: 'ch74-ex-50',
@@ -1080,7 +1227,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'w3', text: 'heute Abend' },
         { id: 'w4', text: 'tanzen.' },
       ],
-      explanation: 'gehen occupies position 2, and the bare infinitive tanzen — the fixed combination tanzen gehen — ends the clause.',
+      explanation:
+        'gehen occupies position 2, and the bare infinitive tanzen — the fixed combination tanzen gehen — ends the clause.',
     },
     {
       id: 'ch74-ex-51',
@@ -1097,7 +1245,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'w3', text: 'ihre Haare' },
         { id: 'w4', text: 'schneiden.' },
       ],
-      explanation: 'lässt occupies position 2, the object ihre Haare follows, and the bare infinitive schneiden ends the clause.',
+      explanation:
+        'lässt occupies position 2, the object ihre Haare follows, and the bare infinitive schneiden ends the clause.',
     },
     {
       id: 'ch74-ex-52',
@@ -1114,7 +1263,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'w3', text: 'ihn' },
         { id: 'w4', text: 'kommen.' },
       ],
-      explanation: 'sehe occupies position 2, the accusative object ihn follows, and the bare infinitive kommen ends the clause.',
+      explanation:
+        'sehe occupies position 2, the accusative object ihn follows, and the bare infinitive kommen ends the clause.',
     },
     {
       id: 'ch74-ex-53',
@@ -1131,7 +1281,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'w3', text: 'mich' },
         { id: 'w4', text: 'abholen.' },
       ],
-      explanation: 'kommt occupies position 2, the object mich follows, and the bare infinitive abholen — abholen kommen — ends the clause.',
+      explanation:
+        'kommt occupies position 2, the object mich follows, and the bare infinitive abholen — abholen kommen — ends the clause.',
     },
     {
       id: 'ch74-ex-54',
@@ -1148,7 +1299,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'w3', text: 'gerade' },
         { id: 'w4', text: 'Auto fahren.' },
       ],
-      explanation: 'lernt occupies position 2, and the bare-infinitive skill Auto fahren is sent to the end of the clause.',
+      explanation:
+        'lernt occupies position 2, and the bare-infinitive skill Auto fahren is sent to the end of the clause.',
     },
     {
       id: 'ch74-ex-55',
@@ -1165,7 +1317,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'w3', text: 'die Vögel' },
         { id: 'w4', text: 'singen.' },
       ],
-      explanation: 'höre occupies position 2, the accusative object die Vögel follows, and the bare infinitive singen ends the clause.',
+      explanation:
+        'höre occupies position 2, the accusative object die Vögel follows, and the bare infinitive singen ends the clause.',
     },
     {
       id: 'ch74-ex-56',
@@ -1179,7 +1332,8 @@ export const chapter074: ChapterDefinition = {
       templateParts: ['Ich gehe am Wochenende ', '.'],
       slots: [{ id: 's1', correctWord: 'einkaufen' }],
       wordBank: ['einkaufen', 'einzukaufen', 'eingekauft', 'kaufen'],
-      explanation: 'gehen takes the bare infinitive einkaufen — never the zu-infinitive form einzukaufen.',
+      explanation:
+        'gehen takes the bare infinitive einkaufen — never the zu-infinitive form einzukaufen.',
     },
     {
       id: 'ch74-ex-57',
@@ -1193,7 +1347,8 @@ export const chapter074: ChapterDefinition = {
       templateParts: ['Er kommt mich morgen ', '.'],
       slots: [{ id: 's1', correctWord: 'besuchen' }],
       wordBank: ['besuchen', 'besucht', 'besuchte', 'Besuch'],
-      explanation: 'kommen takes the bare infinitive besuchen, forming the fixed combination besuchen kommen.',
+      explanation:
+        'kommen takes the bare infinitive besuchen, forming the fixed combination besuchen kommen.',
     },
     {
       id: 'ch74-ex-58',
@@ -1207,7 +1362,8 @@ export const chapter074: ChapterDefinition = {
       templateParts: ['Wir lassen unser Auto ', '.'],
       slots: [{ id: 's1', correctWord: 'reparieren' }],
       wordBank: ['reparieren', 'repariert', 'reparierte', 'Reparatur'],
-      explanation: 'lassen governs the bare infinitive reparieren, expressing having the car repaired.',
+      explanation:
+        'lassen governs the bare infinitive reparieren, expressing having the car repaired.',
     },
     {
       id: 'ch74-ex-59',
@@ -1224,7 +1380,8 @@ export const chapter074: ChapterDefinition = {
         { id: 's2', correctWord: 'aufstehen' },
       ],
       wordBank: ['muss', 'aufstehen', 'kann', 'aufzustehen', 'musst'],
-      explanation: 'The modal muss occupies position 2, and the bare infinitive aufstehen — never the zu-form aufzustehen — ends the clause.',
+      explanation:
+        'The modal muss occupies position 2, and the bare infinitive aufstehen — never the zu-form aufzustehen — ends the clause.',
     },
     {
       id: 'ch74-ex-60',
@@ -1238,7 +1395,8 @@ export const chapter074: ChapterDefinition = {
       templateParts: ['Ich ', ' ihn Klavier spielen.'],
       slots: [{ id: 's1', correctWord: 'höre' }],
       wordBank: ['höre', 'hört', 'gehört', 'höret'],
-      explanation: 'höre is the conjugated perception verb governing the accusative-with-infinitive construction ihn Klavier spielen.',
+      explanation:
+        'höre is the conjugated perception verb governing the accusative-with-infinitive construction ihn Klavier spielen.',
     },
     {
       id: 'ch74-ex-61',
@@ -1252,7 +1410,8 @@ export const chapter074: ChapterDefinition = {
       templateParts: ['Er ', ' mich schwimmen.'],
       slots: [{ id: 's1', correctWord: 'lehrt' }],
       wordBank: ['lehrt', 'lehre', 'gelehrt', 'lernt'],
-      explanation: 'lehrt is the conjugated form of lehren, which takes an accusative object plus a bare infinitive.',
+      explanation:
+        'lehrt is the conjugated form of lehren, which takes an accusative object plus a bare infinitive.',
     },
     {
       id: 'ch74-ex-62',
@@ -1285,7 +1444,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'p5', left: 'lernt', right: 'Lern-/Lehrverb' },
         { id: 'p6', left: 'versucht', right: 'braucht zu-Infinitiv' },
       ],
-      explanation: 'The first five verbs belong to the closed bare-infinitive group; versuchen does not and requires zu instead.',
+      explanation:
+        'The first five verbs belong to the closed bare-infinitive group; versuchen does not and requires zu instead.',
     },
     {
       id: 'ch74-ex-64',
@@ -1304,7 +1464,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'p5', left: 'Ich höre ihn', right: 'singen.' },
         { id: 'p6', left: 'Er kommt mich', right: 'besuchen.' },
       ],
-      explanation: 'Each governing verb sends its bare infinitive to the very end of the clause, with no zu anywhere.',
+      explanation:
+        'Each governing verb sends its bare infinitive to the very end of the clause, with no zu anywhere.',
     },
     {
       id: 'ch74-ex-65',
@@ -1323,7 +1484,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'p5', left: 'lernen', right: 'to learn (a skill)' },
         { id: 'p6', left: 'lehren', right: 'to teach (a skill)' },
       ],
-      explanation: 'All six verbs govern a bare infinitive; each carries its own distinct meaning within that shared construction.',
+      explanation:
+        'All six verbs govern a bare infinitive; each carries its own distinct meaning within that shared construction.',
     },
     {
       id: 'ch74-ex-66',
@@ -1336,13 +1498,22 @@ export const chapter074: ChapterDefinition = {
       prompt: 'Match the sentence to its translation.',
       pairs: [
         { id: 'p1', left: 'Ich kann schwimmen.', right: 'I can swim.' },
-        { id: 'p2', left: 'Er lässt sein Auto reparieren.', right: 'He is having his car repaired.' },
+        {
+          id: 'p2',
+          left: 'Er lässt sein Auto reparieren.',
+          right: 'He is having his car repaired.',
+        },
         { id: 'p3', left: 'Wir gehen einkaufen.', right: "We're going shopping." },
         { id: 'p4', left: 'Ich sehe sie kommen.', right: 'I see her coming.' },
-        { id: 'p5', left: 'Sie lernt Klavier spielen.', right: 'She is learning to play piano.' },
+        {
+          id: 'p5',
+          left: 'Sie lernt Klavier spielen.',
+          right: 'She is learning to play piano.',
+        },
         { id: 'p6', left: 'Er kommt mich besuchen.', right: 'He is coming to visit me.' },
       ],
-      explanation: 'Each sentence uses a bare infinitive at the end of the clause, which English often renders with "to" or "-ing."',
+      explanation:
+        'Each sentence uses a bare infinitive at the end of the clause, which English often renders with "to" or "-ing."',
     },
     {
       id: 'ch74-ex-67',
@@ -1354,14 +1525,23 @@ export const chapter074: ChapterDefinition = {
       instruction: 'Match each verb to the construction it requires.',
       prompt: 'Match the verb to zu-infinitive or bare infinitive.',
       pairs: [
-        { id: 'p1', left: 'versuchen', right: 'zu-Infinitiv: Ich versuche zu schwimmen.' },
-        { id: 'p2', left: 'hoffen', right: 'zu-Infinitiv: Er hofft, mich bald zu besuchen.' },
+        {
+          id: 'p1',
+          left: 'versuchen',
+          right: 'zu-Infinitiv: Ich versuche zu schwimmen.',
+        },
+        {
+          id: 'p2',
+          left: 'hoffen',
+          right: 'zu-Infinitiv: Er hofft, mich bald zu besuchen.',
+        },
         { id: 'p3', left: 'können', right: 'bare infinitive: Ich kann schwimmen.' },
         { id: 'p4', left: 'lassen', right: 'bare infinitive: Ich lasse ihn schwimmen.' },
         { id: 'p5', left: 'beginnen', right: 'zu-Infinitiv: Er beginnt zu schwimmen.' },
         { id: 'p6', left: 'sehen', right: 'bare infinitive: Ich sehe ihn schwimmen.' },
       ],
-      explanation: 'Only the closed list from this chapter — modals, lassen, gehen/kommen/fahren, sehen/hören/fühlen, lernen/lehren — takes a bare infinitive; every other verb here requires zu.',
+      explanation:
+        'Only the closed list from this chapter — modals, lassen, gehen/kommen/fahren, sehen/hören/fühlen, lernen/lehren — takes a bare infinitive; every other verb here requires zu.',
     },
     {
       id: 'ch74-ex-68',
@@ -1380,7 +1560,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'p5', left: 'besuchen kommen', right: 'to come to visit' },
         { id: 'p6', left: 'abholen kommen', right: 'to come to pick up' },
       ],
-      explanation: 'These are fixed, memorizable movement-verb + bare-infinitive combinations, not a fully open pattern.',
+      explanation:
+        'These are fixed, memorizable movement-verb + bare-infinitive combinations, not a fully open pattern.',
     },
     {
       id: 'ch74-ex-69',
@@ -1399,7 +1580,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'p5', left: 'ihr', right: 'sollt (sollen)' },
         { id: 'p6', left: 'sie/Sie', right: 'mögen' },
       ],
-      explanation: 'Each modal verb conjugates for person and number just like any other verb, while the following infinitive stays bare and unconjugated.',
+      explanation:
+        'Each modal verb conjugates for person and number just like any other verb, while the following infinitive stays bare and unconjugated.',
     },
     {
       id: 'ch74-ex-70',
@@ -1418,7 +1600,8 @@ export const chapter074: ChapterDefinition = {
         { id: 'p5', left: 'essen gehen', right: 'Gehst du heute essen?' },
         { id: 'p6', left: 'besuchen kommen', right: 'Er kommt mich besuchen.' },
       ],
-      explanation: 'Each fixed activity combination places the bare infinitive directly before the movement verb, or after its object, with no zu.',
+      explanation:
+        'Each fixed activity combination places the bare infinitive directly before the movement verb, or after its object, with no zu.',
     },
     {
       id: 'ch74-ex-71',
@@ -1432,7 +1615,8 @@ export const chapter074: ChapterDefinition = {
       tokens: ['Ich', 'muss', 'heute', 'früh', 'aufzustehen.'],
       errorTokenIndex: 4,
       correction: 'aufstehen.',
-      explanation: 'The modal verb muss always takes a bare infinitive — aufstehen, never the zu-infinitive form aufzustehen.',
+      explanation:
+        'The modal verb muss always takes a bare infinitive — aufstehen, never the zu-infinitive form aufzustehen.',
     },
     {
       id: 'ch74-ex-72',
@@ -1446,7 +1630,8 @@ export const chapter074: ChapterDefinition = {
       tokens: ['Er', 'lässt', 'mich', 'nicht', 'mitzukommen.'],
       errorTokenIndex: 4,
       correction: 'mitkommen.',
-      explanation: 'lassen behaves like a modal verb and never allows a zu-infinitive; the correct bare infinitive is mitkommen.',
+      explanation:
+        'lassen behaves like a modal verb and never allows a zu-infinitive; the correct bare infinitive is mitkommen.',
     },
     {
       id: 'ch74-ex-73',
@@ -1460,7 +1645,8 @@ export const chapter074: ChapterDefinition = {
       tokens: ['Wir', 'gehen', 'heute', 'einzukaufen.'],
       errorTokenIndex: 3,
       correction: 'einkaufen.',
-      explanation: 'gehen combines with the bare infinitive einkaufen in the fixed activity combination einkaufen gehen — never the zu-form einzukaufen.',
+      explanation:
+        'gehen combines with the bare infinitive einkaufen in the fixed activity combination einkaufen gehen — never the zu-form einzukaufen.',
     },
     {
       id: 'ch74-ex-74',
@@ -1474,7 +1660,8 @@ export const chapter074: ChapterDefinition = {
       tokens: ['Meine', 'Mutter', 'kommt', 'mich', 'abzuholen.'],
       errorTokenIndex: 4,
       correction: 'abholen.',
-      explanation: 'kommen combines with the bare infinitive abholen in the fixed activity combination abholen kommen — never the zu-form abzuholen.',
+      explanation:
+        'kommen combines with the bare infinitive abholen in the fixed activity combination abholen kommen — never the zu-form abzuholen.',
     },
     {
       id: 'ch74-ex-75',
@@ -1488,7 +1675,8 @@ export const chapter074: ChapterDefinition = {
       tokens: ['Ich', 'sehe', 'ihn', 'fernzusehen.'],
       errorTokenIndex: 3,
       correction: 'fernsehen.',
-      explanation: 'sehen takes a bare infinitive in the accusative-with-infinitive construction — fernsehen, never the zu-form fernzusehen.',
+      explanation:
+        'sehen takes a bare infinitive in the accusative-with-infinitive construction — fernsehen, never the zu-form fernzusehen.',
     },
     {
       id: 'ch74-ex-76',
@@ -1502,7 +1690,8 @@ export const chapter074: ChapterDefinition = {
       tokens: ['Er', 'lernt', 'gerade', 'aufzuräumen.'],
       errorTokenIndex: 3,
       correction: 'aufräumen.',
-      explanation: 'lernen takes a bare infinitive when naming a skill directly — aufräumen, never the zu-form aufzuräumen.',
+      explanation:
+        'lernen takes a bare infinitive when naming a skill directly — aufräumen, never the zu-form aufzuräumen.',
     },
     {
       id: 'ch74-ex-77',
@@ -1516,7 +1705,8 @@ export const chapter074: ChapterDefinition = {
       tokens: ['Sie', 'will', 'heute', 'anzurufen.'],
       errorTokenIndex: 3,
       correction: 'anrufen.',
-      explanation: 'The modal verb will always takes a bare infinitive — anrufen, never the zu-form anzurufen.',
+      explanation:
+        'The modal verb will always takes a bare infinitive — anrufen, never the zu-form anzurufen.',
     },
   ],
 };

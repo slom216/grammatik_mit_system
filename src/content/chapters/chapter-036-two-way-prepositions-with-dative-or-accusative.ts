@@ -61,7 +61,8 @@ export const chapter036: ChapterDefinition = {
       },
       {
         id: 'ch36-rule-05',
-        heading: 'Placement and movement verbs signal destination, so they take the accusative',
+        heading:
+          'Placement and movement verbs signal destination, so they take the accusative',
         paragraphs: [
           'Other verbs describe placing something somewhere or moving toward a place: stellen (to put/stand something up), legen (to lay something down), setzen (to set/put something, or sich setzen "to sit down"), hängen (transitive: "to hang something up"), gehen (to go), and fahren (to drive/go). These verbs almost always pair with the wohin?/accusative reading.',
           'Sie stellt den Teppich vor das Bett. (She puts the rug in front of the bed.) stellen describes an action that ends with the rug in a new place, so vor takes the accusative das Bett.',
@@ -88,26 +89,55 @@ export const chapter036: ChapterDefinition = {
     tables: [
       {
         id: 'ch36-table-01',
-        title: 'Two-way prepositions: location (wo? + dative) vs. destination (wohin? + accusative)',
-        columns: ['Preposition', 'Location — wo? (dative)', 'Destination — wohin? (accusative)'],
+        title:
+          'Two-way prepositions: location (wo? + dative) vs. destination (wohin? + accusative)',
+        columns: [
+          'Preposition',
+          'Location — wo? (dative)',
+          'Destination — wohin? (accusative)',
+        ],
         columnCases: [null, 'dative', 'accusative'],
         rows: [
           ['an', 'am Fenster (at the window)', 'ans Fenster (to the window)'],
           ['auf', 'auf dem Tisch (on the table)', 'auf den Tisch (onto the table)'],
-          ['hinter', 'hinter dem Haus (behind the house)', 'hinter das Haus (behind the house)'],
+          [
+            'hinter',
+            'hinter dem Haus (behind the house)',
+            'hinter das Haus (behind the house)',
+          ],
           ['in', 'im Haus (in the house)', 'ins Haus (into the house)'],
-          ['neben', 'neben dem Bett (next to the bed)', 'neben das Bett (next to the bed)'],
+          [
+            'neben',
+            'neben dem Bett (next to the bed)',
+            'neben das Bett (next to the bed)',
+          ],
           ['über', 'über dem Sofa (above the sofa)', 'über das Sofa (over the sofa)'],
-          ['unter', 'unter dem Stuhl (under the chair)', 'unter den Stuhl (under the chair)'],
-          ['vor', 'vor der Tür (in front of the door)', 'vor die Tür (in front of the door)'],
-          ['zwischen', 'zwischen den Büchern (between the books)', 'zwischen die Bücher (between the books)'],
+          [
+            'unter',
+            'unter dem Stuhl (under the chair)',
+            'unter den Stuhl (under the chair)',
+          ],
+          [
+            'vor',
+            'vor der Tür (in front of the door)',
+            'vor die Tür (in front of the door)',
+          ],
+          [
+            'zwischen',
+            'zwischen den Büchern (between the books)',
+            'zwischen die Bücher (between the books)',
+          ],
         ],
         note: 'The preposition never changes; only the case of the article (and, in the plural dative, the noun ending) shows whether the sentence describes a location or a destination.',
       },
       {
         id: 'ch36-table-02',
         title: 'Static verbs vs. placement/movement verbs',
-        columns: ['Location verb (dative)', 'Movement verb (accusative)', 'English meaning'],
+        columns: [
+          'Location verb (dative)',
+          'Movement verb (accusative)',
+          'English meaning',
+        ],
         rows: [
           ['stehen', 'stellen', 'to stand (be standing) / to put something upright'],
           ['liegen', 'legen', 'to lie (be lying) / to lay something down'],
@@ -127,13 +157,15 @@ export const chapter036: ChapterDefinition = {
         german: 'Das Bild hängt an der Wand.',
         english: 'The picture is hanging on the wall.',
         highlight: ['der Wand'],
-        explanation: 'hängen (intransitive) describes a fixed location, so an takes the dative: der Wand.',
+        explanation:
+          'hängen (intransitive) describes a fixed location, so an takes the dative: der Wand.',
       },
       {
         german: 'Ich hänge das Bild an die Wand.',
         english: 'I am hanging the picture on the wall.',
         highlight: ['die Wand'],
-        explanation: 'hängen (transitive) describes an action that moves the picture to a new place, so an takes the accusative: die Wand.',
+        explanation:
+          'hängen (transitive) describes an action that moves the picture to a new place, so an takes the accusative: die Wand.',
       },
       {
         german: 'Die Katze liegt auf dem Sofa.',
@@ -145,7 +177,8 @@ export const chapter036: ChapterDefinition = {
         german: 'Die Katze springt auf das Sofa.',
         english: 'The cat jumps onto the sofa.',
         highlight: ['das Sofa'],
-        explanation: 'springen describes a movement toward a destination, so auf takes the accusative das Sofa.',
+        explanation:
+          'springen describes a movement toward a destination, so auf takes the accusative das Sofa.',
       },
       {
         german: 'Das Auto steht vor dem Haus.',
@@ -157,19 +190,22 @@ export const chapter036: ChapterDefinition = {
         german: 'Er fährt das Auto vor das Haus.',
         english: 'He drives the car up in front of the house.',
         highlight: ['das Haus'],
-        explanation: 'The car ends up in a new position, so vor takes the accusative das Haus.',
+        explanation:
+          'The car ends up in a new position, so vor takes the accusative das Haus.',
       },
       {
         german: 'Die Kinder spielen im Garten.',
         english: 'The children are playing in the garden.',
         highlight: ['im Garten'],
-        explanation: 'spielen describes a location, so in takes the dative; in + dem contracts to im.',
+        explanation:
+          'spielen describes a location, so in takes the dative; in + dem contracts to im.',
       },
       {
         german: 'Die Kinder laufen in den Garten.',
         english: 'The children are running into the garden.',
         highlight: ['in den Garten'],
-        explanation: 'laufen here describes a movement toward a destination, so in takes the accusative den Garten.',
+        explanation:
+          'laufen here describes a movement toward a destination, so in takes the accusative den Garten.',
       },
       {
         german: 'Der Schlüssel liegt unter dem Stuhl.',
@@ -181,65 +217,76 @@ export const chapter036: ChapterDefinition = {
         german: 'Die Katze läuft unter den Stuhl.',
         english: 'The cat runs under the chair.',
         highlight: ['den Stuhl'],
-        explanation: 'laufen describes movement to a new position, so unter takes the accusative den Stuhl.',
+        explanation:
+          'laufen describes movement to a new position, so unter takes the accusative den Stuhl.',
       },
       {
         german: 'Wir sitzen zwischen den Bäumen.',
         english: 'We are sitting between the trees.',
         highlight: ['den Bäumen'],
-        explanation: 'sitzen is a static verb; the plural dative of die Bäume is den Bäumen, with an added -n.',
+        explanation:
+          'sitzen is a static verb; the plural dative of die Bäume is den Bäumen, with an added -n.',
       },
       {
         german: 'Stell den Tisch zwischen die Bäume!',
         english: 'Put the table between the trees!',
         highlight: ['die Bäume'],
-        explanation: 'stellen describes placing something in a new spot, so zwischen takes the plural accusative die Bäume.',
+        explanation:
+          'stellen describes placing something in a new spot, so zwischen takes the plural accusative die Bäume.',
       },
       {
         german: 'Das Poster hängt über dem Bett.',
         english: 'The poster hangs above the bed.',
         highlight: ['dem Bett'],
-        explanation: 'hängen (intransitive) is static here, so über takes the dative dem Bett.',
+        explanation:
+          'hängen (intransitive) is static here, so über takes the dative dem Bett.',
       },
       {
         german: 'Häng das Poster über das Bett!',
         english: 'Hang the poster above the bed!',
         highlight: ['das Bett'],
-        explanation: 'hängen (transitive) describes moving the poster into place, so über takes the accusative das Bett.',
+        explanation:
+          'hängen (transitive) describes moving the poster into place, so über takes the accusative das Bett.',
       },
       {
         german: 'Er wartet neben der Tür.',
         english: 'He is waiting next to the door.',
         highlight: ['der Tür'],
-        explanation: 'warten describes a fixed position, so neben takes the dative der Tür.',
+        explanation:
+          'warten describes a fixed position, so neben takes the dative der Tür.',
       },
       {
         german: 'Stell dich neben die Tür!',
         english: 'Stand yourself next to the door!',
         highlight: ['die Tür'],
-        explanation: 'sich stellen describes moving into a position, so neben takes the accusative die Tür.',
+        explanation:
+          'sich stellen describes moving into a position, so neben takes the accusative die Tür.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich stelle das Buch auf dem Tisch.',
         correct: 'Ich stelle das Buch auf den Tisch.',
-        explanation: 'stellen describes a movement toward a destination (wohin?), so auf takes the accusative den Tisch, not the dative dem Tisch.',
+        explanation:
+          'stellen describes a movement toward a destination (wohin?), so auf takes the accusative den Tisch, not the dative dem Tisch.',
       },
       {
         incorrect: 'Das Buch liegt auf den Tisch.',
         correct: 'Das Buch liegt auf dem Tisch.',
-        explanation: 'liegen describes a static location (wo?), so auf takes the dative dem Tisch, not the accusative den Tisch.',
+        explanation:
+          'liegen describes a static location (wo?), so auf takes the dative dem Tisch, not the accusative den Tisch.',
       },
       {
         incorrect: 'Ich gehe in dem Supermarkt.',
         correct: 'Ich gehe in den Supermarkt.',
-        explanation: 'gehen describes movement toward a destination (wohin?), so in takes the accusative den Supermarkt, not the dative dem Supermarkt.',
+        explanation:
+          'gehen describes movement toward a destination (wohin?), so in takes the accusative den Supermarkt, not the dative dem Supermarkt.',
       },
       {
         incorrect: 'Wir hängen das Bild an der Wand.',
         correct: 'Wir hängen das Bild an die Wand.',
-        explanation: 'hängen (transitive: placing the picture) describes a destination, so an takes the accusative die Wand, not the dative der Wand.',
+        explanation:
+          'hängen (transitive: placing the picture) describes a destination, so an takes the accusative die Wand, not the dative der Wand.',
       },
     ],
     remember: [
@@ -272,7 +319,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'a',
-      explanation: 'wo? asks about location, so the dative is needed; die Decke becomes der Decke in the dative.',
+      explanation:
+        'wo? asks about location, so the dative is needed; die Decke becomes der Decke in the dative.',
     },
     {
       id: 'ch36-ex-02',
@@ -282,7 +330,8 @@ export const chapter036: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['wo-vs-wohin', 'accusative', 'auf'],
       instruction: 'Choose the case that matches the question word wohin?.',
-      prompt: 'Wohin stellst du die Vase? — Ich stelle die Vase auf ___ Tisch. (der Tisch, masculine)',
+      prompt:
+        'Wohin stellst du die Vase? — Ich stelle die Vase auf ___ Tisch. (der Tisch, masculine)',
       options: [
         { id: 'a', text: 'dem' },
         { id: 'b', text: 'den' },
@@ -290,7 +339,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'd', text: 'das' },
       ],
       correctOptionId: 'b',
-      explanation: 'wohin? asks about a destination, so the accusative is needed; der Tisch becomes den Tisch in the accusative.',
+      explanation:
+        'wohin? asks about a destination, so the accusative is needed; der Tisch becomes den Tisch in the accusative.',
     },
     {
       id: 'ch36-ex-03',
@@ -308,7 +358,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'a',
-      explanation: 'wo? asks about location, so the dative is needed; die Tür becomes der Tür in the dative.',
+      explanation:
+        'wo? asks about location, so the dative is needed; die Tür becomes der Tür in the dative.',
     },
     {
       id: 'ch36-ex-04',
@@ -318,7 +369,8 @@ export const chapter036: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['wo-vs-wohin', 'accusative', 'unter'],
       instruction: 'Choose the case that matches the question word wohin?.',
-      prompt: 'Wohin legt er das Buch? — Er legt das Buch unter ___ Stuhl. (der Stuhl, masculine)',
+      prompt:
+        'Wohin legt er das Buch? — Er legt das Buch unter ___ Stuhl. (der Stuhl, masculine)',
       options: [
         { id: 'a', text: 'dem' },
         { id: 'b', text: 'den' },
@@ -326,7 +378,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'd', text: 'das' },
       ],
       correctOptionId: 'b',
-      explanation: 'wohin? asks about a destination, so the accusative is needed; der Stuhl becomes den Stuhl in the accusative.',
+      explanation:
+        'wohin? asks about a destination, so the accusative is needed; der Stuhl becomes den Stuhl in the accusative.',
     },
     {
       id: 'ch36-ex-05',
@@ -344,7 +397,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'd', text: 'an dem' },
       ],
       correctOptionId: 'a',
-      explanation: 'spielen describes a location, so in takes the dative; in + dem contracts to im.',
+      explanation:
+        'spielen describes a location, so in takes the dative; in + dem contracts to im.',
     },
     {
       id: 'ch36-ex-06',
@@ -362,7 +416,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'd', text: 'in der' },
       ],
       correctOptionId: 'a',
-      explanation: 'werfen (throw) describes movement into the water, so in takes the accusative; in + das contracts to ins.',
+      explanation:
+        'werfen (throw) describes movement into the water, so in takes the accusative; in + das contracts to ins.',
     },
     {
       id: 'ch36-ex-07',
@@ -380,7 +435,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'd', text: 'an der' },
       ],
       correctOptionId: 'a',
-      explanation: 'stellen describes placing the bike against the house, so an takes the accusative; an + das contracts to ans.',
+      explanation:
+        'stellen describes placing the bike against the house, so an takes the accusative; an + das contracts to ans.',
     },
     {
       id: 'ch36-ex-08',
@@ -398,7 +454,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'd', text: 'an den' },
       ],
       correctOptionId: 'a',
-      explanation: 'sitzen is a static verb, so an takes the dative; an + dem contracts to am.',
+      explanation:
+        'sitzen is a static verb, so an takes the dative; an + dem contracts to am.',
     },
     {
       id: 'ch36-ex-09',
@@ -416,7 +473,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'd', text: 'in den' },
       ],
       correctOptionId: 'a',
-      explanation: 'stehen describes a static location, so in takes the dative; in + dem contracts to im.',
+      explanation:
+        'stehen describes a static location, so in takes the dative; in + dem contracts to im.',
     },
     {
       id: 'ch36-ex-10',
@@ -434,7 +492,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'd', text: 'in der' },
       ],
       correctOptionId: 'a',
-      explanation: 'stellen describes placing something in a new spot, so in takes the accusative; in + das contracts to ins.',
+      explanation:
+        'stellen describes placing something in a new spot, so in takes the accusative; in + das contracts to ins.',
     },
     {
       id: 'ch36-ex-11',
@@ -452,7 +511,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'd', text: 'das' },
       ],
       correctOptionId: 'a',
-      explanation: 'sitzen is a static verb, so unter takes the dative; der Baum becomes dem Baum in the dative.',
+      explanation:
+        'sitzen is a static verb, so unter takes the dative; der Baum becomes dem Baum in the dative.',
     },
     {
       id: 'ch36-ex-12',
@@ -470,7 +530,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'd', text: 'das' },
       ],
       correctOptionId: 'b',
-      explanation: 'sich setzen describes moving into a position, so unter takes the accusative; der Baum becomes den Baum in the accusative.',
+      explanation:
+        'sich setzen describes moving into a position, so unter takes the accusative; der Baum becomes den Baum in the accusative.',
     },
     {
       id: 'ch36-ex-13',
@@ -485,7 +546,8 @@ export const chapter036: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dem/den/der',
       maxLength: 10,
-      explanation: 'liegen is a static verb (wo?), so auf takes the dative; das Bett becomes dem Bett in the dative.',
+      explanation:
+        'liegen is a static verb (wo?), so auf takes the dative; das Bett becomes dem Bett in the dative.',
     },
     {
       id: 'ch36-ex-14',
@@ -500,7 +562,8 @@ export const chapter036: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dem/den/das',
       maxLength: 10,
-      explanation: 'legen signals a destination (wohin?), so auf takes the accusative; das Bett stays das Bett in the neuter accusative.',
+      explanation:
+        'legen signals a destination (wohin?), so auf takes the accusative; das Bett stays das Bett in the neuter accusative.',
     },
     {
       id: 'ch36-ex-15',
@@ -515,7 +578,8 @@ export const chapter036: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dem/das',
       maxLength: 10,
-      explanation: 'stehen is a static verb (wo?), so vor takes the dative; das Haus becomes dem Haus in the dative.',
+      explanation:
+        'stehen is a static verb (wo?), so vor takes the dative; das Haus becomes dem Haus in the dative.',
     },
     {
       id: 'ch36-ex-16',
@@ -530,7 +594,8 @@ export const chapter036: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dem/das',
       maxLength: 10,
-      explanation: 'fahren here describes movement to a new position (wohin?), so vor takes the accusative; das Haus stays das Haus in the neuter accusative.',
+      explanation:
+        'fahren here describes movement to a new position (wohin?), so vor takes the accusative; das Haus stays das Haus in the neuter accusative.',
     },
     {
       id: 'ch36-ex-17',
@@ -539,13 +604,15 @@ export const chapter036: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['contraction', 'dative', 'in'],
-      instruction: 'Complete the phrase with preposition, article and noun. Capitalisation is not checked.',
+      instruction:
+        'Complete the phrase with preposition, article and noun. Capitalisation is not checked.',
       prompt: 'Wo? (in / der Park) — Die Familie macht ein Picknick ___.',
       acceptedAnswers: ['im Park'],
       answerMode: 'caseInsensitive',
       placeholder: 'im Park',
       maxLength: 20,
-      explanation: 'der Park is masculine, so its dative form is dem Park; in + dem contracts to im Park (location, wo?).',
+      explanation:
+        'der Park is masculine, so its dative form is dem Park; in + dem contracts to im Park (location, wo?).',
     },
     {
       id: 'ch36-ex-18',
@@ -554,13 +621,15 @@ export const chapter036: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['accusative', 'in', 'destination'],
-      instruction: 'Complete the phrase with preposition, article and noun. Capitalisation is not checked.',
+      instruction:
+        'Complete the phrase with preposition, article and noun. Capitalisation is not checked.',
       prompt: 'Wohin? (in / der Park) — Die Kinder laufen ___.',
       acceptedAnswers: ['in den Park'],
       answerMode: 'caseInsensitive',
       placeholder: 'in den Park',
       maxLength: 25,
-      explanation: 'der Park in the accusative is den Park; in does not contract with den, so the full form in den Park is used (destination, wohin?).',
+      explanation:
+        'der Park in the accusative is den Park; in does not contract with den, so the full form in den Park is used (destination, wohin?).',
     },
     {
       id: 'ch36-ex-19',
@@ -569,13 +638,15 @@ export const chapter036: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['dative-plural', 'zwischen', 'static-verb'],
-      instruction: 'Complete the phrase with preposition, article and noun. Capitalisation is not checked.',
+      instruction:
+        'Complete the phrase with preposition, article and noun. Capitalisation is not checked.',
       prompt: 'Wo? (zwischen / die Bäume, plural) — Das Zelt steht ___.',
       acceptedAnswers: ['zwischen den Bäumen'],
       answerMode: 'caseInsensitive',
       placeholder: 'zwischen den Bäumen',
       maxLength: 30,
-      explanation: 'stehen is static; the plural die Bäume becomes den Bäumen in the dative, with an added -n on the noun.',
+      explanation:
+        'stehen is static; the plural die Bäume becomes den Bäumen in the dative, with an added -n on the noun.',
     },
     {
       id: 'ch36-ex-20',
@@ -584,13 +655,15 @@ export const chapter036: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['accusative-plural', 'zwischen', 'movement-verb'],
-      instruction: 'Complete the phrase with preposition, article and noun. Capitalisation is not checked.',
+      instruction:
+        'Complete the phrase with preposition, article and noun. Capitalisation is not checked.',
       prompt: 'Wohin? (zwischen / die Bäume, plural) — Stell das Zelt ___!',
       acceptedAnswers: ['zwischen die Bäume'],
       answerMode: 'caseInsensitive',
       placeholder: 'zwischen die Bäume',
       maxLength: 30,
-      explanation: 'stellen signals a destination; the plural accusative keeps die Bäume, without the extra -n used in the dative.',
+      explanation:
+        'stellen signals a destination; the plural accusative keeps die Bäume, without the extra -n used in the dative.',
     },
     {
       id: 'ch36-ex-21',
@@ -599,13 +672,15 @@ export const chapter036: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'movement-verb', 'accusative'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ich stelle das Buch auf dem Tisch.',
       acceptedAnswers: ['Ich stelle das Buch auf den Tisch.'],
       answerMode: 'normalized',
       placeholder: 'Ich stelle das Buch ...',
       maxLength: 60,
-      explanation: 'stellen signals a destination (wohin?), so auf takes the accusative den Tisch, not the dative dem Tisch.',
+      explanation:
+        'stellen signals a destination (wohin?), so auf takes the accusative den Tisch, not the dative dem Tisch.',
     },
     {
       id: 'ch36-ex-22',
@@ -614,13 +689,15 @@ export const chapter036: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'static-verb', 'dative'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Das Bild hängt an die Wand.',
       acceptedAnswers: ['Das Bild hängt an der Wand.'],
       answerMode: 'normalized',
       placeholder: 'Das Bild hängt ...',
       maxLength: 60,
-      explanation: 'hängen (intransitive) describes where the picture already is (wo?), so an takes the dative der Wand, not the accusative die Wand.',
+      explanation:
+        'hängen (intransitive) describes where the picture already is (wo?), so an takes the dative der Wand, not the accusative die Wand.',
     },
     {
       id: 'ch36-ex-23',
@@ -629,13 +706,15 @@ export const chapter036: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'movement-verb', 'accusative'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Wir gehen in dem Supermarkt.',
       acceptedAnswers: ['Wir gehen in den Supermarkt.'],
       answerMode: 'normalized',
       placeholder: 'Wir gehen ...',
       maxLength: 60,
-      explanation: 'gehen describes movement toward a destination (wohin?), so in takes the accusative den Supermarkt, not the dative dem Supermarkt.',
+      explanation:
+        'gehen describes movement toward a destination (wohin?), so in takes the accusative den Supermarkt, not the dative dem Supermarkt.',
     },
     {
       id: 'ch36-ex-24',
@@ -644,13 +723,18 @@ export const chapter036: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['sentence-formation', 'movement-verb', 'accusative'],
-      instruction: 'Write a complete sentence using the accusative for the cue in brackets. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence using the accusative for the cue in brackets. Capitalisation is checked; no full stop is required.',
       prompt: 'er – legen – das Buch – der Tisch (wohin?, Akkusativ)',
-      acceptedAnswers: ['Er legt das Buch auf den Tisch.', 'Er legt das Buch auf den Tisch'],
+      acceptedAnswers: [
+        'Er legt das Buch auf den Tisch.',
+        'Er legt das Buch auf den Tisch',
+      ],
       answerMode: 'normalized',
       placeholder: 'Er legt das Buch ...',
       maxLength: 60,
-      explanation: 'legen signals a destination (wohin?), so der Tisch becomes den Tisch in the accusative: Er legt das Buch auf den Tisch.',
+      explanation:
+        'legen signals a destination (wohin?), so der Tisch becomes den Tisch in the accusative: Er legt das Buch auf den Tisch.',
     },
     {
       id: 'ch36-ex-25',
@@ -668,7 +752,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'c',
-      explanation: 'hängt is static here (wo?), so an takes the dative; die Wand becomes der Wand in the dative.',
+      explanation:
+        'hängt is static here (wo?), so an takes the dative; die Wand becomes der Wand in the dative.',
     },
     {
       id: 'ch36-ex-26',
@@ -678,7 +763,8 @@ export const chapter036: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['wo-vs-wohin', 'accusative', 'an'],
       instruction: 'Choose the case that matches the question word wohin?.',
-      prompt: 'Wohin hängst du das Bild? — Ich hänge das Bild an ___ Wand. (die Wand, feminine)',
+      prompt:
+        'Wohin hängst du das Bild? — Ich hänge das Bild an ___ Wand. (die Wand, feminine)',
       options: [
         { id: 'a', text: 'der' },
         { id: 'b', text: 'die' },
@@ -686,7 +772,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'b',
-      explanation: 'hänge (transitive) describes moving the picture to a new place (wohin?), so an takes the accusative; die Wand stays die Wand.',
+      explanation:
+        'hänge (transitive) describes moving the picture to a new place (wohin?), so an takes the accusative; die Wand stays die Wand.',
     },
     {
       id: 'ch36-ex-27',
@@ -704,7 +791,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'd', text: 'das' },
       ],
       correctOptionId: 'a',
-      explanation: 'stehen is a static verb, so auf takes the dative; der Tisch becomes dem Tisch in the dative.',
+      explanation:
+        'stehen is a static verb, so auf takes the dative; der Tisch becomes dem Tisch in the dative.',
     },
     {
       id: 'ch36-ex-28',
@@ -722,7 +810,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'd', text: 'das' },
       ],
       correctOptionId: 'b',
-      explanation: 'stellen describes placing something in a new spot, so auf takes the accusative; der Tisch becomes den Tisch in the accusative.',
+      explanation:
+        'stellen describes placing something in a new spot, so auf takes the accusative; der Tisch becomes den Tisch in the accusative.',
     },
     {
       id: 'ch36-ex-29',
@@ -740,7 +829,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'a',
-      explanation: 'stehen is a static verb, so hinter takes the dative; das Haus becomes dem Haus in the dative.',
+      explanation:
+        'stehen is a static verb, so hinter takes the dative; das Haus becomes dem Haus in the dative.',
     },
     {
       id: 'ch36-ex-30',
@@ -758,7 +848,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'b',
-      explanation: 'fahren here describes a movement to a new position, so hinter takes the accusative; das Haus stays das Haus.',
+      explanation:
+        'fahren here describes a movement to a new position, so hinter takes the accusative; das Haus stays das Haus.',
     },
     {
       id: 'ch36-ex-31',
@@ -776,7 +867,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'd', text: 'das' },
       ],
       correctOptionId: 'a',
-      explanation: 'stehen is a static verb, so neben takes the dative; der Schrank becomes dem Schrank in the dative.',
+      explanation:
+        'stehen is a static verb, so neben takes the dative; der Schrank becomes dem Schrank in the dative.',
     },
     {
       id: 'ch36-ex-32',
@@ -794,7 +886,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'd', text: 'das' },
       ],
       correctOptionId: 'b',
-      explanation: 'stellen describes placing something in a new spot, so neben takes the accusative; der Schrank becomes den Schrank.',
+      explanation:
+        'stellen describes placing something in a new spot, so neben takes the accusative; der Schrank becomes den Schrank.',
     },
     {
       id: 'ch36-ex-33',
@@ -812,7 +905,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'd', text: 'das' },
       ],
       correctOptionId: 'a',
-      explanation: 'hängt (intransitive) is static here, so über takes the dative; der Tisch becomes dem Tisch.',
+      explanation:
+        'hängt (intransitive) is static here, so über takes the dative; der Tisch becomes dem Tisch.',
     },
     {
       id: 'ch36-ex-34',
@@ -830,7 +924,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'd', text: 'das' },
       ],
       correctOptionId: 'b',
-      explanation: 'hängen (transitive) describes moving the lamp to a new place, so über takes the accusative; der Tisch becomes den Tisch.',
+      explanation:
+        'hängen (transitive) describes moving the lamp to a new place, so über takes the accusative; der Tisch becomes den Tisch.',
     },
     {
       id: 'ch36-ex-35',
@@ -848,7 +943,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'd', text: 'dem' },
       ],
       correctOptionId: 'b',
-      explanation: 'sitzt is static, so zwischen takes the dative; the plural die Kissen becomes den Kissen in the dative.',
+      explanation:
+        'sitzt is static, so zwischen takes the dative; the plural die Kissen becomes den Kissen in the dative.',
     },
     {
       id: 'ch36-ex-36',
@@ -866,7 +962,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'd', text: 'dem' },
       ],
       correctOptionId: 'b',
-      explanation: 'legen describes placing the books in a new spot, so zwischen takes the accusative; the plural accusative keeps die Stühle.',
+      explanation:
+        'legen describes placing the books in a new spot, so zwischen takes the accusative; the plural accusative keeps die Stühle.',
     },
     {
       id: 'ch36-ex-37',
@@ -881,7 +978,8 @@ export const chapter036: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'der/die',
       maxLength: 10,
-      explanation: 'stehen is a static verb (wo?), so an takes the dative; die Wand becomes der Wand in the dative.',
+      explanation:
+        'stehen is a static verb (wo?), so an takes the dative; die Wand becomes der Wand in the dative.',
     },
     {
       id: 'ch36-ex-38',
@@ -891,12 +989,14 @@ export const chapter036: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['movement-verb', 'accusative', 'an'],
       instruction: 'Write the correct article. Capitalisation is not checked.',
-      prompt: 'Wohin stellst du das Fahrrad? Ich stelle das Fahrrad an ___ Wand. (die Wand)',
+      prompt:
+        'Wohin stellst du das Fahrrad? Ich stelle das Fahrrad an ___ Wand. (die Wand)',
       acceptedAnswers: ['die'],
       answerMode: 'caseInsensitive',
       placeholder: 'der/die',
       maxLength: 10,
-      explanation: 'stellen signals a destination (wohin?), so an takes the accusative; die Wand stays die Wand.',
+      explanation:
+        'stellen signals a destination (wohin?), so an takes the accusative; die Wand stays die Wand.',
     },
     {
       id: 'ch36-ex-39',
@@ -911,7 +1011,8 @@ export const chapter036: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dem/den',
       maxLength: 10,
-      explanation: 'warten describes a fixed position (wo?), so hinter takes the dative; der Baum becomes dem Baum.',
+      explanation:
+        'warten describes a fixed position (wo?), so hinter takes the dative; der Baum becomes dem Baum.',
     },
     {
       id: 'ch36-ex-40',
@@ -926,7 +1027,8 @@ export const chapter036: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dem/den',
       maxLength: 10,
-      explanation: 'laufen here describes movement toward a destination (wohin?), so hinter takes the accusative; der Baum becomes den Baum.',
+      explanation:
+        'laufen here describes movement toward a destination (wohin?), so hinter takes the accusative; der Baum becomes den Baum.',
     },
     {
       id: 'ch36-ex-41',
@@ -941,7 +1043,8 @@ export const chapter036: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dem/den',
       maxLength: 10,
-      explanation: 'sitzen is a static verb (wo?), so neben takes the dative; der Ofen becomes dem Ofen.',
+      explanation:
+        'sitzen is a static verb (wo?), so neben takes the dative; der Ofen becomes dem Ofen.',
     },
     {
       id: 'ch36-ex-42',
@@ -951,12 +1054,14 @@ export const chapter036: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['movement-verb', 'accusative', 'neben'],
       instruction: 'Write the correct article. Capitalisation is not checked.',
-      prompt: 'Wohin setzt sich die Katze? Die Katze setzt sich neben ___ Ofen. (der Ofen)',
+      prompt:
+        'Wohin setzt sich die Katze? Die Katze setzt sich neben ___ Ofen. (der Ofen)',
       acceptedAnswers: ['den'],
       answerMode: 'caseInsensitive',
       placeholder: 'dem/den',
       maxLength: 10,
-      explanation: 'sich setzen describes moving into a position (wohin?), so neben takes the accusative; der Ofen becomes den Ofen.',
+      explanation:
+        'sich setzen describes moving into a position (wohin?), so neben takes the accusative; der Ofen becomes den Ofen.',
     },
     {
       id: 'ch36-ex-43',
@@ -971,7 +1076,8 @@ export const chapter036: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'der/die',
       maxLength: 10,
-      explanation: 'hängt (intransitive) is static here (wo?), so über takes the dative; die Tür becomes der Tür.',
+      explanation:
+        'hängt (intransitive) is static here (wo?), so über takes the dative; die Tür becomes der Tür.',
     },
     {
       id: 'ch36-ex-44',
@@ -986,7 +1092,8 @@ export const chapter036: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'der/die',
       maxLength: 10,
-      explanation: 'hängen (transitive) signals a destination (wohin?), so über takes the accusative; die Tür stays die Tür.',
+      explanation:
+        'hängen (transitive) signals a destination (wohin?), so über takes the accusative; die Tür stays die Tür.',
     },
     {
       id: 'ch36-ex-45',
@@ -995,13 +1102,15 @@ export const chapter036: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['contraction', 'dative', 'an'],
-      instruction: 'Complete the phrase with preposition, article and noun. Capitalisation is not checked.',
+      instruction:
+        'Complete the phrase with preposition, article and noun. Capitalisation is not checked.',
       prompt: 'Wo? (an / das Fenster) — Die Blumen stehen ___.',
       acceptedAnswers: ['am Fenster'],
       answerMode: 'caseInsensitive',
       placeholder: 'am Fenster',
       maxLength: 20,
-      explanation: 'das Fenster is neuter, so its dative form is dem Fenster; an + dem contracts to am Fenster (location, wo?).',
+      explanation:
+        'das Fenster is neuter, so its dative form is dem Fenster; an + dem contracts to am Fenster (location, wo?).',
     },
     {
       id: 'ch36-ex-46',
@@ -1010,13 +1119,15 @@ export const chapter036: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['accusative', 'an', 'destination'],
-      instruction: 'Complete the phrase with preposition, article and noun. Capitalisation is not checked.',
+      instruction:
+        'Complete the phrase with preposition, article and noun. Capitalisation is not checked.',
       prompt: 'Wohin? (an / das Fenster) — Stell die Blumen ___!',
       acceptedAnswers: ['an das Fenster'],
       answerMode: 'caseInsensitive',
       placeholder: 'an das Fenster',
       maxLength: 25,
-      explanation: 'das Fenster in the accusative stays das Fenster; an does not contract with das in this fixed phrase here, so the full form an das Fenster is used (destination, wohin?).',
+      explanation:
+        'das Fenster in the accusative stays das Fenster; an does not contract with das in this fixed phrase here, so the full form an das Fenster is used (destination, wohin?).',
     },
     {
       id: 'ch36-ex-47',
@@ -1025,13 +1136,15 @@ export const chapter036: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'static-verb', 'dative'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Die Kinder spielen in den Garten.',
       acceptedAnswers: ['Die Kinder spielen im Garten.'],
       answerMode: 'normalized',
       placeholder: 'Die Kinder spielen ...',
       maxLength: 60,
-      explanation: 'spielen describes a static location (wo?), so in takes the dative; in + dem contracts to im Garten, not den Garten.',
+      explanation:
+        'spielen describes a static location (wo?), so in takes the dative; in + dem contracts to im Garten, not den Garten.',
     },
     {
       id: 'ch36-ex-48',
@@ -1040,13 +1153,18 @@ export const chapter036: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['sentence-formation', 'movement-verb', 'accusative'],
-      instruction: 'Write a complete sentence using the accusative for the cue in brackets. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence using the accusative for the cue in brackets. Capitalisation is checked; no full stop is required.',
       prompt: 'sie – hängen – die Jacke – an – der Haken (wohin?, Akkusativ)',
-      acceptedAnswers: ['Sie hängt die Jacke an den Haken.', 'Sie hängt die Jacke an den Haken'],
+      acceptedAnswers: [
+        'Sie hängt die Jacke an den Haken.',
+        'Sie hängt die Jacke an den Haken',
+      ],
       answerMode: 'normalized',
       placeholder: 'Sie hängt die Jacke ...',
       maxLength: 60,
-      explanation: 'hängen (transitive) signals a destination (wohin?), so der Haken becomes den Haken in the accusative: Sie hängt die Jacke an den Haken.',
+      explanation:
+        'hängen (transitive) signals a destination (wohin?), so der Haken becomes den Haken in the accusative: Sie hängt die Jacke an den Haken.',
     },
     {
       id: 'ch36-ex-49',
@@ -1060,7 +1178,8 @@ export const chapter036: ChapterDefinition = {
       templateParts: ['Wo ist der Schlüssel? — Der Schlüssel liegt unter ', ' Sofa.'],
       slots: [{ id: 's1', correctWord: 'dem' }],
       wordBank: ['dem', 'den', 'der', 'das'],
-      explanation: 'liegen is a static verb (wo?), so unter takes the dative; das Sofa becomes dem Sofa.',
+      explanation:
+        'liegen is a static verb (wo?), so unter takes the dative; das Sofa becomes dem Sofa.',
     },
     {
       id: 'ch36-ex-50',
@@ -1071,10 +1190,14 @@ export const chapter036: ChapterDefinition = {
       grammarFocus: ['movement-verb', 'accusative', 'unter'],
       instruction: 'Drag the correct article into the slot.',
       prompt: 'Wohin legst du den Schlüssel? — Ich lege den Schlüssel unter ___ Sofa.',
-      templateParts: ['Wohin legst du den Schlüssel? — Ich lege den Schlüssel unter ', ' Sofa.'],
+      templateParts: [
+        'Wohin legst du den Schlüssel? — Ich lege den Schlüssel unter ',
+        ' Sofa.',
+      ],
       slots: [{ id: 's1', correctWord: 'das' }],
       wordBank: ['das', 'dem', 'den', 'der'],
-      explanation: 'legen signals a destination (wohin?), so unter takes the accusative; das Sofa stays das Sofa.',
+      explanation:
+        'legen signals a destination (wohin?), so unter takes the accusative; das Sofa stays das Sofa.',
     },
     {
       id: 'ch36-ex-51',
@@ -1091,7 +1214,8 @@ export const chapter036: ChapterDefinition = {
         { id: 's2', correctWord: 'der' },
       ],
       wordBank: ['der', 'der', 'die', 'den', 'dem'],
-      explanation: 'Both hängen (intransitive) here are static (wo?), so an and über take the dative; die Wand and die Tür both become der Wand and der Tür.',
+      explanation:
+        'Both hängen (intransitive) here are static (wo?), so an and über take the dative; die Wand and die Tür both become der Wand and der Tür.',
     },
     {
       id: 'ch36-ex-52',
@@ -1105,7 +1229,8 @@ export const chapter036: ChapterDefinition = {
       templateParts: ['Wohin stellst du die Vase? — Ich stelle die Vase auf ', ' Tisch.'],
       slots: [{ id: 's1', correctWord: 'den' }],
       wordBank: ['den', 'dem', 'der', 'das'],
-      explanation: 'stellen signals a destination (wohin?), so auf takes the accusative; der Tisch becomes den Tisch.',
+      explanation:
+        'stellen signals a destination (wohin?), so auf takes the accusative; der Tisch becomes den Tisch.',
     },
     {
       id: 'ch36-ex-53',
@@ -1119,7 +1244,8 @@ export const chapter036: ChapterDefinition = {
       templateParts: ['Wo steht die Vase? — Die Vase steht auf ', ' Tisch.'],
       slots: [{ id: 's1', correctWord: 'dem' }],
       wordBank: ['dem', 'den', 'der', 'das'],
-      explanation: 'stehen is a static verb (wo?), so auf takes the dative; der Tisch becomes dem Tisch.',
+      explanation:
+        'stehen is a static verb (wo?), so auf takes the dative; der Tisch becomes dem Tisch.',
     },
     {
       id: 'ch36-ex-54',
@@ -1133,7 +1259,8 @@ export const chapter036: ChapterDefinition = {
       templateParts: ['Die Familie geht ', ' Kino.'],
       slots: [{ id: 's1', correctWord: 'ins' }],
       wordBank: ['ins', 'im', 'ans', 'am'],
-      explanation: 'gehen signals a destination (wohin?), so in takes the accusative; in + das contracts to ins.',
+      explanation:
+        'gehen signals a destination (wohin?), so in takes the accusative; in + das contracts to ins.',
     },
     {
       id: 'ch36-ex-55',
@@ -1147,7 +1274,8 @@ export const chapter036: ChapterDefinition = {
       templateParts: ['Die Familie ist ', ' Kino.'],
       slots: [{ id: 's1', correctWord: 'im' }],
       wordBank: ['im', 'ins', 'am', 'ans'],
-      explanation: 'sein describes a static location (wo?), so in takes the dative; in + dem contracts to im.',
+      explanation:
+        'sein describes a static location (wo?), so in takes the dative; in + dem contracts to im.',
     },
     {
       id: 'ch36-ex-56',
@@ -1161,7 +1289,8 @@ export const chapter036: ChapterDefinition = {
       templateParts: ['Die Vögel fliegen auf ', ' Baum.'],
       slots: [{ id: 's1', correctWord: 'den' }],
       wordBank: ['den', 'dem', 'der', 'das'],
-      explanation: 'fliegen here describes a movement toward a destination (wohin?), so auf takes the accusative; der Baum becomes den Baum.',
+      explanation:
+        'fliegen here describes a movement toward a destination (wohin?), so auf takes the accusative; der Baum becomes den Baum.',
     },
     {
       id: 'ch36-ex-57',
@@ -1175,7 +1304,8 @@ export const chapter036: ChapterDefinition = {
       templateParts: ['Die Vögel sitzen auf ', ' Baum.'],
       slots: [{ id: 's1', correctWord: 'dem' }],
       wordBank: ['dem', 'den', 'der', 'das'],
-      explanation: 'sitzen is a static verb (wo?), so auf takes the dative; der Baum becomes dem Baum.',
+      explanation:
+        'sitzen is a static verb (wo?), so auf takes the dative; der Baum becomes dem Baum.',
     },
     {
       id: 'ch36-ex-58',
@@ -1192,7 +1322,8 @@ export const chapter036: ChapterDefinition = {
         { id: 's2', correctWord: 'die' },
       ],
       wordBank: ['hängt', 'hängen', 'die', 'der'],
-      explanation: 'Er hängt (3rd person singular, transitive) describes moving the picture to a new place, so an takes the accusative die Wand.',
+      explanation:
+        'Er hängt (3rd person singular, transitive) describes moving the picture to a new place, so an takes the accusative die Wand.',
     },
     {
       id: 'ch36-ex-59',
@@ -1209,7 +1340,8 @@ export const chapter036: ChapterDefinition = {
         { id: 's2', correctWord: 'der' },
       ],
       wordBank: ['hängt', 'hängen', 'der', 'die'],
-      explanation: 'Das Bild hängt (3rd person singular, intransitive) describes where the picture already is, so an takes the dative der Wand.',
+      explanation:
+        'Das Bild hängt (3rd person singular, intransitive) describes where the picture already is, so an takes the dative der Wand.',
     },
     {
       id: 'ch36-ex-60',
@@ -1223,7 +1355,8 @@ export const chapter036: ChapterDefinition = {
       templateParts: ['Wo sitzt der Hund? — Der Hund sitzt zwischen ', ' Stühlen.'],
       slots: [{ id: 's1', correctWord: 'den' }],
       wordBank: ['den', 'die', 'dem', 'der'],
-      explanation: 'sitzen is a static verb (wo?), so zwischen takes the dative; the plural die Stühle becomes den Stühlen in the dative.',
+      explanation:
+        'sitzen is a static verb (wo?), so zwischen takes the dative; the plural die Stühle becomes den Stühlen in the dative.',
     },
     {
       id: 'ch36-ex-61',
@@ -1234,10 +1367,14 @@ export const chapter036: ChapterDefinition = {
       grammarFocus: ['movement-verb', 'accusative-plural', 'zwischen'],
       instruction: 'Drag the correct article into the slot.',
       prompt: 'Wohin legst du das Kissen? — Ich lege das Kissen zwischen ___ Stühle.',
-      templateParts: ['Wohin legst du das Kissen? — Ich lege das Kissen zwischen ', ' Stühle.'],
+      templateParts: [
+        'Wohin legst du das Kissen? — Ich lege das Kissen zwischen ',
+        ' Stühle.',
+      ],
       slots: [{ id: 's1', correctWord: 'die' }],
       wordBank: ['die', 'den', 'dem', 'der'],
-      explanation: 'legen signals a destination (wohin?), so zwischen takes the accusative; the plural accusative keeps die Stühle.',
+      explanation:
+        'legen signals a destination (wohin?), so zwischen takes the accusative; the plural accusative keeps die Stühle.',
     },
     {
       id: 'ch36-ex-62',
@@ -1248,13 +1385,18 @@ export const chapter036: ChapterDefinition = {
       grammarFocus: ['movement-verb', 'accusative', 'unter', 'auf'],
       instruction: 'Drag the correct article into each slot.',
       prompt: 'Die Katze läuft unter ___ Tisch und springt dann auf ___ Stuhl.',
-      templateParts: ['Die Katze läuft unter ', ' Tisch und springt dann auf ', ' Stuhl.'],
+      templateParts: [
+        'Die Katze läuft unter ',
+        ' Tisch und springt dann auf ',
+        ' Stuhl.',
+      ],
       slots: [
         { id: 's1', correctWord: 'den' },
         { id: 's2', correctWord: 'den' },
       ],
       wordBank: ['den', 'den', 'dem', 'die'],
-      explanation: 'laufen and springen both describe movement toward a destination (wohin?), so unter and auf take the accusative; der Tisch and der Stuhl both become den Tisch and den Stuhl.',
+      explanation:
+        'laufen and springen both describe movement toward a destination (wohin?), so unter and auf take the accusative; der Tisch and der Stuhl both become den Tisch and den Stuhl.',
     },
     {
       id: 'ch36-ex-63',
@@ -1266,13 +1408,34 @@ export const chapter036: ChapterDefinition = {
       instruction: 'Match each location description to the correct dative phrase.',
       prompt: 'Match wo? (location) descriptions to their dative phrases.',
       pairs: [
-        { id: 'p1', left: 'the book is under the table (der Tisch)', right: 'unter dem Tisch' },
-        { id: 'p2', left: 'the lamp hangs above the bed (das Bett)', right: 'über dem Bett' },
-        { id: 'p3', left: 'the car stands in front of the house (das Haus)', right: 'vor dem Haus' },
-        { id: 'p4', left: 'the cat sits between the chairs (die Stühle, plural)', right: 'zwischen den Stühlen' },
-        { id: 'p5', left: 'the picture hangs on the wall (die Wand)', right: 'an der Wand' },
+        {
+          id: 'p1',
+          left: 'the book is under the table (der Tisch)',
+          right: 'unter dem Tisch',
+        },
+        {
+          id: 'p2',
+          left: 'the lamp hangs above the bed (das Bett)',
+          right: 'über dem Bett',
+        },
+        {
+          id: 'p3',
+          left: 'the car stands in front of the house (das Haus)',
+          right: 'vor dem Haus',
+        },
+        {
+          id: 'p4',
+          left: 'the cat sits between the chairs (die Stühle, plural)',
+          right: 'zwischen den Stühlen',
+        },
+        {
+          id: 'p5',
+          left: 'the picture hangs on the wall (die Wand)',
+          right: 'an der Wand',
+        },
       ],
-      explanation: 'All five sentences describe a fixed location (wo?), so every two-way preposition here takes the dative.',
+      explanation:
+        'All five sentences describe a fixed location (wo?), so every two-way preposition here takes the dative.',
     },
     {
       id: 'ch36-ex-64',
@@ -1284,13 +1447,34 @@ export const chapter036: ChapterDefinition = {
       instruction: 'Match each destination description to the correct accusative phrase.',
       prompt: 'Match wohin? (destination) descriptions to their accusative phrases.',
       pairs: [
-        { id: 'p1', left: 'put the book under the table (der Tisch)', right: 'unter den Tisch' },
-        { id: 'p2', left: 'hang the lamp above the bed (das Bett)', right: 'über das Bett' },
-        { id: 'p3', left: 'drive the car in front of the house (das Haus)', right: 'vor das Haus' },
-        { id: 'p4', left: 'put the cat between the chairs (die Stühle, plural)', right: 'zwischen die Stühle' },
-        { id: 'p5', left: 'hang the picture on the wall (die Wand)', right: 'an die Wand' },
+        {
+          id: 'p1',
+          left: 'put the book under the table (der Tisch)',
+          right: 'unter den Tisch',
+        },
+        {
+          id: 'p2',
+          left: 'hang the lamp above the bed (das Bett)',
+          right: 'über das Bett',
+        },
+        {
+          id: 'p3',
+          left: 'drive the car in front of the house (das Haus)',
+          right: 'vor das Haus',
+        },
+        {
+          id: 'p4',
+          left: 'put the cat between the chairs (die Stühle, plural)',
+          right: 'zwischen die Stühle',
+        },
+        {
+          id: 'p5',
+          left: 'hang the picture on the wall (die Wand)',
+          right: 'an die Wand',
+        },
       ],
-      explanation: 'All five sentences describe a movement toward a destination (wohin?), so every two-way preposition here takes the accusative.',
+      explanation:
+        'All five sentences describe a movement toward a destination (wohin?), so every two-way preposition here takes the accusative.',
     },
     {
       id: 'ch36-ex-65',
@@ -1307,7 +1491,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'p3', left: 'an + dem', right: 'am' },
         { id: 'p4', left: 'an + das', right: 'ans' },
       ],
-      explanation: 'in and an both contract with dem (masculine/neuter dative) and das (neuter accusative): im, ins, am, ans.',
+      explanation:
+        'in and an both contract with dem (masculine/neuter dative) and das (neuter accusative): im, ins, am, ans.',
     },
     {
       id: 'ch36-ex-66',
@@ -1319,13 +1504,30 @@ export const chapter036: ChapterDefinition = {
       instruction: 'Match each static verb to its movement counterpart.',
       prompt: 'Match the location verb to the matching placement/movement verb.',
       pairs: [
-        { id: 'p1', left: 'stehen (to stand, be standing)', right: 'stellen (to put something upright)' },
-        { id: 'p2', left: 'liegen (to lie, be lying)', right: 'legen (to lay something down)' },
-        { id: 'p3', left: 'sitzen (to sit, be sitting)', right: 'setzen (to set/put something down)' },
-        { id: 'p4', left: 'hängen (to be hanging, intransitive)', right: 'hängen (to hang something up, transitive)' },
+        {
+          id: 'p1',
+          left: 'stehen (to stand, be standing)',
+          right: 'stellen (to put something upright)',
+        },
+        {
+          id: 'p2',
+          left: 'liegen (to lie, be lying)',
+          right: 'legen (to lay something down)',
+        },
+        {
+          id: 'p3',
+          left: 'sitzen (to sit, be sitting)',
+          right: 'setzen (to set/put something down)',
+        },
+        {
+          id: 'p4',
+          left: 'hängen (to be hanging, intransitive)',
+          right: 'hängen (to hang something up, transitive)',
+        },
         { id: 'p5', left: 'sein (to be somewhere)', right: 'gehen (to go somewhere)' },
       ],
-      explanation: 'Each static verb pairs with a movement verb that describes the action of putting something into that static position.',
+      explanation:
+        'Each static verb pairs with a movement verb that describes the action of putting something into that static position.',
     },
     {
       id: 'ch36-ex-67',
@@ -1337,13 +1539,34 @@ export const chapter036: ChapterDefinition = {
       instruction: 'Match each German sentence to its English translation.',
       prompt: 'Match the German sentence to its English meaning.',
       pairs: [
-        { id: 'p1', left: 'Die Kinder spielen im Garten.', right: 'The children are playing in the garden.' },
-        { id: 'p2', left: 'Die Kinder laufen in den Garten.', right: 'The children are running into the garden.' },
-        { id: 'p3', left: 'Der Schlüssel liegt unter dem Stuhl.', right: 'The key is lying under the chair.' },
-        { id: 'p4', left: 'Die Katze läuft unter den Stuhl.', right: 'The cat runs under the chair.' },
-        { id: 'p5', left: 'Wir sitzen zwischen den Bäumen.', right: 'We are sitting between the trees.' },
+        {
+          id: 'p1',
+          left: 'Die Kinder spielen im Garten.',
+          right: 'The children are playing in the garden.',
+        },
+        {
+          id: 'p2',
+          left: 'Die Kinder laufen in den Garten.',
+          right: 'The children are running into the garden.',
+        },
+        {
+          id: 'p3',
+          left: 'Der Schlüssel liegt unter dem Stuhl.',
+          right: 'The key is lying under the chair.',
+        },
+        {
+          id: 'p4',
+          left: 'Die Katze läuft unter den Stuhl.',
+          right: 'The cat runs under the chair.',
+        },
+        {
+          id: 'p5',
+          left: 'Wir sitzen zwischen den Bäumen.',
+          right: 'We are sitting between the trees.',
+        },
       ],
-      explanation: 'Each translation reflects whether the German sentence describes a static location (dative) or a movement toward a destination (accusative).',
+      explanation:
+        'Each translation reflects whether the German sentence describes a static location (dative) or a movement toward a destination (accusative).',
     },
     {
       id: 'ch36-ex-68',
@@ -1362,7 +1585,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'p5', left: 'sitzen', right: 'answers wo? (fixed position)' },
         { id: 'p6', left: 'setzen', right: 'answers wohin? (change of position)' },
       ],
-      explanation: 'stehen/liegen/sitzen describe a fixed position (wo?), while stellen/legen/setzen describe an action that creates a new position (wohin?).',
+      explanation:
+        'stehen/liegen/sitzen describe a fixed position (wo?), while stellen/legen/setzen describe an action that creates a new position (wohin?).',
     },
     {
       id: 'ch36-ex-69',
@@ -1379,7 +1603,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'p3', left: 'an dem Fenster', right: 'dative, neuter' },
         { id: 'p4', left: 'zwischen den Bäumen', right: 'dative, plural' },
       ],
-      explanation: 'The dative article reveals the gender and number: dem (masc./neut.), der (fem.), den + -n noun ending (plural).',
+      explanation:
+        'The dative article reveals the gender and number: dem (masc./neut.), der (fem.), den + -n noun ending (plural).',
     },
     {
       id: 'ch36-ex-70',
@@ -1396,7 +1621,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'p3', left: 'an das Fenster', right: 'accusative, neuter' },
         { id: 'p4', left: 'zwischen die Bäume', right: 'accusative, plural' },
       ],
-      explanation: 'The accusative article reveals the gender and number: den (masc.), die (fem./plural), das (neut.) — the accusative plural noun has no extra ending.',
+      explanation:
+        'The accusative article reveals the gender and number: den (masc.), die (fem./plural), das (neut.) — the accusative plural noun has no extra ending.',
     },
     {
       id: 'ch36-ex-71',
@@ -1414,7 +1640,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'p4', left: 'auf (der Balkon, wo?)', right: 'auf dem Balkon' },
         { id: 'p5', left: 'vor (das Geschäft, wo?)', right: 'vor dem Geschäft' },
       ],
-      explanation: 'Each phrase describes a static location (wo?), so the article is dative — contracted to im where in meets dem or das.',
+      explanation:
+        'Each phrase describes a static location (wo?), so the article is dative — contracted to im where in meets dem or das.',
     },
     {
       id: 'ch36-ex-72',
@@ -1432,7 +1659,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'p4', left: 'auf (der Balkon, wohin?)', right: 'auf den Balkon' },
         { id: 'p5', left: 'vor (das Geschäft, wohin?)', right: 'vor das Geschäft' },
       ],
-      explanation: 'Each phrase describes a destination (wohin?), so the article is accusative — contracted to ins where in meets das.',
+      explanation:
+        'Each phrase describes a destination (wohin?), so the article is accusative — contracted to ins where in meets das.',
     },
     {
       id: 'ch36-ex-73',
@@ -1446,7 +1674,8 @@ export const chapter036: ChapterDefinition = {
       tokens: ['Ich', 'stelle', 'das', 'Buch', 'auf', 'dem', 'Tisch', '.'],
       errorTokenIndex: 5,
       correction: 'den',
-      explanation: 'stellen signals a destination (wohin?), so auf takes the accusative den Tisch, not the dative dem Tisch.',
+      explanation:
+        'stellen signals a destination (wohin?), so auf takes the accusative den Tisch, not the dative dem Tisch.',
     },
     {
       id: 'ch36-ex-74',
@@ -1460,7 +1689,8 @@ export const chapter036: ChapterDefinition = {
       tokens: ['Das', 'Buch', 'liegt', 'auf', 'den', 'Tisch', '.'],
       errorTokenIndex: 4,
       correction: 'dem',
-      explanation: 'liegen describes a static location (wo?), so auf takes the dative dem Tisch, not the accusative den Tisch.',
+      explanation:
+        'liegen describes a static location (wo?), so auf takes the dative dem Tisch, not the accusative den Tisch.',
     },
     {
       id: 'ch36-ex-75',
@@ -1474,7 +1704,8 @@ export const chapter036: ChapterDefinition = {
       tokens: ['Wir', 'gehen', 'in', 'dem', 'Supermarkt', '.'],
       errorTokenIndex: 3,
       correction: 'den',
-      explanation: 'gehen describes movement toward a destination (wohin?), so in takes the accusative den Supermarkt, not the dative dem Supermarkt.',
+      explanation:
+        'gehen describes movement toward a destination (wohin?), so in takes the accusative den Supermarkt, not the dative dem Supermarkt.',
     },
     {
       id: 'ch36-ex-76',
@@ -1488,7 +1719,8 @@ export const chapter036: ChapterDefinition = {
       tokens: ['Die', 'Kinder', 'spielen', 'in', 'den', 'Garten', '.'],
       errorTokenIndex: 4,
       correction: 'dem',
-      explanation: 'spielen describes a static location (wo?), so in takes the dative dem Garten, not the accusative den Garten.',
+      explanation:
+        'spielen describes a static location (wo?), so in takes the dative dem Garten, not the accusative den Garten.',
     },
     {
       id: 'ch36-ex-77',
@@ -1502,7 +1734,8 @@ export const chapter036: ChapterDefinition = {
       tokens: ['Wir', 'hängen', 'das', 'Bild', 'an', 'der', 'Wand', '.'],
       errorTokenIndex: 5,
       correction: 'die',
-      explanation: 'hängen (transitive) describes placing the picture, signalling a destination (wohin?), so an takes the accusative die Wand, not the dative der Wand.',
+      explanation:
+        'hängen (transitive) describes placing the picture, signalling a destination (wohin?), so an takes the accusative die Wand, not the dative der Wand.',
     },
     {
       id: 'ch36-ex-78',
@@ -1516,7 +1749,8 @@ export const chapter036: ChapterDefinition = {
       tokens: ['Das', 'Bild', 'hängt', 'an', 'die', 'Wand', '.'],
       errorTokenIndex: 4,
       correction: 'der',
-      explanation: 'hängt (intransitive) describes where the picture already is (wo?), so an takes the dative der Wand, not the accusative die Wand.',
+      explanation:
+        'hängt (intransitive) describes where the picture already is (wo?), so an takes the dative der Wand, not the accusative die Wand.',
     },
     {
       id: 'ch36-ex-79',
@@ -1530,7 +1764,8 @@ export const chapter036: ChapterDefinition = {
       tokens: ['Er', 'stellt', 'den', 'Stuhl', 'neben', 'dem', 'Schrank', '.'],
       errorTokenIndex: 5,
       correction: 'den',
-      explanation: 'stellen describes placing the chair in a new spot (wohin?), so neben takes the accusative den Schrank, not the dative dem Schrank.',
+      explanation:
+        'stellen describes placing the chair in a new spot (wohin?), so neben takes the accusative den Schrank, not the dative dem Schrank.',
     },
     {
       id: 'ch36-ex-80',
@@ -1544,7 +1779,8 @@ export const chapter036: ChapterDefinition = {
       tokens: ['Der', 'Stuhl', 'steht', 'neben', 'den', 'Schrank', '.'],
       errorTokenIndex: 4,
       correction: 'dem',
-      explanation: 'stehen is a static verb (wo?), so neben takes the dative dem Schrank, not the accusative den Schrank.',
+      explanation:
+        'stehen is a static verb (wo?), so neben takes the dative dem Schrank, not the accusative den Schrank.',
     },
     {
       id: 'ch36-ex-81',
@@ -1558,7 +1794,8 @@ export const chapter036: ChapterDefinition = {
       tokens: ['Die', 'Katze', 'springt', 'auf', 'dem', 'Sofa', '.'],
       errorTokenIndex: 4,
       correction: 'das',
-      explanation: 'springen describes movement toward a destination (wohin?), so auf takes the accusative das Sofa, not the dative dem Sofa.',
+      explanation:
+        'springen describes movement toward a destination (wohin?), so auf takes the accusative das Sofa, not the dative dem Sofa.',
     },
     {
       id: 'ch36-ex-82',
@@ -1572,7 +1809,8 @@ export const chapter036: ChapterDefinition = {
       tokens: ['Der', 'Ball', 'liegt', 'unter', 'den', 'Stuhl', '.'],
       errorTokenIndex: 4,
       correction: 'dem',
-      explanation: 'liegen is a static verb (wo?), so unter takes the dative dem Stuhl, not the accusative den Stuhl.',
+      explanation:
+        'liegen is a static verb (wo?), so unter takes the dative dem Stuhl, not the accusative den Stuhl.',
     },
     {
       id: 'ch36-ex-83',
@@ -1581,7 +1819,8 @@ export const chapter036: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['word-order', 'dative', 'auf'],
-      instruction: 'Put the words in the correct order to form a sentence describing a location (wo?).',
+      instruction:
+        'Put the words in the correct order to form a sentence describing a location (wo?).',
       prompt: 'Order the words to describe where the key is.',
       segments: [
         { id: 'seg1', text: 'Der' },
@@ -1591,7 +1830,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'seg5', text: 'dem' },
         { id: 'seg6', text: 'Tisch.' },
       ],
-      explanation: 'liegt is static (wo?), so auf takes the dative dem Tisch: Der Schlüssel liegt auf dem Tisch.',
+      explanation:
+        'liegt is static (wo?), so auf takes the dative dem Tisch: Der Schlüssel liegt auf dem Tisch.',
     },
     {
       id: 'ch36-ex-84',
@@ -1600,7 +1840,8 @@ export const chapter036: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['word-order', 'accusative', 'auf'],
-      instruction: 'Put the words in the correct order to form a sentence describing a destination (wohin?).',
+      instruction:
+        'Put the words in the correct order to form a sentence describing a destination (wohin?).',
       prompt: 'Order the words to describe where the vase is being placed.',
       segments: [
         { id: 'seg1', text: 'Ich' },
@@ -1611,7 +1852,8 @@ export const chapter036: ChapterDefinition = {
         { id: 'seg6', text: 'den' },
         { id: 'seg7', text: 'Tisch.' },
       ],
-      explanation: 'stelle signals a destination (wohin?), so auf takes the accusative den Tisch: Ich stelle die Vase auf den Tisch.',
+      explanation:
+        'stelle signals a destination (wohin?), so auf takes the accusative den Tisch: Ich stelle die Vase auf den Tisch.',
     },
   ],
 };

@@ -18,7 +18,7 @@ import {
   useSettingsStore,
   type SettingsToggle,
 } from '../features/settings/settingsStore';
-import type { Theme } from '../schemas/progressSchema';
+import { DAILY_GOAL_CHOICES, type Theme } from '../schemas/progressSchema';
 
 interface ToggleDefinition {
   key: SettingsToggle;
@@ -111,6 +111,7 @@ export function SettingsPage() {
       defaultAnswerMode: settings.defaultAnswerMode,
       theme: settings.theme,
       pronunciationAudio: settings.pronunciationAudio,
+      dailyGoal: settings.dailyGoal,
     });
 
     const url = URL.createObjectURL(
@@ -188,6 +189,37 @@ export function SettingsPage() {
         </div>
       </Card>
 
+      <Card title="Daily goal" titleLevel={2}>
+        <div className="setting-row">
+          <div id="setting-goal-label">
+            <strong>Exercises per day</strong>
+            <br />
+            <span className="text-sm text-muted">
+              Shown on the dashboard as today&rsquo;s progress. Turn it off if you would
+              rather not have a target.
+            </span>
+          </div>
+          <span
+            className="segmented"
+            role="radiogroup"
+            aria-labelledby="setting-goal-label"
+          >
+            {DAILY_GOAL_CHOICES.map((choice) => (
+              <label className="segmented__option" key={choice}>
+                <input
+                  type="radio"
+                  name="dailyGoal"
+                  value={choice}
+                  checked={settings.dailyGoal === choice}
+                  onChange={() => settings.setDailyGoal(choice)}
+                />
+                <span>{choice === 0 ? 'Off' : choice}</span>
+              </label>
+            ))}
+          </span>
+        </div>
+      </Card>
+
       <Card title="Practice" titleLevel={2}>
         <div>
           {TOGGLES.map((toggle) => (
@@ -242,8 +274,8 @@ export function SettingsPage() {
         <p>
           Progress, review dates and settings are saved in this browser using
           localStorage, and nothing is sent anywhere. That also means clearing your
-          browser data — or studying in a private window — removes them for good. Export
-          a backup to keep a copy, or to move your progress to another browser.
+          browser data — or studying in a private window — removes them for good. Export a
+          backup to keep a copy, or to move your progress to another browser.
         </p>
         <div className="row">
           <Button variant="secondary" onClick={handleExport}>

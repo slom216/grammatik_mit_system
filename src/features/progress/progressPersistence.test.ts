@@ -13,7 +13,7 @@ import {
 import {
   PROGRESS_SCHEMA_VERSION,
   persistedSettingsV1Schema,
-  type PersistedProgressV1,
+  type PersistedProgressV2,
 } from '../../schemas/progressSchema';
 
 function memoryStorage(initial: Record<string, string> = {}): StorageLike {
@@ -29,7 +29,7 @@ function memoryStorage(initial: Record<string, string> = {}): StorageLike {
   };
 }
 
-const sampleProgress: PersistedProgressV1 = {
+const sampleProgress: PersistedProgressV2 = {
   schemaVersion: PROGRESS_SCHEMA_VERSION,
   chapters: {
     3: {
@@ -48,6 +48,8 @@ const sampleProgress: PersistedProgressV1 = {
     'demo-ex-01': {
       exerciseId: 'demo-ex-01',
       chapterNumber: 3,
+      grammarFocus: [],
+      hasBeenWrong: true,
       timesAnswered: 2,
       timesCorrect: 1,
       timesIncorrect: 1,
@@ -56,6 +58,7 @@ const sampleProgress: PersistedProgressV1 = {
       dueAt: '2026-03-04T10:00:00.000Z',
     },
   },
+  answersByDay: { '2026-03-03': 2 },
   lastOpenedChapter: 3,
 };
 
@@ -127,8 +130,9 @@ describe('migrateProgress', () => {
       schemaVersion: 1,
     });
     try {
+      // Chains through the real 1 → 2 migration on top of the stubbed 0 → 1.
       const migrated = migrateProgress({ ...sampleProgress, schemaVersion: 0 });
-      expect(migrated?.schemaVersion).toBe(1);
+      expect(migrated?.schemaVersion).toBe(PROGRESS_SCHEMA_VERSION);
       expect(migrated?.chapters[3]?.status).toBe('mastered');
     } finally {
       delete progressMigrations[0];
@@ -138,6 +142,109 @@ describe('migrateProgress', () => {
   it('rejects values that are not objects', () => {
     expect(migrateProgress(null)).toBeNull();
     expect(migrateProgress('progress')).toBeNull();
+  });
+});
+
+describe('migrateProgress: v1 → v2', () => {
+  /** A v1 payload: no `answersByDay`, and no `grammarFocus` on history entries. */
+  const v1Progress = {
+    schemaVersion: 1,
+    chapters: {
+      3: {
+        chapterNumber: 3,
+        status: 'inProgress',
+        bestScorePercent: 50,
+        latestScorePercent: 50,
+        firstAttemptAccuracy: 50,
+        answeredCount: 2,
+        correctTextInputs: 0,
+        attempts: 1,
+        bookmarked: false,
+      },
+    },
+    exerciseHistory: {
+      'demo-ex-01': {
+        exerciseId: 'demo-ex-01',
+        chapterNumber: 3,
+        timesAnswered: 1,
+        timesCorrect: 0,
+        timesIncorrect: 1,
+        consecutiveCorrect: 0,
+        stage: 'learning',
+        lastAnsweredAt: new Date(2026, 2, 9, 8, 0).toISOString(),
+      },
+      'demo-ex-02': {
+        exerciseId: 'demo-ex-02',
+        chapterNumber: 3,
+        timesAnswered: 1,
+        timesCorrect: 1,
+        timesIncorrect: 0,
+        consecutiveCorrect: 1,
+        stage: 'stable',
+        lastAnsweredAt: new Date(2026, 2, 10, 8, 0).toISOString(),
+      },
+      'demo-ex-03': {
+        exerciseId: 'demo-ex-03',
+        chapterNumber: 3,
+        timesAnswered: 0,
+        timesCorrect: 0,
+        timesIncorrect: 0,
+        consecutiveCorrect: 0,
+        stage: 'learning',
+      },
+    },
+  };
+
+  it('upgrades a v1 payload instead of discarding it', () => {
+    const migrated = migrateProgress(v1Progress);
+
+    expect(migrated).not.toBeNull();
+    expect(migrated?.schemaVersion).toBe(PROGRESS_SCHEMA_VERSION);
+    expect(migrated?.chapters[3]?.answeredCount).toBe(2);
+    expect(Object.keys(migrated?.exerciseHistory ?? {})).toHaveLength(3);
+  });
+
+  it('seeds the day log from the last answer of each exercise', () => {
+    const migrated = migrateProgress(v1Progress);
+
+    // One exercise answered on the 9th, one on the 10th; the third was never
+    // answered and contributes no day.
+    expect(migrated?.answersByDay).toEqual({ '2026-03-09': 1, '2026-03-10': 1 });
+  });
+
+  it('gives history entries an empty grammar focus to fill in later', () => {
+    const migrated = migrateProgress(v1Progress);
+
+    expect(migrated?.exerciseHistory['demo-ex-01']?.grammarFocus).toEqual([]);
+  });
+
+  it('recovers which exercises have been answered wrongly', () => {
+    const migrated = migrateProgress(v1Progress);
+
+    // ex-01 has timesIncorrect 1; ex-02 has a clean record.
+    expect(migrated?.exerciseHistory['demo-ex-01']?.hasBeenWrong).toBe(true);
+    expect(migrated?.exerciseHistory['demo-ex-02']?.hasBeenWrong).toBe(false);
+  });
+
+  it('treats a second-attempt correction as having been wrong', () => {
+    const migrated = migrateProgress({
+      ...v1Progress,
+      exerciseHistory: {
+        'demo-ex-04': {
+          exerciseId: 'demo-ex-04',
+          chapterNumber: 3,
+          timesAnswered: 1,
+          timesCorrect: 1,
+          timesIncorrect: 0,
+          consecutiveCorrect: 1,
+          stage: 'review1',
+          lastOutcome: 'correctSecondAttempt',
+          lastAnsweredAt: new Date(2026, 2, 10, 8, 0).toISOString(),
+        },
+      },
+    });
+
+    expect(migrated?.exerciseHistory['demo-ex-04']?.hasBeenWrong).toBe(true);
   });
 });
 
@@ -157,6 +264,7 @@ describe('createJsonStore', () => {
       defaultAnswerMode: 'normalized',
       theme: 'system',
       pronunciationAudio: true,
+      dailyGoal: 20,
     });
     expect(store.read()?.shuffleOptions).toBe(false);
 

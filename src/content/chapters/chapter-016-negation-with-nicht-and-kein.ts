@@ -83,7 +83,8 @@ export const chapter016: ChapterDefinition = {
         german: 'Ich verstehe das nicht.',
         english: 'I don’t understand that.',
         highlight: ['nicht'],
-        explanation: 'nicht negates the verb verstehe — a general, whole-sentence negation.',
+        explanation:
+          'nicht negates the verb verstehe — a general, whole-sentence negation.',
       },
       {
         german: 'Der Kaffee ist nicht heiß.',
@@ -107,13 +108,15 @@ export const chapter016: ChapterDefinition = {
         german: 'Ich mag den Film nicht.',
         english: 'I don’t like the film.',
         highlight: ['den Film nicht'],
-        explanation: 'den Film already has a definite article, so kein cannot be used here — only nicht.',
+        explanation:
+          'den Film already has a definite article, so kein cannot be used here — only nicht.',
       },
       {
         german: 'Das ist nicht mein Fahrrad.',
         english: 'That is not my bicycle.',
         highlight: ['nicht mein Fahrrad'],
-        explanation: 'kein cannot combine with a possessive like mein, so nicht is used instead.',
+        explanation:
+          'kein cannot combine with a possessive like mein, so nicht is used instead.',
       },
       {
         german: 'Ich habe keinen Hund.',
@@ -125,41 +128,48 @@ export const chapter016: ChapterDefinition = {
         german: 'Sie trinkt keinen Kaffee.',
         english: 'She doesn’t drink coffee.',
         highlight: ['keinen Kaffee'],
-        explanation: 'Kaffee is masculine and stands in the accusative, so kein becomes keinen.',
+        explanation:
+          'Kaffee is masculine and stands in the accusative, so kein becomes keinen.',
       },
       {
         german: 'Wir haben heute keine Zeit.',
         english: 'We don’t have time today.',
         highlight: ['keine Zeit'],
-        explanation: 'Zeit is feminine, so kein becomes keine both in the nominative and the accusative.',
+        explanation:
+          'Zeit is feminine, so kein becomes keine both in the nominative and the accusative.',
       },
       {
         german: 'Er kommt nicht mit dem Auto, sondern mit dem Bus.',
         english: 'He is not coming by car, but by bus.',
         highlight: ['nicht mit dem Auto'],
-        explanation: 'nicht stands directly before the phrase it negates (mit dem Auto), not at the end of the sentence, because only that part is being denied and corrected with sondern.',
+        explanation:
+          'nicht stands directly before the phrase it negates (mit dem Auto), not at the end of the sentence, because only that part is being denied and corrected with sondern.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich habe nicht ein Auto.',
         correct: 'Ich habe kein Auto.',
-        explanation: 'A noun with the indefinite article ein is negated by replacing ein with kein, not by adding nicht in front of it.',
+        explanation:
+          'A noun with the indefinite article ein is negated by replacing ein with kein, not by adding nicht in front of it.',
       },
       {
         incorrect: 'Ich habe ein keinen Bruder.',
         correct: 'Ich habe keinen Bruder.',
-        explanation: 'kein already takes the place of the indefinite article — ein and kein are never used together.',
+        explanation:
+          'kein already takes the place of the indefinite article — ein and kein are never used together.',
       },
       {
         incorrect: 'Das ist keine mein Auto.',
         correct: 'Das ist nicht mein Auto.',
-        explanation: 'kein cannot combine with a possessive like mein; a noun that already has a possessive determiner is negated with nicht.',
+        explanation:
+          'kein cannot combine with a possessive like mein; a noun that already has a possessive determiner is negated with nicht.',
       },
       {
         incorrect: 'Ich kenne nicht Anna.',
         correct: 'Ich kenne Anna nicht.',
-        explanation: 'For a whole-sentence negation of a name, nicht follows the object rather than standing directly in front of it.',
+        explanation:
+          'For a whole-sentence negation of a name, nicht follows the object rather than standing directly in front of it.',
       },
     ],
     remember: [
@@ -192,7 +202,8 @@ export const chapter016: ChapterDefinition = {
         { id: 'd', text: 'keinen' },
       ],
       correctOptionId: 'a',
-      explanation: 'nicht negates the verb verstehe, so this is a whole-sentence negation, not a noun negation.',
+      explanation:
+        'nicht negates the verb verstehe, so this is a whole-sentence negation, not a noun negation.',
     },
     {
       id: 'ch16-ex-02',
@@ -210,7 +221,8 @@ export const chapter016: ChapterDefinition = {
         { id: 'd', text: 'keinen' },
       ],
       correctOptionId: 'a',
-      explanation: 'heiß is an adjective, and adjectives are negated with nicht, never kein.',
+      explanation:
+        'heiß is an adjective, and adjectives are negated with nicht, never kein.',
     },
     {
       id: 'ch16-ex-03',
@@ -228,7 +240,8 @@ export const chapter016: ChapterDefinition = {
         { id: 'd', text: 'keinen' },
       ],
       correctOptionId: 'a',
-      explanation: 'Milch has no article at all in the affirmative sentence, so it is negated with kein; Milch is feminine, so kein becomes keine.',
+      explanation:
+        'Milch has no article at all in the affirmative sentence, so it is negated with kein; Milch is feminine, so kein becomes keine.',
     },
     {
       id: 'ch16-ex-04',
@@ -246,7 +259,8 @@ export const chapter016: ChapterDefinition = {
         { id: 'd', text: 'keine' },
       ],
       correctOptionId: 'a',
-      explanation: 'Tom is a proper name. Names are always negated with nicht, never kein.',
+      explanation:
+        'Tom is a proper name. Names are always negated with nicht, never kein.',
     },
     {
       id: 'ch16-ex-05',
@@ -264,7 +278,8 @@ export const chapter016: ChapterDefinition = {
         { id: 'd', text: 'keine' },
       ],
       correctOptionId: 'a',
-      explanation: 'den Film already has the definite article der, and kein can never combine with a definite article — only nicht works here.',
+      explanation:
+        'den Film already has the definite article der, and kein can never combine with a definite article — only nicht works here.',
     },
     {
       id: 'ch16-ex-06',
@@ -282,7 +297,8 @@ export const chapter016: ChapterDefinition = {
         { id: 'd', text: 'keinen' },
       ],
       correctOptionId: 'a',
-      explanation: 'mein is a possessive determiner, and kein cannot combine with a possessive, so nicht is used instead.',
+      explanation:
+        'mein is a possessive determiner, and kein cannot combine with a possessive, so nicht is used instead.',
     },
     {
       id: 'ch16-ex-07',
@@ -300,7 +316,8 @@ export const chapter016: ChapterDefinition = {
         { id: 'd', text: 'keinem' },
       ],
       correctOptionId: 'c',
-      explanation: 'Bruder is masculine and is the accusative object of habe, so kein takes the accusative masculine ending: keinen.',
+      explanation:
+        'Bruder is masculine and is the accusative object of habe, so kein takes the accusative masculine ending: keinen.',
     },
     {
       id: 'ch16-ex-08',
@@ -318,7 +335,8 @@ export const chapter016: ChapterDefinition = {
         { id: 'd', text: 'keinem' },
       ],
       correctOptionId: 'b',
-      explanation: 'Schwester is feminine, and feminine nouns take keine in both the nominative and the accusative.',
+      explanation:
+        'Schwester is feminine, and feminine nouns take keine in both the nominative and the accusative.',
     },
     {
       id: 'ch16-ex-09',
@@ -336,7 +354,8 @@ export const chapter016: ChapterDefinition = {
         { id: 'd', text: 'keinem' },
       ],
       correctOptionId: 'a',
-      explanation: 'Fehler (der Fehler) is masculine and stands in the nominative here, so kein keeps its unchanged base form.',
+      explanation:
+        'Fehler (der Fehler) is masculine and stands in the nominative here, so kein keeps its unchanged base form.',
     },
     {
       id: 'ch16-ex-10',
@@ -354,7 +373,8 @@ export const chapter016: ChapterDefinition = {
         { id: 'd', text: 'keinem' },
       ],
       correctOptionId: 'a',
-      explanation: 'Auto is neuter, and neuter nouns keep the unchanged form kein in both the nominative and the accusative.',
+      explanation:
+        'Auto is neuter, and neuter nouns keep the unchanged form kein in both the nominative and the accusative.',
     },
     {
       id: 'ch16-ex-11',
@@ -364,7 +384,8 @@ export const chapter016: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['negation', 'nicht', 'placement', 'narrow-negation'],
       instruction: 'Read the sentence and decide which part nicht negates.',
-      prompt: 'Er kommt nicht mit dem Auto, sondern mit dem Bus. — What does nicht negate here?',
+      prompt:
+        'Er kommt nicht mit dem Auto, sondern mit dem Bus. — What does nicht negate here?',
       options: [
         { id: 'a', text: 'mit dem Auto' },
         { id: 'b', text: 'kommt' },
@@ -372,7 +393,8 @@ export const chapter016: ChapterDefinition = {
         { id: 'd', text: 'mit dem Bus' },
       ],
       correctOptionId: 'a',
-      explanation: 'nicht stands directly before mit dem Auto and is corrected by sondern mit dem Bus, so it negates only that phrase, not the whole sentence.',
+      explanation:
+        'nicht stands directly before mit dem Auto and is corrected by sondern mit dem Bus, so it negates only that phrase, not the whole sentence.',
     },
     {
       id: 'ch16-ex-12',
@@ -381,7 +403,8 @@ export const chapter016: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['negation', 'nicht', 'placement', 'whole-sentence-negation'],
-      instruction: 'Choose the sentence in which nicht negates the whole sentence rather than just one part.',
+      instruction:
+        'Choose the sentence in which nicht negates the whole sentence rather than just one part.',
       prompt: 'Which sentence means that she simply is not singing at all today?',
       options: [
         { id: 'a', text: 'Sie singt nicht gut.' },
@@ -390,7 +413,8 @@ export const chapter016: ChapterDefinition = {
         { id: 'd', text: 'Sie singt nicht heute, sondern morgen.' },
       ],
       correctOptionId: 'b',
-      explanation: 'In Sie singt heute nicht, nicht stands at the end of the clause and negates the whole action, not just one word — she is not singing at all today.',
+      explanation:
+        'In Sie singt heute nicht, nicht stands at the end of the clause and negates the whole action, not just one word — she is not singing at all today.',
     },
     {
       id: 'ch16-ex-13',
@@ -405,7 +429,8 @@ export const chapter016: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'kein-form',
       maxLength: 12,
-      explanation: 'Kaffee is masculine and is the accusative object of trinke, so kein becomes keinen.',
+      explanation:
+        'Kaffee is masculine and is the accusative object of trinke, so kein becomes keinen.',
     },
     {
       id: 'ch16-ex-14',
@@ -420,7 +445,8 @@ export const chapter016: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'kein-form',
       maxLength: 12,
-      explanation: 'Idee is feminine, so kein takes the feminine ending keine in the accusative.',
+      explanation:
+        'Idee is feminine, so kein takes the feminine ending keine in the accusative.',
     },
     {
       id: 'ch16-ex-15',
@@ -435,7 +461,8 @@ export const chapter016: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'kein-form',
       maxLength: 12,
-      explanation: 'Problem is neuter and stands in the nominative, so kein keeps its unchanged base form.',
+      explanation:
+        'Problem is neuter and stands in the nominative, so kein keeps its unchanged base form.',
     },
     {
       id: 'ch16-ex-16',
@@ -450,7 +477,8 @@ export const chapter016: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'kein-form',
       maxLength: 12,
-      explanation: 'Freunde is plural, and kein uses keine for all plural nouns regardless of gender.',
+      explanation:
+        'Freunde is plural, and kein uses keine for all plural nouns regardless of gender.',
     },
     {
       id: 'ch16-ex-17',
@@ -459,13 +487,15 @@ export const chapter016: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['negation', 'kein', 'no-article-noun'],
-      instruction: 'Fill in nicht or the correct form of kein. Capitalisation is not checked.',
+      instruction:
+        'Fill in nicht or the correct form of kein. Capitalisation is not checked.',
       prompt: 'Ich habe ___ Geld.',
       acceptedAnswers: ['kein'],
       answerMode: 'caseInsensitive',
       placeholder: 'nicht / kein-form',
       maxLength: 12,
-      explanation: 'Geld is a noun with no article, so it is negated with kein; Geld is neuter, so kein keeps its base form.',
+      explanation:
+        'Geld is a noun with no article, so it is negated with kein; Geld is neuter, so kein keeps its base form.',
     },
     {
       id: 'ch16-ex-18',
@@ -474,13 +504,15 @@ export const chapter016: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['negation', 'nicht', 'adjective'],
-      instruction: 'Fill in nicht or the correct form of kein. Capitalisation is not checked.',
+      instruction:
+        'Fill in nicht or the correct form of kein. Capitalisation is not checked.',
       prompt: 'Das Wetter ist heute ___ schön.',
       acceptedAnswers: ['nicht'],
       answerMode: 'caseInsensitive',
       placeholder: 'nicht / kein-form',
       maxLength: 12,
-      explanation: 'schön is an adjective, and adjectives are always negated with nicht, not kein.',
+      explanation:
+        'schön is an adjective, and adjectives are always negated with nicht, not kein.',
     },
     {
       id: 'ch16-ex-19',
@@ -489,13 +521,15 @@ export const chapter016: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['negation', 'kein', 'accusative', 'masculine'],
-      instruction: 'Rewrite the sentence in the negative form using kein. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence in the negative form using kein. Capitalisation and punctuation are checked.',
       prompt: 'Ich habe einen Hund.',
       acceptedAnswers: ['Ich habe keinen Hund.'],
       answerMode: 'normalized',
       placeholder: 'Ich habe ...',
       maxLength: 40,
-      explanation: 'The indefinite article einen is replaced by keinen (Hund is masculine, accusative), giving Ich habe keinen Hund.',
+      explanation:
+        'The indefinite article einen is replaced by keinen (Hund is masculine, accusative), giving Ich habe keinen Hund.',
     },
     {
       id: 'ch16-ex-20',
@@ -504,13 +538,15 @@ export const chapter016: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['negation', 'kein', 'accusative', 'masculine'],
-      instruction: 'Rewrite the sentence in the negative form using kein. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence in the negative form using kein. Capitalisation and punctuation are checked.',
       prompt: 'Sie trinkt Kaffee.',
       acceptedAnswers: ['Sie trinkt keinen Kaffee.'],
       answerMode: 'normalized',
       placeholder: 'Sie trinkt ...',
       maxLength: 40,
-      explanation: 'Kaffee has no article in the affirmative sentence, so it is negated with kein; Kaffee is masculine and accusative, so kein becomes keinen.',
+      explanation:
+        'Kaffee has no article in the affirmative sentence, so it is negated with kein; Kaffee is masculine and accusative, so kein becomes keinen.',
     },
     {
       id: 'ch16-ex-21',
@@ -519,13 +555,15 @@ export const chapter016: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['negation', 'nicht', 'adjective'],
-      instruction: 'Rewrite the sentence in the negative form using nicht. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence in the negative form using nicht. Capitalisation and punctuation are checked.',
       prompt: 'Das Auto ist neu.',
       acceptedAnswers: ['Das Auto ist nicht neu.'],
       answerMode: 'normalized',
       placeholder: 'Das Auto ist ...',
       maxLength: 40,
-      explanation: 'neu is an adjective, so it is negated with nicht, placed directly before it: Das Auto ist nicht neu.',
+      explanation:
+        'neu is an adjective, so it is negated with nicht, placed directly before it: Das Auto ist nicht neu.',
     },
     {
       id: 'ch16-ex-22',
@@ -534,13 +572,15 @@ export const chapter016: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['negation', 'nicht', 'definite-article', 'placement'],
-      instruction: 'Rewrite the sentence in the negative form using nicht. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence in the negative form using nicht. Capitalisation and punctuation are checked.',
       prompt: 'Ich kenne den Mann.',
       acceptedAnswers: ['Ich kenne den Mann nicht.'],
       answerMode: 'normalized',
       placeholder: 'Ich kenne ...',
       maxLength: 40,
-      explanation: 'den Mann already has a definite article, so kein cannot be used; nicht negates the whole sentence and stands at the end, after the object: Ich kenne den Mann nicht.',
+      explanation:
+        'den Mann already has a definite article, so kein cannot be used; nicht negates the whole sentence and stands at the end, after the object: Ich kenne den Mann nicht.',
     },
     {
       id: 'ch16-ex-23',
@@ -556,7 +596,8 @@ export const chapter016: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Er will ...',
       maxLength: 45,
-      explanation: 'To negate only das rote Auto (not the wanting itself), nicht stands directly before that phrase: Er will nicht das rote Auto.',
+      explanation:
+        'To negate only das rote Auto (not the wanting itself), nicht stands directly before that phrase: Er will nicht das rote Auto.',
     },
     {
       id: 'ch16-ex-24',
@@ -572,7 +613,8 @@ export const chapter016: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Wir haben ...',
       maxLength: 45,
-      explanation: 'Zeit has no article and is feminine, so it is negated with keine: Wir haben heute keine Zeit.',
+      explanation:
+        'Zeit has no article and is feminine, so it is negated with keine: Wir haben heute keine Zeit.',
     },
     {
       id: 'ch16-ex-25',
@@ -586,7 +628,8 @@ export const chapter016: ChapterDefinition = {
       tokens: ['Ich', 'habe', 'nicht', 'Auto.'],
       errorTokenIndex: 2,
       correction: 'kein',
-      explanation: 'Auto has no article in the affirmative sentence, so it must be negated with kein (kein Auto), not nicht.',
+      explanation:
+        'Auto has no article in the affirmative sentence, so it must be negated with kein (kein Auto), not nicht.',
     },
     {
       id: 'ch16-ex-26',
@@ -594,13 +637,20 @@ export const chapter016: ChapterDefinition = {
       order: 26,
       type: 'errorSpotting',
       level: 'recognition',
-      grammarFocus: ['negation', 'kein-declension', 'accusative', 'masculine', 'error-correction'],
+      grammarFocus: [
+        'negation',
+        'kein-declension',
+        'accusative',
+        'masculine',
+        'error-correction',
+      ],
       instruction: 'Find the token that uses the wrong negation word, and correct it.',
       prompt: 'Jemand beschreibt seine Trinkgewohnheiten. Etwas stimmt nicht.',
       tokens: ['Er', 'trinkt', 'nicht', 'Kaffee.'],
       errorTokenIndex: 2,
       correction: 'keinen',
-      explanation: 'Kaffee has no article, so it needs kein rather than nicht; Kaffee is masculine and accusative here, so kein becomes keinen.',
+      explanation:
+        'Kaffee has no article, so it needs kein rather than nicht; Kaffee is masculine and accusative here, so kein becomes keinen.',
     },
     {
       id: 'ch16-ex-27',
@@ -614,7 +664,8 @@ export const chapter016: ChapterDefinition = {
       tokens: ['Wir', 'haben', 'kein', 'Zeit.'],
       errorTokenIndex: 2,
       correction: 'keine',
-      explanation: 'Zeit is feminine, so kein must take the feminine ending keine, not the unchanged base form kein.',
+      explanation:
+        'Zeit is feminine, so kein must take the feminine ending keine, not the unchanged base form kein.',
     },
     {
       id: 'ch16-ex-28',
@@ -628,7 +679,8 @@ export const chapter016: ChapterDefinition = {
       tokens: ['Ich', 'kenne', 'kein', 'Anna.'],
       errorTokenIndex: 2,
       correction: 'nicht',
-      explanation: 'Anna is a proper name, and proper names are always negated with nicht — kein can never combine with a name.',
+      explanation:
+        'Anna is a proper name, and proper names are always negated with nicht — kein can never combine with a name.',
     },
     {
       id: 'ch16-ex-29',
@@ -642,7 +694,8 @@ export const chapter016: ChapterDefinition = {
       tokens: ['Das', 'ist', 'kein', 'mein', 'Auto.'],
       errorTokenIndex: 2,
       correction: 'nicht',
-      explanation: 'mein is a possessive, and kein can never combine with a possessive determiner — nicht is required instead.',
+      explanation:
+        'mein is a possessive, and kein can never combine with a possessive determiner — nicht is required instead.',
     },
     {
       id: 'ch16-ex-30',
@@ -652,11 +705,13 @@ export const chapter016: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['negation', 'nicht', 'definite-article', 'error-correction'],
       instruction: 'Find the token that uses the wrong negation word, and correct it.',
-      prompt: 'Jemand sagt, dass ihm ein bestimmter Film nicht gefällt. Etwas stimmt nicht.',
+      prompt:
+        'Jemand sagt, dass ihm ein bestimmter Film nicht gefällt. Etwas stimmt nicht.',
       tokens: ['Ich', 'mag', 'kein', 'den', 'Film.'],
       errorTokenIndex: 2,
       correction: 'nicht',
-      explanation: 'den Film already has a definite article, so kein cannot be used — only nicht is possible before a noun with der/die/das.',
+      explanation:
+        'den Film already has a definite article, so kein cannot be used — only nicht is possible before a noun with der/die/das.',
     },
     {
       id: 'ch16-ex-31',
@@ -670,7 +725,8 @@ export const chapter016: ChapterDefinition = {
       tokens: ['Ich', 'habe', 'kein', 'Bruder.'],
       errorTokenIndex: 2,
       correction: 'keinen',
-      explanation: 'Bruder is masculine and is the accusative object of habe, so kein must take the accusative masculine ending keinen.',
+      explanation:
+        'Bruder is masculine and is the accusative object of habe, so kein must take the accusative masculine ending keinen.',
     },
     {
       id: 'ch16-ex-32',
@@ -684,7 +740,8 @@ export const chapter016: ChapterDefinition = {
       tokens: ['Sie', 'hat', 'kein', 'Schwester.'],
       errorTokenIndex: 2,
       correction: 'keine',
-      explanation: 'Schwester is feminine, so kein must take the feminine ending keine in both the nominative and the accusative.',
+      explanation:
+        'Schwester is feminine, so kein must take the feminine ending keine in both the nominative and the accusative.',
     },
     {
       id: 'ch16-ex-33',
@@ -698,7 +755,8 @@ export const chapter016: ChapterDefinition = {
       tokens: ['Das', 'Auto', 'ist', 'kein', 'neu.'],
       errorTokenIndex: 3,
       correction: 'nicht',
-      explanation: 'neu is an adjective, and adjectives are always negated with nicht — kein only negates nouns.',
+      explanation:
+        'neu is an adjective, and adjectives are always negated with nicht — kein only negates nouns.',
     },
     {
       id: 'ch16-ex-34',
@@ -712,7 +770,8 @@ export const chapter016: ChapterDefinition = {
       templateParts: ['Ich habe ', ' Katze.'],
       slots: [{ id: 'ch16-ex34-slot1', correctWord: 'keine' }],
       wordBank: ['keine', 'kein', 'keinen', 'nicht'],
-      explanation: 'Katze is feminine and has no article in the affirmative sentence, so kein becomes keine.',
+      explanation:
+        'Katze is feminine and has no article in the affirmative sentence, so kein becomes keine.',
     },
     {
       id: 'ch16-ex-35',
@@ -726,7 +785,8 @@ export const chapter016: ChapterDefinition = {
       templateParts: ['Er trinkt ', ' Tee.'],
       slots: [{ id: 'ch16-ex35-slot1', correctWord: 'keinen' }],
       wordBank: ['keinen', 'keine', 'kein', 'nicht'],
-      explanation: 'Tee has no article and is masculine, standing in the accusative, so kein becomes keinen.',
+      explanation:
+        'Tee has no article and is masculine, standing in the accusative, so kein becomes keinen.',
     },
     {
       id: 'ch16-ex-36',
@@ -740,7 +800,8 @@ export const chapter016: ChapterDefinition = {
       templateParts: ['Das ist ', ' Handy.'],
       slots: [{ id: 'ch16-ex36-slot1', correctWord: 'kein' }],
       wordBank: ['kein', 'keine', 'keinen', 'nicht'],
-      explanation: 'Handy is neuter and stands in the nominative, so kein keeps its unchanged base form.',
+      explanation:
+        'Handy is neuter and stands in the nominative, so kein keeps its unchanged base form.',
     },
     {
       id: 'ch16-ex-37',
@@ -754,7 +815,8 @@ export const chapter016: ChapterDefinition = {
       templateParts: ['Ich mag ', ' Suppe.'],
       slots: [{ id: 'ch16-ex37-slot1', correctWord: 'keine' }],
       wordBank: ['keine', 'kein', 'keinen', 'nicht'],
-      explanation: 'Suppe has no article and is feminine, so it is negated with keine, not nicht.',
+      explanation:
+        'Suppe has no article and is feminine, so it is negated with keine, not nicht.',
     },
     {
       id: 'ch16-ex-38',
@@ -768,7 +830,8 @@ export const chapter016: ChapterDefinition = {
       templateParts: ['Er ist heute ', ' müde.'],
       slots: [{ id: 'ch16-ex38-slot1', correctWord: 'nicht' }],
       wordBank: ['nicht', 'kein', 'keine', 'keinen'],
-      explanation: 'müde is an adjective, and adjectives are always negated with nicht, never with a form of kein.',
+      explanation:
+        'müde is an adjective, and adjectives are always negated with nicht, never with a form of kein.',
     },
     {
       id: 'ch16-ex-39',
@@ -782,7 +845,8 @@ export const chapter016: ChapterDefinition = {
       templateParts: ['Ich kenne ', ' Peter.'],
       slots: [{ id: 'ch16-ex39-slot1', correctWord: 'nicht' }],
       wordBank: ['nicht', 'kein', 'keine', 'keinen'],
-      explanation: 'Peter is a proper name, so it is negated with nicht — kein can never combine with a name.',
+      explanation:
+        'Peter is a proper name, so it is negated with nicht — kein can never combine with a name.',
     },
     {
       id: 'ch16-ex-40',
@@ -796,7 +860,8 @@ export const chapter016: ChapterDefinition = {
       templateParts: ['Wir haben ', ' Kinder.'],
       slots: [{ id: 'ch16-ex40-slot1', correctWord: 'keine' }],
       wordBank: ['keine', 'kein', 'keinen', 'nicht'],
-      explanation: 'Kinder is plural, and kein uses keine for all plural nouns regardless of gender.',
+      explanation:
+        'Kinder is plural, and kein uses keine for all plural nouns regardless of gender.',
     },
     {
       id: 'ch16-ex-41',
@@ -810,7 +875,8 @@ export const chapter016: ChapterDefinition = {
       templateParts: ['Das ist ', ' mein Buch.'],
       slots: [{ id: 'ch16-ex41-slot1', correctWord: 'nicht' }],
       wordBank: ['nicht', 'kein', 'keine', 'keinen'],
-      explanation: 'mein is a possessive determiner, and kein cannot combine with a possessive, so nicht is used instead.',
+      explanation:
+        'mein is a possessive determiner, and kein cannot combine with a possessive, so nicht is used instead.',
     },
     {
       id: 'ch16-ex-42',
@@ -828,7 +894,8 @@ export const chapter016: ChapterDefinition = {
         { id: 'd', text: 'keinen' },
       ],
       correctOptionId: 'a',
-      explanation: 'Brot has no article at all in the affirmative sentence and is neuter, so it is negated with the unchanged form kein.',
+      explanation:
+        'Brot has no article at all in the affirmative sentence and is neuter, so it is negated with the unchanged form kein.',
     },
     {
       id: 'ch16-ex-43',
@@ -846,7 +913,8 @@ export const chapter016: ChapterDefinition = {
         { id: 'd', text: 'keinen' },
       ],
       correctOptionId: 'a',
-      explanation: 'Sonne has no article and is feminine, so it is negated with kein in its feminine form: keine.',
+      explanation:
+        'Sonne has no article and is feminine, so it is negated with kein in its feminine form: keine.',
     },
     {
       id: 'ch16-ex-44',
@@ -864,7 +932,8 @@ export const chapter016: ChapterDefinition = {
         { id: 'd', text: 'keinem' },
       ],
       correctOptionId: 'c',
-      explanation: 'Tisch is masculine and is the accusative object of kaufen, so kein takes the accusative masculine ending: keinen.',
+      explanation:
+        'Tisch is masculine and is the accusative object of kaufen, so kein takes the accusative masculine ending: keinen.',
     },
     {
       id: 'ch16-ex-45',
@@ -882,7 +951,8 @@ export const chapter016: ChapterDefinition = {
         { id: 'd', text: 'keinem' },
       ],
       correctOptionId: 'a',
-      explanation: 'Kind is neuter, and neuter nouns keep the unchanged form kein in both the nominative and the accusative.',
+      explanation:
+        'Kind is neuter, and neuter nouns keep the unchanged form kein in both the nominative and the accusative.',
     },
     {
       id: 'ch16-ex-46',
@@ -891,8 +961,10 @@ export const chapter016: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['negation', 'nicht', 'placement', 'narrow-negation'],
-      instruction: 'Choose the sentence that says he is not coming by bike, implying he is coming some other way.',
-      prompt: 'Which sentence correctly expresses a narrow negation of "mit dem Fahrrad"?',
+      instruction:
+        'Choose the sentence that says he is not coming by bike, implying he is coming some other way.',
+      prompt:
+        'Which sentence correctly expresses a narrow negation of "mit dem Fahrrad"?',
       options: [
         { id: 'a', text: 'Er kommt nicht mit dem Fahrrad, sondern mit dem Zug.' },
         { id: 'b', text: 'Er kommt mit dem Fahrrad nicht.' },
@@ -900,7 +972,8 @@ export const chapter016: ChapterDefinition = {
         { id: 'd', text: 'Er kommt nicht.' },
       ],
       correctOptionId: 'a',
-      explanation: 'To negate only mit dem Fahrrad, nicht stands directly in front of that phrase, followed by the correction with sondern.',
+      explanation:
+        'To negate only mit dem Fahrrad, nicht stands directly in front of that phrase, followed by the correction with sondern.',
     },
     {
       id: 'ch16-ex-47',
@@ -918,7 +991,8 @@ export const chapter016: ChapterDefinition = {
         { id: 'd', text: 'keinen' },
       ],
       correctOptionId: 'a',
-      explanation: 'zufrieden is an adjective, and adjectives are negated with nicht, never with a form of kein.',
+      explanation:
+        'zufrieden is an adjective, and adjectives are negated with nicht, never with a form of kein.',
     },
     {
       id: 'ch16-ex-48',
@@ -936,7 +1010,8 @@ export const chapter016: ChapterDefinition = {
         { id: 'd', text: 'keinem' },
       ],
       correctOptionId: 'c',
-      explanation: 'Schlüssel is masculine and is the accusative object of habe, so kein becomes keinen.',
+      explanation:
+        'Schlüssel is masculine and is the accusative object of habe, so kein becomes keinen.',
     },
     {
       id: 'ch16-ex-49',
@@ -954,7 +1029,8 @@ export const chapter016: ChapterDefinition = {
         { id: 'd', text: 'Ich habe nicht Auto.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The indefinite article ein is simply replaced by kein — nicht is never added in front of ein, and ein and kein are never combined.',
+      explanation:
+        'The indefinite article ein is simply replaced by kein — nicht is never added in front of ein, and ein and kein are never combined.',
     },
     {
       id: 'ch16-ex-50',
@@ -969,7 +1045,8 @@ export const chapter016: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'kein-form',
       maxLength: 12,
-      explanation: 'Katze is feminine and has no article in the affirmative sentence, so kein becomes keine.',
+      explanation:
+        'Katze is feminine and has no article in the affirmative sentence, so kein becomes keine.',
     },
     {
       id: 'ch16-ex-51',
@@ -984,7 +1061,8 @@ export const chapter016: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'kein-form',
       maxLength: 12,
-      explanation: 'Buch is neuter and stands in the nominative, so kein keeps its unchanged base form.',
+      explanation:
+        'Buch is neuter and stands in the nominative, so kein keeps its unchanged base form.',
     },
     {
       id: 'ch16-ex-52',
@@ -999,7 +1077,8 @@ export const chapter016: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'kein-form',
       maxLength: 12,
-      explanation: 'Kinder is plural, and kein uses keine for all plural nouns regardless of gender.',
+      explanation:
+        'Kinder is plural, and kein uses keine for all plural nouns regardless of gender.',
     },
     {
       id: 'ch16-ex-53',
@@ -1008,13 +1087,15 @@ export const chapter016: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['negation', 'kein', 'no-article-noun', 'neuter'],
-      instruction: 'Fill in nicht or the correct form of kein. Capitalisation is not checked.',
+      instruction:
+        'Fill in nicht or the correct form of kein. Capitalisation is not checked.',
       prompt: 'Ich trinke ___ Wasser.',
       acceptedAnswers: ['kein'],
       answerMode: 'caseInsensitive',
       placeholder: 'nicht / kein-form',
       maxLength: 12,
-      explanation: 'Wasser has no article and is neuter, so it is negated with the unchanged form kein, not nicht.',
+      explanation:
+        'Wasser has no article and is neuter, so it is negated with the unchanged form kein, not nicht.',
     },
     {
       id: 'ch16-ex-54',
@@ -1023,13 +1104,15 @@ export const chapter016: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['negation', 'nicht', 'adjective'],
-      instruction: 'Fill in nicht or the correct form of kein. Capitalisation is not checked.',
+      instruction:
+        'Fill in nicht or the correct form of kein. Capitalisation is not checked.',
       prompt: 'Er ist heute ___ müde.',
       acceptedAnswers: ['nicht'],
       answerMode: 'caseInsensitive',
       placeholder: 'nicht / kein-form',
       maxLength: 12,
-      explanation: 'müde is an adjective, and adjectives are always negated with nicht, never with a form of kein.',
+      explanation:
+        'müde is an adjective, and adjectives are always negated with nicht, never with a form of kein.',
     },
     {
       id: 'ch16-ex-55',
@@ -1038,13 +1121,15 @@ export const chapter016: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['negation', 'kein', 'accusative', 'feminine'],
-      instruction: 'Rewrite the sentence in the negative form using kein. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence in the negative form using kein. Capitalisation and punctuation are checked.',
       prompt: 'Ich habe eine Schwester.',
       acceptedAnswers: ['Ich habe keine Schwester.'],
       answerMode: 'normalized',
       placeholder: 'Ich habe ...',
       maxLength: 40,
-      explanation: 'The indefinite article eine is replaced by keine (Schwester is feminine), giving Ich habe keine Schwester.',
+      explanation:
+        'The indefinite article eine is replaced by keine (Schwester is feminine), giving Ich habe keine Schwester.',
     },
     {
       id: 'ch16-ex-56',
@@ -1053,13 +1138,15 @@ export const chapter016: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['negation', 'nicht', 'proper-noun'],
-      instruction: 'Rewrite the sentence in the negative form using nicht. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence in the negative form using nicht. Capitalisation and punctuation are checked.',
       prompt: 'Er kennt Maria.',
       acceptedAnswers: ['Er kennt Maria nicht.'],
       answerMode: 'normalized',
       placeholder: 'Er kennt ...',
       maxLength: 40,
-      explanation: 'Maria is a proper name, so it is negated with nicht, placed at the end of the clause for a whole-sentence negation: Er kennt Maria nicht.',
+      explanation:
+        'Maria is a proper name, so it is negated with nicht, placed at the end of the clause for a whole-sentence negation: Er kennt Maria nicht.',
     },
     {
       id: 'ch16-ex-57',
@@ -1075,7 +1162,8 @@ export const chapter016: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Sie hat ...',
       maxLength: 45,
-      explanation: 'Handy has no article and is neuter, so kein keeps its unchanged form: Sie hat kein Handy.',
+      explanation:
+        'Handy has no article and is neuter, so kein keeps its unchanged form: Sie hat kein Handy.',
     },
   ],
 };

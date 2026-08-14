@@ -143,11 +143,17 @@ describe('validateChapter rejects invalid content', () => {
     );
   });
 
-  it('rejects fewer than 24 exercises', () => {
+  it('rejects a chapter below the exercise minimum', () => {
     const issues = validateChapter(
-      makeChapter({ exercises: makeChapter().exercises.slice(0, 23) }),
+      makeChapter({
+        exercises: makeChapter().exercises.slice(0, CONTENT_RULES.minExercises - 1),
+      }),
     );
-    expect(issues.some((issue) => issue.message.includes('at least 24'))).toBe(true);
+    expect(
+      issues.some((issue) =>
+        issue.message.includes(`at least ${CONTENT_RULES.minExercises}`),
+      ),
+    ).toBe(true);
   });
 
   it('rejects fewer than 12 multiple-choice exercises', () => {
@@ -267,6 +273,7 @@ describe('validateChapterCollection', () => {
       section: 'verbs-1' as const,
       level: 'A1' as const,
       estimatedMinutes: 20,
+      tags: ['pronouns'],
     },
     {
       number: 2,
@@ -274,6 +281,7 @@ describe('validateChapterCollection', () => {
       section: 'verbs-1' as const,
       level: 'A1' as const,
       estimatedMinutes: 20,
+      tags: ['pronouns'],
     },
   ];
 

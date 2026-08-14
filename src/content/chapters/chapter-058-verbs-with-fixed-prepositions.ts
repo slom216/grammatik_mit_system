@@ -80,7 +80,7 @@ export const chapter058: ChapterDefinition = {
         id: 'ch58-rule-06',
         heading: 'Asking about people: preposition + wen or wem',
         paragraphs: [
-          'To ask about a person inside one of these fixed phrases, simply combine the preposition with wen (if the verb\'s fixed case is accusative) or wem (if it is dative) — exactly as you learned to combine prepositions with question words in Chapter 24.',
+          "To ask about a person inside one of these fixed phrases, simply combine the preposition with wen (if the verb's fixed case is accusative) or wem (if it is dative) — exactly as you learned to combine prepositions with question words in Chapter 24.",
           'Für wen interessierst du dich? An wen denkst du? Auf wen wartest du? all use wen because interessieren für, denken an, and warten auf are fixed with the accusative. Von wem träumst du? Vor wem hast du Angst? Mit wem beschäftigst du dich gerade? all use wem because träumen von, Angst haben vor, and sich beschäftigen mit are fixed with the dative.',
         ],
       },
@@ -108,17 +108,61 @@ export const chapter058: ChapterDefinition = {
         columns: ['Verb + preposition', 'Case', 'Example'],
         columnCases: [null, 'accusative', null],
         rows: [
-          ['sich interessieren für', 'Akkusativ', 'Ich interessiere mich für Kunst. (I am interested in art.)'],
-          ['warten auf', 'Akkusativ', 'Wir warten auf den Bus. (We are waiting for the bus.)'],
-          ['sich freuen auf', 'Akkusativ', 'Ich freue mich auf die Ferien. (I am looking forward to the holidays.)'],
-          ['sich freuen über', 'Akkusativ', 'Er freut sich über das Geschenk. (He is happy about the gift.)'],
-          ['denken an', 'Akkusativ', 'Sie denkt oft an ihre Familie. (She often thinks of her family.)'],
-          ['sich erinnern an', 'Akkusativ', 'Erinnerst du dich an den Film? (Do you remember the movie?)'],
-          ['glauben an', 'Akkusativ', 'Ich glaube an das Gute im Menschen. (I believe in the good in people.)'],
-          ['sich kümmern um', 'Akkusativ', 'Wer kümmert sich um die Kinder? (Who is taking care of the children?)'],
-          ['sich verlassen auf', 'Akkusativ', 'Ich verlasse mich auf dich. (I rely on you.)'],
-          ['sich gewöhnen an', 'Akkusativ', 'Wir gewöhnen uns an das Wetter. (We are getting used to the weather.)'],
-          ['sprechen über', 'Akkusativ', 'Wir sprechen über das Projekt. (We are talking about the project.)'],
+          [
+            'sich interessieren für',
+            'Akkusativ',
+            'Ich interessiere mich für Kunst. (I am interested in art.)',
+          ],
+          [
+            'warten auf',
+            'Akkusativ',
+            'Wir warten auf den Bus. (We are waiting for the bus.)',
+          ],
+          [
+            'sich freuen auf',
+            'Akkusativ',
+            'Ich freue mich auf die Ferien. (I am looking forward to the holidays.)',
+          ],
+          [
+            'sich freuen über',
+            'Akkusativ',
+            'Er freut sich über das Geschenk. (He is happy about the gift.)',
+          ],
+          [
+            'denken an',
+            'Akkusativ',
+            'Sie denkt oft an ihre Familie. (She often thinks of her family.)',
+          ],
+          [
+            'sich erinnern an',
+            'Akkusativ',
+            'Erinnerst du dich an den Film? (Do you remember the movie?)',
+          ],
+          [
+            'glauben an',
+            'Akkusativ',
+            'Ich glaube an das Gute im Menschen. (I believe in the good in people.)',
+          ],
+          [
+            'sich kümmern um',
+            'Akkusativ',
+            'Wer kümmert sich um die Kinder? (Who is taking care of the children?)',
+          ],
+          [
+            'sich verlassen auf',
+            'Akkusativ',
+            'Ich verlasse mich auf dich. (I rely on you.)',
+          ],
+          [
+            'sich gewöhnen an',
+            'Akkusativ',
+            'Wir gewöhnen uns an das Wetter. (We are getting used to the weather.)',
+          ],
+          [
+            'sprechen über',
+            'Akkusativ',
+            'Wir sprechen über das Projekt. (We are talking about the project.)',
+          ],
         ],
         note: 'Even though an, auf, and über are normally two-way prepositions, every one of these fixed verb phrases always takes the accusative.',
       },
@@ -128,13 +172,41 @@ export const chapter058: ChapterDefinition = {
         columns: ['Verb + preposition', 'Case', 'Example'],
         columnCases: [null, 'dative', null],
         rows: [
-          ['Angst haben vor', 'Dativ', 'Ich habe Angst vor der Dunkelheit. (I am afraid of the dark.)'],
-          ['träumen von', 'Dativ', 'Er träumt von einer Weltreise. (He dreams of a trip around the world.)'],
-          ['teilnehmen an', 'Dativ', 'Sie nimmt an dem Kurs teil. (She is taking part in the course.)'],
-          ['sich beschäftigen mit', 'Dativ', 'Wir beschäftigen uns mit dem Thema. (We are dealing with the topic.)'],
-          ['gratulieren zu', 'Dativ', 'Ich gratuliere dir zum Geburtstag. (I congratulate you on your birthday.)'],
-          ['sprechen von', 'Dativ', 'Er spricht von seiner Reise. (He talks about his trip.)'],
-          ['bestehen auf', 'Dativ', 'Er besteht auf seinem Recht. (He insists on his right.)'],
+          [
+            'Angst haben vor',
+            'Dativ',
+            'Ich habe Angst vor der Dunkelheit. (I am afraid of the dark.)',
+          ],
+          [
+            'träumen von',
+            'Dativ',
+            'Er träumt von einer Weltreise. (He dreams of a trip around the world.)',
+          ],
+          [
+            'teilnehmen an',
+            'Dativ',
+            'Sie nimmt an dem Kurs teil. (She is taking part in the course.)',
+          ],
+          [
+            'sich beschäftigen mit',
+            'Dativ',
+            'Wir beschäftigen uns mit dem Thema. (We are dealing with the topic.)',
+          ],
+          [
+            'gratulieren zu',
+            'Dativ',
+            'Ich gratuliere dir zum Geburtstag. (I congratulate you on your birthday.)',
+          ],
+          [
+            'sprechen von',
+            'Dativ',
+            'Er spricht von seiner Reise. (He talks about his trip.)',
+          ],
+          [
+            'bestehen auf',
+            'Dativ',
+            'Er besteht auf seinem Recht. (He insists on his right.)',
+          ],
         ],
         note: 'bestehen auf is the exception to watch for: unlike warten auf, sich freuen auf, and sich verlassen auf, it takes the dative, not the accusative.',
       },
@@ -144,7 +216,8 @@ export const chapter058: ChapterDefinition = {
         german: 'Ich interessiere mich sehr für klassische Musik.',
         english: 'I am very interested in classical music.',
         highlight: ['interessiere mich für'],
-        explanation: 'sich interessieren is always paired with für, and für here takes the accusative (klassische Musik).',
+        explanation:
+          'sich interessieren is always paired with für, and für here takes the accusative (klassische Musik).',
       },
       {
         german: 'Wartest du schon lange auf den Zug?',
@@ -156,25 +229,29 @@ export const chapter058: ChapterDefinition = {
         german: 'Ich freue mich auf das Wochenende.',
         english: 'I am looking forward to the weekend.',
         highlight: ['freue mich auf'],
-        explanation: 'The weekend has not happened yet, so the forward-looking preposition auf is used.',
+        explanation:
+          'The weekend has not happened yet, so the forward-looking preposition auf is used.',
       },
       {
         german: 'Ich freue mich über deine Nachricht.',
         english: 'I am happy about your message.',
         highlight: ['freue mich über'],
-        explanation: 'The message has already arrived, so über is used instead of auf, even though the case (accusative) stays the same.',
+        explanation:
+          'The message has already arrived, so über is used instead of auf, even though the case (accusative) stays the same.',
       },
       {
         german: 'Denkst du manchmal an deine Schulzeit?',
         english: 'Do you sometimes think of your school days?',
         highlight: ['denkst', 'an'],
-        explanation: 'denken is fixed with an + Akkusativ, not über, even though English "think about" might suggest über.',
+        explanation:
+          'denken is fixed with an + Akkusativ, not über, even though English "think about" might suggest über.',
       },
       {
         german: 'Viele Kinder haben Angst vor der Dunkelheit.',
         english: 'Many children are afraid of the dark.',
         highlight: ['Angst vor der Dunkelheit'],
-        explanation: 'Angst haben is fixed with vor + Dativ; die Dunkelheit becomes der Dunkelheit.',
+        explanation:
+          'Angst haben is fixed with vor + Dativ; die Dunkelheit becomes der Dunkelheit.',
       },
       {
         german: 'Sie träumt von einem eigenen Haus.',
@@ -186,46 +263,54 @@ export const chapter058: ChapterDefinition = {
         german: 'Nimmst du an der Konferenz teil?',
         english: 'Are you taking part in the conference?',
         highlight: ['an der Konferenz teil'],
-        explanation: 'teilnehmen is fixed with an + Dativ; die Konferenz becomes der Konferenz.',
+        explanation:
+          'teilnehmen is fixed with an + Dativ; die Konferenz becomes der Konferenz.',
       },
       {
         german: 'Für wen interessierst du dich?',
         english: 'Who are you interested in?',
         highlight: ['Für wen'],
-        explanation: 'The preposition für simply attaches to wen because interessieren für is fixed with the accusative and the answer is a person.',
+        explanation:
+          'The preposition für simply attaches to wen because interessieren für is fixed with the accusative and the answer is a person.',
       },
       {
         german: 'Worauf freust du dich am meisten?',
         english: 'What are you looking forward to the most?',
         highlight: ['Worauf'],
-        explanation: 'Because the answer is a thing, not a person, the preposition auf fuses with wo- into worauf; the full pattern for these forms follows in the next chapter.',
+        explanation:
+          'Because the answer is a thing, not a person, the preposition auf fuses with wo- into worauf; the full pattern for these forms follows in the next chapter.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich interessiere mich in Musik.',
         correct: 'Ich interessiere mich für Musik.',
-        explanation: 'Wrong preposition: the English "interested in" tempts learners to use in, but sich interessieren is always fixed with für.',
+        explanation:
+          'Wrong preposition: the English "interested in" tempts learners to use in, but sich interessieren is always fixed with für.',
       },
       {
         incorrect: 'Ich warte für den Bus.',
         correct: 'Ich warte auf den Bus.',
-        explanation: 'Wrong preposition: the English "wait for" tempts learners to use für, but warten is always fixed with auf.',
+        explanation:
+          'Wrong preposition: the English "wait for" tempts learners to use für, but warten is always fixed with auf.',
       },
       {
         incorrect: 'Ich denke oft über meine Familie.',
         correct: 'Ich denke oft an meine Familie.',
-        explanation: 'Wrong preposition: the English "think about" tempts learners to use über, but denken is always fixed with an.',
+        explanation:
+          'Wrong preposition: the English "think about" tempts learners to use über, but denken is always fixed with an.',
       },
       {
         incorrect: 'Ich freue mich auf der Party.',
         correct: 'Ich freue mich auf die Party.',
-        explanation: 'Wrong case after a correctly chosen preposition: sich freuen auf is fixed with the accusative, so it must be die Party, not the dative der Party — even though auf is normally a two-way preposition.',
+        explanation:
+          'Wrong case after a correctly chosen preposition: sich freuen auf is fixed with the accusative, so it must be die Party, not the dative der Party — even though auf is normally a two-way preposition.',
       },
       {
         incorrect: 'Er besteht auf seine Meinung.',
         correct: 'Er besteht auf seiner Meinung.',
-        explanation: 'Wrong case after a correctly chosen preposition: unlike most other auf-verbs in this chapter, bestehen auf is fixed with the dative, so it must be seiner Meinung, not the accusative seine Meinung.',
+        explanation:
+          'Wrong case after a correctly chosen preposition: unlike most other auf-verbs in this chapter, bestehen auf is fixed with the dative, so it must be seiner Meinung, not the accusative seine Meinung.',
       },
     ],
     remember: [
@@ -260,7 +345,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'd', text: 'über' },
       ],
       correctOptionId: 'a',
-      explanation: 'sich interessieren is always fixed with für, never with an, auf, or über.',
+      explanation:
+        'sich interessieren is always fixed with für, never with an, auf, or über.',
     },
     {
       id: 'ch58-ex-02',
@@ -278,7 +364,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'd', text: 'über' },
       ],
       correctOptionId: 'a',
-      explanation: 'warten is always fixed with auf, not with für, even though English says "wait for".',
+      explanation:
+        'warten is always fixed with auf, not with für, even though English says "wait for".',
     },
     {
       id: 'ch58-ex-03',
@@ -296,7 +383,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'd', text: 'für' },
       ],
       correctOptionId: 'a',
-      explanation: 'sich freuen auf looks ahead to something that has not happened yet, like upcoming holidays.',
+      explanation:
+        'sich freuen auf looks ahead to something that has not happened yet, like upcoming holidays.',
     },
     {
       id: 'ch58-ex-04',
@@ -314,7 +402,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'd', text: 'für' },
       ],
       correctOptionId: 'a',
-      explanation: 'sich freuen über reacts to something that has already happened or already exists, like a gift already received.',
+      explanation:
+        'sich freuen über reacts to something that has already happened or already exists, like a gift already received.',
     },
     {
       id: 'ch58-ex-05',
@@ -332,7 +421,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'd', text: 'über' },
       ],
       correctOptionId: 'a',
-      explanation: 'denken is always fixed with an, not with über, even though English says "think about".',
+      explanation:
+        'denken is always fixed with an, not with über, even though English says "think about".',
     },
     {
       id: 'ch58-ex-06',
@@ -422,7 +512,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'd', text: 'mit' },
       ],
       correctOptionId: 'a',
-      explanation: 'bestehen is fixed with auf, but unlike warten auf or sich freuen auf, it takes the dative: auf seiner Meinung.',
+      explanation:
+        'bestehen is fixed with auf, but unlike warten auf or sich freuen auf, it takes the dative: auf seiner Meinung.',
     },
     {
       id: 'ch58-ex-11',
@@ -440,7 +531,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'd', text: 'dem' },
       ],
       correctOptionId: 'a',
-      explanation: 'Angst haben vor is fixed with the dative; the feminine article die becomes der in the dative.',
+      explanation:
+        'Angst haben vor is fixed with the dative; the feminine article die becomes der in the dative.',
     },
     {
       id: 'ch58-ex-12',
@@ -458,7 +550,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'd', text: 'des' },
       ],
       correctOptionId: 'a',
-      explanation: 'teilnehmen an is fixed with the dative; the masculine article der becomes dem in the dative.',
+      explanation:
+        'teilnehmen an is fixed with the dative; the masculine article der becomes dem in the dative.',
     },
     {
       id: 'ch58-ex-13',
@@ -476,7 +569,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'd', text: 'was' },
       ],
       correctOptionId: 'a',
-      explanation: 'warten auf is fixed with the accusative; a person asked about with an accusative preposition needs wen.',
+      explanation:
+        'warten auf is fixed with the accusative; a person asked about with an accusative preposition needs wen.',
     },
     {
       id: 'ch58-ex-14',
@@ -494,7 +588,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'd', text: 'Wen' },
       ],
       correctOptionId: 'a',
-      explanation: 'Because the answer is a thing, not a person, auf fuses with wo- into worauf instead of combining with wen.',
+      explanation:
+        'Because the answer is a thing, not a person, auf fuses with wo- into worauf instead of combining with wen.',
     },
     {
       id: 'ch58-ex-15',
@@ -503,11 +598,20 @@ export const chapter058: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['worauf', 'dialogue', 'sich freuen auf'],
-      instruction: 'Read the exchange, then choose the question word that fits the reply.',
+      instruction:
+        'Read the exchange, then choose the question word that fits the reply.',
       prompt: 'Complete: "___ freust du dich am meisten?"',
       dialogue: [
-        { speaker: 'Nina', german: 'Nächste Woche beginnt endlich mein Urlaub.', english: 'My vacation finally starts next week.' },
-        { speaker: 'Tom', german: '___ freust du dich am meisten?', english: 'What are you looking forward to the most?' },
+        {
+          speaker: 'Nina',
+          german: 'Nächste Woche beginnt endlich mein Urlaub.',
+          english: 'My vacation finally starts next week.',
+        },
+        {
+          speaker: 'Tom',
+          german: '___ freust du dich am meisten?',
+          english: 'What are you looking forward to the most?',
+        },
       ],
       options: [
         { id: 'a', text: 'Worauf' },
@@ -516,7 +620,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'd', text: 'Woran' },
       ],
       correctOptionId: 'a',
-      explanation: 'The vacation has not started yet, so sich freuen auf is the right verb, and its fused thing-question form is worauf.',
+      explanation:
+        'The vacation has not started yet, so sich freuen auf is the right verb, and its fused thing-question form is worauf.',
     },
     {
       id: 'ch58-ex-16',
@@ -576,7 +681,8 @@ export const chapter058: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'über',
       maxLength: 10,
-      explanation: 'The news has already arrived, so sich freuen über is used, not the forward-looking auf.',
+      explanation:
+        'The news has already arrived, so sich freuen über is used, not the forward-looking auf.',
     },
     {
       id: 'ch58-ex-20',
@@ -690,13 +796,15 @@ export const chapter058: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'sich interessieren für', 'wrong-preposition'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ich interessiere mich in Musik.',
       acceptedAnswers: ['Ich interessiere mich für Musik.'],
       answerMode: 'normalized',
       placeholder: 'Ich interessiere mich ...',
       maxLength: 60,
-      explanation: 'sich interessieren is always fixed with für, never with in, which is a direct but incorrect translation of English.',
+      explanation:
+        'sich interessieren is always fixed with für, never with in, which is a direct but incorrect translation of English.',
     },
     {
       id: 'ch58-ex-28',
@@ -705,13 +813,15 @@ export const chapter058: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'sich freuen auf', 'wrong-case'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ich freue mich auf der Party.',
       acceptedAnswers: ['Ich freue mich auf die Party.'],
       answerMode: 'normalized',
       placeholder: 'Ich freue mich auf ...',
       maxLength: 60,
-      explanation: 'sich freuen auf is fixed with the accusative, so it must be die Party, not the dative der Party.',
+      explanation:
+        'sich freuen auf is fixed with the accusative, so it must be die Party, not the dative der Party.',
     },
     {
       id: 'ch58-ex-29',
@@ -720,13 +830,15 @@ export const chapter058: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['sentence-building', 'warten auf', 'accusative-article'],
-      instruction: 'Write a complete sentence from the cues, using the correct case. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence from the cues, using the correct case. Capitalisation is checked; no full stop is required.',
       prompt: 'wir – warten – auf – der Bus',
       acceptedAnswers: ['Wir warten auf den Bus.', 'Wir warten auf den Bus'],
       answerMode: 'normalized',
       placeholder: 'Wir warten auf ...',
       maxLength: 60,
-      explanation: 'warten auf is fixed with the accusative, so der Bus becomes den Bus: Wir warten auf den Bus.',
+      explanation:
+        'warten auf is fixed with the accusative, so der Bus becomes den Bus: Wir warten auf den Bus.',
     },
     {
       id: 'ch58-ex-30',
@@ -735,13 +847,15 @@ export const chapter058: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['wem', 'question-word', 'gratulieren zu', 'transfer'],
-      instruction: 'Write the question that would produce exactly the underlined part of the statement as the answer. Capitalisation and the question mark are checked.',
+      instruction:
+        'Write the question that would produce exactly the underlined part of the statement as the answer. Capitalisation and the question mark are checked.',
       prompt: 'Sie gratuliert ihrer Kollegin zum neuen Job. (underlined: ihrer Kollegin)',
       acceptedAnswers: ['Wem gratuliert sie zum neuen Job?'],
       answerMode: 'normalized',
       placeholder: 'Wem ...',
       maxLength: 60,
-      explanation: 'gratulieren zu is fixed with the dative, so the matching question about a person uses wem: Wem gratuliert sie zum neuen Job?',
+      explanation:
+        'gratulieren zu is fixed with the dative, so the matching question about a person uses wem: Wem gratuliert sie zum neuen Job?',
     },
     {
       id: 'ch58-ex-31',
@@ -831,7 +945,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'd', text: 'an' },
       ],
       correctOptionId: 'a',
-      explanation: 'kämpfen gegen + Akkusativ means to fight against something, the opposite of kämpfen für.',
+      explanation:
+        'kämpfen gegen + Akkusativ means to fight against something, the opposite of kämpfen für.',
     },
     {
       id: 'ch58-ex-36',
@@ -885,7 +1000,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'd', text: 'über' },
       ],
       correctOptionId: 'a',
-      explanation: 'sich verlassen is always fixed with auf + Akkusativ, meaning "to rely on".',
+      explanation:
+        'sich verlassen is always fixed with auf + Akkusativ, meaning "to rely on".',
     },
     {
       id: 'ch58-ex-39',
@@ -921,7 +1037,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'd', text: 'für' },
       ],
       correctOptionId: 'a',
-      explanation: 'sprechen von + Dativ is a near-synonym of sprechen über, but it takes the dative.',
+      explanation:
+        'sprechen von + Dativ is a near-synonym of sprechen über, but it takes the dative.',
     },
     {
       id: 'ch58-ex-41',
@@ -957,7 +1074,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'd', text: 'dem' },
       ],
       correctOptionId: 'a',
-      explanation: 'sich bedanken für is fixed with the accusative; the feminine article die stays die in the accusative.',
+      explanation:
+        'sich bedanken für is fixed with the accusative; the feminine article die stays die in the accusative.',
     },
     {
       id: 'ch58-ex-43',
@@ -966,7 +1084,8 @@ export const chapter058: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['sich interessieren für', 'accusative-article', 'plural'],
-      instruction: 'Choose the correct article form. (die Sprachen, plural, Akkusativ after für)',
+      instruction:
+        'Choose the correct article form. (die Sprachen, plural, Akkusativ after für)',
       prompt: 'Er interessiert sich für ___ Sprachen.',
       options: [
         { id: 'a', text: 'die' },
@@ -975,7 +1094,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'd', text: 'denen' },
       ],
       correctOptionId: 'a',
-      explanation: 'The plural article die stays die in the accusative after the fixed für.',
+      explanation:
+        'The plural article die stays die in the accusative after the fixed für.',
     },
     {
       id: 'ch58-ex-44',
@@ -993,7 +1113,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'd', text: 'Wogegen' },
       ],
       correctOptionId: 'a',
-      explanation: 'Because the answer is a thing (Gerechtigkeit), für fuses with wo- into wofür.',
+      explanation:
+        'Because the answer is a thing (Gerechtigkeit), für fuses with wo- into wofür.',
     },
     {
       id: 'ch58-ex-45',
@@ -1001,12 +1122,26 @@ export const chapter058: ChapterDefinition = {
       order: 45,
       type: 'singleChoice',
       level: 'transfer',
-      grammarFocus: ['wen', 'question-word', 'person', 'sich beschweren über', 'dialogue'],
+      grammarFocus: [
+        'wen',
+        'question-word',
+        'person',
+        'sich beschweren über',
+        'dialogue',
+      ],
       instruction: 'Read the exchange, then choose the correct question word.',
       prompt: 'Complete: "Über ___ beschwert er sich schon wieder?"',
       dialogue: [
-        { speaker: 'Lena', german: 'Mein Chef ist heute sehr schlecht gelaunt.', english: 'My boss is in a very bad mood today.' },
-        { speaker: 'Paul', german: 'Über ___ beschwert er sich schon wieder?', english: 'Who is he complaining about again?' },
+        {
+          speaker: 'Lena',
+          german: 'Mein Chef ist heute sehr schlecht gelaunt.',
+          english: 'My boss is in a very bad mood today.',
+        },
+        {
+          speaker: 'Paul',
+          german: 'Über ___ beschwert er sich schon wieder?',
+          english: 'Who is he complaining about again?',
+        },
       ],
       options: [
         { id: 'a', text: 'wen' },
@@ -1015,7 +1150,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'd', text: 'wer' },
       ],
       correctOptionId: 'a',
-      explanation: 'sich beschweren über is fixed with the accusative, so a person asked about needs wen, not wem.',
+      explanation:
+        'sich beschweren über is fixed with the accusative, so a person asked about needs wen, not wem.',
     },
     {
       id: 'ch58-ex-46',
@@ -1174,7 +1310,8 @@ export const chapter058: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'sich bedanken für', 'wrong-preposition'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ich bedanke mich über das Geschenk.',
       acceptedAnswers: ['Ich bedanke mich für das Geschenk.'],
       answerMode: 'normalized',
@@ -1189,13 +1326,15 @@ export const chapter058: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'sich beschweren über', 'wrong-case'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Er beschwert sich über der Lärm.',
       acceptedAnswers: ['Er beschwert sich über den Lärm.'],
       answerMode: 'normalized',
       placeholder: 'Er beschwert sich über ...',
       maxLength: 60,
-      explanation: 'sich beschweren über is fixed with the accusative, so it must be den Lärm, not the dative der Lärm.',
+      explanation:
+        'sich beschweren über is fixed with the accusative, so it must be den Lärm, not the dative der Lärm.',
     },
     {
       id: 'ch58-ex-58',
@@ -1204,13 +1343,18 @@ export const chapter058: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['sentence-building', 'sich bewerben um', 'accusative'],
-      instruction: 'Write a complete sentence from the cues, using the correct case. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence from the cues, using the correct case. Capitalisation is checked; no full stop is required.',
       prompt: 'sie – sich bewerben – um – die Stelle',
-      acceptedAnswers: ['Sie bewirbt sich um die Stelle.', 'Sie bewirbt sich um die Stelle'],
+      acceptedAnswers: [
+        'Sie bewirbt sich um die Stelle.',
+        'Sie bewirbt sich um die Stelle',
+      ],
       answerMode: 'normalized',
       placeholder: 'Sie bewirbt sich um ...',
       maxLength: 60,
-      explanation: 'sich bewerben um is fixed with the accusative: Sie bewirbt sich um die Stelle.',
+      explanation:
+        'sich bewerben um is fixed with the accusative: Sie bewirbt sich um die Stelle.',
     },
     {
       id: 'ch58-ex-59',
@@ -1219,13 +1363,15 @@ export const chapter058: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['wofür', 'question-word', 'kämpfen für', 'transfer'],
-      instruction: 'Write the question that would produce exactly the underlined part of the statement as the answer. Capitalisation and the question mark are checked.',
+      instruction:
+        'Write the question that would produce exactly the underlined part of the statement as the answer. Capitalisation and the question mark are checked.',
       prompt: 'Er kämpft für seine Familie. (underlined: seine Familie)',
       acceptedAnswers: ['Wofür kämpft er?'],
       answerMode: 'normalized',
       placeholder: 'Wofür ...',
       maxLength: 60,
-      explanation: 'The underlined part is a thing, not a person, so kämpfen für fuses with wo- into wofür: Wofür kämpft er?',
+      explanation:
+        'The underlined part is a thing, not a person, so kämpfen für fuses with wo- into wofür: Wofür kämpft er?',
     },
     {
       id: 'ch58-ex-60',
@@ -1234,13 +1380,15 @@ export const chapter058: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['wen', 'question-word', 'sich beschweren über', 'transfer'],
-      instruction: 'Write the question that would produce exactly the underlined part of the statement as the answer. Capitalisation and the question mark are checked.',
+      instruction:
+        'Write the question that would produce exactly the underlined part of the statement as the answer. Capitalisation and the question mark are checked.',
       prompt: 'Sie beschwert sich über ihren Nachbarn. (underlined: ihren Nachbarn)',
       acceptedAnswers: ['Über wen beschwert sie sich?'],
       answerMode: 'normalized',
       placeholder: 'Über wen ...',
       maxLength: 60,
-      explanation: 'The underlined part is a person, so sich beschweren über is fixed with the accusative and asks with wen: Über wen beschwert sie sich?',
+      explanation:
+        'The underlined part is a person, so sich beschweren über is fixed with the accusative and asks with wen: Über wen beschwert sie sich?',
     },
     {
       id: 'ch58-ex-61',
@@ -1249,7 +1397,8 @@ export const chapter058: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['matching', 'accusative-verbs', 'fixed-preposition'],
-      instruction: 'Match each verb with its fixed preposition (all take the accusative).',
+      instruction:
+        'Match each verb with its fixed preposition (all take the accusative).',
       prompt: 'Match the verb to its fixed preposition.',
       pairs: [
         { id: 'p1', left: 'warten', right: 'auf' },
@@ -1258,7 +1407,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'p4', left: 'sich kümmern', right: 'um' },
         { id: 'p5', left: 'sprechen', right: 'über' },
       ],
-      explanation: 'warten auf, sich interessieren für, denken an, sich kümmern um, and sprechen über are all fixed accusative combinations.',
+      explanation:
+        'warten auf, sich interessieren für, denken an, sich kümmern um, and sprechen über are all fixed accusative combinations.',
     },
     {
       id: 'ch58-ex-62',
@@ -1277,7 +1427,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'p5', left: 'gratulieren', right: 'zu' },
         { id: 'p6', left: 'bestehen', right: 'auf' },
       ],
-      explanation: 'träumen von, Angst haben vor, teilnehmen an, sich beschäftigen mit, gratulieren zu, and bestehen auf are all fixed dative combinations.',
+      explanation:
+        'träumen von, Angst haben vor, teilnehmen an, sich beschäftigen mit, gratulieren zu, and bestehen auf are all fixed dative combinations.',
     },
     {
       id: 'ch58-ex-63',
@@ -1295,7 +1446,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'p4', left: 'sich gewöhnen', right: 'an' },
         { id: 'p5', left: 'sich verlassen', right: 'auf' },
       ],
-      explanation: 'sich bedanken für, sich beschweren über, sich bewerben um, sich gewöhnen an, and sich verlassen auf are all fixed accusative combinations.',
+      explanation:
+        'sich bedanken für, sich beschweren über, sich bewerben um, sich gewöhnen an, and sich verlassen auf are all fixed accusative combinations.',
     },
     {
       id: 'ch58-ex-64',
@@ -1314,7 +1466,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'p5', left: 'to dream of', right: 'träumen von' },
         { id: 'p6', left: 'to be afraid of', right: 'Angst haben vor' },
       ],
-      explanation: 'Each fixed German phrase must be learned as a whole unit together with its English meaning, since the prepositions rarely match word for word.',
+      explanation:
+        'Each fixed German phrase must be learned as a whole unit together with its English meaning, since the prepositions rarely match word for word.',
     },
     {
       id: 'ch58-ex-65',
@@ -1323,7 +1476,8 @@ export const chapter058: ChapterDefinition = {
       type: 'matching',
       level: 'production',
       grammarFocus: ['matching', 'wen', 'wem', 'question-word', 'person'],
-      instruction: 'Match each verb to the correct question word for asking about a person.',
+      instruction:
+        'Match each verb to the correct question word for asking about a person.',
       prompt: 'Match the verb to the person-question it takes.',
       pairs: [
         { id: 'p1', left: 'sich interessieren', right: 'Für wen' },
@@ -1333,7 +1487,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'p5', left: 'Angst haben', right: 'Vor wem' },
         { id: 'p6', left: 'teilnehmen', right: 'An wem' },
       ],
-      explanation: 'The preposition simply attaches to wen (accusative verbs) or wem (dative verbs), depending on the fixed case of each verb.',
+      explanation:
+        'The preposition simply attaches to wen (accusative verbs) or wem (dative verbs), depending on the fixed case of each verb.',
     },
     {
       id: 'ch58-ex-66',
@@ -1342,7 +1497,8 @@ export const chapter058: ChapterDefinition = {
       type: 'matching',
       level: 'production',
       grammarFocus: ['matching', 'wo-compound', 'question-word', 'thing'],
-      instruction: 'Match each verb to the fused question word it takes when asking about a thing.',
+      instruction:
+        'Match each verb to the fused question word it takes when asking about a thing.',
       prompt: 'Match the verb to the thing-question it takes.',
       pairs: [
         { id: 'p1', left: 'sich interessieren', right: 'Wofür' },
@@ -1352,7 +1508,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'p5', left: 'sich beschweren', right: 'Worüber' },
         { id: 'p6', left: 'sich kümmern', right: 'Worum' },
       ],
-      explanation: 'When the answer is a thing rather than a person, the preposition fuses with wo(r)- into a single question word.',
+      explanation:
+        'When the answer is a thing rather than a person, the preposition fuses with wo(r)- into a single question word.',
     },
     {
       id: 'ch58-ex-67',
@@ -1371,7 +1528,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'p5', left: 'sich gewöhnen an', right: 'to get used to' },
         { id: 'p6', left: 'bestehen auf', right: 'to insist on' },
       ],
-      explanation: 'Each phrase is a fixed unit of verb, preposition, and case that must be learned together with its meaning.',
+      explanation:
+        'Each phrase is a fixed unit of verb, preposition, and case that must be learned together with its meaning.',
     },
     {
       id: 'ch58-ex-68',
@@ -1390,7 +1548,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'p5', left: 'kämpfen gegen', right: 'to fight against' },
         { id: 'p6', left: 'sprechen von', right: 'to talk about (dative)' },
       ],
-      explanation: 'Each phrase is a fixed unit of verb, preposition, and case that must be learned together with its meaning.',
+      explanation:
+        'Each phrase is a fixed unit of verb, preposition, and case that must be learned together with its meaning.',
     },
     {
       id: 'ch58-ex-69',
@@ -1408,7 +1567,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'p4', left: 'Er hat Angst', right: 'vor Prüfungen.' },
         { id: 'p5', left: 'Wir nehmen', right: 'an dem Kurs teil.' },
       ],
-      explanation: 'Each verb keeps its fixed preposition even when the sentence is split into two halves.',
+      explanation:
+        'Each verb keeps its fixed preposition even when the sentence is split into two halves.',
     },
     {
       id: 'ch58-ex-70',
@@ -1426,7 +1586,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'p4', left: 'Wir kämpfen', right: 'für unsere Rechte.' },
         { id: 'p5', left: 'Ich gewöhne mich', right: 'an das Klima.' },
       ],
-      explanation: 'Each verb keeps its fixed preposition even when the sentence is split into two halves.',
+      explanation:
+        'Each verb keeps its fixed preposition even when the sentence is split into two halves.',
     },
     {
       id: 'ch58-ex-71',
@@ -1445,7 +1606,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'p5', left: 'Von wem', right: 'From whom (person)' },
         { id: 'p6', left: 'Wovon', right: 'Of what (thing)' },
       ],
-      explanation: 'Questions about a person combine the preposition with wen/wem; questions about a thing fuse the preposition with wo(r)- instead.',
+      explanation:
+        'Questions about a person combine the preposition with wen/wem; questions about a thing fuse the preposition with wo(r)- instead.',
     },
     {
       id: 'ch58-ex-72',
@@ -1463,7 +1625,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'p4', left: 'Ich erinnere mich', right: 'an den Urlaub.' },
         { id: 'p5', left: 'Er besteht', right: 'auf seiner Meinung.' },
       ],
-      explanation: 'Each verb keeps its fixed preposition and case even when the sentence is split into two halves.',
+      explanation:
+        'Each verb keeps its fixed preposition and case even when the sentence is split into two halves.',
     },
     {
       id: 'ch58-ex-73',
@@ -1570,12 +1733,14 @@ export const chapter058: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'production',
       grammarFocus: ['warten auf', 'accusative-article', 'masculine', 'drag-to-slots'],
-      instruction: 'Drag the correct article form into the gap. (der Bus, Akkusativ after auf)',
+      instruction:
+        'Drag the correct article form into the gap. (der Bus, Akkusativ after auf)',
       prompt: 'Ich warte auf ___ Bus.',
       templateParts: ['Ich warte auf ', ' Bus.'],
       slots: [{ id: 's1', correctWord: 'den' }],
       wordBank: ['den', 'der', 'dem', 'die'],
-      explanation: 'warten auf is fixed with the accusative, so the masculine article der becomes den.',
+      explanation:
+        'warten auf is fixed with the accusative, so the masculine article der becomes den.',
     },
     {
       id: 'ch58-ex-81',
@@ -1584,12 +1749,14 @@ export const chapter058: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'production',
       grammarFocus: ['teilnehmen an', 'dative-article', 'feminine', 'drag-to-slots'],
-      instruction: 'Drag the correct article form into the gap. (die Konferenz, Dativ after an)',
+      instruction:
+        'Drag the correct article form into the gap. (die Konferenz, Dativ after an)',
       prompt: 'Sie nimmt an ___ Konferenz teil.',
       templateParts: ['Sie nimmt an ', ' Konferenz teil.'],
       slots: [{ id: 's1', correctWord: 'der' }],
       wordBank: ['der', 'die', 'den', 'dem'],
-      explanation: 'teilnehmen an is fixed with the dative, so the feminine article die becomes der.',
+      explanation:
+        'teilnehmen an is fixed with the dative, so the feminine article die becomes der.',
     },
     {
       id: 'ch58-ex-82',
@@ -1597,16 +1764,26 @@ export const chapter058: ChapterDefinition = {
       order: 82,
       type: 'dragToSlots',
       level: 'transfer',
-      grammarFocus: ['sich interessieren für', 'sich kümmern um', 'accusative', 'drag-to-slots'],
+      grammarFocus: [
+        'sich interessieren für',
+        'sich kümmern um',
+        'accusative',
+        'drag-to-slots',
+      ],
       instruction: 'Drag the correct prepositions into both gaps.',
       prompt: 'Ich interessiere mich ___ Musik und er kümmert sich ___ die Kinder.',
-      templateParts: ['Ich interessiere mich ', ' Musik und er kümmert sich ', ' die Kinder.'],
+      templateParts: [
+        'Ich interessiere mich ',
+        ' Musik und er kümmert sich ',
+        ' die Kinder.',
+      ],
       slots: [
         { id: 's1', correctWord: 'für' },
         { id: 's2', correctWord: 'um' },
       ],
       wordBank: ['für', 'um', 'an', 'auf'],
-      explanation: 'sich interessieren is fixed with für, while sich kümmern is fixed with um — both take the accusative.',
+      explanation:
+        'sich interessieren is fixed with für, while sich kümmern is fixed with um — both take the accusative.',
     },
     {
       id: 'ch58-ex-83',
@@ -1620,7 +1797,8 @@ export const chapter058: ChapterDefinition = {
       tokens: ['Ich', 'interessiere', 'mich', 'in', 'Musik', '.'],
       errorTokenIndex: 3,
       correction: 'für',
-      explanation: 'sich interessieren is always fixed with für, never with in, which is a direct but incorrect translation from English.',
+      explanation:
+        'sich interessieren is always fixed with für, never with in, which is a direct but incorrect translation from English.',
     },
     {
       id: 'ch58-ex-84',
@@ -1634,7 +1812,8 @@ export const chapter058: ChapterDefinition = {
       tokens: ['Ich', 'warte', 'für', 'den', 'Bus', '.'],
       errorTokenIndex: 2,
       correction: 'auf',
-      explanation: 'warten is always fixed with auf, not für, even though English says "wait for".',
+      explanation:
+        'warten is always fixed with auf, not für, even though English says "wait for".',
     },
     {
       id: 'ch58-ex-85',
@@ -1648,7 +1827,8 @@ export const chapter058: ChapterDefinition = {
       tokens: ['Er', 'denkt', 'oft', 'über', 'seine', 'Familie', '.'],
       errorTokenIndex: 3,
       correction: 'an',
-      explanation: 'denken is always fixed with an, not über, even though English says "think about".',
+      explanation:
+        'denken is always fixed with an, not über, even though English says "think about".',
     },
     {
       id: 'ch58-ex-86',
@@ -1662,7 +1842,8 @@ export const chapter058: ChapterDefinition = {
       tokens: ['Ich', 'freue', 'mich', 'auf', 'der', 'Party', '.'],
       errorTokenIndex: 4,
       correction: 'die',
-      explanation: 'sich freuen auf is fixed with the accusative, so it must be die Party, not the dative der Party.',
+      explanation:
+        'sich freuen auf is fixed with the accusative, so it must be die Party, not the dative der Party.',
     },
     {
       id: 'ch58-ex-87',
@@ -1676,7 +1857,8 @@ export const chapter058: ChapterDefinition = {
       tokens: ['Er', 'besteht', 'auf', 'seine', 'Meinung', '.'],
       errorTokenIndex: 3,
       correction: 'seiner',
-      explanation: 'bestehen auf is fixed with the dative, unlike most other auf-verbs in this chapter, so it must be seiner Meinung.',
+      explanation:
+        'bestehen auf is fixed with the dative, unlike most other auf-verbs in this chapter, so it must be seiner Meinung.',
     },
     {
       id: 'ch58-ex-88',
@@ -1708,7 +1890,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'w4', text: 'dich' },
         { id: 'w5', text: '?' },
       ],
-      explanation: 'The fused question word worüber comes first, followed by the verb, the subject, and the reflexive pronoun: Worüber freust du dich?',
+      explanation:
+        'The fused question word worüber comes first, followed by the verb, the subject, and the reflexive pronoun: Worüber freust du dich?',
     },
     {
       id: 'ch58-ex-90',
@@ -1728,7 +1911,8 @@ export const chapter058: ChapterDefinition = {
         { id: 'w6', text: 'meisten' },
         { id: 'w7', text: '?' },
       ],
-      explanation: 'The fused question word wofür comes first, followed by the verb, the subject, the reflexive pronoun, and the superlative phrase am meisten: Wofür interessierst du dich am meisten?',
+      explanation:
+        'The fused question word wofür comes first, followed by the verb, the subject, the reflexive pronoun, and the superlative phrase am meisten: Wofür interessierst du dich am meisten?',
     },
   ],
 };

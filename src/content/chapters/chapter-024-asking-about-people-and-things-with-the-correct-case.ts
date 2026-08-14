@@ -90,7 +90,11 @@ export const chapter024: ChapterDefinition = {
         title: 'Typical verbs and the question word they need for a person',
         columns: ['Case', 'Typical verbs', 'Question word for a person'],
         rows: [
-          ['accusative', 'sehen, kaufen, brauchen, fragen, besuchen, treffen, einladen', 'wen'],
+          [
+            'accusative',
+            'sehen, kaufen, brauchen, fragen, besuchen, treffen, einladen',
+            'wen',
+          ],
           ['dative', 'helfen, danken, gehören, gefallen, schmecken, antworten', 'wem'],
         ],
       },
@@ -105,55 +109,64 @@ export const chapter024: ChapterDefinition = {
       {
         german: 'Wen besuchst du am Sonntag?',
         english: 'Whom are you visiting on Sunday?',
-        explanation: 'besuchen takes an accusative object, so the question about a person object uses wen.',
+        explanation:
+          'besuchen takes an accusative object, so the question about a person object uses wen.',
         highlight: ['Wen'],
       },
       {
         german: 'Wem hilfst du in der Küche?',
         english: 'Whom are you helping in the kitchen?',
-        explanation: 'helfen always takes a dative object, so the question about a person uses wem, not wen.',
+        explanation:
+          'helfen always takes a dative object, so the question about a person uses wem, not wen.',
         highlight: ['Wem'],
       },
       {
         german: 'Was steht auf dem Tisch?',
         english: 'What is standing on the table?',
-        explanation: 'was asks about a thing that is the subject of stehen; was does not change its form.',
+        explanation:
+          'was asks about a thing that is the subject of stehen; was does not change its form.',
         highlight: ['Was'],
       },
       {
         german: 'Was brauchst du für die Reise?',
         english: 'What do you need for the trip?',
-        explanation: 'brauchen takes an accusative object; for a thing, was is used in the nominative and the accusative alike.',
+        explanation:
+          'brauchen takes an accusative object; for a thing, was is used in the nominative and the accusative alike.',
         highlight: ['Was'],
       },
       {
         german: 'Wem gehört dieses Fahrrad?',
         english: 'Whom does this bicycle belong to?',
-        explanation: 'gehören takes a dative object; Fahrrad itself stays the subject, and wem asks about the owner.',
+        explanation:
+          'gehören takes a dative object; Fahrrad itself stays the subject, and wem asks about the owner.',
         highlight: ['Wem'],
       },
       {
         german: 'Für wen ist das Geschenk?',
         english: 'Who is the present for?',
-        explanation: 'The preposition für always takes the accusative, so the question word after it is wen, not wem.',
+        explanation:
+          'The preposition für always takes the accusative, so the question word after it is wen, not wem.',
         highlight: ['Für wen'],
       },
       {
         german: 'Mit wem sprichst du gerade?',
         english: 'Whom are you talking to right now?',
-        explanation: 'The preposition mit always takes the dative, so the question word after it is wem, not wen.',
+        explanation:
+          'The preposition mit always takes the dative, so the question word after it is wem, not wen.',
         highlight: ['Mit wem'],
       },
       {
         german: 'Wen lädst du zu deiner Party ein?',
         english: 'Whom are you inviting to your party?',
-        explanation: 'einladen takes an accusative object, so wen is used to ask about the person invited.',
+        explanation:
+          'einladen takes an accusative object, so wen is used to ask about the person invited.',
         highlight: ['Wen'],
       },
       {
         german: 'Wem dankt ihr für die Hilfe?',
         english: 'Whom do you thank for the help?',
-        explanation: 'danken takes a dative object, so wem is used to ask about the person being thanked.',
+        explanation:
+          'danken takes a dative object, so wem is used to ask about the person being thanked.',
         highlight: ['Wem'],
       },
     ],
@@ -161,27 +174,32 @@ export const chapter024: ChapterDefinition = {
       {
         incorrect: 'Wer siehst du?',
         correct: 'Wen siehst du?',
-        explanation: 'sehen takes an accusative object; when asking about a person as the object, German uses wen, not wer, which only asks about the subject.',
+        explanation:
+          'sehen takes an accusative object; when asking about a person as the object, German uses wen, not wer, which only asks about the subject.',
       },
       {
         incorrect: 'Wen hilfst du?',
         correct: 'Wem hilfst du?',
-        explanation: 'helfen always takes a dative object, so the question word must be wem, not the accusative wen.',
+        explanation:
+          'helfen always takes a dative object, so the question word must be wem, not the accusative wen.',
       },
       {
         incorrect: 'Wen gehört das Auto?',
         correct: 'Wem gehört das Auto?',
-        explanation: 'gehören takes a dative object; the person who owns the car is asked about with wem, not wen.',
+        explanation:
+          'gehören takes a dative object; the person who owns the car is asked about with wem, not wen.',
       },
       {
         incorrect: 'Für wem ist das Geschenk?',
         correct: 'Für wen ist das Geschenk?',
-        explanation: 'The preposition für always takes the accusative, so the question word after it is wen, never wem.',
+        explanation:
+          'The preposition für always takes the accusative, so the question word after it is wen, never wem.',
       },
       {
         incorrect: 'Was kommt heute zu Besuch?',
         correct: 'Wer kommt heute zu Besuch?',
-        explanation: 'was asks about things, not people; when the subject is a person, wer must be used instead of was.',
+        explanation:
+          'was asks about things, not people; when the subject is a person, wer must be used instead of was.',
       },
     ],
     remember: [
@@ -206,7 +224,8 @@ export const chapter024: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['wen', 'accusative', 'person'],
-      instruction: 'Choose the question word that asks about the underlined part of the answer.',
+      instruction:
+        'Choose the question word that asks about the underlined part of the answer.',
       prompt: 'Ich sehe meinen Bruder. → ___ siehst du?',
       options: [
         { id: 'a', text: 'Wer' },
@@ -215,7 +234,8 @@ export const chapter024: ChapterDefinition = {
         { id: 'd', text: 'Was' },
       ],
       correctOptionId: 'b',
-      explanation: 'sehen takes an accusative object; Bruder is a person functioning as the direct object, so the question word is wen.',
+      explanation:
+        'sehen takes an accusative object; Bruder is a person functioning as the direct object, so the question word is wen.',
     },
     {
       id: 'ch24-ex-02',
@@ -224,7 +244,8 @@ export const chapter024: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['wer', 'nominative', 'person'],
-      instruction: 'Choose the question word that asks about the underlined part of the answer.',
+      instruction:
+        'Choose the question word that asks about the underlined part of the answer.',
       prompt: 'Meine Schwester kocht heute. → ___ kocht heute?',
       options: [
         { id: 'a', text: 'Wer' },
@@ -233,7 +254,8 @@ export const chapter024: ChapterDefinition = {
         { id: 'd', text: 'Was' },
       ],
       correctOptionId: 'a',
-      explanation: 'Schwester is a person and the subject of kocht, so the subject question word wer is used.',
+      explanation:
+        'Schwester is a person and the subject of kocht, so the subject question word wer is used.',
     },
     {
       id: 'ch24-ex-03',
@@ -242,7 +264,8 @@ export const chapter024: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['wem', 'dative', 'person'],
-      instruction: 'Choose the question word that asks about the underlined part of the answer.',
+      instruction:
+        'Choose the question word that asks about the underlined part of the answer.',
       prompt: 'Ich helfe meinem Kollegen. → ___ hilfst du?',
       options: [
         { id: 'a', text: 'Wer' },
@@ -251,7 +274,8 @@ export const chapter024: ChapterDefinition = {
         { id: 'd', text: 'Was' },
       ],
       correctOptionId: 'c',
-      explanation: 'helfen always takes a dative object; Kollege is a person, so the question word is wem.',
+      explanation:
+        'helfen always takes a dative object; Kollege is a person, so the question word is wem.',
     },
     {
       id: 'ch24-ex-04',
@@ -260,7 +284,8 @@ export const chapter024: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['was', 'nominative', 'thing'],
-      instruction: 'Choose the question word that asks about the underlined part of the answer.',
+      instruction:
+        'Choose the question word that asks about the underlined part of the answer.',
       prompt: 'Der Kaffee steht auf dem Tisch. → ___ steht auf dem Tisch?',
       options: [
         { id: 'a', text: 'Wer' },
@@ -269,7 +294,8 @@ export const chapter024: ChapterDefinition = {
         { id: 'd', text: 'Was' },
       ],
       correctOptionId: 'd',
-      explanation: 'Kaffee is a thing and the subject of stehen, so the question word is was, not wer, which only asks about people.',
+      explanation:
+        'Kaffee is a thing and the subject of stehen, so the question word is was, not wer, which only asks about people.',
     },
     {
       id: 'ch24-ex-05',
@@ -278,8 +304,10 @@ export const chapter024: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['wen', 'accusative', 'person'],
-      instruction: 'Choose the correct question word, using the grammar cue in parentheses.',
-      prompt: '___ fragst du in der Pause? (fragen = accusative verb; Lehrer = person, direct object)',
+      instruction:
+        'Choose the correct question word, using the grammar cue in parentheses.',
+      prompt:
+        '___ fragst du in der Pause? (fragen = accusative verb; Lehrer = person, direct object)',
       options: [
         { id: 'a', text: 'Wer' },
         { id: 'b', text: 'Wen' },
@@ -287,7 +315,8 @@ export const chapter024: ChapterDefinition = {
         { id: 'd', text: 'Was' },
       ],
       correctOptionId: 'b',
-      explanation: 'fragen takes an accusative object; because Lehrer is a person functioning as the direct object, the question word is wen.',
+      explanation:
+        'fragen takes an accusative object; because Lehrer is a person functioning as the direct object, the question word is wen.',
     },
     {
       id: 'ch24-ex-06',
@@ -296,8 +325,10 @@ export const chapter024: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['wem', 'dative', 'person'],
-      instruction: 'Choose the correct question word, using the grammar cue in parentheses.',
-      prompt: '___ dankst du für das Geschenk? (danken = dative verb; Freundin = person, dative object)',
+      instruction:
+        'Choose the correct question word, using the grammar cue in parentheses.',
+      prompt:
+        '___ dankst du für das Geschenk? (danken = dative verb; Freundin = person, dative object)',
       options: [
         { id: 'a', text: 'Wer' },
         { id: 'b', text: 'Wen' },
@@ -305,7 +336,8 @@ export const chapter024: ChapterDefinition = {
         { id: 'd', text: 'Was' },
       ],
       correctOptionId: 'c',
-      explanation: 'danken always takes a dative object, so the question word about the person thanked is wem.',
+      explanation:
+        'danken always takes a dative object, so the question word about the person thanked is wem.',
     },
     {
       id: 'ch24-ex-07',
@@ -314,7 +346,8 @@ export const chapter024: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['was', 'nominative', 'thing'],
-      instruction: 'Choose the correct question word, using the grammar cue in parentheses.',
+      instruction:
+        'Choose the correct question word, using the grammar cue in parentheses.',
       prompt: '___ liegt auf dem Bett? (Buch = thing, subject)',
       options: [
         { id: 'a', text: 'Wer' },
@@ -323,7 +356,8 @@ export const chapter024: ChapterDefinition = {
         { id: 'd', text: 'Was' },
       ],
       correctOptionId: 'd',
-      explanation: 'Buch is a thing and the subject, so was is used, not wer, which only asks about people.',
+      explanation:
+        'Buch is a thing and the subject, so was is used, not wer, which only asks about people.',
     },
     {
       id: 'ch24-ex-08',
@@ -332,8 +366,10 @@ export const chapter024: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['was', 'accusative', 'thing'],
-      instruction: 'Choose the correct question word, using the grammar cue in parentheses.',
-      prompt: '___ kauft ihr für die Party? (kaufen = accusative verb; Getränke = things, direct object)',
+      instruction:
+        'Choose the correct question word, using the grammar cue in parentheses.',
+      prompt:
+        '___ kauft ihr für die Party? (kaufen = accusative verb; Getränke = things, direct object)',
       options: [
         { id: 'a', text: 'Wen' },
         { id: 'b', text: 'Wem' },
@@ -341,7 +377,8 @@ export const chapter024: ChapterDefinition = {
         { id: 'd', text: 'Was' },
       ],
       correctOptionId: 'd',
-      explanation: 'kaufen takes an accusative object; because Getränke are things, the question word for the direct object is was, not wen, which is only used for people.',
+      explanation:
+        'kaufen takes an accusative object; because Getränke are things, the question word for the direct object is was, not wen, which is only used for people.',
     },
     {
       id: 'ch24-ex-09',
@@ -359,7 +396,8 @@ export const chapter024: ChapterDefinition = {
         { id: 'd', text: 'was' },
       ],
       correctOptionId: 'b',
-      explanation: 'The preposition für always takes the accusative, so the question word after it is wen.',
+      explanation:
+        'The preposition für always takes the accusative, so the question word after it is wen.',
     },
     {
       id: 'ch24-ex-10',
@@ -377,7 +415,8 @@ export const chapter024: ChapterDefinition = {
         { id: 'd', text: 'was' },
       ],
       correctOptionId: 'c',
-      explanation: 'The preposition mit always takes the dative, so the question word after it is wem.',
+      explanation:
+        'The preposition mit always takes the dative, so the question word after it is wem.',
     },
     {
       id: 'ch24-ex-11',
@@ -386,8 +425,10 @@ export const chapter024: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['wem', 'dative', 'person'],
-      instruction: 'Choose the correct question word, using the grammar cue in parentheses.',
-      prompt: '___ kannst du heute nicht antworten? (antworten = dative verb; Chef = person, dative object)',
+      instruction:
+        'Choose the correct question word, using the grammar cue in parentheses.',
+      prompt:
+        '___ kannst du heute nicht antworten? (antworten = dative verb; Chef = person, dative object)',
       options: [
         { id: 'a', text: 'Wer' },
         { id: 'b', text: 'Wen' },
@@ -395,7 +436,8 @@ export const chapter024: ChapterDefinition = {
         { id: 'd', text: 'Was' },
       ],
       correctOptionId: 'c',
-      explanation: 'antworten takes a dative object, so the question word about the person is wem.',
+      explanation:
+        'antworten takes a dative object, so the question word about the person is wem.',
     },
     {
       id: 'ch24-ex-12',
@@ -404,8 +446,10 @@ export const chapter024: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['wen', 'accusative', 'person'],
-      instruction: 'Choose the correct question word, using the grammar cue in parentheses.',
-      prompt: '___ besucht ihr am Wochenende? (besuchen = accusative verb; Großeltern = people, direct object)',
+      instruction:
+        'Choose the correct question word, using the grammar cue in parentheses.',
+      prompt:
+        '___ besucht ihr am Wochenende? (besuchen = accusative verb; Großeltern = people, direct object)',
       options: [
         { id: 'a', text: 'Wer' },
         { id: 'b', text: 'Wen' },
@@ -413,7 +457,8 @@ export const chapter024: ChapterDefinition = {
         { id: 'd', text: 'Was' },
       ],
       correctOptionId: 'b',
-      explanation: 'besuchen takes an accusative object; Großeltern are people functioning as the direct object, so the question word is wen.',
+      explanation:
+        'besuchen takes an accusative object; Großeltern are people functioning as the direct object, so the question word is wen.',
     },
     {
       id: 'ch24-ex-13',
@@ -422,13 +467,16 @@ export const chapter024: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['was', 'accusative', 'thing'],
-      instruction: 'Fill in the correct question word: wer, wen, wem, or was. Capitalisation is not checked.',
-      prompt: '___ trinkst du am Morgen, Kaffee oder Tee? (trinken = accusative verb; thing)',
+      instruction:
+        'Fill in the correct question word: wer, wen, wem, or was. Capitalisation is not checked.',
+      prompt:
+        '___ trinkst du am Morgen, Kaffee oder Tee? (trinken = accusative verb; thing)',
       acceptedAnswers: ['was'],
       answerMode: 'caseInsensitive',
       placeholder: 'wer / wen / wem / was',
       maxLength: 10,
-      explanation: 'trinken takes an accusative object; because the object is a thing, the question word is was.',
+      explanation:
+        'trinken takes an accusative object; because the object is a thing, the question word is was.',
     },
     {
       id: 'ch24-ex-14',
@@ -437,13 +485,15 @@ export const chapter024: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['wer', 'nominative', 'person'],
-      instruction: 'Fill in the correct question word: wer, wen, wem, or was. Capitalisation is not checked.',
+      instruction:
+        'Fill in the correct question word: wer, wen, wem, or was. Capitalisation is not checked.',
       prompt: '___ schreibt die E-Mail? (person, subject)',
       acceptedAnswers: ['wer'],
       answerMode: 'caseInsensitive',
       placeholder: 'wer / wen / wem / was',
       maxLength: 10,
-      explanation: 'The person writing the email is the subject, so the question word is wer.',
+      explanation:
+        'The person writing the email is the subject, so the question word is wer.',
     },
     {
       id: 'ch24-ex-15',
@@ -452,13 +502,15 @@ export const chapter024: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['wem', 'dative', 'person'],
-      instruction: 'Fill in the correct question word: wer, wen, wem, or was. Capitalisation is not checked.',
+      instruction:
+        'Fill in the correct question word: wer, wen, wem, or was. Capitalisation is not checked.',
       prompt: '___ schmeckt der Kuchen am besten? (schmecken = dative verb; person)',
       acceptedAnswers: ['wem'],
       answerMode: 'caseInsensitive',
       placeholder: 'wer / wen / wem / was',
       maxLength: 10,
-      explanation: 'schmecken takes a dative object for the person who tastes something, so the question word is wem.',
+      explanation:
+        'schmecken takes a dative object for the person who tastes something, so the question word is wem.',
     },
     {
       id: 'ch24-ex-16',
@@ -467,13 +519,15 @@ export const chapter024: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['wen', 'accusative', 'person'],
-      instruction: 'Fill in the correct question word: wer, wen, wem, or was. Capitalisation is not checked.',
+      instruction:
+        'Fill in the correct question word: wer, wen, wem, or was. Capitalisation is not checked.',
       prompt: '___ lädst du zur Feier ein? (einladen = accusative verb; person)',
       acceptedAnswers: ['wen'],
       answerMode: 'caseInsensitive',
       placeholder: 'wer / wen / wem / was',
       maxLength: 10,
-      explanation: 'einladen takes an accusative object; because a person is invited, the question word is wen.',
+      explanation:
+        'einladen takes an accusative object; because a person is invited, the question word is wen.',
     },
     {
       id: 'ch24-ex-17',
@@ -489,7 +543,8 @@ export const chapter024: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Wen ...',
       maxLength: 40,
-      explanation: 'anrufen takes an accusative object; Bruder is a person functioning as the direct object, so the question begins with Wen: Wen rufst du an?',
+      explanation:
+        'anrufen takes an accusative object; Bruder is a person functioning as the direct object, so the question begins with Wen: Wen rufst du an?',
     },
     {
       id: 'ch24-ex-18',
@@ -505,7 +560,8 @@ export const chapter024: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Wem ...',
       maxLength: 40,
-      explanation: 'helfen takes a dative object; Lehrerin is a person, so the question begins with Wem: Wem helft ihr?',
+      explanation:
+        'helfen takes a dative object; Lehrerin is a person, so the question begins with Wem: Wem helft ihr?',
     },
     {
       id: 'ch24-ex-19',
@@ -521,7 +577,8 @@ export const chapter024: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Was ...',
       maxLength: 40,
-      explanation: 'Tasche is a thing and the subject of liegen, so the question begins with Was: Was liegt auf dem Stuhl?',
+      explanation:
+        'Tasche is a thing and the subject of liegen, so the question begins with Was: Was liegt auf dem Stuhl?',
     },
     {
       id: 'ch24-ex-20',
@@ -537,7 +594,8 @@ export const chapter024: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Für wen ...',
       maxLength: 40,
-      explanation: 'für always takes the accusative, so the question word after it is wen: Für wen ist das Geschenk?',
+      explanation:
+        'für always takes the accusative, so the question word after it is wen: Für wen ist das Geschenk?',
     },
     {
       id: 'ch24-ex-21',
@@ -553,7 +611,8 @@ export const chapter024: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Wem ...',
       maxLength: 40,
-      explanation: 'meiner Mutter is the dative object of schenken (the person receiving the gift), so the matching question uses wem: Wem schenkst du ein Buch?',
+      explanation:
+        'meiner Mutter is the dative object of schenken (the person receiving the gift), so the matching question uses wem: Wem schenkst du ein Buch?',
     },
     {
       id: 'ch24-ex-22',
@@ -564,12 +623,14 @@ export const chapter024: ChapterDefinition = {
       grammarFocus: ['wen', 'accusative', 'transfer'],
       instruction:
         'Write the question that would produce exactly the underlined part of the statement as the answer. Capitalisation and the question mark are checked.',
-      prompt: 'Wir besuchen unsere Großeltern am Sonntag. (underlined: unsere Großeltern)',
+      prompt:
+        'Wir besuchen unsere Großeltern am Sonntag. (underlined: unsere Großeltern)',
       acceptedAnswers: ['Wen besucht ihr am Sonntag?'],
       answerMode: 'normalized',
       placeholder: 'Wen ...',
       maxLength: 40,
-      explanation: 'unsere Großeltern is the accusative object of besuchen, so the matching question uses wen: Wen besucht ihr am Sonntag?',
+      explanation:
+        'unsere Großeltern is the accusative object of besuchen, so the matching question uses wen: Wen besucht ihr am Sonntag?',
     },
     {
       id: 'ch24-ex-23',
@@ -585,7 +646,8 @@ export const chapter024: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Was ...',
       maxLength: 40,
-      explanation: 'Der Zug is a thing and the subject of ankommen, so the matching question uses was: Was kommt um neun Uhr an?',
+      explanation:
+        'Der Zug is a thing and the subject of ankommen, so the matching question uses was: Was kommt um neun Uhr an?',
     },
     {
       id: 'ch24-ex-24',
@@ -605,7 +667,8 @@ export const chapter024: ChapterDefinition = {
       placeholder: 'Wen ... – Ich treffe ... Und wem ...',
       maxLength: 160,
       multiline: true,
-      explanation: 'treffen takes an accusative object (wen), while schenken takes a dative object for the recipient (wem); the two verbs need different question words even though both objects are people.',
+      explanation:
+        'treffen takes an accusative object (wen), while schenken takes a dative object for the recipient (wem); the two verbs need different question words even though both objects are people.',
     },
     {
       id: 'ch24-ex-25',
@@ -614,7 +677,8 @@ export const chapter024: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['wen', 'accusative', 'person'],
-      instruction: 'Choose the question word that asks about the underlined part of the answer.',
+      instruction:
+        'Choose the question word that asks about the underlined part of the answer.',
       prompt: 'Ich besuche meine Tante. → ___ besuchst du?',
       options: [
         { id: 'a', text: 'Wer' },
@@ -623,7 +687,8 @@ export const chapter024: ChapterDefinition = {
         { id: 'd', text: 'Was' },
       ],
       correctOptionId: 'b',
-      explanation: 'besuchen takes an accusative object; Tante is a person functioning as the direct object, so the question word is wen.',
+      explanation:
+        'besuchen takes an accusative object; Tante is a person functioning as the direct object, so the question word is wen.',
     },
     {
       id: 'ch24-ex-26',
@@ -632,7 +697,8 @@ export const chapter024: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['wem', 'dative', 'person'],
-      instruction: 'Choose the question word that asks about the underlined part of the answer.',
+      instruction:
+        'Choose the question word that asks about the underlined part of the answer.',
       prompt: 'Der Film gefällt meinem Vater. → ___ gefällt der Film?',
       options: [
         { id: 'a', text: 'Wer' },
@@ -641,7 +707,8 @@ export const chapter024: ChapterDefinition = {
         { id: 'd', text: 'Was' },
       ],
       correctOptionId: 'c',
-      explanation: 'gefallen always takes a dative object; Vater is a person, so the question word is wem.',
+      explanation:
+        'gefallen always takes a dative object; Vater is a person, so the question word is wem.',
     },
     {
       id: 'ch24-ex-27',
@@ -650,7 +717,8 @@ export const chapter024: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['was', 'accusative', 'thing'],
-      instruction: 'Choose the question word that asks about the underlined part of the answer.',
+      instruction:
+        'Choose the question word that asks about the underlined part of the answer.',
       prompt: 'Sie liest ein Buch. → ___ liest sie?',
       options: [
         { id: 'a', text: 'Wer' },
@@ -659,7 +727,8 @@ export const chapter024: ChapterDefinition = {
         { id: 'd', text: 'Was' },
       ],
       correctOptionId: 'd',
-      explanation: 'ein Buch is a thing and the direct object of lesen, so the question word is was, not wen, which is only used for people.',
+      explanation:
+        'ein Buch is a thing and the direct object of lesen, so the question word is was, not wen, which is only used for people.',
     },
     {
       id: 'ch24-ex-28',
@@ -668,7 +737,8 @@ export const chapter024: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['wer', 'nominative', 'person'],
-      instruction: 'Choose the question word that asks about the underlined part of the answer.',
+      instruction:
+        'Choose the question word that asks about the underlined part of the answer.',
       prompt: 'Der Arzt untersucht den Patienten. → ___ untersucht den Patienten?',
       options: [
         { id: 'a', text: 'Wer' },
@@ -677,7 +747,8 @@ export const chapter024: ChapterDefinition = {
         { id: 'd', text: 'Was' },
       ],
       correctOptionId: 'a',
-      explanation: 'Arzt is a person and the subject of untersuchen, so the subject question word wer is used.',
+      explanation:
+        'Arzt is a person and the subject of untersuchen, so the subject question word wer is used.',
     },
     {
       id: 'ch24-ex-29',
@@ -695,7 +766,8 @@ export const chapter024: ChapterDefinition = {
         { id: 'd', text: 'was' },
       ],
       correctOptionId: 'c',
-      explanation: 'The preposition mit always takes the dative, so the question word after it is wem.',
+      explanation:
+        'The preposition mit always takes the dative, so the question word after it is wem.',
     },
     {
       id: 'ch24-ex-30',
@@ -713,7 +785,8 @@ export const chapter024: ChapterDefinition = {
         { id: 'd', text: 'was' },
       ],
       correctOptionId: 'b',
-      explanation: 'The preposition ohne always takes the accusative, so the question word after it is wen.',
+      explanation:
+        'The preposition ohne always takes the accusative, so the question word after it is wen.',
     },
     {
       id: 'ch24-ex-31',
@@ -723,7 +796,8 @@ export const chapter024: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['wen', 'preposition', 'gegen', 'accusative'],
       instruction: 'Choose the question word that correctly follows the preposition.',
-      prompt: 'Die Mannschaft spielt gegen den Rivalen. → Gegen ___ spielt die Mannschaft?',
+      prompt:
+        'Die Mannschaft spielt gegen den Rivalen. → Gegen ___ spielt die Mannschaft?',
       options: [
         { id: 'a', text: 'wer' },
         { id: 'b', text: 'wen' },
@@ -731,7 +805,8 @@ export const chapter024: ChapterDefinition = {
         { id: 'd', text: 'was' },
       ],
       correctOptionId: 'b',
-      explanation: 'The preposition gegen always takes the accusative, so the question word after it is wen.',
+      explanation:
+        'The preposition gegen always takes the accusative, so the question word after it is wen.',
     },
     {
       id: 'ch24-ex-32',
@@ -749,7 +824,8 @@ export const chapter024: ChapterDefinition = {
         { id: 'd', text: 'was' },
       ],
       correctOptionId: 'c',
-      explanation: 'The preposition von always takes the dative, so the question word after it is wem.',
+      explanation:
+        'The preposition von always takes the dative, so the question word after it is wem.',
     },
     {
       id: 'ch24-ex-33',
@@ -767,7 +843,8 @@ export const chapter024: ChapterDefinition = {
         { id: 'd', text: 'was' },
       ],
       correctOptionId: 'c',
-      explanation: 'The preposition zu always takes the dative, so the question word after it is wem.',
+      explanation:
+        'The preposition zu always takes the dative, so the question word after it is wem.',
     },
     {
       id: 'ch24-ex-34',
@@ -785,7 +862,8 @@ export const chapter024: ChapterDefinition = {
         { id: 'd', text: 'was' },
       ],
       correctOptionId: 'c',
-      explanation: 'The preposition bei always takes the dative, so the question word after it is wem.',
+      explanation:
+        'The preposition bei always takes the dative, so the question word after it is wem.',
     },
     {
       id: 'ch24-ex-35',
@@ -794,7 +872,8 @@ export const chapter024: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['was', 'nominative', 'thing'],
-      instruction: 'Choose the question word that asks about the underlined part of the answer.',
+      instruction:
+        'Choose the question word that asks about the underlined part of the answer.',
       prompt: 'Der Zug fällt aus. → ___ fällt aus?',
       options: [
         { id: 'a', text: 'Wer' },
@@ -803,7 +882,8 @@ export const chapter024: ChapterDefinition = {
         { id: 'd', text: 'Was' },
       ],
       correctOptionId: 'd',
-      explanation: 'Zug is a thing and the subject of ausfallen, so the question word is was, not wer, which only asks about people.',
+      explanation:
+        'Zug is a thing and the subject of ausfallen, so the question word is was, not wer, which only asks about people.',
     },
     {
       id: 'ch24-ex-36',
@@ -812,7 +892,8 @@ export const chapter024: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['wer', 'nominative', 'person'],
-      instruction: 'Choose the question word that asks about the underlined part of the answer.',
+      instruction:
+        'Choose the question word that asks about the underlined part of the answer.',
       prompt: 'Meine Kollegen kommen morgen. → ___ kommt morgen?',
       options: [
         { id: 'a', text: 'Wer' },
@@ -821,7 +902,8 @@ export const chapter024: ChapterDefinition = {
         { id: 'd', text: 'Was' },
       ],
       correctOptionId: 'a',
-      explanation: 'Kollegen are people and the subject of kommen, so the question word is wer; because wer is grammatically singular, the question verb is kommt even though the answer is plural.',
+      explanation:
+        'Kollegen are people and the subject of kommen, so the question word is wer; because wer is grammatically singular, the question verb is kommt even though the answer is plural.',
     },
     {
       id: 'ch24-ex-37',
@@ -830,13 +912,16 @@ export const chapter024: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['wen', 'accusative', 'person'],
-      instruction: 'Fill in the correct question word: wer, wen, wem, or was. Capitalisation is not checked.',
-      prompt: '___ triffst du im Café? (treffen = accusative verb; Freundin = person, direct object)',
+      instruction:
+        'Fill in the correct question word: wer, wen, wem, or was. Capitalisation is not checked.',
+      prompt:
+        '___ triffst du im Café? (treffen = accusative verb; Freundin = person, direct object)',
       acceptedAnswers: ['wen'],
       answerMode: 'caseInsensitive',
       placeholder: 'wer / wen / wem / was',
       maxLength: 10,
-      explanation: 'treffen takes an accusative object; because Freundin is a person functioning as the direct object, the question word is wen.',
+      explanation:
+        'treffen takes an accusative object; because Freundin is a person functioning as the direct object, the question word is wen.',
     },
     {
       id: 'ch24-ex-38',
@@ -845,13 +930,15 @@ export const chapter024: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['wem', 'dative', 'person'],
-      instruction: 'Fill in the correct question word: wer, wen, wem, or was. Capitalisation is not checked.',
+      instruction:
+        'Fill in the correct question word: wer, wen, wem, or was. Capitalisation is not checked.',
       prompt: '___ gehört die Tasche? (gehören = dative verb; person)',
       acceptedAnswers: ['wem'],
       answerMode: 'caseInsensitive',
       placeholder: 'wer / wen / wem / was',
       maxLength: 10,
-      explanation: 'gehören always takes a dative object, so the question word about the owner is wem.',
+      explanation:
+        'gehören always takes a dative object, so the question word about the owner is wem.',
     },
     {
       id: 'ch24-ex-39',
@@ -860,13 +947,15 @@ export const chapter024: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['was', 'accusative', 'thing'],
-      instruction: 'Fill in the correct question word: wer, wen, wem, or was. Capitalisation is not checked.',
+      instruction:
+        'Fill in the correct question word: wer, wen, wem, or was. Capitalisation is not checked.',
       prompt: '___ brauchst du für die Prüfung? (brauchen = accusative verb; thing)',
       acceptedAnswers: ['was'],
       answerMode: 'caseInsensitive',
       placeholder: 'wer / wen / wem / was',
       maxLength: 10,
-      explanation: 'brauchen takes an accusative object; because the object is a thing, the question word is was.',
+      explanation:
+        'brauchen takes an accusative object; because the object is a thing, the question word is was.',
     },
     {
       id: 'ch24-ex-40',
@@ -875,13 +964,15 @@ export const chapter024: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['wer', 'nominative', 'person'],
-      instruction: 'Fill in the correct question word: wer, wen, wem, or was. Capitalisation is not checked.',
+      instruction:
+        'Fill in the correct question word: wer, wen, wem, or was. Capitalisation is not checked.',
       prompt: '___ singt so schön? (person, subject)',
       acceptedAnswers: ['wer'],
       answerMode: 'caseInsensitive',
       placeholder: 'wer / wen / wem / was',
       maxLength: 10,
-      explanation: 'The person singing is the subject of singen, so the question word is wer.',
+      explanation:
+        'The person singing is the subject of singen, so the question word is wer.',
     },
     {
       id: 'ch24-ex-41',
@@ -890,13 +981,15 @@ export const chapter024: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['wen', 'preposition', 'für', 'accusative'],
-      instruction: 'Fill in the correct question word: wer, wen, wem, or was. Capitalisation is not checked.',
+      instruction:
+        'Fill in the correct question word: wer, wen, wem, or was. Capitalisation is not checked.',
       prompt: 'Für ___ kochst du heute? (Gäste = people, accusative after für)',
       acceptedAnswers: ['wen'],
       answerMode: 'caseInsensitive',
       placeholder: 'wer / wen / wem / was',
       maxLength: 10,
-      explanation: 'The preposition für always takes the accusative, so the question word after it is wen.',
+      explanation:
+        'The preposition für always takes the accusative, so the question word after it is wen.',
     },
     {
       id: 'ch24-ex-42',
@@ -905,13 +998,15 @@ export const chapter024: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['wem', 'preposition', 'mit', 'dative'],
-      instruction: 'Fill in the correct question word: wer, wen, wem, or was. Capitalisation is not checked.',
+      instruction:
+        'Fill in the correct question word: wer, wen, wem, or was. Capitalisation is not checked.',
       prompt: 'Mit ___ gehst du ins Kino? (Freund = person, dative after mit)',
       acceptedAnswers: ['wem'],
       answerMode: 'caseInsensitive',
       placeholder: 'wer / wen / wem / was',
       maxLength: 10,
-      explanation: 'The preposition mit always takes the dative, so the question word after it is wem.',
+      explanation:
+        'The preposition mit always takes the dative, so the question word after it is wem.',
     },
     {
       id: 'ch24-ex-43',
@@ -927,7 +1022,8 @@ export const chapter024: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Wen ...',
       maxLength: 40,
-      explanation: 'fragen takes an accusative object; Nachbarn is a person functioning as the direct object, so the question begins with Wen: Wen fragst du?',
+      explanation:
+        'fragen takes an accusative object; Nachbarn is a person functioning as the direct object, so the question begins with Wen: Wen fragst du?',
     },
     {
       id: 'ch24-ex-44',
@@ -943,7 +1039,8 @@ export const chapter024: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Wem ...',
       maxLength: 40,
-      explanation: 'danken takes a dative object; Schwester is a person, so the question begins with Wem: Wem dankt er?',
+      explanation:
+        'danken takes a dative object; Schwester is a person, so the question begins with Wem: Wem dankt er?',
     },
     {
       id: 'ch24-ex-45',
@@ -959,7 +1056,8 @@ export const chapter024: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Was ...',
       maxLength: 40,
-      explanation: 'Handtuch is a thing and the subject of hängen, so the question begins with Was: Was hängt im Bad?',
+      explanation:
+        'Handtuch is a thing and the subject of hängen, so the question begins with Was: Was hängt im Bad?',
     },
     {
       id: 'ch24-ex-46',
@@ -975,7 +1073,8 @@ export const chapter024: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Für wen ...',
       maxLength: 40,
-      explanation: 'für always takes the accusative, so the question word after it is wen: Für wen ist die Party?',
+      explanation:
+        'für always takes the accusative, so the question word after it is wen: Für wen ist die Party?',
     },
     {
       id: 'ch24-ex-47',
@@ -991,7 +1090,8 @@ export const chapter024: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Wem ...',
       maxLength: 40,
-      explanation: 'meinem Bruder is the dative object of geben (the person receiving the book), so the matching question uses wem: Wem gibst du das Buch?',
+      explanation:
+        'meinem Bruder is the dative object of geben (the person receiving the book), so the matching question uses wem: Wem gibst du das Buch?',
     },
     {
       id: 'ch24-ex-48',
@@ -1007,7 +1107,8 @@ export const chapter024: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Wen ...',
       maxLength: 40,
-      explanation: 'seinen Freund is the accusative object of anrufen, so the matching question uses wen: Wen ruft er an?',
+      explanation:
+        'seinen Freund is the accusative object of anrufen, so the matching question uses wen: Wen ruft er an?',
     },
     {
       id: 'ch24-ex-49',
@@ -1027,7 +1128,8 @@ export const chapter024: ChapterDefinition = {
       placeholder: 'Wen ... – Ich treffe ... Und wem ...',
       maxLength: 160,
       multiline: true,
-      explanation: 'treffen takes an accusative object (wen), while gehören takes a dative object for the owner (wem); the two verbs need different question words even though both objects are people.',
+      explanation:
+        'treffen takes an accusative object (wen), while gehören takes a dative object for the owner (wem); the two verbs need different question words even though both objects are people.',
     },
     {
       id: 'ch24-ex-50',
@@ -1041,7 +1143,8 @@ export const chapter024: ChapterDefinition = {
       templateParts: ['', ' hilfst du in der Küche?'],
       slots: [{ id: 'ch24-ex50-slot1', correctWord: 'Wem' }],
       wordBank: ['Wer', 'Wen', 'Wem'],
-      explanation: 'helfen always takes a dative object, so the question word about the person is Wem.',
+      explanation:
+        'helfen always takes a dative object, so the question word about the person is Wem.',
     },
     {
       id: 'ch24-ex-51',
@@ -1055,7 +1158,8 @@ export const chapter024: ChapterDefinition = {
       templateParts: ['', ' siehst du im Garten?'],
       slots: [{ id: 'ch24-ex51-slot1', correctWord: 'Wen' }],
       wordBank: ['Wer', 'Wen', 'Wem'],
-      explanation: 'sehen takes an accusative object; because the object is a person, the question word is Wen.',
+      explanation:
+        'sehen takes an accusative object; because the object is a person, the question word is Wen.',
     },
     {
       id: 'ch24-ex-52',
@@ -1069,7 +1173,8 @@ export const chapter024: ChapterDefinition = {
       templateParts: ['', ' wohnt in diesem Haus?'],
       slots: [{ id: 'ch24-ex52-slot1', correctWord: 'Wer' }],
       wordBank: ['Wer', 'Wen', 'Wem'],
-      explanation: 'The person living in the house is the subject of wohnen, so the question word is Wer.',
+      explanation:
+        'The person living in the house is the subject of wohnen, so the question word is Wer.',
     },
     {
       id: 'ch24-ex-53',
@@ -1083,7 +1188,8 @@ export const chapter024: ChapterDefinition = {
       templateParts: ['', ' kaufst du im Supermarkt?'],
       slots: [{ id: 'ch24-ex53-slot1', correctWord: 'Was' }],
       wordBank: ['Wer', 'Was', 'Wen'],
-      explanation: 'kaufen takes an accusative object; because the object is a thing, the question word is Was, not Wen, which is only used for people.',
+      explanation:
+        'kaufen takes an accusative object; because the object is a thing, the question word is Was, not Wen, which is only used for people.',
     },
     {
       id: 'ch24-ex-54',
@@ -1097,7 +1203,8 @@ export const chapter024: ChapterDefinition = {
       templateParts: ['', ' liegt auf dem Sofa?'],
       slots: [{ id: 'ch24-ex54-slot1', correctWord: 'Was' }],
       wordBank: ['Wer', 'Was', 'Wem'],
-      explanation: 'The thing lying on the sofa is the subject of liegen, so the question word is Was, not Wer, which only asks about people.',
+      explanation:
+        'The thing lying on the sofa is the subject of liegen, so the question word is Was, not Wer, which only asks about people.',
     },
     {
       id: 'ch24-ex-55',
@@ -1112,7 +1219,8 @@ export const chapter024: ChapterDefinition = {
       templateParts: ['', ' dankst du für die Hilfe?'],
       slots: [{ id: 'ch24-ex55-slot1', correctWord: 'Wem' }],
       wordBank: ['Wer', 'Wen', 'Wem'],
-      explanation: 'danken always takes a dative object, so the question word about the person thanked is Wem.',
+      explanation:
+        'danken always takes a dative object, so the question word about the person thanked is Wem.',
     },
     {
       id: 'ch24-ex-56',
@@ -1126,7 +1234,8 @@ export const chapter024: ChapterDefinition = {
       templateParts: ['', ' lädst du zur Party ein?'],
       slots: [{ id: 'ch24-ex56-slot1', correctWord: 'Wen' }],
       wordBank: ['Wer', 'Wen', 'Wem'],
-      explanation: 'einladen takes an accusative object; because a person is invited, the question word is Wen.',
+      explanation:
+        'einladen takes an accusative object; because a person is invited, the question word is Wen.',
     },
     {
       id: 'ch24-ex-57',
@@ -1141,7 +1250,8 @@ export const chapter024: ChapterDefinition = {
       templateParts: ['Für ', ' ist das Buch?'],
       slots: [{ id: 'ch24-ex57-slot1', correctWord: 'wen' }],
       wordBank: ['wen', 'wem', 'wer'],
-      explanation: 'The preposition für always takes the accusative, so the question word after it is wen.',
+      explanation:
+        'The preposition für always takes the accusative, so the question word after it is wen.',
     },
     {
       id: 'ch24-ex-58',
@@ -1156,7 +1266,8 @@ export const chapter024: ChapterDefinition = {
       templateParts: ['Mit ', ' sprichst du gerade?'],
       slots: [{ id: 'ch24-ex58-slot1', correctWord: 'wem' }],
       wordBank: ['wen', 'wem', 'wer'],
-      explanation: 'The preposition mit always takes the dative, so the question word after it is wem.',
+      explanation:
+        'The preposition mit always takes the dative, so the question word after it is wem.',
     },
     {
       id: 'ch24-ex-59',
@@ -1171,7 +1282,8 @@ export const chapter024: ChapterDefinition = {
       templateParts: ['Von ', ' hast du das gehört?'],
       slots: [{ id: 'ch24-ex59-slot1', correctWord: 'wem' }],
       wordBank: ['wen', 'wem', 'was'],
-      explanation: 'The preposition von always takes the dative, so the question word after it is wem.',
+      explanation:
+        'The preposition von always takes the dative, so the question word after it is wem.',
     },
     {
       id: 'ch24-ex-60',
@@ -1186,7 +1298,8 @@ export const chapter024: ChapterDefinition = {
       templateParts: ['Gegen ', ' spielt ihr am Samstag?'],
       slots: [{ id: 'ch24-ex60-slot1', correctWord: 'wen' }],
       wordBank: ['wen', 'wem', 'wer'],
-      explanation: 'The preposition gegen always takes the accusative, so the question word after it is wen.',
+      explanation:
+        'The preposition gegen always takes the accusative, so the question word after it is wen.',
     },
     {
       id: 'ch24-ex-61',
@@ -1201,7 +1314,8 @@ export const chapter024: ChapterDefinition = {
       templateParts: ['', ' schmeckt die Suppe am besten?'],
       slots: [{ id: 'ch24-ex61-slot1', correctWord: 'Wem' }],
       wordBank: ['Wer', 'Wen', 'Wem'],
-      explanation: 'schmecken takes a dative object for the person who tastes something, so the question word is Wem.',
+      explanation:
+        'schmecken takes a dative object for the person who tastes something, so the question word is Wem.',
     },
     {
       id: 'ch24-ex-62',
@@ -1214,12 +1328,21 @@ export const chapter024: ChapterDefinition = {
       prompt: 'Match the declarative sentence with the matching question.',
       pairs: [
         { id: 'ch24-ex62-p1', left: 'Ich sehe meinen Bruder.', right: 'Wen siehst du?' },
-        { id: 'ch24-ex62-p2', left: 'Ich helfe meiner Schwester.', right: 'Wem hilfst du?' },
-        { id: 'ch24-ex62-p3', left: 'Der Lehrer kommt später.', right: 'Wer kommt später?' },
+        {
+          id: 'ch24-ex62-p2',
+          left: 'Ich helfe meiner Schwester.',
+          right: 'Wem hilfst du?',
+        },
+        {
+          id: 'ch24-ex62-p3',
+          left: 'Der Lehrer kommt später.',
+          right: 'Wer kommt später?',
+        },
         { id: 'ch24-ex62-p4', left: 'Ich kaufe ein Buch.', right: 'Was kaufst du?' },
         { id: 'ch24-ex62-p5', left: 'Ich danke meinem Onkel.', right: 'Wem dankst du?' },
       ],
-      explanation: 'Each question word matches the case and role of the corresponding phrase: wer for a nominative person, wen for an accusative person, wem for a dative person, and was for a thing.',
+      explanation:
+        'Each question word matches the case and role of the corresponding phrase: wer for a nominative person, wen for an accusative person, wem for a dative person, and was for a thing.',
     },
     {
       id: 'ch24-ex-63',
@@ -1231,13 +1354,34 @@ export const chapter024: ChapterDefinition = {
       instruction: 'Match each statement with the question it answers.',
       prompt: 'Match the declarative sentence with the matching question.',
       pairs: [
-        { id: 'ch24-ex63-p1', left: 'Ich fahre mit meiner Freundin.', right: 'Mit wem fährst du?' },
-        { id: 'ch24-ex63-p2', left: 'Das Geschenk ist für meinen Vater.', right: 'Für wen ist das Geschenk?' },
-        { id: 'ch24-ex63-p3', left: 'Wir spielen gegen die Nachbarn.', right: 'Gegen wen spielt ihr?' },
-        { id: 'ch24-ex63-p4', left: 'Ich komme von meiner Oma.', right: 'Von wem kommst du?' },
-        { id: 'ch24-ex63-p5', left: 'Ich gehe zu meinem Arzt.', right: 'Zu wem gehst du?' },
+        {
+          id: 'ch24-ex63-p1',
+          left: 'Ich fahre mit meiner Freundin.',
+          right: 'Mit wem fährst du?',
+        },
+        {
+          id: 'ch24-ex63-p2',
+          left: 'Das Geschenk ist für meinen Vater.',
+          right: 'Für wen ist das Geschenk?',
+        },
+        {
+          id: 'ch24-ex63-p3',
+          left: 'Wir spielen gegen die Nachbarn.',
+          right: 'Gegen wen spielt ihr?',
+        },
+        {
+          id: 'ch24-ex63-p4',
+          left: 'Ich komme von meiner Oma.',
+          right: 'Von wem kommst du?',
+        },
+        {
+          id: 'ch24-ex63-p5',
+          left: 'Ich gehe zu meinem Arzt.',
+          right: 'Zu wem gehst du?',
+        },
       ],
-      explanation: 'mit, von, and zu always take the dative, so their question word is wem; für and gegen always take the accusative, so their question word is wen — the preposition, not the sentence position, decides the case.',
+      explanation:
+        'mit, von, and zu always take the dative, so their question word is wem; für and gegen always take the accusative, so their question word is wen — the preposition, not the sentence position, decides the case.',
     },
     {
       id: 'ch24-ex-64',
@@ -1249,13 +1393,34 @@ export const chapter024: ChapterDefinition = {
       instruction: 'Match each statement with the question it answers.',
       prompt: 'Match the declarative sentence with the matching subject question.',
       pairs: [
-        { id: 'ch24-ex64-p1', left: 'Meine Mutter kocht das Essen.', right: 'Wer kocht das Essen?' },
-        { id: 'ch24-ex64-p2', left: 'Der Kaffee steht auf dem Tisch.', right: 'Was steht auf dem Tisch?' },
-        { id: 'ch24-ex64-p3', left: 'Mein Onkel repariert das Auto.', right: 'Wer repariert das Auto?' },
-        { id: 'ch24-ex64-p4', left: 'Die Suppe schmeckt sehr gut.', right: 'Was schmeckt sehr gut?' },
-        { id: 'ch24-ex64-p5', left: 'Meine Kollegin arbeitet heute.', right: 'Wer arbeitet heute?' },
+        {
+          id: 'ch24-ex64-p1',
+          left: 'Meine Mutter kocht das Essen.',
+          right: 'Wer kocht das Essen?',
+        },
+        {
+          id: 'ch24-ex64-p2',
+          left: 'Der Kaffee steht auf dem Tisch.',
+          right: 'Was steht auf dem Tisch?',
+        },
+        {
+          id: 'ch24-ex64-p3',
+          left: 'Mein Onkel repariert das Auto.',
+          right: 'Wer repariert das Auto?',
+        },
+        {
+          id: 'ch24-ex64-p4',
+          left: 'Die Suppe schmeckt sehr gut.',
+          right: 'Was schmeckt sehr gut?',
+        },
+        {
+          id: 'ch24-ex64-p5',
+          left: 'Meine Kollegin arbeitet heute.',
+          right: 'Wer arbeitet heute?',
+        },
       ],
-      explanation: 'A question about the subject of the sentence always uses wer for a person or was for a thing, because the subject is always in the nominative.',
+      explanation:
+        'A question about the subject of the sentence always uses wer for a person or was for a thing, because the subject is always in the nominative.',
     },
     {
       id: 'ch24-ex-65',
@@ -1265,15 +1430,33 @@ export const chapter024: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['wen', 'was', 'accusative'],
       instruction: 'Match each statement with the question it answers.',
-      prompt: 'Match the declarative sentence with the matching accusative-object question.',
+      prompt:
+        'Match the declarative sentence with the matching accusative-object question.',
       pairs: [
-        { id: 'ch24-ex65-p1', left: 'Ich treffe meinen Freund.', right: 'Wen triffst du?' },
+        {
+          id: 'ch24-ex65-p1',
+          left: 'Ich treffe meinen Freund.',
+          right: 'Wen triffst du?',
+        },
         { id: 'ch24-ex65-p2', left: 'Er kauft einen Fernseher.', right: 'Was kauft er?' },
-        { id: 'ch24-ex65-p3', left: 'Wir besuchen unsere Großeltern.', right: 'Wen besucht ihr?' },
-        { id: 'ch24-ex65-p4', left: 'Sie braucht einen Regenschirm.', right: 'Was braucht sie?' },
-        { id: 'ch24-ex65-p5', left: 'Ich lade meine Nachbarn ein.', right: 'Wen lädst du ein?' },
+        {
+          id: 'ch24-ex65-p3',
+          left: 'Wir besuchen unsere Großeltern.',
+          right: 'Wen besucht ihr?',
+        },
+        {
+          id: 'ch24-ex65-p4',
+          left: 'Sie braucht einen Regenschirm.',
+          right: 'Was braucht sie?',
+        },
+        {
+          id: 'ch24-ex65-p5',
+          left: 'Ich lade meine Nachbarn ein.',
+          right: 'Wen lädst du ein?',
+        },
       ],
-      explanation: 'All five verbs take an accusative object; the question word is wen when the object is a person and was when the object is a thing.',
+      explanation:
+        'All five verbs take an accusative object; the question word is wen when the object is a person and was when the object is a thing.',
     },
     {
       id: 'ch24-ex-66',
@@ -1285,13 +1468,34 @@ export const chapter024: ChapterDefinition = {
       instruction: 'Match each statement with the question it answers.',
       prompt: 'Match the declarative sentence with the matching dative-object question.',
       pairs: [
-        { id: 'ch24-ex66-p1', left: 'Ich gebe meinem Vater das Buch.', right: 'Wem gibst du das Buch?' },
-        { id: 'ch24-ex66-p2', left: 'Der Kellner bringt der Gästin die Rechnung.', right: 'Wem bringt der Kellner die Rechnung?' },
-        { id: 'ch24-ex66-p3', left: 'Ich antworte meiner Chefin.', right: 'Wem antwortest du?' },
-        { id: 'ch24-ex66-p4', left: 'Das Auto gehört meinem Bruder.', right: 'Wem gehört das Auto?' },
-        { id: 'ch24-ex66-p5', left: 'Ich schenke meiner Schwester Blumen.', right: 'Wem schenkst du Blumen?' },
+        {
+          id: 'ch24-ex66-p1',
+          left: 'Ich gebe meinem Vater das Buch.',
+          right: 'Wem gibst du das Buch?',
+        },
+        {
+          id: 'ch24-ex66-p2',
+          left: 'Der Kellner bringt der Gästin die Rechnung.',
+          right: 'Wem bringt der Kellner die Rechnung?',
+        },
+        {
+          id: 'ch24-ex66-p3',
+          left: 'Ich antworte meiner Chefin.',
+          right: 'Wem antwortest du?',
+        },
+        {
+          id: 'ch24-ex66-p4',
+          left: 'Das Auto gehört meinem Bruder.',
+          right: 'Wem gehört das Auto?',
+        },
+        {
+          id: 'ch24-ex66-p5',
+          left: 'Ich schenke meiner Schwester Blumen.',
+          right: 'Wem schenkst du Blumen?',
+        },
       ],
-      explanation: 'geben, bringen, antworten, gehören, and schenken all take a dative object for the person involved, so every matching question uses wem.',
+      explanation:
+        'geben, bringen, antworten, gehören, and schenken all take a dative object for the person involved, so every matching question uses wem.',
     },
     {
       id: 'ch24-ex-67',
@@ -1303,13 +1507,34 @@ export const chapter024: ChapterDefinition = {
       instruction: 'Match each verb-and-cue pair with the question it produces.',
       prompt: 'Match the cue with the question that uses the correct case.',
       pairs: [
-        { id: 'ch24-ex67-p1', left: 'sehen (accusative) – Onkel', right: 'Wen siehst du?' },
-        { id: 'ch24-ex67-p2', left: 'helfen (dative) – Nachbarin', right: 'Wem hilfst du?' },
-        { id: 'ch24-ex67-p3', left: 'kaufen (accusative) – Brot', right: 'Was kaufst du?' },
-        { id: 'ch24-ex67-p4', left: 'gehören (dative) – Fahrrad', right: 'Wem gehört das Fahrrad?' },
-        { id: 'ch24-ex67-p5', left: 'wohnen (nominative) – Student', right: 'Wer wohnt hier?' },
+        {
+          id: 'ch24-ex67-p1',
+          left: 'sehen (accusative) – Onkel',
+          right: 'Wen siehst du?',
+        },
+        {
+          id: 'ch24-ex67-p2',
+          left: 'helfen (dative) – Nachbarin',
+          right: 'Wem hilfst du?',
+        },
+        {
+          id: 'ch24-ex67-p3',
+          left: 'kaufen (accusative) – Brot',
+          right: 'Was kaufst du?',
+        },
+        {
+          id: 'ch24-ex67-p4',
+          left: 'gehören (dative) – Fahrrad',
+          right: 'Wem gehört das Fahrrad?',
+        },
+        {
+          id: 'ch24-ex67-p5',
+          left: 'wohnen (nominative) – Student',
+          right: 'Wer wohnt hier?',
+        },
       ],
-      explanation: 'Each verb fixes the case of its object (or subject): sehen and kaufen take the accusative, helfen and gehören take the dative, and wohnen has a nominative subject, which decides whether wen, wem, was, or wer is needed.',
+      explanation:
+        'Each verb fixes the case of its object (or subject): sehen and kaufen take the accusative, helfen and gehören take the dative, and wohnen has a nominative subject, which decides whether wen, wem, was, or wer is needed.',
     },
     {
       id: 'ch24-ex-68',
@@ -1328,7 +1553,8 @@ export const chapter024: ChapterDefinition = {
         { id: 'ch24-ex68-p5', left: 'gegen meinen Rivalen', right: 'gegen wen' },
         { id: 'ch24-ex68-p6', left: 'zu meinem Onkel', right: 'zu wem' },
       ],
-      explanation: 'mit, von, and zu always take the dative, so they pair with wem; für, ohne, and gegen always take the accusative, so they pair with wen — the preposition alone decides the case.',
+      explanation:
+        'mit, von, and zu always take the dative, so they pair with wem; für, ohne, and gegen always take the accusative, so they pair with wen — the preposition alone decides the case.',
     },
     {
       id: 'ch24-ex-69',
@@ -1342,7 +1568,8 @@ export const chapter024: ChapterDefinition = {
       tokens: ['Wer', 'siehst', 'du', 'im', 'Park?'],
       errorTokenIndex: 0,
       correction: 'Wen',
-      explanation: 'sehen takes an accusative object; a person as the object needs Wen, not Wer, which only asks about the subject.',
+      explanation:
+        'sehen takes an accusative object; a person as the object needs Wen, not Wer, which only asks about the subject.',
     },
     {
       id: 'ch24-ex-70',
@@ -1356,7 +1583,8 @@ export const chapter024: ChapterDefinition = {
       tokens: ['Wen', 'hilfst', 'du', 'in', 'der', 'Schule?'],
       errorTokenIndex: 0,
       correction: 'Wem',
-      explanation: 'helfen always takes a dative object, so the question word must be Wem, not the accusative Wen.',
+      explanation:
+        'helfen always takes a dative object, so the question word must be Wem, not the accusative Wen.',
     },
     {
       id: 'ch24-ex-71',
@@ -1370,7 +1598,8 @@ export const chapter024: ChapterDefinition = {
       tokens: ['Wen', 'gehört', 'das', 'Fahrrad?'],
       errorTokenIndex: 0,
       correction: 'Wem',
-      explanation: 'gehören takes a dative object; the owner is asked about with Wem, not Wen.',
+      explanation:
+        'gehören takes a dative object; the owner is asked about with Wem, not Wen.',
     },
     {
       id: 'ch24-ex-72',
@@ -1384,7 +1613,8 @@ export const chapter024: ChapterDefinition = {
       tokens: ['Für', 'wem', 'ist', 'das', 'Geschenk?'],
       errorTokenIndex: 1,
       correction: 'wen',
-      explanation: 'The preposition für always takes the accusative, so the question word after it is wen, never wem.',
+      explanation:
+        'The preposition für always takes the accusative, so the question word after it is wen, never wem.',
     },
     {
       id: 'ch24-ex-73',
@@ -1398,7 +1628,8 @@ export const chapter024: ChapterDefinition = {
       tokens: ['Was', 'besucht', 'ihr', 'eure', 'Großeltern', 'am', 'Sonntag?'],
       errorTokenIndex: 0,
       correction: 'Wen',
-      explanation: 'Großeltern are people, not things, so the question about them as the accusative object must use Wen, not Was, which only asks about things.',
+      explanation:
+        'Großeltern are people, not things, so the question about them as the accusative object must use Wen, not Was, which only asks about things.',
     },
   ],
 };

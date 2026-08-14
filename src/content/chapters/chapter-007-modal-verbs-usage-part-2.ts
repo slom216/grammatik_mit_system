@@ -769,7 +769,11 @@ export const chapter007: ChapterDefinition = {
           left: 'Der Trainer empfiehlt mehr Wasser trinken.',
           right: 'Du sollst mehr Wasser trinken.',
         },
-        { id: 'p2', left: 'Sie liebt klassische Musik.', right: 'Sie mag klassische Musik.' },
+        {
+          id: 'p2',
+          left: 'Sie liebt klassische Musik.',
+          right: 'Sie mag klassische Musik.',
+        },
         {
           id: 'p3',
           left: 'Alkohol ist für Jugendliche verboten.',
@@ -793,7 +797,16 @@ export const chapter007: ChapterDefinition = {
       grammarFocus: ['nicht-duerfen', 'nicht-muessen', 'error-correction'],
       instruction: 'Find the token with the error.',
       prompt: 'Find and correct the error in this sentence.',
-      tokens: ['Im', 'Prüfungsraum', 'musst', 'du', 'nicht', 'dein', 'Handy', 'benutzen.'],
+      tokens: [
+        'Im',
+        'Prüfungsraum',
+        'musst',
+        'du',
+        'nicht',
+        'dein',
+        'Handy',
+        'benutzen.',
+      ],
       errorTokenIndex: 2,
       correction: 'darfst',
       explanation:
@@ -873,7 +886,17 @@ export const chapter007: ChapterDefinition = {
       grammarFocus: ['nicht-duerfen', 'nicht-muessen', 'error-correction'],
       instruction: 'Find the token with the error.',
       prompt: 'Find and correct the error in this sentence.',
-      tokens: ['Kinder', 'müssen', 'hier', 'nicht', 'schwimmen,', 'das', 'ist', 'zu', 'gefährlich.'],
+      tokens: [
+        'Kinder',
+        'müssen',
+        'hier',
+        'nicht',
+        'schwimmen,',
+        'das',
+        'ist',
+        'zu',
+        'gefährlich.',
+      ],
       errorTokenIndex: 1,
       correction: 'dürfen',
       explanation:
@@ -995,7 +1018,10 @@ export const chapter007: ChapterDefinition = {
       grammarFocus: ['nicht-muessen'],
       instruction: 'Drag the correct word into the blank.',
       prompt: 'Complete the sentence with the correct modal verb.',
-      templateParts: ['Du hast eine Jahreskarte gekauft, aber du ', ' nicht jeden Tag kommen.'],
+      templateParts: [
+        'Du hast eine Jahreskarte gekauft, aber du ',
+        ' nicht jeden Tag kommen.',
+      ],
       slots: [{ id: 'slot1', correctWord: 'musst' }],
       wordBank: ['musst', 'darfst', 'sollst'],
       explanation:
@@ -1056,7 +1082,8 @@ export const chapter007: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['moegen', 'preference'],
-      instruction: 'Write a complete sentence saying that you don’t like spiders, using mögen.',
+      instruction:
+        'Write a complete sentence saying that you don’t like spiders, using mögen.',
       prompt: 'Say that you don’t like spiders (a general dislike).',
       acceptedAnswers: ['Ich mag keine Spinnen.'],
       answerMode: 'normalized',
@@ -1073,7 +1100,16 @@ export const chapter007: ChapterDefinition = {
       grammarFocus: ['nicht-duerfen', 'nicht-muessen', 'error-correction'],
       instruction: 'Find the token with the error.',
       prompt: 'Find and correct the error in this sentence.',
-      tokens: ['In', 'der', 'Bibliothek', 'musst', 'du', 'nicht', 'laut', 'telefonieren.'],
+      tokens: [
+        'In',
+        'der',
+        'Bibliothek',
+        'musst',
+        'du',
+        'nicht',
+        'laut',
+        'telefonieren.',
+      ],
       errorTokenIndex: 3,
       correction: 'darfst',
       explanation:
@@ -1109,7 +1145,11 @@ export const chapter007: ChapterDefinition = {
           left: 'Rauchen ist im Restaurant verboten.',
           right: 'Hier darf man nicht rauchen.',
         },
-        { id: 'p2', left: 'Die Eltern raten: mehr lesen.', right: 'Du sollst mehr lesen.' },
+        {
+          id: 'p2',
+          left: 'Die Eltern raten: mehr lesen.',
+          right: 'Du sollst mehr lesen.',
+        },
         {
           id: 'p3',
           left: 'Allgemeine Vorliebe für Musik.',
@@ -1224,7 +1264,8 @@ export const chapter007: ChapterDefinition = {
         { id: 'd', text: 'mag' },
       ],
       correctOptionId: 'a',
-      explanation: 'A cinema rule against calls during the film is a prohibition (nicht dürfen).',
+      explanation:
+        'A cinema rule against calls during the film is a prohibition (nicht dürfen).',
     },
     {
       id: 'ch07-ex-54',
@@ -1283,7 +1324,8 @@ export const chapter007: ChapterDefinition = {
       templateParts: ['Ich ', ' Wandern in den Bergen.'],
       slots: [{ id: 'slot1', correctWord: 'mag' }],
       wordBank: ['mag', 'möchte', 'soll'],
-      explanation: 'A general liking for an activity is expressed with mögen, not möchte.',
+      explanation:
+        'A general liking for an activity is expressed with mögen, not möchte.',
     },
     {
       id: 'ch07-ex-57',
@@ -1311,7 +1353,8 @@ export const chapter007: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['nicht-muessen'],
-      instruction: 'Choose the sentence that correctly tells your roommate that cleaning today is optional, not forbidden.',
+      instruction:
+        'Choose the sentence that correctly tells your roommate that cleaning today is optional, not forbidden.',
       prompt:
         'Tell your roommate: "You don\'t have to clean today" (it is optional, not forbidden).',
       options: [
@@ -1351,7 +1394,19 @@ export const chapter007: ChapterDefinition = {
       grammarFocus: ['nicht-duerfen', 'nicht-muessen', 'error-correction'],
       instruction: 'Find the token with the error.',
       prompt: 'Find and correct the error in this sentence.',
-      tokens: ['Im', 'Stadion', 'musst', 'du', 'nicht', 'rauchen,', 'das', 'ist', 'gegen', 'die', 'Regeln.'],
+      tokens: [
+        'Im',
+        'Stadion',
+        'musst',
+        'du',
+        'nicht',
+        'rauchen,',
+        'das',
+        'ist',
+        'gegen',
+        'die',
+        'Regeln.',
+      ],
       errorTokenIndex: 2,
       correction: 'darfst',
       explanation:
@@ -1369,7 +1424,8 @@ export const chapter007: ChapterDefinition = {
       templateParts: ['In der Prüfung ', ' man nicht schummeln.'],
       slots: [{ id: 'slot1', correctWord: 'darf' }],
       wordBank: ['darf', 'muss', 'soll'],
-      explanation: 'Cheating in an exam is forbidden, a prohibition expressed with nicht dürfen.',
+      explanation:
+        'Cheating in an exam is forbidden, a prohibition expressed with nicht dürfen.',
     },
     {
       id: 'ch07-ex-62',
@@ -1416,7 +1472,8 @@ export const chapter007: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Wir müssen ...',
       maxLength: 60,
-      explanation: 'Since cleaning is optional, not forbidden, nicht müssen is the correct choice.',
+      explanation:
+        'Since cleaning is optional, not forbidden, nicht müssen is the correct choice.',
     },
     {
       id: 'ch07-ex-64',

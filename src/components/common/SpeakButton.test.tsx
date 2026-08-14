@@ -44,7 +44,9 @@ describe('SpeakButton', () => {
     const user = userEvent.setup();
     render(<SpeakButton text="Ich gehe heim." />);
 
-    await user.click(screen.getByRole('button', { name: /listen to "Ich gehe heim\."/i }));
+    await user.click(
+      screen.getByRole('button', { name: /listen to "Ich gehe heim\."/i }),
+    );
 
     expect(speak).toHaveBeenCalledTimes(1);
     expect((speak.mock.calls[0]?.[0] as { text: string }).text).toBe('Ich gehe heim.');

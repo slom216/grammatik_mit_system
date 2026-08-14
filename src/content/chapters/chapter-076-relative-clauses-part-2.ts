@@ -30,7 +30,7 @@ export const chapter076: ChapterDefinition = {
     introduction: [
       'Part 1 of this chapter covered relative clauses whose pronoun is the subject or direct object of its own clause — the nominative and accusative forms der/die/das/die and den/die/das/die. This chapter, Part 2, completes the relative pronoun system by adding the two remaining cases: the dative, used for indirect objects and for verbs that always take the dative (helfen, danken, gefallen, vertrauen...), and the genitive, which works like an embedded "whose" and shows possession inside the relative clause.',
       'Alongside the case system, this chapter also covers what happens when the shared element is not a direct or indirect object but the object of a preposition — der Mann, mit dem ich spreche — and a common, informal shortcut for places (and sometimes time) that many learners meet in everyday spoken German before they meet it in a textbook: wo, used instead of a preposition and a case-marked pronoun.',
-      'None of this changes the fundamentals you already know from Part 1: a relative pronoun still takes its gender and number from its antecedent (the noun it refers back to), its clause is still set off by commas, and its finite verb still moves all the way to the end. What is new is simply a wider range of pronoun forms and preposition combinations to choose from, based on the pronoun\'s grammatical job inside its own clause.',
+      "None of this changes the fundamentals you already know from Part 1: a relative pronoun still takes its gender and number from its antecedent (the noun it refers back to), its clause is still set off by commas, and its finite verb still moves all the way to the end. What is new is simply a wider range of pronoun forms and preposition combinations to choose from, based on the pronoun's grammatical job inside its own clause.",
     ],
     rules: [
       {
@@ -70,7 +70,8 @@ export const chapter076: ChapterDefinition = {
       },
       {
         id: 'ch76-rule-05',
-        heading: 'wo instead of preposition + relative pronoun for places (and sometimes time)',
+        heading:
+          'wo instead of preposition + relative pronoun for places (and sometimes time)',
         paragraphs: [
           'For places, spoken German very often replaces preposition + relative pronoun with the short, invariable word wo: die Stadt, wo ich wohne means the same as die Stadt, in der ich wohne. wo never changes for gender, number, or case, which makes it a convenient shortcut — but it is informal, and it only works when the antecedent is, or behaves like, a place.',
           'wo is also sometimes extended to time expressions in casual speech: Das war die Zeit, wo wir noch jung waren. (More formally: ..., als wir noch jung waren, or ..., in der wir noch jung waren.)',
@@ -82,7 +83,7 @@ export const chapter076: ChapterDefinition = {
         heading: 'Punctuation and combining more complex sentences',
         paragraphs: [
           'Every relative clause is still set off by commas on both sides (or by a comma and the end of the sentence), exactly as in Part 1 — regardless of which case the relative pronoun takes or whether a preposition precedes it.',
-          'To combine two sentences into one using a dative, genitive, or prepositional relative clause: find the noun the two sentences share, delete it (and its article) from the second sentence, replace it with the correct relative pronoun in the case its role in that second clause requires, move that pronoun — together with any preposition — to the front of the clause, and send the rest of that clause\'s finite verb to the end.',
+          "To combine two sentences into one using a dative, genitive, or prepositional relative clause: find the noun the two sentences share, delete it (and its article) from the second sentence, replace it with the correct relative pronoun in the case its role in that second clause requires, move that pronoun — together with any preposition — to the front of the clause, and send the rest of that clause's finite verb to the end.",
           'Ich kenne den Mann. + Ich habe dem Mann das Buch gegeben. → Ich kenne den Mann, dem ich das Buch gegeben habe.',
         ],
       },
@@ -106,8 +107,18 @@ export const chapter076: ChapterDefinition = {
         title: 'Prepositions + relative pronoun',
         columns: ['Preposition', 'Case it governs', 'Example', 'English'],
         rows: [
-          ['mit (always dative)', 'dative', 'der Stift, mit dem ich schreibe', 'the pen I write with'],
-          ['für (always accusative)', 'accusative', 'die Frau, für die ich arbeite', 'the woman I work for'],
+          [
+            'mit (always dative)',
+            'dative',
+            'der Stift, mit dem ich schreibe',
+            'the pen I write with',
+          ],
+          [
+            'für (always accusative)',
+            'accusative',
+            'die Frau, für die ich arbeite',
+            'the woman I work for',
+          ],
           [
             'von (always dative)',
             'dative',
@@ -120,7 +131,12 @@ export const chapter076: ChapterDefinition = {
             'der Freund, ohne den ich nicht fahre',
             "the friend without whom I don't go",
           ],
-          ['in (two-way, here location)', 'dative', 'das Haus, in dem ich wohne', 'the house I live in'],
+          [
+            'in (two-way, here location)',
+            'dative',
+            'das Haus, in dem ich wohne',
+            'the house I live in',
+          ],
           [
             'auf (two-way, here direction)',
             'accusative',
@@ -136,25 +152,29 @@ export const chapter076: ChapterDefinition = {
         german: 'Der Mann, dem ich geholfen habe, ist mein Nachbar.',
         english: 'The man I helped is my neighbor.',
         highlight: ['dem'],
-        explanation: 'helfen takes the dative; Mann is masculine, so the relative pronoun is dem.',
+        explanation:
+          'helfen takes the dative; Mann is masculine, so the relative pronoun is dem.',
       },
       {
         german: 'Die Kinder, denen ich geholfen habe, sind meine Nichten.',
         english: 'The children I helped are my nieces.',
         highlight: ['denen'],
-        explanation: 'The plural dative relative pronoun is denen, not den, which would be accusative singular masculine.',
+        explanation:
+          'The plural dative relative pronoun is denen, not den, which would be accusative singular masculine.',
       },
       {
         german: 'Der Mann, dessen Auto kaputt ist, wartet auf den Abschleppwagen.',
         english: 'The man whose car is broken is waiting for the tow truck.',
         highlight: ['dessen Auto'],
-        explanation: 'dessen behaves like a possessive article and is followed directly by the noun, with no article.',
+        explanation:
+          'dessen behaves like a possessive article and is followed directly by the noun, with no article.',
       },
       {
         german: 'Die Frau, deren Sohn hier studiert, kommt aus Spanien.',
         english: 'The woman whose son studies here is from Spain.',
         highlight: ['deren Sohn'],
-        explanation: 'deren is used for feminine and plural antecedents; again, no article follows it.',
+        explanation:
+          'deren is used for feminine and plural antecedents; again, no article follows it.',
       },
       {
         german: 'Die Leute, deren Haus wir besucht haben, sind sehr gastfreundlich.',
@@ -166,19 +186,22 @@ export const chapter076: ChapterDefinition = {
         german: 'Der Stift, mit dem ich schreibe, ist blau.',
         english: 'The pen I am writing with is blue.',
         highlight: ['mit dem'],
-        explanation: 'mit always governs the dative, so the masculine relative pronoun after it is dem.',
+        explanation:
+          'mit always governs the dative, so the masculine relative pronoun after it is dem.',
       },
       {
         german: 'Die Frau, für die ich arbeite, ist sehr nett.',
         english: 'The woman I work for is very nice.',
         highlight: ['für die'],
-        explanation: 'für always governs the accusative, so the feminine relative pronoun after it is die.',
+        explanation:
+          'für always governs the accusative, so the feminine relative pronoun after it is die.',
       },
       {
         german: 'Die Kollegin, von der ich erzählt habe, kommt morgen.',
         english: 'The colleague I told you about is coming tomorrow.',
         highlight: ['von der'],
-        explanation: 'von always governs the dative, so the feminine relative pronoun after it is der.',
+        explanation:
+          'von always governs the dative, so the feminine relative pronoun after it is der.',
       },
       {
         german: 'Die Stadt, wo ich wohne, ist sehr schön.',
@@ -190,7 +213,8 @@ export const chapter076: ChapterDefinition = {
         german: 'Das war die Zeit, wo wir noch jung waren.',
         english: 'That was the time when we were still young.',
         highlight: ['wo'],
-        explanation: 'wo is also used informally for time expressions, though als or in der is preferred in careful writing.',
+        explanation:
+          'wo is also used informally for time expressions, though als or in der is preferred in careful writing.',
       },
     ],
     commonMistakes: [
@@ -251,7 +275,8 @@ export const chapter076: ChapterDefinition = {
         { id: 'd', text: 'dessen' },
       ],
       correctOptionId: 'a',
-      explanation: 'helfen governs the dative; Mann is masculine, so the dative relative pronoun is dem.',
+      explanation:
+        'helfen governs the dative; Mann is masculine, so the dative relative pronoun is dem.',
     },
     {
       id: 'ch76-ex-02',
@@ -269,7 +294,8 @@ export const chapter076: ChapterDefinition = {
         { id: 'd', text: 'deren' },
       ],
       correctOptionId: 'a',
-      explanation: 'helfen governs the dative; Frau is feminine, so the dative relative pronoun is der.',
+      explanation:
+        'helfen governs the dative; Frau is feminine, so the dative relative pronoun is der.',
     },
     {
       id: 'ch76-ex-03',
@@ -305,7 +331,8 @@ export const chapter076: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'a',
-      explanation: 'Mann is masculine, so the genitive relative pronoun is dessen, followed directly by the noun Auto.',
+      explanation:
+        'Mann is masculine, so the genitive relative pronoun is dessen, followed directly by the noun Auto.',
     },
     {
       id: 'ch76-ex-05',
@@ -323,7 +350,8 @@ export const chapter076: ChapterDefinition = {
         { id: 'd', text: 'die' },
       ],
       correctOptionId: 'a',
-      explanation: 'Frau is feminine, so the genitive relative pronoun is deren, followed directly by the noun Sohn.',
+      explanation:
+        'Frau is feminine, so the genitive relative pronoun is deren, followed directly by the noun Sohn.',
     },
     {
       id: 'ch76-ex-06',
@@ -341,7 +369,8 @@ export const chapter076: ChapterDefinition = {
         { id: 'd', text: 'die' },
       ],
       correctOptionId: 'a',
-      explanation: 'Leute is plural, so the genitive relative pronoun is deren, followed directly by the noun Haus.',
+      explanation:
+        'Leute is plural, so the genitive relative pronoun is deren, followed directly by the noun Haus.',
     },
     {
       id: 'ch76-ex-07',
@@ -413,7 +442,8 @@ export const chapter076: ChapterDefinition = {
         { id: 'd', text: 'der' },
       ],
       correctOptionId: 'a',
-      explanation: 'wohnen describes a fixed location, so the two-way preposition in takes the dative here; Haus is neuter, so in dem.',
+      explanation:
+        'wohnen describes a fixed location, so the two-way preposition in takes the dative here; Haus is neuter, so in dem.',
     },
     {
       id: 'ch76-ex-11',
@@ -428,10 +458,14 @@ export const chapter076: ChapterDefinition = {
         { id: 'a', text: 'dem ich eine E-Mail geschrieben habe, unterrichtet Deutsch.' },
         { id: 'b', text: 'den ich eine E-Mail geschrieben habe, unterrichtet Deutsch.' },
         { id: 'c', text: 'der ich eine E-Mail geschrieben habe, unterrichtet Deutsch.' },
-        { id: 'd', text: 'dessen ich eine E-Mail geschrieben habe, unterrichtet Deutsch.' },
+        {
+          id: 'd',
+          text: 'dessen ich eine E-Mail geschrieben habe, unterrichtet Deutsch.',
+        },
       ],
       correctOptionId: 'a',
-      explanation: 'jemandem etwas schreiben takes a dative recipient; Lehrer is masculine, so the relative pronoun is dem.',
+      explanation:
+        'jemandem etwas schreiben takes a dative recipient; Lehrer is masculine, so the relative pronoun is dem.',
     },
     {
       id: 'ch76-ex-12',
@@ -449,7 +483,8 @@ export const chapter076: ChapterDefinition = {
         { id: 'd', text: 'Der Mann, dessen, Auto kaputt ist, wartet auf die Werkstatt.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The relative clause dessen Auto kaputt ist is set off by a comma on both sides, with no extra comma after dessen.',
+      explanation:
+        'The relative clause dessen Auto kaputt ist is set off by a comma on both sides, with no extra comma after dessen.',
     },
     {
       id: 'ch76-ex-13',
@@ -467,7 +502,8 @@ export const chapter076: ChapterDefinition = {
         { id: 'd', text: 'dessen' },
       ],
       correctOptionId: 'a',
-      explanation: 'wo replaces in der for a place, especially in spoken German: die Stadt, wo ich wohne = die Stadt, in der ich wohne.',
+      explanation:
+        'wo replaces in der for a place, especially in spoken German: die Stadt, wo ich wohne = die Stadt, in der ich wohne.',
     },
     {
       id: 'ch76-ex-14',
@@ -485,7 +521,8 @@ export const chapter076: ChapterDefinition = {
         { id: 'd', text: 'Der Grund, wobei ich nicht kommen konnte, war das Wetter.' },
       ],
       correctOptionId: 'b',
-      explanation: 'wo is reserved for places (and informally time); der Grund is abstract, so it needs the case-marked relative pronoun aus dem in careful writing.',
+      explanation:
+        'wo is reserved for places (and informally time); der Grund is abstract, so it needs the case-marked relative pronoun aus dem in careful writing.',
     },
     {
       id: 'ch76-ex-15',
@@ -503,7 +540,8 @@ export const chapter076: ChapterDefinition = {
         { id: 'd', text: 'Ich kenne den Studenten, dessen Laptop wurde gestohlen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'der Student is masculine, so dessen is correct; the finite verb wurde must move to the end of the relative clause: dessen Laptop gestohlen wurde.',
+      explanation:
+        'der Student is masculine, so dessen is correct; the finite verb wurde must move to the end of the relative clause: dessen Laptop gestohlen wurde.',
     },
     {
       id: 'ch76-ex-16',
@@ -518,7 +556,8 @@ export const chapter076: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dem',
       maxLength: 10,
-      explanation: 'vertrauen governs the dative; Chef is masculine, so the relative pronoun is dem.',
+      explanation:
+        'vertrauen governs the dative; Chef is masculine, so the relative pronoun is dem.',
     },
     {
       id: 'ch76-ex-17',
@@ -528,12 +567,14 @@ export const chapter076: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['relative-pronouns', 'dative', 'feminine'],
       instruction: 'Write the missing relative pronoun. Capitalisation is not checked.',
-      prompt: 'Die Ärztin, ___ ich vertraue, arbeitet im Krankenhaus. (vertrauen + Dativ)',
+      prompt:
+        'Die Ärztin, ___ ich vertraue, arbeitet im Krankenhaus. (vertrauen + Dativ)',
       acceptedAnswers: ['der'],
       answerMode: 'caseInsensitive',
       placeholder: 'der',
       maxLength: 10,
-      explanation: 'vertrauen governs the dative; Ärztin is feminine, so the relative pronoun is der.',
+      explanation:
+        'vertrauen governs the dative; Ärztin is feminine, so the relative pronoun is der.',
     },
     {
       id: 'ch76-ex-18',
@@ -548,7 +589,8 @@ export const chapter076: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dem',
       maxLength: 10,
-      explanation: 'helfen governs the dative; Kind is neuter, so the relative pronoun is dem.',
+      explanation:
+        'helfen governs the dative; Kind is neuter, so the relative pronoun is dem.',
     },
     {
       id: 'ch76-ex-19',
@@ -558,7 +600,8 @@ export const chapter076: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['relative-pronouns', 'dative', 'plural'],
       instruction: 'Write the missing relative pronoun. Capitalisation is not checked.',
-      prompt: 'Die Nachbarn, ___ wir geholfen haben, haben sich bedankt. (helfen + Dativ)',
+      prompt:
+        'Die Nachbarn, ___ wir geholfen haben, haben sich bedankt. (helfen + Dativ)',
       acceptedAnswers: ['denen'],
       answerMode: 'caseInsensitive',
       placeholder: 'denen',
@@ -633,12 +676,14 @@ export const chapter076: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['relative-pronouns', 'preposition', 'dative'],
       instruction: 'Write the missing relative pronoun. Capitalisation is not checked.',
-      prompt: 'Der Kugelschreiber, mit ___ ich schreibe, gehört meiner Schwester. (der Kugelschreiber)',
+      prompt:
+        'Der Kugelschreiber, mit ___ ich schreibe, gehört meiner Schwester. (der Kugelschreiber)',
       acceptedAnswers: ['dem'],
       answerMode: 'caseInsensitive',
       placeholder: 'dem',
       maxLength: 10,
-      explanation: 'mit always governs the dative; Kugelschreiber is masculine, so mit dem.',
+      explanation:
+        'mit always governs the dative; Kugelschreiber is masculine, so mit dem.',
     },
     {
       id: 'ch76-ex-25',
@@ -648,12 +693,14 @@ export const chapter076: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['relative-pronouns', 'preposition', 'accusative'],
       instruction: 'Write the missing relative pronoun. Capitalisation is not checked.',
-      prompt: 'Die Organisation, für ___ ich arbeite, hilft armen Familien. (die Organisation)',
+      prompt:
+        'Die Organisation, für ___ ich arbeite, hilft armen Familien. (die Organisation)',
       acceptedAnswers: ['die'],
       answerMode: 'caseInsensitive',
       placeholder: 'die',
       maxLength: 10,
-      explanation: 'für always governs the accusative; Organisation is feminine, so für die.',
+      explanation:
+        'für always governs the accusative; Organisation is feminine, so für die.',
     },
     {
       id: 'ch76-ex-26',
@@ -677,13 +724,15 @@ export const chapter076: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['clause-combination', 'dative'],
-      instruction: 'Combine the two sentences into one, using a dative relative clause. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences into one, using a dative relative clause. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich kenne den Mann. + Ich habe dem Mann das Buch gegeben.',
       acceptedAnswers: ['Ich kenne den Mann, dem ich das Buch gegeben habe.'],
       answerMode: 'normalized',
       placeholder: 'Ich kenne den Mann, ...',
       maxLength: 70,
-      explanation: 'geben takes a dative recipient; Mann is masculine, so the relative pronoun is dem, and the verb habe moves to the end.',
+      explanation:
+        'geben takes a dative recipient; Mann is masculine, so the relative pronoun is dem, and the verb habe moves to the end.',
     },
     {
       id: 'ch76-ex-28',
@@ -692,13 +741,15 @@ export const chapter076: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['clause-combination', 'genitive'],
-      instruction: 'Combine the two sentences into one, using a genitive relative clause. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences into one, using a genitive relative clause. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Das ist der Nachbar. + Sein Hund bellt ständig.',
       acceptedAnswers: ['Das ist der Nachbar, dessen Hund ständig bellt.'],
       answerMode: 'normalized',
       placeholder: 'Das ist der Nachbar, ...',
       maxLength: 70,
-      explanation: 'Nachbar is masculine, so the genitive relative pronoun dessen replaces sein and is followed directly by Hund, with no article.',
+      explanation:
+        'Nachbar is masculine, so the genitive relative pronoun dessen replaces sein and is followed directly by Hund, with no article.',
     },
     {
       id: 'ch76-ex-29',
@@ -707,13 +758,15 @@ export const chapter076: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['clause-combination', 'preposition', 'dative'],
-      instruction: 'Combine the two sentences into one, using a prepositional relative clause. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences into one, using a prepositional relative clause. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Das ist die Kollegin. + Ich arbeite mit der Kollegin.',
       acceptedAnswers: ['Das ist die Kollegin, mit der ich arbeite.'],
       answerMode: 'normalized',
       placeholder: 'Das ist die Kollegin, ...',
       maxLength: 60,
-      explanation: 'mit always governs the dative; Kollegin is feminine, so mit der, with the preposition moved to the front of the clause.',
+      explanation:
+        'mit always governs the dative; Kollegin is feminine, so mit der, with the preposition moved to the front of the clause.',
     },
     {
       id: 'ch76-ex-30',
@@ -722,13 +775,15 @@ export const chapter076: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'genitive', 'dessen'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Der Mann, dessen das Auto kaputt ist, wartet auf die Werkstatt.',
       acceptedAnswers: ['Der Mann, dessen Auto kaputt ist, wartet auf die Werkstatt.'],
       answerMode: 'normalized',
       placeholder: 'Der Mann, dessen ...',
       maxLength: 80,
-      explanation: 'dessen and deren behave like possessive articles, so no article ever follows them: dessen Auto, not dessen das Auto.',
+      explanation:
+        'dessen and deren behave like possessive articles, so no article ever follows them: dessen Auto, not dessen das Auto.',
     },
     {
       id: 'ch76-ex-31',
@@ -738,7 +793,8 @@ export const chapter076: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['relative-pronouns', 'dative', 'masculine'],
       instruction: 'Choose the correct relative pronoun.',
-      prompt: 'Der Kollege, ___ ich gedankt habe, hat mir sehr geholfen. (danken + Dativ)',
+      prompt:
+        'Der Kollege, ___ ich gedankt habe, hat mir sehr geholfen. (danken + Dativ)',
       options: [
         { id: 'a', text: 'dem' },
         { id: 'b', text: 'den' },
@@ -746,7 +802,8 @@ export const chapter076: ChapterDefinition = {
         { id: 'd', text: 'dessen' },
       ],
       correctOptionId: 'a',
-      explanation: 'danken governs the dative; Kollege is masculine, so the relative pronoun is dem.',
+      explanation:
+        'danken governs the dative; Kollege is masculine, so the relative pronoun is dem.',
     },
     {
       id: 'ch76-ex-32',
@@ -756,7 +813,8 @@ export const chapter076: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['relative-pronouns', 'dative', 'feminine'],
       instruction: 'Choose the correct relative pronoun.',
-      prompt: 'Die Freundin, ___ ich gratuliert habe, hat morgen Geburtstag. (gratulieren + Dativ)',
+      prompt:
+        'Die Freundin, ___ ich gratuliert habe, hat morgen Geburtstag. (gratulieren + Dativ)',
       options: [
         { id: 'a', text: 'der' },
         { id: 'b', text: 'die' },
@@ -764,7 +822,8 @@ export const chapter076: ChapterDefinition = {
         { id: 'd', text: 'deren' },
       ],
       correctOptionId: 'a',
-      explanation: 'gratulieren governs the dative; Freundin is feminine, so the relative pronoun is der.',
+      explanation:
+        'gratulieren governs the dative; Freundin is feminine, so the relative pronoun is der.',
     },
     {
       id: 'ch76-ex-33',
@@ -782,7 +841,8 @@ export const chapter076: ChapterDefinition = {
         { id: 'd', text: 'deren' },
       ],
       correctOptionId: 'a',
-      explanation: 'folgen governs the dative; the plural dative relative pronoun is denen, not den.',
+      explanation:
+        'folgen governs the dative; the plural dative relative pronoun is denen, not den.',
     },
     {
       id: 'ch76-ex-34',
@@ -800,7 +860,8 @@ export const chapter076: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'a',
-      explanation: 'Autor is masculine, so the genitive relative pronoun is dessen, followed directly by the noun Buch.',
+      explanation:
+        'Autor is masculine, so the genitive relative pronoun is dessen, followed directly by the noun Buch.',
     },
     {
       id: 'ch76-ex-35',
@@ -818,7 +879,8 @@ export const chapter076: ChapterDefinition = {
         { id: 'd', text: 'die' },
       ],
       correctOptionId: 'a',
-      explanation: 'Firma is feminine, so the genitive relative pronoun is deren, followed directly by the noun Chef.',
+      explanation:
+        'Firma is feminine, so the genitive relative pronoun is deren, followed directly by the noun Chef.',
     },
     {
       id: 'ch76-ex-36',
@@ -828,7 +890,8 @@ export const chapter076: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['relative-pronouns', 'preposition', 'accusative'],
       instruction: 'Choose the correct relative pronoun.',
-      prompt: 'Die Reise, an ___ ich mich gern erinnere, war unvergesslich. (sich erinnern an + Akkusativ)',
+      prompt:
+        'Die Reise, an ___ ich mich gern erinnere, war unvergesslich. (sich erinnern an + Akkusativ)',
       options: [
         { id: 'a', text: 'die' },
         { id: 'b', text: 'der' },
@@ -836,7 +899,8 @@ export const chapter076: ChapterDefinition = {
         { id: 'd', text: 'dem' },
       ],
       correctOptionId: 'a',
-      explanation: 'sich erinnern an governs the accusative; Reise is feminine, so an die.',
+      explanation:
+        'sich erinnern an governs the accusative; Reise is feminine, so an die.',
     },
     {
       id: 'ch76-ex-37',
@@ -872,7 +936,8 @@ export const chapter076: ChapterDefinition = {
         { id: 'd', text: 'dessen' },
       ],
       correctOptionId: 'a',
-      explanation: 'was is used as the relative pronoun after indefinite pronouns like etwas, alles, and nichts.',
+      explanation:
+        'was is used as the relative pronoun after indefinite pronouns like etwas, alles, and nichts.',
     },
     {
       id: 'ch76-ex-39',
@@ -890,7 +955,8 @@ export const chapter076: ChapterDefinition = {
         { id: 'd', text: 'dessen' },
       ],
       correctOptionId: 'a',
-      explanation: 'was is used as the relative pronoun after the indefinite pronoun nichts.',
+      explanation:
+        'was is used as the relative pronoun after the indefinite pronoun nichts.',
     },
     {
       id: 'ch76-ex-40',
@@ -908,7 +974,8 @@ export const chapter076: ChapterDefinition = {
         { id: 'd', text: 'wo' },
       ],
       correctOptionId: 'a',
-      explanation: 'was is used as the relative pronoun after nominalized superlatives such as das Beste, das Schönste, and das Einzige.',
+      explanation:
+        'was is used as the relative pronoun after nominalized superlatives such as das Beste, das Schönste, and das Einzige.',
     },
     {
       id: 'ch76-ex-41',
@@ -918,12 +985,14 @@ export const chapter076: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['relative-pronouns', 'dative', 'masculine'],
       instruction: 'Write the missing relative pronoun. Capitalisation is not checked.',
-      prompt: 'Der Zeuge, ___ ich geglaubt habe, hat die Wahrheit gesagt. (glauben + Dativ)',
+      prompt:
+        'Der Zeuge, ___ ich geglaubt habe, hat die Wahrheit gesagt. (glauben + Dativ)',
       acceptedAnswers: ['dem'],
       answerMode: 'caseInsensitive',
       placeholder: 'dem',
       maxLength: 10,
-      explanation: 'glauben governs the dative; Zeuge is masculine, so the relative pronoun is dem.',
+      explanation:
+        'glauben governs the dative; Zeuge is masculine, so the relative pronoun is dem.',
     },
     {
       id: 'ch76-ex-42',
@@ -938,7 +1007,8 @@ export const chapter076: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'der',
       maxLength: 10,
-      explanation: 'antworten governs the dative; Kundin is feminine, so the relative pronoun is der.',
+      explanation:
+        'antworten governs the dative; Kundin is feminine, so the relative pronoun is der.',
     },
     {
       id: 'ch76-ex-43',
@@ -998,7 +1068,8 @@ export const chapter076: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'das',
       maxLength: 10,
-      explanation: 'es geht um always governs the accusative; Thema is neuter, so um das.',
+      explanation:
+        'es geht um always governs the accusative; Thema is neuter, so um das.',
     },
     {
       id: 'ch76-ex-47',
@@ -1022,13 +1093,15 @@ export const chapter076: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['clause-combination', 'dative', 'plural'],
-      instruction: 'Combine the two sentences into one, using a dative relative clause. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences into one, using a dative relative clause. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich kenne die Studenten. + Ich habe den Studenten die Prüfung erklärt.',
       acceptedAnswers: ['Ich kenne die Studenten, denen ich die Prüfung erklärt habe.'],
       answerMode: 'normalized',
       placeholder: 'Ich kenne die Studenten, ...',
       maxLength: 80,
-      explanation: 'erklären takes a dative recipient; Studenten is plural, so the relative pronoun is denen, and the verb habe moves to the end.',
+      explanation:
+        'erklären takes a dative recipient; Studenten is plural, so the relative pronoun is denen, and the verb habe moves to the end.',
     },
     {
       id: 'ch76-ex-49',
@@ -1037,13 +1110,15 @@ export const chapter076: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['clause-combination', 'preposition', 'dative'],
-      instruction: 'Combine the two sentences into one, using a prepositional relative clause. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences into one, using a prepositional relative clause. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Das ist das Projekt. + Ich arbeite seit Monaten an dem Projekt.',
       acceptedAnswers: ['Das ist das Projekt, an dem ich seit Monaten arbeite.'],
       answerMode: 'normalized',
       placeholder: 'Das ist das Projekt, ...',
       maxLength: 70,
-      explanation: 'an dem stays together at the front of the clause; Projekt is neuter, and the finite verb arbeite moves to the end.',
+      explanation:
+        'an dem stays together at the front of the clause; Projekt is neuter, and the finite verb arbeite moves to the end.',
     },
     {
       id: 'ch76-ex-50',
@@ -1052,7 +1127,8 @@ export const chapter076: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['wo', 'preposition', 'place'],
-      instruction: 'Rewrite the sentence, replacing the preposition and relative pronoun with wo. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence, replacing the preposition and relative pronoun with wo. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Das ist das Restaurant, in dem wir geheiratet haben.',
       acceptedAnswers: ['Das ist das Restaurant, wo wir geheiratet haben.'],
       answerMode: 'normalized',
@@ -1072,7 +1148,8 @@ export const chapter076: ChapterDefinition = {
       templateParts: ['Der Nachbar, ', ' ich geholfen habe, zieht bald um.'],
       slots: [{ id: 'slot1', correctWord: 'dem' }],
       wordBank: ['dem', 'den', 'der', 'dessen'],
-      explanation: 'helfen governs the dative; Nachbar is masculine, so the relative pronoun is dem.',
+      explanation:
+        'helfen governs the dative; Nachbar is masculine, so the relative pronoun is dem.',
     },
     {
       id: 'ch76-ex-52',
@@ -1086,7 +1163,8 @@ export const chapter076: ChapterDefinition = {
       templateParts: ['Die Ärztin, ', ' ich vertraue, ist sehr kompetent.'],
       slots: [{ id: 'slot1', correctWord: 'der' }],
       wordBank: ['der', 'die', 'dem', 'deren'],
-      explanation: 'vertrauen governs the dative; Ärztin is feminine, so the relative pronoun is der.',
+      explanation:
+        'vertrauen governs the dative; Ärztin is feminine, so the relative pronoun is der.',
     },
     {
       id: 'ch76-ex-53',
@@ -1114,7 +1192,8 @@ export const chapter076: ChapterDefinition = {
       templateParts: ['Der Sänger, ', ' Stimme berühmt ist, gibt ein Konzert.'],
       slots: [{ id: 'slot1', correctWord: 'dessen' }],
       wordBank: ['dessen', 'deren', 'dem', 'den'],
-      explanation: 'Sänger is masculine, so the genitive relative pronoun is dessen, followed directly by Stimme.',
+      explanation:
+        'Sänger is masculine, so the genitive relative pronoun is dessen, followed directly by Stimme.',
     },
     {
       id: 'ch76-ex-55',
@@ -1125,10 +1204,14 @@ export const chapter076: ChapterDefinition = {
       grammarFocus: ['relative-pronouns', 'genitive', 'feminine'],
       instruction: 'Drag the correct word into the slot.',
       prompt: 'Die Schauspielerin, ___ Filme sehr erfolgreich sind, lebt in Hollywood.',
-      templateParts: ['Die Schauspielerin, ', ' Filme sehr erfolgreich sind, lebt in Hollywood.'],
+      templateParts: [
+        'Die Schauspielerin, ',
+        ' Filme sehr erfolgreich sind, lebt in Hollywood.',
+      ],
       slots: [{ id: 'slot1', correctWord: 'deren' }],
       wordBank: ['deren', 'dessen', 'der', 'die'],
-      explanation: 'Schauspielerin is feminine, so the genitive relative pronoun is deren, followed directly by Filme.',
+      explanation:
+        'Schauspielerin is feminine, so the genitive relative pronoun is deren, followed directly by Filme.',
     },
     {
       id: 'ch76-ex-56',
@@ -1184,7 +1267,8 @@ export const chapter076: ChapterDefinition = {
       templateParts: ['Das Büro, in ', ' ich arbeite, hat große Fenster.'],
       slots: [{ id: 'slot1', correctWord: 'dem' }],
       wordBank: ['dem', 'das', 'den', 'der'],
-      explanation: 'arbeiten describes a fixed location, so the two-way preposition in takes the dative here; Büro is neuter, so in dem.',
+      explanation:
+        'arbeiten describes a fixed location, so the two-way preposition in takes the dative here; Büro is neuter, so in dem.',
     },
     {
       id: 'ch76-ex-60',
@@ -1212,7 +1296,8 @@ export const chapter076: ChapterDefinition = {
       templateParts: ['Er hat mir alles erzählt, ', ' ich wissen wollte.'],
       slots: [{ id: 'slot1', correctWord: 'was' }],
       wordBank: ['was', 'das', 'die', 'dessen'],
-      explanation: 'was is used as the relative pronoun after the indefinite pronoun alles.',
+      explanation:
+        'was is used as the relative pronoun after the indefinite pronoun alles.',
     },
     {
       id: 'ch76-ex-62',
@@ -1243,7 +1328,8 @@ export const chapter076: ChapterDefinition = {
         { id: 's3', text: 'ich arbeite,' },
         { id: 's4', text: 'ist nett.' },
       ],
-      explanation: 'The preposition mit moves to the front of the clause together with the pronoun dem, and the finite verb arbeite goes to the end of the relative clause.',
+      explanation:
+        'The preposition mit moves to the front of the clause together with the pronoun dem, and the finite verb arbeite goes to the end of the relative clause.',
     },
     {
       id: 'ch76-ex-64',
@@ -1260,7 +1346,8 @@ export const chapter076: ChapterDefinition = {
         { id: 's3', text: 'neu ist,' },
         { id: 's4', text: 'wohnt nebenan.' },
       ],
-      explanation: 'deren is followed directly by the noun Auto, with no article, and the finite verb ist goes to the end of the relative clause.',
+      explanation:
+        'deren is followed directly by the noun Auto, with no article, and the finite verb ist goes to the end of the relative clause.',
     },
     {
       id: 'ch76-ex-65',
@@ -1277,7 +1364,8 @@ export const chapter076: ChapterDefinition = {
         { id: 's3', text: 'geholfen habe,' },
         { id: 's4', text: 'lächelt.' },
       ],
-      explanation: 'helfen governs the dative; Kind is neuter, so the pronoun is dem, and the finite verb habe goes to the end of the relative clause.',
+      explanation:
+        'helfen governs the dative; Kind is neuter, so the pronoun is dem, and the finite verb habe goes to the end of the relative clause.',
     },
     {
       id: 'ch76-ex-66',
@@ -1294,7 +1382,8 @@ export const chapter076: ChapterDefinition = {
         { id: 's3', text: 'ich lebe,' },
         { id: 's4', text: 'ist alt.' },
       ],
-      explanation: 'leben describes a fixed location, so in takes the dative; Stadt is feminine, so in der, and the finite verb lebe goes to the end.',
+      explanation:
+        'leben describes a fixed location, so in takes the dative; Stadt is feminine, so in der, and the finite verb lebe goes to the end.',
     },
     {
       id: 'ch76-ex-67',
@@ -1311,7 +1400,8 @@ export const chapter076: ChapterDefinition = {
         { id: 's3', text: 'wächst,' },
         { id: 's4', text: 'ist zufrieden.' },
       ],
-      explanation: 'Chef is masculine, so the genitive relative pronoun is dessen, followed directly by Firma, and the finite verb wächst goes to the end.',
+      explanation:
+        'Chef is masculine, so the genitive relative pronoun is dessen, followed directly by Firma, and the finite verb wächst goes to the end.',
     },
     {
       id: 'ch76-ex-68',
@@ -1328,7 +1418,8 @@ export const chapter076: ChapterDefinition = {
         { id: 's3', text: 'ich arbeite,' },
         { id: 's4', text: 'ist freundlich.' },
       ],
-      explanation: 'für always governs the accusative; Kollegin is feminine, so für die, and the finite verb arbeite goes to the end.',
+      explanation:
+        'für always governs the accusative; Kollegin is feminine, so für die, and the finite verb arbeite goes to the end.',
     },
     {
       id: 'ch76-ex-69',
@@ -1345,7 +1436,8 @@ export const chapter076: ChapterDefinition = {
         { id: 's3', text: 'geholfen haben,' },
         { id: 's4', text: 'sind glücklich.' },
       ],
-      explanation: 'The plural dative relative pronoun is denen, and the finite verb haben goes to the end of the relative clause.',
+      explanation:
+        'The plural dative relative pronoun is denen, and the finite verb haben goes to the end of the relative clause.',
     },
     {
       id: 'ch76-ex-70',
@@ -1362,7 +1454,8 @@ export const chapter076: ChapterDefinition = {
         { id: 's3', text: 'wir wohnen,' },
         { id: 's4', text: 'ist alt.' },
       ],
-      explanation: 'wohnen describes a fixed location, so in takes the dative; Haus is neuter, so in dem, and the finite verb wohnen goes to the end.',
+      explanation:
+        'wohnen describes a fixed location, so in takes the dative; Haus is neuter, so in dem, and the finite verb wohnen goes to the end.',
     },
     {
       id: 'ch76-ex-71',
@@ -1370,7 +1463,13 @@ export const chapter076: ChapterDefinition = {
       order: 71,
       type: 'sentenceOrdering',
       level: 'production',
-      grammarFocus: ['relative-pronouns', 'preposition', 'dative', 'plural', 'word-order'],
+      grammarFocus: [
+        'relative-pronouns',
+        'preposition',
+        'dative',
+        'plural',
+        'word-order',
+      ],
       instruction: 'Drag the segments into the correct order.',
       prompt: 'Die Freunde, + mit denen + ich reise, + sind lustig.',
       segments: [
@@ -1379,7 +1478,8 @@ export const chapter076: ChapterDefinition = {
         { id: 's3', text: 'ich reise,' },
         { id: 's4', text: 'sind lustig.' },
       ],
-      explanation: 'mit always governs the dative; Freunde is plural, so mit denen, and the finite verb reise goes to the end.',
+      explanation:
+        'mit always governs the dative; Freunde is plural, so mit denen, and the finite verb reise goes to the end.',
     },
     {
       id: 'ch76-ex-72',
@@ -1396,7 +1496,8 @@ export const chapter076: ChapterDefinition = {
         { id: 's3', text: 'wo ich' },
         { id: 's4', text: 'geboren wurde.' },
       ],
-      explanation: 'wo replaces in der for the place die Stadt, and the finite verb wurde goes to the end of the relative clause.',
+      explanation:
+        'wo replaces in der for the place die Stadt, and the finite verb wurde goes to the end of the relative clause.',
     },
     {
       id: 'ch76-ex-73',
@@ -1414,7 +1515,8 @@ export const chapter076: ChapterDefinition = {
         { id: 'p4', left: 'ohne', right: 'der Akkusativ (ohne den Freund)' },
         { id: 'p5', left: 'bei', right: 'der Dativ (bei der Arbeit)' },
       ],
-      explanation: 'mit, von, and bei always govern the dative; für and ohne always govern the accusative — the relative pronoun after each preposition takes that fixed case.',
+      explanation:
+        'mit, von, and bei always govern the dative; für and ohne always govern the accusative — the relative pronoun after each preposition takes that fixed case.',
     },
     {
       id: 'ch76-ex-74',
@@ -1423,7 +1525,8 @@ export const chapter076: ChapterDefinition = {
       type: 'matching',
       level: 'transfer',
       grammarFocus: ['clause-combination', 'dative', 'genitive', 'preposition'],
-      instruction: 'Match each pair of simple sentences with its combined relative clause.',
+      instruction:
+        'Match each pair of simple sentences with its combined relative clause.',
       prompt: 'Ordne jedem Satzpaar den passenden kombinierten Satz zu.',
       pairs: [
         {
@@ -1447,7 +1550,8 @@ export const chapter076: ChapterDefinition = {
           right: 'Die Kinder, denen wir geholfen haben, sind glücklich.',
         },
       ],
-      explanation: 'Each combined sentence replaces the shared noun with the relative pronoun matching its case and role inside the relative clause.',
+      explanation:
+        'Each combined sentence replaces the shared noun with the relative pronoun matching its case and role inside the relative clause.',
     },
     {
       id: 'ch76-ex-75',
@@ -1464,7 +1568,8 @@ export const chapter076: ChapterDefinition = {
         { id: 'c3', left: 'Dativ (maskulin)', right: 'dem' },
         { id: 'c4', left: 'Genitiv (maskulin)', right: 'dessen' },
       ],
-      explanation: 'The masculine relative pronoun changes for each case: der (nominative), den (accusative), dem (dative), dessen (genitive).',
+      explanation:
+        'The masculine relative pronoun changes for each case: der (nominative), den (accusative), dem (dative), dessen (genitive).',
     },
     {
       id: 'ch76-ex-76',
@@ -1479,9 +1584,14 @@ export const chapter076: ChapterDefinition = {
         { id: 'pl1', left: 'Nominativ (Plural)', right: 'die Kinder, die spielen' },
         { id: 'pl2', left: 'Akkusativ (Plural)', right: 'die Kinder, die ich sehe' },
         { id: 'pl3', left: 'Dativ (Plural)', right: 'die Kinder, denen ich helfe' },
-        { id: 'pl4', left: 'Genitiv (Plural)', right: 'die Kinder, deren Eltern arbeiten' },
+        {
+          id: 'pl4',
+          left: 'Genitiv (Plural)',
+          right: 'die Kinder, deren Eltern arbeiten',
+        },
       ],
-      explanation: 'Plural relative pronouns are die (nominative and accusative look identical), denen (dative), and deren (genitive).',
+      explanation:
+        'Plural relative pronouns are die (nominative and accusative look identical), denen (dative), and deren (genitive).',
     },
     {
       id: 'ch76-ex-77',
@@ -1495,7 +1605,8 @@ export const chapter076: ChapterDefinition = {
       tokens: ['Der', 'Mann,', 'den', 'ich', 'geholfen', 'habe,', 'ist', 'nett.'],
       errorTokenIndex: 2,
       correction: 'dem',
-      explanation: 'helfen governs the dative, so the relative pronoun must be dem, not the accusative den.',
+      explanation:
+        'helfen governs the dative, so the relative pronoun must be dem, not the accusative den.',
     },
     {
       id: 'ch76-ex-78',
@@ -1506,10 +1617,21 @@ export const chapter076: ChapterDefinition = {
       grammarFocus: ['relative-pronouns', 'genitive', 'error-correction'],
       instruction: 'Find the word with the wrong gender, and correct it.',
       prompt: 'Ein Lerner beschreibt einen Schriftsteller. Etwas stimmt nicht.',
-      tokens: ['Der', 'Autor,', 'deren', 'Buch', 'berühmt', 'ist,', 'lebt', 'in', 'Wien.'],
+      tokens: [
+        'Der',
+        'Autor,',
+        'deren',
+        'Buch',
+        'berühmt',
+        'ist,',
+        'lebt',
+        'in',
+        'Wien.',
+      ],
       errorTokenIndex: 2,
       correction: 'dessen',
-      explanation: 'Autor is masculine, so the genitive relative pronoun must be dessen, not the feminine/plural form deren.',
+      explanation:
+        'Autor is masculine, so the genitive relative pronoun must be dessen, not the feminine/plural form deren.',
     },
     {
       id: 'ch76-ex-79',
@@ -1520,10 +1642,21 @@ export const chapter076: ChapterDefinition = {
       grammarFocus: ['relative-pronouns', 'preposition', 'dative', 'error-correction'],
       instruction: 'Find the word with the wrong case, and correct it.',
       prompt: 'Ein Lerner beschreibt seine Chefin. Etwas stimmt nicht.',
-      tokens: ['Die', 'Frau,', 'mit', 'die', 'ich', 'spreche,', 'ist', 'meine', 'Chefin.'],
+      tokens: [
+        'Die',
+        'Frau,',
+        'mit',
+        'die',
+        'ich',
+        'spreche,',
+        'ist',
+        'meine',
+        'Chefin.',
+      ],
       errorTokenIndex: 3,
       correction: 'der',
-      explanation: 'mit always governs the dative, so the feminine relative pronoun after it must be der, not die.',
+      explanation:
+        'mit always governs the dative, so the feminine relative pronoun after it must be der, not die.',
     },
     {
       id: 'ch76-ex-80',
@@ -1534,10 +1667,21 @@ export const chapter076: ChapterDefinition = {
       grammarFocus: ['was', 'indefinite-pronoun', 'error-correction'],
       instruction: 'Find the wrong relative pronoun, and correct it.',
       prompt: 'Ein Lerner erzählt von einer Überraschung. Etwas stimmt nicht.',
-      tokens: ['Er', 'hat', 'mir', 'alles', 'erzählt,', 'das', 'mich', 'überrascht', 'hat.'],
+      tokens: [
+        'Er',
+        'hat',
+        'mir',
+        'alles',
+        'erzählt,',
+        'das',
+        'mich',
+        'überrascht',
+        'hat.',
+      ],
       errorTokenIndex: 5,
       correction: 'was',
-      explanation: 'was is used as the relative pronoun after the indefinite pronoun alles, not das.',
+      explanation:
+        'was is used as the relative pronoun after the indefinite pronoun alles, not das.',
     },
   ],
 };

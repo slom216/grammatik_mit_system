@@ -11,7 +11,8 @@ function escapeRegExp(value: string): string {
 function correctAnswerFor(exercise: (typeof exercises)[number]): string {
   if (exercise.type === 'singleChoice') {
     return (
-      exercise.options.find((option) => option.id === exercise.correctOptionId)?.text ?? ''
+      exercise.options.find((option) => option.id === exercise.correctOptionId)?.text ??
+      ''
     );
   }
   if (exercise.type === 'textInput') {
@@ -50,10 +51,7 @@ async function answerCurrentExercise(page: Page, index: number) {
     }
     case 'errorSpotting': {
       // Auto-submits like singleChoice, after the same debounce.
-      await page
-        .locator('.error-spotting__token')
-        .nth(exercise.errorTokenIndex)
-        .click();
+      await page.locator('.error-spotting__token').nth(exercise.errorTokenIndex).click();
       break;
     }
     case 'sentenceOrdering': {
@@ -90,7 +88,9 @@ async function answerCurrentExercise(page: Page, index: number) {
         usedWordIndices.add(wordIndex);
         const exactWord = new RegExp(`^${escapeRegExp(slot.correctWord)}$`);
         await page
-          .locator('.drag-slots__word:not(.drag-slots__word--used)', { hasText: exactWord })
+          .locator('.drag-slots__word:not(.drag-slots__word--used)', {
+            hasText: exactWord,
+          })
           .first()
           .click();
         // Selecting a word fills the slot straight away when only one is left,
@@ -175,11 +175,16 @@ test.describe('lesson flow', () => {
       page.getByRole('heading', { level: 2, name: 'Chapter mastered' }),
     ).toBeVisible();
 
-    // Progress survives a reload.
+    // Progress survives a reload. Scoped to the chapter table by its caption:
+    // the topic breakdown on the same page also reports accuracy percentages,
+    // and links back to this chapter by name.
+    const chapterScores = page
+      .getByRole('table', { name: 'Chapter progress' })
+      .getByRole('cell', { name: '100%' });
     await page.goto('/progress');
-    await expect(page.getByRole('cell', { name: '100%' })).toBeVisible();
+    await expect(chapterScores).toBeVisible();
     await page.reload();
-    await expect(page.getByRole('cell', { name: '100%' })).toBeVisible();
+    await expect(chapterScores).toBeVisible();
   });
 
   test('a failed exercise can be retried and lands in the review queue', async ({

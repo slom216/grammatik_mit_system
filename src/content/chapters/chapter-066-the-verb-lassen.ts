@@ -63,7 +63,7 @@ export const chapter066: ChapterDefinition = {
         heading: 'Meaning 2: causing or arranging for something to be done',
         paragraphs: [
           'lassen also expresses that the subject arranges for someone else to carry out an action, rather than doing it themselves — the closest English equivalent is "to have something done" or "to get something done." Ich lasse mein Auto reparieren (I am having my car repaired — a mechanic does the work, not me).',
-          'This causative meaning is extremely common with services: Ich lasse mir die Haare schneiden (I\'m having my hair cut). Wir lassen das Haus renovieren (We\'re having the house renovated). Notice that when the action is done to or for the subject\'s own body or belongings, a dative reflexive pronoun (mir, dir, sich, ...) is often added: lässt sich die Haare schneiden (has their hair cut) — this dative sich is a reflexive object, not the sich lassen "can be done" pattern from rule 6.',
+          "This causative meaning is extremely common with services: Ich lasse mir die Haare schneiden (I'm having my hair cut). Wir lassen das Haus renovieren (We're having the house renovated). Notice that when the action is done to or for the subject's own body or belongings, a dative reflexive pronoun (mir, dir, sich, ...) is often added: lässt sich die Haare schneiden (has their hair cut) — this dative sich is a reflexive object, not the sich lassen \"can be done\" pattern from rule 6.",
           'Context is what separates this causative meaning from meaning 1 (allowing): Ich lasse den Elektriker die Lampe reparieren means I am arranging for the electrician to repair the lamp (causing), while Ich lasse den Elektriker in die Wohnung means I am letting the electrician into the apartment (allowing) — the same verb, two different relationships between subject and object.',
         ],
       },
@@ -72,7 +72,7 @@ export const chapter066: ChapterDefinition = {
         heading: 'Meaning 3: leaving something or someone in a place or state',
         paragraphs: [
           'The third core meaning of lassen is simply "to leave" — leaving an object behind somewhere, or leaving a person or thing in a particular state. Ich lasse die Tür offen (I\'m leaving the door open). Ich lasse mein Handy zu Hause (I\'m leaving my phone at home).',
-          'This meaning frequently appears without any following infinitive at all — just lassen plus a direct object and a location or a state (offen, in Ruhe, allein): Lass mich in Ruhe! (Leave me alone!). Ich lasse dich nicht allein (I won\'t leave you alone).',
+          "This meaning frequently appears without any following infinitive at all — just lassen plus a direct object and a location or a state (offen, in Ruhe, allein): Lass mich in Ruhe! (Leave me alone!). Ich lasse dich nicht allein (I won't leave you alone).",
           'Because this "leaving" use has no infinitive complement, it behaves as an ordinary weak verb in the perfect tense: ich habe ... gelassen (see rule 7). This is the clearest signal for telling meaning 3 apart from meanings 1 and 2, which almost always involve a following infinitive.',
         ],
       },
@@ -121,7 +121,11 @@ export const chapter066: ChapterDefinition = {
             'Ich lasse mein Auto reparieren.',
             'I am having my car repaired.',
           ],
-          ['Leaving in a place or state', 'Ich lasse die Tür offen.', "I'm leaving the door open."],
+          [
+            'Leaving in a place or state',
+            'Ich lasse die Tür offen.',
+            "I'm leaving the door open.",
+          ],
         ],
       },
       {
@@ -129,9 +133,24 @@ export const chapter066: ChapterDefinition = {
         title: 'sich lassen + infinitive vs. the werden-passive',
         columns: ['Function', 'sich lassen + infinitive', 'werden-passive', 'English'],
         rows: [
-          ['expressing possibility', 'Das Problem lässt sich lösen.', 'Das Problem kann gelöst werden.', 'The problem can be solved.'],
-          ['expressing possibility', 'Diese Tür lässt sich öffnen.', 'Diese Tür kann geöffnet werden.', 'This door can be opened.'],
-          ['expressing impossibility', 'Das lässt sich nicht ändern.', 'Das kann nicht geändert werden.', "That can't be changed."],
+          [
+            'expressing possibility',
+            'Das Problem lässt sich lösen.',
+            'Das Problem kann gelöst werden.',
+            'The problem can be solved.',
+          ],
+          [
+            'expressing possibility',
+            'Diese Tür lässt sich öffnen.',
+            'Diese Tür kann geöffnet werden.',
+            'This door can be opened.',
+          ],
+          [
+            'expressing impossibility',
+            'Das lässt sich nicht ändern.',
+            'Das kann nicht geändert werden.',
+            "That can't be changed.",
+          ],
         ],
         note: 'Both patterns describe an action that is possible without naming who performs it; sich lassen is often the more compact, everyday-sounding choice.',
       },
@@ -140,9 +159,21 @@ export const chapter066: ChapterDefinition = {
         title: 'Perfect tense: double infinitive vs. gelassen',
         columns: ['Pattern', 'Perfect tense example', 'English'],
         rows: [
-          ['lassen + infinitive (causing)', 'Ich habe mein Auto reparieren lassen.', 'I have had my car repaired.'],
-          ['lassen + infinitive (allowing)', 'Er hat mich fahren lassen.', 'He let me drive.'],
-          ['lassen alone (leaving)', 'Ich habe meinen Schlüssel zu Hause gelassen.', 'I left my key at home.'],
+          [
+            'lassen + infinitive (causing)',
+            'Ich habe mein Auto reparieren lassen.',
+            'I have had my car repaired.',
+          ],
+          [
+            'lassen + infinitive (allowing)',
+            'Er hat mich fahren lassen.',
+            'He let me drive.',
+          ],
+          [
+            'lassen alone (leaving)',
+            'Ich habe meinen Schlüssel zu Hause gelassen.',
+            'I left my key at home.',
+          ],
         ],
         note: 'With a following infinitive, lassen forms a double infinitive (reparieren lassen, fahren lassen) — never gelassen. Alone, it takes the ordinary participle gelassen.',
       },
@@ -152,111 +183,130 @@ export const chapter066: ChapterDefinition = {
         german: 'Er lässt mich fahren.',
         english: 'He lets me drive.',
         highlight: ['lässt', 'fahren'],
-        explanation: 'Meaning 1, allowing: lässt in position 2, the bare infinitive fahren at the end.',
+        explanation:
+          'Meaning 1, allowing: lässt in position 2, the bare infinitive fahren at the end.',
       },
       {
         german: 'Meine Eltern lassen mich nicht lange fernsehen.',
         english: "My parents don't let me watch TV for long.",
         highlight: ['lassen', 'fernsehen'],
-        explanation: 'Allowing (here, negated): lassen sends fernsehen to the end of the clause.',
+        explanation:
+          'Allowing (here, negated): lassen sends fernsehen to the end of the clause.',
       },
       {
         german: 'Ich lasse mein Auto reparieren.',
         english: 'I am having my car repaired.',
         highlight: ['lasse', 'reparieren'],
-        explanation: 'Meaning 2, causing/arranging: someone else does the repairing, not the subject.',
+        explanation:
+          'Meaning 2, causing/arranging: someone else does the repairing, not the subject.',
       },
       {
         german: 'Ich lasse mir die Haare schneiden.',
         english: "I'm having my hair cut.",
         highlight: ['lasse', 'mir', 'schneiden'],
-        explanation: 'Causative with a dative reflexive pronoun (mir), common for services done to one\'s own body or belongings.',
+        explanation:
+          "Causative with a dative reflexive pronoun (mir), common for services done to one's own body or belongings.",
       },
       {
         german: 'Ich lasse die Tür offen.',
         english: "I'm leaving the door open.",
         highlight: ['lasse', 'offen'],
-        explanation: 'Meaning 3, leaving something in a state: no infinitive follows, just an adjective describing the resulting state.',
+        explanation:
+          'Meaning 3, leaving something in a state: no infinitive follows, just an adjective describing the resulting state.',
       },
       {
         german: 'Ich habe meinen Schlüssel zu Hause gelassen.',
         english: 'I left my key at home.',
         highlight: ['gelassen'],
-        explanation: 'lassen alone (meaning 3) is a regular weak verb in the perfect, so it takes the participle gelassen.',
+        explanation:
+          'lassen alone (meaning 3) is a regular weak verb in the perfect, so it takes the participle gelassen.',
       },
       {
         german: 'Ich habe mein Auto reparieren lassen.',
         english: 'I have had my car repaired.',
         highlight: ['reparieren', 'lassen'],
-        explanation: 'With a following infinitive, the perfect tense uses the double-infinitive construction: lassen, not gelassen.',
+        explanation:
+          'With a following infinitive, the perfect tense uses the double-infinitive construction: lassen, not gelassen.',
       },
       {
         german: 'Er hat mich fahren lassen.',
         english: 'He let me drive.',
         highlight: ['fahren', 'lassen'],
-        explanation: 'Same double-infinitive pattern for the allowing meaning: fahren lassen at the end of the clause.',
+        explanation:
+          'Same double-infinitive pattern for the allowing meaning: fahren lassen at the end of the clause.',
       },
       {
         german: 'Das Problem lässt sich lösen.',
         english: 'The problem can be solved.',
         highlight: ['lässt', 'sich', 'lösen'],
-        explanation: 'sich lassen + infinitive expresses "can be done" — a passive-like paraphrase without naming who solves it.',
+        explanation:
+          'sich lassen + infinitive expresses "can be done" — a passive-like paraphrase without naming who solves it.',
       },
       {
         german: 'Diese Tür lässt sich leicht öffnen.',
         english: 'This door opens easily.',
         highlight: ['lässt', 'sich', 'öffnen'],
-        explanation: 'Another sich lassen example: the door "lets itself" be opened easily, i.e. it can be opened easily.',
+        explanation:
+          'Another sich lassen example: the door "lets itself" be opened easily, i.e. it can be opened easily.',
       },
       {
         german: 'Das lässt sich nicht ändern.',
         english: "That can't be changed.",
         highlight: ['lässt', 'sich', 'ändern'],
-        explanation: 'Negated sich lassen still takes the bare infinitive: nicht ändern, never "zu ändern."',
+        explanation:
+          'Negated sich lassen still takes the bare infinitive: nicht ändern, never "zu ändern."',
       },
       {
         german: 'Lass mich in Ruhe!',
         english: 'Leave me alone!',
         highlight: ['Lass'],
-        explanation: 'Imperative of lassen (meaning 3, leaving someone in a state); du-imperative drops the -t ending: lass, not lässt.',
+        explanation:
+          'Imperative of lassen (meaning 3, leaving someone in a state); du-imperative drops the -t ending: lass, not lässt.',
       },
       {
         german: 'Lass uns gehen!',
         english: "Let's go!",
         highlight: ['Lass', 'gehen'],
-        explanation: 'A very common idiomatic imperative: lass uns + infinitive is the everyday German equivalent of English "let\'s."',
+        explanation:
+          'A very common idiomatic imperative: lass uns + infinitive is the everyday German equivalent of English "let\'s."',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich lasse mein Auto zu reparieren.',
         correct: 'Ich lasse mein Auto reparieren.',
-        explanation: 'lassen takes a bare infinitive with no zu, exactly like a modal verb — zu must never appear before the infinitive.',
+        explanation:
+          'lassen takes a bare infinitive with no zu, exactly like a modal verb — zu must never appear before the infinitive.',
       },
       {
         incorrect: 'Ich habe mein Auto reparieren gelassen.',
         correct: 'Ich habe mein Auto reparieren lassen.',
-        explanation: 'When lassen has an infinitive complement, the perfect tense uses the double-infinitive construction (Ersatzinfinitiv): lassen, not gelassen — exactly like können, müssen, and the other modal verbs.',
+        explanation:
+          'When lassen has an infinitive complement, the perfect tense uses the double-infinitive construction (Ersatzinfinitiv): lassen, not gelassen — exactly like können, müssen, and the other modal verbs.',
       },
       {
         incorrect: 'Ich habe meinen Schlüssel zu Hause lassen.',
         correct: 'Ich habe meinen Schlüssel zu Hause gelassen.',
-        explanation: 'When lassen is used alone with no following infinitive (just "leaving" something somewhere), it is a regular weak verb in the perfect and takes its own participle gelassen.',
+        explanation:
+          'When lassen is used alone with no following infinitive (just "leaving" something somewhere), it is a regular weak verb in the perfect and takes its own participle gelassen.',
       },
       {
         incorrect: 'Du lasst mich nicht in Ruhe.',
         correct: 'Du lässt mich nicht in Ruhe.',
-        explanation: 'The du-form of lassen umlauts the stem vowel: lässt, not lasst (lasst is the ihr-form).',
+        explanation:
+          'The du-form of lassen umlauts the stem vowel: lässt, not lasst (lasst is the ihr-form).',
       },
       {
         incorrect: 'Das Problem lässt sich zu lösen.',
         correct: 'Das Problem lässt sich lösen.',
-        explanation: 'sich lassen + infinitive also takes a bare infinitive with no zu — the "can be done" meaning never adds zu before the verb.',
+        explanation:
+          'sich lassen + infinitive also takes a bare infinitive with no zu — the "can be done" meaning never adds zu before the verb.',
       },
       {
         incorrect: 'Ich lasse reparieren mein Auto.',
         correct: 'Ich lasse mein Auto reparieren.',
-        explanation: 'Like a modal verb, lassen forms a verb bracket: lassen stays in position 2, and the infinitive is sent all the way to the end of the clause, after the object.',
+        explanation:
+          'Like a modal verb, lassen forms a verb bracket: lassen stays in position 2, and the infinitive is sent all the way to the end of the clause, after the object.',
       },
     ],
     remember: [
@@ -291,7 +341,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'd', text: 'lasse' },
       ],
       correctOptionId: 'a',
-      explanation: 'The du-form of lassen umlauts the stem vowel: lässt. lasst is the ihr-form.',
+      explanation:
+        'The du-form of lassen umlauts the stem vowel: lässt. lasst is the ihr-form.',
     },
     {
       id: 'ch66-ex-02',
@@ -309,7 +360,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'd', text: 'lässet' },
       ],
       correctOptionId: 'a',
-      explanation: 'The er/sie/es-form of lassen is lässt, with the same umlaut as the du-form.',
+      explanation:
+        'The er/sie/es-form of lassen is lässt, with the same umlaut as the du-form.',
     },
     {
       id: 'ch66-ex-03',
@@ -327,7 +379,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'd', text: 'lasen' },
       ],
       correctOptionId: 'a',
-      explanation: 'The wir-form keeps the plain stem with the regular ending: lassen. Only du and er/sie/es umlaut.',
+      explanation:
+        'The wir-form keeps the plain stem with the regular ending: lassen. Only du and er/sie/es umlaut.',
     },
     {
       id: 'ch66-ex-04',
@@ -345,7 +398,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'd', text: 'He makes me drive against my will.' },
       ],
       correctOptionId: 'a',
-      explanation: 'This is the allowing meaning of lassen: the subject permits someone else to do something.',
+      explanation:
+        'This is the allowing meaning of lassen: the subject permits someone else to do something.',
     },
     {
       id: 'ch66-ex-05',
@@ -363,7 +417,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'd', text: 'I let my car be driven by someone else.' },
       ],
       correctOptionId: 'a',
-      explanation: 'This is the causative meaning: the subject arranges for someone else to carry out the repair.',
+      explanation:
+        'This is the causative meaning: the subject arranges for someone else to carry out the repair.',
     },
     {
       id: 'ch66-ex-06',
@@ -381,7 +436,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'd', text: "I'm allowing someone to open the door." },
       ],
       correctOptionId: 'a',
-      explanation: 'With no infinitive following, lassen + object + state describes leaving something in that state.',
+      explanation:
+        'With no infinitive following, lassen + object + state describes leaving something in that state.',
     },
     {
       id: 'ch66-ex-07',
@@ -399,7 +455,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'd', text: 'Reparieren lasse ich mein Auto.' },
       ],
       correctOptionId: 'a',
-      explanation: 'lassen occupies position 2, the object comes next, and the infinitive reparieren is sent to the end of the clause.',
+      explanation:
+        'lassen occupies position 2, the object comes next, and the infinitive reparieren is sent to the end of the clause.',
     },
     {
       id: 'ch66-ex-08',
@@ -417,7 +474,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'd', text: 'Ich lasse reparieren zu mein Auto.' },
       ],
       correctOptionId: 'a',
-      explanation: 'lassen always takes a bare infinitive with no zu, exactly like a modal verb.',
+      explanation:
+        'lassen always takes a bare infinitive with no zu, exactly like a modal verb.',
     },
     {
       id: 'ch66-ex-09',
@@ -435,7 +493,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'd', text: 'The problem lets someone solve it for free.' },
       ],
       correctOptionId: 'a',
-      explanation: 'sich lassen + infinitive expresses that something can be done — a possibility, not an automatic event or an obligation.',
+      explanation:
+        'sich lassen + infinitive expresses that something can be done — a possibility, not an automatic event or an obligation.',
     },
     {
       id: 'ch66-ex-10',
@@ -453,7 +512,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'd', text: 'Diese Tür lässt leicht öffnen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'sich lassen + infinitive and können + werden-passive both express that an action is possible without naming who performs it.',
+      explanation:
+        'sich lassen + infinitive and können + werden-passive both express that an action is possible without naming who performs it.',
     },
     {
       id: 'ch66-ex-11',
@@ -471,7 +531,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'd', text: 'Ich habe gelassen mein Auto reparieren.' },
       ],
       correctOptionId: 'a',
-      explanation: 'With a following infinitive, lassen forms a double infinitive in the perfect: reparieren lassen, not gelassen.',
+      explanation:
+        'With a following infinitive, lassen forms a double infinitive in the perfect: reparieren lassen, not gelassen.',
     },
     {
       id: 'ch66-ex-12',
@@ -489,7 +550,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'd', text: 'Ich bin den Schlüssel zu Hause gelassen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'With no following infinitive, lassen is a regular weak verb in the perfect: gelassen, with haben as the auxiliary.',
+      explanation:
+        'With no following infinitive, lassen is a regular weak verb in the perfect: gelassen, with haben as the auxiliary.',
     },
     {
       id: 'ch66-ex-13',
@@ -498,10 +560,19 @@ export const chapter066: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['lassen', 'meaning-allow', 'context'],
-      instruction: 'Read the exchange and choose the correct meaning of the underlined idea.',
+      instruction:
+        'Read the exchange and choose the correct meaning of the underlined idea.',
       dialogue: [
-        { speaker: 'Tim', german: 'Mama, darf ich mit Tim ins Kino gehen?', english: 'Mum, may I go to the cinema with Tim?' },
-        { speaker: 'Mama', german: 'Ja, ich lasse dich gehen, aber sei um 22 Uhr zu Hause.', english: 'Yes, I\'ll let you go, but be home by 10 pm.' },
+        {
+          speaker: 'Tim',
+          german: 'Mama, darf ich mit Tim ins Kino gehen?',
+          english: 'Mum, may I go to the cinema with Tim?',
+        },
+        {
+          speaker: 'Mama',
+          german: 'Ja, ich lasse dich gehen, aber sei um 22 Uhr zu Hause.',
+          english: "Yes, I'll let you go, but be home by 10 pm.",
+        },
       ],
       prompt: 'What does "ich lasse dich gehen" mean here?',
       options: [
@@ -511,7 +582,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'd', text: 'I am having someone take you there.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The context (a request for permission with dürfen) shows this is the allowing meaning of lassen.',
+      explanation:
+        'The context (a request for permission with dürfen) shows this is the allowing meaning of lassen.',
     },
     {
       id: 'ch66-ex-14',
@@ -520,20 +592,30 @@ export const chapter066: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['lassen', 'meaning-cause', 'context'],
-      instruction: 'Read the exchange and choose the correct meaning of the underlined idea.',
+      instruction:
+        'Read the exchange and choose the correct meaning of the underlined idea.',
       dialogue: [
-        { speaker: 'Anna', german: 'Dein Auto sieht ja neu aus!', english: 'Your car looks brand new!' },
-        { speaker: 'Ben', german: 'Ja, ich habe es letzte Woche lackieren lassen.', english: 'Yes, I had it repainted last week.' },
+        {
+          speaker: 'Anna',
+          german: 'Dein Auto sieht ja neu aus!',
+          english: 'Your car looks brand new!',
+        },
+        {
+          speaker: 'Ben',
+          german: 'Ja, ich habe es letzte Woche lackieren lassen.',
+          english: 'Yes, I had it repainted last week.',
+        },
       ],
       prompt: 'What does "ich habe es lackieren lassen" mean here?',
       options: [
         { id: 'a', text: 'I had it repainted (someone else did the work).' },
         { id: 'b', text: 'I repainted it myself.' },
-        { id: 'c', text: "I let it get painted by accident." },
+        { id: 'c', text: 'I let it get painted by accident.' },
         { id: 'd', text: 'I left it unpainted.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The double-infinitive perfect (lackieren lassen) with a paint shop context signals the causative meaning: arranging for someone else to do it.',
+      explanation:
+        'The double-infinitive perfect (lackieren lassen) with a paint shop context signals the causative meaning: arranging for someone else to do it.',
     },
     {
       id: 'ch66-ex-15',
@@ -542,10 +624,19 @@ export const chapter066: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['lassen', 'meaning-leave', 'context'],
-      instruction: 'Read the exchange and choose the correct meaning of the underlined idea.',
+      instruction:
+        'Read the exchange and choose the correct meaning of the underlined idea.',
       dialogue: [
-        { speaker: 'Lena', german: 'Wo ist deine Jacke?', english: 'Where is your jacket?' },
-        { speaker: 'Paul', german: 'Ich habe sie im Büro gelassen.', english: 'I left it at the office.' },
+        {
+          speaker: 'Lena',
+          german: 'Wo ist deine Jacke?',
+          english: 'Where is your jacket?',
+        },
+        {
+          speaker: 'Paul',
+          german: 'Ich habe sie im Büro gelassen.',
+          english: 'I left it at the office.',
+        },
       ],
       prompt: 'What does "ich habe sie im Büro gelassen" mean here?',
       options: [
@@ -555,7 +646,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'd', text: 'I am leaving for the office now.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The plain participle gelassen with no following infinitive marks the "leaving something behind" meaning.',
+      explanation:
+        'The plain participle gelassen with no following infinitive marks the "leaving something behind" meaning.',
     },
     {
       id: 'ch66-ex-16',
@@ -573,7 +665,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'd', text: 'Ich will hier warten.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The allowing meaning of lassen corresponds to dürfen (permission) seen from the other person\'s perspective: darf, not muss/soll/will.',
+      explanation:
+        "The allowing meaning of lassen corresponds to dürfen (permission) seen from the other person's perspective: darf, not muss/soll/will.",
     },
     {
       id: 'ch66-ex-17',
@@ -582,7 +675,8 @@ export const chapter066: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['lassen', 'conjugation', 'ich-form'],
-      instruction: 'Write the correct form of lassen for ich. Capitalisation is not checked.',
+      instruction:
+        'Write the correct form of lassen for ich. Capitalisation is not checked.',
       prompt: 'ich → lassen (Präsens)',
       acceptedAnswers: ['lasse'],
       answerMode: 'caseInsensitive',
@@ -597,7 +691,8 @@ export const chapter066: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['lassen', 'conjugation', 'du-form', 'umlaut'],
-      instruction: 'Write the correct form of lassen for du. Capitalisation is not checked.',
+      instruction:
+        'Write the correct form of lassen for du. Capitalisation is not checked.',
       prompt: 'du → lassen (Präsens)',
       acceptedAnswers: ['lässt'],
       answerMode: 'caseInsensitive',
@@ -612,7 +707,8 @@ export const chapter066: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['lassen', 'conjugation', 'er-sie-es-form', 'umlaut'],
-      instruction: 'Write the correct form of lassen for er/sie/es. Capitalisation is not checked.',
+      instruction:
+        'Write the correct form of lassen for er/sie/es. Capitalisation is not checked.',
       prompt: 'er/sie/es → lassen (Präsens)',
       acceptedAnswers: ['lässt'],
       answerMode: 'caseInsensitive',
@@ -627,13 +723,15 @@ export const chapter066: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['lassen', 'conjugation', 'ihr-form'],
-      instruction: 'Write the correct form of lassen for ihr. Capitalisation is not checked.',
+      instruction:
+        'Write the correct form of lassen for ihr. Capitalisation is not checked.',
       prompt: 'ihr → lassen (Präsens)',
       acceptedAnswers: ['lasst'],
       answerMode: 'caseInsensitive',
       placeholder: 'lasst',
       maxLength: 15,
-      explanation: 'The ihr-form keeps the plain stem lass- with the regular ending: lasst.',
+      explanation:
+        'The ihr-form keeps the plain stem lass- with the regular ending: lasst.',
     },
     {
       id: 'ch66-ex-21',
@@ -642,13 +740,15 @@ export const chapter066: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['lassen', 'sentence-building', 'meaning-allow'],
-      instruction: 'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
       prompt: 'er – lassen (Präsens) – mich – fahren',
       acceptedAnswers: ['Er lässt mich fahren.', 'Er lässt mich fahren'],
       answerMode: 'normalized',
       placeholder: 'Er lässt mich fahren.',
       maxLength: 40,
-      explanation: 'lassen conjugates to lässt for er, and the bare infinitive fahren goes to the end: Er lässt mich fahren.',
+      explanation:
+        'lassen conjugates to lässt for er, and the bare infinitive fahren goes to the end: Er lässt mich fahren.',
     },
     {
       id: 'ch66-ex-22',
@@ -657,13 +757,18 @@ export const chapter066: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['lassen', 'sentence-building', 'meaning-cause'],
-      instruction: 'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
       prompt: 'ich – lassen (Präsens) – mein Auto – reparieren',
-      acceptedAnswers: ['Ich lasse mein Auto reparieren.', 'Ich lasse mein Auto reparieren'],
+      acceptedAnswers: [
+        'Ich lasse mein Auto reparieren.',
+        'Ich lasse mein Auto reparieren',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich lasse mein Auto reparieren.',
       maxLength: 45,
-      explanation: 'lassen conjugates to lasse for ich, and reparieren goes to the end of the clause: Ich lasse mein Auto reparieren.',
+      explanation:
+        'lassen conjugates to lasse for ich, and reparieren goes to the end of the clause: Ich lasse mein Auto reparieren.',
     },
     {
       id: 'ch66-ex-23',
@@ -672,13 +777,15 @@ export const chapter066: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['lassen', 'sentence-building', 'meaning-leave'],
-      instruction: 'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
       prompt: 'ich – lassen (Präsens) – die Tür – offen',
       acceptedAnswers: ['Ich lasse die Tür offen.', 'Ich lasse die Tür offen'],
       answerMode: 'normalized',
       placeholder: 'Ich lasse die Tür offen.',
       maxLength: 40,
-      explanation: 'No infinitive is needed here: lassen + object + state describes leaving something in that state.',
+      explanation:
+        'No infinitive is needed here: lassen + object + state describes leaving something in that state.',
     },
     {
       id: 'ch66-ex-24',
@@ -687,13 +794,18 @@ export const chapter066: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['lassen', 'word-order', 'infinitive-placement', 'unscramble'],
-      instruction: 'Unscramble the words into a correct sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Unscramble the words into a correct sentence. Capitalisation and punctuation are checked.',
       prompt: 'reparieren / lässt / er / sein Fahrrad',
-      acceptedAnswers: ['Er lässt sein Fahrrad reparieren.', 'Er lässt sein Fahrrad reparieren'],
+      acceptedAnswers: [
+        'Er lässt sein Fahrrad reparieren.',
+        'Er lässt sein Fahrrad reparieren',
+      ],
       answerMode: 'normalized',
       placeholder: 'Er lässt sein Fahrrad reparieren.',
       maxLength: 45,
-      explanation: 'lässt takes position 2, the object sein Fahrrad follows, and the infinitive reparieren is sent to the end.',
+      explanation:
+        'lässt takes position 2, the object sein Fahrrad follows, and the infinitive reparieren is sent to the end.',
     },
     {
       id: 'ch66-ex-25',
@@ -708,7 +820,8 @@ export const chapter066: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Er lässt mich fahren.',
       maxLength: 40,
-      explanation: 'lassen expresses allowing here: Er lässt mich fahren, with the bare infinitive fahren at the end.',
+      explanation:
+        'lassen expresses allowing here: Er lässt mich fahren, with the bare infinitive fahren at the end.',
     },
     {
       id: 'ch66-ex-26',
@@ -719,11 +832,15 @@ export const chapter066: ChapterDefinition = {
       grammarFocus: ['lassen', 'translation', 'meaning-cause', 'reflexive-dative'],
       instruction: 'Translate into German. Capitalisation and punctuation are checked.',
       prompt: "I'm having my hair cut.",
-      acceptedAnswers: ['Ich lasse mir die Haare schneiden.', 'Ich lasse mir die Haare schneiden'],
+      acceptedAnswers: [
+        'Ich lasse mir die Haare schneiden.',
+        'Ich lasse mir die Haare schneiden',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich lasse mir die Haare schneiden.',
       maxLength: 45,
-      explanation: 'The causative meaning with a dative reflexive pronoun mir: Ich lasse mir die Haare schneiden.',
+      explanation:
+        'The causative meaning with a dative reflexive pronoun mir: Ich lasse mir die Haare schneiden.',
     },
     {
       id: 'ch66-ex-27',
@@ -732,13 +849,18 @@ export const chapter066: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['lassen', 'translation', 'meaning-leave', 'perfect-tense'],
-      instruction: 'Translate into German, using the perfect tense. Capitalisation and punctuation are checked.',
+      instruction:
+        'Translate into German, using the perfect tense. Capitalisation and punctuation are checked.',
       prompt: 'I left my key at home.',
-      acceptedAnswers: ['Ich habe meinen Schlüssel zu Hause gelassen.', 'Ich habe meinen Schlüssel zu Hause gelassen'],
+      acceptedAnswers: [
+        'Ich habe meinen Schlüssel zu Hause gelassen.',
+        'Ich habe meinen Schlüssel zu Hause gelassen',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich habe meinen Schlüssel zu Hause gelassen.',
       maxLength: 55,
-      explanation: 'lassen alone (no infinitive) is a regular weak verb in the perfect: gelassen.',
+      explanation:
+        'lassen alone (no infinitive) is a regular weak verb in the perfect: gelassen.',
     },
     {
       id: 'ch66-ex-28',
@@ -747,13 +869,15 @@ export const chapter066: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['lassen', 'perfect-tense', 'double-infinitive', 'fill-in'],
-      instruction: 'Complete the sentence with the correct verb form. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct verb form. Capitalisation is not checked.',
       prompt: 'Ich habe mein Auto reparieren ___. (Perfekt von lassen)',
       acceptedAnswers: ['lassen'],
       answerMode: 'caseInsensitive',
       placeholder: 'lassen',
       maxLength: 15,
-      explanation: 'With a following infinitive, the perfect tense of lassen is the double infinitive lassen, not gelassen.',
+      explanation:
+        'With a following infinitive, the perfect tense of lassen is the double infinitive lassen, not gelassen.',
     },
     {
       id: 'ch66-ex-29',
@@ -762,13 +886,15 @@ export const chapter066: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['lassen', 'perfect-tense', 'gelassen', 'fill-in'],
-      instruction: 'Complete the sentence with the correct verb form. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct verb form. Capitalisation is not checked.',
       prompt: 'Ich habe den Schlüssel zu Hause ___. (Perfekt von lassen)',
       acceptedAnswers: ['gelassen'],
       answerMode: 'caseInsensitive',
       placeholder: 'gelassen',
       maxLength: 15,
-      explanation: 'With no following infinitive, lassen is a regular weak verb in the perfect: gelassen.',
+      explanation:
+        'With no following infinitive, lassen is a regular weak verb in the perfect: gelassen.',
     },
     {
       id: 'ch66-ex-30',
@@ -777,13 +903,18 @@ export const chapter066: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['lassen', 'sich-lassen', 'translation'],
-      instruction: 'Translate into German, using sich lassen + infinitive. Capitalisation and punctuation are checked.',
+      instruction:
+        'Translate into German, using sich lassen + infinitive. Capitalisation and punctuation are checked.',
       prompt: 'This problem can be solved.',
-      acceptedAnswers: ['Das Problem lässt sich lösen.', 'Dieses Problem lässt sich lösen.'],
+      acceptedAnswers: [
+        'Das Problem lässt sich lösen.',
+        'Dieses Problem lässt sich lösen.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Das Problem lässt sich lösen.',
       maxLength: 40,
-      explanation: 'sich lassen + infinitive expresses "can be done": Das Problem lässt sich lösen.',
+      explanation:
+        'sich lassen + infinitive expresses "can be done": Das Problem lässt sich lösen.',
     },
     {
       id: 'ch66-ex-31',
@@ -792,13 +923,18 @@ export const chapter066: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['lassen', 'paraphrase', 'passive'],
-      instruction: 'Rewrite the sentence using the werden-passive with können, keeping the same meaning. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence using the werden-passive with können, keeping the same meaning. Capitalisation and punctuation are checked.',
       prompt: 'Diese Tür lässt sich leicht öffnen. → werden-Passiv mit können',
-      acceptedAnswers: ['Diese Tür kann leicht geöffnet werden.', 'Diese Tür kann leicht geöffnet werden'],
+      acceptedAnswers: [
+        'Diese Tür kann leicht geöffnet werden.',
+        'Diese Tür kann leicht geöffnet werden',
+      ],
       answerMode: 'normalized',
       placeholder: 'Diese Tür kann leicht geöffnet werden.',
       maxLength: 50,
-      explanation: 'sich lassen + infinitive and können + werden-passive both express possibility without an agent: Diese Tür kann leicht geöffnet werden.',
+      explanation:
+        'sich lassen + infinitive and können + werden-passive both express possibility without an agent: Diese Tür kann leicht geöffnet werden.',
     },
     {
       id: 'ch66-ex-32',
@@ -807,13 +943,15 @@ export const chapter066: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['lassen', 'paraphrase', 'modal-verb', 'duerfen'],
-      instruction: 'Rewrite the sentence using dürfen, keeping the same meaning from the speaker\'s perspective. Capitalisation and punctuation are checked.',
+      instruction:
+        "Rewrite the sentence using dürfen, keeping the same meaning from the speaker's perspective. Capitalisation and punctuation are checked.",
       prompt: 'Er lässt mich hier warten. → Satz mit dürfen (ich)',
       acceptedAnswers: ['Ich darf hier warten.', 'Ich darf hier warten'],
       answerMode: 'normalized',
       placeholder: 'Ich darf hier warten.',
       maxLength: 35,
-      explanation: 'Being let (lassen) to do something corresponds to being allowed (dürfen) to do it: Ich darf hier warten.',
+      explanation:
+        'Being let (lassen) to do something corresponds to being allowed (dürfen) to do it: Ich darf hier warten.',
     },
     {
       id: 'ch66-ex-33',
@@ -831,7 +969,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'd', text: 'I let someone borrow my car to wash theirs.' },
       ],
       correctOptionId: 'a',
-      explanation: 'This is the causative meaning: the subject arranges for someone else to wash the car.',
+      explanation:
+        'This is the causative meaning: the subject arranges for someone else to wash the car.',
     },
     {
       id: 'ch66-ex-34',
@@ -849,7 +988,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'd', text: 'lasset' },
       ],
       correctOptionId: 'a',
-      explanation: 'The ihr-form keeps the plain stem lass- with the regular ending: lasst.',
+      explanation:
+        'The ihr-form keeps the plain stem lass- with the regular ending: lasst.',
     },
     {
       id: 'ch66-ex-35',
@@ -867,7 +1007,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'd', text: 'He is coming in by himself.' },
       ],
       correctOptionId: 'a',
-      explanation: 'This is the allowing meaning: the subject permits the person to come in.',
+      explanation:
+        'This is the allowing meaning: the subject permits the person to come in.',
     },
     {
       id: 'ch66-ex-36',
@@ -885,7 +1026,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'd', text: 'I am allowed to bring the food.' },
       ],
       correctOptionId: 'a',
-      explanation: 'This is the causative meaning: the subject arranges for someone else to bring the food.',
+      explanation:
+        'This is the causative meaning: the subject arranges for someone else to bring the food.',
     },
     {
       id: 'ch66-ex-37',
@@ -903,7 +1045,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'd', text: 'We are allowed to build a house.' },
       ],
       correctOptionId: 'a',
-      explanation: 'This is the causative meaning: the subject arranges for a construction company to build the house.',
+      explanation:
+        'This is the causative meaning: the subject arranges for a construction company to build the house.',
     },
     {
       id: 'ch66-ex-38',
@@ -921,7 +1064,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'd', text: "I'm leaving in a hurry!" },
       ],
       correctOptionId: 'a',
-      explanation: 'in Ruhe lassen is the idiomatic "leaving" meaning: to leave someone alone, undisturbed.',
+      explanation:
+        'in Ruhe lassen is the idiomatic "leaving" meaning: to leave someone alone, undisturbed.',
     },
     {
       id: 'ch66-ex-39',
@@ -939,7 +1083,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'd', text: 'Lasse' },
       ],
       correctOptionId: 'a',
-      explanation: 'The du-imperative of lassen drops the -t ending and the umlaut: lass, not lässt.',
+      explanation:
+        'The du-imperative of lassen drops the -t ending and the umlaut: lass, not lässt.',
     },
     {
       id: 'ch66-ex-40',
@@ -957,7 +1102,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'd', text: 'This jacket lets someone wash it for free.' },
       ],
       correctOptionId: 'a',
-      explanation: 'sich lassen + infinitive expresses that something can be done — a possibility, not an automatic event or obligation.',
+      explanation:
+        'sich lassen + infinitive expresses that something can be done — a possibility, not an automatic event or obligation.',
     },
     {
       id: 'ch66-ex-41',
@@ -966,9 +1112,14 @@ export const chapter066: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['lassen', 'idiom', 'wissen'],
-      instruction: 'Read the exchange and choose the correct meaning of the underlined idea.',
+      instruction:
+        'Read the exchange and choose the correct meaning of the underlined idea.',
       dialogue: [
-        { speaker: 'Sofia', german: 'Kommst du morgen zur Party?', english: 'Are you coming to the party tomorrow?' },
+        {
+          speaker: 'Sofia',
+          german: 'Kommst du morgen zur Party?',
+          english: 'Are you coming to the party tomorrow?',
+        },
         {
           speaker: 'Max',
           german: 'Ich bin nicht sicher. Ich lasse dich wissen, wann ich Bescheid weiß.',
@@ -983,7 +1134,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'd', text: 'I will ask you to know.' },
       ],
       correctOptionId: 'a',
-      explanation: 'jemanden etwas wissen lassen is an idiomatic use of the allowing meaning: to let someone know / inform them.',
+      explanation:
+        'jemanden etwas wissen lassen is an idiomatic use of the allowing meaning: to let someone know / inform them.',
     },
     {
       id: 'ch66-ex-42',
@@ -992,24 +1144,34 @@ export const chapter066: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['lassen', 'meaning-allow', 'meaning-cause', 'context'],
-      instruction: 'Read the exchange and choose the correct meaning of the underlined idea.',
+      instruction:
+        'Read the exchange and choose the correct meaning of the underlined idea.',
       dialogue: [
-        { speaker: 'Chef', german: 'Was macht der Elektriker hier?', english: 'What is the electrician doing here?' },
+        {
+          speaker: 'Chef',
+          german: 'Was macht der Elektriker hier?',
+          english: 'What is the electrician doing here?',
+        },
         {
           speaker: 'Mitarbeiter',
           german: 'Ich lasse den Elektriker die Lampe reparieren.',
           english: "I'm having the electrician repair the lamp.",
         },
       ],
-      prompt: 'Which meaning of lassen is used in "Ich lasse den Elektriker die Lampe reparieren"?',
+      prompt:
+        'Which meaning of lassen is used in "Ich lasse den Elektriker die Lampe reparieren"?',
       options: [
-        { id: 'a', text: 'Causing/arranging: the speaker arranges for the electrician to do the repair.' },
+        {
+          id: 'a',
+          text: 'Causing/arranging: the speaker arranges for the electrician to do the repair.',
+        },
         { id: 'b', text: 'Allowing: the speaker permits the electrician to enter.' },
         { id: 'c', text: 'Leaving: the speaker leaves the lamp broken.' },
         { id: 'd', text: 'sich lassen: the lamp can repair itself.' },
       ],
       correctOptionId: 'a',
-      explanation: 'With a skilled tradesperson and a task, this is the causative meaning: arranging for the electrician to carry out the repair.',
+      explanation:
+        'With a skilled tradesperson and a task, this is the causative meaning: arranging for the electrician to carry out the repair.',
     },
     {
       id: 'ch66-ex-43',
@@ -1018,13 +1180,15 @@ export const chapter066: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['lassen', 'conjugation', 'sie-Sie-form'],
-      instruction: 'Write the correct form of lassen for sie/Sie. Capitalisation is not checked.',
+      instruction:
+        'Write the correct form of lassen for sie/Sie. Capitalisation is not checked.',
       prompt: 'sie/Sie (Plural/formal) → lassen (Präsens)',
       acceptedAnswers: ['lassen'],
       answerMode: 'caseInsensitive',
       placeholder: 'lassen',
       maxLength: 15,
-      explanation: 'The sie/Sie-form of lassen keeps the plain stem with the regular ending: lassen.',
+      explanation:
+        'The sie/Sie-form of lassen keeps the plain stem with the regular ending: lassen.',
     },
     {
       id: 'ch66-ex-44',
@@ -1033,7 +1197,8 @@ export const chapter066: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['lassen', 'conjugation', 'wir-form'],
-      instruction: 'Write the correct form of lassen for wir. Capitalisation is not checked.',
+      instruction:
+        'Write the correct form of lassen for wir. Capitalisation is not checked.',
       prompt: 'wir → lassen (Präsens)',
       acceptedAnswers: ['lassen'],
       answerMode: 'caseInsensitive',
@@ -1048,13 +1213,15 @@ export const chapter066: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['lassen', 'sentence-building', 'meaning-cause', 'waschen'],
-      instruction: 'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
       prompt: 'ich – lassen (Präsens) – mein Auto – waschen',
       acceptedAnswers: ['Ich lasse mein Auto waschen.', 'Ich lasse mein Auto waschen'],
       answerMode: 'normalized',
       placeholder: 'Ich lasse mein Auto waschen.',
       maxLength: 40,
-      explanation: 'lassen conjugates to lasse for ich, and waschen goes to the end of the clause: Ich lasse mein Auto waschen.',
+      explanation:
+        'lassen conjugates to lasse for ich, and waschen goes to the end of the clause: Ich lasse mein Auto waschen.',
     },
     {
       id: 'ch66-ex-46',
@@ -1063,13 +1230,15 @@ export const chapter066: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['lassen', 'sentence-building', 'meaning-cause', 'bauen'],
-      instruction: 'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
       prompt: 'wir – lassen (Präsens) – ein Haus – bauen',
       acceptedAnswers: ['Wir lassen ein Haus bauen.', 'Wir lassen ein Haus bauen'],
       answerMode: 'normalized',
       placeholder: 'Wir lassen ein Haus bauen.',
       maxLength: 40,
-      explanation: 'lassen conjugates to lassen for wir, and bauen goes to the end of the clause: Wir lassen ein Haus bauen.',
+      explanation:
+        'lassen conjugates to lassen for wir, and bauen goes to the end of the clause: Wir lassen ein Haus bauen.',
     },
     {
       id: 'ch66-ex-47',
@@ -1078,13 +1247,15 @@ export const chapter066: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['lassen', 'sentence-building', 'meaning-cause', 'bringen'],
-      instruction: 'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
       prompt: 'sie (sg.) – lassen (Präsens) – das Essen – bringen',
       acceptedAnswers: ['Sie lässt das Essen bringen.', 'Sie lässt das Essen bringen'],
       answerMode: 'normalized',
       placeholder: 'Sie lässt das Essen bringen.',
       maxLength: 40,
-      explanation: 'lassen conjugates to lässt for sie (singular), and bringen goes to the end: Sie lässt das Essen bringen.',
+      explanation:
+        'lassen conjugates to lässt for sie (singular), and bringen goes to the end: Sie lässt das Essen bringen.',
     },
     {
       id: 'ch66-ex-48',
@@ -1099,7 +1270,8 @@ export const chapter066: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Lass uns gehen!',
       maxLength: 25,
-      explanation: 'lass uns + infinitive is the everyday German equivalent of English "let\'s": Lass uns gehen!',
+      explanation:
+        'lass uns + infinitive is the everyday German equivalent of English "let\'s": Lass uns gehen!',
     },
     {
       id: 'ch66-ex-49',
@@ -1123,13 +1295,15 @@ export const chapter066: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['lassen', 'perfect-tense', 'double-infinitive', 'fill-in', 'bauen'],
-      instruction: 'Complete the sentence with the correct verb form. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct verb form. Capitalisation is not checked.',
       prompt: 'Wir haben ein Haus bauen ___. (Perfekt von lassen)',
       acceptedAnswers: ['lassen'],
       answerMode: 'caseInsensitive',
       placeholder: 'lassen',
       maxLength: 15,
-      explanation: 'With a following infinitive, the perfect tense of lassen is the double infinitive lassen, not gelassen.',
+      explanation:
+        'With a following infinitive, the perfect tense of lassen is the double infinitive lassen, not gelassen.',
     },
     {
       id: 'ch66-ex-51',
@@ -1138,13 +1312,15 @@ export const chapter066: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['lassen', 'perfect-tense', 'gelassen', 'fill-in'],
-      instruction: 'Complete the sentence with the correct verb form. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct verb form. Capitalisation is not checked.',
       prompt: 'Ich habe die Tür offen ___. (Perfekt von lassen)',
       acceptedAnswers: ['gelassen'],
       answerMode: 'caseInsensitive',
       placeholder: 'gelassen',
       maxLength: 15,
-      explanation: 'With no following infinitive, lassen is a regular weak verb in the perfect: gelassen.',
+      explanation:
+        'With no following infinitive, lassen is a regular weak verb in the perfect: gelassen.',
     },
     {
       id: 'ch66-ex-52',
@@ -1153,13 +1329,18 @@ export const chapter066: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['lassen', 'sich-lassen', 'translation', 'waschen'],
-      instruction: 'Translate into German, using sich lassen + infinitive. Capitalisation and punctuation are checked.',
+      instruction:
+        'Translate into German, using sich lassen + infinitive. Capitalisation and punctuation are checked.',
       prompt: 'This jacket can be washed.',
-      acceptedAnswers: ['Diese Jacke lässt sich waschen.', 'Diese Jacke lässt sich waschen'],
+      acceptedAnswers: [
+        'Diese Jacke lässt sich waschen.',
+        'Diese Jacke lässt sich waschen',
+      ],
       answerMode: 'normalized',
       placeholder: 'Diese Jacke lässt sich waschen.',
       maxLength: 40,
-      explanation: 'sich lassen + infinitive expresses "can be done": Diese Jacke lässt sich waschen.',
+      explanation:
+        'sich lassen + infinitive expresses "can be done": Diese Jacke lässt sich waschen.',
     },
     {
       id: 'ch66-ex-53',
@@ -1170,11 +1351,15 @@ export const chapter066: ChapterDefinition = {
       grammarFocus: ['lassen', 'translation', 'idiom', 'wissen'],
       instruction: 'Translate into German. Capitalisation and punctuation are checked.',
       prompt: 'Let me know when you arrive.',
-      acceptedAnswers: ['Lass mich wissen, wann du ankommst.', 'Lass mich wissen, wann du ankommst'],
+      acceptedAnswers: [
+        'Lass mich wissen, wann du ankommst.',
+        'Lass mich wissen, wann du ankommst',
+      ],
       answerMode: 'normalized',
       placeholder: 'Lass mich wissen, wann du ankommst.',
       maxLength: 45,
-      explanation: 'jemanden etwas wissen lassen means "to let someone know": Lass mich wissen, wann du ankommst.',
+      explanation:
+        'jemanden etwas wissen lassen means "to let someone know": Lass mich wissen, wann du ankommst.',
     },
     {
       id: 'ch66-ex-54',
@@ -1182,14 +1367,22 @@ export const chapter066: ChapterDefinition = {
       order: 54,
       type: 'textInput',
       level: 'transfer',
-      grammarFocus: ['lassen', 'word-order', 'infinitive-placement', 'unscramble', 'waschen'],
-      instruction: 'Unscramble the words into a correct sentence. Capitalisation and punctuation are checked.',
+      grammarFocus: [
+        'lassen',
+        'word-order',
+        'infinitive-placement',
+        'unscramble',
+        'waschen',
+      ],
+      instruction:
+        'Unscramble the words into a correct sentence. Capitalisation and punctuation are checked.',
       prompt: 'waschen / lässt / er / sein Auto',
       acceptedAnswers: ['Er lässt sein Auto waschen.', 'Er lässt sein Auto waschen'],
       answerMode: 'normalized',
       placeholder: 'Er lässt sein Auto waschen.',
       maxLength: 40,
-      explanation: 'lässt takes position 2, the object sein Auto follows, and the infinitive waschen is sent to the end.',
+      explanation:
+        'lässt takes position 2, the object sein Auto follows, and the infinitive waschen is sent to the end.',
     },
     {
       id: 'ch66-ex-55',
@@ -1204,7 +1397,8 @@ export const chapter066: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Ich lasse das Bett machen.',
       maxLength: 40,
-      explanation: 'The causative meaning: someone else makes the bed for the subject: Ich lasse das Bett machen.',
+      explanation:
+        'The causative meaning: someone else makes the bed for the subject: Ich lasse das Bett machen.',
     },
     {
       id: 'ch66-ex-56',
@@ -1236,7 +1430,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'ch66-ex57-s3', text: 'mein Auto' },
         { id: 'ch66-ex57-s4', text: 'reparieren.' },
       ],
-      explanation: 'lassen occupies position 2, and the bare infinitive reparieren is sent to the end: Ich lasse mein Auto reparieren.',
+      explanation:
+        'lassen occupies position 2, and the bare infinitive reparieren is sent to the end: Ich lasse mein Auto reparieren.',
     },
     {
       id: 'ch66-ex-58',
@@ -1253,7 +1448,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'ch66-ex58-s3', text: 'mich' },
         { id: 'ch66-ex58-s4', text: 'fahren.' },
       ],
-      explanation: 'lässt occupies position 2, mich is the accusative object, and fahren is the bare infinitive at the end.',
+      explanation:
+        'lässt occupies position 2, mich is the accusative object, and fahren is the bare infinitive at the end.',
     },
     {
       id: 'ch66-ex-59',
@@ -1270,7 +1466,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'ch66-ex59-s3', text: 'ein Haus' },
         { id: 'ch66-ex59-s4', text: 'bauen.' },
       ],
-      explanation: 'lassen occupies position 2, and bauen is sent to the end of the clause: Wir lassen ein Haus bauen.',
+      explanation:
+        'lassen occupies position 2, and bauen is sent to the end of the clause: Wir lassen ein Haus bauen.',
     },
     {
       id: 'ch66-ex-60',
@@ -1278,7 +1475,13 @@ export const chapter066: ChapterDefinition = {
       order: 60,
       type: 'sentenceOrdering',
       level: 'production',
-      grammarFocus: ['lassen', 'word-order', 'meaning-cause', 'reflexive-dative', 'schneiden'],
+      grammarFocus: [
+        'lassen',
+        'word-order',
+        'meaning-cause',
+        'reflexive-dative',
+        'schneiden',
+      ],
       instruction: 'Put the words in the correct order.',
       prompt: 'Ich – lasse – mir – die Haare – schneiden.',
       segments: [
@@ -1288,7 +1491,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'ch66-ex60-s4', text: 'die Haare' },
         { id: 'ch66-ex60-s5', text: 'schneiden.' },
       ],
-      explanation: 'The dative reflexive mir follows lasse, then the object die Haare, then the bare infinitive schneiden at the end.',
+      explanation:
+        'The dative reflexive mir follows lasse, then the object die Haare, then the bare infinitive schneiden at the end.',
     },
     {
       id: 'ch66-ex-61',
@@ -1306,7 +1510,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'ch66-ex61-s4', text: 'reparieren' },
         { id: 'ch66-ex61-s5', text: 'lassen.' },
       ],
-      explanation: 'The perfect tense with a following infinitive uses the double infinitive at the end: reparieren lassen, with habe in position 2.',
+      explanation:
+        'The perfect tense with a following infinitive uses the double infinitive at the end: reparieren lassen, with habe in position 2.',
     },
     {
       id: 'ch66-ex-62',
@@ -1323,7 +1528,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'ch66-ex62-s3', text: 'das Bett' },
         { id: 'ch66-ex62-s4', text: 'machen.' },
       ],
-      explanation: 'lasse occupies position 2, and the bare infinitive machen is sent to the end: Ich lasse das Bett machen.',
+      explanation:
+        'lasse occupies position 2, and the bare infinitive machen is sent to the end: Ich lasse das Bett machen.',
     },
     {
       id: 'ch66-ex-63',
@@ -1339,7 +1545,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'ch66-ex63-s2', text: 'mich' },
         { id: 'ch66-ex63-s3', text: 'in Ruhe!' },
       ],
-      explanation: 'The du-imperative lass comes first, followed by the object mich and the idiom in Ruhe.',
+      explanation:
+        'The du-imperative lass comes first, followed by the object mich and the idiom in Ruhe.',
     },
     {
       id: 'ch66-ex-64',
@@ -1347,7 +1554,13 @@ export const chapter066: ChapterDefinition = {
       order: 64,
       type: 'sentenceOrdering',
       level: 'transfer',
-      grammarFocus: ['lassen', 'perfect-tense', 'double-infinitive', 'meaning-allow', 'word-order'],
+      grammarFocus: [
+        'lassen',
+        'perfect-tense',
+        'double-infinitive',
+        'meaning-allow',
+        'word-order',
+      ],
       instruction: 'Put the words in the correct order.',
       prompt: 'Er – hat – mich – fahren – lassen.',
       segments: [
@@ -1357,7 +1570,8 @@ export const chapter066: ChapterDefinition = {
         { id: 'ch66-ex64-s4', text: 'fahren' },
         { id: 'ch66-ex64-s5', text: 'lassen.' },
       ],
-      explanation: 'The perfect tense of the allowing meaning also uses the double infinitive: fahren lassen, with hat in position 2.',
+      explanation:
+        'The perfect tense of the allowing meaning also uses the double infinitive: fahren lassen, with hat in position 2.',
     },
     {
       id: 'ch66-ex-65',
@@ -1371,7 +1585,8 @@ export const chapter066: ChapterDefinition = {
       templateParts: ['Ich lasse mein Auto ', '.'],
       slots: [{ id: 'ch66-ex65-slot1', correctWord: 'reparieren' }],
       wordBank: ['reparieren', 'waschen', 'repariert', 'fahren'],
-      explanation: 'The causative meaning here calls for the bare infinitive reparieren, not the participle repariert.',
+      explanation:
+        'The causative meaning here calls for the bare infinitive reparieren, not the participle repariert.',
     },
     {
       id: 'ch66-ex-66',
@@ -1385,7 +1600,8 @@ export const chapter066: ChapterDefinition = {
       templateParts: ['Er lässt mich ', '.'],
       slots: [{ id: 'ch66-ex66-slot1', correctWord: 'fahren' }],
       wordBank: ['fahren', 'fährt', 'gefahren', 'kommen'],
-      explanation: 'The allowing meaning here calls for the bare infinitive fahren, not the conjugated fährt or the participle gefahren.',
+      explanation:
+        'The allowing meaning here calls for the bare infinitive fahren, not the conjugated fährt or the participle gefahren.',
     },
     {
       id: 'ch66-ex-67',
@@ -1399,7 +1615,8 @@ export const chapter066: ChapterDefinition = {
       templateParts: ['Wir lassen das Haus ', '.'],
       slots: [{ id: 'ch66-ex67-slot1', correctWord: 'bauen' }],
       wordBank: ['bauen', 'gebaut', 'baut', 'machen'],
-      explanation: 'The causative meaning here calls for the bare infinitive bauen, not the participle gebaut or the conjugated baut.',
+      explanation:
+        'The causative meaning here calls for the bare infinitive bauen, not the participle gebaut or the conjugated baut.',
     },
     {
       id: 'ch66-ex-68',
@@ -1413,7 +1630,8 @@ export const chapter066: ChapterDefinition = {
       templateParts: ['Ich lasse mir die Haare ', '.'],
       slots: [{ id: 'ch66-ex68-slot1', correctWord: 'schneiden' }],
       wordBank: ['schneiden', 'geschnitten', 'schneidet', 'waschen'],
-      explanation: 'The causative meaning here calls for the bare infinitive schneiden, not the participle geschnitten.',
+      explanation:
+        'The causative meaning here calls for the bare infinitive schneiden, not the participle geschnitten.',
     },
     {
       id: 'ch66-ex-69',
@@ -1427,7 +1645,8 @@ export const chapter066: ChapterDefinition = {
       templateParts: ['Ich lasse das Essen ', '.'],
       slots: [{ id: 'ch66-ex69-slot1', correctWord: 'bringen' }],
       wordBank: ['bringen', 'gebracht', 'bringt', 'kommen'],
-      explanation: 'The causative meaning here calls for the bare infinitive bringen, not the participle gebracht.',
+      explanation:
+        'The causative meaning here calls for the bare infinitive bringen, not the participle gebracht.',
     },
     {
       id: 'ch66-ex-70',
@@ -1441,7 +1660,8 @@ export const chapter066: ChapterDefinition = {
       templateParts: ['Diese Tür lässt sich leicht ', '.'],
       slots: [{ id: 'ch66-ex70-slot1', correctWord: 'öffnen' }],
       wordBank: ['öffnen', 'geöffnet', 'öffnet', 'schließen'],
-      explanation: 'sich lassen + infinitive takes the bare infinitive öffnen, not the participle geöffnet.',
+      explanation:
+        'sich lassen + infinitive takes the bare infinitive öffnen, not the participle geöffnet.',
     },
     {
       id: 'ch66-ex-71',
@@ -1454,12 +1674,25 @@ export const chapter066: ChapterDefinition = {
       prompt: 'Match the sentence with the correct meaning.',
       pairs: [
         { id: 'ch66-ex71-p1', left: 'Er lässt mich fahren.', right: 'He lets me drive.' },
-        { id: 'ch66-ex71-p2', left: 'Ich lasse mein Auto reparieren.', right: 'I am having my car repaired.' },
-        { id: 'ch66-ex71-p3', left: 'Ich lasse die Tür offen.', right: "I'm leaving the door open." },
-        { id: 'ch66-ex71-p4', left: 'Wir lassen ein Haus bauen.', right: 'We are having a house built.' },
+        {
+          id: 'ch66-ex71-p2',
+          left: 'Ich lasse mein Auto reparieren.',
+          right: 'I am having my car repaired.',
+        },
+        {
+          id: 'ch66-ex71-p3',
+          left: 'Ich lasse die Tür offen.',
+          right: "I'm leaving the door open.",
+        },
+        {
+          id: 'ch66-ex71-p4',
+          left: 'Wir lassen ein Haus bauen.',
+          right: 'We are having a house built.',
+        },
         { id: 'ch66-ex71-p5', left: 'Lass mich in Ruhe!', right: 'Leave me alone!' },
       ],
-      explanation: 'Each sentence illustrates one of the three core meanings of lassen: allowing, causing/arranging, and leaving.',
+      explanation:
+        'Each sentence illustrates one of the three core meanings of lassen: allowing, causing/arranging, and leaving.',
     },
     {
       id: 'ch66-ex-72',
@@ -1471,12 +1704,29 @@ export const chapter066: ChapterDefinition = {
       instruction: 'Match each German sentence to its English meaning.',
       prompt: 'Match the perfect-tense sentence with the correct meaning.',
       pairs: [
-        { id: 'ch66-ex72-p1', left: 'Ich habe mein Auto reparieren lassen.', right: 'I have had my car repaired.' },
-        { id: 'ch66-ex72-p2', left: 'Er hat mich fahren lassen.', right: 'He let me drive.' },
-        { id: 'ch66-ex72-p3', left: 'Ich habe meinen Schlüssel zu Hause gelassen.', right: 'I left my key at home.' },
-        { id: 'ch66-ex72-p4', left: 'Wir haben das Haus bauen lassen.', right: 'We had the house built.' },
+        {
+          id: 'ch66-ex72-p1',
+          left: 'Ich habe mein Auto reparieren lassen.',
+          right: 'I have had my car repaired.',
+        },
+        {
+          id: 'ch66-ex72-p2',
+          left: 'Er hat mich fahren lassen.',
+          right: 'He let me drive.',
+        },
+        {
+          id: 'ch66-ex72-p3',
+          left: 'Ich habe meinen Schlüssel zu Hause gelassen.',
+          right: 'I left my key at home.',
+        },
+        {
+          id: 'ch66-ex72-p4',
+          left: 'Wir haben das Haus bauen lassen.',
+          right: 'We had the house built.',
+        },
       ],
-      explanation: 'A following infinitive gives the double infinitive lassen; no infinitive gives the ordinary participle gelassen.',
+      explanation:
+        'A following infinitive gives the double infinitive lassen; no infinitive gives the ordinary participle gelassen.',
     },
     {
       id: 'ch66-ex-73',
@@ -1486,14 +1736,32 @@ export const chapter066: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['lassen', 'sich-lassen', 'passive-paraphrase'],
       instruction: 'Match each sich lassen sentence to its werden-passive equivalent.',
-      prompt: 'Match the sich lassen sentence with the equivalent werden-passive sentence.',
+      prompt:
+        'Match the sich lassen sentence with the equivalent werden-passive sentence.',
       pairs: [
-        { id: 'ch66-ex73-p1', left: 'Das Problem lässt sich lösen.', right: 'Das Problem kann gelöst werden.' },
-        { id: 'ch66-ex73-p2', left: 'Diese Tür lässt sich öffnen.', right: 'Diese Tür kann geöffnet werden.' },
-        { id: 'ch66-ex73-p3', left: 'Das lässt sich nicht ändern.', right: 'Das kann nicht geändert werden.' },
-        { id: 'ch66-ex73-p4', left: 'Diese Jacke lässt sich waschen.', right: 'Diese Jacke kann gewaschen werden.' },
+        {
+          id: 'ch66-ex73-p1',
+          left: 'Das Problem lässt sich lösen.',
+          right: 'Das Problem kann gelöst werden.',
+        },
+        {
+          id: 'ch66-ex73-p2',
+          left: 'Diese Tür lässt sich öffnen.',
+          right: 'Diese Tür kann geöffnet werden.',
+        },
+        {
+          id: 'ch66-ex73-p3',
+          left: 'Das lässt sich nicht ändern.',
+          right: 'Das kann nicht geändert werden.',
+        },
+        {
+          id: 'ch66-ex73-p4',
+          left: 'Diese Jacke lässt sich waschen.',
+          right: 'Diese Jacke kann gewaschen werden.',
+        },
       ],
-      explanation: 'sich lassen + infinitive and können + werden-passive both express possibility without naming an agent.',
+      explanation:
+        'sich lassen + infinitive and können + werden-passive both express possibility without naming an agent.',
     },
     {
       id: 'ch66-ex-74',
@@ -1506,11 +1774,24 @@ export const chapter066: ChapterDefinition = {
       prompt: 'Match the lassen sentence with the equivalent dürfen sentence.',
       pairs: [
         { id: 'ch66-ex74-p1', left: 'Er lässt mich fahren.', right: 'Ich darf fahren.' },
-        { id: 'ch66-ex74-p2', left: 'Sie lässt mich hier warten.', right: 'Ich darf hier warten.' },
-        { id: 'ch66-ex74-p3', left: 'Meine Eltern lassen mich ins Kino gehen.', right: 'Ich darf ins Kino gehen.' },
-        { id: 'ch66-ex74-p4', left: 'Der Lehrer lässt uns früher gehen.', right: 'Wir dürfen früher gehen.' },
+        {
+          id: 'ch66-ex74-p2',
+          left: 'Sie lässt mich hier warten.',
+          right: 'Ich darf hier warten.',
+        },
+        {
+          id: 'ch66-ex74-p3',
+          left: 'Meine Eltern lassen mich ins Kino gehen.',
+          right: 'Ich darf ins Kino gehen.',
+        },
+        {
+          id: 'ch66-ex74-p4',
+          left: 'Der Lehrer lässt uns früher gehen.',
+          right: 'Wir dürfen früher gehen.',
+        },
       ],
-      explanation: 'The allowing meaning of lassen corresponds to dürfen (permission) seen from the other person\'s perspective.',
+      explanation:
+        "The allowing meaning of lassen corresponds to dürfen (permission) seen from the other person's perspective.",
     },
     {
       id: 'ch66-ex-75',
@@ -1524,10 +1805,15 @@ export const chapter066: ChapterDefinition = {
       pairs: [
         { id: 'ch66-ex75-p1', left: 'Lass mich in Ruhe!', right: 'Leave me alone!' },
         { id: 'ch66-ex75-p2', left: 'Lass uns gehen!', right: "Let's go!" },
-        { id: 'ch66-ex75-p3', left: 'Lass mich wissen, wann du kommst.', right: 'Let me know when you arrive.' },
+        {
+          id: 'ch66-ex75-p3',
+          left: 'Lass mich wissen, wann du kommst.',
+          right: 'Let me know when you arrive.',
+        },
         { id: 'ch66-ex75-p4', left: 'Lass ihn hereinkommen.', right: 'Let him come in.' },
       ],
-      explanation: 'These are common idiomatic imperatives built on the three core meanings of lassen.',
+      explanation:
+        'These are common idiomatic imperatives built on the three core meanings of lassen.',
     },
     {
       id: 'ch66-ex-76',
@@ -1537,11 +1823,13 @@ export const chapter066: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['lassen', 'perfect-tense', 'double-infinitive', 'error-correction'],
       instruction: 'Find the token that uses the wrong form, and correct it.',
-      prompt: 'Ein Freund erzählt, warum er nicht selbst gefahren ist. Etwas stimmt nicht.',
+      prompt:
+        'Ein Freund erzählt, warum er nicht selbst gefahren ist. Etwas stimmt nicht.',
       tokens: ['Er', 'hat', 'mich', 'fahren', 'gelassen', '.'],
       errorTokenIndex: 4,
       correction: 'lassen',
-      explanation: 'With a following infinitive, the perfect tense of lassen uses the double infinitive lassen, not the participle gelassen.',
+      explanation:
+        'With a following infinitive, the perfect tense of lassen uses the double infinitive lassen, not the participle gelassen.',
     },
     {
       id: 'ch66-ex-77',
@@ -1555,7 +1843,8 @@ export const chapter066: ChapterDefinition = {
       tokens: ['Du', 'lasst', 'mich', 'nicht', 'in', 'Ruhe', '.'],
       errorTokenIndex: 1,
       correction: 'lässt',
-      explanation: 'The du-form of lassen umlauts the stem vowel: lässt, not lasst (lasst is the ihr-form).',
+      explanation:
+        'The du-form of lassen umlauts the stem vowel: lässt, not lasst (lasst is the ihr-form).',
     },
     {
       id: 'ch66-ex-78',
@@ -1569,7 +1858,8 @@ export const chapter066: ChapterDefinition = {
       tokens: ['Ich', 'habe', 'den', 'Schlüssel', 'zu', 'Hause', 'lassen', '.'],
       errorTokenIndex: 6,
       correction: 'gelassen',
-      explanation: 'With no following infinitive, lassen is a regular weak verb in the perfect and takes the participle gelassen, not the bare infinitive lassen.',
+      explanation:
+        'With no following infinitive, lassen is a regular weak verb in the perfect and takes the participle gelassen, not the bare infinitive lassen.',
     },
   ],
 };

@@ -49,17 +49,25 @@ describe('CumulativeReviewPage', () => {
 
   it('reports the range as unavailable when a chapter in it has no content', async () => {
     await renderCumulativeReview('/review/84/90');
-    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
-      /cumulative review unavailable/i,
-    );
+    expect(
+      await screen.findByRole('heading', {
+        level: 1,
+        name: /cumulative review unavailable/i,
+      }),
+    ).toBeInTheDocument();
   });
 
   it('starts a mixed session pulling exercises from every chapter in the range', async () => {
     await renderCumulativeReview('/review/21/22');
 
-    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
-      /cumulative review · chapters 21–22/i,
-    );
+    // The session starts in an effect after the loader resolves, so the real
+    // heading replaces the "Preparing…" one a tick later.
+    expect(
+      await screen.findByRole('heading', {
+        level: 1,
+        name: /cumulative review · chapters 21–22/i,
+      }),
+    ).toBeInTheDocument();
     // Default sampling pulls 3 exercises from each of the 2 chapters.
     expect(screen.getByTestId('exercise-counter')).toHaveTextContent('Exercise 1 of 6');
     expect(usePracticeStore.getState().chapterNumbers).toEqual([21, 22]);
@@ -83,7 +91,9 @@ describe('CumulativeReviewPage', () => {
     );
 
     await user.click(screen.getByRole('button', { name: /next exercise/i }));
-    expect(screen.getByText(/Which noun phrase is the accusative object/)).toBeInTheDocument();
+    expect(
+      screen.getByText(/Which noun phrase is the accusative object/),
+    ).toBeInTheDocument();
 
     await user.click(screen.getByRole('radio', { name: /^das Heft$/ }));
     await waitFor(() =>
@@ -135,7 +145,9 @@ describe('CumulativeReviewPage', () => {
     const user = userEvent.setup();
     await renderCumulativeReview('/review/21/22');
 
-    await user.click(screen.getByRole('button', { name: /exit practice|exit review/i }));
+    await user.click(
+      await screen.findByRole('button', { name: /exit practice|exit review/i }),
+    );
     const dialog = screen.getByRole('dialog');
     expect(dialog).toHaveTextContent(/leave this cumulative review/i);
 

@@ -12,7 +12,15 @@ export const chapter035: ChapterDefinition = {
     'Use the nine two-way prepositions (an, auf, hinter, in, neben, über, unter, vor, zwischen) with the dative case to describe where something is located, apply the correct dative articles dem/der/den after each preposition, and use the contractions am and im correctly.',
   prerequisites: [18, 33, 34],
   estimatedMinutes: 22,
-  tags: ['two-way prepositions', 'Wechselpräpositionen', 'dative', 'location', 'wo', 'am', 'im'],
+  tags: [
+    'two-way prepositions',
+    'Wechselpräpositionen',
+    'dative',
+    'location',
+    'wo',
+    'am',
+    'im',
+  ],
   explanation: {
     introduction: [
       'German has a special group of nine prepositions — an, auf, hinter, in, neben, über, unter, vor, and zwischen — known as two-way prepositions (Wechselpräpositionen) because they can take either the accusative or the dative case. Which case is required depends entirely on the question the sentence answers: wo? (where?) for a fixed location, or wohin? (where to?) for a direction or movement.',
@@ -90,7 +98,11 @@ export const chapter035: ChapterDefinition = {
       {
         id: 'ch35-table-02',
         title: 'Dative articles and common contractions after two-way prepositions',
-        columns: ['Gender / number', 'Definite article (dative)', 'Contraction with an / in'],
+        columns: [
+          'Gender / number',
+          'Definite article (dative)',
+          'Contraction with an / in',
+        ],
         columnCases: [null, 'dative', null],
         rows: [
           ['masculine (der)', 'dem', 'an dem → am'],
@@ -105,95 +117,111 @@ export const chapter035: ChapterDefinition = {
         german: 'Das Buch liegt auf dem Tisch.',
         english: 'The book is lying on the table.',
         highlight: ['auf dem Tisch'],
-        explanation: 'der Tisch is masculine, so the dative article is dem; auf describes a flat, horizontal surface.',
+        explanation:
+          'der Tisch is masculine, so the dative article is dem; auf describes a flat, horizontal surface.',
       },
       {
         german: 'Die Jacke hängt an der Garderobe.',
         english: 'The jacket is hanging on the coat rack.',
         highlight: ['an der Garderobe'],
-        explanation: 'die Garderobe is feminine, so the dative article is der; an describes something attached to a vertical surface.',
+        explanation:
+          'die Garderobe is feminine, so the dative article is der; an describes something attached to a vertical surface.',
       },
       {
         german: 'Der Hund schläft unter dem Bett.',
         english: 'The dog is sleeping under the bed.',
         highlight: ['unter dem Bett'],
-        explanation: 'das Bett is neuter, so the dative article is dem; unter describes a position directly below something.',
+        explanation:
+          'das Bett is neuter, so the dative article is dem; unter describes a position directly below something.',
       },
       {
         german: 'Wir wohnen in der Stadt.',
         english: 'We live in the city.',
         highlight: ['in der Stadt'],
-        explanation: 'die Stadt is feminine, so the dative article is der; wohnen describes a fixed state, so in takes the dative.',
+        explanation:
+          'die Stadt is feminine, so the dative article is der; wohnen describes a fixed state, so in takes the dative.',
       },
       {
         german: 'Das Auto steht vor dem Haus.',
         english: 'The car is parked in front of the house.',
         highlight: ['vor dem Haus'],
-        explanation: 'das Haus is neuter, so the dative article is dem; vor means in front of.',
+        explanation:
+          'das Haus is neuter, so the dative article is dem; vor means in front of.',
       },
       {
         german: 'Die Kinder spielen im Park.',
         english: 'The children are playing in the park.',
         highlight: ['im Park'],
-        explanation: 'der Park is masculine; in dem contracts to im, which is strongly preferred over the uncontracted form.',
+        explanation:
+          'der Park is masculine; in dem contracts to im, which is strongly preferred over the uncontracted form.',
       },
       {
         german: 'Der Spiegel hängt über dem Waschbecken.',
         english: 'The mirror is hanging above the sink.',
         highlight: ['über dem Waschbecken'],
-        explanation: 'das Waschbecken is neuter, so the dative article is dem; über describes a position directly above without touching.',
+        explanation:
+          'das Waschbecken is neuter, so the dative article is dem; über describes a position directly above without touching.',
       },
       {
         german: 'Die Bank steht zwischen den Bäumen.',
         english: 'The bench is standing between the trees.',
         highlight: ['zwischen den Bäumen'],
-        explanation: 'Bäume (trees) is plural, so the dative article is den, and the noun takes the plural dative -n ending.',
+        explanation:
+          'Bäume (trees) is plural, so the dative article is den, and the noun takes the plural dative -n ending.',
       },
       {
         german: 'Der Schlüssel liegt neben der Tasche.',
         english: 'The key is lying next to the bag.',
         highlight: ['neben der Tasche'],
-        explanation: 'die Tasche is feminine, so the dative article is der; neben means next to/beside.',
+        explanation:
+          'die Tasche is feminine, so the dative article is der; neben means next to/beside.',
       },
       {
         german: 'Das Poster hängt hinter der Tür.',
         english: 'The poster is hanging behind the door.',
         highlight: ['hinter der Tür'],
-        explanation: 'die Tür is feminine, so the dative article is der; hinter means behind.',
+        explanation:
+          'die Tür is feminine, so the dative article is der; hinter means behind.',
       },
       {
         german: 'Er sitzt am Fenster.',
         english: 'He is sitting at the window.',
         highlight: ['am Fenster'],
-        explanation: 'das Fenster is neuter; an dem contracts to am, the natural everyday form.',
+        explanation:
+          'das Fenster is neuter; an dem contracts to am, the natural everyday form.',
       },
       {
         german: 'Die Blumen stehen im Wohnzimmer.',
         english: 'The flowers are in the living room.',
         highlight: ['im Wohnzimmer'],
-        explanation: 'das Wohnzimmer is neuter; in dem contracts to im, describing a fixed location.',
+        explanation:
+          'das Wohnzimmer is neuter; in dem contracts to im, describing a fixed location.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Das Buch liegt auf den Tisch.',
         correct: 'Das Buch liegt auf dem Tisch.',
-        explanation: 'liegen describes a fixed location (wo?), so auf must take the dative dem, not the accusative den.',
+        explanation:
+          'liegen describes a fixed location (wo?), so auf must take the dative dem, not the accusative den.',
       },
       {
         incorrect: 'Das Auto steht vor der Haus.',
         correct: 'Das Auto steht vor dem Haus.',
-        explanation: 'das Haus is neuter, so the dative article is dem, not the feminine der.',
+        explanation:
+          'das Haus is neuter, so the dative article is dem, not the feminine der.',
       },
       {
         incorrect: 'Die Bank steht zwischen der Bäumen.',
         correct: 'Die Bank steht zwischen den Bäumen.',
-        explanation: 'Bäume (trees) is plural, so the dative article must be den, not the feminine singular der.',
+        explanation:
+          'Bäume (trees) is plural, so the dative article must be den, not the feminine singular der.',
       },
       {
         incorrect: 'Die Kinder spielen in das Park.',
         correct: 'Die Kinder spielen im Park.',
-        explanation: 'spielen here describes where the children are, so in takes the dative; der Park is masculine, so in dem contracts to im, not the accusative in das.',
+        explanation:
+          'spielen here describes where the children are, so in takes the dative; der Park is masculine, so in dem contracts to im, not the accusative in das.',
       },
     ],
     remember: [
@@ -226,7 +254,8 @@ export const chapter035: ChapterDefinition = {
         { id: 'd', text: 'über' },
       ],
       correctOptionId: 'a',
-      explanation: 'auf is used for a flat, horizontal surface such as a tabletop; an suggests a vertical surface, in suggests something enclosed, and über would mean "above, not touching."',
+      explanation:
+        'auf is used for a flat, horizontal surface such as a tabletop; an suggests a vertical surface, in suggests something enclosed, and über would mean "above, not touching."',
     },
     {
       id: 'ch35-ex-02',
@@ -244,7 +273,8 @@ export const chapter035: ChapterDefinition = {
         { id: 'd', text: 'unter' },
       ],
       correctOptionId: 'a',
-      explanation: 'an describes something attached to or hanging on a vertical surface or fixture, like a coat rack.',
+      explanation:
+        'an describes something attached to or hanging on a vertical surface or fixture, like a coat rack.',
     },
     {
       id: 'ch35-ex-03',
@@ -262,7 +292,8 @@ export const chapter035: ChapterDefinition = {
         { id: 'd', text: 'in' },
       ],
       correctOptionId: 'a',
-      explanation: 'unter means "under/underneath," describing a position directly below the bed.',
+      explanation:
+        'unter means "under/underneath," describing a position directly below the bed.',
     },
     {
       id: 'ch35-ex-04',
@@ -298,7 +329,8 @@ export const chapter035: ChapterDefinition = {
         { id: 'd', text: 'das' },
       ],
       correctOptionId: 'a',
-      explanation: 'das Haus is neuter, so the dative article is dem; das is the accusative/nominative neuter form, not the dative.',
+      explanation:
+        'das Haus is neuter, so the dative article is dem; das is the accusative/nominative neuter form, not the dative.',
     },
     {
       id: 'ch35-ex-06',
@@ -361,7 +393,8 @@ export const chapter035: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['dative-vs-accusative', 'neben', 'feminine'],
-      instruction: 'Choose the form that matches a fixed location (wo?), not a direction.',
+      instruction:
+        'Choose the form that matches a fixed location (wo?), not a direction.',
       prompt: 'Der Schlüssel liegt neben ___ Tasche.',
       options: [
         { id: 'a', text: 'der' },
@@ -370,7 +403,8 @@ export const chapter035: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Tasche is feminine and liegen describes a fixed location, so the dative der is required; die would be the accusative form used for direction, not location.',
+      explanation:
+        'die Tasche is feminine and liegen describes a fixed location, so the dative der is required; die would be the accusative form used for direction, not location.',
     },
     {
       id: 'ch35-ex-10',
@@ -379,7 +413,8 @@ export const chapter035: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['dative-vs-accusative', 'hinter', 'feminine'],
-      instruction: 'Choose the form that matches a fixed location (wo?), not a direction.',
+      instruction:
+        'Choose the form that matches a fixed location (wo?), not a direction.',
       prompt: 'Das Poster hängt hinter ___ Tür.',
       options: [
         { id: 'a', text: 'der' },
@@ -388,7 +423,8 @@ export const chapter035: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Tür is feminine and hängen here describes where the poster already is, so the dative der is required, not the accusative die.',
+      explanation:
+        'die Tür is feminine and hängen here describes where the poster already is, so the dative der is required, not the accusative die.',
     },
     {
       id: 'ch35-ex-11',
@@ -397,7 +433,8 @@ export const chapter035: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['dative-vs-accusative', 'an', 'neuter', 'contraction'],
-      instruction: 'Choose the form that matches a fixed location (wo?), not a direction.',
+      instruction:
+        'Choose the form that matches a fixed location (wo?), not a direction.',
       prompt: 'Er sitzt an ___ Fenster.',
       options: [
         { id: 'a', text: 'dem' },
@@ -406,7 +443,8 @@ export const chapter035: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'a',
-      explanation: 'das Fenster is neuter and sitzen describes a fixed location, so the dative dem is required (often contracted to am); das would be the accusative neuter form used for direction.',
+      explanation:
+        'das Fenster is neuter and sitzen describes a fixed location, so the dative dem is required (often contracted to am); das would be the accusative neuter form used for direction.',
     },
     {
       id: 'ch35-ex-12',
@@ -415,7 +453,8 @@ export const chapter035: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['dative-vs-accusative', 'über', 'neuter'],
-      instruction: 'Choose the form that matches a fixed location (wo?), not a direction.',
+      instruction:
+        'Choose the form that matches a fixed location (wo?), not a direction.',
       prompt: 'Die Bilder hängen über ___ Sofa.',
       options: [
         { id: 'a', text: 'dem' },
@@ -424,7 +463,8 @@ export const chapter035: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'a',
-      explanation: 'das Sofa is neuter and hängen here describes a fixed position, so the dative dem is required, not the accusative das.',
+      explanation:
+        'das Sofa is neuter and hängen here describes a fixed position, so the dative dem is required, not the accusative das.',
     },
     {
       id: 'ch35-ex-13',
@@ -493,13 +533,15 @@ export const chapter035: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['contraction', 'in + dem = im', 'masculine'],
-      instruction: 'Write the contracted form of the preposition and article. Capitalisation is not checked.',
+      instruction:
+        'Write the contracted form of the preposition and article. Capitalisation is not checked.',
       prompt: 'Die Kinder spielen ___ Park. (in dem)',
       acceptedAnswers: ['im'],
       answerMode: 'caseInsensitive',
       placeholder: 'im',
       maxLength: 10,
-      explanation: 'der Park is masculine; in dem contracts to im, the natural everyday form.',
+      explanation:
+        'der Park is masculine; in dem contracts to im, the natural everyday form.',
     },
     {
       id: 'ch35-ex-18',
@@ -508,13 +550,15 @@ export const chapter035: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['contraction', 'an + dem = am', 'neuter'],
-      instruction: 'Write the contracted form of the preposition and article. Capitalisation is not checked.',
+      instruction:
+        'Write the contracted form of the preposition and article. Capitalisation is not checked.',
       prompt: 'Er sitzt ___ Fenster. (an dem)',
       acceptedAnswers: ['am'],
       answerMode: 'caseInsensitive',
       placeholder: 'am',
       maxLength: 10,
-      explanation: 'das Fenster is neuter; an dem contracts to am, the natural everyday form.',
+      explanation:
+        'das Fenster is neuter; an dem contracts to am, the natural everyday form.',
     },
     {
       id: 'ch35-ex-19',
@@ -523,13 +567,15 @@ export const chapter035: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['preposition + article', 'auf', 'masculine'],
-      instruction: 'Complete the sentence with the correct preposition and article. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct preposition and article. Capitalisation is not checked.',
       prompt: 'Das Buch liegt ____ Tisch.',
       acceptedAnswers: ['auf dem'],
       answerMode: 'caseInsensitive',
       placeholder: 'auf dem',
       maxLength: 20,
-      explanation: 'auf describes a flat surface and der Tisch is masculine, so the correct combination is auf dem.',
+      explanation:
+        'auf describes a flat surface and der Tisch is masculine, so the correct combination is auf dem.',
     },
     {
       id: 'ch35-ex-20',
@@ -538,13 +584,15 @@ export const chapter035: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['preposition + article', 'an', 'feminine'],
-      instruction: 'Complete the sentence with the correct preposition and article. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct preposition and article. Capitalisation is not checked.',
       prompt: 'Die Tasche steht ____ Tür.',
       acceptedAnswers: ['an der'],
       answerMode: 'caseInsensitive',
       placeholder: 'an der',
       maxLength: 20,
-      explanation: 'an describes something positioned at/against a vertical surface and die Tür is feminine, so the correct combination is an der.',
+      explanation:
+        'an describes something positioned at/against a vertical surface and die Tür is feminine, so the correct combination is an der.',
     },
     {
       id: 'ch35-ex-21',
@@ -560,7 +608,8 @@ export const chapter035: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Das Auto steht ...',
       maxLength: 60,
-      explanation: 'das Haus is neuter and the sentence describes a fixed location, so vor takes the dative: vor dem Haus.',
+      explanation:
+        'das Haus is neuter and the sentence describes a fixed location, so vor takes the dative: vor dem Haus.',
     },
     {
       id: 'ch35-ex-22',
@@ -572,11 +621,15 @@ export const chapter035: ChapterDefinition = {
       instruction:
         'Write a complete sentence describing the location. Capitalisation is checked; no full stop is required.',
       prompt: 'die Blumen – stehen – in – die Küche (Ort, Dativ)',
-      acceptedAnswers: ['Die Blumen stehen in der Küche.', 'Die Blumen stehen in der Küche'],
+      acceptedAnswers: [
+        'Die Blumen stehen in der Küche.',
+        'Die Blumen stehen in der Küche',
+      ],
       answerMode: 'normalized',
       placeholder: 'Die Blumen stehen ...',
       maxLength: 60,
-      explanation: 'die Küche is feminine and the sentence describes a fixed location, so in takes the dative: in der Küche.',
+      explanation:
+        'die Küche is feminine and the sentence describes a fixed location, so in takes the dative: in der Küche.',
     },
     {
       id: 'ch35-ex-23',
@@ -588,11 +641,15 @@ export const chapter035: ChapterDefinition = {
       instruction:
         'Write a complete sentence describing the location. Capitalisation is checked; no full stop is required.',
       prompt: 'der Spiegel – hängen – über – das Waschbecken (Ort, Dativ)',
-      acceptedAnswers: ['Der Spiegel hängt über dem Waschbecken.', 'Der Spiegel hängt über dem Waschbecken'],
+      acceptedAnswers: [
+        'Der Spiegel hängt über dem Waschbecken.',
+        'Der Spiegel hängt über dem Waschbecken',
+      ],
       answerMode: 'normalized',
       placeholder: 'Der Spiegel hängt ...',
       maxLength: 60,
-      explanation: 'das Waschbecken is neuter and the sentence describes a fixed location, so über takes the dative: über dem Waschbecken.',
+      explanation:
+        'das Waschbecken is neuter and the sentence describes a fixed location, so über takes the dative: über dem Waschbecken.',
     },
     {
       id: 'ch35-ex-24',
@@ -608,7 +665,8 @@ export const chapter035: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Die Bank steht ...',
       maxLength: 60,
-      explanation: 'Bäumen (trees) is plural, so the dative article must be den, not the feminine singular der.',
+      explanation:
+        'Bäumen (trees) is plural, so the dative article must be den, not the feminine singular der.',
     },
     {
       id: 'ch35-ex-25',
@@ -626,7 +684,8 @@ export const chapter035: ChapterDefinition = {
         { id: 'd', text: 'unter' },
       ],
       correctOptionId: 'a',
-      explanation: 'A lamp attached to the ceiling by a cord is described with an (an der Decke hängen); über would mean floating above without touching.',
+      explanation:
+        'A lamp attached to the ceiling by a cord is described with an (an der Decke hängen); über would mean floating above without touching.',
     },
     {
       id: 'ch35-ex-26',
@@ -644,7 +703,8 @@ export const chapter035: ChapterDefinition = {
         { id: 'd', text: 'über' },
       ],
       correctOptionId: 'a',
-      explanation: 'auf describes a flat, horizontal surface such as the floor; the rug rests directly on top of it.',
+      explanation:
+        'auf describes a flat, horizontal surface such as the floor; the rug rests directly on top of it.',
     },
     {
       id: 'ch35-ex-27',
@@ -662,7 +722,8 @@ export const chapter035: ChapterDefinition = {
         { id: 'd', text: 'über' },
       ],
       correctOptionId: 'a',
-      explanation: 'vor means "in front of"; the shoes stand in front of the door, not behind, beside, or above it.',
+      explanation:
+        'vor means "in front of"; the shoes stand in front of the door, not behind, beside, or above it.',
     },
     {
       id: 'ch35-ex-28',
@@ -698,7 +759,8 @@ export const chapter035: ChapterDefinition = {
         { id: 'd', text: 'das' },
       ],
       correctOptionId: 'a',
-      explanation: 'das Regal is neuter, so the dative article is dem (often contracted with in to im).',
+      explanation:
+        'das Regal is neuter, so the dative article is dem (often contracted with in to im).',
     },
     {
       id: 'ch35-ex-30',
@@ -716,7 +778,8 @@ export const chapter035: ChapterDefinition = {
         { id: 'd', text: 'über' },
       ],
       correctOptionId: 'a',
-      explanation: 'auf is used for something standing on a flat, horizontal surface such as a tabletop.',
+      explanation:
+        'auf is used for something standing on a flat, horizontal surface such as a tabletop.',
     },
     {
       id: 'ch35-ex-31',
@@ -725,7 +788,8 @@ export const chapter035: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['dative-vs-accusative', 'neben', 'masculine'],
-      instruction: 'Choose the form that matches a fixed location (wo?), not a direction.',
+      instruction:
+        'Choose the form that matches a fixed location (wo?), not a direction.',
       prompt: 'Der Stuhl steht neben ___ Tisch.',
       options: [
         { id: 'a', text: 'dem' },
@@ -734,7 +798,8 @@ export const chapter035: ChapterDefinition = {
         { id: 'd', text: 'das' },
       ],
       correctOptionId: 'a',
-      explanation: 'der Tisch is masculine and stehen describes a fixed location, so the dative dem is required; den is the accusative form used for direction.',
+      explanation:
+        'der Tisch is masculine and stehen describes a fixed location, so the dative dem is required; den is the accusative form used for direction.',
     },
     {
       id: 'ch35-ex-32',
@@ -752,7 +817,8 @@ export const chapter035: ChapterDefinition = {
         { id: 'd', text: 'an' },
       ],
       correctOptionId: 'a',
-      explanation: 'der Garten is masculine; in dem contracts to im, the natural everyday form.',
+      explanation:
+        'der Garten is masculine; in dem contracts to im, the natural everyday form.',
     },
     {
       id: 'ch35-ex-33',
@@ -770,7 +836,8 @@ export const chapter035: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Stadt is feminine, so the dative article is der; die is the nominative/accusative feminine form, not the dative.',
+      explanation:
+        'die Stadt is feminine, so the dative article is der; die is the nominative/accusative feminine form, not the dative.',
     },
     {
       id: 'ch35-ex-34',
@@ -788,7 +855,8 @@ export const chapter035: ChapterDefinition = {
         { id: 'd', text: 'hinter' },
       ],
       correctOptionId: 'a',
-      explanation: 'zwischen means "between" and is used when two reference points are named, here the house and the garage.',
+      explanation:
+        'zwischen means "between" and is used when two reference points are named, here the house and the garage.',
     },
     {
       id: 'ch35-ex-35',
@@ -860,13 +928,15 @@ export const chapter035: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['contraction', 'in + dem = im', 'masculine'],
-      instruction: 'Write the contracted form of the preposition and article. Capitalisation is not checked.',
+      instruction:
+        'Write the contracted form of the preposition and article. Capitalisation is not checked.',
       prompt: 'Die Blumen stehen ___ Garten. (in dem)',
       acceptedAnswers: ['im'],
       answerMode: 'caseInsensitive',
       placeholder: 'im',
       maxLength: 10,
-      explanation: 'der Garten is masculine; in dem contracts to im, the natural everyday form.',
+      explanation:
+        'der Garten is masculine; in dem contracts to im, the natural everyday form.',
     },
     {
       id: 'ch35-ex-40',
@@ -875,13 +945,15 @@ export const chapter035: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['contraction', 'an + dem = am', 'neuter'],
-      instruction: 'Write the contracted form of the preposition and article. Capitalisation is not checked.',
+      instruction:
+        'Write the contracted form of the preposition and article. Capitalisation is not checked.',
       prompt: 'Die Katze sitzt ___ Fenster. (an dem)',
       acceptedAnswers: ['am'],
       answerMode: 'caseInsensitive',
       placeholder: 'am',
       maxLength: 10,
-      explanation: 'das Fenster is neuter; an dem contracts to am, the natural everyday form.',
+      explanation:
+        'das Fenster is neuter; an dem contracts to am, the natural everyday form.',
     },
     {
       id: 'ch35-ex-41',
@@ -890,13 +962,15 @@ export const chapter035: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['preposition + article', 'unter', 'neuter'],
-      instruction: 'Complete the sentence with the correct preposition and article. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct preposition and article. Capitalisation is not checked.',
       prompt: 'Der Hund schläft ____ Bett.',
       acceptedAnswers: ['unter dem'],
       answerMode: 'caseInsensitive',
       placeholder: 'unter dem',
       maxLength: 20,
-      explanation: 'unter describes a position directly below and das Bett is neuter, so the correct combination is unter dem.',
+      explanation:
+        'unter describes a position directly below and das Bett is neuter, so the correct combination is unter dem.',
     },
     {
       id: 'ch35-ex-42',
@@ -905,13 +979,15 @@ export const chapter035: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['preposition + article', 'zwischen', 'plural'],
-      instruction: 'Complete the sentence with the correct preposition and article. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct preposition and article. Capitalisation is not checked.',
       prompt: 'Die Bank steht ____ Bäumen.',
       acceptedAnswers: ['zwischen den'],
       answerMode: 'caseInsensitive',
       placeholder: 'zwischen den',
       maxLength: 20,
-      explanation: 'zwischen means "between" and Bäumen (trees) is plural, so the correct combination is zwischen den.',
+      explanation:
+        'zwischen means "between" and Bäumen (trees) is plural, so the correct combination is zwischen den.',
     },
     {
       id: 'ch35-ex-43',
@@ -923,11 +999,15 @@ export const chapter035: ChapterDefinition = {
       instruction:
         'Write a complete sentence describing the location. Capitalisation is checked; no full stop is required.',
       prompt: 'die Schuhe – stehen – vor – die Tür (Ort, Dativ)',
-      acceptedAnswers: ['Die Schuhe stehen vor der Tür.', 'Die Schuhe stehen vor der Tür'],
+      acceptedAnswers: [
+        'Die Schuhe stehen vor der Tür.',
+        'Die Schuhe stehen vor der Tür',
+      ],
       answerMode: 'normalized',
       placeholder: 'Die Schuhe stehen ...',
       maxLength: 60,
-      explanation: 'die Tür is feminine and the sentence describes a fixed location, so vor takes the dative: vor der Tür.',
+      explanation:
+        'die Tür is feminine and the sentence describes a fixed location, so vor takes the dative: vor der Tür.',
     },
     {
       id: 'ch35-ex-44',
@@ -939,11 +1019,15 @@ export const chapter035: ChapterDefinition = {
       instruction:
         'Write a complete sentence describing the location. Capitalisation is checked; no full stop is required.',
       prompt: 'der Teppich – liegen – auf – der Boden (Ort, Dativ)',
-      acceptedAnswers: ['Der Teppich liegt auf dem Boden.', 'Der Teppich liegt auf dem Boden'],
+      acceptedAnswers: [
+        'Der Teppich liegt auf dem Boden.',
+        'Der Teppich liegt auf dem Boden',
+      ],
       answerMode: 'normalized',
       placeholder: 'Der Teppich liegt ...',
       maxLength: 60,
-      explanation: 'der Boden is masculine and the sentence describes a fixed location, so auf takes the dative: auf dem Boden.',
+      explanation:
+        'der Boden is masculine and the sentence describes a fixed location, so auf takes the dative: auf dem Boden.',
     },
     {
       id: 'ch35-ex-45',
@@ -959,7 +1043,8 @@ export const chapter035: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Die Lampe hängt ...',
       maxLength: 60,
-      explanation: 'die Decke is feminine and the sentence describes a fixed location, so an takes the dative: an der Decke.',
+      explanation:
+        'die Decke is feminine and the sentence describes a fixed location, so an takes the dative: an der Decke.',
     },
     {
       id: 'ch35-ex-46',
@@ -975,7 +1060,8 @@ export const chapter035: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Das Auto steht ...',
       maxLength: 60,
-      explanation: 'das Haus is neuter and the sentence describes a fixed location, so vor must take the dative dem, not the accusative das.',
+      explanation:
+        'das Haus is neuter and the sentence describes a fixed location, so vor must take the dative dem, not the accusative das.',
     },
     {
       id: 'ch35-ex-47',
@@ -989,7 +1075,8 @@ export const chapter035: ChapterDefinition = {
       templateParts: ['Die Kinder spielen ', ' Garten.'],
       slots: [{ id: 's1', correctWord: 'im' }],
       wordBank: ['im', 'am', 'ins', 'in'],
-      explanation: 'der Garten is masculine; in dem contracts to im, the natural everyday form for a fixed location.',
+      explanation:
+        'der Garten is masculine; in dem contracts to im, the natural everyday form for a fixed location.',
     },
     {
       id: 'ch35-ex-48',
@@ -1003,7 +1090,8 @@ export const chapter035: ChapterDefinition = {
       templateParts: ['Er sitzt ', ' Fenster.'],
       slots: [{ id: 's1', correctWord: 'am' }],
       wordBank: ['am', 'im', 'an', 'beim'],
-      explanation: 'das Fenster is neuter; an dem contracts to am, the natural everyday form for a fixed location.',
+      explanation:
+        'das Fenster is neuter; an dem contracts to am, the natural everyday form for a fixed location.',
     },
     {
       id: 'ch35-ex-49',
@@ -1045,7 +1133,8 @@ export const chapter035: ChapterDefinition = {
       templateParts: ['Die Bank steht zwischen ', ' Bäumen.'],
       slots: [{ id: 's1', correctWord: 'den' }],
       wordBank: ['den', 'dem', 'der', 'das'],
-      explanation: 'Bäumen (trees) is plural, so the dative article after zwischen is den.',
+      explanation:
+        'Bäumen (trees) is plural, so the dative article after zwischen is den.',
     },
     {
       id: 'ch35-ex-52',
@@ -1087,7 +1176,8 @@ export const chapter035: ChapterDefinition = {
       templateParts: ['Die Blumen stehen ', ' Wohnzimmer.'],
       slots: [{ id: 's1', correctWord: 'im' }],
       wordBank: ['im', 'am', 'in', 'ins'],
-      explanation: 'das Wohnzimmer is neuter; in dem contracts to im, the natural everyday form for a fixed location.',
+      explanation:
+        'das Wohnzimmer is neuter; in dem contracts to im, the natural everyday form for a fixed location.',
     },
     {
       id: 'ch35-ex-55',
@@ -1136,7 +1226,8 @@ export const chapter035: ChapterDefinition = {
         { id: 'p7', left: 'unter', right: 'under / below' },
         { id: 'p8', left: 'vor', right: 'in front of' },
       ],
-      explanation: 'Each of the two-way prepositions describes a distinct physical relationship when used for a fixed location.',
+      explanation:
+        'Each of the two-way prepositions describes a distinct physical relationship when used for a fixed location.',
     },
     {
       id: 'ch35-ex-58',
@@ -1155,7 +1246,8 @@ export const chapter035: ChapterDefinition = {
         { id: 'p5', left: 'neben', right: 'dem Schrank' },
         { id: 'p6', left: 'vor', right: 'dem Haus' },
       ],
-      explanation: 'These phrases show each preposition combined with the dative article expected for a fixed location.',
+      explanation:
+        'These phrases show each preposition combined with the dative article expected for a fixed location.',
     },
     {
       id: 'ch35-ex-59',
@@ -1167,14 +1259,35 @@ export const chapter035: ChapterDefinition = {
       instruction: 'Match each German sentence with its English translation.',
       prompt: 'Match the sentences to their translations.',
       pairs: [
-        { id: 'p1', left: 'Das Buch liegt auf dem Tisch.', right: 'The book is lying on the table.' },
-        { id: 'p2', left: 'Der Hund schläft unter dem Bett.', right: 'The dog is sleeping under the bed.' },
-        { id: 'p3', left: 'Die Jacke hängt an der Garderobe.', right: 'The jacket is hanging on the coat rack.' },
+        {
+          id: 'p1',
+          left: 'Das Buch liegt auf dem Tisch.',
+          right: 'The book is lying on the table.',
+        },
+        {
+          id: 'p2',
+          left: 'Der Hund schläft unter dem Bett.',
+          right: 'The dog is sleeping under the bed.',
+        },
+        {
+          id: 'p3',
+          left: 'Die Jacke hängt an der Garderobe.',
+          right: 'The jacket is hanging on the coat rack.',
+        },
         { id: 'p4', left: 'Wir wohnen in der Stadt.', right: 'We live in the city.' },
-        { id: 'p5', left: 'Die Bank steht zwischen den Bäumen.', right: 'The bench is standing between the trees.' },
-        { id: 'p6', left: 'Das Poster hängt hinter der Tür.', right: 'The poster is hanging behind the door.' },
+        {
+          id: 'p5',
+          left: 'Die Bank steht zwischen den Bäumen.',
+          right: 'The bench is standing between the trees.',
+        },
+        {
+          id: 'p6',
+          left: 'Das Poster hängt hinter der Tür.',
+          right: 'The poster is hanging behind the door.',
+        },
       ],
-      explanation: 'All of these sentences describe a fixed location (wo?), so the two-way prepositions take the dative.',
+      explanation:
+        'All of these sentences describe a fixed location (wo?), so the two-way prepositions take the dative.',
     },
     {
       id: 'ch35-ex-60',
@@ -1183,7 +1296,8 @@ export const chapter035: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['dative article', 'gender'],
-      instruction: 'Match each noun with the correct dative phrase describing its location.',
+      instruction:
+        'Match each noun with the correct dative phrase describing its location.',
       prompt: 'Match the nouns to the dative phrase that fits.',
       pairs: [
         { id: 'p1', left: 'der Tisch', right: 'auf dem Tisch' },
@@ -1193,7 +1307,8 @@ export const chapter035: ChapterDefinition = {
         { id: 'p5', left: 'der Schrank', right: 'neben dem Schrank' },
         { id: 'p6', left: 'die Wand', right: 'an der Wand' },
       ],
-      explanation: 'Masculine and neuter nouns take dem in the dative, feminine nouns take der, and plural nouns take den.',
+      explanation:
+        'Masculine and neuter nouns take dem in the dative, feminine nouns take der, and plural nouns take den.',
     },
     {
       id: 'ch35-ex-61',
@@ -1202,7 +1317,8 @@ export const chapter035: ChapterDefinition = {
       type: 'matching',
       level: 'production',
       grammarFocus: ['two-way prepositions', 'room vocabulary'],
-      instruction: 'Match each object with the preposition most naturally used to describe its location.',
+      instruction:
+        'Match each object with the preposition most naturally used to describe its location.',
       prompt: 'Match the objects to their typical preposition.',
       pairs: [
         { id: 'p1', left: 'der Boden (floor)', right: 'auf' },
@@ -1212,7 +1328,8 @@ export const chapter035: ChapterDefinition = {
         { id: 'p5', left: 'das Fenster (window)', right: 'vor' },
         { id: 'p6', left: 'die Tür (door)', right: 'hinter' },
       ],
-      explanation: 'The preposition chosen depends on the physical relationship between the object and the reference point: on top of the floor (auf), attached to the wall (an), above the ceiling line (über), and so on.',
+      explanation:
+        'The preposition chosen depends on the physical relationship between the object and the reference point: on top of the floor (auf), attached to the wall (an), above the ceiling line (über), and so on.',
     },
     {
       id: 'ch35-ex-62',
@@ -1221,7 +1338,8 @@ export const chapter035: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['dative article', 'gender'],
-      instruction: 'Match each noun with the correct dative phrase describing its location.',
+      instruction:
+        'Match each noun with the correct dative phrase describing its location.',
       prompt: 'Match the nouns to the dative phrase that fits.',
       pairs: [
         { id: 'p1', left: 'die Küche', right: 'in der Küche' },
@@ -1231,7 +1349,8 @@ export const chapter035: ChapterDefinition = {
         { id: 'p5', left: 'der Stuhl', right: 'neben dem Stuhl' },
         { id: 'p6', left: 'die Decke', right: 'an der Decke' },
       ],
-      explanation: 'Masculine and neuter nouns take dem in the dative, feminine nouns take der, and plural nouns take den; der Garten additionally contracts with in to im.',
+      explanation:
+        'Masculine and neuter nouns take dem in the dative, feminine nouns take der, and plural nouns take den; der Garten additionally contracts with in to im.',
     },
     {
       id: 'ch35-ex-63',
@@ -1245,7 +1364,8 @@ export const chapter035: ChapterDefinition = {
       tokens: ['Das', 'Buch', 'liegt', 'auf', 'den', 'Tisch', '.'],
       errorTokenIndex: 4,
       correction: 'dem',
-      explanation: 'liegen describes a fixed location (wo?), so auf must take the dative dem, not the accusative den.',
+      explanation:
+        'liegen describes a fixed location (wo?), so auf must take the dative dem, not the accusative den.',
     },
     {
       id: 'ch35-ex-64',
@@ -1259,7 +1379,8 @@ export const chapter035: ChapterDefinition = {
       tokens: ['Das', 'Auto', 'steht', 'vor', 'das', 'Haus', '.'],
       errorTokenIndex: 4,
       correction: 'dem',
-      explanation: 'stehen describes a fixed location (wo?), so vor must take the dative dem; das is the accusative neuter form used for direction (wohin?).',
+      explanation:
+        'stehen describes a fixed location (wo?), so vor must take the dative dem; das is the accusative neuter form used for direction (wohin?).',
     },
     {
       id: 'ch35-ex-65',
@@ -1273,7 +1394,8 @@ export const chapter035: ChapterDefinition = {
       tokens: ['Die', 'Bank', 'steht', 'zwischen', 'die', 'Bäume', '.'],
       errorTokenIndex: 4,
       correction: 'den',
-      explanation: 'stehen describes a fixed location (wo?), so zwischen must take the dative den; die is the accusative plural form used for direction.',
+      explanation:
+        'stehen describes a fixed location (wo?), so zwischen must take the dative den; die is the accusative plural form used for direction.',
     },
     {
       id: 'ch35-ex-66',
@@ -1287,7 +1409,8 @@ export const chapter035: ChapterDefinition = {
       tokens: ['Der', 'Hund', 'schläft', 'unter', 'das', 'Bett', '.'],
       errorTokenIndex: 4,
       correction: 'dem',
-      explanation: 'schlafen describes a fixed location (wo?), so unter must take the dative dem, not the accusative das.',
+      explanation:
+        'schlafen describes a fixed location (wo?), so unter must take the dative dem, not the accusative das.',
     },
     {
       id: 'ch35-ex-67',
@@ -1301,7 +1424,8 @@ export const chapter035: ChapterDefinition = {
       tokens: ['Die', 'Jacke', 'hängt', 'an', 'die', 'Garderobe', '.'],
       errorTokenIndex: 4,
       correction: 'der',
-      explanation: 'hängen describes a fixed location (wo?) here, so an must take the dative der, not the accusative die.',
+      explanation:
+        'hängen describes a fixed location (wo?) here, so an must take the dative der, not the accusative die.',
     },
     {
       id: 'ch35-ex-68',
@@ -1315,7 +1439,8 @@ export const chapter035: ChapterDefinition = {
       tokens: ['Die', 'Blumen', 'stehen', 'in', 'den', 'Garten', '.'],
       errorTokenIndex: 4,
       correction: 'dem',
-      explanation: 'stehen describes a fixed location (wo?), so in must take the dative dem (often contracted to im), not the accusative den.',
+      explanation:
+        'stehen describes a fixed location (wo?), so in must take the dative dem (often contracted to im), not the accusative den.',
     },
   ],
 };

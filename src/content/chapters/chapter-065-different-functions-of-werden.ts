@@ -29,7 +29,7 @@ export const chapter065: ChapterDefinition = {
   explanation: {
     introduction: [
       'You have now met werden in three separate roles, spread across three different chapters: as the passive auxiliary (chapter 62 and 63) and as the future auxiliary (chapter 64). But werden actually started its life in German as an ordinary, independent verb meaning "to become" — and it still works that way today, completely apart from its two auxiliary jobs. This chapter does not teach any of the three functions from scratch; instead, it puts all three side by side so you can see clearly what they have in common and, more importantly, how to tell them apart.',
-      'The good news first: no matter which of the three jobs werden is doing in a sentence, it conjugates exactly the same way. There is only one werden to learn how to inflect. The entire skill this chapter builds is a different one: reading what comes after werden (or, in the perfect tense, what shape werden\'s own participle takes) and using that to instantly identify which of the three jobs is at work.',
+      "The good news first: no matter which of the three jobs werden is doing in a sentence, it conjugates exactly the same way. There is only one werden to learn how to inflect. The entire skill this chapter builds is a different one: reading what comes after werden (or, in the perfect tense, what shape werden's own participle takes) and using that to instantly identify which of the three jobs is at work.",
       'This turns out to matter a great deal in the perfect tense, where German quietly uses two different participles for what looks like "the same" werden: geworden, the ordinary participle, for lexical "become"; and worden, a special, shortened participle reserved exclusively for werden when it is functioning as the passive auxiliary. Mixing these two up is probably the single most common mistake advanced learners make with werden, and untangling it is the main point of this chapter.',
     ],
     rules: [
@@ -105,7 +105,12 @@ export const chapter065: ChapterDefinition = {
           ['er/sie/es', 'wird', 'wurde', 'he/she/it becomes / will / is [being]'],
           ['wir', 'werden', 'wurden', 'we become / will / are [being]'],
           ['ihr', 'werdet', 'wurdet', 'you (pl.) become / will / are [being]'],
-          ['sie/Sie', 'werden', 'wurden', 'they/you (formal) become / will / are [being]'],
+          [
+            'sie/Sie',
+            'werden',
+            'wurden',
+            'they/you (formal) become / will / are [being]',
+          ],
         ],
         note: 'The e→i stem change (wirst, wird) and the wurde- simple-past stem are identical no matter which of the three functions werden is performing.',
       },
@@ -114,20 +119,60 @@ export const chapter065: ChapterDefinition = {
         title: 'The three functions of werden, side by side',
         columns: ['Function', 'What follows werden', 'Example (present)', 'English'],
         rows: [
-          ['Lexical ("become")', 'predicate adjective or noun', 'Er wird Arzt.', 'He is becoming a doctor.'],
-          ['Future auxiliary', 'plain infinitive (clause-final)', 'Er wird kommen.', 'He will come.'],
-          ['Passive auxiliary', 'past participle (clause-final)', 'Der Brief wird geschrieben.', 'The letter is being written.'],
+          [
+            'Lexical ("become")',
+            'predicate adjective or noun',
+            'Er wird Arzt.',
+            'He is becoming a doctor.',
+          ],
+          [
+            'Future auxiliary',
+            'plain infinitive (clause-final)',
+            'Er wird kommen.',
+            'He will come.',
+          ],
+          [
+            'Passive auxiliary',
+            'past participle (clause-final)',
+            'Der Brief wird geschrieben.',
+            'The letter is being written.',
+          ],
         ],
       },
       {
         id: 'ch65-table-03',
         title: 'The crux: geworden vs. worden in the perfect tense',
-        columns: ['Function', 'Present-perfect example', "werden's own participle", 'English'],
+        columns: [
+          'Function',
+          'Present-perfect example',
+          "werden's own participle",
+          'English',
+        ],
         rows: [
-          ['Lexical ("become")', 'Er ist Arzt geworden.', 'geworden (regular)', 'He became a doctor.'],
-          ['Lexical ("become")', 'Es ist kalt geworden.', 'geworden (regular)', 'It has gotten cold.'],
-          ['Passive auxiliary', 'Das Auto ist repariert worden.', 'worden (special, auxiliary-only)', 'The car has been repaired.'],
-          ['Passive auxiliary', 'Der Brief ist geschrieben worden.', 'worden (special, auxiliary-only)', 'The letter has been written.'],
+          [
+            'Lexical ("become")',
+            'Er ist Arzt geworden.',
+            'geworden (regular)',
+            'He became a doctor.',
+          ],
+          [
+            'Lexical ("become")',
+            'Es ist kalt geworden.',
+            'geworden (regular)',
+            'It has gotten cold.',
+          ],
+          [
+            'Passive auxiliary',
+            'Das Auto ist repariert worden.',
+            'worden (special, auxiliary-only)',
+            'The car has been repaired.',
+          ],
+          [
+            'Passive auxiliary',
+            'Der Brief ist geschrieben worden.',
+            'worden (special, auxiliary-only)',
+            'The letter has been written.',
+          ],
         ],
         note: 'geworden and worden are never interchangeable: geworden appears only when werden itself is the main verb (lexical "become"); worden appears only when werden is a helper for another verb\'s participle (the passive).',
       },
@@ -136,9 +181,24 @@ export const chapter065: ChapterDefinition = {
         title: 'Same subject, same werden, three different structures',
         columns: ['Sentence', 'What follows werden', 'Function', 'English'],
         rows: [
-          ['Das Fenster wird kaputt.', 'adjective (kaputt)', 'lexical', 'The window is breaking.'],
-          ['Das Fenster wird geöffnet.', 'past participle (geöffnet)', 'passive', 'The window is being opened.'],
-          ['Das Fenster wird sich öffnen.', 'infinitive (sich öffnen)', 'future', 'The window will open.'],
+          [
+            'Das Fenster wird kaputt.',
+            'adjective (kaputt)',
+            'lexical',
+            'The window is breaking.',
+          ],
+          [
+            'Das Fenster wird geöffnet.',
+            'past participle (geöffnet)',
+            'passive',
+            'The window is being opened.',
+          ],
+          [
+            'Das Fenster wird sich öffnen.',
+            'infinitive (sich öffnen)',
+            'future',
+            'The window will open.',
+          ],
         ],
         note: 'The three sentences share the identical subject and the identical form of werden; only what follows it distinguishes lexical, passive, and future.',
       },
@@ -148,7 +208,11 @@ export const chapter065: ChapterDefinition = {
         columns: ['You see...', 'Function', 'Perfect-tense signal'],
         rows: [
           ['adjective or noun after werden', 'lexical ("become")', 'geworden'],
-          ['bare infinitive at the end of the clause', 'future auxiliary', '(no separate perfect form)'],
+          [
+            'bare infinitive at the end of the clause',
+            'future auxiliary',
+            '(no separate perfect form)',
+          ],
           ['past participle at the end of the clause', 'passive auxiliary', 'worden'],
         ],
       },
@@ -158,105 +222,123 @@ export const chapter065: ChapterDefinition = {
         german: 'Er wird Arzt.',
         english: 'He is becoming a doctor.',
         highlight: ['wird', 'Arzt'],
-        explanation: 'Lexical werden + predicate noun with no article (a profession) — "become".',
+        explanation:
+          'Lexical werden + predicate noun with no article (a profession) — "become".',
       },
       {
         german: 'Es wird kalt.',
         english: "It's getting cold.",
         highlight: ['wird', 'kalt'],
-        explanation: 'Lexical werden + predicate adjective — a very common everyday use of "become".',
+        explanation:
+          'Lexical werden + predicate adjective — a very common everyday use of "become".',
       },
       {
         german: 'Er ist Arzt geworden.',
         english: 'He became a doctor.',
         highlight: ['geworden'],
-        explanation: 'The perfect tense of lexical werden uses its own regular participle, geworden, with the auxiliary sein.',
+        explanation:
+          'The perfect tense of lexical werden uses its own regular participle, geworden, with the auxiliary sein.',
       },
       {
         german: 'Sie wird morgen ankommen.',
         english: 'She will arrive tomorrow.',
         highlight: ['wird', 'ankommen'],
-        explanation: 'Future auxiliary werden + the plain infinitive ankommen at the end of the clause.',
+        explanation:
+          'Future auxiliary werden + the plain infinitive ankommen at the end of the clause.',
       },
       {
         german: 'Wir werden das Problem lösen.',
         english: 'We will solve the problem.',
         highlight: ['werden', 'lösen'],
-        explanation: 'Future auxiliary construction: werden conjugated for wir, plain infinitive lösen at the end.',
+        explanation:
+          'Future auxiliary construction: werden conjugated for wir, plain infinitive lösen at the end.',
       },
       {
         german: 'Der Brief wird geschrieben.',
         english: 'The letter is being written.',
         highlight: ['wird', 'geschrieben'],
-        explanation: 'Passive auxiliary werden + the past participle geschrieben — an action being done to the subject.',
+        explanation:
+          'Passive auxiliary werden + the past participle geschrieben — an action being done to the subject.',
       },
       {
         german: 'Das Auto wurde letzte Woche repariert.',
         english: 'The car was repaired last week.',
         highlight: ['wurde', 'repariert'],
-        explanation: 'Simple-past passive, reviewed from chapter 63: wurde + past participle.',
+        explanation:
+          'Simple-past passive, reviewed from chapter 63: wurde + past participle.',
       },
       {
         german: 'Das Auto ist repariert worden.',
         english: 'The car has been repaired.',
         highlight: ['worden'],
-        explanation: 'Present-perfect passive: werden itself takes the special participle worden, never geworden, when it is the passive auxiliary.',
+        explanation:
+          'Present-perfect passive: werden itself takes the special participle worden, never geworden, when it is the passive auxiliary.',
       },
       {
         german: 'Die Fenster sind geputzt worden.',
         english: 'The windows have been cleaned.',
         highlight: ['geputzt', 'worden'],
-        explanation: 'Another present-perfect passive: the main verb\'s participle (geputzt) plus werden\'s own auxiliary participle worden.',
+        explanation:
+          "Another present-perfect passive: the main verb's participle (geputzt) plus werden's own auxiliary participle worden.",
       },
       {
         german: 'Sie ist müde geworden.',
         english: 'She has gotten tired.',
         highlight: ['geworden'],
-        explanation: 'Lexical werden in the perfect tense: geworden, not worden, because werden here is the main verb, not a passive helper.',
+        explanation:
+          'Lexical werden in the perfect tense: geworden, not worden, because werden here is the main verb, not a passive helper.',
       },
       {
         german: 'Er wird das Buch lesen.',
         english: 'He will read the book.',
         highlight: ['wird', 'lesen'],
-        explanation: 'A bare infinitive (lesen) at the end marks this as the future, not the passive.',
+        explanation:
+          'A bare infinitive (lesen) at the end marks this as the future, not the passive.',
       },
       {
         german: 'Das Buch wird gelesen.',
         english: 'The book is being read.',
         highlight: ['wird', 'gelesen'],
-        explanation: 'A past participle (gelesen) at the end marks this as the passive, not the future — compare directly with the previous example.',
+        explanation:
+          'A past participle (gelesen) at the end marks this as the passive, not the future — compare directly with the previous example.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Das Auto ist repariert geworden.',
         correct: 'Das Auto ist repariert worden.',
-        explanation: 'When werden itself functions as the passive auxiliary in a perfect tense, its own participle is the special worden, never the ordinary geworden.',
+        explanation:
+          'When werden itself functions as the passive auxiliary in a perfect tense, its own participle is the special worden, never the ordinary geworden.',
       },
       {
         incorrect: 'Er ist Arzt worden.',
         correct: 'Er ist Arzt geworden.',
-        explanation: 'Lexical "become" uses the regular participle geworden; worden is reserved exclusively for werden acting as the passive auxiliary.',
+        explanation:
+          'Lexical "become" uses the regular participle geworden; worden is reserved exclusively for werden acting as the passive auxiliary.',
       },
       {
         incorrect: 'Der Brief wird schreiben.',
         correct: 'Der Brief wird geschrieben.',
-        explanation: 'The passive auxiliary werden must be followed by a past participle, not a bare infinitive — a bare infinitive would signal the future, not the passive.',
+        explanation:
+          'The passive auxiliary werden must be followed by a past participle, not a bare infinitive — a bare infinitive would signal the future, not the passive.',
       },
       {
         incorrect: 'Ich werde das Buch gelesen.',
         correct: 'Ich werde das Buch lesen.',
-        explanation: 'The future auxiliary werden takes a plain infinitive at the end of the clause, not a past participle — a participle here would wrongly suggest the passive.',
+        explanation:
+          'The future auxiliary werden takes a plain infinitive at the end of the clause, not a past participle — a participle here would wrongly suggest the passive.',
       },
       {
         incorrect: 'Er wird ein Lehrer.',
         correct: 'Er wird Lehrer.',
-        explanation: 'Lexical werden, like sein, drops the indefinite article before an unmodified profession, nationality, or role.',
+        explanation:
+          'Lexical werden, like sein, drops the indefinite article before an unmodified profession, nationality, or role.',
       },
       {
         incorrect: 'Das Fenster würde letztes Jahr repariert.',
         correct: 'Das Fenster wurde letztes Jahr repariert.',
-        explanation: 'A real past-tense statement needs wurde (simple past, indicative); würde is the Konjunktiv II form from chapter 60 and belongs to hypothetical or polite statements, not factual narration.',
+        explanation:
+          'A real past-tense statement needs wurde (simple past, indicative); würde is the Konjunktiv II form from chapter 60 and belongs to hypothetical or polite statements, not factual narration.',
       },
     ],
     remember: [
@@ -265,7 +347,7 @@ export const chapter065: ChapterDefinition = {
       'The future auxiliary werden takes a plain infinitive sent to the end of the clause: Er wird kommen.',
       'The passive auxiliary werden takes the past participle of the main verb, sent to the end of the clause: Das Auto wird repariert.',
       'The single biggest trap: in the perfect tense, lexical werden uses its ordinary participle geworden (Er ist Arzt geworden), while passive werden uses the special participle worden, never geworden (Das Auto ist repariert worden).',
-      'To identify the function, check what follows werden: adjective/noun → lexical; infinitive at the end → future; past participle at the end → passive; and in the perfect tense, check werden\'s own participle: geworden → lexical, worden → passive.',
+      "To identify the function, check what follows werden: adjective/noun → lexical; infinitive at the end → future; past participle at the end → passive; and in the perfect tense, check werden's own participle: geworden → lexical, worden → passive.",
     ],
   },
   mastery: {
@@ -291,7 +373,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'Konjunktiv II form' },
       ],
       correctOptionId: 'a',
-      explanation: 'Arzt is a predicate noun (profession, no article), so werden here means "become", the lexical function.',
+      explanation:
+        'Arzt is a predicate noun (profession, no article), so werden here means "become", the lexical function.',
     },
     {
       id: 'ch65-ex-02',
@@ -309,7 +392,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'simple past form' },
       ],
       correctOptionId: 'a',
-      explanation: 'kommen is a bare infinitive at the end of the clause, marking werden as the future auxiliary.',
+      explanation:
+        'kommen is a bare infinitive at the end of the clause, marking werden as the future auxiliary.',
     },
     {
       id: 'ch65-ex-03',
@@ -327,7 +411,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'Konjunktiv II form' },
       ],
       correctOptionId: 'a',
-      explanation: 'geschrieben is a past participle at the end of the clause, marking werden as the passive auxiliary.',
+      explanation:
+        'geschrieben is a past participle at the end of the clause, marking werden as the passive auxiliary.',
     },
     {
       id: 'ch65-ex-04',
@@ -345,7 +430,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'reflexive verb' },
       ],
       correctOptionId: 'a',
-      explanation: 'kalt is a plain predicate adjective, so werden here means "become" (getting cold), the lexical function.',
+      explanation:
+        'kalt is a plain predicate adjective, so werden here means "become" (getting cold), the lexical function.',
     },
     {
       id: 'ch65-ex-05',
@@ -381,7 +467,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'wirst' },
       ],
       correctOptionId: 'a',
-      explanation: 'The er/sie/es-form of werden is wird, with the same e→i stem change as du.',
+      explanation:
+        'The er/sie/es-form of werden is wird, with the same e→i stem change as du.',
     },
     {
       id: 'ch65-ex-07',
@@ -399,7 +486,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'bin geworden' },
       ],
       correctOptionId: 'a',
-      explanation: 'wurde is the simple-past ich-form of werden; würde is the Konjunktiv II form (chapter 60), not used for a factual past narration.',
+      explanation:
+        'wurde is the simple-past ich-form of werden; würde is the Konjunktiv II form (chapter 60), not used for a factual past narration.',
     },
     {
       id: 'ch65-ex-08',
@@ -417,7 +505,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'the word worden' },
       ],
       correctOptionId: 'a',
-      explanation: 'The future auxiliary werden always combines with a plain, unchanged infinitive sent to the end of the clause.',
+      explanation:
+        'The future auxiliary werden always combines with a plain, unchanged infinitive sent to the end of the clause.',
     },
     {
       id: 'ch65-ex-09',
@@ -435,7 +524,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'the word geworden' },
       ],
       correctOptionId: 'a',
-      explanation: 'The passive auxiliary werden always combines with the past participle of the main verb, sent to the end of the clause.',
+      explanation:
+        'The passive auxiliary werden always combines with the past participle of the main verb, sent to the end of the clause.',
     },
     {
       id: 'ch65-ex-10',
@@ -444,7 +534,8 @@ export const chapter065: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['werden', 'geworden', 'lexical-werden', 'perfect-tense'],
-      instruction: 'Choose the correct participle for lexical "become" in the perfect tense.',
+      instruction:
+        'Choose the correct participle for lexical "become" in the perfect tense.',
       prompt: 'Er ist Lehrer ___.',
       options: [
         { id: 'a', text: 'geworden' },
@@ -453,7 +544,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'geworten' },
       ],
       correctOptionId: 'a',
-      explanation: 'Lexical werden ("become") uses its own regular participle geworden in the perfect tense; worden is reserved for the passive auxiliary.',
+      explanation:
+        'Lexical werden ("become") uses its own regular participle geworden in the perfect tense; worden is reserved for the passive auxiliary.',
     },
     {
       id: 'ch65-ex-11',
@@ -462,7 +554,8 @@ export const chapter065: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['werden', 'worden', 'passive-auxiliary', 'perfect-tense'],
-      instruction: 'Choose the correct participle for the passive auxiliary in the perfect tense.',
+      instruction:
+        'Choose the correct participle for the passive auxiliary in the perfect tense.',
       prompt: 'Das Auto ist repariert ___.',
       options: [
         { id: 'a', text: 'worden' },
@@ -471,7 +564,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'geworten' },
       ],
       correctOptionId: 'a',
-      explanation: 'When werden is the passive auxiliary in a perfect tense, its own participle is the special, shortened worden, never geworden.',
+      explanation:
+        'When werden is the passive auxiliary in a perfect tense, its own participle is the special, shortened worden, never geworden.',
     },
     {
       id: 'ch65-ex-12',
@@ -489,7 +583,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'Konjunktiv II' },
       ],
       correctOptionId: 'a',
-      explanation: 'geöffnet is a past participle, marking this as the passive: "The window is being opened."',
+      explanation:
+        'geöffnet is a past participle, marking this as the passive: "The window is being opened."',
     },
     {
       id: 'ch65-ex-13',
@@ -507,7 +602,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'Der Brief wird geschrieben worden.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The present-perfect passive needs sein + past participle + worden: Der Brief ist geschrieben worden.',
+      explanation:
+        'The present-perfect passive needs sein + past participle + worden: Der Brief ist geschrieben worden.',
     },
     {
       id: 'ch65-ex-14',
@@ -525,7 +621,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'Sie hat Lehrerin geworden.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Lexical "become" in the perfect tense uses sein + geworden, and the unmodified profession noun Lehrerin takes no article.',
+      explanation:
+        'Lexical "become" in the perfect tense uses sein + geworden, and the unmodified profession noun Lehrerin takes no article.',
     },
     {
       id: 'ch65-ex-15',
@@ -543,7 +640,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'Wir werden das Problem gelöst.' },
       ],
       correctOptionId: 'a',
-      explanation: 'werden stays in position 2, and the plain infinitive lösen is sent to the end of the clause.',
+      explanation:
+        'werden stays in position 2, and the plain infinitive lösen is sent to the end of the clause.',
     },
     {
       id: 'ch65-ex-16',
@@ -552,7 +650,8 @@ export const chapter065: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['werden', 'infinitive-vs-participle', 'function-identification'],
-      instruction: 'Choose which sentence has an infinitive (not a participle) at the end, marking it as the future rather than the passive.',
+      instruction:
+        'Choose which sentence has an infinitive (not a participle) at the end, marking it as the future rather than the passive.',
       prompt: 'Which sentence is future tense, not passive?',
       options: [
         { id: 'a', text: 'Er wird das Buch lesen.' },
@@ -561,7 +660,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'Das Buch ist gelesen worden.' },
       ],
       correctOptionId: 'a',
-      explanation: 'lesen is a bare infinitive, marking this as the future ("He will read the book"); the other options all contain the participle gelesen and are passive.',
+      explanation:
+        'lesen is a bare infinitive, marking this as the future ("He will read the book"); the other options all contain the participle gelesen and are passive.',
     },
     {
       id: 'ch65-ex-17',
@@ -579,7 +679,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'Das Auto hat repariert geworden.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The passive auxiliary werden takes worden, not geworden, in the perfect tense.',
+      explanation:
+        'The passive auxiliary werden takes worden, not geworden, in the perfect tense.',
     },
     {
       id: 'ch65-ex-18',
@@ -588,7 +689,8 @@ export const chapter065: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['werden', 'conjugation', 'ich-form'],
-      instruction: 'Write the present-tense ich-form of werden. Capitalisation is not checked.',
+      instruction:
+        'Write the present-tense ich-form of werden. Capitalisation is not checked.',
       prompt: 'ich → werden (Präsens)',
       acceptedAnswers: ['werde'],
       answerMode: 'caseInsensitive',
@@ -603,7 +705,8 @@ export const chapter065: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['werden', 'conjugation', 'du-form'],
-      instruction: 'Write the present-tense du-form of werden. Capitalisation is not checked.',
+      instruction:
+        'Write the present-tense du-form of werden. Capitalisation is not checked.',
       prompt: 'du → werden (Präsens)',
       acceptedAnswers: ['wirst'],
       answerMode: 'caseInsensitive',
@@ -618,13 +721,15 @@ export const chapter065: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['werden', 'conjugation', 'er-form'],
-      instruction: 'Write the present-tense er/sie/es-form of werden. Capitalisation is not checked.',
+      instruction:
+        'Write the present-tense er/sie/es-form of werden. Capitalisation is not checked.',
       prompt: 'er/sie/es → werden (Präsens)',
       acceptedAnswers: ['wird'],
       answerMode: 'caseInsensitive',
       placeholder: 'wird',
       maxLength: 15,
-      explanation: 'The er/sie/es-form of werden has the same e→i stem change as du: wird.',
+      explanation:
+        'The er/sie/es-form of werden has the same e→i stem change as du: wird.',
     },
     {
       id: 'ch65-ex-21',
@@ -633,7 +738,8 @@ export const chapter065: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['werden', 'conjugation', 'wir-form'],
-      instruction: 'Write the present-tense wir-form of werden. Capitalisation is not checked.',
+      instruction:
+        'Write the present-tense wir-form of werden. Capitalisation is not checked.',
       prompt: 'wir → werden (Präsens)',
       acceptedAnswers: ['werden'],
       answerMode: 'caseInsensitive',
@@ -648,7 +754,8 @@ export const chapter065: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['werden', 'conjugation', 'ihr-form'],
-      instruction: 'Write the present-tense ihr-form of werden. Capitalisation is not checked.',
+      instruction:
+        'Write the present-tense ihr-form of werden. Capitalisation is not checked.',
       prompt: 'ihr → werden (Präsens)',
       acceptedAnswers: ['werdet'],
       answerMode: 'caseInsensitive',
@@ -663,13 +770,15 @@ export const chapter065: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['werden', 'conjugation', 'simple-past', 'ich-form'],
-      instruction: 'Write the simple-past ich-form of werden. Capitalisation is not checked.',
+      instruction:
+        'Write the simple-past ich-form of werden. Capitalisation is not checked.',
       prompt: 'ich → werden (Präteritum)',
       acceptedAnswers: ['wurde'],
       answerMode: 'caseInsensitive',
       placeholder: 'wurde',
       maxLength: 15,
-      explanation: 'The simple-past ich-form of werden is wurde, not to be confused with würde (Konjunktiv II).',
+      explanation:
+        'The simple-past ich-form of werden is wurde, not to be confused with würde (Konjunktiv II).',
     },
     {
       id: 'ch65-ex-24',
@@ -678,7 +787,8 @@ export const chapter065: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['werden', 'conjugation', 'simple-past', 'du-form'],
-      instruction: 'Write the simple-past du-form of werden. Capitalisation is not checked.',
+      instruction:
+        'Write the simple-past du-form of werden. Capitalisation is not checked.',
       prompt: 'du → werden (Präteritum)',
       acceptedAnswers: ['wurdest'],
       answerMode: 'caseInsensitive',
@@ -693,13 +803,15 @@ export const chapter065: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['werden', 'future-auxiliary', 'form-completion'],
-      instruction: 'Fill in the correct present-tense form of werden to complete the future tense. Capitalisation is not checked.',
+      instruction:
+        'Fill in the correct present-tense form of werden to complete the future tense. Capitalisation is not checked.',
       prompt: 'Ich ___ das Buch lesen.',
       acceptedAnswers: ['werde'],
       answerMode: 'caseInsensitive',
       placeholder: 'werde',
       maxLength: 15,
-      explanation: 'The future auxiliary for ich is werde, followed by the infinitive lesen at the end of the clause.',
+      explanation:
+        'The future auxiliary for ich is werde, followed by the infinitive lesen at the end of the clause.',
     },
     {
       id: 'ch65-ex-26',
@@ -708,13 +820,15 @@ export const chapter065: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['werden', 'passive-auxiliary', 'form-completion'],
-      instruction: 'Fill in the correct present-tense form of werden to complete the passive. Capitalisation is not checked.',
+      instruction:
+        'Fill in the correct present-tense form of werden to complete the passive. Capitalisation is not checked.',
       prompt: 'Das Auto ___ repariert.',
       acceptedAnswers: ['wird'],
       answerMode: 'caseInsensitive',
       placeholder: 'wird',
       maxLength: 15,
-      explanation: 'The passive auxiliary for das Auto (er/sie/es) is wird, followed by the past participle repariert.',
+      explanation:
+        'The passive auxiliary for das Auto (er/sie/es) is wird, followed by the past participle repariert.',
     },
     {
       id: 'ch65-ex-27',
@@ -723,13 +837,15 @@ export const chapter065: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['werden', 'lexical-werden', 'form-completion'],
-      instruction: 'Fill in the correct present-tense form of werden to complete the lexical "become" sentence. Capitalisation is not checked.',
+      instruction:
+        'Fill in the correct present-tense form of werden to complete the lexical "become" sentence. Capitalisation is not checked.',
       prompt: 'Es ___ kalt.',
       acceptedAnswers: ['wird'],
       answerMode: 'caseInsensitive',
       placeholder: 'wird',
       maxLength: 15,
-      explanation: 'The lexical werden for es (er/sie/es) is wird, followed by the predicate adjective kalt.',
+      explanation:
+        'The lexical werden for es (er/sie/es) is wird, followed by the predicate adjective kalt.',
     },
     {
       id: 'ch65-ex-28',
@@ -738,13 +854,15 @@ export const chapter065: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['werden', 'geworden', 'lexical-werden', 'perfect-tense'],
-      instruction: 'Fill in the correct participle to complete the lexical perfect-tense sentence. Capitalisation is not checked.',
+      instruction:
+        'Fill in the correct participle to complete the lexical perfect-tense sentence. Capitalisation is not checked.',
       prompt: 'Er ist Arzt ___.',
       acceptedAnswers: ['geworden'],
       answerMode: 'caseInsensitive',
       placeholder: 'geworden',
       maxLength: 15,
-      explanation: 'Lexical werden ("become") takes its own regular participle geworden in the perfect tense.',
+      explanation:
+        'Lexical werden ("become") takes its own regular participle geworden in the perfect tense.',
     },
     {
       id: 'ch65-ex-29',
@@ -753,13 +871,15 @@ export const chapter065: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['werden', 'worden', 'passive-auxiliary', 'perfect-tense'],
-      instruction: 'Fill in the correct participle to complete the passive perfect-tense sentence. Capitalisation is not checked.',
+      instruction:
+        'Fill in the correct participle to complete the passive perfect-tense sentence. Capitalisation is not checked.',
       prompt: 'Der Brief ist geschrieben ___.',
       acceptedAnswers: ['worden'],
       answerMode: 'caseInsensitive',
       placeholder: 'worden',
       maxLength: 15,
-      explanation: 'The passive auxiliary werden takes the special participle worden in the perfect tense, never geworden.',
+      explanation:
+        'The passive auxiliary werden takes the special participle worden in the perfect tense, never geworden.',
     },
     {
       id: 'ch65-ex-30',
@@ -768,13 +888,18 @@ export const chapter065: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['werden', 'passive-auxiliary', 'perfect-tense', 'transformation'],
-      instruction: 'Rewrite the present-passive sentence in the present-perfect passive, using worden. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the present-passive sentence in the present-perfect passive, using worden. Capitalisation and punctuation are checked.',
       prompt: 'Das Auto wird repariert. → Perfekt (Passiv)',
-      acceptedAnswers: ['Das Auto ist repariert worden.', 'Das Auto ist repariert worden'],
+      acceptedAnswers: [
+        'Das Auto ist repariert worden.',
+        'Das Auto ist repariert worden',
+      ],
       answerMode: 'normalized',
       placeholder: 'Das Auto ist ...',
       maxLength: 45,
-      explanation: 'The present-perfect passive uses sein + past participle + worden: Das Auto ist repariert worden.',
+      explanation:
+        'The present-perfect passive uses sein + past participle + worden: Das Auto ist repariert worden.',
     },
     {
       id: 'ch65-ex-31',
@@ -783,13 +908,15 @@ export const chapter065: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['werden', 'lexical-werden', 'perfect-tense', 'transformation'],
-      instruction: 'Rewrite the present-tense sentence in the perfect tense, using geworden. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the present-tense sentence in the perfect tense, using geworden. Capitalisation and punctuation are checked.',
       prompt: 'Er wird Lehrer. → Perfekt (lexikalisches werden)',
       acceptedAnswers: ['Er ist Lehrer geworden.', 'Er ist Lehrer geworden'],
       answerMode: 'normalized',
       placeholder: 'Er ist ...',
       maxLength: 40,
-      explanation: 'Lexical werden in the perfect tense uses sein + geworden: Er ist Lehrer geworden.',
+      explanation:
+        'Lexical werden in the perfect tense uses sein + geworden: Er ist Lehrer geworden.',
     },
     {
       id: 'ch65-ex-32',
@@ -798,13 +925,15 @@ export const chapter065: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['werden', 'future-auxiliary', 'transformation'],
-      instruction: 'Rewrite the present-tense sentence in the future tense, using werden + infinitive. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the present-tense sentence in the future tense, using werden + infinitive. Capitalisation and punctuation are checked.',
       prompt: 'Ich lese das Buch. → Futur I',
       acceptedAnswers: ['Ich werde das Buch lesen.', 'Ich werde das Buch lesen'],
       answerMode: 'normalized',
       placeholder: 'Ich werde ...',
       maxLength: 45,
-      explanation: 'The future is built with werde (ich) + the infinitive lesen at the end of the clause: Ich werde das Buch lesen.',
+      explanation:
+        'The future is built with werde (ich) + the infinitive lesen at the end of the clause: Ich werde das Buch lesen.',
     },
     {
       id: 'ch65-ex-33',
@@ -813,13 +942,15 @@ export const chapter065: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['werden', 'passive-auxiliary', 'simple-past', 'transformation'],
-      instruction: 'Rewrite the present-passive sentence in the simple-past passive, using wurde. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the present-passive sentence in the simple-past passive, using wurde. Capitalisation and punctuation are checked.',
       prompt: 'Das Auto wird repariert. → Präteritum (Passiv)',
       acceptedAnswers: ['Das Auto wurde repariert.', 'Das Auto wurde repariert'],
       answerMode: 'normalized',
       placeholder: 'Das Auto wurde ...',
       maxLength: 40,
-      explanation: 'The simple-past passive replaces wird with wurde: Das Auto wurde repariert.',
+      explanation:
+        'The simple-past passive replaces wird with wurde: Das Auto wurde repariert.',
     },
     {
       id: 'ch65-ex-34',
@@ -828,13 +959,15 @@ export const chapter065: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['werden', 'passive-auxiliary', 'sentence-building'],
-      instruction: 'Build a complete sentence from the cue words, using werden as the passive auxiliary in the present tense. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete sentence from the cue words, using werden as the passive auxiliary in the present tense. Capitalisation and punctuation are checked.',
       prompt: 'das Fenster – werden (Präsens, Passiv) – öffnen (Partizip II)',
       acceptedAnswers: ['Das Fenster wird geöffnet.', 'Das Fenster wird geöffnet'],
       answerMode: 'normalized',
       placeholder: 'Das Fenster wird ...',
       maxLength: 40,
-      explanation: 'werden (wird for das Fenster) + the past participle geöffnet, sent to the end of the clause: Das Fenster wird geöffnet.',
+      explanation:
+        'werden (wird for das Fenster) + the past participle geöffnet, sent to the end of the clause: Das Fenster wird geöffnet.',
     },
     {
       id: 'ch65-ex-35',
@@ -852,7 +985,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'Konjunktiv II form' },
       ],
       correctOptionId: 'a',
-      explanation: 'komplizierter is a predicate adjective (comparative), so werden here means "become".',
+      explanation:
+        'komplizierter is a predicate adjective (comparative), so werden here means "become".',
     },
     {
       id: 'ch65-ex-36',
@@ -870,7 +1004,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'simple past form' },
       ],
       correctOptionId: 'a',
-      explanation: 'helfen is a bare infinitive at the end of the clause, marking werden as the future auxiliary.',
+      explanation:
+        'helfen is a bare infinitive at the end of the clause, marking werden as the future auxiliary.',
     },
     {
       id: 'ch65-ex-37',
@@ -888,7 +1023,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'Konjunktiv II form' },
       ],
       correctOptionId: 'a',
-      explanation: 'geputzt is a past participle at the end of the clause, marking werden as the passive auxiliary.',
+      explanation:
+        'geputzt is a past participle at the end of the clause, marking werden as the passive auxiliary.',
     },
     {
       id: 'ch65-ex-38',
@@ -906,7 +1042,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'simple past form' },
       ],
       correctOptionId: 'a',
-      explanation: 'Ärztin is a predicate noun (profession, no article), so werden here means "become".',
+      explanation:
+        'Ärztin is a predicate noun (profession, no article), so werden here means "become".',
     },
     {
       id: 'ch65-ex-39',
@@ -924,7 +1061,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'Konjunktiv II form' },
       ],
       correctOptionId: 'a',
-      explanation: 'ankommen is a bare infinitive at the end of the clause, marking werden as the future auxiliary.',
+      explanation:
+        'ankommen is a bare infinitive at the end of the clause, marking werden as the future auxiliary.',
     },
     {
       id: 'ch65-ex-40',
@@ -942,7 +1080,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'simple past form' },
       ],
       correctOptionId: 'a',
-      explanation: 'gebacken is a past participle at the end of the clause, marking werden as the passive auxiliary.',
+      explanation:
+        'gebacken is a past participle at the end of the clause, marking werden as the passive auxiliary.',
     },
     {
       id: 'ch65-ex-41',
@@ -960,7 +1099,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'reflexive verb' },
       ],
       correctOptionId: 'a',
-      explanation: 'dunkel is a plain predicate adjective, so werden here means "become" (the sky is getting dark).',
+      explanation:
+        'dunkel is a plain predicate adjective, so werden here means "become" (the sky is getting dark).',
     },
     {
       id: 'ch65-ex-42',
@@ -978,7 +1118,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'simple past form' },
       ],
       correctOptionId: 'a',
-      explanation: 'gewinnen is a bare infinitive at the end of the clause, marking werden as the future auxiliary.',
+      explanation:
+        'gewinnen is a bare infinitive at the end of the clause, marking werden as the future auxiliary.',
     },
     {
       id: 'ch65-ex-43',
@@ -996,7 +1137,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'Konjunktiv II form' },
       ],
       correctOptionId: 'a',
-      explanation: 'gelöst is a past participle at the end of the clause, marking werden as the passive auxiliary.',
+      explanation:
+        'gelöst is a past participle at the end of the clause, marking werden as the passive auxiliary.',
     },
     {
       id: 'ch65-ex-44',
@@ -1004,9 +1146,16 @@ export const chapter065: ChapterDefinition = {
       order: 44,
       type: 'singleChoice',
       level: 'transfer',
-      grammarFocus: ['werden', 'lexical-werden', 'passive-auxiliary', 'function-identification'],
-      instruction: 'Choose which sentence uses werden as lexical "become", not as the passive auxiliary.',
-      prompt: 'Which sentence uses werden as lexical "become", not as the passive auxiliary?',
+      grammarFocus: [
+        'werden',
+        'lexical-werden',
+        'passive-auxiliary',
+        'function-identification',
+      ],
+      instruction:
+        'Choose which sentence uses werden as lexical "become", not as the passive auxiliary.',
+      prompt:
+        'Which sentence uses werden as lexical "become", not as the passive auxiliary?',
       options: [
         { id: 'a', text: 'Der Kuchen wird kalt.' },
         { id: 'b', text: 'Der Kuchen wird gebacken.' },
@@ -1014,7 +1163,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'd', text: 'Der Kuchen ist gebacken worden.' },
       ],
       correctOptionId: 'a',
-      explanation: 'kalt is a plain adjective, marking lexical "become"; the other three all contain a past participle and are passive.',
+      explanation:
+        'kalt is a plain adjective, marking lexical "become"; the other three all contain a past participle and are passive.',
     },
     {
       id: 'ch65-ex-45',
@@ -1023,7 +1173,8 @@ export const chapter065: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['werden', 'conjugation', 'simple-past', 'ihr-form'],
-      instruction: 'Write the simple-past ihr-form of werden. Capitalisation is not checked.',
+      instruction:
+        'Write the simple-past ihr-form of werden. Capitalisation is not checked.',
       prompt: 'ihr → werden (Präteritum)',
       acceptedAnswers: ['wurdet'],
       answerMode: 'caseInsensitive',
@@ -1038,13 +1189,15 @@ export const chapter065: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['werden', 'conjugation', 'simple-past'],
-      instruction: 'Write the simple-past sie/Sie-form of werden. Capitalisation is not checked.',
+      instruction:
+        'Write the simple-past sie/Sie-form of werden. Capitalisation is not checked.',
       prompt: 'sie/Sie → werden (Präteritum)',
       acceptedAnswers: ['wurden'],
       answerMode: 'caseInsensitive',
       placeholder: 'wurden',
       maxLength: 15,
-      explanation: 'The simple-past sie/Sie-form of werden is wurden, identical in shape to the wir-form.',
+      explanation:
+        'The simple-past sie/Sie-form of werden is wurden, identical in shape to the wir-form.',
     },
     {
       id: 'ch65-ex-47',
@@ -1053,13 +1206,15 @@ export const chapter065: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['werden', 'lexical-werden', 'form-completion'],
-      instruction: 'Fill in the correct present-tense form of werden to complete the lexical "become" sentence. Capitalisation is not checked.',
+      instruction:
+        'Fill in the correct present-tense form of werden to complete the lexical "become" sentence. Capitalisation is not checked.',
       prompt: 'Die Situation ___ langsam besser.',
       acceptedAnswers: ['wird'],
       answerMode: 'caseInsensitive',
       placeholder: 'wird',
       maxLength: 15,
-      explanation: 'The lexical werden for die Situation (er/sie/es) is wird, followed by the predicate adjective besser.',
+      explanation:
+        'The lexical werden for die Situation (er/sie/es) is wird, followed by the predicate adjective besser.',
     },
     {
       id: 'ch65-ex-48',
@@ -1068,13 +1223,15 @@ export const chapter065: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['werden', 'future-auxiliary', 'form-completion'],
-      instruction: 'Fill in the correct present-tense form of werden to complete the future tense. Capitalisation is not checked.',
+      instruction:
+        'Fill in the correct present-tense form of werden to complete the future tense. Capitalisation is not checked.',
       prompt: 'Wir ___ das Problem lösen.',
       acceptedAnswers: ['werden'],
       answerMode: 'caseInsensitive',
       placeholder: 'werden',
       maxLength: 15,
-      explanation: 'The future auxiliary for wir is werden, followed by the infinitive lösen at the end of the clause.',
+      explanation:
+        'The future auxiliary for wir is werden, followed by the infinitive lösen at the end of the clause.',
     },
     {
       id: 'ch65-ex-49',
@@ -1083,13 +1240,15 @@ export const chapter065: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['werden', 'passive-auxiliary', 'form-completion'],
-      instruction: 'Fill in the correct present-tense form of werden to complete the passive. Capitalisation is not checked.',
+      instruction:
+        'Fill in the correct present-tense form of werden to complete the passive. Capitalisation is not checked.',
       prompt: 'Die Fenster ___ geputzt.',
       acceptedAnswers: ['werden'],
       answerMode: 'caseInsensitive',
       placeholder: 'werden',
       maxLength: 15,
-      explanation: 'The passive auxiliary for die Fenster (plural) is werden, followed by the past participle geputzt.',
+      explanation:
+        'The passive auxiliary for die Fenster (plural) is werden, followed by the past participle geputzt.',
     },
     {
       id: 'ch65-ex-50',
@@ -1098,13 +1257,15 @@ export const chapter065: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['werden', 'geworden', 'lexical-werden', 'perfect-tense'],
-      instruction: 'Fill in the correct participle to complete the lexical perfect-tense sentence. Capitalisation is not checked.',
+      instruction:
+        'Fill in the correct participle to complete the lexical perfect-tense sentence. Capitalisation is not checked.',
       prompt: 'Sie ist Ärztin ___.',
       acceptedAnswers: ['geworden'],
       answerMode: 'caseInsensitive',
       placeholder: 'geworden',
       maxLength: 15,
-      explanation: 'Lexical werden ("become") takes its own regular participle geworden in the perfect tense.',
+      explanation:
+        'Lexical werden ("become") takes its own regular participle geworden in the perfect tense.',
     },
     {
       id: 'ch65-ex-51',
@@ -1113,13 +1274,15 @@ export const chapter065: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['werden', 'worden', 'passive-auxiliary', 'perfect-tense'],
-      instruction: 'Fill in the correct participle to complete the passive perfect-tense sentence. Capitalisation is not checked.',
+      instruction:
+        'Fill in the correct participle to complete the passive perfect-tense sentence. Capitalisation is not checked.',
       prompt: 'Die Aufgabe ist gelöst ___.',
       acceptedAnswers: ['worden'],
       answerMode: 'caseInsensitive',
       placeholder: 'worden',
       maxLength: 15,
-      explanation: 'The passive auxiliary werden takes the special participle worden in the perfect tense, never geworden.',
+      explanation:
+        'The passive auxiliary werden takes the special participle worden in the perfect tense, never geworden.',
     },
     {
       id: 'ch65-ex-52',
@@ -1128,13 +1291,18 @@ export const chapter065: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['werden', 'passive-auxiliary', 'perfect-tense', 'transformation'],
-      instruction: 'Rewrite the present-passive sentence in the present-perfect passive, using worden. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the present-passive sentence in the present-perfect passive, using worden. Capitalisation and punctuation are checked.',
       prompt: 'Der Kuchen wird gebacken. → Perfekt (Passiv)',
-      acceptedAnswers: ['Der Kuchen ist gebacken worden.', 'Der Kuchen ist gebacken worden'],
+      acceptedAnswers: [
+        'Der Kuchen ist gebacken worden.',
+        'Der Kuchen ist gebacken worden',
+      ],
       answerMode: 'normalized',
       placeholder: 'Der Kuchen ist ...',
       maxLength: 45,
-      explanation: 'The present-perfect passive uses sein + past participle + worden: Der Kuchen ist gebacken worden.',
+      explanation:
+        'The present-perfect passive uses sein + past participle + worden: Der Kuchen ist gebacken worden.',
     },
     {
       id: 'ch65-ex-53',
@@ -1150,7 +1318,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'ch65-ex53-p2', left: 'Er wird kommen.', right: 'future auxiliary' },
         { id: 'ch65-ex53-p3', left: 'Er wird gerufen.', right: 'passive auxiliary' },
       ],
-      explanation: 'A predicate noun signals lexical "become"; a bare infinitive signals the future; a past participle signals the passive.',
+      explanation:
+        'A predicate noun signals lexical "become"; a bare infinitive signals the future; a past participle signals the passive.',
     },
     {
       id: 'ch65-ex-54',
@@ -1163,10 +1332,19 @@ export const chapter065: ChapterDefinition = {
       prompt: 'Match the German sentences to their English translations.',
       pairs: [
         { id: 'ch65-ex54-p1', left: 'Es wird kalt.', right: "It's getting cold." },
-        { id: 'ch65-ex54-p2', left: 'Sie wird morgen ankommen.', right: 'She will arrive tomorrow.' },
-        { id: 'ch65-ex54-p3', left: 'Der Brief wird geschrieben.', right: 'The letter is being written.' },
+        {
+          id: 'ch65-ex54-p2',
+          left: 'Sie wird morgen ankommen.',
+          right: 'She will arrive tomorrow.',
+        },
+        {
+          id: 'ch65-ex54-p3',
+          left: 'Der Brief wird geschrieben.',
+          right: 'The letter is being written.',
+        },
       ],
-      explanation: 'Each sentence shows a different function of werden: lexical, future, and passive, respectively.',
+      explanation:
+        'Each sentence shows a different function of werden: lexical, future, and passive, respectively.',
     },
     {
       id: 'ch65-ex-55',
@@ -1178,11 +1356,24 @@ export const chapter065: ChapterDefinition = {
       instruction: 'Match each form or clue with the function it signals.',
       prompt: 'Match each werden-related form to the function it signals.',
       pairs: [
-        { id: 'ch65-ex55-p1', left: 'geworden', right: 'lexical "become" in the perfect tense' },
-        { id: 'ch65-ex55-p2', left: 'worden', right: 'passive auxiliary in the perfect tense' },
-        { id: 'ch65-ex55-p3', left: 'kommen (infinitive after werden)', right: 'future auxiliary (no separate perfect participle)' },
+        {
+          id: 'ch65-ex55-p1',
+          left: 'geworden',
+          right: 'lexical "become" in the perfect tense',
+        },
+        {
+          id: 'ch65-ex55-p2',
+          left: 'worden',
+          right: 'passive auxiliary in the perfect tense',
+        },
+        {
+          id: 'ch65-ex55-p3',
+          left: 'kommen (infinitive after werden)',
+          right: 'future auxiliary (no separate perfect participle)',
+        },
       ],
-      explanation: 'geworden marks lexical "become", worden marks the passive auxiliary, and the future has no perfect form built on werden itself.',
+      explanation:
+        'geworden marks lexical "become", worden marks the passive auxiliary, and the future has no perfect form built on werden itself.',
     },
     {
       id: 'ch65-ex-56',
@@ -1194,12 +1385,29 @@ export const chapter065: ChapterDefinition = {
       instruction: 'Match each sentence with the function werden is performing.',
       prompt: 'Match the sentences to the correct function of werden.',
       pairs: [
-        { id: 'ch65-ex56-p1', left: 'Die Kinder werden müde.', right: 'lexical "become"' },
-        { id: 'ch65-ex56-p2', left: 'Die Kinder werden schlafen.', right: 'future auxiliary' },
-        { id: 'ch65-ex56-p3', left: 'Die Kinder werden geweckt.', right: 'passive auxiliary' },
-        { id: 'ch65-ex56-p4', left: 'Die Kinder sind müde geworden.', right: 'lexical "become" (perfect tense)' },
+        {
+          id: 'ch65-ex56-p1',
+          left: 'Die Kinder werden müde.',
+          right: 'lexical "become"',
+        },
+        {
+          id: 'ch65-ex56-p2',
+          left: 'Die Kinder werden schlafen.',
+          right: 'future auxiliary',
+        },
+        {
+          id: 'ch65-ex56-p3',
+          left: 'Die Kinder werden geweckt.',
+          right: 'passive auxiliary',
+        },
+        {
+          id: 'ch65-ex56-p4',
+          left: 'Die Kinder sind müde geworden.',
+          right: 'lexical "become" (perfect tense)',
+        },
       ],
-      explanation: 'The last sentence uses geworden, confirming lexical "become" even in the perfect tense, unlike worden for the passive.',
+      explanation:
+        'The last sentence uses geworden, confirming lexical "become" even in the perfect tense, unlike worden for the passive.',
     },
     {
       id: 'ch65-ex-57',
@@ -1215,7 +1423,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'ch65-ex57-p2', left: 'du (Präsens)', right: 'wirst' },
         { id: 'ch65-ex57-p3', left: 'er/sie/es (Präsens)', right: 'wird' },
       ],
-      explanation: 'werden has the irregular e→i stem change in the du- and er/sie/es-forms: wirst, wird.',
+      explanation:
+        'werden has the irregular e→i stem change in the du- and er/sie/es-forms: wirst, wird.',
     },
     {
       id: 'ch65-ex-58',
@@ -1231,7 +1440,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'ch65-ex58-p2', left: 'Er wird kommen.', right: 'plain infinitive' },
         { id: 'ch65-ex58-p3', left: 'Er wird gerufen.', right: 'past participle' },
       ],
-      explanation: 'What follows werden is the single most reliable clue to which of the three functions it is performing.',
+      explanation:
+        'What follows werden is the single most reliable clue to which of the three functions it is performing.',
     },
     {
       id: 'ch65-ex-59',
@@ -1240,12 +1450,14 @@ export const chapter065: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['werden', 'lexical-werden', 'infinitive-vs-participle'],
-      instruction: 'Drag the correct word into the slot so werden functions as lexical "become".',
+      instruction:
+        'Drag the correct word into the slot so werden functions as lexical "become".',
       prompt: 'Complete the sentence so werden functions as lexical "become".',
       templateParts: ['Der Winter wird ', '.'],
       slots: [{ id: 'ch65-ex59-s1', correctWord: 'kalt' }],
       wordBank: ['kalt', 'gekauft', 'geschrieben', 'ankommen'],
-      explanation: 'A plain predicate adjective (kalt) after werden signals lexical "become": Der Winter wird kalt.',
+      explanation:
+        'A plain predicate adjective (kalt) after werden signals lexical "become": Der Winter wird kalt.',
     },
     {
       id: 'ch65-ex-60',
@@ -1254,12 +1466,14 @@ export const chapter065: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['werden', 'future-auxiliary', 'infinitive-vs-participle'],
-      instruction: 'Drag the correct word into the slot so werden functions as the future auxiliary.',
+      instruction:
+        'Drag the correct word into the slot so werden functions as the future auxiliary.',
       prompt: 'Complete the sentence so werden functions as the future auxiliary.',
       templateParts: ['Er wird das Auto ', '.'],
       slots: [{ id: 'ch65-ex60-s1', correctWord: 'kaufen' }],
       wordBank: ['kaufen', 'gekauft', 'kalt', 'geschrieben'],
-      explanation: 'A plain infinitive (kaufen) at the end of the clause signals the future auxiliary: Er wird das Auto kaufen.',
+      explanation:
+        'A plain infinitive (kaufen) at the end of the clause signals the future auxiliary: Er wird das Auto kaufen.',
     },
     {
       id: 'ch65-ex-61',
@@ -1268,12 +1482,14 @@ export const chapter065: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['werden', 'passive-auxiliary', 'infinitive-vs-participle'],
-      instruction: 'Drag the correct word into the slot so werden functions as the passive auxiliary.',
+      instruction:
+        'Drag the correct word into the slot so werden functions as the passive auxiliary.',
       prompt: 'Complete the sentence so werden functions as the passive auxiliary.',
       templateParts: ['Das Auto wird ', '.'],
       slots: [{ id: 'ch65-ex61-s1', correctWord: 'repariert' }],
       wordBank: ['repariert', 'reparieren', 'kalt', 'ankommen'],
-      explanation: 'A past participle (repariert) after werden signals the passive auxiliary: Das Auto wird repariert.',
+      explanation:
+        'A past participle (repariert) after werden signals the passive auxiliary: Das Auto wird repariert.',
     },
     {
       id: 'ch65-ex-62',
@@ -1282,12 +1498,14 @@ export const chapter065: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['werden', 'lexical-werden', 'infinitive-vs-participle'],
-      instruction: 'Drag the correct word into the slot so werden functions as lexical "become".',
+      instruction:
+        'Drag the correct word into the slot so werden functions as lexical "become".',
       prompt: 'Complete the sentence so werden functions as lexical "become".',
       templateParts: ['Sie wird ', '.'],
       slots: [{ id: 'ch65-ex62-s1', correctWord: 'Ärztin' }],
       wordBank: ['Ärztin', 'geschrieben', 'lesen', 'gebacken'],
-      explanation: 'A predicate noun (Ärztin) after werden signals lexical "become": Sie wird Ärztin.',
+      explanation:
+        'A predicate noun (Ärztin) after werden signals lexical "become": Sie wird Ärztin.',
     },
     {
       id: 'ch65-ex-63',
@@ -1296,12 +1514,14 @@ export const chapter065: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['werden', 'future-auxiliary', 'infinitive-vs-participle'],
-      instruction: 'Drag the correct word into the slot so werden functions as the future auxiliary.',
+      instruction:
+        'Drag the correct word into the slot so werden functions as the future auxiliary.',
       prompt: 'Complete the sentence so werden functions as the future auxiliary.',
       templateParts: ['Wir werden das Problem ', '.'],
       slots: [{ id: 'ch65-ex63-s1', correctWord: 'lösen' }],
       wordBank: ['lösen', 'gelöst', 'kalt', 'Ärztin'],
-      explanation: 'A plain infinitive (lösen) at the end of the clause signals the future auxiliary: Wir werden das Problem lösen.',
+      explanation:
+        'A plain infinitive (lösen) at the end of the clause signals the future auxiliary: Wir werden das Problem lösen.',
     },
     {
       id: 'ch65-ex-64',
@@ -1310,12 +1530,14 @@ export const chapter065: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['werden', 'passive-auxiliary', 'infinitive-vs-participle'],
-      instruction: 'Drag the correct word into the slot so werden functions as the passive auxiliary.',
+      instruction:
+        'Drag the correct word into the slot so werden functions as the passive auxiliary.',
       prompt: 'Complete the sentence so werden functions as the passive auxiliary.',
       templateParts: ['Die Briefe werden ', '.'],
       slots: [{ id: 'ch65-ex64-s1', correctWord: 'geschrieben' }],
       wordBank: ['geschrieben', 'schreiben', 'glücklich', 'ankommen'],
-      explanation: 'A past participle (geschrieben) after werden signals the passive auxiliary: Die Briefe werden geschrieben.',
+      explanation:
+        'A past participle (geschrieben) after werden signals the passive auxiliary: Die Briefe werden geschrieben.',
     },
     {
       id: 'ch65-ex-65',
@@ -1323,13 +1545,20 @@ export const chapter065: ChapterDefinition = {
       order: 65,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['werden', 'geworden', 'worden', 'passive-auxiliary', 'common-mistake'],
+      grammarFocus: [
+        'werden',
+        'geworden',
+        'worden',
+        'passive-auxiliary',
+        'common-mistake',
+      ],
       instruction: 'One word is wrong. Identify it and give the correction.',
       prompt: 'Find the error in this sentence.',
       tokens: ['Das', 'Auto', 'ist', 'repariert', 'geworden.'],
       errorTokenIndex: 4,
       correction: 'worden.',
-      explanation: 'When werden is the passive auxiliary in the perfect tense, its own participle is worden, not geworden.',
+      explanation:
+        'When werden is the passive auxiliary in the perfect tense, its own participle is worden, not geworden.',
     },
     {
       id: 'ch65-ex-66',
@@ -1343,7 +1572,8 @@ export const chapter065: ChapterDefinition = {
       tokens: ['Er', 'ist', 'Arzt', 'worden.'],
       errorTokenIndex: 3,
       correction: 'geworden.',
-      explanation: 'Lexical "become" uses the regular participle geworden; worden is reserved exclusively for the passive auxiliary.',
+      explanation:
+        'Lexical "become" uses the regular participle geworden; worden is reserved exclusively for the passive auxiliary.',
     },
     {
       id: 'ch65-ex-67',
@@ -1351,13 +1581,19 @@ export const chapter065: ChapterDefinition = {
       order: 67,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['werden', 'passive-auxiliary', 'infinitive-vs-participle', 'common-mistake'],
+      grammarFocus: [
+        'werden',
+        'passive-auxiliary',
+        'infinitive-vs-participle',
+        'common-mistake',
+      ],
       instruction: 'One word is wrong. Identify it and give the correction.',
       prompt: 'Find the error in this sentence.',
       tokens: ['Der', 'Brief', 'wird', 'schreiben.'],
       errorTokenIndex: 3,
       correction: 'geschrieben.',
-      explanation: 'The passive auxiliary werden must be followed by a past participle, not a bare infinitive.',
+      explanation:
+        'The passive auxiliary werden must be followed by a past participle, not a bare infinitive.',
     },
     {
       id: 'ch65-ex-68',
@@ -1365,13 +1601,19 @@ export const chapter065: ChapterDefinition = {
       order: 68,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['werden', 'future-auxiliary', 'infinitive-vs-participle', 'common-mistake'],
+      grammarFocus: [
+        'werden',
+        'future-auxiliary',
+        'infinitive-vs-participle',
+        'common-mistake',
+      ],
       instruction: 'One word is wrong. Identify it and give the correction.',
       prompt: 'Find the error in this sentence.',
       tokens: ['Ich', 'werde', 'das', 'Buch', 'gelesen.'],
       errorTokenIndex: 4,
       correction: 'lesen.',
-      explanation: 'The future auxiliary werden takes a plain infinitive at the end of the clause, not a past participle.',
+      explanation:
+        'The future auxiliary werden takes a plain infinitive at the end of the clause, not a past participle.',
     },
     {
       id: 'ch65-ex-69',
@@ -1389,7 +1631,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'ch65-ex69-s4', text: 'immer' },
         { id: 'ch65-ex69-s5', text: 'komplizierter.' },
       ],
-      explanation: 'Lexical werden (wird) + the comparative predicate adjective komplizierter, with immer emphasizing the ongoing change.',
+      explanation:
+        'Lexical werden (wird) + the comparative predicate adjective komplizierter, with immer emphasizing the ongoing change.',
     },
     {
       id: 'ch65-ex-70',
@@ -1409,7 +1652,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'ch65-ex70-s6', text: 'Berlin' },
         { id: 'ch65-ex70-s7', text: 'ziehen.' },
       ],
-      explanation: 'werden (wird) stays in position 2, while the infinitive ziehen is sent to the very end of the clause.',
+      explanation:
+        'werden (wird) stays in position 2, while the infinitive ziehen is sent to the very end of the clause.',
     },
     {
       id: 'ch65-ex-71',
@@ -1428,7 +1672,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'ch65-ex71-s5', text: 'ihr' },
         { id: 'ch65-ex71-s6', text: 'geschrieben.' },
       ],
-      explanation: 'Passive werden (wird) + the past participle geschrieben at the end of the clause, with the agent introduced by von + dative.',
+      explanation:
+        'Passive werden (wird) + the past participle geschrieben at the end of the clause, with the agent introduced by von + dative.',
     },
     {
       id: 'ch65-ex-72',
@@ -1436,9 +1681,16 @@ export const chapter065: ChapterDefinition = {
       order: 72,
       type: 'sentenceOrdering',
       level: 'transfer',
-      grammarFocus: ['werden', 'worden', 'passive-auxiliary', 'perfect-tense', 'sentence-structure'],
+      grammarFocus: [
+        'werden',
+        'worden',
+        'passive-auxiliary',
+        'perfect-tense',
+        'sentence-structure',
+      ],
       instruction: 'Drag the segments into the correct order.',
-      prompt: 'Build the sentence: The car was repaired yesterday (present-perfect passive).',
+      prompt:
+        'Build the sentence: The car was repaired yesterday (present-perfect passive).',
       segments: [
         { id: 'ch65-ex72-s1', text: 'Das' },
         { id: 'ch65-ex72-s2', text: 'Auto' },
@@ -1447,7 +1699,8 @@ export const chapter065: ChapterDefinition = {
         { id: 'ch65-ex72-s5', text: 'repariert' },
         { id: 'ch65-ex72-s6', text: 'worden.' },
       ],
-      explanation: "Present-perfect passive: ist + the main verb's past participle repariert + werden's own auxiliary participle worden.",
+      explanation:
+        "Present-perfect passive: ist + the main verb's past participle repariert + werden's own auxiliary participle worden.",
     },
   ],
 };

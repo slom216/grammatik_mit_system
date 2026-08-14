@@ -24,7 +24,7 @@ export const chapter039: ChapterDefinition = {
         heading: 'Woher? and the dative case',
         paragraphs: [
           'Woher? means "from where?" and is answered with a prepositional phrase that names the place, country, or person something comes from. Both prepositions used for origin in this chapter, aus and von, always take the dative case, no matter which article or noun follows.',
-          'Ich komme aus der Schweiz. (I am from Switzerland.) — der Schweiz is dative feminine. Ich komme von meiner Freundin. (I am coming from my girlfriend\'s place.) — meiner Freundin is dative feminine. The case is fixed; the only real decision is which preposition, aus or von, fits the situation.',
+          "Ich komme aus der Schweiz. (I am from Switzerland.) — der Schweiz is dative feminine. Ich komme von meiner Freundin. (I am coming from my girlfriend's place.) — meiner Freundin is dative feminine. The case is fixed; the only real decision is which preposition, aus or von, fits the situation.",
         ],
       },
       {
@@ -39,9 +39,9 @@ export const chapter039: ChapterDefinition = {
         id: 'ch39-rule-03',
         heading: 'von: from a person, an open place, or a starting point',
         paragraphs: [
-          'Use von when the origin is a person rather than a place: Ich komme von meiner Freundin. (I am coming from my girlfriend\'s.) Er kommt von seinem Bruder. (He is coming from his brother\'s.) A person is never treated as a container, so aus is never used for people.',
+          "Use von when the origin is a person rather than a place: Ich komme von meiner Freundin. (I am coming from my girlfriend's.) Er kommt von seinem Bruder. (He is coming from his brother's.) A person is never treated as a container, so aus is never used for people.",
           'von is also used for open places, events, and general starting points that are not thought of as enclosed spaces: Wir kommen von der Arbeit. (We are coming from work.) Er kommt von der Party. (He is coming from the party.) Ich komme von zu Hause. (I am coming from home.)',
-          'When von is followed by the masculine or neuter dative article dem, the two words contract to vom: von + dem Bahnhof becomes vom Bahnhof (from the train station); von + dem Arzt becomes vom Arzt (from the doctor\'s). The feminine dative article der does not contract: von der Arbeit stays as two words.',
+          "When von is followed by the masculine or neuter dative article dem, the two words contract to vom: von + dem Bahnhof becomes vom Bahnhof (from the train station); von + dem Arzt becomes vom Arzt (from the doctor's). The feminine dative article der does not contract: von der Arbeit stays as two words.",
         ],
       },
       {
@@ -56,7 +56,7 @@ export const chapter039: ChapterDefinition = {
         id: 'ch39-rule-05',
         heading: 'Pattern two: people and institutions — zu / bei / von',
         paragraphs: [
-          'For people, and for places strongly associated with a person, such as the doctor\'s or the hairdresser\'s, a different but equally consistent set applies: wohin? uses zu with the dative (Ich gehe zum Arzt.), wo? uses bei with the dative (Ich bin beim Arzt.), and woher? uses von with the dative (Ich komme vom Arzt.).',
+          "For people, and for places strongly associated with a person, such as the doctor's or the hairdresser's, a different but equally consistent set applies: wohin? uses zu with the dative (Ich gehe zum Arzt.), wo? uses bei with the dative (Ich bin beim Arzt.), and woher? uses von with the dative (Ich komme vom Arzt.).",
           'Wohin gehst du? — Zu meiner Freundin. Wo bist du? — Bei meiner Freundin. Woher kommst du? — Von meiner Freundin. All three prepositions in this pattern, zu, bei, and von, already take the dative, so no case changes as the question word changes — only the preposition itself changes to fit destination, location, or origin.',
         ],
       },
@@ -75,8 +75,18 @@ export const chapter039: ChapterDefinition = {
         title: 'Wohin? Wo? Woher? for the same place or person',
         columns: ['Type', 'Wohin? (destination)', 'Wo? (location)', 'Woher? (origin)'],
         rows: [
-          ['Enclosed place or country', 'in (+ accusative)', 'in (+ dative)', 'aus (+ dative)'],
-          ['Person or institution (e.g. the doctor)', 'zu (+ dative)', 'bei (+ dative)', 'von (+ dative)'],
+          [
+            'Enclosed place or country',
+            'in (+ accusative)',
+            'in (+ dative)',
+            'aus (+ dative)',
+          ],
+          [
+            'Person or institution (e.g. the doctor)',
+            'zu (+ dative)',
+            'bei (+ dative)',
+            'von (+ dative)',
+          ],
         ],
         note: 'The Wohin? column is not tagged with a single case here because it mixes in (+ accusative) for enclosed places with zu (+ dative) for people — the case in that column depends on which row you are in.',
         columnCases: [null, null, 'dative', 'dative'],
@@ -86,9 +96,18 @@ export const chapter039: ChapterDefinition = {
         title: 'aus or von? A quick decision guide',
         columns: ['Use aus', 'Use von'],
         rows: [
-          ['Countries and cities: aus Deutschland, aus Berlin', 'People: von meiner Freundin, von meinem Bruder'],
-          ['Enclosed places: aus dem Büro, aus dem Kino', 'Open places and events: von der Arbeit, von der Party'],
-          ['Stating origin/nationality: Ich komme aus Italien.', 'Starting points: von hier, von zu Hause'],
+          [
+            'Countries and cities: aus Deutschland, aus Berlin',
+            'People: von meiner Freundin, von meinem Bruder',
+          ],
+          [
+            'Enclosed places: aus dem Büro, aus dem Kino',
+            'Open places and events: von der Arbeit, von der Party',
+          ],
+          [
+            'Stating origin/nationality: Ich komme aus Italien.',
+            'Starting points: von hier, von zu Hause',
+          ],
         ],
         note: 'Both aus and von always take the dative case, whichever side of the table you use.',
         columnCases: ['dative', 'dative'],
@@ -98,9 +117,21 @@ export const chapter039: ChapterDefinition = {
         title: 'von + dem = vom',
         columns: ['Full form', 'Contraction', 'Example'],
         rows: [
-          ['von + dem (masculine, dative)', 'vom', 'vom Bahnhof (from the train station)'],
-          ['von + dem (neuter, dative, person/institution)', 'vom', 'vom Arzt (from the doctor\'s)'],
-          ['von + der (feminine, dative)', 'no contraction', 'von der Arbeit (from work)'],
+          [
+            'von + dem (masculine, dative)',
+            'vom',
+            'vom Bahnhof (from the train station)',
+          ],
+          [
+            'von + dem (neuter, dative, person/institution)',
+            'vom',
+            "vom Arzt (from the doctor's)",
+          ],
+          [
+            'von + der (feminine, dative)',
+            'no contraction',
+            'von der Arbeit (from work)',
+          ],
         ],
         note: 'Only von + dem contracts to vom; von + der is always written as two words.',
       },
@@ -110,23 +141,26 @@ export const chapter039: ChapterDefinition = {
         german: 'Woher kommst du? – Ich komme aus Deutschland.',
         english: 'Where are you from? – I am from Germany.',
         highlight: ['aus Deutschland'],
-        explanation: 'Countries are treated as origin points you come out of, so Deutschland takes aus.',
+        explanation:
+          'Countries are treated as origin points you come out of, so Deutschland takes aus.',
       },
       {
         german: 'Meine Familie kommt aus der Schweiz.',
         english: 'My family is from Switzerland.',
         highlight: ['aus der Schweiz'],
-        explanation: 'die Schweiz has an article but still takes aus, like other countries; the article appears in the dative form der.',
+        explanation:
+          'die Schweiz has an article but still takes aus, like other countries; the article appears in the dative form der.',
       },
       {
         german: 'Er kommt gerade aus dem Büro.',
         english: 'He is just coming out of the office.',
         highlight: ['aus dem Büro'],
-        explanation: 'The office is an enclosed place, so leaving it is expressed with aus, matching the pattern ins Büro / im Büro.',
+        explanation:
+          'The office is an enclosed place, so leaving it is expressed with aus, matching the pattern ins Büro / im Büro.',
       },
       {
         german: 'Ich komme gerade von meiner Freundin.',
-        english: 'I am just coming from my girlfriend\'s place.',
+        english: "I am just coming from my girlfriend's place.",
         highlight: ['von meiner Freundin'],
         explanation: 'A person as the origin always takes von, never aus.',
       },
@@ -134,7 +168,8 @@ export const chapter039: ChapterDefinition = {
         german: 'Wir kommen von der Arbeit.',
         english: 'We are coming from work.',
         highlight: ['von der Arbeit'],
-        explanation: 'Work is treated as an open starting point rather than an enclosed container, so it takes von.',
+        explanation:
+          'Work is treated as an open starting point rather than an enclosed container, so it takes von.',
       },
       {
         german: 'Der Zug kommt gerade vom Bahnhof.',
@@ -144,33 +179,39 @@ export const chapter039: ChapterDefinition = {
       },
       {
         german: 'Ich gehe zum Arzt, bin dann beim Arzt und komme später vom Arzt.',
-        english: 'I am going to the doctor\'s, then I am at the doctor\'s, and later I come from the doctor\'s.',
+        english:
+          "I am going to the doctor's, then I am at the doctor's, and later I come from the doctor's.",
         highlight: ['zum Arzt', 'beim Arzt', 'vom Arzt'],
-        explanation: 'The same person, der Arzt, uses zu for destination, bei for location, and von for origin — all three take the dative.',
+        explanation:
+          'The same person, der Arzt, uses zu for destination, bei for location, and von for origin — all three take the dative.',
       },
       {
         german: 'Sie kommt aus den USA.',
         english: 'She is from the USA.',
         highlight: ['aus den USA'],
-        explanation: 'die USA is a plural country name; the dative plural article is den, but the preposition is still aus.',
+        explanation:
+          'die USA is a plural country name; the dative plural article is den, but the preposition is still aus.',
       },
       {
         german: 'Wir kommen gerade aus dem Kino.',
         english: 'We are just coming out of the cinema.',
         highlight: ['aus dem Kino'],
-        explanation: 'The cinema is an enclosed building, so aus is used, just as with the office or the school.',
+        explanation:
+          'The cinema is an enclosed building, so aus is used, just as with the office or the school.',
       },
       {
         german: 'Ich komme heute von zu Hause aus.',
         english: 'Today I am working from home.',
         highlight: ['von zu Hause'],
-        explanation: 'zu Hause (at home) is a fixed expression; the origin form uses von, not aus.',
+        explanation:
+          'zu Hause (at home) is a fixed expression; the origin form uses von, not aus.',
       },
       {
         german: 'Er kommt gerade von der Party.',
         english: 'He is just coming from the party.',
         highlight: ['von der Party'],
-        explanation: 'A party is treated as an open event rather than an enclosed space, so it takes von.',
+        explanation:
+          'A party is treated as an open event rather than an enclosed space, so it takes von.',
       },
       {
         german: 'Kommst du aus Berlin oder aus München?',
@@ -183,27 +224,32 @@ export const chapter039: ChapterDefinition = {
       {
         incorrect: 'Ich komme von Deutschland.',
         correct: 'Ich komme aus Deutschland.',
-        explanation: 'Countries take aus, not von, because they are treated as enclosed places of origin, not as people or open starting points.',
+        explanation:
+          'Countries take aus, not von, because they are treated as enclosed places of origin, not as people or open starting points.',
       },
       {
         incorrect: 'Ich komme aus meiner Freundin.',
         correct: 'Ich komme von meiner Freundin.',
-        explanation: 'A person as the origin always takes von; aus is reserved for enclosed places, countries, and origins of nationality, never for people.',
+        explanation:
+          'A person as the origin always takes von; aus is reserved for enclosed places, countries, and origins of nationality, never for people.',
       },
       {
         incorrect: 'Der Zug kommt von dem Bahnhof.',
         correct: 'Der Zug kommt vom Bahnhof.',
-        explanation: 'von + dem contracts to vom in everyday German; leaving the two words uncontracted sounds unnatural in this very common phrase.',
+        explanation:
+          'von + dem contracts to vom in everyday German; leaving the two words uncontracted sounds unnatural in this very common phrase.',
       },
       {
         incorrect: 'Ich komme von der Schweiz.',
         correct: 'Ich komme aus der Schweiz.',
-        explanation: 'Countries, including feminine ones like die Schweiz, take aus, not von, following the same rule as all other countries.',
+        explanation:
+          'Countries, including feminine ones like die Schweiz, take aus, not von, following the same rule as all other countries.',
       },
       {
         incorrect: 'Ich komme aus dem Arzt.',
         correct: 'Ich komme vom Arzt.',
-        explanation: 'People and person-associated institutions like the doctor follow the zu / bei / von pattern, not the in / in / aus pattern, so the origin preposition is von, contracted to vom.',
+        explanation:
+          'People and person-associated institutions like the doctor follow the zu / bei / von pattern, not the in / in / aus pattern, so the origin preposition is von, contracted to vom.',
       },
     ],
     remember: [
@@ -236,7 +282,8 @@ export const chapter039: ChapterDefinition = {
         { id: 'd', text: 'zu' },
       ],
       correctOptionId: 'a',
-      explanation: 'Countries are treated as enclosed points of origin, so Deutschland takes aus, not von.',
+      explanation:
+        'Countries are treated as enclosed points of origin, so Deutschland takes aus, not von.',
     },
     {
       id: 'ch39-ex-02',
@@ -272,7 +319,8 @@ export const chapter039: ChapterDefinition = {
         { id: 'd', text: 'zu' },
       ],
       correctOptionId: 'a',
-      explanation: 'The cinema is an enclosed place you exit from, so it takes aus, like other buildings and rooms.',
+      explanation:
+        'The cinema is an enclosed place you exit from, so it takes aus, like other buildings and rooms.',
     },
     {
       id: 'ch39-ex-04',
@@ -290,7 +338,8 @@ export const chapter039: ChapterDefinition = {
         { id: 'd', text: 'bei' },
       ],
       correctOptionId: 'a',
-      explanation: 'Work here is treated as an open starting point, not an enclosed container, so it takes von.',
+      explanation:
+        'Work here is treated as an open starting point, not an enclosed container, so it takes von.',
     },
     {
       id: 'ch39-ex-05',
@@ -308,7 +357,8 @@ export const chapter039: ChapterDefinition = {
         { id: 'd', text: 'im' },
       ],
       correctOptionId: 'a',
-      explanation: 'von and dem merge into the contraction vom, just as zu + dem becomes zum.',
+      explanation:
+        'von and dem merge into the contraction vom, just as zu + dem becomes zum.',
     },
     {
       id: 'ch39-ex-06',
@@ -344,7 +394,8 @@ export const chapter039: ChapterDefinition = {
         { id: 'd', text: 'zum' },
       ],
       correctOptionId: 'a',
-      explanation: 'The doctor belongs to the zu / bei / von pattern for people; the origin form is von + dem, contracted to vom.',
+      explanation:
+        'The doctor belongs to the zu / bei / von pattern for people; the origin form is von + dem, contracted to vom.',
     },
     {
       id: 'ch39-ex-08',
@@ -362,7 +413,8 @@ export const chapter039: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Schweiz is feminine, and aus always takes the dative, so the article is der.',
+      explanation:
+        'die Schweiz is feminine, and aus always takes the dative, so the article is der.',
     },
     {
       id: 'ch39-ex-09',
@@ -380,7 +432,8 @@ export const chapter039: ChapterDefinition = {
         { id: 'd', text: 'zu' },
       ],
       correctOptionId: 'a',
-      explanation: 'Countries with a plural article, like die USA, still take aus; the dative plural article here is den.',
+      explanation:
+        'Countries with a plural article, like die USA, still take aus; the dative plural article here is den.',
     },
     {
       id: 'ch39-ex-10',
@@ -398,7 +451,8 @@ export const chapter039: ChapterDefinition = {
         { id: 'd', text: 'bei' },
       ],
       correctOptionId: 'a',
-      explanation: 'The university is treated as an enclosed place you leave, following the same in / in / aus pattern as school or office.',
+      explanation:
+        'The university is treated as an enclosed place you leave, following the same in / in / aus pattern as school or office.',
     },
     {
       id: 'ch39-ex-11',
@@ -416,7 +470,8 @@ export const chapter039: ChapterDefinition = {
         { id: 'd', text: 'bei' },
       ],
       correctOptionId: 'a',
-      explanation: 'An event like a party is treated as an open occasion you leave, not an enclosed container, so it takes von.',
+      explanation:
+        'An event like a party is treated as an open occasion you leave, not an enclosed container, so it takes von.',
     },
     {
       id: 'ch39-ex-12',
@@ -503,13 +558,15 @@ export const chapter039: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['contraction', 'vom'],
-      instruction: 'Complete with the contracted form von + dem. Capitalisation is not checked.',
+      instruction:
+        'Complete with the contracted form von + dem. Capitalisation is not checked.',
       prompt: 'Der Zug kommt gerade ___ Bahnhof.',
       acceptedAnswers: ['vom'],
       answerMode: 'caseInsensitive',
       placeholder: 'vom',
       maxLength: 10,
-      explanation: 'von + dem contracts to vom before a masculine dative noun like der Bahnhof.',
+      explanation:
+        'von + dem contracts to vom before a masculine dative noun like der Bahnhof.',
     },
     {
       id: 'ch39-ex-18',
@@ -518,13 +575,15 @@ export const chapter039: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['contraction', 'vom', 'person-institution'],
-      instruction: 'Complete with the contracted form von + dem. Capitalisation is not checked.',
+      instruction:
+        'Complete with the contracted form von + dem. Capitalisation is not checked.',
       prompt: 'Ich komme gerade ___ Arzt.',
       acceptedAnswers: ['vom'],
       answerMode: 'caseInsensitive',
       placeholder: 'vom',
       maxLength: 10,
-      explanation: 'The doctor follows the zu / bei / von pattern; von + dem contracts to vom.',
+      explanation:
+        'The doctor follows the zu / bei / von pattern; von + dem contracts to vom.',
     },
     {
       id: 'ch39-ex-19',
@@ -539,7 +598,8 @@ export const chapter039: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'aus / von',
       maxLength: 10,
-      explanation: 'Countries take aus, including feminine ones with an article like die Türkei.',
+      explanation:
+        'Countries take aus, including feminine ones with an article like die Türkei.',
     },
     {
       id: 'ch39-ex-20',
@@ -554,7 +614,8 @@ export const chapter039: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'aus / von',
       maxLength: 10,
-      explanation: 'A person, such as die Oma, always takes von as the origin preposition.',
+      explanation:
+        'A person, such as die Oma, always takes von as the origin preposition.',
     },
     {
       id: 'ch39-ex-21',
@@ -570,7 +631,8 @@ export const chapter039: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Ich komme ...',
       maxLength: 60,
-      explanation: 'Countries take aus as the origin preposition: Ich komme aus Deutschland.',
+      explanation:
+        'Countries take aus as the origin preposition: Ich komme aus Deutschland.',
     },
     {
       id: 'ch39-ex-22',
@@ -582,7 +644,10 @@ export const chapter039: ChapterDefinition = {
       instruction:
         'Write a complete sentence using the cues. Capitalisation is checked; no full stop is required.',
       prompt: 'wir – kommen – unsere Nachbarin (origin, person)',
-      acceptedAnswers: ['Wir kommen von unserer Nachbarin.', 'Wir kommen von unserer Nachbarin'],
+      acceptedAnswers: [
+        'Wir kommen von unserer Nachbarin.',
+        'Wir kommen von unserer Nachbarin',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wir kommen ...',
       maxLength: 60,
@@ -602,7 +667,8 @@ export const chapter039: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Ich komme ...',
       maxLength: 60,
-      explanation: 'Countries take aus, not von, so the corrected sentence is Ich komme aus Deutschland.',
+      explanation:
+        'Countries take aus, not von, so the corrected sentence is Ich komme aus Deutschland.',
     },
     {
       id: 'ch39-ex-24',
@@ -654,7 +720,8 @@ export const chapter039: ChapterDefinition = {
         { id: 'd', text: 'bei' },
       ],
       correctOptionId: 'a',
-      explanation: 'School is an enclosed place, following the in / in / aus pattern, so it takes aus.',
+      explanation:
+        'School is an enclosed place, following the in / in / aus pattern, so it takes aus.',
     },
     {
       id: 'ch39-ex-27',
@@ -690,7 +757,8 @@ export const chapter039: ChapterDefinition = {
         { id: 'd', text: 'im' },
       ],
       correctOptionId: 'a',
-      explanation: 'das Zentrum is neuter, so von + dem contracts to vom, just as with masculine nouns.',
+      explanation:
+        'das Zentrum is neuter, so von + dem contracts to vom, just as with masculine nouns.',
     },
     {
       id: 'ch39-ex-29',
@@ -726,7 +794,8 @@ export const chapter039: ChapterDefinition = {
         { id: 'd', text: 'bei' },
       ],
       correctOptionId: 'a',
-      explanation: 'The supermarket is an enclosed place, so leaving it takes aus, not von.',
+      explanation:
+        'The supermarket is an enclosed place, so leaving it takes aus, not von.',
     },
     {
       id: 'ch39-ex-31',
@@ -744,7 +813,8 @@ export const chapter039: ChapterDefinition = {
         { id: 'd', text: 'bei' },
       ],
       correctOptionId: 'a',
-      explanation: 'A person, such as der Chef, always takes von as the origin preposition.',
+      explanation:
+        'A person, such as der Chef, always takes von as the origin preposition.',
     },
     {
       id: 'ch39-ex-32',
@@ -780,7 +850,8 @@ export const chapter039: ChapterDefinition = {
         { id: 'd', text: 'bei' },
       ],
       correctOptionId: 'a',
-      explanation: 'School is treated as an enclosed place, so the children come aus der Schule.',
+      explanation:
+        'School is treated as an enclosed place, so the children come aus der Schule.',
     },
     {
       id: 'ch39-ex-34',
@@ -798,7 +869,8 @@ export const chapter039: ChapterDefinition = {
         { id: 'd', text: 'bei' },
       ],
       correctOptionId: 'a',
-      explanation: 'The university is an enclosed place, so it takes aus, like school or the office.',
+      explanation:
+        'The university is an enclosed place, so it takes aus, like school or the office.',
     },
     {
       id: 'ch39-ex-35',
@@ -816,7 +888,8 @@ export const chapter039: ChapterDefinition = {
         { id: 'd', text: 'beim' },
       ],
       correctOptionId: 'a',
-      explanation: 'The hairdresser follows the zu / bei / von pattern for people; von + dem contracts to vom.',
+      explanation:
+        'The hairdresser follows the zu / bei / von pattern for people; von + dem contracts to vom.',
     },
     {
       id: 'ch39-ex-36',
@@ -834,7 +907,8 @@ export const chapter039: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Türkei is feminine, and aus always takes the dative, so the article is der.',
+      explanation:
+        'die Türkei is feminine, and aus always takes the dative, so the article is der.',
     },
     {
       id: 'ch39-ex-37',
@@ -870,7 +944,8 @@ export const chapter039: ChapterDefinition = {
         { id: 'd', text: 'bei' },
       ],
       correctOptionId: 'a',
-      explanation: 'People, even in the plural like meine Eltern, are always the origin von, never aus.',
+      explanation:
+        'People, even in the plural like meine Eltern, are always the origin von, never aus.',
     },
     {
       id: 'ch39-ex-39',
@@ -918,7 +993,8 @@ export const chapter039: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'aus / von',
       maxLength: 10,
-      explanation: 'A person, such as der Nachbar, always takes von as the origin preposition.',
+      explanation:
+        'A person, such as der Nachbar, always takes von as the origin preposition.',
     },
     {
       id: 'ch39-ex-42',
@@ -957,13 +1033,15 @@ export const chapter039: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['contraction', 'vom', 'person-institution'],
-      instruction: 'Complete with the contracted form von + dem. Capitalisation is not checked.',
+      instruction:
+        'Complete with the contracted form von + dem. Capitalisation is not checked.',
       prompt: 'Ich komme gerade ___ Friseur.',
       acceptedAnswers: ['vom'],
       answerMode: 'caseInsensitive',
       placeholder: 'vom',
       maxLength: 10,
-      explanation: 'The hairdresser follows the zu / bei / von pattern; von + dem contracts to vom.',
+      explanation:
+        'The hairdresser follows the zu / bei / von pattern; von + dem contracts to vom.',
     },
     {
       id: 'ch39-ex-45',
@@ -972,7 +1050,8 @@ export const chapter039: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['contraction', 'vom'],
-      instruction: 'Complete with the contracted form von + dem. Capitalisation is not checked.',
+      instruction:
+        'Complete with the contracted form von + dem. Capitalisation is not checked.',
       prompt: 'Der Zug kommt ___ Hauptbahnhof.',
       acceptedAnswers: ['vom'],
       answerMode: 'caseInsensitive',
@@ -1036,7 +1115,10 @@ export const chapter039: ChapterDefinition = {
       instruction:
         'Write a complete sentence using the cues. Capitalisation is checked; no full stop is required.',
       prompt: 'wir – kommen – unser Nachbar (origin, person)',
-      acceptedAnswers: ['Wir kommen von unserem Nachbarn.', 'Wir kommen von unserem Nachbarn'],
+      acceptedAnswers: [
+        'Wir kommen von unserem Nachbarn.',
+        'Wir kommen von unserem Nachbarn',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wir kommen ...',
       maxLength: 60,
@@ -1056,7 +1138,8 @@ export const chapter039: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Ich komme ...',
       maxLength: 60,
-      explanation: 'A person is always the origin von, so the corrected sentence is Ich komme von meiner Freundin.',
+      explanation:
+        'A person is always the origin von, so the corrected sentence is Ich komme von meiner Freundin.',
     },
     {
       id: 'ch39-ex-51',
@@ -1072,7 +1155,8 @@ export const chapter039: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Der Zug kommt ...',
       maxLength: 60,
-      explanation: 'von + dem contracts to vom, so the corrected sentence is Der Zug kommt vom Bahnhof.',
+      explanation:
+        'von + dem contracts to vom, so the corrected sentence is Der Zug kommt vom Bahnhof.',
     },
     {
       id: 'ch39-ex-52',
@@ -1104,7 +1188,8 @@ export const chapter039: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Er kommt ...',
       maxLength: 60,
-      explanation: 'Countries, including feminine ones like die Schweiz, take aus: Er kommt aus der Schweiz.',
+      explanation:
+        'Countries, including feminine ones like die Schweiz, take aus: Er kommt aus der Schweiz.',
     },
     {
       id: 'ch39-ex-54',
@@ -1123,7 +1208,8 @@ export const chapter039: ChapterDefinition = {
         { id: 'p5', left: 'doctor', right: 'vom Arzt' },
         { id: 'p6', left: 'Switzerland', right: 'aus der Schweiz' },
       ],
-      explanation: 'Enclosed places and countries take aus; people and open places or events take von, with von + dem contracting to vom.',
+      explanation:
+        'Enclosed places and countries take aus; people and open places or events take von, with von + dem contracting to vom.',
     },
     {
       id: 'ch39-ex-55',
@@ -1141,7 +1227,8 @@ export const chapter039: ChapterDefinition = {
         { id: 'p4', left: 'France', right: 'aus Frankreich' },
         { id: 'p5', left: 'Poland', right: 'aus Polen' },
       ],
-      explanation: 'Country names take aus for origin, with no article needed for most countries.',
+      explanation:
+        'Country names take aus for origin, with no article needed for most countries.',
     },
     {
       id: 'ch39-ex-56',
@@ -1168,7 +1255,8 @@ export const chapter039: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['contraction', 'vom', 'matching'],
-      instruction: 'Match each noun to its correct origin phrase, contracted where appropriate.',
+      instruction:
+        'Match each noun to its correct origin phrase, contracted where appropriate.',
       prompt: 'Match the noun to the correct phrase.',
       pairs: [
         { id: 'p1', left: 'der Bahnhof', right: 'vom Bahnhof' },
@@ -1177,7 +1265,8 @@ export const chapter039: ChapterDefinition = {
         { id: 'p4', left: 'die Arbeit', right: 'von der Arbeit' },
         { id: 'p5', left: 'die Party', right: 'von der Party' },
       ],
-      explanation: 'von + dem contracts to vom for masculine and neuter dative nouns; von + der never contracts.',
+      explanation:
+        'von + dem contracts to vom for masculine and neuter dative nouns; von + der never contracts.',
     },
     {
       id: 'ch39-ex-58',
@@ -1193,7 +1282,8 @@ export const chapter039: ChapterDefinition = {
         { id: 'p2', left: 'Wo?', right: 'beim Arzt' },
         { id: 'p3', left: 'Woher?', right: 'vom Arzt' },
       ],
-      explanation: 'For people and institutions like the doctor, the pattern is zu (destination), bei (location), von (origin), all dative.',
+      explanation:
+        'For people and institutions like the doctor, the pattern is zu (destination), bei (location), von (origin), all dative.',
     },
     {
       id: 'ch39-ex-59',
@@ -1212,7 +1302,8 @@ export const chapter039: ChapterDefinition = {
         { id: 'p5', left: 'Arbeit', right: 'von der Arbeit' },
         { id: 'p6', left: 'Freundin', right: 'von meiner Freundin' },
       ],
-      explanation: 'Enclosed places and institutions like the university take aus; open events, places, and people take von.',
+      explanation:
+        'Enclosed places and institutions like the university take aus; open events, places, and people take von.',
     },
     {
       id: 'ch39-ex-60',
@@ -1238,7 +1329,8 @@ export const chapter039: ChapterDefinition = {
       type: 'matching',
       level: 'production',
       grammarFocus: ['aus-vs-von', 'contraction', 'matching'],
-      instruction: 'Match each origin to the correct German phrase, including contractions.',
+      instruction:
+        'Match each origin to the correct German phrase, including contractions.',
       prompt: 'Match each origin to the correct phrase.',
       pairs: [
         { id: 'p1', left: 'die USA', right: 'aus den USA' },
@@ -1247,7 +1339,8 @@ export const chapter039: ChapterDefinition = {
         { id: 'p4', left: 'die Party', right: 'von der Party' },
         { id: 'p5', left: 'der Arzt', right: 'vom Arzt' },
       ],
-      explanation: 'Countries take aus even with a plural article like den USA; von + dem contracts to vom, but von + der never contracts.',
+      explanation:
+        'Countries take aus even with a plural article like den USA; von + dem contracts to vom, but von + der never contracts.',
     },
     {
       id: 'ch39-ex-62',
@@ -1278,7 +1371,8 @@ export const chapter039: ChapterDefinition = {
         { id: 's2', correctWord: 'der' },
       ],
       wordBank: ['aus', 'von', 'der', 'dem', 'die'],
-      explanation: 'die Schweiz takes aus like other countries, and the feminine dative article is der: aus der Schweiz.',
+      explanation:
+        'die Schweiz takes aus like other countries, and the feminine dative article is der: aus der Schweiz.',
     },
     {
       id: 'ch39-ex-64',
@@ -1309,7 +1403,8 @@ export const chapter039: ChapterDefinition = {
         { id: 's2', correctWord: 'der' },
       ],
       wordBank: ['von', 'aus', 'der', 'dem'],
-      explanation: 'Work is an open starting point, so it takes von, and die Arbeit takes the feminine dative article der.',
+      explanation:
+        'Work is an open starting point, so it takes von, and die Arbeit takes the feminine dative article der.',
     },
     {
       id: 'ch39-ex-66',
@@ -1323,7 +1418,8 @@ export const chapter039: ChapterDefinition = {
       templateParts: ['Sie kommt ', ' meiner Mutter.'],
       slots: [{ id: 's1', correctWord: 'von' }],
       wordBank: ['von', 'aus', 'zu'],
-      explanation: 'A person, such as die Mutter, always takes von as the origin preposition.',
+      explanation:
+        'A person, such as die Mutter, always takes von as the origin preposition.',
     },
     {
       id: 'ch39-ex-67',
@@ -1340,7 +1436,8 @@ export const chapter039: ChapterDefinition = {
         { id: 's2', correctWord: 'dem' },
       ],
       wordBank: ['aus', 'von', 'dem', 'der', 'in'],
-      explanation: 'The cinema is an enclosed place, so it takes aus, and aus + dem does not contract: aus dem Kino.',
+      explanation:
+        'The cinema is an enclosed place, so it takes aus, and aus + dem does not contract: aus dem Kino.',
     },
     {
       id: 'ch39-ex-68',
@@ -1354,7 +1451,8 @@ export const chapter039: ChapterDefinition = {
       templateParts: ['Ich komme gerade ', ' Arzt.'],
       slots: [{ id: 's1', correctWord: 'vom' }],
       wordBank: ['vom', 'von', 'zum', 'beim'],
-      explanation: 'The doctor follows the zu / bei / von pattern for people; von + dem contracts to vom.',
+      explanation:
+        'The doctor follows the zu / bei / von pattern for people; von + dem contracts to vom.',
     },
     {
       id: 'ch39-ex-69',
@@ -1371,7 +1469,8 @@ export const chapter039: ChapterDefinition = {
         { id: 's2', correctWord: 'der' },
       ],
       wordBank: ['von', 'aus', 'der', 'dem'],
-      explanation: 'A party is an open event, so it takes von, and die Party takes the feminine dative article der.',
+      explanation:
+        'A party is an open event, so it takes von, and die Party takes the feminine dative article der.',
     },
     {
       id: 'ch39-ex-70',
@@ -1388,7 +1487,8 @@ export const chapter039: ChapterDefinition = {
         { id: 's2', correctWord: 'den' },
       ],
       wordBank: ['aus', 'von', 'den', 'dem', 'der'],
-      explanation: 'die USA still takes aus like other countries, and the plural dative article is den: aus den USA.',
+      explanation:
+        'die USA still takes aus like other countries, and the plural dative article is den: aus den USA.',
     },
     {
       id: 'ch39-ex-71',
@@ -1405,7 +1505,8 @@ export const chapter039: ChapterDefinition = {
         { id: 's2', correctWord: 'der' },
       ],
       wordBank: ['aus', 'von', 'der', 'dem', 'die'],
-      explanation: 'Countries take aus, and die Türkei takes the feminine dative article der: aus der Türkei.',
+      explanation:
+        'Countries take aus, and die Türkei takes the feminine dative article der: aus der Türkei.',
     },
     {
       id: 'ch39-ex-72',
@@ -1419,7 +1520,8 @@ export const chapter039: ChapterDefinition = {
       tokens: ['Ich', 'komme', 'von', 'Deutschland', '.'],
       errorTokenIndex: 2,
       correction: 'aus',
-      explanation: 'Countries take aus, not von, so Deutschland should be preceded by aus.',
+      explanation:
+        'Countries take aus, not von, so Deutschland should be preceded by aus.',
     },
     {
       id: 'ch39-ex-73',
@@ -1433,7 +1535,8 @@ export const chapter039: ChapterDefinition = {
       tokens: ['Ich', 'komme', 'aus', 'meiner', 'Freundin', '.'],
       errorTokenIndex: 2,
       correction: 'von',
-      explanation: 'A person as the origin always takes von; aus is never used for people.',
+      explanation:
+        'A person as the origin always takes von; aus is never used for people.',
     },
     {
       id: 'ch39-ex-74',
@@ -1447,7 +1550,8 @@ export const chapter039: ChapterDefinition = {
       tokens: ['Der', 'Zug', 'kommt', 'von', 'Bahnhof', '.'],
       errorTokenIndex: 3,
       correction: 'vom',
-      explanation: 'von + dem contracts to vom before a masculine dative noun like der Bahnhof.',
+      explanation:
+        'von + dem contracts to vom before a masculine dative noun like der Bahnhof.',
     },
     {
       id: 'ch39-ex-75',
@@ -1461,7 +1565,8 @@ export const chapter039: ChapterDefinition = {
       tokens: ['Ich', 'komme', 'von', 'der', 'Schweiz', '.'],
       errorTokenIndex: 2,
       correction: 'aus',
-      explanation: 'Countries, including feminine ones like die Schweiz, take aus, not von.',
+      explanation:
+        'Countries, including feminine ones like die Schweiz, take aus, not von.',
     },
     {
       id: 'ch39-ex-76',
@@ -1475,7 +1580,8 @@ export const chapter039: ChapterDefinition = {
       tokens: ['Ich', 'komme', 'aus', 'Arzt', '.'],
       errorTokenIndex: 2,
       correction: 'vom',
-      explanation: 'The doctor follows the zu / bei / von pattern for people; the correct contracted form is vom, not aus.',
+      explanation:
+        'The doctor follows the zu / bei / von pattern for people; the correct contracted form is vom, not aus.',
     },
     {
       id: 'ch39-ex-77',
@@ -1503,7 +1609,8 @@ export const chapter039: ChapterDefinition = {
       tokens: ['Er', 'kommt', 'aus', 'der', 'Party', '.'],
       errorTokenIndex: 2,
       correction: 'von',
-      explanation: 'A party is an open event, not an enclosed place, so it takes von, not aus.',
+      explanation:
+        'A party is an open event, not an enclosed place, so it takes von, not aus.',
     },
     {
       id: 'ch39-ex-79',
@@ -1517,7 +1624,8 @@ export const chapter039: ChapterDefinition = {
       tokens: ['Sie', 'kommt', 'aus', 'ihrer', 'Oma', '.'],
       errorTokenIndex: 2,
       correction: 'von',
-      explanation: 'A person, such as die Oma, always takes von as the origin preposition, never aus.',
+      explanation:
+        'A person, such as die Oma, always takes von as the origin preposition, never aus.',
     },
   ],
 };

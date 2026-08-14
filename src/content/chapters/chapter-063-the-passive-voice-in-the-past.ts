@@ -45,13 +45,14 @@ export const chapter063: ChapterDefinition = {
         heading: 'Present-perfect passive: sein + past participle + worden',
         paragraphs: [
           'The present-perfect passive answers the question "what has happened to X?". It is built from three parts: a present-tense form of sein (not haben!), the past participle of the main verb, and — right at the very end of the clause — the word worden. Das Auto ist repariert worden. (The car has been repaired.)',
-          'sein conjugates for person as always: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind. The main verb\'s past participle sits in the middle of the clause exactly where it always does, and worden always comes last, after the participle: Der Brief ist schon geschrieben worden. (The letter has already been written.)',
-          'Why sein and not haben? Because werden itself belongs to the small group of verbs that form their own perfect tense with sein (like gehen, kommen, bleiben) — and here werden is not acting as an ordinary main verb, it is standing in as the passive auxiliary, so the present-perfect passive inherits werden\'s own sein-perfect.',
+          "sein conjugates for person as always: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind. The main verb's past participle sits in the middle of the clause exactly where it always does, and worden always comes last, after the participle: Der Brief ist schon geschrieben worden. (The letter has already been written.)",
+          "Why sein and not haben? Because werden itself belongs to the small group of verbs that form their own perfect tense with sein (like gehen, kommen, bleiben) — and here werden is not acting as an ordinary main verb, it is standing in as the passive auxiliary, so the present-perfect passive inherits werden's own sein-perfect.",
         ],
       },
       {
         id: 'ch63-rule-03',
-        heading: 'worden vs. geworden: the single most important distinction in this chapter',
+        heading:
+          'worden vs. geworden: the single most important distinction in this chapter',
         paragraphs: [
           'werden has two different past participles depending on its job in the sentence. When werden is used as an ordinary main verb meaning "to become", its past participle is the regular geworden: Er ist Lehrer geworden. (He has become a teacher.) But when werden itself is functioning as the passive auxiliary inside a present-perfect passive sentence, its participle shortens to worden — geworden loses its ge- prefix entirely. Compare: Das Auto ist repariert geworden. is wrong; Das Auto ist repariert worden. is correct.',
           'A simple way to remember it: worden (without ge-) exists only for this one job — marking the perfect tense of a passive sentence. You will never see worden anywhere else, and you will never see geworden used as part of a present-perfect passive. If werden means "become", use geworden; if werden is the passive helper in a perfect tense, use worden.',
@@ -76,7 +77,7 @@ export const chapter063: ChapterDefinition = {
       },
       {
         id: 'ch63-rule-06',
-        heading: 'A warning: don\'t confuse this with the state passive (Zustandspassiv)',
+        heading: "A warning: don't confuse this with the state passive (Zustandspassiv)",
         paragraphs: [
           'One more contrast is worth flagging so you do not get confused later: German also has a completely different construction that looks deceptively similar to the present-perfect passive, because it also uses sein + a past participle — but without worden. Der Laden ist geöffnet. does not mean "the shop has been opened"; it means "the shop is open" — a description of an existing state, not a report of an action. (This construction is called the Zustandspassiv, the "state passive", and is not the focus of this chapter.)',
           'Adding worden changes the meaning entirely: Der Laden ist geöffnet worden. reports the action — someone opened the shop (present-perfect passive). For now, the rule to hold onto is simple: if a sentence with sein + participle has no worden and describes a lasting state or result, it is not the present-perfect passive you are learning here — that construction always needs worden at the very end.',
@@ -143,8 +144,18 @@ export const chapter063: ChapterDefinition = {
         title: 'worden vs. geworden',
         columns: ['Meaning of werden', 'Participle used', 'Example', 'English'],
         rows: [
-          ['Lexical "become" (werden as a main verb)', 'geworden', 'Er ist Lehrer geworden.', 'He has become a teacher.'],
-          ['Passive auxiliary (present-perfect passive)', 'worden', 'Das Auto ist repariert worden.', 'The car has been repaired.'],
+          [
+            'Lexical "become" (werden as a main verb)',
+            'geworden',
+            'Er ist Lehrer geworden.',
+            'He has become a teacher.',
+          ],
+          [
+            'Passive auxiliary (present-perfect passive)',
+            'worden',
+            'Das Auto ist repariert worden.',
+            'The car has been repaired.',
+          ],
         ],
         note: 'Incorrect: Das Auto ist repariert geworden. Correct: Das Auto ist repariert worden. The two participles are never interchangeable.',
       },
@@ -153,9 +164,24 @@ export const chapter063: ChapterDefinition = {
         title: 'Tense comparison: present, simple-past, and present-perfect passive',
         columns: ['Tense', 'Form', 'Example', 'English'],
         rows: [
-          ['Present passive', 'wird + participle', 'Das Haus wird gebaut.', 'The house is being built.'],
-          ['Simple-past passive', 'wurde + participle', 'Das Haus wurde gebaut.', 'The house was built.'],
-          ['Present-perfect passive', 'ist + participle + worden', 'Das Haus ist gebaut worden.', 'The house has been built.'],
+          [
+            'Present passive',
+            'wird + participle',
+            'Das Haus wird gebaut.',
+            'The house is being built.',
+          ],
+          [
+            'Simple-past passive',
+            'wurde + participle',
+            'Das Haus wurde gebaut.',
+            'The house was built.',
+          ],
+          [
+            'Present-perfect passive',
+            'ist + participle + worden',
+            'Das Haus ist gebaut worden.',
+            'The house has been built.',
+          ],
         ],
         note: 'All three share the same past participle (gebaut); only the auxiliary — and the addition of worden — marks the tense.',
       },
@@ -164,10 +190,30 @@ export const chapter063: ChapterDefinition = {
         title: 'Word order: main clause vs. subordinate (dass-)clause',
         columns: ['Clause type', 'Pattern', 'Example', 'English'],
         rows: [
-          ['Main clause, simple-past passive', 'wurde in position 2 ... participle at the end', 'Das Haus wurde 1985 gebaut.', 'The house was built in 1985.'],
-          ['dass-clause, simple-past passive', '... participle + wurde at the very end', '..., dass das Haus 1985 gebaut wurde.', '...that the house was built in 1985.'],
-          ['Main clause, present-perfect passive', 'ist in position 2 ... participle + worden at the end', 'Das Haus ist 1985 gebaut worden.', 'The house was built (has been built) in 1985.'],
-          ['dass-clause, present-perfect passive', '... participle + worden + ist at the very end', '..., dass das Haus 1985 gebaut worden ist.', '...that the house was built in 1985.'],
+          [
+            'Main clause, simple-past passive',
+            'wurde in position 2 ... participle at the end',
+            'Das Haus wurde 1985 gebaut.',
+            'The house was built in 1985.',
+          ],
+          [
+            'dass-clause, simple-past passive',
+            '... participle + wurde at the very end',
+            '..., dass das Haus 1985 gebaut wurde.',
+            '...that the house was built in 1985.',
+          ],
+          [
+            'Main clause, present-perfect passive',
+            'ist in position 2 ... participle + worden at the end',
+            'Das Haus ist 1985 gebaut worden.',
+            'The house was built (has been built) in 1985.',
+          ],
+          [
+            'dass-clause, present-perfect passive',
+            '... participle + worden + ist at the very end',
+            '..., dass das Haus 1985 gebaut worden ist.',
+            '...that the house was built in 1985.',
+          ],
         ],
       },
     ],
@@ -176,13 +222,15 @@ export const chapter063: ChapterDefinition = {
         german: 'Das Haus wurde 1985 gebaut.',
         english: 'The house was built in 1985.',
         highlight: ['wurde', 'gebaut'],
-        explanation: 'Simple-past passive: wurde (position 2) + past participle (end of clause).',
+        explanation:
+          'Simple-past passive: wurde (position 2) + past participle (end of clause).',
       },
       {
         german: 'Der Brief wurde von meiner Schwester geschrieben.',
         english: 'The letter was written by my sister.',
         highlight: ['wurde', 'geschrieben', 'von'],
-        explanation: 'The agent (meine Schwester) is added with von + dative, exactly as in the present passive.',
+        explanation:
+          'The agent (meine Schwester) is added with von + dative, exactly as in the present passive.',
       },
       {
         german: 'Das Auto wurde letzte Woche repariert.',
@@ -194,7 +242,8 @@ export const chapter063: ChapterDefinition = {
         german: 'Die Tür wurde von meinem Vater geöffnet.',
         english: 'The door was opened by my father.',
         highlight: ['wurde', 'geöffnet'],
-        explanation: 'öffnen needs a linking -e- before the participle -t ending because its stem ends in -ffn: geöffnet.',
+        explanation:
+          'öffnen needs a linking -e- before the participle -t ending because its stem ends in -ffn: geöffnet.',
       },
       {
         german: 'Der Kuchen wurde schnell gegessen.',
@@ -206,81 +255,95 @@ export const chapter063: ChapterDefinition = {
         german: 'Das Auto ist repariert worden.',
         english: 'The car has been repaired.',
         highlight: ['ist', 'repariert', 'worden'],
-        explanation: 'Present-perfect passive: sein (ist) + participle + worden — never geworden here.',
+        explanation:
+          'Present-perfect passive: sein (ist) + participle + worden — never geworden here.',
       },
       {
         german: 'Der Brief ist schon geschrieben worden.',
         english: 'The letter has already been written.',
         highlight: ['ist', 'geschrieben', 'worden'],
-        explanation: 'worden always sits at the very end of the clause, after the main verb\'s participle.',
+        explanation:
+          "worden always sits at the very end of the clause, after the main verb's participle.",
       },
       {
         german: 'Das Geschenk ist ihm gebracht worden.',
         english: 'The present has been brought to him.',
         highlight: ['ist', 'gebracht', 'worden'],
-        explanation: 'bringen has the irregular participle gebracht; the passive perfect still ends in worden.',
+        explanation:
+          'bringen has the irregular participle gebracht; the passive perfect still ends in worden.',
       },
       {
         german: 'Er ist Lehrer geworden.',
         english: 'He has become a teacher.',
         highlight: ['ist', 'geworden'],
-        explanation: 'Here werden is an ordinary main verb meaning "to become", so its regular participle geworden is used — this is not a passive sentence at all.',
+        explanation:
+          'Here werden is an ordinary main verb meaning "to become", so its regular participle geworden is used — this is not a passive sentence at all.',
       },
       {
         german: 'Das Haus wird gebaut.',
         english: 'The house is being built.',
         highlight: ['wird'],
-        explanation: 'Present passive, for comparison: wird + participle, the tense taught in the previous chapter.',
+        explanation:
+          'Present passive, for comparison: wird + participle, the tense taught in the previous chapter.',
       },
       {
         german: 'Das Haus ist gebaut worden.',
         english: 'The house has been built.',
         highlight: ['ist', 'gebaut', 'worden'],
-        explanation: 'Same event, same participle as "Das Haus wurde gebaut", but reported from the present-perfect perspective.',
+        explanation:
+          'Same event, same participle as "Das Haus wurde gebaut", but reported from the present-perfect perspective.',
       },
       {
         german: 'Ich habe gehört, dass das Auto repariert wurde.',
         english: 'I heard that the car was repaired.',
         highlight: ['dass', 'repariert', 'wurde'],
-        explanation: 'In a dass-clause, the finite verb wurde moves to the very end, after the participle.',
+        explanation:
+          'In a dass-clause, the finite verb wurde moves to the very end, after the participle.',
       },
       {
         german: 'Ich weiß, dass die Tür schon geöffnet worden ist.',
         english: 'I know that the door has already been opened.',
         highlight: ['dass', 'geöffnet', 'worden', 'ist'],
-        explanation: 'In a dass-clause with the present-perfect passive, the order is participle, then worden, then the finite verb ist last.',
+        explanation:
+          'In a dass-clause with the present-perfect passive, the order is participle, then worden, then the finite verb ist last.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Das Auto ist repariert geworden.',
         correct: 'Das Auto ist repariert worden.',
-        explanation: 'When werden is itself the passive auxiliary in a perfect tense, its participle shortens to worden; geworden is reserved for werden\'s lexical "become" meaning.',
+        explanation:
+          'When werden is itself the passive auxiliary in a perfect tense, its participle shortens to worden; geworden is reserved for werden\'s lexical "become" meaning.',
       },
       {
         incorrect: 'Er ist Lehrer worden.',
         correct: 'Er ist Lehrer geworden.',
-        explanation: 'Here werden means "to become", not "passive auxiliary", so it needs its ordinary participle geworden — worden alone would be wrong.',
+        explanation:
+          'Here werden means "to become", not "passive auxiliary", so it needs its ordinary participle geworden — worden alone would be wrong.',
       },
       {
         incorrect: 'Das Auto hat repariert worden.',
         correct: 'Das Auto ist repariert worden.',
-        explanation: 'The present-perfect passive always uses sein as its auxiliary, never haben, because werden itself forms its perfect tense with sein.',
+        explanation:
+          'The present-perfect passive always uses sein as its auxiliary, never haben, because werden itself forms its perfect tense with sein.',
       },
       {
         incorrect: 'Das Haus wurde gebaut worden.',
         correct: 'Das Haus wurde gebaut.',
-        explanation: 'The simple-past passive only needs wurde + participle; worden belongs exclusively to the present-perfect passive and never combines with wurde.',
+        explanation:
+          'The simple-past passive only needs wurde + participle; worden belongs exclusively to the present-perfect passive and never combines with wurde.',
       },
       {
         incorrect: 'Ich weiß, dass die Tür wurde geöffnet.',
         correct: 'Ich weiß, dass die Tür geöffnet wurde.',
-        explanation: 'In a subordinate (dass-)clause, the finite verb wurde moves all the way to the end of the clause, after the participle.',
+        explanation:
+          'In a subordinate (dass-)clause, the finite verb wurde moves all the way to the end of the clause, after the participle.',
       },
       {
         incorrect: 'Der Laden ist geöffnet worden. (intending: "the shop is open")',
         correct: 'Der Laden ist geöffnet.',
-        explanation: 'sein + participle without worden describes an existing state (the shop is open, Zustandspassiv); adding worden changes the meaning to a completed action (someone has opened the shop).',
+        explanation:
+          'sein + participle without worden describes an existing state (the shop is open, Zustandspassiv); adding worden changes the meaning to a completed action (someone has opened the shop).',
       },
     ],
     remember: [
@@ -315,7 +378,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'war' },
       ],
       correctOptionId: 'a',
-      explanation: 'wurde is the simple-past passive auxiliary; wird is present passive, ist would need "worden" for present-perfect passive, and war is the simple past of sein.',
+      explanation:
+        'wurde is the simple-past passive auxiliary; wird is present passive, ist would need "worden" for present-perfect passive, and war is the simple past of sein.',
     },
     {
       id: 'ch63-ex-02',
@@ -333,7 +397,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'ist' },
       ],
       correctOptionId: 'a',
-      explanation: 'The subject "die Tür" is 3rd person singular, so the correct simple-past passive form of werden is wurde.',
+      explanation:
+        'The subject "die Tür" is 3rd person singular, so the correct simple-past passive form of werden is wurde.',
     },
     {
       id: 'ch63-ex-03',
@@ -351,7 +416,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'bist' },
       ],
       correctOptionId: 'a',
-      explanation: 'The du-form of the simple-past passive auxiliary is wurdest; wurde belongs to ich/er, wirst is present tense, and bist is a form of sein.',
+      explanation:
+        'The du-form of the simple-past passive auxiliary is wurdest; wurde belongs to ich/er, wirst is present tense, and bist is a form of sein.',
     },
     {
       id: 'ch63-ex-04',
@@ -360,7 +426,8 @@ export const chapter063: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['simple-past-passive', 'wurde', 'waschen', 'plural'],
-      instruction: 'Choose the correct simple-past passive auxiliary for the plural subject.',
+      instruction:
+        'Choose the correct simple-past passive auxiliary for the plural subject.',
       prompt: 'Die Kinder ___ von der Mutter gewaschen.',
       options: [
         { id: 'a', text: 'wurden' },
@@ -369,7 +436,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'sind' },
       ],
       correctOptionId: 'a',
-      explanation: '"Die Kinder" is plural (sie-form), so the correct simple-past passive auxiliary is wurden.',
+      explanation:
+        '"Die Kinder" is plural (sie-form), so the correct simple-past passive auxiliary is wurden.',
     },
     {
       id: 'ch63-ex-05',
@@ -387,7 +455,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'gewesen' },
       ],
       correctOptionId: 'a',
-      explanation: 'worden is werden\'s special short participle used only when it is the passive auxiliary in a perfect tense; geworden is used only for werden\'s lexical "become" meaning.',
+      explanation:
+        'worden is werden\'s special short participle used only when it is the passive auxiliary in a perfect tense; geworden is used only for werden\'s lexical "become" meaning.',
     },
     {
       id: 'ch63-ex-06',
@@ -405,7 +474,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'wurde' },
       ],
       correctOptionId: 'a',
-      explanation: 'Here werden is the ordinary main verb meaning "to become", so its regular participle geworden is required, not worden.',
+      explanation:
+        'Here werden is the ordinary main verb meaning "to become", so its regular participle geworden is required, not worden.',
     },
     {
       id: 'ch63-ex-07',
@@ -423,7 +493,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'wird' },
       ],
       correctOptionId: 'a',
-      explanation: 'The present-perfect passive always uses sein (ist), never haben, because werden itself forms its perfect with sein.',
+      explanation:
+        'The present-perfect passive always uses sein (ist), never haben, because werden itself forms its perfect with sein.',
     },
     {
       id: 'ch63-ex-08',
@@ -441,7 +512,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'bringen' },
       ],
       correctOptionId: 'a',
-      explanation: 'bringen has the irregular past participle gebracht, which is required between the auxiliary ist and worden.',
+      explanation:
+        'bringen has the irregular past participle gebracht, which is required between the auxiliary ist and worden.',
     },
     {
       id: 'ch63-ex-09',
@@ -449,7 +521,12 @@ export const chapter063: ChapterDefinition = {
       order: 9,
       type: 'singleChoice',
       level: 'production',
-      grammarFocus: ['present-perfect-passive', 'worden', 'sein-auxiliary', 'error-correction'],
+      grammarFocus: [
+        'present-perfect-passive',
+        'worden',
+        'sein-auxiliary',
+        'error-correction',
+      ],
       instruction: 'Choose the only fully correct sentence.',
       prompt: 'Which sentence is correct?',
       options: [
@@ -459,7 +536,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'Das Auto wurde repariert worden.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Only "ist repariert worden" combines the correct auxiliary (sein) with the correct participle (worden, not geworden) and no extra wurde.',
+      explanation:
+        'Only "ist repariert worden" combines the correct auxiliary (sein) with the correct participle (worden, not geworden) and no extra wurde.',
     },
     {
       id: 'ch63-ex-10',
@@ -477,7 +555,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'war' },
       ],
       correctOptionId: 'a',
-      explanation: 'gestern (yesterday) signals a completed past event, matching the simple-past passive wurde; wird is present, and ist/war do not form a valid passive here alone.',
+      explanation:
+        'gestern (yesterday) signals a completed past event, matching the simple-past passive wurde; wird is present, and ist/war do not form a valid passive here alone.',
     },
     {
       id: 'ch63-ex-11',
@@ -513,7 +592,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'state passive (Zustandspassiv)' },
       ],
       correctOptionId: 'a',
-      explanation: 'ist + participle + worden is the present-perfect passive, marking the action as completed and viewed from the present.',
+      explanation:
+        'ist + participle + worden is the present-perfect passive, marking the action as completed and viewed from the present.',
     },
     {
       id: 'ch63-ex-13',
@@ -531,7 +611,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'Futur I' },
       ],
       correctOptionId: 'a',
-      explanation: 'wird + participle is the present passive, taught in the previous chapter; Futur I would need werden + infinitive.',
+      explanation:
+        'wird + participle is the present passive, taught in the previous chapter; Futur I would need werden + infinitive.',
     },
     {
       id: 'ch63-ex-14',
@@ -540,8 +621,10 @@ export const chapter063: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['active-to-passive', 'simple-past-passive', 'oeffnen', 'von-agent'],
-      instruction: 'Choose the correct simple-past passive version of the active sentence.',
-      prompt: 'Active: "Mein Vater öffnete die Tür." — Choose the correct passive version.',
+      instruction:
+        'Choose the correct simple-past passive version of the active sentence.',
+      prompt:
+        'Active: "Mein Vater öffnete die Tür." — Choose the correct passive version.',
       options: [
         { id: 'a', text: 'Die Tür wurde von meinem Vater geöffnet.' },
         { id: 'b', text: 'Die Tür wird von meinem Vater geöffnet.' },
@@ -549,7 +632,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'Die Tür öffnete von meinem Vater.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The active simple past (öffnete) corresponds to the simple-past passive: die Tür wurde ... geöffnet, with the former subject as the von-agent.',
+      explanation:
+        'The active simple past (öffnete) corresponds to the simple-past passive: die Tür wurde ... geöffnet, with the former subject as the von-agent.',
     },
     {
       id: 'ch63-ex-15',
@@ -558,8 +642,10 @@ export const chapter063: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['active-to-passive', 'present-perfect-passive', 'schreiben'],
-      instruction: 'Choose the correct present-perfect passive version of the active sentence.',
-      prompt: 'Active: "Jemand hat den Brief geschrieben." — Choose the correct passive version.',
+      instruction:
+        'Choose the correct present-perfect passive version of the active sentence.',
+      prompt:
+        'Active: "Jemand hat den Brief geschrieben." — Choose the correct passive version.',
       options: [
         { id: 'a', text: 'Der Brief ist geschrieben worden.' },
         { id: 'b', text: 'Der Brief ist geschrieben geworden.' },
@@ -567,7 +653,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'Der Brief hat geschrieben worden.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The active present-perfect (hat geschrieben) corresponds to the present-perfect passive: der Brief ist geschrieben worden, with the vague agent (jemand) simply dropped.',
+      explanation:
+        'The active present-perfect (hat geschrieben) corresponds to the present-perfect passive: der Brief ist geschrieben worden, with the vague agent (jemand) simply dropped.',
     },
     {
       id: 'ch63-ex-16',
@@ -576,8 +663,10 @@ export const chapter063: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['active-to-passive', 'simple-past-passive', 'essen', 'von-agent'],
-      instruction: 'Choose the correct simple-past passive version of the active sentence.',
-      prompt: 'Active: "Meine Schwester aß den Kuchen." — Choose the correct passive version.',
+      instruction:
+        'Choose the correct simple-past passive version of the active sentence.',
+      prompt:
+        'Active: "Meine Schwester aß den Kuchen." — Choose the correct passive version.',
       options: [
         { id: 'a', text: 'Der Kuchen wurde von meiner Schwester gegessen.' },
         { id: 'b', text: 'Der Kuchen wird von meiner Schwester gegessen.' },
@@ -585,7 +674,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'Der Kuchen aß von meiner Schwester.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The active simple past (aß) corresponds to the simple-past passive: der Kuchen wurde ... gegessen.',
+      explanation:
+        'The active simple past (aß) corresponds to the simple-past passive: der Kuchen wurde ... gegessen.',
     },
     {
       id: 'ch63-ex-17',
@@ -594,7 +684,8 @@ export const chapter063: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['word-order', 'subordinate-clause', 'simple-past-passive'],
-      instruction: 'Choose the sentence with correct word order in the subordinate clause.',
+      instruction:
+        'Choose the sentence with correct word order in the subordinate clause.',
       prompt: 'Which sentence has correct word order?',
       options: [
         { id: 'a', text: 'Ich weiß, dass die Tür geöffnet wurde.' },
@@ -603,7 +694,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'Ich weiß, dass geöffnet wurde die Tür.' },
       ],
       correctOptionId: 'a',
-      explanation: 'In a dass-clause, the finite verb (wurde) moves to the very end, after the participle: dass die Tür geöffnet wurde.',
+      explanation:
+        'In a dass-clause, the finite verb (wurde) moves to the very end, after the participle: dass die Tür geöffnet wurde.',
     },
     {
       id: 'ch63-ex-18',
@@ -612,7 +704,8 @@ export const chapter063: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['simple-past-passive', 'wurde', 'werden-conjugation'],
-      instruction: 'Write the simple-past passive auxiliary form for ich. Capitalisation is not checked.',
+      instruction:
+        'Write the simple-past passive auxiliary form for ich. Capitalisation is not checked.',
       prompt: 'ich → werden (simple past, passive auxiliary)',
       acceptedAnswers: ['wurde'],
       answerMode: 'caseInsensitive',
@@ -627,7 +720,8 @@ export const chapter063: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['simple-past-passive', 'wurde', 'werden-conjugation'],
-      instruction: 'Write the simple-past passive auxiliary form for du. Capitalisation is not checked.',
+      instruction:
+        'Write the simple-past passive auxiliary form for du. Capitalisation is not checked.',
       prompt: 'du → werden (simple past, passive auxiliary)',
       acceptedAnswers: ['wurdest'],
       answerMode: 'caseInsensitive',
@@ -642,7 +736,8 @@ export const chapter063: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['simple-past-passive', 'wurde', 'werden-conjugation'],
-      instruction: 'Write the simple-past passive auxiliary form for wir. Capitalisation is not checked.',
+      instruction:
+        'Write the simple-past passive auxiliary form for wir. Capitalisation is not checked.',
       prompt: 'wir → werden (simple past, passive auxiliary)',
       acceptedAnswers: ['wurden'],
       answerMode: 'caseInsensitive',
@@ -657,7 +752,8 @@ export const chapter063: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['simple-past-passive', 'wurde', 'werden-conjugation'],
-      instruction: 'Write the simple-past passive auxiliary form for ihr. Capitalisation is not checked.',
+      instruction:
+        'Write the simple-past passive auxiliary form for ihr. Capitalisation is not checked.',
       prompt: 'ihr → werden (simple past, passive auxiliary)',
       acceptedAnswers: ['wurdet'],
       answerMode: 'caseInsensitive',
@@ -672,13 +768,15 @@ export const chapter063: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['present-perfect-passive', 'sein-auxiliary'],
-      instruction: 'Write the present-perfect passive auxiliary form for er/sie/es. Capitalisation is not checked.',
+      instruction:
+        'Write the present-perfect passive auxiliary form for er/sie/es. Capitalisation is not checked.',
       prompt: 'er/sie/es → sein (present, present-perfect-passive auxiliary)',
       acceptedAnswers: ['ist'],
       answerMode: 'caseInsensitive',
       placeholder: 'ist',
       maxLength: 10,
-      explanation: 'The er/sie/es-form of sein, used as the present-perfect-passive auxiliary, is ist.',
+      explanation:
+        'The er/sie/es-form of sein, used as the present-perfect-passive auxiliary, is ist.',
     },
     {
       id: 'ch63-ex-23',
@@ -687,13 +785,15 @@ export const chapter063: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['present-perfect-passive', 'sein-auxiliary'],
-      instruction: 'Write the present-perfect passive auxiliary form for wir. Capitalisation is not checked.',
+      instruction:
+        'Write the present-perfect passive auxiliary form for wir. Capitalisation is not checked.',
       prompt: 'wir → sein (present, present-perfect-passive auxiliary)',
       acceptedAnswers: ['sind'],
       answerMode: 'caseInsensitive',
       placeholder: 'sind',
       maxLength: 10,
-      explanation: 'The wir-form of sein, used as the present-perfect-passive auxiliary, is sind.',
+      explanation:
+        'The wir-form of sein, used as the present-perfect-passive auxiliary, is sind.',
     },
     {
       id: 'ch63-ex-24',
@@ -717,13 +817,15 @@ export const chapter063: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['past-participle', 'schreiben'],
-      instruction: 'Write the past participle of schreiben. Capitalisation is not checked.',
+      instruction:
+        'Write the past participle of schreiben. Capitalisation is not checked.',
       prompt: 'schreiben → past participle',
       acceptedAnswers: ['geschrieben'],
       answerMode: 'caseInsensitive',
       placeholder: 'geschrieben',
       maxLength: 15,
-      explanation: 'schreiben is a strong verb with the irregular participle geschrieben.',
+      explanation:
+        'schreiben is a strong verb with the irregular participle geschrieben.',
     },
     {
       id: 'ch63-ex-26',
@@ -732,7 +834,8 @@ export const chapter063: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['past-participle', 'reparieren', '-ieren-verbs'],
-      instruction: 'Write the past participle of reparieren. Capitalisation is not checked.',
+      instruction:
+        'Write the past participle of reparieren. Capitalisation is not checked.',
       prompt: 'reparieren → past participle',
       acceptedAnswers: ['repariert'],
       answerMode: 'caseInsensitive',
@@ -747,13 +850,15 @@ export const chapter063: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['worden', 'present-perfect-passive'],
-      instruction: 'Write werden\'s special short participle, used only when werden itself is the passive auxiliary in a perfect tense. Capitalisation is not checked.',
+      instruction:
+        "Write werden's special short participle, used only when werden itself is the passive auxiliary in a perfect tense. Capitalisation is not checked.",
       prompt: 'werden as passive auxiliary (perfect tense) → special participle',
       acceptedAnswers: ['worden'],
       answerMode: 'caseInsensitive',
       placeholder: 'worden',
       maxLength: 15,
-      explanation: 'worden (not geworden) is the participle werden uses when it functions as the passive auxiliary in a perfect tense.',
+      explanation:
+        'worden (not geworden) is the participle werden uses when it functions as the passive auxiliary in a perfect tense.',
     },
     {
       id: 'ch63-ex-28',
@@ -761,8 +866,14 @@ export const chapter063: ChapterDefinition = {
       order: 28,
       type: 'textInput',
       level: 'production',
-      grammarFocus: ['active-to-passive', 'simple-past-passive', 'oeffnen', 'transformation'],
-      instruction: 'Rewrite the active sentence in the simple-past passive. Capitalisation and punctuation are checked.',
+      grammarFocus: [
+        'active-to-passive',
+        'simple-past-passive',
+        'oeffnen',
+        'transformation',
+      ],
+      instruction:
+        'Rewrite the active sentence in the simple-past passive. Capitalisation and punctuation are checked.',
       prompt: 'Mein Vater öffnete die Tür. → Passiv (Präteritum)',
       acceptedAnswers: [
         'Die Tür wurde von meinem Vater geöffnet.',
@@ -771,7 +882,8 @@ export const chapter063: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Die Tür wurde ...',
       maxLength: 60,
-      explanation: 'öffnete (active simple past) becomes wurde ... geöffnet (simple-past passive), with mein Vater as the von-agent: Die Tür wurde von meinem Vater geöffnet.',
+      explanation:
+        'öffnete (active simple past) becomes wurde ... geöffnet (simple-past passive), with mein Vater as the von-agent: Die Tür wurde von meinem Vater geöffnet.',
     },
     {
       id: 'ch63-ex-29',
@@ -779,8 +891,14 @@ export const chapter063: ChapterDefinition = {
       order: 29,
       type: 'textInput',
       level: 'production',
-      grammarFocus: ['active-to-passive', 'simple-past-passive', 'essen', 'transformation'],
-      instruction: 'Rewrite the active sentence in the simple-past passive. Capitalisation and punctuation are checked.',
+      grammarFocus: [
+        'active-to-passive',
+        'simple-past-passive',
+        'essen',
+        'transformation',
+      ],
+      instruction:
+        'Rewrite the active sentence in the simple-past passive. Capitalisation and punctuation are checked.',
       prompt: 'Meine Schwester aß den Kuchen. → Passiv (Präteritum)',
       acceptedAnswers: [
         'Der Kuchen wurde von meiner Schwester gegessen.',
@@ -789,7 +907,8 @@ export const chapter063: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Der Kuchen wurde ...',
       maxLength: 60,
-      explanation: 'aß (active simple past) becomes wurde ... gegessen (simple-past passive): Der Kuchen wurde von meiner Schwester gegessen.',
+      explanation:
+        'aß (active simple past) becomes wurde ... gegessen (simple-past passive): Der Kuchen wurde von meiner Schwester gegessen.',
     },
     {
       id: 'ch63-ex-30',
@@ -797,8 +916,14 @@ export const chapter063: ChapterDefinition = {
       order: 30,
       type: 'textInput',
       level: 'production',
-      grammarFocus: ['active-to-passive', 'present-perfect-passive', 'schreiben', 'transformation'],
-      instruction: 'Rewrite the active sentence in the present-perfect passive. Capitalisation and punctuation are checked.',
+      grammarFocus: [
+        'active-to-passive',
+        'present-perfect-passive',
+        'schreiben',
+        'transformation',
+      ],
+      instruction:
+        'Rewrite the active sentence in the present-perfect passive. Capitalisation and punctuation are checked.',
       prompt: 'Jemand hat den Brief geschrieben. → Passiv (Perfekt)',
       acceptedAnswers: [
         'Der Brief ist geschrieben worden.',
@@ -807,7 +932,8 @@ export const chapter063: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Der Brief ist ...',
       maxLength: 60,
-      explanation: 'hat geschrieben (active present perfect) becomes ist geschrieben worden (present-perfect passive); the vague agent jemand is simply dropped.',
+      explanation:
+        'hat geschrieben (active present perfect) becomes ist geschrieben worden (present-perfect passive); the vague agent jemand is simply dropped.',
     },
     {
       id: 'ch63-ex-31',
@@ -815,8 +941,15 @@ export const chapter063: ChapterDefinition = {
       order: 31,
       type: 'textInput',
       level: 'transfer',
-      grammarFocus: ['active-to-passive', 'present-perfect-passive', 'reparieren', 'von-agent', 'transformation'],
-      instruction: 'Rewrite the active sentence in the present-perfect passive, keeping the agent with von. Capitalisation and punctuation are checked.',
+      grammarFocus: [
+        'active-to-passive',
+        'present-perfect-passive',
+        'reparieren',
+        'von-agent',
+        'transformation',
+      ],
+      instruction:
+        'Rewrite the active sentence in the present-perfect passive, keeping the agent with von. Capitalisation and punctuation are checked.',
       prompt: 'Der Mechaniker hat das Auto repariert. → Passiv (Perfekt)',
       acceptedAnswers: [
         'Das Auto ist von dem Mechaniker repariert worden.',
@@ -827,7 +960,8 @@ export const chapter063: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Das Auto ist von ...',
       maxLength: 70,
-      explanation: 'hat repariert (active present perfect) becomes ist repariert worden (present-perfect passive), with der Mechaniker as the von-agent (dative): von dem/vom Mechaniker.',
+      explanation:
+        'hat repariert (active present perfect) becomes ist repariert worden (present-perfect passive), with der Mechaniker as the von-agent (dative): von dem/vom Mechaniker.',
     },
     {
       id: 'ch63-ex-32',
@@ -838,11 +972,15 @@ export const chapter063: ChapterDefinition = {
       grammarFocus: ['error-correction', 'worden', 'geworden'],
       instruction: 'Correct the mistake. Capitalisation and punctuation are checked.',
       prompt: 'Das Auto ist repariert geworden. → Korrektur',
-      acceptedAnswers: ['Das Auto ist repariert worden.', 'Das Auto ist repariert worden'],
+      acceptedAnswers: [
+        'Das Auto ist repariert worden.',
+        'Das Auto ist repariert worden',
+      ],
       answerMode: 'normalized',
       placeholder: 'Das Auto ist ...',
       maxLength: 50,
-      explanation: 'werden as a passive auxiliary in the perfect tense needs worden, not geworden: Das Auto ist repariert worden.',
+      explanation:
+        'werden as a passive auxiliary in the perfect tense needs worden, not geworden: Das Auto ist repariert worden.',
     },
     {
       id: 'ch63-ex-33',
@@ -857,7 +995,8 @@ export const chapter063: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Er ist Lehrer ...',
       maxLength: 50,
-      explanation: 'werden meaning "to become" needs its regular participle geworden, not the passive-only worden: Er ist Lehrer geworden.',
+      explanation:
+        'werden meaning "to become" needs its regular participle geworden, not the passive-only worden: Er ist Lehrer geworden.',
     },
     {
       id: 'ch63-ex-34',
@@ -868,11 +1007,15 @@ export const chapter063: ChapterDefinition = {
       grammarFocus: ['error-correction', 'word-order', 'subordinate-clause'],
       instruction: 'Correct the word order. Capitalisation and punctuation are checked.',
       prompt: 'Ich weiß, dass die Tür wurde geöffnet. → Korrektur',
-      acceptedAnswers: ['Ich weiß, dass die Tür geöffnet wurde.', 'Ich weiß, dass die Tür geöffnet wurde'],
+      acceptedAnswers: [
+        'Ich weiß, dass die Tür geöffnet wurde.',
+        'Ich weiß, dass die Tür geöffnet wurde',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich weiß, dass die Tür ...',
       maxLength: 60,
-      explanation: 'In a dass-clause, the finite verb wurde moves to the very end, after the participle: dass die Tür geöffnet wurde.',
+      explanation:
+        'In a dass-clause, the finite verb wurde moves to the very end, after the participle: dass die Tür geöffnet wurde.',
     },
     {
       id: 'ch63-ex-35',
@@ -886,7 +1029,8 @@ export const chapter063: ChapterDefinition = {
       templateParts: ['Der Roman ', ' 1920 geschrieben.'],
       slots: [{ id: 'ch63-ex35-slot1', correctWord: 'wurde' }],
       wordBank: ['wurde', 'wird', 'ist', 'war'],
-      explanation: 'wurde is the simple-past passive auxiliary: der Roman wurde 1920 geschrieben.',
+      explanation:
+        'wurde is the simple-past passive auxiliary: der Roman wurde 1920 geschrieben.',
     },
     {
       id: 'ch63-ex-36',
@@ -900,7 +1044,8 @@ export const chapter063: ChapterDefinition = {
       tokens: ['Das', 'Auto', 'ist', 'repariert', 'geworden.'],
       errorTokenIndex: 4,
       correction: 'Das Auto ist repariert worden.',
-      explanation: 'werden as the passive auxiliary in a perfect tense needs worden, not geworden: Das Auto ist repariert worden.',
+      explanation:
+        'werden as the passive auxiliary in a perfect tense needs worden, not geworden: Das Auto ist repariert worden.',
     },
     {
       id: 'ch63-ex-37',
@@ -917,7 +1062,8 @@ export const chapter063: ChapterDefinition = {
         { id: 's3', text: '1920' },
         { id: 's4', text: 'geschrieben.' },
       ],
-      explanation: 'In a main clause, wurde takes position 2 and the past participle goes to the very end: Der Roman wurde 1920 geschrieben.',
+      explanation:
+        'In a main clause, wurde takes position 2 and the past participle goes to the very end: Der Roman wurde 1920 geschrieben.',
     },
     {
       id: 'ch63-ex-38',
@@ -935,7 +1081,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'war' },
       ],
       correctOptionId: 'a',
-      explanation: 'wurde is the simple-past passive auxiliary; wird is present passive, and ist would need "worden" for the present-perfect passive.',
+      explanation:
+        'wurde is the simple-past passive auxiliary; wird is present passive, and ist would need "worden" for the present-perfect passive.',
     },
     {
       id: 'ch63-ex-39',
@@ -953,7 +1100,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'gewesen' },
       ],
       correctOptionId: 'a',
-      explanation: 'worden marks the present-perfect passive; geworden is reserved for werden\'s lexical "become" meaning.',
+      explanation:
+        'worden marks the present-perfect passive; geworden is reserved for werden\'s lexical "become" meaning.',
     },
     {
       id: 'ch63-ex-40',
@@ -971,7 +1119,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'hat' },
       ],
       correctOptionId: 'a',
-      explanation: 'wurde + participle is the simple-past passive: der Fehler wurde entdeckt.',
+      explanation:
+        'wurde + participle is the simple-past passive: der Fehler wurde entdeckt.',
     },
     {
       id: 'ch63-ex-41',
@@ -980,7 +1129,8 @@ export const chapter063: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['present-perfect-passive', 'sein-auxiliary', 'gruenden', 'plural'],
-      instruction: 'Choose the correct present-perfect passive auxiliary for the plural subject.',
+      instruction:
+        'Choose the correct present-perfect passive auxiliary for the plural subject.',
       prompt: 'Die Firmen ___ 1990 gegründet worden.',
       options: [
         { id: 'a', text: 'sind' },
@@ -989,7 +1139,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'haben' },
       ],
       correctOptionId: 'a',
-      explanation: '"Die Firmen" is plural, so the present-perfect passive auxiliary sein takes the plural form sind.',
+      explanation:
+        '"Die Firmen" is plural, so the present-perfect passive auxiliary sein takes the plural form sind.',
     },
     {
       id: 'ch63-ex-42',
@@ -1007,7 +1158,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'eröffnete' },
       ],
       correctOptionId: 'a',
-      explanation: 'eröffnen is inseparable and takes no extra ge- prefix, so its past participle is simply eröffnet.',
+      explanation:
+        'eröffnen is inseparable and takes no extra ge- prefix, so its past participle is simply eröffnet.',
     },
     {
       id: 'ch63-ex-43',
@@ -1034,7 +1186,8 @@ export const chapter063: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['zustandspassiv', 'contrast', 'oeffnen'],
-      instruction: 'Choose the sentence that describes an existing state, not a completed action.',
+      instruction:
+        'Choose the sentence that describes an existing state, not a completed action.',
       prompt: 'Which sentence describes an ongoing state, not a completed action?',
       options: [
         { id: 'a', text: 'Der Laden ist geöffnet.' },
@@ -1043,7 +1196,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'Der Laden wird geöffnet.' },
       ],
       correctOptionId: 'a',
-      explanation: 'sein + participle without worden (Zustandspassiv) describes a lasting state; the other options all report the action of opening.',
+      explanation:
+        'sein + participle without worden (Zustandspassiv) describes a lasting state; the other options all report the action of opening.',
     },
     {
       id: 'ch63-ex-45',
@@ -1052,8 +1206,10 @@ export const chapter063: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['active-to-passive', 'present-perfect-passive', 'verkaufen'],
-      instruction: 'Choose the correct present-perfect passive version of the active sentence.',
-      prompt: 'Active: "Jemand hat das Haus verkauft." — Choose the correct passive version.',
+      instruction:
+        'Choose the correct present-perfect passive version of the active sentence.',
+      prompt:
+        'Active: "Jemand hat das Haus verkauft." — Choose the correct passive version.',
       options: [
         { id: 'a', text: 'Das Haus ist verkauft worden.' },
         { id: 'b', text: 'Das Haus ist verkauft geworden.' },
@@ -1061,7 +1217,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'Das Haus hat verkauft worden.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The active present-perfect (hat verkauft) corresponds to the present-perfect passive: das Haus ist verkauft worden.',
+      explanation:
+        'The active present-perfect (hat verkauft) corresponds to the present-perfect passive: das Haus ist verkauft worden.',
     },
     {
       id: 'ch63-ex-46',
@@ -1070,7 +1227,8 @@ export const chapter063: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['word-order', 'subordinate-clause', 'present-perfect-passive'],
-      instruction: 'Choose the sentence with correct word order in the subordinate clause.',
+      instruction:
+        'Choose the sentence with correct word order in the subordinate clause.',
       prompt: 'Which sentence has correct word order?',
       options: [
         { id: 'a', text: 'Ich weiß, dass die Tür schon geöffnet worden ist.' },
@@ -1079,7 +1237,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'Ich weiß, dass die Tür schon ist geöffnet worden.' },
       ],
       correctOptionId: 'a',
-      explanation: 'In a dass-clause with the present-perfect passive, the order is participle, then worden, then the finite verb ist last.',
+      explanation:
+        'In a dass-clause with the present-perfect passive, the order is participle, then worden, then the finite verb ist last.',
     },
     {
       id: 'ch63-ex-47',
@@ -1097,7 +1256,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'gestohlt' },
       ],
       correctOptionId: 'a',
-      explanation: 'stehlen is a strong verb with the irregular past participle gestohlen.',
+      explanation:
+        'stehlen is a strong verb with the irregular past participle gestohlen.',
     },
     {
       id: 'ch63-ex-48',
@@ -1115,7 +1275,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'd', text: 'sei' },
       ],
       correctOptionId: 'a',
-      explanation: 'A specific past year (im Jahr 2001) with a narrative, written-style tone favors the simple-past passive: wurde restauriert.',
+      explanation:
+        'A specific past year (im Jahr 2001) with a narrative, written-style tone favors the simple-past passive: wurde restauriert.',
     },
     {
       id: 'ch63-ex-49',
@@ -1129,7 +1290,8 @@ export const chapter063: ChapterDefinition = {
       templateParts: ['Die Brücke ', ' 1990 gebaut.'],
       slots: [{ id: 'ch63-ex49-slot1', correctWord: 'wurde' }],
       wordBank: ['wurde', 'ist', 'wird', 'war'],
-      explanation: 'wurde is the simple-past passive auxiliary: die Brücke wurde 1990 gebaut.',
+      explanation:
+        'wurde is the simple-past passive auxiliary: die Brücke wurde 1990 gebaut.',
     },
     {
       id: 'ch63-ex-50',
@@ -1146,7 +1308,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'ch63-ex50-slot2', correctWord: 'worden' },
       ],
       wordBank: ['ist', 'worden', 'wurde', 'geworden'],
-      explanation: 'The present-perfect passive needs ist (sein) in position 2 and worden (not geworden) at the end.',
+      explanation:
+        'The present-perfect passive needs ist (sein) in position 2 and worden (not geworden) at the end.',
     },
     {
       id: 'ch63-ex-51',
@@ -1174,7 +1337,8 @@ export const chapter063: ChapterDefinition = {
       templateParts: ['Der Dieb ist gefasst ', '.'],
       slots: [{ id: 'ch63-ex52-slot1', correctWord: 'worden' }],
       wordBank: ['worden', 'geworden', 'wurde', 'gewesen'],
-      explanation: 'werden as the passive auxiliary in a perfect tense needs worden, never geworden.',
+      explanation:
+        'werden as the passive auxiliary in a perfect tense needs worden, never geworden.',
     },
     {
       id: 'ch63-ex-53',
@@ -1191,7 +1355,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'ch63-ex53-slot2', correctWord: 'worden' },
       ],
       wordBank: ['ist', 'worden', 'wurde', 'sind'],
-      explanation: 'The present-perfect passive needs ist in position 2 and worden at the very end: ist eröffnet worden.',
+      explanation:
+        'The present-perfect passive needs ist in position 2 and worden at the very end: ist eröffnet worden.',
     },
     {
       id: 'ch63-ex-54',
@@ -1205,7 +1370,8 @@ export const chapter063: ChapterDefinition = {
       templateParts: ['Die Stadt ', ' im Krieg zerstört.'],
       slots: [{ id: 'ch63-ex54-slot1', correctWord: 'wurde' }],
       wordBank: ['wurde', 'wird', 'ist', 'war'],
-      explanation: 'wurde is the simple-past passive auxiliary: die Stadt wurde zerstört.',
+      explanation:
+        'wurde is the simple-past passive auxiliary: die Stadt wurde zerstört.',
     },
     {
       id: 'ch63-ex-55',
@@ -1213,7 +1379,13 @@ export const chapter063: ChapterDefinition = {
       order: 55,
       type: 'dragToSlots',
       level: 'production',
-      grammarFocus: ['present-perfect-passive', 'sein-auxiliary', 'worden', 'gruenden', 'plural'],
+      grammarFocus: [
+        'present-perfect-passive',
+        'sein-auxiliary',
+        'worden',
+        'gruenden',
+        'plural',
+      ],
       instruction: 'Drag the correct auxiliary and worden into the gaps.',
       prompt: 'Die Firmen ___ 1990 gegründet ___.',
       templateParts: ['Die Firmen ', ' 1990 gegründet ', '.'],
@@ -1222,7 +1394,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'ch63-ex55-slot2', correctWord: 'worden' },
       ],
       wordBank: ['sind', 'worden', 'wurde', 'ist'],
-      explanation: 'Die Firmen is plural, so the present-perfect passive auxiliary is sind, and worden closes the clause: sind gegründet worden.',
+      explanation:
+        'Die Firmen is plural, so the present-perfect passive auxiliary is sind, and worden closes the clause: sind gegründet worden.',
     },
     {
       id: 'ch63-ex-56',
@@ -1236,10 +1409,19 @@ export const chapter063: ChapterDefinition = {
       pairs: [
         { id: 'p1', left: 'present passive', right: 'Das Haus wird gebaut.' },
         { id: 'p2', left: 'simple-past passive', right: 'Das Haus wurde gebaut.' },
-        { id: 'p3', left: 'present-perfect passive', right: 'Das Haus ist gebaut worden.' },
-        { id: 'p4', left: 'state passive (Zustandspassiv)', right: 'Das Haus ist gebaut.' },
+        {
+          id: 'p3',
+          left: 'present-perfect passive',
+          right: 'Das Haus ist gebaut worden.',
+        },
+        {
+          id: 'p4',
+          left: 'state passive (Zustandspassiv)',
+          right: 'Das Haus ist gebaut.',
+        },
       ],
-      explanation: 'wird marks the present passive, wurde the simple-past passive, ist ... worden the present-perfect passive, and sein + participle without worden the state passive.',
+      explanation:
+        'wird marks the present passive, wurde the simple-past passive, ist ... worden the present-perfect passive, and sein + participle without worden the state passive.',
     },
     {
       id: 'ch63-ex-57',
@@ -1248,15 +1430,25 @@ export const chapter063: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['tense-comparison', 'present-passive', 'simple-past-passive'],
-      instruction: 'Match each present-passive sentence to its simple-past-passive equivalent.',
+      instruction:
+        'Match each present-passive sentence to its simple-past-passive equivalent.',
       prompt: 'Ordne jedem Präsens-Passiv-Satz das passende Präteritum-Passiv zu.',
       pairs: [
         { id: 'p1', left: 'Das Haus wird gebaut.', right: 'Das Haus wurde gebaut.' },
-        { id: 'p2', left: 'Der Brief wird geschrieben.', right: 'Der Brief wurde geschrieben.' },
-        { id: 'p3', left: 'Das Auto wird repariert.', right: 'Das Auto wurde repariert.' },
+        {
+          id: 'p2',
+          left: 'Der Brief wird geschrieben.',
+          right: 'Der Brief wurde geschrieben.',
+        },
+        {
+          id: 'p3',
+          left: 'Das Auto wird repariert.',
+          right: 'Das Auto wurde repariert.',
+        },
         { id: 'p4', left: 'Die Tür wird geöffnet.', right: 'Die Tür wurde geöffnet.' },
       ],
-      explanation: 'The simple-past passive replaces wird with wurde, keeping the same past participle.',
+      explanation:
+        'The simple-past passive replaces wird with wurde, keeping the same past participle.',
     },
     {
       id: 'ch63-ex-58',
@@ -1265,15 +1457,29 @@ export const chapter063: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['tense-comparison', 'present-passive', 'present-perfect-passive'],
-      instruction: 'Match each present-passive sentence to its present-perfect-passive equivalent.',
+      instruction:
+        'Match each present-passive sentence to its present-perfect-passive equivalent.',
       prompt: 'Ordne jedem Präsens-Passiv-Satz das passende Perfekt-Passiv zu.',
       pairs: [
         { id: 'p1', left: 'Das Haus wird gebaut.', right: 'Das Haus ist gebaut worden.' },
-        { id: 'p2', left: 'Der Brief wird geschrieben.', right: 'Der Brief ist geschrieben worden.' },
-        { id: 'p3', left: 'Das Auto wird repariert.', right: 'Das Auto ist repariert worden.' },
-        { id: 'p4', left: 'Die Tür wird geöffnet.', right: 'Die Tür ist geöffnet worden.' },
+        {
+          id: 'p2',
+          left: 'Der Brief wird geschrieben.',
+          right: 'Der Brief ist geschrieben worden.',
+        },
+        {
+          id: 'p3',
+          left: 'Das Auto wird repariert.',
+          right: 'Das Auto ist repariert worden.',
+        },
+        {
+          id: 'p4',
+          left: 'Die Tür wird geöffnet.',
+          right: 'Die Tür ist geöffnet worden.',
+        },
       ],
-      explanation: 'The present-perfect passive replaces wird with sein (ist) and adds worden at the end of the clause.',
+      explanation:
+        'The present-perfect passive replaces wird with sein (ist) and adds worden at the end of the clause.',
     },
     {
       id: 'ch63-ex-59',
@@ -1282,7 +1488,8 @@ export const chapter063: ChapterDefinition = {
       type: 'matching',
       level: 'production',
       grammarFocus: ['present-perfect-passive', 'worden', 'verb-variety'],
-      instruction: 'Match each infinitive to its present-perfect-passive form (es ist ... worden).',
+      instruction:
+        'Match each infinitive to its present-perfect-passive form (es ist ... worden).',
       prompt: 'Ordne jedem Infinitiv die passende Perfekt-Passiv-Form zu.',
       pairs: [
         { id: 'p1', left: 'stehlen', right: 'ist gestohlen worden' },
@@ -1290,7 +1497,8 @@ export const chapter063: ChapterDefinition = {
         { id: 'p3', left: 'entdecken', right: 'ist entdeckt worden' },
         { id: 'p4', left: 'zerstören', right: 'ist zerstört worden' },
       ],
-      explanation: 'Every present-perfect passive form ends in worden, regardless of the main verb involved.',
+      explanation:
+        'Every present-perfect passive form ends in worden, regardless of the main verb involved.',
     },
     {
       id: 'ch63-ex-60',
@@ -1307,7 +1515,8 @@ export const chapter063: ChapterDefinition = {
         { id: 's3', text: 'letzte Nacht' },
         { id: 's4', text: 'gestohlen.' },
       ],
-      explanation: 'In a main clause, wurde takes position 2 and the past participle goes to the very end: Das Fahrrad wurde letzte Nacht gestohlen.',
+      explanation:
+        'In a main clause, wurde takes position 2 and the past participle goes to the very end: Das Fahrrad wurde letzte Nacht gestohlen.',
     },
     {
       id: 'ch63-ex-61',
@@ -1324,7 +1533,8 @@ export const chapter063: ChapterDefinition = {
         { id: 's3', text: 'letzte Woche' },
         { id: 's4', text: 'verkauft worden.' },
       ],
-      explanation: 'In a main clause, ist takes position 2, and the participle plus worden are sent to the very end: Das Haus ist letzte Woche verkauft worden.',
+      explanation:
+        'In a main clause, ist takes position 2, and the participle plus worden are sent to the very end: Das Haus ist letzte Woche verkauft worden.',
     },
     {
       id: 'ch63-ex-62',
@@ -1332,7 +1542,12 @@ export const chapter063: ChapterDefinition = {
       order: 62,
       type: 'sentenceOrdering',
       level: 'transfer',
-      grammarFocus: ['word-order', 'subordinate-clause', 'present-perfect-passive', 'eroeffnen'],
+      grammarFocus: [
+        'word-order',
+        'subordinate-clause',
+        'present-perfect-passive',
+        'eroeffnen',
+      ],
       instruction: 'Drag the segments into the correct order.',
       prompt: 'Ich habe gehört, + dass + das Geschäft + schon eröffnet worden ist.',
       segments: [
@@ -1341,7 +1556,8 @@ export const chapter063: ChapterDefinition = {
         { id: 's3', text: 'das Geschäft' },
         { id: 's4', text: 'schon eröffnet worden ist.' },
       ],
-      explanation: 'In a dass-clause with the present-perfect passive, the order at the end is participle, then worden, then the finite verb ist last.',
+      explanation:
+        'In a dass-clause with the present-perfect passive, the order at the end is participle, then worden, then the finite verb ist last.',
     },
     {
       id: 'ch63-ex-63',
@@ -1349,7 +1565,12 @@ export const chapter063: ChapterDefinition = {
       order: 63,
       type: 'sentenceOrdering',
       level: 'transfer',
-      grammarFocus: ['word-order', 'subordinate-clause', 'simple-past-passive', 'zerstoeren'],
+      grammarFocus: [
+        'word-order',
+        'subordinate-clause',
+        'simple-past-passive',
+        'zerstoeren',
+      ],
       instruction: 'Drag the segments into the correct order.',
       prompt: 'Wir wissen, + dass + die Stadt + im Krieg zerstört wurde.',
       segments: [
@@ -1358,7 +1579,8 @@ export const chapter063: ChapterDefinition = {
         { id: 's3', text: 'die Stadt' },
         { id: 's4', text: 'im Krieg zerstört wurde.' },
       ],
-      explanation: 'In a dass-clause, the finite verb wurde moves to the very end, after the past participle: dass die Stadt im Krieg zerstört wurde.',
+      explanation:
+        'In a dass-clause, the finite verb wurde moves to the very end, after the past participle: dass die Stadt im Krieg zerstört wurde.',
     },
     {
       id: 'ch63-ex-64',
@@ -1372,7 +1594,8 @@ export const chapter063: ChapterDefinition = {
       tokens: ['Das', 'Haus', 'ist', 'gebaut', 'geworden.'],
       errorTokenIndex: 4,
       correction: 'Das Haus ist gebaut worden.',
-      explanation: 'werden as the passive auxiliary in a perfect tense needs worden, not geworden: Das Haus ist gebaut worden.',
+      explanation:
+        'werden as the passive auxiliary in a perfect tense needs worden, not geworden: Das Haus ist gebaut worden.',
     },
     {
       id: 'ch63-ex-65',
@@ -1386,7 +1609,8 @@ export const chapter063: ChapterDefinition = {
       tokens: ['Sie', 'ist', 'Ärztin', 'worden.'],
       errorTokenIndex: 3,
       correction: 'Sie ist Ärztin geworden.',
-      explanation: 'werden meaning "to become" needs its regular participle geworden, not the passive-only worden: Sie ist Ärztin geworden.',
+      explanation:
+        'werden meaning "to become" needs its regular participle geworden, not the passive-only worden: Sie ist Ärztin geworden.',
     },
     {
       id: 'ch63-ex-66',
@@ -1394,13 +1618,19 @@ export const chapter063: ChapterDefinition = {
       order: 66,
       type: 'errorSpotting',
       level: 'production',
-      grammarFocus: ['error-correction', 'sein-auxiliary', 'present-perfect-passive', 'verkaufen'],
+      grammarFocus: [
+        'error-correction',
+        'sein-auxiliary',
+        'present-perfect-passive',
+        'verkaufen',
+      ],
       instruction: 'Find the token with the wrong auxiliary, and correct it.',
       prompt: 'Ein Lerner beschreibt einen Verkauf. Etwas stimmt nicht.',
       tokens: ['Das', 'Auto', 'hat', 'verkauft', 'worden.'],
       errorTokenIndex: 2,
       correction: 'Das Auto ist verkauft worden.',
-      explanation: 'The present-perfect passive always uses sein, never haben, because werden itself forms its perfect with sein: Das Auto ist verkauft worden.',
+      explanation:
+        'The present-perfect passive always uses sein, never haben, because werden itself forms its perfect with sein: Das Auto ist verkauft worden.',
     },
     {
       id: 'ch63-ex-67',
@@ -1414,7 +1644,8 @@ export const chapter063: ChapterDefinition = {
       tokens: ['Das', 'Haus', 'wurde', 'gebaut', 'worden.'],
       errorTokenIndex: 4,
       correction: 'Das Haus wurde gebaut.',
-      explanation: 'worden belongs exclusively to the present-perfect passive and never combines with the simple-past auxiliary wurde: Das Haus wurde gebaut.',
+      explanation:
+        'worden belongs exclusively to the present-perfect passive and never combines with the simple-past auxiliary wurde: Das Haus wurde gebaut.',
     },
     {
       id: 'ch63-ex-68',
@@ -1423,12 +1654,14 @@ export const chapter063: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['error-correction', 'word-order', 'subordinate-clause', 'entdecken'],
-      instruction: 'Find the token that breaks the subordinate-clause word order, and correct it.',
+      instruction:
+        'Find the token that breaks the subordinate-clause word order, and correct it.',
       prompt: 'Ein Lerner berichtet von einer Entdeckung. Etwas stimmt nicht.',
       tokens: ['Ich', 'glaube,', 'dass', 'wurde', 'der', 'Fehler', 'entdeckt.'],
       errorTokenIndex: 3,
       correction: 'Ich glaube, dass der Fehler entdeckt wurde.',
-      explanation: 'In a dass-clause, the finite verb wurde moves all the way to the end, after the past participle: dass der Fehler entdeckt wurde.',
+      explanation:
+        'In a dass-clause, the finite verb wurde moves all the way to the end, after the past participle: dass der Fehler entdeckt wurde.',
     },
     {
       id: 'ch63-ex-69',
@@ -1442,7 +1675,8 @@ export const chapter063: ChapterDefinition = {
       tokens: ['Das', 'Fahrrad', 'wurde', 'gestehlt.'],
       errorTokenIndex: 3,
       correction: 'Das Fahrrad wurde gestohlen.',
-      explanation: 'stehlen is a strong verb with the irregular past participle gestohlen, not the regular-looking gestehlt.',
+      explanation:
+        'stehlen is a strong verb with the irregular past participle gestohlen, not the regular-looking gestehlt.',
     },
     {
       id: 'ch63-ex-70',
@@ -1456,7 +1690,8 @@ export const chapter063: ChapterDefinition = {
       tokens: ['Die', 'Stadt', 'ist', 'zerstört', 'geworden.'],
       errorTokenIndex: 4,
       correction: 'Die Stadt ist zerstört worden.',
-      explanation: 'werden as the passive auxiliary in a perfect tense needs worden, not geworden: Die Stadt ist zerstört worden.',
+      explanation:
+        'werden as the passive auxiliary in a perfect tense needs worden, not geworden: Die Stadt ist zerstört worden.',
     },
     {
       id: 'ch63-ex-71',
@@ -1465,13 +1700,15 @@ export const chapter063: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['present-perfect-passive', 'sein-auxiliary'],
-      instruction: 'Write the present-perfect passive auxiliary form for ihr. Capitalisation is not checked.',
+      instruction:
+        'Write the present-perfect passive auxiliary form for ihr. Capitalisation is not checked.',
       prompt: 'ihr → sein (present, present-perfect-passive auxiliary)',
       acceptedAnswers: ['seid'],
       answerMode: 'caseInsensitive',
       placeholder: 'seid',
       maxLength: 10,
-      explanation: 'The ihr-form of sein, used as the present-perfect-passive auxiliary, is seid.',
+      explanation:
+        'The ihr-form of sein, used as the present-perfect-passive auxiliary, is seid.',
     },
     {
       id: 'ch63-ex-72',
@@ -1480,13 +1717,15 @@ export const chapter063: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['present-perfect-passive', 'sein-auxiliary'],
-      instruction: 'Write the present-perfect passive auxiliary form for du. Capitalisation is not checked.',
+      instruction:
+        'Write the present-perfect passive auxiliary form for du. Capitalisation is not checked.',
       prompt: 'du → sein (present, present-perfect-passive auxiliary)',
       acceptedAnswers: ['bist'],
       answerMode: 'caseInsensitive',
       placeholder: 'bist',
       maxLength: 10,
-      explanation: 'The du-form of sein, used as the present-perfect-passive auxiliary, is bist.',
+      explanation:
+        'The du-form of sein, used as the present-perfect-passive auxiliary, is bist.',
     },
     {
       id: 'ch63-ex-73',
@@ -1501,7 +1740,8 @@ export const chapter063: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'gestohlen',
       maxLength: 15,
-      explanation: 'stehlen is a strong verb with the irregular past participle gestohlen.',
+      explanation:
+        'stehlen is a strong verb with the irregular past participle gestohlen.',
     },
     {
       id: 'ch63-ex-74',
@@ -1510,13 +1750,15 @@ export const chapter063: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['past-participle', 'verkaufen', '-ieren-verbs'],
-      instruction: 'Write the past participle of verkaufen. Capitalisation is not checked.',
+      instruction:
+        'Write the past participle of verkaufen. Capitalisation is not checked.',
       prompt: 'verkaufen → past participle',
       acceptedAnswers: ['verkauft'],
       answerMode: 'caseInsensitive',
       placeholder: 'verkauft',
       maxLength: 15,
-      explanation: 'verkaufen is a regular weak verb: ver- (inseparable prefix, no extra ge-) + stem (kauf) + -t = verkauft.',
+      explanation:
+        'verkaufen is a regular weak verb: ver- (inseparable prefix, no extra ge-) + stem (kauf) + -t = verkauft.',
     },
     {
       id: 'ch63-ex-75',
@@ -1525,7 +1767,8 @@ export const chapter063: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['past-participle', 'entdecken'],
-      instruction: 'Write the past participle of entdecken. Capitalisation is not checked.',
+      instruction:
+        'Write the past participle of entdecken. Capitalisation is not checked.',
       prompt: 'entdecken → past participle',
       acceptedAnswers: ['entdeckt'],
       answerMode: 'caseInsensitive',
@@ -1546,7 +1789,8 @@ export const chapter063: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'gegründet',
       maxLength: 15,
-      explanation: 'gründen is a regular weak verb: ge- + stem (gründ) + -et = gegründet.',
+      explanation:
+        'gründen is a regular weak verb: ge- + stem (gründ) + -et = gegründet.',
     },
     {
       id: 'ch63-ex-77',
@@ -1555,7 +1799,8 @@ export const chapter063: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['past-participle', 'eroeffnen'],
-      instruction: 'Write the past participle of eröffnen. Capitalisation is not checked.',
+      instruction:
+        'Write the past participle of eröffnen. Capitalisation is not checked.',
       prompt: 'eröffnen → past participle',
       acceptedAnswers: ['eröffnet'],
       answerMode: 'caseInsensitive',
@@ -1570,7 +1815,8 @@ export const chapter063: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['past-participle', 'zerstoeren'],
-      instruction: 'Write the past participle of zerstören. Capitalisation is not checked.',
+      instruction:
+        'Write the past participle of zerstören. Capitalisation is not checked.',
       prompt: 'zerstören → past participle',
       acceptedAnswers: ['zerstört'],
       answerMode: 'caseInsensitive',
@@ -1584,17 +1830,21 @@ export const chapter063: ChapterDefinition = {
       order: 79,
       type: 'textInput',
       level: 'production',
-      grammarFocus: ['active-to-passive', 'simple-past-passive', 'stehlen', 'transformation'],
-      instruction: 'Rewrite the active sentence in the simple-past passive. Capitalisation and punctuation are checked.',
-      prompt: 'Jemand stahl das Fahrrad. → Passiv (Präteritum)',
-      acceptedAnswers: [
-        'Das Fahrrad wurde gestohlen.',
-        'Das Fahrrad wurde gestohlen',
+      grammarFocus: [
+        'active-to-passive',
+        'simple-past-passive',
+        'stehlen',
+        'transformation',
       ],
+      instruction:
+        'Rewrite the active sentence in the simple-past passive. Capitalisation and punctuation are checked.',
+      prompt: 'Jemand stahl das Fahrrad. → Passiv (Präteritum)',
+      acceptedAnswers: ['Das Fahrrad wurde gestohlen.', 'Das Fahrrad wurde gestohlen'],
       answerMode: 'normalized',
       placeholder: 'Das Fahrrad wurde ...',
       maxLength: 50,
-      explanation: 'stahl (active simple past) becomes wurde ... gestohlen (simple-past passive), with the vague agent jemand simply dropped: Das Fahrrad wurde gestohlen.',
+      explanation:
+        'stahl (active simple past) becomes wurde ... gestohlen (simple-past passive), with the vague agent jemand simply dropped: Das Fahrrad wurde gestohlen.',
     },
     {
       id: 'ch63-ex-80',
@@ -1602,8 +1852,15 @@ export const chapter063: ChapterDefinition = {
       order: 80,
       type: 'textInput',
       level: 'transfer',
-      grammarFocus: ['active-to-passive', 'present-perfect-passive', 'verkaufen', 'von-agent', 'transformation'],
-      instruction: 'Rewrite the active sentence in the present-perfect passive, keeping the agent with von. Capitalisation and punctuation are checked.',
+      grammarFocus: [
+        'active-to-passive',
+        'present-perfect-passive',
+        'verkaufen',
+        'von-agent',
+        'transformation',
+      ],
+      instruction:
+        'Rewrite the active sentence in the present-perfect passive, keeping the agent with von. Capitalisation and punctuation are checked.',
       prompt: 'Der Makler hat das Haus verkauft. → Passiv (Perfekt)',
       acceptedAnswers: [
         'Das Haus ist von dem Makler verkauft worden.',
@@ -1614,7 +1871,8 @@ export const chapter063: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Das Haus ist von ...',
       maxLength: 70,
-      explanation: 'hat verkauft (active present perfect) becomes ist verkauft worden (present-perfect passive), with der Makler as the von-agent (dative): von dem/vom Makler.',
+      explanation:
+        'hat verkauft (active present perfect) becomes ist verkauft worden (present-perfect passive), with der Makler as the von-agent (dative): von dem/vom Makler.',
     },
   ],
 };

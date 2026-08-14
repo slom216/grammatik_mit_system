@@ -107,7 +107,9 @@ export function CumulativeReviewPage() {
     return (
       <div className="stack">
         <h1>Preparing the cumulative review…</h1>
-        <p className="text-muted">Mixing exercises from chapters {fromNumber}–{toNumber}.</p>
+        <p className="text-muted">
+          Mixing exercises from chapters {fromNumber}–{toNumber}.
+        </p>
       </div>
     );
   }
@@ -138,7 +140,11 @@ export function CumulativeReviewPage() {
           max={total}
           valueText={`${answered} of ${total} answered`}
         />
-        <p className="text-sm text-muted" data-testid="exercise-counter" aria-live="polite">
+        <p
+          className="text-sm text-muted"
+          data-testid="exercise-counter"
+          aria-live="polite"
+        >
           Exercise {position} of {total} · from chapter {exercise.chapterNumber} ·{' '}
           {EXERCISE_TYPE_LABELS[exercise.type]}
         </p>

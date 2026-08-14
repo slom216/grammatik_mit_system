@@ -745,7 +745,8 @@ export const chapter001: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['formal-address'],
       instruction: 'Choose the correct pronoun for the situation.',
-      prompt: 'You are meeting your new landlord for the first time. Which pronoun do you use?',
+      prompt:
+        'You are meeting your new landlord for the first time. Which pronoun do you use?',
       options: [
         { id: 'a', text: 'Sie' },
         { id: 'b', text: 'du' },
@@ -764,7 +765,8 @@ export const chapter001: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['informal-address'],
       instruction: 'Choose the correct pronoun for the situation.',
-      prompt: 'You are talking to your little cousin, whom you know well. Which pronoun do you use?',
+      prompt:
+        'You are talking to your little cousin, whom you know well. Which pronoun do you use?',
       options: [
         { id: 'a', text: 'du' },
         { id: 'b', text: 'Sie' },
@@ -782,7 +784,8 @@ export const chapter001: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['informal-address'],
       instruction: 'Choose the correct pronoun for the situation.',
-      prompt: 'You are talking to your whole football team after practice. Which pronoun do you use?',
+      prompt:
+        'You are talking to your whole football team after practice. Which pronoun do you use?',
       options: [
         { id: 'a', text: 'ihr' },
         { id: 'b', text: 'du' },
@@ -908,7 +911,8 @@ export const chapter001: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['formal-address', 'capitalisation'],
-      instruction: 'You are writing to your landlord. Choose the correctly written sentence.',
+      instruction:
+        'You are writing to your landlord. Choose the correctly written sentence.',
       prompt: 'Which sentence is written correctly?',
       options: [
         { id: 'a', text: 'Sind Sie heute zu Hause?' },
@@ -1070,13 +1074,21 @@ export const chapter001: ChapterDefinition = {
       pairs: [
         { id: 'p1', left: 'Er wohnt in Wien.', right: 'He lives in Vienna.' },
         { id: 'p2', left: 'Sie wohnt in Wien.', right: 'She lives in Vienna.' },
-        { id: 'p3', left: 'Wohnst du in Wien?', right: 'Do you live in Vienna? (one friend)' },
+        {
+          id: 'p3',
+          left: 'Wohnst du in Wien?',
+          right: 'Do you live in Vienna? (one friend)',
+        },
         {
           id: 'p4',
           left: 'Wohnt ihr in Wien?',
           right: 'Do you live in Vienna? (several friends)',
         },
-        { id: 'p5', left: 'Wohnen Sie in Wien?', right: 'Do you live in Vienna? (formal)' },
+        {
+          id: 'p5',
+          left: 'Wohnen Sie in Wien?',
+          right: 'Do you live in Vienna? (formal)',
+        },
         { id: 'p6', left: 'Wohnen sie in Wien?', right: 'Do they live in Vienna?' },
       ],
       explanation:
@@ -1141,7 +1153,11 @@ export const chapter001: ChapterDefinition = {
           left: 'Sind Sie mein neuer Kollege?',
           right: 'Are you my new colleague? (formal)',
         },
-        { id: 'p6', left: 'Sind sie meine neuen Kollegen?', right: 'Are they my new colleagues?' },
+        {
+          id: 'p6',
+          left: 'Sind sie meine neuen Kollegen?',
+          right: 'Are they my new colleagues?',
+        },
       ],
       explanation:
         'Each pronoun brings its own verb form: er/sie ist, du bist, ihr seid, Sie sind (formal), sie sind (they) — the form and the pronoun always match.',
@@ -1173,7 +1189,8 @@ export const chapter001: ChapterDefinition = {
       tokens: ['Ihr', 'bist', 'meine', 'Freunde.'],
       errorTokenIndex: 1,
       correction: 'seid',
-      explanation: 'ihr never takes the du-form of the verb (bist); it needs its own form, seid.',
+      explanation:
+        'ihr never takes the du-form of the verb (bist); it needs its own form, seid.',
     },
     {
       id: 'ch01-ex-56',

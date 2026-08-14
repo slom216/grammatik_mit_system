@@ -72,7 +72,12 @@ export const chapter013: ChapterDefinition = {
       {
         id: 'ch13-table-01',
         title: 'Four predicate patterns',
-        columns: ['Pattern', 'Position 2 (finite)', 'End of the clause (non-finite)', 'Example'],
+        columns: [
+          'Pattern',
+          'Position 2 (finite)',
+          'End of the clause (non-finite)',
+          'Example',
+        ],
         rows: [
           [
             'Modal + infinitive',
@@ -80,7 +85,12 @@ export const chapter013: ChapterDefinition = {
             'infinitive',
             'Ich kann heute nicht kommen.',
           ],
-          ['Separable verb', 'conjugated stem', 'separable prefix', 'Ich rufe dich morgen an.'],
+          [
+            'Separable verb',
+            'conjugated stem',
+            'separable prefix',
+            'Ich rufe dich morgen an.',
+          ],
           [
             'Perfect tense (preview)',
             'haben or sein',
@@ -99,7 +109,12 @@ export const chapter013: ChapterDefinition = {
       {
         id: 'ch13-table-02',
         title: 'Anatomy of a two-part predicate',
-        columns: ['Position 1', 'Position 2 (finite)', 'Mittelfeld (middle field)', 'End (non-finite)'],
+        columns: [
+          'Position 1',
+          'Position 2 (finite)',
+          'Mittelfeld (middle field)',
+          'End (non-finite)',
+        ],
         rows: [
           ['Ich', 'kann', 'heute nicht', 'kommen.'],
           ['Ich', 'rufe', 'dich morgen', 'an.'],
@@ -113,7 +128,8 @@ export const chapter013: ChapterDefinition = {
         german: 'Ich kann heute nicht kommen.',
         english: "I can't come today.",
         highlight: ['kann', 'kommen'],
-        explanation: 'The modal kann is in position 2, and the infinitive kommen closes the bracket at the end.',
+        explanation:
+          'The modal kann is in position 2, and the infinitive kommen closes the bracket at the end.',
       },
       {
         german: 'Wir müssen jetzt gehen.',
@@ -124,13 +140,15 @@ export const chapter013: ChapterDefinition = {
         german: 'Du musst das Formular ausfüllen.',
         english: 'You have to fill out the form.',
         highlight: ['musst', 'ausfüllen'],
-        explanation: 'The separable verb ausfüllen stays whole, as one infinitive, at the end after a modal.',
+        explanation:
+          'The separable verb ausfüllen stays whole, as one infinitive, at the end after a modal.',
       },
       {
         german: 'Ich rufe dich morgen an.',
         english: 'I will call you tomorrow.',
         highlight: ['rufe', 'an'],
-        explanation: 'The separable prefix an moves to the end; the stem rufe stays in position 2.',
+        explanation:
+          'The separable prefix an moves to the end; the stem rufe stays in position 2.',
       },
       {
         german: 'Er räumt sein Zimmer auf.',
@@ -158,13 +176,15 @@ export const chapter013: ChapterDefinition = {
         german: 'Ich darf heute nicht fernsehen.',
         english: 'I am not allowed to watch TV today.',
         highlight: ['darf', 'fernsehen'],
-        explanation: 'Modal and separable verb combine: fernsehen stays one word at the very end.',
+        explanation:
+          'Modal and separable verb combine: fernsehen stays one word at the very end.',
       },
       {
         german: 'Ich esse gern Pizza.',
         english: 'I like eating pizza.',
         highlight: ['esse'],
-        explanation: 'Only one verb part (esse) — a one-part predicate with nothing fixed at the end.',
+        explanation:
+          'Only one verb part (esse) — a one-part predicate with nothing fixed at the end.',
       },
       {
         german: 'Meine Mutter kocht heute Abend.',
@@ -380,7 +400,8 @@ export const chapter013: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['separable-verbs', 'mittelfeld'],
-      instruction: 'Choose the pair of words that correctly completes the bracket (aufräumen).',
+      instruction:
+        'Choose the pair of words that correctly completes the bracket (aufräumen).',
       prompt: 'Wir ___ das Zimmer jeden Samstag ___.',
       options: [
         { id: 'a', text: 'räumen / auf' },
@@ -399,7 +420,8 @@ export const chapter013: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['modal-verbs', 'separable-verbs', 'verb-bracket'],
-      instruction: 'Choose the correct sentence. (fernsehen is separable; with a modal it stays whole.)',
+      instruction:
+        'Choose the correct sentence. (fernsehen is separable; with a modal it stays whole.)',
       prompt: 'du – heute – nicht – fernsehen – dürfen',
       options: [
         { id: 'a', text: 'Du darfst heute nicht fernsehen.' },
@@ -456,7 +478,8 @@ export const chapter013: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['verb-bracket', 'modal-verbs'],
-      instruction: 'Write only the finite (conjugated) verb that stands in position 2. Capitalisation does not matter here.',
+      instruction:
+        'Write only the finite (conjugated) verb that stands in position 2. Capitalisation does not matter here.',
       prompt: 'Wir müssen jetzt gehen.',
       acceptedAnswers: ['müssen'],
       answerMode: 'caseInsensitive',
@@ -472,7 +495,8 @@ export const chapter013: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['verb-bracket', 'separable-verbs'],
-      instruction: 'Write only the word that stands at the very end of the clause. Capitalisation does not matter here.',
+      instruction:
+        'Write only the word that stands at the very end of the clause. Capitalisation does not matter here.',
       prompt: 'Er räumt sein Zimmer auf.',
       acceptedAnswers: ['auf'],
       answerMode: 'caseInsensitive',
@@ -488,7 +512,8 @@ export const chapter013: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['modal-verbs', 'verb-bracket'],
-      instruction: 'Write only the missing infinitive. Capitalisation does not matter here.',
+      instruction:
+        'Write only the missing infinitive. Capitalisation does not matter here.',
       prompt: 'Ich kann das Auto nicht ___. (reparieren)',
       acceptedAnswers: ['reparieren'],
       answerMode: 'caseInsensitive',
@@ -504,7 +529,8 @@ export const chapter013: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['separable-verbs', 'verb-bracket'],
-      instruction: 'Write only the missing separable prefix. Capitalisation does not matter here.',
+      instruction:
+        'Write only the missing separable prefix. Capitalisation does not matter here.',
       prompt: 'Sie macht das Fenster ___. (zumachen)',
       acceptedAnswers: ['zu'],
       answerMode: 'caseInsensitive',
@@ -520,7 +546,8 @@ export const chapter013: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['perfect-tense-preview', 'verb-bracket'],
-      instruction: 'Write only the missing past participle. Capitalisation does not matter here.',
+      instruction:
+        'Write only the missing past participle. Capitalisation does not matter here.',
       prompt: 'Ich habe einen Kaffee ___. (trinken → getrunken)',
       acceptedAnswers: ['getrunken'],
       answerMode: 'caseInsensitive',
@@ -536,7 +563,8 @@ export const chapter013: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['one-part-predicate', 'verb-bracket'],
-      instruction: 'Does this sentence have a verb bracket (two fixed verb positions)? Write ja or nein.',
+      instruction:
+        'Does this sentence have a verb bracket (two fixed verb positions)? Write ja or nein.',
       prompt: 'Meine Mutter kocht heute Abend.',
       acceptedAnswers: ['nein'],
       answerMode: 'caseInsensitive',
@@ -552,7 +580,8 @@ export const chapter013: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['verb-bracket', 'modal-verbs'],
-      instruction: 'Does this sentence have a verb bracket (two fixed verb positions)? Write ja or nein.',
+      instruction:
+        'Does this sentence have a verb bracket (two fixed verb positions)? Write ja or nein.',
       prompt: 'Ich möchte gern Pizza essen.',
       acceptedAnswers: ['ja'],
       answerMode: 'caseInsensitive',
@@ -568,7 +597,8 @@ export const chapter013: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['modal-verbs', 'separable-verbs', 'word-order'],
-      instruction: 'Write the complete sentence. Capitalisation and the full stop are checked.',
+      instruction:
+        'Write the complete sentence. Capitalisation and the full stop are checked.',
       prompt: 'ich – dürfen – heute – nicht – fernsehen',
       acceptedAnswers: ['Ich darf heute nicht fernsehen.'],
       answerMode: 'normalized',
@@ -584,7 +614,8 @@ export const chapter013: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['separable-verbs', 'word-order'],
-      instruction: 'Write the complete sentence. Capitalisation and the full stop are checked.',
+      instruction:
+        'Write the complete sentence. Capitalisation and the full stop are checked.',
       prompt: 'wir – das Zimmer – jeden Samstag – aufräumen',
       acceptedAnswers: ['Wir räumen das Zimmer jeden Samstag auf.'],
       answerMode: 'normalized',
@@ -600,7 +631,8 @@ export const chapter013: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['perfect-tense-preview', 'word-order'],
-      instruction: 'Write the complete sentence using habe … gesehen. Capitalisation and the full stop are checked.',
+      instruction:
+        'Write the complete sentence using habe … gesehen. Capitalisation and the full stop are checked.',
       prompt: 'ich – gestern – einen Film – sehen (habe … gesehen)',
       acceptedAnswers: ['Ich habe gestern einen Film gesehen.'],
       answerMode: 'normalized',
@@ -616,7 +648,8 @@ export const chapter013: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['verb-bracket', 'word-order'],
-      instruction: 'Unscramble the words into a correct sentence. Capitalisation and the full stop are checked.',
+      instruction:
+        'Unscramble the words into a correct sentence. Capitalisation and the full stop are checked.',
       prompt: 'kann / ich / morgen / nicht / kommen',
       acceptedAnswers: ['Ich kann morgen nicht kommen.'],
       answerMode: 'normalized',
@@ -632,7 +665,8 @@ export const chapter013: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['verb-bracket', 'error-correction'],
-      instruction: 'Correct the sentence and write it out completely. Capitalisation and the full stop are checked.',
+      instruction:
+        'Correct the sentence and write it out completely. Capitalisation and the full stop are checked.',
       prompt: 'Ich kann kommen heute nicht.',
       acceptedAnswers: ['Ich kann heute nicht kommen.'],
       answerMode: 'normalized',
@@ -743,7 +777,8 @@ export const chapter013: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['modal-verbs', 'separable-verbs', 'verb-bracket'],
-      instruction: 'Choose the correct sentence. (fernsehen is separable; with a modal it stays whole.)',
+      instruction:
+        'Choose the correct sentence. (fernsehen is separable; with a modal it stays whole.)',
       prompt: 'die Kinder – heute Abend – nicht – fernsehen – dürfen',
       options: [
         { id: 'a', text: 'Die Kinder dürfen heute Abend nicht fernsehen.' },
@@ -782,7 +817,8 @@ export const chapter013: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['verb-bracket', 'modal-verbs'],
       instruction: 'Choose the sentence with the correct verb bracket.',
-      prompt: 'Which German sentence correctly means "I have to submit the letter immediately"?',
+      prompt:
+        'Which German sentence correctly means "I have to submit the letter immediately"?',
       options: [
         { id: 'a', text: 'Ich muss den Brief sofort abschicken.' },
         { id: 'b', text: 'Ich muss abschicken den Brief sofort.' },
@@ -819,7 +855,8 @@ export const chapter013: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['verb-bracket', 'modal-verbs'],
-      instruction: 'Write only the finite (conjugated) verb that stands in position 2. Capitalisation does not matter here.',
+      instruction:
+        'Write only the finite (conjugated) verb that stands in position 2. Capitalisation does not matter here.',
       prompt: 'Du sollst den Brief sofort abschicken.',
       acceptedAnswers: ['sollst'],
       answerMode: 'caseInsensitive',
@@ -835,7 +872,8 @@ export const chapter013: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['verb-bracket', 'separable-verbs'],
-      instruction: 'Write only the word that stands at the very end of the clause. Capitalisation does not matter here.',
+      instruction:
+        'Write only the word that stands at the very end of the clause. Capitalisation does not matter here.',
       prompt: 'Ich lade meine Freunde am Samstag ein.',
       acceptedAnswers: ['ein'],
       answerMode: 'caseInsensitive',
@@ -851,7 +889,8 @@ export const chapter013: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['modal-verbs', 'verb-bracket'],
-      instruction: 'Write only the missing infinitive. Capitalisation does not matter here.',
+      instruction:
+        'Write only the missing infinitive. Capitalisation does not matter here.',
       prompt: 'Wir wollen nächstes Jahr nach Italien ___. (reisen)',
       acceptedAnswers: ['reisen'],
       answerMode: 'caseInsensitive',
@@ -867,7 +906,8 @@ export const chapter013: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['separable-verbs', 'verb-bracket'],
-      instruction: 'Write only the missing separable prefix. Capitalisation does not matter here.',
+      instruction:
+        'Write only the missing separable prefix. Capitalisation does not matter here.',
       prompt: 'Er schaltet den Fernseher vor dem Schlafen ___. (ausschalten)',
       acceptedAnswers: ['aus'],
       answerMode: 'caseInsensitive',
@@ -883,7 +923,8 @@ export const chapter013: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['perfect-tense-preview', 'verb-bracket'],
-      instruction: 'Write only the missing past participle. Capitalisation does not matter here.',
+      instruction:
+        'Write only the missing past participle. Capitalisation does not matter here.',
       prompt: 'Ich habe gestern meine Oma ___. (besuchen → besucht)',
       acceptedAnswers: ['besucht'],
       answerMode: 'caseInsensitive',
@@ -899,7 +940,8 @@ export const chapter013: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['verb-bracket', 'modal-verbs'],
-      instruction: 'Does this sentence have a verb bracket (two fixed verb positions)? Write ja or nein.',
+      instruction:
+        'Does this sentence have a verb bracket (two fixed verb positions)? Write ja or nein.',
       prompt: 'Die Kinder dürfen heute Abend nicht fernsehen.',
       acceptedAnswers: ['ja'],
       answerMode: 'caseInsensitive',
@@ -915,7 +957,8 @@ export const chapter013: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['one-part-predicate', 'verb-bracket'],
-      instruction: 'Does this sentence have a verb bracket (two fixed verb positions)? Write ja or nein.',
+      instruction:
+        'Does this sentence have a verb bracket (two fixed verb positions)? Write ja or nein.',
       prompt: 'Meine Schwester singt sehr gut.',
       acceptedAnswers: ['nein'],
       answerMode: 'caseInsensitive',
@@ -931,7 +974,8 @@ export const chapter013: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['modal-verbs', 'word-order'],
-      instruction: 'Write the complete sentence. Capitalisation and the full stop are checked.',
+      instruction:
+        'Write the complete sentence. Capitalisation and the full stop are checked.',
       prompt: 'wir – wollen – nächstes Jahr – nach Italien – reisen',
       acceptedAnswers: ['Wir wollen nächstes Jahr nach Italien reisen.'],
       answerMode: 'normalized',
@@ -947,7 +991,8 @@ export const chapter013: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['verb-bracket', 'separable-verbs', 'error-correction'],
-      instruction: 'Correct the sentence and write it out completely. Capitalisation and the full stop are checked.',
+      instruction:
+        'Correct the sentence and write it out completely. Capitalisation and the full stop are checked.',
       prompt: 'Ich schicke ab den Brief sofort.',
       acceptedAnswers: ['Ich schicke den Brief sofort ab.'],
       answerMode: 'normalized',
@@ -963,7 +1008,8 @@ export const chapter013: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['separable-verbs', 'word-order'],
-      instruction: 'Put the segments in the correct order to build a sentence with a correct verb bracket.',
+      instruction:
+        'Put the segments in the correct order to build a sentence with a correct verb bracket.',
       prompt: 'ich / muss / heute / früh / aufstehen',
       segments: [
         { id: 'ch13-ex43-s1', text: 'Ich' },
@@ -982,7 +1028,8 @@ export const chapter013: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['separable-verbs', 'word-order'],
-      instruction: 'Put the segments in the correct order to build a sentence with a correct verb bracket.',
+      instruction:
+        'Put the segments in the correct order to build a sentence with a correct verb bracket.',
       prompt: 'wir / kaufen / im Supermarkt / Obst / ein',
       segments: [
         { id: 'ch13-ex44-s1', text: 'Wir' },
@@ -1001,7 +1048,8 @@ export const chapter013: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['perfect-tense-preview', 'word-order'],
-      instruction: 'Put the segments in the correct order to build a sentence with a correct verb bracket.',
+      instruction:
+        'Put the segments in the correct order to build a sentence with a correct verb bracket.',
       prompt: 'sie / hat / das ganze Buch / gelesen',
       segments: [
         { id: 'ch13-ex45-s1', text: 'Sie' },
@@ -1019,7 +1067,8 @@ export const chapter013: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['perfect-tense-preview', 'word-order'],
-      instruction: 'Put the segments in the correct order to build a sentence with a correct verb bracket.',
+      instruction:
+        'Put the segments in the correct order to build a sentence with a correct verb bracket.',
       prompt: 'er / ist / letztes Jahr / nach Spanien / gefahren',
       segments: [
         { id: 'ch13-ex46-s1', text: 'Er' },
@@ -1038,7 +1087,8 @@ export const chapter013: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['modal-verbs', 'separable-verbs', 'word-order'],
-      instruction: 'Put the segments in the correct order to build a sentence with a correct verb bracket.',
+      instruction:
+        'Put the segments in the correct order to build a sentence with a correct verb bracket.',
       prompt: 'du / sollst / den Brief / sofort / abschicken',
       segments: [
         { id: 'ch13-ex47-s1', text: 'Du' },
@@ -1057,7 +1107,8 @@ export const chapter013: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['separable-verbs', 'word-order'],
-      instruction: 'Put the segments in the correct order to build a sentence with a correct verb bracket.',
+      instruction:
+        'Put the segments in the correct order to build a sentence with a correct verb bracket.',
       prompt: 'ich / lade / meine Freunde / am Samstag / ein',
       segments: [
         { id: 'ch13-ex48-s1', text: 'Ich' },
@@ -1076,7 +1127,8 @@ export const chapter013: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['modal-verbs', 'word-order'],
-      instruction: 'Put the segments in the correct order to build a sentence with a correct verb bracket.',
+      instruction:
+        'Put the segments in the correct order to build a sentence with a correct verb bracket.',
       prompt: 'wir / wollen / nächstes Jahr / nach Italien / reisen',
       segments: [
         { id: 'ch13-ex49-s1', text: 'Wir' },
@@ -1095,7 +1147,8 @@ export const chapter013: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'transfer',
       grammarFocus: ['modal-verbs', 'separable-verbs', 'word-order'],
-      instruction: 'Put the segments in the correct order to build a sentence with a correct verb bracket.',
+      instruction:
+        'Put the segments in the correct order to build a sentence with a correct verb bracket.',
       prompt: 'die Kinder / dürfen / heute Abend / nicht / fernsehen',
       segments: [
         { id: 'ch13-ex50-s1', text: 'Die Kinder' },
@@ -1114,7 +1167,8 @@ export const chapter013: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'transfer',
       grammarFocus: ['perfect-tense-preview', 'word-order'],
-      instruction: 'Put the segments in the correct order to build a sentence with a correct verb bracket.',
+      instruction:
+        'Put the segments in the correct order to build a sentence with a correct verb bracket.',
       prompt: 'ich / habe / gestern / meine Oma / besucht',
       segments: [
         { id: 'ch13-ex51-s1', text: 'Ich' },
@@ -1133,7 +1187,8 @@ export const chapter013: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'transfer',
       grammarFocus: ['separable-verbs', 'word-order'],
-      instruction: 'Put the segments in the correct order to build a sentence with a correct verb bracket.',
+      instruction:
+        'Put the segments in the correct order to build a sentence with a correct verb bracket.',
       prompt: 'er / schaltet / den Fernseher / vor dem Schlafen / aus',
       segments: [
         { id: 'ch13-ex52-s1', text: 'Er' },
@@ -1152,7 +1207,8 @@ export const chapter013: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['modal-verbs', 'verb-bracket'],
-      instruction: 'Fill in the finite verb and the infinitive that close the verb bracket.',
+      instruction:
+        'Fill in the finite verb and the infinitive that close the verb bracket.',
       prompt: 'Vervollständige den Satz: "Er ___ das Auto nicht ___." (reparieren)',
       templateParts: ['Er ', ' das Auto nicht ', '.'],
       slots: [
@@ -1170,7 +1226,8 @@ export const chapter013: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['separable-verbs', 'verb-bracket'],
-      instruction: 'Fill in the finite verb and the separable prefix that close the verb bracket.',
+      instruction:
+        'Fill in the finite verb and the separable prefix that close the verb bracket.',
       prompt: 'Vervollständige den Satz: "Sie ___ ihre Jacke ___." (anziehen)',
       templateParts: ['Sie ', ' ihre Jacke ', '.'],
       slots: [
@@ -1188,8 +1245,10 @@ export const chapter013: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['perfect-tense-preview', 'verb-bracket'],
-      instruction: 'Fill in the finite helper verb and the past participle that close the verb bracket.',
-      prompt: 'Vervollständige den Satz: "Wir ___ das ganze Wochenende ___." (arbeiten → gearbeitet)',
+      instruction:
+        'Fill in the finite helper verb and the past participle that close the verb bracket.',
+      prompt:
+        'Vervollständige den Satz: "Wir ___ das ganze Wochenende ___." (arbeiten → gearbeitet)',
       templateParts: ['Wir ', ' das ganze Wochenende ', '.'],
       slots: [
         { id: 'ch13-ex55-slot1', correctWord: 'haben' },
@@ -1206,8 +1265,10 @@ export const chapter013: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'production',
       grammarFocus: ['modal-verbs', 'separable-verbs', 'verb-bracket'],
-      instruction: 'Fill in the finite verb and the infinitive that close the verb bracket.',
-      prompt: 'Vervollständige den Satz: "Du ___ das Formular sofort ___." (unterschreiben)',
+      instruction:
+        'Fill in the finite verb and the infinitive that close the verb bracket.',
+      prompt:
+        'Vervollständige den Satz: "Du ___ das Formular sofort ___." (unterschreiben)',
       templateParts: ['Du ', ' das Formular sofort ', '.'],
       slots: [
         { id: 'ch13-ex56-slot1', correctWord: 'sollst' },
@@ -1224,7 +1285,8 @@ export const chapter013: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'production',
       grammarFocus: ['separable-verbs', 'verb-bracket'],
-      instruction: 'Fill in the finite verb and the separable prefix that close the verb bracket.',
+      instruction:
+        'Fill in the finite verb and the separable prefix that close the verb bracket.',
       prompt: 'Vervollständige den Satz: "Ich ___ das Fenster ___." (aufmachen)',
       templateParts: ['Ich ', ' das Fenster ', '.'],
       slots: [
@@ -1242,8 +1304,10 @@ export const chapter013: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'production',
       grammarFocus: ['perfect-tense-preview', 'verb-bracket'],
-      instruction: 'Fill in the finite helper verb and the past participle that close the verb bracket.',
-      prompt: 'Vervollständige den Satz: "Er ___ letzte Woche nach München ___." (fahren → gefahren)',
+      instruction:
+        'Fill in the finite helper verb and the past participle that close the verb bracket.',
+      prompt:
+        'Vervollständige den Satz: "Er ___ letzte Woche nach München ___." (fahren → gefahren)',
       templateParts: ['Er ', ' letzte Woche nach München ', '.'],
       slots: [
         { id: 'ch13-ex58-slot1', correctWord: 'ist' },

@@ -850,7 +850,8 @@ export const chapter005: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'form of dürfen',
       maxLength: 15,
-      explanation: 'ihr takes dürft; nicht sits inside the bracket, before the infinitive.',
+      explanation:
+        'ihr takes dürft; nicht sits inside the bracket, before the infinitive.',
     },
     {
       id: 'ch05-ex-37',
@@ -1038,7 +1039,8 @@ export const chapter005: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['modal-verbs', 'word-order', 'verb-bracket', 'muessen'],
       instruction: 'Drag the words into the correct order.',
-      prompt: 'Build a sentence: The children have to help their mother with the housework.',
+      prompt:
+        'Build a sentence: The children have to help their mother with the housework.',
       segments: [
         { id: 's1', text: 'Die Kinder' },
         { id: 's2', text: 'müssen' },
@@ -1227,7 +1229,11 @@ export const chapter005: ChapterDefinition = {
         { id: 'p1', left: 'You have the ability to do this.', right: 'können' },
         { id: 'p2', left: 'It is necessary and unavoidable.', right: 'müssen' },
         { id: 'p3', left: 'You have permission to do this.', right: 'dürfen' },
-        { id: 'p4', left: 'You want to do this out of personal desire.', right: 'wollen' },
+        {
+          id: 'p4',
+          left: 'You want to do this out of personal desire.',
+          right: 'wollen',
+        },
         { id: 'p5', left: 'Someone else told you to do this.', right: 'sollen' },
       ],
       explanation:
@@ -1239,9 +1245,16 @@ export const chapter005: ChapterDefinition = {
       order: 59,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['modal-verbs', 'conjugation', 'koennen', 'error-correction', 'questions'],
+      grammarFocus: [
+        'modal-verbs',
+        'conjugation',
+        'koennen',
+        'error-correction',
+        'questions',
+      ],
       instruction: 'Find the token with the mistake.',
-      prompt: 'Someone asks their teacher, Herr Klein, a formal question. Find the mistake.',
+      prompt:
+        'Someone asks their teacher, Herr Klein, a formal question. Find the mistake.',
       tokens: ['Herr', 'Klein,', 'könnt', 'Sie', 'mir', 'helfen?'],
       errorTokenIndex: 2,
       correction: 'können',

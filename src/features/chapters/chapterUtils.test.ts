@@ -12,7 +12,7 @@ import {
   sortedExercises,
   wordBankOrderFor,
 } from './chapterUtils';
-import { demoChapter } from '../../content/chapters/chapter-000-demo';
+import { demoChapter } from '../../test/fixtures/demoChapter';
 import { makeChapter, makeSingleChoice } from '../../test/fixtures/chapterFixture';
 import type {
   DragToSlotsExercise,

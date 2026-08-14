@@ -33,7 +33,9 @@ export async function renderWithRouter(
         loader,
         HydrateFallback: () => <div data-testid="route-loading" />,
       },
-      ...(path !== '*' ? [{ path: '*', element: <div data-testid="other-route" /> }] : []),
+      ...(path !== '*'
+        ? [{ path: '*', element: <div data-testid="other-route" /> }]
+        : []),
     ],
     { initialEntries: [route] },
   );

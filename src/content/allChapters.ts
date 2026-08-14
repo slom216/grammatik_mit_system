@@ -8,7 +8,7 @@ import type { ChapterDefinition } from '../schemas/chapterSchema';
  * `chapterLoader.loadChapter()` instead, and an eslint rule enforces it.
  */
 const modules = import.meta.glob<Record<string, ChapterDefinition>>(
-  ['./chapters/chapter-*.ts', '!./chapters/chapter-000-demo.ts'],
+  './chapters/chapter-*.ts',
   { eager: true },
 );
 

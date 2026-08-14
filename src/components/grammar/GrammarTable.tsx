@@ -14,7 +14,9 @@ const CASE_BADGE_LABELS: Record<CaseLabel, string> = {
 
 function CaseBadge({ caseLabel }: { caseLabel: CaseLabel }) {
   return (
-    <span className={`badge badge--case-${caseLabel}`}>{CASE_BADGE_LABELS[caseLabel]}</span>
+    <span className={`badge badge--case-${caseLabel}`}>
+      {CASE_BADGE_LABELS[caseLabel]}
+    </span>
   );
 }
 

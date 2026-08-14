@@ -74,7 +74,7 @@ export const chapter054: ChapterDefinition = {
       },
       {
         id: 'ch54-rule-06',
-        heading: 'Recognizing a verb\'s type',
+        heading: "Recognizing a verb's type",
         paragraphs: [
           'There is a useful shortcut for guessing whether an unfamiliar verb is weak, strong, or mixed: check its past participle from Chapter 28. A participle ending in -t (gemacht, gekauft) usually signals a weak simple past (machte, kaufte); a participle ending in -en (gegangen, gegessen) usually signals a strong simple past with no -te (ging, aß). Mixed verbs are the exception to watch for: their participle ends in -t like a weak verb (gehabt, gewusst, gebracht), but their simple past still changes the stem vowel (hatte, wusste, brachte).',
           'When in doubt, memorize new verbs the way dictionaries list them: as a fixed trio of infinitive – simple past – past participle (for example nehmen – nahm – genommen). This is exactly the information a dictionary entry for a strong or mixed verb gives you, and it is the most reliable way to be sure you have the right forms.',
@@ -85,7 +85,12 @@ export const chapter054: ChapterDefinition = {
       {
         id: 'ch54-table-01',
         title: 'Regular (weak) verbs: simple-past endings',
-        columns: ['Person', 'machen (regular)', 'arbeiten (extra -e-)', 'English (machen)'],
+        columns: [
+          'Person',
+          'machen (regular)',
+          'arbeiten (extra -e-)',
+          'English (machen)',
+        ],
         rows: [
           ['ich', 'machte', 'arbeitete', 'I did/made'],
           ['du', 'machtest', 'arbeitetest', 'you did/made'],
@@ -126,7 +131,7 @@ export const chapter054: ChapterDefinition = {
           ['ihr', 'gingt', 'last'],
           ['sie/Sie', 'gingen', 'lasen'],
         ],
-        note: 'lesen\'s past stem already ends in -s, so both the du- and ihr-endings contract to a single -t: du last, ihr last (not lasst, which is actually a present-tense form of the different verb lassen).',
+        note: "lesen's past stem already ends in -s, so both the du- and ihr-endings contract to a single -t: du last, ihr last (not lasst, which is actually a present-tense form of the different verb lassen).",
       },
       {
         id: 'ch54-table-04',
@@ -145,114 +150,137 @@ export const chapter054: ChapterDefinition = {
     examples: [
       {
         german: 'Es war einmal ein alter Mann. Er wohnte allein in einem kleinen Dorf.',
-        english: 'Once upon a time there was an old man. He lived alone in a small village.',
+        english:
+          'Once upon a time there was an old man. He lived alone in a small village.',
         highlight: ['wohnte'],
-        explanation: 'wohnte is the weak simple-past form of wohnen (stem + -te); fairy tales are a classic example of the narrative simple past.',
+        explanation:
+          'wohnte is the weak simple-past form of wohnen (stem + -te); fairy tales are a classic example of the narrative simple past.',
       },
       {
         german: 'Jeden Morgen ging er zum Fluss und sah die Vögel.',
         english: 'Every morning he went to the river and watched the birds.',
         highlight: ['ging', 'sah'],
-        explanation: 'ging (gehen) and sah (sehen) are both strong simple-past forms: changed stem, no -te.',
+        explanation:
+          'ging (gehen) and sah (sehen) are both strong simple-past forms: changed stem, no -te.',
       },
       {
         german: 'Ich machte gestern meine Hausaufgaben, bevor ich fernsah.',
         english: 'I did my homework yesterday before I watched TV.',
         highlight: ['machte'],
-        explanation: 'machte is the regular weak simple past of machen: stem mach- + -te.',
+        explanation:
+          'machte is the regular weak simple past of machen: stem mach- + -te.',
       },
       {
         german: 'Wir kamen spät nach Hause, weil der Zug Verspätung hatte.',
         english: 'We came home late because the train was delayed.',
         highlight: ['kamen', 'hatte'],
-        explanation: 'kamen (kommen, strong, wir-ending -en) and hatte (haben, mixed) combine freely in the same narrative sentence.',
+        explanation:
+          'kamen (kommen, strong, wir-ending -en) and hatte (haben, mixed) combine freely in the same narrative sentence.',
       },
       {
         german: 'Du gabst mir dein Buch zurück, bevor du wieder abfuhrst.',
         english: 'You gave me back your book before you left again.',
         highlight: ['gabst'],
-        explanation: 'geben is strong: du takes the ending -st on the changed stem gab-, giving gabst.',
+        explanation:
+          'geben is strong: du takes the ending -st on the changed stem gab-, giving gabst.',
       },
       {
         german: 'Sie aß gestern zu viel Schokolade und hatte danach Bauchschmerzen.',
         english: 'She ate too much chocolate yesterday and had a stomachache afterwards.',
         highlight: ['aß'],
-        explanation: 'essen is strong with a past stem ending in ß; sie (she) takes the plain stem with no ending: aß.',
+        explanation:
+          'essen is strong with a past stem ending in ß; sie (she) takes the plain stem with no ending: aß.',
       },
       {
         german: 'Wir tranken Kaffee, während sie einen langen Brief schrieb.',
         english: 'We drank coffee while she wrote a long letter.',
         highlight: ['tranken', 'schrieb'],
-        explanation: 'tranken (trinken, wir-ending -en) and schrieb (schreiben, er/sie-form) are both strong simple-past forms.',
+        explanation:
+          'tranken (trinken, wir-ending -en) and schrieb (schreiben, er/sie-form) are both strong simple-past forms.',
       },
       {
         german: 'Du last das ganze Buch in einer einzigen Nacht.',
         english: 'You read the whole book in a single night.',
         highlight: ['last'],
-        explanation: 'lesen has a past stem ending in -s, so the du-ending contracts to a single -t: last, not lesst or lasest.',
+        explanation:
+          'lesen has a past stem ending in -s, so the du-ending contracts to a single -t: last, not lesst or lasest.',
       },
       {
         german: 'Er sprach drei Sprachen fließend, aber er blieb trotzdem bescheiden.',
         english: 'He spoke three languages fluently, but he still remained modest.',
         highlight: ['sprach', 'blieb'],
-        explanation: 'sprach (sprechen) and blieb (bleiben) are both strong simple-past forms in the er-form: changed stem, no ending.',
+        explanation:
+          'sprach (sprechen) and blieb (bleiben) are both strong simple-past forms in the er-form: changed stem, no ending.',
       },
       {
         german: 'Wusstest du, dass sie früher in Berlin wohnte?',
         english: 'Did you know that she used to live in Berlin?',
         highlight: ['Wusstest', 'wohnte'],
-        explanation: 'Wusstest (wissen, mixed) opens the question in position 1; wohnte (wohnen, weak) appears in the subordinate clause.',
+        explanation:
+          'Wusstest (wissen, mixed) opens the question in position 1; wohnte (wohnen, weak) appears in the subordinate clause.',
       },
       {
-        german: 'Er brachte mir jeden Tag frisches Brot, weil er wusste, wie sehr ich es mochte.',
-        english: 'He brought me fresh bread every day because he knew how much I liked it.',
+        german:
+          'Er brachte mir jeden Tag frisches Brot, weil er wusste, wie sehr ich es mochte.',
+        english:
+          'He brought me fresh bread every day because he knew how much I liked it.',
         highlight: ['brachte', 'wusste', 'mochte'],
-        explanation: 'brachte (bringen), wusste (wissen), and mochte (mögen) are all mixed verbs: a weak -te ending combined with a changed stem.',
+        explanation:
+          'brachte (bringen), wusste (wissen), and mochte (mögen) are all mixed verbs: a weak -te ending combined with a changed stem.',
       },
       {
         german: 'Die Kinder liefen zum Spielplatz und trafen dort ihre Freunde.',
         english: 'The children ran to the playground and met their friends there.',
         highlight: ['liefen', 'trafen'],
-        explanation: 'liefen (laufen) and trafen (treffen) both take the plural ending -en on their strong past stem.',
+        explanation:
+          'liefen (laufen) and trafen (treffen) both take the plural ending -en on their strong past stem.',
       },
       {
         german: 'Ihr fuhrt letzten Sommer ans Meer und bliebt dort zwei Wochen.',
-        english: 'You (plural) drove to the sea last summer and stayed there for two weeks.',
+        english:
+          'You (plural) drove to the sea last summer and stayed there for two weeks.',
         highlight: ['fuhrt', 'bliebt'],
-        explanation: 'Both fahren and bleiben are strong; ihr takes the ending -t on the changed stem: fuhrt, bliebt.',
+        explanation:
+          'Both fahren and bleiben are strong; ihr takes the ending -t on the changed stem: fuhrt, bliebt.',
       },
       {
         german: 'Zuerst begann das Konzert leise, dann gewann die Musik an Kraft.',
         english: 'First the concert began quietly, then the music gained in intensity.',
         highlight: ['begann', 'gewann'],
-        explanation: 'begann (beginnen) and gewann (gewinnen) are strong verbs whose stem vowel changes from i to a in the simple past.',
+        explanation:
+          'begann (beginnen) and gewann (gewinnen) are strong verbs whose stem vowel changes from i to a in the simple past.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Er gehte gestern nach Hause.',
         correct: 'Er ging gestern nach Hause.',
-        explanation: 'gehen is a strong verb; it does not take the weak -te ending. Its simple-past stem is ging, used with no additional ending in the er-form.',
+        explanation:
+          'gehen is a strong verb; it does not take the weak -te ending. Its simple-past stem is ging, used with no additional ending in the er-form.',
       },
       {
         incorrect: 'Ich esste gestern einen Apfel.',
         correct: 'Ich aß gestern einen Apfel.',
-        explanation: 'essen is strong, not weak: the correct past stem is aß, not a regular -te form built on the present stem ess-.',
+        explanation:
+          'essen is strong, not weak: the correct past stem is aß, not a regular -te form built on the present stem ess-.',
       },
       {
         incorrect: 'Du lasst das Buch schnell.',
         correct: 'Du last das Buch schnell.',
-        explanation: 'lesen\'s past stem las already ends in -s, so du takes just -t (last), not the doubled -sst of lasst, which is actually a present-tense form of the different verb lassen.',
+        explanation:
+          "lesen's past stem las already ends in -s, so du takes just -t (last), not the doubled -sst of lasst, which is actually a present-tense form of the different verb lassen.",
       },
       {
         incorrect: 'Sie wisste die Antwort nicht.',
         correct: 'Sie wusste die Antwort nicht.',
-        explanation: 'wissen is a mixed verb: its past stem changes the vowel to u (wusst-), not i; the correct form is wusste, not wisste.',
+        explanation:
+          'wissen is a mixed verb: its past stem changes the vowel to u (wusst-), not i; the correct form is wusste, not wisste.',
       },
       {
         incorrect: 'Es war einmal eine Prinzessin. Sie hat in einem Schloss gewohnt.',
         correct: 'Es war einmal eine Prinzessin. Sie wohnte in einem Schloss.',
-        explanation: 'Written narration (fairy tales, stories) normally stays in the simple past throughout; switching to the present perfect (hat gewohnt) mid-story sounds inconsistent, even though the same sentence would sound natural in spoken conversation.',
+        explanation:
+          'Written narration (fairy tales, stories) normally stays in the simple past throughout; switching to the present perfect (hat gewohnt) mid-story sounds inconsistent, even though the same sentence would sound natural in spoken conversation.',
       },
     ],
     remember: [
@@ -261,7 +289,7 @@ export const chapter054: ChapterDefinition = {
       'Mixed verbs combine a changed stem with the weak -te ending: wissen → wusste, bringen → brachte, denken → dachte, kennen → kannte, nennen → nannte — the same pattern you already know from haben and the modal verbs.',
       'In strong and mixed verbs (and in sein/haben), the ich-form and the er/sie/es-form are always identical.',
       'The simple past is the normal tense for written narration (Erzähltempus) — stories, fairy tales, news reports — even though spoken conversation usually prefers the present perfect for most verbs other than sein, haben, and the modals.',
-      'A verb\'s past participle is a useful clue to its type: -t participles usually mean a weak simple past, -en participles usually mean a strong one — but mixed verbs (gehabt, gewusst, gebracht) look weak in the participle while still changing their stem in the simple past.',
+      "A verb's past participle is a useful clue to its type: -t participles usually mean a weak simple past, -en participles usually mean a strong one — but mixed verbs (gehabt, gewusst, gebracht) look weak in the participle while still changing their stem in the simple past.",
     ],
   },
   mastery: {
@@ -305,7 +333,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'd', text: 'gehte' },
       ],
       correctOptionId: 'b',
-      explanation: 'gehen is strong: the er-form uses the changed stem ging with no added ending.',
+      explanation:
+        'gehen is strong: the er-form uses the changed stem ging with no added ending.',
     },
     {
       id: 'ch54-ex-03',
@@ -323,7 +352,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'd', text: 'gekommen' },
       ],
       correctOptionId: 'c',
-      explanation: 'kommen is strong: wir adds -en to the changed stem kam-, giving kamen.',
+      explanation:
+        'kommen is strong: wir adds -en to the changed stem kam-, giving kamen.',
     },
     {
       id: 'ch54-ex-04',
@@ -341,7 +371,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'd', text: 'gesehen' },
       ],
       correctOptionId: 'b',
-      explanation: 'sehen is strong: the ich-form uses the changed stem sah with no added ending.',
+      explanation:
+        'sehen is strong: the ich-form uses the changed stem sah with no added ending.',
     },
     {
       id: 'ch54-ex-05',
@@ -376,7 +407,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'c', text: 'mixed' },
       ],
       correctOptionId: 'a',
-      explanation: 'machen adds -te to an unchanged stem with no vowel change: a weak verb.',
+      explanation:
+        'machen adds -te to an unchanged stem with no vowel change: a weak verb.',
     },
     {
       id: 'ch54-ex-07',
@@ -393,7 +425,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'c', text: 'mixed' },
       ],
       correctOptionId: 'b',
-      explanation: 'gehen changes its stem (geh- → ging-) and takes no -te: a strong verb.',
+      explanation:
+        'gehen changes its stem (geh- → ging-) and takes no -te: a strong verb.',
     },
     {
       id: 'ch54-ex-08',
@@ -410,7 +443,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'c', text: 'mixed' },
       ],
       correctOptionId: 'c',
-      explanation: 'wissen changes its stem vowel (i → u) but still takes the weak -te ending: a mixed verb.',
+      explanation:
+        'wissen changes its stem vowel (i → u) but still takes the weak -te ending: a mixed verb.',
     },
     {
       id: 'ch54-ex-09',
@@ -428,7 +462,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'd', text: 'genommen' },
       ],
       correctOptionId: 'b',
-      explanation: 'nehmen is strong: ihr adds -t to the changed stem nahm-, giving nahmt.',
+      explanation:
+        'nehmen is strong: ihr adds -t to the changed stem nahm-, giving nahmt.',
     },
     {
       id: 'ch54-ex-10',
@@ -446,7 +481,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'd', text: 'gefahren' },
       ],
       correctOptionId: 'c',
-      explanation: 'Eltern is plural (sie), so fahren takes the -en ending on the changed stem fuhr-: fuhren.',
+      explanation:
+        'Eltern is plural (sie), so fahren takes the -en ending on the changed stem fuhr-: fuhren.',
     },
     {
       id: 'ch54-ex-11',
@@ -464,7 +500,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'd', text: 'geblieben' },
       ],
       correctOptionId: 'b',
-      explanation: 'bleiben is strong: the er-form uses the changed stem blieb with no added ending.',
+      explanation:
+        'bleiben is strong: the er-form uses the changed stem blieb with no added ending.',
     },
     {
       id: 'ch54-ex-12',
@@ -482,7 +519,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'd', text: 'gegessen' },
       ],
       correctOptionId: 'b',
-      explanation: 'essen is strong: the ich-form uses the changed stem aß with no added ending.',
+      explanation:
+        'essen is strong: the ich-form uses the changed stem aß with no added ending.',
     },
     {
       id: 'ch54-ex-13',
@@ -500,7 +538,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'd', text: 'getrunken' },
       ],
       correctOptionId: 'c',
-      explanation: 'trinken is strong: wir adds -en to the changed stem trank-, giving tranken.',
+      explanation:
+        'trinken is strong: wir adds -en to the changed stem trank-, giving tranken.',
     },
     {
       id: 'ch54-ex-14',
@@ -509,7 +548,8 @@ export const chapter054: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['transformation', 'present-to-past', 'strong-verbs'],
-      instruction: 'Choose the correct simple-past version of the present-tense sentence.',
+      instruction:
+        'Choose the correct simple-past version of the present-tense sentence.',
       prompt: 'Präsens: Er liest jeden Abend ein Buch.',
       options: [
         { id: 'a', text: 'Er las jeden Abend ein Buch.' },
@@ -518,7 +558,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'd', text: 'Er lasst jeden Abend ein Buch.' },
       ],
       correctOptionId: 'a',
-      explanation: 'lesen is strong; the er-form in the simple past is las, with no added ending.',
+      explanation:
+        'lesen is strong; the er-form in the simple past is las, with no added ending.',
     },
     {
       id: 'ch54-ex-15',
@@ -527,7 +568,8 @@ export const chapter054: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['transformation', 'perfect-to-past', 'strong-verbs'],
-      instruction: 'Choose the correct simple-past version of the present-perfect sentence.',
+      instruction:
+        'Choose the correct simple-past version of the present-perfect sentence.',
       prompt: 'Perfekt: Sie hat einen Brief geschrieben.',
       options: [
         { id: 'a', text: 'Sie schreibt einen Brief.' },
@@ -536,7 +578,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'd', text: 'Sie schriebte einen Brief.' },
       ],
       correctOptionId: 'b',
-      explanation: 'schreiben is strong; the simple-past sie-form is schrieb, with no -te ending.',
+      explanation:
+        'schreiben is strong; the simple-past sie-form is schrieb, with no -te ending.',
     },
     {
       id: 'ch54-ex-16',
@@ -554,7 +597,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'd', text: 'gewohnt' },
       ],
       correctOptionId: 'b',
-      explanation: 'A story that opens with es war einmal continues in the simple past; wohnen is weak, so wohnte is correct.',
+      explanation:
+        'A story that opens with es war einmal continues in the simple past; wohnen is weak, so wohnte is correct.',
     },
     {
       id: 'ch54-ex-17',
@@ -569,7 +613,8 @@ export const chapter054: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'schrieb ...',
       maxLength: 15,
-      explanation: 'schreiben is strong: the ich-form uses the changed stem schrieb with no added ending.',
+      explanation:
+        'schreiben is strong: the ich-form uses the changed stem schrieb with no added ending.',
     },
     {
       id: 'ch54-ex-18',
@@ -584,7 +629,8 @@ export const chapter054: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'sprachst ...',
       maxLength: 15,
-      explanation: 'sprechen is strong: du adds -st to the changed stem sprach-, giving sprachst.',
+      explanation:
+        'sprechen is strong: du adds -st to the changed stem sprach-, giving sprachst.',
     },
     {
       id: 'ch54-ex-19',
@@ -599,7 +645,8 @@ export const chapter054: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'fanden ...',
       maxLength: 15,
-      explanation: 'finden is strong: wir adds -en to the changed stem fand-, giving fanden.',
+      explanation:
+        'finden is strong: wir adds -en to the changed stem fand-, giving fanden.',
     },
     {
       id: 'ch54-ex-20',
@@ -614,7 +661,8 @@ export const chapter054: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'trugt ...',
       maxLength: 15,
-      explanation: 'tragen is strong: ihr adds -t to the changed stem trug-, giving trugt.',
+      explanation:
+        'tragen is strong: ihr adds -t to the changed stem trug-, giving trugt.',
     },
     {
       id: 'ch54-ex-21',
@@ -629,7 +677,8 @@ export const chapter054: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'zogen ...',
       maxLength: 15,
-      explanation: 'ziehen is strong: sie (plural) adds -en to the changed stem zog-, giving zogen.',
+      explanation:
+        'ziehen is strong: sie (plural) adds -en to the changed stem zog-, giving zogen.',
     },
     {
       id: 'ch54-ex-22',
@@ -644,7 +693,8 @@ export const chapter054: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'hießt ...',
       maxLength: 15,
-      explanation: 'heißen\'s stem ends in -ß, so du takes just -t on the changed stem hieß-, giving hießt.',
+      explanation:
+        "heißen's stem ends in -ß, so du takes just -t on the changed stem hieß-, giving hießt.",
     },
     {
       id: 'ch54-ex-23',
@@ -659,7 +709,8 @@ export const chapter054: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'rief ...',
       maxLength: 15,
-      explanation: 'rufen is strong: the er-form uses the changed stem rief with no added ending.',
+      explanation:
+        'rufen is strong: the er-form uses the changed stem rief with no added ending.',
     },
     {
       id: 'ch54-ex-24',
@@ -674,7 +725,8 @@ export const chapter054: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'wusch ...',
       maxLength: 15,
-      explanation: 'waschen is strong: the ich-form uses the changed stem wusch with no added ending.',
+      explanation:
+        'waschen is strong: the ich-form uses the changed stem wusch with no added ending.',
     },
     {
       id: 'ch54-ex-25',
@@ -689,7 +741,8 @@ export const chapter054: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'trafen ...',
       maxLength: 15,
-      explanation: 'treffen is strong: wir adds -en to the changed stem traf-, giving trafen.',
+      explanation:
+        'treffen is strong: wir adds -en to the changed stem traf-, giving trafen.',
     },
     {
       id: 'ch54-ex-26',
@@ -704,7 +757,8 @@ export const chapter054: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'begann ...',
       maxLength: 15,
-      explanation: 'beginnen is strong: the er-form uses the changed stem begann with no added ending.',
+      explanation:
+        'beginnen is strong: the er-form uses the changed stem begann with no added ending.',
     },
     {
       id: 'ch54-ex-27',
@@ -713,13 +767,15 @@ export const chapter054: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['mixed-verbs', 'simple-past', 'sentence-completion'],
-      instruction: 'Complete the sentence with the correct simple-past form. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct simple-past form. Capitalisation is not checked.',
       prompt: 'Ich ___ die Antwort nicht. (wissen)',
       acceptedAnswers: ['wusste'],
       answerMode: 'caseInsensitive',
       placeholder: 'wusste',
       maxLength: 15,
-      explanation: 'wissen is mixed: the changed stem wusst- takes the weak ending -e, giving wusste.',
+      explanation:
+        'wissen is mixed: the changed stem wusst- takes the weak ending -e, giving wusste.',
     },
     {
       id: 'ch54-ex-28',
@@ -728,13 +784,15 @@ export const chapter054: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['mixed-verbs', 'simple-past', 'sentence-completion'],
-      instruction: 'Complete the sentence with the correct simple-past form. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct simple-past form. Capitalisation is not checked.',
       prompt: 'Er ___ den Kuchen mit. (bringen)',
       acceptedAnswers: ['brachte'],
       answerMode: 'caseInsensitive',
       placeholder: 'brachte',
       maxLength: 15,
-      explanation: 'bringen is mixed: the changed stem bracht- takes the weak ending -e, giving brachte.',
+      explanation:
+        'bringen is mixed: the changed stem bracht- takes the weak ending -e, giving brachte.',
     },
     {
       id: 'ch54-ex-29',
@@ -743,13 +801,15 @@ export const chapter054: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['transformation', 'present-to-past', 'strong-verbs'],
-      instruction: 'Rewrite the sentence in the simple past. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Rewrite the sentence in the simple past. Capitalisation is checked; no full stop is required.',
       prompt: 'Präsens: Ich nehme den Bus.',
       acceptedAnswers: ['Ich nahm den Bus.', 'Ich nahm den Bus'],
       answerMode: 'normalized',
       placeholder: 'Ich nahm ...',
       maxLength: 40,
-      explanation: 'nehmen is strong; the ich-form in the simple past is nahm, with no added ending: Ich nahm den Bus.',
+      explanation:
+        'nehmen is strong; the ich-form in the simple past is nahm, with no added ending: Ich nahm den Bus.',
     },
     {
       id: 'ch54-ex-30',
@@ -758,13 +818,15 @@ export const chapter054: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['transformation', 'perfect-to-past', 'strong-verbs'],
-      instruction: 'Rewrite the sentence in the simple past. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Rewrite the sentence in the simple past. Capitalisation is checked; no full stop is required.',
       prompt: 'Perfekt: Wir haben Kaffee getrunken.',
       acceptedAnswers: ['Wir tranken Kaffee.', 'Wir tranken Kaffee'],
       answerMode: 'normalized',
       placeholder: 'Wir tranken ...',
       maxLength: 40,
-      explanation: 'trinken is strong; wir takes the ending -en on the changed stem trank-: Wir tranken Kaffee.',
+      explanation:
+        'trinken is strong; wir takes the ending -en on the changed stem trank-: Wir tranken Kaffee.',
     },
     {
       id: 'ch54-ex-31',
@@ -827,13 +889,15 @@ export const chapter054: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['strong-verbs', 'error-correction'],
-      instruction: 'This sentence has a spelling error. Write the corrected sentence. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'This sentence has a spelling error. Write the corrected sentence. Capitalisation is checked; no full stop is required.',
       prompt: 'Fehler: Er gehte nach Hause.',
       acceptedAnswers: ['Er ging nach Hause.', 'Er ging nach Hause'],
       answerMode: 'normalized',
       placeholder: 'Er ging ...',
       maxLength: 40,
-      explanation: 'gehen is strong and does not take -te; the correct simple-past er-form is ging: Er ging nach Hause.',
+      explanation:
+        'gehen is strong and does not take -te; the correct simple-past er-form is ging: Er ging nach Hause.',
     },
     {
       id: 'ch54-ex-35',
@@ -887,7 +951,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'd', text: 'geschwommen' },
       ],
       correctOptionId: 'b',
-      explanation: 'schwimmen is strong: the sie-form uses the changed stem schwamm with no added ending.',
+      explanation:
+        'schwimmen is strong: the sie-form uses the changed stem schwamm with no added ending.',
     },
     {
       id: 'ch54-ex-38',
@@ -905,7 +970,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'd', text: 'geholfen' },
       ],
       correctOptionId: 'b',
-      explanation: 'helfen is strong: the ich-form uses the changed stem half with no added ending.',
+      explanation:
+        'helfen is strong: the ich-form uses the changed stem half with no added ending.',
     },
     {
       id: 'ch54-ex-39',
@@ -923,7 +989,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'd', text: 'geflogen' },
       ],
       correctOptionId: 'b',
-      explanation: 'fliegen is strong: the er/es-form uses the changed stem flog with no added ending.',
+      explanation:
+        'fliegen is strong: the er/es-form uses the changed stem flog with no added ending.',
     },
     {
       id: 'ch54-ex-40',
@@ -941,7 +1008,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'd', text: 'geschlafen' },
       ],
       correctOptionId: 'c',
-      explanation: 'Die Kinder is plural (sie), so schlafen takes -en on the changed stem schlief-, giving schliefen.',
+      explanation:
+        'Die Kinder is plural (sie), so schlafen takes -en on the changed stem schlief-, giving schliefen.',
     },
     {
       id: 'ch54-ex-41',
@@ -959,7 +1027,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'd', text: 'gefallen' },
       ],
       correctOptionId: 'b',
-      explanation: 'fallen is strong: the es-form uses the changed stem fiel with no added ending.',
+      explanation:
+        'fallen is strong: the es-form uses the changed stem fiel with no added ending.',
     },
     {
       id: 'ch54-ex-42',
@@ -976,7 +1045,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'c', text: 'mixed' },
       ],
       correctOptionId: 'c',
-      explanation: 'werden changes its stem vowel (e → u) but still takes the weak -e ending: a mixed verb.',
+      explanation:
+        'werden changes its stem vowel (e → u) but still takes the weak -e ending: a mixed verb.',
     },
     {
       id: 'ch54-ex-43',
@@ -993,7 +1063,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'c', text: 'mixed' },
       ],
       correctOptionId: 'a',
-      explanation: 'kaufen adds -te to an unchanged stem with no vowel change: a weak verb.',
+      explanation:
+        'kaufen adds -te to an unchanged stem with no vowel change: a weak verb.',
     },
     {
       id: 'ch54-ex-44',
@@ -1010,7 +1081,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'c', text: 'mixed' },
       ],
       correctOptionId: 'b',
-      explanation: 'schwimmen changes its stem vowel (i → a) and takes no -te: a strong verb.',
+      explanation:
+        'schwimmen changes its stem vowel (i → a) and takes no -te: a strong verb.',
     },
     {
       id: 'ch54-ex-45',
@@ -1019,7 +1091,8 @@ export const chapter054: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['transformation', 'present-to-past', 'strong-verbs'],
-      instruction: 'Choose the correct simple-past version of the present-tense sentence.',
+      instruction:
+        'Choose the correct simple-past version of the present-tense sentence.',
       prompt: 'Präsens: Sie hilft ihrer Mutter.',
       options: [
         { id: 'a', text: 'Sie hilft ihrer Mutter.' },
@@ -1028,7 +1101,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'd', text: 'Sie helfte ihrer Mutter.' },
       ],
       correctOptionId: 'b',
-      explanation: 'helfen is strong; the sie-form in the simple past is half, with no added ending.',
+      explanation:
+        'helfen is strong; the sie-form in the simple past is half, with no added ending.',
     },
     {
       id: 'ch54-ex-46',
@@ -1037,7 +1111,8 @@ export const chapter054: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['transformation', 'perfect-to-past', 'weak-verbs'],
-      instruction: 'Choose the correct simple-past version of the present-perfect sentence.',
+      instruction:
+        'Choose the correct simple-past version of the present-perfect sentence.',
       prompt: 'Perfekt: Er hat das Fenster geöffnet.',
       options: [
         { id: 'a', text: 'Er öffnet das Fenster.' },
@@ -1046,7 +1121,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'd', text: 'Er hat das Fenster öffnete.' },
       ],
       correctOptionId: 'c',
-      explanation: 'öffnen is weak with a stem ending in -n, so it takes the linking -e- before -te: öffnete.',
+      explanation:
+        'öffnen is weak with a stem ending in -n, so it takes the linking -e- before -te: öffnete.',
     },
     {
       id: 'ch54-ex-47',
@@ -1064,7 +1140,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'd', text: 'geweint' },
       ],
       correctOptionId: 'b',
-      explanation: 'weinen is weak, so the simple-past sie-form adds -te to the stem: weinte.',
+      explanation:
+        'weinen is weak, so the simple-past sie-form adds -te to the stem: weinte.',
     },
     {
       id: 'ch54-ex-48',
@@ -1079,7 +1156,8 @@ export const chapter054: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'sang ...',
       maxLength: 15,
-      explanation: 'singen is strong: the ich-form uses the changed stem sang with no added ending.',
+      explanation:
+        'singen is strong: the ich-form uses the changed stem sang with no added ending.',
     },
     {
       id: 'ch54-ex-49',
@@ -1094,7 +1172,8 @@ export const chapter054: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'warfst ...',
       maxLength: 15,
-      explanation: 'werfen is strong: du adds -st to the changed stem warf-, giving warfst.',
+      explanation:
+        'werfen is strong: du adds -st to the changed stem warf-, giving warfst.',
     },
     {
       id: 'ch54-ex-50',
@@ -1109,7 +1188,8 @@ export const chapter054: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'flogen ...',
       maxLength: 15,
-      explanation: 'fliegen is strong: wir adds -en to the changed stem flog-, giving flogen.',
+      explanation:
+        'fliegen is strong: wir adds -en to the changed stem flog-, giving flogen.',
     },
     {
       id: 'ch54-ex-51',
@@ -1124,7 +1204,8 @@ export const chapter054: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'sangt ...',
       maxLength: 15,
-      explanation: 'singen is strong: ihr adds -t to the changed stem sang-, giving sangt.',
+      explanation:
+        'singen is strong: ihr adds -t to the changed stem sang-, giving sangt.',
     },
     {
       id: 'ch54-ex-52',
@@ -1139,7 +1220,8 @@ export const chapter054: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'schwammen ...',
       maxLength: 15,
-      explanation: 'schwimmen is strong: sie (plural) adds -en to the changed stem schwamm-, giving schwammen.',
+      explanation:
+        'schwimmen is strong: sie (plural) adds -en to the changed stem schwamm-, giving schwammen.',
     },
     {
       id: 'ch54-ex-53',
@@ -1154,7 +1236,8 @@ export const chapter054: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'fiel ...',
       maxLength: 15,
-      explanation: 'fallen is strong: the er-form uses the changed stem fiel with no added ending.',
+      explanation:
+        'fallen is strong: the er-form uses the changed stem fiel with no added ending.',
     },
     {
       id: 'ch54-ex-54',
@@ -1163,13 +1246,15 @@ export const chapter054: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['mixed-verbs', 'simple-past', 'sentence-completion'],
-      instruction: 'Complete the sentence with the correct simple-past form. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct simple-past form. Capitalisation is not checked.',
       prompt: 'Sie ___ ihre Nachbarin gut. (kennen)',
       acceptedAnswers: ['kannte'],
       answerMode: 'caseInsensitive',
       placeholder: 'kannte',
       maxLength: 15,
-      explanation: 'kennen is mixed: the changed stem kannt- takes the weak ending -e, giving kannte.',
+      explanation:
+        'kennen is mixed: the changed stem kannt- takes the weak ending -e, giving kannte.',
     },
     {
       id: 'ch54-ex-55',
@@ -1178,13 +1263,15 @@ export const chapter054: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['mixed-verbs', 'simple-past', 'sentence-completion'],
-      instruction: 'Complete the sentence with the correct simple-past form. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct simple-past form. Capitalisation is not checked.',
       prompt: 'Das Feuer ___ die ganze Nacht. (brennen)',
       acceptedAnswers: ['brannte'],
       answerMode: 'caseInsensitive',
       placeholder: 'brannte',
       maxLength: 15,
-      explanation: 'brennen is mixed: the changed stem brannt- takes the weak ending -e, giving brannte.',
+      explanation:
+        'brennen is mixed: the changed stem brannt- takes the weak ending -e, giving brannte.',
     },
     {
       id: 'ch54-ex-56',
@@ -1193,13 +1280,15 @@ export const chapter054: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['transformation', 'present-to-past', 'strong-verbs'],
-      instruction: 'Rewrite the sentence in the simple past. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Rewrite the sentence in the simple past. Capitalisation is checked; no full stop is required.',
       prompt: 'Präsens: Ich helfe meiner Schwester.',
       acceptedAnswers: ['Ich half meiner Schwester.', 'Ich half meiner Schwester'],
       answerMode: 'normalized',
       placeholder: 'Ich half ...',
       maxLength: 40,
-      explanation: 'helfen is strong; the ich-form in the simple past is half, with no added ending: Ich half meiner Schwester.',
+      explanation:
+        'helfen is strong; the ich-form in the simple past is half, with no added ending: Ich half meiner Schwester.',
     },
     {
       id: 'ch54-ex-57',
@@ -1208,13 +1297,15 @@ export const chapter054: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['transformation', 'perfect-to-past', 'strong-verbs'],
-      instruction: 'Rewrite the sentence in the simple past. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Rewrite the sentence in the simple past. Capitalisation is checked; no full stop is required.',
       prompt: 'Perfekt: Wir sind ins Kino gegangen.',
       acceptedAnswers: ['Wir gingen ins Kino.', 'Wir gingen ins Kino'],
       answerMode: 'normalized',
       placeholder: 'Wir gingen ...',
       maxLength: 40,
-      explanation: 'gehen is strong; wir takes the ending -en on the changed stem ging-: Wir gingen ins Kino.',
+      explanation:
+        'gehen is strong; wir takes the ending -en on the changed stem ging-: Wir gingen ins Kino.',
     },
     {
       id: 'ch54-ex-58',
@@ -1264,7 +1355,8 @@ export const chapter054: ChapterDefinition = {
       templateParts: ['Er ', ' das Fenster.'],
       slots: [{ id: 's1', correctWord: 'öffnete' }],
       wordBank: ['öffnete', 'öffnet', 'öffnetete', 'geöffnet'],
-      explanation: 'öffnen is weak with a stem ending in -n, so a linking -e- is inserted before -te: öffnete.',
+      explanation:
+        'öffnen is weak with a stem ending in -n, so a linking -e- is inserted before -te: öffnete.',
     },
     {
       id: 'ch54-ex-61',
@@ -1278,7 +1370,8 @@ export const chapter054: ChapterDefinition = {
       templateParts: ['Wir ', ' im Meer.'],
       slots: [{ id: 's1', correctWord: 'schwammen' }],
       wordBank: ['schwammen', 'schwimmen', 'schwammt', 'geschwommen'],
-      explanation: 'schwimmen is strong: wir adds -en to the changed stem schwamm-, giving schwammen.',
+      explanation:
+        'schwimmen is strong: wir adds -en to the changed stem schwamm-, giving schwammen.',
     },
     {
       id: 'ch54-ex-62',
@@ -1306,7 +1399,8 @@ export const chapter054: ChapterDefinition = {
       templateParts: ['Ich ', ' letzte Nacht sehr gut.'],
       slots: [{ id: 's1', correctWord: 'schlief' }],
       wordBank: ['schlief', 'schlafte', 'schlafe', 'geschlafen'],
-      explanation: 'schlafen is strong: the ich-form uses the changed stem schlief with no added ending.',
+      explanation:
+        'schlafen is strong: the ich-form uses the changed stem schlief with no added ending.',
     },
     {
       id: 'ch54-ex-64',
@@ -1320,7 +1414,8 @@ export const chapter054: ChapterDefinition = {
       templateParts: ['Die Kinder ', ' im Garten.'],
       slots: [{ id: 's1', correctWord: 'spielten' }],
       wordBank: ['spielten', 'spielen', 'spielte', 'gespielt'],
-      explanation: 'spielen is weak: die Kinder (sie) adds -ten to the stem, giving spielten.',
+      explanation:
+        'spielen is weak: die Kinder (sie) adds -ten to the stem, giving spielten.',
     },
     {
       id: 'ch54-ex-65',
@@ -1334,7 +1429,8 @@ export const chapter054: ChapterDefinition = {
       templateParts: ['Er ', ' das schwere Paket.'],
       slots: [{ id: 's1', correctWord: 'trug' }],
       wordBank: ['trug', 'tragte', 'trägt', 'getragen'],
-      explanation: 'tragen is strong: the er-form uses the changed stem trug with no added ending.',
+      explanation:
+        'tragen is strong: the er-form uses the changed stem trug with no added ending.',
     },
     {
       id: 'ch54-ex-66',
@@ -1348,7 +1444,8 @@ export const chapter054: ChapterDefinition = {
       templateParts: ['Ihr ', ' zu laut.'],
       slots: [{ id: 's1', correctWord: 'sangt' }],
       wordBank: ['sangt', 'singt', 'sanget', 'gesungen'],
-      explanation: 'singen is strong: ihr adds -t to the changed stem sang-, giving sangt.',
+      explanation:
+        'singen is strong: ihr adds -t to the changed stem sang-, giving sangt.',
     },
     {
       id: 'ch54-ex-67',
@@ -1362,7 +1459,8 @@ export const chapter054: ChapterDefinition = {
       templateParts: ['Wir ', ' lange auf den Bus.'],
       slots: [{ id: 's1', correctWord: 'warteten' }],
       wordBank: ['warteten', 'warten', 'wartten', 'gewartet'],
-      explanation: 'warten is weak with a stem ending in -t, so a linking -e- is inserted before -ten: warteten.',
+      explanation:
+        'warten is weak with a stem ending in -t, so a linking -e- is inserted before -ten: warteten.',
     },
     {
       id: 'ch54-ex-68',
@@ -1376,7 +1474,8 @@ export const chapter054: ChapterDefinition = {
       templateParts: ['Sie ', ' den Ball ins Tor.'],
       slots: [{ id: 's1', correctWord: 'warf' }],
       wordBank: ['warf', 'werfte', 'wirft', 'geworfen'],
-      explanation: 'werfen is strong: the sie-form uses the changed stem warf with no added ending.',
+      explanation:
+        'werfen is strong: the sie-form uses the changed stem warf with no added ending.',
     },
     {
       id: 'ch54-ex-69',
@@ -1390,7 +1489,8 @@ export const chapter054: ChapterDefinition = {
       templateParts: ['Ich ', ' meine Schlüssel im Auto.'],
       slots: [{ id: 's1', correctWord: 'fand' }],
       wordBank: ['fand', 'findte', 'finde', 'gefunden'],
-      explanation: 'finden is strong: the ich-form uses the changed stem fand with no added ending.',
+      explanation:
+        'finden is strong: the ich-form uses the changed stem fand with no added ending.',
     },
     {
       id: 'ch54-ex-70',
@@ -1404,7 +1504,8 @@ export const chapter054: ChapterDefinition = {
       templateParts: ['Du ', ' deinen Bruder am Bahnhof.'],
       slots: [{ id: 's1', correctWord: 'trafst' }],
       wordBank: ['trafst', 'triffst', 'treffte', 'getroffen'],
-      explanation: 'treffen is strong: du adds -st to the changed stem traf-, giving trafst.',
+      explanation:
+        'treffen is strong: du adds -st to the changed stem traf-, giving trafst.',
     },
     {
       id: 'ch54-ex-71',
@@ -1421,7 +1522,8 @@ export const chapter054: ChapterDefinition = {
         { id: 's2', correctWord: 'aß' },
       ],
       wordBank: ['kam', 'aß', 'kommt', 'isst', 'gekommen'],
-      explanation: 'kommen (kam) and essen (aß) are both strong: er uses the changed stem with no added ending for either verb.',
+      explanation:
+        'kommen (kam) and essen (aß) are both strong: er uses the changed stem with no added ending for either verb.',
     },
     {
       id: 'ch54-ex-72',
@@ -1440,7 +1542,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'p5', left: 'nehmen', right: 'nahm' },
         { id: 'p6', left: 'fahren', right: 'fuhr' },
       ],
-      explanation: 'Each strong verb has its own unpredictable past stem: ging, kam, sah, gab, nahm, fuhr.',
+      explanation:
+        'Each strong verb has its own unpredictable past stem: ging, kam, sah, gab, nahm, fuhr.',
     },
     {
       id: 'ch54-ex-73',
@@ -1459,7 +1562,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'p5', left: 'bleiben', right: 'blieb' },
         { id: 'p6', left: 'schreiben', right: 'schrieb' },
       ],
-      explanation: 'Each strong verb has its own unpredictable past stem: aß, trank, las, sprach, blieb, schrieb.',
+      explanation:
+        'Each strong verb has its own unpredictable past stem: aß, trank, las, sprach, blieb, schrieb.',
     },
     {
       id: 'ch54-ex-74',
@@ -1478,7 +1582,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'p5', left: 'kennen', right: 'kannte' },
         { id: 'p6', left: 'nennen', right: 'nannte' },
       ],
-      explanation: 'Mixed verbs change their stem vowel but still add the weak -te ending: hatte, wusste, brachte, dachte, kannte, nannte.',
+      explanation:
+        'Mixed verbs change their stem vowel but still add the weak -te ending: hatte, wusste, brachte, dachte, kannte, nannte.',
     },
     {
       id: 'ch54-ex-75',
@@ -1497,7 +1602,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'p5', left: 'helfen', right: 'half' },
         { id: 'p6', left: 'fallen', right: 'fiel' },
       ],
-      explanation: 'Each strong verb has its own unpredictable past stem: sang, schwamm, flog, warf, half, fiel.',
+      explanation:
+        'Each strong verb has its own unpredictable past stem: sang, schwamm, flog, warf, half, fiel.',
     },
     {
       id: 'ch54-ex-76',
@@ -1535,7 +1641,8 @@ export const chapter054: ChapterDefinition = {
         { id: 'p5', left: 'ziehen', right: 'zog' },
         { id: 'p6', left: 'rufen', right: 'rief' },
       ],
-      explanation: 'Each strong verb has its own unpredictable past stem: lief, traf, begann, gewann, zog, rief.',
+      explanation:
+        'Each strong verb has its own unpredictable past stem: lief, traf, begann, gewann, zog, rief.',
     },
     {
       id: 'ch54-ex-78',
@@ -1563,7 +1670,8 @@ export const chapter054: ChapterDefinition = {
       tokens: ['Ich', 'esste', 'einen', 'Apfel.'],
       errorTokenIndex: 1,
       correction: 'aß',
-      explanation: 'essen is strong, not weak; the correct past stem is aß, not a regular -te form built on ess-.',
+      explanation:
+        'essen is strong, not weak; the correct past stem is aß, not a regular -te form built on ess-.',
     },
     {
       id: 'ch54-ex-80',
@@ -1577,7 +1685,8 @@ export const chapter054: ChapterDefinition = {
       tokens: ['Du', 'lasst', 'das', 'Buch', 'schnell.'],
       errorTokenIndex: 1,
       correction: 'last',
-      explanation: 'lesen\'s past stem las already ends in -s, so du takes just -t: last, not the doubled lasst.',
+      explanation:
+        "lesen's past stem las already ends in -s, so du takes just -t: last, not the doubled lasst.",
     },
     {
       id: 'ch54-ex-81',
@@ -1591,7 +1700,8 @@ export const chapter054: ChapterDefinition = {
       tokens: ['Sie', 'wisste', 'die', 'Antwort', 'nicht.'],
       errorTokenIndex: 1,
       correction: 'wusste',
-      explanation: 'wissen is mixed and changes its stem vowel to u, not i; the correct form is wusste.',
+      explanation:
+        'wissen is mixed and changes its stem vowel to u, not i; the correct form is wusste.',
     },
     {
       id: 'ch54-ex-82',
@@ -1605,7 +1715,8 @@ export const chapter054: ChapterDefinition = {
       tokens: ['Wir', 'schwimmten', 'im', 'See.'],
       errorTokenIndex: 1,
       correction: 'schwammen',
-      explanation: 'schwimmen is strong and does not take -te; the correct wir-form is schwammen.',
+      explanation:
+        'schwimmen is strong and does not take -te; the correct wir-form is schwammen.',
     },
     {
       id: 'ch54-ex-83',
@@ -1619,7 +1730,8 @@ export const chapter054: ChapterDefinition = {
       tokens: ['Er', 'bringte', 'mir', 'Blumen.'],
       errorTokenIndex: 1,
       correction: 'brachte',
-      explanation: 'bringen is mixed: its stem vowel changes to a, giving brachte, not a regular bringte.',
+      explanation:
+        'bringen is mixed: its stem vowel changes to a, giving brachte, not a regular bringte.',
     },
     {
       id: 'ch54-ex-84',
@@ -1633,7 +1745,8 @@ export const chapter054: ChapterDefinition = {
       tokens: ['Ich', 'singte', 'ein', 'Lied.'],
       errorTokenIndex: 1,
       correction: 'sang',
-      explanation: 'singen is strong and does not take -te; the correct ich-form is sang.',
+      explanation:
+        'singen is strong and does not take -te; the correct ich-form is sang.',
     },
     {
       id: 'ch54-ex-85',
@@ -1647,7 +1760,8 @@ export const chapter054: ChapterDefinition = {
       tokens: ['Die', 'Kinder', 'schlaften', 'die', 'ganze', 'Nacht.'],
       errorTokenIndex: 2,
       correction: 'schliefen',
-      explanation: 'schlafen is strong and does not take -te; the correct plural form is schliefen.',
+      explanation:
+        'schlafen is strong and does not take -te; the correct plural form is schliefen.',
     },
   ],
 };

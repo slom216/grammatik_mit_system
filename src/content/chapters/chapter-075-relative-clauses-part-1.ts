@@ -26,7 +26,7 @@ export const chapter075: ChapterDefinition = {
   explanation: {
     introduction: [
       'A relative clause adds extra information about a noun by attaching a subordinate clause directly after it: Der Mann, der dort steht, ist mein Nachbar (The man who is standing there is my neighbor). The word that opens this clause, der, is a relative pronoun, and choosing the right one always means answering two completely separate questions.',
-      'The first question is about gender and number: which noun does the pronoun refer back to — its antecedent — and is that noun masculine, feminine, neuter, or plural? The second question is about case: what job does the pronoun itself do inside its own relative clause — is it the subject, or is it the direct object of the clause\'s verb? These two questions have two independent answers. Gender and number always come from the antecedent; case always comes from the pronoun\'s own role inside the relative clause, no matter what case the antecedent happens to have back in the main clause.',
+      "The first question is about gender and number: which noun does the pronoun refer back to — its antecedent — and is that noun masculine, feminine, neuter, or plural? The second question is about case: what job does the pronoun itself do inside its own relative clause — is it the subject, or is it the direct object of the clause's verb? These two questions have two independent answers. Gender and number always come from the antecedent; case always comes from the pronoun's own role inside the relative clause, no matter what case the antecedent happens to have back in the main clause.",
       'This chapter covers only the nominative and accusative relative pronouns — the forms needed when the pronoun is the subject or the direct object of the relative clause. In these two cases, the relative pronoun is identical to the definite article you already know: der, die, das, die for the subject (nominative), and den, die, das, die for the direct object (accusative). Only the masculine singular changes its shape (der becomes den); feminine, neuter, and plural look the same in both cases, so telling them apart means checking what the pronoun actually does in its clause, not just what it looks like.',
     ],
     rules: [
@@ -34,7 +34,7 @@ export const chapter075: ChapterDefinition = {
         id: 'ch75-rule-01',
         heading: 'Two independent questions: gender/number and case',
         paragraphs: [
-          'Every relative pronoun answers two separate questions, and keeping them apart is the key skill of this chapter. First: what gender and number does the pronoun have? That is decided entirely by the antecedent — the noun immediately before the relative clause that the pronoun refers back to. Second: what case does the pronoun have? That is decided entirely by the pronoun\'s own grammatical role inside the relative clause itself.',
+          "Every relative pronoun answers two separate questions, and keeping them apart is the key skill of this chapter. First: what gender and number does the pronoun have? That is decided entirely by the antecedent — the noun immediately before the relative clause that the pronoun refers back to. Second: what case does the pronoun have? That is decided entirely by the pronoun's own grammatical role inside the relative clause itself.",
           'These two decisions never influence each other. The antecedent can be in any case in the main clause (subject, object, whatever) — that case is irrelevant to the relative pronoun. Look at the antecedent only to find gender and number; then look inside the relative clause and ask "what job does the pronoun do here?" to find the case.',
         ],
       },
@@ -83,7 +83,11 @@ export const chapter075: ChapterDefinition = {
       {
         id: 'ch75-table-01',
         title: 'Nominative and accusative relative pronouns by gender and number',
-        columns: ['Gender / Number', 'Nominative (subject)', 'Accusative (direct object)'],
+        columns: [
+          'Gender / Number',
+          'Nominative (subject)',
+          'Accusative (direct object)',
+        ],
         rows: [
           ['masculine', 'der', 'den'],
           ['feminine', 'die', 'die'],
@@ -91,23 +95,40 @@ export const chapter075: ChapterDefinition = {
           ['plural (all genders)', 'die', 'die'],
         ],
         columnCases: [null, 'nominative', 'accusative'],
-        note: 'Only the masculine singular changes shape between the two cases; feminine, neuter, and plural forms are identical in both, so the pronoun\'s role inside its own clause is what tells them apart.',
+        note: "Only the masculine singular changes shape between the two cases; feminine, neuter, and plural forms are identical in both, so the pronoun's role inside its own clause is what tells them apart.",
       },
       {
         id: 'ch75-table-02',
-        title: 'Case in the main clause vs. case in the relative clause — two independent choices',
+        title:
+          'Case in the main clause vs. case in the relative clause — two independent choices',
         columns: [
           'Antecedent (its case in the main clause)',
           'Relative clause',
           'Relative pronoun and its case',
         ],
         rows: [
-          ['der Mann (nominative — subject of ist)', 'der dort steht', 'der — nominative (subject of steht)'],
-          ['einen Freund (accusative — object of habe)', 'der in München lebt', 'der — nominative (subject of lebt)'],
-          ['der Film (nominative — subject of war)', 'den wir gesehen haben', 'den — accusative (object of gesehen haben)'],
-          ['die Kollegin (accusative — object of kenne)', 'die aus Spanien kommt', 'die — nominative (subject of kommt)'],
+          [
+            'der Mann (nominative — subject of ist)',
+            'der dort steht',
+            'der — nominative (subject of steht)',
+          ],
+          [
+            'einen Freund (accusative — object of habe)',
+            'der in München lebt',
+            'der — nominative (subject of lebt)',
+          ],
+          [
+            'der Film (nominative — subject of war)',
+            'den wir gesehen haben',
+            'den — accusative (object of gesehen haben)',
+          ],
+          [
+            'die Kollegin (accusative — object of kenne)',
+            'die aus Spanien kommt',
+            'die — nominative (subject of kommt)',
+          ],
         ],
-        note: 'Compare rows 1 and 3, or rows 2 and 4: the same antecedent case in the main clause can pair with either a nominative or an accusative relative pronoun — the pronoun\'s case depends only on its own job inside its own clause, never on the antecedent\'s case.',
+        note: "Compare rows 1 and 3, or rows 2 and 4: the same antecedent case in the main clause can pair with either a nominative or an accusative relative pronoun — the pronoun's case depends only on its own job inside its own clause, never on the antecedent's case.",
       },
     ],
     examples: [
@@ -115,92 +136,106 @@ export const chapter075: ChapterDefinition = {
         german: 'Der Mann, der dort steht, ist mein Nachbar.',
         english: 'The man who is standing there is my neighbor.',
         highlight: ['der dort steht'],
-        explanation: 'Der Mann is masculine singular, and der is the subject of steht inside the clause, so it is nominative.',
+        explanation:
+          'Der Mann is masculine singular, and der is the subject of steht inside the clause, so it is nominative.',
       },
       {
         german: 'Die Frau, die neben mir sitzt, kommt aus Spanien.',
         english: 'The woman who is sitting next to me comes from Spain.',
         highlight: ['die neben mir sitzt'],
-        explanation: 'Die Frau is feminine singular; die is the subject of sitzt, so it is nominative.',
+        explanation:
+          'Die Frau is feminine singular; die is the subject of sitzt, so it is nominative.',
       },
       {
         german: 'Das Kind, das im Garten spielt, heißt Lena.',
         english: 'The child who is playing in the garden is called Lena.',
         highlight: ['das im Garten spielt'],
-        explanation: 'Das Kind is neuter singular; das is the subject of spielt, so it is nominative.',
+        explanation:
+          'Das Kind is neuter singular; das is the subject of spielt, so it is nominative.',
       },
       {
         german: 'Die Bücher, die auf dem Tisch liegen, gehören mir.',
         english: 'The books that are lying on the table belong to me.',
         highlight: ['die auf dem Tisch liegen'],
-        explanation: 'Die Bücher is plural; die is the subject of liegen, so it is nominative — the plural relative pronoun is die for every gender.',
+        explanation:
+          'Die Bücher is plural; die is the subject of liegen, so it is nominative — the plural relative pronoun is die for every gender.',
       },
       {
         german: 'Der Film, den wir gestern gesehen haben, war spannend.',
         english: 'The film that we watched yesterday was exciting.',
         highlight: ['den wir gestern gesehen haben'],
-        explanation: 'Der Film is masculine, but inside the clause it is the object of gesehen haben, so the pronoun takes the accusative form den, not der.',
+        explanation:
+          'Der Film is masculine, but inside the clause it is the object of gesehen haben, so the pronoun takes the accusative form den, not der.',
       },
       {
         german: 'Die Tasche, die ich letzte Woche gekauft habe, ist schon kaputt.',
         english: 'The bag that I bought last week is already broken.',
         highlight: ['die ich letzte Woche gekauft habe'],
-        explanation: 'Die Tasche is feminine; die is the object of gekauft habe inside the clause (accusative) — feminine accusative looks identical to feminine nominative.',
+        explanation:
+          'Die Tasche is feminine; die is the object of gekauft habe inside the clause (accusative) — feminine accusative looks identical to feminine nominative.',
       },
       {
         german: 'Das Auto, das mein Bruder fährt, ist neu.',
         english: 'The car that my brother drives is new.',
         highlight: ['das mein Bruder fährt'],
-        explanation: 'Das Auto is neuter; das is the object of fährt (accusative) — neuter accusative also looks identical to neuter nominative.',
+        explanation:
+          'Das Auto is neuter; das is the object of fährt (accusative) — neuter accusative also looks identical to neuter nominative.',
       },
       {
         german: 'Die Studenten, die die Prüfung bestanden haben, feiern heute Abend.',
         english: 'The students who passed the exam are celebrating tonight.',
         highlight: ['die die Prüfung bestanden haben'],
-        explanation: 'Die Studenten is plural; the first die is the relative pronoun (subject of bestanden haben, nominative), and the second die is simply the article of Prüfung.',
+        explanation:
+          'Die Studenten is plural; the first die is the relative pronoun (subject of bestanden haben, nominative), and the second die is simply the article of Prüfung.',
       },
       {
         german: 'Ich habe einen Freund, der in München lebt.',
         english: 'I have a friend who lives in Munich.',
         highlight: ['der in München lebt'],
-        explanation: 'Freund is masculine; der is the subject of lebt inside the relative clause, so it is nominative, even though Freund is accusative (object of habe) in the main clause.',
+        explanation:
+          'Freund is masculine; der is the subject of lebt inside the relative clause, so it is nominative, even though Freund is accusative (object of habe) in the main clause.',
       },
       {
         german: 'Das ist die Kollegin, die ich gestern im Meeting kennengelernt habe.',
         english: 'That is the colleague whom I met in the meeting yesterday.',
         highlight: ['die ich gestern im Meeting kennengelernt habe'],
-        explanation: 'Kollegin is feminine; die is the object of kennengelernt habe inside the clause (accusative), which happens to look the same as the nominative form.',
+        explanation:
+          'Kollegin is feminine; die is the object of kennengelernt habe inside the clause (accusative), which happens to look the same as the nominative form.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Der Film, der wir gestern gesehen haben, war spannend.',
         correct: 'Der Film, den wir gestern gesehen haben, war spannend.',
-        explanation: 'Film is the direct object of gesehen haben inside the relative clause, so the pronoun must be accusative den — the pronoun\'s case depends on its job inside its own clause, not on the antecedent.',
+        explanation:
+          "Film is the direct object of gesehen haben inside the relative clause, so the pronoun must be accusative den — the pronoun's case depends on its job inside its own clause, not on the antecedent.",
       },
       {
         incorrect: 'Ich habe einen Freund, den in München lebt.',
         correct: 'Ich habe einen Freund, der in München lebt.',
-        explanation: 'Even though Freund is accusative in the main clause (object of habe), the pronoun is the subject of lebt inside the relative clause, so it must be nominative der.',
+        explanation:
+          'Even though Freund is accusative in the main clause (object of habe), the pronoun is the subject of lebt inside the relative clause, so it must be nominative der.',
       },
       {
         incorrect: 'Der Mann der dort steht ist mein Nachbar.',
         correct: 'Der Mann, der dort steht, ist mein Nachbar.',
-        explanation: 'A relative clause is always set off by commas — one before it starts and one after it ends, even when it sits in the middle of the sentence.',
+        explanation:
+          'A relative clause is always set off by commas — one before it starts and one after it ends, even when it sits in the middle of the sentence.',
       },
       {
         incorrect: 'Die Frau, die wohnt in Berlin, ist meine Tante.',
         correct: 'Die Frau, die in Berlin wohnt, ist meine Tante.',
-        explanation: 'The relative clause is a subordinate clause, so its finite verb (wohnt) must move to the very end of the clause, not stay in second position.',
+        explanation:
+          'The relative clause is a subordinate clause, so its finite verb (wohnt) must move to the very end of the clause, not stay in second position.',
       },
     ],
     remember: [
       'Gender and number of the relative pronoun come from the antecedent — the noun it refers back to.',
-      'Case of the relative pronoun comes only from its own role inside the relative clause — subject or direct object — never from the antecedent\'s case in the main clause.',
+      "Case of the relative pronoun comes only from its own role inside the relative clause — subject or direct object — never from the antecedent's case in the main clause.",
       'In the nominative and accusative, relative pronouns are identical to the definite article: der, die, das, die (nominative) and den, die, das, die (accusative).',
-      'Only the masculine singular changes shape between nominative (der) and accusative (den); feminine, neuter, and plural look the same in both, so check the pronoun\'s function to know its case.',
+      "Only the masculine singular changes shape between nominative (der) and accusative (den); feminine, neuter, and plural look the same in both, so check the pronoun's function to know its case.",
       'The finite verb of the relative clause moves to the very end, just like in weil/wenn/dass clauses.',
-      'A relative clause is always framed by commas — one before it and, if it doesn\'t end the sentence, one right after it.',
+      "A relative clause is always framed by commas — one before it and, if it doesn't end the sentence, one right after it.",
     ],
   },
   mastery: {
@@ -226,7 +261,8 @@ export const chapter075: ChapterDefinition = {
         { id: 'd', text: 'das' },
       ],
       correctOptionId: 'a',
-      explanation: 'Mann is masculine, and der is the subject of steht inside the clause, so the nominative form der is correct.',
+      explanation:
+        'Mann is masculine, and der is the subject of steht inside the clause, so the nominative form der is correct.',
     },
     {
       id: 'ch75-ex-02',
@@ -244,7 +280,8 @@ export const chapter075: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'a',
-      explanation: 'Frau is feminine, and die is the subject of sitzt, so the nominative form die is correct.',
+      explanation:
+        'Frau is feminine, and die is the subject of sitzt, so the nominative form die is correct.',
     },
     {
       id: 'ch75-ex-03',
@@ -262,7 +299,8 @@ export const chapter075: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'a',
-      explanation: 'Kind is neuter, and das is the subject of spielt, so the nominative form das is correct.',
+      explanation:
+        'Kind is neuter, and das is the subject of spielt, so the nominative form das is correct.',
     },
     {
       id: 'ch75-ex-04',
@@ -280,7 +318,8 @@ export const chapter075: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'a',
-      explanation: 'Bücher is plural, and the plural relative pronoun is always die, whether nominative or accusative; here die is the subject of liegen.',
+      explanation:
+        'Bücher is plural, and the plural relative pronoun is always die, whether nominative or accusative; here die is the subject of liegen.',
     },
     {
       id: 'ch75-ex-05',
@@ -298,7 +337,8 @@ export const chapter075: ChapterDefinition = {
         { id: 'd', text: 'das' },
       ],
       correctOptionId: 'b',
-      explanation: 'Film is masculine, but inside the clause the pronoun is the direct object of gesehen haben, so it must be the accusative form den, not der.',
+      explanation:
+        'Film is masculine, but inside the clause the pronoun is the direct object of gesehen haben, so it must be the accusative form den, not der.',
     },
     {
       id: 'ch75-ex-06',
@@ -316,7 +356,8 @@ export const chapter075: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'd',
-      explanation: 'Lehrer is masculine, but he is the object of mögen inside the clause (die Schüler mögen ihn), so the accusative den is required.',
+      explanation:
+        'Lehrer is masculine, but he is the object of mögen inside the clause (die Schüler mögen ihn), so the accusative den is required.',
     },
     {
       id: 'ch75-ex-07',
@@ -326,7 +367,8 @@ export const chapter075: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['case-identification', 'relative-pronoun-accusative'],
       instruction: 'Identify the case of the highlighted relative pronoun.',
-      prompt: 'In "Die Tasche, die ich gestern gekauft habe, ist teuer," what case is die in the relative clause?',
+      prompt:
+        'In "Die Tasche, die ich gestern gekauft habe, ist teuer," what case is die in the relative clause?',
       options: [
         { id: 'a', text: 'Nominative' },
         { id: 'b', text: 'Accusative' },
@@ -334,7 +376,8 @@ export const chapter075: ChapterDefinition = {
         { id: 'd', text: 'Genitive' },
       ],
       correctOptionId: 'b',
-      explanation: 'die is the direct object of gekauft habe (ich habe die Tasche gekauft), so it is accusative, even though the form looks identical to the feminine nominative.',
+      explanation:
+        'die is the direct object of gekauft habe (ich habe die Tasche gekauft), so it is accusative, even though the form looks identical to the feminine nominative.',
     },
     {
       id: 'ch75-ex-08',
@@ -344,7 +387,8 @@ export const chapter075: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['case-identification', 'relative-pronoun-accusative'],
       instruction: 'Identify the case of the highlighted relative pronoun.',
-      prompt: 'In "Das Auto, das mein Bruder fährt, ist neu," what case is das in the relative clause?',
+      prompt:
+        'In "Das Auto, das mein Bruder fährt, ist neu," what case is das in the relative clause?',
       options: [
         { id: 'a', text: 'Nominative' },
         { id: 'b', text: 'Dative' },
@@ -352,7 +396,8 @@ export const chapter075: ChapterDefinition = {
         { id: 'd', text: 'Genitive' },
       ],
       correctOptionId: 'c',
-      explanation: 'das is the direct object of fährt (mein Bruder fährt das Auto), so it is accusative, identical in form to the neuter nominative.',
+      explanation:
+        'das is the direct object of fährt (mein Bruder fährt das Auto), so it is accusative, identical in form to the neuter nominative.',
     },
     {
       id: 'ch75-ex-09',
@@ -369,7 +414,8 @@ export const chapter075: ChapterDefinition = {
         { id: 'c', text: 'ich' },
       ],
       correctOptionId: 'a',
-      explanation: 'The relative pronoun der refers back to its antecedent, Bruder — the noun it describes.',
+      explanation:
+        'The relative pronoun der refers back to its antecedent, Bruder — the noun it describes.',
     },
     {
       id: 'ch75-ex-10',
@@ -379,14 +425,16 @@ export const chapter075: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['antecedent-identification'],
       instruction: 'Identify the antecedent of the relative pronoun.',
-      prompt: 'Das ist die Kollegin, die ich im Meeting kennengelernt habe. What does die refer to?',
+      prompt:
+        'Das ist die Kollegin, die ich im Meeting kennengelernt habe. What does die refer to?',
       options: [
         { id: 'a', text: 'Meeting' },
         { id: 'b', text: 'Kollegin' },
         { id: 'c', text: 'ich' },
       ],
       correctOptionId: 'b',
-      explanation: 'die refers back to Kollegin, the antecedent immediately before the relative clause.',
+      explanation:
+        'die refers back to Kollegin, the antecedent immediately before the relative clause.',
     },
     {
       id: 'ch75-ex-11',
@@ -396,7 +444,8 @@ export const chapter075: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['comma'],
       instruction: 'Choose the correctly punctuated sentence.',
-      prompt: '"The man who is standing there is my neighbor." Which sentence is correctly punctuated?',
+      prompt:
+        '"The man who is standing there is my neighbor." Which sentence is correctly punctuated?',
       options: [
         { id: 'a', text: 'Der Mann der dort steht ist mein Nachbar.' },
         { id: 'b', text: 'Der Mann, der dort steht ist mein Nachbar.' },
@@ -404,7 +453,8 @@ export const chapter075: ChapterDefinition = {
         { id: 'd', text: 'Der Mann der dort steht, ist mein Nachbar.' },
       ],
       correctOptionId: 'c',
-      explanation: 'A relative clause sitting inside a sentence is set off by commas on both sides: one right before der and one right after steht.',
+      explanation:
+        'A relative clause sitting inside a sentence is set off by commas on both sides: one right before der and one right after steht.',
     },
     {
       id: 'ch75-ex-12',
@@ -422,7 +472,8 @@ export const chapter075: ChapterDefinition = {
         { id: 'd', text: 'Die Frau, wohnt die in Berlin, ist meine Tante.' },
       ],
       correctOptionId: 'b',
-      explanation: 'The relative clause is a subordinate clause, so its finite verb wohnt must go to the very end of the clause.',
+      explanation:
+        'The relative clause is a subordinate clause, so its finite verb wohnt must go to the very end of the clause.',
     },
     {
       id: 'ch75-ex-13',
@@ -440,7 +491,8 @@ export const chapter075: ChapterDefinition = {
         { id: 'd', text: 'das' },
       ],
       correctOptionId: 'a',
-      explanation: 'Student is masculine, and inside the clause he is the subject of hat bestanden (er hat die Prüfung bestanden), so the pronoun is nominative der, even though Studenten is accusative in the main clause (object of kennst).',
+      explanation:
+        'Student is masculine, and inside the clause he is the subject of hat bestanden (er hat die Prüfung bestanden), so the pronoun is nominative der, even though Studenten is accusative in the main clause (object of kennst).',
     },
     {
       id: 'ch75-ex-14',
@@ -458,7 +510,8 @@ export const chapter075: ChapterDefinition = {
         { id: 'd', text: 'Ich lese ein Buch, den sehr spannend ist.' },
       ],
       correctOptionId: 'b',
-      explanation: 'Buch is neuter, and inside the clause it is the subject of ist, so the pronoun is nominative das.',
+      explanation:
+        'Buch is neuter, and inside the clause it is the subject of ist, so the pronoun is nominative das.',
     },
     {
       id: 'ch75-ex-15',
@@ -476,7 +529,8 @@ export const chapter075: ChapterDefinition = {
         { id: 'd', text: 'Der Roman, das ich gerade lese, ist spannend.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Roman is masculine and is the direct object of lese inside the clause (ich lese den Roman), so the accusative den is required.',
+      explanation:
+        'Roman is masculine and is the direct object of lese inside the clause (ich lese den Roman), so the accusative den is required.',
     },
     {
       id: 'ch75-ex-16',
@@ -485,13 +539,15 @@ export const chapter075: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['relative-pronoun-nominative', 'gender-agreement'],
-      instruction: 'Write only the missing relative pronoun. Capitalisation is not checked.',
+      instruction:
+        'Write only the missing relative pronoun. Capitalisation is not checked.',
       prompt: 'Der Junge, ___ dort spielt, heißt Tom. (relative pronoun, nominative)',
       acceptedAnswers: ['der'],
       answerMode: 'caseInsensitive',
       placeholder: 'der',
       maxLength: 5,
-      explanation: 'Junge is masculine, and der is the subject of spielt, so it is nominative der.',
+      explanation:
+        'Junge is masculine, and der is the subject of spielt, so it is nominative der.',
     },
     {
       id: 'ch75-ex-17',
@@ -500,13 +556,16 @@ export const chapter075: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['relative-pronoun-nominative', 'gender-agreement'],
-      instruction: 'Write only the missing relative pronoun. Capitalisation is not checked.',
-      prompt: 'Die Ärztin, ___ hier arbeitet, ist sehr nett. (relative pronoun, nominative)',
+      instruction:
+        'Write only the missing relative pronoun. Capitalisation is not checked.',
+      prompt:
+        'Die Ärztin, ___ hier arbeitet, ist sehr nett. (relative pronoun, nominative)',
       acceptedAnswers: ['die'],
       answerMode: 'caseInsensitive',
       placeholder: 'die',
       maxLength: 5,
-      explanation: 'Ärztin is feminine; die is the subject of arbeitet, so it is nominative die.',
+      explanation:
+        'Ärztin is feminine; die is the subject of arbeitet, so it is nominative die.',
     },
     {
       id: 'ch75-ex-18',
@@ -515,13 +574,15 @@ export const chapter075: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['relative-pronoun-nominative', 'gender-agreement'],
-      instruction: 'Write only the missing relative pronoun. Capitalisation is not checked.',
+      instruction:
+        'Write only the missing relative pronoun. Capitalisation is not checked.',
       prompt: 'Das Mädchen, ___ dort singt, heißt Anna. (relative pronoun, nominative)',
       acceptedAnswers: ['das'],
       answerMode: 'caseInsensitive',
       placeholder: 'das',
       maxLength: 5,
-      explanation: 'Mädchen is grammatically neuter; das is the subject of singt, so it is nominative das.',
+      explanation:
+        'Mädchen is grammatically neuter; das is the subject of singt, so it is nominative das.',
     },
     {
       id: 'ch75-ex-19',
@@ -530,13 +591,16 @@ export const chapter075: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['relative-pronoun-nominative', 'plural'],
-      instruction: 'Write only the missing relative pronoun. Capitalisation is not checked.',
-      prompt: 'Die Gäste, ___ heute kommen, sind meine Kollegen. (relative pronoun, nominative)',
+      instruction:
+        'Write only the missing relative pronoun. Capitalisation is not checked.',
+      prompt:
+        'Die Gäste, ___ heute kommen, sind meine Kollegen. (relative pronoun, nominative)',
       acceptedAnswers: ['die'],
       answerMode: 'caseInsensitive',
       placeholder: 'die',
       maxLength: 5,
-      explanation: 'Gäste is plural; die is the subject of kommen — the plural relative pronoun is always die.',
+      explanation:
+        'Gäste is plural; die is the subject of kommen — the plural relative pronoun is always die.',
     },
     {
       id: 'ch75-ex-20',
@@ -545,13 +609,16 @@ export const chapter075: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['relative-pronoun-accusative', 'case-from-clause-role'],
-      instruction: 'Write only the missing relative pronoun. Capitalisation is not checked.',
-      prompt: 'Der Kuchen, ___ meine Oma gebacken hat, schmeckt fantastisch. (relative pronoun, accusative)',
+      instruction:
+        'Write only the missing relative pronoun. Capitalisation is not checked.',
+      prompt:
+        'Der Kuchen, ___ meine Oma gebacken hat, schmeckt fantastisch. (relative pronoun, accusative)',
       acceptedAnswers: ['den'],
       answerMode: 'caseInsensitive',
       placeholder: 'den',
       maxLength: 5,
-      explanation: 'Kuchen is masculine, but it is the object of gebacken hat (meine Oma hat den Kuchen gebacken), so the accusative den is required.',
+      explanation:
+        'Kuchen is masculine, but it is the object of gebacken hat (meine Oma hat den Kuchen gebacken), so the accusative den is required.',
     },
     {
       id: 'ch75-ex-21',
@@ -560,13 +627,16 @@ export const chapter075: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['relative-pronoun-accusative', 'case-from-clause-role'],
-      instruction: 'Write only the missing relative pronoun. Capitalisation is not checked.',
-      prompt: 'Die E-Mail, ___ ich gestern geschrieben habe, war sehr lang. (relative pronoun, accusative)',
+      instruction:
+        'Write only the missing relative pronoun. Capitalisation is not checked.',
+      prompt:
+        'Die E-Mail, ___ ich gestern geschrieben habe, war sehr lang. (relative pronoun, accusative)',
       acceptedAnswers: ['die'],
       answerMode: 'caseInsensitive',
       placeholder: 'die',
       maxLength: 5,
-      explanation: 'E-Mail is feminine; die is the object of geschrieben habe (accusative), which looks identical to the feminine nominative form here.',
+      explanation:
+        'E-Mail is feminine; die is the object of geschrieben habe (accusative), which looks identical to the feminine nominative form here.',
     },
     {
       id: 'ch75-ex-22',
@@ -575,13 +645,16 @@ export const chapter075: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['relative-pronoun-accusative', 'case-from-clause-role'],
-      instruction: 'Write only the missing relative pronoun. Capitalisation is not checked.',
-      prompt: 'Das Geschenk, ___ er mir gegeben hat, gefällt mir sehr. (relative pronoun, accusative)',
+      instruction:
+        'Write only the missing relative pronoun. Capitalisation is not checked.',
+      prompt:
+        'Das Geschenk, ___ er mir gegeben hat, gefällt mir sehr. (relative pronoun, accusative)',
       acceptedAnswers: ['das'],
       answerMode: 'caseInsensitive',
       placeholder: 'das',
       maxLength: 5,
-      explanation: 'Geschenk is neuter; das is the object of gegeben hat, accusative, identical in form to the neuter nominative.',
+      explanation:
+        'Geschenk is neuter; das is the object of gegeben hat, accusative, identical in form to the neuter nominative.',
     },
     {
       id: 'ch75-ex-23',
@@ -590,13 +663,15 @@ export const chapter075: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['antecedent-identification'],
-      instruction: 'Write the noun that the relative pronoun refers to (the antecedent). Capitalisation is not checked.',
+      instruction:
+        'Write the noun that the relative pronoun refers to (the antecedent). Capitalisation is not checked.',
       prompt: 'Ich habe eine Tante, die in Kanada lebt. Which noun does die refer to?',
       acceptedAnswers: ['Tante', 'eine Tante'],
       answerMode: 'caseInsensitive',
       placeholder: 'Tante',
       maxLength: 15,
-      explanation: 'die refers back to Tante, the noun directly before the relative clause.',
+      explanation:
+        'die refers back to Tante, the noun directly before the relative clause.',
     },
     {
       id: 'ch75-ex-24',
@@ -605,13 +680,15 @@ export const chapter075: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['antecedent-identification'],
-      instruction: 'Write the noun that the relative pronoun refers to (the antecedent). Capitalisation is not checked.',
+      instruction:
+        'Write the noun that the relative pronoun refers to (the antecedent). Capitalisation is not checked.',
       prompt: 'Das ist der Roman, den ich gerade lese. Which noun does den refer to?',
       acceptedAnswers: ['Roman', 'der Roman'],
       answerMode: 'caseInsensitive',
       placeholder: 'Roman',
       maxLength: 15,
-      explanation: 'den refers back to Roman, even though Roman itself is a predicate noun in the main clause.',
+      explanation:
+        'den refers back to Roman, even though Roman itself is a predicate noun in the main clause.',
     },
     {
       id: 'ch75-ex-25',
@@ -620,13 +697,15 @@ export const chapter075: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['clause-combination', 'relative-pronoun-nominative'],
-      instruction: 'Combine the two sentences into one, keeping the first sentence as the main clause and turning the second into a relative clause. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences into one, keeping the first sentence as the main clause and turning the second into a relative clause. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Der Mann arbeitet bei uns. + Er kommt aus Italien.',
       acceptedAnswers: ['Der Mann, der aus Italien kommt, arbeitet bei uns.'],
       answerMode: 'normalized',
       placeholder: 'Der Mann, der ..., arbeitet bei uns.',
       maxLength: 70,
-      explanation: 'Mann is masculine and is the subject of kommt inside the relative clause, so it takes the nominative form der: Der Mann, der aus Italien kommt, arbeitet bei uns.',
+      explanation:
+        'Mann is masculine and is the subject of kommt inside the relative clause, so it takes the nominative form der: Der Mann, der aus Italien kommt, arbeitet bei uns.',
     },
     {
       id: 'ch75-ex-26',
@@ -635,7 +714,8 @@ export const chapter075: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['clause-combination', 'relative-pronoun-accusative'],
-      instruction: 'Combine the two sentences into one, keeping the first sentence as the main clause and turning the second into a relative clause. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences into one, keeping the first sentence as the main clause and turning the second into a relative clause. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich lese das Buch. + Meine Schwester hat mir das Buch geschenkt.',
       acceptedAnswers: [
         'Ich lese das Buch, das mir meine Schwester geschenkt hat.',
@@ -644,7 +724,8 @@ export const chapter075: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Ich lese das Buch, das ...',
       maxLength: 70,
-      explanation: 'Buch is neuter, and inside the clause it is the object of geschenkt hat (meine Schwester hat das Buch geschenkt), so it takes the accusative das (identical in form to the neuter nominative).',
+      explanation:
+        'Buch is neuter, and inside the clause it is the object of geschenkt hat (meine Schwester hat das Buch geschenkt), so it takes the accusative das (identical in form to the neuter nominative).',
     },
     {
       id: 'ch75-ex-27',
@@ -653,13 +734,15 @@ export const chapter075: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['clause-combination', 'relative-pronoun-nominative', 'plural'],
-      instruction: 'Combine the two sentences into one, keeping the first sentence as the main clause and turning the second into a relative clause. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences into one, keeping the first sentence as the main clause and turning the second into a relative clause. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Die Kinder spielen im Park. + Die Kinder wohnen nebenan.',
       acceptedAnswers: ['Die Kinder, die nebenan wohnen, spielen im Park.'],
       answerMode: 'normalized',
       placeholder: 'Die Kinder, die ..., spielen im Park.',
       maxLength: 70,
-      explanation: 'Kinder is plural; die is the subject of wohnen inside the relative clause, so it takes the nominative/accusative plural form die.',
+      explanation:
+        'Kinder is plural; die is the subject of wohnen inside the relative clause, so it takes the nominative/accusative plural form die.',
     },
     {
       id: 'ch75-ex-28',
@@ -668,13 +751,15 @@ export const chapter075: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'relative-pronoun-accusative'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Der Film, der wir gestern gesehen haben, war spannend.',
       acceptedAnswers: ['Der Film, den wir gestern gesehen haben, war spannend.'],
       answerMode: 'normalized',
       placeholder: 'Der Film, den ...',
       maxLength: 60,
-      explanation: 'Film is the object of gesehen haben inside the clause, so the pronoun must be accusative den, not nominative der.',
+      explanation:
+        'Film is the object of gesehen haben inside the clause, so the pronoun must be accusative den, not nominative der.',
     },
     {
       id: 'ch75-ex-29',
@@ -683,13 +768,15 @@ export const chapter075: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'comma'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Die Frau die neben mir sitzt kommt aus Spanien.',
       acceptedAnswers: ['Die Frau, die neben mir sitzt, kommt aus Spanien.'],
       answerMode: 'normalized',
       placeholder: 'Die Frau, die ..., kommt aus Spanien.',
       maxLength: 60,
-      explanation: 'A relative clause must be set off by commas on both sides: one before die and one after sitzt.',
+      explanation:
+        'A relative clause must be set off by commas on both sides: one before die and one after sitzt.',
     },
     {
       id: 'ch75-ex-30',
@@ -698,13 +785,15 @@ export const chapter075: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'verb-final', 'word-order'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ich habe einen Freund, der lebt in München.',
       acceptedAnswers: ['Ich habe einen Freund, der in München lebt.'],
       answerMode: 'normalized',
       placeholder: 'Ich habe einen Freund, der ...',
       maxLength: 60,
-      explanation: 'The relative clause is a subordinate clause, so its finite verb lebt must move to the very end.',
+      explanation:
+        'The relative clause is a subordinate clause, so its finite verb lebt must move to the very end.',
     },
     {
       id: 'ch75-ex-31',
@@ -714,11 +803,13 @@ export const chapter075: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['relative-pronoun-nominative', 'gender-agreement'],
       instruction: 'Drag the correct relative pronoun into the gap.',
-      prompt: 'Complete the sentence with the correct relative pronoun. (Vater, nominative)',
+      prompt:
+        'Complete the sentence with the correct relative pronoun. (Vater, nominative)',
       templateParts: ['Mein Vater, ', ' jeden Tag joggt, ist sehr fit.'],
       slots: [{ id: 'slot1', correctWord: 'der' }],
       wordBank: ['der', 'die', 'das', 'den'],
-      explanation: 'Vater is masculine, and der is the subject of joggt inside the clause, so the nominative form der is correct.',
+      explanation:
+        'Vater is masculine, and der is the subject of joggt inside the clause, so the nominative form der is correct.',
     },
     {
       id: 'ch75-ex-32',
@@ -728,11 +819,16 @@ export const chapter075: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['relative-pronoun-accusative', 'case-from-clause-role'],
       instruction: 'Drag the correct relative pronoun into the gap.',
-      prompt: 'Complete the sentence with the correct relative pronoun. (Schwester, accusative)',
-      templateParts: ['Die Schwester, ', ' ich gestern angerufen habe, wohnt in Hamburg.'],
+      prompt:
+        'Complete the sentence with the correct relative pronoun. (Schwester, accusative)',
+      templateParts: [
+        'Die Schwester, ',
+        ' ich gestern angerufen habe, wohnt in Hamburg.',
+      ],
       slots: [{ id: 'slot1', correctWord: 'die' }],
       wordBank: ['die', 'der', 'das', 'den'],
-      explanation: 'Schwester is feminine, and die is the direct object of angerufen habe inside the clause, so it is accusative — identical in form to the feminine nominative.',
+      explanation:
+        'Schwester is feminine, and die is the direct object of angerufen habe inside the clause, so it is accusative — identical in form to the feminine nominative.',
     },
     {
       id: 'ch75-ex-33',
@@ -750,7 +846,8 @@ export const chapter075: ChapterDefinition = {
         { id: 's4', text: 'wohnt,' },
         { id: 's5', text: 'besucht uns oft.' },
       ],
-      explanation: 'Onkel is masculine, and der is the subject of wohnt, so it is nominative; the finite verb wohnt moves to the end of the relative clause: Der Onkel, der in Wien wohnt, besucht uns oft.',
+      explanation:
+        'Onkel is masculine, and der is the subject of wohnt, so it is nominative; the finite verb wohnt moves to the end of the relative clause: Der Onkel, der in Wien wohnt, besucht uns oft.',
     },
     {
       id: 'ch75-ex-34',
@@ -758,13 +855,29 @@ export const chapter075: ChapterDefinition = {
       order: 34,
       type: 'errorSpotting',
       level: 'production',
-      grammarFocus: ['relative-pronoun-accusative', 'case-from-clause-role', 'error-correction'],
+      grammarFocus: [
+        'relative-pronoun-accusative',
+        'case-from-clause-role',
+        'error-correction',
+      ],
       instruction: 'Tap the token that contains the mistake.',
       prompt: 'Find the incorrect word.',
-      tokens: ['Der', 'Film,', 'der', 'wir', 'letzte', 'Woche', 'gesehen', 'haben,', 'war', 'langweilig.'],
+      tokens: [
+        'Der',
+        'Film,',
+        'der',
+        'wir',
+        'letzte',
+        'Woche',
+        'gesehen',
+        'haben,',
+        'war',
+        'langweilig.',
+      ],
       errorTokenIndex: 2,
       correction: 'den',
-      explanation: 'Film is the direct object of gesehen haben inside the clause (wir haben den Film gesehen), so the pronoun must be accusative den, not nominative der.',
+      explanation:
+        'Film is the direct object of gesehen haben inside the clause (wir haben den Film gesehen), so the pronoun must be accusative den, not nominative der.',
     },
     {
       id: 'ch75-ex-35',
@@ -772,17 +885,43 @@ export const chapter075: ChapterDefinition = {
       order: 35,
       type: 'matching',
       level: 'production',
-      grammarFocus: ['clause-combination', 'relative-pronoun-nominative', 'relative-pronoun-accusative'],
-      instruction: 'Match each pair of simple sentences to the sentence that correctly combines them with a relative clause.',
+      grammarFocus: [
+        'clause-combination',
+        'relative-pronoun-nominative',
+        'relative-pronoun-accusative',
+      ],
+      instruction:
+        'Match each pair of simple sentences to the sentence that correctly combines them with a relative clause.',
       prompt: 'Two simple sentences and their combined relative-clause sentence.',
       pairs: [
-        { id: 'p1', left: 'Ich habe einen Bruder. Er lebt in Rom.', right: 'Ich habe einen Bruder, der in Rom lebt.' },
-        { id: 'p2', left: 'Ich kenne eine Frau. Sie arbeitet als Ärztin.', right: 'Ich kenne eine Frau, die als Ärztin arbeitet.' },
-        { id: 'p3', left: 'Das ist das Auto. Mein Vater fährt es.', right: 'Das ist das Auto, das mein Vater fährt.' },
-        { id: 'p4', left: 'Ich lese den Roman. Meine Freundin hat ihn empfohlen.', right: 'Ich lese den Roman, den meine Freundin empfohlen hat.' },
-        { id: 'p5', left: 'Wir besuchen die Kinder. Sie wohnen in München.', right: 'Wir besuchen die Kinder, die in München wohnen.' },
+        {
+          id: 'p1',
+          left: 'Ich habe einen Bruder. Er lebt in Rom.',
+          right: 'Ich habe einen Bruder, der in Rom lebt.',
+        },
+        {
+          id: 'p2',
+          left: 'Ich kenne eine Frau. Sie arbeitet als Ärztin.',
+          right: 'Ich kenne eine Frau, die als Ärztin arbeitet.',
+        },
+        {
+          id: 'p3',
+          left: 'Das ist das Auto. Mein Vater fährt es.',
+          right: 'Das ist das Auto, das mein Vater fährt.',
+        },
+        {
+          id: 'p4',
+          left: 'Ich lese den Roman. Meine Freundin hat ihn empfohlen.',
+          right: 'Ich lese den Roman, den meine Freundin empfohlen hat.',
+        },
+        {
+          id: 'p5',
+          left: 'Wir besuchen die Kinder. Sie wohnen in München.',
+          right: 'Wir besuchen die Kinder, die in München wohnen.',
+        },
       ],
-      explanation: 'Each pair combines two simple sentences into one sentence with a relative clause: the pronoun matches the antecedent\'s gender and number, and its case comes from its role inside the relative clause.',
+      explanation:
+        "Each pair combines two simple sentences into one sentence with a relative clause: the pronoun matches the antecedent's gender and number, and its case comes from its role inside the relative clause.",
     },
     {
       id: 'ch75-ex-36',
@@ -792,7 +931,8 @@ export const chapter075: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['case-identification', 'relative-pronoun-accusative'],
       instruction: 'Identify the case of the highlighted relative pronoun.',
-      prompt: 'In "Ich habe einen Onkel, den ich sehr mag," what case is den in the relative clause?',
+      prompt:
+        'In "Ich habe einen Onkel, den ich sehr mag," what case is den in the relative clause?',
       options: [
         { id: 'a', text: 'Nominative' },
         { id: 'b', text: 'Accusative' },
@@ -800,7 +940,8 @@ export const chapter075: ChapterDefinition = {
         { id: 'd', text: 'Genitive' },
       ],
       correctOptionId: 'b',
-      explanation: 'den is the direct object of mag inside the relative clause (ich mag ihn), so it is accusative.',
+      explanation:
+        'den is the direct object of mag inside the relative clause (ich mag ihn), so it is accusative.',
     },
     {
       id: 'ch75-ex-37',
@@ -809,13 +950,16 @@ export const chapter075: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['relative-pronoun-nominative', 'gender-agreement'],
-      instruction: 'Write only the missing relative pronoun. Capitalisation is not checked.',
-      prompt: 'Der Sohn, ___ Fußball spielt, ist zehn Jahre alt. (relative pronoun, nominative)',
+      instruction:
+        'Write only the missing relative pronoun. Capitalisation is not checked.',
+      prompt:
+        'Der Sohn, ___ Fußball spielt, ist zehn Jahre alt. (relative pronoun, nominative)',
       acceptedAnswers: ['der'],
       answerMode: 'caseInsensitive',
       placeholder: 'der',
       maxLength: 5,
-      explanation: 'Sohn is masculine, and der is the subject of spielt inside the clause, so it is nominative der.',
+      explanation:
+        'Sohn is masculine, and der is the subject of spielt inside the clause, so it is nominative der.',
     },
     {
       id: 'ch75-ex-38',
@@ -825,11 +969,13 @@ export const chapter075: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['relative-pronoun-accusative', 'case-from-clause-role'],
       instruction: 'Drag the correct relative pronoun into the gap.',
-      prompt: 'Complete the sentence with the correct relative pronoun. (Fahrrad, accusative)',
+      prompt:
+        'Complete the sentence with the correct relative pronoun. (Fahrrad, accusative)',
       templateParts: ['Das Fahrrad, ', ' ich repariert habe, funktioniert wieder.'],
       slots: [{ id: 'slot1', correctWord: 'das' }],
       wordBank: ['das', 'der', 'die', 'den'],
-      explanation: 'Fahrrad is neuter, and das is the direct object of repariert habe, so it is accusative — identical in form to the neuter nominative.',
+      explanation:
+        'Fahrrad is neuter, and das is the direct object of repariert habe, so it is accusative — identical in form to the neuter nominative.',
     },
     {
       id: 'ch75-ex-39',
@@ -847,7 +993,8 @@ export const chapter075: ChapterDefinition = {
         { id: 's4', text: 'lernen,' },
         { id: 's5', text: 'sind sehr fleißig.' },
       ],
-      explanation: 'Studenten is plural, so the relative pronoun is die, subject of lernen; the finite verb lernen moves to the end of the relative clause.',
+      explanation:
+        'Studenten is plural, so the relative pronoun is die, subject of lernen; the finite verb lernen moves to the end of the relative clause.',
     },
     {
       id: 'ch75-ex-40',
@@ -855,13 +1002,28 @@ export const chapter075: ChapterDefinition = {
       order: 40,
       type: 'errorSpotting',
       level: 'production',
-      grammarFocus: ['relative-pronoun-accusative', 'case-from-clause-role', 'error-correction'],
+      grammarFocus: [
+        'relative-pronoun-accusative',
+        'case-from-clause-role',
+        'error-correction',
+      ],
       instruction: 'Tap the token that contains the mistake.',
       prompt: 'Find the incorrect word.',
-      tokens: ['Der', 'Lehrer,', 'die', 'die', 'Schüler', 'mögen,', 'ist', 'sehr', 'beliebt.'],
+      tokens: [
+        'Der',
+        'Lehrer,',
+        'die',
+        'die',
+        'Schüler',
+        'mögen,',
+        'ist',
+        'sehr',
+        'beliebt.',
+      ],
       errorTokenIndex: 2,
       correction: 'den',
-      explanation: 'Lehrer is masculine, but he is the direct object of mögen inside the clause (die Schüler mögen ihn), so the pronoun must be accusative den, not die.',
+      explanation:
+        'Lehrer is masculine, but he is the direct object of mögen inside the clause (die Schüler mögen ihn), so the pronoun must be accusative den, not die.',
     },
     {
       id: 'ch75-ex-41',
@@ -871,11 +1033,13 @@ export const chapter075: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['relative-pronoun-nominative', 'gender-agreement'],
       instruction: 'Drag the correct relative pronoun into the gap.',
-      prompt: 'Complete the sentence with the correct relative pronoun. (Nachbar, nominative)',
+      prompt:
+        'Complete the sentence with the correct relative pronoun. (Nachbar, nominative)',
       templateParts: ['Der Nachbar, ', ' immer laute Musik hört, stört uns.'],
       slots: [{ id: 'slot1', correctWord: 'der' }],
       wordBank: ['der', 'den', 'die', 'das'],
-      explanation: 'Nachbar is masculine, and der is the subject of hört inside the clause, so it is nominative der.',
+      explanation:
+        'Nachbar is masculine, and der is the subject of hört inside the clause, so it is nominative der.',
     },
     {
       id: 'ch75-ex-42',
@@ -883,8 +1047,13 @@ export const chapter075: ChapterDefinition = {
       order: 42,
       type: 'matching',
       level: 'controlled',
-      grammarFocus: ['relative-pronoun-nominative', 'relative-pronoun-accusative', 'case-from-clause-role'],
-      instruction: 'Match each antecedent and clause role to the correct relative pronoun.',
+      grammarFocus: [
+        'relative-pronoun-nominative',
+        'relative-pronoun-accusative',
+        'case-from-clause-role',
+      ],
+      instruction:
+        'Match each antecedent and clause role to the correct relative pronoun.',
       prompt: 'Antecedent and clause role paired with the matching relative pronoun.',
       pairs: [
         { id: 'p1', left: 'Mann (nominative, subject)', right: 'der' },
@@ -892,7 +1061,8 @@ export const chapter075: ChapterDefinition = {
         { id: 'p3', left: 'Frau (nominative, subject)', right: 'die' },
         { id: 'p4', left: 'Kind (accusative, object)', right: 'das' },
       ],
-      explanation: 'Gender and number come from the antecedent, while case comes from the pronoun\'s role in the relative clause: der (masc. nom.), den (masc. acc.), die (fem. nom./acc.), das (neut. nom./acc.).',
+      explanation:
+        "Gender and number come from the antecedent, while case comes from the pronoun's role in the relative clause: der (masc. nom.), den (masc. acc.), die (fem. nom./acc.), das (neut. nom./acc.).",
     },
     {
       id: 'ch75-ex-43',
@@ -910,7 +1080,8 @@ export const chapter075: ChapterDefinition = {
         { id: 'd', text: 'Der Junge, wohnt der nebenan, ist mein Freund.' },
       ],
       correctOptionId: 'b',
-      explanation: 'The relative clause is a subordinate clause, so its finite verb wohnt must go to the very end of the clause.',
+      explanation:
+        'The relative clause is a subordinate clause, so its finite verb wohnt must go to the very end of the clause.',
     },
     {
       id: 'ch75-ex-44',
@@ -919,13 +1090,15 @@ export const chapter075: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['clause-combination', 'relative-pronoun-accusative'],
-      instruction: 'Combine the two sentences into one, keeping the first sentence as the main clause and turning the second into a relative clause. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences into one, keeping the first sentence as the main clause and turning the second into a relative clause. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich kenne die Frau. + Du hast die Frau gestern getroffen.',
       acceptedAnswers: ['Ich kenne die Frau, die du gestern getroffen hast.'],
       answerMode: 'normalized',
       placeholder: 'Ich kenne die Frau, die ...',
       maxLength: 70,
-      explanation: 'Frau is feminine, and inside the clause it is the object of getroffen hast, so the pronoun takes the accusative die — identical in form to the feminine nominative.',
+      explanation:
+        'Frau is feminine, and inside the clause it is the object of getroffen hast, so the pronoun takes the accusative die — identical in form to the feminine nominative.',
     },
     {
       id: 'ch75-ex-45',
@@ -933,7 +1106,11 @@ export const chapter075: ChapterDefinition = {
       order: 45,
       type: 'sentenceOrdering',
       level: 'controlled',
-      grammarFocus: ['relative-pronoun-accusative', 'case-from-clause-role', 'verb-final'],
+      grammarFocus: [
+        'relative-pronoun-accusative',
+        'case-from-clause-role',
+        'verb-final',
+      ],
       instruction: 'Drag the segments into the correct order.',
       prompt: 'Put the words in order to form a correct sentence about der Kuchen.',
       segments: [
@@ -943,7 +1120,8 @@ export const chapter075: ChapterDefinition = {
         { id: 's4', text: 'gebacken hat,' },
         { id: 's5', text: 'riecht köstlich.' },
       ],
-      explanation: 'Kuchen is masculine, but it is the object of gebacken hat inside the clause, so the pronoun is accusative den; the finite verb hat moves to the end of the relative clause.',
+      explanation:
+        'Kuchen is masculine, but it is the object of gebacken hat inside the clause, so the pronoun is accusative den; the finite verb hat moves to the end of the relative clause.',
     },
     {
       id: 'ch75-ex-46',
@@ -953,11 +1131,16 @@ export const chapter075: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['relative-pronoun-accusative', 'plural'],
       instruction: 'Drag the correct relative pronoun into the gap.',
-      prompt: 'Complete the sentence with the correct relative pronoun. (Bücher, accusative)',
-      templateParts: ['Die Bücher, ', ' ich letzte Woche gekauft habe, liegen auf dem Tisch.'],
+      prompt:
+        'Complete the sentence with the correct relative pronoun. (Bücher, accusative)',
+      templateParts: [
+        'Die Bücher, ',
+        ' ich letzte Woche gekauft habe, liegen auf dem Tisch.',
+      ],
       slots: [{ id: 'slot1', correctWord: 'die' }],
       wordBank: ['die', 'der', 'das', 'den'],
-      explanation: 'Bücher is plural, so the relative pronoun is die in both the nominative and accusative; here it is the object of gekauft habe.',
+      explanation:
+        'Bücher is plural, so the relative pronoun is die in both the nominative and accusative; here it is the object of gekauft habe.',
     },
     {
       id: 'ch75-ex-47',
@@ -965,13 +1148,28 @@ export const chapter075: ChapterDefinition = {
       order: 47,
       type: 'errorSpotting',
       level: 'production',
-      grammarFocus: ['relative-pronoun-nominative', 'gender-agreement', 'error-correction'],
+      grammarFocus: [
+        'relative-pronoun-nominative',
+        'gender-agreement',
+        'error-correction',
+      ],
       instruction: 'Tap the token that contains the mistake.',
       prompt: 'Find the incorrect word.',
-      tokens: ['Die', 'Mutter,', 'das', 'jeden', 'Tag', 'kocht,', 'ist', 'sehr', 'geschickt.'],
+      tokens: [
+        'Die',
+        'Mutter,',
+        'das',
+        'jeden',
+        'Tag',
+        'kocht,',
+        'ist',
+        'sehr',
+        'geschickt.',
+      ],
       errorTokenIndex: 2,
       correction: 'die',
-      explanation: 'Mutter is feminine, so the nominative relative pronoun must be die, not the neuter form das.',
+      explanation:
+        'Mutter is feminine, so the nominative relative pronoun must be die, not the neuter form das.',
     },
     {
       id: 'ch75-ex-48',
@@ -981,7 +1179,8 @@ export const chapter075: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['comma'],
       instruction: 'Choose the correctly punctuated sentence.',
-      prompt: '"That is the book that I am reading." Which sentence is correctly punctuated?',
+      prompt:
+        '"That is the book that I am reading." Which sentence is correctly punctuated?',
       options: [
         { id: 'a', text: 'Das ist das Buch, das ich lese.' },
         { id: 'b', text: 'Das ist das Buch das ich lese.' },
@@ -989,7 +1188,8 @@ export const chapter075: ChapterDefinition = {
         { id: 'd', text: 'Das ist, das Buch das ich lese.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The relative clause das ich lese ends the sentence, so it needs only the opening comma right after Buch.',
+      explanation:
+        'The relative clause das ich lese ends the sentence, so it needs only the opening comma right after Buch.',
     },
     {
       id: 'ch75-ex-49',
@@ -999,11 +1199,13 @@ export const chapter075: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['relative-pronoun-nominative', 'gender-agreement'],
       instruction: 'Drag the correct relative pronoun into the gap.',
-      prompt: 'Complete the sentence with the correct relative pronoun. (Lehrerin, nominative)',
+      prompt:
+        'Complete the sentence with the correct relative pronoun. (Lehrerin, nominative)',
       templateParts: ['Die Lehrerin, ', ' Deutsch unterrichtet, kommt aus Berlin.'],
       slots: [{ id: 'slot1', correctWord: 'die' }],
       wordBank: ['die', 'der', 'das', 'den'],
-      explanation: 'Lehrerin is feminine, and die is the subject of unterrichtet inside the clause, so it is nominative die.',
+      explanation:
+        'Lehrerin is feminine, and die is the subject of unterrichtet inside the clause, so it is nominative die.',
     },
     {
       id: 'ch75-ex-50',
@@ -1021,7 +1223,8 @@ export const chapter075: ChapterDefinition = {
         { id: 's4', text: 'steht,' },
         { id: 's5', text: 'gehört meiner Familie.' },
       ],
-      explanation: 'Haus is neuter, and das is the subject of steht inside the clause, so it is nominative das; the finite verb steht moves to the end of the relative clause.',
+      explanation:
+        'Haus is neuter, and das is the subject of steht inside the clause, so it is nominative das; the finite verb steht moves to the end of the relative clause.',
     },
     {
       id: 'ch75-ex-51',
@@ -1033,13 +1236,26 @@ export const chapter075: ChapterDefinition = {
       instruction: 'Match each German relative clause to its English translation.',
       prompt: 'German relative clauses and their English translations.',
       pairs: [
-        { id: 'p1', left: 'der Mann, der dort steht', right: 'the man who is standing there' },
+        {
+          id: 'p1',
+          left: 'der Mann, der dort steht',
+          right: 'the man who is standing there',
+        },
         { id: 'p2', left: 'die Frau, die ich kenne', right: 'the woman whom I know' },
         { id: 'p3', left: 'das Kind, das spielt', right: 'the child who is playing' },
-        { id: 'p4', left: 'die Bücher, die auf dem Tisch liegen', right: 'the books that are lying on the table' },
-        { id: 'p5', left: 'der Film, den wir gesehen haben', right: 'the film that we watched' },
+        {
+          id: 'p4',
+          left: 'die Bücher, die auf dem Tisch liegen',
+          right: 'the books that are lying on the table',
+        },
+        {
+          id: 'p5',
+          left: 'der Film, den wir gesehen haben',
+          right: 'the film that we watched',
+        },
       ],
-      explanation: 'Each German relative clause matches its English translation, whether the pronoun is a subject (who/that) or an object (whom/that).',
+      explanation:
+        'Each German relative clause matches its English translation, whether the pronoun is a subject (who/that) or an object (whom/that).',
     },
     {
       id: 'ch75-ex-52',
@@ -1048,13 +1264,16 @@ export const chapter075: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['relative-pronoun-accusative', 'plural'],
-      instruction: 'Write only the missing relative pronoun. Capitalisation is not checked.',
-      prompt: 'Die Eltern, ___ ich sehr liebe, wohnen in Köln. (relative pronoun, accusative)',
+      instruction:
+        'Write only the missing relative pronoun. Capitalisation is not checked.',
+      prompt:
+        'Die Eltern, ___ ich sehr liebe, wohnen in Köln. (relative pronoun, accusative)',
       acceptedAnswers: ['die'],
       answerMode: 'caseInsensitive',
       placeholder: 'die',
       maxLength: 5,
-      explanation: 'Eltern is plural; die is the object of liebe inside the clause, and the plural relative pronoun is always die.',
+      explanation:
+        'Eltern is plural; die is the object of liebe inside the clause, and the plural relative pronoun is always die.',
     },
     {
       id: 'ch75-ex-53',
@@ -1062,13 +1281,18 @@ export const chapter075: ChapterDefinition = {
       order: 53,
       type: 'errorSpotting',
       level: 'production',
-      grammarFocus: ['relative-pronoun-nominative', 'gender-agreement', 'error-correction'],
+      grammarFocus: [
+        'relative-pronoun-nominative',
+        'gender-agreement',
+        'error-correction',
+      ],
       instruction: 'Tap the token that contains the mistake.',
       prompt: 'Find the incorrect word.',
       tokens: ['Das', 'Auto,', 'der', 'mein', 'Onkel', 'gekauft', 'hat,', 'ist', 'neu.'],
       errorTokenIndex: 2,
       correction: 'das',
-      explanation: 'Auto is neuter, so the relative pronoun must be das, not the masculine form der — even though Auto here is the object of gekauft hat.',
+      explanation:
+        'Auto is neuter, so the relative pronoun must be das, not the masculine form der — even though Auto here is the object of gekauft hat.',
     },
     {
       id: 'ch75-ex-54',
@@ -1078,11 +1302,13 @@ export const chapter075: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['relative-pronoun-accusative', 'case-from-clause-role'],
       instruction: 'Drag the correct relative pronoun into the gap.',
-      prompt: 'Complete the sentence with the correct relative pronoun. (Chef, accusative)',
+      prompt:
+        'Complete the sentence with the correct relative pronoun. (Chef, accusative)',
       templateParts: ['Der Chef, ', ' wir sehr respektieren, ist immer freundlich.'],
       slots: [{ id: 'slot1', correctWord: 'den' }],
       wordBank: ['den', 'der', 'die', 'das'],
-      explanation: 'Chef is masculine, but he is the object of respektieren inside the clause (wir respektieren ihn), so the pronoun must be accusative den.',
+      explanation:
+        'Chef is masculine, but he is the object of respektieren inside the clause (wir respektieren ihn), so the pronoun must be accusative den.',
     },
     {
       id: 'ch75-ex-55',
@@ -1092,14 +1318,16 @@ export const chapter075: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['antecedent-identification'],
       instruction: 'Identify the antecedent of the relative pronoun.',
-      prompt: 'Die Nachbarin, die einen Hund hat, grüßt uns jeden Morgen. What does die refer to?',
+      prompt:
+        'Die Nachbarin, die einen Hund hat, grüßt uns jeden Morgen. What does die refer to?',
       options: [
         { id: 'a', text: 'Nachbarin' },
         { id: 'b', text: 'Hund' },
         { id: 'c', text: 'uns' },
       ],
       correctOptionId: 'a',
-      explanation: 'die refers back to Nachbarin, the antecedent immediately before the relative clause.',
+      explanation:
+        'die refers back to Nachbarin, the antecedent immediately before the relative clause.',
     },
     {
       id: 'ch75-ex-56',
@@ -1107,7 +1335,11 @@ export const chapter075: ChapterDefinition = {
       order: 56,
       type: 'sentenceOrdering',
       level: 'controlled',
-      grammarFocus: ['relative-pronoun-accusative', 'case-from-clause-role', 'verb-final'],
+      grammarFocus: [
+        'relative-pronoun-accusative',
+        'case-from-clause-role',
+        'verb-final',
+      ],
       instruction: 'Drag the segments into the correct order.',
       prompt: 'Put the words in order to form a correct sentence about die Tasche.',
       segments: [
@@ -1117,7 +1349,8 @@ export const chapter075: ChapterDefinition = {
         { id: 's4', text: 'gekauft habe,' },
         { id: 's5', text: 'gefällt mir sehr.' },
       ],
-      explanation: 'Tasche is feminine, and die is the object of gekauft habe inside the clause (accusative, identical to the feminine nominative form); the finite verb habe moves to the end of the relative clause.',
+      explanation:
+        'Tasche is feminine, and die is the object of gekauft habe inside the clause (accusative, identical to the feminine nominative form); the finite verb habe moves to the end of the relative clause.',
     },
     {
       id: 'ch75-ex-57',
@@ -1127,11 +1360,13 @@ export const chapter075: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['relative-pronoun-nominative', 'gender-agreement'],
       instruction: 'Drag the correct relative pronoun into the gap.',
-      prompt: 'Complete the sentence with the correct relative pronoun. (Mädchen, nominative)',
+      prompt:
+        'Complete the sentence with the correct relative pronoun. (Mädchen, nominative)',
       templateParts: ['Das Mädchen, ', ' Klavier spielt, heißt Sophie.'],
       slots: [{ id: 'slot1', correctWord: 'das' }],
       wordBank: ['das', 'der', 'die', 'den'],
-      explanation: 'Mädchen is grammatically neuter, and das is the subject of spielt inside the clause, so it is nominative das.',
+      explanation:
+        'Mädchen is grammatically neuter, and das is the subject of spielt inside the clause, so it is nominative das.',
     },
     {
       id: 'ch75-ex-58',
@@ -1142,10 +1377,22 @@ export const chapter075: ChapterDefinition = {
       grammarFocus: ['relative-pronoun-nominative', 'plural', 'error-correction'],
       instruction: 'Tap the token that contains the mistake.',
       prompt: 'Find the incorrect word.',
-      tokens: ['Die', 'Freunde,', 'der', 'uns', 'besucht', 'haben,', 'sind', 'schon', 'wieder', 'weg.'],
+      tokens: [
+        'Die',
+        'Freunde,',
+        'der',
+        'uns',
+        'besucht',
+        'haben,',
+        'sind',
+        'schon',
+        'wieder',
+        'weg.',
+      ],
       errorTokenIndex: 2,
       correction: 'die',
-      explanation: 'Freunde is plural, so the relative pronoun must be die, not the masculine singular form der.',
+      explanation:
+        'Freunde is plural, so the relative pronoun must be die, not the masculine singular form der.',
     },
     {
       id: 'ch75-ex-59',
@@ -1153,17 +1400,43 @@ export const chapter075: ChapterDefinition = {
       order: 59,
       type: 'matching',
       level: 'production',
-      grammarFocus: ['clause-combination', 'relative-pronoun-nominative', 'relative-pronoun-accusative'],
-      instruction: 'Match each pair of simple sentences to the sentence that correctly combines them with a relative clause.',
+      grammarFocus: [
+        'clause-combination',
+        'relative-pronoun-nominative',
+        'relative-pronoun-accusative',
+      ],
+      instruction:
+        'Match each pair of simple sentences to the sentence that correctly combines them with a relative clause.',
       prompt: 'Two simple sentences and their combined relative-clause sentence.',
       pairs: [
-        { id: 'p1', left: 'Ich sehe den Hund. Der Hund bellt laut.', right: 'Ich sehe den Hund, der laut bellt.' },
-        { id: 'p2', left: 'Ich mag den Lehrer. Die Schüler loben den Lehrer.', right: 'Ich mag den Lehrer, den die Schüler loben.' },
-        { id: 'p3', left: 'Das ist meine Tante. Meine Tante lebt in Kanada.', right: 'Das ist meine Tante, die in Kanada lebt.' },
-        { id: 'p4', left: 'Ich habe ein Fahrrad gekauft. Mein Bruder empfiehlt das Fahrrad.', right: 'Ich habe ein Fahrrad gekauft, das mein Bruder empfiehlt.' },
-        { id: 'p5', left: 'Die Studenten bestehen die Prüfung. Die Studenten lernen viel.', right: 'Die Studenten, die viel lernen, bestehen die Prüfung.' },
+        {
+          id: 'p1',
+          left: 'Ich sehe den Hund. Der Hund bellt laut.',
+          right: 'Ich sehe den Hund, der laut bellt.',
+        },
+        {
+          id: 'p2',
+          left: 'Ich mag den Lehrer. Die Schüler loben den Lehrer.',
+          right: 'Ich mag den Lehrer, den die Schüler loben.',
+        },
+        {
+          id: 'p3',
+          left: 'Das ist meine Tante. Meine Tante lebt in Kanada.',
+          right: 'Das ist meine Tante, die in Kanada lebt.',
+        },
+        {
+          id: 'p4',
+          left: 'Ich habe ein Fahrrad gekauft. Mein Bruder empfiehlt das Fahrrad.',
+          right: 'Ich habe ein Fahrrad gekauft, das mein Bruder empfiehlt.',
+        },
+        {
+          id: 'p5',
+          left: 'Die Studenten bestehen die Prüfung. Die Studenten lernen viel.',
+          right: 'Die Studenten, die viel lernen, bestehen die Prüfung.',
+        },
       ],
-      explanation: 'Each pair combines two simple sentences into one sentence with a relative clause, matching gender and number to the antecedent and case to the pronoun\'s role inside its own clause.',
+      explanation:
+        "Each pair combines two simple sentences into one sentence with a relative clause, matching gender and number to the antecedent and case to the pronoun's role inside its own clause.",
     },
     {
       id: 'ch75-ex-60',
@@ -1172,13 +1445,15 @@ export const chapter075: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'relative-pronoun-nominative', 'plural'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Die Bücher, der auf dem Tisch liegen, gehören mir.',
       acceptedAnswers: ['Die Bücher, die auf dem Tisch liegen, gehören mir.'],
       answerMode: 'normalized',
       placeholder: 'Die Bücher, die ...',
       maxLength: 60,
-      explanation: 'Bücher is plural, so the relative pronoun must be die, not the masculine singular form der.',
+      explanation:
+        'Bücher is plural, so the relative pronoun must be die, not the masculine singular form der.',
     },
     {
       id: 'ch75-ex-61',
@@ -1188,11 +1463,13 @@ export const chapter075: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['relative-pronoun-nominative', 'plural'],
       instruction: 'Drag the correct relative pronoun into the gap.',
-      prompt: 'Complete the sentence with the correct relative pronoun. (Gäste, nominative)',
+      prompt:
+        'Complete the sentence with the correct relative pronoun. (Gäste, nominative)',
       templateParts: ['Die Gäste, ', ' zur Party kommen, bringen Geschenke mit.'],
       slots: [{ id: 'slot1', correctWord: 'die' }],
       wordBank: ['die', 'der', 'das', 'den'],
-      explanation: 'Gäste is plural, and die is the subject of kommen inside the clause, so the plural relative pronoun die is correct.',
+      explanation:
+        'Gäste is plural, and die is the subject of kommen inside the clause, so the plural relative pronoun die is correct.',
     },
     {
       id: 'ch75-ex-62',
@@ -1210,7 +1487,8 @@ export const chapter075: ChapterDefinition = {
         { id: 's4', text: 'bestanden hat,' },
         { id: 's5', text: 'feiert heute.' },
       ],
-      explanation: 'Student is masculine, and der is the subject of bestanden hat inside the clause, so it is nominative der; the auxiliary hat moves to the end of the relative clause.',
+      explanation:
+        'Student is masculine, and der is the subject of bestanden hat inside the clause, so it is nominative der; the auxiliary hat moves to the end of the relative clause.',
     },
     {
       id: 'ch75-ex-63',
@@ -1228,7 +1506,8 @@ export const chapter075: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'a',
-      explanation: 'Freundin is feminine, and die is the object of kenne inside the clause, so it is accusative — identical in form to the feminine nominative.',
+      explanation:
+        'Freundin is feminine, and die is the object of kenne inside the clause, so it is accusative — identical in form to the feminine nominative.',
     },
     {
       id: 'ch75-ex-64',
@@ -1236,13 +1515,28 @@ export const chapter075: ChapterDefinition = {
       order: 64,
       type: 'errorSpotting',
       level: 'production',
-      grammarFocus: ['relative-pronoun-nominative', 'gender-agreement', 'error-correction'],
+      grammarFocus: [
+        'relative-pronoun-nominative',
+        'gender-agreement',
+        'error-correction',
+      ],
       instruction: 'Tap the token that contains the mistake.',
       prompt: 'Find the incorrect word.',
-      tokens: ['Das', 'Geschenk,', 'die', 'er', 'mir', 'gegeben', 'hat,', 'gefällt', 'mir.'],
+      tokens: [
+        'Das',
+        'Geschenk,',
+        'die',
+        'er',
+        'mir',
+        'gegeben',
+        'hat,',
+        'gefällt',
+        'mir.',
+      ],
       errorTokenIndex: 2,
       correction: 'das',
-      explanation: 'Geschenk is neuter, so the relative pronoun must be das, not the feminine form die.',
+      explanation:
+        'Geschenk is neuter, so the relative pronoun must be das, not the feminine form die.',
     },
     {
       id: 'ch75-ex-65',
@@ -1252,11 +1546,13 @@ export const chapter075: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['relative-pronoun-accusative', 'case-from-clause-role'],
       instruction: 'Drag the correct relative pronoun into the gap.',
-      prompt: 'Complete the sentence with the correct relative pronoun. (Rechnung, accusative)',
+      prompt:
+        'Complete the sentence with the correct relative pronoun. (Rechnung, accusative)',
       templateParts: ['Die Rechnung, ', ' ich bezahlt habe, war sehr hoch.'],
       slots: [{ id: 'slot1', correctWord: 'die' }],
       wordBank: ['die', 'der', 'das', 'den'],
-      explanation: 'Rechnung is feminine, and die is the object of bezahlt habe inside the clause, so it is accusative — identical in form to the feminine nominative.',
+      explanation:
+        'Rechnung is feminine, and die is the object of bezahlt habe inside the clause, so it is accusative — identical in form to the feminine nominative.',
     },
     {
       id: 'ch75-ex-66',
@@ -1273,7 +1569,8 @@ export const chapter075: ChapterDefinition = {
         { id: 's3', text: 'ich bekommen habe,' },
         { id: 's4', text: 'gefällt mir sehr.' },
       ],
-      explanation: 'Geschenk is neuter, and das is the object of bekommen habe inside the clause, so it is accusative — identical in form to the neuter nominative.',
+      explanation:
+        'Geschenk is neuter, and das is the object of bekommen habe inside the clause, so it is accusative — identical in form to the neuter nominative.',
     },
     {
       id: 'ch75-ex-67',
@@ -1285,13 +1582,34 @@ export const chapter075: ChapterDefinition = {
       instruction: 'Match each German relative clause to its English translation.',
       prompt: 'German relative clauses and their English translations.',
       pairs: [
-        { id: 'p1', left: 'der Nachbar, der laute Musik hört', right: 'the neighbor who listens to loud music' },
-        { id: 'p2', left: 'die Rechnung, die ich bezahlt habe', right: 'the bill that I paid' },
-        { id: 'p3', left: 'das Kind, das im Garten spielt', right: 'the child who is playing in the garden' },
-        { id: 'p4', left: 'die Studenten, die viel lernen', right: 'the students who study a lot' },
-        { id: 'p5', left: 'der Kuchen, den meine Mutter gebacken hat', right: 'the cake that my mother baked' },
+        {
+          id: 'p1',
+          left: 'der Nachbar, der laute Musik hört',
+          right: 'the neighbor who listens to loud music',
+        },
+        {
+          id: 'p2',
+          left: 'die Rechnung, die ich bezahlt habe',
+          right: 'the bill that I paid',
+        },
+        {
+          id: 'p3',
+          left: 'das Kind, das im Garten spielt',
+          right: 'the child who is playing in the garden',
+        },
+        {
+          id: 'p4',
+          left: 'die Studenten, die viel lernen',
+          right: 'the students who study a lot',
+        },
+        {
+          id: 'p5',
+          left: 'der Kuchen, den meine Mutter gebacken hat',
+          right: 'the cake that my mother baked',
+        },
       ],
-      explanation: 'Each German relative clause matches its English translation, whether the pronoun is a subject (who/that) or an object (that).',
+      explanation:
+        'Each German relative clause matches its English translation, whether the pronoun is a subject (who/that) or an object (that).',
     },
     {
       id: 'ch75-ex-68',
@@ -1300,13 +1618,16 @@ export const chapter075: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['relative-pronoun-accusative', 'case-from-clause-role'],
-      instruction: 'Write only the missing relative pronoun. Capitalisation is not checked.',
-      prompt: 'Das Fahrrad, ___ ich letztes Jahr gekauft habe, ist kaputt. (relative pronoun, accusative)',
+      instruction:
+        'Write only the missing relative pronoun. Capitalisation is not checked.',
+      prompt:
+        'Das Fahrrad, ___ ich letztes Jahr gekauft habe, ist kaputt. (relative pronoun, accusative)',
       acceptedAnswers: ['das'],
       answerMode: 'caseInsensitive',
       placeholder: 'das',
       maxLength: 5,
-      explanation: 'Fahrrad is neuter; das is the object of gekauft habe inside the clause, so it is accusative — identical to the neuter nominative.',
+      explanation:
+        'Fahrrad is neuter; das is the object of gekauft habe inside the clause, so it is accusative — identical to the neuter nominative.',
     },
     {
       id: 'ch75-ex-69',
@@ -1316,11 +1637,13 @@ export const chapter075: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['relative-pronoun-nominative', 'gender-agreement'],
       instruction: 'Drag the correct relative pronoun into the gap.',
-      prompt: 'Complete the sentence with the correct relative pronoun. (Chef, nominative)',
+      prompt:
+        'Complete the sentence with the correct relative pronoun. (Chef, nominative)',
       templateParts: ['Der Chef, ', ' heute Geburtstag hat, lädt uns alle ein.'],
       slots: [{ id: 'slot1', correctWord: 'der' }],
       wordBank: ['der', 'den', 'die', 'das'],
-      explanation: 'Chef is masculine, and der is the subject of hat inside the clause, so it is nominative der.',
+      explanation:
+        'Chef is masculine, and der is the subject of hat inside the clause, so it is nominative der.',
     },
     {
       id: 'ch75-ex-70',
@@ -1330,7 +1653,8 @@ export const chapter075: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['case-identification', 'relative-pronoun-accusative', 'plural'],
       instruction: 'Identify the case of the highlighted relative pronoun.',
-      prompt: 'In "Die Gäste, die wir eingeladen haben, kommen um acht," what case is die in the relative clause?',
+      prompt:
+        'In "Die Gäste, die wir eingeladen haben, kommen um acht," what case is die in the relative clause?',
       options: [
         { id: 'a', text: 'Nominative' },
         { id: 'b', text: 'Accusative' },
@@ -1338,7 +1662,8 @@ export const chapter075: ChapterDefinition = {
         { id: 'd', text: 'Genitive' },
       ],
       correctOptionId: 'b',
-      explanation: 'die is the direct object of eingeladen haben (wir haben die Gäste eingeladen), so it is accusative — identical in form to the plural nominative.',
+      explanation:
+        'die is the direct object of eingeladen haben (wir haben die Gäste eingeladen), so it is accusative — identical in form to the plural nominative.',
     },
     {
       id: 'ch75-ex-71',
@@ -1346,13 +1671,29 @@ export const chapter075: ChapterDefinition = {
       order: 71,
       type: 'errorSpotting',
       level: 'production',
-      grammarFocus: ['relative-pronoun-nominative', 'gender-agreement', 'error-correction'],
+      grammarFocus: [
+        'relative-pronoun-nominative',
+        'gender-agreement',
+        'error-correction',
+      ],
       instruction: 'Tap the token that contains the mistake.',
       prompt: 'Find the incorrect word.',
-      tokens: ['Die', 'Schwester,', 'der', 'in', 'Bonn', 'wohnt,', 'ruft', 'mich', 'oft', 'an.'],
+      tokens: [
+        'Die',
+        'Schwester,',
+        'der',
+        'in',
+        'Bonn',
+        'wohnt,',
+        'ruft',
+        'mich',
+        'oft',
+        'an.',
+      ],
       errorTokenIndex: 2,
       correction: 'die',
-      explanation: 'Schwester is feminine, so the relative pronoun must be die, not the masculine form der.',
+      explanation:
+        'Schwester is feminine, so the relative pronoun must be die, not the masculine form der.',
     },
     {
       id: 'ch75-ex-72',
@@ -1360,7 +1701,11 @@ export const chapter075: ChapterDefinition = {
       order: 72,
       type: 'sentenceOrdering',
       level: 'controlled',
-      grammarFocus: ['relative-pronoun-accusative', 'case-from-clause-role', 'verb-final'],
+      grammarFocus: [
+        'relative-pronoun-accusative',
+        'case-from-clause-role',
+        'verb-final',
+      ],
       instruction: 'Drag the segments into the correct order.',
       prompt: 'Put the words in order to form a correct sentence about der Roman.',
       segments: [
@@ -1370,7 +1715,8 @@ export const chapter075: ChapterDefinition = {
         { id: 's4', text: 'gekauft habe,' },
         { id: 's5', text: 'ist spannend.' },
       ],
-      explanation: 'Roman is masculine, but it is the object of gekauft habe inside the clause, so the pronoun is accusative den; the auxiliary habe moves to the end of the relative clause.',
+      explanation:
+        'Roman is masculine, but it is the object of gekauft habe inside the clause, so the pronoun is accusative den; the auxiliary habe moves to the end of the relative clause.',
     },
     {
       id: 'ch75-ex-73',
@@ -1380,11 +1726,13 @@ export const chapter075: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['relative-pronoun-nominative', 'gender-agreement'],
       instruction: 'Drag the correct relative pronoun into the gap.',
-      prompt: 'Complete the sentence with the correct relative pronoun. (Chefin, nominative)',
+      prompt:
+        'Complete the sentence with the correct relative pronoun. (Chefin, nominative)',
       templateParts: ['Die Chefin, ', ' das Team leitet, ist sehr kompetent.'],
       slots: [{ id: 'slot1', correctWord: 'die' }],
       wordBank: ['die', 'der', 'das', 'den'],
-      explanation: 'Chefin is feminine, and die is the subject of leitet inside the clause, so it is nominative die.',
+      explanation:
+        'Chefin is feminine, and die is the subject of leitet inside the clause, so it is nominative die.',
     },
     {
       id: 'ch75-ex-74',
@@ -1392,8 +1740,13 @@ export const chapter075: ChapterDefinition = {
       order: 74,
       type: 'matching',
       level: 'controlled',
-      grammarFocus: ['relative-pronoun-nominative', 'relative-pronoun-accusative', 'case-from-clause-role'],
-      instruction: 'Match each antecedent and clause role to the correct relative pronoun.',
+      grammarFocus: [
+        'relative-pronoun-nominative',
+        'relative-pronoun-accusative',
+        'case-from-clause-role',
+      ],
+      instruction:
+        'Match each antecedent and clause role to the correct relative pronoun.',
       prompt: 'Antecedent and clause role paired with the matching relative pronoun.',
       pairs: [
         { id: 'p1', left: 'Sohn (nominative, subject)', right: 'der' },
@@ -1401,7 +1754,8 @@ export const chapter075: ChapterDefinition = {
         { id: 'p3', left: 'Töchter (nominative, subject, plural)', right: 'die' },
         { id: 'p4', left: 'Fahrrad (accusative, object)', right: 'das' },
       ],
-      explanation: 'Gender and number come from the antecedent, while case comes from the pronoun\'s role in the relative clause: der (masc. nom.), den (masc. acc.), die (fem./plural), das (neut. nom./acc.).',
+      explanation:
+        "Gender and number come from the antecedent, while case comes from the pronoun's role in the relative clause: der (masc. nom.), den (masc. acc.), die (fem./plural), das (neut. nom./acc.).",
     },
     {
       id: 'ch75-ex-75',
@@ -1410,13 +1764,15 @@ export const chapter075: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['clause-combination', 'relative-pronoun-nominative'],
-      instruction: 'Combine the two sentences into one, keeping the first sentence as the main clause and turning the second into a relative clause. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences into one, keeping the first sentence as the main clause and turning the second into a relative clause. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Der Hund bellt laut. + Der Hund gehört meinem Nachbarn.',
       acceptedAnswers: ['Der Hund, der meinem Nachbarn gehört, bellt laut.'],
       answerMode: 'normalized',
       placeholder: 'Der Hund, der ..., bellt laut.',
       maxLength: 70,
-      explanation: 'Hund is masculine and is the subject of gehört inside the relative clause, so it takes the nominative form der: Der Hund, der meinem Nachbarn gehört, bellt laut.',
+      explanation:
+        'Hund is masculine and is the subject of gehört inside the relative clause, so it takes the nominative form der: Der Hund, der meinem Nachbarn gehört, bellt laut.',
     },
     {
       id: 'ch75-ex-76',
@@ -1434,7 +1790,8 @@ export const chapter075: ChapterDefinition = {
         { id: 's4', text: 'sitzt,' },
         { id: 's5', text: 'ist sehr freundlich.' },
       ],
-      explanation: 'Kollegin is feminine, and die is the subject of sitzt inside the clause, so it is nominative die; the finite verb sitzt moves to the end of the relative clause.',
+      explanation:
+        'Kollegin is feminine, and die is the subject of sitzt inside the clause, so it is nominative die; the finite verb sitzt moves to the end of the relative clause.',
     },
     {
       id: 'ch75-ex-77',
@@ -1448,7 +1805,8 @@ export const chapter075: ChapterDefinition = {
       tokens: ['Die', 'Freunde,', 'das', 'uns', 'besuchen,', 'bleiben', 'eine', 'Woche.'],
       errorTokenIndex: 2,
       correction: 'die',
-      explanation: 'Freunde is plural, so the relative pronoun must be die, not the neuter singular form das.',
+      explanation:
+        'Freunde is plural, so the relative pronoun must be die, not the neuter singular form das.',
     },
     {
       id: 'ch75-ex-78',
@@ -1458,11 +1816,13 @@ export const chapter075: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['relative-pronoun-accusative', 'case-from-clause-role'],
       instruction: 'Drag the correct relative pronoun into the gap.',
-      prompt: 'Complete the sentence with the correct relative pronoun. (Zimmer, accusative)',
+      prompt:
+        'Complete the sentence with the correct relative pronoun. (Zimmer, accusative)',
       templateParts: ['Das Zimmer, ', ' wir renoviert haben, sieht jetzt toll aus.'],
       slots: [{ id: 'slot1', correctWord: 'das' }],
       wordBank: ['das', 'der', 'die', 'den'],
-      explanation: 'Zimmer is neuter, and das is the object of renoviert haben inside the clause, so it is accusative — identical in form to the neuter nominative.',
+      explanation:
+        'Zimmer is neuter, and das is the object of renoviert haben inside the clause, so it is accusative — identical in form to the neuter nominative.',
     },
     {
       id: 'ch75-ex-79',
@@ -1472,7 +1832,8 @@ export const chapter075: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['comma'],
       instruction: 'Choose the correctly punctuated sentence.',
-      prompt: '"I am reading a book that is very exciting." Which sentence is correctly punctuated?',
+      prompt:
+        '"I am reading a book that is very exciting." Which sentence is correctly punctuated?',
       options: [
         { id: 'a', text: 'Ich lese ein Buch, das sehr spannend ist.' },
         { id: 'b', text: 'Ich lese ein Buch das sehr spannend ist.' },
@@ -1480,7 +1841,8 @@ export const chapter075: ChapterDefinition = {
         { id: 'd', text: 'Ich lese ein Buch, das sehr spannend, ist.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The relative clause das sehr spannend ist ends the sentence, so it needs only the opening comma right after Buch.',
+      explanation:
+        'The relative clause das sehr spannend ist ends the sentence, so it needs only the opening comma right after Buch.',
     },
     {
       id: 'ch75-ex-80',
@@ -1497,7 +1859,8 @@ export const chapter075: ChapterDefinition = {
         { id: 's3', text: 'ich eingeladen habe,' },
         { id: 's4', text: 'kommen um sieben.' },
       ],
-      explanation: 'Freunde is plural, and die is the object of eingeladen habe inside the clause, so it is accusative — identical in form to the plural nominative; the auxiliary habe moves to the end of the relative clause.',
+      explanation:
+        'Freunde is plural, and die is the object of eingeladen habe inside the clause, so it is accusative — identical in form to the plural nominative; the auxiliary habe moves to the end of the relative clause.',
     },
     {
       id: 'ch75-ex-81',
@@ -1507,11 +1870,13 @@ export const chapter075: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['relative-pronoun-accusative', 'case-from-clause-role'],
       instruction: 'Drag the correct relative pronoun into the gap.',
-      prompt: 'Complete the sentence with the correct relative pronoun. (Nachbar, accusative)',
+      prompt:
+        'Complete the sentence with the correct relative pronoun. (Nachbar, accusative)',
       templateParts: ['Der Nachbar, ', ' wir gestern getroffen haben, zieht bald um.'],
       slots: [{ id: 'slot1', correctWord: 'den' }],
       wordBank: ['den', 'der', 'die', 'das'],
-      explanation: 'Nachbar is masculine, but he is the object of getroffen haben inside the clause (wir haben ihn getroffen), so the pronoun must be accusative den.',
+      explanation:
+        'Nachbar is masculine, but he is the object of getroffen haben inside the clause (wir haben ihn getroffen), so the pronoun must be accusative den.',
     },
     {
       id: 'ch75-ex-82',
@@ -1519,17 +1884,43 @@ export const chapter075: ChapterDefinition = {
       order: 82,
       type: 'matching',
       level: 'production',
-      grammarFocus: ['clause-combination', 'relative-pronoun-nominative', 'relative-pronoun-accusative'],
-      instruction: 'Match each pair of simple sentences to the sentence that correctly combines them with a relative clause.',
+      grammarFocus: [
+        'clause-combination',
+        'relative-pronoun-nominative',
+        'relative-pronoun-accusative',
+      ],
+      instruction:
+        'Match each pair of simple sentences to the sentence that correctly combines them with a relative clause.',
       prompt: 'Two simple sentences and their combined relative-clause sentence.',
       pairs: [
-        { id: 'p1', left: 'Ich besuche meinen Onkel. Mein Onkel wohnt in Dresden.', right: 'Ich besuche meinen Onkel, der in Dresden wohnt.' },
-        { id: 'p2', left: 'Sie liest das Magazin. Ihre Freundin hat das Magazin empfohlen.', right: 'Sie liest das Magazin, das ihre Freundin empfohlen hat.' },
-        { id: 'p3', left: 'Wir kennen die Ärztin. Die Ärztin arbeitet im Krankenhaus.', right: 'Wir kennen die Ärztin, die im Krankenhaus arbeitet.' },
-        { id: 'p4', left: 'Ich habe den Schlüssel gefunden. Du hast den Schlüssel verloren.', right: 'Ich habe den Schlüssel gefunden, den du verloren hast.' },
-        { id: 'p5', left: 'Die Kinder mögen den Lehrer. Der Lehrer erzählt lustige Geschichten.', right: 'Die Kinder mögen den Lehrer, der lustige Geschichten erzählt.' },
+        {
+          id: 'p1',
+          left: 'Ich besuche meinen Onkel. Mein Onkel wohnt in Dresden.',
+          right: 'Ich besuche meinen Onkel, der in Dresden wohnt.',
+        },
+        {
+          id: 'p2',
+          left: 'Sie liest das Magazin. Ihre Freundin hat das Magazin empfohlen.',
+          right: 'Sie liest das Magazin, das ihre Freundin empfohlen hat.',
+        },
+        {
+          id: 'p3',
+          left: 'Wir kennen die Ärztin. Die Ärztin arbeitet im Krankenhaus.',
+          right: 'Wir kennen die Ärztin, die im Krankenhaus arbeitet.',
+        },
+        {
+          id: 'p4',
+          left: 'Ich habe den Schlüssel gefunden. Du hast den Schlüssel verloren.',
+          right: 'Ich habe den Schlüssel gefunden, den du verloren hast.',
+        },
+        {
+          id: 'p5',
+          left: 'Die Kinder mögen den Lehrer. Der Lehrer erzählt lustige Geschichten.',
+          right: 'Die Kinder mögen den Lehrer, der lustige Geschichten erzählt.',
+        },
       ],
-      explanation: 'Each pair combines two simple sentences into one sentence with a relative clause, matching gender and number to the antecedent and case to the pronoun\'s role inside its own clause.',
+      explanation:
+        "Each pair combines two simple sentences into one sentence with a relative clause, matching gender and number to the antecedent and case to the pronoun's role inside its own clause.",
     },
     {
       id: 'ch75-ex-83',
@@ -1537,13 +1928,18 @@ export const chapter075: ChapterDefinition = {
       order: 83,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['relative-pronoun-nominative', 'case-from-clause-role', 'error-correction'],
+      grammarFocus: [
+        'relative-pronoun-nominative',
+        'case-from-clause-role',
+        'error-correction',
+      ],
       instruction: 'Tap the token that contains the mistake.',
       prompt: 'Find the incorrect word.',
       tokens: ['Ich', 'habe', 'einen', 'Freund,', 'den', 'in', 'Hamburg', 'lebt.'],
       errorTokenIndex: 4,
       correction: 'der',
-      explanation: 'Inside the relative clause, the pronoun is the subject of lebt, so it must be nominative der, even though Freund is accusative (object of habe) in the main clause.',
+      explanation:
+        'Inside the relative clause, the pronoun is the subject of lebt, so it must be nominative der, even though Freund is accusative (object of habe) in the main clause.',
     },
     {
       id: 'ch75-ex-84',
@@ -1552,13 +1948,15 @@ export const chapter075: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'relative-pronoun-accusative'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Die Rechnung, der ich bezahlt habe, war hoch.',
       acceptedAnswers: ['Die Rechnung, die ich bezahlt habe, war hoch.'],
       answerMode: 'normalized',
       placeholder: 'Die Rechnung, die ...',
       maxLength: 60,
-      explanation: 'Rechnung is feminine, so the relative pronoun must be die, not the masculine form der.',
+      explanation:
+        'Rechnung is feminine, so the relative pronoun must be die, not the masculine form der.',
     },
     {
       id: 'ch75-ex-85',
@@ -1576,7 +1974,8 @@ export const chapter075: ChapterDefinition = {
         { id: 's4', text: 'liegt,' },
         { id: 's5', text: 'ist sehr hell.' },
       ],
-      explanation: 'Zimmer is neuter, and das is the subject of liegt inside the clause, so it is nominative das; the finite verb liegt moves to the end of the relative clause.',
+      explanation:
+        'Zimmer is neuter, and das is the subject of liegt inside the clause, so it is nominative das; the finite verb liegt moves to the end of the relative clause.',
     },
     {
       id: 'ch75-ex-86',
@@ -1586,11 +1985,13 @@ export const chapter075: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['relative-pronoun-accusative', 'case-from-clause-role'],
       instruction: 'Drag the correct relative pronoun into the gap.',
-      prompt: 'Complete the sentence with the correct relative pronoun. (Wohnung, accusative)',
+      prompt:
+        'Complete the sentence with the correct relative pronoun. (Wohnung, accusative)',
       templateParts: ['Die Wohnung, ', ' wir gemietet haben, liegt zentral.'],
       slots: [{ id: 'slot1', correctWord: 'die' }],
       wordBank: ['die', 'der', 'das', 'den'],
-      explanation: 'Wohnung is feminine, and die is the object of gemietet haben inside the clause, so it is accusative — identical in form to the feminine nominative.',
+      explanation:
+        'Wohnung is feminine, and die is the object of gemietet haben inside the clause, so it is accusative — identical in form to the feminine nominative.',
     },
     {
       id: 'ch75-ex-87',
@@ -1608,7 +2009,8 @@ export const chapter075: ChapterDefinition = {
         { id: 'd', text: 'Die Wohnung, den wir gemietet haben, liegt zentral.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Wohnung is feminine and is the object of gemietet haben inside the clause, so the accusative form die is required — identical in form to the feminine nominative.',
+      explanation:
+        'Wohnung is feminine and is the object of gemietet haben inside the clause, so the accusative form die is required — identical in form to the feminine nominative.',
     },
     {
       id: 'ch75-ex-88',
@@ -1616,13 +2018,27 @@ export const chapter075: ChapterDefinition = {
       order: 88,
       type: 'errorSpotting',
       level: 'production',
-      grammarFocus: ['relative-pronoun-nominative', 'gender-agreement', 'error-correction'],
+      grammarFocus: [
+        'relative-pronoun-nominative',
+        'gender-agreement',
+        'error-correction',
+      ],
       instruction: 'Tap the token that contains the mistake.',
       prompt: 'Find the incorrect word.',
-      tokens: ['Die', 'Wohnung,', 'das', 'wir', 'gemietet', 'haben,', 'liegt', 'zentral.'],
+      tokens: [
+        'Die',
+        'Wohnung,',
+        'das',
+        'wir',
+        'gemietet',
+        'haben,',
+        'liegt',
+        'zentral.',
+      ],
       errorTokenIndex: 2,
       correction: 'die',
-      explanation: 'Wohnung is feminine, so the relative pronoun must be die, not the neuter form das.',
+      explanation:
+        'Wohnung is feminine, so the relative pronoun must be die, not the neuter form das.',
     },
     {
       id: 'ch75-ex-89',
@@ -1640,7 +2056,8 @@ export const chapter075: ChapterDefinition = {
         { id: 's4', text: 'hört,' },
         { id: 's5', text: 'stört uns jeden Abend.' },
       ],
-      explanation: 'Nachbar is masculine, and der is the subject of hört inside the clause, so it is nominative der; the finite verb hört moves to the end of the relative clause.',
+      explanation:
+        'Nachbar is masculine, and der is the subject of hört inside the clause, so it is nominative der; the finite verb hört moves to the end of the relative clause.',
     },
     {
       id: 'ch75-ex-90',
@@ -1650,11 +2067,13 @@ export const chapter075: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['relative-pronoun-nominative', 'plural'],
       instruction: 'Drag the correct relative pronoun into the gap.',
-      prompt: 'Complete the sentence with the correct relative pronoun. (Kollegen, nominative)',
+      prompt:
+        'Complete the sentence with the correct relative pronoun. (Kollegen, nominative)',
       templateParts: ['Die Kollegen, ', ' im Großraumbüro sitzen, sind sehr laut.'],
       slots: [{ id: 'slot1', correctWord: 'die' }],
       wordBank: ['die', 'der', 'das', 'den'],
-      explanation: 'Kollegen is plural, and die is the subject of sitzen inside the clause, so the plural relative pronoun die is correct.',
+      explanation:
+        'Kollegen is plural, and die is the subject of sitzen inside the clause, so the plural relative pronoun die is correct.',
     },
     {
       id: 'ch75-ex-91',
@@ -1662,8 +2081,13 @@ export const chapter075: ChapterDefinition = {
       order: 91,
       type: 'matching',
       level: 'controlled',
-      grammarFocus: ['relative-pronoun-nominative', 'relative-pronoun-accusative', 'case-from-clause-role'],
-      instruction: 'Match each antecedent and clause role to the correct relative pronoun.',
+      grammarFocus: [
+        'relative-pronoun-nominative',
+        'relative-pronoun-accusative',
+        'case-from-clause-role',
+      ],
+      instruction:
+        'Match each antecedent and clause role to the correct relative pronoun.',
       prompt: 'Antecedent and clause role paired with the matching relative pronoun.',
       pairs: [
         { id: 'p1', left: 'Kollege (nominative, subject)', right: 'der' },
@@ -1671,7 +2095,8 @@ export const chapter075: ChapterDefinition = {
         { id: 'p3', left: 'Kolleginnen (nominative, subject, plural)', right: 'die' },
         { id: 'p4', left: 'Zimmer (accusative, object)', right: 'das' },
       ],
-      explanation: 'Gender and number come from the antecedent, while case comes from the pronoun\'s role in the relative clause: der (masc. nom.), den (masc. acc.), die (fem./plural), das (neut. nom./acc.).',
+      explanation:
+        "Gender and number come from the antecedent, while case comes from the pronoun's role in the relative clause: der (masc. nom.), den (masc. acc.), die (fem./plural), das (neut. nom./acc.).",
     },
     {
       id: 'ch75-ex-92',
@@ -1680,13 +2105,15 @@ export const chapter075: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['clause-combination', 'relative-pronoun-accusative'],
-      instruction: 'Combine the two sentences into one, keeping the first sentence as the main clause and turning the second into a relative clause. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences into one, keeping the first sentence as the main clause and turning the second into a relative clause. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich sehe den Mann. + Ich habe den Mann gestern getroffen.',
       acceptedAnswers: ['Ich sehe den Mann, den ich gestern getroffen habe.'],
       answerMode: 'normalized',
       placeholder: 'Ich sehe den Mann, den ...',
       maxLength: 70,
-      explanation: 'Mann is masculine, but inside the clause it is the object of getroffen habe, so it takes the accusative form den, not der.',
+      explanation:
+        'Mann is masculine, but inside the clause it is the object of getroffen habe, so it takes the accusative form den, not der.',
     },
     {
       id: 'ch75-ex-93',
@@ -1694,7 +2121,11 @@ export const chapter075: ChapterDefinition = {
       order: 93,
       type: 'sentenceOrdering',
       level: 'controlled',
-      grammarFocus: ['relative-pronoun-accusative', 'case-from-clause-role', 'verb-final'],
+      grammarFocus: [
+        'relative-pronoun-accusative',
+        'case-from-clause-role',
+        'verb-final',
+      ],
       instruction: 'Drag the segments into the correct order.',
       prompt: 'Put the words in order to form a correct sentence about die Uhr.',
       segments: [
@@ -1703,7 +2134,8 @@ export const chapter075: ChapterDefinition = {
         { id: 's3', text: 'ich verloren habe,' },
         { id: 's4', text: 'war ein Geschenk.' },
       ],
-      explanation: 'Uhr is feminine, and die is the object of verloren habe inside the clause, so it is accusative — identical in form to the feminine nominative; the auxiliary habe moves to the end of the relative clause.',
+      explanation:
+        'Uhr is feminine, and die is the object of verloren habe inside the clause, so it is accusative — identical in form to the feminine nominative; the auxiliary habe moves to the end of the relative clause.',
     },
   ],
 };

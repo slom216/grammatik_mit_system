@@ -80,7 +80,7 @@ export const chapter046: ChapterDefinition = {
       {
         id: 'ch46-rule-07',
         heading:
-          "Inversion: when the subordinate clause comes first, the main-clause verb comes right after the comma",
+          'Inversion: when the subordinate clause comes first, the main-clause verb comes right after the comma',
         paragraphs: [
           "In a German sentence, the finite verb of the main clause always occupies position 2 — but position 2 counts clause elements, not words. When an entire subordinate clause opens the sentence, it fills position 1 by itself, so the main clause's finite verb must immediately follow the comma, before its own subject.",
           'Weil ich krank bin, bleibe ich zu Hause. (subordinate clause = position 1; bleibe = position 2, right after the comma; ich = subject, now after the verb.) Compare the everyday order Ich bleibe zu Hause, weil ich krank bin, where bleibe already sits in position 2 of the main clause.',
@@ -91,10 +91,18 @@ export const chapter046: ChapterDefinition = {
       {
         id: 'ch46-table-01',
         title: 'Main-clause vs. subordinate-clause word order',
-        columns: ['Connector', 'Main clause (verb = position 2)', 'Subordinate clause (verb = final)'],
+        columns: [
+          'Connector',
+          'Main clause (verb = position 2)',
+          'Subordinate clause (verb = final)',
+        ],
         rows: [
           ['weil (because)', 'Ich bleibe zu Hause.', 'weil ich krank bin.'],
-          ['wenn (if / when(ever))', 'Wir gehen spazieren.', 'wenn das Wetter schön ist.'],
+          [
+            'wenn (if / when(ever))',
+            'Wir gehen spazieren.',
+            'wenn das Wetter schön ist.',
+          ],
           ['dass (that)', 'Er hat recht.', 'dass er recht hat.'],
         ],
         note: 'In each subordinate clause the finite verb (bin, ist, hat) moves from position 2 to the very end of the clause; everything else keeps its normal order in front of it.',
@@ -102,14 +110,23 @@ export const chapter046: ChapterDefinition = {
       {
         id: 'ch46-table-02',
         title: 'Inversion: verb position when the subordinate clause comes first',
-        columns: ['Normal order (main clause first)', 'Subordinate clause first (inversion)'],
+        columns: [
+          'Normal order (main clause first)',
+          'Subordinate clause first (inversion)',
+        ],
         rows: [
-          ['Ich bleibe zu Hause, weil ich krank bin.', 'Weil ich krank bin, bleibe ich zu Hause.'],
+          [
+            'Ich bleibe zu Hause, weil ich krank bin.',
+            'Weil ich krank bin, bleibe ich zu Hause.',
+          ],
           [
             'Wir gehen spazieren, wenn das Wetter schön ist.',
             'Wenn das Wetter schön ist, gehen wir spazieren.',
           ],
-          ['Ich rufe dich an, wenn ich Zeit habe.', 'Wenn ich Zeit habe, rufe ich dich an.'],
+          [
+            'Ich rufe dich an, wenn ich Zeit habe.',
+            'Wenn ich Zeit habe, rufe ich dich an.',
+          ],
         ],
         note: 'dass-clauses are rarely fronted this way, because a content clause naturally follows the verb it depends on (sagen, glauben, ...).',
       },
@@ -131,7 +148,8 @@ export const chapter046: ChapterDefinition = {
         german: 'Ich glaube, dass er recht hat.',
         english: 'I believe that he is right.',
         highlight: ['dass er recht hat'],
-        explanation: 'dass introduces what ich glaube reports; the verb hat moves to the end.',
+        explanation:
+          'dass introduces what ich glaube reports; the verb hat moves to the end.',
       },
       {
         german: 'Er ist nie müde, weil er früh aufsteht.',
@@ -144,7 +162,8 @@ export const chapter046: ChapterDefinition = {
         german: 'Ich kann nicht kommen, weil ich arbeiten muss.',
         english: "I can't come because I have to work.",
         highlight: ['arbeiten muss'],
-        explanation: 'The modal verb muss goes to the very end; the infinitive arbeiten comes right before it.',
+        explanation:
+          'The modal verb muss goes to the very end; the infinitive arbeiten comes right before it.',
       },
       {
         german: 'Sie ist glücklich, weil sie die Prüfung bestanden hat.',
@@ -157,13 +176,15 @@ export const chapter046: ChapterDefinition = {
         german: 'Immer wenn es regnet, nehme ich einen Regenschirm mit.',
         english: 'Whenever it rains, I take an umbrella.',
         highlight: ['Immer wenn es regnet'],
-        explanation: 'wenn also introduces repeated or habitual situations, often signalled by immer (always).',
+        explanation:
+          'wenn also introduces repeated or habitual situations, often signalled by immer (always).',
       },
       {
         german: 'Ich hoffe, dass du bald wieder gesund bist.',
         english: 'I hope that you get well again soon.',
         highlight: ['dass du bald wieder gesund bist'],
-        explanation: 'dass introduces the content of what ich hoffe; the verb bist stands at the end.',
+        explanation:
+          'dass introduces the content of what ich hoffe; the verb bist stands at the end.',
       },
       {
         german: 'Weil ich krank bin, bleibe ich zu Hause.',
@@ -183,25 +204,29 @@ export const chapter046: ChapterDefinition = {
         german: 'Wir bleiben im Garten, wenn es nicht regnet.',
         english: "We'll stay in the garden if it doesn't rain.",
         highlight: ['wenn es nicht regnet'],
-        explanation: 'A comma always separates the main clause from the subordinate clause, regardless of order.',
+        explanation:
+          'A comma always separates the main clause from the subordinate clause, regardless of order.',
       },
       {
         german: 'Er sagt, dass er heute keine Zeit hat.',
         english: 'He says that he has no time today.',
         highlight: ['dass er heute keine Zeit hat'],
-        explanation: 'Negation (keine) stays in its normal place before the final verb hat.',
+        explanation:
+          'Negation (keine) stays in its normal place before the final verb hat.',
       },
       {
         german: 'Warum weinst du? — Ich weine, weil der Film so traurig ist.',
         english: "Why are you crying? — I'm crying because the film is so sad.",
         highlight: ['weil der Film so traurig ist'],
-        explanation: 'weil directly answers a warum-question; the verb ist stands at the end of the reason clause.',
+        explanation:
+          'weil directly answers a warum-question; the verb ist stands at the end of the reason clause.',
       },
       {
         german: 'Die Wettervorhersage sagt, dass es morgen schneit.',
         english: 'The weather forecast says that it will snow tomorrow.',
         highlight: ['dass es morgen schneit'],
-        explanation: 'dass reports the content of the forecast; the verb schneit moves to the end.',
+        explanation:
+          'dass reports the content of the forecast; the verb schneit moves to the end.',
       },
     ],
     commonMistakes: [
@@ -267,7 +292,8 @@ export const chapter046: ChapterDefinition = {
         { id: 'd', text: 'Ich bleibe zu Hause, weil bin ich krank.' },
       ],
       correctOptionId: 'b',
-      explanation: 'weil sends the finite verb to the very end of its clause: ..., weil ich krank bin.',
+      explanation:
+        'weil sends the finite verb to the very end of its clause: ..., weil ich krank bin.',
     },
     {
       id: 'ch46-ex-02',
@@ -285,7 +311,8 @@ export const chapter046: ChapterDefinition = {
         { id: 'd', text: 'Wir gehen spazieren, wenn schön das Wetter ist.' },
       ],
       correctOptionId: 'c',
-      explanation: 'wenn sends the finite verb ist to the end of its clause: ..., wenn das Wetter schön ist.',
+      explanation:
+        'wenn sends the finite verb ist to the end of its clause: ..., wenn das Wetter schön ist.',
     },
     {
       id: 'ch46-ex-03',
@@ -303,7 +330,8 @@ export const chapter046: ChapterDefinition = {
         { id: 'd', text: 'Ich glaube, dass recht er hat.' },
       ],
       correctOptionId: 'b',
-      explanation: 'dass sends the finite verb hat to the end of its clause: ..., dass er recht hat.',
+      explanation:
+        'dass sends the finite verb hat to the end of its clause: ..., dass er recht hat.',
     },
     {
       id: 'ch46-ex-04',
@@ -339,7 +367,8 @@ export const chapter046: ChapterDefinition = {
         { id: 'd', text: 'aber' },
       ],
       correctOptionId: 'c',
-      explanation: 'wenn = if/when(ever), introducing a condition or a repeated/future time.',
+      explanation:
+        'wenn = if/when(ever), introducing a condition or a repeated/future time.',
     },
     {
       id: 'ch46-ex-06',
@@ -424,7 +453,8 @@ export const chapter046: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['comma', 'weil'],
       instruction: 'Choose the correctly punctuated sentence.',
-      prompt: '"I\'m tired because I slept badly." Which sentence is correctly punctuated?',
+      prompt:
+        '"I\'m tired because I slept badly." Which sentence is correctly punctuated?',
       options: [
         { id: 'a', text: 'Ich bin müde, weil ich schlecht geschlafen habe.' },
         { id: 'b', text: 'Ich bin müde weil, ich schlecht geschlafen habe.' },
@@ -443,7 +473,8 @@ export const chapter046: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['comma', 'weil', 'inversion'],
       instruction: 'Choose the correctly punctuated sentence.',
-      prompt: '"Because I slept badly, I am tired." Which sentence is correctly punctuated?',
+      prompt:
+        '"Because I slept badly, I am tired." Which sentence is correctly punctuated?',
       options: [
         { id: 'a', text: 'Weil ich schlecht geschlafen habe, bin ich müde.' },
         { id: 'b', text: 'Weil ich schlecht geschlafen habe bin, ich müde.' },
@@ -501,14 +532,18 @@ export const chapter046: ChapterDefinition = {
       grammarFocus: ['weil', 'dialogue', 'verb-final', 'modal-verb'],
       instruction: 'Choose the grammatically correct way for Tom to finish his answer.',
       dialogue: [
-        { speaker: 'Anna', german: 'Warum lernst du Deutsch?', english: 'Why are you learning German?' },
+        {
+          speaker: 'Anna',
+          german: 'Warum lernst du Deutsch?',
+          english: 'Why are you learning German?',
+        },
         {
           speaker: 'Tom',
           german: 'Ich lerne Deutsch, weil ...',
           english: "I'm learning German because ...",
         },
       ],
-      prompt: 'Tom\'s answer: Ich lerne Deutsch, weil ___',
+      prompt: "Tom's answer: Ich lerne Deutsch, weil ___",
       options: [
         { id: 'a', text: 'ich in Berlin arbeiten möchte.' },
         { id: 'b', text: 'ich möchte in Berlin arbeiten.' },
@@ -532,7 +567,8 @@ export const chapter046: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'bin',
       maxLength: 10,
-      explanation: 'weil sends the finite verb to the end; the ich-form of sein is bin: ..., weil ich krank bin.',
+      explanation:
+        'weil sends the finite verb to the end; the ich-form of sein is bin: ..., weil ich krank bin.',
     },
     {
       id: 'ch46-ex-16',
@@ -563,7 +599,8 @@ export const chapter046: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'bist',
       maxLength: 10,
-      explanation: 'dass sends the finite verb to the end; the du-form of sein is bist: ..., dass du bald wieder gesund bist.',
+      explanation:
+        'dass sends the finite verb to the end; the du-form of sein is bist: ..., dass du bald wieder gesund bist.',
     },
     {
       id: 'ch46-ex-18',
@@ -604,13 +641,15 @@ export const chapter046: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['weil', 'clause-combination'],
-      instruction: 'Combine the two sentences with weil. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with weil. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich bin froh. + Die Sonne scheint. (weil)',
       acceptedAnswers: ['Ich bin froh, weil die Sonne scheint.'],
       answerMode: 'normalized',
       placeholder: 'Ich bin froh, weil ...',
       maxLength: 60,
-      explanation: 'weil introduces the reason; its verb scheint moves to the end of the clause: Ich bin froh, weil die Sonne scheint.',
+      explanation:
+        'weil introduces the reason; its verb scheint moves to the end of the clause: Ich bin froh, weil die Sonne scheint.',
     },
     {
       id: 'ch46-ex-21',
@@ -619,13 +658,15 @@ export const chapter046: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['wenn', 'clause-combination'],
-      instruction: 'Combine the two sentences with wenn. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with wenn. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Wir gehen schwimmen. + Es ist warm. (wenn)',
       acceptedAnswers: ['Wir gehen schwimmen, wenn es warm ist.'],
       answerMode: 'normalized',
       placeholder: 'Wir gehen schwimmen, wenn ...',
       maxLength: 60,
-      explanation: 'wenn introduces the condition; its verb ist moves to the end of the clause: Wir gehen schwimmen, wenn es warm ist.',
+      explanation:
+        'wenn introduces the condition; its verb ist moves to the end of the clause: Wir gehen schwimmen, wenn es warm ist.',
     },
     {
       id: 'ch46-ex-22',
@@ -634,13 +675,15 @@ export const chapter046: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['dass', 'clause-combination'],
-      instruction: 'Combine the two sentences with dass. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with dass. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Er sagt. + Er hat keine Zeit. (dass)',
       acceptedAnswers: ['Er sagt, dass er keine Zeit hat.'],
       answerMode: 'normalized',
       placeholder: 'Er sagt, dass ...',
       maxLength: 60,
-      explanation: 'dass introduces what er sagt; its verb hat moves to the end of the clause: Er sagt, dass er keine Zeit hat.',
+      explanation:
+        'dass introduces what er sagt; its verb hat moves to the end of the clause: Er sagt, dass er keine Zeit hat.',
     },
     {
       id: 'ch46-ex-23',
@@ -649,13 +692,15 @@ export const chapter046: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['inversion', 'weil', 'word-order'],
-      instruction: 'Rewrite the sentence starting with the weil-clause. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence starting with the weil-clause. Capitalisation and punctuation are checked.',
       prompt: 'Ich bin müde, weil ich lange gearbeitet habe.',
       acceptedAnswers: ['Weil ich lange gearbeitet habe, bin ich müde.'],
       answerMode: 'normalized',
       placeholder: 'Weil ich lange gearbeitet habe, ...',
       maxLength: 70,
-      explanation: 'When the weil-clause opens the sentence, the main-clause verb bin comes immediately after the comma, before its subject ich.',
+      explanation:
+        'When the weil-clause opens the sentence, the main-clause verb bin comes immediately after the comma, before its subject ich.',
     },
     {
       id: 'ch46-ex-24',
@@ -664,13 +709,15 @@ export const chapter046: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['inversion', 'wenn', 'word-order'],
-      instruction: 'Rewrite the sentence starting with the wenn-clause. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence starting with the wenn-clause. Capitalisation and punctuation are checked.',
       prompt: 'Ich rufe dich an, wenn ich Zeit habe.',
       acceptedAnswers: ['Wenn ich Zeit habe, rufe ich dich an.'],
       answerMode: 'normalized',
       placeholder: 'Wenn ich Zeit habe, ...',
       maxLength: 70,
-      explanation: 'When the wenn-clause opens the sentence, the main-clause verb rufe comes immediately after the comma, before its subject ich.',
+      explanation:
+        'When the wenn-clause opens the sentence, the main-clause verb rufe comes immediately after the comma, before its subject ich.',
     },
     {
       id: 'ch46-ex-25',
@@ -679,13 +726,15 @@ export const chapter046: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'weil', 'verb-final'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ich bleibe zu Hause, weil ich bin krank.',
       acceptedAnswers: ['Ich bleibe zu Hause, weil ich krank bin.'],
       answerMode: 'normalized',
       placeholder: 'Ich bleibe zu Hause, weil ...',
       maxLength: 60,
-      explanation: 'weil sends the finite verb to the very end of its clause, so bin belongs after krank, not after ich.',
+      explanation:
+        'weil sends the finite verb to the very end of its clause, so bin belongs after krank, not after ich.',
     },
     {
       id: 'ch46-ex-26',
@@ -694,7 +743,8 @@ export const chapter046: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'inversion', 'word-order'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Weil es regnet, wir bleiben zu Hause.',
       acceptedAnswers: ['Weil es regnet, bleiben wir zu Hause.'],
       answerMode: 'normalized',
@@ -710,22 +760,32 @@ export const chapter046: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['dass', 'dialogue', 'reported-speech', 'verb-final'],
-      instruction: "Complete Mia's report. Write only the missing words. Capitalisation is not checked.",
+      instruction:
+        "Complete Mia's report. Write only the missing words. Capitalisation is not checked.",
       dialogue: [
         {
           speaker: 'Lehrerin',
           german: 'Weiß jemand, wo Paul heute ist?',
           english: 'Does anyone know where Paul is today?',
         },
-        { speaker: 'Mia', german: 'Seine Mutter hat angerufen.', english: 'His mother called.' },
-        { speaker: 'Mia', german: 'Sie hat gesagt, dass ___', english: 'She said that ___' },
+        {
+          speaker: 'Mia',
+          german: 'Seine Mutter hat angerufen.',
+          english: 'His mother called.',
+        },
+        {
+          speaker: 'Mia',
+          german: 'Sie hat gesagt, dass ___',
+          english: 'She said that ___',
+        },
       ],
       prompt: 'Sie hat gesagt, dass ___. (Paul / krank / sein, Präsens)',
       acceptedAnswers: ['Paul krank ist'],
       answerMode: 'caseInsensitive',
       placeholder: 'Paul krank ist',
       maxLength: 30,
-      explanation: "dass reports what Paul's mother said; the verb ist moves to the end of the clause: ..., dass Paul krank ist.",
+      explanation:
+        "dass reports what Paul's mother said; the verb ist moves to the end of the clause: ..., dass Paul krank ist.",
     },
     {
       id: 'ch46-ex-28',
@@ -734,9 +794,14 @@ export const chapter046: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['weil', 'dialogue', 'perfect-tense', 'verb-final'],
-      instruction: "Complete Lea's answer. Write only the missing words. Capitalisation is not checked.",
+      instruction:
+        "Complete Lea's answer. Write only the missing words. Capitalisation is not checked.",
       dialogue: [
-        { speaker: 'Ben', german: 'Warum bist du so müde?', english: 'Why are you so tired?' },
+        {
+          speaker: 'Ben',
+          german: 'Warum bist du so müde?',
+          english: 'Why are you so tired?',
+        },
         {
           speaker: 'Lea',
           german: 'Ich bin müde, weil ich die ganze Nacht ___.',
@@ -767,7 +832,8 @@ export const chapter046: ChapterDefinition = {
         { id: 'd', text: 'oder' },
       ],
       correctOptionId: 'a',
-      explanation: 'weil = because, introducing the reason why the speaker is not going swimming.',
+      explanation:
+        'weil = because, introducing the reason why the speaker is not going swimming.',
     },
     {
       id: 'ch46-ex-30',
@@ -777,7 +843,8 @@ export const chapter046: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['wenn', 'separable-verb', 'verb-final'],
       instruction: 'Choose the sentence with correct word order.',
-      prompt: '"If you get up early, you won\'t miss the train." Which sentence is correct?',
+      prompt:
+        '"If you get up early, you won\'t miss the train." Which sentence is correct?',
       options: [
         { id: 'a', text: 'Wenn du früh aufstehst, verpasst du den Zug nicht.' },
         { id: 'b', text: 'Wenn du früh stehst auf, verpasst du den Zug nicht.' },
@@ -847,7 +914,8 @@ export const chapter046: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['wenn', 'inversion', 'word-order'],
-      instruction: 'Arrange the segments into a correct sentence (the subordinate clause comes first).',
+      instruction:
+        'Arrange the segments into a correct sentence (the subordinate clause comes first).',
       prompt: '"If the weather is nice, we go for a walk."',
       segments: [
         { id: 's1', text: 'Wenn' },
@@ -867,12 +935,14 @@ export const chapter046: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'controlled',
       grammarFocus: ['weil', 'verb-final', 'error-correction'],
-      instruction: 'Find the token that breaks the verb-final word order, and correct it.',
+      instruction:
+        'Find the token that breaks the verb-final word order, and correct it.',
       prompt: 'Ein Lerner erklärt, warum er zu Hause bleibt. Etwas stimmt nicht.',
       tokens: ['Ich', 'bleibe', 'zu', 'Hause,', 'weil', 'ich', 'bin', 'krank.'],
       errorTokenIndex: 6,
       correction: 'Ich bleibe zu Hause, weil ich krank bin.',
-      explanation: 'weil sends the finite verb to the very end of its clause, so bin belongs after krank, not right after the subject.',
+      explanation:
+        'weil sends the finite verb to the very end of its clause, so bin belongs after krank, not right after the subject.',
     },
     {
       id: 'ch46-ex-36',
@@ -881,12 +951,14 @@ export const chapter046: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'controlled',
       grammarFocus: ['dass', 'verb-final', 'error-correction'],
-      instruction: 'Find the token that breaks the verb-final word order, and correct it.',
+      instruction:
+        'Find the token that breaks the verb-final word order, and correct it.',
       prompt: 'Ein Lerner erklärt seine Meinung. Etwas stimmt nicht.',
       tokens: ['Ich', 'glaube,', 'dass', 'er', 'hat', 'recht.'],
       errorTokenIndex: 4,
       correction: 'Ich glaube, dass er recht hat.',
-      explanation: 'dass sends the finite verb to the end of its clause, so hat belongs after recht, not right after the subject.',
+      explanation:
+        'dass sends the finite verb to the end of its clause, so hat belongs after recht, not right after the subject.',
     },
     {
       id: 'ch46-ex-37',
@@ -904,7 +976,8 @@ export const chapter046: ChapterDefinition = {
         { id: 'd', text: 'Wenn der Film mir schaut gefällt, ich ihn noch einmal.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The finite verb gefällt moves to the end of the wenn-clause, after the dative object mir.',
+      explanation:
+        'The finite verb gefällt moves to the end of the wenn-clause, after the dative object mir.',
     },
     {
       id: 'ch46-ex-38',
@@ -913,7 +986,8 @@ export const chapter046: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['dass', 'clause-combination', 'perfect-tense'],
-      instruction: 'Combine the two sentences with dass. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with dass. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Er erzählt. + Er hat den Film gesehen. (dass)',
       acceptedAnswers: ['Er erzählt, dass er den Film gesehen hat.'],
       answerMode: 'normalized',
@@ -939,7 +1013,8 @@ export const chapter046: ChapterDefinition = {
         { id: 's5', text: 'nicht kommen' },
         { id: 's6', text: 'kann.' },
       ],
-      explanation: 'The modal verb (kann) goes to the very end of the dass-clause, after the infinitive (kommen).',
+      explanation:
+        'The modal verb (kann) goes to the very end of the dass-clause, after the infinitive (kommen).',
     },
     {
       id: 'ch46-ex-40',
@@ -948,7 +1023,8 @@ export const chapter046: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'controlled',
       grammarFocus: ['inversion', 'wenn', 'error-correction'],
-      instruction: 'Find the token that breaks the subordinate-clause-first word order, and correct it.',
+      instruction:
+        'Find the token that breaks the subordinate-clause-first word order, and correct it.',
       prompt: 'Ein Lerner beschreibt das Wetter. Etwas stimmt nicht.',
       tokens: ['Wenn', 'es', 'regnet,', 'wir', 'bleiben', 'zu', 'Hause.'],
       errorTokenIndex: 3,
@@ -982,7 +1058,8 @@ export const chapter046: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['wenn', 'reflexive-verb', 'clause-combination'],
-      instruction: 'Combine the two sentences with wenn. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with wenn. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich rufe dich an. + Ich habe mich ausgeruht. (wenn)',
       acceptedAnswers: ['Ich rufe dich an, wenn ich mich ausgeruht habe.'],
       answerMode: 'normalized',
@@ -1019,7 +1096,8 @@ export const chapter046: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'production',
       grammarFocus: ['weil', 'reflexive-verb', 'error-correction'],
-      instruction: 'Find the token that breaks the verb-final word order, and correct it.',
+      instruction:
+        'Find the token that breaks the verb-final word order, and correct it.',
       prompt: 'Ein Lerner erklärt, warum die Gruppe pünktlich ist. Etwas stimmt nicht.',
       tokens: ['Wir', 'kommen', 'pünktlich,', 'weil', 'wir', 'beeilen', 'uns.'],
       errorTokenIndex: 5,
@@ -1043,7 +1121,8 @@ export const chapter046: ChapterDefinition = {
         { id: 'd', text: 'Ich hoffe, dass ein schönes Wochenende du hast.' },
       ],
       correctOptionId: 'a',
-      explanation: 'dass sends the finite verb hast to the end of its clause, after the object ein schönes Wochenende.',
+      explanation:
+        'dass sends the finite verb hast to the end of its clause, after the object ein schönes Wochenende.',
     },
     {
       id: 'ch46-ex-46',
@@ -1052,7 +1131,8 @@ export const chapter046: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['inversion', 'weil', 'word-order'],
-      instruction: 'Rewrite the sentence starting with the weil-clause. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence starting with the weil-clause. Capitalisation and punctuation are checked.',
       prompt: 'Wir bleiben zu Hause, weil es stark regnet.',
       acceptedAnswers: ['Weil es stark regnet, bleiben wir zu Hause.'],
       answerMode: 'normalized',
@@ -1068,7 +1148,8 @@ export const chapter046: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'transfer',
       grammarFocus: ['inversion', 'weil', 'word-order'],
-      instruction: 'Arrange the segments into a correct sentence (the subordinate clause comes first).',
+      instruction:
+        'Arrange the segments into a correct sentence (the subordinate clause comes first).',
       prompt: '"Because she is sick, she is staying home."',
       segments: [
         { id: 's1', text: 'Weil' },
@@ -1088,7 +1169,8 @@ export const chapter046: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['dass', 'modal-verb', 'error-correction'],
-      instruction: 'Find the token that breaks the verb-final word order, and correct it.',
+      instruction:
+        'Find the token that breaks the verb-final word order, and correct it.',
       prompt: 'Ein Lerner gibt eine Entschuldigung weiter. Etwas stimmt nicht.',
       tokens: ['Er', 'sagt,', 'dass', 'er', 'morgen', 'kann', 'nicht', 'kommen.'],
       errorTokenIndex: 5,
@@ -1112,7 +1194,8 @@ export const chapter046: ChapterDefinition = {
         { id: 'd', text: 'aber' },
       ],
       correctOptionId: 'c',
-      explanation: 'dass = that, introducing the content clause reporting what someone claims.',
+      explanation:
+        'dass = that, introducing the content clause reporting what someone claims.',
     },
     {
       id: 'ch46-ex-50',
@@ -1127,7 +1210,8 @@ export const chapter046: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'ist',
       maxLength: 10,
-      explanation: 'wenn sends the finite verb to the end; the es-form of sein is ist: ..., wenn das Wetter schön ist.',
+      explanation:
+        'wenn sends the finite verb to the end; the es-form of sein is ist: ..., wenn das Wetter schön ist.',
     },
     {
       id: 'ch46-ex-51',
@@ -1154,12 +1238,14 @@ export const chapter046: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'controlled',
       grammarFocus: ['wenn', 'verb-final', 'error-correction'],
-      instruction: 'Find the token that breaks the verb-final word order, and correct it.',
+      instruction:
+        'Find the token that breaks the verb-final word order, and correct it.',
       prompt: 'Ein Lerner beschreibt seine Pläne. Etwas stimmt nicht.',
       tokens: ['Wir', 'gehen', 'spazieren,', 'wenn', 'das', 'Wetter', 'ist', 'schön.'],
       errorTokenIndex: 6,
       correction: 'Wir gehen spazieren, wenn das Wetter schön ist.',
-      explanation: 'wenn sends the finite verb to the very end of its clause, so ist belongs after schön, not before it.',
+      explanation:
+        'wenn sends the finite verb to the very end of its clause, so ist belongs after schön, not before it.',
     },
     {
       id: 'ch46-ex-53',
@@ -1177,7 +1263,8 @@ export const chapter046: ChapterDefinition = {
         { id: 'd', text: 'Er weiß dass ich recht, habe.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The comma always goes directly before the subordinating conjunction (dass).',
+      explanation:
+        'The comma always goes directly before the subordinating conjunction (dass).',
     },
     {
       id: 'ch46-ex-54',
@@ -1186,13 +1273,15 @@ export const chapter046: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['weil', 'negation', 'clause-combination'],
-      instruction: 'Combine the two sentences with weil. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with weil. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich bin traurig. + Ich habe keine Zeit für Freunde. (weil)',
       acceptedAnswers: ['Ich bin traurig, weil ich keine Zeit für Freunde habe.'],
       answerMode: 'normalized',
       placeholder: 'Ich bin traurig, weil ...',
       maxLength: 70,
-      explanation: 'weil introduces the reason; the negation keine stays before the object, and the verb habe moves to the end.',
+      explanation:
+        'weil introduces the reason; the negation keine stays before the object, and the verb habe moves to the end.',
     },
     {
       id: 'ch46-ex-55',
@@ -1201,7 +1290,8 @@ export const chapter046: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['inversion', 'weil', 'word-order'],
-      instruction: 'Arrange the segments into a correct sentence (the subordinate clause comes first).',
+      instruction:
+        'Arrange the segments into a correct sentence (the subordinate clause comes first).',
       prompt: '"Because I have no time, I cannot come."',
       segments: [
         { id: 's1', text: 'Weil' },
@@ -1221,12 +1311,14 @@ export const chapter046: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'production',
       grammarFocus: ['weil', 'modal-verb', 'error-correction'],
-      instruction: 'Find the token that breaks the verb-final word order, and correct it.',
+      instruction:
+        'Find the token that breaks the verb-final word order, and correct it.',
       prompt: 'Ein Lerner erklärt, warum er nicht kommen kann. Etwas stimmt nicht.',
       tokens: ['Ich', 'kann', 'nicht', 'kommen,', 'weil', 'ich', 'muss', 'arbeiten.'],
       errorTokenIndex: 6,
       correction: 'Ich kann nicht kommen, weil ich arbeiten muss.',
-      explanation: 'The modal verb (muss) must go to the very end of the weil-clause, after the infinitive (arbeiten).',
+      explanation:
+        'The modal verb (muss) must go to the very end of the weil-clause, after the infinitive (arbeiten).',
     },
     {
       id: 'ch46-ex-57',
@@ -1244,7 +1336,8 @@ export const chapter046: ChapterDefinition = {
         { id: 'd', text: 'Ich weiß, dass er keine hat Zeit.' },
       ],
       correctOptionId: 'a',
-      explanation: 'dass sends the finite verb hat to the end of its clause, after the negated object keine Zeit.',
+      explanation:
+        'dass sends the finite verb hat to the end of its clause, after the negated object keine Zeit.',
     },
     {
       id: 'ch46-ex-58',
@@ -1253,13 +1346,15 @@ export const chapter046: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['dass', 'separable-verb', 'clause-combination'],
-      instruction: 'Combine the two sentences with dass. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with dass. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich weiß. + Der Zug kommt um acht Uhr an. (dass)',
       acceptedAnswers: ['Ich weiß, dass der Zug um acht Uhr ankommt.'],
       answerMode: 'normalized',
       placeholder: 'Ich weiß, dass ...',
       maxLength: 60,
-      explanation: 'The separable verb ankommen joins into one word (ankommt) at the end of the dass-clause.',
+      explanation:
+        'The separable verb ankommen joins into one word (ankommt) at the end of the dass-clause.',
     },
     {
       id: 'ch46-ex-59',
@@ -1277,7 +1372,8 @@ export const chapter046: ChapterDefinition = {
         { id: 's4', text: 'um acht Uhr' },
         { id: 's5', text: 'ankommt.' },
       ],
-      explanation: 'The separable verb ankommen stays joined as one word (ankommt) at the very end of the dass-clause.',
+      explanation:
+        'The separable verb ankommen stays joined as one word (ankommt) at the very end of the dass-clause.',
     },
     {
       id: 'ch46-ex-60',
@@ -1286,7 +1382,8 @@ export const chapter046: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'production',
       grammarFocus: ['dass', 'separable-verb', 'error-correction'],
-      instruction: 'Find the token that breaks the verb-final word order, and correct it.',
+      instruction:
+        'Find the token that breaks the verb-final word order, and correct it.',
       prompt: 'Ein Lerner spricht über den Zugfahrplan. Etwas stimmt nicht.',
       tokens: ['Ich', 'weiß,', 'dass', 'der', 'Zug', 'kommt', 'um', 'acht', 'Uhr', 'an.'],
       errorTokenIndex: 5,
@@ -1320,18 +1417,24 @@ export const chapter046: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['dass', 'dialogue', 'reported-speech', 'verb-final'],
-      instruction: "Complete Oma's report. Write only the missing words. Capitalisation is not checked.",
+      instruction:
+        "Complete Oma's report. Write only the missing words. Capitalisation is not checked.",
       dialogue: [
         { speaker: 'Opa', german: 'Wo ist Tim?', english: 'Where is Tim?' },
         { speaker: 'Oma', german: 'Er hat angerufen.', english: 'He called.' },
-        { speaker: 'Oma', german: 'Er hat gesagt, dass ___', english: 'He said that ___' },
+        {
+          speaker: 'Oma',
+          german: 'Er hat gesagt, dass ___',
+          english: 'He said that ___',
+        },
       ],
       prompt: 'Er hat gesagt, dass ___. (er / später / kommen, Präsens)',
       acceptedAnswers: ['er später kommt'],
       answerMode: 'caseInsensitive',
       placeholder: 'er später kommt',
       maxLength: 30,
-      explanation: 'dass reports what Tim told his grandmother; the verb kommt moves to the end of the clause.',
+      explanation:
+        'dass reports what Tim told his grandmother; the verb kommt moves to the end of the clause.',
     },
     {
       id: 'ch46-ex-63',
@@ -1360,12 +1463,14 @@ export const chapter046: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['weil', 'verb-final', 'error-correction'],
-      instruction: 'Find the token that breaks the verb-final word order, and correct it.',
+      instruction:
+        'Find the token that breaks the verb-final word order, and correct it.',
       prompt: 'Ein Lerner erklärt seine Ernährung. Etwas stimmt nicht.',
       tokens: ['Ich', 'esse', 'kein', 'Fleisch,', 'weil', 'ich', 'bin', 'Vegetarierin.'],
       errorTokenIndex: 6,
       correction: 'Ich esse kein Fleisch, weil ich Vegetarierin bin.',
-      explanation: 'weil sends the finite verb to the very end of its clause, so bin belongs after Vegetarierin.',
+      explanation:
+        'weil sends the finite verb to the very end of its clause, so bin belongs after Vegetarierin.',
     },
     {
       id: 'ch46-ex-65',
@@ -1375,7 +1480,8 @@ export const chapter046: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['weil', 'connector-choice', 'verb-final'],
       instruction: 'Drag the correct words into the slots.',
-      prompt: 'Complete the sentence with the correct connector and the verb in the correct position.',
+      prompt:
+        'Complete the sentence with the correct connector and the verb in the correct position.',
       templateParts: ['Ich bleibe zu Hause, ', ' ich krank ', '.'],
       slots: [
         { id: 'slot1', correctWord: 'weil' },
@@ -1396,7 +1502,11 @@ export const chapter046: ChapterDefinition = {
       prompt: 'Match each connector or example to its meaning or translation.',
       pairs: [
         { id: 'p1', left: 'weil', right: 'gives a reason (because)' },
-        { id: 'p2', left: 'wenn', right: 'states a condition or repeated time (if/when(ever))' },
+        {
+          id: 'p2',
+          left: 'wenn',
+          right: 'states a condition or repeated time (if/when(ever))',
+        },
         { id: 'p3', left: 'dass', right: 'reports a fact or thought (that)' },
         { id: 'p4', left: '..., weil ich krank bin.', right: '... because I am sick.' },
         { id: 'p5', left: '..., dass er recht hat.', right: '... that he is right.' },
@@ -1430,13 +1540,15 @@ export const chapter046: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['wenn', 'negation', 'clause-combination'],
-      instruction: 'Combine the two sentences with wenn. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with wenn. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Wir gehen nicht spazieren. + Es regnet stark. (wenn)',
       acceptedAnswers: ['Wir gehen nicht spazieren, wenn es stark regnet.'],
       answerMode: 'normalized',
       placeholder: 'Wir gehen nicht spazieren, wenn ...',
       maxLength: 60,
-      explanation: 'wenn introduces the condition; its verb regnet moves to the end of the clause.',
+      explanation:
+        'wenn introduces the condition; its verb regnet moves to the end of the clause.',
     },
     {
       id: 'ch46-ex-69',
@@ -1455,7 +1567,8 @@ export const chapter046: ChapterDefinition = {
         { id: 's5', text: 'nicht arbeiten' },
         { id: 's6', text: 'musst.' },
       ],
-      explanation: 'The modal verb (musst) goes to the very end of the dass-clause, after the infinitive (arbeiten).',
+      explanation:
+        'The modal verb (musst) goes to the very end of the dass-clause, after the infinitive (arbeiten).',
     },
     {
       id: 'ch46-ex-70',
@@ -1464,7 +1577,8 @@ export const chapter046: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'production',
       grammarFocus: ['inversion', 'weil', 'error-correction'],
-      instruction: 'Find the token that breaks the subordinate-clause-first word order, and correct it.',
+      instruction:
+        'Find the token that breaks the subordinate-clause-first word order, and correct it.',
       prompt: 'Ein Lerner erklärt seine Abendroutine. Etwas stimmt nicht.',
       tokens: ['Weil', 'ich', 'müde bin,', 'ich', 'gehe', 'früh', 'ins', 'Bett.'],
       errorTokenIndex: 3,
@@ -1488,7 +1602,8 @@ export const chapter046: ChapterDefinition = {
         { id: 'd', text: 'Er ist froh, weil das Geschenk ihm gefällt hat.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The finite verb gefällt moves to the end of the weil-clause, after the dative object ihm and the subject das Geschenk.',
+      explanation:
+        'The finite verb gefällt moves to the end of the weil-clause, after the dative object ihm and the subject das Geschenk.',
     },
     {
       id: 'ch46-ex-72',
@@ -1497,7 +1612,8 @@ export const chapter046: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'dass', 'modal-verb'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Sie sagt, dass sie kann nicht kommen.',
       acceptedAnswers: ['Sie sagt, dass sie nicht kommen kann.'],
       answerMode: 'normalized',
@@ -1533,9 +1649,21 @@ export const chapter046: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['weil', 'perfect-tense', 'error-correction'],
-      instruction: 'Find the token that breaks the verb-final word order, and correct it.',
+      instruction:
+        'Find the token that breaks the verb-final word order, and correct it.',
       prompt: 'Ein Lerner erklärt, warum er müde ist. Etwas stimmt nicht.',
-      tokens: ['Ich', 'bin', 'müde,', 'weil', 'ich', 'habe', 'den', 'ganzen', 'Tag', 'gearbeitet.'],
+      tokens: [
+        'Ich',
+        'bin',
+        'müde,',
+        'weil',
+        'ich',
+        'habe',
+        'den',
+        'ganzen',
+        'Tag',
+        'gearbeitet.',
+      ],
       errorTokenIndex: 5,
       correction: 'Ich bin müde, weil ich den ganzen Tag gearbeitet habe.',
       explanation:
@@ -1549,7 +1677,8 @@ export const chapter046: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['dass', 'negation', 'verb-final'],
       instruction: 'Choose the sentence with correct word order.',
-      prompt: '"I don\'t believe that he is telling the truth." Which sentence is correct?',
+      prompt:
+        '"I don\'t believe that he is telling the truth." Which sentence is correct?',
       options: [
         { id: 'a', text: 'Ich glaube nicht, dass er die Wahrheit sagt.' },
         { id: 'b', text: 'Ich glaube nicht, dass er sagt die Wahrheit.' },
@@ -1557,7 +1686,8 @@ export const chapter046: ChapterDefinition = {
         { id: 'd', text: 'Ich glaube nicht, dass er die Wahrheit sagt hat.' },
       ],
       correctOptionId: 'a',
-      explanation: 'dass sends the finite verb sagt to the end of its clause, after the object die Wahrheit.',
+      explanation:
+        'dass sends the finite verb sagt to the end of its clause, after the object die Wahrheit.',
     },
     {
       id: 'ch46-ex-76',
@@ -1566,7 +1696,8 @@ export const chapter046: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['inversion', 'wenn', 'word-order'],
-      instruction: 'Rewrite the sentence starting with the wenn-clause. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence starting with the wenn-clause. Capitalisation and punctuation are checked.',
       prompt: 'Wir gehen schwimmen, wenn das Wetter warm ist.',
       acceptedAnswers: ['Wenn das Wetter warm ist, gehen wir schwimmen.'],
       answerMode: 'normalized',
@@ -1582,7 +1713,8 @@ export const chapter046: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'transfer',
       grammarFocus: ['inversion', 'wenn', 'word-order'],
-      instruction: 'Arrange the segments into a correct sentence (the subordinate clause comes first).',
+      instruction:
+        'Arrange the segments into a correct sentence (the subordinate clause comes first).',
       prompt: '"When we have time, we visit our grandparents."',
       segments: [
         { id: 's1', text: 'Wenn' },
@@ -1602,12 +1734,14 @@ export const chapter046: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['dass', 'negation', 'error-correction'],
-      instruction: 'Find the token that breaks the verb-final word order, and correct it.',
+      instruction:
+        'Find the token that breaks the verb-final word order, and correct it.',
       prompt: 'Ein Lerner gibt Informationen weiter. Etwas stimmt nicht.',
       tokens: ['Er', 'weiß,', 'dass', 'sie', 'hat', 'keine', 'Zeit.'],
       errorTokenIndex: 4,
       correction: 'Er weiß, dass sie keine Zeit hat.',
-      explanation: 'dass sends the finite verb to the end of its clause, so hat belongs after keine Zeit, not right after the subject.',
+      explanation:
+        'dass sends the finite verb to the end of its clause, so hat belongs after keine Zeit, not right after the subject.',
     },
     {
       id: 'ch46-ex-79',
@@ -1616,9 +1750,14 @@ export const chapter046: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'weil', 'dialogue', 'modal-verb'],
-      instruction: "Correct the mistake in Jonas's answer. Write the full, corrected sentence. Capitalisation and punctuation are checked.",
+      instruction:
+        "Correct the mistake in Jonas's answer. Write the full, corrected sentence. Capitalisation and punctuation are checked.",
       dialogue: [
-        { speaker: 'Nina', german: 'Warum kommst du nicht mit?', english: "Why aren't you coming along?" },
+        {
+          speaker: 'Nina',
+          german: 'Warum kommst du nicht mit?',
+          english: "Why aren't you coming along?",
+        },
         {
           speaker: 'Jonas',
           german: 'Ich bleibe zu Hause, weil ich muss lernen.',
@@ -1630,7 +1769,8 @@ export const chapter046: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Ich bleibe zu Hause, weil ...',
       maxLength: 60,
-      explanation: 'The modal verb (muss) must go to the very end of the weil-clause, after the infinitive (lernen).',
+      explanation:
+        'The modal verb (muss) must go to the very end of the weil-clause, after the infinitive (lernen).',
     },
   ],
 };

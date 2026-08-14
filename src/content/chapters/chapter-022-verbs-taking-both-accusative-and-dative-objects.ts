@@ -115,100 +115,117 @@ export const chapter022: ChapterDefinition = {
         german: 'Ich gebe dem Kind einen Ball.',
         english: 'I give the child a ball.',
         highlight: ['dem Kind', 'einen Ball'],
-        explanation: 'dem Kind is the dative recipient; einen Ball is the accusative thing being given.',
+        explanation:
+          'dem Kind is the dative recipient; einen Ball is the accusative thing being given.',
       },
       {
         german: 'Die Lehrerin zeigt den Schülern die Karte.',
         english: 'The teacher shows the students the map.',
         highlight: ['den Schülern', 'die Karte'],
-        explanation: 'den Schülern is dative plural (who is shown something); die Karte is the accusative thing shown.',
+        explanation:
+          'den Schülern is dative plural (who is shown something); die Karte is the accusative thing shown.',
       },
       {
         german: 'Wir schicken unserer Oma ein Paket.',
         english: 'We are sending our grandma a package.',
         highlight: ['unserer Oma', 'ein Paket'],
-        explanation: 'Oma is feminine, so the dative possessive ending is -er: unserer Oma; ein Paket is the accusative thing sent.',
+        explanation:
+          'Oma is feminine, so the dative possessive ending is -er: unserer Oma; ein Paket is the accusative thing sent.',
       },
       {
         german: 'Er bringt seinem Freund die Zeitung.',
         english: 'He brings his friend the newspaper.',
         highlight: ['seinem Freund', 'die Zeitung'],
-        explanation: 'seinem Freund is masculine dative; die Zeitung is the accusative thing brought.',
+        explanation:
+          'seinem Freund is masculine dative; die Zeitung is the accusative thing brought.',
       },
       {
         german: 'Ich erkläre dir die Regel.',
         english: 'I explain the rule to you.',
         highlight: ['dir', 'die Regel'],
-        explanation: 'dir is a dative pronoun and stands directly after the verb, before the accusative noun die Regel.',
+        explanation:
+          'dir is a dative pronoun and stands directly after the verb, before the accusative noun die Regel.',
       },
       {
         german: 'Sie schreibt ihrem Vater einen Brief.',
         english: 'She writes her father a letter.',
         highlight: ['ihrem Vater', 'einen Brief'],
-        explanation: 'ihrem Vater is masculine dative; einen Brief is the accusative thing written.',
+        explanation:
+          'ihrem Vater is masculine dative; einen Brief is the accusative thing written.',
       },
       {
         german: 'Wir kaufen unseren Kindern neue Schuhe.',
         english: 'We are buying our children new shoes.',
         highlight: ['unseren Kindern', 'neue Schuhe'],
-        explanation: 'unseren Kindern is dative plural; neue Schuhe is the accusative thing bought.',
+        explanation:
+          'unseren Kindern is dative plural; neue Schuhe is the accusative thing bought.',
       },
       {
         german: 'Ich leihe meinem Nachbarn das Werkzeug.',
         english: 'I am lending my neighbor the tool.',
         highlight: ['meinem Nachbarn', 'das Werkzeug'],
-        explanation: 'meinem Nachbarn is masculine dative; das Werkzeug is the accusative thing lent.',
+        explanation:
+          'meinem Nachbarn is masculine dative; das Werkzeug is the accusative thing lent.',
       },
       {
         german: 'Ich gebe es ihm.',
         english: 'I am giving it to him.',
         highlight: ['es', 'ihm'],
-        explanation: 'Both objects are pronouns, so the accusative pronoun es comes before the dative pronoun ihm.',
+        explanation:
+          'Both objects are pronouns, so the accusative pronoun es comes before the dative pronoun ihm.',
       },
       {
         german: 'Ich gebe ihm das Geld.',
         english: 'I am giving him the money.',
         highlight: ['ihm', 'das Geld'],
-        explanation: 'ihm is a dative pronoun and moves in front of the accusative noun das Geld, even though it is not the accusative object.',
+        explanation:
+          'ihm is a dative pronoun and moves in front of the accusative noun das Geld, even though it is not the accusative object.',
       },
       {
         german: 'Ich gebe es meiner Schwester.',
         english: 'I am giving it to my sister.',
         highlight: ['es', 'meiner Schwester'],
-        explanation: 'es is an accusative pronoun and moves in front of the dative noun meiner Schwester.',
+        explanation:
+          'es is an accusative pronoun and moves in front of the dative noun meiner Schwester.',
       },
       {
         german: 'Kannst du mir das Foto zeigen?',
         english: 'Can you show me the photo?',
         highlight: ['mir', 'das Foto'],
-        explanation: 'mir is a dative pronoun and stands before the accusative noun das Foto.',
+        explanation:
+          'mir is a dative pronoun and stands before the accusative noun das Foto.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich gebe das Buch dem Kind.',
         correct: 'Ich gebe dem Kind das Buch.',
-        explanation: 'With two full noun objects, the dative person normally comes before the accusative thing.',
+        explanation:
+          'With two full noun objects, the dative person normally comes before the accusative thing.',
       },
       {
         incorrect: 'Ich gebe ihm es.',
         correct: 'Ich gebe es ihm.',
-        explanation: 'When both objects are pronouns, the accusative pronoun (es) comes before the dative pronoun (ihm).',
+        explanation:
+          'When both objects are pronouns, the accusative pronoun (es) comes before the dative pronoun (ihm).',
       },
       {
         incorrect: 'Ich zeige der Mann den Weg.',
         correct: 'Ich zeige dem Mann den Weg.',
-        explanation: 'Mann is masculine, so the dative article is dem, not der — der is the feminine dative article.',
+        explanation:
+          'Mann is masculine, so the dative article is dem, not der — der is the feminine dative article.',
       },
       {
         incorrect: 'Ich schicke meine Schwester ein Geschenk.',
         correct: 'Ich schicke meiner Schwester ein Geschenk.',
-        explanation: 'The recipient of schicken must be in the dative (meiner Schwester), not the accusative (meine Schwester).',
+        explanation:
+          'The recipient of schicken must be in the dative (meiner Schwester), not the accusative (meine Schwester).',
       },
       {
         incorrect: 'Ich gebe das Kind einen Apfel.',
         correct: 'Ich gebe dem Kind einen Apfel.',
-        explanation: 'das Kind is the nominative/accusative form; the person receiving the apple must be in the dative, dem Kind.',
+        explanation:
+          'das Kind is the nominative/accusative form; the person receiving the apple must be in the dative, dem Kind.',
       },
     ],
     remember: [
@@ -241,7 +258,8 @@ export const chapter022: ChapterDefinition = {
         { id: 'd', text: 'gebe' },
       ],
       correctOptionId: 'b',
-      explanation: 'das Heft is the thing being given, so it is the accusative object; dem Lehrer is the dative recipient.',
+      explanation:
+        'das Heft is the thing being given, so it is the accusative object; dem Lehrer is the dative recipient.',
     },
     {
       id: 'ch22-ex-02',
@@ -259,7 +277,8 @@ export const chapter022: ChapterDefinition = {
         { id: 'd', text: 'zeigt' },
       ],
       correctOptionId: 'a',
-      explanation: 'der Frau is the person who is shown something, so it is the dative object; den Stadtplan is the accusative thing shown.',
+      explanation:
+        'der Frau is the person who is shown something, so it is the dative object; den Stadtplan is the accusative thing shown.',
     },
     {
       id: 'ch22-ex-03',
@@ -269,7 +288,8 @@ export const chapter022: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['two-object-verbs', 'accusative'],
       instruction: 'Identify the accusative (thing) object of the sentence.',
-      prompt: 'Wir schicken unseren Freunden eine Einladung. Which noun phrase is the accusative object?',
+      prompt:
+        'Wir schicken unseren Freunden eine Einladung. Which noun phrase is the accusative object?',
       options: [
         { id: 'a', text: 'Wir' },
         { id: 'b', text: 'unseren Freunden' },
@@ -277,7 +297,8 @@ export const chapter022: ChapterDefinition = {
         { id: 'd', text: 'schicken' },
       ],
       correctOptionId: 'c',
-      explanation: 'eine Einladung is the thing being sent, so it is the accusative object; unseren Freunden is the dative recipients.',
+      explanation:
+        'eine Einladung is the thing being sent, so it is the accusative object; unseren Freunden is the dative recipients.',
     },
     {
       id: 'ch22-ex-04',
@@ -287,7 +308,8 @@ export const chapter022: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['two-object-verbs', 'dative'],
       instruction: 'Identify the dative (person) object of the sentence.',
-      prompt: 'Sie bringt ihrem Bruder den Kaffee. Which noun phrase is the dative object?',
+      prompt:
+        'Sie bringt ihrem Bruder den Kaffee. Which noun phrase is the dative object?',
       options: [
         { id: 'a', text: 'Sie' },
         { id: 'b', text: 'ihrem Bruder' },
@@ -295,7 +317,8 @@ export const chapter022: ChapterDefinition = {
         { id: 'd', text: 'bringt' },
       ],
       correctOptionId: 'b',
-      explanation: 'ihrem Bruder is the person who receives the coffee, so it is the dative object; den Kaffee is the accusative thing brought.',
+      explanation:
+        'ihrem Bruder is the person who receives the coffee, so it is the dative object; den Kaffee is the accusative thing brought.',
     },
     {
       id: 'ch22-ex-05',
@@ -349,7 +372,8 @@ export const chapter022: ChapterDefinition = {
         { id: 'd', text: 'dem' },
       ],
       correctOptionId: 'b',
-      explanation: 'The plural dative article is always den; Eltern already ends in -n, so the noun itself does not change.',
+      explanation:
+        'The plural dative article is always den; Eltern already ends in -n, so the noun itself does not change.',
     },
     {
       id: 'ch22-ex-08',
@@ -376,7 +400,8 @@ export const chapter022: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['word-order', 'two-nouns'],
-      instruction: 'Choose the sentence with the correct word order (both objects are nouns).',
+      instruction:
+        'Choose the sentence with the correct word order (both objects are nouns).',
       prompt: 'Which sentence has the correct word order?',
       options: [
         { id: 'a', text: 'Ich gebe das Buch meinem Bruder.' },
@@ -385,7 +410,8 @@ export const chapter022: ChapterDefinition = {
         { id: 'd', text: 'Gebe ich meinem Bruder das Buch.' },
       ],
       correctOptionId: 'b',
-      explanation: 'With two nouns, the dative (person) comes before the accusative (thing): meinem Bruder das Buch.',
+      explanation:
+        'With two nouns, the dative (person) comes before the accusative (thing): meinem Bruder das Buch.',
     },
     {
       id: 'ch22-ex-10',
@@ -394,7 +420,8 @@ export const chapter022: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['word-order', 'pronoun-and-noun'],
-      instruction: 'Choose the sentence with the correct word order (one pronoun, one noun).',
+      instruction:
+        'Choose the sentence with the correct word order (one pronoun, one noun).',
       prompt: 'Which sentence has the correct word order?',
       options: [
         { id: 'a', text: 'Ich gebe das Buch ihm.' },
@@ -403,7 +430,8 @@ export const chapter022: ChapterDefinition = {
         { id: 'd', text: 'Ich gebe dem ihm Buch.' },
       ],
       correctOptionId: 'b',
-      explanation: 'The dative pronoun ihm moves in front of the accusative noun das Buch.',
+      explanation:
+        'The dative pronoun ihm moves in front of the accusative noun das Buch.',
     },
     {
       id: 'ch22-ex-11',
@@ -412,7 +440,8 @@ export const chapter022: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['word-order', 'two-pronouns'],
-      instruction: 'Choose the sentence with the correct word order (both objects are pronouns).',
+      instruction:
+        'Choose the sentence with the correct word order (both objects are pronouns).',
       prompt: 'Which sentence has the correct word order?',
       options: [
         { id: 'a', text: 'Ich gebe ihm es.' },
@@ -421,7 +450,8 @@ export const chapter022: ChapterDefinition = {
         { id: 'd', text: 'Es gebe ich ihm.' },
       ],
       correctOptionId: 'b',
-      explanation: 'When both objects are pronouns, the accusative pronoun es comes before the dative pronoun ihm.',
+      explanation:
+        'When both objects are pronouns, the accusative pronoun es comes before the dative pronoun ihm.',
     },
     {
       id: 'ch22-ex-12',
@@ -430,8 +460,10 @@ export const chapter022: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['pronoun-replacement', 'word-order'],
-      instruction: 'Choose the sentence that correctly replaces "meiner Schwester" with a pronoun.',
-      prompt: 'Ich zeige meiner Schwester das Foto. Replace "meiner Schwester" with a pronoun.',
+      instruction:
+        'Choose the sentence that correctly replaces "meiner Schwester" with a pronoun.',
+      prompt:
+        'Ich zeige meiner Schwester das Foto. Replace "meiner Schwester" with a pronoun.',
       options: [
         { id: 'a', text: 'Ich zeige das Foto ihr.' },
         { id: 'b', text: 'Ich zeige ihr das Foto.' },
@@ -439,7 +471,8 @@ export const chapter022: ChapterDefinition = {
         { id: 'd', text: 'Ich zeige der das Foto.' },
       ],
       correctOptionId: 'b',
-      explanation: 'meiner Schwester becomes the dative pronoun ihr, which then moves in front of the accusative noun das Foto.',
+      explanation:
+        'meiner Schwester becomes the dative pronoun ihr, which then moves in front of the accusative noun das Foto.',
     },
     {
       id: 'ch22-ex-13',
@@ -511,11 +544,15 @@ export const chapter022: ChapterDefinition = {
       instruction:
         'Write a complete sentence using the cue words, with the dative object before the accusative object. Capitalisation and punctuation are checked.',
       prompt: 'ich – bringen – mein Vater (dative) – die Zeitung (accusative)',
-      acceptedAnswers: ['Ich bringe meinem Vater die Zeitung.', 'Ich bringe meinem Vater die Zeitung'],
+      acceptedAnswers: [
+        'Ich bringe meinem Vater die Zeitung.',
+        'Ich bringe meinem Vater die Zeitung',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich bringe ...',
       maxLength: 60,
-      explanation: 'Vater is masculine, so the dative is meinem Vater; with two nouns, the dative comes before the accusative die Zeitung.',
+      explanation:
+        'Vater is masculine, so the dative is meinem Vater; with two nouns, the dative comes before the accusative die Zeitung.',
     },
     {
       id: 'ch22-ex-18',
@@ -527,11 +564,15 @@ export const chapter022: ChapterDefinition = {
       instruction:
         'Write a complete sentence using the cue words, with the dative object before the accusative object. Capitalisation and punctuation are checked.',
       prompt: 'wir – schreiben – unsere Oma (dative) – eine Postkarte (accusative)',
-      acceptedAnswers: ['Wir schreiben unserer Oma eine Postkarte.', 'Wir schreiben unserer Oma eine Postkarte'],
+      acceptedAnswers: [
+        'Wir schreiben unserer Oma eine Postkarte.',
+        'Wir schreiben unserer Oma eine Postkarte',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wir schreiben ...',
       maxLength: 60,
-      explanation: 'Oma is feminine, so the dative is unserer Oma; it comes before the accusative eine Postkarte.',
+      explanation:
+        'Oma is feminine, so the dative is unserer Oma; it comes before the accusative eine Postkarte.',
     },
     {
       id: 'ch22-ex-19',
@@ -543,11 +584,15 @@ export const chapter022: ChapterDefinition = {
       instruction:
         'Write a complete sentence using the cue words, with the dative object before the accusative object. Capitalisation and punctuation are checked.',
       prompt: 'er – zeigen – die Touristen (dative, plural) – die Stadt (accusative)',
-      acceptedAnswers: ['Er zeigt den Touristen die Stadt.', 'Er zeigt den Touristen die Stadt'],
+      acceptedAnswers: [
+        'Er zeigt den Touristen die Stadt.',
+        'Er zeigt den Touristen die Stadt',
+      ],
       answerMode: 'normalized',
       placeholder: 'Er zeigt ...',
       maxLength: 60,
-      explanation: 'Touristen is plural dative, so the article is den; Touristen already ends in -n, so it stays the same. It comes before die Stadt.',
+      explanation:
+        'Touristen is plural dative, so the article is den; Touristen already ends in -n, so it stays the same. It comes before die Stadt.',
     },
     {
       id: 'ch22-ex-20',
@@ -559,11 +604,15 @@ export const chapter022: ChapterDefinition = {
       instruction:
         'Write a complete sentence using the cue words, with the dative object before the accusative object. Capitalisation and punctuation are checked.',
       prompt: 'ich – leihen – mein Freund (dative) – das Auto (accusative)',
-      acceptedAnswers: ['Ich leihe meinem Freund das Auto.', 'Ich leihe meinem Freund das Auto'],
+      acceptedAnswers: [
+        'Ich leihe meinem Freund das Auto.',
+        'Ich leihe meinem Freund das Auto',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich leihe ...',
       maxLength: 60,
-      explanation: 'Freund is masculine, so the dative is meinem Freund; it comes before the accusative das Auto.',
+      explanation:
+        'Freund is masculine, so the dative is meinem Freund; it comes before the accusative das Auto.',
     },
     {
       id: 'ch22-ex-21',
@@ -579,7 +628,8 @@ export const chapter022: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Ich gebe ...',
       maxLength: 60,
-      explanation: 'meinem Bruder becomes the dative pronoun ihm, which moves in front of the accusative noun das Buch.',
+      explanation:
+        'meinem Bruder becomes the dative pronoun ihm, which moves in front of the accusative noun das Buch.',
     },
     {
       id: 'ch22-ex-22',
@@ -591,11 +641,15 @@ export const chapter022: ChapterDefinition = {
       instruction:
         'Rewrite the sentence, replacing "eine Karte" with a pronoun. Capitalisation and punctuation are checked.',
       prompt: 'Wir schicken unseren Eltern eine Karte.',
-      acceptedAnswers: ['Wir schicken sie unseren Eltern.', 'Wir schicken sie unseren Eltern'],
+      acceptedAnswers: [
+        'Wir schicken sie unseren Eltern.',
+        'Wir schicken sie unseren Eltern',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wir schicken ...',
       maxLength: 60,
-      explanation: 'eine Karte becomes the accusative pronoun sie, which moves in front of the dative noun unseren Eltern, even though it is the accusative object.',
+      explanation:
+        'eine Karte becomes the accusative pronoun sie, which moves in front of the dative noun unseren Eltern, even though it is the accusative object.',
     },
     {
       id: 'ch22-ex-23',
@@ -611,7 +665,8 @@ export const chapter022: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Ich zeige ...',
       maxLength: 60,
-      explanation: 'das Foto becomes es and meiner Schwester becomes ihr; with two pronouns, the accusative pronoun es comes before the dative pronoun ihr.',
+      explanation:
+        'das Foto becomes es and meiner Schwester becomes ihr; with two pronouns, the accusative pronoun es comes before the dative pronoun ihr.',
     },
     {
       id: 'ch22-ex-24',
@@ -620,13 +675,18 @@ export const chapter022: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['two-object-verbs', 'word-order', 'translation'],
-      instruction: 'Translate into German using kaufen. Capitalisation and punctuation are checked.',
+      instruction:
+        'Translate into German using kaufen. Capitalisation and punctuation are checked.',
       prompt: 'We are buying our daughter a bicycle.',
-      acceptedAnswers: ['Wir kaufen unserer Tochter ein Fahrrad.', 'Wir kaufen unserer Tochter ein Fahrrad'],
+      acceptedAnswers: [
+        'Wir kaufen unserer Tochter ein Fahrrad.',
+        'Wir kaufen unserer Tochter ein Fahrrad',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wir kaufen ...',
       maxLength: 60,
-      explanation: 'Tochter is feminine, so the dative is unserer Tochter; it comes before the accusative ein Fahrrad.',
+      explanation:
+        'Tochter is feminine, so the dative is unserer Tochter; it comes before the accusative ein Fahrrad.',
     },
     {
       id: 'ch22-ex-25',
@@ -644,7 +704,8 @@ export const chapter022: ChapterDefinition = {
         { id: 'd', text: 'erkläre' },
       ],
       correctOptionId: 'b',
-      explanation: 'die Aufgabe is the thing being explained, so it is the accusative object; dir is the dative pronoun.',
+      explanation:
+        'die Aufgabe is the thing being explained, so it is the accusative object; dir is the dative pronoun.',
     },
     {
       id: 'ch22-ex-26',
@@ -654,7 +715,8 @@ export const chapter022: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['two-object-verbs', 'dative'],
       instruction: 'Identify the dative (person) object of the sentence.',
-      prompt: 'Er schreibt seiner Schwester einen Brief. Which noun phrase is the dative object?',
+      prompt:
+        'Er schreibt seiner Schwester einen Brief. Which noun phrase is the dative object?',
       options: [
         { id: 'a', text: 'seiner Schwester' },
         { id: 'b', text: 'einen Brief' },
@@ -662,7 +724,8 @@ export const chapter022: ChapterDefinition = {
         { id: 'd', text: 'schreibt' },
       ],
       correctOptionId: 'a',
-      explanation: 'seiner Schwester is the person who receives the letter, so it is the dative object; einen Brief is the accusative thing written.',
+      explanation:
+        'seiner Schwester is the person who receives the letter, so it is the dative object; einen Brief is the accusative thing written.',
     },
     {
       id: 'ch22-ex-27',
@@ -672,7 +735,8 @@ export const chapter022: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['two-object-verbs', 'accusative'],
       instruction: 'Identify the accusative (thing) object of the sentence.',
-      prompt: 'Wir kaufen unserem Sohn ein Fahrrad. Which noun phrase is the accusative object?',
+      prompt:
+        'Wir kaufen unserem Sohn ein Fahrrad. Which noun phrase is the accusative object?',
       options: [
         { id: 'a', text: 'unserem Sohn' },
         { id: 'b', text: 'ein Fahrrad' },
@@ -680,7 +744,8 @@ export const chapter022: ChapterDefinition = {
         { id: 'd', text: 'kaufen' },
       ],
       correctOptionId: 'b',
-      explanation: 'ein Fahrrad is the thing being bought, so it is the accusative object; unserem Sohn is the dative recipient.',
+      explanation:
+        'ein Fahrrad is the thing being bought, so it is the accusative object; unserem Sohn is the dative recipient.',
     },
     {
       id: 'ch22-ex-28',
@@ -690,7 +755,8 @@ export const chapter022: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['two-object-verbs', 'dative'],
       instruction: 'Identify the dative (person) object of the sentence.',
-      prompt: 'Ich leihe meinem Kollegen den Regenschirm. Which noun phrase is the dative object?',
+      prompt:
+        'Ich leihe meinem Kollegen den Regenschirm. Which noun phrase is the dative object?',
       options: [
         { id: 'a', text: 'Ich' },
         { id: 'b', text: 'meinem Kollegen' },
@@ -698,7 +764,8 @@ export const chapter022: ChapterDefinition = {
         { id: 'd', text: 'leihe' },
       ],
       correctOptionId: 'b',
-      explanation: 'meinem Kollegen is the person who receives the umbrella, so it is the dative object; den Regenschirm is the accusative thing lent.',
+      explanation:
+        'meinem Kollegen is the person who receives the umbrella, so it is the dative object; den Regenschirm is the accusative thing lent.',
     },
     {
       id: 'ch22-ex-29',
@@ -761,7 +828,8 @@ export const chapter022: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['word-order', 'two-nouns'],
-      instruction: 'Choose the sentence with the correct word order (both objects are nouns).',
+      instruction:
+        'Choose the sentence with the correct word order (both objects are nouns).',
       prompt: 'Which sentence has the correct word order?',
       options: [
         { id: 'a', text: 'Ich schenke einen Blumenstrauß meiner Mutter.' },
@@ -770,7 +838,8 @@ export const chapter022: ChapterDefinition = {
         { id: 'd', text: 'Schenke ich meiner Mutter einen Blumenstrauß.' },
       ],
       correctOptionId: 'b',
-      explanation: 'With two nouns, the dative (person) comes before the accusative (thing): meiner Mutter einen Blumenstrauß.',
+      explanation:
+        'With two nouns, the dative (person) comes before the accusative (thing): meiner Mutter einen Blumenstrauß.',
     },
     {
       id: 'ch22-ex-33',
@@ -779,7 +848,8 @@ export const chapter022: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['word-order', 'pronoun-and-noun'],
-      instruction: 'Choose the sentence with the correct word order (dative pronoun, accusative noun).',
+      instruction:
+        'Choose the sentence with the correct word order (dative pronoun, accusative noun).',
       prompt: 'Which sentence has the correct word order?',
       options: [
         { id: 'a', text: 'Ich schenke einen Blumenstrauß ihr.' },
@@ -788,7 +858,8 @@ export const chapter022: ChapterDefinition = {
         { id: 'd', text: 'Ich schenke der ihr Blumenstrauß.' },
       ],
       correctOptionId: 'b',
-      explanation: 'The dative pronoun ihr moves in front of the accusative noun einen Blumenstrauß.',
+      explanation:
+        'The dative pronoun ihr moves in front of the accusative noun einen Blumenstrauß.',
     },
     {
       id: 'ch22-ex-34',
@@ -797,7 +868,8 @@ export const chapter022: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['word-order', 'pronoun-and-noun'],
-      instruction: 'Choose the sentence with the correct word order (accusative pronoun, dative noun).',
+      instruction:
+        'Choose the sentence with the correct word order (accusative pronoun, dative noun).',
       prompt: 'Which sentence has the correct word order?',
       options: [
         { id: 'a', text: 'Ich schenke meiner Mutter ihn.' },
@@ -806,7 +878,8 @@ export const chapter022: ChapterDefinition = {
         { id: 'd', text: 'Ich schenke meiner ihn Mutter.' },
       ],
       correctOptionId: 'b',
-      explanation: 'The accusative pronoun ihn moves in front of the dative noun meiner Mutter, even though it is not the dative object.',
+      explanation:
+        'The accusative pronoun ihn moves in front of the dative noun meiner Mutter, even though it is not the dative object.',
     },
     {
       id: 'ch22-ex-35',
@@ -815,7 +888,8 @@ export const chapter022: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['word-order', 'two-pronouns'],
-      instruction: 'Choose the sentence with the correct word order (both objects are pronouns).',
+      instruction:
+        'Choose the sentence with the correct word order (both objects are pronouns).',
       prompt: 'Which sentence has the correct word order?',
       options: [
         { id: 'a', text: 'Ich schenke ihr ihn.' },
@@ -824,7 +898,8 @@ export const chapter022: ChapterDefinition = {
         { id: 'd', text: 'Ihn schenke ich ihr.' },
       ],
       correctOptionId: 'b',
-      explanation: 'When both objects are pronouns, the accusative pronoun ihn comes before the dative pronoun ihr.',
+      explanation:
+        'When both objects are pronouns, the accusative pronoun ihn comes before the dative pronoun ihr.',
     },
     {
       id: 'ch22-ex-36',
@@ -896,11 +971,15 @@ export const chapter022: ChapterDefinition = {
       instruction:
         'Write a complete sentence using the cue words, with the dative object before the accusative object. Capitalisation and punctuation are checked.',
       prompt: 'ich – schenken – meine Mutter (dative) – ein Blumenstrauß (accusative)',
-      acceptedAnswers: ['Ich schenke meiner Mutter einen Blumenstrauß.', 'Ich schenke meiner Mutter einen Blumenstrauß'],
+      acceptedAnswers: [
+        'Ich schenke meiner Mutter einen Blumenstrauß.',
+        'Ich schenke meiner Mutter einen Blumenstrauß',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich schenke ...',
       maxLength: 60,
-      explanation: 'Mutter is feminine, so the dative is meiner Mutter; it comes before the accusative einen Blumenstrauß.',
+      explanation:
+        'Mutter is feminine, so the dative is meiner Mutter; it comes before the accusative einen Blumenstrauß.',
     },
     {
       id: 'ch22-ex-41',
@@ -912,11 +991,15 @@ export const chapter022: ChapterDefinition = {
       instruction:
         'Write a complete sentence using the cue words, with the dative object before the accusative object. Capitalisation and punctuation are checked.',
       prompt: 'er – verkaufen – sein Nachbar (dative) – das Auto (accusative)',
-      acceptedAnswers: ['Er verkauft seinem Nachbarn das Auto.', 'Er verkauft seinem Nachbarn das Auto'],
+      acceptedAnswers: [
+        'Er verkauft seinem Nachbarn das Auto.',
+        'Er verkauft seinem Nachbarn das Auto',
+      ],
       answerMode: 'normalized',
       placeholder: 'Er verkauft ...',
       maxLength: 60,
-      explanation: 'Nachbar is masculine, so the dative is seinem Nachbarn; it comes before the accusative das Auto.',
+      explanation:
+        'Nachbar is masculine, so the dative is seinem Nachbarn; it comes before the accusative das Auto.',
     },
     {
       id: 'ch22-ex-42',
@@ -927,12 +1010,17 @@ export const chapter022: ChapterDefinition = {
       grammarFocus: ['sentence-completion', 'word-order', 'plural'],
       instruction:
         'Write a complete sentence using the cue words, with the dative object before the accusative object. Capitalisation and punctuation are checked.',
-      prompt: 'sie (she) – erklären – die Kollegen (dative, plural) – der Plan (accusative)',
-      acceptedAnswers: ['Sie erklärt den Kollegen den Plan.', 'Sie erklärt den Kollegen den Plan'],
+      prompt:
+        'sie (she) – erklären – die Kollegen (dative, plural) – der Plan (accusative)',
+      acceptedAnswers: [
+        'Sie erklärt den Kollegen den Plan.',
+        'Sie erklärt den Kollegen den Plan',
+      ],
       answerMode: 'normalized',
       placeholder: 'Sie erklärt ...',
       maxLength: 60,
-      explanation: 'Kollegen is plural dative, so the article is den; it comes before the accusative den Plan.',
+      explanation:
+        'Kollegen is plural dative, so the article is den; it comes before the accusative den Plan.',
     },
     {
       id: 'ch22-ex-43',
@@ -948,7 +1036,8 @@ export const chapter022: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Ich schenke ...',
       maxLength: 60,
-      explanation: 'meiner Schwester becomes the dative pronoun ihr, which moves in front of the accusative noun ein Buch.',
+      explanation:
+        'meiner Schwester becomes the dative pronoun ihr, which moves in front of the accusative noun ein Buch.',
     },
     {
       id: 'ch22-ex-44',
@@ -964,7 +1053,8 @@ export const chapter022: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Sie bringt ...',
       maxLength: 60,
-      explanation: 'den Kaffee becomes the accusative pronoun ihn, which moves in front of the dative noun ihrem Chef, even though it is the accusative object.',
+      explanation:
+        'den Kaffee becomes the accusative pronoun ihn, which moves in front of the dative noun ihrem Chef, even though it is the accusative object.',
     },
     {
       id: 'ch22-ex-45',
@@ -980,7 +1070,8 @@ export const chapter022: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Er zeigt ...',
       maxLength: 60,
-      explanation: 'die Karte becomes sie and den Touristen becomes ihnen; with two pronouns, the accusative pronoun sie comes before the dative pronoun ihnen.',
+      explanation:
+        'die Karte becomes sie and den Touristen becomes ihnen; with two pronouns, the accusative pronoun sie comes before the dative pronoun ihnen.',
     },
     {
       id: 'ch22-ex-46',
@@ -989,13 +1080,18 @@ export const chapter022: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['two-object-verbs', 'word-order', 'translation'],
-      instruction: 'Translate into German using schenken. Capitalisation and punctuation are checked.',
+      instruction:
+        'Translate into German using schenken. Capitalisation and punctuation are checked.',
       prompt: 'He is giving his father a watch (as a gift).',
-      acceptedAnswers: ['Er schenkt seinem Vater eine Uhr.', 'Er schenkt seinem Vater eine Uhr'],
+      acceptedAnswers: [
+        'Er schenkt seinem Vater eine Uhr.',
+        'Er schenkt seinem Vater eine Uhr',
+      ],
       answerMode: 'normalized',
       placeholder: 'Er schenkt ...',
       maxLength: 60,
-      explanation: 'Vater is masculine, so the dative is seinem Vater; it comes before the accusative eine Uhr.',
+      explanation:
+        'Vater is masculine, so the dative is seinem Vater; it comes before the accusative eine Uhr.',
     },
     {
       id: 'ch22-ex-47',
@@ -1013,7 +1109,8 @@ export const chapter022: ChapterDefinition = {
         { id: 's4', text: 'einen Blumenstrauß' },
         { id: 's5', text: '.' },
       ],
-      explanation: 'With two nouns, the dative person (meiner Mutter) comes before the accusative thing (einen Blumenstrauß).',
+      explanation:
+        'With two nouns, the dative person (meiner Mutter) comes before the accusative thing (einen Blumenstrauß).',
     },
     {
       id: 'ch22-ex-48',
@@ -1022,7 +1119,8 @@ export const chapter022: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['word-order', 'pronoun-and-noun'],
-      instruction: 'Put the words in the correct order (dative pronoun, accusative noun).',
+      instruction:
+        'Put the words in the correct order (dative pronoun, accusative noun).',
       prompt: 'ich / schenke / ihr / einen Blumenstrauß',
       segments: [
         { id: 's1', text: 'Ich' },
@@ -1031,7 +1129,8 @@ export const chapter022: ChapterDefinition = {
         { id: 's4', text: 'einen Blumenstrauß' },
         { id: 's5', text: '.' },
       ],
-      explanation: 'The dative pronoun ihr moves in front of the accusative noun einen Blumenstrauß.',
+      explanation:
+        'The dative pronoun ihr moves in front of the accusative noun einen Blumenstrauß.',
     },
     {
       id: 'ch22-ex-49',
@@ -1040,7 +1139,8 @@ export const chapter022: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['word-order', 'pronoun-and-noun'],
-      instruction: 'Put the words in the correct order (accusative pronoun, dative noun).',
+      instruction:
+        'Put the words in the correct order (accusative pronoun, dative noun).',
       prompt: 'ich / schenke / ihn / meiner Mutter',
       segments: [
         { id: 's1', text: 'Ich' },
@@ -1049,7 +1149,8 @@ export const chapter022: ChapterDefinition = {
         { id: 's4', text: 'meiner Mutter' },
         { id: 's5', text: '.' },
       ],
-      explanation: 'The accusative pronoun ihn moves in front of the dative noun meiner Mutter, even though it is not the dative object.',
+      explanation:
+        'The accusative pronoun ihn moves in front of the dative noun meiner Mutter, even though it is not the dative object.',
     },
     {
       id: 'ch22-ex-50',
@@ -1067,7 +1168,8 @@ export const chapter022: ChapterDefinition = {
         { id: 's4', text: 'ihr' },
         { id: 's5', text: '.' },
       ],
-      explanation: 'When both objects are pronouns, the accusative pronoun ihn comes before the dative pronoun ihr.',
+      explanation:
+        'When both objects are pronouns, the accusative pronoun ihn comes before the dative pronoun ihr.',
     },
     {
       id: 'ch22-ex-51',
@@ -1085,7 +1187,8 @@ export const chapter022: ChapterDefinition = {
         { id: 's4', text: 'die Regel' },
         { id: 's5', text: '.' },
       ],
-      explanation: 'With two nouns, the dative person (den Schülern) comes before the accusative thing (die Regel).',
+      explanation:
+        'With two nouns, the dative person (den Schülern) comes before the accusative thing (die Regel).',
     },
     {
       id: 'ch22-ex-52',
@@ -1094,7 +1197,8 @@ export const chapter022: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['word-order', 'pronoun-and-noun'],
-      instruction: 'Put the words in the correct order (dative pronoun, accusative noun).',
+      instruction:
+        'Put the words in the correct order (dative pronoun, accusative noun).',
       prompt: 'er / zeigt / ihnen / die Karte',
       segments: [
         { id: 's1', text: 'Er' },
@@ -1103,7 +1207,8 @@ export const chapter022: ChapterDefinition = {
         { id: 's4', text: 'die Karte' },
         { id: 's5', text: '.' },
       ],
-      explanation: 'The dative pronoun ihnen moves in front of the accusative noun die Karte.',
+      explanation:
+        'The dative pronoun ihnen moves in front of the accusative noun die Karte.',
     },
     {
       id: 'ch22-ex-53',
@@ -1112,7 +1217,8 @@ export const chapter022: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['word-order', 'pronoun-and-noun'],
-      instruction: 'Put the words in the correct order (accusative pronoun, dative noun).',
+      instruction:
+        'Put the words in the correct order (accusative pronoun, dative noun).',
       prompt: 'er / zeigt / sie / den Touristen',
       segments: [
         { id: 's1', text: 'Er' },
@@ -1121,7 +1227,8 @@ export const chapter022: ChapterDefinition = {
         { id: 's4', text: 'den Touristen' },
         { id: 's5', text: '.' },
       ],
-      explanation: 'The accusative pronoun sie (referring to die Karte) moves in front of the dative noun den Touristen.',
+      explanation:
+        'The accusative pronoun sie (referring to die Karte) moves in front of the dative noun den Touristen.',
     },
     {
       id: 'ch22-ex-54',
@@ -1139,7 +1246,8 @@ export const chapter022: ChapterDefinition = {
         { id: 's4', text: 'ihnen' },
         { id: 's5', text: '.' },
       ],
-      explanation: 'When both objects are pronouns, the accusative pronoun sie comes before the dative pronoun ihnen.',
+      explanation:
+        'When both objects are pronouns, the accusative pronoun sie comes before the dative pronoun ihnen.',
     },
     {
       id: 'ch22-ex-55',
@@ -1156,7 +1264,8 @@ export const chapter022: ChapterDefinition = {
         { id: 'slot2', correctWord: 'eine' },
       ],
       wordBank: ['meinem', 'meiner', 'einen', 'eine'],
-      explanation: 'Vater is masculine dative (meinem); Krawatte is feminine accusative (eine).',
+      explanation:
+        'Vater is masculine dative (meinem); Krawatte is feminine accusative (eine).',
     },
     {
       id: 'ch22-ex-56',
@@ -1190,7 +1299,8 @@ export const chapter022: ChapterDefinition = {
         { id: 'slot2', correctWord: 'eine' },
       ],
       wordBank: ['den', 'der', 'eine', 'einen'],
-      explanation: 'Freunden is plural dative (den); Einladung is feminine accusative (eine).',
+      explanation:
+        'Freunden is plural dative (den); Einladung is feminine accusative (eine).',
     },
     {
       id: 'ch22-ex-58',
@@ -1207,7 +1317,8 @@ export const chapter022: ChapterDefinition = {
         { id: 'slot2', correctWord: 'ein' },
       ],
       wordBank: ['meiner', 'meinem', 'ein', 'einen'],
-      explanation: 'Tochter is feminine dative (meiner); Fahrrad is neuter accusative (ein).',
+      explanation:
+        'Tochter is feminine dative (meiner); Fahrrad is neuter accusative (ein).',
     },
     {
       id: 'ch22-ex-59',
@@ -1241,7 +1352,8 @@ export const chapter022: ChapterDefinition = {
         { id: 'slot2', correctWord: 'den' },
       ],
       wordBank: ['ihrem', 'ihre', 'den', 'dem'],
-      explanation: 'Chef is masculine dative (ihrem); Kaffee is masculine accusative (den).',
+      explanation:
+        'Chef is masculine dative (ihrem); Kaffee is masculine accusative (den).',
     },
     {
       id: 'ch22-ex-61',
@@ -1250,7 +1362,8 @@ export const chapter022: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'production',
       grammarFocus: ['word-order', 'two-pronouns'],
-      instruction: 'Drag the correct pronoun into each slot (accusative pronoun before dative pronoun).',
+      instruction:
+        'Drag the correct pronoun into each slot (accusative pronoun before dative pronoun).',
       prompt: 'Ich gebe ___ ___.',
       templateParts: ['Ich gebe ', ' ', '.'],
       slots: [
@@ -1258,7 +1371,8 @@ export const chapter022: ChapterDefinition = {
         { id: 'slot2', correctWord: 'ihm' },
       ],
       wordBank: ['ihn', 'es', 'sie', 'ihm'],
-      explanation: 'When both objects are pronouns, the accusative pronoun (es) comes before the dative pronoun (ihm).',
+      explanation:
+        'When both objects are pronouns, the accusative pronoun (es) comes before the dative pronoun (ihm).',
     },
     {
       id: 'ch22-ex-62',
@@ -1267,7 +1381,8 @@ export const chapter022: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'production',
       grammarFocus: ['word-order', 'two-pronouns'],
-      instruction: 'Drag the correct pronoun into each slot (accusative pronoun before dative pronoun).',
+      instruction:
+        'Drag the correct pronoun into each slot (accusative pronoun before dative pronoun).',
       prompt: 'Er zeigt ___ ___.',
       templateParts: ['Er zeigt ', ' ', '.'],
       slots: [
@@ -1275,7 +1390,8 @@ export const chapter022: ChapterDefinition = {
         { id: 'slot2', correctWord: 'ihnen' },
       ],
       wordBank: ['sie', 'ihnen', 'ihm', 'ihn'],
-      explanation: 'When both objects are pronouns, the accusative pronoun (sie) comes before the dative pronoun (ihnen).',
+      explanation:
+        'When both objects are pronouns, the accusative pronoun (sie) comes before the dative pronoun (ihnen).',
     },
     {
       id: 'ch22-ex-63',
@@ -1289,7 +1405,8 @@ export const chapter022: ChapterDefinition = {
       tokens: ['Ich', 'zeige', 'der', 'Mann', 'den', 'Weg', '.'],
       errorTokenIndex: 2,
       correction: 'dem',
-      explanation: 'Mann is masculine, so the dative article must be dem, not der (which is the feminine dative article).',
+      explanation:
+        'Mann is masculine, so the dative article must be dem, not der (which is the feminine dative article).',
     },
     {
       id: 'ch22-ex-64',
@@ -1303,7 +1420,8 @@ export const chapter022: ChapterDefinition = {
       tokens: ['Ich', 'schicke', 'meine', 'Schwester', 'ein', 'Geschenk', '.'],
       errorTokenIndex: 2,
       correction: 'meiner',
-      explanation: 'The recipient of schicken must be in the dative (meiner Schwester), not the accusative/nominative (meine Schwester).',
+      explanation:
+        'The recipient of schicken must be in the dative (meiner Schwester), not the accusative/nominative (meine Schwester).',
     },
     {
       id: 'ch22-ex-65',
@@ -1317,7 +1435,8 @@ export const chapter022: ChapterDefinition = {
       tokens: ['Wir', 'kaufen', 'unser', 'Sohn', 'ein', 'Fahrrad', '.'],
       errorTokenIndex: 2,
       correction: 'unserem',
-      explanation: 'Sohn is masculine, so the dative possessive must be unserem, not the nominative unser.',
+      explanation:
+        'Sohn is masculine, so the dative possessive must be unserem, not the nominative unser.',
     },
     {
       id: 'ch22-ex-66',
@@ -1327,14 +1446,16 @@ export const chapter022: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['two-object-verbs'],
       instruction: 'Match each verb with its typical two-object sentence.',
-      prompt: 'Match the verb on the left with the sentence that uses it correctly on the right.',
+      prompt:
+        'Match the verb on the left with the sentence that uses it correctly on the right.',
       pairs: [
         { id: 'p1', left: 'geben', right: 'Ich gebe dir das Buch.' },
         { id: 'p2', left: 'zeigen', right: 'Er zeigt mir den Weg.' },
         { id: 'p3', left: 'schicken', right: 'Wir schicken ihm eine Karte.' },
         { id: 'p4', left: 'bringen', right: 'Sie bringt uns den Kaffee.' },
       ],
-      explanation: 'Each of these verbs takes a dative person and an accusative thing: geben, zeigen, schicken, and bringen all follow the same pattern.',
+      explanation:
+        'Each of these verbs takes a dative person and an accusative thing: geben, zeigen, schicken, and bringen all follow the same pattern.',
     },
     {
       id: 'ch22-ex-67',
@@ -1344,14 +1465,16 @@ export const chapter022: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['two-object-verbs'],
       instruction: 'Match each verb with its typical two-object sentence.',
-      prompt: 'Match the verb on the left with the sentence that uses it correctly on the right.',
+      prompt:
+        'Match the verb on the left with the sentence that uses it correctly on the right.',
       pairs: [
         { id: 'p1', left: 'erklären', right: 'Ich erkläre ihr die Regel.' },
         { id: 'p2', left: 'schreiben', right: 'Er schreibt ihm einen Brief.' },
         { id: 'p3', left: 'kaufen', right: 'Wir kaufen ihr ein Geschenk.' },
         { id: 'p4', left: 'leihen', right: 'Ich leihe dir das Auto.' },
       ],
-      explanation: 'erklären, schreiben, kaufen, and leihen all take a dative person and an accusative thing, in this case shown with pronoun objects.',
+      explanation:
+        'erklären, schreiben, kaufen, and leihen all take a dative person and an accusative thing, in this case shown with pronoun objects.',
     },
     {
       id: 'ch22-ex-68',
@@ -1361,14 +1484,16 @@ export const chapter022: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['two-object-verbs'],
       instruction: 'Match each verb with its typical two-object sentence.',
-      prompt: 'Match the verb on the left with the sentence that uses it correctly on the right.',
+      prompt:
+        'Match the verb on the left with the sentence that uses it correctly on the right.',
       pairs: [
         { id: 'p1', left: 'schenken', right: 'Ich schenke ihm eine Uhr.' },
         { id: 'p2', left: 'verkaufen', right: 'Er verkauft ihr das Auto.' },
         { id: 'p3', left: 'erzählen', right: 'Sie erzählt uns die Geschichte.' },
         { id: 'p4', left: 'zeigen', right: 'Wir zeigen euch das Bild.' },
       ],
-      explanation: 'schenken, verkaufen, erzählen, and zeigen all take a dative person and an accusative thing.',
+      explanation:
+        'schenken, verkaufen, erzählen, and zeigen all take a dative person and an accusative thing.',
     },
   ],
 };

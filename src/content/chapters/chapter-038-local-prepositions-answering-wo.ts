@@ -12,7 +12,17 @@ export const chapter038: ChapterDefinition = {
     'Choose the correct location preposition (in, bei, an, auf) to say where someone or something is, tell in apart from bei, use the correct dative endings and contractions (im, am, beim), and match each destination preposition from Chapter 37 to its wo? counterpart.',
   prerequisites: [18, 35, 36],
   estimatedMinutes: 22,
-  tags: ['prepositions', 'location', 'wo', 'dative', 'in', 'bei', 'an', 'auf', 'contractions'],
+  tags: [
+    'prepositions',
+    'location',
+    'wo',
+    'dative',
+    'in',
+    'bei',
+    'an',
+    'auf',
+    'contractions',
+  ],
   explanation: {
     introduction: [
       'The question word wo? asks where someone or something currently is, with no sense of movement at all — the opposite of wohin? from the last chapter, which asks about a destination. Because there is no motion involved, every preposition in this chapter takes the dative case, no matter which one you use.',
@@ -50,7 +60,7 @@ export const chapter038: ChapterDefinition = {
         heading: "in vs. bei: inside a place vs. in someone's sphere",
         paragraphs: [
           "Because both in and bei can be translated as 'at' in English, they are easy to confuse. The test is simple: do you mean literally inside a defined space (use in), or do you mean at a person's home, workplace, or company (use bei), even when no building is named at all?",
-          'Compare Ich bin in der Wohnung. (I am in the apartment — a physical, enclosed space) with Ich bin bei meinen Eltern. (I am at my parents\' place — the point is whose home it is, not what kind of room or building it happens to be.)',
+          "Compare Ich bin in der Wohnung. (I am in the apartment — a physical, enclosed space) with Ich bin bei meinen Eltern. (I am at my parents' place — the point is whose home it is, not what kind of room or building it happens to be.)",
         ],
       },
       {
@@ -94,10 +104,26 @@ export const chapter038: ChapterDefinition = {
         columns: ['Preposition', 'Typical context', 'Example'],
         columnCases: ['dative', null, null],
         rows: [
-          ['in', 'inside an enclosed space, or a country', 'Ich bin in der Bibliothek. (I am in the library.)'],
-          ["bei", "at a person's home, or at a company/institution", "Er ist bei seiner Tante. (He is at his aunt's place.)"],
-          ['an', 'at an edge or border, especially bodies of water', 'Wir sind am Meer. (We are at the sea.)'],
-          ['auf', 'on an open public space', 'Sie ist auf dem Sportplatz. (She is at the sports ground.)'],
+          [
+            'in',
+            'inside an enclosed space, or a country',
+            'Ich bin in der Bibliothek. (I am in the library.)',
+          ],
+          [
+            'bei',
+            "at a person's home, or at a company/institution",
+            "Er ist bei seiner Tante. (He is at his aunt's place.)",
+          ],
+          [
+            'an',
+            'at an edge or border, especially bodies of water',
+            'Wir sind am Meer. (We are at the sea.)',
+          ],
+          [
+            'auf',
+            'on an open public space',
+            'Sie ist auf dem Sportplatz. (She is at the sports ground.)',
+          ],
         ],
       },
       {
@@ -107,7 +133,7 @@ export const chapter038: ChapterDefinition = {
         rows: [
           ['in + dem', 'im', 'im Hotel (in the hotel)'],
           ['an + dem', 'am', 'am Fluss (at the river)'],
-          ["bei + dem", 'beim', "beim Zahnarzt (at the dentist's)"],
+          ['bei + dem', 'beim', "beim Zahnarzt (at the dentist's)"],
         ],
         note: 'auf + dem does not contract in standard German: auf dem Markt, never "aufm Markt".',
       },
@@ -116,8 +142,16 @@ export const chapter038: ChapterDefinition = {
         title: 'From destination (wohin?) to location (wo?)',
         columns: ['Wohin? (Chapter 37)', 'Wo? (this chapter)', 'Example pair'],
         rows: [
-          ['nach Hause / in die Stadt', 'in der Stadt', 'Wir fahren in die Stadt. → Wir sind in der Stadt.'],
-          ['zu meiner Freundin', 'bei meiner Freundin', 'Ich gehe zu meiner Freundin. → Ich bin bei meiner Freundin.'],
+          [
+            'nach Hause / in die Stadt',
+            'in der Stadt',
+            'Wir fahren in die Stadt. → Wir sind in der Stadt.',
+          ],
+          [
+            'zu meiner Freundin',
+            'bei meiner Freundin',
+            'Ich gehe zu meiner Freundin. → Ich bin bei meiner Freundin.',
+          ],
           ['an den See', 'am See', 'Wir fahren an den See. → Wir sind am See.'],
         ],
       },
@@ -127,13 +161,15 @@ export const chapter038: ChapterDefinition = {
         german: 'Ich bin in der Küche und koche das Abendessen.',
         english: 'I am in the kitchen and am cooking dinner.',
         highlight: ['in der Küche'],
-        explanation: 'in + dative describes being inside an enclosed room; die Küche is feminine, so the dative article is der.',
+        explanation:
+          'in + dative describes being inside an enclosed room; die Küche is feminine, so the dative article is der.',
       },
       {
         german: 'Meine Eltern wohnen in der Schweiz.',
         english: 'My parents live in Switzerland.',
         highlight: ['in der Schweiz'],
-        explanation: 'die Schweiz is a feminine country name that keeps its article after in, even though most countries have no article at all.',
+        explanation:
+          'die Schweiz is a feminine country name that keeps its article after in, even though most countries have no article at all.',
       },
       {
         german: 'Er arbeitet im Büro bis achtzehn Uhr.',
@@ -142,10 +178,11 @@ export const chapter038: ChapterDefinition = {
         explanation: 'in dem contracts to im before the neuter noun das Büro.',
       },
       {
-        german: "Am Wochenende bin ich bei meiner Freundin.",
+        german: 'Am Wochenende bin ich bei meiner Freundin.',
         english: "At the weekend I am at my girlfriend's place.",
         highlight: ['bei meiner Freundin'],
-        explanation: 'bei + dative names whose home you are at, not what kind of room you are in.',
+        explanation:
+          'bei + dative names whose home you are at, not what kind of room you are in.',
       },
       {
         german: 'Mein Bruder arbeitet bei einer großen Firma.',
@@ -157,7 +194,8 @@ export const chapter038: ChapterDefinition = {
         german: 'Wir sitzen am See und genießen die Sonne.',
         english: 'We are sitting at the lake and enjoying the sun.',
         highlight: ['am See'],
-        explanation: 'an dem contracts to am; der See is a body of water, a typical an location.',
+        explanation:
+          'an dem contracts to am; der See is a body of water, a typical an location.',
       },
       {
         german: 'Die Kinder spielen auf dem Spielplatz.',
@@ -172,45 +210,52 @@ export const chapter038: ChapterDefinition = {
         explanation: 'der Markt is an open public space, so it takes auf, not in.',
       },
       {
-        german: "Ich bin gerade beim Arzt.",
+        german: 'Ich bin gerade beim Arzt.',
         english: "I am at the doctor's right now.",
         highlight: ['beim Arzt'],
-        explanation: "bei dem contracts to beim; visits to a professional's practice use bei.",
+        explanation:
+          "bei dem contracts to beim; visits to a professional's practice use bei.",
       },
       {
         german: 'In Deutschland spricht man Deutsch.',
         english: 'People speak German in Germany.',
         highlight: ['In Deutschland'],
-        explanation: 'Most country names take no article, so in is followed directly by the country name.',
+        explanation:
+          'Most country names take no article, so in is followed directly by the country name.',
       },
       {
         german: 'Meine Oma wohnt bei uns.',
         english: 'My grandma lives with us.',
         highlight: ['bei uns'],
-        explanation: 'bei uns names whose household someone lives in, without naming a building at all.',
+        explanation:
+          'bei uns names whose household someone lives in, without naming a building at all.',
       },
       {
         german: 'Der Bahnhof liegt am Stadtrand.',
         english: 'The station is located on the edge of town.',
         highlight: ['am Stadtrand'],
-        explanation: 'an + dative marks an edge or border; der Stadtrand (the edge of town) is a typical an location, contracted here to am.',
+        explanation:
+          'an + dative marks an edge or border; der Stadtrand (the edge of town) is a typical an location, contracted here to am.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich bin bei der Küche.',
         correct: 'Ich bin in der Küche.',
-        explanation: 'bei describes whose home or company you are in, not what kind of room; an enclosed room like a kitchen needs in.',
+        explanation:
+          'bei describes whose home or company you are in, not what kind of room; an enclosed room like a kitchen needs in.',
       },
       {
         incorrect: 'Ich bin in meiner Freundin.',
         correct: 'Ich bin bei meiner Freundin.',
-        explanation: 'Being at a person\'s home is expressed with bei, not in, even though English uses "at".',
+        explanation:
+          'Being at a person\'s home is expressed with bei, not in, even though English uses "at".',
       },
       {
         incorrect: 'Er wohnt in Schweiz.',
         correct: 'Er wohnt in der Schweiz.',
-        explanation: 'die Schweiz is a feminine country name and keeps its article der after in; it is never used without it.',
+        explanation:
+          'die Schweiz is a feminine country name and keeps its article der after in; it is never used without it.',
       },
       {
         incorrect: 'Wir sind an dem Markt.',
@@ -220,7 +265,8 @@ export const chapter038: ChapterDefinition = {
       {
         incorrect: 'Ich bin in dem Arzt.',
         correct: 'Ich bin beim Arzt.',
-        explanation: "Visits to a person's practice, such as the doctor's, use bei (contracted to beim), not in.",
+        explanation:
+          "Visits to a person's practice, such as the doctor's, use bei (contracted to beim), not in.",
       },
     ],
     remember: [
@@ -380,7 +426,8 @@ export const chapter038: ChapterDefinition = {
         { id: 'd', text: 'bei' },
       ],
       correctOptionId: 'a',
-      explanation: 'auf dem stays two separate words in standard German; it does not contract like im, am, or beim.',
+      explanation:
+        'auf dem stays two separate words in standard German; it does not contract like im, am, or beim.',
     },
     {
       id: 'ch38-ex-09',
@@ -416,7 +463,8 @@ export const chapter038: ChapterDefinition = {
         { id: 'd', text: 'ins' },
       ],
       correctOptionId: 'a',
-      explanation: 'A hospital is treated as an enclosed institution, so in dem Krankenhaus contracts to im Krankenhaus.',
+      explanation:
+        'A hospital is treated as an enclosed institution, so in dem Krankenhaus contracts to im Krankenhaus.',
     },
     {
       id: 'ch38-ex-11',
@@ -491,7 +539,8 @@ export const chapter038: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['contraction', 'beim'],
-      instruction: 'Write the correct contracted preposition. Capitalisation is not checked.',
+      instruction:
+        'Write the correct contracted preposition. Capitalisation is not checked.',
       prompt: 'Er ist gerade ___ Arzt. (bei + dem)',
       acceptedAnswers: ['beim'],
       answerMode: 'caseInsensitive',
@@ -506,7 +555,8 @@ export const chapter038: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['contraction', 'am'],
-      instruction: 'Write the correct contracted preposition. Capitalisation is not checked.',
+      instruction:
+        'Write the correct contracted preposition. Capitalisation is not checked.',
       prompt: 'Die Vögel sitzen ___ See. (an + dem)',
       acceptedAnswers: ['am'],
       answerMode: 'caseInsensitive',
@@ -521,13 +571,15 @@ export const chapter038: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['preposition-choice', 'country'],
-      instruction: 'Complete the sentence with the correct preposition. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct preposition. Capitalisation is not checked.',
       prompt: 'Meine Eltern wohnen ___ der Schweiz.',
       acceptedAnswers: ['in'],
       answerMode: 'caseInsensitive',
       placeholder: 'in',
       maxLength: 10,
-      explanation: 'Countries use in, even feminine ones like die Schweiz that keep their article.',
+      explanation:
+        'Countries use in, even feminine ones like die Schweiz that keep their article.',
     },
     {
       id: 'ch38-ex-18',
@@ -536,7 +588,8 @@ export const chapter038: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['preposition-choice', 'auf'],
-      instruction: 'Complete the sentence with the correct preposition. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct preposition. Capitalisation is not checked.',
       prompt: 'Die Kinder spielen ___ dem Spielplatz.',
       acceptedAnswers: ['auf'],
       answerMode: 'caseInsensitive',
@@ -551,7 +604,8 @@ export const chapter038: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['preposition-choice', 'auf'],
-      instruction: 'Complete the sentence with the correct preposition. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct preposition. Capitalisation is not checked.',
       prompt: 'Ich kaufe frisches Obst ___ dem Markt.',
       acceptedAnswers: ['auf'],
       answerMode: 'caseInsensitive',
@@ -566,7 +620,8 @@ export const chapter038: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['preposition-choice', 'bei'],
-      instruction: 'Complete the sentence with the correct preposition. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct preposition. Capitalisation is not checked.',
       prompt: 'Mein Onkel arbeitet ___ einer kleinen Firma.',
       acceptedAnswers: ['bei'],
       answerMode: 'caseInsensitive',
@@ -583,12 +638,14 @@ export const chapter038: ChapterDefinition = {
       grammarFocus: ['wohin-to-wo', 'zu-bei'],
       instruction:
         'Complete the answer using the location preposition that matches the destination preposition. Capitalisation is not checked.',
-      prompt: 'Wohin gehst du? – Ich gehe zu meiner Freundin. Wo bist du dann? – Ich bin ___ meiner Freundin.',
+      prompt:
+        'Wohin gehst du? – Ich gehe zu meiner Freundin. Wo bist du dann? – Ich bin ___ meiner Freundin.',
       acceptedAnswers: ['bei'],
       answerMode: 'caseInsensitive',
       placeholder: 'bei',
       maxLength: 10,
-      explanation: 'The destination preposition zu corresponds to the location preposition bei.',
+      explanation:
+        'The destination preposition zu corresponds to the location preposition bei.',
     },
     {
       id: 'ch38-ex-22',
@@ -599,12 +656,14 @@ export const chapter038: ChapterDefinition = {
       grammarFocus: ['wohin-to-wo', 'in'],
       instruction:
         'Complete the answer using the location preposition that matches the destination preposition. Capitalisation is not checked.',
-      prompt: 'Wohin fährst du? – Ich fahre in die Stadt. Wo bist du dann? – Ich bin ___ der Stadt.',
+      prompt:
+        'Wohin fährst du? – Ich fahre in die Stadt. Wo bist du dann? – Ich bin ___ der Stadt.',
       acceptedAnswers: ['in'],
       answerMode: 'caseInsensitive',
       placeholder: 'in',
       maxLength: 10,
-      explanation: 'The destination preposition in for a place corresponds to the location preposition in.',
+      explanation:
+        'The destination preposition in for a place corresponds to the location preposition in.',
     },
     {
       id: 'ch38-ex-23',
@@ -613,8 +672,10 @@ export const chapter038: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['wohin-to-wo', 'an'],
-      instruction: 'Complete the answer with the correct contracted preposition. Capitalisation is not checked.',
-      prompt: 'Wohin fahrt ihr? – Wir fahren an den See. Wo seid ihr dann? – Wir sind ___ See.',
+      instruction:
+        'Complete the answer with the correct contracted preposition. Capitalisation is not checked.',
+      prompt:
+        'Wohin fahrt ihr? – Wir fahren an den See. Wo seid ihr dann? – Wir sind ___ See.',
       acceptedAnswers: ['am'],
       answerMode: 'caseInsensitive',
       placeholder: 'am',
@@ -629,13 +690,15 @@ export const chapter038: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['sentence-production', 'bei'],
-      instruction: 'Write a complete sentence using the cue. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence using the cue. Capitalisation is checked; no full stop is required.',
       prompt: 'ich – sein – bei – mein Bruder',
       acceptedAnswers: ['Ich bin bei meinem Bruder.', 'Ich bin bei meinem Bruder'],
       answerMode: 'normalized',
       placeholder: 'Ich bin ...',
       maxLength: 60,
-      explanation: 'bei + dative takes the masculine possessive ending meinem: Ich bin bei meinem Bruder.',
+      explanation:
+        'bei + dative takes the masculine possessive ending meinem: Ich bin bei meinem Bruder.',
     },
     {
       id: 'ch38-ex-25',
@@ -689,7 +752,8 @@ export const chapter038: ChapterDefinition = {
         { id: 'd', text: 'auf dem' },
       ],
       correctOptionId: 'a',
-      explanation: 'Sitting at a table describes being at its edge, so an dem contracts to am.',
+      explanation:
+        'Sitting at a table describes being at its edge, so an dem contracts to am.',
     },
     {
       id: 'ch38-ex-28',
@@ -707,7 +771,8 @@ export const chapter038: ChapterDefinition = {
         { id: 'd', text: 'auf dem' },
       ],
       correctOptionId: 'a',
-      explanation: 'der Garten is treated as an enclosed space here, so in dem contracts to im.',
+      explanation:
+        'der Garten is treated as an enclosed space here, so in dem contracts to im.',
     },
     {
       id: 'ch38-ex-29',
@@ -743,7 +808,8 @@ export const chapter038: ChapterDefinition = {
         { id: 'd', text: 'auf' },
       ],
       correctOptionId: 'a',
-      explanation: 'der Bahnhof is a fixed point rather than an enclosed space, so an dem contracts to am.',
+      explanation:
+        'der Bahnhof is a fixed point rather than an enclosed space, so an dem contracts to am.',
     },
     {
       id: 'ch38-ex-31',
@@ -761,7 +827,8 @@ export const chapter038: ChapterDefinition = {
         { id: 'd', text: 'auf dem' },
       ],
       correctOptionId: 'a',
-      explanation: "A visit to a professional's practice uses bei, contracted here to beim.",
+      explanation:
+        "A visit to a professional's practice uses bei, contracted here to beim.",
     },
     {
       id: 'ch38-ex-32',
@@ -815,7 +882,8 @@ export const chapter038: ChapterDefinition = {
         { id: 'd', text: 'auf' },
       ],
       correctOptionId: 'a',
-      explanation: 'A company you belong to as an employee or employer is expressed with bei.',
+      explanation:
+        'A company you belong to as an employee or employer is expressed with bei.',
     },
     {
       id: 'ch38-ex-35',
@@ -824,8 +892,10 @@ export const chapter038: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['wohin-to-wo', 'zu-bei'],
-      instruction: 'Choose the location preposition that matches the destination preposition.',
-      prompt: 'Wohin geht ihr? – Wir gehen zu unseren Nachbarn. Wo seid ihr dann? – Wir sind ___ unseren Nachbarn.',
+      instruction:
+        'Choose the location preposition that matches the destination preposition.',
+      prompt:
+        'Wohin geht ihr? – Wir gehen zu unseren Nachbarn. Wo seid ihr dann? – Wir sind ___ unseren Nachbarn.',
       options: [
         { id: 'a', text: 'bei' },
         { id: 'b', text: 'in' },
@@ -833,7 +903,8 @@ export const chapter038: ChapterDefinition = {
         { id: 'd', text: 'auf' },
       ],
       correctOptionId: 'a',
-      explanation: 'The destination preposition zu corresponds to the location preposition bei.',
+      explanation:
+        'The destination preposition zu corresponds to the location preposition bei.',
     },
     {
       id: 'ch38-ex-36',
@@ -842,8 +913,10 @@ export const chapter038: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['wohin-to-wo', 'auf'],
-      instruction: 'Choose the location preposition that matches the destination preposition.',
-      prompt: 'Wohin fährst du? – Ich fahre auf den Markt. Wo bist du dann? – Ich bin ___ dem Markt.',
+      instruction:
+        'Choose the location preposition that matches the destination preposition.',
+      prompt:
+        'Wohin fährst du? – Ich fahre auf den Markt. Wo bist du dann? – Ich bin ___ dem Markt.',
       options: [
         { id: 'a', text: 'auf' },
         { id: 'b', text: 'an' },
@@ -851,7 +924,8 @@ export const chapter038: ChapterDefinition = {
         { id: 'd', text: 'bei' },
       ],
       correctOptionId: 'a',
-      explanation: 'auf keeps the same preposition for destination and location; only the case changes.',
+      explanation:
+        'auf keeps the same preposition for destination and location; only the case changes.',
     },
     {
       id: 'ch38-ex-37',
@@ -860,7 +934,8 @@ export const chapter038: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['contraction', 'am'],
-      instruction: 'Write the correct contracted preposition. Capitalisation is not checked.',
+      instruction:
+        'Write the correct contracted preposition. Capitalisation is not checked.',
       prompt: 'Wir sitzen ___ Tisch und essen. (an + dem)',
       acceptedAnswers: ['am'],
       answerMode: 'caseInsensitive',
@@ -875,7 +950,8 @@ export const chapter038: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['contraction', 'im'],
-      instruction: 'Write the correct contracted preposition. Capitalisation is not checked.',
+      instruction:
+        'Write the correct contracted preposition. Capitalisation is not checked.',
       prompt: 'Die Party ist ___ Garten. (in + dem)',
       acceptedAnswers: ['im'],
       answerMode: 'caseInsensitive',
@@ -905,7 +981,8 @@ export const chapter038: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['contraction', 'beim'],
-      instruction: 'Write the correct contracted preposition. Capitalisation is not checked.',
+      instruction:
+        'Write the correct contracted preposition. Capitalisation is not checked.',
       prompt: 'Er ist ___ Friseur. (bei + dem)',
       acceptedAnswers: ['beim'],
       answerMode: 'caseInsensitive',
@@ -920,7 +997,8 @@ export const chapter038: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['preposition-choice', 'auf'],
-      instruction: 'Complete the sentence with the correct preposition. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct preposition. Capitalisation is not checked.',
       prompt: 'Die Bauern arbeiten ___ dem Feld.',
       acceptedAnswers: ['auf'],
       answerMode: 'caseInsensitive',
@@ -935,7 +1013,8 @@ export const chapter038: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['preposition-choice', 'in', 'country'],
-      instruction: 'Complete the sentence with the correct preposition. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct preposition. Capitalisation is not checked.',
       prompt: 'Deutschland liegt ___ Europa.',
       acceptedAnswers: ['in'],
       answerMode: 'caseInsensitive',
@@ -950,7 +1029,8 @@ export const chapter038: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['preposition-choice', 'bei'],
-      instruction: 'Complete the sentence with the correct preposition. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct preposition. Capitalisation is not checked.',
       prompt: 'Herr Müller arbeitet ___ einer großen Firma.',
       acceptedAnswers: ['bei'],
       answerMode: 'caseInsensitive',
@@ -965,13 +1045,15 @@ export const chapter038: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['sentence-production', 'in'],
-      instruction: 'Write a complete sentence using the cue. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence using the cue. Capitalisation is checked; no full stop is required.',
       prompt: 'ich – sein – in – die Bibliothek',
       acceptedAnswers: ['Ich bin in der Bibliothek.', 'Ich bin in der Bibliothek'],
       answerMode: 'normalized',
       placeholder: 'Ich bin ...',
       maxLength: 60,
-      explanation: 'in + dative takes the feminine dative article der: Ich bin in der Bibliothek.',
+      explanation:
+        'in + dative takes the feminine dative article der: Ich bin in der Bibliothek.',
     },
     {
       id: 'ch38-ex-45',
@@ -980,7 +1062,8 @@ export const chapter038: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['sentence-production', 'an', 'contraction'],
-      instruction: 'Write a complete sentence using the cue. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence using the cue. Capitalisation is checked; no full stop is required.',
       prompt: 'wir – sitzen – an – der See',
       acceptedAnswers: ['Wir sitzen am See.', 'Wir sitzen am See'],
       answerMode: 'normalized',
@@ -997,12 +1080,14 @@ export const chapter038: ChapterDefinition = {
       grammarFocus: ['wohin-to-wo', 'in'],
       instruction:
         'Complete the answer using the location preposition that matches the destination preposition. Capitalisation is not checked.',
-      prompt: 'Wohin gehst du? – Ich gehe in die Stadt. Wo bist du dann? – Ich bin ___ der Stadt.',
+      prompt:
+        'Wohin gehst du? – Ich gehe in die Stadt. Wo bist du dann? – Ich bin ___ der Stadt.',
       acceptedAnswers: ['in'],
       answerMode: 'caseInsensitive',
       placeholder: 'in',
       maxLength: 10,
-      explanation: 'The destination preposition in for a place corresponds to the location preposition in.',
+      explanation:
+        'The destination preposition in for a place corresponds to the location preposition in.',
     },
     {
       id: 'ch38-ex-47',
@@ -1013,12 +1098,14 @@ export const chapter038: ChapterDefinition = {
       grammarFocus: ['wohin-to-wo', 'zu-bei'],
       instruction:
         'Complete the answer using the location preposition that matches the destination preposition. Capitalisation is not checked.',
-      prompt: 'Wohin fahrt ihr? – Wir fahren zu unseren Freunden. Wo seid ihr dann? – Wir sind ___ unseren Freunden.',
+      prompt:
+        'Wohin fahrt ihr? – Wir fahren zu unseren Freunden. Wo seid ihr dann? – Wir sind ___ unseren Freunden.',
       acceptedAnswers: ['bei'],
       answerMode: 'caseInsensitive',
       placeholder: 'bei',
       maxLength: 10,
-      explanation: 'The destination preposition zu corresponds to the location preposition bei.',
+      explanation:
+        'The destination preposition zu corresponds to the location preposition bei.',
     },
     {
       id: 'ch38-ex-48',
@@ -1091,7 +1178,8 @@ export const chapter038: ChapterDefinition = {
         { id: 'slot-2', correctWord: 'der' },
       ],
       wordBank: ['in', 'der', 'bei', 'dem', 'auf'],
-      explanation: 'in + dative describes being inside a building; die Bibliothek is feminine, so the article is der.',
+      explanation:
+        'in + dative describes being inside a building; die Bibliothek is feminine, so the article is der.',
     },
     {
       id: 'ch38-ex-53',
@@ -1108,7 +1196,8 @@ export const chapter038: ChapterDefinition = {
         { id: 'slot-2', correctWord: 'der' },
       ],
       wordBank: ['in', 'der', 'bei', 'die', 'den'],
-      explanation: 'die Schweiz is a feminine country name that keeps its article der after in.',
+      explanation:
+        'die Schweiz is a feminine country name that keeps its article der after in.',
     },
     {
       id: 'ch38-ex-54',
@@ -1153,7 +1242,8 @@ export const chapter038: ChapterDefinition = {
         { id: 'slot-2', correctWord: 'einer' },
       ],
       wordBank: ['bei', 'einer', 'in', 'einem', 'auf'],
-      explanation: 'bei is used for the company someone is employed by; die Firma is feminine, so einer is used.',
+      explanation:
+        'bei is used for the company someone is employed by; die Firma is feminine, so einer is used.',
     },
     {
       id: 'ch38-ex-57',
@@ -1163,8 +1253,12 @@ export const chapter038: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['wohin-to-wo', 'an', 'contraction'],
       instruction: 'Drag the correct contracted preposition into the slot.',
-      prompt: 'Wohin fährst du? – Ich fahre an den See. Wo bist du dann? – Ich bin ___ See.',
-      templateParts: ['Wohin fährst du? – Ich fahre an den See. Wo bist du dann? – Ich bin ', ' See.'],
+      prompt:
+        'Wohin fährst du? – Ich fahre an den See. Wo bist du dann? – Ich bin ___ See.',
+      templateParts: [
+        'Wohin fährst du? – Ich fahre an den See. Wo bist du dann? – Ich bin ',
+        ' See.',
+      ],
       slots: [{ id: 'slot-1', correctWord: 'am' }],
       wordBank: ['am', 'im', 'beim', 'auf dem'],
       explanation:
@@ -1177,7 +1271,8 @@ export const chapter038: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['preposition-choice'],
-      instruction: 'Match each location to the phrase that correctly describes being there.',
+      instruction:
+        'Match each location to the phrase that correctly describes being there.',
       prompt: 'Match the location noun to the correct preposition phrase.',
       pairs: [
         { id: 'p1', left: 'die Küche', right: 'in der Küche' },
@@ -1185,7 +1280,8 @@ export const chapter038: ChapterDefinition = {
         { id: 'p3', left: 'der Markt', right: 'auf dem Markt' },
         { id: 'p4', left: 'meine Oma', right: 'bei meiner Oma' },
       ],
-      explanation: 'Each location type pairs with a specific preposition: enclosed rooms use in, bodies of water use an, open spaces use auf, and people use bei.',
+      explanation:
+        'Each location type pairs with a specific preposition: enclosed rooms use in, bodies of water use an, open spaces use auf, and people use bei.',
     },
     {
       id: 'ch38-ex-59',
@@ -1194,7 +1290,8 @@ export const chapter038: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['preposition-choice', 'contraction'],
-      instruction: 'Match each location to the phrase that correctly describes being there.',
+      instruction:
+        'Match each location to the phrase that correctly describes being there.',
       prompt: 'Match the location noun to the correct preposition phrase.',
       pairs: [
         { id: 'p1', left: 'das Büro', right: 'im Büro' },
@@ -1203,7 +1300,8 @@ export const chapter038: ChapterDefinition = {
         { id: 'p4', left: 'der Spielplatz', right: 'auf dem Spielplatz' },
         { id: 'p5', left: 'die Bibliothek', right: 'in der Bibliothek' },
       ],
-      explanation: 'Matching the noun to its typical preposition and, where relevant, the contracted form.',
+      explanation:
+        'Matching the noun to its typical preposition and, where relevant, the contracted form.',
     },
     {
       id: 'ch38-ex-60',
@@ -1212,7 +1310,8 @@ export const chapter038: ChapterDefinition = {
       type: 'matching',
       level: 'transfer',
       grammarFocus: ['wohin-to-wo'],
-      instruction: 'Match each destination phrase (wohin?) to its location counterpart (wo?).',
+      instruction:
+        'Match each destination phrase (wohin?) to its location counterpart (wo?).',
       prompt: 'Match the destination phrase to the matching location phrase.',
       pairs: [
         { id: 'p1', left: 'zu meiner Freundin', right: 'bei meiner Freundin' },
@@ -1220,7 +1319,8 @@ export const chapter038: ChapterDefinition = {
         { id: 'p3', left: 'an den See', right: 'am See' },
         { id: 'p4', left: 'auf den Markt', right: 'auf dem Markt' },
       ],
-      explanation: 'zu corresponds to bei; in stays in; an and auf keep the same preposition but switch from accusative to dative.',
+      explanation:
+        'zu corresponds to bei; in stays in; an and auf keep the same preposition but switch from accusative to dative.',
     },
     {
       id: 'ch38-ex-61',
@@ -1229,7 +1329,8 @@ export const chapter038: ChapterDefinition = {
       type: 'matching',
       level: 'recognition',
       grammarFocus: ['contraction'],
-      instruction: 'Match each preposition-plus-article combination to its correct contraction.',
+      instruction:
+        'Match each preposition-plus-article combination to its correct contraction.',
       prompt: 'Match the combination to the correct form.',
       pairs: [
         { id: 'p1', left: 'in + dem', right: 'im' },
@@ -1237,7 +1338,8 @@ export const chapter038: ChapterDefinition = {
         { id: 'p3', left: 'bei + dem', right: 'beim' },
         { id: 'p4', left: 'auf + dem', right: 'auf dem' },
       ],
-      explanation: 'in dem, an dem, and bei dem all contract, but auf dem never contracts in standard German.',
+      explanation:
+        'in dem, an dem, and bei dem all contract, but auf dem never contracts in standard German.',
     },
     {
       id: 'ch38-ex-62',
@@ -1254,7 +1356,8 @@ export const chapter038: ChapterDefinition = {
         { id: 'p3', left: 'die USA', right: 'in den USA' },
         { id: 'p4', left: 'Polen', right: 'in Polen' },
       ],
-      explanation: 'Most countries take no article after in, but feminine, plural, or article-taking country names keep theirs: in der Schweiz, in den USA.',
+      explanation:
+        'Most countries take no article after in, but feminine, plural, or article-taking country names keep theirs: in der Schweiz, in den USA.',
     },
     {
       id: 'ch38-ex-63',
@@ -1271,7 +1374,8 @@ export const chapter038: ChapterDefinition = {
         { id: 'p3', left: 'das Krankenhaus', right: 'im Krankenhaus' },
         { id: 'p4', left: 'der Sportplatz', right: 'auf dem Sportplatz' },
       ],
-      explanation: "Visits to a professional's practice use bei; institutions like hospitals use in; open sports grounds use auf.",
+      explanation:
+        "Visits to a professional's practice use bei; institutions like hospitals use in; open sports grounds use auf.",
     },
     {
       id: 'ch38-ex-64',
@@ -1288,7 +1392,8 @@ export const chapter038: ChapterDefinition = {
         { id: 'p3', left: 'das Land', right: 'auf dem Land' },
         { id: 'p4', left: 'die Wohnung', right: 'in der Wohnung' },
       ],
-      explanation: 'am marks an edge, auf marks fixed expressions and open areas, and in marks an enclosed space.',
+      explanation:
+        'am marks an edge, auf marks fixed expressions and open areas, and in marks an enclosed space.',
     },
     {
       id: 'ch38-ex-65',
@@ -1302,7 +1407,8 @@ export const chapter038: ChapterDefinition = {
       tokens: ['Ich', 'bin', 'in', 'die', 'Küche.'],
       errorTokenIndex: 3,
       correction: 'der',
-      explanation: 'bin describes location (wo?), which needs the dative article der, not the accusative die used for movement (wohin?).',
+      explanation:
+        'bin describes location (wo?), which needs the dative article der, not the accusative die used for movement (wohin?).',
     },
     {
       id: 'ch38-ex-66',
@@ -1316,7 +1422,8 @@ export const chapter038: ChapterDefinition = {
       tokens: ['Er', 'ist', 'bei', 'einen', 'Firma.'],
       errorTokenIndex: 3,
       correction: 'einer',
-      explanation: 'die Firma is feminine; the dative indefinite article after bei must be einer, not the accusative masculine einen.',
+      explanation:
+        'die Firma is feminine; the dative indefinite article after bei must be einer, not the accusative masculine einen.',
     },
     {
       id: 'ch38-ex-67',
@@ -1330,7 +1437,8 @@ export const chapter038: ChapterDefinition = {
       tokens: ['Wir', 'sind', 'an', 'den', 'See.'],
       errorTokenIndex: 3,
       correction: 'dem',
-      explanation: 'sind describes location (wo?), so an takes the dative article dem, not the accusative den used for the destination wohin?.',
+      explanation:
+        'sind describes location (wo?), so an takes the dative article dem, not the accusative den used for the destination wohin?.',
     },
     {
       id: 'ch38-ex-68',
@@ -1344,7 +1452,8 @@ export const chapter038: ChapterDefinition = {
       tokens: ['Die', 'Kinder', 'spielen', 'auf', 'den', 'Spielplatz.'],
       errorTokenIndex: 4,
       correction: 'dem',
-      explanation: 'spielen auf describes where the children are playing (wo?), so auf takes the dative article dem, not the accusative den.',
+      explanation:
+        'spielen auf describes where the children are playing (wo?), so auf takes the dative article dem, not the accusative den.',
     },
     {
       id: 'ch38-ex-69',
@@ -1372,7 +1481,8 @@ export const chapter038: ChapterDefinition = {
       tokens: ['Ich', 'bin', 'bei', 'der', 'Küche.'],
       errorTokenIndex: 2,
       correction: 'in',
-      explanation: 'bei describes whose home or company you are in, not what kind of room; an enclosed room like a kitchen needs in.',
+      explanation:
+        'bei describes whose home or company you are in, not what kind of room; an enclosed room like a kitchen needs in.',
     },
   ],
 };

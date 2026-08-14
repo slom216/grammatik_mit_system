@@ -8,7 +8,11 @@
  * transforms sentences rather than single words.
  */
 
-import { isValidPastParticiple, isValidSimplePastForm, type Person } from './morphologyValidation';
+import {
+  isValidPastParticiple,
+  isValidSimplePastForm,
+  type Person,
+} from './morphologyValidation';
 
 export type { Person };
 
@@ -57,7 +61,10 @@ export function isValidSimplePastPassiveAuxiliary(person: Person, form: string):
  * of the ordinary "geworden" whenever werden itself functions as the passive
  * auxiliary in a perfect tense.
  */
-export function isValidPresentPerfectPassiveAuxiliary(person: Person, form: string): boolean {
+export function isValidPresentPerfectPassiveAuxiliary(
+  person: Person,
+  form: string,
+): boolean {
   return PRESENT_SEIN[person] === form.trim().toLowerCase();
 }
 
@@ -66,7 +73,10 @@ export function isValidPassivePerfectParticiple(form: string): boolean {
 }
 
 /** The main verb's past participle, shared by every passive tense. */
-export function isValidPassiveParticiple(infinitive: string, participle: string): boolean {
+export function isValidPassiveParticiple(
+  infinitive: string,
+  participle: string,
+): boolean {
   return isValidPastParticiple(infinitive, participle);
 }
 
@@ -93,8 +103,21 @@ const GENITIVE_ES_ENDING = /(s|ß|x|z|sch)$/;
  * actually uses, not derived from a syllable-counting rule.
  */
 const EXTRA_ES_NOUNS = new Set([
-  'Mann', 'Kind', 'Tag', 'Jahr', 'Land', 'Buch', 'Wort', 'Volk', 'Berg',
-  'Wald', 'Brief', 'Sohn', 'Arzt', 'Freund', 'Herbst',
+  'Mann',
+  'Kind',
+  'Tag',
+  'Jahr',
+  'Land',
+  'Buch',
+  'Wort',
+  'Volk',
+  'Berg',
+  'Wald',
+  'Brief',
+  'Sohn',
+  'Arzt',
+  'Freund',
+  'Herbst',
 ]);
 
 /**

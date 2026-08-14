@@ -5,6 +5,7 @@ import {
   CHAPTER_FILTER_LABELS,
   groupBySection,
   matchesFilter,
+  matchesQuery,
   selectChapterCards,
   type ChapterFilter,
 } from '../features/chapters/chapterSelectors';
@@ -16,19 +17,13 @@ export function ChaptersPage() {
   const [query, setQuery] = useState('');
 
   const cards = useMemo(() => selectChapterCards(progress), [progress]);
-  const groups = useMemo(() => {
-    const needle = query.trim().toLowerCase();
-    return groupBySection(
-      cards.filter(
-        (card) =>
-          matchesFilter(card, filter) &&
-          (needle === '' ||
-            card.title.toLowerCase().includes(needle) ||
-            card.level.toLowerCase() === needle ||
-            String(card.number) === needle),
+  const groups = useMemo(
+    () =>
+      groupBySection(
+        cards.filter((card) => matchesFilter(card, filter) && matchesQuery(card, query)),
       ),
-    );
-  }, [cards, filter, query]);
+    [cards, filter, query],
+  );
   const visibleCount = groups.reduce((sum, group) => sum + group.chapters.length, 0);
 
   return (
@@ -36,8 +31,7 @@ export function ChaptersPage() {
       <header>
         <h1>Chapter catalogue</h1>
         <p className="text-muted prose">
-          All 85 chapters of the course, grouped by section. Chapters without content are
-          listed so the outline stays visible while the course is being written.
+          All 85 chapters of the course, grouped by section.
         </p>
       </header>
 
@@ -84,7 +78,9 @@ export function ChaptersPage() {
       ))}
 
       {visibleCount === 0 && (
-        <p>No chapters match {query.trim() === '' ? 'this filter' : `“${query.trim()}”`}.</p>
+        <p>
+          No chapters match {query.trim() === '' ? 'this filter' : `“${query.trim()}”`}.
+        </p>
       )}
     </div>
   );

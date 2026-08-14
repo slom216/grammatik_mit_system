@@ -45,7 +45,7 @@ export const chapter028: ChapterDefinition = {
         heading: 'Strong (irregular) verbs: ge- + stem (often changed) + -en',
         paragraphs: [
           'A smaller but very frequent group of verbs is "strong": their past participle ends in -en instead of -t, and the stem vowel very often changes as well. gehen becomes gegangen, essen becomes gegessen, and sprechen becomes gesprochen.',
-          'There is no rule that predicts which verbs are strong or how their vowel changes — each one has to be learned individually, the same way you already memorized irregular present-tense forms like ich spreche, du sprichst. Learning a strong verb\'s participle together with its infinitive, as a fixed pair, is the most reliable method.',
+          "There is no rule that predicts which verbs are strong or how their vowel changes — each one has to be learned individually, the same way you already memorized irregular present-tense forms like ich spreche, du sprichst. Learning a strong verb's participle together with its infinitive, as a fixed pair, is the most reliable method.",
         ],
       },
       {
@@ -94,7 +94,12 @@ export const chapter028: ChapterDefinition = {
           ['spielen', 'spiel-', 'gespielt', 'regular: ge- + stem + -t'],
           ['arbeiten', 'arbeit-', 'gearbeitet', 'stem ends in -t: extra -e- before -t'],
           ['warten', 'wart-', 'gewartet', 'stem ends in -t: extra -e- before -t'],
-          ['öffnen', 'öffn-', 'geöffnet', 'stem ends in a hard cluster: extra -e- before -t'],
+          [
+            'öffnen',
+            'öffn-',
+            'geöffnet',
+            'stem ends in a hard cluster: extra -e- before -t',
+          ],
         ],
       },
       {
@@ -117,10 +122,25 @@ export const chapter028: ChapterDefinition = {
         title: 'Separable vs. inseparable prefixes',
         columns: ['Type', 'Prefixes', 'Example infinitive', 'Past participle'],
         rows: [
-          ['Separable (stressed, ge- goes inside)', 'auf-, ein-, mit-, an-, fern-, ...', 'aufstehen', 'aufgestanden'],
+          [
+            'Separable (stressed, ge- goes inside)',
+            'auf-, ein-, mit-, an-, fern-, ...',
+            'aufstehen',
+            'aufgestanden',
+          ],
           ['Separable', 'auf-, ein-, mit-, an-, fern-, ...', 'einkaufen', 'eingekauft'],
-          ['Inseparable (unstressed, blocks ge-)', 'be-, ge-, er-, ver-, zer-, ent-, emp-, miss-', 'besuchen', 'besucht'],
-          ['Inseparable', 'be-, ge-, er-, ver-, zer-, ent-, emp-, miss-', 'verstehen', 'verstanden'],
+          [
+            'Inseparable (unstressed, blocks ge-)',
+            'be-, ge-, er-, ver-, zer-, ent-, emp-, miss-',
+            'besuchen',
+            'besucht',
+          ],
+          [
+            'Inseparable',
+            'be-, ge-, er-, ver-, zer-, ent-, emp-, miss-',
+            'verstehen',
+            'verstanden',
+          ],
         ],
       },
       {
@@ -153,19 +173,22 @@ export const chapter028: ChapterDefinition = {
         german: 'Sie hat den ganzen Tag gearbeitet.',
         english: 'She worked all day.',
         highlight: ['gearbeitet'],
-        explanation: 'The stem arbeit- ends in -t, so an extra -e- is inserted before the final -t: gearbeitet.',
+        explanation:
+          'The stem arbeit- ends in -t, so an extra -e- is inserted before the final -t: gearbeitet.',
       },
       {
         german: 'Er ist gestern nach Hause gegangen.',
         english: 'He went home yesterday.',
         highlight: ['gegangen'],
-        explanation: 'gehen is strong; its participle gegangen must be memorized, not derived by a rule.',
+        explanation:
+          'gehen is strong; its participle gegangen must be memorized, not derived by a rule.',
       },
       {
         german: 'Wir haben zusammen Pizza gegessen.',
         english: 'We ate pizza together.',
         highlight: ['gegessen'],
-        explanation: 'essen is strong: gegessen changes both the stem and takes the -en ending.',
+        explanation:
+          'essen is strong: gegessen changes both the stem and takes the -en ending.',
       },
       {
         german: 'Hast du den Film schon gesehen?',
@@ -177,19 +200,22 @@ export const chapter028: ChapterDefinition = {
         german: 'Ich bin heute früh aufgestanden.',
         english: 'I got up early today.',
         highlight: ['aufgestanden'],
-        explanation: 'aufstehen is separable: stehen becomes gestanden, and the prefix auf- goes in front, giving aufgestanden.',
+        explanation:
+          'aufstehen is separable: stehen becomes gestanden, and the prefix auf- goes in front, giving aufgestanden.',
       },
       {
         german: 'Habt ihr gestern eingekauft?',
         english: 'Did you go shopping yesterday?',
         highlight: ['eingekauft'],
-        explanation: 'einkaufen is separable: kaufen becomes gekauft, and ein- goes in front, giving eingekauft.',
+        explanation:
+          'einkaufen is separable: kaufen becomes gekauft, and ein- goes in front, giving eingekauft.',
       },
       {
         german: 'Meine Schwester hat ihre Oma besucht.',
         english: 'My sister visited her grandmother.',
         highlight: ['besucht'],
-        explanation: 'be- is an inseparable prefix that blocks ge- completely: besucht, not gebesucht.',
+        explanation:
+          'be- is an inseparable prefix that blocks ge- completely: besucht, not gebesucht.',
       },
       {
         german: 'Wir haben den Text gut verstanden.',
@@ -213,45 +239,53 @@ export const chapter028: ChapterDefinition = {
         german: 'Ich habe nicht an das Meeting gedacht.',
         english: 'I did not think about the meeting.',
         highlight: ['gedacht'],
-        explanation: 'denken is mixed: the weak -t ending combines with a stem-vowel change, giving gedacht.',
+        explanation:
+          'denken is mixed: the weak -t ending combines with a stem-vowel change, giving gedacht.',
       },
       {
         german: 'Sie hat die Antwort nicht gewusst.',
         english: 'She did not know the answer.',
         highlight: ['gewusst'],
-        explanation: 'wissen is mixed: the weak -t ending combines with a stem-vowel change, giving gewusst.',
+        explanation:
+          'wissen is mixed: the weak -t ending combines with a stem-vowel change, giving gewusst.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich habe mit ihm gesprecht.',
         correct: 'Ich habe mit ihm gesprochen.',
-        explanation: 'sprechen is strong; the participle changes the stem vowel to gesprochen, it does not simply add -t like a weak verb.',
+        explanation:
+          'sprechen is strong; the participle changes the stem vowel to gesprochen, it does not simply add -t like a weak verb.',
       },
       {
         incorrect: 'Ich bin heute früh geaufgestanden.',
         correct: 'Ich bin heute früh aufgestanden.',
-        explanation: 'aufstehen is separable: ge- is inserted between the prefix auf- and the base participle gestanden (aufgestanden), never in front of the whole word.',
+        explanation:
+          'aufstehen is separable: ge- is inserted between the prefix auf- and the base participle gestanden (aufgestanden), never in front of the whole word.',
       },
       {
         incorrect: 'Meine Schwester hat ihre Oma gebesucht.',
         correct: 'Meine Schwester hat ihre Oma besucht.',
-        explanation: 'besuchen begins with the inseparable prefix be-, which blocks ge- completely; the participle is besucht, not gebesucht.',
+        explanation:
+          'besuchen begins with the inseparable prefix be-, which blocks ge- completely; the participle is besucht, not gebesucht.',
       },
       {
         incorrect: 'Er hat drei Jahre in Berlin gestudiert.',
         correct: 'Er hat drei Jahre in Berlin studiert.',
-        explanation: 'Verbs ending in -ieren never take ge-; the participle is simply stem + -t: studiert.',
+        explanation:
+          'Verbs ending in -ieren never take ge-; the participle is simply stem + -t: studiert.',
       },
       {
         incorrect: 'Sie hat den ganzen Tag gearbet.',
         correct: 'Sie hat den ganzen Tag gearbeitet.',
-        explanation: 'The stem arbeit- already ends in -t, so an extra -e- is inserted before the final -t to keep the word pronounceable: gearbeitet.',
+        explanation:
+          'The stem arbeit- already ends in -t, so an extra -e- is inserted before the final -t to keep the word pronounceable: gearbeitet.',
       },
       {
         incorrect: 'Sie hat die Antwort nicht gewisst.',
         correct: 'Sie hat die Antwort nicht gewusst.',
-        explanation: 'wissen is a mixed verb: it takes the weak -t ending but changes its stem vowel to u, giving gewusst, not a regular gewisst.',
+        explanation:
+          'wissen is a mixed verb: it takes the weak -t ending but changes its stem vowel to u, giving gewusst, not a regular gewisst.',
       },
     ],
     remember: [
@@ -303,7 +337,8 @@ export const chapter028: ChapterDefinition = {
         { id: 'd', text: 'kauft' },
       ],
       correctOptionId: 'c',
-      explanation: 'kaufen is weak: ge- + stem + -t gives gekauft, not the simple past kaufte.',
+      explanation:
+        'kaufen is weak: ge- + stem + -t gives gekauft, not the simple past kaufte.',
     },
     {
       id: 'ch28-ex-03',
@@ -321,7 +356,8 @@ export const chapter028: ChapterDefinition = {
         { id: 'd', text: 'arbeitet' },
       ],
       correctOptionId: 'b',
-      explanation: 'The stem arbeit- already ends in -t, so an extra -e- is inserted before the final -t: gearbeitet.',
+      explanation:
+        'The stem arbeit- already ends in -t, so an extra -e- is inserted before the final -t: gearbeitet.',
     },
     {
       id: 'ch28-ex-04',
@@ -339,7 +375,8 @@ export const chapter028: ChapterDefinition = {
         { id: 'd', text: 'gegehen' },
       ],
       correctOptionId: 'c',
-      explanation: 'gehen is a strong verb with an irregular participle that must be memorized: gegangen.',
+      explanation:
+        'gehen is a strong verb with an irregular participle that must be memorized: gegangen.',
     },
     {
       id: 'ch28-ex-05',
@@ -357,7 +394,8 @@ export const chapter028: ChapterDefinition = {
         { id: 'd', text: '-ieren verb (no ge-)' },
       ],
       correctOptionId: 'b',
-      explanation: 'sehen forms its participle with ge- and the ending -en, typical of strong verbs, though here the vowel happens to stay the same.',
+      explanation:
+        'sehen forms its participle with ge- and the ending -en, typical of strong verbs, though here the vowel happens to stay the same.',
     },
     {
       id: 'ch28-ex-06',
@@ -375,7 +413,8 @@ export const chapter028: ChapterDefinition = {
         { id: 'd', text: 'mixed verb' },
       ],
       correctOptionId: 'c',
-      explanation: 'Verbs ending in -ieren never take ge- and always end in -t: studiert.',
+      explanation:
+        'Verbs ending in -ieren never take ge- and always end in -t: studiert.',
     },
     {
       id: 'ch28-ex-07',
@@ -393,7 +432,8 @@ export const chapter028: ChapterDefinition = {
         { id: 'd', text: 'weak verb (ge-...-t)' },
       ],
       correctOptionId: 'c',
-      explanation: 'aufstehen is separable: the ge- of the base participle gestanden is inserted after the prefix auf-, giving aufgestanden.',
+      explanation:
+        'aufstehen is separable: the ge- of the base participle gestanden is inserted after the prefix auf-, giving aufgestanden.',
     },
     {
       id: 'ch28-ex-08',
@@ -411,7 +451,8 @@ export const chapter028: ChapterDefinition = {
         { id: 'd', text: 'inseparable verb (prefix blocks ge-)' },
       ],
       correctOptionId: 'd',
-      explanation: 'ver- is one of the inseparable prefixes; it blocks ge- completely, so the participle is simply verstanden.',
+      explanation:
+        'ver- is one of the inseparable prefixes; it blocks ge- completely, so the participle is simply verstanden.',
     },
     {
       id: 'ch28-ex-09',
@@ -429,7 +470,8 @@ export const chapter028: ChapterDefinition = {
         { id: 'd', text: 'getrinken' },
       ],
       correctOptionId: 'c',
-      explanation: 'trinken is strong; the stem vowel changes from i to u and the ending is -en: getrunken.',
+      explanation:
+        'trinken is strong; the stem vowel changes from i to u and the ending is -en: getrunken.',
     },
     {
       id: 'ch28-ex-10',
@@ -465,7 +507,8 @@ export const chapter028: ChapterDefinition = {
         { id: 'd', text: 'gebracht' },
       ],
       correctOptionId: 'd',
-      explanation: 'bringen is a mixed verb: the weak ending -t combines with a stem-vowel change: gebracht.',
+      explanation:
+        'bringen is a mixed verb: the weak ending -t combines with a stem-vowel change: gebracht.',
     },
     {
       id: 'ch28-ex-12',
@@ -483,7 +526,8 @@ export const chapter028: ChapterDefinition = {
         { id: 'd', text: 'ver-' },
       ],
       correctOptionId: 'd',
-      explanation: 'ver- belongs to the fixed set of inseparable prefixes (be-, ge-, er-, ver-, zer-, ent-, emp-, miss-); auf-, mit-, and ein- are all separable.',
+      explanation:
+        'ver- belongs to the fixed set of inseparable prefixes (be-, ge-, er-, ver-, zer-, ent-, emp-, miss-); auf-, mit-, and ein- are all separable.',
     },
     {
       id: 'ch28-ex-13',
@@ -513,7 +557,8 @@ export const chapter028: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'ge...t',
       maxLength: 20,
-      explanation: 'The stem wart- ends in -t, so an -e- is inserted before the final -t: gewartet.',
+      explanation:
+        'The stem wart- ends in -t, so an -e- is inserted before the final -t: gewartet.',
     },
     {
       id: 'ch28-ex-15',
@@ -528,7 +573,8 @@ export const chapter028: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'ge...en',
       maxLength: 20,
-      explanation: 'essen is strong: gegessen must be memorized as a fixed pair with the infinitive.',
+      explanation:
+        'essen is strong: gegessen must be memorized as a fixed pair with the infinitive.',
     },
     {
       id: 'ch28-ex-16',
@@ -573,7 +619,8 @@ export const chapter028: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'ein...t',
       maxLength: 20,
-      explanation: 'einkaufen is separable: kaufen becomes gekauft, and the prefix ein- goes in front, giving eingekauft.',
+      explanation:
+        'einkaufen is separable: kaufen becomes gekauft, and the prefix ein- goes in front, giving eingekauft.',
     },
     {
       id: 'ch28-ex-19',
@@ -588,7 +635,8 @@ export const chapter028: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'mit...en',
       maxLength: 20,
-      explanation: 'kommen is strong (gekommen); with the separable prefix mit-, the ge- moves inside: mitgekommen.',
+      explanation:
+        'kommen is strong (gekommen); with the separable prefix mit-, the ge- moves inside: mitgekommen.',
     },
     {
       id: 'ch28-ex-20',
@@ -612,7 +660,8 @@ export const chapter028: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['ieren-verbs', 'sentence-completion'],
-      instruction: 'Complete the sentence with the correct past participle. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct past participle. Capitalisation is not checked.',
       prompt: 'Ich habe gestern mit meiner Mutter ___. (telefonieren)',
       acceptedAnswers: ['telefoniert'],
       answerMode: 'caseInsensitive',
@@ -627,13 +676,15 @@ export const chapter028: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['mixed-verbs', 'sentence-completion'],
-      instruction: 'Complete the sentence with the correct past participle. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct past participle. Capitalisation is not checked.',
       prompt: 'Ich habe die ganze Zeit an dich ___. (denken)',
       acceptedAnswers: ['gedacht'],
       answerMode: 'caseInsensitive',
       placeholder: 'gedacht',
       maxLength: 20,
-      explanation: 'denken is mixed: the weak -t ending combines with a stem-vowel change, giving gedacht.',
+      explanation:
+        'denken is mixed: the weak -t ending combines with a stem-vowel change, giving gedacht.',
     },
     {
       id: 'ch28-ex-23',
@@ -642,13 +693,15 @@ export const chapter028: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['strong-verbs', 'error-correction'],
-      instruction: 'This participle has a spelling error. Write the correct form. Capitalisation is not checked.',
+      instruction:
+        'This participle has a spelling error. Write the correct form. Capitalisation is not checked.',
       prompt: 'Fehler: gesprecht (sprechen) → richtig: ___',
       acceptedAnswers: ['gesprochen'],
       answerMode: 'caseInsensitive',
       placeholder: 'gesprochen',
       maxLength: 20,
-      explanation: 'sprechen is strong and changes its stem vowel to o; the weak-style ending used in "gesprecht" is wrong. The correct form is gesprochen.',
+      explanation:
+        'sprechen is strong and changes its stem vowel to o; the weak-style ending used in "gesprecht" is wrong. The correct form is gesprochen.',
     },
     {
       id: 'ch28-ex-24',
@@ -657,13 +710,15 @@ export const chapter028: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['separable-verbs', 'error-correction'],
-      instruction: 'This participle has a spelling error. Write the correct form. Capitalisation is not checked.',
+      instruction:
+        'This participle has a spelling error. Write the correct form. Capitalisation is not checked.',
       prompt: 'Fehler: geaufgestanden (aufstehen) → richtig: ___',
       acceptedAnswers: ['aufgestanden'],
       answerMode: 'caseInsensitive',
       placeholder: 'aufgestanden',
       maxLength: 20,
-      explanation: 'aufstehen is separable: ge- belongs between the prefix and the base participle (aufgestanden), never in front of the whole word.',
+      explanation:
+        'aufstehen is separable: ge- belongs between the prefix and the base participle (aufgestanden), never in front of the whole word.',
     },
     {
       id: 'ch28-ex-25',
@@ -699,7 +754,8 @@ export const chapter028: ChapterDefinition = {
         { id: 'd', text: 'nehmte' },
       ],
       correctOptionId: 'c',
-      explanation: 'nehmen is strong; the stem vowel changes to o and the ending is -en: genommen.',
+      explanation:
+        'nehmen is strong; the stem vowel changes to o and the ending is -en: genommen.',
     },
     {
       id: 'ch28-ex-27',
@@ -717,7 +773,8 @@ export const chapter028: ChapterDefinition = {
         { id: 'd', text: 'fahrte' },
       ],
       correctOptionId: 'b',
-      explanation: 'fahren is strong: ge- + stem + -en gives gefahren, with the stem vowel unchanged.',
+      explanation:
+        'fahren is strong: ge- + stem + -en gives gefahren, with the stem vowel unchanged.',
     },
     {
       id: 'ch28-ex-28',
@@ -735,7 +792,8 @@ export const chapter028: ChapterDefinition = {
         { id: 'd', text: 'inseparable verb (prefix blocks ge-)' },
       ],
       correctOptionId: 'd',
-      explanation: 'ver- is an inseparable prefix that blocks ge- completely, even though kaufen itself is weak: the participle is verkauft, not verkaufen or gekauft.',
+      explanation:
+        'ver- is an inseparable prefix that blocks ge- completely, even though kaufen itself is weak: the participle is verkauft, not verkaufen or gekauft.',
     },
     {
       id: 'ch28-ex-29',
@@ -753,7 +811,8 @@ export const chapter028: ChapterDefinition = {
         { id: 'd', text: 'weak verb (ge-...-t)' },
       ],
       correctOptionId: 'a',
-      explanation: 'anrufen is separable: rufen is strong and becomes gerufen, so with the prefix an- the ge- moves inside, giving angerufen.',
+      explanation:
+        'anrufen is separable: rufen is strong and becomes gerufen, so with the prefix an- the ge- moves inside, giving angerufen.',
     },
     {
       id: 'ch28-ex-30',
@@ -789,7 +848,8 @@ export const chapter028: ChapterDefinition = {
         { id: 'd', text: 'vergessene' },
       ],
       correctOptionId: 'c',
-      explanation: 'ver- is inseparable and blocks ge-; because the strong ending of this verb is already -essen, the participle vergessen looks identical to the infinitive.',
+      explanation:
+        'ver- is inseparable and blocks ge-; because the strong ending of this verb is already -essen, the participle vergessen looks identical to the infinitive.',
     },
     {
       id: 'ch28-ex-32',
@@ -807,7 +867,8 @@ export const chapter028: ChapterDefinition = {
         { id: 'd', text: 'inseparable verb (no ge-)' },
       ],
       correctOptionId: 'c',
-      explanation: 'wissen is mixed: it takes the weak -t ending like a regular verb, but the stem vowel also changes, giving gewusst.',
+      explanation:
+        'wissen is mixed: it takes the weak -t ending like a regular verb, but the stem vowel also changes, giving gewusst.',
     },
     {
       id: 'ch28-ex-33',
@@ -852,7 +913,8 @@ export const chapter028: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'ge...en',
       maxLength: 20,
-      explanation: 'tragen is strong: the participle is getragen, with the stem vowel unchanged.',
+      explanation:
+        'tragen is strong: the participle is getragen, with the stem vowel unchanged.',
     },
     {
       id: 'ch28-ex-36',
@@ -867,7 +929,8 @@ export const chapter028: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'ver...en',
       maxLength: 20,
-      explanation: 'ver- is inseparable and blocks ge-; verlieren is also strong, changing its stem vowel: verloren.',
+      explanation:
+        'ver- is inseparable and blocks ge-; verlieren is also strong, changing its stem vowel: verloren.',
     },
     {
       id: 'ch28-ex-37',
@@ -882,7 +945,8 @@ export const chapter028: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'ent...t',
       maxLength: 20,
-      explanation: 'ent- is inseparable and blocks ge-; entdecken is weak, so the participle is simply stem + -t: entdeckt.',
+      explanation:
+        'ent- is inseparable and blocks ge-; entdecken is weak, so the participle is simply stem + -t: entdeckt.',
     },
     {
       id: 'ch28-ex-38',
@@ -912,7 +976,8 @@ export const chapter028: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'an...en',
       maxLength: 20,
-      explanation: 'fangen is strong (gefangen); with the separable prefix an-, the ge- moves inside: angefangen.',
+      explanation:
+        'fangen is strong (gefangen); with the separable prefix an-, the ge- moves inside: angefangen.',
     },
     {
       id: 'ch28-ex-40',
@@ -927,7 +992,8 @@ export const chapter028: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'mit...t',
       maxLength: 20,
-      explanation: 'bringen is mixed (gebracht); with the separable prefix mit-, the ge- moves inside: mitgebracht.',
+      explanation:
+        'bringen is mixed (gebracht); with the separable prefix mit-, the ge- moves inside: mitgebracht.',
     },
     {
       id: 'ch28-ex-41',
@@ -965,7 +1031,8 @@ export const chapter028: ChapterDefinition = {
         { id: 'ch28-ex42-p5', left: 'singen', right: 'gesungen' },
         { id: 'ch28-ex42-p6', left: 'tragen', right: 'getragen' },
       ],
-      explanation: 'All six verbs are strong: each participle takes ge- and the ending -en, and several also change their stem vowel.',
+      explanation:
+        'All six verbs are strong: each participle takes ge- and the ending -en, and several also change their stem vowel.',
     },
     {
       id: 'ch28-ex-43',
@@ -975,7 +1042,8 @@ export const chapter028: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['inseparable-prefixes', 'partizip-ii'],
       instruction: 'Match each inseparable-prefix verb to its past participle.',
-      prompt: 'Match the infinitive to its past participle (inseparable prefixes, no ge-).',
+      prompt:
+        'Match the infinitive to its past participle (inseparable prefixes, no ge-).',
       pairs: [
         { id: 'ch28-ex43-p1', left: 'besuchen', right: 'besucht' },
         { id: 'ch28-ex43-p2', left: 'verstehen', right: 'verstanden' },
@@ -984,7 +1052,8 @@ export const chapter028: ChapterDefinition = {
         { id: 'ch28-ex43-p5', left: 'entdecken', right: 'entdeckt' },
         { id: 'ch28-ex43-p6', left: 'empfehlen', right: 'empfohlen' },
       ],
-      explanation: 'All six verbs begin with an inseparable prefix (be-, ver-, ent-, emp-), which blocks ge- completely — the underlying verb may still be weak (besuchen, verkaufen, entdecken) or strong (verstehen, bekommen, empfehlen).',
+      explanation:
+        'All six verbs begin with an inseparable prefix (be-, ver-, ent-, emp-), which blocks ge- completely — the underlying verb may still be weak (besuchen, verkaufen, entdecken) or strong (verstehen, bekommen, empfehlen).',
     },
     {
       id: 'ch28-ex-44',
@@ -1018,10 +1087,19 @@ export const chapter028: ChapterDefinition = {
         { id: 'ch28-ex45-p2', left: 'gehen', right: 'strong verb (ge-...-en)' },
         { id: 'ch28-ex45-p3', left: 'besuchen', right: 'inseparable prefix (no ge-)' },
         { id: 'ch28-ex45-p4', left: 'studieren', right: '-ieren verb (no ge-)' },
-        { id: 'ch28-ex45-p5', left: 'bringen', right: 'mixed verb (weak -t with vowel change)' },
-        { id: 'ch28-ex45-p6', left: 'aufstehen', right: 'separable verb (ge- goes inside)' },
+        {
+          id: 'ch28-ex45-p5',
+          left: 'bringen',
+          right: 'mixed verb (weak -t with vowel change)',
+        },
+        {
+          id: 'ch28-ex45-p6',
+          left: 'aufstehen',
+          right: 'separable verb (ge- goes inside)',
+        },
       ],
-      explanation: 'Each of the six participle-formation patterns from this chapter is represented by one typical verb.',
+      explanation:
+        'Each of the six participle-formation patterns from this chapter is represented by one typical verb.',
     },
     {
       id: 'ch28-ex-46',
@@ -1035,7 +1113,8 @@ export const chapter028: ChapterDefinition = {
       templateParts: ['Er hat die Tür ', '.'],
       slots: [{ id: 'ch28-ex46-slot1', correctWord: 'geöffnet' }],
       wordBank: ['geöffnet', 'geöffnent', 'öffnet', 'aufgemacht'],
-      explanation: 'öffnen is weak with a stem ending in a hard cluster, so an extra -e- is inserted before the final -t: geöffnet.',
+      explanation:
+        'öffnen is weak with a stem ending in a hard cluster, so an extra -e- is inserted before the final -t: geöffnet.',
     },
     {
       id: 'ch28-ex-47',
@@ -1049,7 +1128,8 @@ export const chapter028: ChapterDefinition = {
       templateParts: ['Ich habe ein Geschenk ', '.'],
       slots: [{ id: 'ch28-ex47-slot1', correctWord: 'bekommen' }],
       wordBank: ['bekommen', 'gebekommen', 'bekommt', 'gekommen'],
-      explanation: 'bekommen has the inseparable prefix be-, which blocks ge- completely, even though the base verb kommen is strong and normally becomes gekommen.',
+      explanation:
+        'bekommen has the inseparable prefix be-, which blocks ge- completely, even though the base verb kommen is strong and normally becomes gekommen.',
     },
     {
       id: 'ch28-ex-48',
@@ -1063,7 +1143,8 @@ export const chapter028: ChapterDefinition = {
       templateParts: ['Wir haben lange ', '.'],
       slots: [{ id: 'ch28-ex48-slot1', correctWord: 'gesprochen' }],
       wordBank: ['gesprochen', 'gesprecht', 'gesprungen', 'spricht'],
-      explanation: 'sprechen is strong; the stem vowel changes from e to o and the ending is -en: gesprochen.',
+      explanation:
+        'sprechen is strong; the stem vowel changes from e to o and the ending is -en: gesprochen.',
     },
     {
       id: 'ch28-ex-49',
@@ -1077,7 +1158,8 @@ export const chapter028: ChapterDefinition = {
       templateParts: ['Ich habe die Aufgabe ', '.'],
       slots: [{ id: 'ch28-ex49-slot1', correctWord: 'verstanden' }],
       wordBank: ['verstanden', 'verstehen', 'geverstanden', 'verstandet'],
-      explanation: 'ver- is inseparable and blocks ge-; the strong verb stehen/gestanden gives verstanden.',
+      explanation:
+        'ver- is inseparable and blocks ge-; the strong verb stehen/gestanden gives verstanden.',
     },
     {
       id: 'ch28-ex-50',
@@ -1105,7 +1187,8 @@ export const chapter028: ChapterDefinition = {
       templateParts: ['Ich bin früh ', '.'],
       slots: [{ id: 'ch28-ex51-slot1', correctWord: 'aufgestanden' }],
       wordBank: ['aufgestanden', 'geaufgestanden', 'aufgestehen', 'aufgestandet'],
-      explanation: 'aufstehen is separable: stehen/gestanden gives the base participle, and auf- goes in front of the ge-, giving aufgestanden.',
+      explanation:
+        'aufstehen is separable: stehen/gestanden gives the base participle, and auf- goes in front of the ge-, giving aufgestanden.',
     },
     {
       id: 'ch28-ex-52',
@@ -1119,7 +1202,8 @@ export const chapter028: ChapterDefinition = {
       templateParts: ['Ich habe an dich ', '.'],
       slots: [{ id: 'ch28-ex52-slot1', correctWord: 'gedacht' }],
       wordBank: ['gedacht', 'gedenkt', 'gedenkte', 'denkt'],
-      explanation: 'denken is mixed: the weak -t ending combines with a stem-vowel change, giving gedacht.',
+      explanation:
+        'denken is mixed: the weak -t ending combines with a stem-vowel change, giving gedacht.',
     },
     {
       id: 'ch28-ex-53',
@@ -1133,7 +1217,8 @@ export const chapter028: ChapterDefinition = {
       templateParts: ['Wir haben gestern ', '.'],
       slots: [{ id: 'ch28-ex53-slot1', correctWord: 'eingekauft' }],
       wordBank: ['eingekauft', 'geeinkauft', 'einkauft', 'eingekaufen'],
-      explanation: 'einkaufen is separable: kaufen becomes gekauft, and the prefix ein- goes in front of the ge-, giving eingekauft.',
+      explanation:
+        'einkaufen is separable: kaufen becomes gekauft, and the prefix ein- goes in front of the ge-, giving eingekauft.',
     },
     {
       id: 'ch28-ex-54',
@@ -1147,7 +1232,8 @@ export const chapter028: ChapterDefinition = {
       tokens: ['Ich', 'habe', 'gestern', 'gesprecht', 'mit', 'ihm.'],
       errorTokenIndex: 3,
       correction: 'gesprochen',
-      explanation: 'sprechen is strong and changes its stem vowel to o; the weak-style ending in "gesprecht" is wrong. The correct form is gesprochen.',
+      explanation:
+        'sprechen is strong and changes its stem vowel to o; the weak-style ending in "gesprecht" is wrong. The correct form is gesprochen.',
     },
     {
       id: 'ch28-ex-55',
@@ -1161,7 +1247,8 @@ export const chapter028: ChapterDefinition = {
       tokens: ['Er', 'hat', 'seine', 'Oma', 'gebesucht.'],
       errorTokenIndex: 4,
       correction: 'besucht',
-      explanation: 'besuchen begins with the inseparable prefix be-, which blocks ge- completely; the participle is besucht, not gebesucht.',
+      explanation:
+        'besuchen begins with the inseparable prefix be-, which blocks ge- completely; the participle is besucht, not gebesucht.',
     },
     {
       id: 'ch28-ex-56',
@@ -1175,7 +1262,8 @@ export const chapter028: ChapterDefinition = {
       tokens: ['Wir', 'haben', 'in', 'Berlin', 'gestudiert.'],
       errorTokenIndex: 4,
       correction: 'studiert',
-      explanation: 'Verbs ending in -ieren never take ge-; the participle is simply stem + -t: studiert.',
+      explanation:
+        'Verbs ending in -ieren never take ge-; the participle is simply stem + -t: studiert.',
     },
     {
       id: 'ch28-ex-57',
@@ -1189,7 +1277,8 @@ export const chapter028: ChapterDefinition = {
       tokens: ['Ich', 'bin', 'heute', 'geaufgestanden.'],
       errorTokenIndex: 3,
       correction: 'aufgestanden',
-      explanation: 'aufstehen is separable: ge- belongs between the prefix auf- and the base participle gestanden (aufgestanden), never in front of the whole word.',
+      explanation:
+        'aufstehen is separable: ge- belongs between the prefix auf- and the base participle gestanden (aufgestanden), never in front of the whole word.',
     },
     {
       id: 'ch28-ex-58',
@@ -1203,7 +1292,8 @@ export const chapter028: ChapterDefinition = {
       tokens: ['Ich', 'habe', 'ihn', 'schon', 'lange', 'gekennt.'],
       errorTokenIndex: 5,
       correction: 'gekannt',
-      explanation: 'kennen is a mixed verb: it takes the weak -t ending but changes its stem vowel from e to a, giving gekannt, not a regular gekennt.',
+      explanation:
+        'kennen is a mixed verb: it takes the weak -t ending but changes its stem vowel from e to a, giving gekannt, not a regular gekennt.',
     },
     {
       id: 'ch28-ex-59',
@@ -1217,7 +1307,8 @@ export const chapter028: ChapterDefinition = {
       tokens: ['Er', 'hat', 'den', 'Kuchen', 'gegesst.'],
       errorTokenIndex: 4,
       correction: 'gegessen',
-      explanation: 'essen is strong and takes the ending -en, not the weak -t; the correct participle is gegessen.',
+      explanation:
+        'essen is strong and takes the ending -en, not the weak -t; the correct participle is gegessen.',
     },
     {
       id: 'ch28-ex-60',
@@ -1231,7 +1322,8 @@ export const chapter028: ChapterDefinition = {
       tokens: ['Wir', 'haben', 'ein', 'Lied', 'gesingt.'],
       errorTokenIndex: 4,
       correction: 'gesungen',
-      explanation: 'singen is strong and changes its stem vowel to u with the ending -en; the correct participle is gesungen, not a weak-style gesingt.',
+      explanation:
+        'singen is strong and changes its stem vowel to u with the ending -en; the correct participle is gesungen, not a weak-style gesingt.',
     },
   ],
 };

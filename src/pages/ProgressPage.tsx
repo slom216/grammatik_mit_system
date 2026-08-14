@@ -11,6 +11,11 @@ import {
 } from '../features/chapters/chapterSelectors';
 import { chapterPath, formatChapterNumber } from '../features/chapters/chapterUtils';
 import { selectDueHistories, useProgressStore } from '../features/progress/progressStore';
+import {
+  MIN_ANSWERS_FOR_WEAK_SPOT,
+  selectWeakSpots,
+} from '../features/progress/weakSpots';
+import { selectAchievements, sortAchievements } from '../features/progress/achievements';
 
 export function ProgressPage() {
   const progress = useProgressStore();
@@ -27,6 +32,26 @@ export function ProgressPage() {
     () => cards.filter((card) => card.status !== 'notStarted'),
     [cards],
   );
+  const weakSpots = useMemo(
+    () => selectWeakSpots(progress.exerciseHistory, { limit: 8 }),
+    [progress.exerciseHistory],
+  );
+  const titleByNumber = useMemo(
+    () => new Map(cards.map((card) => [card.number, card.title])),
+    [cards],
+  );
+  const achievements = useMemo(
+    () =>
+      sortAchievements(
+        selectAchievements({
+          chapters: progress.chapters,
+          exerciseHistory: progress.exerciseHistory,
+          answersByDay: progress.answersByDay,
+        }),
+      ),
+    [progress.chapters, progress.exerciseHistory, progress.answersByDay],
+  );
+  const earnedCount = achievements.filter((achievement) => achievement.earned).length;
 
   return (
     <div className="stack">
@@ -50,7 +75,7 @@ export function ProgressPage() {
             {completion.masteredChapters} chapters mastered · {due.length} exercises due
             for review · {histories.length} exercises answered at least once.
           </p>
-          <StreakDisplay histories={histories} />
+          <StreakDisplay answersByDay={progress.answersByDay} />
         </div>
       </Card>
 
@@ -71,6 +96,81 @@ export function ProgressPage() {
             </div>
           ))}
         </div>
+      </Card>
+
+      <Card title="Achievements" titleLevel={2}>
+        <div className="stack">
+          <p className="text-sm text-muted">
+            {earnedCount} of {achievements.length} earned.
+          </p>
+          <ul className="stack stack--tight">
+            {achievements.map((achievement) => (
+              <li key={achievement.id}>
+                <ProgressBar
+                  label={achievement.title}
+                  value={achievement.progress}
+                  max={achievement.target}
+                  valueText={
+                    achievement.earned
+                      ? 'Earned'
+                      : `${achievement.progress} / ${achievement.target}`
+                  }
+                />
+                <span className="text-sm text-muted">{achievement.description}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </Card>
+
+      <Card title="Topics to work on" titleLevel={2}>
+        {weakSpots.length === 0 ? (
+          <p className="text-muted">
+            Once you have answered a topic at least {MIN_ANSWERS_FOR_WEAK_SPOT} times, the
+            grammar points you get wrong most often show up here.
+          </p>
+        ) : (
+          <div className="stack">
+            <p className="text-sm text-muted">
+              Accuracy by grammar point, weakest first. Topics run across chapters, so the
+              same point can come from several of them.
+            </p>
+            <div className="grammar-table__wrapper">
+              <table className="grammar-table">
+                <caption className="visually-hidden">Accuracy by grammar topic</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Topic</th>
+                    <th scope="col">Accuracy</th>
+                    <th scope="col">Answered</th>
+                    <th scope="col">Practise in</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {weakSpots.map((spot) => (
+                    <tr key={spot.tag}>
+                      <th scope="row">{spot.label}</th>
+                      <td>{spot.accuracyPercent}%</td>
+                      <td>
+                        {spot.correct} of {spot.answered}
+                      </td>
+                      <td>
+                        {spot.chapterNumbers.map((number, index) => (
+                          <span key={number}>
+                            {index > 0 ? ', ' : ''}
+                            <Link to={chapterPath(number)}>
+                              {titleByNumber.get(number) ?? formatChapterNumber(number)}
+                            </Link>
+                          </span>
+                        ))}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
       </Card>
 
       <Card title="Chapters you have started" titleLevel={2}>

@@ -95,7 +95,13 @@ export const chapter025: ChapterDefinition = {
       {
         id: 'ch25-table-03',
         title: 'Present vs. simple past, side by side',
-        columns: ['Person', 'sein (present)', 'sein (simple past)', 'haben (present)', 'haben (simple past)'],
+        columns: [
+          'Person',
+          'sein (present)',
+          'sein (simple past)',
+          'haben (present)',
+          'haben (simple past)',
+        ],
         rows: [
           ['ich', 'bin', 'war', 'habe', 'hatte'],
           ['du', 'bist', 'warst', 'hast', 'hattest'],
@@ -117,13 +123,15 @@ export const chapter025: ChapterDefinition = {
         german: 'Du warst letzte Woche nicht im Büro.',
         english: 'You were not in the office last week.',
         highlight: ['warst', 'nicht'],
-        explanation: 'du warst is negated with nicht placed after the time expression and the verb.',
+        explanation:
+          'du warst is negated with nicht placed after the time expression and the verb.',
       },
       {
         german: 'Er war als Kind sehr schüchtern.',
         english: 'He was very shy as a child.',
         highlight: ['war'],
-        explanation: 'er war is identical in form to ich war; only the context shows the person.',
+        explanation:
+          'er war is identical in form to ich war; only the context shows the person.',
       },
       {
         german: 'Wir waren letztes Jahr in Italien.',
@@ -141,80 +149,94 @@ export const chapter025: ChapterDefinition = {
         german: 'Ich hatte gestern keine Zeit.',
         english: 'I did not have time yesterday.',
         highlight: ['hatte', 'keine'],
-        explanation: 'ich hatte is negated with keine because Zeit is a noun without an article.',
+        explanation:
+          'ich hatte is negated with keine because Zeit is a noun without an article.',
       },
       {
         german: 'Du hattest als Kind einen Hund.',
         english: 'You had a dog as a child.',
         highlight: ['hattest'],
-        explanation: 'du hattest is the second-person singular simple-past form of haben.',
+        explanation:
+          'du hattest is the second-person singular simple-past form of haben.',
       },
       {
         german: 'Sie hatte vor zwei Tagen Kopfschmerzen.',
         english: 'She had a headache two days ago.',
         highlight: ['hatte'],
-        explanation: 'sie hatte (she had) is identical in form to ich hatte; the subject pronoun shows the person.',
+        explanation:
+          'sie hatte (she had) is identical in form to ich hatte; the subject pronoun shows the person.',
       },
       {
         german: 'Wir hatten damals kein Auto.',
         english: 'We did not have a car back then.',
         highlight: ['hatten', 'kein'],
-        explanation: 'wir hatten is negated with kein because Auto is a noun without an article.',
+        explanation:
+          'wir hatten is negated with kein because Auto is a noun without an article.',
       },
       {
         german: 'Hattet ihr letzten Monat viel Arbeit?',
         english: 'Did you (pl.) have a lot of work last month?',
         highlight: ['Hattet'],
-        explanation: 'Yes/no questions move the conjugated verb hattet to position 1, before the subject ihr.',
+        explanation:
+          'Yes/no questions move the conjugated verb hattet to position 1, before the subject ihr.',
       },
       {
         german: 'Meine Eltern hatten früher ein kleines Geschäft.',
         english: 'My parents used to have a small shop.',
         highlight: ['hatten'],
-        explanation: 'sie hatten (Eltern = plural) is the simple-past plural form of haben.',
+        explanation:
+          'sie hatten (Eltern = plural) is the simple-past plural form of haben.',
       },
       {
         german: 'Wo warst du gestern Abend?',
         english: 'Where were you yesterday evening?',
         highlight: ['warst'],
-        explanation: 'Question word wo takes position 1, so the conjugated verb warst follows directly in position 2.',
+        explanation:
+          'Question word wo takes position 1, so the conjugated verb warst follows directly in position 2.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich bin gestern müde.',
         correct: 'Ich war gestern müde.',
-        explanation: 'gestern signals the past, so the simple past war is needed, not the present-tense bin.',
+        explanation:
+          'gestern signals the past, so the simple past war is needed, not the present-tense bin.',
       },
       {
         incorrect: 'Er hat gestern kein Geld.',
         correct: 'Er hatte gestern kein Geld.',
-        explanation: 'gestern signals the past, so the simple past hatte is needed, not the present-tense hat.',
+        explanation:
+          'gestern signals the past, so the simple past hatte is needed, not the present-tense hat.',
       },
       {
         incorrect: 'Du war letzte Woche krank.',
         correct: 'Du warst letzte Woche krank.',
-        explanation: 'The du-form of sein in the simple past always ends in -st: warst, not war.',
+        explanation:
+          'The du-form of sein in the simple past always ends in -st: warst, not war.',
       },
       {
         incorrect: 'Wir waren nicht Zeit.',
         correct: 'Wir hatten keine Zeit.',
-        explanation: 'Having time uses haben, not sein; and Zeit without an article is negated with keine, not nicht.',
+        explanation:
+          'Having time uses haben, not sein; and Zeit without an article is negated with keine, not nicht.',
       },
       {
         incorrect: 'Ich hatte nicht Auto.',
         correct: 'Ich hatte kein Auto.',
-        explanation: 'Auto is a noun without an article, so it must be negated with kein (here: kein, neuter), not nicht.',
+        explanation:
+          'Auto is a noun without an article, so it must be negated with kein (here: kein, neuter), not nicht.',
       },
       {
         incorrect: 'Ihr habt letztes Jahr in Spanien.',
         correct: 'Ihr wart letztes Jahr in Spanien.',
-        explanation: 'Being somewhere uses sein, not haben; and letztes Jahr calls for the simple past wart.',
+        explanation:
+          'Being somewhere uses sein, not haben; and letztes Jahr calls for the simple past wart.',
       },
       {
         incorrect: 'Sie hattet damals viel Geduld.',
         correct: 'Sie hatte damals viel Geduld.',
-        explanation: 'For sie (she), the correct simple-past form of haben is hatte, not hattet, which belongs to ihr.',
+        explanation:
+          'For sie (she), the correct simple-past form of haben is hatte, not hattet, which belongs to ihr.',
       },
     ],
     remember: [
@@ -249,7 +271,8 @@ export const chapter025: ChapterDefinition = {
         { id: 'd', text: 'warst' },
       ],
       correctOptionId: 'b',
-      explanation: 'gestern signals the past; the ich-form of sein in the simple past is war.',
+      explanation:
+        'gestern signals the past; the ich-form of sein in the simple past is war.',
     },
     {
       id: 'ch25-ex-02',
@@ -375,7 +398,8 @@ export const chapter025: ChapterDefinition = {
         { id: 'd', text: 'wart' },
       ],
       correctOptionId: 'b',
-      explanation: 'Als Kind signals the past, and ich takes war (first-person singular).',
+      explanation:
+        'Als Kind signals the past, and ich takes war (first-person singular).',
     },
     {
       id: 'ch25-ex-09',
@@ -393,7 +417,8 @@ export const chapter025: ChapterDefinition = {
         { id: 'd', text: 'hattest' },
       ],
       correctOptionId: 'b',
-      explanation: 'Zeit haben (to have time) needs haben; the ich-form in the simple past is hatte.',
+      explanation:
+        'Zeit haben (to have time) needs haben; the ich-form in the simple past is hatte.',
     },
     {
       id: 'ch25-ex-10',
@@ -411,7 +436,8 @@ export const chapter025: ChapterDefinition = {
         { id: 'd', text: 'war' },
       ],
       correctOptionId: 'b',
-      explanation: 'Being somewhere (in Frankreich) needs sein; the wir-form in the simple past is waren.',
+      explanation:
+        'Being somewhere (in Frankreich) needs sein; the wir-form in the simple past is waren.',
     },
     {
       id: 'ch25-ex-11',
@@ -429,7 +455,8 @@ export const chapter025: ChapterDefinition = {
         { id: 'd', text: 'hatten' },
       ],
       correctOptionId: 'c',
-      explanation: 'Having long hair needs haben; the er/sie/es-form in the simple past is hatte.',
+      explanation:
+        'Having long hair needs haben; the er/sie/es-form in the simple past is hatte.',
     },
     {
       id: 'ch25-ex-12',
@@ -477,7 +504,8 @@ export const chapter025: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'kein / keine / nicht ...',
       maxLength: 10,
-      explanation: 'Zeit is feminine and has no article here, so it is negated with keine.',
+      explanation:
+        'Zeit is feminine and has no article here, so it is negated with keine.',
     },
     {
       id: 'ch25-ex-15',
@@ -486,7 +514,8 @@ export const chapter025: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['sein', 'simple-past', 'conjugation'],
-      instruction: 'Write the correct simple-past form of sein. Capitalisation is not checked.',
+      instruction:
+        'Write the correct simple-past form of sein. Capitalisation is not checked.',
       prompt: 'du → sein (simple past)',
       acceptedAnswers: ['warst'],
       answerMode: 'caseInsensitive',
@@ -501,7 +530,8 @@ export const chapter025: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['haben', 'simple-past', 'conjugation'],
-      instruction: 'Write the correct simple-past form of haben. Capitalisation is not checked.',
+      instruction:
+        'Write the correct simple-past form of haben. Capitalisation is not checked.',
       prompt: 'ihr → haben (simple past)',
       acceptedAnswers: ['hattet'],
       answerMode: 'caseInsensitive',
@@ -516,7 +546,8 @@ export const chapter025: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['sein', 'simple-past', 'conjugation'],
-      instruction: 'Write the correct simple-past form of sein. Capitalisation is not checked.',
+      instruction:
+        'Write the correct simple-past form of sein. Capitalisation is not checked.',
       prompt: 'sie (plural) → sein (simple past)',
       acceptedAnswers: ['waren'],
       answerMode: 'caseInsensitive',
@@ -531,7 +562,8 @@ export const chapter025: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['haben', 'simple-past', 'conjugation'],
-      instruction: 'Write the correct simple-past form of haben. Capitalisation is not checked.',
+      instruction:
+        'Write the correct simple-past form of haben. Capitalisation is not checked.',
       prompt: 'er → haben (simple past)',
       acceptedAnswers: ['hatte'],
       answerMode: 'caseInsensitive',
@@ -553,7 +585,8 @@ export const chapter025: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Ich war ...',
       maxLength: 60,
-      explanation: 'bin becomes war in the simple past, and heute becomes gestern: Ich war gestern krank.',
+      explanation:
+        'bin becomes war in the simple past, and heute becomes gestern: Ich war gestern krank.',
     },
     {
       id: 'ch25-ex-20',
@@ -564,12 +597,17 @@ export const chapter025: ChapterDefinition = {
       grammarFocus: ['haben', 'present-to-past', 'transformation'],
       instruction:
         'Rewrite the sentence in the simple past. Capitalisation is checked; no full stop is required.',
-      prompt: 'Wir haben heute viel Arbeit. → (change heute to letzte Woche and use the simple past)',
-      acceptedAnswers: ['Wir hatten letzte Woche viel Arbeit.', 'Wir hatten letzte Woche viel Arbeit'],
+      prompt:
+        'Wir haben heute viel Arbeit. → (change heute to letzte Woche and use the simple past)',
+      acceptedAnswers: [
+        'Wir hatten letzte Woche viel Arbeit.',
+        'Wir hatten letzte Woche viel Arbeit',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wir hatten ...',
       maxLength: 60,
-      explanation: 'haben becomes hatten in the simple past, and heute becomes letzte Woche: Wir hatten letzte Woche viel Arbeit.',
+      explanation:
+        'haben becomes hatten in the simple past, and heute becomes letzte Woche: Wir hatten letzte Woche viel Arbeit.',
     },
     {
       id: 'ch25-ex-21',
@@ -585,7 +623,8 @@ export const chapter025: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Du warst ...',
       maxLength: 60,
-      explanation: 'The du-form of sein in the simple past is warst; müde is an adjective, so it is negated with nicht: Du warst gestern nicht müde.',
+      explanation:
+        'The du-form of sein in the simple past is warst; müde is an adjective, so it is negated with nicht: Du warst gestern nicht müde.',
     },
     {
       id: 'ch25-ex-22',
@@ -601,7 +640,8 @@ export const chapter025: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Wir hatten ...',
       maxLength: 60,
-      explanation: 'The wir-form of haben in the simple past is hatten; Auto is neuter without an article, so it is negated with kein: Wir hatten damals kein Auto.',
+      explanation:
+        'The wir-form of haben in the simple past is hatten; Auto is neuter without an article, so it is negated with kein: Wir hatten damals kein Auto.',
     },
     {
       id: 'ch25-ex-23',
@@ -617,7 +657,8 @@ export const chapter025: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'war hatte',
       maxLength: 20,
-      explanation: 'ich war (I was) fits the first gap, and ich hatte (I had) fits the second: Als Kind war ich sehr aktiv. Ich hatte immer viel Energie.',
+      explanation:
+        'ich war (I was) fits the first gap, and ich hatte (I had) fits the second: Als Kind war ich sehr aktiv. Ich hatte immer viel Energie.',
     },
     {
       id: 'ch25-ex-24',
@@ -635,7 +676,8 @@ export const chapter025: ChapterDefinition = {
       placeholder: 'Letztes Jahr war ich ... Dort hatte ich ...',
       maxLength: 100,
       multiline: true,
-      explanation: 'Sentence 1 uses war (letztes Jahr signals the past); sentence 2 uses hatte, with the time word dort in position 1 and ich after the verb: Letztes Jahr war ich in Portugal. Dort hatte ich gutes Wetter.',
+      explanation:
+        'Sentence 1 uses war (letztes Jahr signals the past); sentence 2 uses hatte, with the time word dort in position 1 and ich after the verb: Letztes Jahr war ich in Portugal. Dort hatte ich gutes Wetter.',
     },
     {
       id: 'ch25-ex-25',
@@ -653,7 +695,8 @@ export const chapter025: ChapterDefinition = {
         { id: 'd', text: 'wart' },
       ],
       correctOptionId: 'b',
-      explanation: 'letzten Monat signals the past; the ich-form of sein in the simple past is war.',
+      explanation:
+        'letzten Monat signals the past; the ich-form of sein in the simple past is war.',
     },
     {
       id: 'ch25-ex-26',
@@ -689,7 +732,8 @@ export const chapter025: ChapterDefinition = {
         { id: 'd', text: 'warst' },
       ],
       correctOptionId: 'b',
-      explanation: 'The er-form of sein in the simple past is war, identical to the ich-form.',
+      explanation:
+        'The er-form of sein in the simple past is war, identical to the ich-form.',
     },
     {
       id: 'ch25-ex-28',
@@ -797,7 +841,8 @@ export const chapter025: ChapterDefinition = {
         { id: 'd', text: 'waren' },
       ],
       correctOptionId: 'b',
-      explanation: 'Describing weather with an adjective (kalt) uses sein; the es-form in the simple past is war.',
+      explanation:
+        'Describing weather with an adjective (kalt) uses sein; the es-form in the simple past is war.',
     },
     {
       id: 'ch25-ex-34',
@@ -860,7 +905,8 @@ export const chapter025: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['sein', 'simple-past', 'conjugation'],
-      instruction: 'Write the correct simple-past form of sein. Capitalisation is not checked.',
+      instruction:
+        'Write the correct simple-past form of sein. Capitalisation is not checked.',
       prompt: 'ich → sein (simple past)',
       acceptedAnswers: ['war'],
       answerMode: 'caseInsensitive',
@@ -875,7 +921,8 @@ export const chapter025: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['sein', 'simple-past', 'conjugation'],
-      instruction: 'Write the correct simple-past form of sein. Capitalisation is not checked.',
+      instruction:
+        'Write the correct simple-past form of sein. Capitalisation is not checked.',
       prompt: 'wir → sein (simple past)',
       acceptedAnswers: ['waren'],
       answerMode: 'caseInsensitive',
@@ -890,13 +937,15 @@ export const chapter025: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['sein', 'simple-past', 'conjugation'],
-      instruction: 'Write the correct simple-past form of sein. Capitalisation is not checked.',
+      instruction:
+        'Write the correct simple-past form of sein. Capitalisation is not checked.',
       prompt: 'er → sein (simple past)',
       acceptedAnswers: ['war'],
       answerMode: 'caseInsensitive',
       placeholder: 'war / warst / waren ...',
       maxLength: 15,
-      explanation: 'The er-form of sein in the simple past is war, identical to the ich-form.',
+      explanation:
+        'The er-form of sein in the simple past is war, identical to the ich-form.',
     },
     {
       id: 'ch25-ex-40',
@@ -905,7 +954,8 @@ export const chapter025: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['sein', 'simple-past', 'conjugation'],
-      instruction: 'Write the correct simple-past form of sein. Capitalisation is not checked.',
+      instruction:
+        'Write the correct simple-past form of sein. Capitalisation is not checked.',
       prompt: 'ihr → sein (simple past)',
       acceptedAnswers: ['wart'],
       answerMode: 'caseInsensitive',
@@ -920,7 +970,8 @@ export const chapter025: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['haben', 'simple-past', 'conjugation'],
-      instruction: 'Write the correct simple-past form of haben. Capitalisation is not checked.',
+      instruction:
+        'Write the correct simple-past form of haben. Capitalisation is not checked.',
       prompt: 'ich → haben (simple past)',
       acceptedAnswers: ['hatte'],
       answerMode: 'caseInsensitive',
@@ -935,7 +986,8 @@ export const chapter025: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['haben', 'simple-past', 'conjugation'],
-      instruction: 'Write the correct simple-past form of haben. Capitalisation is not checked.',
+      instruction:
+        'Write the correct simple-past form of haben. Capitalisation is not checked.',
       prompt: 'du → haben (simple past)',
       acceptedAnswers: ['hattest'],
       answerMode: 'caseInsensitive',
@@ -950,7 +1002,8 @@ export const chapter025: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['haben', 'simple-past', 'conjugation'],
-      instruction: 'Write the correct simple-past form of haben. Capitalisation is not checked.',
+      instruction:
+        'Write the correct simple-past form of haben. Capitalisation is not checked.',
       prompt: 'wir → haben (simple past)',
       acceptedAnswers: ['hatten'],
       answerMode: 'caseInsensitive',
@@ -965,7 +1018,8 @@ export const chapter025: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['haben', 'simple-past', 'conjugation'],
-      instruction: 'Write the correct simple-past form of haben. Capitalisation is not checked.',
+      instruction:
+        'Write the correct simple-past form of haben. Capitalisation is not checked.',
       prompt: 'sie (plural) → haben (simple past)',
       acceptedAnswers: ['hatten'],
       answerMode: 'caseInsensitive',
@@ -986,7 +1040,8 @@ export const chapter025: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'nicht / kein / keine ...',
       maxLength: 10,
-      explanation: 'zu Hause is not a noun without an article, so waren is negated with nicht.',
+      explanation:
+        'zu Hause is not a noun without an article, so waren is negated with nicht.',
     },
     {
       id: 'ch25-ex-46',
@@ -1001,7 +1056,8 @@ export const chapter025: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'kein / keine / keinen ...',
       maxLength: 10,
-      explanation: 'Hunger is masculine and has no article here, so it is negated with keinen.',
+      explanation:
+        'Hunger is masculine and has no article here, so it is negated with keinen.',
     },
     {
       id: 'ch25-ex-47',
@@ -1012,12 +1068,14 @@ export const chapter025: ChapterDefinition = {
       grammarFocus: ['sein', 'present-to-past', 'transformation'],
       instruction:
         'Rewrite the sentence in the simple past. Capitalisation is checked; no full stop is required.',
-      prompt: 'Er ist heute krank. → (change heute to letzte Woche and use the simple past)',
+      prompt:
+        'Er ist heute krank. → (change heute to letzte Woche and use the simple past)',
       acceptedAnswers: ['Er war letzte Woche krank.', 'Er war letzte Woche krank'],
       answerMode: 'normalized',
       placeholder: 'Er war ...',
       maxLength: 60,
-      explanation: 'ist becomes war in the simple past, and heute becomes letzte Woche: Er war letzte Woche krank.',
+      explanation:
+        'ist becomes war in the simple past, and heute becomes letzte Woche: Er war letzte Woche krank.',
     },
     {
       id: 'ch25-ex-48',
@@ -1033,7 +1091,8 @@ export const chapter025: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'war hatte',
       maxLength: 20,
-      explanation: 'ich war (I was) fits the first gap, and ich hatte (I had) fits the second: Damals war ich Student. Ich hatte wenig Geld.',
+      explanation:
+        'ich war (I was) fits the first gap, and ich hatte (I had) fits the second: Damals war ich Student. Ich hatte wenig Geld.',
     },
     {
       id: 'ch25-ex-49',
@@ -1162,7 +1221,8 @@ export const chapter025: ChapterDefinition = {
         { id: 'p3', left: 'wir', right: 'waren' },
         { id: 'p4', left: 'ihr', right: 'wart' },
       ],
-      explanation: 'er → war, du → warst, wir → waren, ihr → wart are the simple-past forms of sein.',
+      explanation:
+        'er → war, du → warst, wir → waren, ihr → wart are the simple-past forms of sein.',
     },
     {
       id: 'ch25-ex-58',
@@ -1179,7 +1239,8 @@ export const chapter025: ChapterDefinition = {
         { id: 'p3', left: 'wir', right: 'hatten' },
         { id: 'p4', left: 'ihr', right: 'hattet' },
       ],
-      explanation: 'ich → hatte, du → hattest, wir → hatten, ihr → hattet are the simple-past forms of haben.',
+      explanation:
+        'ich → hatte, du → hattest, wir → hatten, ihr → hattet are the simple-past forms of haben.',
     },
     {
       id: 'ch25-ex-59',
@@ -1193,7 +1254,8 @@ export const chapter025: ChapterDefinition = {
       tokens: ['Du', 'war', 'gestern', 'krank.'],
       errorTokenIndex: 1,
       correction: 'warst',
-      explanation: 'The du-form of sein in the simple past must end in -st: warst, not war.',
+      explanation:
+        'The du-form of sein in the simple past must end in -st: warst, not war.',
     },
     {
       id: 'ch25-ex-60',
@@ -1207,7 +1269,8 @@ export const chapter025: ChapterDefinition = {
       tokens: ['Wir', 'hattet', 'letztes', 'Jahr', 'kein', 'Auto.'],
       errorTokenIndex: 1,
       correction: 'hatten',
-      explanation: 'The wir-form of haben in the simple past is hatten, not hattet, which belongs to ihr.',
+      explanation:
+        'The wir-form of haben in the simple past is hatten, not hattet, which belongs to ihr.',
     },
     {
       id: 'ch25-ex-61',
@@ -1221,7 +1284,8 @@ export const chapter025: ChapterDefinition = {
       tokens: ['Ihr', 'waren', 'früher', 'meine', 'Nachbarn.'],
       errorTokenIndex: 1,
       correction: 'wart',
-      explanation: 'The ihr-form of sein in the simple past is wart, not waren, which belongs to wir and sie/Sie.',
+      explanation:
+        'The ihr-form of sein in the simple past is wart, not waren, which belongs to wir and sie/Sie.',
     },
     {
       id: 'ch25-ex-62',
@@ -1235,7 +1299,8 @@ export const chapter025: ChapterDefinition = {
       tokens: ['Er', 'hattest', 'gestern', 'Kopfschmerzen.'],
       errorTokenIndex: 1,
       correction: 'hatte',
-      explanation: 'The er-form of haben in the simple past is hatte, not hattest, which belongs to du.',
+      explanation:
+        'The er-form of haben in the simple past is hatte, not hattest, which belongs to du.',
     },
     {
       id: 'ch25-ex-63',
@@ -1249,7 +1314,8 @@ export const chapter025: ChapterDefinition = {
       tokens: ['Ich', 'warst', 'als', 'Kind', 'sehr', 'schüchtern.'],
       errorTokenIndex: 1,
       correction: 'war',
-      explanation: 'The ich-form of sein in the simple past is war, not warst, which belongs to du.',
+      explanation:
+        'The ich-form of sein in the simple past is war, not warst, which belongs to du.',
     },
   ],
 };

@@ -1027,7 +1027,8 @@ export const chapter004: ChapterDefinition = {
       templateParts: ['Sie ', ' heute einen roten Mantel.'],
       slots: [{ id: 'slot1', correctWord: 'trägt' }],
       wordBank: ['trägt', 'tragt', 'tragen', 'trägst'],
-      explanation: 'tragen changes a→ä for er/sie/es: Sie trägt heute einen roten Mantel.',
+      explanation:
+        'tragen changes a→ä for er/sie/es: Sie trägt heute einen roten Mantel.',
     },
     {
       id: 'ch04-ex-50',
@@ -1123,8 +1124,7 @@ export const chapter004: ChapterDefinition = {
         { id: 'p2', left: 'sehen', right: 'siehst' },
         { id: 'p3', left: 'empfehlen', right: 'empfiehlst' },
       ],
-      explanation:
-        'These verbs all change e→ie for du: liest, siehst, empfiehlst.',
+      explanation: 'These verbs all change e→ie for du: liest, siehst, empfiehlst.',
     },
     {
       id: 'ch04-ex-56',

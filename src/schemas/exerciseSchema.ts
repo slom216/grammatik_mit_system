@@ -397,7 +397,9 @@ export const errorSpottingExerciseSchema = z
       });
       return;
     }
-    if (exercise.tokens[exercise.errorTokenIndex]?.trim() === exercise.correction.trim()) {
+    if (
+      exercise.tokens[exercise.errorTokenIndex]?.trim() === exercise.correction.trim()
+    ) {
       ctx.addIssue({
         code: 'custom',
         path: ['correction'],

@@ -30,7 +30,9 @@ export function DragToSlotsExercise({
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   const usedIndices = new Set(Object.values(placedIndices));
-  const emptySlots = exercise.slots.filter((slot) => placedIndices[slot.id] === undefined);
+  const emptySlots = exercise.slots.filter(
+    (slot) => placedIndices[slot.id] === undefined,
+  );
 
   const placeInSlot = (slotId: string, bankIndex: number) => {
     if (disabled) return;
@@ -60,7 +62,8 @@ export function DragToSlotsExercise({
         {exercise.templateParts.map((part, index) => {
           const slot = exercise.slots[index];
           const placedIndex = slot ? placedIndices[slot.id] : undefined;
-          const placedWord = placedIndex !== undefined ? exercise.wordBank[placedIndex] : undefined;
+          const placedWord =
+            placedIndex !== undefined ? exercise.wordBank[placedIndex] : undefined;
           const isCorrect = slot !== undefined && placedWord === slot.correctWord;
 
           return (
@@ -72,7 +75,10 @@ export function DragToSlotsExercise({
                   className={[
                     'drag-slots__slot',
                     placedWord !== undefined && 'drag-slots__slot--filled',
-                    showAnswer && (isCorrect ? 'drag-slots__slot--correct' : 'drag-slots__slot--incorrect'),
+                    showAnswer &&
+                      (isCorrect
+                        ? 'drag-slots__slot--correct'
+                        : 'drag-slots__slot--incorrect'),
                   ]
                     .filter(Boolean)
                     .join(' ')}
@@ -121,6 +127,9 @@ export function DragToSlotsExercise({
                   .join(' ')}
                 draggable={!disabled && !isUsed}
                 disabled={disabled || isUsed}
+                // Selection is otherwise carried by colour alone, which a
+                // screen reader cannot report back.
+                aria-pressed={selectedIndex === bankIndex}
                 onDragStart={() => setDraggedIndex(bankIndex)}
                 onDragEnd={() => setDraggedIndex(null)}
                 onClick={() => {

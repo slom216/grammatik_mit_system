@@ -99,7 +99,12 @@ export const chapter027: ChapterDefinition = {
         columns: ['Infinitive', 'Meaning', 'Participle', 'Example'],
         rows: [
           ['aufwachen', 'to wake up', 'aufgewacht', 'Ich bin aufgewacht.'],
-          ['einschlafen', 'to fall asleep', 'eingeschlafen', 'Das Kind ist eingeschlafen.'],
+          [
+            'einschlafen',
+            'to fall asleep',
+            'eingeschlafen',
+            'Das Kind ist eingeschlafen.',
+          ],
           ['sterben', 'to die', 'gestorben', 'Er ist gestorben.'],
           ['werden', 'to become', 'geworden', 'Sie ist Ärztin geworden.'],
         ],
@@ -122,7 +127,11 @@ export const chapter027: ChapterDefinition = {
         columns: ['Sentence', 'Auxiliary', 'Reason'],
         rows: [
           ['Ich bin nach Hause gefahren.', 'sein', 'movement to a destination'],
-          ['Ich habe das Auto gefahren.', 'haben', 'transitive use, no destination for the subject'],
+          [
+            'Ich habe das Auto gefahren.',
+            'haben',
+            'transitive use, no destination for the subject',
+          ],
         ],
       },
     ],
@@ -137,13 +146,15 @@ export const chapter027: ChapterDefinition = {
         german: 'Wir sind mit dem Zug nach München gefahren.',
         english: 'We travelled to Munich by train.',
         highlight: ['sind', 'gefahren'],
-        explanation: 'fahren with a destination (nach München) describes movement to a place, so sein is used.',
+        explanation:
+          'fahren with a destination (nach München) describes movement to a place, so sein is used.',
       },
       {
         german: 'Der Flug ist um neun Uhr angekommen.',
-        english: 'The flight arrived at nine o\'clock.',
+        english: "The flight arrived at nine o'clock.",
         highlight: ['ist', 'angekommen'],
-        explanation: 'ankommen (to arrive) is a movement verb reaching a destination, so it takes sein.',
+        explanation:
+          'ankommen (to arrive) is a movement verb reaching a destination, so it takes sein.',
       },
       {
         german: 'Meine Großmutter ist letztes Jahr gestorben.',
@@ -155,7 +166,8 @@ export const chapter027: ChapterDefinition = {
         german: 'Wir sind den ganzen Abend zu Hause geblieben.',
         english: 'We stayed home the whole evening.',
         highlight: ['sind', 'geblieben'],
-        explanation: 'bleiben is an exception verb that takes sein even though staying is not movement.',
+        explanation:
+          'bleiben is an exception verb that takes sein even though staying is not movement.',
       },
       {
         german: 'Was ist gestern in der Stadt passiert?',
@@ -167,69 +179,81 @@ export const chapter027: ChapterDefinition = {
         german: 'Ich habe gestern Abend lange gearbeitet.',
         english: 'I worked late last night.',
         highlight: ['habe', 'gearbeitet'],
-        explanation: 'arbeiten is neither a movement verb nor a change-of-state verb, so it takes the default auxiliary haben.',
+        explanation:
+          'arbeiten is neither a movement verb nor a change-of-state verb, so it takes the default auxiliary haben.',
       },
       {
         german: 'Er hat das Auto sehr vorsichtig gefahren.',
         english: 'He drove the car very carefully.',
         highlight: ['hat', 'gefahren'],
-        explanation: 'Here fahren is transitive (has a direct object, das Auto) and describes what happened to the car, not the subject travelling somewhere, so haben is used.',
+        explanation:
+          'Here fahren is transitive (has a direct object, das Auto) and describes what happened to the car, not the subject travelling somewhere, so haben is used.',
       },
       {
         german: 'Die Kinder sind schnell eingeschlafen.',
         english: 'The children fell asleep quickly.',
         highlight: ['sind', 'eingeschlafen'],
-        explanation: 'einschlafen describes a change of state (awake to asleep), so it takes sein.',
+        explanation:
+          'einschlafen describes a change of state (awake to asleep), so it takes sein.',
       },
       {
         german: 'Bist du schon einmal nach Spanien geflogen?',
         english: 'Have you ever flown to Spain?',
         highlight: ['Bist', 'geflogen'],
-        explanation: 'fliegen with a destination describes movement to a place, so the question uses bist, not hast.',
+        explanation:
+          'fliegen with a destination describes movement to a place, so the question uses bist, not hast.',
       },
       {
         german: 'Meine Schwester ist Ärztin geworden.',
         english: 'My sister became a doctor.',
         highlight: ['ist', 'geworden'],
-        explanation: 'werden always describes a change of state (becoming something new) and takes sein.',
+        explanation:
+          'werden always describes a change of state (becoming something new) and takes sein.',
       },
       {
         german: 'Ich bin gestern zwei Stunden im Park gelaufen.',
         english: 'I ran/walked in the park for two hours yesterday.',
         highlight: ['bin', 'gelaufen'],
-        explanation: 'laufen describes ongoing movement and takes sein, even though no single destination is named.',
+        explanation:
+          'laufen describes ongoing movement and takes sein, even though no single destination is named.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich habe nach Hause gegangen.',
         correct: 'Ich bin nach Hause gegangen.',
-        explanation: 'gehen describes movement to a destination, so it needs the auxiliary sein, not haben.',
+        explanation:
+          'gehen describes movement to a destination, so it needs the auxiliary sein, not haben.',
       },
       {
         incorrect: 'Er hat spät gekommen.',
         correct: 'Er ist spät gekommen.',
-        explanation: 'kommen is a movement verb and always takes sein in the present perfect.',
+        explanation:
+          'kommen is a movement verb and always takes sein in the present perfect.',
       },
       {
         incorrect: 'Wir haben in Berlin geblieben.',
         correct: 'Wir sind in Berlin geblieben.',
-        explanation: 'bleiben is one of the exception verbs that take sein, even though it does not describe movement.',
+        explanation:
+          'bleiben is one of the exception verbs that take sein, even though it does not describe movement.',
       },
       {
         incorrect: 'Meine Oma hat letztes Jahr gestorben.',
         correct: 'Meine Oma ist letztes Jahr gestorben.',
-        explanation: 'sterben is a change-of-state verb, so the auxiliary must be sein, not haben.',
+        explanation:
+          'sterben is a change-of-state verb, so the auxiliary must be sein, not haben.',
       },
       {
         incorrect: 'Ich bin das Auto gefahren.',
         correct: 'Ich habe das Auto gefahren.',
-        explanation: 'With a direct object (das Auto), fahren describes what was driven, not the subject moving to a destination, so haben is used here.',
+        explanation:
+          'With a direct object (das Auto), fahren describes what was driven, not the subject moving to a destination, so haben is used here.',
       },
       {
         incorrect: 'Was hat gestern passiert?',
         correct: 'Was ist gestern passiert?',
-        explanation: 'passiert is an exception verb that always takes sein, regardless of the subject.',
+        explanation:
+          'passiert is an exception verb that always takes sein, regardless of the subject.',
       },
     ],
     remember: [
@@ -262,7 +286,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'd', text: 'ist' },
       ],
       correctOptionId: 'b',
-      explanation: 'gehen describes movement to a destination and the subject is ich, so the auxiliary is bin.',
+      explanation:
+        'gehen describes movement to a destination and the subject is ich, so the auxiliary is bin.',
     },
     {
       id: 'ch27-ex-02',
@@ -280,7 +305,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'd', text: 'seid' },
       ],
       correctOptionId: 'c',
-      explanation: 'fahren describes movement to a place and the subject is wir, so the auxiliary is sind.',
+      explanation:
+        'fahren describes movement to a place and the subject is wir, so the auxiliary is sind.',
     },
     {
       id: 'ch27-ex-03',
@@ -298,7 +324,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'd', text: 'sind' },
       ],
       correctOptionId: 'b',
-      explanation: 'aufwachen is a change-of-state verb, so it takes sein; the subject Baby is third person singular, so ist.',
+      explanation:
+        'aufwachen is a change-of-state verb, so it takes sein; the subject Baby is third person singular, so ist.',
     },
     {
       id: 'ch27-ex-04',
@@ -316,7 +343,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'd', text: 'bin' },
       ],
       correctOptionId: 'b',
-      explanation: 'arbeiten is not a movement or change-of-state verb, so it takes the default auxiliary haben: hat.',
+      explanation:
+        'arbeiten is not a movement or change-of-state verb, so it takes the default auxiliary haben: hat.',
     },
     {
       id: 'ch27-ex-05',
@@ -424,7 +452,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'd', text: 'default group (haben)' },
       ],
       correctOptionId: 'b',
-      explanation: 'einschlafen describes a change from being awake to being asleep, so it belongs to the change-of-state group.',
+      explanation:
+        'einschlafen describes a change from being awake to being asleep, so it belongs to the change-of-state group.',
     },
     {
       id: 'ch27-ex-11',
@@ -442,7 +471,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'd', text: 'default group (haben)' },
       ],
       correctOptionId: 'c',
-      explanation: 'passieren is neither movement nor a clear change of state; it is one of the memorised exception verbs that take sein.',
+      explanation:
+        'passieren is neither movement nor a clear change of state; it is one of the memorised exception verbs that take sein.',
     },
     {
       id: 'ch27-ex-12',
@@ -460,7 +490,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'd', text: 'default group (haben)' },
       ],
       correctOptionId: 'd',
-      explanation: 'lesen is neither a movement verb nor a change-of-state verb, so it takes the default auxiliary haben.',
+      explanation:
+        'lesen is neither a movement verb nor a change-of-state verb, so it takes the default auxiliary haben.',
     },
     {
       id: 'ch27-ex-13',
@@ -469,7 +500,8 @@ export const chapter027: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['sein-conjugation', 'auxiliary'],
-      instruction: 'Write the correct present-tense form of sein that belongs in the gap. Capitalisation is not checked.',
+      instruction:
+        'Write the correct present-tense form of sein that belongs in the gap. Capitalisation is not checked.',
       prompt: 'Du ___ zu spät gekommen.',
       acceptedAnswers: ['bist'],
       answerMode: 'caseInsensitive',
@@ -484,7 +516,8 @@ export const chapter027: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['sein-conjugation', 'auxiliary'],
-      instruction: 'Write the correct present-tense form of sein that belongs in the gap. Capitalisation is not checked.',
+      instruction:
+        'Write the correct present-tense form of sein that belongs in the gap. Capitalisation is not checked.',
       prompt: 'Ihr ___ schnell eingeschlafen.',
       acceptedAnswers: ['seid'],
       answerMode: 'caseInsensitive',
@@ -529,7 +562,8 @@ export const chapter027: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['sentence-completion', 'sein-vs-haben'],
-      instruction: 'Complete the sentence with the correct auxiliary and the past participle of the verb in brackets. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Complete the sentence with the correct auxiliary and the past participle of the verb in brackets. Capitalisation is checked; no full stop is required.',
       prompt: 'Ich ___ gestern ins Kino ___. (gehen)',
       acceptedAnswers: ['bin gegangen'],
       answerMode: 'normalized',
@@ -544,13 +578,15 @@ export const chapter027: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['sentence-completion', 'sein-vs-haben'],
-      instruction: 'Complete the sentence with the correct auxiliary and the past participle of the verb in brackets. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Complete the sentence with the correct auxiliary and the past participle of the verb in brackets. Capitalisation is checked; no full stop is required.',
       prompt: 'Wir ___ den ganzen Abend zu Hause ___. (bleiben)',
       acceptedAnswers: ['sind geblieben'],
       answerMode: 'normalized',
       placeholder: 'sind/haben ... ge...',
       maxLength: 25,
-      explanation: 'bleiben is an exception verb that takes sein; with wir the correct completion is sind geblieben.',
+      explanation:
+        'bleiben is an exception verb that takes sein; with wir the correct completion is sind geblieben.',
     },
     {
       id: 'ch27-ex-19',
@@ -559,13 +595,15 @@ export const chapter027: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['sentence-completion', 'sein-vs-haben'],
-      instruction: 'Complete the sentence with the correct auxiliary and the past participle of the verb in brackets. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Complete the sentence with the correct auxiliary and the past participle of the verb in brackets. Capitalisation is checked; no full stop is required.',
       prompt: 'Meine Eltern ___ das Haus vor zwei Jahren ___. (kaufen)',
       acceptedAnswers: ['haben gekauft'],
       answerMode: 'normalized',
       placeholder: 'sind/haben ... ge...',
       maxLength: 25,
-      explanation: 'kaufen is neither a movement nor a change-of-state verb, so it takes haben: haben gekauft.',
+      explanation:
+        'kaufen is neither a movement nor a change-of-state verb, so it takes haben: haben gekauft.',
     },
     {
       id: 'ch27-ex-20',
@@ -574,7 +612,8 @@ export const chapter027: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['sentence-completion', 'sein-vs-haben'],
-      instruction: 'Complete the sentence with the correct auxiliary and the past participle of the verb in brackets. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Complete the sentence with the correct auxiliary and the past participle of the verb in brackets. Capitalisation is checked; no full stop is required.',
       prompt: 'Der Unfall ___ heute Morgen ___. (passieren)',
       acceptedAnswers: ['ist passiert'],
       answerMode: 'normalized',
@@ -589,13 +628,15 @@ export const chapter027: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['question-formation', 'sein-vs-haben'],
-      instruction: 'Write a complete yes/no question in the present perfect using the cue words. Capitalisation and the question mark are checked.',
+      instruction:
+        'Write a complete yes/no question in the present perfect using the cue words. Capitalisation and the question mark are checked.',
       prompt: 'du – schon einmal – nach Italien – fliegen',
       acceptedAnswers: ['Bist du schon einmal nach Italien geflogen?'],
       answerMode: 'normalized',
       placeholder: 'Bist du ...?',
       maxLength: 60,
-      explanation: 'fliegen with a destination takes sein; in a yes/no question the sein-form moves to position 1: Bist du schon einmal nach Italien geflogen?',
+      explanation:
+        'fliegen with a destination takes sein; in a yes/no question the sein-form moves to position 1: Bist du schon einmal nach Italien geflogen?',
     },
     {
       id: 'ch27-ex-22',
@@ -604,13 +645,18 @@ export const chapter027: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['question-and-answer', 'sein-vs-haben'],
-      instruction: 'Write a short answer to the question using the cue words. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a short answer to the question using the cue words. Capitalisation is checked; no full stop is required.',
       prompt: 'Wann bist du aufgewacht? (ich – um sieben Uhr – aufwachen)',
-      acceptedAnswers: ['Ich bin um sieben Uhr aufgewacht.', 'Ich bin um sieben Uhr aufgewacht'],
+      acceptedAnswers: [
+        'Ich bin um sieben Uhr aufgewacht.',
+        'Ich bin um sieben Uhr aufgewacht',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich bin ...',
       maxLength: 50,
-      explanation: 'aufwachen is a change-of-state verb and takes sein; the matching answer is Ich bin um sieben Uhr aufgewacht.',
+      explanation:
+        'aufwachen is a change-of-state verb and takes sein; the matching answer is Ich bin um sieben Uhr aufgewacht.',
     },
     {
       id: 'ch27-ex-23',
@@ -619,13 +665,18 @@ export const chapter027: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['contrast', 'transitive-fahren'],
-      instruction: 'Write a complete sentence using the cue words. Choose haben or sein based on whether fahren has a direct object. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence using the cue words. Choose haben or sein based on whether fahren has a direct object. Capitalisation is checked; no full stop is required.',
       prompt: 'er – das Auto – langsam – fahren (transitive: fahren + direct object)',
-      acceptedAnswers: ['Er hat das Auto langsam gefahren.', 'Er hat das Auto langsam gefahren'],
+      acceptedAnswers: [
+        'Er hat das Auto langsam gefahren.',
+        'Er hat das Auto langsam gefahren',
+      ],
       answerMode: 'normalized',
       placeholder: 'Er hat ...',
       maxLength: 50,
-      explanation: 'With a direct object (das Auto), fahren describes what was driven, not the subject travelling to a destination, so haben is required.',
+      explanation:
+        'With a direct object (das Auto), fahren describes what was driven, not the subject travelling to a destination, so haben is required.',
     },
     {
       id: 'ch27-ex-24',
@@ -634,13 +685,18 @@ export const chapter027: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['mixed-review', 'sein-vs-haben'],
-      instruction: 'Complete both sentences with the correct auxiliary and participle. Write both sentences separated by a space; capitalisation and punctuation are checked.',
-      prompt: 'Wir ___ am Sonntag im Park ___. (laufen) Danach ___ wir ein Eis ___. (essen)',
-      acceptedAnswers: ['Wir sind am Sonntag im Park gelaufen. Danach haben wir ein Eis gegessen.'],
+      instruction:
+        'Complete both sentences with the correct auxiliary and participle. Write both sentences separated by a space; capitalisation and punctuation are checked.',
+      prompt:
+        'Wir ___ am Sonntag im Park ___. (laufen) Danach ___ wir ein Eis ___. (essen)',
+      acceptedAnswers: [
+        'Wir sind am Sonntag im Park gelaufen. Danach haben wir ein Eis gegessen.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wir sind ... Danach haben wir ...',
       maxLength: 90,
-      explanation: 'laufen describes movement and takes sein (sind gelaufen); essen is neither movement nor change of state and takes haben (haben gegessen).',
+      explanation:
+        'laufen describes movement and takes sein (sind gelaufen); essen is neither movement nor change of state and takes haben (haben gegessen).',
     },
     {
       id: 'ch27-ex-25',
@@ -658,7 +714,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'd', text: 'sind' },
       ],
       correctOptionId: 'b',
-      explanation: 'aufstehen describes a change of position/state, so it takes sein; the subject er requires ist.',
+      explanation:
+        'aufstehen describes a change of position/state, so it takes sein; the subject er requires ist.',
     },
     {
       id: 'ch27-ex-26',
@@ -676,7 +733,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'd', text: 'bin' },
       ],
       correctOptionId: 'b',
-      explanation: 'ankommen is a movement verb reaching a destination, so it takes sein; Der Zug requires ist.',
+      explanation:
+        'ankommen is a movement verb reaching a destination, so it takes sein; Der Zug requires ist.',
     },
     {
       id: 'ch27-ex-27',
@@ -694,7 +752,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'd', text: 'ist' },
       ],
       correctOptionId: 'b',
-      explanation: 'fliegen with a destination describes movement to a place, so it takes sein; ich requires bin.',
+      explanation:
+        'fliegen with a destination describes movement to a place, so it takes sein; ich requires bin.',
     },
     {
       id: 'ch27-ex-28',
@@ -748,7 +807,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'd', text: 'sind' },
       ],
       correctOptionId: 'b',
-      explanation: 'passiert always takes sein; the third person singular form here is ist.',
+      explanation:
+        'passiert always takes sein; the third person singular form here is ist.',
     },
     {
       id: 'ch27-ex-31',
@@ -766,7 +826,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'd', text: 'sind' },
       ],
       correctOptionId: 'b',
-      explanation: 'sterben is a change-of-state verb and always takes sein; a female singular subject requires ist.',
+      explanation:
+        'sterben is a change-of-state verb and always takes sein; a female singular subject requires ist.',
     },
     {
       id: 'ch27-ex-32',
@@ -784,7 +845,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'd', text: 'sind' },
       ],
       correctOptionId: 'b',
-      explanation: 'lesen is neither a movement nor a change-of-state verb, so it takes the default auxiliary haben: habe.',
+      explanation:
+        'lesen is neither a movement nor a change-of-state verb, so it takes the default auxiliary haben: habe.',
     },
     {
       id: 'ch27-ex-33',
@@ -802,7 +864,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'd', text: 'sind' },
       ],
       correctOptionId: 'b',
-      explanation: 'werden always describes a change of state and takes sein; er requires ist.',
+      explanation:
+        'werden always describes a change of state and takes sein; er requires ist.',
     },
     {
       id: 'ch27-ex-34',
@@ -829,7 +892,8 @@ export const chapter027: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['sein-conjugation', 'auxiliary'],
-      instruction: 'Write the correct present-tense form of sein that belongs in the gap. Capitalisation is not checked.',
+      instruction:
+        'Write the correct present-tense form of sein that belongs in the gap. Capitalisation is not checked.',
       prompt: 'Er ___ nach Hause gegangen.',
       acceptedAnswers: ['ist'],
       answerMode: 'caseInsensitive',
@@ -844,13 +908,15 @@ export const chapter027: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['sein-conjugation', 'auxiliary'],
-      instruction: 'Write the correct present-tense form of sein that belongs in the gap. Capitalisation is not checked.',
+      instruction:
+        'Write the correct present-tense form of sein that belongs in the gap. Capitalisation is not checked.',
       prompt: 'Wir ___ mit dem Auto gefahren.',
       acceptedAnswers: ['sind'],
       answerMode: 'caseInsensitive',
       placeholder: 'bin / bist / ist / sind / seid',
       maxLength: 10,
-      explanation: 'fahren with a destination takes sein; the subject wir requires the form sind.',
+      explanation:
+        'fahren with a destination takes sein; the subject wir requires the form sind.',
     },
     {
       id: 'ch27-ex-37',
@@ -874,7 +940,8 @@ export const chapter027: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['participle', 'schwimmen'],
-      instruction: 'Write the past participle of schwimmen. Capitalisation is not checked.',
+      instruction:
+        'Write the past participle of schwimmen. Capitalisation is not checked.',
       prompt: 'Er ist ans andere Ufer ___. (schwimmen)',
       acceptedAnswers: ['geschwommen'],
       answerMode: 'caseInsensitive',
@@ -889,7 +956,8 @@ export const chapter027: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['participle', 'aufwachen'],
-      instruction: 'Write the past participle of aufwachen. Capitalisation is not checked.',
+      instruction:
+        'Write the past participle of aufwachen. Capitalisation is not checked.',
       prompt: 'Das Mädchen ist um acht Uhr ___. (aufwachen)',
       acceptedAnswers: ['aufgewacht'],
       answerMode: 'caseInsensitive',
@@ -919,13 +987,15 @@ export const chapter027: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['sentence-completion', 'sein-vs-haben'],
-      instruction: 'Complete the sentence with the correct auxiliary and the past participle of the verb in brackets. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Complete the sentence with the correct auxiliary and the past participle of the verb in brackets. Capitalisation is checked; no full stop is required.',
       prompt: 'Ich ___ heute früh ___. (aufstehen)',
       acceptedAnswers: ['bin aufgestanden'],
       answerMode: 'normalized',
       placeholder: 'bin/habe ... ge...',
       maxLength: 25,
-      explanation: 'aufstehen describes a change of state and takes sein; with ich the correct completion is bin aufgestanden.',
+      explanation:
+        'aufstehen describes a change of state and takes sein; with ich the correct completion is bin aufgestanden.',
     },
     {
       id: 'ch27-ex-42',
@@ -934,7 +1004,8 @@ export const chapter027: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['sentence-completion', 'sein-vs-haben'],
-      instruction: 'Complete the sentence with the correct auxiliary and the past participle of the verb in brackets. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Complete the sentence with the correct auxiliary and the past participle of the verb in brackets. Capitalisation is checked; no full stop is required.',
       prompt: 'Der Unfall ___ vor der Schule ___. (passieren)',
       acceptedAnswers: ['ist passiert'],
       answerMode: 'normalized',
@@ -949,7 +1020,8 @@ export const chapter027: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['sentence-completion', 'sein-vs-haben'],
-      instruction: 'Complete the sentence with the correct auxiliary and the past participle of the verb in brackets. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Complete the sentence with the correct auxiliary and the past participle of the verb in brackets. Capitalisation is checked; no full stop is required.',
       prompt: 'Meine Schwester ___ Ärztin ___. (werden)',
       acceptedAnswers: ['ist geworden'],
       answerMode: 'normalized',
@@ -964,13 +1036,15 @@ export const chapter027: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['sentence-completion', 'default-haben'],
-      instruction: 'Complete the sentence with the correct auxiliary and the past participle of the verb in brackets. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Complete the sentence with the correct auxiliary and the past participle of the verb in brackets. Capitalisation is checked; no full stop is required.',
       prompt: 'Die Kinder ___ den ganzen Tag ___. (spielen)',
       acceptedAnswers: ['haben gespielt'],
       answerMode: 'normalized',
       placeholder: 'sind/haben ... ge...',
       maxLength: 25,
-      explanation: 'spielen is neither a movement nor a change-of-state verb, so it takes haben: haben gespielt.',
+      explanation:
+        'spielen is neither a movement nor a change-of-state verb, so it takes haben: haben gespielt.',
     },
     {
       id: 'ch27-ex-45',
@@ -979,13 +1053,18 @@ export const chapter027: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['sentence-formation', 'sein-vs-haben'],
-      instruction: 'Write a complete sentence in the present perfect using the cue words. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence in the present perfect using the cue words. Capitalisation is checked; no full stop is required.',
       prompt: 'wir – letztes Jahr – nach Kanada – reisen',
-      acceptedAnswers: ['Wir sind letztes Jahr nach Kanada gereist.', 'Wir sind letztes Jahr nach Kanada gereist'],
+      acceptedAnswers: [
+        'Wir sind letztes Jahr nach Kanada gereist.',
+        'Wir sind letztes Jahr nach Kanada gereist',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wir sind ...',
       maxLength: 50,
-      explanation: 'reisen describes movement to a destination and takes sein: Wir sind letztes Jahr nach Kanada gereist.',
+      explanation:
+        'reisen describes movement to a destination and takes sein: Wir sind letztes Jahr nach Kanada gereist.',
     },
     {
       id: 'ch27-ex-46',
@@ -994,7 +1073,8 @@ export const chapter027: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['word-order', 'sein-vs-haben'],
-      instruction: 'Put the segments in the correct order to build a sentence with the correct verb bracket.',
+      instruction:
+        'Put the segments in the correct order to build a sentence with the correct verb bracket.',
       prompt: 'ich / bin / gestern / ins Kino / gegangen',
       segments: [
         { id: 'ch27-ex46-s1', text: 'Ich' },
@@ -1003,7 +1083,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'ch27-ex46-s4', text: 'ins Kino' },
         { id: 'ch27-ex46-s5', text: 'gegangen' },
       ],
-      explanation: 'bin takes position 2 and the past participle gegangen closes the bracket at the very end: Ich bin gestern ins Kino gegangen.',
+      explanation:
+        'bin takes position 2 and the past participle gegangen closes the bracket at the very end: Ich bin gestern ins Kino gegangen.',
     },
     {
       id: 'ch27-ex-47',
@@ -1012,7 +1093,8 @@ export const chapter027: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['word-order', 'sein-vs-haben'],
-      instruction: 'Put the segments in the correct order to build a sentence with the correct verb bracket.',
+      instruction:
+        'Put the segments in the correct order to build a sentence with the correct verb bracket.',
       prompt: 'wir / sind / letztes Jahr / nach Italien / gereist',
       segments: [
         { id: 'ch27-ex47-s1', text: 'Wir' },
@@ -1021,7 +1103,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'ch27-ex47-s4', text: 'nach Italien' },
         { id: 'ch27-ex47-s5', text: 'gereist' },
       ],
-      explanation: 'sind takes position 2 and the past participle gereist closes the bracket at the very end: Wir sind letztes Jahr nach Italien gereist.',
+      explanation:
+        'sind takes position 2 and the past participle gereist closes the bracket at the very end: Wir sind letztes Jahr nach Italien gereist.',
     },
     {
       id: 'ch27-ex-48',
@@ -1030,7 +1113,8 @@ export const chapter027: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['word-order', 'sein-vs-haben'],
-      instruction: 'Put the segments in the correct order to build a sentence with the correct verb bracket.',
+      instruction:
+        'Put the segments in the correct order to build a sentence with the correct verb bracket.',
       prompt: 'er / ist / heute Morgen / früh / aufgewacht',
       segments: [
         { id: 'ch27-ex48-s1', text: 'Er' },
@@ -1039,7 +1123,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'ch27-ex48-s4', text: 'früh' },
         { id: 'ch27-ex48-s5', text: 'aufgewacht' },
       ],
-      explanation: 'ist takes position 2 and the past participle aufgewacht closes the bracket at the very end: Er ist heute Morgen früh aufgewacht.',
+      explanation:
+        'ist takes position 2 and the past participle aufgewacht closes the bracket at the very end: Er ist heute Morgen früh aufgewacht.',
     },
     {
       id: 'ch27-ex-49',
@@ -1048,7 +1133,8 @@ export const chapter027: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['word-order', 'sein-vs-haben'],
-      instruction: 'Put the segments in the correct order to build a sentence with the correct verb bracket.',
+      instruction:
+        'Put the segments in the correct order to build a sentence with the correct verb bracket.',
       prompt: 'die Kinder / sind / den ganzen Tag / im Garten / gelaufen',
       segments: [
         { id: 'ch27-ex49-s1', text: 'Die Kinder' },
@@ -1057,7 +1143,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'ch27-ex49-s4', text: 'im Garten' },
         { id: 'ch27-ex49-s5', text: 'gelaufen' },
       ],
-      explanation: 'sind takes position 2 and the past participle gelaufen closes the bracket at the very end: Die Kinder sind den ganzen Tag im Garten gelaufen.',
+      explanation:
+        'sind takes position 2 and the past participle gelaufen closes the bracket at the very end: Die Kinder sind den ganzen Tag im Garten gelaufen.',
     },
     {
       id: 'ch27-ex-50',
@@ -1066,7 +1153,8 @@ export const chapter027: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['word-order', 'sein-vs-haben'],
-      instruction: 'Put the segments in the correct order to build a sentence with the correct verb bracket.',
+      instruction:
+        'Put the segments in the correct order to build a sentence with the correct verb bracket.',
       prompt: 'meine Oma / ist / letzten Winter / gestorben',
       segments: [
         { id: 'ch27-ex50-s1', text: 'Meine Oma' },
@@ -1074,7 +1162,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'ch27-ex50-s3', text: 'letzten Winter' },
         { id: 'ch27-ex50-s4', text: 'gestorben' },
       ],
-      explanation: 'ist takes position 2 and the past participle gestorben closes the bracket at the very end: Meine Oma ist letzten Winter gestorben.',
+      explanation:
+        'ist takes position 2 and the past participle gestorben closes the bracket at the very end: Meine Oma ist letzten Winter gestorben.',
     },
     {
       id: 'ch27-ex-51',
@@ -1083,7 +1172,8 @@ export const chapter027: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'transfer',
       grammarFocus: ['word-order', 'sein-vs-haben'],
-      instruction: 'Put the segments in the correct order to build a sentence with the correct verb bracket.',
+      instruction:
+        'Put the segments in the correct order to build a sentence with the correct verb bracket.',
       prompt: 'wir / sind / am Wochenende / zu Hause / geblieben',
       segments: [
         { id: 'ch27-ex51-s1', text: 'Wir' },
@@ -1092,7 +1182,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'ch27-ex51-s4', text: 'zu Hause' },
         { id: 'ch27-ex51-s5', text: 'geblieben' },
       ],
-      explanation: 'sind takes position 2 and the past participle geblieben closes the bracket at the very end: Wir sind am Wochenende zu Hause geblieben.',
+      explanation:
+        'sind takes position 2 and the past participle geblieben closes the bracket at the very end: Wir sind am Wochenende zu Hause geblieben.',
     },
     {
       id: 'ch27-ex-52',
@@ -1101,7 +1192,8 @@ export const chapter027: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'transfer',
       grammarFocus: ['word-order', 'question-formation', 'sein-vs-haben'],
-      instruction: 'Put the segments in the correct order to build a question with the correct verb bracket.',
+      instruction:
+        'Put the segments in the correct order to build a question with the correct verb bracket.',
       prompt: 'was / ist / gestern Abend / passiert?',
       segments: [
         { id: 'ch27-ex52-s1', text: 'Was' },
@@ -1109,7 +1201,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'ch27-ex52-s3', text: 'gestern Abend' },
         { id: 'ch27-ex52-s4', text: 'passiert?' },
       ],
-      explanation: 'In a question with a question word, ist stands in position 2 and the past participle passiert closes the bracket at the very end: Was ist gestern Abend passiert?',
+      explanation:
+        'In a question with a question word, ist stands in position 2 and the past participle passiert closes the bracket at the very end: Was ist gestern Abend passiert?',
     },
     {
       id: 'ch27-ex-53',
@@ -1118,7 +1211,8 @@ export const chapter027: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'transfer',
       grammarFocus: ['word-order', 'sein-vs-haben'],
-      instruction: 'Put the segments in the correct order to build a sentence with the correct verb bracket.',
+      instruction:
+        'Put the segments in the correct order to build a sentence with the correct verb bracket.',
       prompt: 'sie / ist / nach dem Studium / Ärztin / geworden',
       segments: [
         { id: 'ch27-ex53-s1', text: 'Sie' },
@@ -1127,7 +1221,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'ch27-ex53-s4', text: 'Ärztin' },
         { id: 'ch27-ex53-s5', text: 'geworden' },
       ],
-      explanation: 'ist takes position 2 and the past participle geworden closes the bracket at the very end: Sie ist nach dem Studium Ärztin geworden.',
+      explanation:
+        'ist takes position 2 and the past participle geworden closes the bracket at the very end: Sie ist nach dem Studium Ärztin geworden.',
     },
     {
       id: 'ch27-ex-54',
@@ -1136,7 +1231,8 @@ export const chapter027: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'transfer',
       grammarFocus: ['word-order', 'sein-vs-haben'],
-      instruction: 'Put the segments in the correct order to build a sentence with the correct verb bracket.',
+      instruction:
+        'Put the segments in the correct order to build a sentence with the correct verb bracket.',
       prompt: 'wir / sind / gestern / mit dem Zug / gefahren',
       segments: [
         { id: 'ch27-ex54-s1', text: 'Wir' },
@@ -1145,7 +1241,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'ch27-ex54-s4', text: 'mit dem Zug' },
         { id: 'ch27-ex54-s5', text: 'gefahren' },
       ],
-      explanation: 'sind takes position 2 and the past participle gefahren closes the bracket at the very end: Wir sind gestern mit dem Zug gefahren.',
+      explanation:
+        'sind takes position 2 and the past participle gefahren closes the bracket at the very end: Wir sind gestern mit dem Zug gefahren.',
     },
     {
       id: 'ch27-ex-55',
@@ -1154,7 +1251,8 @@ export const chapter027: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['sein-vs-haben', 'movement'],
-      instruction: 'Fill in the auxiliary and the past participle that close the verb bracket.',
+      instruction:
+        'Fill in the auxiliary and the past participle that close the verb bracket.',
       prompt: 'Vervollständige den Satz: "Ich ___ gestern ins Kino ___." (gehen)',
       templateParts: ['Ich ', ' gestern ins Kino ', '.'],
       slots: [
@@ -1162,7 +1260,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'ch27-ex55-slot2', correctWord: 'gegangen' },
       ],
       wordBank: ['bin', 'gegangen', 'habe', 'gemacht'],
-      explanation: 'gehen describes movement to a destination and takes sein; with ich the correct forms are bin ... gegangen.',
+      explanation:
+        'gehen describes movement to a destination and takes sein; with ich the correct forms are bin ... gegangen.',
     },
     {
       id: 'ch27-ex-56',
@@ -1171,15 +1270,18 @@ export const chapter027: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['sein-vs-haben', 'movement'],
-      instruction: 'Fill in the auxiliary and the past participle that close the verb bracket.',
-      prompt: 'Vervollständige den Satz: "Wir ___ letztes Jahr nach Spanien ___." (fliegen)',
+      instruction:
+        'Fill in the auxiliary and the past participle that close the verb bracket.',
+      prompt:
+        'Vervollständige den Satz: "Wir ___ letztes Jahr nach Spanien ___." (fliegen)',
       templateParts: ['Wir ', ' letztes Jahr nach Spanien ', '.'],
       slots: [
         { id: 'ch27-ex56-slot1', correctWord: 'sind' },
         { id: 'ch27-ex56-slot2', correctWord: 'geflogen' },
       ],
       wordBank: ['sind', 'geflogen', 'haben', 'geflogt'],
-      explanation: 'fliegen with a destination takes sein; with wir the correct forms are sind ... geflogen.',
+      explanation:
+        'fliegen with a destination takes sein; with wir the correct forms are sind ... geflogen.',
     },
     {
       id: 'ch27-ex-57',
@@ -1188,7 +1290,8 @@ export const chapter027: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['sein-vs-haben', 'change-of-state'],
-      instruction: 'Fill in the auxiliary and the past participle that close the verb bracket.',
+      instruction:
+        'Fill in the auxiliary and the past participle that close the verb bracket.',
       prompt: 'Vervollständige den Satz: "Er ___ um sechs Uhr ___." (aufwachen)',
       templateParts: ['Er ', ' um sechs Uhr ', '.'],
       slots: [
@@ -1196,7 +1299,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'ch27-ex57-slot2', correctWord: 'aufgewacht' },
       ],
       wordBank: ['ist', 'aufgewacht', 'hat', 'aufgewachen'],
-      explanation: 'aufwachen is a change-of-state verb and takes sein; with er the correct forms are ist ... aufgewacht.',
+      explanation:
+        'aufwachen is a change-of-state verb and takes sein; with er the correct forms are ist ... aufgewacht.',
     },
     {
       id: 'ch27-ex-58',
@@ -1205,15 +1309,18 @@ export const chapter027: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['sein-vs-haben', 'change-of-state'],
-      instruction: 'Fill in the auxiliary and the past participle that close the verb bracket.',
-      prompt: 'Vervollständige den Satz: "Meine Großmutter ___ letztes Jahr ___." (sterben)',
+      instruction:
+        'Fill in the auxiliary and the past participle that close the verb bracket.',
+      prompt:
+        'Vervollständige den Satz: "Meine Großmutter ___ letztes Jahr ___." (sterben)',
       templateParts: ['Meine Großmutter ', ' letztes Jahr ', '.'],
       slots: [
         { id: 'ch27-ex58-slot1', correctWord: 'ist' },
         { id: 'ch27-ex58-slot2', correctWord: 'gestorben' },
       ],
       wordBank: ['ist', 'gestorben', 'hat', 'gesterbt'],
-      explanation: 'sterben is a change-of-state verb and always takes sein; the correct forms are ist ... gestorben.',
+      explanation:
+        'sterben is a change-of-state verb and always takes sein; the correct forms are ist ... gestorben.',
     },
     {
       id: 'ch27-ex-59',
@@ -1222,15 +1329,18 @@ export const chapter027: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['sein-vs-haben', 'exceptions'],
-      instruction: 'Fill in the auxiliary and the past participle that close the verb bracket.',
-      prompt: 'Vervollständige den Satz: "Wir ___ den ganzen Abend zu Hause ___." (bleiben)',
+      instruction:
+        'Fill in the auxiliary and the past participle that close the verb bracket.',
+      prompt:
+        'Vervollständige den Satz: "Wir ___ den ganzen Abend zu Hause ___." (bleiben)',
       templateParts: ['Wir ', ' den ganzen Abend zu Hause ', '.'],
       slots: [
         { id: 'ch27-ex59-slot1', correctWord: 'sind' },
         { id: 'ch27-ex59-slot2', correctWord: 'geblieben' },
       ],
       wordBank: ['sind', 'geblieben', 'haben', 'blieben'],
-      explanation: 'bleiben is an exception verb that takes sein; with wir the correct forms are sind ... geblieben.',
+      explanation:
+        'bleiben is an exception verb that takes sein; with wir the correct forms are sind ... geblieben.',
     },
     {
       id: 'ch27-ex-60',
@@ -1239,7 +1349,8 @@ export const chapter027: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'production',
       grammarFocus: ['sein-vs-haben', 'exceptions', 'question-formation'],
-      instruction: 'Fill in the auxiliary and the past participle that close the verb bracket.',
+      instruction:
+        'Fill in the auxiliary and the past participle that close the verb bracket.',
       prompt: 'Vervollständige die Frage: "Was ___ gestern ___?" (passieren)',
       templateParts: ['Was ', ' gestern ', '?'],
       slots: [
@@ -1247,7 +1358,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'ch27-ex60-slot2', correctWord: 'passiert' },
       ],
       wordBank: ['ist', 'passiert', 'hat', 'passiet'],
-      explanation: 'passieren is an exception verb that always takes sein; the correct forms are ist ... passiert.',
+      explanation:
+        'passieren is an exception verb that always takes sein; the correct forms are ist ... passiert.',
     },
     {
       id: 'ch27-ex-61',
@@ -1256,7 +1368,8 @@ export const chapter027: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'production',
       grammarFocus: ['sein-vs-haben', 'change-of-state'],
-      instruction: 'Fill in the auxiliary and the past participle that close the verb bracket.',
+      instruction:
+        'Fill in the auxiliary and the past participle that close the verb bracket.',
       prompt: 'Vervollständige den Satz: "Sie ___ Lehrerin ___." (werden)',
       templateParts: ['Sie ', ' Lehrerin ', '.'],
       slots: [
@@ -1264,7 +1377,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'ch27-ex61-slot2', correctWord: 'geworden' },
       ],
       wordBank: ['ist', 'geworden', 'hat', 'wurde'],
-      explanation: 'werden is a change-of-state verb and takes sein; with sie the correct forms are ist ... geworden.',
+      explanation:
+        'werden is a change-of-state verb and takes sein; with sie the correct forms are ist ... geworden.',
     },
     {
       id: 'ch27-ex-62',
@@ -1278,7 +1392,8 @@ export const chapter027: ChapterDefinition = {
       tokens: ['Ich', 'habe', 'nach', 'Hause', 'gegangen.'],
       errorTokenIndex: 1,
       correction: 'bin',
-      explanation: 'gehen describes movement to a destination and needs the auxiliary sein, not haben: bin, not habe.',
+      explanation:
+        'gehen describes movement to a destination and needs the auxiliary sein, not haben: bin, not habe.',
     },
     {
       id: 'ch27-ex-63',
@@ -1292,7 +1407,8 @@ export const chapter027: ChapterDefinition = {
       tokens: ['Er', 'hat', 'spät', 'gekommen.'],
       errorTokenIndex: 1,
       correction: 'ist',
-      explanation: 'kommen is a movement verb and always takes sein in the present perfect: ist, not hat.',
+      explanation:
+        'kommen is a movement verb and always takes sein in the present perfect: ist, not hat.',
     },
     {
       id: 'ch27-ex-64',
@@ -1306,7 +1422,8 @@ export const chapter027: ChapterDefinition = {
       tokens: ['Wir', 'haben', 'in', 'Berlin', 'geblieben.'],
       errorTokenIndex: 1,
       correction: 'sind',
-      explanation: 'bleiben is an exception verb that takes sein, even though it does not describe movement: sind, not haben.',
+      explanation:
+        'bleiben is an exception verb that takes sein, even though it does not describe movement: sind, not haben.',
     },
     {
       id: 'ch27-ex-65',
@@ -1320,7 +1437,8 @@ export const chapter027: ChapterDefinition = {
       tokens: ['Ich', 'bin', 'das', 'Auto', 'gefahren.'],
       errorTokenIndex: 1,
       correction: 'habe',
-      explanation: 'With a direct object (das Auto), fahren describes what was driven, not the subject moving to a destination, so it needs haben, not sein: habe, not bin.',
+      explanation:
+        'With a direct object (das Auto), fahren describes what was driven, not the subject moving to a destination, so it needs haben, not sein: habe, not bin.',
     },
     {
       id: 'ch27-ex-66',
@@ -1339,7 +1457,8 @@ export const chapter027: ChapterDefinition = {
         { id: 'p5', left: 'sterben', right: 'gestorben' },
         { id: 'p6', left: 'bleiben', right: 'geblieben' },
       ],
-      explanation: 'All of these verbs take sein in the present perfect; the past participle shows the change from infinitive to the ge-...-en/-t form.',
+      explanation:
+        'All of these verbs take sein in the present perfect; the past participle shows the change from infinitive to the ge-...-en/-t form.',
     },
   ],
 };

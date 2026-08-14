@@ -2,7 +2,11 @@ import { describe, expect, it } from 'vitest';
 import { buildCumulativeExerciseIds } from './cumulativeSession';
 import type { ChapterDefinition } from '../../schemas/chapterSchema';
 import type { ExerciseHistory } from '../../schemas/progressSchema';
-import { makeChapter, makeSingleChoice, makeTextInput } from '../../test/fixtures/chapterFixture';
+import {
+  makeChapter,
+  makeSingleChoice,
+  makeTextInput,
+} from '../../test/fixtures/chapterFixture';
 
 /** Deterministic pseudo-random source so shuffling can be asserted. */
 function sequenceRandom(values: number[]): () => number {
@@ -13,7 +17,10 @@ function sequenceRandom(values: number[]): () => number {
 function makeNumberedChapter(number: number): ChapterDefinition {
   const exercises = [
     ...Array.from({ length: 12 }, (_unused, index) =>
-      makeSingleChoice(index + 1, { id: `ch${number}-ex-${index + 1}`, chapterNumber: number }),
+      makeSingleChoice(index + 1, {
+        id: `ch${number}-ex-${index + 1}`,
+        chapterNumber: number,
+      }),
     ),
     ...Array.from({ length: 12 }, (_unused, index) =>
       makeTextInput(index + 13, {
@@ -48,6 +55,8 @@ describe('buildCumulativeExerciseIds', () => {
     const dueHistory: ExerciseHistory = {
       exerciseId: 'ch21-ex-1',
       chapterNumber: 21,
+      grammarFocus: [],
+      hasBeenWrong: true,
       timesAnswered: 1,
       timesCorrect: 0,
       timesIncorrect: 1,
@@ -71,6 +80,8 @@ describe('buildCumulativeExerciseIds', () => {
     const outsideHistory: ExerciseHistory = {
       exerciseId: 'ch99-ex-1',
       chapterNumber: 99,
+      grammarFocus: [],
+      hasBeenWrong: true,
       timesAnswered: 1,
       timesCorrect: 0,
       timesIncorrect: 1,

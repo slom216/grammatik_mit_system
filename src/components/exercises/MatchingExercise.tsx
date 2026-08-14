@@ -78,6 +78,9 @@ export function MatchingExercise({
                     .filter(Boolean)
                     .join(' ')}
                   disabled={disabled}
+                  // Selection is otherwise carried by colour alone, which a
+                  // screen reader cannot report back.
+                  aria-pressed={selectedLeft === pair.id}
                   onClick={() => (isMatched ? clearPair(pair.id) : selectLeft(pair.id))}
                   lang="de"
                 >

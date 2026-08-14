@@ -60,7 +60,7 @@ export const chapter053: ChapterDefinition = {
         heading: 'Compounds: hierher, dorthin, daher, dahin',
         paragraphs: [
           'hier, da, and dort combine with hin and her to build four very common compound adverbs that pack both a location and a direction into a single word: hierher (to here, toward the speaker), dorthin (to there, away from the speaker), daher (from there, toward the speaker), and dahin (to there, away from the speaker).',
-          'Kannst du bitte hierher kommen? (Can you please come here?) Wir fahren morgen dorthin, wo meine Großeltern wohnen. (We\'re driving there tomorrow, to where my grandparents live.) Notice that the second half of the compound, not the first, tells you the direction: hierher and daher both point toward the speaker because they end in -her, while dorthin and dahin both point away because they end in -hin.',
+          "Kannst du bitte hierher kommen? (Can you please come here?) Wir fahren morgen dorthin, wo meine Großeltern wohnen. (We're driving there tomorrow, to where my grandparents live.) Notice that the second half of the compound, not the first, tells you the direction: hierher and daher both point toward the speaker because they end in -her, while dorthin and dahin both point away because they end in -hin.",
           'dahin and dorthin are close in meaning and often interchangeable; dahin leans on da (a place already established in the conversation), while dorthin leans on dort (a place understood as more clearly separate). Both are far more natural in everyday speech than a bare hin or her standing with no location word at all.',
         ],
       },
@@ -68,7 +68,7 @@ export const chapter053: ChapterDefinition = {
         id: 'ch53-rule-04',
         heading: 'drinnen, draußen, oben, unten: further position adverbs',
         paragraphs: [
-          'Four more adverbs round out the system for describing where something is (wo?), with no sense of movement: drinnen (inside), draußen (outside), oben (up, upstairs, above), and unten (down, downstairs, below). Draußen ist es kalt, aber drinnen ist es warm. (It\'s cold outside, but it\'s warm inside.) Meine Wohnung ist ganz oben, der Keller ist unten. (My apartment is right at the top, the cellar is downstairs.)',
+          "Four more adverbs round out the system for describing where something is (wo?), with no sense of movement: drinnen (inside), draußen (outside), oben (up, upstairs, above), and unten (down, downstairs, below). Draußen ist es kalt, aber drinnen ist es warm. (It's cold outside, but it's warm inside.) Meine Wohnung ist ganz oben, der Keller ist unten. (My apartment is right at the top, the cellar is downstairs.)",
           'Like hier, da, and dort, these four are pure location adverbs — they answer wo?, not wohin?. To turn them into a destination, German adds nach (nach draußen, nach oben) rather than using the plain adverb with a verb of motion.',
           'You will also meet dedicated hin-/her- compound verb prefixes built on the same pattern for direction — hinaus/heraus (out), hinein/herein (in), hinauf/herauf (up), hinunter/herunter (down) — but at this level it is enough to recognize that a bare drinnen, draußen, oben, or unten never expresses movement by itself.',
         ],
@@ -78,7 +78,7 @@ export const chapter053: ChapterDefinition = {
         heading: 'Word order: where hin, her, and their compounds go',
         paragraphs: [
           'In relaxed spoken German, hin and her are very often detached from wohin? and woher? and moved to the end of the sentence, leaving a bare wo? at the front: Wo gehst du hin? and Wo kommst du her?. Both the split and the intact form (Wohin gehst du?, Woher kommst du?) are correct; the split form is extremely common in everyday conversation.',
-          'The compounds hierher, dorthin, daher, and dahin behave like ordinary adverbs and can also open the sentence for emphasis, taking the first position before the verb: Dorthin fahre ich nie wieder! (I\'m never driving there again!) Hierher kommt so schnell keiner. (Nobody gets here that fast.)',
+          "The compounds hierher, dorthin, daher, and dahin behave like ordinary adverbs and can also open the sentence for emphasis, taking the first position before the verb: Dorthin fahre ich nie wieder! (I'm never driving there again!) Hierher kommt so schnell keiner. (Nobody gets here that fast.)",
           'A bare hin or her, however, is not used alone at the front of a sentence — it needs to be attached to a verb (hingehen, herkommen) or combined with a location word first, as in the compounds above.',
         ],
       },
@@ -86,7 +86,7 @@ export const chapter053: ChapterDefinition = {
         id: 'ch53-rule-06',
         heading: 'Choosing hin vs. her from context and dialogue',
         paragraphs: [
-          'Because hin and her depend entirely on the speaker\'s own position, you often cannot tell which one is correct from a single isolated sentence — you need to know where the speaker is standing relative to the place or person being talked about.',
+          "Because hin and her depend entirely on the speaker's own position, you often cannot tell which one is correct from a single isolated sentence — you need to know where the speaker is standing relative to the place or person being talked about.",
           'In conversation, this becomes clear from what was just said. If someone tells you they are somewhere and asks you to join them, her (or a her-compound like hierher) fits, since you would be moving toward them. If someone asks you to go check on something happening elsewhere, hin (or a hin-compound like hin, dorthin, or dahin) fits, since the motion described moves away from the current speaker.',
           'Practicing hin and her inside short dialogues, rather than single sentences, is the best way to build a feel for this — many of the exercises in this chapter use short exchanges for exactly that reason.',
         ],
@@ -95,7 +95,7 @@ export const chapter053: ChapterDefinition = {
         id: 'ch53-rule-07',
         heading: 'Connecting back to wo?, wohin?, and woher?',
         paragraphs: [
-          'This chapter\'s adverbs answer the same three question words you already know from Chapters 37–39. hier, da, dort, drinnen, draußen, oben, and unten answer wo? (Wo bist du? — Ich bin hier. / Ich bin draußen.). dorthin, hierher, and hin/her themselves answer wohin? or woher? (Wohin gehst du? — Ich gehe dorthin. Woher kommst du? — Ich komme daher.)',
+          "This chapter's adverbs answer the same three question words you already know from Chapters 37–39. hier, da, dort, drinnen, draußen, oben, and unten answer wo? (Wo bist du? — Ich bin hier. / Ich bin draußen.). dorthin, hierher, and hin/her themselves answer wohin? or woher? (Wohin gehst du? — Ich gehe dorthin. Woher kommst du? — Ich komme daher.)",
           'Just as with the prepositions in Chapters 37–39, the underlying logic never changes: a fixed location (wo?), a destination (wohin?), or an origin (woher?) — only now the answer is a single adverb instead of a preposition plus a noun.',
         ],
       },
@@ -106,7 +106,7 @@ export const chapter053: ChapterDefinition = {
         title: 'Location adverbs: hier, da, dort, drinnen, draußen, oben, unten',
         columns: ['Adverb', 'Meaning', 'Example'],
         rows: [
-          ['hier', 'here (at the speaker\'s location)', 'Ich bin hier.'],
+          ['hier', "here (at the speaker's location)", 'Ich bin hier.'],
           ['da', 'there (nearby, or already mentioned)', 'Ist da jemand?'],
           ['dort', 'there (farther away, clearly separate)', 'Dort drüben ist die Post.'],
           ['drinnen', 'inside', 'Die Kinder spielen drinnen.'],
@@ -121,7 +121,11 @@ export const chapter053: ChapterDefinition = {
         title: 'hin and her: patterns for direction relative to the speaker',
         columns: ['Pattern', 'Function', 'Example'],
         rows: [
-          ['hin', 'motion away from the speaker/reference point', 'Geh hin und frag ihn!'],
+          [
+            'hin',
+            'motion away from the speaker/reference point',
+            'Geh hin und frag ihn!',
+          ],
           ['her', 'motion toward the speaker/reference point', 'Komm sofort her!'],
           ['wo ... hin (split)', 'colloquial splitting of wohin?', 'Wo gehst du hin?'],
           ['wo ... her (split)', 'colloquial splitting of woher?', 'Wo kommst du her?'],
@@ -135,8 +139,18 @@ export const chapter053: ChapterDefinition = {
         rows: [
           ['hierher', 'hier + her', 'to here (toward the speaker)', 'Komm hierher!'],
           ['dorthin', 'dort + hin', 'to there (away from the speaker)', 'Geh dorthin!'],
-          ['daher', 'da + her', 'from there (toward the speaker)', 'Er kommt genau daher.'],
-          ['dahin', 'da + hin', 'to there (away from the speaker)', 'Der Weg führt dahin.'],
+          [
+            'daher',
+            'da + her',
+            'from there (toward the speaker)',
+            'Er kommt genau daher.',
+          ],
+          [
+            'dahin',
+            'da + hin',
+            'to there (away from the speaker)',
+            'Der Weg führt dahin.',
+          ],
         ],
         note: 'The second half of the compound (-her or -hin) always tells you the direction relative to the speaker.',
       },
@@ -152,23 +166,26 @@ export const chapter053: ChapterDefinition = {
         german: 'Siehst du das Schloss dort drüben, ganz weit weg?',
         english: 'Do you see the castle over there, far away?',
         highlight: ['dort'],
-        explanation: 'dort is used for a place clearly separate from the speaker, often with a visible distance.',
+        explanation:
+          'dort is used for a place clearly separate from the speaker, often with a visible distance.',
       },
       {
         german: 'Es hat geklopft. Ist da jemand?',
         english: 'Someone knocked. Is anyone there?',
         highlight: ['da'],
-        explanation: 'da is the natural choice for a place that is close by or not sharply distinguished from hier.',
+        explanation:
+          'da is the natural choice for a place that is close by or not sharply distinguished from hier.',
       },
       {
         german: 'Bleib hier, ich bin gleich wieder da!',
-        english: 'Stay here, I\'ll be right back!',
+        english: "Stay here, I'll be right back!",
         highlight: ['da'],
-        explanation: 'da is used idiomatically here to mean "present/available", not a specific place.',
+        explanation:
+          'da is used idiomatically here to mean "present/available", not a specific place.',
       },
       {
         german: 'Komm her, ich zeige dir etwas!',
-        english: 'Come here, I\'ll show you something!',
+        english: "Come here, I'll show you something!",
         highlight: ['her'],
         explanation: 'her marks motion toward the speaker.',
       },
@@ -182,19 +199,22 @@ export const chapter053: ChapterDefinition = {
         german: 'Kannst du bitte hierher kommen? Ich brauche deine Hilfe.',
         english: 'Can you please come here? I need your help.',
         highlight: ['hierher'],
-        explanation: 'hierher combines hier and her: a destination that is the speaker\'s own location.',
+        explanation:
+          "hierher combines hier and her: a destination that is the speaker's own location.",
       },
       {
         german: 'Wir fahren morgen dorthin, wo meine Großeltern wohnen.',
         english: 'We are driving there tomorrow, to where my grandparents live.',
         highlight: ['dorthin'],
-        explanation: 'dorthin combines dort and hin: a destination away from the speaker.',
+        explanation:
+          'dorthin combines dort and hin: a destination away from the speaker.',
       },
       {
         german: 'Er kommt genau daher, wo die Musik spielt.',
         english: 'He is coming exactly from where the music is playing.',
         highlight: ['daher'],
-        explanation: 'daher combines da and her: an origin, with motion toward the speaker.',
+        explanation:
+          'daher combines da and her: an origin, with motion toward the speaker.',
       },
       {
         german: 'Der Wanderweg führt genau dahin, wo der Wasserfall ist.',
@@ -206,19 +226,22 @@ export const chapter053: ChapterDefinition = {
         german: 'Draußen ist es kalt, aber drinnen ist es warm.',
         english: 'It is cold outside, but it is warm inside.',
         highlight: ['draußen', 'drinnen'],
-        explanation: 'draußen and drinnen are pure location adverbs describing where something is, not movement.',
+        explanation:
+          'draußen and drinnen are pure location adverbs describing where something is, not movement.',
       },
       {
         german: 'Meine Wohnung ist ganz oben, der Keller ist unten.',
         english: 'My apartment is right at the top, the cellar is downstairs.',
         highlight: ['oben', 'unten'],
-        explanation: 'oben and unten describe vertical position, again with no sense of movement.',
+        explanation:
+          'oben and unten describe vertical position, again with no sense of movement.',
       },
       {
         german: 'Wo gehst du hin? – Ich gehe ins Kino.',
         english: 'Where are you going? – I am going to the cinema.',
         highlight: ['hin'],
-        explanation: 'In casual speech, wohin? is often split, with hin moved to the end of the sentence.',
+        explanation:
+          'In casual speech, wohin? is often split, with hin moved to the end of the sentence.',
       },
       {
         german: 'Wo kommst du her? – Ich komme aus der Schule.',
@@ -231,32 +254,39 @@ export const chapter053: ChapterDefinition = {
       {
         incorrect: 'Komm hin!',
         correct: 'Komm her!',
-        explanation: 'When asking someone to approach you, use her (toward the speaker); hin would mean moving away, which contradicts the request to come closer.',
+        explanation:
+          'When asking someone to approach you, use her (toward the speaker); hin would mean moving away, which contradicts the request to come closer.',
       },
       {
         incorrect: 'Geh her!',
         correct: 'Geh hin!',
-        explanation: 'When sending someone away from your own location, use hin; her would mean toward the speaker, the opposite of "go there".',
+        explanation:
+          'When sending someone away from your own location, use hin; her would mean toward the speaker, the opposite of "go there".',
       },
       {
         incorrect: 'Komm dahin!',
         correct: 'Komm hierher!',
-        explanation: 'dahin points away from the speaker, so it cannot be combined with an invitation to approach; use a her-compound like hierher instead.',
+        explanation:
+          'dahin points away from the speaker, so it cannot be combined with an invitation to approach; use a her-compound like hierher instead.',
       },
       {
-        incorrect: 'Dort ist mein Buch. (said while pointing at the book right next to the speaker)',
+        incorrect:
+          'Dort ist mein Buch. (said while pointing at the book right next to the speaker)',
         correct: 'Hier ist mein Buch.',
-        explanation: 'dort implies a place clearly separate from the speaker; something within arm\'s reach should be hier, not dort.',
+        explanation:
+          "dort implies a place clearly separate from the speaker; something within arm's reach should be hier, not dort.",
       },
       {
         incorrect: 'Wo gehst du her?',
         correct: 'Wo gehst du hin?',
-        explanation: 'her belongs to woher? (origin); hin belongs to wohin? (destination). Swapping them reverses the question\'s meaning.',
+        explanation:
+          "her belongs to woher? (origin); hin belongs to wohin? (destination). Swapping them reverses the question's meaning.",
       },
       {
         incorrect: 'Er geht draußen.',
         correct: 'Er geht nach draußen.',
-        explanation: 'draußen is a pure location adverb (wo?); to express movement (wohin?) German needs nach draußen, not draußen alone.',
+        explanation:
+          'draußen is a pure location adverb (wo?); to express movement (wohin?) German needs nach draußen, not draußen alone.',
       },
     ],
     remember: [
@@ -308,7 +338,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'd', text: 'her' },
       ],
       correctOptionId: 'a',
-      explanation: 'dort is used for a place clearly separate from the speaker, especially with a visible distance ("drüben, weit weg").',
+      explanation:
+        'dort is used for a place clearly separate from the speaker, especially with a visible distance ("drüben, weit weg").',
     },
     {
       id: 'ch53-ex-03',
@@ -326,7 +357,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'd', text: 'her' },
       ],
       correctOptionId: 'a',
-      explanation: 'Ist da jemand? is the standard phrase for asking whether someone is there, e.g. after a knock at the door.',
+      explanation:
+        'Ist da jemand? is the standard phrase for asking whether someone is there, e.g. after a knock at the door.',
     },
     {
       id: 'ch53-ex-04',
@@ -380,7 +412,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'd', text: 'dahin' },
       ],
       correctOptionId: 'a',
-      explanation: 'hierher (hier + her) is a destination that is the speaker\'s own location — the natural choice for calling someone over.',
+      explanation:
+        "hierher (hier + her) is a destination that is the speaker's own location — the natural choice for calling someone over.",
     },
     {
       id: 'ch53-ex-07',
@@ -398,7 +431,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'd', text: 'her' },
       ],
       correctOptionId: 'a',
-      explanation: 'dorthin (dort + hin) is a destination away from the speaker, matching a place the grandparents live rather than the speaker.',
+      explanation:
+        'dorthin (dort + hin) is a destination away from the speaker, matching a place the grandparents live rather than the speaker.',
     },
     {
       id: 'ch53-ex-08',
@@ -416,7 +450,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'd', text: 'unten' },
       ],
       correctOptionId: 'a',
-      explanation: 'When it is raining, staying inside is drinnen; draußen would mean staying outside in the rain.',
+      explanation:
+        'When it is raining, staying inside is drinnen; draußen would mean staying outside in the rain.',
     },
     {
       id: 'ch53-ex-09',
@@ -452,7 +487,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'd', text: 'dort' },
       ],
       correctOptionId: 'a',
-      explanation: 'Wo ... hin? is the colloquial split form of wohin?, asking about a destination.',
+      explanation:
+        'Wo ... hin? is the colloquial split form of wohin?, asking about a destination.',
     },
     {
       id: 'ch53-ex-11',
@@ -470,7 +506,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'd', text: 'dort' },
       ],
       correctOptionId: 'a',
-      explanation: 'Wo ... her? is the colloquial split form of woher?, asking about an origin.',
+      explanation:
+        'Wo ... her? is the colloquial split form of woher?, asking about an origin.',
     },
     {
       id: 'ch53-ex-12',
@@ -479,11 +516,16 @@ export const chapter053: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['her', 'speaker-perspective', 'dialogue'],
-      instruction: 'Read the exchange, then choose the adverb that fits the speaker\'s perspective.',
+      instruction:
+        "Read the exchange, then choose the adverb that fits the speaker's perspective.",
       prompt: 'Complete: "Kannst du bitte ___ kommen?"',
       dialogue: [
         { speaker: 'Mama', german: 'Ich bin im Garten.', english: 'I am in the garden.' },
-        { speaker: 'Mama', german: 'Kannst du bitte ___ kommen?', english: 'Can you please come here?' },
+        {
+          speaker: 'Mama',
+          german: 'Kannst du bitte ___ kommen?',
+          english: 'Can you please come here?',
+        },
       ],
       options: [
         { id: 'a', text: 'her' },
@@ -492,7 +534,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'd', text: 'dort' },
       ],
       correctOptionId: 'a',
-      explanation: 'Mama is asking the child to move toward her own location, so her is correct.',
+      explanation:
+        'Mama is asking the child to move toward her own location, so her is correct.',
     },
     {
       id: 'ch53-ex-13',
@@ -501,11 +544,20 @@ export const chapter053: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['hin', 'speaker-perspective', 'dialogue'],
-      instruction: 'Read the exchange, then choose the adverb that fits the speaker\'s perspective.',
+      instruction:
+        "Read the exchange, then choose the adverb that fits the speaker's perspective.",
       prompt: 'Complete: "Okay, ich gehe gleich ___."',
       dialogue: [
-        { speaker: 'Jonas', german: 'Kannst du zu Frau Klein gehen? Ich glaube, sie braucht Hilfe.', english: 'Can you go to Mrs. Klein? I think she needs help.' },
-        { speaker: 'Lisa', german: 'Okay, ich gehe gleich ___.', english: 'Okay, I will go there right away.' },
+        {
+          speaker: 'Jonas',
+          german: 'Kannst du zu Frau Klein gehen? Ich glaube, sie braucht Hilfe.',
+          english: 'Can you go to Mrs. Klein? I think she needs help.',
+        },
+        {
+          speaker: 'Lisa',
+          german: 'Okay, ich gehe gleich ___.',
+          english: 'Okay, I will go there right away.',
+        },
       ],
       options: [
         { id: 'a', text: 'hin' },
@@ -514,7 +566,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'd', text: 'dort' },
       ],
       correctOptionId: 'a',
-      explanation: 'Lisa is moving away from her own current position toward Frau Klein, so hin is correct.',
+      explanation:
+        'Lisa is moving away from her own current position toward Frau Klein, so hin is correct.',
     },
     {
       id: 'ch53-ex-14',
@@ -523,11 +576,20 @@ export const chapter053: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['hierher', 'speaker-perspective', 'dialogue'],
-      instruction: 'Read the exchange, then choose the compound adverb that fits the speaker\'s perspective.',
+      instruction:
+        "Read the exchange, then choose the compound adverb that fits the speaker's perspective.",
       prompt: 'Complete: "Komm doch ___, wir haben noch einen Platz frei!"',
       dialogue: [
-        { speaker: 'Anna', german: 'Ich sitze im Café am Marktplatz.', english: 'I am sitting in the café at the market square.' },
-        { speaker: 'Anna', german: 'Komm doch ___, wir haben noch einen Platz frei!', english: 'Do come here, we still have a free seat!' },
+        {
+          speaker: 'Anna',
+          german: 'Ich sitze im Café am Marktplatz.',
+          english: 'I am sitting in the café at the market square.',
+        },
+        {
+          speaker: 'Anna',
+          german: 'Komm doch ___, wir haben noch einen Platz frei!',
+          english: 'Do come here, we still have a free seat!',
+        },
       ],
       options: [
         { id: 'a', text: 'hierher' },
@@ -536,7 +598,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'd', text: 'her' },
       ],
       correctOptionId: 'a',
-      explanation: 'Anna wants Tom to come to where she is, so the destination compound pointing toward the speaker, hierher, is correct.',
+      explanation:
+        'Anna wants Tom to come to where she is, so the destination compound pointing toward the speaker, hierher, is correct.',
     },
     {
       id: 'ch53-ex-15',
@@ -545,11 +608,20 @@ export const chapter053: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['dahin', 'wohin', 'relative-clause', 'dialogue'],
-      instruction: 'Read the exchange, then choose the compound adverb that fits the answer.',
+      instruction:
+        'Read the exchange, then choose the compound adverb that fits the answer.',
       prompt: 'Complete: "Der Zug fährt ___, wo die Messe stattfindet."',
       dialogue: [
-        { speaker: 'Paul', german: 'Wohin fährt der Zug um zehn Uhr?', english: 'Where does the ten o\'clock train go?' },
-        { speaker: 'Schaffner', german: 'Der Zug fährt ___, wo die Messe stattfindet.', english: 'The train goes there, to where the trade fair is taking place.' },
+        {
+          speaker: 'Paul',
+          german: 'Wohin fährt der Zug um zehn Uhr?',
+          english: "Where does the ten o'clock train go?",
+        },
+        {
+          speaker: 'Schaffner',
+          german: 'Der Zug fährt ___, wo die Messe stattfindet.',
+          english: 'The train goes there, to where the trade fair is taking place.',
+        },
       ],
       options: [
         { id: 'a', text: 'dahin' },
@@ -558,7 +630,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'd', text: 'her' },
       ],
       correctOptionId: 'a',
-      explanation: 'The train\'s destination is away from the speaker (the conductor), so the hin-compound dahin fits, paired with a relative clause "wo ...".',
+      explanation:
+        'The train\'s destination is away from the speaker (the conductor), so the hin-compound dahin fits, paired with a relative clause "wo ...".',
     },
     {
       id: 'ch53-ex-16',
@@ -567,11 +640,20 @@ export const chapter053: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['draussen', 'direction-vs-location', 'dialogue'],
-      instruction: 'Read the exchange, then choose the phrase that correctly expresses movement.',
+      instruction:
+        'Read the exchange, then choose the phrase that correctly expresses movement.',
       prompt: 'Complete: "Lass ihn doch ___ gehen!"',
       dialogue: [
-        { speaker: 'Opa', german: 'Der Hund möchte nicht mehr drinnen bleiben.', english: 'The dog does not want to stay inside anymore.' },
-        { speaker: 'Opa', german: 'Lass ihn doch ___ gehen!', english: 'Just let him go outside!' },
+        {
+          speaker: 'Opa',
+          german: 'Der Hund möchte nicht mehr drinnen bleiben.',
+          english: 'The dog does not want to stay inside anymore.',
+        },
+        {
+          speaker: 'Opa',
+          german: 'Lass ihn doch ___ gehen!',
+          english: 'Just let him go outside!',
+        },
       ],
       options: [
         { id: 'a', text: 'nach draußen' },
@@ -580,7 +662,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'd', text: 'drinnen' },
       ],
       correctOptionId: 'a',
-      explanation: 'draußen alone is a pure location adverb; expressing movement to the outside (wohin?) requires nach draußen.',
+      explanation:
+        'draußen alone is a pure location adverb; expressing movement to the outside (wohin?) requires nach draußen.',
     },
     {
       id: 'ch53-ex-17',
@@ -595,7 +678,7 @@ export const chapter053: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'hier',
       maxLength: 10,
-      explanation: 'Something within arm\'s reach of the speaker is described with hier.',
+      explanation: "Something within arm's reach of the speaker is described with hier.",
     },
     {
       id: 'ch53-ex-18',
@@ -610,7 +693,8 @@ export const chapter053: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dort',
       maxLength: 10,
-      explanation: 'dort fits a place clearly separate from the speaker, here emphasized by drüben (over there).',
+      explanation:
+        'dort fits a place clearly separate from the speaker, here emphasized by drüben (over there).',
     },
     {
       id: 'ch53-ex-19',
@@ -625,7 +709,8 @@ export const chapter053: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'da',
       maxLength: 10,
-      explanation: 'Ist da jemand? is the standard phrase for checking whether someone is present nearby.',
+      explanation:
+        'Ist da jemand? is the standard phrase for checking whether someone is present nearby.',
     },
     {
       id: 'ch53-ex-20',
@@ -634,17 +719,27 @@ export const chapter053: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['her', 'speaker-perspective', 'dialogue'],
-      instruction: 'Read the exchange and fill in the missing adverb. Capitalisation is not checked.',
+      instruction:
+        'Read the exchange and fill in the missing adverb. Capitalisation is not checked.',
       prompt: 'Complete: "Komm doch ___, das Spiel fängt gleich an!"',
       dialogue: [
-        { speaker: 'Tim', german: 'Ich bin gerade im Wohnzimmer.', english: 'I am currently in the living room.' },
-        { speaker: 'Tim', german: 'Komm doch ___, das Spiel fängt gleich an!', english: 'Come here, the game is about to start!' },
+        {
+          speaker: 'Tim',
+          german: 'Ich bin gerade im Wohnzimmer.',
+          english: 'I am currently in the living room.',
+        },
+        {
+          speaker: 'Tim',
+          german: 'Komm doch ___, das Spiel fängt gleich an!',
+          english: 'Come here, the game is about to start!',
+        },
       ],
       acceptedAnswers: ['her'],
       answerMode: 'caseInsensitive',
       placeholder: 'her',
       maxLength: 10,
-      explanation: 'Tim is inviting the listener to join him, so her (toward the speaker) is correct.',
+      explanation:
+        'Tim is inviting the listener to join him, so her (toward the speaker) is correct.',
     },
     {
       id: 'ch53-ex-21',
@@ -653,17 +748,27 @@ export const chapter053: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['hin', 'speaker-perspective', 'dialogue'],
-      instruction: 'Read the exchange and fill in the missing adverb. Capitalisation is not checked.',
+      instruction:
+        'Read the exchange and fill in the missing adverb. Capitalisation is not checked.',
       prompt: 'Complete: "Geh bitte schnell ___ und hol das Paket!"',
       dialogue: [
-        { speaker: 'Frau Meier', german: 'Der Postbote wartet unten an der Tür.', english: 'The mailman is waiting downstairs at the door.' },
-        { speaker: 'Frau Meier', german: 'Geh bitte schnell ___ und hol das Paket!', english: 'Please go there quickly and get the package!' },
+        {
+          speaker: 'Frau Meier',
+          german: 'Der Postbote wartet unten an der Tür.',
+          english: 'The mailman is waiting downstairs at the door.',
+        },
+        {
+          speaker: 'Frau Meier',
+          german: 'Geh bitte schnell ___ und hol das Paket!',
+          english: 'Please go there quickly and get the package!',
+        },
       ],
       acceptedAnswers: ['hin'],
       answerMode: 'caseInsensitive',
       placeholder: 'hin',
       maxLength: 10,
-      explanation: 'Frau Meier is sending the listener away from her own position, so hin is correct.',
+      explanation:
+        'Frau Meier is sending the listener away from her own position, so hin is correct.',
     },
     {
       id: 'ch53-ex-22',
@@ -678,7 +783,8 @@ export const chapter053: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'hierher',
       maxLength: 15,
-      explanation: 'hierher (hier + her) expresses a destination that is the speaker\'s own location.',
+      explanation:
+        "hierher (hier + her) expresses a destination that is the speaker's own location.",
     },
     {
       id: 'ch53-ex-23',
@@ -688,7 +794,8 @@ export const chapter053: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['dorthin', 'compounds'],
       instruction: 'Fill in the missing compound adverb. Capitalisation is not checked.',
-      prompt: 'Meine Freunde fahren an die Nordsee, und ich möchte auch gern einmal ___ fahren.',
+      prompt:
+        'Meine Freunde fahren an die Nordsee, und ich möchte auch gern einmal ___ fahren.',
       acceptedAnswers: ['dorthin'],
       answerMode: 'caseInsensitive',
       placeholder: 'dorthin',
@@ -708,7 +815,8 @@ export const chapter053: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'daher',
       maxLength: 15,
-      explanation: 'daher (da + her) expresses an origin, with motion toward the speaker.',
+      explanation:
+        'daher (da + her) expresses an origin, with motion toward the speaker.',
     },
     {
       id: 'ch53-ex-25',
@@ -738,7 +846,8 @@ export const chapter053: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'draußen',
       maxLength: 15,
-      explanation: 'draußen describes the location outside, contrasted here with the warm indoors.',
+      explanation:
+        'draußen describes the location outside, contrasted here with the warm indoors.',
     },
     {
       id: 'ch53-ex-27',
@@ -762,17 +871,27 @@ export const chapter053: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['hin', 'wohin-split', 'dialogue'],
-      instruction: 'Read the exchange and fill in the missing word. Capitalisation is not checked.',
+      instruction:
+        'Read the exchange and fill in the missing word. Capitalisation is not checked.',
       prompt: 'Complete: "Wo gehst du denn ___?"',
       dialogue: [
-        { speaker: 'Nina', german: 'Ich muss gleich los.', english: 'I need to leave soon.' },
-        { speaker: 'Ben', german: 'Wo gehst du denn ___?', english: 'So where are you going?' },
+        {
+          speaker: 'Nina',
+          german: 'Ich muss gleich los.',
+          english: 'I need to leave soon.',
+        },
+        {
+          speaker: 'Ben',
+          german: 'Wo gehst du denn ___?',
+          english: 'So where are you going?',
+        },
       ],
       acceptedAnswers: ['hin'],
       answerMode: 'caseInsensitive',
       placeholder: 'hin',
       maxLength: 10,
-      explanation: 'Wo ... hin? is the colloquial split of wohin?, asking about a destination.',
+      explanation:
+        'Wo ... hin? is the colloquial split of wohin?, asking about a destination.',
     },
     {
       id: 'ch53-ex-29',
@@ -781,17 +900,27 @@ export const chapter053: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['her', 'woher-split', 'dialogue'],
-      instruction: 'Read the exchange and fill in the missing word. Capitalisation is not checked.',
+      instruction:
+        'Read the exchange and fill in the missing word. Capitalisation is not checked.',
       prompt: 'Complete: "Wo kommen Sie gerade ___?"',
       dialogue: [
-        { speaker: 'Chef', german: 'Sie kommen aber spät zur Arbeit.', english: 'You are quite late to work.' },
-        { speaker: 'Chef', german: 'Wo kommen Sie gerade ___?', english: 'Where are you coming from right now?' },
+        {
+          speaker: 'Chef',
+          german: 'Sie kommen aber spät zur Arbeit.',
+          english: 'You are quite late to work.',
+        },
+        {
+          speaker: 'Chef',
+          german: 'Wo kommen Sie gerade ___?',
+          english: 'Where are you coming from right now?',
+        },
       ],
       acceptedAnswers: ['her'],
       answerMode: 'caseInsensitive',
       placeholder: 'her',
       maxLength: 10,
-      explanation: 'Wo ... her? is the colloquial split of woher?, asking about an origin.',
+      explanation:
+        'Wo ... her? is the colloquial split of woher?, asking about an origin.',
     },
     {
       id: 'ch53-ex-30',
@@ -800,13 +929,15 @@ export const chapter053: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'her', 'hin'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Komm hin zu mir!',
       acceptedAnswers: ['Komm her zu mir!'],
       answerMode: 'normalized',
       placeholder: 'Komm her zu mir!',
       maxLength: 40,
-      explanation: 'Asking someone to approach requires her (toward the speaker); hin would contradict the request by pointing away.',
+      explanation:
+        'Asking someone to approach requires her (toward the speaker); hin would contradict the request by pointing away.',
     },
     {
       id: 'ch53-ex-31',
@@ -815,13 +946,20 @@ export const chapter053: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['sentence-production', 'her', 'compounds'],
-      instruction: 'Write a complete sentence using the cues. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence using the cues. Capitalisation is checked; no full stop is required.',
       prompt: 'du (Befehl) – herkommen – sofort (bitte, dass jemand zu dir kommt)',
-      acceptedAnswers: ['Komm sofort her!', 'Komm sofort her', 'Komm her sofort!', 'Komm her sofort'],
+      acceptedAnswers: [
+        'Komm sofort her!',
+        'Komm sofort her',
+        'Komm her sofort!',
+        'Komm her sofort',
+      ],
       answerMode: 'normalized',
       placeholder: 'Komm sofort her!',
       maxLength: 40,
-      explanation: 'herkommen splits into her, moved to the end of the clause, when used as an imperative: Komm sofort her!',
+      explanation:
+        'herkommen splits into her, moved to the end of the clause, when used as an imperative: Komm sofort her!',
     },
     {
       id: 'ch53-ex-32',
@@ -839,7 +977,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'd', text: 'rechts' },
       ],
       correctOptionId: 'a',
-      explanation: 'vorne describes a position at the front, contrasted here with hinten (at the back).',
+      explanation:
+        'vorne describes a position at the front, contrasted here with hinten (at the back).',
     },
     {
       id: 'ch53-ex-33',
@@ -849,7 +988,8 @@ export const chapter053: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['rechts', 'links', 'direction'],
       instruction: 'Choose the correct adverb.',
-      prompt: 'Um zum Bahnhof zu kommen, biegen Sie an der Ampel ___ ab, dann sehen Sie ihn schon.',
+      prompt:
+        'Um zum Bahnhof zu kommen, biegen Sie an der Ampel ___ ab, dann sehen Sie ihn schon.',
       options: [
         { id: 'a', text: 'rechts' },
         { id: 'b', text: 'links' },
@@ -857,7 +997,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'd', text: 'hinten' },
       ],
       correctOptionId: 'a',
-      explanation: 'rechts abbiegen means "to turn right", one of the two horizontal position adverbs used for directions.',
+      explanation:
+        'rechts abbiegen means "to turn right", one of the two horizontal position adverbs used for directions.',
     },
     {
       id: 'ch53-ex-34',
@@ -866,11 +1007,20 @@ export const chapter053: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['herunter', 'speaker-perspective', 'dialogue'],
-      instruction: 'Read the exchange, then choose the compound that fits the speaker\'s perspective.',
+      instruction:
+        "Read the exchange, then choose the compound that fits the speaker's perspective.",
       prompt: 'Complete: "Kannst du mir das Buch bitte ___ bringen?"',
       dialogue: [
-        { speaker: 'Papa', german: 'Ich bin schon unten in der Küche.', english: 'I am already downstairs in the kitchen.' },
-        { speaker: 'Papa', german: 'Kannst du mir das Buch bitte ___ bringen?', english: 'Can you please bring me the book down here?' },
+        {
+          speaker: 'Papa',
+          german: 'Ich bin schon unten in der Küche.',
+          english: 'I am already downstairs in the kitchen.',
+        },
+        {
+          speaker: 'Papa',
+          german: 'Kannst du mir das Buch bitte ___ bringen?',
+          english: 'Can you please bring me the book down here?',
+        },
       ],
       options: [
         { id: 'a', text: 'herunter' },
@@ -879,7 +1029,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'd', text: 'hinauf' },
       ],
       correctOptionId: 'a',
-      explanation: 'Papa wants the book brought down to his own location, so the toward-the-speaker compound herunter is correct.',
+      explanation:
+        'Papa wants the book brought down to his own location, so the toward-the-speaker compound herunter is correct.',
     },
     {
       id: 'ch53-ex-35',
@@ -888,10 +1039,15 @@ export const chapter053: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['herein', 'speaker-perspective', 'dialogue'],
-      instruction: 'Read the exchange, then choose the compound that fits the speaker\'s perspective.',
+      instruction:
+        "Read the exchange, then choose the compound that fits the speaker's perspective.",
       prompt: 'Complete: "Kommen Sie ___!"',
       dialogue: [
-        { speaker: 'Frau Bauer', german: 'Es hat geklopft.', english: 'There was a knock at the door.' },
+        {
+          speaker: 'Frau Bauer',
+          german: 'Es hat geklopft.',
+          english: 'There was a knock at the door.',
+        },
         { speaker: 'Frau Bauer', german: 'Kommen Sie ___!', english: 'Come in!' },
       ],
       options: [
@@ -901,7 +1057,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'd', text: 'hinaus' },
       ],
       correctOptionId: 'a',
-      explanation: 'Frau Bauer, standing inside, invites the visitor toward her own location, so herein (toward the speaker) is correct.',
+      explanation:
+        'Frau Bauer, standing inside, invites the visitor toward her own location, so herein (toward the speaker) is correct.',
     },
     {
       id: 'ch53-ex-36',
@@ -910,11 +1067,20 @@ export const chapter053: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['hinaus', 'speaker-perspective', 'dialogue'],
-      instruction: 'Read the exchange, then choose the compound that fits the speaker\'s perspective.',
+      instruction:
+        "Read the exchange, then choose the compound that fits the speaker's perspective.",
       prompt: 'Complete: "Geh ___, du Kater!"',
       dialogue: [
-        { speaker: 'Frau Klein', german: 'Die Katze will unbedingt nach draußen.', english: 'The cat absolutely wants to go outside.' },
-        { speaker: 'Frau Klein', german: 'Geh ___, du Kater!', english: 'Go out, tomcat!' },
+        {
+          speaker: 'Frau Klein',
+          german: 'Die Katze will unbedingt nach draußen.',
+          english: 'The cat absolutely wants to go outside.',
+        },
+        {
+          speaker: 'Frau Klein',
+          german: 'Geh ___, du Kater!',
+          english: 'Go out, tomcat!',
+        },
       ],
       options: [
         { id: 'a', text: 'hinaus' },
@@ -923,7 +1089,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'd', text: 'herein' },
       ],
       correctOptionId: 'a',
-      explanation: 'Frau Klein is inside and sends the cat away from her own location, so hinaus (away from the speaker) is correct.',
+      explanation:
+        'Frau Klein is inside and sends the cat away from her own location, so hinaus (away from the speaker) is correct.',
     },
     {
       id: 'ch53-ex-37',
@@ -953,8 +1120,16 @@ export const chapter053: ChapterDefinition = {
       instruction: 'Read the exchange, then choose the correct adverb.',
       prompt: 'Complete: "Gehen Sie hier ___, dann sehen Sie die Post schon."',
       dialogue: [
-        { speaker: 'Tourist', german: 'Entschuldigung, wo ist die Post?', english: 'Excuse me, where is the post office?' },
-        { speaker: 'Passantin', german: 'Gehen Sie hier ___, dann sehen Sie die Post schon.', english: 'Go left here, then you will already see the post office.' },
+        {
+          speaker: 'Tourist',
+          german: 'Entschuldigung, wo ist die Post?',
+          english: 'Excuse me, where is the post office?',
+        },
+        {
+          speaker: 'Passantin',
+          german: 'Gehen Sie hier ___, dann sehen Sie die Post schon.',
+          english: 'Go left here, then you will already see the post office.',
+        },
       ],
       options: [
         { id: 'a', text: 'links' },
@@ -963,7 +1138,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'd', text: 'hinten' },
       ],
       correctOptionId: 'a',
-      explanation: 'links gives a direction to the left, one of the two horizontal position adverbs used in directions.',
+      explanation:
+        'links gives a direction to the left, one of the two horizontal position adverbs used in directions.',
     },
     {
       id: 'ch53-ex-39',
@@ -981,7 +1157,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'd', text: 'herunter' },
       ],
       correctOptionId: 'a',
-      explanation: 'Describing the climbers\' own upward movement away from the base of the mountain, without a "toward the speaker" perspective, uses hinauf.',
+      explanation:
+        'Describing the climbers\' own upward movement away from the base of the mountain, without a "toward the speaker" perspective, uses hinauf.',
     },
     {
       id: 'ch53-ex-40',
@@ -999,7 +1176,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'd', text: 'to stay outside' },
       ],
       correctOptionId: 'a',
-      explanation: 'herkommen combines kommen with her, so it means moving toward the speaker.',
+      explanation:
+        'herkommen combines kommen with her, so it means moving toward the speaker.',
     },
     {
       id: 'ch53-ex-41',
@@ -1017,7 +1195,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'd', text: 'herauf' },
       ],
       correctOptionId: 'a',
-      explanation: 'Describing the group\'s own downward movement away from the summit, without a "toward the speaker" perspective, uses hinunter.',
+      explanation:
+        'Describing the group\'s own downward movement away from the summit, without a "toward the speaker" perspective, uses hinunter.',
     },
     {
       id: 'ch53-ex-42',
@@ -1032,7 +1211,8 @@ export const chapter053: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'vorne',
       maxLength: 10,
-      explanation: 'vorne describes the front position, contrasted with hinten (at the back).',
+      explanation:
+        'vorne describes the front position, contrasted with hinten (at the back).',
     },
     {
       id: 'ch53-ex-43',
@@ -1086,17 +1266,27 @@ export const chapter053: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['herunter', 'speaker-perspective', 'dialogue'],
-      instruction: 'Read the exchange and fill in the missing word. Capitalisation is not checked.',
+      instruction:
+        'Read the exchange and fill in the missing word. Capitalisation is not checked.',
       prompt: 'Complete: "Kannst du das Handtuch bitte ___ bringen?"',
       dialogue: [
-        { speaker: 'Mama', german: 'Ich bin schon unten am Pool.', english: 'I am already downstairs at the pool.' },
-        { speaker: 'Mama', german: 'Kannst du das Handtuch bitte ___ bringen?', english: 'Can you please bring the towel down here?' },
+        {
+          speaker: 'Mama',
+          german: 'Ich bin schon unten am Pool.',
+          english: 'I am already downstairs at the pool.',
+        },
+        {
+          speaker: 'Mama',
+          german: 'Kannst du das Handtuch bitte ___ bringen?',
+          english: 'Can you please bring the towel down here?',
+        },
       ],
       acceptedAnswers: ['herunter'],
       answerMode: 'caseInsensitive',
       placeholder: 'herunter',
       maxLength: 15,
-      explanation: 'Mama wants the towel brought down to her own location, so herunter (toward the speaker) is correct.',
+      explanation:
+        'Mama wants the towel brought down to her own location, so herunter (toward the speaker) is correct.',
     },
     {
       id: 'ch53-ex-47',
@@ -1105,17 +1295,27 @@ export const chapter053: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['hinunter', 'speaker-perspective', 'dialogue'],
-      instruction: 'Read the exchange and fill in the missing word. Capitalisation is not checked.',
+      instruction:
+        'Read the exchange and fill in the missing word. Capitalisation is not checked.',
       prompt: 'Complete: "Geh ruhig ___, ich warte hier oben."',
       dialogue: [
-        { speaker: 'Lukas', german: 'Ich muss noch schnell in den Keller.', english: 'I still need to quickly go to the cellar.' },
-        { speaker: 'Sara', german: 'Geh ruhig ___, ich warte hier oben.', english: 'Go on down, I\'ll wait up here.' },
+        {
+          speaker: 'Lukas',
+          german: 'Ich muss noch schnell in den Keller.',
+          english: 'I still need to quickly go to the cellar.',
+        },
+        {
+          speaker: 'Sara',
+          german: 'Geh ruhig ___, ich warte hier oben.',
+          english: "Go on down, I'll wait up here.",
+        },
       ],
       acceptedAnswers: ['hinunter'],
       answerMode: 'caseInsensitive',
       placeholder: 'hinunter',
       maxLength: 15,
-      explanation: 'Sara stays upstairs while Lukas moves away from her, downward, so hinunter is correct.',
+      explanation:
+        'Sara stays upstairs while Lukas moves away from her, downward, so hinunter is correct.',
     },
     {
       id: 'ch53-ex-48',
@@ -1124,17 +1324,27 @@ export const chapter053: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['herauf', 'speaker-perspective', 'dialogue'],
-      instruction: 'Read the exchange and fill in the missing word. Capitalisation is not checked.',
+      instruction:
+        'Read the exchange and fill in the missing word. Capitalisation is not checked.',
       prompt: 'Complete: "Kommt doch ___, hier ist Platz für alle!"',
       dialogue: [
-        { speaker: 'Emma', german: 'Wir sitzen hier oben auf der Dachterrasse.', english: 'We are sitting up here on the roof terrace.' },
-        { speaker: 'Emma', german: 'Kommt doch ___, hier ist Platz für alle!', english: 'Do come up, there is room for everyone!' },
+        {
+          speaker: 'Emma',
+          german: 'Wir sitzen hier oben auf der Dachterrasse.',
+          english: 'We are sitting up here on the roof terrace.',
+        },
+        {
+          speaker: 'Emma',
+          german: 'Kommt doch ___, hier ist Platz für alle!',
+          english: 'Do come up, there is room for everyone!',
+        },
       ],
       acceptedAnswers: ['herauf'],
       answerMode: 'caseInsensitive',
       placeholder: 'herauf',
       maxLength: 15,
-      explanation: 'Emma invites the others toward her own location, upward, so herauf (toward the speaker) is correct.',
+      explanation:
+        'Emma invites the others toward her own location, upward, so herauf (toward the speaker) is correct.',
     },
     {
       id: 'ch53-ex-49',
@@ -1143,17 +1353,27 @@ export const chapter053: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['hinauf', 'direction', 'dialogue'],
-      instruction: 'Read the exchange and fill in the missing word. Capitalisation is not checked.',
+      instruction:
+        'Read the exchange and fill in the missing word. Capitalisation is not checked.',
       prompt: 'Complete: "Dann müssen wir eben zu Fuß ___ gehen."',
       dialogue: [
-        { speaker: 'Ben', german: 'Der Aufzug ist leider kaputt.', english: 'The elevator is unfortunately broken.' },
-        { speaker: 'Ben', german: 'Dann müssen wir eben zu Fuß ___ gehen.', english: 'Then we will just have to walk up on foot.' },
+        {
+          speaker: 'Ben',
+          german: 'Der Aufzug ist leider kaputt.',
+          english: 'The elevator is unfortunately broken.',
+        },
+        {
+          speaker: 'Ben',
+          german: 'Dann müssen wir eben zu Fuß ___ gehen.',
+          english: 'Then we will just have to walk up on foot.',
+        },
       ],
       acceptedAnswers: ['hinauf'],
       answerMode: 'caseInsensitive',
       placeholder: 'hinauf',
       maxLength: 15,
-      explanation: 'Describing the group\'s own upward movement, without a toward-the-speaker perspective, uses hinauf.',
+      explanation:
+        "Describing the group's own upward movement, without a toward-the-speaker perspective, uses hinauf.",
     },
     {
       id: 'ch53-ex-50',
@@ -1162,17 +1382,23 @@ export const chapter053: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['herein', 'speaker-perspective', 'dialogue'],
-      instruction: 'Read the exchange and fill in the missing word. Capitalisation is not checked.',
+      instruction:
+        'Read the exchange and fill in the missing word. Capitalisation is not checked.',
       prompt: 'Complete: "Kommen Sie ___!"',
       dialogue: [
-        { speaker: 'Herr Fischer', german: 'Es hat geklopft, mach bitte auf!', english: 'There was a knock, please open the door!' },
+        {
+          speaker: 'Herr Fischer',
+          german: 'Es hat geklopft, mach bitte auf!',
+          english: 'There was a knock, please open the door!',
+        },
         { speaker: 'Herr Fischer', german: 'Kommen Sie ___!', english: 'Come in!' },
       ],
       acceptedAnswers: ['herein'],
       answerMode: 'caseInsensitive',
       placeholder: 'herein',
       maxLength: 15,
-      explanation: 'Herr Fischer, standing inside, invites the visitor toward his own location, so herein is correct.',
+      explanation:
+        'Herr Fischer, standing inside, invites the visitor toward his own location, so herein is correct.',
     },
     {
       id: 'ch53-ex-51',
@@ -1181,17 +1407,23 @@ export const chapter053: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['hinein', 'direction', 'dialogue'],
-      instruction: 'Read the exchange and fill in the missing word. Capitalisation is not checked.',
+      instruction:
+        'Read the exchange and fill in the missing word. Capitalisation is not checked.',
       prompt: 'Complete: "Geh ruhig schon ___, ich komme gleich nach."',
       dialogue: [
         { speaker: 'Nora', german: 'Die Tür steht offen.', english: 'The door is open.' },
-        { speaker: 'Nora', german: 'Geh ruhig schon ___, ich komme gleich nach.', english: 'Go on in, I will follow in a moment.' },
+        {
+          speaker: 'Nora',
+          german: 'Geh ruhig schon ___, ich komme gleich nach.',
+          english: 'Go on in, I will follow in a moment.',
+        },
       ],
       acceptedAnswers: ['hinein'],
       answerMode: 'caseInsensitive',
       placeholder: 'hinein',
       maxLength: 15,
-      explanation: 'Nora sends the listener ahead of her, away from her own current position, so hinein is correct.',
+      explanation:
+        'Nora sends the listener ahead of her, away from her own current position, so hinein is correct.',
     },
     {
       id: 'ch53-ex-52',
@@ -1200,17 +1432,27 @@ export const chapter053: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['heraus', 'speaker-perspective', 'dialogue'],
-      instruction: 'Read the exchange and fill in the missing word. Capitalisation is not checked.',
+      instruction:
+        'Read the exchange and fill in the missing word. Capitalisation is not checked.',
       prompt: 'Complete: "Komm bitte ___, wir warten schon auf dich!"',
       dialogue: [
-        { speaker: 'Opa', german: 'Das Essen ist fertig!', english: 'The food is ready!' },
-        { speaker: 'Opa', german: 'Komm bitte ___, wir warten schon auf dich!', english: 'Please come out, we are already waiting for you!' },
+        {
+          speaker: 'Opa',
+          german: 'Das Essen ist fertig!',
+          english: 'The food is ready!',
+        },
+        {
+          speaker: 'Opa',
+          german: 'Komm bitte ___, wir warten schon auf dich!',
+          english: 'Please come out, we are already waiting for you!',
+        },
       ],
       acceptedAnswers: ['heraus'],
       answerMode: 'caseInsensitive',
       placeholder: 'heraus',
       maxLength: 15,
-      explanation: 'Opa is calling the listener toward the group he is part of, so heraus (toward the speaker) is correct.',
+      explanation:
+        'Opa is calling the listener toward the group he is part of, so heraus (toward the speaker) is correct.',
     },
     {
       id: 'ch53-ex-53',
@@ -1219,17 +1461,27 @@ export const chapter053: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['hinaus', 'direction', 'dialogue'],
-      instruction: 'Read the exchange and fill in the missing word. Capitalisation is not checked.',
+      instruction:
+        'Read the exchange and fill in the missing word. Capitalisation is not checked.',
       prompt: 'Complete: "Lass ihn doch ___ in den Garten!"',
       dialogue: [
-        { speaker: 'Frau Weber', german: 'Der Hund bellt schon die ganze Zeit.', english: 'The dog has been barking the whole time.' },
-        { speaker: 'Frau Weber', german: 'Lass ihn doch ___ in den Garten!', english: 'Just let him out into the garden!' },
+        {
+          speaker: 'Frau Weber',
+          german: 'Der Hund bellt schon die ganze Zeit.',
+          english: 'The dog has been barking the whole time.',
+        },
+        {
+          speaker: 'Frau Weber',
+          german: 'Lass ihn doch ___ in den Garten!',
+          english: 'Just let him out into the garden!',
+        },
       ],
       acceptedAnswers: ['hinaus'],
       answerMode: 'caseInsensitive',
       placeholder: 'hinaus',
       maxLength: 15,
-      explanation: 'Frau Weber sends the dog away from her own location into the garden, so hinaus is correct.',
+      explanation:
+        'Frau Weber sends the dog away from her own location into the garden, so hinaus is correct.',
     },
     {
       id: 'ch53-ex-54',
@@ -1238,13 +1490,15 @@ export const chapter053: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'her', 'hin'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Geh her und hol das Paket!',
       acceptedAnswers: ['Geh hin und hol das Paket!'],
       answerMode: 'normalized',
       placeholder: 'Geh hin und hol das Paket!',
       maxLength: 40,
-      explanation: 'Sending someone away from the speaker\'s own location requires hin; her would mean toward the speaker, the opposite meaning.',
+      explanation:
+        "Sending someone away from the speaker's own location requires hin; her would mean toward the speaker, the opposite meaning.",
     },
     {
       id: 'ch53-ex-55',
@@ -1253,13 +1507,21 @@ export const chapter053: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['sentence-production', 'herein', 'compounds'],
-      instruction: 'Write a complete sentence using the cues. Capitalisation is checked; no full stop is required.',
-      prompt: 'du (Bitte) – hereinkommen – sofort (du bittest jemanden, ins Zimmer zu kommen, in dem du selbst stehst)',
-      acceptedAnswers: ['Komm sofort herein!', 'Komm sofort herein', 'Komm herein sofort!', 'Komm herein sofort'],
+      instruction:
+        'Write a complete sentence using the cues. Capitalisation is checked; no full stop is required.',
+      prompt:
+        'du (Bitte) – hereinkommen – sofort (du bittest jemanden, ins Zimmer zu kommen, in dem du selbst stehst)',
+      acceptedAnswers: [
+        'Komm sofort herein!',
+        'Komm sofort herein',
+        'Komm herein sofort!',
+        'Komm herein sofort',
+      ],
       answerMode: 'normalized',
       placeholder: 'Komm sofort herein!',
       maxLength: 40,
-      explanation: 'hereinkommen splits into herein, moved to the end of the clause, when used as an imperative inviting someone toward the speaker\'s own room: Komm sofort herein!',
+      explanation:
+        "hereinkommen splits into herein, moved to the end of the clause, when used as an imperative inviting someone toward the speaker's own room: Komm sofort herein!",
     },
     {
       id: 'ch53-ex-56',
@@ -1276,7 +1538,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'p3', left: 'vorne', right: 'hinten' },
         { id: 'p4', left: 'links', right: 'rechts' },
       ],
-      explanation: 'oben/unten, drinnen/draußen, vorne/hinten, and links/rechts are the core opposite pairs among the pure location adverbs.',
+      explanation:
+        'oben/unten, drinnen/draußen, vorne/hinten, and links/rechts are the core opposite pairs among the pure location adverbs.',
     },
     {
       id: 'ch53-ex-57',
@@ -1285,7 +1548,8 @@ export const chapter053: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['hin', 'her', 'compounds', 'opposites'],
-      instruction: 'Match each her-compound with its hin-counterpart, pointing the opposite direction.',
+      instruction:
+        'Match each her-compound with its hin-counterpart, pointing the opposite direction.',
       prompt: 'Match the direction pairs.',
       pairs: [
         { id: 'p1', left: 'herein', right: 'hinein' },
@@ -1293,7 +1557,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'p3', left: 'herunter', right: 'hinunter' },
         { id: 'p4', left: 'heraus', right: 'hinaus' },
       ],
-      explanation: 'Each pair shares the same location prefix (ein-, auf-, unter-, aus-) but differs in direction: her- toward the speaker, hin- away from the speaker.',
+      explanation:
+        'Each pair shares the same location prefix (ein-, auf-, unter-, aus-) but differs in direction: her- toward the speaker, hin- away from the speaker.',
     },
     {
       id: 'ch53-ex-58',
@@ -1311,7 +1576,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'p4', left: 'oben', right: 'up / above' },
         { id: 'p5', left: 'drinnen', right: 'inside' },
       ],
-      explanation: 'hier, dort, and da all mean roughly "here/there" but differ in distance from the speaker; oben and drinnen name vertical position and interior location.',
+      explanation:
+        'hier, dort, and da all mean roughly "here/there" but differ in distance from the speaker; oben and drinnen name vertical position and interior location.',
     },
     {
       id: 'ch53-ex-59',
@@ -1329,7 +1595,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'p4', left: 'herauskommen', right: 'to come out' },
         { id: 'p5', left: 'hinaufsteigen', right: 'to climb up' },
       ],
-      explanation: 'hin- and her- attach to verbs of motion as separable prefixes, adding a directional meaning relative to the speaker.',
+      explanation:
+        'hin- and her- attach to verbs of motion as separable prefixes, adding a directional meaning relative to the speaker.',
     },
     {
       id: 'ch53-ex-60',
@@ -1346,7 +1613,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'p3', left: 'daher', right: 'da + her' },
         { id: 'p4', left: 'dahin', right: 'da + hin' },
       ],
-      explanation: 'The second half of each compound (-her or -hin) always signals the direction relative to the speaker.',
+      explanation:
+        'The second half of each compound (-her or -hin) always signals the direction relative to the speaker.',
     },
     {
       id: 'ch53-ex-61',
@@ -1355,7 +1623,8 @@ export const chapter053: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['nach', 'location-vs-destination'],
-      instruction: 'Match each pure location adverb with the destination phrase built from it.',
+      instruction:
+        'Match each pure location adverb with the destination phrase built from it.',
       prompt: 'Match the location adverbs with their destination form.',
       pairs: [
         { id: 'p1', left: 'oben', right: 'nach oben' },
@@ -1363,7 +1632,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'p3', left: 'draußen', right: 'nach draußen' },
         { id: 'p4', left: 'drinnen', right: 'nach drinnen' },
       ],
-      explanation: 'oben, unten, draußen, and drinnen answer wo? by themselves; to express a destination (wohin?), German adds nach.',
+      explanation:
+        'oben, unten, draußen, and drinnen answer wo? by themselves; to express a destination (wohin?), German adds nach.',
     },
     {
       id: 'ch53-ex-62',
@@ -1377,10 +1647,15 @@ export const chapter053: ChapterDefinition = {
       pairs: [
         { id: 'p1', left: 'Die Mutter ruft das Kind zu sich.', right: 'her' },
         { id: 'p2', left: 'Der Vater schickt das Kind zum Laden.', right: 'hin' },
-        { id: 'p3', left: 'Die Gastgeberin bittet die Gäste, ins Haus zu kommen.', right: 'herein' },
+        {
+          id: 'p3',
+          left: 'Die Gastgeberin bittet die Gäste, ins Haus zu kommen.',
+          right: 'herein',
+        },
         { id: 'p4', left: 'Der Ball fliegt aus dem Fenster.', right: 'hinaus' },
       ],
-      explanation: 'The direction always depends on the speaker\'s own position: her/herein for motion toward them, hin/hinaus for motion away from them.',
+      explanation:
+        "The direction always depends on the speaker's own position: her/herein for motion toward them, hin/hinaus for motion away from them.",
     },
     {
       id: 'ch53-ex-63',
@@ -1397,7 +1672,8 @@ export const chapter053: ChapterDefinition = {
         { id: 'p3', left: 'links', right: 'Die Post ist links um die Ecke.' },
         { id: 'p4', left: 'rechts', right: 'Bieg an der Kreuzung rechts ab.' },
       ],
-      explanation: 'vorne/hinten and links/rechts locate something along the front-back and side-to-side axes.',
+      explanation:
+        'vorne/hinten and links/rechts locate something along the front-back and side-to-side axes.',
     },
     {
       id: 'ch53-ex-64',
@@ -1439,7 +1715,7 @@ export const chapter053: ChapterDefinition = {
       templateParts: ['Geh ', ' und hol die Post vom Briefkasten!'],
       slots: [{ id: 's1', correctWord: 'hin' }],
       wordBank: ['hin', 'her', 'da', 'dort'],
-      explanation: 'Sending someone away from the speaker\'s own location requires hin.',
+      explanation: "Sending someone away from the speaker's own location requires hin.",
     },
     {
       id: 'ch53-ex-67',
@@ -1453,7 +1729,8 @@ export const chapter053: ChapterDefinition = {
       templateParts: ['Steig bitte die Treppe ', ', dein Zimmer ist im ersten Stock.'],
       slots: [{ id: 's1', correctWord: 'hinauf' }],
       wordBank: ['hinauf', 'herauf', 'hinunter', 'herunter'],
-      explanation: 'Describing the listener\'s own upward movement, without a toward-the-speaker perspective, uses hinauf.',
+      explanation:
+        "Describing the listener's own upward movement, without a toward-the-speaker perspective, uses hinauf.",
     },
     {
       id: 'ch53-ex-68',
@@ -1463,11 +1740,16 @@ export const chapter053: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['herauf', 'hinauf', 'speaker-perspective'],
       instruction: 'Drag the correct word into the slot.',
-      prompt: 'Der Kellner kommt mit dem Tablett die Treppe ___, um uns oben zu bedienen.',
-      templateParts: ['Der Kellner kommt mit dem Tablett die Treppe ', ', um uns oben zu bedienen.'],
+      prompt:
+        'Der Kellner kommt mit dem Tablett die Treppe ___, um uns oben zu bedienen.',
+      templateParts: [
+        'Der Kellner kommt mit dem Tablett die Treppe ',
+        ', um uns oben zu bedienen.',
+      ],
       slots: [{ id: 's1', correctWord: 'herauf' }],
       wordBank: ['herauf', 'hinauf', 'herunter', 'hinunter'],
-      explanation: 'The waiter is moving toward the speaker\'s own location upstairs, so herauf (toward the speaker) is correct.',
+      explanation:
+        "The waiter is moving toward the speaker's own location upstairs, so herauf (toward the speaker) is correct.",
     },
     {
       id: 'ch53-ex-69',
@@ -1481,7 +1763,8 @@ export const chapter053: ChapterDefinition = {
       templateParts: ['Lauf schnell die Treppe ', ', der Bus wartet nicht!'],
       slots: [{ id: 's1', correctWord: 'hinunter' }],
       wordBank: ['hinunter', 'herunter', 'hinauf', 'herauf'],
-      explanation: 'Sending the listener away from the speaker\'s current position, downward, uses hinunter.',
+      explanation:
+        "Sending the listener away from the speaker's current position, downward, uses hinunter.",
     },
     {
       id: 'ch53-ex-70',
@@ -1492,10 +1775,14 @@ export const chapter053: ChapterDefinition = {
       grammarFocus: ['herunter', 'hinunter', 'speaker-perspective'],
       instruction: 'Drag the correct word into the slot.',
       prompt: 'Wenn du fertig bist, komm bitte die Treppe ___ zu mir in die Küche.',
-      templateParts: ['Wenn du fertig bist, komm bitte die Treppe ', ' zu mir in die Küche.'],
+      templateParts: [
+        'Wenn du fertig bist, komm bitte die Treppe ',
+        ' zu mir in die Küche.',
+      ],
       slots: [{ id: 's1', correctWord: 'herunter' }],
       wordBank: ['herunter', 'hinunter', 'herauf', 'hinauf'],
-      explanation: 'Coming to the speaker\'s own location downstairs uses herunter (toward the speaker).',
+      explanation:
+        "Coming to the speaker's own location downstairs uses herunter (toward the speaker).",
     },
     {
       id: 'ch53-ex-71',
@@ -1509,7 +1796,8 @@ export const chapter053: ChapterDefinition = {
       templateParts: ['Der Supermarkt ist nicht weit, er liegt gleich ', ' um die Ecke.'],
       slots: [{ id: 's1', correctWord: 'links' }],
       wordBank: ['links', 'rechts', 'vorne', 'hinten'],
-      explanation: 'links describes a position or direction to the left, here around the corner.',
+      explanation:
+        'links describes a position or direction to the left, here around the corner.',
     },
     {
       id: 'ch53-ex-72',
@@ -1526,7 +1814,8 @@ export const chapter053: ChapterDefinition = {
         { id: 's2', correctWord: 'her' },
       ],
       wordBank: ['hin', 'her', 'da', 'dort'],
-      explanation: 'She moves away from the speaker (hin), while the speaker describes their own arrival toward the same reference point (her).',
+      explanation:
+        'She moves away from the speaker (hin), while the speaker describes their own arrival toward the same reference point (her).',
     },
     {
       id: 'ch53-ex-73',
@@ -1536,11 +1825,13 @@ export const chapter053: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['hin', 'her', 'error-correction'],
       instruction: 'Find the word that does not fit the meaning of the sentence.',
-      prompt: 'The speaker is asking the listener to approach, but one word points the wrong way.',
+      prompt:
+        'The speaker is asking the listener to approach, but one word points the wrong way.',
       tokens: ['Komm', 'hin', 'zu', 'mir', '!'],
       errorTokenIndex: 1,
       correction: 'her',
-      explanation: 'Asking someone to approach requires her (toward the speaker); hin would mean moving away, contradicting "zu mir".',
+      explanation:
+        'Asking someone to approach requires her (toward the speaker); hin would mean moving away, contradicting "zu mir".',
     },
     {
       id: 'ch53-ex-74',
@@ -1550,11 +1841,13 @@ export const chapter053: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['hin', 'her', 'error-correction'],
       instruction: 'Find the word that does not fit the meaning of the sentence.',
-      prompt: 'The speaker is sending the listener away to ask someone else, but one word points the wrong way.',
+      prompt:
+        'The speaker is sending the listener away to ask someone else, but one word points the wrong way.',
       tokens: ['Geh', 'her', 'und', 'frag', 'ihn', '!'],
       errorTokenIndex: 1,
       correction: 'hin',
-      explanation: 'Sending someone away from the speaker requires hin; her would mean toward the speaker, the opposite meaning.',
+      explanation:
+        'Sending someone away from the speaker requires hin; her would mean toward the speaker, the opposite meaning.',
     },
     {
       id: 'ch53-ex-75',
@@ -1563,12 +1856,14 @@ export const chapter053: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['hinein', 'herein', 'error-correction'],
-      instruction: 'Find the word that does not fit the speaker\'s perspective.',
-      prompt: 'The speaker is standing inside the house, welcoming guests toward their own location.',
+      instruction: "Find the word that does not fit the speaker's perspective.",
+      prompt:
+        'The speaker is standing inside the house, welcoming guests toward their own location.',
       tokens: ['Die', 'Gäste', 'kommen', 'hinein', 'in', 'das', 'Haus', '.'],
       errorTokenIndex: 3,
       correction: 'herein',
-      explanation: 'Guests moving toward the speaker, who is already inside, requires herein, not hinein (which would mean away from the speaker).',
+      explanation:
+        'Guests moving toward the speaker, who is already inside, requires herein, not hinein (which would mean away from the speaker).',
     },
     {
       id: 'ch53-ex-76',
@@ -1577,12 +1872,14 @@ export const chapter053: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['hinein', 'herein', 'error-correction'],
-      instruction: 'Find the word that does not fit the speaker\'s perspective.',
-      prompt: 'The speaker describes their own movement away, into the cellar, with no one waiting there.',
+      instruction: "Find the word that does not fit the speaker's perspective.",
+      prompt:
+        'The speaker describes their own movement away, into the cellar, with no one waiting there.',
       tokens: ['Ich', 'gehe', 'jetzt', 'herein', 'in', 'den', 'Keller', '.'],
       errorTokenIndex: 3,
       correction: 'hinein',
-      explanation: 'The speaker\'s own movement into the cellar, away from wherever they currently are, requires hinein, not herein (which implies toward someone else).',
+      explanation:
+        "The speaker's own movement into the cellar, away from wherever they currently are, requires hinein, not herein (which implies toward someone else).",
     },
     {
       id: 'ch53-ex-77',
@@ -1596,7 +1893,8 @@ export const chapter053: ChapterDefinition = {
       tokens: ['Komm', 'doch', 'dahin', ',', 'wir', 'sitzen', 'hier', '!'],
       errorTokenIndex: 2,
       correction: 'hierher',
-      explanation: 'dahin points away from the speaker, but the invitation is to join the speaker at "hier"; the toward-the-speaker compound hierher is needed instead.',
+      explanation:
+        'dahin points away from the speaker, but the invitation is to join the speaker at "hier"; the toward-the-speaker compound hierher is needed instead.',
     },
     {
       id: 'ch53-ex-78',
@@ -1606,11 +1904,13 @@ export const chapter053: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['draußen', 'nach draußen', 'error-correction'],
       instruction: 'Find the word that cannot express movement by itself.',
-      prompt: 'The speaker wants the dog to be allowed to go outside, not merely to be located outside.',
+      prompt:
+        'The speaker wants the dog to be allowed to go outside, not merely to be located outside.',
       tokens: ['Lass', 'ihn', 'draußen', 'gehen', '!'],
       errorTokenIndex: 2,
       correction: 'nach draußen',
-      explanation: 'draußen is a pure location adverb (wo?); expressing movement to the outside (wohin?) requires nach draußen.',
+      explanation:
+        'draußen is a pure location adverb (wo?); expressing movement to the outside (wohin?) requires nach draußen.',
     },
     {
       id: 'ch53-ex-79',
@@ -1620,11 +1920,13 @@ export const chapter053: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['hin', 'her', 'wohin-split', 'error-correction'],
       instruction: 'Find the word that does not match the intended question.',
-      prompt: 'The speaker wants to ask where the listener is going (a destination), not where they are coming from.',
+      prompt:
+        'The speaker wants to ask where the listener is going (a destination), not where they are coming from.',
       tokens: ['Wo', 'gehst', 'du', 'her', '?'],
       errorTokenIndex: 3,
       correction: 'hin',
-      explanation: 'her belongs to woher? (origin); asking about a destination with gehen requires the split form of wohin?, ending in hin.',
+      explanation:
+        'her belongs to woher? (origin); asking about a destination with gehen requires the split form of wohin?, ending in hin.',
     },
     {
       id: 'ch53-ex-80',
@@ -1633,12 +1935,27 @@ export const chapter053: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['oben', 'unten', 'error-correction'],
-      instruction: 'Find the word that contradicts common knowledge about where a cellar is.',
+      instruction:
+        'Find the word that contradicts common knowledge about where a cellar is.',
       prompt: 'A cellar is normally the lowest room in a house, below the attic.',
-      tokens: ['Der', 'Keller', 'ist', 'oben', ',', 'und', 'das', 'Dachgeschoss', 'ist', 'ganz', 'hoch', '.'],
+      tokens: [
+        'Der',
+        'Keller',
+        'ist',
+        'oben',
+        ',',
+        'und',
+        'das',
+        'Dachgeschoss',
+        'ist',
+        'ganz',
+        'hoch',
+        '.',
+      ],
       errorTokenIndex: 3,
       correction: 'unten',
-      explanation: 'A cellar (Keller) is normally below ground level, so unten is correct, not oben, which contradicts the sentence\'s own comparison with the attic.',
+      explanation:
+        "A cellar (Keller) is normally below ground level, so unten is correct, not oben, which contradicts the sentence's own comparison with the attic.",
     },
   ],
 };

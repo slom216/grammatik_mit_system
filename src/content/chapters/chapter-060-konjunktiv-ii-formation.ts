@@ -41,7 +41,8 @@ export const chapter060: ChapterDefinition = {
       },
       {
         id: 'ch60-rule-02',
-        heading: 'The synthetic forms that everyday German keeps: wäre, hätte, and the modals',
+        heading:
+          'The synthetic forms that everyday German keeps: wäre, hätte, and the modals',
         paragraphs: [
           'A handful of very frequent verbs keep their one-word Konjunktiv II form in everyday German instead of switching to würde: sein → wäre, haben → hätte, and all six modal verbs — können → könnte, müssen → müsste, wollen → wollte, mögen → möchte, dürfen → dürfte, sollen → sollte.',
           'For these verbs, the synthetic form is strongly preferred, and würde + sein / würde + haben / würde + können and so on sound distinctly unnatural or even wrong to a native speaker. Ich wäre müde sounds right; Ich würde müde sein does not. Ich hätte gern einen Kaffee sounds right; Ich würde gern einen Kaffee haben does not.',
@@ -101,7 +102,13 @@ export const chapter060: ChapterDefinition = {
       {
         id: 'ch60-table-02',
         title: 'The six modal verbs — Konjunktiv II',
-        columns: ['Infinitive', 'ich / er-sie-es', 'du', 'wir / sie-Sie', 'English (ich-form)'],
+        columns: [
+          'Infinitive',
+          'ich / er-sie-es',
+          'du',
+          'wir / sie-Sie',
+          'English (ich-form)',
+        ],
         rows: [
           ['können', 'könnte', 'könntest', 'könnten', 'I could / would be able to'],
           ['müssen', 'müsste', 'müsstest', 'müssten', 'I would have to'],
@@ -140,16 +147,56 @@ export const chapter060: ChapterDefinition = {
       {
         id: 'ch60-table-04',
         title: 'Synthetic form vs. würde-construction, side by side',
-        columns: ['Verb', 'Synthetic (ich)', 'würde-construction (ich)', 'Everyday preference'],
+        columns: [
+          'Verb',
+          'Synthetic (ich)',
+          'würde-construction (ich)',
+          'Everyday preference',
+        ],
         rows: [
           ['sein', 'wäre', 'würde sein', 'synthetic (wäre) — würde sein sounds wrong'],
-          ['haben', 'hätte', 'würde haben', 'synthetic (hätte) — würde haben sounds wrong'],
-          ['können', 'könnte', 'würde können', 'synthetic (könnte) — würde können sounds wrong'],
-          ['kommen', 'käme', 'würde kommen', 'either is fine; synthetic is common even in speech'],
-          ['gehen', 'ginge', 'würde gehen', 'either is fine; würde gehen is more common in speech'],
-          ['finden', 'fände', 'würde finden', 'either is fine; synthetic is slightly more formal'],
-          ['machen', '— (identical to simple past)', 'würde machen', 'würde-construction is the only natural option'],
-          ['kaufen', '— (identical to simple past)', 'würde kaufen', 'würde-construction is the only natural option'],
+          [
+            'haben',
+            'hätte',
+            'würde haben',
+            'synthetic (hätte) — würde haben sounds wrong',
+          ],
+          [
+            'können',
+            'könnte',
+            'würde können',
+            'synthetic (könnte) — würde können sounds wrong',
+          ],
+          [
+            'kommen',
+            'käme',
+            'würde kommen',
+            'either is fine; synthetic is common even in speech',
+          ],
+          [
+            'gehen',
+            'ginge',
+            'würde gehen',
+            'either is fine; würde gehen is more common in speech',
+          ],
+          [
+            'finden',
+            'fände',
+            'würde finden',
+            'either is fine; synthetic is slightly more formal',
+          ],
+          [
+            'machen',
+            '— (identical to simple past)',
+            'würde machen',
+            'würde-construction is the only natural option',
+          ],
+          [
+            'kaufen',
+            '— (identical to simple past)',
+            'würde kaufen',
+            'würde-construction is the only natural option',
+          ],
         ],
       },
     ],
@@ -158,25 +205,29 @@ export const chapter060: ChapterDefinition = {
         german: 'Ich würde jetzt gern nach Hause gehen.',
         english: 'I would like to go home now.',
         highlight: ['würde', 'gehen'],
-        explanation: 'The würde-construction: würde in position 2, the infinitive gehen at the end of the clause.',
+        explanation:
+          'The würde-construction: würde in position 2, the infinitive gehen at the end of the clause.',
       },
       {
         german: 'Das wäre wirklich toll!',
         english: 'That would be really great!',
         highlight: ['wäre'],
-        explanation: 'wäre is the synthetic Konjunktiv II form of sein — würde sein would sound wrong here.',
+        explanation:
+          'wäre is the synthetic Konjunktiv II form of sein — würde sein would sound wrong here.',
       },
       {
         german: 'Ich hätte gern einen Kaffee, bitte.',
         english: 'I would like a coffee, please.',
         highlight: ['hätte'],
-        explanation: 'hätte gern is a fixed, everyday polite pattern built on the synthetic form of haben.',
+        explanation:
+          'hätte gern is a fixed, everyday polite pattern built on the synthetic form of haben.',
       },
       {
         german: 'Könntest du mir bitte helfen?',
         english: 'Could you help me, please?',
         highlight: ['Könntest'],
-        explanation: 'könntest is the du-form of the synthetic modal form könnte, from können.',
+        explanation:
+          'könntest is the du-form of the synthetic modal form könnte, from können.',
       },
       {
         german: 'Ich müsste eigentlich noch lernen.',
@@ -188,70 +239,82 @@ export const chapter060: ChapterDefinition = {
         german: 'Sie käme gern mit, aber sie hat heute keine Zeit.',
         english: 'She would like to come along, but she has no time today.',
         highlight: ['käme'],
-        explanation: 'käme is the synthetic form of kommen: kam → umlauted stem käm- → käme.',
+        explanation:
+          'käme is the synthetic form of kommen: kam → umlauted stem käm- → käme.',
       },
       {
         german: 'Wenn er mehr Geld hätte, würde er öfter reisen.',
         english: 'If he had more money, he would travel more often.',
         highlight: ['hätte', 'würde'],
-        explanation: 'A synthetic form (hätte) and a würde-construction (würde reisen) combine naturally in the same sentence.',
+        explanation:
+          'A synthetic form (hätte) and a würde-construction (würde reisen) combine naturally in the same sentence.',
       },
       {
         german: 'Ich würde das Buch kaufen, wenn es billiger wäre.',
         english: 'I would buy the book if it were cheaper.',
         highlight: ['würde', 'kaufen', 'wäre'],
-        explanation: 'kaufen has no common synthetic form, so it takes würde + infinitive; billig-sein takes the synthetic wäre.',
+        explanation:
+          'kaufen has no common synthetic form, so it takes würde + infinitive; billig-sein takes the synthetic wäre.',
       },
       {
         german: 'Wir fänden bestimmt eine Lösung, wenn wir zusammenarbeiten würden.',
         english: 'We would surely find a solution if we worked together.',
         highlight: ['fänden', 'würden'],
-        explanation: 'fänden is the wir-form of the synthetic form of finden: fand → fänd- → fänden.',
+        explanation:
+          'fänden is the wir-form of the synthetic form of finden: fand → fänd- → fänden.',
       },
       {
         german: 'Das würde ich so nicht machen.',
         english: 'I would not do it that way.',
         highlight: ['würde', 'machen'],
-        explanation: 'machen is a weak verb, so its Konjunktiv II is always würde + infinitive, never a one-word form.',
+        explanation:
+          'machen is a weak verb, so its Konjunktiv II is always würde + infinitive, never a one-word form.',
       },
       {
         german: 'Er ginge jetzt gern schwimmen, aber es regnet.',
         english: 'He would like to go swimming now, but it is raining.',
         highlight: ['ginge'],
-        explanation: 'ginge is the synthetic form of gehen: ging has no umlautable vowel, so only the ending -e is added.',
+        explanation:
+          'ginge is the synthetic form of gehen: ging has no umlautable vowel, so only the ending -e is added.',
       },
       {
         german: 'Ich wüsste gern, wie das funktioniert.',
         english: 'I would like to know how that works.',
         highlight: ['wüsste'],
-        explanation: 'wüsste is the synthetic Konjunktiv II form of wissen: wusst- → wüsst- → wüsste.',
+        explanation:
+          'wüsste is the synthetic Konjunktiv II form of wissen: wusst- → wüsst- → wüsste.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich würde müde sein.',
         correct: 'Ich wäre müde.',
-        explanation: 'sein has a strongly preferred synthetic Konjunktiv II form, wäre; combining würde with sein sounds unnatural to native speakers.',
+        explanation:
+          'sein has a strongly preferred synthetic Konjunktiv II form, wäre; combining würde with sein sounds unnatural to native speakers.',
       },
       {
         incorrect: 'Ich würde das Auto haben.',
         correct: 'Ich hätte das Auto.',
-        explanation: 'haben also keeps its own synthetic form, hätte, instead of the würde-construction.',
+        explanation:
+          'haben also keeps its own synthetic form, hätte, instead of the würde-construction.',
       },
       {
         incorrect: 'Ich würde das machen können.',
         correct: 'Ich könnte das machen.',
-        explanation: 'Modal verbs use their own synthetic Konjunktiv II forms (könnte, müsste, dürfte, ...), not würde + modal infinitive.',
+        explanation:
+          'Modal verbs use their own synthetic Konjunktiv II forms (könnte, müsste, dürfte, ...), not würde + modal infinitive.',
       },
       {
         incorrect: 'Ich kame gern mit.',
         correct: 'Ich käme gern mit.',
-        explanation: 'The synthetic Konjunktiv II stem of a strong verb needs its umlaut: kam becomes käm-, never kam-, before the -e ending.',
+        explanation:
+          'The synthetic Konjunktiv II stem of a strong verb needs its umlaut: kam becomes käm-, never kam-, before the -e ending.',
       },
       {
         incorrect: 'Wenn du Zeit hättest, kamst du gern mit.',
         correct: 'Wenn du Zeit hättest, kämest du gern mit.',
-        explanation: 'kamst is the simple-past du-form (indicative); the Konjunktiv II du-form is kämest, with the umlaut and the -est ending.',
+        explanation:
+          'kamst is the simple-past du-form (indicative); the Konjunktiv II du-form is kämest, with the umlaut and the -est ending.',
       },
     ],
     remember: [
@@ -286,7 +349,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'würdest' },
       ],
       correctOptionId: 'a',
-      explanation: 'The Konjunktiv II ich-form of werden (the würde-helper) is würde; werde is present tense, wurde is simple past, würdest belongs to du.',
+      explanation:
+        'The Konjunktiv II ich-form of werden (the würde-helper) is würde; werde is present tense, wurde is simple past, würdest belongs to du.',
     },
     {
       id: 'ch60-ex-02',
@@ -304,7 +368,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'würde sein' },
       ],
       correctOptionId: 'a',
-      explanation: 'wäre is the synthetic Konjunktiv II form of sein for ich; war is simple past, bin is present, and würde sein is not used because sein has its own preferred synthetic form.',
+      explanation:
+        'wäre is the synthetic Konjunktiv II form of sein for ich; war is simple past, bin is present, and würde sein is not used because sein has its own preferred synthetic form.',
     },
     {
       id: 'ch60-ex-03',
@@ -322,7 +387,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'würdest haben' },
       ],
       correctOptionId: 'a',
-      explanation: 'hättest is the synthetic Konjunktiv II du-form of haben; hattest is simple past, hast is present, and würdest haben is avoided in favor of hättest.',
+      explanation:
+        'hättest is the synthetic Konjunktiv II du-form of haben; hattest is simple past, hast is present, and würdest haben is avoided in favor of hättest.',
     },
     {
       id: 'ch60-ex-04',
@@ -340,7 +406,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'würde können' },
       ],
       correctOptionId: 'a',
-      explanation: 'könnte is the synthetic Konjunktiv II form of können; konnte is simple past, kann is present, and würde können is not used.',
+      explanation:
+        'könnte is the synthetic Konjunktiv II form of können; konnte is simple past, kann is present, and würde können is not used.',
     },
     {
       id: 'ch60-ex-05',
@@ -349,7 +416,8 @@ export const chapter060: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'kommen', 'umlaut'],
-      instruction: 'Choose the correct synthetic Konjunktiv II form of kommen for er/sie/es.',
+      instruction:
+        'Choose the correct synthetic Konjunktiv II form of kommen for er/sie/es.',
       prompt: 'Er ___ gern mit, wenn er Zeit hätte.',
       options: [
         { id: 'a', text: 'käme' },
@@ -358,7 +426,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'kame' },
       ],
       correctOptionId: 'a',
-      explanation: 'käme umlauts the simple-past stem kam- to käm- and adds -e; kam is plain simple past, and kame is missing the required umlaut.',
+      explanation:
+        'käme umlauts the simple-past stem kam- to käm- and adds -e; kam is plain simple past, and kame is missing the required umlaut.',
     },
     {
       id: 'ch60-ex-06',
@@ -376,7 +445,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'fänden würden' },
       ],
       correctOptionId: 'a',
-      explanation: 'fänden umlauts fand- to fänd- and adds -en; fanden is plain simple past.',
+      explanation:
+        'fänden umlauts fand- to fänd- and adds -en; fanden is plain simple past.',
     },
     {
       id: 'ch60-ex-07',
@@ -386,7 +456,8 @@ export const chapter060: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'umlaut-pattern'],
       instruction: 'Choose the correct umlaut change described in this chapter.',
-      prompt: 'Which vowel change turns the simple-past stem kam- into the synthetic Konjunktiv II stem?',
+      prompt:
+        'Which vowel change turns the simple-past stem kam- into the synthetic Konjunktiv II stem?',
       options: [
         { id: 'a', text: 'a → ä' },
         { id: 'b', text: 'a → au' },
@@ -394,7 +465,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'no change' },
       ],
       correctOptionId: 'a',
-      explanation: 'The Konjunktiv II umlaut pattern is a → ä (also o → ö and u → ü): kam- becomes käm-.',
+      explanation:
+        'The Konjunktiv II umlaut pattern is a → ä (also o → ö and u → ü): kam- becomes käm-.',
     },
     {
       id: 'ch60-ex-08',
@@ -412,7 +484,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'present perfect (Perfekt)' },
       ],
       correctOptionId: 'a',
-      explanation: 'käme has the Konjunktiv II umlaut (ä) that kommen never has in the simple past (kam) — this marks it clearly as Konjunktiv II.',
+      explanation:
+        'käme has the Konjunktiv II umlaut (ä) that kommen never has in the simple past (kam) — this marks it clearly as Konjunktiv II.',
     },
     {
       id: 'ch60-ex-09',
@@ -430,7 +503,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'present perfect (Perfekt)' },
       ],
       correctOptionId: 'a',
-      explanation: 'kam has no umlaut, and gestern places it in a plain factual narrative — this is the simple past, not Konjunktiv II.',
+      explanation:
+        'kam has no umlaut, and gestern places it in a plain factual narrative — this is the simple past, not Konjunktiv II.',
     },
     {
       id: 'ch60-ex-10',
@@ -440,7 +514,8 @@ export const chapter060: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'weak-verbs', 'ambiguity'],
       instruction: 'Choose the best explanation.',
-      prompt: 'Why does German normally avoid a synthetic Konjunktiv II form for kaufen (e.g. treating "kaufte" as hypothetical)?',
+      prompt:
+        'Why does German normally avoid a synthetic Konjunktiv II form for kaufen (e.g. treating "kaufte" as hypothetical)?',
       options: [
         {
           id: 'a',
@@ -448,10 +523,14 @@ export const chapter060: ChapterDefinition = {
         },
         { id: 'b', text: 'Because kaufen has no simple-past form at all.' },
         { id: 'c', text: 'Because kaufen is one of the six modal verbs.' },
-        { id: 'd', text: 'Because Konjunktiv II does not exist for weak verbs in any form.' },
+        {
+          id: 'd',
+          text: 'Because Konjunktiv II does not exist for weak verbs in any form.',
+        },
       ],
       correctOptionId: 'a',
-      explanation: 'Weak verbs would produce identical forms for simple past and Konjunktiv II, so würde + infinitive is used to avoid ambiguity, not because the mood does not exist.',
+      explanation:
+        'Weak verbs would produce identical forms for simple past and Konjunktiv II, so würde + infinitive is used to avoid ambiguity, not because the mood does not exist.',
     },
     {
       id: 'ch60-ex-11',
@@ -469,7 +548,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'Ich habe das Auto gekauft.' },
       ],
       correctOptionId: 'a',
-      explanation: 'kaufen has no natural synthetic Konjunktiv II form (käufte is not a real word), so würde + infinitive is the only correct option.',
+      explanation:
+        'kaufen has no natural synthetic Konjunktiv II form (käufte is not a real word), so würde + infinitive is the only correct option.',
     },
     {
       id: 'ch60-ex-12',
@@ -487,7 +567,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'Das war schön.' },
       ],
       correctOptionId: 'a',
-      explanation: 'wäre is the strongly preferred synthetic form of sein; würde schön sein is avoided by native speakers.',
+      explanation:
+        'wäre is the strongly preferred synthetic form of sein; würde schön sein is avoided by native speakers.',
     },
     {
       id: 'ch60-ex-13',
@@ -505,7 +586,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'Ich konnte dir helfen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Modal verbs use their own synthetic Konjunktiv II forms; würde + können is not used, and konnte is simple past, not Konjunktiv II.',
+      explanation:
+        'Modal verbs use their own synthetic Konjunktiv II forms; würde + können is not used, and konnte is simple past, not Konjunktiv II.',
     },
     {
       id: 'ch60-ex-14',
@@ -514,7 +596,8 @@ export const chapter060: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'transformation', 'haben'],
-      instruction: 'Choose the correct Konjunktiv II counterpart of the factual statement.',
+      instruction:
+        'Choose the correct Konjunktiv II counterpart of the factual statement.',
       prompt: 'Factual: "Ich habe keine Zeit." — Choose the Konjunktiv II version.',
       options: [
         { id: 'a', text: 'Ich hätte Zeit.' },
@@ -523,7 +606,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'Ich hatte Zeit.' },
       ],
       correctOptionId: 'a',
-      explanation: 'hätte is the synthetic Konjunktiv II form of haben, turning the factual statement into a hypothetical one.',
+      explanation:
+        'hätte is the synthetic Konjunktiv II form of haben, turning the factual statement into a hypothetical one.',
     },
     {
       id: 'ch60-ex-15',
@@ -541,7 +625,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'war' },
       ],
       correctOptionId: 'a',
-      explanation: 'würde is literally the Konjunktiv II form of werden itself — the same word used as the auxiliary in the würde-construction.',
+      explanation:
+        'würde is literally the Konjunktiv II form of werden itself — the same word used as the auxiliary in the würde-construction.',
     },
     {
       id: 'ch60-ex-16',
@@ -559,7 +644,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'fünd-' },
       ],
       correctOptionId: 'a',
-      explanation: 'The a in fand- umlauts to ä, giving fänd- as the Konjunktiv II stem (fände, fändest, ...).',
+      explanation:
+        'The a in fand- umlauts to ä, giving fänd- as the Konjunktiv II stem (fände, fändest, ...).',
     },
     {
       id: 'ch60-ex-17',
@@ -577,7 +663,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: '-te' },
       ],
       correctOptionId: 'a',
-      explanation: 'The Konjunktiv II du-ending is always -est (kämest, hättest, wärest), unlike the simple-past du-ending -st (kamst).',
+      explanation:
+        'The Konjunktiv II du-ending is always -est (kämest, hättest, wärest), unlike the simple-past du-ending -st (kamst).',
     },
     {
       id: 'ch60-ex-18',
@@ -595,7 +682,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'Fahren würde ich gern nach Berlin.' },
       ],
       correctOptionId: 'a',
-      explanation: 'würde stays in position 2, and the infinitive fahren is sent to the very end of the clause, exactly like a modal-verb bracket.',
+      explanation:
+        'würde stays in position 2, and the infinitive fahren is sent to the very end of the clause, exactly like a modal-verb bracket.',
     },
     {
       id: 'ch60-ex-19',
@@ -604,7 +692,8 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'sein'],
-      instruction: 'Write the synthetic Konjunktiv II form of sein for ich. Capitalisation is not checked.',
+      instruction:
+        'Write the synthetic Konjunktiv II form of sein for ich. Capitalisation is not checked.',
       prompt: 'ich → sein (Konjunktiv II)',
       acceptedAnswers: ['wäre'],
       answerMode: 'caseInsensitive',
@@ -619,7 +708,8 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'haben'],
-      instruction: 'Write the synthetic Konjunktiv II form of haben for du. Capitalisation is not checked.',
+      instruction:
+        'Write the synthetic Konjunktiv II form of haben for du. Capitalisation is not checked.',
       prompt: 'du → haben (Konjunktiv II)',
       acceptedAnswers: ['hättest'],
       answerMode: 'caseInsensitive',
@@ -634,7 +724,8 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'modal-verbs', 'koennen'],
-      instruction: 'Write the synthetic Konjunktiv II form of können for wir. Capitalisation is not checked.',
+      instruction:
+        'Write the synthetic Konjunktiv II form of können for wir. Capitalisation is not checked.',
       prompt: 'wir → können (Konjunktiv II)',
       acceptedAnswers: ['könnten'],
       answerMode: 'caseInsensitive',
@@ -649,7 +740,8 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'modal-verbs', 'muessen'],
-      instruction: 'Write the synthetic Konjunktiv II form of müssen for ihr. Capitalisation is not checked.',
+      instruction:
+        'Write the synthetic Konjunktiv II form of müssen for ihr. Capitalisation is not checked.',
       prompt: 'ihr → müssen (Konjunktiv II)',
       acceptedAnswers: ['müsstet'],
       answerMode: 'caseInsensitive',
@@ -664,7 +756,8 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'kommen', 'umlaut'],
-      instruction: 'Write the synthetic Konjunktiv II form of kommen for er/sie/es. Capitalisation is not checked.',
+      instruction:
+        'Write the synthetic Konjunktiv II form of kommen for er/sie/es. Capitalisation is not checked.',
       prompt: 'er/sie/es → kommen (Konjunktiv II)',
       acceptedAnswers: ['käme'],
       answerMode: 'caseInsensitive',
@@ -679,7 +772,8 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'finden', 'umlaut'],
-      instruction: 'Write the synthetic Konjunktiv II form of finden for sie (plural). Capitalisation is not checked.',
+      instruction:
+        'Write the synthetic Konjunktiv II form of finden for sie (plural). Capitalisation is not checked.',
       prompt: 'sie (plural) → finden (Konjunktiv II)',
       acceptedAnswers: ['fänden'],
       answerMode: 'caseInsensitive',
@@ -694,7 +788,8 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'geben', 'umlaut'],
-      instruction: 'Write the synthetic Konjunktiv II form of geben for ich. Capitalisation is not checked.',
+      instruction:
+        'Write the synthetic Konjunktiv II form of geben for ich. Capitalisation is not checked.',
       prompt: 'ich → geben (Konjunktiv II)',
       acceptedAnswers: ['gäbe'],
       answerMode: 'caseInsensitive',
@@ -709,13 +804,15 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'wuerde-konstruktion', 'machen'],
-      instruction: 'Write the würde + infinitive form for ich + machen (Konjunktiv II). Capitalisation is not checked.',
+      instruction:
+        'Write the würde + infinitive form for ich + machen (Konjunktiv II). Capitalisation is not checked.',
       prompt: 'ich → machen (Konjunktiv II, würde-construction)',
       acceptedAnswers: ['würde machen'],
       answerMode: 'normalized',
       placeholder: 'würde machen',
       maxLength: 25,
-      explanation: 'machen is a weak verb with no natural synthetic form, so its Konjunktiv II is würde machen.',
+      explanation:
+        'machen is a weak verb with no natural synthetic form, so its Konjunktiv II is würde machen.',
     },
     {
       id: 'ch60-ex-27',
@@ -724,13 +821,15 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'wuerde-konstruktion', 'kaufen'],
-      instruction: 'Write the würde + infinitive form for du + kaufen (Konjunktiv II). Capitalisation is not checked.',
+      instruction:
+        'Write the würde + infinitive form for du + kaufen (Konjunktiv II). Capitalisation is not checked.',
       prompt: 'du → kaufen (Konjunktiv II, würde-construction)',
       acceptedAnswers: ['würdest kaufen'],
       answerMode: 'normalized',
       placeholder: 'würdest kaufen',
       maxLength: 25,
-      explanation: 'kaufen is a weak verb, so its Konjunktiv II is always würde/würdest + infinitive: würdest kaufen.',
+      explanation:
+        'kaufen is a weak verb, so its Konjunktiv II is always würde/würdest + infinitive: würdest kaufen.',
     },
     {
       id: 'ch60-ex-28',
@@ -739,13 +838,15 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'wissen', 'umlaut'],
-      instruction: 'Write the synthetic Konjunktiv II form of wissen for ich. Capitalisation is not checked.',
+      instruction:
+        'Write the synthetic Konjunktiv II form of wissen for ich. Capitalisation is not checked.',
       prompt: 'ich → wissen (Konjunktiv II)',
       acceptedAnswers: ['wüsste'],
       answerMode: 'caseInsensitive',
       placeholder: 'wüsste',
       maxLength: 15,
-      explanation: 'The mixed-verb stem wusst- umlauts to wüsst-, plus the -e ending: wüsste.',
+      explanation:
+        'The mixed-verb stem wusst- umlauts to wüsst-, plus the -e ending: wüsste.',
     },
     {
       id: 'ch60-ex-29',
@@ -754,7 +855,8 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'sehen', 'du-ending'],
-      instruction: 'Write the synthetic Konjunktiv II form of sehen for du. Capitalisation is not checked.',
+      instruction:
+        'Write the synthetic Konjunktiv II form of sehen for du. Capitalisation is not checked.',
       prompt: 'du → sehen (Konjunktiv II)',
       acceptedAnswers: ['sähest'],
       answerMode: 'caseInsensitive',
@@ -769,13 +871,15 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'transformation', 'haben'],
-      instruction: 'Rewrite the statement in Konjunktiv II, using the synthetic form of haben. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the statement in Konjunktiv II, using the synthetic form of haben. Capitalisation and punctuation are checked.',
       prompt: 'Ich habe keine Zeit. → Konjunktiv II mit hätte',
       acceptedAnswers: ['Ich hätte Zeit.', 'Ich hätte Zeit'],
       answerMode: 'normalized',
       placeholder: 'Ich hätte ...',
       maxLength: 40,
-      explanation: 'habe becomes hätte, and the factual statement turns into a hypothetical one: Ich hätte Zeit.',
+      explanation:
+        'habe becomes hätte, and the factual statement turns into a hypothetical one: Ich hätte Zeit.',
     },
     {
       id: 'ch60-ex-31',
@@ -784,7 +888,8 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'transformation', 'sein'],
-      instruction: 'Rewrite the statement in Konjunktiv II, using the synthetic form of sein. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the statement in Konjunktiv II, using the synthetic form of sein. Capitalisation and punctuation are checked.',
       prompt: 'Er ist müde. → Konjunktiv II mit wäre',
       acceptedAnswers: ['Er wäre müde.', 'Er wäre müde'],
       answerMode: 'normalized',
@@ -799,13 +904,18 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'transformation', 'wuerde-konstruktion', 'kaufen'],
-      instruction: 'Rewrite the statement in Konjunktiv II, using würde + infinitive. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the statement in Konjunktiv II, using würde + infinitive. Capitalisation and punctuation are checked.',
       prompt: 'Sie kauft ein neues Auto. → Konjunktiv II mit würde',
-      acceptedAnswers: ['Sie würde ein neues Auto kaufen.', 'Sie würde ein neues Auto kaufen'],
+      acceptedAnswers: [
+        'Sie würde ein neues Auto kaufen.',
+        'Sie würde ein neues Auto kaufen',
+      ],
       answerMode: 'normalized',
       placeholder: 'Sie würde ...',
       maxLength: 60,
-      explanation: 'kaufen has no natural synthetic form, so kauft becomes würde ... kaufen: Sie würde ein neues Auto kaufen.',
+      explanation:
+        'kaufen has no natural synthetic form, so kauft becomes würde ... kaufen: Sie würde ein neues Auto kaufen.',
     },
     {
       id: 'ch60-ex-33',
@@ -814,7 +924,8 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'transformation', 'modal-verbs', 'koennen'],
-      instruction: 'Rewrite the statement in Konjunktiv II, using the synthetic form of können. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the statement in Konjunktiv II, using the synthetic form of können. Capitalisation and punctuation are checked.',
       prompt: 'Wir können nicht kommen. → Konjunktiv II mit könnten',
       acceptedAnswers: ['Wir könnten nicht kommen.', 'Wir könnten nicht kommen'],
       answerMode: 'normalized',
@@ -828,14 +939,22 @@ export const chapter060: ChapterDefinition = {
       order: 34,
       type: 'textInput',
       level: 'transfer',
-      grammarFocus: ['konjunktiv-ii', 'sentence-building', 'hätte', 'wuerde-konstruktion'],
-      instruction: 'Build a complete sentence from the cue words, combining a synthetic form and a würde-construction. Capitalisation and punctuation are checked.',
-      prompt: 'wenn – ich – Zeit – haben (Konjunktiv II) – , – ich – dich – besuchen (Konjunktiv II mit würde)',
+      grammarFocus: [
+        'konjunktiv-ii',
+        'sentence-building',
+        'hätte',
+        'wuerde-konstruktion',
+      ],
+      instruction:
+        'Build a complete sentence from the cue words, combining a synthetic form and a würde-construction. Capitalisation and punctuation are checked.',
+      prompt:
+        'wenn – ich – Zeit – haben (Konjunktiv II) – , – ich – dich – besuchen (Konjunktiv II mit würde)',
       acceptedAnswers: ['Wenn ich Zeit hätte, würde ich dich besuchen.'],
       answerMode: 'normalized',
       placeholder: 'Wenn ich Zeit hätte, würde ich dich besuchen.',
       maxLength: 70,
-      explanation: 'haben becomes the synthetic hätte in the wenn-clause; besuchen has no synthetic form, so it takes würde + infinitive: Wenn ich Zeit hätte, würde ich dich besuchen.',
+      explanation:
+        'haben becomes the synthetic hätte in the wenn-clause; besuchen has no synthetic form, so it takes würde + infinitive: Wenn ich Zeit hätte, würde ich dich besuchen.',
     },
     {
       id: 'ch60-ex-35',
@@ -853,7 +972,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'würden sein' },
       ],
       correctOptionId: 'a',
-      explanation: 'wären is the wir-form of the synthetic Konjunktiv II of sein; waren is simple past, sind is present, and würden sein is avoided because sein keeps its own synthetic form.',
+      explanation:
+        'wären is the wir-form of the synthetic Konjunktiv II of sein; waren is simple past, sind is present, and würden sein is avoided because sein keeps its own synthetic form.',
     },
     {
       id: 'ch60-ex-36',
@@ -871,7 +991,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'würdet haben' },
       ],
       correctOptionId: 'a',
-      explanation: 'hättet is the ihr-form of the synthetic Konjunktiv II of haben; hattet is simple past, and würdet haben is avoided since haben keeps its own synthetic form.',
+      explanation:
+        'hättet is the ihr-form of the synthetic Konjunktiv II of haben; hattet is simple past, and würdet haben is avoided since haben keeps its own synthetic form.',
     },
     {
       id: 'ch60-ex-37',
@@ -889,7 +1010,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'würde' },
       ],
       correctOptionId: 'a',
-      explanation: 'würdest is the du-form of werden\'s Konjunktiv II, used as the helper in the würde-construction; wurdest is simple past and wirst is present.',
+      explanation:
+        "würdest is the du-form of werden's Konjunktiv II, used as the helper in the würde-construction; wurdest is simple past and wirst is present.",
     },
     {
       id: 'ch60-ex-38',
@@ -907,7 +1029,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'würde dürfen' },
       ],
       correctOptionId: 'a',
-      explanation: 'dürfte is the synthetic Konjunktiv II form of dürfen; durfte is simple past, darf is present, and würde dürfen is not used.',
+      explanation:
+        'dürfte is the synthetic Konjunktiv II form of dürfen; durfte is simple past, darf is present, and würde dürfen is not used.',
     },
     {
       id: 'ch60-ex-39',
@@ -925,7 +1048,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'würdest sollen' },
       ],
       correctOptionId: 'a',
-      explanation: 'solltest is the du-form of sollen\'s Konjunktiv II; it looks identical to the simple past, since sollen has no umlautable vowel.',
+      explanation:
+        "solltest is the du-form of sollen's Konjunktiv II; it looks identical to the simple past, since sollen has no umlautable vowel.",
     },
     {
       id: 'ch60-ex-40',
@@ -943,7 +1067,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'würde mögen' },
       ],
       correctOptionId: 'a',
-      explanation: 'möchte is the everyday synthetic Konjunktiv II form of mögen, used constantly in polite requests; würde mögen is essentially never used.',
+      explanation:
+        'möchte is the everyday synthetic Konjunktiv II form of mögen, used constantly in polite requests; würde mögen is essentially never used.',
     },
     {
       id: 'ch60-ex-41',
@@ -953,7 +1078,8 @@ export const chapter060: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'wollen', 'mood-identification', 'ambiguity'],
       instruction: 'Choose the most likely reading of the underlined form.',
-      prompt: 'Which mood is most likely meant in the polite request "Ich wollte dich etwas fragen."?',
+      prompt:
+        'Which mood is most likely meant in the polite request "Ich wollte dich etwas fragen."?',
       options: [
         { id: 'a', text: 'Konjunktiv II, softening the request politely' },
         { id: 'b', text: 'Present tense' },
@@ -961,7 +1087,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'Future tense' },
       ],
       correctOptionId: 'a',
-      explanation: 'wollte looks identical in the simple past and Konjunktiv II because wollen has no umlautable vowel; in a polite, softened request like this, context signals Konjunktiv II.',
+      explanation:
+        'wollte looks identical in the simple past and Konjunktiv II because wollen has no umlautable vowel; in a polite, softened request like this, context signals Konjunktiv II.',
     },
     {
       id: 'ch60-ex-42',
@@ -979,7 +1106,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'gehte' },
       ],
       correctOptionId: 'a',
-      explanation: 'ging has no umlautable vowel, so the Konjunktiv II simply adds -e: ginge; gehte is not a real form.',
+      explanation:
+        'ging has no umlautable vowel, so the Konjunktiv II simply adds -e: ginge; gehte is not a real form.',
     },
     {
       id: 'ch60-ex-43',
@@ -997,7 +1125,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'gäbst' },
       ],
       correctOptionId: 'a',
-      explanation: 'gab umlauts to gäb-, and the Konjunktiv II du-ending is -est, giving gäbest; gäbst is missing the linking e.',
+      explanation:
+        'gab umlauts to gäb-, and the Konjunktiv II du-ending is -est, giving gäbest; gäbst is missing the linking e.',
     },
     {
       id: 'ch60-ex-44',
@@ -1051,7 +1180,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'd', text: 'führst' },
       ],
       correctOptionId: 'a',
-      explanation: 'fuhr umlauts to führ-, and the du-ending is -est, giving führest; führst is missing the linking e.',
+      explanation:
+        'fuhr umlauts to führ-, and the du-ending is -est, giving führest; führst is missing the linking e.',
     },
     {
       id: 'ch60-ex-47',
@@ -1060,7 +1190,8 @@ export const chapter060: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'lesen'],
-      instruction: 'Choose the correct synthetic Konjunktiv II form of lesen for er/sie/es.',
+      instruction:
+        'Choose the correct synthetic Konjunktiv II form of lesen for er/sie/es.',
       prompt: 'Er ___ das Buch gern noch einmal.',
       options: [
         { id: 'a', text: 'läse' },
@@ -1078,7 +1209,8 @@ export const chapter060: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'tun', 'sie-plural'],
-      instruction: 'Choose the correct synthetic Konjunktiv II form of tun for sie (plural).',
+      instruction:
+        'Choose the correct synthetic Konjunktiv II form of tun for sie (plural).',
       prompt: 'Sie ___ das bestimmt gern für dich.',
       options: [
         { id: 'a', text: 'täten' },
@@ -1096,7 +1228,8 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'sein', 'du-form'],
-      instruction: 'Write the synthetic Konjunktiv II form of sein for du. Capitalisation is not checked.',
+      instruction:
+        'Write the synthetic Konjunktiv II form of sein for du. Capitalisation is not checked.',
       prompt: 'du → sein (Konjunktiv II)',
       acceptedAnswers: ['wärest'],
       answerMode: 'caseInsensitive',
@@ -1111,7 +1244,8 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'sein', 'ihr-form'],
-      instruction: 'Write the synthetic Konjunktiv II form of sein for ihr. Capitalisation is not checked.',
+      instruction:
+        'Write the synthetic Konjunktiv II form of sein for ihr. Capitalisation is not checked.',
       prompt: 'ihr → sein (Konjunktiv II)',
       acceptedAnswers: ['wäret'],
       answerMode: 'caseInsensitive',
@@ -1126,7 +1260,8 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'haben', 'er-form'],
-      instruction: 'Write the synthetic Konjunktiv II form of haben for er/sie/es. Capitalisation is not checked.',
+      instruction:
+        'Write the synthetic Konjunktiv II form of haben for er/sie/es. Capitalisation is not checked.',
       prompt: 'er/sie/es → haben (Konjunktiv II)',
       acceptedAnswers: ['hätte'],
       answerMode: 'caseInsensitive',
@@ -1141,13 +1276,15 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'haben', 'sie-plural'],
-      instruction: 'Write the synthetic Konjunktiv II form of haben for sie (plural). Capitalisation is not checked.',
+      instruction:
+        'Write the synthetic Konjunktiv II form of haben for sie (plural). Capitalisation is not checked.',
       prompt: 'sie (plural) → haben (Konjunktiv II)',
       acceptedAnswers: ['hätten'],
       answerMode: 'caseInsensitive',
       placeholder: 'hätten',
       maxLength: 15,
-      explanation: 'The sie-plural form of the synthetic Konjunktiv II of haben is hätten.',
+      explanation:
+        'The sie-plural form of the synthetic Konjunktiv II of haben is hätten.',
     },
     {
       id: 'ch60-ex-53',
@@ -1156,13 +1293,15 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'werden', 'wir-form'],
-      instruction: 'Write the Konjunktiv II form of werden for wir. Capitalisation is not checked.',
+      instruction:
+        'Write the Konjunktiv II form of werden for wir. Capitalisation is not checked.',
       prompt: 'wir → werden (Konjunktiv II)',
       acceptedAnswers: ['würden'],
       answerMode: 'caseInsensitive',
       placeholder: 'würden',
       maxLength: 15,
-      explanation: 'The wir-form of werden\'s Konjunktiv II is würden, used as the helper for wir + infinitive.',
+      explanation:
+        "The wir-form of werden's Konjunktiv II is würden, used as the helper for wir + infinitive.",
     },
     {
       id: 'ch60-ex-54',
@@ -1171,13 +1310,14 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'werden', 'ihr-form'],
-      instruction: 'Write the Konjunktiv II form of werden for ihr. Capitalisation is not checked.',
+      instruction:
+        'Write the Konjunktiv II form of werden for ihr. Capitalisation is not checked.',
       prompt: 'ihr → werden (Konjunktiv II)',
       acceptedAnswers: ['würdet'],
       answerMode: 'caseInsensitive',
       placeholder: 'würdet',
       maxLength: 15,
-      explanation: 'The ihr-form of werden\'s Konjunktiv II is würdet.',
+      explanation: "The ihr-form of werden's Konjunktiv II is würdet.",
     },
     {
       id: 'ch60-ex-55',
@@ -1186,7 +1326,8 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'modal-verbs', 'koennen', 'du-form'],
-      instruction: 'Write the synthetic Konjunktiv II form of können for du. Capitalisation is not checked.',
+      instruction:
+        'Write the synthetic Konjunktiv II form of können for du. Capitalisation is not checked.',
       prompt: 'du → können (Konjunktiv II)',
       acceptedAnswers: ['könntest'],
       answerMode: 'caseInsensitive',
@@ -1201,13 +1342,15 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'modal-verbs', 'muessen', 'er-form'],
-      instruction: 'Write the synthetic Konjunktiv II form of müssen for er/sie/es. Capitalisation is not checked.',
+      instruction:
+        'Write the synthetic Konjunktiv II form of müssen for er/sie/es. Capitalisation is not checked.',
       prompt: 'er/sie/es → müssen (Konjunktiv II)',
       acceptedAnswers: ['müsste'],
       answerMode: 'caseInsensitive',
       placeholder: 'müsste',
       maxLength: 15,
-      explanation: 'The er/sie/es-form of the synthetic Konjunktiv II of müssen is müsste.',
+      explanation:
+        'The er/sie/es-form of the synthetic Konjunktiv II of müssen is müsste.',
     },
     {
       id: 'ch60-ex-57',
@@ -1216,7 +1359,8 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'modal-verbs', 'duerfen', 'wir-form'],
-      instruction: 'Write the synthetic Konjunktiv II form of dürfen for wir. Capitalisation is not checked.',
+      instruction:
+        'Write the synthetic Konjunktiv II form of dürfen for wir. Capitalisation is not checked.',
       prompt: 'wir → dürfen (Konjunktiv II)',
       acceptedAnswers: ['dürften'],
       answerMode: 'caseInsensitive',
@@ -1231,13 +1375,15 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'modal-verbs', 'sollen', 'ihr-form'],
-      instruction: 'Write the synthetic Konjunktiv II form of sollen for ihr. Capitalisation is not checked.',
+      instruction:
+        'Write the synthetic Konjunktiv II form of sollen for ihr. Capitalisation is not checked.',
       prompt: 'ihr → sollen (Konjunktiv II)',
       acceptedAnswers: ['solltet'],
       answerMode: 'caseInsensitive',
       placeholder: 'solltet',
       maxLength: 15,
-      explanation: 'The ihr-form of sollen\'s Konjunktiv II is solltet, identical in shape to the simple past since sollen has no umlautable vowel.',
+      explanation:
+        "The ihr-form of sollen's Konjunktiv II is solltet, identical in shape to the simple past since sollen has no umlautable vowel.",
     },
     {
       id: 'ch60-ex-59',
@@ -1246,13 +1392,15 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'modal-verbs', 'wollen', 'sie-plural'],
-      instruction: 'Write the synthetic Konjunktiv II form of wollen for sie (plural). Capitalisation is not checked.',
+      instruction:
+        'Write the synthetic Konjunktiv II form of wollen for sie (plural). Capitalisation is not checked.',
       prompt: 'sie (plural) → wollen (Konjunktiv II)',
       acceptedAnswers: ['wollten'],
       answerMode: 'caseInsensitive',
       placeholder: 'wollten',
       maxLength: 15,
-      explanation: 'The sie-plural form of wollen\'s Konjunktiv II is wollten, identical in shape to the simple past since wollen has no umlautable vowel.',
+      explanation:
+        "The sie-plural form of wollen's Konjunktiv II is wollten, identical in shape to the simple past since wollen has no umlautable vowel.",
     },
     {
       id: 'ch60-ex-60',
@@ -1261,7 +1409,8 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'kommen', 'du-form', 'umlaut'],
-      instruction: 'Write the synthetic Konjunktiv II form of kommen for du. Capitalisation is not checked.',
+      instruction:
+        'Write the synthetic Konjunktiv II form of kommen for du. Capitalisation is not checked.',
       prompt: 'du → kommen (Konjunktiv II)',
       acceptedAnswers: ['kämest'],
       answerMode: 'caseInsensitive',
@@ -1276,13 +1425,15 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'gehen', 'wir-form'],
-      instruction: 'Write the synthetic Konjunktiv II form of gehen for wir. Capitalisation is not checked.',
+      instruction:
+        'Write the synthetic Konjunktiv II form of gehen for wir. Capitalisation is not checked.',
       prompt: 'wir → gehen (Konjunktiv II)',
       acceptedAnswers: ['gingen'],
       answerMode: 'caseInsensitive',
       placeholder: 'gingen',
       maxLength: 15,
-      explanation: 'ging has no umlautable vowel, so only the wir-ending -en is added: gingen.',
+      explanation:
+        'ging has no umlautable vowel, so only the wir-ending -en is added: gingen.',
     },
     {
       id: 'ch60-ex-62',
@@ -1291,13 +1442,15 @@ export const chapter060: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'transformation', 'haben'],
-      instruction: 'Rewrite the statement in Konjunktiv II, using the synthetic form of haben. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the statement in Konjunktiv II, using the synthetic form of haben. Capitalisation and punctuation are checked.',
       prompt: 'Er hat kein Geld. → Konjunktiv II mit hätte',
       acceptedAnswers: ['Er hätte kein Geld.', 'Er hätte kein Geld'],
       answerMode: 'normalized',
       placeholder: 'Er hätte ...',
       maxLength: 40,
-      explanation: 'hat becomes hätte, turning the factual statement into a hypothetical one: Er hätte kein Geld.',
+      explanation:
+        'hat becomes hätte, turning the factual statement into a hypothetical one: Er hätte kein Geld.',
     },
     {
       id: 'ch60-ex-63',
@@ -1311,7 +1464,8 @@ export const chapter060: ChapterDefinition = {
       templateParts: ['Er ', ' jetzt gern zu Hause.'],
       slots: [{ id: 'slot1', correctWord: 'wäre' }],
       wordBank: ['wäre', 'war', 'ist', 'würde'],
-      explanation: 'wäre is the synthetic Konjunktiv II form of sein for er; war is simple past, ist is present, and würde needs an infinitive to pair with, which sein avoids.',
+      explanation:
+        'wäre is the synthetic Konjunktiv II form of sein for er; war is simple past, ist is present, and würde needs an infinitive to pair with, which sein avoids.',
     },
     {
       id: 'ch60-ex-64',
@@ -1320,12 +1474,14 @@ export const chapter060: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'haben', 'ihr-form'],
-      instruction: 'Drag the correct synthetic Konjunktiv II form of haben into the slot.',
+      instruction:
+        'Drag the correct synthetic Konjunktiv II form of haben into the slot.',
       prompt: 'Ihr ___ bestimmt auch gern ein Auto.',
       templateParts: ['Ihr ', ' bestimmt auch gern ein Auto.'],
       slots: [{ id: 'slot1', correctWord: 'hättet' }],
       wordBank: ['hättet', 'hattet', 'habt', 'würdet'],
-      explanation: 'hättet is the ihr-form of the synthetic Konjunktiv II of haben; hattet is simple past, habt is present.',
+      explanation:
+        'hättet is the ihr-form of the synthetic Konjunktiv II of haben; hattet is simple past, habt is present.',
     },
     {
       id: 'ch60-ex-65',
@@ -1334,12 +1490,14 @@ export const chapter060: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'modal-verbs', 'koennen'],
-      instruction: 'Drag the correct synthetic Konjunktiv II form of können into the slot.',
+      instruction:
+        'Drag the correct synthetic Konjunktiv II form of können into the slot.',
       prompt: 'Ich ___ dir gern helfen.',
       templateParts: ['Ich ', ' dir gern helfen.'],
       slots: [{ id: 'slot1', correctWord: 'könnte' }],
       wordBank: ['könnte', 'konnte', 'kann', 'würde'],
-      explanation: 'könnte is the synthetic Konjunktiv II form of können; konnte is simple past and kann is present.',
+      explanation:
+        'könnte is the synthetic Konjunktiv II form of können; konnte is simple past and kann is present.',
     },
     {
       id: 'ch60-ex-66',
@@ -1348,12 +1506,14 @@ export const chapter060: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'modal-verbs', 'duerfen', 'wir-form'],
-      instruction: 'Drag the correct synthetic Konjunktiv II form of dürfen into the slot.',
+      instruction:
+        'Drag the correct synthetic Konjunktiv II form of dürfen into the slot.',
       prompt: 'Wir ___ das doch machen, oder?',
       templateParts: ['Wir ', ' das doch machen, oder?'],
       slots: [{ id: 'slot1', correctWord: 'dürften' }],
       wordBank: ['dürften', 'durften', 'dürfen', 'würden'],
-      explanation: 'dürften is the wir-form of the synthetic Konjunktiv II of dürfen; durften is simple past.',
+      explanation:
+        'dürften is the wir-form of the synthetic Konjunktiv II of dürfen; durften is simple past.',
     },
     {
       id: 'ch60-ex-67',
@@ -1362,12 +1522,14 @@ export const chapter060: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'modal-verbs', 'sollen'],
-      instruction: 'Drag the correct synthetic Konjunktiv II form of sollen into the slot.',
+      instruction:
+        'Drag the correct synthetic Konjunktiv II form of sollen into the slot.',
       prompt: 'Sie ___ eigentlich mehr schlafen.',
       templateParts: ['Sie ', ' eigentlich mehr schlafen.'],
       slots: [{ id: 'slot1', correctWord: 'sollte' }],
       wordBank: ['sollte', 'solltest', 'sollten', 'soll'],
-      explanation: 'sollte is the sie-singular form of sollen\'s Konjunktiv II, identical in shape to the simple past.',
+      explanation:
+        "sollte is the sie-singular form of sollen's Konjunktiv II, identical in shape to the simple past.",
     },
     {
       id: 'ch60-ex-68',
@@ -1376,12 +1538,14 @@ export const chapter060: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'kommen', 'umlaut'],
-      instruction: 'Drag the correct synthetic Konjunktiv II form of kommen into the slot.',
+      instruction:
+        'Drag the correct synthetic Konjunktiv II form of kommen into the slot.',
       prompt: 'Ich ___ gern mit, wenn ich Zeit hätte.',
       templateParts: ['Ich ', ' gern mit, wenn ich Zeit hätte.'],
       slots: [{ id: 'slot1', correctWord: 'käme' }],
       wordBank: ['käme', 'kam', 'komme', 'kame'],
-      explanation: 'kam umlauts to käm-, plus the ich-ending -e: käme; kame is missing the required umlaut.',
+      explanation:
+        'kam umlauts to käm-, plus the ich-ending -e: käme; kame is missing the required umlaut.',
     },
     {
       id: 'ch60-ex-69',
@@ -1390,7 +1554,8 @@ export const chapter060: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'geben', 'umlaut'],
-      instruction: 'Drag the correct synthetic Konjunktiv II form of geben into the slot.',
+      instruction:
+        'Drag the correct synthetic Konjunktiv II form of geben into the slot.',
       prompt: 'Er ___ mir sicher gern etwas.',
       templateParts: ['Er ', ' mir sicher gern etwas.'],
       slots: [{ id: 'slot1', correctWord: 'gäbe' }],
@@ -1404,12 +1569,14 @@ export const chapter060: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'sehen', 'du-form', 'umlaut'],
-      instruction: 'Drag the correct synthetic Konjunktiv II form of sehen into the slot.',
+      instruction:
+        'Drag the correct synthetic Konjunktiv II form of sehen into the slot.',
       prompt: 'Du ___ das bestimmt gern selbst.',
       templateParts: ['Du ', ' das bestimmt gern selbst.'],
       slots: [{ id: 'slot1', correctWord: 'sähest' }],
       wordBank: ['sähest', 'sahst', 'siehst', 'sähst'],
-      explanation: 'sah umlauts to säh-, and the du-ending is -est, giving sähest; sähst is missing the linking e.',
+      explanation:
+        'sah umlauts to säh-, and the du-ending is -est, giving sähest; sähst is missing the linking e.',
     },
     {
       id: 'ch60-ex-71',
@@ -1418,7 +1585,8 @@ export const chapter060: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'finden', 'wir-form', 'umlaut'],
-      instruction: 'Drag the correct synthetic Konjunktiv II form of finden into the slot.',
+      instruction:
+        'Drag the correct synthetic Konjunktiv II form of finden into the slot.',
       prompt: 'Wir ___ bestimmt eine Lösung.',
       templateParts: ['Wir ', ' bestimmt eine Lösung.'],
       slots: [{ id: 'slot1', correctWord: 'fänden' }],
@@ -1432,12 +1600,14 @@ export const chapter060: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'gehen', 'sie-plural'],
-      instruction: 'Drag the correct synthetic Konjunktiv II form of gehen into the slot.',
+      instruction:
+        'Drag the correct synthetic Konjunktiv II form of gehen into the slot.',
       prompt: 'Sie ___ jetzt gern schwimmen.',
       templateParts: ['Sie ', ' jetzt gern schwimmen.'],
       slots: [{ id: 'slot1', correctWord: 'gingen' }],
       wordBank: ['gingen', 'gehen', 'würden', 'ginget'],
-      explanation: 'ging has no umlautable vowel, so only the sie-plural ending -en is added: gingen.',
+      explanation:
+        'ging has no umlautable vowel, so only the sie-plural ending -en is added: gingen.',
     },
     {
       id: 'ch60-ex-73',
@@ -1454,7 +1624,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'slot2', correctWord: 'kaufen' },
       ],
       wordBank: ['würde', 'würdest', 'kaufen', 'verkaufen'],
-      explanation: 'kaufen has no natural synthetic form, so it takes würde + infinitive: würde ... kaufen, with würde in position 2 and the infinitive at the end.',
+      explanation:
+        'kaufen has no natural synthetic form, so it takes würde + infinitive: würde ... kaufen, with würde in position 2 and the infinitive at the end.',
     },
     {
       id: 'ch60-ex-74',
@@ -1471,7 +1642,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'slot2', correctWord: 'machen' },
       ],
       wordBank: ['würdest', 'würde', 'machen', 'schaffen'],
-      explanation: 'machen is a weak verb, so its Konjunktiv II is always würdest/würde + infinitive; here the subject du needs würdest.',
+      explanation:
+        'machen is a weak verb, so its Konjunktiv II is always würdest/würde + infinitive; here the subject du needs würdest.',
     },
     {
       id: 'ch60-ex-75',
@@ -1489,7 +1661,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'p4', left: 'können', right: 'könnte' },
         { id: 'p5', left: 'müssen', right: 'müsste' },
       ],
-      explanation: 'These five verbs keep a strongly preferred synthetic Konjunktiv II form in everyday German instead of the würde-construction.',
+      explanation:
+        'These five verbs keep a strongly preferred synthetic Konjunktiv II form in everyday German instead of the würde-construction.',
     },
     {
       id: 'ch60-ex-76',
@@ -1507,7 +1680,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'p4', left: 'sollen', right: 'sollte' },
         { id: 'p5', left: 'können', right: 'könnte' },
       ],
-      explanation: 'All six modal verbs keep a synthetic Konjunktiv II form; wollte and sollte happen to look identical to the simple past because their stems have no umlautable vowel.',
+      explanation:
+        'All six modal verbs keep a synthetic Konjunktiv II form; wollte and sollte happen to look identical to the simple past because their stems have no umlautable vowel.',
     },
     {
       id: 'ch60-ex-77',
@@ -1516,7 +1690,8 @@ export const chapter060: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'strong-verbs', 'umlaut'],
-      instruction: 'Match each strong verb to its synthetic Konjunktiv II (er/sie/es-form).',
+      instruction:
+        'Match each strong verb to its synthetic Konjunktiv II (er/sie/es-form).',
       prompt: 'Infinitive → Konjunktiv II (er/sie/es)',
       pairs: [
         { id: 'p1', left: 'kommen', right: 'käme' },
@@ -1525,7 +1700,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'p4', left: 'sehen', right: 'sähe' },
         { id: 'p5', left: 'nehmen', right: 'nähme' },
       ],
-      explanation: 'kommen, geben, sehen, and nehmen umlaut their simple-past stem vowel; gehen has no umlautable vowel, so only the ending changes.',
+      explanation:
+        'kommen, geben, sehen, and nehmen umlaut their simple-past stem vowel; gehen has no umlautable vowel, so only the ending changes.',
     },
     {
       id: 'ch60-ex-78',
@@ -1543,7 +1719,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'p4', left: 'tun', right: 'täte' },
         { id: 'p5', left: 'waschen', right: 'wüsche' },
       ],
-      explanation: 'All five stems take the umlaut-plus-ending pattern; wissen is a mixed verb but still follows the same umlaut logic (wusst- → wüsst-).',
+      explanation:
+        'All five stems take the umlaut-plus-ending pattern; wissen is a mixed verb but still follows the same umlaut logic (wusst- → wüsst-).',
     },
     {
       id: 'ch60-ex-79',
@@ -1561,7 +1738,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'p4', left: 'sah', right: 'säh-' },
         { id: 'p5', left: 'sprach', right: 'spräch-' },
       ],
-      explanation: 'Each simple-past stem umlauts its a/o/u vowel to ä/ö/ü to form the Konjunktiv II stem, which then takes the -e/-est/-e/-en/-et/-en endings.',
+      explanation:
+        'Each simple-past stem umlauts its a/o/u vowel to ä/ö/ü to form the Konjunktiv II stem, which then takes the -e/-est/-e/-en/-et/-en endings.',
     },
     {
       id: 'ch60-ex-80',
@@ -1579,7 +1757,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'p4', left: 'I would go', right: 'ginge' },
         { id: 'p5', left: 'I would like to', right: 'möchte' },
       ],
-      explanation: 'Each English "would ..." meaning maps onto its own synthetic German Konjunktiv II form.',
+      explanation:
+        'Each English "would ..." meaning maps onto its own synthetic German Konjunktiv II form.',
     },
     {
       id: 'ch60-ex-81',
@@ -1597,7 +1776,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'p4', left: 'Er ___ müde.', right: 'wäre' },
         { id: 'p5', left: 'Ihr ___ mehr Zeit.', right: 'hättet' },
       ],
-      explanation: 'Each gap needs the synthetic Konjunktiv II form matching its subject and verb: käme (kommen), könntest (können), fänden (finden), wäre (sein), hättet (haben).',
+      explanation:
+        'Each gap needs the synthetic Konjunktiv II form matching its subject and verb: käme (kommen), könntest (können), fänden (finden), wäre (sein), hättet (haben).',
     },
     {
       id: 'ch60-ex-82',
@@ -1606,7 +1786,8 @@ export const chapter060: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'wuerde-konstruktion', 'weak-verbs'],
-      instruction: 'Match each weak verb to its Konjunktiv II würde-construction (ich-form).',
+      instruction:
+        'Match each weak verb to its Konjunktiv II würde-construction (ich-form).',
       prompt: 'Infinitive → würde-construction (ich)',
       pairs: [
         { id: 'p1', left: 'machen', right: 'würde machen' },
@@ -1615,7 +1796,8 @@ export const chapter060: ChapterDefinition = {
         { id: 'p4', left: 'lernen', right: 'würde lernen' },
         { id: 'p5', left: 'arbeiten', right: 'würde arbeiten' },
       ],
-      explanation: 'Weak verbs have no natural synthetic Konjunktiv II form (it would be identical to the simple past), so they always use würde + infinitive.',
+      explanation:
+        'Weak verbs have no natural synthetic Konjunktiv II form (it would be identical to the simple past), so they always use würde + infinitive.',
     },
     {
       id: 'ch60-ex-83',
@@ -1629,7 +1811,8 @@ export const chapter060: ChapterDefinition = {
       tokens: ['Ich', 'kame', 'gern', 'mit.'],
       errorTokenIndex: 1,
       correction: 'käme',
-      explanation: 'The synthetic Konjunktiv II stem of kommen needs its umlaut: kam- becomes käm-, so the correct form is käme, not kame.',
+      explanation:
+        'The synthetic Konjunktiv II stem of kommen needs its umlaut: kam- becomes käm-, so the correct form is käme, not kame.',
     },
     {
       id: 'ch60-ex-84',
@@ -1638,12 +1821,14 @@ export const chapter060: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'kommen', 'du-ending'],
-      instruction: 'Find the token that is missing the correct Konjunktiv II du-ending and correct it.',
+      instruction:
+        'Find the token that is missing the correct Konjunktiv II du-ending and correct it.',
       prompt: 'Du kämst gern mit.',
       tokens: ['Du', 'kämst', 'gern', 'mit.'],
       errorTokenIndex: 1,
       correction: 'kämest',
-      explanation: 'The Konjunktiv II du-ending is -est, not just -st: the umlauted stem käm- needs kämest, not kämst.',
+      explanation:
+        'The Konjunktiv II du-ending is -est, not just -st: the umlauted stem käm- needs kämest, not kämst.',
     },
     {
       id: 'ch60-ex-85',
@@ -1652,12 +1837,24 @@ export const chapter060: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'finden', 'umlaut'],
-      instruction: 'Find the token that is missing its Konjunktiv II umlaut and correct it.',
+      instruction:
+        'Find the token that is missing its Konjunktiv II umlaut and correct it.',
       prompt: 'Wenn wir zusammenarbeiten würden, fanden wir bestimmt eine Lösung.',
-      tokens: ['Wenn', 'wir', 'zusammenarbeiten', 'würden,', 'fanden', 'wir', 'bestimmt', 'eine', 'Lösung.'],
+      tokens: [
+        'Wenn',
+        'wir',
+        'zusammenarbeiten',
+        'würden,',
+        'fanden',
+        'wir',
+        'bestimmt',
+        'eine',
+        'Lösung.',
+      ],
       errorTokenIndex: 4,
       correction: 'fänden',
-      explanation: 'In this hypothetical wenn-sentence, the verb must be Konjunktiv II: fand- umlauts to fänd-, giving fänden, not the plain simple-past fanden.',
+      explanation:
+        'In this hypothetical wenn-sentence, the verb must be Konjunktiv II: fand- umlauts to fänd-, giving fänden, not the plain simple-past fanden.',
     },
     {
       id: 'ch60-ex-86',
@@ -1666,12 +1863,14 @@ export const chapter060: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'geben', 'umlaut'],
-      instruction: 'Find the token that is missing its Konjunktiv II umlaut and correct it.',
+      instruction:
+        'Find the token that is missing its Konjunktiv II umlaut and correct it.',
       prompt: 'Er gabe mir sicher gern etwas.',
       tokens: ['Er', 'gabe', 'mir', 'sicher', 'gern', 'etwas.'],
       errorTokenIndex: 1,
       correction: 'gäbe',
-      explanation: 'The synthetic Konjunktiv II stem of geben needs its umlaut: gab- becomes gäb-, so the correct form is gäbe, not gabe.',
+      explanation:
+        'The synthetic Konjunktiv II stem of geben needs its umlaut: gab- becomes gäb-, so the correct form is gäbe, not gabe.',
     },
     {
       id: 'ch60-ex-87',
@@ -1680,12 +1879,14 @@ export const chapter060: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'fahren', 'umlaut'],
-      instruction: 'Find the token that is missing its Konjunktiv II umlaut and correct it.',
+      instruction:
+        'Find the token that is missing its Konjunktiv II umlaut and correct it.',
       prompt: 'Du fuhrest bestimmt gern mit dem Zug.',
       tokens: ['Du', 'fuhrest', 'bestimmt', 'gern', 'mit', 'dem', 'Zug.'],
       errorTokenIndex: 1,
       correction: 'führest',
-      explanation: 'The synthetic Konjunktiv II stem of fahren needs its umlaut: fuhr- becomes führ-, so the correct form is führest, not fuhrest.',
+      explanation:
+        'The synthetic Konjunktiv II stem of fahren needs its umlaut: fuhr- becomes führ-, so the correct form is führest, not fuhrest.',
     },
     {
       id: 'ch60-ex-88',
@@ -1699,7 +1900,8 @@ export const chapter060: ChapterDefinition = {
       tokens: ['Sie', 'tuten', 'das', 'bestimmt', 'gern', 'für', 'dich.'],
       errorTokenIndex: 1,
       correction: 'täten',
-      explanation: 'tun\'s synthetic Konjunktiv II stem is the umlauted simple-past stem tät- plus the sie-plural ending -en, giving täten, not tuten.',
+      explanation:
+        "tun's synthetic Konjunktiv II stem is the umlauted simple-past stem tät- plus the sie-plural ending -en, giving täten, not tuten.",
     },
     {
       id: 'ch60-ex-89',
@@ -1708,7 +1910,8 @@ export const chapter060: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'wuerde-konstruktion', 'word-order'],
-      instruction: 'Put the words in the correct order to form a natural Konjunktiv II sentence.',
+      instruction:
+        'Put the words in the correct order to form a natural Konjunktiv II sentence.',
       prompt: 'I would like to go home now.',
       segments: [
         { id: 's1', text: 'Ich' },
@@ -1719,7 +1922,8 @@ export const chapter060: ChapterDefinition = {
         { id: 's6', text: 'Hause' },
         { id: 's7', text: 'gehen.' },
       ],
-      explanation: 'würde stays in position 2, and the infinitive gehen is sent to the very end of the clause: Ich würde jetzt gern nach Hause gehen.',
+      explanation:
+        'würde stays in position 2, and the infinitive gehen is sent to the very end of the clause: Ich würde jetzt gern nach Hause gehen.',
     },
     {
       id: 'ch60-ex-90',
@@ -1728,7 +1932,8 @@ export const chapter060: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'moegen', 'moechte', 'word-order'],
-      instruction: 'Put the words in the correct order to form a natural Konjunktiv II sentence.',
+      instruction:
+        'Put the words in the correct order to form a natural Konjunktiv II sentence.',
       prompt: 'I would like to order a coffee.',
       segments: [
         { id: 's1', text: 'Ich' },
@@ -1738,7 +1943,8 @@ export const chapter060: ChapterDefinition = {
         { id: 's5', text: 'Kaffee' },
         { id: 's6', text: 'bestellen.' },
       ],
-      explanation: 'möchte occupies position 2 as the finite verb, and the infinitive bestellen is sent to the end of the clause: Ich möchte gern einen Kaffee bestellen.',
+      explanation:
+        'möchte occupies position 2 as the finite verb, and the infinitive bestellen is sent to the end of the clause: Ich möchte gern einen Kaffee bestellen.',
     },
   ],
 };

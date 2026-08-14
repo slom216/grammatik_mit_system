@@ -9,7 +9,7 @@ export function AboutPage() {
         <p>
           Grammatik mit System is an independent, browser-based course for German grammar
           from A1 to B1. Each chapter contains an explanation, examples, typical mistakes,
-          a short summary and at least 24 exercises.
+          a short summary and between 50 and 100 exercises.
         </p>
       </Card>
 

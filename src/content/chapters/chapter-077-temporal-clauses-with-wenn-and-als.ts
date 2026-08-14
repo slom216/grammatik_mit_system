@@ -32,7 +32,8 @@ export const chapter077: ChapterDefinition = {
     rules: [
       {
         id: 'ch77-rule-01',
-        heading: 'The core decision: als for one single past event, wenn for everything else',
+        heading:
+          'The core decision: als for one single past event, wenn for everything else',
         paragraphs: [
           'als is used exclusively for a single, unrepeated event or stretch of time that took place in the past. It does not matter whether that event was an instant (Als es klingelte, ... — when the doorbell rang) or an extended period (Als ich in München wohnte, ... — when I lived in Munich); what matters is that it happened once, not repeatedly.',
           'wenn covers every other situation: repeated events (in the past, present, or future), habitual or general statements, single events in the present or future, and conditions. In short: als is the narrow, one-time-past specialist; wenn is the flexible default that handles everything else, including repetition inside the past.',
@@ -74,7 +75,7 @@ export const chapter077: ChapterDefinition = {
         id: 'ch77-rule-06',
         heading: 'Clause order and inversion; wenn can still mean "if"',
         paragraphs: [
-          'As with any subordinate clause, the wenn- or als-clause can come first or second, and a comma always separates the two clauses. When the subordinate clause opens the sentence, it occupies position 1 by itself, so the main clause\'s finite verb must follow immediately after the comma, before its own subject: Als ich acht Jahre alt war, zogen wir nach Hamburg. (zogen right after the comma, subject wir after that).',
+          "As with any subordinate clause, the wenn- or als-clause can come first or second, and a comma always separates the two clauses. When the subordinate clause opens the sentence, it occupies position 1 by itself, so the main clause's finite verb must follow immediately after the comma, before its own subject: Als ich acht Jahre alt war, zogen wir nach Hamburg. (zogen right after the comma, subject wir after that).",
           'Finally, remember that wenn has not stopped meaning "if" — Chapter 46 covered that conditional use, and it has not gone away. Wenn es regnet, bleibe ich zu Hause could mean "if it rains" (a condition) or "whenever it rains" (a repeated time); only the surrounding context tells you which. This chapter does not re-teach the conditional use — it simply asks you to keep it in mind so you are not surprised to see wenn outside of strictly temporal sentences.',
         ],
       },
@@ -85,22 +86,54 @@ export const chapter077: ChapterDefinition = {
         title: 'Deciding between wenn and als',
         columns: ['Type of event', 'Connector', 'Example'],
         rows: [
-          ['Single event or period in the past (once)', 'als', 'Als ich acht Jahre alt war, zogen wir nach Hamburg.'],
-          ['Repeated event in the past (immer, jedes Mal, jeden Tag)', 'wenn', 'Immer wenn er kam, freute sich der Hund.'],
-          ['Habitual or general situation in the present', 'wenn', 'Wenn ich Zeit habe, gehe ich schwimmen.'],
-          ['A single event in the future', 'wenn', 'Wenn ich in Berlin ankomme, rufe ich dich an.'],
-          ['A condition ("if"), any time', 'wenn', 'Wenn es regnet, bleibe ich zu Hause.'],
+          [
+            'Single event or period in the past (once)',
+            'als',
+            'Als ich acht Jahre alt war, zogen wir nach Hamburg.',
+          ],
+          [
+            'Repeated event in the past (immer, jedes Mal, jeden Tag)',
+            'wenn',
+            'Immer wenn er kam, freute sich der Hund.',
+          ],
+          [
+            'Habitual or general situation in the present',
+            'wenn',
+            'Wenn ich Zeit habe, gehe ich schwimmen.',
+          ],
+          [
+            'A single event in the future',
+            'wenn',
+            'Wenn ich in Berlin ankomme, rufe ich dich an.',
+          ],
+          [
+            'A condition ("if"), any time',
+            'wenn',
+            'Wenn es regnet, bleibe ich zu Hause.',
+          ],
         ],
         note: 'als is reserved exclusively for a single, unrepeated stretch of time in the past; wenn covers every other case, including events that repeat entirely within the past.',
       },
       {
         id: 'ch77-table-02',
         title: 'Clause order: subordinate clause first or second',
-        columns: ['Main clause first (neutral order)', 'Subordinate clause first (inversion)'],
+        columns: [
+          'Main clause first (neutral order)',
+          'Subordinate clause first (inversion)',
+        ],
         rows: [
-          ['Ich rufe dich an, wenn ich in Berlin ankomme.', 'Wenn ich in Berlin ankomme, rufe ich dich an.'],
-          ['Wir zogen nach Hamburg, als ich acht Jahre alt war.', 'Als ich acht Jahre alt war, zogen wir nach Hamburg.'],
-          ['Der Hund freute sich, immer wenn er kam.', 'Immer wenn er kam, freute sich der Hund.'],
+          [
+            'Ich rufe dich an, wenn ich in Berlin ankomme.',
+            'Wenn ich in Berlin ankomme, rufe ich dich an.',
+          ],
+          [
+            'Wir zogen nach Hamburg, als ich acht Jahre alt war.',
+            'Als ich acht Jahre alt war, zogen wir nach Hamburg.',
+          ],
+          [
+            'Der Hund freute sich, immer wenn er kam.',
+            'Immer wenn er kam, freute sich der Hund.',
+          ],
         ],
         note: 'Whichever clause comes first, the finite verb of the main clause occupies position 2 of the whole sentence — right after the comma when the subordinate clause leads.',
       },
@@ -116,42 +149,49 @@ export const chapter077: ChapterDefinition = {
         german: 'Immer wenn er kam, freute sich der Hund.',
         english: 'Whenever he came, the dog was happy.',
         highlight: ['Immer wenn er kam'],
-        explanation: 'A repeated event, even though it lies entirely in the past, still requires wenn, not als.',
+        explanation:
+          'A repeated event, even though it lies entirely in the past, still requires wenn, not als.',
       },
       {
         german: 'Wenn ich in Berlin ankomme, rufe ich dich an.',
         english: "When I arrive in Berlin, I'll call you.",
         highlight: ['Wenn ich in Berlin ankomme'],
-        explanation: 'A single future event still takes wenn; als is reserved for the past.',
+        explanation:
+          'A single future event still takes wenn; als is reserved for the past.',
       },
       {
         german: 'Als ich acht Jahre alt war, zogen wir nach Hamburg.',
         english: 'When I was eight years old, we moved to Hamburg.',
         highlight: ['Als ich acht Jahre alt war'],
-        explanation: 'Being eight years old happened once, so this single past period takes als.',
+        explanation:
+          'Being eight years old happened once, so this single past period takes als.',
       },
       {
         german: 'Als es klingelte, öffnete sie die Tür.',
         english: 'When the doorbell rang, she opened the door.',
         highlight: ['Als es klingelte'],
-        explanation: 'A single, one-time moment in the past — even a very short one — takes als.',
+        explanation:
+          'A single, one-time moment in the past — even a very short one — takes als.',
       },
       {
         german: 'Als ich in München wohnte, habe ich oft im Park gejoggt.',
         english: 'When I lived in Munich, I often jogged in the park.',
         highlight: ['Als ich in München wohnte'],
-        explanation: 'als marks the one, unrepeated period of living in Munich, even though the jogging inside it happened repeatedly.',
+        explanation:
+          'als marks the one, unrepeated period of living in Munich, even though the jogging inside it happened repeatedly.',
       },
       {
         german: 'Jedes Mal, wenn es regnete, blieben wir zu Hause.',
         english: 'Every time it rained, we stayed home.',
         highlight: ['Jedes Mal, wenn es regnete'],
-        explanation: 'jedes Mal signals repetition, so wenn is required even though every occurrence is in the past.',
+        explanation:
+          'jedes Mal signals repetition, so wenn is required even though every occurrence is in the past.',
       },
       {
         german: 'Wenn es regnet, bleibe ich zu Hause.',
         english: 'If it rains, I stay home. / Whenever it rains, I stay home.',
-        explanation: 'Out of context, wenn can mean either "if" (a condition) or "whenever" (a repeated time); context decides which.',
+        explanation:
+          'Out of context, wenn can mean either "if" (a condition) or "whenever" (a repeated time); context decides which.',
       },
       {
         german: 'Als der Film zu Ende war, gingen wir essen.',
@@ -163,19 +203,22 @@ export const chapter077: ChapterDefinition = {
         german: 'Wenn das Wetter schön ist, machen wir einen Ausflug.',
         english: 'When the weather is nice, we go on a trip.',
         highlight: ['machen wir'],
-        explanation: 'The wenn-clause fills position 1, so the main-clause verb machen follows immediately after the comma.',
+        explanation:
+          'The wenn-clause fills position 1, so the main-clause verb machen follows immediately after the comma.',
       },
       {
         german: 'Als ich jung war, spielte ich oft Fußball.',
         english: 'When I was young, I often played football.',
         highlight: ['spielte ich'],
-        explanation: 'The als-clause fills position 1, so the verb spielte comes immediately after the comma, before its subject ich.',
+        explanation:
+          'The als-clause fills position 1, so the verb spielte comes immediately after the comma, before its subject ich.',
       },
       {
         german: 'Als ich die Prüfung bestanden hatte, war ich sehr glücklich.',
         english: 'When I had passed the exam, I was very happy.',
         highlight: ['bestanden hatte'],
-        explanation: 'als works with any past tense, here the Plusquamperfekt; the auxiliary hatte still moves to the very end of the clause.',
+        explanation:
+          'als works with any past tense, here the Plusquamperfekt; the auxiliary hatte still moves to the very end of the clause.',
       },
       {
         german: 'Wenn ich mehr Geld verdiene, kaufe ich ein neues Auto.',
@@ -187,14 +230,16 @@ export const chapter077: ChapterDefinition = {
         german: 'Wenn wir Kinder waren, spielten wir jeden Tag draußen.',
         english: 'When we were children, we played outside every day.',
         highlight: ['jeden Tag'],
-        explanation: 'A repeated childhood habit uses wenn, not als, despite being entirely in the past — the classic trap for learners.',
+        explanation:
+          'A repeated childhood habit uses wenn, not als, despite being entirely in the past — the classic trap for learners.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Als ich Zeit habe, gehe ich schwimmen.',
         correct: 'Wenn ich Zeit habe, gehe ich schwimmen.',
-        explanation: 'als is only ever used for the past; a present habitual action needs wenn.',
+        explanation:
+          'als is only ever used for the past; a present habitual action needs wenn.',
       },
       {
         incorrect: 'Wenn ich acht Jahre alt war, zogen wir nach Hamburg.',
@@ -204,17 +249,20 @@ export const chapter077: ChapterDefinition = {
       {
         incorrect: 'Als wir Kinder waren, spielten wir jeden Tag draußen.',
         correct: 'Wenn wir Kinder waren, spielten wir jeden Tag draußen.',
-        explanation: 'Repeated childhood actions (jeden Tag) use wenn even though they are entirely in the past; als is reserved for single events.',
+        explanation:
+          'Repeated childhood actions (jeden Tag) use wenn even though they are entirely in the past; als is reserved for single events.',
       },
       {
         incorrect: 'Als es klingelte, sie öffnete die Tür.',
         correct: 'Als es klingelte, öffnete sie die Tür.',
-        explanation: 'When the subordinate clause comes first, the main-clause verb must come immediately after the comma, before its subject.',
+        explanation:
+          'When the subordinate clause comes first, the main-clause verb must come immediately after the comma, before its subject.',
       },
       {
         incorrect: 'Als ich war acht Jahre alt, zogen wir nach Hamburg.',
         correct: 'Als ich acht Jahre alt war, zogen wir nach Hamburg.',
-        explanation: 'als sends the finite verb to the very end of its clause; war belongs after acht Jahre alt, not right after the subject.',
+        explanation:
+          'als sends the finite verb to the very end of its clause; war belongs after acht Jahre alt, not right after the subject.',
       },
     ],
     remember: [
@@ -223,7 +271,7 @@ export const chapter077: ChapterDefinition = {
       'wenn also means "if" (a condition); context, not grammar, tells you whether a given wenn-clause is temporal or conditional.',
       'Both als and wenn push the finite verb to the end of their clause, exactly like weil and dass.',
       'A comma always separates the two clauses, whichever order they come in.',
-      'When the als- or wenn-clause opens the sentence, the main clause\'s verb comes immediately after the comma, before its subject.',
+      "When the als- or wenn-clause opens the sentence, the main clause's verb comes immediately after the comma, before its subject.",
     ],
   },
   mastery: {
@@ -241,7 +289,8 @@ export const chapter077: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['wenn-vs-als', 'connector-choice', 'single-past-event'],
       instruction: 'Choose the connector that fits.',
-      prompt: '___ ich acht Jahre alt war, zogen wir nach Hamburg. (a single event in the past)',
+      prompt:
+        '___ ich acht Jahre alt war, zogen wir nach Hamburg. (a single event in the past)',
       options: [
         { id: 'a', text: 'als' },
         { id: 'b', text: 'wenn' },
@@ -249,7 +298,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'd', text: 'weil' },
       ],
       correctOptionId: 'a',
-      explanation: 'als introduces a single, unrepeated event or period in the past — here, being eight years old happened only once.',
+      explanation:
+        'als introduces a single, unrepeated event or period in the past — here, being eight years old happened only once.',
     },
     {
       id: 'ch77-ex-02',
@@ -259,7 +309,8 @@ export const chapter077: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['wenn-vs-als', 'connector-choice', 'repeated-past'],
       instruction: 'Choose the connector that fits.',
-      prompt: 'Immer ___ er nach Hause kam, freute sich der Hund. (a repeated event in the past)',
+      prompt:
+        'Immer ___ er nach Hause kam, freute sich der Hund. (a repeated event in the past)',
       options: [
         { id: 'a', text: 'als' },
         { id: 'b', text: 'wenn' },
@@ -267,7 +318,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'd', text: 'dass' },
       ],
       correctOptionId: 'b',
-      explanation: 'Even though this is in the past, the event repeats (immer), so wenn is required, not als.',
+      explanation:
+        'Even though this is in the past, the event repeats (immer), so wenn is required, not als.',
     },
     {
       id: 'ch77-ex-03',
@@ -303,7 +355,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'd', text: 'dass' },
       ],
       correctOptionId: 'b',
-      explanation: 'als is only ever used for the past; a future event — even a single one — takes wenn.',
+      explanation:
+        'als is only ever used for the past; a future event — even a single one — takes wenn.',
     },
     {
       id: 'ch77-ex-05',
@@ -330,7 +383,8 @@ export const chapter077: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['wenn-vs-als', 'timeline-interpretation', 'repeated-past'],
-      instruction: 'Read the sentence and decide which connector is grammatically required.',
+      instruction:
+        'Read the sentence and decide which connector is grammatically required.',
       prompt: 'Jedes Mal, ___ es regnete, blieben wir zu Hause. (jedes Mal = every time)',
       options: [
         { id: 'a', text: 'als' },
@@ -339,7 +393,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'd', text: 'ob' },
       ],
       correctOptionId: 'b',
-      explanation: 'jedes Mal signals repetition; repeated past events always take wenn, never als, no matter how far in the past they are.',
+      explanation:
+        'jedes Mal signals repetition; repeated past events always take wenn, never als, no matter how far in the past they are.',
     },
     {
       id: 'ch77-ex-07',
@@ -349,15 +404,20 @@ export const chapter077: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['wenn-vs-als', 'timeline-interpretation'],
       instruction: 'Read the sentence and choose the correct interpretation.',
-      prompt: 'Als ich in München wohnte, habe ich oft im Park gejoggt. What does als refer to here?',
+      prompt:
+        'Als ich in München wohnte, habe ich oft im Park gejoggt. What does als refer to here?',
       options: [
-        { id: 'a', text: 'The single, continuous period of living in Munich (jogging inside it may have happened many times).' },
+        {
+          id: 'a',
+          text: 'The single, continuous period of living in Munich (jogging inside it may have happened many times).',
+        },
         { id: 'b', text: 'Each individual time the speaker went jogging.' },
         { id: 'c', text: 'A condition: "if I lived in Munich".' },
         { id: 'd', text: 'A future plan to live in Munich.' },
       ],
       correctOptionId: 'a',
-      explanation: 'als marks the one unrepeated life period ("when I lived in Munich"); that jogging happened repeatedly inside that single period does not change the connector.',
+      explanation:
+        'als marks the one unrepeated life period ("when I lived in Munich"); that jogging happened repeatedly inside that single period does not change the connector.',
     },
     {
       id: 'ch77-ex-08',
@@ -375,7 +435,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'd', text: 'Wenn Zeit ich habe, gehe ich schwimmen.' },
       ],
       correctOptionId: 'b',
-      explanation: 'wenn sends the finite verb to the end of its clause: Wenn ich Zeit habe, ...',
+      explanation:
+        'wenn sends the finite verb to the end of its clause: Wenn ich Zeit habe, ...',
     },
     {
       id: 'ch77-ex-09',
@@ -393,7 +454,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'd', text: 'Als zu Ende der Film war, gingen wir essen.' },
       ],
       correctOptionId: 'b',
-      explanation: 'als sends the finite verb war to the end of its clause: Als der Film zu Ende war, ...',
+      explanation:
+        'als sends the finite verb war to the end of its clause: Als der Film zu Ende war, ...',
     },
     {
       id: 'ch77-ex-10',
@@ -411,7 +473,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'd', text: 'Wenn das Wetter schön ist, wir einen Ausflug machen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The wenn-clause fills position 1, so the main-clause verb machen comes immediately after the comma, before its subject wir.',
+      explanation:
+        'The wenn-clause fills position 1, so the main-clause verb machen comes immediately after the comma, before its subject wir.',
     },
     {
       id: 'ch77-ex-11',
@@ -429,7 +492,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'd', text: 'Als ich jung war, spielte oft ich Fußball.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The als-clause fills position 1, so the verb spielte comes immediately after the comma, before its subject ich.',
+      explanation:
+        'The als-clause fills position 1, so the verb spielte comes immediately after the comma, before its subject ich.',
     },
     {
       id: 'ch77-ex-12',
@@ -439,15 +503,23 @@ export const chapter077: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['wenn', 'conditional-vs-temporal'],
       instruction: 'Choose the statement that correctly explains the sentence.',
-      prompt: 'Wenn es regnet, bleibe ich zu Hause. — Which is true about this sentence, taken out of context?',
+      prompt:
+        'Wenn es regnet, bleibe ich zu Hause. — Which is true about this sentence, taken out of context?',
       options: [
-        { id: 'a', text: 'wenn could mean either "if it rains" (a condition) or "whenever it rains" (a repeated time); only context disambiguates.' },
+        {
+          id: 'a',
+          text: 'wenn could mean either "if it rains" (a condition) or "whenever it rains" (a repeated time); only context disambiguates.',
+        },
         { id: 'b', text: 'wenn can only mean "if" here.' },
         { id: 'c', text: 'wenn can only mean "whenever" here.' },
-        { id: 'd', text: 'This sentence must use als instead, since it refers to weather.' },
+        {
+          id: 'd',
+          text: 'This sentence must use als instead, since it refers to weather.',
+        },
       ],
       correctOptionId: 'a',
-      explanation: 'Outside of a wider context, wenn is genuinely ambiguous between a condition and a repeated/future time — both readings are grammatical.',
+      explanation:
+        'Outside of a wider context, wenn is genuinely ambiguous between a condition and a repeated/future time — both readings are grammatical.',
     },
     {
       id: 'ch77-ex-13',
@@ -458,7 +530,11 @@ export const chapter077: ChapterDefinition = {
       grammarFocus: ['wenn-vs-als', 'dialogue', 'connector-choice'],
       instruction: "Choose the connector that correctly completes Lena's sentence.",
       dialogue: [
-        { speaker: 'Paul', german: 'Wie war deine Kindheit?', english: 'What was your childhood like?' },
+        {
+          speaker: 'Paul',
+          german: 'Wie war deine Kindheit?',
+          english: 'What was your childhood like?',
+        },
         {
           speaker: 'Lena',
           german: 'Schön! ___ wir Kinder waren, spielten wir jeden Tag draußen.',
@@ -473,7 +549,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'd', text: 'Ob' },
       ],
       correctOptionId: 'b',
-      explanation: 'jeden Tag shows this childhood activity repeated; a repeated past habit takes wenn, even though "als Kinder" might feel tempting.',
+      explanation:
+        'jeden Tag shows this childhood activity repeated; a repeated past habit takes wenn, even though "als Kinder" might feel tempting.',
     },
     {
       id: 'ch77-ex-14',
@@ -488,10 +565,14 @@ export const chapter077: ChapterDefinition = {
         { id: 'a', text: 'Als wir Kinder waren, spielten wir jeden Tag draußen.' },
         { id: 'b', text: 'Wenn wir Kinder waren, spielten wir jeden Tag draußen.' },
         { id: 'c', text: 'Als wir Kinder waren, spielen wir jeden Tag draußen.' },
-        { id: 'd', text: 'Wenn wir Kinder gewesen sind, jeden Tag draußen spielten wir.' },
+        {
+          id: 'd',
+          text: 'Wenn wir Kinder gewesen sind, jeden Tag draußen spielten wir.',
+        },
       ],
       correctOptionId: 'b',
-      explanation: 'A habitual, repeated action in the past (jeden Tag) takes wenn; als would wrongly suggest this happened only once.',
+      explanation:
+        'A habitual, repeated action in the past (jeden Tag) takes wenn; als would wrongly suggest this happened only once.',
     },
     {
       id: 'ch77-ex-15',
@@ -500,7 +581,8 @@ export const chapter077: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['wenn-vs-als', 'error-spotting'],
-      instruction: 'One of these sentences misuses wenn or als. Identify the incorrect sentence.',
+      instruction:
+        'One of these sentences misuses wenn or als. Identify the incorrect sentence.',
       prompt: 'Which sentence is grammatically wrong?',
       options: [
         { id: 'a', text: 'Als ich acht Jahre alt war, zogen wir nach Hamburg.' },
@@ -509,7 +591,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'd', text: 'Immer wenn er kam, freute sich der Hund.' },
       ],
       correctOptionId: 'c',
-      explanation: 'als is reserved for the past; a future event (morgen) must use wenn: Wenn ich morgen ankomme, ...',
+      explanation:
+        'als is reserved for the past; a future event (morgen) must use wenn: Wenn ich morgen ankomme, ...',
     },
     {
       id: 'ch77-ex-16',
@@ -518,13 +601,15 @@ export const chapter077: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['wenn-vs-als', 'connector-choice', 'single-past-event'],
-      instruction: 'Write only the missing connector (als or wenn). Capitalisation is not checked.',
+      instruction:
+        'Write only the missing connector (als or wenn). Capitalisation is not checked.',
       prompt: '___ ich zwölf war, bekam ich mein erstes Fahrrad. (a single past event)',
       acceptedAnswers: ['als'],
       answerMode: 'caseInsensitive',
       placeholder: 'als',
       maxLength: 6,
-      explanation: 'A single event that happened once in the past — receiving the first bike — takes als.',
+      explanation:
+        'A single event that happened once in the past — receiving the first bike — takes als.',
     },
     {
       id: 'ch77-ex-17',
@@ -533,8 +618,10 @@ export const chapter077: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['wenn-vs-als', 'connector-choice', 'repeated-past'],
-      instruction: 'Write only the missing connector (als or wenn). Capitalisation is not checked.',
-      prompt: '___ meine Oma zu Besuch kam, backte sie immer einen Kuchen. (a repeated past event)',
+      instruction:
+        'Write only the missing connector (als or wenn). Capitalisation is not checked.',
+      prompt:
+        '___ meine Oma zu Besuch kam, backte sie immer einen Kuchen. (a repeated past event)',
       acceptedAnswers: ['wenn'],
       answerMode: 'caseInsensitive',
       placeholder: 'wenn',
@@ -548,7 +635,8 @@ export const chapter077: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['wenn-vs-als', 'connector-choice', 'present'],
-      instruction: 'Write only the missing connector (als or wenn). Capitalisation is not checked.',
+      instruction:
+        'Write only the missing connector (als or wenn). Capitalisation is not checked.',
       prompt: '___ die Sonne scheint, gehen wir spazieren. (a general present habit)',
       acceptedAnswers: ['wenn'],
       answerMode: 'caseInsensitive',
@@ -563,8 +651,10 @@ export const chapter077: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['wenn-vs-als', 'connector-choice', 'future'],
-      instruction: 'Write only the missing connector (als or wenn). Capitalisation is not checked.',
-      prompt: '___ ich nächstes Jahr nach Deutschland fliege, besuche ich dich. (a future event)',
+      instruction:
+        'Write only the missing connector (als or wenn). Capitalisation is not checked.',
+      prompt:
+        '___ ich nächstes Jahr nach Deutschland fliege, besuche ich dich. (a future event)',
       acceptedAnswers: ['wenn'],
       answerMode: 'caseInsensitive',
       placeholder: 'wenn',
@@ -578,8 +668,10 @@ export const chapter077: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['wenn-vs-als', 'connector-choice', 'single-past-event'],
-      instruction: 'Write only the missing connector (als or wenn). Capitalisation is not checked.',
-      prompt: '___ das Telefon klingelte, war ich gerade unter der Dusche. (a single past moment)',
+      instruction:
+        'Write only the missing connector (als or wenn). Capitalisation is not checked.',
+      prompt:
+        '___ das Telefon klingelte, war ich gerade unter der Dusche. (a single past moment)',
       acceptedAnswers: ['als'],
       answerMode: 'caseInsensitive',
       placeholder: 'als',
@@ -599,7 +691,8 @@ export const chapter077: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'war',
       maxLength: 10,
-      explanation: 'als sends the finite verb to the end; the ich-form of sein in the Präteritum is war.',
+      explanation:
+        'als sends the finite verb to the end; the ich-form of sein in the Präteritum is war.',
     },
     {
       id: 'ch77-ex-22',
@@ -614,7 +707,8 @@ export const chapter077: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'habe',
       maxLength: 10,
-      explanation: 'wenn sends the finite verb to the end of its clause: ..., wenn ich Zeit habe.',
+      explanation:
+        'wenn sends the finite verb to the end of its clause: ..., wenn ich Zeit habe.',
     },
     {
       id: 'ch77-ex-23',
@@ -623,13 +717,15 @@ export const chapter077: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['als', 'clause-combination'],
-      instruction: 'Combine the two sentences with als. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with als. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich war acht Jahre alt. + Wir zogen nach Hamburg. (als)',
       acceptedAnswers: ['Als ich acht Jahre alt war, zogen wir nach Hamburg.'],
       answerMode: 'normalized',
       placeholder: 'Als ich acht Jahre alt war, ...',
       maxLength: 70,
-      explanation: 'als introduces the single past event; the verb war moves to the end of the first clause, and the main-clause verb zogen follows the comma.',
+      explanation:
+        'als introduces the single past event; the verb war moves to the end of the first clause, and the main-clause verb zogen follows the comma.',
     },
     {
       id: 'ch77-ex-24',
@@ -638,13 +734,15 @@ export const chapter077: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['wenn', 'clause-combination', 'repeated-past'],
-      instruction: 'Combine the two sentences with immer wenn. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with immer wenn. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Er kam nach Hause. + Der Hund freute sich immer. (immer wenn)',
       acceptedAnswers: ['Immer wenn er nach Hause kam, freute sich der Hund.'],
       answerMode: 'normalized',
       placeholder: 'Immer wenn er nach Hause kam, ...',
       maxLength: 70,
-      explanation: 'immer wenn marks a repeated past action; the verb kam moves to the end of the subordinate clause, and freute follows directly after the comma.',
+      explanation:
+        'immer wenn marks a repeated past action; the verb kam moves to the end of the subordinate clause, and freute follows directly after the comma.',
     },
     {
       id: 'ch77-ex-25',
@@ -653,13 +751,15 @@ export const chapter077: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['wenn', 'clause-combination', 'future'],
-      instruction: 'Combine the two sentences with wenn. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with wenn. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich komme in Berlin an. + Ich rufe dich an. (wenn)',
       acceptedAnswers: ['Ich rufe dich an, wenn ich in Berlin ankomme.'],
       answerMode: 'normalized',
       placeholder: 'Ich rufe dich an, wenn ...',
       maxLength: 70,
-      explanation: 'wenn introduces this single future event; the separable verb ankomme joins as one word at the end of the clause.',
+      explanation:
+        'wenn introduces this single future event; the separable verb ankomme joins as one word at the end of the clause.',
     },
     {
       id: 'ch77-ex-26',
@@ -668,13 +768,15 @@ export const chapter077: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['inversion', 'als', 'word-order'],
-      instruction: 'Rewrite the sentence starting with the als-clause. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence starting with the als-clause. Capitalisation and punctuation are checked.',
       prompt: 'Ich war sehr glücklich, als ich die Prüfung bestanden hatte.',
       acceptedAnswers: ['Als ich die Prüfung bestanden hatte, war ich sehr glücklich.'],
       answerMode: 'normalized',
       placeholder: 'Als ich die Prüfung bestanden hatte, ...',
       maxLength: 80,
-      explanation: 'When the als-clause opens the sentence, the main-clause verb war comes immediately after the comma, before its subject ich.',
+      explanation:
+        'When the als-clause opens the sentence, the main-clause verb war comes immediately after the comma, before its subject ich.',
     },
     {
       id: 'ch77-ex-27',
@@ -683,13 +785,15 @@ export const chapter077: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['inversion', 'wenn', 'word-order'],
-      instruction: 'Rewrite the sentence starting with the wenn-clause. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence starting with the wenn-clause. Capitalisation and punctuation are checked.',
       prompt: 'Wir machen einen Ausflug, wenn das Wetter schön ist.',
       acceptedAnswers: ['Wenn das Wetter schön ist, machen wir einen Ausflug.'],
       answerMode: 'normalized',
       placeholder: 'Wenn das Wetter schön ist, ...',
       maxLength: 70,
-      explanation: 'When the wenn-clause opens the sentence, the main-clause verb machen comes immediately after the comma, before its subject wir.',
+      explanation:
+        'When the wenn-clause opens the sentence, the main-clause verb machen comes immediately after the comma, before its subject wir.',
     },
     {
       id: 'ch77-ex-28',
@@ -698,7 +802,8 @@ export const chapter077: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'wenn-vs-als'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Wenn ich acht Jahre alt war, zogen wir nach Hamburg.',
       acceptedAnswers: ['Als ich acht Jahre alt war, zogen wir nach Hamburg.'],
       answerMode: 'normalized',
@@ -713,13 +818,15 @@ export const chapter077: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'wenn-vs-als', 'repeated-past'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Als wir Kinder waren, spielten wir jeden Tag draußen.',
       acceptedAnswers: ['Wenn wir Kinder waren, spielten wir jeden Tag draußen.'],
       answerMode: 'normalized',
       placeholder: 'Wenn wir Kinder waren, ...',
       maxLength: 70,
-      explanation: 'jeden Tag marks a repeated past habit, which needs wenn even though the whole thing happened in the past.',
+      explanation:
+        'jeden Tag marks a repeated past habit, which needs wenn even though the whole thing happened in the past.',
     },
     {
       id: 'ch77-ex-30',
@@ -728,13 +835,15 @@ export const chapter077: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'inversion', 'word-order'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Als es klingelte, sie öffnete die Tür.',
       acceptedAnswers: ['Als es klingelte, öffnete sie die Tür.'],
       answerMode: 'normalized',
       placeholder: 'Als es klingelte, ...',
       maxLength: 60,
-      explanation: 'When the als-clause opens the sentence, the main-clause verb öffnete must come immediately after the comma, before its subject sie.',
+      explanation:
+        'When the als-clause opens the sentence, the main-clause verb öffnete must come immediately after the comma, before its subject sie.',
     },
     {
       id: 'ch77-ex-31',
@@ -790,7 +899,8 @@ export const chapter077: ChapterDefinition = {
       templateParts: ['Jeden Winter, ', ' es schneite, bauten wir einen Schneemann.'],
       slots: [{ id: 'ch77-ex34-s1', correctWord: 'wenn' }],
       wordBank: ['wenn', 'als', 'dass', 'bevor'],
-      explanation: 'jeden Winter shows repetition, so this past habit takes wenn, not als.',
+      explanation:
+        'jeden Winter shows repetition, so this past habit takes wenn, not als.',
     },
     {
       id: 'ch77-ex-35',
@@ -846,7 +956,8 @@ export const chapter077: ChapterDefinition = {
       templateParts: ['Jedes Mal, ', ' wir uns trafen, erzählten wir uns Neuigkeiten.'],
       slots: [{ id: 'ch77-ex38-s1', correctWord: 'wenn' }],
       wordBank: ['wenn', 'als', 'dass', 'bevor'],
-      explanation: 'Jedes Mal signals repetition, so wenn is required, even though every meeting lies in the past.',
+      explanation:
+        'Jedes Mal signals repetition, so wenn is required, even though every meeting lies in the past.',
     },
     {
       id: 'ch77-ex-39',
@@ -902,7 +1013,8 @@ export const chapter077: ChapterDefinition = {
       templateParts: ['Immer ', ' die Ferien begannen, fuhren wir ans Meer.'],
       slots: [{ id: 'ch77-ex42-s1', correctWord: 'wenn' }],
       wordBank: ['wenn', 'als', 'dass', 'bevor'],
-      explanation: 'Immer signals repetition, so wenn is required, even though the holidays are in the past.',
+      explanation:
+        'Immer signals repetition, so wenn is required, even though the holidays are in the past.',
     },
     {
       id: 'ch77-ex-43',
@@ -941,10 +1053,14 @@ export const chapter077: ChapterDefinition = {
       grammarFocus: ['wenn-vs-als', 'connector-choice', 'single-past-event'],
       instruction: 'Drag the correct connector into the slot.',
       prompt: 'Complete the sentence with the connector for a single past period.',
-      templateParts: ['', ' wir letztes Jahr in Spanien waren, hat es jeden Tag geregnet.'],
+      templateParts: [
+        '',
+        ' wir letztes Jahr in Spanien waren, hat es jeden Tag geregnet.',
+      ],
       slots: [{ id: 'ch77-ex45-s1', correctWord: 'Als' }],
       wordBank: ['Als', 'Wenn', 'Dass', 'Weil'],
-      explanation: 'The trip to Spain last year was a single, unrepeated past period, so als fits — even though it rained every day within that one trip.',
+      explanation:
+        'The trip to Spain last year was a single, unrepeated past period, so als fits — even though it rained every day within that one trip.',
     },
     {
       id: 'ch77-ex-46',
@@ -998,13 +1114,30 @@ export const chapter077: ChapterDefinition = {
       instruction: 'Match each context clue with what it signals.',
       prompt: 'Match each clue word or phrase to what it signals about the connector.',
       pairs: [
-        { id: 'ch77-ex49-p1', left: 'jedes Mal', right: 'repetition, so wenn is required' },
+        {
+          id: 'ch77-ex49-p1',
+          left: 'jedes Mal',
+          right: 'repetition, so wenn is required',
+        },
         { id: 'ch77-ex49-p2', left: 'damals', right: 'a single past time, so als fits' },
-        { id: 'ch77-ex49-p3', left: 'jeden Tag', right: 'daily repetition, so wenn is required' },
-        { id: 'ch77-ex49-p4', left: 'nächstes Jahr', right: 'a future event, so wenn is required' },
-        { id: 'ch77-ex49-p5', left: 'nur einmal', right: 'a single occurrence, so als fits' },
+        {
+          id: 'ch77-ex49-p3',
+          left: 'jeden Tag',
+          right: 'daily repetition, so wenn is required',
+        },
+        {
+          id: 'ch77-ex49-p4',
+          left: 'nächstes Jahr',
+          right: 'a future event, so wenn is required',
+        },
+        {
+          id: 'ch77-ex49-p5',
+          left: 'nur einmal',
+          right: 'a single occurrence, so als fits',
+        },
       ],
-      explanation: 'Repetition and future-time clues call for wenn; clues pointing to one single past occurrence call for als.',
+      explanation:
+        'Repetition and future-time clues call for wenn; clues pointing to one single past occurrence call for als.',
     },
     {
       id: 'ch77-ex-50',
@@ -1016,13 +1149,34 @@ export const chapter077: ChapterDefinition = {
       instruction: 'Match each scenario with the connector it requires.',
       prompt: 'Match each scenario to the correct connector.',
       pairs: [
-        { id: 'ch77-ex50-p1', left: 'A single, unrepeated event in the past', right: 'als' },
-        { id: 'ch77-ex50-p2', left: 'A repeated event, entirely in the past', right: 'wenn (repeated past)' },
-        { id: 'ch77-ex50-p3', left: 'A general habit in the present', right: 'wenn (present habit)' },
-        { id: 'ch77-ex50-p4', left: 'A single event in the future', right: 'wenn (future event)' },
-        { id: 'ch77-ex50-p5', left: 'A condition, with no specific timing', right: 'wenn (condition)' },
+        {
+          id: 'ch77-ex50-p1',
+          left: 'A single, unrepeated event in the past',
+          right: 'als',
+        },
+        {
+          id: 'ch77-ex50-p2',
+          left: 'A repeated event, entirely in the past',
+          right: 'wenn (repeated past)',
+        },
+        {
+          id: 'ch77-ex50-p3',
+          left: 'A general habit in the present',
+          right: 'wenn (present habit)',
+        },
+        {
+          id: 'ch77-ex50-p4',
+          left: 'A single event in the future',
+          right: 'wenn (future event)',
+        },
+        {
+          id: 'ch77-ex50-p5',
+          left: 'A condition, with no specific timing',
+          right: 'wenn (condition)',
+        },
       ],
-      explanation: 'als is reserved for a single past occurrence; wenn covers every other case, including repetition, the present, the future, and conditions.',
+      explanation:
+        'als is reserved for a single past occurrence; wenn covers every other case, including repetition, the present, the future, and conditions.',
     },
     {
       id: 'ch77-ex-51',
@@ -1031,16 +1185,38 @@ export const chapter077: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['wenn-vs-als', 'context-clues'],
-      instruction: 'Match each context clue with the example sentence that correctly uses it.',
+      instruction:
+        'Match each context clue with the example sentence that correctly uses it.',
       prompt: 'Match each clue word to the sentence it appears in.',
       pairs: [
-        { id: 'ch77-ex51-p1', left: 'jedes Mal', right: 'Jedes Mal, wenn es regnete, blieben wir zu Hause.' },
-        { id: 'ch77-ex51-p2', left: 'damals', right: 'Damals, als ich in München wohnte, war ich Student.' },
-        { id: 'ch77-ex51-p3', left: 'letztes Jahr', right: 'Letztes Jahr, als wir in Spanien waren, hat es viel geregnet.' },
-        { id: 'ch77-ex51-p4', left: 'immer wenn', right: 'Immer wenn er kam, freute sich der Hund.' },
-        { id: 'ch77-ex51-p5', left: 'gestern', right: 'Gestern, als ich nach Hause kam, war niemand da.' },
+        {
+          id: 'ch77-ex51-p1',
+          left: 'jedes Mal',
+          right: 'Jedes Mal, wenn es regnete, blieben wir zu Hause.',
+        },
+        {
+          id: 'ch77-ex51-p2',
+          left: 'damals',
+          right: 'Damals, als ich in München wohnte, war ich Student.',
+        },
+        {
+          id: 'ch77-ex51-p3',
+          left: 'letztes Jahr',
+          right: 'Letztes Jahr, als wir in Spanien waren, hat es viel geregnet.',
+        },
+        {
+          id: 'ch77-ex51-p4',
+          left: 'immer wenn',
+          right: 'Immer wenn er kam, freute sich der Hund.',
+        },
+        {
+          id: 'ch77-ex51-p5',
+          left: 'gestern',
+          right: 'Gestern, als ich nach Hause kam, war niemand da.',
+        },
       ],
-      explanation: 'jedes Mal and immer wenn signal repetition (wenn); damals, letztes Jahr, and gestern point to one specific past moment (als).',
+      explanation:
+        'jedes Mal and immer wenn signal repetition (wenn); damals, letztes Jahr, and gestern point to one specific past moment (als).',
     },
     {
       id: 'ch77-ex-52',
@@ -1052,12 +1228,29 @@ export const chapter077: ChapterDefinition = {
       instruction: 'Match each German sentence with its English translation.',
       prompt: 'Match the German sentences to their English translations.',
       pairs: [
-        { id: 'ch77-ex52-p1', left: 'Als ich acht Jahre alt war, zogen wir nach Hamburg.', right: 'When I was eight, we moved to Hamburg.' },
-        { id: 'ch77-ex52-p2', left: 'Wenn ich Zeit habe, gehe ich schwimmen.', right: 'When(ever) I have time, I go swimming.' },
-        { id: 'ch77-ex52-p3', left: 'Immer wenn er kam, freute sich der Hund.', right: 'Whenever he came, the dog was happy.' },
-        { id: 'ch77-ex52-p4', left: 'Als es klingelte, öffnete sie die Tür.', right: 'When the doorbell rang, she opened the door.' },
+        {
+          id: 'ch77-ex52-p1',
+          left: 'Als ich acht Jahre alt war, zogen wir nach Hamburg.',
+          right: 'When I was eight, we moved to Hamburg.',
+        },
+        {
+          id: 'ch77-ex52-p2',
+          left: 'Wenn ich Zeit habe, gehe ich schwimmen.',
+          right: 'When(ever) I have time, I go swimming.',
+        },
+        {
+          id: 'ch77-ex52-p3',
+          left: 'Immer wenn er kam, freute sich der Hund.',
+          right: 'Whenever he came, the dog was happy.',
+        },
+        {
+          id: 'ch77-ex52-p4',
+          left: 'Als es klingelte, öffnete sie die Tür.',
+          right: 'When the doorbell rang, she opened the door.',
+        },
       ],
-      explanation: 'Each als-sentence describes one single past occurrence; each wenn-sentence describes a repeated or habitual event.',
+      explanation:
+        'Each als-sentence describes one single past occurrence; each wenn-sentence describes a repeated or habitual event.',
     },
     {
       id: 'ch77-ex-53',
@@ -1069,13 +1262,34 @@ export const chapter077: ChapterDefinition = {
       instruction: 'Match each context clue with what it signals.',
       prompt: 'Match each clue word or phrase to what it signals about the connector.',
       pairs: [
-        { id: 'ch77-ex53-p1', left: 'als kleines Kind', right: 'one whole childhood period, so als fits' },
-        { id: 'ch77-ex53-p2', left: 'jedes Semester', right: 'repetition each semester, so wenn is required' },
-        { id: 'ch77-ex53-p3', left: 'in dem Moment', right: 'one specific past moment, so als fits' },
-        { id: 'ch77-ex53-p4', left: 'morgen früh', right: 'a future event, so wenn is required' },
-        { id: 'ch77-ex53-p5', left: 'jeden Morgen', right: 'daily repetition, so wenn is required' },
+        {
+          id: 'ch77-ex53-p1',
+          left: 'als kleines Kind',
+          right: 'one whole childhood period, so als fits',
+        },
+        {
+          id: 'ch77-ex53-p2',
+          left: 'jedes Semester',
+          right: 'repetition each semester, so wenn is required',
+        },
+        {
+          id: 'ch77-ex53-p3',
+          left: 'in dem Moment',
+          right: 'one specific past moment, so als fits',
+        },
+        {
+          id: 'ch77-ex53-p4',
+          left: 'morgen früh',
+          right: 'a future event, so wenn is required',
+        },
+        {
+          id: 'ch77-ex53-p5',
+          left: 'jeden Morgen',
+          right: 'daily repetition, so wenn is required',
+        },
       ],
-      explanation: 'Clues describing a single defined period or moment call for als; clues describing recurrence or the future call for wenn.',
+      explanation:
+        'Clues describing a single defined period or moment call for als; clues describing recurrence or the future call for wenn.',
     },
     {
       id: 'ch77-ex-54',
@@ -1087,13 +1301,34 @@ export const chapter077: ChapterDefinition = {
       instruction: 'Match each scenario with the connector it requires.',
       prompt: 'Match each scenario to the correct connector.',
       pairs: [
-        { id: 'ch77-ex54-p1', left: 'Being a certain age — a period that happened only once', right: 'als' },
-        { id: 'ch77-ex54-p2', left: 'Something that happens every time X occurs', right: 'wenn (repeated event)' },
-        { id: 'ch77-ex54-p3', left: 'Something you plan to do next week', right: 'wenn (future event)' },
-        { id: 'ch77-ex54-p4', left: 'A rule that is generally true', right: 'wenn (general habit)' },
-        { id: 'ch77-ex54-p5', left: 'Saying "if" with no past or future marker', right: 'wenn (condition)' },
+        {
+          id: 'ch77-ex54-p1',
+          left: 'Being a certain age — a period that happened only once',
+          right: 'als',
+        },
+        {
+          id: 'ch77-ex54-p2',
+          left: 'Something that happens every time X occurs',
+          right: 'wenn (repeated event)',
+        },
+        {
+          id: 'ch77-ex54-p3',
+          left: 'Something you plan to do next week',
+          right: 'wenn (future event)',
+        },
+        {
+          id: 'ch77-ex54-p4',
+          left: 'A rule that is generally true',
+          right: 'wenn (general habit)',
+        },
+        {
+          id: 'ch77-ex54-p5',
+          left: 'Saying "if" with no past or future marker',
+          right: 'wenn (condition)',
+        },
       ],
-      explanation: 'Only a single, unrepeated past occurrence takes als; every other timeline — repeated, general, future, or conditional — takes wenn.',
+      explanation:
+        'Only a single, unrepeated past occurrence takes als; every other timeline — repeated, general, future, or conditional — takes wenn.',
     },
     {
       id: 'ch77-ex-55',
@@ -1113,7 +1348,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'ch77-ex55-s6', text: 'wir' },
         { id: 'ch77-ex55-s7', text: 'spazieren.' },
       ],
-      explanation: 'als sends aufhörte to the end of its clause; gingen follows immediately after the comma, before its subject wir.',
+      explanation:
+        'als sends aufhörte to the end of its clause; gingen follows immediately after the comma, before its subject wir.',
     },
     {
       id: 'ch77-ex-56',
@@ -1133,7 +1369,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'ch77-ex56-s6', text: 'es' },
         { id: 'ch77-ex56-s7', text: 'kalt.' },
       ],
-      explanation: 'wenn sends untergeht to the end of its clause; wird follows immediately after the comma, before its subject es.',
+      explanation:
+        'wenn sends untergeht to the end of its clause; wird follows immediately after the comma, before its subject es.',
     },
     {
       id: 'ch77-ex-57',
@@ -1155,7 +1392,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'ch77-ex57-s8', text: 'vor' },
         { id: 'ch77-ex57-s9', text: 'Freude.' },
       ],
-      explanation: 'The passive auxiliary wurde moves to the end of the als-clause, after the participle geboren; weinten follows directly after the comma.',
+      explanation:
+        'The passive auxiliary wurde moves to the end of the als-clause, after the participle geboren; weinten follows directly after the comma.',
     },
     {
       id: 'ch77-ex-58',
@@ -1177,7 +1415,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'ch77-ex58-s8', text: 'die' },
         { id: 'ch77-ex58-s9', text: 'Kinder.' },
       ],
-      explanation: 'Immer wenn marks a repeated past event; kam moves to the end of the subordinate clause, and freuten follows directly after the comma.',
+      explanation:
+        'Immer wenn marks a repeated past event; kam moves to the end of the subordinate clause, and freuten follows directly after the comma.',
     },
     {
       id: 'ch77-ex-59',
@@ -1198,7 +1437,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'ch77-ex59-s7', text: 'einfach' },
         { id: 'ch77-ex59-s8', text: 'an.' },
       ],
-      explanation: 'wenn sends brauchst to the end of its clause; the separable verb an...ruf splits, with ruf right after the comma and an at the very end of the main clause.',
+      explanation:
+        'wenn sends brauchst to the end of its clause; the separable verb an...ruf splits, with ruf right after the comma and an at the very end of the main clause.',
     },
     {
       id: 'ch77-ex-60',
@@ -1219,7 +1459,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'ch77-ex60-s7', text: 'Soldaten' },
         { id: 'ch77-ex60-s8', text: 'zurück.' },
       ],
-      explanation: 'als sends endete to the end of its clause; the separable verb zurückkehren splits, with kehrten right after the comma and zurück at the very end.',
+      explanation:
+        'als sends endete to the end of its clause; the separable verb zurückkehren splits, with kehrten right after the comma and zurück at the very end.',
     },
     {
       id: 'ch77-ex-61',
@@ -1240,7 +1481,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'ch77-ex61-s7', text: 'meine' },
         { id: 'ch77-ex61-s8', text: 'Schwester.' },
       ],
-      explanation: 'wenn sends koche to the end of its clause; hilft follows immediately after the comma, before its subject meine Schwester.',
+      explanation:
+        'wenn sends koche to the end of its clause; hilft follows immediately after the comma, before its subject meine Schwester.',
     },
     {
       id: 'ch77-ex-62',
@@ -1250,7 +1492,8 @@ export const chapter077: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['als', 'word-order', 'verb-final'],
       instruction: 'Drag the segments into the correct order.',
-      prompt: 'Build the sentence: When the exam was over, all the students breathed a sigh of relief.',
+      prompt:
+        'Build the sentence: When the exam was over, all the students breathed a sigh of relief.',
       segments: [
         { id: 'ch77-ex62-s1', text: 'Als' },
         { id: 'ch77-ex62-s2', text: 'die' },
@@ -1262,7 +1505,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'ch77-ex62-s8', text: 'Studenten' },
         { id: 'ch77-ex62-s9', text: 'auf.' },
       ],
-      explanation: 'als sends war to the end of its clause; the separable verb aufatmen splits, with atmeten right after the comma and auf at the very end.',
+      explanation:
+        'als sends war to the end of its clause; the separable verb aufatmen splits, with atmeten right after the comma and auf at the very end.',
     },
     {
       id: 'ch77-ex-63',
@@ -1272,7 +1516,8 @@ export const chapter077: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['wenn', 'word-order', 'verb-final'],
       instruction: 'Drag the segments into the correct order.',
-      prompt: 'Build the sentence: When the concert starts, everyone turns off their phones.',
+      prompt:
+        'Build the sentence: When the concert starts, everyone turns off their phones.',
       segments: [
         { id: 'ch77-ex63-s1', text: 'Wenn' },
         { id: 'ch77-ex63-s2', text: 'das' },
@@ -1284,7 +1529,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'ch77-ex63-s8', text: 'Handys' },
         { id: 'ch77-ex63-s9', text: 'aus.' },
       ],
-      explanation: 'wenn sends beginnt to the end of its clause; the separable verb ausschalten splits, with schalten right after the comma and aus at the very end.',
+      explanation:
+        'wenn sends beginnt to the end of its clause; the separable verb ausschalten splits, with schalten right after the comma and aus at the very end.',
     },
     {
       id: 'ch77-ex-64',
@@ -1294,7 +1540,8 @@ export const chapter077: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['als', 'word-order', 'verb-final'],
       instruction: 'Drag the segments into the correct order.',
-      prompt: 'Build the sentence: When my grandmother was young, there was no internet yet.',
+      prompt:
+        'Build the sentence: When my grandmother was young, there was no internet yet.',
       segments: [
         { id: 'ch77-ex64-s1', text: 'Als' },
         { id: 'ch77-ex64-s2', text: 'meine' },
@@ -1307,7 +1554,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'ch77-ex64-s9', text: 'kein' },
         { id: 'ch77-ex64-s10', text: 'Internet.' },
       ],
-      explanation: 'als sends war to the end of its clause; gab follows immediately after the comma, before its subject es.',
+      explanation:
+        'als sends war to the end of its clause; gab follows immediately after the comma, before its subject es.',
     },
     {
       id: 'ch77-ex-65',
@@ -1321,7 +1569,8 @@ export const chapter077: ChapterDefinition = {
       tokens: ['Als', 'ich', 'müde', 'bin,', 'trinke', 'ich', 'Kaffee.'],
       errorTokenIndex: 0,
       correction: 'Wenn',
-      explanation: 'als is only ever used for the past; a present habitual action needs wenn.',
+      explanation:
+        'als is only ever used for the past; a present habitual action needs wenn.',
     },
     {
       id: 'ch77-ex-66',
@@ -1329,13 +1578,29 @@ export const chapter077: ChapterDefinition = {
       order: 66,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['wenn-vs-als', 'connector-choice', 'single-past-event', 'common-mistake'],
+      grammarFocus: [
+        'wenn-vs-als',
+        'connector-choice',
+        'single-past-event',
+        'common-mistake',
+      ],
       instruction: 'One word is wrong. Identify it and give the correction.',
       prompt: 'Find the error in this sentence.',
-      tokens: ['Wenn', 'ich', 'zwölf', 'war,', 'bekam', 'ich', 'mein', 'erstes', 'Fahrrad.'],
+      tokens: [
+        'Wenn',
+        'ich',
+        'zwölf',
+        'war,',
+        'bekam',
+        'ich',
+        'mein',
+        'erstes',
+        'Fahrrad.',
+      ],
       errorTokenIndex: 0,
       correction: 'Als',
-      explanation: 'A single, unrepeated past event — receiving the first bike — takes als, not wenn.',
+      explanation:
+        'A single, unrepeated past event — receiving the first bike — takes als, not wenn.',
     },
     {
       id: 'ch77-ex-67',
@@ -1343,13 +1608,30 @@ export const chapter077: ChapterDefinition = {
       order: 67,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['wenn-vs-als', 'connector-choice', 'repeated-past', 'common-mistake'],
+      grammarFocus: [
+        'wenn-vs-als',
+        'connector-choice',
+        'repeated-past',
+        'common-mistake',
+      ],
       instruction: 'One word is wrong. Identify it and give the correction.',
       prompt: 'Find the error in this sentence.',
-      tokens: ['Als', 'wir', 'Kinder', 'waren,', 'gingen', 'wir', 'jeden', 'Sommer', 'ans', 'Meer.'],
+      tokens: [
+        'Als',
+        'wir',
+        'Kinder',
+        'waren,',
+        'gingen',
+        'wir',
+        'jeden',
+        'Sommer',
+        'ans',
+        'Meer.',
+      ],
       errorTokenIndex: 0,
       correction: 'Wenn',
-      explanation: 'jeden Sommer signals repetition, so this childhood habit takes wenn, even though it lies entirely in the past.',
+      explanation:
+        'jeden Sommer signals repetition, so this childhood habit takes wenn, even though it lies entirely in the past.',
     },
     {
       id: 'ch77-ex-68',
@@ -1357,13 +1639,19 @@ export const chapter077: ChapterDefinition = {
       order: 68,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['wenn-vs-als', 'connector-choice', 'single-past-event', 'common-mistake'],
+      grammarFocus: [
+        'wenn-vs-als',
+        'connector-choice',
+        'single-past-event',
+        'common-mistake',
+      ],
       instruction: 'One word is wrong. Identify it and give the correction.',
       prompt: 'Find the error in this sentence.',
       tokens: ['Wenn', 'der', 'Zug', 'ankam,', 'war', 'es', 'schon', 'dunkel.'],
       errorTokenIndex: 0,
       correction: 'Als',
-      explanation: 'A single past moment — the train arriving once — takes als, not wenn.',
+      explanation:
+        'A single past moment — the train arriving once — takes als, not wenn.',
     },
     {
       id: 'ch77-ex-69',
@@ -1385,13 +1673,19 @@ export const chapter077: ChapterDefinition = {
       order: 70,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['wenn-vs-als', 'connector-choice', 'single-past-event', 'common-mistake'],
+      grammarFocus: [
+        'wenn-vs-als',
+        'connector-choice',
+        'single-past-event',
+        'common-mistake',
+      ],
       instruction: 'One word is wrong. Identify it and give the correction.',
       prompt: 'Find the error in this sentence.',
       tokens: ['Wenn', 'es', 'klingelte,', 'öffnete', 'sie', 'die', 'Tür.'],
       errorTokenIndex: 0,
       correction: 'Als',
-      explanation: 'A single, one-time past moment — the doorbell ringing once — takes als, not wenn.',
+      explanation:
+        'A single, one-time past moment — the doorbell ringing once — takes als, not wenn.',
     },
     {
       id: 'ch77-ex-71',
@@ -1399,13 +1693,30 @@ export const chapter077: ChapterDefinition = {
       order: 71,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['wenn-vs-als', 'connector-choice', 'repeated-past', 'common-mistake'],
+      grammarFocus: [
+        'wenn-vs-als',
+        'connector-choice',
+        'repeated-past',
+        'common-mistake',
+      ],
       instruction: 'One word is wrong. Identify it and give the correction.',
       prompt: 'Find the error in this sentence.',
-      tokens: ['Als', 'die', 'Ferien', 'begannen,', 'fuhren', 'wir', 'jedes', 'Jahr', 'ans', 'Meer.'],
+      tokens: [
+        'Als',
+        'die',
+        'Ferien',
+        'begannen,',
+        'fuhren',
+        'wir',
+        'jedes',
+        'Jahr',
+        'ans',
+        'Meer.',
+      ],
       errorTokenIndex: 0,
       correction: 'Wenn',
-      explanation: 'jedes Jahr shows this holiday trip repeated every year, so wenn is required, not als.',
+      explanation:
+        'jedes Jahr shows this holiday trip repeated every year, so wenn is required, not als.',
     },
     {
       id: 'ch77-ex-72',
@@ -1416,10 +1727,23 @@ export const chapter077: ChapterDefinition = {
       grammarFocus: ['wenn-vs-als', 'timeline-interpretation', 'common-mistake'],
       instruction: 'One word is wrong. Identify it and give the correction.',
       prompt: 'Find the error in this sentence.',
-      tokens: ['Wenn', 'ich', 'in', 'München', 'wohnte,', 'habe', 'ich', 'oft', 'im', 'Park', 'gejoggt.'],
+      tokens: [
+        'Wenn',
+        'ich',
+        'in',
+        'München',
+        'wohnte,',
+        'habe',
+        'ich',
+        'oft',
+        'im',
+        'Park',
+        'gejoggt.',
+      ],
       errorTokenIndex: 0,
       correction: 'Als',
-      explanation: 'als marks the one, unrepeated period of living in Munich; that the jogging inside it happened often does not change the connector.',
+      explanation:
+        'als marks the one, unrepeated period of living in Munich; that the jogging inside it happened often does not change the connector.',
     },
     {
       id: 'ch77-ex-73',
@@ -1430,10 +1754,22 @@ export const chapter077: ChapterDefinition = {
       grammarFocus: ['als', 'tense-agreement', 'common-mistake'],
       instruction: 'One word is wrong. Identify it and give the correction.',
       prompt: 'Find the error in this sentence.',
-      tokens: ['Als', 'ich', 'acht', 'Jahre', 'alt', 'bin,', 'zogen', 'wir', 'nach', 'Hamburg.'],
+      tokens: [
+        'Als',
+        'ich',
+        'acht',
+        'Jahre',
+        'alt',
+        'bin,',
+        'zogen',
+        'wir',
+        'nach',
+        'Hamburg.',
+      ],
       errorTokenIndex: 5,
       correction: 'war,',
-      explanation: 'als always refers to the past, so its clause needs a past-tense verb (war), not the present tense (bin).',
+      explanation:
+        'als always refers to the past, so its clause needs a past-tense verb (war), not the present tense (bin).',
     },
     {
       id: 'ch77-ex-74',
@@ -1447,7 +1783,8 @@ export const chapter077: ChapterDefinition = {
       tokens: ['Als', 'es', 'klingelt,', 'öffnete', 'sie', 'die', 'Tür.'],
       errorTokenIndex: 2,
       correction: 'klingelte,',
-      explanation: 'als always refers to the past; the subordinate-clause verb must match, so klingelt must become the past-tense klingelte.',
+      explanation:
+        'als always refers to the past; the subordinate-clause verb must match, so klingelt must become the past-tense klingelte.',
     },
     {
       id: 'ch77-ex-75',
@@ -1461,7 +1798,8 @@ export const chapter077: ChapterDefinition = {
       tokens: ['Als', 'ich', 'Geld', 'habe,', 'gehe', 'ich', 'einkaufen.'],
       errorTokenIndex: 0,
       correction: 'Wenn',
-      explanation: 'A general present habit takes wenn; als never appears outside the past.',
+      explanation:
+        'A general present habit takes wenn; als never appears outside the past.',
     },
     {
       id: 'ch77-ex-76',
@@ -1469,13 +1807,30 @@ export const chapter077: ChapterDefinition = {
       order: 76,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['wenn-vs-als', 'connector-choice', 'single-past-event', 'common-mistake'],
+      grammarFocus: [
+        'wenn-vs-als',
+        'connector-choice',
+        'single-past-event',
+        'common-mistake',
+      ],
       instruction: 'One word is wrong. Identify it and give the correction.',
       prompt: 'Find the error in this sentence.',
-      tokens: ['Wenn', 'er', '18', 'wurde,', 'zog', 'er', 'in', 'eine', 'eigene', 'Wohnung.'],
+      tokens: [
+        'Wenn',
+        'er',
+        '18',
+        'wurde,',
+        'zog',
+        'er',
+        'in',
+        'eine',
+        'eigene',
+        'Wohnung.',
+      ],
       errorTokenIndex: 0,
       correction: 'Als',
-      explanation: 'Turning 18 happened once, so this single past event takes als, not wenn.',
+      explanation:
+        'Turning 18 happened once, so this single past event takes als, not wenn.',
     },
     {
       id: 'ch77-ex-77',
@@ -1486,10 +1841,21 @@ export const chapter077: ChapterDefinition = {
       grammarFocus: ['wenn-vs-als', 'connector-choice', 'future', 'common-mistake'],
       instruction: 'One word is wrong. Identify it and give the correction.',
       prompt: 'Find the error in this sentence.',
-      tokens: ['Als', 'du', 'Zeit', 'hast,', 'können', 'wir', 'uns', 'morgen', 'treffen.'],
+      tokens: [
+        'Als',
+        'du',
+        'Zeit',
+        'hast,',
+        'können',
+        'wir',
+        'uns',
+        'morgen',
+        'treffen.',
+      ],
       errorTokenIndex: 0,
       correction: 'Wenn',
-      explanation: 'als is reserved for the past; a future condition or event needs wenn.',
+      explanation:
+        'als is reserved for the past; a future condition or event needs wenn.',
     },
     {
       id: 'ch77-ex-78',
@@ -1497,13 +1863,29 @@ export const chapter077: ChapterDefinition = {
       order: 78,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['wenn-vs-als', 'connector-choice', 'repeated-past', 'common-mistake'],
+      grammarFocus: [
+        'wenn-vs-als',
+        'connector-choice',
+        'repeated-past',
+        'common-mistake',
+      ],
       instruction: 'One word is wrong. Identify it and give the correction.',
       prompt: 'Find the error in this sentence.',
-      tokens: ['Als', 'wir', 'uns', 'trafen,', 'erzählten', 'wir', 'uns', 'immer', 'Neuigkeiten.'],
+      tokens: [
+        'Als',
+        'wir',
+        'uns',
+        'trafen,',
+        'erzählten',
+        'wir',
+        'uns',
+        'immer',
+        'Neuigkeiten.',
+      ],
       errorTokenIndex: 0,
       correction: 'Wenn',
-      explanation: 'immer signals repetition, so this past habit needs wenn, even though the meetings are entirely in the past.',
+      explanation:
+        'immer signals repetition, so this past habit needs wenn, even though the meetings are entirely in the past.',
     },
     {
       id: 'ch77-ex-79',
@@ -1513,7 +1895,8 @@ export const chapter077: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['wenn-vs-als', 'connector-choice', 'single-past-event'],
       instruction: 'Choose the connector that fits.',
-      prompt: '___ ich nur einmal in New York war, hat es geschneit. (a single past event)',
+      prompt:
+        '___ ich nur einmal in New York war, hat es geschneit. (a single past event)',
       options: [
         { id: 'a', text: 'als' },
         { id: 'b', text: 'wenn' },
@@ -1521,7 +1904,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'd', text: 'ob' },
       ],
       correctOptionId: 'a',
-      explanation: 'nur einmal marks a single, unrepeated occurrence in the past, so als is required.',
+      explanation:
+        'nur einmal marks a single, unrepeated occurrence in the past, so als is required.',
     },
     {
       id: 'ch77-ex-80',
@@ -1531,7 +1915,8 @@ export const chapter077: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['wenn-vs-als', 'connector-choice', 'repeated-past'],
       instruction: 'Choose the connector that fits.',
-      prompt: 'Jedes Mal, ___ meine Schwester zu Besuch kommt, backen wir zusammen Kuchen.',
+      prompt:
+        'Jedes Mal, ___ meine Schwester zu Besuch kommt, backen wir zusammen Kuchen.',
       options: [
         { id: 'a', text: 'wenn' },
         { id: 'b', text: 'als' },
@@ -1557,7 +1942,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'd', text: 'Wir sind ins Kino gegangen, wenn der Film anfing.' },
       ],
       correctOptionId: 'a',
-      explanation: 'als sends the finite verb anfing to the end of its clause; a single past event needs als, not wenn.',
+      explanation:
+        'als sends the finite verb anfing to the end of its clause; a single past event needs als, not wenn.',
     },
     {
       id: 'ch77-ex-82',
@@ -1567,7 +1953,8 @@ export const chapter077: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['inversion', 'als', 'word-order'],
       instruction: 'Choose the sentence with correct word order.',
-      prompt: '"When my grandmother was young, there was no internet yet." Which sentence is correct?',
+      prompt:
+        '"When my grandmother was young, there was no internet yet." Which sentence is correct?',
       options: [
         { id: 'a', text: 'Als meine Großmutter jung war, gab es noch kein Internet.' },
         { id: 'b', text: 'Als meine Großmutter jung war, es gab noch kein Internet.' },
@@ -1575,7 +1962,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'd', text: 'Als meine Großmutter war jung, gab es noch kein Internet.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The als-clause fills position 1, so the main-clause verb gab comes immediately after the comma, before its subject es.',
+      explanation:
+        'The als-clause fills position 1, so the main-clause verb gab comes immediately after the comma, before its subject es.',
     },
     {
       id: 'ch77-ex-83',
@@ -1586,7 +1974,11 @@ export const chapter077: ChapterDefinition = {
       grammarFocus: ['wenn-vs-als', 'dialogue', 'connector-choice'],
       instruction: "Choose the connector that correctly completes Tom's sentence.",
       dialogue: [
-        { speaker: 'Anna', german: 'Wie hast du deinen Mann kennengelernt?', english: 'How did you meet your husband?' },
+        {
+          speaker: 'Anna',
+          german: 'Wie hast du deinen Mann kennengelernt?',
+          english: 'How did you meet your husband?',
+        },
         {
           speaker: 'Tom',
           german: '___ ich in Berlin studierte, habe ich ihn auf einer Party getroffen.',
@@ -1610,7 +2002,8 @@ export const chapter077: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['wenn-vs-als', 'error-spotting'],
-      instruction: 'One of these sentences misuses wenn or als. Identify the incorrect sentence.',
+      instruction:
+        'One of these sentences misuses wenn or als. Identify the incorrect sentence.',
       prompt: 'Which sentence is grammatically wrong?',
       options: [
         { id: 'a', text: 'Als ich jung war, spielte ich oft Fußball.' },
@@ -1619,7 +2012,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'd', text: 'Wenn du Fragen hast, melde dich.' },
       ],
       correctOptionId: 'c',
-      explanation: 'jeden Sommer signals a repeated past habit, which needs wenn, not als: Wenn wir jeden Sommer ans Meer fuhren, ...',
+      explanation:
+        'jeden Sommer signals a repeated past habit, which needs wenn, not als: Wenn wir jeden Sommer ans Meer fuhren, ...',
     },
     {
       id: 'ch77-ex-85',
@@ -1637,7 +2031,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'd', text: 'Wenn ich nächste Woche angekommen war, rufe ich dich an.' },
       ],
       correctOptionId: 'b',
-      explanation: 'als never refers to the future; a single future event, even next week, still takes wenn.',
+      explanation:
+        'als never refers to the future; a single future event, even next week, still takes wenn.',
     },
     {
       id: 'ch77-ex-86',
@@ -1665,7 +2060,8 @@ export const chapter077: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['als', 'verb-final', 'participle'],
       instruction: 'Choose the correct form to complete the sentence.',
-      prompt: 'Als ich die Prüfung ___ hatte, war ich sehr glücklich. (bestehen, Partizip II)',
+      prompt:
+        'Als ich die Prüfung ___ hatte, war ich sehr glücklich. (bestehen, Partizip II)',
       options: [
         { id: 'a', text: 'bestanden' },
         { id: 'b', text: 'bestehen' },
@@ -1673,7 +2069,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'd', text: 'bestandet' },
       ],
       correctOptionId: 'a',
-      explanation: 'The Plusquamperfekt needs the participle bestanden together with the auxiliary hatte, which moves to the very end of the clause.',
+      explanation:
+        'The Plusquamperfekt needs the participle bestanden together with the auxiliary hatte, which moves to the very end of the clause.',
     },
     {
       id: 'ch77-ex-88',
@@ -1691,7 +2088,8 @@ export const chapter077: ChapterDefinition = {
         { id: 'd', text: 'Immer wenn kam er, freute sich der Hund.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Immer signals repetition, so wenn (not als) is required; the finite verb kam stays at the end of the subordinate clause, and freute follows directly after the comma.',
+      explanation:
+        'Immer signals repetition, so wenn (not als) is required; the finite verb kam stays at the end of the subordinate clause, and freute follows directly after the comma.',
     },
     {
       id: 'ch77-ex-89',
@@ -1700,13 +2098,15 @@ export const chapter077: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['wenn-vs-als', 'connector-choice', 'single-past-event'],
-      instruction: 'Write only the missing connector (als or wenn). Capitalisation is not checked.',
+      instruction:
+        'Write only the missing connector (als or wenn). Capitalisation is not checked.',
       prompt: '___ ich zwölf war, bekam ich mein erstes Handy. (a single past event)',
       acceptedAnswers: ['als'],
       answerMode: 'caseInsensitive',
       placeholder: 'als',
       maxLength: 6,
-      explanation: 'A single, unrepeated event in the past — receiving the first phone — takes als.',
+      explanation:
+        'A single, unrepeated event in the past — receiving the first phone — takes als.',
     },
     {
       id: 'ch77-ex-90',
@@ -1715,8 +2115,10 @@ export const chapter077: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['wenn-vs-als', 'connector-choice', 'repeated-past'],
-      instruction: 'Write only the missing connector (als or wenn). Capitalisation is not checked.',
-      prompt: '___ meine Oma uns besuchte, brachte sie immer Kekse mit. (a repeated past event)',
+      instruction:
+        'Write only the missing connector (als or wenn). Capitalisation is not checked.',
+      prompt:
+        '___ meine Oma uns besuchte, brachte sie immer Kekse mit. (a repeated past event)',
       acceptedAnswers: ['wenn'],
       answerMode: 'caseInsensitive',
       placeholder: 'wenn',
@@ -1730,7 +2132,8 @@ export const chapter077: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['wenn-vs-als', 'connector-choice', 'present'],
-      instruction: 'Write only the missing connector (als or wenn). Capitalisation is not checked.',
+      instruction:
+        'Write only the missing connector (als or wenn). Capitalisation is not checked.',
       prompt: '___ ich Deutsch lerne, benutze ich eine App. (a general present habit)',
       acceptedAnswers: ['wenn'],
       answerMode: 'caseInsensitive',
@@ -1746,12 +2149,14 @@ export const chapter077: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['als', 'verb-final', 'conjugation'],
       instruction: 'Write only the missing word. Capitalisation is not checked.',
-      prompt: 'Als ich die Prüfung bestanden ___, war ich sehr glücklich. (haben, ich-Form, Präteritum)',
+      prompt:
+        'Als ich die Prüfung bestanden ___, war ich sehr glücklich. (haben, ich-Form, Präteritum)',
       acceptedAnswers: ['hatte'],
       answerMode: 'caseInsensitive',
       placeholder: 'hatte',
       maxLength: 10,
-      explanation: 'als sends the auxiliary to the very end of the clause, after the participle bestanden: ..., als ich die Prüfung bestanden hatte.',
+      explanation:
+        'als sends the auxiliary to the very end of the clause, after the participle bestanden: ..., als ich die Prüfung bestanden hatte.',
     },
     {
       id: 'ch77-ex-93',
@@ -1760,13 +2165,15 @@ export const chapter077: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['als', 'clause-combination'],
-      instruction: 'Combine the two sentences with als. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with als. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich war achtzehn. + Ich habe meinen Führerschein gemacht. (als)',
       acceptedAnswers: ['Als ich achtzehn war, habe ich meinen Führerschein gemacht.'],
       answerMode: 'normalized',
       placeholder: 'Als ich achtzehn war, ...',
       maxLength: 70,
-      explanation: 'als introduces the single past event; the verb war moves to the end of the first clause, and the main-clause verb habe follows the comma.',
+      explanation:
+        'als introduces the single past event; the verb war moves to the end of the first clause, and the main-clause verb habe follows the comma.',
     },
     {
       id: 'ch77-ex-94',
@@ -1775,13 +2182,15 @@ export const chapter077: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['wenn', 'clause-combination', 'repeated-past'],
-      instruction: 'Combine the two sentences with immer wenn. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with immer wenn. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Meine Oma besuchte uns. + Sie brachte immer Kekse mit. (immer wenn)',
       acceptedAnswers: ['Immer wenn meine Oma uns besuchte, brachte sie Kekse mit.'],
       answerMode: 'normalized',
       placeholder: 'Immer wenn meine Oma uns besuchte, ...',
       maxLength: 80,
-      explanation: 'immer wenn marks a repeated past action; the verb besuchte moves to the end of the subordinate clause, and brachte follows directly after the comma.',
+      explanation:
+        'immer wenn marks a repeated past action; the verb besuchte moves to the end of the subordinate clause, and brachte follows directly after the comma.',
     },
     {
       id: 'ch77-ex-95',
@@ -1790,13 +2199,15 @@ export const chapter077: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'wenn-vs-als'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Als ich müde bin, trinke ich Kaffee.',
       acceptedAnswers: ['Wenn ich müde bin, trinke ich Kaffee.'],
       answerMode: 'normalized',
       placeholder: 'Wenn ich müde bin, ...',
       maxLength: 60,
-      explanation: 'A general present habit needs wenn, not als, which is reserved for the past.',
+      explanation:
+        'A general present habit needs wenn, not als, which is reserved for the past.',
     },
     {
       id: 'ch77-ex-96',
@@ -1805,13 +2216,15 @@ export const chapter077: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'inversion', 'word-order'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Als meine Großmutter jung war, es gab noch kein Internet.',
       acceptedAnswers: ['Als meine Großmutter jung war, gab es noch kein Internet.'],
       answerMode: 'normalized',
       placeholder: 'Als meine Großmutter jung war, ...',
       maxLength: 70,
-      explanation: 'When the als-clause opens the sentence, the main-clause verb gab must come immediately after the comma, before its subject es.',
+      explanation:
+        'When the als-clause opens the sentence, the main-clause verb gab must come immediately after the comma, before its subject es.',
     },
   ],
 };

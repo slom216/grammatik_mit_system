@@ -46,9 +46,7 @@ export function quickMasteryRule(
 ): MasteryRule {
   const included = new Set(exerciseIds);
   const exercises = chapter.exercises.filter((exercise) => included.has(exercise.id));
-  const textInputs = exercises.filter(
-    (exercise) => exercise.type === 'textInput',
-  ).length;
+  const textInputs = exercises.filter((exercise) => exercise.type === 'textInput').length;
   return {
     ...chapter.mastery,
     minimumAnswered: Math.min(chapter.mastery.minimumAnswered, exercises.length),

@@ -102,10 +102,22 @@ export const chapter061: ChapterDefinition = {
         rows: [
           ['Könnten Sie...?', 'Könnten Sie mir helfen?', 'Could you help me? (formal)'],
           ['Könntest du...?', 'Könntest du mir helfen?', 'Could you help me? (informal)'],
-          ['Würden Sie...?', 'Würden Sie bitte leiser sprechen?', 'Would you please speak more quietly?'],
+          [
+            'Würden Sie...?',
+            'Würden Sie bitte leiser sprechen?',
+            'Would you please speak more quietly?',
+          ],
           ['Hätten Sie...?', 'Hätten Sie einen Moment Zeit?', 'Would you have a moment?'],
-          ['Dürfte ich...?', 'Dürfte ich das Fenster öffnen?', 'Might I open the window?'],
-          ['Ich hätte gern...', 'Ich hätte gern einen Tisch für zwei.', 'I would like a table for two.'],
+          [
+            'Dürfte ich...?',
+            'Dürfte ich das Fenster öffnen?',
+            'Might I open the window?',
+          ],
+          [
+            'Ich hätte gern...',
+            'Ich hätte gern einen Tisch für zwei.',
+            'I would like a table for two.',
+          ],
         ],
       },
       {
@@ -113,11 +125,31 @@ export const chapter061: ChapterDefinition = {
         title: 'Wish constructions',
         columns: ['Pattern', 'Example', 'English'],
         rows: [
-          ['Ich wünschte, + K2', 'Ich wünschte, ich hätte mehr Zeit.', 'I wish I had more time.'],
-          ['Ich wollte, + K2', 'Ich wollte, ich wäre schon zu Hause.', 'I wish I were home already.'],
-          ['Ich wünschte, dass + K2', 'Ich wünschte, dass du hier wärest.', 'I wish that you were here.'],
-          ['Wenn ich doch nur ... + K2 + !', 'Wenn ich doch nur mehr Geduld hätte!', 'If only I had more patience!'],
-          ['Verb-first wish (no wenn) + doch + !', 'Hätte ich doch nur mehr Geduld!', 'If only I had more patience!'],
+          [
+            'Ich wünschte, + K2',
+            'Ich wünschte, ich hätte mehr Zeit.',
+            'I wish I had more time.',
+          ],
+          [
+            'Ich wollte, + K2',
+            'Ich wollte, ich wäre schon zu Hause.',
+            'I wish I were home already.',
+          ],
+          [
+            'Ich wünschte, dass + K2',
+            'Ich wünschte, dass du hier wärest.',
+            'I wish that you were here.',
+          ],
+          [
+            'Wenn ich doch nur ... + K2 + !',
+            'Wenn ich doch nur mehr Geduld hätte!',
+            'If only I had more patience!',
+          ],
+          [
+            'Verb-first wish (no wenn) + doch + !',
+            'Hätte ich doch nur mehr Geduld!',
+            'If only I had more patience!',
+          ],
         ],
         note: 'Ich wünschte and Ich wollte are interchangeable in this construction; wollte does not mean "wanted" here.',
       },
@@ -126,10 +158,30 @@ export const chapter061: ChapterDefinition = {
         title: 'sollte for advice, compared to other modals',
         columns: ['Form', 'Strength / meaning', 'Example', 'English'],
         rows: [
-          ['könntest (du)', 'a mere option or suggestion', 'Du könntest früher schlafen gehen.', 'You could go to bed earlier.'],
-          ['solltest (du)', 'a recommendation, everyday advice', 'Du solltest mehr Wasser trinken.', 'You should drink more water.'],
-          ['müsstest (du)', 'stronger, near-obligation', 'Du müsstest eigentlich früher aufstehen.', 'You would really have to get up earlier.'],
-          ['sollst (present indicative)', 'a reported instruction or rule, not advice', 'Du sollst pünktlich sein.', 'You are supposed to be on time.'],
+          [
+            'könntest (du)',
+            'a mere option or suggestion',
+            'Du könntest früher schlafen gehen.',
+            'You could go to bed earlier.',
+          ],
+          [
+            'solltest (du)',
+            'a recommendation, everyday advice',
+            'Du solltest mehr Wasser trinken.',
+            'You should drink more water.',
+          ],
+          [
+            'müsstest (du)',
+            'stronger, near-obligation',
+            'Du müsstest eigentlich früher aufstehen.',
+            'You would really have to get up earlier.',
+          ],
+          [
+            'sollst (present indicative)',
+            'a reported instruction or rule, not advice',
+            'Du sollst pünktlich sein.',
+            'You are supposed to be on time.',
+          ],
         ],
       },
       {
@@ -137,23 +189,64 @@ export const chapter061: ChapterDefinition = {
         title: 'wenn-clause word order: with and without wenn',
         columns: ['With wenn', 'Without wenn (verb-first)', 'English'],
         rows: [
-          ['Wenn ich Zeit hätte, würde ich kommen.', 'Hätte ich Zeit, würde ich kommen.', 'If I had time, I would come.'],
-          ['Wenn du Zeit hättest, könntest du mitkommen.', 'Hättest du Zeit, könntest du mitkommen.', 'If you had time, you could come along.'],
-          ['Wenn es regnen würde, blieben wir zu Hause.', 'Würde es regnen, blieben wir zu Hause.', 'If it rained, we would stay home.'],
-          ['Wenn sie mehr Geld hätte, würde sie öfter reisen.', 'Hätte sie mehr Geld, würde sie öfter reisen.', 'If she had more money, she would travel more often.'],
+          [
+            'Wenn ich Zeit hätte, würde ich kommen.',
+            'Hätte ich Zeit, würde ich kommen.',
+            'If I had time, I would come.',
+          ],
+          [
+            'Wenn du Zeit hättest, könntest du mitkommen.',
+            'Hättest du Zeit, könntest du mitkommen.',
+            'If you had time, you could come along.',
+          ],
+          [
+            'Wenn es regnen würde, blieben wir zu Hause.',
+            'Würde es regnen, blieben wir zu Hause.',
+            'If it rained, we would stay home.',
+          ],
+          [
+            'Wenn sie mehr Geld hätte, würde sie öfter reisen.',
+            'Hätte sie mehr Geld, würde sie öfter reisen.',
+            'If she had more money, she would travel more often.',
+          ],
         ],
-        note: 'Dropping wenn is only possible if the clause\'s conjugated verb moves to the very front; the meaning never changes.',
+        note: "Dropping wenn is only possible if the clause's conjugated verb moves to the very front; the meaning never changes.",
       },
       {
         id: 'ch61-table-05',
         title: 'Meaning distinctions among Konjunktiv II modals',
         columns: ['Form', 'Core meaning', 'Example', 'English'],
         rows: [
-          ['könnte', 'possibility / ability ("could")', 'Es könnte heute regnen.', 'It could rain today.'],
-          ['müsste', 'strong probability, near-certainty ("must probably")', 'Er müsste bald hier sein.', 'He should be here soon.'],
-          ['sollte', 'advice, mild expectation ("should")', 'Du solltest das nicht tun.', 'You should not do that.'],
-          ['dürfte', 'cautious, hedged probability ("might well")', 'Das dürfte stimmen.', 'That is probably right.'],
-          ['würde', 'general hypothetical action ("would")', 'Ich würde das nicht sagen.', 'I would not say that.'],
+          [
+            'könnte',
+            'possibility / ability ("could")',
+            'Es könnte heute regnen.',
+            'It could rain today.',
+          ],
+          [
+            'müsste',
+            'strong probability, near-certainty ("must probably")',
+            'Er müsste bald hier sein.',
+            'He should be here soon.',
+          ],
+          [
+            'sollte',
+            'advice, mild expectation ("should")',
+            'Du solltest das nicht tun.',
+            'You should not do that.',
+          ],
+          [
+            'dürfte',
+            'cautious, hedged probability ("might well")',
+            'Das dürfte stimmen.',
+            'That is probably right.',
+          ],
+          [
+            'würde',
+            'general hypothetical action ("would")',
+            'Ich würde das nicht sagen.',
+            'I would not say that.',
+          ],
         ],
       },
     ],
@@ -162,117 +255,137 @@ export const chapter061: ChapterDefinition = {
         german: 'Könnten Sie mir bitte helfen?',
         english: 'Could you please help me?',
         highlight: ['Könnten'],
-        explanation: 'A formal polite request built on the synthetic Konjunktiv II form of können.',
+        explanation:
+          'A formal polite request built on the synthetic Konjunktiv II form of können.',
       },
       {
         german: 'Ich hätte gern einen Tisch für zwei, bitte.',
         english: 'I would like a table for two, please.',
         highlight: ['hätte gern'],
-        explanation: 'Ich hätte gern... is a fixed, everyday polite pattern for requesting something.',
+        explanation:
+          'Ich hätte gern... is a fixed, everyday polite pattern for requesting something.',
       },
       {
         german: 'Ich wünschte, ich hätte mehr Zeit.',
         english: 'I wish I had more time.',
         highlight: ['wünschte', 'hätte'],
-        explanation: 'The wish-construction Ich wünschte, ... is always followed by a Konjunktiv II clause.',
+        explanation:
+          'The wish-construction Ich wünschte, ... is always followed by a Konjunktiv II clause.',
       },
       {
         german: 'Ich wollte, ich wäre schon im Urlaub.',
         english: 'I wish I were already on vacation.',
         highlight: ['wollte', 'wäre'],
-        explanation: 'Ich wollte, ... functions here exactly like Ich wünschte, ...; it does not mean "I wanted".',
+        explanation:
+          'Ich wollte, ... functions here exactly like Ich wünschte, ...; it does not mean "I wanted".',
       },
       {
         german: 'Wenn ich reich wäre, würde ich um die Welt reisen.',
         english: 'If I were rich, I would travel around the world.',
         highlight: ['wäre', 'würde'],
-        explanation: 'An unreal wenn-condition: both the wenn-clause and the main clause are in Konjunktiv II.',
+        explanation:
+          'An unreal wenn-condition: both the wenn-clause and the main clause are in Konjunktiv II.',
       },
       {
         german: 'Wäre ich reich, würde ich um die Welt reisen.',
         english: 'If I were rich, I would travel around the world.',
         highlight: ['Wäre'],
-        explanation: 'The same meaning as the sentence above, with wenn dropped and wäre moved to the front of the clause.',
+        explanation:
+          'The same meaning as the sentence above, with wenn dropped and wäre moved to the front of the clause.',
       },
       {
         german: 'Du solltest mehr schlafen.',
         english: 'You should sleep more.',
         highlight: ['solltest'],
-        explanation: 'sollte is the standard, everyday way to give advice — softer than müsste, and clearly different from present-tense sollst.',
+        explanation:
+          'sollte is the standard, everyday way to give advice — softer than müsste, and clearly different from present-tense sollst.',
       },
       {
         german: 'An deiner Stelle würde ich das nicht machen.',
         english: 'In your place, I would not do that.',
         highlight: ['würde'],
-        explanation: 'A hypothetical statement of advice that does not need a wenn-clause at all.',
+        explanation:
+          'A hypothetical statement of advice that does not need a wenn-clause at all.',
       },
       {
         german: 'Wenn du mehr üben würdest, würdest du besser sprechen.',
         english: 'If you practiced more, you would speak better.',
         highlight: ['würdest', 'würdest'],
-        explanation: 'üben and sprechen have no natural synthetic Konjunktiv II form, so würde + infinitive is used in both clauses.',
+        explanation:
+          'üben and sprechen have no natural synthetic Konjunktiv II form, so würde + infinitive is used in both clauses.',
       },
       {
         german: 'Hätten Sie kurz Zeit für mich?',
         english: 'Would you have a moment for me?',
         highlight: ['Hätten'],
-        explanation: 'A formal polite request built on the synthetic Konjunktiv II form of haben.',
+        explanation:
+          'A formal polite request built on the synthetic Konjunktiv II form of haben.',
       },
       {
         german: 'Wenn ich du wäre, würde ich das Angebot annehmen.',
         english: 'If I were you, I would accept the offer.',
         highlight: ['wäre', 'würde'],
-        explanation: 'A common hypothetical-advice pattern: Wenn ich du wäre, ... imagines being in someone else\'s position.',
+        explanation:
+          "A common hypothetical-advice pattern: Wenn ich du wäre, ... imagines being in someone else's position.",
       },
       {
         german: 'Das wäre schön, wenn du mitkommen könntest.',
         english: 'It would be nice if you could come along.',
         highlight: ['wäre', 'könntest'],
-        explanation: 'Two synthetic Konjunktiv II forms, wäre and könntest, combine naturally in the same sentence.',
+        explanation:
+          'Two synthetic Konjunktiv II forms, wäre and könntest, combine naturally in the same sentence.',
       },
       {
         german: 'Wenn ich doch nur mehr Geduld hätte!',
         english: 'If only I had more patience!',
         highlight: ['doch nur', 'hätte'],
-        explanation: 'An emphatic wish exclamation, built the same way as an unreal wenn-clause but standing alone.',
+        explanation:
+          'An emphatic wish exclamation, built the same way as an unreal wenn-clause but standing alone.',
       },
       {
         german: 'Er müsste eigentlich schon zu Hause sein.',
         english: 'He should really be home by now.',
         highlight: ['müsste'],
-        explanation: 'müsste expresses a strong probability here, not advice — a meaning distinct from sollte.',
+        explanation:
+          'müsste expresses a strong probability here, not advice — a meaning distinct from sollte.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich wünsche, ich hätte mehr Zeit.',
         correct: 'Ich wünschte, ich hätte mehr Zeit.',
-        explanation: 'The wish-construction always uses wünschte, the Konjunktiv II / simple-past form, even though the wish concerns the present — the present-tense wünsche is not used this way.',
+        explanation:
+          'The wish-construction always uses wünschte, the Konjunktiv II / simple-past form, even though the wish concerns the present — the present-tense wünsche is not used this way.',
       },
       {
         incorrect: 'Wenn ich Zeit hätte, ich komme dich besuchen.',
         correct: 'Wenn ich Zeit hätte, würde ich dich besuchen.',
-        explanation: 'Both clauses of an unreal wenn-condition must be in Konjunktiv II; a present-tense main clause breaks the unreal meaning.',
+        explanation:
+          'Both clauses of an unreal wenn-condition must be in Konjunktiv II; a present-tense main clause breaks the unreal meaning.',
       },
       {
         incorrect: 'Ich Zeit hätte, würde ich kommen.',
         correct: 'Hätte ich Zeit, würde ich kommen.',
-        explanation: 'Dropping wenn requires moving the conjugated verb to the very front of the clause; simply deleting wenn while keeping normal subject-verb order is ungrammatical.',
+        explanation:
+          'Dropping wenn requires moving the conjugated verb to the very front of the clause; simply deleting wenn while keeping normal subject-verb order is ungrammatical.',
       },
       {
         incorrect: 'Du sollst mehr Wasser trinken, das wäre gut für dich.',
         correct: 'Du solltest mehr Wasser trinken, das wäre gut für dich.',
-        explanation: 'sollst is present-tense sollen and sounds like an order or reported instruction; solltest (Konjunktiv II) is the natural, softer form for giving advice.',
+        explanation:
+          'sollst is present-tense sollen and sounds like an order or reported instruction; solltest (Konjunktiv II) is the natural, softer form for giving advice.',
       },
       {
         incorrect: 'Du müsstest das nicht tun, wenn du nicht willst.',
         correct: 'Du solltest das nicht tun, wenn du nicht willst.',
-        explanation: 'müsstest signals a strong near-obligation, which is too forceful for gentle advice; solltest is the standard form for a mild recommendation.',
+        explanation:
+          'müsstest signals a strong near-obligation, which is too forceful for gentle advice; solltest is the standard form for a mild recommendation.',
       },
       {
         incorrect: 'Könnten Sie mir bitte das Salz gibt?',
         correct: 'Könnten Sie mir bitte das Salz geben?',
-        explanation: 'After a modal in Konjunktiv II (Könnten Sie), the main verb stays as a plain infinitive at the end of the clause, never a conjugated form.',
+        explanation:
+          'After a modal in Konjunktiv II (Könnten Sie), the main verb stays as a plain infinitive at the end of the clause, never a conjugated form.',
       },
     ],
     remember: [
@@ -308,7 +421,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'A simple-past narrative' },
       ],
       correctOptionId: 'a',
-      explanation: 'Könnten Sie...? softens a request into a polite question rather than stating a fact, wishing, or narrating the past.',
+      explanation:
+        'Könnten Sie...? softens a request into a polite question rather than stating a fact, wishing, or narrating the past.',
     },
     {
       id: 'ch61-ex-02',
@@ -326,7 +440,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'haben' },
       ],
       correctOptionId: 'a',
-      explanation: 'A wish introduced by Ich wünschte, ... always continues with a Konjunktiv II form; hätte is the synthetic Konjunktiv II of haben.',
+      explanation:
+        'A wish introduced by Ich wünschte, ... always continues with a Konjunktiv II form; hätte is the synthetic Konjunktiv II of haben.',
     },
     {
       id: 'ch61-ex-03',
@@ -344,7 +459,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'sei' },
       ],
       correctOptionId: 'a',
-      explanation: 'Ich wollte, ... functions like Ich wünschte, ... and requires a Konjunktiv II form; wäre is the synthetic Konjunktiv II of sein.',
+      explanation:
+        'Ich wollte, ... functions like Ich wünschte, ... and requires a Konjunktiv II form; wäre is the synthetic Konjunktiv II of sein.',
     },
     {
       id: 'ch61-ex-04',
@@ -362,7 +478,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'könntest' },
       ],
       correctOptionId: 'a',
-      explanation: 'solltest is the Konjunktiv II du-form of sollen, the everyday way to give a recommendation.',
+      explanation:
+        'solltest is the Konjunktiv II du-form of sollen, the everyday way to give a recommendation.',
     },
     {
       id: 'ch61-ex-05',
@@ -380,7 +497,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'Du rufst deine Mutter an.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Gentle advice ("should") is expressed with sollte; musst is a stronger obligation, kannst is mere ability, and rufst an is a plain present-tense statement.',
+      explanation:
+        'Gentle advice ("should") is expressed with sollte; musst is a stronger obligation, kannst is mere ability, and rufst an is a plain present-tense statement.',
     },
     {
       id: 'ch61-ex-06',
@@ -389,7 +507,8 @@ export const chapter061: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'unreal-condition', 'wenn-clause'],
-      instruction: 'Choose the correct form for the main clause of this unreal condition.',
+      instruction:
+        'Choose the correct form for the main clause of this unreal condition.',
       prompt: 'Wenn ich Zeit hätte, ___ ich dich besuchen.',
       options: [
         { id: 'a', text: 'würde' },
@@ -398,7 +517,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'würdest' },
       ],
       correctOptionId: 'a',
-      explanation: 'An unreal wenn-condition needs Konjunktiv II in both clauses; würde is the correct ich-form of the würde-construction.',
+      explanation:
+        'An unreal wenn-condition needs Konjunktiv II in both clauses; würde is the correct ich-form of the würde-construction.',
     },
     {
       id: 'ch61-ex-07',
@@ -416,7 +536,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'Würde ich Geld hätte, reisen ich.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Dropping wenn moves the conjugated verb hätte to the very front of the clause; the main clause stays unchanged.',
+      explanation:
+        'Dropping wenn moves the conjugated verb hätte to the very front of the clause; the main clause stays unchanged.',
     },
     {
       id: 'ch61-ex-08',
@@ -434,7 +555,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'müsste' },
       ],
       correctOptionId: 'a',
-      explanation: 'könnte expresses possibility ("it could rain"); würde would need a further condition, sollte would mean advice, and müsste would mean strong probability.',
+      explanation:
+        'könnte expresses possibility ("it could rain"); würde would need a further condition, sollte would mean advice, and müsste would mean strong probability.',
     },
     {
       id: 'ch61-ex-09',
@@ -452,7 +574,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'dürfte' },
       ],
       correctOptionId: 'a',
-      explanation: 'müsste expresses a near-certain probability ("he should/must be here soon"), distinct from sollte (advice) or könnte (mere possibility).',
+      explanation:
+        'müsste expresses a near-certain probability ("he should/must be here soon"), distinct from sollte (advice) or könnte (mere possibility).',
     },
     {
       id: 'ch61-ex-10',
@@ -470,7 +593,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'Du musst mir sagen, wie spät es ist.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Könnten Sie...? is the formal, polite request pattern appropriate for a stranger; the other options are either too blunt or use the informal du.',
+      explanation:
+        'Könnten Sie...? is the formal, polite request pattern appropriate for a stranger; the other options are either too blunt or use the informal du.',
     },
     {
       id: 'ch61-ex-11',
@@ -480,10 +604,18 @@ export const chapter061: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'polite-request', 'register'],
       dialogue: [
-        { speaker: 'Anna', german: 'Gib mir mal das Salz!', english: 'Give me the salt!' },
-        { speaker: 'Ben', german: 'Anna, das klingt ziemlich direkt. Frag doch höflicher!', english: 'Anna, that sounds pretty blunt. Ask more politely!' },
+        {
+          speaker: 'Anna',
+          german: 'Gib mir mal das Salz!',
+          english: 'Give me the salt!',
+        },
+        {
+          speaker: 'Ben',
+          german: 'Anna, das klingt ziemlich direkt. Frag doch höflicher!',
+          english: 'Anna, that sounds pretty blunt. Ask more politely!',
+        },
       ],
-      instruction: 'Choose the more polite reformulation of Anna\'s request.',
+      instruction: "Choose the more polite reformulation of Anna's request.",
       prompt: 'Wie könnte Anna ihre Bitte höflicher formulieren?',
       options: [
         { id: 'a', text: 'Könntest du mir das Salz geben?' },
@@ -492,7 +624,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'Salz her!' },
       ],
       correctOptionId: 'a',
-      explanation: 'Könntest du...? softens the same request into a polite question, exactly what Ben is asking Anna to do.',
+      explanation:
+        'Könntest du...? softens the same request into a polite question, exactly what Ben is asking Anna to do.',
     },
     {
       id: 'ch61-ex-12',
@@ -502,11 +635,20 @@ export const chapter061: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'wish-construction'],
       dialogue: [
-        { speaker: 'Tim', german: 'Ich habe leider kein Auto.', english: 'Unfortunately, I do not have a car.' },
-        { speaker: 'Tim', german: 'Das ist echt mühsam ohne Auto.', english: 'It is really tough without a car.' },
+        {
+          speaker: 'Tim',
+          german: 'Ich habe leider kein Auto.',
+          english: 'Unfortunately, I do not have a car.',
+        },
+        {
+          speaker: 'Tim',
+          german: 'Das ist echt mühsam ohne Auto.',
+          english: 'It is really tough without a car.',
+        },
       ],
       instruction: 'Choose the response that expresses a wish.',
-      prompt: 'Lea möchte antworten und einen Wunsch ausdrücken (sie hätte auch gern ein Auto). Welche Antwort passt?',
+      prompt:
+        'Lea möchte antworten und einen Wunsch ausdrücken (sie hätte auch gern ein Auto). Welche Antwort passt?',
       options: [
         { id: 'a', text: 'Ich wünschte, ich hätte auch ein Auto.' },
         { id: 'b', text: 'Ich habe auch kein Auto.' },
@@ -514,7 +656,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'Ich hatte auch ein Auto.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Ich wünschte, ich hätte... is the wish-construction; the other options merely state facts or plans, without expressing a contrary-to-fact wish.',
+      explanation:
+        'Ich wünschte, ich hätte... is the wish-construction; the other options merely state facts or plans, without expressing a contrary-to-fact wish.',
     },
     {
       id: 'ch61-ex-13',
@@ -523,8 +666,10 @@ export const chapter061: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'real-vs-unreal-condition'],
-      instruction: 'Choose the sentence describing a realistic, likely condition, not a hypothetical one.',
-      prompt: 'Which sentence describes a realistic, likely condition rather than a hypothetical one?',
+      instruction:
+        'Choose the sentence describing a realistic, likely condition, not a hypothetical one.',
+      prompt:
+        'Which sentence describes a realistic, likely condition rather than a hypothetical one?',
       options: [
         { id: 'a', text: 'Wenn es regnet, nehme ich einen Schirm.' },
         { id: 'b', text: 'Wenn ich ein Vogel wäre, würde ich fliegen.' },
@@ -532,7 +677,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'Wenn ich mehr Zeit hätte, würde ich mehr lesen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Wenn es regnet, nehme ich einen Schirm. is in the present indicative in both clauses — a real, open condition; the other options use Konjunktiv II for unreal or impossible situations.',
+      explanation:
+        'Wenn es regnet, nehme ich einen Schirm. is in the present indicative in both clauses — a real, open condition; the other options use Konjunktiv II for unreal or impossible situations.',
     },
     {
       id: 'ch61-ex-14',
@@ -550,7 +696,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'Wäre ich doch nicht so müde!' },
       ],
       correctOptionId: 'a',
-      explanation: 'Könntest du mir helfen? directly asks for help; the other sentences all express a wish about a state that is not currently true.',
+      explanation:
+        'Könntest du mir helfen? directly asks for help; the other sentences all express a wish about a state that is not currently true.',
     },
     {
       id: 'ch61-ex-15',
@@ -560,10 +707,18 @@ export const chapter061: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'sollte-advice', 'register'],
       dialogue: [
-        { speaker: 'Patientin', german: 'Ich habe seit Tagen Kopfschmerzen und schlafe schlecht.', english: 'I have had headaches for days and I am sleeping badly.' },
-        { speaker: 'Patientin', german: 'Was denken Sie, woran das liegen könnte?', english: 'What do you think could be causing that?' },
+        {
+          speaker: 'Patientin',
+          german: 'Ich habe seit Tagen Kopfschmerzen und schlafe schlecht.',
+          english: 'I have had headaches for days and I am sleeping badly.',
+        },
+        {
+          speaker: 'Patientin',
+          german: 'Was denken Sie, woran das liegen könnte?',
+          english: 'What do you think could be causing that?',
+        },
       ],
-      instruction: 'Choose the doctor\'s most likely piece of advice.',
+      instruction: "Choose the doctor's most likely piece of advice.",
       prompt: 'Was sagt der Arzt am ehesten als Ratschlag?',
       options: [
         { id: 'a', text: 'Sie sollten mehr trinken und sich ausruhen.' },
@@ -572,7 +727,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'Sie trinken mehr und ruhen sich aus.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Sollten (the Sie-form of sollte) is the natural, mild register for medical advice; the other options are either alarmingly strong, too vague, or a plain factual statement.',
+      explanation:
+        'Sollten (the Sie-form of sollte) is the natural, mild register for medical advice; the other options are either alarmingly strong, too vague, or a plain factual statement.',
     },
     {
       id: 'ch61-ex-16',
@@ -590,7 +746,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'Mehr Geduld hätte ich doch!' },
       ],
       correctOptionId: 'a',
-      explanation: 'Dropping wenn from a wish exclamation requires the conjugated verb hätte to move to the very front of the clause.',
+      explanation:
+        'Dropping wenn from a wish exclamation requires the conjugated verb hätte to move to the very front of the clause.',
     },
     {
       id: 'ch61-ex-17',
@@ -608,7 +765,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'a polite request' },
       ],
       correctOptionId: 'a',
-      explanation: 'In this use, dürfte is a hedged, cautious way of asserting probability, not permission, obligation, or a request.',
+      explanation:
+        'In this use, dürfte is a hedged, cautious way of asserting probability, not permission, obligation, or a request.',
     },
     {
       id: 'ch61-ex-18',
@@ -623,7 +781,8 @@ export const chapter061: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'hätte',
       maxLength: 15,
-      explanation: 'hätte is the synthetic Konjunktiv II form of haben, required after Ich wünschte, ....',
+      explanation:
+        'hätte is the synthetic Konjunktiv II form of haben, required after Ich wünschte, ....',
     },
     {
       id: 'ch61-ex-19',
@@ -638,7 +797,8 @@ export const chapter061: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'wäre',
       maxLength: 15,
-      explanation: 'wäre is the synthetic Konjunktiv II form of sein, required after Ich wollte, ... in this wish-construction.',
+      explanation:
+        'wäre is the synthetic Konjunktiv II form of sein, required after Ich wollte, ... in this wish-construction.',
     },
     {
       id: 'ch61-ex-20',
@@ -647,13 +807,15 @@ export const chapter061: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'sollte-advice'],
-      instruction: 'Write the correct form of sollen (Konjunktiv II, advice) for du. Capitalisation is not checked.',
+      instruction:
+        'Write the correct form of sollen (Konjunktiv II, advice) for du. Capitalisation is not checked.',
       prompt: 'Du ___ mehr schlafen. (sollen, Konjunktiv II)',
       acceptedAnswers: ['solltest'],
       answerMode: 'caseInsensitive',
       placeholder: 'solltest',
       maxLength: 15,
-      explanation: 'solltest is the Konjunktiv II du-form of sollen, the standard way to give advice.',
+      explanation:
+        'solltest is the Konjunktiv II du-form of sollen, the standard way to give advice.',
     },
     {
       id: 'ch61-ex-21',
@@ -662,13 +824,15 @@ export const chapter061: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'unreal-condition', 'wenn-clause'],
-      instruction: 'Write the missing Konjunktiv II form for the main clause. Capitalisation is not checked.',
+      instruction:
+        'Write the missing Konjunktiv II form for the main clause. Capitalisation is not checked.',
       prompt: 'Wenn ich Zeit hätte, ___ ich dich besuchen. (werden, Konjunktiv II)',
       acceptedAnswers: ['würde'],
       answerMode: 'caseInsensitive',
       placeholder: 'würde',
       maxLength: 15,
-      explanation: 'würde is the ich-form of the würde-construction, needed because besuchen has no natural synthetic form.',
+      explanation:
+        'würde is the ich-form of the würde-construction, needed because besuchen has no natural synthetic form.',
     },
     {
       id: 'ch61-ex-22',
@@ -677,13 +841,15 @@ export const chapter061: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'unreal-condition', 'wenn-clause'],
-      instruction: 'Write the missing Konjunktiv II form for the wenn-clause. Capitalisation is not checked.',
+      instruction:
+        'Write the missing Konjunktiv II form for the wenn-clause. Capitalisation is not checked.',
       prompt: 'Wenn ich mehr Geld ___, würde ich reisen. (haben, Konjunktiv II)',
       acceptedAnswers: ['hätte'],
       answerMode: 'caseInsensitive',
       placeholder: 'hätte',
       maxLength: 15,
-      explanation: 'hätte is the synthetic Konjunktiv II form of haben, required in the wenn-clause of this unreal condition.',
+      explanation:
+        'hätte is the synthetic Konjunktiv II form of haben, required in the wenn-clause of this unreal condition.',
     },
     {
       id: 'ch61-ex-23',
@@ -692,13 +858,15 @@ export const chapter061: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'polite-request'],
-      instruction: 'Write the missing Konjunktiv II form to open a formal polite request. Capitalisation is not checked.',
+      instruction:
+        'Write the missing Konjunktiv II form to open a formal polite request. Capitalisation is not checked.',
       prompt: '___ Sie mir bitte das Fenster öffnen? (können, Konjunktiv II, höflich)',
       acceptedAnswers: ['Könnten', 'könnten'],
       answerMode: 'caseInsensitive',
       placeholder: 'Könnten',
       maxLength: 15,
-      explanation: 'Könnten Sie...? is the formal polite-request pattern built on the synthetic Konjunktiv II of können.',
+      explanation:
+        'Könnten Sie...? is the formal polite-request pattern built on the synthetic Konjunktiv II of können.',
     },
     {
       id: 'ch61-ex-24',
@@ -707,13 +875,15 @@ export const chapter061: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'meaning-distinction'],
-      instruction: 'Write the Konjunktiv II form expressing a strong probability, not advice. Capitalisation is not checked.',
+      instruction:
+        'Write the Konjunktiv II form expressing a strong probability, not advice. Capitalisation is not checked.',
       prompt: 'Er ___ bald ankommen. (müssen, Konjunktiv II – starke Wahrscheinlichkeit)',
       acceptedAnswers: ['müsste'],
       answerMode: 'caseInsensitive',
       placeholder: 'müsste',
       maxLength: 15,
-      explanation: 'müsste expresses a strong, near-certain probability here, distinct from the advice-meaning of sollte.',
+      explanation:
+        'müsste expresses a strong, near-certain probability here, distinct from the advice-meaning of sollte.',
     },
     {
       id: 'ch61-ex-25',
@@ -722,13 +892,15 @@ export const chapter061: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'meaning-distinction'],
-      instruction: 'Write the Konjunktiv II form expressing a cautious probability. Capitalisation is not checked.',
+      instruction:
+        'Write the Konjunktiv II form expressing a cautious probability. Capitalisation is not checked.',
       prompt: 'Das ___ stimmen. (dürfen, Konjunktiv II – vorsichtige Vermutung)',
       acceptedAnswers: ['dürfte'],
       answerMode: 'caseInsensitive',
       placeholder: 'dürfte',
       maxLength: 15,
-      explanation: 'dürfte expresses a cautious, hedged probability: "that is probably right".',
+      explanation:
+        'dürfte expresses a cautious, hedged probability: "that is probably right".',
     },
     {
       id: 'ch61-ex-26',
@@ -737,13 +909,18 @@ export const chapter061: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'transformation', 'polite-request'],
-      instruction: 'Rewrite the blunt command as a formal polite request using könnten. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the blunt command as a formal polite request using könnten. Capitalisation and punctuation are checked.',
       prompt: 'Öffnen Sie das Fenster! → höfliche Bitte mit könnten',
-      acceptedAnswers: ['Könnten Sie das Fenster öffnen?', 'Könnten Sie das Fenster öffnen'],
+      acceptedAnswers: [
+        'Könnten Sie das Fenster öffnen?',
+        'Könnten Sie das Fenster öffnen',
+      ],
       answerMode: 'normalized',
       placeholder: 'Könnten Sie ...?',
       maxLength: 50,
-      explanation: 'Könnten Sie das Fenster öffnen? softens the imperative into a formal polite request.',
+      explanation:
+        'Könnten Sie das Fenster öffnen? softens the imperative into a formal polite request.',
     },
     {
       id: 'ch61-ex-27',
@@ -752,13 +929,18 @@ export const chapter061: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'transformation', 'wish-construction'],
-      instruction: 'Rewrite the factual statement as a wish using Ich wünschte. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the factual statement as a wish using Ich wünschte. Capitalisation and punctuation are checked.',
       prompt: 'Ich habe kein Auto. → Wunsch mit Ich wünschte',
-      acceptedAnswers: ['Ich wünschte, ich hätte ein Auto.', 'Ich wünschte, ich hätte ein Auto'],
+      acceptedAnswers: [
+        'Ich wünschte, ich hätte ein Auto.',
+        'Ich wünschte, ich hätte ein Auto',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich wünschte, ich hätte ...',
       maxLength: 50,
-      explanation: 'The factual statement Ich habe kein Auto. becomes the contrary-to-fact wish Ich wünschte, ich hätte ein Auto.',
+      explanation:
+        'The factual statement Ich habe kein Auto. becomes the contrary-to-fact wish Ich wünschte, ich hätte ein Auto.',
     },
     {
       id: 'ch61-ex-28',
@@ -767,13 +949,15 @@ export const chapter061: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'transformation', 'sollte-advice'],
-      instruction: 'Rewrite the statement as advice using sollte. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the statement as advice using sollte. Capitalisation and punctuation are checked.',
       prompt: 'Er raucht zu viel. → Ratschlag mit sollte',
       acceptedAnswers: ['Er sollte weniger rauchen.', 'Er sollte weniger rauchen'],
       answerMode: 'normalized',
       placeholder: 'Er sollte ...',
       maxLength: 50,
-      explanation: 'sollte turns the factual observation into a piece of gentle advice: Er sollte weniger rauchen.',
+      explanation:
+        'sollte turns the factual observation into a piece of gentle advice: Er sollte weniger rauchen.',
     },
     {
       id: 'ch61-ex-29',
@@ -782,13 +966,18 @@ export const chapter061: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'wenn-clause', 'word-order'],
-      instruction: 'Rewrite the sentence without wenn, moving the verb to the front of the clause. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence without wenn, moving the verb to the front of the clause. Capitalisation and punctuation are checked.',
       prompt: 'Wenn ich Zeit hätte, würde ich kommen. → ohne wenn',
-      acceptedAnswers: ['Hätte ich Zeit, würde ich kommen.', 'Hätte ich Zeit, würde ich kommen'],
+      acceptedAnswers: [
+        'Hätte ich Zeit, würde ich kommen.',
+        'Hätte ich Zeit, würde ich kommen',
+      ],
       answerMode: 'normalized',
       placeholder: 'Hätte ich Zeit, würde ich kommen.',
       maxLength: 50,
-      explanation: 'Dropping wenn moves hätte to the very front of the clause; the main clause stays unchanged, and the meaning is identical.',
+      explanation:
+        'Dropping wenn moves hätte to the very front of the clause; the main clause stays unchanged, and the meaning is identical.',
     },
     {
       id: 'ch61-ex-30',
@@ -796,14 +985,22 @@ export const chapter061: ChapterDefinition = {
       order: 30,
       type: 'textInput',
       level: 'transfer',
-      grammarFocus: ['konjunktiv-ii', 'sentence-building', 'unreal-condition', 'wenn-clause'],
-      instruction: 'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
-      prompt: 'wenn – sie – mehr Geld – haben (Konjunktiv II) – , – sie – öfter – reisen (Konjunktiv II mit würde)',
+      grammarFocus: [
+        'konjunktiv-ii',
+        'sentence-building',
+        'unreal-condition',
+        'wenn-clause',
+      ],
+      instruction:
+        'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
+      prompt:
+        'wenn – sie – mehr Geld – haben (Konjunktiv II) – , – sie – öfter – reisen (Konjunktiv II mit würde)',
       acceptedAnswers: ['Wenn sie mehr Geld hätte, würde sie öfter reisen.'],
       answerMode: 'normalized',
       placeholder: 'Wenn sie mehr Geld hätte, würde sie öfter reisen.',
       maxLength: 70,
-      explanation: 'haben becomes the synthetic hätte in the wenn-clause; reisen has no natural synthetic form, so it takes würde + infinitive.',
+      explanation:
+        'haben becomes the synthetic hätte in the wenn-clause; reisen has no natural synthetic form, so it takes würde + infinitive.',
     },
     {
       id: 'ch61-ex-31',
@@ -812,13 +1009,18 @@ export const chapter061: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'wenn-clause', 'word-order'],
-      instruction: 'Rewrite the sentence without wenn, moving the verb to the front of the clause. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence without wenn, moving the verb to the front of the clause. Capitalisation and punctuation are checked.',
       prompt: 'Wenn sie mehr Geld hätte, würde sie öfter reisen. → ohne wenn',
-      acceptedAnswers: ['Hätte sie mehr Geld, würde sie öfter reisen.', 'Hätte sie mehr Geld, würde sie öfter reisen'],
+      acceptedAnswers: [
+        'Hätte sie mehr Geld, würde sie öfter reisen.',
+        'Hätte sie mehr Geld, würde sie öfter reisen',
+      ],
       answerMode: 'normalized',
       placeholder: 'Hätte sie mehr Geld, würde sie öfter reisen.',
       maxLength: 70,
-      explanation: 'Dropping wenn moves hätte to the very front of the clause; the meaning stays exactly the same.',
+      explanation:
+        'Dropping wenn moves hätte to the very front of the clause; the meaning stays exactly the same.',
     },
     {
       id: 'ch61-ex-32',
@@ -827,13 +1029,15 @@ export const chapter061: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'sentence-building', 'wish-construction'],
-      instruction: 'Build a complete wish exclamation from the cue words. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete wish exclamation from the cue words. Capitalisation and punctuation are checked.',
       prompt: 'wenn – ich – doch nur – mehr Geduld – haben (Konjunktiv II) – !',
       acceptedAnswers: ['Wenn ich doch nur mehr Geduld hätte!'],
       answerMode: 'normalized',
       placeholder: 'Wenn ich doch nur mehr Geduld hätte!',
       maxLength: 50,
-      explanation: 'haben becomes the synthetic hätte, and wenn ... doch nur ... ! is the emphatic wish-exclamation pattern.',
+      explanation:
+        'haben becomes the synthetic hätte, and wenn ... doch nur ... ! is the emphatic wish-exclamation pattern.',
     },
     {
       id: 'ch61-ex-33',
@@ -842,7 +1046,8 @@ export const chapter061: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'transformation', 'wish-construction'],
-      instruction: 'Combine into a wish using Ich wünschte, dass .... Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine into a wish using Ich wünschte, dass .... Capitalisation and punctuation are checked.',
       prompt: 'Du bist nicht hier. → Wunsch mit Ich wünschte, dass ...',
       acceptedAnswers: [
         'Ich wünschte, dass du hier wärest.',
@@ -853,7 +1058,8 @@ export const chapter061: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Ich wünschte, dass du hier wärest.',
       maxLength: 50,
-      explanation: 'bist becomes the synthetic Konjunktiv II wärest (or the common contraction wärst), turning the fact into a wish.',
+      explanation:
+        'bist becomes the synthetic Konjunktiv II wärest (or the common contraction wärst), turning the fact into a wish.',
     },
     {
       id: 'ch61-ex-34',
@@ -863,8 +1069,16 @@ export const chapter061: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'polite-request', 'register'],
       dialogue: [
-        { speaker: 'Kellner', german: 'Was möchten Sie trinken?', english: 'What would you like to drink?' },
-        { speaker: 'Gast', german: 'Einen Moment, ich überlege noch kurz.', english: 'One moment, I am still thinking.' },
+        {
+          speaker: 'Kellner',
+          german: 'Was möchten Sie trinken?',
+          english: 'What would you like to drink?',
+        },
+        {
+          speaker: 'Gast',
+          german: 'Einen Moment, ich überlege noch kurz.',
+          english: 'One moment, I am still thinking.',
+        },
       ],
       instruction: 'Choose the most polite way to order a coffee.',
       prompt: 'Wie bestellt der Gast am höflichsten einen Kaffee?',
@@ -875,7 +1089,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'Kaffee!' },
       ],
       correctOptionId: 'a',
-      explanation: 'Ich hätte gern... is the fixed, everyday polite pattern for ordering; the other options are a command, a blunt statement of will, or a single bare word.',
+      explanation:
+        'Ich hätte gern... is the fixed, everyday polite pattern for ordering; the other options are a command, a blunt statement of will, or a single bare word.',
     },
     {
       id: 'ch61-ex-35',
@@ -890,7 +1105,8 @@ export const chapter061: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'hätte',
       maxLength: 15,
-      explanation: 'Ich hätte gern... is the fixed, everyday pattern for politely ordering or requesting something.',
+      explanation:
+        'Ich hätte gern... is the fixed, everyday pattern for politely ordering or requesting something.',
     },
     {
       id: 'ch61-ex-36',
@@ -907,7 +1123,8 @@ export const chapter061: ChapterDefinition = {
         { id: 's3', text: 'bitte' },
         { id: 's4', text: 'helfen?' },
       ],
-      explanation: 'Könnten Sie...? is the formal polite-request pattern; the infinitive helfen stays at the end of the clause.',
+      explanation:
+        'Könnten Sie...? is the formal polite-request pattern; the infinitive helfen stays at the end of the clause.',
     },
     {
       id: 'ch61-ex-37',
@@ -917,8 +1134,16 @@ export const chapter061: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'sollte-advice', 'register'],
       dialogue: [
-        { speaker: 'Freund', german: 'Ich bin ständig müde und kann mich nicht konzentrieren.', english: 'I am constantly tired and cannot concentrate.' },
-        { speaker: 'Freund', german: 'Was soll ich bloß tun?', english: 'What on earth should I do?' },
+        {
+          speaker: 'Freund',
+          german: 'Ich bin ständig müde und kann mich nicht konzentrieren.',
+          english: 'I am constantly tired and cannot concentrate.',
+        },
+        {
+          speaker: 'Freund',
+          german: 'Was soll ich bloß tun?',
+          english: 'What on earth should I do?',
+        },
       ],
       instruction: 'Choose the best piece of advice.',
       prompt: 'Was rätst du deinem Freund?',
@@ -929,7 +1154,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'Du gehst früher ins Bett.' },
       ],
       correctOptionId: 'a',
-      explanation: 'solltest (Konjunktiv II) is the natural, mild way to give advice; sollst sounds like an order, musst is too forceful, and gehst is just a plain statement.',
+      explanation:
+        'solltest (Konjunktiv II) is the natural, mild way to give advice; sollst sounds like an order, musst is too forceful, and gehst is just a plain statement.',
     },
     {
       id: 'ch61-ex-38',
@@ -938,13 +1164,15 @@ export const chapter061: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'sollte-advice'],
-      instruction: 'Write the correct form of sollen (Konjunktiv II, advice) for er. Capitalisation is not checked.',
+      instruction:
+        'Write the correct form of sollen (Konjunktiv II, advice) for er. Capitalisation is not checked.',
       prompt: 'Er ___ nicht so viel arbeiten. (sollen, Konjunktiv II)',
       acceptedAnswers: ['sollte'],
       answerMode: 'caseInsensitive',
       placeholder: 'sollte',
       maxLength: 15,
-      explanation: 'sollte is the Konjunktiv II er-form of sollen, the standard way to give advice.',
+      explanation:
+        'sollte is the Konjunktiv II er-form of sollen, the standard way to give advice.',
     },
     {
       id: 'ch61-ex-39',
@@ -961,7 +1189,8 @@ export const chapter061: ChapterDefinition = {
         { id: 's3', text: 'leiser' },
         { id: 's4', text: 'sprechen?' },
       ],
-      explanation: 'Würden Sie...? softens a request using the analytic würde-construction, with the infinitive sprechen at the end.',
+      explanation:
+        'Würden Sie...? softens a request using the analytic würde-construction, with the infinitive sprechen at the end.',
     },
     {
       id: 'ch61-ex-40',
@@ -975,7 +1204,8 @@ export const chapter061: ChapterDefinition = {
       templateParts: ['', ' Sie mir bitte helfen?'],
       slots: [{ id: 'slot1', correctWord: 'Könnten' }],
       wordBank: ['Könnten', 'Können', 'Kannst', 'Werden'],
-      explanation: 'Könnten Sie...? is the formal polite-request pattern built on the synthetic Konjunktiv II of können.',
+      explanation:
+        'Könnten Sie...? is the formal polite-request pattern built on the synthetic Konjunktiv II of können.',
     },
     {
       id: 'ch61-ex-41',
@@ -993,7 +1223,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'haben' },
       ],
       correctOptionId: 'a',
-      explanation: 'The wenn-clause of an unreal condition needs the synthetic Konjunktiv II form hätte, matching the würde-clause.',
+      explanation:
+        'The wenn-clause of an unreal condition needs the synthetic Konjunktiv II form hätte, matching the würde-clause.',
     },
     {
       id: 'ch61-ex-42',
@@ -1002,13 +1233,16 @@ export const chapter061: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'unreal-condition', 'wenn-clause'],
-      instruction: 'Write the missing Konjunktiv II form for the wenn-clause. Capitalisation is not checked.',
-      prompt: 'Wenn ich mehr Geduld ___, würde ich ruhiger reagieren. (haben, Konjunktiv II)',
+      instruction:
+        'Write the missing Konjunktiv II form for the wenn-clause. Capitalisation is not checked.',
+      prompt:
+        'Wenn ich mehr Geduld ___, würde ich ruhiger reagieren. (haben, Konjunktiv II)',
       acceptedAnswers: ['hätte'],
       answerMode: 'caseInsensitive',
       placeholder: 'hätte',
       maxLength: 15,
-      explanation: 'hätte is the synthetic Konjunktiv II form of haben, required in the wenn-clause of this unreal condition.',
+      explanation:
+        'hätte is the synthetic Konjunktiv II form of haben, required in the wenn-clause of this unreal condition.',
     },
     {
       id: 'ch61-ex-43',
@@ -1024,7 +1258,8 @@ export const chapter061: ChapterDefinition = {
         { id: 's2', text: 'einen Moment' },
         { id: 's3', text: 'Zeit?' },
       ],
-      explanation: 'Hätten Sie...? is a formal polite request built on the synthetic Konjunktiv II of haben.',
+      explanation:
+        'Hätten Sie...? is a formal polite request built on the synthetic Konjunktiv II of haben.',
     },
     {
       id: 'ch61-ex-44',
@@ -1041,7 +1276,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'p3', left: 'Ich hätte gern...', right: 'höfliche Bestellung' },
         { id: 'p4', left: 'Dürfte ich...?', right: 'sehr höfliche Erlaubnisfrage' },
       ],
-      explanation: 'Each polite pattern has a typical register and function: formal vs. informal requests, ordering, and asking permission.',
+      explanation:
+        'Each polite pattern has a typical register and function: formal vs. informal requests, ordering, and asking permission.',
     },
     {
       id: 'ch61-ex-45',
@@ -1059,7 +1295,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'Könntest du Zeit hättest, mitkommen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Dropping wenn moves the conjugated verb hättest to the very front of the clause; the main clause is unaffected.',
+      explanation:
+        'Dropping wenn moves the conjugated verb hättest to the very front of the clause; the main clause is unaffected.',
     },
     {
       id: 'ch61-ex-46',
@@ -1068,13 +1305,15 @@ export const chapter061: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'wenn-clause', 'word-order'],
-      instruction: 'Write the missing Konjunktiv II form to open the clause (wenn is dropped). Capitalisation is not checked.',
+      instruction:
+        'Write the missing Konjunktiv II form to open the clause (wenn is dropped). Capitalisation is not checked.',
       prompt: '___ ich mehr Geld, würde ich reisen. (haben, Konjunktiv II – ohne wenn)',
       acceptedAnswers: ['Hätte', 'hätte'],
       answerMode: 'caseInsensitive',
       placeholder: 'Hätte',
       maxLength: 15,
-      explanation: 'With wenn dropped, the conjugated verb hätte moves to the very front of the clause.',
+      explanation:
+        'With wenn dropped, the conjugated verb hätte moves to the very front of the clause.',
     },
     {
       id: 'ch61-ex-47',
@@ -1091,7 +1330,8 @@ export const chapter061: ChapterDefinition = {
         { id: 's3', text: 'ich' },
         { id: 's4', text: 'kommen.' },
       ],
-      explanation: 'The wenn-clause verb goes to the end of its clause; the main clause verb (würde) takes second position, right after the comma.',
+      explanation:
+        'The wenn-clause verb goes to the end of its clause; the main clause verb (würde) takes second position, right after the comma.',
     },
     {
       id: 'ch61-ex-48',
@@ -1108,7 +1348,8 @@ export const chapter061: ChapterDefinition = {
         { id: 's3', text: 'ich' },
         { id: 's4', text: 'kommen.' },
       ],
-      explanation: 'With wenn dropped, hätte moves to the very front of the clause; the main clause stays the same.',
+      explanation:
+        'With wenn dropped, hätte moves to the very front of the clause; the main clause stays the same.',
     },
     {
       id: 'ch61-ex-49',
@@ -1122,7 +1363,8 @@ export const chapter061: ChapterDefinition = {
       tokens: ['Wenn', 'ich', 'Zeit', 'hätte,', 'werde', 'ich', 'dich', 'besuchen.'],
       errorTokenIndex: 4,
       correction: 'würde',
-      explanation: 'Both clauses of an unreal condition need Konjunktiv II; the future-tense werde must be the Konjunktiv II würde instead.',
+      explanation:
+        'Both clauses of an unreal condition need Konjunktiv II; the future-tense werde must be the Konjunktiv II würde instead.',
     },
     {
       id: 'ch61-ex-50',
@@ -1132,10 +1374,19 @@ export const chapter061: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'polite-request', 'register'],
       dialogue: [
-        { speaker: 'Empfangsdame', german: 'Guten Tag, was kann ich für Sie tun?', english: 'Good day, what can I do for you?' },
-        { speaker: 'Gast', german: 'Ich möchte gern einen Tisch reservieren.', english: 'I would like to reserve a table.' },
+        {
+          speaker: 'Empfangsdame',
+          german: 'Guten Tag, was kann ich für Sie tun?',
+          english: 'Good day, what can I do for you?',
+        },
+        {
+          speaker: 'Gast',
+          german: 'Ich möchte gern einen Tisch reservieren.',
+          english: 'I would like to reserve a table.',
+        },
       ],
-      instruction: 'Choose the most polite way to ask whether a table for two is available.',
+      instruction:
+        'Choose the most polite way to ask whether a table for two is available.',
       prompt: 'Wie fragt der Gast am höflichsten nach einem Tisch für zwei?',
       options: [
         { id: 'a', text: 'Hätten Sie einen Tisch für zwei?' },
@@ -1144,7 +1395,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'Tisch für zwei!' },
       ],
       correctOptionId: 'a',
-      explanation: 'Hätten Sie...? is the formal polite pattern built on the synthetic Konjunktiv II of haben, softer than a plain question or a demand.',
+      explanation:
+        'Hätten Sie...? is the formal polite pattern built on the synthetic Konjunktiv II of haben, softer than a plain question or a demand.',
     },
     {
       id: 'ch61-ex-51',
@@ -1153,13 +1405,16 @@ export const chapter061: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'polite-request'],
-      instruction: 'Write the missing Konjunktiv II form to open a formal polite request. Capitalisation is not checked.',
-      prompt: '___ Sie mir bitte die Speisekarte bringen? (können, Konjunktiv II, höflich)',
+      instruction:
+        'Write the missing Konjunktiv II form to open a formal polite request. Capitalisation is not checked.',
+      prompt:
+        '___ Sie mir bitte die Speisekarte bringen? (können, Konjunktiv II, höflich)',
       acceptedAnswers: ['Könnten', 'könnten'],
       answerMode: 'caseInsensitive',
       placeholder: 'Könnten',
       maxLength: 15,
-      explanation: 'Könnten Sie...? is the formal polite-request pattern built on the synthetic Konjunktiv II of können.',
+      explanation:
+        'Könnten Sie...? is the formal polite-request pattern built on the synthetic Konjunktiv II of können.',
     },
     {
       id: 'ch61-ex-52',
@@ -1176,7 +1431,8 @@ export const chapter061: ChapterDefinition = {
         { id: 's3', text: 'du' },
         { id: 's4', text: 'besser sprechen.' },
       ],
-      explanation: 'üben and sprechen have no natural synthetic Konjunktiv II form, so würde + infinitive appears in both clauses.',
+      explanation:
+        'üben and sprechen have no natural synthetic Konjunktiv II form, so würde + infinitive appears in both clauses.',
     },
     {
       id: 'ch61-ex-53',
@@ -1185,7 +1441,8 @@ export const chapter061: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'unreal-condition', 'wenn-clause'],
-      instruction: 'Drag the correct words into the slots to complete the unreal condition.',
+      instruction:
+        'Drag the correct words into the slots to complete the unreal condition.',
       prompt: 'Wenn ich Zeit ___, ___ ich kommen.',
       templateParts: ['Wenn ich Zeit ', ', ', ' ich kommen.'],
       slots: [
@@ -1193,7 +1450,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'slot2', correctWord: 'würde' },
       ],
       wordBank: ['hätte', 'würde', 'habe', 'werde'],
-      explanation: 'The wenn-clause needs the synthetic hätte, and the main clause needs würde, because kommen normally takes the analytic form here.',
+      explanation:
+        'The wenn-clause needs the synthetic hätte, and the main clause needs würde, because kommen normally takes the analytic form here.',
     },
     {
       id: 'ch61-ex-54',
@@ -1205,12 +1463,29 @@ export const chapter061: ChapterDefinition = {
       instruction: 'Match each problem to the matching piece of advice.',
       prompt: 'Ordne jedes Problem dem passenden Ratschlag zu.',
       pairs: [
-        { id: 'p1', left: 'Ich bin immer müde.', right: 'An deiner Stelle würde ich früher schlafen gehen.' },
-        { id: 'p2', left: 'Ich habe Kopfschmerzen.', right: 'An deiner Stelle würde ich einen Arzt aufsuchen.' },
-        { id: 'p3', left: 'Ich habe schlechte Noten.', right: 'An deiner Stelle würde ich mehr lernen.' },
-        { id: 'p4', left: 'Ich habe kein Geld mehr.', right: 'An deiner Stelle würde ich sparen.' },
+        {
+          id: 'p1',
+          left: 'Ich bin immer müde.',
+          right: 'An deiner Stelle würde ich früher schlafen gehen.',
+        },
+        {
+          id: 'p2',
+          left: 'Ich habe Kopfschmerzen.',
+          right: 'An deiner Stelle würde ich einen Arzt aufsuchen.',
+        },
+        {
+          id: 'p3',
+          left: 'Ich habe schlechte Noten.',
+          right: 'An deiner Stelle würde ich mehr lernen.',
+        },
+        {
+          id: 'p4',
+          left: 'Ich habe kein Geld mehr.',
+          right: 'An deiner Stelle würde ich sparen.',
+        },
       ],
-      explanation: 'An deiner Stelle würde ich... is a common hypothetical-advice pattern that does not need a wenn-clause at all.',
+      explanation:
+        'An deiner Stelle würde ich... is a common hypothetical-advice pattern that does not need a wenn-clause at all.',
     },
     {
       id: 'ch61-ex-55',
@@ -1228,7 +1503,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'kann' },
       ],
       correctOptionId: 'a',
-      explanation: 'dürfte expresses a cautious, hedged probability ("that might well be wrong"), unlike the plain present-tense modals.',
+      explanation:
+        'dürfte expresses a cautious, hedged probability ("that might well be wrong"), unlike the plain present-tense modals.',
     },
     {
       id: 'ch61-ex-56',
@@ -1237,13 +1513,16 @@ export const chapter061: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'meaning-distinction'],
-      instruction: 'Write the Konjunktiv II form expressing a cautious probability. Capitalisation is not checked.',
-      prompt: 'Das ___ stimmen, aber ich bin nicht sicher. (dürfen, Konjunktiv II – vorsichtige Vermutung)',
+      instruction:
+        'Write the Konjunktiv II form expressing a cautious probability. Capitalisation is not checked.',
+      prompt:
+        'Das ___ stimmen, aber ich bin nicht sicher. (dürfen, Konjunktiv II – vorsichtige Vermutung)',
       acceptedAnswers: ['dürfte'],
       answerMode: 'caseInsensitive',
       placeholder: 'dürfte',
       maxLength: 15,
-      explanation: 'dürfte expresses a cautious, hedged probability: "that is probably right".',
+      explanation:
+        'dürfte expresses a cautious, hedged probability: "that is probably right".',
     },
     {
       id: 'ch61-ex-57',
@@ -1260,7 +1539,8 @@ export const chapter061: ChapterDefinition = {
         { id: 's3', text: 'wir' },
         { id: 's4', text: 'zu Hause.' },
       ],
-      explanation: 'The wenn-clause verb goes to the end; blieben (Konjunktiv II of bleiben) takes second position in the main clause.',
+      explanation:
+        'The wenn-clause verb goes to the end; blieben (Konjunktiv II of bleiben) takes second position in the main clause.',
     },
     {
       id: 'ch61-ex-58',
@@ -1277,7 +1557,8 @@ export const chapter061: ChapterDefinition = {
         { id: 's3', text: 'wir' },
         { id: 's4', text: 'zu Hause.' },
       ],
-      explanation: 'With wenn dropped, würde moves to the very front of the clause; the meaning stays exactly the same.',
+      explanation:
+        'With wenn dropped, würde moves to the very front of the clause; the meaning stays exactly the same.',
     },
     {
       id: 'ch61-ex-59',
@@ -1286,12 +1567,14 @@ export const chapter061: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'meaning-distinction'],
-      instruction: 'Find the token that expresses the wrong strength of certainty and correct it.',
+      instruction:
+        'Find the token that expresses the wrong strength of certainty and correct it.',
       prompt: 'Es müsste heute regnen.',
       tokens: ['Es', 'müsste', 'heute', 'regnen.'],
       errorTokenIndex: 1,
       correction: 'könnte',
-      explanation: 'müsste would express near-certainty; a mere possibility ("it could rain") needs the weaker könnte instead.',
+      explanation:
+        'müsste would express near-certainty; a mere possibility ("it could rain") needs the weaker könnte instead.',
     },
     {
       id: 'ch61-ex-60',
@@ -1309,7 +1592,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'Ich hatte mehr Geduld.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The wish-construction Ich wünschte, ... is always followed by a Konjunktiv II clause, even though the present-tense wünsche might seem tempting.',
+      explanation:
+        'The wish-construction Ich wünschte, ... is always followed by a Konjunktiv II clause, even though the present-tense wünsche might seem tempting.',
     },
     {
       id: 'ch61-ex-61',
@@ -1318,13 +1602,15 @@ export const chapter061: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'transformation', 'wish-construction'],
-      instruction: 'Rewrite the factual statement as a wish using Ich wünschte. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the factual statement as a wish using Ich wünschte. Capitalisation and punctuation are checked.',
       prompt: 'Ich bin nicht reich. → Wunsch mit Ich wünschte',
       acceptedAnswers: ['Ich wünschte, ich wäre reich.', 'Ich wünschte, ich wäre reich'],
       answerMode: 'normalized',
       placeholder: 'Ich wünschte, ich wäre ...',
       maxLength: 50,
-      explanation: 'The factual statement Ich bin nicht reich. becomes the contrary-to-fact wish Ich wünschte, ich wäre reich.',
+      explanation:
+        'The factual statement Ich bin nicht reich. becomes the contrary-to-fact wish Ich wünschte, ich wäre reich.',
     },
     {
       id: 'ch61-ex-62',
@@ -1341,7 +1627,8 @@ export const chapter061: ChapterDefinition = {
         { id: 's3', text: 'hätte' },
         { id: 's4', text: 'mehr Geduld.' },
       ],
-      explanation: 'Ich wünschte, ... is always followed by a subject and a Konjunktiv II verb, here hätte.',
+      explanation:
+        'Ich wünschte, ... is always followed by a subject and a Konjunktiv II verb, here hätte.',
     },
     {
       id: 'ch61-ex-63',
@@ -1358,7 +1645,8 @@ export const chapter061: ChapterDefinition = {
         { id: 's3', text: 'wäre' },
         { id: 's4', text: 'schon im Urlaub.' },
       ],
-      explanation: 'Ich wünschte, ... is followed by a Konjunktiv II clause; wäre is the synthetic Konjunktiv II of sein.',
+      explanation:
+        'Ich wünschte, ... is followed by a Konjunktiv II clause; wäre is the synthetic Konjunktiv II of sein.',
     },
     {
       id: 'ch61-ex-64',
@@ -1372,7 +1660,8 @@ export const chapter061: ChapterDefinition = {
       templateParts: ['Ich ', ' gern einen Kaffee.'],
       slots: [{ id: 'slot1', correctWord: 'hätte' }],
       wordBank: ['hätte', 'habe', 'hatte', 'wäre'],
-      explanation: 'Ich hätte gern... is the fixed, everyday pattern for politely ordering something.',
+      explanation:
+        'Ich hätte gern... is the fixed, everyday pattern for politely ordering something.',
     },
     {
       id: 'ch61-ex-65',
@@ -1384,12 +1673,25 @@ export const chapter061: ChapterDefinition = {
       instruction: 'Match each German sentence to its English translation.',
       prompt: 'Ordne jeden deutschen Satz seiner englischen Übersetzung zu.',
       pairs: [
-        { id: 'p1', left: 'Ich wünschte, ich hätte mehr Zeit.', right: 'I wish I had more time.' },
-        { id: 'p2', left: 'Ich wollte, ich wäre schon zu Hause.', right: 'I wish I were home already.' },
-        { id: 'p3', left: 'Wenn ich doch nur mehr Geduld hätte!', right: 'If only I had more patience!' },
+        {
+          id: 'p1',
+          left: 'Ich wünschte, ich hätte mehr Zeit.',
+          right: 'I wish I had more time.',
+        },
+        {
+          id: 'p2',
+          left: 'Ich wollte, ich wäre schon zu Hause.',
+          right: 'I wish I were home already.',
+        },
+        {
+          id: 'p3',
+          left: 'Wenn ich doch nur mehr Geduld hätte!',
+          right: 'If only I had more patience!',
+        },
         { id: 'p4', left: 'Du solltest mehr schlafen.', right: 'You should sleep more.' },
       ],
-      explanation: 'Each Konjunktiv II sentence expresses a different function — wish, wish, exclamatory wish, and advice — matched here to its English equivalent.',
+      explanation:
+        'Each Konjunktiv II sentence expresses a different function — wish, wish, exclamatory wish, and advice — matched here to its English equivalent.',
     },
     {
       id: 'ch61-ex-66',
@@ -1399,10 +1701,18 @@ export const chapter061: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'hypothetical-situation'],
       dialogue: [
-        { speaker: 'Mia', german: 'Was würdest du machen, wenn du im Lotto gewinnen würdest?', english: 'What would you do if you won the lottery?' },
-        { speaker: 'Jonas', german: 'Gute Frage, lass mich kurz nachdenken.', english: 'Good question, let me think for a moment.' },
+        {
+          speaker: 'Mia',
+          german: 'Was würdest du machen, wenn du im Lotto gewinnen würdest?',
+          english: 'What would you do if you won the lottery?',
+        },
+        {
+          speaker: 'Jonas',
+          german: 'Gute Frage, lass mich kurz nachdenken.',
+          english: 'Good question, let me think for a moment.',
+        },
       ],
-      instruction: 'Choose Jonas\'s most natural hypothetical answer.',
+      instruction: "Choose Jonas's most natural hypothetical answer.",
       prompt: 'Wie antwortet Jonas am natürlichsten auf Mias Frage?',
       options: [
         { id: 'a', text: 'Ich würde sofort eine Weltreise machen.' },
@@ -1411,7 +1721,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'Ich machte eine Weltreise.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Mia\'s question is in Konjunktiv II (würdest gewinnen), so a hypothetical answer with würde is the natural, matching reply.',
+      explanation:
+        "Mia's question is in Konjunktiv II (würdest gewinnen), so a hypothetical answer with würde is the natural, matching reply.",
     },
     {
       id: 'ch61-ex-67',
@@ -1420,13 +1731,15 @@ export const chapter061: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'sentence-building', 'wish-construction'],
-      instruction: 'Build a complete wish exclamation from the cue words. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete wish exclamation from the cue words. Capitalisation and punctuation are checked.',
       prompt: 'wenn – ich – doch nur – geduldiger – sein (Konjunktiv II) – !',
       acceptedAnswers: ['Wenn ich doch nur geduldiger wäre!'],
       answerMode: 'normalized',
       placeholder: 'Wenn ich doch nur geduldiger wäre!',
       maxLength: 50,
-      explanation: 'sein becomes the synthetic wäre, and wenn ... doch nur ... ! is the emphatic wish-exclamation pattern.',
+      explanation:
+        'sein becomes the synthetic wäre, and wenn ... doch nur ... ! is the emphatic wish-exclamation pattern.',
     },
     {
       id: 'ch61-ex-68',
@@ -1442,7 +1755,8 @@ export const chapter061: ChapterDefinition = {
         { id: 's2', text: 'mehr Zeit' },
         { id: 's3', text: 'hätte!' },
       ],
-      explanation: 'Wenn ... doch nur ... hätte! is the emphatic wish-exclamation pattern, with the verb at the end of the clause.',
+      explanation:
+        'Wenn ... doch nur ... hätte! is the emphatic wish-exclamation pattern, with the verb at the end of the clause.',
     },
     {
       id: 'ch61-ex-69',
@@ -1456,7 +1770,8 @@ export const chapter061: ChapterDefinition = {
       tokens: ['Ich', 'wünsche,', 'ich', 'hätte', 'mehr', 'Zeit.'],
       errorTokenIndex: 1,
       correction: 'wünschte,',
-      explanation: 'The wish-construction always uses wünschte, the Konjunktiv II / simple-past form, not the present-tense wünsche.',
+      explanation:
+        'The wish-construction always uses wünschte, the Konjunktiv II / simple-past form, not the present-tense wünsche.',
     },
     {
       id: 'ch61-ex-70',
@@ -1474,7 +1789,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'Wenn ich mehr Geld hätte, ich würde ein Haus kaufen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Both clauses need Konjunktiv II, and the main clause verb takes second position right after the comma (würde ich), not verb-first with the subject moved.',
+      explanation:
+        'Both clauses need Konjunktiv II, and the main clause verb takes second position right after the comma (würde ich), not verb-first with the subject moved.',
     },
     {
       id: 'ch61-ex-71',
@@ -1482,14 +1798,22 @@ export const chapter061: ChapterDefinition = {
       order: 71,
       type: 'textInput',
       level: 'transfer',
-      grammarFocus: ['konjunktiv-ii', 'sentence-building', 'unreal-condition', 'wenn-clause'],
-      instruction: 'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
-      prompt: 'wenn – du – mehr üben (Konjunktiv II mit würde) – , – du – besser sprechen (Konjunktiv II mit würde)',
+      grammarFocus: [
+        'konjunktiv-ii',
+        'sentence-building',
+        'unreal-condition',
+        'wenn-clause',
+      ],
+      instruction:
+        'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
+      prompt:
+        'wenn – du – mehr üben (Konjunktiv II mit würde) – , – du – besser sprechen (Konjunktiv II mit würde)',
       acceptedAnswers: ['Wenn du mehr üben würdest, würdest du besser sprechen.'],
       answerMode: 'normalized',
       placeholder: 'Wenn du mehr üben würdest, würdest du besser sprechen.',
       maxLength: 70,
-      explanation: 'üben and sprechen have no natural synthetic Konjunktiv II form, so würde + infinitive is used in both clauses.',
+      explanation:
+        'üben and sprechen have no natural synthetic Konjunktiv II form, so würde + infinitive is used in both clauses.',
     },
     {
       id: 'ch61-ex-72',
@@ -1506,7 +1830,8 @@ export const chapter061: ChapterDefinition = {
         { id: 's3', text: 'ich' },
         { id: 's4', text: 'um die Welt reisen.' },
       ],
-      explanation: 'wäre goes to the end of the wenn-clause; würde takes second position in the main clause, right after the comma.',
+      explanation:
+        'wäre goes to the end of the wenn-clause; würde takes second position in the main clause, right after the comma.',
     },
     {
       id: 'ch61-ex-73',
@@ -1523,7 +1848,8 @@ export const chapter061: ChapterDefinition = {
         { id: 's3', text: 'ich' },
         { id: 's4', text: 'um die Welt reisen.' },
       ],
-      explanation: 'With wenn dropped, wäre moves to the very front of the clause; the meaning is unchanged.',
+      explanation:
+        'With wenn dropped, wäre moves to the very front of the clause; the meaning is unchanged.',
     },
     {
       id: 'ch61-ex-74',
@@ -1532,7 +1858,8 @@ export const chapter061: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'unreal-condition', 'wenn-clause'],
-      instruction: 'Drag the correct words into the slots to complete the unreal condition.',
+      instruction:
+        'Drag the correct words into the slots to complete the unreal condition.',
       prompt: 'Wenn ich reich ___, ___ ich reisen.',
       templateParts: ['Wenn ich reich ', ', ', ' ich reisen.'],
       slots: [
@@ -1540,7 +1867,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'slot2', correctWord: 'würde' },
       ],
       wordBank: ['wäre', 'würde', 'bin', 'werde'],
-      explanation: 'The wenn-clause needs the synthetic wäre, and the main clause needs würde reisen because reisen has no natural synthetic form.',
+      explanation:
+        'The wenn-clause needs the synthetic wäre, and the main clause needs würde reisen because reisen has no natural synthetic form.',
     },
     {
       id: 'ch61-ex-75',
@@ -1552,12 +1880,29 @@ export const chapter061: ChapterDefinition = {
       instruction: 'Match each sentence to whether it is a real or an unreal condition.',
       prompt: 'Ordne jeden Satz seiner Bedingungsart zu.',
       pairs: [
-        { id: 'p1', left: 'Wenn es regnet, nehme ich einen Schirm.', right: 'reale Bedingung: ein Schirm bei Regen' },
-        { id: 'p2', left: 'Wenn ich Zeit hätte, würde ich kommen.', right: 'irreale Bedingung: Kommen bei mehr Zeit' },
-        { id: 'p3', left: 'Wenn du Hunger hast, iss etwas.', right: 'reale Bedingung: essen bei Hunger' },
-        { id: 'p4', left: 'Wenn ich reich wäre, würde ich reisen.', right: 'irreale Bedingung: Reisen bei Reichtum' },
+        {
+          id: 'p1',
+          left: 'Wenn es regnet, nehme ich einen Schirm.',
+          right: 'reale Bedingung: ein Schirm bei Regen',
+        },
+        {
+          id: 'p2',
+          left: 'Wenn ich Zeit hätte, würde ich kommen.',
+          right: 'irreale Bedingung: Kommen bei mehr Zeit',
+        },
+        {
+          id: 'p3',
+          left: 'Wenn du Hunger hast, iss etwas.',
+          right: 'reale Bedingung: essen bei Hunger',
+        },
+        {
+          id: 'p4',
+          left: 'Wenn ich reich wäre, würde ich reisen.',
+          right: 'irreale Bedingung: Reisen bei Reichtum',
+        },
       ],
-      explanation: 'Real, open conditions stay in the present indicative; unreal or hypothetical conditions switch both clauses to Konjunktiv II.',
+      explanation:
+        'Real, open conditions stay in the present indicative; unreal or hypothetical conditions switch both clauses to Konjunktiv II.',
     },
     {
       id: 'ch61-ex-76',
@@ -1575,7 +1920,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'Er dürfte bald ankommen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'müsste expresses a strong, near-certain probability; sollte is advice, könnte is mere possibility, and dürfte is a more hedged probability.',
+      explanation:
+        'müsste expresses a strong, near-certain probability; sollte is advice, könnte is mere possibility, and dürfte is a more hedged probability.',
     },
     {
       id: 'ch61-ex-77',
@@ -1584,13 +1930,15 @@ export const chapter061: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'unreal-condition', 'wenn-clause'],
-      instruction: 'Write the missing Konjunktiv II form for the wenn-clause. Capitalisation is not checked.',
+      instruction:
+        'Write the missing Konjunktiv II form for the wenn-clause. Capitalisation is not checked.',
       prompt: 'Wenn es regnen ___, blieben wir zu Hause. (werden, Konjunktiv II)',
       acceptedAnswers: ['würde'],
       answerMode: 'caseInsensitive',
       placeholder: 'würde',
       maxLength: 15,
-      explanation: 'würde is needed here because regnen (as an impersonal verb with es) uses the analytic würde-construction.',
+      explanation:
+        'würde is needed here because regnen (as an impersonal verb with es) uses the analytic würde-construction.',
     },
     {
       id: 'ch61-ex-78',
@@ -1607,7 +1955,8 @@ export const chapter061: ChapterDefinition = {
         { id: 's3', text: 'ich' },
         { id: 's4', text: 'das nicht machen.' },
       ],
-      explanation: 'An deiner Stelle can introduce a hypothetical statement without a wenn-clause; würde still takes second position.',
+      explanation:
+        'An deiner Stelle can introduce a hypothetical statement without a wenn-clause; würde still takes second position.',
     },
     {
       id: 'ch61-ex-79',
@@ -1624,7 +1973,8 @@ export const chapter061: ChapterDefinition = {
         { id: 's3', text: 'mehr Wasser' },
         { id: 's4', text: 'trinken.' },
       ],
-      explanation: 'solltest, the Konjunktiv II du-form of sollen, takes second position, with the infinitive trinken at the end.',
+      explanation:
+        'solltest, the Konjunktiv II du-form of sollen, takes second position, with the infinitive trinken at the end.',
     },
     {
       id: 'ch61-ex-80',
@@ -1633,12 +1983,25 @@ export const chapter061: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'sollte-advice'],
-      instruction: 'Find the token that sounds like an order instead of advice and correct it.',
+      instruction:
+        'Find the token that sounds like an order instead of advice and correct it.',
       prompt: 'Du sollst mehr Wasser trinken, das wäre gut für dich.',
-      tokens: ['Du', 'sollst', 'mehr', 'Wasser', 'trinken,', 'das', 'wäre', 'gut', 'für', 'dich.'],
+      tokens: [
+        'Du',
+        'sollst',
+        'mehr',
+        'Wasser',
+        'trinken,',
+        'das',
+        'wäre',
+        'gut',
+        'für',
+        'dich.',
+      ],
       errorTokenIndex: 1,
       correction: 'solltest',
-      explanation: 'sollst is present-tense sollen and sounds like an order; solltest (Konjunktiv II) is the natural, softer form for giving advice.',
+      explanation:
+        'sollst is present-tense sollen and sounds like an order; solltest (Konjunktiv II) is the natural, softer form for giving advice.',
     },
     {
       id: 'ch61-ex-81',
@@ -1648,10 +2011,18 @@ export const chapter061: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'sollte-advice', 'register'],
       dialogue: [
-        { speaker: 'Patient', german: 'Ich fühle mich seit Tagen schlapp.', english: 'I have been feeling weak for days.' },
-        { speaker: 'Patient', german: 'Was empfehlen Sie mir?', english: 'What do you recommend for me?' },
+        {
+          speaker: 'Patient',
+          german: 'Ich fühle mich seit Tagen schlapp.',
+          english: 'I have been feeling weak for days.',
+        },
+        {
+          speaker: 'Patient',
+          german: 'Was empfehlen Sie mir?',
+          english: 'What do you recommend for me?',
+        },
       ],
-      instruction: 'Choose the doctor\'s most likely piece of advice.',
+      instruction: "Choose the doctor's most likely piece of advice.",
       prompt: 'Was sagt der Arzt am ehesten als Ratschlag?',
       options: [
         { id: 'a', text: 'Sie sollten mehr schlafen und Sport treiben.' },
@@ -1660,7 +2031,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'Sie schlafen mehr und treiben Sport.' },
       ],
       correctOptionId: 'a',
-      explanation: 'sollten (the Sie-form of sollte) is the natural, mild register for medical advice; the other options are a reported order, an alarmingly strong statement, or a plain fact.',
+      explanation:
+        'sollten (the Sie-form of sollte) is the natural, mild register for medical advice; the other options are a reported order, an alarmingly strong statement, or a plain fact.',
     },
     {
       id: 'ch61-ex-82',
@@ -1669,13 +2041,15 @@ export const chapter061: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'transformation', 'sollte-advice'],
-      instruction: 'Rewrite the statement as advice using sollte. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the statement as advice using sollte. Capitalisation and punctuation are checked.',
       prompt: 'Sie raucht zu viel. → Ratschlag mit sollte',
       acceptedAnswers: ['Sie sollte weniger rauchen.', 'Sie sollte weniger rauchen'],
       answerMode: 'normalized',
       placeholder: 'Sie sollte ...',
       maxLength: 50,
-      explanation: 'sollte turns the factual observation into gentle advice: Sie sollte weniger rauchen.',
+      explanation:
+        'sollte turns the factual observation into gentle advice: Sie sollte weniger rauchen.',
     },
     {
       id: 'ch61-ex-83',
@@ -1692,7 +2066,8 @@ export const chapter061: ChapterDefinition = {
         { id: 's3', text: 'ich' },
         { id: 's4', text: 'das Angebot annehmen.' },
       ],
-      explanation: 'Wenn ich du wäre, ... imagines being in someone else\'s position, followed by a main clause in Konjunktiv II.',
+      explanation:
+        "Wenn ich du wäre, ... imagines being in someone else's position, followed by a main clause in Konjunktiv II.",
     },
     {
       id: 'ch61-ex-84',
@@ -1706,7 +2081,8 @@ export const chapter061: ChapterDefinition = {
       templateParts: ['Du ', ' mehr schlafen.'],
       slots: [{ id: 'slot1', correctWord: 'solltest' }],
       wordBank: ['solltest', 'sollst', 'wolltest', 'müsstest'],
-      explanation: 'solltest is the Konjunktiv II du-form of sollen, the standard way to give advice.',
+      explanation:
+        'solltest is the Konjunktiv II du-form of sollen, the standard way to give advice.',
     },
     {
       id: 'ch61-ex-85',
@@ -1724,7 +2100,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'p4', left: 'dürfte', right: 'vorsichtige Vermutung' },
         { id: 'p5', left: 'würde', right: 'allgemeine Hypothese' },
       ],
-      explanation: 'German reuses a small set of Konjunktiv II modal forms for genuinely different meanings, not stylistic variants of the same idea.',
+      explanation:
+        'German reuses a small set of Konjunktiv II modal forms for genuinely different meanings, not stylistic variants of the same idea.',
     },
     {
       id: 'ch61-ex-86',
@@ -1742,7 +2119,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'Geduldiger wäre ich doch nur!' },
       ],
       correctOptionId: 'a',
-      explanation: 'Dropping wenn from a wish exclamation requires the conjugated verb wäre to move to the very front of the clause.',
+      explanation:
+        'Dropping wenn from a wish exclamation requires the conjugated verb wäre to move to the very front of the clause.',
     },
     {
       id: 'ch61-ex-87',
@@ -1751,7 +2129,8 @@ export const chapter061: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'transformation', 'wish-construction'],
-      instruction: 'Combine into a wish using Ich wollte. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine into a wish using Ich wollte. Capitalisation and punctuation are checked.',
       prompt: 'Du bist nicht pünktlich. → Wunsch mit Ich wollte',
       acceptedAnswers: [
         'Ich wollte, du wärst pünktlich.',
@@ -1762,7 +2141,8 @@ export const chapter061: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Ich wollte, du wärst pünktlich.',
       maxLength: 50,
-      explanation: 'Ich wollte, ... functions here exactly like Ich wünschte, ...; bist becomes the Konjunktiv II wärst (or wärest).',
+      explanation:
+        'Ich wollte, ... functions here exactly like Ich wünschte, ...; bist becomes the Konjunktiv II wärst (or wärest).',
     },
     {
       id: 'ch61-ex-88',
@@ -1776,7 +2156,8 @@ export const chapter061: ChapterDefinition = {
       tokens: ['Er', 'sollte', 'eigentlich', 'schon', 'zu', 'Hause', 'sein.'],
       errorTokenIndex: 1,
       correction: 'müsste',
-      explanation: 'sollte would mean advice, but this sentence expresses a strong probability ("he should really be home by now, I am fairly sure"), which needs müsste.',
+      explanation:
+        'sollte would mean advice, but this sentence expresses a strong probability ("he should really be home by now, I am fairly sure"), which needs müsste.',
     },
     {
       id: 'ch61-ex-89',
@@ -1785,8 +2166,10 @@ export const chapter061: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'real-vs-unreal-condition'],
-      instruction: 'Choose the sentence describing a realistic, likely condition, not a hypothetical one.',
-      prompt: 'Which sentence describes a realistic, likely condition rather than a hypothetical one?',
+      instruction:
+        'Choose the sentence describing a realistic, likely condition, not a hypothetical one.',
+      prompt:
+        'Which sentence describes a realistic, likely condition rather than a hypothetical one?',
       options: [
         { id: 'a', text: 'Wenn du Hunger hast, iss etwas.' },
         { id: 'b', text: 'Wenn ich ein Vogel wäre, würde ich fliegen.' },
@@ -1794,7 +2177,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'Wenn ich du wäre, würde ich das annehmen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Wenn du Hunger hast, iss etwas. is in the present indicative/imperative — a real, open condition; the other options use Konjunktiv II for unreal or impossible situations.',
+      explanation:
+        'Wenn du Hunger hast, iss etwas. is in the present indicative/imperative — a real, open condition; the other options use Konjunktiv II for unreal or impossible situations.',
     },
     {
       id: 'ch61-ex-90',
@@ -1803,13 +2187,15 @@ export const chapter061: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['konjunktiv-ii', 'transformation', 'polite-request'],
-      instruction: 'Rewrite the blunt command as a formal polite request using würden. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the blunt command as a formal polite request using würden. Capitalisation and punctuation are checked.',
       prompt: 'Sei leiser! → höfliche Bitte mit würden (Sie)',
       acceptedAnswers: ['Würden Sie bitte leiser sein?', 'Würden Sie bitte leiser sein'],
       answerMode: 'normalized',
       placeholder: 'Würden Sie ...?',
       maxLength: 50,
-      explanation: 'Würden Sie bitte leiser sein? softens the informal imperative into a formal polite request.',
+      explanation:
+        'Würden Sie bitte leiser sein? softens the informal imperative into a formal polite request.',
     },
     {
       id: 'ch61-ex-91',
@@ -1818,12 +2204,14 @@ export const chapter061: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'wenn-clause', 'word-order'],
-      instruction: 'Drag the correct word into the slot to complete this clause without wenn.',
+      instruction:
+        'Drag the correct word into the slot to complete this clause without wenn.',
       prompt: '___ ich Zeit, würde ich kommen.',
       templateParts: ['', ' ich Zeit, würde ich kommen.'],
       slots: [{ id: 'slot1', correctWord: 'Hätte' }],
       wordBank: ['Hätte', 'Habe', 'Hatte', 'Wäre'],
-      explanation: 'With wenn dropped, the conjugated verb Hätte moves to the very front of the clause.',
+      explanation:
+        'With wenn dropped, the conjugated verb Hätte moves to the very front of the clause.',
     },
     {
       id: 'ch61-ex-92',
@@ -1837,7 +2225,8 @@ export const chapter061: ChapterDefinition = {
       tokens: ['Könnten', 'Sie', 'mir', 'bitte', 'das', 'Salz', 'gibt?'],
       errorTokenIndex: 6,
       correction: 'geben?',
-      explanation: 'After a modal in Konjunktiv II (Könnten Sie), the main verb stays as a plain infinitive at the end of the clause, never a conjugated form.',
+      explanation:
+        'After a modal in Konjunktiv II (Könnten Sie), the main verb stays as a plain infinitive at the end of the clause, never a conjugated form.',
     },
     {
       id: 'ch61-ex-93',
@@ -1855,7 +2244,8 @@ export const chapter061: ChapterDefinition = {
         { id: 'd', text: 'Quittung, bitte!' },
       ],
       correctOptionId: 'a',
-      explanation: 'Könnten Sie...? is the formal, polite request pattern appropriate for a waiter; the other options are either too blunt or use the informal du.',
+      explanation:
+        'Könnten Sie...? is the formal, polite request pattern appropriate for a waiter; the other options are either too blunt or use the informal du.',
     },
     {
       id: 'ch61-ex-94',
@@ -1864,13 +2254,18 @@ export const chapter061: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['konjunktiv-ii', 'wenn-clause', 'word-order'],
-      instruction: 'Rewrite the sentence without wenn, moving the verb to the front of the clause. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence without wenn, moving the verb to the front of the clause. Capitalisation and punctuation are checked.',
       prompt: 'Wenn es regnen würde, blieben wir zu Hause. → ohne wenn',
-      acceptedAnswers: ['Würde es regnen, blieben wir zu Hause.', 'Würde es regnen, blieben wir zu Hause'],
+      acceptedAnswers: [
+        'Würde es regnen, blieben wir zu Hause.',
+        'Würde es regnen, blieben wir zu Hause',
+      ],
       answerMode: 'normalized',
       placeholder: 'Würde es regnen, blieben wir zu Hause.',
       maxLength: 50,
-      explanation: 'Dropping wenn moves würde to the very front of the clause; the meaning stays exactly the same.',
+      explanation:
+        'Dropping wenn moves würde to the very front of the clause; the meaning stays exactly the same.',
     },
   ],
 };

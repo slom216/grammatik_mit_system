@@ -39,7 +39,7 @@ export const chapter040: ChapterDefinition = {
         id: 'ch40-rule-02',
         heading: 'Nominative endings after der, die, das',
         paragraphs: [
-          'After the definite article in the nominative — the case of the sentence\'s subject — the adjective ending is simply -e in all three genders: der rote Apfel (masculine), die rote Tasche (feminine), das rote Auto (neuter).',
+          "After the definite article in the nominative — the case of the sentence's subject — the adjective ending is simply -e in all three genders: der rote Apfel (masculine), die rote Tasche (feminine), das rote Auto (neuter).",
           'Because der, die, and das already show the gender clearly, the adjective does not need to repeat that information. A single, easy -e is enough after any der-word in the nominative.',
         ],
       },
@@ -86,8 +86,18 @@ export const chapter040: ChapterDefinition = {
         columns: ['Article type', 'Masculine', 'Feminine', 'Neuter'],
         columnCases: [null, 'nominative', null, null],
         rows: [
-          ['der/die/das (definite)', '-e (der rote Apfel)', '-e (die rote Tasche)', '-e (das rote Auto)'],
-          ['ein/eine/ein (indefinite)', '-er (ein roter Apfel)', '-e (eine rote Tasche)', '-es (ein rotes Auto)'],
+          [
+            'der/die/das (definite)',
+            '-e (der rote Apfel)',
+            '-e (die rote Tasche)',
+            '-e (das rote Auto)',
+          ],
+          [
+            'ein/eine/ein (indefinite)',
+            '-er (ein roter Apfel)',
+            '-e (eine rote Tasche)',
+            '-es (ein rotes Auto)',
+          ],
         ],
         note: 'Every nominative ending after der-words is -e; after ein-words, only the feminine stays -e, because ein does not mark gender on its own.',
       },
@@ -97,8 +107,18 @@ export const chapter040: ChapterDefinition = {
         columns: ['Article type', 'Masculine', 'Feminine', 'Neuter'],
         columnCases: [null, 'accusative', null, null],
         rows: [
-          ['der/die/das (definite)', '-en (den roten Apfel)', '-e (die rote Tasche)', '-e (das rote Auto)'],
-          ['ein/eine/ein (indefinite)', '-en (einen roten Apfel)', '-e (eine rote Tasche)', '-es (ein rotes Auto)'],
+          [
+            'der/die/das (definite)',
+            '-en (den roten Apfel)',
+            '-e (die rote Tasche)',
+            '-e (das rote Auto)',
+          ],
+          [
+            'ein/eine/ein (indefinite)',
+            '-en (einen roten Apfel)',
+            '-e (eine rote Tasche)',
+            '-es (ein rotes Auto)',
+          ],
         ],
         note: 'Only the masculine ending changes in the accusative, to -en after both den and einen; the feminine and neuter endings are identical to the nominative.',
       },
@@ -108,13 +128,15 @@ export const chapter040: ChapterDefinition = {
         german: 'Der rote Apfel schmeckt süß.',
         english: 'The red apple tastes sweet.',
         highlight: ['rote'],
-        explanation: 'rote takes the -e ending after the definite article der in the masculine nominative.',
+        explanation:
+          'rote takes the -e ending after the definite article der in the masculine nominative.',
       },
       {
         german: 'Ein roter Apfel liegt auf dem Tisch.',
         english: 'A red apple is lying on the table.',
         highlight: ['roter'],
-        explanation: 'After the indefinite article ein, the masculine nominative adjective takes -er, since ein does not show the gender by itself.',
+        explanation:
+          'After the indefinite article ein, the masculine nominative adjective takes -er, since ein does not show the gender by itself.',
       },
       {
         german: 'Die kleine Tasche ist praktisch.',
@@ -138,67 +160,78 @@ export const chapter040: ChapterDefinition = {
         german: 'Ein neues Auto kostet oft viel Geld.',
         english: 'A new car often costs a lot of money.',
         highlight: ['neues'],
-        explanation: 'After ein, the neuter nominative adjective takes -es, since ein does not show the gender by itself.',
+        explanation:
+          'After ein, the neuter nominative adjective takes -es, since ein does not show the gender by itself.',
       },
       {
         german: 'Ich kaufe den roten Apfel.',
         english: 'I am buying the red apple.',
         highlight: ['den', 'roten'],
-        explanation: 'In the masculine accusative, both the article (den) and the adjective (roten) change; the adjective ending becomes -en.',
+        explanation:
+          'In the masculine accusative, both the article (den) and the adjective (roten) change; the adjective ending becomes -en.',
       },
       {
         german: 'Er kauft einen roten Apfel.',
         english: 'He is buying a red apple.',
         highlight: ['einen', 'roten'],
-        explanation: 'After einen, the masculine accusative adjective also takes -en, matching the -en ending on the article.',
+        explanation:
+          'After einen, the masculine accusative adjective also takes -en, matching the -en ending on the article.',
       },
       {
         german: 'Wir sehen die kleine Tasche im Schaufenster.',
         english: 'We see the small bag in the shop window.',
         highlight: ['kleine'],
-        explanation: 'The feminine accusative ending stays -e, exactly as in the nominative.',
+        explanation:
+          'The feminine accusative ending stays -e, exactly as in the nominative.',
       },
       {
         german: 'Sie kauft eine kleine Tasche.',
         english: 'She is buying a small bag.',
         highlight: ['kleine'],
-        explanation: 'The feminine accusative ending after eine is -e, unchanged from the nominative.',
+        explanation:
+          'The feminine accusative ending after eine is -e, unchanged from the nominative.',
       },
       {
         german: 'Ich finde das neue Auto sehr praktisch.',
         english: 'I find the new car very practical.',
         highlight: ['neue'],
-        explanation: 'The neuter accusative ending after das stays -e, unchanged from the nominative.',
+        explanation:
+          'The neuter accusative ending after das stays -e, unchanged from the nominative.',
       },
       {
         german: 'Er möchte ein neues Auto kaufen.',
         english: 'He would like to buy a new car.',
         highlight: ['neues'],
-        explanation: 'The neuter accusative ending after ein stays -es, unchanged from the nominative.',
+        explanation:
+          'The neuter accusative ending after ein stays -es, unchanged from the nominative.',
       },
       {
         german: 'Der Apfel ist rot, aber der rote Apfel im Korb ist schon matschig.',
         english: 'The apple is red, but the red apple in the basket is already mushy.',
         highlight: ['rote'],
-        explanation: 'ist rot is predicative and has no ending; der rote Apfel is attributive, directly before the noun, so rote takes the -e ending.',
+        explanation:
+          'ist rot is predicative and has no ending; der rote Apfel is attributive, directly before the noun, so rote takes the -e ending.',
       },
       {
         german: 'Der sehr alte Hund schläft den ganzen Tag.',
         english: 'The very old dog sleeps all day.',
         highlight: ['alte'],
-        explanation: 'sehr modifies the adjective alte but does not change its position: the adjective still stands directly before the noun and takes the regular -e ending.',
+        explanation:
+          'sehr modifies the adjective alte but does not change its position: the adjective still stands directly before the noun and takes the regular -e ending.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Der rot Apfel schmeckt gut.',
         correct: 'Der rote Apfel schmeckt gut.',
-        explanation: 'An attributive adjective directly before a noun always needs an ending; rot alone is only correct in the predicative position (der Apfel ist rot).',
+        explanation:
+          'An attributive adjective directly before a noun always needs an ending; rot alone is only correct in the predicative position (der Apfel ist rot).',
       },
       {
         incorrect: 'Ein rote Apfel liegt auf dem Tisch.',
         correct: 'Ein roter Apfel liegt auf dem Tisch.',
-        explanation: 'The masculine nominative after ein needs -er, not -e, because ein does not mark gender on its own.',
+        explanation:
+          'The masculine nominative after ein needs -er, not -e, because ein does not mark gender on its own.',
       },
       {
         incorrect: 'Ich kaufe den rote Apfel.',
@@ -208,7 +241,8 @@ export const chapter040: ChapterDefinition = {
       {
         incorrect: 'Er kauft einen rote Apfel.',
         correct: 'Er kauft einen roten Apfel.',
-        explanation: 'The masculine accusative after einen also needs -en, matching the ending after den.',
+        explanation:
+          'The masculine accusative after einen also needs -en, matching the ending after den.',
       },
       {
         incorrect: 'Ein neus Auto kostet viel.',
@@ -218,7 +252,8 @@ export const chapter040: ChapterDefinition = {
       {
         incorrect: 'Ich sehe die kleine Tasche und den kleine Hund.',
         correct: 'Ich sehe die kleine Tasche und den kleinen Hund.',
-        explanation: 'Each noun keeps its own gender and case: Tasche is feminine accusative (-e), but Hund is masculine accusative and always needs -en.',
+        explanation:
+          'Each noun keeps its own gender and case: Tasche is feminine accusative (-e), but Hund is masculine accusative and always needs -en.',
       },
     ],
     remember: [
@@ -287,7 +322,8 @@ export const chapter040: ChapterDefinition = {
         { id: 'd', text: 'neuen' },
       ],
       correctOptionId: 'a',
-      explanation: 'Neuter nominative after das takes -e, the same ending as masculine and feminine after der-words: das neue Auto.',
+      explanation:
+        'Neuter nominative after das takes -e, the same ending as masculine and feminine after der-words: das neue Auto.',
     },
     {
       id: 'ch40-ex-04',
@@ -323,7 +359,8 @@ export const chapter040: ChapterDefinition = {
         { id: 'd', text: 'roten' },
       ],
       correctOptionId: 'b',
-      explanation: 'After ein, the masculine nominative adjective takes -er, because ein does not show the gender by itself.',
+      explanation:
+        'After ein, the masculine nominative adjective takes -er, because ein does not show the gender by itself.',
     },
     {
       id: 'ch40-ex-06',
@@ -341,7 +378,8 @@ export const chapter040: ChapterDefinition = {
         { id: 'd', text: 'kleinen' },
       ],
       correctOptionId: 'a',
-      explanation: 'Feminine nominative after eine takes -e, just like after die: eine kleine Tasche.',
+      explanation:
+        'Feminine nominative after eine takes -e, just like after die: eine kleine Tasche.',
     },
     {
       id: 'ch40-ex-07',
@@ -359,7 +397,8 @@ export const chapter040: ChapterDefinition = {
         { id: 'd', text: 'neuen' },
       ],
       correctOptionId: 'c',
-      explanation: 'After ein, the neuter nominative adjective takes -es, because ein does not show the gender by itself.',
+      explanation:
+        'After ein, the neuter nominative adjective takes -es, because ein does not show the gender by itself.',
     },
     {
       id: 'ch40-ex-08',
@@ -395,7 +434,8 @@ export const chapter040: ChapterDefinition = {
         { id: 'd', text: 'roten' },
       ],
       correctOptionId: 'd',
-      explanation: 'Masculine accusative after einen also takes -en, matching the ending after den: einen roten Apfel.',
+      explanation:
+        'Masculine accusative after einen also takes -en, matching the ending after den: einen roten Apfel.',
     },
     {
       id: 'ch40-ex-10',
@@ -413,7 +453,8 @@ export const chapter040: ChapterDefinition = {
         { id: 'd', text: 'des großen Hundes' },
       ],
       correctOptionId: 'b',
-      explanation: 'sehen takes a direct object in the accusative; the masculine accusative phrase is den großen Hund, with both the article and the adjective changing.',
+      explanation:
+        'sehen takes a direct object in the accusative; the masculine accusative phrase is den großen Hund, with both the article and the adjective changing.',
     },
     {
       id: 'ch40-ex-11',
@@ -431,7 +472,8 @@ export const chapter040: ChapterDefinition = {
         { id: 'd', text: 'das neue Lampe' },
       ],
       correctOptionId: 'a',
-      explanation: 'Lampe is feminine; the feminine accusative looks exactly like the feminine nominative: die neue Lampe.',
+      explanation:
+        'Lampe is feminine; the feminine accusative looks exactly like the feminine nominative: die neue Lampe.',
     },
     {
       id: 'ch40-ex-12',
@@ -449,7 +491,8 @@ export const chapter040: ChapterDefinition = {
         { id: 'd', text: 'einem neuen Auto' },
       ],
       correctOptionId: 'a',
-      explanation: 'Auto is neuter; the neuter accusative after ein is identical to the nominative: ein neues Auto.',
+      explanation:
+        'Auto is neuter; the neuter accusative after ein is identical to the nominative: ein neues Auto.',
     },
     {
       id: 'ch40-ex-13',
@@ -539,7 +582,8 @@ export const chapter040: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'alten',
       maxLength: 20,
-      explanation: 'Freund is masculine; after einen, the accusative ending is -en: einen alten Freund.',
+      explanation:
+        'Freund is masculine; after einen, the accusative ending is -en: einen alten Freund.',
     },
     {
       id: 'ch40-ex-19',
@@ -554,7 +598,8 @@ export const chapter040: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'helles',
       maxLength: 20,
-      explanation: 'Fenster is neuter; after ein, the accusative ending is -es: ein helles Fenster.',
+      explanation:
+        'Fenster is neuter; after ein, the accusative ending is -es: ein helles Fenster.',
     },
     {
       id: 'ch40-ex-20',
@@ -569,7 +614,8 @@ export const chapter040: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'freundliche',
       maxLength: 20,
-      explanation: 'Mann is masculine; after der, the nominative ending is -e: der freundliche Mann.',
+      explanation:
+        'Mann is masculine; after der, the nominative ending is -e: der freundliche Mann.',
     },
     {
       id: 'ch40-ex-21',
@@ -578,13 +624,15 @@ export const chapter040: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['nominative', 'error-correction', 'masculine'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Der rot Apfel schmeckt gut.',
       acceptedAnswers: ['Der rote Apfel schmeckt gut.'],
       answerMode: 'normalized',
       placeholder: 'Der rote Apfel ...',
       maxLength: 60,
-      explanation: 'An attributive adjective directly before a noun always needs an ending; the masculine nominative ending -e is missing here.',
+      explanation:
+        'An attributive adjective directly before a noun always needs an ending; the masculine nominative ending -e is missing here.',
     },
     {
       id: 'ch40-ex-22',
@@ -593,7 +641,8 @@ export const chapter040: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['accusative', 'error-correction', 'masculine'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ich kaufe den rote Apfel.',
       acceptedAnswers: ['Ich kaufe den roten Apfel.'],
       answerMode: 'normalized',
@@ -608,13 +657,15 @@ export const chapter040: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['accusative', 'ein-word', 'neuter', 'sentence-building'],
-      instruction: 'Write a complete sentence using the cues. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence using the cues. Capitalisation is checked; no full stop is required.',
       prompt: 'ich – kaufen – ein (neu, Auto)',
       acceptedAnswers: ['Ich kaufe ein neues Auto.', 'Ich kaufe ein neues Auto'],
       answerMode: 'normalized',
       placeholder: 'Ich kaufe ...',
       maxLength: 60,
-      explanation: 'Auto is neuter; the accusative ending after ein is -es: ein neues Auto.',
+      explanation:
+        'Auto is neuter; the accusative ending after ein is -es: ein neues Auto.',
     },
     {
       id: 'ch40-ex-24',
@@ -623,13 +674,15 @@ export const chapter040: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['accusative', 'der-word', 'masculine', 'sentence-building'],
-      instruction: 'Write a complete sentence using the cues. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence using the cues. Capitalisation is checked; no full stop is required.',
       prompt: 'wir – sehen – der (groß, Hund)',
       acceptedAnswers: ['Wir sehen den großen Hund.', 'Wir sehen den großen Hund'],
       answerMode: 'normalized',
       placeholder: 'Wir sehen ...',
       maxLength: 60,
-      explanation: 'Hund is masculine; the accusative article is den and the adjective ending is -en: den großen Hund.',
+      explanation:
+        'Hund is masculine; the accusative article is den and the adjective ending is -en: den großen Hund.',
     },
     {
       id: 'ch40-ex-25',
@@ -683,7 +736,8 @@ export const chapter040: ChapterDefinition = {
         { id: 'd', text: 'grünen' },
       ],
       correctOptionId: 'b',
-      explanation: 'After ein, the masculine nominative adjective takes -er, because ein does not show the gender by itself.',
+      explanation:
+        'After ein, the masculine nominative adjective takes -er, because ein does not show the gender by itself.',
     },
     {
       id: 'ch40-ex-28',
@@ -701,7 +755,8 @@ export const chapter040: ChapterDefinition = {
         { id: 'd', text: 'großen' },
       ],
       correctOptionId: 'a',
-      explanation: 'Feminine nominative after eine takes -e, just like after die: eine große Stadt.',
+      explanation:
+        'Feminine nominative after eine takes -e, just like after die: eine große Stadt.',
     },
     {
       id: 'ch40-ex-29',
@@ -737,7 +792,8 @@ export const chapter040: ChapterDefinition = {
         { id: 'd', text: 'alten' },
       ],
       correctOptionId: 'd',
-      explanation: 'Masculine accusative after einen takes -en, matching the ending after den: einen alten Freund.',
+      explanation:
+        'Masculine accusative after einen takes -en, matching the ending after den: einen alten Freund.',
     },
     {
       id: 'ch40-ex-31',
@@ -755,7 +811,8 @@ export const chapter040: ChapterDefinition = {
         { id: 'd', text: 'das neue Lampe' },
       ],
       correctOptionId: 'a',
-      explanation: 'Lampe is feminine; the feminine accusative looks exactly like the feminine nominative: die neue Lampe.',
+      explanation:
+        'Lampe is feminine; the feminine accusative looks exactly like the feminine nominative: die neue Lampe.',
     },
     {
       id: 'ch40-ex-32',
@@ -773,7 +830,8 @@ export const chapter040: ChapterDefinition = {
         { id: 'd', text: 'eines heißen Kaffees' },
       ],
       correctOptionId: 'b',
-      explanation: 'trinken takes a direct object in the accusative; Kaffee is masculine, so both the article and the adjective change: einen heißen Kaffee.',
+      explanation:
+        'trinken takes a direct object in the accusative; Kaffee is masculine, so both the article and the adjective change: einen heißen Kaffee.',
     },
     {
       id: 'ch40-ex-33',
@@ -791,7 +849,8 @@ export const chapter040: ChapterDefinition = {
         { id: 'd', text: 'einem kleinen Kind' },
       ],
       correctOptionId: 'a',
-      explanation: 'Kind is neuter; the neuter accusative after ein is identical to the nominative: ein kleines Kind.',
+      explanation:
+        'Kind is neuter; the neuter accusative after ein is identical to the nominative: ein kleines Kind.',
     },
     {
       id: 'ch40-ex-34',
@@ -866,7 +925,8 @@ export const chapter040: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'alten',
       maxLength: 20,
-      explanation: 'Freund is masculine; after einen, the accusative ending is -en: einen alten Freund.',
+      explanation:
+        'Freund is masculine; after einen, the accusative ending is -en: einen alten Freund.',
     },
     {
       id: 'ch40-ex-39',
@@ -881,7 +941,8 @@ export const chapter040: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'heißen',
       maxLength: 20,
-      explanation: 'Kaffee is masculine; after einen, the accusative ending is -en: einen heißen Kaffee.',
+      explanation:
+        'Kaffee is masculine; after einen, the accusative ending is -en: einen heißen Kaffee.',
     },
     {
       id: 'ch40-ex-40',
@@ -890,13 +951,15 @@ export const chapter040: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['nominative', 'error-correction', 'feminine'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Die groß Stadt hat viele Menschen.',
       acceptedAnswers: ['Die große Stadt hat viele Menschen.'],
       answerMode: 'normalized',
       placeholder: 'Die große Stadt ...',
       maxLength: 60,
-      explanation: 'An attributive adjective directly before a noun always needs an ending; the feminine nominative ending -e is missing here.',
+      explanation:
+        'An attributive adjective directly before a noun always needs an ending; the feminine nominative ending -e is missing here.',
     },
     {
       id: 'ch40-ex-41',
@@ -905,13 +968,15 @@ export const chapter040: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['accusative', 'error-correction', 'masculine'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Er kauft einen alte Tisch.',
       acceptedAnswers: ['Er kauft einen alten Tisch.'],
       answerMode: 'normalized',
       placeholder: 'Er kauft einen alten ...',
       maxLength: 60,
-      explanation: 'Masculine accusative after einen needs -en, not -e: einen alten Tisch.',
+      explanation:
+        'Masculine accusative after einen needs -en, not -e: einen alten Tisch.',
     },
     {
       id: 'ch40-ex-42',
@@ -920,13 +985,15 @@ export const chapter040: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['accusative', 'ein-word', 'neuter', 'sentence-building'],
-      instruction: 'Write a complete sentence using the cues. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence using the cues. Capitalisation is checked; no full stop is required.',
       prompt: 'sie – besuchen – ein (klein, Kind)',
       acceptedAnswers: ['Sie besucht ein kleines Kind.', 'Sie besucht ein kleines Kind'],
       answerMode: 'normalized',
       placeholder: 'Sie besucht ...',
       maxLength: 60,
-      explanation: 'Kind is neuter; the accusative ending after ein is -es: ein kleines Kind.',
+      explanation:
+        'Kind is neuter; the accusative ending after ein is -es: ein kleines Kind.',
     },
     {
       id: 'ch40-ex-43',
@@ -954,7 +1021,8 @@ export const chapter040: ChapterDefinition = {
       templateParts: ['Ein ', ' Tisch steht im Büro.'],
       slots: [{ id: 'ch40-ex-44-s1', correctWord: 'alter' }],
       wordBank: ['alte', 'alter', 'altes', 'alten'],
-      explanation: 'After ein, the masculine nominative adjective takes -er: ein alter Tisch.',
+      explanation:
+        'After ein, the masculine nominative adjective takes -er: ein alter Tisch.',
     },
     {
       id: 'ch40-ex-45',
@@ -1027,7 +1095,8 @@ export const chapter040: ChapterDefinition = {
         { id: 'ch40-ex-49-s2', correctWord: 'heißen' },
       ],
       wordBank: ['freundliche', 'freundlicher', 'heißen', 'heiße', 'heißer'],
-      explanation: 'Mann is masculine nominative after der (-e: freundliche); Kaffee is masculine accusative after einen (-en: heißen).',
+      explanation:
+        'Mann is masculine nominative after der (-e: freundliche); Kaffee is masculine accusative after einen (-en: heißen).',
     },
     {
       id: 'ch40-ex-50',
@@ -1044,7 +1113,8 @@ export const chapter040: ChapterDefinition = {
         { id: 'ch40-ex-50-s2', correctWord: 'rote' },
       ],
       wordBank: ['neues', 'neue', 'neuer', 'rote', 'roter', 'rotes'],
-      explanation: 'Auto is neuter accusative after ein (-es: neues); Tasche is feminine accusative after eine (-e: rote), unchanged from the nominative.',
+      explanation:
+        'Auto is neuter accusative after ein (-es: neues); Tasche is feminine accusative after eine (-e: rote), unchanged from the nominative.',
     },
     {
       id: 'ch40-ex-51',
@@ -1058,7 +1128,8 @@ export const chapter040: ChapterDefinition = {
       tokens: ['Der', 'rot', 'Apfel', 'schmeckt', 'gut', '.'],
       errorTokenIndex: 1,
       correction: 'rote',
-      explanation: 'An attributive adjective directly before a noun always needs an ending; the masculine nominative ending -e is missing: der rote Apfel.',
+      explanation:
+        'An attributive adjective directly before a noun always needs an ending; the masculine nominative ending -e is missing: der rote Apfel.',
     },
     {
       id: 'ch40-ex-52',
@@ -1072,7 +1143,8 @@ export const chapter040: ChapterDefinition = {
       tokens: ['Ein', 'rote', 'Apfel', 'liegt', 'auf', 'dem', 'Tisch', '.'],
       errorTokenIndex: 1,
       correction: 'roter',
-      explanation: 'The masculine nominative after ein needs -er, not -e, because ein does not mark gender on its own: ein roter Apfel.',
+      explanation:
+        'The masculine nominative after ein needs -er, not -e, because ein does not mark gender on its own: ein roter Apfel.',
     },
     {
       id: 'ch40-ex-53',
@@ -1086,7 +1158,8 @@ export const chapter040: ChapterDefinition = {
       tokens: ['Ich', 'kaufe', 'den', 'rote', 'Apfel', '.'],
       errorTokenIndex: 3,
       correction: 'roten',
-      explanation: 'The masculine accusative after den needs -en, not -e: den roten Apfel.',
+      explanation:
+        'The masculine accusative after den needs -en, not -e: den roten Apfel.',
     },
     {
       id: 'ch40-ex-54',
@@ -1100,7 +1173,8 @@ export const chapter040: ChapterDefinition = {
       tokens: ['Er', 'kauft', 'einen', 'rote', 'Apfel', '.'],
       errorTokenIndex: 3,
       correction: 'roten',
-      explanation: 'The masculine accusative after einen also needs -en, matching the ending after den: einen roten Apfel.',
+      explanation:
+        'The masculine accusative after einen also needs -en, matching the ending after den: einen roten Apfel.',
     },
     {
       id: 'ch40-ex-55',
@@ -1114,7 +1188,8 @@ export const chapter040: ChapterDefinition = {
       tokens: ['Ein', 'neus', 'Auto', 'kostet', 'viel', '.'],
       errorTokenIndex: 1,
       correction: 'neues',
-      explanation: 'The neuter ending after ein is the full -es, not a shortened -s: ein neues Auto.',
+      explanation:
+        'The neuter ending after ein is the full -es, not a shortened -s: ein neues Auto.',
     },
     {
       id: 'ch40-ex-56',
@@ -1128,7 +1203,8 @@ export const chapter040: ChapterDefinition = {
       tokens: ['Die', 'klein', 'Tasche', 'ist', 'praktisch', '.'],
       errorTokenIndex: 1,
       correction: 'kleine',
-      explanation: 'An attributive adjective directly before a noun always needs an ending; the feminine nominative ending -e is missing: die kleine Tasche.',
+      explanation:
+        'An attributive adjective directly before a noun always needs an ending; the feminine nominative ending -e is missing: die kleine Tasche.',
     },
     {
       id: 'ch40-ex-57',
@@ -1137,16 +1213,34 @@ export const chapter040: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['nominative', 'der-word', 'ein-word'],
-      instruction: 'Match each phrase to the adjective form that correctly fills its gap.',
+      instruction:
+        'Match each phrase to the adjective form that correctly fills its gap.',
       prompt: 'Match the phrase to the correct nominative ending.',
       pairs: [
-        { id: 'ch40-ex-57-p1', left: 'der ___ Tisch (nominativ, maskulin)', right: 'alte' },
-        { id: 'ch40-ex-57-p2', left: 'die ___ Blume (nominativ, feminin)', right: 'schöne' },
+        {
+          id: 'ch40-ex-57-p1',
+          left: 'der ___ Tisch (nominativ, maskulin)',
+          right: 'alte',
+        },
+        {
+          id: 'ch40-ex-57-p2',
+          left: 'die ___ Blume (nominativ, feminin)',
+          right: 'schöne',
+        },
         { id: 'ch40-ex-57-p3', left: 'das ___ Buch (nominativ, neutrum)', right: 'neue' },
-        { id: 'ch40-ex-57-p4', left: 'ein ___ Tisch (nominativ, maskulin)', right: 'alter' },
-        { id: 'ch40-ex-57-p5', left: 'ein ___ Buch (nominativ, neutrum)', right: 'neues' },
+        {
+          id: 'ch40-ex-57-p4',
+          left: 'ein ___ Tisch (nominativ, maskulin)',
+          right: 'alter',
+        },
+        {
+          id: 'ch40-ex-57-p5',
+          left: 'ein ___ Buch (nominativ, neutrum)',
+          right: 'neues',
+        },
       ],
-      explanation: 'Der-words take -e in all three genders in the nominative; ein-words take -e (feminine), -er (masculine), or -es (neuter), since ein cannot show gender by itself.',
+      explanation:
+        'Der-words take -e in all three genders in the nominative; ein-words take -e (feminine), -er (masculine), or -es (neuter), since ein cannot show gender by itself.',
     },
     {
       id: 'ch40-ex-58',
@@ -1155,16 +1249,34 @@ export const chapter040: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['accusative', 'der-word', 'ein-word'],
-      instruction: 'Match each phrase to the adjective form that correctly fills its gap.',
+      instruction:
+        'Match each phrase to the adjective form that correctly fills its gap.',
       prompt: 'Match the phrase to the correct accusative ending.',
       pairs: [
-        { id: 'ch40-ex-58-p1', left: 'den ___ Hund (akkusativ, maskulin)', right: 'braunen' },
-        { id: 'ch40-ex-58-p2', left: 'die ___ Tasche (akkusativ, feminin)', right: 'rote' },
+        {
+          id: 'ch40-ex-58-p1',
+          left: 'den ___ Hund (akkusativ, maskulin)',
+          right: 'braunen',
+        },
+        {
+          id: 'ch40-ex-58-p2',
+          left: 'die ___ Tasche (akkusativ, feminin)',
+          right: 'rote',
+        },
         { id: 'ch40-ex-58-p3', left: 'das ___ Auto (akkusativ, neutrum)', right: 'neue' },
-        { id: 'ch40-ex-58-p4', left: 'einen ___ Hund (akkusativ, maskulin)', right: 'kleinen' },
-        { id: 'ch40-ex-58-p5', left: 'ein ___ Auto (akkusativ, neutrum)', right: 'schnelles' },
+        {
+          id: 'ch40-ex-58-p4',
+          left: 'einen ___ Hund (akkusativ, maskulin)',
+          right: 'kleinen',
+        },
+        {
+          id: 'ch40-ex-58-p5',
+          left: 'ein ___ Auto (akkusativ, neutrum)',
+          right: 'schnelles',
+        },
       ],
-      explanation: 'In the accusative, only the masculine ending changes (to -en after den/einen); feminine and neuter endings stay the same as in the nominative.',
+      explanation:
+        'In the accusative, only the masculine ending changes (to -en after den/einen); feminine and neuter endings stay the same as in the nominative.',
     },
     {
       id: 'ch40-ex-59',
@@ -1173,7 +1285,8 @@ export const chapter040: ChapterDefinition = {
       type: 'matching',
       level: 'production',
       grammarFocus: ['nominative', 'ein-word'],
-      instruction: 'Match each phrase to the adjective form that correctly fills its gap.',
+      instruction:
+        'Match each phrase to the adjective form that correctly fills its gap.',
       prompt: 'Match the phrase to the correct nominative ending after ein/eine/ein.',
       pairs: [
         { id: 'ch40-ex-59-p1', left: 'ein ___ Mann (nominativ)', right: 'freundlicher' },
@@ -1182,7 +1295,8 @@ export const chapter040: ChapterDefinition = {
         { id: 'ch40-ex-59-p4', left: 'ein ___ Garten (nominativ)', right: 'grüner' },
         { id: 'ch40-ex-59-p5', left: 'eine ___ Stadt (nominativ)', right: 'große' },
       ],
-      explanation: 'After ein/eine/ein in the nominative, the endings echo the der-words: -er (masculine, like der), -e (feminine, like die), -es (neuter, like das).',
+      explanation:
+        'After ein/eine/ein in the nominative, the endings echo the der-words: -er (masculine, like der), -e (feminine, like die), -es (neuter, like das).',
     },
     {
       id: 'ch40-ex-60',
@@ -1191,16 +1305,38 @@ export const chapter040: ChapterDefinition = {
       type: 'matching',
       level: 'production',
       grammarFocus: ['nominative', 'accusative', 'der-word', 'case-recognition'],
-      instruction: 'Match each noun to the phrase with the correct article and adjective ending.',
+      instruction:
+        'Match each noun to the phrase with the correct article and adjective ending.',
       prompt: 'Match the noun and case to the correctly formed phrase.',
       pairs: [
-        { id: 'ch40-ex-60-p1', left: 'Tisch (maskulin, nominativ)', right: 'der alte Tisch' },
-        { id: 'ch40-ex-60-p2', left: 'Blume (feminin, nominativ)', right: 'die schöne Blume' },
-        { id: 'ch40-ex-60-p3', left: 'Buch (neutrum, nominativ)', right: 'das neue Buch' },
-        { id: 'ch40-ex-60-p4', left: 'Hund (maskulin, akkusativ)', right: 'den braunen Hund' },
-        { id: 'ch40-ex-60-p5', left: 'Auto (neutrum, akkusativ)', right: 'das schnelle Auto' },
+        {
+          id: 'ch40-ex-60-p1',
+          left: 'Tisch (maskulin, nominativ)',
+          right: 'der alte Tisch',
+        },
+        {
+          id: 'ch40-ex-60-p2',
+          left: 'Blume (feminin, nominativ)',
+          right: 'die schöne Blume',
+        },
+        {
+          id: 'ch40-ex-60-p3',
+          left: 'Buch (neutrum, nominativ)',
+          right: 'das neue Buch',
+        },
+        {
+          id: 'ch40-ex-60-p4',
+          left: 'Hund (maskulin, akkusativ)',
+          right: 'den braunen Hund',
+        },
+        {
+          id: 'ch40-ex-60-p5',
+          left: 'Auto (neutrum, akkusativ)',
+          right: 'das schnelle Auto',
+        },
       ],
-      explanation: 'Nominative der-words always take -e; the masculine accusative den takes -en, while feminine/neuter accusative forms match the nominative.',
+      explanation:
+        'Nominative der-words always take -e; the masculine accusative den takes -en, while feminine/neuter accusative forms match the nominative.',
     },
   ],
 };

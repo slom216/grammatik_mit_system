@@ -110,105 +110,123 @@ export const chapter026: ChapterDefinition = {
         german: 'Ich habe einen Apfel gegessen.',
         english: 'I ate an apple.',
         highlight: ['habe', 'gegessen'],
-        explanation: 'habe is the conjugated auxiliary in position 2; gegessen, the past participle, closes the sentence.',
+        explanation:
+          'habe is the conjugated auxiliary in position 2; gegessen, the past participle, closes the sentence.',
       },
       {
         german: 'Du hast viel Wasser getrunken.',
         english: 'You drank a lot of water.',
         highlight: ['hast', 'getrunken'],
-        explanation: 'hast agrees with du and stands in position 2; getrunken stands at the end of the clause.',
+        explanation:
+          'hast agrees with du and stands in position 2; getrunken stands at the end of the clause.',
       },
       {
         german: 'Er hat heute lange gearbeitet.',
         english: 'He worked for a long time today.',
         highlight: ['hat', 'gearbeitet'],
-        explanation: 'hat is the third-person singular form of haben; gearbeitet, the participle of arbeiten, is pushed to the end.',
+        explanation:
+          'hat is the third-person singular form of haben; gearbeitet, the participle of arbeiten, is pushed to the end.',
       },
       {
         german: 'Wir haben gestern Fußball gespielt.',
         english: 'We played football yesterday.',
         highlight: ['haben', 'gespielt'],
-        explanation: 'haben agrees with wir; gespielt closes the sentence even though gestern and Fußball come in between.',
+        explanation:
+          'haben agrees with wir; gespielt closes the sentence even though gestern and Fußball come in between.',
       },
       {
         german: 'Ihr habt ein interessantes Buch gelesen.',
         english: 'You (plural) read an interesting book.',
         highlight: ['habt', 'gelesen'],
-        explanation: 'habt agrees with ihr; gelesen, the participle of lesen, stands at the very end.',
+        explanation:
+          'habt agrees with ihr; gelesen, the participle of lesen, stands at the very end.',
       },
       {
         german: 'Sie haben ein neues Auto gekauft.',
         english: 'They bought a new car.',
         highlight: ['haben', 'gekauft'],
-        explanation: 'haben agrees with the plural subject sie; gekauft closes the bracket at the end.',
+        explanation:
+          'haben agrees with the plural subject sie; gekauft closes the bracket at the end.',
       },
       {
         german: 'Ich habe das Auto nicht gekauft.',
         english: 'I did not buy the car.',
         highlight: ['nicht', 'gekauft'],
-        explanation: 'nicht is placed directly before the participle; gekauft still stands at the very end of the clause.',
+        explanation:
+          'nicht is placed directly before the participle; gekauft still stands at the very end of the clause.',
       },
       {
         german: 'Wir haben keine Zeit gehabt.',
         english: 'We did not have any time.',
         highlight: ['keine', 'gehabt'],
-        explanation: 'kein replaces the article before the object Zeit; gehabt, the participle of haben itself, still closes the sentence.',
+        explanation:
+          'kein replaces the article before the object Zeit; gehabt, the participle of haben itself, still closes the sentence.',
       },
       {
         german: 'Hast du das Buch gelesen?',
         english: 'Did you read the book?',
         highlight: ['Hast', 'gelesen'],
-        explanation: 'In a yes/no question, hast moves to position 1; gelesen still stands at the end.',
+        explanation:
+          'In a yes/no question, hast moves to position 1; gelesen still stands at the end.',
       },
       {
         german: 'Was habt ihr gestern gemacht?',
         english: 'What did you (plural) do yesterday?',
         highlight: ['habt', 'gemacht'],
-        explanation: 'The question word Was stands first, habt follows in position 2, and gemacht closes the sentence.',
+        explanation:
+          'The question word Was stands first, habt follows in position 2, and gemacht closes the sentence.',
       },
       {
         german: 'Wann hat sie das Essen gekocht?',
         english: 'When did she cook the food?',
         highlight: ['hat', 'gekocht'],
-        explanation: 'The W-question word Wann is followed by hat in position 2; gekocht ends the clause.',
+        explanation:
+          'The W-question word Wann is followed by hat in position 2; gekocht ends the clause.',
       },
       {
         german: 'Gestern habe ich meine Freunde gesehen.',
         english: 'Yesterday I saw my friends.',
         highlight: ['habe', 'gesehen'],
-        explanation: 'Gestern occupies position 1, so the subject ich moves after habe; habe still stays in position 2 and gesehen closes the clause.',
+        explanation:
+          'Gestern occupies position 1, so the subject ich moves after habe; habe still stays in position 2 and gesehen closes the clause.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich habe gekauft ein Buch.',
         correct: 'Ich habe ein Buch gekauft.',
-        explanation: 'The past participle must stand at the very end of the clause, after all objects and other information, not right after haben.',
+        explanation:
+          'The past participle must stand at the very end of the clause, after all objects and other information, not right after haben.',
       },
       {
         incorrect: 'Ich gekauft habe ein Buch.',
         correct: 'Ich habe ein Buch gekauft.',
-        explanation: 'The conjugated haben belongs in position 2, right after the subject; the participle stays at the end, not the other way round.',
+        explanation:
+          'The conjugated haben belongs in position 2, right after the subject; the participle stays at the end, not the other way round.',
       },
       {
         incorrect: 'Du habt ein Eis gegessen.',
         correct: 'Du hast ein Eis gegessen.',
-        explanation: 'haben must agree with the subject; the form for du is hast, not habt (which belongs to ihr).',
+        explanation:
+          'haben must agree with the subject; the form for du is hast, not habt (which belongs to ihr).',
       },
       {
         incorrect: 'Ich habe nicht das Buch gekauft.',
         correct: 'Ich habe das Buch gekauft nicht.',
-        explanation: 'This shows the wrong placement in the opposite direction: nicht must stand directly before the participle, not right after haben and not after the participle.',
+        explanation:
+          'This shows the wrong placement in the opposite direction: nicht must stand directly before the participle, not right after haben and not after the participle.',
       },
       {
         incorrect: 'Habe ich das Buch gekauft du?',
         correct: 'Hast du das Buch gekauft?',
-        explanation: 'For a yes/no question, the conjugated haben (agreeing with the subject) moves to position 1, followed by the subject; here the subject is du, so the correct form is hast.',
+        explanation:
+          'For a yes/no question, the conjugated haben (agreeing with the subject) moves to position 1, followed by the subject; here the subject is du, so the correct form is hast.',
       },
       {
         incorrect: 'Was du hast gemacht?',
         correct: 'Was hast du gemacht?',
-        explanation: 'In a W-question, the question word stands first and the conjugated haben follows immediately in position 2, before the subject.',
+        explanation:
+          'In a W-question, the question word stands first and the conjugated haben follows immediately in position 2, before the subject.',
       },
     ],
     remember: [
@@ -232,7 +250,8 @@ export const chapter026: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['perfekt', 'haben', 'recognition'],
-      instruction: 'Identify the auxiliary verb used to form the present perfect in this sentence.',
+      instruction:
+        'Identify the auxiliary verb used to form the present perfect in this sentence.',
       prompt: 'Ich habe ein Buch gekauft. Which word is the conjugated auxiliary?',
       options: [
         { id: 'a', text: 'habe' },
@@ -241,7 +260,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'd', text: 'Ich' },
       ],
       correctOptionId: 'a',
-      explanation: 'habe is the conjugated present-tense form of haben, the auxiliary that carries the subject agreement.',
+      explanation:
+        'habe is the conjugated present-tense form of haben, the auxiliary that carries the subject agreement.',
     },
     {
       id: 'ch26-ex-02',
@@ -259,7 +279,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'd', text: 'Wir' },
       ],
       correctOptionId: 'c',
-      explanation: 'gespielt is the past participle of spielen and stands at the end of the clause.',
+      explanation:
+        'gespielt is the past participle of spielen and stands at the end of the clause.',
     },
     {
       id: 'ch26-ex-03',
@@ -268,7 +289,8 @@ export const chapter026: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['perfekt', 'word-order', 'recognition'],
-      instruction: 'Identify which sentence has the correct position of the past participle.',
+      instruction:
+        'Identify which sentence has the correct position of the past participle.',
       prompt: 'Which sentence follows the verb bracket rule correctly?',
       options: [
         { id: 'a', text: 'Ich habe gegessen einen Apfel.' },
@@ -277,7 +299,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'd', text: 'Einen Apfel gegessen ich habe.' },
       ],
       correctOptionId: 'b',
-      explanation: 'habe stands in position 2 and the participle gegessen closes the clause at the very end.',
+      explanation:
+        'habe stands in position 2 and the participle gegessen closes the clause at the very end.',
     },
     {
       id: 'ch26-ex-04',
@@ -295,7 +318,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'd', text: 'conjugated haben directly followed by the participle' },
       ],
       correctOptionId: 'a',
-      explanation: 'The Perfekt always uses a conjugated auxiliary (haben here) in position 2 and a past participle at the very end.',
+      explanation:
+        'The Perfekt always uses a conjugated auxiliary (haben here) in position 2 and a past participle at the very end.',
     },
     {
       id: 'ch26-ex-05',
@@ -385,7 +409,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'd', text: 'Ich nicht habe das Auto gekauft.' },
       ],
       correctOptionId: 'c',
-      explanation: 'nicht stands directly before the participle, so it goes right before gekauft at the end of the clause.',
+      explanation:
+        'nicht stands directly before the participle, so it goes right before gekauft at the end of the clause.',
     },
     {
       id: 'ch26-ex-10',
@@ -403,7 +428,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'd', text: 'Gelesen hast du das Buch?' },
       ],
       correctOptionId: 'b',
-      explanation: 'In a yes/no question, hast moves to position 1, followed by the subject du, and gelesen still closes the sentence.',
+      explanation:
+        'In a yes/no question, hast moves to position 1, followed by the subject du, and gelesen still closes the sentence.',
     },
     {
       id: 'ch26-ex-11',
@@ -421,7 +447,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'd', text: 'Was habt gemacht ihr gestern?' },
       ],
       correctOptionId: 'a',
-      explanation: 'The question word Was stands first, habt follows in position 2, and gemacht closes the sentence.',
+      explanation:
+        'The question word Was stands first, habt follows in position 2, and gemacht closes the sentence.',
     },
     {
       id: 'ch26-ex-12',
@@ -439,7 +466,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'd', text: 'Wir keine haben Zeit gehabt.' },
       ],
       correctOptionId: 'a',
-      explanation: 'kein replaces the article before the indefinite noun Zeit; the participle gehabt still stands at the end.',
+      explanation:
+        'kein replaces the article before the indefinite noun Zeit; the participle gehabt still stands at the end.',
     },
     {
       id: 'ch26-ex-13',
@@ -493,7 +521,8 @@ export const chapter026: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['participle', 'essen'],
-      instruction: 'Write only the past participle of essen. Capitalisation is not checked.',
+      instruction:
+        'Write only the past participle of essen. Capitalisation is not checked.',
       prompt: 'Sie hat einen Apfel ___. (essen)',
       acceptedAnswers: ['gegessen'],
       answerMode: 'caseInsensitive',
@@ -515,7 +544,8 @@ export const chapter026: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Ich habe ...',
       maxLength: 40,
-      explanation: 'habe stands in position 2 and gelesen, the participle of lesen, closes the sentence: Ich habe ein Buch gelesen.',
+      explanation:
+        'habe stands in position 2 and gelesen, the participle of lesen, closes the sentence: Ich habe ein Buch gelesen.',
     },
     {
       id: 'ch26-ex-18',
@@ -531,7 +561,8 @@ export const chapter026: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Wir haben ...',
       maxLength: 40,
-      explanation: 'haben agrees with wir and stands in position 2; gespielt, the participle of spielen, closes the sentence.',
+      explanation:
+        'haben agrees with wir and stands in position 2; gespielt, the participle of spielen, closes the sentence.',
     },
     {
       id: 'ch26-ex-19',
@@ -547,7 +578,8 @@ export const chapter026: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Du hast ...',
       maxLength: 40,
-      explanation: 'hast agrees with du; getrunken, the participle of trinken, closes the sentence.',
+      explanation:
+        'hast agrees with du; getrunken, the participle of trinken, closes the sentence.',
     },
     {
       id: 'ch26-ex-20',
@@ -559,11 +591,15 @@ export const chapter026: ChapterDefinition = {
       instruction:
         'Write a complete negative sentence in the present perfect using the cue words and nicht. Capitalisation is checked; no full stop is required.',
       prompt: 'ich – das Buch – kaufen (nicht)',
-      acceptedAnswers: ['Ich habe das Buch nicht gekauft.', 'Ich habe das Buch nicht gekauft'],
+      acceptedAnswers: [
+        'Ich habe das Buch nicht gekauft.',
+        'Ich habe das Buch nicht gekauft',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich habe ... nicht ...',
       maxLength: 45,
-      explanation: 'nicht stands directly before the participle: Ich habe das Buch nicht gekauft.',
+      explanation:
+        'nicht stands directly before the participle: Ich habe das Buch nicht gekauft.',
     },
     {
       id: 'ch26-ex-21',
@@ -575,11 +611,15 @@ export const chapter026: ChapterDefinition = {
       instruction:
         'Rewrite the sentence in the correct word order, keeping the verb bracket rule. Capitalisation is checked; no full stop is required.',
       prompt: 'sie – heute – lange – gearbeitet – hat (put in correct order)',
-      acceptedAnswers: ['Sie hat heute lange gearbeitet.', 'Sie hat heute lange gearbeitet'],
+      acceptedAnswers: [
+        'Sie hat heute lange gearbeitet.',
+        'Sie hat heute lange gearbeitet',
+      ],
       answerMode: 'normalized',
       placeholder: 'Sie hat ...',
       maxLength: 45,
-      explanation: 'hat stands in position 2 and gearbeitet, the participle, closes the clause after all other information.',
+      explanation:
+        'hat stands in position 2 and gearbeitet, the participle, closes the clause after all other information.',
     },
     {
       id: 'ch26-ex-22',
@@ -591,11 +631,15 @@ export const chapter026: ChapterDefinition = {
       instruction:
         'Write a complete sentence in the present perfect that begins with the time expression Gestern. Capitalisation is checked; no full stop is required.',
       prompt: 'Gestern – ich – meine Freunde – sehen',
-      acceptedAnswers: ['Gestern habe ich meine Freunde gesehen.', 'Gestern habe ich meine Freunde gesehen'],
+      acceptedAnswers: [
+        'Gestern habe ich meine Freunde gesehen.',
+        'Gestern habe ich meine Freunde gesehen',
+      ],
       answerMode: 'normalized',
       placeholder: 'Gestern habe ich ...',
       maxLength: 50,
-      explanation: 'When Gestern opens the sentence, habe still occupies position 2 and the subject ich follows it; gesehen closes the clause.',
+      explanation:
+        'When Gestern opens the sentence, habe still occupies position 2 and the subject ich follows it; gesehen closes the clause.',
     },
     {
       id: 'ch26-ex-23',
@@ -611,7 +655,8 @@ export const chapter026: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Ich habe ...',
       maxLength: 30,
-      explanation: 'A short past-event answer keeps the same bracket: habe in position 2, gekocht at the end.',
+      explanation:
+        'A short past-event answer keeps the same bracket: habe in position 2, gekocht at the end.',
     },
     {
       id: 'ch26-ex-24',
@@ -627,7 +672,8 @@ export const chapter026: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Was hast du ...?',
       maxLength: 35,
-      explanation: 'Was stands first, hast follows in position 2 agreeing with du, and gesehen closes the question.',
+      explanation:
+        'Was stands first, hast follows in position 2 agreeing with du, and gesehen closes the question.',
     },
     {
       id: 'ch26-ex-25',
@@ -645,7 +691,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'd', text: 'Er' },
       ],
       correctOptionId: 'c',
-      explanation: 'gekauft is the past participle of kaufen and stands at the end of the clause.',
+      explanation:
+        'gekauft is the past participle of kaufen and stands at the end of the clause.',
     },
     {
       id: 'ch26-ex-26',
@@ -672,7 +719,8 @@ export const chapter026: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['perfekt', 'word-order', 'controlled'],
-      instruction: 'Identify which sentence has the correct position of the past participle.',
+      instruction:
+        'Identify which sentence has the correct position of the past participle.',
       prompt: 'Which sentence follows the verb bracket rule correctly?',
       options: [
         { id: 'a', text: 'Sie hat gekocht das Essen.' },
@@ -681,7 +729,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'd', text: 'Das Essen gekocht sie hat.' },
       ],
       correctOptionId: 'b',
-      explanation: 'hat stands in position 2 and gekocht, the participle, closes the clause at the end.',
+      explanation:
+        'hat stands in position 2 and gekocht, the participle, closes the clause at the end.',
     },
     {
       id: 'ch26-ex-28',
@@ -699,7 +748,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'd', text: 'Ich nicht habe den Kaffee getrunken.' },
       ],
       correctOptionId: 'c',
-      explanation: 'nicht stands directly before the participle, so it goes right before getrunken at the end of the clause.',
+      explanation:
+        'nicht stands directly before the participle, so it goes right before getrunken at the end of the clause.',
     },
     {
       id: 'ch26-ex-29',
@@ -717,7 +767,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'd', text: 'Getrunken habt ihr den Kaffee?' },
       ],
       correctOptionId: 'b',
-      explanation: 'In a yes/no question, habt moves to position 1, followed by the subject ihr, and getrunken still closes the sentence.',
+      explanation:
+        'In a yes/no question, habt moves to position 1, followed by the subject ihr, and getrunken still closes the sentence.',
     },
     {
       id: 'ch26-ex-30',
@@ -735,7 +786,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'd', text: 'Wer gemacht hat das?' },
       ],
       correctOptionId: 'a',
-      explanation: 'The question word Wer stands first, hat follows in position 2, and gemacht closes the sentence.',
+      explanation:
+        'The question word Wer stands first, hat follows in position 2, and gemacht closes the sentence.',
     },
     {
       id: 'ch26-ex-31',
@@ -753,7 +805,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'd', text: 'Gestern haben Pizza wir gegessen.' },
       ],
       correctOptionId: 'b',
-      explanation: 'When Gestern opens the sentence, haben stays in position 2 and the subject wir follows it; gegessen closes the clause.',
+      explanation:
+        'When Gestern opens the sentence, haben stays in position 2 and the subject wir follows it; gegessen closes the clause.',
     },
     {
       id: 'ch26-ex-32',
@@ -771,7 +824,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'd', text: 'Ich kein habe Buch gekauft.' },
       ],
       correctOptionId: 'a',
-      explanation: 'kein replaces the article before the indefinite noun Buch; the participle gekauft still stands at the end.',
+      explanation:
+        'kein replaces the article before the indefinite noun Buch; the participle gekauft still stands at the end.',
     },
     {
       id: 'ch26-ex-33',
@@ -789,7 +843,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'd', text: 'Ich habe ein Auto gehabt.' },
       ],
       correctOptionId: 'b',
-      explanation: 'kaufen forms its Perfekt with haben, not sein: Ich habe ein Auto gekauft.',
+      explanation:
+        'kaufen forms its Perfekt with haben, not sein: Ich habe ein Auto gekauft.',
     },
     {
       id: 'ch26-ex-34',
@@ -828,7 +883,8 @@ export const chapter026: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['participle', 'machen'],
-      instruction: 'Write only the past participle of machen. Capitalisation is not checked.',
+      instruction:
+        'Write only the past participle of machen. Capitalisation is not checked.',
       prompt: 'Was hast du ___? (machen)',
       acceptedAnswers: ['gemacht'],
       answerMode: 'caseInsensitive',
@@ -843,7 +899,8 @@ export const chapter026: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['participle', 'trinken'],
-      instruction: 'Write only the past participle of trinken. Capitalisation is not checked.',
+      instruction:
+        'Write only the past participle of trinken. Capitalisation is not checked.',
       prompt: 'Er hat Kaffee ___. (trinken)',
       acceptedAnswers: ['getrunken'],
       answerMode: 'caseInsensitive',
@@ -858,7 +915,8 @@ export const chapter026: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['participle', 'arbeiten'],
-      instruction: 'Write only the past participle of arbeiten. Capitalisation is not checked.',
+      instruction:
+        'Write only the past participle of arbeiten. Capitalisation is not checked.',
       prompt: 'Sie hat den ganzen Tag ___. (arbeiten)',
       acceptedAnswers: ['gearbeitet'],
       answerMode: 'caseInsensitive',
@@ -880,7 +938,8 @@ export const chapter026: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Er hat ...',
       maxLength: 40,
-      explanation: 'hat agrees with er and stands in position 2; gekocht, the participle of kochen, closes the sentence.',
+      explanation:
+        'hat agrees with er and stands in position 2; gekocht, the participle of kochen, closes the sentence.',
     },
     {
       id: 'ch26-ex-40',
@@ -892,11 +951,15 @@ export const chapter026: ChapterDefinition = {
       instruction:
         'Write a complete negative sentence in the present perfect using the cue words and nicht. Capitalisation is checked; no full stop is required.',
       prompt: 'wir – Kaffee – trinken (nicht)',
-      acceptedAnswers: ['Wir haben Kaffee nicht getrunken.', 'Wir haben Kaffee nicht getrunken'],
+      acceptedAnswers: [
+        'Wir haben Kaffee nicht getrunken.',
+        'Wir haben Kaffee nicht getrunken',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wir haben ... nicht ...',
       maxLength: 45,
-      explanation: 'nicht stands directly before the participle: Wir haben Kaffee nicht getrunken.',
+      explanation:
+        'nicht stands directly before the participle: Wir haben Kaffee nicht getrunken.',
     },
     {
       id: 'ch26-ex-41',
@@ -908,11 +971,15 @@ export const chapter026: ChapterDefinition = {
       instruction:
         'Write a complete sentence in the present perfect that begins with the time expression Heute. Capitalisation is checked; no full stop is required.',
       prompt: 'Heute – wir – Pizza – essen',
-      acceptedAnswers: ['Heute haben wir Pizza gegessen.', 'Heute haben wir Pizza gegessen'],
+      acceptedAnswers: [
+        'Heute haben wir Pizza gegessen.',
+        'Heute haben wir Pizza gegessen',
+      ],
       answerMode: 'normalized',
       placeholder: 'Heute haben wir ...',
       maxLength: 50,
-      explanation: 'When Heute opens the sentence, haben still occupies position 2 and the subject wir follows it; gegessen closes the clause.',
+      explanation:
+        'When Heute opens the sentence, haben still occupies position 2 and the subject wir follows it; gegessen closes the clause.',
     },
     {
       id: 'ch26-ex-42',
@@ -928,7 +995,8 @@ export const chapter026: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Wer hat das ...?',
       maxLength: 30,
-      explanation: 'Wer stands first, hat follows in position 2, and gemacht closes the question.',
+      explanation:
+        'Wer stands first, hat follows in position 2, and gemacht closes the question.',
     },
     {
       id: 'ch26-ex-43',
@@ -937,7 +1005,8 @@ export const chapter026: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['perfekt', 'word-order', 'sentence-ordering'],
-      instruction: 'Put the words in the correct order to form a statement in the present perfect.',
+      instruction:
+        'Put the words in the correct order to form a statement in the present perfect.',
       prompt: 'Order the words: Ich / habe / ein Eis / gegessen.',
       segments: [
         { id: 'ch26-ex43-s1', text: 'Ich' },
@@ -945,7 +1014,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'ch26-ex43-s3', text: 'ein Eis' },
         { id: 'ch26-ex43-s4', text: 'gegessen.' },
       ],
-      explanation: 'habe stands in position 2 and gegessen, the participle, closes the clause: Ich habe ein Eis gegessen.',
+      explanation:
+        'habe stands in position 2 and gegessen, the participle, closes the clause: Ich habe ein Eis gegessen.',
     },
     {
       id: 'ch26-ex-44',
@@ -954,7 +1024,8 @@ export const chapter026: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['perfekt', 'word-order', 'sentence-ordering'],
-      instruction: 'Put the words in the correct order to form a statement in the present perfect.',
+      instruction:
+        'Put the words in the correct order to form a statement in the present perfect.',
       prompt: 'Order the words: Du / hast / viel Wasser / getrunken.',
       segments: [
         { id: 'ch26-ex44-s1', text: 'Du' },
@@ -962,7 +1033,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'ch26-ex44-s3', text: 'viel Wasser' },
         { id: 'ch26-ex44-s4', text: 'getrunken.' },
       ],
-      explanation: 'hast agrees with du and stands in position 2; getrunken closes the clause.',
+      explanation:
+        'hast agrees with du and stands in position 2; getrunken closes the clause.',
     },
     {
       id: 'ch26-ex-45',
@@ -971,7 +1043,8 @@ export const chapter026: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['perfekt', 'word-order', 'sentence-ordering'],
-      instruction: 'Put the words in the correct order to form a statement in the present perfect.',
+      instruction:
+        'Put the words in the correct order to form a statement in the present perfect.',
       prompt: 'Order the words: Wir / haben / gestern / Fußball / gespielt.',
       segments: [
         { id: 'ch26-ex45-s1', text: 'Wir' },
@@ -980,7 +1053,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'ch26-ex45-s4', text: 'Fußball' },
         { id: 'ch26-ex45-s5', text: 'gespielt.' },
       ],
-      explanation: 'haben agrees with wir; gespielt closes the sentence even though gestern and Fußball come in between.',
+      explanation:
+        'haben agrees with wir; gespielt closes the sentence even though gestern and Fußball come in between.',
     },
     {
       id: 'ch26-ex-46',
@@ -989,7 +1063,8 @@ export const chapter026: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['perfekt', 'word-order', 'sentence-ordering'],
-      instruction: 'Put the words in the correct order to form a statement in the present perfect.',
+      instruction:
+        'Put the words in the correct order to form a statement in the present perfect.',
       prompt: 'Order the words: Er / hat / den ganzen Tag / gearbeitet.',
       segments: [
         { id: 'ch26-ex46-s1', text: 'Er' },
@@ -997,7 +1072,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'ch26-ex46-s3', text: 'den ganzen Tag' },
         { id: 'ch26-ex46-s4', text: 'gearbeitet.' },
       ],
-      explanation: 'hat is the third-person singular form of haben; gearbeitet is pushed to the end.',
+      explanation:
+        'hat is the third-person singular form of haben; gearbeitet is pushed to the end.',
     },
     {
       id: 'ch26-ex-47',
@@ -1006,7 +1082,8 @@ export const chapter026: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['perfekt', 'negation', 'sentence-ordering'],
-      instruction: 'Put the words in the correct order to form a negated statement in the present perfect.',
+      instruction:
+        'Put the words in the correct order to form a negated statement in the present perfect.',
       prompt: 'Order the words: Ich / habe / das Buch / nicht / gekauft.',
       segments: [
         { id: 'ch26-ex47-s1', text: 'Ich' },
@@ -1015,7 +1092,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'ch26-ex47-s4', text: 'nicht' },
         { id: 'ch26-ex47-s5', text: 'gekauft.' },
       ],
-      explanation: 'nicht is placed directly before the participle, which still stands at the very end: Ich habe das Buch nicht gekauft.',
+      explanation:
+        'nicht is placed directly before the participle, which still stands at the very end: Ich habe das Buch nicht gekauft.',
     },
     {
       id: 'ch26-ex-48',
@@ -1024,7 +1102,8 @@ export const chapter026: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['perfekt', 'question', 'sentence-ordering'],
-      instruction: 'Put the words in the correct order to form a yes/no question in the present perfect.',
+      instruction:
+        'Put the words in the correct order to form a yes/no question in the present perfect.',
       prompt: 'Order the words: Hast / du / das Buch / gelesen?',
       segments: [
         { id: 'ch26-ex48-s1', text: 'Hast' },
@@ -1032,7 +1111,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'ch26-ex48-s3', text: 'das Buch' },
         { id: 'ch26-ex48-s4', text: 'gelesen?' },
       ],
-      explanation: 'In a yes/no question, hast moves to position 1; gelesen still stands at the end.',
+      explanation:
+        'In a yes/no question, hast moves to position 1; gelesen still stands at the end.',
     },
     {
       id: 'ch26-ex-49',
@@ -1041,7 +1121,8 @@ export const chapter026: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'transfer',
       grammarFocus: ['perfekt', 'inversion', 'sentence-ordering'],
-      instruction: 'Put the words in the correct order, keeping Gestern in first position.',
+      instruction:
+        'Put the words in the correct order, keeping Gestern in first position.',
       prompt: 'Order the words: Gestern / habe / ich / meine Freunde / gesehen.',
       segments: [
         { id: 'ch26-ex49-s1', text: 'Gestern' },
@@ -1050,7 +1131,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'ch26-ex49-s4', text: 'meine Freunde' },
         { id: 'ch26-ex49-s5', text: 'gesehen.' },
       ],
-      explanation: 'Gestern occupies position 1, so the subject ich moves after habe; habe still stays in position 2 and gesehen closes the clause.',
+      explanation:
+        'Gestern occupies position 1, so the subject ich moves after habe; habe still stays in position 2 and gesehen closes the clause.',
     },
     {
       id: 'ch26-ex-50',
@@ -1059,7 +1141,8 @@ export const chapter026: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'transfer',
       grammarFocus: ['perfekt', 'w-question', 'sentence-ordering'],
-      instruction: 'Put the words in the correct order to form a W-question in the present perfect.',
+      instruction:
+        'Put the words in the correct order to form a W-question in the present perfect.',
       prompt: 'Order the words: Was / habt / ihr / gemacht?',
       segments: [
         { id: 'ch26-ex50-s1', text: 'Was' },
@@ -1067,7 +1150,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'ch26-ex50-s3', text: 'ihr' },
         { id: 'ch26-ex50-s4', text: 'gemacht?' },
       ],
-      explanation: 'The question word Was stands first, habt follows in position 2, and gemacht closes the sentence.',
+      explanation:
+        'The question word Was stands first, habt follows in position 2, and gemacht closes the sentence.',
     },
     {
       id: 'ch26-ex-51',
@@ -1076,7 +1160,8 @@ export const chapter026: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['perfekt', 'verb-bracket'],
-      instruction: 'Fill in the conjugated haben and the past participle that close the verb bracket.',
+      instruction:
+        'Fill in the conjugated haben and the past participle that close the verb bracket.',
       prompt: 'Vervollständige den Satz: "Ich ___ ein Buch ___." (lesen)',
       templateParts: ['Ich ', ' ein Buch ', '.'],
       slots: [
@@ -1084,7 +1169,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'ch26-ex51-slot2', correctWord: 'gelesen' },
       ],
       wordBank: ['habe', 'hast', 'gelesen', 'gegessen'],
-      explanation: 'habe is the conjugated auxiliary in position 2, and gelesen, the participle of lesen, closes the bracket: Ich habe ein Buch gelesen.',
+      explanation:
+        'habe is the conjugated auxiliary in position 2, and gelesen, the participle of lesen, closes the bracket: Ich habe ein Buch gelesen.',
     },
     {
       id: 'ch26-ex-52',
@@ -1093,7 +1179,8 @@ export const chapter026: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['perfekt', 'verb-bracket'],
-      instruction: 'Fill in the conjugated haben and the past participle that close the verb bracket.',
+      instruction:
+        'Fill in the conjugated haben and the past participle that close the verb bracket.',
       prompt: 'Vervollständige den Satz: "Du ___ Fußball ___." (spielen)',
       templateParts: ['Du ', ' Fußball ', '.'],
       slots: [
@@ -1101,7 +1188,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'ch26-ex52-slot2', correctWord: 'gespielt' },
       ],
       wordBank: ['hast', 'habe', 'gespielt', 'gemacht'],
-      explanation: 'hast agrees with du and stands in position 2, and gespielt, the participle of spielen, closes the bracket: Du hast Fußball gespielt.',
+      explanation:
+        'hast agrees with du and stands in position 2, and gespielt, the participle of spielen, closes the bracket: Du hast Fußball gespielt.',
     },
     {
       id: 'ch26-ex-53',
@@ -1110,7 +1198,8 @@ export const chapter026: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['perfekt', 'verb-bracket'],
-      instruction: 'Fill in the conjugated haben and the past participle that close the verb bracket.',
+      instruction:
+        'Fill in the conjugated haben and the past participle that close the verb bracket.',
       prompt: 'Vervollständige den Satz: "Er ___ das Essen ___." (kochen)',
       templateParts: ['Er ', ' das Essen ', '.'],
       slots: [
@@ -1118,7 +1207,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'ch26-ex53-slot2', correctWord: 'gekocht' },
       ],
       wordBank: ['hat', 'haben', 'gekocht', 'gegessen'],
-      explanation: 'hat is the third-person singular form of haben in position 2, and gekocht, the participle of kochen, closes the bracket: Er hat das Essen gekocht.',
+      explanation:
+        'hat is the third-person singular form of haben in position 2, and gekocht, the participle of kochen, closes the bracket: Er hat das Essen gekocht.',
     },
     {
       id: 'ch26-ex-54',
@@ -1127,7 +1217,8 @@ export const chapter026: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['perfekt', 'verb-bracket'],
-      instruction: 'Fill in the conjugated haben and the past participle that close the verb bracket.',
+      instruction:
+        'Fill in the conjugated haben and the past participle that close the verb bracket.',
       prompt: 'Vervollständige den Satz: "Wir ___ den ganzen Tag ___." (arbeiten)',
       templateParts: ['Wir ', ' den ganzen Tag ', '.'],
       slots: [
@@ -1135,7 +1226,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'ch26-ex54-slot2', correctWord: 'gearbeitet' },
       ],
       wordBank: ['haben', 'habt', 'gearbeitet', 'gespielt'],
-      explanation: 'haben agrees with wir and stands in position 2, and gearbeitet, the participle of arbeiten, closes the bracket: Wir haben den ganzen Tag gearbeitet.',
+      explanation:
+        'haben agrees with wir and stands in position 2, and gearbeitet, the participle of arbeiten, closes the bracket: Wir haben den ganzen Tag gearbeitet.',
     },
     {
       id: 'ch26-ex-55',
@@ -1144,7 +1236,8 @@ export const chapter026: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'production',
       grammarFocus: ['perfekt', 'verb-bracket'],
-      instruction: 'Fill in the conjugated haben and the past participle that close the verb bracket.',
+      instruction:
+        'Fill in the conjugated haben and the past participle that close the verb bracket.',
       prompt: 'Vervollständige den Satz: "Ihr ___ ein Auto ___." (kaufen)',
       templateParts: ['Ihr ', ' ein Auto ', '.'],
       slots: [
@@ -1152,7 +1245,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'ch26-ex55-slot2', correctWord: 'gekauft' },
       ],
       wordBank: ['habt', 'haben', 'gekauft', 'gelesen'],
-      explanation: 'habt agrees with ihr and stands in position 2, and gekauft, the participle of kaufen, closes the bracket: Ihr habt ein Auto gekauft.',
+      explanation:
+        'habt agrees with ihr and stands in position 2, and gekauft, the participle of kaufen, closes the bracket: Ihr habt ein Auto gekauft.',
     },
     {
       id: 'ch26-ex-56',
@@ -1161,7 +1255,8 @@ export const chapter026: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'production',
       grammarFocus: ['perfekt', 'verb-bracket'],
-      instruction: 'Fill in the conjugated haben and the past participle that close the verb bracket.',
+      instruction:
+        'Fill in the conjugated haben and the past participle that close the verb bracket.',
       prompt: 'Vervollständige den Satz: "Sie ___ viel Wasser ___." (trinken)',
       templateParts: ['Sie ', ' viel Wasser ', '.'],
       slots: [
@@ -1169,7 +1264,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'ch26-ex56-slot2', correctWord: 'getrunken' },
       ],
       wordBank: ['haben', 'hat', 'getrunken', 'gegessen'],
-      explanation: 'haben agrees with the plural subject sie and stands in position 2, and getrunken, the participle of trinken, closes the bracket: Sie haben viel Wasser getrunken.',
+      explanation:
+        'haben agrees with the plural subject sie and stands in position 2, and getrunken, the participle of trinken, closes the bracket: Sie haben viel Wasser getrunken.',
     },
     {
       id: 'ch26-ex-57',
@@ -1178,7 +1274,8 @@ export const chapter026: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'transfer',
       grammarFocus: ['perfekt', 'negation', 'verb-bracket'],
-      instruction: 'Fill in the conjugated haben and the past participle that close the verb bracket around nicht.',
+      instruction:
+        'Fill in the conjugated haben and the past participle that close the verb bracket around nicht.',
       prompt: 'Vervollständige den Satz: "Ich ___ das Buch nicht ___." (kaufen)',
       templateParts: ['Ich ', ' das Buch nicht ', '.'],
       slots: [
@@ -1186,7 +1283,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'ch26-ex57-slot2', correctWord: 'gekauft' },
       ],
       wordBank: ['habe', 'hast', 'gekauft', 'gelesen'],
-      explanation: 'habe stands in position 2, nicht comes directly before the participle, and gekauft, the participle of kaufen, closes the bracket: Ich habe das Buch nicht gekauft.',
+      explanation:
+        'habe stands in position 2, nicht comes directly before the participle, and gekauft, the participle of kaufen, closes the bracket: Ich habe das Buch nicht gekauft.',
     },
     {
       id: 'ch26-ex-58',
@@ -1195,7 +1293,8 @@ export const chapter026: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'transfer',
       grammarFocus: ['perfekt', 'question', 'verb-bracket'],
-      instruction: 'Fill in the conjugated haben (moved to position 1) and the past participle that close the verb bracket.',
+      instruction:
+        'Fill in the conjugated haben (moved to position 1) and the past participle that close the verb bracket.',
       prompt: 'Vervollständige die Frage: "___ du das Buch ___?" (lesen)',
       templateParts: ['', ' du das Buch ', '?'],
       slots: [
@@ -1203,7 +1302,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'ch26-ex58-slot2', correctWord: 'gelesen' },
       ],
       wordBank: ['Hast', 'Habt', 'gelesen', 'gemacht'],
-      explanation: 'In a yes/no question, Hast moves to position 1, and gelesen, the participle of lesen, still closes the bracket at the end: Hast du das Buch gelesen?',
+      explanation:
+        'In a yes/no question, Hast moves to position 1, and gelesen, the participle of lesen, still closes the bracket at the end: Hast du das Buch gelesen?',
     },
     {
       id: 'ch26-ex-59',
@@ -1217,7 +1317,8 @@ export const chapter026: ChapterDefinition = {
       tokens: ['Ich', 'bin', 'ein', 'Buch', 'gekauft.'],
       errorTokenIndex: 1,
       correction: 'habe',
-      explanation: 'kaufen forms its Perfekt with haben, not sein, so bin must be habe: Ich habe ein Buch gekauft.',
+      explanation:
+        'kaufen forms its Perfekt with haben, not sein, so bin must be habe: Ich habe ein Buch gekauft.',
     },
     {
       id: 'ch26-ex-60',
@@ -1231,7 +1332,8 @@ export const chapter026: ChapterDefinition = {
       tokens: ['Wir', 'haben', 'Fußball', 'gespielen.'],
       errorTokenIndex: 3,
       correction: 'gespielt.',
-      explanation: 'The past participle of spielen is gespielt, not gespielen: Wir haben Fußball gespielt.',
+      explanation:
+        'The past participle of spielen is gespielt, not gespielen: Wir haben Fußball gespielt.',
     },
     {
       id: 'ch26-ex-61',
@@ -1245,7 +1347,8 @@ export const chapter026: ChapterDefinition = {
       tokens: ['Du', 'bist', 'viel', 'Wasser', 'getrunken.'],
       errorTokenIndex: 1,
       correction: 'hast',
-      explanation: 'trinken forms its Perfekt with haben, not sein, so bist must be hast: Du hast viel Wasser getrunken.',
+      explanation:
+        'trinken forms its Perfekt with haben, not sein, so bist must be hast: Du hast viel Wasser getrunken.',
     },
     {
       id: 'ch26-ex-62',
@@ -1255,7 +1358,8 @@ export const chapter026: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['perfekt', 'participle', 'matching'],
       instruction: 'Match each infinitive with its past participle.',
-      prompt: 'Match the infinitives on the left with their past participles on the right.',
+      prompt:
+        'Match the infinitives on the left with their past participles on the right.',
       pairs: [
         { id: 'ch26-ex62-p1', left: 'machen', right: 'gemacht' },
         { id: 'ch26-ex62-p2', left: 'kaufen', right: 'gekauft' },
@@ -1266,7 +1370,8 @@ export const chapter026: ChapterDefinition = {
         { id: 'ch26-ex62-p7', left: 'sehen', right: 'gesehen' },
         { id: 'ch26-ex62-p8', left: 'arbeiten', right: 'gearbeitet' },
       ],
-      explanation: 'Each of these common verbs forms its Perfekt with haben, and each has its own fixed past participle to memorize.',
+      explanation:
+        'Each of these common verbs forms its Perfekt with haben, and each has its own fixed past participle to memorize.',
     },
   ],
 };

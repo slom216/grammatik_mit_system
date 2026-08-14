@@ -59,7 +59,8 @@ export const chapter062: ChapterDefinition = {
       },
       {
         id: 'ch62-rule-04',
-        heading: 'Naming the agent: von (personal, dative) vs. durch (impersonal, accusative)',
+        heading:
+          'Naming the agent: von (personal, dative) vs. durch (impersonal, accusative)',
         paragraphs: [
           'When it is useful to say who or what is responsible for the action, German adds an agent phrase. von + dative names a personal or animate agent — someone consciously carrying out the action: Das Auto wird von meinem Bruder repariert. (The car is being repaired by my brother.) Der Krankenwagen wird von der Nachbarin gerufen. (The ambulance is being called by the neighbor.)',
           'durch + accusative marks an impersonal means or cause rather than a deliberate agent — something that brings about the result without acting on purpose: Die Tür wird durch den Wind geöffnet. (The door is opened by the wind.) Der Fehler wird durch einen Test gefunden. (The mistake is found through a test.)',
@@ -104,11 +105,31 @@ export const chapter062: ChapterDefinition = {
         title: 'Active → Passive: the object becomes the subject',
         columns: ['Active (Aktiv)', 'Passive (Passiv, no agent)', 'English (passive)'],
         rows: [
-          ['Der Chef schreibt den Bericht.', 'Der Bericht wird geschrieben.', 'The report is (being) written.'],
-          ['Die Firma baut das Haus.', 'Das Haus wird gebaut.', 'The house is (being) built.'],
-          ['Der Kellner bringt die Getränke.', 'Die Getränke werden gebracht.', 'The drinks are (being) brought.'],
-          ['Die Kinder essen den Kuchen.', 'Der Kuchen wird gegessen.', 'The cake is (being) eaten.'],
-          ['Der Techniker repariert den Computer.', 'Der Computer wird repariert.', 'The computer is (being) repaired.'],
+          [
+            'Der Chef schreibt den Bericht.',
+            'Der Bericht wird geschrieben.',
+            'The report is (being) written.',
+          ],
+          [
+            'Die Firma baut das Haus.',
+            'Das Haus wird gebaut.',
+            'The house is (being) built.',
+          ],
+          [
+            'Der Kellner bringt die Getränke.',
+            'Die Getränke werden gebracht.',
+            'The drinks are (being) brought.',
+          ],
+          [
+            'Die Kinder essen den Kuchen.',
+            'Der Kuchen wird gegessen.',
+            'The cake is (being) eaten.',
+          ],
+          [
+            'Der Techniker repariert den Computer.',
+            'Der Computer wird repariert.',
+            'The computer is (being) repaired.',
+          ],
           ['Man liest das Buch.', 'Das Buch wird gelesen.', 'The book is (being) read.'],
         ],
         note: 'The former accusative object (den Bericht, das Haus, ...) becomes the nominative subject, and the verb changes number to agree with it (compare singular wird with plural werden).',
@@ -156,7 +177,12 @@ export const chapter062: ChapterDefinition = {
       {
         id: 'ch62-table-05',
         title: 'Word order: werden in position 2, the participle at the very end',
-        columns: ['Position 1', 'Position 2 (werden)', 'Middle field', 'Clause-final (Partizip II)'],
+        columns: [
+          'Position 1',
+          'Position 2 (werden)',
+          'Middle field',
+          'Clause-final (Partizip II)',
+        ],
         rows: [
           ['Das Auto', 'wird', 'von meinem Bruder', 'repariert.'],
           ['Am Freitag', 'wird', 'das neue Auto', 'geliefert.'],
@@ -171,111 +197,130 @@ export const chapter062: ChapterDefinition = {
         german: 'Die Suppe wird gekocht.',
         english: 'The soup is being cooked.',
         highlight: ['wird', 'gekocht'],
-        explanation: 'Present passive: werden (position 2) plus the past participle at the end of the clause; no agent is mentioned because it is unimportant exactly who is cooking.',
+        explanation:
+          'Present passive: werden (position 2) plus the past participle at the end of the clause; no agent is mentioned because it is unimportant exactly who is cooking.',
       },
       {
         german: 'Der Bericht wird geschrieben.',
         english: 'The report is being written.',
         highlight: ['Der Bericht', 'wird', 'geschrieben'],
-        explanation: 'The object of the active sentence (den Bericht) becomes the subject (der Bericht) of the passive sentence, and the verb agrees with this new subject.',
+        explanation:
+          'The object of the active sentence (den Bericht) becomes the subject (der Bericht) of the passive sentence, and the verb agrees with this new subject.',
       },
       {
         german: 'Das Auto wird von meinem Bruder repariert.',
         english: 'The car is being repaired by my brother.',
         highlight: ['von meinem Bruder', 'repariert'],
-        explanation: 'von + dative names the personal agent actually carrying out the action; repariert is an -ieren verb, so its participle has no ge- prefix.',
+        explanation:
+          'von + dative names the personal agent actually carrying out the action; repariert is an -ieren verb, so its participle has no ge- prefix.',
       },
       {
         german: 'Der Fehler wird durch einen Test gefunden.',
         english: 'The mistake is found through a test.',
         highlight: ['durch einen Test', 'gefunden'],
-        explanation: 'durch + accusative marks an impersonal means, not a person deliberately acting; gefunden is the irregular participle of finden.',
+        explanation:
+          'durch + accusative marks an impersonal means, not a person deliberately acting; gefunden is the irregular participle of finden.',
       },
       {
         german: 'Die Tür wird durch den Wind geöffnet.',
         english: 'The door is opened by the wind.',
         highlight: ['durch den Wind', 'geöffnet'],
-        explanation: 'The wind is an impersonal cause, not a conscious agent, so durch (+ accusative) is used here rather than von.',
+        explanation:
+          'The wind is an impersonal cause, not a conscious agent, so durch (+ accusative) is used here rather than von.',
       },
       {
         german: 'Die Fenster werden geputzt.',
         english: 'The windows are being cleaned.',
         highlight: ['werden', 'geputzt'],
-        explanation: 'No agent is named at all — the most common pattern in real German passive sentences, used whenever the doer is unknown, unimportant, or obvious from context.',
+        explanation:
+          'No agent is named at all — the most common pattern in real German passive sentences, used whenever the doer is unknown, unimportant, or obvious from context.',
       },
       {
         german: 'Am Freitag wird das neue Auto geliefert.',
         english: 'The new car is being delivered on Friday.',
         highlight: ['Am Freitag', 'wird'],
-        explanation: 'A time expression (Am Freitag) can occupy position 1 instead of the subject; werden still stays in position 2, and the subject (das neue Auto) simply follows it.',
+        explanation:
+          'A time expression (Am Freitag) can occupy position 1 instead of the subject; werden still stays in position 2, and the subject (das neue Auto) simply follows it.',
       },
       {
         german: 'Hier wird schon seit Jahren gebaut.',
         english: 'Building work has been going on here for years.',
         highlight: ['wird', 'gebaut'],
-        explanation: 'A classic agentless passive: hier fills position 1, and the sentence reports only that construction is happening, without saying what exactly or by whom.',
+        explanation:
+          'A classic agentless passive: hier fills position 1, and the sentence reports only that construction is happening, without saying what exactly or by whom.',
       },
       {
         german: 'Der Krankenwagen wird von der Nachbarin gerufen.',
         english: 'The ambulance is being called by the neighbor.',
         highlight: ['von der Nachbarin', 'gerufen'],
-        explanation: 'von + dative again marks the personal agent; rufen is a strong verb with the irregular participle gerufen.',
+        explanation:
+          'von + dative again marks the personal agent; rufen is a strong verb with the irregular participle gerufen.',
       },
       {
         german: 'Man liest das Buch.',
         english: 'One reads the book. / People read the book.',
         highlight: ['Man', 'liest'],
-        explanation: 'The indefinite pronoun man is a common active alternative to the passive when a general, unspecified subject is meant.',
+        explanation:
+          'The indefinite pronoun man is a common active alternative to the passive when a general, unspecified subject is meant.',
       },
       {
         german: 'Das Buch wird gelesen.',
         english: 'The book is being read.',
         highlight: ['Das Buch', 'wird', 'gelesen'],
-        explanation: 'The passive equivalent of Man liest das Buch: the indefinite subject man simply disappears, and the object becomes the subject.',
+        explanation:
+          'The passive equivalent of Man liest das Buch: the indefinite subject man simply disappears, and the object becomes the subject.',
       },
       {
         german: 'Die Getränke werden von den Kellnern gebracht.',
         english: 'The drinks are being brought by the waiters.',
         highlight: ['von den Kellnern', 'gebracht'],
-        explanation: 'von + dative plural (den Kellnern) names the people carrying out the action; gebracht is the irregular participle of bringen.',
+        explanation:
+          'von + dative plural (den Kellnern) names the people carrying out the action; gebracht is the irregular participle of bringen.',
       },
       {
         german: 'Der Kuchen wird von den Kindern gegessen.',
         english: 'The cake is being eaten by the children.',
         highlight: ['von den Kindern', 'gegessen'],
-        explanation: 'gegessen is the irregular participle of essen; von + dative plural den Kindern names who is doing the eating.',
+        explanation:
+          'gegessen is the irregular participle of essen; von + dative plural den Kindern names who is doing the eating.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Du werdest gefragt.',
         correct: 'Du wirst gefragt.',
-        explanation: 'werden has an irregular du-form, wirst, with the stem vowel change e → i; "werdest" is not a real form of this verb.',
+        explanation:
+          'werden has an irregular du-form, wirst, with the stem vowel change e → i; "werdest" is not a real form of this verb.',
       },
       {
         incorrect: 'Er werdet gefragt.',
         correct: 'Er wird gefragt.',
-        explanation: 'The er/sie/es-form of werden is wird, not werdet; werdet belongs only to ihr.',
+        explanation:
+          'The er/sie/es-form of werden is wird, not werdet; werdet belongs only to ihr.',
       },
       {
         incorrect: 'Der Bericht wird von der Chefin geschreibt.',
         correct: 'Der Bericht wird von der Chefin geschrieben.',
-        explanation: 'schreiben is a strong verb; its past participle is the irregular geschrieben, not a regular form built with -t alone.',
+        explanation:
+          'schreiben is a strong verb; its past participle is the irregular geschrieben, not a regular form built with -t alone.',
       },
       {
         incorrect: 'Das Auto wird durch meinem Bruder repariert.',
         correct: 'Das Auto wird von meinem Bruder repariert.',
-        explanation: 'A personal agent deliberately performing the action takes von + dative, not durch; durch is reserved for impersonal means or causes.',
+        explanation:
+          'A personal agent deliberately performing the action takes von + dative, not durch; durch is reserved for impersonal means or causes.',
       },
       {
         incorrect: 'Der Fehler wird durch den Techniker gefunden.',
         correct: 'Der Fehler wird von dem Techniker gefunden.',
-        explanation: 'Der Techniker is a person deliberately performing the action, so the agent phrase needs von + dative, not durch + accusative, which marks impersonal means or causes instead.',
+        explanation:
+          'Der Techniker is a person deliberately performing the action, so the agent phrase needs von + dative, not durch + accusative, which marks impersonal means or causes instead.',
       },
       {
         incorrect: 'Der Bericht geschrieben wird.',
         correct: 'Der Bericht wird geschrieben.',
-        explanation: 'werden must stay in position 2, right after the first element of the clause; the participle geschrieben belongs at the very end, exactly like in the perfect tense or with modal verbs.',
+        explanation:
+          'werden must stay in position 2, right after the first element of the clause; the participle geschrieben belongs at the very end, exactly like in the perfect tense or with modal verbs.',
       },
     ],
     remember: [
@@ -302,7 +347,8 @@ export const chapter062: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['passive-voice', 'werden', 'auxiliary-conjugation'],
-      instruction: 'Choose the correct present-tense form of werden (the passive auxiliary) for ich.',
+      instruction:
+        'Choose the correct present-tense form of werden (the passive auxiliary) for ich.',
       prompt: 'Ich ___ oft nach dem Weg gefragt.',
       options: [
         { id: 'a', text: 'werde' },
@@ -311,7 +357,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'werdet' },
       ],
       correctOptionId: 'a',
-      explanation: 'werde is the ich-form of werden, the auxiliary that forms the present passive; wirst is du, wird is er/sie/es, werdet is ihr.',
+      explanation:
+        'werde is the ich-form of werden, the auxiliary that forms the present passive; wirst is du, wird is er/sie/es, werdet is ihr.',
     },
     {
       id: 'ch62-ex-02',
@@ -329,7 +376,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'werde' },
       ],
       correctOptionId: 'a',
-      explanation: 'The du-form of werden changes its stem vowel e → i: wirst. "werdest" is not a real form; werdet is ihr; werde is ich.',
+      explanation:
+        'The du-form of werden changes its stem vowel e → i: wirst. "werdest" is not a real form; werdet is ihr; werde is ich.',
     },
     {
       id: 'ch62-ex-03',
@@ -347,7 +395,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'wirst' },
       ],
       correctOptionId: 'a',
-      explanation: 'The er/sie/es-form of werden is wird, with the same e → i stem change as du; werdet is ihr, werden is wir/sie/Sie, wirst is du.',
+      explanation:
+        'The er/sie/es-form of werden is wird, with the same e → i stem change as du; werdet is ihr, werden is wir/sie/Sie, wirst is du.',
     },
     {
       id: 'ch62-ex-04',
@@ -365,7 +414,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'werdest' },
       ],
       correctOptionId: 'a',
-      explanation: 'wir takes werden (identical in form to the infinitive); werdet is ihr, wird is er, and werdest is not a real form.',
+      explanation:
+        'wir takes werden (identical in form to the infinitive); werdet is ihr, wird is er, and werdest is not a real form.',
     },
     {
       id: 'ch62-ex-05',
@@ -383,7 +433,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'wirst' },
       ],
       correctOptionId: 'a',
-      explanation: 'ihr takes werdet; werden is wir/sie/Sie, wird is er, and wirst is du.',
+      explanation:
+        'ihr takes werdet; werden is wir/sie/Sie, wird is er, and wirst is du.',
     },
     {
       id: 'ch62-ex-06',
@@ -401,7 +452,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'Der Bericht wurde schreiben.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The accusative object den Bericht becomes the nominative subject der Bericht; werden (wird) plus the past participle geschrieben form the present passive.',
+      explanation:
+        'The accusative object den Bericht becomes the nominative subject der Bericht; werden (wird) plus the past participle geschrieben form the present passive.',
     },
     {
       id: 'ch62-ex-07',
@@ -419,7 +471,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'Das Haus baut wird.' },
       ],
       correctOptionId: 'a',
-      explanation: 'das Haus, formerly the accusative object, becomes the subject; the past participle of bauen is gebaut.',
+      explanation:
+        'das Haus, formerly the accusative object, becomes the subject; the past participle of bauen is gebaut.',
     },
     {
       id: 'ch62-ex-08',
@@ -437,7 +490,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'Der Kuchen isst wird.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The former object den Kuchen becomes the subject der Kuchen; gegessen is the irregular participle of essen.',
+      explanation:
+        'The former object den Kuchen becomes the subject der Kuchen; gegessen is the irregular participle of essen.',
     },
     {
       id: 'ch62-ex-09',
@@ -446,7 +500,8 @@ export const chapter062: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['passive-voice', 'active-to-passive'],
-      instruction: 'Choose the correct passive version of the active sentence, without naming the agent.',
+      instruction:
+        'Choose the correct passive version of the active sentence, without naming the agent.',
       prompt: 'Aktiv: Der Techniker repariert den Computer. → Passiv (ohne Agens)?',
       options: [
         { id: 'a', text: 'Der Computer wird repariert.' },
@@ -455,7 +510,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'Der Computer wird von reparieren.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The object den Computer becomes the subject; -ieren verbs form their participle without ge-: repariert.',
+      explanation:
+        'The object den Computer becomes the subject; -ieren verbs form their participle without ge-: repariert.',
     },
     {
       id: 'ch62-ex-10',
@@ -473,7 +529,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'Die Getränke wird gebracht.' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Getränke is plural, so the passive verb must also be plural (werden, not wird); gebracht is the irregular participle of bringen.',
+      explanation:
+        'die Getränke is plural, so the passive verb must also be plural (werden, not wird); gebracht is the irregular participle of bringen.',
     },
     {
       id: 'ch62-ex-11',
@@ -491,7 +548,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'Der Bericht wird werden geschrieben.' },
       ],
       correctOptionId: 'a',
-      explanation: 'werden occupies position 2, and the past participle geschrieben goes to the very end of the clause — exactly like the modal-verb bracket.',
+      explanation:
+        'werden occupies position 2, and the past participle geschrieben goes to the very end of the clause — exactly like the modal-verb bracket.',
     },
     {
       id: 'ch62-ex-12',
@@ -500,7 +558,8 @@ export const chapter062: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['passive-voice', 'word-order', 'participle-placement'],
-      instruction: 'Choose the sentence that correctly places a time expression in position 1.',
+      instruction:
+        'Choose the sentence that correctly places a time expression in position 1.',
       prompt: 'Which sentence correctly places a time expression in position 1?',
       options: [
         { id: 'a', text: 'Am Freitag wird das neue Auto geliefert.' },
@@ -509,7 +568,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'Am Freitag das neue Auto geliefert wird.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Am Freitag fills position 1, wird stays in position 2, the subject das neue Auto follows, and geliefert stays at the very end of the clause.',
+      explanation:
+        'Am Freitag fills position 1, wird stays in position 2, the subject das neue Auto follows, and geliefert stays at the very end of the clause.',
     },
     {
       id: 'ch62-ex-13',
@@ -518,7 +578,8 @@ export const chapter062: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['passive-voice', 'word-order', 'participle-placement'],
-      instruction: 'Choose the correctly ordered passive sentence built from these cue words.',
+      instruction:
+        'Choose the correctly ordered passive sentence built from these cue words.',
       prompt: 'jeden Monat – die Fenster – werden – geputzt',
       options: [
         { id: 'a', text: 'Die Fenster werden jeden Monat geputzt.' },
@@ -527,7 +588,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'Werden die Fenster jeden Monat geputzt.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The subject die Fenster occupies position 1, werden stays in position 2, jeden Monat sits in the middle field, and geputzt closes the clause.',
+      explanation:
+        'The subject die Fenster occupies position 1, werden stays in position 2, jeden Monat sits in the middle field, and geputzt closes the clause.',
     },
     {
       id: 'ch62-ex-14',
@@ -545,7 +607,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'bei' },
       ],
       correctOptionId: 'a',
-      explanation: 'von + dative names a personal agent deliberately performing the action; durch marks an impersonal means or cause instead.',
+      explanation:
+        'von + dative names a personal agent deliberately performing the action; durch marks an impersonal means or cause instead.',
     },
     {
       id: 'ch62-ex-15',
@@ -563,7 +626,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'mit' },
       ],
       correctOptionId: 'a',
-      explanation: 'The wind is an impersonal cause, not a conscious agent, so durch + accusative is used, not von.',
+      explanation:
+        'The wind is an impersonal cause, not a conscious agent, so durch + accusative is used, not von.',
     },
     {
       id: 'ch62-ex-16',
@@ -573,18 +637,26 @@ export const chapter062: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['passive-voice', 'process-focus', 'agent-omission'],
       instruction: 'Choose the best explanation.',
-      prompt: 'Why does the sentence "Hier wird schon seit Jahren gebaut." have no subject naming what is being built?',
+      prompt:
+        'Why does the sentence "Hier wird schon seit Jahren gebaut." have no subject naming what is being built?',
       options: [
         {
           id: 'a',
           text: 'Because the passive voice is used exactly to shift focus onto the process itself; the agent and even a specific object can be left unspecified.',
         },
         { id: 'b', text: 'Because gebaut is not a real past participle.' },
-        { id: 'c', text: 'Because werden cannot be used without a direct object at all.' },
-        { id: 'd', text: 'Because this sentence is in the active voice, not the passive.' },
+        {
+          id: 'c',
+          text: 'Because werden cannot be used without a direct object at all.',
+        },
+        {
+          id: 'd',
+          text: 'Because this sentence is in the active voice, not the passive.',
+        },
       ],
       correctOptionId: 'a',
-      explanation: 'This is a classic agentless German passive: it reports only that construction is happening, without saying what specifically or by whom.',
+      explanation:
+        'This is a classic agentless German passive: it reports only that construction is happening, without saying what specifically or by whom.',
     },
     {
       id: 'ch62-ex-17',
@@ -596,13 +668,20 @@ export const chapter062: ChapterDefinition = {
       instruction: 'Identify what kind of passive this sentence expresses.',
       prompt: 'Which best describes what "Die Suppe wird gekocht." expresses?',
       options: [
-        { id: 'a', text: 'A process in progress (Vorgangspassiv): the soup is currently being cooked.' },
-        { id: 'b', text: 'A finished, resulting state: the soup is already cooked and ready.' },
+        {
+          id: 'a',
+          text: 'A process in progress (Vorgangspassiv): the soup is currently being cooked.',
+        },
+        {
+          id: 'b',
+          text: 'A finished, resulting state: the soup is already cooked and ready.',
+        },
         { id: 'c', text: 'A question about who is cooking the soup.' },
         { id: 'd', text: 'The simple past tense of kochen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'werden + participle always expresses a process happening now — the Vorgangspassiv — not a resulting state, which would use sein + participle instead.',
+      explanation:
+        'werden + participle always expresses a process happening now — the Vorgangspassiv — not a resulting state, which would use sein + participle instead.',
     },
     {
       id: 'ch62-ex-18',
@@ -611,7 +690,8 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['passive-voice', 'werden', 'auxiliary-conjugation'],
-      instruction: 'Write the present-tense werden-form for ich. Capitalisation is not checked.',
+      instruction:
+        'Write the present-tense werden-form for ich. Capitalisation is not checked.',
       prompt: 'ich → werden (Passiv-Hilfsverb)',
       acceptedAnswers: ['werde'],
       answerMode: 'caseInsensitive',
@@ -626,13 +706,15 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['passive-voice', 'werden', 'auxiliary-conjugation', 'du-form'],
-      instruction: 'Write the present-tense werden-form for du. Capitalisation is not checked.',
+      instruction:
+        'Write the present-tense werden-form for du. Capitalisation is not checked.',
       prompt: 'du → werden (Passiv-Hilfsverb)',
       acceptedAnswers: ['wirst'],
       answerMode: 'caseInsensitive',
       placeholder: 'wirst',
       maxLength: 15,
-      explanation: 'du takes the irregular stem-changed form wirst (e → i), never "werdest".',
+      explanation:
+        'du takes the irregular stem-changed form wirst (e → i), never "werdest".',
     },
     {
       id: 'ch62-ex-20',
@@ -641,13 +723,15 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['passive-voice', 'werden', 'auxiliary-conjugation', 'er-form'],
-      instruction: 'Write the present-tense werden-form for er/sie/es. Capitalisation is not checked.',
+      instruction:
+        'Write the present-tense werden-form for er/sie/es. Capitalisation is not checked.',
       prompt: 'er/sie/es → werden (Passiv-Hilfsverb)',
       acceptedAnswers: ['wird'],
       answerMode: 'caseInsensitive',
       placeholder: 'wird',
       maxLength: 15,
-      explanation: 'er/sie/es takes wird, the same e → i stem change as du, never "werdet".',
+      explanation:
+        'er/sie/es takes wird, the same e → i stem change as du, never "werdet".',
     },
     {
       id: 'ch62-ex-21',
@@ -656,7 +740,8 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['passive-voice', 'werden', 'auxiliary-conjugation', 'ihr-form'],
-      instruction: 'Write the present-tense werden-form for ihr. Capitalisation is not checked.',
+      instruction:
+        'Write the present-tense werden-form for ihr. Capitalisation is not checked.',
       prompt: 'ihr → werden (Passiv-Hilfsverb)',
       acceptedAnswers: ['werdet'],
       answerMode: 'caseInsensitive',
@@ -671,7 +756,8 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['passive-voice', 'participle', 'schreiben'],
-      instruction: 'Write the past participle of schreiben, used in the passive. Capitalisation is not checked.',
+      instruction:
+        'Write the past participle of schreiben, used in the passive. Capitalisation is not checked.',
       prompt: 'schreiben → Partizip II',
       acceptedAnswers: ['geschrieben'],
       answerMode: 'caseInsensitive',
@@ -686,7 +772,8 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['passive-voice', 'participle', 'finden'],
-      instruction: 'Write the past participle of finden, used in the passive. Capitalisation is not checked.',
+      instruction:
+        'Write the past participle of finden, used in the passive. Capitalisation is not checked.',
       prompt: 'finden → Partizip II',
       acceptedAnswers: ['gefunden'],
       answerMode: 'caseInsensitive',
@@ -701,13 +788,15 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['passive-voice', 'participle', 'reparieren'],
-      instruction: 'Write the past participle of reparieren, used in the passive. Capitalisation is not checked.',
+      instruction:
+        'Write the past participle of reparieren, used in the passive. Capitalisation is not checked.',
       prompt: 'reparieren → Partizip II',
       acceptedAnswers: ['repariert'],
       answerMode: 'caseInsensitive',
       placeholder: 'repariert',
       maxLength: 20,
-      explanation: '-ieren verbs form their participle without ge- and end in -t: repariert.',
+      explanation:
+        '-ieren verbs form their participle without ge- and end in -t: repariert.',
     },
     {
       id: 'ch62-ex-25',
@@ -716,13 +805,15 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['passive-voice', 'active-to-passive', 'transformation'],
-      instruction: 'Rewrite the active sentence as a present passive sentence, without naming the agent. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the active sentence as a present passive sentence, without naming the agent. Capitalisation and punctuation are checked.',
       prompt: 'Der Chef schreibt den Bericht. → Passiv (ohne Agens)',
       acceptedAnswers: ['Der Bericht wird geschrieben.', 'Der Bericht wird geschrieben'],
       answerMode: 'normalized',
       placeholder: 'Der Bericht wird geschrieben.',
       maxLength: 45,
-      explanation: 'den Bericht becomes the subject der Bericht; wird + geschrieben form the present passive.',
+      explanation:
+        'den Bericht becomes the subject der Bericht; wird + geschrieben form the present passive.',
     },
     {
       id: 'ch62-ex-26',
@@ -731,13 +822,15 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['passive-voice', 'active-to-passive', 'transformation'],
-      instruction: 'Rewrite the active sentence as a present passive sentence, without naming the agent. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the active sentence as a present passive sentence, without naming the agent. Capitalisation and punctuation are checked.',
       prompt: 'Die Firma baut das Haus. → Passiv (ohne Agens)',
       acceptedAnswers: ['Das Haus wird gebaut.', 'Das Haus wird gebaut'],
       answerMode: 'normalized',
       placeholder: 'Das Haus wird gebaut.',
       maxLength: 40,
-      explanation: 'das Haus becomes the subject; gebaut is the regular participle of bauen.',
+      explanation:
+        'das Haus becomes the subject; gebaut is the regular participle of bauen.',
     },
     {
       id: 'ch62-ex-27',
@@ -746,13 +839,15 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['passive-voice', 'active-to-passive', 'transformation'],
-      instruction: 'Rewrite the active sentence as a present passive sentence, without naming the agent. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the active sentence as a present passive sentence, without naming the agent. Capitalisation and punctuation are checked.',
       prompt: 'Die Kinder essen den Kuchen. → Passiv (ohne Agens)',
       acceptedAnswers: ['Der Kuchen wird gegessen.', 'Der Kuchen wird gegessen'],
       answerMode: 'normalized',
       placeholder: 'Der Kuchen wird gegessen.',
       maxLength: 45,
-      explanation: 'der Kuchen becomes the subject; gegessen is the irregular participle of essen.',
+      explanation:
+        'der Kuchen becomes the subject; gegessen is the irregular participle of essen.',
     },
     {
       id: 'ch62-ex-28',
@@ -761,13 +856,18 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['passive-voice', 'active-to-passive', 'agent-phrase', 'von'],
-      instruction: 'Rewrite the active sentence as a present passive sentence, naming the agent with von. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the active sentence as a present passive sentence, naming the agent with von. Capitalisation and punctuation are checked.',
       prompt: 'Mein Bruder repariert das Auto. → Passiv mit von',
-      acceptedAnswers: ['Das Auto wird von meinem Bruder repariert.', 'Das Auto wird von meinem Bruder repariert'],
+      acceptedAnswers: [
+        'Das Auto wird von meinem Bruder repariert.',
+        'Das Auto wird von meinem Bruder repariert',
+      ],
       answerMode: 'normalized',
       placeholder: 'Das Auto wird von meinem Bruder repariert.',
       maxLength: 55,
-      explanation: 'das Auto becomes the subject; von meinem Bruder (dative) names the personal agent; repariert is the -ieren-participle.',
+      explanation:
+        'das Auto becomes the subject; von meinem Bruder (dative) names the personal agent; repariert is the -ieren-participle.',
     },
     {
       id: 'ch62-ex-29',
@@ -776,13 +876,18 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['passive-voice', 'active-to-passive', 'agent-phrase', 'durch'],
-      instruction: 'Rewrite the active sentence as a present passive sentence, naming the cause with durch. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the active sentence as a present passive sentence, naming the cause with durch. Capitalisation and punctuation are checked.',
       prompt: 'Der Wind öffnet die Tür. → Passiv mit durch',
-      acceptedAnswers: ['Die Tür wird durch den Wind geöffnet.', 'Die Tür wird durch den Wind geöffnet'],
+      acceptedAnswers: [
+        'Die Tür wird durch den Wind geöffnet.',
+        'Die Tür wird durch den Wind geöffnet',
+      ],
       answerMode: 'normalized',
       placeholder: 'Die Tür wird durch den Wind geöffnet.',
       maxLength: 55,
-      explanation: 'die Tür becomes the subject; durch den Wind (accusative) names the impersonal cause; geöffnet takes a linking -e- because the stem öffn- ends in the consonant cluster ffn.',
+      explanation:
+        'die Tür becomes the subject; durch den Wind (accusative) names the impersonal cause; geöffnet takes a linking -e- because the stem öffn- ends in the consonant cluster ffn.',
     },
     {
       id: 'ch62-ex-30',
@@ -791,13 +896,15 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['passive-voice', 'von-durch', 'case', 'dative'],
-      instruction: 'Complete the agent phrase with the correct dative article. Capitalisation is not checked.',
+      instruction:
+        'Complete the agent phrase with the correct dative article. Capitalisation is not checked.',
       prompt: 'Der Bericht wird von ___ Chefin gelesen. (die Chefin)',
       acceptedAnswers: ['der'],
       answerMode: 'caseInsensitive',
       placeholder: 'der',
       maxLength: 10,
-      explanation: 'von takes the dative; the dative singular feminine article is der: von der Chefin.',
+      explanation:
+        'von takes the dative; the dative singular feminine article is der: von der Chefin.',
     },
     {
       id: 'ch62-ex-31',
@@ -806,13 +913,15 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['passive-voice', 'von-durch', 'case', 'accusative'],
-      instruction: 'Complete the agent phrase with the correct accusative article. Capitalisation is not checked.',
+      instruction:
+        'Complete the agent phrase with the correct accusative article. Capitalisation is not checked.',
       prompt: 'Der Fehler wird durch ___ Test gefunden. (der Test)',
       acceptedAnswers: ['den'],
       answerMode: 'caseInsensitive',
       placeholder: 'den',
       maxLength: 10,
-      explanation: 'durch takes the accusative; the accusative masculine article is den: durch den Test.',
+      explanation:
+        'durch takes the accusative; the accusative masculine article is den: durch den Test.',
     },
     {
       id: 'ch62-ex-32',
@@ -821,13 +930,15 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['passive-voice', 'sentence-building', 'word-order'],
-      instruction: 'Build a complete passive sentence from the cue words, putting the time expression first. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete passive sentence from the cue words, putting the time expression first. Capitalisation and punctuation are checked.',
       prompt: 'jeden Monat – die Fenster – werden – putzen (Partizip II)',
       acceptedAnswers: ['Jeden Monat werden die Fenster geputzt.'],
       answerMode: 'normalized',
       placeholder: 'Jeden Monat werden die Fenster geputzt.',
       maxLength: 55,
-      explanation: 'jeden Monat occupies position 1; werden (plural, agreeing with die Fenster) stays in position 2; die Fenster follows; geputzt, the participle of putzen, closes the clause.',
+      explanation:
+        'jeden Monat occupies position 1; werden (plural, agreeing with die Fenster) stays in position 2; die Fenster follows; geputzt, the participle of putzen, closes the clause.',
     },
     {
       id: 'ch62-ex-33',
@@ -836,13 +947,15 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['passive-voice', 'sentence-building', 'agent-omission'],
-      instruction: 'Build a complete passive sentence from the cue words. No agent is needed. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete passive sentence from the cue words. No agent is needed. Capitalisation and punctuation are checked.',
       prompt: 'hier – werden (Präsens) – schon seit Jahren – bauen (Partizip II)',
       acceptedAnswers: ['Hier wird schon seit Jahren gebaut.'],
       answerMode: 'normalized',
       placeholder: 'Hier wird schon seit Jahren gebaut.',
       maxLength: 55,
-      explanation: 'hier fills position 1, wird stays in position 2, and no subject or agent is needed at all — a classic fully agentless German passive.',
+      explanation:
+        'hier fills position 1, wird stays in position 2, and no subject or agent is needed at all — a classic fully agentless German passive.',
     },
     {
       id: 'ch62-ex-34',
@@ -858,7 +971,8 @@ export const chapter062: ChapterDefinition = {
         { id: 's2', text: 'wird' },
         { id: 's3', text: 'repariert.' },
       ],
-      explanation: 'Der Computer occupies position 1, wird stays in position 2, and repariert (an -ieren participle with no ge-) closes the clause.',
+      explanation:
+        'Der Computer occupies position 1, wird stays in position 2, and repariert (an -ieren participle with no ge-) closes the clause.',
     },
     {
       id: 'ch62-ex-35',
@@ -876,7 +990,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'Die Suppe kocht wird.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The accusative object die Suppe becomes the nominative subject; gekocht is the regular participle of kochen.',
+      explanation:
+        'The accusative object die Suppe becomes the nominative subject; gekocht is the regular participle of kochen.',
     },
     {
       id: 'ch62-ex-36',
@@ -894,7 +1009,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'Das Auto wurde verkaufen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'das Auto, formerly the accusative object, becomes the subject; verkauft is the regular participle of verkaufen.',
+      explanation:
+        'das Auto, formerly the accusative object, becomes the subject; verkauft is the regular participle of verkaufen.',
     },
     {
       id: 'ch62-ex-37',
@@ -912,7 +1028,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'mit' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Gastgeberin is a person deliberately writing the invitations, so the agent phrase needs von + dative, not durch.',
+      explanation:
+        'die Gastgeberin is a person deliberately writing the invitations, so the agent phrase needs von + dative, not durch.',
     },
     {
       id: 'ch62-ex-38',
@@ -930,7 +1047,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'mit' },
       ],
       correctOptionId: 'a',
-      explanation: 'der Sturm is an impersonal cause, not a conscious agent, so durch + accusative is used, not von.',
+      explanation:
+        'der Sturm is an impersonal cause, not a conscious agent, so durch + accusative is used, not von.',
     },
     {
       id: 'ch62-ex-39',
@@ -948,7 +1066,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'Das Geschäft schließt wird um 18 Uhr.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The indefinite active subject man simply disappears; das Geschäft becomes the subject, and geschlossen is the strong participle of schließen.',
+      explanation:
+        'The indefinite active subject man simply disappears; das Geschäft becomes the subject, and geschlossen is the strong participle of schließen.',
     },
     {
       id: 'ch62-ex-40',
@@ -966,7 +1085,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'Das Buch liest wird.' },
       ],
       correctOptionId: 'a',
-      explanation: 'das Buch, formerly the accusative object, becomes the subject; gelesen is the irregular participle of lesen.',
+      explanation:
+        'das Buch, formerly the accusative object, becomes the subject; gelesen is the irregular participle of lesen.',
     },
     {
       id: 'ch62-ex-41',
@@ -975,7 +1095,8 @@ export const chapter062: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['passive-voice', 'active-to-passive', 'einladen'],
-      instruction: 'Choose the correct passive version of the active sentence, without naming the agent.',
+      instruction:
+        'Choose the correct passive version of the active sentence, without naming the agent.',
       prompt: 'Aktiv: Wir laden die Gäste ein. → Passiv (ohne Agens)?',
       options: [
         { id: 'a', text: 'Die Gäste werden eingeladen.' },
@@ -984,7 +1105,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'Die Gäste eingeladen werden.' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Gäste (plural) becomes the subject, so the plural werden is used; eingeladen is the participle of the separable verb einladen.',
+      explanation:
+        'die Gäste (plural) becomes the subject, so the plural werden is used; eingeladen is the participle of the separable verb einladen.',
     },
     {
       id: 'ch62-ex-42',
@@ -993,7 +1115,8 @@ export const chapter062: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['passive-voice', 'werden', 'subject-verb-agreement'],
-      instruction: 'Choose the correct present-tense form of werden for the plural subject.',
+      instruction:
+        'Choose the correct present-tense form of werden for the plural subject.',
       prompt: 'Die Fenster ___ jeden Freitag geputzt.',
       options: [
         { id: 'a', text: 'werden' },
@@ -1002,7 +1125,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'wirst' },
       ],
       correctOptionId: 'a',
-      explanation: 'Die Fenster is plural, so the passive verb agrees in the plural: werden, not the singular wird.',
+      explanation:
+        'Die Fenster is plural, so the passive verb agrees in the plural: werden, not the singular wird.',
     },
     {
       id: 'ch62-ex-43',
@@ -1020,7 +1144,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'Die Fenster wird geputzt.' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Fenster is plural, so the verb must be werden, not wird; geputzt is the regular participle of putzen.',
+      explanation:
+        'die Fenster is plural, so the verb must be werden, not wird; geputzt is the regular participle of putzen.',
     },
     {
       id: 'ch62-ex-44',
@@ -1029,7 +1154,8 @@ export const chapter062: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['passive-voice', 'active-to-passive', 'agent-phrase', 'von'],
-      instruction: 'Choose the correct passive version of the active sentence, naming the agent with von.',
+      instruction:
+        'Choose the correct passive version of the active sentence, naming the agent with von.',
       prompt: 'Aktiv: Meine Oma kocht das Essen. → Passiv mit von?',
       options: [
         { id: 'a', text: 'Das Essen wird von meiner Oma gekocht.' },
@@ -1038,7 +1164,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'Das Essen wird meiner Oma gekocht.' },
       ],
       correctOptionId: 'a',
-      explanation: 'das Essen becomes the subject; von meiner Oma (dative) names the personal agent, which needs the preposition von, not a bare dative.',
+      explanation:
+        'das Essen becomes the subject; von meiner Oma (dative) names the personal agent, which needs the preposition von, not a bare dative.',
     },
     {
       id: 'ch62-ex-45',
@@ -1056,7 +1183,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'mit' },
       ],
       correctOptionId: 'a',
-      explanation: 'der Nachbar is a person, so the agent phrase takes von + dative (den Nachbarn), not durch, which is reserved for impersonal means or causes.',
+      explanation:
+        'der Nachbar is a person, so the agent phrase takes von + dative (den Nachbarn), not durch, which is reserved for impersonal means or causes.',
     },
     {
       id: 'ch62-ex-46',
@@ -1074,7 +1202,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'Die Filiale schließt wird.' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Filiale, formerly the accusative object, becomes the subject; geschlossen is the strong participle of schließen.',
+      explanation:
+        'die Filiale, formerly the accusative object, becomes the subject; geschlossen is the strong participle of schließen.',
     },
     {
       id: 'ch62-ex-47',
@@ -1083,7 +1212,8 @@ export const chapter062: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['passive-voice', 'word-order', 'agent-phrase'],
-      instruction: 'Choose the correctly ordered passive sentence built from these cue words.',
+      instruction:
+        'Choose the correctly ordered passive sentence built from these cue words.',
       prompt: 'von der Chefin – der Bericht – wird – gelesen',
       options: [
         { id: 'a', text: 'Der Bericht wird von der Chefin gelesen.' },
@@ -1092,7 +1222,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'd', text: 'Der Bericht wird gelesen von der Chefin.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Der Bericht occupies position 1, wird stays in position 2, the agent phrase von der Chefin sits in the middle field, and gelesen closes the clause.',
+      explanation:
+        'Der Bericht occupies position 1, wird stays in position 2, the agent phrase von der Chefin sits in the middle field, and gelesen closes the clause.',
     },
     {
       id: 'ch62-ex-48',
@@ -1101,7 +1232,8 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['passive-voice', 'participle', 'kochen'],
-      instruction: 'Write the past participle of kochen, used in the passive. Capitalisation is not checked.',
+      instruction:
+        'Write the past participle of kochen, used in the passive. Capitalisation is not checked.',
       prompt: 'kochen → Partizip II',
       acceptedAnswers: ['gekocht'],
       answerMode: 'caseInsensitive',
@@ -1116,7 +1248,8 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['passive-voice', 'participle', 'putzen'],
-      instruction: 'Write the past participle of putzen, used in the passive. Capitalisation is not checked.',
+      instruction:
+        'Write the past participle of putzen, used in the passive. Capitalisation is not checked.',
       prompt: 'putzen → Partizip II',
       acceptedAnswers: ['geputzt'],
       answerMode: 'caseInsensitive',
@@ -1131,7 +1264,8 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['passive-voice', 'participle', 'verkaufen'],
-      instruction: 'Write the past participle of verkaufen, used in the passive. Capitalisation is not checked.',
+      instruction:
+        'Write the past participle of verkaufen, used in the passive. Capitalisation is not checked.',
       prompt: 'verkaufen → Partizip II',
       acceptedAnswers: ['verkauft'],
       answerMode: 'caseInsensitive',
@@ -1146,7 +1280,8 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['passive-voice', 'participle', 'schließen'],
-      instruction: 'Write the past participle of schließen, used in the passive. Capitalisation is not checked.',
+      instruction:
+        'Write the past participle of schließen, used in the passive. Capitalisation is not checked.',
       prompt: 'schließen → Partizip II',
       acceptedAnswers: ['geschlossen'],
       answerMode: 'caseInsensitive',
@@ -1161,13 +1296,15 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['passive-voice', 'participle', 'einladen'],
-      instruction: 'Write the past participle of einladen, used in the passive. Capitalisation is not checked.',
+      instruction:
+        'Write the past participle of einladen, used in the passive. Capitalisation is not checked.',
       prompt: 'einladen → Partizip II',
       acceptedAnswers: ['eingeladen'],
       answerMode: 'caseInsensitive',
       placeholder: 'eingeladen',
       maxLength: 20,
-      explanation: 'einladen is a separable strong verb; its participle is eingeladen (ein- + geladen).',
+      explanation:
+        'einladen is a separable strong verb; its participle is eingeladen (ein- + geladen).',
     },
     {
       id: 'ch62-ex-53',
@@ -1176,13 +1313,15 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['passive-voice', 'participle', 'öffnen'],
-      instruction: 'Write the past participle of öffnen, used in the passive. Capitalisation is not checked.',
+      instruction:
+        'Write the past participle of öffnen, used in the passive. Capitalisation is not checked.',
       prompt: 'öffnen → Partizip II',
       acceptedAnswers: ['geöffnet'],
       answerMode: 'caseInsensitive',
       placeholder: 'geöffnet',
       maxLength: 20,
-      explanation: 'öffnen is a regular (weak) verb with a linking -e- before the -t ending: geöffnet.',
+      explanation:
+        'öffnen is a regular (weak) verb with a linking -e- before the -t ending: geöffnet.',
     },
     {
       id: 'ch62-ex-54',
@@ -1191,13 +1330,15 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['passive-voice', 'werden', 'auxiliary-conjugation', 'plural-form'],
-      instruction: 'Write the present-tense werden-form for sie (Pl.). Capitalisation is not checked.',
+      instruction:
+        'Write the present-tense werden-form for sie (Pl.). Capitalisation is not checked.',
       prompt: 'sie (Pl.) → werden (Passiv-Hilfsverb)',
       acceptedAnswers: ['werden'],
       answerMode: 'caseInsensitive',
       placeholder: 'werden',
       maxLength: 15,
-      explanation: 'sie (Pl.), like wir and Sie, takes werden, identical in form to the infinitive.',
+      explanation:
+        'sie (Pl.), like wir and Sie, takes werden, identical in form to the infinitive.',
     },
     {
       id: 'ch62-ex-55',
@@ -1206,13 +1347,15 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['passive-voice', 'active-to-passive', 'transformation', 'kochen'],
-      instruction: 'Rewrite the active sentence as a present passive sentence, without naming the agent. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the active sentence as a present passive sentence, without naming the agent. Capitalisation and punctuation are checked.',
       prompt: 'Die Köchin kocht die Suppe. → Passiv (ohne Agens)',
       acceptedAnswers: ['Die Suppe wird gekocht.', 'Die Suppe wird gekocht'],
       answerMode: 'normalized',
       placeholder: 'Die Suppe wird gekocht.',
       maxLength: 40,
-      explanation: 'die Suppe becomes the subject; gekocht is the regular participle of kochen.',
+      explanation:
+        'die Suppe becomes the subject; gekocht is the regular participle of kochen.',
     },
     {
       id: 'ch62-ex-56',
@@ -1220,14 +1363,25 @@ export const chapter062: ChapterDefinition = {
       order: 56,
       type: 'textInput',
       level: 'transfer',
-      grammarFocus: ['passive-voice', 'active-to-passive', 'agent-phrase', 'von', 'öffnen'],
-      instruction: 'Rewrite the active sentence as a present passive sentence, naming the agent with von. Capitalisation and punctuation are checked.',
+      grammarFocus: [
+        'passive-voice',
+        'active-to-passive',
+        'agent-phrase',
+        'von',
+        'öffnen',
+      ],
+      instruction:
+        'Rewrite the active sentence as a present passive sentence, naming the agent with von. Capitalisation and punctuation are checked.',
       prompt: 'Der Kellner öffnet die Flasche. → Passiv mit von',
-      acceptedAnswers: ['Die Flasche wird von dem Kellner geöffnet.', 'Die Flasche wird von dem Kellner geöffnet'],
+      acceptedAnswers: [
+        'Die Flasche wird von dem Kellner geöffnet.',
+        'Die Flasche wird von dem Kellner geöffnet',
+      ],
       answerMode: 'normalized',
       placeholder: 'Die Flasche wird von dem Kellner geöffnet.',
       maxLength: 55,
-      explanation: 'die Flasche becomes the subject; von dem Kellner (dative) names the personal agent; geöffnet takes a linking -e- after the stem öffn-.',
+      explanation:
+        'die Flasche becomes the subject; von dem Kellner (dative) names the personal agent; geöffnet takes a linking -e- after the stem öffn-.',
     },
     {
       id: 'ch62-ex-57',
@@ -1236,13 +1390,15 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['passive-voice', 'active-to-passive', 'transformation', 'verkaufen'],
-      instruction: 'Rewrite the active sentence as a present passive sentence, without naming the agent. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the active sentence as a present passive sentence, without naming the agent. Capitalisation and punctuation are checked.',
       prompt: 'Der Verkäufer verkauft das Auto. → Passiv (ohne Agens)',
       acceptedAnswers: ['Das Auto wird verkauft.', 'Das Auto wird verkauft'],
       answerMode: 'normalized',
       placeholder: 'Das Auto wird verkauft.',
       maxLength: 40,
-      explanation: 'das Auto becomes the subject; verkauft is the regular participle of verkaufen.',
+      explanation:
+        'das Auto becomes the subject; verkauft is the regular participle of verkaufen.',
     },
     {
       id: 'ch62-ex-58',
@@ -1250,14 +1406,25 @@ export const chapter062: ChapterDefinition = {
       order: 58,
       type: 'textInput',
       level: 'transfer',
-      grammarFocus: ['passive-voice', 'active-to-passive', 'agent-phrase', 'durch', 'finden'],
-      instruction: 'Rewrite the active sentence as a present passive sentence, naming the cause with durch. Capitalisation and punctuation are checked.',
+      grammarFocus: [
+        'passive-voice',
+        'active-to-passive',
+        'agent-phrase',
+        'durch',
+        'finden',
+      ],
+      instruction:
+        'Rewrite the active sentence as a present passive sentence, naming the cause with durch. Capitalisation and punctuation are checked.',
       prompt: 'Ein Test findet den Fehler. → Passiv mit durch',
-      acceptedAnswers: ['Der Fehler wird durch einen Test gefunden.', 'Der Fehler wird durch einen Test gefunden'],
+      acceptedAnswers: [
+        'Der Fehler wird durch einen Test gefunden.',
+        'Der Fehler wird durch einen Test gefunden',
+      ],
       answerMode: 'normalized',
       placeholder: 'Der Fehler wird durch einen Test gefunden.',
       maxLength: 55,
-      explanation: 'der Fehler becomes the subject; durch einen Test (accusative) names the impersonal means; gefunden is the irregular participle of finden.',
+      explanation:
+        'der Fehler becomes the subject; durch einen Test (accusative) names the impersonal means; gefunden is the irregular participle of finden.',
     },
     {
       id: 'ch62-ex-59',
@@ -1266,13 +1433,15 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['passive-voice', 'von-durch', 'case', 'dative'],
-      instruction: 'Complete the agent phrase with the correct dative article. Capitalisation is not checked.',
+      instruction:
+        'Complete the agent phrase with the correct dative article. Capitalisation is not checked.',
       prompt: 'Die Suppe wird von ___ Köchin gekocht. (die Köchin)',
       acceptedAnswers: ['der'],
       answerMode: 'caseInsensitive',
       placeholder: 'der',
       maxLength: 10,
-      explanation: 'von takes the dative; the dative singular feminine article is der: von der Köchin.',
+      explanation:
+        'von takes the dative; the dative singular feminine article is der: von der Köchin.',
     },
     {
       id: 'ch62-ex-60',
@@ -1281,13 +1450,15 @@ export const chapter062: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['passive-voice', 'von-durch', 'case', 'accusative'],
-      instruction: 'Complete the agent phrase with the correct accusative article. Capitalisation is not checked.',
+      instruction:
+        'Complete the agent phrase with the correct accusative article. Capitalisation is not checked.',
       prompt: 'Das Problem wird durch ___ Unfall verursacht. (der Unfall)',
       acceptedAnswers: ['den'],
       answerMode: 'caseInsensitive',
       placeholder: 'den',
       maxLength: 10,
-      explanation: 'durch takes the accusative; the accusative masculine article is den: durch den Unfall.',
+      explanation:
+        'durch takes the accusative; the accusative masculine article is den: durch den Unfall.',
     },
     {
       id: 'ch62-ex-61',
@@ -1296,7 +1467,8 @@ export const chapter062: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'transfer',
       grammarFocus: ['passive-voice', 'sentence-building', 'agent-phrase'],
-      instruction: 'Put the segments in the correct order to build a passive sentence with an agent.',
+      instruction:
+        'Put the segments in the correct order to build a passive sentence with an agent.',
       prompt: 'Das Auto / wird / von dem Mechaniker / repariert.',
       segments: [
         { id: 's1', text: 'Das Auto' },
@@ -1304,7 +1476,8 @@ export const chapter062: ChapterDefinition = {
         { id: 's3', text: 'von dem Mechaniker' },
         { id: 's4', text: 'repariert.' },
       ],
-      explanation: 'Das Auto occupies position 1, wird stays in position 2, the agent phrase von dem Mechaniker fills the middle field, and repariert closes the clause.',
+      explanation:
+        'Das Auto occupies position 1, wird stays in position 2, the agent phrase von dem Mechaniker fills the middle field, and repariert closes the clause.',
     },
     {
       id: 'ch62-ex-62',
@@ -1321,7 +1494,8 @@ export const chapter062: ChapterDefinition = {
         { id: 's3', text: 'heute' },
         { id: 's4', text: 'gekocht.' },
       ],
-      explanation: 'Die Suppe occupies position 1, wird stays in position 2, heute sits in the middle field, and gekocht closes the clause.',
+      explanation:
+        'Die Suppe occupies position 1, wird stays in position 2, heute sits in the middle field, and gekocht closes the clause.',
     },
     {
       id: 'ch62-ex-63',
@@ -1330,7 +1504,8 @@ export const chapter062: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'transfer',
       grammarFocus: ['passive-voice', 'sentence-building', 'agent-phrase', 'lesen'],
-      instruction: 'Put the segments in the correct order to build a passive sentence with an agent.',
+      instruction:
+        'Put the segments in the correct order to build a passive sentence with an agent.',
       prompt: 'Das Buch / wird / von dem Studenten / gelesen.',
       segments: [
         { id: 's1', text: 'Das Buch' },
@@ -1338,7 +1513,8 @@ export const chapter062: ChapterDefinition = {
         { id: 's3', text: 'von dem Studenten' },
         { id: 's4', text: 'gelesen.' },
       ],
-      explanation: 'Das Buch occupies position 1, wird stays in position 2, von dem Studenten fills the middle field, and gelesen closes the clause.',
+      explanation:
+        'Das Buch occupies position 1, wird stays in position 2, von dem Studenten fills the middle field, and gelesen closes the clause.',
     },
     {
       id: 'ch62-ex-64',
@@ -1346,7 +1522,12 @@ export const chapter062: ChapterDefinition = {
       order: 64,
       type: 'sentenceOrdering',
       level: 'controlled',
-      grammarFocus: ['passive-voice', 'sentence-building', 'subject-verb-agreement', 'putzen'],
+      grammarFocus: [
+        'passive-voice',
+        'sentence-building',
+        'subject-verb-agreement',
+        'putzen',
+      ],
       instruction: 'Put the segments in the correct order to build a passive sentence.',
       prompt: 'Die Fenster / werden / jeden Monat / geputzt.',
       segments: [
@@ -1355,7 +1536,8 @@ export const chapter062: ChapterDefinition = {
         { id: 's3', text: 'jeden Monat' },
         { id: 's4', text: 'geputzt.' },
       ],
-      explanation: 'Die Fenster (plural) occupies position 1, so the verb is werden, not wird; jeden Monat sits in the middle field, and geputzt closes the clause.',
+      explanation:
+        'Die Fenster (plural) occupies position 1, so the verb is werden, not wird; jeden Monat sits in the middle field, and geputzt closes the clause.',
     },
     {
       id: 'ch62-ex-65',
@@ -1372,7 +1554,8 @@ export const chapter062: ChapterDefinition = {
         { id: 's3', text: 'morgen' },
         { id: 's4', text: 'verkauft.' },
       ],
-      explanation: 'Das Auto occupies position 1, wird stays in position 2, morgen sits in the middle field, and verkauft closes the clause.',
+      explanation:
+        'Das Auto occupies position 1, wird stays in position 2, morgen sits in the middle field, and verkauft closes the clause.',
     },
     {
       id: 'ch62-ex-66',
@@ -1381,7 +1564,8 @@ export const chapter062: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'transfer',
       grammarFocus: ['passive-voice', 'sentence-building', 'von-durch', 'öffnen'],
-      instruction: 'Put the segments in the correct order to build a passive sentence with an impersonal cause.',
+      instruction:
+        'Put the segments in the correct order to build a passive sentence with an impersonal cause.',
       prompt: 'Die Tür / wird / durch den Wind / geöffnet.',
       segments: [
         { id: 's1', text: 'Die Tür' },
@@ -1389,7 +1573,8 @@ export const chapter062: ChapterDefinition = {
         { id: 's3', text: 'durch den Wind' },
         { id: 's4', text: 'geöffnet.' },
       ],
-      explanation: 'Die Tür occupies position 1, wird stays in position 2, durch den Wind (impersonal cause) fills the middle field, and geöffnet closes the clause.',
+      explanation:
+        'Die Tür occupies position 1, wird stays in position 2, durch den Wind (impersonal cause) fills the middle field, and geöffnet closes the clause.',
     },
     {
       id: 'ch62-ex-67',
@@ -1406,7 +1591,8 @@ export const chapter062: ChapterDefinition = {
         { id: 's3', text: 'um 18 Uhr' },
         { id: 's4', text: 'geschlossen.' },
       ],
-      explanation: 'Das Geschäft occupies position 1, wird stays in position 2, um 18 Uhr sits in the middle field, and geschlossen closes the clause.',
+      explanation:
+        'Das Geschäft occupies position 1, wird stays in position 2, um 18 Uhr sits in the middle field, and geschlossen closes the clause.',
     },
     {
       id: 'ch62-ex-68',
@@ -1415,7 +1601,8 @@ export const chapter062: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'transfer',
       grammarFocus: ['passive-voice', 'sentence-building', 'agent-phrase', 'einladen'],
-      instruction: 'Put the segments in the correct order to build a passive sentence with an agent.',
+      instruction:
+        'Put the segments in the correct order to build a passive sentence with an agent.',
       prompt: 'Die Gäste / werden / von der Gastgeberin / eingeladen.',
       segments: [
         { id: 's1', text: 'Die Gäste' },
@@ -1423,7 +1610,8 @@ export const chapter062: ChapterDefinition = {
         { id: 's3', text: 'von der Gastgeberin' },
         { id: 's4', text: 'eingeladen.' },
       ],
-      explanation: 'Die Gäste (plural) occupies position 1, so the verb is werden; von der Gastgeberin fills the middle field, and eingeladen closes the clause.',
+      explanation:
+        'Die Gäste (plural) occupies position 1, so the verb is werden; von der Gastgeberin fills the middle field, and eingeladen closes the clause.',
     },
     {
       id: 'ch62-ex-69',
@@ -1432,7 +1620,8 @@ export const chapter062: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'transfer',
       grammarFocus: ['passive-voice', 'sentence-building', 'agent-phrase', 'schreiben'],
-      instruction: 'Put the segments in the correct order to build a passive sentence with an agent.',
+      instruction:
+        'Put the segments in the correct order to build a passive sentence with an agent.',
       prompt: 'Der Bericht / wird / von der Chefin / geschrieben.',
       segments: [
         { id: 's1', text: 'Der Bericht' },
@@ -1440,7 +1629,8 @@ export const chapter062: ChapterDefinition = {
         { id: 's3', text: 'von der Chefin' },
         { id: 's4', text: 'geschrieben.' },
       ],
-      explanation: 'Der Bericht occupies position 1, wird stays in position 2, von der Chefin fills the middle field, and geschrieben closes the clause.',
+      explanation:
+        'Der Bericht occupies position 1, wird stays in position 2, von der Chefin fills the middle field, and geschrieben closes the clause.',
     },
     {
       id: 'ch62-ex-70',
@@ -1449,7 +1639,8 @@ export const chapter062: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'transfer',
       grammarFocus: ['passive-voice', 'sentence-building', 'agent-omission', 'bauen'],
-      instruction: 'Put the segments in the correct order to build a fully agentless passive sentence.',
+      instruction:
+        'Put the segments in the correct order to build a fully agentless passive sentence.',
       prompt: 'Hier / wird / schon seit Jahren / gebaut.',
       segments: [
         { id: 's1', text: 'Hier' },
@@ -1457,7 +1648,8 @@ export const chapter062: ChapterDefinition = {
         { id: 's3', text: 'schon seit Jahren' },
         { id: 's4', text: 'gebaut.' },
       ],
-      explanation: 'Hier fills position 1, wird stays in position 2, and the sentence names neither a subject nor an agent — a classic agentless passive.',
+      explanation:
+        'Hier fills position 1, wird stays in position 2, and the sentence names neither a subject nor an agent — a classic agentless passive.',
     },
     {
       id: 'ch62-ex-71',
@@ -1469,12 +1661,25 @@ export const chapter062: ChapterDefinition = {
       instruction: 'Match each active sentence to its correct passive equivalent.',
       prompt: 'Match active sentences to their passive equivalents.',
       pairs: [
-        { id: 'p1', left: 'Der Chef schreibt den Bericht.', right: 'Der Bericht wird geschrieben.' },
+        {
+          id: 'p1',
+          left: 'Der Chef schreibt den Bericht.',
+          right: 'Der Bericht wird geschrieben.',
+        },
         { id: 'p2', left: 'Die Firma baut das Haus.', right: 'Das Haus wird gebaut.' },
-        { id: 'p3', left: 'Die Kinder essen den Kuchen.', right: 'Der Kuchen wird gegessen.' },
-        { id: 'p4', left: 'Der Kellner bringt die Getränke.', right: 'Die Getränke werden gebracht.' },
+        {
+          id: 'p3',
+          left: 'Die Kinder essen den Kuchen.',
+          right: 'Der Kuchen wird gegessen.',
+        },
+        {
+          id: 'p4',
+          left: 'Der Kellner bringt die Getränke.',
+          right: 'Die Getränke werden gebracht.',
+        },
       ],
-      explanation: 'In each pair, the accusative object of the active sentence becomes the nominative subject of the passive sentence, and the verb agrees with it.',
+      explanation:
+        'In each pair, the accusative object of the active sentence becomes the nominative subject of the passive sentence, and the verb agrees with it.',
     },
     {
       id: 'ch62-ex-72',
@@ -1486,13 +1691,34 @@ export const chapter062: ChapterDefinition = {
       instruction: 'Match each active sentence to its correct passive equivalent.',
       prompt: 'Match active sentences to their passive equivalents.',
       pairs: [
-        { id: 'p1', left: 'Die Köchin kocht die Suppe.', right: 'Die Suppe wird gekocht.' },
-        { id: 'p2', left: 'Der Verkäufer verkauft das Auto.', right: 'Das Auto wird verkauft.' },
-        { id: 'p3', left: 'Die Putzfrau putzt die Fenster.', right: 'Die Fenster werden geputzt.' },
-        { id: 'p4', left: 'Der Kellner öffnet die Flasche.', right: 'Die Flasche wird geöffnet.' },
-        { id: 'p5', left: 'Die Firma schließt die Filiale.', right: 'Die Filiale wird geschlossen.' },
+        {
+          id: 'p1',
+          left: 'Die Köchin kocht die Suppe.',
+          right: 'Die Suppe wird gekocht.',
+        },
+        {
+          id: 'p2',
+          left: 'Der Verkäufer verkauft das Auto.',
+          right: 'Das Auto wird verkauft.',
+        },
+        {
+          id: 'p3',
+          left: 'Die Putzfrau putzt die Fenster.',
+          right: 'Die Fenster werden geputzt.',
+        },
+        {
+          id: 'p4',
+          left: 'Der Kellner öffnet die Flasche.',
+          right: 'Die Flasche wird geöffnet.',
+        },
+        {
+          id: 'p5',
+          left: 'Die Firma schließt die Filiale.',
+          right: 'Die Filiale wird geschlossen.',
+        },
       ],
-      explanation: 'Each passive sentence promotes the active object to subject; note the plural agreement in werden geputzt for die Fenster.',
+      explanation:
+        'Each passive sentence promotes the active object to subject; note the plural agreement in werden geputzt for die Fenster.',
     },
     {
       id: 'ch62-ex-73',
@@ -1502,7 +1728,8 @@ export const chapter062: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['passive-voice', 'von-durch', 'case'],
       instruction: 'Match each base agent phrase to its correctly inflected form.',
-      prompt: 'Match the base agent phrase to its correctly inflected passive agent phrase.',
+      prompt:
+        'Match the base agent phrase to its correctly inflected passive agent phrase.',
       pairs: [
         { id: 'p1', left: 'von + die Chefin', right: 'von der Chefin' },
         { id: 'p2', left: 'von + der Arzt', right: 'von dem Arzt' },
@@ -1510,7 +1737,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'p4', left: 'durch + das Feuer', right: 'durch das Feuer' },
         { id: 'p5', left: 'von + die Studenten (Pl.)', right: 'von den Studenten' },
       ],
-      explanation: 'von always takes the dative (der Chefin, dem Arzt, den Studenten); durch always takes the accusative (den Sturm, das Feuer).',
+      explanation:
+        'von always takes the dative (der Chefin, dem Arzt, den Studenten); durch always takes the accusative (den Sturm, das Feuer).',
     },
     {
       id: 'ch62-ex-74',
@@ -1529,7 +1757,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'p5', left: 'schließen', right: 'geschlossen' },
         { id: 'p6', left: 'einladen', right: 'eingeladen' },
       ],
-      explanation: 'kochen, putzen, verkaufen and öffnen are regular (weak) verbs; schließen and einladen have irregular (strong) participles.',
+      explanation:
+        'kochen, putzen, verkaufen and öffnen are regular (weak) verbs; schließen and einladen have irregular (strong) participles.',
     },
     {
       id: 'ch62-ex-75',
@@ -1538,15 +1767,25 @@ export const chapter062: ChapterDefinition = {
       type: 'matching',
       level: 'transfer',
       grammarFocus: ['passive-voice', 'translation'],
-      instruction: 'Match each English sentence to its correct German passive translation.',
+      instruction:
+        'Match each English sentence to its correct German passive translation.',
       prompt: 'Match the English sentence to its German passive equivalent.',
       pairs: [
-        { id: 'p1', left: 'The car is being repaired.', right: 'Das Auto wird repariert.' },
+        {
+          id: 'p1',
+          left: 'The car is being repaired.',
+          right: 'Das Auto wird repariert.',
+        },
         { id: 'p2', left: 'The soup is being cooked.', right: 'Die Suppe wird gekocht.' },
-        { id: 'p3', left: 'The windows are being cleaned.', right: 'Die Fenster werden geputzt.' },
+        {
+          id: 'p3',
+          left: 'The windows are being cleaned.',
+          right: 'Die Fenster werden geputzt.',
+        },
         { id: 'p4', left: 'The book is being read.', right: 'Das Buch wird gelesen.' },
       ],
-      explanation: 'Each German sentence uses werden (agreeing with the subject) plus the clause-final past participle to express an ongoing process.',
+      explanation:
+        'Each German sentence uses werden (agreeing with the subject) plus the clause-final past participle to express an ongoing process.',
     },
     {
       id: 'ch62-ex-76',
@@ -1555,15 +1794,34 @@ export const chapter062: ChapterDefinition = {
       type: 'matching',
       level: 'transfer',
       grammarFocus: ['passive-voice', 'active-to-passive', 'agent-phrase', 'von-durch'],
-      instruction: 'Match each active sentence with an agent to its correct passive equivalent.',
-      prompt: 'Match active sentences to their passive equivalents with the correct agent phrase.',
+      instruction:
+        'Match each active sentence with an agent to its correct passive equivalent.',
+      prompt:
+        'Match active sentences to their passive equivalents with the correct agent phrase.',
       pairs: [
-        { id: 'p1', left: 'Mein Bruder repariert das Auto.', right: 'Das Auto wird von meinem Bruder repariert.' },
-        { id: 'p2', left: 'Der Wind öffnet die Tür.', right: 'Die Tür wird durch den Wind geöffnet.' },
-        { id: 'p3', left: 'Ein Test findet den Fehler.', right: 'Der Fehler wird durch einen Test gefunden.' },
-        { id: 'p4', left: 'Die Nachbarin ruft den Krankenwagen.', right: 'Der Krankenwagen wird von der Nachbarin gerufen.' },
+        {
+          id: 'p1',
+          left: 'Mein Bruder repariert das Auto.',
+          right: 'Das Auto wird von meinem Bruder repariert.',
+        },
+        {
+          id: 'p2',
+          left: 'Der Wind öffnet die Tür.',
+          right: 'Die Tür wird durch den Wind geöffnet.',
+        },
+        {
+          id: 'p3',
+          left: 'Ein Test findet den Fehler.',
+          right: 'Der Fehler wird durch einen Test gefunden.',
+        },
+        {
+          id: 'p4',
+          left: 'Die Nachbarin ruft den Krankenwagen.',
+          right: 'Der Krankenwagen wird von der Nachbarin gerufen.',
+        },
       ],
-      explanation: 'Personal agents (mein Bruder, die Nachbarin) take von + dative; impersonal causes (der Wind, ein Test) take durch + accusative.',
+      explanation:
+        'Personal agents (mein Bruder, die Nachbarin) take von + dative; impersonal causes (der Wind, ein Test) take durch + accusative.',
     },
     {
       id: 'ch62-ex-77',
@@ -1577,7 +1835,8 @@ export const chapter062: ChapterDefinition = {
       templateParts: ['Das Auto ', ' repariert.'],
       slots: [{ id: 'slot1', correctWord: 'wird' }],
       wordBank: ['wird', 'werden', 'wirst', 'werdet'],
-      explanation: 'Das Auto is singular (er/sie/es), so the correct present-tense form of werden is wird.',
+      explanation:
+        'Das Auto is singular (er/sie/es), so the correct present-tense form of werden is wird.',
     },
     {
       id: 'ch62-ex-78',
@@ -1591,7 +1850,8 @@ export const chapter062: ChapterDefinition = {
       templateParts: ['Die Suppe wird ', '.'],
       slots: [{ id: 'slot1', correctWord: 'gekocht' }],
       wordBank: ['gekocht', 'gegessen', 'gebaut', 'geputzt'],
-      explanation: 'gekocht is the regular past participle of kochen, matching the subject die Suppe.',
+      explanation:
+        'gekocht is the regular past participle of kochen, matching the subject die Suppe.',
     },
     {
       id: 'ch62-ex-79',
@@ -1599,7 +1859,13 @@ export const chapter062: ChapterDefinition = {
       order: 79,
       type: 'dragToSlots',
       level: 'transfer',
-      grammarFocus: ['passive-voice', 'werden', 'participle', 'subject-verb-agreement', 'putzen'],
+      grammarFocus: [
+        'passive-voice',
+        'werden',
+        'participle',
+        'subject-verb-agreement',
+        'putzen',
+      ],
       instruction: 'Drag the correct werden-form and past participle into the slots.',
       prompt: 'Die Fenster ___ jeden Monat ___.',
       templateParts: ['Die Fenster ', ' jeden Monat ', '.'],
@@ -1608,7 +1874,8 @@ export const chapter062: ChapterDefinition = {
         { id: 'slot2', correctWord: 'geputzt' },
       ],
       wordBank: ['werden', 'wird', 'geputzt', 'gebaut'],
-      explanation: 'Die Fenster is plural, so the auxiliary is werden, not wird; geputzt is the participle of putzen closing the clause.',
+      explanation:
+        'Die Fenster is plural, so the auxiliary is werden, not wird; geputzt is the participle of putzen closing the clause.',
     },
     {
       id: 'ch62-ex-80',
@@ -1622,7 +1889,8 @@ export const chapter062: ChapterDefinition = {
       templateParts: ['Das Auto wird ', ' meinem Bruder repariert.'],
       slots: [{ id: 'slot1', correctWord: 'von' }],
       wordBank: ['von', 'durch', 'bei', 'mit'],
-      explanation: 'mein Bruder is a personal agent deliberately performing the action, so von + dative is required, not durch.',
+      explanation:
+        'mein Bruder is a personal agent deliberately performing the action, so von + dative is required, not durch.',
     },
     {
       id: 'ch62-ex-81',
@@ -1636,7 +1904,8 @@ export const chapter062: ChapterDefinition = {
       templateParts: ['Die Tür wird ', ' den Wind geöffnet.'],
       slots: [{ id: 'slot1', correctWord: 'durch' }],
       wordBank: ['durch', 'von', 'bei', 'mit'],
-      explanation: 'der Wind is an impersonal cause, not a conscious agent, so durch + accusative is required, not von.',
+      explanation:
+        'der Wind is an impersonal cause, not a conscious agent, so durch + accusative is required, not von.',
     },
     {
       id: 'ch62-ex-82',
@@ -1650,7 +1919,8 @@ export const chapter062: ChapterDefinition = {
       tokens: ['Das', 'Auto', 'ist', 'repariert.'],
       errorTokenIndex: 2,
       correction: 'wird',
-      explanation: 'The Vorgangspassiv (a process in progress) is built with werden, not sein; "ist repariert" describes a resulting state instead, which is a different construction not covered here.',
+      explanation:
+        'The Vorgangspassiv (a process in progress) is built with werden, not sein; "ist repariert" describes a resulting state instead, which is a different construction not covered here.',
     },
     {
       id: 'ch62-ex-83',
@@ -1664,7 +1934,8 @@ export const chapter062: ChapterDefinition = {
       tokens: ['Der', 'Bericht', 'wird', 'von', 'der', 'Chefin', 'geschreibt.'],
       errorTokenIndex: 6,
       correction: 'geschrieben.',
-      explanation: 'schreiben is a strong verb; its past participle is the irregular geschrieben, not a regular form built with -t alone.',
+      explanation:
+        'schreiben is a strong verb; its past participle is the irregular geschrieben, not a regular form built with -t alone.',
     },
     {
       id: 'ch62-ex-84',
@@ -1678,7 +1949,8 @@ export const chapter062: ChapterDefinition = {
       tokens: ['Das', 'Auto', 'wird', 'durch', 'meinem', 'Bruder', 'repariert.'],
       errorTokenIndex: 3,
       correction: 'von',
-      explanation: 'A personal agent deliberately performing the action takes von + dative, not durch, which is reserved for impersonal means or causes.',
+      explanation:
+        'A personal agent deliberately performing the action takes von + dative, not durch, which is reserved for impersonal means or causes.',
     },
     {
       id: 'ch62-ex-85',
@@ -1692,7 +1964,8 @@ export const chapter062: ChapterDefinition = {
       tokens: ['Den', 'Bericht', 'wird', 'geschrieben.'],
       errorTokenIndex: 0,
       correction: 'Der',
-      explanation: 'The former accusative object must become the nominative subject in the passive sentence: Der Bericht, not Den Bericht.',
+      explanation:
+        'The former accusative object must become the nominative subject in the passive sentence: Der Bericht, not Den Bericht.',
     },
     {
       id: 'ch62-ex-86',
@@ -1700,13 +1973,19 @@ export const chapter062: ChapterDefinition = {
       order: 86,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['passive-voice', 'subject-verb-agreement', 'common-mistakes', 'putzen'],
+      grammarFocus: [
+        'passive-voice',
+        'subject-verb-agreement',
+        'common-mistakes',
+        'putzen',
+      ],
       instruction: 'Find the incorrect word and give its correction.',
       prompt: 'Die Fenster wird geputzt.',
       tokens: ['Die', 'Fenster', 'wird', 'geputzt.'],
       errorTokenIndex: 2,
       correction: 'werden',
-      explanation: 'Die Fenster is plural, so the passive verb must be the plural werden, not the singular wird.',
+      explanation:
+        'Die Fenster is plural, so the passive verb must be the plural werden, not the singular wird.',
     },
   ],
 };

@@ -94,7 +94,11 @@ export const chapter015: ChapterDefinition = {
         rows: [
           ['der / die / das', 'specific, already known, unique', 'Der Lehrer kommt.'],
           ['ein / eine', 'new, one of several, non-specific', 'Ein Lehrer kommt.'],
-          ['no article', 'profession, material, general statement, non-specific plural', 'Er ist Lehrer. / Sie trinkt Tee. / Lehrer kommen.'],
+          [
+            'no article',
+            'profession, material, general statement, non-specific plural',
+            'Er ist Lehrer. / Sie trinkt Tee. / Lehrer kommen.',
+          ],
         ],
       },
     ],
@@ -103,13 +107,15 @@ export const chapter015: ChapterDefinition = {
         german: 'Ich sehe einen Hund. Der Hund ist braun.',
         english: 'I see a dog. The dog is brown.',
         highlight: ['einen Hund', 'Der Hund'],
-        explanation: 'The first mention is new (einen), the second refers back to the now-known dog (Der).',
+        explanation:
+          'The first mention is new (einen), the second refers back to the now-known dog (Der).',
       },
       {
         german: 'Das ist ein Buch. Das Buch gehört meiner Schwester.',
         english: 'That is a book. The book belongs to my sister.',
         highlight: ['ein Buch', 'Das Buch'],
-        explanation: 'ein introduces the book; das refers to that same, already-mentioned book.',
+        explanation:
+          'ein introduces the book; das refers to that same, already-mentioned book.',
       },
       {
         german: 'Die Sonne scheint heute.',
@@ -121,43 +127,50 @@ export const chapter015: ChapterDefinition = {
         german: 'Kannst du mir eine Gabel geben?',
         english: 'Can you give me a fork?',
         highlight: ['eine Gabel'],
-        explanation: 'Any fork will do — a non-specific request, so the indefinite article is used.',
+        explanation:
+          'Any fork will do — a non-specific request, so the indefinite article is used.',
       },
       {
         german: 'Herr Bauer ist Ingenieur.',
         english: 'Mr. Bauer is an engineer.',
         highlight: ['ist Ingenieur'],
-        explanation: 'German drops the article before a profession after sein, unlike English "an engineer".',
+        explanation:
+          'German drops the article before a profession after sein, unlike English "an engineer".',
       },
       {
         german: 'Wir trinken gern Tee am Abend.',
         english: 'We like to drink tea in the evening.',
         highlight: ['Tee'],
-        explanation: 'Tee is a general, uncountable substance here, so no article is used.',
+        explanation:
+          'Tee is a general, uncountable substance here, so no article is used.',
       },
       {
         german: 'Kinder brauchen viel Schlaf.',
         english: 'Children need a lot of sleep.',
         highlight: ['Kinder'],
-        explanation: 'Kinder is a non-specific plural (children in general), so it takes no article.',
+        explanation:
+          'Kinder is a non-specific plural (children in general), so it takes no article.',
       },
       {
         german: 'Die Kinder aus meiner Klasse spielen im Park.',
         english: 'The children from my class are playing in the park.',
         highlight: ['Die Kinder'],
-        explanation: 'These are specific, known children, so the plural definite article die is used.',
+        explanation:
+          'These are specific, known children, so the plural definite article die is used.',
       },
       {
         german: 'Das Auto ist aus Metall.',
         english: 'The car is made of metal.',
         highlight: ['aus Metall'],
-        explanation: 'Metall names a material in general, so it appears without an article.',
+        explanation:
+          'Metall names a material in general, so it appears without an article.',
       },
       {
         german: 'Ich habe eine Katze und einen Hund.',
         english: 'I have a cat and a dog.',
         highlight: ['eine Katze', 'einen Hund'],
-        explanation: 'Both pets are mentioned for the first time, so both take the indefinite article.',
+        explanation:
+          'Both pets are mentioned for the first time, so both take the indefinite article.',
       },
     ],
     commonMistakes: [
@@ -282,7 +295,8 @@ export const chapter015: ChapterDefinition = {
         { id: 'd', text: 'die' },
       ],
       correctOptionId: 'a',
-      explanation: 'Bruder is masculine, so the indefinite article in the nominative is ein.',
+      explanation:
+        'Bruder is masculine, so the indefinite article in the nominative is ein.',
     },
     {
       id: 'ch15-ex-05',
@@ -480,7 +494,8 @@ export const chapter015: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['definite-article', 'noun-gender'],
-      instruction: 'Write the missing definite article (der, die, or das). Capitalisation is not checked.',
+      instruction:
+        'Write the missing definite article (der, die, or das). Capitalisation is not checked.',
       prompt: '___ Tisch steht neben dem Fenster.',
       acceptedAnswers: ['der'],
       answerMode: 'caseInsensitive',
@@ -495,7 +510,8 @@ export const chapter015: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['definite-article', 'noun-gender'],
-      instruction: 'Write the missing definite article (der, die, or das). Capitalisation is not checked.',
+      instruction:
+        'Write the missing definite article (der, die, or das). Capitalisation is not checked.',
       prompt: '___ Tasche ist neu.',
       acceptedAnswers: ['die'],
       answerMode: 'caseInsensitive',
@@ -510,7 +526,8 @@ export const chapter015: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['indefinite-article', 'noun-gender'],
-      instruction: 'Write the missing indefinite article (ein or eine). Capitalisation is not checked.',
+      instruction:
+        'Write the missing indefinite article (ein or eine). Capitalisation is not checked.',
       prompt: 'Er kauft ___ Zeitung.',
       acceptedAnswers: ['eine'],
       answerMode: 'caseInsensitive',
@@ -525,7 +542,8 @@ export const chapter015: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['indefinite-article', 'noun-gender'],
-      instruction: 'Write the missing indefinite article (ein or eine). Capitalisation is not checked.',
+      instruction:
+        'Write the missing indefinite article (ein or eine). Capitalisation is not checked.',
       prompt: 'Wir brauchen ___ Stuhl.',
       acceptedAnswers: ['einen'],
       answerMode: 'caseInsensitive',
@@ -541,7 +559,8 @@ export const chapter015: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['zero-article', 'professions'],
-      instruction: 'Write only the missing word, or write "-" if no article is needed. Capitalisation is not checked.',
+      instruction:
+        'Write only the missing word, or write "-" if no article is needed. Capitalisation is not checked.',
       prompt: 'Mein Vater ist ___ Ingenieur.',
       acceptedAnswers: ['-'],
       answerMode: 'caseInsensitive',
@@ -557,7 +576,8 @@ export const chapter015: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['zero-article', 'materials'],
-      instruction: 'Write only the missing word, or write "-" if no article is needed. Capitalisation is not checked.',
+      instruction:
+        'Write only the missing word, or write "-" if no article is needed. Capitalisation is not checked.',
       prompt: 'Der Ring ist aus ___ Gold.',
       acceptedAnswers: ['-'],
       answerMode: 'caseInsensitive',
@@ -573,7 +593,8 @@ export const chapter015: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['plural', 'zero-article'],
-      instruction: 'Write only the missing word, or write "-" if no article is needed. Capitalisation is not checked.',
+      instruction:
+        'Write only the missing word, or write "-" if no article is needed. Capitalisation is not checked.',
       prompt: 'Auf dem Markt verkaufen sie ___ Äpfel.',
       acceptedAnswers: ['-'],
       answerMode: 'caseInsensitive',
@@ -704,7 +725,10 @@ export const chapter015: ChapterDefinition = {
       instruction:
         'Write a complete sentence using the cue words. Capitalisation and the full stop are checked, but a missing full stop is forgiven.',
       prompt: 'meine Tante – sein – Krankenschwester',
-      acceptedAnswers: ['Meine Tante ist Krankenschwester.', 'Meine Tante ist Krankenschwester'],
+      acceptedAnswers: [
+        'Meine Tante ist Krankenschwester.',
+        'Meine Tante ist Krankenschwester',
+      ],
       answerMode: 'normalized',
       placeholder: 'Meine Tante ist ...',
       maxLength: 45,
@@ -861,7 +885,8 @@ export const chapter015: ChapterDefinition = {
           english: "I've already reserved a table.",
         },
       ],
-      prompt: 'A: Welches Restaurant meinst du? B: ___ Restaurant, das wir letztes Mal ausprobiert haben.',
+      prompt:
+        'A: Welches Restaurant meinst du? B: ___ Restaurant, das wir letztes Mal ausprobiert haben.',
       options: [
         { id: 'a', text: 'Ein' },
         { id: 'b', text: 'Das' },
@@ -898,7 +923,8 @@ export const chapter015: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['definite-article', 'noun-gender'],
-      instruction: 'Write the missing definite article (der, die, or das). Capitalisation is not checked.',
+      instruction:
+        'Write the missing definite article (der, die, or das). Capitalisation is not checked.',
       prompt: '___ Stuhl steht am Fenster.',
       acceptedAnswers: ['der'],
       answerMode: 'caseInsensitive',
@@ -913,7 +939,8 @@ export const chapter015: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['definite-article', 'noun-gender'],
-      instruction: 'Write the missing definite article (der, die, or das). Capitalisation is not checked.',
+      instruction:
+        'Write the missing definite article (der, die, or das). Capitalisation is not checked.',
       prompt: '___ Tür ist offen.',
       acceptedAnswers: ['die'],
       answerMode: 'caseInsensitive',
@@ -928,7 +955,8 @@ export const chapter015: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['indefinite-article', 'noun-gender'],
-      instruction: 'Write the missing indefinite article (ein or eine). Capitalisation is not checked.',
+      instruction:
+        'Write the missing indefinite article (ein or eine). Capitalisation is not checked.',
       prompt: 'Ich brauche ___ Heft.',
       acceptedAnswers: ['ein'],
       answerMode: 'caseInsensitive',
@@ -943,13 +971,15 @@ export const chapter015: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['indefinite-article', 'noun-gender'],
-      instruction: 'Write the missing indefinite article (ein or eine). Capitalisation is not checked.',
+      instruction:
+        'Write the missing indefinite article (ein or eine). Capitalisation is not checked.',
       prompt: 'Er sieht ___ Frau.',
       acceptedAnswers: ['eine'],
       answerMode: 'caseInsensitive',
       placeholder: 'ein / eine',
       maxLength: 10,
-      explanation: 'Frau is feminine, so the indefinite article is eine (feminine ein does not change in the accusative).',
+      explanation:
+        'Frau is feminine, so the indefinite article is eine (feminine ein does not change in the accusative).',
     },
     {
       id: 'ch15-ex-42',
@@ -958,7 +988,8 @@ export const chapter015: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['zero-article', 'professions'],
-      instruction: 'Write only the missing word, or write "-" if no article is needed. Capitalisation is not checked.',
+      instruction:
+        'Write only the missing word, or write "-" if no article is needed. Capitalisation is not checked.',
       prompt: 'Meine Schwester ist ___ Krankenpflegerin.',
       acceptedAnswers: ['-'],
       answerMode: 'caseInsensitive',
@@ -974,7 +1005,8 @@ export const chapter015: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['zero-article', 'materials'],
-      instruction: 'Write only the missing word, or write "-" if no article is needed. Capitalisation is not checked.',
+      instruction:
+        'Write only the missing word, or write "-" if no article is needed. Capitalisation is not checked.',
       prompt: 'Die Kette ist aus ___ Silber.',
       acceptedAnswers: ['-'],
       answerMode: 'caseInsensitive',
@@ -990,7 +1022,8 @@ export const chapter015: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['plural', 'zero-article'],
-      instruction: 'Write only the missing word, or write "-" if no article is needed. Capitalisation is not checked.',
+      instruction:
+        'Write only the missing word, or write "-" if no article is needed. Capitalisation is not checked.',
       prompt: 'Im Wald wachsen ___ Bäume.',
       acceptedAnswers: ['-'],
       answerMode: 'caseInsensitive',
@@ -1072,7 +1105,8 @@ export const chapter015: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['zero-article', 'professions'],
-      instruction: 'Drag the correct word into the slot. Use "–" if no article is needed.',
+      instruction:
+        'Drag the correct word into the slot. Use "–" if no article is needed.',
       hint: 'A profession named after sein takes no article.',
       prompt: 'Vervollständige den Satz: "Mein Vater ist ___ Pilot."',
       templateParts: ['Mein Vater ist ', ' Pilot.'],
@@ -1088,7 +1122,8 @@ export const chapter015: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['zero-article', 'materials'],
-      instruction: 'Drag the correct word into the slot. Use "–" if no article is needed.',
+      instruction:
+        'Drag the correct word into the slot. Use "–" if no article is needed.',
       prompt: 'Vervollständige den Satz: "Die Brücke ist aus ___ Stein."',
       templateParts: ['Die Brücke ist aus ', ' Stein.'],
       slots: [{ id: 'ch15-ex50-slot1', correctWord: '–' }],
@@ -1102,7 +1137,8 @@ export const chapter015: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['plural', 'zero-article'],
-      instruction: 'Drag the correct word into the slot. Use "–" if no article is needed.',
+      instruction:
+        'Drag the correct word into the slot. Use "–" if no article is needed.',
       prompt: 'Vervollständige den Satz: "Im Garten blühen ___ Blumen."',
       templateParts: ['Im Garten blühen ', ' Blumen.'],
       slots: [{ id: 'ch15-ex51-slot1', correctWord: '–' }],
@@ -1137,7 +1173,8 @@ export const chapter015: ChapterDefinition = {
       templateParts: ['', ' Sonne scheint.'],
       slots: [{ id: 'ch15-ex53-slot1', correctWord: 'Die' }],
       wordBank: ['Die', 'Der', 'Das', 'Eine'],
-      explanation: 'There is only one sun, so it takes the definite article die (Sonne is feminine).',
+      explanation:
+        'There is only one sun, so it takes the definite article die (Sonne is feminine).',
     },
     {
       id: 'ch15-ex-54',
@@ -1161,12 +1198,14 @@ export const chapter015: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['zero-article', 'professions'],
-      instruction: 'Drag the correct word into the slot. Use "–" if no article is needed.',
+      instruction:
+        'Drag the correct word into the slot. Use "–" if no article is needed.',
       prompt: 'Vervollständige den Satz: "Meine Tante wird ___ Ärztin."',
       templateParts: ['Meine Tante wird ', ' Ärztin.'],
       slots: [{ id: 'ch15-ex55-slot1', correctWord: '–' }],
       wordBank: ['–', 'eine', 'die', 'einer'],
-      explanation: 'German drops the article before a profession after werden, so no article is used here.',
+      explanation:
+        'German drops the article before a profession after werden, so no article is used here.',
     },
     {
       id: 'ch15-ex-56',
@@ -1177,7 +1216,8 @@ export const chapter015: ChapterDefinition = {
       grammarFocus: ['plural', 'definite-article'],
       instruction: 'Drag the correct word into the slot.',
       hint: 'These are the children from next door — already known.',
-      prompt: 'Vervollständige den Satz: "___ Kinder aus der Nachbarschaft spielen im Hof."',
+      prompt:
+        'Vervollständige den Satz: "___ Kinder aus der Nachbarschaft spielen im Hof."',
       templateParts: ['', ' Kinder aus der Nachbarschaft spielen im Hof.'],
       slots: [{ id: 'ch15-ex56-slot1', correctWord: 'Die' }],
       wordBank: ['Die', 'Ein', '–', 'Der'],
@@ -1275,10 +1315,14 @@ export const chapter015: ChapterDefinition = {
         { id: 'ch15-ex60-p2', left: 'Arzt', right: 'Er ist Arzt.' },
         { id: 'ch15-ex60-p3', left: 'Ingenieurin', right: 'Sie ist Ingenieurin.' },
         { id: 'ch15-ex60-p4', left: 'Student', right: 'Er ist Student.' },
-        { id: 'ch15-ex60-p5', left: 'Krankenschwester', right: 'Sie ist Krankenschwester.' },
+        {
+          id: 'ch15-ex60-p5',
+          left: 'Krankenschwester',
+          right: 'Sie ist Krankenschwester.',
+        },
       ],
       explanation:
-        'German drops the article before a profession named after sein, no matter the noun\'s gender.',
+        "German drops the article before a profession named after sein, no matter the noun's gender.",
     },
     {
       id: 'ch15-ex-61',
@@ -1296,7 +1340,8 @@ export const chapter015: ChapterDefinition = {
         { id: 'ch15-ex61-p4', left: 'Stein', right: 'aus Stein' },
         { id: 'ch15-ex61-p5', left: 'Silber', right: 'aus Silber' },
       ],
-      explanation: 'Materials named in general take no article: aus Holz, aus Gold, aus Metall, aus Stein, aus Silber.',
+      explanation:
+        'Materials named in general take no article: aus Holz, aus Gold, aus Metall, aus Stein, aus Silber.',
     },
     {
       id: 'ch15-ex-62',

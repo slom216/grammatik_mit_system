@@ -54,14 +54,14 @@ export const chapter014: ChapterDefinition = {
         paragraphs: [
           'In the singular, German nouns are grouped into three genders with three different definite articles: der (masculine), die (feminine), and das (neuter).',
           'In the plural, this distinction disappears completely: every plural noun, regardless of its singular gender, takes the article die. Der Tisch (masculine) becomes die Tische, das Kind (neuter) becomes die Kinder, and die Frau (feminine, already die) becomes die Frauen.',
-          'This makes the plural article the easiest part of the plural system: you never need to know a noun\'s gender to choose its plural article, because it is always die.',
+          "This makes the plural article the easiest part of the plural system: you never need to know a noun's gender to choose its plural article, because it is always die.",
         ],
       },
       {
         id: 'ch14-rule-05',
         heading: 'Dictionary notation: how plurals are listed',
         paragraphs: [
-          'Because there is no single rule for predicting a noun\'s plural, German dictionaries and vocabulary lists give the plural ending directly after the noun, usually in a shortened form: der Tisch, -e means the plural is Tische; das Kind, -er means the plural is Kinder; die Lampe, -n means the plural is Lampen.',
+          "Because there is no single rule for predicting a noun's plural, German dictionaries and vocabulary lists give the plural ending directly after the noun, usually in a shortened form: der Tisch, -e means the plural is Tische; das Kind, -er means the plural is Kinder; die Lampe, -n means the plural is Lampen.",
           'An umlaut in the listed ending is often shown with a small mark before the ending, such as der Gast, ¨-e (plural: Gäste) or das Buch, ¨-er (plural: Bücher); some dictionaries instead simply spell out the whole plural form after a comma, e.g. der Gast, die Gäste.',
           'When a noun has no ending in the plural, dictionaries mark this with a dash or with the umlaut symbol alone, e.g. der Lehrer, - (plural: Lehrer, unchanged) or der Vater, ¨- (plural: Väter, umlaut only).',
           'Learning to read this notation is a practical study habit: whenever you learn a new noun, learn its plural form (or its dictionary abbreviation) at the same time, the way you would learn an irregular verb form.',
@@ -78,7 +78,12 @@ export const chapter014: ChapterDefinition = {
           ['-er (often + umlaut)', 'das Kind', 'die Kinder', 'many neuter nouns'],
           ['-(e)n (no umlaut)', 'die Lampe', 'die Lampen', 'most feminine nouns'],
           ['-s (no umlaut)', 'das Auto', 'die Autos', 'loanwords, vowel endings'],
-          ['no ending (sometimes + umlaut)', 'der Lehrer', 'die Lehrer', 'nouns already in -er, -el, -en'],
+          [
+            'no ending (sometimes + umlaut)',
+            'der Lehrer',
+            'die Lehrer',
+            'nouns already in -er, -el, -en',
+          ],
         ],
         note: 'The umlaut, where it occurs, always appears together with one of these endings (or with no ending at all) — it is never a plural pattern by itself.',
       },
@@ -168,12 +173,14 @@ export const chapter014: ChapterDefinition = {
         german: 'Die Tische in diesem Café sind sehr klein.',
         english: 'The tables in this café are very small.',
         highlight: ['Die Tische'],
-        explanation: 'Even though Tisch is masculine (der Tisch), the plural article is die.',
+        explanation:
+          'Even though Tisch is masculine (der Tisch), the plural article is die.',
       },
       {
         german: 'Im Wörterbuch steht: der Stuhl, ¨-e.',
         english: 'In the dictionary it says: der Stuhl, ¨-e.',
-        explanation: 'This dictionary notation tells you the plural is die Stühle: add -e and change u to ü.',
+        explanation:
+          'This dictionary notation tells you the plural is die Stühle: add -e and change u to ü.',
       },
     ],
     commonMistakes: [
@@ -192,7 +199,8 @@ export const chapter014: ChapterDefinition = {
       {
         incorrect: 'das Kind → die Kinden',
         correct: 'das Kind → die Kinder',
-        explanation: 'Kind belongs to the -er group, not the -(e)n group, so its plural is Kinder, not Kinden.',
+        explanation:
+          'Kind belongs to the -er group, not the -(e)n group, so its plural is Kinder, not Kinden.',
       },
       {
         incorrect: 'der Lehrer → die Lehrere',
@@ -216,7 +224,7 @@ export const chapter014: ChapterDefinition = {
       'German plurals are formed with one of five patterns: -e, -er, -(e)n, -s, or no ending — sometimes combined with an umlaut (a → ä, o → ö, u → ü, au → äu).',
       'The -(e)n and -s plurals never take an umlaut; only the -e, -er, and no-ending patterns can.',
       'Every plural noun uses the article die, no matter what article the singular noun has.',
-      'There is no single rule that predicts a noun\'s plural ending — learn each noun\'s plural (or its dictionary abbreviation, e.g. der Tisch, -e) together with the noun itself.',
+      "There is no single rule that predicts a noun's plural ending — learn each noun's plural (or its dictionary abbreviation, e.g. der Tisch, -e) together with the noun itself.",
     ],
   },
   mastery: {
@@ -279,7 +287,8 @@ export const chapter014: ChapterDefinition = {
         { id: 'd', text: 'die Tischs' },
       ],
       correctOptionId: 'b',
-      explanation: 'Tisch is a masculine noun that forms its plural by adding -e: die Tische.',
+      explanation:
+        'Tisch is a masculine noun that forms its plural by adding -e: die Tische.',
     },
     {
       id: 'ch14-ex-04',
@@ -315,7 +324,8 @@ export const chapter014: ChapterDefinition = {
         { id: 'd', text: 'die Fraus' },
       ],
       correctOptionId: 'b',
-      explanation: 'Frau is feminine and forms its plural by adding -en, with no umlaut: die Frauen.',
+      explanation:
+        'Frau is feminine and forms its plural by adding -en, with no umlaut: die Frauen.',
     },
     {
       id: 'ch14-ex-06',
@@ -333,7 +343,8 @@ export const chapter014: ChapterDefinition = {
         { id: 'd', text: 'die Autoer' },
       ],
       correctOptionId: 'a',
-      explanation: 'Loanwords ending in a vowel like Auto typically take the -s plural: die Autos.',
+      explanation:
+        'Loanwords ending in a vowel like Auto typically take the -s plural: die Autos.',
     },
     {
       id: 'ch14-ex-07',
@@ -370,7 +381,8 @@ export const chapter014: ChapterDefinition = {
         { id: 'd', text: 'die Vaterer' },
       ],
       correctOptionId: 'c',
-      explanation: 'Vater takes no plural ending, but its stem vowel changes: a becomes ä, giving die Väter.',
+      explanation:
+        'Vater takes no plural ending, but its stem vowel changes: a becomes ä, giving die Väter.',
     },
     {
       id: 'ch14-ex-09',
@@ -460,7 +472,8 @@ export const chapter014: ChapterDefinition = {
         { id: 'd', text: '-s' },
       ],
       correctOptionId: 'b',
-      explanation: 'Mädchen already ends in -chen, so it takes no additional plural ending.',
+      explanation:
+        'Mädchen already ends in -chen, so it takes no additional plural ending.',
     },
     {
       id: 'ch14-ex-14',
@@ -516,7 +529,8 @@ export const chapter014: ChapterDefinition = {
         { id: 'd', text: 'Den' },
       ],
       correctOptionId: 'c',
-      explanation: 'Bücher is a plural noun, and every plural noun takes the article die.',
+      explanation:
+        'Bücher is a plural noun, and every plural noun takes the article die.',
     },
     {
       id: 'ch14-ex-17',
@@ -533,7 +547,8 @@ export const chapter014: ChapterDefinition = {
         { id: 'c', text: 'Der' },
       ],
       correctOptionId: 'b',
-      explanation: 'Häuser is the plural of das Haus, but the plural article is always die.',
+      explanation:
+        'Häuser is the plural of das Haus, but the plural article is always die.',
     },
     {
       id: 'ch14-ex-18',
@@ -542,7 +557,8 @@ export const chapter014: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['dictionary-notation'],
-      instruction: 'This dictionary entry shows a noun with its plural notation. What is the correct plural?',
+      instruction:
+        'This dictionary entry shows a noun with its plural notation. What is the correct plural?',
       prompt: 'der Stuhl, ¨-e → ?',
       options: [
         { id: 'a', text: 'die Stuhle' },
@@ -627,7 +643,8 @@ export const chapter014: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'plural form',
       maxLength: 20,
-      explanation: 'Onkel already ends in -el, so it takes no plural ending; the plural is Onkel, unchanged.',
+      explanation:
+        'Onkel already ends in -el, so it takes no plural ending; the plural is Onkel, unchanged.',
     },
     {
       id: 'ch14-ex-24',
@@ -751,7 +768,8 @@ export const chapter014: ChapterDefinition = {
       type: 'matching',
       level: 'recognition',
       grammarFocus: ['plural-endings', 'e-plural'],
-      instruction: 'Match each singular noun to its plural form. All of these nouns add -e, with no umlaut.',
+      instruction:
+        'Match each singular noun to its plural form. All of these nouns add -e, with no umlaut.',
       prompt: 'Match the singular noun with its plural (-e ending).',
       pairs: [
         { id: 'ch14-ex31-p1', left: 'der Tisch', right: 'die Tische' },
@@ -770,7 +788,8 @@ export const chapter014: ChapterDefinition = {
       type: 'matching',
       level: 'recognition',
       grammarFocus: ['plural-endings', 'er-plural', 'umlaut'],
-      instruction: 'Match each singular noun to its plural form. All of these nouns add -er.',
+      instruction:
+        'Match each singular noun to its plural form. All of these nouns add -er.',
       prompt: 'Match the singular noun with its plural (-er ending).',
       pairs: [
         { id: 'ch14-ex32-p1', left: 'das Buch', right: 'die Bücher' },
@@ -789,7 +808,8 @@ export const chapter014: ChapterDefinition = {
       type: 'matching',
       level: 'recognition',
       grammarFocus: ['plural-endings', 'en-plural'],
-      instruction: 'Match each singular noun to its plural form. All of these nouns add -(e)n.',
+      instruction:
+        'Match each singular noun to its plural form. All of these nouns add -(e)n.',
       prompt: 'Match the singular noun with its plural (-(e)n ending).',
       pairs: [
         { id: 'ch14-ex33-p1', left: 'die Frau', right: 'die Frauen' },
@@ -857,7 +877,8 @@ export const chapter014: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['plural-endings', 'umlaut'],
       instruction: 'Drag the correct plural form into the gap.',
-      prompt: 'Vervollständige den Satz: "Die ___ in dieser Straße sind sehr alt." (das Haus)',
+      prompt:
+        'Vervollständige den Satz: "Die ___ in dieser Straße sind sehr alt." (das Haus)',
       templateParts: ['Die ', ' in dieser Straße sind sehr alt.'],
       slots: [{ id: 'ch14-ex37-slot1', correctWord: 'Häuser' }],
       wordBank: ['Häuser', 'Hauser', 'Häusern'],
@@ -889,7 +910,8 @@ export const chapter014: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['plural-endings', 'umlaut', 'dictionary-notation'],
       instruction: 'Drag the correct plural form into the gap.',
-      prompt: 'Vervollständige: "Im Wörterbuch steht: der Gast, ¨-e. Der Plural ist: die ___."',
+      prompt:
+        'Vervollständige: "Im Wörterbuch steht: der Gast, ¨-e. Der Plural ist: die ___."',
       templateParts: ['Im Wörterbuch steht: der Gast, ¨-e. Der Plural ist: die ', '.'],
       slots: [{ id: 'ch14-ex39-slot1', correctWord: 'Gäste' }],
       wordBank: ['Gäste', 'Gaste', 'Gästen'],
@@ -957,7 +979,8 @@ export const chapter014: ChapterDefinition = {
         { id: 'd', text: 'die Schuhs' },
       ],
       correctOptionId: 'a',
-      explanation: 'Schuh is a masculine noun that forms its plural by adding -e: die Schuhe.',
+      explanation:
+        'Schuh is a masculine noun that forms its plural by adding -e: die Schuhe.',
     },
     {
       id: 'ch14-ex-44',
@@ -975,7 +998,8 @@ export const chapter014: ChapterDefinition = {
         { id: 'd', text: 'die Baums' },
       ],
       correctOptionId: 'b',
-      explanation: 'Baum adds -e together with an umlaut: au becomes äu, giving die Bäume.',
+      explanation:
+        'Baum adds -e together with an umlaut: au becomes äu, giving die Bäume.',
     },
     {
       id: 'ch14-ex-45',
@@ -993,7 +1017,8 @@ export const chapter014: ChapterDefinition = {
         { id: 'd', text: 'die Stadts' },
       ],
       correctOptionId: 'b',
-      explanation: 'Stadt adds -e together with an umlaut: a becomes ä, giving die Städte.',
+      explanation:
+        'Stadt adds -e together with an umlaut: a becomes ä, giving die Städte.',
     },
     {
       id: 'ch14-ex-46',
@@ -1011,7 +1036,8 @@ export const chapter014: ChapterDefinition = {
         { id: 'd', text: 'die Apfeln' },
       ],
       correctOptionId: 'b',
-      explanation: 'Apfel already ends in -el, so it takes no plural ending, but the vowel still changes: a becomes ä, giving die Äpfel.',
+      explanation:
+        'Apfel already ends in -el, so it takes no plural ending, but the vowel still changes: a becomes ä, giving die Äpfel.',
     },
     {
       id: 'ch14-ex-47',
@@ -1029,7 +1055,8 @@ export const chapter014: ChapterDefinition = {
         { id: 'd', text: 'die Müttern' },
       ],
       correctOptionId: 'b',
-      explanation: 'Mutter takes no plural ending, but its stem vowel changes: u becomes ü, giving die Mütter.',
+      explanation:
+        'Mutter takes no plural ending, but its stem vowel changes: u becomes ü, giving die Mütter.',
     },
     {
       id: 'ch14-ex-48',
@@ -1047,7 +1074,8 @@ export const chapter014: ChapterDefinition = {
         { id: 'd', text: 'die Zimmers' },
       ],
       correctOptionId: 'a',
-      explanation: 'Zimmer already ends in -er, so it takes no plural ending at all: die Zimmer.',
+      explanation:
+        'Zimmer already ends in -er, so it takes no plural ending at all: die Zimmer.',
     },
     {
       id: 'ch14-ex-49',
@@ -1092,7 +1120,8 @@ export const chapter014: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'plural form',
       maxLength: 20,
-      explanation: 'Bruder takes no plural ending, but the vowel changes: u becomes ü, giving Brüder.',
+      explanation:
+        'Bruder takes no plural ending, but the vowel changes: u becomes ü, giving Brüder.',
     },
     {
       id: 'ch14-ex-52',
@@ -1107,7 +1136,8 @@ export const chapter014: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'plural form',
       maxLength: 20,
-      explanation: 'Handy ends in a vowel-like sound and is a modern loanword, so it takes the -s plural: Handys.',
+      explanation:
+        'Handy ends in a vowel-like sound and is a modern loanword, so it takes the -s plural: Handys.',
     },
     {
       id: 'ch14-ex-53',

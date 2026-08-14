@@ -7,13 +7,14 @@ import type { ChapterDefinition } from '../schemas/chapterSchema';
  * actually opens that chapter. Importing chapter modules anywhere else puts all
  * 85 of them back into the entry bundle, which an eslint rule guards against.
  */
-const loaders = import.meta.glob<Record<string, ChapterDefinition>>([
+const loaders = import.meta.glob<Record<string, ChapterDefinition>>(
   './chapters/chapter-*.ts',
-  // The engine demo is not part of the course; it stays as a test fixture.
-  '!./chapters/chapter-000-demo.ts',
-]);
+);
 
-const loaderByNumber = new Map<number, () => Promise<Record<string, ChapterDefinition>>>();
+const loaderByNumber = new Map<
+  number,
+  () => Promise<Record<string, ChapterDefinition>>
+>();
 for (const [path, load] of Object.entries(loaders)) {
   const match = /\/chapter-(\d{3})-[a-z0-9-]+\.ts$/.exec(path);
   if (match?.[1]) loaderByNumber.set(Number.parseInt(match[1], 10), load);
@@ -25,7 +26,9 @@ const cache = new Map<number, Promise<ChapterDefinition | undefined>>();
  * Resolves to the chapter body, or to `undefined` for an unknown number or a
  * chunk that failed to download.
  */
-export function loadChapter(chapterNumber: number): Promise<ChapterDefinition | undefined> {
+export function loadChapter(
+  chapterNumber: number,
+): Promise<ChapterDefinition | undefined> {
   const cached = cache.get(chapterNumber);
   if (cached) return cached;
 

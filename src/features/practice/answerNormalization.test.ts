@@ -350,9 +350,7 @@ describe('matching answer text', () => {
   const exercise = matchingExercise();
 
   it('renders the submitted pairing', () => {
-    expect(matchingAnswerText(exercise, { p1: 'p2' })).toBe(
-      'ich → dein, du → ?, er → ?',
-    );
+    expect(matchingAnswerText(exercise, { p1: 'p2' })).toBe('ich → dein, du → ?, er → ?');
   });
 
   it('renders the correct pairing', () => {

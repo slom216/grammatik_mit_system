@@ -19,7 +19,10 @@ export function DialogueExchange({ lines }: DialogueExchangeProps) {
       {lines.map((line, index) => {
         const side = line.speaker === firstSpeaker ? 'a' : 'b';
         return (
-          <li key={`${line.speaker}-${index}`} className={`dialogue__line dialogue__line--${side}`}>
+          <li
+            key={`${line.speaker}-${index}`}
+            className={`dialogue__line dialogue__line--${side}`}
+          >
             <div className="dialogue__bubble">
               <span className="dialogue__speaker">{line.speaker}</span>
               <span className="dialogue__german" lang="de">

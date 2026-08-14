@@ -3,10 +3,7 @@ import type { ChapterDefinition, Exercise } from '../schemas/chapterSchema';
 export interface AuditFinding {
   chapter: number;
   kind:
-    | 'duplicate-prompt'
-    | 'duplicate-question'
-    | 'near-duplicate-prompt'
-    | 'whitespace';
+    'duplicate-prompt' | 'duplicate-question' | 'near-duplicate-prompt' | 'whitespace';
   exerciseIds: string[];
   detail: string;
 }
@@ -63,9 +60,7 @@ function promptText(exercise: Exercise): string {
       parts.push(exercise.segments.map((segment) => segment.text).join(' '));
       break;
     case 'matching':
-      parts.push(
-        exercise.pairs.map((pair) => `${pair.left}=${pair.right}`).join(' '),
-      );
+      parts.push(exercise.pairs.map((pair) => `${pair.left}=${pair.right}`).join(' '));
       break;
   }
   return parts.join(' ');
@@ -108,7 +103,10 @@ function identity(exercise: Exercise): string {
  * or that give their own answer away. Reported rather than enforced — these are
  * judgement calls, and a near-duplicate is sometimes deliberate drilling.
  */
-export function auditChapter(chapter: ChapterDefinition, threshold = 0.9): AuditFinding[] {
+export function auditChapter(
+  chapter: ChapterDefinition,
+  threshold = 0.9,
+): AuditFinding[] {
   const findings: AuditFinding[] = [];
   const exercises = chapter.exercises;
 

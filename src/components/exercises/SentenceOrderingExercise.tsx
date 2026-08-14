@@ -31,11 +31,7 @@ export function SentenceOrderingExercise({
     if (disabled) return;
     const withoutId = order.filter((existing) => existing !== id);
     const clampedIndex = Math.max(0, Math.min(targetIndex, withoutId.length));
-    onChange([
-      ...withoutId.slice(0, clampedIndex),
-      id,
-      ...withoutId.slice(clampedIndex),
-    ]);
+    onChange([...withoutId.slice(0, clampedIndex), id, ...withoutId.slice(clampedIndex)]);
   };
 
   const move = (id: string, delta: number) => {

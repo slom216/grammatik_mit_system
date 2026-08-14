@@ -113,19 +113,48 @@ export const chapter085: ChapterDefinition = {
           ['der-word (weak endings)', 'der weinende Junge', 'masculine nominative: -e'],
           ['ein-word (mixed endings)', 'ein schlafendes Kind', 'neuter nominative: -es'],
           ['no article (strong endings)', 'brennender Wald', 'masculine nominative: -er'],
-          ['dative plural (any article type)', 'mit den lächelnden Kindern', 'dative plural: -en'],
+          [
+            'dative plural (any article type)',
+            'mit den lächelnden Kindern',
+            'dative plural: -en',
+          ],
         ],
         note: 'These are the same three declension patterns from Chapter 84 — the Partizip I follows them exactly like any other adjective.',
       },
       {
         id: 'ch85-table-03',
         title: 'Partizip I (active, ongoing) vs. Partizip II (passive, completed)',
-        columns: ['Partizip I — active, ongoing', 'Meaning', 'Partizip II — passive, completed', 'Meaning'],
+        columns: [
+          'Partizip I — active, ongoing',
+          'Meaning',
+          'Partizip II — passive, completed',
+          'Meaning',
+        ],
         rows: [
-          ['das kochende Wasser', 'the water that is boiling right now', 'das gekochte Ei', 'the egg that has been cooked'],
-          ['der schließende Laden', 'the shop that is closing right now', 'der geschlossene Laden', 'the shop that has been closed'],
-          ['die öffnende Tür', 'the door that is opening right now', 'die geöffnete Tür', 'the door that has been opened'],
-          ['das lesende Kind', 'the child that is reading right now', 'das gelesene Buch', 'the book that has been read'],
+          [
+            'das kochende Wasser',
+            'the water that is boiling right now',
+            'das gekochte Ei',
+            'the egg that has been cooked',
+          ],
+          [
+            'der schließende Laden',
+            'the shop that is closing right now',
+            'der geschlossene Laden',
+            'the shop that has been closed',
+          ],
+          [
+            'die öffnende Tür',
+            'the door that is opening right now',
+            'die geöffnete Tür',
+            'the door that has been opened',
+          ],
+          [
+            'das lesende Kind',
+            'the child that is reading right now',
+            'das gelesene Buch',
+            'the book that has been read',
+          ],
         ],
         note: 'Same verb, two different participles: -d marks an active action still happening; ge-...-t/-en marks something done to the noun, already finished.',
       },
@@ -134,10 +163,26 @@ export const chapter085: ChapterDefinition = {
         title: 'Relative clause → participial phrase',
         columns: ['Relative clause', 'Participial phrase', 'English'],
         rows: [
-          ['der Mann, der dort steht', 'der dort stehende Mann', 'the man standing there'],
-          ['die Frau, die am Fenster sitzt', 'die am Fenster sitzende Frau', 'the woman sitting at the window'],
-          ['das Kind, das im Garten spielt', 'das im Garten spielende Kind', 'the child playing in the garden'],
-          ['der Zug, der gerade ankommt', 'der gerade ankommende Zug', 'the train arriving right now'],
+          [
+            'der Mann, der dort steht',
+            'der dort stehende Mann',
+            'the man standing there',
+          ],
+          [
+            'die Frau, die am Fenster sitzt',
+            'die am Fenster sitzende Frau',
+            'the woman sitting at the window',
+          ],
+          [
+            'das Kind, das im Garten spielt',
+            'das im Garten spielende Kind',
+            'the child playing in the garden',
+          ],
+          [
+            'der Zug, der gerade ankommt',
+            'der gerade ankommende Zug',
+            'the train arriving right now',
+          ],
         ],
         note: 'This paraphrase works cleanly when the relative pronoun is the subject and the verb is a simple present tense — exactly the introductory cases this chapter focuses on.',
       },
@@ -147,112 +192,137 @@ export const chapter085: ChapterDefinition = {
         german: 'Das weinende Kind braucht Trost.',
         english: 'The crying child needs comfort.',
         highlight: ['weinende'],
-        explanation: 'weinen + -d = weinend; das (der-word) neuter nominative takes the weak ending -e: weinende.',
+        explanation:
+          'weinen + -d = weinend; das (der-word) neuter nominative takes the weak ending -e: weinende.',
       },
       {
         german: 'Der schlafende Hund liegt auf dem Sofa.',
         english: 'The sleeping dog is lying on the sofa.',
         highlight: ['schlafende'],
-        explanation: 'schlafen + -d = schlafend; der (der-word) masculine nominative takes the weak ending -e: schlafende.',
+        explanation:
+          'schlafen + -d = schlafend; der (der-word) masculine nominative takes the weak ending -e: schlafende.',
       },
       {
         german: 'Ich sehe ein lächelndes Gesicht.',
         english: 'I see a smiling face.',
         highlight: ['lächelndes'],
-        explanation: 'lächeln + -d = lächelnd; ein (ein-word) neuter accusative takes the mixed ending -es, identical to the neuter nominative.',
+        explanation:
+          'lächeln + -d = lächelnd; ein (ein-word) neuter accusative takes the mixed ending -es, identical to the neuter nominative.',
       },
       {
         german: 'Die singende Frau steht auf der Bühne.',
         english: 'The singing woman stands on the stage.',
         highlight: ['singende'],
-        explanation: 'singen + -d = singend; die (der-word) feminine nominative takes the weak ending -e.',
+        explanation:
+          'singen + -d = singend; die (der-word) feminine nominative takes the weak ending -e.',
       },
       {
         german: 'Wir hören die spielenden Kinder im Park.',
         english: 'We hear the children playing in the park.',
         highlight: ['spielenden'],
-        explanation: 'spielen + -d = spielend; die + plural takes -en in every case, here accusative after hören.',
+        explanation:
+          'spielen + -d = spielend; die + plural takes -en in every case, here accusative after hören.',
       },
       {
         german: 'Das kochende Wasser darf man nicht anfassen.',
         english: 'You must not touch the boiling water.',
         highlight: ['kochende'],
-        explanation: 'kochen + -d = kochend, describing water actively boiling right now — active and ongoing.',
+        explanation:
+          'kochen + -d = kochend, describing water actively boiling right now — active and ongoing.',
       },
       {
         german: 'Das gekochte Ei ist schon kalt.',
         english: 'The cooked egg is already cold.',
         highlight: ['gekochte'],
-        explanation: 'Compare with the sentence above: gekocht is the Partizip II — the egg was cooked by someone, and the cooking is already finished. Passive and completed, not active and ongoing.',
+        explanation:
+          'Compare with the sentence above: gekocht is the Partizip II — the egg was cooked by someone, and the cooking is already finished. Passive and completed, not active and ongoing.',
       },
       {
         german: 'Der schließende Laden verliert gerade Kunden.',
         english: 'The shop that is closing (right now) is losing customers.',
         highlight: ['schließende'],
-        explanation: 'schließen + -d = schließend: the shop itself is actively in the process of closing right now.',
+        explanation:
+          'schließen + -d = schließend: the shop itself is actively in the process of closing right now.',
       },
       {
         german: 'Der geschlossene Laden hat heute keine Kunden.',
         english: 'The closed shop has no customers today.',
         highlight: ['geschlossene'],
-        explanation: 'geschlossen is the Partizip II of schließen: the shop has already been closed — passive and completed, unlike schließende above.',
+        explanation:
+          'geschlossen is the Partizip II of schließen: the shop has already been closed — passive and completed, unlike schließende above.',
       },
       {
-        german: 'Der Mann, der dort steht, ist mein Nachbar. → Der dort stehende Mann ist mein Nachbar.',
-        english: 'The man who is standing there is my neighbor. → The man standing there is my neighbor.',
+        german:
+          'Der Mann, der dort steht, ist mein Nachbar. → Der dort stehende Mann ist mein Nachbar.',
+        english:
+          'The man who is standing there is my neighbor. → The man standing there is my neighbor.',
         highlight: ['dort stehende'],
-        explanation: 'The relative clause der dort steht becomes the participial phrase dort stehende, sliding in front of Mann with the correct weak ending -e.',
+        explanation:
+          'The relative clause der dort steht becomes the participial phrase dort stehende, sliding in front of Mann with the correct weak ending -e.',
       },
       {
-        german: 'Die Frau, die am Fenster sitzt, liest ein Buch. → Die am Fenster sitzende Frau liest ein Buch.',
-        english: 'The woman who is sitting at the window is reading a book. → The woman sitting at the window is reading a book.',
+        german:
+          'Die Frau, die am Fenster sitzt, liest ein Buch. → Die am Fenster sitzende Frau liest ein Buch.',
+        english:
+          'The woman who is sitting at the window is reading a book. → The woman sitting at the window is reading a book.',
         highlight: ['am Fenster sitzende'],
-        explanation: 'The prepositional phrase am Fenster and the participle sitzende both move in front of Frau, in the same order they had inside the relative clause.',
+        explanation:
+          'The prepositional phrase am Fenster and the participle sitzende both move in front of Frau, in the same order they had inside the relative clause.',
       },
       {
-        german: 'Der Zug, der gerade ankommt, kommt aus München. → Der gerade ankommende Zug kommt aus München.',
-        english: 'The train that is arriving right now is coming from Munich. → The train arriving right now is coming from Munich.',
+        german:
+          'Der Zug, der gerade ankommt, kommt aus München. → Der gerade ankommende Zug kommt aus München.',
+        english:
+          'The train that is arriving right now is coming from Munich. → The train arriving right now is coming from Munich.',
         highlight: ['gerade ankommende'],
-        explanation: 'gerade stays directly in front of the participle ankommende, which itself stays directly in front of Zug.',
+        explanation:
+          'gerade stays directly in front of the participle ankommende, which itself stays directly in front of Zug.',
       },
       {
         german: 'Der schnell wachsende Baum steht im Garten.',
         english: 'The fast-growing tree is standing in the garden.',
         highlight: ['schnell wachsende'],
-        explanation: 'An expanded participial phrase: the adverb schnell modifies the participle wachsende, and the whole unit still sits directly before the noun, taking one adjective ending at the very end.',
+        explanation:
+          'An expanded participial phrase: the adverb schnell modifies the participle wachsende, and the whole unit still sits directly before the noun, taking one adjective ending at the very end.',
       },
       {
         german: 'Mit den lächelnden Kindern war der Ausflug ein Erfolg.',
         english: 'With the smiling children, the outing was a success.',
         highlight: ['lächelnden'],
-        explanation: 'Dative plural after mit takes -en, exactly as any other adjective would: den lächelnden Kindern.',
+        explanation:
+          'Dative plural after mit takes -en, exactly as any other adjective would: den lächelnden Kindern.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Das weinen Kind braucht Trost.',
         correct: 'Das weinende Kind braucht Trost.',
-        explanation: 'The bare infinitive weinen is not a participle; -d must be added first (weinend), and then the adjective ending (-e after das).',
+        explanation:
+          'The bare infinitive weinen is not a participle; -d must be added first (weinend), and then the adjective ending (-e after das).',
       },
       {
         incorrect: 'Das weinend Kind braucht Trost.',
         correct: 'Das weinende Kind braucht Trost.',
-        explanation: 'weinend is correctly formed but still needs its adjective ending before a noun, exactly like any other attributive adjective: weinende, not the bare participle.',
+        explanation:
+          'weinend is correctly formed but still needs its adjective ending before a noun, exactly like any other attributive adjective: weinende, not the bare participle.',
       },
       {
         incorrect: 'Der geschlossene Laden verliert gerade Kunden, weil er zumacht.',
         correct: 'Der schließende Laden verliert gerade Kunden, weil er zumacht.',
-        explanation: 'The sentence describes a shop that is currently in the process of closing — active and ongoing — so it needs the Partizip I (schließende), not the passive/completed Partizip II (geschlossene), which would mean the shop has already been closed.',
+        explanation:
+          'The sentence describes a shop that is currently in the process of closing — active and ongoing — so it needs the Partizip I (schließende), not the passive/completed Partizip II (geschlossene), which would mean the shop has already been closed.',
       },
       {
         incorrect: 'Ich sehe ein Kind spielend im Park.',
         correct: 'Ich sehe ein spielendes Kind im Park.',
-        explanation: 'A Partizip I used as an adjective must stand directly before its noun with the correct ending, not trail after it the way an English "-ing" form sometimes can.',
+        explanation:
+          'A Partizip I used as an adjective must stand directly before its noun with the correct ending, not trail after it the way an English "-ing" form sometimes can.',
       },
       {
         incorrect: 'Der stehende dort Mann ist mein Nachbar.',
         correct: 'Der dort stehende Mann ist mein Nachbar.',
-        explanation: 'When paraphrasing a relative clause, any adverb or phrase from inside the clause (here dort) moves in front of the participle, not after it — the participle always sits immediately before the noun.',
+        explanation:
+          'When paraphrasing a relative clause, any adverb or phrase from inside the clause (here dort) moves in front of the participle, not after it — the participle always sits immediately before the noun.',
       },
     ],
     remember: [
@@ -287,7 +357,8 @@ export const chapter085: ChapterDefinition = {
         { id: 'd', text: 'weinender' },
       ],
       correctOptionId: 'a',
-      explanation: 'The Partizip I is formed by adding -d to the infinitive: weinen → weinend.',
+      explanation:
+        'The Partizip I is formed by adding -d to the infinitive: weinen → weinend.',
     },
     {
       id: 'ch85-ex-02',
@@ -305,7 +376,8 @@ export const chapter085: ChapterDefinition = {
         { id: 'd', text: 'schlafende' },
       ],
       correctOptionId: 'a',
-      explanation: 'schlafen + -d = schlafend, the bare Partizip I with no adjective ending yet.',
+      explanation:
+        'schlafen + -d = schlafend, the bare Partizip I with no adjective ending yet.',
     },
     {
       id: 'ch85-ex-03',
@@ -323,7 +395,8 @@ export const chapter085: ChapterDefinition = {
         { id: 'd', text: 'lächelnder' },
       ],
       correctOptionId: 'a',
-      explanation: 'lächeln + -d = lächelnd, formed the same simple way as every other verb.',
+      explanation:
+        'lächeln + -d = lächelnd, formed the same simple way as every other verb.',
     },
     {
       id: 'ch85-ex-04',
@@ -341,7 +414,8 @@ export const chapter085: ChapterDefinition = {
         { id: 'd', text: 'kommende' },
       ],
       correctOptionId: 'a',
-      explanation: 'Even though kommen is a strong verb with an irregular Partizip II (gekommen), its Partizip I is fully regular: kommen → kommend.',
+      explanation:
+        'Even though kommen is a strong verb with an irregular Partizip II (gekommen), its Partizip I is fully regular: kommen → kommend.',
     },
     {
       id: 'ch85-ex-05',
@@ -359,7 +433,8 @@ export const chapter085: ChapterDefinition = {
         { id: 'd', text: 'weinendes' },
       ],
       correctOptionId: 'a',
-      explanation: 'Junge is masculine, and der is a der-word, so the weak nominative ending is -e: weinende.',
+      explanation:
+        'Junge is masculine, and der is a der-word, so the weak nominative ending is -e: weinende.',
     },
     {
       id: 'ch85-ex-06',
@@ -377,7 +452,8 @@ export const chapter085: ChapterDefinition = {
         { id: 'd', text: 'schlafender' },
       ],
       correctOptionId: 'a',
-      explanation: 'Kind is neuter, and ein is an ein-word, so the mixed nominative ending is -es: schlafendes.',
+      explanation:
+        'Kind is neuter, and ein is an ein-word, so the mixed nominative ending is -es: schlafendes.',
     },
     {
       id: 'ch85-ex-07',
@@ -395,7 +471,8 @@ export const chapter085: ChapterDefinition = {
         { id: 'd', text: 'spielender' },
       ],
       correctOptionId: 'a',
-      explanation: 'With no article at all, plural nominative adjectives take the strong ending -e: spielende Kinder.',
+      explanation:
+        'With no article at all, plural nominative adjectives take the strong ending -e: spielende Kinder.',
     },
     {
       id: 'ch85-ex-08',
@@ -413,7 +490,8 @@ export const chapter085: ChapterDefinition = {
         { id: 'd', text: 'lächelnder' },
       ],
       correctOptionId: 'a',
-      explanation: 'Dative plural adjectives always take -en, regardless of article type: den lächelnden Kindern.',
+      explanation:
+        'Dative plural adjectives always take -en, regardless of article type: den lächelnden Kindern.',
     },
     {
       id: 'ch85-ex-09',
@@ -422,7 +500,8 @@ export const chapter085: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['present-vs-past-participle', 'active-ongoing'],
-      instruction: 'Choose the participle that describes the water actively boiling right now.',
+      instruction:
+        'Choose the participle that describes the water actively boiling right now.',
       prompt: 'Pass auf, das ___ Wasser ist heiß! (kochen)',
       options: [
         { id: 'a', text: 'kochende' },
@@ -431,7 +510,8 @@ export const chapter085: ChapterDefinition = {
         { id: 'd', text: 'kochendes' },
       ],
       correctOptionId: 'a',
-      explanation: 'The water is actively boiling right now, so the active, ongoing Partizip I is needed; Wasser is neuter, and das takes the weak ending -e: kochende.',
+      explanation:
+        'The water is actively boiling right now, so the active, ongoing Partizip I is needed; Wasser is neuter, and das takes the weak ending -e: kochende.',
     },
     {
       id: 'ch85-ex-10',
@@ -440,7 +520,8 @@ export const chapter085: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['present-vs-past-participle', 'passive-completed'],
-      instruction: 'Choose the participle that describes an egg that has already been cooked.',
+      instruction:
+        'Choose the participle that describes an egg that has already been cooked.',
       prompt: 'Das ___ Ei ist schon kalt. (kochen)',
       options: [
         { id: 'a', text: 'gekochte' },
@@ -449,7 +530,8 @@ export const chapter085: ChapterDefinition = {
         { id: 'd', text: 'gekochtes' },
       ],
       correctOptionId: 'a',
-      explanation: 'The cooking is already finished and was done to the egg, so the passive, completed Partizip II is needed; Ei is neuter, and das takes the weak ending -e: gekochte.',
+      explanation:
+        'The cooking is already finished and was done to the egg, so the passive, completed Partizip II is needed; Ei is neuter, and das takes the weak ending -e: gekochte.',
     },
     {
       id: 'ch85-ex-11',
@@ -467,7 +549,8 @@ export const chapter085: ChapterDefinition = {
         { id: 'd', text: 'the shop that never closes' },
       ],
       correctOptionId: 'a',
-      explanation: 'geschlossen is the Partizip II of schließen used adjectivally: passive and completed — the shop has already been closed.',
+      explanation:
+        'geschlossen is the Partizip II of schließen used adjectivally: passive and completed — the shop has already been closed.',
     },
     {
       id: 'ch85-ex-12',
@@ -485,7 +568,8 @@ export const chapter085: ChapterDefinition = {
         { id: 'd', text: 'the shop that reopened' },
       ],
       correctOptionId: 'a',
-      explanation: 'schließend is the Partizip I of schließen: active and ongoing — the shop is itself in the process of closing right now.',
+      explanation:
+        'schließend is the Partizip I of schließen: active and ongoing — the shop is itself in the process of closing right now.',
     },
     {
       id: 'ch85-ex-13',
@@ -503,7 +587,8 @@ export const chapter085: ChapterDefinition = {
         { id: 'd', text: 'der Mann dort stehende' },
       ],
       correctOptionId: 'a',
-      explanation: 'dort moves in front of the participle stehende, and the whole phrase stays directly before Mann; gestandene would wrongly use the Partizip II.',
+      explanation:
+        'dort moves in front of the participle stehende, and the whole phrase stays directly before Mann; gestandene would wrongly use the Partizip II.',
     },
     {
       id: 'ch85-ex-14',
@@ -521,7 +606,8 @@ export const chapter085: ChapterDefinition = {
         { id: 'd', text: 'die Frau am Fenster sitzende' },
       ],
       correctOptionId: 'a',
-      explanation: 'The prepositional phrase am Fenster moves in front of the participle sitzende, and the whole phrase stays directly before Frau.',
+      explanation:
+        'The prepositional phrase am Fenster moves in front of the participle sitzende, and the whole phrase stays directly before Frau.',
     },
     {
       id: 'ch85-ex-15',
@@ -539,7 +625,8 @@ export const chapter085: ChapterDefinition = {
         { id: 'd', text: 'der Baum schnell wachsende' },
       ],
       correctOptionId: 'a',
-      explanation: 'The adverb schnell sits directly before the participle wachsende, and the whole expanded phrase stays directly before Baum; gewachsene would wrongly use the (unrelated) Partizip II.',
+      explanation:
+        'The adverb schnell sits directly before the participle wachsende, and the whole expanded phrase stays directly before Baum; gewachsene would wrongly use the (unrelated) Partizip II.',
     },
     {
       id: 'ch85-ex-16',
@@ -548,7 +635,8 @@ export const chapter085: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['formation', 'partizip-i'],
-      instruction: 'Write the present participle (Partizip I). Capitalisation is not checked.',
+      instruction:
+        'Write the present participle (Partizip I). Capitalisation is not checked.',
       prompt: 'lachen → ___',
       acceptedAnswers: ['lachend'],
       answerMode: 'caseInsensitive',
@@ -563,7 +651,8 @@ export const chapter085: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['formation', 'partizip-i'],
-      instruction: 'Write the present participle (Partizip I). Capitalisation is not checked.',
+      instruction:
+        'Write the present participle (Partizip I). Capitalisation is not checked.',
       prompt: 'singen → ___',
       acceptedAnswers: ['singend'],
       answerMode: 'caseInsensitive',
@@ -578,13 +667,15 @@ export const chapter085: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['formation', 'partizip-i'],
-      instruction: 'Write the present participle (Partizip I). Capitalisation is not checked.',
+      instruction:
+        'Write the present participle (Partizip I). Capitalisation is not checked.',
       prompt: 'wachsen → ___',
       acceptedAnswers: ['wachsend'],
       answerMode: 'caseInsensitive',
       placeholder: 'wachsend',
       maxLength: 20,
-      explanation: 'wachsen + -d = wachsend, regular even though wachsen is a strong verb.',
+      explanation:
+        'wachsen + -d = wachsend, regular even though wachsen is a strong verb.',
     },
     {
       id: 'ch85-ex-19',
@@ -593,7 +684,8 @@ export const chapter085: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['formation', 'partizip-i'],
-      instruction: 'Write the present participle (Partizip I). Capitalisation is not checked.',
+      instruction:
+        'Write the present participle (Partizip I). Capitalisation is not checked.',
       prompt: 'warten → ___',
       acceptedAnswers: ['wartend'],
       answerMode: 'caseInsensitive',
@@ -608,13 +700,15 @@ export const chapter085: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['formation', 'partizip-i'],
-      instruction: 'Write the present participle (Partizip I). Capitalisation is not checked.',
+      instruction:
+        'Write the present participle (Partizip I). Capitalisation is not checked.',
       prompt: 'sprechen → ___',
       acceptedAnswers: ['sprechend'],
       answerMode: 'caseInsensitive',
       placeholder: 'sprechend',
       maxLength: 20,
-      explanation: 'sprechen + -d = sprechend, regular even though sprechen has an irregular Partizip II (gesprochen).',
+      explanation:
+        'sprechen + -d = sprechend, regular even though sprechen has an irregular Partizip II (gesprochen).',
     },
     {
       id: 'ch85-ex-21',
@@ -623,13 +717,15 @@ export const chapter085: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['adjective-endings', 'weak-endings', 'sentence-completion'],
-      instruction: 'Complete the sentence with the correct form of the participle. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct form of the participle. Capitalisation is not checked.',
       prompt: 'Das ___ Kind braucht Trost. (weinen)',
       acceptedAnswers: ['weinende'],
       answerMode: 'caseInsensitive',
       placeholder: 'weinende',
       maxLength: 20,
-      explanation: 'Kind is neuter, and das takes the weak nominative ending -e: weinende.',
+      explanation:
+        'Kind is neuter, and das takes the weak nominative ending -e: weinende.',
     },
     {
       id: 'ch85-ex-22',
@@ -638,13 +734,15 @@ export const chapter085: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['adjective-endings', 'mixed-endings', 'sentence-completion'],
-      instruction: 'Complete the sentence with the correct form of the participle. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct form of the participle. Capitalisation is not checked.',
       prompt: 'Ich sehe ein ___ Gesicht. (lächeln)',
       acceptedAnswers: ['lächelndes'],
       answerMode: 'caseInsensitive',
       placeholder: 'lächelndes',
       maxLength: 20,
-      explanation: 'Gesicht is neuter; ein takes the mixed accusative ending -es, identical to the neuter nominative: lächelndes.',
+      explanation:
+        'Gesicht is neuter; ein takes the mixed accusative ending -es, identical to the neuter nominative: lächelndes.',
     },
     {
       id: 'ch85-ex-23',
@@ -653,13 +751,15 @@ export const chapter085: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['adjective-endings', 'sentence-completion'],
-      instruction: 'Complete the sentence with the correct form of the participle. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct form of the participle. Capitalisation is not checked.',
       prompt: 'Wir hören die ___ Kinder im Park. (spielen)',
       acceptedAnswers: ['spielenden'],
       answerMode: 'caseInsensitive',
       placeholder: 'spielenden',
       maxLength: 20,
-      explanation: 'die + plural always takes -en, whatever the case: die spielenden Kinder.',
+      explanation:
+        'die + plural always takes -en, whatever the case: die spielenden Kinder.',
     },
     {
       id: 'ch85-ex-24',
@@ -668,7 +768,8 @@ export const chapter085: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['adjective-endings', 'dative-plural', 'sentence-completion'],
-      instruction: 'Complete the sentence with the correct form of the participle. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct form of the participle. Capitalisation is not checked.',
       prompt: 'Mit den ___ Kindern war der Ausflug schön. (lächeln)',
       acceptedAnswers: ['lächelnden'],
       answerMode: 'caseInsensitive',
@@ -683,13 +784,15 @@ export const chapter085: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['adjective-endings', 'strong-endings', 'sentence-completion'],
-      instruction: 'Complete the sentence with the correct form of the participle. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct form of the participle. Capitalisation is not checked.',
       prompt: '___ Wald ist gefährlich. (brennen)',
       acceptedAnswers: ['brennender'],
       answerMode: 'caseInsensitive',
       placeholder: 'brennender',
       maxLength: 20,
-      explanation: 'With no article, masculine nominative adjectives take the strong ending -er: brennender Wald.',
+      explanation:
+        'With no article, masculine nominative adjectives take the strong ending -er: brennender Wald.',
     },
     {
       id: 'ch85-ex-26',
@@ -697,14 +800,20 @@ export const chapter085: ChapterDefinition = {
       order: 26,
       type: 'textInput',
       level: 'production',
-      grammarFocus: ['present-vs-past-participle', 'passive-completed', 'sentence-completion'],
-      instruction: 'Complete the sentence with the correct form of the participle. Capitalisation is not checked.',
+      grammarFocus: [
+        'present-vs-past-participle',
+        'passive-completed',
+        'sentence-completion',
+      ],
+      instruction:
+        'Complete the sentence with the correct form of the participle. Capitalisation is not checked.',
       prompt: 'Die Tür war früher zu, jetzt ist sie die ___ Tür. (öffnen)',
       acceptedAnswers: ['geöffnete'],
       answerMode: 'caseInsensitive',
       placeholder: 'geöffnete',
       maxLength: 20,
-      explanation: 'The opening is already finished and was done to the door, so the passive, completed Partizip II is needed; Tür is feminine, and die takes the weak ending -e: geöffnete.',
+      explanation:
+        'The opening is already finished and was done to the door, so the passive, completed Partizip II is needed; Tür is feminine, and die takes the weak ending -e: geöffnete.',
     },
     {
       id: 'ch85-ex-27',
@@ -712,14 +821,20 @@ export const chapter085: ChapterDefinition = {
       order: 27,
       type: 'textInput',
       level: 'production',
-      grammarFocus: ['present-vs-past-participle', 'active-ongoing', 'sentence-completion'],
-      instruction: 'Complete the sentence with the correct form of the participle. Capitalisation is not checked.',
+      grammarFocus: [
+        'present-vs-past-participle',
+        'active-ongoing',
+        'sentence-completion',
+      ],
+      instruction:
+        'Complete the sentence with the correct form of the participle. Capitalisation is not checked.',
       prompt: 'Das Wasser kocht gerade. Pass auf, das ___ Wasser ist heiß! (kochen)',
       acceptedAnswers: ['kochende'],
       answerMode: 'caseInsensitive',
       placeholder: 'kochende',
       maxLength: 20,
-      explanation: 'The water is actively boiling right now, so the active, ongoing Partizip I is needed; Wasser is neuter, and das takes the weak ending -e: kochende.',
+      explanation:
+        'The water is actively boiling right now, so the active, ongoing Partizip I is needed; Wasser is neuter, and das takes the weak ending -e: kochende.',
     },
     {
       id: 'ch85-ex-28',
@@ -728,13 +843,15 @@ export const chapter085: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['relative-clause-paraphrase', 'word-order'],
-      instruction: 'Rewrite the relative clause as a participial phrase. Capitalisation is not checked.',
+      instruction:
+        'Rewrite the relative clause as a participial phrase. Capitalisation is not checked.',
       prompt: 'der Mann, der dort steht → ___',
       acceptedAnswers: ['der dort stehende Mann'],
       answerMode: 'caseInsensitive',
       placeholder: 'der dort stehende Mann',
       maxLength: 40,
-      explanation: 'dort moves in front of the participle stehende, which takes the weak masculine nominative ending -e.',
+      explanation:
+        'dort moves in front of the participle stehende, which takes the weak masculine nominative ending -e.',
     },
     {
       id: 'ch85-ex-29',
@@ -743,13 +860,15 @@ export const chapter085: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['relative-clause-paraphrase', 'word-order'],
-      instruction: 'Rewrite the relative clause as a participial phrase. Capitalisation is not checked.',
+      instruction:
+        'Rewrite the relative clause as a participial phrase. Capitalisation is not checked.',
       prompt: 'die Frau, die am Fenster sitzt → ___',
       acceptedAnswers: ['die am Fenster sitzende Frau'],
       answerMode: 'caseInsensitive',
       placeholder: 'die am Fenster sitzende Frau',
       maxLength: 40,
-      explanation: 'am Fenster moves in front of the participle sitzende, which takes the weak feminine nominative ending -e.',
+      explanation:
+        'am Fenster moves in front of the participle sitzende, which takes the weak feminine nominative ending -e.',
     },
     {
       id: 'ch85-ex-30',
@@ -758,13 +877,15 @@ export const chapter085: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['relative-clause-paraphrase', 'word-order'],
-      instruction: 'Rewrite the relative clause as a participial phrase. Capitalisation is not checked.',
+      instruction:
+        'Rewrite the relative clause as a participial phrase. Capitalisation is not checked.',
       prompt: 'der Zug, der gerade ankommt → ___',
       acceptedAnswers: ['der gerade ankommende Zug'],
       answerMode: 'caseInsensitive',
       placeholder: 'der gerade ankommende Zug',
       maxLength: 40,
-      explanation: 'gerade moves in front of the participle ankommende, which takes the weak masculine nominative ending -e.',
+      explanation:
+        'gerade moves in front of the participle ankommende, which takes the weak masculine nominative ending -e.',
     },
     {
       id: 'ch85-ex-31',
@@ -778,7 +899,8 @@ export const chapter085: ChapterDefinition = {
       templateParts: ['Der ', ' Mann tanzt auf der Bühne.'],
       slots: [{ id: 'slot1', correctWord: 'tanzende' }],
       wordBank: ['tanzende', 'tanzender', 'tanzendes', 'tanzenden'],
-      explanation: 'Mann is masculine, and der is a der-word, so the weak nominative ending is -e: tanzende.',
+      explanation:
+        'Mann is masculine, and der is a der-word, so the weak nominative ending is -e: tanzende.',
     },
     {
       id: 'ch85-ex-32',
@@ -792,7 +914,8 @@ export const chapter085: ChapterDefinition = {
       templateParts: ['Ein ', ' Kind singt im Chor.'],
       slots: [{ id: 'slot1', correctWord: 'singendes' }],
       wordBank: ['singendes', 'singende', 'singender', 'singenden'],
-      explanation: 'Kind is neuter, and ein is an ein-word, so the mixed nominative ending is -es: singendes.',
+      explanation:
+        'Kind is neuter, and ein is an ein-word, so the mixed nominative ending is -es: singendes.',
     },
     {
       id: 'ch85-ex-33',
@@ -806,7 +929,8 @@ export const chapter085: ChapterDefinition = {
       templateParts: ['Die ', ' Sonne färbt den Himmel rot.'],
       slots: [{ id: 'slot1', correctWord: 'sinkende' }],
       wordBank: ['sinkende', 'sinkender', 'sinkendes', 'sinkenden'],
-      explanation: 'Sonne is feminine, and die is a der-word, so the weak nominative ending is -e: sinkende.',
+      explanation:
+        'Sonne is feminine, and die is a der-word, so the weak nominative ending is -e: sinkende.',
     },
     {
       id: 'ch85-ex-34',
@@ -820,7 +944,8 @@ export const chapter085: ChapterDefinition = {
       templateParts: ['Wir sehen den ', ' Jungen im Park.'],
       slots: [{ id: 'slot1', correctWord: 'weinenden' }],
       wordBank: ['weinenden', 'weinende', 'weinendes', 'weinender'],
-      explanation: 'Jungen is masculine accusative after the der-word den, which takes the weak ending -en.',
+      explanation:
+        'Jungen is masculine accusative after the der-word den, which takes the weak ending -en.',
     },
     {
       id: 'ch85-ex-35',
@@ -834,7 +959,8 @@ export const chapter085: ChapterDefinition = {
       templateParts: ['Ich habe einen ', ' Mann gesehen.'],
       slots: [{ id: 'slot1', correctWord: 'schlafenden' }],
       wordBank: ['schlafenden', 'schlafende', 'schlafendes', 'schlafender'],
-      explanation: 'Mann is masculine accusative after the ein-word einen, which takes the mixed ending -en.',
+      explanation:
+        'Mann is masculine accusative after the ein-word einen, which takes the mixed ending -en.',
     },
     {
       id: 'ch85-ex-36',
@@ -848,7 +974,8 @@ export const chapter085: ChapterDefinition = {
       templateParts: ['Mit den ', ' Kindern war der Tag schön.'],
       slots: [{ id: 'slot1', correctWord: 'lachenden' }],
       wordBank: ['lachenden', 'lachende', 'lachendes', 'lachender'],
-      explanation: 'Dative plural adjectives always take -en, whatever the article type: den lachenden Kindern.',
+      explanation:
+        'Dative plural adjectives always take -en, whatever the article type: den lachenden Kindern.',
     },
     {
       id: 'ch85-ex-37',
@@ -856,13 +983,18 @@ export const chapter085: ChapterDefinition = {
       order: 37,
       type: 'dragToSlots',
       level: 'transfer',
-      grammarFocus: ['adjective-endings', 'strong-endings', 'expanded-participial-phrase'],
+      grammarFocus: [
+        'adjective-endings',
+        'strong-endings',
+        'expanded-participial-phrase',
+      ],
       instruction: 'Drag the correctly declined participle into the gap.',
       prompt: 'Schnell ___ Bäume brauchen viel Wasser. (wachsen)',
       templateParts: ['Schnell ', ' Bäume brauchen viel Wasser.'],
       slots: [{ id: 'slot1', correctWord: 'wachsende' }],
       wordBank: ['wachsende', 'wachsender', 'wachsendes', 'wachsenden'],
-      explanation: 'With no article, plural nominative adjectives take the strong ending -e: schnell wachsende Bäume.',
+      explanation:
+        'With no article, plural nominative adjectives take the strong ending -e: schnell wachsende Bäume.',
     },
     {
       id: 'ch85-ex-38',
@@ -876,7 +1008,8 @@ export const chapter085: ChapterDefinition = {
       templateParts: ['Das ist ein ', ' Argument.'],
       slots: [{ id: 'slot1', correctWord: 'überzeugendes' }],
       wordBank: ['überzeugendes', 'überzeugende', 'überzeugender', 'überzeugenden'],
-      explanation: 'Argument is neuter, and ein is an ein-word, so the mixed nominative ending is -es: überzeugendes.',
+      explanation:
+        'Argument is neuter, and ein is an ein-word, so the mixed nominative ending is -es: überzeugendes.',
     },
     {
       id: 'ch85-ex-39',
@@ -890,7 +1023,8 @@ export const chapter085: ChapterDefinition = {
       templateParts: ['Trotz des ', ' Kindes blieben wir ruhig.'],
       slots: [{ id: 'slot1', correctWord: 'schlafenden' }],
       wordBank: ['schlafenden', 'schlafende', 'schlafendes', 'schlafender'],
-      explanation: 'Kindes is neuter genitive after the der-word des, which takes the weak ending -en, just like in the dative and accusative.',
+      explanation:
+        'Kindes is neuter genitive after the der-word des, which takes the weak ending -en, just like in the dative and accusative.',
     },
     {
       id: 'ch85-ex-40',
@@ -904,7 +1038,8 @@ export const chapter085: ChapterDefinition = {
       templateParts: ['Mit ', ' Mut gab er nicht auf.'],
       slots: [{ id: 'slot1', correctWord: 'sinkendem' }],
       wordBank: ['sinkendem', 'sinkende', 'sinkender', 'sinkendes'],
-      explanation: 'With no article, masculine dative adjectives take the strong ending -em: mit sinkendem Mut.',
+      explanation:
+        'With no article, masculine dative adjectives take the strong ending -em: mit sinkendem Mut.',
     },
     {
       id: 'ch85-ex-41',
@@ -922,7 +1057,8 @@ export const chapter085: ChapterDefinition = {
         { id: 'p4', left: 'tanzen', right: 'tanzend' },
         { id: 'p5', left: 'singen', right: 'singend' },
       ],
-      explanation: 'The Partizip I is always formed the same simple way: infinitive + -d.',
+      explanation:
+        'The Partizip I is always formed the same simple way: infinitive + -d.',
     },
     {
       id: 'ch85-ex-42',
@@ -934,13 +1070,34 @@ export const chapter085: ChapterDefinition = {
       instruction: 'Match each Partizip I phrase with its English meaning.',
       prompt: 'Partizip I phrase → meaning',
       pairs: [
-        { id: 'p1', left: 'das kochende Wasser', right: 'the water that is boiling right now' },
-        { id: 'p2', left: 'der schließende Laden', right: 'the shop that is closing right now' },
-        { id: 'p3', left: 'die sinkende Sonne', right: 'the sun that is setting right now' },
-        { id: 'p4', left: 'das wachsende Kind', right: 'the child that is growing right now' },
-        { id: 'p5', left: 'der lachende Mann', right: 'the man who is laughing right now' },
+        {
+          id: 'p1',
+          left: 'das kochende Wasser',
+          right: 'the water that is boiling right now',
+        },
+        {
+          id: 'p2',
+          left: 'der schließende Laden',
+          right: 'the shop that is closing right now',
+        },
+        {
+          id: 'p3',
+          left: 'die sinkende Sonne',
+          right: 'the sun that is setting right now',
+        },
+        {
+          id: 'p4',
+          left: 'das wachsende Kind',
+          right: 'the child that is growing right now',
+        },
+        {
+          id: 'p5',
+          left: 'der lachende Mann',
+          right: 'the man who is laughing right now',
+        },
       ],
-      explanation: 'A Partizip I always describes an active, ongoing action happening right now, or as a general characteristic.',
+      explanation:
+        'A Partizip I always describes an active, ongoing action happening right now, or as a general characteristic.',
     },
     {
       id: 'ch85-ex-43',
@@ -953,12 +1110,21 @@ export const chapter085: ChapterDefinition = {
       prompt: 'Partizip II phrase → meaning',
       pairs: [
         { id: 'p1', left: 'das gekochte Ei', right: 'the egg that has been cooked' },
-        { id: 'p2', left: 'der geschlossene Laden', right: 'the shop that has been closed' },
+        {
+          id: 'p2',
+          left: 'der geschlossene Laden',
+          right: 'the shop that has been closed',
+        },
         { id: 'p3', left: 'die geöffnete Tür', right: 'the door that has been opened' },
         { id: 'p4', left: 'das gelesene Buch', right: 'the book that has been read' },
-        { id: 'p5', left: 'das geschriebene Buch', right: 'the book that has been written' },
+        {
+          id: 'p5',
+          left: 'das geschriebene Buch',
+          right: 'the book that has been written',
+        },
       ],
-      explanation: 'A Partizip II used adjectivally is typically passive and completed: something was done to the noun, and the action is already over.',
+      explanation:
+        'A Partizip II used adjectivally is typically passive and completed: something was done to the noun, and the action is already over.',
     },
     {
       id: 'ch85-ex-44',
@@ -971,12 +1137,29 @@ export const chapter085: ChapterDefinition = {
       prompt: 'Relative clause → participial phrase',
       pairs: [
         { id: 'p1', left: 'der Mann, der dort steht', right: 'der dort stehende Mann' },
-        { id: 'p2', left: 'die Frau, die am Fenster sitzt', right: 'die am Fenster sitzende Frau' },
-        { id: 'p3', left: 'das Kind, das im Garten spielt', right: 'das im Garten spielende Kind' },
-        { id: 'p4', left: 'der Zug, der gerade ankommt', right: 'der gerade ankommende Zug' },
-        { id: 'p5', left: 'die Kinder, die im Park lachen', right: 'die im Park lachenden Kinder' },
+        {
+          id: 'p2',
+          left: 'die Frau, die am Fenster sitzt',
+          right: 'die am Fenster sitzende Frau',
+        },
+        {
+          id: 'p3',
+          left: 'das Kind, das im Garten spielt',
+          right: 'das im Garten spielende Kind',
+        },
+        {
+          id: 'p4',
+          left: 'der Zug, der gerade ankommt',
+          right: 'der gerade ankommende Zug',
+        },
+        {
+          id: 'p5',
+          left: 'die Kinder, die im Park lachen',
+          right: 'die im Park lachenden Kinder',
+        },
       ],
-      explanation: 'Each relative clause folds into a compact participial phrase in front of the noun, keeping any adverbs or phrases in their original order.',
+      explanation:
+        'Each relative clause folds into a compact participial phrase in front of the noun, keeping any adverbs or phrases in their original order.',
     },
     {
       id: 'ch85-ex-45',
@@ -988,13 +1171,18 @@ export const chapter085: ChapterDefinition = {
       instruction: 'Match each declension pattern with an example phrase.',
       prompt: 'Declension pattern → example phrase',
       pairs: [
-        { id: 'p1', left: 'masculine nominative (der-word)', right: 'der weinende Junge' },
+        {
+          id: 'p1',
+          left: 'masculine nominative (der-word)',
+          right: 'der weinende Junge',
+        },
         { id: 'p2', left: 'neuter nominative (ein-word)', right: 'ein schlafendes Kind' },
         { id: 'p3', left: 'plural nominative (no article)', right: 'spielende Kinder' },
         { id: 'p4', left: 'dative plural', right: 'mit den lächelnden Kindern' },
         { id: 'p5', left: 'genitive neuter (der-word)', right: 'des schlafenden Kindes' },
       ],
-      explanation: 'The Partizip I follows exactly the same three declension patterns (weak, mixed, strong) as any other adjective from Chapter 84.',
+      explanation:
+        'The Partizip I follows exactly the same three declension patterns (weak, mixed, strong) as any other adjective from Chapter 84.',
     },
     {
       id: 'ch85-ex-46',
@@ -1012,7 +1200,8 @@ export const chapter085: ChapterDefinition = {
         { id: 'p4', left: 'lesen', right: 'gelesen' },
         { id: 'p5', left: 'schreiben', right: 'geschrieben' },
       ],
-      explanation: 'Unlike the fully regular Partizip I, the Partizip II from Chapter 28 often has ge- and, for strong verbs, an irregular stem.',
+      explanation:
+        'Unlike the fully regular Partizip I, the Partizip II from Chapter 28 often has ge- and, for strong verbs, an irregular stem.',
     },
     {
       id: 'ch85-ex-47',
@@ -1026,7 +1215,8 @@ export const chapter085: ChapterDefinition = {
       tokens: ['Das', 'weinen', 'Kind', 'braucht', 'Trost.'],
       errorTokenIndex: 1,
       correction: 'weinende',
-      explanation: 'The bare infinitive weinen is not a participle; it needs -d plus the weak nominative ending: weinende.',
+      explanation:
+        'The bare infinitive weinen is not a participle; it needs -d plus the weak nominative ending: weinende.',
     },
     {
       id: 'ch85-ex-48',
@@ -1040,7 +1230,8 @@ export const chapter085: ChapterDefinition = {
       tokens: ['Das', 'weinend', 'Kind', 'braucht', 'Trost.'],
       errorTokenIndex: 1,
       correction: 'weinende',
-      explanation: 'weinend is correctly formed but still needs its adjective ending before a noun: weinende, not the bare participle.',
+      explanation:
+        'weinend is correctly formed but still needs its adjective ending before a noun: weinende, not the bare participle.',
     },
     {
       id: 'ch85-ex-49',
@@ -1054,7 +1245,8 @@ export const chapter085: ChapterDefinition = {
       tokens: ['Ein', 'schlafende', 'Kind', 'liegt', 'im', 'Bett.'],
       errorTokenIndex: 1,
       correction: 'schlafendes',
-      explanation: 'Kind is neuter, and ein is an ein-word, so the mixed nominative ending must be -es: schlafendes, not -e.',
+      explanation:
+        'Kind is neuter, and ein is an ein-word, so the mixed nominative ending must be -es: schlafendes, not -e.',
     },
     {
       id: 'ch85-ex-50',
@@ -1068,7 +1260,8 @@ export const chapter085: ChapterDefinition = {
       tokens: ['Der', 'Mann', 'sieht', 'ein', 'spielend', 'Kind', 'im', 'Park.'],
       errorTokenIndex: 4,
       correction: 'spielendes',
-      explanation: 'A Partizip I before a noun always needs its adjective ending; Kind is neuter, so ein takes the mixed ending -es: spielendes.',
+      explanation:
+        'A Partizip I before a noun always needs its adjective ending; Kind is neuter, so ein takes the mixed ending -es: spielendes.',
     },
     {
       id: 'ch85-ex-51',
@@ -1082,7 +1275,8 @@ export const chapter085: ChapterDefinition = {
       tokens: ['Das', 'kochende', 'Ei', 'ist', 'schon', 'kalt.'],
       errorTokenIndex: 1,
       correction: 'gekochte',
-      explanation: 'An egg that is already cold has finished cooking, so the passive, completed Partizip II is needed: gekochte, not the active, ongoing kochende.',
+      explanation:
+        'An egg that is already cold has finished cooking, so the passive, completed Partizip II is needed: gekochte, not the active, ongoing kochende.',
     },
     {
       id: 'ch85-ex-52',
@@ -1096,7 +1290,8 @@ export const chapter085: ChapterDefinition = {
       tokens: ['Mit', 'den', 'lächelnde', 'Kindern', 'war', 'der', 'Tag', 'schön.'],
       errorTokenIndex: 2,
       correction: 'lächelnden',
-      explanation: 'Dative plural adjectives always take -en, regardless of article type: den lächelnden Kindern.',
+      explanation:
+        'Dative plural adjectives always take -en, regardless of article type: den lächelnden Kindern.',
     },
     {
       id: 'ch85-ex-53',
@@ -1114,7 +1309,8 @@ export const chapter085: ChapterDefinition = {
         { id: 's4', text: 'ist' },
         { id: 's5', text: 'mein Nachbar.' },
       ],
-      explanation: 'dort sits directly before the participle stehende, and the whole phrase stays directly before Mann.',
+      explanation:
+        'dort sits directly before the participle stehende, and the whole phrase stays directly before Mann.',
     },
     {
       id: 'ch85-ex-54',
@@ -1132,7 +1328,8 @@ export const chapter085: ChapterDefinition = {
         { id: 's4', text: 'liest' },
         { id: 's5', text: 'ein Buch.' },
       ],
-      explanation: 'The prepositional phrase am Fenster moves in front of the participle sitzende, and the whole unit stays directly before Frau.',
+      explanation:
+        'The prepositional phrase am Fenster moves in front of the participle sitzende, and the whole unit stays directly before Frau.',
     },
     {
       id: 'ch85-ex-55',
@@ -1150,7 +1347,8 @@ export const chapter085: ChapterDefinition = {
         { id: 's4', text: 'steht' },
         { id: 's5', text: 'im Garten.' },
       ],
-      explanation: 'The adverb schnell sits directly before the participle wachsende, and the whole expanded phrase stays directly before Baum.',
+      explanation:
+        'The adverb schnell sits directly before the participle wachsende, and the whole expanded phrase stays directly before Baum.',
     },
     {
       id: 'ch85-ex-56',
@@ -1167,7 +1365,8 @@ export const chapter085: ChapterDefinition = {
         { id: 's3', text: 'die im Park spielenden' },
         { id: 's4', text: 'Kinder.' },
       ],
-      explanation: 'The prepositional phrase im Park moves in front of the participle spielenden, and the whole unit stays directly before Kinder.',
+      explanation:
+        'The prepositional phrase im Park moves in front of the participle spielenden, and the whole unit stays directly before Kinder.',
     },
     {
       id: 'ch85-ex-57',
@@ -1185,7 +1384,8 @@ export const chapter085: ChapterDefinition = {
         { id: 'd', text: 'tanzender' },
       ],
       correctOptionId: 'a',
-      explanation: 'tanzen + -d = tanzend, the bare Partizip I with no adjective ending yet.',
+      explanation:
+        'tanzen + -d = tanzend, the bare Partizip I with no adjective ending yet.',
     },
     {
       id: 'ch85-ex-58',
@@ -1203,7 +1403,8 @@ export const chapter085: ChapterDefinition = {
         { id: 'd', text: 'sinkender' },
       ],
       correctOptionId: 'a',
-      explanation: 'Even though sinken has an irregular Partizip II (gesunken), its Partizip I is fully regular: sinken → sinkend.',
+      explanation:
+        'Even though sinken has an irregular Partizip II (gesunken), its Partizip I is fully regular: sinken → sinkend.',
     },
     {
       id: 'ch85-ex-59',
@@ -1221,7 +1422,8 @@ export const chapter085: ChapterDefinition = {
         { id: 'd', text: 'sinkendes' },
       ],
       correctOptionId: 'a',
-      explanation: 'Sonne is feminine, and die is a der-word, so the weak nominative ending is -e: sinkende.',
+      explanation:
+        'Sonne is feminine, and die is a der-word, so the weak nominative ending is -e: sinkende.',
     },
     {
       id: 'ch85-ex-60',
@@ -1239,7 +1441,8 @@ export const chapter085: ChapterDefinition = {
         { id: 'd', text: 'singendes' },
       ],
       correctOptionId: 'a',
-      explanation: 'Chores is masculine genitive after the der-word des, which takes the weak ending -en.',
+      explanation:
+        'Chores is masculine genitive after the der-word des, which takes the weak ending -en.',
     },
     {
       id: 'ch85-ex-61',
@@ -1257,7 +1460,8 @@ export const chapter085: ChapterDefinition = {
         { id: 'd', text: 'the door that never opens' },
       ],
       correctOptionId: 'a',
-      explanation: 'geöffnet is the Partizip II of öffnen used adjectivally: passive and completed — the door has already been opened.',
+      explanation:
+        'geöffnet is the Partizip II of öffnen used adjectivally: passive and completed — the door has already been opened.',
     },
     {
       id: 'ch85-ex-62',
@@ -1275,7 +1479,8 @@ export const chapter085: ChapterDefinition = {
         { id: 'd', text: 'the door that stays shut' },
       ],
       correctOptionId: 'a',
-      explanation: 'öffnend is the Partizip I of öffnen: active and ongoing — the door is itself in the process of opening right now.',
+      explanation:
+        'öffnend is the Partizip I of öffnen: active and ongoing — the door is itself in the process of opening right now.',
     },
     {
       id: 'ch85-ex-63',
@@ -1293,7 +1498,8 @@ export const chapter085: ChapterDefinition = {
         { id: 'd', text: 'das Kind im Garten spielende' },
       ],
       correctOptionId: 'a',
-      explanation: 'im Garten moves in front of the participle spielende, and the whole phrase stays directly before Kind; gespielte would wrongly use the Partizip II.',
+      explanation:
+        'im Garten moves in front of the participle spielende, and the whole phrase stays directly before Kind; gespielte would wrongly use the Partizip II.',
     },
     {
       id: 'ch85-ex-64',
@@ -1302,7 +1508,8 @@ export const chapter085: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['formation', 'partizip-i'],
-      instruction: 'Write the present participle (Partizip I). Capitalisation is not checked.',
+      instruction:
+        'Write the present participle (Partizip I). Capitalisation is not checked.',
       prompt: 'tanzen → ___',
       acceptedAnswers: ['tanzend'],
       answerMode: 'caseInsensitive',
@@ -1317,13 +1524,15 @@ export const chapter085: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['formation', 'partizip-i'],
-      instruction: 'Write the present participle (Partizip I). Capitalisation is not checked.',
+      instruction:
+        'Write the present participle (Partizip I). Capitalisation is not checked.',
       prompt: 'sinken → ___',
       acceptedAnswers: ['sinkend'],
       answerMode: 'caseInsensitive',
       placeholder: 'sinkend',
       maxLength: 20,
-      explanation: 'sinken + -d = sinkend, regular even though sinken has an irregular Partizip II (gesunken).',
+      explanation:
+        'sinken + -d = sinkend, regular even though sinken has an irregular Partizip II (gesunken).',
     },
     {
       id: 'ch85-ex-66',
@@ -1332,7 +1541,8 @@ export const chapter085: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['formation', 'partizip-i'],
-      instruction: 'Write the present participle (Partizip I). Capitalisation is not checked.',
+      instruction:
+        'Write the present participle (Partizip I). Capitalisation is not checked.',
       prompt: 'überzeugen → ___',
       acceptedAnswers: ['überzeugend'],
       answerMode: 'caseInsensitive',
@@ -1347,13 +1557,15 @@ export const chapter085: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['adjective-endings', 'weak-endings', 'sentence-completion'],
-      instruction: 'Complete the sentence with the correct form of the participle. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct form of the participle. Capitalisation is not checked.',
       prompt: 'Die ___ Sonne färbt den Himmel rot. (sinken)',
       acceptedAnswers: ['sinkende'],
       answerMode: 'caseInsensitive',
       placeholder: 'sinkende',
       maxLength: 20,
-      explanation: 'Sonne is feminine, and die takes the weak nominative ending -e: sinkende.',
+      explanation:
+        'Sonne is feminine, and die takes the weak nominative ending -e: sinkende.',
     },
     {
       id: 'ch85-ex-68',
@@ -1362,13 +1574,15 @@ export const chapter085: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['adjective-endings', 'mixed-endings', 'sentence-completion'],
-      instruction: 'Complete the sentence with the correct form of the participle. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct form of the participle. Capitalisation is not checked.',
       prompt: 'Das ist ein ___ Argument. (überzeugen)',
       acceptedAnswers: ['überzeugendes'],
       answerMode: 'caseInsensitive',
       placeholder: 'überzeugendes',
       maxLength: 20,
-      explanation: 'Argument is neuter; ein takes the mixed nominative ending -es: überzeugendes.',
+      explanation:
+        'Argument is neuter; ein takes the mixed nominative ending -es: überzeugendes.',
     },
     {
       id: 'ch85-ex-69',
@@ -1377,13 +1591,15 @@ export const chapter085: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['relative-clause-paraphrase', 'word-order'],
-      instruction: 'Rewrite the relative clause as a participial phrase. Capitalisation is not checked.',
+      instruction:
+        'Rewrite the relative clause as a participial phrase. Capitalisation is not checked.',
       prompt: 'die Kinder, die im Park lachen → ___',
       acceptedAnswers: ['die im Park lachenden Kinder'],
       answerMode: 'caseInsensitive',
       placeholder: 'die im Park lachenden Kinder',
       maxLength: 40,
-      explanation: 'im Park moves in front of the participle lachenden, which takes the plural -en ending after die.',
+      explanation:
+        'im Park moves in front of the participle lachenden, which takes the plural -en ending after die.',
     },
     {
       id: 'ch85-ex-70',
@@ -1391,14 +1607,21 @@ export const chapter085: ChapterDefinition = {
       order: 70,
       type: 'textInput',
       level: 'production',
-      grammarFocus: ['present-vs-past-participle', 'passive-completed', 'sentence-completion'],
-      instruction: 'Complete the sentence with the correct form of the participle. Capitalisation is not checked.',
-      prompt: 'Die Tür ist schon offen, jemand hat sie geöffnet. Das ist die ___ Tür. (öffnen)',
+      grammarFocus: [
+        'present-vs-past-participle',
+        'passive-completed',
+        'sentence-completion',
+      ],
+      instruction:
+        'Complete the sentence with the correct form of the participle. Capitalisation is not checked.',
+      prompt:
+        'Die Tür ist schon offen, jemand hat sie geöffnet. Das ist die ___ Tür. (öffnen)',
       acceptedAnswers: ['geöffnete'],
       answerMode: 'caseInsensitive',
       placeholder: 'geöffnete',
       maxLength: 20,
-      explanation: 'The opening is already finished and was done to the door, so the passive, completed Partizip II is needed; Tür is feminine, and die takes the weak ending -e: geöffnete.',
+      explanation:
+        'The opening is already finished and was done to the door, so the passive, completed Partizip II is needed; Tür is feminine, and die takes the weak ending -e: geöffnete.',
     },
   ],
 };

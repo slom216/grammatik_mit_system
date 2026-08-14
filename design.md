@@ -107,7 +107,14 @@ The system uses two font families:
 If external web fonts are undesirable, use:
 
 ```css
-font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+font-family:
+  Inter,
+  ui-sans-serif,
+  system-ui,
+  -apple-system,
+  BlinkMacSystemFont,
+  'Segoe UI',
+  sans-serif;
 ```
 
 for the entire interface rather than substituting several unrelated fonts.
@@ -178,7 +185,7 @@ Depth should be understated.
 Standard surfaces use either:
 
 ```css
-border: 1px solid #E2E5E9;
+border: 1px solid #e2e5e9;
 ```
 
 or a very subtle shadow:
@@ -263,8 +270,8 @@ A strong hero should communicate the product or business within a few seconds.
 ### Primary
 
 ```css
-background: #5B5CE2;
-color: #FFFFFF;
+background: #5b5ce2;
+color: #ffffff;
 height: 48px;
 padding: 0 22px;
 border-radius: 12px;
@@ -274,7 +281,7 @@ font-weight: 600;
 Hover:
 
 ```css
-background: #494AC8;
+background: #494ac8;
 transform: translateY(-1px);
 ```
 
@@ -285,9 +292,9 @@ Do not use large scale animations.
 Secondary buttons use a white background with a visible neutral border.
 
 ```css
-background: #FFFFFF;
-border: 1px solid #C8CDD4;
-color: #1A1D23;
+background: #ffffff;
+border: 1px solid #c8cdd4;
+color: #1a1d23;
 ```
 
 ### Ghost
@@ -303,8 +310,8 @@ Cards should be used when content genuinely forms an independent unit.
 Standard card:
 
 ```css
-background: #FFFFFF;
-border: 1px solid #E2E5E9;
+background: #ffffff;
+border: 1px solid #e2e5e9;
 border-radius: 16px;
 padding: 28px;
 ```
@@ -321,8 +328,8 @@ Inputs:
 
 ```css
 height: 48px;
-background: #FFFFFF;
-border: 1px solid #C8CDD4;
+background: #ffffff;
+border: 1px solid #c8cdd4;
 border-radius: 12px;
 padding: 0 14px;
 font-size: 16px;
@@ -331,7 +338,7 @@ font-size: 16px;
 Focus:
 
 ```css
-border-color: #5B5CE2;
+border-color: #5b5ce2;
 box-shadow: 0 0 0 3px rgba(91, 92, 226, 0.14);
 ```
 
@@ -426,7 +433,7 @@ A small uppercase or compact semibold label above a section heading.
 font: 600 12px/16px Inter;
 letter-spacing: 0.08em;
 text-transform: uppercase;
-color: #5B5CE2;
+color: #5b5ce2;
 ```
 
 Use sparingly.
@@ -464,7 +471,7 @@ Use a dark footer:
 
 ```css
 background: #111318;
-color: #F7F8FA;
+color: #f7f8fa;
 ```
 
 Structure content with generous spacing and clear link groups.

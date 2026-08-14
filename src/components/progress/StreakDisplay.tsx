@@ -1,13 +1,13 @@
-import type { ExerciseHistory } from '../../schemas/progressSchema';
 import { calculateStreak } from '../../features/progress/streak';
 
 export interface StreakDisplayProps {
-  histories: readonly ExerciseHistory[];
+  /** Exercises answered per local day, `YYYY-MM-DD` → count. */
+  answersByDay: Record<string, number>;
   now?: Date;
 }
 
-export function StreakDisplay({ histories, now }: StreakDisplayProps) {
-  const streak = calculateStreak(histories, now);
+export function StreakDisplay({ answersByDay, now }: StreakDisplayProps) {
+  const streak = calculateStreak(answersByDay, now);
   return (
     <p className="row">
       <span className="badge badge--accent">

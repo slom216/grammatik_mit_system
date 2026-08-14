@@ -34,8 +34,8 @@ export const chapter032: ChapterDefinition = {
         id: 'ch32-rule-01',
         heading: 'um for clock times',
         paragraphs: [
-          'Use um whenever you name a specific clock time: um acht Uhr (at eight o\'clock), um halb neun (at half past eight), um Mitternacht (at midnight). This is the most common temporal preposition and answers the question wann? (when?) for a precise point on the clock.',
-          'Der Unterricht beginnt um neun Uhr. (Class starts at nine o\'clock.) The word Uhr can be dropped in casual speech once the time is clear from context, but um itself is never dropped.',
+          "Use um whenever you name a specific clock time: um acht Uhr (at eight o'clock), um halb neun (at half past eight), um Mitternacht (at midnight). This is the most common temporal preposition and answers the question wann? (when?) for a precise point on the clock.",
+          "Der Unterricht beginnt um neun Uhr. (Class starts at nine o'clock.) The word Uhr can be dropped in casual speech once the time is clear from context, but um itself is never dropped.",
         ],
       },
       {
@@ -66,7 +66,7 @@ export const chapter032: ChapterDefinition = {
         id: 'ch32-rule-05',
         heading: 'ab for an open-ended starting point',
         paragraphs: [
-          'Use ab when you name a point where something begins and continues onward, with no fixed end mentioned: ab Montag (from Monday onward), ab nächster Woche (from next week on), ab 9 Uhr (from 9 o\'clock onward, e.g. for opening hours that continue all day).',
+          "Use ab when you name a point where something begins and continues onward, with no fixed end mentioned: ab Montag (from Monday onward), ab nächster Woche (from next week on), ab 9 Uhr (from 9 o'clock onward, e.g. for opening hours that continue all day).",
           'The key difference from von ... bis is the missing end point: Ab Montag arbeite ich in der neuen Firma. (From Monday, I am working at the new company — an ongoing change, not a closed time span.) If you can add "onward" or "from now on" to the English translation, ab is usually the right choice.',
         ],
       },
@@ -85,13 +85,17 @@ export const chapter032: ChapterDefinition = {
         title: 'Which preposition for which time expression?',
         columns: ['Time expression type', 'Preposition', 'Example'],
         rows: [
-          ['Clock time', 'um', 'um 8 Uhr (at 8 o\'clock)'],
+          ['Clock time', 'um', "um 8 Uhr (at 8 o'clock)"],
           ['Day of the week', 'am', 'am Montag (on Monday)'],
           ['Date', 'am', 'am 3. Mai (on 3 May)'],
           ['Month', 'im', 'im April (in April)'],
           ['Season', 'im', 'im Winter (in winter)'],
-          ['Time span (start and end)', 'von ... bis', 'von Montag bis Freitag (from Monday to Friday)'],
-          ['Starting point (open-ended)', 'ab', 'ab 9 Uhr (from 9 o\'clock onward)'],
+          [
+            'Time span (start and end)',
+            'von ... bis',
+            'von Montag bis Freitag (from Monday to Friday)',
+          ],
+          ['Starting point (open-ended)', 'ab', "ab 9 Uhr (from 9 o'clock onward)"],
         ],
       },
       {
@@ -122,13 +126,13 @@ export const chapter032: ChapterDefinition = {
     examples: [
       {
         german: 'Ich stehe um sieben Uhr auf.',
-        english: 'I get up at seven o\'clock.',
+        english: "I get up at seven o'clock.",
         highlight: ['um sieben Uhr'],
         explanation: 'um introduces a specific clock time.',
       },
       {
         german: 'Der Unterricht beginnt um neun Uhr.',
-        english: 'Class starts at nine o\'clock.',
+        english: "Class starts at nine o'clock.",
         highlight: ['um neun Uhr'],
         explanation: 'Clock times always take um, never am or im.',
       },
@@ -140,7 +144,7 @@ export const chapter032: ChapterDefinition = {
       },
       {
         german: 'Am 3. Mai hat meine Schwester Geburtstag.',
-        english: 'My sister\'s birthday is on 3 May.',
+        english: "My sister's birthday is on 3 May.",
         highlight: ['Am 3. Mai'],
         explanation: 'Dates take am, just like days of the week.',
       },
@@ -160,7 +164,8 @@ export const chapter032: ChapterDefinition = {
         german: 'Das Geschäft hat von neun bis achtzehn Uhr geöffnet.',
         english: 'The shop is open from nine to six.',
         highlight: ['von neun bis achtzehn Uhr'],
-        explanation: 'von ... bis frames a time span that has both a clear start and a clear end.',
+        explanation:
+          'von ... bis frames a time span that has both a clear start and a clear end.',
       },
       {
         german: 'Ab Montag arbeite ich in der neuen Firma.',
@@ -190,7 +195,8 @@ export const chapter032: ChapterDefinition = {
         german: 'Ab nächster Woche lerne ich jeden Tag Vokabeln.',
         english: 'From next week on, I will study vocabulary every day.',
         highlight: ['Ab nächster Woche'],
-        explanation: 'ab signals an ongoing change starting from a given point, not a closed time span.',
+        explanation:
+          'ab signals an ongoing change starting from a given point, not a closed time span.',
       },
     ],
     commonMistakes: [
@@ -212,7 +218,8 @@ export const chapter032: ChapterDefinition = {
       {
         incorrect: 'Das Geschäft hat von neun bis um achtzehn Uhr geöffnet.',
         correct: 'Das Geschäft hat von neun bis achtzehn Uhr geöffnet.',
-        explanation: 'The second half of a von ... bis pair does not repeat um; bis alone introduces the end point.',
+        explanation:
+          'The second half of a von ... bis pair does not repeat um; bis alone introduces the end point.',
       },
       {
         incorrect: 'In Winter ist es kalt.',
@@ -250,7 +257,7 @@ export const chapter032: ChapterDefinition = {
         { id: 'd', text: 'an' },
       ],
       correctOptionId: 'a',
-      explanation: 'Clock times always take um: um acht Uhr (at eight o\'clock).',
+      explanation: "Clock times always take um: um acht Uhr (at eight o'clock).",
     },
     {
       id: 'ch32-ex-02',
@@ -358,7 +365,8 @@ export const chapter032: ChapterDefinition = {
         { id: 'd', text: 'an dem' },
       ],
       correctOptionId: 'a',
-      explanation: 'Seasons use the contracted form im; the uncontracted in dem is not used here in everyday speech.',
+      explanation:
+        'Seasons use the contracted form im; the uncontracted in dem is not used here in everyday speech.',
     },
     {
       id: 'ch32-ex-08',
@@ -394,7 +402,8 @@ export const chapter032: ChapterDefinition = {
         { id: 'd', text: 'um' },
       ],
       correctOptionId: 'a',
-      explanation: 'von ... bis frames a time span; bis introduces the end point and is never replaced by um.',
+      explanation:
+        'von ... bis frames a time span; bis introduces the end point and is never replaced by um.',
     },
     {
       id: 'ch32-ex-10',
@@ -412,7 +421,8 @@ export const chapter032: ChapterDefinition = {
         { id: 'd', text: 'von' },
       ],
       correctOptionId: 'a',
-      explanation: 'ab marks an open-ended starting point (from next week onward); von would need a matching bis.',
+      explanation:
+        'ab marks an open-ended starting point (from next week onward); von would need a matching bis.',
     },
     {
       id: 'ch32-ex-11',
@@ -430,7 +440,8 @@ export const chapter032: ChapterDefinition = {
         { id: 'd', text: 'im' },
       ],
       correctOptionId: 'a',
-      explanation: 'A single specific departure time takes um; ab would suggest an ongoing state starting from 14 Uhr, not one departure.',
+      explanation:
+        'A single specific departure time takes um; ab would suggest an ongoing state starting from 14 Uhr, not one departure.',
     },
     {
       id: 'ch32-ex-12',
@@ -568,7 +579,8 @@ export const chapter032: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'um',
       maxLength: 10,
-      explanation: 'Clock times, including half-hour expressions like halb sieben, take um.',
+      explanation:
+        'Clock times, including half-hour expressions like halb sieben, take um.',
     },
     {
       id: 'ch32-ex-21',
@@ -628,7 +640,10 @@ export const chapter032: ChapterDefinition = {
       instruction:
         'Write a complete sentence using the cues and the correct temporal preposition. Capitalisation is checked; no full stop is required.',
       prompt: 'das Konzert – beginnen – 21 Uhr (um)',
-      acceptedAnswers: ['Das Konzert beginnt um 21 Uhr.', 'Das Konzert beginnt um 21 Uhr'],
+      acceptedAnswers: [
+        'Das Konzert beginnt um 21 Uhr.',
+        'Das Konzert beginnt um 21 Uhr',
+      ],
       answerMode: 'normalized',
       placeholder: 'Das Konzert beginnt ...',
       maxLength: 60,
@@ -771,9 +786,21 @@ export const chapter032: ChapterDefinition = {
       prompt: 'Which preposition goes with which type of time expression?',
       pairs: [
         { id: 'ch32-ex-34-p1', left: 'Uhrzeit (z. B. acht Uhr)', right: 'um' },
-        { id: 'ch32-ex-34-p2', left: 'Wochentag oder Datum (z. B. Montag, 3. Mai)', right: 'am' },
-        { id: 'ch32-ex-34-p3', left: 'Monat oder Jahreszeit (z. B. April, Winter)', right: 'im' },
-        { id: 'ch32-ex-34-p4', left: 'Zeitspanne mit Anfang und Ende', right: 'von ... bis' },
+        {
+          id: 'ch32-ex-34-p2',
+          left: 'Wochentag oder Datum (z. B. Montag, 3. Mai)',
+          right: 'am',
+        },
+        {
+          id: 'ch32-ex-34-p3',
+          left: 'Monat oder Jahreszeit (z. B. April, Winter)',
+          right: 'im',
+        },
+        {
+          id: 'ch32-ex-34-p4',
+          left: 'Zeitspanne mit Anfang und Ende',
+          right: 'von ... bis',
+        },
         { id: 'ch32-ex-34-p5', left: 'Offener Beginn ohne Ende', right: 'ab' },
       ],
       explanation:
@@ -866,7 +893,11 @@ export const chapter032: ChapterDefinition = {
         { id: 'ch32-ex-39-p1', left: "at eight o'clock", right: 'um acht Uhr' },
         { id: 'ch32-ex-39-p2', left: 'on Monday', right: 'am Montag' },
         { id: 'ch32-ex-39-p3', left: 'in winter', right: 'im Winter' },
-        { id: 'ch32-ex-39-p4', left: 'from Monday to Friday', right: 'von Montag bis Freitag' },
+        {
+          id: 'ch32-ex-39-p4',
+          left: 'from Monday to Friday',
+          right: 'von Montag bis Freitag',
+        },
         { id: 'ch32-ex-39-p5', left: 'from next week on', right: 'ab nächster Woche' },
       ],
       explanation:
@@ -1034,7 +1065,8 @@ export const chapter032: ChapterDefinition = {
         { id: 'd', text: 'im' },
       ],
       correctOptionId: 'a',
-      explanation: 'ab marks an open-ended starting point; von would need a matching bis.',
+      explanation:
+        'ab marks an open-ended starting point; von would need a matching bis.',
     },
     {
       id: 'ch32-ex-50',
@@ -1052,7 +1084,8 @@ export const chapter032: ChapterDefinition = {
         { id: 'd', text: 'in dem' },
       ],
       correctOptionId: 'a',
-      explanation: 'A holiday is treated like a day expression and takes the contracted form am, not the uncontracted an dem.',
+      explanation:
+        'A holiday is treated like a day expression and takes the contracted form am, not the uncontracted an dem.',
     },
     {
       id: 'ch32-ex-51',
@@ -1223,7 +1256,10 @@ export const chapter032: ChapterDefinition = {
       instruction:
         'Write a complete sentence using the cues and the correct temporal preposition. Capitalisation is checked; no full stop is required.',
       prompt: 'die Ferien – beginnen – 15. Juli (am)',
-      acceptedAnswers: ['Die Ferien beginnen am 15. Juli.', 'Die Ferien beginnen am 15. Juli'],
+      acceptedAnswers: [
+        'Die Ferien beginnen am 15. Juli.',
+        'Die Ferien beginnen am 15. Juli',
+      ],
       answerMode: 'normalized',
       placeholder: 'Die Ferien beginnen ...',
       maxLength: 60,

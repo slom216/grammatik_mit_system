@@ -27,7 +27,7 @@ export const chapter079: ChapterDefinition = {
   explanation: {
     introduction: [
       'A purpose clause answers the question wozu? or zu welchem Zweck? (to what end? / for what purpose?) — it explains the goal behind an action, not its cause. English uses "in order to" or "so that" for this job; German has two competing tools that are not interchangeable: um ... zu + infinitive and damit + a full subordinate clause. Choosing correctly between them is not a matter of style — it depends on a single, checkable fact about the sentence: is the subject of the purpose clause the same person/thing as the subject of the main clause, or different?',
-      'If the same person is doing both actions — Ich lerne Deutsch, um in Deutschland zu studieren (I learn German [in order] to study in Germany) — German drops the second subject entirely and uses um ... zu with a bare infinitive at the end. There is no way to name a subject inside an um ... zu phrase; it is simply understood to be identical to the main clause\'s subject. As soon as two different people or things are involved — Ich erkläre es langsam, damit du es verstehst (I explain it slowly so that you understand it) — um ... zu becomes ungrammatical, because it has no slot for a second subject. damit steps in instead, introducing an ordinary subordinate clause with its own subject and its own conjugated verb, built exactly like the weil/wenn/dass clauses from Chapter 46.',
+      "If the same person is doing both actions — Ich lerne Deutsch, um in Deutschland zu studieren (I learn German [in order] to study in Germany) — German drops the second subject entirely and uses um ... zu with a bare infinitive at the end. There is no way to name a subject inside an um ... zu phrase; it is simply understood to be identical to the main clause's subject. As soon as two different people or things are involved — Ich erkläre es langsam, damit du es verstehst (I explain it slowly so that you understand it) — um ... zu becomes ungrammatical, because it has no slot for a second subject. damit steps in instead, introducing an ordinary subordinate clause with its own subject and its own conjugated verb, built exactly like the weil/wenn/dass clauses from Chapter 46.",
       'This chapter assumes you already know the basic mechanics of zu-infinitives from Chapter 73 (verb + zu + infinitive) and subordinate-clause verb-final order from Chapter 46; here those two skills combine into one decision: same subject → um ... zu (infinitive at the end, zu directly before it); different subjects → damit (finite verb at the end, as in any subordinate clause). Both constructions always take a comma before the connector, and both can be negated to express a purpose of avoiding something.',
     ],
     rules: [
@@ -51,7 +51,7 @@ export const chapter079: ChapterDefinition = {
         id: 'ch79-rule-03',
         heading: 'damit: required when the subjects differ',
         paragraphs: [
-          'When the purpose is carried out by someone or something other than the main clause\'s subject, damit is required. damit is a subordinating conjunction, so it behaves exactly like weil, wenn, and dass: it introduces a full clause with its own subject and sends the finite (conjugated) verb to the very end. Ich erkläre es langsam, damit du es verstehst. (I explain it slowly so that you understand it.)',
+          "When the purpose is carried out by someone or something other than the main clause's subject, damit is required. damit is a subordinating conjunction, so it behaves exactly like weil, wenn, and dass: it introduces a full clause with its own subject and sends the finite (conjugated) verb to the very end. Ich erkläre es langsam, damit du es verstehst. (I explain it slowly so that you understand it.)",
           'damit is also grammatically fine when the subject happens to be the same, but in that case um ... zu is the shorter, more natural choice; damit becomes the only option once the subjects diverge.',
         ],
       },
@@ -68,7 +68,7 @@ export const chapter079: ChapterDefinition = {
         heading: 'A comma always precedes um and damit',
         paragraphs: [
           'Just like weil, wenn, and dass, a purpose clause is always separated from the main clause by a comma, whether it is introduced by um or by damit. The comma stands directly before the connector, regardless of how long either clause is.',
-          'Ich stehe früh auf, um pünktlich zu sein. / Ich stehe früh auf, damit ich pünktlich bin. A damit-clause can also open the sentence, in which case the main clause\'s verb follows immediately after the comma, exactly as with a fronted weil- or wenn-clause: Damit du pünktlich ankommst, solltest du früh losfahren.',
+          "Ich stehe früh auf, um pünktlich zu sein. / Ich stehe früh auf, damit ich pünktlich bin. A damit-clause can also open the sentence, in which case the main clause's verb follows immediately after the comma, exactly as with a fronted weil- or wenn-clause: Damit du pünktlich ankommst, solltest du früh losfahren.",
         ],
       },
       {
@@ -132,100 +132,117 @@ export const chapter079: ChapterDefinition = {
         german: 'Ich lerne Deutsch, um in Deutschland zu studieren.',
         english: 'I am learning German in order to study in Germany.',
         highlight: ['um in Deutschland zu studieren'],
-        explanation: 'Same subject (ich) in both parts, so um ... zu is used; zu studieren closes the clause.',
+        explanation:
+          'Same subject (ich) in both parts, so um ... zu is used; zu studieren closes the clause.',
       },
       {
         german: 'Er spart Geld, um sich ein neues Auto zu kaufen.',
         english: 'He is saving money to buy himself a new car.',
         highlight: ['um sich ein neues Auto zu kaufen'],
-        explanation: 'The reflexive pronoun sich matches the main clause\'s subject er, since the um-clause has no subject of its own.',
+        explanation:
+          "The reflexive pronoun sich matches the main clause's subject er, since the um-clause has no subject of its own.",
       },
       {
         german: 'Ich gehe in die Stadt, um einzukaufen.',
         english: 'I am going into town to shop.',
         highlight: ['um einzukaufen'],
-        explanation: 'With the separable verb einkaufen, zu is inserted between the prefix and the stem: einzukaufen.',
+        explanation:
+          'With the separable verb einkaufen, zu is inserted between the prefix and the stem: einzukaufen.',
       },
       {
         german: 'Er nimmt den Regenschirm mit, um nicht nass zu werden.',
         english: 'He takes the umbrella so as not to get wet.',
         highlight: ['um nicht nass zu werden'],
-        explanation: 'nicht stands before the word it negates (nass); zu still stands right before the infinitive werden.',
+        explanation:
+          'nicht stands before the word it negates (nass); zu still stands right before the infinitive werden.',
       },
       {
         german: 'Ich beeile mich, um den Bus nicht zu verpassen.',
         english: 'I am hurrying so as not to miss the bus.',
         highlight: ['um den Bus nicht zu verpassen'],
-        explanation: 'nicht comes before the whole action it negates (den Bus verpassen); zu still stands directly before verpassen.',
+        explanation:
+          'nicht comes before the whole action it negates (den Bus verpassen); zu still stands directly before verpassen.',
       },
       {
         german: 'Ich erkläre es langsam, damit du es verstehst.',
         english: 'I explain it slowly so that you understand it.',
         highlight: ['damit du es verstehst'],
-        explanation: 'Subjects differ (ich vs. du), so damit is required; the finite verb verstehst goes to the end.',
+        explanation:
+          'Subjects differ (ich vs. du), so damit is required; the finite verb verstehst goes to the end.',
       },
       {
         german: 'Der Lehrer spricht laut, damit alle Schüler ihn hören können.',
         english: 'The teacher speaks loudly so that all the students can hear him.',
         highlight: ['damit alle Schüler ihn hören können'],
-        explanation: 'A modal verb (können) in a damit-clause still goes to the very end, after the infinitive hören.',
+        explanation:
+          'A modal verb (können) in a damit-clause still goes to the very end, after the infinitive hören.',
       },
       {
         german: 'Die Mutter kocht das Essen, damit die Kinder nicht hungrig sind.',
         english: 'The mother cooks the food so that the children are not hungry.',
         highlight: ['damit die Kinder nicht hungrig sind'],
-        explanation: 'Negated damit-clause: nicht takes its normal position before the final verb sind.',
+        explanation:
+          'Negated damit-clause: nicht takes its normal position before the final verb sind.',
       },
       {
         german: 'Wir schließen die Tür, damit die Katze nicht rausgeht.',
         english: 'We close the door so that the cat does not go out.',
         highlight: ['damit die Katze nicht rausgeht'],
-        explanation: 'The separable verb rausgehen joins into one word (rausgeht) at the end, with nicht right before it.',
+        explanation:
+          'The separable verb rausgehen joins into one word (rausgeht) at the end, with nicht right before it.',
       },
       {
         german: 'Ich gebe dir meine Nummer, damit du mich anrufen kannst.',
         english: 'I am giving you my number so that you can call me.',
         highlight: ['damit du mich anrufen kannst'],
-        explanation: 'Different subjects (ich vs. du) force damit; kannst, the modal, sits at the very end.',
+        explanation:
+          'Different subjects (ich vs. du) force damit; kannst, the modal, sits at the very end.',
       },
       {
         german: 'Damit du pünktlich ankommst, solltest du früh losfahren.',
         english: 'So that you arrive on time, you should leave early.',
         highlight: ['solltest du'],
-        explanation: 'When the damit-clause opens the sentence, the main clause\'s verb (solltest) follows immediately after the comma, just like a fronted weil- or wenn-clause.',
+        explanation:
+          "When the damit-clause opens the sentence, the main clause's verb (solltest) follows immediately after the comma, just like a fronted weil- or wenn-clause.",
       },
       {
         german: 'Ich schreibe mir Notizen, um nichts zu vergessen.',
         english: 'I write myself notes so as not to forget anything.',
         highlight: ['um nichts zu vergessen'],
-        explanation: 'nichts (nothing) replaces nicht + etwas as the negated object; zu vergessen still closes the clause.',
+        explanation:
+          'nichts (nothing) replaces nicht + etwas as the negated object; zu vergessen still closes the clause.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich lerne Deutsch, um mein Bruder in Deutschland studiert.',
         correct: 'Ich lerne Deutsch, damit mein Bruder in Deutschland studiert.',
-        explanation: 'The subjects differ (ich vs. mein Bruder), so um ... zu is ungrammatical here — it has no slot for a second subject. damit introduces a full clause with its own subject and finite verb.',
+        explanation:
+          'The subjects differ (ich vs. mein Bruder), so um ... zu is ungrammatical here — it has no slot for a second subject. damit introduces a full clause with its own subject and finite verb.',
       },
       {
         incorrect: 'Ich erkläre es langsam, um du es verstehst.',
         correct: 'Ich erkläre es langsam, damit du es verstehst.',
-        explanation: 'um ... zu never takes a stated subject or a conjugated verb; only damit can introduce a clause with its own subject (du) and finite verb (verstehst).',
+        explanation:
+          'um ... zu never takes a stated subject or a conjugated verb; only damit can introduce a clause with its own subject (du) and finite verb (verstehst).',
       },
       {
         incorrect: 'Ich gehe in die Stadt, um kaufen ein.',
         correct: 'Ich gehe in die Stadt, um einzukaufen.',
-        explanation: 'With separable verbs, zu is inserted between the prefix and the stem, forming one word (einzukaufen) at the end — the prefix cannot be left dangling at the end on its own.',
+        explanation:
+          'With separable verbs, zu is inserted between the prefix and the stem, forming one word (einzukaufen) at the end — the prefix cannot be left dangling at the end on its own.',
       },
       {
         incorrect: 'Er nimmt den Schirm mit, um zu nicht nass werden.',
         correct: 'Er nimmt den Schirm mit, um nicht nass zu werden.',
-        explanation: 'nicht stands before the word it negates (nass); zu must stay directly in front of the infinitive at the very end of the clause.',
+        explanation:
+          'nicht stands before the word it negates (nass); zu must stay directly in front of the infinitive at the very end of the clause.',
       },
       {
         incorrect: 'Ich lerne jeden Tag, damit die Prüfung zu bestehen.',
         correct: 'Ich lerne jeden Tag, um die Prüfung zu bestehen.',
-        explanation: 'damit never combines with a zu-infinitive — it always takes a finite verb. When the subject is the same, um ... zu is the correct (and preferred) construction.',
+        explanation:
+          'damit never combines with a zu-infinitive — it always takes a finite verb. When the subject is the same, um ... zu is the correct (and preferred) construction.',
       },
     ],
     remember: [
@@ -260,7 +277,8 @@ export const chapter079: ChapterDefinition = {
         { id: 'd', text: 'Ich lerne Deutsch, um in Deutschland studieren.' },
       ],
       correctOptionId: 'a',
-      explanation: 'zu stands directly before the infinitive, and the whole infinitive phrase closes the clause: um in Deutschland zu studieren.',
+      explanation:
+        'zu stands directly before the infinitive, and the whole infinitive phrase closes the clause: um in Deutschland zu studieren.',
     },
     {
       id: 'ch79-ex-02',
@@ -270,7 +288,8 @@ export const chapter079: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['damit', 'verb-final', 'word-order'],
       instruction: 'Choose the sentence with correct word order.',
-      prompt: '"I explain it slowly so that you understand it." Which sentence is correct?',
+      prompt:
+        '"I explain it slowly so that you understand it." Which sentence is correct?',
       options: [
         { id: 'a', text: 'Ich erkläre es langsam, damit du verstehst es.' },
         { id: 'b', text: 'Ich erkläre es langsam, damit du es verstehst.' },
@@ -278,7 +297,8 @@ export const chapter079: ChapterDefinition = {
         { id: 'd', text: 'Ich erkläre es langsam, damit es du verstehst.' },
       ],
       correctOptionId: 'b',
-      explanation: 'damit introduces a subordinate clause like weil/wenn/dass: the finite verb (verstehst) goes to the very end.',
+      explanation:
+        'damit introduces a subordinate clause like weil/wenn/dass: the finite verb (verstehst) goes to the very end.',
     },
     {
       id: 'ch79-ex-03',
@@ -296,7 +316,8 @@ export const chapter079: ChapterDefinition = {
         { id: 'd', text: 'wenn' },
       ],
       correctOptionId: 'a',
-      explanation: 'The subject of bleiben is the same as the main clause (er), so um ... zu is possible and preferred.',
+      explanation:
+        'The subject of bleiben is the same as the main clause (er), so um ... zu is possible and preferred.',
     },
     {
       id: 'ch79-ex-04',
@@ -306,7 +327,8 @@ export const chapter079: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['damit', 'different-subject', 'connector-choice'],
       instruction: 'Choose the connector that fits, given the subject relationship.',
-      prompt: 'Die Lehrerin spricht langsam, ___ die Schüler alles verstehen. (different subjects: die Lehrerin / die Schüler)',
+      prompt:
+        'Die Lehrerin spricht langsam, ___ die Schüler alles verstehen. (different subjects: die Lehrerin / die Schüler)',
       options: [
         { id: 'a', text: 'um' },
         { id: 'b', text: 'damit' },
@@ -314,7 +336,8 @@ export const chapter079: ChapterDefinition = {
         { id: 'd', text: 'dass' },
       ],
       correctOptionId: 'b',
-      explanation: 'Subjects differ (die Lehrerin vs. die Schüler), so um ... zu is impossible; damit introduces the clause with its own subject.',
+      explanation:
+        'Subjects differ (die Lehrerin vs. die Schüler), so um ... zu is impossible; damit introduces the clause with its own subject.',
     },
     {
       id: 'ch79-ex-05',
@@ -323,7 +346,8 @@ export const chapter079: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['um-zu', 'same-subject', 'word-order'],
-      instruction: 'Same subject in both parts. Choose the grammatically correct sentence.',
+      instruction:
+        'Same subject in both parts. Choose the grammatically correct sentence.',
       prompt: 'Ich spare Geld, ... (Ziel: ich kaufe mir ein neues Fahrrad).',
       options: [
         { id: 'a', text: 'Ich spare Geld, um mir ein neues Fahrrad zu kaufen.' },
@@ -332,7 +356,8 @@ export const chapter079: ChapterDefinition = {
         { id: 'd', text: 'Ich spare Geld, um mir ein neues Fahrrad kaufen zu.' },
       ],
       correctOptionId: 'a',
-      explanation: 'um ... zu never has its own subject (b is impossible) and damit never takes a zu-infinitive (c is impossible); zu must stand directly before kaufen (d is wrong).',
+      explanation:
+        'um ... zu never has its own subject (b is impossible) and damit never takes a zu-infinitive (c is impossible); zu must stand directly before kaufen (d is wrong).',
     },
     {
       id: 'ch79-ex-06',
@@ -344,13 +369,26 @@ export const chapter079: ChapterDefinition = {
       instruction: 'Different subjects. Choose the grammatically correct sentence.',
       prompt: 'Die Eltern arbeiten viel, ... (Ziel: die Kinder haben ein gutes Leben).',
       options: [
-        { id: 'a', text: 'Die Eltern arbeiten viel, um die Kinder ein gutes Leben haben.' },
-        { id: 'b', text: 'Die Eltern arbeiten viel, damit die Kinder ein gutes Leben haben.' },
-        { id: 'c', text: 'Die Eltern arbeiten viel, um den Kindern ein gutes Leben zu haben.' },
-        { id: 'd', text: 'Die Eltern arbeiten viel, damit die Kinder ein gutes Leben zu haben.' },
+        {
+          id: 'a',
+          text: 'Die Eltern arbeiten viel, um die Kinder ein gutes Leben haben.',
+        },
+        {
+          id: 'b',
+          text: 'Die Eltern arbeiten viel, damit die Kinder ein gutes Leben haben.',
+        },
+        {
+          id: 'c',
+          text: 'Die Eltern arbeiten viel, um den Kindern ein gutes Leben zu haben.',
+        },
+        {
+          id: 'd',
+          text: 'Die Eltern arbeiten viel, damit die Kinder ein gutes Leben zu haben.',
+        },
       ],
       correctOptionId: 'b',
-      explanation: 'Subjects differ (die Eltern vs. die Kinder), so um ... zu is impossible (a, c); damit introduces a full clause with its own subject and finite verb haben (d wrongly uses a zu-infinitive).',
+      explanation:
+        'Subjects differ (die Eltern vs. die Kinder), so um ... zu is impossible (a, c); damit introduces a full clause with its own subject and finite verb haben (d wrongly uses a zu-infinitive).',
     },
     {
       id: 'ch79-ex-07',
@@ -360,7 +398,8 @@ export const chapter079: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['um-zu', 'comma'],
       instruction: 'Choose the correctly punctuated sentence.',
-      prompt: '"He saves money in order to buy a new car." Which sentence has correct punctuation?',
+      prompt:
+        '"He saves money in order to buy a new car." Which sentence has correct punctuation?',
       options: [
         { id: 'a', text: 'Er spart Geld um sich ein neues Auto zu kaufen.' },
         { id: 'b', text: 'Er spart Geld, um sich ein neues Auto zu kaufen.' },
@@ -368,7 +407,8 @@ export const chapter079: ChapterDefinition = {
         { id: 'd', text: 'Er spart, Geld um sich ein neues Auto zu kaufen.' },
       ],
       correctOptionId: 'b',
-      explanation: 'A comma always stands directly before um, separating the main clause from the purpose clause.',
+      explanation:
+        'A comma always stands directly before um, separating the main clause from the purpose clause.',
     },
     {
       id: 'ch79-ex-08',
@@ -386,7 +426,8 @@ export const chapter079: ChapterDefinition = {
         { id: 'd', text: 'Er nimmt den Schirm mit, um nicht zu nass werden.' },
       ],
       correctOptionId: 'a',
-      explanation: 'nicht stands directly before the word it negates (nass); zu stays immediately before the infinitive at the very end: um nicht nass zu werden.',
+      explanation:
+        'nicht stands directly before the word it negates (nass); zu stays immediately before the infinitive at the very end: um nicht nass zu werden.',
     },
     {
       id: 'ch79-ex-09',
@@ -396,15 +437,29 @@ export const chapter079: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['damit', 'negation'],
       instruction: 'Choose the sentence with correctly placed negation.',
-      prompt: '"The mother cooks the food so that the children are not hungry." Which sentence is correct?',
+      prompt:
+        '"The mother cooks the food so that the children are not hungry." Which sentence is correct?',
       options: [
-        { id: 'a', text: 'Die Mutter kocht das Essen, damit die Kinder nicht hungrig sind.' },
-        { id: 'b', text: 'Die Mutter kocht das Essen, damit die Kinder sind nicht hungrig.' },
-        { id: 'c', text: 'Die Mutter kocht das Essen, damit nicht die Kinder hungrig sind.' },
-        { id: 'd', text: 'Die Mutter kocht das Essen, damit die Kinder hungrig nicht sind.' },
+        {
+          id: 'a',
+          text: 'Die Mutter kocht das Essen, damit die Kinder nicht hungrig sind.',
+        },
+        {
+          id: 'b',
+          text: 'Die Mutter kocht das Essen, damit die Kinder sind nicht hungrig.',
+        },
+        {
+          id: 'c',
+          text: 'Die Mutter kocht das Essen, damit nicht die Kinder hungrig sind.',
+        },
+        {
+          id: 'd',
+          text: 'Die Mutter kocht das Essen, damit die Kinder hungrig nicht sind.',
+        },
       ],
       correctOptionId: 'a',
-      explanation: 'In a damit-clause, nicht takes its normal position directly before the final verb: ..., damit die Kinder nicht hungrig sind.',
+      explanation:
+        'In a damit-clause, nicht takes its normal position directly before the final verb: ..., damit die Kinder nicht hungrig sind.',
     },
     {
       id: 'ch79-ex-10',
@@ -422,7 +477,8 @@ export const chapter079: ChapterDefinition = {
         { id: 'd', text: 'Ich gehe in die Stadt, um einkaufen zu.' },
       ],
       correctOptionId: 'b',
-      explanation: 'With separable verbs, zu is inserted between the prefix and the stem, forming one word at the end: einzukaufen.',
+      explanation:
+        'With separable verbs, zu is inserted between the prefix and the stem, forming one word at the end: einzukaufen.',
     },
     {
       id: 'ch79-ex-11',
@@ -431,7 +487,8 @@ export const chapter079: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['um-zu', 'reflexive-verb'],
-      instruction: 'Choose the sentence with the correct reflexive pronoun and word order.',
+      instruction:
+        'Choose the sentence with the correct reflexive pronoun and word order.',
       prompt: '"He saves money to buy himself a new car." Which sentence is correct?',
       options: [
         { id: 'a', text: 'Er spart Geld, um sich ein neues Auto zu kaufen.' },
@@ -440,7 +497,8 @@ export const chapter079: ChapterDefinition = {
         { id: 'd', text: 'Er spart Geld, um zu sich ein neues Auto kaufen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The reflexive pronoun matches the subject of the main clause (er → sich); zu + the infinitive stand at the very end.',
+      explanation:
+        'The reflexive pronoun matches the subject of the main clause (er → sich); zu + the infinitive stand at the very end.',
     },
     {
       id: 'ch79-ex-12',
@@ -450,15 +508,26 @@ export const chapter079: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['different-subject', 'error-correction'],
       instruction: 'This sentence is ungrammatical. Choose the correct version.',
-      prompt: 'Falsch: "Ich lerne Deutsch, um mein Bruder in Deutschland studiert." Was ist richtig?',
+      prompt:
+        'Falsch: "Ich lerne Deutsch, um mein Bruder in Deutschland studiert." Was ist richtig?',
       options: [
-        { id: 'a', text: 'Ich lerne Deutsch, um mein Bruder in Deutschland zu studieren.' },
-        { id: 'b', text: 'Ich lerne Deutsch, damit mein Bruder in Deutschland studiert.' },
+        {
+          id: 'a',
+          text: 'Ich lerne Deutsch, um mein Bruder in Deutschland zu studieren.',
+        },
+        {
+          id: 'b',
+          text: 'Ich lerne Deutsch, damit mein Bruder in Deutschland studiert.',
+        },
         { id: 'c', text: 'Ich lerne Deutsch, um mein Bruder in Deutschland studieren.' },
-        { id: 'd', text: 'Ich lerne Deutsch, damit mein Bruder in Deutschland zu studieren.' },
+        {
+          id: 'd',
+          text: 'Ich lerne Deutsch, damit mein Bruder in Deutschland zu studieren.',
+        },
       ],
       correctOptionId: 'b',
-      explanation: 'The subjects differ (ich vs. mein Bruder), so um ... zu is impossible; damit introduces a full clause with its own subject and finite verb studiert.',
+      explanation:
+        'The subjects differ (ich vs. mein Bruder), so um ... zu is impossible; damit introduces a full clause with its own subject and finite verb studiert.',
     },
     {
       id: 'ch79-ex-13',
@@ -467,12 +536,21 @@ export const chapter079: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['um-zu', 'dialogue', 'same-subject'],
-      instruction: "Choose the grammatically correct way for Tom to finish his answer.",
+      instruction: 'Choose the grammatically correct way for Tom to finish his answer.',
       dialogue: [
-        { speaker: 'Anna', german: 'Warum lernst du jeden Tag Vokabeln?', english: 'Why do you learn vocabulary every day?' },
-        { speaker: 'Tom', german: 'Ich lerne jeden Tag Vokabeln, ...', english: "I learn vocabulary every day ..." },
+        {
+          speaker: 'Anna',
+          german: 'Warum lernst du jeden Tag Vokabeln?',
+          english: 'Why do you learn vocabulary every day?',
+        },
+        {
+          speaker: 'Tom',
+          german: 'Ich lerne jeden Tag Vokabeln, ...',
+          english: 'I learn vocabulary every day ...',
+        },
       ],
-      prompt: "Tom's answer (same subject: er lernt für sich selbst): Ich lerne jeden Tag Vokabeln, ___",
+      prompt:
+        "Tom's answer (same subject: er lernt für sich selbst): Ich lerne jeden Tag Vokabeln, ___",
       options: [
         { id: 'a', text: 'um die Prüfung zu bestehen.' },
         { id: 'b', text: 'um ich die Prüfung bestehe.' },
@@ -480,7 +558,8 @@ export const chapter079: ChapterDefinition = {
         { id: 'd', text: 'damit die Prüfung zu bestehen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Same subject (ich), so um ... zu is used, with zu directly before the infinitive bestehen at the very end.',
+      explanation:
+        'Same subject (ich), so um ... zu is used, with zu directly before the infinitive bestehen at the very end.',
     },
     {
       id: 'ch79-ex-14',
@@ -498,7 +577,8 @@ export const chapter079: ChapterDefinition = {
         { id: 'd', text: 'Ich gebe dir meine Nummer, um mich anrufen zu kannst.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Subjects differ (ich vs. du), so damit is required; as in any subordinate clause, the modal verb (kannst) goes to the very end.',
+      explanation:
+        'Subjects differ (ich vs. du), so damit is required; as in any subordinate clause, the modal verb (kannst) goes to the very end.',
     },
     {
       id: 'ch79-ex-15',
@@ -513,7 +593,8 @@ export const chapter079: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'bestehen',
       maxLength: 15,
-      explanation: 'zu stands directly before the infinitive bestehen, which sits at the very end of the clause.',
+      explanation:
+        'zu stands directly before the infinitive bestehen, which sits at the very end of the clause.',
     },
     {
       id: 'ch79-ex-16',
@@ -543,7 +624,8 @@ export const chapter079: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'verstehst',
       maxLength: 15,
-      explanation: 'damit sends the finite verb to the end; the du-form of verstehen is verstehst.',
+      explanation:
+        'damit sends the finite verb to the end; the du-form of verstehen is verstehst.',
     },
     {
       id: 'ch79-ex-18',
@@ -553,7 +635,8 @@ export const chapter079: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['um-zu', 'same-subject', 'connector-choice'],
       instruction: 'Write only the missing connector. Capitalisation is not checked.',
-      prompt: 'Wir gehen früh ins Bett, ___ morgen fit zu sein. (same subject: wir / wir)',
+      prompt:
+        'Wir gehen früh ins Bett, ___ morgen fit zu sein. (same subject: wir / wir)',
       acceptedAnswers: ['um'],
       answerMode: 'caseInsensitive',
       placeholder: 'um',
@@ -568,12 +651,14 @@ export const chapter079: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['damit', 'different-subject', 'connector-choice'],
       instruction: 'Write only the missing connector. Capitalisation is not checked.',
-      prompt: 'Die Lehrerin spricht laut, ___ alle Schüler sie hören können. (different subjects)',
+      prompt:
+        'Die Lehrerin spricht laut, ___ alle Schüler sie hören können. (different subjects)',
       acceptedAnswers: ['damit'],
       answerMode: 'caseInsensitive',
       placeholder: 'damit',
       maxLength: 8,
-      explanation: 'Subjects differ (die Lehrerin vs. alle Schüler), so damit is required.',
+      explanation:
+        'Subjects differ (die Lehrerin vs. alle Schüler), so damit is required.',
     },
     {
       id: 'ch79-ex-20',
@@ -582,13 +667,15 @@ export const chapter079: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['um-zu', 'clause-combination'],
-      instruction: 'Combine the two sentences with um ... zu. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with um ... zu. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich rufe dich an. + Ich sage dir Bescheid. (um ... zu)',
       acceptedAnswers: ['Ich rufe dich an, um dir Bescheid zu sagen.'],
       answerMode: 'normalized',
       placeholder: 'Ich rufe dich an, um ...',
       maxLength: 60,
-      explanation: 'Same subject (ich); the second clause becomes um dir Bescheid zu sagen, with the infinitive and zu at the end.',
+      explanation:
+        'Same subject (ich); the second clause becomes um dir Bescheid zu sagen, with the infinitive and zu at the end.',
     },
     {
       id: 'ch79-ex-21',
@@ -597,13 +684,15 @@ export const chapter079: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['damit', 'clause-combination', 'negation'],
-      instruction: 'Combine the two sentences with damit. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with damit. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich flüstere. + Die Kinder wachen nicht auf. (damit)',
       acceptedAnswers: ['Ich flüstere, damit die Kinder nicht aufwachen.'],
       answerMode: 'normalized',
       placeholder: 'Ich flüstere, damit ...',
       maxLength: 60,
-      explanation: 'Subjects differ (ich vs. die Kinder), so damit is required; the separable verb aufwachen joins into one word at the end.',
+      explanation:
+        'Subjects differ (ich vs. die Kinder), so damit is required; the separable verb aufwachen joins into one word at the end.',
     },
     {
       id: 'ch79-ex-22',
@@ -612,13 +701,15 @@ export const chapter079: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['um-zu', 'negation', 'clause-combination'],
-      instruction: 'Combine the two sentences with um ... zu, negated. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with um ... zu, negated. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich beeile mich. + Ich verpasse den Bus nicht. (um ... zu)',
       acceptedAnswers: ['Ich beeile mich, um den Bus nicht zu verpassen.'],
       answerMode: 'normalized',
       placeholder: 'Ich beeile mich, um ...',
       maxLength: 60,
-      explanation: 'nicht stands before the element it negates (den Bus ... nicht), and zu stays right before the infinitive verpassen at the end.',
+      explanation:
+        'nicht stands before the element it negates (den Bus ... nicht), and zu stays right before the infinitive verpassen at the end.',
     },
     {
       id: 'ch79-ex-23',
@@ -627,13 +718,15 @@ export const chapter079: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['damit', 'negation', 'clause-combination', 'separable-verb'],
-      instruction: 'Combine the two sentences with damit, negated. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with damit, negated. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Wir schließen die Tür. + Die Katze geht nicht raus. (damit)',
       acceptedAnswers: ['Wir schließen die Tür, damit die Katze nicht rausgeht.'],
       answerMode: 'normalized',
       placeholder: 'Wir schließen die Tür, damit ...',
       maxLength: 60,
-      explanation: 'damit introduces the clause; nicht stands before the separable verb, which joins as one word at the end: rausgeht.',
+      explanation:
+        'damit introduces the clause; nicht stands before the separable verb, which joins as one word at the end: rausgeht.',
     },
     {
       id: 'ch79-ex-24',
@@ -642,13 +735,15 @@ export const chapter079: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['um-zu', 'separable-verb', 'clause-combination'],
-      instruction: 'Combine the two sentences with um ... zu. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with um ... zu. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich gehe in die Stadt. + Ich kaufe ein. (um ... zu)',
       acceptedAnswers: ['Ich gehe in die Stadt, um einzukaufen.'],
       answerMode: 'normalized',
       placeholder: 'Ich gehe in die Stadt, um ...',
       maxLength: 50,
-      explanation: 'einkaufen is separable; zu is inserted between the prefix and the stem, forming one word: einzukaufen.',
+      explanation:
+        'einkaufen is separable; zu is inserted between the prefix and the stem, forming one word: einzukaufen.',
     },
     {
       id: 'ch79-ex-25',
@@ -657,13 +752,15 @@ export const chapter079: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'different-subject', 'damit'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ich erkläre es langsam, um du es verstehst.',
       acceptedAnswers: ['Ich erkläre es langsam, damit du es verstehst.'],
       answerMode: 'normalized',
       placeholder: 'Ich erkläre es langsam, damit ...',
       maxLength: 60,
-      explanation: 'um ... zu can never take its own subject; since the subjects differ (ich vs. du), damit is required.',
+      explanation:
+        'um ... zu can never take its own subject; since the subjects differ (ich vs. du), damit is required.',
     },
     {
       id: 'ch79-ex-26',
@@ -672,13 +769,15 @@ export const chapter079: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'um-zu', 'negation'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Er nimmt den Schirm mit, um zu nicht nass werden.',
       acceptedAnswers: ['Er nimmt den Schirm mit, um nicht nass zu werden.'],
       answerMode: 'normalized',
       placeholder: 'Er nimmt den Schirm mit, um ...',
       maxLength: 60,
-      explanation: 'nicht comes before the word it negates (nass); zu stays directly before the infinitive at the very end: um nicht nass zu werden.',
+      explanation:
+        'nicht comes before the word it negates (nass); zu stays directly before the infinitive at the very end: um nicht nass zu werden.',
     },
     {
       id: 'ch79-ex-27',
@@ -687,17 +786,27 @@ export const chapter079: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['um-zu', 'dialogue', 'same-subject'],
-      instruction: "Complete Lea's answer. Write only the missing words. Capitalisation is not checked.",
+      instruction:
+        "Complete Lea's answer. Write only the missing words. Capitalisation is not checked.",
       dialogue: [
-        { speaker: 'Ben', german: 'Warum machst du das Fenster auf?', english: 'Why are you opening the window?' },
-        { speaker: 'Lea', german: 'Ich mache das Fenster auf, ___', english: 'I am opening the window ___' },
+        {
+          speaker: 'Ben',
+          german: 'Warum machst du das Fenster auf?',
+          english: 'Why are you opening the window?',
+        },
+        {
+          speaker: 'Lea',
+          german: 'Ich mache das Fenster auf, ___',
+          english: 'I am opening the window ___',
+        },
       ],
       prompt: 'Ich mache das Fenster auf, ___. (frische Luft / bekommen, um ... zu)',
       acceptedAnswers: ['um frische Luft zu bekommen'],
       answerMode: 'caseInsensitive',
       placeholder: 'um frische Luft zu bekommen',
       maxLength: 40,
-      explanation: 'Same subject (ich) in both parts, so um ... zu + infinitive is used, with zu directly before bekommen at the end.',
+      explanation:
+        'Same subject (ich) in both parts, so um ... zu + infinitive is used, with zu directly before bekommen at the end.',
     },
     {
       id: 'ch79-ex-28',
@@ -706,13 +815,15 @@ export const chapter079: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['damit', 'different-subject', 'modal-verb', 'clause-combination'],
-      instruction: 'Combine the two sentences with damit. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with damit. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Der Lehrer spricht laut. + Alle Schüler können ihn hören. (damit)',
       acceptedAnswers: ['Der Lehrer spricht laut, damit alle Schüler ihn hören können.'],
       answerMode: 'normalized',
       placeholder: 'Der Lehrer spricht laut, damit ...',
       maxLength: 70,
-      explanation: 'Subjects differ (der Lehrer vs. alle Schüler); damit introduces the clause, and the modal verb können goes to the very end, after the infinitive hören.',
+      explanation:
+        'Subjects differ (der Lehrer vs. alle Schüler); damit introduces the clause, and the modal verb können goes to the very end, after the infinitive hören.',
     },
     {
       id: 'ch79-ex-29',
@@ -722,7 +833,8 @@ export const chapter079: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['um-zu', 'same-subject', 'connector-choice'],
       instruction: 'Choose the connector that fits, given the subject relationship.',
-      prompt: 'Ich mache jeden Tag Sport, ___ gesund zu bleiben. (same subject: ich / ich)',
+      prompt:
+        'Ich mache jeden Tag Sport, ___ gesund zu bleiben. (same subject: ich / ich)',
       options: [
         { id: 'a', text: 'um' },
         { id: 'b', text: 'damit' },
@@ -730,7 +842,8 @@ export const chapter079: ChapterDefinition = {
         { id: 'd', text: 'wenn' },
       ],
       correctOptionId: 'a',
-      explanation: 'The subject of bleiben is the same as the main clause (ich), so um ... zu is possible and preferred.',
+      explanation:
+        'The subject of bleiben is the same as the main clause (ich), so um ... zu is possible and preferred.',
     },
     {
       id: 'ch79-ex-30',
@@ -740,7 +853,8 @@ export const chapter079: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['damit', 'different-subject', 'connector-choice'],
       instruction: 'Choose the connector that fits, given the subject relationship.',
-      prompt: 'Der Chef schickt eine E-Mail, ___ alle Mitarbeiter informiert sind. (different subjects: der Chef / alle Mitarbeiter)',
+      prompt:
+        'Der Chef schickt eine E-Mail, ___ alle Mitarbeiter informiert sind. (different subjects: der Chef / alle Mitarbeiter)',
       options: [
         { id: 'a', text: 'um' },
         { id: 'b', text: 'damit' },
@@ -748,7 +862,8 @@ export const chapter079: ChapterDefinition = {
         { id: 'd', text: 'dass' },
       ],
       correctOptionId: 'b',
-      explanation: 'Subjects differ (der Chef vs. alle Mitarbeiter), so um ... zu is impossible; damit introduces the clause with its own subject.',
+      explanation:
+        'Subjects differ (der Chef vs. alle Mitarbeiter), so um ... zu is impossible; damit introduces the clause with its own subject.',
     },
     {
       id: 'ch79-ex-31',
@@ -757,7 +872,8 @@ export const chapter079: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['damit', 'fronted-clause', 'word-order'],
-      instruction: 'Choose the sentence with correct word order after a fronted damit-clause.',
+      instruction:
+        'Choose the sentence with correct word order after a fronted damit-clause.',
       prompt: 'Damit du pünktlich ankommst, ...',
       options: [
         { id: 'a', text: 'solltest du früh losfahren.' },
@@ -766,7 +882,8 @@ export const chapter079: ChapterDefinition = {
         { id: 'd', text: 'solltest früh losfahren du.' },
       ],
       correctOptionId: 'a',
-      explanation: 'A fronted damit-clause counts as the first element; the main clause\'s finite verb (solltest) follows immediately after the comma, then the subject du.',
+      explanation:
+        "A fronted damit-clause counts as the first element; the main clause's finite verb (solltest) follows immediately after the comma, then the subject du.",
     },
     {
       id: 'ch79-ex-32',
@@ -776,7 +893,8 @@ export const chapter079: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['um-zu', 'negation', 'word-order'],
       instruction: 'Choose the sentence with correctly placed negation.',
-      prompt: '"She turns off her phone so as not to be disturbed." Which sentence is correct?',
+      prompt:
+        '"She turns off her phone so as not to be disturbed." Which sentence is correct?',
       options: [
         { id: 'a', text: 'Sie schaltet ihr Handy aus, um nicht gestört zu werden.' },
         { id: 'b', text: 'Sie schaltet ihr Handy aus, um gestört nicht zu werden.' },
@@ -784,7 +902,8 @@ export const chapter079: ChapterDefinition = {
         { id: 'd', text: 'Sie schaltet ihr Handy aus, um nicht zu gestört werden.' },
       ],
       correctOptionId: 'a',
-      explanation: 'nicht stands directly before the word it negates (gestört); zu still stands right before the infinitive werden.',
+      explanation:
+        'nicht stands directly before the word it negates (gestört); zu still stands right before the infinitive werden.',
     },
     {
       id: 'ch79-ex-33',
@@ -794,7 +913,8 @@ export const chapter079: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['damit', 'negation', 'separable-verb'],
       instruction: 'Choose the sentence with correctly placed negation.',
-      prompt: '"He whispers so that the children do not wake up." Which sentence is correct?',
+      prompt:
+        '"He whispers so that the children do not wake up." Which sentence is correct?',
       options: [
         { id: 'a', text: 'Er flüstert, damit die Kinder nicht aufwachen.' },
         { id: 'b', text: 'Er flüstert, damit die Kinder aufwachen nicht.' },
@@ -802,7 +922,8 @@ export const chapter079: ChapterDefinition = {
         { id: 'd', text: 'Er flüstert, damit die Kinder nicht wachen auf.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The separable verb aufwachen joins into one word at the end of the clause, with nicht directly before it.',
+      explanation:
+        'The separable verb aufwachen joins into one word at the end of the clause, with nicht directly before it.',
     },
     {
       id: 'ch79-ex-34',
@@ -820,7 +941,8 @@ export const chapter079: ChapterDefinition = {
         { id: 'd', text: 'Wir stehen früh auf, um anzukommen rechtzeitig.' },
       ],
       correctOptionId: 'a',
-      explanation: 'ankommen is separable; zu is inserted between the prefix and the stem, forming one word at the end: anzukommen.',
+      explanation:
+        'ankommen is separable; zu is inserted between the prefix and the stem, forming one word at the end: anzukommen.',
     },
     {
       id: 'ch79-ex-35',
@@ -838,7 +960,8 @@ export const chapter079: ChapterDefinition = {
         { id: 'd', text: 'Sie macht Yoga, um sich entspannen zu.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The reflexive pronoun matches the main clause\'s subject (sie → sich); zu stands directly before the infinitive entspannen.',
+      explanation:
+        "The reflexive pronoun matches the main clause's subject (sie → sich); zu stands directly before the infinitive entspannen.",
     },
     {
       id: 'ch79-ex-36',
@@ -847,12 +970,21 @@ export const chapter079: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['um-zu', 'dialogue', 'same-subject'],
-      instruction: "Choose the grammatically correct way for Paul to finish his answer.",
+      instruction: 'Choose the grammatically correct way for Paul to finish his answer.',
       dialogue: [
-        { speaker: 'Mia', german: 'Warum gehst du so früh ins Fitnessstudio?', english: 'Why do you go to the gym so early?' },
-        { speaker: 'Paul', german: 'Ich gehe so früh ins Fitnessstudio, ...', english: 'I go to the gym so early ...' },
+        {
+          speaker: 'Mia',
+          german: 'Warum gehst du so früh ins Fitnessstudio?',
+          english: 'Why do you go to the gym so early?',
+        },
+        {
+          speaker: 'Paul',
+          german: 'Ich gehe so früh ins Fitnessstudio, ...',
+          english: 'I go to the gym so early ...',
+        },
       ],
-      prompt: "Paul's answer (same subject: er trainiert für sich selbst): Ich gehe so früh ins Fitnessstudio, ___",
+      prompt:
+        "Paul's answer (same subject: er trainiert für sich selbst): Ich gehe so früh ins Fitnessstudio, ___",
       options: [
         { id: 'a', text: 'um vor der Arbeit zu trainieren.' },
         { id: 'b', text: 'um ich vor der Arbeit trainiere.' },
@@ -860,7 +992,8 @@ export const chapter079: ChapterDefinition = {
         { id: 'd', text: 'um vor der Arbeit trainieren zu.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Same subject (er) in both clauses, so um ... zu is used, with zu directly before the infinitive trainieren at the end.',
+      explanation:
+        'Same subject (er) in both clauses, so um ... zu is used, with zu directly before the infinitive trainieren at the end.',
     },
     {
       id: 'ch79-ex-37',
@@ -869,12 +1002,22 @@ export const chapter079: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['damit', 'dialogue', 'different-subject'],
-      instruction: 'Choose the grammatically correct way for Herr Novak to finish his answer.',
+      instruction:
+        'Choose the grammatically correct way for Herr Novak to finish his answer.',
       dialogue: [
-        { speaker: 'Frau Klein', german: 'Warum wiederholen Sie die Regel noch einmal?', english: 'Why are you repeating the rule again?' },
-        { speaker: 'Herr Novak', german: 'Ich wiederhole die Regel noch einmal, ...', english: 'I repeat the rule again ...' },
+        {
+          speaker: 'Frau Klein',
+          german: 'Warum wiederholen Sie die Regel noch einmal?',
+          english: 'Why are you repeating the rule again?',
+        },
+        {
+          speaker: 'Herr Novak',
+          german: 'Ich wiederhole die Regel noch einmal, ...',
+          english: 'I repeat the rule again ...',
+        },
       ],
-      prompt: "Herr Novak's answer (different subjects: er erklärt / die Schüler verstehen): Ich wiederhole die Regel noch einmal, ___",
+      prompt:
+        "Herr Novak's answer (different subjects: er erklärt / die Schüler verstehen): Ich wiederhole die Regel noch einmal, ___",
       options: [
         { id: 'a', text: 'um die Schüler es verstehen.' },
         { id: 'b', text: 'damit die Schüler sie verstehen.' },
@@ -882,7 +1025,8 @@ export const chapter079: ChapterDefinition = {
         { id: 'd', text: 'damit die Schüler sie zu verstehen.' },
       ],
       correctOptionId: 'b',
-      explanation: 'Subjects differ (er vs. die Schüler), so damit is required; the finite verb verstehen (verstehen sie) goes to the end.',
+      explanation:
+        'Subjects differ (er vs. die Schüler), so damit is required; the finite verb verstehen (verstehen sie) goes to the end.',
     },
     {
       id: 'ch79-ex-38',
@@ -900,7 +1044,8 @@ export const chapter079: ChapterDefinition = {
         { id: 'd', text: 'Wir sparen Geld, damit wir in den Urlaub zu fahren.' },
       ],
       correctOptionId: 'a',
-      explanation: 'um ... zu never states a subject; the fix is to drop wir and use the bare infinitive fahren at the end.',
+      explanation:
+        'um ... zu never states a subject; the fix is to drop wir and use the bare infinitive fahren at the end.',
     },
     {
       id: 'ch79-ex-39',
@@ -910,15 +1055,29 @@ export const chapter079: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['damit', 'modal-verb'],
       instruction: 'Choose the correctly combined sentence.',
-      prompt: '"The doctor writes it down so that the patient can read it later." Which sentence is correct?',
+      prompt:
+        '"The doctor writes it down so that the patient can read it later." Which sentence is correct?',
       options: [
-        { id: 'a', text: 'Der Arzt schreibt es auf, damit der Patient es später lesen kann.' },
-        { id: 'b', text: 'Der Arzt schreibt es auf, damit der Patient es später kann lesen.' },
-        { id: 'c', text: 'Der Arzt schreibt es auf, um der Patient es später lesen kann.' },
-        { id: 'd', text: 'Der Arzt schreibt es auf, damit der Patient es später zu lesen kann.' },
+        {
+          id: 'a',
+          text: 'Der Arzt schreibt es auf, damit der Patient es später lesen kann.',
+        },
+        {
+          id: 'b',
+          text: 'Der Arzt schreibt es auf, damit der Patient es später kann lesen.',
+        },
+        {
+          id: 'c',
+          text: 'Der Arzt schreibt es auf, um der Patient es später lesen kann.',
+        },
+        {
+          id: 'd',
+          text: 'Der Arzt schreibt es auf, damit der Patient es später zu lesen kann.',
+        },
       ],
       correctOptionId: 'a',
-      explanation: 'Subjects differ (der Arzt vs. der Patient), so damit is required; the modal kann sits at the very end, after the infinitive lesen.',
+      explanation:
+        'Subjects differ (der Arzt vs. der Patient), so damit is required; the modal kann sits at the very end, after the infinitive lesen.',
     },
     {
       id: 'ch79-ex-40',
@@ -928,7 +1087,8 @@ export const chapter079: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['damit', 'comma'],
       instruction: 'Choose the correctly punctuated sentence.',
-      prompt: '"I open the window so that fresh air comes in." Which sentence has correct punctuation?',
+      prompt:
+        '"I open the window so that fresh air comes in." Which sentence has correct punctuation?',
       options: [
         { id: 'a', text: 'Ich mache das Fenster auf damit frische Luft hereinkommt.' },
         { id: 'b', text: 'Ich mache das Fenster auf, damit frische Luft hereinkommt.' },
@@ -936,7 +1096,8 @@ export const chapter079: ChapterDefinition = {
         { id: 'd', text: 'Ich mache das Fenster auf, damit, frische Luft hereinkommt.' },
       ],
       correctOptionId: 'b',
-      explanation: 'A comma always stands directly before damit, separating the main clause from the purpose clause.',
+      explanation:
+        'A comma always stands directly before damit, separating the main clause from the purpose clause.',
     },
     {
       id: 'ch79-ex-41',
@@ -946,7 +1107,8 @@ export const chapter079: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['um-zu', 'reflexive-verb', 'clause-combination'],
       instruction: 'Choose the correctly combined sentence.',
-      prompt: 'Combine (same subject): "Sie geht zum Arzt." + "Sie lässt sich untersuchen."',
+      prompt:
+        'Combine (same subject): "Sie geht zum Arzt." + "Sie lässt sich untersuchen."',
       options: [
         { id: 'a', text: 'Sie geht zum Arzt, um sich untersuchen zu lassen.' },
         { id: 'b', text: 'Sie geht zum Arzt, um sich zu lassen untersuchen.' },
@@ -954,7 +1116,8 @@ export const chapter079: ChapterDefinition = {
         { id: 'd', text: 'Sie geht zum Arzt, um sich untersuchen lassen zu.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Same subject (sie), so um ... zu is used with no stated subject; zu stands directly before the last infinitive, lassen.',
+      explanation:
+        'Same subject (sie), so um ... zu is used with no stated subject; zu stands directly before the last infinitive, lassen.',
     },
     {
       id: 'ch79-ex-42',
@@ -964,15 +1127,23 @@ export const chapter079: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['damit', 'clause-combination'],
       instruction: 'Choose the correctly combined sentence.',
-      prompt: 'Combine (different subjects): "Die Firma bietet Homeoffice an." + "Die Mitarbeiter sind flexibler."',
+      prompt:
+        'Combine (different subjects): "Die Firma bietet Homeoffice an." + "Die Mitarbeiter sind flexibler."',
       options: [
-        { id: 'a', text: 'Die Firma bietet Homeoffice an, damit die Mitarbeiter flexibler sind.' },
-        { id: 'b', text: 'Die Firma bietet Homeoffice an, um die Mitarbeiter flexibler sind.' },
+        {
+          id: 'a',
+          text: 'Die Firma bietet Homeoffice an, damit die Mitarbeiter flexibler sind.',
+        },
+        {
+          id: 'b',
+          text: 'Die Firma bietet Homeoffice an, um die Mitarbeiter flexibler sind.',
+        },
         { id: 'c', text: 'Die Firma bietet Homeoffice an, um flexibler zu sein.' },
         { id: 'd', text: 'Die Firma bietet Homeoffice an, damit flexibler zu sein.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Subjects differ (die Firma vs. die Mitarbeiter), so damit is required, with the finite verb sind at the end.',
+      explanation:
+        'Subjects differ (die Firma vs. die Mitarbeiter), so damit is required, with the finite verb sind at the end.',
     },
     {
       id: 'ch79-ex-43',
@@ -982,15 +1153,29 @@ export const chapter079: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['um-zu', 'negation', 'kein'],
       instruction: 'Choose the sentence with correctly placed negation.',
-      prompt: '"She buys nothing sweet so as not to have a bad conscience." Which sentence is correct?',
+      prompt:
+        '"She buys nothing sweet so as not to have a bad conscience." Which sentence is correct?',
       options: [
-        { id: 'a', text: 'Sie kauft nichts Süßes, um kein schlechtes Gewissen zu haben.' },
-        { id: 'b', text: 'Sie kauft nichts Süßes, um schlechtes Gewissen kein zu haben.' },
-        { id: 'c', text: 'Sie kauft nichts Süßes, um zu kein schlechtes Gewissen haben.' },
-        { id: 'd', text: 'Sie kauft nichts Süßes, um kein schlechtes Gewissen haben zu.' },
+        {
+          id: 'a',
+          text: 'Sie kauft nichts Süßes, um kein schlechtes Gewissen zu haben.',
+        },
+        {
+          id: 'b',
+          text: 'Sie kauft nichts Süßes, um schlechtes Gewissen kein zu haben.',
+        },
+        {
+          id: 'c',
+          text: 'Sie kauft nichts Süßes, um zu kein schlechtes Gewissen haben.',
+        },
+        {
+          id: 'd',
+          text: 'Sie kauft nichts Süßes, um kein schlechtes Gewissen haben zu.',
+        },
       ],
       correctOptionId: 'a',
-      explanation: 'kein stands before the noun it negates (schlechtes Gewissen); zu still stands directly before the infinitive haben.',
+      explanation:
+        'kein stands before the noun it negates (schlechtes Gewissen); zu still stands directly before the infinitive haben.',
     },
     {
       id: 'ch79-ex-44',
@@ -999,7 +1184,8 @@ export const chapter079: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['um-zu', 'fronted-clause', 'word-order'],
-      instruction: 'Choose the sentence with correct word order after a fronted um ... zu clause.',
+      instruction:
+        'Choose the sentence with correct word order after a fronted um ... zu clause.',
       prompt: '"To pass the exam, he has to study a lot." Which sentence is correct?',
       options: [
         { id: 'a', text: 'Um die Prüfung zu bestehen, muss er viel lernen.' },
@@ -1008,7 +1194,8 @@ export const chapter079: ChapterDefinition = {
         { id: 'd', text: 'Um die Prüfung bestehen zu, muss er viel lernen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'A fronted um ... zu clause counts as the first element; the main clause\'s finite verb (muss) comes immediately after the comma, then the subject er.',
+      explanation:
+        "A fronted um ... zu clause counts as the first element; the main clause's finite verb (muss) comes immediately after the comma, then the subject er.",
     },
     {
       id: 'ch79-ex-45',
@@ -1023,7 +1210,8 @@ export const chapter079: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'anzukommen',
       maxLength: 20,
-      explanation: 'ankommen is separable; zu is inserted between the prefix and the stem: anzukommen.',
+      explanation:
+        'ankommen is separable; zu is inserted between the prefix and the stem: anzukommen.',
     },
     {
       id: 'ch79-ex-46',
@@ -1033,12 +1221,14 @@ export const chapter079: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['damit', 'modal-verb', 'verb-final'],
       instruction: 'Write only the missing word. Capitalisation is not checked.',
-      prompt: 'Der Arzt schreibt es auf, damit der Patient es später lesen ___. (können, er-Form)',
+      prompt:
+        'Der Arzt schreibt es auf, damit der Patient es später lesen ___. (können, er-Form)',
       acceptedAnswers: ['kann'],
       answerMode: 'caseInsensitive',
       placeholder: 'kann',
       maxLength: 10,
-      explanation: 'In a damit-clause, the modal verb (kann) stands at the very end, after the infinitive lesen.',
+      explanation:
+        'In a damit-clause, the modal verb (kann) stands at the very end, after the infinitive lesen.',
     },
     {
       id: 'ch79-ex-47',
@@ -1063,12 +1253,14 @@ export const chapter079: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['damit', 'different-subject', 'connector-choice'],
       instruction: 'Write only the missing connector. Capitalisation is not checked.',
-      prompt: 'Die Firma bietet Homeoffice an, ___ die Mitarbeiter flexibler sind. (different subjects)',
+      prompt:
+        'Die Firma bietet Homeoffice an, ___ die Mitarbeiter flexibler sind. (different subjects)',
       acceptedAnswers: ['damit'],
       answerMode: 'caseInsensitive',
       placeholder: 'damit',
       maxLength: 8,
-      explanation: 'Subjects differ (die Firma vs. die Mitarbeiter), so damit is required.',
+      explanation:
+        'Subjects differ (die Firma vs. die Mitarbeiter), so damit is required.',
     },
     {
       id: 'ch79-ex-49',
@@ -1083,7 +1275,8 @@ export const chapter079: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'sich',
       maxLength: 6,
-      explanation: 'The reflexive pronoun matches the main clause\'s subject sie, so it is sich.',
+      explanation:
+        "The reflexive pronoun matches the main clause's subject sie, so it is sich.",
     },
     {
       id: 'ch79-ex-50',
@@ -1107,13 +1300,15 @@ export const chapter079: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['um-zu', 'separable-verb', 'clause-combination'],
-      instruction: 'Combine the two sentences with um ... zu. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with um ... zu. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Wir stehen früh auf. + Wir kommen rechtzeitig an. (um ... zu)',
       acceptedAnswers: ['Wir stehen früh auf, um rechtzeitig anzukommen.'],
       answerMode: 'normalized',
       placeholder: 'Wir stehen früh auf, um ...',
       maxLength: 60,
-      explanation: 'Same subject (wir); the separable verb ankommen becomes anzukommen at the end of the clause.',
+      explanation:
+        'Same subject (wir); the separable verb ankommen becomes anzukommen at the end of the clause.',
     },
     {
       id: 'ch79-ex-52',
@@ -1122,13 +1317,17 @@ export const chapter079: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['damit', 'modal-verb', 'clause-combination'],
-      instruction: 'Combine the two sentences with damit. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with damit. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Der Arzt schreibt es auf. + Der Patient kann es später lesen. (damit)',
-      acceptedAnswers: ['Der Arzt schreibt es auf, damit der Patient es später lesen kann.'],
+      acceptedAnswers: [
+        'Der Arzt schreibt es auf, damit der Patient es später lesen kann.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Der Arzt schreibt es auf, damit ...',
       maxLength: 70,
-      explanation: 'Subjects differ (der Arzt vs. der Patient), so damit is required; the modal kann goes to the very end, after lesen.',
+      explanation:
+        'Subjects differ (der Arzt vs. der Patient), so damit is required; the modal kann goes to the very end, after lesen.',
     },
     {
       id: 'ch79-ex-53',
@@ -1137,13 +1336,15 @@ export const chapter079: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['um-zu', 'negation', 'clause-combination'],
-      instruction: 'Combine the two sentences with um ... zu, negated. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with um ... zu, negated. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Sie schaltet ihr Handy aus. + Sie wird nicht gestört. (um ... zu)',
       acceptedAnswers: ['Sie schaltet ihr Handy aus, um nicht gestört zu werden.'],
       answerMode: 'normalized',
       placeholder: 'Sie schaltet ihr Handy aus, um ...',
       maxLength: 60,
-      explanation: 'nicht stands before the word it negates (gestört); zu stays directly before the infinitive werden.',
+      explanation:
+        'nicht stands before the word it negates (gestört); zu stays directly before the infinitive werden.',
     },
     {
       id: 'ch79-ex-54',
@@ -1152,13 +1353,15 @@ export const chapter079: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['damit', 'negation', 'clause-combination', 'separable-verb'],
-      instruction: 'Combine the two sentences with damit, negated. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with damit, negated. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Er flüstert. + Die Kinder wachen nicht auf. (damit)',
       acceptedAnswers: ['Er flüstert, damit die Kinder nicht aufwachen.'],
       answerMode: 'normalized',
       placeholder: 'Er flüstert, damit ...',
       maxLength: 60,
-      explanation: 'damit introduces the clause; nicht stands before the separable verb, which joins as one word at the end: aufwachen.',
+      explanation:
+        'damit introduces the clause; nicht stands before the separable verb, which joins as one word at the end: aufwachen.',
     },
     {
       id: 'ch79-ex-55',
@@ -1167,13 +1370,15 @@ export const chapter079: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'um-zu', 'same-subject'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Wir sparen Geld, um wir in den Urlaub zu fahren.',
       acceptedAnswers: ['Wir sparen Geld, um in den Urlaub zu fahren.'],
       answerMode: 'normalized',
       placeholder: 'Wir sparen Geld, um ...',
       maxLength: 60,
-      explanation: 'um ... zu never has its own subject; the fix is to drop wir and keep the bare infinitive fahren at the end.',
+      explanation:
+        'um ... zu never has its own subject; the fix is to drop wir and keep the bare infinitive fahren at the end.',
     },
     {
       id: 'ch79-ex-56',
@@ -1182,13 +1387,18 @@ export const chapter079: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'damit', 'modal-verb'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
-      prompt: 'Falsch: Der Arzt schreibt es auf, damit der Patient es später lesen zu kann.',
-      acceptedAnswers: ['Der Arzt schreibt es auf, damit der Patient es später lesen kann.'],
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      prompt:
+        'Falsch: Der Arzt schreibt es auf, damit der Patient es später lesen zu kann.',
+      acceptedAnswers: [
+        'Der Arzt schreibt es auf, damit der Patient es später lesen kann.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Der Arzt schreibt es auf, damit ...',
       maxLength: 70,
-      explanation: 'damit never combines with zu; the modal kann simply stands at the very end, after the infinitive lesen.',
+      explanation:
+        'damit never combines with zu; the modal kann simply stands at the very end, after the infinitive lesen.',
     },
     {
       id: 'ch79-ex-57',
@@ -1197,17 +1407,27 @@ export const chapter079: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['um-zu', 'dialogue', 'same-subject'],
-      instruction: "Complete Tim's answer. Write only the missing words. Capitalisation is not checked.",
+      instruction:
+        "Complete Tim's answer. Write only the missing words. Capitalisation is not checked.",
       dialogue: [
-        { speaker: 'Nina', german: 'Warum machst du jetzt eine Pause?', english: 'Why are you taking a break now?' },
-        { speaker: 'Tim', german: 'Ich mache jetzt eine Pause, ___', english: 'I am taking a break now ___' },
+        {
+          speaker: 'Nina',
+          german: 'Warum machst du jetzt eine Pause?',
+          english: 'Why are you taking a break now?',
+        },
+        {
+          speaker: 'Tim',
+          german: 'Ich mache jetzt eine Pause, ___',
+          english: 'I am taking a break now ___',
+        },
       ],
       prompt: 'Ich mache jetzt eine Pause, ___. (mich erholen, um ... zu)',
       acceptedAnswers: ['um mich zu erholen'],
       answerMode: 'caseInsensitive',
       placeholder: 'um mich zu erholen',
       maxLength: 40,
-      explanation: 'Same subject (ich) in both parts, so um ... zu is used, with the reflexive pronoun mich and zu before erholen.',
+      explanation:
+        'Same subject (ich) in both parts, so um ... zu is used, with the reflexive pronoun mich and zu before erholen.',
     },
     {
       id: 'ch79-ex-58',
@@ -1216,17 +1436,27 @@ export const chapter079: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['damit', 'dialogue', 'different-subject'],
-      instruction: "Complete the employee's answer. Write only the missing words. Capitalisation is not checked.",
+      instruction:
+        "Complete the employee's answer. Write only the missing words. Capitalisation is not checked.",
       dialogue: [
-        { speaker: 'Chef', german: 'Warum wiederholst du die Anweisungen?', english: 'Why are you repeating the instructions?' },
-        { speaker: 'Mitarbeiter', german: 'Ich wiederhole die Anweisungen, ___', english: 'I repeat the instructions ___' },
+        {
+          speaker: 'Chef',
+          german: 'Warum wiederholst du die Anweisungen?',
+          english: 'Why are you repeating the instructions?',
+        },
+        {
+          speaker: 'Mitarbeiter',
+          german: 'Ich wiederhole die Anweisungen, ___',
+          english: 'I repeat the instructions ___',
+        },
       ],
       prompt: 'Ich wiederhole die Anweisungen, ___. (alle / sie verstehen, damit)',
       acceptedAnswers: ['damit alle sie verstehen'],
       answerMode: 'caseInsensitive',
       placeholder: 'damit alle sie verstehen',
       maxLength: 40,
-      explanation: 'Subjects differ (ich vs. alle), so damit is required, with the finite verb verstehen at the end.',
+      explanation:
+        'Subjects differ (ich vs. alle), so damit is required, with the finite verb verstehen at the end.',
     },
     {
       id: 'ch79-ex-59',
@@ -1235,13 +1465,15 @@ export const chapter079: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['um-zu', 'negation', 'kein', 'clause-combination'],
-      instruction: 'Combine the two sentences with um ... zu, negated. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with um ... zu, negated. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Sie kauft nichts Süßes. + Sie hat kein schlechtes Gewissen. (um ... zu)',
       acceptedAnswers: ['Sie kauft nichts Süßes, um kein schlechtes Gewissen zu haben.'],
       answerMode: 'normalized',
       placeholder: 'Sie kauft nichts Süßes, um ...',
       maxLength: 70,
-      explanation: 'kein stands before the noun it negates (schlechtes Gewissen); zu stays directly before the infinitive haben.',
+      explanation:
+        'kein stands before the noun it negates (schlechtes Gewissen); zu stays directly before the infinitive haben.',
     },
     {
       id: 'ch79-ex-60',
@@ -1250,13 +1482,15 @@ export const chapter079: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['um-zu', 'fronted-clause'],
-      instruction: 'Write the sentence with the um ... zu clause at the beginning. Capitalisation and punctuation are checked.',
+      instruction:
+        'Write the sentence with the um ... zu clause at the beginning. Capitalisation and punctuation are checked.',
       prompt: 'Er muss viel lernen. + Er besteht die Prüfung. (Beginne mit: Um ...)',
       acceptedAnswers: ['Um die Prüfung zu bestehen, muss er viel lernen.'],
       answerMode: 'normalized',
       placeholder: 'Um die Prüfung zu bestehen, ...',
       maxLength: 60,
-      explanation: 'When the um ... zu clause opens the sentence, the main clause\'s finite verb (muss) follows immediately after the comma.',
+      explanation:
+        "When the um ... zu clause opens the sentence, the main clause's finite verb (muss) follows immediately after the comma.",
     },
     {
       id: 'ch79-ex-61',
@@ -1265,13 +1499,16 @@ export const chapter079: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['damit', 'fronted-clause'],
-      instruction: 'Write the sentence with the damit clause at the beginning. Capitalisation and punctuation are checked.',
-      prompt: 'Du solltest früh losfahren. + Du kommst pünktlich an. (Beginne mit: Damit ...)',
+      instruction:
+        'Write the sentence with the damit clause at the beginning. Capitalisation and punctuation are checked.',
+      prompt:
+        'Du solltest früh losfahren. + Du kommst pünktlich an. (Beginne mit: Damit ...)',
       acceptedAnswers: ['Damit du pünktlich ankommst, solltest du früh losfahren.'],
       answerMode: 'normalized',
       placeholder: 'Damit du pünktlich ankommst, ...',
       maxLength: 70,
-      explanation: 'When the damit-clause opens the sentence, the main clause\'s finite verb (solltest) follows immediately after the comma.',
+      explanation:
+        "When the damit-clause opens the sentence, the main clause's finite verb (solltest) follows immediately after the comma.",
     },
     {
       id: 'ch79-ex-62',
@@ -1280,13 +1517,15 @@ export const chapter079: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['transformation', 'damit-to-um-zu', 'same-subject'],
-      instruction: 'Rewrite this damit-clause as an um ... zu clause (the subjects are the same, so it is possible). Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite this damit-clause as an um ... zu clause (the subjects are the same, so it is possible). Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Damit-Satz: Ich rufe dich an, damit ich dir Bescheid sage. → um ... zu?',
       acceptedAnswers: ['Ich rufe dich an, um dir Bescheid zu sagen.'],
       answerMode: 'normalized',
       placeholder: 'Ich rufe dich an, um ...',
       maxLength: 60,
-      explanation: 'Since both clauses share the same subject (ich), the damit-clause can be shortened to um ... zu, dropping the second ich and putting zu sagen at the end.',
+      explanation:
+        'Since both clauses share the same subject (ich), the damit-clause can be shortened to um ... zu, dropping the second ich and putting zu sagen at the end.',
     },
     {
       id: 'ch79-ex-63',
@@ -1295,7 +1534,8 @@ export const chapter079: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['um-zu', 'word-order'],
-      instruction: 'Put the segments in the correct order to form a grammatical sentence.',
+      instruction:
+        'Put the segments in the correct order to form a grammatical sentence.',
       prompt: '"We save money in order to go on vacation."',
       segments: [
         { id: 's1', text: 'Wir sparen Geld,' },
@@ -1303,7 +1543,8 @@ export const chapter079: ChapterDefinition = {
         { id: 's3', text: 'in den Urlaub' },
         { id: 's4', text: 'zu fahren.' },
       ],
-      explanation: 'Same subject (wir); um opens the purpose clause, and zu fahren, the infinitive phrase, closes it.',
+      explanation:
+        'Same subject (wir); um opens the purpose clause, and zu fahren, the infinitive phrase, closes it.',
     },
     {
       id: 'ch79-ex-64',
@@ -1312,7 +1553,8 @@ export const chapter079: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['damit', 'word-order'],
-      instruction: 'Put the segments in the correct order to form a grammatical sentence.',
+      instruction:
+        'Put the segments in the correct order to form a grammatical sentence.',
       prompt: '"The company offers home office so that employees are more flexible."',
       segments: [
         { id: 's1', text: 'Die Firma bietet Homeoffice an,' },
@@ -1320,7 +1562,8 @@ export const chapter079: ChapterDefinition = {
         { id: 's3', text: 'die Mitarbeiter' },
         { id: 's4', text: 'flexibler sind.' },
       ],
-      explanation: 'Subjects differ (die Firma vs. die Mitarbeiter); damit introduces the clause, and the finite verb sind stands at the end.',
+      explanation:
+        'Subjects differ (die Firma vs. die Mitarbeiter); damit introduces the clause, and the finite verb sind stands at the end.',
     },
     {
       id: 'ch79-ex-65',
@@ -1329,7 +1572,8 @@ export const chapter079: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['um-zu', 'separable-verb', 'word-order'],
-      instruction: 'Put the segments in the correct order to form a grammatical sentence.',
+      instruction:
+        'Put the segments in the correct order to form a grammatical sentence.',
       prompt: '"We get up early to arrive on time."',
       segments: [
         { id: 's1', text: 'Wir stehen früh auf,' },
@@ -1337,7 +1581,8 @@ export const chapter079: ChapterDefinition = {
         { id: 's3', text: 'rechtzeitig' },
         { id: 's4', text: 'anzukommen.' },
       ],
-      explanation: 'The separable verb ankommen becomes anzukommen (zu between prefix and stem) at the very end.',
+      explanation:
+        'The separable verb ankommen becomes anzukommen (zu between prefix and stem) at the very end.',
     },
     {
       id: 'ch79-ex-66',
@@ -1346,7 +1591,8 @@ export const chapter079: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['damit', 'modal-verb', 'word-order'],
-      instruction: 'Put the segments in the correct order to form a grammatical sentence.',
+      instruction:
+        'Put the segments in the correct order to form a grammatical sentence.',
       prompt: '"The doctor writes it down so that the patient can read it later."',
       segments: [
         { id: 's1', text: 'Der Arzt schreibt es auf,' },
@@ -1354,7 +1600,8 @@ export const chapter079: ChapterDefinition = {
         { id: 's3', text: 'der Patient es später' },
         { id: 's4', text: 'lesen kann.' },
       ],
-      explanation: 'In the damit-clause, the modal verb (kann) goes to the very end, after the infinitive lesen.',
+      explanation:
+        'In the damit-clause, the modal verb (kann) goes to the very end, after the infinitive lesen.',
     },
     {
       id: 'ch79-ex-67',
@@ -1363,7 +1610,8 @@ export const chapter079: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['um-zu', 'negation', 'word-order'],
-      instruction: 'Put the segments in the correct order to form a grammatical sentence.',
+      instruction:
+        'Put the segments in the correct order to form a grammatical sentence.',
       prompt: '"She turns off her phone so as not to be disturbed."',
       segments: [
         { id: 's1', text: 'Sie schaltet ihr Handy aus,' },
@@ -1371,7 +1619,8 @@ export const chapter079: ChapterDefinition = {
         { id: 's3', text: 'nicht gestört' },
         { id: 's4', text: 'zu werden.' },
       ],
-      explanation: 'nicht stands before the word it negates (gestört); zu stays directly before the infinitive werden.',
+      explanation:
+        'nicht stands before the word it negates (gestört); zu stays directly before the infinitive werden.',
     },
     {
       id: 'ch79-ex-68',
@@ -1380,7 +1629,8 @@ export const chapter079: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['damit', 'negation', 'separable-verb', 'word-order'],
-      instruction: 'Put the segments in the correct order to form a grammatical sentence.',
+      instruction:
+        'Put the segments in the correct order to form a grammatical sentence.',
       prompt: '"He whispers so that the children do not wake up."',
       segments: [
         { id: 's1', text: 'Er flüstert,' },
@@ -1388,7 +1638,8 @@ export const chapter079: ChapterDefinition = {
         { id: 's3', text: 'die Kinder' },
         { id: 's4', text: 'nicht aufwachen.' },
       ],
-      explanation: 'The separable verb aufwachen joins as one word at the very end, with nicht directly before it.',
+      explanation:
+        'The separable verb aufwachen joins as one word at the very end, with nicht directly before it.',
     },
     {
       id: 'ch79-ex-69',
@@ -1397,7 +1648,8 @@ export const chapter079: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'transfer',
       grammarFocus: ['um-zu', 'fronted-clause', 'word-order'],
-      instruction: 'Put the segments in the correct order to form a grammatical sentence.',
+      instruction:
+        'Put the segments in the correct order to form a grammatical sentence.',
       prompt: '"To pass the exam, he has to study a lot."',
       segments: [
         { id: 's1', text: 'Um die Prüfung zu bestehen,' },
@@ -1405,7 +1657,8 @@ export const chapter079: ChapterDefinition = {
         { id: 's3', text: 'er' },
         { id: 's4', text: 'viel lernen.' },
       ],
-      explanation: 'The fronted um ... zu clause counts as the first element; the finite verb muss follows immediately after the comma.',
+      explanation:
+        'The fronted um ... zu clause counts as the first element; the finite verb muss follows immediately after the comma.',
     },
     {
       id: 'ch79-ex-70',
@@ -1414,7 +1667,8 @@ export const chapter079: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'transfer',
       grammarFocus: ['damit', 'fronted-clause', 'word-order'],
-      instruction: 'Put the segments in the correct order to form a grammatical sentence.',
+      instruction:
+        'Put the segments in the correct order to form a grammatical sentence.',
       prompt: '"So that you arrive on time, you should leave early."',
       segments: [
         { id: 's1', text: 'Damit du pünktlich ankommst,' },
@@ -1422,7 +1676,8 @@ export const chapter079: ChapterDefinition = {
         { id: 's3', text: 'du' },
         { id: 's4', text: 'früh losfahren.' },
       ],
-      explanation: 'The fronted damit-clause counts as the first element; the finite verb solltest follows immediately after the comma.',
+      explanation:
+        'The fronted damit-clause counts as the first element; the finite verb solltest follows immediately after the comma.',
     },
     {
       id: 'ch79-ex-71',
@@ -1445,12 +1700,14 @@ export const chapter079: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['damit', 'different-subject', 'connector-choice'],
-      instruction: 'Drag the correct connector into the gap. Different subjects: die Lehrerin / alle Schüler.',
+      instruction:
+        'Drag the correct connector into the gap. Different subjects: die Lehrerin / alle Schüler.',
       prompt: 'Die Lehrerin spricht laut, ___ alle Schüler sie hören.',
       templateParts: ['Die Lehrerin spricht laut, ', ' alle Schüler sie hören.'],
       slots: [{ id: 'slot1', correctWord: 'damit' }],
       wordBank: ['damit', 'um', 'weil', 'dass'],
-      explanation: 'Subjects differ (die Lehrerin vs. alle Schüler), so damit is required.',
+      explanation:
+        'Subjects differ (die Lehrerin vs. alle Schüler), so damit is required.',
     },
     {
       id: 'ch79-ex-73',
@@ -1478,7 +1735,8 @@ export const chapter079: ChapterDefinition = {
       templateParts: ['Ich gehe in die Stadt, um ', '.'],
       slots: [{ id: 'slot1', correctWord: 'einzukaufen' }],
       wordBank: ['einzukaufen', 'einkaufen', 'zu einkaufen', 'kaufen ein'],
-      explanation: 'einkaufen is separable; zu is inserted between the prefix and the stem, forming one word: einzukaufen.',
+      explanation:
+        'einkaufen is separable; zu is inserted between the prefix and the stem, forming one word: einzukaufen.',
     },
     {
       id: 'ch79-ex-75',
@@ -1492,7 +1750,8 @@ export const chapter079: ChapterDefinition = {
       templateParts: ['Ich erkläre es langsam, damit du es ', '.'],
       slots: [{ id: 'slot1', correctWord: 'verstehst' }],
       wordBank: ['verstehst', 'verstehen', 'verstehe', 'zu verstehen'],
-      explanation: 'damit sends the finite verb to the end; the du-form of verstehen is verstehst.',
+      explanation:
+        'damit sends the finite verb to the end; the du-form of verstehen is verstehst.',
     },
     {
       id: 'ch79-ex-76',
@@ -1509,7 +1768,8 @@ export const chapter079: ChapterDefinition = {
         { id: 'slot2', correctWord: 'zu' },
       ],
       wordBank: ['nicht', 'zu', 'kein', 'um'],
-      explanation: 'nicht stands before the word it negates (nass); zu still stands directly before the infinitive werden.',
+      explanation:
+        'nicht stands before the word it negates (nass); zu still stands directly before the infinitive werden.',
     },
     {
       id: 'ch79-ex-77',
@@ -1523,7 +1783,8 @@ export const chapter079: ChapterDefinition = {
       templateParts: ['Wir schließen die Tür, damit die Katze nicht ', '.'],
       slots: [{ id: 'slot1', correctWord: 'rausgeht' }],
       wordBank: ['rausgeht', 'rausgeh', 'geht raus', 'herausgeht'],
-      explanation: 'The separable verb rausgehen joins as one conjugated word, rausgeht, at the very end of the clause.',
+      explanation:
+        'The separable verb rausgehen joins as one conjugated word, rausgeht, at the very end of the clause.',
     },
     {
       id: 'ch79-ex-78',
@@ -1537,7 +1798,8 @@ export const chapter079: ChapterDefinition = {
       templateParts: ['Um die Prüfung zu bestehen, ', ' er viel lernen.'],
       slots: [{ id: 'slot1', correctWord: 'muss' }],
       wordBank: ['muss', 'musst', 'müssen', 'soll'],
-      explanation: 'After the fronted um ... zu clause, the main clause\'s finite verb (muss) comes immediately after the comma.',
+      explanation:
+        "After the fronted um ... zu clause, the main clause's finite verb (muss) comes immediately after the comma.",
     },
     {
       id: 'ch79-ex-79',
@@ -1546,15 +1808,33 @@ export const chapter079: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['um-zu', 'damit', 'connector-choice'],
-      instruction: 'Match each main clause with the purpose clause that correctly completes it.',
+      instruction:
+        'Match each main clause with the purpose clause that correctly completes it.',
       prompt: 'Match the scenarios with the correct um ... zu or damit continuation.',
       pairs: [
-        { id: 'p1', left: 'Ich lerne jeden Tag Vokabeln, ...', right: 'um die Prüfung zu bestehen.' },
-        { id: 'p2', left: 'Die Lehrerin spricht langsam, ...', right: 'damit die Schüler alles verstehen.' },
-        { id: 'p3', left: 'Wir stehen früh auf, ...', right: 'um rechtzeitig anzukommen.' },
-        { id: 'p4', left: 'Die Firma bietet Homeoffice an, ...', right: 'damit die Mitarbeiter flexibler sind.' },
+        {
+          id: 'p1',
+          left: 'Ich lerne jeden Tag Vokabeln, ...',
+          right: 'um die Prüfung zu bestehen.',
+        },
+        {
+          id: 'p2',
+          left: 'Die Lehrerin spricht langsam, ...',
+          right: 'damit die Schüler alles verstehen.',
+        },
+        {
+          id: 'p3',
+          left: 'Wir stehen früh auf, ...',
+          right: 'um rechtzeitig anzukommen.',
+        },
+        {
+          id: 'p4',
+          left: 'Die Firma bietet Homeoffice an, ...',
+          right: 'damit die Mitarbeiter flexibler sind.',
+        },
       ],
-      explanation: 'p1 and p3 have the same subject in both clauses (um ... zu); p2 and p4 have different subjects, so damit is required.',
+      explanation:
+        'p1 and p3 have the same subject in both clauses (um ... zu); p2 and p4 have different subjects, so damit is required.',
     },
     {
       id: 'ch79-ex-80',
@@ -1563,15 +1843,29 @@ export const chapter079: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['um-zu', 'damit', 'connector-choice'],
-      instruction: 'Match each main clause with the purpose clause that correctly completes it.',
+      instruction:
+        'Match each main clause with the purpose clause that correctly completes it.',
       prompt: 'Match the scenarios with the correct um ... zu or damit continuation.',
       pairs: [
-        { id: 'p1', left: 'Er spart Geld, ...', right: 'um sich ein neues Auto zu kaufen.' },
-        { id: 'p2', left: 'Der Arzt schreibt es auf, ...', right: 'damit der Patient es später lesen kann.' },
+        {
+          id: 'p1',
+          left: 'Er spart Geld, ...',
+          right: 'um sich ein neues Auto zu kaufen.',
+        },
+        {
+          id: 'p2',
+          left: 'Der Arzt schreibt es auf, ...',
+          right: 'damit der Patient es später lesen kann.',
+        },
         { id: 'p3', left: 'Sie macht Yoga, ...', right: 'um sich zu entspannen.' },
-        { id: 'p4', left: 'Der Chef schickt eine E-Mail, ...', right: 'damit alle Mitarbeiter informiert sind.' },
+        {
+          id: 'p4',
+          left: 'Der Chef schickt eine E-Mail, ...',
+          right: 'damit alle Mitarbeiter informiert sind.',
+        },
       ],
-      explanation: 'p1 and p3 keep the same subject (um ... zu); p2 and p4 involve two different people, so damit is required.',
+      explanation:
+        'p1 and p3 keep the same subject (um ... zu); p2 and p4 involve two different people, so damit is required.',
     },
     {
       id: 'ch79-ex-81',
@@ -1580,15 +1874,33 @@ export const chapter079: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['um-zu', 'damit', 'negation'],
-      instruction: 'Match each main clause with the negated purpose clause that correctly completes it.',
+      instruction:
+        'Match each main clause with the negated purpose clause that correctly completes it.',
       prompt: 'Match the scenarios with the correct negated continuation.',
       pairs: [
-        { id: 'p1', left: 'Er nimmt den Schirm mit, ...', right: 'um nicht nass zu werden.' },
-        { id: 'p2', left: 'Er flüstert, ...', right: 'damit die Kinder nicht aufwachen.' },
-        { id: 'p3', left: 'Sie schaltet ihr Handy aus, ...', right: 'um nicht gestört zu werden.' },
-        { id: 'p4', left: 'Wir schließen die Tür, ...', right: 'damit die Katze nicht rausgeht.' },
+        {
+          id: 'p1',
+          left: 'Er nimmt den Schirm mit, ...',
+          right: 'um nicht nass zu werden.',
+        },
+        {
+          id: 'p2',
+          left: 'Er flüstert, ...',
+          right: 'damit die Kinder nicht aufwachen.',
+        },
+        {
+          id: 'p3',
+          left: 'Sie schaltet ihr Handy aus, ...',
+          right: 'um nicht gestört zu werden.',
+        },
+        {
+          id: 'p4',
+          left: 'Wir schließen die Tür, ...',
+          right: 'damit die Katze nicht rausgeht.',
+        },
       ],
-      explanation: 'p1 and p3 negate an um ... zu clause (nicht before the negated word, zu before the infinitive); p2 and p4 negate a damit-clause (nicht before the final verb).',
+      explanation:
+        'p1 and p3 negate an um ... zu clause (nicht before the negated word, zu before the infinitive); p2 and p4 negate a damit-clause (nicht before the final verb).',
     },
     {
       id: 'ch79-ex-82',
@@ -1597,16 +1909,30 @@ export const chapter079: ChapterDefinition = {
       type: 'matching',
       level: 'transfer',
       grammarFocus: ['um-zu', 'damit', 'clause-combination'],
-      instruction: 'Match each main clause with the purpose clause that correctly completes it.',
+      instruction:
+        'Match each main clause with the purpose clause that correctly completes it.',
       prompt: 'Match the scenarios with the correct um ... zu or damit continuation.',
       pairs: [
         { id: 'p1', left: 'Ich rufe dich an, ...', right: 'um dir Bescheid zu sagen.' },
-        { id: 'p2', left: 'Ich gebe dir meine Nummer, ...', right: 'damit du mich anrufen kannst.' },
-        { id: 'p3', left: 'Ich schreibe mir Notizen, ...', right: 'um nichts zu vergessen.' },
-        { id: 'p4', left: 'Der Lehrer spricht laut, ...', right: 'damit alle Schüler ihn hören können.' },
+        {
+          id: 'p2',
+          left: 'Ich gebe dir meine Nummer, ...',
+          right: 'damit du mich anrufen kannst.',
+        },
+        {
+          id: 'p3',
+          left: 'Ich schreibe mir Notizen, ...',
+          right: 'um nichts zu vergessen.',
+        },
+        {
+          id: 'p4',
+          left: 'Der Lehrer spricht laut, ...',
+          right: 'damit alle Schüler ihn hören können.',
+        },
         { id: 'p5', left: 'Ich gehe in die Stadt, ...', right: 'um einzukaufen.' },
       ],
-      explanation: 'p1, p3, and p5 keep the same subject (um ... zu); p2 and p4 involve a second person, so damit is required.',
+      explanation:
+        'p1, p3, and p5 keep the same subject (um ... zu); p2 and p4 involve a second person, so damit is required.',
     },
     {
       id: 'ch79-ex-83',
@@ -1615,15 +1941,33 @@ export const chapter079: ChapterDefinition = {
       type: 'matching',
       level: 'transfer',
       grammarFocus: ['um-zu', 'damit', 'fronted-clause'],
-      instruction: 'Match each fronted purpose clause with the main clause that correctly follows it.',
+      instruction:
+        'Match each fronted purpose clause with the main clause that correctly follows it.',
       prompt: 'Match the fronted clauses with the correct main clause continuation.',
       pairs: [
-        { id: 'p1', left: 'Um die Prüfung zu bestehen, ...', right: 'muss er viel lernen.' },
-        { id: 'p2', left: 'Damit du pünktlich ankommst, ...', right: 'solltest du früh losfahren.' },
-        { id: 'p3', left: 'Um nicht nass zu werden, ...', right: 'nimmt er den Regenschirm mit.' },
-        { id: 'p4', left: 'Damit die Kinder nicht hungrig sind, ...', right: 'kocht die Mutter das Essen.' },
+        {
+          id: 'p1',
+          left: 'Um die Prüfung zu bestehen, ...',
+          right: 'muss er viel lernen.',
+        },
+        {
+          id: 'p2',
+          left: 'Damit du pünktlich ankommst, ...',
+          right: 'solltest du früh losfahren.',
+        },
+        {
+          id: 'p3',
+          left: 'Um nicht nass zu werden, ...',
+          right: 'nimmt er den Regenschirm mit.',
+        },
+        {
+          id: 'p4',
+          left: 'Damit die Kinder nicht hungrig sind, ...',
+          right: 'kocht die Mutter das Essen.',
+        },
       ],
-      explanation: 'When a purpose clause opens the sentence, the main clause\'s finite verb follows immediately after the comma.',
+      explanation:
+        "When a purpose clause opens the sentence, the main clause's finite verb follows immediately after the comma.",
     },
     {
       id: 'ch79-ex-84',
@@ -1637,7 +1981,8 @@ export const chapter079: ChapterDefinition = {
       tokens: ['Ich', 'lerne', 'Deutsch,', 'um', 'mein', 'Bruder', 'studiert.'],
       errorTokenIndex: 3,
       correction: 'damit',
-      explanation: 'Subjects differ (ich vs. mein Bruder), so um ... zu is impossible; damit is required to introduce a clause with its own subject.',
+      explanation:
+        'Subjects differ (ich vs. mein Bruder), so um ... zu is impossible; damit is required to introduce a clause with its own subject.',
     },
     {
       id: 'ch79-ex-85',
@@ -1651,7 +1996,8 @@ export const chapter079: ChapterDefinition = {
       tokens: ['Ich', 'erkläre', 'es', 'langsam,', 'damit', 'du', 'es', 'verstehen.'],
       errorTokenIndex: 7,
       correction: 'verstehst.',
-      explanation: 'damit needs a finite verb agreeing with its own subject (du); the infinitive verstehen must become verstehst.',
+      explanation:
+        'damit needs a finite verb agreeing with its own subject (du); the infinitive verstehen must become verstehst.',
     },
     {
       id: 'ch79-ex-86',
@@ -1665,7 +2011,8 @@ export const chapter079: ChapterDefinition = {
       tokens: ['Wir', 'sparen', 'Geld,', 'um', 'wir', 'in', 'den', 'Urlaub', 'fahren.'],
       errorTokenIndex: 3,
       correction: 'damit',
-      explanation: 'um ... zu can never introduce a clause with its own subject; since a subject (wir) follows, the connector must be damit instead.',
+      explanation:
+        'um ... zu can never introduce a clause with its own subject; since a subject (wir) follows, the connector must be damit instead.',
     },
     {
       id: 'ch79-ex-87',
@@ -1676,10 +2023,22 @@ export const chapter079: ChapterDefinition = {
       grammarFocus: ['error-correction', 'um-zu', 'reflexive-verb'],
       instruction: 'Find the token that makes this sentence ungrammatical.',
       prompt: 'Er spart Geld, um ihm ein neues Auto zu kaufen.',
-      tokens: ['Er', 'spart', 'Geld,', 'um', 'ihm', 'ein', 'neues', 'Auto', 'zu', 'kaufen.'],
+      tokens: [
+        'Er',
+        'spart',
+        'Geld,',
+        'um',
+        'ihm',
+        'ein',
+        'neues',
+        'Auto',
+        'zu',
+        'kaufen.',
+      ],
       errorTokenIndex: 4,
       correction: 'sich',
-      explanation: 'The reflexive pronoun inside an um ... zu clause must match the main clause\'s subject (er → sich), not ihm.',
+      explanation:
+        "The reflexive pronoun inside an um ... zu clause must match the main clause's subject (er → sich), not ihm.",
     },
     {
       id: 'ch79-ex-88',
@@ -1690,10 +2049,21 @@ export const chapter079: ChapterDefinition = {
       grammarFocus: ['error-correction', 'damit', 'verb-final', 'conjugation'],
       instruction: 'Find the token that makes this sentence ungrammatical.',
       prompt: 'Ich mache das Fenster auf, damit frische Luft hereinkommen.',
-      tokens: ['Ich', 'mache', 'das', 'Fenster', 'auf,', 'damit', 'frische', 'Luft', 'hereinkommen.'],
+      tokens: [
+        'Ich',
+        'mache',
+        'das',
+        'Fenster',
+        'auf,',
+        'damit',
+        'frische',
+        'Luft',
+        'hereinkommen.',
+      ],
       errorTokenIndex: 8,
       correction: 'hereinkommt.',
-      explanation: 'damit needs a finite verb; the infinitive hereinkommen must become the conjugated form hereinkommt, agreeing with frische Luft.',
+      explanation:
+        'damit needs a finite verb; the infinitive hereinkommen must become the conjugated form hereinkommt, agreeing with frische Luft.',
     },
   ],
 };

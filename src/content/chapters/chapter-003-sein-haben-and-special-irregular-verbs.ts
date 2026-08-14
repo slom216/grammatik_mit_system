@@ -677,7 +677,8 @@ export const chapter003: ChapterDefinition = {
         { id: 'd', text: 'tun' },
       ],
       correctOptionId: 'a',
-      explanation: 'ich takes tue: the short infinitive tun follows the regular ending pattern once you know the stem tu-.',
+      explanation:
+        'ich takes tue: the short infinitive tun follows the regular ending pattern once you know the stem tu-.',
     },
     {
       id: 'ch03-ex-28',
@@ -695,7 +696,8 @@ export const chapter003: ChapterDefinition = {
         { id: 'd', text: 'werden' },
       ],
       correctOptionId: 'a',
-      explanation: 'ich takes werde; the e-to-i vowel change only happens in the du- and er/sie/es-forms.',
+      explanation:
+        'ich takes werde; the e-to-i vowel change only happens in the du- and er/sie/es-forms.',
     },
     {
       id: 'ch03-ex-29',
@@ -713,7 +715,8 @@ export const chapter003: ChapterDefinition = {
         { id: 'd', text: 'wissen' },
       ],
       correctOptionId: 'a',
-      explanation: 'du takes weißt, with the i-to-ei vowel change but no extra ending beyond -t.',
+      explanation:
+        'du takes weißt, with the i-to-ei vowel change but no extra ending beyond -t.',
     },
     {
       id: 'ch03-ex-30',
@@ -731,7 +734,8 @@ export const chapter003: ChapterDefinition = {
         { id: 'd', text: 'seid' },
       ],
       correctOptionId: 'a',
-      explanation: 'Durst haben is a fixed expression that always uses haben, and wir takes haben.',
+      explanation:
+        'Durst haben is a fixed expression that always uses haben, and wir takes haben.',
     },
     {
       id: 'ch03-ex-31',
@@ -749,7 +753,8 @@ export const chapter003: ChapterDefinition = {
         { id: 'd', text: 'bist' },
       ],
       correctOptionId: 'a',
-      explanation: 'Profession is expressed with sein: Frau Meier (er/sie/es) ist Ärztin.',
+      explanation:
+        'Profession is expressed with sein: Frau Meier (er/sie/es) ist Ärztin.',
     },
     {
       id: 'ch03-ex-32',
@@ -767,7 +772,8 @@ export const chapter003: ChapterDefinition = {
         { id: 'd', text: 'ist' },
       ],
       correctOptionId: 'a',
-      explanation: 'Possession is expressed with haben, and plural die Kinder takes haben, not sind/ist (forms of sein).',
+      explanation:
+        'Possession is expressed with haben, and plural die Kinder takes haben, not sind/ist (forms of sein).',
     },
     {
       id: 'ch03-ex-33',
@@ -809,7 +815,8 @@ export const chapter003: ChapterDefinition = {
       templateParts: ['Die Kinder ', ' langsam hungrig.'],
       slots: [{ id: 'slot-1', correctWord: 'werden' }],
       wordBank: ['werden', 'wird', 'wirst', 'werde'],
-      explanation: 'Plural die Kinder takes werden; the vowel change to wird/wirst only happens in the singular du- and er/sie/es-forms.',
+      explanation:
+        'Plural die Kinder takes werden; the vowel change to wird/wirst only happens in the singular du- and er/sie/es-forms.',
     },
     {
       id: 'ch03-ex-36',
@@ -823,7 +830,8 @@ export const chapter003: ChapterDefinition = {
       templateParts: ['Ihr ', ' die Wahrheit nicht.'],
       slots: [{ id: 'slot-1', correctWord: 'wisst' }],
       wordBank: ['wisst', 'weiß', 'weißt', 'wissen'],
-      explanation: 'ihr takes wisst, from the regular plural stem wiss- plus the usual -t ending.',
+      explanation:
+        'ihr takes wisst, from the regular plural stem wiss- plus the usual -t ending.',
     },
     {
       id: 'ch03-ex-37',
@@ -851,7 +859,8 @@ export const chapter003: ChapterDefinition = {
       templateParts: ['Es ', ' schon spät.'],
       slots: [{ id: 'slot-1', correctWord: 'ist' }],
       wordBank: ['ist', 'hat', 'sind', 'bin'],
-      explanation: 'Time expressions use sein: Es ist spät. hat (haben) would be the wrong verb here.',
+      explanation:
+        'Time expressions use sein: Es ist spät. hat (haben) would be the wrong verb here.',
     },
     {
       id: 'ch03-ex-39',
@@ -869,7 +878,8 @@ export const chapter003: ChapterDefinition = {
         { id: 'p4', left: 'wir', right: 'sind' },
         { id: 'p5', left: 'ihr', right: 'seid' },
       ],
-      explanation: 'sein has a distinct form for almost every person: bin, bist, ist, sind, seid, sind.',
+      explanation:
+        'sein has a distinct form for almost every person: bin, bist, ist, sind, seid, sind.',
     },
     {
       id: 'ch03-ex-40',
@@ -887,7 +897,8 @@ export const chapter003: ChapterDefinition = {
         { id: 'p4', left: 'wir', right: 'haben' },
         { id: 'p5', left: 'ihr', right: 'habt' },
       ],
-      explanation: 'haben drops the b of the stem only in the du- and er/sie/es-forms: hast, hat.',
+      explanation:
+        'haben drops the b of the stem only in the du- and er/sie/es-forms: hast, hat.',
     },
     {
       id: 'ch03-ex-41',
@@ -906,7 +917,8 @@ export const chapter003: ChapterDefinition = {
         { id: 'p5', left: 'Ihr ___ Angst.', right: 'habt' },
         { id: 'p6', left: 'Sie (sie, pl.) ___ Studenten.', right: 'sind' },
       ],
-      explanation: 'Hunger, Durst, and Angst always take haben; age and identity always take sein.',
+      explanation:
+        'Hunger, Durst, and Angst always take haben; age and identity always take sein.',
     },
     {
       id: 'ch03-ex-42',
@@ -925,7 +937,8 @@ export const chapter003: ChapterDefinition = {
         { id: 'p5', left: 'ich (tun)', right: 'tue' },
         { id: 'p6', left: 'ihr (tun)', right: 'tut' },
       ],
-      explanation: 'werden and wissen change their stem vowel only in the singular; tun keeps its vowel throughout.',
+      explanation:
+        'werden and wissen change their stem vowel only in the singular; tun keeps its vowel throughout.',
     },
     {
       id: 'ch03-ex-43',
@@ -967,7 +980,8 @@ export const chapter003: ChapterDefinition = {
       tokens: ['Er', 'hat', 'Lehrer', 'von', 'Beruf.'],
       errorTokenIndex: 1,
       correction: 'ist',
-      explanation: 'Profession is expressed with sein, not haben: Er ist Lehrer von Beruf.',
+      explanation:
+        'Profession is expressed with sein, not haben: Er ist Lehrer von Beruf.',
     },
     {
       id: 'ch03-ex-46',
@@ -995,7 +1009,8 @@ export const chapter003: ChapterDefinition = {
       tokens: ['Er', 'weißt', 'die', 'Antwort', 'nicht.'],
       errorTokenIndex: 1,
       correction: 'weiß',
-      explanation: 'weißt is the du-form; er/sie/es also uses weiß, with no extra ending.',
+      explanation:
+        'weißt is the du-form; er/sie/es also uses weiß, with no extra ending.',
     },
     {
       id: 'ch03-ex-48',
@@ -1026,7 +1041,8 @@ export const chapter003: ChapterDefinition = {
         { id: 'w3', text: 'sehr' },
         { id: 'w4', text: 'müde.' },
       ],
-      explanation: 'The subject Ich comes first, followed by the conjugated verb bin, then the rest of the sentence: Ich bin sehr müde.',
+      explanation:
+        'The subject Ich comes first, followed by the conjugated verb bin, then the rest of the sentence: Ich bin sehr müde.',
     },
     {
       id: 'ch03-ex-50',
@@ -1077,7 +1093,8 @@ export const chapter003: ChapterDefinition = {
         { id: 'w3', text: 'ist' },
         { id: 'w4', text: 'Ärztin.' },
       ],
-      explanation: 'The subject Meine Mutter comes first, then the conjugated verb ist: Meine Mutter ist Ärztin.',
+      explanation:
+        'The subject Meine Mutter comes first, then the conjugated verb ist: Meine Mutter ist Ärztin.',
     },
     {
       id: 'ch03-ex-53',
@@ -1152,7 +1169,8 @@ export const chapter003: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'form',
       maxLength: 10,
-      explanation: 'Die Studenten is a plural sie-subject, which takes wissen, with the regular stem wiss-.',
+      explanation:
+        'Die Studenten is a plural sie-subject, which takes wissen, with the regular stem wiss-.',
     },
     {
       id: 'ch03-ex-58',

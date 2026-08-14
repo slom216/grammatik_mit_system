@@ -12,7 +12,15 @@ export const chapter049: ChapterDefinition = {
     'Predict the grammatical gender of German nouns using natural gender, semantic groups (days, months, seasons, weather, metals), and reliable noun-forming suffixes (-er, -ling, -ismus; -ung, -heit, -keit, -schaft, -ion, -tät, -in; -chen, -lein, -ment), while recognizing well-known exceptions and building a personal memorization strategy.',
   prerequisites: [14, 15],
   estimatedMinutes: 30,
-  tags: ['gender', 'noun-gender', 'suffixes', 'der-die-das', 'semantic-groups', 'diminutives', 'exceptions'],
+  tags: [
+    'gender',
+    'noun-gender',
+    'suffixes',
+    'der-die-das',
+    'semantic-groups',
+    'diminutives',
+    'exceptions',
+  ],
   explanation: {
     introduction: [
       'Every German noun has one of three grammatical genders — masculine (der), feminine (die), or neuter (das) — and that gender determines the article, adjective endings, and pronouns that go with it. Unlike plural formation, gender cannot be looked up from a single master rule, but it is far from random: a large share of German nouns belong to predictable groups, either because of what they mean (semantic groups) or because of how they are built (noun-forming suffixes).',
@@ -84,7 +92,11 @@ export const chapter049: ChapterDefinition = {
           ['-er (agent nouns)', 'der Lehrer', 'the teacher'],
           ['-ling', 'der Frühling', 'the spring'],
           ['-ismus / -or / -us', 'der Tourismus, der Motor', 'tourism, the motor'],
-          ['days, months, seasons', 'der Montag, der Mai, der Sommer', 'Monday, May, summer'],
+          [
+            'days, months, seasons',
+            'der Montag, der Mai, der Sommer',
+            'Monday, May, summer',
+          ],
           ['weather phenomena', 'der Regen, der Wind', 'rain, wind'],
         ],
       },
@@ -105,7 +117,11 @@ export const chapter049: ChapterDefinition = {
         title: 'Neuter: suffixes and semantic groups',
         columns: ['Suffix / group', 'Example', 'English'],
         rows: [
-          ['-chen / -lein (diminutives)', 'das Mädchen, das Fräulein', 'the girl, the young lady'],
+          [
+            '-chen / -lein (diminutives)',
+            'das Mädchen, das Fräulein',
+            'the girl, the young lady',
+          ],
           ['-ment', 'das Dokument', 'the document'],
           ['Ge- nouns', 'das Gebirge', 'the mountain range'],
           ['infinitives used as nouns', 'das Essen, das Leben', 'eating/food, life'],
@@ -117,10 +133,30 @@ export const chapter049: ChapterDefinition = {
         title: 'Notable exceptions to the rules above',
         columns: ['Noun', 'What the rule would predict', 'Actual gender', 'Reason'],
         rows: [
-          ['Mädchen (girl)', 'feminine (refers to a female)', 'das Mädchen', 'the diminutive suffix -chen always makes a noun neuter'],
-          ['Junge (boy)', 'feminine (ends in unstressed -e)', 'der Junge', 'natural gender (male) overrides the weak -e tendency'],
-          ['Auto (car)', 'masculine (like its synonym der Wagen)', 'das Auto', 'gender must be learned per noun, not per synonym'],
-          ['Stahl (steel)', 'neuter (like other metals)', 'der Stahl', 'not a pure chemical element, so it does not follow the neuter-metal pattern'],
+          [
+            'Mädchen (girl)',
+            'feminine (refers to a female)',
+            'das Mädchen',
+            'the diminutive suffix -chen always makes a noun neuter',
+          ],
+          [
+            'Junge (boy)',
+            'feminine (ends in unstressed -e)',
+            'der Junge',
+            'natural gender (male) overrides the weak -e tendency',
+          ],
+          [
+            'Auto (car)',
+            'masculine (like its synonym der Wagen)',
+            'das Auto',
+            'gender must be learned per noun, not per synonym',
+          ],
+          [
+            'Stahl (steel)',
+            'neuter (like other metals)',
+            'der Stahl',
+            'not a pure chemical element, so it does not follow the neuter-metal pattern',
+          ],
         ],
         note: 'These four nouns are among the most frequently confused in the whole language — memorize them individually rather than trying to force them into a rule.',
       },
@@ -190,7 +226,8 @@ export const chapter049: ChapterDefinition = {
         german: 'das Mädchen',
         english: 'the girl',
         highlight: ['das Mädchen'],
-        explanation: 'The diminutive suffix -chen always makes a noun neuter, even though the noun refers to a female.',
+        explanation:
+          'The diminutive suffix -chen always makes a noun neuter, even though the noun refers to a female.',
       },
       {
         german: 'das Fräulein',
@@ -220,7 +257,8 @@ export const chapter049: ChapterDefinition = {
         german: 'der Junge',
         english: 'the boy',
         highlight: ['der Junge'],
-        explanation: 'Natural gender (male) overrides the weak tendency for nouns ending in -e to be feminine.',
+        explanation:
+          'Natural gender (male) overrides the weak tendency for nouns ending in -e to be feminine.',
       },
     ],
     commonMistakes: [
@@ -239,12 +277,14 @@ export const chapter049: ChapterDefinition = {
       {
         incorrect: 'der Zeitung',
         correct: 'die Zeitung',
-        explanation: 'Nouns ending in -ung are (almost) always feminine, so the article must be die.',
+        explanation:
+          'Nouns ending in -ung are (almost) always feminine, so the article must be die.',
       },
       {
         incorrect: 'das Freiheit',
         correct: 'die Freiheit',
-        explanation: 'Nouns ending in -heit are always feminine, so the article must be die, not das.',
+        explanation:
+          'Nouns ending in -heit are always feminine, so the article must be die, not das.',
       },
       {
         incorrect: 'der Tischchen',
@@ -255,12 +295,13 @@ export const chapter049: ChapterDefinition = {
       {
         incorrect: 'die Tourismus',
         correct: 'der Tourismus',
-        explanation: 'Nouns ending in -ismus are always masculine, so the article must be der, not die.',
+        explanation:
+          'Nouns ending in -ismus are always masculine, so the article must be der, not die.',
       },
     ],
     remember: [
       'Suffixes are the most reliable gender clue: -chen/-lein/-ment are always neuter; -ung/-heit/-keit/-schaft/-ion/-tät/-in are always feminine; -er (agent nouns), -ling, and -ismus are (almost) always masculine.',
-      'Diminutive endings -chen and -lein always make a noun neuter, regardless of the base noun\'s own gender or the natural sex of the person it refers to (das Mädchen, das Fräulein).',
+      "Diminutive endings -chen and -lein always make a noun neuter, regardless of the base noun's own gender or the natural sex of the person it refers to (das Mädchen, das Fräulein).",
       'Days of the week, months, seasons, and most weather terms are masculine (der Montag, der Mai, der Winter, der Regen); metals and chemical elements are typically neuter (das Gold, das Eisen).',
       'Learn every new noun together with its article, and keep a written list of the exceptions that break the suffix and semantic-group rules (der Junge, das Mädchen, das Auto).',
       'No rule in this chapter is 100% exception-free — when in doubt, check a dictionary rather than guessing from the ending or meaning alone.',
@@ -288,7 +329,8 @@ export const chapter049: ChapterDefinition = {
         { id: 'c', text: 'neutrum (das)' },
       ],
       correctOptionId: 'b',
-      explanation: 'Nouns ending in -ung are almost always feminine: die Zeitung, die Wohnung, die Übung.',
+      explanation:
+        'Nouns ending in -ung are almost always feminine: die Zeitung, die Wohnung, die Übung.',
     },
     {
       id: 'ch49-ex-02',
@@ -298,14 +340,16 @@ export const chapter049: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['suffix-heit-keit', 'feminine-suffix'],
       instruction: 'Choose the gender that this suffix almost always signals.',
-      prompt: 'Welches Geschlecht haben Nomen mit den Endungen -heit und -keit (z. B. die Freiheit, die Möglichkeit)?',
+      prompt:
+        'Welches Geschlecht haben Nomen mit den Endungen -heit und -keit (z. B. die Freiheit, die Möglichkeit)?',
       options: [
         { id: 'a', text: 'maskulin (der)' },
         { id: 'b', text: 'feminin (die)' },
         { id: 'c', text: 'neutrum (das)' },
       ],
       correctOptionId: 'b',
-      explanation: '-heit and -keit are adjective-to-noun suffixes that are always feminine.',
+      explanation:
+        '-heit and -keit are adjective-to-noun suffixes that are always feminine.',
     },
     {
       id: 'ch49-ex-03',
@@ -315,7 +359,8 @@ export const chapter049: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['diminutive', 'neuter-suffix'],
       instruction: 'Choose the gender that this suffix always signals.',
-      prompt: 'Welches Geschlecht haben Diminutive mit -chen oder -lein IMMER — unabhängig vom Geschlecht des Grundworts?',
+      prompt:
+        'Welches Geschlecht haben Diminutive mit -chen oder -lein IMMER — unabhängig vom Geschlecht des Grundworts?',
       options: [
         { id: 'a', text: 'maskulin (der)' },
         { id: 'b', text: 'feminin (die)' },
@@ -333,7 +378,8 @@ export const chapter049: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['suffix-ismus', 'masculine-suffix'],
       instruction: 'Choose the gender that this suffix almost always signals.',
-      prompt: 'Welches Geschlecht hat die Endung -ismus (z. B. der Tourismus, der Kapitalismus)?',
+      prompt:
+        'Welches Geschlecht hat die Endung -ismus (z. B. der Tourismus, der Kapitalismus)?',
       options: [
         { id: 'a', text: 'maskulin (der)' },
         { id: 'b', text: 'feminin (die)' },
@@ -350,7 +396,8 @@ export const chapter049: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['suffix-schaft', 'feminine-suffix'],
       instruction: 'Choose the gender that this suffix almost always signals.',
-      prompt: 'Welches Geschlecht hat die Endung -schaft (z. B. die Freundschaft, die Mannschaft)?',
+      prompt:
+        'Welches Geschlecht hat die Endung -schaft (z. B. die Freundschaft, die Mannschaft)?',
       options: [
         { id: 'a', text: 'maskulin (der)' },
         { id: 'b', text: 'feminin (die)' },
@@ -384,7 +431,8 @@ export const chapter049: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['suffix-tät', 'feminine-suffix'],
       instruction: 'Choose the gender that this suffix almost always signals.',
-      prompt: 'Welches Geschlecht hat die Endung -tät (z. B. die Universität, die Realität)?',
+      prompt:
+        'Welches Geschlecht hat die Endung -tät (z. B. die Universität, die Realität)?',
       options: [
         { id: 'a', text: 'maskulin (der)' },
         { id: 'b', text: 'feminin (die)' },
@@ -401,7 +449,8 @@ export const chapter049: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['suffix-ling', 'masculine-suffix'],
       instruction: 'Choose the gender that this suffix almost always signals.',
-      prompt: 'Welches Geschlecht hat die Endung -ling (z. B. der Frühling, der Schmetterling)?',
+      prompt:
+        'Welches Geschlecht hat die Endung -ling (z. B. der Frühling, der Schmetterling)?',
       options: [
         { id: 'a', text: 'maskulin (der)' },
         { id: 'b', text: 'feminin (die)' },
@@ -418,7 +467,8 @@ export const chapter049: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['suffix-in', 'feminine-suffix'],
       instruction: 'Choose the gender that this suffix always signals.',
-      prompt: '"der Lehrer" + die Endung -in ergibt "die Lehrerin". Welches Geschlecht hat -in immer?',
+      prompt:
+        '"der Lehrer" + die Endung -in ergibt "die Lehrerin". Welches Geschlecht hat -in immer?',
       options: [
         { id: 'a', text: 'maskulin (der)' },
         { id: 'b', text: 'feminin (die)' },
@@ -436,7 +486,8 @@ export const chapter049: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['semantic-group', 'days-months-seasons'],
       instruction: 'Choose the article that fits this whole semantic group.',
-      prompt: 'Welcher Artikel passt zu Wochentagen, Monaten und Jahreszeiten (___ Montag, ___ Januar, ___ Sommer)?',
+      prompt:
+        'Welcher Artikel passt zu Wochentagen, Monaten und Jahreszeiten (___ Montag, ___ Januar, ___ Sommer)?',
       options: [
         { id: 'a', text: 'der' },
         { id: 'b', text: 'die' },
@@ -453,7 +504,8 @@ export const chapter049: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['semantic-group', 'weather'],
       instruction: 'Choose the article that fits this whole semantic group.',
-      prompt: 'Welcher Artikel passt zu Wetterphänomenen (___ Regen, ___ Schnee, ___ Wind)?',
+      prompt:
+        'Welcher Artikel passt zu Wetterphänomenen (___ Regen, ___ Schnee, ___ Wind)?',
       options: [
         { id: 'a', text: 'der' },
         { id: 'b', text: 'die' },
@@ -470,14 +522,16 @@ export const chapter049: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['semantic-group', 'metals'],
       instruction: 'Choose the article that fits this whole semantic group.',
-      prompt: 'Welcher Artikel passt zu Metallen und chemischen Elementen (___ Gold, ___ Silber, ___ Eisen)?',
+      prompt:
+        'Welcher Artikel passt zu Metallen und chemischen Elementen (___ Gold, ___ Silber, ___ Eisen)?',
       options: [
         { id: 'a', text: 'der' },
         { id: 'b', text: 'die' },
         { id: 'c', text: 'das' },
       ],
       correctOptionId: 'c',
-      explanation: 'Metals and chemical elements are typically neuter (though der Stahl is a well-known exception).',
+      explanation:
+        'Metals and chemical elements are typically neuter (though der Stahl is a well-known exception).',
     },
     {
       id: 'ch49-ex-13',
@@ -494,7 +548,8 @@ export const chapter049: ChapterDefinition = {
         { id: 'c', text: 'das' },
       ],
       correctOptionId: 'c',
-      explanation: 'Nouns formed by prefixing Ge- to a verb or noun stem are typically neuter.',
+      explanation:
+        'Nouns formed by prefixing Ge- to a verb or noun stem are typically neuter.',
     },
     {
       id: 'ch49-ex-14',
@@ -504,7 +559,8 @@ export const chapter049: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['infinitive-as-noun', 'neuter-suffix'],
       instruction: 'Choose the article that fits this word-formation pattern.',
-      prompt: 'Welcher Artikel passt zu einem substantivierten Infinitiv wie "Leben" oder "Essen"?',
+      prompt:
+        'Welcher Artikel passt zu einem substantivierten Infinitiv wie "Leben" oder "Essen"?',
       options: [
         { id: 'a', text: 'der' },
         { id: 'b', text: 'die' },
@@ -521,7 +577,8 @@ export const chapter049: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['exception', 'diminutive', 'natural-gender'],
       instruction: 'This noun is a well-known exception. Choose its correct article.',
-      prompt: 'Welcher Artikel gehört zu "Mädchen", obwohl es ein weibliches Kind bezeichnet?',
+      prompt:
+        'Welcher Artikel gehört zu "Mädchen", obwohl es ein weibliches Kind bezeichnet?',
       options: [
         { id: 'a', text: 'der' },
         { id: 'b', text: 'die' },
@@ -539,7 +596,8 @@ export const chapter049: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['exception', 'suffix-e', 'natural-gender'],
       instruction: 'This noun is a well-known exception. Choose its correct article.',
-      prompt: 'Welcher Artikel gehört zu "Junge", obwohl das Wort auf unbetontes -e endet (wie viele feminine Nomen)?',
+      prompt:
+        'Welcher Artikel gehört zu "Junge", obwohl das Wort auf unbetontes -e endet (wie viele feminine Nomen)?',
       options: [
         { id: 'a', text: 'der' },
         { id: 'b', text: 'die' },
@@ -557,7 +615,8 @@ export const chapter049: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['exception-risk', 'suffix-e'],
       instruction: 'Identify which noun breaks the usual pattern.',
-      prompt: 'Welches dieser Nomen widerspricht der Tendenz, dass Wörter auf unbetontes -e meist feminin sind?',
+      prompt:
+        'Welches dieser Nomen widerspricht der Tendenz, dass Wörter auf unbetontes -e meist feminin sind?',
       options: [
         { id: 'a', text: 'die Blume' },
         { id: 'b', text: 'die Lampe' },
@@ -575,8 +634,10 @@ export const chapter049: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['sorting', 'diminutive', 'exception-risk'],
-      instruction: 'Sort this noun: which one does NOT belong with the neuter diminutives?',
-      prompt: 'Welches Nomen passt NICHT in die Gruppe der neutralen Diminutive (-chen/-lein)?',
+      instruction:
+        'Sort this noun: which one does NOT belong with the neuter diminutives?',
+      prompt:
+        'Welches Nomen passt NICHT in die Gruppe der neutralen Diminutive (-chen/-lein)?',
       options: [
         { id: 'a', text: 'das Mädchen' },
         { id: 'b', text: 'das Häuschen' },
@@ -720,7 +781,8 @@ export const chapter049: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'der/die/das',
       maxLength: 20,
-      explanation: 'Despite referring to a girl, the diminutive suffix -chen makes Mädchen neuter: das Mädchen.',
+      explanation:
+        'Despite referring to a girl, the diminutive suffix -chen makes Mädchen neuter: das Mädchen.',
     },
     {
       id: 'ch49-ex-28',
@@ -735,7 +797,8 @@ export const chapter049: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'der/die/das',
       maxLength: 20,
-      explanation: 'Gebirge is a Ge- noun formed from der Berg and is neuter: das Gebirge.',
+      explanation:
+        'Gebirge is a Ge- noun formed from der Berg and is neuter: das Gebirge.',
     },
     {
       id: 'ch49-ex-29',
@@ -744,13 +807,15 @@ export const chapter049: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['sentence-writing', 'suffix-heit'],
-      instruction: 'Complete the sentence with the correct article. Capitalisation and punctuation are checked.',
+      instruction:
+        'Complete the sentence with the correct article. Capitalisation and punctuation are checked.',
       prompt: '___ Freiheit ist ein hohes Gut.',
       acceptedAnswers: ['Die Freiheit ist ein hohes Gut.'],
       answerMode: 'normalized',
       placeholder: 'Die ...',
       maxLength: 40,
-      explanation: 'Freiheit ends in -heit, always feminine, so the sentence begins with Die Freiheit ist ein hohes Gut.',
+      explanation:
+        'Freiheit ends in -heit, always feminine, so the sentence begins with Die Freiheit ist ein hohes Gut.',
     },
     {
       id: 'ch49-ex-30',
@@ -776,14 +841,16 @@ export const chapter049: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['suffix-er', 'masculine-suffix'],
       instruction: 'Choose the gender that this agent-noun suffix signals.',
-      prompt: 'Welches Geschlecht hat die Endung -er bei Agens-Nomen (z. B. der Fahrer, der Bäcker)?',
+      prompt:
+        'Welches Geschlecht hat die Endung -er bei Agens-Nomen (z. B. der Fahrer, der Bäcker)?',
       options: [
         { id: 'a', text: 'maskulin (der)' },
         { id: 'b', text: 'feminin (die)' },
         { id: 'c', text: 'neutrum (das)' },
       ],
       correctOptionId: 'a',
-      explanation: 'The agent-noun suffix -er, turning a verb into "someone who does X", is masculine.',
+      explanation:
+        'The agent-noun suffix -er, turning a verb into "someone who does X", is masculine.',
     },
     {
       id: 'ch49-ex-32',
@@ -793,7 +860,8 @@ export const chapter049: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['suffix-tion', 'feminine-suffix'],
       instruction: 'Choose the gender that this loanword suffix signals.',
-      prompt: 'Welches Geschlecht hat die Endung -tion (z. B. die Situation, die Nation)?',
+      prompt:
+        'Welches Geschlecht hat die Endung -tion (z. B. die Situation, die Nation)?',
       options: [
         { id: 'a', text: 'maskulin (der)' },
         { id: 'b', text: 'feminin (die)' },
@@ -810,7 +878,8 @@ export const chapter049: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['suffix-heit-keit', 'feminine-suffix'],
       instruction: 'Choose the gender that this suffix signals.',
-      prompt: 'Welches Geschlecht hat die Endung -keit (z. B. die Möglichkeit, die Wichtigkeit)?',
+      prompt:
+        'Welches Geschlecht hat die Endung -keit (z. B. die Möglichkeit, die Wichtigkeit)?',
       options: [
         { id: 'a', text: 'maskulin (der)' },
         { id: 'b', text: 'feminin (die)' },
@@ -834,7 +903,8 @@ export const chapter049: ChapterDefinition = {
         { id: 'c', text: 'das' },
       ],
       correctOptionId: 'a',
-      explanation: 'Months, like days of the week and seasons, are masculine as a semantic group.',
+      explanation:
+        'Months, like days of the week and seasons, are masculine as a semantic group.',
     },
     {
       id: 'ch49-ex-35',
@@ -844,14 +914,16 @@ export const chapter049: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['semantic-group', 'days-months-seasons'],
       instruction: 'Choose the article that fits this semantic group.',
-      prompt: 'Welcher Artikel passt zu Jahreszeiten (___ Winter, ___ Sommer, ___ Herbst)?',
+      prompt:
+        'Welcher Artikel passt zu Jahreszeiten (___ Winter, ___ Sommer, ___ Herbst)?',
       options: [
         { id: 'a', text: 'der' },
         { id: 'b', text: 'die' },
         { id: 'c', text: 'das' },
       ],
       correctOptionId: 'a',
-      explanation: 'Seasons are masculine: der Winter, der Sommer, der Herbst, der Frühling.',
+      explanation:
+        'Seasons are masculine: der Winter, der Sommer, der Herbst, der Frühling.',
     },
     {
       id: 'ch49-ex-36',
@@ -860,15 +932,18 @@ export const chapter049: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['semantic-group', 'trees', 'exception'],
-      instruction: 'Choose the article that fits most trees — and watch out for the exception.',
-      prompt: 'Welcher Artikel passt zu den meisten Bäumen (___ Tanne, ___ Eiche), aber NICHT zu "Ahorn"?',
+      instruction:
+        'Choose the article that fits most trees — and watch out for the exception.',
+      prompt:
+        'Welcher Artikel passt zu den meisten Bäumen (___ Tanne, ___ Eiche), aber NICHT zu "Ahorn"?',
       options: [
         { id: 'a', text: 'der' },
         { id: 'b', text: 'die' },
         { id: 'c', text: 'das' },
       ],
       correctOptionId: 'b',
-      explanation: 'Most trees are feminine (die Tanne, die Eiche), though der Ahorn is a well-known masculine exception.',
+      explanation:
+        'Most trees are feminine (die Tanne, die Eiche), though der Ahorn is a well-known masculine exception.',
     },
     {
       id: 'ch49-ex-37',
@@ -878,7 +953,8 @@ export const chapter049: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['semantic-group', 'numbers'],
       instruction: 'Choose the article that fits numbers used as nouns.',
-      prompt: 'Welcher Artikel passt zu Zahlen, die als Nomen verwendet werden (___ Eins, ___ Million)?',
+      prompt:
+        'Welcher Artikel passt zu Zahlen, die als Nomen verwendet werden (___ Eins, ___ Million)?',
       options: [
         { id: 'a', text: 'der' },
         { id: 'b', text: 'die' },
@@ -895,14 +971,16 @@ export const chapter049: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['semantic-group', 'letters-colors', 'neuter-group'],
       instruction: 'Choose the article that fits letters and colors used as nouns.',
-      prompt: 'Welcher Artikel passt zu Buchstaben und Farben als Nomen (___ A, ___ Rot, ___ Blau)?',
+      prompt:
+        'Welcher Artikel passt zu Buchstaben und Farben als Nomen (___ A, ___ Rot, ___ Blau)?',
       options: [
         { id: 'a', text: 'der' },
         { id: 'b', text: 'die' },
         { id: 'c', text: 'das' },
       ],
       correctOptionId: 'c',
-      explanation: 'Letters of the alphabet and colors used as nouns are neuter: das A, das Rot, das Blau.',
+      explanation:
+        'Letters of the alphabet and colors used as nouns are neuter: das A, das Rot, das Blau.',
     },
     {
       id: 'ch49-ex-39',
@@ -912,14 +990,16 @@ export const chapter049: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['suffix-or-us', 'masculine-suffix'],
       instruction: 'Choose the gender that these loanword suffixes signal.',
-      prompt: 'Welches Geschlecht haben Lehnwörter auf -or und -us (z. B. der Motor, der Kurs)?',
+      prompt:
+        'Welches Geschlecht haben Lehnwörter auf -or und -us (z. B. der Motor, der Kurs)?',
       options: [
         { id: 'a', text: 'maskulin (der)' },
         { id: 'b', text: 'feminin (die)' },
         { id: 'c', text: 'neutrum (das)' },
       ],
       correctOptionId: 'a',
-      explanation: 'Latin/Greek loanword suffixes -ismus, -or, and -us mark masculine gender.',
+      explanation:
+        'Latin/Greek loanword suffixes -ismus, -or, and -us mark masculine gender.',
     },
     {
       id: 'ch49-ex-40',
@@ -936,7 +1016,8 @@ export const chapter049: ChapterDefinition = {
         { id: 'c', text: 'das' },
       ],
       correctOptionId: 'a',
-      explanation: 'Cardinal points are masculine: der Norden, der Süden, der Osten, der Westen.',
+      explanation:
+        'Cardinal points are masculine: der Norden, der Süden, der Osten, der Westen.',
     },
     {
       id: 'ch49-ex-41',
@@ -1179,7 +1260,8 @@ export const chapter049: ChapterDefinition = {
         { id: 'p4', left: '-ung', right: 'die Wohnung' },
         { id: 'p5', left: '-heit', right: 'die Gesundheit' },
       ],
-      explanation: '-er, -ling, and -ismus are masculine suffixes; -ung and -heit are feminine suffixes.',
+      explanation:
+        '-er, -ling, and -ismus are masculine suffixes; -ung and -heit are feminine suffixes.',
     },
     {
       id: 'ch49-ex-57',
@@ -1197,7 +1279,8 @@ export const chapter049: ChapterDefinition = {
         { id: 'p4', left: '-in', right: 'die Ärztin' },
         { id: 'p5', left: '-chen', right: 'das Häuschen' },
       ],
-      explanation: '-keit, -schaft, -tät, and -in are feminine suffixes; -chen is always neuter.',
+      explanation:
+        '-keit, -schaft, -tät, and -in are feminine suffixes; -chen is always neuter.',
     },
     {
       id: 'ch49-ex-58',
@@ -1215,7 +1298,8 @@ export const chapter049: ChapterDefinition = {
         { id: 'p4', left: '-enz', right: 'die Konsequenz' },
         { id: 'p5', left: 'Infinitiv als Nomen', right: 'das Rauchen' },
       ],
-      explanation: '-lein and infinitives-as-nouns are neuter; -ment is neuter; -ur and -enz are feminine.',
+      explanation:
+        '-lein and infinitives-as-nouns are neuter; -ment is neuter; -ur and -enz are feminine.',
     },
     {
       id: 'ch49-ex-59',
@@ -1273,7 +1357,8 @@ export const chapter049: ChapterDefinition = {
         { id: 'p4', left: 'Tulpe', right: 'die Tulpe' },
         { id: 'p5', left: 'Ahorn', right: 'der Ahorn' },
       ],
-      explanation: 'Most trees and flowers are feminine, but der Ahorn ("maple") is a well-known masculine exception.',
+      explanation:
+        'Most trees and flowers are feminine, but der Ahorn ("maple") is a well-known masculine exception.',
     },
     {
       id: 'ch49-ex-62',
@@ -1291,7 +1376,8 @@ export const chapter049: ChapterDefinition = {
         { id: 'p4', left: 'Stahl', right: 'der Stahl' },
         { id: 'p5', left: 'Blau', right: 'das Blau' },
       ],
-      explanation: 'Metals and chemical elements are typically neuter, but der Stahl is a masculine exception since it is an alloy, not a pure element.',
+      explanation:
+        'Metals and chemical elements are typically neuter, but der Stahl is a masculine exception since it is an alloy, not a pure element.',
     },
     {
       id: 'ch49-ex-63',
@@ -1318,8 +1404,10 @@ export const chapter049: ChapterDefinition = {
       type: 'matching',
       level: 'production',
       grammarFocus: ['translation', 'masculine-suffix', 'feminine-suffix'],
-      instruction: 'Match each English meaning to the correct German noun with its article.',
-      prompt: 'Ordne jede englische Bedeutung dem passenden deutschen Nomen mit Artikel zu.',
+      instruction:
+        'Match each English meaning to the correct German noun with its article.',
+      prompt:
+        'Ordne jede englische Bedeutung dem passenden deutschen Nomen mit Artikel zu.',
       pairs: [
         { id: 'p1', left: 'the driver', right: 'der Fahrer' },
         { id: 'p2', left: 'the apprentice', right: 'der Lehrling' },
@@ -1336,8 +1424,10 @@ export const chapter049: ChapterDefinition = {
       type: 'matching',
       level: 'production',
       grammarFocus: ['translation', 'feminine-suffix'],
-      instruction: 'Match each English meaning to the correct German noun with its article.',
-      prompt: 'Ordne jede englische Bedeutung dem passenden deutschen Nomen mit Artikel zu.',
+      instruction:
+        'Match each English meaning to the correct German noun with its article.',
+      prompt:
+        'Ordne jede englische Bedeutung dem passenden deutschen Nomen mit Artikel zu.',
       pairs: [
         { id: 'p1', left: 'the friendship', right: 'die Freundschaft' },
         { id: 'p2', left: 'the team', right: 'die Mannschaft' },
@@ -1354,8 +1444,10 @@ export const chapter049: ChapterDefinition = {
       type: 'matching',
       level: 'production',
       grammarFocus: ['translation', 'neuter-suffix'],
-      instruction: 'Match each English meaning to the correct German noun with its article.',
-      prompt: 'Ordne jede englische Bedeutung dem passenden deutschen Nomen mit Artikel zu.',
+      instruction:
+        'Match each English meaning to the correct German noun with its article.',
+      prompt:
+        'Ordne jede englische Bedeutung dem passenden deutschen Nomen mit Artikel zu.',
       pairs: [
         { id: 'p1', left: 'the girl', right: 'das Mädchen' },
         { id: 'p2', left: 'the young lady', right: 'das Fräulein' },
@@ -1373,7 +1465,8 @@ export const chapter049: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['semantic-group', 'exception'],
       instruction: 'Match each semantic group (or its exception) to a correct example.',
-      prompt: 'Ordne jede semantische Gruppe (oder ihre Ausnahme) einem passenden Beispiel zu.',
+      prompt:
+        'Ordne jede semantische Gruppe (oder ihre Ausnahme) einem passenden Beispiel zu.',
       pairs: [
         { id: 'p1', left: 'Wochentage', right: 'der Montag' },
         { id: 'p2', left: 'Monate', right: 'der Januar' },
@@ -1382,7 +1475,8 @@ export const chapter049: ChapterDefinition = {
         { id: 'p5', left: 'Bäume (meist feminin)', right: 'die Eiche' },
         { id: 'p6', left: 'Ausnahme bei Bäumen', right: 'der Ahorn' },
       ],
-      explanation: 'Days, months, and seasons are masculine; metals are neuter; trees are feminine except der Ahorn.',
+      explanation:
+        'Days, months, and seasons are masculine; metals are neuter; trees are feminine except der Ahorn.',
     },
     {
       id: 'ch49-ex-68',
@@ -1396,7 +1490,8 @@ export const chapter049: ChapterDefinition = {
       tokens: ['Der', 'Zeitung', 'liegt', 'auf', 'dem', 'Tisch', '.'],
       errorTokenIndex: 0,
       correction: 'Die',
-      explanation: 'Zeitung ends in -ung and is always feminine, so the article must be Die, not Der.',
+      explanation:
+        'Zeitung ends in -ung and is always feminine, so the article must be Die, not Der.',
     },
     {
       id: 'ch49-ex-69',
@@ -1410,7 +1505,8 @@ export const chapter049: ChapterDefinition = {
       tokens: ['Das', 'Freiheit', 'ist', 'wichtig', '.'],
       errorTokenIndex: 0,
       correction: 'Die',
-      explanation: 'Freiheit ends in -heit and is always feminine, so the article must be Die, not Das.',
+      explanation:
+        'Freiheit ends in -heit and is always feminine, so the article must be Die, not Das.',
     },
     {
       id: 'ch49-ex-70',
@@ -1424,7 +1520,8 @@ export const chapter049: ChapterDefinition = {
       tokens: ['Die', 'Tourismus', 'wächst', 'schnell', '.'],
       errorTokenIndex: 0,
       correction: 'Der',
-      explanation: 'Tourismus ends in -ismus and is always masculine, so the article must be Der, not Die.',
+      explanation:
+        'Tourismus ends in -ismus and is always masculine, so the article must be Der, not Die.',
     },
     {
       id: 'ch49-ex-71',
@@ -1438,7 +1535,8 @@ export const chapter049: ChapterDefinition = {
       tokens: ['Der', 'Mädchen', 'spielt', 'im', 'Garten', '.'],
       errorTokenIndex: 0,
       correction: 'Das',
-      explanation: 'The diminutive suffix -chen always makes a noun neuter, so the article must be Das, not Der.',
+      explanation:
+        'The diminutive suffix -chen always makes a noun neuter, so the article must be Das, not Der.',
     },
     {
       id: 'ch49-ex-72',
@@ -1452,7 +1550,8 @@ export const chapter049: ChapterDefinition = {
       tokens: ['Die', 'Junge', 'läuft', 'schnell', '.'],
       errorTokenIndex: 0,
       correction: 'Der',
-      explanation: 'Junge refers to a male person, so natural gender wins and the article must be Der, not Die.',
+      explanation:
+        'Junge refers to a male person, so natural gender wins and the article must be Der, not Die.',
     },
     {
       id: 'ch49-ex-73',
@@ -1466,7 +1565,8 @@ export const chapter049: ChapterDefinition = {
       tokens: ['Das', 'Freundschaft', 'dauert', 'lange', '.'],
       errorTokenIndex: 0,
       correction: 'Die',
-      explanation: 'Freundschaft ends in -schaft and is always feminine, so the article must be Die, not Das.',
+      explanation:
+        'Freundschaft ends in -schaft and is always feminine, so the article must be Die, not Das.',
     },
     {
       id: 'ch49-ex-74',
@@ -1480,7 +1580,8 @@ export const chapter049: ChapterDefinition = {
       tokens: ['Der', 'Universität', 'ist', 'alt', '.'],
       errorTokenIndex: 0,
       correction: 'Die',
-      explanation: 'Universität ends in -tät and is always feminine, so the article must be Die, not Der.',
+      explanation:
+        'Universität ends in -tät and is always feminine, so the article must be Die, not Der.',
     },
     {
       id: 'ch49-ex-75',
@@ -1494,7 +1595,8 @@ export const chapter049: ChapterDefinition = {
       tokens: ['Die', 'Dokument', 'liegt', 'hier', '.'],
       errorTokenIndex: 0,
       correction: 'Das',
-      explanation: 'Dokument ends in -ment and is always neuter, so the article must be Das, not Die.',
+      explanation:
+        'Dokument ends in -ment and is always neuter, so the article must be Das, not Die.',
     },
     {
       id: 'ch49-ex-76',
@@ -1508,7 +1610,8 @@ export const chapter049: ChapterDefinition = {
       tokens: ['Die', 'Frühling', 'beginnt', 'im', 'März', '.'],
       errorTokenIndex: 0,
       correction: 'Der',
-      explanation: 'Frühling ends in -ling and is always masculine, so the article must be Der, not Die.',
+      explanation:
+        'Frühling ends in -ling and is always masculine, so the article must be Der, not Die.',
     },
     {
       id: 'ch49-ex-77',
@@ -1550,7 +1653,8 @@ export const chapter049: ChapterDefinition = {
       tokens: ['Die', 'Tischchen', 'steht', 'im', 'Zimmer', '.'],
       errorTokenIndex: 0,
       correction: 'Das',
-      explanation: 'The diminutive suffix -chen always makes a noun neuter, even though der Tisch is masculine, so the article must be Das, not Die.',
+      explanation:
+        'The diminutive suffix -chen always makes a noun neuter, even though der Tisch is masculine, so the article must be Das, not Die.',
     },
     {
       id: 'ch49-ex-80',
@@ -1564,7 +1668,8 @@ export const chapter049: ChapterDefinition = {
       templateParts: ['', ' Zeitung liegt auf dem Tisch.'],
       slots: [{ id: 's1', correctWord: 'Die' }],
       wordBank: ['Die', 'Der', 'Das', 'Ein'],
-      explanation: 'Zeitung ends in -ung and is always feminine: Die Zeitung liegt auf dem Tisch.',
+      explanation:
+        'Zeitung ends in -ung and is always feminine: Die Zeitung liegt auf dem Tisch.',
     },
     {
       id: 'ch49-ex-81',
@@ -1578,7 +1683,8 @@ export const chapter049: ChapterDefinition = {
       templateParts: ['', ' Mädchen spielt im Garten.'],
       slots: [{ id: 's1', correctWord: 'Das' }],
       wordBank: ['Das', 'Der', 'Die', 'Ein'],
-      explanation: 'The diminutive suffix -chen makes Mädchen neuter: Das Mädchen spielt im Garten.',
+      explanation:
+        'The diminutive suffix -chen makes Mädchen neuter: Das Mädchen spielt im Garten.',
     },
     {
       id: 'ch49-ex-82',
@@ -1592,7 +1698,8 @@ export const chapter049: ChapterDefinition = {
       templateParts: ['', ' Frühling beginnt im März.'],
       slots: [{ id: 's1', correctWord: 'Der' }],
       wordBank: ['Der', 'Die', 'Das', 'Ein'],
-      explanation: 'Frühling ends in -ling and is always masculine: Der Frühling beginnt im März.',
+      explanation:
+        'Frühling ends in -ling and is always masculine: Der Frühling beginnt im März.',
     },
     {
       id: 'ch49-ex-83',
@@ -1606,7 +1713,8 @@ export const chapter049: ChapterDefinition = {
       templateParts: ['', ' Freundschaft ist wichtig.'],
       slots: [{ id: 's1', correctWord: 'Die' }],
       wordBank: ['Die', 'Der', 'Das', 'Ein'],
-      explanation: 'Freundschaft ends in -schaft and is always feminine: Die Freundschaft ist wichtig.',
+      explanation:
+        'Freundschaft ends in -schaft and is always feminine: Die Freundschaft ist wichtig.',
     },
     {
       id: 'ch49-ex-84',
@@ -1620,7 +1728,8 @@ export const chapter049: ChapterDefinition = {
       templateParts: ['', ' Dokument liegt hier.'],
       slots: [{ id: 's1', correctWord: 'Das' }],
       wordBank: ['Das', 'Der', 'Die', 'Ein'],
-      explanation: 'Dokument ends in -ment and is always neuter: Das Dokument liegt hier.',
+      explanation:
+        'Dokument ends in -ment and is always neuter: Das Dokument liegt hier.',
     },
     {
       id: 'ch49-ex-85',
@@ -1634,7 +1743,8 @@ export const chapter049: ChapterDefinition = {
       templateParts: ['', ' Tourismus wächst schnell.'],
       slots: [{ id: 's1', correctWord: 'Der' }],
       wordBank: ['Der', 'Die', 'Das', 'Ein'],
-      explanation: 'Tourismus ends in -ismus and is always masculine: Der Tourismus wächst schnell.',
+      explanation:
+        'Tourismus ends in -ismus and is always masculine: Der Tourismus wächst schnell.',
     },
   ],
 };

@@ -91,8 +91,18 @@ export const chapter041: ChapterDefinition = {
         columns: ['Article type', 'Masculine', 'Feminine', 'Neuter'],
         columnCases: [null, 'dative', 'dative', 'dative'],
         rows: [
-          ['dem/der/dem (definite)', '-en (dem roten Apfel)', '-en (der roten Tasche)', '-en (dem roten Auto)'],
-          ['einem/einer/einem (indefinite)', '-en (einem roten Apfel)', '-en (einer roten Tasche)', '-en (einem roten Auto)'],
+          [
+            'dem/der/dem (definite)',
+            '-en (dem roten Apfel)',
+            '-en (der roten Tasche)',
+            '-en (dem roten Auto)',
+          ],
+          [
+            'einem/einer/einem (indefinite)',
+            '-en (einem roten Apfel)',
+            '-en (einer roten Tasche)',
+            '-en (einem roten Auto)',
+          ],
         ],
         note: 'Unlike the nominative and the accusative, the dative singular ending is -en in every gender, after both der-words and ein-words.',
       },
@@ -102,8 +112,18 @@ export const chapter041: ChapterDefinition = {
         columns: ['Article type', 'Nominative', 'Accusative', 'Dative'],
         columnCases: [null, 'nominative', 'accusative', 'dative'],
         rows: [
-          ['die (definite plural)', '-en (die roten Äpfel)', '-en (die roten Äpfel)', '-en (den roten Äpfeln)'],
-          ['keine/meine (indefinite-type plural)', '-en (keine roten Äpfel)', '-en (keine roten Äpfel)', '-en (keinen roten Äpfeln)'],
+          [
+            'die (definite plural)',
+            '-en (die roten Äpfel)',
+            '-en (die roten Äpfel)',
+            '-en (den roten Äpfeln)',
+          ],
+          [
+            'keine/meine (indefinite-type plural)',
+            '-en (keine roten Äpfel)',
+            '-en (keine roten Äpfel)',
+            '-en (keinen roten Äpfeln)',
+          ],
         ],
         note: 'In the plural, the adjective ending is -en in all three cases. In the dative plural, the noun itself also adds -n: Äpfel → Äpfeln.',
       },
@@ -112,11 +132,23 @@ export const chapter041: ChapterDefinition = {
         title: 'The "-en Pattern" at a Glance',
         columns: ['Context', 'Ending', 'Example'],
         rows: [
-          ['Nominative singular (any gender)', '-e (der-words); -er/-e/-es (ein-words)', 'der rote Apfel; ein roter Apfel'],
-          ['Feminine & neuter accusative singular', '-e (der-words); -e/-es (ein-words)', 'die rote Tasche; ein rotes Auto'],
+          [
+            'Nominative singular (any gender)',
+            '-e (der-words); -er/-e/-es (ein-words)',
+            'der rote Apfel; ein roter Apfel',
+          ],
+          [
+            'Feminine & neuter accusative singular',
+            '-e (der-words); -e/-es (ein-words)',
+            'die rote Tasche; ein rotes Auto',
+          ],
           ['Masculine accusative singular', '-en', 'den roten Apfel'],
           ['Dative singular (any gender)', '-en', 'dem roten Apfel; der roten Tasche'],
-          ['Plural — nominative, accusative, dative', '-en', 'die roten Äpfel; den roten Äpfeln'],
+          [
+            'Plural — nominative, accusative, dative',
+            '-en',
+            'die roten Äpfel; den roten Äpfeln',
+          ],
         ],
         note: 'Use this table as a quick self-check: everything except the top two rows takes -en.',
       },
@@ -126,117 +158,138 @@ export const chapter041: ChapterDefinition = {
         german: 'Ich helfe dem alten Mann.',
         english: 'I am helping the old man.',
         highlight: ['dem', 'alten'],
-        explanation: 'helfen takes the dative; the masculine dative ending after dem is -en.',
+        explanation:
+          'helfen takes the dative; the masculine dative ending after dem is -en.',
       },
       {
         german: 'Ich danke der netten Frau.',
         english: 'I am thanking the kind woman.',
         highlight: ['der', 'netten'],
-        explanation: 'danken takes the dative; the feminine dative ending after der is also -en, not -e as in the nominative.',
+        explanation:
+          'danken takes the dative; the feminine dative ending after der is also -en, not -e as in the nominative.',
       },
       {
         german: 'Er gibt dem kleinen Kind ein Geschenk.',
         english: 'He is giving the small child a present.',
         highlight: ['dem', 'kleinen'],
-        explanation: 'geben has a dative indirect object; the neuter dative ending after dem is -en.',
+        explanation:
+          'geben has a dative indirect object; the neuter dative ending after dem is -en.',
       },
       {
         german: 'Sie hilft einem alten Mann.',
         english: 'She is helping an old man.',
         highlight: ['einem', 'alten'],
-        explanation: 'The masculine dative ending after einem is -en, exactly as after dem.',
+        explanation:
+          'The masculine dative ending after einem is -en, exactly as after dem.',
       },
       {
         german: 'Wir danken einer freundlichen Frau.',
         english: 'We are thanking a friendly woman.',
         highlight: ['einer', 'freundlichen'],
-        explanation: 'The feminine dative ending after einer is -en, unlike the feminine nominative/accusative -e.',
+        explanation:
+          'The feminine dative ending after einer is -en, unlike the feminine nominative/accusative -e.',
       },
       {
         german: 'Er gibt einem kleinen Kind ein Buch.',
         english: 'He is giving a small child a book.',
         highlight: ['einem', 'kleinen'],
-        explanation: 'The neuter dative ending after einem is -en, unlike the neuter nominative/accusative -es.',
+        explanation:
+          'The neuter dative ending after einem is -en, unlike the neuter nominative/accusative -es.',
       },
       {
         german: 'Wir fahren mit dem neuen Zug.',
         english: 'We are traveling on the new train.',
         highlight: ['dem', 'neuen'],
-        explanation: 'The preposition mit always takes the dative, so the masculine adjective ending is -en.',
+        explanation:
+          'The preposition mit always takes the dative, so the masculine adjective ending is -en.',
       },
       {
         german: 'Die kleinen Kinder spielen im Garten.',
         english: 'The small children are playing in the garden.',
         highlight: ['kleinen'],
-        explanation: 'Plural nominative after die takes -en, unlike any singular nominative ending.',
+        explanation:
+          'Plural nominative after die takes -en, unlike any singular nominative ending.',
       },
       {
         german: 'Ich sehe die kleinen Kinder im Garten.',
         english: 'I see the small children in the garden.',
         highlight: ['kleinen'],
-        explanation: 'Plural accusative after die also takes -en, the same as the plural nominative.',
+        explanation:
+          'Plural accusative after die also takes -en, the same as the plural nominative.',
       },
       {
         german: 'Die Lehrerin hilft den kleinen Kindern.',
         english: 'The teacher is helping the small children.',
         highlight: ['den', 'kleinen', 'Kindern'],
-        explanation: 'Plural dative: den signals the dative plural, the adjective takes -en, and the noun itself adds -n (Kinder → Kindern).',
+        explanation:
+          'Plural dative: den signals the dative plural, the adjective takes -en, and the noun itself adds -n (Kinder → Kindern).',
       },
       {
         german: 'Wir haben keine neuen Bücher.',
         english: 'We do not have any new books.',
         highlight: ['keine', 'neuen'],
-        explanation: 'keine is the plural of kein; the plural adjective ending after keine is -en, just as after die.',
+        explanation:
+          'keine is the plural of kein; the plural adjective ending after keine is -en, just as after die.',
       },
       {
         german: 'Er dankt den netten Nachbarn.',
         english: 'He thanks the kind neighbors.',
         highlight: ['den', 'netten', 'Nachbarn'],
-        explanation: 'Dative plural: the adjective takes -en; Nachbarn already ends in -n, so the noun form does not change further.',
+        explanation:
+          'Dative plural: the adjective takes -en; Nachbarn already ends in -n, so the noun form does not change further.',
       },
       {
-        german: 'Ich kaufe den roten Apfel, aber ich schenke der roten Tasche keine Beachtung.',
+        german:
+          'Ich kaufe den roten Apfel, aber ich schenke der roten Tasche keine Beachtung.',
         english: 'I am buying the red apple, but I am paying the red bag no attention.',
         highlight: ['den', 'roten', 'der', 'roten'],
-        explanation: 'den roten Apfel is masculine accusative (-en); der roten Tasche is feminine dative after schenken (-en) — both endings are -en, but for different reasons.',
+        explanation:
+          'den roten Apfel is masculine accusative (-en); der roten Tasche is feminine dative after schenken (-en) — both endings are -en, but for different reasons.',
       },
       {
         german: 'Das Kind gibt dem Hund und der Katze Futter.',
         english: 'The child gives the dog and the cat food.',
         highlight: ['dem', 'der'],
-        explanation: 'geben with an indirect object needs the dative; both dem (masculine) and der (feminine) here introduce nouns without adjectives, but any adjective inserted here would take -en in both cases.',
+        explanation:
+          'geben with an indirect object needs the dative; both dem (masculine) and der (feminine) here introduce nouns without adjectives, but any adjective inserted here would take -en in both cases.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich helfe dem alte Mann.',
         correct: 'Ich helfe dem alten Mann.',
-        explanation: 'The dative singular ending is always -en, never the nominative -e, regardless of gender.',
+        explanation:
+          'The dative singular ending is always -en, never the nominative -e, regardless of gender.',
       },
       {
         incorrect: 'Ich danke der nette Frau.',
         correct: 'Ich danke der netten Frau.',
-        explanation: 'Even though der looks like the nominative/dative feminine article family, in the dative the adjective ending is -en, not -e.',
+        explanation:
+          'Even though der looks like the nominative/dative feminine article family, in the dative the adjective ending is -en, not -e.',
       },
       {
         incorrect: 'Wir danken einer freundliche Frau.',
         correct: 'Wir danken einer freundlichen Frau.',
-        explanation: 'After einer in the dative, the adjective ending is -en, not the feminine nominative/accusative -e.',
+        explanation:
+          'After einer in the dative, the adjective ending is -en, not the feminine nominative/accusative -e.',
       },
       {
         incorrect: 'Die Lehrerin hilft die kleinen Kinder.',
         correct: 'Die Lehrerin hilft den kleinen Kindern.',
-        explanation: 'helfen requires the dative, so the plural article must be den (not die), and the noun itself adds -n: Kindern.',
+        explanation:
+          'helfen requires the dative, so the plural article must be den (not die), and the noun itself adds -n: Kindern.',
       },
       {
         incorrect: 'Die klein Kinder spielen im Garten.',
         correct: 'Die kleinen Kinder spielen im Garten.',
-        explanation: 'Plural attributive adjectives always need an ending; the plural ending after die is -en, not a bare adjective form.',
+        explanation:
+          'Plural attributive adjectives always need an ending; the plural ending after die is -en, not a bare adjective form.',
       },
       {
         incorrect: 'Er dankt den netten Nachbarns.',
         correct: 'Er dankt den netten Nachbarn.',
-        explanation: 'Nachbarn already ends in -n, so the dative plural does not add a further -s or extra -n; only nouns that do not already end in -n or -s take the extra -n.',
+        explanation:
+          'Nachbarn already ends in -n, so the dative plural does not add a further -s or extra -n; only nouns that do not already end in -n or -s take the extra -n.',
       },
     ],
     remember: [
@@ -269,7 +322,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'd', text: 'alten' },
       ],
       correctOptionId: 'd',
-      explanation: 'The dative singular ending is -en after dem, regardless of gender: dem alten Mann.',
+      explanation:
+        'The dative singular ending is -en after dem, regardless of gender: dem alten Mann.',
     },
     {
       id: 'ch41-ex-02',
@@ -287,7 +341,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'd', text: 'netten' },
       ],
       correctOptionId: 'd',
-      explanation: 'The dative singular ending is -en after der, even in the feminine: der netten Frau.',
+      explanation:
+        'The dative singular ending is -en after der, even in the feminine: der netten Frau.',
     },
     {
       id: 'ch41-ex-03',
@@ -305,7 +360,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'd', text: 'kleinen' },
       ],
       correctOptionId: 'd',
-      explanation: 'The dative singular ending is -en after dem in the neuter too: dem kleinen Kind.',
+      explanation:
+        'The dative singular ending is -en after dem in the neuter too: dem kleinen Kind.',
     },
     {
       id: 'ch41-ex-04',
@@ -323,7 +379,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'd', text: 'altes' },
       ],
       correctOptionId: 'c',
-      explanation: 'After einem, the dative masculine ending is also -en: einem alten Mann.',
+      explanation:
+        'After einem, the dative masculine ending is also -en: einem alten Mann.',
     },
     {
       id: 'ch41-ex-05',
@@ -341,7 +398,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'd', text: 'freundliches' },
       ],
       correctOptionId: 'b',
-      explanation: 'After einer, the dative feminine ending is -en, not the nominative/accusative -e: einer freundlichen Frau.',
+      explanation:
+        'After einer, the dative feminine ending is -en, not the nominative/accusative -e: einer freundlichen Frau.',
     },
     {
       id: 'ch41-ex-06',
@@ -359,7 +417,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'd', text: 'kleinen' },
       ],
       correctOptionId: 'd',
-      explanation: 'After einem, the dative neuter ending is -en, not the nominative/accusative -es: einem kleinen Kind.',
+      explanation:
+        'After einem, the dative neuter ending is -en, not the nominative/accusative -es: einem kleinen Kind.',
     },
     {
       id: 'ch41-ex-07',
@@ -377,7 +436,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'd', text: 'neues' },
       ],
       correctOptionId: 'c',
-      explanation: 'mit always takes the dative, so the masculine adjective ending is -en: mit dem neuen Zug.',
+      explanation:
+        'mit always takes the dative, so the masculine adjective ending is -en: mit dem neuen Zug.',
     },
     {
       id: 'ch41-ex-08',
@@ -395,7 +455,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'd', text: 'netten' },
       ],
       correctOptionId: 'd',
-      explanation: 'geben has a dative indirect object here; der netten Frau — the ending is -en, not the feminine nominative -e.',
+      explanation:
+        'geben has a dative indirect object here; der netten Frau — the ending is -en, not the feminine nominative -e.',
     },
     {
       id: 'ch41-ex-09',
@@ -413,7 +474,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'd', text: 'kleinen' },
       ],
       correctOptionId: 'd',
-      explanation: 'Plural adjectives after die always take -en, regardless of case: die kleinen Kinder.',
+      explanation:
+        'Plural adjectives after die always take -en, regardless of case: die kleinen Kinder.',
     },
     {
       id: 'ch41-ex-10',
@@ -431,7 +493,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'd', text: 'kleinen' },
       ],
       correctOptionId: 'd',
-      explanation: 'Dative plural also takes -en: den kleinen Kindern, with an extra -n on the noun itself.',
+      explanation:
+        'Dative plural also takes -en: den kleinen Kindern, with an extra -n on the noun itself.',
     },
     {
       id: 'ch41-ex-11',
@@ -449,7 +512,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'd', text: 'neues' },
       ],
       correctOptionId: 'c',
-      explanation: 'keine is the plural of kein; the plural adjective ending after keine is -en, just as after die.',
+      explanation:
+        'keine is the plural of kein; the plural adjective ending after keine is -en, just as after die.',
     },
     {
       id: 'ch41-ex-12',
@@ -467,7 +531,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'd', text: 'Genitive' },
       ],
       correctOptionId: 'c',
-      explanation: 'schenken has both a dative indirect object (der netten Frau) and an accusative direct object (einen Blumenstrauß); der netten Frau is the dative phrase.',
+      explanation:
+        'schenken has both a dative indirect object (der netten Frau) and an accusative direct object (einen Blumenstrauß); der netten Frau is the dative phrase.',
     },
     {
       id: 'ch41-ex-13',
@@ -485,7 +550,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'd', text: 'Ich helfe den alten Mann.' },
       ],
       correctOptionId: 'b',
-      explanation: 'helfen takes the dative; Mann is masculine, so the article is dem and the adjective ending is -en: dem alten Mann.',
+      explanation:
+        'helfen takes the dative; Mann is masculine, so the article is dem and the adjective ending is -en: dem alten Mann.',
     },
     {
       id: 'ch41-ex-14',
@@ -503,7 +569,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'd', text: 'dem netten Frau' },
       ],
       correctOptionId: 'b',
-      explanation: 'danken takes the dative; Frau is feminine, so the correct phrase is der netten Frau.',
+      explanation:
+        'danken takes the dative; Frau is feminine, so the correct phrase is der netten Frau.',
     },
     {
       id: 'ch41-ex-15',
@@ -533,7 +600,8 @@ export const chapter041: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'e / er / es / en',
       maxLength: 5,
-      explanation: 'The dative singular ending is -en after der, even in the feminine: der netten Frau.',
+      explanation:
+        'The dative singular ending is -en after der, even in the feminine: der netten Frau.',
     },
     {
       id: 'ch41-ex-17',
@@ -548,7 +616,8 @@ export const chapter041: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'e / er / es / en',
       maxLength: 5,
-      explanation: 'The dative singular ending is -en after dem in the neuter too: dem kleinen Kind.',
+      explanation:
+        'The dative singular ending is -en after dem in the neuter too: dem kleinen Kind.',
     },
     {
       id: 'ch41-ex-18',
@@ -578,7 +647,8 @@ export const chapter041: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'e / er / es / en',
       maxLength: 5,
-      explanation: 'The dative singular ending after einer is -en, not the feminine -e: einer freundlichen Frau.',
+      explanation:
+        'The dative singular ending after einer is -en, not the feminine -e: einer freundlichen Frau.',
     },
     {
       id: 'ch41-ex-20',
@@ -593,7 +663,8 @@ export const chapter041: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'e / er / es / en',
       maxLength: 5,
-      explanation: 'The dative singular ending after einem is -en, not the neuter -es: einem kleinen Kind.',
+      explanation:
+        'The dative singular ending after einem is -en, not the neuter -es: einem kleinen Kind.',
     },
     {
       id: 'ch41-ex-21',
@@ -623,7 +694,8 @@ export const chapter041: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'neuen',
       maxLength: 20,
-      explanation: 'mit takes the dative; the masculine dative ending is -en: mit dem neuen Zug.',
+      explanation:
+        'mit takes the dative; the masculine dative ending is -en: mit dem neuen Zug.',
     },
     {
       id: 'ch41-ex-23',
@@ -653,7 +725,8 @@ export const chapter041: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'netten',
       maxLength: 20,
-      explanation: 'Dative plural adjectives take -en: den netten Nachbarn (Nachbarn already ends in -n, so the noun itself does not change further).',
+      explanation:
+        'Dative plural adjectives take -en: den netten Nachbarn (Nachbarn already ends in -n, so the noun itself does not change further).',
     },
     {
       id: 'ch41-ex-25',
@@ -662,13 +735,15 @@ export const chapter041: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['dative', 'case-transformation', 'masculine'],
-      instruction: 'Change the phrase from the nominative to the dative, as in the model.',
+      instruction:
+        'Change the phrase from the nominative to the dative, as in the model.',
       prompt: 'Nominativ: der große Hund. Dativ: Ich helfe ___ Hund.',
       acceptedAnswers: ['dem großen'],
       answerMode: 'normalized',
       placeholder: 'dem großen',
       maxLength: 30,
-      explanation: 'The masculine dative article is dem, and the dative adjective ending is -en: dem großen Hund.',
+      explanation:
+        'The masculine dative article is dem, and the dative adjective ending is -en: dem großen Hund.',
     },
     {
       id: 'ch41-ex-26',
@@ -677,13 +752,15 @@ export const chapter041: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['dative', 'error-correction', 'masculine'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ich helfe dem alte Mann.',
       acceptedAnswers: ['Ich helfe dem alten Mann.'],
       answerMode: 'normalized',
       placeholder: 'Ich helfe dem alten ...',
       maxLength: 60,
-      explanation: 'The dative singular ending is -en, not the nominative -e: dem alten Mann.',
+      explanation:
+        'The dative singular ending is -en, not the nominative -e: dem alten Mann.',
     },
     {
       id: 'ch41-ex-27',
@@ -692,13 +769,15 @@ export const chapter041: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['plural', 'dative', 'error-correction'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Die Lehrerin hilft die kleinen Kinder.',
       acceptedAnswers: ['Die Lehrerin hilft den kleinen Kindern.'],
       answerMode: 'normalized',
       placeholder: 'Die Lehrerin hilft den kleinen ...',
       maxLength: 60,
-      explanation: 'helfen requires the dative, so the article must be den, and the noun adds -n: den kleinen Kindern.',
+      explanation:
+        'helfen requires the dative, so the article must be den, and the noun adds -n: den kleinen Kindern.',
     },
     {
       id: 'ch41-ex-28',
@@ -707,13 +786,15 @@ export const chapter041: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['dative', 'der-word', 'masculine', 'sentence-building'],
-      instruction: 'Write a complete sentence using the cues. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence using the cues. Capitalisation is checked; no full stop is required.',
       prompt: 'ich – danken – der (nett, Freund)',
       acceptedAnswers: ['Ich danke dem netten Freund.', 'Ich danke dem netten Freund'],
       answerMode: 'normalized',
       placeholder: 'Ich danke ...',
       maxLength: 60,
-      explanation: 'danken takes the dative; Freund is masculine, so the article is dem and the adjective ending is -en: dem netten Freund.',
+      explanation:
+        'danken takes the dative; Freund is masculine, so the article is dem and the adjective ending is -en: dem netten Freund.',
     },
     {
       id: 'ch41-ex-29',
@@ -731,7 +812,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'd', text: 'kleinen' },
       ],
       correctOptionId: 'd',
-      explanation: 'mit takes the dative, and the plural adjective ending is -en regardless of case: mit den kleinen Kindern.',
+      explanation:
+        'mit takes the dative, and the plural adjective ending is -en regardless of case: mit den kleinen Kindern.',
     },
     {
       id: 'ch41-ex-30',
@@ -749,7 +831,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'd', text: 'altes' },
       ],
       correctOptionId: 'b',
-      explanation: 'aus always takes the dative, so the masculine adjective ending is -en: aus dem alten Haus.',
+      explanation:
+        'aus always takes the dative, so the masculine adjective ending is -en: aus dem alten Haus.',
     },
     {
       id: 'ch41-ex-31',
@@ -767,7 +850,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'd', text: 'nettes' },
       ],
       correctOptionId: 'c',
-      explanation: 'bei takes the dative, so the feminine adjective ending after seiner is -en, not the nominative -e: bei seiner netten Tante.',
+      explanation:
+        'bei takes the dative, so the feminine adjective ending after seiner is -en, not the nominative -e: bei seiner netten Tante.',
     },
     {
       id: 'ch41-ex-32',
@@ -785,7 +869,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'd', text: 'guten' },
       ],
       correctOptionId: 'd',
-      explanation: 'nach takes the dative, so the neuter adjective ending is -en, not the nominative/accusative -es: nach dem guten Essen.',
+      explanation:
+        'nach takes the dative, so the neuter adjective ending is -en, not the nominative/accusative -es: nach dem guten Essen.',
     },
     {
       id: 'ch41-ex-33',
@@ -800,7 +885,8 @@ export const chapter041: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'e / er / es / en',
       maxLength: 5,
-      explanation: 'zu takes the dative, so the feminine adjective ending after meiner is -en: zu meiner alten Oma.',
+      explanation:
+        'zu takes the dative, so the feminine adjective ending after meiner is -en: zu meiner alten Oma.',
     },
     {
       id: 'ch41-ex-34',
@@ -815,7 +901,8 @@ export const chapter041: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'e / er / es / en',
       maxLength: 5,
-      explanation: 'von takes the dative, so the masculine adjective ending is -en: von dem neuen Lehrer.',
+      explanation:
+        'von takes the dative, so the masculine adjective ending is -en: von dem neuen Lehrer.',
     },
     {
       id: 'ch41-ex-35',
@@ -859,7 +946,8 @@ export const chapter041: ChapterDefinition = {
       templateParts: ['Ich helfe dem ', ' Mann.'],
       slots: [{ id: 's1', correctWord: 'alten' }],
       wordBank: ['alten', 'alte', 'alter', 'altes'],
-      explanation: 'The dative singular ending is -en after dem, regardless of gender: dem alten Mann.',
+      explanation:
+        'The dative singular ending is -en after dem, regardless of gender: dem alten Mann.',
     },
     {
       id: 'ch41-ex-38',
@@ -873,7 +961,8 @@ export const chapter041: ChapterDefinition = {
       templateParts: ['Wir danken einer ', ' Frau.'],
       slots: [{ id: 's1', correctWord: 'freundlichen' }],
       wordBank: ['freundlichen', 'freundliche', 'freundlicher', 'freundliches'],
-      explanation: 'After einer, the dative feminine ending is -en, not the nominative/accusative -e: einer freundlichen Frau.',
+      explanation:
+        'After einer, the dative feminine ending is -en, not the nominative/accusative -e: einer freundlichen Frau.',
     },
     {
       id: 'ch41-ex-39',
@@ -887,7 +976,8 @@ export const chapter041: ChapterDefinition = {
       templateParts: ['Er gibt dem ', ' Kind ein Geschenk.'],
       slots: [{ id: 's1', correctWord: 'kleinen' }],
       wordBank: ['kleinen', 'kleine', 'kleiner', 'kleines'],
-      explanation: 'The dative singular ending is -en after dem in the neuter too: dem kleinen Kind.',
+      explanation:
+        'The dative singular ending is -en after dem in the neuter too: dem kleinen Kind.',
     },
     {
       id: 'ch41-ex-40',
@@ -901,7 +991,8 @@ export const chapter041: ChapterDefinition = {
       templateParts: ['Die ', ' Kinder spielen im Garten.'],
       slots: [{ id: 's1', correctWord: 'kleinen' }],
       wordBank: ['kleinen', 'kleine', 'kleiner', 'kleines'],
-      explanation: 'Plural adjectives after die always take -en, regardless of case: die kleinen Kinder.',
+      explanation:
+        'Plural adjectives after die always take -en, regardless of case: die kleinen Kinder.',
     },
     {
       id: 'ch41-ex-41',
@@ -915,7 +1006,8 @@ export const chapter041: ChapterDefinition = {
       templateParts: ['Die Lehrerin hilft den ', ' Kindern.'],
       slots: [{ id: 's1', correctWord: 'kleinen' }],
       wordBank: ['kleinen', 'kleine', 'kleiner', 'kleines'],
-      explanation: 'Dative plural also takes -en: den kleinen Kindern, with an extra -n on the noun itself.',
+      explanation:
+        'Dative plural also takes -en: den kleinen Kindern, with an extra -n on the noun itself.',
     },
     {
       id: 'ch41-ex-42',
@@ -929,7 +1021,8 @@ export const chapter041: ChapterDefinition = {
       templateParts: ['Wir kommen von dem ', ' Bahnhof.'],
       slots: [{ id: 's1', correctWord: 'neuen' }],
       wordBank: ['neuen', 'neue', 'neuer', 'neues'],
-      explanation: 'von takes the dative, so the masculine adjective ending is -en: von dem neuen Bahnhof.',
+      explanation:
+        'von takes the dative, so the masculine adjective ending is -en: von dem neuen Bahnhof.',
     },
     {
       id: 'ch41-ex-43',
@@ -943,7 +1036,8 @@ export const chapter041: ChapterDefinition = {
       templateParts: ['Ich gehe zu der ', ' Ärztin.'],
       slots: [{ id: 's1', correctWord: 'netten' }],
       wordBank: ['netten', 'nette', 'netter', 'nettes'],
-      explanation: 'zu takes the dative, so the feminine adjective ending is -en: zu der netten Ärztin.',
+      explanation:
+        'zu takes the dative, so the feminine adjective ending is -en: zu der netten Ärztin.',
     },
     {
       id: 'ch41-ex-44',
@@ -957,7 +1051,8 @@ export const chapter041: ChapterDefinition = {
       templateParts: ['Der Brief kommt aus dem ', ' Land.'],
       slots: [{ id: 's1', correctWord: 'fernen' }],
       wordBank: ['fernen', 'ferne', 'ferner', 'fernes'],
-      explanation: 'aus takes the dative, so the neuter adjective ending is -en, not the nominative/accusative -es: aus dem fernen Land.',
+      explanation:
+        'aus takes the dative, so the neuter adjective ending is -en, not the nominative/accusative -es: aus dem fernen Land.',
     },
     {
       id: 'ch41-ex-45',
@@ -975,7 +1070,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'p4', left: 'den ___ Kindern (klein)', right: 'den kleinen Kindern' },
         { id: 'p5', left: 'einem ___ Kind (klein)', right: 'einem kleinen Kind' },
       ],
-      explanation: 'Dative singular (any gender) and the entire plural take -en; matching the blank to its filled form checks both patterns at once.',
+      explanation:
+        'Dative singular (any gender) and the entire plural take -en; matching the blank to its filled form checks both patterns at once.',
     },
     {
       id: 'ch41-ex-46',
@@ -984,7 +1080,8 @@ export const chapter041: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['dative', 'preposition'],
-      instruction: 'Match each dative preposition with a correctly formed example phrase.',
+      instruction:
+        'Match each dative preposition with a correctly formed example phrase.',
       prompt: 'Match the preposition to its example.',
       pairs: [
         { id: 'p1', left: 'mit (+Dativ)', right: 'mit dem neuen Zug' },
@@ -994,7 +1091,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'p5', left: 'zu (+Dativ)', right: 'zu der freundlichen Ärztin' },
         { id: 'p6', left: 'aus (+Dativ)', right: 'aus dem fernen Land' },
       ],
-      explanation: 'mit, bei, nach, von, zu, and aus all take the dative, so any adjective following them takes the dative ending -en.',
+      explanation:
+        'mit, bei, nach, von, zu, and aus all take the dative, so any adjective following them takes the dative ending -en.',
     },
     {
       id: 'ch41-ex-47',
@@ -1003,7 +1101,8 @@ export const chapter041: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['dative', 'plural', 'noun-ending'],
-      instruction: 'Match each nominative plural noun phrase with its dative plural form.',
+      instruction:
+        'Match each nominative plural noun phrase with its dative plural form.',
       prompt: 'Match the nominative plural to the dative plural.',
       pairs: [
         { id: 'p1', left: 'die Kinder', right: 'den Kindern' },
@@ -1012,7 +1111,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'p4', left: 'die Autos', right: 'den Autos' },
         { id: 'p5', left: 'die Bücher', right: 'den Büchern' },
       ],
-      explanation: 'In the dative plural, most nouns add -n unless they already end in -n or -s (Nachbarn, Autos stay unchanged).',
+      explanation:
+        'In the dative plural, most nouns add -n unless they already end in -n or -s (Nachbarn, Autos stay unchanged).',
     },
     {
       id: 'ch41-ex-48',
@@ -1021,7 +1121,8 @@ export const chapter041: ChapterDefinition = {
       type: 'matching',
       level: 'transfer',
       grammarFocus: ['case-recognition', 'sentence-completion'],
-      instruction: 'Match each sentence beginning with the ending that correctly completes it.',
+      instruction:
+        'Match each sentence beginning with the ending that correctly completes it.',
       prompt: 'Match the sentence halves.',
       pairs: [
         { id: 'p1', left: 'Ich sehe...', right: 'den roten Apfel.' },
@@ -1030,7 +1131,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'p4', left: 'Wir danken...', right: 'der netten Frau.' },
         { id: 'p5', left: 'Die kleinen Kinder...', right: 'spielen im Garten.' },
       ],
-      explanation: 'Recognising which case each verb requires (accusative, dative, or plain nominative) is the key to choosing the right ending.',
+      explanation:
+        'Recognising which case each verb requires (accusative, dative, or plain nominative) is the key to choosing the right ending.',
     },
     {
       id: 'ch41-ex-49',
@@ -1042,13 +1144,26 @@ export const chapter041: ChapterDefinition = {
       instruction: 'Match each grammatical context with the ending pattern it takes.',
       prompt: 'Match the context to its ending rule.',
       pairs: [
-        { id: 'p1', left: 'Maskulin Akkusativ Singular (den ___)', right: 'den roten Apfel' },
+        {
+          id: 'p1',
+          left: 'Maskulin Akkusativ Singular (den ___)',
+          right: 'den roten Apfel',
+        },
         { id: 'p2', left: 'gesamter Dativ Singular', right: 'dem/der/dem + -en' },
         { id: 'p3', left: 'gesamter Plural (alle Kasus)', right: 'die/den + -en' },
-        { id: 'p4', left: 'Nominativ nach der-Wort (alle Genera)', right: 'der rote Apfel / die rote Tasche / das rote Auto' },
-        { id: 'p5', left: 'Nominativ nach ein-Wort (alle Genera)', right: 'ein roter Apfel / eine rote Tasche / ein rotes Auto' },
+        {
+          id: 'p4',
+          left: 'Nominativ nach der-Wort (alle Genera)',
+          right: 'der rote Apfel / die rote Tasche / das rote Auto',
+        },
+        {
+          id: 'p5',
+          left: 'Nominativ nach ein-Wort (alle Genera)',
+          right: 'ein roter Apfel / eine rote Tasche / ein rotes Auto',
+        },
       ],
-      explanation: 'This matches the "-en pattern" strategy from this chapter: masculine accusative, all dative singular, and all plural take -en; only the nominative keeps -e/-er/-es distinctions.',
+      explanation:
+        'This matches the "-en pattern" strategy from this chapter: masculine accusative, all dative singular, and all plural take -en; only the nominative keeps -e/-er/-es distinctions.',
     },
     {
       id: 'ch41-ex-50',
@@ -1062,7 +1177,8 @@ export const chapter041: ChapterDefinition = {
       tokens: ['Ich', 'helfe', 'dem', 'alte', 'Mann', '.'],
       errorTokenIndex: 3,
       correction: 'alten',
-      explanation: 'The dative singular ending is -en after dem, not the nominative -e: dem alten Mann.',
+      explanation:
+        'The dative singular ending is -en after dem, not the nominative -e: dem alten Mann.',
     },
     {
       id: 'ch41-ex-51',
@@ -1076,7 +1192,8 @@ export const chapter041: ChapterDefinition = {
       tokens: ['Ich', 'danke', 'der', 'nette', 'Frau', '.'],
       errorTokenIndex: 3,
       correction: 'netten',
-      explanation: 'The dative singular ending is -en after der, even in the feminine: der netten Frau.',
+      explanation:
+        'The dative singular ending is -en after der, even in the feminine: der netten Frau.',
     },
     {
       id: 'ch41-ex-52',
@@ -1090,7 +1207,8 @@ export const chapter041: ChapterDefinition = {
       tokens: ['Die', 'Lehrerin', 'hilft', 'die', 'kleinen', 'Kinder', '.'],
       errorTokenIndex: 3,
       correction: 'den',
-      explanation: 'helfen requires the dative, so the article must be den, not die: den kleinen Kindern.',
+      explanation:
+        'helfen requires the dative, so the article must be den, not die: den kleinen Kindern.',
     },
     {
       id: 'ch41-ex-53',
@@ -1104,7 +1222,8 @@ export const chapter041: ChapterDefinition = {
       tokens: ['Wir', 'danken', 'einer', 'freundliche', 'Frau', '.'],
       errorTokenIndex: 3,
       correction: 'freundlichen',
-      explanation: 'After einer in the dative, the adjective ending is -en, not the feminine -e: einer freundlichen Frau.',
+      explanation:
+        'After einer in the dative, the adjective ending is -en, not the feminine -e: einer freundlichen Frau.',
     },
     {
       id: 'ch41-ex-54',
@@ -1118,7 +1237,8 @@ export const chapter041: ChapterDefinition = {
       tokens: ['Er', 'dankt', 'den', 'netten', 'Nachbarns', '.'],
       errorTokenIndex: 4,
       correction: 'Nachbarn',
-      explanation: 'Nachbarn already ends in -n, so the dative plural does not add a further -s: den netten Nachbarn.',
+      explanation:
+        'Nachbarn already ends in -n, so the dative plural does not add a further -s: den netten Nachbarn.',
     },
     {
       id: 'ch41-ex-55',
@@ -1132,7 +1252,8 @@ export const chapter041: ChapterDefinition = {
       tokens: ['Die', 'klein', 'Kinder', 'spielen', 'im', 'Garten', '.'],
       errorTokenIndex: 1,
       correction: 'kleinen',
-      explanation: 'Plural attributive adjectives always need an ending; after die the ending is -en, not a bare adjective form.',
+      explanation:
+        'Plural attributive adjectives always need an ending; after die the ending is -en, not a bare adjective form.',
     },
     {
       id: 'ch41-ex-56',
@@ -1150,7 +1271,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'd', text: 'netten' },
       ],
       correctOptionId: 'd',
-      explanation: 'mit takes the dative, so the feminine adjective ending is -en: mit der netten Ärztin.',
+      explanation:
+        'mit takes the dative, so the feminine adjective ending is -en: mit der netten Ärztin.',
     },
     {
       id: 'ch41-ex-57',
@@ -1168,7 +1290,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'd', text: 'fernes' },
       ],
       correctOptionId: 'c',
-      explanation: 'aus takes the dative, so the neuter adjective ending after einem is -en, not the nominative/accusative -es: aus einem fernen Land.',
+      explanation:
+        'aus takes the dative, so the neuter adjective ending after einem is -en, not the nominative/accusative -es: aus einem fernen Land.',
     },
     {
       id: 'ch41-ex-58',
@@ -1186,7 +1309,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'd', text: 'langen' },
       ],
       correctOptionId: 'd',
-      explanation: 'nach takes the dative, so the masculine adjective ending is -en: nach dem langen Film.',
+      explanation:
+        'nach takes the dative, so the masculine adjective ending is -en: nach dem langen Film.',
     },
     {
       id: 'ch41-ex-59',
@@ -1204,7 +1328,8 @@ export const chapter041: ChapterDefinition = {
         { id: 'd', text: 'buntes' },
       ],
       correctOptionId: 'b',
-      explanation: 'mit takes the dative, and the plural adjective ending is -en: mit den bunten Bällen.',
+      explanation:
+        'mit takes the dative, and the plural adjective ending is -en: mit den bunten Bällen.',
     },
     {
       id: 'ch41-ex-60',
@@ -1219,7 +1344,8 @@ export const chapter041: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'e / er / es / en',
       maxLength: 5,
-      explanation: 'mit takes the dative, so the feminine adjective ending is -en: mit der netten Ärztin.',
+      explanation:
+        'mit takes the dative, so the feminine adjective ending is -en: mit der netten Ärztin.',
     },
     {
       id: 'ch41-ex-61',
@@ -1234,7 +1360,8 @@ export const chapter041: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'langen',
       maxLength: 20,
-      explanation: 'nach takes the dative, so the masculine adjective ending is -en: nach dem langen Film.',
+      explanation:
+        'nach takes the dative, so the masculine adjective ending is -en: nach dem langen Film.',
     },
     {
       id: 'ch41-ex-62',
@@ -1243,13 +1370,15 @@ export const chapter041: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['dative', 'error-correction', 'feminine'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Wir danken einer freundliche Frau.',
       acceptedAnswers: ['Wir danken einer freundlichen Frau.'],
       answerMode: 'normalized',
       placeholder: 'Wir danken einer freundlichen ...',
       maxLength: 60,
-      explanation: 'After einer in the dative, the adjective ending is -en, not the feminine -e: einer freundlichen Frau.',
+      explanation:
+        'After einer in the dative, the adjective ending is -en, not the feminine -e: einer freundlichen Frau.',
     },
   ],
 };

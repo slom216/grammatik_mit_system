@@ -72,8 +72,7 @@ export const chapter012: ChapterDefinition = {
           ['Der Kurs', 'beginnt', 'am Montag.'],
           ['Am Montag', 'beginnt', 'der Kurs.'],
         ],
-        note:
-          'Whatever stands in position 1 — a subject, a time phrase, a place phrase — the finite verb always stays fixed in position 2, and the subject moves right after the verb whenever it is not itself in position 1.',
+        note: 'Whatever stands in position 1 — a subject, a time phrase, a place phrase — the finite verb always stays fixed in position 2, and the subject moves right after the verb whenever it is not itself in position 1.',
       },
     ],
     examples: [
@@ -81,7 +80,8 @@ export const chapter012: ChapterDefinition = {
         german: 'Ich lerne jeden Tag Deutsch.',
         english: 'I learn German every day.',
         highlight: ['Ich', 'lerne'],
-        explanation: 'The subject Ich stands in position 1, the finite verb lerne in position 2.',
+        explanation:
+          'The subject Ich stands in position 1, the finite verb lerne in position 2.',
       },
       {
         german: 'Jeden Tag lerne ich Deutsch.',
@@ -94,49 +94,57 @@ export const chapter012: ChapterDefinition = {
         german: 'Heute komme ich später nach Hause.',
         english: 'Today I am coming home later.',
         highlight: ['Heute', 'komme'],
-        explanation: 'The verb komme stays in position 2 even though the subject ich moved to position 3.',
+        explanation:
+          'The verb komme stays in position 2 even though the subject ich moved to position 3.',
       },
       {
         german: 'In Berlin wohnt meine Schwester.',
         english: 'My sister lives in Berlin.',
         highlight: ['In Berlin', 'wohnt'],
-        explanation: 'The place phrase "In Berlin" is one element and occupies position 1.',
+        explanation:
+          'The place phrase "In Berlin" is one element and occupies position 1.',
       },
       {
         german: 'Meine Schwester wohnt in Berlin.',
         english: 'My sister lives in Berlin.',
         highlight: ['Meine Schwester', 'wohnt'],
-        explanation: 'The same information, but here the subject stands in position 1 instead.',
+        explanation:
+          'The same information, but here the subject stands in position 1 instead.',
       },
       {
         german: 'Am Montag beginnt der Deutschkurs.',
         english: 'The German course starts on Monday.',
         highlight: ['Am Montag', 'beginnt'],
-        explanation: '"Am Montag" is a single time element, so beginnt still follows directly as position 2.',
+        explanation:
+          '"Am Montag" is a single time element, so beginnt still follows directly as position 2.',
       },
       {
         german: 'Um acht Uhr frühstückt die Familie.',
         english: 'The family has breakfast at eight.',
         highlight: ['Um acht Uhr', 'frühstückt'],
-        explanation: 'The three-word time phrase "Um acht Uhr" counts as a single element in position 1.',
+        explanation:
+          'The three-word time phrase "Um acht Uhr" counts as a single element in position 1.',
       },
       {
         german: 'Den Kuchen backt meine Mutter.',
         english: 'My mother is baking the cake.',
         highlight: ['Den Kuchen', 'backt'],
-        explanation: 'Here the direct object "Den Kuchen", not the subject, has been fronted into position 1.',
+        explanation:
+          'Here the direct object "Den Kuchen", not the subject, has been fronted into position 1.',
       },
       {
         german: 'Morgen fahren wir nach München.',
         english: 'Tomorrow we are driving to Munich.',
         highlight: ['Morgen', 'fahren'],
-        explanation: 'The subject wir moves after the verb fahren because morgen fills position 1.',
+        explanation:
+          'The subject wir moves after the verb fahren because morgen fills position 1.',
       },
       {
         german: 'Leider habe ich heute keine Zeit.',
         english: 'Unfortunately I have no time today.',
         highlight: ['Leider', 'habe'],
-        explanation: 'Even a single adverb like leider can occupy position 1 and trigger inversion.',
+        explanation:
+          'Even a single adverb like leider can occupy position 1 and trigger inversion.',
       },
     ],
     commonMistakes: [
@@ -201,7 +209,8 @@ export const chapter012: ChapterDefinition = {
         { id: 'd', text: 'Englisch' },
       ],
       correctOptionId: 'b',
-      explanation: 'lernt is the conjugated verb; it stands in position 2, right after the subject Meine Schwester.',
+      explanation:
+        'lernt is the conjugated verb; it stands in position 2, right after the subject Meine Schwester.',
     },
     {
       id: 'ch12-ex-02',
@@ -363,7 +372,8 @@ export const chapter012: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['fronting', 'sentence-elements'],
       instruction: 'Identify what kind of element has been fronted.',
-      prompt: 'What kind of element stands in position 1 of "Am Sonntag besuchen wir unsere Oma."?',
+      prompt:
+        'What kind of element stands in position 1 of "Am Sonntag besuchen wir unsere Oma."?',
       options: [
         { id: 'a', text: 'a time expression' },
         { id: 'b', text: 'a place expression' },
@@ -419,13 +429,15 @@ export const chapter012: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['verb-position', 'finite-verb'],
-      instruction: 'Write the finite verb in this sentence. Capitalisation is not checked.',
+      instruction:
+        'Write the finite verb in this sentence. Capitalisation is not checked.',
       prompt: 'Meine Schwester wohnt in Berlin.',
       acceptedAnswers: ['wohnt'],
       answerMode: 'caseInsensitive',
       placeholder: 'verb',
       maxLength: 15,
-      explanation: 'wohnt is the conjugated verb, standing in position 2 after the subject Meine Schwester.',
+      explanation:
+        'wohnt is the conjugated verb, standing in position 2 after the subject Meine Schwester.',
     },
     {
       id: 'ch12-ex-14',
@@ -434,7 +446,8 @@ export const chapter012: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['verb-position', 'finite-verb', 'fronting'],
-      instruction: 'Write the finite verb in this sentence. Capitalisation is not checked.',
+      instruction:
+        'Write the finite verb in this sentence. Capitalisation is not checked.',
       prompt: 'In Berlin wohnt meine Schwester.',
       acceptedAnswers: ['wohnt'],
       answerMode: 'caseInsensitive',
@@ -450,8 +463,10 @@ export const chapter012: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['sentence-elements'],
-      instruction: 'Count the sentence elements, not the words. Write the number as a digit.',
-      prompt: 'How many sentence elements does "Um acht Uhr frühstückt die Familie." have?',
+      instruction:
+        'Count the sentence elements, not the words. Write the number as a digit.',
+      prompt:
+        'How many sentence elements does "Um acht Uhr frühstückt die Familie." have?',
       acceptedAnswers: ['3'],
       answerMode: 'caseInsensitive',
       placeholder: 'number',
@@ -517,7 +532,8 @@ export const chapter012: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['inversion', 'word-order'],
-      instruction: 'Correct the word-order mistake. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the word-order mistake. Capitalisation and punctuation are checked.',
       prompt: 'Heute ich komme später nach Hause.',
       acceptedAnswers: ['Heute komme ich später nach Hause.'],
       answerMode: 'normalized',
@@ -533,7 +549,8 @@ export const chapter012: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['inversion', 'word-order'],
-      instruction: 'Correct the word-order mistake. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the word-order mistake. Capitalisation and punctuation are checked.',
       prompt: 'In Berlin meine Schwester wohnt.',
       acceptedAnswers: ['In Berlin wohnt meine Schwester.'],
       answerMode: 'normalized',
@@ -549,7 +566,8 @@ export const chapter012: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['inversion', 'word-order'],
-      instruction: 'Correct the word-order mistake. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the word-order mistake. Capitalisation and punctuation are checked.',
       prompt: 'Am Montag der Kurs beginnt.',
       acceptedAnswers: ['Am Montag beginnt der Kurs.'],
       answerMode: 'normalized',
@@ -655,7 +673,8 @@ export const chapter012: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['sentence-elements'],
       instruction: 'Count the sentence elements, not the words.',
-      prompt: 'How many sentence elements does "Nach dem Unterricht gehen die Schüler nach Hause." have?',
+      prompt:
+        'How many sentence elements does "Nach dem Unterricht gehen die Schüler nach Hause." have?',
       options: [
         { id: 'a', text: '2' },
         { id: 'b', text: '3' },
@@ -693,7 +712,8 @@ export const chapter012: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['fronting', 'sentence-elements'],
       instruction: 'Identify what kind of element has been fronted.',
-      prompt: 'What kind of element stands in position 1 of "Diese Übung findet mein Bruder leicht."?',
+      prompt:
+        'What kind of element stands in position 1 of "Diese Übung findet mein Bruder leicht."?',
       options: [
         { id: 'a', text: 'a time expression' },
         { id: 'b', text: 'a place expression' },
@@ -749,7 +769,8 @@ export const chapter012: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['verb-position', 'finite-verb'],
-      instruction: 'Write the finite verb in this sentence. Capitalisation is not checked.',
+      instruction:
+        'Write the finite verb in this sentence. Capitalisation is not checked.',
       prompt: 'Zu Weihnachten schenkt er ihr Blumen.',
       acceptedAnswers: ['schenkt'],
       answerMode: 'caseInsensitive',
@@ -765,8 +786,10 @@ export const chapter012: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['sentence-elements'],
-      instruction: 'Count the sentence elements, not the words. Write the number as a digit.',
-      prompt: 'How many sentence elements does "Im Winter trägt man eine dicke Jacke." have?',
+      instruction:
+        'Count the sentence elements, not the words. Write the number as a digit.',
+      prompt:
+        'How many sentence elements does "Im Winter trägt man eine dicke Jacke." have?',
       acceptedAnswers: ['4'],
       answerMode: 'caseInsensitive',
       placeholder: 'number',
@@ -815,7 +838,8 @@ export const chapter012: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['inversion', 'word-order'],
-      instruction: 'Correct the word-order mistake. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the word-order mistake. Capitalisation and punctuation are checked.',
       prompt: 'Zu Weihnachten er schenkt ihr Blumen.',
       acceptedAnswers: ['Zu Weihnachten schenkt er ihr Blumen.'],
       answerMode: 'normalized',
@@ -831,7 +855,8 @@ export const chapter012: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['inversion', 'word-order'],
-      instruction: 'Correct the word-order mistake. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the word-order mistake. Capitalisation and punctuation are checked.',
       prompt: 'Am Abend meine Oma liest ein Buch.',
       acceptedAnswers: ['Am Abend liest meine Oma ein Buch.'],
       answerMode: 'normalized',
@@ -882,7 +907,8 @@ export const chapter012: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['fronting', 'inversion', 'word-order'],
-      instruction: 'Arrange the segments into a grammatical sentence with "Heute" in position 1.',
+      instruction:
+        'Arrange the segments into a grammatical sentence with "Heute" in position 1.',
       prompt: 'der Lehrer / erklärt / die neue Grammatik / Heute',
       segments: [
         { id: 's1', text: 'Heute' },
@@ -900,7 +926,8 @@ export const chapter012: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['fronting', 'inversion', 'word-order'],
-      instruction: 'Arrange the segments into a grammatical sentence with "In München" in position 1.',
+      instruction:
+        'Arrange the segments into a grammatical sentence with "In München" in position 1.',
       prompt: 'die Familie / feiert / Weihnachten / In München',
       segments: [
         { id: 's1', text: 'In München' },
@@ -918,7 +945,8 @@ export const chapter012: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['fronting', 'inversion', 'word-order'],
-      instruction: 'Arrange the segments into a grammatical sentence with "Den Brief" in position 1.',
+      instruction:
+        'Arrange the segments into a grammatical sentence with "Den Brief" in position 1.',
       prompt: 'meine Schwester / schreibt / heute Abend / Den Brief',
       segments: [
         { id: 's1', text: 'Den Brief' },
@@ -936,7 +964,8 @@ export const chapter012: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['fronting', 'inversion', 'word-order'],
-      instruction: 'Arrange the segments into a grammatical sentence with "Vielleicht" in position 1.',
+      instruction:
+        'Arrange the segments into a grammatical sentence with "Vielleicht" in position 1.',
       prompt: 'unser Freund / kommt / morgen / Vielleicht',
       segments: [
         { id: 's1', text: 'Vielleicht' },
@@ -954,7 +983,8 @@ export const chapter012: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'recognition',
       grammarFocus: ['verb-position', 'sentence-elements'],
-      instruction: 'Arrange the segments into a grammatical sentence with the subject in position 1.',
+      instruction:
+        'Arrange the segments into a grammatical sentence with the subject in position 1.',
       prompt: 'fahren / im Sommer / nach Italien / Wir',
       segments: [
         { id: 's1', text: 'Wir' },
@@ -972,7 +1002,8 @@ export const chapter012: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['fronting', 'inversion', 'word-order'],
-      instruction: 'Arrange the segments into a grammatical sentence with "Am Wochenende" in position 1.',
+      instruction:
+        'Arrange the segments into a grammatical sentence with "Am Wochenende" in position 1.',
       prompt: 'er / besucht / seine Großeltern / Am Wochenende',
       segments: [
         { id: 's1', text: 'Am Wochenende' },
@@ -990,7 +1021,8 @@ export const chapter012: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['fronting', 'inversion', 'word-order'],
-      instruction: 'Arrange the segments into a grammatical sentence with "Diese Aufgabe" in position 1.',
+      instruction:
+        'Arrange the segments into a grammatical sentence with "Diese Aufgabe" in position 1.',
       prompt: 'die Klasse / findet / schwierig / Diese Aufgabe',
       segments: [
         { id: 's1', text: 'Diese Aufgabe' },
@@ -1008,7 +1040,8 @@ export const chapter012: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['fronting', 'inversion', 'word-order'],
-      instruction: 'Arrange the segments into a grammatical sentence with "Nach dem Essen" in position 1.',
+      instruction:
+        'Arrange the segments into a grammatical sentence with "Nach dem Essen" in position 1.',
       prompt: 'meine Mutter / trinkt / gern / einen Kaffee / Nach dem Essen',
       segments: [
         { id: 's1', text: 'Nach dem Essen' },
@@ -1027,7 +1060,8 @@ export const chapter012: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'transfer',
       grammarFocus: ['fronting', 'inversion', 'word-order'],
-      instruction: 'Arrange the segments into a grammatical sentence with "Im Garten" in position 1.',
+      instruction:
+        'Arrange the segments into a grammatical sentence with "Im Garten" in position 1.',
       prompt: 'meine Oma / pflanzt / bunte Blumen / Im Garten',
       segments: [
         { id: 's1', text: 'Im Garten' },
@@ -1045,7 +1079,8 @@ export const chapter012: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'production',
       grammarFocus: ['fronting', 'inversion', 'word-order', 'error-correction'],
-      instruction: 'Find the token that breaks the verb-second word order, and correct it.',
+      instruction:
+        'Find the token that breaks the verb-second word order, and correct it.',
       prompt: 'Ein Lerner schreibt über einen Ausflug. Etwas stimmt nicht.',
       tokens: ['Morgen', 'wir', 'besuchen', 'unsere', 'Tante.'],
       errorTokenIndex: 1,
@@ -1060,7 +1095,8 @@ export const chapter012: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'production',
       grammarFocus: ['fronting', 'inversion', 'word-order', 'error-correction'],
-      instruction: 'Find the token that breaks the verb-second word order, and correct it.',
+      instruction:
+        'Find the token that breaks the verb-second word order, and correct it.',
       prompt: 'Ein Lerner beschreibt einen Nachmittag. Etwas stimmt nicht.',
       tokens: ['Im', 'Park', 'die', 'Kinder', 'spielen.'],
       errorTokenIndex: 2,
@@ -1075,7 +1111,8 @@ export const chapter012: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['fronting', 'inversion', 'word-order', 'error-correction'],
-      instruction: 'Find the token that breaks the verb-second word order, and correct it.',
+      instruction:
+        'Find the token that breaks the verb-second word order, and correct it.',
       prompt: 'Ein Lerner beschreibt seinen Tagesablauf. Etwas stimmt nicht.',
       tokens: ['Nach', 'der', 'Schule', 'ich', 'mache', 'Hausaufgaben.'],
       errorTokenIndex: 3,
@@ -1090,7 +1127,8 @@ export const chapter012: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['fronting', 'inversion', 'word-order', 'error-correction'],
-      instruction: 'Find the token that breaks the verb-second word order, and correct it.',
+      instruction:
+        'Find the token that breaks the verb-second word order, and correct it.',
       prompt: 'Ein Lerner spricht über ein Buch. Etwas stimmt nicht.',
       tokens: ['Dieses', 'Buch', 'mein', 'Bruder', 'liest', 'gerade.'],
       errorTokenIndex: 2,

@@ -89,7 +89,8 @@ export const chapter018: ChapterDefinition = {
         german: 'Ich gebe dem Kind den Ball.',
         english: 'I give the child the ball.',
         highlight: ['dem Kind'],
-        explanation: 'dem Kind is the indirect object (who receives the ball) in the dative.',
+        explanation:
+          'dem Kind is the indirect object (who receives the ball) in the dative.',
       },
       {
         german: 'Der Lehrer hilft der Schülerin.',
@@ -107,13 +108,15 @@ export const chapter018: ChapterDefinition = {
         german: 'Wir danken den Nachbarn für die Hilfe.',
         english: 'We thank the neighbours for the help.',
         highlight: ['den Nachbarn'],
-        explanation: 'den Nachbarn already ends in -n, so no extra -n is added in the dative plural.',
+        explanation:
+          'den Nachbarn already ends in -n, so no extra -n is added in the dative plural.',
       },
       {
         german: 'Der Kuchen schmeckt den Kindern sehr gut.',
         english: 'The cake tastes very good to the children.',
         highlight: ['den Kindern'],
-        explanation: 'den Kindern is dative plural: Kinder does not end in -n or -s, so -n is added.',
+        explanation:
+          'den Kindern is dative plural: Kinder does not end in -n or -s, so -n is added.',
       },
       {
         german: 'Das Geschenk gefällt meiner Mutter.',
@@ -143,7 +146,8 @@ export const chapter018: ChapterDefinition = {
         german: 'Das Auto gehört einer Kollegin von mir.',
         english: 'The car belongs to a colleague of mine.',
         highlight: ['einer Kollegin'],
-        explanation: 'gehören takes a dative object; einer is the feminine indefinite dative article.',
+        explanation:
+          'gehören takes a dative object; einer is the feminine indefinite dative article.',
       },
     ],
     commonMistakes: [
@@ -168,7 +172,8 @@ export const chapter018: ChapterDefinition = {
       {
         incorrect: 'Das gehört einem Frau.',
         correct: 'Das gehört einer Frau.',
-        explanation: 'Frau is feminine, so the indefinite dative article is einer, not einem.',
+        explanation:
+          'Frau is feminine, so the indefinite dative article is einer, not einem.',
       },
       {
         incorrect: 'Ich danke den Freund.',
@@ -252,7 +257,8 @@ export const chapter018: ChapterDefinition = {
         { id: 'd', text: 'Was' },
       ],
       correctOptionId: 'c',
-      explanation: 'wem asks about the dative (indirect) object, and the answer dem Patienten is dative.',
+      explanation:
+        'wem asks about the dative (indirect) object, and the answer dem Patienten is dative.',
     },
     {
       id: 'ch18-ex-04',
@@ -324,7 +330,8 @@ export const chapter018: ChapterDefinition = {
         { id: 'd', text: 'die' },
       ],
       correctOptionId: 'c',
-      explanation: 'The dative plural definite article is always den, regardless of gender.',
+      explanation:
+        'The dative plural definite article is always den, regardless of gender.',
     },
     {
       id: 'ch18-ex-08',
@@ -342,7 +349,8 @@ export const chapter018: ChapterDefinition = {
         { id: 'd', text: 'dem Kindern' },
       ],
       correctOptionId: 'b',
-      explanation: 'Kinder does not end in -n or -s, so it takes an extra -n in the dative plural: den Kindern.',
+      explanation:
+        'Kinder does not end in -n or -s, so it takes an extra -n in the dative plural: den Kindern.',
     },
     {
       id: 'ch18-ex-09',
@@ -360,7 +368,8 @@ export const chapter018: ChapterDefinition = {
         { id: 'd', text: 'den Kollegin' },
       ],
       correctOptionId: 'a',
-      explanation: 'Kolleginnen already ends in -n, so no extra -n is added: den Kolleginnen.',
+      explanation:
+        'Kolleginnen already ends in -n, so no extra -n is added: den Kolleginnen.',
     },
     {
       id: 'ch18-ex-10',
@@ -378,7 +387,8 @@ export const chapter018: ChapterDefinition = {
         { id: 'd', text: 'der Autos' },
       ],
       correctOptionId: 'c',
-      explanation: 'Autos already ends in -s, so no extra -n is added in the dative plural.',
+      explanation:
+        'Autos already ends in -s, so no extra -n is added in the dative plural.',
     },
     {
       id: 'ch18-ex-11',
@@ -432,7 +442,8 @@ export const chapter018: ChapterDefinition = {
         { id: 'd', text: 'des Gastes' },
       ],
       correctOptionId: 'b',
-      explanation: 'The guest is the indirect object receiving the bill, so it needs the dative: dem Gast.',
+      explanation:
+        'The guest is the indirect object receiving the bill, so it needs the dative: dem Gast.',
     },
     {
       id: 'ch18-ex-14',
@@ -450,7 +461,8 @@ export const chapter018: ChapterDefinition = {
         { id: 'd', text: 'unseres Chefs' },
       ],
       correctOptionId: 'c',
-      explanation: 'The boss receives the email, so this is the indirect object and needs the dative: unserem Chef.',
+      explanation:
+        'The boss receives the email, so this is the indirect object and needs the dative: unserem Chef.',
     },
     {
       id: 'ch18-ex-15',
@@ -498,7 +510,8 @@ export const chapter018: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['dative', 'articles', 'masculine'],
       instruction: 'Write the correct dative article. Capitalisation is not checked.',
-      prompt: 'Der Kellner bringt ___ Kellner die Speisekarte nicht — er bringt sie ___ Gast. (der Gast)',
+      prompt:
+        'Der Kellner bringt ___ Kellner die Speisekarte nicht — er bringt sie ___ Gast. (der Gast)',
       acceptedAnswers: ['dem'],
       answerMode: 'caseInsensitive',
       placeholder: 'article',
@@ -549,7 +562,8 @@ export const chapter018: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'den ...',
       maxLength: 30,
-      explanation: 'Kinder does not end in -n or -s, so it takes an extra -n in the dative plural: den Kindern.',
+      explanation:
+        'Kinder does not end in -n or -s, so it takes an extra -n in the dative plural: den Kindern.',
     },
     {
       id: 'ch18-ex-21',
@@ -565,7 +579,8 @@ export const chapter018: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'den ...',
       maxLength: 30,
-      explanation: 'Kunden already ends in -n, so it does not change in the dative plural: den Kunden.',
+      explanation:
+        'Kunden already ends in -n, so it does not change in the dative plural: den Kunden.',
     },
     {
       id: 'ch18-ex-22',
@@ -581,7 +596,8 @@ export const chapter018: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'den ...',
       maxLength: 30,
-      explanation: 'Fahrräder does not end in -n or -s, so it takes an extra -n in the dative plural: den Fahrrädern.',
+      explanation:
+        'Fahrräder does not end in -n or -s, so it takes an extra -n in the dative plural: den Fahrrädern.',
     },
     {
       id: 'ch18-ex-23',
@@ -611,7 +627,8 @@ export const chapter018: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'article',
       maxLength: 10,
-      explanation: 'gehören takes a dative object; Nachbar is masculine, so the article is dem.',
+      explanation:
+        'gehören takes a dative object; Nachbar is masculine, so the article is dem.',
     },
     {
       id: 'ch18-ex-25',
@@ -673,7 +690,8 @@ export const chapter018: ChapterDefinition = {
       grammarFocus: ['dative', 'case-choice', 'nominative-vs-accusative-vs-dative'],
       instruction:
         'Complete the sentence with the correctly cased article and noun for the role given in brackets. Capitalisation is not checked.',
-      prompt: 'Die Verkäuferin zeigt ___ die neuen Schuhe. (die Kundin — indirect object)',
+      prompt:
+        'Die Verkäuferin zeigt ___ die neuen Schuhe. (die Kundin — indirect object)',
       acceptedAnswers: ['der Kundin'],
       answerMode: 'caseInsensitive',
       placeholder: 'article + noun',
@@ -723,7 +741,8 @@ export const chapter018: ChapterDefinition = {
       templateParts: ['Das Bild gefällt ', ' Kind sehr gut.'],
       slots: [{ id: 'ch18-ex-31-s1', correctWord: 'dem' }],
       wordBank: ['dem', 'das', 'der', 'den'],
-      explanation: 'gefallen takes a dative object; Kind is neuter, so the dative article is dem.',
+      explanation:
+        'gefallen takes a dative object; Kind is neuter, so the dative article is dem.',
     },
     {
       id: 'ch18-ex-32',
@@ -731,8 +750,16 @@ export const chapter018: ChapterDefinition = {
       order: 32,
       type: 'dragToSlots',
       level: 'production',
-      grammarFocus: ['dative', 'articles', 'plural', 'plural-n', 'dative-verbs', 'helfen'],
-      instruction: 'Drag the correct dative article and the correctly formed dative plural noun into the gaps.',
+      grammarFocus: [
+        'dative',
+        'articles',
+        'plural',
+        'plural-n',
+        'dative-verbs',
+        'helfen',
+      ],
+      instruction:
+        'Drag the correct dative article and the correctly formed dative plural noun into the gaps.',
       prompt: 'Die Lehrerin hilft ___ ___. (die Schüler)',
       templateParts: ['Die Lehrerin hilft ', ' ', '.'],
       slots: [
@@ -755,7 +782,8 @@ export const chapter018: ChapterDefinition = {
       templateParts: ['Die Oma erzählt den ', ' eine Geschichte.'],
       slots: [{ id: 'ch18-ex-33-s1', correctWord: 'Kindern' }],
       wordBank: ['Kindern', 'Kinder', 'Kindes', 'Kinders'],
-      explanation: 'Kinder does not end in -n or -s, so it takes an extra -n in the dative plural: Kindern.',
+      explanation:
+        'Kinder does not end in -n or -s, so it takes an extra -n in the dative plural: Kindern.',
     },
     {
       id: 'ch18-ex-34',
@@ -769,7 +797,8 @@ export const chapter018: ChapterDefinition = {
       templateParts: ['Die Firma dankt den ', ' für die Bestellung.'],
       slots: [{ id: 'ch18-ex-34-s1', correctWord: 'Kunden' }],
       wordBank: ['Kunden', 'Kundenn', 'Kunde', 'Kundens'],
-      explanation: 'Kunden already ends in -n, so it does not change in the dative plural: den Kunden.',
+      explanation:
+        'Kunden already ends in -n, so it does not change in the dative plural: den Kunden.',
     },
     {
       id: 'ch18-ex-35',
@@ -783,7 +812,8 @@ export const chapter018: ChapterDefinition = {
       templateParts: ['Kannst du ', ' helfen?'],
       slots: [{ id: 'ch18-ex-35-s1', correctWord: 'mir' }],
       wordBank: ['mir', 'mich', 'ich', 'dich'],
-      explanation: 'helfen takes a dative object; the dative form of ich is mir, not the accusative mich.',
+      explanation:
+        'helfen takes a dative object; the dative form of ich is mir, not the accusative mich.',
     },
     {
       id: 'ch18-ex-36',
@@ -850,7 +880,11 @@ export const chapter018: ChapterDefinition = {
         { id: 'ch18-ex-39-p1', left: 'helfen', right: 'to help (dative object)' },
         { id: 'ch18-ex-39-p2', left: 'danken', right: 'to thank (dative object)' },
         { id: 'ch18-ex-39-p3', left: 'gehören', right: 'to belong to (dative object)' },
-        { id: 'ch18-ex-39-p4', left: 'schmecken', right: 'to taste good to (dative object)' },
+        {
+          id: 'ch18-ex-39-p4',
+          left: 'schmecken',
+          right: 'to taste good to (dative object)',
+        },
         { id: 'ch18-ex-39-p5', left: 'gefallen', right: 'to please (dative object)' },
       ],
       explanation:
@@ -906,7 +940,8 @@ export const chapter018: ChapterDefinition = {
       tokens: ['Wir', 'helfen', 'die', 'Kindern', 'heute.'],
       errorTokenIndex: 2,
       correction: 'den',
-      explanation: 'helfen takes a dative object; the plural article must be den, not the accusative-looking die.',
+      explanation:
+        'helfen takes a dative object; the plural article must be den, not the accusative-looking die.',
     },
     {
       id: 'ch18-ex-43',
@@ -929,7 +964,13 @@ export const chapter018: ChapterDefinition = {
       order: 44,
       type: 'errorSpotting',
       level: 'production',
-      grammarFocus: ['dative', 'case-choice', 'dative-verbs', 'gehören', 'possessive-articles'],
+      grammarFocus: [
+        'dative',
+        'case-choice',
+        'dative-verbs',
+        'gehören',
+        'possessive-articles',
+      ],
       instruction: 'Find the token with the wrong case and correct it.',
       prompt: 'Das Auto gehört mein Vater.',
       tokens: ['Das', 'Auto', 'gehört', 'mein', 'Vater.'],
@@ -972,7 +1013,8 @@ export const chapter018: ChapterDefinition = {
         { id: 'd', text: 'er' },
       ],
       correctOptionId: 'a',
-      explanation: 'er is the receiver of the message, so it becomes the dative pronoun ihm.',
+      explanation:
+        'er is the receiver of the message, so it becomes the dative pronoun ihm.',
     },
     {
       id: 'ch18-ex-47',
@@ -1008,7 +1050,8 @@ export const chapter018: ChapterDefinition = {
         { id: 'd', text: 'hilfst' },
       ],
       correctOptionId: 'a',
-      explanation: 'helfen takes a dative object (seinem Vater is already dative); the verb form for er is hilft.',
+      explanation:
+        'helfen takes a dative object (seinem Vater is already dative); the verb form for er is hilft.',
     },
     {
       id: 'ch18-ex-49',
@@ -1026,7 +1069,8 @@ export const chapter018: ChapterDefinition = {
         { id: 'd', text: 'dem' },
       ],
       correctOptionId: 'a',
-      explanation: 'The dative plural definite article is always den, matching the dative noun Gästen.',
+      explanation:
+        'The dative plural definite article is always den, matching the dative noun Gästen.',
     },
     {
       id: 'ch18-ex-50',
@@ -1044,7 +1088,8 @@ export const chapter018: ChapterDefinition = {
         { id: 'd', text: 'dem' },
       ],
       correctOptionId: 'a',
-      explanation: 'gehören takes a dative object; Kollegin is feminine, so the dative article is der.',
+      explanation:
+        'gehören takes a dative object; Kollegin is feminine, so the dative article is der.',
     },
     {
       id: 'ch18-ex-51',
@@ -1072,7 +1117,8 @@ export const chapter018: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['dative', 'possessive-articles', 'plural', 'case-choice'],
       instruction: 'Choose the correctly cased noun phrase for the role given.',
-      prompt: 'Die Kinder schreiben ___ eine Postkarte. (ihre Großeltern — indirect object)',
+      prompt:
+        'Die Kinder schreiben ___ eine Postkarte. (ihre Großeltern — indirect object)',
       options: [
         { id: 'a', text: 'ihre Großeltern' },
         { id: 'b', text: 'ihren Großeltern' },
@@ -1156,7 +1202,8 @@ export const chapter018: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'article',
       maxLength: 10,
-      explanation: 'gehören takes a dative object; Schülerin is feminine, so the article is der.',
+      explanation:
+        'gehören takes a dative object; Schülerin is feminine, so the article is der.',
     },
     {
       id: 'ch18-ex-58',
@@ -1172,7 +1219,8 @@ export const chapter018: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'den ...',
       maxLength: 30,
-      explanation: 'Gäste does not end in -n or -s, so it takes an extra -n in the dative plural: den Gästen.',
+      explanation:
+        'Gäste does not end in -n or -s, so it takes an extra -n in the dative plural: den Gästen.',
     },
     {
       id: 'ch18-ex-59',

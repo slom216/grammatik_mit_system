@@ -60,7 +60,7 @@ export const chapter033: ChapterDefinition = {
         heading: 'aus, bei, and mit: origin, location, and means',
         paragraphs: [
           'aus expresses origin or material: where someone or something comes from (aus der Schweiz, out of/from Switzerland) or what something is made of (aus Holz, made of wood).',
-          'bei expresses being at someone\'s home or workplace, or being near a place: bei meiner Tante (at my aunt\'s place), bei der Arbeit (at work).',
+          "bei expresses being at someone's home or workplace, or being near a place: bei meiner Tante (at my aunt's place), bei der Arbeit (at work).",
           'mit expresses accompaniment or the means by which something is done, including transport: mit meiner Schwester (with my sister), mit dem Zug (by train).',
         ],
       },
@@ -89,13 +89,48 @@ export const chapter033: ChapterDefinition = {
         columns: ['Preposition', 'Case', 'Typical meaning', 'Example'],
         columnCases: [null, 'dative', null, null],
         rows: [
-          ['aus', 'dative', 'out of / made of / origin', 'Ich komme aus der Schweiz. (I come from Switzerland.)'],
-          ['bei', 'dative', "at someone's place / near", 'Ich wohne bei meiner Tante. (I live at my aunt\'s.)'],
-          ['mit', 'dative', 'with / by means of transport', 'Wir fahren mit dem Bus. (We go by bus.)'],
-          ['nach', 'dative', 'to a place (no article) / after (time)', 'Er fliegt nach Japan. (He is flying to Japan.)'],
-          ['seit', 'dative', 'since / for (a duration)', 'Sie wohnt seit einem Jahr hier. (She has lived here for a year.)'],
-          ['von', 'dative', 'from / of', 'Das Geschenk ist von meinem Bruder. (The present is from my brother.)'],
-          ['zu', 'dative', 'to a person / to an event', 'Ich gehe zu meinem Freund. (I am going to my friend\'s.)'],
+          [
+            'aus',
+            'dative',
+            'out of / made of / origin',
+            'Ich komme aus der Schweiz. (I come from Switzerland.)',
+          ],
+          [
+            'bei',
+            'dative',
+            "at someone's place / near",
+            "Ich wohne bei meiner Tante. (I live at my aunt's.)",
+          ],
+          [
+            'mit',
+            'dative',
+            'with / by means of transport',
+            'Wir fahren mit dem Bus. (We go by bus.)',
+          ],
+          [
+            'nach',
+            'dative',
+            'to a place (no article) / after (time)',
+            'Er fliegt nach Japan. (He is flying to Japan.)',
+          ],
+          [
+            'seit',
+            'dative',
+            'since / for (a duration)',
+            'Sie wohnt seit einem Jahr hier. (She has lived here for a year.)',
+          ],
+          [
+            'von',
+            'dative',
+            'from / of',
+            'Das Geschenk ist von meinem Bruder. (The present is from my brother.)',
+          ],
+          [
+            'zu',
+            'dative',
+            'to a person / to an event',
+            "Ich gehe zu meinem Freund. (I am going to my friend's.)",
+          ],
         ],
         note: 'All seven prepositions always govern the dative case, regardless of meaning or context.',
       },
@@ -119,8 +154,12 @@ export const chapter033: ChapterDefinition = {
         rows: [
           ['zu + dem', 'zum', 'Ich gehe zum Bahnhof. (I am going to the train station.)'],
           ['zu + der', 'zur', 'Sie geht zur Arbeit. (She goes to work.)'],
-          ['bei + dem', 'beim', 'Er ist beim Arzt. (He is at the doctor\'s.)'],
-          ['von + dem', 'vom', 'Das Buch ist vom Lehrer. (The book is from the teacher.)'],
+          ['bei + dem', 'beim', "Er ist beim Arzt. (He is at the doctor's.)"],
+          [
+            'von + dem',
+            'vom',
+            'Das Buch ist vom Lehrer. (The book is from the teacher.)',
+          ],
         ],
         note: 'These four contractions are used by default in everyday German; the uncontracted forms sound overly formal.',
       },
@@ -130,19 +169,22 @@ export const chapter033: ChapterDefinition = {
         german: 'Ich komme aus der Schweiz.',
         english: 'I come from Switzerland.',
         highlight: ['aus', 'der'],
-        explanation: 'aus takes the dative; die Schweiz is feminine, so the dative article is der.',
+        explanation:
+          'aus takes the dative; die Schweiz is feminine, so the dative article is der.',
       },
       {
         german: 'Der Tisch ist aus Holz.',
         english: 'The table is made of wood.',
         highlight: ['aus'],
-        explanation: 'aus expresses material here; Holz is a mass noun and takes no article.',
+        explanation:
+          'aus expresses material here; Holz is a mass noun and takes no article.',
       },
       {
         german: 'Ich bin bei meiner Freundin.',
         english: "I am at my girlfriend's place.",
         highlight: ['bei', 'meiner'],
-        explanation: 'bei takes the dative; die Freundin is feminine, so the possessive is meiner.',
+        explanation:
+          'bei takes the dative; die Freundin is feminine, so the possessive is meiner.',
       },
       {
         german: 'Das Café ist beim Bahnhof.',
@@ -154,43 +196,50 @@ export const chapter033: ChapterDefinition = {
         german: 'Wir fahren mit dem Zug nach Berlin.',
         english: 'We are travelling to Berlin by train.',
         highlight: ['mit dem Zug', 'nach Berlin'],
-        explanation: 'mit dem Zug names the means of transport; nach Berlin uses no article before a city name.',
+        explanation:
+          'mit dem Zug names the means of transport; nach Berlin uses no article before a city name.',
       },
       {
         german: 'Sie schreibt mit dem Bleistift.',
         english: 'She is writing with the pencil.',
         highlight: ['mit dem'],
-        explanation: 'mit takes the dative; der Bleistift is masculine, so the article is dem.',
+        explanation:
+          'mit takes the dative; der Bleistift is masculine, so the article is dem.',
       },
       {
         german: 'Er fliegt nach Italien.',
         english: 'He is flying to Italy.',
         highlight: ['nach'],
-        explanation: 'nach is used before country names with no article to express destination.',
+        explanation:
+          'nach is used before country names with no article to express destination.',
       },
       {
         german: 'Nach dem Essen gehen wir spazieren.',
         english: 'After the meal, we go for a walk.',
         highlight: ['Nach dem'],
-        explanation: 'Here nach means "after" in time and takes the usual dative article: das Essen becomes dem Essen.',
+        explanation:
+          'Here nach means "after" in time and takes the usual dative article: das Essen becomes dem Essen.',
       },
       {
         german: 'Ich wohne seit zwei Jahren in Hamburg.',
         english: 'I have lived in Hamburg for two years.',
         highlight: ['seit'],
-        explanation: 'seit expresses a duration continuing into the present; German uses the present tense here.',
+        explanation:
+          'seit expresses a duration continuing into the present; German uses the present tense here.',
       },
       {
         german: 'Seit dem Sommer lernt sie Deutsch.',
         english: 'She has been learning German since the summer.',
         highlight: ['Seit dem'],
-        explanation: 'seit takes the dative; der Sommer is masculine, so the article is dem.',
+        explanation:
+          'seit takes the dative; der Sommer is masculine, so the article is dem.',
       },
       {
         german: 'Das Buch ist von meiner Schwester.',
         english: 'The book is from my sister.',
         highlight: ['von', 'meiner'],
-        explanation: 'von expresses origin/possession; die Schwester is feminine, so the possessive is meiner.',
+        explanation:
+          'von expresses origin/possession; die Schwester is feminine, so the possessive is meiner.',
       },
       {
         german: 'Er kommt gerade vom Arzt.',
@@ -202,7 +251,8 @@ export const chapter033: ChapterDefinition = {
         german: 'Ich gehe zu meinem Onkel.',
         english: "I am going to my uncle's.",
         highlight: ['zu', 'meinem'],
-        explanation: 'zu is used before a person; der Onkel is masculine, so the possessive is meinem.',
+        explanation:
+          'zu is used before a person; der Onkel is masculine, so the possessive is meinem.',
       },
       {
         german: 'Sie fährt zur Universität.',
@@ -215,27 +265,32 @@ export const chapter033: ChapterDefinition = {
       {
         incorrect: 'Ich komme aus die Schweiz.',
         correct: 'Ich komme aus der Schweiz.',
-        explanation: 'aus always takes the dative; die Schweiz (feminine) becomes der Schweiz in the dative, not the accusative/nominative die.',
+        explanation:
+          'aus always takes the dative; die Schweiz (feminine) becomes der Schweiz in the dative, not the accusative/nominative die.',
       },
       {
         incorrect: 'Ich fahre mit den Bus.',
         correct: 'Ich fahre mit dem Bus.',
-        explanation: 'mit always takes the dative; der Bus (masculine) becomes dem Bus, not the accusative den Bus.',
+        explanation:
+          'mit always takes the dative; der Bus (masculine) becomes dem Bus, not the accusative den Bus.',
       },
       {
         incorrect: 'Er fliegt nach dem Japan.',
         correct: 'Er fliegt nach Japan.',
-        explanation: 'Country and city names after nach (in the sense of "to a place") take no article at all.',
+        explanation:
+          'Country and city names after nach (in the sense of "to a place") take no article at all.',
       },
       {
         incorrect: 'Ich gehe zu die Schule.',
         correct: 'Ich gehe zur Schule.',
-        explanation: 'zu always takes the dative; die Schule (feminine) becomes der Schule, usually contracted to zur.',
+        explanation:
+          'zu always takes the dative; die Schule (feminine) becomes der Schule, usually contracted to zur.',
       },
       {
         incorrect: 'Das Geschenk ist von mein Bruder.',
         correct: 'Das Geschenk ist von meinem Bruder.',
-        explanation: 'von takes the dative; the possessive mein needs the dative masculine ending -em: meinem.',
+        explanation:
+          'von takes the dative; the possessive mein needs the dative masculine ending -em: meinem.',
       },
     ],
     remember: [
@@ -260,7 +315,8 @@ export const chapter033: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['preposition-meaning', 'seit'],
       instruction: 'Choose the preposition that matches the meaning.',
-      prompt: 'Which preposition means "since" or "for" (a duration continuing into the present)?',
+      prompt:
+        'Which preposition means "since" or "for" (a duration continuing into the present)?',
       options: [
         { id: 'a', text: 'seit' },
         { id: 'b', text: 'von' },
@@ -268,7 +324,8 @@ export const chapter033: ChapterDefinition = {
         { id: 'd', text: 'bei' },
       ],
       correctOptionId: 'a',
-      explanation: 'seit describes a point in time or a duration that continues into the present, e.g. seit zwei Jahren (for two years).',
+      explanation:
+        'seit describes a point in time or a duration that continues into the present, e.g. seit zwei Jahren (for two years).',
     },
     {
       id: 'ch33-ex-02',
@@ -286,7 +343,8 @@ export const chapter033: ChapterDefinition = {
         { id: 'd', text: 'nach' },
       ],
       correctOptionId: 'a',
-      explanation: 'aus expresses origin or material, e.g. aus der Schweiz (from Switzerland), aus Holz (made of wood).',
+      explanation:
+        'aus expresses origin or material, e.g. aus der Schweiz (from Switzerland), aus Holz (made of wood).',
     },
     {
       id: 'ch33-ex-03',
@@ -296,7 +354,8 @@ export const chapter033: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['preposition-meaning', 'zu'],
       instruction: 'Choose the preposition that matches the meaning.',
-      prompt: 'Which preposition is used to say you are going to a person or to an event?',
+      prompt:
+        'Which preposition is used to say you are going to a person or to an event?',
       options: [
         { id: 'a', text: 'zu' },
         { id: 'b', text: 'nach' },
@@ -304,7 +363,8 @@ export const chapter033: ChapterDefinition = {
         { id: 'd', text: 'bei' },
       ],
       correctOptionId: 'a',
-      explanation: 'zu is used before a person or an event, e.g. zu meinem Freund (to my friend), zur Party (to the party).',
+      explanation:
+        'zu is used before a person or an event, e.g. zu meinem Freund (to my friend), zur Party (to the party).',
     },
     {
       id: 'ch33-ex-04',
@@ -322,7 +382,8 @@ export const chapter033: ChapterDefinition = {
         { id: 'd', text: 'von' },
       ],
       correctOptionId: 'a',
-      explanation: 'mit expresses accompaniment or means, e.g. mit dem Bus (by bus), mit meiner Schwester (with my sister).',
+      explanation:
+        'mit expresses accompaniment or means, e.g. mit dem Bus (by bus), mit meiner Schwester (with my sister).',
     },
     {
       id: 'ch33-ex-05',
@@ -340,7 +401,8 @@ export const chapter033: ChapterDefinition = {
         { id: 'd', text: 'die' },
       ],
       correctOptionId: 'a',
-      explanation: 'aus takes the dative; die Schweiz is feminine, so the dative article is der: aus der Schweiz.',
+      explanation:
+        'aus takes the dative; die Schweiz is feminine, so the dative article is der: aus der Schweiz.',
     },
     {
       id: 'ch33-ex-06',
@@ -358,7 +420,8 @@ export const chapter033: ChapterDefinition = {
         { id: 'd', text: 'das' },
       ],
       correctOptionId: 'a',
-      explanation: 'mit takes the dative; der Bus is masculine, so the dative article is dem: mit dem Bus.',
+      explanation:
+        'mit takes the dative; der Bus is masculine, so the dative article is dem: mit dem Bus.',
     },
     {
       id: 'ch33-ex-07',
@@ -376,7 +439,8 @@ export const chapter033: ChapterDefinition = {
         { id: 'd', text: 'die' },
       ],
       correctOptionId: 'a',
-      explanation: 'von takes the dative; die Arbeit is feminine, so the dative article is der: von der Arbeit.',
+      explanation:
+        'von takes the dative; die Arbeit is feminine, so the dative article is der: von der Arbeit.',
     },
     {
       id: 'ch33-ex-08',
@@ -394,7 +458,8 @@ export const chapter033: ChapterDefinition = {
         { id: 'd', text: 'die' },
       ],
       correctOptionId: 'a',
-      explanation: 'bei takes the dative; in the plural the dative article is den: bei den Eltern.',
+      explanation:
+        'bei takes the dative; in the plural the dative article is den: bei den Eltern.',
     },
     {
       id: 'ch33-ex-09',
@@ -448,7 +513,8 @@ export const chapter033: ChapterDefinition = {
         { id: 'd', text: 'nach' },
       ],
       correctOptionId: 'a',
-      explanation: 'von expresses origin or possession ("from"): Das Geschenk ist von meiner Oma.',
+      explanation:
+        'von expresses origin or possession ("from"): Das Geschenk ist von meiner Oma.',
     },
     {
       id: 'ch33-ex-12',
@@ -466,7 +532,8 @@ export const chapter033: ChapterDefinition = {
         { id: 'd', text: 'Zu' },
       ],
       correctOptionId: 'a',
-      explanation: 'nach can mean "after" with time expressions: Nach dem Essen gehen wir spazieren.',
+      explanation:
+        'nach can mean "after" with time expressions: Nach dem Essen gehen wir spazieren.',
     },
     {
       id: 'ch33-ex-13',
@@ -511,7 +578,8 @@ export const chapter033: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'seit',
       maxLength: 15,
-      explanation: 'seit expresses a duration continuing into the present: seit zwei Jahren.',
+      explanation:
+        'seit expresses a duration continuing into the present: seit zwei Jahren.',
     },
     {
       id: 'ch33-ex-16',
@@ -601,7 +669,8 @@ export const chapter033: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'nach',
       maxLength: 15,
-      explanation: 'nach is used before city and country names with no article: Er fährt nach Frankfurt.',
+      explanation:
+        'nach is used before city and country names with no article: Er fährt nach Frankfurt.',
     },
     {
       id: 'ch33-ex-22',
@@ -616,7 +685,8 @@ export const chapter033: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'zu',
       maxLength: 15,
-      explanation: 'zu is used before a person: Ich gehe zu meiner Freundin, whereas nach is reserved for place names without an article.',
+      explanation:
+        'zu is used before a person: Ich gehe zu meiner Freundin, whereas nach is reserved for place names without an article.',
     },
     {
       id: 'ch33-ex-23',
@@ -632,7 +702,8 @@ export const chapter033: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Ich komme aus ...',
       maxLength: 60,
-      explanation: 'aus takes the dative; die Türkei is feminine, so the dative article is der: Ich komme aus der Türkei.',
+      explanation:
+        'aus takes the dative; die Türkei is feminine, so the dative article is der: Ich komme aus der Türkei.',
     },
     {
       id: 'ch33-ex-24',
@@ -648,7 +719,8 @@ export const chapter033: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Wir fahren mit ...',
       maxLength: 60,
-      explanation: 'mit takes the dative; der Bus is masculine, so the dative article is dem: Wir fahren mit dem Bus.',
+      explanation:
+        'mit takes the dative; der Bus is masculine, so the dative article is dem: Wir fahren mit dem Bus.',
     },
     {
       id: 'ch33-ex-25',
@@ -662,7 +734,8 @@ export const chapter033: ChapterDefinition = {
       templateParts: ['Sie kommt aus ', ' Türkei.'],
       slots: [{ id: 'ch33-ex-25-s1', correctWord: 'der' }],
       wordBank: ['der', 'dem', 'die', 'den'],
-      explanation: 'aus takes the dative; die Türkei is feminine, so the dative article is der: aus der Türkei.',
+      explanation:
+        'aus takes the dative; die Türkei is feminine, so the dative article is der: aus der Türkei.',
     },
     {
       id: 'ch33-ex-26',
@@ -672,7 +745,8 @@ export const chapter033: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['preposition-meaning', 'bei'],
       instruction: 'Choose the preposition that matches the meaning.',
-      prompt: "Which preposition means being at someone's home or workplace, or being near a place?",
+      prompt:
+        "Which preposition means being at someone's home or workplace, or being near a place?",
       options: [
         { id: 'a', text: 'bei' },
         { id: 'b', text: 'mit' },
@@ -680,7 +754,8 @@ export const chapter033: ChapterDefinition = {
         { id: 'd', text: 'nach' },
       ],
       correctOptionId: 'a',
-      explanation: "bei expresses being at someone's home or workplace, or being near a place, e.g. bei meiner Tante.",
+      explanation:
+        "bei expresses being at someone's home or workplace, or being near a place, e.g. bei meiner Tante.",
     },
     {
       id: 'ch33-ex-27',
@@ -712,7 +787,8 @@ export const chapter033: ChapterDefinition = {
         { id: 'ch33-ex-28-p3', left: 'bei + dem', right: 'beim' },
         { id: 'ch33-ex-28-p4', left: 'von + dem', right: 'vom' },
       ],
-      explanation: 'zu + dem → zum, zu + der → zur, bei + dem → beim, von + dem → vom are the four everyday contractions.',
+      explanation:
+        'zu + dem → zum, zu + der → zur, bei + dem → beim, von + dem → vom are the four everyday contractions.',
     },
     {
       id: 'ch33-ex-29',
@@ -740,7 +816,8 @@ export const chapter033: ChapterDefinition = {
       tokens: ['Ich', 'komme', 'aus', 'die', 'Stadt.'],
       errorTokenIndex: 3,
       correction: 'der',
-      explanation: 'aus always takes the dative; die Stadt (feminine) becomes der Stadt, not the nominative/accusative die.',
+      explanation:
+        'aus always takes the dative; die Stadt (feminine) becomes der Stadt, not the nominative/accusative die.',
     },
     {
       id: 'ch33-ex-31',
@@ -787,7 +864,8 @@ export const chapter033: ChapterDefinition = {
       templateParts: ['Er wohnt seit ', ' Monat hier.'],
       slots: [{ id: 'ch33-ex-33-s1', correctWord: 'einem' }],
       wordBank: ['einem', 'einer', 'eines', 'ein'],
-      explanation: 'seit takes the dative; der Monat is masculine, so the indefinite article becomes einem: seit einem Monat.',
+      explanation:
+        'seit takes the dative; der Monat is masculine, so the indefinite article becomes einem: seit einem Monat.',
     },
     {
       id: 'ch33-ex-34',
@@ -806,7 +884,8 @@ export const chapter033: ChapterDefinition = {
         { id: 'ch33-ex-34-p5', left: 'von', right: 'von meinem Bruder' },
         { id: 'ch33-ex-34-p6', left: 'zu', right: 'zu meinem Freund' },
       ],
-      explanation: 'Each of the seven dative prepositions has a typical everyday phrase associated with its meaning.',
+      explanation:
+        'Each of the seven dative prepositions has a typical everyday phrase associated with its meaning.',
     },
     {
       id: 'ch33-ex-35',
@@ -824,7 +903,8 @@ export const chapter033: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'a',
-      explanation: 'von takes the dative; die Schule is feminine, so the dative article is der: von der Schule.',
+      explanation:
+        'von takes the dative; die Schule is feminine, so the dative article is der: von der Schule.',
     },
     {
       id: 'ch33-ex-36',
@@ -853,7 +933,8 @@ export const chapter033: ChapterDefinition = {
       templateParts: ['Das Geschenk ist von ', ' Eltern.'],
       slots: [{ id: 'ch33-ex-37-s1', correctWord: 'meinen' }],
       wordBank: ['meinen', 'meiner', 'meinem', 'meine'],
-      explanation: 'von takes the dative; in the plural the possessive article is meinen: von meinen Eltern.',
+      explanation:
+        'von takes the dative; in the plural the possessive article is meinen: von meinen Eltern.',
     },
     {
       id: 'ch33-ex-38',
@@ -867,7 +948,8 @@ export const chapter033: ChapterDefinition = {
       tokens: ['Wir', 'fahren', 'mit', 'den', 'Zug.'],
       errorTokenIndex: 3,
       correction: 'dem',
-      explanation: 'mit always takes the dative; der Zug (masculine) becomes dem Zug, not the accusative den Zug.',
+      explanation:
+        'mit always takes the dative; der Zug (masculine) becomes dem Zug, not the accusative den Zug.',
     },
     {
       id: 'ch33-ex-39',
@@ -877,7 +959,8 @@ export const chapter033: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['preposition-choice', 'nach'],
       instruction: 'Choose the preposition that matches the meaning.',
-      prompt: 'Which preposition is used with no article before city and country names to express destination?',
+      prompt:
+        'Which preposition is used with no article before city and country names to express destination?',
       options: [
         { id: 'a', text: 'nach' },
         { id: 'b', text: 'zu' },
@@ -885,7 +968,8 @@ export const chapter033: ChapterDefinition = {
         { id: 'd', text: 'aus' },
       ],
       correctOptionId: 'a',
-      explanation: 'nach is used before city and country names with no article: nach Berlin, nach Japan.',
+      explanation:
+        'nach is used before city and country names with no article: nach Berlin, nach Japan.',
     },
     {
       id: 'ch33-ex-40',
@@ -900,7 +984,8 @@ export const chapter033: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'nach',
       maxLength: 15,
-      explanation: 'nach is used before country names with no article: Er fliegt nach Spanien.',
+      explanation:
+        'nach is used before country names with no article: Er fliegt nach Spanien.',
     },
     {
       id: 'ch33-ex-41',
@@ -914,7 +999,8 @@ export const chapter033: ChapterDefinition = {
       templateParts: ['Nach ', ' Schule gehen wir ins Café.'],
       slots: [{ id: 'ch33-ex-41-s1', correctWord: 'der' }],
       wordBank: ['der', 'dem', 'die', 'den'],
-      explanation: 'Here nach means "after" in time and takes the usual dative article: die Schule becomes der Schule.',
+      explanation:
+        'Here nach means "after" in time and takes the usual dative article: die Schule becomes der Schule.',
     },
     {
       id: 'ch33-ex-42',
@@ -931,7 +1017,8 @@ export const chapter033: ChapterDefinition = {
         { id: 'ch33-ex-42-p3', left: 'beim', right: 'Er ist beim Friseur.' },
         { id: 'ch33-ex-42-p4', left: 'vom', right: 'Das Geschenk ist vom Opa.' },
       ],
-      explanation: 'zum, zur, beim, and vom are used by default in everyday German sentences like these.',
+      explanation:
+        'zum, zur, beim, and vom are used by default in everyday German sentences like these.',
     },
     {
       id: 'ch33-ex-43',
@@ -949,7 +1036,8 @@ export const chapter033: ChapterDefinition = {
         { id: 'd', text: 'die' },
       ],
       correctOptionId: 'a',
-      explanation: 'von takes the dative; in the plural the dative article is den: von den Kindern.',
+      explanation:
+        'von takes the dative; in the plural the dative article is den: von den Kindern.',
     },
     {
       id: 'ch33-ex-44',
@@ -978,7 +1066,8 @@ export const chapter033: ChapterDefinition = {
       templateParts: ['Ich gehe heute zu ', ' Oma.'],
       slots: [{ id: 'ch33-ex-45-s1', correctWord: 'meiner' }],
       wordBank: ['meiner', 'meinem', 'meinen', 'meine'],
-      explanation: 'zu takes the dative; die Oma is feminine, so the possessive article is meiner: zu meiner Oma.',
+      explanation:
+        'zu takes the dative; die Oma is feminine, so the possessive article is meiner: zu meiner Oma.',
     },
     {
       id: 'ch33-ex-46',
@@ -992,7 +1081,8 @@ export const chapter033: ChapterDefinition = {
       tokens: ['Er', 'geht', 'zu', 'die', 'Party.'],
       errorTokenIndex: 3,
       correction: 'der',
-      explanation: 'zu always takes the dative; die Party (feminine) becomes der Party, usually contracted to zur Party.',
+      explanation:
+        'zu always takes the dative; die Party (feminine) becomes der Party, usually contracted to zur Party.',
     },
     {
       id: 'ch33-ex-47',
@@ -1025,7 +1115,8 @@ export const chapter033: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'seit',
       maxLength: 15,
-      explanation: 'seit expresses a duration continuing into the present: Ich lerne Deutsch seit einem Jahr.',
+      explanation:
+        'seit expresses a duration continuing into the present: Ich lerne Deutsch seit einem Jahr.',
     },
     {
       id: 'ch33-ex-49',
@@ -1058,7 +1149,8 @@ export const chapter033: ChapterDefinition = {
         { id: 'ch33-ex-50-p5', left: 'Seit wann lernst du Deutsch?', right: 'seit' },
         { id: 'ch33-ex-50-p6', left: 'Bei wem wohnst du?', right: 'bei' },
       ],
-      explanation: 'Recognising which question a preposition answers helps you choose the right one in free production.',
+      explanation:
+        'Recognising which question a preposition answers helps you choose the right one in free production.',
     },
     {
       id: 'ch33-ex-51',
@@ -1087,7 +1179,8 @@ export const chapter033: ChapterDefinition = {
       templateParts: ['Das Päckchen ist von ', ' Freundin.'],
       slots: [{ id: 'ch33-ex-52-s1', correctWord: 'meiner' }],
       wordBank: ['meiner', 'meinem', 'meinen', 'meine'],
-      explanation: 'von takes the dative; die Freundin is feminine, so the possessive article is meiner: von meiner Freundin.',
+      explanation:
+        'von takes the dative; die Freundin is feminine, so the possessive article is meiner: von meiner Freundin.',
     },
     {
       id: 'ch33-ex-53',
@@ -1101,7 +1194,8 @@ export const chapter033: ChapterDefinition = {
       tokens: ['Ich', 'wohne', 'seit', 'ein', 'Jahr', 'in', 'Hamburg.'],
       errorTokenIndex: 3,
       correction: 'einem',
-      explanation: 'seit always takes the dative; das Jahr (neuter) needs the indefinite article einem, not the nominative/accusative ein.',
+      explanation:
+        'seit always takes the dative; das Jahr (neuter) needs the indefinite article einem, not the nominative/accusative ein.',
     },
   ],
 };

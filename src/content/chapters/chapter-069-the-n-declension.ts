@@ -79,7 +79,7 @@ export const chapter069: ChapterDefinition = {
         id: 'ch69-rule-06',
         heading: 'What stays the same: gender and the nominative singular',
         paragraphs: [
-          'Every weak noun in this chapter is masculine — the n-declension applies only to masculine nouns; it never affects feminine or neuter nouns. The nominative singular is always the noun\'s plain dictionary form and is never marked: der Junge, der Student, der Herr, der Nachbar.',
+          "Every weak noun in this chapter is masculine — the n-declension applies only to masculine nouns; it never affects feminine or neuter nouns. The nominative singular is always the noun's plain dictionary form and is never marked: der Junge, der Student, der Herr, der Nachbar.",
           'This means the very first form you learn for a weak noun — its citation form in a dictionary — is also its only unmarked form. Everywhere else it appears in a sentence, expect the -n or -en ending.',
         ],
       },
@@ -136,7 +136,12 @@ export const chapter069: ChapterDefinition = {
       {
         id: 'ch69-table-05',
         title: 'The closed list of weak nouns in this chapter',
-        columns: ['Noun (nominative singular)', 'Group', 'Oblique singular (acc./dat./gen.)', 'Plural'],
+        columns: [
+          'Noun (nominative singular)',
+          'Group',
+          'Oblique singular (acc./dat./gen.)',
+          'Plural',
+        ],
         rows: [
           ['Junge', '-e nouns → -n only', 'Jungen', 'Jungen'],
           ['Kunde', '-e nouns → -n only', 'Kunden', 'Kunden'],
@@ -157,8 +162,16 @@ export const chapter069: ChapterDefinition = {
         columns: ['Pattern', 'Members from this chapter', 'Ending added'],
         rows: [
           ['-e (people, roles, professions)', 'Junge, Kollege, Kunde, Name', '-n only'],
-          ['Consonant-final, often borrowed (-ent, -ist, ...)', 'Patient, Student, Tourist, Mensch', '-en'],
-          ['Irregular / no suffix pattern', 'Herr, Nachbar', 'Herr: -n (sg.) / -en (pl.); Nachbar: -n throughout'],
+          [
+            'Consonant-final, often borrowed (-ent, -ist, ...)',
+            'Patient, Student, Tourist, Mensch',
+            '-en',
+          ],
+          [
+            'Irregular / no suffix pattern',
+            'Herr, Nachbar',
+            'Herr: -n (sg.) / -en (pl.); Nachbar: -n throughout',
+          ],
         ],
         note: 'These suffixes are a helpful first guess, but the n-declension remains a closed list that must be learned noun by noun.',
       },
@@ -168,37 +181,43 @@ export const chapter069: ChapterDefinition = {
         german: 'Der Junge spielt im Garten.',
         english: 'The boy is playing in the garden.',
         highlight: ['Der Junge'],
-        explanation: 'Junge is the subject here (nominative singular), so it keeps its bare, unmarked form.',
+        explanation:
+          'Junge is the subject here (nominative singular), so it keeps its bare, unmarked form.',
       },
       {
         german: 'Ich sehe den Jungen im Park.',
         english: 'I see the boy in the park.',
         highlight: ['den Jungen'],
-        explanation: 'Jungen is the accusative singular object of sehen; the weak ending -n appears as soon as the noun leaves the nominative.',
+        explanation:
+          'Jungen is the accusative singular object of sehen; the weak ending -n appears as soon as the noun leaves the nominative.',
       },
       {
         german: 'Er hilft dem Jungen mit den Hausaufgaben.',
         english: 'He is helping the boy with his homework.',
         highlight: ['dem Jungen'],
-        explanation: 'helfen takes the dative; Jungen again takes the -n ending, identical in shape to the accusative form.',
+        explanation:
+          'helfen takes the dative; Jungen again takes the -n ending, identical in shape to the accusative form.',
       },
       {
         german: 'Das Fahrrad des Jungen ist neu.',
         english: "The boy's bicycle is new.",
         highlight: ['des Jungen'],
-        explanation: 'The genitive singular also uses Jungen, the same weak ending as the accusative and dative.',
+        explanation:
+          'The genitive singular also uses Jungen, the same weak ending as the accusative and dative.',
       },
       {
         german: 'Die Jungen spielen Fußball im Garten.',
         english: 'The boys are playing soccer in the garden.',
         highlight: ['Die Jungen'],
-        explanation: 'The plural Jungen looks identical to the oblique singular forms; only the article die and the plural verb spielen show that this is plural.',
+        explanation:
+          'The plural Jungen looks identical to the oblique singular forms; only the article die and the plural verb spielen show that this is plural.',
       },
       {
         german: 'Wir kennen den Studenten aus Berlin.',
         english: 'We know the student from Berlin.',
         highlight: ['den Studenten'],
-        explanation: 'Student belongs to the -en group: den Studenten is the accusative singular.',
+        explanation:
+          'Student belongs to the -en group: den Studenten is the accusative singular.',
       },
       {
         german: 'Die Professorin gibt dem Studenten ein Buch.',
@@ -210,19 +229,22 @@ export const chapter069: ChapterDefinition = {
         german: 'Das Zimmer des Studenten ist sehr klein.',
         english: "The student's room is very small.",
         highlight: ['des Studenten'],
-        explanation: 'des Studenten is the genitive singular, using the same -en ending as the accusative and dative.',
+        explanation:
+          'des Studenten is the genitive singular, using the same -en ending as the accusative and dative.',
       },
       {
         german: 'Viele Studenten wohnen in dieser Stadt.',
         english: 'Many students live in this city.',
         highlight: ['Studenten'],
-        explanation: 'Studenten here is plural, identical in shape to the oblique singular forms — viele and the plural verb wohnen signal the plural.',
+        explanation:
+          'Studenten here is plural, identical in shape to the oblique singular forms — viele and the plural verb wohnen signal the plural.',
       },
       {
         german: 'Der Verkäufer kennt den Kunden gut.',
         english: 'The salesman knows the customer well.',
         highlight: ['den Kunden'],
-        explanation: 'Kunde ends in -e, so it takes just -n: den Kunden is the accusative singular.',
+        explanation:
+          'Kunde ends in -e, so it takes just -n: den Kunden is the accusative singular.',
       },
       {
         german: 'Ich spreche oft mit meinem Kollegen.',
@@ -234,13 +256,15 @@ export const chapter069: ChapterDefinition = {
         german: 'Wir grüßen unseren Nachbarn jeden Morgen.',
         english: 'We greet our neighbor every morning.',
         highlight: ['unseren Nachbarn'],
-        explanation: 'Nachbar does not end in -e, but it still follows the -n-only pattern: unseren Nachbarn is accusative singular.',
+        explanation:
+          'Nachbar does not end in -e, but it still follows the -n-only pattern: unseren Nachbarn is accusative singular.',
       },
       {
         german: 'Der Arzt untersucht den Patienten.',
         english: 'The doctor examines the patient.',
         highlight: ['den Patienten'],
-        explanation: 'Patient belongs to the -en group: den Patienten is the accusative singular.',
+        explanation:
+          'Patient belongs to the -en group: den Patienten is the accusative singular.',
       },
       {
         german: 'Der Roboter hilft einem Menschen.',
@@ -252,45 +276,53 @@ export const chapter069: ChapterDefinition = {
         german: 'Ich habe Herrn Schmidt gestern getroffen.',
         english: 'I met Mr. Schmidt yesterday.',
         highlight: ['Herrn Schmidt'],
-        explanation: 'Before a name, Herr still declines: the accusative singular is Herrn, with just -n.',
+        explanation:
+          'Before a name, Herr still declines: the accusative singular is Herrn, with just -n.',
       },
       {
         german: 'Die Herren warten schon seit einer Stunde.',
         english: 'The gentlemen have already been waiting for an hour.',
         highlight: ['Die Herren'],
-        explanation: 'The plural of Herr is Herren, with -en — different from the oblique singular Herrn.',
+        explanation:
+          'The plural of Herr is Herren, with -en — different from the oblique singular Herrn.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich sehe den Junge.',
         correct: 'Ich sehe den Jungen.',
-        explanation: 'Once Junge leaves the nominative (here, the accusative object of sehen), the weak ending -n is required; Junge alone is only correct as the subject.',
+        explanation:
+          'Once Junge leaves the nominative (here, the accusative object of sehen), the weak ending -n is required; Junge alone is only correct as the subject.',
       },
       {
         incorrect: 'Wir helfen dem Student.',
         correct: 'Wir helfen dem Studenten.',
-        explanation: 'Student is a weak noun: the dative singular needs the -en ending, not the bare nominative form.',
+        explanation:
+          'Student is a weak noun: the dative singular needs the -en ending, not the bare nominative form.',
       },
       {
         incorrect: 'Ich habe Herren Schmidt getroffen.',
         correct: 'Ich habe Herrn Schmidt getroffen.',
-        explanation: 'Before a name in an oblique singular position (here, accusative), Herr takes only -n (Herrn); Herren is reserved for the plural.',
+        explanation:
+          'Before a name in an oblique singular position (here, accusative), Herr takes only -n (Herrn); Herren is reserved for the plural.',
       },
       {
         incorrect: 'Die Herrn warten im Flur.',
         correct: 'Die Herren warten im Flur.',
-        explanation: 'The plural of Herr is Herren with -en, not Herrn; Herrn is only ever singular.',
+        explanation:
+          'The plural of Herr is Herren with -en, not Herrn; Herrn is only ever singular.',
       },
       {
         incorrect: 'Das ist der Hut meines Nachbar.',
         correct: 'Das ist der Hut meines Nachbarn.',
-        explanation: 'Nachbar is a weak noun even though it does not end in -e; the genitive singular still needs -n, just like the accusative and dative.',
+        explanation:
+          'Nachbar is a weak noun even though it does not end in -e; the genitive singular still needs -n, just like the accusative and dative.',
       },
       {
         incorrect: 'Ich sehe zwei Student im Café.',
         correct: 'Ich sehe zwei Studenten im Café.',
-        explanation: 'Weak nouns take their -n/-en ending in the plural too, not only in the singular oblique cases.',
+        explanation:
+          'Weak nouns take their -n/-en ending in the plural too, not only in the singular oblique cases.',
       },
     ],
     remember: [
@@ -325,7 +357,8 @@ export const chapter069: ChapterDefinition = {
         { id: 'd', text: 'Dem Jungen spielt im Garten.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Junge is only unmarked in the nominative singular; the subject of a sentence takes this bare form, der Junge.',
+      explanation:
+        'Junge is only unmarked in the nominative singular; the subject of a sentence takes this bare form, der Junge.',
     },
     {
       id: 'ch69-ex-02',
@@ -343,7 +376,8 @@ export const chapter069: ChapterDefinition = {
         { id: 'd', text: 'des' },
       ],
       correctOptionId: 'a',
-      explanation: 'sehen takes a direct object in the accusative; the masculine accusative singular article is den, paired with the weak ending Jungen.',
+      explanation:
+        'sehen takes a direct object in the accusative; the masculine accusative singular article is den, paired with the weak ending Jungen.',
     },
     {
       id: 'ch69-ex-03',
@@ -361,7 +395,8 @@ export const chapter069: ChapterDefinition = {
         { id: 'd', text: 'des' },
       ],
       correctOptionId: 'a',
-      explanation: 'helfen takes the dative; the masculine dative singular article is dem, paired with the weak ending Studenten.',
+      explanation:
+        'helfen takes the dative; the masculine dative singular article is dem, paired with the weak ending Studenten.',
     },
     {
       id: 'ch69-ex-04',
@@ -379,7 +414,8 @@ export const chapter069: ChapterDefinition = {
         { id: 'd', text: 'der' },
       ],
       correctOptionId: 'a',
-      explanation: 'The genitive singular of a masculine noun uses des; Jungen keeps the same weak ending it has in the accusative and dative.',
+      explanation:
+        'The genitive singular of a masculine noun uses des; Jungen keeps the same weak ending it has in the accusative and dative.',
     },
     {
       id: 'ch69-ex-05',
@@ -397,7 +433,8 @@ export const chapter069: ChapterDefinition = {
         { id: 'd', text: 'Des' },
       ],
       correctOptionId: 'a',
-      explanation: 'Die is the nominative plural article; Jungen looks the same as the oblique singular, so the article is what signals the plural here.',
+      explanation:
+        'Die is the nominative plural article; Jungen looks the same as the oblique singular, so the article is what signals the plural here.',
     },
     {
       id: 'ch69-ex-06',
@@ -415,7 +452,8 @@ export const chapter069: ChapterDefinition = {
         { id: 'd', text: 'Kunder' },
       ],
       correctOptionId: 'a',
-      explanation: 'Kunde ends in -e, so it takes just -n outside the nominative singular: den Kunden.',
+      explanation:
+        'Kunde ends in -e, so it takes just -n outside the nominative singular: den Kunden.',
     },
     {
       id: 'ch69-ex-07',
@@ -433,7 +471,8 @@ export const chapter069: ChapterDefinition = {
         { id: 'd', text: 'Kollegs' },
       ],
       correctOptionId: 'a',
-      explanation: 'mit takes the dative; Kollege adds -n outside the nominative singular, giving meinem Kollegen.',
+      explanation:
+        'mit takes the dative; Kollege adds -n outside the nominative singular, giving meinem Kollegen.',
     },
     {
       id: 'ch69-ex-08',
@@ -443,7 +482,8 @@ export const chapter069: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['n-declension', 'nominative', 'concept'],
       instruction: 'Choose the correct description of the n-declension.',
-      prompt: 'For a weak (n-declension) noun, which single form stays completely unmarked?',
+      prompt:
+        'For a weak (n-declension) noun, which single form stays completely unmarked?',
       options: [
         { id: 'a', text: 'the nominative singular' },
         { id: 'b', text: 'the accusative singular' },
@@ -451,7 +491,8 @@ export const chapter069: ChapterDefinition = {
         { id: 'd', text: 'the genitive singular' },
       ],
       correctOptionId: 'a',
-      explanation: 'Only the nominative singular is unmarked; every other case and the whole plural take the weak -n/-en ending.',
+      explanation:
+        'Only the nominative singular is unmarked; every other case and the whole plural take the weak -n/-en ending.',
     },
     {
       id: 'ch69-ex-09',
@@ -469,7 +510,8 @@ export const chapter069: ChapterDefinition = {
         { id: 'd', text: 'Herrs' },
       ],
       correctOptionId: 'a',
-      explanation: 'treffen takes the accusative; the oblique singular of Herr takes only -n, so Herrn Schmidt is correct.',
+      explanation:
+        'treffen takes the accusative; the oblique singular of Herr takes only -n, so Herrn Schmidt is correct.',
     },
     {
       id: 'ch69-ex-10',
@@ -487,7 +529,8 @@ export const chapter069: ChapterDefinition = {
         { id: 'd', text: 'Den Herren' },
       ],
       correctOptionId: 'a',
-      explanation: 'The plural of Herr is Herren with -en; Herrn is reserved for the oblique singular, and the nominative plural article is die.',
+      explanation:
+        'The plural of Herr is Herren with -en; Herrn is reserved for the oblique singular, and the nominative plural article is die.',
     },
     {
       id: 'ch69-ex-11',
@@ -505,7 +548,8 @@ export const chapter069: ChapterDefinition = {
         { id: 'd', text: 'Herrs' },
       ],
       correctOptionId: 'a',
-      explanation: 'The genitive singular of Herr is Herrn, using only -n like the accusative and dative singular.',
+      explanation:
+        'The genitive singular of Herr is Herrn, using only -n like the accusative and dative singular.',
     },
     {
       id: 'ch69-ex-12',
@@ -523,7 +567,8 @@ export const chapter069: ChapterDefinition = {
         { id: 'd', text: 'Nachbaren' },
       ],
       correctOptionId: 'a',
-      explanation: 'Nachbar does not end in -e but still follows the -n-only weak pattern: des Nachbarn.',
+      explanation:
+        'Nachbar does not end in -e but still follows the -n-only weak pattern: des Nachbarn.',
     },
     {
       id: 'ch69-ex-13',
@@ -532,8 +577,10 @@ export const chapter069: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['n-declension', 'suffix-groups'],
-      instruction: 'Choose the suffix that commonly signals a borrowed weak noun for a person.',
-      prompt: 'Which suffix is a common signal of a weak (n-declension) noun among borrowed words for people, such as Patient and Student?',
+      instruction:
+        'Choose the suffix that commonly signals a borrowed weak noun for a person.',
+      prompt:
+        'Which suffix is a common signal of a weak (n-declension) noun among borrowed words for people, such as Patient and Student?',
       options: [
         { id: 'a', text: '-ent' },
         { id: 'b', text: '-er' },
@@ -541,7 +588,8 @@ export const chapter069: ChapterDefinition = {
         { id: 'd', text: '-lein' },
       ],
       correctOptionId: 'a',
-      explanation: '-ent (as in Patient, and more widely Präsident) is one of the borrowed suffixes that often marks a weak noun; -er, -chen, and -lein are not.',
+      explanation:
+        '-ent (as in Patient, and more widely Präsident) is one of the borrowed suffixes that often marks a weak noun; -er, -chen, and -lein are not.',
     },
     {
       id: 'ch69-ex-14',
@@ -550,7 +598,8 @@ export const chapter069: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['n-declension', 'accusative', 'student', 'sentence-correction'],
-      instruction: 'Choose the sentence that correctly says "I see the student" (one single student).',
+      instruction:
+        'Choose the sentence that correctly says "I see the student" (one single student).',
       prompt: 'Which sentence is correct?',
       options: [
         { id: 'a', text: 'Ich sehe den Student.' },
@@ -559,7 +608,8 @@ export const chapter069: ChapterDefinition = {
         { id: 'd', text: 'Ich sehe dem Studenten.' },
       ],
       correctOptionId: 'b',
-      explanation: 'sehen takes the accusative, so the article is den; Student is weak and adds -en outside the nominative singular: den Studenten.',
+      explanation:
+        'sehen takes the accusative, so the article is den; Student is weak and adds -en outside the nominative singular: den Studenten.',
     },
     {
       id: 'ch69-ex-15',
@@ -577,7 +627,8 @@ export const chapter069: ChapterDefinition = {
         { id: 'd', text: 'des Studenten' },
       ],
       correctOptionId: 'c',
-      explanation: 'geben takes a dative indirect object; the correct form is dem Studenten.',
+      explanation:
+        'geben takes a dative indirect object; the correct form is dem Studenten.',
     },
     {
       id: 'ch69-ex-16',
@@ -586,7 +637,8 @@ export const chapter069: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['n-declension', 'plural', 'tourist', 'sentence-correction'],
-      instruction: 'Choose the sentence that correctly says "The tourists are visiting the museum."',
+      instruction:
+        'Choose the sentence that correctly says "The tourists are visiting the museum."',
       prompt: 'Which sentence is correct?',
       options: [
         { id: 'a', text: 'Die Touristen besuchen das Museum.' },
@@ -595,7 +647,8 @@ export const chapter069: ChapterDefinition = {
         { id: 'd', text: 'Der Touristen besuchen das Museum.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The plural of Tourist is Touristen with the plural verb besuchen and the nominative plural article die.',
+      explanation:
+        'The plural of Tourist is Touristen with the plural verb besuchen and the nominative plural article die.',
     },
     {
       id: 'ch69-ex-17',
@@ -604,7 +657,8 @@ export const chapter069: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['n-declension', 'accusative', 'junge'],
-      instruction: 'Write the accusative singular form of Junge (der Junge). Capitalisation is not checked.',
+      instruction:
+        'Write the accusative singular form of Junge (der Junge). Capitalisation is not checked.',
       prompt: 'den ___ (Junge, accusative singular)',
       acceptedAnswers: ['Jungen'],
       answerMode: 'caseInsensitive',
@@ -619,13 +673,15 @@ export const chapter069: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['n-declension', 'dative', 'kollege'],
-      instruction: 'Write the dative singular form of Kollege. Capitalisation is not checked.',
+      instruction:
+        'Write the dative singular form of Kollege. Capitalisation is not checked.',
       prompt: 'mit dem ___ (Kollege, dative singular)',
       acceptedAnswers: ['Kollegen'],
       answerMode: 'caseInsensitive',
       placeholder: 'Kollegen',
       maxLength: 15,
-      explanation: 'Kollege ends in -e, so it takes just -n outside the nominative singular: Kollegen.',
+      explanation:
+        'Kollege ends in -e, so it takes just -n outside the nominative singular: Kollegen.',
     },
     {
       id: 'ch69-ex-19',
@@ -634,13 +690,15 @@ export const chapter069: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['n-declension', 'genitive', 'student'],
-      instruction: 'Write the genitive singular form of Student. Capitalisation is not checked.',
+      instruction:
+        'Write the genitive singular form of Student. Capitalisation is not checked.',
       prompt: 'das Zimmer des ___ (Student, genitive singular)',
       acceptedAnswers: ['Studenten'],
       answerMode: 'caseInsensitive',
       placeholder: 'Studenten',
       maxLength: 15,
-      explanation: 'Student takes -en outside the nominative singular, including the genitive: Studenten.',
+      explanation:
+        'Student takes -en outside the nominative singular, including the genitive: Studenten.',
     },
     {
       id: 'ch69-ex-20',
@@ -664,13 +722,15 @@ export const chapter069: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['n-declension', 'accusative', 'nachbar'],
-      instruction: 'Write the accusative singular form of Nachbar. Capitalisation is not checked.',
+      instruction:
+        'Write the accusative singular form of Nachbar. Capitalisation is not checked.',
       prompt: 'Wir grüßen unseren ___ jeden Morgen. (Nachbar, accusative singular)',
       acceptedAnswers: ['Nachbarn'],
       answerMode: 'caseInsensitive',
       placeholder: 'Nachbarn',
       maxLength: 15,
-      explanation: 'Nachbar follows the -n-only weak pattern even though it does not end in -e: Nachbarn.',
+      explanation:
+        'Nachbar follows the -n-only weak pattern even though it does not end in -e: Nachbarn.',
     },
     {
       id: 'ch69-ex-22',
@@ -679,7 +739,8 @@ export const chapter069: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['n-declension', 'dative', 'mensch'],
-      instruction: 'Write the dative singular form of Mensch. Capitalisation is not checked.',
+      instruction:
+        'Write the dative singular form of Mensch. Capitalisation is not checked.',
       prompt: 'Der Roboter hilft einem ___. (Mensch, dative singular)',
       acceptedAnswers: ['Menschen'],
       answerMode: 'caseInsensitive',
@@ -694,13 +755,15 @@ export const chapter069: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['n-declension', 'genitive', 'kunde'],
-      instruction: 'Write the genitive singular form of Kunde. Capitalisation is not checked.',
+      instruction:
+        'Write the genitive singular form of Kunde. Capitalisation is not checked.',
       prompt: 'Wie lautet der Name des ___? (Kunde, genitive singular)',
       acceptedAnswers: ['Kunden'],
       answerMode: 'caseInsensitive',
       placeholder: 'Kunden',
       maxLength: 15,
-      explanation: 'Kunde ends in -e, so it takes just -n outside the nominative singular: Kunden.',
+      explanation:
+        'Kunde ends in -e, so it takes just -n outside the nominative singular: Kunden.',
     },
     {
       id: 'ch69-ex-24',
@@ -709,7 +772,8 @@ export const chapter069: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['n-declension', 'accusative', 'tourist'],
-      instruction: 'Write the accusative singular form of Tourist. Capitalisation is not checked.',
+      instruction:
+        'Write the accusative singular form of Tourist. Capitalisation is not checked.',
       prompt: 'Der Reiseleiter begrüßt den ___. (Tourist, accusative singular)',
       acceptedAnswers: ['Touristen'],
       answerMode: 'caseInsensitive',
@@ -724,7 +788,8 @@ export const chapter069: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['n-declension', 'herr', 'oblique-singular'],
-      instruction: 'Write the oblique singular form of Herr used before a name (accusative, dative, or genitive singular). Capitalisation is not checked.',
+      instruction:
+        'Write the oblique singular form of Herr used before a name (accusative, dative, or genitive singular). Capitalisation is not checked.',
       prompt: 'Ich sehe ___ Meier. (Herr, accusative singular before a name)',
       acceptedAnswers: ['Herrn'],
       answerMode: 'caseInsensitive',
@@ -739,13 +804,15 @@ export const chapter069: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['n-declension', 'herr', 'plural'],
-      instruction: 'Write the plural (nominative) form of Herr — the noun only, without the article. Capitalisation is not checked.',
+      instruction:
+        'Write the plural (nominative) form of Herr — the noun only, without the article. Capitalisation is not checked.',
       prompt: '___ warten im Flur. (Herr, nominative plural)',
       acceptedAnswers: ['Herren'],
       answerMode: 'caseInsensitive',
       placeholder: 'Herren',
       maxLength: 15,
-      explanation: 'The plural of Herr is Herren with -en, unlike the oblique singular Herrn.',
+      explanation:
+        'The plural of Herr is Herren with -en, unlike the oblique singular Herrn.',
     },
     {
       id: 'ch69-ex-27',
@@ -754,13 +821,15 @@ export const chapter069: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['n-declension', 'nominative', 'name'],
-      instruction: 'Write the nominative singular form of Name — the one form that stays unmarked. Capitalisation is not checked.',
+      instruction:
+        'Write the nominative singular form of Name — the one form that stays unmarked. Capitalisation is not checked.',
       prompt: 'Wie lautet der ___ des Kollegen? (Name, nominative singular)',
       acceptedAnswers: ['Name'],
       answerMode: 'caseInsensitive',
       placeholder: 'Name',
       maxLength: 15,
-      explanation: 'As the subject of the implied "ist", Name is nominative singular and stays in its bare, unmarked form.',
+      explanation:
+        'As the subject of the implied "ist", Name is nominative singular and stays in its bare, unmarked form.',
     },
     {
       id: 'ch69-ex-28',
@@ -769,13 +838,15 @@ export const chapter069: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['n-declension', 'genitive', 'student', 'article-noun-combination'],
-      instruction: 'Write the full genitive singular phrase (article + noun) for "the student\'s room." Capitalisation is not checked.',
+      instruction:
+        'Write the full genitive singular phrase (article + noun) for "the student\'s room." Capitalisation is not checked.',
       prompt: 'das Zimmer ___ (article + Student, genitive singular)',
       acceptedAnswers: ['des Studenten'],
       answerMode: 'caseInsensitive',
       placeholder: 'des Studenten',
       maxLength: 25,
-      explanation: 'The genitive singular article des combines with the weak ending Studenten: des Studenten.',
+      explanation:
+        'The genitive singular article des combines with the weak ending Studenten: des Studenten.',
     },
     {
       id: 'ch69-ex-29',
@@ -784,13 +855,15 @@ export const chapter069: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['n-declension', 'dative', 'junge', 'article-noun-combination'],
-      instruction: 'Write the full dative singular phrase (article + noun) meaning "to the boy." Capitalisation is not checked.',
+      instruction:
+        'Write the full dative singular phrase (article + noun) meaning "to the boy." Capitalisation is not checked.',
       prompt: 'Er gibt ___ ein Geschenk. (article + Junge, dative singular)',
       acceptedAnswers: ['dem Jungen'],
       answerMode: 'caseInsensitive',
       placeholder: 'dem Jungen',
       maxLength: 25,
-      explanation: 'The dative singular article dem combines with the weak ending Jungen: dem Jungen.',
+      explanation:
+        'The dative singular article dem combines with the weak ending Jungen: dem Jungen.',
     },
     {
       id: 'ch69-ex-30',
@@ -799,13 +872,15 @@ export const chapter069: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['n-declension', 'sentence-correction', 'accusative', 'junge'],
-      instruction: 'Rewrite the sentence with the correct weak-noun ending. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence with the correct weak-noun ending. Capitalisation and punctuation are checked.',
       prompt: 'Ich sehe den Junge. → korrigiert',
       acceptedAnswers: ['Ich sehe den Jungen.', 'Ich sehe den Jungen'],
       answerMode: 'normalized',
       placeholder: 'Ich sehe den Jungen.',
       maxLength: 40,
-      explanation: 'Junge is the accusative object of sehen, so it needs the weak ending -n: den Jungen.',
+      explanation:
+        'Junge is the accusative object of sehen, so it needs the weak ending -n: den Jungen.',
     },
     {
       id: 'ch69-ex-31',
@@ -814,13 +889,15 @@ export const chapter069: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['n-declension', 'sentence-correction', 'dative', 'student'],
-      instruction: 'Rewrite the sentence with the correct weak-noun ending. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence with the correct weak-noun ending. Capitalisation and punctuation are checked.',
       prompt: 'Wir helfen dem Student. → korrigiert',
       acceptedAnswers: ['Wir helfen dem Studenten.', 'Wir helfen dem Studenten'],
       answerMode: 'normalized',
       placeholder: 'Wir helfen dem Studenten.',
       maxLength: 40,
-      explanation: 'Student is a weak noun and needs the -en ending in the dative singular: dem Studenten.',
+      explanation:
+        'Student is a weak noun and needs the -en ending in the dative singular: dem Studenten.',
     },
     {
       id: 'ch69-ex-32',
@@ -829,7 +906,8 @@ export const chapter069: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['n-declension', 'sentence-correction', 'herr', 'plural'],
-      instruction: 'Rewrite the sentence with the correct form of Herr. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence with the correct form of Herr. Capitalisation and punctuation are checked.',
       prompt: 'Die Herrn warten im Flur. → korrigiert',
       acceptedAnswers: ['Die Herren warten im Flur.', 'Die Herren warten im Flur'],
       answerMode: 'normalized',
@@ -844,13 +922,15 @@ export const chapter069: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['n-declension', 'accusative', 'praesident'],
-      instruction: 'Write the accusative singular form of Präsident. Capitalisation is not checked.',
+      instruction:
+        'Write the accusative singular form of Präsident. Capitalisation is not checked.',
       prompt: 'Wir wählen den ___. (Präsident, accusative singular)',
       acceptedAnswers: ['Präsidenten'],
       answerMode: 'caseInsensitive',
       placeholder: 'Präsidenten',
       maxLength: 15,
-      explanation: 'Präsident is a weak noun and takes -en outside the nominative singular: den Präsidenten.',
+      explanation:
+        'Präsident is a weak noun and takes -en outside the nominative singular: den Präsidenten.',
     },
     {
       id: 'ch69-ex-34',
@@ -859,13 +939,15 @@ export const chapter069: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['n-declension', 'nominative-plural', 'loewe'],
-      instruction: 'Write the nominative plural form of Löwe. Capitalisation is not checked.',
+      instruction:
+        'Write the nominative plural form of Löwe. Capitalisation is not checked.',
       prompt: '___ leben in Afrika. (Löwe, nominative plural)',
       acceptedAnswers: ['Löwen'],
       answerMode: 'caseInsensitive',
       placeholder: 'Löwen',
       maxLength: 15,
-      explanation: 'Löwe ends in -e, so like Junge it takes just -n outside the nominative singular; the plural is Löwen.',
+      explanation:
+        'Löwe ends in -e, so like Junge it takes just -n outside the nominative singular; the plural is Löwen.',
     },
     {
       id: 'ch69-ex-35',
@@ -874,13 +956,15 @@ export const chapter069: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['n-declension', 'dative', 'affe'],
-      instruction: 'Write the dative singular form of Affe. Capitalisation is not checked.',
+      instruction:
+        'Write the dative singular form of Affe. Capitalisation is not checked.',
       prompt: 'Der Wärter gibt dem ___ eine Banane. (Affe, dative singular)',
       acceptedAnswers: ['Affen'],
       answerMode: 'caseInsensitive',
       placeholder: 'Affen',
       maxLength: 15,
-      explanation: 'Affe ends in -e, so it takes just -n outside the nominative singular: dem Affen.',
+      explanation:
+        'Affe ends in -e, so it takes just -n outside the nominative singular: dem Affen.',
     },
     {
       id: 'ch69-ex-36',
@@ -906,7 +990,8 @@ export const chapter069: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['n-declension', 'nominative-plural', 'kollege'],
-      instruction: 'Write the nominative plural form of Kollege. Capitalisation is not checked.',
+      instruction:
+        'Write the nominative plural form of Kollege. Capitalisation is not checked.',
       prompt: '___ arbeiten im selben Büro. (Kollege, nominative plural)',
       acceptedAnswers: ['Kollegen'],
       answerMode: 'caseInsensitive',
@@ -921,13 +1006,15 @@ export const chapter069: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['n-declension', 'dative-plural', 'kunde'],
-      instruction: 'Write the dative plural form of Kunde. Capitalisation is not checked.',
+      instruction:
+        'Write the dative plural form of Kunde. Capitalisation is not checked.',
       prompt: 'Der Verkäufer dankt den ___. (Kunde, dative plural)',
       acceptedAnswers: ['Kunden'],
       answerMode: 'caseInsensitive',
       placeholder: 'Kunden',
       maxLength: 15,
-      explanation: 'Kunde takes -n in the entire plural, including the dative: den Kunden.',
+      explanation:
+        'Kunde takes -n in the entire plural, including the dative: den Kunden.',
     },
     {
       id: 'ch69-ex-39',
@@ -936,7 +1023,8 @@ export const chapter069: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['n-declension', 'nominative-plural', 'nachbar'],
-      instruction: 'Write the nominative plural form of Nachbar. Capitalisation is not checked.',
+      instruction:
+        'Write the nominative plural form of Nachbar. Capitalisation is not checked.',
       prompt: '___ sind sehr freundlich. (Nachbar, nominative plural)',
       acceptedAnswers: ['Nachbarn'],
       answerMode: 'caseInsensitive',
@@ -951,13 +1039,15 @@ export const chapter069: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['n-declension', 'genitive-plural', 'herr'],
-      instruction: 'Write the genitive plural form of Herr. Capitalisation is not checked.',
+      instruction:
+        'Write the genitive plural form of Herr. Capitalisation is not checked.',
       prompt: 'Die Meinung der ___ ist wichtig. (Herr, genitive plural)',
       acceptedAnswers: ['Herren'],
       answerMode: 'caseInsensitive',
       placeholder: 'Herren',
       maxLength: 15,
-      explanation: 'Every plural form of Herr uses -en, including the genitive plural: der Herren.',
+      explanation:
+        'Every plural form of Herr uses -en, including the genitive plural: der Herren.',
     },
     {
       id: 'ch69-ex-41',
@@ -966,13 +1056,15 @@ export const chapter069: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['n-declension', 'genitive', 'praesident'],
-      instruction: 'Write the genitive singular form of Präsident. Capitalisation is not checked.',
+      instruction:
+        'Write the genitive singular form of Präsident. Capitalisation is not checked.',
       prompt: 'Die Rede des ___ war lang. (Präsident, genitive singular)',
       acceptedAnswers: ['Präsidenten'],
       answerMode: 'caseInsensitive',
       placeholder: 'Präsidenten',
       maxLength: 15,
-      explanation: 'Präsident takes -en outside the nominative singular, including the genitive: des Präsidenten.',
+      explanation:
+        'Präsident takes -en outside the nominative singular, including the genitive: des Präsidenten.',
     },
     {
       id: 'ch69-ex-42',
@@ -981,13 +1073,15 @@ export const chapter069: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['n-declension', 'accusative-plural', 'mensch'],
-      instruction: 'Write the accusative plural form of Mensch. Capitalisation is not checked.',
+      instruction:
+        'Write the accusative plural form of Mensch. Capitalisation is not checked.',
       prompt: 'Der Test betrifft viele ___. (Mensch, accusative plural)',
       acceptedAnswers: ['Menschen'],
       answerMode: 'caseInsensitive',
       placeholder: 'Menschen',
       maxLength: 15,
-      explanation: 'Mensch takes -en throughout the plural, including the accusative: viele Menschen.',
+      explanation:
+        'Mensch takes -en throughout the plural, including the accusative: viele Menschen.',
     },
     {
       id: 'ch69-ex-43',
@@ -1001,7 +1095,8 @@ export const chapter069: ChapterDefinition = {
       templateParts: ['Ich sehe ', ' im Park.'],
       slots: [{ id: 'slot1', correctWord: 'Jungen' }],
       wordBank: ['Jungen', 'Junge', 'Jung'],
-      explanation: 'Jungen is the accusative singular object of sehen; Junge is only correct in the nominative.',
+      explanation:
+        'Jungen is the accusative singular object of sehen; Junge is only correct in the nominative.',
     },
     {
       id: 'ch69-ex-44',
@@ -1015,7 +1110,8 @@ export const chapter069: ChapterDefinition = {
       templateParts: ['Wir helfen ', ' jeden Tag.'],
       slots: [{ id: 'slot1', correctWord: 'Nachbarn' }],
       wordBank: ['Nachbarn', 'Nachbar', 'Nachbars'],
-      explanation: 'helfen takes the dative; Nachbar follows the -n-only weak pattern: Nachbarn.',
+      explanation:
+        'helfen takes the dative; Nachbar follows the -n-only weak pattern: Nachbarn.',
     },
     {
       id: 'ch69-ex-45',
@@ -1029,7 +1125,8 @@ export const chapter069: ChapterDefinition = {
       templateParts: ['Das ist das Büro des ', '.'],
       slots: [{ id: 'slot1', correctWord: 'Kollegen' }],
       wordBank: ['Kollegen', 'Kollege', 'Kollegs'],
-      explanation: 'The genitive singular of Kollege uses the weak ending -n: des Kollegen.',
+      explanation:
+        'The genitive singular of Kollege uses the weak ending -n: des Kollegen.',
     },
     {
       id: 'ch69-ex-46',
@@ -1043,7 +1140,8 @@ export const chapter069: ChapterDefinition = {
       templateParts: ['Die ', ' spielen Fußball im Garten.'],
       slots: [{ id: 'slot1', correctWord: 'Jungen' }],
       wordBank: ['Jungen', 'Junge', 'Jung'],
-      explanation: 'The nominative plural of Junge is Jungen — the article die and the plural verb spielen mark this as plural.',
+      explanation:
+        'The nominative plural of Junge is Jungen — the article die and the plural verb spielen mark this as plural.',
     },
     {
       id: 'ch69-ex-47',
@@ -1057,7 +1155,8 @@ export const chapter069: ChapterDefinition = {
       templateParts: ['Die Professorin lobt den ', '.'],
       slots: [{ id: 'slot1', correctWord: 'Studenten' }],
       wordBank: ['Studenten', 'Student', 'Studentens'],
-      explanation: 'loben takes the accusative; Student adds -en outside the nominative singular: den Studenten.',
+      explanation:
+        'loben takes the accusative; Student adds -en outside the nominative singular: den Studenten.',
     },
     {
       id: 'ch69-ex-48',
@@ -1071,7 +1170,8 @@ export const chapter069: ChapterDefinition = {
       templateParts: ['Der Arzt hilft dem ', '.'],
       slots: [{ id: 'slot1', correctWord: 'Menschen' }],
       wordBank: ['Menschen', 'Mensch', 'Menschens'],
-      explanation: 'helfen takes the dative; Mensch adds -en outside the nominative singular: dem Menschen.',
+      explanation:
+        'helfen takes the dative; Mensch adds -en outside the nominative singular: dem Menschen.',
     },
     {
       id: 'ch69-ex-49',
@@ -1085,7 +1185,8 @@ export const chapter069: ChapterDefinition = {
       templateParts: ['Wie heißt der Chef des ', '?'],
       slots: [{ id: 'slot1', correctWord: 'Kunden' }],
       wordBank: ['Kunden', 'Kunde', 'Kundes'],
-      explanation: 'Kunde ends in -e, so the genitive singular takes just -n: des Kunden (never des Kundes).',
+      explanation:
+        'Kunde ends in -e, so the genitive singular takes just -n: des Kunden (never des Kundes).',
     },
     {
       id: 'ch69-ex-50',
@@ -1099,7 +1200,8 @@ export const chapter069: ChapterDefinition = {
       templateParts: ['Die Journalisten interviewen den ', '.'],
       slots: [{ id: 'slot1', correctWord: 'Präsidenten' }],
       wordBank: ['Präsidenten', 'Präsident', 'Präsidents'],
-      explanation: 'interviewen takes the accusative; Präsident adds -en outside the nominative singular: den Präsidenten.',
+      explanation:
+        'interviewen takes the accusative; Präsident adds -en outside the nominative singular: den Präsidenten.',
     },
     {
       id: 'ch69-ex-51',
@@ -1113,7 +1215,8 @@ export const chapter069: ChapterDefinition = {
       templateParts: ['Ich grüße ', ' Bauer.'],
       slots: [{ id: 'slot1', correctWord: 'Herrn' }],
       wordBank: ['Herrn', 'Herr', 'Herren'],
-      explanation: 'Before a name in the accusative singular, Herr takes only -n: Herrn Bauer.',
+      explanation:
+        'Before a name in the accusative singular, Herr takes only -n: Herrn Bauer.',
     },
     {
       id: 'ch69-ex-52',
@@ -1127,7 +1230,8 @@ export const chapter069: ChapterDefinition = {
       templateParts: ['Die ', ' sitzen im Wartezimmer.'],
       slots: [{ id: 'slot1', correctWord: 'Herren' }],
       wordBank: ['Herren', 'Herrn', 'Herr'],
-      explanation: 'The plural of Herr is Herren with -en; Herrn is reserved for the oblique singular.',
+      explanation:
+        'The plural of Herr is Herren with -en; Herrn is reserved for the oblique singular.',
     },
     {
       id: 'ch69-ex-53',
@@ -1141,7 +1245,8 @@ export const chapter069: ChapterDefinition = {
       templateParts: ['Der Jäger beobachtet den ', '.'],
       slots: [{ id: 'slot1', correctWord: 'Löwen' }],
       wordBank: ['Löwen', 'Löwe', 'Löwes'],
-      explanation: 'Löwe ends in -e, so it takes just -n outside the nominative singular: den Löwen.',
+      explanation:
+        'Löwe ends in -e, so it takes just -n outside the nominative singular: den Löwen.',
     },
     {
       id: 'ch69-ex-54',
@@ -1155,7 +1260,8 @@ export const chapter069: ChapterDefinition = {
       templateParts: ['Der Pfleger gibt den ', ' Futter.'],
       slots: [{ id: 'slot1', correctWord: 'Affen' }],
       wordBank: ['Affen', 'Affe', 'Affens'],
-      explanation: 'Affe takes -n throughout the plural, including the dative: den Affen.',
+      explanation:
+        'Affe takes -n throughout the plural, including the dative: den Affen.',
     },
     {
       id: 'ch69-ex-55',
@@ -1169,7 +1275,8 @@ export const chapter069: ChapterDefinition = {
       templateParts: ['Er kennt den ', ' nicht.'],
       slots: [{ id: 'slot1', correctWord: 'Namen' }],
       wordBank: ['Namen', 'Name', 'Namens'],
-      explanation: 'In the accusative singular, Name takes just -n: den Namen (the -ns ending is reserved for the genitive singular).',
+      explanation:
+        'In the accusative singular, Name takes just -n: den Namen (the -ns ending is reserved for the genitive singular).',
     },
     {
       id: 'ch69-ex-56',
@@ -1183,7 +1290,8 @@ export const chapter069: ChapterDefinition = {
       templateParts: ['Die ', ' besuchen das Schloss.'],
       slots: [{ id: 'slot1', correctWord: 'Touristen' }],
       wordBank: ['Touristen', 'Tourist', 'Touristens'],
-      explanation: 'The nominative plural of Tourist is Touristen, identical in shape to the oblique singular.',
+      explanation:
+        'The nominative plural of Tourist is Touristen, identical in shape to the oblique singular.',
     },
     {
       id: 'ch69-ex-57',
@@ -1197,7 +1305,8 @@ export const chapter069: ChapterDefinition = {
       tokens: ['Ich', 'sehe', 'den', 'Junge', 'im', 'Park', '.'],
       errorTokenIndex: 3,
       correction: 'Jungen',
-      explanation: 'As the accusative object of sehen, Junge needs the weak ending -n: den Jungen.',
+      explanation:
+        'As the accusative object of sehen, Junge needs the weak ending -n: den Jungen.',
     },
     {
       id: 'ch69-ex-58',
@@ -1211,7 +1320,8 @@ export const chapter069: ChapterDefinition = {
       tokens: ['Wir', 'helfen', 'dem', 'Student', '.'],
       errorTokenIndex: 3,
       correction: 'Studenten',
-      explanation: 'helfen takes the dative, and Student needs the weak -en ending: dem Studenten.',
+      explanation:
+        'helfen takes the dative, and Student needs the weak -en ending: dem Studenten.',
     },
     {
       id: 'ch69-ex-59',
@@ -1239,7 +1349,8 @@ export const chapter069: ChapterDefinition = {
       tokens: ['Ich', 'habe', 'Herren', 'Schmidt', 'getroffen', '.'],
       errorTokenIndex: 2,
       correction: 'Herrn',
-      explanation: 'Before a name in an oblique singular position, Herr takes only -n: Herrn Schmidt, not Herren.',
+      explanation:
+        'Before a name in an oblique singular position, Herr takes only -n: Herrn Schmidt, not Herren.',
     },
     {
       id: 'ch69-ex-61',
@@ -1253,7 +1364,8 @@ export const chapter069: ChapterDefinition = {
       tokens: ['Das', 'ist', 'der', 'Hut', 'meines', 'Nachbar', '.'],
       errorTokenIndex: 5,
       correction: 'Nachbarn',
-      explanation: 'Nachbar is a weak noun and needs -n in the genitive singular too: meines Nachbarn.',
+      explanation:
+        'Nachbar is a weak noun and needs -n in the genitive singular too: meines Nachbarn.',
     },
     {
       id: 'ch69-ex-62',
@@ -1267,7 +1379,8 @@ export const chapter069: ChapterDefinition = {
       tokens: ['Ich', 'sehe', 'zwei', 'Student', 'im', 'Café', '.'],
       errorTokenIndex: 3,
       correction: 'Studenten',
-      explanation: 'Weak nouns take their -n/-en ending in the plural too: zwei Studenten.',
+      explanation:
+        'Weak nouns take their -n/-en ending in the plural too: zwei Studenten.',
     },
     {
       id: 'ch69-ex-63',
@@ -1281,7 +1394,8 @@ export const chapter069: ChapterDefinition = {
       tokens: ['Der', 'Verkäufer', 'kennt', 'den', 'Kunde', 'gut', '.'],
       errorTokenIndex: 4,
       correction: 'Kunden',
-      explanation: 'Kunde is the accusative object of kennen and needs the weak ending -n: den Kunden.',
+      explanation:
+        'Kunde is the accusative object of kennen and needs the weak ending -n: den Kunden.',
     },
     {
       id: 'ch69-ex-64',
@@ -1295,7 +1409,8 @@ export const chapter069: ChapterDefinition = {
       tokens: ['Der', 'Jungen', 'spielt', 'im', 'Garten', '.'],
       errorTokenIndex: 1,
       correction: 'Junge',
-      explanation: 'Jungen is the subject here (nominative singular), so it must stay in its bare, unmarked form: der Junge, not der Jungen.',
+      explanation:
+        'Jungen is the subject here (nominative singular), so it must stay in its bare, unmarked form: der Junge, not der Jungen.',
     },
     {
       id: 'ch69-ex-65',
@@ -1304,7 +1419,8 @@ export const chapter069: ChapterDefinition = {
       type: 'matching',
       level: 'recognition',
       grammarFocus: ['n-declension', 'oblique-singular', 'matching'],
-      instruction: 'Match each nominative singular noun to its weak oblique-singular/plural form.',
+      instruction:
+        'Match each nominative singular noun to its weak oblique-singular/plural form.',
       prompt: 'Match the nominative singular form to its weak (-n/-en) form.',
       pairs: [
         { id: 'p1', left: 'der Junge', right: 'Jungen' },
@@ -1314,7 +1430,8 @@ export const chapter069: ChapterDefinition = {
         { id: 'p5', left: 'der Nachbar', right: 'Nachbarn' },
         { id: 'p6', left: 'der Mensch', right: 'Menschen' },
       ],
-      explanation: 'Every one of these weak nouns replaces its bare nominative singular form with a single -n/-en ending everywhere else.',
+      explanation:
+        'Every one of these weak nouns replaces its bare nominative singular form with a single -n/-en ending everywhere else.',
     },
     {
       id: 'ch69-ex-66',
@@ -1324,14 +1441,16 @@ export const chapter069: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['n-declension', 'case-identification', 'student'],
       instruction: 'Match each sentence to the case that its form of Student represents.',
-      prompt: 'Match each sentence to the correct case (Nominativ, Akkusativ, Dativ, or Genitiv).',
+      prompt:
+        'Match each sentence to the correct case (Nominativ, Akkusativ, Dativ, or Genitiv).',
       pairs: [
         { id: 'p1', left: 'Der Student lernt Deutsch.', right: 'Nominativ' },
         { id: 'p2', left: 'Ich sehe den Studenten.', right: 'Akkusativ' },
         { id: 'p3', left: 'Ich helfe dem Studenten.', right: 'Dativ' },
         { id: 'p4', left: 'Das ist das Zimmer des Studenten.', right: 'Genitiv' },
       ],
-      explanation: 'Student is nominative when unmarked, but takes the weak ending -en as soon as it is an accusative, dative, or genitive object.',
+      explanation:
+        'Student is nominative when unmarked, but takes the weak ending -en as soon as it is an accusative, dative, or genitive object.',
     },
     {
       id: 'ch69-ex-67',
@@ -1368,7 +1487,8 @@ export const chapter069: ChapterDefinition = {
         { id: 'p3', left: 'Der Nachbar grüßt.', right: 'Die Nachbarn grüßen.' },
         { id: 'p4', left: 'Der Kollege arbeitet.', right: 'Die Kollegen arbeiten.' },
       ],
-      explanation: 'The plural verb form and the article die signal the plural, since the weak-noun ending itself looks the same as the oblique singular.',
+      explanation:
+        'The plural verb form and the article die signal the plural, since the weak-noun ending itself looks the same as the oblique singular.',
     },
     {
       id: 'ch69-ex-69',
@@ -1385,7 +1505,8 @@ export const chapter069: ChapterDefinition = {
         { id: 's3', text: 'im Garten' },
         { id: 's4', text: '.' },
       ],
-      explanation: 'Der Junge spielt im Garten. — Junge is nominative singular here, so it stays unmarked.',
+      explanation:
+        'Der Junge spielt im Garten. — Junge is nominative singular here, so it stays unmarked.',
     },
     {
       id: 'ch69-ex-70',
@@ -1403,7 +1524,8 @@ export const chapter069: ChapterDefinition = {
         { id: 's4', text: 'mit den Hausaufgaben' },
         { id: 's5', text: '.' },
       ],
-      explanation: 'Wir helfen dem Studenten mit den Hausaufgaben. — helfen takes the dative, so Studenten carries the weak ending after dem.',
+      explanation:
+        'Wir helfen dem Studenten mit den Hausaufgaben. — helfen takes the dative, so Studenten carries the weak ending after dem.',
     },
     {
       id: 'ch69-ex-71',
@@ -1422,7 +1544,8 @@ export const chapter069: ChapterDefinition = {
         { id: 's5', text: 'getroffen' },
         { id: 's6', text: '.' },
       ],
-      explanation: 'Ich habe Herrn Schmidt gestern getroffen. — Before a name in the accusative, Herr takes just -n: Herrn.',
+      explanation:
+        'Ich habe Herrn Schmidt gestern getroffen. — Before a name in the accusative, Herr takes just -n: Herrn.',
     },
     {
       id: 'ch69-ex-72',
@@ -1432,7 +1555,8 @@ export const chapter069: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['n-declension', 'recognition'],
       instruction: 'Choose the noun that does NOT belong to the n-declension.',
-      prompt: 'Which of these masculine nouns is a regular noun, not a weak (n-declension) noun?',
+      prompt:
+        'Which of these masculine nouns is a regular noun, not a weak (n-declension) noun?',
       options: [
         { id: 'a', text: 'Mann' },
         { id: 'b', text: 'Junge' },
@@ -1440,7 +1564,8 @@ export const chapter069: ChapterDefinition = {
         { id: 'd', text: 'Nachbar' },
       ],
       correctOptionId: 'a',
-      explanation: 'Mann is a regular masculine noun (des Mannes, die Männer); Junge, Student, and Nachbar are all weak nouns.',
+      explanation:
+        'Mann is a regular masculine noun (des Mannes, die Männer); Junge, Student, and Nachbar are all weak nouns.',
     },
     {
       id: 'ch69-ex-73',
@@ -1449,7 +1574,8 @@ export const chapter069: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['n-declension', 'plural', 'kollege', 'sentence-correction'],
-      instruction: 'Choose the sentence that correctly says "The colleagues are working here."',
+      instruction:
+        'Choose the sentence that correctly says "The colleagues are working here."',
       prompt: 'Which sentence is correct?',
       options: [
         { id: 'a', text: 'Die Kollegen arbeiten hier.' },
@@ -1458,7 +1584,8 @@ export const chapter069: ChapterDefinition = {
         { id: 'd', text: 'Der Kollegen arbeiten hier.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The plural of Kollege is Kollegen, with the plural verb arbeiten and the nominative plural article die.',
+      explanation:
+        'The plural of Kollege is Kollegen, with the plural verb arbeiten and the nominative plural article die.',
     },
     {
       id: 'ch69-ex-74',
@@ -1476,7 +1603,8 @@ export const chapter069: ChapterDefinition = {
         { id: 'd', text: 'Names' },
       ],
       correctOptionId: 'a',
-      explanation: 'Name is irregular: it takes just -n in the accusative/dative singular but -ns in the genitive singular: des Namens.',
+      explanation:
+        'Name is irregular: it takes just -n in the accusative/dative singular but -ns in the genitive singular: des Namens.',
     },
   ],
 };

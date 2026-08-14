@@ -53,14 +53,14 @@ export const chapter037: ChapterDefinition = {
         heading: 'in: enclosed places, and the handful of countries that take an article',
         paragraphs: [
           'in is used for destinations that are enclosed spaces you go inside: ins Kino (to the cinema), in den Supermarkt (to the supermarket), in die Bibliothek (to the library). Because in is a two-way preposition, it takes the accusative here, since the sentence describes movement towards a destination rather than a fixed location.',
-          'A small number of countries always take a definite article, and with these, in — not nach — introduces the destination: in die Schweiz (to Switzerland), in die Türkei (to Turkey), in den Iran (to Iran), in die USA (to the USA). The article takes the accusative form that matches the two-way preposition\'s directional use.',
+          "A small number of countries always take a definite article, and with these, in — not nach — introduces the destination: in die Schweiz (to Switzerland), in die Türkei (to Turkey), in den Iran (to Iran), in die USA (to the USA). The article takes the accusative form that matches the two-way preposition's directional use.",
         ],
       },
       {
         id: 'ch37-rule-04',
         heading: 'zu: people, institutions, and open buildings — always dative',
         paragraphs: [
-          'zu introduces a destination that is a person, an institution, or a building thought of as a functional destination rather than an enclosed space: zu meiner Oma (to my grandma\'s), zum Arzt (to the doctor\'s), zur Schule (to school), zum Bahnhof (to the station).',
+          "zu introduces a destination that is a person, an institution, or a building thought of as a functional destination rather than an enclosed space: zu meiner Oma (to my grandma's), zum Arzt (to the doctor's), zur Schule (to school), zum Bahnhof (to the station).",
           'Unlike in, auf, and an, zu is not a two-way preposition. It always governs the dative, in every context, so there is no case choice to make with zu — only the correct dative article or contraction.',
         ],
         notes: [
@@ -169,55 +169,64 @@ export const chapter037: ChapterDefinition = {
         german: 'Er fährt am Freitag nach Hause.',
         english: 'He is going home on Friday.',
         highlight: ['nach Hause'],
-        explanation: 'nach Hause is a fixed expression meaning "(to) home" as a destination; it never takes an article.',
+        explanation:
+          'nach Hause is a fixed expression meaning "(to) home" as a destination; it never takes an article.',
       },
       {
         german: 'Ich reise im Sommer in die Schweiz.',
         english: 'I am traveling to Switzerland in the summer.',
         highlight: ['in die Schweiz'],
-        explanation: 'die Schweiz is one of the few countries that takes an article; with in, the destination article appears in the accusative.',
+        explanation:
+          'die Schweiz is one of the few countries that takes an article; with in, the destination article appears in the accusative.',
       },
       {
         german: 'Nächstes Jahr fliegen wir in die USA.',
         english: 'Next year we are flying to the USA.',
         highlight: ['in die USA'],
-        explanation: 'die USA is grammatically plural and always takes an article; the accusative plural form is identical to the base form: in die USA.',
+        explanation:
+          'die USA is grammatically plural and always takes an article; the accusative plural form is identical to the base form: in die USA.',
       },
       {
         german: 'Am Abend gehen wir ins Kino.',
         english: 'In the evening we are going to the cinema.',
         highlight: ['ins'],
-        explanation: 'in + das contracts to ins; a cinema is an enclosed space, so it takes in plus the accusative.',
+        explanation:
+          'in + das contracts to ins; a cinema is an enclosed space, so it takes in plus the accusative.',
       },
       {
         german: 'Sie geht jetzt zum Arzt.',
         english: 'She is going to the doctor now.',
         highlight: ['zum'],
-        explanation: 'zu + dem contracts to zum; a doctor\'s office is reached with zu, and zu always takes the dative, even for a destination.',
+        explanation:
+          "zu + dem contracts to zum; a doctor's office is reached with zu, and zu always takes the dative, even for a destination.",
       },
       {
         german: 'Die Kinder gehen zur Schule.',
         english: 'The children are going to school.',
         highlight: ['zur'],
-        explanation: 'zu + der contracts to zur; Schule is an institution reached with zu.',
+        explanation:
+          'zu + der contracts to zur; Schule is an institution reached with zu.',
       },
       {
         german: 'Ich fahre am Wochenende zu meiner Oma.',
-        english: 'I am going to my grandma\'s this weekend.',
+        english: "I am going to my grandma's this weekend.",
         highlight: ['zu meiner Oma'],
-        explanation: 'zu is used for a person as a destination; meiner Oma is dative feminine.',
+        explanation:
+          'zu is used for a person as a destination; meiner Oma is dative feminine.',
       },
       {
         german: 'Am Nachmittag gehen wir auf den Spielplatz.',
         english: 'In the afternoon we are going to the playground.',
         highlight: ['auf den'],
-        explanation: 'auf introduces an open public space; it takes the accusative here because the sentence describes a destination.',
+        explanation:
+          'auf introduces an open public space; it takes the accusative here because the sentence describes a destination.',
       },
       {
         german: 'Im Urlaub fahren wir an den See.',
         english: 'On vacation we are going to the lake.',
         highlight: ['an den'],
-        explanation: 'an describes movement to the edge of something, here a lake; it takes the accusative because it is a destination.',
+        explanation:
+          'an describes movement to the edge of something, here a lake; it takes the accusative because it is a destination.',
       },
       {
         german: 'Am liebsten würde ich ans Meer fahren.',
@@ -229,34 +238,40 @@ export const chapter037: ChapterDefinition = {
         german: 'Wir reisen im Herbst in die Türkei.',
         english: 'We are traveling to Turkey in the fall.',
         highlight: ['in die Türkei'],
-        explanation: 'die Türkei also takes an article; in + die Türkei is accusative, matching the pattern for article-countries.',
+        explanation:
+          'die Türkei also takes an article; in + die Türkei is accusative, matching the pattern for article-countries.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich fahre nach die Schweiz.',
         correct: 'Ich fahre in die Schweiz.',
-        explanation: 'nach never takes an article; countries that need an article (die Schweiz, die Türkei, der Iran, die USA) are introduced with in, not nach.',
+        explanation:
+          'nach never takes an article; countries that need an article (die Schweiz, die Türkei, der Iran, die USA) are introduced with in, not nach.',
       },
       {
         incorrect: 'Er geht zu Kino.',
         correct: 'Er geht ins Kino.',
-        explanation: 'Kino is an enclosed place reached with in (contracted to ins with das), not with zu.',
+        explanation:
+          'Kino is an enclosed place reached with in (contracted to ins with das), not with zu.',
       },
       {
         incorrect: 'Wir fahren zu Hause.',
         correct: 'Wir fahren nach Hause.',
-        explanation: 'zu Hause means "at home" (a location, answering wo?); the destination "(to) home" is the fixed phrase nach Hause, with no article.',
+        explanation:
+          'zu Hause means "at home" (a location, answering wo?); the destination "(to) home" is the fixed phrase nach Hause, with no article.',
       },
       {
         incorrect: 'Die Kinder gehen zu die Schule.',
         correct: 'Die Kinder gehen zur Schule.',
-        explanation: 'zu always takes the dative and contracts with der to zur; die is the accusative/nominative feminine article and cannot follow zu.',
+        explanation:
+          'zu always takes the dative and contracts with der to zur; die is the accusative/nominative feminine article and cannot follow zu.',
       },
       {
         incorrect: 'Wir fahren zu den See.',
         correct: 'Wir fahren an den See.',
-        explanation: 'Reaching the edge of a body of water uses an, not zu; zu is reserved for people, institutions, and open buildings.',
+        explanation:
+          'Reaching the edge of a body of water uses an, not zu; zu is reserved for people, institutions, and open buildings.',
       },
     ],
     remember: [
@@ -307,7 +322,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'd', text: 'auf' },
       ],
       correctOptionId: 'a',
-      explanation: 'Italien is a country without an article, so it is introduced with nach.',
+      explanation:
+        'Italien is a country without an article, so it is introduced with nach.',
     },
     {
       id: 'ch37-ex-03',
@@ -325,7 +341,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'd', text: 'auf' },
       ],
       correctOptionId: 'b',
-      explanation: 'die Schweiz is a country that takes an article, so it is introduced with in, not nach.',
+      explanation:
+        'die Schweiz is a country that takes an article, so it is introduced with in, not nach.',
     },
     {
       id: 'ch37-ex-04',
@@ -361,7 +378,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'd', text: 'an das' },
       ],
       correctOptionId: 'a',
-      explanation: 'in + das contracts to ins; Kino is an enclosed space and a destination, so it takes the accusative.',
+      explanation:
+        'in + das contracts to ins; Kino is an enclosed space and a destination, so it takes the accusative.',
     },
     {
       id: 'ch37-ex-06',
@@ -397,7 +415,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'd', text: 'zum' },
       ],
       correctOptionId: 'a',
-      explanation: 'A market is an open public space, introduced with auf plus the accusative article den.',
+      explanation:
+        'A market is an open public space, introduced with auf plus the accusative article den.',
     },
     {
       id: 'ch37-ex-08',
@@ -415,7 +434,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'd', text: 'zum' },
       ],
       correctOptionId: 'a',
-      explanation: 'an + das contracts to ans; Meer is neuter and is a body of water reached with an.',
+      explanation:
+        'an + das contracts to ans; Meer is neuter and is a body of water reached with an.',
     },
     {
       id: 'ch37-ex-09',
@@ -433,7 +453,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'd', text: 'auf die' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Türkei is a country with an article, so it takes in plus the accusative article die, not nach.',
+      explanation:
+        'die Türkei is a country with an article, so it takes in plus the accusative article die, not nach.',
     },
     {
       id: 'ch37-ex-10',
@@ -451,7 +472,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'd', text: 'zu den' },
       ],
       correctOptionId: 'a',
-      explanation: 'die USA is treated as plural and always takes an article; the accusative destination form is in die USA.',
+      explanation:
+        'die USA is treated as plural and always takes an article; the accusative destination form is in die USA.',
     },
     {
       id: 'ch37-ex-11',
@@ -469,7 +491,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'd', text: 'an' },
       ],
       correctOptionId: 'a',
-      explanation: 'A person as a destination is always introduced with zu, which takes the dative (ihrer Freundin).',
+      explanation:
+        'A person as a destination is always introduced with zu, which takes the dative (ihrer Freundin).',
     },
     {
       id: 'ch37-ex-12',
@@ -487,7 +510,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'd', text: 'zum Haus' },
       ],
       correctOptionId: 'a',
-      explanation: 'nach Hause is the fixed expression for the destination "home"; zu Hause means "at home" (a location, not a destination), and it never takes an article.',
+      explanation:
+        'nach Hause is the fixed expression for the destination "home"; zu Hause means "at home" (a location, not a destination), and it never takes an article.',
     },
     {
       id: 'ch37-ex-13',
@@ -517,7 +541,8 @@ export const chapter037: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'nach',
       maxLength: 15,
-      explanation: 'Österreich is a country without an article, so it is introduced with nach.',
+      explanation:
+        'Österreich is a country without an article, so it is introduced with nach.',
     },
     {
       id: 'ch37-ex-15',
@@ -556,13 +581,15 @@ export const chapter037: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['in', 'enclosed-space', 'no-contraction'],
-      instruction: 'Complete the phrase with the preposition and article shown in brackets. Capitalisation is not checked.',
+      instruction:
+        'Complete the phrase with the preposition and article shown in brackets. Capitalisation is not checked.',
       prompt: 'Die Familie geht sonntags ___ Kirche. (in + die)',
       acceptedAnswers: ['in die'],
       answerMode: 'caseInsensitive',
       placeholder: 'in die',
       maxLength: 20,
-      explanation: 'in + die does not contract; Kirche is feminine, so the phrase stays as two words: in die.',
+      explanation:
+        'in + die does not contract; Kirche is feminine, so the phrase stays as two words: in die.',
     },
     {
       id: 'ch37-ex-18',
@@ -571,7 +598,8 @@ export const chapter037: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['in', 'contraction', 'enclosed-space'],
-      instruction: 'Complete the phrase with the contraction shown in brackets. Capitalisation is not checked.',
+      instruction:
+        'Complete the phrase with the contraction shown in brackets. Capitalisation is not checked.',
       prompt: 'Nach dem Essen gehen wir ___ Kino. (in + das)',
       acceptedAnswers: ['ins'],
       answerMode: 'caseInsensitive',
@@ -586,7 +614,8 @@ export const chapter037: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['zu', 'contraction', 'institution'],
-      instruction: 'Complete the phrase with the contraction shown in brackets. Capitalisation is not checked.',
+      instruction:
+        'Complete the phrase with the contraction shown in brackets. Capitalisation is not checked.',
       prompt: 'Er fährt jeden Tag ___ Arbeit. (zu + der)',
       acceptedAnswers: ['zur'],
       answerMode: 'caseInsensitive',
@@ -601,13 +630,15 @@ export const chapter037: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['auf', 'open-public-space', 'no-contraction'],
-      instruction: 'Complete the phrase with the preposition and article shown in brackets. Capitalisation is not checked.',
+      instruction:
+        'Complete the phrase with the preposition and article shown in brackets. Capitalisation is not checked.',
       prompt: 'Die Kinder spielen nachmittags ___ Spielplatz. (auf + den)',
       acceptedAnswers: ['auf den'],
       answerMode: 'caseInsensitive',
       placeholder: 'auf den',
       maxLength: 20,
-      explanation: 'auf + den does not contract; Spielplatz is masculine and takes the accusative article den.',
+      explanation:
+        'auf + den does not contract; Spielplatz is masculine and takes the accusative article den.',
     },
     {
       id: 'ch37-ex-21',
@@ -616,13 +647,15 @@ export const chapter037: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['nach-vs-in', 'country-with-article', 'error-correction'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ich fahre nach die Schweiz.',
       acceptedAnswers: ['Ich fahre in die Schweiz.'],
       answerMode: 'normalized',
       placeholder: 'Ich fahre ...',
       maxLength: 60,
-      explanation: 'nach never takes an article; die Schweiz is a country with an article, so it is introduced with in.',
+      explanation:
+        'nach never takes an article; die Schweiz is a country with an article, so it is introduced with in.',
     },
     {
       id: 'ch37-ex-22',
@@ -631,13 +664,15 @@ export const chapter037: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['zu-vs-in', 'contraction', 'error-correction'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Er geht zu Kino.',
       acceptedAnswers: ['Er geht ins Kino.'],
       answerMode: 'normalized',
       placeholder: 'Er geht ...',
       maxLength: 60,
-      explanation: 'Kino is an enclosed space reached with in, contracted with das to ins, not with zu.',
+      explanation:
+        'Kino is an enclosed space reached with in, contracted with das to ins, not with zu.',
     },
     {
       id: 'ch37-ex-23',
@@ -646,13 +681,15 @@ export const chapter037: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['zu', 'person', 'sentence-production'],
-      instruction: 'Write a complete sentence using the preposition for a person as a destination. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence using the preposition for a person as a destination. Capitalisation is checked; no full stop is required.',
       prompt: 'sie – fahren – ihre Oma (Reiseziel: Person)',
       acceptedAnswers: ['Sie fährt zu ihrer Oma.', 'Sie fährt zu ihrer Oma'],
       answerMode: 'normalized',
       placeholder: 'Sie fährt ...',
       maxLength: 60,
-      explanation: 'A person as a destination is introduced with zu, which takes the dative: zu ihrer Oma.',
+      explanation:
+        'A person as a destination is introduced with zu, which takes the dative: zu ihrer Oma.',
     },
     {
       id: 'ch37-ex-24',
@@ -661,13 +698,15 @@ export const chapter037: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['an', 'body-of-water', 'sentence-production'],
-      instruction: 'Write a complete sentence using the preposition for a destination at the edge of a body of water. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence using the preposition for a destination at the edge of a body of water. Capitalisation is checked; no full stop is required.',
       prompt: 'wir – fahren – der See (Reiseziel: Gewässer)',
       acceptedAnswers: ['Wir fahren an den See.', 'Wir fahren an den See'],
       answerMode: 'normalized',
       placeholder: 'Wir fahren ...',
       maxLength: 60,
-      explanation: 'Reaching the edge of a lake is expressed with an plus the accusative article den: an den See.',
+      explanation:
+        'Reaching the edge of a lake is expressed with an plus the accusative article den: an den See.',
     },
     {
       id: 'ch37-ex-25',
@@ -703,7 +742,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'd', text: 'an' },
       ],
       correctOptionId: 'a',
-      explanation: 'Spanien is a country without an article, so it is introduced with nach.',
+      explanation:
+        'Spanien is a country without an article, so it is introduced with nach.',
     },
     {
       id: 'ch37-ex-27',
@@ -721,7 +761,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'd', text: 'auf den' },
       ],
       correctOptionId: 'a',
-      explanation: 'der Iran is a country with an article, so it takes in plus the accusative article den, not nach.',
+      explanation:
+        'der Iran is a country with an article, so it takes in plus the accusative article den, not nach.',
     },
     {
       id: 'ch37-ex-28',
@@ -739,7 +780,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'd', text: 'an' },
       ],
       correctOptionId: 'a',
-      explanation: 'A person as a destination is always introduced with zu, which takes the dative.',
+      explanation:
+        'A person as a destination is always introduced with zu, which takes the dative.',
     },
     {
       id: 'ch37-ex-29',
@@ -757,7 +799,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'd', text: 'an den' },
       ],
       correctOptionId: 'a',
-      explanation: 'A sports field is an open public space, introduced with auf plus the accusative article den.',
+      explanation:
+        'A sports field is an open public space, introduced with auf plus the accusative article den.',
     },
     {
       id: 'ch37-ex-30',
@@ -775,7 +818,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'd', text: 'ins' },
       ],
       correctOptionId: 'a',
-      explanation: 'an + das contracts to ans; Meer is neuter and is reached with an as a body of water.',
+      explanation:
+        'an + das contracts to ans; Meer is neuter and is reached with an as a body of water.',
     },
     {
       id: 'ch37-ex-31',
@@ -793,7 +837,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'd', text: 'an die' },
       ],
       correctOptionId: 'a',
-      explanation: 'A library is an enclosed space; in + die does not contract, so the phrase stays in die Bibliothek.',
+      explanation:
+        'A library is an enclosed space; in + die does not contract, so the phrase stays in die Bibliothek.',
     },
     {
       id: 'ch37-ex-32',
@@ -811,7 +856,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'd', text: 'ans' },
       ],
       correctOptionId: 'a',
-      explanation: 'zu + dem contracts to zum; Bahnhof is masculine and is reached with zu as an institution.',
+      explanation:
+        'zu + dem contracts to zum; Bahnhof is masculine and is reached with zu as an institution.',
     },
     {
       id: 'ch37-ex-33',
@@ -829,7 +875,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'd', text: 'zum Hause' },
       ],
       correctOptionId: 'a',
-      explanation: 'nach Hause is the fixed expression for the destination "home"; zu Hause describes a location (at home), not a destination.',
+      explanation:
+        'nach Hause is the fixed expression for the destination "home"; zu Hause describes a location (at home), not a destination.',
     },
     {
       id: 'ch37-ex-34',
@@ -847,7 +894,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'd', text: 'auf die' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Grenze (the border) is an edge, so it is introduced with an plus the accusative article die.',
+      explanation:
+        'die Grenze (the border) is an edge, so it is introduced with an plus the accusative article die.',
     },
     {
       id: 'ch37-ex-35',
@@ -877,7 +925,8 @@ export const chapter037: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'nach',
       maxLength: 15,
-      explanation: 'Polen is a country without an article, so it is introduced with nach.',
+      explanation:
+        'Polen is a country without an article, so it is introduced with nach.',
     },
     {
       id: 'ch37-ex-37',
@@ -886,13 +935,15 @@ export const chapter037: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['in', 'country-with-article'],
-      instruction: 'Write the missing preposition and article. Capitalisation is not checked.',
+      instruction:
+        'Write the missing preposition and article. Capitalisation is not checked.',
       prompt: 'Wir reisen im Sommer ___ Türkei.',
       acceptedAnswers: ['in die'],
       answerMode: 'caseInsensitive',
       placeholder: 'in die',
       maxLength: 20,
-      explanation: 'die Türkei is a country with an article, so it takes in plus the accusative article die.',
+      explanation:
+        'die Türkei is a country with an article, so it takes in plus the accusative article die.',
     },
     {
       id: 'ch37-ex-38',
@@ -901,13 +952,15 @@ export const chapter037: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['in', 'country-with-article'],
-      instruction: 'Write the missing preposition and article. Capitalisation is not checked.',
+      instruction:
+        'Write the missing preposition and article. Capitalisation is not checked.',
       prompt: 'Er fliegt beruflich ___ Iran.',
       acceptedAnswers: ['in den'],
       answerMode: 'caseInsensitive',
       placeholder: 'in den',
       maxLength: 20,
-      explanation: 'der Iran is a country with an article, so it takes in plus the accusative article den.',
+      explanation:
+        'der Iran is a country with an article, so it takes in plus the accusative article den.',
     },
     {
       id: 'ch37-ex-39',
@@ -931,7 +984,8 @@ export const chapter037: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['zu', 'contraction', 'institution'],
-      instruction: 'Complete the phrase with the contraction shown in brackets. Capitalisation is not checked.',
+      instruction:
+        'Complete the phrase with the contraction shown in brackets. Capitalisation is not checked.',
       prompt: 'Wir bringen die Koffer ___ Bahnhof. (zu + dem)',
       acceptedAnswers: ['zum'],
       answerMode: 'caseInsensitive',
@@ -946,7 +1000,8 @@ export const chapter037: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['zu', 'contraction', 'institution'],
-      instruction: 'Complete the phrase with the contraction shown in brackets. Capitalisation is not checked.',
+      instruction:
+        'Complete the phrase with the contraction shown in brackets. Capitalisation is not checked.',
       prompt: 'Sie fährt jeden Morgen ___ Universität. (zu + der)',
       acceptedAnswers: ['zur'],
       answerMode: 'caseInsensitive',
@@ -961,13 +1016,15 @@ export const chapter037: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['auf', 'open-public-space', 'no-contraction'],
-      instruction: 'Complete the phrase with the preposition and article shown in brackets. Capitalisation is not checked.',
+      instruction:
+        'Complete the phrase with the preposition and article shown in brackets. Capitalisation is not checked.',
       prompt: 'Die Jungen laufen sofort ___ Sportplatz. (auf + den)',
       acceptedAnswers: ['auf den'],
       answerMode: 'caseInsensitive',
       placeholder: 'auf den',
       maxLength: 20,
-      explanation: 'auf + den does not contract; Sportplatz is masculine and takes the accusative article den.',
+      explanation:
+        'auf + den does not contract; Sportplatz is masculine and takes the accusative article den.',
     },
     {
       id: 'ch37-ex-43',
@@ -976,13 +1033,15 @@ export const chapter037: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['an', 'body-of-water', 'no-contraction'],
-      instruction: 'Complete the phrase with the preposition and article shown in brackets. Capitalisation is not checked.',
+      instruction:
+        'Complete the phrase with the preposition and article shown in brackets. Capitalisation is not checked.',
       prompt: 'Die Wanderer gehen langsam ___ Grenze. (an + die)',
       acceptedAnswers: ['an die'],
       answerMode: 'caseInsensitive',
       placeholder: 'an die',
       maxLength: 20,
-      explanation: 'an + die does not contract; Grenze is feminine and takes the accusative article die.',
+      explanation:
+        'an + die does not contract; Grenze is feminine and takes the accusative article die.',
     },
     {
       id: 'ch37-ex-44',
@@ -991,13 +1050,15 @@ export const chapter037: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['an', 'body-of-water', 'no-contraction'],
-      instruction: 'Complete the phrase with the preposition and article shown in brackets. Capitalisation is not checked.',
+      instruction:
+        'Complete the phrase with the preposition and article shown in brackets. Capitalisation is not checked.',
       prompt: 'Im Frühling gehen wir gern ___ Fluss. (an + den)',
       acceptedAnswers: ['an den'],
       answerMode: 'caseInsensitive',
       placeholder: 'an den',
       maxLength: 20,
-      explanation: 'an + den does not contract; Fluss is masculine and takes the accusative article den.',
+      explanation:
+        'an + den does not contract; Fluss is masculine and takes the accusative article den.',
     },
     {
       id: 'ch37-ex-45',
@@ -1006,7 +1067,8 @@ export const chapter037: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['in', 'contraction', 'enclosed-space'],
-      instruction: 'Complete the phrase with the contraction shown in brackets. Capitalisation is not checked.',
+      instruction:
+        'Complete the phrase with the contraction shown in brackets. Capitalisation is not checked.',
       prompt: 'Am Samstag gehen wir ___ Museum. (in + das)',
       acceptedAnswers: ['ins'],
       answerMode: 'caseInsensitive',
@@ -1021,13 +1083,15 @@ export const chapter037: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['in', 'enclosed-space', 'no-contraction'],
-      instruction: 'Complete the phrase with the preposition and article shown in brackets. Capitalisation is not checked.',
+      instruction:
+        'Complete the phrase with the preposition and article shown in brackets. Capitalisation is not checked.',
       prompt: 'Meine Mutter geht jeden Freitag ___ Supermarkt. (in + den)',
       acceptedAnswers: ['in den'],
       answerMode: 'caseInsensitive',
       placeholder: 'in den',
       maxLength: 20,
-      explanation: 'in + den does not contract; Supermarkt is masculine and is an enclosed space you go inside.',
+      explanation:
+        'in + den does not contract; Supermarkt is masculine and is an enclosed space you go inside.',
     },
     {
       id: 'ch37-ex-47',
@@ -1036,13 +1100,15 @@ export const chapter037: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['nach-hause', 'fixed-expression', 'sentence-production'],
-      instruction: 'Write a complete sentence expressing the destination "home". Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence expressing the destination "home". Capitalisation is checked; no full stop is required.',
       prompt: 'wir – fahren – jetzt – Hause (Reiseziel: zu Hause)',
       acceptedAnswers: ['Wir fahren jetzt nach Hause.', 'Wir fahren jetzt nach Hause'],
       answerMode: 'normalized',
       placeholder: 'Wir fahren ...',
       maxLength: 60,
-      explanation: 'The destination "(to) home" is always the fixed phrase nach Hause, with no article.',
+      explanation:
+        'The destination "(to) home" is always the fixed phrase nach Hause, with no article.',
     },
     {
       id: 'ch37-ex-48',
@@ -1051,13 +1117,15 @@ export const chapter037: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['nach-vs-zu', 'nach-hause', 'error-correction'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Wir fahren zu Hause.',
       acceptedAnswers: ['Wir fahren nach Hause.'],
       answerMode: 'normalized',
       placeholder: 'Wir fahren ...',
       maxLength: 60,
-      explanation: 'zu Hause means "at home" (a location); the destination "(to) home" is the fixed phrase nach Hause.',
+      explanation:
+        'zu Hause means "at home" (a location); the destination "(to) home" is the fixed phrase nach Hause.',
     },
     {
       id: 'ch37-ex-49',
@@ -1066,13 +1134,15 @@ export const chapter037: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['zu', 'contraction', 'error-correction'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Die Kinder gehen zu die Schule.',
       acceptedAnswers: ['Die Kinder gehen zur Schule.'],
       answerMode: 'normalized',
       placeholder: 'Die Kinder gehen ...',
       maxLength: 60,
-      explanation: 'zu always takes the dative and contracts with der to zur; die is the accusative/nominative article and cannot follow zu.',
+      explanation:
+        'zu always takes the dative and contracts with der to zur; die is the accusative/nominative article and cannot follow zu.',
     },
     {
       id: 'ch37-ex-50',
@@ -1081,7 +1151,8 @@ export const chapter037: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['auf-vs-in', 'open-public-space', 'error-correction'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Am Samstag gehen wir in den Markt.',
       acceptedAnswers: ['Am Samstag gehen wir auf den Markt.'],
       answerMode: 'normalized',
@@ -1096,13 +1167,15 @@ export const chapter037: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['zu', 'institution', 'sentence-production'],
-      instruction: 'Write a complete sentence using the preposition for an institution as a destination. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence using the preposition for an institution as a destination. Capitalisation is checked; no full stop is required.',
       prompt: 'er – fahren – der Bahnhof (Reiseziel: Institution)',
       acceptedAnswers: ['Er fährt zum Bahnhof.', 'Er fährt zum Bahnhof'],
       answerMode: 'normalized',
       placeholder: 'Er fährt ...',
       maxLength: 60,
-      explanation: 'An institution as a destination is introduced with zu; zu + dem contracts to zum: zum Bahnhof.',
+      explanation:
+        'An institution as a destination is introduced with zu; zu + dem contracts to zum: zum Bahnhof.',
     },
     {
       id: 'ch37-ex-52',
@@ -1111,13 +1184,15 @@ export const chapter037: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['in', 'enclosed-space', 'sentence-production'],
-      instruction: 'Write a complete sentence using the preposition for an enclosed space as a destination. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence using the preposition for an enclosed space as a destination. Capitalisation is checked; no full stop is required.',
       prompt: 'ich – gehen – das Museum (Reiseziel: geschlossener Raum)',
       acceptedAnswers: ['Ich gehe ins Museum.', 'Ich gehe ins Museum'],
       answerMode: 'normalized',
       placeholder: 'Ich gehe ...',
       maxLength: 60,
-      explanation: 'An enclosed space as a destination is introduced with in; in + das contracts to ins: ins Museum.',
+      explanation:
+        'An enclosed space as a destination is introduced with in; in + das contracts to ins: ins Museum.',
     },
     {
       id: 'ch37-ex-53',
@@ -1126,13 +1201,18 @@ export const chapter037: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['auf', 'open-public-space', 'sentence-production'],
-      instruction: 'Write a complete sentence using the preposition for an open public space as a destination. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence using the preposition for an open public space as a destination. Capitalisation is checked; no full stop is required.',
       prompt: 'die Kinder – laufen – der Spielplatz (Reiseziel: offener Ort)',
-      acceptedAnswers: ['Die Kinder laufen auf den Spielplatz.', 'Die Kinder laufen auf den Spielplatz'],
+      acceptedAnswers: [
+        'Die Kinder laufen auf den Spielplatz.',
+        'Die Kinder laufen auf den Spielplatz',
+      ],
       answerMode: 'normalized',
       placeholder: 'Die Kinder laufen ...',
       maxLength: 60,
-      explanation: 'An open public space as a destination is introduced with auf plus the accusative article: auf den Spielplatz.',
+      explanation:
+        'An open public space as a destination is introduced with auf plus the accusative article: auf den Spielplatz.',
     },
     {
       id: 'ch37-ex-54',
@@ -1158,7 +1238,8 @@ export const chapter037: ChapterDefinition = {
       templateParts: ['Wir fliegen ', ' Spanien.'],
       slots: [{ id: 'slot-1', correctWord: 'nach' }],
       wordBank: ['nach', 'zu', 'in', 'an'],
-      explanation: 'Spanien is a country without an article, so it is introduced with nach.',
+      explanation:
+        'Spanien is a country without an article, so it is introduced with nach.',
     },
     {
       id: 'ch37-ex-56',
@@ -1210,7 +1291,8 @@ export const chapter037: ChapterDefinition = {
       templateParts: ['Die Kinder gehen auf ', ' Spielplatz.'],
       slots: [{ id: 'slot-1', correctWord: 'den' }],
       wordBank: ['den', 'dem', 'die', 'das'],
-      explanation: 'Spielplatz is masculine; auf takes the accusative article den for a destination.',
+      explanation:
+        'Spielplatz is masculine; auf takes the accusative article den for a destination.',
     },
     {
       id: 'ch37-ex-60',
@@ -1226,7 +1308,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'slot-2', correctWord: 'den' },
       ],
       wordBank: ['an', 'den', 'in', 'dem'],
-      explanation: 'Reaching the edge of a lake uses an plus the accusative article den: an den See.',
+      explanation:
+        'Reaching the edge of a lake uses an plus the accusative article den: an den See.',
     },
     {
       id: 'ch37-ex-61',
@@ -1242,7 +1325,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'slot-2', correctWord: 'die' },
       ],
       wordBank: ['in', 'die', 'nach', 'zu'],
-      explanation: 'die USA is treated as plural and always takes an article; the destination form is in die USA.',
+      explanation:
+        'die USA is treated as plural and always takes an article; the destination form is in die USA.',
     },
     {
       id: 'ch37-ex-62',
@@ -1258,7 +1342,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'slot-2', correctWord: 'die' },
       ],
       wordBank: ['in', 'die', 'nach', 'auf'],
-      explanation: 'die Schweiz is a country with an article, so it takes in plus the accusative article die.',
+      explanation:
+        'die Schweiz is a country with an article, so it takes in plus the accusative article die.',
     },
     {
       id: 'ch37-ex-63',
@@ -1297,7 +1382,8 @@ export const chapter037: ChapterDefinition = {
       templateParts: ['Am Nachmittag gehen wir auf ', ' Markt.'],
       slots: [{ id: 'slot-1', correctWord: 'den' }],
       wordBank: ['den', 'dem', 'die', 'das'],
-      explanation: 'Markt is masculine; auf takes the accusative article den for a destination.',
+      explanation:
+        'Markt is masculine; auf takes the accusative article den for a destination.',
     },
     {
       id: 'ch37-ex-66',
@@ -1310,7 +1396,8 @@ export const chapter037: ChapterDefinition = {
       templateParts: ['Die Familie geht sonntags ', ' die Kirche.'],
       slots: [{ id: 'slot-1', correctWord: 'in' }],
       wordBank: ['in', 'zu', 'auf', 'an'],
-      explanation: 'A church is an enclosed space; in + die does not contract, so the phrase stays in die Kirche.',
+      explanation:
+        'A church is an enclosed space; in + die does not contract, so the phrase stays in die Kirche.',
     },
     {
       id: 'ch37-ex-67',
@@ -1353,7 +1440,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'seg-3', text: 'nach' },
         { id: 'seg-4', text: 'Berlin.' },
       ],
-      explanation: 'German verb-second order: Ich (subject) – fahre (verb) – nach Berlin (destination phrase).',
+      explanation:
+        'German verb-second order: Ich (subject) – fahre (verb) – nach Berlin (destination phrase).',
     },
     {
       id: 'ch37-ex-70',
@@ -1370,7 +1458,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'seg-3', text: 'im Sommer' },
         { id: 'seg-4', text: 'nach Kanada.' },
       ],
-      explanation: 'The time expression im Sommer comes right after the verb, and the destination phrase nach Kanada closes the sentence.',
+      explanation:
+        'The time expression im Sommer comes right after the verb, and the destination phrase nach Kanada closes the sentence.',
     },
     {
       id: 'ch37-ex-71',
@@ -1387,7 +1476,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'seg-3', text: 'am Freitag' },
         { id: 'seg-4', text: 'nach Hause.' },
       ],
-      explanation: 'nach Hause is the fixed destination phrase for "home", placed at the end after the time expression.',
+      explanation:
+        'nach Hause is the fixed destination phrase for "home", placed at the end after the time expression.',
     },
     {
       id: 'ch37-ex-72',
@@ -1404,7 +1494,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'seg-3', text: 'im Sommer' },
         { id: 'seg-4', text: 'in die Schweiz.' },
       ],
-      explanation: 'die Schweiz takes an article, so the destination phrase in die Schweiz stays together at the end.',
+      explanation:
+        'die Schweiz takes an article, so the destination phrase in die Schweiz stays together at the end.',
     },
     {
       id: 'ch37-ex-73',
@@ -1421,7 +1512,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'seg-3', text: 'wir' },
         { id: 'seg-4', text: 'ins Kino.' },
       ],
-      explanation: 'Am Abend opens the sentence, so the verb comes second (gehen), then the subject wir, then the destination ins Kino.',
+      explanation:
+        'Am Abend opens the sentence, so the verb comes second (gehen), then the subject wir, then the destination ins Kino.',
     },
     {
       id: 'ch37-ex-74',
@@ -1438,7 +1530,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'seg-3', text: 'jetzt' },
         { id: 'seg-4', text: 'zum Arzt.' },
       ],
-      explanation: 'zum Arzt (a contraction of zu + dem) is the destination phrase and closes the sentence.',
+      explanation:
+        'zum Arzt (a contraction of zu + dem) is the destination phrase and closes the sentence.',
     },
     {
       id: 'ch37-ex-75',
@@ -1454,7 +1547,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'seg-2', text: 'gehen' },
         { id: 'seg-3', text: 'zur Schule.' },
       ],
-      explanation: 'zur Schule (a contraction of zu + der) follows the verb-second word order: subject – verb – destination.',
+      explanation:
+        'zur Schule (a contraction of zu + der) follows the verb-second word order: subject – verb – destination.',
     },
     {
       id: 'ch37-ex-76',
@@ -1471,7 +1565,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'seg-3', text: 'wir' },
         { id: 'seg-4', text: 'auf den Spielplatz.' },
       ],
-      explanation: 'Am Nachmittag opens the sentence, so the verb gehen comes second, then the subject wir, then the destination phrase.',
+      explanation:
+        'Am Nachmittag opens the sentence, so the verb gehen comes second, then the subject wir, then the destination phrase.',
     },
     {
       id: 'ch37-ex-77',
@@ -1488,7 +1583,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'seg-3', text: 'wir' },
         { id: 'seg-4', text: 'an den See.' },
       ],
-      explanation: 'Im Urlaub opens the sentence, the verb fahren comes second, then the subject wir, then the destination an den See.',
+      explanation:
+        'Im Urlaub opens the sentence, the verb fahren comes second, then the subject wir, then the destination an den See.',
     },
     {
       id: 'ch37-ex-78',
@@ -1506,7 +1602,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'seg-4', text: 'ans Meer' },
         { id: 'seg-5', text: 'fahren.' },
       ],
-      explanation: 'würde sends the infinitive fahren to the end; ans Meer (an + das) is the destination phrase before it.',
+      explanation:
+        'würde sends the infinitive fahren to the end; ans Meer (an + das) is the destination phrase before it.',
     },
     {
       id: 'ch37-ex-79',
@@ -1515,7 +1612,8 @@ export const chapter037: ChapterDefinition = {
       type: 'matching',
       level: 'recognition',
       grammarFocus: ['destination-category', 'preposition-choice'],
-      instruction: 'Match each type of destination with the preposition used to introduce it.',
+      instruction:
+        'Match each type of destination with the preposition used to introduce it.',
       prompt: 'Match the destination category to its preposition.',
       pairs: [
         { id: 'pair-1', left: 'City (e.g. Hamburg)', right: 'nach' },
@@ -1524,7 +1622,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'pair-4', left: 'Open public space (e.g. der Markt)', right: 'auf' },
         { id: 'pair-5', left: 'Edge of water (e.g. der See)', right: 'an' },
       ],
-      explanation: 'Each destination category is tied to one specific preposition: nach for cities, in for countries with an article, zu for people, auf for open public spaces, an for edges and water.',
+      explanation:
+        'Each destination category is tied to one specific preposition: nach for cities, in for countries with an article, zu for people, auf for open public spaces, an for edges and water.',
     },
     {
       id: 'ch37-ex-80',
@@ -1533,7 +1632,8 @@ export const chapter037: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['contraction', 'preposition-article'],
-      instruction: 'Match each contraction with the preposition and article it comes from.',
+      instruction:
+        'Match each contraction with the preposition and article it comes from.',
       prompt: 'Match the contraction to its full preposition + article form.',
       pairs: [
         { id: 'pair-1', left: 'zum', right: 'zu + dem' },
@@ -1541,7 +1641,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'pair-3', left: 'ins', right: 'in + das' },
         { id: 'pair-4', left: 'ans', right: 'an + das' },
       ],
-      explanation: 'zum and zur contract zu with the masculine/neuter and feminine dative articles; ins and ans contract in and an with the neuter accusative article das.',
+      explanation:
+        'zum and zur contract zu with the masculine/neuter and feminine dative articles; ins and ans contract in and an with the neuter accusative article das.',
     },
     {
       id: 'ch37-ex-81',
@@ -1560,7 +1661,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'pair-5', left: 'See', right: 'an den See' },
         { id: 'pair-6', left: 'Schweiz', right: 'in die Schweiz' },
       ],
-      explanation: 'Each destination noun requires a specific preposition and, where relevant, a contraction: an enclosed space takes in (ins Kino), an institution takes zu (zum Arzt, zur Schule), an open space takes auf (auf den Spielplatz), a body of water takes an (an den See), and a country with an article takes in (in die Schweiz).',
+      explanation:
+        'Each destination noun requires a specific preposition and, where relevant, a contraction: an enclosed space takes in (ins Kino), an institution takes zu (zum Arzt, zur Schule), an open space takes auf (auf den Spielplatz), a body of water takes an (an den See), and a country with an article takes in (in die Schweiz).',
     },
     {
       id: 'ch37-ex-82',
@@ -1578,7 +1680,8 @@ export const chapter037: ChapterDefinition = {
         { id: 'pair-4', left: 'die USA', right: 'in die USA' },
         { id: 'pair-5', left: 'Deutschland', right: 'nach Deutschland' },
       ],
-      explanation: 'Countries without an article (Italien, Deutschland) take nach with no article; countries with an article (die Türkei, der Iran, die USA) take in plus the accusative article.',
+      explanation:
+        'Countries without an article (Italien, Deutschland) take nach with no article; countries with an article (die Türkei, der Iran, die USA) take in plus the accusative article.',
     },
   ],
 };

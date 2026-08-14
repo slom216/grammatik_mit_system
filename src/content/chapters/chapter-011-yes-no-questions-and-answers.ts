@@ -57,7 +57,7 @@ export const chapter011: ChapterDefinition = {
         id: 'ch11-rule-04',
         heading: 'Answering negated questions',
         paragraphs: [
-          'A negated question contains nicht or kein: Kommst du nicht mit? (Aren\'t you coming along?)',
+          "A negated question contains nicht or kein: Kommst du nicht mit? (Aren't you coming along?)",
           'If the true situation is negative (you are in fact not coming), you answer with nein: Nein, ich komme nicht mit.',
           'If the true situation is positive (you actually are coming, contradicting the negative question), you must answer with doch, not ja: Doch, ich komme mit.',
         ],
@@ -101,7 +101,8 @@ export const chapter011: ChapterDefinition = {
         german: 'Kommst du heute Abend mit?',
         english: 'Are you coming along this evening?',
         highlight: ['Kommst'],
-        explanation: 'The finite verb kommst stands in position 1; there is no question word.',
+        explanation:
+          'The finite verb kommst stands in position 1; there is no question word.',
       },
       {
         german: 'Wohnt ihr in Berlin?',
@@ -112,19 +113,22 @@ export const chapter011: ChapterDefinition = {
         german: 'Isst du gern Pizza? – Ja, ich esse sehr gern Pizza.',
         english: 'Do you like eating pizza? – Yes, I really like eating pizza.',
         highlight: ['Ja'],
-        explanation: 'The question is positive, and the answer confirms it, so ja is used.',
+        explanation:
+          'The question is positive, and the answer confirms it, so ja is used.',
       },
       {
         german: 'Trinkst du Kaffee? – Nein, ich trinke keinen Kaffee.',
         english: "Do you drink coffee? – No, I don't drink coffee.",
         highlight: ['Nein'],
-        explanation: 'The question is positive, and the answer rejects it, so nein is used.',
+        explanation:
+          'The question is positive, and the answer rejects it, so nein is used.',
       },
       {
         german: 'Kommst du nicht mit? – Doch, ich komme mit.',
         english: "Aren't you coming along? – Yes, I am coming along.",
         highlight: ['nicht mit', 'Doch'],
-        explanation: 'The question is negative, but the fact is positive, so doch contradicts it.',
+        explanation:
+          'The question is negative, but the fact is positive, so doch contradicts it.',
       },
       {
         german: 'Hast du keine Zeit? – Doch, ich habe Zeit.',
@@ -150,7 +154,8 @@ export const chapter011: ChapterDefinition = {
         german: 'Fährst du morgen nicht zur Arbeit? – Doch, ich fahre um acht Uhr.',
         english: "Aren't you going to work tomorrow? – Yes, I'm going at eight o'clock.",
         highlight: ['nicht zur Arbeit', 'Doch'],
-        explanation: 'The question is negative, but the true situation is positive, so doch contradicts it.',
+        explanation:
+          'The question is negative, but the true situation is positive, so doch contradicts it.',
       },
       {
         german: 'Kauft ihr heute Brot? – Nein, wir haben noch genug Brot.',
@@ -161,7 +166,8 @@ export const chapter011: ChapterDefinition = {
         german: 'Wollen wir zusammen kochen?',
         english: 'Shall we cook together?',
         highlight: ['Wollen'],
-        explanation: 'Even with a modal verb, the finite verb wollen still stands in position 1.',
+        explanation:
+          'Even with a modal verb, the finite verb wollen still stands in position 1.',
       },
     ],
     commonMistakes: [
@@ -180,7 +186,8 @@ export const chapter011: ChapterDefinition = {
       {
         incorrect: 'Ja ich komme mit.',
         correct: 'Ja, ich komme mit.',
-        explanation: 'ja and nein are set off from the rest of the sentence with a comma.',
+        explanation:
+          'ja and nein are set off from the rest of the sentence with a comma.',
       },
       {
         incorrect: 'Isst du kein Fleisch? – Nein, ich esse Fleisch.',
@@ -326,7 +333,8 @@ export const chapter011: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['yes-no-questions', 'w-questions'],
-      instruction: 'Choose the sentence that is a yes/no question rather than a W-question.',
+      instruction:
+        'Choose the sentence that is a yes/no question rather than a W-question.',
       prompt: 'Which of these is a yes/no question rather than a W-question?',
       options: [
         { id: 'a', text: 'Warum lernst du Deutsch?' },
@@ -491,13 +499,15 @@ export const chapter011: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['ja-nein-doch'],
-      instruction: 'Complete the answer with ja, nein, or doch. Capitalisation is not checked.',
+      instruction:
+        'Complete the answer with ja, nein, or doch. Capitalisation is not checked.',
       prompt: 'Wohnst du in München? – ___, ich wohne in München.',
       acceptedAnswers: ['ja'],
       answerMode: 'caseInsensitive',
       placeholder: 'ja / nein / doch',
       maxLength: 10,
-      explanation: 'The question is positive and the answer confirms it, so ja is correct.',
+      explanation:
+        'The question is positive and the answer confirms it, so ja is correct.',
     },
     {
       id: 'ch11-ex-17',
@@ -506,7 +516,8 @@ export const chapter011: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['ja-nein-doch', 'negation'],
-      instruction: 'Complete the answer with ja, nein, or doch. Capitalisation is not checked.',
+      instruction:
+        'Complete the answer with ja, nein, or doch. Capitalisation is not checked.',
       prompt: 'Isst du kein Gemüse? – ___, ich esse sehr gern Gemüse.',
       acceptedAnswers: ['doch'],
       answerMode: 'caseInsensitive',
@@ -522,7 +533,8 @@ export const chapter011: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['ja-nein-doch', 'negation'],
-      instruction: 'Complete the answer with ja, nein, or doch. Capitalisation is not checked.',
+      instruction:
+        'Complete the answer with ja, nein, or doch. Capitalisation is not checked.',
       prompt: 'Kommt Anna heute nicht zur Party? – ___, sie kommt nicht.',
       acceptedAnswers: ['nein'],
       answerMode: 'caseInsensitive',
@@ -540,7 +552,8 @@ export const chapter011: ChapterDefinition = {
       grammarFocus: ['short-full-answers', 'ja-nein-doch'],
       instruction:
         'Answer the question with a full sentence, using ja and the cue words. Capitalisation and punctuation are checked.',
-      prompt: 'Frage: Machst du heute deine Hausaufgaben? (ja – ich – machen – heute – meine Hausaufgaben)',
+      prompt:
+        'Frage: Machst du heute deine Hausaufgaben? (ja – ich – machen – heute – meine Hausaufgaben)',
       acceptedAnswers: ['Ja, ich mache heute meine Hausaufgaben.'],
       answerMode: 'normalized',
       placeholder: 'Ja, ...',
@@ -557,7 +570,8 @@ export const chapter011: ChapterDefinition = {
       grammarFocus: ['short-full-answers', 'ja-nein-doch'],
       instruction:
         'Answer the question with a full sentence, using nein and the cue words. Capitalisation and punctuation are checked.',
-      prompt: 'Frage: Trinkst du Kaffee am Abend? (nein – ich – trinken – keinen Kaffee – am Abend)',
+      prompt:
+        'Frage: Trinkst du Kaffee am Abend? (nein – ich – trinken – keinen Kaffee – am Abend)',
       acceptedAnswers: ['Nein, ich trinke keinen Kaffee am Abend.'],
       answerMode: 'normalized',
       placeholder: 'Nein, ...',
@@ -574,7 +588,8 @@ export const chapter011: ChapterDefinition = {
       grammarFocus: ['ja-nein-doch', 'negation'],
       instruction:
         'Answer the question with a full sentence, using doch and the cue words. Capitalisation and punctuation are checked.',
-      prompt: 'Frage: Hilfst du deiner Schwester nicht? (doch – ich – helfen – meiner Schwester)',
+      prompt:
+        'Frage: Hilfst du deiner Schwester nicht? (doch – ich – helfen – meiner Schwester)',
       acceptedAnswers: ['Doch, ich helfe meiner Schwester.'],
       answerMode: 'normalized',
       placeholder: 'Doch, ...',
@@ -606,7 +621,8 @@ export const chapter011: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['ja-nein-doch', 'negation'],
-      instruction: 'Answer with a full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Answer with a full sentence. Capitalisation and punctuation are checked.',
       prompt:
         'Deine Freundin fragt: "Wohnst du nicht mehr in Köln?" Du wohnst aber immer noch in Köln. Antworte mit einem vollständigen Satz.',
       acceptedAnswers: [
@@ -755,7 +771,8 @@ export const chapter011: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['ja-nein-doch', 'negation'],
       instruction: 'Arrange the segments to form a correct contradicting answer.',
-      prompt: 'Contradict the negative question "Kommst du nicht mit?": say yes, you are coming.',
+      prompt:
+        'Contradict the negative question "Kommst du nicht mit?": say yes, you are coming.',
       segments: [
         { id: 'ch11-ex31-s1', text: 'Doch,' },
         { id: 'ch11-ex31-s2', text: 'ich' },
@@ -772,7 +789,8 @@ export const chapter011: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['yes-no-questions', 'word-order'],
-      instruction: 'Arrange the segments to form a correct yes/no question with a modal verb.',
+      instruction:
+        'Arrange the segments to form a correct yes/no question with a modal verb.',
       prompt: 'Ask whether we want to cook together.',
       segments: [
         { id: 'ch11-ex32-s1', text: 'Wollen' },
@@ -790,7 +808,8 @@ export const chapter011: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['yes-no-questions', 'word-order'],
-      instruction: 'Arrange the segments to form a correct yes/no question with a separable verb.',
+      instruction:
+        'Arrange the segments to form a correct yes/no question with a separable verb.',
       prompt: 'Ask whether she gets up early every day.',
       segments: [
         { id: 'ch11-ex33-s1', text: 'Steht' },
@@ -883,7 +902,8 @@ export const chapter011: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['yes-no-questions', 'w-questions'],
-      instruction: 'Choose the sentence that is a yes/no question rather than a W-question.',
+      instruction:
+        'Choose the sentence that is a yes/no question rather than a W-question.',
       prompt: 'Which of these is a yes/no question rather than a W-question?',
       options: [
         { id: 'a', text: 'Wo wohnst du?' },
@@ -910,7 +930,8 @@ export const chapter011: ChapterDefinition = {
         { id: 'c', text: 'Doch' },
       ],
       correctOptionId: 'a',
-      explanation: 'The question is positive, and the answer confirms it, so ja is correct.',
+      explanation:
+        'The question is positive, and the answer confirms it, so ja is correct.',
     },
     {
       id: 'ch11-ex-40',
@@ -995,7 +1016,8 @@ export const chapter011: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['yes-no-questions'],
       instruction: 'Choose the question that fits the given answer.',
-      prompt: 'Which question fits this answer? "Doch, ich spreche ein bisschen Französisch."',
+      prompt:
+        'Which question fits this answer? "Doch, ich spreche ein bisschen Französisch."',
       options: [
         { id: 'a', text: 'Sprichst du Französisch?' },
         { id: 'b', text: 'Sprichst du kein Französisch?' },
@@ -1074,7 +1096,8 @@ export const chapter011: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Lernt ...',
       maxLength: 40,
-      explanation: 'lernt moves to position 1 and ihr to position 2: Lernt ihr jeden Tag Deutsch?',
+      explanation:
+        'lernt moves to position 1 and ihr to position 2: Lernt ihr jeden Tag Deutsch?',
     },
     {
       id: 'ch11-ex-49',
@@ -1083,13 +1106,15 @@ export const chapter011: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['ja-nein-doch'],
-      instruction: 'Complete the answer with ja, nein, or doch. Capitalisation is not checked.',
+      instruction:
+        'Complete the answer with ja, nein, or doch. Capitalisation is not checked.',
       prompt: 'Arbeitet Paul bei einer Bank? – ___, er arbeitet bei einer Bank.',
       acceptedAnswers: ['ja'],
       answerMode: 'caseInsensitive',
       placeholder: 'ja / nein / doch',
       maxLength: 10,
-      explanation: 'The question is positive and the answer confirms it, so ja is correct.',
+      explanation:
+        'The question is positive and the answer confirms it, so ja is correct.',
     },
     {
       id: 'ch11-ex-50',
@@ -1098,7 +1123,8 @@ export const chapter011: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['ja-nein-doch', 'negation'],
-      instruction: 'Complete the answer with ja, nein, or doch. Capitalisation is not checked.',
+      instruction:
+        'Complete the answer with ja, nein, or doch. Capitalisation is not checked.',
       prompt: 'Hast du keine Geschwister? – ___, ich habe zwei Brüder.',
       acceptedAnswers: ['doch'],
       answerMode: 'caseInsensitive',
@@ -1114,7 +1140,8 @@ export const chapter011: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['ja-nein-doch', 'negation'],
-      instruction: 'Complete the answer with ja, nein, or doch. Capitalisation is not checked.',
+      instruction:
+        'Complete the answer with ja, nein, or doch. Capitalisation is not checked.',
       prompt: 'Fährt der Bus heute nicht? – ___, er fährt heute nicht.',
       acceptedAnswers: ['nein'],
       answerMode: 'caseInsensitive',
@@ -1132,7 +1159,8 @@ export const chapter011: ChapterDefinition = {
       grammarFocus: ['short-full-answers', 'ja-nein-doch'],
       instruction:
         'Answer the question with a full sentence, using ja and the cue words. Capitalisation and punctuation are checked.',
-      prompt: 'Frage: Besuchst du deine Oma am Sonntag? (ja – ich – besuchen – meine Oma – am Sonntag)',
+      prompt:
+        'Frage: Besuchst du deine Oma am Sonntag? (ja – ich – besuchen – meine Oma – am Sonntag)',
       acceptedAnswers: ['Ja, ich besuche meine Oma am Sonntag.'],
       answerMode: 'normalized',
       placeholder: 'Ja, ...',
@@ -1164,12 +1192,11 @@ export const chapter011: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['ja-nein-doch', 'negation'],
-      instruction: 'Answer with a full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Answer with a full sentence. Capitalisation and punctuation are checked.',
       prompt:
         'Dein Kollege fragt: "Arbeitest du nicht heute Nachmittag?" Du arbeitest aber heute Nachmittag. Antworte mit einem vollständigen Satz.',
-      acceptedAnswers: [
-        'Doch, ich arbeite heute Nachmittag.',
-      ],
+      acceptedAnswers: ['Doch, ich arbeite heute Nachmittag.'],
       answerMode: 'normalized',
       placeholder: 'Doch, ...',
       maxLength: 60,
@@ -1200,7 +1227,8 @@ export const chapter011: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['yes-no-questions', 'word-order', 'error-correction'],
-      instruction: 'Find the token that breaks the yes/no question word order, and correct it.',
+      instruction:
+        'Find the token that breaks the yes/no question word order, and correct it.',
       prompt: 'Ein Lerner versucht eine Ja/Nein-Frage zu bilden. Etwas stimmt nicht.',
       tokens: ['Du', 'kommst', 'heute', 'mit?'],
       errorTokenIndex: 0,
@@ -1215,7 +1243,8 @@ export const chapter011: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['yes-no-questions', 'word-order', 'error-correction'],
-      instruction: 'Find the token that breaks the yes/no question word order, and correct it.',
+      instruction:
+        'Find the token that breaks the yes/no question word order, and correct it.',
       prompt: 'Ein Lerner versucht eine Ja/Nein-Frage zu bilden. Etwas stimmt nicht.',
       tokens: ['Sie', 'wohnt', 'in', 'München?'],
       errorTokenIndex: 0,
@@ -1231,7 +1260,8 @@ export const chapter011: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['ja-nein-doch', 'negation', 'error-correction'],
       instruction: 'Find the token that uses the wrong answer word, and correct it.',
-      prompt: 'Frage: "Kommst du nicht mit?" Du kommst aber mit. Etwas stimmt in der Antwort nicht.',
+      prompt:
+        'Frage: "Kommst du nicht mit?" Du kommst aber mit. Etwas stimmt in der Antwort nicht.',
       tokens: ['Ja,', 'ich', 'komme', 'mit.'],
       errorTokenIndex: 0,
       correction: 'Doch,',
@@ -1245,8 +1275,10 @@ export const chapter011: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['yes-no-questions', 'word-order', 'error-correction'],
-      instruction: 'Find the token that breaks the yes/no question word order, and correct it.',
-      prompt: 'Ein Lerner versucht eine Ja/Nein-Frage mit Trennverb zu bilden. Etwas stimmt nicht.',
+      instruction:
+        'Find the token that breaks the yes/no question word order, and correct it.',
+      prompt:
+        'Ein Lerner versucht eine Ja/Nein-Frage mit Trennverb zu bilden. Etwas stimmt nicht.',
       tokens: ['Du', 'stehst', 'früh', 'auf?'],
       errorTokenIndex: 0,
       correction: 'Stehst',

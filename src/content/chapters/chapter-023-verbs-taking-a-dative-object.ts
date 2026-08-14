@@ -112,88 +112,103 @@ export const chapter023: ChapterDefinition = {
         german: 'Ich helfe meinem Bruder.',
         english: 'I am helping my brother.',
         highlight: ['meinem Bruder'],
-        explanation: 'helfen always takes the dative; Bruder is masculine, so the article ending is -em: meinem.',
+        explanation:
+          'helfen always takes the dative; Bruder is masculine, so the article ending is -em: meinem.',
       },
       {
         german: 'Der Lehrer antwortet den Schülern.',
         english: 'The teacher answers the students.',
         highlight: ['den Schülern'],
-        explanation: 'antworten takes the dative; Schülern is plural dative, marked with -n and the article den.',
+        explanation:
+          'antworten takes the dative; Schülern is plural dative, marked with -n and the article den.',
       },
       {
         german: 'Das Auto gehört meiner Schwester.',
         english: 'The car belongs to my sister.',
         highlight: ['meiner Schwester'],
-        explanation: 'gehören always takes the dative; Schwester is feminine, so the article ending is -er: meiner.',
+        explanation:
+          'gehören always takes the dative; Schwester is feminine, so the article ending is -er: meiner.',
       },
       {
         german: 'Wir danken unseren Eltern für das Geschenk.',
         english: 'We thank our parents for the gift.',
         highlight: ['unseren Eltern'],
-        explanation: 'danken takes the dative; Eltern is plural dative, marked with -n and the article unseren.',
+        explanation:
+          'danken takes the dative; Eltern is plural dative, marked with -n and the article unseren.',
       },
       {
         german: 'Der Film gefällt mir sehr gut.',
         english: 'I like the film very much.',
         highlight: ['mir'],
-        explanation: 'gefällt names what pleases; the person experiencing that impression, ich, stands in the dative: mir.',
+        explanation:
+          'gefällt names what pleases; the person experiencing that impression, ich, stands in the dative: mir.',
       },
       {
         german: 'Das Kleid passt dir wirklich gut.',
         english: 'The dress really fits you well.',
         highlight: ['dir'],
-        explanation: 'passen takes the dative to mark whose size or fit is meant; du becomes dir.',
+        explanation:
+          'passen takes the dative to mark whose size or fit is meant; du becomes dir.',
       },
       {
         german: 'Die Suppe schmeckt den Kindern.',
         english: 'The soup tastes good to the children.',
         highlight: ['den Kindern'],
-        explanation: 'schmecken takes the dative; Kindern is plural dative, marked with -n and the article den.',
+        explanation:
+          'schmecken takes the dative; Kindern is plural dative, marked with -n and the article den.',
       },
       {
         german: 'Ich glaube dir nicht.',
         english: 'I do not believe you.',
         highlight: ['dir'],
-        explanation: 'glauben (in the sense of believing a person) takes the dative; du becomes dir, not dich.',
+        explanation:
+          'glauben (in the sense of believing a person) takes the dative; du becomes dir, not dich.',
       },
       {
         german: 'Der Hund folgt seinem Besitzer überallhin.',
         english: 'The dog follows its owner everywhere.',
         highlight: ['seinem Besitzer'],
-        explanation: 'folgen takes the dative; Besitzer is masculine, so the possessive ending is -em: seinem.',
+        explanation:
+          'folgen takes the dative; Besitzer is masculine, so the possessive ending is -em: seinem.',
       },
       {
         german: 'Wir gratulieren ihm zum Geburtstag.',
         english: 'We congratulate him on his birthday.',
         highlight: ['ihm'],
-        explanation: 'gratulieren takes the dative; er becomes ihm, the dative masculine/neuter pronoun.',
+        explanation:
+          'gratulieren takes the dative; er becomes ihm, the dative masculine/neuter pronoun.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich helfe meinen Bruder.',
         correct: 'Ich helfe meinem Bruder.',
-        explanation: 'helfen always takes the dative, never the accusative, even though the English equivalent "help someone" is transitive.',
+        explanation:
+          'helfen always takes the dative, never the accusative, even though the English equivalent "help someone" is transitive.',
       },
       {
         incorrect: 'Er dankt seine Mutter.',
         correct: 'Er dankt seiner Mutter.',
-        explanation: 'danken governs the dative; Mutter is feminine, so the possessive article needs the dative ending -er: seiner.',
+        explanation:
+          'danken governs the dative; Mutter is feminine, so the possessive article needs the dative ending -er: seiner.',
       },
       {
         incorrect: 'Das Buch gehört mich.',
         correct: 'Das Buch gehört mir.',
-        explanation: 'gehören always takes the dative pronoun mir, not the accusative pronoun mich.',
+        explanation:
+          'gehören always takes the dative pronoun mir, not the accusative pronoun mich.',
       },
       {
         incorrect: 'Die Farbe gefällt ihn.',
         correct: 'Die Farbe gefällt ihm.',
-        explanation: 'gefallen takes the dative pronoun ihm, not the accusative pronoun ihn.',
+        explanation:
+          'gefallen takes the dative pronoun ihm, not the accusative pronoun ihn.',
       },
       {
         incorrect: 'Ich antworte den Lehrer.',
         correct: 'Ich antworte dem Lehrer.',
-        explanation: 'antworten takes the dative; Lehrer is masculine, so the article must be the dative dem, not the accusative den.',
+        explanation:
+          'antworten takes the dative; Lehrer is masculine, so the article must be the dative dem, not the accusative den.',
       },
     ],
     remember: [
@@ -226,7 +241,8 @@ export const chapter023: ChapterDefinition = {
         { id: 'd', text: 'meiner' },
       ],
       correctOptionId: 'b',
-      explanation: 'helfen always takes the dative; Bruder is masculine, so the dative ending is -em: meinem.',
+      explanation:
+        'helfen always takes the dative; Bruder is masculine, so the dative ending is -em: meinem.',
     },
     {
       id: 'ch23-ex-02',
@@ -244,7 +260,8 @@ export const chapter023: ChapterDefinition = {
         { id: 'd', text: 'meinen' },
       ],
       correctOptionId: 'c',
-      explanation: 'gefallen takes the dative; Schwester is feminine, so the dative ending is -er: meiner.',
+      explanation:
+        'gefallen takes the dative; Schwester is feminine, so the dative ending is -er: meiner.',
     },
     {
       id: 'ch23-ex-03',
@@ -262,7 +279,8 @@ export const chapter023: ChapterDefinition = {
         { id: 'd', text: 'meinen' },
       ],
       correctOptionId: 'd',
-      explanation: 'gehören takes the dative; Eltern is plural, so the dative ending is -en: meinen.',
+      explanation:
+        'gehören takes the dative; Eltern is plural, so the dative ending is -en: meinen.',
     },
     {
       id: 'ch23-ex-04',
@@ -280,7 +298,8 @@ export const chapter023: ChapterDefinition = {
         { id: 'd', text: 'des' },
       ],
       correctOptionId: 'a',
-      explanation: 'antworten takes the dative; Lehrer is masculine, so the dative article is dem.',
+      explanation:
+        'antworten takes the dative; Lehrer is masculine, so the dative article is dem.',
     },
     {
       id: 'ch23-ex-05',
@@ -298,7 +317,8 @@ export const chapter023: ChapterDefinition = {
         { id: 'd', text: 'deiner' },
       ],
       correctOptionId: 'b',
-      explanation: 'danken takes the dative; du becomes the dative pronoun dir, not the accusative dich.',
+      explanation:
+        'danken takes the dative; du becomes the dative pronoun dir, not the accusative dich.',
     },
     {
       id: 'ch23-ex-06',
@@ -334,7 +354,8 @@ export const chapter023: ChapterDefinition = {
         { id: 'd', text: 'mir' },
       ],
       correctOptionId: 'd',
-      explanation: 'schmecken takes the dative; ich becomes the dative pronoun mir, not the accusative mich.',
+      explanation:
+        'schmecken takes the dative; ich becomes the dative pronoun mir, not the accusative mich.',
     },
     {
       id: 'ch23-ex-08',
@@ -352,7 +373,8 @@ export const chapter023: ChapterDefinition = {
         { id: 'd', text: 'sie' },
       ],
       correctOptionId: 'a',
-      explanation: 'folgen takes the dative; er becomes the dative pronoun ihm, not the accusative ihn.',
+      explanation:
+        'folgen takes the dative; er becomes the dative pronoun ihm, not the accusative ihn.',
     },
     {
       id: 'ch23-ex-09',
@@ -361,7 +383,8 @@ export const chapter023: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['gratulieren', 'dative', 'feminine'],
-      instruction: 'Choose the correct dative article. One option wrongly uses the accusative case.',
+      instruction:
+        'Choose the correct dative article. One option wrongly uses the accusative case.',
       prompt: 'Ich gratuliere ___ Kollegin zum neuen Job. (die Kollegin = feminine)',
       options: [
         { id: 'a', text: 'die' },
@@ -370,7 +393,8 @@ export const chapter023: ChapterDefinition = {
         { id: 'd', text: 'dem' },
       ],
       correctOptionId: 'b',
-      explanation: 'gratulieren takes the dative; Kollegin is feminine, so the dative article is der, not the accusative-looking die.',
+      explanation:
+        'gratulieren takes the dative; Kollegin is feminine, so the dative article is der, not the accusative-looking die.',
     },
     {
       id: 'ch23-ex-10',
@@ -379,7 +403,8 @@ export const chapter023: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['glauben', 'dative', 'feminine'],
-      instruction: 'Choose the correct dative article. One option wrongly uses the accusative case.',
+      instruction:
+        'Choose the correct dative article. One option wrongly uses the accusative case.',
       prompt: 'Er glaubt ___ Geschichte nicht. (die Geschichte = feminine)',
       options: [
         { id: 'a', text: 'die' },
@@ -388,7 +413,8 @@ export const chapter023: ChapterDefinition = {
         { id: 'd', text: 'dem' },
       ],
       correctOptionId: 'c',
-      explanation: 'glauben (believing a statement) takes the dative; Geschichte is feminine, so the dative article is der.',
+      explanation:
+        'glauben (believing a statement) takes the dative; Geschichte is feminine, so the dative article is der.',
     },
     {
       id: 'ch23-ex-11',
@@ -397,7 +423,8 @@ export const chapter023: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['helfen', 'dative', 'masculine'],
-      instruction: 'Choose the correct dative article. One option wrongly uses the accusative case.',
+      instruction:
+        'Choose the correct dative article. One option wrongly uses the accusative case.',
       prompt: 'Sie hilft ___ Freund beim Umzug. (der Freund = masculine)',
       options: [
         { id: 'a', text: 'den' },
@@ -406,7 +433,8 @@ export const chapter023: ChapterDefinition = {
         { id: 'd', text: 'dem' },
       ],
       correctOptionId: 'd',
-      explanation: 'helfen takes the dative; Freund is masculine, so the dative article is dem, not the accusative den.',
+      explanation:
+        'helfen takes the dative; Freund is masculine, so the dative article is dem, not the accusative den.',
     },
     {
       id: 'ch23-ex-12',
@@ -415,7 +443,8 @@ export const chapter023: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['gehören', 'dative', 'plural'],
-      instruction: 'Choose the correct dative article. One option wrongly uses the accusative case.',
+      instruction:
+        'Choose the correct dative article. One option wrongly uses the accusative case.',
       prompt: 'Das Haus gehört ___ Großeltern. (die Großeltern = plural)',
       options: [
         { id: 'a', text: 'den' },
@@ -424,7 +453,8 @@ export const chapter023: ChapterDefinition = {
         { id: 'd', text: 'dem' },
       ],
       correctOptionId: 'a',
-      explanation: 'gehören takes the dative; Großeltern is plural, so the dative article is den, not the accusative die.',
+      explanation:
+        'gehören takes the dative; Großeltern is plural, so the dative article is den, not the accusative die.',
     },
     {
       id: 'ch23-ex-13',
@@ -484,7 +514,8 @@ export const chapter023: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'uns / euch / ihnen / Ihnen',
       maxLength: 15,
-      explanation: 'danken takes the dative; the formal Sie becomes the dative pronoun Ihnen.',
+      explanation:
+        'danken takes the dative; the formal Sie becomes the dative pronoun Ihnen.',
     },
     {
       id: 'ch23-ex-17',
@@ -499,7 +530,8 @@ export const chapter023: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dem / der / den',
       maxLength: 10,
-      explanation: 'gehören takes the dative; Kind is neuter, so the dative article is dem.',
+      explanation:
+        'gehören takes the dative; Kind is neuter, so the dative article is dem.',
     },
     {
       id: 'ch23-ex-18',
@@ -514,7 +546,8 @@ export const chapter023: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dem / der / den',
       maxLength: 10,
-      explanation: 'antworten takes the dative; Frau is feminine, so the dative article is der.',
+      explanation:
+        'antworten takes the dative; Frau is feminine, so the dative article is der.',
     },
     {
       id: 'ch23-ex-19',
@@ -529,7 +562,8 @@ export const chapter023: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'meinem / meiner / meinen',
       maxLength: 15,
-      explanation: 'passen takes the dative; Freundin is feminine, so the possessive article ending is -er: meiner.',
+      explanation:
+        'passen takes the dative; Freundin is feminine, so the possessive article ending is -er: meiner.',
     },
     {
       id: 'ch23-ex-20',
@@ -544,7 +578,8 @@ export const chapter023: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dem / der / den',
       maxLength: 10,
-      explanation: 'gratulieren takes the dative; Schülern is plural dative, so the article is den.',
+      explanation:
+        'gratulieren takes the dative; Schülern is plural dative, so the article is den.',
     },
     {
       id: 'ch23-ex-21',
@@ -553,13 +588,15 @@ export const chapter023: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['helfen', 'word-order', 'dative'],
-      instruction: 'Write a complete sentence using the cue words. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence using the cue words. Capitalisation is checked; no full stop is required.',
       prompt: 'ich – helfen – mein Vater (dative)',
       acceptedAnswers: ['Ich helfe meinem Vater.', 'Ich helfe meinem Vater'],
       answerMode: 'normalized',
       placeholder: 'Ich helfe ...',
       maxLength: 60,
-      explanation: 'helfen takes the dative; Vater is masculine, so the article is meinem: Ich helfe meinem Vater.',
+      explanation:
+        'helfen takes the dative; Vater is masculine, so the article is meinem: Ich helfe meinem Vater.',
     },
     {
       id: 'ch23-ex-22',
@@ -568,13 +605,18 @@ export const chapter023: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['gehören', 'word-order', 'dative'],
-      instruction: 'Write a complete sentence using the cue words. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence using the cue words. Capitalisation is checked; no full stop is required.',
       prompt: 'die Tasche – gehören – meine Mutter (dative)',
-      acceptedAnswers: ['Die Tasche gehört meiner Mutter.', 'Die Tasche gehört meiner Mutter'],
+      acceptedAnswers: [
+        'Die Tasche gehört meiner Mutter.',
+        'Die Tasche gehört meiner Mutter',
+      ],
       answerMode: 'normalized',
       placeholder: 'Die Tasche gehört ...',
       maxLength: 60,
-      explanation: 'gehören takes the dative; Mutter is feminine, so the article is meiner: Die Tasche gehört meiner Mutter.',
+      explanation:
+        'gehören takes the dative; Mutter is feminine, so the article is meiner: Die Tasche gehört meiner Mutter.',
     },
     {
       id: 'ch23-ex-23',
@@ -583,13 +625,15 @@ export const chapter023: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['gefallen', 'word-order', 'question'],
-      instruction: 'Write a complete question using the cue words. Capitalisation and the question mark are checked.',
+      instruction:
+        'Write a complete question using the cue words. Capitalisation and the question mark are checked.',
       prompt: 'gefallen – dir – der Film (question)',
       acceptedAnswers: ['Gefällt dir der Film?'],
       answerMode: 'normalized',
       placeholder: 'Gefällt ...',
       maxLength: 60,
-      explanation: 'gefallen takes the dative; du becomes dir, and the conjugated verb moves to position 1 in a yes/no question: Gefällt dir der Film?',
+      explanation:
+        'gefallen takes the dative; du becomes dir, and the conjugated verb moves to position 1 in a yes/no question: Gefällt dir der Film?',
     },
     {
       id: 'ch23-ex-24',
@@ -598,13 +642,15 @@ export const chapter023: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['helfen', 'dative-pronoun', 'mixed-review'],
-      instruction: 'Complete the exchange with the correct dative forms. Capitalisation and punctuation are checked.',
+      instruction:
+        'Complete the exchange with the correct dative forms. Capitalisation and punctuation are checked.',
       prompt: 'Hilfst du ___ Kollegin? (deine Kollegin) – Ja, ich helfe ___ gern. (sie)',
       acceptedAnswers: ['Hilfst du deiner Kollegin? – Ja, ich helfe ihr gern.'],
       answerMode: 'normalized',
       placeholder: 'Hilfst du ... – Ja, ich helfe ...',
       maxLength: 90,
-      explanation: 'Kollegin is feminine, so the dative article is deiner; in the answer, sie (she) is replaced by the dative pronoun ihr.',
+      explanation:
+        'Kollegin is feminine, so the dative article is deiner; in the answer, sie (she) is replaced by the dative pronoun ihr.',
     },
     {
       id: 'ch23-ex-25',
@@ -640,7 +686,8 @@ export const chapter023: ChapterDefinition = {
         { id: 'd', text: 'dem' },
       ],
       correctOptionId: 'b',
-      explanation: 'antworten takes the dative; Lehrern is plural dative, so the article is den.',
+      explanation:
+        'antworten takes the dative; Lehrern is plural dative, so the article is den.',
     },
     {
       id: 'ch23-ex-27',
@@ -676,7 +723,8 @@ export const chapter023: ChapterDefinition = {
         { id: 'd', text: 'des' },
       ],
       correctOptionId: 'b',
-      explanation: 'gehören takes the dative; Nachbar is masculine, so the dative article is dem.',
+      explanation:
+        'gehören takes the dative; Nachbar is masculine, so the dative article is dem.',
     },
     {
       id: 'ch23-ex-29',
@@ -712,7 +760,8 @@ export const chapter023: ChapterDefinition = {
         { id: 'd', text: 'ihm' },
       ],
       correctOptionId: 'b',
-      explanation: 'glauben takes the dative; the formal Sie becomes the dative pronoun Ihnen.',
+      explanation:
+        'glauben takes the dative; the formal Sie becomes the dative pronoun Ihnen.',
     },
     {
       id: 'ch23-ex-31',
@@ -721,7 +770,8 @@ export const chapter023: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['folgen', 'dative', 'feminine'],
-      instruction: 'Choose the correct dative article. One option wrongly uses the accusative case.',
+      instruction:
+        'Choose the correct dative article. One option wrongly uses the accusative case.',
       prompt: 'Die Kinder folgen ___ Mutter überallhin. (die Mutter = feminine)',
       options: [
         { id: 'a', text: 'die' },
@@ -730,7 +780,8 @@ export const chapter023: ChapterDefinition = {
         { id: 'd', text: 'dem' },
       ],
       correctOptionId: 'c',
-      explanation: 'folgen takes the dative; Mutter is feminine, so the dative article is der.',
+      explanation:
+        'folgen takes the dative; Mutter is feminine, so the dative article is der.',
     },
     {
       id: 'ch23-ex-32',
@@ -748,7 +799,8 @@ export const chapter023: ChapterDefinition = {
         { id: 'd', text: 'dem' },
       ],
       correctOptionId: 'b',
-      explanation: 'passen takes the dative; Füßen is plural dative, so the article is den.',
+      explanation:
+        'passen takes the dative; Füßen is plural dative, so the article is den.',
     },
     {
       id: 'ch23-ex-33',
@@ -766,7 +818,8 @@ export const chapter023: ChapterDefinition = {
         { id: 'd', text: 'dem' },
       ],
       correctOptionId: 'd',
-      explanation: 'gratulieren takes the dative; Kind is neuter, so the dative article is dem.',
+      explanation:
+        'gratulieren takes the dative; Kind is neuter, so the dative article is dem.',
     },
     {
       id: 'ch23-ex-34',
@@ -775,7 +828,8 @@ export const chapter023: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['danken', 'dative', 'plural'],
-      instruction: 'Choose the correct dative article. One option wrongly uses the accusative case.',
+      instruction:
+        'Choose the correct dative article. One option wrongly uses the accusative case.',
       prompt: 'Sie danken ___ Männern für die Hilfe. (die Männer = plural)',
       options: [
         { id: 'a', text: 'die' },
@@ -784,7 +838,8 @@ export const chapter023: ChapterDefinition = {
         { id: 'd', text: 'der' },
       ],
       correctOptionId: 'b',
-      explanation: 'danken takes the dative; Männern is plural dative, so the article is den, not the accusative-looking die.',
+      explanation:
+        'danken takes the dative; Männern is plural dative, so the article is den, not the accusative-looking die.',
     },
     {
       id: 'ch23-ex-35',
@@ -793,7 +848,8 @@ export const chapter023: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['vertrauen', 'dative-pronoun'],
-      instruction: 'vertrauen (to trust) is another verb that takes only a dative object. Choose the correct dative pronoun.',
+      instruction:
+        'vertrauen (to trust) is another verb that takes only a dative object. Choose the correct dative pronoun.',
       prompt: 'Ich vertraue ___ völlig. (du)',
       options: [
         { id: 'a', text: 'dich' },
@@ -802,7 +858,8 @@ export const chapter023: ChapterDefinition = {
         { id: 'd', text: 'dein' },
       ],
       correctOptionId: 'b',
-      explanation: 'vertrauen takes the dative; du becomes the dative pronoun dir, not the accusative dich.',
+      explanation:
+        'vertrauen takes the dative; du becomes the dative pronoun dir, not the accusative dich.',
     },
     {
       id: 'ch23-ex-36',
@@ -811,7 +868,8 @@ export const chapter023: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['gehorchen', 'dative', 'possessive-articles', 'masculine'],
-      instruction: 'gehorchen (to obey) is another verb that takes only a dative object. Choose the correct possessive article.',
+      instruction:
+        'gehorchen (to obey) is another verb that takes only a dative object. Choose the correct possessive article.',
       prompt: 'Der Hund gehorcht ___ Herrn sofort. (sein Herr = his master)',
       options: [
         { id: 'a', text: 'seinen' },
@@ -820,7 +878,8 @@ export const chapter023: ChapterDefinition = {
         { id: 'd', text: 'seines' },
       ],
       correctOptionId: 'b',
-      explanation: 'gehorchen takes the dative; Herr is masculine, so the possessive article ending is -em: seinem.',
+      explanation:
+        'gehorchen takes the dative; Herr is masculine, so the possessive article ending is -em: seinem.',
     },
     {
       id: 'ch23-ex-37',
@@ -850,7 +909,8 @@ export const chapter023: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dem / der / den',
       maxLength: 10,
-      explanation: 'antworten takes the dative; Chef is masculine, so the dative article is dem.',
+      explanation:
+        'antworten takes the dative; Chef is masculine, so the dative article is dem.',
     },
     {
       id: 'ch23-ex-39',
@@ -880,7 +940,8 @@ export const chapter023: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'meinem / meiner / meinen',
       maxLength: 15,
-      explanation: 'gehören takes the dative; Tochter is feminine, so the possessive article ending is -er: meiner.',
+      explanation:
+        'gehören takes the dative; Tochter is feminine, so the possessive article ending is -er: meiner.',
     },
     {
       id: 'ch23-ex-41',
@@ -910,7 +971,8 @@ export const chapter023: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dem / der / den',
       maxLength: 10,
-      explanation: 'glauben takes the dative; Mann is masculine, so the dative article is dem.',
+      explanation:
+        'glauben takes the dative; Mann is masculine, so the dative article is dem.',
     },
     {
       id: 'ch23-ex-43',
@@ -925,7 +987,8 @@ export const chapter023: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'ihm / ihr / ihnen / Ihnen',
       maxLength: 15,
-      explanation: 'folgen takes the dative; sie (they) becomes the dative pronoun ihnen.',
+      explanation:
+        'folgen takes the dative; sie (they) becomes the dative pronoun ihnen.',
     },
     {
       id: 'ch23-ex-44',
@@ -955,7 +1018,8 @@ export const chapter023: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'uns / euch / ihnen / Ihnen',
       maxLength: 15,
-      explanation: 'gratulieren takes the dative; the formal Sie becomes the dative pronoun Ihnen.',
+      explanation:
+        'gratulieren takes the dative; the formal Sie becomes the dative pronoun Ihnen.',
     },
     {
       id: 'ch23-ex-46',
@@ -964,13 +1028,15 @@ export const chapter023: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['antworten', 'word-order', 'dative'],
-      instruction: 'Write a complete sentence using the cue words. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence using the cue words. Capitalisation is checked; no full stop is required.',
       prompt: 'du – antworten – dein Lehrer (dative)',
       acceptedAnswers: ['Du antwortest deinem Lehrer.', 'Du antwortest deinem Lehrer'],
       answerMode: 'normalized',
       placeholder: 'Du antwortest ...',
       maxLength: 60,
-      explanation: 'antworten takes the dative; Lehrer is masculine, so the article is deinem: Du antwortest deinem Lehrer.',
+      explanation:
+        'antworten takes the dative; Lehrer is masculine, so the article is deinem: Du antwortest deinem Lehrer.',
     },
     {
       id: 'ch23-ex-47',
@@ -979,13 +1045,15 @@ export const chapter023: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['gehören', 'word-order', 'question'],
-      instruction: 'Write a complete question using the cue words. Capitalisation and the question mark are checked.',
+      instruction:
+        'Write a complete question using the cue words. Capitalisation and the question mark are checked.',
       prompt: 'gehören – dir – das Buch (question)',
       acceptedAnswers: ['Gehört dir das Buch?'],
       answerMode: 'normalized',
       placeholder: 'Gehört ...',
       maxLength: 60,
-      explanation: 'gehören takes the dative; du becomes dir, and the conjugated verb moves to position 1 in a yes/no question: Gehört dir das Buch?',
+      explanation:
+        'gehören takes the dative; du becomes dir, and the conjugated verb moves to position 1 in a yes/no question: Gehört dir das Buch?',
     },
     {
       id: 'ch23-ex-48',
@@ -999,7 +1067,8 @@ export const chapter023: ChapterDefinition = {
       templateParts: ['Der Arzt hilft ', ' Patienten sofort.'],
       slots: [{ id: 'ch23-ex-48-s1', correctWord: 'dem' }],
       wordBank: ['dem', 'den', 'der', 'das'],
-      explanation: 'helfen takes the dative; Patient is masculine, so the dative article is dem, not the accusative den.',
+      explanation:
+        'helfen takes the dative; Patient is masculine, so the dative article is dem, not the accusative den.',
     },
     {
       id: 'ch23-ex-49',
@@ -1013,7 +1082,8 @@ export const chapter023: ChapterDefinition = {
       templateParts: ['Ich danke ', ' Chefin herzlich.'],
       slots: [{ id: 'ch23-ex-49-s1', correctWord: 'der' }],
       wordBank: ['der', 'die', 'dem', 'den'],
-      explanation: 'danken takes the dative; Chefin is feminine, so the dative article is der.',
+      explanation:
+        'danken takes the dative; Chefin is feminine, so the dative article is der.',
     },
     {
       id: 'ch23-ex-50',
@@ -1027,7 +1097,8 @@ export const chapter023: ChapterDefinition = {
       templateParts: ['Die Bücher gehören ', ' Studenten.'],
       slots: [{ id: 'ch23-ex-50-s1', correctWord: 'den' }],
       wordBank: ['den', 'die', 'der', 'dem'],
-      explanation: 'gehören takes the dative; Studenten is plural, so the dative article is den, not the accusative-looking die.',
+      explanation:
+        'gehören takes the dative; Studenten is plural, so the dative article is den, not the accusative-looking die.',
     },
     {
       id: 'ch23-ex-51',
@@ -1041,7 +1112,8 @@ export const chapter023: ChapterDefinition = {
       templateParts: ['Das Lied gefällt ', ' total.'],
       slots: [{ id: 'ch23-ex-51-s1', correctWord: 'mir' }],
       wordBank: ['mir', 'mich', 'ich', 'dir'],
-      explanation: 'gefallen takes the dative; ich becomes the dative pronoun mir, not the accusative mich.',
+      explanation:
+        'gefallen takes the dative; ich becomes the dative pronoun mir, not the accusative mich.',
     },
     {
       id: 'ch23-ex-52',
@@ -1055,7 +1127,8 @@ export const chapter023: ChapterDefinition = {
       templateParts: ['Der Salat schmeckt den ', ' nicht.'],
       slots: [{ id: 'ch23-ex-52-s1', correctWord: 'Gästen' }],
       wordBank: ['Gästen', 'Gäste', 'Gast', 'Gästes'],
-      explanation: 'Gäste does not end in -n or -s, so it takes an extra -n in the dative plural: Gästen.',
+      explanation:
+        'Gäste does not end in -n or -s, so it takes an extra -n in the dative plural: Gästen.',
     },
     {
       id: 'ch23-ex-53',
@@ -1069,7 +1142,8 @@ export const chapter023: ChapterDefinition = {
       templateParts: ['Ich antworte ', ' sofort.'],
       slots: [{ id: 'ch23-ex-53-s1', correctWord: 'Ihnen' }],
       wordBank: ['Ihnen', 'Sie', 'ihr', 'euch'],
-      explanation: 'antworten takes the dative; the formal Sie becomes the dative pronoun Ihnen.',
+      explanation:
+        'antworten takes the dative; the formal Sie becomes the dative pronoun Ihnen.',
     },
     {
       id: 'ch23-ex-54',
@@ -1083,7 +1157,8 @@ export const chapter023: ChapterDefinition = {
       templateParts: ['Der Assistent folgt ', ' Chef überallhin.'],
       slots: [{ id: 'ch23-ex-54-s1', correctWord: 'seinem' }],
       wordBank: ['seinem', 'sein', 'seinen', 'seines'],
-      explanation: 'folgen takes the dative; Chef is masculine, so the possessive article ending is -em: seinem.',
+      explanation:
+        'folgen takes the dative; Chef is masculine, so the possessive article ending is -em: seinem.',
     },
     {
       id: 'ch23-ex-55',
@@ -1092,7 +1167,8 @@ export const chapter023: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'production',
       grammarFocus: ['passen', 'dative', 'articles', 'plural-n'],
-      instruction: 'Drag the correct dative article and the correctly formed dative noun into the gaps.',
+      instruction:
+        'Drag the correct dative article and the correctly formed dative noun into the gaps.',
       prompt: 'Die Jacke passt ___ ___ gut. (der Junge)',
       templateParts: ['Die Jacke passt ', ' ', ' gut.'],
       slots: [
@@ -1100,7 +1176,8 @@ export const chapter023: ChapterDefinition = {
         { id: 'ch23-ex-55-s2', correctWord: 'Jungen' },
       ],
       wordBank: ['dem', 'den', 'Jungen', 'Junge'],
-      explanation: 'passen takes the dative; the article is dem, and Junge is an n-noun, so it takes -n in the dative: Jungen.',
+      explanation:
+        'passen takes the dative; the article is dem, and Junge is an n-noun, so it takes -n in the dative: Jungen.',
     },
     {
       id: 'ch23-ex-56',
@@ -1114,7 +1191,8 @@ export const chapter023: ChapterDefinition = {
       templateParts: ['Wir gratulieren ', ' zur Hochzeit.'],
       slots: [{ id: 'ch23-ex-56-s1', correctWord: 'ihnen' }],
       wordBank: ['ihnen', 'sie', 'ihr', 'uns'],
-      explanation: 'gratulieren takes the dative; sie (they) becomes the dative pronoun ihnen.',
+      explanation:
+        'gratulieren takes the dative; sie (they) becomes the dative pronoun ihnen.',
     },
     {
       id: 'ch23-ex-57',
@@ -1122,15 +1200,34 @@ export const chapter023: ChapterDefinition = {
       order: 57,
       type: 'matching',
       level: 'recognition',
-      grammarFocus: ['dative-verbs', 'glauben', 'folgen', 'passen', 'schmecken', 'gratulieren'],
+      grammarFocus: [
+        'dative-verbs',
+        'glauben',
+        'folgen',
+        'passen',
+        'schmecken',
+        'gratulieren',
+      ],
       instruction: 'Match each verb with its meaning.',
       prompt: 'Match the dative verb to its meaning.',
       pairs: [
         { id: 'ch23-ex-57-p1', left: 'glauben', right: 'to believe (dative object)' },
         { id: 'ch23-ex-57-p2', left: 'folgen', right: 'to follow (dative object)' },
-        { id: 'ch23-ex-57-p3', left: 'passen', right: 'to fit / to suit (dative object)' },
-        { id: 'ch23-ex-57-p4', left: 'schmecken', right: 'to taste good to (dative object)' },
-        { id: 'ch23-ex-57-p5', left: 'gratulieren', right: 'to congratulate (dative object)' },
+        {
+          id: 'ch23-ex-57-p3',
+          left: 'passen',
+          right: 'to fit / to suit (dative object)',
+        },
+        {
+          id: 'ch23-ex-57-p4',
+          left: 'schmecken',
+          right: 'to taste good to (dative object)',
+        },
+        {
+          id: 'ch23-ex-57-p5',
+          left: 'gratulieren',
+          right: 'to congratulate (dative object)',
+        },
       ],
       explanation:
         'glauben, folgen, passen, schmecken and gratulieren all take only a dative object, never an accusative one.',
@@ -1141,7 +1238,14 @@ export const chapter023: ChapterDefinition = {
       order: 58,
       type: 'matching',
       level: 'recognition',
-      grammarFocus: ['dative-verbs', 'helfen', 'danken', 'gefallen', 'gehören', 'antworten'],
+      grammarFocus: [
+        'dative-verbs',
+        'helfen',
+        'danken',
+        'gefallen',
+        'gehören',
+        'antworten',
+      ],
       instruction: 'Match each verb with a correct example sentence.',
       prompt: 'Match the dative verb to a correct example sentence.',
       pairs: [
@@ -1179,15 +1283,27 @@ export const chapter023: ChapterDefinition = {
       order: 60,
       type: 'matching',
       level: 'recognition',
-      grammarFocus: ['dative-verbs', 'vertrauen', 'gehorchen', 'zuhören', 'fehlen', 'begegnen'],
+      grammarFocus: [
+        'dative-verbs',
+        'vertrauen',
+        'gehorchen',
+        'zuhören',
+        'fehlen',
+        'begegnen',
+      ],
       instruction: 'Match each additional dative-only verb with its meaning.',
-      prompt: 'Match the dative verb to its meaning. These are further verbs that take only a dative object.',
+      prompt:
+        'Match the dative verb to its meaning. These are further verbs that take only a dative object.',
       pairs: [
         { id: 'ch23-ex-60-p1', left: 'vertrauen', right: 'to trust (dative object)' },
         { id: 'ch23-ex-60-p2', left: 'gehorchen', right: 'to obey (dative object)' },
         { id: 'ch23-ex-60-p3', left: 'zuhören', right: 'to listen to (dative object)' },
         { id: 'ch23-ex-60-p4', left: 'fehlen', right: 'to be missed by (dative object)' },
-        { id: 'ch23-ex-60-p5', left: 'begegnen', right: 'to meet / encounter (dative object)' },
+        {
+          id: 'ch23-ex-60-p5',
+          left: 'begegnen',
+          right: 'to meet / encounter (dative object)',
+        },
       ],
       explanation:
         'vertrauen, gehorchen, zuhören, fehlen and begegnen extend the same pattern: their sole object is always dative.',
@@ -1208,7 +1324,8 @@ export const chapter023: ChapterDefinition = {
         { id: 'ch23-ex-61-p4', left: 'ihr', right: 'sie (she)' },
         { id: 'ch23-ex-61-p5', left: 'uns', right: 'wir' },
       ],
-      explanation: 'mir, dir, ihm, ihr and uns are the dative forms of ich, du, er, sie (she) and wir.',
+      explanation:
+        'mir, dir, ihm, ihr and uns are the dative forms of ich, du, er, sie (she) and wir.',
     },
     {
       id: 'ch23-ex-62',
@@ -1216,13 +1333,24 @@ export const chapter023: ChapterDefinition = {
       order: 62,
       type: 'matching',
       level: 'controlled',
-      grammarFocus: ['dative-verbs', 'helfen', 'danken', 'gratulieren', 'gehorchen', 'zuhören'],
+      grammarFocus: [
+        'dative-verbs',
+        'helfen',
+        'danken',
+        'gratulieren',
+        'gehorchen',
+        'zuhören',
+      ],
       instruction: 'Match each verb with the kind of dative object it typically takes.',
       prompt: 'Match the dative verb to a typical dative object.',
       pairs: [
         { id: 'ch23-ex-62-p1', left: 'helfen', right: 'a person in need' },
         { id: 'ch23-ex-62-p2', left: 'danken', right: 'a person who helped you' },
-        { id: 'ch23-ex-62-p3', left: 'gratulieren', right: 'a person having a special occasion' },
+        {
+          id: 'ch23-ex-62-p3',
+          left: 'gratulieren',
+          right: 'a person having a special occasion',
+        },
         { id: 'ch23-ex-62-p4', left: 'gehorchen', right: 'an authority figure' },
         { id: 'ch23-ex-62-p5', left: 'zuhören', right: 'a speaker' },
       ],
@@ -1237,13 +1365,22 @@ export const chapter023: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['dative-verbs', 'english-trap', 'mixed-review'],
       instruction: 'Match each English sentence with its correct German translation.',
-      prompt: 'Match the English sentence to its correct German translation using the dative.',
+      prompt:
+        'Match the English sentence to its correct German translation using the dative.',
       pairs: [
         { id: 'ch23-ex-63-p1', left: 'I help him.', right: 'Ich helfe ihm.' },
         { id: 'ch23-ex-63-p2', left: 'I thank her.', right: 'Ich danke ihr.' },
         { id: 'ch23-ex-63-p3', left: 'I believe you.', right: 'Ich glaube dir.' },
-        { id: 'ch23-ex-63-p4', left: 'I answer the teacher.', right: 'Ich antworte dem Lehrer.' },
-        { id: 'ch23-ex-63-p5', left: 'I congratulate them.', right: 'Ich gratuliere ihnen.' },
+        {
+          id: 'ch23-ex-63-p4',
+          left: 'I answer the teacher.',
+          right: 'Ich antworte dem Lehrer.',
+        },
+        {
+          id: 'ch23-ex-63-p5',
+          left: 'I congratulate them.',
+          right: 'Ich gratuliere ihnen.',
+        },
       ],
       explanation:
         'All five English sentences look transitive, but their German equivalents require a dative object: ihm, ihr, dir, dem Lehrer, ihnen.',
@@ -1260,7 +1397,8 @@ export const chapter023: ChapterDefinition = {
       tokens: ['Ich', 'helfe', 'meinen', 'Bruder.'],
       errorTokenIndex: 2,
       correction: 'meinem',
-      explanation: 'helfen always takes the dative, never the accusative; Bruder is masculine, so the article is meinem.',
+      explanation:
+        'helfen always takes the dative, never the accusative; Bruder is masculine, so the article is meinem.',
     },
     {
       id: 'ch23-ex-65',
@@ -1274,7 +1412,8 @@ export const chapter023: ChapterDefinition = {
       tokens: ['Er', 'dankt', 'seine', 'Mutter.'],
       errorTokenIndex: 2,
       correction: 'seiner',
-      explanation: 'danken governs the dative; Mutter is feminine, so the possessive article needs the dative ending -er: seiner.',
+      explanation:
+        'danken governs the dative; Mutter is feminine, so the possessive article needs the dative ending -er: seiner.',
     },
     {
       id: 'ch23-ex-66',
@@ -1288,7 +1427,8 @@ export const chapter023: ChapterDefinition = {
       tokens: ['Das', 'Buch', 'gehört', 'mich.'],
       errorTokenIndex: 3,
       correction: 'mir.',
-      explanation: 'gehören always takes the dative pronoun mir, not the accusative pronoun mich.',
+      explanation:
+        'gehören always takes the dative pronoun mir, not the accusative pronoun mich.',
     },
     {
       id: 'ch23-ex-67',
@@ -1302,7 +1442,8 @@ export const chapter023: ChapterDefinition = {
       tokens: ['Die', 'Farbe', 'gefällt', 'ihn.'],
       errorTokenIndex: 3,
       correction: 'ihm.',
-      explanation: 'gefallen takes the dative pronoun ihm, not the accusative pronoun ihn.',
+      explanation:
+        'gefallen takes the dative pronoun ihm, not the accusative pronoun ihn.',
     },
     {
       id: 'ch23-ex-68',
@@ -1316,7 +1457,8 @@ export const chapter023: ChapterDefinition = {
       tokens: ['Ich', 'antworte', 'den', 'Lehrer.'],
       errorTokenIndex: 2,
       correction: 'dem',
-      explanation: 'antworten takes the dative; Lehrer is masculine, so the article must be the dative dem, not the accusative den.',
+      explanation:
+        'antworten takes the dative; Lehrer is masculine, so the article must be the dative dem, not the accusative den.',
     },
     {
       id: 'ch23-ex-69',
@@ -1344,7 +1486,8 @@ export const chapter023: ChapterDefinition = {
       tokens: ['Die', 'Hose', 'passt', 'dich', 'gut.'],
       errorTokenIndex: 3,
       correction: 'dir',
-      explanation: 'passen takes the dative pronoun dir, not the accusative pronoun dich.',
+      explanation:
+        'passen takes the dative pronoun dir, not the accusative pronoun dich.',
     },
     {
       id: 'ch23-ex-71',
@@ -1358,7 +1501,8 @@ export const chapter023: ChapterDefinition = {
       tokens: ['Wir', 'gratulieren', 'ihn', 'zum', 'Erfolg.'],
       errorTokenIndex: 2,
       correction: 'ihm',
-      explanation: 'gratulieren takes the dative pronoun ihm, not the accusative pronoun ihn.',
+      explanation:
+        'gratulieren takes the dative pronoun ihm, not the accusative pronoun ihn.',
     },
   ],
 };

@@ -116,15 +116,31 @@ export const chapter081: ChapterDefinition = {
           ['gut', 'besser', 'Je mehr er übt, desto besser wird er.'],
           ['viel', 'mehr', 'Je mehr Geld sie verdient, desto mehr gibt sie aus.'],
           ['gern', 'lieber', 'Je mehr Zeit sie hat, desto lieber liest sie.'],
-          ['hoch', 'höher', 'Je höher die Preise steigen, desto weniger kaufen die Leute.'],
+          [
+            'hoch',
+            'höher',
+            'Je höher die Preise steigen, desto weniger kaufen die Leute.',
+          ],
           ['nah', 'näher', 'Je näher der Termin rückt, desto nervöser wird er.'],
           ['alt', 'älter', 'Je älter man wird, desto weiser wird man.'],
           ['groß', 'größer', 'Je größer das Haus ist, desto teurer ist die Miete.'],
-          ['lang', 'länger', 'Je länger der Winter dauert, desto ungeduldiger werden die Leute.'],
+          [
+            'lang',
+            'länger',
+            'Je länger der Winter dauert, desto ungeduldiger werden die Leute.',
+          ],
           ['kurz', 'kürzer', 'Je kürzer die Tage werden, desto früher wird es dunkel.'],
           ['warm', 'wärmer', 'Je wärmer es wird, desto mehr Leute gehen schwimmen.'],
-          ['kalt', 'kälter', 'Je kälter es draußen ist, desto länger bleiben wir drinnen.'],
-          ['stark', 'stärker', 'Je stärker der Wind weht, desto höher werden die Wellen.'],
+          [
+            'kalt',
+            'kälter',
+            'Je kälter es draußen ist, desto länger bleiben wir drinnen.',
+          ],
+          [
+            'stark',
+            'stärker',
+            'Je stärker der Wind weht, desto höher werden die Wellen.',
+          ],
         ],
         note: 'These are the same comparative forms from Chapter 42 — no new forms exist for the je ... desto construction.',
       },
@@ -141,13 +157,15 @@ export const chapter081: ChapterDefinition = {
         german: 'Je älter man wird, desto weiser wird man.',
         english: 'The older one gets, the wiser one becomes.',
         highlight: ['Je älter', 'desto weiser'],
-        explanation: 'alt has the umlaut comparative älter; both clauses follow the standard je ... desto word order.',
+        explanation:
+          'alt has the umlaut comparative älter; both clauses follow the standard je ... desto word order.',
       },
       {
         german: 'Je schneller du fährst, desto gefährlicher wird es.',
         english: 'The faster you drive, the more dangerous it becomes.',
         highlight: ['Je schneller', 'desto gefährlicher'],
-        explanation: 'A regular -er comparative in both clauses; fährst and wird show verb-final and verb-second order.',
+        explanation:
+          'A regular -er comparative in both clauses; fährst and wird show verb-final and verb-second order.',
       },
       {
         german: 'Je mehr Geld sie verdient, desto mehr gibt sie aus.',
@@ -160,7 +178,8 @@ export const chapter081: ChapterDefinition = {
         german: 'Je länger der Winter dauert, desto ungeduldiger werden die Leute.',
         english: 'The longer the winter lasts, the more impatient people become.',
         highlight: ['Je länger', 'desto ungeduldiger'],
-        explanation: 'lang takes the umlaut comparative länger; the desto-clause subject die Leute follows the verb werden.',
+        explanation:
+          'lang takes the umlaut comparative länger; the desto-clause subject die Leute follows the verb werden.',
       },
       {
         german: 'Je früher wir aufstehen, desto mehr schaffen wir.',
@@ -173,25 +192,29 @@ export const chapter081: ChapterDefinition = {
         german: 'Je weniger er isst, desto schwächer fühlt er sich.',
         english: 'The less he eats, the weaker he feels.',
         highlight: ['Je weniger', 'desto schwächer'],
-        explanation: 'wenig forms its comparative regularly as weniger; the reflexive pronoun sich follows the subject er after inversion.',
+        explanation:
+          'wenig forms its comparative regularly as weniger; the reflexive pronoun sich follows the subject er after inversion.',
       },
       {
         german: 'Je heißer es wird, desto mehr Wasser trinken wir.',
         english: 'The hotter it gets, the more water we drink.',
         highlight: ['Je heißer', 'desto mehr Wasser'],
-        explanation: 'desto mehr Wasser (comparative + noun) fills position 1 as a unit; the verb trinken follows directly.',
+        explanation:
+          'desto mehr Wasser (comparative + noun) fills position 1 as a unit; the verb trinken follows directly.',
       },
       {
         german: 'Je besser du Deutsch sprichst, desto leichter findest du einen Job.',
         english: 'The better you speak German, the more easily you will find a job.',
         highlight: ['Je besser', 'desto leichter'],
-        explanation: 'gut has the irregular comparative besser, used here adverbially to modify sprichst.',
+        explanation:
+          'gut has the irregular comparative besser, used here adverbially to modify sprichst.',
       },
       {
         german: 'Je öfter sie übt, desto sicherer wird sie.',
         english: 'The more often she practices, the more confident she becomes.',
         highlight: ['Je öfter', 'desto sicherer'],
-        explanation: 'A regular comparative of the adverb oft; both clauses follow the standard pattern.',
+        explanation:
+          'A regular comparative of the adverb oft; both clauses follow the standard pattern.',
       },
       {
         german: 'Je näher der Prüfungstermin rückt, desto nervöser wird er.',
@@ -203,7 +226,8 @@ export const chapter081: ChapterDefinition = {
         german: 'Je mehr man hat, desto mehr will man.',
         english: 'The more one has, the more one wants.',
         highlight: ['Je mehr', 'desto mehr'],
-        explanation: 'A common proverb-like sentence: the same comparative, mehr, appears in both clauses.',
+        explanation:
+          'A common proverb-like sentence: the same comparative, mehr, appears in both clauses.',
       },
       {
         german: 'Je mehr sie übt, umso sicherer wird sie.',
@@ -228,7 +252,8 @@ export const chapter081: ChapterDefinition = {
       {
         incorrect: 'Je mehr er lernt desto besser wird er.',
         correct: 'Je mehr er lernt, desto besser wird er.',
-        explanation: 'A comma is always required between the je-clause and the desto/umso-clause.',
+        explanation:
+          'A comma is always required between the je-clause and the desto/umso-clause.',
       },
       {
         incorrect: 'Je er mehr lernt, desto besser wird er.',
@@ -239,7 +264,8 @@ export const chapter081: ChapterDefinition = {
       {
         incorrect: 'Je viel er arbeitet, desto müder wird er.',
         correct: 'Je mehr er arbeitet, desto müder wird er.',
-        explanation: 'viel is irregular; only its comparative form mehr may follow je, never the plain base form viel.',
+        explanation:
+          'viel is irregular; only its comparative form mehr may follow je, never the plain base form viel.',
       },
       {
         incorrect: 'Desto mehr er lernt, je besser wird er.',
@@ -273,7 +299,8 @@ export const chapter081: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['je-desto-pattern', 'conjunction-choice'],
       instruction: 'Choose the word that opens the subordinate (verb-final) clause.',
-      prompt: 'Welches Wort leitet den Nebensatz (Verb am Ende) einer proportionalen Vergleichskonstruktion ein?',
+      prompt:
+        'Welches Wort leitet den Nebensatz (Verb am Ende) einer proportionalen Vergleichskonstruktion ein?',
       options: [
         { id: 'a', text: 'je' },
         { id: 'b', text: 'desto' },
@@ -281,7 +308,8 @@ export const chapter081: ChapterDefinition = {
         { id: 'd', text: 'als' },
       ],
       correctOptionId: 'a',
-      explanation: 'je is the subordinating conjunction that opens the je-clause and sends the finite verb to the end.',
+      explanation:
+        'je is the subordinating conjunction that opens the je-clause and sends the finite verb to the end.',
     },
     {
       id: 'ch81-ex-02',
@@ -291,7 +319,8 @@ export const chapter081: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['je-desto-pattern', 'conjunction-choice'],
       instruction: 'Choose the word that opens the following main (verb-second) clause.',
-      prompt: 'Welches Wort leitet den Hauptsatz (Verb an zweiter Stelle) ein, der auf den je-Satz folgt?',
+      prompt:
+        'Welches Wort leitet den Hauptsatz (Verb an zweiter Stelle) ein, der auf den je-Satz folgt?',
       options: [
         { id: 'a', text: 'desto' },
         { id: 'b', text: 'dass' },
@@ -299,7 +328,8 @@ export const chapter081: ChapterDefinition = {
         { id: 'd', text: 'obwohl' },
       ],
       correctOptionId: 'a',
-      explanation: 'desto (or umso) opens the following main clause, together with a comparative, and triggers verb-second order.',
+      explanation:
+        'desto (or umso) opens the following main clause, together with a comparative, and triggers verb-second order.',
     },
     {
       id: 'ch81-ex-03',
@@ -442,7 +472,8 @@ export const chapter081: ChapterDefinition = {
         { id: 'c', text: 'Je, mehr er lernt, desto besser wird er.' },
       ],
       correctOptionId: 'a',
-      explanation: 'A comma always separates the je-clause from the desto/umso-clause; no comma is placed after je itself.',
+      explanation:
+        'A comma always separates the je-clause from the desto/umso-clause; no comma is placed after je itself.',
     },
     {
       id: 'ch81-ex-11',
@@ -487,7 +518,8 @@ export const chapter081: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['je-desto-pattern', 'pragmatics'],
-      instruction: 'Choose the sentence that matches how Jonas feels as the exam gets closer.',
+      instruction:
+        'Choose the sentence that matches how Jonas feels as the exam gets closer.',
       dialogue: [
         {
           speaker: 'Anna',
@@ -517,7 +549,8 @@ export const chapter081: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['sentence-formation', 'word-order', 'separable-verb'],
-      instruction: "Choose the German sentence that correctly expresses: 'The earlier we get up, the more we get done.'",
+      instruction:
+        "Choose the German sentence that correctly expresses: 'The earlier we get up, the more we get done.'",
       prompt:
         "Welcher Satz drückt korrekt aus: 'The earlier we get up, the more we get done'?",
       options: [
@@ -551,13 +584,15 @@ export const chapter081: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['je-desto-pattern', 'umso'],
-      instruction: 'Fill in the missing word (desto or umso both work). Capitalisation is not checked.',
+      instruction:
+        'Fill in the missing word (desto or umso both work). Capitalisation is not checked.',
       prompt: 'Je mehr er lernt, ___ besser wird er.',
       acceptedAnswers: ['desto', 'umso'],
       answerMode: 'caseInsensitive',
       placeholder: 'desto/umso',
       maxLength: 10,
-      explanation: 'Either desto or umso can open the main clause here; both work identically.',
+      explanation:
+        'Either desto or umso can open the main clause here; both work identically.',
     },
     {
       id: 'ch81-ex-17',
@@ -566,7 +601,8 @@ export const chapter081: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['comparative-formation', 'irregular-comparative'],
-      instruction: 'Write the comparative of the adjective in brackets. Capitalisation is not checked.',
+      instruction:
+        'Write the comparative of the adjective in brackets. Capitalisation is not checked.',
       prompt: 'Je ___ (viel) er arbeitet, desto müder wird er.',
       acceptedAnswers: ['mehr'],
       answerMode: 'caseInsensitive',
@@ -581,7 +617,8 @@ export const chapter081: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['comparative-formation'],
-      instruction: 'Write the comparative of the adjective in brackets. Capitalisation is not checked.',
+      instruction:
+        'Write the comparative of the adjective in brackets. Capitalisation is not checked.',
       prompt: 'Je mehr er arbeitet, desto ___ (müde) wird er.',
       acceptedAnswers: ['müder'],
       answerMode: 'caseInsensitive',
@@ -596,7 +633,8 @@ export const chapter081: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['comparative-formation', 'irregular-comparative'],
-      instruction: 'Write the comparative of the adjective in brackets. Capitalisation is not checked.',
+      instruction:
+        'Write the comparative of the adjective in brackets. Capitalisation is not checked.',
       prompt: 'Je frischer die Bohnen sind, desto ___ (gut) schmeckt der Kaffee.',
       acceptedAnswers: ['besser'],
       answerMode: 'caseInsensitive',
@@ -611,7 +649,8 @@ export const chapter081: ChapterDefinition = {
       type: 'textInput',
       level: 'recognition',
       grammarFocus: ['comparative-formation', 'irregular-comparative'],
-      instruction: 'Write the comparative of the adjective in brackets. Capitalisation is not checked.',
+      instruction:
+        'Write the comparative of the adjective in brackets. Capitalisation is not checked.',
       prompt: 'Je mehr Zeit sie hat, desto ___ (gern) liest sie.',
       acceptedAnswers: ['lieber'],
       answerMode: 'caseInsensitive',
@@ -626,7 +665,8 @@ export const chapter081: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['comparative-formation'],
-      instruction: 'Write the comparative of the adjective in brackets. Capitalisation is not checked.',
+      instruction:
+        'Write the comparative of the adjective in brackets. Capitalisation is not checked.',
       prompt: 'Je ___ (wenig) er isst, desto schwächer fühlt er sich.',
       acceptedAnswers: ['weniger'],
       answerMode: 'caseInsensitive',
@@ -665,7 +705,8 @@ export const chapter081: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Je älter man wird, desto ...',
       maxLength: 60,
-      explanation: 'alt has the umlaut comparative älter; both clauses follow the standard je ... desto word order.',
+      explanation:
+        'alt has the umlaut comparative älter; both clauses follow the standard je ... desto word order.',
     },
     {
       id: 'ch81-ex-24',
@@ -681,7 +722,8 @@ export const chapter081: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Je schneller du fährst, desto ...',
       maxLength: 70,
-      explanation: 'fährst keeps the je-clause verb-final; wird stands directly after desto gefährlicher in the second clause.',
+      explanation:
+        'fährst keeps the je-clause verb-final; wird stands directly after desto gefährlicher in the second clause.',
     },
     {
       id: 'ch81-ex-25',
@@ -707,7 +749,8 @@ export const chapter081: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['error-correction', 'word-order'],
-      instruction: 'Correct the mistake. Write the full corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Je mehr er lernt, desto wird er besser.',
       acceptedAnswers: ['Je mehr er lernt, desto besser wird er.'],
       answerMode: 'normalized',
@@ -723,13 +766,15 @@ export const chapter081: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['error-correction', 'punctuation', 'comma'],
-      instruction: 'Correct the mistake. Write the full corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Je mehr er lernt desto besser wird er.',
       acceptedAnswers: ['Je mehr er lernt, desto besser wird er.'],
       answerMode: 'normalized',
       placeholder: 'Je mehr er lernt, desto ...',
       maxLength: 60,
-      explanation: 'A comma is always required between the je-clause and the desto/umso-clause.',
+      explanation:
+        'A comma is always required between the je-clause and the desto/umso-clause.',
     },
     {
       id: 'ch81-ex-28',
@@ -829,12 +874,22 @@ export const chapter081: ChapterDefinition = {
       instruction: 'Choose the sentence with correct comma placement.',
       prompt: 'Welcher Satz ist richtig mit Komma?',
       options: [
-        { id: 'a', text: 'Je teurer das Restaurant ist, desto besser sollte das Essen sein.' },
-        { id: 'b', text: 'Je teurer das Restaurant ist desto besser sollte das Essen sein.' },
-        { id: 'c', text: 'Je, teurer das Restaurant ist, desto besser sollte das Essen sein.' },
+        {
+          id: 'a',
+          text: 'Je teurer das Restaurant ist, desto besser sollte das Essen sein.',
+        },
+        {
+          id: 'b',
+          text: 'Je teurer das Restaurant ist desto besser sollte das Essen sein.',
+        },
+        {
+          id: 'c',
+          text: 'Je, teurer das Restaurant ist, desto besser sollte das Essen sein.',
+        },
       ],
       correctOptionId: 'a',
-      explanation: 'A comma always separates the je-clause from the desto-clause; no comma is placed after je itself.',
+      explanation:
+        'A comma always separates the je-clause from the desto-clause; no comma is placed after je itself.',
     },
     {
       id: 'ch81-ex-34',
@@ -845,8 +900,16 @@ export const chapter081: ChapterDefinition = {
       grammarFocus: ['je-desto-pattern', 'pragmatics'],
       instruction: 'Choose the sentence that matches how Tom drinks his coffee.',
       dialogue: [
-        { speaker: 'Lisa', german: 'Wie trinkst du deinen Kaffee?', english: 'How do you drink your coffee?' },
-        { speaker: 'Tom', german: 'Immer sehr stark: ___', english: 'Always very strong: ...' },
+        {
+          speaker: 'Lisa',
+          german: 'Wie trinkst du deinen Kaffee?',
+          english: 'How do you drink your coffee?',
+        },
+        {
+          speaker: 'Tom',
+          german: 'Immer sehr stark: ___',
+          english: 'Always very strong: ...',
+        },
       ],
       prompt: '___',
       options: [
@@ -909,7 +972,8 @@ export const chapter081: ChapterDefinition = {
         { id: 'c', text: 'Umso mehr sie übt, je sicherer wird sie.' },
       ],
       correctOptionId: 'a',
-      explanation: 'umso behaves exactly like desto: umso sicherer fills position 1, and the verb (wird) follows immediately.',
+      explanation:
+        'umso behaves exactly like desto: umso sicherer fills position 1, and the verb (wird) follows immediately.',
     },
     {
       id: 'ch81-ex-38',
@@ -920,7 +984,8 @@ export const chapter081: ChapterDefinition = {
       grammarFocus: ['sentence-formation', 'word-order', 'umlaut-comparative'],
       instruction:
         "Choose the German sentence that correctly expresses: 'The colder the winter is, the higher the heating costs become.'",
-      prompt: "Welcher Satz drückt korrekt aus: 'The colder the winter is, the higher the heating costs become'?",
+      prompt:
+        "Welcher Satz drückt korrekt aus: 'The colder the winter is, the higher the heating costs become'?",
       options: [
         { id: 'a', text: 'Je kälter der Winter ist, desto höher werden die Heizkosten.' },
         { id: 'b', text: 'Je kälter ist der Winter, desto höher werden die Heizkosten.' },
@@ -1107,7 +1172,11 @@ export const chapter081: ChapterDefinition = {
       grammarFocus: ['comparative-formation', 'irregular-comparative'],
       instruction: 'Drag the correct words into the blanks.',
       prompt: 'Complete both clauses with the correct comparatives of viel and leicht.',
-      templateParts: ['Je ', ' Sprachen man spricht, desto ', ' findet man Freunde im Ausland.'],
+      templateParts: [
+        'Je ',
+        ' Sprachen man spricht, desto ',
+        ' findet man Freunde im Ausland.',
+      ],
       slots: [
         { id: 'slot1', correctWord: 'mehr' },
         { id: 'slot2', correctWord: 'leichter' },
@@ -1138,7 +1207,10 @@ export const chapter081: ChapterDefinition = {
       grammarFocus: ['comparative-formation', 'umlaut-comparative'],
       instruction: 'Drag the correct word into the blank.',
       prompt: 'Complete the je-clause with the correct comparative of lang.',
-      templateParts: ['Je ', ' die Warteschlange ist, desto ungeduldiger werden die Kunden.'],
+      templateParts: [
+        'Je ',
+        ' die Warteschlange ist, desto ungeduldiger werden die Kunden.',
+      ],
       slots: [{ id: 'slot1', correctWord: 'länger' }],
       wordBank: ['länger', 'lang', 'längste', 'kürzer'],
       explanation: 'lang takes an umlaut in the comparative: lang -> länger.',
@@ -1176,7 +1248,8 @@ export const chapter081: ChapterDefinition = {
         { id: 's7', text: 'wird' },
         { id: 's8', text: 'man.' },
       ],
-      explanation: 'übt keeps the je-clause verb-final; wird stands directly after desto besser in the verb-second clause.',
+      explanation:
+        'übt keeps the je-clause verb-final; wird stands directly after desto besser in the verb-second clause.',
     },
     {
       id: 'ch81-ex-56',
@@ -1197,7 +1270,8 @@ export const chapter081: ChapterDefinition = {
         { id: 's7', text: 'sind' },
         { id: 's8', text: 'die Wohnungen.' },
       ],
-      explanation: 'ist keeps the je-clause verb-final; sind stands directly after desto teurer in the verb-second clause.',
+      explanation:
+        'ist keeps the je-clause verb-final; sind stands directly after desto teurer in the verb-second clause.',
     },
     {
       id: 'ch81-ex-57',
@@ -1278,7 +1352,8 @@ export const chapter081: ChapterDefinition = {
         { id: 's5', text: 'wird' },
         { id: 's6', text: 'er.' },
       ],
-      explanation: 'ist keeps the je-clause verb-final; wird stands directly after desto teurer in the verb-second clause.',
+      explanation:
+        'ist keeps the je-clause verb-final; wird stands directly after desto teurer in the verb-second clause.',
     },
     {
       id: 'ch81-ex-61',
@@ -1296,7 +1371,8 @@ export const chapter081: ChapterDefinition = {
         { id: 's4', text: 'stellt' },
         { id: 's5', text: 'man.' },
       ],
-      explanation: 'ist keeps the je-clause verb-final; stellt stands directly after desto mehr Fragen.',
+      explanation:
+        'ist keeps the je-clause verb-final; stellt stands directly after desto mehr Fragen.',
     },
     {
       id: 'ch81-ex-62',
@@ -1306,7 +1382,8 @@ export const chapter081: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['word-order', 'sentence-formation'],
       instruction: 'Put the segments in the correct order.',
-      prompt: 'Je teurer – das Restaurant – ist, – desto besser – sollte das Essen – sein.',
+      prompt:
+        'Je teurer – das Restaurant – ist, – desto besser – sollte das Essen – sein.',
       segments: [
         { id: 's1', text: 'Je teurer' },
         { id: 's2', text: 'das Restaurant' },
@@ -1315,7 +1392,8 @@ export const chapter081: ChapterDefinition = {
         { id: 's5', text: 'sollte das Essen' },
         { id: 's6', text: 'sein.' },
       ],
-      explanation: 'ist keeps the je-clause verb-final; sollte stands directly after desto besser.',
+      explanation:
+        'ist keeps the je-clause verb-final; sollte stands directly after desto besser.',
     },
     {
       id: 'ch81-ex-63',
@@ -1334,7 +1412,8 @@ export const chapter081: ChapterDefinition = {
         { id: 's5', text: 'gehen' },
         { id: 's6', text: 'spazieren.' },
       ],
-      explanation: 'ist keeps the je-clause verb-final; gehen stands directly after desto mehr Menschen.',
+      explanation:
+        'ist keeps the je-clause verb-final; gehen stands directly after desto mehr Menschen.',
     },
     {
       id: 'ch81-ex-64',
@@ -1353,7 +1432,8 @@ export const chapter081: ChapterDefinition = {
         { id: 's5', text: 'essen' },
         { id: 's6', text: 'die Kinder.' },
       ],
-      explanation: 'ist keeps the je-clause verb-final; essen stands directly after desto mehr Eis.',
+      explanation:
+        'ist keeps the je-clause verb-final; essen stands directly after desto mehr Eis.',
     },
     {
       id: 'ch81-ex-65',
@@ -1372,7 +1452,8 @@ export const chapter081: ChapterDefinition = {
         { id: 's5', text: 'werden' },
         { id: 's6', text: 'die Heizkosten.' },
       ],
-      explanation: 'ist keeps the je-clause verb-final; werden stands directly after desto höher.',
+      explanation:
+        'ist keeps the je-clause verb-final; werden stands directly after desto höher.',
     },
     {
       id: 'ch81-ex-66',
@@ -1382,7 +1463,8 @@ export const chapter081: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['word-order', 'sentence-formation'],
       instruction: 'Put the segments in the correct order.',
-      prompt: 'Je mehr Sprachen – man spricht, – desto leichter – findet man – Freunde im Ausland.',
+      prompt:
+        'Je mehr Sprachen – man spricht, – desto leichter – findet man – Freunde im Ausland.',
       segments: [
         { id: 's1', text: 'Je mehr Sprachen' },
         { id: 's2', text: 'man spricht,' },
@@ -1390,7 +1472,8 @@ export const chapter081: ChapterDefinition = {
         { id: 's4', text: 'findet man' },
         { id: 's5', text: 'Freunde im Ausland.' },
       ],
-      explanation: 'spricht keeps the je-clause verb-final; findet stands directly after desto leichter.',
+      explanation:
+        'spricht keeps the je-clause verb-final; findet stands directly after desto leichter.',
     },
     {
       id: 'ch81-ex-67',
@@ -1408,7 +1491,8 @@ export const chapter081: ChapterDefinition = {
         { id: 's4', text: 'desto aufgeregter' },
         { id: 's5', text: 'werden wir.' },
       ],
-      explanation: 'kommen keeps the je-clause verb-final; werden stands directly after desto aufgeregter.',
+      explanation:
+        'kommen keeps the je-clause verb-final; werden stands directly after desto aufgeregter.',
     },
     {
       id: 'ch81-ex-68',
@@ -1418,7 +1502,8 @@ export const chapter081: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['word-order', 'sentence-formation', 'umlaut-comparative'],
       instruction: 'Put the segments in the correct order.',
-      prompt: 'Je länger – die Warteschlange – ist, – desto ungeduldiger – werden – die Kunden.',
+      prompt:
+        'Je länger – die Warteschlange – ist, – desto ungeduldiger – werden – die Kunden.',
       segments: [
         { id: 's1', text: 'Je länger' },
         { id: 's2', text: 'die Warteschlange' },
@@ -1427,7 +1512,8 @@ export const chapter081: ChapterDefinition = {
         { id: 's5', text: 'werden' },
         { id: 's6', text: 'die Kunden.' },
       ],
-      explanation: 'ist keeps the je-clause verb-final; werden stands directly after desto ungeduldiger.',
+      explanation:
+        'ist keeps the je-clause verb-final; werden stands directly after desto ungeduldiger.',
     },
     {
       id: 'ch81-ex-69',
@@ -1445,7 +1531,8 @@ export const chapter081: ChapterDefinition = {
         { id: 's4', text: 'wirst' },
         { id: 's5', text: 'du.' },
       ],
-      explanation: 'übst keeps the je-clause verb-final; wirst stands directly after desto sicherer.',
+      explanation:
+        'übst keeps the je-clause verb-final; wirst stands directly after desto sicherer.',
     },
     {
       id: 'ch81-ex-70',
@@ -1463,7 +1550,8 @@ export const chapter081: ChapterDefinition = {
         { id: 's4', text: 'wird' },
         { id: 's5', text: 'er.' },
       ],
-      explanation: 'schläft keeps the je-clause verb-final; wird stands directly after desto müder.',
+      explanation:
+        'schläft keeps the je-clause verb-final; wird stands directly after desto müder.',
     },
     {
       id: 'ch81-ex-71',
@@ -1482,7 +1570,8 @@ export const chapter081: ChapterDefinition = {
         { id: 's5', text: 'wird' },
         { id: 's6', text: 'es.' },
       ],
-      explanation: 'ist keeps the je-clause verb-final; wird stands directly after desto kälter.',
+      explanation:
+        'ist keeps the je-clause verb-final; wird stands directly after desto kälter.',
     },
     {
       id: 'ch81-ex-72',
@@ -1501,7 +1590,8 @@ export const chapter081: ChapterDefinition = {
         { id: 's5', text: 'fühle ich' },
         { id: 's6', text: 'mich.' },
       ],
-      explanation: 'ist keeps the je-clause verb-final; fühle stands directly after desto wacher.',
+      explanation:
+        'ist keeps the je-clause verb-final; fühle stands directly after desto wacher.',
     },
     {
       id: 'ch81-ex-73',
@@ -1520,7 +1610,8 @@ export const chapter081: ChapterDefinition = {
         { id: 's5', text: 'ist' },
         { id: 's6', text: 'das Zimmer.' },
       ],
-      explanation: 'The first ist keeps the je-clause verb-final; the second ist stands directly after desto einfacher.',
+      explanation:
+        'The first ist keeps the je-clause verb-final; the second ist stands directly after desto einfacher.',
     },
     {
       id: 'ch81-ex-74',
@@ -1539,7 +1630,8 @@ export const chapter081: ChapterDefinition = {
         { id: 's5', text: 'sind' },
         { id: 's6', text: 'die Eltern.' },
       ],
-      explanation: 'ist keeps the je-clause verb-final; sind stands directly after desto stolzer.',
+      explanation:
+        'ist keeps the je-clause verb-final; sind stands directly after desto stolzer.',
     },
     {
       id: 'ch81-ex-75',
@@ -1548,16 +1640,34 @@ export const chapter081: ChapterDefinition = {
       type: 'matching',
       level: 'transfer',
       grammarFocus: ['je-desto-pattern', 'sentence-formation'],
-      instruction: 'Match each je-clause with the desto-clause that logically completes it.',
+      instruction:
+        'Match each je-clause with the desto-clause that logically completes it.',
       prompt: 'Match the je-clauses with the correct desto-clauses.',
       pairs: [
         { id: 'p1', left: 'Je mehr man spart,', right: 'desto sicherer fühlt man sich.' },
-        { id: 'p2', left: 'Je dunkler es wird,', right: 'desto schwerer sieht man die Straße.' },
-        { id: 'p3', left: 'Je ruhiger die Umgebung ist,', right: 'desto besser schläft man.' },
-        { id: 'p4', left: 'Je größer das Problem ist,', right: 'desto mehr Zeit braucht die Lösung.' },
-        { id: 'p5', left: 'Je billiger das Hotel ist,', right: 'desto einfacher ist das Zimmer.' },
+        {
+          id: 'p2',
+          left: 'Je dunkler es wird,',
+          right: 'desto schwerer sieht man die Straße.',
+        },
+        {
+          id: 'p3',
+          left: 'Je ruhiger die Umgebung ist,',
+          right: 'desto besser schläft man.',
+        },
+        {
+          id: 'p4',
+          left: 'Je größer das Problem ist,',
+          right: 'desto mehr Zeit braucht die Lösung.',
+        },
+        {
+          id: 'p5',
+          left: 'Je billiger das Hotel ist,',
+          right: 'desto einfacher ist das Zimmer.',
+        },
       ],
-      explanation: 'Each je-clause names a changing condition; its matching desto-clause names the proportional result.',
+      explanation:
+        'Each je-clause names a changing condition; its matching desto-clause names the proportional result.',
     },
     {
       id: 'ch81-ex-76',
@@ -1575,7 +1685,8 @@ export const chapter081: ChapterDefinition = {
         { id: 'p4', left: 'schön', right: 'schöner' },
         { id: 'p5', left: 'warm', right: 'wärmer' },
       ],
-      explanation: 'groß and warm take an umlaut in the comparative; klein, teuer and schön are fully regular.',
+      explanation:
+        'groß and warm take an umlaut in the comparative; klein, teuer and schön are fully regular.',
     },
     {
       id: 'ch81-ex-77',
@@ -1584,7 +1695,8 @@ export const chapter081: ChapterDefinition = {
       type: 'matching',
       level: 'recognition',
       grammarFocus: ['comparative-formation', 'irregular-comparative'],
-      instruction: 'Match each base adjective/adverb with its irregular comparative form.',
+      instruction:
+        'Match each base adjective/adverb with its irregular comparative form.',
       prompt: 'Match the base forms with their irregular comparatives.',
       pairs: [
         { id: 'p1', left: 'gut', right: 'besser' },
@@ -1593,7 +1705,8 @@ export const chapter081: ChapterDefinition = {
         { id: 'p4', left: 'hoch', right: 'höher' },
         { id: 'p5', left: 'nah', right: 'näher' },
       ],
-      explanation: 'These five are the classic irregular comparatives that je and desto/umso must be followed by.',
+      explanation:
+        'These five are the classic irregular comparatives that je and desto/umso must be followed by.',
     },
     {
       id: 'ch81-ex-78',
@@ -1602,16 +1715,22 @@ export const chapter081: ChapterDefinition = {
       type: 'matching',
       level: 'transfer',
       grammarFocus: ['je-desto-pattern', 'sentence-formation'],
-      instruction: 'Match each je-clause with the desto-clause that logically completes it.',
+      instruction:
+        'Match each je-clause with the desto-clause that logically completes it.',
       prompt: 'Match the je-clauses with the correct desto-clauses.',
       pairs: [
         { id: 'p1', left: 'Je älter der Wein ist,', right: 'desto teurer wird er.' },
         { id: 'p2', left: 'Je klüger man ist,', right: 'desto mehr Fragen stellt man.' },
-        { id: 'p3', left: 'Je teurer das Restaurant ist,', right: 'desto besser sollte das Essen sein.' },
+        {
+          id: 'p3',
+          left: 'Je teurer das Restaurant ist,',
+          right: 'desto besser sollte das Essen sein.',
+        },
         { id: 'p4', left: 'Je öfter du übst,', right: 'desto sicherer wirst du.' },
         { id: 'p5', left: 'Je weniger er schläft,', right: 'desto müder wird er.' },
       ],
-      explanation: 'Each je-clause names a changing condition; its matching desto-clause names the proportional result.',
+      explanation:
+        'Each je-clause names a changing condition; its matching desto-clause names the proportional result.',
     },
     {
       id: 'ch81-ex-79',
@@ -1629,7 +1748,8 @@ export const chapter081: ChapterDefinition = {
         { id: 'p4', left: 'kalt', right: 'kälter' },
         { id: 'p5', left: 'stark', right: 'stärker' },
       ],
-      explanation: 'All five take an umlaut on the stressed vowel when forming the comparative.',
+      explanation:
+        'All five take an umlaut on the stressed vowel when forming the comparative.',
     },
     {
       id: 'ch81-ex-80',
@@ -1638,16 +1758,34 @@ export const chapter081: ChapterDefinition = {
       type: 'matching',
       level: 'transfer',
       grammarFocus: ['je-desto-pattern', 'sentence-formation'],
-      instruction: 'Match each je-clause with the desto-clause that logically completes it.',
+      instruction:
+        'Match each je-clause with the desto-clause that logically completes it.',
       prompt: 'Match the je-clauses with the correct desto-clauses.',
       pairs: [
         { id: 'p1', left: 'Je höher der Berg ist,', right: 'desto kälter wird es.' },
-        { id: 'p2', left: 'Je stärker der Kaffee ist,', right: 'desto wacher fühle ich mich.' },
-        { id: 'p3', left: 'Je besser die Note ist,', right: 'desto stolzer sind die Eltern.' },
-        { id: 'p4', left: 'Je näher wir dem Ziel kommen,', right: 'desto aufgeregter werden wir.' },
-        { id: 'p5', left: 'Je länger die Warteschlange ist,', right: 'desto ungeduldiger werden die Kunden.' },
+        {
+          id: 'p2',
+          left: 'Je stärker der Kaffee ist,',
+          right: 'desto wacher fühle ich mich.',
+        },
+        {
+          id: 'p3',
+          left: 'Je besser die Note ist,',
+          right: 'desto stolzer sind die Eltern.',
+        },
+        {
+          id: 'p4',
+          left: 'Je näher wir dem Ziel kommen,',
+          right: 'desto aufgeregter werden wir.',
+        },
+        {
+          id: 'p5',
+          left: 'Je länger die Warteschlange ist,',
+          right: 'desto ungeduldiger werden die Kunden.',
+        },
       ],
-      explanation: 'Each je-clause names a changing condition; its matching desto-clause names the proportional result.',
+      explanation:
+        'Each je-clause names a changing condition; its matching desto-clause names the proportional result.',
     },
     {
       id: 'ch81-ex-81',
@@ -1665,7 +1803,8 @@ export const chapter081: ChapterDefinition = {
         { id: 'p4', left: 'näher', right: 'closer' },
         { id: 'p5', left: 'höher', right: 'higher' },
       ],
-      explanation: 'These five irregular comparatives are the ones most often used in je ... desto sentences.',
+      explanation:
+        'These five irregular comparatives are the ones most often used in je ... desto sentences.',
     },
     {
       id: 'ch81-ex-82',
@@ -1674,16 +1813,38 @@ export const chapter081: ChapterDefinition = {
       type: 'matching',
       level: 'transfer',
       grammarFocus: ['je-desto-pattern', 'sentence-formation'],
-      instruction: 'Match each je-clause with the desto-clause that logically completes it.',
+      instruction:
+        'Match each je-clause with the desto-clause that logically completes it.',
       prompt: 'Match the je-clauses with the correct desto-clauses.',
       pairs: [
-        { id: 'p1', left: 'Je mehr Sprachen man spricht,', right: 'desto leichter findet man Freunde im Ausland.' },
-        { id: 'p2', left: 'Je schöner das Wetter ist,', right: 'desto mehr Menschen gehen spazieren.' },
-        { id: 'p3', left: 'Je wärmer es draußen ist,', right: 'desto mehr Eis essen die Kinder.' },
-        { id: 'p4', left: 'Je kälter der Winter ist,', right: 'desto höher werden die Heizkosten.' },
-        { id: 'p5', left: 'Je kleiner das Auto ist,', right: 'desto weniger Benzin braucht es.' },
+        {
+          id: 'p1',
+          left: 'Je mehr Sprachen man spricht,',
+          right: 'desto leichter findet man Freunde im Ausland.',
+        },
+        {
+          id: 'p2',
+          left: 'Je schöner das Wetter ist,',
+          right: 'desto mehr Menschen gehen spazieren.',
+        },
+        {
+          id: 'p3',
+          left: 'Je wärmer es draußen ist,',
+          right: 'desto mehr Eis essen die Kinder.',
+        },
+        {
+          id: 'p4',
+          left: 'Je kälter der Winter ist,',
+          right: 'desto höher werden die Heizkosten.',
+        },
+        {
+          id: 'p5',
+          left: 'Je kleiner das Auto ist,',
+          right: 'desto weniger Benzin braucht es.',
+        },
       ],
-      explanation: 'Each je-clause names a changing condition; its matching desto-clause names the proportional result.',
+      explanation:
+        'Each je-clause names a changing condition; its matching desto-clause names the proportional result.',
     },
     {
       id: 'ch81-ex-83',
@@ -1697,7 +1858,8 @@ export const chapter081: ChapterDefinition = {
       tokens: ['Je', 'viel', 'er', 'arbeitet,', 'desto', 'müder', 'wird', 'er.'],
       errorTokenIndex: 1,
       correction: 'mehr',
-      explanation: 'viel is irregular; only its comparative form mehr may follow je, never the plain base form viel.',
+      explanation:
+        'viel is irregular; only its comparative form mehr may follow je, never the plain base form viel.',
     },
     {
       id: 'ch81-ex-84',
@@ -1705,13 +1867,18 @@ export const chapter081: ChapterDefinition = {
       order: 84,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['error-correction', 'comparative-formation', 'irregular-comparative'],
+      grammarFocus: [
+        'error-correction',
+        'comparative-formation',
+        'irregular-comparative',
+      ],
       instruction: 'Find the token with the mistake.',
       prompt: 'Someone describes how practice improves a skill. Find the mistake.',
       tokens: ['Je', 'mehr', 'er', 'übt,', 'desto', 'guter', 'wird', 'er.'],
       errorTokenIndex: 5,
       correction: 'besser',
-      explanation: 'gut is irregular; the comparative is besser, never the regular form guter.',
+      explanation:
+        'gut is irregular; the comparative is besser, never the regular form guter.',
     },
     {
       id: 'ch81-ex-85',
@@ -1733,10 +1900,25 @@ export const chapter081: ChapterDefinition = {
       order: 86,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['error-correction', 'comparative-formation', 'irregular-comparative'],
+      grammarFocus: [
+        'error-correction',
+        'comparative-formation',
+        'irregular-comparative',
+      ],
       instruction: 'Find the token with the mistake.',
       prompt: 'Someone comments on prices going up. Find the mistake.',
-      tokens: ['Je', 'hocher', 'die', 'Preise', 'steigen,', 'desto', 'weniger', 'kaufen', 'die', 'Leute.'],
+      tokens: [
+        'Je',
+        'hocher',
+        'die',
+        'Preise',
+        'steigen,',
+        'desto',
+        'weniger',
+        'kaufen',
+        'die',
+        'Leute.',
+      ],
       errorTokenIndex: 1,
       correction: 'höher',
       explanation: 'hoch is irregular: hoch -> höher (the ch drops), not hocher.',
@@ -1747,10 +1929,24 @@ export const chapter081: ChapterDefinition = {
       order: 87,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['error-correction', 'comparative-formation', 'irregular-comparative'],
+      grammarFocus: [
+        'error-correction',
+        'comparative-formation',
+        'irregular-comparative',
+      ],
       instruction: 'Find the token with the mistake.',
       prompt: 'Someone talks about nerves before an appointment. Find the mistake.',
-      tokens: ['Je', 'naher', 'der', 'Termin', 'rückt,', 'desto', 'nervöser', 'wird', 'er.'],
+      tokens: [
+        'Je',
+        'naher',
+        'der',
+        'Termin',
+        'rückt,',
+        'desto',
+        'nervöser',
+        'wird',
+        'er.',
+      ],
       errorTokenIndex: 1,
       correction: 'näher',
       explanation: 'nah is irregular: nah -> näher (an extra h is inserted), not naher.',
@@ -1761,13 +1957,18 @@ export const chapter081: ChapterDefinition = {
       order: 88,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['error-correction', 'comparative-formation', 'irregular-comparative'],
+      grammarFocus: [
+        'error-correction',
+        'comparative-formation',
+        'irregular-comparative',
+      ],
       instruction: 'Find the token with the mistake.',
       prompt: 'Someone describes free time and reading habits. Find the mistake.',
       tokens: ['Je', 'mehr', 'Zeit', 'sie', 'hat,', 'desto', 'gerner', 'liest', 'sie.'],
       errorTokenIndex: 6,
       correction: 'lieber',
-      explanation: 'gern is irregular; the comparative is lieber, never the regular form gerner.',
+      explanation:
+        'gern is irregular; the comparative is lieber, never the regular form gerner.',
     },
     {
       id: 'ch81-ex-89',
@@ -1778,7 +1979,18 @@ export const chapter081: ChapterDefinition = {
       grammarFocus: ['error-correction', 'comparative-formation', 'umlaut-comparative'],
       instruction: 'Find the token with the mistake.',
       prompt: 'Someone talks about city size and rent. Find the mistake.',
-      tokens: ['Je', 'großer', 'die', 'Stadt', 'ist,', 'desto', 'teurer', 'sind', 'die', 'Wohnungen.'],
+      tokens: [
+        'Je',
+        'großer',
+        'die',
+        'Stadt',
+        'ist,',
+        'desto',
+        'teurer',
+        'sind',
+        'die',
+        'Wohnungen.',
+      ],
       errorTokenIndex: 1,
       correction: 'größer',
       explanation: 'groß takes an umlaut in the comparative: groß -> größer, not großer.',
@@ -1792,7 +2004,18 @@ export const chapter081: ChapterDefinition = {
       grammarFocus: ['error-correction', 'comparative-formation', 'umlaut-comparative'],
       instruction: 'Find the token with the mistake.',
       prompt: 'Someone complains about waiting in line. Find the mistake.',
-      tokens: ['Je', 'langer', 'die', 'Warteschlange', 'ist,', 'desto', 'ungeduldiger', 'werden', 'die', 'Kunden.'],
+      tokens: [
+        'Je',
+        'langer',
+        'die',
+        'Warteschlange',
+        'ist,',
+        'desto',
+        'ungeduldiger',
+        'werden',
+        'die',
+        'Kunden.',
+      ],
       errorTokenIndex: 1,
       correction: 'länger',
       explanation: 'lang takes an umlaut in the comparative: lang -> länger, not langer.',
@@ -1806,7 +2029,18 @@ export const chapter081: ChapterDefinition = {
       grammarFocus: ['error-correction', 'comparative-formation', 'umlaut-comparative'],
       instruction: 'Find the token with the mistake.',
       prompt: 'Someone talks about winter and heating costs. Find the mistake.',
-      tokens: ['Je', 'kalter', 'der', 'Winter', 'ist,', 'desto', 'höher', 'werden', 'die', 'Heizkosten.'],
+      tokens: [
+        'Je',
+        'kalter',
+        'der',
+        'Winter',
+        'ist,',
+        'desto',
+        'höher',
+        'werden',
+        'die',
+        'Heizkosten.',
+      ],
       errorTokenIndex: 1,
       correction: 'kälter',
       explanation: 'kalt takes an umlaut in the comparative: kalt -> kälter, not kalter.',
@@ -1820,10 +2054,22 @@ export const chapter081: ChapterDefinition = {
       grammarFocus: ['error-correction', 'comparative-formation', 'umlaut-comparative'],
       instruction: 'Find the token with the mistake.',
       prompt: 'Someone talks about coffee strength and feeling awake. Find the mistake.',
-      tokens: ['Je', 'starker', 'der', 'Kaffee', 'ist,', 'desto', 'wacher', 'fühle', 'ich', 'mich.'],
+      tokens: [
+        'Je',
+        'starker',
+        'der',
+        'Kaffee',
+        'ist,',
+        'desto',
+        'wacher',
+        'fühle',
+        'ich',
+        'mich.',
+      ],
       errorTokenIndex: 1,
       correction: 'stärker',
-      explanation: 'stark takes an umlaut in the comparative: stark -> stärker, not starker.',
+      explanation:
+        'stark takes an umlaut in the comparative: stark -> stärker, not starker.',
     },
     {
       id: 'ch81-ex-93',
@@ -1832,7 +2078,8 @@ export const chapter081: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['comparative-formation', 'umlaut-comparative'],
-      instruction: 'Write the comparative of the adjective in brackets. Capitalisation is not checked.',
+      instruction:
+        'Write the comparative of the adjective in brackets. Capitalisation is not checked.',
       prompt: 'Je ___ (groß) die Stadt ist, desto teurer sind die Wohnungen.',
       acceptedAnswers: ['größer'],
       answerMode: 'caseInsensitive',
@@ -1847,7 +2094,8 @@ export const chapter081: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['comparative-formation'],
-      instruction: 'Write the comparative of the adjective in brackets. Capitalisation is not checked.',
+      instruction:
+        'Write the comparative of the adjective in brackets. Capitalisation is not checked.',
       prompt: 'Je ___ (klein) das Auto ist, desto weniger Benzin braucht es.',
       acceptedAnswers: ['kleiner'],
       answerMode: 'caseInsensitive',
@@ -1862,7 +2110,8 @@ export const chapter081: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['comparative-formation'],
-      instruction: 'Write the comparative of the adjective in brackets. Capitalisation is not checked.',
+      instruction:
+        'Write the comparative of the adjective in brackets. Capitalisation is not checked.',
       prompt: 'Je ___ (schön) das Wetter ist, desto mehr Menschen gehen spazieren.',
       acceptedAnswers: ['schöner'],
       answerMode: 'caseInsensitive',
@@ -1877,7 +2126,8 @@ export const chapter081: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['comparative-formation', 'umlaut-comparative'],
-      instruction: 'Write the comparative of the adjective in brackets. Capitalisation is not checked.',
+      instruction:
+        'Write the comparative of the adjective in brackets. Capitalisation is not checked.',
       prompt: 'Je ___ (warm) es draußen ist, desto mehr Eis essen die Kinder.',
       acceptedAnswers: ['wärmer'],
       answerMode: 'caseInsensitive',
@@ -1899,7 +2149,8 @@ export const chapter081: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Je älter der Wein wird, desto ...',
       maxLength: 60,
-      explanation: 'wird keeps the je-clause verb-final; wird stands directly after desto teurer in the second clause.',
+      explanation:
+        'wird keeps the je-clause verb-final; wird stands directly after desto teurer in the second clause.',
     },
     {
       id: 'ch81-ex-98',
@@ -1915,7 +2166,8 @@ export const chapter081: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Je stärker der Kaffee ist, desto ...',
       maxLength: 70,
-      explanation: 'ist keeps the je-clause verb-final; fühle stands directly after desto wacher in the second clause.',
+      explanation:
+        'ist keeps the je-clause verb-final; fühle stands directly after desto wacher in the second clause.',
     },
     {
       id: 'ch81-ex-99',
@@ -1924,7 +2176,8 @@ export const chapter081: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['error-correction', 'word-order'],
-      instruction: 'Correct the mistake. Write the full corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Je mehr er lernt, desto er wird besser.',
       acceptedAnswers: ['Je mehr er lernt, desto besser wird er.'],
       answerMode: 'normalized',
@@ -1940,7 +2193,8 @@ export const chapter081: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['error-correction', 'comparative-formation', 'umlaut-comparative'],
-      instruction: 'Correct the mistake. Write the full corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Je alter man wird, desto weiser wird man.',
       acceptedAnswers: ['Je älter man wird, desto weiser wird man.'],
       answerMode: 'normalized',

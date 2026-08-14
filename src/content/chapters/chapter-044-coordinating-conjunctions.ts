@@ -85,11 +85,36 @@ export const chapter044: ChapterDefinition = {
         title: 'The five coordinating conjunctions',
         columns: ['Conjunction', 'Meaning', 'Comma before it?', 'Example'],
         rows: [
-          ['und', 'and', 'not required (optional)', 'Ich koche, und du deckst den Tisch.'],
-          ['aber', 'but / however', 'always required', 'Ich bin müde, aber ich arbeite weiter.'],
-          ['oder', 'or', 'not required (optional)', 'Kommst du mit, oder bleibst du hier?'],
-          ['denn', 'because / for', 'always required', 'Wir bleiben zu Hause, denn es regnet.'],
-          ['sondern', 'but rather (after negation)', 'always required', 'Er ist nicht müde, sondern hungrig.'],
+          [
+            'und',
+            'and',
+            'not required (optional)',
+            'Ich koche, und du deckst den Tisch.',
+          ],
+          [
+            'aber',
+            'but / however',
+            'always required',
+            'Ich bin müde, aber ich arbeite weiter.',
+          ],
+          [
+            'oder',
+            'or',
+            'not required (optional)',
+            'Kommst du mit, oder bleibst du hier?',
+          ],
+          [
+            'denn',
+            'because / for',
+            'always required',
+            'Wir bleiben zu Hause, denn es regnet.',
+          ],
+          [
+            'sondern',
+            'but rather (after negation)',
+            'always required',
+            'Er ist nicht müde, sondern hungrig.',
+          ],
         ],
         note: 'In every case, the verb in the clause after the connector stays in normal second position — none of these five connectors change word order.',
       },
@@ -134,88 +159,104 @@ export const chapter044: ChapterDefinition = {
         german: 'Wir bleiben zu Hause, denn es regnet den ganzen Tag.',
         english: 'We are staying home, because it is raining all day.',
         highlight: ['denn'],
-        explanation: 'denn introduces a reason and keeps the verb in second position: es regnet.',
+        explanation:
+          'denn introduces a reason and keeps the verb in second position: es regnet.',
       },
       {
         german: 'Das Hotel ist teuer, aber es lohnt sich.',
         english: 'The hotel is expensive, but it is worth it.',
         highlight: ['aber'],
-        explanation: 'aber expresses a simple contrast; nothing is being negated and replaced here.',
+        explanation:
+          'aber expresses a simple contrast; nothing is being negated and replaced here.',
       },
       {
         german: 'Er trinkt keinen Kaffee, sondern Tee.',
         english: 'He does not drink coffee, but rather tea.',
         highlight: ['sondern'],
-        explanation: 'The first clause is negated (keinen Kaffee), and the second clause replaces it with the true alternative.',
+        explanation:
+          'The first clause is negated (keinen Kaffee), and the second clause replaces it with the true alternative.',
       },
       {
         german: 'Das ist kein Fehler, sondern eine gute Idee.',
         english: 'That is not a mistake, but rather a good idea.',
         highlight: ['sondern'],
-        explanation: '"kein Fehler" is negated, and "eine gute Idee" is the fact that replaces it.',
+        explanation:
+          '"kein Fehler" is negated, and "eine gute Idee" is the fact that replaces it.',
       },
       {
         german: 'Ich gehe ins Kino und sehe einen Film.',
         english: 'I am going to the cinema and watching a film.',
         highlight: ['und sehe'],
-        explanation: 'The shared subject ich is dropped from the second clause because it would have been the first word there.',
+        explanation:
+          'The shared subject ich is dropped from the second clause because it would have been the first word there.',
       },
       {
         german: 'Ich gehe heute ins Kino, und danach besuche ich meine Oma.',
-        english: 'Today I am going to the cinema, and afterwards I am visiting my grandma.',
+        english:
+          'Today I am going to the cinema, and afterwards I am visiting my grandma.',
         highlight: ['danach besuche ich'],
-        explanation: 'danach occupies first position in the second clause, so the shared subject ich cannot be dropped and instead follows the verb.',
+        explanation:
+          'danach occupies first position in the second clause, so the shared subject ich cannot be dropped and instead follows the verb.',
       },
       {
         german: 'Ich kaufe Brot und Milch.',
         english: 'I am buying bread and milk.',
         highlight: ['Brot und Milch'],
-        explanation: 'und here connects two nouns, not two full clauses, so no comma is used.',
+        explanation:
+          'und here connects two nouns, not two full clauses, so no comma is used.',
       },
       {
         german: 'Er war nicht besonders spannend, aber die Schauspieler waren gut.',
         english: 'It (the film) was not especially exciting, but the actors were good.',
         highlight: ['aber'],
-        explanation: 'The second clause does not replace the claim about excitement — both statements can be true — so this is a contrast with aber, not a correction with sondern.',
+        explanation:
+          'The second clause does not replace the claim about excitement — both statements can be true — so this is a contrast with aber, not a correction with sondern.',
       },
       {
         german: 'Bist du müde, oder kannst du noch weiterarbeiten?',
         english: 'Are you tired, or can you keep working?',
         highlight: ['oder'],
-        explanation: 'oder links two complete questions as alternatives; a comma here is optional but allowed for clarity.',
+        explanation:
+          'oder links two complete questions as alternatives; a comma here is optional but allowed for clarity.',
       },
       {
         german: 'Ich bin noch nicht fertig, denn ich brauche noch etwas Zeit.',
         english: "I'm not finished yet, because I still need some time.",
         highlight: ['denn'],
-        explanation: 'Even though the first clause is negated, the second clause explains a reason rather than replacing the negated fact, so denn is correct, not sondern.',
+        explanation:
+          'Even though the first clause is negated, the second clause explains a reason rather than replacing the negated fact, so denn is correct, not sondern.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich bin müde aber ich arbeite weiter.',
         correct: 'Ich bin müde, aber ich arbeite weiter.',
-        explanation: 'aber always takes a comma before it when it connects two main clauses.',
+        explanation:
+          'aber always takes a comma before it when it connects two main clauses.',
       },
       {
         incorrect: 'Er ist nicht müde, aber hungrig.',
         correct: 'Er ist nicht müde, sondern hungrig.',
-        explanation: 'The first clause is negated and the second clause replaces it with the true state, so sondern is required, not aber.',
+        explanation:
+          'The first clause is negated and the second clause replaces it with the true state, so sondern is required, not aber.',
       },
       {
         incorrect: 'Ich mag Tee, sondern ich trinke lieber Kaffee.',
         correct: 'Ich mag Tee, aber ich trinke lieber Kaffee.',
-        explanation: 'The first clause is not negated, so sondern cannot be used; a simple contrast with aber is correct here.',
+        explanation:
+          'The first clause is not negated, so sondern cannot be used; a simple contrast with aber is correct here.',
       },
       {
         incorrect: 'Wir bleiben zu Hause, denn es heute regnet.',
         correct: 'Wir bleiben zu Hause, denn es regnet heute.',
-        explanation: 'denn is a coordinating conjunction, so the clause after it keeps normal verb-second word order, unlike the subordinating weil, which would send the verb to the end.',
+        explanation:
+          'denn is a coordinating conjunction, so the clause after it keeps normal verb-second word order, unlike the subordinating weil, which would send the verb to the end.',
       },
       {
         incorrect: 'Ich kaufe Brot, und Milch.',
         correct: 'Ich kaufe Brot und Milch.',
-        explanation: 'und here connects only two words, not two full main clauses, so no comma is used before it.',
+        explanation:
+          'und here connects only two words, not two full main clauses, so no comma is used before it.',
       },
     ],
     remember: [
@@ -240,7 +281,8 @@ export const chapter044: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['connector-choice', 'und'],
-      instruction: 'Choose the connector that simply adds a second matching action, with no contrast.',
+      instruction:
+        'Choose the connector that simply adds a second matching action, with no contrast.',
       prompt: 'Ich koche das Essen ___ du deckst den Tisch.',
       options: [
         { id: 'a', text: 'und' },
@@ -249,7 +291,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'd', text: 'sondern' },
       ],
       correctOptionId: 'a',
-      explanation: 'und simply adds two parallel actions with no contrast or alternative, so it is the right connector here.',
+      explanation:
+        'und simply adds two parallel actions with no contrast or alternative, so it is the right connector here.',
     },
     {
       id: 'ch44-ex-02',
@@ -267,7 +310,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'd', text: 'sondern' },
       ],
       correctOptionId: 'a',
-      explanation: 'oder presents two alternatives to choose between, which is exactly what the question asks.',
+      explanation:
+        'oder presents two alternatives to choose between, which is exactly what the question asks.',
     },
     {
       id: 'ch44-ex-03',
@@ -276,7 +320,8 @@ export const chapter044: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['connector-choice', 'denn'],
-      instruction: 'Choose the connector that introduces a reason while keeping normal word order.',
+      instruction:
+        'Choose the connector that introduces a reason while keeping normal word order.',
       prompt: 'Wir bleiben heute zu Hause, ___ es regnet den ganzen Tag.',
       options: [
         { id: 'a', text: 'denn' },
@@ -285,7 +330,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'd', text: 'sondern' },
       ],
       correctOptionId: 'a',
-      explanation: 'denn introduces a reason and, unlike the subordinating weil, keeps normal main-clause word order (verb in second position); a comma is required before denn.',
+      explanation:
+        'denn introduces a reason and, unlike the subordinating weil, keeps normal main-clause word order (verb in second position); a comma is required before denn.',
     },
     {
       id: 'ch44-ex-04',
@@ -303,7 +349,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'd', text: 'oder' },
       ],
       correctOptionId: 'a',
-      explanation: 'aber expresses a simple contrast; there is no negation in the first clause to correct, so sondern would be wrong here.',
+      explanation:
+        'aber expresses a simple contrast; there is no negation in the first clause to correct, so sondern would be wrong here.',
     },
     {
       id: 'ch44-ex-05',
@@ -321,7 +368,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'd', text: 'denn' },
       ],
       correctOptionId: 'a',
-      explanation: 'The first clause is negated (keinen Kaffee) and the second clause replaces it with the true alternative, so sondern is required instead of aber.',
+      explanation:
+        'The first clause is negated (keinen Kaffee) and the second clause replaces it with the true alternative, so sondern is required instead of aber.',
     },
     {
       id: 'ch44-ex-06',
@@ -351,7 +399,8 @@ export const chapter044: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'und/oder/aber',
       maxLength: 15,
-      explanation: 'oder presents two alternative plans, exactly what the sentence describes.',
+      explanation:
+        'oder presents two alternative plans, exactly what the sentence describes.',
     },
     {
       id: 'ch44-ex-08',
@@ -380,7 +429,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'c', text: 'oder' },
       ],
       correctOptionId: 'a',
-      explanation: "Paul's first clause is negated (\"nicht ins Kino\") and the second clause names the true alternative that replaces it, so sondern is required, not aber.",
+      explanation:
+        'Paul\'s first clause is negated ("nicht ins Kino") and the second clause names the true alternative that replaces it, so sondern is required, not aber.',
     },
     {
       id: 'ch44-ex-09',
@@ -394,7 +444,8 @@ export const chapter044: ChapterDefinition = {
         { speaker: 'Mia', german: 'Wie war der Film?', english: 'How was the movie?' },
         {
           speaker: 'Jonas',
-          german: 'Er war nicht besonders spannend, ___ die Schauspieler waren wirklich gut.',
+          german:
+            'Er war nicht besonders spannend, ___ die Schauspieler waren wirklich gut.',
           english: "It wasn't especially exciting, ... the actors were really good.",
         },
       ],
@@ -405,7 +456,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'c', text: 'oder' },
       ],
       correctOptionId: 'a',
-      explanation: 'The second clause does not replace the claim in the first clause — both can be true at once (not exciting AND good actors) — so this is a simple contrast with aber, not a correction with sondern.',
+      explanation:
+        'The second clause does not replace the claim in the first clause — both can be true at once (not exciting AND good actors) — so this is a simple contrast with aber, not a correction with sondern.',
     },
     {
       id: 'ch44-ex-10',
@@ -420,7 +472,8 @@ export const chapter044: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'denn/weil/aber',
       maxLength: 15,
-      explanation: 'denn introduces the reason and keeps normal main-clause word order, unlike weil.',
+      explanation:
+        'denn introduces the reason and keeps normal main-clause word order, unlike weil.',
     },
     {
       id: 'ch44-ex-11',
@@ -430,12 +483,14 @@ export const chapter044: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['connector-choice', 'aber'],
       instruction: 'Fill in the missing connector. Capitalisation is not checked.',
-      prompt: 'Die Wohnung ist klein, ___ sie liegt sehr zentral. (contrast, no negation)',
+      prompt:
+        'Die Wohnung ist klein, ___ sie liegt sehr zentral. (contrast, no negation)',
       acceptedAnswers: ['aber'],
       answerMode: 'caseInsensitive',
       placeholder: 'aber/sondern',
       maxLength: 15,
-      explanation: 'aber expresses a simple contrast; nothing here is being negated and replaced.',
+      explanation:
+        'aber expresses a simple contrast; nothing here is being negated and replaced.',
     },
     {
       id: 'ch44-ex-12',
@@ -444,7 +499,8 @@ export const chapter044: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['aber-vs-sondern', 'negation'],
-      instruction: "Fill in the missing connector to complete the customer's reply. Capitalisation is not checked.",
+      instruction:
+        "Fill in the missing connector to complete the customer's reply. Capitalisation is not checked.",
       dialogue: [
         {
           speaker: 'Verkäufer',
@@ -462,7 +518,8 @@ export const chapter044: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'sondern/aber',
       maxLength: 15,
-      explanation: 'The customer negates "die rote" and replaces it with the true alternative "die blaue", which is exactly when sondern is required.',
+      explanation:
+        'The customer negates "die rote" and replaces it with the true alternative "die blaue", which is exactly when sondern is required.',
     },
     {
       id: 'ch44-ex-13',
@@ -479,7 +536,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'c', text: 'Ich bin müde aber, ich arbeite weiter.' },
       ],
       correctOptionId: 'a',
-      explanation: 'aber always takes a comma directly before it when it connects two main clauses.',
+      explanation:
+        'aber always takes a comma directly before it when it connects two main clauses.',
     },
     {
       id: 'ch44-ex-14',
@@ -496,7 +554,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'c', text: 'Ich kaufe, Brot und Milch.' },
       ],
       correctOptionId: 'a',
-      explanation: 'When und simply connects two words (Brot und Milch) rather than two full main clauses, no comma is used.',
+      explanation:
+        'When und simply connects two words (Brot und Milch) rather than two full main clauses, no comma is used.',
     },
     {
       id: 'ch44-ex-15',
@@ -513,7 +572,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'c', text: 'Wir bleiben zu Hause, denn regnet es heute.' },
       ],
       correctOptionId: 'a',
-      explanation: 'denn is a coordinating conjunction, so the clause after it keeps normal verb-second word order (es regnet heute), unlike the subordinating weil, which would send the verb to the end.',
+      explanation:
+        'denn is a coordinating conjunction, so the clause after it keeps normal verb-second word order (es regnet heute), unlike the subordinating weil, which would send the verb to the end.',
     },
     {
       id: 'ch44-ex-16',
@@ -530,7 +590,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'c', text: 'denn' },
       ],
       correctOptionId: 'a',
-      explanation: '"kein Fehler" is a negated statement, and "eine gute Idee" replaces it as the true alternative, so sondern is needed.',
+      explanation:
+        '"kein Fehler" is a negated statement, and "eine gute Idee" replaces it as the true alternative, so sondern is needed.',
     },
     {
       id: 'ch44-ex-17',
@@ -539,7 +600,8 @@ export const chapter044: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['comma-rule', 'sondern'],
-      instruction: 'Rewrite the sentence with the missing comma. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence with the missing comma. Capitalisation and punctuation are checked.',
       prompt: 'Ich habe keine Zeit sondern viel zu viel Arbeit.',
       acceptedAnswers: ['Ich habe keine Zeit, sondern viel zu viel Arbeit.'],
       answerMode: 'normalized',
@@ -554,13 +616,15 @@ export const chapter044: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['comma-rule', 'denn'],
-      instruction: 'Rewrite the sentence with the missing comma. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence with the missing comma. Capitalisation and punctuation are checked.',
       prompt: 'Wir gehen nicht spazieren denn es regnet.',
       acceptedAnswers: ['Wir gehen nicht spazieren, denn es regnet.'],
       answerMode: 'normalized',
       placeholder: 'Wir gehen nicht spazieren, denn ...',
       maxLength: 60,
-      explanation: 'denn always takes a comma before it, and the clause after denn keeps normal verb-second word order.',
+      explanation:
+        'denn always takes a comma before it, and the clause after denn keeps normal verb-second word order.',
     },
     {
       id: 'ch44-ex-19',
@@ -577,7 +641,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'c', text: 'Er ist nicht faul, sondern, beschäftigt.' },
       ],
       correctOptionId: 'a',
-      explanation: 'sondern always takes a comma before it, and no extra comma follows it before the corrected element.',
+      explanation:
+        'sondern always takes a comma before it, and no extra comma follows it before the corrected element.',
     },
     {
       id: 'ch44-ex-20',
@@ -587,7 +652,8 @@ export const chapter044: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['aber-vs-sondern', 'negation'],
       instruction: "Choose the connector that fits the speaker's answer.",
-      prompt: 'Fährst du mit dem Auto oder mit dem Zug? — Ich fahre nicht mit dem Auto, ___ mit dem Zug, das Benzin ist zu teuer.',
+      prompt:
+        'Fährst du mit dem Auto oder mit dem Zug? — Ich fahre nicht mit dem Auto, ___ mit dem Zug, das Benzin ist zu teuer.',
       options: [
         { id: 'a', text: 'sondern' },
         { id: 'b', text: 'aber' },
@@ -595,7 +661,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'd', text: 'und' },
       ],
       correctOptionId: 'a',
-      explanation: 'The negated "nicht mit dem Auto" is replaced by the true alternative "mit dem Zug", which is exactly the sondern pattern (negation + true alternative).',
+      explanation:
+        'The negated "nicht mit dem Auto" is replaced by the true alternative "mit dem Zug", which is exactly the sondern pattern (negation + true alternative).',
     },
     {
       id: 'ch44-ex-21',
@@ -604,13 +671,15 @@ export const chapter044: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['subject-omission', 'und'],
-      instruction: 'Combine the two sentences with und, dropping the repeated subject in the second clause. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with und, dropping the repeated subject in the second clause. Capitalisation and punctuation are checked.',
       prompt: 'Ich gehe ins Kino. Ich sehe einen Film.',
       acceptedAnswers: ['Ich gehe ins Kino und sehe einen Film.'],
       answerMode: 'normalized',
       placeholder: 'Ich gehe ins Kino und ...',
       maxLength: 60,
-      explanation: 'Because both clauses share the subject ich and it would be the very first word of the second clause, it can be dropped: Ich gehe ins Kino und sehe einen Film.',
+      explanation:
+        'Because both clauses share the subject ich and it would be the very first word of the second clause, it can be dropped: Ich gehe ins Kino und sehe einen Film.',
     },
     {
       id: 'ch44-ex-22',
@@ -619,13 +688,15 @@ export const chapter044: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['subject-omission', 'und'],
-      instruction: 'Combine the two sentences with und. Keep the subject where it is grammatically required. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with und. Keep the subject where it is grammatically required. Capitalisation and punctuation are checked.',
       prompt: 'Ich gehe heute ins Kino. Danach besuche ich meine Oma.',
       acceptedAnswers: ['Ich gehe heute ins Kino und danach besuche ich meine Oma.'],
       answerMode: 'normalized',
       placeholder: 'Ich gehe heute ins Kino und danach ...',
       maxLength: 70,
-      explanation: 'Here "danach" takes first position in the second clause, so the shared subject ich cannot be dropped — it must stay and moves after the verb, unlike when the shared subject itself would be first.',
+      explanation:
+        'Here "danach" takes first position in the second clause, so the shared subject ich cannot be dropped — it must stay and moves after the verb, unlike when the shared subject itself would be first.',
     },
     {
       id: 'ch44-ex-23',
@@ -634,13 +705,16 @@ export const chapter044: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['word-order', 'denn'],
-      instruction: 'Build a complete, correctly punctuated sentence from the cues, using denn as the connector. Capitalisation and punctuation are checked.',
-      prompt: 'wir – bleiben – zu Hause / es – regnen – den ganzen Tag (mit denn, normale Wortstellung)',
+      instruction:
+        'Build a complete, correctly punctuated sentence from the cues, using denn as the connector. Capitalisation and punctuation are checked.',
+      prompt:
+        'wir – bleiben – zu Hause / es – regnen – den ganzen Tag (mit denn, normale Wortstellung)',
       acceptedAnswers: ['Wir bleiben zu Hause, denn es regnet den ganzen Tag.'],
       answerMode: 'normalized',
       placeholder: 'Wir bleiben zu Hause, denn ...',
       maxLength: 70,
-      explanation: 'denn keeps normal main-clause word order (verb second) in both clauses, and always takes a comma before it.',
+      explanation:
+        'denn keeps normal main-clause word order (verb second) in both clauses, and always takes a comma before it.',
     },
     {
       id: 'ch44-ex-24',
@@ -670,7 +744,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'd', text: 'oder' },
       ],
       correctOptionId: 'a',
-      explanation: 'Although the first clause is negated, the second clause explains a reason rather than naming a fact that replaces "not finished", so denn is correct — sondern would require an alternative that contradicts the negation, such as "sondern fast fertig".',
+      explanation:
+        'Although the first clause is negated, the second clause explains a reason rather than naming a fact that replaces "not finished", so denn is correct — sondern would require an alternative that contradicts the negation, such as "sondern fast fertig".',
     },
     {
       id: 'ch44-ex-25',
@@ -679,13 +754,15 @@ export const chapter044: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'word-order', 'denn'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ich bleibe im Bett, denn ich krank bin.',
       acceptedAnswers: ['Ich bleibe im Bett, denn ich bin krank.'],
       answerMode: 'normalized',
       placeholder: 'Ich bleibe im Bett, denn ...',
       maxLength: 60,
-      explanation: 'denn is a coordinating conjunction, so the verb stays in second position (ich bin krank), not at the end as after the subordinating weil.',
+      explanation:
+        'denn is a coordinating conjunction, so the verb stays in second position (ich bin krank), not at the end as after the subordinating weil.',
     },
     {
       id: 'ch44-ex-26',
@@ -694,17 +771,27 @@ export const chapter044: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['aber-vs-sondern', 'negation', 'sentence-formation'],
-      instruction: 'Using the dialogue context, combine the two sentences into one, using sondern. Capitalisation and punctuation are checked.',
+      instruction:
+        'Using the dialogue context, combine the two sentences into one, using sondern. Capitalisation and punctuation are checked.',
       dialogue: [
-        { speaker: 'Reporter', german: 'Ist das Projekt gescheitert?', english: 'Did the project fail?' },
-        { speaker: 'Chefin', german: 'Nein, ganz im Gegenteil!', english: 'No, quite the opposite!' },
+        {
+          speaker: 'Reporter',
+          german: 'Ist das Projekt gescheitert?',
+          english: 'Did the project fail?',
+        },
+        {
+          speaker: 'Chefin',
+          german: 'Nein, ganz im Gegenteil!',
+          english: 'No, quite the opposite!',
+        },
       ],
       prompt: 'Das Projekt ist nicht gescheitert. Es ist erfolgreich.',
       acceptedAnswers: ['Das Projekt ist nicht gescheitert, sondern erfolgreich.'],
       answerMode: 'normalized',
       placeholder: 'Das Projekt ist nicht gescheitert, sondern ...',
       maxLength: 70,
-      explanation: 'The first clause is negated (nicht gescheitert) and "erfolgreich" replaces it as the true state of affairs, so the two clauses combine with sondern and a comma, dropping the repeated "es ist" before the adjective.',
+      explanation:
+        'The first clause is negated (nicht gescheitert) and "erfolgreich" replaces it as the true state of affairs, so the two clauses combine with sondern and a comma, dropping the repeated "es ist" before the adjective.',
     },
     {
       id: 'ch44-ex-27',
@@ -722,7 +809,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'd', text: 'sondern' },
       ],
       correctOptionId: 'a',
-      explanation: 'oder presents two alternatives — coming along or staying here — exactly what the question offers.',
+      explanation:
+        'oder presents two alternatives — coming along or staying here — exactly what the question offers.',
     },
     {
       id: 'ch44-ex-28',
@@ -739,7 +827,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'c', text: 'Bist du, müde oder kannst du noch arbeiten?' },
       ],
       correctOptionId: 'a',
-      explanation: 'A comma before oder joining two main clauses is optional but allowed for clarity, and always goes directly before oder, never after it.',
+      explanation:
+        'A comma before oder joining two main clauses is optional but allowed for clarity, and always goes directly before oder, never after it.',
     },
     {
       id: 'ch44-ex-29',
@@ -750,7 +839,11 @@ export const chapter044: ChapterDefinition = {
       grammarFocus: ['aber-vs-sondern', 'negation'],
       instruction: "Choose the connector that fits the guest's reply.",
       dialogue: [
-        { speaker: 'Kellner', german: 'Möchten Sie die Suppe?', english: 'Would you like the soup?' },
+        {
+          speaker: 'Kellner',
+          german: 'Möchten Sie die Suppe?',
+          english: 'Would you like the soup?',
+        },
         {
           speaker: 'Gast',
           german: 'Nein, ich möchte nicht die Suppe, ___ den Salat.',
@@ -764,7 +857,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'c', text: 'oder' },
       ],
       correctOptionId: 'a',
-      explanation: 'The first clause is negated ("nicht die Suppe") and the second clause names the true alternative that replaces it, so sondern is required.',
+      explanation:
+        'The first clause is negated ("nicht die Suppe") and the second clause names the true alternative that replaces it, so sondern is required.',
     },
     {
       id: 'ch44-ex-30',
@@ -781,7 +875,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'c', text: 'sondern' },
       ],
       correctOptionId: 'a',
-      explanation: 'und here connects only two nouns, not two full clauses, so no comma is used and und is the natural connector.',
+      explanation:
+        'und here connects only two nouns, not two full clauses, so no comma is used and und is the natural connector.',
     },
     {
       id: 'ch44-ex-31',
@@ -798,7 +893,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'c', text: 'Er bleibt zu Hause, denn ist er krank.' },
       ],
       correctOptionId: 'a',
-      explanation: 'denn is coordinating, so the clause after it keeps normal verb-second word order: er ist krank.',
+      explanation:
+        'denn is coordinating, so the clause after it keeps normal verb-second word order: er ist krank.',
     },
     {
       id: 'ch44-ex-32',
@@ -815,7 +911,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'c', text: 'Sie ist, müde aber sie tanzt weiter.' },
       ],
       correctOptionId: 'a',
-      explanation: 'aber always takes a comma directly before it when it connects two main clauses.',
+      explanation:
+        'aber always takes a comma directly before it when it connects two main clauses.',
     },
     {
       id: 'ch44-ex-33',
@@ -826,10 +923,15 @@ export const chapter044: ChapterDefinition = {
       grammarFocus: ['aber-vs-sondern', 'negation'],
       instruction: "Choose the connector that fits the friend's reply.",
       dialogue: [
-        { speaker: 'Freund', german: 'Fährst du in den Urlaub?', english: 'Are you going on vacation?' },
+        {
+          speaker: 'Freund',
+          german: 'Fährst du in den Urlaub?',
+          english: 'Are you going on vacation?',
+        },
         {
           speaker: 'Freundin',
-          german: 'Nein, ich fahre nicht in den Urlaub, ___ ich bleibe zu Hause und arbeite.',
+          german:
+            'Nein, ich fahre nicht in den Urlaub, ___ ich bleibe zu Hause und arbeite.',
           english: "No, I'm not going on vacation, ... I'm staying home and working.",
         },
       ],
@@ -840,7 +942,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'c', text: 'denn' },
       ],
       correctOptionId: 'a',
-      explanation: 'The negated first clause ("nicht in den Urlaub") is replaced by the true alternative ("bleibe zu Hause"), so sondern is required even though the replacement is a full clause, not just a noun.',
+      explanation:
+        'The negated first clause ("nicht in den Urlaub") is replaced by the true alternative ("bleibe zu Hause"), so sondern is required even though the replacement is a full clause, not just a noun.',
     },
     {
       id: 'ch44-ex-34',
@@ -849,7 +952,8 @@ export const chapter044: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['connector-choice', 'denn'],
-      instruction: 'Choose the connector that introduces a reason with normal word order.',
+      instruction:
+        'Choose the connector that introduces a reason with normal word order.',
       prompt: 'Sie lernt jeden Tag Deutsch, ___ sie möchte in Deutschland studieren.',
       options: [
         { id: 'a', text: 'denn' },
@@ -858,7 +962,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'd', text: 'aber' },
       ],
       correctOptionId: 'a',
-      explanation: 'denn introduces the reason and, unlike the subordinating weil, keeps the verb in normal second position: sie möchte.',
+      explanation:
+        'denn introduces the reason and, unlike the subordinating weil, keeps the verb in normal second position: sie möchte.',
     },
     {
       id: 'ch44-ex-35',
@@ -875,7 +980,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'c', text: 'Er kocht, und isst dann.' },
       ],
       correctOptionId: 'a',
-      explanation: 'When the shared subject er is dropped and und simply links two verbs for the same subject, no comma is used before und.',
+      explanation:
+        'When the shared subject er is dropped and und simply links two verbs for the same subject, no comma is used before und.',
     },
     {
       id: 'ch44-ex-36',
@@ -892,7 +998,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'c', text: 'denn' },
       ],
       correctOptionId: 'a',
-      explanation: '"kein Anfänger" is negated, and "ein Profi" replaces it as the true fact, so sondern is required.',
+      explanation:
+        '"kein Anfänger" is negated, and "ein Profi" replaces it as the true fact, so sondern is required.',
     },
     {
       id: 'ch44-ex-37',
@@ -909,7 +1016,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'c', text: 'Ich lerne, viel denn ich will die Prüfung bestehen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'denn always takes a comma directly before it when it connects two main clauses.',
+      explanation:
+        'denn always takes a comma directly before it when it connects two main clauses.',
     },
     {
       id: 'ch44-ex-38',
@@ -920,7 +1028,11 @@ export const chapter044: ChapterDefinition = {
       grammarFocus: ['aber-vs-sondern', 'negation'],
       instruction: "Choose the connector that fits the child's reply.",
       dialogue: [
-        { speaker: 'Mutter', german: 'Isst du noch Gemüse?', english: 'Do you still eat vegetables?' },
+        {
+          speaker: 'Mutter',
+          german: 'Isst du noch Gemüse?',
+          english: 'Do you still eat vegetables?',
+        },
         {
           speaker: 'Kind',
           german: 'Nein, ich esse kein Gemüse mehr, ___ nur noch Obst.',
@@ -935,7 +1047,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'd', text: 'denn' },
       ],
       correctOptionId: 'a',
-      explanation: 'The negated "kein Gemüse mehr" is replaced by "nur noch Obst", the classic negation-plus-replacement pattern that requires sondern.',
+      explanation:
+        'The negated "kein Gemüse mehr" is replaced by "nur noch Obst", the classic negation-plus-replacement pattern that requires sondern.',
     },
     {
       id: 'ch44-ex-39',
@@ -950,7 +1063,8 @@ export const chapter044: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'sondern/aber',
       maxLength: 15,
-      explanation: 'The first clause is negated (nicht traurig) and wütend replaces it, so sondern is required.',
+      explanation:
+        'The first clause is negated (nicht traurig) and wütend replaces it, so sondern is required.',
     },
     {
       id: 'ch44-ex-40',
@@ -965,7 +1079,8 @@ export const chapter044: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'aber/sondern',
       maxLength: 15,
-      explanation: 'aber expresses a simple contrast; there is no negated fact here for sondern to replace.',
+      explanation:
+        'aber expresses a simple contrast; there is no negated fact here for sondern to replace.',
     },
     {
       id: 'ch44-ex-41',
@@ -974,13 +1089,15 @@ export const chapter044: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['comma-rule', 'aber'],
-      instruction: 'Rewrite the sentence with the missing comma. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence with the missing comma. Capitalisation and punctuation are checked.',
       prompt: 'Sie singt gut aber sie tanzt nicht gern.',
       acceptedAnswers: ['Sie singt gut, aber sie tanzt nicht gern.'],
       answerMode: 'normalized',
       placeholder: 'Sie singt gut, aber ...',
       maxLength: 60,
-      explanation: 'aber always takes a comma directly before it when it connects two main clauses.',
+      explanation:
+        'aber always takes a comma directly before it when it connects two main clauses.',
     },
     {
       id: 'ch44-ex-42',
@@ -989,7 +1106,8 @@ export const chapter044: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['comma-rule', 'sondern'],
-      instruction: 'Rewrite the sentence with the missing comma. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence with the missing comma. Capitalisation and punctuation are checked.',
       prompt: 'Er kommt nicht heute sondern morgen.',
       acceptedAnswers: ['Er kommt nicht heute, sondern morgen.'],
       answerMode: 'normalized',
@@ -1004,13 +1122,16 @@ export const chapter044: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['word-order', 'denn'],
-      instruction: 'Build a complete, correctly punctuated sentence from the cues, using denn. Capitalisation and punctuation are checked.',
-      prompt: 'die Kinder – spielen – draußen / die Sonne – scheinen (mit denn, normale Wortstellung)',
+      instruction:
+        'Build a complete, correctly punctuated sentence from the cues, using denn. Capitalisation and punctuation are checked.',
+      prompt:
+        'die Kinder – spielen – draußen / die Sonne – scheinen (mit denn, normale Wortstellung)',
       acceptedAnswers: ['Die Kinder spielen draußen, denn die Sonne scheint.'],
       answerMode: 'normalized',
       placeholder: 'Die Kinder spielen draußen, denn ...',
       maxLength: 70,
-      explanation: 'denn keeps normal main-clause word order (verb second) and always takes a comma before it.',
+      explanation:
+        'denn keeps normal main-clause word order (verb second) and always takes a comma before it.',
     },
     {
       id: 'ch44-ex-44',
@@ -1019,13 +1140,15 @@ export const chapter044: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['subject-omission', 'und'],
-      instruction: 'Combine the two sentences with und, dropping the repeated subject. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with und, dropping the repeated subject. Capitalisation and punctuation are checked.',
       prompt: 'Ich stehe auf. Ich dusche.',
       acceptedAnswers: ['Ich stehe auf und dusche.'],
       answerMode: 'normalized',
       placeholder: 'Ich stehe auf und ...',
       maxLength: 60,
-      explanation: 'Because ich would be the first word of the second clause, it can be dropped: Ich stehe auf und dusche.',
+      explanation:
+        'Because ich would be the first word of the second clause, it can be dropped: Ich stehe auf und dusche.',
     },
     {
       id: 'ch44-ex-45',
@@ -1034,13 +1157,15 @@ export const chapter044: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['subject-omission', 'und'],
-      instruction: 'Combine the two sentences with und. Keep the subject where it is grammatically required. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with und. Keep the subject where it is grammatically required. Capitalisation and punctuation are checked.',
       prompt: 'Ich lese ein Buch. Dann schlafe ich ein.',
       acceptedAnswers: ['Ich lese ein Buch und dann schlafe ich ein.'],
       answerMode: 'normalized',
       placeholder: 'Ich lese ein Buch und dann ...',
       maxLength: 70,
-      explanation: '"dann" takes first position in the second clause, so the shared subject ich cannot be dropped — it stays and moves after the verb.',
+      explanation:
+        '"dann" takes first position in the second clause, so the shared subject ich cannot be dropped — it stays and moves after the verb.',
     },
     {
       id: 'ch44-ex-46',
@@ -1049,13 +1174,15 @@ export const chapter044: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['aber-vs-sondern', 'negation', 'sentence-formation'],
-      instruction: 'Combine the two sentences using sondern. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences using sondern. Capitalisation and punctuation are checked.',
       prompt: 'Das Auto ist nicht neu. Es ist zuverlässig.',
       acceptedAnswers: ['Das Auto ist nicht neu, sondern zuverlässig.'],
       answerMode: 'normalized',
       placeholder: 'Das Auto ist nicht neu, sondern ...',
       maxLength: 70,
-      explanation: 'The first clause is negated (nicht neu) and zuverlässig replaces it, so the two clauses combine with sondern, dropping the repeated "es ist".',
+      explanation:
+        'The first clause is negated (nicht neu) and zuverlässig replaces it, so the two clauses combine with sondern, dropping the repeated "es ist".',
     },
     {
       id: 'ch44-ex-47',
@@ -1064,13 +1191,15 @@ export const chapter044: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['connector-choice', 'aber', 'sentence-formation'],
-      instruction: 'Combine the two sentences using aber. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences using aber. Capitalisation and punctuation are checked.',
       prompt: 'Die Prüfung war schwer. Ich habe bestanden.',
       acceptedAnswers: ['Die Prüfung war schwer, aber ich habe bestanden.'],
       answerMode: 'normalized',
       placeholder: 'Die Prüfung war schwer, aber ...',
       maxLength: 70,
-      explanation: 'Neither clause is negated, so this is a simple contrast: aber links the two facts without either replacing the other.',
+      explanation:
+        'Neither clause is negated, so this is a simple contrast: aber links the two facts without either replacing the other.',
     },
     {
       id: 'ch44-ex-48',
@@ -1079,13 +1208,15 @@ export const chapter044: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'connector-choice', 'denn'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Wir feiern heute, denn Anna Geburtstag hat.',
       acceptedAnswers: ['Wir feiern heute, denn Anna hat Geburtstag.'],
       answerMode: 'normalized',
       placeholder: 'Wir feiern heute, denn ...',
       maxLength: 60,
-      explanation: 'denn is coordinating, so the clause after it keeps normal verb-second word order: Anna hat Geburtstag, not the verb-final order of a subordinate clause.',
+      explanation:
+        'denn is coordinating, so the clause after it keeps normal verb-second word order: Anna hat Geburtstag, not the verb-final order of a subordinate clause.',
     },
     {
       id: 'ch44-ex-49',
@@ -1094,13 +1225,15 @@ export const chapter044: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'aber-vs-sondern', 'negation'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ich bin nicht müde, aber wach.',
       acceptedAnswers: ['Ich bin nicht müde, sondern wach.'],
       answerMode: 'normalized',
       placeholder: 'Ich bin nicht müde, sondern ...',
       maxLength: 60,
-      explanation: 'The first clause is negated (nicht müde) and wach replaces it as the true state, so sondern is required, not aber.',
+      explanation:
+        'The first clause is negated (nicht müde) and wach replaces it as the true state, so sondern is required, not aber.',
     },
     {
       id: 'ch44-ex-50',
@@ -1109,17 +1242,27 @@ export const chapter044: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['connector-choice', 'denn', 'sentence-formation'],
-      instruction: 'Using the dialogue context, combine the two sentences using denn. Capitalisation and punctuation are checked.',
+      instruction:
+        'Using the dialogue context, combine the two sentences using denn. Capitalisation and punctuation are checked.',
       dialogue: [
-        { speaker: 'Freund', german: 'Warum lachst du?', english: 'Why are you laughing?' },
-        { speaker: 'Freundin', german: 'Der Witz war wirklich lustig!', english: 'The joke was really funny!' },
+        {
+          speaker: 'Freund',
+          german: 'Warum lachst du?',
+          english: 'Why are you laughing?',
+        },
+        {
+          speaker: 'Freundin',
+          german: 'Der Witz war wirklich lustig!',
+          english: 'The joke was really funny!',
+        },
       ],
       prompt: 'Ich lache. Der Witz war lustig.',
       acceptedAnswers: ['Ich lache, denn der Witz war lustig.'],
       answerMode: 'normalized',
       placeholder: 'Ich lache, denn ...',
       maxLength: 60,
-      explanation: 'denn introduces the reason for laughing and keeps normal verb-second word order in both clauses.',
+      explanation:
+        'denn introduces the reason for laughing and keeps normal verb-second word order in both clauses.',
     },
     {
       id: 'ch44-ex-51',
@@ -1128,7 +1271,8 @@ export const chapter044: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['word-order', 'und'],
-      instruction: 'Put the segments in the correct order to form a correctly connected sentence.',
+      instruction:
+        'Put the segments in the correct order to form a correctly connected sentence.',
       prompt: 'Ich koche das Essen, und du deckst den Tisch.',
       segments: [
         { id: 'seg1', text: 'Ich' },
@@ -1139,7 +1283,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'seg6', text: 'deckst' },
         { id: 'seg7', text: 'den Tisch.' },
       ],
-      explanation: 'und links two independent clauses without changing either clause\'s normal verb-second word order.',
+      explanation:
+        "und links two independent clauses without changing either clause's normal verb-second word order.",
     },
     {
       id: 'ch44-ex-52',
@@ -1148,7 +1293,8 @@ export const chapter044: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['word-order', 'denn'],
-      instruction: 'Put the segments in the correct order to form a correctly connected sentence.',
+      instruction:
+        'Put the segments in the correct order to form a correctly connected sentence.',
       prompt: 'Wir bleiben zu Hause, denn es regnet den ganzen Tag.',
       segments: [
         { id: 'seg1', text: 'Wir' },
@@ -1159,7 +1305,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'seg6', text: 'regnet' },
         { id: 'seg7', text: 'den ganzen Tag.' },
       ],
-      explanation: 'denn is coordinating, so the verb "regnet" stays in second position in the second clause, exactly as it would in an independent sentence.',
+      explanation:
+        'denn is coordinating, so the verb "regnet" stays in second position in the second clause, exactly as it would in an independent sentence.',
     },
     {
       id: 'ch44-ex-53',
@@ -1168,7 +1315,8 @@ export const chapter044: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['aber-vs-sondern', 'negation'],
-      instruction: 'Put the segments in the correct order to form a correctly connected sentence.',
+      instruction:
+        'Put the segments in the correct order to form a correctly connected sentence.',
       prompt: 'Er trinkt keinen Kaffee, sondern Tee.',
       segments: [
         { id: 'seg1', text: 'Er' },
@@ -1177,7 +1325,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'seg4', text: 'sondern' },
         { id: 'seg5', text: 'Tee.' },
       ],
-      explanation: 'The negated "keinen Kaffee" is replaced by "Tee", so sondern connects the two, and the repeated verb can be dropped from the second half.',
+      explanation:
+        'The negated "keinen Kaffee" is replaced by "Tee", so sondern connects the two, and the repeated verb can be dropped from the second half.',
     },
     {
       id: 'ch44-ex-54',
@@ -1186,7 +1335,8 @@ export const chapter044: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['connector-choice', 'aber'],
-      instruction: 'Put the segments in the correct order to form a correctly connected sentence.',
+      instruction:
+        'Put the segments in the correct order to form a correctly connected sentence.',
       prompt: 'Das Hotel ist teuer, aber es lohnt sich.',
       segments: [
         { id: 'seg1', text: 'Das Hotel' },
@@ -1195,7 +1345,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'seg4', text: 'es' },
         { id: 'seg5', text: 'lohnt sich.' },
       ],
-      explanation: 'aber simply adds a contrast; both clauses keep normal verb-second order.',
+      explanation:
+        'aber simply adds a contrast; both clauses keep normal verb-second order.',
     },
     {
       id: 'ch44-ex-55',
@@ -1204,7 +1355,8 @@ export const chapter044: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'recognition',
       grammarFocus: ['connector-choice', 'oder'],
-      instruction: 'Put the segments in the correct order to form a correctly connected question.',
+      instruction:
+        'Put the segments in the correct order to form a correctly connected question.',
       prompt: 'Kommst du mit, oder bleibst du hier?',
       segments: [
         { id: 'seg1', text: 'Kommst du' },
@@ -1213,7 +1365,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'seg4', text: 'bleibst du' },
         { id: 'seg5', text: 'hier?' },
       ],
-      explanation: 'oder links two alternative questions, each keeping its own normal inverted question order.',
+      explanation:
+        'oder links two alternative questions, each keeping its own normal inverted question order.',
     },
     {
       id: 'ch44-ex-56',
@@ -1222,7 +1375,8 @@ export const chapter044: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['subject-omission', 'und'],
-      instruction: 'Put the segments in the correct order to form a correctly connected sentence.',
+      instruction:
+        'Put the segments in the correct order to form a correctly connected sentence.',
       prompt: 'Ich gehe ins Kino und sehe einen Film.',
       segments: [
         { id: 'seg1', text: 'Ich' },
@@ -1232,7 +1386,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'seg5', text: 'sehe' },
         { id: 'seg6', text: 'einen Film.' },
       ],
-      explanation: 'The shared subject ich is dropped from the second clause because it would otherwise be the first word there.',
+      explanation:
+        'The shared subject ich is dropped from the second clause because it would otherwise be the first word there.',
     },
     {
       id: 'ch44-ex-57',
@@ -1241,7 +1396,8 @@ export const chapter044: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['subject-omission', 'und'],
-      instruction: 'Put the segments in the correct order to form a correctly connected sentence.',
+      instruction:
+        'Put the segments in the correct order to form a correctly connected sentence.',
       prompt: 'Ich gehe heute ins Kino, und danach besuche ich meine Oma.',
       segments: [
         { id: 'seg1', text: 'Ich' },
@@ -1252,7 +1408,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'seg6', text: 'besuche ich' },
         { id: 'seg7', text: 'meine Oma.' },
       ],
-      explanation: '"danach" takes first position in the second clause, so the shared subject ich cannot be dropped and instead follows the verb.',
+      explanation:
+        '"danach" takes first position in the second clause, so the shared subject ich cannot be dropped and instead follows the verb.',
     },
     {
       id: 'ch44-ex-58',
@@ -1261,7 +1418,8 @@ export const chapter044: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['word-order', 'denn'],
-      instruction: 'Put the segments in the correct order to form a correctly connected sentence.',
+      instruction:
+        'Put the segments in the correct order to form a correctly connected sentence.',
       prompt: 'Sie bleibt zu Hause, denn ihr Kind ist krank.',
       segments: [
         { id: 'seg1', text: 'Sie' },
@@ -1271,7 +1429,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'seg5', text: 'ihr Kind' },
         { id: 'seg6', text: 'ist krank.' },
       ],
-      explanation: 'denn keeps the verb "ist" in second position in the clause it introduces, exactly as in an independent sentence.',
+      explanation:
+        'denn keeps the verb "ist" in second position in the clause it introduces, exactly as in an independent sentence.',
     },
     {
       id: 'ch44-ex-59',
@@ -1280,7 +1439,8 @@ export const chapter044: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['aber-vs-sondern'],
-      instruction: 'Put the segments in the correct order to form a correctly connected sentence.',
+      instruction:
+        'Put the segments in the correct order to form a correctly connected sentence.',
       prompt: 'Er war nicht besonders spannend, aber die Schauspieler waren gut.',
       segments: [
         { id: 'seg1', text: 'Er' },
@@ -1290,7 +1450,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'seg5', text: 'die Schauspieler' },
         { id: 'seg6', text: 'waren gut.' },
       ],
-      explanation: 'The second clause does not replace the first — both can be true — so this is a contrast with aber, not a correction with sondern.',
+      explanation:
+        'The second clause does not replace the first — both can be true — so this is a contrast with aber, not a correction with sondern.',
     },
     {
       id: 'ch44-ex-60',
@@ -1299,7 +1460,8 @@ export const chapter044: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['aber-vs-sondern', 'negation'],
-      instruction: 'Put the segments in the correct order to form a correctly connected sentence.',
+      instruction:
+        'Put the segments in the correct order to form a correctly connected sentence.',
       prompt: 'Das Projekt ist nicht gescheitert, sondern erfolgreich.',
       segments: [
         { id: 'seg1', text: 'Das Projekt' },
@@ -1308,7 +1470,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'seg4', text: 'sondern' },
         { id: 'seg5', text: 'erfolgreich.' },
       ],
-      explanation: 'The negated "gescheitert" is replaced by "erfolgreich", the classic sondern pattern.',
+      explanation:
+        'The negated "gescheitert" is replaced by "erfolgreich", the classic sondern pattern.',
     },
     {
       id: 'ch44-ex-61',
@@ -1317,7 +1480,8 @@ export const chapter044: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'recognition',
       grammarFocus: ['connector-choice', 'oder'],
-      instruction: 'Put the segments in the correct order to form a correctly connected question.',
+      instruction:
+        'Put the segments in the correct order to form a correctly connected question.',
       prompt: 'Bist du müde, oder kannst du noch weiterarbeiten?',
       segments: [
         { id: 'seg1', text: 'Bist du' },
@@ -1326,7 +1490,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'seg4', text: 'kannst du' },
         { id: 'seg5', text: 'noch weiterarbeiten?' },
       ],
-      explanation: 'oder links two independent questions as alternatives, each keeping its own normal inverted order.',
+      explanation:
+        'oder links two independent questions as alternatives, each keeping its own normal inverted order.',
     },
     {
       id: 'ch44-ex-62',
@@ -1335,7 +1500,8 @@ export const chapter044: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['word-order', 'denn', 'negation'],
-      instruction: 'Put the segments in the correct order to form a correctly connected sentence.',
+      instruction:
+        'Put the segments in the correct order to form a correctly connected sentence.',
       prompt: 'Ich bin noch nicht fertig, denn ich brauche noch etwas Zeit.',
       segments: [
         { id: 'seg1', text: 'Ich' },
@@ -1345,7 +1511,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'seg5', text: 'ich brauche' },
         { id: 'seg6', text: 'noch etwas Zeit.' },
       ],
-      explanation: 'Even though the first clause is negated, the second clause explains a reason rather than replacing the negated fact, so denn is correct, not sondern.',
+      explanation:
+        'Even though the first clause is negated, the second clause explains a reason rather than replacing the negated fact, so denn is correct, not sondern.',
     },
     {
       id: 'ch44-ex-63',
@@ -1354,7 +1521,8 @@ export const chapter044: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'recognition',
       grammarFocus: ['connector-choice', 'und', 'comma-rule'],
-      instruction: 'Put the segments in the correct order to form a correctly punctuated sentence.',
+      instruction:
+        'Put the segments in the correct order to form a correctly punctuated sentence.',
       prompt: 'Ich kaufe Brot und Milch.',
       segments: [
         { id: 'seg1', text: 'Ich' },
@@ -1363,7 +1531,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'seg4', text: 'und' },
         { id: 'seg5', text: 'Milch.' },
       ],
-      explanation: 'Here und connects only two nouns, not two full clauses, so no comma is used before it.',
+      explanation:
+        'Here und connects only two nouns, not two full clauses, so no comma is used before it.',
     },
     {
       id: 'ch44-ex-64',
@@ -1372,7 +1541,8 @@ export const chapter044: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['connector-choice', 'aber'],
-      instruction: 'Put the segments in the correct order to form a correctly connected sentence.',
+      instruction:
+        'Put the segments in the correct order to form a correctly connected sentence.',
       prompt: 'Die Wohnung ist klein, aber sie liegt sehr zentral.',
       segments: [
         { id: 'seg1', text: 'Die Wohnung' },
@@ -1382,7 +1552,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'seg5', text: 'liegt sehr' },
         { id: 'seg6', text: 'zentral.' },
       ],
-      explanation: 'aber expresses a simple contrast; nothing here is negated and replaced, so sondern would be wrong.',
+      explanation:
+        'aber expresses a simple contrast; nothing here is negated and replaced, so sondern would be wrong.',
     },
     {
       id: 'ch44-ex-65',
@@ -1391,7 +1562,8 @@ export const chapter044: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'controlled',
       grammarFocus: ['aber-vs-sondern', 'negation'],
-      instruction: 'Put the segments in the correct order to form a correctly connected sentence.',
+      instruction:
+        'Put the segments in the correct order to form a correctly connected sentence.',
       prompt: 'Ich trinke keinen Tee, sondern Kaffee.',
       segments: [
         { id: 'seg1', text: 'Ich' },
@@ -1400,7 +1572,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'seg4', text: 'sondern' },
         { id: 'seg5', text: 'Kaffee.' },
       ],
-      explanation: 'The negated "keinen Tee" is replaced by "Kaffee", so only sondern (not aber) is correct.',
+      explanation:
+        'The negated "keinen Tee" is replaced by "Kaffee", so only sondern (not aber) is correct.',
     },
     {
       id: 'ch44-ex-66',
@@ -1414,7 +1587,8 @@ export const chapter044: ChapterDefinition = {
       tokens: ['Ich', 'bin', 'müde,', 'sondern', 'ich', 'arbeite', 'weiter.'],
       errorTokenIndex: 3,
       correction: 'aber',
-      explanation: 'The first clause is not negated, so sondern cannot be used here; a simple contrast needs aber.',
+      explanation:
+        'The first clause is not negated, so sondern cannot be used here; a simple contrast needs aber.',
     },
     {
       id: 'ch44-ex-67',
@@ -1428,7 +1602,8 @@ export const chapter044: ChapterDefinition = {
       tokens: ['Er', 'ist', 'nicht', 'müde,', 'aber', 'hungrig.'],
       errorTokenIndex: 4,
       correction: 'sondern',
-      explanation: 'The first clause is negated (nicht müde) and hungrig replaces it, so sondern is required instead of aber.',
+      explanation:
+        'The first clause is negated (nicht müde) and hungrig replaces it, so sondern is required instead of aber.',
     },
     {
       id: 'ch44-ex-68',
@@ -1439,10 +1614,22 @@ export const chapter044: ChapterDefinition = {
       grammarFocus: ['word-order', 'denn', 'weil'],
       instruction: 'Click the token that is wrong and note what it should be.',
       prompt: 'Wir bleiben zu Hause, weil es regnet den ganzen Tag.',
-      tokens: ['Wir', 'bleiben', 'zu', 'Hause,', 'weil', 'es', 'regnet', 'den', 'ganzen', 'Tag.'],
+      tokens: [
+        'Wir',
+        'bleiben',
+        'zu',
+        'Hause,',
+        'weil',
+        'es',
+        'regnet',
+        'den',
+        'ganzen',
+        'Tag.',
+      ],
       errorTokenIndex: 4,
       correction: 'denn',
-      explanation: 'The clause keeps verb-second word order (es regnet den ganzen Tag), which fits the coordinating denn — the subordinating weil would instead require the verb at the end (weil es den ganzen Tag regnet).',
+      explanation:
+        'The clause keeps verb-second word order (es regnet den ganzen Tag), which fits the coordinating denn — the subordinating weil would instead require the verb at the end (weil es den ganzen Tag regnet).',
     },
     {
       id: 'ch44-ex-69',
@@ -1456,7 +1643,8 @@ export const chapter044: ChapterDefinition = {
       tokens: ['Sie', 'geht', 'nicht', 'zur', 'Arbeit,', 'weil', 'sie', 'ist', 'krank.'],
       errorTokenIndex: 5,
       correction: 'denn',
-      explanation: 'The clause keeps verb-second word order (sie ist krank), which fits the coordinating denn, not the subordinating weil, which would require the verb-final order sie krank ist.',
+      explanation:
+        'The clause keeps verb-second word order (sie ist krank), which fits the coordinating denn, not the subordinating weil, which would require the verb-final order sie krank ist.',
     },
     {
       id: 'ch44-ex-70',
@@ -1470,7 +1658,8 @@ export const chapter044: ChapterDefinition = {
       tokens: ['Er', 'kommt', 'heute,', 'sondern', 'er', 'bleibt', 'morgen', 'auch.'],
       errorTokenIndex: 3,
       correction: 'aber',
-      explanation: 'Neither clause is negated, so sondern cannot connect them; a simple contrast needs aber.',
+      explanation:
+        'Neither clause is negated, so sondern cannot connect them; a simple contrast needs aber.',
     },
     {
       id: 'ch44-ex-71',
@@ -1484,7 +1673,8 @@ export const chapter044: ChapterDefinition = {
       tokens: ['Das', 'ist', 'kein', 'Problem,', 'aber', 'eine', 'Lösung.'],
       errorTokenIndex: 4,
       correction: 'sondern',
-      explanation: '"kein Problem" is negated and "eine Lösung" replaces it, so sondern is required instead of aber.',
+      explanation:
+        '"kein Problem" is negated and "eine Lösung" replaces it, so sondern is required instead of aber.',
     },
     {
       id: 'ch44-ex-72',
@@ -1498,7 +1688,8 @@ export const chapter044: ChapterDefinition = {
       tokens: ['Ich', 'koche,', 'oder', 'du', 'deckst', 'den', 'Tisch.'],
       errorTokenIndex: 2,
       correction: 'und',
-      explanation: 'The two actions happen together, not as alternatives, so und is correct here, not oder.',
+      explanation:
+        'The two actions happen together, not as alternatives, so und is correct here, not oder.',
     },
     {
       id: 'ch44-ex-73',
@@ -1512,7 +1703,8 @@ export const chapter044: ChapterDefinition = {
       tokens: ['Ich', 'bin', 'müde', 'aber', 'ich', 'arbeite', 'weiter.'],
       errorTokenIndex: 2,
       correction: 'müde,',
-      explanation: 'aber always takes a comma directly before it, so "müde" must be followed by a comma: müde,.',
+      explanation:
+        'aber always takes a comma directly before it, so "müde" must be followed by a comma: müde,.',
     },
     {
       id: 'ch44-ex-74',
@@ -1526,7 +1718,8 @@ export const chapter044: ChapterDefinition = {
       tokens: ['Wir', 'bleiben', 'zu', 'Hause', 'denn', 'es', 'regnet.'],
       errorTokenIndex: 3,
       correction: 'Hause,',
-      explanation: 'denn always takes a comma directly before it, so "Hause" must be followed by a comma: Hause,.',
+      explanation:
+        'denn always takes a comma directly before it, so "Hause" must be followed by a comma: Hause,.',
     },
     {
       id: 'ch44-ex-75',
@@ -1540,7 +1733,8 @@ export const chapter044: ChapterDefinition = {
       tokens: ['Ich', 'kaufe', 'Brot,', 'und', 'Milch.'],
       errorTokenIndex: 2,
       correction: 'Brot',
-      explanation: 'und here connects only two words, not two full main clauses, so no comma is used before it: Brot without a comma.',
+      explanation:
+        'und here connects only two words, not two full main clauses, so no comma is used before it: Brot without a comma.',
     },
     {
       id: 'ch44-ex-76',
@@ -1558,7 +1752,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'p4', left: 'denn', right: 'gives a reason, verb stays second' },
         { id: 'p5', left: 'sondern', right: 'replaces a negated fact' },
       ],
-      explanation: 'Each of the five coordinating conjunctions has a distinct job, but none of them change the word order of the clauses they connect.',
+      explanation:
+        'Each of the five coordinating conjunctions has a distinct job, but none of them change the word order of the clauses they connect.',
     },
     {
       id: 'ch44-ex-77',
@@ -1575,7 +1770,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'p3', left: 'Wir bleiben zu Hause, ___ es regnet.', right: 'denn' },
         { id: 'p4', left: 'Kommst du mit, ___ bleibst du hier?', right: 'oder' },
       ],
-      explanation: 'aber adds a contrast, sondern replaces a negated fact, denn gives a reason, and oder presents an alternative.',
+      explanation:
+        'aber adds a contrast, sondern replaces a negated fact, denn gives a reason, and oder presents an alternative.',
     },
     {
       id: 'ch44-ex-78',
@@ -1593,7 +1789,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'p4', left: 'denn', right: 'Wir bleiben zu Hause, denn es regnet.' },
         { id: 'p5', left: 'sondern', right: 'Er ist nicht müde, sondern hungrig.' },
       ],
-      explanation: 'In every example, the verb after the connector stays in normal second position, since none of the five coordinating conjunctions change word order.',
+      explanation:
+        'In every example, the verb after the connector stays in normal second position, since none of the five coordinating conjunctions change word order.',
     },
     {
       id: 'ch44-ex-79',
@@ -1614,7 +1811,8 @@ export const chapter044: ChapterDefinition = {
         { id: 'slot2', correctWord: 'denn' },
       ],
       wordBank: ['sondern', 'denn', 'aber', 'oder'],
-      explanation: 'The first blank needs sondern because "keinen Kaffee" is negated and Tee is the true alternative; the second blank needs denn because it introduces a reason while keeping normal word order.',
+      explanation:
+        'The first blank needs sondern because "keinen Kaffee" is negated and Tee is the true alternative; the second blank needs denn because it introduces a reason while keeping normal word order.',
     },
   ],
 };

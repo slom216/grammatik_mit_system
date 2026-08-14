@@ -41,8 +41,8 @@ export const chapter073: ChapterDefinition = {
         id: 'ch73-rule-02',
         heading: 'The shared-subject condition',
         paragraphs: [
-          "A zu-infinitive clause is only possible when its implied subject is exactly the subject of the main clause. Er vergisst, seine Tasche mitzunehmen works because er both forgets and (fails to) take the bag — one and the same person doing both actions.",
-          "When the two actions have different subjects, German cannot use zu — it must fall back on a dass-clause instead: Ich hoffe, dass er die Prüfung besteht (I hope that he passes the exam) — not *Ich hoffe, ihn die Prüfung zu bestehen. Always check who is doing the second action before reaching for zu.",
+          'A zu-infinitive clause is only possible when its implied subject is exactly the subject of the main clause. Er vergisst, seine Tasche mitzunehmen works because er both forgets and (fails to) take the bag — one and the same person doing both actions.',
+          'When the two actions have different subjects, German cannot use zu — it must fall back on a dass-clause instead: Ich hoffe, dass er die Prüfung besteht (I hope that he passes the exam) — not *Ich hoffe, ihn die Prüfung zu bestehen. Always check who is doing the second action before reaching for zu.',
         ],
       },
       {
@@ -86,11 +86,36 @@ export const chapter073: ChapterDefinition = {
         rows: [
           ['Normal', 'kommen', 'zu kommen', 'Ich versuche, pünktlich zu kommen.'],
           ['Normal', 'helfen', 'zu helfen', 'Er verspricht, morgen zu helfen.'],
-          ['Inseparable prefix', 'bestehen', 'zu bestehen', 'Sie hofft, die Prüfung zu bestehen.'],
-          ['Separable prefix', 'anfangen', 'anzufangen', 'Wir beginnen, mit der Arbeit anzufangen.'],
-          ['Separable prefix', 'einkaufen', 'einzukaufen', 'Ich habe vergessen, einzukaufen.'],
-          ['Separable prefix', 'aufstehen', 'aufzustehen', 'Es ist schwierig, früh aufzustehen.'],
-          ['Separable prefix', 'vorschlagen', 'vorzuschlagen', 'Er hat vor, ein Restaurant vorzuschlagen.'],
+          [
+            'Inseparable prefix',
+            'bestehen',
+            'zu bestehen',
+            'Sie hofft, die Prüfung zu bestehen.',
+          ],
+          [
+            'Separable prefix',
+            'anfangen',
+            'anzufangen',
+            'Wir beginnen, mit der Arbeit anzufangen.',
+          ],
+          [
+            'Separable prefix',
+            'einkaufen',
+            'einzukaufen',
+            'Ich habe vergessen, einzukaufen.',
+          ],
+          [
+            'Separable prefix',
+            'aufstehen',
+            'aufzustehen',
+            'Es ist schwierig, früh aufzustehen.',
+          ],
+          [
+            'Separable prefix',
+            'vorschlagen',
+            'vorzuschlagen',
+            'Er hat vor, ein Restaurant vorzuschlagen.',
+          ],
         ],
         note: 'With normal and inseparable verbs, zu stays a separate word directly before the infinitive. With separable verbs, zu is inserted between the prefix and the stem and the result is written as one word.',
       },
@@ -100,14 +125,44 @@ export const chapter073: ChapterDefinition = {
         columns: ['Type', 'Word', 'English', 'Example'],
         rows: [
           ['Verb', 'versuchen', 'to try', 'Ich versuche, gesünder zu leben.'],
-          ['Verb', 'beginnen / anfangen', 'to begin/start', 'Sie beginnt, Deutsch zu lernen.'],
+          [
+            'Verb',
+            'beginnen / anfangen',
+            'to begin/start',
+            'Sie beginnt, Deutsch zu lernen.',
+          ],
           ['Verb', 'vergessen', 'to forget', 'Er vergisst, die Tür abzuschließen.'],
           ['Verb', 'hoffen', 'to hope', 'Wir hoffen, dich bald zu sehen.'],
-          ['Verb', 'sich freuen auf', 'to look forward to', 'Ich freue mich darauf, dich zu sehen.'],
-          ['Adjective + sein', 'es ist wichtig', "it's important", 'Es ist wichtig, viel zu üben.'],
-          ['Adjective + sein', 'es ist schwierig', "it's difficult", 'Es ist schwierig, früh aufzustehen.'],
-          ['Adjective + sein', 'es ist möglich', "it's possible", 'Es ist möglich, den Kurs zu wechseln.'],
-          ['Noun', 'die Möglichkeit', 'the possibility/chance', 'Ich habe die Möglichkeit, im Ausland zu studieren.'],
+          [
+            'Verb',
+            'sich freuen auf',
+            'to look forward to',
+            'Ich freue mich darauf, dich zu sehen.',
+          ],
+          [
+            'Adjective + sein',
+            'es ist wichtig',
+            "it's important",
+            'Es ist wichtig, viel zu üben.',
+          ],
+          [
+            'Adjective + sein',
+            'es ist schwierig',
+            "it's difficult",
+            'Es ist schwierig, früh aufzustehen.',
+          ],
+          [
+            'Adjective + sein',
+            'es ist möglich',
+            "it's possible",
+            'Es ist möglich, den Kurs zu wechseln.',
+          ],
+          [
+            'Noun',
+            'die Möglichkeit',
+            'the possibility/chance',
+            'Ich habe die Möglichkeit, im Ausland zu studieren.',
+          ],
           ['Noun', 'die Idee', 'the idea', 'Das war die Idee, ein Picknick zu machen.'],
         ],
       },
@@ -117,8 +172,16 @@ export const chapter073: ChapterDefinition = {
         columns: ['Type', 'Example', 'Comma?'],
         rows: [
           ['Bare infinitive (nothing attached)', 'Er verspricht zu helfen.', 'Optional'],
-          ['Extended clause (object, adverb, prefix, etc.)', 'Er verspricht, seiner Schwester zu helfen.', 'Required'],
-          ['Extended clause with a separable verb', 'Ich habe vergessen, einzukaufen.', 'Required'],
+          [
+            'Extended clause (object, adverb, prefix, etc.)',
+            'Er verspricht, seiner Schwester zu helfen.',
+            'Required',
+          ],
+          [
+            'Extended clause with a separable verb',
+            'Ich habe vergessen, einzukaufen.',
+            'Required',
+          ],
         ],
         note: 'This course always writes the comma before an extended zu-infinitive clause, since that is by far the more common case in real sentences.',
       },
@@ -128,37 +191,43 @@ export const chapter073: ChapterDefinition = {
         german: 'Ich versuche, pünktlich zu kommen.',
         english: 'I am trying to arrive on time.',
         highlight: ['zu kommen'],
-        explanation: 'versuchen introduces the zu-infinitive; the comma marks the extended clause pünktlich zu kommen.',
+        explanation:
+          'versuchen introduces the zu-infinitive; the comma marks the extended clause pünktlich zu kommen.',
       },
       {
         german: 'Er hat vergessen, das Licht auszumachen.',
         english: 'He forgot to turn off the light.',
         highlight: ['auszumachen'],
-        explanation: 'ausmachen is separable, so zu is inserted between aus and machen: auszumachen.',
+        explanation:
+          'ausmachen is separable, so zu is inserted between aus and machen: auszumachen.',
       },
       {
         german: 'Wir beginnen, mit der Arbeit anzufangen.',
         english: 'We are starting to begin the work.',
         highlight: ['anzufangen'],
-        explanation: 'anfangen is separable: an + zu + fangen → anzufangen, written as one word.',
+        explanation:
+          'anfangen is separable: an + zu + fangen → anzufangen, written as one word.',
       },
       {
         german: 'Es ist wichtig, jeden Tag Deutsch zu üben.',
         english: 'It is important to practise German every day.',
         highlight: ['zu üben'],
-        explanation: 'The adjective expression es ist wichtig introduces a zu-infinitive clause, just like a verb can.',
+        explanation:
+          'The adjective expression es ist wichtig introduces a zu-infinitive clause, just like a verb can.',
       },
       {
         german: 'Ich habe die Möglichkeit, im Ausland zu studieren.',
         english: 'I have the chance to study abroad.',
         highlight: ['zu studieren'],
-        explanation: 'The noun die Möglichkeit is followed by a zu-infinitive clause explaining what the chance is.',
+        explanation:
+          'The noun die Möglichkeit is followed by a zu-infinitive clause explaining what the chance is.',
       },
       {
         german: 'Sie freut sich darauf, ihre Familie zu besuchen.',
         english: 'She is looking forward to visiting her family.',
         highlight: ['zu besuchen'],
-        explanation: 'sich freuen auf uses the placeholder darauf before the comma, then the zu-infinitive clause explains what darauf refers to.',
+        explanation:
+          'sich freuen auf uses the placeholder darauf before the comma, then the zu-infinitive clause explains what darauf refers to.',
       },
       {
         german: 'Er hat vor, ein Restaurant vorzuschlagen.',
@@ -170,69 +239,81 @@ export const chapter073: ChapterDefinition = {
         german: 'Ich hoffe, dass er pünktlich ankommt.',
         english: 'I hope that he arrives on time.',
         highlight: ['dass er pünktlich ankommt'],
-        explanation: 'The subject of ankommt (er) differs from the subject of hoffe (ich), so a zu-construction is impossible here; a dass-clause is required instead.',
+        explanation:
+          'The subject of ankommt (er) differs from the subject of hoffe (ich), so a zu-construction is impossible here; a dass-clause is required instead.',
       },
       {
         german: 'Ich hoffe, pünktlich anzukommen.',
         english: 'I hope to arrive on time.',
         highlight: ['anzukommen'],
-        explanation: 'Here the hoper and the arriver are the same person (ich), so the zu-infinitive is possible: an + zu + kommen → anzukommen.',
+        explanation:
+          'Here the hoper and the arriver are the same person (ich), so the zu-infinitive is possible: an + zu + kommen → anzukommen.',
       },
       {
         german: 'Er verspricht zu helfen.',
         english: 'He promises to help.',
         highlight: ['zu helfen'],
-        explanation: 'A single bare infinitive with nothing attached to it may go without a comma.',
+        explanation:
+          'A single bare infinitive with nothing attached to it may go without a comma.',
       },
       {
         german: 'Er verspricht, seiner Schwester bei den Hausaufgaben zu helfen.',
         english: 'He promises to help his sister with the homework.',
         highlight: ['zu helfen'],
-        explanation: 'Once the infinitive clause is extended with an object and a prepositional phrase, the comma is required.',
+        explanation:
+          'Once the infinitive clause is extended with an object and a prepositional phrase, the comma is required.',
       },
       {
         german: 'Es ist möglich, den Kurs zu wechseln.',
         english: 'It is possible to switch the course.',
         highlight: ['zu wechseln'],
-        explanation: 'es ist möglich is another adjective-plus-sein expression that takes a zu-infinitive clause.',
+        explanation:
+          'es ist möglich is another adjective-plus-sein expression that takes a zu-infinitive clause.',
       },
       {
         german: 'Ich habe keine Zeit, heute einzukaufen.',
         english: 'I have no time to shop today.',
         highlight: ['einzukaufen'],
-        explanation: 'die Zeit + zu introduces the clause; einkaufen is separable, so zu sits inside it: einzukaufen.',
+        explanation:
+          'die Zeit + zu introduces the clause; einkaufen is separable, so zu sits inside it: einzukaufen.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich versuche, zuanfangen.',
         correct: 'Ich versuche, anzufangen.',
-        explanation: 'zu is never simply glued in front of a separable verb; it must be inserted between the prefix and the stem: an + zu + fangen → anzufangen.',
+        explanation:
+          'zu is never simply glued in front of a separable verb; it must be inserted between the prefix and the stem: an + zu + fangen → anzufangen.',
       },
       {
         incorrect: 'Er hat vergessen, zu ausmachen das Licht.',
         correct: 'Er hat vergessen, das Licht auszumachen.',
-        explanation: 'zu splits the separable verb ausmachen into auszumachen, and the whole infinitive clause stands at the end: das Licht auszumachen.',
+        explanation:
+          'zu splits the separable verb ausmachen into auszumachen, and the whole infinitive clause stands at the end: das Licht auszumachen.',
       },
       {
         incorrect: 'Ich hoffe, ihn die Prüfung zu bestehen.',
         correct: 'Ich hoffe, dass er die Prüfung besteht.',
-        explanation: 'The subject of hoffe (ich) and the subject of besteht (er) are different people, so a zu-infinitive is impossible — a dass-clause with its own subject is required.',
+        explanation:
+          'The subject of hoffe (ich) and the subject of besteht (er) are different people, so a zu-infinitive is impossible — a dass-clause with its own subject is required.',
       },
       {
         incorrect: 'Ich versuche pünktlich zu kommen ohne Komma.',
         correct: 'Ich versuche, pünktlich zu kommen.',
-        explanation: 'An extended zu-infinitive clause (more than the bare infinitive) always needs a comma before it, here before pünktlich.',
+        explanation:
+          'An extended zu-infinitive clause (more than the bare infinitive) always needs a comma before it, here before pünktlich.',
       },
       {
         incorrect: 'Es ist wichtig, dass zu üben jeden Tag.',
         correct: 'Es ist wichtig, jeden Tag zu üben.',
-        explanation: 'A zu-infinitive clause never uses dass and never has its own conjugated verb; the infinitive with zu goes at the end of the clause.',
+        explanation:
+          'A zu-infinitive clause never uses dass and never has its own conjugated verb; the infinitive with zu goes at the end of the clause.',
       },
       {
         incorrect: 'Sie beginnt Deutsch lernen zu.',
         correct: 'Sie beginnt, Deutsch zu lernen.',
-        explanation: 'zu always comes directly before the infinitive it belongs to (zu lernen), never after it, and the clause needs its comma.',
+        explanation:
+          'zu always comes directly before the infinitive it belongs to (zu lernen), never after it, and the clause needs its comma.',
       },
     ],
     remember: [
@@ -267,7 +348,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'd', text: 'Ich versuche, zu pünktlich kommen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'zu stands directly before the infinitive kommen, and the extended clause needs a comma: ..., pünktlich zu kommen.',
+      explanation:
+        'zu stands directly before the infinitive kommen, and the extended clause needs a comma: ..., pünktlich zu kommen.',
     },
     {
       id: 'ch73-ex-02',
@@ -285,7 +367,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'd', text: 'fangenzu an' },
       ],
       correctOptionId: 'a',
-      explanation: 'zu is inserted between the separable prefix an and the stem fangen, and the whole thing is written as one word: anzufangen.',
+      explanation:
+        'zu is inserted between the separable prefix an and the stem fangen, and the whole thing is written as one word: anzufangen.',
     },
     {
       id: 'ch73-ex-03',
@@ -357,7 +440,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'd', text: 'Sie hofft zu, die Prüfung bestehen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'bestehen is a normal (inseparable) verb, so zu stands right before it: zu bestehen.',
+      explanation:
+        'bestehen is a normal (inseparable) verb, so zu stands right before it: zu bestehen.',
     },
     {
       id: 'ch73-ex-07',
@@ -375,7 +459,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'd', text: 'Er, verspricht seiner Schwester zu helfen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The comma marks the start of the extended zu-infinitive clause seiner Schwester zu helfen, before the object, not in the middle of it.',
+      explanation:
+        'The comma marks the start of the extended zu-infinitive clause seiner Schwester zu helfen, before the object, not in the middle of it.',
     },
     {
       id: 'ch73-ex-08',
@@ -393,7 +478,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'd', text: 'Ich hoffe, pünktlich ihn anzukommen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The subject of ankommt (er) differs from the subject of hoffe (ich), so a zu-infinitive is impossible; a dass-clause is required.',
+      explanation:
+        'The subject of ankommt (er) differs from the subject of hoffe (ich), so a zu-infinitive is impossible; a dass-clause is required.',
     },
     {
       id: 'ch73-ex-09',
@@ -411,7 +497,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'd', text: 'Ich hoffe pünktlich, anzukommen ich.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Here the hoper and the arriver are the same person (ich), so the zu-infinitive anzukommen is correct.',
+      explanation:
+        'Here the hoper and the arriver are the same person (ich), so the zu-infinitive anzukommen is correct.',
     },
     {
       id: 'ch73-ex-10',
@@ -421,7 +508,8 @@ export const chapter073: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['zu-infinitive', 'adjective-expression'],
       instruction: 'Choose the sentence with correctly placed zu.',
-      prompt: '"It is important to practise German every day." Which sentence is correct?',
+      prompt:
+        '"It is important to practise German every day." Which sentence is correct?',
       options: [
         { id: 'a', text: 'Es ist wichtig, jeden Tag Deutsch zu üben.' },
         { id: 'b', text: 'Es ist wichtig, jeden Tag Deutsch üben zu.' },
@@ -429,7 +517,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'd', text: 'Es ist wichtig, dass jeden Tag Deutsch zu üben.' },
       ],
       correctOptionId: 'a',
-      explanation: 'es ist wichtig introduces a zu-infinitive clause; zu stands right before üben at the end.',
+      explanation:
+        'es ist wichtig introduces a zu-infinitive clause; zu stands right before üben at the end.',
     },
     {
       id: 'ch73-ex-11',
@@ -447,7 +536,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'd', text: 'Ich habe, die Möglichkeit im Ausland zu studieren.' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Möglichkeit introduces the zu-infinitive clause; the comma comes right after Möglichkeit, before the extended clause.',
+      explanation:
+        'die Möglichkeit introduces the zu-infinitive clause; the comma comes right after Möglichkeit, before the extended clause.',
     },
     {
       id: 'ch73-ex-12',
@@ -458,7 +548,11 @@ export const chapter073: ChapterDefinition = {
       grammarFocus: ['zu-infinitive', 'separable-verb', 'dialogue'],
       instruction: 'Choose the grammatically correct way for Tom to finish his sentence.',
       dialogue: [
-        { speaker: 'Anna', german: 'Was hast du heute noch vor?', english: 'What else are you planning today?' },
+        {
+          speaker: 'Anna',
+          german: 'Was hast du heute noch vor?',
+          english: 'What else are you planning today?',
+        },
         {
           speaker: 'Tom',
           german: 'Ich habe vor, ...',
@@ -473,7 +567,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'd', text: 'heute noch einkaufen zu.' },
       ],
       correctOptionId: 'a',
-      explanation: 'einkaufen is separable: ein + zu + kaufen → einzukaufen, written as one word at the end of the clause.',
+      explanation:
+        'einkaufen is separable: ein + zu + kaufen → einzukaufen, written as one word at the end of the clause.',
     },
     {
       id: 'ch73-ex-13',
@@ -483,15 +578,20 @@ export const chapter073: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['zu-infinitive', 'comma', 'bare-infinitive'],
       instruction: 'Choose the sentence that follows the comma rule correctly.',
-      prompt: 'Which of these sentences uses a single bare infinitive, where the comma is optional?',
+      prompt:
+        'Which of these sentences uses a single bare infinitive, where the comma is optional?',
       options: [
         { id: 'a', text: 'Er verspricht zu helfen.' },
-        { id: 'b', text: 'Er verspricht, seiner Schwester bei den Hausaufgaben zu helfen.' },
+        {
+          id: 'b',
+          text: 'Er verspricht, seiner Schwester bei den Hausaufgaben zu helfen.',
+        },
         { id: 'c', text: 'Er verspricht, morgen früh zu kommen.' },
         { id: 'd', text: 'Er verspricht, das Geschirr zu spülen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Er verspricht zu helfen has only the bare infinitive zu helfen with nothing attached, so the comma is optional; the others are extended clauses that require it.',
+      explanation:
+        'Er verspricht zu helfen has only the bare infinitive zu helfen with nothing attached, so the comma is optional; the others are extended clauses that require it.',
     },
     {
       id: 'ch73-ex-14',
@@ -500,7 +600,8 @@ export const chapter073: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['zu-infinitive', 'clause-combination'],
-      instruction: 'Choose the sentence that correctly combines the two ideas with a zu-infinitive.',
+      instruction:
+        'Choose the sentence that correctly combines the two ideas with a zu-infinitive.',
       prompt: 'Ich beginne. + Ich lerne Deutsch. → ?',
       options: [
         { id: 'a', text: 'Ich beginne, Deutsch zu lernen.' },
@@ -509,7 +610,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'd', text: 'Ich beginne zu, Deutsch lernen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Both clauses share the subject ich, so they combine into one zu-infinitive clause: Ich beginne, Deutsch zu lernen.',
+      explanation:
+        'Both clauses share the subject ich, so they combine into one zu-infinitive clause: Ich beginne, Deutsch zu lernen.',
     },
     {
       id: 'ch73-ex-15',
@@ -518,7 +620,8 @@ export const chapter073: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['zu-infinitive', 'shared-subject', 'clause-combination'],
-      instruction: 'Choose the correct combination, or the correct fallback if a zu-construction is impossible.',
+      instruction:
+        'Choose the correct combination, or the correct fallback if a zu-construction is impossible.',
       prompt: 'Ich freue mich. + Meine Eltern besuchen mich. → ?',
       options: [
         { id: 'a', text: 'Ich freue mich darauf, dass meine Eltern mich besuchen.' },
@@ -527,7 +630,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'd', text: 'Ich freue mich, meine Eltern zu besuchen mich.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The subject of "freue mich" (ich) differs from the subject of "besuchen" (meine Eltern), so a zu-infinitive is impossible; a dass-clause is required.',
+      explanation:
+        'The subject of "freue mich" (ich) differs from the subject of "besuchen" (meine Eltern), so a zu-infinitive is impossible; a dass-clause is required.',
     },
     {
       id: 'ch73-ex-16',
@@ -545,7 +649,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'd', text: 'Ich versuche zu, anfangen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'zu must split the separable verb from inside, not simply attach in front of it: anzufangen, not zuanfangen.',
+      explanation:
+        'zu must split the separable verb from inside, not simply attach in front of it: anzufangen, not zuanfangen.',
     },
     {
       id: 'ch73-ex-17',
@@ -563,7 +668,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'd', text: 'vergisst zu' },
       ],
       correctOptionId: 'a',
-      explanation: 'This is the present perfect: Er hat vergessen, die Tür abzuschließen — hat vergessen is the finite verb phrase, and the zu-infinitive clause follows.',
+      explanation:
+        'This is the present perfect: Er hat vergessen, die Tür abzuschließen — hat vergessen is the finite verb phrase, and the zu-infinitive clause follows.',
     },
     {
       id: 'ch73-ex-18',
@@ -581,7 +687,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'd', text: 'Es ist schwierig aufzustehen, früh.' },
       ],
       correctOptionId: 'a',
-      explanation: 'aufstehen is separable: auf + zu + stehen → aufzustehen, one word at the end of the clause.',
+      explanation:
+        'aufstehen is separable: auf + zu + stehen → aufzustehen, one word at the end of the clause.',
     },
     {
       id: 'ch73-ex-19',
@@ -596,7 +703,8 @@ export const chapter073: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'aufzustehen',
       maxLength: 20,
-      explanation: 'aufstehen is separable: zu is inserted between auf and stehen: aufzustehen.',
+      explanation:
+        'aufstehen is separable: zu is inserted between auf and stehen: aufzustehen.',
     },
     {
       id: 'ch73-ex-20',
@@ -626,7 +734,8 @@ export const chapter073: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'zu bestehen',
       maxLength: 20,
-      explanation: 'bestehen is a normal verb, so zu stays a separate word right before it: zu bestehen.',
+      explanation:
+        'bestehen is a normal verb, so zu stays a separate word right before it: zu bestehen.',
     },
     {
       id: 'ch73-ex-22',
@@ -665,13 +774,15 @@ export const chapter073: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['zu-infinitive', 'clause-combination'],
-      instruction: 'Combine the two sentences into one zu-infinitive construction. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences into one zu-infinitive construction. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich versuche. + Ich komme pünktlich. (versuchen)',
       acceptedAnswers: ['Ich versuche, pünktlich zu kommen.'],
       answerMode: 'normalized',
       placeholder: 'Ich versuche, ...',
       maxLength: 60,
-      explanation: 'Both clauses share the subject ich, so they combine: Ich versuche, pünktlich zu kommen.',
+      explanation:
+        'Both clauses share the subject ich, so they combine: Ich versuche, pünktlich zu kommen.',
     },
     {
       id: 'ch73-ex-25',
@@ -680,13 +791,15 @@ export const chapter073: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['zu-infinitive', 'clause-combination', 'separable-verb'],
-      instruction: 'Combine the two sentences into one zu-infinitive construction. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences into one zu-infinitive construction. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Er hat vergessen. + Er macht das Licht aus. (vergessen)',
       acceptedAnswers: ['Er hat vergessen, das Licht auszumachen.'],
       answerMode: 'normalized',
       placeholder: 'Er hat vergessen, ...',
       maxLength: 60,
-      explanation: 'ausmachen is separable, so zu splits it: auszumachen. Full sentence: Er hat vergessen, das Licht auszumachen.',
+      explanation:
+        'ausmachen is separable, so zu splits it: auszumachen. Full sentence: Er hat vergessen, das Licht auszumachen.',
     },
     {
       id: 'ch73-ex-26',
@@ -695,13 +808,15 @@ export const chapter073: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['zu-infinitive', 'clause-combination', 'noun-expression'],
-      instruction: 'Combine the two sentences into one zu-infinitive construction. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences into one zu-infinitive construction. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich habe die Möglichkeit. + Ich studiere im Ausland. (die Möglichkeit)',
       acceptedAnswers: ['Ich habe die Möglichkeit, im Ausland zu studieren.'],
       answerMode: 'normalized',
       placeholder: 'Ich habe die Möglichkeit, ...',
       maxLength: 60,
-      explanation: 'Both clauses share the subject ich, so they combine: Ich habe die Möglichkeit, im Ausland zu studieren.',
+      explanation:
+        'Both clauses share the subject ich, so they combine: Ich habe die Möglichkeit, im Ausland zu studieren.',
     },
     {
       id: 'ch73-ex-27',
@@ -710,13 +825,15 @@ export const chapter073: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['zu-infinitive', 'shared-subject', 'clause-combination'],
-      instruction: 'Decide whether the two sentences can combine with zu. If the subjects match, write the zu-construction; if not, write a dass-clause instead. Capitalisation and punctuation are checked.',
+      instruction:
+        'Decide whether the two sentences can combine with zu. If the subjects match, write the zu-construction; if not, write a dass-clause instead. Capitalisation and punctuation are checked.',
       prompt: 'Ich hoffe. + Er kommt pünktlich an. (hoffen)',
       acceptedAnswers: ['Ich hoffe, dass er pünktlich ankommt.'],
       answerMode: 'normalized',
       placeholder: 'Ich hoffe, ...',
       maxLength: 60,
-      explanation: 'The subjects differ (ich hofft, er kommt an), so a zu-infinitive is impossible; a dass-clause is required instead.',
+      explanation:
+        'The subjects differ (ich hofft, er kommt an), so a zu-infinitive is impossible; a dass-clause is required instead.',
     },
     {
       id: 'ch73-ex-28',
@@ -725,13 +842,15 @@ export const chapter073: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['zu-infinitive', 'shared-subject', 'clause-combination'],
-      instruction: 'Decide whether the two sentences can combine with zu. If the subjects match, write the zu-construction; if not, write a dass-clause instead. Capitalisation and punctuation are checked.',
+      instruction:
+        'Decide whether the two sentences can combine with zu. If the subjects match, write the zu-construction; if not, write a dass-clause instead. Capitalisation and punctuation are checked.',
       prompt: 'Ich hoffe. + Ich komme pünktlich an. (hoffen)',
       acceptedAnswers: ['Ich hoffe, pünktlich anzukommen.'],
       answerMode: 'normalized',
       placeholder: 'Ich hoffe, ...',
       maxLength: 60,
-      explanation: 'Both clauses share the subject ich, so a zu-infinitive is possible: ankommen is separable, so zu splits it: anzukommen.',
+      explanation:
+        'Both clauses share the subject ich, so a zu-infinitive is possible: ankommen is separable, so zu splits it: anzukommen.',
     },
     {
       id: 'ch73-ex-29',
@@ -740,13 +859,15 @@ export const chapter073: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['zu-infinitive', 'error-correction', 'separable-verb'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ich versuche, zuanfangen.',
       acceptedAnswers: ['Ich versuche, anzufangen.'],
       answerMode: 'normalized',
       placeholder: 'Ich versuche, ...',
       maxLength: 40,
-      explanation: 'zu must be inserted between the prefix and the stem of a separable verb, not glued in front of it: anzufangen, not zuanfangen.',
+      explanation:
+        'zu must be inserted between the prefix and the stem of a separable verb, not glued in front of it: anzufangen, not zuanfangen.',
     },
     {
       id: 'ch73-ex-30',
@@ -755,13 +876,15 @@ export const chapter073: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['zu-infinitive', 'error-correction', 'comma'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ich versuche pünktlich zu kommen ohne Komma.',
       acceptedAnswers: ['Ich versuche, pünktlich zu kommen.'],
       answerMode: 'normalized',
       placeholder: 'Ich versuche, ...',
       maxLength: 40,
-      explanation: 'An extended zu-infinitive clause (pünktlich zu kommen) requires a comma before it.',
+      explanation:
+        'An extended zu-infinitive clause (pünktlich zu kommen) requires a comma before it.',
     },
     {
       id: 'ch73-ex-31',
@@ -770,9 +893,14 @@ export const chapter073: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['zu-infinitive', 'dialogue', 'separable-verb'],
-      instruction: "Complete Lea's answer using a zu-infinitive. Write only the missing words. Capitalisation is not checked.",
+      instruction:
+        "Complete Lea's answer using a zu-infinitive. Write only the missing words. Capitalisation is not checked.",
       dialogue: [
-        { speaker: 'Ben', german: 'Was schlägst du für den Abend vor?', english: 'What do you suggest for the evening?' },
+        {
+          speaker: 'Ben',
+          german: 'Was schlägst du für den Abend vor?',
+          english: 'What do you suggest for the evening?',
+        },
         {
           speaker: 'Lea',
           german: 'Ich habe vor, ein Kino ___.',
@@ -793,13 +921,15 @@ export const chapter073: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['zu-infinitive', 'adjective-expression', 'clause-combination'],
-      instruction: 'Combine the two sentences into one zu-infinitive construction. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences into one zu-infinitive construction. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Es ist wichtig. + Man übt jeden Tag Deutsch. (es ist wichtig)',
       acceptedAnswers: ['Es ist wichtig, jeden Tag Deutsch zu üben.'],
       answerMode: 'normalized',
       placeholder: 'Es ist wichtig, ...',
       maxLength: 60,
-      explanation: 'The implied subject of üben matches the general subject man of the first clause, so they combine into one zu-infinitive clause.',
+      explanation:
+        'The implied subject of üben matches the general subject man of the first clause, so they combine into one zu-infinitive clause.',
     },
     {
       id: 'ch73-ex-33',
@@ -809,7 +939,8 @@ export const chapter073: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['zu-infinitive', 'um-zu', 'purpose-clause'],
       instruction: 'Choose the sentence with correctly formed um ... zu.',
-      prompt: '"He learns German in order to study in Germany." Which sentence is correct?',
+      prompt:
+        '"He learns German in order to study in Germany." Which sentence is correct?',
       options: [
         { id: 'a', text: 'Er lernt Deutsch, um in Deutschland zu studieren.' },
         { id: 'b', text: 'Er lernt Deutsch, damit zu studieren.' },
@@ -817,7 +948,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'd', text: 'Er lernt Deutsch, um zu studieren in Deutschland.' },
       ],
       correctOptionId: 'a',
-      explanation: 'um ... zu introduces a purpose clause when the subject is shared; zu plus the infinitive studieren stands at the end.',
+      explanation:
+        'um ... zu introduces a purpose clause when the subject is shared; zu plus the infinitive studieren stands at the end.',
     },
     {
       id: 'ch73-ex-34',
@@ -835,7 +967,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'd', text: 'Sie ging, ohne sich verabschieden.' },
       ],
       correctOptionId: 'a',
-      explanation: 'ohne ... zu works exactly like um ... zu: zu plus the infinitive stands at the end of the clause, after the reflexive pronoun sich.',
+      explanation:
+        'ohne ... zu works exactly like um ... zu: zu plus the infinitive stands at the end of the clause, after the reflexive pronoun sich.',
     },
     {
       id: 'ch73-ex-35',
@@ -845,7 +978,8 @@ export const chapter073: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['zu-infinitive', 'anstatt-zu'],
       instruction: 'Choose the sentence with correctly formed (an)statt ... zu.',
-      prompt: '"Instead of complaining, we should look for a solution." Which sentence is correct?',
+      prompt:
+        '"Instead of complaining, we should look for a solution." Which sentence is correct?',
       options: [
         { id: 'a', text: 'Anstatt zu klagen, sollten wir eine Lösung suchen.' },
         { id: 'b', text: 'Anstatt klagen zu, sollten wir eine Lösung suchen.' },
@@ -853,7 +987,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'd', text: 'Anstatt klagen, sollten wir eine Lösung suchen zu.' },
       ],
       correctOptionId: 'a',
-      explanation: '(an)statt ... zu also places zu directly before the infinitive; here the whole clause is fronted, so a comma follows it before the main clause.',
+      explanation:
+        '(an)statt ... zu also places zu directly before the infinitive; here the whole clause is fronted, so a comma follows it before the main clause.',
     },
     {
       id: 'ch73-ex-36',
@@ -871,7 +1006,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'd', text: 'kommenzu mit.' },
       ],
       correctOptionId: 'a',
-      explanation: 'mitkommen is separable: mit + zu + kommen combine into one word: mitzukommen.',
+      explanation:
+        'mitkommen is separable: mit + zu + kommen combine into one word: mitzukommen.',
     },
     {
       id: 'ch73-ex-37',
@@ -889,7 +1025,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'd', text: 'Er kam mit um zu, helfen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The comma comes before the whole um ... zu clause, right after mit; um and zu helfen stay together at the end.',
+      explanation:
+        'The comma comes before the whole um ... zu clause, right after mit; um and zu helfen stay together at the end.',
     },
     {
       id: 'ch73-ex-38',
@@ -898,9 +1035,13 @@ export const chapter073: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['zu-infinitive', 'separable-verb', 'dialogue'],
-      instruction: "Choose the grammatically correct way for Tom to finish his sentence.",
+      instruction: 'Choose the grammatically correct way for Tom to finish his sentence.',
       dialogue: [
-        { speaker: 'Anna', german: 'Hast du gute Vorsätze für das neue Jahr?', english: 'Do you have any good resolutions for the new year?' },
+        {
+          speaker: 'Anna',
+          german: 'Hast du gute Vorsätze für das neue Jahr?',
+          english: 'Do you have any good resolutions for the new year?',
+        },
         {
           speaker: 'Tom',
           german: 'Ich habe beschlossen, ...',
@@ -915,7 +1056,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'd', text: 'mit dem Rauchen aufhören zu.' },
       ],
       correctOptionId: 'a',
-      explanation: 'aufhören is separable: auf + zu + hören → aufzuhören, one word at the end of the clause.',
+      explanation:
+        'aufhören is separable: auf + zu + hören → aufzuhören, one word at the end of the clause.',
     },
     {
       id: 'ch73-ex-39',
@@ -929,7 +1071,8 @@ export const chapter073: ChapterDefinition = {
       templateParts: ['Er lernt jeden Tag, ', ' die Prüfung zu bestehen.'],
       slots: [{ id: 'ch73-ex39-s1', correctWord: 'um' }],
       wordBank: ['um', 'ohne', 'statt', 'weil'],
-      explanation: 'um ... zu introduces a purpose clause: the subject (er) is shared with the main clause.',
+      explanation:
+        'um ... zu introduces a purpose clause: the subject (er) is shared with the main clause.',
     },
     {
       id: 'ch73-ex-40',
@@ -943,7 +1086,8 @@ export const chapter073: ChapterDefinition = {
       templateParts: ['Sie verließ das Haus, ', ' ein Wort zu sagen.'],
       slots: [{ id: 'ch73-ex40-s1', correctWord: 'ohne' }],
       wordBank: ['ohne', 'um', 'statt', 'damit'],
-      explanation: 'ohne ... zu describes an action done without doing something else: she left without saying a word.',
+      explanation:
+        'ohne ... zu describes an action done without doing something else: she left without saying a word.',
     },
     {
       id: 'ch73-ex-41',
@@ -957,7 +1101,8 @@ export const chapter073: ChapterDefinition = {
       templateParts: ['', ' zu klagen, sollten wir handeln.'],
       slots: [{ id: 'ch73-ex41-s1', correctWord: 'Anstatt' }],
       wordBank: ['Anstatt', 'Ohne', 'Um', 'Weil'],
-      explanation: '(An)statt ... zu means "instead of doing something"; here it is fronted, so it opens the sentence with a capital letter.',
+      explanation:
+        '(An)statt ... zu means "instead of doing something"; here it is fronted, so it opens the sentence with a capital letter.',
     },
     {
       id: 'ch73-ex-42',
@@ -971,7 +1116,8 @@ export const chapter073: ChapterDefinition = {
       templateParts: ['Er kam mit, ', ' zu helfen.'],
       slots: [{ id: 'ch73-ex42-s1', correctWord: 'um' }],
       wordBank: ['um', 'ohne', 'statt', 'dass'],
-      explanation: 'um ... zu expresses the purpose of coming along: he came along in order to help.',
+      explanation:
+        'um ... zu expresses the purpose of coming along: he came along in order to help.',
     },
     {
       id: 'ch73-ex-43',
@@ -985,7 +1131,8 @@ export const chapter073: ChapterDefinition = {
       templateParts: ['Sie ging, ', ' sich zu verabschieden.'],
       slots: [{ id: 'ch73-ex43-s1', correctWord: 'ohne' }],
       wordBank: ['ohne', 'um', 'statt', 'wenn'],
-      explanation: 'ohne ... zu marks the missing action: she left without saying goodbye.',
+      explanation:
+        'ohne ... zu marks the missing action: she left without saying goodbye.',
     },
     {
       id: 'ch73-ex-44',
@@ -999,7 +1146,8 @@ export const chapter073: ChapterDefinition = {
       templateParts: ['', ' fernzusehen, solltest du lernen.'],
       slots: [{ id: 'ch73-ex44-s1', correctWord: 'Statt' }],
       wordBank: ['Statt', 'Ohne', 'Um', 'Damit'],
-      explanation: 'Statt (short for anstatt) ... zu means "instead of doing something"; fronted here, it opens the sentence.',
+      explanation:
+        'Statt (short for anstatt) ... zu means "instead of doing something"; fronted here, it opens the sentence.',
     },
     {
       id: 'ch73-ex-45',
@@ -1016,7 +1164,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'ch73-ex45-s2', correctWord: 'unterstützen' },
       ],
       wordBank: ['um', 'ohne', 'statt', 'unterstützen', 'unterstützt'],
-      explanation: 'um ... zu introduces the purpose clause; unterstützen is a normal verb, so zu stands right before it.',
+      explanation:
+        'um ... zu introduces the purpose clause; unterstützen is a normal verb, so zu stands right before it.',
     },
     {
       id: 'ch73-ex-46',
@@ -1033,7 +1182,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'ch73-ex46-s2', correctWord: 'verabschieden' },
       ],
       wordBank: ['ohne', 'um', 'statt', 'verabschieden', 'verabschiedet'],
-      explanation: 'ohne ... zu marks an action he did not do before leaving; verabschieden takes the infinitive form after zu.',
+      explanation:
+        'ohne ... zu marks an action he did not do before leaving; verabschieden takes the infinitive form after zu.',
     },
     {
       id: 'ch73-ex-47',
@@ -1045,13 +1195,30 @@ export const chapter073: ChapterDefinition = {
       instruction: 'Match each main clause with its correct zu-infinitive continuation.',
       prompt: 'Match the beginnings and endings of these sentences.',
       pairs: [
-        { id: 'ch73-ex47-p1', left: 'Ich habe vor,', right: 'heute Abend ins Kino zu gehen.' },
-        { id: 'ch73-ex47-p2', left: 'Es ist wichtig,', right: 'jeden Tag Deutsch zu üben.' },
+        {
+          id: 'ch73-ex47-p1',
+          left: 'Ich habe vor,',
+          right: 'heute Abend ins Kino zu gehen.',
+        },
+        {
+          id: 'ch73-ex47-p2',
+          left: 'Es ist wichtig,',
+          right: 'jeden Tag Deutsch zu üben.',
+        },
         { id: 'ch73-ex47-p3', left: 'Ich habe keine Zeit,', right: 'heute einzukaufen.' },
-        { id: 'ch73-ex47-p4', left: 'Sie hat aufgehört,', right: 'so viel Kaffee zu trinken.' },
-        { id: 'ch73-ex47-p5', left: 'Wir haben beschlossen,', right: 'nächstes Jahr umzuziehen.' },
+        {
+          id: 'ch73-ex47-p4',
+          left: 'Sie hat aufgehört,',
+          right: 'so viel Kaffee zu trinken.',
+        },
+        {
+          id: 'ch73-ex47-p5',
+          left: 'Wir haben beschlossen,',
+          right: 'nächstes Jahr umzuziehen.',
+        },
       ],
-      explanation: 'Each trigger (vorhaben, wichtig sein, Zeit haben, aufhören, beschließen) introduces its own zu-infinitive continuation.',
+      explanation:
+        'Each trigger (vorhaben, wichtig sein, Zeit haben, aufhören, beschließen) introduces its own zu-infinitive continuation.',
     },
     {
       id: 'ch73-ex-48',
@@ -1063,13 +1230,30 @@ export const chapter073: ChapterDefinition = {
       instruction: 'Match each main clause with its correct continuation.',
       prompt: 'Match the beginnings and endings of these sentences.',
       pairs: [
-        { id: 'ch73-ex48-p1', left: 'Er lernt fleißig,', right: 'um die Prüfung zu bestehen.' },
-        { id: 'ch73-ex48-p2', left: 'Sie verließ das Haus,', right: 'ohne die Tür abzuschließen.' },
-        { id: 'ch73-ex48-p3', left: 'Anstatt zu klagen,', right: 'sollten wir eine Lösung suchen.' },
+        {
+          id: 'ch73-ex48-p1',
+          left: 'Er lernt fleißig,',
+          right: 'um die Prüfung zu bestehen.',
+        },
+        {
+          id: 'ch73-ex48-p2',
+          left: 'Sie verließ das Haus,',
+          right: 'ohne die Tür abzuschließen.',
+        },
+        {
+          id: 'ch73-ex48-p3',
+          left: 'Anstatt zu klagen,',
+          right: 'sollten wir eine Lösung suchen.',
+        },
         { id: 'ch73-ex48-p4', left: 'Ich komme mit,', right: 'um dich zu unterstützen.' },
-        { id: 'ch73-ex48-p5', left: 'Er ging weg,', right: 'ohne sich zu verabschieden.' },
+        {
+          id: 'ch73-ex48-p5',
+          left: 'Er ging weg,',
+          right: 'ohne sich zu verabschieden.',
+        },
       ],
-      explanation: 'um ... zu gives a purpose, ohne ... zu names a missing accompanying action, and (an)statt ... zu names a rejected alternative.',
+      explanation:
+        'um ... zu gives a purpose, ohne ... zu names a missing accompanying action, and (an)statt ... zu names a rejected alternative.',
     },
     {
       id: 'ch73-ex-49',
@@ -1088,7 +1272,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'ch73-ex49-p5', left: 'vorschlagen', right: 'vorzuschlagen' },
         { id: 'ch73-ex49-p6', left: 'aufstehen', right: 'aufzustehen' },
       ],
-      explanation: 'In every case, zu is inserted between the separable prefix and the stem, and the result is written as one word.',
+      explanation:
+        'In every case, zu is inserted between the separable prefix and the stem, and the result is written as one word.',
     },
     {
       id: 'ch73-ex-50',
@@ -1101,12 +1286,25 @@ export const chapter073: ChapterDefinition = {
       prompt: 'Match the beginnings and endings of these sentences.',
       pairs: [
         { id: 'ch73-ex50-p1', left: 'Es ist möglich,', right: 'den Kurs zu wechseln.' },
-        { id: 'ch73-ex50-p2', left: 'Ich habe die Möglichkeit,', right: 'im Ausland zu studieren.' },
-        { id: 'ch73-ex50-p3', left: 'Das war die Idee,', right: 'ein Picknick zu machen.' },
+        {
+          id: 'ch73-ex50-p2',
+          left: 'Ich habe die Möglichkeit,',
+          right: 'im Ausland zu studieren.',
+        },
+        {
+          id: 'ch73-ex50-p3',
+          left: 'Das war die Idee,',
+          right: 'ein Picknick zu machen.',
+        },
         { id: 'ch73-ex50-p4', left: 'Es ist schwierig,', right: 'früh aufzustehen.' },
-        { id: 'ch73-ex50-p5', left: 'Ich habe keine Lust,', right: 'heute noch einzukaufen.' },
+        {
+          id: 'ch73-ex50-p5',
+          left: 'Ich habe keine Lust,',
+          right: 'heute noch einzukaufen.',
+        },
       ],
-      explanation: 'Adjective-plus-sein expressions and nouns such as die Möglichkeit and die Idee introduce a zu-infinitive clause just as verbs do.',
+      explanation:
+        'Adjective-plus-sein expressions and nouns such as die Möglichkeit and die Idee introduce a zu-infinitive clause just as verbs do.',
     },
     {
       id: 'ch73-ex-51',
@@ -1119,12 +1317,25 @@ export const chapter073: ChapterDefinition = {
       prompt: 'Match the beginnings and endings of these sentences.',
       pairs: [
         { id: 'ch73-ex51-p1', left: 'Er versucht,', right: 'das Problem zu verstehen.' },
-        { id: 'ch73-ex51-p2', left: 'Wir beginnen,', right: 'mit dem Projekt anzufangen.' },
-        { id: 'ch73-ex51-p3', left: 'Sie freut sich darauf,', right: 'ihre Familie zu besuchen.' },
-        { id: 'ch73-ex51-p4', left: 'Er hat vergessen,', right: 'das Licht auszumachen.' },
+        {
+          id: 'ch73-ex51-p2',
+          left: 'Wir beginnen,',
+          right: 'mit dem Projekt anzufangen.',
+        },
+        {
+          id: 'ch73-ex51-p3',
+          left: 'Sie freut sich darauf,',
+          right: 'ihre Familie zu besuchen.',
+        },
+        {
+          id: 'ch73-ex51-p4',
+          left: 'Er hat vergessen,',
+          right: 'das Licht auszumachen.',
+        },
         { id: 'ch73-ex51-p5', left: 'Ich hoffe,', right: 'pünktlich anzukommen.' },
       ],
-      explanation: 'versuchen, beginnen, sich freuen auf, vergessen, and hoffen all trigger a zu-infinitive clause when the subject is shared.',
+      explanation:
+        'versuchen, beginnen, sich freuen auf, vergessen, and hoffen all trigger a zu-infinitive clause when the subject is shared.',
     },
     {
       id: 'ch73-ex-52',
@@ -1142,7 +1353,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'ch73-ex52-p4', left: 'versuchen', right: 'to try' },
         { id: 'ch73-ex52-p5', left: 'vergessen', right: 'to forget' },
       ],
-      explanation: 'These three fixed connectors each pair with zu plus an infinitive to express purpose, an absent accompanying action, or a rejected alternative.',
+      explanation:
+        'These three fixed connectors each pair with zu plus an infinitive to express purpose, an absent accompanying action, or a rejected alternative.',
     },
     {
       id: 'ch73-ex-53',
@@ -1159,7 +1371,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'ch73-ex53-s3', text: 'ins Kino' },
         { id: 'ch73-ex53-s4', text: 'zu gehen.' },
       ],
-      explanation: 'vorhaben introduces the extended zu-infinitive clause; zu gehen stands at the very end.',
+      explanation:
+        'vorhaben introduces the extended zu-infinitive clause; zu gehen stands at the very end.',
     },
     {
       id: 'ch73-ex-54',
@@ -1176,7 +1389,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'ch73-ex54-s3', text: 'ein bisschen' },
         { id: 'ch73-ex54-s4', text: 'zu lernen.' },
       ],
-      explanation: 'es ist wichtig introduces the zu-infinitive clause; zu lernen stands at the end.',
+      explanation:
+        'es ist wichtig introduces the zu-infinitive clause; zu lernen stands at the end.',
     },
     {
       id: 'ch73-ex-55',
@@ -1193,7 +1407,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'ch73-ex55-s3', text: 'Kaffee' },
         { id: 'ch73-ex55-s4', text: 'zu trinken.' },
       ],
-      explanation: 'die Zeit introduces the zu-infinitive clause; zu trinken stands at the end.',
+      explanation:
+        'die Zeit introduces the zu-infinitive clause; zu trinken stands at the end.',
     },
     {
       id: 'ch73-ex-56',
@@ -1209,7 +1424,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'ch73-ex56-s2', text: 'heute noch' },
         { id: 'ch73-ex56-s3', text: 'einzukaufen.' },
       ],
-      explanation: 'einkaufen is separable, so zu sits inside it: einzukaufen, at the end of the clause.',
+      explanation:
+        'einkaufen is separable, so zu sits inside it: einzukaufen, at the end of the clause.',
     },
     {
       id: 'ch73-ex-57',
@@ -1226,7 +1442,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'ch73-ex57-s3', text: 'früh' },
         { id: 'ch73-ex57-s4', text: 'aufzustehen.' },
       ],
-      explanation: 'aufstehen is separable: auf + zu + stehen → aufzustehen, at the end of the clause.',
+      explanation:
+        'aufstehen is separable: auf + zu + stehen → aufzustehen, at the end of the clause.',
     },
     {
       id: 'ch73-ex-58',
@@ -1242,7 +1459,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'ch73-ex58-s2', text: 'nächstes Jahr' },
         { id: 'ch73-ex58-s3', text: 'umzuziehen.' },
       ],
-      explanation: 'umziehen is separable: um + zu + ziehen → umzuziehen, at the end of the clause.',
+      explanation:
+        'umziehen is separable: um + zu + ziehen → umzuziehen, at the end of the clause.',
     },
     {
       id: 'ch73-ex-59',
@@ -1258,7 +1476,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'ch73-ex59-s2', text: 'so viel Kaffee' },
         { id: 'ch73-ex59-s3', text: 'zu trinken.' },
       ],
-      explanation: 'aufhören introduces the zu-infinitive clause; trinken is a normal verb, so zu stands right before it.',
+      explanation:
+        'aufhören introduces the zu-infinitive clause; trinken is a normal verb, so zu stands right before it.',
     },
     {
       id: 'ch73-ex-60',
@@ -1274,7 +1493,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'ch73-ex60-s2', text: 'um dich' },
         { id: 'ch73-ex60-s3', text: 'zu unterstützen.' },
       ],
-      explanation: 'um ... zu expresses the purpose of coming along; the whole clause is extended, so it needs a comma.',
+      explanation:
+        'um ... zu expresses the purpose of coming along; the whole clause is extended, so it needs a comma.',
     },
     {
       id: 'ch73-ex-61',
@@ -1290,7 +1510,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'ch73-ex61-s2', text: 'um die Prüfung' },
         { id: 'ch73-ex61-s3', text: 'zu bestehen.' },
       ],
-      explanation: 'um ... zu names the goal of studying; the comma marks the start of the extended purpose clause.',
+      explanation:
+        'um ... zu names the goal of studying; the comma marks the start of the extended purpose clause.',
     },
     {
       id: 'ch73-ex-62',
@@ -1306,7 +1527,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'ch73-ex62-s2', text: 'ohne die Tür' },
         { id: 'ch73-ex62-s3', text: 'abzuschließen.' },
       ],
-      explanation: 'ohne ... zu marks the missing accompanying action; abschließen is separable, so zu sits inside it: abzuschließen.',
+      explanation:
+        'ohne ... zu marks the missing accompanying action; abschließen is separable, so zu sits inside it: abzuschließen.',
     },
     {
       id: 'ch73-ex-63',
@@ -1322,7 +1544,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'ch73-ex63-s2', text: 'ohne sich' },
         { id: 'ch73-ex63-s3', text: 'zu verabschieden.' },
       ],
-      explanation: 'ohne ... zu marks the missing accompanying action; verabschieden is a normal reflexive verb, so zu stands right before it.',
+      explanation:
+        'ohne ... zu marks the missing accompanying action; verabschieden is a normal reflexive verb, so zu stands right before it.',
     },
     {
       id: 'ch73-ex-64',
@@ -1339,7 +1562,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'ch73-ex64-s3', text: 'seine Hausaufgaben' },
         { id: 'ch73-ex64-s4', text: 'machen.' },
       ],
-      explanation: 'Statt fernzusehen is fronted here, so a comma follows it before the main clause continues.',
+      explanation:
+        'Statt fernzusehen is fronted here, so a comma follows it before the main clause continues.',
     },
     {
       id: 'ch73-ex-65',
@@ -1349,14 +1573,16 @@ export const chapter073: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['zu-infinitive', 'anstatt-zu'],
       instruction: 'Drag the segments into the correct order.',
-      prompt: 'Build the sentence: Instead of complaining, we should look for a solution.',
+      prompt:
+        'Build the sentence: Instead of complaining, we should look for a solution.',
       segments: [
         { id: 'ch73-ex65-s1', text: 'Anstatt zu klagen,' },
         { id: 'ch73-ex65-s2', text: 'sollten wir' },
         { id: 'ch73-ex65-s3', text: 'eine Lösung' },
         { id: 'ch73-ex65-s4', text: 'suchen.' },
       ],
-      explanation: 'Anstatt zu klagen is fronted, so a comma separates it from the main clause sollten wir eine Lösung suchen.',
+      explanation:
+        'Anstatt zu klagen is fronted, so a comma separates it from the main clause sollten wir eine Lösung suchen.',
     },
     {
       id: 'ch73-ex-66',
@@ -1373,7 +1599,8 @@ export const chapter073: ChapterDefinition = {
         { id: 'ch73-ex66-s3', text: 'Sport' },
         { id: 'ch73-ex66-s4', text: 'zu treiben.' },
       ],
-      explanation: 'anfangen introduces the zu-infinitive clause; treiben is a normal verb, so zu stands right before it.',
+      explanation:
+        'anfangen introduces the zu-infinitive clause; treiben is a normal verb, so zu stands right before it.',
     },
     {
       id: 'ch73-ex-67',
@@ -1388,7 +1615,8 @@ export const chapter073: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'zu trinken',
       maxLength: 20,
-      explanation: 'trinken is a normal verb, so zu stays a separate word right before it: zu trinken.',
+      explanation:
+        'trinken is a normal verb, so zu stays a separate word right before it: zu trinken.',
     },
     {
       id: 'ch73-ex-68',
@@ -1433,7 +1661,8 @@ export const chapter073: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'ohne',
       maxLength: 10,
-      explanation: 'ohne ... zu means "without doing something": she left without saying goodbye.',
+      explanation:
+        'ohne ... zu means "without doing something": she left without saying goodbye.',
     },
     {
       id: 'ch73-ex-71',
@@ -1442,13 +1671,15 @@ export const chapter073: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['zu-infinitive', 'um-zu', 'clause-combination'],
-      instruction: 'Combine the two sentences with um ... zu. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with um ... zu. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Er kommt mit. + Er unterstützt dich. (um ... zu)',
       acceptedAnswers: ['Er kommt mit, um dich zu unterstützen.'],
       answerMode: 'normalized',
       placeholder: 'Er kommt mit, ...',
       maxLength: 60,
-      explanation: 'Both clauses share the subject er, so they combine with um ... zu: Er kommt mit, um dich zu unterstützen.',
+      explanation:
+        'Both clauses share the subject er, so they combine with um ... zu: Er kommt mit, um dich zu unterstützen.',
     },
     {
       id: 'ch73-ex-72',
@@ -1457,13 +1688,15 @@ export const chapter073: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['zu-infinitive', 'ohne-zu', 'clause-combination', 'separable-verb'],
-      instruction: 'Combine the two sentences with ohne ... zu. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with ohne ... zu. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Sie verließ das Haus. + Sie schloss die Tür nicht ab. (ohne ... zu)',
       acceptedAnswers: ['Sie verließ das Haus, ohne die Tür abzuschließen.'],
       answerMode: 'normalized',
       placeholder: 'Sie verließ das Haus, ...',
       maxLength: 60,
-      explanation: 'abschließen is separable, so zu splits it: abzuschließen. Full sentence: Sie verließ das Haus, ohne die Tür abzuschließen.',
+      explanation:
+        'abschließen is separable, so zu splits it: abzuschließen. Full sentence: Sie verließ das Haus, ohne die Tür abzuschließen.',
     },
     {
       id: 'ch73-ex-73',
@@ -1472,13 +1705,15 @@ export const chapter073: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['zu-infinitive', 'anstatt-zu', 'clause-combination'],
-      instruction: 'Combine the two sentences with (an)statt ... zu. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with (an)statt ... zu. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Wir sollten eine Lösung suchen. + Wir klagen nicht. (anstatt ... zu)',
       acceptedAnswers: ['Anstatt zu klagen, sollten wir eine Lösung suchen.'],
       answerMode: 'normalized',
       placeholder: 'Anstatt zu klagen, ...',
       maxLength: 60,
-      explanation: 'anstatt ... zu names the rejected alternative; fronting the clause puts Anstatt zu klagen first, followed by a comma.',
+      explanation:
+        'anstatt ... zu names the rejected alternative; fronting the clause puts Anstatt zu klagen first, followed by a comma.',
     },
     {
       id: 'ch73-ex-74',
@@ -1487,9 +1722,14 @@ export const chapter073: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['zu-infinitive', 'dialogue', 'separable-verb'],
-      instruction: "Complete Lea's answer using a zu-infinitive. Write only the missing words. Capitalisation is not checked.",
+      instruction:
+        "Complete Lea's answer using a zu-infinitive. Write only the missing words. Capitalisation is not checked.",
       dialogue: [
-        { speaker: 'Ben', german: 'Was hast du für das neue Jahr vor?', english: 'What are your plans for the new year?' },
+        {
+          speaker: 'Ben',
+          german: 'Was hast du für das neue Jahr vor?',
+          english: 'What are your plans for the new year?',
+        },
         {
           speaker: 'Lea',
           german: 'Ich habe beschlossen, mit dem Rauchen ___.',
@@ -1510,13 +1750,15 @@ export const chapter073: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['zu-infinitive', 'error-correction', 'separable-verb'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Wir haben vor, morgen zumitkommen.',
       acceptedAnswers: ['Wir haben vor, morgen mitzukommen.'],
       answerMode: 'normalized',
       placeholder: 'Wir haben vor, ...',
       maxLength: 40,
-      explanation: 'zu must be inserted between the prefix and the stem of a separable verb, not glued in front of it: mitzukommen, not zumitkommen.',
+      explanation:
+        'zu must be inserted between the prefix and the stem of a separable verb, not glued in front of it: mitzukommen, not zumitkommen.',
     },
     {
       id: 'ch73-ex-76',
@@ -1525,13 +1767,15 @@ export const chapter073: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['zu-infinitive', 'error-correction', 'separable-verb'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Er hat vor, ein Restaurant zuvorschlagen.',
       acceptedAnswers: ['Er hat vor, ein Restaurant vorzuschlagen.'],
       answerMode: 'normalized',
       placeholder: 'Er hat vor, ...',
       maxLength: 45,
-      explanation: 'zu must split the separable verb from inside: vorzuschlagen, not zuvorschlagen.',
+      explanation:
+        'zu must split the separable verb from inside: vorzuschlagen, not zuvorschlagen.',
     },
     {
       id: 'ch73-ex-77',
@@ -1540,13 +1784,15 @@ export const chapter073: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['zu-infinitive', 'um-zu', 'shared-subject', 'clause-combination'],
-      instruction: 'Combine the two sentences with um ... zu. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences with um ... zu. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich lerne. + Ich bestehe die Prüfung. (um ... zu)',
       acceptedAnswers: ['Ich lerne, um die Prüfung zu bestehen.'],
       answerMode: 'normalized',
       placeholder: 'Ich lerne, ...',
       maxLength: 60,
-      explanation: 'Both clauses share the subject ich, so a purpose clause with um ... zu is possible: Ich lerne, um die Prüfung zu bestehen.',
+      explanation:
+        'Both clauses share the subject ich, so a purpose clause with um ... zu is possible: Ich lerne, um die Prüfung zu bestehen.',
     },
     {
       id: 'ch73-ex-78',
@@ -1555,13 +1801,15 @@ export const chapter073: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['zu-infinitive', 'adjective-expression', 'clause-combination'],
-      instruction: 'Combine the two sentences into one zu-infinitive construction. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences into one zu-infinitive construction. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Es ist möglich. + Man wechselt den Kurs. (es ist möglich)',
       acceptedAnswers: ['Es ist möglich, den Kurs zu wechseln.'],
       answerMode: 'normalized',
       placeholder: 'Es ist möglich, ...',
       maxLength: 60,
-      explanation: 'The implied subject of wechseln matches the general subject man of the first clause, so they combine into one zu-infinitive clause.',
+      explanation:
+        'The implied subject of wechseln matches the general subject man of the first clause, so they combine into one zu-infinitive clause.',
     },
     {
       id: 'ch73-ex-79',
@@ -1575,7 +1823,8 @@ export const chapter073: ChapterDefinition = {
       tokens: ['Ich', 'versuche,', 'mit', 'dem', 'Rauchen', 'zuaufhören.'],
       errorTokenIndex: 5,
       correction: 'aufzuhören.',
-      explanation: 'aufhören is separable: zu must be inserted between the prefix and the stem: aufzuhören, not zuaufhören.',
+      explanation:
+        'aufhören is separable: zu must be inserted between the prefix and the stem: aufzuhören, not zuaufhören.',
     },
     {
       id: 'ch73-ex-80',
@@ -1589,7 +1838,8 @@ export const chapter073: ChapterDefinition = {
       tokens: ['Wir', 'haben', 'vor,', 'morgen', 'zumitkommen.'],
       errorTokenIndex: 4,
       correction: 'mitzukommen.',
-      explanation: 'mitkommen is separable: zu belongs between mit and kommen: mitzukommen, not zumitkommen.',
+      explanation:
+        'mitkommen is separable: zu belongs between mit and kommen: mitzukommen, not zumitkommen.',
     },
     {
       id: 'ch73-ex-81',
@@ -1603,7 +1853,8 @@ export const chapter073: ChapterDefinition = {
       tokens: ['Sie', 'hat', 'beschlossen,', 'sofort', 'zuanfangen.'],
       errorTokenIndex: 4,
       correction: 'anzufangen.',
-      explanation: 'anfangen is separable: zu belongs between an and fangen: anzufangen, not zuanfangen.',
+      explanation:
+        'anfangen is separable: zu belongs between an and fangen: anzufangen, not zuanfangen.',
     },
     {
       id: 'ch73-ex-82',
@@ -1612,12 +1863,14 @@ export const chapter073: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['zu-infinitive', 'error-correction', 'basic-pattern'],
-      instruction: 'One word is missing its zu. Identify the wrong token and give the correction.',
+      instruction:
+        'One word is missing its zu. Identify the wrong token and give the correction.',
       prompt: 'Find the error in this sentence.',
       tokens: ['Ich', 'versuche,', 'pünktlich', 'kommen.'],
       errorTokenIndex: 3,
       correction: 'zu kommen.',
-      explanation: 'A zu-infinitive clause always needs zu directly before the infinitive: zu kommen, not just kommen.',
+      explanation:
+        'A zu-infinitive clause always needs zu directly before the infinitive: zu kommen, not just kommen.',
     },
     {
       id: 'ch73-ex-83',
@@ -1626,12 +1879,14 @@ export const chapter073: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['zu-infinitive', 'error-correction', 'adjective-expression'],
-      instruction: 'One word is missing its zu. Identify the wrong token and give the correction.',
+      instruction:
+        'One word is missing its zu. Identify the wrong token and give the correction.',
       prompt: 'Find the error in this sentence.',
       tokens: ['Es', 'ist', 'wichtig,', 'jeden', 'Tag', 'üben.'],
       errorTokenIndex: 5,
       correction: 'zu üben.',
-      explanation: 'es ist wichtig requires zu before the infinitive at the end of the clause: zu üben, not just üben.',
+      explanation:
+        'es ist wichtig requires zu before the infinitive at the end of the clause: zu üben, not just üben.',
     },
     {
       id: 'ch73-ex-84',
@@ -1645,7 +1900,8 @@ export const chapter073: ChapterDefinition = {
       tokens: ['Er', 'vergisst,', 'rechtzeitig', 'zueinsteigen.'],
       errorTokenIndex: 3,
       correction: 'einzusteigen.',
-      explanation: 'einsteigen is separable: zu belongs between ein and steigen: einzusteigen, not zueinsteigen.',
+      explanation:
+        'einsteigen is separable: zu belongs between ein and steigen: einzusteigen, not zueinsteigen.',
     },
     {
       id: 'ch73-ex-85',
@@ -1659,7 +1915,8 @@ export const chapter073: ChapterDefinition = {
       tokens: ['Vergiss', 'nicht,', 'das', 'Licht', 'zuausmachen.'],
       errorTokenIndex: 4,
       correction: 'auszumachen.',
-      explanation: 'ausmachen is separable: zu belongs between aus and machen: auszumachen, not zuausmachen.',
+      explanation:
+        'ausmachen is separable: zu belongs between aus and machen: auszumachen, not zuausmachen.',
     },
     {
       id: 'ch73-ex-86',
@@ -1673,7 +1930,8 @@ export const chapter073: ChapterDefinition = {
       tokens: ['Wir', 'haben', 'beschlossen,', 'nächstes', 'Jahr', 'zuumziehen.'],
       errorTokenIndex: 5,
       correction: 'umzuziehen.',
-      explanation: 'umziehen is separable: zu belongs between um and ziehen: umzuziehen, not zuumziehen.',
+      explanation:
+        'umziehen is separable: zu belongs between um and ziehen: umzuziehen, not zuumziehen.',
     },
     {
       id: 'ch73-ex-87',
@@ -1682,12 +1940,14 @@ export const chapter073: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['zu-infinitive', 'error-correction', 'normal-verb'],
-      instruction: 'One word is missing its zu. Identify the wrong token and give the correction.',
+      instruction:
+        'One word is missing its zu. Identify the wrong token and give the correction.',
       prompt: 'Find the error in this sentence.',
       tokens: ['Sie', 'hört', 'auf,', 'so', 'viel', 'arbeiten.'],
       errorTokenIndex: 5,
       correction: 'zu arbeiten.',
-      explanation: 'arbeiten is a normal verb after aufhören, so zu must stand directly before it: zu arbeiten, not just arbeiten.',
+      explanation:
+        'arbeiten is a normal verb after aufhören, so zu must stand directly before it: zu arbeiten, not just arbeiten.',
     },
     {
       id: 'ch73-ex-88',
@@ -1701,7 +1961,8 @@ export const chapter073: ChapterDefinition = {
       tokens: ['Er', 'hat', 'vor,', 'ein', 'Restaurant', 'zuvorschlagen.'],
       errorTokenIndex: 5,
       correction: 'vorzuschlagen.',
-      explanation: 'vorschlagen is separable: zu belongs between vor and schlagen: vorzuschlagen, not zuvorschlagen.',
+      explanation:
+        'vorschlagen is separable: zu belongs between vor and schlagen: vorzuschlagen, not zuvorschlagen.',
     },
   ],
 };

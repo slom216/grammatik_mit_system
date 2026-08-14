@@ -1,16 +1,11 @@
 import type { ChapterProgress } from '../../schemas/progressSchema';
-
-const DAY_IN_MS = 24 * 60 * 60 * 1000;
+import { addDays, toDayKey } from './dayKey';
 
 export interface DailyChapterActivity {
   /** ISO date, `YYYY-MM-DD`. */
   date: string;
   count: number;
   chapterNumbers: number[];
-}
-
-function toDayKey(date: Date): string {
-  return date.toISOString().slice(0, 10);
 }
 
 /**
@@ -23,7 +18,7 @@ export function selectChapterCompletionsByDay(
   const byDay = new Map<string, DailyChapterActivity>();
   for (const chapter of Object.values(chapters)) {
     if (!chapter.completedAt) continue;
-    const day = chapter.completedAt.slice(0, 10);
+    const day = toDayKey(new Date(chapter.completedAt));
     const existing = byDay.get(day);
     if (existing) {
       existing.count += 1;
@@ -35,33 +30,35 @@ export function selectChapterCompletionsByDay(
   return byDay;
 }
 
+export interface ActivityDay {
+  /** ISO date, `YYYY-MM-DD`. */
+  date: string;
+  /** Exercises answered on that day. */
+  count: number;
+}
+
 export interface ActivityCalendarWeek {
-  days: DailyChapterActivity[];
+  days: ActivityDay[];
 }
 
 /**
  * A Monday-first grid of `weeks` full weeks ending on the week containing
- * `now`. Days without a completion get a count of 0, so the grid has no gaps.
+ * `now`. Days without practice get a count of 0, so the grid has no gaps.
  */
 export function buildActivityCalendar(
-  byDay: Map<string, DailyChapterActivity>,
+  answersByDay: Record<string, number>,
   weeks = 18,
   now: Date = new Date(),
 ): ActivityCalendarWeek[] {
-  const today = new Date(
-    Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()),
-  );
-  const mondayOffset = (today.getUTCDay() + 6) % 7;
-  const weekEnd = new Date(today.getTime() - mondayOffset * DAY_IN_MS + 6 * DAY_IN_MS);
-  const gridStart = new Date(weekEnd.getTime() - (weeks * 7 - 1) * DAY_IN_MS);
+  const mondayOffset = (now.getDay() + 6) % 7;
+  const gridStart = addDays(now, -mondayOffset - (weeks - 1) * 7);
 
   const result: ActivityCalendarWeek[] = [];
   for (let week = 0; week < weeks; week += 1) {
-    const days: DailyChapterActivity[] = [];
+    const days: ActivityDay[] = [];
     for (let day = 0; day < 7; day += 1) {
-      const date = new Date(gridStart.getTime() + (week * 7 + day) * DAY_IN_MS);
-      const key = toDayKey(date);
-      days.push(byDay.get(key) ?? { date: key, count: 0, chapterNumbers: [] });
+      const date = toDayKey(addDays(gridStart, week * 7 + day));
+      days.push({ date, count: answersByDay[date] ?? 0 });
     }
     result.push({ days });
   }
@@ -84,4 +81,26 @@ export function selectActivitySummary(
     return best;
   }, undefined);
   return { totalCompleted, activeDays: days.length, ...(bestDay ? { bestDay } : {}) };
+}
+
+export interface PracticeSummary {
+  totalAnswers: number;
+  activeDays: number;
+  bestDay?: ActivityDay;
+}
+
+/** Totals over every day the learner has answered at least one exercise. */
+export function selectPracticeSummary(
+  answersByDay: Record<string, number>,
+): PracticeSummary {
+  const days = Object.entries(answersByDay)
+    .filter(([, count]) => count > 0)
+    .map(([date, count]) => ({ date, count }));
+
+  const totalAnswers = days.reduce((sum, day) => sum + day.count, 0);
+  const bestDay = days.reduce<ActivityDay | undefined>((best, day) => {
+    if (!best || day.count > best.count) return day;
+    return best;
+  }, undefined);
+  return { totalAnswers, activeDays: days.length, ...(bestDay ? { bestDay } : {}) };
 }

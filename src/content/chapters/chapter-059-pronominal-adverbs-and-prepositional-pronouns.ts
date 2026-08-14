@@ -119,100 +119,122 @@ export const chapter059: ChapterDefinition = {
         german: 'Ich denke oft an meinen Urlaub. – Ich denke oft daran.',
         english: 'I often think about my vacation. – I often think about it.',
         highlight: ['daran'],
-        explanation: 'daran replaces an + Urlaub because der Urlaub is a thing, not a person.',
+        explanation:
+          'daran replaces an + Urlaub because der Urlaub is a thing, not a person.',
       },
       {
         german: 'Ich denke oft an meinen Bruder. – Ich denke oft an ihn.',
         english: 'I often think about my brother. – I often think about him.',
         highlight: ['an ihn'],
-        explanation: 'Because the referent is a person, German keeps the preposition with a personal pronoun (an ihn), never daran.',
+        explanation:
+          'Because the referent is a person, German keeps the preposition with a personal pronoun (an ihn), never daran.',
       },
       {
         german: 'Woran denkst du gerade?',
         english: 'What are you thinking about right now?',
         highlight: ['Woran'],
-        explanation: 'Woran asks about a thing behind the preposition an; a possible answer is Ich denke an meine Prüfung. or Ich denke daran.',
+        explanation:
+          'Woran asks about a thing behind the preposition an; a possible answer is Ich denke an meine Prüfung. or Ich denke daran.',
       },
       {
         german: 'An wen denkst du gerade?',
         english: 'Who are you thinking about right now?',
         highlight: ['An wen'],
-        explanation: 'To ask about a person, use wer in the case the preposition governs (an wen), never a wo(r)- compound.',
+        explanation:
+          'To ask about a person, use wer in the case the preposition governs (an wen), never a wo(r)- compound.',
       },
       {
-        german: 'Interessierst du dich für Musik? – Ja, ich interessiere mich sehr dafür.',
+        german:
+          'Interessierst du dich für Musik? – Ja, ich interessiere mich sehr dafür.',
         english: 'Are you interested in music? – Yes, I am very interested in it.',
         highlight: ['dafür'],
-        explanation: 'Musik is a thing/topic, so the reply uses the da(r)- compound dafür, not a personal pronoun.',
+        explanation:
+          'Musik is a thing/topic, so the reply uses the da(r)- compound dafür, not a personal pronoun.',
       },
       {
-        german: 'Interessierst du dich für den neuen Kollegen? – Ja, ich interessiere mich für ihn.',
-        english: 'Are you interested in the new colleague? – Yes, I am interested in him.',
+        german:
+          'Interessierst du dich für den neuen Kollegen? – Ja, ich interessiere mich für ihn.',
+        english:
+          'Are you interested in the new colleague? – Yes, I am interested in him.',
         highlight: ['für ihn'],
-        explanation: 'Because the referent is a person, the pronoun ihn follows the preposition directly, without fusing into a compound.',
+        explanation:
+          'Because the referent is a person, the pronoun ihn follows the preposition directly, without fusing into a compound.',
       },
       {
         german: 'Worüber sprecht ihr gerade?',
         english: 'What are you talking about right now?',
         highlight: ['Worüber'],
-        explanation: 'über begins with a vowel, so the linking -r- is inserted: worüber, not "woüber".',
+        explanation:
+          'über begins with a vowel, so the linking -r- is inserted: worüber, not "woüber".',
       },
       {
         german: 'Über wen sprecht ihr gerade?',
         english: 'Who are you talking about right now?',
         highlight: ['Über wen'],
-        explanation: 'For a person behind über, use wen (accusative), not a wo(r)- compound.',
+        explanation:
+          'For a person behind über, use wen (accusative), not a wo(r)- compound.',
       },
       {
         german: 'Er kommt heute nicht. Ich habe nichts dagegen.',
-        english: 'He isn\'t coming today. I don\'t mind.',
+        english: "He isn't coming today. I don't mind.",
         highlight: ['dagegen'],
-        explanation: 'dagegen here points back to the whole previous statement, not to a single noun.',
+        explanation:
+          'dagegen here points back to the whole previous statement, not to a single noun.',
       },
       {
         german: 'Sie hat die Prüfung bestanden. Ich freue mich total darüber.',
         english: 'She passed the exam. I am really happy about that.',
         highlight: ['darüber'],
-        explanation: 'darüber refers to the entire idea in the previous sentence — passing the exam — not to a person.',
+        explanation:
+          'darüber refers to the entire idea in the previous sentence — passing the exam — not to a person.',
       },
       {
-        german: 'Worauf wartest du? – Ich warte auf den Bus. Ich warte schon lange darauf.',
-        english: 'What are you waiting for? – I am waiting for the bus. I have been waiting for it for a long time.',
+        german:
+          'Worauf wartest du? – Ich warte auf den Bus. Ich warte schon lange darauf.',
+        english:
+          'What are you waiting for? – I am waiting for the bus. I have been waiting for it for a long time.',
         highlight: ['Worauf', 'darauf'],
-        explanation: 'Both the question worauf and the reply darauf treat der Bus as a thing, even though der Bus is grammatically masculine.',
+        explanation:
+          'Both the question worauf and the reply darauf treat der Bus as a thing, even though der Bus is grammatically masculine.',
       },
       {
         german: 'Auf wen wartest du? – Ich warte auf meine Freundin.',
         english: 'Who are you waiting for? – I am waiting for my girlfriend.',
         highlight: ['Auf wen', 'auf meine Freundin'],
-        explanation: 'meine Freundin is a person, so the question uses auf wen and the answer keeps the preposition together with the noun, never a wo(r)- or da(r)- compound.',
+        explanation:
+          'meine Freundin is a person, so the question uses auf wen and the answer keeps the preposition together with the noun, never a wo(r)- or da(r)- compound.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich denke oft daran. (gemeint: mein Opa)',
         correct: 'Ich denke oft an ihn.',
-        explanation: 'da(r)- compounds only replace things or ideas. A person must be replaced by preposition + personal pronoun, so an ihn is required here, not daran.',
+        explanation:
+          'da(r)- compounds only replace things or ideas. A person must be replaced by preposition + personal pronoun, so an ihn is required here, not daran.',
       },
       {
         incorrect: 'Ich warte auf ihn. (gemeint: der Bus)',
         correct: 'Ich warte darauf.',
-        explanation: 'Even though der Bus is grammatically masculine, it is a thing, not a person, so the reference must be the da(r)- compound darauf, not the personal pronoun ihn.',
+        explanation:
+          'Even though der Bus is grammatically masculine, it is a thing, not a person, so the reference must be the da(r)- compound darauf, not the personal pronoun ihn.',
       },
       {
         incorrect: 'Sie ärgert sich sehr dauber.',
         correct: 'Sie ärgert sich sehr darüber.',
-        explanation: 'über begins with a vowel, so the linking -r- is required: darüber, never "dauber".',
+        explanation:
+          'über begins with a vowel, so the linking -r- is required: darüber, never "dauber".',
       },
       {
         incorrect: 'Wormit schreibst du?',
         correct: 'Womit schreibst du?',
-        explanation: 'mit begins with a consonant, so no linking -r- is inserted: womit, not "wormit".',
+        explanation:
+          'mit begins with a consonant, so no linking -r- is inserted: womit, not "wormit".',
       },
       {
         incorrect: 'An was denkst du gerade?',
         correct: 'Woran denkst du gerade?',
-        explanation: 'German does not strand a preposition after was the way English strands "about" after "what" — a thing behind a preposition needs the fused wo(r)- compound, not preposition + was.',
+        explanation:
+          'German does not strand a preposition after was the way English strands "about" after "what" — a thing behind a preposition needs the fused wo(r)- compound, not preposition + was.',
       },
     ],
     remember: [
@@ -246,7 +268,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'worauf' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Ferien is a thing, so the da(r)- compound darauf (auf begins with a vowel, so the linking -r- is added) replaces auf die Ferien.',
+      explanation:
+        'die Ferien is a thing, so the da(r)- compound darauf (auf begins with a vowel, so the linking -r- is added) replaces auf die Ferien.',
     },
     {
       id: 'ch59-ex-02',
@@ -264,7 +287,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'worauf' },
       ],
       correctOptionId: 'a',
-      explanation: 'meine Schwester is a person, so the preposition keeps a personal pronoun: auf sie, not darauf.',
+      explanation:
+        'meine Schwester is a person, so the preposition keeps a personal pronoun: auf sie, not darauf.',
     },
     {
       id: 'ch59-ex-03',
@@ -282,7 +306,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'dafür' },
       ],
       correctOptionId: 'a',
-      explanation: 'mit begins with a consonant, so no linking -r- is added: damit, not "darmit".',
+      explanation:
+        'mit begins with a consonant, so no linking -r- is added: damit, not "darmit".',
     },
     {
       id: 'ch59-ex-04',
@@ -300,7 +325,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'dafür' },
       ],
       correctOptionId: 'a',
-      explanation: 'über begins with a vowel, so the linking -r- is required: darüber, not "daüber".',
+      explanation:
+        'über begins with a vowel, so the linking -r- is required: darüber, not "daüber".',
     },
     {
       id: 'ch59-ex-05',
@@ -318,7 +344,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'Auf wen' },
       ],
       correctOptionId: 'a',
-      explanation: 'The answer names a thing (den Zug) governed by auf, so the question word is the wo(r)- compound worauf.',
+      explanation:
+        'The answer names a thing (den Zug) governed by auf, so the question word is the wo(r)- compound worauf.',
     },
     {
       id: 'ch59-ex-06',
@@ -336,7 +363,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'Wofür' },
       ],
       correctOptionId: 'a',
-      explanation: 'The answer names a person (meinen Freund), so the question uses auf wen, never a wo(r)- compound.',
+      explanation:
+        'The answer names a person (meinen Freund), so the question uses auf wen, never a wo(r)- compound.',
     },
     {
       id: 'ch59-ex-07',
@@ -354,7 +382,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'vondar' },
       ],
       correctOptionId: 'a',
-      explanation: 'seine Reise is a thing, and von begins with a consonant, so davon (no linking -r-) is correct.',
+      explanation:
+        'seine Reise is a thing, and von begins with a consonant, so davon (no linking -r-) is correct.',
     },
     {
       id: 'ch59-ex-08',
@@ -372,7 +401,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'wofür' },
       ],
       correctOptionId: 'a',
-      explanation: 'Fußball is a thing/topic, so the correct replacement is the da(r)- compound dafür.',
+      explanation:
+        'Fußball is a thing/topic, so the correct replacement is the da(r)- compound dafür.',
     },
     {
       id: 'ch59-ex-09',
@@ -381,11 +411,20 @@ export const chapter059: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['da-compound', 'whole-idea'],
-      instruction: 'Read the exchange, then choose the word that best completes the final line.',
+      instruction:
+        'Read the exchange, then choose the word that best completes the final line.',
       prompt: 'Complete: "Kein Problem, ich habe nichts ___."',
       dialogue: [
-        { speaker: 'Mia', german: 'Kommst du am Samstag zur Party?', english: 'Are you coming to the party on Saturday?' },
-        { speaker: 'Jonas', german: 'Nein, ich habe leider keine Zeit.', english: 'No, unfortunately I don\'t have time.' },
+        {
+          speaker: 'Mia',
+          german: 'Kommst du am Samstag zur Party?',
+          english: 'Are you coming to the party on Saturday?',
+        },
+        {
+          speaker: 'Jonas',
+          german: 'Nein, ich habe leider keine Zeit.',
+          english: "No, unfortunately I don't have time.",
+        },
       ],
       options: [
         { id: 'a', text: 'dagegen' },
@@ -394,7 +433,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'gegen es' },
       ],
       correctOptionId: 'a',
-      explanation: 'dagegen here refers back to the whole situation just described (Jonas not being able to come), not to a single noun.',
+      explanation:
+        'dagegen here refers back to the whole situation just described (Jonas not being able to come), not to a single noun.',
     },
     {
       id: 'ch59-ex-10',
@@ -430,7 +470,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'Woran' },
       ],
       correctOptionId: 'a',
-      explanation: 'nach begins with a consonant, so no linking -r- is added: wonach, not "wornach".',
+      explanation:
+        'nach begins with a consonant, so no linking -r- is added: wonach, not "wornach".',
     },
     {
       id: 'ch59-ex-12',
@@ -448,7 +489,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'Wofür' },
       ],
       correctOptionId: 'a',
-      explanation: 'meine Kollegin is a person, so the question uses nach wem (dative), not the wo(r)- compound wonach.',
+      explanation:
+        'meine Kollegin is a person, so the question uses nach wem (dative), not the wo(r)- compound wonach.',
     },
     {
       id: 'ch59-ex-13',
@@ -457,11 +499,20 @@ export const chapter059: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['da-compound', 'person-vs-thing'],
-      instruction: 'Read the exchange, then choose the word that best completes the final line.',
+      instruction:
+        'Read the exchange, then choose the word that best completes the final line.',
       prompt: 'Complete Nina\'s reply: "Ja, wir haben gestern lange ___ gesprochen."',
       dialogue: [
-        { speaker: 'Lukas', german: 'Hast du schon mit Frau Schulz über das Angebot gesprochen?', english: 'Have you already talked to Ms. Schulz about the offer?' },
-        { speaker: 'Nina', german: 'Ja, wir haben gestern lange ___ gesprochen.', english: 'Yes, we talked about it for a long time yesterday.' },
+        {
+          speaker: 'Lukas',
+          german: 'Hast du schon mit Frau Schulz über das Angebot gesprochen?',
+          english: 'Have you already talked to Ms. Schulz about the offer?',
+        },
+        {
+          speaker: 'Nina',
+          german: 'Ja, wir haben gestern lange ___ gesprochen.',
+          english: 'Yes, we talked about it for a long time yesterday.',
+        },
       ],
       options: [
         { id: 'a', text: 'darüber' },
@@ -470,7 +521,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'über ihr' },
       ],
       correctOptionId: 'a',
-      explanation: 'das Angebot is a thing, so darüber replaces über das Angebot; über sie would wrongly treat it as a person.',
+      explanation:
+        'das Angebot is a thing, so darüber replaces über das Angebot; über sie would wrongly treat it as a person.',
     },
     {
       id: 'ch59-ex-14',
@@ -479,11 +531,20 @@ export const chapter059: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['pronoun', 'person-vs-thing'],
-      instruction: 'Read the exchange, then choose the word that best completes the final line.',
+      instruction:
+        'Read the exchange, then choose the word that best completes the final line.',
       prompt: 'Complete Nina\'s reply: "Ja, ich habe gestern lange ___ gesprochen."',
       dialogue: [
-        { speaker: 'Lukas', german: 'Hast du schon mit Frau Schulz gesprochen?', english: 'Have you already talked to Ms. Schulz?' },
-        { speaker: 'Nina', german: 'Ja, ich habe gestern lange ___ gesprochen.', english: 'Yes, I talked to her for a long time yesterday.' },
+        {
+          speaker: 'Lukas',
+          german: 'Hast du schon mit Frau Schulz gesprochen?',
+          english: 'Have you already talked to Ms. Schulz?',
+        },
+        {
+          speaker: 'Nina',
+          german: 'Ja, ich habe gestern lange ___ gesprochen.',
+          english: 'Yes, I talked to her for a long time yesterday.',
+        },
       ],
       options: [
         { id: 'a', text: 'mit ihr' },
@@ -492,7 +553,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'mit es' },
       ],
       correctOptionId: 'a',
-      explanation: 'Frau Schulz is a person, so the correct replacement is preposition + personal pronoun: mit ihr, not damit.',
+      explanation:
+        'Frau Schulz is a person, so the correct replacement is preposition + personal pronoun: mit ihr, not damit.',
     },
     {
       id: 'ch59-ex-15',
@@ -510,7 +572,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'dahin' },
       ],
       correctOptionId: 'a',
-      explanation: 'in begins with a vowel (i), so the linking -r- is required: darin, not "dain". (dahin means "(to) there" and is an unrelated word.)',
+      explanation:
+        'in begins with a vowel (i), so the linking -r- is required: darin, not "dain". (dahin means "(to) there" and is an unrelated word.)',
     },
     {
       id: 'ch59-ex-16',
@@ -525,7 +588,8 @@ export const chapter059: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'daran',
       maxLength: 15,
-      explanation: 'an begins with a vowel, so daran (with the linking -r-) replaces an den Urlaub, a thing.',
+      explanation:
+        'an begins with a vowel, so daran (with the linking -r-) replaces an den Urlaub, a thing.',
     },
     {
       id: 'ch59-ex-17',
@@ -534,13 +598,15 @@ export const chapter059: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['pronoun', 'person-vs-thing'],
-      instruction: 'Fill in the missing preposition + pronoun. Capitalisation is not checked.',
+      instruction:
+        'Fill in the missing preposition + pronoun. Capitalisation is not checked.',
       prompt: 'Ich erinnere mich gut an meinen Freund. – Ich erinnere mich gut ___.',
       acceptedAnswers: ['an ihn'],
       answerMode: 'caseInsensitive',
       placeholder: 'an ihn',
       maxLength: 15,
-      explanation: 'meinen Freund is a person, so the reply keeps the preposition with a personal pronoun: an ihn.',
+      explanation:
+        'meinen Freund is a person, so the reply keeps the preposition with a personal pronoun: an ihn.',
     },
     {
       id: 'ch59-ex-18',
@@ -550,12 +616,14 @@ export const chapter059: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['wo-compound'],
       instruction: 'Fill in the missing question word. Capitalisation is not checked.',
-      prompt: '___ freust du dich am meisten? (Antwort: Ich freue mich auf die Sommerferien.)',
+      prompt:
+        '___ freust du dich am meisten? (Antwort: Ich freue mich auf die Sommerferien.)',
       acceptedAnswers: ['worauf'],
       answerMode: 'caseInsensitive',
       placeholder: 'Worauf',
       maxLength: 15,
-      explanation: 'die Sommerferien is a thing governed by auf, so the question word is the wo(r)- compound worauf.',
+      explanation:
+        'die Sommerferien is a thing governed by auf, so the question word is the wo(r)- compound worauf.',
     },
     {
       id: 'ch59-ex-19',
@@ -585,7 +653,8 @@ export const chapter059: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'Mit wem',
       maxLength: 15,
-      explanation: 'meine Kollegin is a person, so the question uses mit wem, not a wo(r)- compound.',
+      explanation:
+        'meine Kollegin is a person, so the question uses mit wem, not a wo(r)- compound.',
     },
     {
       id: 'ch59-ex-21',
@@ -600,7 +669,8 @@ export const chapter059: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dagegen',
       maxLength: 15,
-      explanation: 'dagegen refers back to the entire previous statement (opening the window), not to a single noun.',
+      explanation:
+        'dagegen refers back to the entire previous statement (opening the window), not to a single noun.',
     },
     {
       id: 'ch59-ex-22',
@@ -615,7 +685,8 @@ export const chapter059: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'darüber',
       maxLength: 15,
-      explanation: 'darüber points back to the good news just mentioned (the whole idea); über begins with a vowel, so the linking -r- is added.',
+      explanation:
+        'darüber points back to the good news just mentioned (the whole idea); über begins with a vowel, so the linking -r- is added.',
     },
     {
       id: 'ch59-ex-23',
@@ -624,13 +695,15 @@ export const chapter059: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['pronoun', 'person-vs-thing'],
-      instruction: 'Fill in the missing preposition + pronoun. Capitalisation is not checked.',
+      instruction:
+        'Fill in the missing preposition + pronoun. Capitalisation is not checked.',
       prompt: 'Hast du etwas gegen meinen Kollegen? – Nein, ich habe nichts ___.',
       acceptedAnswers: ['gegen ihn'],
       answerMode: 'caseInsensitive',
       placeholder: 'gegen ihn',
       maxLength: 15,
-      explanation: 'mein Kollege is a person, so the reply uses the preposition with a pronoun: gegen ihn, not dagegen.',
+      explanation:
+        'mein Kollege is a person, so the reply uses the preposition with a pronoun: gegen ihn, not dagegen.',
     },
     {
       id: 'ch59-ex-24',
@@ -645,7 +718,8 @@ export const chapter059: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'davon',
       maxLength: 15,
-      explanation: 'deine Reise is a thing, and von begins with a consonant, so davon (no linking -r-) is correct.',
+      explanation:
+        'deine Reise is a thing, and von begins with a consonant, so davon (no linking -r-) is correct.',
     },
     {
       id: 'ch59-ex-25',
@@ -660,7 +734,8 @@ export const chapter059: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'darauf',
       maxLength: 15,
-      explanation: 'darauf announces the following dass-clause; sich freuen auf takes auf, and auf begins with a vowel, so the linking -r- is required.',
+      explanation:
+        'darauf announces the following dass-clause; sich freuen auf takes auf, and auf begins with a vowel, so the linking -r- is required.',
     },
     {
       id: 'ch59-ex-26',
@@ -684,13 +759,15 @@ export const chapter059: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'person-vs-thing'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ich denke oft daran. (gemeint: mein Opa)',
       acceptedAnswers: ['Ich denke oft an ihn.'],
       answerMode: 'normalized',
       placeholder: 'Ich denke oft ...',
       maxLength: 40,
-      explanation: 'mein Opa is a person, so the correct reference is an ihn, not the da(r)- compound daran.',
+      explanation:
+        'mein Opa is a person, so the correct reference is an ihn, not the da(r)- compound daran.',
     },
     {
       id: 'ch59-ex-28',
@@ -699,13 +776,15 @@ export const chapter059: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'linking-r'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Wir sprechen oft daüber.',
       acceptedAnswers: ['Wir sprechen oft darüber.'],
       answerMode: 'normalized',
       placeholder: 'Wir sprechen oft ...',
       maxLength: 40,
-      explanation: 'über begins with a vowel, so the linking -r- is required: darüber, not "daüber".',
+      explanation:
+        'über begins with a vowel, so the linking -r- is required: darüber, not "daüber".',
     },
     {
       id: 'ch59-ex-29',
@@ -714,13 +793,15 @@ export const chapter059: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['rewriting', 'da-compound'],
-      instruction: 'Rewrite the sentence, replacing die Antwort with a da(r)- compound. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence, replacing die Antwort with a da(r)- compound. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Sie wartet auf die Antwort.',
       acceptedAnswers: ['Sie wartet darauf.'],
       answerMode: 'normalized',
       placeholder: 'Sie wartet ...',
       maxLength: 40,
-      explanation: 'die Antwort is a thing, so auf die Antwort becomes darauf; auf begins with a vowel, so the linking -r- is needed.',
+      explanation:
+        'die Antwort is a thing, so auf die Antwort becomes darauf; auf begins with a vowel, so the linking -r- is needed.',
     },
     {
       id: 'ch59-ex-30',
@@ -729,13 +810,15 @@ export const chapter059: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['wo-compound', 'word-order', 'transfer'],
-      instruction: 'Turn the statement into a question about the underlined thing, using a wo(r)- compound. Write the full question. Capitalisation and the question mark are checked.',
+      instruction:
+        'Turn the statement into a question about the underlined thing, using a wo(r)- compound. Write the full question. Capitalisation and the question mark are checked.',
       prompt: 'Er ärgert sich über den Lärm.',
       acceptedAnswers: ['Worüber ärgert er sich?'],
       answerMode: 'normalized',
       placeholder: 'Worüber ...',
       maxLength: 40,
-      explanation: 'den Lärm is a thing, so the question uses the wo(r)- compound worüber (über begins with a vowel, hence the linking -r-): Worüber ärgert er sich?',
+      explanation:
+        'den Lärm is a thing, so the question uses the wo(r)- compound worüber (über begins with a vowel, hence the linking -r-): Worüber ärgert er sich?',
     },
     {
       id: 'ch59-ex-31',
@@ -753,7 +836,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'woran' },
       ],
       correctOptionId: 'a',
-      explanation: 'seine Prüfung is a thing, and an begins with a vowel, so the da(r)- compound daran is correct.',
+      explanation:
+        'seine Prüfung is a thing, and an begins with a vowel, so the da(r)- compound daran is correct.',
     },
     {
       id: 'ch59-ex-32',
@@ -771,7 +855,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'darauf' },
       ],
       correctOptionId: 'a',
-      explanation: 'meine Nachbarin is a person, so the preposition keeps a personal pronoun: für sie, not dafür.',
+      explanation:
+        'meine Nachbarin is a person, so the preposition keeps a personal pronoun: für sie, not dafür.',
     },
     {
       id: 'ch59-ex-33',
@@ -789,7 +874,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'von ihr' },
       ],
       correctOptionId: 'a',
-      explanation: 'eine Weltreise is a thing/idea, and von begins with a consonant, so davon (no linking -r-) is correct.',
+      explanation:
+        'eine Weltreise is a thing/idea, and von begins with a consonant, so davon (no linking -r-) is correct.',
     },
     {
       id: 'ch59-ex-34',
@@ -807,7 +893,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'vor ihn' },
       ],
       correctOptionId: 'a',
-      explanation: 'dem Chef is a person, so the preposition keeps the dative pronoun: vor ihm, not the da(r)- compound davor.',
+      explanation:
+        'dem Chef is a person, so the preposition keeps the dative pronoun: vor ihm, not the da(r)- compound davor.',
     },
     {
       id: 'ch59-ex-35',
@@ -825,7 +912,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'dafür' },
       ],
       correctOptionId: 'a',
-      explanation: 'das Thema is a thing, so the da(r)- compound damit (mit begins with a consonant, no linking -r-) is correct.',
+      explanation:
+        'das Thema is a thing, so the da(r)- compound damit (mit begins with a consonant, no linking -r-) is correct.',
     },
     {
       id: 'ch59-ex-36',
@@ -843,7 +931,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'Wofür' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Uhrzeit is a thing governed by auf, so the question word is the wo(r)- compound worauf.',
+      explanation:
+        'die Uhrzeit is a thing governed by auf, so the question word is the wo(r)- compound worauf.',
     },
     {
       id: 'ch59-ex-37',
@@ -853,7 +942,8 @@ export const chapter059: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['question-words', 'person-vs-thing'],
       instruction: 'Choose the question word that fits the answer.',
-      prompt: '___ kümmerst du dich? (Antwort: Ich kümmere mich um meine kleine Schwester.)',
+      prompt:
+        '___ kümmerst du dich? (Antwort: Ich kümmere mich um meine kleine Schwester.)',
       options: [
         { id: 'a', text: 'Um wen' },
         { id: 'b', text: 'Worum' },
@@ -861,7 +951,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'Wofür' },
       ],
       correctOptionId: 'a',
-      explanation: 'meine kleine Schwester is a person, so the question uses um wen, not the wo(r)- compound worum.',
+      explanation:
+        'meine kleine Schwester is a person, so the question uses um wen, not the wo(r)- compound worum.',
     },
     {
       id: 'ch59-ex-38',
@@ -879,7 +970,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'um sie' },
       ],
       correctOptionId: 'a',
-      explanation: 'Hilfe is a thing/idea, and um begins with a vowel, so darum (with linking -r-) is correct.',
+      explanation:
+        'Hilfe is a thing/idea, and um begins with a vowel, so darum (with linking -r-) is correct.',
     },
     {
       id: 'ch59-ex-39',
@@ -897,7 +989,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'darauf' },
       ],
       correctOptionId: 'a',
-      explanation: 'der Kurs is a thing, so daran (an begins with a vowel, linking -r- required) replaces an dem Kurs.',
+      explanation:
+        'der Kurs is a thing, so daran (an begins with a vowel, linking -r- required) replaces an dem Kurs.',
     },
     {
       id: 'ch59-ex-40',
@@ -915,7 +1008,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'an er' },
       ],
       correctOptionId: 'a',
-      explanation: 'meinen Freund is a person, so the reply keeps the preposition with the accusative pronoun: an ihn, not daran.',
+      explanation:
+        'meinen Freund is a person, so the reply keeps the preposition with the accusative pronoun: an ihn, not daran.',
     },
     {
       id: 'ch59-ex-41',
@@ -933,7 +1027,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'von ihm' },
       ],
       correctOptionId: 'a',
-      explanation: 'der Plan is a thing, so the da(r)- compound davon (von begins with a consonant, no linking -r-) is correct.',
+      explanation:
+        'der Plan is a thing, so the da(r)- compound davon (von begins with a consonant, no linking -r-) is correct.',
     },
     {
       id: 'ch59-ex-42',
@@ -942,11 +1037,20 @@ export const chapter059: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['da-compound', 'person-vs-thing'],
-      instruction: 'Read the exchange, then choose the word that best completes the final line.',
+      instruction:
+        'Read the exchange, then choose the word that best completes the final line.',
       prompt: 'Complete: "Ich bedanke mich herzlich ___."',
       dialogue: [
-        { speaker: 'Paul', german: 'Hier ist ein kleines Geschenk für dich.', english: 'Here is a small gift for you.' },
-        { speaker: 'Emma', german: 'Ich bedanke mich herzlich ___.', english: 'I thank you sincerely for it.' },
+        {
+          speaker: 'Paul',
+          german: 'Hier ist ein kleines Geschenk für dich.',
+          english: 'Here is a small gift for you.',
+        },
+        {
+          speaker: 'Emma',
+          german: 'Ich bedanke mich herzlich ___.',
+          english: 'I thank you sincerely for it.',
+        },
       ],
       options: [
         { id: 'a', text: 'dafür' },
@@ -955,7 +1059,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'wofür' },
       ],
       correctOptionId: 'a',
-      explanation: 'ein Geschenk is a thing, so the da(r)- compound dafür is required; German never says "für es".',
+      explanation:
+        'ein Geschenk is a thing, so the da(r)- compound dafür is required; German never says "für es".',
     },
     {
       id: 'ch59-ex-43',
@@ -964,11 +1069,20 @@ export const chapter059: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['da-compound', 'whole-idea', 'linking-r'],
-      instruction: 'Read the exchange, then choose the word that best completes the final line.',
+      instruction:
+        'Read the exchange, then choose the word that best completes the final line.',
       prompt: 'Complete: "Ich freue mich total ___."',
       dialogue: [
-        { speaker: 'Tom', german: 'Ich habe gerade die Beförderung bekommen!', english: 'I just got the promotion!' },
-        { speaker: 'Lea', german: 'Ich freue mich total ___.', english: 'I am really happy about that.' },
+        {
+          speaker: 'Tom',
+          german: 'Ich habe gerade die Beförderung bekommen!',
+          english: 'I just got the promotion!',
+        },
+        {
+          speaker: 'Lea',
+          german: 'Ich freue mich total ___.',
+          english: 'I am really happy about that.',
+        },
       ],
       options: [
         { id: 'a', text: 'darüber' },
@@ -977,7 +1091,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'über ihr' },
       ],
       correctOptionId: 'a',
-      explanation: 'darüber refers back to the whole piece of news just mentioned; über begins with a vowel, so the linking -r- is required.',
+      explanation:
+        'darüber refers back to the whole piece of news just mentioned; über begins with a vowel, so the linking -r- is required.',
     },
     {
       id: 'ch59-ex-44',
@@ -995,7 +1110,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'dahin' },
       ],
       correctOptionId: 'a',
-      explanation: 'auf begins with a vowel, so the linking -r- is required: darauf, not "dauf".',
+      explanation:
+        'auf begins with a vowel, so the linking -r- is required: darauf, not "dauf".',
     },
     {
       id: 'ch59-ex-45',
@@ -1013,7 +1129,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'Wodurch' },
       ],
       correctOptionId: 'a',
-      explanation: 'über begins with a vowel, so the linking -r- is required: worüber, not "wormüber".',
+      explanation:
+        'über begins with a vowel, so the linking -r- is required: worüber, not "wormüber".',
     },
     {
       id: 'ch59-ex-46',
@@ -1031,7 +1148,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'd', text: 'Wofür' },
       ],
       correctOptionId: 'a',
-      explanation: 'meinen Kollegen is a person, so the question uses über wen, not the wo(r)- compound worüber.',
+      explanation:
+        'meinen Kollegen is a person, so the question uses über wen, not the wo(r)- compound worüber.',
     },
     {
       id: 'ch59-ex-47',
@@ -1046,7 +1164,8 @@ export const chapter059: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'daran',
       maxLength: 15,
-      explanation: 'der Sommer is a thing, and an begins with a vowel, so daran is correct.',
+      explanation:
+        'der Sommer is a thing, and an begins with a vowel, so daran is correct.',
     },
     {
       id: 'ch59-ex-48',
@@ -1055,13 +1174,15 @@ export const chapter059: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['pronoun', 'person-vs-thing'],
-      instruction: 'Fill in the missing preposition + pronoun. Capitalisation is not checked.',
+      instruction:
+        'Fill in the missing preposition + pronoun. Capitalisation is not checked.',
       prompt: 'Ich denke oft an meine Mutter. – Ich denke oft ___.',
       acceptedAnswers: ['an sie'],
       answerMode: 'caseInsensitive',
       placeholder: 'an sie',
       maxLength: 15,
-      explanation: 'meine Mutter is a person, so the reply keeps the preposition with the pronoun: an sie.',
+      explanation:
+        'meine Mutter is a person, so the reply keeps the preposition with the pronoun: an sie.',
     },
     {
       id: 'ch59-ex-49',
@@ -1076,7 +1197,8 @@ export const chapter059: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'Worauf',
       maxLength: 15,
-      explanation: 'der Urlaub is a thing governed by auf, so the question word is the wo(r)- compound worauf.',
+      explanation:
+        'der Urlaub is a thing governed by auf, so the question word is the wo(r)- compound worauf.',
     },
     {
       id: 'ch59-ex-50',
@@ -1091,7 +1213,8 @@ export const chapter059: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'Auf wen',
       maxLength: 15,
-      explanation: 'meine Freunde are people, so the question uses auf wen, not the wo(r)- compound worauf.',
+      explanation:
+        'meine Freunde are people, so the question uses auf wen, not the wo(r)- compound worauf.',
     },
     {
       id: 'ch59-ex-51',
@@ -1106,7 +1229,8 @@ export const chapter059: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dafür',
       maxLength: 15,
-      explanation: 'Politik is a thing/topic, so the da(r)- compound dafür (für begins with a consonant, no linking -r-) is correct.',
+      explanation:
+        'Politik is a thing/topic, so the da(r)- compound dafür (für begins with a consonant, no linking -r-) is correct.',
     },
     {
       id: 'ch59-ex-52',
@@ -1121,7 +1245,8 @@ export const chapter059: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'davon',
       maxLength: 15,
-      explanation: 'ein eigenes Haus is a thing/idea, and von begins with a consonant, so davon is correct.',
+      explanation:
+        'ein eigenes Haus is a thing/idea, and von begins with a consonant, so davon is correct.',
     },
     {
       id: 'ch59-ex-53',
@@ -1136,7 +1261,8 @@ export const chapter059: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'Womit',
       maxLength: 15,
-      explanation: 'das neue Projekt is a thing governed by mit, so the question word is the wo(r)- compound womit.',
+      explanation:
+        'das neue Projekt is a thing governed by mit, so the question word is the wo(r)- compound womit.',
     },
     {
       id: 'ch59-ex-54',
@@ -1151,7 +1277,8 @@ export const chapter059: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'Über wen',
       maxLength: 15,
-      explanation: 'unser neuer Nachbar is a person, so the question uses über wen, not the wo(r)- compound worüber.',
+      explanation:
+        'unser neuer Nachbar is a person, so the question uses über wen, not the wo(r)- compound worüber.',
     },
     {
       id: 'ch59-ex-55',
@@ -1166,7 +1293,8 @@ export const chapter059: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'davor',
       maxLength: 15,
-      explanation: 'davor announces the following dass-clause; Angst haben vor takes vor, and vor begins with a consonant, so no linking -r- is added.',
+      explanation:
+        'davor announces the following dass-clause; Angst haben vor takes vor, and vor begins with a consonant, so no linking -r- is added.',
     },
     {
       id: 'ch59-ex-56',
@@ -1181,7 +1309,8 @@ export const chapter059: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'darüber',
       maxLength: 15,
-      explanation: 'darüber points back to the whole previous statement (passing the exam); über begins with a vowel, so the linking -r- is required.',
+      explanation:
+        'darüber points back to the whole previous statement (passing the exam); über begins with a vowel, so the linking -r- is required.',
     },
     {
       id: 'ch59-ex-57',
@@ -1190,13 +1319,15 @@ export const chapter059: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['pronoun', 'person-vs-thing'],
-      instruction: 'Fill in the missing preposition + pronoun. Capitalisation is not checked.',
+      instruction:
+        'Fill in the missing preposition + pronoun. Capitalisation is not checked.',
       prompt: 'Kümmerst du dich um deinen kleinen Bruder? – Ja, ich kümmere mich ___.',
       acceptedAnswers: ['um ihn'],
       answerMode: 'caseInsensitive',
       placeholder: 'um ihn',
       maxLength: 15,
-      explanation: 'dein kleiner Bruder is a person, so the reply keeps the preposition with the pronoun: um ihn, not darum.',
+      explanation:
+        'dein kleiner Bruder is a person, so the reply keeps the preposition with the pronoun: um ihn, not darum.',
     },
     {
       id: 'ch59-ex-58',
@@ -1205,13 +1336,15 @@ export const chapter059: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'person-vs-thing'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Er wartet darauf. (gemeint: seine Kollegin)',
       acceptedAnswers: ['Er wartet auf sie.'],
       answerMode: 'normalized',
       placeholder: 'Er wartet ...',
       maxLength: 40,
-      explanation: 'seine Kollegin is a person, so the correct reference is auf sie, not the da(r)- compound darauf.',
+      explanation:
+        'seine Kollegin is a person, so the correct reference is auf sie, not the da(r)- compound darauf.',
     },
     {
       id: 'ch59-ex-59',
@@ -1220,7 +1353,8 @@ export const chapter059: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'linking-r'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Er hat Angst dovor.',
       acceptedAnswers: ['Er hat Angst davor.'],
       answerMode: 'normalized',
@@ -1235,13 +1369,15 @@ export const chapter059: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['rewriting', 'da-compound'],
-      instruction: 'Rewrite the sentence, replacing die Prüfung with a da(r)- compound. Write the full sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence, replacing die Prüfung with a da(r)- compound. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Sie bereitet sich auf die Prüfung vor.',
       acceptedAnswers: ['Sie bereitet sich darauf vor.'],
       answerMode: 'normalized',
       placeholder: 'Sie bereitet sich ...',
       maxLength: 40,
-      explanation: 'die Prüfung is a thing, so auf die Prüfung becomes darauf; auf begins with a vowel, so the linking -r- is needed.',
+      explanation:
+        'die Prüfung is a thing, so auf die Prüfung becomes darauf; auf begins with a vowel, so the linking -r- is needed.',
     },
     {
       id: 'ch59-ex-61',
@@ -1250,13 +1386,15 @@ export const chapter059: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['wo-compound', 'word-order', 'transfer'],
-      instruction: 'Turn the statement into a question about the underlined thing, using a wo(r)- compound. Write the full question. Capitalisation and the question mark are checked.',
+      instruction:
+        'Turn the statement into a question about the underlined thing, using a wo(r)- compound. Write the full question. Capitalisation and the question mark are checked.',
       prompt: 'Er kümmert sich um die Organisation.',
       acceptedAnswers: ['Worum kümmert er sich?'],
       answerMode: 'normalized',
       placeholder: 'Worum ...',
       maxLength: 40,
-      explanation: 'die Organisation is a thing, so the question uses the wo(r)- compound worum (um begins with a vowel, hence the linking -r-): Worum kümmert er sich?',
+      explanation:
+        'die Organisation is a thing, so the question uses the wo(r)- compound worum (um begins with a vowel, hence the linking -r-): Worum kümmert er sich?',
     },
     {
       id: 'ch59-ex-62',
@@ -1270,7 +1408,8 @@ export const chapter059: ChapterDefinition = {
       tokens: ['Ich', 'warte', 'schon', 'lange', 'darauf.'],
       errorTokenIndex: 4,
       correction: 'auf sie.',
-      explanation: 'meine Schwester is a person, so the correct reference is auf sie, not the da(r)- compound darauf.',
+      explanation:
+        'meine Schwester is a person, so the correct reference is auf sie, not the da(r)- compound darauf.',
     },
     {
       id: 'ch59-ex-63',
@@ -1280,11 +1419,13 @@ export const chapter059: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['person-vs-thing', 'da-compound', 'error-correction'],
       instruction: 'Find the token with the error, and correct it.',
-      prompt: 'Ein Lerner spricht über den Film, den er gestern gesehen hat. Etwas stimmt nicht.',
+      prompt:
+        'Ein Lerner spricht über den Film, den er gestern gesehen hat. Etwas stimmt nicht.',
       tokens: ['Ich', 'denke', 'oft', 'an', 'ihn.'],
       errorTokenIndex: 3,
       correction: 'Ich denke oft daran.',
-      explanation: 'der Film is a thing, not a person, so the reference must be the da(r)- compound daran, not an ihn.',
+      explanation:
+        'der Film is a thing, not a person, so the reference must be the da(r)- compound daran, not an ihn.',
     },
     {
       id: 'ch59-ex-64',
@@ -1298,7 +1439,8 @@ export const chapter059: ChapterDefinition = {
       tokens: ['Sie', 'ärgert', 'sich', 'sehr', 'daüber.'],
       errorTokenIndex: 4,
       correction: 'darüber.',
-      explanation: 'über begins with a vowel, so the linking -r- is required: darüber, not "daüber".',
+      explanation:
+        'über begins with a vowel, so the linking -r- is required: darüber, not "daüber".',
     },
     {
       id: 'ch59-ex-65',
@@ -1312,7 +1454,8 @@ export const chapter059: ChapterDefinition = {
       tokens: ['Er', 'schreibt', 'gern', 'darmit.'],
       errorTokenIndex: 3,
       correction: 'damit.',
-      explanation: 'mit begins with a consonant, so no linking -r- is added: damit, not "darmit".',
+      explanation:
+        'mit begins with a consonant, so no linking -r- is added: damit, not "darmit".',
     },
     {
       id: 'ch59-ex-66',
@@ -1326,7 +1469,8 @@ export const chapter059: ChapterDefinition = {
       tokens: ['Wornach', 'suchst', 'du', 'schon', 'wieder?'],
       errorTokenIndex: 0,
       correction: 'Wonach',
-      explanation: 'nach begins with a consonant, so no linking -r- is added: wonach, not "wornach".',
+      explanation:
+        'nach begins with a consonant, so no linking -r- is added: wonach, not "wornach".',
     },
     {
       id: 'ch59-ex-67',
@@ -1336,11 +1480,13 @@ export const chapter059: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['question-words', 'person-vs-thing', 'error-correction'],
       instruction: 'Find the token with the error, and correct it.',
-      prompt: 'Ein Lerner fragt nach einem Gespräch mit seiner Chefin. Etwas stimmt nicht.',
+      prompt:
+        'Ein Lerner fragt nach einem Gespräch mit seiner Chefin. Etwas stimmt nicht.',
       tokens: ['Womit', 'hast', 'du', 'gestern', 'gesprochen?'],
       errorTokenIndex: 0,
       correction: 'Mit wem',
-      explanation: 'deine Chefin is a person, so the question must use mit wem, not the wo(r)- compound womit.',
+      explanation:
+        'deine Chefin is a person, so the question must use mit wem, not the wo(r)- compound womit.',
     },
     {
       id: 'ch59-ex-68',
@@ -1350,11 +1496,13 @@ export const chapter059: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['da-compound', 'preposition-choice', 'error-correction'],
       instruction: 'Find the token with the error, and correct it.',
-      prompt: 'Ein Lerner spricht über den Bus, der noch nicht gekommen ist. Etwas stimmt nicht.',
+      prompt:
+        'Ein Lerner spricht über den Bus, der noch nicht gekommen ist. Etwas stimmt nicht.',
       tokens: ['Ich', 'warte', 'schon', 'lange', 'damit.'],
       errorTokenIndex: 4,
       correction: 'darauf.',
-      explanation: 'warten auf takes the preposition auf, not mit, so the correct compound is darauf, not damit.',
+      explanation:
+        'warten auf takes the preposition auf, not mit, so the correct compound is darauf, not damit.',
     },
     {
       id: 'ch59-ex-69',
@@ -1368,7 +1516,8 @@ export const chapter059: ChapterDefinition = {
       tokens: ['Wir', 'freuen', 'uns', 'schon', 'dafür.'],
       errorTokenIndex: 4,
       correction: 'darauf.',
-      explanation: 'sich freuen auf (looking forward to something upcoming) takes auf, so darauf is correct here, not dafür.',
+      explanation:
+        'sich freuen auf (looking forward to something upcoming) takes auf, so darauf is correct here, not dafür.',
     },
     {
       id: 'ch59-ex-70',
@@ -1378,11 +1527,13 @@ export const chapter059: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['whole-idea', 'da-compound', 'error-correction'],
       instruction: 'Find the token with the error, and correct it.',
-      prompt: 'Ein Lerner reagiert darauf, dass ein Freund heute nicht kommt. Etwas stimmt nicht.',
+      prompt:
+        'Ein Lerner reagiert darauf, dass ein Freund heute nicht kommt. Etwas stimmt nicht.',
       tokens: ['Ich', 'habe', 'nichts', 'gegen', 'ihn.'],
       errorTokenIndex: 3,
       correction: 'Ich habe nichts dagegen.',
-      explanation: 'The reaction refers to the whole situation (him not coming today), not to a single person, so dagegen is required, not gegen ihn.',
+      explanation:
+        'The reaction refers to the whole situation (him not coming today), not to a single person, so dagegen is required, not gegen ihn.',
     },
     {
       id: 'ch59-ex-71',
@@ -1396,7 +1547,8 @@ export const chapter059: ChapterDefinition = {
       tokens: ['Ich', 'interessiere', 'mich', 'stark', 'dafür.'],
       errorTokenIndex: 4,
       correction: 'Ich interessiere mich stark für ihn.',
-      explanation: 'mein Bruder is a person, so für ihn is required, not the da(r)- compound dafür.',
+      explanation:
+        'mein Bruder is a person, so für ihn is required, not the da(r)- compound dafür.',
     },
     {
       id: 'ch59-ex-72',
@@ -1406,11 +1558,13 @@ export const chapter059: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['question-words', 'person-vs-thing', 'error-correction'],
       instruction: 'Find the token with the error, and correct it.',
-      prompt: 'Ein Lerner fragt nach einem Hobby (Musik), nicht nach einer Person. Etwas stimmt nicht.',
+      prompt:
+        'Ein Lerner fragt nach einem Hobby (Musik), nicht nach einer Person. Etwas stimmt nicht.',
       tokens: ['Für', 'wen', 'interessierst', 'du', 'dich?'],
       errorTokenIndex: 0,
       correction: 'Wofür interessierst du dich?',
-      explanation: 'Musik is a thing, so the question must use the wo(r)- compound wofür, not für wen, which is reserved for people.',
+      explanation:
+        'Musik is a thing, so the question must use the wo(r)- compound wofür, not für wen, which is reserved for people.',
     },
     {
       id: 'ch59-ex-73',
@@ -1424,7 +1578,8 @@ export const chapter059: ChapterDefinition = {
       tokens: ['Er', 'trinkt', 'gerade', 'daus.'],
       errorTokenIndex: 3,
       correction: 'daraus.',
-      explanation: 'aus begins with a vowel, so the linking -r- is required: daraus, not "daus".',
+      explanation:
+        'aus begins with a vowel, so the linking -r- is required: daraus, not "daus".',
     },
     {
       id: 'ch59-ex-74',
@@ -1438,7 +1593,8 @@ export const chapter059: ChapterDefinition = {
       templateParts: ['Ich freue mich schon ', ', dass du kommst.'],
       slots: [{ id: 'ch59-ex-74-s1', correctWord: 'darauf' }],
       wordBank: ['darauf', 'dafür', 'daran', 'damit'],
-      explanation: 'sich freuen auf + dass-clause takes auf; auf begins with a vowel, so darauf is correct.',
+      explanation:
+        'sich freuen auf + dass-clause takes auf; auf begins with a vowel, so darauf is correct.',
     },
     {
       id: 'ch59-ex-75',
@@ -1448,11 +1604,13 @@ export const chapter059: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['da-compound', 'linking-r'],
       instruction: 'Drag the correct da(r)- compound into the slot.',
-      prompt: 'Complete with the correct da(r)- compound. (Kontext: seine Kindheit ist gemeint.)',
+      prompt:
+        'Complete with the correct da(r)- compound. (Kontext: seine Kindheit ist gemeint.)',
       templateParts: ['Er denkt oft ', '.'],
       slots: [{ id: 'ch59-ex-75-s1', correctWord: 'daran' }],
       wordBank: ['daran', 'davon', 'damit', 'darüber'],
-      explanation: 'seine Kindheit is a thing, and an begins with a vowel, so daran is correct.',
+      explanation:
+        'seine Kindheit is a thing, and an begins with a vowel, so daran is correct.',
     },
     {
       id: 'ch59-ex-76',
@@ -1462,11 +1620,13 @@ export const chapter059: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['pronoun', 'person-vs-thing'],
       instruction: 'Drag the correct pronoun into the slot.',
-      prompt: 'Complete with the correct personal pronoun. (Kontext: seine Schwester ist gemeint.)',
+      prompt:
+        'Complete with the correct personal pronoun. (Kontext: seine Schwester ist gemeint.)',
       templateParts: ['Er denkt oft an ', '.'],
       slots: [{ id: 'ch59-ex-76-s1', correctWord: 'sie' }],
       wordBank: ['sie', 'ihr', 'es', 'ihn'],
-      explanation: 'seine Schwester is a person, so the accusative pronoun sie is required, not a da(r)- compound.',
+      explanation:
+        'seine Schwester is a person, so the accusative pronoun sie is required, not a da(r)- compound.',
     },
     {
       id: 'ch59-ex-77',
@@ -1476,11 +1636,13 @@ export const chapter059: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['da-compound'],
       instruction: 'Drag the correct da(r)- compound into the slot.',
-      prompt: 'Complete with the correct da(r)- compound. (Kontext: mit dem Auto reparieren.)',
+      prompt:
+        'Complete with the correct da(r)- compound. (Kontext: mit dem Auto reparieren.)',
       templateParts: ['Er beschäftigt sich schon lange ', '.'],
       slots: [{ id: 'ch59-ex-77-s1', correctWord: 'damit' }],
       wordBank: ['damit', 'dafür', 'daran', 'davon'],
-      explanation: 'das Auto is a thing, and mit begins with a consonant, so damit (no linking -r-) is correct.',
+      explanation:
+        'das Auto is a thing, and mit begins with a consonant, so damit (no linking -r-) is correct.',
     },
     {
       id: 'ch59-ex-78',
@@ -1490,11 +1652,13 @@ export const chapter059: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['pronoun', 'person-vs-thing'],
       instruction: 'Drag the correct pronoun into the slot.',
-      prompt: 'Complete with the correct personal pronoun. (Kontext: seinem Bruder ist gemeint.)',
+      prompt:
+        'Complete with the correct personal pronoun. (Kontext: seinem Bruder ist gemeint.)',
       templateParts: ['Er beschäftigt sich schon lange mit ', '.'],
       slots: [{ id: 'ch59-ex-78-s1', correctWord: 'ihm' }],
       wordBank: ['ihm', 'ihn', 'ihr', 'es'],
-      explanation: 'sein Bruder is a person, so the dative pronoun ihm is required, not the da(r)- compound damit.',
+      explanation:
+        'sein Bruder is a person, so the dative pronoun ihm is required, not the da(r)- compound damit.',
     },
     {
       id: 'ch59-ex-79',
@@ -1522,7 +1686,8 @@ export const chapter059: ChapterDefinition = {
       templateParts: ['Für ', ' interessierst du dich?'],
       slots: [{ id: 'ch59-ex-80-s1', correctWord: 'wen' }],
       wordBank: ['wen', 'was', 'wem', 'wer'],
-      explanation: 'mein Bruder is a person, so für wen (accusative) is required, not a wo(r)- compound.',
+      explanation:
+        'mein Bruder is a person, so für wen (accusative) is required, not a wo(r)- compound.',
     },
     {
       id: 'ch59-ex-81',
@@ -1532,11 +1697,13 @@ export const chapter059: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['da-compound'],
       instruction: 'Drag the correct da(r)- compound into the slot.',
-      prompt: 'Complete with the correct da(r)- compound. (Kontext: von seiner Reise erzählen.)',
+      prompt:
+        'Complete with the correct da(r)- compound. (Kontext: von seiner Reise erzählen.)',
       templateParts: ['Er erzählt uns oft ', '.'],
       slots: [{ id: 'ch59-ex-81-s1', correctWord: 'davon' }],
       wordBank: ['davon', 'dafür', 'daran', 'darüber'],
-      explanation: 'seine Reise is a thing, and von begins with a consonant, so davon (no linking -r-) is correct.',
+      explanation:
+        'seine Reise is a thing, and von begins with a consonant, so davon (no linking -r-) is correct.',
     },
     {
       id: 'ch59-ex-82',
@@ -1546,11 +1713,13 @@ export const chapter059: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['da-compound', 'linking-r'],
       instruction: 'Drag the correct da(r)- compound into the slot.',
-      prompt: 'Complete with the correct da(r)- compound. (Kontext: um das neue Projekt.)',
+      prompt:
+        'Complete with the correct da(r)- compound. (Kontext: um das neue Projekt.)',
       templateParts: ['Es geht hier vor allem ', '.'],
       slots: [{ id: 'ch59-ex-82-s1', correctWord: 'darum' }],
       wordBank: ['darum', 'dadurch', 'dafür', 'damit'],
-      explanation: 'das neue Projekt is a thing, and um begins with a vowel, so darum (with linking -r-) is correct.',
+      explanation:
+        'das neue Projekt is a thing, and um begins with a vowel, so darum (with linking -r-) is correct.',
     },
     {
       id: 'ch59-ex-83',
@@ -1564,7 +1733,8 @@ export const chapter059: ChapterDefinition = {
       templateParts: ['', ' leidet sie am meisten?'],
       slots: [{ id: 'ch59-ex-83-s1', correctWord: 'Worunter' }],
       wordBank: ['Worunter', 'Wodurch', 'Worüber', 'Unter wem'],
-      explanation: 'die Kälte is a thing, and unter begins with a vowel, so worunter (with linking -r-) is correct.',
+      explanation:
+        'die Kälte is a thing, and unter begins with a vowel, so worunter (with linking -r-) is correct.',
     },
     {
       id: 'ch59-ex-84',
@@ -1574,11 +1744,13 @@ export const chapter059: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['pronoun', 'person-vs-thing'],
       instruction: 'Drag the correct pronoun into the slot.',
-      prompt: 'Complete with the correct personal pronoun. (Kontext: seinen alten Lehrer ist gemeint.)',
+      prompt:
+        'Complete with the correct personal pronoun. (Kontext: seinen alten Lehrer ist gemeint.)',
       templateParts: ['Er erinnert sich gern an ', '.'],
       slots: [{ id: 'ch59-ex-84-s1', correctWord: 'ihn' }],
       wordBank: ['ihn', 'ihm', 'es', 'daran'],
-      explanation: 'sein alter Lehrer is a person, so the accusative pronoun ihn is required, not the da(r)- compound daran.',
+      explanation:
+        'sein alter Lehrer is a person, so the accusative pronoun ihn is required, not the da(r)- compound daran.',
     },
     {
       id: 'ch59-ex-85',
@@ -1592,7 +1764,8 @@ export const chapter059: ChapterDefinition = {
       templateParts: ['Sie kommt nicht mit. Ich habe nichts ', '.'],
       slots: [{ id: 'ch59-ex-85-s1', correctWord: 'dagegen' }],
       wordBank: ['dagegen', 'dafür', 'damit', 'darüber'],
-      explanation: 'dagegen here refers back to the whole previous statement (her not coming along), not to a single noun.',
+      explanation:
+        'dagegen here refers back to the whole previous statement (her not coming along), not to a single noun.',
     },
     {
       id: 'ch59-ex-86',
@@ -1611,7 +1784,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'p5', left: 'für', right: 'dafür' },
         { id: 'p6', left: 'über', right: 'darüber' },
       ],
-      explanation: 'an and auf and über begin with a vowel and take the linking -r- (daran, darauf, darüber); mit, von and für begin with a consonant and take none (damit, davon, dafür).',
+      explanation:
+        'an and auf and über begin with a vowel and take the linking -r- (daran, darauf, darüber); mit, von and für begin with a consonant and take none (damit, davon, dafür).',
     },
     {
       id: 'ch59-ex-87',
@@ -1630,7 +1804,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'p5', left: 'für', right: 'wofür' },
         { id: 'p6', left: 'über', right: 'worüber' },
       ],
-      explanation: 'The wo(r)- compounds follow the same linking -r- rule as da(r)- compounds: woran, worauf, worüber take -r-, while womit, wovon, wofür do not.',
+      explanation:
+        'The wo(r)- compounds follow the same linking -r- rule as da(r)- compounds: woran, worauf, worüber take -r-, while womit, wovon, wofür do not.',
     },
     {
       id: 'ch59-ex-88',
@@ -1639,7 +1814,8 @@ export const chapter059: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['da-compound', 'fixed-preposition'],
-      instruction: 'Match each verb + preposition combination to its correct da(r)- compound.',
+      instruction:
+        'Match each verb + preposition combination to its correct da(r)- compound.',
       prompt: 'Verb + preposition and its da(r)- compound.',
       pairs: [
         { id: 'p1', left: 'warten auf', right: 'darauf' },
@@ -1649,7 +1825,8 @@ export const chapter059: ChapterDefinition = {
         { id: 'p5', left: 'sich beschäftigen mit', right: 'damit' },
         { id: 'p6', left: 'Angst haben vor', right: 'davor' },
       ],
-      explanation: 'Each fixed verb + preposition combination replaces its thing/idea object with the matching da(r)- compound, following the linking -r- rule.',
+      explanation:
+        'Each fixed verb + preposition combination replaces its thing/idea object with the matching da(r)- compound, following the linking -r- rule.',
     },
     {
       id: 'ch59-ex-89',
@@ -1661,13 +1838,34 @@ export const chapter059: ChapterDefinition = {
       instruction: 'Match each question about a person to its correct reply.',
       prompt: 'Question and reply using preposition + personal pronoun.',
       pairs: [
-        { id: 'p1', left: 'Denkst du an deinen Vater?', right: 'Ja, ich denke oft an ihn.' },
-        { id: 'p2', left: 'Wartest du auf deine Schwester?', right: 'Ja, ich warte auf sie.' },
-        { id: 'p3', left: 'Sprichst du mit deinem Chef?', right: 'Ja, ich spreche mit ihm.' },
-        { id: 'p4', left: 'Interessierst du dich für deine Nachbarn?', right: 'Ja, ich interessiere mich für sie.' },
-        { id: 'p5', left: 'Erinnerst du dich an deine Lehrerin?', right: 'Ja, ich erinnere mich an sie.' },
+        {
+          id: 'p1',
+          left: 'Denkst du an deinen Vater?',
+          right: 'Ja, ich denke oft an ihn.',
+        },
+        {
+          id: 'p2',
+          left: 'Wartest du auf deine Schwester?',
+          right: 'Ja, ich warte auf sie.',
+        },
+        {
+          id: 'p3',
+          left: 'Sprichst du mit deinem Chef?',
+          right: 'Ja, ich spreche mit ihm.',
+        },
+        {
+          id: 'p4',
+          left: 'Interessierst du dich für deine Nachbarn?',
+          right: 'Ja, ich interessiere mich für sie.',
+        },
+        {
+          id: 'p5',
+          left: 'Erinnerst du dich an deine Lehrerin?',
+          right: 'Ja, ich erinnere mich an sie.',
+        },
       ],
-      explanation: 'Every referent here is a person, so each reply keeps the preposition together with a personal pronoun, never a da(r)- compound.',
+      explanation:
+        'Every referent here is a person, so each reply keeps the preposition together with a personal pronoun, never a da(r)- compound.',
     },
     {
       id: 'ch59-ex-90',
@@ -1684,7 +1882,8 @@ export const chapter059: ChapterDefinition = {
         { id: 's3', text: 'du' },
         { id: 's4', text: 'dich?' },
       ],
-      explanation: 'The wo(r)- compound Worauf opens the question, followed by the verb: Worauf freust du dich?',
+      explanation:
+        'The wo(r)- compound Worauf opens the question, followed by the verb: Worauf freust du dich?',
     },
     {
       id: 'ch59-ex-91',
@@ -1701,7 +1900,8 @@ export const chapter059: ChapterDefinition = {
         { id: 's3', text: 'du' },
         { id: 's4', text: 'gerade?' },
       ],
-      explanation: 'The wo(r)- compound Woran opens the question, followed by the verb: Woran denkst du gerade?',
+      explanation:
+        'The wo(r)- compound Woran opens the question, followed by the verb: Woran denkst du gerade?',
     },
     {
       id: 'ch59-ex-92',
@@ -1718,7 +1918,8 @@ export const chapter059: ChapterDefinition = {
         { id: 's3', text: 'ihr' },
         { id: 's4', text: 'denn?' },
       ],
-      explanation: 'The wo(r)- compound Worüber opens the question, followed by the verb: Worüber sprecht ihr denn?',
+      explanation:
+        'The wo(r)- compound Worüber opens the question, followed by the verb: Worüber sprecht ihr denn?',
     },
   ],
 };

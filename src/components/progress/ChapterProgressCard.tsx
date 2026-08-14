@@ -10,13 +10,17 @@ export interface ChapterProgressCardProps {
 export function ChapterProgressCard({ chapter }: ChapterProgressCardProps) {
   const title = (
     <>
-      <span className="visually-hidden">Chapter {formatChapterNumber(chapter.number)}: </span>
+      <span className="visually-hidden">
+        Chapter {formatChapterNumber(chapter.number)}:{' '}
+      </span>
       {chapter.title}
     </>
   );
 
   return (
-    <article className={`card chapter-card${chapter.available ? ' card--interactive' : ''}`}>
+    <article
+      className={`card chapter-card${chapter.available ? ' card--interactive' : ''}`}
+    >
       <div className="chapter-card__header">
         <span className="chapter-card__number" aria-hidden="true">
           {formatChapterNumber(chapter.number)}

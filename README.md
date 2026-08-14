@@ -52,6 +52,26 @@ npm run dev
 
 Playwright needs its browser once: `npx playwright install chromium`.
 
+## Deployment
+
+The build is a static site with no backend, so any static host works. Point the
+host at:
+
+| Setting          | Value           |
+| ---------------- | --------------- |
+| Build command    | `npm run build` |
+| Output directory | `dist`          |
+
+Every route is client-side, so the host has to serve `index.html` for unknown
+paths or a deep link like `/chapter/19/practice` 404s on first visit. The
+service worker's `navigateFallback` only takes over once it has installed, which
+is too late for that first request. `public/_redirects` handles this on
+Cloudflare Pages and Netlify; on Vercel add a `vercel.json` rewrite instead.
+
+The app is served from the domain root (`scope` and `start_url` in the web app
+manifest are both `/`). Hosting it under a sub-path additionally needs `base` in
+`vite.config.ts`, a router `basename`, and the manifest scope updated to match.
+
 ## Architecture
 
 ```text

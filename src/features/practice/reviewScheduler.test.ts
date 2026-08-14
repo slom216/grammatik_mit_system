@@ -5,6 +5,8 @@ import {
   createHistory,
   isDue,
   isPending,
+  RETENTION_INTERVAL_DAYS,
+  REVIEW_INTERVAL_DAYS,
   scheduleNextReview,
   selectDueExercises,
 } from './reviewScheduler';
@@ -18,16 +20,78 @@ function daysBetween(from: Date, iso: string | undefined): number {
 }
 
 describe('scheduleNextReview', () => {
-  it('does not schedule an exercise that was correct on the first try', () => {
+  it('schedules a first-time-correct exercise on the slow retention ladder', () => {
     const history = scheduleNextReview({
       exerciseId: 'e1',
       chapterNumber: 1,
       outcome: 'correctFirstAttempt',
       now,
     });
+    expect(history.dueAt).toBe(
+      addDays(now, RETENTION_INTERVAL_DAYS.firstCorrect).toISOString(),
+    );
+    expect(history.hasBeenWrong).toBe(false);
+    expect(history.timesCorrect).toBe(1);
+  });
+
+  it('retires a clean exercise after three correct answers', () => {
+    let history = scheduleNextReview({
+      exerciseId: 'e1',
+      chapterNumber: 1,
+      outcome: 'correctFirstAttempt',
+      now,
+    });
+    expect(history.dueAt).toBe(addDays(now, 7).toISOString());
+
+    history = scheduleNextReview({
+      exerciseId: 'e1',
+      chapterNumber: 1,
+      outcome: 'correctFirstAttempt',
+      now,
+      previous: history,
+    });
+    expect(history.dueAt).toBe(addDays(now, 21).toISOString());
+
+    history = scheduleNextReview({
+      exerciseId: 'e1',
+      chapterNumber: 1,
+      outcome: 'correctFirstAttempt',
+      now,
+      previous: history,
+    });
     expect(history.dueAt).toBeUndefined();
     expect(history.stage).toBe('stable');
-    expect(history.timesCorrect).toBe(1);
+  });
+
+  it('moves an exercise onto the fast ladder for good once it is wrong', () => {
+    const clean = scheduleNextReview({
+      exerciseId: 'e1',
+      chapterNumber: 1,
+      outcome: 'correctFirstAttempt',
+      now,
+    });
+    const wrong = scheduleNextReview({
+      exerciseId: 'e1',
+      chapterNumber: 1,
+      outcome: 'incorrect',
+      now,
+      previous: clean,
+    });
+    expect(wrong.hasBeenWrong).toBe(true);
+    expect(wrong.dueAt).toBe(addDays(now, REVIEW_INTERVAL_DAYS.wrong).toISOString());
+
+    // Recovering keeps it on the remedial intervals, not the retention ones.
+    const recovered = scheduleNextReview({
+      exerciseId: 'e1',
+      chapterNumber: 1,
+      outcome: 'correctFirstAttempt',
+      now,
+      previous: wrong,
+    });
+    expect(recovered.hasBeenWrong).toBe(true);
+    expect(recovered.dueAt).toBe(
+      addDays(now, REVIEW_INTERVAL_DAYS.firstCorrect).toISOString(),
+    );
   });
 
   it('queues an exercise that needed a second attempt', () => {
@@ -207,13 +271,36 @@ describe('selectDueExercises', () => {
 
 describe('countOpenReviewFlags', () => {
   it('counts queued exercises per chapter', () => {
+    const wrong = (id: string, chapterNumber: number, dueInDays: number) => ({
+      ...createHistory(id, chapterNumber),
+      hasBeenWrong: true,
+      dueAt: addDays(now, dueInDays).toISOString(),
+    });
     const histories = [
-      { ...createHistory('a', 1), dueAt: addDays(now, 1).toISOString() },
-      { ...createHistory('b', 1), dueAt: addDays(now, -1).toISOString() },
-      { ...createHistory('c', 2), dueAt: addDays(now, 1).toISOString() },
+      wrong('a', 1, 1),
+      wrong('b', 1, -1),
+      wrong('c', 2, 1),
       createHistory('d', 1),
     ];
     expect(countOpenReviewFlags(histories, 1)).toBe(2);
     expect(countOpenReviewFlags(histories, 2)).toBe(1);
+  });
+
+  // Retention reviews are scheduled for everything the learner answers. If they
+  // counted as open flags, every chapter would blow past maxOpenReviewFlags and
+  // mastery would be unreachable.
+  it('ignores retention reviews of exercises that were never wrong', () => {
+    const histories = [
+      {
+        ...createHistory('a', 1),
+        dueAt: addDays(now, 7).toISOString(),
+      },
+      {
+        ...createHistory('b', 1),
+        hasBeenWrong: true,
+        dueAt: addDays(now, 1).toISOString(),
+      },
+    ];
+    expect(countOpenReviewFlags(histories, 1)).toBe(1);
   });
 });

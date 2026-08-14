@@ -120,37 +120,43 @@ export const chapter042: ChapterDefinition = {
         german: 'Mein Bruder ist größer als ich.',
         english: 'My brother is taller than I am.',
         highlight: ['größer', 'als'],
-        explanation: 'groß takes an umlaut in the comparative (größer); als introduces the point of comparison.',
+        explanation:
+          'groß takes an umlaut in the comparative (größer); als introduces the point of comparison.',
       },
       {
         german: 'Berlin ist größer als München, aber kleiner als New York.',
         english: 'Berlin is bigger than Munich, but smaller than New York.',
         highlight: ['größer als', 'kleiner als'],
-        explanation: 'Two comparisons in one sentence, both using the pattern comparative + als.',
+        explanation:
+          'Two comparisons in one sentence, both using the pattern comparative + als.',
       },
       {
         german: 'Dieses Auto ist so schnell wie das andere.',
         english: 'This car is as fast as the other one.',
         highlight: ['so schnell wie'],
-        explanation: 'Equality is expressed with the plain adjective schnell framed by so ... wie, not with a comparative form.',
+        explanation:
+          'Equality is expressed with the plain adjective schnell framed by so ... wie, not with a comparative form.',
       },
       {
         german: 'Der Zug ist nicht so schnell wie das Flugzeug.',
         english: 'The train is not as fast as the plane.',
         highlight: ['nicht so schnell wie'],
-        explanation: 'nicht so ... wie negates the equality: the two things being compared are not equal.',
+        explanation:
+          'nicht so ... wie negates the equality: the two things being compared are not equal.',
       },
       {
         german: 'Ich finde diesen Film besser als den letzten.',
         english: 'I find this film better than the last one.',
         highlight: ['besser', 'als'],
-        explanation: 'gut has the irregular comparative besser, followed by als to introduce the second film.',
+        explanation:
+          'gut has the irregular comparative besser, followed by als to introduce the second film.',
       },
       {
         german: 'Sie trinkt lieber Tee als Kaffee.',
         english: 'She prefers to drink tea rather than coffee.',
         highlight: ['lieber', 'als'],
-        explanation: 'gern has the irregular comparative lieber, used here to express a preference, again followed by als.',
+        explanation:
+          'gern has the irregular comparative lieber, used here to express a preference, again followed by als.',
       },
       {
         german: 'Im Sommer ist es wärmer als im Winter.',
@@ -162,63 +168,74 @@ export const chapter042: ChapterDefinition = {
         german: 'Die Berge sind höher als die Hügel.',
         english: 'The mountains are higher than the hills.',
         highlight: ['höher', 'als'],
-        explanation: 'hoch has the irregular comparative höher (the ch of hoch drops before the umlaut and ending).',
+        explanation:
+          'hoch has the irregular comparative höher (the ch of hoch drops before the umlaut and ending).',
       },
       {
         german: 'Meine Wohnung ist näher am Bahnhof als deine.',
         english: 'My apartment is closer to the train station than yours.',
         highlight: ['näher', 'als'],
-        explanation: 'nah has the irregular comparative näher (an extra h is inserted before the ending).',
+        explanation:
+          'nah has the irregular comparative näher (an extra h is inserted before the ending).',
       },
       {
         german: 'Dieser Rock ist mir zu dunkel; hast du einen dunkleren?',
         english: 'This skirt is too dark for me; do you have a darker one?',
         highlight: ['dunkleren'],
-        explanation: 'dunkel drops its e before -er: dunkel -> dunkler, and here takes the accusative masculine ending -en.',
+        explanation:
+          'dunkel drops its e before -er: dunkel -> dunkler, and here takes the accusative masculine ending -en.',
       },
       {
         german: 'Wir brauchen ein teureres Zimmer mit Meerblick.',
         english: 'We need a more expensive room with a sea view.',
         highlight: ['teureres'],
-        explanation: 'teuer drops the e of -er in the comparative (teurer), then takes the neuter accusative ending -es: teureres.',
+        explanation:
+          'teuer drops the e of -er in the comparative (teurer), then takes the neuter accusative ending -es: teureres.',
       },
       {
         german: 'Er ist genauso groß wie sein Vater.',
         english: 'He is exactly as tall as his father.',
         highlight: ['genauso groß wie'],
-        explanation: 'genauso ... wie is a stronger variant of so ... wie, emphasizing exact equality; the adjective stays in its plain form.',
+        explanation:
+          'genauso ... wie is a stronger variant of so ... wie, emphasizing exact equality; the adjective stays in its plain form.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Dieses Buch ist mehr interessant als das andere.',
         correct: 'Dieses Buch ist interessanter als das andere.',
-        explanation: 'German never builds a comparative with a separate word like "mehr" in front of the adjective; the -er ending is always attached directly, even to long adjectives: interessant -> interessanter.',
+        explanation:
+          'German never builds a comparative with a separate word like "mehr" in front of the adjective; the -er ending is always attached directly, even to long adjectives: interessant -> interessanter.',
       },
       {
         incorrect: 'Mein Auto ist schneller wie deins.',
         correct: 'Mein Auto ist schneller als deins.',
-        explanation: 'A comparative form (schneller) must be followed by als, not wie. Wie is reserved for equality comparisons with the plain adjective (so ... wie).',
+        explanation:
+          'A comparative form (schneller) must be followed by als, not wie. Wie is reserved for equality comparisons with the plain adjective (so ... wie).',
       },
       {
         incorrect: 'Der Kaffee ist so heiß als der Tee.',
         correct: 'Der Kaffee ist so heiß wie der Tee.',
-        explanation: 'Equality comparisons use so ... wie, not so ... als. Als only follows a comparative form.',
+        explanation:
+          'Equality comparisons use so ... wie, not so ... als. Als only follows a comparative form.',
       },
       {
         incorrect: 'Mein Bruder ist guter als ich.',
         correct: 'Mein Bruder ist besser als ich.',
-        explanation: 'gut has an irregular comparative, besser, not "guter". The regular -er ending does not apply to this adjective.',
+        explanation:
+          'gut has an irregular comparative, besser, not "guter". The regular -er ending does not apply to this adjective.',
       },
       {
         incorrect: 'Im Winter ist es kalter als im Sommer.',
         correct: 'Im Winter ist es kälter als im Sommer.',
-        explanation: 'kalt is a short adjective with the stem vowel a and takes an umlaut in the comparative: kalt -> kälter, not "kalter".',
+        explanation:
+          'kalt is a short adjective with the stem vowel a and takes an umlaut in the comparative: kalt -> kälter, not "kalter".',
       },
       {
         incorrect: 'Ich brauche ein dunkeleres Zimmer.',
         correct: 'Ich brauche ein dunkleres Zimmer.',
-        explanation: 'Adjectives ending in -el drop the e before adding -er: dunkel -> dunkler, then dunkleres with the neuter ending, never "dunkeleres".',
+        explanation:
+          'Adjectives ending in -el drop the e before adding -er: dunkel -> dunkler, then dunkleres with the neuter ending, never "dunkeleres".',
       },
     ],
     remember: [
@@ -252,7 +269,8 @@ export const chapter042: ChapterDefinition = {
         { id: 'd', text: 'schnellster' },
       ],
       correctOptionId: 'a',
-      explanation: 'Regular comparatives simply add -er to the base form: schnell -> schneller.',
+      explanation:
+        'Regular comparatives simply add -er to the base form: schnell -> schneller.',
     },
     {
       id: 'ch42-ex-02',
@@ -270,7 +288,8 @@ export const chapter042: ChapterDefinition = {
         { id: 'd', text: 'mehr billig' },
       ],
       correctOptionId: 'a',
-      explanation: 'billig is a regular adjective: billig -> billiger, no umlaut because it has two syllables.',
+      explanation:
+        'billig is a regular adjective: billig -> billiger, no umlaut because it has two syllables.',
     },
     {
       id: 'ch42-ex-03',
@@ -288,7 +307,8 @@ export const chapter042: ChapterDefinition = {
         { id: 'd', text: 'mehr alt' },
       ],
       correctOptionId: 'a',
-      explanation: 'alt is a short adjective with the stem vowel a and takes an umlaut in the comparative: alt -> älter.',
+      explanation:
+        'alt is a short adjective with the stem vowel a and takes an umlaut in the comparative: alt -> älter.',
     },
     {
       id: 'ch42-ex-04',
@@ -432,7 +452,8 @@ export const chapter042: ChapterDefinition = {
         { id: 'd', text: 'oder' },
       ],
       correctOptionId: 'a',
-      explanation: 'Equality comparisons use so ... wie with the plain adjective, not als.',
+      explanation:
+        'Equality comparisons use so ... wie with the plain adjective, not als.',
     },
     {
       id: 'ch42-ex-12',
@@ -468,7 +489,8 @@ export const chapter042: ChapterDefinition = {
         { id: 'd', text: 'wenn' },
       ],
       correctOptionId: 'a',
-      explanation: 'nicht so ... wie negates an equality comparison and uses wie, never als, after the plain adjective.',
+      explanation:
+        'nicht so ... wie negates an equality comparison and uses wie, never als, after the plain adjective.',
     },
     {
       id: 'ch42-ex-14',
@@ -486,7 +508,8 @@ export const chapter042: ChapterDefinition = {
         { id: 'd', text: 'dunklerer' },
       ],
       correctOptionId: 'a',
-      explanation: 'Adjectives ending in -el drop the e before -er: dunkel -> dunkler, not "dunkeler".',
+      explanation:
+        'Adjectives ending in -el drop the e before -er: dunkel -> dunkler, not "dunkeler".',
     },
     {
       id: 'ch42-ex-15',
@@ -504,7 +527,8 @@ export const chapter042: ChapterDefinition = {
         { id: 'd', text: 'töirer' },
       ],
       correctOptionId: 'a',
-      explanation: 'teuer drops the e of -er before adding the comparative -er: teuer -> teurer, not "teuerer".',
+      explanation:
+        'teuer drops the e of -er before adding the comparative -er: teuer -> teurer, not "teuerer".',
     },
     {
       id: 'ch42-ex-16',
@@ -573,13 +597,15 @@ export const chapter042: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['comparative', 'als', 'sentence-writing'],
-      instruction: 'Complete the sentence with the comparative of the adjective in brackets, plus als. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the comparative of the adjective in brackets, plus als. Capitalisation is not checked.',
       prompt: 'Die Berge sind ___ die Hügel. (hoch)',
       acceptedAnswers: ['höher als'],
       answerMode: 'caseInsensitive',
       placeholder: 'höher als',
       maxLength: 30,
-      explanation: 'hoch -> höher (irregular), followed by als to introduce the point of comparison: höher als die Hügel.',
+      explanation:
+        'hoch -> höher (irregular), followed by als to introduce the point of comparison: höher als die Hügel.',
     },
     {
       id: 'ch42-ex-21',
@@ -588,7 +614,8 @@ export const chapter042: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['comparative', 'als', 'sentence-writing'],
-      instruction: 'Complete the sentence with the comparative of the adjective in brackets, plus als. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the comparative of the adjective in brackets, plus als. Capitalisation is not checked.',
       prompt: 'Dieser Film ist ___ der letzte. (gut)',
       acceptedAnswers: ['besser als'],
       answerMode: 'caseInsensitive',
@@ -603,13 +630,15 @@ export const chapter042: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['equality', 'so-wie', 'sentence-writing'],
-      instruction: 'Complete the sentence with so, the plain adjective, and wie. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with so, the plain adjective, and wie. Capitalisation is not checked.',
       prompt: 'Meine Wohnung ist ___ deine. (groß, equal)',
       acceptedAnswers: ['so groß wie'],
       answerMode: 'caseInsensitive',
       placeholder: 'so groß wie',
       maxLength: 30,
-      explanation: 'Equality uses the plain adjective groß (not the comparative) framed by so ... wie: so groß wie deine.',
+      explanation:
+        'Equality uses the plain adjective groß (not the comparative) framed by so ... wie: so groß wie deine.',
     },
     {
       id: 'ch42-ex-23',
@@ -618,13 +647,15 @@ export const chapter042: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['comparative', 'attributive-ending'],
-      instruction: 'Write the comparative form with the correct ending. Capitalisation is not checked.',
+      instruction:
+        'Write the comparative form with the correct ending. Capitalisation is not checked.',
       prompt: 'Wir brauchen ein ___ Zimmer. (teuer, neuter, nominative/accusative ein-)',
       acceptedAnswers: ['teureres'],
       answerMode: 'caseInsensitive',
       placeholder: 'teureres',
       maxLength: 20,
-      explanation: 'teuer drops its e (teurer) and, before a neuter noun after ein, takes the ending -es: teureres Zimmer.',
+      explanation:
+        'teuer drops its e (teurer) and, before a neuter noun after ein, takes the ending -es: teureres Zimmer.',
     },
     {
       id: 'ch42-ex-24',
@@ -633,7 +664,8 @@ export const chapter042: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'irregular', 'gut'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Mein Bruder ist guter als ich.',
       acceptedAnswers: ['Mein Bruder ist besser als ich.'],
       answerMode: 'normalized',
@@ -648,7 +680,8 @@ export const chapter042: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'als-vs-wie'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Mein Auto ist schneller wie deins.',
       acceptedAnswers: ['Mein Auto ist schneller als deins.'],
       answerMode: 'normalized',
@@ -663,13 +696,15 @@ export const chapter042: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'umlaut'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Im Winter ist es kalter als im Sommer.',
       acceptedAnswers: ['Im Winter ist es kälter als im Sommer.'],
       answerMode: 'normalized',
       placeholder: 'Im Winter ist es ...',
       maxLength: 60,
-      explanation: 'kalt takes an umlaut in the comparative: kalt -> kälter, not "kalter".',
+      explanation:
+        'kalt takes an umlaut in the comparative: kalt -> kälter, not "kalter".',
     },
     {
       id: 'ch42-ex-27',
@@ -678,13 +713,18 @@ export const chapter042: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['sentence-formation', 'comparative', 'als'],
-      instruction: 'Write a complete sentence using the comparative of the cue adjective and als. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence using the comparative of the cue adjective and als. Capitalisation is checked; no full stop is required.',
       prompt: 'dieser Rock – teuer – jenes Kleid (comparative + als)',
-      acceptedAnswers: ['Dieser Rock ist teurer als jenes Kleid.', 'Dieser Rock ist teurer als jenes Kleid'],
+      acceptedAnswers: [
+        'Dieser Rock ist teurer als jenes Kleid.',
+        'Dieser Rock ist teurer als jenes Kleid',
+      ],
       answerMode: 'normalized',
       placeholder: 'Dieser Rock ist ...',
       maxLength: 60,
-      explanation: 'teuer drops its e before -er (teurer), and the comparison of unequal things uses als: Dieser Rock ist teurer als jenes Kleid.',
+      explanation:
+        'teuer drops its e before -er (teurer), and the comparison of unequal things uses als: Dieser Rock ist teurer als jenes Kleid.',
     },
     {
       id: 'ch42-ex-28',
@@ -693,13 +733,18 @@ export const chapter042: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['sentence-formation', 'equality', 'so-wie'],
-      instruction: 'Write a complete sentence expressing equality with so ... wie, using the cue. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Write a complete sentence expressing equality with so ... wie, using the cue. Capitalisation is checked; no full stop is required.',
       prompt: 'der Kaffee – heiß – der Tee (equal)',
-      acceptedAnswers: ['Der Kaffee ist so heiß wie der Tee.', 'Der Kaffee ist so heiß wie der Tee'],
+      acceptedAnswers: [
+        'Der Kaffee ist so heiß wie der Tee.',
+        'Der Kaffee ist so heiß wie der Tee',
+      ],
       answerMode: 'normalized',
       placeholder: 'Der Kaffee ist ...',
       maxLength: 60,
-      explanation: 'Equality is expressed with the plain adjective heiß framed by so ... wie: Der Kaffee ist so heiß wie der Tee.',
+      explanation:
+        'Equality is expressed with the plain adjective heiß framed by so ... wie: Der Kaffee ist so heiß wie der Tee.',
     },
     {
       id: 'ch42-ex-29',
@@ -717,7 +762,8 @@ export const chapter042: ChapterDefinition = {
         { id: 'd', text: 'mehr lang' },
       ],
       correctOptionId: 'a',
-      explanation: 'lang is a short adjective with the stem vowel a and takes an umlaut in the comparative: lang -> länger.',
+      explanation:
+        'lang is a short adjective with the stem vowel a and takes an umlaut in the comparative: lang -> länger.',
     },
     {
       id: 'ch42-ex-30',
@@ -746,7 +792,8 @@ export const chapter042: ChapterDefinition = {
       templateParts: ['Der Winter ist ', ' als der Herbst.'],
       slots: [{ id: 'ch42-ex-31-s1', correctWord: 'kälter' }],
       wordBank: ['kälter', 'kalt', 'wärmer', 'länger'],
-      explanation: 'kalt is a short adjective with the stem vowel a and takes an umlaut in the comparative: kalt -> kälter.',
+      explanation:
+        'kalt is a short adjective with the stem vowel a and takes an umlaut in the comparative: kalt -> kälter.',
     },
     {
       id: 'ch42-ex-32',
@@ -764,7 +811,8 @@ export const chapter042: ChapterDefinition = {
         { id: 'ch42-ex-32-p4', left: 'hoch', right: 'höher' },
         { id: 'ch42-ex-32-p5', left: 'nah', right: 'näher' },
       ],
-      explanation: 'These five comparatives are irregular and must be memorized as fixed pairs: gut/besser, viel/mehr, gern/lieber, hoch/höher, nah/näher.',
+      explanation:
+        'These five comparatives are irregular and must be memorized as fixed pairs: gut/besser, viel/mehr, gern/lieber, hoch/höher, nah/näher.',
     },
     {
       id: 'ch42-ex-33',
@@ -782,7 +830,8 @@ export const chapter042: ChapterDefinition = {
         { id: 'ch42-ex-33-s4', text: 'als' },
         { id: 'ch42-ex-33-s5', text: 'München.' },
       ],
-      explanation: 'The comparative (größer) comes right after the verb, and als introduces the point of comparison: Berlin ist größer als München.',
+      explanation:
+        'The comparative (größer) comes right after the verb, and als introduces the point of comparison: Berlin ist größer als München.',
     },
     {
       id: 'ch42-ex-34',
@@ -800,7 +849,8 @@ export const chapter042: ChapterDefinition = {
         { id: 'd', text: 'mehr klug' },
       ],
       correctOptionId: 'a',
-      explanation: 'klug is a short adjective with the stem vowel u and takes an umlaut in the comparative: klug -> klüger.',
+      explanation:
+        'klug is a short adjective with the stem vowel u and takes an umlaut in the comparative: klug -> klüger.',
     },
     {
       id: 'ch42-ex-35',
@@ -847,7 +897,8 @@ export const chapter042: ChapterDefinition = {
         { id: 'ch42-ex-37-p4', left: 'kalt', right: 'kälter' },
         { id: 'ch42-ex-37-p5', left: 'warm', right: 'wärmer' },
       ],
-      explanation: 'All five are short, one-syllable adjectives with a, o, or u as the stem vowel, so all take an umlaut in the comparative.',
+      explanation:
+        'All five are short, one-syllable adjectives with a, o, or u as the stem vowel, so all take an umlaut in the comparative.',
     },
     {
       id: 'ch42-ex-38',
@@ -866,7 +917,8 @@ export const chapter042: ChapterDefinition = {
         { id: 'ch42-ex-38-s5', text: 'als' },
         { id: 'ch42-ex-38-s6', text: 'deins.' },
       ],
-      explanation: 'The verb comes second, followed by the comparative schneller, then als introduces the second item: Mein Auto ist schneller als deins.',
+      explanation:
+        'The verb comes second, followed by the comparative schneller, then als introduces the second item: Mein Auto ist schneller als deins.',
     },
     {
       id: 'ch42-ex-39',
@@ -931,7 +983,8 @@ export const chapter042: ChapterDefinition = {
         { id: 'ch42-ex-42-p4', left: 'interessant', right: 'interessanter' },
         { id: 'ch42-ex-42-p5', left: 'modern', right: 'moderner' },
       ],
-      explanation: 'All five are regular comparatives: simply add -er, with no umlaut and no separate word for "more".',
+      explanation:
+        'All five are regular comparatives: simply add -er, with no umlaut and no separate word for "more".',
     },
     {
       id: 'ch42-ex-43',
@@ -940,7 +993,8 @@ export const chapter042: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'production',
       grammarFocus: ['equality', 'so-wie', 'word-order'],
-      instruction: 'Put the segments in the correct order to form the equality comparison.',
+      instruction:
+        'Put the segments in the correct order to form the equality comparison.',
       prompt: 'Build the sentence: My car is as fast as yours.',
       segments: [
         { id: 'ch42-ex-43-s1', text: 'Mein' },
@@ -951,7 +1005,8 @@ export const chapter042: ChapterDefinition = {
         { id: 'ch42-ex-43-s6', text: 'wie' },
         { id: 'ch42-ex-43-s7', text: 'deins.' },
       ],
-      explanation: 'Equality uses the plain adjective schnell framed by so ... wie: Mein Auto ist so schnell wie deins.',
+      explanation:
+        'Equality uses the plain adjective schnell framed by so ... wie: Mein Auto ist so schnell wie deins.',
     },
     {
       id: 'ch42-ex-44',
@@ -969,7 +1024,8 @@ export const chapter042: ChapterDefinition = {
         { id: 'd', text: 'mehr ruhig' },
       ],
       correctOptionId: 'a',
-      explanation: 'ruhig is regular and two-syllable, so it takes no umlaut: ruhig -> ruhiger.',
+      explanation:
+        'ruhig is regular and two-syllable, so it takes no umlaut: ruhig -> ruhiger.',
     },
     {
       id: 'ch42-ex-45',
@@ -998,7 +1054,8 @@ export const chapter042: ChapterDefinition = {
       templateParts: ['Der Zug ist nicht so schnell ', ' das Flugzeug.'],
       slots: [{ id: 'ch42-ex-46-s1', correctWord: 'wie' }],
       wordBank: ['wie', 'als', 'so', 'dass'],
-      explanation: 'nicht so ... wie negates an equality comparison and uses wie, never als, after the plain adjective.',
+      explanation:
+        'nicht so ... wie negates an equality comparison and uses wie, never als, after the plain adjective.',
     },
     {
       id: 'ch42-ex-47',
@@ -1016,7 +1073,8 @@ export const chapter042: ChapterDefinition = {
         { id: 'ch42-ex-47-p4', left: 'dumm', right: 'dümmer' },
         { id: 'ch42-ex-47-p5', left: 'scharf', right: 'schärfer' },
       ],
-      explanation: 'neu is regular (no umlaut); arm, gesund, dumm, and scharf are short stems with a or u and take an umlaut in the comparative.',
+      explanation:
+        'neu is regular (no umlaut); arm, gesund, dumm, and scharf are short stems with a or u and take an umlaut in the comparative.',
     },
     {
       id: 'ch42-ex-48',
@@ -1036,7 +1094,8 @@ export const chapter042: ChapterDefinition = {
         { id: 'ch42-ex-48-s6', text: 'die' },
         { id: 'ch42-ex-48-s7', text: 'Hügel.' },
       ],
-      explanation: 'hoch has the irregular comparative höher; als introduces the second item being compared: Die Berge sind höher als die Hügel.',
+      explanation:
+        'hoch has the irregular comparative höher; als introduces the second item being compared: Die Berge sind höher als die Hügel.',
     },
     {
       id: 'ch42-ex-49',
@@ -1069,7 +1128,8 @@ export const chapter042: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'ärmer',
       maxLength: 20,
-      explanation: 'arm is a short adjective with the stem vowel a and takes an umlaut in the comparative: arm -> ärmer.',
+      explanation:
+        'arm is a short adjective with the stem vowel a and takes an umlaut in the comparative: arm -> ärmer.',
     },
     {
       id: 'ch42-ex-51',
@@ -1083,7 +1143,8 @@ export const chapter042: ChapterDefinition = {
       templateParts: ['Diese Tasche ist ', ' als die andere.'],
       slots: [{ id: 'ch42-ex-51-s1', correctWord: 'teurer' }],
       wordBank: ['teurer', 'teuer', 'teuerer', 'billiger'],
-      explanation: 'teuer drops the e of -er before adding the comparative -er: teuer -> teurer, not "teuerer".',
+      explanation:
+        'teuer drops the e of -er before adding the comparative -er: teuer -> teurer, not "teuerer".',
     },
     {
       id: 'ch42-ex-52',
@@ -1101,7 +1162,8 @@ export const chapter042: ChapterDefinition = {
         { id: 'ch42-ex-52-p4', left: 'nah', right: 'näher' },
         { id: 'ch42-ex-52-p5', left: 'gut', right: 'besser' },
       ],
-      explanation: 'dunkel and teuer follow the -el/-er spelling rule (dropping the e); hoch, nah, and gut are irregular comparatives.',
+      explanation:
+        'dunkel and teuer follow the -el/-er spelling rule (dropping the e); hoch, nah, and gut are irregular comparatives.',
     },
     {
       id: 'ch42-ex-53',
@@ -1122,7 +1184,8 @@ export const chapter042: ChapterDefinition = {
         { id: 'ch42-ex-53-s7', text: 'im' },
         { id: 'ch42-ex-53-s8', text: 'Winter.' },
       ],
-      explanation: 'A fronted time expression (Im Sommer) sends the verb to second position, then the comparative wärmer and als follow: Im Sommer ist es wärmer als im Winter.',
+      explanation:
+        'A fronted time expression (Im Sommer) sends the verb to second position, then the comparative wärmer and als follow: Im Sommer ist es wärmer als im Winter.',
     },
     {
       id: 'ch42-ex-54',
@@ -1169,7 +1232,8 @@ export const chapter042: ChapterDefinition = {
       templateParts: ['Sie trinkt ', ' Tee als Kaffee.'],
       slots: [{ id: 'ch42-ex-56-s1', correctWord: 'lieber' }],
       wordBank: ['lieber', 'gerner', 'mehr', 'besser'],
-      explanation: 'gern is irregular: gern -> lieber, used here to express a preference.',
+      explanation:
+        'gern is irregular: gern -> lieber, used here to express a preference.',
     },
     {
       id: 'ch42-ex-57',
@@ -1187,7 +1251,8 @@ export const chapter042: ChapterDefinition = {
         { id: 'ch42-ex-57-p4', left: 'dumm', right: 'dümmer' },
         { id: 'ch42-ex-57-p5', left: 'arm', right: 'ärmer' },
       ],
-      explanation: 'All five are short adjectives with a or u as the stem vowel and take an umlaut in the comparative.',
+      explanation:
+        'All five are short adjectives with a or u as the stem vowel and take an umlaut in the comparative.',
     },
     {
       id: 'ch42-ex-58',
@@ -1207,7 +1272,8 @@ export const chapter042: ChapterDefinition = {
         { id: 'ch42-ex-58-s6', text: 'jenes' },
         { id: 'ch42-ex-58-s7', text: 'Kleid.' },
       ],
-      explanation: 'teuer drops its e before -er (teurer), and als introduces the second item: Dieser Rock ist teurer als jenes Kleid.',
+      explanation:
+        'teuer drops its e before -er (teurer), and als introduces the second item: Dieser Rock ist teurer als jenes Kleid.',
     },
     {
       id: 'ch42-ex-59',

@@ -99,14 +99,24 @@ export const chapter067: ChapterDefinition = {
         rows: [
           ['stehen', 'stellen', 'to stand / be standing — to put something upright'],
           ['liegen', 'legen', 'to lie / be lying (flat) — to lay something down'],
-          ['sitzen', 'setzen (sich setzen)', 'to sit / be seated — to seat someone, or to sit oneself down'],
+          [
+            'sitzen',
+            'setzen (sich setzen)',
+            'to sit / be seated — to seat someone, or to sit oneself down',
+          ],
         ],
         note: 'Learn each pair together: the left verb describes an existing, static position (intransitive, dative with two-way prepositions); the right verb describes the action of creating that position (transitive, accusative with two-way prepositions).',
       },
       {
         id: 'ch67-table-02',
         title: 'Principal parts: strong position verbs vs. weak placement verbs',
-        columns: ['Infinitive', 'Präsens (er/sie/es)', 'Präteritum (er/sie/es)', 'Perfekt (er/sie/es)', 'Verb type'],
+        columns: [
+          'Infinitive',
+          'Präsens (er/sie/es)',
+          'Präteritum (er/sie/es)',
+          'Perfekt (er/sie/es)',
+          'Verb type',
+        ],
         rows: [
           ['stehen', 'steht', 'stand', 'hat gestanden', 'strong (irregular)'],
           ['liegen', 'liegt', 'lag', 'hat gelegen', 'strong (irregular)'],
@@ -120,7 +130,11 @@ export const chapter067: ChapterDefinition = {
       {
         id: 'ch67-table-03',
         title: 'Position (wo? + dative) vs. direction (wohin? + accusative)',
-        columns: ['Verb pair', 'Position — wo? (dative)', 'Direction — wohin? (accusative)'],
+        columns: [
+          'Verb pair',
+          'Position — wo? (dative)',
+          'Direction — wohin? (accusative)',
+        ],
         columnCases: [null, 'dative', 'accusative'],
         rows: [
           [
@@ -162,90 +176,105 @@ export const chapter067: ChapterDefinition = {
         german: 'Der Schrank steht in der Ecke.',
         english: 'The wardrobe stands in the corner.',
         highlight: ['steht', 'der Ecke'],
-        explanation: 'stehen describes the wardrobe\'s static position (wo?), so in takes the dative der Ecke.',
+        explanation:
+          "stehen describes the wardrobe's static position (wo?), so in takes the dative der Ecke.",
       },
       {
         german: 'Ich stelle den Schrank in die Ecke.',
         english: 'I put the wardrobe in the corner.',
         highlight: ['stelle', 'die Ecke'],
-        explanation: 'stellen describes the action of moving the wardrobe into place (wohin?), so in takes the accusative die Ecke.',
+        explanation:
+          'stellen describes the action of moving the wardrobe into place (wohin?), so in takes the accusative die Ecke.',
       },
       {
         german: 'Das Buch liegt auf dem Tisch.',
         english: 'The book is lying on the table.',
         highlight: ['liegt', 'dem Tisch'],
-        explanation: 'liegen is the static position verb for flat objects, so auf takes the dative dem Tisch.',
+        explanation:
+          'liegen is the static position verb for flat objects, so auf takes the dative dem Tisch.',
       },
       {
         german: 'Ich lege das Buch auf den Tisch.',
         english: 'I am laying the book on the table.',
         highlight: ['lege', 'den Tisch'],
-        explanation: 'legen is the transitive placement verb, so auf takes the accusative den Tisch.',
+        explanation:
+          'legen is the transitive placement verb, so auf takes the accusative den Tisch.',
       },
       {
         german: 'Die Kinder sitzen auf dem Sofa.',
         english: 'The children are sitting on the sofa.',
         highlight: ['sitzen', 'dem Sofa'],
-        explanation: 'sitzen describes people already seated (wo?), so auf takes the dative dem Sofa.',
+        explanation:
+          'sitzen describes people already seated (wo?), so auf takes the dative dem Sofa.',
       },
       {
         german: 'Die Mutter setzt das Kind auf den Stuhl.',
         english: 'The mother puts the child on the chair.',
         highlight: ['setzt', 'den Stuhl'],
-        explanation: 'setzen is the transitive counterpart of sitzen, so auf takes the accusative den Stuhl.',
+        explanation:
+          'setzen is the transitive counterpart of sitzen, so auf takes the accusative den Stuhl.',
       },
       {
         german: 'Setz dich bitte auf den Stuhl!',
         english: 'Please sit down on the chair!',
         highlight: ['Setz dich'],
-        explanation: 'sich setzen is the reflexive form used when the subject seats itself; it still takes the accusative den Stuhl because it describes movement into position.',
+        explanation:
+          'sich setzen is the reflexive form used when the subject seats itself; it still takes the accusative den Stuhl because it describes movement into position.',
       },
       {
         german: 'Die Lampe hat lange auf dem Schreibtisch gestanden.',
         english: 'The lamp stood/has stood on the desk for a long time.',
         highlight: ['hat', 'gestanden'],
-        explanation: 'stehen forms its perfect tense with haben, even though it describes a static state, and its participle is the strong form gestanden.',
+        explanation:
+          'stehen forms its perfect tense with haben, even though it describes a static state, and its participle is the strong form gestanden.',
       },
       {
         german: 'Ich habe das Kissen auf das Bett gelegt.',
         english: 'I put/laid the pillow on the bed.',
         highlight: ['habe', 'gelegt'],
-        explanation: 'legen is weak, so its participle is the regular gelegt, and — like all six verbs in this chapter — it also uses haben.',
+        explanation:
+          'legen is weak, so its participle is the regular gelegt, and — like all six verbs in this chapter — it also uses haben.',
       },
       {
         german: 'Er hat sich auf das Sofa gesetzt.',
         english: 'He sat down on the sofa.',
         highlight: ['hat sich', 'gesetzt'],
-        explanation: 'sich setzen forms the perfect with haben and the weak participle gesetzt.',
+        explanation:
+          'sich setzen forms the perfect with haben and the weak participle gesetzt.',
       },
       {
         german: 'Der Teppich lag früher im Wohnzimmer.',
         english: 'The carpet used to lie in the living room.',
         highlight: ['lag'],
-        explanation: 'lag is the strong simple-past form of liegen; im is the dative contraction of in + dem.',
+        explanation:
+          'lag is the strong simple-past form of liegen; im is the dative contraction of in + dem.',
       },
       {
         german: 'Ich legte den Teppich ins Wohnzimmer.',
         english: 'I put the carpet in the living room.',
         highlight: ['legte', 'ins'],
-        explanation: 'legte is the weak simple-past form of legen; ins is the accusative contraction of in + das.',
+        explanation:
+          'legte is the weak simple-past form of legen; ins is the accusative contraction of in + das.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ich stehe die Lampe auf den Tisch.',
         correct: 'Ich stelle die Lampe auf den Tisch.',
-        explanation: 'stehen is intransitive and can never take a direct object; to describe putting something somewhere, use the transitive verb stellen.',
+        explanation:
+          'stehen is intransitive and can never take a direct object; to describe putting something somewhere, use the transitive verb stellen.',
       },
       {
         incorrect: 'Das Buch steht auf dem Tisch.',
         correct: 'Das Buch liegt auf dem Tisch.',
-        explanation: 'A book lies flat, so it uses liegen, not stehen; stehen is reserved for objects resting upright on a base.',
+        explanation:
+          'A book lies flat, so it uses liegen, not stehen; stehen is reserved for objects resting upright on a base.',
       },
       {
         incorrect: 'Ich lege das Buch auf dem Tisch.',
         correct: 'Ich lege das Buch auf den Tisch.',
-        explanation: 'legen describes a destination (wohin?), so auf must take the accusative den Tisch, not the dative dem Tisch.',
+        explanation:
+          'legen describes a destination (wohin?), so auf must take the accusative den Tisch, not the dative dem Tisch.',
       },
       {
         incorrect: 'Der Stuhl liegt am Fenster.',
@@ -255,12 +284,14 @@ export const chapter067: ChapterDefinition = {
       {
         incorrect: 'Die Lampe ist auf dem Tisch gestanden.',
         correct: 'Die Lampe hat auf dem Tisch gestanden.',
-        explanation: 'stehen — like liegen and sitzen — forms its perfect tense with haben, not sein, even though it describes a state rather than a motion.',
+        explanation:
+          'stehen — like liegen and sitzen — forms its perfect tense with haben, not sein, even though it describes a state rather than a motion.',
       },
       {
         incorrect: 'Setz dich auf dem Stuhl!',
         correct: 'Setz dich auf den Stuhl!',
-        explanation: 'sich setzen describes movement into a seated position (wohin?), so auf must take the accusative den Stuhl, not the dative.',
+        explanation:
+          'sich setzen describes movement into a seated position (wohin?), so auf must take the accusative den Stuhl, not the dative.',
       },
     ],
     remember: [
@@ -295,7 +326,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'sitzt' },
       ],
       correctOptionId: 'a',
-      explanation: 'stehen describes an upright object simply being in place (wo?); stellt is the transitive placement verb, and liegt/sitzt do not fit an upright lamp.',
+      explanation:
+        'stehen describes an upright object simply being in place (wo?); stellt is the transitive placement verb, and liegt/sitzt do not fit an upright lamp.',
     },
     {
       id: 'ch67-ex-02',
@@ -313,7 +345,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'setze' },
       ],
       correctOptionId: 'a',
-      explanation: 'stellen is the transitive placement verb for upright objects (wohin?); stehen is intransitive and cannot take a direct object like die Lampe.',
+      explanation:
+        'stellen is the transitive placement verb for upright objects (wohin?); stehen is intransitive and cannot take a direct object like die Lampe.',
     },
     {
       id: 'ch67-ex-03',
@@ -331,7 +364,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'sitzt' },
       ],
       correctOptionId: 'a',
-      explanation: 'liegen describes a flat object at rest (wo?); legt is the transitive verb and needs a direct object, which is missing here.',
+      explanation:
+        'liegen describes a flat object at rest (wo?); legt is the transitive verb and needs a direct object, which is missing here.',
     },
     {
       id: 'ch67-ex-04',
@@ -349,7 +383,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'setze' },
       ],
       correctOptionId: 'a',
-      explanation: 'legen is the transitive placement verb for flat objects; liegen is intransitive and cannot take das Buch as a direct object.',
+      explanation:
+        'legen is the transitive placement verb for flat objects; liegen is intransitive and cannot take das Buch as a direct object.',
     },
     {
       id: 'ch67-ex-05',
@@ -367,7 +402,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'stehen' },
       ],
       correctOptionId: 'a',
-      explanation: 'sitzen describes people already seated (wo?); setzen is transitive and would need a direct object.',
+      explanation:
+        'sitzen describes people already seated (wo?); setzen is transitive and would need a direct object.',
     },
     {
       id: 'ch67-ex-06',
@@ -385,7 +421,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'stellt' },
       ],
       correctOptionId: 'a',
-      explanation: 'setzen is the transitive counterpart of sitzen, used when someone places another person into a seated position (wohin?).',
+      explanation:
+        'setzen is the transitive counterpart of sitzen, used when someone places another person into a seated position (wohin?).',
     },
     {
       id: 'ch67-ex-07',
@@ -395,7 +432,8 @@ export const chapter067: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['position-verbs', 'dative', 'stehen'],
       instruction: 'Choose the case that matches the static position verb stehen.',
-      prompt: 'Wo steht der Schrank? — Der Schrank steht in ___ Ecke. (die Ecke, feminine)',
+      prompt:
+        'Wo steht der Schrank? — Der Schrank steht in ___ Ecke. (die Ecke, feminine)',
       options: [
         { id: 'a', text: 'der' },
         { id: 'b', text: 'die' },
@@ -403,7 +441,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'a',
-      explanation: 'stehen answers wo?, so in takes the dative; die Ecke becomes der Ecke in the dative.',
+      explanation:
+        'stehen answers wo?, so in takes the dative; die Ecke becomes der Ecke in the dative.',
     },
     {
       id: 'ch67-ex-08',
@@ -413,7 +452,8 @@ export const chapter067: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['placement-verbs', 'accusative', 'stellen'],
       instruction: 'Choose the case that matches the placement verb stellen.',
-      prompt: 'Wohin stellst du den Schrank? — Ich stelle den Schrank in ___ Ecke. (die Ecke, feminine)',
+      prompt:
+        'Wohin stellst du den Schrank? — Ich stelle den Schrank in ___ Ecke. (die Ecke, feminine)',
       options: [
         { id: 'a', text: 'die' },
         { id: 'b', text: 'der' },
@@ -421,7 +461,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'a',
-      explanation: 'stellen answers wohin?, so in takes the accusative; die Ecke stays die Ecke in the feminine accusative.',
+      explanation:
+        'stellen answers wohin?, so in takes the accusative; die Ecke stays die Ecke in the feminine accusative.',
     },
     {
       id: 'ch67-ex-09',
@@ -439,7 +480,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'a',
-      explanation: 'liegen answers wo?, so auf takes the dative; das Bett becomes dem Bett in the dative.',
+      explanation:
+        'liegen answers wo?, so auf takes the dative; das Bett becomes dem Bett in the dative.',
     },
     {
       id: 'ch67-ex-10',
@@ -457,7 +499,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'den' },
       ],
       correctOptionId: 'a',
-      explanation: 'legen answers wohin?, so auf takes the accusative; das Bett stays das Bett in the neuter accusative.',
+      explanation:
+        'legen answers wohin?, so auf takes the accusative; das Bett stays das Bett in the neuter accusative.',
     },
     {
       id: 'ch67-ex-11',
@@ -475,7 +518,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'legt' },
       ],
       correctOptionId: 'a',
-      explanation: 'A chair rests upright on its legs, so it uses stehen, not liegen, which is reserved for flat objects.',
+      explanation:
+        'A chair rests upright on its legs, so it uses stehen, not liegen, which is reserved for flat objects.',
     },
     {
       id: 'ch67-ex-12',
@@ -493,7 +537,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'stellt' },
       ],
       correctOptionId: 'a',
-      explanation: 'A rug is a flat object at rest, so it uses liegen, not stehen, which is reserved for upright objects.',
+      explanation:
+        'A rug is a flat object at rest, so it uses liegen, not stehen, which is reserved for upright objects.',
     },
     {
       id: 'ch67-ex-13',
@@ -511,7 +556,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'sitzen' },
       ],
       correctOptionId: 'a',
-      explanation: 'stellen describes placing an object somewhere and always needs a direct object; stehen, liegen, and sitzen are intransitive.',
+      explanation:
+        'stellen describes placing an object somewhere and always needs a direct object; stehen, liegen, and sitzen are intransitive.',
     },
     {
       id: 'ch67-ex-14',
@@ -529,7 +575,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'wären' },
       ],
       correctOptionId: 'a',
-      explanation: 'stehen forms its perfect tense with haben, even though it describes a static state rather than a motion.',
+      explanation:
+        'stehen forms its perfect tense with haben, even though it describes a static state rather than a motion.',
     },
     {
       id: 'ch67-ex-15',
@@ -539,7 +586,8 @@ export const chapter067: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['strong-vs-weak-verbs', 'sitzen'],
       instruction: 'Identify the strong (irregular) verb.',
-      prompt: 'Which of these four verbs is strong (irregular) in the simple past, unlike the other three?',
+      prompt:
+        'Which of these four verbs is strong (irregular) in the simple past, unlike the other three?',
       options: [
         { id: 'a', text: 'sitzen (saß)' },
         { id: 'b', text: 'setzen (setzte)' },
@@ -547,7 +595,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'legen (legte)' },
       ],
       correctOptionId: 'a',
-      explanation: 'sitzen is a strong verb (saß, hat gesessen); setzen, stellen, and legen are all weak verbs with the regular -te ending.',
+      explanation:
+        'sitzen is a strong verb (saß, hat gesessen); setzen, stellen, and legen are all weak verbs with the regular -te ending.',
     },
     {
       id: 'ch67-ex-16',
@@ -565,7 +614,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'Das Buch liegt auf den Tisch.' },
       ],
       correctOptionId: 'b',
-      explanation: 'legen is transitive and describes a destination (wohin?), so it needs the accusative den Tisch; option c misuses legen intransitively (should be liegt), and option d wrongly pairs liegt with the accusative instead of the dative.',
+      explanation:
+        'legen is transitive and describes a destination (wohin?), so it needs the accusative den Tisch; option c misuses legen intransitively (should be liegt), and option d wrongly pairs liegt with the accusative instead of the dative.',
     },
     {
       id: 'ch67-ex-17',
@@ -590,7 +640,8 @@ export const chapter067: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['placement-verbs', 'stellen'],
       instruction: 'Write the correct form of stellen. Capitalisation is not checked.',
-      prompt: 'Ergänze das Verb (stellen): Ich ___ den Spiegel an die Wand. (ich, Präsens)',
+      prompt:
+        'Ergänze das Verb (stellen): Ich ___ den Spiegel an die Wand. (ich, Präsens)',
       acceptedAnswers: ['stelle'],
       answerMode: 'caseInsensitive',
       placeholder: 'stelle',
@@ -655,7 +706,8 @@ export const chapter067: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'dich',
       maxLength: 10,
-      explanation: 'sich setzen is reflexive; the du-form accusative reflexive pronoun is dich, and the phrase still takes the accusative den Stuhl because it describes movement into position.',
+      explanation:
+        'sich setzen is reflexive; the du-form accusative reflexive pronoun is dich, and the phrase still takes the accusative den Stuhl because it describes movement into position.',
     },
     {
       id: 'ch67-ex-23',
@@ -670,7 +722,8 @@ export const chapter067: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'der/die',
       maxLength: 10,
-      explanation: 'stehen answers wo?, so an takes the dative; die Wand becomes der Wand in the dative.',
+      explanation:
+        'stehen answers wo?, so an takes the dative; die Wand becomes der Wand in the dative.',
     },
     {
       id: 'ch67-ex-24',
@@ -680,12 +733,14 @@ export const chapter067: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['placement-verbs', 'accusative', 'stellen'],
       instruction: 'Write the correct article. Capitalisation is not checked.',
-      prompt: 'Wohin stellst du die Leiter? Ich stelle die Leiter an ___ Wand. (die Wand)',
+      prompt:
+        'Wohin stellst du die Leiter? Ich stelle die Leiter an ___ Wand. (die Wand)',
       acceptedAnswers: ['die'],
       answerMode: 'caseInsensitive',
       placeholder: 'der/die',
       maxLength: 10,
-      explanation: 'stellen answers wohin?, so an takes the accusative; die Wand stays die Wand in the feminine accusative.',
+      explanation:
+        'stellen answers wohin?, so an takes the accusative; die Wand stays die Wand in the feminine accusative.',
     },
     {
       id: 'ch67-ex-25',
@@ -700,7 +755,8 @@ export const chapter067: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'im Regal',
       maxLength: 20,
-      explanation: 'stehen answers wo?, so in takes the dative; in + dem contracts to im Regal.',
+      explanation:
+        'stehen answers wo?, so in takes the dative; in + dem contracts to im Regal.',
     },
     {
       id: 'ch67-ex-26',
@@ -710,12 +766,14 @@ export const chapter067: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['contraction', 'accusative', 'stellen'],
       instruction: 'Write the correct contracted form. Capitalisation is not checked.',
-      prompt: 'Wohin stellst du die Bücher? Ich stelle die Bücher ___ Regal. (in + das, das Regal)',
+      prompt:
+        'Wohin stellst du die Bücher? Ich stelle die Bücher ___ Regal. (in + das, das Regal)',
       acceptedAnswers: ['ins Regal'],
       answerMode: 'caseInsensitive',
       placeholder: 'ins Regal',
       maxLength: 20,
-      explanation: 'stellen answers wohin?, so in takes the accusative; in + das contracts to ins Regal.',
+      explanation:
+        'stellen answers wohin?, so in takes the accusative; in + das contracts to ins Regal.',
     },
     {
       id: 'ch67-ex-27',
@@ -724,13 +782,15 @@ export const chapter067: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['describing-rooms', 'liegen', 'dative'],
-      instruction: 'Complete the phrase with preposition, article and noun. Capitalisation is not checked.',
+      instruction:
+        'Complete the phrase with preposition, article and noun. Capitalisation is not checked.',
       prompt: 'Wo liegt der Teppich? Der Teppich liegt ___. (auf / der Boden)',
       acceptedAnswers: ['auf dem Boden'],
       answerMode: 'caseInsensitive',
       placeholder: 'auf dem Boden',
       maxLength: 25,
-      explanation: 'liegen answers wo?, so auf takes the dative; der Boden becomes dem Boden in the dative.',
+      explanation:
+        'liegen answers wo?, so auf takes the dative; der Boden becomes dem Boden in the dative.',
     },
     {
       id: 'ch67-ex-28',
@@ -739,13 +799,15 @@ export const chapter067: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['describing-rooms', 'legen', 'accusative'],
-      instruction: 'Complete the phrase with preposition, article and noun. Capitalisation is not checked.',
+      instruction:
+        'Complete the phrase with preposition, article and noun. Capitalisation is not checked.',
       prompt: 'Wohin legst du den Teppich? Ich lege den Teppich ___. (auf / der Boden)',
       acceptedAnswers: ['auf den Boden'],
       answerMode: 'caseInsensitive',
       placeholder: 'auf den Boden',
       maxLength: 25,
-      explanation: 'legen answers wohin?, so auf takes the accusative; der Boden becomes den Boden in the accusative.',
+      explanation:
+        'legen answers wohin?, so auf takes the accusative; der Boden becomes den Boden in the accusative.',
     },
     {
       id: 'ch67-ex-29',
@@ -754,13 +816,15 @@ export const chapter067: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'stellen', 'accusative'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ich stelle die Vase auf dem Tisch.',
       acceptedAnswers: ['Ich stelle die Vase auf den Tisch.'],
       answerMode: 'normalized',
       placeholder: 'Ich stelle die Vase ...',
       maxLength: 50,
-      explanation: 'stellen describes a destination (wohin?), so auf must take the accusative den Tisch, not the dative dem Tisch.',
+      explanation:
+        'stellen describes a destination (wohin?), so auf must take the accusative den Tisch, not the dative dem Tisch.',
     },
     {
       id: 'ch67-ex-30',
@@ -769,13 +833,15 @@ export const chapter067: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'liegen', 'verb-choice'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Das Buch steht auf dem Tisch.',
       acceptedAnswers: ['Das Buch liegt auf dem Tisch.'],
       answerMode: 'normalized',
       placeholder: 'Das Buch ...',
       maxLength: 45,
-      explanation: 'A book lies flat, so it uses liegen, not stehen, which is reserved for objects resting upright on a base.',
+      explanation:
+        'A book lies flat, so it uses liegen, not stehen, which is reserved for objects resting upright on a base.',
     },
     {
       id: 'ch67-ex-31',
@@ -784,13 +850,15 @@ export const chapter067: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'perfekt', 'auxiliary', 'stehen'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Die Lampe ist auf dem Tisch gestanden.',
       acceptedAnswers: ['Die Lampe hat auf dem Tisch gestanden.'],
       answerMode: 'normalized',
       placeholder: 'Die Lampe ...',
       maxLength: 55,
-      explanation: 'stehen forms its perfect tense with haben, not sein, even though it describes a state rather than a motion.',
+      explanation:
+        'stehen forms its perfect tense with haben, not sein, even though it describes a state rather than a motion.',
     },
     {
       id: 'ch67-ex-32',
@@ -799,13 +867,15 @@ export const chapter067: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['sentence-building', 'setzen', 'accusative'],
-      instruction: 'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
       prompt: 'sie – setzen – das Kind – auf – der Stuhl (wohin?, Akkusativ)',
       acceptedAnswers: ['Sie setzt das Kind auf den Stuhl.'],
       answerMode: 'normalized',
       placeholder: 'Sie setzt das Kind auf den Stuhl.',
       maxLength: 50,
-      explanation: 'setzen signals a destination (wohin?), so auf takes the accusative; der Stuhl becomes den Stuhl: Sie setzt das Kind auf den Stuhl.',
+      explanation:
+        'setzen signals a destination (wohin?), so auf takes the accusative; der Stuhl becomes den Stuhl: Sie setzt das Kind auf den Stuhl.',
     },
     {
       id: 'ch67-ex-33',
@@ -821,7 +891,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'ch67-ex33-p2', left: 'liegen', right: 'legen' },
         { id: 'ch67-ex33-p3', left: 'sitzen', right: 'setzen' },
       ],
-      explanation: 'stehen/stellen, liegen/legen, and sitzen/setzen are the three matching position-placement verb pairs in this chapter.',
+      explanation:
+        'stehen/stellen, liegen/legen, and sitzen/setzen are the three matching position-placement verb pairs in this chapter.',
     },
     {
       id: 'ch67-ex-34',
@@ -837,7 +908,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'ch67-ex34-p2', left: 'legen', right: 'liegen' },
         { id: 'ch67-ex34-p3', left: 'setzen', right: 'sitzen' },
       ],
-      explanation: 'Each transitive placement verb has a matching intransitive position verb: stellen/stehen, legen/liegen, setzen/sitzen.',
+      explanation:
+        'Each transitive placement verb has a matching intransitive position verb: stellen/stehen, legen/liegen, setzen/sitzen.',
     },
     {
       id: 'ch67-ex-35',
@@ -854,7 +926,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'ch67-ex35-p3', left: 'sitzt (sitzen)', right: 'saß' },
         { id: 'ch67-ex35-p4', left: 'stellt (stellen)', right: 'stellte' },
       ],
-      explanation: 'The strong position verbs change their stem vowel in the past (stand, lag, saß), while the weak placement verb stellen simply adds -te.',
+      explanation:
+        'The strong position verbs change their stem vowel in the past (stand, lag, saß), while the weak placement verb stellen simply adds -te.',
     },
     {
       id: 'ch67-ex-36',
@@ -871,7 +944,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'ch67-ex36-p3', left: 'sitzen', right: 'gesessen' },
         { id: 'ch67-ex36-p4', left: 'legen', right: 'gelegt' },
       ],
-      explanation: 'The strong position verbs form irregular participles (gestanden, gelegen, gesessen); the weak placement verb legen simply adds ge-…-t.',
+      explanation:
+        'The strong position verbs form irregular participles (gestanden, gelegen, gesessen); the weak placement verb legen simply adds ge-…-t.',
     },
     {
       id: 'ch67-ex-37',
@@ -883,11 +957,24 @@ export const chapter067: ChapterDefinition = {
       instruction: 'Match each German sentence to its English translation.',
       prompt: 'Match the German sentences to their English translations.',
       pairs: [
-        { id: 'ch67-ex37-p1', left: 'Der Schrank steht in der Ecke.', right: 'The wardrobe stands in the corner.' },
-        { id: 'ch67-ex37-p2', left: 'Das Buch liegt auf dem Tisch.', right: 'The book is lying on the table.' },
-        { id: 'ch67-ex37-p3', left: 'Das Kind sitzt auf dem Stuhl.', right: 'The child is sitting on the chair.' },
+        {
+          id: 'ch67-ex37-p1',
+          left: 'Der Schrank steht in der Ecke.',
+          right: 'The wardrobe stands in the corner.',
+        },
+        {
+          id: 'ch67-ex37-p2',
+          left: 'Das Buch liegt auf dem Tisch.',
+          right: 'The book is lying on the table.',
+        },
+        {
+          id: 'ch67-ex37-p3',
+          left: 'Das Kind sitzt auf dem Stuhl.',
+          right: 'The child is sitting on the chair.',
+        },
       ],
-      explanation: 'Each sentence uses a static position verb (steht, liegt, sitzt) with the dative to describe an existing location.',
+      explanation:
+        'Each sentence uses a static position verb (steht, liegt, sitzt) with the dative to describe an existing location.',
     },
     {
       id: 'ch67-ex-38',
@@ -899,11 +986,24 @@ export const chapter067: ChapterDefinition = {
       instruction: 'Match each German sentence to its English translation.',
       prompt: 'Match the German sentences to their English translations.',
       pairs: [
-        { id: 'ch67-ex38-p1', left: 'Ich stelle den Schrank in die Ecke.', right: 'I put the wardrobe in the corner.' },
-        { id: 'ch67-ex38-p2', left: 'Ich lege das Buch auf den Tisch.', right: 'I am laying the book on the table.' },
-        { id: 'ch67-ex38-p3', left: 'Die Mutter setzt das Kind auf den Stuhl.', right: 'The mother puts the child on the chair.' },
+        {
+          id: 'ch67-ex38-p1',
+          left: 'Ich stelle den Schrank in die Ecke.',
+          right: 'I put the wardrobe in the corner.',
+        },
+        {
+          id: 'ch67-ex38-p2',
+          left: 'Ich lege das Buch auf den Tisch.',
+          right: 'I am laying the book on the table.',
+        },
+        {
+          id: 'ch67-ex38-p3',
+          left: 'Die Mutter setzt das Kind auf den Stuhl.',
+          right: 'The mother puts the child on the chair.',
+        },
       ],
-      explanation: 'Each sentence uses a transitive placement verb (stelle, lege, setzt) with the accusative to describe a destination.',
+      explanation:
+        'Each sentence uses a transitive placement verb (stelle, lege, setzt) with the accusative to describe a destination.',
     },
     {
       id: 'ch67-ex-39',
@@ -912,14 +1012,16 @@ export const chapter067: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['verb-choice', 'object-orientation'],
-      instruction: 'Match each object to the position verb that best describes how it rests.',
+      instruction:
+        'Match each object to the position verb that best describes how it rests.',
       prompt: 'Match each object to its natural position verb.',
       pairs: [
         { id: 'ch67-ex39-p1', left: 'die Lampe (upright)', right: 'steht' },
         { id: 'ch67-ex39-p2', left: 'die Decke (flat)', right: 'liegt' },
         { id: 'ch67-ex39-p3', left: 'der Hund (seated)', right: 'sitzt' },
       ],
-      explanation: 'Upright objects use stehen, flat objects use liegen, and people/animals in a seated position use sitzen.',
+      explanation:
+        'Upright objects use stehen, flat objects use liegen, and people/animals in a seated position use sitzen.',
     },
     {
       id: 'ch67-ex-40',
@@ -928,14 +1030,24 @@ export const chapter067: ChapterDefinition = {
       type: 'matching',
       level: 'transfer',
       grammarFocus: ['case-choice', 'wo-wohin', 'two-way-prepositions'],
-      instruction: 'Match each verb type to the question and case it takes with a two-way preposition.',
+      instruction:
+        'Match each verb type to the question and case it takes with a two-way preposition.',
       prompt: 'Match the verb family to its question word and case.',
       pairs: [
         { id: 'ch67-ex40-p1', left: 'stehen, liegen, sitzen', right: 'wo? + Dativ' },
-        { id: 'ch67-ex40-p2', left: 'stellen, legen, setzen', right: 'wohin? + Akkusativ' },
-        { id: 'ch67-ex40-p3', left: 'hängen (intransitiv)', right: 'wo? + Dativ, aber stark (hing, gehangen)' },
+        {
+          id: 'ch67-ex40-p2',
+          left: 'stellen, legen, setzen',
+          right: 'wohin? + Akkusativ',
+        },
+        {
+          id: 'ch67-ex40-p3',
+          left: 'hängen (intransitiv)',
+          right: 'wo? + Dativ, aber stark (hing, gehangen)',
+        },
       ],
-      explanation: 'Static position verbs (including intransitive hängen) answer wo? and take the dative; transitive placement verbs answer wohin? and take the accusative.',
+      explanation:
+        'Static position verbs (including intransitive hängen) answer wo? and take the dative; transitive placement verbs answer wohin? and take the accusative.',
     },
     {
       id: 'ch67-ex-41',
@@ -947,11 +1059,24 @@ export const chapter067: ChapterDefinition = {
       instruction: 'Match each sentence to its correct English translation.',
       prompt: 'Match the German sentences to their English translations.',
       pairs: [
-        { id: 'ch67-ex41-p1', left: 'Ich setze mich auf den Stuhl.', right: 'I sit down on the chair.' },
-        { id: 'ch67-ex41-p2', left: 'Ich sitze auf dem Stuhl.', right: 'I am sitting on the chair.' },
-        { id: 'ch67-ex41-p3', left: 'Ich setze das Kind auf den Stuhl.', right: 'I put the child on the chair.' },
+        {
+          id: 'ch67-ex41-p1',
+          left: 'Ich setze mich auf den Stuhl.',
+          right: 'I sit down on the chair.',
+        },
+        {
+          id: 'ch67-ex41-p2',
+          left: 'Ich sitze auf dem Stuhl.',
+          right: 'I am sitting on the chair.',
+        },
+        {
+          id: 'ch67-ex41-p3',
+          left: 'Ich setze das Kind auf den Stuhl.',
+          right: 'I put the child on the chair.',
+        },
       ],
-      explanation: 'sich setzen describes the subject seating itself, sitzen describes an existing seated state, and setzen + another person describes seating someone else.',
+      explanation:
+        'sich setzen describes the subject seating itself, sitzen describes an existing seated state, and setzen + another person describes seating someone else.',
     },
     {
       id: 'ch67-ex-42',
@@ -968,7 +1093,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'ch67-ex42-p3', left: 'legen', right: 'to lay something down' },
         { id: 'ch67-ex42-p4', left: 'setzen', right: 'to seat someone' },
       ],
-      explanation: 'Each verb has a distinct meaning within its family: static position verbs describe a state, placement verbs describe an action.',
+      explanation:
+        'Each verb has a distinct meaning within its family: static position verbs describe a state, placement verbs describe an action.',
     },
     {
       id: 'ch67-ex-43',
@@ -982,7 +1108,8 @@ export const chapter067: ChapterDefinition = {
       templateParts: ['Der Stuhl steht neben ', ' Tür. (die Tür)'],
       slots: [{ id: 's1', correctWord: 'der' }],
       wordBank: ['der', 'die', 'das', 'den'],
-      explanation: 'stehen answers wo?, so neben takes the dative; die Tür becomes der Tür in the dative.',
+      explanation:
+        'stehen answers wo?, so neben takes the dative; die Tür becomes der Tür in the dative.',
     },
     {
       id: 'ch67-ex-44',
@@ -996,7 +1123,8 @@ export const chapter067: ChapterDefinition = {
       templateParts: ['Ich stelle den Stuhl neben ', ' Tür. (die Tür)'],
       slots: [{ id: 's1', correctWord: 'die' }],
       wordBank: ['die', 'der', 'dem', 'den'],
-      explanation: 'stellen answers wohin?, so neben takes the accusative; die Tür stays die Tür in the feminine accusative.',
+      explanation:
+        'stellen answers wohin?, so neben takes the accusative; die Tür stays die Tür in the feminine accusative.',
     },
     {
       id: 'ch67-ex-45',
@@ -1010,7 +1138,8 @@ export const chapter067: ChapterDefinition = {
       templateParts: ['Der Teppich liegt unter ', ' Tisch. (der Tisch)'],
       slots: [{ id: 's1', correctWord: 'dem' }],
       wordBank: ['dem', 'der', 'das', 'den'],
-      explanation: 'liegen answers wo?, so unter takes the dative; der Tisch becomes dem Tisch in the dative.',
+      explanation:
+        'liegen answers wo?, so unter takes the dative; der Tisch becomes dem Tisch in the dative.',
     },
     {
       id: 'ch67-ex-46',
@@ -1024,7 +1153,8 @@ export const chapter067: ChapterDefinition = {
       templateParts: ['Ich lege den Teppich unter ', ' Tisch. (der Tisch)'],
       slots: [{ id: 's1', correctWord: 'den' }],
       wordBank: ['den', 'dem', 'der', 'das'],
-      explanation: 'legen answers wohin?, so unter takes the accusative; der Tisch becomes den Tisch in the accusative.',
+      explanation:
+        'legen answers wohin?, so unter takes the accusative; der Tisch becomes den Tisch in the accusative.',
     },
     {
       id: 'ch67-ex-47',
@@ -1038,7 +1168,8 @@ export const chapter067: ChapterDefinition = {
       templateParts: ['Das Bild ', ' an der Wand. (wo?)'],
       slots: [{ id: 's1', correctWord: 'hängt' }],
       wordBank: ['hängt', 'stellt', 'legt', 'setzt'],
-      explanation: 'hängen is used for objects mounted on a surface; here the picture is already in place (wo?), so the intransitive hängt fits.',
+      explanation:
+        'hängen is used for objects mounted on a surface; here the picture is already in place (wo?), so the intransitive hängt fits.',
     },
     {
       id: 'ch67-ex-48',
@@ -1052,7 +1183,8 @@ export const chapter067: ChapterDefinition = {
       templateParts: ['Ich ', ' mich auf den Stuhl.'],
       slots: [{ id: 's1', correctWord: 'setze' }],
       wordBank: ['setze', 'sitze', 'stelle', 'lege'],
-      explanation: 'sich setzen describes the subject seating itself; the ich-form is setze, used with the reflexive pronoun mich.',
+      explanation:
+        'sich setzen describes the subject seating itself; the ich-form is setze, used with the reflexive pronoun mich.',
     },
     {
       id: 'ch67-ex-49',
@@ -1066,7 +1198,8 @@ export const chapter067: ChapterDefinition = {
       templateParts: ['Der Hund sitzt unter ', ' Tisch. (der Tisch)'],
       slots: [{ id: 's1', correctWord: 'dem' }],
       wordBank: ['dem', 'den', 'der', 'das'],
-      explanation: 'sitzen answers wo?, so unter takes the dative; der Tisch becomes dem Tisch in the dative.',
+      explanation:
+        'sitzen answers wo?, so unter takes the dative; der Tisch becomes dem Tisch in the dative.',
     },
     {
       id: 'ch67-ex-50',
@@ -1080,7 +1213,8 @@ export const chapter067: ChapterDefinition = {
       templateParts: ['Die Mutter setzt den Hund unter ', ' Tisch. (der Tisch)'],
       slots: [{ id: 's1', correctWord: 'den' }],
       wordBank: ['den', 'dem', 'der', 'das'],
-      explanation: 'setzen answers wohin?, so unter takes the accusative; der Tisch becomes den Tisch in the accusative.',
+      explanation:
+        'setzen answers wohin?, so unter takes the accusative; der Tisch becomes den Tisch in the accusative.',
     },
     {
       id: 'ch67-ex-51',
@@ -1094,7 +1228,8 @@ export const chapter067: ChapterDefinition = {
       templateParts: ['Die Vase steht auf ', ' Regal. (das Regal)'],
       slots: [{ id: 's1', correctWord: 'dem' }],
       wordBank: ['dem', 'das', 'der', 'den'],
-      explanation: 'stehen answers wo?, so auf takes the dative; das Regal becomes dem Regal in the dative.',
+      explanation:
+        'stehen answers wo?, so auf takes the dative; das Regal becomes dem Regal in the dative.',
     },
     {
       id: 'ch67-ex-52',
@@ -1108,7 +1243,8 @@ export const chapter067: ChapterDefinition = {
       templateParts: ['Ich stelle die Vase auf ', ' Regal. (das Regal)'],
       slots: [{ id: 's1', correctWord: 'das' }],
       wordBank: ['das', 'dem', 'der', 'den'],
-      explanation: 'stellen answers wohin?, so auf takes the accusative; das Regal stays das Regal in the neuter accusative.',
+      explanation:
+        'stellen answers wohin?, so auf takes the accusative; das Regal stays das Regal in the neuter accusative.',
     },
     {
       id: 'ch67-ex-53',
@@ -1122,7 +1258,8 @@ export const chapter067: ChapterDefinition = {
       tokens: ['Ich', 'stehe', 'die', 'Lampe', 'auf', 'den', 'Tisch.'],
       errorTokenIndex: 1,
       correction: 'stelle',
-      explanation: 'stehen is intransitive and can never take a direct object; to describe putting something somewhere, use the transitive verb stellen.',
+      explanation:
+        'stehen is intransitive and can never take a direct object; to describe putting something somewhere, use the transitive verb stellen.',
     },
     {
       id: 'ch67-ex-54',
@@ -1136,7 +1273,8 @@ export const chapter067: ChapterDefinition = {
       tokens: ['Das', 'Buch', 'steht', 'auf', 'dem', 'Tisch.'],
       errorTokenIndex: 2,
       correction: 'liegt',
-      explanation: 'A book lies flat, so it uses liegen, not stehen, which is reserved for objects resting upright on a base.',
+      explanation:
+        'A book lies flat, so it uses liegen, not stehen, which is reserved for objects resting upright on a base.',
     },
     {
       id: 'ch67-ex-55',
@@ -1150,7 +1288,8 @@ export const chapter067: ChapterDefinition = {
       tokens: ['Ich', 'lege', 'das', 'Buch', 'auf', 'dem', 'Tisch.'],
       errorTokenIndex: 5,
       correction: 'den',
-      explanation: 'legen describes a destination (wohin?), so auf must take the accusative den Tisch, not the dative dem Tisch.',
+      explanation:
+        'legen describes a destination (wohin?), so auf must take the accusative den Tisch, not the dative dem Tisch.',
     },
     {
       id: 'ch67-ex-56',
@@ -1164,7 +1303,8 @@ export const chapter067: ChapterDefinition = {
       tokens: ['Der', 'Stuhl', 'liegt', 'am', 'Fenster.'],
       errorTokenIndex: 2,
       correction: 'steht',
-      explanation: 'A chair rests upright on its legs, so it uses stehen, not liegen, which is reserved for flat objects.',
+      explanation:
+        'A chair rests upright on its legs, so it uses stehen, not liegen, which is reserved for flat objects.',
     },
     {
       id: 'ch67-ex-57',
@@ -1178,7 +1318,8 @@ export const chapter067: ChapterDefinition = {
       tokens: ['Die', 'Lampe', 'ist', 'auf', 'dem', 'Tisch', 'gestanden.'],
       errorTokenIndex: 2,
       correction: 'hat',
-      explanation: 'stehen — like liegen and sitzen — forms its perfect tense with haben, not sein, even though it describes a state rather than a motion.',
+      explanation:
+        'stehen — like liegen and sitzen — forms its perfect tense with haben, not sein, even though it describes a state rather than a motion.',
     },
     {
       id: 'ch67-ex-58',
@@ -1192,7 +1333,8 @@ export const chapter067: ChapterDefinition = {
       tokens: ['Setz', 'dich', 'auf', 'dem', 'Stuhl!'],
       errorTokenIndex: 3,
       correction: 'den',
-      explanation: 'sich setzen describes movement into a seated position (wohin?), so auf must take the accusative den Stuhl, not the dative.',
+      explanation:
+        'sich setzen describes movement into a seated position (wohin?), so auf must take the accusative den Stuhl, not the dative.',
     },
     {
       id: 'ch67-ex-59',
@@ -1206,7 +1348,8 @@ export const chapter067: ChapterDefinition = {
       tokens: ['Die', 'Mutter', 'sitzt', 'das', 'Kind', 'auf', 'den', 'Stuhl.'],
       errorTokenIndex: 2,
       correction: 'setzt',
-      explanation: 'sitzen is intransitive and cannot take a direct object like das Kind; the transitive counterpart setzen is needed here.',
+      explanation:
+        'sitzen is intransitive and cannot take a direct object like das Kind; the transitive counterpart setzen is needed here.',
     },
     {
       id: 'ch67-ex-60',
@@ -1220,7 +1363,8 @@ export const chapter067: ChapterDefinition = {
       tokens: ['Der', 'Teppich', 'liegte', 'früher', 'im', 'Wohnzimmer.'],
       errorTokenIndex: 2,
       correction: 'lag',
-      explanation: 'liegen is a strong verb; its simple-past form is the irregular lag, not the weak-pattern liegte.',
+      explanation:
+        'liegen is a strong verb; its simple-past form is the irregular lag, not the weak-pattern liegte.',
     },
     {
       id: 'ch67-ex-61',
@@ -1239,7 +1383,8 @@ export const chapter067: ChapterDefinition = {
         { id: 's5', text: 'der' },
         { id: 's6', text: 'Ecke.' },
       ],
-      explanation: 'stehen answers wo?, so in takes the dative der Ecke: Der Schrank steht in der Ecke.',
+      explanation:
+        'stehen answers wo?, so in takes the dative der Ecke: Der Schrank steht in der Ecke.',
     },
     {
       id: 'ch67-ex-62',
@@ -1259,7 +1404,8 @@ export const chapter067: ChapterDefinition = {
         { id: 's6', text: 'die' },
         { id: 's7', text: 'Ecke.' },
       ],
-      explanation: 'stellen answers wohin?, so in takes the accusative die Ecke: Ich stelle den Schrank in die Ecke.',
+      explanation:
+        'stellen answers wohin?, so in takes the accusative die Ecke: Ich stelle den Schrank in die Ecke.',
     },
     {
       id: 'ch67-ex-63',
@@ -1278,7 +1424,8 @@ export const chapter067: ChapterDefinition = {
         { id: 's5', text: 'dem' },
         { id: 's6', text: 'Sofa.' },
       ],
-      explanation: 'liegen answers wo?, so auf takes the dative dem Sofa: Das Buch liegt auf dem Sofa.',
+      explanation:
+        'liegen answers wo?, so auf takes the dative dem Sofa: Das Buch liegt auf dem Sofa.',
     },
     {
       id: 'ch67-ex-64',
@@ -1298,7 +1445,8 @@ export const chapter067: ChapterDefinition = {
         { id: 's6', text: 'das' },
         { id: 's7', text: 'Sofa.' },
       ],
-      explanation: 'legen answers wohin?, so auf takes the accusative das Sofa: Ich lege das Buch auf das Sofa.',
+      explanation:
+        'legen answers wohin?, so auf takes the accusative das Sofa: Ich lege das Buch auf das Sofa.',
     },
     {
       id: 'ch67-ex-65',
@@ -1316,7 +1464,8 @@ export const chapter067: ChapterDefinition = {
         { id: 's4', text: 'dem' },
         { id: 's5', text: 'Stuhl.' },
       ],
-      explanation: 'sitzen answers wo?, so auf takes the dative dem Stuhl: Er sitzt auf dem Stuhl.',
+      explanation:
+        'sitzen answers wo?, so auf takes the dative dem Stuhl: Er sitzt auf dem Stuhl.',
     },
     {
       id: 'ch67-ex-66',
@@ -1335,7 +1484,8 @@ export const chapter067: ChapterDefinition = {
         { id: 's5', text: 'den' },
         { id: 's6', text: 'Stuhl.' },
       ],
-      explanation: 'sich setzen describes the subject moving into a seated position (wohin?), so auf takes the accusative den Stuhl: Er setzt sich auf den Stuhl.',
+      explanation:
+        'sich setzen describes the subject moving into a seated position (wohin?), so auf takes the accusative den Stuhl: Er setzt sich auf den Stuhl.',
     },
     {
       id: 'ch67-ex-67',
@@ -1354,7 +1504,8 @@ export const chapter067: ChapterDefinition = {
         { id: 's5', text: 'der' },
         { id: 's6', text: 'Wand.' },
       ],
-      explanation: 'stehen answers wo?, so an takes the dative der Wand: Das Bild steht an der Wand.',
+      explanation:
+        'stehen answers wo?, so an takes the dative der Wand: Das Bild steht an der Wand.',
     },
     {
       id: 'ch67-ex-68',
@@ -1374,7 +1525,8 @@ export const chapter067: ChapterDefinition = {
         { id: 's6', text: 'die' },
         { id: 's7', text: 'Wand.' },
       ],
-      explanation: 'stellen answers wohin?, so an takes the accusative die Wand: Ich stelle das Bild an die Wand.',
+      explanation:
+        'stellen answers wohin?, so an takes the accusative die Wand: Ich stelle das Bild an die Wand.',
     },
     {
       id: 'ch67-ex-69',
@@ -1392,7 +1544,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'sitzt' },
       ],
       correctOptionId: 'a',
-      explanation: 'hängen describes an object suspended from above, such as a lamp hanging from the ceiling; the other three verbs describe objects resting on a surface.',
+      explanation:
+        'hängen describes an object suspended from above, such as a lamp hanging from the ceiling; the other three verbs describe objects resting on a surface.',
     },
     {
       id: 'ch67-ex-70',
@@ -1410,7 +1563,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'setzt' },
       ],
       correctOptionId: 'a',
-      explanation: 'An animal in a seated position uses sitzen (wo?); setzen would be transitive and needs a direct object.',
+      explanation:
+        'An animal in a seated position uses sitzen (wo?); setzen would be transitive and needs a direct object.',
     },
     {
       id: 'ch67-ex-71',
@@ -1428,7 +1582,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'der' },
       ],
       correctOptionId: 'a',
-      explanation: 'stehen answers wo?, so vor takes the dative; das Haus becomes dem Haus in the dative.',
+      explanation:
+        'stehen answers wo?, so vor takes the dative; das Haus becomes dem Haus in the dative.',
     },
     {
       id: 'ch67-ex-72',
@@ -1446,7 +1601,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'der' },
       ],
       correctOptionId: 'a',
-      explanation: 'stellen answers wohin?, so vor takes the accusative; das Haus stays das Haus in the neuter accusative.',
+      explanation:
+        'stellen answers wohin?, so vor takes the accusative; das Haus stays das Haus in the neuter accusative.',
     },
     {
       id: 'ch67-ex-73',
@@ -1464,7 +1620,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'setze' },
       ],
       correctOptionId: 'a',
-      explanation: 'hängen (weak, transitive: hängte, hat gehängt) is used for hanging something on a wall or hook; it answers wohin? and takes the accusative.',
+      explanation:
+        'hängen (weak, transitive: hängte, hat gehängt) is used for hanging something on a wall or hook; it answers wohin? and takes the accusative.',
     },
     {
       id: 'ch67-ex-74',
@@ -1474,7 +1631,8 @@ export const chapter067: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['transitivity', 'legen', 'direct-object'],
       instruction: 'Identify the intransitive verb.',
-      prompt: 'Which of these four verbs is intransitive and never takes a direct object?',
+      prompt:
+        'Which of these four verbs is intransitive and never takes a direct object?',
       options: [
         { id: 'a', text: 'liegen' },
         { id: 'b', text: 'legen' },
@@ -1482,7 +1640,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'setzen' },
       ],
       correctOptionId: 'a',
-      explanation: 'liegen describes an object simply being in place and never takes a direct object; legen, stellen, and setzen are all transitive.',
+      explanation:
+        'liegen describes an object simply being in place and never takes a direct object; legen, stellen, and setzen are all transitive.',
     },
     {
       id: 'ch67-ex-75',
@@ -1500,7 +1659,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'wären' },
       ],
       correctOptionId: 'a',
-      explanation: 'sitzen forms its perfect tense with haben, like the other two position verbs stehen and liegen.',
+      explanation:
+        'sitzen forms its perfect tense with haben, like the other two position verbs stehen and liegen.',
     },
     {
       id: 'ch67-ex-76',
@@ -1518,7 +1678,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'Das Kind setzt auf den Stuhl.' },
       ],
       correctOptionId: 'b',
-      explanation: 'setzen is transitive and describes a destination (wohin?), so it needs the accusative den Stuhl; option a wrongly uses the dative, option c misuses the intransitive sitzen transitively, and option d drops the required direct object.',
+      explanation:
+        'setzen is transitive and describes a destination (wohin?), so it needs the accusative den Stuhl; option a wrongly uses the dative, option c misuses the intransitive sitzen transitively, and option d drops the required direct object.',
     },
     {
       id: 'ch67-ex-77',
@@ -1528,7 +1689,8 @@ export const chapter067: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['strong-vs-weak-verbs', 'liegen'],
       instruction: 'Identify the weak (regular) verb.',
-      prompt: 'Which of these four verbs is weak (regular) in the simple past, unlike the other three?',
+      prompt:
+        'Which of these four verbs is weak (regular) in the simple past, unlike the other three?',
       options: [
         { id: 'a', text: 'legen (legte)' },
         { id: 'b', text: 'liegen (lag)' },
@@ -1536,7 +1698,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'sitzen (saß)' },
       ],
       correctOptionId: 'a',
-      explanation: 'legen is a weak verb with the regular -te ending; liegen, stehen, and sitzen are all strong verbs with irregular past-tense stems.',
+      explanation:
+        'legen is a weak verb with the regular -te ending; liegen, stehen, and sitzen are all strong verbs with irregular past-tense stems.',
     },
     {
       id: 'ch67-ex-78',
@@ -1554,7 +1717,8 @@ export const chapter067: ChapterDefinition = {
         { id: 'd', text: 'sitzt' },
       ],
       correctOptionId: 'a',
-      explanation: 'hängen (strong, intransitive: hing, hat gehangen) describes an object suspended from a hook or hanger; it answers wo? and takes the dative.',
+      explanation:
+        'hängen (strong, intransitive: hing, hat gehangen) describes an object suspended from a hook or hanger; it answers wo? and takes the dative.',
     },
     {
       id: 'ch67-ex-79',
@@ -1569,7 +1733,8 @@ export const chapter067: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'hängt',
       maxLength: 15,
-      explanation: 'The es-form present tense of the intransitive, strong hängen is hängt.',
+      explanation:
+        'The es-form present tense of the intransitive, strong hängen is hängt.',
     },
     {
       id: 'ch67-ex-80',
@@ -1578,8 +1743,10 @@ export const chapter067: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['haengen', 'placement-verbs', 'accusative'],
-      instruction: 'Write the correct form of hängen (weak, transitive). Capitalisation is not checked.',
-      prompt: 'Ergänze das Verb (hängen, transitiv): Ich ___ das Bild an die Wand. (ich, Präsens)',
+      instruction:
+        'Write the correct form of hängen (weak, transitive). Capitalisation is not checked.',
+      prompt:
+        'Ergänze das Verb (hängen, transitiv): Ich ___ das Bild an die Wand. (ich, Präsens)',
       acceptedAnswers: ['hänge'],
       answerMode: 'caseInsensitive',
       placeholder: 'hänge',
@@ -1594,12 +1761,14 @@ export const chapter067: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['contraction', 'accusative', 'setzen'],
       instruction: 'Write the correct contracted form. Capitalisation is not checked.',
-      prompt: 'Wohin setzt du das Kind? Ich setze das Kind ___ Sofa. (auf + das, das Sofa)',
+      prompt:
+        'Wohin setzt du das Kind? Ich setze das Kind ___ Sofa. (auf + das, das Sofa)',
       acceptedAnswers: ['aufs Sofa'],
       answerMode: 'caseInsensitive',
       placeholder: 'aufs Sofa',
       maxLength: 20,
-      explanation: 'setzen answers wohin?, so auf takes the accusative; auf + das contracts to aufs Sofa.',
+      explanation:
+        'setzen answers wohin?, so auf takes the accusative; auf + das contracts to aufs Sofa.',
     },
     {
       id: 'ch67-ex-82',
@@ -1608,13 +1777,15 @@ export const chapter067: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['describing-rooms', 'sitzen', 'dative'],
-      instruction: 'Complete the phrase with preposition, article and noun. Capitalisation is not checked.',
+      instruction:
+        'Complete the phrase with preposition, article and noun. Capitalisation is not checked.',
       prompt: 'Wo sitzt die Katze? Die Katze sitzt ___. (auf / der Stuhl)',
       acceptedAnswers: ['auf dem Stuhl'],
       answerMode: 'caseInsensitive',
       placeholder: 'auf dem Stuhl',
       maxLength: 25,
-      explanation: 'sitzen answers wo?, so auf takes the dative; der Stuhl becomes dem Stuhl in the dative.',
+      explanation:
+        'sitzen answers wo?, so auf takes the dative; der Stuhl becomes dem Stuhl in the dative.',
     },
     {
       id: 'ch67-ex-83',
@@ -1623,13 +1794,15 @@ export const chapter067: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'verb-choice', 'haengen'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Die Lampe steht an der Decke.',
       acceptedAnswers: ['Die Lampe hängt an der Decke.'],
       answerMode: 'normalized',
       placeholder: 'Die Lampe ...',
       maxLength: 45,
-      explanation: 'An object suspended from above, like a lamp on the ceiling, uses hängen, not stehen, which is reserved for objects resting upright on a base.',
+      explanation:
+        'An object suspended from above, like a lamp on the ceiling, uses hängen, not stehen, which is reserved for objects resting upright on a base.',
     },
     {
       id: 'ch67-ex-84',
@@ -1638,13 +1811,15 @@ export const chapter067: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['sentence-building', 'legen', 'accusative'],
-      instruction: 'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
       prompt: 'er – legen – die Decke – auf – das Bett (wohin?, Akkusativ)',
       acceptedAnswers: ['Er legt die Decke auf das Bett.'],
       answerMode: 'normalized',
       placeholder: 'Er legt die Decke auf das Bett.',
       maxLength: 50,
-      explanation: 'legen signals a destination (wohin?), so auf takes the accusative; das Bett stays das Bett: Er legt die Decke auf das Bett.',
+      explanation:
+        'legen signals a destination (wohin?), so auf takes the accusative; das Bett stays das Bett: Er legt die Decke auf das Bett.',
     },
     {
       id: 'ch67-ex-85',
@@ -1653,13 +1828,15 @@ export const chapter067: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['sentence-building', 'stehen', 'dative'],
-      instruction: 'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
       prompt: 'das Bild – stehen – an – die Wand (wo?, Dativ)',
       acceptedAnswers: ['Das Bild steht an der Wand.'],
       answerMode: 'normalized',
       placeholder: 'Das Bild steht an der Wand.',
       maxLength: 45,
-      explanation: 'stehen signals a static position (wo?), so an takes the dative; die Wand becomes der Wand: Das Bild steht an der Wand.',
+      explanation:
+        'stehen signals a static position (wo?), so an takes the dative; die Wand becomes der Wand: Das Bild steht an der Wand.',
     },
   ],
 };

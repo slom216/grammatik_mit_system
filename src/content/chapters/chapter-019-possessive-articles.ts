@@ -104,7 +104,8 @@ export const chapter019: ChapterDefinition = {
         german: 'Das ist mein Vater.',
         english: 'This is my father.',
         highlight: ['mein'],
-        explanation: 'der Vater is masculine nominative, so mein has no ending, like ein.',
+        explanation:
+          'der Vater is masculine nominative, so mein has no ending, like ein.',
       },
       {
         german: 'Meine Schwester wohnt in Berlin.',
@@ -122,25 +123,29 @@ export const chapter019: ChapterDefinition = {
         german: 'Er sucht seinen Schlüssel.',
         english: 'He is looking for his key.',
         highlight: ['seinen'],
-        explanation: 'der Schlüssel is masculine accusative (object of suchen), so sein takes -en.',
+        explanation:
+          'der Schlüssel is masculine accusative (object of suchen), so sein takes -en.',
       },
       {
         german: 'Das Kind sucht seine Mutter.',
         english: 'The child is looking for its mother.',
         highlight: ['seine'],
-        explanation: 'The owner is das Kind, referred to as es, so the stem is sein-; die Mutter is feminine accusative, so it takes -e.',
+        explanation:
+          'The owner is das Kind, referred to as es, so the stem is sein-; die Mutter is feminine accusative, so it takes -e.',
       },
       {
         german: 'Sie liebt ihren Bruder.',
         english: 'She loves her brother.',
         highlight: ['ihren'],
-        explanation: 'The owner is sie ("she"), so the stem is ihr-; der Bruder is masculine accusative, so it takes -en.',
+        explanation:
+          'The owner is sie ("she"), so the stem is ihr-; der Bruder is masculine accusative, so it takes -en.',
       },
       {
         german: 'Die Familie besucht ihre Großeltern.',
         english: 'The family is visiting their grandparents.',
         highlight: ['ihre'],
-        explanation: 'Here ihr- refers back to die Familie ("they"), not to a single woman; die Großeltern is plural, so it takes -e.',
+        explanation:
+          'Here ihr- refers back to die Familie ("they"), not to a single woman; die Großeltern is plural, so it takes -e.',
       },
       {
         german: 'Wir besuchen unsere Großeltern.',
@@ -152,52 +157,61 @@ export const chapter019: ChapterDefinition = {
         german: 'Habt ihr euren Hund dabei?',
         english: 'Do you (plural) have your dog with you?',
         highlight: ['euren'],
-        explanation: 'der Hund is masculine accusative, so euer takes -en, giving euren, not eueren.',
+        explanation:
+          'der Hund is masculine accusative, so euer takes -en, giving euren, not eueren.',
       },
       {
         german: 'Frau Klein, ist das Ihr Auto?',
         english: 'Mrs. Klein, is that your car?',
         highlight: ['Ihr'],
-        explanation: 'This is a polite question to Frau Klein, so the formal, capitalized Ihr is used; das Auto is neuter nominative, so it has no ending.',
+        explanation:
+          'This is a polite question to Frau Klein, so the formal, capitalized Ihr is used; das Auto is neuter nominative, so it has no ending.',
       },
       {
         german: 'Herr Braun, wie heißt Ihre Tochter?',
         english: 'Mr. Braun, what is your daughter’s name?',
         highlight: ['Ihre'],
-        explanation: 'Formal address again requires capitalized Ihr; die Tochter is feminine nominative, so it takes -e.',
+        explanation:
+          'Formal address again requires capitalized Ihr; die Tochter is feminine nominative, so it takes -e.',
       },
       {
         german: 'Lena mag ihren Job, und Paul mag ihren Chef nicht.',
         english: 'Lena likes her job, and Paul does not like her/their boss.',
         highlight: ['ihren'],
-        explanation: 'Without more context, ihren Chef could mean Lena’s boss (her) or a boss the two of them share (their) — only the surrounding text can decide.',
+        explanation:
+          'Without more context, ihren Chef could mean Lena’s boss (her) or a boss the two of them share (their) — only the surrounding text can decide.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Er sucht sein Schlüssel.',
         correct: 'Er sucht seinen Schlüssel.',
-        explanation: 'der Schlüssel is masculine and here is the accusative object of suchen, so the possessive article needs the -en ending: seinen.',
+        explanation:
+          'der Schlüssel is masculine and here is the accusative object of suchen, so the possessive article needs the -en ending: seinen.',
       },
       {
         incorrect: 'Das ist meine Vater.',
         correct: 'Das ist mein Vater.',
-        explanation: 'der Vater is masculine nominative, so, like ein, mein takes no ending at all.',
+        explanation:
+          'der Vater is masculine nominative, so, like ein, mein takes no ending at all.',
       },
       {
         incorrect: 'Wir besuchen unser Großeltern.',
         correct: 'Wir besuchen unsere Großeltern.',
-        explanation: 'die Großeltern is plural, and plural nouns always take the -e ending, regardless of case: unsere.',
+        explanation:
+          'die Großeltern is plural, and plural nouns always take the -e ending, regardless of case: unsere.',
       },
       {
         incorrect: 'Habt ihr euer Hund dabei?',
         correct: 'Habt ihr euren Hund dabei?',
-        explanation: 'der Hund is the masculine accusative object of habt ... dabei, so euer needs the -en ending: euren.',
+        explanation:
+          'der Hund is the masculine accusative object of habt ... dabei, so euer needs the -en ending: euren.',
       },
       {
         incorrect: 'Frau Meier, ist das ihr Auto?',
         correct: 'Frau Meier, ist das Ihr Auto?',
-        explanation: 'Addressing Frau Meier politely requires the formal, capitalized Ihr — lowercase ihr would instead mean "her" or "their".',
+        explanation:
+          'Addressing Frau Meier politely requires the formal, capitalized Ihr — lowercase ihr would instead mean "her" or "their".',
       },
     ],
     remember: [
@@ -221,7 +235,8 @@ export const chapter019: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['possessive-articles', 'owner-stem'],
-      instruction: 'Choose the correct possessive article for the owner given in brackets.',
+      instruction:
+        'Choose the correct possessive article for the owner given in brackets.',
       prompt: 'Das ist ___ Hund. (ich)',
       options: [
         { id: 'a', text: 'mein' },
@@ -230,7 +245,8 @@ export const chapter019: ChapterDefinition = {
         { id: 'd', text: 'ihr' },
       ],
       correctOptionId: 'a',
-      explanation: 'The owner is ich, so the stem is mein-; der Hund is masculine nominative, so it takes no ending.',
+      explanation:
+        'The owner is ich, so the stem is mein-; der Hund is masculine nominative, so it takes no ending.',
     },
     {
       id: 'ch19-ex-02',
@@ -239,7 +255,8 @@ export const chapter019: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['possessive-articles', 'ending-agreement'],
-      instruction: 'Choose the correct possessive article for the owner given in brackets.',
+      instruction:
+        'Choose the correct possessive article for the owner given in brackets.',
       prompt: '___ Tasche ist rot. (du)',
       options: [
         { id: 'a', text: 'deine' },
@@ -248,7 +265,8 @@ export const chapter019: ChapterDefinition = {
         { id: 'd', text: 'sein' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Tasche is feminine nominative, so dein takes the -e ending: deine.',
+      explanation:
+        'die Tasche is feminine nominative, so dein takes the -e ending: deine.',
     },
     {
       id: 'ch19-ex-03',
@@ -257,7 +275,8 @@ export const chapter019: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['possessive-articles', 'ending-agreement'],
-      instruction: 'Choose the correct possessive article for the owner given in brackets.',
+      instruction:
+        'Choose the correct possessive article for the owner given in brackets.',
       prompt: '___ Auto ist neu. (er)',
       options: [
         { id: 'a', text: 'sein' },
@@ -275,7 +294,8 @@ export const chapter019: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['possessive-articles', 'ending-agreement'],
-      instruction: 'Choose the correct possessive article for the owner given in brackets.',
+      instruction:
+        'Choose the correct possessive article for the owner given in brackets.',
       prompt: '___ Eltern wohnen in München. (wir)',
       options: [
         { id: 'a', text: 'unsere' },
@@ -284,7 +304,8 @@ export const chapter019: ChapterDefinition = {
         { id: 'd', text: 'eure' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Eltern is plural nominative, so unser takes the -e ending: unsere.',
+      explanation:
+        'die Eltern is plural nominative, so unser takes the -e ending: unsere.',
     },
     {
       id: 'ch19-ex-05',
@@ -302,7 +323,8 @@ export const chapter019: ChapterDefinition = {
         { id: 'd', text: 'seinen' },
       ],
       correctOptionId: 'a',
-      explanation: 'Anna is "she", so the stem is ihr-; der Schlüssel is masculine accusative (object of suchen), so it takes -en: ihren.',
+      explanation:
+        'Anna is "she", so the stem is ihr-; der Schlüssel is masculine accusative (object of suchen), so it takes -en: ihren.',
     },
     {
       id: 'ch19-ex-06',
@@ -320,7 +342,8 @@ export const chapter019: ChapterDefinition = {
         { id: 'd', text: 'unsere' },
       ],
       correctOptionId: 'a',
-      explanation: 'Die Kinder ("they") is the owner, so the stem is ihr-; die Lehrerin is feminine accusative, so it takes -e: ihre.',
+      explanation:
+        'Die Kinder ("they") is the owner, so the stem is ihr-; die Lehrerin is feminine accusative, so it takes -e: ihre.',
     },
     {
       id: 'ch19-ex-07',
@@ -338,7 +361,8 @@ export const chapter019: ChapterDefinition = {
         { id: 'd', text: 'euer' },
       ],
       correctOptionId: 'a',
-      explanation: 'Herr Fischer is addressed politely with Sie, so the formal, capitalized Ihr is needed; der Koffer is masculine nominative, so it has no ending.',
+      explanation:
+        'Herr Fischer is addressed politely with Sie, so the formal, capitalized Ihr is needed; der Koffer is masculine nominative, so it has no ending.',
     },
     {
       id: 'ch19-ex-08',
@@ -356,7 +380,8 @@ export const chapter019: ChapterDefinition = {
         { id: 'd', text: 'ihre' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Freunde is plural nominative, so euer needs the -e ending; the middle e is dropped, giving eure, not euere.',
+      explanation:
+        'die Freunde is plural nominative, so euer needs the -e ending; the middle e is dropped, giving eure, not euere.',
     },
     {
       id: 'ch19-ex-09',
@@ -374,7 +399,8 @@ export const chapter019: ChapterDefinition = {
         { id: 'd', text: 'seinen' },
       ],
       correctOptionId: 'a',
-      explanation: 'der Bruder is masculine accusative (object of sehen), so dein takes the -en ending: deinen.',
+      explanation:
+        'der Bruder is masculine accusative (object of sehen), so dein takes the -en ending: deinen.',
     },
     {
       id: 'ch19-ex-10',
@@ -392,7 +418,8 @@ export const chapter019: ChapterDefinition = {
         { id: 'd', text: 'unseren' },
       ],
       correctOptionId: 'a',
-      explanation: 'The owner is die Nachbarn ("they"), not a formal Sie, so lowercase ihren is correct; der Garten is masculine accusative, so it takes -en.',
+      explanation:
+        'The owner is die Nachbarn ("they"), not a formal Sie, so lowercase ihren is correct; der Garten is masculine accusative, so it takes -en.',
     },
     {
       id: 'ch19-ex-11',
@@ -410,7 +437,8 @@ export const chapter019: ChapterDefinition = {
         { id: 'd', text: 'seine' },
       ],
       correctOptionId: 'a',
-      explanation: 'This is a polite greeting to someone addressed with Sie, so the formal Ihre is needed; die Kinder is plural, so it takes -e.',
+      explanation:
+        'This is a polite greeting to someone addressed with Sie, so the formal Ihre is needed; die Kinder is plural, so it takes -e.',
     },
     {
       id: 'ch19-ex-12',
@@ -428,7 +456,8 @@ export const chapter019: ChapterDefinition = {
         { id: 'd', text: 'deine' },
       ],
       correctOptionId: 'a',
-      explanation: 'Die Studentinnen ("they") is the owner, so the stem is ihr-, lowercase since no one is being addressed formally; die Professorin is feminine accusative, so it takes -e.',
+      explanation:
+        'Die Studentinnen ("they") is the owner, so the stem is ihr-, lowercase since no one is being addressed formally; die Professorin is feminine accusative, so it takes -e.',
     },
     {
       id: 'ch19-ex-13',
@@ -437,13 +466,15 @@ export const chapter019: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['possessive-articles', 'ending-agreement'],
-      instruction: 'Fill in the correct possessive article for the owner in brackets. Capitalization is not checked.',
+      instruction:
+        'Fill in the correct possessive article for the owner in brackets. Capitalization is not checked.',
       prompt: '___ Katze schläft viel. (ich)',
       acceptedAnswers: ['meine'],
       answerMode: 'caseInsensitive',
       placeholder: 'possessive article',
       maxLength: 12,
-      explanation: 'die Katze is feminine nominative, so mein takes the -e ending: meine.',
+      explanation:
+        'die Katze is feminine nominative, so mein takes the -e ending: meine.',
     },
     {
       id: 'ch19-ex-14',
@@ -452,13 +483,15 @@ export const chapter019: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['possessive-articles', 'owner-stem'],
-      instruction: 'Fill in the correct possessive article for the owner in brackets. Capitalization is not checked.',
+      instruction:
+        'Fill in the correct possessive article for the owner in brackets. Capitalization is not checked.',
       prompt: 'Ich habe einen Hund. ___ Hund ist braun. (ich)',
       acceptedAnswers: ['mein'],
       answerMode: 'caseInsensitive',
       placeholder: 'possessive article',
       maxLength: 10,
-      explanation: 'der Hund is masculine nominative, so mein has no ending, exactly like ein.',
+      explanation:
+        'der Hund is masculine nominative, so mein has no ending, exactly like ein.',
     },
     {
       id: 'ch19-ex-15',
@@ -467,13 +500,15 @@ export const chapter019: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['possessive-articles', 'accusative-ending'],
-      instruction: 'Fill in the correct possessive article for the owner in brackets. Capitalization is not checked.',
+      instruction:
+        'Fill in the correct possessive article for the owner in brackets. Capitalization is not checked.',
       prompt: 'Ich mag ___ Idee. (du)',
       acceptedAnswers: ['deine'],
       answerMode: 'caseInsensitive',
       placeholder: 'possessive article',
       maxLength: 12,
-      explanation: 'die Idee is feminine accusative (object of mögen), so dein takes the -e ending: deine.',
+      explanation:
+        'die Idee is feminine accusative (object of mögen), so dein takes the -e ending: deine.',
     },
     {
       id: 'ch19-ex-16',
@@ -482,13 +517,15 @@ export const chapter019: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['possessive-articles', 'ending-agreement'],
-      instruction: 'Fill in the correct possessive article for the owner in brackets. Capitalization is not checked.',
+      instruction:
+        'Fill in the correct possessive article for the owner in brackets. Capitalization is not checked.',
       prompt: '___ Freunde sind nett. (er)',
       acceptedAnswers: ['seine'],
       answerMode: 'caseInsensitive',
       placeholder: 'possessive article',
       maxLength: 12,
-      explanation: 'die Freunde is plural, and plural nouns always take -e, so sein becomes seine.',
+      explanation:
+        'die Freunde is plural, and plural nouns always take -e, so sein becomes seine.',
     },
     {
       id: 'ch19-ex-17',
@@ -497,13 +534,15 @@ export const chapter019: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['possessive-articles', 'accusative-ending'],
-      instruction: 'Fill in the correct possessive article for the owner in brackets. Capitalization is not checked.',
+      instruction:
+        'Fill in the correct possessive article for the owner in brackets. Capitalization is not checked.',
       prompt: 'Wir suchen ___ Schlüssel. (wir)',
       acceptedAnswers: ['unseren'],
       answerMode: 'caseInsensitive',
       placeholder: 'possessive article',
       maxLength: 14,
-      explanation: 'der Schlüssel is masculine accusative (object of suchen), so unser takes the -en ending: unseren.',
+      explanation:
+        'der Schlüssel is masculine accusative (object of suchen), so unser takes the -en ending: unseren.',
     },
     {
       id: 'ch19-ex-18',
@@ -512,13 +551,15 @@ export const chapter019: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['possessive-articles', 'euer-contraction'],
-      instruction: 'Fill in the correct possessive article for the owner in brackets. Capitalization is not checked.',
+      instruction:
+        'Fill in the correct possessive article for the owner in brackets. Capitalization is not checked.',
       prompt: 'Ist das ___ Wohnung? (ihr, plural "you")',
       acceptedAnswers: ['eure'],
       answerMode: 'caseInsensitive',
       placeholder: 'possessive article',
       maxLength: 12,
-      explanation: 'die Wohnung is feminine nominative, so euer takes -e; the middle e drops, giving eure, not euere.',
+      explanation:
+        'die Wohnung is feminine nominative, so euer takes -e; the middle e drops, giving eure, not euere.',
     },
     {
       id: 'ch19-ex-19',
@@ -527,13 +568,16 @@ export const chapter019: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['possessive-articles', 'formal-ihr'],
-      instruction: 'Fill in the correct possessive article. Capitalization is checked here because it is the point of the exercise.',
-      prompt: 'Entschuldigung, ist das ___ Regenschirm? (You are politely addressing a stranger.)',
+      instruction:
+        'Fill in the correct possessive article. Capitalization is checked here because it is the point of the exercise.',
+      prompt:
+        'Entschuldigung, ist das ___ Regenschirm? (You are politely addressing a stranger.)',
       acceptedAnswers: ['Ihr'],
       answerMode: 'exact',
       placeholder: 'Ihr / ihr',
       maxLength: 5,
-      explanation: 'Addressing a stranger politely uses the formal Sie-form; its possessive article Ihr is always capitalized, just like Sie.',
+      explanation:
+        'Addressing a stranger politely uses the formal Sie-form; its possessive article Ihr is always capitalized, just like Sie.',
     },
     {
       id: 'ch19-ex-20',
@@ -542,13 +586,16 @@ export const chapter019: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['possessive-articles', 'ihr-vs-Ihr'],
-      instruction: 'Fill in the correct possessive article. Capitalization is checked here because it is the point of the exercise.',
-      prompt: 'Frau Bauer hat zwei Kinder. Jeden Morgen bringt sie ___ Kinder zur Schule. (her)',
+      instruction:
+        'Fill in the correct possessive article. Capitalization is checked here because it is the point of the exercise.',
+      prompt:
+        'Frau Bauer hat zwei Kinder. Jeden Morgen bringt sie ___ Kinder zur Schule. (her)',
       acceptedAnswers: ['ihre'],
       answerMode: 'exact',
       placeholder: 'ihre / Ihre',
       maxLength: 12,
-      explanation: 'The owner is sie (Frau Bauer, "she"), so the stem is ihr-; die Kinder is plural, so it takes -e: ihre. This is not the formal Sie-form, so it stays lowercase.',
+      explanation:
+        'The owner is sie (Frau Bauer, "she"), so the stem is ihr-; die Kinder is plural, so it takes -e: ihre. This is not the formal Sie-form, so it stays lowercase.',
     },
     {
       id: 'ch19-ex-21',
@@ -557,13 +604,15 @@ export const chapter019: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['possessive-articles', 'owner-stem', 'accusative-ending'],
-      instruction: 'Fill in the correct possessive article for the owner in brackets. Capitalization is not checked.',
+      instruction:
+        'Fill in the correct possessive article for the owner in brackets. Capitalization is not checked.',
       prompt: 'Das Kind hat einen Ball verloren. Es sucht ___ Ball. (es)',
       acceptedAnswers: ['seinen'],
       answerMode: 'caseInsensitive',
       placeholder: 'possessive article',
       maxLength: 12,
-      explanation: 'The owner is es (das Kind), so the stem is sein-, the same stem used for er; der Ball is masculine accusative, so it takes -en: seinen.',
+      explanation:
+        'The owner is es (das Kind), so the stem is sein-, the same stem used for er; der Ball is masculine accusative, so it takes -en: seinen.',
     },
     {
       id: 'ch19-ex-22',
@@ -572,13 +621,15 @@ export const chapter019: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['possessive-articles', 'sentence-writing'],
-      instruction: 'Write a complete German sentence with the cues. Capitalization and punctuation are checked.',
+      instruction:
+        'Write a complete German sentence with the cues. Capitalization and punctuation are checked.',
       prompt: 'Say: This is my brother. (das ist – mein – Bruder)',
       acceptedAnswers: ['Das ist mein Bruder.'],
       answerMode: 'normalized',
       placeholder: 'Das ist ...',
       maxLength: 40,
-      explanation: 'der Bruder is masculine nominative, so mein takes no ending: Das ist mein Bruder.',
+      explanation:
+        'der Bruder is masculine nominative, so mein takes no ending: Das ist mein Bruder.',
     },
     {
       id: 'ch19-ex-23',
@@ -587,13 +638,15 @@ export const chapter019: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['possessive-articles', 'sentence-writing', 'accusative-ending'],
-      instruction: 'Write a complete German sentence with the cues. Capitalization and punctuation are checked.',
+      instruction:
+        'Write a complete German sentence with the cues. Capitalization and punctuation are checked.',
       prompt: 'Say: We love our children. (wir – lieben – unser – Kinder)',
       acceptedAnswers: ['Wir lieben unsere Kinder.'],
       answerMode: 'normalized',
       placeholder: 'Wir lieben ...',
       maxLength: 40,
-      explanation: 'die Kinder is plural accusative (object of lieben), so unser takes the -e ending: Wir lieben unsere Kinder.',
+      explanation:
+        'die Kinder is plural accusative (object of lieben), so unser takes the -e ending: Wir lieben unsere Kinder.',
     },
     {
       id: 'ch19-ex-24',
@@ -602,13 +655,16 @@ export const chapter019: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['possessive-articles', 'sentence-writing', 'formal-ihr'],
-      instruction: 'Write a complete, polite German question with the cues. Capitalization and punctuation are checked.',
-      prompt: 'Politely ask a stranger: Is this your suitcase? (formal Sie-form; ist – das – Ihr – Koffer)',
+      instruction:
+        'Write a complete, polite German question with the cues. Capitalization and punctuation are checked.',
+      prompt:
+        'Politely ask a stranger: Is this your suitcase? (formal Sie-form; ist – das – Ihr – Koffer)',
       acceptedAnswers: ['Ist das Ihr Koffer?'],
       answerMode: 'normalized',
       placeholder: 'Ist das ...?',
       maxLength: 40,
-      explanation: 'This is a formal question, so the possessive article is the capitalized Ihr; der Koffer is masculine nominative, so it takes no ending: Ist das Ihr Koffer?',
+      explanation:
+        'This is a formal question, so the possessive article is the capitalized Ihr; der Koffer is masculine nominative, so it takes no ending: Ist das Ihr Koffer?',
     },
     {
       id: 'ch19-ex-25',
@@ -617,7 +673,8 @@ export const chapter019: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['possessive-articles', 'ihr-ambiguity'],
-      instruction: 'Choose the correct possessive article for the owner given in brackets.',
+      instruction:
+        'Choose the correct possessive article for the owner given in brackets.',
       prompt: '___ Kinder spielen im Garten. (sie, plural "they")',
       options: [
         { id: 'a', text: 'ihre' },
@@ -626,7 +683,8 @@ export const chapter019: ChapterDefinition = {
         { id: 'd', text: 'Ihre' },
       ],
       correctOptionId: 'a',
-      explanation: 'Die Kinder ("they") is the owner, so the stem is ihr-; die Kinder is plural, so it takes -e: ihre.',
+      explanation:
+        'Die Kinder ("they") is the owner, so the stem is ihr-; die Kinder is plural, so it takes -e: ihre.',
     },
     {
       id: 'ch19-ex-26',
@@ -635,7 +693,8 @@ export const chapter019: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['possessive-articles', 'ending-agreement'],
-      instruction: 'Choose the correct possessive article for the owner given in brackets.',
+      instruction:
+        'Choose the correct possessive article for the owner given in brackets.',
       prompt: 'Ich brauche ___ Handy. (du)',
       options: [
         { id: 'a', text: 'dein' },
@@ -644,7 +703,8 @@ export const chapter019: ChapterDefinition = {
         { id: 'd', text: 'sein' },
       ],
       correctOptionId: 'a',
-      explanation: 'das Handy is neuter, and neuter nouns keep the same no-ending form in nominative and accusative, so dein has no ending.',
+      explanation:
+        'das Handy is neuter, and neuter nouns keep the same no-ending form in nominative and accusative, so dein has no ending.',
     },
     {
       id: 'ch19-ex-27',
@@ -662,7 +722,8 @@ export const chapter019: ChapterDefinition = {
         { id: 'd', text: 'euren' },
       ],
       correctOptionId: 'a',
-      explanation: 'der Nachbar is masculine accusative (object of einladen), so unser takes the -en ending: unseren.',
+      explanation:
+        'der Nachbar is masculine accusative (object of einladen), so unser takes the -en ending: unseren.',
     },
     {
       id: 'ch19-ex-28',
@@ -671,7 +732,8 @@ export const chapter019: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['possessive-articles', 'euer-contraction'],
-      instruction: 'Choose the correct possessive article for the owner given in brackets.',
+      instruction:
+        'Choose the correct possessive article for the owner given in brackets.',
       prompt: '___ Wohnung ist groß. (ihr, plural "you")',
       options: [
         { id: 'a', text: 'eure' },
@@ -680,7 +742,8 @@ export const chapter019: ChapterDefinition = {
         { id: 'd', text: 'ihre' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Wohnung is feminine nominative, so euer takes -e; the middle e drops, giving eure, not euere.',
+      explanation:
+        'die Wohnung is feminine nominative, so euer takes -e; the middle e drops, giving eure, not euere.',
     },
     {
       id: 'ch19-ex-29',
@@ -698,7 +761,8 @@ export const chapter019: ChapterDefinition = {
         { id: 'd', text: 'ihren' },
       ],
       correctOptionId: 'a',
-      explanation: 'Frau Lang is addressed formally, so the stem is Ihr-; der Schlüssel is masculine accusative (object of finden), so it takes -en: Ihren.',
+      explanation:
+        'Frau Lang is addressed formally, so the stem is Ihr-; der Schlüssel is masculine accusative (object of finden), so it takes -en: Ihren.',
     },
     {
       id: 'ch19-ex-30',
@@ -707,7 +771,8 @@ export const chapter019: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['possessive-articles', 'owner-stem'],
-      instruction: 'Choose the correct possessive article for the owner given in brackets.',
+      instruction:
+        'Choose the correct possessive article for the owner given in brackets.',
       prompt: 'Das Baby hat ___ Spielzeug verloren. (es)',
       options: [
         { id: 'a', text: 'sein' },
@@ -716,7 +781,8 @@ export const chapter019: ChapterDefinition = {
         { id: 'd', text: 'ihr' },
       ],
       correctOptionId: 'a',
-      explanation: 'The owner is es (das Baby), so the stem is sein-; das Spielzeug is neuter, so it keeps the no-ending form in both nominative and accusative.',
+      explanation:
+        'The owner is es (das Baby), so the stem is sein-; das Spielzeug is neuter, so it keeps the no-ending form in both nominative and accusative.',
     },
     {
       id: 'ch19-ex-31',
@@ -725,13 +791,15 @@ export const chapter019: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['possessive-articles', 'ending-agreement'],
-      instruction: 'Fill in the correct possessive article for the owner in brackets. Capitalization is not checked.',
+      instruction:
+        'Fill in the correct possessive article for the owner in brackets. Capitalization is not checked.',
       prompt: '___ Schwester heißt Lisa. (ich)',
       acceptedAnswers: ['meine'],
       answerMode: 'caseInsensitive',
       placeholder: 'possessive article',
       maxLength: 12,
-      explanation: 'die Schwester is feminine nominative, so mein takes the -e ending: meine.',
+      explanation:
+        'die Schwester is feminine nominative, so mein takes the -e ending: meine.',
     },
     {
       id: 'ch19-ex-32',
@@ -740,13 +808,15 @@ export const chapter019: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['possessive-articles', 'accusative-ending'],
-      instruction: 'Fill in the correct possessive article for the owner in brackets. Capitalization is not checked.',
+      instruction:
+        'Fill in the correct possessive article for the owner in brackets. Capitalization is not checked.',
       prompt: 'Ich rufe ___ Vater an. (ich)',
       acceptedAnswers: ['meinen'],
       answerMode: 'caseInsensitive',
       placeholder: 'possessive article',
       maxLength: 12,
-      explanation: 'der Vater is masculine accusative (object of anrufen), so mein takes the -en ending: meinen.',
+      explanation:
+        'der Vater is masculine accusative (object of anrufen), so mein takes the -en ending: meinen.',
     },
     {
       id: 'ch19-ex-33',
@@ -755,13 +825,15 @@ export const chapter019: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['possessive-articles', 'ending-agreement'],
-      instruction: 'Fill in the correct possessive article for the owner in brackets. Capitalization is not checked.',
+      instruction:
+        'Fill in the correct possessive article for the owner in brackets. Capitalization is not checked.',
       prompt: '___ Freunde sind laut. (er)',
       acceptedAnswers: ['seine'],
       answerMode: 'caseInsensitive',
       placeholder: 'possessive article',
       maxLength: 12,
-      explanation: 'die Freunde is plural, and plural nouns always take -e, so sein becomes seine.',
+      explanation:
+        'die Freunde is plural, and plural nouns always take -e, so sein becomes seine.',
     },
     {
       id: 'ch19-ex-34',
@@ -770,13 +842,15 @@ export const chapter019: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['possessive-articles', 'euer-contraction', 'accusative-ending'],
-      instruction: 'Fill in the correct possessive article for the owner in brackets. Capitalization is not checked.',
+      instruction:
+        'Fill in the correct possessive article for the owner in brackets. Capitalization is not checked.',
       prompt: 'Habt ihr ___ Koffer dabei? (ihr, plural "you")',
       acceptedAnswers: ['euren'],
       answerMode: 'caseInsensitive',
       placeholder: 'possessive article',
       maxLength: 12,
-      explanation: 'der Koffer is masculine accusative, so euer takes -en; the middle e drops, giving euren, not eueren.',
+      explanation:
+        'der Koffer is masculine accusative, so euer takes -en; the middle e drops, giving euren, not eueren.',
     },
     {
       id: 'ch19-ex-35',
@@ -785,13 +859,15 @@ export const chapter019: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['possessive-articles', 'formal-ihr'],
-      instruction: 'Fill in the correct possessive article. Capitalization is checked here because it is the point of the exercise.',
+      instruction:
+        'Fill in the correct possessive article. Capitalization is checked here because it is the point of the exercise.',
       prompt: 'Herr Weber, wie heißt ___ Firma? (formal Sie-form)',
       acceptedAnswers: ['Ihre'],
       answerMode: 'exact',
       placeholder: 'Ihre / ihre',
       maxLength: 6,
-      explanation: 'Herr Weber is addressed formally, so the capitalized Ihre is needed; die Firma is feminine nominative, so it takes -e.',
+      explanation:
+        'Herr Weber is addressed formally, so the capitalized Ihre is needed; die Firma is feminine nominative, so it takes -e.',
     },
     {
       id: 'ch19-ex-36',
@@ -800,13 +876,15 @@ export const chapter019: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['possessive-articles', 'ihr-vs-Ihr'],
-      instruction: 'Fill in the correct possessive article. Capitalization is checked here because it is the point of the exercise.',
+      instruction:
+        'Fill in the correct possessive article. Capitalization is checked here because it is the point of the exercise.',
       prompt: 'Die Nachbarn renovieren ___ Küche. (their)',
       acceptedAnswers: ['ihre'],
       answerMode: 'exact',
       placeholder: 'ihre / Ihre',
       maxLength: 12,
-      explanation: 'The owner is die Nachbarn ("they"), not the formal Sie, so the stem stays lowercase ihr-; die Küche is feminine accusative, so it takes -e: ihre.',
+      explanation:
+        'The owner is die Nachbarn ("they"), not the formal Sie, so the stem stays lowercase ihr-; die Küche is feminine accusative, so it takes -e: ihre.',
     },
     {
       id: 'ch19-ex-37',
@@ -815,13 +893,15 @@ export const chapter019: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['possessive-articles', 'sentence-writing', 'accusative-ending'],
-      instruction: 'Write a complete German sentence with the cues. Capitalization and punctuation are checked.',
+      instruction:
+        'Write a complete German sentence with the cues. Capitalization and punctuation are checked.',
       prompt: 'Say: My parents love their garden. (meine Eltern – lieben – ihr – Garten)',
       acceptedAnswers: ['Meine Eltern lieben ihren Garten.'],
       answerMode: 'normalized',
       placeholder: 'Meine Eltern ...',
       maxLength: 40,
-      explanation: 'der Garten is masculine accusative (object of lieben), so ihr takes the -en ending: Meine Eltern lieben ihren Garten.',
+      explanation:
+        'der Garten is masculine accusative (object of lieben), so ihr takes the -en ending: Meine Eltern lieben ihren Garten.',
     },
     {
       id: 'ch19-ex-38',
@@ -835,7 +915,8 @@ export const chapter019: ChapterDefinition = {
       templateParts: ['', ' Mutter kocht heute.'],
       slots: [{ id: 'ch19-ex38-slot1', correctWord: 'meine' }],
       wordBank: ['meine', 'mein', 'meinen', 'meiner'],
-      explanation: 'die Mutter is feminine nominative, so mein takes the -e ending: meine.',
+      explanation:
+        'die Mutter is feminine nominative, so mein takes the -e ending: meine.',
     },
     {
       id: 'ch19-ex-39',
@@ -849,7 +930,8 @@ export const chapter019: ChapterDefinition = {
       templateParts: ['Kennst du ', ' Freund?'],
       slots: [{ id: 'ch19-ex39-slot1', correctWord: 'deinen' }],
       wordBank: ['deinen', 'dein', 'deine', 'deiner'],
-      explanation: 'der Freund is masculine accusative (object of kennen), so dein takes the -en ending: deinen.',
+      explanation:
+        'der Freund is masculine accusative (object of kennen), so dein takes the -en ending: deinen.',
     },
     {
       id: 'ch19-ex-40',
@@ -877,7 +959,8 @@ export const chapter019: ChapterDefinition = {
       templateParts: ['Wir lieben ', ' Großeltern.'],
       slots: [{ id: 'ch19-ex41-slot1', correctWord: 'unsere' }],
       wordBank: ['unsere', 'unser', 'unseren', 'unserer'],
-      explanation: 'die Großeltern is plural accusative, so unser takes the -e ending: unsere.',
+      explanation:
+        'die Großeltern is plural accusative, so unser takes the -e ending: unsere.',
     },
     {
       id: 'ch19-ex-42',
@@ -891,7 +974,8 @@ export const chapter019: ChapterDefinition = {
       templateParts: ['', ' Idee ist gut.'],
       slots: [{ id: 'ch19-ex42-slot1', correctWord: 'eure' }],
       wordBank: ['eure', 'euer', 'euere', 'euren'],
-      explanation: 'die Idee is feminine nominative, so euer takes -e; the middle e drops, giving eure, not euere.',
+      explanation:
+        'die Idee is feminine nominative, so euer takes -e; the middle e drops, giving eure, not euere.',
     },
     {
       id: 'ch19-ex-43',
@@ -905,7 +989,8 @@ export const chapter019: ChapterDefinition = {
       templateParts: ['Herr Klein, ich bringe ', ' Koffer.'],
       slots: [{ id: 'ch19-ex43-slot1', correctWord: 'Ihren' }],
       wordBank: ['Ihren', 'Ihr', 'Ihre', 'ihren'],
-      explanation: 'Herr Klein is addressed formally, so the stem is Ihr-; der Koffer is masculine accusative, so it takes -en: Ihren.',
+      explanation:
+        'Herr Klein is addressed formally, so the stem is Ihr-; der Koffer is masculine accusative, so it takes -en: Ihren.',
     },
     {
       id: 'ch19-ex-44',
@@ -919,7 +1004,8 @@ export const chapter019: ChapterDefinition = {
       templateParts: ['', ' Kinder sind süß.'],
       slots: [{ id: 'ch19-ex44-slot1', correctWord: 'ihre' }],
       wordBank: ['ihre', 'ihr', 'ihren', 'unsere'],
-      explanation: 'Die Kinder ("they") is the owner, so the stem is ihr-; die Kinder is plural, so it takes -e: ihre.',
+      explanation:
+        'Die Kinder ("they") is the owner, so the stem is ihr-; die Kinder is plural, so it takes -e: ihre.',
     },
     {
       id: 'ch19-ex-45',
@@ -937,7 +1023,8 @@ export const chapter019: ChapterDefinition = {
         { id: 'ch19-ex45-p4', left: 'wir', right: 'unser-' },
         { id: 'ch19-ex45-p5', left: 'sie (plural, "they")', right: 'ihr-' },
       ],
-      explanation: 'Each personal pronoun has its own possessive stem: ich → mein-, du → dein-, er/es → sein-, wir → unser-, sie (plural) → ihr-.',
+      explanation:
+        'Each personal pronoun has its own possessive stem: ich → mein-, du → dein-, er/es → sein-, wir → unser-, sie (plural) → ihr-.',
     },
     {
       id: 'ch19-ex-46',
@@ -946,16 +1033,26 @@ export const chapter019: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['possessive-articles', 'ending-agreement', 'accusative-ending'],
-      instruction: 'Match each owner and noun to the correctly declined possessive article.',
+      instruction:
+        'Match each owner and noun to the correctly declined possessive article.',
       prompt: 'Match the situation with the correctly declined possessive article.',
       pairs: [
         { id: 'ch19-ex46-p1', left: 'ich + der Vater (Nominativ)', right: 'mein' },
         { id: 'ch19-ex46-p2', left: 'du + die Tasche (Nominativ)', right: 'deine' },
         { id: 'ch19-ex46-p3', left: 'wir + der Schlüssel (Akkusativ)', right: 'unseren' },
-        { id: 'ch19-ex46-p4', left: 'ihr (plural "you") + die Wohnung (Nominativ)', right: 'eure' },
-        { id: 'ch19-ex46-p5', left: 'Sie (formal) + der Koffer (Nominativ)', right: 'Ihr' },
+        {
+          id: 'ch19-ex46-p4',
+          left: 'ihr (plural "you") + die Wohnung (Nominativ)',
+          right: 'eure',
+        },
+        {
+          id: 'ch19-ex46-p5',
+          left: 'Sie (formal) + der Koffer (Nominativ)',
+          right: 'Ihr',
+        },
       ],
-      explanation: 'The owner picks the stem, and the gender, number, and case of the noun pick the ending: mein Vater, deine Tasche, unseren Schlüssel, eure Wohnung, Ihr Koffer.',
+      explanation:
+        'The owner picks the stem, and the gender, number, and case of the noun pick the ending: mein Vater, deine Tasche, unseren Schlüssel, eure Wohnung, Ihr Koffer.',
     },
     {
       id: 'ch19-ex-47',
@@ -964,16 +1061,30 @@ export const chapter019: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['possessive-articles', 'ending-agreement', 'accusative-ending'],
-      instruction: 'Match each owner and noun to the correctly declined possessive article.',
+      instruction:
+        'Match each owner and noun to the correctly declined possessive article.',
       prompt: 'Match the situation with the correctly declined possessive article.',
       pairs: [
         { id: 'ch19-ex47-p1', left: 'er + der Hund (Akkusativ)', right: 'seinen' },
-        { id: 'ch19-ex47-p2', left: 'sie (singular, "she") + die Katze (Nominativ)', right: 'ihre' },
+        {
+          id: 'ch19-ex47-p2',
+          left: 'sie (singular, "she") + die Katze (Nominativ)',
+          right: 'ihre',
+        },
         { id: 'ch19-ex47-p3', left: 'es + das Spielzeug (Nominativ)', right: 'sein' },
-        { id: 'ch19-ex47-p4', left: 'wir + die Großeltern (Akkusativ, Plural)', right: 'unsere' },
-        { id: 'ch19-ex47-p5', left: 'ihr (plural "you") + der Freund (Akkusativ)', right: 'euren' },
+        {
+          id: 'ch19-ex47-p4',
+          left: 'wir + die Großeltern (Akkusativ, Plural)',
+          right: 'unsere',
+        },
+        {
+          id: 'ch19-ex47-p5',
+          left: 'ihr (plural "you") + der Freund (Akkusativ)',
+          right: 'euren',
+        },
       ],
-      explanation: 'seinen Hund (masc. accusative), ihre Katze (fem. nominative), sein Spielzeug (neut., no ending), unsere Großeltern (plural), euren Freund (masc. accusative, contracted euer).',
+      explanation:
+        'seinen Hund (masc. accusative), ihre Katze (fem. nominative), sein Spielzeug (neut., no ending), unsere Großeltern (plural), euren Freund (masc. accusative, contracted euer).',
     },
     {
       id: 'ch19-ex-48',
@@ -982,16 +1093,26 @@ export const chapter019: ChapterDefinition = {
       type: 'matching',
       level: 'production',
       grammarFocus: ['possessive-articles', 'formal-ihr', 'ending-agreement'],
-      instruction: 'Match each owner and noun to the correctly declined possessive article.',
+      instruction:
+        'Match each owner and noun to the correctly declined possessive article.',
       prompt: 'Match the situation with the correctly declined possessive article.',
       pairs: [
-        { id: 'ch19-ex48-p1', left: 'Frau Meier (formal, Sie) + der Regenschirm (Nominativ)', right: 'Ihr' },
+        {
+          id: 'ch19-ex48-p1',
+          left: 'Frau Meier (formal, Sie) + der Regenschirm (Nominativ)',
+          right: 'Ihr',
+        },
         { id: 'ch19-ex48-p2', left: 'ich + die Idee (Akkusativ)', right: 'meine' },
         { id: 'ch19-ex48-p3', left: 'wir + der Sohn (Nominativ)', right: 'unser' },
         { id: 'ch19-ex48-p4', left: 'du + der Bruder (Akkusativ)', right: 'deinen' },
-        { id: 'ch19-ex48-p5', left: 'ihr (plural "you") + die Freunde (Nominativ, Plural)', right: 'eure' },
+        {
+          id: 'ch19-ex48-p5',
+          left: 'ihr (plural "you") + die Freunde (Nominativ, Plural)',
+          right: 'eure',
+        },
       ],
-      explanation: 'Ihr Regenschirm (formal, no ending), meine Idee (fem. accusative), unser Sohn (masc., no ending), deinen Bruder (masc. accusative), eure Freunde (plural, contracted euer).',
+      explanation:
+        'Ihr Regenschirm (formal, no ending), meine Idee (fem. accusative), unser Sohn (masc., no ending), deinen Bruder (masc. accusative), eure Freunde (plural, contracted euer).',
     },
     {
       id: 'ch19-ex-49',
@@ -1005,7 +1126,8 @@ export const chapter019: ChapterDefinition = {
       tokens: ['Das', 'Kind', 'sucht', 'sein', 'Ball.'],
       errorTokenIndex: 3,
       correction: 'seinen',
-      explanation: 'der Ball is masculine accusative (object of suchen), so sein needs the -en ending: seinen, not sein.',
+      explanation:
+        'der Ball is masculine accusative (object of suchen), so sein needs the -en ending: seinen, not sein.',
     },
     {
       id: 'ch19-ex-50',
@@ -1014,12 +1136,15 @@ export const chapter019: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['possessive-articles', 'formal-ihr', 'error-correction'],
-      instruction: 'Find the token that uses the wrong form of the possessive article, and correct it.',
-      prompt: 'Jemand fragt eine fremde Frau höflich nach ihrem Auto. Etwas stimmt nicht.',
+      instruction:
+        'Find the token that uses the wrong form of the possessive article, and correct it.',
+      prompt:
+        'Jemand fragt eine fremde Frau höflich nach ihrem Auto. Etwas stimmt nicht.',
       tokens: ['Frau', 'Klar,', 'ist', 'das', 'ihr', 'Auto?'],
       errorTokenIndex: 4,
       correction: 'Ihr',
-      explanation: 'Addressing Frau Klar politely requires the formal, capitalized Ihr — lowercase ihr would instead mean "her" or "their".',
+      explanation:
+        'Addressing Frau Klar politely requires the formal, capitalized Ihr — lowercase ihr would instead mean "her" or "their".',
     },
   ],
 };

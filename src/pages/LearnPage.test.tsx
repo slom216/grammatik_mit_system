@@ -73,7 +73,10 @@ describe('LearnPage', () => {
     expect(remember).toBeInTheDocument();
     expect(
       screen.getByRole('link', {
-        name: new RegExp(`full practice \\(${chapter001.exercises.length} exercises\\)`, 'i'),
+        name: new RegExp(
+          `full practice \\(${chapter001.exercises.length} exercises\\)`,
+          'i',
+        ),
       }),
     ).toHaveAttribute('href', '/chapter/1/practice');
     expect(

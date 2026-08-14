@@ -105,13 +105,48 @@ export const chapter083: ChapterDefinition = {
         title: 'Seven temporal expressions at a glance',
         columns: ['Expression', 'Case', 'Core meaning', 'Example'],
         rows: [
-          ['innerhalb', 'genitive', 'within a bounded window (deadline)', 'innerhalb einer Woche (within a week)'],
-          ['außerhalb', 'genitive', 'outside a bounded window', 'außerhalb der Geschäftszeiten (outside business hours)'],
-          ['während', 'genitive', 'during, filling the whole period', 'während des Sommers (during the summer)'],
-          ['seit', 'dative', 'starting point in the past, still ongoing', 'seit einem Jahr (for a year, since a year ago)'],
-          ['ab', 'dative', 'starting point now/future, open-ended', 'ab nächstem Montag (from next Monday on)'],
-          ['bis zu', 'dative', 'closing endpoint, up until', 'bis zu den Ferien (up until the holidays)'],
-          ['von ... an', 'dative', 'starting point, open-ended', 'von diesem Tag an (from this day onward)'],
+          [
+            'innerhalb',
+            'genitive',
+            'within a bounded window (deadline)',
+            'innerhalb einer Woche (within a week)',
+          ],
+          [
+            'außerhalb',
+            'genitive',
+            'outside a bounded window',
+            'außerhalb der Geschäftszeiten (outside business hours)',
+          ],
+          [
+            'während',
+            'genitive',
+            'during, filling the whole period',
+            'während des Sommers (during the summer)',
+          ],
+          [
+            'seit',
+            'dative',
+            'starting point in the past, still ongoing',
+            'seit einem Jahr (for a year, since a year ago)',
+          ],
+          [
+            'ab',
+            'dative',
+            'starting point now/future, open-ended',
+            'ab nächstem Montag (from next Monday on)',
+          ],
+          [
+            'bis zu',
+            'dative',
+            'closing endpoint, up until',
+            'bis zu den Ferien (up until the holidays)',
+          ],
+          [
+            'von ... an',
+            'dative',
+            'starting point, open-ended',
+            'von diesem Tag an (from this day onward)',
+          ],
         ],
       },
       {
@@ -119,7 +154,11 @@ export const chapter083: ChapterDefinition = {
         title: 'Genitive group — bounded windows and duration',
         columns: ['Preposition', 'Meaning', 'Genitive example'],
         rows: [
-          ['innerhalb', 'within (a deadline inside the window)', 'innerhalb eines Jahres'],
+          [
+            'innerhalb',
+            'within (a deadline inside the window)',
+            'innerhalb eines Jahres',
+          ],
           ['außerhalb', 'outside of (outside the window)', 'außerhalb der Saison'],
           ['während', 'during (filling the whole window)', 'während des Sommers'],
         ],
@@ -143,11 +182,27 @@ export const chapter083: ChapterDefinition = {
         columns: ['Question about the timeline', 'Preposition to use', 'Example'],
         rows: [
           ['Does it start in the past and continue to now?', 'seit', 'seit einem Jahr'],
-          ['Does it start now/in the future, with no end named?', 'ab or von ... an', 'ab nächstem Montag / von diesem Tag an'],
-          ['Does the sentence name a closing endpoint?', 'bis or bis zu', 'bis zu den Ferien'],
-          ['Is there a deadline met anywhere inside a window?', 'innerhalb', 'innerhalb einer Woche'],
+          [
+            'Does it start now/in the future, with no end named?',
+            'ab or von ... an',
+            'ab nächstem Montag / von diesem Tag an',
+          ],
+          [
+            'Does the sentence name a closing endpoint?',
+            'bis or bis zu',
+            'bis zu den Ferien',
+          ],
+          [
+            'Is there a deadline met anywhere inside a window?',
+            'innerhalb',
+            'innerhalb einer Woche',
+          ],
           ['Does the action span the entire period?', 'während', 'während des Sommers'],
-          ['Does something lie outside the bounded window?', 'außerhalb', 'außerhalb der Geschäftszeiten'],
+          [
+            'Does something lie outside the bounded window?',
+            'außerhalb',
+            'außerhalb der Geschäftszeiten',
+          ],
         ],
       },
     ],
@@ -156,7 +211,8 @@ export const chapter083: ChapterDefinition = {
         german: 'Ich muss die Unterlagen innerhalb einer Woche einreichen.',
         english: 'I have to submit the documents within a week.',
         highlight: ['innerhalb einer Woche'],
-        explanation: 'innerhalb + genitive names a bounded window; the deadline can be met at any point inside that week.',
+        explanation:
+          'innerhalb + genitive names a bounded window; the deadline can be met at any point inside that week.',
       },
       {
         german: 'Innerhalb eines Jahres hat sich vieles verändert.',
@@ -168,19 +224,22 @@ export const chapter083: ChapterDefinition = {
         german: 'Das Büro ist außerhalb der Geschäftszeiten nicht erreichbar.',
         english: 'The office cannot be reached outside business hours.',
         highlight: ['außerhalb der Geschäftszeiten'],
-        explanation: 'außerhalb + genitive plural marks everything lying outside that window.',
+        explanation:
+          'außerhalb + genitive plural marks everything lying outside that window.',
       },
       {
         german: 'Außerhalb der Saison sind die Hotels günstiger.',
         english: 'Outside the season, hotels are cheaper.',
         highlight: ['Außerhalb der Saison'],
-        explanation: 'außerhalb is the mirror image of innerhalb, naming what lies outside the bounded period.',
+        explanation:
+          'außerhalb is the mirror image of innerhalb, naming what lies outside the bounded period.',
       },
       {
         german: 'Während des Sommers arbeite ich in einem Café.',
         english: 'During the summer, I work in a café.',
         highlight: ['Während des Sommers'],
-        explanation: 'während + genitive here marks duration: the job runs through the whole summer, not just at one point inside it.',
+        explanation:
+          'während + genitive here marks duration: the job runs through the whole summer, not just at one point inside it.',
       },
       {
         german: 'Während der Woche habe ich wenig Zeit.',
@@ -192,7 +251,8 @@ export const chapter083: ChapterDefinition = {
         german: 'Ich wohne seit einem Jahr in Berlin.',
         english: 'I have been living in Berlin for a year.',
         highlight: ['seit einem Jahr'],
-        explanation: 'seit + dative marks a starting point in the past that continues up to now; German uses the present tense wohne, not a perfect tense.',
+        explanation:
+          'seit + dative marks a starting point in the past that continues up to now; German uses the present tense wohne, not a perfect tense.',
       },
       {
         german: 'Seit letztem Montag ist die neue Regel in Kraft.',
@@ -204,19 +264,22 @@ export const chapter083: ChapterDefinition = {
         german: 'Ab nächstem Montag arbeite ich im neuen Büro.',
         english: 'From next Monday, I will be working in the new office.',
         highlight: ['Ab nächstem Montag'],
-        explanation: 'ab + dative names a starting point in the present or future, with no end mentioned.',
+        explanation:
+          'ab + dative names a starting point in the present or future, with no end mentioned.',
       },
       {
         german: 'Ab sofort gilt die neue Hausordnung.',
         english: 'Effective immediately, the new house rules apply.',
         highlight: ['Ab sofort'],
-        explanation: 'ab sofort is a fixed idiom meaning "effective immediately", built on the same open-ended ab.',
+        explanation:
+          'ab sofort is a fixed idiom meaning "effective immediately", built on the same open-ended ab.',
       },
       {
         german: 'Die Anmeldung ist bis zu den Ferien möglich.',
         english: 'Registration is possible up until the holidays.',
         highlight: ['bis zu den Ferien'],
-        explanation: 'bis zu + dative names the closing endpoint of a span; den Ferien is dative plural.',
+        explanation:
+          'bis zu + dative names the closing endpoint of a span; den Ferien is dative plural.',
       },
       {
         german: 'Das Geschäft hat bis zum Wochenende geöffnet.',
@@ -228,45 +291,53 @@ export const chapter083: ChapterDefinition = {
         german: 'Von diesem Tag an gilt die neue Regel.',
         english: 'From this day onward, the new rule applies.',
         highlight: ['Von diesem Tag an'],
-        explanation: 'von ... an is a fixed two-part frame around the dative noun phrase, marking an open-ended starting point.',
+        explanation:
+          'von ... an is a fixed two-part frame around the dative noun phrase, marking an open-ended starting point.',
       },
       {
         german: 'Von nächster Woche an arbeite ich nur noch vier Tage.',
         english: 'From next week onward, I will only work four days.',
         highlight: ['Von nächster Woche an'],
-        explanation: 'Feminine dative singular strong ending: nächster Woche, framed by von ... an.',
+        explanation:
+          'Feminine dative singular strong ending: nächster Woche, framed by von ... an.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Innerhalb einem Jahr melde ich mich.',
         correct: 'Innerhalb eines Jahres melde ich mich.',
-        explanation: 'innerhalb governs the genitive, not the dative; einem Jahr is dative and must become the genitive eines Jahres.',
+        explanation:
+          'innerhalb governs the genitive, not the dative; einem Jahr is dative and must become the genitive eines Jahres.',
       },
       {
         incorrect: 'Seit einen Monat lerne ich Deutsch.',
         correct: 'Seit einem Monat lerne ich Deutsch.',
-        explanation: 'seit governs the dative; einen Monat is accusative and must become the dative einem Monat.',
+        explanation:
+          'seit governs the dative; einen Monat is accusative and must become the dative einem Monat.',
       },
       {
         incorrect: 'Ab nächsten Montag gilt die neue Regel.',
         correct: 'Ab nächstem Montag gilt die neue Regel.',
-        explanation: 'ab governs the dative; nächsten Montag is accusative and must become the dative nächstem Montag.',
+        explanation:
+          'ab governs the dative; nächsten Montag is accusative and must become the dative nächstem Montag.',
       },
       {
         incorrect: 'Die Bewerbung ist bis der Ferien möglich.',
         correct: 'Die Bewerbung ist bis zu den Ferien möglich.',
-        explanation: 'Before an article-bearing noun phrase, bis needs the added zu and the dative case; bare bis before an article is ungrammatical.',
+        explanation:
+          'Before an article-bearing noun phrase, bis needs the added zu and the dative case; bare bis before an article is ungrammatical.',
       },
       {
         incorrect: 'Ich muss die Aufgabe während einer Woche abgeben.',
         correct: 'Ich muss die Aufgabe innerhalb einer Woche abgeben.',
-        explanation: 'A deadline that can be met at any point inside the window uses innerhalb, not während, which implies the action fills the entire period.',
+        explanation:
+          'A deadline that can be met at any point inside the window uses innerhalb, not während, which implies the action fills the entire period.',
       },
       {
         incorrect: 'Von diesem Tag gilt die neue Regel.',
         correct: 'Von diesem Tag an gilt die neue Regel.',
-        explanation: 'von ... an is a fixed two-part expression; dropping the closing an leaves the "from ... onward" meaning incomplete.',
+        explanation:
+          'von ... an is a fixed two-part expression; dropping the closing an leaves the "from ... onward" meaning incomplete.',
       },
     ],
     remember: [
@@ -300,7 +371,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'd', text: 'since a point in the past' },
       ],
       correctOptionId: 'a',
-      explanation: 'innerhalb marks a bounded window inside which something must happen — "within".',
+      explanation:
+        'innerhalb marks a bounded window inside which something must happen — "within".',
     },
     {
       id: 'ch83-ex-02',
@@ -318,7 +390,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'd', text: 'genitive' },
       ],
       correctOptionId: 'd',
-      explanation: 'innerhalb governs the genitive, like the other bounded-window and duration prepositions außerhalb and während.',
+      explanation:
+        'innerhalb governs the genitive, like the other bounded-window and duration prepositions außerhalb and während.',
     },
     {
       id: 'ch83-ex-03',
@@ -336,7 +409,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'd', text: 'nominative' },
       ],
       correctOptionId: 'c',
-      explanation: 'seit governs the dative, like the other starting-point and endpoint prepositions ab, bis zu, and von ... an.',
+      explanation:
+        'seit governs the dative, like the other starting-point and endpoint prepositions ab, bis zu, and von ... an.',
     },
     {
       id: 'ch83-ex-04',
@@ -354,7 +428,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'd', text: 'after a point in time' },
       ],
       correctOptionId: 'a',
-      explanation: 'außerhalb is the mirror image of innerhalb: it marks everything lying outside a named window.',
+      explanation:
+        'außerhalb is the mirror image of innerhalb: it marks everything lying outside a named window.',
     },
     {
       id: 'ch83-ex-05',
@@ -372,7 +447,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'd', text: 'bis zu einer Woche' },
       ],
       correctOptionId: 'a',
-      explanation: 'innerhalb + genitive is the expression for a bounded deadline: "within a week".',
+      explanation:
+        'innerhalb + genitive is the expression for a bounded deadline: "within a week".',
     },
     {
       id: 'ch83-ex-06',
@@ -390,7 +466,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'd', text: 'während' },
       ],
       correctOptionId: 'a',
-      explanation: 'The living arrangement began in the past and is still ongoing now, which is exactly the meaning of seit.',
+      explanation:
+        'The living arrangement began in the past and is still ongoing now, which is exactly the meaning of seit.',
     },
     {
       id: 'ch83-ex-07',
@@ -408,7 +485,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'd', text: 'innerhalb eines Woche' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Woche is feminine; its genitive singular with the indefinite article is einer Woche.',
+      explanation:
+        'die Woche is feminine; its genitive singular with the indefinite article is einer Woche.',
     },
     {
       id: 'ch83-ex-08',
@@ -418,7 +496,8 @@ export const chapter083: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['seit', 'dative', 'inflection'],
       instruction: 'Choose the correctly inflected phrase.',
-      prompt: 'Choose the correctly inflected phrase for "for a year" / "since a year ago".',
+      prompt:
+        'Choose the correctly inflected phrase for "for a year" / "since a year ago".',
       options: [
         { id: 'a', text: 'seit einem Jahr' },
         { id: 'b', text: 'seit einer Jahr' },
@@ -426,7 +505,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'd', text: 'seit ein Jahr' },
       ],
       correctOptionId: 'a',
-      explanation: 'das Jahr is neuter; its dative singular with the indefinite article is einem Jahr.',
+      explanation:
+        'das Jahr is neuter; its dative singular with the indefinite article is einem Jahr.',
     },
     {
       id: 'ch83-ex-09',
@@ -462,7 +542,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'd', text: 'ab' },
       ],
       correctOptionId: 'a',
-      explanation: 'Before an article-bearing noun phrase like den Ferien, bis needs the added zu and the dative case.',
+      explanation:
+        'Before an article-bearing noun phrase like den Ferien, bis needs the added zu and the dative case.',
     },
     {
       id: 'ch83-ex-11',
@@ -480,8 +561,10 @@ export const chapter083: ChapterDefinition = {
         },
         {
           speaker: 'Bewerberin',
-          german: 'Ich arbeite ___ zwei Jahren bei dieser Firma, und ich möchte gerne bleiben.',
-          english: "I've been working at this company for two years, and I'd like to stay.",
+          german:
+            'Ich arbeite ___ zwei Jahren bei dieser Firma, und ich möchte gerne bleiben.',
+          english:
+            "I've been working at this company for two years, and I'd like to stay.",
         },
       ],
       prompt: 'Ich arbeite ___ zwei Jahren bei dieser Firma.',
@@ -492,7 +575,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'd', text: 'von ... an' },
       ],
       correctOptionId: 'a',
-      explanation: 'The job began two years ago and is still ongoing now, which is the backward-looking, still-continuing meaning of seit, not the forward-looking ab.',
+      explanation:
+        'The job began two years ago and is still ongoing now, which is the backward-looking, still-continuing meaning of seit, not the forward-looking ab.',
     },
     {
       id: 'ch83-ex-12',
@@ -510,7 +594,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'd', text: 'bis' },
       ],
       correctOptionId: 'a',
-      explanation: 'von ... an is a fixed two-part frame; an closes the expression and cannot be replaced or dropped.',
+      explanation:
+        'von ... an is a fixed two-part frame; an closes the expression and cannot be replaced or dropped.',
     },
     {
       id: 'ch83-ex-13',
@@ -519,8 +604,10 @@ export const chapter083: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['innerhalb', 'während', 'deadline-interpretation'],
-      instruction: 'Choose the sentence describing a deadline that can be met at any point inside the window.',
-      prompt: 'Welcher Satz beschreibt eine Frist, die man jederzeit innerhalb des Zeitraums erfüllen kann?',
+      instruction:
+        'Choose the sentence describing a deadline that can be met at any point inside the window.',
+      prompt:
+        'Welcher Satz beschreibt eine Frist, die man jederzeit innerhalb des Zeitraums erfüllen kann?',
       options: [
         { id: 'a', text: 'Ich muss die Aufgabe innerhalb einer Woche abgeben.' },
         { id: 'b', text: 'Ich arbeite während der ganzen Woche an der Aufgabe.' },
@@ -528,7 +615,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'd', text: 'Ich arbeite bis zu einer Woche an der Aufgabe.' },
       ],
       correctOptionId: 'a',
-      explanation: 'innerhalb names a bounded window inside which the deadline can be met at any moment; während would mean the work fills the entire week.',
+      explanation:
+        'innerhalb names a bounded window inside which the deadline can be met at any moment; während would mean the work fills the entire week.',
     },
     {
       id: 'ch83-ex-14',
@@ -537,8 +625,10 @@ export const chapter083: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['außerhalb', 'notice-rewriting'],
-      instruction: 'Choose the sentence that correctly rewrites the notice with the same meaning.',
-      prompt: 'Welcher Satz drückt denselben Sinn aus wie: "Das Büro ist am Wochenende nicht erreichbar."?',
+      instruction:
+        'Choose the sentence that correctly rewrites the notice with the same meaning.',
+      prompt:
+        'Welcher Satz drückt denselben Sinn aus wie: "Das Büro ist am Wochenende nicht erreichbar."?',
       options: [
         { id: 'a', text: 'Das Büro ist außerhalb der Geschäftszeiten nicht erreichbar.' },
         { id: 'b', text: 'Das Büro ist innerhalb der Geschäftszeiten nicht erreichbar.' },
@@ -546,7 +636,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'd', text: 'Das Büro ist bis zu den Geschäftszeiten nicht erreichbar.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The weekend falls outside normal business hours, so außerhalb der Geschäftszeiten is the correct paraphrase; innerhalb would wrongly claim the office is unreachable during business hours.',
+      explanation:
+        'The weekend falls outside normal business hours, so außerhalb der Geschäftszeiten is the correct paraphrase; innerhalb would wrongly claim the office is unreachable during business hours.',
     },
     {
       id: 'ch83-ex-15',
@@ -591,7 +682,8 @@ export const chapter083: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'während',
       maxLength: 15,
-      explanation: 'während marks a duration that fills the entire named period, here the whole summer.',
+      explanation:
+        'während marks a duration that fills the entire named period, here the whole summer.',
     },
     {
       id: 'ch83-ex-18',
@@ -636,7 +728,8 @@ export const chapter083: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'bis zu',
       maxLength: 15,
-      explanation: 'Before an article-bearing noun phrase, the endpoint is expressed with bis zu + dative.',
+      explanation:
+        'Before an article-bearing noun phrase, the endpoint is expressed with bis zu + dative.',
     },
     {
       id: 'ch83-ex-21',
@@ -645,13 +738,15 @@ export const chapter083: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['von-an', 'fill-in'],
-      instruction: 'Write the missing word that closes the expression. Capitalisation is not checked.',
+      instruction:
+        'Write the missing word that closes the expression. Capitalisation is not checked.',
       prompt: 'Von diesem Tag ___ gilt die neue Regel.',
       acceptedAnswers: ['an'],
       answerMode: 'caseInsensitive',
       placeholder: 'an',
       maxLength: 15,
-      explanation: 'von ... an is a fixed two-part frame; an closes it and marks the open-ended starting point.',
+      explanation:
+        'von ... an is a fixed two-part frame; an closes it and marks the open-ended starting point.',
     },
     {
       id: 'ch83-ex-22',
@@ -666,7 +761,8 @@ export const chapter083: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'einer',
       maxLength: 15,
-      explanation: 'die Woche is feminine; its genitive singular indefinite article is einer.',
+      explanation:
+        'die Woche is feminine; its genitive singular indefinite article is einer.',
     },
     {
       id: 'ch83-ex-23',
@@ -681,7 +777,8 @@ export const chapter083: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'des',
       maxLength: 15,
-      explanation: 'der Sommer is masculine; its genitive singular definite article is des, and the noun itself adds -s: des Sommers.',
+      explanation:
+        'der Sommer is masculine; its genitive singular definite article is des, and the noun itself adds -s: des Sommers.',
     },
     {
       id: 'ch83-ex-24',
@@ -711,7 +808,8 @@ export const chapter083: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'nächstem',
       maxLength: 15,
-      explanation: 'With no article present, the adjective before a masculine dative singular noun takes the strong ending -em: nächstem Montag.',
+      explanation:
+        'With no article present, the adjective before a masculine dative singular noun takes the strong ending -em: nächstem Montag.',
     },
     {
       id: 'ch83-ex-26',
@@ -720,13 +818,15 @@ export const chapter083: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['innerhalb', 'genitive', 'error-correction'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Innerhalb einem Jahr melde ich mich.',
       acceptedAnswers: ['Innerhalb eines Jahres melde ich mich.'],
       answerMode: 'normalized',
       placeholder: 'Innerhalb eines Jahres ...',
       maxLength: 60,
-      explanation: 'innerhalb governs the genitive, not the dative; einem Jahr must become eines Jahres.',
+      explanation:
+        'innerhalb governs the genitive, not the dative; einem Jahr must become eines Jahres.',
     },
     {
       id: 'ch83-ex-27',
@@ -735,13 +835,15 @@ export const chapter083: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['seit', 'dative', 'error-correction'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Seit einen Monat lerne ich Deutsch.',
       acceptedAnswers: ['Seit einem Monat lerne ich Deutsch.'],
       answerMode: 'normalized',
       placeholder: 'Seit einem Monat ...',
       maxLength: 60,
-      explanation: 'seit governs the dative, not the accusative; einen Monat must become einem Monat.',
+      explanation:
+        'seit governs the dative, not the accusative; einen Monat must become einem Monat.',
     },
     {
       id: 'ch83-ex-28',
@@ -753,11 +855,15 @@ export const chapter083: ChapterDefinition = {
       instruction:
         'Write a complete notice sentence using the cues and the correct preposition. Capitalisation is checked; no full stop is required.',
       prompt: 'die Bewerbung – möglich sein – bis zu – die Ferien',
-      acceptedAnswers: ['Die Bewerbung ist bis zu den Ferien möglich.', 'Die Bewerbung ist bis zu den Ferien möglich'],
+      acceptedAnswers: [
+        'Die Bewerbung ist bis zu den Ferien möglich.',
+        'Die Bewerbung ist bis zu den Ferien möglich',
+      ],
       answerMode: 'normalized',
       placeholder: 'Die Bewerbung ist bis zu ...',
       maxLength: 60,
-      explanation: 'bis zu + dative names the closing endpoint of the registration window: bis zu den Ferien.',
+      explanation:
+        'bis zu + dative names the closing endpoint of the registration window: bis zu den Ferien.',
     },
     {
       id: 'ch83-ex-29',
@@ -790,7 +896,8 @@ export const chapter083: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'seit',
       maxLength: 15,
-      explanation: 'seit + dative marks a starting point in the past that continues up to now.',
+      explanation:
+        'seit + dative marks a starting point in the past that continues up to now.',
     },
     {
       id: 'ch83-ex-31',
@@ -804,7 +911,8 @@ export const chapter083: ChapterDefinition = {
       templateParts: ['Während ', ' Winters bleibt die Firma geschlossen.'],
       slots: [{ id: 's1', correctWord: 'des' }],
       wordBank: ['des', 'dem', 'der', 'den'],
-      explanation: 'der Winter is masculine; its genitive singular definite article is des, and the noun adds -s: des Winters.',
+      explanation:
+        'der Winter is masculine; its genitive singular definite article is des, and the noun adds -s: des Winters.',
     },
     {
       id: 'ch83-ex-32',
@@ -824,7 +932,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'p6', left: 'bis zu', right: 'up until, closing endpoint' },
         { id: 'p7', left: 'von ... an', right: 'from ... onward, formal' },
       ],
-      explanation: 'Each of the seven expressions marks a distinct direction or shape on the timeline.',
+      explanation:
+        'Each of the seven expressions marks a distinct direction or shape on the timeline.',
     },
     {
       id: 'ch83-ex-33',
@@ -838,7 +947,8 @@ export const chapter083: ChapterDefinition = {
       tokens: ['Während', 'dem', 'Woche', 'habe', 'ich', 'wenig', 'Zeit.'],
       errorTokenIndex: 1,
       correction: 'der',
-      explanation: 'während governs the genitive; die Woche (feminine) takes der Woche, not the dative dem Woche.',
+      explanation:
+        'während governs the genitive; die Woche (feminine) takes der Woche, not the dative dem Woche.',
     },
     {
       id: 'ch83-ex-34',
@@ -856,7 +966,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'd', text: 'außerhalb den Saison' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Saison is feminine; its genitive singular definite article is der: außerhalb der Saison.',
+      explanation:
+        'die Saison is feminine; its genitive singular definite article is der: außerhalb der Saison.',
     },
     {
       id: 'ch83-ex-35',
@@ -871,7 +982,8 @@ export const chapter083: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'nächster',
       maxLength: 15,
-      explanation: 'With no article present, the adjective before a feminine dative singular noun takes the strong ending -er: nächster Woche.',
+      explanation:
+        'With no article present, the adjective before a feminine dative singular noun takes the strong ending -er: nächster Woche.',
     },
     {
       id: 'ch83-ex-36',
@@ -885,7 +997,8 @@ export const chapter083: ChapterDefinition = {
       templateParts: ['Das Geschäft hat bis ', ' Wochenende geöffnet.'],
       slots: [{ id: 's1', correctWord: 'zum' }],
       wordBank: ['zum', 'zur', 'dem', 'der'],
-      explanation: 'zu + dem contracts to zum before the neuter dative noun das Wochenende.',
+      explanation:
+        'zu + dem contracts to zum before the neuter dative noun das Wochenende.',
     },
     {
       id: 'ch83-ex-37',
@@ -919,7 +1032,8 @@ export const chapter083: ChapterDefinition = {
       tokens: ['Seit', 'einen', 'Monat', 'spielt', 'sie', 'Klavier.'],
       errorTokenIndex: 1,
       correction: 'einem',
-      explanation: 'seit governs the dative; einen Monat is accusative and must become einem Monat.',
+      explanation:
+        'seit governs the dative; einen Monat is accusative and must become einem Monat.',
     },
     {
       id: 'ch83-ex-39',
@@ -936,7 +1050,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'seg3', text: 'ich' },
         { id: 'seg4', text: 'im neuen Büro.' },
       ],
-      explanation: 'The time expression Ab nächstem Montag opens the sentence, followed by the verb, subject, and remaining elements.',
+      explanation:
+        'The time expression Ab nächstem Montag opens the sentence, followed by the verb, subject, and remaining elements.',
     },
     {
       id: 'ch83-ex-40',
@@ -954,7 +1069,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'd', text: 'up until a closing endpoint' },
       ],
       correctOptionId: 'a',
-      explanation: 'von ... an is a formal, open-ended starting-point expression, similar to ab.',
+      explanation:
+        'von ... an is a formal, open-ended starting-point expression, similar to ab.',
     },
     {
       id: 'ch83-ex-41',
@@ -963,13 +1079,15 @@ export const chapter083: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['bis-zu', 'dative', 'error-correction'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Die Anmeldung ist bis der Prüfung möglich.',
       acceptedAnswers: ['Die Anmeldung ist bis zur Prüfung möglich.'],
       answerMode: 'normalized',
       placeholder: 'Die Anmeldung ist bis zur ...',
       maxLength: 60,
-      explanation: 'Before an article-bearing noun, bis needs the added zu and the dative case; zu + der contracts to zur before feminine nouns.',
+      explanation:
+        'Before an article-bearing noun, bis needs the added zu and the dative case; zu + der contracts to zur before feminine nouns.',
     },
     {
       id: 'ch83-ex-42',
@@ -983,7 +1101,8 @@ export const chapter083: ChapterDefinition = {
       templateParts: ['', ' sofort gilt die neue Hausordnung.'],
       slots: [{ id: 's1', correctWord: 'Ab' }],
       wordBank: ['Ab', 'Seit', 'Bis', 'Während'],
-      explanation: 'ab sofort is a fixed idiom meaning "effective immediately", built on the open-ended ab.',
+      explanation:
+        'ab sofort is a fixed idiom meaning "effective immediately", built on the open-ended ab.',
     },
     {
       id: 'ch83-ex-43',
@@ -1002,7 +1121,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'p5', left: 'ab sofort', right: 'effective immediately' },
         { id: 'p6', left: 'bis zum Wochenende', right: 'until the weekend' },
       ],
-      explanation: 'Each phrase pairs a temporal preposition with its correctly inflected noun and its English equivalent.',
+      explanation:
+        'Each phrase pairs a temporal preposition with its correctly inflected noun and its English equivalent.',
     },
     {
       id: 'ch83-ex-44',
@@ -1016,7 +1136,8 @@ export const chapter083: ChapterDefinition = {
       tokens: ['Ab', 'nächsten', 'Montag', 'gilt', 'die', 'neue', 'Regel.'],
       errorTokenIndex: 1,
       correction: 'nächstem',
-      explanation: 'ab governs the dative; nächsten Montag is accusative and must become the dative nächstem Montag.',
+      explanation:
+        'ab governs the dative; nächsten Montag is accusative and must become the dative nächstem Montag.',
     },
     {
       id: 'ch83-ex-45',
@@ -1025,7 +1146,8 @@ export const chapter083: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['während', 'innerhalb', 'deadline-interpretation'],
-      instruction: 'Choose the sentence describing an action that fills the whole period.',
+      instruction:
+        'Choose the sentence describing an action that fills the whole period.',
       prompt: 'Welcher Satz beschreibt eine Handlung, die den ganzen Zeitraum ausfüllt?',
       options: [
         { id: 'a', text: 'Ich schreibe während des ganzen Semesters an meiner Arbeit.' },
@@ -1034,7 +1156,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'd', text: 'Ich arbeite bis zu einem Monat an der Arbeit.' },
       ],
       correctOptionId: 'a',
-      explanation: 'während + genitive marks an action spanning the entire period; the others mark a deadline, a starting point, or an endpoint instead.',
+      explanation:
+        'während + genitive marks an action spanning the entire period; the others mark a deadline, a starting point, or an endpoint instead.',
     },
     {
       id: 'ch83-ex-46',
@@ -1063,7 +1186,8 @@ export const chapter083: ChapterDefinition = {
       templateParts: ['Die Prüfung findet ', ' des nächsten Monats statt.'],
       slots: [{ id: 's1', correctWord: 'innerhalb' }],
       wordBank: ['innerhalb', 'außerhalb', 'während', 'seit'],
-      explanation: 'innerhalb marks a bounded window inside which the exam can be scheduled at any point.',
+      explanation:
+        'innerhalb marks a bounded window inside which the exam can be scheduled at any point.',
     },
     {
       id: 'ch83-ex-48',
@@ -1076,13 +1200,22 @@ export const chapter083: ChapterDefinition = {
       prompt: 'Match the sentences to the missing prepositions.',
       pairs: [
         { id: 'p1', left: 'Ich wohne ___ zwei Jahren hier.', right: 'seit' },
-        { id: 'p2', left: '___ der Ferien bleibt die Schule geschlossen.', right: 'während' },
+        {
+          id: 'p2',
+          left: '___ der Ferien bleibt die Schule geschlossen.',
+          right: 'während',
+        },
         { id: 'p3', left: '___ einer Woche muss ich antworten.', right: 'innerhalb' },
-        { id: 'p4', left: 'Das Büro ist ___ der Geschäftszeiten nicht erreichbar.', right: 'außerhalb' },
+        {
+          id: 'p4',
+          left: 'Das Büro ist ___ der Geschäftszeiten nicht erreichbar.',
+          right: 'außerhalb',
+        },
         { id: 'p5', left: '___ sofort gilt die neue Regel.', right: 'ab' },
         { id: 'p6', left: 'Die Anmeldung ist ___ den Ferien möglich.', right: 'bis zu' },
       ],
-      explanation: 'Each sentence needs the preposition whose case and meaning match the noun phrase and context.',
+      explanation:
+        'Each sentence needs the preposition whose case and meaning match the noun phrase and context.',
     },
     {
       id: 'ch83-ex-49',
@@ -1093,10 +1226,20 @@ export const chapter083: ChapterDefinition = {
       grammarFocus: ['innerhalb', 'genitive', 'error-correction'],
       instruction: 'Find and correct the case error.',
       prompt: 'Ich muss das Projekt innerhalb eine Woche abschließen.',
-      tokens: ['Ich', 'muss', 'das', 'Projekt', 'innerhalb', 'eine', 'Woche', 'abschließen.'],
+      tokens: [
+        'Ich',
+        'muss',
+        'das',
+        'Projekt',
+        'innerhalb',
+        'eine',
+        'Woche',
+        'abschließen.',
+      ],
       errorTokenIndex: 5,
       correction: 'einer',
-      explanation: 'innerhalb governs the genitive; eine Woche is nominative/accusative and must become the genitive einer Woche.',
+      explanation:
+        'innerhalb governs the genitive; eine Woche is nominative/accusative and must become the genitive einer Woche.',
     },
     {
       id: 'ch83-ex-50',
@@ -1113,7 +1256,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'seg3', text: 'bis zu den Ferien' },
         { id: 'seg4', text: 'möglich.' },
       ],
-      explanation: 'The subject comes first, followed by the finite verb, the prepositional phrase, and the predicate adjective.',
+      explanation:
+        'The subject comes first, followed by the finite verb, the prepositional phrase, and the predicate adjective.',
     },
     {
       id: 'ch83-ex-51',
@@ -1131,7 +1275,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'd', text: 'seit letztes Montag' },
       ],
       correctOptionId: 'a',
-      explanation: 'With no article present, the adjective before a masculine dative singular noun takes the strong ending -em: letztem Montag.',
+      explanation:
+        'With no article present, the adjective before a masculine dative singular noun takes the strong ending -em: letztem Montag.',
     },
     {
       id: 'ch83-ex-52',
@@ -1160,7 +1305,8 @@ export const chapter083: ChapterDefinition = {
       templateParts: ['Von ', ' Tag an gilt die neue Regel.'],
       slots: [{ id: 's1', correctWord: 'diesem' }],
       wordBank: ['diesem', 'diesen', 'dieser', 'dieses'],
-      explanation: 'der Tag is masculine; its dative singular form of dieser is diesem: von diesem Tag an.',
+      explanation:
+        'der Tag is masculine; its dative singular form of dieser is diesem: von diesem Tag an.',
     },
     {
       id: 'ch83-ex-54',
@@ -1172,13 +1318,34 @@ export const chapter083: ChapterDefinition = {
       instruction: 'Match each German sentence to its English translation.',
       prompt: 'Match the sentences to their translations.',
       pairs: [
-        { id: 'p1', left: 'Während des Sommers arbeite ich in einem Café.', right: 'During the summer, I work in a café.' },
-        { id: 'p2', left: 'Ab sofort gilt die neue Hausordnung.', right: 'Effective immediately, the new house rules apply.' },
-        { id: 'p3', left: 'Die Anmeldung ist bis zu den Ferien möglich.', right: 'Registration is possible up until the holidays.' },
-        { id: 'p4', left: 'Von nächster Woche an arbeite ich nur noch vier Tage.', right: 'From next week onward, I will only work four days.' },
-        { id: 'p5', left: 'Das Büro ist außerhalb der Geschäftszeiten nicht erreichbar.', right: 'The office cannot be reached outside business hours.' },
+        {
+          id: 'p1',
+          left: 'Während des Sommers arbeite ich in einem Café.',
+          right: 'During the summer, I work in a café.',
+        },
+        {
+          id: 'p2',
+          left: 'Ab sofort gilt die neue Hausordnung.',
+          right: 'Effective immediately, the new house rules apply.',
+        },
+        {
+          id: 'p3',
+          left: 'Die Anmeldung ist bis zu den Ferien möglich.',
+          right: 'Registration is possible up until the holidays.',
+        },
+        {
+          id: 'p4',
+          left: 'Von nächster Woche an arbeite ich nur noch vier Tage.',
+          right: 'From next week onward, I will only work four days.',
+        },
+        {
+          id: 'p5',
+          left: 'Das Büro ist außerhalb der Geschäftszeiten nicht erreichbar.',
+          right: 'The office cannot be reached outside business hours.',
+        },
       ],
-      explanation: 'Each sentence illustrates one of the timeline directions covered in this chapter.',
+      explanation:
+        'Each sentence illustrates one of the timeline directions covered in this chapter.',
     },
     {
       id: 'ch83-ex-55',
@@ -1192,7 +1359,8 @@ export const chapter083: ChapterDefinition = {
       tokens: ['Von', 'diesen', 'Tag', 'an', 'gilt', 'die', 'neue', 'Regel.'],
       errorTokenIndex: 1,
       correction: 'diesem',
-      explanation: 'von ... an governs the dative; diesen Tag is accusative and must become the dative diesem Tag.',
+      explanation:
+        'von ... an governs the dative; diesen Tag is accusative and must become the dative diesem Tag.',
     },
     {
       id: 'ch83-ex-56',
@@ -1202,7 +1370,8 @@ export const chapter083: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['von-an', 'ab', 'register'],
       instruction: 'Choose the more formal expression.',
-      prompt: 'Welcher Ausdruck ist formeller und typischer für offizielle Bekanntmachungen?',
+      prompt:
+        'Welcher Ausdruck ist formeller und typischer für offizielle Bekanntmachungen?',
       options: [
         { id: 'a', text: 'von ... an' },
         { id: 'b', text: 'ab' },
@@ -1210,7 +1379,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'd', text: 'bis zu' },
       ],
       correctOptionId: 'a',
-      explanation: 'von ... an is somewhat more formal and emphatic than ab, and common in official announcements and written notices.',
+      explanation:
+        'von ... an is somewhat more formal and emphatic than ab, and common in official announcements and written notices.',
     },
     {
       id: 'ch83-ex-57',
@@ -1225,7 +1395,8 @@ export const chapter083: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'der',
       maxLength: 15,
-      explanation: 'die Geschäftszeiten is feminine plural; its genitive plural definite article is der.',
+      explanation:
+        'die Geschäftszeiten is feminine plural; its genitive plural definite article is der.',
     },
     {
       id: 'ch83-ex-58',
@@ -1239,7 +1410,8 @@ export const chapter083: ChapterDefinition = {
       templateParts: ['Er hat sich ', ' einer Woche nicht gemeldet.'],
       slots: [{ id: 's1', correctWord: 'seit' }],
       wordBank: ['seit', 'ab', 'während', 'bis zu'],
-      explanation: 'He has been out of touch since a week ago and still is now, which is the backward-and-ongoing meaning of seit.',
+      explanation:
+        'He has been out of touch since a week ago and still is now, which is the backward-and-ongoing meaning of seit.',
     },
     {
       id: 'ch83-ex-59',
@@ -1248,7 +1420,8 @@ export const chapter083: ChapterDefinition = {
       type: 'matching',
       level: 'transfer',
       grammarFocus: ['timeline-direction', 'overview'],
-      instruction: 'Match each preposition to the direction it expresses on the timeline.',
+      instruction:
+        'Match each preposition to the direction it expresses on the timeline.',
       prompt: 'Match the prepositions to their timeline direction.',
       pairs: [
         { id: 'p1', left: 'seit', right: 'backward-and-ongoing' },
@@ -1258,7 +1431,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'p5', left: 'während', right: 'spanning-the-whole-period' },
         { id: 'p6', left: 'außerhalb', right: 'outside-a-window' },
       ],
-      explanation: 'These six directions cover almost every nuanced timeline statement at this level.',
+      explanation:
+        'These six directions cover almost every nuanced timeline statement at this level.',
     },
     {
       id: 'ch83-ex-60',
@@ -1272,7 +1446,8 @@ export const chapter083: ChapterDefinition = {
       tokens: ['Die', 'Schule', 'ist', 'bis', 'zu', 'die', 'Ferien', 'geöffnet.'],
       errorTokenIndex: 5,
       correction: 'den',
-      explanation: 'bis zu governs the dative; die Ferien is nominative/accusative plural and must become the dative den Ferien.',
+      explanation:
+        'bis zu governs the dative; die Ferien is nominative/accusative plural and must become the dative den Ferien.',
     },
     {
       id: 'ch83-ex-61',
@@ -1289,7 +1464,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'seg3', text: 'ich' },
         { id: 'seg4', text: 'in einem Café.' },
       ],
-      explanation: 'The time expression Während des Sommers opens the sentence, followed by the verb, subject, and remaining elements.',
+      explanation:
+        'The time expression Während des Sommers opens the sentence, followed by the verb, subject, and remaining elements.',
     },
     {
       id: 'ch83-ex-62',
@@ -1298,7 +1474,8 @@ export const chapter083: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['bis', 'bare-bis', 'article-less-noun'],
-      instruction: 'Choose the sentence that correctly uses bare bis before an article-less noun.',
+      instruction:
+        'Choose the sentence that correctly uses bare bis before an article-less noun.',
       prompt: 'Which sentence is correct?',
       options: [
         { id: 'a', text: 'Die Prüfung ist bis Freitag verschoben.' },
@@ -1307,7 +1484,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'd', text: 'Die Prüfung ist bis dem Freitag verschoben.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Before a bare day with no article, bis alone is used without zu: bis Freitag.',
+      explanation:
+        'Before a bare day with no article, bis alone is used without zu: bis Freitag.',
     },
     {
       id: 'ch83-ex-63',
@@ -1322,7 +1500,8 @@ export const chapter083: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'bis',
       maxLength: 15,
-      explanation: 'Before a bare weekday with no article, bis is used alone, without zu.',
+      explanation:
+        'Before a bare weekday with no article, bis is used alone, without zu.',
     },
     {
       id: 'ch83-ex-64',
@@ -1336,7 +1515,8 @@ export const chapter083: ChapterDefinition = {
       templateParts: ['Das neue Gesetz gilt ', ' dem 1. Januar.'],
       slots: [{ id: 's1', correctWord: 'ab' }],
       wordBank: ['ab', 'seit', 'bis zu', 'während'],
-      explanation: 'ab names a starting point in the present or future, with no end mentioned.',
+      explanation:
+        'ab names a starting point in the present or future, with no end mentioned.',
     },
     {
       id: 'ch83-ex-65',
@@ -1351,11 +1531,20 @@ export const chapter083: ChapterDefinition = {
         { id: 'p1', left: 'Sie arbeitet ___ Montag in der neuen Firma.', right: 'ab' },
         { id: 'p2', left: 'Der Vertrag läuft ___ Ende des Jahres.', right: 'bis' },
         { id: 'p3', left: '___ drei Jahren lebt sie in München.', right: 'seit' },
-        { id: 'p4', left: 'Der Supermarkt ist ___ der Öffnungszeiten geschlossen.', right: 'außerhalb' },
+        {
+          id: 'p4',
+          left: 'Der Supermarkt ist ___ der Öffnungszeiten geschlossen.',
+          right: 'außerhalb',
+        },
         { id: 'p5', left: '___ meines Urlaubs war ich in Italien.', right: 'während' },
-        { id: 'p6', left: '___ zwei Wochen muss das Formular eingereicht werden.', right: 'innerhalb' },
+        {
+          id: 'p6',
+          left: '___ zwei Wochen muss das Formular eingereicht werden.',
+          right: 'innerhalb',
+        },
       ],
-      explanation: 'Each sentence needs the preposition whose case and meaning match the noun phrase and context.',
+      explanation:
+        'Each sentence needs the preposition whose case and meaning match the noun phrase and context.',
     },
     {
       id: 'ch83-ex-66',
@@ -1366,10 +1555,20 @@ export const chapter083: ChapterDefinition = {
       grammarFocus: ['außerhalb', 'genitive', 'error-correction'],
       instruction: 'Find and correct the case error.',
       prompt: 'Das Büro ist außerhalb den Geschäftszeiten nicht erreichbar.',
-      tokens: ['Das', 'Büro', 'ist', 'außerhalb', 'den', 'Geschäftszeiten', 'nicht', 'erreichbar.'],
+      tokens: [
+        'Das',
+        'Büro',
+        'ist',
+        'außerhalb',
+        'den',
+        'Geschäftszeiten',
+        'nicht',
+        'erreichbar.',
+      ],
       errorTokenIndex: 4,
       correction: 'der',
-      explanation: 'außerhalb governs the genitive; den Geschäftszeiten is dative and must become the genitive der Geschäftszeiten.',
+      explanation:
+        'außerhalb governs the genitive; den Geschäftszeiten is dative and must become the genitive der Geschäftszeiten.',
     },
     {
       id: 'ch83-ex-67',
@@ -1387,7 +1586,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'd', text: 'since last week' },
       ],
       correctOptionId: 'a',
-      explanation: 'ab sofort is a fixed idiom meaning "effective immediately", built on the open-ended ab.',
+      explanation:
+        'ab sofort is a fixed idiom meaning "effective immediately", built on the open-ended ab.',
     },
     {
       id: 'ch83-ex-68',
@@ -1396,13 +1596,15 @@ export const chapter083: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['innerhalb', 'während', 'error-correction'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ich muss den Bericht während einem Monat schreiben.',
       acceptedAnswers: ['Ich muss den Bericht innerhalb eines Monats schreiben.'],
       answerMode: 'normalized',
       placeholder: 'Ich muss den Bericht innerhalb ...',
       maxLength: 60,
-      explanation: 'A deadline that can be met at any point inside the window uses innerhalb + genitive, not während, which would mean the writing fills the entire month.',
+      explanation:
+        'A deadline that can be met at any point inside the window uses innerhalb + genitive, not während, which would mean the writing fills the entire month.',
     },
     {
       id: 'ch83-ex-69',
@@ -1416,7 +1618,8 @@ export const chapter083: ChapterDefinition = {
       templateParts: ['Der Kurs beginnt ', ' nächster Woche.'],
       slots: [{ id: 's1', correctWord: 'ab' }],
       wordBank: ['ab', 'seit', 'während', 'bis zu'],
-      explanation: 'ab marks a starting point in the future with no end named: ab nächster Woche.',
+      explanation:
+        'ab marks a starting point in the future with no end named: ab nächster Woche.',
     },
     {
       id: 'ch83-ex-70',
@@ -1428,15 +1631,32 @@ export const chapter083: ChapterDefinition = {
       instruction: 'Match each scenario to the preposition it needs.',
       prompt: 'Match the scenarios to the correct preposition.',
       pairs: [
-        { id: 'p1', left: 'eine Woche (Frist, die man jederzeit erfüllen kann)', right: 'innerhalb' },
-        { id: 'p2', left: 'die Geschäftszeiten (das Gegenteil von "innerhalb")', right: 'außerhalb' },
-        { id: 'p3', left: 'der Sommer (die Handlung füllt die ganze Zeit)', right: 'während' },
-        { id: 'p4', left: 'ein Jahr (Beginn in der Vergangenheit, dauert an)', right: 'seit' },
+        {
+          id: 'p1',
+          left: 'eine Woche (Frist, die man jederzeit erfüllen kann)',
+          right: 'innerhalb',
+        },
+        {
+          id: 'p2',
+          left: 'die Geschäftszeiten (das Gegenteil von "innerhalb")',
+          right: 'außerhalb',
+        },
+        {
+          id: 'p3',
+          left: 'der Sommer (die Handlung füllt die ganze Zeit)',
+          right: 'während',
+        },
+        {
+          id: 'p4',
+          left: 'ein Jahr (Beginn in der Vergangenheit, dauert an)',
+          right: 'seit',
+        },
         { id: 'p5', left: 'nächster Montag (Beginn in der Zukunft, offen)', right: 'ab' },
         { id: 'p6', left: 'die Ferien (Endpunkt)', right: 'bis zu' },
         { id: 'p7', left: 'dieser Tag (formeller offener Beginn)', right: 'von ... an' },
       ],
-      explanation: 'Each scenario describes the shape of time that one specific preposition is built to express.',
+      explanation:
+        'Each scenario describes the shape of time that one specific preposition is built to express.',
     },
     {
       id: 'ch83-ex-71',
@@ -1447,10 +1667,21 @@ export const chapter083: ChapterDefinition = {
       grammarFocus: ['seit', 'dative', 'adjective-ending', 'error-correction'],
       instruction: 'Find and correct the case error.',
       prompt: 'Seit letzten Montag ist die neue Regel in Kraft.',
-      tokens: ['Seit', 'letzten', 'Montag', 'ist', 'die', 'neue', 'Regel', 'in', 'Kraft.'],
+      tokens: [
+        'Seit',
+        'letzten',
+        'Montag',
+        'ist',
+        'die',
+        'neue',
+        'Regel',
+        'in',
+        'Kraft.',
+      ],
       errorTokenIndex: 1,
       correction: 'letztem',
-      explanation: 'With no article present, the adjective before a masculine dative singular noun takes the strong ending -em: letztem Montag, not letzten.',
+      explanation:
+        'With no article present, the adjective before a masculine dative singular noun takes the strong ending -em: letztem Montag, not letzten.',
     },
     {
       id: 'ch83-ex-72',
@@ -1466,7 +1697,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'seg2', text: 'gilt' },
         { id: 'seg3', text: 'die neue Hausordnung.' },
       ],
-      explanation: 'The time expression Ab sofort opens the sentence, followed by the finite verb and the subject.',
+      explanation:
+        'The time expression Ab sofort opens the sentence, followed by the finite verb and the subject.',
     },
     {
       id: 'ch83-ex-73',
@@ -1484,7 +1716,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'd', text: 'Innerhalb dieses Tages gilt die neue Regel.' },
       ],
       correctOptionId: 'a',
-      explanation: 'von ... an is more formal and typical of official announcements than the otherwise similar ab.',
+      explanation:
+        'von ... an is more formal and typical of official announcements than the otherwise similar ab.',
     },
     {
       id: 'ch83-ex-74',
@@ -1499,7 +1732,8 @@ export const chapter083: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'zur',
       maxLength: 15,
-      explanation: 'zu + der contracts to zur before a feminine dative noun: bis zur Sitzung.',
+      explanation:
+        'zu + der contracts to zur before a feminine dative noun: bis zur Sitzung.',
     },
     {
       id: 'ch83-ex-75',
@@ -1532,7 +1766,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'p5', left: 'bis zum Wochenende', right: 'until the weekend' },
         { id: 'p6', left: 'von diesem Tag an', right: 'from this day onward' },
       ],
-      explanation: 'Each phrase pairs a temporal preposition with its correctly inflected noun and its English equivalent.',
+      explanation:
+        'Each phrase pairs a temporal preposition with its correctly inflected noun and its English equivalent.',
     },
     {
       id: 'ch83-ex-77',
@@ -1546,7 +1781,8 @@ export const chapter083: ChapterDefinition = {
       tokens: ['Während', 'mein', 'Studiums', 'war', 'ich', 'oft', 'müde.'],
       errorTokenIndex: 1,
       correction: 'meines',
-      explanation: 'während governs the genitive; the possessive before a neuter genitive noun needs the ending -es: meines Studiums.',
+      explanation:
+        'während governs the genitive; the possessive before a neuter genitive noun needs the ending -es: meines Studiums.',
     },
     {
       id: 'ch83-ex-78',
@@ -1564,7 +1800,8 @@ export const chapter083: ChapterDefinition = {
         { id: 'd', text: 'Bis zu' },
       ],
       correctOptionId: 'a',
-      explanation: 'The learning happened throughout the entire course of study, which is the spanning-the-whole-period meaning of während.',
+      explanation:
+        'The learning happened throughout the entire course of study, which is the spanning-the-whole-period meaning of während.',
     },
     {
       id: 'ch83-ex-79',
@@ -1579,7 +1816,8 @@ export const chapter083: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'der',
       maxLength: 15,
-      explanation: 'die Saison is feminine; its genitive singular definite article is der.',
+      explanation:
+        'die Saison is feminine; its genitive singular definite article is der.',
     },
     {
       id: 'ch83-ex-80',
@@ -1593,7 +1831,8 @@ export const chapter083: ChapterDefinition = {
       templateParts: ['Ich habe das Buch ', ' eines Sommers gelesen.'],
       slots: [{ id: 's1', correctWord: 'innerhalb' }],
       wordBank: ['innerhalb', 'während', 'seit', 'bis zu'],
-      explanation: 'innerhalb only guarantees the reading finished sometime before the summer ended, not that it took the whole season, unlike während.',
+      explanation:
+        'innerhalb only guarantees the reading finished sometime before the summer ended, not that it took the whole season, unlike während.',
     },
     {
       id: 'ch83-ex-81',
@@ -1605,12 +1844,29 @@ export const chapter083: ChapterDefinition = {
       instruction: 'Match each sentence to its paraphrase.',
       prompt: 'Match the sentences to their paraphrases.',
       pairs: [
-        { id: 'p1', left: 'Innerhalb einer Woche muss ich antworten.', right: 'Die Frist kann an jedem Tag der Woche erfüllt werden.' },
-        { id: 'p2', left: 'Während der Woche habe ich wenig Zeit.', right: 'Die ganze Woche über bin ich beschäftigt.' },
-        { id: 'p3', left: 'Außerhalb der Geschäftszeiten ist niemand da.', right: 'Nach Feierabend ist das Büro leer.' },
-        { id: 'p4', left: 'Ab sofort gilt die neue Regel.', right: 'Von jetzt an muss man sich daran halten.' },
+        {
+          id: 'p1',
+          left: 'Innerhalb einer Woche muss ich antworten.',
+          right: 'Die Frist kann an jedem Tag der Woche erfüllt werden.',
+        },
+        {
+          id: 'p2',
+          left: 'Während der Woche habe ich wenig Zeit.',
+          right: 'Die ganze Woche über bin ich beschäftigt.',
+        },
+        {
+          id: 'p3',
+          left: 'Außerhalb der Geschäftszeiten ist niemand da.',
+          right: 'Nach Feierabend ist das Büro leer.',
+        },
+        {
+          id: 'p4',
+          left: 'Ab sofort gilt die neue Regel.',
+          right: 'Von jetzt an muss man sich daran halten.',
+        },
       ],
-      explanation: 'Each paraphrase restates the nuance of the temporal expression in different words.',
+      explanation:
+        'Each paraphrase restates the nuance of the temporal expression in different words.',
     },
     {
       id: 'ch83-ex-82',
@@ -1624,7 +1880,8 @@ export const chapter083: ChapterDefinition = {
       tokens: ['Der', 'Verkauf', 'dauert', 'bis', 'zu', 'die', 'Ferien.'],
       errorTokenIndex: 5,
       correction: 'den',
-      explanation: 'bis zu governs the dative; die Ferien is nominative/accusative plural and must become the dative den Ferien.',
+      explanation:
+        'bis zu governs the dative; die Ferien is nominative/accusative plural and must become the dative den Ferien.',
     },
     {
       id: 'ch83-ex-83',
@@ -1652,7 +1909,8 @@ export const chapter083: ChapterDefinition = {
       templateParts: ['Die Bibliothek ist ', ' der Prüfungszeit länger geöffnet.'],
       slots: [{ id: 's1', correctWord: 'während' }],
       wordBank: ['während', 'innerhalb', 'seit', 'ab'],
-      explanation: 'The longer opening hours apply throughout the entire exam period, which is the spanning meaning of während.',
+      explanation:
+        'The longer opening hours apply throughout the entire exam period, which is the spanning meaning of während.',
     },
     {
       id: 'ch83-ex-85',
@@ -1666,7 +1924,8 @@ export const chapter083: ChapterDefinition = {
       templateParts: ['', ' zwei Wochen muss das Formular eingereicht werden.'],
       slots: [{ id: 's1', correctWord: 'Innerhalb' }],
       wordBank: ['Innerhalb', 'Während', 'Außerhalb', 'Seit'],
-      explanation: 'innerhalb names a bounded window inside which the form can be submitted at any point.',
+      explanation:
+        'innerhalb names a bounded window inside which the form can be submitted at any point.',
     },
     {
       id: 'ch83-ex-86',
@@ -1680,7 +1939,8 @@ export const chapter083: ChapterDefinition = {
       templateParts: ['Der Laden hat ', ' der Feiertage geschlossen.'],
       slots: [{ id: 's1', correctWord: 'während' }],
       wordBank: ['während', 'innerhalb', 'außerhalb', 'seit'],
-      explanation: 'The shop stays closed for the entire holiday period, which is the spanning meaning of während.',
+      explanation:
+        'The shop stays closed for the entire holiday period, which is the spanning meaning of während.',
     },
     {
       id: 'ch83-ex-87',
@@ -1694,7 +1954,8 @@ export const chapter083: ChapterDefinition = {
       templateParts: ['Die neue Regelung gilt ', ' dem 1. März.'],
       slots: [{ id: 's1', correctWord: 'ab' }],
       wordBank: ['ab', 'seit', 'bis zu', 'während'],
-      explanation: 'ab names a starting point in the present or future, with no end mentioned.',
+      explanation:
+        'ab names a starting point in the present or future, with no end mentioned.',
     },
     {
       id: 'ch83-ex-88',
@@ -1708,7 +1969,8 @@ export const chapter083: ChapterDefinition = {
       templateParts: ['', ' diesem Moment an ändert sich alles.'],
       slots: [{ id: 's1', correctWord: 'Von' }],
       wordBank: ['Von', 'Ab', 'Seit', 'Bis'],
-      explanation: 'von ... an is a fixed two-part frame; von opens it and an closes it around the dative noun phrase.',
+      explanation:
+        'von ... an is a fixed two-part frame; von opens it and an closes it around the dative noun phrase.',
     },
     {
       id: 'ch83-ex-89',
@@ -1736,7 +1998,8 @@ export const chapter083: ChapterDefinition = {
       templateParts: ['Sie hat sich ', ' langer Zeit nicht gemeldet.'],
       slots: [{ id: 's1', correctWord: 'seit' }],
       wordBank: ['seit', 'ab', 'bis zu', 'innerhalb'],
-      explanation: 'seit marks a starting point in the past — she has been out of touch for a long time and still is.',
+      explanation:
+        'seit marks a starting point in the past — she has been out of touch for a long time and still is.',
     },
     {
       id: 'ch83-ex-91',
@@ -1750,7 +2013,8 @@ export const chapter083: ChapterDefinition = {
       templateParts: ['Der Vertrag muss ', ' des Monats unterschrieben werden.'],
       slots: [{ id: 's1', correctWord: 'innerhalb' }],
       wordBank: ['innerhalb', 'während', 'außerhalb', 'seit'],
-      explanation: 'innerhalb names a bounded window inside which the contract can be signed at any point.',
+      explanation:
+        'innerhalb names a bounded window inside which the contract can be signed at any point.',
     },
     {
       id: 'ch83-ex-92',
@@ -1764,7 +2028,8 @@ export const chapter083: ChapterDefinition = {
       templateParts: ['', ' der Nacht ist die Straße gesperrt.'],
       slots: [{ id: 's1', correctWord: 'Während' }],
       wordBank: ['Während', 'Innerhalb', 'Außerhalb', 'Seit'],
-      explanation: 'The street is closed for the entire night, which is the spanning meaning of während.',
+      explanation:
+        'The street is closed for the entire night, which is the spanning meaning of während.',
     },
   ],
 };

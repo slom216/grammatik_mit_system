@@ -6,7 +6,7 @@ import { ANSWER_MODES, EXERCISE_TYPES } from './exerciseSchema';
  * shape requires a bump of `PROGRESS_SCHEMA_VERSION` plus a migration in
  * `features/progress/progressPersistence.ts`.
  */
-export const PROGRESS_SCHEMA_VERSION = 1;
+export const PROGRESS_SCHEMA_VERSION = 2;
 
 export const CHAPTER_STATUSES = [
   'notStarted',
@@ -58,12 +58,34 @@ export interface ExerciseHistory {
   dueAt?: string;
   lastOutcome?: AttemptOutcome;
   lastAnsweredAt?: string;
+  /**
+   * The exercise's own `grammarFocus`, copied here when the answer is recorded.
+   * Reading it off the exercise instead would mean loading chapter bodies to
+   * summarise progress, which is exactly what the code split forbids.
+   */
+  grammarFocus: string[];
+  /**
+   * True once the exercise has ever been answered wrongly — including a first
+   * attempt failed and then corrected, which `timesIncorrect` does not record.
+   * Sticky, and the difference between the two review ladders: material the
+   * learner has struggled with comes back fast, material they have only ever
+   * got right comes back slowly. Only these count towards a chapter's
+   * `maxOpenReviewFlags`.
+   */
+  hasBeenWrong: boolean;
 }
 
-export interface PersistedProgressV1 {
+export interface PersistedProgressV2 {
   schemaVersion: typeof PROGRESS_SCHEMA_VERSION;
   chapters: Record<number, ChapterProgress>;
   exerciseHistory: Record<string, ExerciseHistory>;
+  /**
+   * Exercises answered per local day, `YYYY-MM-DD` → count. A history entry
+   * only remembers when an exercise was answered *last*, so re-answering one
+   * erases the earlier day; the streak and the activity calendar need a record
+   * that additions never overwrite.
+   */
+  answersByDay: Record<string, number>;
   lastOpenedChapter?: number;
 }
 
@@ -92,12 +114,17 @@ export const exerciseHistorySchema = z.object({
   dueAt: z.string().min(1).optional(),
   lastOutcome: z.enum(ATTEMPT_OUTCOMES).optional(),
   lastAnsweredAt: z.string().min(1).optional(),
+  // Defaulted rather than required: entries written before this field existed
+  // are still valid, and fill in again the next time the exercise is answered.
+  grammarFocus: z.array(z.string()).default([]),
+  hasBeenWrong: z.boolean().default(false),
 });
 
-export const persistedProgressV1Schema = z.object({
+export const persistedProgressV2Schema = z.object({
   schemaVersion: z.literal(PROGRESS_SCHEMA_VERSION),
   chapters: z.record(z.string(), chapterProgressSchema),
   exerciseHistory: z.record(z.string(), exerciseHistorySchema),
+  answersByDay: z.record(z.string(), z.number().int().min(0)).default({}),
   lastOpenedChapter: z.number().int().min(0).optional(),
 });
 
@@ -116,7 +143,7 @@ export interface ExerciseAttemptRecord {
   submittedAnswers: string[];
 }
 
-export type PracticeMode = 'chapter' | 'review' | 'cumulative' | 'quick';
+export type PracticeMode = 'chapter' | 'review' | 'cumulative' | 'quick' | 'placement';
 
 export interface PersistedSessionV1 {
   schemaVersion: typeof SESSION_SCHEMA_VERSION;
@@ -148,7 +175,7 @@ export const exerciseAttemptRecordSchema = z.object({
 export const persistedSessionV1Schema = z.object({
   schemaVersion: z.literal(SESSION_SCHEMA_VERSION),
   chapterNumber: z.number().int().min(0),
-  mode: z.enum(['chapter', 'review', 'cumulative', 'quick']),
+  mode: z.enum(['chapter', 'review', 'cumulative', 'quick', 'placement']),
   exerciseIds: z.array(z.string().min(1)),
   optionOrder: z.record(z.string(), z.array(z.string().min(1))),
   segmentOrder: z.record(z.string(), z.array(z.string().min(1))),
@@ -183,7 +210,12 @@ export interface PersistedSettingsV1 {
   defaultAnswerMode: (typeof ANSWER_MODES)[number];
   theme: Theme;
   pronunciationAudio: boolean;
+  /** Exercises to answer per day. `0` turns the goal off. */
+  dailyGoal: number;
 }
+
+/** Offered in Settings; the goal is a count of exercises, not minutes. */
+export const DAILY_GOAL_CHOICES = [0, 10, 20, 40, 60] as const;
 
 export const persistedSettingsV1Schema = z.object({
   schemaVersion: z.literal(SETTINGS_SCHEMA_VERSION),
@@ -198,6 +230,9 @@ export const persistedSettingsV1Schema = z.object({
   // other setting back to its default.
   theme: z.enum(THEMES).catch('system'),
   pronunciationAudio: z.boolean().catch(true),
+  // `.catch` for the same reason as `theme`: a payload written before the goal
+  // existed must not fail the parse and reset every other setting.
+  dailyGoal: z.number().int().min(0).max(200).catch(20),
 });
 
 /** Compile-time proof that the Zod schemas and the interfaces stay in sync. */

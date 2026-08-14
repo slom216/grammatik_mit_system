@@ -112,13 +112,15 @@ export const chapter017: ChapterDefinition = {
         german: 'Ich kaufe einen Apfel.',
         english: 'I am buying an apple.',
         highlight: ['einen Apfel'],
-        explanation: 'Apfel is masculine, so the indefinite article ein becomes einen as the direct object.',
+        explanation:
+          'Apfel is masculine, so the indefinite article ein becomes einen as the direct object.',
       },
       {
         german: 'Er sieht den Hund.',
         english: 'He sees the dog.',
         highlight: ['den Hund'],
-        explanation: 'Hund is masculine, so the definite article der becomes den as the direct object.',
+        explanation:
+          'Hund is masculine, so the definite article der becomes den as the direct object.',
       },
       {
         german: 'Wir brauchen einen Regenschirm.',
@@ -151,31 +153,36 @@ export const chapter017: ChapterDefinition = {
         german: 'Wen siehst du? – Ich sehe den Lehrer.',
         english: 'Whom do you see? – I see the teacher.',
         highlight: ['Wen', 'den Lehrer'],
-        explanation: 'The answer names a person, so the question about the direct object uses wen.',
+        explanation:
+          'The answer names a person, so the question about the direct object uses wen.',
       },
       {
         german: 'Was kaufst du? – Ich kaufe einen Tisch.',
         english: 'What are you buying? – I am buying a table.',
         highlight: ['Was', 'einen Tisch'],
-        explanation: 'The answer names a thing, so the question about the direct object uses was.',
+        explanation:
+          'The answer names a thing, so the question about the direct object uses was.',
       },
       {
         german: 'Kennst du meine Schwester? – Ja, ich kenne sie.',
         english: 'Do you know my sister? – Yes, I know her.',
         highlight: ['sie'],
-        explanation: 'sie (her) is the accusative form used here — for feminine nouns it looks the same as the nominative.',
+        explanation:
+          'sie (her) is the accusative form used here — for feminine nouns it looks the same as the nominative.',
       },
       {
         german: 'Die Kinder essen die Äpfel.',
         english: 'The children are eating the apples.',
         highlight: ['die Äpfel'],
-        explanation: 'Äpfel is plural, so die stays die in the accusative, just as it does in the nominative.',
+        explanation:
+          'Äpfel is plural, so die stays die in the accusative, just as it does in the nominative.',
       },
       {
         german: 'Ich liebe dich.',
         english: 'I love you.',
         highlight: ['dich'],
-        explanation: 'dich is the accusative form of du, used here as the direct object of lieben.',
+        explanation:
+          'dich is the accusative form of du, used here as the direct object of lieben.',
       },
     ],
     commonMistakes: [
@@ -382,7 +389,8 @@ export const chapter017: ChapterDefinition = {
         { id: 'd', text: 'Wie' },
       ],
       correctOptionId: 'a',
-      explanation: 'The answer is a thing (Tisch), so was is used to ask about the direct object, not wen.',
+      explanation:
+        'The answer is a thing (Tisch), so was is used to ask about the direct object, not wen.',
     },
     {
       id: 'ch17-ex-10',
@@ -448,7 +456,8 @@ export const chapter017: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['accusative-case', 'definite-article', 'masculine'],
-      instruction: 'Complete the sentence with the correct accusative article. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct accusative article. Capitalisation is not checked.',
       prompt: 'Ich sehe ___ Hund. (der Hund)',
       acceptedAnswers: ['den'],
       answerMode: 'caseInsensitive',
@@ -463,13 +472,15 @@ export const chapter017: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['accusative-case', 'indefinite-article', 'masculine'],
-      instruction: 'Complete the sentence with the correct accusative article. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct accusative article. Capitalisation is not checked.',
       prompt: 'Ich habe ___ Bruder. (ein Bruder)',
       acceptedAnswers: ['einen'],
       answerMode: 'caseInsensitive',
       placeholder: 'article',
       maxLength: 10,
-      explanation: 'Bruder is masculine; the indefinite article ein becomes einen in the accusative.',
+      explanation:
+        'Bruder is masculine; the indefinite article ein becomes einen in the accusative.',
     },
     {
       id: 'ch17-ex-15',
@@ -478,7 +489,8 @@ export const chapter017: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['accusative-case', 'definite-article', 'feminine'],
-      instruction: 'Complete the sentence with the correct accusative article. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct accusative article. Capitalisation is not checked.',
       prompt: 'Ich suche ___ Schwester. (die Schwester)',
       acceptedAnswers: ['die'],
       answerMode: 'caseInsensitive',
@@ -493,7 +505,8 @@ export const chapter017: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['accusative-case', 'definite-article', 'neuter'],
-      instruction: 'Complete the sentence with the correct accusative article. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct accusative article. Capitalisation is not checked.',
       prompt: 'Wir trinken ___ Wasser. (das Wasser)',
       acceptedAnswers: ['das'],
       answerMode: 'caseInsensitive',
@@ -508,7 +521,8 @@ export const chapter017: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['accusative-case', 'definite-article', 'plural'],
-      instruction: 'Complete the sentence with the correct accusative article. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct accusative article. Capitalisation is not checked.',
       prompt: 'Ich kaufe ___ Äpfel. (die Äpfel)',
       acceptedAnswers: ['die'],
       answerMode: 'caseInsensitive',
@@ -523,7 +537,8 @@ export const chapter017: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['accusative-case', 'masculine', 'nominative-to-accusative'],
-      instruction: 'Change the nominative phrase into its accusative form. Capitalisation is not checked.',
+      instruction:
+        'Change the nominative phrase into its accusative form. Capitalisation is not checked.',
       prompt: 'der Tisch → Ich kaufe ___.',
       acceptedAnswers: ['den Tisch'],
       answerMode: 'caseInsensitive',
@@ -544,7 +559,8 @@ export const chapter017: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'question word',
       maxLength: 10,
-      explanation: 'The answer is a person, so wen is used to ask about the accusative direct object.',
+      explanation:
+        'The answer is a person, so wen is used to ask about the accusative direct object.',
     },
     {
       id: 'ch17-ex-20',
@@ -792,7 +808,12 @@ export const chapter017: ChapterDefinition = {
       order: 35,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['accusative-case', 'definite-article', 'masculine', 'error-correction'],
+      grammarFocus: [
+        'accusative-case',
+        'definite-article',
+        'masculine',
+        'error-correction',
+      ],
       instruction: 'Find the token with the wrong case ending, and correct it.',
       prompt: 'Ein Spaziergänger erzählt von seinem Ausflug. Etwas stimmt nicht.',
       tokens: ['Ich', 'sehe', 'der', 'Hund', 'im', 'Park.'],
@@ -807,7 +828,12 @@ export const chapter017: ChapterDefinition = {
       order: 36,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['accusative-case', 'indefinite-article', 'masculine', 'error-correction'],
+      grammarFocus: [
+        'accusative-case',
+        'indefinite-article',
+        'masculine',
+        'error-correction',
+      ],
       instruction: 'Find the token with the wrong case ending, and correct it.',
       prompt: 'Ein Reisender packt seinen Koffer. Etwas stimmt nicht.',
       tokens: ['Er', 'kauft', 'ein', 'Regenschirm', 'für', 'die', 'Reise.'],
@@ -822,7 +848,12 @@ export const chapter017: ChapterDefinition = {
       order: 37,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['accusative-case', 'definite-article', 'masculine', 'error-correction'],
+      grammarFocus: [
+        'accusative-case',
+        'definite-article',
+        'masculine',
+        'error-correction',
+      ],
       instruction: 'Find the token with the wrong case ending, and correct it.',
       prompt: 'Jemand hat etwas verloren. Etwas stimmt nicht.',
       tokens: ['Sie', 'sucht', 'der', 'Schlüssel', 'seit', 'Stunden.'],
@@ -837,7 +868,12 @@ export const chapter017: ChapterDefinition = {
       order: 38,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['accusative-case', 'possessive-determiner', 'masculine', 'error-correction'],
+      grammarFocus: [
+        'accusative-case',
+        'possessive-determiner',
+        'masculine',
+        'error-correction',
+      ],
       instruction: 'Find the token with the wrong case ending, and correct it.',
       prompt: 'Jemand spricht über seine Familie. Etwas stimmt nicht.',
       tokens: ['Ich', 'habe', 'mein', 'Bruder', 'lange', 'nicht', 'gesehen.'],
@@ -852,7 +888,12 @@ export const chapter017: ChapterDefinition = {
       order: 39,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['accusative-case', 'definite-article', 'masculine', 'error-correction'],
+      grammarFocus: [
+        'accusative-case',
+        'definite-article',
+        'masculine',
+        'error-correction',
+      ],
       instruction: 'Find the token with the wrong case ending, and correct it.',
       prompt: 'Ein Kellner bedient einen Gast. Etwas stimmt nicht.',
       tokens: ['Der', 'Kellner', 'bringt', 'der', 'Kaffee', 'sofort.'],
@@ -867,7 +908,12 @@ export const chapter017: ChapterDefinition = {
       order: 40,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['accusative-case', 'negative-article', 'masculine', 'error-correction'],
+      grammarFocus: [
+        'accusative-case',
+        'negative-article',
+        'masculine',
+        'error-correction',
+      ],
       instruction: 'Find the token with the wrong case ending, and correct it.',
       prompt: 'Jemand beschreibt seine neue Nachbarschaft. Etwas stimmt nicht.',
       tokens: ['Ich', 'kenne', 'kein', 'Mann', 'in', 'dieser', 'Stadt.'],
@@ -1053,7 +1099,8 @@ export const chapter017: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['accusative-case', 'definite-article', 'feminine'],
-      instruction: 'Complete the sentence with the correct accusative article. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct accusative article. Capitalisation is not checked.',
       prompt: 'Ich sehe ___ Lehrerin. (die Lehrerin)',
       acceptedAnswers: ['die'],
       answerMode: 'caseInsensitive',
@@ -1068,13 +1115,15 @@ export const chapter017: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['accusative-case', 'definite-article', 'masculine'],
-      instruction: 'Complete the sentence with the correct accusative article. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct accusative article. Capitalisation is not checked.',
       prompt: 'Er kauft ___ Mantel. (der Mantel)',
       acceptedAnswers: ['den'],
       answerMode: 'caseInsensitive',
       placeholder: 'article',
       maxLength: 5,
-      explanation: 'Mantel is masculine; as the direct object of kaufen, der becomes den.',
+      explanation:
+        'Mantel is masculine; as the direct object of kaufen, der becomes den.',
     },
     {
       id: 'ch17-ex-52',
@@ -1083,13 +1132,15 @@ export const chapter017: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['accusative-case', 'indefinite-article', 'masculine'],
-      instruction: 'Complete the sentence with the correct accusative article. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct accusative article. Capitalisation is not checked.',
       prompt: 'Wir brauchen ___ Stuhl. (ein Stuhl)',
       acceptedAnswers: ['einen'],
       answerMode: 'caseInsensitive',
       placeholder: 'article',
       maxLength: 10,
-      explanation: 'Stuhl is masculine; the indefinite article ein becomes einen in the accusative.',
+      explanation:
+        'Stuhl is masculine; the indefinite article ein becomes einen in the accusative.',
     },
     {
       id: 'ch17-ex-53',
@@ -1098,13 +1149,15 @@ export const chapter017: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['accusative-case', 'possessive-determiner', 'masculine'],
-      instruction: 'Complete the sentence with the correct accusative possessive. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct accusative possessive. Capitalisation is not checked.',
       prompt: 'Ich habe ___ Onkel. (mein Onkel)',
       acceptedAnswers: ['meinen'],
       answerMode: 'caseInsensitive',
       placeholder: 'possessive',
       maxLength: 10,
-      explanation: 'Onkel is masculine; the possessive mein becomes meinen in the accusative.',
+      explanation:
+        'Onkel is masculine; the possessive mein becomes meinen in the accusative.',
     },
     {
       id: 'ch17-ex-54',
@@ -1113,13 +1166,15 @@ export const chapter017: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['accusative-case', 'negative-article', 'masculine'],
-      instruction: 'Complete the sentence with the correct accusative article. Capitalisation is not checked.',
+      instruction:
+        'Complete the sentence with the correct accusative article. Capitalisation is not checked.',
       prompt: 'Er hat ___ Ball. (kein Ball)',
       acceptedAnswers: ['keinen'],
       answerMode: 'caseInsensitive',
       placeholder: 'article',
       maxLength: 10,
-      explanation: 'Ball is masculine; the negative article kein becomes keinen in the accusative, just like ein becomes einen.',
+      explanation:
+        'Ball is masculine; the negative article kein becomes keinen in the accusative, just like ein becomes einen.',
     },
     {
       id: 'ch17-ex-55',
@@ -1128,13 +1183,15 @@ export const chapter017: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['accusative-case', 'masculine', 'nominative-to-accusative'],
-      instruction: 'Change the nominative phrase into its accusative form. Capitalisation is not checked.',
+      instruction:
+        'Change the nominative phrase into its accusative form. Capitalisation is not checked.',
       prompt: 'der Computer → Ich brauche ___.',
       acceptedAnswers: ['den Computer'],
       answerMode: 'caseInsensitive',
       placeholder: 'den ...',
       maxLength: 20,
-      explanation: 'Computer is masculine, so der becomes den in the accusative: den Computer.',
+      explanation:
+        'Computer is masculine, so der becomes den in the accusative: den Computer.',
     },
     {
       id: 'ch17-ex-56',
@@ -1196,13 +1253,22 @@ export const chapter017: ChapterDefinition = {
       type: 'matching',
       level: 'production',
       grammarFocus: ['accusative-case', 'sentence-completion'],
-      instruction: 'Match each cue phrase with the sentence-final direct object it produces.',
+      instruction:
+        'Match each cue phrase with the sentence-final direct object it produces.',
       prompt: 'Match the cue with its correctly declined direct object.',
       pairs: [
         { id: 'ch17-ex59-p1', left: 'Ich sehe ... (der Tisch)', right: 'den Tisch' },
-        { id: 'ch17-ex59-p2', left: 'Ich brauche ... (eine Tasche)', right: 'eine Tasche' },
+        {
+          id: 'ch17-ex59-p2',
+          left: 'Ich brauche ... (eine Tasche)',
+          right: 'eine Tasche',
+        },
         { id: 'ch17-ex59-p3', left: 'Wir haben ... (ein Auto)', right: 'ein Auto' },
-        { id: 'ch17-ex59-p4', left: 'Sie kennt ... (mein Bruder)', right: 'meinen Bruder' },
+        {
+          id: 'ch17-ex59-p4',
+          left: 'Sie kennt ... (mein Bruder)',
+          right: 'meinen Bruder',
+        },
         { id: 'ch17-ex59-p5', left: 'Er sucht ... (die Uhr)', right: 'die Uhr' },
       ],
       explanation:

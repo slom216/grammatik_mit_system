@@ -32,8 +32,8 @@ export const chapter068: ChapterDefinition = {
         id: 'ch68-rule-01',
         heading: 'What the genitive case marks',
         paragraphs: [
-          'The genitive marks a relationship between two nouns — usually possession, but also part-whole relationships and other close formal connections: das Auto des Lehrers (the teacher\'s car), die Hauptstadt des Landes (the capital of the country), das Ende des Jahres (the end of the year).',
-          'You ask about the genitive with the question word wessen? (whose?): Wessen Buch ist das? – Das ist das Buch des Lehrers. (Whose book is this? – This is the teacher\'s book.)',
+          "The genitive marks a relationship between two nouns — usually possession, but also part-whole relationships and other close formal connections: das Auto des Lehrers (the teacher's car), die Hauptstadt des Landes (the capital of the country), das Ende des Jahres (the end of the year).",
+          "You ask about the genitive with the question word wessen? (whose?): Wessen Buch ist das? – Das ist das Buch des Lehrers. (Whose book is this? – This is the teacher's book.)",
           'Unlike the accusative and dative, the genitive noun phrase is not the object of the verb — it simply attaches to another noun phrase and travels along with it wherever that phrase goes in the sentence.',
         ],
       },
@@ -69,8 +69,8 @@ export const chapter068: ChapterDefinition = {
         id: 'ch68-rule-05',
         heading: 'Proper names in the genitive',
         paragraphs: [
-          'German forms the genitive of a proper name much like the English possessive, but without an apostrophe before the s: Anna becomes Annas, Peter becomes Peters, Julia becomes Julias — Annas Auto (Anna\'s car), Peters Buch (Peter\'s book).',
-          'The one exception: a name that already ends in a sibilant sound (s, ß, x, or z) cannot take an extra -s, so it takes a bare apostrophe instead, with no added letter: Max becomes Max\', Felix becomes Felix\', Hans becomes Hans\' — Max\' Fahrrad (Max\'s bike).',
+          "German forms the genitive of a proper name much like the English possessive, but without an apostrophe before the s: Anna becomes Annas, Peter becomes Peters, Julia becomes Julias — Annas Auto (Anna's car), Peters Buch (Peter's book).",
+          "The one exception: a name that already ends in a sibilant sound (s, ß, x, or z) cannot take an extra -s, so it takes a bare apostrophe instead, with no added letter: Max becomes Max', Felix becomes Felix', Hans becomes Hans' — Max' Fahrrad (Max's bike).",
           'Unlike a genitive common noun, a genitive name normally comes before the thing it possesses, without any article: Annas Auto, not das Auto Annas.',
         ],
       },
@@ -156,7 +156,11 @@ export const chapter068: ChapterDefinition = {
         rows: [
           ['das Auto von Anna', 'Annas Auto', "Anna's car"],
           ['die Tasche von Julia', 'Julias Tasche', "Julia's bag"],
-          ['der Hund von meinem Nachbarn', 'der Hund meines Nachbarn', "my neighbor's dog"],
+          [
+            'der Hund von meinem Nachbarn',
+            'der Hund meines Nachbarn',
+            "my neighbor's dog",
+          ],
           ['das Büro von unserem Chef', 'das Büro unseres Chefs', "our boss's office"],
           ['die Farbe von dem Haus', 'die Farbe des Hauses', 'the color of the house'],
           ['der Roman von Max', "Max' Roman", "Max's novel"],
@@ -168,27 +172,31 @@ export const chapter068: ChapterDefinition = {
     examples: [
       {
         german: 'Wessen Buch ist das? – Das ist das Buch des Lehrers.',
-        english: 'Whose book is this? – This is the teacher\'s book.',
+        english: "Whose book is this? – This is the teacher's book.",
         highlight: ['Wessen', 'des Lehrers'],
-        explanation: 'wessen asks the question that the genitive answers; des Lehrers is the regular -s genitive of der Lehrer.',
+        explanation:
+          'wessen asks the question that the genitive answers; des Lehrers is the regular -s genitive of der Lehrer.',
       },
       {
         german: 'Die Farbe des Autos gefällt mir sehr.',
         english: 'I really like the color of the car.',
         highlight: ['des Autos'],
-        explanation: 'Auto is neuter and polysyllabic, non-sibilant, so it takes plain -s: des Autos.',
+        explanation:
+          'Auto is neuter and polysyllabic, non-sibilant, so it takes plain -s: des Autos.',
       },
       {
         german: 'Das ist das Haus meiner Eltern.',
-        english: 'This is my parents\' house.',
+        english: "This is my parents' house.",
         highlight: ['meiner Eltern'],
-        explanation: 'Eltern is plural, so the possessive article takes the plural genitive ending -er (meiner) and the noun itself does not change.',
+        explanation:
+          'Eltern is plural, so the possessive article takes the plural genitive ending -er (meiner) and the noun itself does not change.',
       },
       {
         german: 'Der Titel des Buches ist sehr bekannt.',
         english: 'The title of the book is very well-known.',
         highlight: ['des Buches'],
-        explanation: 'Buch is one of the hand-picked monosyllabic nouns that takes -es in the genitive: des Buches.',
+        explanation:
+          'Buch is one of the hand-picked monosyllabic nouns that takes -es in the genitive: des Buches.',
       },
       {
         german: 'Das Ende des Jahres ist oft stressig.',
@@ -198,84 +206,97 @@ export const chapter068: ChapterDefinition = {
       },
       {
         german: 'Annas Auto steht vor dem Haus.',
-        english: 'Anna\'s car is parked in front of the house.',
+        english: "Anna's car is parked in front of the house.",
         highlight: ['Annas'],
-        explanation: 'Anna simply adds -s in the genitive, with no apostrophe, unlike the English possessive.',
+        explanation:
+          'Anna simply adds -s in the genitive, with no apostrophe, unlike the English possessive.',
       },
       {
-        german: 'Max\' Fahrrad ist neu.',
-        english: 'Max\'s bike is new.',
+        german: "Max' Fahrrad ist neu.",
+        english: "Max's bike is new.",
         highlight: ["Max'"],
-        explanation: 'Max already ends in a sibilant (x), so it takes only an apostrophe, not an extra -s.',
+        explanation:
+          'Max already ends in a sibilant (x), so it takes only an apostrophe, not an extra -s.',
       },
       {
         german: 'Der Hund meines Nachbarn bellt laut.',
-        english: 'My neighbor\'s dog barks loudly.',
+        english: "My neighbor's dog barks loudly.",
         highlight: ['meines Nachbarn'],
-        explanation: 'meines is the masculine genitive possessive article; Nachbarn shows the genitive phrase in its everyday, natural word order.',
+        explanation:
+          'meines is the masculine genitive possessive article; Nachbarn shows the genitive phrase in its everyday, natural word order.',
       },
       {
         german: 'Das Auto von Anna ist rot.',
-        english: 'Anna\'s car is red. (literally: the car of Anna)',
+        english: "Anna's car is red. (literally: the car of Anna)",
         highlight: ['von Anna'],
-        explanation: 'In spoken German, von + dative often replaces the genitive with names: das Auto von Anna means the same as Annas Auto.',
+        explanation:
+          'In spoken German, von + dative often replaces the genitive with names: das Auto von Anna means the same as Annas Auto.',
       },
       {
         german: 'Trotz des schlechten Wetters gehen wir spazieren.',
         english: 'Despite the bad weather, we are going for a walk.',
         highlight: ['des schlechten Wetters'],
-        explanation: 'Wetter takes plain -s (Wetters); the adjective schlecht takes the genitive adjective ending -en before a neuter singular noun.',
+        explanation:
+          'Wetter takes plain -s (Wetters); the adjective schlecht takes the genitive adjective ending -en before a neuter singular noun.',
       },
       {
         german: 'Die Tür des Zimmers ist geschlossen.',
         english: 'The door of the room is closed.',
         highlight: ['des Zimmers'],
-        explanation: 'Zimmer is neuter and polysyllabic, non-sibilant, so it takes plain -s: des Zimmers.',
+        explanation:
+          'Zimmer is neuter and polysyllabic, non-sibilant, so it takes plain -s: des Zimmers.',
       },
       {
         german: 'Der Sohn des Arztes wohnt in Berlin.',
-        english: 'The doctor\'s son lives in Berlin.',
+        english: "The doctor's son lives in Berlin.",
         highlight: ['des Arztes'],
-        explanation: 'Arzt is in the hand-picked monosyllabic group, so it takes -es: des Arztes.',
+        explanation:
+          'Arzt is in the hand-picked monosyllabic group, so it takes -es: des Arztes.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'des Mann',
         correct: 'des Mannes',
-        explanation: 'Mann is one of the hand-picked monosyllabic nouns that takes -es in the genitive, not just the article change.',
+        explanation:
+          'Mann is one of the hand-picked monosyllabic nouns that takes -es in the genitive, not just the article change.',
       },
       {
         incorrect: 'der Auto',
         correct: 'des Autos',
-        explanation: 'Auto is neuter, so the genitive definite article is des, not der; der is the feminine/plural genitive article.',
+        explanation:
+          'Auto is neuter, so the genitive definite article is des, not der; der is the feminine/plural genitive article.',
       },
       {
         incorrect: 'die Farbe des Frau',
         correct: 'die Farbe der Frau',
-        explanation: 'Frau is feminine, so the genitive definite article is der, and the noun itself never takes an ending.',
+        explanation:
+          'Frau is feminine, so the genitive definite article is der, and the noun itself never takes an ending.',
       },
       {
         incorrect: "Anna's Auto",
         correct: 'Annas Auto',
-        explanation: 'German genitive names add -s directly with no apostrophe before it, unlike the English possessive.',
+        explanation:
+          'German genitive names add -s directly with no apostrophe before it, unlike the English possessive.',
       },
       {
         incorrect: "Max's Fahrrad",
         correct: "Max' Fahrrad",
-        explanation: 'Names already ending in a sibilant (s, ß, x, z) take only a bare apostrophe in the genitive, never an extra -s.',
+        explanation:
+          'Names already ending in a sibilant (s, ß, x, z) take only a bare apostrophe in the genitive, never an extra -s.',
       },
       {
         incorrect: 'des Kind',
         correct: 'des Kindes',
-        explanation: 'Kind is one of the hand-picked monosyllabic nouns that takes -es, not just the bare noun after des.',
+        explanation:
+          'Kind is one of the hand-picked monosyllabic nouns that takes -es, not just the bare noun after des.',
       },
     ],
     remember: [
       'Genitive definite articles: des (masc./neut.), der (fem./plural). Genitive indefinite articles: eines (masc./neut.), einer (fem.); possessive articles and kein follow the same pattern.',
       'Masculine and neuter singular nouns add -s or -es: -es for sibilant-final nouns (Haus → Hauses) and a hand-picked group of monosyllabic nouns (Mann → Mannes, Kind → Kindes); every other noun takes plain -s (Auto → Autos, Computer → Computers).',
       'Feminine and plural nouns never change their ending in the genitive — only the article changes: die Frau → der Frau, die Kinder → der Kinder.',
-      'Proper names add plain -s (Annas, Peters, Julias); names already ending in a sibilant take only an apostrophe, no extra -s (Max\', Felix\', Hans\').',
+      "Proper names add plain -s (Annas, Peters, Julias); names already ending in a sibilant take only an apostrophe, no extra -s (Max', Felix', Hans').",
       'In everyday spoken German, von + dative very often replaces the genitive, especially with names: das Auto von Anna ≈ Annas Auto.',
       'wessen (whose?) is the question word the genitive answers.',
     ],
@@ -303,7 +324,8 @@ export const chapter068: ChapterDefinition = {
         { id: 'd', text: 'Was' },
       ],
       correctOptionId: 'a',
-      explanation: 'wessen (whose?) asks about the genitive; der Lehrerin is the feminine genitive answer.',
+      explanation:
+        'wessen (whose?) asks about the genitive; der Lehrerin is the feminine genitive answer.',
     },
     {
       id: 'ch68-ex-02',
@@ -375,7 +397,8 @@ export const chapter068: ChapterDefinition = {
         { id: 'd', text: 'die' },
       ],
       correctOptionId: 'a',
-      explanation: 'The genitive plural definite article is always der, regardless of gender.',
+      explanation:
+        'The genitive plural definite article is always der, regardless of gender.',
     },
     {
       id: 'ch68-ex-06',
@@ -447,7 +470,8 @@ export const chapter068: ChapterDefinition = {
         { id: 'd', text: 'dem Mann' },
       ],
       correctOptionId: 'a',
-      explanation: 'Mann belongs to the hand-picked group of monosyllabic nouns that take -es: des Mannes.',
+      explanation:
+        'Mann belongs to the hand-picked group of monosyllabic nouns that take -es: des Mannes.',
     },
     {
       id: 'ch68-ex-10',
@@ -465,7 +489,8 @@ export const chapter068: ChapterDefinition = {
         { id: 'd', text: 'dem Computer' },
       ],
       correctOptionId: 'a',
-      explanation: 'Computer is polysyllabic and non-sibilant, so it takes only plain -s: des Computers.',
+      explanation:
+        'Computer is polysyllabic and non-sibilant, so it takes only plain -s: des Computers.',
     },
     {
       id: 'ch68-ex-11',
@@ -483,7 +508,8 @@ export const chapter068: ChapterDefinition = {
         { id: 'd', text: 'der Stadtes' },
       ],
       correctOptionId: 'a',
-      explanation: 'Stadt is feminine, so only the article changes; the noun itself never takes an ending: der Stadt.',
+      explanation:
+        'Stadt is feminine, so only the article changes; the noun itself never takes an ending: der Stadt.',
     },
     {
       id: 'ch68-ex-12',
@@ -519,7 +545,8 @@ export const chapter068: ChapterDefinition = {
         { id: 'd', text: 'Felixes' },
       ],
       correctOptionId: 'a',
-      explanation: 'Felix already ends in a sibilant (x), so it takes only a bare apostrophe, not an extra -s.',
+      explanation:
+        'Felix already ends in a sibilant (x), so it takes only a bare apostrophe, not an extra -s.',
     },
     {
       id: 'ch68-ex-14',
@@ -537,7 +564,8 @@ export const chapter068: ChapterDefinition = {
         { id: 'd', text: "Annas' Auto" },
       ],
       correctOptionId: 'a',
-      explanation: 'Anna adds plain -s and moves directly before the noun, with no apostrophe: Annas Auto.',
+      explanation:
+        'Anna adds plain -s and moves directly before the noun, with no apostrophe: Annas Auto.',
     },
     {
       id: 'ch68-ex-15',
@@ -555,7 +583,8 @@ export const chapter068: ChapterDefinition = {
         { id: 'd', text: 'die Farbe des Haus' },
       ],
       correctOptionId: 'a',
-      explanation: 'Haus is sibilant-final, so it takes -es, and the article becomes des: die Farbe des Hauses.',
+      explanation:
+        'Haus is sibilant-final, so it takes -es, and the article becomes des: die Farbe des Hauses.',
     },
     {
       id: 'ch68-ex-16',
@@ -573,7 +602,8 @@ export const chapter068: ChapterDefinition = {
         { id: 'd', text: 'meinen' },
       ],
       correctOptionId: 'a',
-      explanation: 'Bruder is masculine singular, so the possessive article takes the genitive ending -es: meines.',
+      explanation:
+        'Bruder is masculine singular, so the possessive article takes the genitive ending -es: meines.',
     },
     {
       id: 'ch68-ex-17',
@@ -591,7 +621,8 @@ export const chapter068: ChapterDefinition = {
         { id: 'd', text: 'klein' },
       ],
       correctOptionId: 'a',
-      explanation: 'Before a masculine singular genitive noun, the adjective ending is always -en: des kleinen Mannes.',
+      explanation:
+        'Before a masculine singular genitive noun, the adjective ending is always -en: des kleinen Mannes.',
     },
     {
       id: 'ch68-ex-18',
@@ -675,7 +706,8 @@ export const chapter068: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['genitive', 'noun-endings', 'sibilant'],
-      instruction: 'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
+      instruction:
+        'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
       prompt: 'Nominative: das Haus → Genitive:',
       acceptedAnswers: ['des Hauses'],
       answerMode: 'caseInsensitive',
@@ -690,13 +722,15 @@ export const chapter068: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['genitive', 'noun-endings', 'hand-picked'],
-      instruction: 'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
+      instruction:
+        'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
       prompt: 'Nominative: das Kind → Genitive:',
       acceptedAnswers: ['des Kindes'],
       answerMode: 'caseInsensitive',
       placeholder: 'des ...',
       maxLength: 25,
-      explanation: 'Kind is in the hand-picked monosyllabic group, so it takes -es: des Kindes.',
+      explanation:
+        'Kind is in the hand-picked monosyllabic group, so it takes -es: des Kindes.',
     },
     {
       id: 'ch68-ex-25',
@@ -705,13 +739,15 @@ export const chapter068: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['genitive', 'noun-endings', 'plain-s'],
-      instruction: 'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
+      instruction:
+        'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
       prompt: 'Nominative: der Lehrer → Genitive:',
       acceptedAnswers: ['des Lehrers'],
       answerMode: 'caseInsensitive',
       placeholder: 'des ...',
       maxLength: 25,
-      explanation: 'Lehrer is polysyllabic and non-sibilant, so it takes only plain -s: des Lehrers.',
+      explanation:
+        'Lehrer is polysyllabic and non-sibilant, so it takes only plain -s: des Lehrers.',
     },
     {
       id: 'ch68-ex-26',
@@ -720,13 +756,15 @@ export const chapter068: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['genitive', 'feminine', 'no-ending'],
-      instruction: 'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
+      instruction:
+        'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
       prompt: 'Nominative: die Frau → Genitive:',
       acceptedAnswers: ['der Frau'],
       answerMode: 'caseInsensitive',
       placeholder: 'der ...',
       maxLength: 25,
-      explanation: 'Frau is feminine, so only the article changes and the noun stays the same: der Frau.',
+      explanation:
+        'Frau is feminine, so only the article changes and the noun stays the same: der Frau.',
     },
     {
       id: 'ch68-ex-27',
@@ -735,13 +773,15 @@ export const chapter068: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['genitive', 'plural', 'no-ending'],
-      instruction: 'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
+      instruction:
+        'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
       prompt: 'Nominative: die Kinder → Genitive:',
       acceptedAnswers: ['der Kinder'],
       answerMode: 'caseInsensitive',
       placeholder: 'der ...',
       maxLength: 25,
-      explanation: 'Kinder is plural, so only the article changes to der; the noun stays the same.',
+      explanation:
+        'Kinder is plural, so only the article changes to der; the noun stays the same.',
     },
     {
       id: 'ch68-ex-28',
@@ -765,13 +805,15 @@ export const chapter068: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['genitive', 'names', 'apostrophe'],
-      instruction: 'Write the genitive form of the name, including the apostrophe. Capitalisation and punctuation are checked.',
+      instruction:
+        'Write the genitive form of the name, including the apostrophe. Capitalisation and punctuation are checked.',
       prompt: 'Genitive of "Hans":',
       acceptedAnswers: ["Hans'"],
       answerMode: 'exact',
       placeholder: "Hans'",
       maxLength: 15,
-      explanation: 'Hans already ends in a sibilant (s), so it takes only a bare apostrophe: Hans\'.',
+      explanation:
+        "Hans already ends in a sibilant (s), so it takes only a bare apostrophe: Hans'.",
     },
     {
       id: 'ch68-ex-30',
@@ -780,13 +822,15 @@ export const chapter068: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['genitive', 'von-alternative', 'transformation', 'names'],
-      instruction: 'Rewrite the phrase using the genitive instead of von + dative. Capitalisation is not checked.',
+      instruction:
+        'Rewrite the phrase using the genitive instead of von + dative. Capitalisation is not checked.',
       prompt: 'das Auto von Anna → Genitiv',
       acceptedAnswers: ['Annas Auto'],
       answerMode: 'caseInsensitive',
       placeholder: 'Annas ...',
       maxLength: 30,
-      explanation: 'Drop von, add -s to Anna, and place the name directly before the noun: Annas Auto.',
+      explanation:
+        'Drop von, add -s to Anna, and place the name directly before the noun: Annas Auto.',
     },
     {
       id: 'ch68-ex-31',
@@ -795,7 +839,8 @@ export const chapter068: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['genitive', 'von-alternative', 'transformation', 'common-noun'],
-      instruction: 'Rewrite the phrase using the genitive instead of von + dative. Capitalisation is not checked.',
+      instruction:
+        'Rewrite the phrase using the genitive instead of von + dative. Capitalisation is not checked.',
       prompt: 'die Farbe von dem Auto → Genitiv',
       acceptedAnswers: ['die Farbe des Autos'],
       answerMode: 'caseInsensitive',
@@ -810,13 +855,15 @@ export const chapter068: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['genitive', 'sentence-building', 'possession'],
-      instruction: 'Build a complete sentence from the cue words, using the genitive. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete sentence from the cue words, using the genitive. Capitalisation and punctuation are checked.',
       prompt: 'das – sein – das Buch – der Lehrer',
       acceptedAnswers: ['Das ist das Buch des Lehrers.', 'Das ist das Buch des Lehrers'],
       answerMode: 'normalized',
       placeholder: 'Das ist ...',
       maxLength: 50,
-      explanation: 'der Lehrer becomes des Lehrers in the genitive: Das ist das Buch des Lehrers.',
+      explanation:
+        'der Lehrer becomes des Lehrers in the genitive: Das ist das Buch des Lehrers.',
     },
     {
       id: 'ch68-ex-33',
@@ -825,13 +872,18 @@ export const chapter068: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['genitive', 'von-alternative', 'transformation', 'sentence-writing'],
-      instruction: 'Rewrite the sentence using the genitive instead of von + dative. Capitalisation and punctuation are checked.',
+      instruction:
+        'Rewrite the sentence using the genitive instead of von + dative. Capitalisation and punctuation are checked.',
       prompt: 'Der Hund von meinem Nachbarn bellt laut. → Genitiv',
-      acceptedAnswers: ['Der Hund meines Nachbarn bellt laut.', 'Der Hund meines Nachbarn bellt laut'],
+      acceptedAnswers: [
+        'Der Hund meines Nachbarn bellt laut.',
+        'Der Hund meines Nachbarn bellt laut',
+      ],
       answerMode: 'normalized',
       placeholder: 'Der Hund ...',
       maxLength: 60,
-      explanation: 'von meinem Nachbarn becomes meines Nachbarn in the genitive: Der Hund meines Nachbarn bellt laut.',
+      explanation:
+        'von meinem Nachbarn becomes meines Nachbarn in the genitive: Der Hund meines Nachbarn bellt laut.',
     },
     {
       id: 'ch68-ex-34',
@@ -840,13 +892,15 @@ export const chapter068: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['genitive', 'sentence-building', 'names', 'possession'],
-      instruction: 'Build a complete sentence from the cue words, using the genitive form of the name. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete sentence from the cue words, using the genitive form of the name. Capitalisation and punctuation are checked.',
       prompt: 'Felix – Auto (das) – sein – kaputt',
       acceptedAnswers: ["Felix' Auto ist kaputt.", "Felix' Auto ist kaputt"],
       answerMode: 'normalized',
       placeholder: "Felix' ...",
       maxLength: 40,
-      explanation: 'Felix ends in a sibilant, so it takes only an apostrophe: Felix\' Auto ist kaputt.',
+      explanation:
+        "Felix ends in a sibilant, so it takes only an apostrophe: Felix' Auto ist kaputt.",
     },
     {
       id: 'ch68-ex-35',
@@ -954,7 +1008,8 @@ export const chapter068: ChapterDefinition = {
         { id: 'd', text: 'Während' },
       ],
       correctOptionId: 'a',
-      explanation: 'statt (or anstatt) + genitive expresses "instead of": Statt des Autos.',
+      explanation:
+        'statt (or anstatt) + genitive expresses "instead of": Statt des Autos.',
     },
     {
       id: 'ch68-ex-41',
@@ -972,7 +1027,8 @@ export const chapter068: ChapterDefinition = {
         { id: 'd', text: 'des Firma' },
       ],
       correctOptionId: 'a',
-      explanation: 'Firma is feminine, so only the article changes and the noun takes no ending: der Firma.',
+      explanation:
+        'Firma is feminine, so only the article changes and the noun takes no ending: der Firma.',
     },
     {
       id: 'ch68-ex-42',
@@ -990,7 +1046,8 @@ export const chapter068: ChapterDefinition = {
         { id: 'd', text: 'dem Tag' },
       ],
       correctOptionId: 'a',
-      explanation: 'Tag is in the hand-picked monosyllabic group, so it takes -es: des Tages.',
+      explanation:
+        'Tag is in the hand-picked monosyllabic group, so it takes -es: des Tages.',
     },
     {
       id: 'ch68-ex-43',
@@ -1026,7 +1083,8 @@ export const chapter068: ChapterDefinition = {
         { id: 'd', text: 'He comes back despite a week.' },
       ],
       correctOptionId: 'a',
-      explanation: 'innerhalb means "within", so innerhalb einer Woche is "within a week".',
+      explanation:
+        'innerhalb means "within", so innerhalb einer Woche is "within a week".',
     },
     {
       id: 'ch68-ex-45',
@@ -1035,7 +1093,8 @@ export const chapter068: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['genitive', 'feminine', 'no-ending'],
-      instruction: 'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
+      instruction:
+        'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
       prompt: 'Nominative: die Firma → Genitive:',
       acceptedAnswers: ['der Firma'],
       answerMode: 'caseInsensitive',
@@ -1050,13 +1109,15 @@ export const chapter068: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['genitive', 'noun-endings', 'hand-picked'],
-      instruction: 'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
+      instruction:
+        'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
       prompt: 'Nominative: der Tag → Genitive:',
       acceptedAnswers: ['des Tages'],
       answerMode: 'caseInsensitive',
       placeholder: 'des ...',
       maxLength: 20,
-      explanation: 'Tag is in the hand-picked monosyllabic group, so it takes -es: des Tages.',
+      explanation:
+        'Tag is in the hand-picked monosyllabic group, so it takes -es: des Tages.',
     },
     {
       id: 'ch68-ex-47',
@@ -1065,7 +1126,8 @@ export const chapter068: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['genitive', 'prepositions', 'wegen'],
-      instruction: 'Write the missing genitive preposition. Capitalisation is not checked.',
+      instruction:
+        'Write the missing genitive preposition. Capitalisation is not checked.',
       prompt: '___ des Regens bleiben wir zu Hause. (because of)',
       acceptedAnswers: ['Wegen'],
       answerMode: 'caseInsensitive',
@@ -1080,7 +1142,8 @@ export const chapter068: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['genitive', 'prepositions', 'während'],
-      instruction: 'Write the missing genitive preposition. Capitalisation is not checked.',
+      instruction:
+        'Write the missing genitive preposition. Capitalisation is not checked.',
       prompt: '___ der Woche arbeite ich viel. (during)',
       acceptedAnswers: ['Während'],
       answerMode: 'caseInsensitive',
@@ -1095,7 +1158,8 @@ export const chapter068: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['genitive', 'prepositions', 'trotz'],
-      instruction: 'Write the missing genitive preposition. Capitalisation is not checked.',
+      instruction:
+        'Write the missing genitive preposition. Capitalisation is not checked.',
       prompt: '___ des schlechten Wetters gehen wir spazieren. (despite)',
       acceptedAnswers: ['Trotz'],
       answerMode: 'caseInsensitive',
@@ -1110,7 +1174,8 @@ export const chapter068: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['genitive', 'prepositions', 'innerhalb'],
-      instruction: 'Write the missing genitive preposition. Capitalisation is not checked.',
+      instruction:
+        'Write the missing genitive preposition. Capitalisation is not checked.',
       prompt: '___ einer Stunde bin ich fertig. (within)',
       acceptedAnswers: ['Innerhalb'],
       answerMode: 'caseInsensitive',
@@ -1125,7 +1190,8 @@ export const chapter068: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['genitive', 'prepositions', 'außerhalb'],
-      instruction: 'Write the missing genitive preposition. Capitalisation is not checked.',
+      instruction:
+        'Write the missing genitive preposition. Capitalisation is not checked.',
       prompt: '___ der Stadt gibt es einen Wald. (outside of)',
       acceptedAnswers: ['Außerhalb'],
       answerMode: 'caseInsensitive',
@@ -1140,7 +1206,8 @@ export const chapter068: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['genitive', 'prepositions', 'statt'],
-      instruction: 'Write the missing genitive preposition. Capitalisation is not checked.',
+      instruction:
+        'Write the missing genitive preposition. Capitalisation is not checked.',
       prompt: '___ des Autos nehme ich das Fahrrad. (instead of)',
       acceptedAnswers: ['Statt', 'Anstatt'],
       answerMode: 'caseInsensitive',
@@ -1155,13 +1222,18 @@ export const chapter068: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['genitive', 'sentence-building', 'prepositions', 'wegen'],
-      instruction: 'Build a complete sentence from the cue words, using the genitive. Capitalisation and punctuation are checked.',
+      instruction:
+        'Build a complete sentence from the cue words, using the genitive. Capitalisation and punctuation are checked.',
       prompt: 'Wegen – das schlecht Wetter – bleiben – wir – zu Hause',
-      acceptedAnswers: ['Wegen des schlechten Wetters bleiben wir zu Hause.', 'Wegen des schlechten Wetters bleiben wir zu Hause'],
+      acceptedAnswers: [
+        'Wegen des schlechten Wetters bleiben wir zu Hause.',
+        'Wegen des schlechten Wetters bleiben wir zu Hause',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wegen ...',
       maxLength: 60,
-      explanation: 'das schlechte Wetter becomes des schlechten Wetters after wegen: Wegen des schlechten Wetters bleiben wir zu Hause.',
+      explanation:
+        'das schlechte Wetter becomes des schlechten Wetters after wegen: Wegen des schlechten Wetters bleiben wir zu Hause.',
     },
     {
       id: 'ch68-ex-54',
@@ -1169,14 +1241,21 @@ export const chapter068: ChapterDefinition = {
       order: 54,
       type: 'textInput',
       level: 'transfer',
-      grammarFocus: ['genitive', 'von-alternative', 'transformation', 'possessive-articles'],
-      instruction: 'Rewrite the phrase using the genitive instead of von + dative. Capitalisation is not checked.',
+      grammarFocus: [
+        'genitive',
+        'von-alternative',
+        'transformation',
+        'possessive-articles',
+      ],
+      instruction:
+        'Rewrite the phrase using the genitive instead of von + dative. Capitalisation is not checked.',
       prompt: 'das Büro von unserem Chef → Genitiv',
       acceptedAnswers: ['das Büro unseres Chefs'],
       answerMode: 'caseInsensitive',
       placeholder: 'das Büro ...',
       maxLength: 40,
-      explanation: 'von unserem Chef becomes unseres Chefs in the genitive: das Büro unseres Chefs.',
+      explanation:
+        'von unserem Chef becomes unseres Chefs in the genitive: das Büro unseres Chefs.',
     },
     {
       id: 'ch68-ex-55',
@@ -1193,7 +1272,8 @@ export const chapter068: ChapterDefinition = {
         { id: 's3', text: 'wir' },
         { id: 's4', text: 'spazieren.' },
       ],
-      explanation: 'A genitive prepositional phrase can open the sentence, sending the verb into second position: Trotz des schlechten Wetters gehen wir spazieren.',
+      explanation:
+        'A genitive prepositional phrase can open the sentence, sending the verb into second position: Trotz des schlechten Wetters gehen wir spazieren.',
     },
     {
       id: 'ch68-ex-56',
@@ -1210,7 +1290,8 @@ export const chapter068: ChapterDefinition = {
         { id: 's3', text: 'sie' },
         { id: 's4', text: 'zu Hause.' },
       ],
-      explanation: 'Wegen des Regens is the genitive prepositional phrase, and it can stand first with the verb in second position.',
+      explanation:
+        'Wegen des Regens is the genitive prepositional phrase, and it can stand first with the verb in second position.',
     },
     {
       id: 'ch68-ex-57',
@@ -1227,7 +1308,8 @@ export const chapter068: ChapterDefinition = {
         { id: 's3', text: 'ich' },
         { id: 's4', text: 'viel.' },
       ],
-      explanation: 'Während der Woche opens the sentence as a genitive prepositional phrase, with the verb in second position.',
+      explanation:
+        'Während der Woche opens the sentence as a genitive prepositional phrase, with the verb in second position.',
     },
     {
       id: 'ch68-ex-58',
@@ -1243,7 +1325,8 @@ export const chapter068: ChapterDefinition = {
         { id: 's2', text: 'ist' },
         { id: 's3', text: 'neu.' },
       ],
-      explanation: 'The genitive phrase meines Vaters attaches directly to the noun it modifies: Das Auto meines Vaters ist neu.',
+      explanation:
+        'The genitive phrase meines Vaters attaches directly to the noun it modifies: Das Auto meines Vaters ist neu.',
     },
     {
       id: 'ch68-ex-59',
@@ -1260,7 +1343,8 @@ export const chapter068: ChapterDefinition = {
         { id: 's3', text: 'sie' },
         { id: 's4', text: 'Deutsch.' },
       ],
-      explanation: 'Innerhalb eines Jahres is the genitive prepositional phrase in first position, followed by the verb: Innerhalb eines Jahres lernt sie Deutsch.',
+      explanation:
+        'Innerhalb eines Jahres is the genitive prepositional phrase in first position, followed by the verb: Innerhalb eines Jahres lernt sie Deutsch.',
     },
     {
       id: 'ch68-ex-60',
@@ -1277,7 +1361,8 @@ export const chapter068: ChapterDefinition = {
         { id: 's3', text: 'es' },
         { id: 's4', text: 'einen See.' },
       ],
-      explanation: 'Außerhalb der Stadt opens the sentence, and es gibt (there is) follows with the verb in second position.',
+      explanation:
+        'Außerhalb der Stadt opens the sentence, and es gibt (there is) follows with the verb in second position.',
     },
     {
       id: 'ch68-ex-61',
@@ -1294,7 +1379,8 @@ export const chapter068: ChapterDefinition = {
         { id: 's3', text: 'er' },
         { id: 's4', text: 'ein Fahrrad.' },
       ],
-      explanation: 'Statt eines Autos is the genitive prepositional phrase in first position: Statt eines Autos kauft er ein Fahrrad.',
+      explanation:
+        'Statt eines Autos is the genitive prepositional phrase in first position: Statt eines Autos kauft er ein Fahrrad.',
     },
     {
       id: 'ch68-ex-62',
@@ -1310,7 +1396,8 @@ export const chapter068: ChapterDefinition = {
         { id: 's2', text: 'bellt' },
         { id: 's3', text: 'laut.' },
       ],
-      explanation: 'meiner Schwester is the feminine genitive possessive phrase attached to Hund: Der Hund meiner Schwester bellt laut.',
+      explanation:
+        'meiner Schwester is the feminine genitive possessive phrase attached to Hund: Der Hund meiner Schwester bellt laut.',
     },
     {
       id: 'ch68-ex-63',
@@ -1436,7 +1523,8 @@ export const chapter068: ChapterDefinition = {
       templateParts: ['Das ist das Buch des ', '.'],
       slots: [{ id: 'slot1', correctWord: 'Kindes' }],
       wordBank: ['Kindes', 'Kind', 'Kinder', 'Kinds'],
-      explanation: 'Kind is in the hand-picked monosyllabic group, so it takes -es: des Kindes.',
+      explanation:
+        'Kind is in the hand-picked monosyllabic group, so it takes -es: des Kindes.',
     },
     {
       id: 'ch68-ex-72',
@@ -1450,7 +1538,8 @@ export const chapter068: ChapterDefinition = {
       templateParts: ['Der Titel des ', ' ist bekannt.'],
       slots: [{ id: 'slot1', correctWord: 'Buches' }],
       wordBank: ['Buches', 'Buch', 'Buchs', 'Büchers'],
-      explanation: 'Buch is in the hand-picked monosyllabic group, so it takes -es: des Buches.',
+      explanation:
+        'Buch is in the hand-picked monosyllabic group, so it takes -es: des Buches.',
     },
     {
       id: 'ch68-ex-73',
@@ -1509,7 +1598,8 @@ export const chapter068: ChapterDefinition = {
         { id: 'slot2', correctWord: 'schlechten' },
       ],
       wordBank: ['des', 'der', 'schlechten', 'kleinen', 'große'],
-      explanation: 'Wetter is neuter, so the article is des and the adjective takes the genitive ending -en: des schlechten Wetters.',
+      explanation:
+        'Wetter is neuter, so the article is des and the adjective takes the genitive ending -en: des schlechten Wetters.',
     },
     {
       id: 'ch68-ex-77',
@@ -1526,7 +1616,8 @@ export const chapter068: ChapterDefinition = {
         { id: 'slot2', correctWord: 'starken' },
       ],
       wordBank: ['des', 'der', 'starken', 'kleinen', 'große'],
-      explanation: 'Regen is masculine, so the article is des and the adjective takes the genitive ending -en: des starken Regens.',
+      explanation:
+        'Regen is masculine, so the article is des and the adjective takes the genitive ending -en: des starken Regens.',
     },
     {
       id: 'ch68-ex-78',
@@ -1545,7 +1636,8 @@ export const chapter068: ChapterDefinition = {
         { id: 'p5', left: 'außerhalb', right: 'outside of' },
         { id: 'p6', left: 'statt', right: 'instead of' },
       ],
-      explanation: 'These six prepositions all govern the genitive case: während, wegen, trotz, innerhalb, außerhalb, statt.',
+      explanation:
+        'These six prepositions all govern the genitive case: während, wegen, trotz, innerhalb, außerhalb, statt.',
     },
     {
       id: 'ch68-ex-79',
@@ -1564,7 +1656,8 @@ export const chapter068: ChapterDefinition = {
         { id: 'p5', left: 'die Firma', right: 'der Firma' },
         { id: 'p6', left: 'der Freund', right: 'des Freundes' },
       ],
-      explanation: 'Masculine and neuter nouns add -s or -es (des Vaters, des Kindes, des Tages, des Freundes); feminine nouns take only the article change (der Mutter, der Firma).',
+      explanation:
+        'Masculine and neuter nouns add -s or -es (des Vaters, des Kindes, des Tages, des Freundes); feminine nouns take only the article change (der Mutter, der Firma).',
     },
     {
       id: 'ch68-ex-80',
@@ -1582,7 +1675,8 @@ export const chapter068: ChapterDefinition = {
         { id: 'p4', left: 'innerhalb einer Woche', right: 'within a week' },
         { id: 'p5', left: 'außerhalb der Stadt', right: 'outside the city' },
       ],
-      explanation: 'Each genitive preposition keeps its meaning even when the noun that follows changes gender or number.',
+      explanation:
+        'Each genitive preposition keeps its meaning even when the noun that follows changes gender or number.',
     },
     {
       id: 'ch68-ex-81',
@@ -1601,7 +1695,8 @@ export const chapter068: ChapterDefinition = {
         { id: 'p5', left: 'Peter', right: 'Peters' },
         { id: 'p6', left: 'Hans', right: "Hans'" },
       ],
-      explanation: 'Most names simply add -s (Annas, Julias, Peters); names already ending in a sibilant take only an apostrophe (Max\', Felix\', Hans\').',
+      explanation:
+        "Most names simply add -s (Annas, Julias, Peters); names already ending in a sibilant take only an apostrophe (Max', Felix', Hans').",
     },
     {
       id: 'ch68-ex-82',
@@ -1619,7 +1714,8 @@ export const chapter068: ChapterDefinition = {
         { id: 'p4', left: 'ihre Kollegin', right: 'ihrer Kollegin' },
         { id: 'p5', left: 'dein Kind', right: 'deines Kindes' },
       ],
-      explanation: 'Possessive articles take the same genitive endings as ein: -es for masculine/neuter (meines, unseres, deines), -er for feminine (meiner, ihrer).',
+      explanation:
+        'Possessive articles take the same genitive endings as ein: -es for masculine/neuter (meines, unseres, deines), -er for feminine (meiner, ihrer).',
     },
     {
       id: 'ch68-ex-83',
@@ -1634,10 +1730,15 @@ export const chapter068: ChapterDefinition = {
         { id: 'p1', left: 'Annas Auto', right: 'das Auto von Anna' },
         { id: 'p2', left: 'Peters Buch', right: 'das Buch von Peter' },
         { id: 'p3', left: 'die Farbe des Hauses', right: 'die Farbe von dem Haus' },
-        { id: 'p4', left: 'der Hund meines Nachbarn', right: 'der Hund von meinem Nachbarn' },
+        {
+          id: 'p4',
+          left: 'der Hund meines Nachbarn',
+          right: 'der Hund von meinem Nachbarn',
+        },
         { id: 'p5', left: 'das Büro unseres Chefs', right: 'das Büro von unserem Chef' },
       ],
-      explanation: 'Both columns express the same relationship; the genitive is more formal, von + dative is the everyday spoken alternative.',
+      explanation:
+        'Both columns express the same relationship; the genitive is more formal, von + dative is the everyday spoken alternative.',
     },
     {
       id: 'ch68-ex-84',
@@ -1651,7 +1752,8 @@ export const chapter068: ChapterDefinition = {
       tokens: ['Wegen', 'des', 'Regen', 'bleiben', 'wir', 'zu', 'Hause', '.'],
       errorTokenIndex: 2,
       correction: 'Regens',
-      explanation: 'Regen is masculine and polysyllabic, non-sibilant, so it needs the genitive -s ending: des Regens.',
+      explanation:
+        'Regen is masculine and polysyllabic, non-sibilant, so it needs the genitive -s ending: des Regens.',
     },
     {
       id: 'ch68-ex-85',
@@ -1665,7 +1767,8 @@ export const chapter068: ChapterDefinition = {
       tokens: ['Trotz', 'die', 'Kälte', 'bleiben', 'wir', 'drinnen', '.'],
       errorTokenIndex: 1,
       correction: 'der',
-      explanation: 'Kälte is feminine, so after the genitive preposition trotz it needs the genitive article der, not the nominative die.',
+      explanation:
+        'Kälte is feminine, so after the genitive preposition trotz it needs the genitive article der, not the nominative die.',
     },
     {
       id: 'ch68-ex-86',
@@ -1679,7 +1782,8 @@ export const chapter068: ChapterDefinition = {
       tokens: ['Das', 'ist', 'das', 'Auto', 'meines', 'Vater', '.'],
       errorTokenIndex: 5,
       correction: 'Vaters',
-      explanation: 'Vater is masculine and polysyllabic, non-sibilant, so it needs the genitive -s ending: meines Vaters.',
+      explanation:
+        'Vater is masculine and polysyllabic, non-sibilant, so it needs the genitive -s ending: meines Vaters.',
     },
     {
       id: 'ch68-ex-87',
@@ -1693,7 +1797,8 @@ export const chapter068: ChapterDefinition = {
       tokens: ['Innerhalb', 'einem', 'Woche', 'kommt', 'er', 'zurück', '.'],
       errorTokenIndex: 1,
       correction: 'einer',
-      explanation: 'Woche is feminine, so after the genitive preposition innerhalb it needs the genitive indefinite article einer, not the dative einem.',
+      explanation:
+        'Woche is feminine, so after the genitive preposition innerhalb it needs the genitive indefinite article einer, not the dative einem.',
     },
     {
       id: 'ch68-ex-88',
@@ -1707,7 +1812,8 @@ export const chapter068: ChapterDefinition = {
       tokens: ['Außerhalb', 'des', 'Stadt', 'gibt', 'es', 'einen', 'Park', '.'],
       errorTokenIndex: 1,
       correction: 'der',
-      explanation: 'Stadt is feminine, so the genitive article is der, not des; des is only used with masculine and neuter nouns.',
+      explanation:
+        'Stadt is feminine, so the genitive article is der, not des; des is only used with masculine and neuter nouns.',
     },
     {
       id: 'ch68-ex-89',
@@ -1717,11 +1823,12 @@ export const chapter068: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['genitive', 'names', 'apostrophe'],
       instruction: 'Click the token that contains the error.',
-      prompt: 'Das ist Annas\' Auto.',
+      prompt: "Das ist Annas' Auto.",
       tokens: ['Das', 'ist', "Annas'", 'Auto', '.'],
       errorTokenIndex: 2,
       correction: 'Annas',
-      explanation: 'Anna does not end in a sibilant, so it simply adds -s with no apostrophe: Annas, not Annas\'.',
+      explanation:
+        "Anna does not end in a sibilant, so it simply adds -s with no apostrophe: Annas, not Annas'.",
     },
     {
       id: 'ch68-ex-90',
@@ -1749,7 +1856,8 @@ export const chapter068: ChapterDefinition = {
       tokens: ['Der', 'Titel', 'des', 'Buch', 'ist', 'bekannt', '.'],
       errorTokenIndex: 3,
       correction: 'Buches',
-      explanation: 'Buch is in the hand-picked monosyllabic group, so it needs the genitive -es ending: des Buches.',
+      explanation:
+        'Buch is in the hand-picked monosyllabic group, so it needs the genitive -es ending: des Buches.',
     },
   ],
 };

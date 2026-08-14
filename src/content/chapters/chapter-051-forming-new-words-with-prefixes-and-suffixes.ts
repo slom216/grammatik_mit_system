@@ -9,7 +9,7 @@ export const chapter051: ChapterDefinition = {
   level: 'B1',
   section: 'words-and-word-formation',
   objective:
-    'Build new German words by adding suffixes to form abstract nouns (-heit, -keit, -ung, -schaft, -tum), person and diminutive nouns (-er, -in, -chen, -lein), and adjectives (-lich, -ig, -isch, -bar, -los, -voll, -sam); form verbs with the inseparable prefixes ver- and be- and the loanword suffix -ieren; track how derivation changes a word\'s class (noun ↔ adjective ↔ verb); predict a derived noun\'s gender from its suffix; and apply the spelling changes (umlaut, dropped -e) that many derivations trigger.',
+    "Build new German words by adding suffixes to form abstract nouns (-heit, -keit, -ung, -schaft, -tum), person and diminutive nouns (-er, -in, -chen, -lein), and adjectives (-lich, -ig, -isch, -bar, -los, -voll, -sam); form verbs with the inseparable prefixes ver- and be- and the loanword suffix -ieren; track how derivation changes a word's class (noun ↔ adjective ↔ verb); predict a derived noun's gender from its suffix; and apply the spelling changes (umlaut, dropped -e) that many derivations trigger.",
   prerequisites: [49, 47, 8],
   estimatedMinutes: 30,
   tags: [
@@ -35,13 +35,14 @@ export const chapter051: ChapterDefinition = {
         id: 'ch51-rule-01',
         heading: 'Two engines of word formation: prefixes and suffixes',
         paragraphs: [
-          'A prefix is attached to the front of a word (ver-kaufen, be-suchen); a suffix is attached to the end (Schön-heit, arbeits-los). Both can change a word\'s meaning, and suffixes very often change its word class as well: an adjective suffix turns a noun or verb into an adjective, a noun suffix turns an adjective or verb into a noun, and so on.',
+          "A prefix is attached to the front of a word (ver-kaufen, be-suchen); a suffix is attached to the end (Schön-heit, arbeits-los). Both can change a word's meaning, and suffixes very often change its word class as well: an adjective suffix turns a noun or verb into an adjective, a noun suffix turns an adjective or verb into a noun, and so on.",
           'Because derivation is so productive, native speakers coin and understand new derived words constantly without ever having memorized them individually — exactly the skill this chapter trains. Once you know that -bar means "can be done to something", you can understand machbar ("doable") the first time you meet it, even if no one ever taught it to you directly.',
         ],
       },
       {
         id: 'ch51-rule-02',
-        heading: 'Noun suffixes for abstract qualities: -heit, -keit, -ung, -schaft, -tum',
+        heading:
+          'Noun suffixes for abstract qualities: -heit, -keit, -ung, -schaft, -tum',
         paragraphs: [
           '-heit and -keit attach to adjectives to name the quality the adjective describes, and the resulting noun is always feminine: schön → die Schönheit ("beauty"), frei → die Freiheit ("freedom"), möglich → die Möglichkeit ("possibility"), sauber → die Sauberkeit ("cleanliness"). As a rough rule of thumb, -keit tends to follow adjectives that already end in -ig, -lich, or -bar, while -heit follows most others, but both suffixes do the same job.',
           '-ung attaches to a verb stem to name the action or its result, and is likewise always feminine: bilden → die Bildung ("education, formation"), lösen → die Lösung ("solution"), wohnen → die Wohnung ("apartment"). -schaft attaches mainly to nouns to name a relationship, collective, or state, and is also feminine: Freund → die Freundschaft ("friendship"), Mann → die Mannschaft ("team").',
@@ -88,7 +89,7 @@ export const chapter051: ChapterDefinition = {
         heading: 'Spelling changes during derivation: umlaut and the dropped -e',
         paragraphs: [
           'Two spelling changes appear again and again in German derivation. First, an umlaut on the stem vowel (a→ä, o→ö, u→ü, au→äu) is very common with -chen, -lein, and -in: Haus → Häuschen, Buch → Büchlein, Arzt → Ärztin, Koch → Köchin. Second, when the base word ends in an unstable, unstressed -e or -el, that vowel is often dropped before a suffix beginning with a vowel or with -ung is added: sammeln ("to collect") → die Sammlung ("collection"), not "die Sammelung"; handeln ("to act") → die Handlung ("action, plot"), not "die Handelung".',
-          'These changes are not random: they exist to keep the derived word easy to pronounce, but they are also part of the word\'s fixed spelling and must be learned along with the suffix itself, the same way linking elements must be learned along with compound nouns.',
+          "These changes are not random: they exist to keep the derived word easy to pronounce, but they are also part of the word's fixed spelling and must be learned along with the suffix itself, the same way linking elements must be learned along with compound nouns.",
         ],
       },
     ],
@@ -98,13 +99,38 @@ export const chapter051: ChapterDefinition = {
         title: 'Noun-forming suffixes',
         columns: ['Suffix', 'Attaches to', 'Example', 'Gender'],
         rows: [
-          ['-heit / -keit', 'adjectives', 'schön → die Schönheit; möglich → die Möglichkeit', 'always feminine'],
-          ['-ung', 'verbs', 'bilden → die Bildung; lösen → die Lösung', 'always feminine'],
+          [
+            '-heit / -keit',
+            'adjectives',
+            'schön → die Schönheit; möglich → die Möglichkeit',
+            'always feminine',
+          ],
+          [
+            '-ung',
+            'verbs',
+            'bilden → die Bildung; lösen → die Lösung',
+            'always feminine',
+          ],
           ['-schaft', 'nouns', 'Freund → die Freundschaft', 'always feminine'],
-          ['-tum', 'nouns / adjectives', 'König → das Königtum; reich → der Reichtum (exception)', 'usually neuter, a few masculine exceptions'],
+          [
+            '-tum',
+            'nouns / adjectives',
+            'König → das Königtum; reich → der Reichtum (exception)',
+            'usually neuter, a few masculine exceptions',
+          ],
           ['-er', 'verbs', 'lehren → der Lehrer', 'always masculine'],
-          ['-in', 'masculine person/animal nouns', 'der Lehrer → die Lehrerin', 'always feminine'],
-          ['-chen / -lein', 'nouns', 'Haus → das Häuschen; Buch → das Büchlein', 'always neuter'],
+          [
+            '-in',
+            'masculine person/animal nouns',
+            'der Lehrer → die Lehrerin',
+            'always feminine',
+          ],
+          [
+            '-chen / -lein',
+            'nouns',
+            'Haus → das Häuschen; Buch → das Büchlein',
+            'always neuter',
+          ],
         ],
         note: '-chen and -lein usually add an umlaut to the stem vowel and drop a final unstressed -e on the base noun (Blume → Blümchen); -in often adds an umlaut as well (Arzt → Ärztin).',
       },
@@ -115,7 +141,12 @@ export const chapter051: ChapterDefinition = {
         rows: [
           ['-lich', 'nouns', 'Freund → freundlich', 'characterized by, -ly'],
           ['-ig', 'nouns', 'Sonne → sonnig', 'having, full of'],
-          ['-isch', 'nouns (origin/category)', 'Türkei → türkisch', 'pertaining to, -ish'],
+          [
+            '-isch',
+            'nouns (origin/category)',
+            'Türkei → türkisch',
+            'pertaining to, -ish',
+          ],
           ['-bar', 'verbs', 'essen → essbar', 'can be done to, -able'],
           ['-los', 'nouns', 'Arbeit → arbeitslos', 'without, -less'],
           ['-voll', 'nouns', 'Hoffnung → hoffnungsvoll', 'full of, -ful'],
@@ -127,9 +158,21 @@ export const chapter051: ChapterDefinition = {
         title: 'Verb-forming prefixes and the loanword suffix -ieren',
         columns: ['Prefix / suffix', 'Example', 'Note'],
         rows: [
-          ['ver-', 'kaufen → verkaufen', 'inseparable; often shifts or reverses the base meaning'],
-          ['be-', 'suchen → besuchen; zahlen → bezahlen', 'inseparable; often adds a direct object (intransitive → transitive)'],
-          ['-ieren', 'studieren, telefonieren, organisieren', 'forms verbs from loanwords; weak verb, no ge- in the past participle (studiert)'],
+          [
+            'ver-',
+            'kaufen → verkaufen',
+            'inseparable; often shifts or reverses the base meaning',
+          ],
+          [
+            'be-',
+            'suchen → besuchen; zahlen → bezahlen',
+            'inseparable; often adds a direct object (intransitive → transitive)',
+          ],
+          [
+            '-ieren',
+            'studieren, telefonieren, organisieren',
+            'forms verbs from loanwords; weak verb, no ge- in the past participle (studiert)',
+          ],
         ],
       },
     ],
@@ -138,43 +181,50 @@ export const chapter051: ChapterDefinition = {
         german: 'schön → die Schönheit',
         english: 'beautiful → beauty',
         highlight: ['die Schönheit'],
-        explanation: 'The suffix -heit turns the adjective schön into an abstract feminine noun naming the quality.',
+        explanation:
+          'The suffix -heit turns the adjective schön into an abstract feminine noun naming the quality.',
       },
       {
         german: 'möglich → die Möglichkeit',
         english: 'possible → possibility',
         highlight: ['die Möglichkeit'],
-        explanation: '-keit, like -heit, forms an abstract feminine noun from an adjective.',
+        explanation:
+          '-keit, like -heit, forms an abstract feminine noun from an adjective.',
       },
       {
         german: 'bilden → die Bildung',
         english: 'to educate/form → education, formation',
         highlight: ['die Bildung'],
-        explanation: '-ung turns the verb bilden into a feminine noun naming the resulting action or state.',
+        explanation:
+          '-ung turns the verb bilden into a feminine noun naming the resulting action or state.',
       },
       {
         german: 'Freund → die Freundschaft',
         english: 'friend → friendship',
         highlight: ['die Freundschaft'],
-        explanation: '-schaft attaches to the noun Freund to name the relationship; the result is feminine.',
+        explanation:
+          '-schaft attaches to the noun Freund to name the relationship; the result is feminine.',
       },
       {
         german: 'das Haus → das Häuschen',
         english: 'house → little house',
         highlight: ['das Häuschen'],
-        explanation: 'The diminutive suffix -chen adds an umlaut to the stem vowel; the noun stays neuter.',
+        explanation:
+          'The diminutive suffix -chen adds an umlaut to the stem vowel; the noun stays neuter.',
       },
       {
         german: 'der Lehrer → die Lehrerin',
         english: 'teacher (m.) → teacher (f.)',
         highlight: ['die Lehrerin'],
-        explanation: '-in derives the feminine counterpart of a masculine person noun and is always feminine.',
+        explanation:
+          '-in derives the feminine counterpart of a masculine person noun and is always feminine.',
       },
       {
         german: 'Freund → freundlich',
         english: 'friend → friendly',
         highlight: ['freundlich'],
-        explanation: 'The adjective suffix -lich turns the noun Freund into an adjective describing a quality.',
+        explanation:
+          'The adjective suffix -lich turns the noun Freund into an adjective describing a quality.',
       },
       {
         german: 'Arbeit → arbeitslos',
@@ -186,37 +236,43 @@ export const chapter051: ChapterDefinition = {
         german: 'Hoffnung → hoffnungsvoll',
         english: 'hope → hopeful',
         highlight: ['hoffnungsvoll'],
-        explanation: '-voll means "full of": hoffnungsvoll literally means "full of hope".',
+        explanation:
+          '-voll means "full of": hoffnungsvoll literally means "full of hope".',
       },
       {
         german: 'kaufen → verkaufen',
         english: 'to buy → to sell',
         highlight: ['verkaufen'],
-        explanation: 'The inseparable prefix ver- can completely reverse a verb\'s meaning.',
+        explanation:
+          "The inseparable prefix ver- can completely reverse a verb's meaning.",
       },
       {
         german: 'suchen → besuchen',
         english: 'to search → to visit',
         highlight: ['besuchen'],
-        explanation: 'The inseparable prefix be- creates a new, transitive verb with its own idiomatic meaning.',
+        explanation:
+          'The inseparable prefix be- creates a new, transitive verb with its own idiomatic meaning.',
       },
       {
         german: 'Sie hat in Berlin studiert.',
         english: 'She studied in Berlin.',
         highlight: ['studiert'],
-        explanation: '-ieren verbs are weak but never take ge- in the past participle: studiert, not gestudiert.',
+        explanation:
+          '-ieren verbs are weak but never take ge- in the past participle: studiert, not gestudiert.',
       },
       {
         german: 'sammeln → die Sammlung',
         english: 'to collect → collection',
         highlight: ['die Sammlung'],
-        explanation: 'The unstable -e- of sammeln is dropped before the suffix -ung is added.',
+        explanation:
+          'The unstable -e- of sammeln is dropped before the suffix -ung is added.',
       },
       {
         german: 'reich → der Reichtum',
         english: 'rich → wealth',
         highlight: ['der Reichtum'],
-        explanation: 'Most -tum nouns are neuter, but der Reichtum is one of a few well-known masculine exceptions.',
+        explanation:
+          'Most -tum nouns are neuter, but der Reichtum is one of a few well-known masculine exceptions.',
       },
     ],
     commonMistakes: [
@@ -228,22 +284,26 @@ export const chapter051: ChapterDefinition = {
       {
         incorrect: 'das Hauschen',
         correct: 'das Häuschen',
-        explanation: 'The diminutive suffix -chen normally triggers an umlaut on the stem vowel where one is possible: Haus → Häuschen.',
+        explanation:
+          'The diminutive suffix -chen normally triggers an umlaut on the stem vowel where one is possible: Haus → Häuschen.',
       },
       {
         incorrect: 'das Reichtum',
         correct: 'der Reichtum',
-        explanation: 'Most -tum nouns are neuter (das Königtum), but der Reichtum and der Irrtum are frequent masculine exceptions that must be memorized individually.',
+        explanation:
+          'Most -tum nouns are neuter (das Königtum), but der Reichtum and der Irrtum are frequent masculine exceptions that must be memorized individually.',
       },
       {
         incorrect: 'Sie hat in Berlin gestudiert.',
         correct: 'Sie hat in Berlin studiert.',
-        explanation: 'Verbs ending in -ieren never take the ge- prefix in the past participle: studiert, not gestudiert.',
+        explanation:
+          'Verbs ending in -ieren never take the ge- prefix in the past participle: studiert, not gestudiert.',
       },
       {
         incorrect: 'Er versucht seine Großmutter jeden Sonntag.',
         correct: 'Er besucht seine Großmutter jeden Sonntag.',
-        explanation: 'versuchen means "to try", while besuchen means "to visit" — both are built on suchen, but the prefixes create entirely different, non-interchangeable meanings.',
+        explanation:
+          'versuchen means "to try", while besuchen means "to visit" — both are built on suchen, but the prefixes create entirely different, non-interchangeable meanings.',
       },
     ],
     remember: [
@@ -270,7 +330,8 @@ export const chapter051: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['noun-suffixes', '-heit-keit', 'word-class-change'],
       instruction: 'Choose the correct answer.',
-      prompt: 'From which word class are nouns with the suffixes -heit and -keit typically derived (e.g. schön → die Schönheit, möglich → die Möglichkeit)?',
+      prompt:
+        'From which word class are nouns with the suffixes -heit and -keit typically derived (e.g. schön → die Schönheit, möglich → die Möglichkeit)?',
       options: [
         { id: 'a', text: 'adjectives' },
         { id: 'b', text: 'verbs' },
@@ -278,7 +339,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: 'prepositions' },
       ],
       correctOptionId: 'a',
-      explanation: '-heit and -keit attach to adjectives to form abstract feminine nouns naming a quality: schön (adjective) → die Schönheit (the quality of being beautiful).',
+      explanation:
+        '-heit and -keit attach to adjectives to form abstract feminine nouns naming a quality: schön (adjective) → die Schönheit (the quality of being beautiful).',
     },
     {
       id: 'ch51-ex-02',
@@ -288,7 +350,8 @@ export const chapter051: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['noun-suffixes', '-ung', 'word-class-change'],
       instruction: 'Choose the correct answer.',
-      prompt: 'The suffix -ung (as in bilden → die Bildung, lösen → die Lösung) is typically added to which word class?',
+      prompt:
+        'The suffix -ung (as in bilden → die Bildung, lösen → die Lösung) is typically added to which word class?',
       options: [
         { id: 'a', text: 'verbs' },
         { id: 'b', text: 'adjectives' },
@@ -296,7 +359,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: 'adverbs' },
       ],
       correctOptionId: 'a',
-      explanation: '-ung turns a verb into a feminine noun naming the action or its result: bilden (to form/educate) → die Bildung (education, formation).',
+      explanation:
+        '-ung turns a verb into a feminine noun naming the action or its result: bilden (to form/educate) → die Bildung (education, formation).',
     },
     {
       id: 'ch51-ex-03',
@@ -306,7 +370,8 @@ export const chapter051: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['noun-suffixes', 'diminutive', 'gender'],
       instruction: 'Choose the correct answer.',
-      prompt: 'Which gender do all nouns ending in the diminutive suffixes -chen or -lein have, regardless of the base word\'s own gender?',
+      prompt:
+        "Which gender do all nouns ending in the diminutive suffixes -chen or -lein have, regardless of the base word's own gender?",
       options: [
         { id: 'a', text: 'neuter, always' },
         { id: 'b', text: 'masculine, always' },
@@ -314,7 +379,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: 'it depends on the base word' },
       ],
       correctOptionId: 'a',
-      explanation: 'The diminutive suffixes -chen and -lein always make a noun neuter: das Haus (neuter) → das Häuschen, die Blume (feminine) → das Blümchen.',
+      explanation:
+        'The diminutive suffixes -chen and -lein always make a noun neuter: das Haus (neuter) → das Häuschen, die Blume (feminine) → das Blümchen.',
     },
     {
       id: 'ch51-ex-04',
@@ -324,15 +390,20 @@ export const chapter051: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['noun-suffixes', '-in', 'gender'],
       instruction: 'Choose the correct answer.',
-      prompt: 'What does adding -in to a masculine person or animal noun do (e.g. der Lehrer → die Lehrerin)?',
+      prompt:
+        'What does adding -in to a masculine person or animal noun do (e.g. der Lehrer → die Lehrerin)?',
       options: [
-        { id: 'a', text: 'It forms the female counterpart of the noun, and is always feminine' },
+        {
+          id: 'a',
+          text: 'It forms the female counterpart of the noun, and is always feminine',
+        },
         { id: 'b', text: 'It forms the plural of the noun' },
         { id: 'c', text: 'It forms a diminutive of the noun' },
         { id: 'd', text: 'It turns the noun into an adjective' },
       ],
       correctOptionId: 'a',
-      explanation: 'The suffix -in derives the feminine counterpart of a masculine person or animal noun and is always feminine itself.',
+      explanation:
+        'The suffix -in derives the feminine counterpart of a masculine person or animal noun and is always feminine itself.',
     },
     {
       id: 'ch51-ex-05',
@@ -357,12 +428,14 @@ export const chapter051: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['noun-suffixes', 'article', '-tum', 'exception'],
       instruction: 'Write the correct definite article. Capitalisation is not checked.',
-      prompt: '___ Reichtum (from reich, "rich") — a well-known exception among -tum nouns',
+      prompt:
+        '___ Reichtum (from reich, "rich") — a well-known exception among -tum nouns',
       acceptedAnswers: ['der', 'der Reichtum'],
       answerMode: 'caseInsensitive',
       placeholder: 'der/die/das',
       maxLength: 20,
-      explanation: 'Most -tum nouns are neuter (das Königtum), but der Reichtum and der Irrtum are common masculine exceptions that must be memorized individually.',
+      explanation:
+        'Most -tum nouns are neuter (das Königtum), but der Reichtum and der Irrtum are common masculine exceptions that must be memorized individually.',
     },
     {
       id: 'ch51-ex-07',
@@ -377,7 +450,8 @@ export const chapter051: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'der/die/das',
       maxLength: 20,
-      explanation: 'Diminutives with -chen are always neuter, even though Haus itself already happens to be neuter here.',
+      explanation:
+        'Diminutives with -chen are always neuter, even though Haus itself already happens to be neuter here.',
     },
     {
       id: 'ch51-ex-08',
@@ -392,7 +466,8 @@ export const chapter051: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'der/die/das',
       maxLength: 20,
-      explanation: 'The suffix -in is always feminine; note the umlaut a→ä that appears when deriving Ärztin from Arzt.',
+      explanation:
+        'The suffix -in is always feminine; note the umlaut a→ä that appears when deriving Ärztin from Arzt.',
     },
     {
       id: 'ch51-ex-09',
@@ -402,7 +477,8 @@ export const chapter051: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['adjective-suffixes', '-bar', 'meaning'],
       instruction: 'Choose the correct answer.',
-      prompt: 'What does the adjective suffix -bar add to a verb stem (e.g. essen → essbar, lesen → lesbar)?',
+      prompt:
+        'What does the adjective suffix -bar add to a verb stem (e.g. essen → essbar, lesen → lesbar)?',
       options: [
         { id: 'a', text: '"can be done to, -able"' },
         { id: 'b', text: '"without, -less"' },
@@ -410,7 +486,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: '"happened in the past"' },
       ],
       correctOptionId: 'a',
-      explanation: '-bar means that something can undergo the action of the verb: essbar = "edible" (can be eaten).',
+      explanation:
+        '-bar means that something can undergo the action of the verb: essbar = "edible" (can be eaten).',
     },
     {
       id: 'ch51-ex-10',
@@ -420,7 +497,8 @@ export const chapter051: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['adjective-suffixes', '-los', 'meaning'],
       instruction: 'Choose the correct answer.',
-      prompt: 'What does the adjective suffix -los mean (e.g. Arbeit → arbeitslos, Hilfe → hilflos)?',
+      prompt:
+        'What does the adjective suffix -los mean (e.g. Arbeit → arbeitslos, Hilfe → hilflos)?',
       options: [
         { id: 'a', text: '"without, -less"' },
         { id: 'b', text: '"full of, -ful"' },
@@ -428,7 +506,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: '"belonging to"' },
       ],
       correctOptionId: 'a',
-      explanation: '-los means "without": arbeitslos literally means "without work", i.e. unemployed.',
+      explanation:
+        '-los means "without": arbeitslos literally means "without work", i.e. unemployed.',
     },
     {
       id: 'ch51-ex-11',
@@ -438,7 +517,8 @@ export const chapter051: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['adjective-suffixes', '-voll', 'meaning'],
       instruction: 'Choose the correct answer.',
-      prompt: 'What does the adjective suffix -voll mean (e.g. Hoffnung → hoffnungsvoll, Liebe → liebevoll)?',
+      prompt:
+        'What does the adjective suffix -voll mean (e.g. Hoffnung → hoffnungsvoll, Liebe → liebevoll)?',
       options: [
         { id: 'a', text: '"full of, -ful"' },
         { id: 'b', text: '"without, -less"' },
@@ -446,7 +526,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: '"resembling"' },
       ],
       correctOptionId: 'a',
-      explanation: '-voll means "full of": hoffnungsvoll literally means "full of hope", i.e. hopeful.',
+      explanation:
+        '-voll means "full of": hoffnungsvoll literally means "full of hope", i.e. hopeful.',
     },
     {
       id: 'ch51-ex-12',
@@ -464,7 +545,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: 'türkbar' },
       ],
       correctOptionId: 'a',
-      explanation: 'türkisch is formed with -isch; note that the ending -ei of Türkei is dropped before the suffix is added.',
+      explanation:
+        'türkisch is formed with -isch; note that the ending -ei of Türkei is dropped before the suffix is added.',
     },
     {
       id: 'ch51-ex-13',
@@ -479,7 +561,8 @@ export const chapter051: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'freundlich',
       maxLength: 20,
-      explanation: 'Adding -lich to the noun Freund gives the adjective freundlich, "friendly".',
+      explanation:
+        'Adding -lich to the noun Freund gives the adjective freundlich, "friendly".',
     },
     {
       id: 'ch51-ex-14',
@@ -488,13 +571,15 @@ export const chapter051: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['adjective-suffixes', 'derivation', '-lich', 'spelling-change'],
-      instruction: 'Derive the adjective. Watch for the umlaut. Capitalisation is not checked.',
+      instruction:
+        'Derive the adjective. Watch for the umlaut. Capitalisation is not checked.',
       prompt: 'Tag (noun) + -lich → ___ ("daily")',
       acceptedAnswers: ['täglich'],
       answerMode: 'caseInsensitive',
       placeholder: 'täglich',
       maxLength: 20,
-      explanation: 'Tag becomes täglich with an umlaut a→ä when the suffix -lich is added.',
+      explanation:
+        'Tag becomes täglich with an umlaut a→ä when the suffix -lich is added.',
     },
     {
       id: 'ch51-ex-15',
@@ -534,7 +619,8 @@ export const chapter051: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['word-class-change', 'noun-to-adjective'],
       instruction: 'Identify the word-class change.',
-      prompt: 'Which type of word-class change does "Freund (noun) → freundlich (adjective)" represent?',
+      prompt:
+        'Which type of word-class change does "Freund (noun) → freundlich (adjective)" represent?',
       options: [
         { id: 'a', text: 'noun → adjective' },
         { id: 'b', text: 'adjective → noun' },
@@ -542,7 +628,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: 'noun → verb' },
       ],
       correctOptionId: 'a',
-      explanation: 'The suffix -lich turns the noun Freund into an adjective: this is a noun-to-adjective derivation.',
+      explanation:
+        'The suffix -lich turns the noun Freund into an adjective: this is a noun-to-adjective derivation.',
     },
     {
       id: 'ch51-ex-18',
@@ -552,7 +639,8 @@ export const chapter051: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['word-class-change', 'verb-to-noun'],
       instruction: 'Identify the word-class change.',
-      prompt: 'Which type of word-class change does "bilden (verb) → die Bildung (noun)" represent?',
+      prompt:
+        'Which type of word-class change does "bilden (verb) → die Bildung (noun)" represent?',
       options: [
         { id: 'a', text: 'verb → noun' },
         { id: 'b', text: 'noun → verb' },
@@ -560,7 +648,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: 'noun → adjective' },
       ],
       correctOptionId: 'a',
-      explanation: 'The suffix -ung turns the verb bilden into a noun: this is a verb-to-noun derivation.',
+      explanation:
+        'The suffix -ung turns the verb bilden into a noun: this is a verb-to-noun derivation.',
     },
     {
       id: 'ch51-ex-19',
@@ -570,7 +659,8 @@ export const chapter051: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['word-class-change', 'adjective-to-noun'],
       instruction: 'Identify the word-class change.',
-      prompt: 'Which type of word-class change does "schön (adjective) → die Schönheit (noun)" represent?',
+      prompt:
+        'Which type of word-class change does "schön (adjective) → die Schönheit (noun)" represent?',
       options: [
         { id: 'a', text: 'adjective → noun' },
         { id: 'b', text: 'noun → adjective' },
@@ -578,7 +668,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: 'adjective → verb' },
       ],
       correctOptionId: 'a',
-      explanation: 'The suffix -heit turns the adjective schön into a noun: this is an adjective-to-noun derivation.',
+      explanation:
+        'The suffix -heit turns the adjective schön into a noun: this is an adjective-to-noun derivation.',
     },
     {
       id: 'ch51-ex-20',
@@ -587,11 +678,20 @@ export const chapter051: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['spelling-change', '-ung', 'dialogue'],
-      instruction: 'Read the exchange, then choose the word that correctly completes the second line.',
+      instruction:
+        'Read the exchange, then choose the word that correctly completes the second line.',
       prompt: 'Complete: "Ja, die ___ der Geschichte ist wirklich mitreißend."',
       dialogue: [
-        { speaker: 'Nina', german: 'Ich finde diesen Roman total spannend.', english: 'I find this novel totally exciting.' },
-        { speaker: 'Paul', german: 'Ja, die ___ der Geschichte ist wirklich mitreißend.', english: 'Yes, the plot of the story is really gripping.' },
+        {
+          speaker: 'Nina',
+          german: 'Ich finde diesen Roman total spannend.',
+          english: 'I find this novel totally exciting.',
+        },
+        {
+          speaker: 'Paul',
+          german: 'Ja, die ___ der Geschichte ist wirklich mitreißend.',
+          english: 'Yes, the plot of the story is really gripping.',
+        },
       ],
       options: [
         { id: 'a', text: 'Handlung' },
@@ -600,7 +700,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: 'Handlichkeit' },
       ],
       correctOptionId: 'a',
-      explanation: 'die Handlung ("plot, action") is derived from handeln by dropping the unstable -e- before adding -ung: handeln → Handlung.',
+      explanation:
+        'die Handlung ("plot, action") is derived from handeln by dropping the unstable -e- before adding -ung: handeln → Handlung.',
     },
     {
       id: 'ch51-ex-21',
@@ -639,13 +740,15 @@ export const chapter051: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['noun-formation', '-ung', 'spelling-change'],
-      instruction: 'Derive the noun, with its article. Watch for the dropped vowel. Capitalisation is checked.',
+      instruction:
+        'Derive the noun, with its article. Watch for the dropped vowel. Capitalisation is checked.',
       prompt: 'sammeln (verb) + -ung → ___',
       acceptedAnswers: ['die Sammlung'],
       answerMode: 'normalized',
       placeholder: 'die Sammlung',
       maxLength: 25,
-      explanation: 'The unstable -e- in sammeln is dropped before adding -ung: sammeln → die Sammlung ("collection").',
+      explanation:
+        'The unstable -e- in sammeln is dropped before adding -ung: sammeln → die Sammlung ("collection").',
     },
     {
       id: 'ch51-ex-24',
@@ -654,13 +757,15 @@ export const chapter051: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['noun-formation', 'diminutive', 'spelling-change'],
-      instruction: 'Derive the diminutive, with its article. Watch for the dropped -e and the umlaut. Capitalisation is checked.',
+      instruction:
+        'Derive the diminutive, with its article. Watch for the dropped -e and the umlaut. Capitalisation is checked.',
       prompt: 'die Blume (noun) + -chen → ___',
       acceptedAnswers: ['das Blümchen'],
       answerMode: 'normalized',
       placeholder: 'das Blümchen',
       maxLength: 25,
-      explanation: 'The final -e of Blume is dropped, the vowel takes an umlaut, and -chen is added: Blume → das Blümchen ("little flower").',
+      explanation:
+        'The final -e of Blume is dropped, the vowel takes an umlaut, and -chen is added: Blume → das Blümchen ("little flower").',
     },
     {
       id: 'ch51-ex-25',
@@ -700,7 +805,8 @@ export const chapter051: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['verb-prefixes', 'ver-', 'transfer'],
       instruction: 'Apply what you know about the prefix ver-.',
-      prompt: 'kaufen means "to buy." What does verkaufen mean, and what kind of prefix is ver-?',
+      prompt:
+        'kaufen means "to buy." What does verkaufen mean, and what kind of prefix is ver-?',
       options: [
         { id: 'a', text: '"to sell" — an inseparable prefix that can shift meaning' },
         { id: 'b', text: '"to buy again" — a separable prefix' },
@@ -708,7 +814,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: '"to try to buy" — an inseparable prefix' },
       ],
       correctOptionId: 'a',
-      explanation: 'ver- is an inseparable verb prefix; here it flips the meaning entirely: kaufen ("to buy") → verkaufen ("to sell").',
+      explanation:
+        'ver- is an inseparable verb prefix; here it flips the meaning entirely: kaufen ("to buy") → verkaufen ("to sell").',
     },
     {
       id: 'ch51-ex-28',
@@ -718,7 +825,8 @@ export const chapter051: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['verb-prefixes', 'be-', 'ver-', 'false-friends'],
       instruction: 'Choose the sentence with the correct verb.',
-      prompt: 'Which sentence correctly expresses "He visits his grandmother every Sunday"?',
+      prompt:
+        'Which sentence correctly expresses "He visits his grandmother every Sunday"?',
       options: [
         { id: 'a', text: 'Er besucht seine Großmutter jeden Sonntag.' },
         { id: 'b', text: 'Er versucht seine Großmutter jeden Sonntag.' },
@@ -726,7 +834,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: 'Er wird seine Großmutter jeden Sonntag suchen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'besuchen ("to visit") and versuchen ("to try") are both built on suchen but have unrelated meanings — only besuchen fits "to visit".',
+      explanation:
+        'besuchen ("to visit") and versuchen ("to try") are both built on suchen but have unrelated meanings — only besuchen fits "to visit".',
     },
     {
       id: 'ch51-ex-29',
@@ -744,7 +853,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: 'Sie hat in Berlin studieren.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Verbs ending in -ieren never take the ge- prefix in the past participle: studiert, not gestudiert.',
+      explanation:
+        'Verbs ending in -ieren never take the ge- prefix in the past participle: studiert, not gestudiert.',
     },
     {
       id: 'ch51-ex-30',
@@ -754,7 +864,8 @@ export const chapter051: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['semantic-families', 'sorting', 'transfer'],
       instruction: 'Sort this word: which one does NOT belong with the others?',
-      prompt: 'Which word does NOT belong with the others (odd one out by suffix family)?',
+      prompt:
+        'Which word does NOT belong with the others (odd one out by suffix family)?',
       options: [
         { id: 'a', text: 'die Freiheit' },
         { id: 'b', text: 'die Gesundheit' },
@@ -762,7 +873,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: 'das Häuschen' },
       ],
       correctOptionId: 'd',
-      explanation: 'Freiheit, Gesundheit, and Möglichkeit are all abstract feminine nouns formed with -heit/-keit; Häuschen is a neuter diminutive formed with -chen, a different family.',
+      explanation:
+        'Freiheit, Gesundheit, and Möglichkeit are all abstract feminine nouns formed with -heit/-keit; Häuschen is a neuter diminutive formed with -chen, a different family.',
     },
     {
       id: 'ch51-ex-31',
@@ -771,13 +883,15 @@ export const chapter051: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'diminutive', 'spelling'],
-      instruction: 'Correct the mistake. Write the full corrected word (with article). Capitalisation is checked.',
+      instruction:
+        'Correct the mistake. Write the full corrected word (with article). Capitalisation is checked.',
       prompt: 'Falsch: das Hauschen',
       acceptedAnswers: ['das Häuschen'],
       answerMode: 'normalized',
       placeholder: 'das Häuschen',
       maxLength: 20,
-      explanation: 'The diminutive suffix -chen normally triggers an umlaut on the stem vowel: das Häuschen, not das Hauschen.',
+      explanation:
+        'The diminutive suffix -chen normally triggers an umlaut on the stem vowel: das Häuschen, not das Hauschen.',
     },
     {
       id: 'ch51-ex-32',
@@ -786,13 +900,15 @@ export const chapter051: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', '-ieren', 'participle'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ich habe drei Jahre in Berlin gestudiert.',
       acceptedAnswers: ['Ich habe drei Jahre in Berlin studiert.'],
       answerMode: 'normalized',
       placeholder: 'Ich habe drei Jahre in Berlin studiert.',
       maxLength: 60,
-      explanation: 'Verbs in -ieren never take ge- in the past participle: studiert, not gestudiert.',
+      explanation:
+        'Verbs in -ieren never take ge- in the past participle: studiert, not gestudiert.',
     },
     {
       id: 'ch51-ex-33',
@@ -802,7 +918,8 @@ export const chapter051: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['noun-suffixes', '-schaft', 'word-class-change'],
       instruction: 'Choose the correct answer.',
-      prompt: 'The suffix -schaft (as in Freund → die Freundschaft, Mann → die Mannschaft) typically attaches to which word class?',
+      prompt:
+        'The suffix -schaft (as in Freund → die Freundschaft, Mann → die Mannschaft) typically attaches to which word class?',
       options: [
         { id: 'a', text: 'nouns' },
         { id: 'b', text: 'adjectives' },
@@ -810,7 +927,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: 'prepositions' },
       ],
       correctOptionId: 'a',
-      explanation: '-schaft attaches mainly to nouns to name a relationship, collective, or state, and the result is always feminine.',
+      explanation:
+        '-schaft attaches mainly to nouns to name a relationship, collective, or state, and the result is always feminine.',
     },
     {
       id: 'ch51-ex-34',
@@ -820,7 +938,8 @@ export const chapter051: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['noun-suffixes', '-er', 'word-class-change'],
       instruction: 'Choose the correct answer.',
-      prompt: 'The suffix -er (as in lehren → der Lehrer, fahren → der Fahrer) attaches to a verb stem to name what?',
+      prompt:
+        'The suffix -er (as in lehren → der Lehrer, fahren → der Fahrer) attaches to a verb stem to name what?',
       options: [
         { id: 'a', text: 'the person who performs the action' },
         { id: 'b', text: 'the female counterpart of a masculine noun' },
@@ -828,7 +947,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: 'an abstract quality' },
       ],
       correctOptionId: 'a',
-      explanation: '-er forms an agent noun naming the person (or tool) that performs the verb\'s action, and the result is masculine.',
+      explanation:
+        "-er forms an agent noun naming the person (or tool) that performs the verb's action, and the result is masculine.",
     },
     {
       id: 'ch51-ex-35',
@@ -876,7 +996,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'p4', left: '-in', right: 'always feminine (like -heit/-keit)' },
         { id: 'p5', left: '-tum', right: 'usually neuter (a few masculine exceptions)' },
       ],
-      explanation: 'German noun-forming suffixes reliably signal gender: -heit/-keit/-in are feminine, -chen/-lein are neuter, -er (agent nouns) is masculine, and -tum is usually neuter with exceptions like der Reichtum.',
+      explanation:
+        'German noun-forming suffixes reliably signal gender: -heit/-keit/-in are feminine, -chen/-lein are neuter, -er (agent nouns) is masculine, and -tum is usually neuter with exceptions like der Reichtum.',
     },
     {
       id: 'ch51-ex-38',
@@ -894,7 +1015,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'p4', left: 'sauber', right: 'die Sauberkeit' },
         { id: 'p5', left: 'bilden', right: 'die Bildung' },
       ],
-      explanation: 'schön, frei, möglich, and sauber are adjectives that take -heit/-keit; bilden is a verb that takes -ung — all resulting nouns are feminine.',
+      explanation:
+        'schön, frei, möglich, and sauber are adjectives that take -heit/-keit; bilden is a verb that takes -ung — all resulting nouns are feminine.',
     },
     {
       id: 'ch51-ex-39',
@@ -908,7 +1030,8 @@ export const chapter051: ChapterDefinition = {
       templateParts: ['Die ', ' ist für viele Menschen das höchste Gut.'],
       slots: [{ id: 's1', correctWord: 'Freiheit' }],
       wordBank: ['Freiheit', 'Freiheitlich', 'Freiheiten', 'Häuschen'],
-      explanation: 'frei ("free") + -heit → die Freiheit ("freedom"), the noun that fits the slot.',
+      explanation:
+        'frei ("free") + -heit → die Freiheit ("freedom"), the noun that fits the slot.',
     },
     {
       id: 'ch51-ex-40',
@@ -926,7 +1049,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: 'chembar' },
       ],
       correctOptionId: 'a',
-      explanation: 'chemisch is formed with -isch; the ending -ie of Chemie is dropped before the suffix is added.',
+      explanation:
+        'chemisch is formed with -isch; the ending -ie of Chemie is dropped before the suffix is added.',
     },
     {
       id: 'ch51-ex-41',
@@ -936,7 +1060,8 @@ export const chapter051: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['adjective-suffixes', '-sam', 'meaning'],
       instruction: 'Choose the correct answer.',
-      prompt: 'What does the adjective suffix -sam mean (e.g. sparen → sparsam, Arbeit → arbeitsam)?',
+      prompt:
+        'What does the adjective suffix -sam mean (e.g. sparen → sparsam, Arbeit → arbeitsam)?',
       options: [
         { id: 'a', text: '"tending to, inclined to"' },
         { id: 'b', text: '"without"' },
@@ -944,7 +1069,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: '"can be done to"' },
       ],
       correctOptionId: 'a',
-      explanation: '-sam means roughly "tending to, inclined to": sparsam = "tending to save", i.e. thrifty.',
+      explanation:
+        '-sam means roughly "tending to, inclined to": sparsam = "tending to save", i.e. thrifty.',
     },
     {
       id: 'ch51-ex-42',
@@ -988,7 +1114,8 @@ export const chapter051: ChapterDefinition = {
       tokens: ['Der', 'Film', 'war', 'sehr', 'hoffnungslich', 'und', 'enttäuschend', '.'],
       errorTokenIndex: 4,
       correction: 'hoffnungslos',
-      explanation: '-los means "without" (hoffnungslos = "without hope"); -lich is a different suffix and does not attach to Hoffnung this way.',
+      explanation:
+        '-los means "without" (hoffnungslos = "without hope"); -lich is a different suffix and does not attach to Hoffnung this way.',
     },
     {
       id: 'ch51-ex-45',
@@ -1002,7 +1129,8 @@ export const chapter051: ChapterDefinition = {
       templateParts: ['Der alte Fernseher ist noch ', '.'],
       slots: [{ id: 's1', correctWord: 'reparierbar' }],
       wordBank: ['reparierbar', 'reparierlos', 'repariersam', 'repariert'],
-      explanation: '-bar attaches to the verb stem reparier- to mean "can be repaired": reparierbar.',
+      explanation:
+        '-bar attaches to the verb stem reparier- to mean "can be repaired": reparierbar.',
     },
     {
       id: 'ch51-ex-46',
@@ -1020,7 +1148,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'p4', left: 'schwimmen', right: 'der Schwimmer' },
         { id: 'p5', left: 'spielen', right: 'der Spieler' },
       ],
-      explanation: 'All of these verbs form a masculine agent noun by adding -er to the stem (with an umlaut for backen → Bäcker).',
+      explanation:
+        'All of these verbs form a masculine agent noun by adding -er to the stem (with an umlaut for backen → Bäcker).',
     },
     {
       id: 'ch51-ex-47',
@@ -1029,7 +1158,8 @@ export const chapter051: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['noun-suffixes', '-in', 'matching'],
-      instruction: 'Match each masculine noun to its feminine counterpart formed with -in.',
+      instruction:
+        'Match each masculine noun to its feminine counterpart formed with -in.',
       prompt: 'Match the masculine person noun to its feminine -in form.',
       pairs: [
         { id: 'p1', left: 'der Lehrer', right: 'die Lehrerin' },
@@ -1038,7 +1168,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'p4', left: 'der Fahrer', right: 'die Fahrerin' },
         { id: 'p5', left: 'der Verkäufer', right: 'die Verkäuferin' },
       ],
-      explanation: '-in derives the feminine counterpart of a masculine person noun and is always feminine; Arzt and Koch also take an umlaut.',
+      explanation:
+        '-in derives the feminine counterpart of a masculine person noun and is always feminine; Arzt and Koch also take an umlaut.',
     },
     {
       id: 'ch51-ex-48',
@@ -1048,7 +1179,8 @@ export const chapter051: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['word-class-change', 'noun-to-adjective'],
       instruction: 'Identify the word-class change.',
-      prompt: 'Which word-class change does "Arbeit (noun) → arbeitslos (adjective)" represent?',
+      prompt:
+        'Which word-class change does "Arbeit (noun) → arbeitslos (adjective)" represent?',
       options: [
         { id: 'a', text: 'noun → adjective' },
         { id: 'b', text: 'adjective → noun' },
@@ -1056,7 +1188,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: 'noun → verb' },
       ],
       correctOptionId: 'a',
-      explanation: 'The suffix -los turns the noun Arbeit into an adjective: this is a noun-to-adjective derivation.',
+      explanation:
+        'The suffix -los turns the noun Arbeit into an adjective: this is a noun-to-adjective derivation.',
     },
     {
       id: 'ch51-ex-49',
@@ -1066,7 +1199,8 @@ export const chapter051: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['word-class-change', 'verb-to-adjective'],
       instruction: 'Identify the word-class change.',
-      prompt: 'Which word-class change does "sparen (verb) → sparsam (adjective)" represent?',
+      prompt:
+        'Which word-class change does "sparen (verb) → sparsam (adjective)" represent?',
       options: [
         { id: 'a', text: 'verb → adjective' },
         { id: 'b', text: 'adjective → verb' },
@@ -1074,7 +1208,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: 'verb → noun' },
       ],
       correctOptionId: 'a',
-      explanation: 'The suffix -sam turns the verb sparen into an adjective: this is a verb-to-adjective derivation.',
+      explanation:
+        'The suffix -sam turns the verb sparen into an adjective: this is a verb-to-adjective derivation.',
     },
     {
       id: 'ch51-ex-50',
@@ -1107,7 +1242,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'p4', left: 'full of love', right: 'liebevoll' },
         { id: 'p5', left: 'without help', right: 'hilflos' },
       ],
-      explanation: '-voll ("full of") and -los ("without") attach to the same kind of noun to build opposite adjectives.',
+      explanation:
+        '-voll ("full of") and -los ("without") attach to the same kind of noun to build opposite adjectives.',
     },
     {
       id: 'ch51-ex-52',
@@ -1117,14 +1253,20 @@ export const chapter051: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['adjective-suffixes', '-los', '-voll'],
       instruction: 'Drag the correct words into the slots.',
-      prompt: 'Complete the sentence with the opposite adjectives derived with -los and -voll.',
-      templateParts: ['Er fühlt sich total ', ', aber seine Familie ist ihm gegenüber immer sehr ', '.'],
+      prompt:
+        'Complete the sentence with the opposite adjectives derived with -los and -voll.',
+      templateParts: [
+        'Er fühlt sich total ',
+        ', aber seine Familie ist ihm gegenüber immer sehr ',
+        '.',
+      ],
       slots: [
         { id: 's1', correctWord: 'hilflos' },
         { id: 's2', correctWord: 'liebevoll' },
       ],
       wordBank: ['hilflos', 'liebevoll', 'arbeitslos', 'hoffnungsvoll'],
-      explanation: 'hilflos ("helpless", from Hilfe + -los) and liebevoll ("loving", from Liebe + -voll) are opposite-feeling adjectives from the same suffix pair.',
+      explanation:
+        'hilflos ("helpless", from Hilfe + -los) and liebevoll ("loving", from Liebe + -voll) are opposite-feeling adjectives from the same suffix pair.',
     },
     {
       id: 'ch51-ex-53',
@@ -1153,7 +1295,8 @@ export const chapter051: ChapterDefinition = {
       tokens: ['Meine', 'Schwester', 'ist', 'Lehrer', 'von', 'Beruf', '.'],
       errorTokenIndex: 3,
       correction: 'Lehrerin',
-      explanation: 'Since the subject (Schwester) is female, the profession noun should take the feminine -in suffix: Lehrerin, not Lehrer.',
+      explanation:
+        'Since the subject (Schwester) is female, the profession noun should take the feminine -in suffix: Lehrerin, not Lehrer.',
     },
     {
       id: 'ch51-ex-55',
@@ -1167,7 +1310,8 @@ export const chapter051: ChapterDefinition = {
       tokens: ['Er', 'hat', 'seine', 'Oma', 'gebesucht', '.'],
       errorTokenIndex: 4,
       correction: 'besucht',
-      explanation: 'be- is an inseparable prefix, so its past participle never adds ge-: besucht, not gebesucht.',
+      explanation:
+        'be- is an inseparable prefix, so its past participle never adds ge-: besucht, not gebesucht.',
     },
     {
       id: 'ch51-ex-56',
@@ -1184,7 +1328,8 @@ export const chapter051: ChapterDefinition = {
         { id: 's2', correctWord: 'besuche' },
       ],
       wordBank: ['verkaufe', 'besuche', 'kaufe', 'suche'],
-      explanation: 'verkaufen ("to sell") and besuchen ("to visit") are both built on kaufen/suchen with inseparable prefixes that shift the meaning.',
+      explanation:
+        'verkaufen ("to sell") and besuchen ("to visit") are both built on kaufen/suchen with inseparable prefixes that shift the meaning.',
     },
     {
       id: 'ch51-ex-57',
@@ -1202,7 +1347,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'p4', left: '-bar', right: 'essbar' },
         { id: 'p5', left: '-los', right: 'arbeitslos' },
       ],
-      explanation: 'Each affix has a signature productive pattern: ver-/be- form verbs, -ieren forms verbs from loanwords, -bar/-los form adjectives.',
+      explanation:
+        'Each affix has a signature productive pattern: ver-/be- form verbs, -ieren forms verbs from loanwords, -bar/-los form adjectives.',
     },
     {
       id: 'ch51-ex-58',
@@ -1214,13 +1360,17 @@ export const chapter051: ChapterDefinition = {
       instruction: 'Apply what you know about inseparable prefixes.',
       prompt: 'Which statement about the prefixes ver- and be- is true?',
       options: [
-        { id: 'a', text: 'They are inseparable and never insert ge- in the past participle' },
+        {
+          id: 'a',
+          text: 'They are inseparable and never insert ge- in the past participle',
+        },
         { id: 'b', text: 'They are separable and move to the end of the clause' },
         { id: 'c', text: 'They only attach to nouns' },
-        { id: 'd', text: 'They always negate the verb\'s meaning' },
+        { id: 'd', text: "They always negate the verb's meaning" },
       ],
       correctOptionId: 'a',
-      explanation: 'ver- and be- are inseparable verb prefixes: they never split off, and the past participle never inserts ge- after them.',
+      explanation:
+        'ver- and be- are inseparable verb prefixes: they never split off, and the past participle never inserts ge- after them.',
     },
     {
       id: 'ch51-ex-59',
@@ -1238,7 +1388,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: 'Sie hat mit mir telefonieren.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Verbs ending in -ieren never take ge- in the past participle: telefoniert, not getelefoniert.',
+      explanation:
+        'Verbs ending in -ieren never take ge- in the past participle: telefoniert, not getelefoniert.',
     },
     {
       id: 'ch51-ex-60',
@@ -1253,7 +1404,8 @@ export const chapter051: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'organisiert',
       maxLength: 20,
-      explanation: '-ieren verbs never take ge- in the past participle: organisiert, not georganisiert.',
+      explanation:
+        '-ieren verbs never take ge- in the past participle: organisiert, not georganisiert.',
     },
     {
       id: 'ch51-ex-61',
@@ -1267,7 +1419,8 @@ export const chapter051: ChapterDefinition = {
       tokens: ['Wir', 'haben', 'die', 'Party', 'gut', 'georganisiert', '.'],
       errorTokenIndex: 5,
       correction: 'organisiert',
-      explanation: '-ieren verbs never take ge- in the past participle: organisiert, not georganisiert.',
+      explanation:
+        '-ieren verbs never take ge- in the past participle: organisiert, not georganisiert.',
     },
     {
       id: 'ch51-ex-62',
@@ -1281,7 +1434,8 @@ export const chapter051: ChapterDefinition = {
       tokens: ['Er', 'hat', 'die', 'Berge', 'gefotografiert', '.'],
       errorTokenIndex: 4,
       correction: 'fotografiert',
-      explanation: '-ieren verbs never take ge- in the past participle: fotografiert, not gefotografiert.',
+      explanation:
+        '-ieren verbs never take ge- in the past participle: fotografiert, not gefotografiert.',
     },
     {
       id: 'ch51-ex-63',
@@ -1290,8 +1444,10 @@ export const chapter051: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'transfer',
       grammarFocus: ['noun-suffixes', '-keit', 'sentence-order'],
-      instruction: 'Drag the segments into the correct order to form a grammatical sentence.',
-      prompt: 'Arrange the segments to form a correct sentence about the cleanliness of the kitchen.',
+      instruction:
+        'Drag the segments into the correct order to form a grammatical sentence.',
+      prompt:
+        'Arrange the segments to form a correct sentence about the cleanliness of the kitchen.',
       segments: [
         { id: 'seg1', text: 'Die' },
         { id: 'seg2', text: 'Sauberkeit' },
@@ -1301,7 +1457,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'seg6', text: 'alle' },
         { id: 'seg7', text: 'Gäste.' },
       ],
-      explanation: '"Die Sauberkeit der Küche beeindruckt alle Gäste" ("The cleanliness of the kitchen impresses all the guests") — Sauberkeit is the -keit noun derived from sauber.',
+      explanation:
+        '"Die Sauberkeit der Küche beeindruckt alle Gäste" ("The cleanliness of the kitchen impresses all the guests") — Sauberkeit is the -keit noun derived from sauber.',
     },
     {
       id: 'ch51-ex-64',
@@ -1310,8 +1467,10 @@ export const chapter051: ChapterDefinition = {
       type: 'sentenceOrdering',
       level: 'transfer',
       grammarFocus: ['verb-prefixes', 'ver-', 'sentence-order'],
-      instruction: 'Drag the segments into the correct order to form a grammatical sentence.',
-      prompt: 'Arrange the segments to form a correct sentence about the salesman selling the car.',
+      instruction:
+        'Drag the segments into the correct order to form a grammatical sentence.',
+      prompt:
+        'Arrange the segments to form a correct sentence about the salesman selling the car.',
       segments: [
         { id: 'seg1', text: 'Der' },
         { id: 'seg2', text: 'Verkäufer' },
@@ -1321,7 +1480,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'seg6', text: 'Auto' },
         { id: 'seg7', text: 'verkauft.' },
       ],
-      explanation: '"Der Verkäufer hat mir das Auto verkauft" ("The salesman sold me the car") — Verkäufer (agent noun, -er) and verkauft (participle of verkaufen, prefix ver-) both derive from kaufen.',
+      explanation:
+        '"Der Verkäufer hat mir das Auto verkauft" ("The salesman sold me the car") — Verkäufer (agent noun, -er) and verkauft (participle of verkaufen, prefix ver-) both derive from kaufen.',
     },
     {
       id: 'ch51-ex-65',
@@ -1335,7 +1495,8 @@ export const chapter051: ChapterDefinition = {
       templateParts: ['Ist dieses Wasser wirklich ', '?'],
       slots: [{ id: 's1', correctWord: 'trinkbar' }],
       wordBank: ['trinkbar', 'trinklos', 'trinksam', 'trinkt'],
-      explanation: '-bar attaches to the verb stem trink- to mean "can be drunk": trinkbar.',
+      explanation:
+        '-bar attaches to the verb stem trink- to mean "can be drunk": trinkbar.',
     },
     {
       id: 'ch51-ex-66',
@@ -1349,7 +1510,8 @@ export const chapter051: ChapterDefinition = {
       templateParts: ['Er ist sehr ', ' und deshalb bei allen beliebt.'],
       slots: [{ id: 's1', correctWord: 'freundlich' }],
       wordBank: ['freundlich', 'freundig', 'freundbar', 'freundlos'],
-      explanation: 'Freund + -lich → freundlich ("friendly"), the adjective that fits the slot.',
+      explanation:
+        'Freund + -lich → freundlich ("friendly"), the adjective that fits the slot.',
     },
     {
       id: 'ch51-ex-67',
@@ -1367,7 +1529,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'p4', left: 'Hunger + -ig', right: 'hungrig' },
         { id: 'p5', left: 'Arbeit + -sam', right: 'arbeitsam' },
       ],
-      explanation: 'Note the umlaut in Gefahr → gefährlich, and the dropped -e in Sonne → sonnig and Hunger → hungrig where applicable.',
+      explanation:
+        'Note the umlaut in Gefahr → gefährlich, and the dropped -e in Sonne → sonnig and Hunger → hungrig where applicable.',
     },
     {
       id: 'ch51-ex-68',
@@ -1385,7 +1548,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'p4', left: 'sparen + -sam', right: 'sparsam' },
         { id: 'p5', left: 'waschen + -bar', right: 'waschbar' },
       ],
-      explanation: '-bar attaches to verb stems to mean "can be done to"; -sam attaches to a smaller set of verbs to mean "tending to".',
+      explanation:
+        '-bar attaches to verb stems to mean "can be done to"; -sam attaches to a smaller set of verbs to mean "tending to".',
     },
     {
       id: 'ch51-ex-69',
@@ -1395,7 +1559,8 @@ export const chapter051: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['noun-suffixes', '-tum', 'exception', 'gender'],
       instruction: 'Choose the correct answer.',
-      prompt: 'Which gender does der Irrtum ("error, mistake") have, as an exception among -tum nouns?',
+      prompt:
+        'Which gender does der Irrtum ("error, mistake") have, as an exception among -tum nouns?',
       options: [
         { id: 'a', text: 'masculine' },
         { id: 'b', text: 'feminine' },
@@ -1403,7 +1568,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: 'it varies by region' },
       ],
       correctOptionId: 'a',
-      explanation: 'Most -tum nouns are neuter, but der Irrtum and der Reichtum are frequent masculine exceptions that must be memorized.',
+      explanation:
+        'Most -tum nouns are neuter, but der Irrtum and der Reichtum are frequent masculine exceptions that must be memorized.',
     },
     {
       id: 'ch51-ex-70',
@@ -1413,12 +1579,14 @@ export const chapter051: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['noun-suffixes', 'article', '-tum', 'exception'],
       instruction: 'Write the correct definite article. Capitalisation is not checked.',
-      prompt: '___ Irrtum (from irren, "to err") — a masculine exception among -tum nouns',
+      prompt:
+        '___ Irrtum (from irren, "to err") — a masculine exception among -tum nouns',
       acceptedAnswers: ['der', 'der Irrtum'],
       answerMode: 'caseInsensitive',
       placeholder: 'der/die/das',
       maxLength: 20,
-      explanation: 'der Irrtum is one of the well-known masculine exceptions among otherwise-neuter -tum nouns.',
+      explanation:
+        'der Irrtum is one of the well-known masculine exceptions among otherwise-neuter -tum nouns.',
     },
     {
       id: 'ch51-ex-71',
@@ -1428,7 +1596,8 @@ export const chapter051: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['adjective-suffixes', '-isch', 'meaning'],
       instruction: 'Choose the correct answer.',
-      prompt: 'What core meaning does the suffix -isch typically add when forming adjectives of origin or category (e.g. Türkei → türkisch)?',
+      prompt:
+        'What core meaning does the suffix -isch typically add when forming adjectives of origin or category (e.g. Türkei → türkisch)?',
       options: [
         { id: 'a', text: '"pertaining to, -ish"' },
         { id: 'b', text: '"without"' },
@@ -1436,7 +1605,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: '"can be done to"' },
       ],
       correctOptionId: 'a',
-      explanation: '-isch typically forms adjectives of origin or category, roughly meaning "pertaining to, -ish".',
+      explanation:
+        '-isch typically forms adjectives of origin or category, roughly meaning "pertaining to, -ish".',
     },
     {
       id: 'ch51-ex-72',
@@ -1462,10 +1632,22 @@ export const chapter051: ChapterDefinition = {
       grammarFocus: ['adjective-suffixes', '-isch', 'error-correction'],
       instruction: 'Click the token that contains the error.',
       prompt: '"He comes from Turkey and speaks fluent Turkish." Find the mistake.',
-      tokens: ['Er', 'kommt', 'aus', 'der', 'Türkei', 'und', 'spricht', 'fließend', 'Türkeiisch', '.'],
+      tokens: [
+        'Er',
+        'kommt',
+        'aus',
+        'der',
+        'Türkei',
+        'und',
+        'spricht',
+        'fließend',
+        'Türkeiisch',
+        '.',
+      ],
       errorTokenIndex: 8,
       correction: 'Türkisch',
-      explanation: 'The correct derived form is (das) Türkisch, formed with -isch and dropping the ending -ei of Türkei, not "Türkeiisch".',
+      explanation:
+        'The correct derived form is (das) Türkisch, formed with -isch and dropping the ending -ei of Türkei, not "Türkeiisch".',
     },
     {
       id: 'ch51-ex-74',
@@ -1479,7 +1661,8 @@ export const chapter051: ChapterDefinition = {
       templateParts: ['Der kaputte Stuhl ist nicht mehr ', '.'],
       slots: [{ id: 's1', correctWord: 'reparierbar' }],
       wordBank: ['reparierbar', 'reparierlos', 'kaputt', 'repariersam'],
-      explanation: '-bar attaches to the verb stem reparier- to mean "can be repaired": reparierbar.',
+      explanation:
+        '-bar attaches to the verb stem reparier- to mean "can be repaired": reparierbar.',
     },
     {
       id: 'ch51-ex-75',
@@ -1497,7 +1680,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'p4', left: 'can be washed', right: 'waschbar' },
         { id: 'p5', left: 'can be repaired', right: 'reparierbar' },
       ],
-      explanation: '-bar consistently means "can be done to" across all of these verb stems.',
+      explanation:
+        '-bar consistently means "can be done to" across all of these verb stems.',
     },
     {
       id: 'ch51-ex-76',
@@ -1507,7 +1691,8 @@ export const chapter051: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['semantic-families', 'sorting', '-schaft'],
       instruction: 'Sort this word: which one does NOT belong with the others?',
-      prompt: 'Which word does NOT belong with the others (odd one out by suffix family)?',
+      prompt:
+        'Which word does NOT belong with the others (odd one out by suffix family)?',
       options: [
         { id: 'a', text: 'die Freundschaft' },
         { id: 'b', text: 'die Mannschaft' },
@@ -1515,7 +1700,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: 'die Lehrerin' },
       ],
       correctOptionId: 'd',
-      explanation: 'Freundschaft, Mannschaft, and Wissenschaft are all formed with -schaft; Lehrerin is formed with -in, a different suffix family.',
+      explanation:
+        'Freundschaft, Mannschaft, and Wissenschaft are all formed with -schaft; Lehrerin is formed with -in, a different suffix family.',
     },
     {
       id: 'ch51-ex-77',
@@ -1525,7 +1711,8 @@ export const chapter051: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['word-class-change', 'noun-to-adjective'],
       instruction: 'Identify the word-class change.',
-      prompt: 'Which word-class change does "Hunger (noun) → hungrig (adjective)" represent?',
+      prompt:
+        'Which word-class change does "Hunger (noun) → hungrig (adjective)" represent?',
       options: [
         { id: 'a', text: 'noun → adjective' },
         { id: 'b', text: 'adjective → noun' },
@@ -1533,7 +1720,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: 'noun → verb' },
       ],
       correctOptionId: 'a',
-      explanation: 'The suffix -ig turns the noun Hunger into an adjective: this is a noun-to-adjective derivation.',
+      explanation:
+        'The suffix -ig turns the noun Hunger into an adjective: this is a noun-to-adjective derivation.',
     },
     {
       id: 'ch51-ex-78',
@@ -1563,7 +1751,8 @@ export const chapter051: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'besuchen',
       maxLength: 20,
-      explanation: 'suchen + be- → besuchen, an idiomatic shift in meaning to "to visit".',
+      explanation:
+        'suchen + be- → besuchen, an idiomatic shift in meaning to "to visit".',
     },
     {
       id: 'ch51-ex-80',
@@ -1577,7 +1766,8 @@ export const chapter051: ChapterDefinition = {
       tokens: ['Er', 'hat', 'seine', 'Oma', 'jeden', 'Sonntag', 'versucht', '.'],
       errorTokenIndex: 6,
       correction: 'besucht',
-      explanation: 'versuchen means "to try", not "to visit"; besuchen is the correct verb built on suchen for visiting someone.',
+      explanation:
+        'versuchen means "to try", not "to visit"; besuchen is the correct verb built on suchen for visiting someone.',
     },
     {
       id: 'ch51-ex-81',
@@ -1587,7 +1777,8 @@ export const chapter051: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['semantic-families', 'sorting', '-bar', '-los'],
       instruction: 'Sort this word: which one does NOT belong with the others?',
-      prompt: 'Which word does NOT belong with the others (odd one out by suffix meaning)?',
+      prompt:
+        'Which word does NOT belong with the others (odd one out by suffix meaning)?',
       options: [
         { id: 'a', text: 'essbar' },
         { id: 'b', text: 'lesbar' },
@@ -1595,7 +1786,8 @@ export const chapter051: ChapterDefinition = {
         { id: 'd', text: 'arbeitslos' },
       ],
       correctOptionId: 'd',
-      explanation: 'essbar, lesbar, and trinkbar are all formed with -bar ("can be done to"); arbeitslos is formed with -los ("without"), a different suffix family.',
+      explanation:
+        'essbar, lesbar, and trinkbar are all formed with -bar ("can be done to"); arbeitslos is formed with -los ("without"), a different suffix family.',
     },
     {
       id: 'ch51-ex-82',
@@ -1604,13 +1796,15 @@ export const chapter051: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', '-ieren', 'participle'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ich habe gestern zwei Stunden mit ihr getelefoniert.',
       acceptedAnswers: ['Ich habe gestern zwei Stunden mit ihr telefoniert.'],
       answerMode: 'normalized',
       placeholder: 'Ich habe gestern zwei Stunden mit ihr telefoniert.',
       maxLength: 70,
-      explanation: 'Verbs in -ieren never take ge- in the past participle: telefoniert, not getelefoniert.',
+      explanation:
+        'Verbs in -ieren never take ge- in the past participle: telefoniert, not getelefoniert.',
     },
   ],
 };

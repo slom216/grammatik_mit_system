@@ -4,6 +4,7 @@ import { Button } from '../components/common/Button';
 import { Card } from '../components/common/Card';
 import { ProgressBar } from '../components/common/ProgressBar';
 import { StreakDisplay } from '../components/progress/StreakDisplay';
+import { DailyGoalProgress } from '../components/progress/DailyGoalProgress';
 import { MasteryBadge } from '../components/progress/MasteryBadge';
 import {
   selectContinueChapter,
@@ -12,19 +13,19 @@ import {
 } from '../features/chapters/chapterSelectors';
 import { chapterPath, formatChapterNumber } from '../features/chapters/chapterUtils';
 import { selectDueHistories, useProgressStore } from '../features/progress/progressStore';
+import { useSettingsStore } from '../features/settings/settingsStore';
 import { getRegistryEntry } from '../content/registry';
 
 export function DashboardPage() {
   const progress = useProgressStore();
+  const dailyGoal = useSettingsStore((state) => state.dailyGoal);
 
   const completion = useMemo(() => selectCourseCompletion(progress), [progress]);
   const levels = useMemo(() => selectLevelProgress(progress), [progress]);
   const continueChapter = useMemo(() => selectContinueChapter(progress), [progress]);
+  // Only worth offering while the learner has no progress to place them.
+  const hasStarted = Object.keys(progress.chapters).length > 0;
   const due = useMemo(() => selectDueHistories(progress), [progress]);
-  const histories = useMemo(
-    () => Object.values(progress.exerciseHistory),
-    [progress.exerciseHistory],
-  );
   const recentlyCompleted = useMemo(
     () =>
       Object.values(progress.chapters)
@@ -40,8 +41,8 @@ export function DashboardPage() {
         <span className="eyebrow">A1–B1 grammar course</span>
         <h1>Dashboard</h1>
         <p className="lead">
-          {completion.availableChapters} chapters, each with a lesson and its own
-          exercise pool. Everything you answer stays in this browser.
+          {completion.availableChapters} chapters, each with a lesson and its own exercise
+          pool. Everything you answer stays in this browser.
         </p>
       </header>
 
@@ -96,6 +97,22 @@ export function DashboardPage() {
           )}
         </Card>
 
+        {!hasStarted && (
+          <Card title="Not sure where to begin?" titleLevel={2}>
+            <div className="stack">
+              <p>
+                A short placement test samples the course and suggests a starting chapter.
+                It is not saved to your progress.
+              </p>
+              <p>
+                <Link className="button button--secondary" to="/placement">
+                  Take the placement test
+                </Link>
+              </p>
+            </div>
+          </Card>
+        )}
+
         <div className="stack">
           <dl className="stat-grid">
             <div className="stat">
@@ -115,7 +132,8 @@ export function DashboardPage() {
               <dd className="stat__value">{due.length}</dd>
             </div>
           </dl>
-          <StreakDisplay histories={histories} />
+          <StreakDisplay answersByDay={progress.answersByDay} />
+          <DailyGoalProgress answersByDay={progress.answersByDay} goal={dailyGoal} />
           <ProgressBar
             label="Chapters completed"
             value={completion.completedChapters}

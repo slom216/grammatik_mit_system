@@ -44,7 +44,7 @@ export const chapter055: ChapterDefinition = {
         heading: 'Auxiliary choice: the same rule as the present perfect',
         paragraphs: [
           'Whether a verb takes hatte or war in the past perfect follows exactly the rule you already learned for haben vs. sein in Chapter 27: verbs of movement to a destination (gehen, fahren, fliegen, kommen, laufen) and verbs of change of state (werden, and others) take sein — so their past perfect is built with war. The exception verbs sein, bleiben, and passieren also take sein. Every other verb takes haben, so its past perfect is built with hatte.',
-          'Sie war schon nach Berlin gefahren. (She had already travelled to Berlin — fahren to a destination, sein.) Wir hatten den Kuchen schon gegessen. (We had already eaten the cake — essen, haben.) If you already know a verb\'s auxiliary from the present perfect, you know it for the past perfect too — nothing changes there.',
+          "Sie war schon nach Berlin gefahren. (She had already travelled to Berlin — fahren to a destination, sein.) Wir hatten den Kuchen schon gegessen. (We had already eaten the cake — essen, haben.) If you already know a verb's auxiliary from the present perfect, you know it for the past perfect too — nothing changes there.",
         ],
       },
       {
@@ -90,7 +90,7 @@ export const chapter055: ChapterDefinition = {
         heading: 'Word order in a subordinate clause with nachdem, bevor, als',
         paragraphs: [
           'Subordinate clauses send the finite verb to the very end. In a past-perfect subordinate clause, that means the past participle comes first and the conjugated hatte/war follows it, right at the end of the clause: Nachdem ich gegessen hatte, ... (participle gegessen, then hatte). Bevor sie schlafen ging, ... uses the simple past instead, so only one verb (ging) sits at the end.',
-          'The main clause keeps its normal verb-second order even when the subordinate clause comes first: the whole subordinate clause counts as position 1, so the main clause\'s conjugated verb must follow immediately after the comma, in position 2. Nachdem ich gegessen hatte, ging ich spazieren. — ging stands right after the comma, not ich.',
+          "The main clause keeps its normal verb-second order even when the subordinate clause comes first: the whole subordinate clause counts as position 1, so the main clause's conjugated verb must follow immediately after the comma, in position 2. Nachdem ich gegessen hatte, ging ich spazieren. — ging stands right after the comma, not ich.",
         ],
       },
     ],
@@ -163,7 +163,12 @@ export const chapter055: ChapterDefinition = {
       {
         id: 'ch55-table-05',
         title: 'The verb bracket in the past perfect',
-        columns: ['Position 1', 'Position 2 (hatte/war)', 'Middle field', 'End (participle)'],
+        columns: [
+          'Position 1',
+          'Position 2 (hatte/war)',
+          'Middle field',
+          'End (participle)',
+        ],
         rows: [
           ['Ich', 'hatte', 'das Buch schon', 'gelesen.'],
           ['Wir', 'waren', 'schon', 'gegangen.'],
@@ -177,100 +182,117 @@ export const chapter055: ChapterDefinition = {
         german: 'Ich hatte das Buch schon gelesen, bevor der Film begann.',
         english: 'I had already read the book before the film began.',
         highlight: ['hatte', 'gelesen'],
-        explanation: 'hatte + gelesen forms the past perfect of lesen; the reading was already finished before the film started.',
+        explanation:
+          'hatte + gelesen forms the past perfect of lesen; the reading was already finished before the film started.',
       },
       {
         german: 'Nachdem wir gegessen hatten, gingen wir spazieren.',
         english: 'After we had eaten, we went for a walk.',
         highlight: ['gegessen hatten', 'gingen'],
-        explanation: 'The nachdem-clause names the earlier event with the past perfect; the main clause names the later event with the simple past.',
+        explanation:
+          'The nachdem-clause names the earlier event with the past perfect; the main clause names the later event with the simple past.',
       },
       {
         german: 'Er war schon nach Hause gefahren, als ich ankam.',
         english: 'He had already driven home when I arrived.',
         highlight: ['war', 'gefahren'],
-        explanation: 'fahren with a destination takes sein, so the past perfect is war + gefahren, exactly as in the present perfect.',
+        explanation:
+          'fahren with a destination takes sein, so the past perfect is war + gefahren, exactly as in the present perfect.',
       },
       {
         german: 'Bevor sie schlafen ging, hatte sie noch ihre E-Mails geschrieben.',
         english: 'Before she went to sleep, she had still written her emails.',
         highlight: ['hatte', 'geschrieben'],
-        explanation: 'The main clause names the earlier event (writing emails) with the past perfect; the bevor-clause names the later event (going to sleep) with the simple past.',
+        explanation:
+          'The main clause names the earlier event (writing emails) with the past perfect; the bevor-clause names the later event (going to sleep) with the simple past.',
       },
       {
         german: 'Als ich ankam, hatte der Film schon begonnen.',
         english: 'When I arrived, the film had already begun.',
         highlight: ['hatte', 'begonnen'],
-        explanation: 'als introduces a single past moment (ankam, simple past); the past perfect hatte begonnen shows the film started even earlier.',
+        explanation:
+          'als introduces a single past moment (ankam, simple past); the past perfect hatte begonnen shows the film started even earlier.',
       },
       {
         german: 'Ich hatte meinen Schlüssel nicht gefunden.',
         english: 'I had not found my key.',
         highlight: ['hatte', 'nicht', 'gefunden'],
-        explanation: 'nicht stands directly before the participle, exactly as in the present perfect.',
+        explanation:
+          'nicht stands directly before the participle, exactly as in the present perfect.',
       },
       {
         german: 'Bevor wir das Haus kauften, hatten wir lange gespart.',
         english: 'Before we bought the house, we had saved for a long time.',
         highlight: ['hatten', 'gespart'],
-        explanation: 'The earlier event (saving) is expressed with the past perfect; the later event (buying) is expressed with the simple past kauften.',
+        explanation:
+          'The earlier event (saving) is expressed with the past perfect; the later event (buying) is expressed with the simple past kauften.',
       },
       {
         german: 'Wir waren zu Hause geblieben, weil es den ganzen Tag geregnet hatte.',
         english: 'We had stayed home because it had rained all day.',
         highlight: ['waren', 'geblieben'],
-        explanation: 'bleiben is one of the sein-exception verbs, exactly as in the present perfect, so its past perfect is war/waren, not hatte/hatten.',
+        explanation:
+          'bleiben is one of the sein-exception verbs, exactly as in the present perfect, so its past perfect is war/waren, not hatte/hatten.',
       },
       {
         german: 'Hattest du den Brief schon geschrieben?',
         english: 'Had you already written the letter?',
         highlight: ['Hattest', 'geschrieben'],
-        explanation: 'In a yes/no question, the conjugated hatte moves to position 1; the participle still closes the sentence.',
+        explanation:
+          'In a yes/no question, the conjugated hatte moves to position 1; the participle still closes the sentence.',
       },
       {
         german: 'Warst du schon gegangen, als ich anrief?',
         english: 'Had you already left when I called?',
         highlight: ['Warst', 'gegangen'],
-        explanation: 'gehen takes sein; in this question warst moves to position 1 and gegangen closes the sentence.',
+        explanation:
+          'gehen takes sein; in this question warst moves to position 1 and gegangen closes the sentence.',
       },
       {
         german: 'Nachdem er den Kaffee getrunken hatte, fühlte er sich wacher.',
         english: 'After he had drunk the coffee, he felt more awake.',
         highlight: ['getrunken hatte', 'fühlte'],
-        explanation: 'trinken forms its past perfect with hatte + getrunken; in the subordinate clause the participle comes first and hatte stands at the very end.',
+        explanation:
+          'trinken forms its past perfect with hatte + getrunken; in the subordinate clause the participle comes first and hatte stands at the very end.',
       },
       {
         german: 'Bevor sie berühmt wurde, hatte sie jahrelang hart gearbeitet.',
         english: 'Before she became famous, she had worked hard for years.',
         highlight: ['hatte', 'gearbeitet'],
-        explanation: 'The main clause names the earlier event (years of work) with the past perfect; the bevor-clause names the later event (becoming famous) with the simple past wurde.',
+        explanation:
+          'The main clause names the earlier event (years of work) with the past perfect; the bevor-clause names the later event (becoming famous) with the simple past wurde.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Nachdem ich gegessen habe, ging ich spazieren.',
         correct: 'Nachdem ich gegessen hatte, ging ich spazieren.',
-        explanation: 'When the main clause is in the simple past, the earlier event in a nachdem-clause needs the past perfect (hatte + participle), not the present perfect (habe + participle).',
+        explanation:
+          'When the main clause is in the simple past, the earlier event in a nachdem-clause needs the past perfect (hatte + participle), not the present perfect (habe + participle).',
       },
       {
         incorrect: 'Ich hatte nach Hause gegangen.',
         correct: 'Ich war nach Hause gegangen.',
-        explanation: 'gehen takes sein as its auxiliary, exactly as in the present perfect (ich bin gegangen) — the past perfect uses war, not hatte.',
+        explanation:
+          'gehen takes sein as its auxiliary, exactly as in the present perfect (ich bin gegangen) — the past perfect uses war, not hatte.',
       },
       {
         incorrect: 'Nachdem ich hatte gegessen, ging ich spazieren.',
         correct: 'Nachdem ich gegessen hatte, ging ich spazieren.',
-        explanation: 'In a subordinate clause, the conjugated auxiliary hatte/war moves to the very end, after the participle, not directly after the subject.',
+        explanation:
+          'In a subordinate clause, the conjugated auxiliary hatte/war moves to the very end, after the participle, not directly after the subject.',
       },
       {
         incorrect: 'Bevor ich ankam, der Film hatte schon begonnen.',
         correct: 'Bevor ich ankam, hatte der Film schon begonnen.',
-        explanation: 'The main clause keeps normal verb-second word order even when a subordinate clause opens the sentence: hatte must stand immediately after the comma, before the subject der Film.',
+        explanation:
+          'The main clause keeps normal verb-second word order even when a subordinate clause opens the sentence: hatte must stand immediately after the comma, before the subject der Film.',
       },
       {
         incorrect: 'Wir haben zu Hause geblieben, weil es geregnet hatte.',
         correct: 'Wir waren zu Hause geblieben, weil es geregnet hatte.',
-        explanation: 'bleiben is one of the sein-exception verbs, just like in the present perfect; its past perfect is formed with war/waren, not hatte/hatten.',
+        explanation:
+          'bleiben is one of the sein-exception verbs, just like in the present perfect; its past perfect is formed with war/waren, not hatte/hatten.',
       },
     ],
     remember: [
@@ -295,8 +317,10 @@ export const chapter055: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['past-perfect', 'auxiliary', 'recognition'],
-      instruction: 'Identify the auxiliary verb that forms the past perfect in this sentence.',
-      prompt: 'Ich hatte das Buch schon gelesen, bevor ich den Film sah. Which word is the past-perfect auxiliary?',
+      instruction:
+        'Identify the auxiliary verb that forms the past perfect in this sentence.',
+      prompt:
+        'Ich hatte das Buch schon gelesen, bevor ich den Film sah. Which word is the past-perfect auxiliary?',
       options: [
         { id: 'a', text: 'hatte' },
         { id: 'b', text: 'gelesen' },
@@ -304,7 +328,8 @@ export const chapter055: ChapterDefinition = {
         { id: 'd', text: 'bevor' },
       ],
       correctOptionId: 'a',
-      explanation: 'hatte is the simple-past form of haben, the auxiliary that combines with the past participle to form the past perfect (Plusquamperfekt).',
+      explanation:
+        'hatte is the simple-past form of haben, the auxiliary that combines with the past participle to form the past perfect (Plusquamperfekt).',
     },
     {
       id: 'ch55-ex-02',
@@ -314,7 +339,8 @@ export const chapter055: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['past-perfect', 'participle', 'recognition'],
       instruction: 'Identify the past participle in this sentence.',
-      prompt: 'Er war schon nach Hause gefahren, als ich ankam. Which word is the past participle?',
+      prompt:
+        'Er war schon nach Hause gefahren, als ich ankam. Which word is the past participle?',
       options: [
         { id: 'a', text: 'war' },
         { id: 'b', text: 'gefahren' },
@@ -322,7 +348,8 @@ export const chapter055: ChapterDefinition = {
         { id: 'd', text: 'schon' },
       ],
       correctOptionId: 'b',
-      explanation: 'gefahren is the past participle of fahren; together with war it forms the past perfect.',
+      explanation:
+        'gefahren is the past participle of fahren; together with war it forms the past perfect.',
     },
     {
       id: 'ch55-ex-03',
@@ -331,16 +358,21 @@ export const chapter055: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['past-perfect', 'meaning', 'recognition'],
-      instruction: 'Choose the correct description of what the past perfect (Plusquamperfekt) expresses.',
+      instruction:
+        'Choose the correct description of what the past perfect (Plusquamperfekt) expresses.',
       prompt: 'What does the past perfect express?',
       options: [
-        { id: 'a', text: 'An action that had already happened before another past action or moment' },
+        {
+          id: 'a',
+          text: 'An action that had already happened before another past action or moment',
+        },
         { id: 'b', text: 'An action happening right now' },
         { id: 'c', text: 'An action that will happen in the future' },
         { id: 'd', text: 'A general truth with no specific time' },
       ],
       correctOptionId: 'a',
-      explanation: 'The past perfect marks the earlier of two past events — something that was already completed before another past action or moment.',
+      explanation:
+        'The past perfect marks the earlier of two past events — something that was already completed before another past action or moment.',
     },
     {
       id: 'ch55-ex-04',
@@ -350,7 +382,8 @@ export const chapter055: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['event-ordering', 'nachdem', 'recognition'],
       instruction: 'Read the sentence and identify which event happened first.',
-      prompt: 'Nachdem ich gegessen hatte, ging ich spazieren. Which event happened first?',
+      prompt:
+        'Nachdem ich gegessen hatte, ging ich spazieren. Which event happened first?',
       options: [
         { id: 'a', text: 'Eating (ich hatte gegessen)' },
         { id: 'b', text: 'Going for a walk (ich ging spazieren)' },
@@ -358,7 +391,8 @@ export const chapter055: ChapterDefinition = {
         { id: 'd', text: 'Neither is in the past' },
       ],
       correctOptionId: 'a',
-      explanation: 'The past perfect (hatte gegessen) marks the earlier event; the simple past (ging) marks the event that followed it.',
+      explanation:
+        'The past perfect (hatte gegessen) marks the earlier event; the simple past (ging) marks the event that followed it.',
     },
     {
       id: 'ch55-ex-05',
@@ -376,7 +410,8 @@ export const chapter055: ChapterDefinition = {
         { id: 'd', text: 'Das Buch ich hatte gelesen.' },
       ],
       correctOptionId: 'b',
-      explanation: 'hatte stands in position 2 and the participle gelesen closes the clause at the very end, exactly as in the present perfect.',
+      explanation:
+        'hatte stands in position 2 and the participle gelesen closes the clause at the very end, exactly as in the present perfect.',
     },
     {
       id: 'ch55-ex-06',
@@ -388,13 +423,20 @@ export const chapter055: ChapterDefinition = {
       instruction: 'Choose the correct description of how the past perfect is formed.',
       prompt: 'How is the German past perfect (Plusquamperfekt) built?',
       options: [
-        { id: 'a', text: 'the simple past of haben or sein (hatte/war) + past participle' },
-        { id: 'b', text: 'the present tense of haben or sein (habe/bin) + past participle' },
+        {
+          id: 'a',
+          text: 'the simple past of haben or sein (hatte/war) + past participle',
+        },
+        {
+          id: 'b',
+          text: 'the present tense of haben or sein (habe/bin) + past participle',
+        },
         { id: 'c', text: 'only a past participle, no auxiliary' },
         { id: 'd', text: 'würde + infinitive' },
       ],
       correctOptionId: 'a',
-      explanation: 'The past perfect uses the simple-past auxiliary hatte or war, not the present-tense habe or bin, together with the past participle.',
+      explanation:
+        'The past perfect uses the simple-past auxiliary hatte or war, not the present-tense habe or bin, together with the past participle.',
     },
     {
       id: 'ch55-ex-07',
@@ -412,7 +454,8 @@ export const chapter055: ChapterDefinition = {
         { id: 'd', text: 'bin' },
       ],
       correctOptionId: 'c',
-      explanation: 'gehen takes sein, exactly as in the present perfect; the past-perfect auxiliary here is war.',
+      explanation:
+        'gehen takes sein, exactly as in the present perfect; the past-perfect auxiliary here is war.',
     },
     {
       id: 'ch55-ex-08',
@@ -430,7 +473,8 @@ export const chapter055: ChapterDefinition = {
         { id: 'd', text: 'haben' },
       ],
       correctOptionId: 'b',
-      explanation: 'essen takes haben, exactly as in the present perfect; the past-perfect auxiliary here is hatten.',
+      explanation:
+        'essen takes haben, exactly as in the present perfect; the past-perfect auxiliary here is hatten.',
     },
     {
       id: 'ch55-ex-09',
@@ -466,7 +510,8 @@ export const chapter055: ChapterDefinition = {
         { id: 'd', text: 'haben' },
       ],
       correctOptionId: 'a',
-      explanation: 'The wir-form of sein in the simple past is waren; fahren with a destination takes sein.',
+      explanation:
+        'The wir-form of sein in the simple past is waren; fahren with a destination takes sein.',
     },
     {
       id: 'ch55-ex-11',
@@ -476,7 +521,8 @@ export const chapter055: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['nachdem', 'connectors', 'controlled'],
       instruction: 'Choose the connector that correctly links the two past events.',
-      prompt: 'Complete: "___ ich gegessen hatte, ging ich spazieren." (After I had eaten, I went for a walk.)',
+      prompt:
+        'Complete: "___ ich gegessen hatte, ging ich spazieren." (After I had eaten, I went for a walk.)',
       options: [
         { id: 'a', text: 'Nachdem' },
         { id: 'b', text: 'Bevor' },
@@ -484,7 +530,8 @@ export const chapter055: ChapterDefinition = {
         { id: 'd', text: 'Während' },
       ],
       correctOptionId: 'a',
-      explanation: 'nachdem ("after") introduces the earlier event, which is why it is paired here with the past perfect hatte gegessen.',
+      explanation:
+        'nachdem ("after") introduces the earlier event, which is why it is paired here with the past perfect hatte gegessen.',
     },
     {
       id: 'ch55-ex-12',
@@ -494,7 +541,8 @@ export const chapter055: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['bevor', 'connectors', 'controlled'],
       instruction: 'Choose the connector that correctly links the two past events.',
-      prompt: 'Complete: "___ sie schlafen ging, hatte sie noch ihre E-Mails geschrieben." (Before she went to sleep, she had written her emails.)',
+      prompt:
+        'Complete: "___ sie schlafen ging, hatte sie noch ihre E-Mails geschrieben." (Before she went to sleep, she had written her emails.)',
       options: [
         { id: 'a', text: 'Nachdem' },
         { id: 'b', text: 'Bevor' },
@@ -502,7 +550,8 @@ export const chapter055: ChapterDefinition = {
         { id: 'd', text: 'Weil' },
       ],
       correctOptionId: 'b',
-      explanation: 'bevor ("before") introduces the later event (schlafen ging, simple past); the earlier event (writing emails) is in the main clause with the past perfect.',
+      explanation:
+        'bevor ("before") introduces the later event (schlafen ging, simple past); the earlier event (writing emails) is in the main clause with the past perfect.',
     },
     {
       id: 'ch55-ex-13',
@@ -512,7 +561,8 @@ export const chapter055: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['als', 'connectors', 'controlled'],
       instruction: 'Choose the connector that correctly links the two past events.',
-      prompt: 'Complete: "___ ich ankam, hatte der Film schon begonnen." (When I arrived, the film had already begun.)',
+      prompt:
+        'Complete: "___ ich ankam, hatte der Film schon begonnen." (When I arrived, the film had already begun.)',
       options: [
         { id: 'a', text: 'Als' },
         { id: 'b', text: 'Bevor' },
@@ -520,7 +570,8 @@ export const chapter055: ChapterDefinition = {
         { id: 'd', text: 'Ob' },
       ],
       correctOptionId: 'a',
-      explanation: 'als introduces a single completed moment in the past (ich ankam); the past perfect hatte begonnen shows the film started even earlier.',
+      explanation:
+        'als introduces a single completed moment in the past (ich ankam); the past perfect hatte begonnen shows the film started even earlier.',
     },
     {
       id: 'ch55-ex-14',
@@ -530,7 +581,8 @@ export const chapter055: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['event-ordering', 'bevor', 'transfer'],
       instruction: 'Read the sentence and identify which event happened first.',
-      prompt: 'Bevor wir das Haus kauften, hatten wir lange gespart. Which event happened first?',
+      prompt:
+        'Bevor wir das Haus kauften, hatten wir lange gespart. Which event happened first?',
       options: [
         { id: 'a', text: 'Saving money (hatten gespart)' },
         { id: 'b', text: 'Buying the house (kauften)' },
@@ -538,7 +590,8 @@ export const chapter055: ChapterDefinition = {
         { id: 'd', text: 'It cannot be determined' },
       ],
       correctOptionId: 'a',
-      explanation: 'The main clause carries the past perfect (hatten gespart), marking the earlier event; the bevor-clause (kauften) is in the simple past and happened later.',
+      explanation:
+        'The main clause carries the past perfect (hatten gespart), marking the earlier event; the bevor-clause (kauften) is in the simple past and happened later.',
     },
     {
       id: 'ch55-ex-15',
@@ -547,7 +600,8 @@ export const chapter055: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['word-order', 'nachdem', 'transfer'],
-      instruction: 'Choose the sentence with the correct word order in the nachdem-clause.',
+      instruction:
+        'Choose the sentence with the correct word order in the nachdem-clause.',
       prompt: 'Which sentence has the correct word order?',
       options: [
         { id: 'a', text: 'Nachdem ich hatte gegessen, ging ich spazieren.' },
@@ -556,7 +610,8 @@ export const chapter055: ChapterDefinition = {
         { id: 'd', text: 'Nachdem gegessen ich hatte, ging ich spazieren.' },
       ],
       correctOptionId: 'b',
-      explanation: 'In a subordinate clause, the participle comes first and the conjugated auxiliary hatte moves to the very end: gegessen hatte.',
+      explanation:
+        'In a subordinate clause, the participle comes first and the conjugated auxiliary hatte moves to the very end: gegessen hatte.',
     },
     {
       id: 'ch55-ex-16',
@@ -565,13 +620,15 @@ export const chapter055: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['conjugation', 'hatte', 'ich', 'controlled'],
-      instruction: 'Write only the correct form of haben (simple past) that belongs in the gap. Capitalisation is not checked.',
+      instruction:
+        'Write only the correct form of haben (simple past) that belongs in the gap. Capitalisation is not checked.',
       prompt: 'Ich ___ ihm das Geld schon gegeben, bevor er fragte.',
       acceptedAnswers: ['hatte'],
       answerMode: 'caseInsensitive',
       placeholder: 'hatte / hattest / hatten ...',
       maxLength: 10,
-      explanation: 'The ich-form of haben in the simple past is hatte; geben takes haben.',
+      explanation:
+        'The ich-form of haben in the simple past is hatte; geben takes haben.',
     },
     {
       id: 'ch55-ex-17',
@@ -580,13 +637,15 @@ export const chapter055: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['conjugation', 'war', 'er-sie-es', 'controlled'],
-      instruction: 'Write only the correct form of sein (simple past) that belongs in the gap. Capitalisation is not checked.',
+      instruction:
+        'Write only the correct form of sein (simple past) that belongs in the gap. Capitalisation is not checked.',
       prompt: 'Sie (she) ___ schon gekommen, als das Meeting begann.',
       acceptedAnswers: ['war'],
       answerMode: 'caseInsensitive',
       placeholder: 'war / warst / waren ...',
       maxLength: 10,
-      explanation: 'The er/sie/es-form of sein in the simple past is war; kommen takes sein.',
+      explanation:
+        'The er/sie/es-form of sein in the simple past is war; kommen takes sein.',
     },
     {
       id: 'ch55-ex-18',
@@ -625,13 +684,15 @@ export const chapter055: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['sentence-completion', 'hatte', 'trinken', 'controlled'],
-      instruction: 'Complete the sentence with the correct auxiliary and past participle of the verb in brackets. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Complete the sentence with the correct auxiliary and past participle of the verb in brackets. Capitalisation is checked; no full stop is required.',
       prompt: 'Ich ___ den Kaffee schon ___, bevor er kalt wurde. (trinken)',
       acceptedAnswers: ['hatte getrunken'],
       answerMode: 'normalized',
       placeholder: 'hatte/war ... ge...',
       maxLength: 25,
-      explanation: 'trinken takes haben; with ich the correct completion is hatte getrunken.',
+      explanation:
+        'trinken takes haben; with ich the correct completion is hatte getrunken.',
     },
     {
       id: 'ch55-ex-21',
@@ -640,13 +701,15 @@ export const chapter055: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['sentence-completion', 'war', 'laufen', 'controlled'],
-      instruction: 'Complete the sentence with the correct auxiliary and past participle of the verb in brackets. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Complete the sentence with the correct auxiliary and past participle of the verb in brackets. Capitalisation is checked; no full stop is required.',
       prompt: 'Sie (she) ___ schon zehn Kilometer ___, bevor die Sonne aufging. (laufen)',
       acceptedAnswers: ['war gelaufen'],
       answerMode: 'normalized',
       placeholder: 'hatte/war ... ge...',
       maxLength: 25,
-      explanation: 'laufen takes sein; with sie (she) the correct completion is war gelaufen.',
+      explanation:
+        'laufen takes sein; with sie (she) the correct completion is war gelaufen.',
     },
     {
       id: 'ch55-ex-22',
@@ -661,7 +724,8 @@ export const chapter055: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'Nachdem',
       maxLength: 15,
-      explanation: 'nachdem ("after") introduces the earlier event, marked here with the past perfect gegessen hatten.',
+      explanation:
+        'nachdem ("after") introduces the earlier event, marked here with the past perfect gegessen hatten.',
     },
     {
       id: 'ch55-ex-23',
@@ -670,13 +734,15 @@ export const chapter055: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['nachdem', 'sentence-building', 'production'],
-      instruction: 'Write a complete sentence using nachdem: the earlier event in the past perfect, the later event in the simple past. Capitalisation and punctuation are checked.',
+      instruction:
+        'Write a complete sentence using nachdem: the earlier event in the past perfect, the later event in the simple past. Capitalisation and punctuation are checked.',
       prompt: 'nachdem – ich (essen) – ich (spazieren gehen)',
       acceptedAnswers: ['Nachdem ich gegessen hatte, ging ich spazieren.'],
       answerMode: 'normalized',
       placeholder: 'Nachdem ich ..., ging ich ...',
       maxLength: 60,
-      explanation: 'The nachdem-clause carries the earlier event in the past perfect (gegessen hatte); the main clause carries the later event in the simple past (ging).',
+      explanation:
+        'The nachdem-clause carries the earlier event in the past perfect (gegessen hatte); the main clause carries the later event in the simple past (ging).',
     },
     {
       id: 'ch55-ex-24',
@@ -685,7 +751,8 @@ export const chapter055: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['bevor', 'sentence-building', 'production'],
-      instruction: 'Write a complete sentence using bevor: the later event in the simple past (bevor-clause), the earlier event in the past perfect (main clause). Capitalisation and punctuation are checked.',
+      instruction:
+        'Write a complete sentence using bevor: the later event in the simple past (bevor-clause), the earlier event in the past perfect (main clause). Capitalisation and punctuation are checked.',
       prompt: 'bevor – sie (schlafen gehen) – sie (E-Mails schreiben)',
       acceptedAnswers: [
         'Bevor sie schlafen ging, hatte sie E-Mails geschrieben.',
@@ -694,7 +761,8 @@ export const chapter055: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Bevor sie ..., hatte sie ...',
       maxLength: 70,
-      explanation: 'The bevor-clause names the later event in the simple past (ging); the main clause names the earlier event in the past perfect (hatte geschrieben).',
+      explanation:
+        'The bevor-clause names the later event in the simple past (ging); the main clause names the earlier event in the past perfect (hatte geschrieben).',
     },
     {
       id: 'ch55-ex-25',
@@ -703,13 +771,15 @@ export const chapter055: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['als', 'sentence-building', 'production'],
-      instruction: 'Write a complete sentence using als: a single past moment in the simple past, plus an even earlier event in the past perfect. Capitalisation and punctuation are checked.',
+      instruction:
+        'Write a complete sentence using als: a single past moment in the simple past, plus an even earlier event in the past perfect. Capitalisation and punctuation are checked.',
       prompt: 'als – ich (kommen) – der Film (schon beginnen)',
       acceptedAnswers: ['Als ich kam, hatte der Film schon begonnen.'],
       answerMode: 'normalized',
       placeholder: 'Als ich kam, hatte der Film ...',
       maxLength: 60,
-      explanation: 'als introduces the reference moment in the simple past (kam); the past perfect (hatte ... begonnen) shows the film started even earlier.',
+      explanation:
+        'als introduces the reference moment in the simple past (kam); the past perfect (hatte ... begonnen) shows the film started even earlier.',
     },
     {
       id: 'ch55-ex-26',
@@ -718,13 +788,16 @@ export const chapter055: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['narrative', 'hatte', 'war', 'production'],
-      instruction: 'Complete the short narrative with the correct past-perfect forms. Write the two missing verb groups in order, separated by a space. Capitalisation is not checked.',
-      prompt: 'Bevor Emma nach Hause kam, ___ ihr Bruder schon den Film ___. (sehen) Er ___ danach noch schnell einkaufen ___. (gehen)',
+      instruction:
+        'Complete the short narrative with the correct past-perfect forms. Write the two missing verb groups in order, separated by a space. Capitalisation is not checked.',
+      prompt:
+        'Bevor Emma nach Hause kam, ___ ihr Bruder schon den Film ___. (sehen) Er ___ danach noch schnell einkaufen ___. (gehen)',
       acceptedAnswers: ['hatte gesehen war gegangen'],
       answerMode: 'caseInsensitive',
       placeholder: 'hatte gesehen war gegangen',
       maxLength: 40,
-      explanation: 'sehen takes haben (hatte gesehen); gehen takes sein (war gegangen) — the same auxiliary rule as in the present perfect.',
+      explanation:
+        'sehen takes haben (hatte gesehen); gehen takes sein (war gegangen) — the same auxiliary rule as in the present perfect.',
     },
     {
       id: 'ch55-ex-27',
@@ -733,13 +806,15 @@ export const chapter055: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'nachdem', 'transfer'],
-      instruction: 'Correct the mistake in tense. Write the full corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake in tense. Write the full corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Nachdem ich gegessen habe, ging ich spazieren.',
       acceptedAnswers: ['Nachdem ich gegessen hatte, ging ich spazieren.'],
       answerMode: 'normalized',
       placeholder: 'Nachdem ich gegessen hatte, ...',
       maxLength: 60,
-      explanation: 'With a simple-past main clause, the earlier event in the nachdem-clause needs the past perfect (hatte gegessen), not the present perfect (habe gegessen).',
+      explanation:
+        'With a simple-past main clause, the earlier event in the nachdem-clause needs the past perfect (hatte gegessen), not the present perfect (habe gegessen).',
     },
     {
       id: 'ch55-ex-28',
@@ -748,13 +823,15 @@ export const chapter055: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'word-order', 'transfer'],
-      instruction: 'Correct the mistake in word order. Write the full corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake in word order. Write the full corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Nachdem ich hatte gegessen, ging ich spazieren.',
       acceptedAnswers: ['Nachdem ich gegessen hatte, ging ich spazieren.'],
       answerMode: 'normalized',
       placeholder: 'Nachdem ich gegessen hatte, ...',
       maxLength: 60,
-      explanation: 'In a subordinate clause, the participle comes first and the conjugated auxiliary hatte moves to the very end.',
+      explanation:
+        'In a subordinate clause, the participle comes first and the conjugated auxiliary hatte moves to the very end.',
     },
     {
       id: 'ch55-ex-29',
@@ -763,13 +840,15 @@ export const chapter055: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'aux-choice', 'transfer'],
-      instruction: 'Correct the mistake in auxiliary choice. Write the full corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake in auxiliary choice. Write the full corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ich hatte nach Hause gegangen.',
       acceptedAnswers: ['Ich war nach Hause gegangen.'],
       answerMode: 'normalized',
       placeholder: 'Ich war ...',
       maxLength: 40,
-      explanation: 'gehen takes sein, exactly as in the present perfect (ich bin gegangen); the past perfect is war gegangen, not hatte gegangen.',
+      explanation:
+        'gehen takes sein, exactly as in the present perfect (ich bin gegangen); the past perfect is war gegangen, not hatte gegangen.',
     },
     {
       id: 'ch55-ex-30',
@@ -778,13 +857,21 @@ export const chapter055: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['event-ordering', 'nachdem', 'transfer'],
-      instruction: 'Read the sentence, then answer in German with a short infinitive phrase naming the action that happened first. Capitalisation is not checked.',
-      prompt: 'Nachdem ich meine Arbeit beendet hatte, rief ich meinen Freund an. Was geschah zuerst?',
-      acceptedAnswers: ['die Arbeit beenden', 'meine Arbeit beenden', 'die arbeit beenden', 'arbeit beenden'],
+      instruction:
+        'Read the sentence, then answer in German with a short infinitive phrase naming the action that happened first. Capitalisation is not checked.',
+      prompt:
+        'Nachdem ich meine Arbeit beendet hatte, rief ich meinen Freund an. Was geschah zuerst?',
+      acceptedAnswers: [
+        'die Arbeit beenden',
+        'meine Arbeit beenden',
+        'die arbeit beenden',
+        'arbeit beenden',
+      ],
       answerMode: 'normalized',
       placeholder: 'die Arbeit beenden',
       maxLength: 40,
-      explanation: 'The past perfect (Arbeit beendet hatte) marks the earlier event: finishing the work happened before calling the friend.',
+      explanation:
+        'The past perfect (Arbeit beendet hatte) marks the earlier event: finishing the work happened before calling the friend.',
     },
     {
       id: 'ch55-ex-31',
@@ -793,8 +880,10 @@ export const chapter055: ChapterDefinition = {
       type: 'singleChoice',
       level: 'recognition',
       grammarFocus: ['past-perfect', 'auxiliary', 'recognition'],
-      instruction: 'Identify the auxiliary verb that forms the past perfect in this sentence.',
-      prompt: 'Sie hatte den Brief schon geschrieben, bevor die Post kam. Which word is the past-perfect auxiliary?',
+      instruction:
+        'Identify the auxiliary verb that forms the past perfect in this sentence.',
+      prompt:
+        'Sie hatte den Brief schon geschrieben, bevor die Post kam. Which word is the past-perfect auxiliary?',
       options: [
         { id: 'a', text: 'hatte' },
         { id: 'b', text: 'geschrieben' },
@@ -802,7 +891,8 @@ export const chapter055: ChapterDefinition = {
         { id: 'd', text: 'kam' },
       ],
       correctOptionId: 'a',
-      explanation: 'hatte is the simple-past form of haben, the auxiliary that combines with geschrieben to form the past perfect.',
+      explanation:
+        'hatte is the simple-past form of haben, the auxiliary that combines with geschrieben to form the past perfect.',
     },
     {
       id: 'ch55-ex-32',
@@ -820,7 +910,8 @@ export const chapter055: ChapterDefinition = {
         { id: 'd', text: 'sind' },
       ],
       correctOptionId: 'b',
-      explanation: 'ankommen takes sein, exactly as in the present perfect; the past-perfect auxiliary here is waren.',
+      explanation:
+        'ankommen takes sein, exactly as in the present perfect; the past-perfect auxiliary here is waren.',
     },
     {
       id: 'ch55-ex-33',
@@ -829,8 +920,10 @@ export const chapter055: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['als', 'event-ordering', 'controlled'],
-      instruction: 'Choose the sentence that correctly shows the film starting before the arrival.',
-      prompt: 'Which sentence correctly says the film had already started when the speaker arrived?',
+      instruction:
+        'Choose the sentence that correctly shows the film starting before the arrival.',
+      prompt:
+        'Which sentence correctly says the film had already started when the speaker arrived?',
       options: [
         { id: 'a', text: 'Als ich ankam, hatte der Film schon begonnen.' },
         { id: 'b', text: 'Als ich ankam, habe der Film schon begonnen.' },
@@ -838,7 +931,8 @@ export const chapter055: ChapterDefinition = {
         { id: 'd', text: 'Als ich hatte angekommen, begann der Film schon.' },
       ],
       correctOptionId: 'a',
-      explanation: 'als introduces the simple-past reference moment (ankam); the earlier event (the film starting) needs the past perfect hatte begonnen, with hatte in position 2 of the main clause.',
+      explanation:
+        'als introduces the simple-past reference moment (ankam); the earlier event (the film starting) needs the past perfect hatte begonnen, with hatte in position 2 of the main clause.',
     },
     {
       id: 'ch55-ex-34',
@@ -848,7 +942,8 @@ export const chapter055: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['past-perfect', 'present-perfect', 'tense-choice', 'transfer'],
       instruction: 'Choose the sentence that correctly sequences two past events.',
-      prompt: 'Which sentence correctly shows that the eating happened before the walk, with the walk told in the simple past?',
+      prompt:
+        'Which sentence correctly shows that the eating happened before the walk, with the walk told in the simple past?',
       options: [
         { id: 'a', text: 'Nachdem ich gegessen habe, ging ich spazieren.' },
         { id: 'b', text: 'Nachdem ich gegessen hatte, ging ich spazieren.' },
@@ -856,7 +951,8 @@ export const chapter055: ChapterDefinition = {
         { id: 'd', text: 'Nachdem ich gegessen hatte, gehe ich spazieren.' },
       ],
       correctOptionId: 'b',
-      explanation: 'With a simple-past main clause (ging), the earlier event in the nachdem-clause needs the past perfect (gegessen hatte), not the present perfect (gegessen habe).',
+      explanation:
+        'With a simple-past main clause (ging), the earlier event in the nachdem-clause needs the past perfect (gegessen hatte), not the present perfect (gegessen habe).',
     },
     {
       id: 'ch55-ex-35',
@@ -866,7 +962,8 @@ export const chapter055: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['word-order', 'bevor', 'transfer'],
       instruction: 'Choose the sentence with the correct word order.',
-      prompt: 'Which sentence follows the verb-second rule correctly when a subordinate clause opens the sentence?',
+      prompt:
+        'Which sentence follows the verb-second rule correctly when a subordinate clause opens the sentence?',
       options: [
         { id: 'a', text: 'Bevor ich ankam, der Film hatte schon begonnen.' },
         { id: 'b', text: 'Bevor ich ankam, hatte der Film schon begonnen.' },
@@ -874,7 +971,8 @@ export const chapter055: ChapterDefinition = {
         { id: 'd', text: 'Bevor ich ankam, der Film schon begonnen hatte.' },
       ],
       correctOptionId: 'b',
-      explanation: 'The subordinate clause counts as position 1, so hatte must stand immediately after the comma, in position 2 of the main clause, before the subject der Film.',
+      explanation:
+        'The subordinate clause counts as position 1, so hatte must stand immediately after the comma, in position 2 of the main clause, before the subject der Film.',
     },
     {
       id: 'ch55-ex-36',
@@ -883,13 +981,15 @@ export const chapter055: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['conjugation', 'hatte', 'sie-plural', 'controlled'],
-      instruction: 'Write only the correct form of haben (simple past) that belongs in the gap. Capitalisation is not checked.',
+      instruction:
+        'Write only the correct form of haben (simple past) that belongs in the gap. Capitalisation is not checked.',
       prompt: 'Sie (they) ___ das Auto schon repariert, bevor wir ankamen.',
       acceptedAnswers: ['hatten'],
       answerMode: 'caseInsensitive',
       placeholder: 'hatte / hattest / hatten ...',
       maxLength: 10,
-      explanation: 'The sie (plural)-form of haben in the simple past is hatten; reparieren takes haben.',
+      explanation:
+        'The sie (plural)-form of haben in the simple past is hatten; reparieren takes haben.',
     },
     {
       id: 'ch55-ex-37',
@@ -898,13 +998,15 @@ export const chapter055: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['conjugation', 'war', 'ihr', 'controlled'],
-      instruction: 'Write only the correct form of sein (simple past) that belongs in the gap. Capitalisation is not checked.',
+      instruction:
+        'Write only the correct form of sein (simple past) that belongs in the gap. Capitalisation is not checked.',
       prompt: 'Ihr ___ schon angekommen, als der Bus abfuhr.',
       acceptedAnswers: ['wart'],
       answerMode: 'caseInsensitive',
       placeholder: 'war / warst / wart ...',
       maxLength: 10,
-      explanation: 'The ihr-form of sein in the simple past is wart; ankommen takes sein.',
+      explanation:
+        'The ihr-form of sein in the simple past is wart; ankommen takes sein.',
     },
     {
       id: 'ch55-ex-38',
@@ -934,7 +1036,8 @@ export const chapter055: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'auf...',
       maxLength: 15,
-      explanation: 'The past participle of aufwachen is aufgewacht; aufwachen takes sein.',
+      explanation:
+        'The past participle of aufwachen is aufgewacht; aufwachen takes sein.',
     },
     {
       id: 'ch55-ex-40',
@@ -943,13 +1046,15 @@ export const chapter055: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['sentence-completion', 'hatte', 'aufraeumen', 'controlled'],
-      instruction: 'Complete the sentence with the correct auxiliary and past participle of the verb in brackets. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Complete the sentence with the correct auxiliary and past participle of the verb in brackets. Capitalisation is checked; no full stop is required.',
       prompt: 'Wir ___ das Zimmer schon ___, bevor die Gäste kamen. (aufräumen)',
       acceptedAnswers: ['hatten aufgeräumt'],
       answerMode: 'normalized',
       placeholder: 'hatte/war ... ge...',
       maxLength: 25,
-      explanation: 'aufräumen takes haben; with wir the correct completion is hatten aufgeräumt.',
+      explanation:
+        'aufräumen takes haben; with wir the correct completion is hatten aufgeräumt.',
     },
     {
       id: 'ch55-ex-41',
@@ -958,13 +1063,15 @@ export const chapter055: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['sentence-completion', 'war', 'aufstehen', 'controlled'],
-      instruction: 'Complete the sentence with the correct auxiliary and past participle of the verb in brackets. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Complete the sentence with the correct auxiliary and past participle of the verb in brackets. Capitalisation is checked; no full stop is required.',
       prompt: 'Sie (she) ___ schon ___, als der Wecker klingelte. (aufstehen)',
       acceptedAnswers: ['war aufgestanden'],
       answerMode: 'normalized',
       placeholder: 'hatte/war ... ge...',
       maxLength: 25,
-      explanation: 'aufstehen takes sein; with sie (she) the correct completion is war aufgestanden.',
+      explanation:
+        'aufstehen takes sein; with sie (she) the correct completion is war aufgestanden.',
     },
     {
       id: 'ch55-ex-42',
@@ -979,7 +1086,8 @@ export const chapter055: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'Nachdem',
       maxLength: 15,
-      explanation: 'nachdem ("after") introduces the earlier event, marked here with the past perfect getrunken hatte.',
+      explanation:
+        'nachdem ("after") introduces the earlier event, marked here with the past perfect getrunken hatte.',
     },
     {
       id: 'ch55-ex-43',
@@ -994,7 +1102,8 @@ export const chapter055: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'Bevor',
       maxLength: 15,
-      explanation: 'bevor ("before") introduces the later event (schlafen ging); the main clause names the earlier event with the past perfect.',
+      explanation:
+        'bevor ("before") introduces the later event (schlafen ging); the main clause names the earlier event with the past perfect.',
     },
     {
       id: 'ch55-ex-44',
@@ -1009,7 +1118,8 @@ export const chapter055: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'Als',
       maxLength: 15,
-      explanation: 'als introduces the single reference moment (ich ankam); the past perfect hatte abgefahren shows the train left even earlier.',
+      explanation:
+        'als introduces the single reference moment (ich ankam); the past perfect hatte abgefahren shows the train left even earlier.',
     },
     {
       id: 'ch55-ex-45',
@@ -1018,13 +1128,15 @@ export const chapter055: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['nachdem', 'sentence-building', 'production'],
-      instruction: 'Write a complete sentence using nachdem: the earlier event in the past perfect, the later event in the simple past. Capitalisation and punctuation are checked.',
+      instruction:
+        'Write a complete sentence using nachdem: the earlier event in the past perfect, the later event in the simple past. Capitalisation and punctuation are checked.',
       prompt: 'nachdem – er (aufstehen) – er (frühstücken)',
       acceptedAnswers: ['Nachdem er aufgestanden war, frühstückte er.'],
       answerMode: 'normalized',
       placeholder: 'Nachdem er ..., frühstückte er.',
       maxLength: 60,
-      explanation: 'aufstehen takes sein, so the earlier event is aufgestanden war; frühstückte carries the story forward in the simple past.',
+      explanation:
+        'aufstehen takes sein, so the earlier event is aufgestanden war; frühstückte carries the story forward in the simple past.',
     },
     {
       id: 'ch55-ex-46',
@@ -1033,13 +1145,17 @@ export const chapter055: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['bevor', 'sentence-building', 'production'],
-      instruction: 'Write a complete sentence using bevor: the later event in the simple past (bevor-clause), the earlier event in the past perfect (main clause). Capitalisation and punctuation are checked.',
+      instruction:
+        'Write a complete sentence using bevor: the later event in the simple past (bevor-clause), the earlier event in the past perfect (main clause). Capitalisation and punctuation are checked.',
       prompt: 'bevor – wir (das Haus verlassen) – wir (die Fenster schließen)',
-      acceptedAnswers: ['Bevor wir das Haus verließen, hatten wir die Fenster geschlossen.'],
+      acceptedAnswers: [
+        'Bevor wir das Haus verließen, hatten wir die Fenster geschlossen.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Bevor wir ..., hatten wir ...',
       maxLength: 70,
-      explanation: 'The bevor-clause names the later event in the simple past (verließen); the main clause names the earlier event in the past perfect (hatten geschlossen).',
+      explanation:
+        'The bevor-clause names the later event in the simple past (verließen); the main clause names the earlier event in the past perfect (hatten geschlossen).',
     },
     {
       id: 'ch55-ex-47',
@@ -1048,13 +1164,15 @@ export const chapter055: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['als', 'sentence-building', 'production'],
-      instruction: 'Write a complete sentence using als: a single past moment in the simple past, plus an even earlier event in the past perfect. Capitalisation and punctuation are checked.',
+      instruction:
+        'Write a complete sentence using als: a single past moment in the simple past, plus an even earlier event in the past perfect. Capitalisation and punctuation are checked.',
       prompt: 'als – sie (ankommen) – die Party (schon beginnen)',
       acceptedAnswers: ['Als sie ankam, hatte die Party schon begonnen.'],
       answerMode: 'normalized',
       placeholder: 'Als sie ankam, hatte die Party ...',
       maxLength: 60,
-      explanation: 'als introduces the reference moment in the simple past (ankam); the past perfect (hatte ... begonnen) shows the party started even earlier.',
+      explanation:
+        'als introduces the reference moment in the simple past (ankam); the past perfect (hatte ... begonnen) shows the party started even earlier.',
     },
     {
       id: 'ch55-ex-48',
@@ -1063,13 +1181,16 @@ export const chapter055: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['narrative', 'hatte', 'war', 'production'],
-      instruction: 'Complete the short narrative with the correct past-perfect forms. Write the two missing verb groups in order, separated by a space. Capitalisation is not checked.',
-      prompt: 'Bevor Lisa im Büro ankam, ___ ihr Kollege schon die E-Mails ___. (lesen) Er ___ dann noch kurz Kaffee holen ___. (gehen)',
+      instruction:
+        'Complete the short narrative with the correct past-perfect forms. Write the two missing verb groups in order, separated by a space. Capitalisation is not checked.',
+      prompt:
+        'Bevor Lisa im Büro ankam, ___ ihr Kollege schon die E-Mails ___. (lesen) Er ___ dann noch kurz Kaffee holen ___. (gehen)',
       acceptedAnswers: ['hatte gelesen war gegangen'],
       answerMode: 'caseInsensitive',
       placeholder: 'hatte gelesen war gegangen',
       maxLength: 40,
-      explanation: 'lesen takes haben (hatte gelesen); gehen takes sein (war gegangen) — the same auxiliary rule as in the present perfect.',
+      explanation:
+        'lesen takes haben (hatte gelesen); gehen takes sein (war gegangen) — the same auxiliary rule as in the present perfect.',
     },
     {
       id: 'ch55-ex-49',
@@ -1078,13 +1199,15 @@ export const chapter055: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'aux-choice', 'transfer'],
-      instruction: 'Correct the mistake in auxiliary choice. Write the full corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake in auxiliary choice. Write the full corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Sie hatte nach Berlin gefahren.',
       acceptedAnswers: ['Sie war nach Berlin gefahren.'],
       answerMode: 'normalized',
       placeholder: 'Sie war ...',
       maxLength: 40,
-      explanation: 'fahren with a destination takes sein, exactly as in the present perfect (sie ist gefahren); the past perfect is war gefahren, not hatte gefahren.',
+      explanation:
+        'fahren with a destination takes sein, exactly as in the present perfect (sie ist gefahren); the past perfect is war gefahren, not hatte gefahren.',
     },
     {
       id: 'ch55-ex-50',
@@ -1093,13 +1216,15 @@ export const chapter055: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'word-order', 'transfer'],
-      instruction: 'Correct the mistake in word order. Write the full corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake in word order. Write the full corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Bevor ich ankam, der Film hatte schon begonnen.',
       acceptedAnswers: ['Bevor ich ankam, hatte der Film schon begonnen.'],
       answerMode: 'normalized',
       placeholder: 'Bevor ich ankam, hatte der Film ...',
       maxLength: 60,
-      explanation: 'The main clause keeps normal verb-second word order even when a subordinate clause opens the sentence: hatte must stand immediately after the comma, before the subject der Film.',
+      explanation:
+        'The main clause keeps normal verb-second word order even when a subordinate clause opens the sentence: hatte must stand immediately after the comma, before the subject der Film.',
     },
     {
       id: 'ch55-ex-51',
@@ -1108,13 +1233,15 @@ export const chapter055: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'past-perfect', 'present-perfect', 'transfer'],
-      instruction: 'Correct the mistake in tense. Write the full corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake in tense. Write the full corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Nachdem sie gegessen hat, ging sie spazieren.',
       acceptedAnswers: ['Nachdem sie gegessen hatte, ging sie spazieren.'],
       answerMode: 'normalized',
       placeholder: 'Nachdem sie gegessen hatte, ...',
       maxLength: 60,
-      explanation: 'With a simple-past main clause, the earlier event in the nachdem-clause needs the past perfect (hatte gegessen), not the present perfect (hat gegessen).',
+      explanation:
+        'With a simple-past main clause, the earlier event in the nachdem-clause needs the past perfect (hatte gegessen), not the present perfect (hat gegessen).',
     },
     {
       id: 'ch55-ex-52',
@@ -1123,13 +1250,15 @@ export const chapter055: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['error-correction', 'aux-choice', 'sterben', 'transfer'],
-      instruction: 'Correct the mistake in auxiliary choice. Write the full corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake in auxiliary choice. Write the full corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Der Hund hatte gestorben, bevor der Tierarzt kam.',
       acceptedAnswers: ['Der Hund war gestorben, bevor der Tierarzt kam.'],
       answerMode: 'normalized',
       placeholder: 'Der Hund war gestorben, ...',
       maxLength: 60,
-      explanation: 'sterben takes sein, exactly as in the present perfect (der Hund ist gestorben); the past perfect is war gestorben, not hatte gestorben.',
+      explanation:
+        'sterben takes sein, exactly as in the present perfect (der Hund ist gestorben); the past perfect is war gestorben, not hatte gestorben.',
     },
     {
       id: 'ch55-ex-53',
@@ -1138,13 +1267,20 @@ export const chapter055: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['event-ordering', 'nachdem', 'transfer'],
-      instruction: 'Read the sentence, then answer in German with a short infinitive phrase naming the action that happened first. Capitalisation is not checked.',
-      prompt: 'Nachdem die Sonne untergegangen war, gingen wir nach Hause. Was geschah zuerst?',
-      acceptedAnswers: ['die Sonne untergehen', 'die sonne untergehen', 'sonne untergehen'],
+      instruction:
+        'Read the sentence, then answer in German with a short infinitive phrase naming the action that happened first. Capitalisation is not checked.',
+      prompt:
+        'Nachdem die Sonne untergegangen war, gingen wir nach Hause. Was geschah zuerst?',
+      acceptedAnswers: [
+        'die Sonne untergehen',
+        'die sonne untergehen',
+        'sonne untergehen',
+      ],
       answerMode: 'normalized',
       placeholder: 'die Sonne untergehen',
       maxLength: 40,
-      explanation: 'The past perfect (untergegangen war) marks the earlier event: the sun setting happened before we went home.',
+      explanation:
+        'The past perfect (untergegangen war) marks the earlier event: the sun setting happened before we went home.',
     },
     {
       id: 'ch55-ex-54',
@@ -1158,7 +1294,8 @@ export const chapter055: ChapterDefinition = {
       templateParts: ['Ich ', ' das Auto schon repariert, bevor er kam.'],
       slots: [{ id: 'ch55-ex54-slot1', correctWord: 'hatte' }],
       wordBank: ['hatte', 'war', 'habe', 'bin'],
-      explanation: 'reparieren takes haben, so the past-perfect auxiliary with ich is hatte.',
+      explanation:
+        'reparieren takes haben, so the past-perfect auxiliary with ich is hatte.',
     },
     {
       id: 'ch55-ex-55',
@@ -1212,12 +1349,14 @@ export const chapter055: ChapterDefinition = {
       type: 'dragToSlots',
       level: 'controlled',
       grammarFocus: ['word-order', 'subordinate-clause', 'nachdem', 'controlled'],
-      instruction: 'Drag the correct auxiliary into the gap at the end of the subordinate clause.',
+      instruction:
+        'Drag the correct auxiliary into the gap at the end of the subordinate clause.',
       prompt: 'Nachdem wir gegessen ___, gingen wir spazieren.',
       templateParts: ['Nachdem wir gegessen ', ', gingen wir spazieren.'],
       slots: [{ id: 'ch55-ex58-slot1', correctWord: 'hatten' }],
       wordBank: ['hatten', 'hatte', 'waren', 'war'],
-      explanation: 'essen takes haben, and in a subordinate clause the conjugated auxiliary follows the participle, right at the end: gegessen hatten.',
+      explanation:
+        'essen takes haben, and in a subordinate clause the conjugated auxiliary follows the participle, right at the end: gegessen hatten.',
     },
     {
       id: 'ch55-ex-59',
@@ -1231,7 +1370,8 @@ export const chapter055: ChapterDefinition = {
       templateParts: ['', ' du schon gepackt, bevor der Bus kam?'],
       slots: [{ id: 'ch55-ex59-slot1', correctWord: 'Hattest' }],
       wordBank: ['Hattest', 'Warst', 'Hatte', 'War'],
-      explanation: 'packen takes haben; in a yes/no question the conjugated auxiliary moves to position 1: Hattest du ...?',
+      explanation:
+        'packen takes haben; in a yes/no question the conjugated auxiliary moves to position 1: Hattest du ...?',
     },
     {
       id: 'ch55-ex-60',
@@ -1262,7 +1402,8 @@ export const chapter055: ChapterDefinition = {
       templateParts: ['Ich hatte meinen Regenschirm ', '.'],
       slots: [{ id: 'ch55-ex61-slot1', correctWord: 'vergessen' }],
       wordBank: ['vergessen', 'verloren', 'gefunden', 'gekauft'],
-      explanation: 'The past participle of vergessen is vergessen itself, unchanged, since ver- verbs do not take the ge- prefix.',
+      explanation:
+        'The past participle of vergessen is vergessen itself, unchanged, since ver- verbs do not take the ge- prefix.',
     },
     {
       id: 'ch55-ex-62',
@@ -1293,7 +1434,8 @@ export const chapter055: ChapterDefinition = {
         { id: 'ch55-ex63-slot2', correctWord: 'angekommen' },
       ],
       wordBank: ['waren', 'angekommen', 'hatten', 'gekommen'],
-      explanation: 'ankommen takes sein, so the past perfect is waren angekommen — the earlier event, before the film began.',
+      explanation:
+        'ankommen takes sein, so the past perfect is waren angekommen — the earlier event, before the film began.',
     },
     {
       id: 'ch55-ex-64',
@@ -1310,7 +1452,8 @@ export const chapter055: ChapterDefinition = {
         { id: 's3', text: 'ich' },
         { id: 's4', text: 'spazieren.' },
       ],
-      explanation: 'The nachdem-clause names the earlier event with the past perfect; the main clause follows with verb-second order: ging comes right after the comma.',
+      explanation:
+        'The nachdem-clause names the earlier event with the past perfect; the main clause follows with verb-second order: ging comes right after the comma.',
     },
     {
       id: 'ch55-ex-65',
@@ -1327,7 +1470,8 @@ export const chapter055: ChapterDefinition = {
         { id: 's3', text: 'sie' },
         { id: 's4', text: 'ihre E-Mails geschrieben.' },
       ],
-      explanation: 'The bevor-clause names the later event in the simple past; the main clause names the earlier event with the past perfect, hatte in position 2.',
+      explanation:
+        'The bevor-clause names the later event in the simple past; the main clause names the earlier event with the past perfect, hatte in position 2.',
     },
     {
       id: 'ch55-ex-66',
@@ -1344,7 +1488,8 @@ export const chapter055: ChapterDefinition = {
         { id: 's3', text: 'wir' },
         { id: 's4', text: 'schon unsere Plätze gefunden.' },
       ],
-      explanation: 'als introduces the reference moment in the simple past; the main clause shows the earlier event with the past perfect, hatten in position 2.',
+      explanation:
+        'als introduces the reference moment in the simple past; the main clause shows the earlier event with the past perfect, hatten in position 2.',
     },
     {
       id: 'ch55-ex-67',
@@ -1361,7 +1506,8 @@ export const chapter055: ChapterDefinition = {
         { id: 's3', text: 'wir' },
         { id: 's4', text: 'zu Mittag.' },
       ],
-      explanation: 'The nachdem-clause names the earlier event (visiting the museum) with the past perfect; aßen carries the story forward in the simple past.',
+      explanation:
+        'The nachdem-clause names the earlier event (visiting the museum) with the past perfect; aßen carries the story forward in the simple past.',
     },
     {
       id: 'ch55-ex-68',
@@ -1378,7 +1524,8 @@ export const chapter055: ChapterDefinition = {
         { id: 's3', text: 'die Schüler' },
         { id: 's4', text: 'ihre Hausaufgaben gemacht.' },
       ],
-      explanation: 'The bevor-clause names the later event in the simple past; the main clause names the earlier event with the past perfect, hatten in position 2.',
+      explanation:
+        'The bevor-clause names the later event in the simple past; the main clause names the earlier event with the past perfect, hatten in position 2.',
     },
     {
       id: 'ch55-ex-69',
@@ -1395,7 +1542,8 @@ export const chapter055: ChapterDefinition = {
         { id: 's3', text: 'die Katze' },
         { id: 's4', text: 'schon verschwunden.' },
       ],
-      explanation: 'als introduces the reference moment in the simple past; the past perfect (war verschwunden) shows the cat had already vanished by then — verschwinden takes sein.',
+      explanation:
+        'als introduces the reference moment in the simple past; the past perfect (war verschwunden) shows the cat had already vanished by then — verschwinden takes sein.',
     },
     {
       id: 'ch55-ex-70',
@@ -1412,7 +1560,8 @@ export const chapter055: ChapterDefinition = {
         { id: 's3', text: 'sie' },
         { id: 's4', text: 'ein Taxi.' },
       ],
-      explanation: 'The nachdem-clause names the earlier event (packing) with the past perfect; rief carries the story forward in the simple past.',
+      explanation:
+        'The nachdem-clause names the earlier event (packing) with the past perfect; rief carries the story forward in the simple past.',
     },
     {
       id: 'ch55-ex-71',
@@ -1426,7 +1575,8 @@ export const chapter055: ChapterDefinition = {
       tokens: ['Ich', 'hatte', 'nach', 'Hause', 'gegangen.'],
       errorTokenIndex: 1,
       correction: 'Ich war nach Hause gegangen.',
-      explanation: 'gehen takes sein, exactly as in the present perfect (ich bin gegangen); the past perfect is war gegangen, not hatte gegangen.',
+      explanation:
+        'gehen takes sein, exactly as in the present perfect (ich bin gegangen); the past perfect is war gegangen, not hatte gegangen.',
     },
     {
       id: 'ch55-ex-72',
@@ -1440,7 +1590,8 @@ export const chapter055: ChapterDefinition = {
       tokens: ['Wir', 'haben', 'zu', 'Hause', 'geblieben.'],
       errorTokenIndex: 1,
       correction: 'Wir waren zu Hause geblieben.',
-      explanation: 'bleiben is one of the sein-exception verbs, just like in the present perfect; its past perfect is formed with waren, not haben.',
+      explanation:
+        'bleiben is one of the sein-exception verbs, just like in the present perfect; its past perfect is formed with waren, not haben.',
     },
     {
       id: 'ch55-ex-73',
@@ -1454,7 +1605,8 @@ export const chapter055: ChapterDefinition = {
       tokens: ['Nachdem', 'ich', 'gegessen', 'habe,', 'ging', 'ich', 'spazieren.'],
       errorTokenIndex: 3,
       correction: 'Nachdem ich gegessen hatte, ging ich spazieren.',
-      explanation: 'With a simple-past main clause (ging), the earlier event in the nachdem-clause needs the past perfect (hatte), not the present perfect (habe).',
+      explanation:
+        'With a simple-past main clause (ging), the earlier event in the nachdem-clause needs the past perfect (hatte), not the present perfect (habe).',
     },
     {
       id: 'ch55-ex-74',
@@ -1462,13 +1614,20 @@ export const chapter055: ChapterDefinition = {
       order: 74,
       type: 'errorSpotting',
       level: 'production',
-      grammarFocus: ['error-correction', 'word-order', 'subordinate-clause', 'production'],
-      instruction: 'Find the token that breaks the subordinate-clause word order, and correct it.',
+      grammarFocus: [
+        'error-correction',
+        'word-order',
+        'subordinate-clause',
+        'production',
+      ],
+      instruction:
+        'Find the token that breaks the subordinate-clause word order, and correct it.',
       prompt: 'Ein Lerner erzählt dieselbe Geschichte noch einmal. Etwas stimmt nicht.',
       tokens: ['Nachdem', 'ich', 'hatte', 'gegessen,', 'ging', 'ich', 'spazieren.'],
       errorTokenIndex: 2,
       correction: 'Nachdem ich gegessen hatte, ging ich spazieren.',
-      explanation: 'In a subordinate clause, the participle comes first and the conjugated auxiliary hatte moves to the very end, not directly after the subject.',
+      explanation:
+        'In a subordinate clause, the participle comes first and the conjugated auxiliary hatte moves to the very end, not directly after the subject.',
     },
     {
       id: 'ch55-ex-75',
@@ -1477,12 +1636,14 @@ export const chapter055: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'production',
       grammarFocus: ['error-correction', 'word-order', 'main-clause', 'production'],
-      instruction: 'Find the token that breaks the main-clause word order, and correct it.',
+      instruction:
+        'Find the token that breaks the main-clause word order, and correct it.',
       prompt: 'Ein Lerner erzählt vom Kinobesuch. Etwas stimmt nicht.',
       tokens: ['Bevor', 'ich', 'ankam,', 'der', 'Film', 'hatte', 'schon', 'begonnen.'],
       errorTokenIndex: 3,
       correction: 'Bevor ich ankam, hatte der Film schon begonnen.',
-      explanation: 'The main clause keeps verb-second order even after a subordinate clause: hatte must stand immediately after the comma, before the subject der Film.',
+      explanation:
+        'The main clause keeps verb-second order even after a subordinate clause: hatte must stand immediately after the comma, before the subject der Film.',
     },
     {
       id: 'ch55-ex-76',
@@ -1494,12 +1655,29 @@ export const chapter055: ChapterDefinition = {
       instruction: 'Match each connector or form to how it works with the past perfect.',
       prompt: 'Ordne jedem Element die passende Beschreibung zu.',
       pairs: [
-        { id: 'p1', left: 'nachdem', right: 'its own clause names the earlier event, in the past perfect' },
-        { id: 'p2', left: 'bevor', right: 'its own clause names the later event, in the simple past' },
-        { id: 'p3', left: 'als', right: 'introduces one single reference moment in the simple past' },
-        { id: 'p4', left: 'hatte/war + participle', right: 'the two building blocks of the past perfect itself' },
+        {
+          id: 'p1',
+          left: 'nachdem',
+          right: 'its own clause names the earlier event, in the past perfect',
+        },
+        {
+          id: 'p2',
+          left: 'bevor',
+          right: 'its own clause names the later event, in the simple past',
+        },
+        {
+          id: 'p3',
+          left: 'als',
+          right: 'introduces one single reference moment in the simple past',
+        },
+        {
+          id: 'p4',
+          left: 'hatte/war + participle',
+          right: 'the two building blocks of the past perfect itself',
+        },
       ],
-      explanation: 'nachdem and bevor point at different clauses for the earlier event, while als always names the reference moment; the past perfect itself is always built from hatte/war plus a past participle.',
+      explanation:
+        'nachdem and bevor point at different clauses for the earlier event, while als always names the reference moment; the past perfect itself is always built from hatte/war plus a past participle.',
     },
   ],
 };

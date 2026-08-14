@@ -1,10 +1,4 @@
-import type { ExerciseHistory } from '../../schemas/progressSchema';
-
-const DAY_IN_MS = 24 * 60 * 60 * 1000;
-
-function toDayKey(date: Date): string {
-  return date.toISOString().slice(0, 10);
-}
+import { addDays, toDayKey } from './dayKey';
 
 /**
  * Consecutive days on which the learner answered at least one exercise.
@@ -13,27 +7,21 @@ function toDayKey(date: Date): string {
  * today does not lose the streak.
  */
 export function calculateStreak(
-  histories: readonly ExerciseHistory[],
+  answersByDay: Record<string, number>,
   now: Date = new Date(),
 ): number {
-  const days = new Set(
-    histories
-      .map((history) => history.lastAnsweredAt)
-      .filter((value): value is string => value !== undefined)
-      .map((value) => value.slice(0, 10)),
-  );
-  if (days.size === 0) return 0;
+  const practised = (date: Date) => (answersByDay[toDayKey(date)] ?? 0) > 0;
 
-  let cursor = new Date(now.getTime());
-  if (!days.has(toDayKey(cursor))) {
-    cursor = new Date(cursor.getTime() - DAY_IN_MS);
-    if (!days.has(toDayKey(cursor))) return 0;
+  let cursor = now;
+  if (!practised(cursor)) {
+    cursor = addDays(cursor, -1);
+    if (!practised(cursor)) return 0;
   }
 
   let streak = 0;
-  while (days.has(toDayKey(cursor))) {
+  while (practised(cursor)) {
     streak += 1;
-    cursor = new Date(cursor.getTime() - DAY_IN_MS);
+    cursor = addDays(cursor, -1);
   }
   return streak;
 }

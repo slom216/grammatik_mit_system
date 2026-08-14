@@ -2,6 +2,7 @@ import { beforeEach, describe, expect, it } from 'vitest';
 import {
   groupBySection,
   matchesFilter,
+  matchesQuery,
   selectAvailableCheckpoints,
   selectChapterCards,
   selectContinueChapter,
@@ -161,5 +162,61 @@ describe('chapter selectors', () => {
       from: 81,
       to: 85,
     });
+  });
+
+  it('offers a checkpoint for the opening chapters', () => {
+    const checkpoints = selectAvailableCheckpoints();
+    expect(checkpoints).toContainEqual({
+      id: 'checkpoint-1-10',
+      title: 'Chapters 1-10',
+      from: 1,
+      to: 10,
+    });
+    expect(checkpoints).toContainEqual({
+      id: 'checkpoint-11-20',
+      title: 'Chapters 11-20',
+      from: 11,
+      to: 20,
+    });
+  });
+});
+
+describe('matchesQuery', () => {
+  const cards = () => selectChapterCards(useProgressStore.getState());
+  const numbersMatching = (query: string) =>
+    cards()
+      .filter((card) => matchesQuery(card, query))
+      .map((card) => card.number);
+
+  it('keeps every chapter for an empty query', () => {
+    expect(numbersMatching('   ')).toHaveLength(85);
+  });
+
+  it('matches a title fragment regardless of case', () => {
+    // Chapter 21 is "Personal Pronouns in the Accusative and Dative", so it
+    // matches this fragment on its title too.
+    expect(numbersMatching('personal pronouns')).toEqual([1, 21]);
+    expect(numbersMatching('konjunktiv')).toEqual(numbersMatching('Konjunktiv'));
+  });
+
+  it('matches an exact chapter number and level', () => {
+    expect(numbersMatching('19')).toEqual([19]);
+    expect(numbersMatching('B1').length).toBeGreaterThan(0);
+  });
+
+  // The point of mirroring tags into the registry: a grammar term finds the
+  // chapters that teach it even when no title contains the word.
+  it('finds chapters by a grammar topic missing from their titles', () => {
+    const matches = numbersMatching('dative');
+    expect(matches.length).toBeGreaterThan(1);
+    expect(
+      cards()
+        .filter((card) => matches.includes(card.number))
+        .every((card) => card.tags.some((tag) => tag.includes('dative'))),
+    ).toBe(true);
+  });
+
+  it('returns nothing for a term that appears nowhere', () => {
+    expect(numbersMatching('zzz-not-a-topic')).toEqual([]);
   });
 });

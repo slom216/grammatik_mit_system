@@ -1,5 +1,9 @@
 import { useEffect, useState } from 'react';
-import { hasGermanVoice, onVoicesChanged, speakGerman } from '../../features/audio/speech';
+import {
+  hasGermanVoice,
+  onVoicesChanged,
+  speakGerman,
+} from '../../features/audio/speech';
 import { useSettingsStore } from '../../features/settings/settingsStore';
 
 export interface SpeakButtonProps {

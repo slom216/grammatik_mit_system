@@ -60,7 +60,7 @@ export const chapter045: ChapterDefinition = {
         heading: 'sonst: warning of a negative consequence',
         paragraphs: [
           'sonst ("otherwise") introduces what will happen if an instruction, request, or condition in the previous clause is not followed.',
-          'Beeil dich, sonst verpassen wir den Bus. (Hurry up, otherwise we\'ll miss the bus.) — the second clause states the unwanted result of not hurrying.',
+          "Beeil dich, sonst verpassen wir den Bus. (Hurry up, otherwise we'll miss the bus.) — the second clause states the unwanted result of not hurrying.",
         ],
       },
       {
@@ -96,7 +96,7 @@ export const chapter045: ChapterDefinition = {
         rows: [
           [
             'deshalb',
-            'therefore / that\'s why',
+            "therefore / that's why",
             'cause → result',
             'Es regnet. Deshalb bleiben wir zu Hause.',
           ],
@@ -139,37 +139,43 @@ export const chapter045: ChapterDefinition = {
         german: 'Es regnet. Deshalb bleiben wir zu Hause.',
         english: 'It is raining. That is why we are staying home.',
         highlight: ['Deshalb bleiben wir'],
-        explanation: 'deshalb links the cause (rain) to its result; bleiben (verb) comes before wir (subject).',
+        explanation:
+          'deshalb links the cause (rain) to its result; bleiben (verb) comes before wir (subject).',
       },
       {
         german: 'Ich habe keine Zeit. Deshalb kann ich nicht kommen.',
-        english: 'I don\'t have time. That\'s why I can\'t come.',
+        english: "I don't have time. That's why I can't come.",
         highlight: ['Deshalb kann ich'],
-        explanation: 'deshalb introduces the result (cannot come) of the stated cause (no time); kann precedes ich.',
+        explanation:
+          'deshalb introduces the result (cannot come) of the stated cause (no time); kann precedes ich.',
       },
       {
         german: 'Beeil dich, sonst verpassen wir den Bus.',
-        english: 'Hurry up, otherwise we\'ll miss the bus.',
+        english: "Hurry up, otherwise we'll miss the bus.",
         highlight: ['sonst verpassen wir'],
-        explanation: 'sonst warns of the negative consequence of not hurrying; verpassen comes before wir.',
+        explanation:
+          'sonst warns of the negative consequence of not hurrying; verpassen comes before wir.',
       },
       {
         german: 'Lern für die Prüfung, sonst fällst du durch.',
-        english: 'Study for the exam, otherwise you\'ll fail.',
+        english: "Study for the exam, otherwise you'll fail.",
         highlight: ['sonst fällst du'],
-        explanation: 'sonst introduces what happens if the instruction is ignored; fällst comes before du.',
+        explanation:
+          'sonst introduces what happens if the instruction is ignored; fällst comes before du.',
       },
       {
         german: 'Wir essen zuerst. Dann gehen wir spazieren.',
-        english: 'We\'ll eat first. Then we\'ll go for a walk.',
+        english: "We'll eat first. Then we'll go for a walk.",
         highlight: ['Dann gehen wir'],
-        explanation: 'dann marks the next step in a sequence of actions; gehen comes before wir.',
+        explanation:
+          'dann marks the next step in a sequence of actions; gehen comes before wir.',
       },
       {
         german: 'Nimm einen Regenschirm mit, dann bleibst du trocken.',
-        english: 'Take an umbrella with you, then you\'ll stay dry.',
+        english: "Take an umbrella with you, then you'll stay dry.",
         highlight: ['dann bleibst du'],
-        explanation: 'Here dann expresses a conditional result ("in that case"), not strictly a time sequence; bleibst comes before du.',
+        explanation:
+          'Here dann expresses a conditional result ("in that case"), not strictly a time sequence; bleibst comes before du.',
       },
       {
         german: 'Wir kochen zusammen. Danach räumen wir die Küche auf.',
@@ -181,58 +187,67 @@ export const chapter045: ChapterDefinition = {
         german: 'Er duscht. Danach zieht er sich an.',
         english: 'He showers. After that he gets dressed.',
         highlight: ['Danach zieht er'],
-        explanation: 'danach shows that getting dressed strictly follows showering; zieht comes before er.',
+        explanation:
+          'danach shows that getting dressed strictly follows showering; zieht comes before er.',
       },
       {
         german: 'Ich bin müde. Deshalb gehe ich früh ins Bett.',
         english: 'I am tired. That is why I am going to bed early.',
         highlight: ['Deshalb gehe ich'],
-        explanation: 'deshalb links tiredness (cause) to going to bed early (result); gehe comes before ich.',
+        explanation:
+          'deshalb links tiredness (cause) to going to bed early (result); gehe comes before ich.',
       },
       {
         german: 'Sei leise, sonst weckst du das Baby.',
-        english: 'Be quiet, otherwise you\'ll wake the baby.',
+        english: "Be quiet, otherwise you'll wake the baby.",
         highlight: ['sonst weckst du'],
-        explanation: 'sonst warns of the consequence of not being quiet; weckst comes before du.',
+        explanation:
+          'sonst warns of the consequence of not being quiet; weckst comes before du.',
       },
       {
         german: 'Wir treffen uns um acht. Dann gehen wir ins Kino.',
-        english: 'We\'ll meet at eight. Then we\'ll go to the cinema.',
+        english: "We'll meet at eight. Then we'll go to the cinema.",
         highlight: ['Dann gehen wir'],
         explanation: 'dann marks the next planned step; gehen comes before wir.',
       },
       {
         german: 'Ich rufe dich an. Danach schreibst du mir eine E-Mail.',
-        english: 'I\'ll call you. After that you write me an email.',
+        english: "I'll call you. After that you write me an email.",
         highlight: ['Danach schreibst du'],
-        explanation: 'danach marks the step that strictly follows the phone call; schreibst comes before du.',
+        explanation:
+          'danach marks the step that strictly follows the phone call; schreibst comes before du.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Es regnet. Deshalb wir bleiben zu Hause.',
         correct: 'Es regnet. Deshalb bleiben wir zu Hause.',
-        explanation: 'deshalb occupies position 1, so the verb bleiben must come immediately after it, before the subject wir.',
+        explanation:
+          'deshalb occupies position 1, so the verb bleiben must come immediately after it, before the subject wir.',
       },
       {
         incorrect: 'Beeil dich, sonst wir verpassen den Bus.',
         correct: 'Beeil dich, sonst verpassen wir den Bus.',
-        explanation: 'sonst takes position 1 of its clause, so the verb verpassen must follow it directly, before the subject wir.',
+        explanation:
+          'sonst takes position 1 of its clause, so the verb verpassen must follow it directly, before the subject wir.',
       },
       {
         incorrect: 'Wir essen zuerst, dann wir gehen spazieren.',
         correct: 'Wir essen zuerst, dann gehen wir spazieren.',
-        explanation: 'dann occupies position 1, so the verb gehen comes next, followed by the subject wir.',
+        explanation:
+          'dann occupies position 1, so the verb gehen comes next, followed by the subject wir.',
       },
       {
         incorrect: 'Wir kochen. Danach wir räumen die Küche auf.',
         correct: 'Wir kochen. Danach räumen wir die Küche auf.',
-        explanation: 'danach occupies position 1, so the verb räumen comes immediately after it, before the subject wir.',
+        explanation:
+          'danach occupies position 1, so the verb räumen comes immediately after it, before the subject wir.',
       },
       {
         incorrect: 'Ich habe keine Zeit, und deshalb ich kann nicht kommen.',
         correct: 'Ich habe keine Zeit, deshalb kann ich nicht kommen.',
-        explanation: 'deshalb already functions as the connector and fills position 1 on its own; it should not be combined with und, and the verb kann must directly follow deshalb.',
+        explanation:
+          'deshalb already functions as the connector and fills position 1 on its own; it should not be combined with und, and the verb kann must directly follow deshalb.',
       },
     ],
     remember: [
@@ -257,7 +272,8 @@ export const chapter045: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['deshalb', 'connector-meaning'],
       instruction: 'Choose the connector with the meaning given.',
-      prompt: 'Which connector means "therefore / that\'s why," showing a cause and its result?',
+      prompt:
+        'Which connector means "therefore / that\'s why," showing a cause and its result?',
       options: [
         { id: 'a', text: 'deshalb' },
         { id: 'b', text: 'sonst' },
@@ -265,7 +281,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'danach' },
       ],
       correctOptionId: 'a',
-      explanation: 'deshalb introduces the result of a cause stated in the previous sentence: "therefore/that\'s why."',
+      explanation:
+        'deshalb introduces the result of a cause stated in the previous sentence: "therefore/that\'s why."',
     },
     {
       id: 'ch45-ex-02',
@@ -283,7 +300,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'danach' },
       ],
       correctOptionId: 'a',
-      explanation: 'sonst warns what will happen if the previous instruction or condition is not fulfilled: "otherwise."',
+      explanation:
+        'sonst warns what will happen if the previous instruction or condition is not fulfilled: "otherwise."',
     },
     {
       id: 'ch45-ex-03',
@@ -293,7 +311,8 @@ export const chapter045: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['dann', 'danach', 'connector-meaning'],
       instruction: 'Choose the connector with the meaning given.',
-      prompt: 'Which connector specifically means "after that," describing one action strictly following another in time?',
+      prompt:
+        'Which connector specifically means "after that," describing one action strictly following another in time?',
       options: [
         { id: 'a', text: 'danach' },
         { id: 'b', text: 'dann' },
@@ -301,7 +320,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'sonst' },
       ],
       correctOptionId: 'a',
-      explanation: 'danach means "after that" and marks a strict temporal sequence; dann can also express a looser "then," including a conditional result.',
+      explanation:
+        'danach means "after that" and marks a strict temporal sequence; dann can also express a looser "then," including a conditional result.',
     },
     {
       id: 'ch45-ex-04',
@@ -319,7 +339,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'Bleiben deshalb wir zu Hause.' },
       ],
       correctOptionId: 'a',
-      explanation: 'deshalb occupies position 1, so the verb bleiben must follow immediately in position 2, before the subject wir.',
+      explanation:
+        'deshalb occupies position 1, so the verb bleiben must follow immediately in position 2, before the subject wir.',
     },
     {
       id: 'ch45-ex-05',
@@ -337,7 +358,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'sonst du durch fällst.' },
       ],
       correctOptionId: 'a',
-      explanation: 'sonst takes position 1 in its clause, so the verb fällst comes next, followed by the subject du.',
+      explanation:
+        'sonst takes position 1 in its clause, so the verb fällst comes next, followed by the subject du.',
     },
     {
       id: 'ch45-ex-06',
@@ -355,7 +377,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'gehen jetzt wir.' },
       ],
       correctOptionId: 'a',
-      explanation: 'After deshalb (position 1), the verb gehen comes in position 2, immediately followed by the subject wir: Deshalb gehen wir jetzt.',
+      explanation:
+        'After deshalb (position 1), the verb gehen comes in position 2, immediately followed by the subject wir: Deshalb gehen wir jetzt.',
     },
     {
       id: 'ch45-ex-07',
@@ -373,7 +396,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'Danach' },
       ],
       correctOptionId: 'a',
-      explanation: 'The second clause states the result of working all night, so deshalb ("therefore") is correct.',
+      explanation:
+        'The second clause states the result of working all night, so deshalb ("therefore") is correct.',
     },
     {
       id: 'ch45-ex-08',
@@ -391,7 +415,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'danach' },
       ],
       correctOptionId: 'a',
-      explanation: 'The second clause warns of a negative consequence if the instruction is ignored, so sonst ("otherwise") is correct.',
+      explanation:
+        'The second clause warns of a negative consequence if the instruction is ignored, so sonst ("otherwise") is correct.',
     },
     {
       id: 'ch45-ex-09',
@@ -400,10 +425,19 @@ export const chapter045: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['sonst', 'connector-meaning', 'warning', 'pragmatics'],
-      instruction: 'Read the short exchange, then choose the connector that fits the mother\'s warning.',
+      instruction:
+        "Read the short exchange, then choose the connector that fits the mother's warning.",
       dialogue: [
-        { speaker: 'Kind', german: 'Ich will keine Mütze anziehen!', english: 'I don\'t want to wear a hat!' },
-        { speaker: 'Mutter', german: 'Zieh sie trotzdem an!', english: 'Put it on anyway!' },
+        {
+          speaker: 'Kind',
+          german: 'Ich will keine Mütze anziehen!',
+          english: "I don't want to wear a hat!",
+        },
+        {
+          speaker: 'Mutter',
+          german: 'Zieh sie trotzdem an!',
+          english: 'Put it on anyway!',
+        },
       ],
       prompt: 'Wie warnt die Mutter weiter? ___ erkältest du dich noch!',
       options: [
@@ -413,7 +447,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'Danach' },
       ],
       correctOptionId: 'a',
-      explanation: 'The mother is warning what will happen if the child does not wear the hat, so sonst ("otherwise") fits the exchange.',
+      explanation:
+        'The mother is warning what will happen if the child does not wear the hat, so sonst ("otherwise") fits the exchange.',
     },
     {
       id: 'ch45-ex-10',
@@ -422,10 +457,19 @@ export const chapter045: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['deshalb', 'word-order', 'pragmatics'],
-      instruction: 'Read the short exchange, then choose the sentence with the correct word order for Tom\'s explanation.',
+      instruction:
+        "Read the short exchange, then choose the sentence with the correct word order for Tom's explanation.",
       dialogue: [
-        { speaker: 'Lisa', german: 'Warum bist du so müde?', english: 'Why are you so tired?' },
-        { speaker: 'Tom', german: 'Ich habe schlecht geschlafen.', english: 'I slept badly.' },
+        {
+          speaker: 'Lisa',
+          german: 'Warum bist du so müde?',
+          english: 'Why are you so tired?',
+        },
+        {
+          speaker: 'Tom',
+          german: 'Ich habe schlecht geschlafen.',
+          english: 'I slept badly.',
+        },
       ],
       prompt: 'Wie geht Toms Erklärung weiter?',
       options: [
@@ -435,7 +479,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'Bin deshalb ich müde.' },
       ],
       correctOptionId: 'a',
-      explanation: 'deshalb takes position 1, so the verb bin follows immediately, then the subject ich: Deshalb bin ich müde.',
+      explanation:
+        'deshalb takes position 1, so the verb bin follows immediately, then the subject ich: Deshalb bin ich müde.',
     },
     {
       id: 'ch45-ex-11',
@@ -445,7 +490,8 @@ export const chapter045: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['dann', 'conditional', 'connector-meaning'],
       instruction: 'Choose the connector that fits the meaning of the sentence.',
-      prompt: 'Wenn du willst, kannst du mitkommen. ___ triffst du uns um acht Uhr vor dem Kino.',
+      prompt:
+        'Wenn du willst, kannst du mitkommen. ___ triffst du uns um acht Uhr vor dem Kino.',
       options: [
         { id: 'a', text: 'Dann' },
         { id: 'b', text: 'Danach' },
@@ -453,7 +499,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'Sonst' },
       ],
       correctOptionId: 'a',
-      explanation: 'dann here expresses a conditional consequence ("in that case"), not a strict time sequence, so danach would not fit as naturally.',
+      explanation:
+        'dann here expresses a conditional consequence ("in that case"), not a strict time sequence, so danach would not fit as naturally.',
     },
     {
       id: 'ch45-ex-12',
@@ -463,7 +510,8 @@ export const chapter045: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['dann', 'danach', 'timeline-ordering'],
       instruction: 'Choose the connector that best continues the timeline.',
-      prompt: 'Wir packen zuerst die Koffer. Dann fahren wir zum Flughafen. ___ checken wir ein.',
+      prompt:
+        'Wir packen zuerst die Koffer. Dann fahren wir zum Flughafen. ___ checken wir ein.',
       options: [
         { id: 'a', text: 'Danach' },
         { id: 'b', text: 'Dann' },
@@ -471,7 +519,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'Sonst' },
       ],
       correctOptionId: 'a',
-      explanation: 'Since dann already marks the previous step, danach ("after that") continues the sequence naturally, and checking in strictly follows arriving at the airport.',
+      explanation:
+        'Since dann already marks the previous step, danach ("after that") continues the sequence naturally, and checking in strictly follows arriving at the airport.',
     },
     {
       id: 'ch45-ex-13',
@@ -489,7 +538,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'Es regnet stark, bleiben wir deshalb zu Hause.' },
       ],
       correctOptionId: 'a',
-      explanation: 'deshalb correctly signals cause and result, and after deshalb the verb bleiben comes before the subject wir.',
+      explanation:
+        'deshalb correctly signals cause and result, and after deshalb the verb bleiben comes before the subject wir.',
     },
     {
       id: 'ch45-ex-14',
@@ -498,13 +548,15 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['deshalb', 'word-order', 'verb-position'],
-      instruction: 'Write the verb and subject in the correct order. Capitalisation is not checked.',
+      instruction:
+        'Write the verb and subject in the correct order. Capitalisation is not checked.',
       prompt: 'Ich bin krank. Deshalb ___ (bleiben – ich) zu Hause.',
       acceptedAnswers: ['bleibe ich'],
       answerMode: 'caseInsensitive',
       placeholder: 'bleibe ich',
       maxLength: 20,
-      explanation: 'After deshalb (position 1), the verb bleibe comes in position 2, followed by the subject ich: Deshalb bleibe ich zu Hause.',
+      explanation:
+        'After deshalb (position 1), the verb bleibe comes in position 2, followed by the subject ich: Deshalb bleibe ich zu Hause.',
     },
     {
       id: 'ch45-ex-15',
@@ -513,13 +565,15 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['sonst', 'word-order', 'verb-position'],
-      instruction: 'Write the verb and subject in the correct order. Capitalisation is not checked.',
+      instruction:
+        'Write the verb and subject in the correct order. Capitalisation is not checked.',
       prompt: 'Nimm einen Regenschirm mit, sonst ___ (werden – du) nass.',
       acceptedAnswers: ['wirst du'],
       answerMode: 'caseInsensitive',
       placeholder: 'wirst du',
       maxLength: 20,
-      explanation: 'sonst takes position 1, so the verb wirst follows immediately, then the subject du: sonst wirst du nass.',
+      explanation:
+        'sonst takes position 1, so the verb wirst follows immediately, then the subject du: sonst wirst du nass.',
     },
     {
       id: 'ch45-ex-16',
@@ -528,13 +582,15 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['dann', 'word-order', 'verb-position'],
-      instruction: 'Write the verb and subject in the correct order. Capitalisation is not checked.',
+      instruction:
+        'Write the verb and subject in the correct order. Capitalisation is not checked.',
       prompt: 'Wir packen die Koffer. Dann ___ (fahren – wir) los.',
       acceptedAnswers: ['fahren wir'],
       answerMode: 'caseInsensitive',
       placeholder: 'fahren wir',
       maxLength: 20,
-      explanation: 'dann is in position 1, so the verb fahren comes next, followed by wir: Dann fahren wir los.',
+      explanation:
+        'dann is in position 1, so the verb fahren comes next, followed by wir: Dann fahren wir los.',
     },
     {
       id: 'ch45-ex-17',
@@ -543,13 +599,15 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['danach', 'word-order', 'verb-position'],
-      instruction: 'Write the verb and subject in the correct order. Capitalisation is not checked.',
+      instruction:
+        'Write the verb and subject in the correct order. Capitalisation is not checked.',
       prompt: 'Wir kommen am Flughafen an. Danach ___ (suchen – wir) unser Hotel.',
       acceptedAnswers: ['suchen wir'],
       answerMode: 'caseInsensitive',
       placeholder: 'suchen wir',
       maxLength: 20,
-      explanation: 'danach occupies position 1, so the verb suchen comes in position 2, followed by wir: Danach suchen wir unser Hotel.',
+      explanation:
+        'danach occupies position 1, so the verb suchen comes in position 2, followed by wir: Danach suchen wir unser Hotel.',
     },
     {
       id: 'ch45-ex-18',
@@ -558,13 +616,15 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['deshalb', 'connector-meaning'],
-      instruction: 'Write the connector that fits the meaning "therefore / that\'s why." Capitalisation is not checked.',
+      instruction:
+        'Write the connector that fits the meaning "therefore / that\'s why." Capitalisation is not checked.',
       prompt: 'Ich habe Kopfschmerzen. ___ nehme ich eine Tablette.',
       acceptedAnswers: ['Deshalb'],
       answerMode: 'caseInsensitive',
       placeholder: 'Deshalb',
       maxLength: 15,
-      explanation: 'The second clause states the result of having a headache, so deshalb ("therefore") is correct.',
+      explanation:
+        'The second clause states the result of having a headache, so deshalb ("therefore") is correct.',
     },
     {
       id: 'ch45-ex-19',
@@ -573,17 +633,27 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['sonst', 'connector-meaning', 'pragmatics'],
-      instruction: 'Read the short exchange, then write the connector that fits the boss\'s warning. Capitalisation is not checked.',
+      instruction:
+        "Read the short exchange, then write the connector that fits the boss's warning. Capitalisation is not checked.",
       dialogue: [
-        { speaker: 'Chef', german: 'Sie müssen den Bericht heute abgeben.', english: 'You must submit the report today.' },
-        { speaker: 'Mitarbeiterin', german: 'Und wenn ich das nicht schaffe?', english: 'And if I can\'t manage that?' },
+        {
+          speaker: 'Chef',
+          german: 'Sie müssen den Bericht heute abgeben.',
+          english: 'You must submit the report today.',
+        },
+        {
+          speaker: 'Mitarbeiterin',
+          german: 'Und wenn ich das nicht schaffe?',
+          english: "And if I can't manage that?",
+        },
       ],
       prompt: '___ bekommen Sie Probleme mit dem Kunden.',
       acceptedAnswers: ['Sonst'],
       answerMode: 'caseInsensitive',
       placeholder: 'Sonst',
       maxLength: 15,
-      explanation: 'The boss warns of a negative consequence if the report is not submitted, so sonst ("otherwise") is correct.',
+      explanation:
+        'The boss warns of a negative consequence if the report is not submitted, so sonst ("otherwise") is correct.',
     },
     {
       id: 'ch45-ex-20',
@@ -592,17 +662,27 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['deshalb', 'connector-meaning', 'pragmatics'],
-      instruction: 'Read the short exchange, then write the connector that fits Ben\'s explanation. Capitalisation is not checked.',
+      instruction:
+        "Read the short exchange, then write the connector that fits Ben's explanation. Capitalisation is not checked.",
       dialogue: [
-        { speaker: 'Anna', german: 'Warum kommst du zu spät?', english: 'Why are you late?' },
-        { speaker: 'Ben', german: 'Der Bus hatte Verspätung.', english: 'The bus was delayed.' },
+        {
+          speaker: 'Anna',
+          german: 'Warum kommst du zu spät?',
+          english: 'Why are you late?',
+        },
+        {
+          speaker: 'Ben',
+          german: 'Der Bus hatte Verspätung.',
+          english: 'The bus was delayed.',
+        },
       ],
       prompt: '___ komme ich zu spät.',
       acceptedAnswers: ['Deshalb'],
       answerMode: 'caseInsensitive',
       placeholder: 'Deshalb',
       maxLength: 15,
-      explanation: 'Ben states a cause (the delayed bus) and its result (being late), so deshalb ("therefore") connects the two.',
+      explanation:
+        'Ben states a cause (the delayed bus) and its result (being late), so deshalb ("therefore") connects the two.',
     },
     {
       id: 'ch45-ex-21',
@@ -611,7 +691,8 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['dann', 'sentence-combination', 'timeline-ordering'],
-      instruction: 'Combine the two sentences into one, using dann. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences into one, using dann. Capitalisation and punctuation are checked.',
       prompt: 'Wir essen zu Abend. + Wir schauen einen Film.',
       acceptedAnswers: [
         'Wir essen zu Abend, dann schauen wir einen Film.',
@@ -620,7 +701,8 @@ export const chapter045: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Wir essen zu Abend, dann schauen wir einen Film.',
       maxLength: 70,
-      explanation: 'dann links the two actions in sequence; after dann (position 1) the verb schauen comes before the subject wir.',
+      explanation:
+        'dann links the two actions in sequence; after dann (position 1) the verb schauen comes before the subject wir.',
     },
     {
       id: 'ch45-ex-22',
@@ -629,7 +711,8 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['danach', 'sentence-combination', 'timeline-ordering'],
-      instruction: 'Combine the two sentences into one, using danach. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences into one, using danach. Capitalisation and punctuation are checked.',
       prompt: 'Wir duschen. + Wir frühstücken.',
       acceptedAnswers: [
         'Wir duschen, danach frühstücken wir.',
@@ -638,7 +721,8 @@ export const chapter045: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Wir duschen, danach frühstücken wir.',
       maxLength: 60,
-      explanation: 'danach marks what happens strictly after the first action; the verb frühstücken follows danach directly, before the subject wir.',
+      explanation:
+        'danach marks what happens strictly after the first action; the verb frühstücken follows danach directly, before the subject wir.',
     },
     {
       id: 'ch45-ex-23',
@@ -647,13 +731,15 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['deshalb', 'error-correction', 'word-order'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Es ist kalt. Deshalb wir tragen einen Mantel.',
       acceptedAnswers: ['Es ist kalt. Deshalb tragen wir einen Mantel.'],
       answerMode: 'normalized',
       placeholder: 'Es ist kalt. Deshalb ...',
       maxLength: 60,
-      explanation: 'deshalb occupies position 1, so the verb tragen must come immediately after it, before the subject wir.',
+      explanation:
+        'deshalb occupies position 1, so the verb tragen must come immediately after it, before the subject wir.',
     },
     {
       id: 'ch45-ex-24',
@@ -662,13 +748,15 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['sonst', 'error-correction', 'word-order'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Sei leise, sonst du weckst das Baby.',
       acceptedAnswers: ['Sei leise, sonst weckst du das Baby.'],
       answerMode: 'normalized',
       placeholder: 'Sei leise, sonst ...',
       maxLength: 60,
-      explanation: 'sonst takes position 1, so the verb weckst comes next, followed by the subject du.',
+      explanation:
+        'sonst takes position 1, so the verb weckst comes next, followed by the subject du.',
     },
     {
       id: 'ch45-ex-25',
@@ -677,7 +765,8 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['deshalb', 'sentence-formation', 'cause-result'],
-      instruction: 'Write a complete sentence using deshalb for the cues in brackets. Capitalisation and punctuation are checked.',
+      instruction:
+        'Write a complete sentence using deshalb for the cues in brackets. Capitalisation and punctuation are checked.',
       prompt: 'er – keine Zeit haben – nicht mitkommen können',
       acceptedAnswers: [
         'Er hat keine Zeit, deshalb kann er nicht mitkommen.',
@@ -686,7 +775,8 @@ export const chapter045: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Er hat keine Zeit, deshalb ...',
       maxLength: 70,
-      explanation: 'The cause (no time) and result (cannot come along) are linked by deshalb, with kann in position 2 right after deshalb.',
+      explanation:
+        'The cause (no time) and result (cannot come along) are linked by deshalb, with kann in position 2 right after deshalb.',
     },
     {
       id: 'ch45-ex-26',
@@ -695,10 +785,19 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['danach', 'timeline-ordering', 'sentence-combination', 'pragmatics'],
-      instruction: 'Read the short exchange, then write the guide\'s reply as one sentence using danach. Capitalisation and punctuation are checked.',
+      instruction:
+        "Read the short exchange, then write the guide's reply as one sentence using danach. Capitalisation and punctuation are checked.",
       dialogue: [
-        { speaker: 'Reiseleiter', german: 'Wir besuchen zuerst das Museum.', english: 'First we\'ll visit the museum.' },
-        { speaker: 'Tourist', german: 'Und was machen wir danach?', english: 'And what do we do after that?' },
+        {
+          speaker: 'Reiseleiter',
+          german: 'Wir besuchen zuerst das Museum.',
+          english: "First we'll visit the museum.",
+        },
+        {
+          speaker: 'Tourist',
+          german: 'Und was machen wir danach?',
+          english: 'And what do we do after that?',
+        },
       ],
       prompt: 'Antworte mit: Wir besuchen das Museum. + Wir essen zu Mittag.',
       acceptedAnswers: [
@@ -708,7 +807,8 @@ export const chapter045: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Wir besuchen das Museum, danach essen wir zu Mittag.',
       maxLength: 70,
-      explanation: 'danach marks the next step in the timeline; the verb essen follows danach directly, before the subject wir.',
+      explanation:
+        'danach marks the next step in the timeline; the verb essen follows danach directly, before the subject wir.',
     },
     {
       id: 'ch45-ex-27',
@@ -726,7 +826,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'Danach' },
       ],
       correctOptionId: 'a',
-      explanation: 'The second clause states the result of having a cold, so deshalb ("therefore") is correct.',
+      explanation:
+        'The second clause states the result of having a cold, so deshalb ("therefore") is correct.',
     },
     {
       id: 'ch45-ex-28',
@@ -744,7 +845,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'danach' },
       ],
       correctOptionId: 'a',
-      explanation: 'The second clause warns of a negative consequence, so sonst ("otherwise") is correct.',
+      explanation:
+        'The second clause warns of a negative consequence, so sonst ("otherwise") is correct.',
     },
     {
       id: 'ch45-ex-29',
@@ -762,7 +864,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'Dann' },
       ],
       correctOptionId: 'a',
-      explanation: 'Getting dressed strictly follows showering, so danach ("after that") fits best.',
+      explanation:
+        'Getting dressed strictly follows showering, so danach ("after that") fits best.',
     },
     {
       id: 'ch45-ex-30',
@@ -780,7 +883,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'Schlafen deshalb wir lange.' },
       ],
       correctOptionId: 'a',
-      explanation: 'deshalb occupies position 1, so the verb schlafen must follow immediately, before the subject wir.',
+      explanation:
+        'deshalb occupies position 1, so the verb schlafen must follow immediately, before the subject wir.',
     },
     {
       id: 'ch45-ex-31',
@@ -798,7 +902,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'sonst du hin fällst.' },
       ],
       correctOptionId: 'a',
-      explanation: 'sonst takes position 1, so the verb fällst comes next, followed by the subject du.',
+      explanation:
+        'sonst takes position 1, so the verb fällst comes next, followed by the subject du.',
     },
     {
       id: 'ch45-ex-32',
@@ -816,7 +921,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'Kochen dann wir zusammen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'dann is in position 1, so the verb kochen comes next, followed by the subject wir.',
+      explanation:
+        'dann is in position 1, so the verb kochen comes next, followed by the subject wir.',
     },
     {
       id: 'ch45-ex-33',
@@ -834,7 +940,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'Frühstückt danach er.' },
       ],
       correctOptionId: 'a',
-      explanation: 'danach occupies position 1, so the verb frühstückt must follow immediately, before the subject er.',
+      explanation:
+        'danach occupies position 1, so the verb frühstückt must follow immediately, before the subject er.',
     },
     {
       id: 'ch45-ex-34',
@@ -843,10 +950,19 @@ export const chapter045: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['deshalb', 'word-order', 'pragmatics'],
-      instruction: 'Read the short exchange, then choose the sentence with the correct word order for Ben\'s explanation.',
+      instruction:
+        "Read the short exchange, then choose the sentence with the correct word order for Ben's explanation.",
       dialogue: [
-        { speaker: 'Anna', german: 'Warum bist du so nervös?', english: 'Why are you so nervous?' },
-        { speaker: 'Ben', german: 'Ich habe morgen eine Prüfung.', english: 'I have an exam tomorrow.' },
+        {
+          speaker: 'Anna',
+          german: 'Warum bist du so nervös?',
+          english: 'Why are you so nervous?',
+        },
+        {
+          speaker: 'Ben',
+          german: 'Ich habe morgen eine Prüfung.',
+          english: 'I have an exam tomorrow.',
+        },
       ],
       prompt: 'Wie geht Bens Erklärung weiter?',
       options: [
@@ -856,7 +972,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'Bin deshalb ich nervös.' },
       ],
       correctOptionId: 'a',
-      explanation: 'deshalb takes position 1, so the verb bin follows immediately, then the subject ich.',
+      explanation:
+        'deshalb takes position 1, so the verb bin follows immediately, then the subject ich.',
     },
     {
       id: 'ch45-ex-35',
@@ -865,10 +982,19 @@ export const chapter045: ChapterDefinition = {
       type: 'singleChoice',
       level: 'production',
       grammarFocus: ['sonst', 'word-order', 'pragmatics'],
-      instruction: 'Read the short exchange, then choose the mother\'s correctly ordered reply.',
+      instruction:
+        "Read the short exchange, then choose the mother's correctly ordered reply.",
       dialogue: [
-        { speaker: 'Mutter', german: 'Zieh dir eine Mütze an!', english: 'Put on a hat!' },
-        { speaker: 'Kind', german: 'Muss ich wirklich?', english: 'Do I really have to?' },
+        {
+          speaker: 'Mutter',
+          german: 'Zieh dir eine Mütze an!',
+          english: 'Put on a hat!',
+        },
+        {
+          speaker: 'Kind',
+          german: 'Muss ich wirklich?',
+          english: 'Do I really have to?',
+        },
       ],
       prompt: 'Wie antwortet die Mutter?',
       options: [
@@ -878,7 +1004,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'Erkältest sonst du dich.' },
       ],
       correctOptionId: 'a',
-      explanation: 'sonst takes position 1, so the verb erkältest comes next, followed by the subject du.',
+      explanation:
+        'sonst takes position 1, so the verb erkältest comes next, followed by the subject du.',
     },
     {
       id: 'ch45-ex-36',
@@ -896,7 +1023,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'Wir sind müde, gehen wir deshalb ins Bett.' },
       ],
       correctOptionId: 'a',
-      explanation: 'deshalb correctly signals cause and result, and the verb gehen follows deshalb directly, before the subject wir.',
+      explanation:
+        'deshalb correctly signals cause and result, and the verb gehen follows deshalb directly, before the subject wir.',
     },
     {
       id: 'ch45-ex-37',
@@ -906,7 +1034,8 @@ export const chapter045: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['dann', 'danach', 'connector-meaning'],
       instruction: 'Choose the connector that fits the description.',
-      prompt: 'Which connector can express a conditional result ("in that case"), not only a strict time sequence?',
+      prompt:
+        'Which connector can express a conditional result ("in that case"), not only a strict time sequence?',
       options: [
         { id: 'a', text: 'dann' },
         { id: 'b', text: 'danach' },
@@ -914,7 +1043,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'sonst' },
       ],
       correctOptionId: 'a',
-      explanation: 'dann covers both "next step" and "in that case," while danach is strictly temporal.',
+      explanation:
+        'dann covers both "next step" and "in that case," while danach is strictly temporal.',
     },
     {
       id: 'ch45-ex-38',
@@ -924,7 +1054,8 @@ export const chapter045: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['dann', 'danach', 'connector-meaning'],
       instruction: 'Choose the pair of connectors described.',
-      prompt: 'Which two connectors both translate as "then," but only one of them can also express a conditional result?',
+      prompt:
+        'Which two connectors both translate as "then," but only one of them can also express a conditional result?',
       options: [
         { id: 'a', text: 'dann and danach' },
         { id: 'b', text: 'deshalb and sonst' },
@@ -932,7 +1063,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'sonst and danach' },
       ],
       correctOptionId: 'a',
-      explanation: 'dann and danach both mean "then," but only dann can also express "in that case."',
+      explanation:
+        'dann and danach both mean "then," but only dann can also express "in that case."',
     },
     {
       id: 'ch45-ex-39',
@@ -941,7 +1073,8 @@ export const chapter045: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['danach', 'word-order', 'punctuation'],
-      instruction: 'Choose the correctly ordered continuation, written as a separate sentence.',
+      instruction:
+        'Choose the correctly ordered continuation, written as a separate sentence.',
       prompt: 'Wir kochen zusammen. ___',
       options: [
         { id: 'a', text: 'Danach räumen wir auf.' },
@@ -950,7 +1083,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'Räumen danach wir auf.' },
       ],
       correctOptionId: 'a',
-      explanation: 'Even as a separate sentence, danach still fills position 1, so the verb räumen follows immediately, before wir.',
+      explanation:
+        'Even as a separate sentence, danach still fills position 1, so the verb räumen follows immediately, before wir.',
     },
     {
       id: 'ch45-ex-40',
@@ -959,7 +1093,8 @@ export const chapter045: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['deshalb', 'common-mistake', 'word-order'],
-      instruction: 'Choose the sentence that correctly follows the rule that deshalb is not combined with und.',
+      instruction:
+        'Choose the sentence that correctly follows the rule that deshalb is not combined with und.',
       prompt: 'Ich habe keine Zeit. ___',
       options: [
         { id: 'a', text: 'Ich habe keine Zeit, deshalb kann ich nicht kommen.' },
@@ -968,7 +1103,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'd', text: 'Ich habe keine Zeit deshalb ich kann nicht kommen.' },
       ],
       correctOptionId: 'a',
-      explanation: 'deshalb already functions as the connector, so it should not be combined with und, and kann must directly follow deshalb.',
+      explanation:
+        'deshalb already functions as the connector, so it should not be combined with und, and kann must directly follow deshalb.',
     },
     {
       id: 'ch45-ex-41',
@@ -977,13 +1113,15 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['deshalb', 'word-order', 'verb-position'],
-      instruction: 'Write the verb and subject in the correct order. Capitalisation is not checked.',
+      instruction:
+        'Write the verb and subject in the correct order. Capitalisation is not checked.',
       prompt: 'Ich habe Fieber. Deshalb ___ (bleiben – ich) im Bett.',
       acceptedAnswers: ['bleibe ich'],
       answerMode: 'caseInsensitive',
       placeholder: 'bleibe ich',
       maxLength: 20,
-      explanation: 'After deshalb (position 1), the verb bleibe comes in position 2, followed by the subject ich.',
+      explanation:
+        'After deshalb (position 1), the verb bleibe comes in position 2, followed by the subject ich.',
     },
     {
       id: 'ch45-ex-42',
@@ -992,13 +1130,15 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['sonst', 'word-order', 'verb-position'],
-      instruction: 'Write the verb and subject in the correct order. Capitalisation is not checked.',
+      instruction:
+        'Write the verb and subject in the correct order. Capitalisation is not checked.',
       prompt: 'Pass auf, sonst ___ (fallen – du) hin.',
       acceptedAnswers: ['fällst du'],
       answerMode: 'caseInsensitive',
       placeholder: 'fällst du',
       maxLength: 20,
-      explanation: 'sonst takes position 1, so the verb fällst comes next, followed by the subject du.',
+      explanation:
+        'sonst takes position 1, so the verb fällst comes next, followed by the subject du.',
     },
     {
       id: 'ch45-ex-43',
@@ -1007,13 +1147,15 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['dann', 'word-order', 'verb-position'],
-      instruction: 'Write the verb and subject in the correct order. Capitalisation is not checked.',
+      instruction:
+        'Write the verb and subject in the correct order. Capitalisation is not checked.',
       prompt: 'Wir lernen zusammen. Dann ___ (verstehen – wir) die Grammatik besser.',
       acceptedAnswers: ['verstehen wir'],
       answerMode: 'caseInsensitive',
       placeholder: 'verstehen wir',
       maxLength: 20,
-      explanation: 'dann is in position 1, so the verb verstehen comes next, followed by wir.',
+      explanation:
+        'dann is in position 1, so the verb verstehen comes next, followed by wir.',
     },
     {
       id: 'ch45-ex-44',
@@ -1022,13 +1164,15 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['danach', 'word-order', 'verb-position'],
-      instruction: 'Write the verb and subject in the correct order. Capitalisation is not checked.',
+      instruction:
+        'Write the verb and subject in the correct order. Capitalisation is not checked.',
       prompt: 'Wir essen zu Abend. Danach ___ (spielen – wir) ein Spiel.',
       acceptedAnswers: ['spielen wir'],
       answerMode: 'caseInsensitive',
       placeholder: 'spielen wir',
       maxLength: 20,
-      explanation: 'danach occupies position 1, so the verb spielen comes in position 2, followed by wir.',
+      explanation:
+        'danach occupies position 1, so the verb spielen comes in position 2, followed by wir.',
     },
     {
       id: 'ch45-ex-45',
@@ -1037,13 +1181,15 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['sonst', 'connector-meaning'],
-      instruction: 'Write the connector that fits the meaning "otherwise." Capitalisation is not checked.',
+      instruction:
+        'Write the connector that fits the meaning "otherwise." Capitalisation is not checked.',
       prompt: 'Fahr langsamer, ___ passiert ein Unfall.',
       acceptedAnswers: ['sonst'],
       answerMode: 'caseInsensitive',
       placeholder: 'sonst',
       maxLength: 15,
-      explanation: 'The second clause warns of a negative consequence, so sonst ("otherwise") is correct.',
+      explanation:
+        'The second clause warns of a negative consequence, so sonst ("otherwise") is correct.',
     },
     {
       id: 'ch45-ex-46',
@@ -1052,13 +1198,15 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['deshalb', 'connector-meaning'],
-      instruction: 'Write the connector that fits the meaning "therefore / that\'s why." Capitalisation is not checked.',
+      instruction:
+        'Write the connector that fits the meaning "therefore / that\'s why." Capitalisation is not checked.',
       prompt: 'Ich bin krank. ___ gehe ich zum Arzt.',
       acceptedAnswers: ['Deshalb'],
       answerMode: 'caseInsensitive',
       placeholder: 'Deshalb',
       maxLength: 15,
-      explanation: 'The second clause states the result of being sick, so deshalb ("therefore") is correct.',
+      explanation:
+        'The second clause states the result of being sick, so deshalb ("therefore") is correct.',
     },
     {
       id: 'ch45-ex-47',
@@ -1067,17 +1215,27 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['deshalb', 'connector-meaning', 'pragmatics'],
-      instruction: 'Read the short exchange, then write the connector that fits your explanation. Capitalisation is not checked.',
+      instruction:
+        'Read the short exchange, then write the connector that fits your explanation. Capitalisation is not checked.',
       dialogue: [
-        { speaker: 'Freund', german: 'Warum lernst du so viel?', english: 'Why do you study so much?' },
-        { speaker: 'Du', german: 'Ich will die Prüfung bestehen.', english: 'I want to pass the exam.' },
+        {
+          speaker: 'Freund',
+          german: 'Warum lernst du so viel?',
+          english: 'Why do you study so much?',
+        },
+        {
+          speaker: 'Du',
+          german: 'Ich will die Prüfung bestehen.',
+          english: 'I want to pass the exam.',
+        },
       ],
       prompt: '___ lerne ich jeden Tag.',
       acceptedAnswers: ['Deshalb'],
       answerMode: 'caseInsensitive',
       placeholder: 'Deshalb',
       maxLength: 15,
-      explanation: 'You state a cause (wanting to pass) and its result (studying every day), so deshalb connects them.',
+      explanation:
+        'You state a cause (wanting to pass) and its result (studying every day), so deshalb connects them.',
     },
     {
       id: 'ch45-ex-48',
@@ -1086,17 +1244,27 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['sonst', 'connector-meaning', 'pragmatics'],
-      instruction: 'Read the short exchange, then write the connector that fits the warning. Capitalisation is not checked.',
+      instruction:
+        'Read the short exchange, then write the connector that fits the warning. Capitalisation is not checked.',
       dialogue: [
-        { speaker: 'Chef', german: 'Der Kunde wartet schon lange.', english: 'The customer has been waiting a long time.' },
-        { speaker: 'Angestellter', german: 'Ich rufe ihn sofort an.', english: 'I will call him right away.' },
+        {
+          speaker: 'Chef',
+          german: 'Der Kunde wartet schon lange.',
+          english: 'The customer has been waiting a long time.',
+        },
+        {
+          speaker: 'Angestellter',
+          german: 'Ich rufe ihn sofort an.',
+          english: 'I will call him right away.',
+        },
       ],
       prompt: 'Sei pünktlich, ___ wartet der Kunde vergeblich.',
       acceptedAnswers: ['sonst'],
       answerMode: 'caseInsensitive',
       placeholder: 'sonst',
       maxLength: 15,
-      explanation: 'The clause warns of a negative consequence if punctuality is ignored, so sonst ("otherwise") fits.',
+      explanation:
+        'The clause warns of a negative consequence if punctuality is ignored, so sonst ("otherwise") fits.',
     },
     {
       id: 'ch45-ex-49',
@@ -1105,7 +1273,8 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['dann', 'sentence-combination', 'timeline-ordering'],
-      instruction: 'Combine the two sentences into one, using dann. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences into one, using dann. Capitalisation and punctuation are checked.',
       prompt: 'Wir treffen uns um sieben. + Wir gehen essen.',
       acceptedAnswers: [
         'Wir treffen uns um sieben, dann gehen wir essen.',
@@ -1114,7 +1283,8 @@ export const chapter045: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Wir treffen uns um sieben, dann gehen wir essen.',
       maxLength: 70,
-      explanation: 'dann links the two planned steps; the verb gehen follows dann directly, before the subject wir.',
+      explanation:
+        'dann links the two planned steps; the verb gehen follows dann directly, before the subject wir.',
     },
     {
       id: 'ch45-ex-50',
@@ -1123,7 +1293,8 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'production',
       grammarFocus: ['danach', 'sentence-combination', 'timeline-ordering'],
-      instruction: 'Combine the two sentences into one, using danach. Capitalisation and punctuation are checked.',
+      instruction:
+        'Combine the two sentences into one, using danach. Capitalisation and punctuation are checked.',
       prompt: 'Wir packen die Koffer. + Wir fahren zum Flughafen.',
       acceptedAnswers: [
         'Wir packen die Koffer, danach fahren wir zum Flughafen.',
@@ -1132,7 +1303,8 @@ export const chapter045: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Wir packen die Koffer, danach fahren wir zum Flughafen.',
       maxLength: 70,
-      explanation: 'danach marks what strictly follows in time; the verb fahren follows danach directly, before wir.',
+      explanation:
+        'danach marks what strictly follows in time; the verb fahren follows danach directly, before wir.',
     },
     {
       id: 'ch45-ex-51',
@@ -1141,13 +1313,15 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['dann', 'error-correction', 'word-order'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Wir essen zuerst. Dann wir gehen spazieren.',
       acceptedAnswers: ['Wir essen zuerst. Dann gehen wir spazieren.'],
       answerMode: 'normalized',
       placeholder: 'Wir essen zuerst. Dann ...',
       maxLength: 60,
-      explanation: 'dann occupies position 1, so the verb gehen must come immediately after it, before the subject wir.',
+      explanation:
+        'dann occupies position 1, so the verb gehen must come immediately after it, before the subject wir.',
     },
     {
       id: 'ch45-ex-52',
@@ -1156,13 +1330,15 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['danach', 'error-correction', 'word-order'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Wir kochen zusammen. Danach wir räumen die Küche auf.',
       acceptedAnswers: ['Wir kochen zusammen. Danach räumen wir die Küche auf.'],
       answerMode: 'normalized',
       placeholder: 'Wir kochen zusammen. Danach ...',
       maxLength: 60,
-      explanation: 'danach occupies position 1, so the verb räumen must come immediately after it, before the subject wir.',
+      explanation:
+        'danach occupies position 1, so the verb räumen must come immediately after it, before the subject wir.',
     },
     {
       id: 'ch45-ex-53',
@@ -1171,13 +1347,15 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['sonst', 'sentence-formation', 'warning'],
-      instruction: 'Write a complete sentence using sonst for the cues in brackets. Capitalisation and punctuation are checked.',
+      instruction:
+        'Write a complete sentence using sonst for the cues in brackets. Capitalisation and punctuation are checked.',
       prompt: 'du – schneller laufen müssen – den Zug verpassen',
       acceptedAnswers: ['Du musst schneller laufen, sonst verpasst du den Zug.'],
       answerMode: 'normalized',
       placeholder: 'Du musst schneller laufen, sonst ...',
       maxLength: 70,
-      explanation: 'sonst introduces the negative consequence of not hurrying, with verpasst in position 2 right after sonst.',
+      explanation:
+        'sonst introduces the negative consequence of not hurrying, with verpasst in position 2 right after sonst.',
     },
     {
       id: 'ch45-ex-54',
@@ -1186,7 +1364,8 @@ export const chapter045: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['danach', 'sentence-formation', 'timeline-ordering'],
-      instruction: 'Write a complete sentence using danach for the cues in brackets. Capitalisation and punctuation are checked.',
+      instruction:
+        'Write a complete sentence using danach for the cues in brackets. Capitalisation and punctuation are checked.',
       prompt: 'wir – zuerst einkaufen – danach kochen',
       acceptedAnswers: [
         'Wir kaufen zuerst ein, danach kochen wir.',
@@ -1195,7 +1374,8 @@ export const chapter045: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'Wir kaufen zuerst ein, danach kochen wir.',
       maxLength: 70,
-      explanation: 'danach marks the step that strictly follows shopping; kochen comes in position 2 right after danach.',
+      explanation:
+        'danach marks the step that strictly follows shopping; kochen comes in position 2 right after danach.',
     },
     {
       id: 'ch45-ex-55',
@@ -1213,7 +1393,8 @@ export const chapter045: ChapterDefinition = {
         { id: 's4', text: 'ich' },
         { id: 's5', text: 'nicht zur Arbeit.' },
       ],
-      explanation: 'Deshalb fills position 1, so the verb gehe follows immediately, and the subject ich comes after the verb.',
+      explanation:
+        'Deshalb fills position 1, so the verb gehe follows immediately, and the subject ich comes after the verb.',
     },
     {
       id: 'ch45-ex-56',
@@ -1231,7 +1412,8 @@ export const chapter045: ChapterDefinition = {
         { id: 's4', text: 'ich' },
         { id: 's5', text: 'dich morgen an.' },
       ],
-      explanation: 'Deshalb fills position 1, so the verb rufe follows immediately, and the subject ich comes after the verb.',
+      explanation:
+        'Deshalb fills position 1, so the verb rufe follows immediately, and the subject ich comes after the verb.',
     },
     {
       id: 'ch45-ex-57',
@@ -1249,7 +1431,8 @@ export const chapter045: ChapterDefinition = {
         { id: 's4', text: 'es' },
         { id: 's5', text: 'kalt.' },
       ],
-      explanation: 'sonst fills position 1, so the verb wird follows immediately, and the subject es comes after the verb.',
+      explanation:
+        'sonst fills position 1, so the verb wird follows immediately, and the subject es comes after the verb.',
     },
     {
       id: 'ch45-ex-58',
@@ -1267,7 +1450,8 @@ export const chapter045: ChapterDefinition = {
         { id: 's4', text: 'wir' },
         { id: 's5', text: 'zu spät.' },
       ],
-      explanation: 'sonst fills position 1, so the verb kommen follows immediately, and the subject wir comes after the verb.',
+      explanation:
+        'sonst fills position 1, so the verb kommen follows immediately, and the subject wir comes after the verb.',
     },
     {
       id: 'ch45-ex-59',
@@ -1285,7 +1469,8 @@ export const chapter045: ChapterDefinition = {
         { id: 's4', text: 'wir' },
         { id: 's5', text: 'zur Arbeit.' },
       ],
-      explanation: 'Dann fills position 1, so the verb fahren follows immediately, and the subject wir comes after the verb.',
+      explanation:
+        'Dann fills position 1, so the verb fahren follows immediately, and the subject wir comes after the verb.',
     },
     {
       id: 'ch45-ex-60',
@@ -1303,7 +1488,8 @@ export const chapter045: ChapterDefinition = {
         { id: 's4', text: 'ich' },
         { id: 's5', text: 'vorbei.' },
       ],
-      explanation: 'dann fills position 1, so the verb komme follows immediately, and the subject ich comes after the verb.',
+      explanation:
+        'dann fills position 1, so the verb komme follows immediately, and the subject ich comes after the verb.',
     },
     {
       id: 'ch45-ex-61',
@@ -1321,7 +1507,8 @@ export const chapter045: ChapterDefinition = {
         { id: 's4', text: 'wir' },
         { id: 's5', text: 'zum Bahnhof.' },
       ],
-      explanation: 'Danach fills position 1, so the verb fahren follows immediately, and the subject wir comes after the verb.',
+      explanation:
+        'Danach fills position 1, so the verb fahren follows immediately, and the subject wir comes after the verb.',
     },
     {
       id: 'ch45-ex-62',
@@ -1339,7 +1526,8 @@ export const chapter045: ChapterDefinition = {
         { id: 's4', text: 'er' },
         { id: 's5', text: 'sich an.' },
       ],
-      explanation: 'Danach fills position 1, so the verb zieht follows immediately, and the subject er comes after the verb.',
+      explanation:
+        'Danach fills position 1, so the verb zieht follows immediately, and the subject er comes after the verb.',
     },
     {
       id: 'ch45-ex-63',
@@ -1357,7 +1545,8 @@ export const chapter045: ChapterDefinition = {
         { id: 's4', text: 'ich' },
         { id: 's5', text: 'jetzt etwas.' },
       ],
-      explanation: 'Deshalb fills position 1, so the verb koche follows immediately, and the subject ich comes after the verb.',
+      explanation:
+        'Deshalb fills position 1, so the verb koche follows immediately, and the subject ich comes after the verb.',
     },
     {
       id: 'ch45-ex-64',
@@ -1375,7 +1564,8 @@ export const chapter045: ChapterDefinition = {
         { id: 's4', text: 'du' },
         { id: 's5', text: 'den Text nicht.' },
       ],
-      explanation: 'sonst fills position 1, so the verb verstehst follows immediately, and the subject du comes after the verb.',
+      explanation:
+        'sonst fills position 1, so the verb verstehst follows immediately, and the subject du comes after the verb.',
     },
     {
       id: 'ch45-ex-65',
@@ -1393,7 +1583,8 @@ export const chapter045: ChapterDefinition = {
         { id: 's4', text: 'wir' },
         { id: 's5', text: 'ins Kino.' },
       ],
-      explanation: 'Dann fills position 1, so the verb gehen follows immediately, and the subject wir comes after the verb.',
+      explanation:
+        'Dann fills position 1, so the verb gehen follows immediately, and the subject wir comes after the verb.',
     },
     {
       id: 'ch45-ex-66',
@@ -1411,7 +1602,8 @@ export const chapter045: ChapterDefinition = {
         { id: 's4', text: 'sie' },
         { id: 's5', text: 'schon gut Deutsch.' },
       ],
-      explanation: 'Deshalb fills position 1, so the verb spricht follows immediately, and the subject sie comes after the verb.',
+      explanation:
+        'Deshalb fills position 1, so the verb spricht follows immediately, and the subject sie comes after the verb.',
     },
     {
       id: 'ch45-ex-67',
@@ -1420,12 +1612,14 @@ export const chapter045: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'production',
       grammarFocus: ['deshalb', 'inversion', 'word-order', 'error-correction'],
-      instruction: 'Find the token that breaks the connector-verb-subject word order, and correct it.',
+      instruction:
+        'Find the token that breaks the connector-verb-subject word order, and correct it.',
       prompt: 'Ein Lerner erklärt das Wetter. Etwas stimmt nicht.',
       tokens: ['Deshalb', 'wir', 'bleiben', 'zu', 'Hause.'],
       errorTokenIndex: 1,
       correction: 'Deshalb bleiben wir zu Hause.',
-      explanation: 'deshalb occupies position 1, so the verb bleiben must come directly after it, before the subject wir.',
+      explanation:
+        'deshalb occupies position 1, so the verb bleiben must come directly after it, before the subject wir.',
     },
     {
       id: 'ch45-ex-68',
@@ -1434,12 +1628,14 @@ export const chapter045: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'production',
       grammarFocus: ['sonst', 'inversion', 'word-order', 'error-correction'],
-      instruction: 'Find the token that breaks the connector-verb-subject word order, and correct it.',
+      instruction:
+        'Find the token that breaks the connector-verb-subject word order, and correct it.',
       prompt: 'Ein Lerner warnt einen Freund. Etwas stimmt nicht.',
       tokens: ['Sonst', 'du', 'verpasst', 'den', 'Bus.'],
       errorTokenIndex: 1,
       correction: 'Sonst verpasst du den Bus.',
-      explanation: 'sonst occupies position 1, so the verb verpasst must come directly after it, before the subject du.',
+      explanation:
+        'sonst occupies position 1, so the verb verpasst must come directly after it, before the subject du.',
     },
     {
       id: 'ch45-ex-69',
@@ -1448,12 +1644,14 @@ export const chapter045: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'production',
       grammarFocus: ['dann', 'inversion', 'word-order', 'error-correction'],
-      instruction: 'Find the token that breaks the connector-verb-subject word order, and correct it.',
+      instruction:
+        'Find the token that breaks the connector-verb-subject word order, and correct it.',
       prompt: 'Ein Lerner beschreibt einen Abend. Etwas stimmt nicht.',
       tokens: ['Dann', 'wir', 'gehen', 'ins', 'Kino.'],
       errorTokenIndex: 1,
       correction: 'Dann gehen wir ins Kino.',
-      explanation: 'dann occupies position 1, so the verb gehen must come directly after it, before the subject wir.',
+      explanation:
+        'dann occupies position 1, so the verb gehen must come directly after it, before the subject wir.',
     },
     {
       id: 'ch45-ex-70',
@@ -1462,12 +1660,14 @@ export const chapter045: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'production',
       grammarFocus: ['danach', 'inversion', 'word-order', 'error-correction'],
-      instruction: 'Find the token that breaks the connector-verb-subject word order, and correct it.',
+      instruction:
+        'Find the token that breaks the connector-verb-subject word order, and correct it.',
       prompt: 'Ein Lerner beschreibt das Kochen. Etwas stimmt nicht.',
       tokens: ['Danach', 'wir', 'räumen', 'die', 'Küche', 'auf.'],
       errorTokenIndex: 1,
       correction: 'Danach räumen wir die Küche auf.',
-      explanation: 'danach occupies position 1, so the verb räumen must come directly after it, before the subject wir.',
+      explanation:
+        'danach occupies position 1, so the verb räumen must come directly after it, before the subject wir.',
     },
     {
       id: 'ch45-ex-71',
@@ -1476,12 +1676,14 @@ export const chapter045: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'production',
       grammarFocus: ['deshalb', 'inversion', 'word-order', 'error-correction'],
-      instruction: 'Find the token that breaks the connector-verb-subject word order, and correct it.',
+      instruction:
+        'Find the token that breaks the connector-verb-subject word order, and correct it.',
       prompt: 'Ein Lerner erklärt, warum er müde ist. Etwas stimmt nicht.',
       tokens: ['Deshalb', 'ich', 'bin', 'sehr', 'müde.'],
       errorTokenIndex: 1,
       correction: 'Deshalb bin ich sehr müde.',
-      explanation: 'deshalb occupies position 1, so the verb bin must come directly after it, before the subject ich.',
+      explanation:
+        'deshalb occupies position 1, so the verb bin must come directly after it, before the subject ich.',
     },
     {
       id: 'ch45-ex-72',
@@ -1490,12 +1692,14 @@ export const chapter045: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['sonst', 'inversion', 'word-order', 'error-correction'],
-      instruction: 'Find the token that breaks the connector-verb-subject word order, and correct it.',
+      instruction:
+        'Find the token that breaks the connector-verb-subject word order, and correct it.',
       prompt: 'Ein Lerner warnt eine Gruppe. Etwas stimmt nicht.',
       tokens: ['Sonst', 'ihr', 'kommt', 'zu', 'spät.'],
       errorTokenIndex: 1,
       correction: 'Sonst kommt ihr zu spät.',
-      explanation: 'sonst occupies position 1, so the verb kommt must come directly after it, before the subject ihr.',
+      explanation:
+        'sonst occupies position 1, so the verb kommt must come directly after it, before the subject ihr.',
     },
     {
       id: 'ch45-ex-73',
@@ -1504,12 +1708,14 @@ export const chapter045: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['dann', 'inversion', 'word-order', 'error-correction'],
-      instruction: 'Find the token that breaks the connector-verb-subject word order, and correct it.',
+      instruction:
+        'Find the token that breaks the connector-verb-subject word order, and correct it.',
       prompt: 'Ein Lerner beschreibt die Pläne einer Freundin. Etwas stimmt nicht.',
       tokens: ['Dann', 'sie', 'trifft', 'ihre', 'Freunde.'],
       errorTokenIndex: 1,
       correction: 'Dann trifft sie ihre Freunde.',
-      explanation: 'dann occupies position 1, so the verb trifft must come directly after it, before the subject sie.',
+      explanation:
+        'dann occupies position 1, so the verb trifft must come directly after it, before the subject sie.',
     },
     {
       id: 'ch45-ex-74',
@@ -1518,12 +1724,14 @@ export const chapter045: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['danach', 'inversion', 'word-order', 'error-correction'],
-      instruction: 'Find the token that breaks the connector-verb-subject word order, and correct it.',
+      instruction:
+        'Find the token that breaks the connector-verb-subject word order, and correct it.',
       prompt: 'Ein Lerner beschreibt einen Morgen. Etwas stimmt nicht.',
       tokens: ['Danach', 'er', 'zieht', 'sich', 'an.'],
       errorTokenIndex: 1,
       correction: 'Danach zieht er sich an.',
-      explanation: 'danach occupies position 1, so the verb zieht must come directly after it, before the subject er.',
+      explanation:
+        'danach occupies position 1, so the verb zieht must come directly after it, before the subject er.',
     },
     {
       id: 'ch45-ex-75',
@@ -1532,12 +1740,14 @@ export const chapter045: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['deshalb', 'inversion', 'word-order', 'error-correction'],
-      instruction: 'Find the token that breaks the connector-verb-subject word order, and correct it.',
+      instruction:
+        'Find the token that breaks the connector-verb-subject word order, and correct it.',
       prompt: 'Ein Lerner beschreibt Kinder im Kinderzimmer. Etwas stimmt nicht.',
       tokens: ['Deshalb', 'die', 'Kinder', 'schlafen', 'schon.'],
       errorTokenIndex: 1,
       correction: 'Deshalb schlafen die Kinder schon.',
-      explanation: 'deshalb occupies position 1, so the verb schlafen must come directly after it, before the subject die Kinder.',
+      explanation:
+        'deshalb occupies position 1, so the verb schlafen must come directly after it, before the subject die Kinder.',
     },
     {
       id: 'ch45-ex-76',
@@ -1546,12 +1756,14 @@ export const chapter045: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['sonst', 'inversion', 'word-order', 'error-correction'],
-      instruction: 'Find the token that breaks the connector-verb-subject word order, and correct it.',
+      instruction:
+        'Find the token that breaks the connector-verb-subject word order, and correct it.',
       prompt: 'Ein Lerner warnt vor kaltem Essen. Etwas stimmt nicht.',
       tokens: ['Sonst', 'das', 'Essen', 'wird', 'kalt.'],
       errorTokenIndex: 1,
       correction: 'Sonst wird das Essen kalt.',
-      explanation: 'sonst occupies position 1, so the verb wird must come directly after it, before the subject das Essen.',
+      explanation:
+        'sonst occupies position 1, so the verb wird must come directly after it, before the subject das Essen.',
     },
     {
       id: 'ch45-ex-77',
@@ -1565,7 +1777,8 @@ export const chapter045: ChapterDefinition = {
       templateParts: ['Es ist kalt. Deshalb ', ' wir einen Mantel.'],
       slots: [{ id: 'slot1', correctWord: 'tragen' }],
       wordBank: ['tragen', 'trägt', 'trage', 'trägst'],
-      explanation: 'wir takes the ending -en: tragen. The verb comes right after deshalb, before the subject wir.',
+      explanation:
+        'wir takes the ending -en: tragen. The verb comes right after deshalb, before the subject wir.',
     },
     {
       id: 'ch45-ex-78',
@@ -1579,7 +1792,8 @@ export const chapter045: ChapterDefinition = {
       templateParts: ['Wir kochen. Danach ', ' wir die Küche auf.'],
       slots: [{ id: 'slot1', correctWord: 'räumen' }],
       wordBank: ['räumen', 'räumt', 'räume', 'räumst'],
-      explanation: 'wir takes the ending -en: räumen. The verb comes right after danach, before the subject wir.',
+      explanation:
+        'wir takes the ending -en: räumen. The verb comes right after danach, before the subject wir.',
     },
     {
       id: 'ch45-ex-79',
@@ -1593,7 +1807,8 @@ export const chapter045: ChapterDefinition = {
       templateParts: ['Lern mehr, sonst ', ' du die Prüfung nicht.'],
       slots: [{ id: 'slot1', correctWord: 'bestehst' }],
       wordBank: ['bestehst', 'besteht', 'bestehe', 'bestehen'],
-      explanation: 'du takes the ending -st: bestehst. The verb comes right after sonst, before the subject du.',
+      explanation:
+        'du takes the ending -st: bestehst. The verb comes right after sonst, before the subject du.',
     },
     {
       id: 'ch45-ex-80',
@@ -1610,7 +1825,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'p3', left: 'dann', right: 'then / in that case' },
         { id: 'p4', left: 'danach', right: 'after that (strictly time)' },
       ],
-      explanation: 'deshalb links cause and result; sonst warns of a consequence; dann can be sequential or conditional; danach is strictly temporal.',
+      explanation:
+        'deshalb links cause and result; sonst warns of a consequence; dann can be sequential or conditional; danach is strictly temporal.',
     },
     {
       id: 'ch45-ex-81',
@@ -1627,7 +1843,8 @@ export const chapter045: ChapterDefinition = {
         { id: 'p3', left: 'Wir essen. Dann', right: 'gehen wir spazieren.' },
         { id: 'p4', left: 'Wir duschen. Danach', right: 'frühstücken wir.' },
       ],
-      explanation: 'In every case the connector fills position 1, so the finite verb follows immediately, before the subject.',
+      explanation:
+        'In every case the connector fills position 1, so the finite verb follows immediately, before the subject.',
     },
   ],
 };

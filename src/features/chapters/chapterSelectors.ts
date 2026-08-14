@@ -44,6 +44,8 @@ export interface ChapterCardModel {
   estimatedMinutes: number;
   bookmarked: boolean;
   reviewDue: boolean;
+  /** Grammar topics the chapter covers, used by catalogue search. */
+  tags: string[];
 }
 
 function dueChapterNumbers(state: ProgressState, now: Date): Set<number> {
@@ -72,7 +74,24 @@ export function buildChapterCard(
     estimatedMinutes: entry.estimatedMinutes,
     bookmarked: progress.bookmarked,
     reviewDue: due.has(entry.number),
+    tags: entry.tags,
   };
+}
+
+/**
+ * Whether a chapter matches a catalogue search. Matches the title, the exact
+ * level or chapter number, and any grammar tag — tags are what let a search for
+ * "dative" or "Konjunktiv" find chapters whose titles never say the word.
+ */
+export function matchesQuery(card: ChapterCardModel, query: string): boolean {
+  const needle = query.trim().toLowerCase();
+  if (needle === '') return true;
+  return (
+    card.title.toLowerCase().includes(needle) ||
+    card.level.toLowerCase() === needle ||
+    String(card.number) === needle ||
+    card.tags.some((tag) => tag.toLowerCase().includes(needle))
+  );
 }
 
 export function selectChapterCards(
@@ -201,6 +220,8 @@ export interface CourseCheckpoint {
  * once every chapter in its range has content (see `selectAvailableCheckpoints`).
  */
 export const COURSE_CHECKPOINTS: readonly CourseCheckpoint[] = [
+  { id: 'checkpoint-1-10', title: 'Chapters 1-10', from: 1, to: 10 },
+  { id: 'checkpoint-11-20', title: 'Chapters 11-20', from: 11, to: 20 },
   { id: 'checkpoint-21-30', title: 'Chapters 21-30', from: 21, to: 30 },
   { id: 'checkpoint-31-40', title: 'Chapters 31-40', from: 31, to: 40 },
   { id: 'checkpoint-41-50', title: 'Chapters 41-50', from: 41, to: 50 },
@@ -240,6 +261,7 @@ export function selectNextChapter(chapterNumber: number): ChapterCardModel | und
     status: 'notStarted',
     bestScorePercent: 0,
     estimatedMinutes: next.estimatedMinutes,
+    tags: next.tags,
     bookmarked: false,
     reviewDue: false,
   };

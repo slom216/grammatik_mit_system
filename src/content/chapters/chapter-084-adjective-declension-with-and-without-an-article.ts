@@ -100,33 +100,84 @@ export const chapter084: ChapterDefinition = {
     tables: [
       {
         id: 'ch84-table-01',
-        title: 'Weak Declension — after der-words (der, die, das, dieser, jeder, welcher...)',
+        title:
+          'Weak Declension — after der-words (der, die, das, dieser, jeder, welcher...)',
         columns: ['Gender / Number', 'Nominative', 'Accusative', 'Dative', 'Genitive'],
         columnCases: [null, 'nominative', 'accusative', 'dative', 'genitive'],
         rows: [
-          ['Masculine', 'der gute Mann', 'den guten Mann', 'dem guten Mann', 'des guten Mannes'],
-          ['Feminine', 'die gute Frau', 'die gute Frau', 'der guten Frau', 'der guten Frau'],
-          ['Neuter', 'das gute Kind', 'das gute Kind', 'dem guten Kind', 'des guten Kindes'],
-          ['Plural', 'die guten Kinder', 'die guten Kinder', 'den guten Kindern', 'der guten Kinder'],
+          [
+            'Masculine',
+            'der gute Mann',
+            'den guten Mann',
+            'dem guten Mann',
+            'des guten Mannes',
+          ],
+          [
+            'Feminine',
+            'die gute Frau',
+            'die gute Frau',
+            'der guten Frau',
+            'der guten Frau',
+          ],
+          [
+            'Neuter',
+            'das gute Kind',
+            'das gute Kind',
+            'dem guten Kind',
+            'des guten Kindes',
+          ],
+          [
+            'Plural',
+            'die guten Kinder',
+            'die guten Kinder',
+            'den guten Kindern',
+            'der guten Kinder',
+          ],
         ],
         note: 'Weak declension has only two endings in the whole table: -e in the nominative singular (all genders) and the feminine/neuter accusative singular; -en everywhere else.',
       },
       {
         id: 'ch84-table-02',
-        title: 'Mixed Declension — after ein-words (ein, kein, mein, dein, sein, ihr, unser, euer, Ihr)',
+        title:
+          'Mixed Declension — after ein-words (ein, kein, mein, dein, sein, ihr, unser, euer, Ihr)',
         columns: ['Gender / Number', 'Nominative', 'Accusative', 'Dative', 'Genitive'],
         columnCases: [null, 'nominative', 'accusative', 'dative', 'genitive'],
         rows: [
-          ['Masculine', 'ein guter Mann', 'einen guten Mann', 'einem guten Mann', 'eines guten Mannes'],
-          ['Feminine', 'eine gute Frau', 'eine gute Frau', 'einer guten Frau', 'einer guten Frau'],
-          ['Neuter', 'ein gutes Kind', 'ein gutes Kind', 'einem guten Kind', 'eines guten Kindes'],
-          ['Plural (kein/mein...)', 'keine guten Kinder', 'keine guten Kinder', 'keinen guten Kindern', 'keiner guten Kinder'],
+          [
+            'Masculine',
+            'ein guter Mann',
+            'einen guten Mann',
+            'einem guten Mann',
+            'eines guten Mannes',
+          ],
+          [
+            'Feminine',
+            'eine gute Frau',
+            'eine gute Frau',
+            'einer guten Frau',
+            'einer guten Frau',
+          ],
+          [
+            'Neuter',
+            'ein gutes Kind',
+            'ein gutes Kind',
+            'einem guten Kind',
+            'eines guten Kindes',
+          ],
+          [
+            'Plural (kein/mein...)',
+            'keine guten Kinder',
+            'keine guten Kinder',
+            'keinen guten Kindern',
+            'keiner guten Kinder',
+          ],
         ],
         note: 'Mixed declension matches weak declension everywhere except three slots where the ein-word itself carries no ending — masculine nominative, neuter nominative, neuter accusative — where the adjective borrows the strong ending instead: guter, gutes, gutes.',
       },
       {
         id: 'ch84-table-03',
-        title: 'Strong Declension — no article, or after undeclined quantifiers (viele, wenige, einige, mehrere, ein paar, zwei...)',
+        title:
+          'Strong Declension — no article, or after undeclined quantifiers (viele, wenige, einige, mehrere, ein paar, zwei...)',
         columns: ['Gender / Number', 'Nominative', 'Accusative', 'Dative', 'Genitive'],
         columnCases: [null, 'nominative', 'accusative', 'dative', 'genitive'],
         rows: [
@@ -142,12 +193,32 @@ export const chapter084: ChapterDefinition = {
         title: 'Quick Reference: Choosing the Pattern',
         columns: ['Situation', 'Pattern', 'Example'],
         rows: [
-          ['der-word before the noun (der, die, das, dieser, jeder, welcher...)', 'Weak', 'der gute Wein'],
-          ['ein-word, in masc. nom. / neut. nom. / neut. acc.', 'Mixed — strong ending on the adjective', 'ein guter Wein'],
-          ['ein-word, everywhere else', 'Mixed — weak ending on the adjective', 'einen guten Wein'],
+          [
+            'der-word before the noun (der, die, das, dieser, jeder, welcher...)',
+            'Weak',
+            'der gute Wein',
+          ],
+          [
+            'ein-word, in masc. nom. / neut. nom. / neut. acc.',
+            'Mixed — strong ending on the adjective',
+            'ein guter Wein',
+          ],
+          [
+            'ein-word, everywhere else',
+            'Mixed — weak ending on the adjective',
+            'einen guten Wein',
+          ],
           ['No article at all', 'Strong', 'guter Wein'],
-          ['After viele, wenige, einige, mehrere, ein paar, numbers', 'Strong', 'viele gute Weine'],
-          ['After alle, beide, sämtliche (these decline like der-words)', 'Weak', 'alle guten Weine'],
+          [
+            'After viele, wenige, einige, mehrere, ein paar, numbers',
+            'Strong',
+            'viele gute Weine',
+          ],
+          [
+            'After alle, beide, sämtliche (these decline like der-words)',
+            'Weak',
+            'alle guten Weine',
+          ],
         ],
         note: 'alle, beide, and sämtliche are the one trap in this table: they look like quantifiers but grammatically behave like der-words, so the adjective after them stays weak.',
       },
@@ -157,117 +228,137 @@ export const chapter084: ChapterDefinition = {
         german: 'Der gute Wein schmeckt hervorragend.',
         english: 'The good wine tastes excellent.',
         highlight: ['Der', 'gute'],
-        explanation: 'Weak declension: der already shows masculine nominative, so the adjective needs only -e.',
+        explanation:
+          'Weak declension: der already shows masculine nominative, so the adjective needs only -e.',
       },
       {
         german: 'Das ist der Duft des guten Weines.',
         english: 'That is the aroma of the good wine.',
         highlight: ['des', 'guten'],
-        explanation: 'Weak genitive: after des the adjective takes -en, as in every case except the nominative and feminine/neuter accusative singular.',
+        explanation:
+          'Weak genitive: after des the adjective takes -en, as in every case except the nominative and feminine/neuter accusative singular.',
       },
       {
         german: 'Ein guter Wein muss nicht teuer sein.',
         english: 'A good wine does not have to be expensive.',
         highlight: ['Ein', 'guter'],
-        explanation: 'Mixed declension: ein itself carries no masculine marking, so the adjective takes the strong ending -er.',
+        explanation:
+          'Mixed declension: ein itself carries no masculine marking, so the adjective takes the strong ending -er.',
       },
       {
         german: 'Ich kaufe einen guten Wein.',
         english: 'I am buying a good wine.',
         highlight: ['einen', 'guten'],
-        explanation: 'Mixed accusative: einen already marks masculine accusative clearly, so the adjective reverts to the ordinary weak ending -en.',
+        explanation:
+          'Mixed accusative: einen already marks masculine accusative clearly, so the adjective reverts to the ordinary weak ending -en.',
       },
       {
         german: 'Wir haben kein gutes Bier mehr.',
         english: 'We do not have any good beer left.',
         highlight: ['kein', 'gutes'],
-        explanation: 'Neuter accusative matches neuter nominative in form, so kein is again silent about gender and the adjective takes the strong ending -es.',
+        explanation:
+          'Neuter accusative matches neuter nominative in form, so kein is again silent about gender and the adjective takes the strong ending -es.',
       },
       {
         german: 'Guter Wein muss reifen.',
         english: 'Good wine has to age.',
         highlight: ['Guter'],
-        explanation: 'Strong declension: with no article at all, the adjective alone mirrors the der-word ending, -er.',
+        explanation:
+          'Strong declension: with no article at all, the adjective alone mirrors the der-word ending, -er.',
       },
       {
         german: 'Ich trinke gern kalte Milch.',
         english: 'I like to drink cold milk.',
         highlight: ['kalte'],
-        explanation: 'Strong accusative feminine: with no article, the adjective mirrors die, taking -e.',
+        explanation:
+          'Strong accusative feminine: with no article, the adjective mirrors die, taking -e.',
       },
       {
         german: 'Er kam nach Hause mit frischem Obst.',
         english: 'He came home with fresh fruit.',
         highlight: ['frischem'],
-        explanation: 'Strong dative neuter: with no article, the adjective mirrors dem, taking -em.',
+        explanation:
+          'Strong dative neuter: with no article, the adjective mirrors dem, taking -em.',
       },
       {
         german: 'Trotz starken Regens gingen wir spazieren.',
         english: 'Despite heavy rain, we went for a walk.',
         highlight: ['starken', 'Regens'],
-        explanation: 'The genitive-exception: masculine genitive singular strong adjectives take -en, not -es, because Regens already shows the genitive ending.',
+        explanation:
+          'The genitive-exception: masculine genitive singular strong adjectives take -en, not -es, because Regens already shows the genitive ending.',
       },
       {
         german: 'Viele gute Bücher stehen im Regal.',
         english: 'Many good books are on the shelf.',
         highlight: ['Viele', 'gute'],
-        explanation: 'viele is an undeclined quantifier, not an article, so the following adjective takes the strong nominative plural ending -e.',
+        explanation:
+          'viele is an undeclined quantifier, not an article, so the following adjective takes the strong nominative plural ending -e.',
       },
       {
         german: 'Ich feiere meinen Geburtstag mit vielen guten Freunden.',
         english: 'I am celebrating my birthday with many good friends.',
         highlight: ['vielen', 'guten'],
-        explanation: 'Strong dative plural: both viele and the adjective take -en, mirroring den.',
+        explanation:
+          'Strong dative plural: both viele and the adjective take -en, mirroring den.',
       },
       {
         german: 'Trotz vieler guter Argumente blieb er skeptisch.',
         english: 'Despite many good arguments, he remained skeptical.',
         highlight: ['vieler', 'guter'],
-        explanation: 'Strong genitive plural: both the quantifier and the adjective take -er, mirroring der — this slot has no -en exception, only the singular does.',
+        explanation:
+          'Strong genitive plural: both the quantifier and the adjective take -er, mirroring der — this slot has no -en exception, only the singular does.',
       },
       {
         german: 'Ein paar frische Eier liegen im Korb.',
         english: 'A couple of fresh eggs are in the basket.',
         highlight: ['paar', 'frische'],
-        explanation: 'ein paar never changes form, so the adjective alone shows the strong nominative plural ending -e.',
+        explanation:
+          'ein paar never changes form, so the adjective alone shows the strong nominative plural ending -e.',
       },
       {
         german: 'Alle guten Freunde kamen zur Party.',
         english: 'All good friends came to the party.',
         highlight: ['Alle', 'guten'],
-        explanation: 'alle behaves like a der-word, so the following adjective takes the weak plural ending -en, not the strong -e.',
+        explanation:
+          'alle behaves like a der-word, so the following adjective takes the weak plural ending -en, not the strong -e.',
       },
     ],
     commonMistakes: [
       {
         incorrect: 'Ein gut Mann steht vor der Tür.',
         correct: 'Ein guter Mann steht vor der Tür.',
-        explanation: 'ein carries no masculine marking in the nominative, so the adjective must supply it itself with the strong ending -er.',
+        explanation:
+          'ein carries no masculine marking in the nominative, so the adjective must supply it itself with the strong ending -er.',
       },
       {
         incorrect: 'Der guter Mann kommt gleich.',
         correct: 'Der gute Mann kommt gleich.',
-        explanation: 'After the definite article der, weak declension applies, and the nominative singular ending is the minimal -e, not the strong -er.',
+        explanation:
+          'After the definite article der, weak declension applies, and the nominative singular ending is the minimal -e, not the strong -er.',
       },
       {
         incorrect: 'Trotz gutes Weines blieben wir noch.',
         correct: 'Trotz guten Weines blieben wir noch.',
-        explanation: 'The masculine/neuter genitive singular of strong declension takes -en, not the expected -es, because the noun already carries the genitive ending.',
+        explanation:
+          'The masculine/neuter genitive singular of strong declension takes -en, not the expected -es, because the noun already carries the genitive ending.',
       },
       {
         incorrect: 'Viele guten Bücher stehen im Regal.',
         correct: 'Viele gute Bücher stehen im Regal.',
-        explanation: 'viele is not a der-word or ein-word — it is an undeclined quantifier that triggers strong endings, so the nominative plural ending here is -e, not -en.',
+        explanation:
+          'viele is not a der-word or ein-word — it is an undeclined quantifier that triggers strong endings, so the nominative plural ending here is -e, not -en.',
       },
       {
         incorrect: 'Ich kaufe einen guter Wein.',
         correct: 'Ich kaufe einen guten Wein.',
-        explanation: 'einen already marks masculine accusative clearly, so mixed declension reverts to the ordinary weak ending -en, not the strong -er.',
+        explanation:
+          'einen already marks masculine accusative clearly, so mixed declension reverts to the ordinary weak ending -en, not the strong -er.',
       },
       {
         incorrect: 'Alle gute Freunde kamen zur Party.',
         correct: 'Alle guten Freunde kamen zur Party.',
-        explanation: 'alle declines like a der-word, so the adjective that follows takes the weak ending -en, not the strong ending -e that would be used after an undeclined quantifier.',
+        explanation:
+          'alle declines like a der-word, so the adjective that follows takes the weak ending -en, not the strong ending -e that would be used after an undeclined quantifier.',
       },
     ],
     remember: [
@@ -301,7 +392,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'd', text: 'es' },
       ],
       correctOptionId: 'a',
-      explanation: 'After the definite article der, weak declension needs only the minimal ending -e in the masculine nominative: der gute Wein.',
+      explanation:
+        'After the definite article der, weak declension needs only the minimal ending -e in the masculine nominative: der gute Wein.',
     },
     {
       id: 'ch84-ex-02',
@@ -319,7 +411,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'd', text: 'es' },
       ],
       correctOptionId: 'b',
-      explanation: 'Weak declension after des is -en in the genitive, as in every case except the nominative singular and the feminine/neuter accusative singular.',
+      explanation:
+        'Weak declension after des is -en in the genitive, as in every case except the nominative singular and the feminine/neuter accusative singular.',
     },
     {
       id: 'ch84-ex-03',
@@ -337,7 +430,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'd', text: 'es' },
       ],
       correctOptionId: 'c',
-      explanation: 'ein itself carries no ending in the masculine nominative, so the adjective must show the case and gender itself: ein guter Mann.',
+      explanation:
+        'ein itself carries no ending in the masculine nominative, so the adjective must show the case and gender itself: ein guter Mann.',
     },
     {
       id: 'ch84-ex-04',
@@ -355,7 +449,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'd', text: 'es' },
       ],
       correctOptionId: 'd',
-      explanation: 'ein carries no ending in the neuter nominative either, so the adjective takes the strong ending -es: ein gutes Kind.',
+      explanation:
+        'ein carries no ending in the neuter nominative either, so the adjective takes the strong ending -es: ein gutes Kind.',
     },
     {
       id: 'ch84-ex-05',
@@ -373,7 +468,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'd', text: 'es' },
       ],
       correctOptionId: 'b',
-      explanation: 'einen already marks masculine accusative clearly, so the adjective takes the ordinary weak ending -en, not the strong -er.',
+      explanation:
+        'einen already marks masculine accusative clearly, so the adjective takes the ordinary weak ending -en, not the strong -er.',
     },
     {
       id: 'ch84-ex-06',
@@ -409,7 +505,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'd', text: 'em' },
       ],
       correctOptionId: 'c',
-      explanation: 'With no article, strong dative feminine mirrors der: mit frischer Milch.',
+      explanation:
+        'With no article, strong dative feminine mirrors der: mit frischer Milch.',
     },
     {
       id: 'ch84-ex-08',
@@ -427,7 +524,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'd', text: 'en' },
       ],
       correctOptionId: 'd',
-      explanation: 'The masculine genitive singular of strong declension takes -en, not the expected -es, because Regens already shows the genitive ending.',
+      explanation:
+        'The masculine genitive singular of strong declension takes -en, not the expected -es, because Regens already shows the genitive ending.',
     },
     {
       id: 'ch84-ex-09',
@@ -445,7 +543,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'd', text: 'es' },
       ],
       correctOptionId: 'a',
-      explanation: 'viele is an undeclined quantifier, not an article, so the adjective takes the strong nominative plural ending -e: viele gute Bücher.',
+      explanation:
+        'viele is an undeclined quantifier, not an article, so the adjective takes the strong nominative plural ending -e: viele gute Bücher.',
     },
     {
       id: 'ch84-ex-10',
@@ -463,7 +562,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'd', text: 'es' },
       ],
       correctOptionId: 'b',
-      explanation: 'Strong dative plural mirrors den, so the ending is -en: mit vielen guten Freunden.',
+      explanation:
+        'Strong dative plural mirrors den, so the ending is -en: mit vielen guten Freunden.',
     },
     {
       id: 'ch84-ex-11',
@@ -481,7 +581,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'd', text: 'es' },
       ],
       correctOptionId: 'b',
-      explanation: 'alle declines like a der-word, so the following adjective takes the weak plural ending -en, not the strong -e.',
+      explanation:
+        'alle declines like a der-word, so the following adjective takes the weak plural ending -en, not the strong -e.',
     },
     {
       id: 'ch84-ex-12',
@@ -499,7 +600,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'd', text: 'None — adjectives never take endings here' },
       ],
       correctOptionId: 'a',
-      explanation: 'With no article at all, the adjective must carry the full marking itself: strong declension.',
+      explanation:
+        'With no article at all, the adjective must carry the full marking itself: strong declension.',
     },
     {
       id: 'ch84-ex-13',
@@ -517,7 +619,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'd', text: 'Trotz guter Weines blieben wir noch.' },
       ],
       correctOptionId: 'a',
-      explanation: 'The masculine genitive singular exception in strong declension requires -en, not -es, -e, or -er: trotz guten Weines.',
+      explanation:
+        'The masculine genitive singular exception in strong declension requires -en, not -es, -e, or -er: trotz guten Weines.',
     },
     {
       id: 'ch84-ex-14',
@@ -535,7 +638,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'd', text: 'guten ... kleines' },
       ],
       correctOptionId: 'a',
-      explanation: 'einen (masc. accusative) and einem (neuter dative) both show case and gender clearly, so mixed declension gives the ordinary weak ending -en in both blanks.',
+      explanation:
+        'einen (masc. accusative) and einem (neuter dative) both show case and gender clearly, so mixed declension gives the ordinary weak ending -en in both blanks.',
     },
     {
       id: 'ch84-ex-15',
@@ -553,7 +657,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'd', text: 'es' },
       ],
       correctOptionId: 'a',
-      explanation: 'ein paar never changes form, so the following adjective alone takes the strong plural ending -e: frische Eier.',
+      explanation:
+        'ein paar never changes form, so the following adjective alone takes the strong plural ending -e: frische Eier.',
     },
     {
       id: 'ch84-ex-16',
@@ -583,7 +688,8 @@ export const chapter084: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'e / en / er / es',
       maxLength: 5,
-      explanation: 'Weak declension in the dative is always -en, in every gender: der guten Freundin.',
+      explanation:
+        'Weak declension in the dative is always -en, in every gender: der guten Freundin.',
     },
     {
       id: 'ch84-ex-18',
@@ -598,7 +704,8 @@ export const chapter084: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'e / en / er / es',
       maxLength: 5,
-      explanation: 'ein is silent about gender in the masculine nominative, so the adjective takes the strong ending -er.',
+      explanation:
+        'ein is silent about gender in the masculine nominative, so the adjective takes the strong ending -er.',
     },
     {
       id: 'ch84-ex-19',
@@ -613,7 +720,8 @@ export const chapter084: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'e / en / er / es',
       maxLength: 5,
-      explanation: 'Neuter accusative matches neuter nominative in form, so kein is again silent and the adjective takes the strong ending -es.',
+      explanation:
+        'Neuter accusative matches neuter nominative in form, so kein is again silent and the adjective takes the strong ending -es.',
     },
     {
       id: 'ch84-ex-20',
@@ -643,7 +751,8 @@ export const chapter084: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'e / en / er / es',
       maxLength: 5,
-      explanation: 'The masculine genitive singular exception in strong declension is -en, not -es: starken Regens.',
+      explanation:
+        'The masculine genitive singular exception in strong declension is -en, not -es: starken Regens.',
     },
     {
       id: 'ch84-ex-22',
@@ -658,7 +767,8 @@ export const chapter084: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'e / en / er / es',
       maxLength: 5,
-      explanation: 'Strong genitive plural mirrors der, so the ending is -er: vieler guter Argumente — this slot has no -en exception, only the masculine/neuter singular does.',
+      explanation:
+        'Strong genitive plural mirrors der, so the ending is -er: vieler guter Argumente — this slot has no -en exception, only the masculine/neuter singular does.',
     },
     {
       id: 'ch84-ex-23',
@@ -673,7 +783,8 @@ export const chapter084: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'kalte',
       maxLength: 20,
-      explanation: 'With no article, strong accusative feminine mirrors die, taking -e: kalte Milch.',
+      explanation:
+        'With no article, strong accusative feminine mirrors die, taking -e: kalte Milch.',
     },
     {
       id: 'ch84-ex-24',
@@ -688,7 +799,8 @@ export const chapter084: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'guten',
       maxLength: 20,
-      explanation: 'einen already marks masculine accusative, so mixed declension gives the ordinary weak ending -en: einen guten Wein.',
+      explanation:
+        'einen already marks masculine accusative, so mixed declension gives the ordinary weak ending -en: einen guten Wein.',
     },
     {
       id: 'ch84-ex-25',
@@ -703,7 +815,8 @@ export const chapter084: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'gute',
       maxLength: 20,
-      explanation: 'viele triggers strong declension, so the nominative plural ending is -e: viele gute Bücher.',
+      explanation:
+        'viele triggers strong declension, so the nominative plural ending is -e: viele gute Bücher.',
     },
     {
       id: 'ch84-ex-26',
@@ -718,7 +831,8 @@ export const chapter084: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'guten',
       maxLength: 20,
-      explanation: 'Strong dative plural mirrors den, so the ending is -en: mit vielen guten Freunden.',
+      explanation:
+        'Strong dative plural mirrors den, so the ending is -en: mit vielen guten Freunden.',
     },
     {
       id: 'ch84-ex-27',
@@ -727,13 +841,15 @@ export const chapter084: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['mixed-declension', 'error-correction', 'nominative', 'masculine'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Ein gut Mann steht vor der Tür.',
       acceptedAnswers: ['Ein guter Mann steht vor der Tür.'],
       answerMode: 'normalized',
       placeholder: 'Ein guter Mann ...',
       maxLength: 60,
-      explanation: 'ein carries no masculine marking in the nominative, so the adjective needs the strong ending -er: Ein guter Mann.',
+      explanation:
+        'ein carries no masculine marking in the nominative, so the adjective needs the strong ending -er: Ein guter Mann.',
     },
     {
       id: 'ch84-ex-28',
@@ -742,13 +858,15 @@ export const chapter084: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['strong-declension', 'error-correction', 'genitive-exception'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Trotz gutes Weines blieben wir noch.',
       acceptedAnswers: ['Trotz guten Weines blieben wir noch.'],
       answerMode: 'normalized',
       placeholder: 'Trotz guten Weines ...',
       maxLength: 60,
-      explanation: 'The masculine genitive singular exception is -en, not -es: Trotz guten Weines.',
+      explanation:
+        'The masculine genitive singular exception is -en, not -es: Trotz guten Weines.',
     },
     {
       id: 'ch84-ex-29',
@@ -757,13 +875,15 @@ export const chapter084: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['strong-declension', 'error-correction', 'quantifier', 'plural'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Viele guten Bücher stehen im Regal.',
       acceptedAnswers: ['Viele gute Bücher stehen im Regal.'],
       answerMode: 'normalized',
       placeholder: 'Viele gute Bücher ...',
       maxLength: 60,
-      explanation: 'viele is an undeclined quantifier that triggers strong declension, so the nominative plural ending is -e, not -en.',
+      explanation:
+        'viele is an undeclined quantifier that triggers strong declension, so the nominative plural ending is -e, not -en.',
     },
     {
       id: 'ch84-ex-30',
@@ -772,13 +892,15 @@ export const chapter084: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['weak-declension', 'case-transformation', 'genitive', 'masculine'],
-      instruction: 'Change the phrase from the nominative to the genitive, as in the model. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Change the phrase from the nominative to the genitive, as in the model. Capitalisation is checked; no full stop is required.',
       prompt: 'Nominativ: der gute Wein. Genitiv: der Duft ___.',
       acceptedAnswers: ['des guten Weines', 'des guten Weins'],
       answerMode: 'normalized',
       placeholder: 'des guten Weines',
       maxLength: 30,
-      explanation: 'Weak declension gives the genitive adjective ending -en; the noun itself adds -es or -s: des guten Weines / des guten Weins.',
+      explanation:
+        'Weak declension gives the genitive adjective ending -en; the noun itself adds -es or -s: des guten Weines / des guten Weins.',
     },
     {
       id: 'ch84-ex-31',
@@ -796,7 +918,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'd', text: 'es' },
       ],
       correctOptionId: 'a',
-      explanation: 'diese is a der-word, and weak declension in the feminine nominative singular is -e: diese gute Idee.',
+      explanation:
+        'diese is a der-word, and weak declension in the feminine nominative singular is -e: diese gute Idee.',
     },
     {
       id: 'ch84-ex-32',
@@ -814,7 +937,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'd', text: 'None — adjectives never take endings here' },
       ],
       correctOptionId: 'c',
-      explanation: 'meiner is a possessive ein-word, so mixed declension applies — here it happens to look identical to weak, since the ein-word already shows dative feminine clearly.',
+      explanation:
+        'meiner is a possessive ein-word, so mixed declension applies — here it happens to look identical to weak, since the ein-word already shows dative feminine clearly.',
     },
     {
       id: 'ch84-ex-33',
@@ -822,7 +946,12 @@ export const chapter084: ChapterDefinition = {
       order: 33,
       type: 'singleChoice',
       level: 'transfer',
-      grammarFocus: ['decision-process', 'pattern-identification', 'strong-declension', 'quantifier'],
+      grammarFocus: [
+        'decision-process',
+        'pattern-identification',
+        'strong-declension',
+        'quantifier',
+      ],
       instruction: 'Identify which declension pattern applies.',
       prompt: 'Welches Deklinationsmuster gilt in: "nach zwei langen Reisen"?',
       options: [
@@ -832,7 +961,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'd', text: 'None — adjectives never take endings here' },
       ],
       correctOptionId: 'a',
-      explanation: 'zwei is a cardinal number and never inflects, so the adjective after it takes the strong ending, exactly as with no article: zwei langen Reisen mirrors den langen Reisen.',
+      explanation:
+        'zwei is a cardinal number and never inflects, so the adjective after it takes the strong ending, exactly as with no article: zwei langen Reisen mirrors den langen Reisen.',
     },
     {
       id: 'ch84-ex-34',
@@ -840,7 +970,12 @@ export const chapter084: ChapterDefinition = {
       order: 34,
       type: 'singleChoice',
       level: 'transfer',
-      grammarFocus: ['decision-process', 'pattern-identification', 'weak-declension', 'saemtliche'],
+      grammarFocus: [
+        'decision-process',
+        'pattern-identification',
+        'weak-declension',
+        'saemtliche',
+      ],
       instruction: 'Identify which declension pattern applies.',
       prompt: 'Welches Deklinationsmuster gilt in: "sämtliche neuen Regeln"?',
       options: [
@@ -850,7 +985,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'd', text: 'None — adjectives never take endings here' },
       ],
       correctOptionId: 'b',
-      explanation: 'sämtliche declines like a der-word, so the following adjective takes the weak ending, here plural -en: sämtliche neuen Regeln.',
+      explanation:
+        'sämtliche declines like a der-word, so the following adjective takes the weak ending, here plural -en: sämtliche neuen Regeln.',
     },
     {
       id: 'ch84-ex-35',
@@ -868,7 +1004,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'd', text: 'es' },
       ],
       correctOptionId: 'b',
-      explanation: 'eines already marks masculine genitive clearly, so mixed declension gives the ordinary weak ending -en — there is no exception here, unlike in strong declension: eines guten Tages.',
+      explanation:
+        'eines already marks masculine genitive clearly, so mixed declension gives the ordinary weak ending -en — there is no exception here, unlike in strong declension: eines guten Tages.',
     },
     {
       id: 'ch84-ex-36',
@@ -886,7 +1023,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'd', text: 'mit einer nettes Freundin' },
       ],
       correctOptionId: 'a',
-      explanation: 'einer already shows feminine dative clearly, so mixed declension gives the ordinary weak ending -en: mit einer netten Freundin.',
+      explanation:
+        'einer already shows feminine dative clearly, so mixed declension gives the ordinary weak ending -en: mit einer netten Freundin.',
     },
     {
       id: 'ch84-ex-37',
@@ -894,9 +1032,15 @@ export const chapter084: ChapterDefinition = {
       order: 37,
       type: 'singleChoice',
       level: 'transfer',
-      grammarFocus: ['quantifier', 'decision-process', 'weak-declension', 'strong-declension'],
+      grammarFocus: [
+        'quantifier',
+        'decision-process',
+        'weak-declension',
+        'strong-declension',
+      ],
       instruction: 'Choose the correct group of words.',
-      prompt: 'Welche Wörter deklinieren wie Der-Wörter und lösen daher schwache Adjektivendungen aus?',
+      prompt:
+        'Welche Wörter deklinieren wie Der-Wörter und lösen daher schwache Adjektivendungen aus?',
       options: [
         { id: 'a', text: 'alle, beide, sämtliche' },
         { id: 'b', text: 'viele, einige, mehrere' },
@@ -904,7 +1048,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'd', text: 'kein, mein, dein' },
       ],
       correctOptionId: 'a',
-      explanation: 'alle, beide, and sämtliche decline like der-words, so adjectives after them stay weak; viele, einige, mehrere, ein paar, and cardinal numbers trigger strong endings instead.',
+      explanation:
+        'alle, beide, and sämtliche decline like der-words, so adjectives after them stay weak; viele, einige, mehrere, ein paar, and cardinal numbers trigger strong endings instead.',
     },
     {
       id: 'ch84-ex-38',
@@ -922,7 +1067,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'd', text: 'starke Regens' },
       ],
       correctOptionId: 'c',
-      explanation: 'The masculine genitive singular exception in strong declension takes -en, not the expected -es: starken Regens.',
+      explanation:
+        'The masculine genitive singular exception in strong declension takes -en, not the expected -es: starken Regens.',
     },
     {
       id: 'ch84-ex-39',
@@ -937,7 +1083,8 @@ export const chapter084: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'e / en / er / es',
       maxLength: 5,
-      explanation: 'diese is a der-word; weak declension in the feminine nominative is -e: diese gute Idee.',
+      explanation:
+        'diese is a der-word; weak declension in the feminine nominative is -e: diese gute Idee.',
     },
     {
       id: 'ch84-ex-40',
@@ -952,7 +1099,8 @@ export const chapter084: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'e / en / er / es',
       maxLength: 5,
-      explanation: 'eines already marks masculine genitive, so mixed declension gives the ordinary weak ending -en: eines guten Tages.',
+      explanation:
+        'eines already marks masculine genitive, so mixed declension gives the ordinary weak ending -en: eines guten Tages.',
     },
     {
       id: 'ch84-ex-41',
@@ -967,7 +1115,8 @@ export const chapter084: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'frisches',
       maxLength: 20,
-      explanation: 'With no article, strong accusative neuter mirrors das, taking -es: frisches Brot.',
+      explanation:
+        'With no article, strong accusative neuter mirrors das, taking -es: frisches Brot.',
     },
     {
       id: 'ch84-ex-42',
@@ -982,7 +1131,8 @@ export const chapter084: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'lauter',
       maxLength: 20,
-      explanation: 'With no article, strong dative feminine mirrors der, taking -er: mit lauter Stimme.',
+      explanation:
+        'With no article, strong dative feminine mirrors der, taking -er: mit lauter Stimme.',
     },
     {
       id: 'ch84-ex-43',
@@ -991,13 +1141,15 @@ export const chapter084: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['strong-declension', 'error-correction', 'dative', 'neuter'],
-      instruction: 'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
+      instruction:
+        'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Falsch: Mit frisches Obst wird man gesund.',
       acceptedAnswers: ['Mit frischem Obst wird man gesund.'],
       answerMode: 'normalized',
       placeholder: 'Mit frischem Obst ...',
       maxLength: 60,
-      explanation: 'With no article, strong dative neuter mirrors dem, taking -em, not -es: Mit frischem Obst.',
+      explanation:
+        'With no article, strong dative neuter mirrors dem, taking -em, not -es: Mit frischem Obst.',
     },
     {
       id: 'ch84-ex-44',
@@ -1006,13 +1158,15 @@ export const chapter084: ChapterDefinition = {
       type: 'textInput',
       level: 'transfer',
       grammarFocus: ['mixed-declension', 'case-transformation', 'genitive', 'masculine'],
-      instruction: 'Change the phrase from the nominative to the genitive, as in the model. Capitalisation is checked; no full stop is required.',
+      instruction:
+        'Change the phrase from the nominative to the genitive, as in the model. Capitalisation is checked; no full stop is required.',
       prompt: 'Nominativ: ein guter Freund. Genitiv: der Rat ___.',
       acceptedAnswers: ['eines guten Freundes', 'eines guten Freunds'],
       answerMode: 'normalized',
       placeholder: 'eines guten Freundes',
       maxLength: 30,
-      explanation: 'Mixed declension gives the genitive adjective ending -en; the noun itself adds -es or -s: eines guten Freundes / eines guten Freunds.',
+      explanation:
+        'Mixed declension gives the genitive adjective ending -en; the noun itself adds -es or -s: eines guten Freundes / eines guten Freunds.',
     },
     {
       id: 'ch84-ex-45',
@@ -1026,7 +1180,8 @@ export const chapter084: ChapterDefinition = {
       templateParts: ['Der ', ' Kaffee ist gut.'],
       slots: [{ id: 's1', correctWord: 'starke' }],
       wordBank: ['starke', 'starken', 'starker', 'starkes'],
-      explanation: 'After der, weak declension needs -e in the masculine nominative: der starke Kaffee.',
+      explanation:
+        'After der, weak declension needs -e in the masculine nominative: der starke Kaffee.',
     },
     {
       id: 'ch84-ex-46',
@@ -1054,7 +1209,8 @@ export const chapter084: ChapterDefinition = {
       templateParts: ['Wir spielen mit dem ', ' Kind.'],
       slots: [{ id: 's1', correctWord: 'kleinen' }],
       wordBank: ['kleine', 'kleinen', 'kleiner', 'kleines'],
-      explanation: 'Dative after dem is always weak -en, in every gender: dem kleinen Kind.',
+      explanation:
+        'Dative after dem is always weak -en, in every gender: dem kleinen Kind.',
     },
     {
       id: 'ch84-ex-48',
@@ -1082,7 +1238,8 @@ export const chapter084: ChapterDefinition = {
       templateParts: ['Heute ist ein ', ' Tag.'],
       slots: [{ id: 's1', correctWord: 'schöner' }],
       wordBank: ['schöne', 'schönen', 'schöner', 'schönes'],
-      explanation: 'ein carries no masculine marking, so mixed declension takes the strong ending -er: ein schöner Tag.',
+      explanation:
+        'ein carries no masculine marking, so mixed declension takes the strong ending -er: ein schöner Tag.',
     },
     {
       id: 'ch84-ex-50',
@@ -1096,7 +1253,8 @@ export const chapter084: ChapterDefinition = {
       templateParts: ['Sie kauften ein ', ' Haus.'],
       slots: [{ id: 's1', correctWord: 'altes' }],
       wordBank: ['alte', 'alten', 'alter', 'altes'],
-      explanation: 'ein carries no neuter marking either, so the adjective takes the strong ending -es: ein altes Haus.',
+      explanation:
+        'ein carries no neuter marking either, so the adjective takes the strong ending -es: ein altes Haus.',
     },
     {
       id: 'ch84-ex-51',
@@ -1110,7 +1268,8 @@ export const chapter084: ChapterDefinition = {
       templateParts: ['Wir kaufen ein ', ' Auto.'],
       slots: [{ id: 's1', correctWord: 'neues' }],
       wordBank: ['neue', 'neuen', 'neuer', 'neues'],
-      explanation: 'Neuter accusative matches neuter nominative, so ein is again silent and the adjective takes -es: ein neues Auto.',
+      explanation:
+        'Neuter accusative matches neuter nominative, so ein is again silent and the adjective takes -es: ein neues Auto.',
     },
     {
       id: 'ch84-ex-52',
@@ -1124,7 +1283,8 @@ export const chapter084: ChapterDefinition = {
       templateParts: ['Ich sehe einen ', ' Mann.'],
       slots: [{ id: 's1', correctWord: 'großen' }],
       wordBank: ['große', 'großen', 'großer', 'großes'],
-      explanation: 'einen already shows masculine accusative, so mixed declension reverts to the weak ending -en: einen großen Mann.',
+      explanation:
+        'einen already shows masculine accusative, so mixed declension reverts to the weak ending -en: einen großen Mann.',
     },
     {
       id: 'ch84-ex-53',
@@ -1138,7 +1298,8 @@ export const chapter084: ChapterDefinition = {
       templateParts: ['Sie spricht mit einer ', ' Freundin.'],
       slots: [{ id: 's1', correctWord: 'netten' }],
       wordBank: ['nette', 'netten', 'netter', 'nettes'],
-      explanation: 'einer already shows feminine dative, so the adjective takes the weak ending -en: mit einer netten Freundin.',
+      explanation:
+        'einer already shows feminine dative, so the adjective takes the weak ending -en: mit einer netten Freundin.',
     },
     {
       id: 'ch84-ex-54',
@@ -1152,7 +1313,8 @@ export const chapter084: ChapterDefinition = {
       templateParts: ['Das ist die Farbe eines ', ' Autos.'],
       slots: [{ id: 's1', correctWord: 'roten' }],
       wordBank: ['rote', 'roten', 'roter', 'rotes'],
-      explanation: 'eines already marks genitive, so mixed declension gives the ordinary weak ending -en — no exception here, unlike strong declension: eines roten Autos.',
+      explanation:
+        'eines already marks genitive, so mixed declension gives the ordinary weak ending -en — no exception here, unlike strong declension: eines roten Autos.',
     },
     {
       id: 'ch84-ex-55',
@@ -1166,7 +1328,8 @@ export const chapter084: ChapterDefinition = {
       templateParts: ['', ' Milch schmeckt gut.'],
       slots: [{ id: 's1', correctWord: 'frische' }],
       wordBank: ['frische', 'frischen', 'frischer', 'frisches'],
-      explanation: 'With no article, strong nominative feminine mirrors die, taking -e: Frische Milch.',
+      explanation:
+        'With no article, strong nominative feminine mirrors die, taking -e: Frische Milch.',
     },
     {
       id: 'ch84-ex-56',
@@ -1180,7 +1343,8 @@ export const chapter084: ChapterDefinition = {
       templateParts: ['Ich trinke gern ', ' Wasser.'],
       slots: [{ id: 's1', correctWord: 'kaltes' }],
       wordBank: ['kalte', 'kalten', 'kaltes', 'kalter'],
-      explanation: 'With no article, strong accusative neuter mirrors das, taking -es: kaltes Wasser.',
+      explanation:
+        'With no article, strong accusative neuter mirrors das, taking -es: kaltes Wasser.',
     },
     {
       id: 'ch84-ex-57',
@@ -1194,7 +1358,8 @@ export const chapter084: ChapterDefinition = {
       templateParts: ['Er kocht mit ', ' Kaffee.'],
       slots: [{ id: 's1', correctWord: 'starkem' }],
       wordBank: ['starke', 'starken', 'starker', 'starkem'],
-      explanation: 'With no article, strong dative masculine mirrors dem, taking -em: mit starkem Kaffee.',
+      explanation:
+        'With no article, strong dative masculine mirrors dem, taking -em: mit starkem Kaffee.',
     },
     {
       id: 'ch84-ex-58',
@@ -1208,7 +1373,8 @@ export const chapter084: ChapterDefinition = {
       templateParts: ['Der Geschmack ', ' Suppe überzeugt.'],
       slots: [{ id: 's1', correctWord: 'heißer' }],
       wordBank: ['heiße', 'heißen', 'heißer', 'heißes'],
-      explanation: 'With no article, strong genitive feminine mirrors der, taking -er: der Geschmack heißer Suppe.',
+      explanation:
+        'With no article, strong genitive feminine mirrors der, taking -er: der Geschmack heißer Suppe.',
     },
     {
       id: 'ch84-ex-59',
@@ -1222,7 +1388,8 @@ export const chapter084: ChapterDefinition = {
       templateParts: ['Trotz ', ' Regens gingen wir spazieren.'],
       slots: [{ id: 's1', correctWord: 'starken' }],
       wordBank: ['starke', 'starker', 'starkes', 'starken'],
-      explanation: 'The masculine genitive singular exception in strong declension is -en, not -es: trotz starken Regens.',
+      explanation:
+        'The masculine genitive singular exception in strong declension is -en, not -es: trotz starken Regens.',
     },
     {
       id: 'ch84-ex-60',
@@ -1236,7 +1403,8 @@ export const chapter084: ChapterDefinition = {
       templateParts: ['Einige ', ' Studenten kamen zur Prüfung.'],
       slots: [{ id: 's1', correctWord: 'kluge' }],
       wordBank: ['kluge', 'klugen', 'kluger', 'kluges'],
-      explanation: 'einige is an undeclined quantifier, so the adjective takes the strong nominative plural ending -e: einige kluge Studenten.',
+      explanation:
+        'einige is an undeclined quantifier, so the adjective takes the strong nominative plural ending -e: einige kluge Studenten.',
     },
     {
       id: 'ch84-ex-61',
@@ -1250,7 +1418,8 @@ export const chapter084: ChapterDefinition = {
       templateParts: ['Sie liest mit diesen ', ' Büchern.'],
       slots: [{ id: 's1', correctWord: 'spannenden' }],
       wordBank: ['spannende', 'spannenden', 'spannender', 'spannendes'],
-      explanation: 'diese is a der-word; weak dative plural is always -en: mit diesen spannenden Büchern.',
+      explanation:
+        'diese is a der-word; weak dative plural is always -en: mit diesen spannenden Büchern.',
     },
     {
       id: 'ch84-ex-62',
@@ -1264,7 +1433,8 @@ export const chapter084: ChapterDefinition = {
       templateParts: ['Welche ', ' Bücher gefallen dir?'],
       slots: [{ id: 's1', correctWord: 'spannenden' }],
       wordBank: ['spannende', 'spannenden', 'spannender', 'spannendes'],
-      explanation: 'welche is a der-word; weak nominative plural is -en: welche spannenden Bücher.',
+      explanation:
+        'welche is a der-word; weak nominative plural is -en: welche spannenden Bücher.',
     },
     {
       id: 'ch84-ex-63',
@@ -1277,12 +1447,25 @@ export const chapter084: ChapterDefinition = {
       prompt: 'Ordne jeder Wendung das passende Deklinationsmuster zu.',
       pairs: [
         { id: 'p1', left: 'der gute Wein', right: 'Schwach – der zeigt bereits alles' },
-        { id: 'p2', left: 'ein guter Wein', right: 'Gemischt – ein bleibt hier endungslos' },
+        {
+          id: 'p2',
+          left: 'ein guter Wein',
+          right: 'Gemischt – ein bleibt hier endungslos',
+        },
         { id: 'p3', left: 'guter Wein', right: 'Stark – kein Artikel vorhanden' },
-        { id: 'p4', left: 'viele gute Weine', right: 'Stark – viele dekliniert nicht wie ein Artikel' },
-        { id: 'p5', left: 'alle guten Weine', right: 'Schwach – alle dekliniert wie ein Der-Wort' },
+        {
+          id: 'p4',
+          left: 'viele gute Weine',
+          right: 'Stark – viele dekliniert nicht wie ein Artikel',
+        },
+        {
+          id: 'p5',
+          left: 'alle guten Weine',
+          right: 'Schwach – alle dekliniert wie ein Der-Wort',
+        },
       ],
-      explanation: 'Weak, mixed, and strong declension are chosen by what precedes the adjective: a der-word, an ein-word (with its three silent slots), or nothing/an undeclined quantifier.',
+      explanation:
+        'Weak, mixed, and strong declension are chosen by what precedes the adjective: a der-word, an ein-word (with its three silent slots), or nothing/an undeclined quantifier.',
     },
     {
       id: 'ch84-ex-64',
@@ -1300,7 +1483,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'p4', left: 'Stark, Maskulin Dativ', right: '-em' },
         { id: 'p5', left: 'Stark, Plural Dativ', right: '-en' },
       ],
-      explanation: 'Strong declension endings mirror the der-word endings almost exactly: -er, -e, -es, -em, -en depending on case, gender, and number.',
+      explanation:
+        'Strong declension endings mirror the der-word endings almost exactly: -er, -e, -es, -em, -en depending on case, gender, and number.',
     },
     {
       id: 'ch84-ex-65',
@@ -1312,12 +1496,29 @@ export const chapter084: ChapterDefinition = {
       instruction: 'Match each ein-word situation to the explanation of its ending.',
       prompt: 'Ordne jeder Ein-Wort-Situation die passende Erklärung zu.',
       pairs: [
-        { id: 'p1', left: 'ein-Wort, Maskulin Nominativ', right: '-er (stark, da "ein" endungslos ist)' },
-        { id: 'p2', left: 'ein-Wort, Neutrum Nominativ', right: '-es (stark, da "ein" endungslos ist)' },
-        { id: 'p3', left: 'ein-Wort, Maskulin Akkusativ', right: '-en (schwach, da "einen" schon eindeutig ist)' },
-        { id: 'p4', left: 'ein-Wort, Dativ (alle Genera)', right: '-en (schwach, da der Artikel eindeutig ist)' },
+        {
+          id: 'p1',
+          left: 'ein-Wort, Maskulin Nominativ',
+          right: '-er (stark, da "ein" endungslos ist)',
+        },
+        {
+          id: 'p2',
+          left: 'ein-Wort, Neutrum Nominativ',
+          right: '-es (stark, da "ein" endungslos ist)',
+        },
+        {
+          id: 'p3',
+          left: 'ein-Wort, Maskulin Akkusativ',
+          right: '-en (schwach, da "einen" schon eindeutig ist)',
+        },
+        {
+          id: 'p4',
+          left: 'ein-Wort, Dativ (alle Genera)',
+          right: '-en (schwach, da der Artikel eindeutig ist)',
+        },
       ],
-      explanation: 'Mixed declension only uses the strong ending in the three slots where the ein-word itself carries no ending: masculine nominative, neuter nominative, neuter accusative.',
+      explanation:
+        'Mixed declension only uses the strong ending in the three slots where the ein-word itself carries no ending: masculine nominative, neuter nominative, neuter accusative.',
     },
     {
       id: 'ch84-ex-66',
@@ -1329,12 +1530,25 @@ export const chapter084: ChapterDefinition = {
       instruction: 'Match each group of words to the pattern it triggers.',
       prompt: 'Ordne jede Wortgruppe dem Muster zu, das sie auslöst.',
       pairs: [
-        { id: 'p1', left: 'viele, wenige, einige, mehrere', right: 'Stark: unveränderliche Mengenwörter' },
-        { id: 'p2', left: 'ein paar, zwei, drei ...', right: 'Stark: unveränderliche Zahlwörter' },
-        { id: 'p3', left: 'alle, beide, sämtliche', right: 'Schwach: deklinieren wie ein Der-Wort' },
+        {
+          id: 'p1',
+          left: 'viele, wenige, einige, mehrere',
+          right: 'Stark: unveränderliche Mengenwörter',
+        },
+        {
+          id: 'p2',
+          left: 'ein paar, zwei, drei ...',
+          right: 'Stark: unveränderliche Zahlwörter',
+        },
+        {
+          id: 'p3',
+          left: 'alle, beide, sämtliche',
+          right: 'Schwach: deklinieren wie ein Der-Wort',
+        },
         { id: 'p4', left: 'kein Artikel im Satz', right: 'Stark: gar kein Artikel' },
       ],
-      explanation: 'viele/wenige/einige/mehrere and numbers never behave like articles, so adjectives after them stay strong; alle/beide/sämtliche decline like der-words, so adjectives after them stay weak.',
+      explanation:
+        'viele/wenige/einige/mehrere and numbers never behave like articles, so adjectives after them stay strong; alle/beide/sämtliche decline like der-words, so adjectives after them stay weak.',
     },
     {
       id: 'ch84-ex-67',
@@ -1351,7 +1565,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'p3', left: 'dem guten Wein', right: 'Dativ' },
         { id: 'p4', left: 'des guten Weines', right: 'Genitiv' },
       ],
-      explanation: 'These four phrases show weak declension across all four cases for a masculine noun after der.',
+      explanation:
+        'These four phrases show weak declension across all four cases for a masculine noun after der.',
     },
     {
       id: 'ch84-ex-68',
@@ -1367,7 +1582,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'p2', left: 'den guten Frauen', right: 'Dativ Plural' },
         { id: 'p3', left: 'der guten Frauen', right: 'Genitiv Plural' },
       ],
-      explanation: 'Weak plural declension keeps the ending -en in every case; only the noun and the der-word itself show which case is meant.',
+      explanation:
+        'Weak plural declension keeps the ending -en in every case; only the noun and the der-word itself show which case is meant.',
     },
     {
       id: 'ch84-ex-69',
@@ -1384,7 +1600,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'p3', left: 'einem guten Mann', right: 'Dativ' },
         { id: 'p4', left: 'eines guten Mannes', right: 'Genitiv' },
       ],
-      explanation: 'Mixed declension for masculine nouns is strong only in the nominative (guter); every other case reverts to the weak ending -en.',
+      explanation:
+        'Mixed declension for masculine nouns is strong only in the nominative (guter); every other case reverts to the weak ending -en.',
     },
     {
       id: 'ch84-ex-70',
@@ -1400,7 +1617,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'p2', left: 'gutem Bier', right: 'Dativ' },
         { id: 'p3', left: 'guten Biers', right: 'Genitiv' },
       ],
-      explanation: 'Strong neuter declension mirrors das/dem/des: -es in the nominative/accusative, -em in the dative, and -en (not the expected -es) in the genitive, because the noun already shows -s.',
+      explanation:
+        'Strong neuter declension mirrors das/dem/des: -es in the nominative/accusative, -em in the dative, and -en (not the expected -es) in the genitive, because the noun already shows -s.',
     },
     {
       id: 'ch84-ex-71',
@@ -1409,16 +1627,34 @@ export const chapter084: ChapterDefinition = {
       type: 'matching',
       level: 'transfer',
       grammarFocus: ['decision-process', 'pattern-identification'],
-      instruction: 'Match each group of determiners/quantifiers to the pattern it triggers.',
+      instruction:
+        'Match each group of determiners/quantifiers to the pattern it triggers.',
       prompt: 'Ordne jede Wortgruppe dem Deklinationsmuster zu, das sie auslöst.',
       pairs: [
-        { id: 'p1', left: 'der, die, das, dieser, jeder, welcher', right: 'Schwache Deklension' },
+        {
+          id: 'p1',
+          left: 'der, die, das, dieser, jeder, welcher',
+          right: 'Schwache Deklension',
+        },
         { id: 'p2', left: 'ein, kein, mein, dein, sein', right: 'Gemischte Deklension' },
-        { id: 'p3', left: 'kein Artikel vorhanden', right: 'Starke Deklension (kein Artikel)' },
-        { id: 'p4', left: 'viele, einige, mehrere, zwei, drei', right: 'Starke Deklension (unveränderliche Mengenwörter)' },
-        { id: 'p5', left: 'alle, beide, sämtliche', right: 'Schwache Deklension (wie Der-Wörter)' },
+        {
+          id: 'p3',
+          left: 'kein Artikel vorhanden',
+          right: 'Starke Deklension (kein Artikel)',
+        },
+        {
+          id: 'p4',
+          left: 'viele, einige, mehrere, zwei, drei',
+          right: 'Starke Deklension (unveränderliche Mengenwörter)',
+        },
+        {
+          id: 'p5',
+          left: 'alle, beide, sämtliche',
+          right: 'Schwache Deklension (wie Der-Wörter)',
+        },
       ],
-      explanation: 'Every determiner or quantifier maps onto one of the three patterns: der-words and alle/beide/sämtliche trigger weak endings; ein-words trigger mixed; nothing at all, or an undeclined quantifier, triggers strong.',
+      explanation:
+        'Every determiner or quantifier maps onto one of the three patterns: der-words and alle/beide/sämtliche trigger weak endings; ein-words trigger mixed; nothing at all, or an undeclined quantifier, triggers strong.',
     },
     {
       id: 'ch84-ex-72',
@@ -1435,7 +1671,8 @@ export const chapter084: ChapterDefinition = {
         { id: 'p3', left: 'das Bier', right: 'Neutrum' },
         { id: 'p4', left: 'die Kinder', right: 'Plural' },
       ],
-      explanation: 'Knowing the gender and number of the noun is the first step to predicting the correct adjective ending in any of the three declension patterns.',
+      explanation:
+        'Knowing the gender and number of the noun is the first step to predicting the correct adjective ending in any of the three declension patterns.',
     },
     {
       id: 'ch84-ex-73',
@@ -1449,7 +1686,8 @@ export const chapter084: ChapterDefinition = {
       tokens: ['Der', 'guter', 'Wein', 'schmeckt', 'hervorragend.'],
       errorTokenIndex: 1,
       correction: 'gute',
-      explanation: 'After der, weak declension needs -e in the masculine nominative, not the strong -er: der gute Wein.',
+      explanation:
+        'After der, weak declension needs -e in the masculine nominative, not the strong -er: der gute Wein.',
     },
     {
       id: 'ch84-ex-74',
@@ -1463,7 +1701,8 @@ export const chapter084: ChapterDefinition = {
       tokens: ['Ein', 'gutes', 'Mann', 'steht', 'vor', 'der', 'Tür.'],
       errorTokenIndex: 1,
       correction: 'guter',
-      explanation: 'ein carries no masculine marking in the nominative, so the adjective needs the strong ending -er, not -es: ein guter Mann.',
+      explanation:
+        'ein carries no masculine marking in the nominative, so the adjective needs the strong ending -er, not -es: ein guter Mann.',
     },
     {
       id: 'ch84-ex-75',
@@ -1477,7 +1716,8 @@ export const chapter084: ChapterDefinition = {
       tokens: ['Einen', 'guter', 'Wein', 'kaufe', 'ich.'],
       errorTokenIndex: 1,
       correction: 'guten',
-      explanation: 'einen already marks masculine accusative, so mixed declension needs the weak ending -en, not the strong -er: einen guten Wein.',
+      explanation:
+        'einen already marks masculine accusative, so mixed declension needs the weak ending -en, not the strong -er: einen guten Wein.',
     },
     {
       id: 'ch84-ex-76',
@@ -1491,7 +1731,8 @@ export const chapter084: ChapterDefinition = {
       tokens: ['Trotz', 'gutes', 'Weines', 'blieben', 'wir', 'noch.'],
       errorTokenIndex: 1,
       correction: 'guten',
-      explanation: 'The masculine genitive singular exception in strong declension takes -en, not -es: trotz guten Weines.',
+      explanation:
+        'The masculine genitive singular exception in strong declension takes -en, not -es: trotz guten Weines.',
     },
     {
       id: 'ch84-ex-77',
@@ -1505,7 +1746,8 @@ export const chapter084: ChapterDefinition = {
       tokens: ['Viele', 'guten', 'Bücher', 'stehen', 'im', 'Regal.'],
       errorTokenIndex: 1,
       correction: 'gute',
-      explanation: 'viele triggers strong declension, so the nominative plural ending is -e, not -en: viele gute Bücher.',
+      explanation:
+        'viele triggers strong declension, so the nominative plural ending is -e, not -en: viele gute Bücher.',
     },
     {
       id: 'ch84-ex-78',
@@ -1519,7 +1761,8 @@ export const chapter084: ChapterDefinition = {
       tokens: ['Alle', 'gute', 'Freunde', 'kamen', 'zur', 'Party.'],
       errorTokenIndex: 1,
       correction: 'guten',
-      explanation: 'alle declines like a der-word, so the adjective takes the weak plural ending -en, not the strong -e: alle guten Freunde.',
+      explanation:
+        'alle declines like a der-word, so the adjective takes the weak plural ending -en, not the strong -e: alle guten Freunde.',
     },
     {
       id: 'ch84-ex-79',
@@ -1533,7 +1776,8 @@ export const chapter084: ChapterDefinition = {
       tokens: ['Ich', 'trinke', 'gern', 'kalter', 'Milch.'],
       errorTokenIndex: 3,
       correction: 'kalte',
-      explanation: 'With no article, strong accusative feminine mirrors die, taking -e, not -er: kalte Milch.',
+      explanation:
+        'With no article, strong accusative feminine mirrors die, taking -e, not -er: kalte Milch.',
     },
     {
       id: 'ch84-ex-80',
@@ -1547,7 +1791,8 @@ export const chapter084: ChapterDefinition = {
       tokens: ['Er', 'kam', 'nach', 'Hause', 'mit', 'frisches', 'Obst.'],
       errorTokenIndex: 5,
       correction: 'frischem',
-      explanation: 'With no article, strong dative neuter mirrors dem, taking -em, not -es: mit frischem Obst.',
+      explanation:
+        'With no article, strong dative neuter mirrors dem, taking -em, not -es: mit frischem Obst.',
     },
     {
       id: 'ch84-ex-81',
@@ -1567,7 +1812,8 @@ export const chapter084: ChapterDefinition = {
         { id: 's6', text: 'interessantes' },
         { id: 's7', text: 'Buch.' },
       ],
-      explanation: 'Der alte Mann (schwach, Nominativ maskulin) liest ein interessantes Buch (gemischt, Akkusativ neutrum, stark, da ein endungslos ist).',
+      explanation:
+        'Der alte Mann (schwach, Nominativ maskulin) liest ein interessantes Buch (gemischt, Akkusativ neutrum, stark, da ein endungslos ist).',
     },
     {
       id: 'ch84-ex-82',
@@ -1587,7 +1833,8 @@ export const chapter084: ChapterDefinition = {
         { id: 's6', text: 'kalte' },
         { id: 's7', text: 'Milch.' },
       ],
-      explanation: 'Strong declension with no article: frisches Obst (Akkusativ neutrum, -es) und kalte Milch (Akkusativ feminin, -e).',
+      explanation:
+        'Strong declension with no article: frisches Obst (Akkusativ neutrum, -es) und kalte Milch (Akkusativ feminin, -e).',
     },
     {
       id: 'ch84-ex-83',
@@ -1595,7 +1842,12 @@ export const chapter084: ChapterDefinition = {
       order: 83,
       type: 'sentenceOrdering',
       level: 'production',
-      grammarFocus: ['strong-declension', 'weak-declension', 'quantifier', 'sentence-formation'],
+      grammarFocus: [
+        'strong-declension',
+        'weak-declension',
+        'quantifier',
+        'sentence-formation',
+      ],
       instruction: 'Ordne die Wörter zu einem grammatisch korrekten Satz.',
       prompt: 'Bringe die Wörter in die richtige Reihenfolge.',
       segments: [
@@ -1607,7 +1859,8 @@ export const chapter084: ChapterDefinition = {
         { id: 's6', text: 'schwere' },
         { id: 's7', text: 'Prüfung.' },
       ],
-      explanation: 'Viele kluge Studenten (stark, Nominativ Plural nach einem unveränderlichen Mengenwort) bestehen die schwere Prüfung (schwach, Akkusativ feminin nach dem Der-Wort die).',
+      explanation:
+        'Viele kluge Studenten (stark, Nominativ Plural nach einem unveränderlichen Mengenwort) bestehen die schwere Prüfung (schwach, Akkusativ feminin nach dem Der-Wort die).',
     },
   ],
 };

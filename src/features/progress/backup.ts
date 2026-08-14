@@ -1,8 +1,8 @@
 import { z } from 'zod';
 import {
-  persistedProgressV1Schema,
+  persistedProgressV2Schema,
   persistedSettingsV1Schema,
-  type PersistedProgressV1,
+  type PersistedProgressV2,
   type PersistedSettingsV1,
 } from '../../schemas/progressSchema';
 
@@ -12,7 +12,7 @@ export interface ProgressBackup {
   format: 'grammatik-mit-system-backup';
   formatVersion: typeof BACKUP_FORMAT_VERSION;
   exportedAt: string;
-  progress: PersistedProgressV1;
+  progress: PersistedProgressV2;
   settings: PersistedSettingsV1;
 }
 
@@ -20,12 +20,12 @@ const backupSchema = z.object({
   format: z.literal('grammatik-mit-system-backup'),
   formatVersion: z.literal(BACKUP_FORMAT_VERSION),
   exportedAt: z.string().min(1),
-  progress: persistedProgressV1Schema,
+  progress: persistedProgressV2Schema,
   settings: persistedSettingsV1Schema,
 });
 
 export function createBackup(
-  progress: PersistedProgressV1,
+  progress: PersistedProgressV2,
   settings: PersistedSettingsV1,
   now: Date = new Date(),
 ): ProgressBackup {
@@ -44,8 +44,7 @@ export function backupFileName(now: Date = new Date()): string {
 }
 
 export type BackupParseResult =
-  | { ok: true; backup: ProgressBackup }
-  | { ok: false; error: string };
+  { ok: true; backup: ProgressBackup } | { ok: false; error: string };
 
 /** Validates a backup file, with a message that says how to fix each problem. */
 export function parseBackup(text: string): BackupParseResult {

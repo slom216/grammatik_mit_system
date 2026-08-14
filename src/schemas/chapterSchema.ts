@@ -12,13 +12,8 @@ import {
 
 /** Content thresholds required by the specification. */
 export const CONTENT_RULES = {
-  minExercises: 24,
-  /**
-   * Not yet enforced by `minExercises` — chapters 1-85 still ship the
-   * original 24, and raising the enforced minimum is a content-authoring
-   * project of its own. `maxExercises` is enforced now so future authoring
-   * stays inside the target 50-100 range from the start.
-   */
+  /** All 85 chapters ship 50-100 exercises; the floor is enforced, not aspirational. */
+  minExercises: 50,
   maxExercises: 100,
   minSingleChoice: 12,
   minTextInput: 12,
