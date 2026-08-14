@@ -41,6 +41,20 @@ export interface ActivityCalendarWeek {
   days: ActivityDay[];
 }
 
+export type HeatLevel = 0 | 1 | 2 | 3 | 4;
+
+/**
+ * A session runs to dozens of exercises, so the shade tracks bands rather than
+ * the raw count — otherwise every practice day would sit at maximum.
+ */
+export function heatLevel(count: number): HeatLevel {
+  if (count <= 0) return 0;
+  if (count < 5) return 1;
+  if (count < 15) return 2;
+  if (count < 30) return 3;
+  return 4;
+}
+
 /**
  * A Monday-first grid of `weeks` full weeks ending on the week containing
  * `now`. Days without practice get a count of 0, so the grid has no gaps.

@@ -5,6 +5,7 @@ import {
   speakGerman,
 } from '../../features/audio/speech';
 import { useSettingsStore } from '../../features/settings/settingsStore';
+import { Icon } from './Icon';
 
 export interface SpeakButtonProps {
   /** The German text to read aloud. */
@@ -34,7 +35,7 @@ export function SpeakButton({ text, label }: SpeakButtonProps) {
       onClick={() => speakGerman(text)}
       title="Listen"
     >
-      <span aria-hidden="true">🔊</span>
+      <Icon name="speaker" />
       <span className="visually-hidden">{label ?? `Listen to "${text}"`}</span>
     </button>
   );

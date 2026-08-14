@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { Button } from '../components/common/Button';
 import { ChapterUnavailable } from '../components/common/ChapterUnavailable';
+import { LoadingBlock } from '../components/common/LoadingBlock';
 import { Modal } from '../components/common/Modal';
 import { ProgressBar } from '../components/common/ProgressBar';
 import { PracticeExercise } from '../components/practice/PracticeExercise';
@@ -105,11 +106,13 @@ export function PracticePage() {
     ? findExercise(chapter, currentExerciseId)
     : undefined;
 
+  // The h1 stays here: AppShell reads document.title from the rendered h1.
   if (!exercise) {
     return (
-      <div className="stack">
+      <div className="stack practice">
         <h1>Preparing practice…</h1>
         <p className="text-muted">Loading the exercises for this chapter.</p>
+        <LoadingBlock label="Loading the exercises" withTitle={false} />
       </div>
     );
   }

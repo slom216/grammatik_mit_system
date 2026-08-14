@@ -29,6 +29,8 @@ export interface ExerciseRendererProps {
   showUmlautHelper: boolean;
   /** Move on by itself once an answer is correct ("Move on automatically"). */
   autoAdvance: boolean;
+  /** How many times "Try again" was used. Non-zero means this is a retry. */
+  retryCount?: number;
   onSubmitChoice: (optionId: string) => void;
   onSubmitText: (value: string) => void;
   onSubmitOrdering: (orderedIds: string[]) => void;
@@ -75,6 +77,7 @@ export function ExerciseRenderer({
   showHints,
   showUmlautHelper,
   autoAdvance,
+  retryCount = 0,
   onSubmitChoice,
   onSubmitText,
   onSubmitOrdering,
@@ -94,8 +97,10 @@ export function ExerciseRenderer({
   const [matches, setMatches] = useState<Record<string, string>>({});
   const [selectedTokenIndex, setSelectedTokenIndex] = useState<number | null>(null);
   const [hintVisible, setHintVisible] = useState(false);
+  const [advanceCancelled, setAdvanceCancelled] = useState(false);
   const commitTimeoutRef = useRef<number | undefined>(undefined);
   const resolvedRef = useRef(resolved);
+  const formRef = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
     resolvedRef.current = resolved;
@@ -103,9 +108,34 @@ export function ExerciseRenderer({
 
   useEffect(() => () => window.clearTimeout(commitTimeoutRef.current), []);
 
+  // "Try again" remounts this component to clear the previous answer, which
+  // leaves focus on the removed button — i.e. on <body>. Put it back on the
+  // first control of the exercise so the keyboard path continues. Focusing a
+  // radio only moves the ring; it does not check it, so no attempt is spent.
+  useEffect(() => {
+    if (retryCount === 0) return;
+    const form = formRef.current;
+    if (!form || form.contains(document.activeElement)) return;
+    form
+      .querySelector<HTMLElement>(
+        'input:not(:disabled), textarea:not(:disabled), button:not(:disabled)',
+      )
+      ?.focus();
+    // Only on mount: a later retry arrives with a new key anyway.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const canRetry = feedback?.canRetry === true;
   const inputsDisabled = resolved;
   const isAutoSubmit = AUTO_SUBMIT_TYPES.has(exercise.type);
+  // Derived rather than stored, so the countdown cannot disagree with the
+  // effect that owns the timer. Only the cancellation needs remembering.
+  const advancing =
+    autoAdvance &&
+    resolved &&
+    !isLast &&
+    feedback?.kind === 'correct' &&
+    !advanceCancelled;
 
   const canSubmit = (() => {
     switch (exercise.type) {
@@ -151,12 +181,17 @@ export function ExerciseRenderer({
     if (!autoAdvance || !resolved || isLast || feedback?.kind !== 'correct') return;
 
     const timer = window.setTimeout(onNext, AUTO_ADVANCE_DELAY_MS);
-    const cancel = () => window.clearTimeout(timer);
+    // Cancelling used to leave no trace on screen, so the countdown appeared to
+    // stall for no reason. Recording it removes the bar along with the timer.
+    const cancel = () => {
+      window.clearTimeout(timer);
+      setAdvanceCancelled(true);
+    };
     window.addEventListener('pointerdown', cancel);
     window.addEventListener('keydown', cancel);
 
     return () => {
-      cancel();
+      window.clearTimeout(timer);
       window.removeEventListener('pointerdown', cancel);
       window.removeEventListener('keydown', cancel);
     };
@@ -209,7 +244,7 @@ export function ExerciseRenderer({
   };
 
   return (
-    <form className="stack" onSubmit={handleSubmit} noValidate>
+    <form className="stack" ref={formRef} onSubmit={handleSubmit} noValidate>
       {exercise.instruction && <p className="text-muted">{exercise.instruction}</p>}
 
       {exercise.dialogue && <DialogueExchange lines={exercise.dialogue} />}
@@ -294,6 +329,17 @@ export function ExerciseRenderer({
       )}
 
       <ExerciseFeedback feedback={feedback} explanation={exercise.explanation} />
+
+      {/* No aria-live: the feedback region above has already announced, and a
+          second live region would talk over it. */}
+      {advancing && (
+        <div className="auto-advance">
+          <span className="auto-advance__track">
+            <span className="auto-advance__bar" />
+          </span>
+          <span>Moving on… press any key or click to stay.</span>
+        </div>
+      )}
 
       <ExerciseNavigation
         canSubmit={canSubmit}

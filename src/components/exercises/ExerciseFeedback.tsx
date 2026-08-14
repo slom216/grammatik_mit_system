@@ -1,4 +1,5 @@
 import type { FeedbackState } from '../../features/practice/practiceStore';
+import { Icon, type IconName } from '../common/Icon';
 
 export interface ExerciseFeedbackProps {
   feedback: FeedbackState | null;
@@ -6,10 +7,10 @@ export interface ExerciseFeedbackProps {
   explanation: string;
 }
 
-const HEADLINES: Record<FeedbackState['kind'], { icon: string; text: string }> = {
-  correct: { icon: '✓', text: 'Correct' },
-  incorrect: { icon: '✗', text: 'Not correct yet' },
-  revealed: { icon: '!', text: 'Answer shown' },
+const HEADLINES: Record<FeedbackState['kind'], { icon: IconName; text: string }> = {
+  correct: { icon: 'check', text: 'Correct' },
+  incorrect: { icon: 'cross', text: 'Not correct yet' },
+  revealed: { icon: 'alert', text: 'Answer shown' },
 };
 
 /**
@@ -27,8 +28,8 @@ export function ExerciseFeedback({ feedback, explanation }: ExerciseFeedbackProp
           data-testid="exercise-feedback"
         >
           <p className="feedback__headline">
-            <span className="feedback__icon" aria-hidden="true">
-              {HEADLINES[feedback.kind].icon}
+            <span className="feedback__icon">
+              <Icon name={HEADLINES[feedback.kind].icon} />
             </span>
             <span>{HEADLINES[feedback.kind].text}</span>
           </p>

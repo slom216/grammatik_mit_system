@@ -1,6 +1,7 @@
 import type { ComponentType } from 'react';
 import { createBrowserRouter, type RouteObject } from 'react-router-dom';
 import { AppShell } from '../components/common/AppShell';
+import { LoadingBlock } from '../components/common/LoadingBlock';
 import { RouteError } from '../components/common/RouteError';
 import { DashboardPage } from '../pages/DashboardPage';
 import { NotFoundPage } from '../pages/NotFoundPage';
@@ -29,7 +30,7 @@ export const routes: RouteObject[] = [
     // page chunk that 404s because the tab predates the current deploy.
     errorElement: <RouteError />,
     // Shown only on a cold deep link, while the first loader runs.
-    HydrateFallback: () => <p className="text-muted">Loading…</p>,
+    HydrateFallback: () => <LoadingBlock />,
     children: [
       // The dashboard is the most common first paint, so it stays in the
       // entry chunk rather than costing an extra round trip.

@@ -1,4 +1,4 @@
-import { buildActivityCalendar } from '../../features/progress/dailyActivity';
+import { buildActivityCalendar, heatLevel } from '../../features/progress/dailyActivity';
 
 export interface ActivityCalendarProps {
   /** Exercises answered per local day, `YYYY-MM-DD` → count. */
@@ -8,19 +8,6 @@ export interface ActivityCalendarProps {
 }
 
 const HEAT_LEVELS = [0, 1, 2, 3, 4] as const;
-type HeatLevel = (typeof HEAT_LEVELS)[number];
-
-/**
- * A session runs to dozens of exercises, so the shade tracks bands rather than
- * the raw count — otherwise every practice day would sit at maximum.
- */
-function heatLevel(count: number): HeatLevel {
-  if (count <= 0) return 0;
-  if (count < 5) return 1;
-  if (count < 15) return 2;
-  if (count < 30) return 3;
-  return 4;
-}
 
 function formatDayLabel(dateKey: string): string {
   // Parsed as local parts, matching how the key was built.

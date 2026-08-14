@@ -7,14 +7,19 @@ import { ReloadPrompt } from './ReloadPrompt';
 
 const APP_NAME = 'Grammatik mit System';
 
+/**
+ * Five items, per design.md's 5–6 top-level maximum. Activity and About used to
+ * sit here too, which pushed the row past the width of a phone and into a
+ * scroller with hidden scrollbars — no indication anything was off-screen.
+ * Both remain one tap away in the footer, and Activity's headline numbers are
+ * already on Progress.
+ */
 const NAV_ITEMS = [
   { to: '/', label: 'Dashboard', end: true },
   { to: '/chapters', label: 'Chapters', end: false },
   { to: '/review', label: 'Review', end: false },
   { to: '/progress', label: 'Progress', end: false },
-  { to: '/activity', label: 'Activity', end: false },
   { to: '/settings', label: 'Settings', end: false },
-  { to: '/about', label: 'About', end: false },
 ];
 
 const FOOTER_GROUPS = [

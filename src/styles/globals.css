@@ -321,6 +321,11 @@ a:hover {
   align-items: center;
 }
 
+/** For an icon sitting directly against its own label. */
+.row--tight {
+  gap: var(--space-1);
+}
+
 .grid {
   display: grid;
   gap: var(--space-5);
@@ -440,6 +445,41 @@ a:hover {
   line-height: 1;
   letter-spacing: var(--tracking-display);
   color: var(--color-text-muted);
+}
+
+/* ------------------------------------------------------------------ */
+/* Icons                                                               */
+/* ------------------------------------------------------------------ */
+
+/**
+ * One outline family (see Icon.tsx). Colour comes from `currentColor`, so an
+ * icon always matches the text it sits beside and needs no theme rules of its
+ * own. Sizes are contextual: a 20px mark would overpower 12px badge text.
+ */
+.icon {
+  display: inline-block;
+  flex: 0 0 auto;
+  inline-size: var(--icon-size);
+  block-size: var(--icon-size);
+  vertical-align: -0.2em;
+}
+
+.icon--lg {
+  inline-size: var(--icon-size-lg);
+  block-size: var(--icon-size-lg);
+}
+
+.badge .icon,
+.mistake-list .icon {
+  inline-size: 14px;
+  block-size: 14px;
+}
+
+.speak-button .icon,
+.sentence-ordering__move .icon,
+.sentence-ordering__handle .icon {
+  inline-size: 16px;
+  block-size: 16px;
 }
 
 /* ------------------------------------------------------------------ */
@@ -694,6 +734,59 @@ a:hover {
   margin-bottom: var(--space-2);
 }
 
+/* Accuracy on the topics the learner is weakest at: a state, not decoration. */
+.weak-spots .progress-bar__fill {
+  background: var(--color-warning);
+}
+
+/** One headline percentage: the arc reinforces the number stacked inside it. */
+.progress-ring {
+  display: grid;
+  justify-items: center;
+  justify-self: center;
+  gap: var(--space-2);
+}
+
+/* The number is stacked on top of the arc; the caption sits below both. */
+.progress-ring__dial {
+  display: grid;
+  place-items: center;
+}
+
+.progress-ring__dial > * {
+  grid-area: 1 / 1;
+}
+
+.progress-ring__svg {
+  inline-size: 8.5rem;
+  block-size: 8.5rem;
+}
+
+.progress-ring__caption {
+  margin: 0;
+  text-align: center;
+}
+
+.progress-ring__track {
+  fill: none;
+  stroke: var(--color-border);
+  stroke-width: 10;
+}
+
+.progress-ring__value {
+  fill: none;
+  stroke: var(--color-accent);
+  stroke-width: 10;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  transition: stroke-dashoffset var(--transition-medium);
+}
+
+.progress-ring .display-number {
+  font-size: var(--text-2xl);
+  color: var(--color-text);
+}
+
 /* Grammar presentation */
 
 .grammar-table__wrapper {
@@ -805,14 +898,34 @@ a:hover {
   gap: var(--space-4);
 }
 
-.mistake-list__incorrect {
+/* The mark takes the colour of the line it introduces. */
+.mistake-list__incorrect,
+.mistake-list p:has(.mistake-list__incorrect) .icon {
   color: var(--color-danger);
+}
+
+.mistake-list__incorrect {
   text-decoration: line-through;
 }
 
-.mistake-list__correct {
+.mistake-list__correct,
+.mistake-list p:has(.mistake-list__correct) .icon {
   color: var(--color-success);
+}
+
+.mistake-list__correct {
   font-weight: 600;
+}
+
+.mistake-list .icon {
+  margin-inline-end: var(--space-2);
+}
+
+/** One week of the heatmap, inline beside the streak badge. */
+.week-strip {
+  display: inline-flex;
+  gap: 3px;
+  align-items: center;
 }
 
 .activity-calendar__grid {
@@ -943,6 +1056,35 @@ a:hover {
   color: var(--color-text-muted);
 }
 
+/** The end-of-session scoreboard: the ring leads, the figures support it. */
+.session-summary {
+  display: grid;
+  gap: var(--space-5);
+  align-items: center;
+}
+
+@media (min-width: 30rem) {
+  .session-summary {
+    grid-template-columns: auto 1fr;
+    gap: var(--space-6);
+  }
+}
+
+.session-summary__verdict {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 650;
+  letter-spacing: var(--tracking-tight);
+}
+
+/* The denominator is supporting detail, not part of the figure. */
+.stat__of {
+  font-size: var(--text-lg);
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
 /** Practice keeps a single narrow column so the task stays the focus. */
 .practice {
   max-width: var(--reading-max-width);
@@ -1020,7 +1162,17 @@ a:hover {
 
 .option__marker {
   margin-left: auto;
+  display: inline-flex;
+  align-items: center;
   font-weight: 700;
+}
+
+.option--correct .option__marker {
+  color: var(--color-success);
+}
+
+.option--incorrect .option__marker {
+  color: var(--color-danger);
 }
 
 /** Keycap for the number-key shortcut. */
@@ -1093,22 +1245,41 @@ a:hover {
   background: var(--color-surface-muted);
 }
 
+/* The verdict carries a semantic colour on three surfaces at once: a soft fill,
+   a solid rule down the leading edge, and the mark itself. With square corners
+   the rule reads as editorial structure rather than decoration. */
 .feedback {
   border-radius: var(--radius-lg);
   padding: var(--space-5);
   background: var(--color-surface-muted);
+  border-inline-start: 3px solid var(--color-border-strong);
 }
 
 .feedback--correct {
   background: var(--color-success-soft);
+  border-inline-start-color: var(--color-success);
 }
 
 .feedback--incorrect {
   background: var(--color-danger-soft);
+  border-inline-start-color: var(--color-danger);
 }
 
 .feedback--revealed {
   background: var(--color-warning-soft);
+  border-inline-start-color: var(--color-warning);
+}
+
+.feedback--correct .feedback__icon {
+  color: var(--color-success);
+}
+
+.feedback--incorrect .feedback__icon {
+  color: var(--color-danger);
+}
+
+.feedback--revealed .feedback__icon {
+  color: var(--color-warning);
 }
 
 .feedback__headline {
@@ -1122,11 +1293,54 @@ a:hover {
 }
 
 .feedback__icon {
-  font-size: var(--text-lg);
+  display: inline-flex;
 }
 
 .feedback p:last-child {
   margin-bottom: 0;
+}
+
+/** The auto-advance countdown, so the session never moves on unannounced. */
+.auto-advance {
+  display: grid;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.auto-advance__track {
+  display: block;
+  block-size: 2px;
+  background: var(--color-border);
+}
+
+.auto-advance__bar {
+  display: block;
+  block-size: 100%;
+  background: var(--color-accent);
+  transform-origin: left center;
+  animation: auto-advance var(--auto-advance-duration) linear both;
+}
+
+@keyframes auto-advance {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/** Names the .option__number keycaps. Pointless without a number row. */
+.option-hint {
+  margin: var(--space-3) 0 0;
+}
+
+@media (pointer: coarse) {
+  .option-hint {
+    display: none;
+  }
 }
 
 .exercise-navigation {
@@ -1565,6 +1779,29 @@ a:hover {
   accent-color: var(--color-accent);
 }
 
+/** Placeholder blocks shown while a route chunk or a chapter is in flight. */
+.skeleton {
+  display: block;
+  block-size: 1rem;
+  background: var(--color-surface-muted);
+  animation: skeleton-pulse 1.4s ease-in-out infinite;
+}
+
+.skeleton--title {
+  block-size: var(--text-2xl);
+  inline-size: min(100%, 22rem);
+}
+
+.skeleton--line-short {
+  inline-size: 60%;
+}
+
+@keyframes skeleton-pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+
 /* ------------------------------------------------------------------ */
 /* Motion                                                              */
 /* ------------------------------------------------------------------ */
@@ -1607,29 +1844,24 @@ a:hover {
   animation: enter-rise var(--transition-medium) both;
 }
 
-/* Cards arrive in sequence rather than all at once. */
-.grid > *,
+/* Cards arrive in sequence rather than all at once.
+   Deliberately not applied to `.grid`: the catalogue filters and searches in
+   place, so every keystroke remounts its cards and replayed the entrance as a
+   flicker. The page-level arrival below already covers that page. */
 .stat-grid > * {
   animation: enter-rise var(--transition-medium) both;
 }
 
-.grid > *:nth-child(2),
 .stat-grid > *:nth-child(2) {
   animation-delay: 40ms;
 }
 
-.grid > *:nth-child(3),
 .stat-grid > *:nth-child(3) {
   animation-delay: 80ms;
 }
 
-.grid > *:nth-child(4),
 .stat-grid > *:nth-child(4) {
   animation-delay: 120ms;
-}
-
-.grid > *:nth-child(n + 5) {
-  animation-delay: 160ms;
 }
 
 .app-nav__link[aria-current='page']::after {
@@ -1684,6 +1916,9 @@ a:hover {
     margin: 0 calc(var(--container-padding) * -1);
     padding: 0 var(--container-padding);
     border-top: var(--border-width) solid var(--color-border);
+    /* The scrollbar is hidden, so the row needs some other sign that it runs
+       past the edge. Fades only while there is actually more to reach. */
+    mask-image: linear-gradient(90deg, #000 calc(100% - 24px), transparent);
   }
 
   .app-brand {
@@ -1754,7 +1989,22 @@ a:hover {
 .reduced-motion *::after {
   animation-duration: 0.01ms !important;
   animation-delay: 0s !important;
+  /* Without this an infinite animation restarts every 0.01ms and strobes —
+     the media-query block above has always had it; this one had not. */
+  animation-iteration-count: 1 !important;
   transition-duration: 0.01ms !important;
+}
+
+/* A clamped countdown snaps to full and claims time that has not passed, so
+   the bar is removed outright; the sentence beside it still explains itself. */
+@media (prefers-reduced-motion: reduce) {
+  .auto-advance__track {
+    display: none;
+  }
+}
+
+.reduced-motion .auto-advance__track {
+  display: none;
 }
 
 .reduced-motion .button:hover:not(:disabled),

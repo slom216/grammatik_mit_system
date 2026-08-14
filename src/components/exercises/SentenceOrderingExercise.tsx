@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import type { SentenceOrderingExercise as SentenceOrderingExerciseData } from '../../schemas/exerciseSchema';
+import { Icon } from '../common/Icon';
 
 export interface SentenceOrderingExerciseProps {
   exercise: SentenceOrderingExerciseData;
@@ -74,8 +75,8 @@ export function SentenceOrderingExercise({
               }}
               onDrop={(event) => event.preventDefault()}
             >
-              <span className="sentence-ordering__handle" aria-hidden="true">
-                ⠿
+              <span className="sentence-ordering__handle">
+                <Icon name="grip" />
               </span>
               <span className="sentence-ordering__text" lang="de">
                 {segment.text}
@@ -88,7 +89,7 @@ export function SentenceOrderingExercise({
                   onClick={() => move(id, -1)}
                   aria-label={`Move "${segment.text}" earlier in the sentence`}
                 >
-                  ←
+                  <Icon name="arrow-left" />
                 </button>
                 <button
                   type="button"
@@ -97,7 +98,7 @@ export function SentenceOrderingExercise({
                   onClick={() => move(id, 1)}
                   aria-label={`Move "${segment.text}" later in the sentence`}
                 >
-                  →
+                  <Icon name="arrow-right" />
                 </button>
               </span>
             </li>

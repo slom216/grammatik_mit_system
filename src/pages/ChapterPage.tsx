@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Card } from '../components/common/Card';
 import { Button } from '../components/common/Button';
 import { ChapterUnavailable } from '../components/common/ChapterUnavailable';
+import { Icon } from '../components/common/Icon';
 import { MasteryBadge } from '../components/progress/MasteryBadge';
 import { getRegistryEntry } from '../content/registry';
 import { getSection } from '../content/sections';
@@ -61,7 +62,10 @@ export function ChapterPage() {
             status={chapterProgress.status}
             bestScorePercent={chapterProgress.bestScorePercent}
           />
-          <span className="badge">≈ {chapter.estimatedMinutes} min</span>
+          <span className="badge">
+            <Icon name="clock" />
+            {chapter.estimatedMinutes} min
+          </span>
           {chapter.isDemo && <span className="badge badge--warning">Engine demo</span>}
         </p>
       </header>

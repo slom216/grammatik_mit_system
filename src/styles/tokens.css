@@ -64,10 +64,14 @@
   --reading-max-width: 43rem; /* 688 */
   --tap-target: 44px;
   --header-height: 72px;
+  --icon-size: 20px;
+  --icon-size-lg: 24px;
 
   /* Motion */
   --transition-fast: 160ms ease;
   --transition-medium: 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  /* Mirrors AUTO_ADVANCE_DELAY_MS in ExerciseRenderer.tsx — keep both in sync. */
+  --auto-advance-duration: 1200ms;
 
   /* Surfaces and text */
   --color-bg: light-dark(#f7f8fa, #111318);

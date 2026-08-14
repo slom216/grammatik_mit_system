@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, useLoaderData, useNavigate } from 'react-router-dom';
 import { Button } from '../components/common/Button';
 import { Card } from '../components/common/Card';
+import { LoadingBlock } from '../components/common/LoadingBlock';
 import { Modal } from '../components/common/Modal';
 import { ProgressBar } from '../components/common/ProgressBar';
 import { PracticeExercise } from '../components/practice/PracticeExercise';
@@ -105,11 +106,12 @@ export function CumulativeReviewPage() {
 
   if (!exercise) {
     return (
-      <div className="stack">
+      <div className="stack practice">
         <h1>Preparing the cumulative review…</h1>
         <p className="text-muted">
           Mixing exercises from chapters {fromNumber}–{toNumber}.
         </p>
+        <LoadingBlock label="Mixing the exercises" withTitle={false} />
       </div>
     );
   }

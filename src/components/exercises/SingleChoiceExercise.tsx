@@ -1,4 +1,5 @@
 import type { SingleChoiceExercise as SingleChoiceExerciseData } from '../../schemas/exerciseSchema';
+import { Icon } from '../common/Icon';
 
 export interface SingleChoiceExerciseProps {
   exercise: SingleChoiceExerciseData;
@@ -56,7 +57,7 @@ export function SingleChoiceExercise({
                 <span lang="de">{option.text}</span>
                 {showAnswer && (isCorrect || isSelected) && (
                   <span className="option__marker">
-                    <span aria-hidden="true">{isCorrect ? '✓' : '✗'}</span>
+                    <Icon name={isCorrect ? 'check' : 'cross'} />
                     <span className="visually-hidden">
                       {isCorrect ? ' correct answer' : ' your answer, incorrect'}
                     </span>
@@ -67,6 +68,13 @@ export function SingleChoiceExercise({
           );
         })}
       </ul>
+      {/* The .option__number keycaps are on screen either way; this says what
+          they are for. Hidden on touch, where there is no number row. */}
+      {!disabled && options.length > 1 && (
+        <p className="option-hint text-sm text-muted">
+          Press 1–{options.length} to answer.
+        </p>
+      )}
     </fieldset>
   );
 }

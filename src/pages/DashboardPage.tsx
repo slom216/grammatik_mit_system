@@ -6,6 +6,7 @@ import { ProgressBar } from '../components/common/ProgressBar';
 import { StreakDisplay } from '../components/progress/StreakDisplay';
 import { DailyGoalProgress } from '../components/progress/DailyGoalProgress';
 import { MasteryBadge } from '../components/progress/MasteryBadge';
+import { ProgressRing } from '../components/progress/ProgressRing';
 import {
   selectContinueChapter,
   selectCourseCompletion,
@@ -13,6 +14,8 @@ import {
 } from '../features/chapters/chapterSelectors';
 import { chapterPath, formatChapterNumber } from '../features/chapters/chapterUtils';
 import { selectDueHistories, useProgressStore } from '../features/progress/progressStore';
+import { selectPracticeSummary } from '../features/progress/dailyActivity';
+import { selectWeakSpots } from '../features/progress/weakSpots';
 import { useSettingsStore } from '../features/settings/settingsStore';
 import { getRegistryEntry } from '../content/registry';
 
@@ -26,6 +29,15 @@ export function DashboardPage() {
   // Only worth offering while the learner has no progress to place them.
   const hasStarted = Object.keys(progress.chapters).length > 0;
   const due = useMemo(() => selectDueHistories(progress), [progress]);
+  const answered = useMemo(
+    () => selectPracticeSummary(progress.answersByDay).totalAnswers,
+    [progress.answersByDay],
+  );
+  // The most actionable thing the app knows, and it was buried on /progress.
+  const weakSpots = useMemo(
+    () => selectWeakSpots(progress.exerciseHistory, { limit: 3 }),
+    [progress.exerciseHistory],
+  );
   const recentlyCompleted = useMemo(
     () =>
       Object.values(progress.chapters)
@@ -114,6 +126,13 @@ export function DashboardPage() {
         )}
 
         <div className="stack">
+          {/* The ring carries the headline percentage, so the stat row and the
+              chapters bar that both repeated it are gone. */}
+          <ProgressRing
+            percent={completion.percentComplete}
+            label="Course completed"
+            caption={`${completion.completedChapters} of ${completion.totalChapters} chapters`}
+          />
           <dl className="stat-grid">
             <div className="stat">
               <dt className="stat__label">Chapters completed</dt>
@@ -124,8 +143,8 @@ export function DashboardPage() {
               <dd className="stat__value">{completion.masteredChapters}</dd>
             </div>
             <div className="stat">
-              <dt className="stat__label">Of the course</dt>
-              <dd className="stat__value">{completion.percentComplete}%</dd>
+              <dt className="stat__label">Exercises answered</dt>
+              <dd className="stat__value">{answered}</dd>
             </div>
             <div className="stat">
               <dt className="stat__label">Due for review</dt>
@@ -134,22 +153,19 @@ export function DashboardPage() {
           </dl>
           <StreakDisplay answersByDay={progress.answersByDay} />
           <DailyGoalProgress answersByDay={progress.answersByDay} goal={dailyGoal} />
-          <ProgressBar
-            label="Chapters completed"
-            value={completion.completedChapters}
-            max={completion.totalChapters}
-            valueText={`${completion.completedChapters} / ${completion.totalChapters} (${completion.percentComplete}%)`}
-          />
         </div>
       </div>
 
-      <section className="panel" aria-labelledby="dashboard-review-heading">
-        <h2 className="panel__title" id="dashboard-review-heading">
-          Due for review
+      {/* What to do next — the review queue and the weakest topics are the same
+          question asked twice, so they share one panel instead of competing. */}
+      <section className="panel" aria-labelledby="dashboard-next-heading">
+        <h2 className="panel__title" id="dashboard-next-heading">
+          Work on next
         </h2>
+
         {due.length === 0 ? (
           <p className="text-muted">
-            Nothing is due. Exercises you get wrong appear here.
+            Nothing is due for review. Exercises you get wrong appear here.
           </p>
         ) : (
           <div className="stack stack--tight">
@@ -164,36 +180,32 @@ export function DashboardPage() {
             </p>
           </div>
         )}
-      </section>
 
-      <section className="panel" aria-labelledby="dashboard-recent-heading">
-        <h2 className="panel__title" id="dashboard-recent-heading">
-          Recently completed
-        </h2>
-        {recentlyCompleted.length === 0 ? (
-          <p className="text-muted">No chapter has been completed yet.</p>
-        ) : (
-          <ul>
-            {recentlyCompleted.map((chapter) => {
-              const title = getRegistryEntry(chapter.chapterNumber)?.title ?? 'Chapter';
-              return (
-                <li key={chapter.chapterNumber}>
-                  <Link to={chapterPath(chapter.chapterNumber)}>
-                    {formatChapterNumber(chapter.chapterNumber)} · {title}
-                  </Link>{' '}
-                  <span className="text-sm text-muted">
-                    best {chapter.bestScorePercent}%
-                  </span>
-                </li>
-              );
-            })}
-          </ul>
+        {/* Warning-toned, because here a short bar is the point: these are the
+            least accurate topics, and the accent used everywhere else would
+            read as progress earned rather than ground to make up. */}
+        {weakSpots.length > 0 && (
+          <div className="stack stack--tight weak-spots">
+            <h3>Topics to work on</h3>
+            {weakSpots.map((spot) => (
+              <ProgressBar
+                key={spot.tag}
+                label={spot.label}
+                value={spot.accuracyPercent}
+                valueText={`${spot.accuracyPercent}% of ${spot.answered}`}
+              />
+            ))}
+            <p className="text-sm text-muted">
+              Accuracy across every exercise tagged with that topic.{' '}
+              <Link to="/progress">See all topics</Link>.
+            </p>
+          </div>
         )}
       </section>
 
-      <section className="panel" aria-labelledby="dashboard-levels-heading">
-        <h2 className="panel__title" id="dashboard-levels-heading">
-          Level progress
+      <section className="panel" aria-labelledby="dashboard-course-heading">
+        <h2 className="panel__title" id="dashboard-course-heading">
+          Your course
         </h2>
         <div className="stack">
           {levels.map((level) => (
@@ -206,6 +218,27 @@ export function DashboardPage() {
             />
           ))}
         </div>
+
+        {recentlyCompleted.length > 0 && (
+          <div className="stack stack--tight">
+            <h3>Recently completed</h3>
+            <ul>
+              {recentlyCompleted.map((chapter) => {
+                const title = getRegistryEntry(chapter.chapterNumber)?.title ?? 'Chapter';
+                return (
+                  <li key={chapter.chapterNumber}>
+                    <Link to={chapterPath(chapter.chapterNumber)}>
+                      {formatChapterNumber(chapter.chapterNumber)} · {title}
+                    </Link>{' '}
+                    <span className="text-sm text-muted">
+                      best {chapter.bestScorePercent}%
+                    </span>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        )}
       </section>
     </div>
   );

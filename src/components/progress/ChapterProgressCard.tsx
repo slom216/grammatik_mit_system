@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import type { ChapterCardModel } from '../../features/chapters/chapterSelectors';
 import { chapterPath, formatChapterNumber } from '../../features/chapters/chapterUtils';
+import { Icon } from '../common/Icon';
 import { MasteryBadge } from './MasteryBadge';
 
 export interface ChapterProgressCardProps {
@@ -42,7 +43,10 @@ export function ChapterProgressCard({ chapter }: ChapterProgressCardProps) {
           bestScorePercent={chapter.bestScorePercent}
         />
         {chapter.estimatedMinutes !== undefined && (
-          <span>≈ {chapter.estimatedMinutes} min</span>
+          <span className="row row--tight">
+            <Icon name="clock" />
+            {chapter.estimatedMinutes} min
+          </span>
         )}
         {chapter.reviewDue && <span className="badge badge--warning">Review due</span>}
         {chapter.bookmarked && <span className="badge">Bookmarked</span>}
