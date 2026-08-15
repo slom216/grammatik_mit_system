@@ -25,7 +25,9 @@ export type IconName =
   | 'circle-check'
   | 'arrow-left'
   | 'arrow-right'
-  | 'grip';
+  | 'grip'
+  | 'sun'
+  | 'moon';
 
 const ICON_PATHS: Record<IconName, string> = {
   check: 'M4 12.5 9 17.5 20 6.5',
@@ -43,6 +45,11 @@ const ICON_PATHS: Record<IconName, string> = {
   'arrow-left': 'M19 12H5 M11 6l-6 6 6 6',
   'arrow-right': 'M5 12h14 M13 6l6 6-6 6',
   grip: 'M9 6h.01 M9 12h.01 M9 18h.01 M15 6h.01 M15 12h.01 M15 18h.01',
+  sun:
+    'M12 16.5a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Z M12 2.5v2 M12 19.5v2 ' +
+    'M2.5 12h2 M19.5 12h2 M5.2 5.2l1.4 1.4 M17.4 17.4l1.4 1.4 ' +
+    'M18.8 5.2l-1.4 1.4 M6.6 17.4l-1.4 1.4',
+  moon: 'M20.5 14.8A8.5 8.5 0 1 1 9.2 3.5a7 7 0 0 0 11.3 11.3Z',
 };
 
 export interface IconProps {

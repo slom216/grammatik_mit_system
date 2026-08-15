@@ -4,3 +4,7 @@ node_modules
 playwright-report
 test-results
 package-lock.json
+
+# The design brief, authored elsewhere. Prettier de-indents its YAML front
+# matter, which collapses the nested token groups into a flat, wrong document.
+design.md

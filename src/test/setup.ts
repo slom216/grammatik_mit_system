@@ -18,6 +18,25 @@ class RequestWithoutJsdomSignal extends NativeRequest {
 }
 globalThis.Request = RequestWithoutJsdomSignal;
 
+/**
+ * jsdom has no `matchMedia`, which the header theme toggle reads to resolve
+ * "system". A stub that reports "light" and never changes is the right default
+ * here; the tests that care about the dark case spy on it themselves.
+ */
+if (typeof window.matchMedia !== 'function') {
+  window.matchMedia = (query: string) =>
+    ({
+      matches: false,
+      media: query,
+      onchange: null,
+      addEventListener: () => {},
+      removeEventListener: () => {},
+      addListener: () => {},
+      removeListener: () => {},
+      dispatchEvent: () => false,
+    }) as unknown as MediaQueryList;
+}
+
 /** jsdom's Blob/File has no `text()`, which the backup import uses. */
 if (typeof Blob.prototype.text !== 'function') {
   Blob.prototype.text = function readAsText(this: Blob): Promise<string> {

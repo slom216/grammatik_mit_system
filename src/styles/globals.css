@@ -1,9 +1,11 @@
 @import './tokens.css';
 
 /**
- * "Modern Editorial" (design.md): quiet structure with selective emphasis.
- * Neutral surfaces and strong typography carry the page; the indigo accent is
- * reserved for primary actions, links, active navigation and selected states.
+ * "Junior Achievement SoCal" (design.md): a bright, airy light system. Deep
+ * teal carries the type and the structure, white and cool-white surfaces carry
+ * the page, and the yellow-lime is reserved for the primary action and for
+ * chips. Containers are flat with light borders, actions are pill-shaped, and
+ * section rhythm is generous.
  */
 
 *,
@@ -22,16 +24,19 @@ body {
   color: var(--color-text);
   font-family: var(--font-sans);
   font-size: var(--text-base);
+  font-weight: 500; /* body-md */
   line-height: var(--leading-normal);
   -webkit-font-smoothing: antialiased;
 }
 
+/* Every headline style in the brief is 800 with a tight line height and no
+   tracking — heavy, compact, confident. */
 h1,
 h2,
 h3,
 h4 {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 800;
   line-height: var(--leading-tight);
   letter-spacing: var(--tracking-tight);
   margin: 0 0 var(--space-3);
@@ -48,12 +53,11 @@ h2 {
 
 h3 {
   font-size: var(--text-xl);
-  font-weight: 650;
 }
 
+/* Below headline-sm the scale runs out; body-lg at heading weight fills in. */
 h4 {
   font-size: var(--text-lg);
-  font-weight: 650;
 }
 
 p {
@@ -148,8 +152,9 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: light-dark(rgb(247 248 250 / 88%), rgb(17 19 24 / 88%));
-  backdrop-filter: blur(14px);
+  /* Flat and opaque: the brief rules out glass effects, so the header is a
+     plain white band separated by a light border. */
+  background: var(--color-surface);
   border-bottom: var(--border-width) solid var(--color-border);
 }
 
@@ -210,10 +215,12 @@ a:hover {
   min-height: var(--tap-target);
   padding: var(--space-2) var(--space-3);
   border-radius: var(--radius-sm);
+  /* nav-link: 14px / 700, teal. Inactive items sit at primary-60 weight so the
+     current page still leads. */
   color: var(--color-text-muted);
   text-decoration: none;
   font-size: var(--text-sm);
-  font-weight: 500;
+  font-weight: 700;
   transition: color var(--transition-fast);
 }
 
@@ -223,7 +230,6 @@ a:hover {
 
 .app-nav__link[aria-current='page'] {
   color: var(--color-text);
-  font-weight: 600;
 }
 
 /* The active item is marked by an indicator, not only by colour. */
@@ -238,6 +244,31 @@ a:hover {
   background: var(--color-accent);
 }
 
+/* Quiet by design: the header's one dominant element is the primary action
+   beside it, so the toggle stays a bare icon until it is hovered. */
+.theme-toggle {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--tap-target);
+  height: var(--tap-target);
+  padding: 0;
+  border: var(--border-width) solid transparent;
+  border-radius: var(--radius-full);
+  background: transparent;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition:
+    color var(--transition-fast),
+    background-color var(--transition-fast);
+}
+
+.theme-toggle:hover {
+  color: var(--color-text);
+  background: var(--color-surface-muted);
+}
+
 .app-header__action {
   flex: 0 0 auto;
 }
@@ -246,11 +277,20 @@ a:hover {
   flex: 1;
 }
 
-/* Closing band, deliberately dark in both themes. */
+/* Closing band, colour-blocked in the primary teal in both themes — depth in
+   this brief comes from blocking, not from shadow. Its text tokens are fixed
+   rather than theme-dependent, and the derived ones (focus) are restated,
+   because a `var()` inside a custom-property declaration resolves on the
+   element that declares it and would otherwise inherit the page's value. */
 .app-footer {
-  background: light-dark(#111318, #0c0e13);
-  color: #d5d9e0;
-  border-top: var(--border-width) solid light-dark(transparent, var(--color-border));
+  --color-text: #ffffff;
+  --color-text-muted: var(--color-accent-cyan);
+  --color-accent: var(--color-tertiary);
+  --color-focus: var(--color-tertiary);
+  --focus-ring: 2px solid var(--color-focus);
+
+  background: var(--color-primary);
+  color: var(--color-text);
   font-size: var(--text-sm);
 }
 
@@ -281,23 +321,23 @@ a:hover {
   font-weight: 600;
   letter-spacing: var(--tracking-label);
   text-transform: uppercase;
-  color: #8b93a3;
+  color: var(--color-text-muted);
 }
 
 .app-footer a {
-  color: #f2f4f7;
+  color: var(--color-text);
   text-decoration: none;
 }
 
 .app-footer a:hover {
-  color: #ffffff;
+  color: var(--color-accent);
   text-decoration: underline;
 }
 
 .app-footer__note {
   max-width: var(--reading-max-width);
   margin: 0;
-  color: #8b93a3;
+  color: var(--color-text-muted);
 }
 
 /* ------------------------------------------------------------------ */
@@ -361,7 +401,7 @@ a:hover {
   display: block;
   margin-bottom: var(--space-2);
   font-size: var(--text-xs);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: var(--tracking-label);
   text-transform: uppercase;
   color: var(--color-accent);
@@ -486,11 +526,17 @@ a:hover {
 /* Components                                                          */
 /* ------------------------------------------------------------------ */
 
+/**
+ * design.md's `card`: a plain white container on the cool-white page, a faint
+ * 1px outline, 8px corners, 16px padding. No shadow — separation comes from
+ * the border and the surrounding space.
+ */
 .card {
   background: var(--color-surface);
+  color: var(--color-text);
   border: var(--border-width) solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: var(--space-5);
+  border-radius: var(--radius-md);
+  padding: 16px;
 }
 
 .card__title {
@@ -498,16 +544,21 @@ a:hover {
   font-size: var(--text-xl);
 }
 
-/** Elevation marks hierarchy, so only a few surfaces get it. */
+/** The lead card on a page. The brief has no elevation to spend, so it stands
+    out through colour blocking and space instead of shadow. */
 .card--elevated {
-  border-radius: var(--radius-xl);
-  padding: var(--space-6);
-  box-shadow: var(--shadow-md);
+  background: var(--color-surface-muted);
+  border-color: transparent;
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
 }
 
+/* The whole card is a link, so it must not take link colour. Not `inherit`:
+   that reaches past the card to the dark page and puts white text on the white
+   surface. The card's own text token is what it wants. */
 .card--interactive {
   display: block;
-  color: inherit;
+  color: var(--color-text);
   text-decoration: none;
   transition:
     transform var(--transition-fast),
@@ -521,19 +572,22 @@ a:hover {
   transform: translateY(-2px);
 }
 
+/* Buttons are the most expressive component in the brief: pill-shaped, 56px
+   tall, bold 17px button-text. */
 .button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: var(--space-2);
-  min-height: 48px;
+  min-height: 56px;
   min-width: var(--tap-target);
-  padding: 0 22px;
-  border-radius: var(--radius-md);
+  padding: 14px 28px;
+  border-radius: var(--radius-full);
   border: var(--border-width) solid transparent;
   font: inherit;
-  font-size: var(--text-sm);
-  font-weight: 600;
+  font-size: var(--text-md);
+  font-weight: 700;
+  letter-spacing: var(--tracking-wide);
   line-height: 1.2;
   cursor: pointer;
   text-decoration: none;
@@ -547,44 +601,58 @@ a:hover {
   transform: translateY(-1px);
 }
 
+/* The conversion action: the tertiary yellow-lime with primary teal text. The
+   one place the brief spends its loudest colour. Hover deepens the fill rather
+   than adding elevation. */
 .button--primary {
-  background: var(--color-accent);
-  color: var(--color-on-accent);
+  background: var(--color-tertiary);
+  color: var(--color-on-tertiary);
 }
 
 .button--primary:hover:not(:disabled) {
-  background: var(--color-accent-hover);
+  background: var(--color-accent-lime);
 }
 
+/* design.md's button-secondary: white, teal text, an implied boundary, 48px. */
 .button--secondary {
   background: var(--color-surface);
   color: var(--color-text);
   border-color: var(--color-border-strong);
+  min-height: 48px;
+  padding: 12px 24px;
 }
 
 .button--secondary:hover:not(:disabled) {
   background: var(--color-surface-muted);
 }
 
+/* design.md's button-tertiary: text-only, label-md, square, no fill. It keeps
+   inline padding and a 44px hit area so it still clears the tap target. */
 .button--ghost {
   background: transparent;
   color: var(--color-text);
-  padding: 0 16px;
+  padding: 0 var(--space-4);
+  min-height: var(--tap-target);
+  border-radius: 0;
+  font-size: var(--text-label);
+  font-weight: 500;
 }
 
 .button--ghost:hover:not(:disabled) {
-  background: var(--color-surface-muted);
+  color: var(--color-accent);
+  background: transparent;
 }
 
+/* The one place the restrained error red appears as an action: outlined, so it
+   stays visually secondary to the cheerful palette. */
 .button--danger {
-  background: var(--color-danger-soft);
+  background: transparent;
   color: var(--color-danger);
   border-color: var(--color-danger-border);
 }
 
 .button--danger:hover:not(:disabled) {
   background: var(--color-danger-soft);
-  border-color: var(--color-danger);
 }
 
 .button:disabled {
@@ -593,24 +661,26 @@ a:hover {
   transform: none;
 }
 
+/* design.md's `chip`: pill, label-sm (12/700, 0.04em), 6px 12px padding. The
+   default is the softened tint; `--accent` is the bright tertiary version. */
 .badge {
   display: inline-flex;
   align-items: center;
   gap: var(--space-1);
-  padding: 6px 10px;
+  padding: 6px 12px;
   border-radius: var(--radius-full);
   font-size: var(--text-xs);
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  line-height: 1;
+  font-weight: 700;
+  letter-spacing: var(--tracking-label);
+  line-height: 1.33;
   border: var(--border-width) solid transparent;
   background: var(--color-surface-muted);
   color: var(--color-text-muted);
 }
 
 .badge--accent {
-  background: var(--color-accent-soft);
-  color: var(--color-accent);
+  background: var(--color-tertiary);
+  color: var(--color-on-tertiary);
 }
 
 .badge--success {
@@ -625,6 +695,10 @@ a:hover {
   border-color: var(--color-warning-border);
 }
 
+/* The four cases used to carry four hues. The brief warns against several
+   saturated accents at once, so they are told apart by tonal weight within the
+   teal family instead — quiet fill, soft fill, outline, solid. Each pill also
+   names its case in text, so colour was never the only cue. */
 .badge--case-nominative {
   background: var(--color-surface-muted);
   color: var(--color-text-muted);
@@ -634,29 +708,25 @@ a:hover {
 .badge--case-accusative {
   background: var(--color-accent-soft);
   color: var(--color-accent);
-  border-color: var(--color-accent);
+  border-color: var(--color-accent-soft);
 }
 
 .badge--case-dative {
-  background: var(--color-success-soft);
-  color: var(--color-success);
-  border-color: var(--color-success-border);
+  background: transparent;
+  color: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 .badge--case-genitive {
-  background: var(--color-genitive-soft);
-  color: var(--color-genitive);
-  border-color: var(--color-genitive-border);
+  background: var(--color-accent-fill);
+  color: var(--color-on-accent);
+  border-color: var(--color-accent-fill);
 }
 
 .badge--case-two-way {
-  background: linear-gradient(
-    90deg,
-    var(--color-accent-soft) 50%,
-    var(--color-success-soft) 50%
-  );
+  background: linear-gradient(90deg, var(--color-accent-soft) 50%, transparent 50%);
   color: var(--color-text);
-  border-color: var(--color-border-strong);
+  border-color: var(--color-accent);
 }
 
 /** Segmented control: a row of radios or pressed buttons. */
@@ -792,7 +862,7 @@ a:hover {
 .grammar-table__wrapper {
   overflow-x: auto;
   border: var(--border-width) solid var(--color-border);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-md);
   background: var(--color-surface);
 }
 
@@ -945,7 +1015,9 @@ a:hover {
   width: 12px;
   height: 12px;
   flex-shrink: 0;
-  border-radius: var(--radius-sm);
+  /* Not --radius-sm: 8px on a 12px cell is a circle, and the calendar has to
+     read as a grid of tiles. */
+  border-radius: 3px;
   border: var(--border-width) solid var(--color-border);
   background: var(--color-heat-0);
 }
@@ -992,10 +1064,11 @@ a:hover {
   margin: 0;
 }
 
-/** The one accent-container panel in a lesson. */
+/** The one accent-container panel in a lesson: the pale teal informational
+    tint the brief reserves for callouts. */
 .remember-box {
-  background: var(--color-accent-soft);
-  border-radius: var(--radius-lg);
+  background: var(--color-surface-muted);
+  border-radius: var(--radius-md);
   padding: var(--space-5);
 }
 
@@ -1192,8 +1265,8 @@ a:hover {
 }
 
 .option--selected .option__number {
-  border-color: var(--color-accent);
-  background: var(--color-accent);
+  border-color: var(--color-accent-fill);
+  background: var(--color-accent-fill);
   color: var(--color-on-accent);
 }
 
@@ -1202,25 +1275,27 @@ a:hover {
   gap: var(--space-3);
 }
 
+/* design.md's `input`: white, teal text, soft border, 4px corners, 12/14
+   padding, body-md. The size is floored at 16px because iOS zooms the page on
+   focus below that, which the desktop-oriented brief does not account for.
+   Focus emphasises the border, not a glow. */
 .text-answer__field {
   width: 100%;
   min-height: 48px;
-  padding: var(--space-3) 14px;
+  padding: 12px 14px;
   font: inherit;
-  font-size: var(--text-lg);
+  font-size: max(16px, var(--text-base));
   color: var(--color-text);
   background: var(--color-surface);
   border: var(--border-width) solid var(--color-border-strong);
-  border-radius: var(--radius-md);
-  transition:
-    border-color var(--transition-fast),
-    box-shadow var(--transition-fast);
+  border-radius: var(--radius-sm);
+  transition: border-color var(--transition-fast);
 }
 
 .text-answer__field:focus {
   outline: none;
   border-color: var(--color-accent);
-  box-shadow: var(--focus-glow);
+  box-shadow: 0 0 0 1px var(--color-accent);
 }
 
 .umlaut-helper {
@@ -1249,7 +1324,7 @@ a:hover {
    a solid rule down the leading edge, and the mark itself. With square corners
    the rule reads as editorial structure rather than decoration. */
 .feedback {
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-md);
   padding: var(--space-5);
   background: var(--color-surface-muted);
   border-inline-start: 3px solid var(--color-border-strong);
@@ -1624,9 +1699,9 @@ a:hover {
   padding: var(--space-4);
   background: var(--color-surface);
   border: var(--border-width) solid var(--color-border-strong);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-md);
   box-shadow: var(--shadow-md);
-  animation: enter-rise var(--transition-medium) both;
+  animation: enter-rise var(--transition-medium) backwards;
 }
 
 .reload-prompt__text {
@@ -1638,8 +1713,7 @@ a:hover {
 .modal__backdrop {
   position: fixed;
   inset: 0;
-  background: rgb(17 19 24 / 45%);
-  backdrop-filter: blur(4px);
+  background: var(--color-overlay);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1649,7 +1723,7 @@ a:hover {
 
 .modal {
   background: var(--color-surface);
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-lg);
   border: var(--border-width) solid var(--color-border);
   box-shadow: var(--shadow-md);
   padding: var(--space-6);
@@ -1746,10 +1820,11 @@ a:hover {
   color: var(--color-text);
 }
 
+/* A pressed filter is a chip in the brief's sense: bright tertiary, teal text. */
 .filter-bar__button[aria-pressed='true'] {
-  background: var(--color-accent);
-  border-color: var(--color-accent);
-  color: var(--color-on-accent);
+  background: var(--color-tertiary);
+  border-color: var(--color-tertiary);
+  color: var(--color-on-tertiary);
 }
 
 .setting-row {
@@ -1811,6 +1886,12 @@ a:hover {
  * in, an answer being judged, a dialog opening. Everything is short, moves a
  * few pixels, and is switched off by the reduced-motion rules at the end of
  * this file.
+ *
+ * The fill mode is `backwards`, never `both`. A forwards fill keeps animating
+ * `transform`, so the element reports a matrix rather than `none` for good —
+ * and a transformed ancestor becomes the containing block for `position:
+ * fixed`, which dropped the exit-practice dialog outside the viewport. These
+ * animations all end at the element's natural state, so they never need it.
  */
 
 @keyframes enter-rise {
@@ -1841,7 +1922,7 @@ a:hover {
 
 /* Each route renders a new element here, so this replays on navigation. */
 .app-main__inner > * {
-  animation: enter-rise var(--transition-medium) both;
+  animation: enter-rise var(--transition-medium) backwards;
 }
 
 /* Cards arrive in sequence rather than all at once.
@@ -1849,7 +1930,7 @@ a:hover {
    place, so every keystroke remounts its cards and replayed the entrance as a
    flicker. The page-level arrival below already covers that page. */
 .stat-grid > * {
-  animation: enter-rise var(--transition-medium) both;
+  animation: enter-rise var(--transition-medium) backwards;
 }
 
 .stat-grid > *:nth-child(2) {
@@ -1865,26 +1946,26 @@ a:hover {
 }
 
 .app-nav__link[aria-current='page']::after {
-  animation: indicator-in var(--transition-medium) both;
+  animation: indicator-in var(--transition-medium) backwards;
   transform-origin: left center;
 }
 
 /* Judging an answer: the verdict slides in and its mark lands after it. */
 .feedback {
-  animation: enter-rise var(--transition-medium) both;
+  animation: enter-rise var(--transition-medium) backwards;
 }
 
 .option__marker,
 .error-spotting__correction {
-  animation: pop-in var(--transition-medium) 60ms both;
+  animation: pop-in var(--transition-medium) 60ms backwards;
 }
 
 .modal__backdrop {
-  animation: enter-fade var(--transition-fast) both;
+  animation: enter-fade var(--transition-fast) backwards;
 }
 
 .modal {
-  animation: enter-rise var(--transition-medium) both;
+  animation: enter-rise var(--transition-medium) backwards;
 }
 
 /* Pressing a control should feel physical. */

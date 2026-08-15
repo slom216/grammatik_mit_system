@@ -1,62 +1,86 @@
 /**
- * Shared design tokens ("Modern Editorial", see design.md at the repo root).
- * Components only reference these variables, never raw colour or spacing
- * values.
+ * Shared design tokens ("Junior Achievement SoCal", see design.md at the repo
+ * root). Components only reference these variables, never raw colour or
+ * spacing values.
  *
- * Colours are declared once with `light-dark()`. The active side is chosen by
- * `color-scheme`, which follows the OS by default and is overridden by the
- * `data-theme` attribute the app stamps on <html> when the learner picks a
- * theme explicitly (absent attribute = follow the system).
+ * The brief is a bright, optimistic light system: white and cool-white
+ * surfaces, deep teal type and structure, a vivid yellow-lime reserved for the
+ * primary call to action. Flat containers, light borders, pill actions,
+ * generous space.
+ *
+ * The light side of every `light-dark()` pair below is design.md verbatim; the
+ * dark side is the derived counterpart, kept because the app ships a
+ * light/dark/system switcher the brief does not cover. The active side is
+ * chosen by `color-scheme`, which follows the OS by default and is overridden
+ * by the `data-theme` attribute the app stamps on <html> when the learner
+ * picks a theme explicitly (absent attribute = follow the system).
  */
 :root {
   color-scheme: light dark;
 
-  /* Spacing — 8px grid (the two smallest steps are half-steps) */
-  --space-1: 0.25rem;
-  --space-2: 0.5rem;
-  --space-3: 0.75rem;
-  --space-4: 1rem;
-  --space-5: 1.5rem;
-  --space-6: 2rem;
-  --space-7: 3rem;
-  --space-8: 4rem;
-  --space-9: 6rem;
+  /* Spacing — design.md's ladder (6 / 14 / 28 / 40 / 88) with interpolated
+     steps so the nine existing names all resolve to a value on the scale. */
+  --space-1: 0.375rem; /* 6  — xs, micro gaps */
+  --space-2: 0.625rem; /* 10 */
+  --space-3: 0.875rem; /* 14 — sm */
+  --space-4: 1.25rem; /* 20 */
+  --space-5: 1.75rem; /* 28 — md */
+  --space-6: 2.5rem; /* 40 — lg */
+  --space-7: 3.5rem; /* 56 */
+  --space-8: 4.5rem; /* 72 */
+  --space-9: 5.5rem; /* 88 — xl, the section gap */
 
   /* Page gutter, widened at tablet and desktop further down this file */
   --container-padding: 20px;
 
-  /* Typography */
+  /* Typography — design.md names a `Heading Font` and a `Body Font` but gives
+     no families. Manrope covers both roles: it carries the 800 weight the
+     headlines ask for and stays legible at the 15px body size, and it is
+     already self-hosted, so no second webfont is loaded. */
   --font-sans:
-    'Inter Variable', 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI',
+    'Manrope Variable', 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI',
     Roboto, Arial, sans-serif;
-  --font-display: 'Manrope Variable', 'Manrope', var(--font-sans);
+  --font-display: var(--font-sans);
   --font-mono: ui-monospace, 'SFMono-Regular', 'Menlo', 'Consolas', monospace;
-  --text-xs: 0.75rem; /* 12 — labels, eyebrows */
-  --text-sm: 0.875rem; /* 14 — supporting text */
-  --text-base: 1rem; /* 16 — body */
-  --text-lg: 1.125rem; /* 18 — lead paragraphs */
-  --text-xl: 1.5rem; /* 24 — card titles, exercise prompts */
-  --text-2xl: 2rem; /* 32 — section headings */
-  --text-3xl: 2.5rem; /* 40 — page headlines */
-  --text-4xl: 3.5rem; /* 56 — display headline, stat numbers */
-  --leading-normal: 1.625;
-  --leading-tight: 1.2;
-  --tracking-tight: -0.025em;
-  --tracking-display: -0.035em;
-  --tracking-label: 0.08em;
 
-  /* Radii, borders, shadows.
-     Square by request: this deliberately overrides design.md's shape scale
-     (8/12/16/20px, pill-shaped badges). The names are kept so the whole shape
-     language can be turned back on from this one block. */
-  --radius-sm: 0;
-  --radius-md: 0;
-  --radius-lg: 0;
-  --radius-xl: 0;
-  --radius-full: 0;
+  /* The brief's scale. The three largest are clamped: design.md is written for
+     a desktop landing page and 54/57px overflows a 360px viewport. */
+  --text-xs: 0.75rem; /* 12   — label-sm */
+  --text-label: 0.9rem; /* 14.4 — label-md */
+  --text-sm: 0.875rem; /* 14   — body-sm, nav-link */
+  --text-base: 0.9375rem; /* 15   — body-md */
+  --text-md: 1.0625rem; /* 17   — label-lg, button-text */
+  --text-lg: 1.25rem; /* 20   — body-lg */
+  --text-xl: 1.75rem; /* 28   — headline-sm */
+  --text-2xl: clamp(1.625rem, 5vw, 2.25rem); /* 36 — headline-md */
+  --text-3xl: clamp(2rem, 7vw, 3.375rem); /* 54 — headline-lg */
+  --text-4xl: clamp(2.25rem, 8vw, 3.5625rem); /* 57 — headline-display */
+
+  /* Ratios, not absolutes, so they hold at every clamped size.
+     1.2 ≈ 68/57 (display), 1.53 ≈ 22.95/15 (body). */
+  --leading-normal: 1.53;
+  --leading-tight: 1.2;
+  /* design.md sets letterSpacing to 0 on every style except label-sm, which
+     takes 0.04em. The names are kept so a future brief can reintroduce
+     tracking in one place. */
+  --tracking-tight: 0;
+  --tracking-display: 0;
+  --tracking-wide: 0;
+  --tracking-label: 0.04em; /* label-sm — uppercase micro-labels, chips */
+
+  /* Radii, borders, shadows. The shape language is the brief's: pill actions
+     and chips, moderate rounding on cards and fields. */
+  --radius-sm: 0.25rem; /* 4  */
+  --radius-md: 0.5rem; /* 8  */
+  --radius-lg: 1rem; /* 16 */
+  --radius-xl: 1.75rem; /* 28 */
+  --radius-full: 9999px;
   --border-width: 1px;
-  --shadow-sm: 0 8px 30px light-dark(rgb(17 19 24 / 6%), rgb(0 0 0 / 35%));
-  --shadow-md: 0 18px 50px light-dark(rgb(17 19 24 / 8%), rgb(0 0 0 / 45%));
+  /* Depth is handled very lightly: the brief is flat, with borders and colour
+     blocking doing the hierarchy work. Only modals and the few elevated cards
+     use these at all. */
+  --shadow-sm: 0 1px 2px light-dark(rgb(40 95 116 / 8%), rgb(0 0 0 / 40%));
+  --shadow-md: 0 8px 24px light-dark(rgb(40 95 116 / 12%), rgb(0 0 0 / 50%));
 
   /* Layout */
   --shell-max-width: 80rem; /* 1280 */
@@ -73,48 +97,94 @@
   /* Mirrors AUTO_ADVANCE_DELAY_MS in ExerciseRenderer.tsx — keep both in sync. */
   --auto-advance-duration: 1200ms;
 
+  /* Brand constants — design.md's palette verbatim, the same value in every
+     theme and on every surface. Everything below is derived from these. */
+  --color-primary: #285f74;
+  --color-secondary: #00a0af;
+  --color-tertiary: #e6e33c;
+  --color-neutral: #ffffff;
+  --color-primary-60: #5f8f9f;
+  --color-primary-10: #eaf2f4;
+  --color-accent-lime: #dceb4a;
+  --color-accent-cyan: #a7e8ea;
+  --color-error: #d64545;
+  --color-overlay: #285f74cc;
+
   /* Surfaces and text */
-  --color-bg: light-dark(#f7f8fa, #111318);
-  --color-surface: light-dark(#ffffff, #181b22);
-  --color-surface-muted: light-dark(#f1f3f5, #212530);
-  --color-border: light-dark(#e2e5e9, #2b303b);
-  --color-border-strong: light-dark(#c8cdd4, #3d4450);
-  --color-text: light-dark(#111318, #f3f5f8);
-  --color-text-muted: light-dark(#6b7280, #9ba3b2);
-  --color-text-inverse: light-dark(#ffffff, #111318);
+  --color-bg: light-dark(#f6fbfc, #0b1d24);
+  --color-surface: light-dark(#ffffff, #102a33);
+  --color-surface-muted: light-dark(var(--color-primary-10), #17363f);
+  --color-border: light-dark(#285f7426, #ffffff26);
+  --color-border-strong: light-dark(#285f7459, #ffffff4d);
+  --color-text: light-dark(var(--color-primary), var(--color-primary-10));
+  /* design.md assigns primary-60 to muted text, but #5F8F9F only reaches
+     3.6:1 on white. Muted body copy uses the same hue darkened to 4.7:1;
+     primary-60 itself still does the decorative work it is good at (borders,
+     dividers, quiet marks). */
+  --color-text-muted: light-dark(#4a7a8b, #a3c0c9);
+  --color-text-inverse: light-dark(#ffffff, var(--color-primary));
 
-  /* The one brand colour: primary actions, links, selected states */
-  --color-accent: light-dark(#5b5ce2, #9192f2);
-  --color-accent-hover: light-dark(#494ac8, #afb0fa);
-  --color-accent-soft: light-dark(#ececff, #242552);
-  --color-on-accent: #ffffff;
+  /* Emphasis, links, selected states, progress. design.md gives this role to
+     the secondary aqua, which at #00A0AF reads 3.2:1 on white — so text and
+     strokes use the same hue darkened to 4.8:1. Solid fills that carry a label
+     use the primary teal instead, the one colour in the palette that takes
+     white text cleanly (7.2:1). The lime is not a general accent: it is
+     reserved for the primary action and for chips. */
+  --color-accent: light-dark(#007f8b, #5fd6e2);
+  --color-accent-hover: light-dark(#00646e, #8ae4ec);
+  --color-accent-soft: color-mix(
+    in oklab,
+    var(--color-secondary) 12%,
+    var(--color-surface)
+  );
+  --color-accent-fill: light-dark(var(--color-primary), #5fd6e2);
+  --color-on-accent: light-dark(#ffffff, #0b1d24);
+  /* The primary action: design.md's tertiary lime carrying primary teal text
+     (5.3:1). Fixed in both themes — it is the brand's one loud moment. */
+  --color-on-tertiary: var(--color-primary);
 
-  /* Semantic state colours — never decorative */
-  --color-success: light-dark(#16815d, #5fd3a6);
-  --color-success-soft: light-dark(#e4f4ee, #12291f);
-  --color-success-border: light-dark(#8fcbb6, #2f6b54);
-  --color-danger: light-dark(#c13b3b, #f08a8a);
-  --color-danger-soft: light-dark(#fbe7e7, #2e1717);
-  --color-danger-border: light-dark(#e3a0a0, #7a3838);
-  --color-warning: light-dark(#b7791f, #e7b85c);
-  --color-warning-soft: light-dark(#fbf0dc, #2c2211);
-  --color-warning-border: light-dark(#dfbe7c, #6e5726);
+  /* design.md names only an error colour. Success reuses the aqua accent
+     rather than introducing a green the brief does not have, and "revealed"
+     (the answer shown before it was answered) takes a darkened lime — the
+     palette's own third hue, at 5.7:1 rather than the raw 1.3:1. */
+  --color-success: var(--color-accent);
+  --color-success-soft: var(--color-accent-soft);
+  --color-success-border: var(--color-accent);
+  --color-danger: light-dark(#c93b3b, #f08585);
+  --color-danger-soft: color-mix(in oklab, var(--color-error) 12%, var(--color-surface));
+  --color-danger-border: var(--color-danger);
+  --color-warning: light-dark(#6b6a12, var(--color-accent-lime));
+  --color-warning-soft: color-mix(
+    in oklab,
+    var(--color-tertiary) 24%,
+    var(--color-surface)
+  );
+  --color-warning-border: var(--color-warning);
 
-  /* Genitive keeps its own hue so the four case pills stay distinguishable */
-  --color-genitive: light-dark(#7a3fa8, #c79bec);
-  --color-genitive-soft: light-dark(#f2e8fa, #271a33);
-  --color-genitive-border: light-dark(#c9a6e0, #5e3f7c);
-
-  --color-focus: light-dark(#5b5ce2, #9192f2);
+  --color-focus: var(--color-accent);
   --focus-ring: 2px solid var(--color-focus);
   --focus-offset: 2px;
-  --focus-glow: 0 0 0 3px light-dark(rgb(91 92 226 / 18%), rgb(145 146 242 / 25%));
 
-  /* Sequential ramp for the activity heatmap, 0 (none) to 4 (busiest) */
+  /* Sequential ramp for the activity heatmap, 0 (none) to 4 (busiest).
+     One hue, five tones — the brief allows no competing colour.
+     These resolve here, on :root, and inherit already-resolved. A surface that
+     re-declares its colour tokens has to restate this ramp too. */
   --color-heat-0: var(--color-surface-muted);
-  --color-heat-1: light-dark(#dcdcfb, #26284f);
-  --color-heat-2: light-dark(#b0b1f2, #3b3d78);
-  --color-heat-3: light-dark(#8081ea, #5c5eb4);
+  --color-heat-1: color-mix(
+    in oklab,
+    var(--color-accent) 18%,
+    var(--color-surface-muted)
+  );
+  --color-heat-2: color-mix(
+    in oklab,
+    var(--color-accent) 42%,
+    var(--color-surface-muted)
+  );
+  --color-heat-3: color-mix(
+    in oklab,
+    var(--color-accent) 68%,
+    var(--color-surface-muted)
+  );
   --color-heat-4: var(--color-accent);
 }
 

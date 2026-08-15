@@ -1,12 +1,27 @@
 import { readFileSync } from 'node:fs';
-import { act, render } from '@testing-library/react';
-import { describe, expect, it } from 'vitest';
+import { act, render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it, vi } from 'vitest';
 import { AppProviders } from './providers';
+import { ThemeToggle } from '../components/common/ThemeToggle';
 import {
   SETTINGS_STORAGE_KEY,
   defaultSettings,
   useSettingsStore,
 } from '../features/settings/settingsStore';
+
+/** jsdom always reports `matches: false`, so the OS preference is stubbed. */
+function stubSystemPrefersDark(prefersDark: boolean) {
+  vi.spyOn(window, 'matchMedia').mockImplementation(
+    (query) =>
+      ({
+        matches: prefersDark,
+        media: query,
+        addEventListener: () => {},
+        removeEventListener: () => {},
+      }) as unknown as MediaQueryList,
+  );
+}
 
 describe('theme preference', () => {
   it('stamps data-theme on <html> once the stored settings are loaded', () => {
@@ -38,6 +53,19 @@ describe('theme preference', () => {
 
     expect(useSettingsStore.getState().showHints).toBe(false);
     expect(useSettingsStore.getState().theme).toBe('system');
+  });
+
+  it('flips to the opposite of the system theme from the header toggle', async () => {
+    stubSystemPrefersDark(true);
+    render(<ThemeToggle />);
+
+    // On "system" with a dark OS, the toggle offers light — not dark, which
+    // would look like a no-op.
+    await userEvent.click(screen.getByRole('button', { name: /light theme/i }));
+    expect(useSettingsStore.getState().theme).toBe('light');
+
+    await userEvent.click(screen.getByRole('button', { name: /dark theme/i }));
+    expect(useSettingsStore.getState().theme).toBe('dark');
   });
 
   it('preloads the theme in index.html from the key the store writes to', () => {

@@ -4,6 +4,7 @@ import { selectContinueChapter } from '../../features/chapters/chapterSelectors'
 import { chapterPath } from '../../features/chapters/chapterUtils';
 import { useProgressStore } from '../../features/progress/progressStore';
 import { ReloadPrompt } from './ReloadPrompt';
+import { ThemeToggle } from './ThemeToggle';
 
 const APP_NAME = 'Grammatik mit System';
 
@@ -108,6 +109,7 @@ export function AppShell() {
               </NavLink>
             ))}
           </nav>
+          <ThemeToggle />
           {continueChapter && (
             <Link
               className="button button--primary app-header__action"
