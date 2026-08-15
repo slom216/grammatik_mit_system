@@ -16,8 +16,10 @@ import { useChapterParam } from '../features/chapters/useChapterParam';
 import { QUICK_SESSION_SIZE } from '../features/practice/quickSession';
 import {
   selectChapterProgress,
+  selectCoveredExerciseIds,
   useProgressStore,
 } from '../features/progress/progressStore';
+import { ProgressBar } from '../components/common/ProgressBar';
 
 export function ChapterPage() {
   const { chapterNumber, chapter, registryEntry } = useChapterParam();
@@ -38,6 +40,7 @@ export function ChapterPage() {
   const chapterProgress = selectChapterProgress(progress, chapter.number);
   const counts = exerciseCounts(chapter);
   const section = getSection(chapter.section);
+  const covered = selectCoveredExerciseIds(progress.exerciseHistory, chapter.number).size;
 
   return (
     <div className="stack">
@@ -68,6 +71,14 @@ export function ChapterPage() {
           </span>
           {chapter.isDemo && <span className="badge badge--warning">Engine demo</span>}
         </p>
+        {/* Cumulative across every session, not just the last one: an exercise
+            counts once it has been answered correctly. */}
+        <ProgressBar
+          label="Exercises covered"
+          value={covered}
+          max={counts.total}
+          valueText={`${covered} of ${counts.total} answered correctly`}
+        />
       </header>
 
       <Card title="Objective" titleLevel={2}>

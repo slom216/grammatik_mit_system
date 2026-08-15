@@ -1,6 +1,7 @@
 import { beforeEach, describe, expect, it } from 'vitest';
 import {
   selectChapterProgress,
+  selectCoveredExerciseIds,
   selectDueHistories,
   useProgressStore,
 } from './progressStore';
@@ -58,6 +59,36 @@ describe('progressStore', () => {
       new Date('2026-03-02T09:00:00.000Z'),
     );
     expect(due.map((history) => history.exerciseId)).toEqual(['demo-ex-01']);
+  });
+
+  it('counts an exercise as covered only once it has been answered correctly', () => {
+    const record = useProgressStore.getState().recordAttempt;
+    record({ exerciseId: 'ch1-ex-01', chapterNumber: 1, outcome: 'correctFirstAttempt' });
+    record({
+      exerciseId: 'ch1-ex-02',
+      chapterNumber: 1,
+      outcome: 'correctSecondAttempt',
+    });
+    record({ exerciseId: 'ch1-ex-03', chapterNumber: 1, outcome: 'incorrect' });
+    record({ exerciseId: 'ch1-ex-04', chapterNumber: 1, outcome: 'revealed' });
+    record({ exerciseId: 'ch2-ex-01', chapterNumber: 2, outcome: 'correctFirstAttempt' });
+
+    const history = useProgressStore.getState().exerciseHistory;
+    expect([...selectCoveredExerciseIds(history, 1)].sort()).toEqual([
+      'ch1-ex-01',
+      'ch1-ex-02',
+    ]);
+    // Another chapter's correct answers never leak in.
+    expect([...selectCoveredExerciseIds(history, 2)]).toEqual(['ch2-ex-01']);
+  });
+
+  it('keeps coverage once earned, even after a later wrong answer', () => {
+    const record = useProgressStore.getState().recordAttempt;
+    record({ exerciseId: 'ch1-ex-01', chapterNumber: 1, outcome: 'correctFirstAttempt' });
+    record({ exerciseId: 'ch1-ex-01', chapterNumber: 1, outcome: 'incorrect' });
+
+    const history = useProgressStore.getState().exerciseHistory;
+    expect(selectCoveredExerciseIds(history, 1).has('ch1-ex-01')).toBe(true);
   });
 
   it('records a mastered session', () => {

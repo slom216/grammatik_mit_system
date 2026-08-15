@@ -276,11 +276,16 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
 
     startSession: (chapter, options = {}) => {
       const ordered = sortedExercises(chapter);
+      // The caller's order is kept: a chapter session leads with the exercises
+      // the learner has not got right yet, which is not the authored order.
+      // Callers that want authored order hand it over already sorted.
+      const known = new Set(ordered.map((exercise) => exercise.id));
       const exerciseIds =
         options.exerciseIds && options.exerciseIds.length > 0
-          ? ordered
-              .filter((exercise) => options.exerciseIds?.includes(exercise.id))
-              .map((exercise) => exercise.id)
+          ? // The Set also keeps ids unique, which filtering `ordered` used to
+            // guarantee on its own — results are keyed by id, so a repeat would
+            // make one exercise unanswerable.
+            [...new Set(options.exerciseIds.filter((id) => known.has(id)))]
           : ordered.map((exercise) => exercise.id);
 
       const shuffleOptions = options.shuffleOptions ?? true;

@@ -8,8 +8,9 @@ export const QUICK_SESSION_SIZE = 24;
 /**
  * Picks a subset of a chapter's exercises for a short session. Chapters hold
  * 50-100 exercises, which is a long sit-down; a quick session takes exercises
- * that are due for review first, then fills up at random, so repeated runs
- * still cover the whole pool.
+ * that are due for review first, then the ones the learner has never answered
+ * correctly, then the rest — so repeated runs work through the whole pool
+ * instead of drawing the same exercises again.
  */
 export function buildQuickExerciseIds(
   chapter: ChapterDefinition,
@@ -17,14 +18,21 @@ export function buildQuickExerciseIds(
   random: RandomSource = Math.random,
   /** Exercises of this chapter that are due for review, which come first. */
   dueIds: readonly string[] = [],
+  /** Exercises already answered correctly at least once; filled in last. */
+  coveredIds: ReadonlySet<string> = new Set(),
 ): string[] {
   const chapterExercises = sortedExercises(chapter);
   const known = new Set(chapterExercises.map((exercise) => exercise.id));
   // Anything the learner got wrong earns its place before a random pick does.
+  // ponytail: no quota — a chapter with 24+ due exercises fills the session
+  // with review alone and covers no new ground. Cap the due slice if that
+  // turns out to stall a learner in practice.
   const due = dueIds.filter((id) => known.has(id)).slice(0, size);
 
   const picked = new Set(due);
-  for (const exercise of shuffle(chapterExercises, random)) {
+  const uncovered = chapterExercises.filter((exercise) => !coveredIds.has(exercise.id));
+  const covered = chapterExercises.filter((exercise) => coveredIds.has(exercise.id));
+  for (const exercise of [...shuffle(uncovered, random), ...shuffle(covered, random)]) {
     if (picked.size >= size) break;
     picked.add(exercise.id);
   }

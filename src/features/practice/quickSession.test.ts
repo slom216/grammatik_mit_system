@@ -61,6 +61,52 @@ describe('buildQuickExerciseIds', () => {
     const small = makeChapter({ exercises: chapter.exercises.slice(0, 10) });
     expect(buildQuickExerciseIds(small)).toHaveLength(10);
   });
+
+  it('serves what the previous run did not, so a second run covers new ground', () => {
+    const first = buildQuickExerciseIds(chapter);
+    const second = buildQuickExerciseIds(
+      chapter,
+      QUICK_SESSION_SIZE,
+      Math.random,
+      [],
+      new Set(first),
+    );
+
+    // 60 exercises, 24 covered, so all 24 of the second run fit in the other 36.
+    expect(second).toHaveLength(QUICK_SESSION_SIZE);
+    for (const id of second) expect(first).not.toContain(id);
+  });
+
+  it('replays covered exercises once the pool runs out', () => {
+    const covered = new Set(
+      chapter.exercises.slice(0, 50).map((exercise) => exercise.id),
+    );
+    const ids = buildQuickExerciseIds(
+      chapter,
+      QUICK_SESSION_SIZE,
+      Math.random,
+      [],
+      covered,
+    );
+
+    expect(ids).toHaveLength(QUICK_SESSION_SIZE);
+    // The 10 uncovered ones all appear; the rest is filled from the covered pool.
+    for (const exercise of chapter.exercises.slice(50)) {
+      expect(ids).toContain(exercise.id);
+    }
+  });
+
+  it('keeps a due exercise even when it is already covered', () => {
+    const covered = new Set(chapter.exercises.map((exercise) => exercise.id));
+    const ids = buildQuickExerciseIds(
+      chapter,
+      QUICK_SESSION_SIZE,
+      Math.random,
+      ['ch1-ex-60'],
+      covered,
+    );
+    expect(ids).toContain('ch1-ex-60');
+  });
 });
 
 describe('quickMasteryRule', () => {

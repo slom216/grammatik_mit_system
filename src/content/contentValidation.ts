@@ -133,6 +133,15 @@ export function validateChapterCollection(
         message: `estimatedMinutes ${chapter.estimatedMinutes} does not match the registry value ${entry.estimatedMinutes}`,
       });
     }
+    // Same bargain: the catalogue shows "22 / 59 exercises" from the registry
+    // alone, so a chapter that gains or loses exercises has to say so there.
+    if (entry.exerciseCount !== chapter.exercises.length) {
+      issues.push({
+        chapter: chapter.number,
+        path: 'exerciseCount',
+        message: `exerciseCount ${chapter.exercises.length} does not match the registry value ${entry.exerciseCount}`,
+      });
+    }
     // Same bargain as estimatedMinutes: catalogue search reads these without
     // loading a chapter, so the two copies have to stay identical.
     if (entry.tags.join('|') !== chapter.tags.join('|')) {

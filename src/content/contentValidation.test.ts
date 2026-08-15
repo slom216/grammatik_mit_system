@@ -273,6 +273,7 @@ describe('validateChapterCollection', () => {
       section: 'verbs-1' as const,
       level: 'A1' as const,
       estimatedMinutes: 20,
+      exerciseCount: makeChapter().exercises.length,
       tags: ['pronouns'],
     },
     {
@@ -281,6 +282,7 @@ describe('validateChapterCollection', () => {
       section: 'verbs-1' as const,
       level: 'A1' as const,
       estimatedMinutes: 20,
+      exerciseCount: makeChapter().exercises.length,
       tags: ['pronouns'],
     },
   ];
@@ -325,6 +327,14 @@ describe('validateChapterCollection', () => {
     expect(
       issues.some((issue) => issue.message.includes('is also used in chapter')),
     ).toBe(true);
+  });
+
+  it('rejects an exercise count that drifts from the registry', () => {
+    const issues = validateChapterCollection(
+      [makeChapter({ exercises: makeChapter().exercises.slice(0, 1) })],
+      registry,
+    );
+    expect(issues.some((issue) => issue.path === 'exerciseCount')).toBe(true);
   });
 
   it('rejects a title that drifts from the registry', () => {

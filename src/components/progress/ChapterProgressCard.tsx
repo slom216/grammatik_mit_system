@@ -48,6 +48,11 @@ export function ChapterProgressCard({ chapter }: ChapterProgressCardProps) {
             {chapter.estimatedMinutes} min
           </span>
         )}
+        {/* Text, not a bar: the catalogue shows 85 of these at once. */}
+        <span className="row row--tight">
+          <Icon name="circle-check" />
+          {chapter.coveredCount} / {chapter.exerciseCount} exercises
+        </span>
         {chapter.reviewDue && <span className="badge badge--warning">Review due</span>}
         {chapter.bookmarked && <span className="badge">Bookmarked</span>}
       </p>

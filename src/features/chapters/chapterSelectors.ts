@@ -44,22 +44,40 @@ export interface ChapterCardModel {
   estimatedMinutes: number;
   bookmarked: boolean;
   reviewDue: boolean;
+  /** How many of the chapter's exercises have been answered correctly, ever. */
+  coveredCount: number;
+  /** How many exercises the chapter holds, read from the registry. */
+  exerciseCount: number;
   /** Grammar topics the chapter covers, used by catalogue search. */
   tags: string[];
 }
 
-function dueChapterNumbers(state: ProgressState, now: Date): Set<number> {
+/**
+ * Everything the catalogue needs from `exerciseHistory`, in one walk over it.
+ * Counting coverage per chapter inside `buildChapterCard` instead would re-read
+ * the whole history 85 times on every render of the catalogue.
+ */
+export interface HistorySummary {
+  due: Set<number>;
+  covered: Map<number, number>;
+}
+
+export function summarizeHistory(state: ProgressState, now: Date): HistorySummary {
   const due = new Set<number>();
+  const covered = new Map<number, number>();
   for (const history of Object.values(state.exerciseHistory) as ExerciseHistory[]) {
     if (isDue(history, now)) due.add(history.chapterNumber);
+    if (history.timesCorrect > 0) {
+      covered.set(history.chapterNumber, (covered.get(history.chapterNumber) ?? 0) + 1);
+    }
   }
-  return due;
+  return { due, covered };
 }
 
 export function buildChapterCard(
   entry: ChapterRegistryEntry,
   state: ProgressState,
-  due: Set<number>,
+  summary: HistorySummary,
 ): ChapterCardModel {
   const progress = selectChapterProgress(state, entry.number);
   return {
@@ -73,7 +91,9 @@ export function buildChapterCard(
     bestScorePercent: progress.bestScorePercent,
     estimatedMinutes: entry.estimatedMinutes,
     bookmarked: progress.bookmarked,
-    reviewDue: due.has(entry.number),
+    reviewDue: summary.due.has(entry.number),
+    coveredCount: summary.covered.get(entry.number) ?? 0,
+    exerciseCount: entry.exerciseCount,
     tags: entry.tags,
   };
 }
@@ -98,8 +118,8 @@ export function selectChapterCards(
   state: ProgressState,
   now: Date = new Date(),
 ): ChapterCardModel[] {
-  const due = dueChapterNumbers(state, now);
-  return chapterRegistry.map((entry) => buildChapterCard(entry, state, due));
+  const summary = summarizeHistory(state, now);
+  return chapterRegistry.map((entry) => buildChapterCard(entry, state, summary));
 }
 
 export function matchesFilter(card: ChapterCardModel, filter: ChapterFilter): boolean {
@@ -264,5 +284,7 @@ export function selectNextChapter(chapterNumber: number): ChapterCardModel | und
     tags: next.tags,
     bookmarked: false,
     reviewDue: false,
+    coveredCount: 0,
+    exerciseCount: next.exerciseCount,
   };
 }

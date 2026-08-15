@@ -65,8 +65,11 @@ host at:
 Every route is client-side, so the host has to serve `index.html` for unknown
 paths or a deep link like `/chapter/19/practice` 404s on first visit. The
 service worker's `navigateFallback` only takes over once it has installed, which
-is too late for that first request. `public/_redirects` handles this on
-Cloudflare Pages and Netlify; on Vercel add a `vercel.json` rewrite instead.
+is too late for that first request. `wrangler.jsonc` handles this on Cloudflare
+Workers (`not_found_handling: "single-page-application"`); on Netlify or
+Cloudflare Pages add a `public/_redirects` with `/*  /index.html  200`, on
+Vercel a `vercel.json` rewrite. Workers Assets rejects that `_redirects` rule as
+an infinite loop, so it must not be committed while deploying there.
 
 The app is served from the domain root (`scope` and `start_url` in the web app
 manifest are both `/`). Hosting it under a sub-path additionally needs `base` in

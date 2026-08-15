@@ -188,6 +188,7 @@ export function ProgressPage() {
                   <th scope="col">Chapter</th>
                   <th scope="col">Level</th>
                   <th scope="col">Status</th>
+                  <th scope="col">Covered</th>
                   <th scope="col">Best score</th>
                 </tr>
               </thead>
@@ -202,6 +203,9 @@ export function ProgressPage() {
                     <td>{card.level}</td>
                     <td>
                       <MasteryBadge status={card.status} />
+                    </td>
+                    <td>
+                      {card.coveredCount} / {card.exerciseCount}
                     </td>
                     <td>{card.bestScorePercent}%</td>
                   </tr>

@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "grammatik-mit-system",
+  "compatibility_date": "2026-08-15",
+  "assets": {
+    "directory": "./dist",
+    // SPA fallback: unknown paths serve index.html so deep links work on the
+    // first visit, before the service worker's navigateFallback installs.
+    "not_found_handling": "single-page-application"
+  },
+  "observability": { "enabled": true }
+}

@@ -1,4 +1,0 @@
-# SPA fallback: every route is client-side, so deep links must serve the shell.
-# The service worker's navigateFallback only covers visits *after* it installs;
-# this covers the first one. Read by Cloudflare Pages and Netlify.
-/*  /index.html  200

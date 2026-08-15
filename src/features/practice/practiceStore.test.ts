@@ -54,6 +54,28 @@ describe('practiceStore sessions', () => {
     expect(selectIsLastExercise(usePracticeStore.getState())).toBe(true);
   });
 
+  it('keeps the order the caller asked for', () => {
+    // A chapter session leads with what the learner has not covered yet, which
+    // is not the authored order — the store must not re-sort it away.
+    usePracticeStore
+      .getState()
+      .startSession(chapter, { exerciseIds: ['ch1-ex-03', 'ch1-ex-01', 'ch1-ex-02'] });
+
+    expect(usePracticeStore.getState().exerciseIds).toEqual([
+      'ch1-ex-03',
+      'ch1-ex-01',
+      'ch1-ex-02',
+    ]);
+  });
+
+  it('drops unknown and repeated ids from the given order', () => {
+    usePracticeStore.getState().startSession(chapter, {
+      exerciseIds: ['ch1-ex-02', 'ch9-ex-01', 'ch1-ex-02', 'ch1-ex-01'],
+    });
+
+    expect(usePracticeStore.getState().exerciseIds).toEqual(['ch1-ex-02', 'ch1-ex-01']);
+  });
+
   it('scores a correct first attempt with a full point', () => {
     start();
     const feedback = usePracticeStore

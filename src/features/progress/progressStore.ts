@@ -245,6 +245,28 @@ export function selectDueHistories(
   return selectDueExercises(Object.values(state.exerciseHistory), now, limit);
 }
 
+/**
+ * The exercises of one chapter the learner has already answered correctly at
+ * least once — the chapter's cumulative coverage.
+ *
+ * `timesCorrect` counts both `correctFirstAttempt` and `correctSecondAttempt`
+ * and only ever grows, so coverage never goes backwards. An exercise that was
+ * revealed or is still being failed stays outside the set, and so keeps its
+ * place at the front of the next session.
+ */
+export function selectCoveredExerciseIds(
+  exerciseHistory: Record<string, ExerciseHistory>,
+  chapterNumber: number,
+): Set<string> {
+  const covered = new Set<string>();
+  for (const history of Object.values(exerciseHistory)) {
+    if (history.chapterNumber === chapterNumber && history.timesCorrect > 0) {
+      covered.add(history.exerciseId);
+    }
+  }
+  return covered;
+}
+
 export function selectMasteredChapterNumbers(state: ProgressState): number[] {
   return Object.values(state.chapters)
     .filter((chapter) => chapter.status === 'mastered')

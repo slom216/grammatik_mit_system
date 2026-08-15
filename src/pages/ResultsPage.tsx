@@ -7,11 +7,13 @@ import { MasteryBadge } from '../components/progress/MasteryBadge';
 import { selectNextChapter } from '../features/chapters/chapterSelectors';
 import { chapterPath, formatChapterNumber } from '../features/chapters/chapterUtils';
 import { useChapterParam } from '../features/chapters/useChapterParam';
+import { uncoveredFirst } from '../features/practice/coverage';
 import { usePracticeStore } from '../features/practice/practiceStore';
 import { countOpenReviewFlags } from '../features/practice/reviewScheduler';
 import { evaluateMastery } from '../features/practice/scoring';
 import {
   selectChapterProgress,
+  selectCoveredExerciseIds,
   useProgressStore,
 } from '../features/progress/progressStore';
 
@@ -38,6 +40,7 @@ export function ResultsPage() {
     : { mastered: chapterProgress.status === 'mastered', unmetRequirements: [] };
 
   const nextChapter = selectNextChapter(chapter.number);
+  const coveredIds = selectCoveredExerciseIds(progress.exerciseHistory, chapter.number);
 
   return (
     <div className="stack">
@@ -57,6 +60,12 @@ export function ResultsPage() {
       {summary ? (
         <Card title="This session" titleLevel={2}>
           <SessionSummary summary={summary} openReviewFlags={openFlags} />
+          {/* The figure this session just moved: coverage across every session,
+              which is what decides what the next run leads with. */}
+          <p className="text-sm text-muted">
+            Chapter coverage: {coveredIds.size} of {chapter.exercises.length} exercises
+            answered correctly.
+          </p>
         </Card>
       ) : (
         <Card title="Latest recorded result" titleLevel={2}>
@@ -100,7 +109,9 @@ export function ResultsPage() {
       <div className="row">
         <Button
           onClick={() => {
-            startSession(chapter);
+            // Same ordering as PracticePage's own start: what is still
+            // uncovered leads, so "practise again" is not a replay.
+            startSession(chapter, { exerciseIds: uncoveredFirst(chapter, coveredIds) });
             navigate(chapterPath(chapter.number, 'practice'));
           }}
         >

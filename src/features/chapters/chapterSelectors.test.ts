@@ -96,6 +96,35 @@ describe('chapter selectors', () => {
     expect(cards.filter((card) => matchesFilter(card, 'reviewDue'))).toHaveLength(1);
   });
 
+  it('counts cumulative coverage per chapter against the registry total', () => {
+    const record = useProgressStore.getState().recordAttempt;
+    record({
+      exerciseId: 'ch01-ex-01',
+      chapterNumber: 1,
+      outcome: 'correctFirstAttempt',
+    });
+    record({
+      exerciseId: 'ch01-ex-02',
+      chapterNumber: 1,
+      outcome: 'correctSecondAttempt',
+    });
+    record({ exerciseId: 'ch01-ex-03', chapterNumber: 1, outcome: 'revealed' });
+    record({
+      exerciseId: 'ch02-ex-01',
+      chapterNumber: 2,
+      outcome: 'correctFirstAttempt',
+    });
+
+    const cards = selectChapterCards(useProgressStore.getState());
+    const first = cards.find((card) => card.number === 1);
+    // The revealed one does not count; the total comes from the registry, which
+    // content validation keeps in step with the chapter body.
+    expect(first?.coveredCount).toBe(2);
+    expect(first?.exerciseCount).toBe(59);
+    expect(cards.find((card) => card.number === 2)?.coveredCount).toBe(1);
+    expect(cards.find((card) => card.number === 3)?.coveredCount).toBe(0);
+  });
+
   it('suggests the first available chapter to continue while nothing has progress', () => {
     expect(selectContinueChapter(useProgressStore.getState())?.number).toBe(1);
   });

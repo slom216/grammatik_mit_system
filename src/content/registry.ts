@@ -15,6 +15,12 @@ export interface ChapterRegistryEntry {
   /** Mirrors the chapter body's own value; drift is a content-validation error. */
   estimatedMinutes: number;
   /**
+   * How many exercises the chapter holds. Same bargain as `estimatedMinutes`:
+   * the catalogue shows how much of a chapter a learner has covered without
+   * downloading it. Drift is a content-validation error.
+   */
+  exerciseCount: number;
+  /**
    * Mirrors the chapter body's own tags; drift is a content-validation error.
    * Kept here so the catalogue can be searched by grammar topic without
    * downloading a single chapter.
@@ -29,6 +35,7 @@ export const chapterRegistry = [
     section: 'verbs-1',
     level: 'A1',
     estimatedMinutes: 25,
+    exerciseCount: 59,
     tags: ['pronouns', 'subject', 'formal-address', 'capitalisation'],
   },
   {
@@ -37,6 +44,7 @@ export const chapterRegistry = [
     section: 'verbs-1',
     level: 'A1',
     estimatedMinutes: 25,
+    exerciseCount: 69,
     tags: ['present-tense', 'verb-conjugation', 'regular-verbs', 'spelling'],
   },
   {
@@ -45,6 +53,7 @@ export const chapterRegistry = [
     section: 'verbs-1',
     level: 'A1',
     estimatedMinutes: 25,
+    exerciseCount: 60,
     tags: ['sein', 'haben', 'irregular-verbs', 'present-tense', 'identity', 'possession'],
   },
   {
@@ -53,6 +62,7 @@ export const chapterRegistry = [
     section: 'verbs-1',
     level: 'A1',
     estimatedMinutes: 25,
+    exerciseCount: 66,
     tags: ['verbs', 'present-tense', 'vowel-change', 'stem-change', 'a1'],
   },
   {
@@ -61,6 +71,7 @@ export const chapterRegistry = [
     section: 'verbs-1',
     level: 'A1',
     estimatedMinutes: 25,
+    exerciseCount: 62,
     tags: ['modal-verbs', 'verb-conjugation', 'word-order', 'verb-bracket'],
   },
   {
@@ -69,6 +80,7 @@ export const chapterRegistry = [
     section: 'verbs-1',
     level: 'A1',
     estimatedMinutes: 25,
+    exerciseCount: 53,
     tags: ['modal-verbs', 'permission', 'ability', 'requests', 'everyday-german'],
   },
   {
@@ -77,6 +89,7 @@ export const chapterRegistry = [
     section: 'verbs-1',
     level: 'A1',
     estimatedMinutes: 25,
+    exerciseCount: 65,
     tags: [
       'modal-verbs',
       'sollen',
@@ -91,6 +104,7 @@ export const chapterRegistry = [
     section: 'verbs-1',
     level: 'A1',
     estimatedMinutes: 25,
+    exerciseCount: 60,
     tags: ['separable-verbs', 'trennbare-verben', 'word-order', 'daily-routine'],
   },
   {
@@ -99,6 +113,7 @@ export const chapterRegistry = [
     section: 'verbs-1',
     level: 'A1',
     estimatedMinutes: 25,
+    exerciseCount: 60,
     tags: [
       'imperative',
       'commands',
@@ -114,6 +129,7 @@ export const chapterRegistry = [
     section: 'sentences-and-questions',
     level: 'A1',
     estimatedMinutes: 25,
+    exerciseCount: 56,
     tags: ['questions', 'w-fragen', 'word-order', 'wo-wohin-woher'],
   },
   {
@@ -122,6 +138,7 @@ export const chapterRegistry = [
     section: 'sentences-and-questions',
     level: 'A1',
     estimatedMinutes: 25,
+    exerciseCount: 60,
     tags: ['questions', 'yes-no-questions', 'ja-nein-doch', 'word-order', 'negation'],
   },
   {
@@ -130,6 +147,7 @@ export const chapterRegistry = [
     section: 'sentences-and-questions',
     level: 'A1',
     estimatedMinutes: 25,
+    exerciseCount: 53,
     tags: ['word-order', 'verb-position', 'sentence-elements', 'inversion', 'fronting'],
   },
   {
@@ -138,6 +156,7 @@ export const chapterRegistry = [
     section: 'sentences-and-questions',
     level: 'A1',
     estimatedMinutes: 25,
+    exerciseCount: 60,
     tags: ['word-order', 'satzklammer', 'verb-bracket', 'modal-verbs', 'separable-verbs'],
   },
   {
@@ -146,6 +165,7 @@ export const chapterRegistry = [
     section: 'pronouns-nouns-articles',
     level: 'A1',
     estimatedMinutes: 25,
+    exerciseCount: 53,
     tags: ['nouns', 'plural', 'umlaut', 'articles', 'die'],
   },
   {
@@ -154,6 +174,7 @@ export const chapterRegistry = [
     section: 'pronouns-nouns-articles',
     level: 'A1',
     estimatedMinutes: 25,
+    exerciseCount: 68,
     tags: ['articles', 'der-die-das', 'ein-eine', 'zero-article', 'noun-gender'],
   },
   {
@@ -162,6 +183,7 @@ export const chapterRegistry = [
     section: 'pronouns-nouns-articles',
     level: 'A1',
     estimatedMinutes: 25,
+    exerciseCount: 57,
     tags: ['negation', 'nicht', 'kein', 'kein-declension', 'word-order'],
   },
   {
@@ -170,6 +192,7 @@ export const chapterRegistry = [
     section: 'pronouns-nouns-articles',
     level: 'A1',
     estimatedMinutes: 25,
+    exerciseCount: 59,
     tags: ['accusative-case', 'direct-object', 'articles', 'wen-was'],
   },
   {
@@ -178,6 +201,7 @@ export const chapterRegistry = [
     section: 'pronouns-nouns-articles',
     level: 'A1',
     estimatedMinutes: 25,
+    exerciseCount: 60,
     tags: ['dative', 'cases', 'articles', 'indirect-object', 'plural-dative'],
   },
   {
@@ -186,6 +210,7 @@ export const chapterRegistry = [
     section: 'pronouns-nouns-articles',
     level: 'A1',
     estimatedMinutes: 25,
+    exerciseCount: 50,
     tags: ['possessive-articles', 'possessivartikel', 'agreement', 'ihr-vs-Ihr'],
   },
   {
@@ -194,6 +219,7 @@ export const chapterRegistry = [
     section: 'pronouns-nouns-articles',
     level: 'A1',
     estimatedMinutes: 25,
+    exerciseCount: 58,
     tags: ['welcher', 'dieser', 'der-words', 'accusative', 'articles'],
   },
   {
@@ -202,6 +228,7 @@ export const chapterRegistry = [
     section: 'pronouns-nouns-articles',
     level: 'A2',
     estimatedMinutes: 22,
+    exerciseCount: 62,
     tags: ['personal pronouns', 'accusative', 'dative', 'pronoun replacement', 'case'],
   },
   {
@@ -210,6 +237,7 @@ export const chapterRegistry = [
     section: 'pronouns-nouns-articles',
     level: 'A2',
     estimatedMinutes: 25,
+    exerciseCount: 68,
     tags: ['dative', 'accusative', 'two-object-verbs', 'word-order', 'pronouns'],
   },
   {
@@ -218,6 +246,7 @@ export const chapterRegistry = [
     section: 'pronouns-nouns-articles',
     level: 'A2',
     estimatedMinutes: 22,
+    exerciseCount: 71,
     tags: [
       'dative-verbs',
       'helfen',
@@ -235,6 +264,7 @@ export const chapterRegistry = [
     section: 'pronouns-nouns-articles',
     level: 'A2',
     estimatedMinutes: 22,
+    exerciseCount: 73,
     tags: ['wer', 'wen', 'wem', 'was', 'question-words', 'case', 'accusative', 'dative'],
   },
   {
@@ -243,6 +273,7 @@ export const chapterRegistry = [
     section: 'verbs-2',
     level: 'A1',
     estimatedMinutes: 22,
+    exerciseCount: 63,
     tags: ['sein', 'haben', 'simple-past', 'präteritum', 'past-tense', 'negation'],
   },
   {
@@ -251,6 +282,7 @@ export const chapterRegistry = [
     section: 'verbs-2',
     level: 'A1',
     estimatedMinutes: 25,
+    exerciseCount: 62,
     tags: ['perfekt', 'haben', 'past-participle', 'verb-bracket', 'past-tense'],
   },
   {
@@ -259,6 +291,7 @@ export const chapterRegistry = [
     section: 'verbs-2',
     level: 'A1',
     estimatedMinutes: 22,
+    exerciseCount: 66,
     tags: ['perfekt', 'sein', 'auxiliary-verbs', 'past-participle', 'movement-verbs'],
   },
   {
@@ -267,6 +300,7 @@ export const chapterRegistry = [
     section: 'verbs-2',
     level: 'A2',
     estimatedMinutes: 25,
+    exerciseCount: 60,
     tags: [
       'past-participle',
       'partizip-ii',
@@ -285,6 +319,7 @@ export const chapterRegistry = [
     section: 'verbs-2',
     level: 'A2',
     estimatedMinutes: 22,
+    exerciseCount: 72,
     tags: ['modal-verbs', 'simple-past', 'praeteritum', 'verb-bracket', 'umlaut'],
   },
   {
@@ -293,6 +328,7 @@ export const chapterRegistry = [
     section: 'verbs-2',
     level: 'A2',
     estimatedMinutes: 28,
+    exerciseCount: 65,
     tags: ['perfekt', 'präteritum', 'past-tense', 'register', 'review'],
   },
   {
@@ -301,6 +337,7 @@ export const chapterRegistry = [
     section: 'verbs-2',
     level: 'A2',
     estimatedMinutes: 22,
+    exerciseCount: 67,
     tags: [
       'reflexive verbs',
       'reflexive pronouns',
@@ -315,6 +352,7 @@ export const chapterRegistry = [
     section: 'prepositions-1',
     level: 'A1',
     estimatedMinutes: 20,
+    exerciseCount: 61,
     tags: [
       'prepositions',
       'time expressions',
@@ -334,6 +372,7 @@ export const chapterRegistry = [
     section: 'prepositions-1',
     level: 'A1',
     estimatedMinutes: 22,
+    exerciseCount: 53,
     tags: [
       'prepositions',
       'dative',
@@ -354,6 +393,7 @@ export const chapterRegistry = [
     section: 'prepositions-1',
     level: 'A1',
     estimatedMinutes: 22,
+    exerciseCount: 52,
     tags: [
       'prepositions',
       'accusative case',
@@ -372,6 +412,7 @@ export const chapterRegistry = [
     section: 'prepositions-1',
     level: 'A2',
     estimatedMinutes: 22,
+    exerciseCount: 68,
     tags: [
       'two-way prepositions',
       'Wechselpräpositionen',
@@ -388,6 +429,7 @@ export const chapterRegistry = [
     section: 'prepositions-1',
     level: 'A2',
     estimatedMinutes: 25,
+    exerciseCount: 84,
     tags: [
       'two-way prepositions',
       'wechselpräpositionen',
@@ -404,6 +446,7 @@ export const chapterRegistry = [
     section: 'prepositions-1',
     level: 'A2',
     estimatedMinutes: 22,
+    exerciseCount: 82,
     tags: [
       'prepositions',
       'wohin',
@@ -425,6 +468,7 @@ export const chapterRegistry = [
     section: 'prepositions-1',
     level: 'A2',
     estimatedMinutes: 22,
+    exerciseCount: 70,
     tags: [
       'prepositions',
       'location',
@@ -443,6 +487,7 @@ export const chapterRegistry = [
     section: 'prepositions-1',
     level: 'A2',
     estimatedMinutes: 22,
+    exerciseCount: 79,
     tags: ['prepositions', 'aus', 'von', 'woher', 'origin', 'dative', 'contractions'],
   },
   {
@@ -451,6 +496,7 @@ export const chapterRegistry = [
     section: 'adjectives-1',
     level: 'A2',
     estimatedMinutes: 24,
+    exerciseCount: 60,
     tags: [
       'adjective endings',
       'attributive adjectives',
@@ -467,6 +513,7 @@ export const chapterRegistry = [
     section: 'adjectives-1',
     level: 'A2',
     estimatedMinutes: 26,
+    exerciseCount: 62,
     tags: [
       'adjective endings',
       'attributive adjectives',
@@ -485,6 +532,7 @@ export const chapterRegistry = [
     section: 'adjectives-1',
     level: 'A2',
     estimatedMinutes: 25,
+    exerciseCount: 60,
     tags: [
       'comparative',
       'komparativ',
@@ -501,6 +549,7 @@ export const chapterRegistry = [
     section: 'adjectives-1',
     level: 'A2',
     estimatedMinutes: 25,
+    exerciseCount: 80,
     tags: [
       'superlative',
       'superlativ',
@@ -517,6 +566,7 @@ export const chapterRegistry = [
     section: 'sentence-connections-1',
     level: 'A2',
     estimatedMinutes: 25,
+    exerciseCount: 79,
     tags: [
       'coordinating conjunctions',
       'und',
@@ -535,6 +585,7 @@ export const chapterRegistry = [
     section: 'sentence-connections-1',
     level: 'A2',
     estimatedMinutes: 25,
+    exerciseCount: 81,
     tags: [
       'connectors',
       'deshalb',
@@ -554,6 +605,7 @@ export const chapterRegistry = [
     section: 'sentence-connections-1',
     level: 'A2',
     estimatedMinutes: 30,
+    exerciseCount: 79,
     tags: [
       'subordinate clauses',
       'weil',
@@ -572,6 +624,7 @@ export const chapterRegistry = [
     section: 'words-and-word-formation',
     level: 'A2',
     estimatedMinutes: 25,
+    exerciseCount: 76,
     tags: [
       'compound nouns',
       'nomen komposita',
@@ -588,6 +641,7 @@ export const chapterRegistry = [
     section: 'words-and-word-formation',
     level: 'A2',
     estimatedMinutes: 25,
+    exerciseCount: 61,
     tags: [
       'compound-verbs',
       'prefix-verbs',
@@ -603,6 +657,7 @@ export const chapterRegistry = [
     section: 'words-and-word-formation',
     level: 'A2',
     estimatedMinutes: 30,
+    exerciseCount: 85,
     tags: [
       'gender',
       'noun-gender',
@@ -619,6 +674,7 @@ export const chapterRegistry = [
     section: 'words-and-word-formation',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 88,
     tags: [
       'modal particles',
       'modalpartikeln',
@@ -639,6 +695,7 @@ export const chapterRegistry = [
     section: 'words-and-word-formation',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 82,
     tags: [
       'word formation',
       'wortbildung',
@@ -658,6 +715,7 @@ export const chapterRegistry = [
     section: 'words-and-word-formation',
     level: 'A2',
     estimatedMinutes: 28,
+    exerciseCount: 77,
     tags: [
       'negation',
       'nichts',
@@ -676,6 +734,7 @@ export const chapterRegistry = [
     section: 'words-and-word-formation',
     level: 'A2',
     estimatedMinutes: 24,
+    exerciseCount: 80,
     tags: [
       'adverbs',
       'lokaladverbien',
@@ -702,6 +761,7 @@ export const chapterRegistry = [
     section: 'verbs-3',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 85,
     tags: [
       'simple-past',
       'präteritum',
@@ -721,6 +781,7 @@ export const chapterRegistry = [
     section: 'verbs-3',
     level: 'B1',
     estimatedMinutes: 28,
+    exerciseCount: 76,
     tags: [
       'plusquamperfekt',
       'past-perfect',
@@ -740,6 +801,7 @@ export const chapterRegistry = [
     section: 'verbs-3',
     level: 'B1',
     estimatedMinutes: 25,
+    exerciseCount: 84,
     tags: [
       'reflexive pronouns',
       'dative case',
@@ -755,6 +817,7 @@ export const chapterRegistry = [
     section: 'verbs-3',
     level: 'B1',
     estimatedMinutes: 35,
+    exerciseCount: 71,
     tags: [
       'separable-verbs',
       'inseparable-verbs',
@@ -773,6 +836,7 @@ export const chapterRegistry = [
     section: 'verbs-3',
     level: 'B1',
     estimatedMinutes: 28,
+    exerciseCount: 90,
     tags: [
       'verbs with prepositions',
       'verben mit festen präpositionen',
@@ -796,6 +860,7 @@ export const chapterRegistry = [
     section: 'verbs-3',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 92,
     tags: [
       'pronominal adverbs',
       'da-compounds',
@@ -814,6 +879,7 @@ export const chapterRegistry = [
     section: 'verbs-3',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 90,
     tags: [
       'konjunktiv-ii',
       'subjunctive-ii',
@@ -832,6 +898,7 @@ export const chapterRegistry = [
     section: 'verbs-3',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 94,
     tags: [
       'konjunktiv-ii',
       'subjunctive-ii-usage',
@@ -850,6 +917,7 @@ export const chapterRegistry = [
     section: 'verbs-3',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 86,
     tags: [
       'passive-voice',
       'passiv',
@@ -868,6 +936,7 @@ export const chapterRegistry = [
     section: 'verbs-3',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 80,
     tags: [
       'passive-voice',
       'passiv',
@@ -887,6 +956,7 @@ export const chapterRegistry = [
     section: 'verbs-3',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 95,
     tags: [
       'futur-i',
       'werden-konjugation',
@@ -905,6 +975,7 @@ export const chapterRegistry = [
     section: 'verbs-3',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 72,
     tags: [
       'werden',
       'lexical-werden',
@@ -926,6 +997,7 @@ export const chapterRegistry = [
     section: 'verbs-3',
     level: 'B1',
     estimatedMinutes: 28,
+    exerciseCount: 78,
     tags: [
       'lassen',
       'modal-like-verb',
@@ -945,6 +1017,7 @@ export const chapterRegistry = [
     section: 'verbs-3',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 85,
     tags: [
       'position-verbs',
       'placement-verbs',
@@ -967,6 +1040,7 @@ export const chapterRegistry = [
     section: 'nouns-2',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 91,
     tags: [
       'genitive',
       'cases',
@@ -984,6 +1058,7 @@ export const chapterRegistry = [
     section: 'nouns-2',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 74,
     tags: [
       'n-declension',
       'weak-nouns',
@@ -1003,6 +1078,7 @@ export const chapterRegistry = [
     section: 'nouns-2',
     level: 'B1',
     estimatedMinutes: 28,
+    exerciseCount: 96,
     tags: [
       'substantivized-adjectives',
       'nominalized-adjectives',
@@ -1021,6 +1097,7 @@ export const chapterRegistry = [
     section: 'nouns-2',
     level: 'B1',
     estimatedMinutes: 28,
+    exerciseCount: 82,
     tags: [
       'substantivized-adjectives',
       'neuter-nouns',
@@ -1041,6 +1118,7 @@ export const chapterRegistry = [
     section: 'sentence-connections-2',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 70,
     tags: [
       'indirect-questions',
       'indirekte-fragesaetze',
@@ -1060,6 +1138,7 @@ export const chapterRegistry = [
     section: 'sentence-connections-2',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 88,
     tags: [
       'zu-infinitive',
       'infinitivsatz',
@@ -1077,6 +1156,7 @@ export const chapterRegistry = [
     section: 'sentence-connections-2',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 77,
     tags: [
       'infinitive-constructions',
       'bare-infinitive',
@@ -1096,6 +1176,7 @@ export const chapterRegistry = [
     section: 'sentence-connections-2',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 93,
     tags: [
       'relative-clauses',
       'relativsätze',
@@ -1114,6 +1195,7 @@ export const chapterRegistry = [
     section: 'sentence-connections-2',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 80,
     tags: [
       'relative-clauses',
       'relative-pronouns',
@@ -1135,6 +1217,7 @@ export const chapterRegistry = [
     section: 'sentence-connections-2',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 96,
     tags: [
       'wenn',
       'als',
@@ -1153,6 +1236,7 @@ export const chapterRegistry = [
     section: 'sentence-connections-2',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 74,
     tags: [
       'temporal-clauses',
       'wahrend',
@@ -1172,6 +1256,7 @@ export const chapterRegistry = [
     section: 'sentence-connections-2',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 88,
     tags: [
       'purpose-clauses',
       'finalsatz',
@@ -1191,6 +1276,7 @@ export const chapterRegistry = [
     section: 'sentence-connections-2',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 72,
     tags: [
       'paired-conjunctions',
       'entweder-oder',
@@ -1208,6 +1294,7 @@ export const chapterRegistry = [
     section: 'sentence-connections-2',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 100,
     tags: [
       'je-desto',
       'umso',
@@ -1227,6 +1314,7 @@ export const chapterRegistry = [
     section: 'prepositions-2',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 77,
     tags: [
       'prepositions',
       'genitive',
@@ -1246,6 +1334,7 @@ export const chapterRegistry = [
     section: 'prepositions-2',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 92,
     tags: [
       'prepositions',
       'temporal-expressions',
@@ -1268,6 +1357,7 @@ export const chapterRegistry = [
     section: 'adjectives-2',
     level: 'B1',
     estimatedMinutes: 35,
+    exerciseCount: 83,
     tags: [
       'adjective declension',
       'weak declension',
@@ -1290,6 +1380,7 @@ export const chapterRegistry = [
     section: 'adjectives-2',
     level: 'B1',
     estimatedMinutes: 30,
+    exerciseCount: 70,
     tags: [
       'present-participle',
       'partizip-i',
