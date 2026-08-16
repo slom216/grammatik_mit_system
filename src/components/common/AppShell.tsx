@@ -9,17 +9,18 @@ import { ThemeToggle } from './ThemeToggle';
 const APP_NAME = 'DeuLern Grammatik mit System';
 
 /**
- * Five items, per design.md's 5–6 top-level maximum. Activity and About used to
- * sit here too, which pushed the row past the width of a phone and into a
- * scroller with hidden scrollbars — no indication anything was off-screen.
- * Both remain one tap away in the footer, and Activity's headline numbers are
- * already on Progress.
+ * Six items, design.md's 5–6 top-level maximum. Activity and About used to sit
+ * here too, which pushed the row past the width of a phone and into a scroller
+ * with hidden scrollbars — no indication anything was off-screen. Both remain
+ * one tap away in the footer, and Activity's headline numbers are already on
+ * Progress; Calendar has no other route in, so it takes the sixth slot.
  */
 const NAV_ITEMS = [
   { to: '/', label: 'Dashboard', end: true },
   { to: '/chapters', label: 'Chapters', end: false },
   { to: '/review', label: 'Review', end: false },
   { to: '/progress', label: 'Progress', end: false },
+  { to: '/calendar', label: 'Calendar', end: false },
   { to: '/settings', label: 'Settings', end: false },
 ];
 

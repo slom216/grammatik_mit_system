@@ -2196,9 +2196,11 @@ a:hover {
 /* Responsiveness and motion                                           */
 /* ------------------------------------------------------------------ */
 
-@media (max-width: 48rem) {
-  /* The nav gets its own scrollable row so the brand and the primary action
-     keep the first one. */
+/* The nav gets its own scrollable row so the brand and the primary action keep
+   the first one. The threshold is where the whole row stops fitting, not where
+   the phone layout starts: sharing one row past that point clipped the last
+   item off with the scrollbar hidden and no fade to say so. */
+@media (max-width: 80rem) {
   .app-header__inner {
     flex-wrap: wrap;
     gap: var(--space-3);
@@ -2219,7 +2221,9 @@ a:hover {
   .app-brand {
     margin-right: auto;
   }
+}
 
+@media (max-width: 48rem) {
   /* On a phone a matching or drag-to-slots exercise is taller than the
      viewport, which puts "Check answer" below the fold with nothing to say it
      is there. Pinned to the bottom it stays in reach the whole way down. The
