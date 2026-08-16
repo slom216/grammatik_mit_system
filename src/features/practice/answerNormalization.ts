@@ -246,18 +246,39 @@ export function correctMatchingText(exercise: MatchingExercise): string {
 /* Error spotting                                                       */
 /* ------------------------------------------------------------------ */
 
+/**
+ * True when the exercise also asks the learner to type the correction. Picking
+ * the token alone is a one-in-six guess, while producing the right form is the
+ * grammar point every one of these exercises is actually about. Multi-word
+ * corrections are whole-sentence rewrites rather than a token swap, so those
+ * stay recognition-only.
+ */
+export function requiresCorrectionInput(exercise: ErrorSpottingExercise): boolean {
+  return !/\s/.test(exercise.correction);
+}
+
 export function checkErrorSpottingAnswer(
   exercise: ErrorSpottingExercise,
   tokenIndex: number,
+  correction: string,
 ): boolean {
-  return tokenIndex === exercise.errorTokenIndex;
+  if (tokenIndex !== exercise.errorTokenIndex) return false;
+  if (!requiresCorrectionInput(exercise)) return true;
+  // Capitalisation carries meaning in German and stays strict. The full stop or
+  // comma a correction inherits from its token does not, so it is forgiven.
+  return (
+    normalizeForMode(correction, 'punctuationInsensitive') ===
+    normalizeForMode(exercise.correction, 'punctuationInsensitive')
+  );
 }
 
 export function errorSpottingAnswerText(
   exercise: ErrorSpottingExercise,
   tokenIndex: number,
+  correction: string,
 ): string {
-  return exercise.tokens[tokenIndex] ?? '';
+  const token = exercise.tokens[tokenIndex] ?? '';
+  return requiresCorrectionInput(exercise) ? `${token} → ${correction.trim()}` : token;
 }
 
 export function correctErrorSpottingText(exercise: ErrorSpottingExercise): string {

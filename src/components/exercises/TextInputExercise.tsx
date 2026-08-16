@@ -1,6 +1,6 @@
 import { useEffect, useId, useRef } from 'react';
 import type { TextInputExercise as TextInputExerciseData } from '../../schemas/exerciseSchema';
-import { GERMAN_SPECIAL_CHARACTERS } from '../../features/practice/answerNormalization';
+import { UmlautHelper } from './UmlautHelper';
 
 export interface TextInputExerciseProps {
   exercise: TextInputExerciseData;
@@ -20,39 +20,12 @@ export function TextInputExercise({
   const inputId = useId();
   const helperId = useId();
   const fieldRef = useRef<HTMLInputElement | HTMLTextAreaElement>(null);
-  const pendingCaret = useRef<number | null>(null);
 
   // Focuses the field as soon as this exercise appears, so learners can start
   // typing straight away instead of having to click into it first.
   useEffect(() => {
     fieldRef.current?.focus();
   }, []);
-
-  // Restores the caret after a helper insertion, once React has written the
-  // new value to the DOM.
-  useEffect(() => {
-    const caret = pendingCaret.current;
-    if (caret === null) return;
-    pendingCaret.current = null;
-    const field = fieldRef.current;
-    if (!field) return;
-    field.focus();
-    field.setSelectionRange(caret, caret);
-  });
-
-  /** Inserts a German special character at the caret and keeps focus. */
-  const insertCharacter = (character: string) => {
-    const field = fieldRef.current;
-    if (!field) {
-      onChange(value + character);
-      return;
-    }
-    const start = field.selectionStart ?? value.length;
-    const end = field.selectionEnd ?? value.length;
-    const next = value.slice(0, start) + character + value.slice(end);
-    onChange(exercise.maxLength ? next.slice(0, exercise.maxLength) : next);
-    pendingCaret.current = start + character.length;
-  };
 
   const sharedProps = {
     id: inputId,
@@ -90,23 +63,14 @@ export function TextInputExercise({
       )}
 
       {showUmlautHelper && (
-        <div className="umlaut-helper" id={helperId}>
-          <span className="visually-hidden">
-            Buttons for inserting German special characters
-          </span>
-          {GERMAN_SPECIAL_CHARACTERS.map(({ character, label }) => (
-            <button
-              key={character}
-              type="button"
-              className="umlaut-helper__button"
-              onClick={() => insertCharacter(character)}
-              disabled={disabled}
-              aria-label={`Insert ${label}`}
-            >
-              <span aria-hidden="true">{character}</span>
-            </button>
-          ))}
-        </div>
+        <UmlautHelper
+          id={helperId}
+          fieldRef={fieldRef}
+          value={value}
+          onChange={onChange}
+          disabled={disabled}
+          maxLength={exercise.maxLength}
+        />
       )}
     </div>
   );

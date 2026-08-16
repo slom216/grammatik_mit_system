@@ -1094,13 +1094,17 @@ a:hover {
   font-weight: 600;
 }
 
+/* Not square any more: the cell carries three lines, and a square one clips
+   them on a phone. The min-height keeps an empty day from collapsing. */
 .calendar-month__day {
   width: 100%;
-  aspect-ratio: 1;
+  min-height: 3.25rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  padding: var(--space-1) 1px;
+  overflow: hidden;
   font: inherit;
   font-size: var(--text-sm);
   color: var(--color-text);
@@ -1108,6 +1112,17 @@ a:hover {
   border: var(--border-width) solid var(--color-border);
   border-radius: var(--radius-sm);
   background: var(--color-heat-0);
+}
+
+/* Below --text-xs on purpose: seven of these share a row on a 320px screen. */
+.calendar-month__facts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.625rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  opacity: 0.8;
 }
 
 .calendar-month__day--level-1 {
@@ -1575,6 +1590,17 @@ a:hover {
   gap: var(--space-2);
 }
 
+/* Punctuation the learner does not place: part of the sentence, not the puzzle. */
+.sentence-ordering__terminator {
+  display: flex;
+  align-items: flex-end;
+  min-height: var(--tap-target);
+  padding-bottom: var(--space-2);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
 .sentence-ordering__token {
   display: flex;
   align-items: center;
@@ -1877,6 +1903,14 @@ a:hover {
 .error-spotting__token--incorrect {
   border-color: var(--color-danger-border);
   background: var(--color-danger-soft);
+}
+
+.error-spotting__answer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+  max-width: 22rem;
 }
 
 .error-spotting__correction {

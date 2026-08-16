@@ -84,6 +84,28 @@ describe('ExerciseRenderer with sentenceOrdering', () => {
 
     expect(onSubmitOrdering).toHaveBeenCalledWith(['s1', 's2', 's3']);
   });
+
+  it('keeps the full stop out of the shuffled segments', () => {
+    render(
+      <ExerciseRenderer
+        {...baseProps()}
+        exercise={{
+          ...exercise,
+          segments: [
+            { id: 's1', text: 'Ich' },
+            { id: 's2', text: 'gehe' },
+            { id: 's3', text: 'heim.' },
+          ],
+        }}
+        segmentOrder={['s3', 's1', 's2']}
+      />,
+    );
+
+    // "heim." would announce itself as the last word before anything is moved.
+    expect(screen.getByRole('button', { name: /pick up "heim"/i })).toBeInTheDocument();
+    expect(screen.queryByText('heim.')).not.toBeInTheDocument();
+    expect(screen.getByLabelText('End of the sentence')).toHaveTextContent('.');
+  });
 });
 
 describe('ExerciseRenderer with dragToSlots', () => {
@@ -276,7 +298,7 @@ describe('ExerciseRenderer with errorSpotting', () => {
     correction: 'seid',
   };
 
-  it('auto-submits the clicked token with no separate submit button', async () => {
+  it('submits the clicked token together with the typed correction', async () => {
     const user = userEvent.setup();
     const onSubmitErrorSpotting = vi.fn();
 
@@ -288,12 +310,37 @@ describe('ExerciseRenderer with errorSpotting', () => {
       />,
     );
 
+    await user.click(screen.getByRole('button', { name: 'sind' }));
+
+    // Spotting the token is not the whole answer any more, so nothing is
+    // submitted until the correction has been supplied.
+    expect(onSubmitErrorSpotting).not.toHaveBeenCalled();
+    expect(screen.getByRole('button', { name: /check answer/i })).toBeDisabled();
+
+    await user.type(screen.getByRole('textbox', { name: /replace it with/i }), 'seid');
+    await user.click(screen.getByRole('button', { name: /check answer/i }));
+
+    expect(onSubmitErrorSpotting).toHaveBeenCalledWith(1, 'seid');
+  });
+
+  it('auto-submits the token alone when the fix is a whole-sentence rewrite', async () => {
+    const user = userEvent.setup();
+    const onSubmitErrorSpotting = vi.fn();
+
+    render(
+      <ExerciseRenderer
+        {...baseProps()}
+        exercise={{ ...exercise, correction: 'Ihr seid sehr freundlich.' }}
+        onSubmitErrorSpotting={onSubmitErrorSpotting}
+      />,
+    );
+
     expect(
       screen.queryByRole('button', { name: /check answer/i }),
     ).not.toBeInTheDocument();
 
     await user.click(screen.getByRole('button', { name: 'sind' }));
 
-    await waitFor(() => expect(onSubmitErrorSpotting).toHaveBeenCalledWith(1));
+    await waitFor(() => expect(onSubmitErrorSpotting).toHaveBeenCalledWith(1, ''));
   });
 });

@@ -42,6 +42,23 @@ describe('CalendarPage', () => {
     expect(screen.getByText(/1 exercise · 10 min$/i)).toBeInTheDocument();
   });
 
+  it('puts the time, chapter count and level on the day cell itself', async () => {
+    const store = useProgressStore.getState();
+    store.recordAttempt({
+      exerciseId: 'ch1-ex-01',
+      chapterNumber: 1,
+      outcome: 'correctFirstAttempt',
+      now: at(9),
+    });
+    store.addStudyTime(1, 600_000, at(9));
+
+    await renderWithRouter(<CalendarPage />, { route: '/calendar' });
+
+    const today = screen.getByRole('button', { name: /1 chapter, level A1$/ });
+    expect(today).toHaveTextContent('10m');
+    expect(today).toHaveTextContent('1 · A1');
+  });
+
   it('shows another day when its cell is picked', async () => {
     useProgressStore.getState().recordAttempt({
       exerciseId: 'demo-ex-01',

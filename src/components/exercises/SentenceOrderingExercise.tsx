@@ -29,9 +29,23 @@ export function SentenceOrderingExercise({
 }: SentenceOrderingExerciseProps) {
   const [draggedId, setDraggedId] = useState<string | null>(null);
   const [selectedId, setSelectedId] = useState<string | null>(null);
-  const segmentById = new Map(exercise.segments.map((segment) => [segment.id, segment]));
   const correctOrder = exercise.segments.map((segment) => segment.id);
   const draggable = !disabled && !isCoarsePointer();
+
+  // The full stop or question mark rides on the last segment in the content, so
+  // shuffling it into the pile hands the learner the answer's final position for
+  // free. It is shown after the row instead, and stripped from the segment.
+  const lastSegment = exercise.segments.at(-1);
+  const lastText = lastSegment?.text ?? '';
+  const terminator = /[.!?]$/.test(lastText) ? lastText.slice(-1) : '';
+  const segmentById = new Map(
+    exercise.segments.map((segment) => [
+      segment.id,
+      segment.id === lastSegment?.id && terminator
+        ? { ...segment, text: segment.text.slice(0, -1) }
+        : segment,
+    ]),
+  );
 
   const moveTo = (id: string, targetIndex: number) => {
     if (disabled) return;
@@ -140,6 +154,11 @@ export function SentenceOrderingExercise({
             </li>
           );
         })}
+        {terminator && (
+          <li className="sentence-ordering__terminator" aria-label="End of the sentence">
+            {terminator}
+          </li>
+        )}
       </ol>
     </fieldset>
   );

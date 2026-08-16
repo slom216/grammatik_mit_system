@@ -132,6 +132,7 @@ export interface PracticeState {
   submitErrorSpotting: (
     exercise: ErrorSpottingExercise,
     tokenIndex: number,
+    correction: string,
   ) => FeedbackState;
   revealAnswer: (exercise: Exercise) => FeedbackState;
   goToNext: () => void;
@@ -556,12 +557,12 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
       });
     },
 
-    submitErrorSpotting: (exercise, tokenIndex) => {
+    submitErrorSpotting: (exercise, tokenIndex, correction) => {
       const attempts = (get().attempts[exercise.id] ?? 0) + 1;
       set((state) => ({ attempts: { ...state.attempts, [exercise.id]: attempts } }));
 
-      const correct = checkErrorSpottingAnswer(exercise, tokenIndex);
-      const submittedAnswer = errorSpottingAnswerText(exercise, tokenIndex);
+      const correct = checkErrorSpottingAnswer(exercise, tokenIndex, correction);
+      const submittedAnswer = errorSpottingAnswerText(exercise, tokenIndex, correction);
 
       if (correct) {
         const outcome = outcomeForAttempt(attempts, true);

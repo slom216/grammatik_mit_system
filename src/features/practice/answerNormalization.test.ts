@@ -8,6 +8,7 @@ import {
   checkTextAnswer,
   correctDragToSlotsText,
   correctErrorSpottingText,
+  requiresCorrectionInput,
   correctMatchingText,
   correctSentenceOrderingText,
   dragToSlotsAnswerText,
@@ -374,23 +375,54 @@ function errorSpottingExercise(): ErrorSpottingExercise {
   };
 }
 
+/** A correction that rewrites the whole sentence rather than swapping a token. */
+function rewriteErrorSpottingExercise(): ErrorSpottingExercise {
+  return {
+    ...errorSpottingExercise(),
+    id: 'test-errorspotting-2',
+    correction: 'Ihr seid sehr freundlich.',
+  };
+}
+
 describe('checkErrorSpottingAnswer', () => {
   const exercise = errorSpottingExercise();
 
-  it('accepts the erroneous token index', () => {
-    expect(checkErrorSpottingAnswer(exercise, 1)).toBe(true);
+  it('accepts the erroneous token index with the right correction', () => {
+    expect(checkErrorSpottingAnswer(exercise, 1, 'seid')).toBe(true);
   });
 
   it('rejects any other index', () => {
-    expect(checkErrorSpottingAnswer(exercise, 0)).toBe(false);
+    expect(checkErrorSpottingAnswer(exercise, 0, 'seid')).toBe(false);
+  });
+
+  it('rejects the right token with the wrong correction', () => {
+    expect(checkErrorSpottingAnswer(exercise, 1, 'bist')).toBe(false);
+  });
+
+  it('forgives punctuation and surrounding space in the correction', () => {
+    expect(checkErrorSpottingAnswer(exercise, 1, ' seid. ')).toBe(true);
+  });
+
+  it('still holds capitalisation against the learner', () => {
+    expect(checkErrorSpottingAnswer(exercise, 1, 'Seid')).toBe(false);
+  });
+
+  it('asks for no correction when the fix is a whole-sentence rewrite', () => {
+    const rewrite = rewriteErrorSpottingExercise();
+    expect(requiresCorrectionInput(rewrite)).toBe(false);
+    expect(checkErrorSpottingAnswer(rewrite, 1, '')).toBe(true);
   });
 });
 
 describe('errorSpotting answer text', () => {
   const exercise = errorSpottingExercise();
 
-  it('returns the token the learner clicked', () => {
-    expect(errorSpottingAnswerText(exercise, 2)).toBe('sehr');
+  it('pairs the token the learner clicked with the correction they typed', () => {
+    expect(errorSpottingAnswerText(exercise, 2, 'sehr')).toBe('sehr → sehr');
+  });
+
+  it('returns the token alone when no correction was asked for', () => {
+    expect(errorSpottingAnswerText(rewriteErrorSpottingExercise(), 2, '')).toBe('sehr');
   });
 
   it('renders the error and its correction', () => {

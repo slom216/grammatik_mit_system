@@ -99,9 +99,9 @@ export function PracticeExercise({
       onSubmitMatching={(matches) => {
         if (exercise.type === 'matching') practice.submitMatching(exercise, matches);
       }}
-      onSubmitErrorSpotting={(tokenIndex) => {
+      onSubmitErrorSpotting={(tokenIndex, correction) => {
         if (exercise.type === 'errorSpotting') {
-          practice.submitErrorSpotting(exercise, tokenIndex);
+          practice.submitErrorSpotting(exercise, tokenIndex, correction);
         }
       }}
       onRetry={() => {

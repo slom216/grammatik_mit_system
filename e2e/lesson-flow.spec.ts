@@ -50,12 +50,20 @@ async function answerCurrentExercise(page: Page, index: number) {
       break;
     }
     case 'errorSpotting': {
-      // Auto-submits like singleChoice, after the same debounce.
       await page.locator('.error-spotting__token').nth(exercise.errorTokenIndex).click();
+      if (/\s/.test(exercise.correction)) break; // Auto-submits, like singleChoice.
+      await page.getByLabel('Replace it with').fill(exercise.correction);
+      await page.getByRole('button', { name: 'Check answer' }).click();
       break;
     }
     case 'sentenceOrdering': {
-      const correctTexts = exercise.segments.map((segment) => segment.text);
+      // The terminal punctuation is shown after the row rather than on the last
+      // segment, so it is not part of any segment's label.
+      const correctTexts = exercise.segments.map((segment, index) =>
+        index === exercise.segments.length - 1
+          ? segment.text.replace(/[.!?]$/, '')
+          : segment.text,
+      );
       for (let target = 0; target < correctTexts.length; target += 1) {
         const text = correctTexts[target] ?? '';
         const moveEarlier = page.getByRole('button', {

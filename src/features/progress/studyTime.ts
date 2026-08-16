@@ -24,6 +24,18 @@ export function describeDuration(ms: number): string {
   return hours > 0 ? `${hours} h ${minutes} min` : `${minutes} min`;
 }
 
+/**
+ * Cramped form for a calendar cell, where seven of these share a row: `47s`,
+ * `12m`, `1h04`.
+ */
+export function compactDuration(ms: number): string {
+  const totalSeconds = Math.max(0, Math.floor(ms / 1000));
+  if (totalSeconds < 60) return `${totalSeconds}s`;
+  const minutes = Math.floor(totalSeconds / 60) % 60;
+  const hours = Math.floor(totalSeconds / 3600);
+  return hours > 0 ? `${hours}h${String(minutes).padStart(2, '0')}` : `${minutes}m`;
+}
+
 /** Every chapter's practice time plus the time from cumulative reviews. */
 export function totalStudyMs(
   chapters: Record<number, ChapterProgress>,

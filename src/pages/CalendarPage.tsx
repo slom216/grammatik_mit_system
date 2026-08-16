@@ -10,10 +10,22 @@ import {
 } from '../features/progress/dailyActivity';
 import { toDayKey } from '../features/progress/dayKey';
 import { useProgressStore } from '../features/progress/progressStore';
-import { describeDuration } from '../features/progress/studyTime';
+import { compactDuration, describeDuration } from '../features/progress/studyTime';
+import { CEFR_LEVELS, type CefrLevel } from '../schemas/chapterSchema';
 
 /** Monday-first, matching the grid. */
 const WEEKDAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+
+/** The CEFR levels the day's chapters belong to, in course order and deduplicated. */
+function levelsOf(
+  chapterNumbers: number[],
+  levelByNumber: Map<number, CefrLevel>,
+): CefrLevel[] {
+  const found = new Set(
+    chapterNumbers.map((number) => levelByNumber.get(number)).filter(Boolean),
+  );
+  return CEFR_LEVELS.filter((level) => found.has(level));
+}
 
 /** Parsed as local parts, matching how the key was built. */
 function parseDayKey(dateKey: string): Date {
@@ -30,13 +42,21 @@ function formatDate(dateKey: string): string {
   });
 }
 
-function describeDay(dateKey: string, answers: number, ms: number): string {
+/** The whole cell in words: what the three cramped lines say, spelled out. */
+function describeDay(
+  dateKey: string,
+  answers: number,
+  ms: number,
+  chapters: number,
+  levels: CefrLevel[],
+): string {
   const date = formatDate(dateKey);
   if (answers === 0 && ms === 0) return `${date}: nothing practised`;
-  const exercises = `${answers} ${answers === 1 ? 'exercise' : 'exercises'}`;
-  return ms > 0
-    ? `${date}: ${exercises}, ${describeDuration(ms)}`
-    : `${date}: ${exercises}`;
+  const parts = [`${answers} ${answers === 1 ? 'exercise' : 'exercises'}`];
+  if (ms > 0) parts.push(describeDuration(ms));
+  if (chapters > 0) parts.push(`${chapters} ${chapters === 1 ? 'chapter' : 'chapters'}`);
+  if (levels.length > 0) parts.push(`level ${levels.join(' and ')}`);
+  return `${date}: ${parts.join(', ')}`;
 }
 
 export function CalendarPage() {
@@ -61,6 +81,10 @@ export function CalendarPage() {
   const cards = useMemo(() => selectChapterCards(progress), [progress]);
   const titleByNumber = useMemo(
     () => new Map(cards.map((card) => [card.number, card.title])),
+    [cards],
+  );
+  const levelByNumber = useMemo(
+    () => new Map(cards.map((card) => [card.number, card.level])),
     [cards],
   );
 
@@ -96,8 +120,8 @@ export function CalendarPage() {
       <header>
         <h1>Calendar</h1>
         <p className="text-muted prose">
-          Which chapters you practised on each day, and how long you spent. Everything here
-          is stored in this browser only.
+          Which chapters you practised on each day, and how long you spent. Everything
+          here is stored in this browser only.
         </p>
       </header>
 
@@ -126,15 +150,16 @@ export function CalendarPage() {
       >
         <div className="stack">
           <p className="text-sm text-muted">
-            {monthTotals.answers}{' '}
-            {monthTotals.answers === 1 ? 'exercise' : 'exercises'} over{' '}
-            {monthTotals.days} {monthTotals.days === 1 ? 'day' : 'days'}
+            {monthTotals.answers} {monthTotals.answers === 1 ? 'exercise' : 'exercises'}{' '}
+            over {monthTotals.days} {monthTotals.days === 1 ? 'day' : 'days'}
             {monthTotals.ms > 0 ? ` · ${describeDuration(monthTotals.ms)}` : ''}.
           </p>
 
           <table className="calendar-month">
             <caption className="visually-hidden">
-              Practice per day in {monthLabel}. Pick a day to see its chapters.
+              Practice per day in {monthLabel}. Each day shows the time spent, then the
+              number of chapters practised and their levels. Pick a day to see its
+              chapters.
             </caption>
             <thead>
               <tr>
@@ -149,38 +174,64 @@ export function CalendarPage() {
             <tbody>
               {weeks.map((week) => (
                 <tr key={week[0]?.date}>
-                  {week.map((day) => (
-                    <td key={day.date}>
-                      <button
-                        type="button"
-                        className={[
-                          'calendar-month__day',
-                          `calendar-month__day--level-${heatLevel(day.answers)}`,
-                          day.inMonth ? '' : 'calendar-month__day--outside',
-                          day.date === todayKey ? 'calendar-month__day--today' : '',
-                        ]
-                          .filter(Boolean)
-                          .join(' ')}
-                        aria-pressed={day.date === selected}
-                        aria-label={describeDay(day.date, day.answers, day.ms)}
-                        onClick={() => setSelected(day.date)}
-                      >
-                        <span aria-hidden="true">{parseDayKey(day.date).getDate()}</span>
-                      </button>
-                    </td>
-                  ))}
+                  {week.map((day) => {
+                    const levels = levelsOf(day.chapterNumbers, levelByNumber);
+                    return (
+                      <td key={day.date}>
+                        <button
+                          type="button"
+                          className={[
+                            'calendar-month__day',
+                            `calendar-month__day--level-${heatLevel(day.answers)}`,
+                            day.inMonth ? '' : 'calendar-month__day--outside',
+                            day.date === todayKey ? 'calendar-month__day--today' : '',
+                          ]
+                            .filter(Boolean)
+                            .join(' ')}
+                          aria-pressed={day.date === selected}
+                          aria-label={describeDay(
+                            day.date,
+                            day.answers,
+                            day.ms,
+                            day.chapterNumbers.length,
+                            levels,
+                          )}
+                          onClick={() => setSelected(day.date)}
+                        >
+                          <span aria-hidden="true">
+                            {parseDayKey(day.date).getDate()}
+                          </span>
+                          {/* The spoken version is the button's own label, so
+                              these shorthands stay out of the accessible name. */}
+                          <span className="calendar-month__facts" aria-hidden="true">
+                            {day.ms > 0 && <span>{compactDuration(day.ms)}</span>}
+                            {day.chapterNumbers.length > 0 && (
+                              <span>
+                                {day.chapterNumbers.length}
+                                {levels.length > 0 ? ` · ${levels.join(' ')}` : ''}
+                              </span>
+                            )}
+                          </span>
+                        </button>
+                      </td>
+                    );
+                  })}
                 </tr>
               ))}
             </tbody>
           </table>
+
+          <p className="text-sm text-muted" aria-hidden="true">
+            Each day reads: time spent, then chapters practised · their levels.
+          </p>
         </div>
       </Card>
 
       <Card title={formatDate(detail.date)} titleLevel={2}>
         {detail.answers === 0 && detail.ms === 0 ? (
           <p className="text-muted">
-            Nothing practised on this day.{' '}
-            <Link to="/chapters">Pick a chapter</Link> to change that.
+            Nothing practised on this day. <Link to="/chapters">Pick a chapter</Link> to
+            change that.
           </p>
         ) : (
           <div className="stack stack--tight">
