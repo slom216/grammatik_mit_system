@@ -82,12 +82,14 @@ export function ChapterPage() {
           valueText={`${covered} of ${counts.total} answered correctly`}
         />
         <p className="text-sm text-muted">
+          {/* "Studied", not "practised": the total now includes time spent
+              reading the lesson, not only answering exercises. */}
           {chapterProgress.studyMs === 0
-            ? 'Not practised yet'
+            ? 'Not started yet'
             : averageMs === null
               ? // Time without a finished session: nothing to average over yet.
-                `Practised for ${describeDuration(chapterProgress.studyMs)} · no session finished yet`
-              : `Practised for ${describeDuration(chapterProgress.studyMs)} over ${
+                `Studied for ${describeDuration(chapterProgress.studyMs)} · no session finished yet`
+              : `Studied for ${describeDuration(chapterProgress.studyMs)} over ${
                   chapterProgress.attempts
                 } ${chapterProgress.attempts === 1 ? 'session' : 'sessions'} · ${describeDuration(
                   averageMs,

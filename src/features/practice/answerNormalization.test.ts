@@ -8,6 +8,7 @@ import {
   checkTextAnswer,
   correctDragToSlotsText,
   correctErrorSpottingText,
+  promptListsSegments,
   requiresCorrectionInput,
   correctMatchingText,
   correctSentenceOrderingText,
@@ -374,6 +375,47 @@ function errorSpottingExercise(): ErrorSpottingExercise {
     correction: 'seid',
   };
 }
+
+describe('promptListsSegments', () => {
+  const exercise = (prompt: string): SentenceOrderingExercise => ({
+    id: 'test-ordering-1',
+    chapterNumber: 0,
+    order: 1,
+    type: 'sentenceOrdering',
+    prompt,
+    level: 'transfer',
+    grammarFocus: ['word order'],
+    explanation: 'The verb comes second.',
+    segments: [
+      { id: 's1', text: 'Ich' },
+      { id: 's2', text: 'bin' },
+      { id: 's3', text: 'sehr' },
+      { id: 's4', text: 'müde.' },
+    ],
+  });
+
+  it('spots a slash-separated word list, which is the answer in order', () => {
+    expect(promptListsSegments(exercise('Ich / bin / sehr / müde.'))).toBe(true);
+  });
+
+  it('spots one behind an instruction, or with other separators', () => {
+    expect(
+      promptListsSegments(exercise('Order the words: Ich / bin / sehr / müde.')),
+    ).toBe(true);
+    expect(promptListsSegments(exercise('müde – Ich – sehr – bin'))).toBe(true);
+    expect(promptListsSegments(exercise('Ich bin sehr müde.'))).toBe(true);
+  });
+
+  it('keeps a prompt that frames the task in its own words', () => {
+    expect(promptListsSegments(exercise('Build a sentence: I am very tired.'))).toBe(
+      false,
+    );
+  });
+
+  it('keeps a prompt that lists only some of the words', () => {
+    expect(promptListsSegments(exercise('Start from: Ich bin …'))).toBe(false);
+  });
+});
 
 /** A correction that rewrites the whole sentence rather than swapping a token. */
 function rewriteErrorSpottingExercise(): ErrorSpottingExercise {

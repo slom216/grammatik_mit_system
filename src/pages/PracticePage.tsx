@@ -170,7 +170,7 @@ export function PracticePage() {
   return (
     <div className="stack practice">
       <header className="stack stack--tight">
-        <div className="row practice__header-row">
+        <div className="row study-header-row">
           <span className="eyebrow">
             Chapter {formatChapterNumber(chapter.number)}
             {reviewMode && ' · review'}

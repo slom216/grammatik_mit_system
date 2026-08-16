@@ -1,9 +1,13 @@
-import { describe, expect, it } from 'vitest';
-import { screen, within } from '@testing-library/react';
+import { describe, expect, it, vi } from 'vitest';
+import { act, screen, within } from '@testing-library/react';
 import { LearnPage } from './LearnPage';
 import { renderWithRouter } from '../test/helpers/renderWithRouter';
 import { chapter001 } from '../content/chapters/chapter-001-personal-pronouns';
 import { chapterRouteLoader } from '../features/chapters/useChapterParam';
+import {
+  selectChapterProgress,
+  useProgressStore,
+} from '../features/progress/progressStore';
 
 async function renderLearn(chapterNumber = 1) {
   return renderWithRouter(<LearnPage />, {
@@ -82,6 +86,32 @@ describe('LearnPage', () => {
     expect(
       screen.getByRole('link', { name: /quick practice \(24 exercises\)/i }),
     ).toHaveAttribute('href', '/chapter/1/practice?mode=quick');
+  });
+
+  it('counts reading time against the chapter', async () => {
+    window.localStorage.clear();
+    useProgressStore.getState().resetProgress();
+    // jsdom has no window manager, so focus is faked at the source the timer reads.
+    vi.spyOn(document, 'hasFocus').mockReturnValue(true);
+    vi.useFakeTimers({ shouldAdvanceTime: true });
+
+    const view = await renderLearn();
+    expect(screen.getByTestId('study-timer')).toBeInTheDocument();
+
+    await act(async () => {
+      vi.advanceTimersByTime(600_000);
+    });
+    // Unmounting is what banks the time, exactly as leaving the page would.
+    view.unmount();
+
+    // At least, not exactly: `shouldAdvanceTime` lets a few real milliseconds
+    // through as well. Exact accounting is studyTimer's own test.
+    expect(
+      selectChapterProgress(useProgressStore.getState(), 1).studyMs,
+    ).toBeGreaterThanOrEqual(600_000);
+
+    vi.useRealTimers();
+    vi.restoreAllMocks();
   });
 
   it('reports an unavailable chapter instead of crashing', async () => {

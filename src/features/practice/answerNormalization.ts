@@ -55,6 +55,37 @@ export function tokenize(value: string): string[] {
     .filter((token) => token.length > 0);
 }
 
+/** Letters only, lowercased. Separators like `/`, `–` and `+` are not words. */
+function promptWords(value: string): string[] {
+  return normalizeBasic(value)
+    .toLocaleLowerCase('de-DE')
+    .split(/[^\p{L}]+/u)
+    .filter(Boolean);
+}
+
+/**
+ * True when the prompt already lists every word the learner has to arrange —
+ * usually in the answer's own order (`Ich / bin / sehr / müde.`), sometimes as
+ * the finished sentence outright. Such a prompt gives the exercise away and
+ * says nothing the segments do not, so the UI drops it. A prompt that frames
+ * the task instead ("Build a sentence: he works every day in the office.") has
+ * words of its own and is kept.
+ */
+export function promptListsSegments(exercise: SentenceOrderingExercise): boolean {
+  const available = new Map<string, number>();
+  for (const word of promptWords(exercise.prompt)) {
+    available.set(word, (available.get(word) ?? 0) + 1);
+  }
+  for (const segment of exercise.segments) {
+    for (const word of promptWords(segment.text)) {
+      const left = available.get(word) ?? 0;
+      if (left === 0) return false;
+      available.set(word, left - 1);
+    }
+  }
+  return true;
+}
+
 export interface TextAnswerCheck {
   correct: boolean;
   normalizedAnswer: string;

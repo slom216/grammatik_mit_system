@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Card } from '../components/common/Card';
+import { StudyTimer } from '../components/progress/StudyTimer';
 import { ChapterUnavailable } from '../components/common/ChapterUnavailable';
 import { CommonMistakes } from '../components/grammar/CommonMistakes';
 import { ExampleList } from '../components/grammar/ExampleList';
@@ -29,11 +30,17 @@ export function LearnPage() {
   return (
     <article className="stack lesson">
       <header className="stack stack--tight">
-        <p className="eyebrow">
-          <Link to={chapterPath(chapter.number)}>
-            Chapter {formatChapterNumber(chapter.number)}
-          </Link>
-        </p>
+        <div className="row study-header-row">
+          <p className="eyebrow">
+            <Link to={chapterPath(chapter.number)}>
+              Chapter {formatChapterNumber(chapter.number)}
+            </Link>
+          </p>
+          {/* Reading the rules is study too. Mounting the timer here banks the
+              time against the chapter, and starting practice hands the clock
+              over rather than double-counting. */}
+          <StudyTimer chapterNumber={chapter.number} />
+        </div>
         <h1>{chapter.title}</h1>
         <p className="lead">{chapter.objective}</p>
         {chapter.prerequisites.length > 0 && (

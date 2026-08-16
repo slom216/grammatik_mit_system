@@ -90,8 +90,9 @@ export function ProgressPage() {
           </p>
           <p className="text-sm text-muted">
             {/* Only time with the tab focused counts, so this is time actually
-                spent practising rather than time the page was left open. */}
-            Time spent practising: <strong>{describeDuration(totalMs)}</strong>
+                spent on the course rather than time the page was left open.
+                Reading a lesson counts alongside answering exercises. */}
+            Time spent studying: <strong>{describeDuration(totalMs)}</strong>
             {progress.otherStudyMs > 0 &&
               ` · ${describeDuration(progress.otherStudyMs)} of it in cumulative reviews`}
             .

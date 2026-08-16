@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import type { SentenceOrderingExercise as SentenceOrderingExerciseData } from '../../schemas/exerciseSchema';
+import { promptListsSegments } from '../../features/practice/answerNormalization';
 import { Icon } from '../common/Icon';
 import { isCoarsePointer } from './coarsePointer';
 
@@ -82,9 +83,16 @@ export function SentenceOrderingExercise({
 
   return (
     <fieldset className="sentence-ordering">
-      <legend className="exercise__prompt" lang="de">
-        {exercise.prompt}
-      </legend>
+      {/* Many prompts are the words with slashes between them, in the answer's
+          own order — that is the answer, printed above the puzzle. Dropped in
+          favour of a plain label, which still names the fieldset. */}
+      {promptListsSegments(exercise) ? (
+        <legend className="visually-hidden">Put the words in the correct order.</legend>
+      ) : (
+        <legend className="exercise__prompt" lang="de">
+          {exercise.prompt}
+        </legend>
+      )}
       <ol className="sentence-ordering__list">
         {order.map((id, index) => {
           const segment = segmentById.get(id);

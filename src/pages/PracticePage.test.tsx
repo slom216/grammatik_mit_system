@@ -13,11 +13,16 @@ import { AUTO_ADVANCE_DELAY_MS } from '../components/exercises/ExerciseRenderer'
 const CHAPTER_1_EXERCISE_COUNT = chapter001.exercises.length;
 
 async function renderPractice(search = '') {
-  return renderWithRouter(<PracticePage />, {
+  const view = await renderWithRouter(<PracticePage />, {
     route: `/chapter/1/practice${search}`,
     path: '/chapter/:chapterNumber/practice',
     loader: chapterRouteLoader,
   });
+  // The route loading is only half of it: the page then starts the session and
+  // shows "Preparing practice…" until it has one. The counter is the first
+  // thing every test here reads, so it is the honest ready signal.
+  await screen.findByTestId('exercise-counter');
+  return view;
 }
 
 /**

@@ -157,7 +157,7 @@ export function CumulativeReviewPage() {
   return (
     <div className="stack">
       <header className="stack stack--tight">
-        <div className="row practice__header-row">
+        <div className="row study-header-row">
           <h1>{heading}</h1>
           <StudyTimer chapterNumber={null} />
         </div>
