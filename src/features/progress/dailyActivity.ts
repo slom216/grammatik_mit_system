@@ -1,4 +1,4 @@
-import type { ChapterProgress } from '../../schemas/progressSchema';
+import type { ChapterProgress, DayLogEntry } from '../../schemas/progressSchema';
 import { addDays, toDayKey } from './dayKey';
 
 export interface DailyChapterActivity {
@@ -77,6 +77,101 @@ export function buildActivityCalendar(
     result.push({ days });
   }
   return result;
+}
+
+/* ------------------------------------------------------------------ */
+/* Month calendar                                                      */
+/* ------------------------------------------------------------------ */
+
+export interface CalendarDay {
+  /** ISO date, `YYYY-MM-DD`. */
+  date: string;
+  /** False for the days that pad the first and last week of the month. */
+  inMonth: boolean;
+  /** Exercises answered, from `answersByDay`. */
+  answers: number;
+  /** Practice time, from the day log. */
+  ms: number;
+  /** Chapters practised that day, ascending. */
+  chapterNumbers: number[];
+}
+
+/**
+ * One month as Monday-first whole weeks. The days either side of the month are
+ * kept rather than blanked so every row has seven cells, and marked `inMonth:
+ * false` so the page can dim them.
+ */
+export function buildMonthGrid(
+  month: Date,
+  answersByDay: Record<string, number>,
+  dayLog: Record<string, DayLogEntry>,
+): CalendarDay[][] {
+  const first = new Date(month.getFullYear(), month.getMonth(), 1);
+  const leadingPad = (first.getDay() + 6) % 7;
+  const gridStart = addDays(first, -leadingPad);
+  // Day 0 of the next month is the last day of this one.
+  const daysInMonth = new Date(month.getFullYear(), month.getMonth() + 1, 0).getDate();
+  const weeks = Math.ceil((leadingPad + daysInMonth) / 7);
+
+  const result: CalendarDay[][] = [];
+  for (let week = 0; week < weeks; week += 1) {
+    const days: CalendarDay[] = [];
+    for (let index = 0; index < 7; index += 1) {
+      const date = addDays(gridStart, week * 7 + index);
+      const key = toDayKey(date);
+      const entry = dayLog[key];
+      days.push({
+        date: key,
+        inMonth: date.getMonth() === month.getMonth(),
+        answers: answersByDay[key] ?? 0,
+        ms: entry?.ms ?? 0,
+        chapterNumbers: Object.keys(entry?.chapters ?? {})
+          .map(Number)
+          .sort((a, b) => a - b),
+      });
+    }
+    result.push(days);
+  }
+  return result;
+}
+
+export interface DayChapterDetail {
+  chapterNumber: number;
+  answers: number;
+  ms: number;
+}
+
+export interface DayDetail {
+  date: string;
+  answers: number;
+  ms: number;
+  chapters: DayChapterDetail[];
+  /**
+   * Time on the day that belongs to no single chapter — a cumulative review
+   * mixes several, so its minutes only ever reach the day total.
+   */
+  mixedMs: number;
+}
+
+/** Everything known about one day, ready to render. */
+export function selectDayDetail(
+  date: string,
+  answersByDay: Record<string, number>,
+  dayLog: Record<string, DayLogEntry>,
+): DayDetail {
+  const entry = dayLog[date];
+  const chapters = Object.entries(entry?.chapters ?? {})
+    .map(([chapterNumber, work]) => ({ chapterNumber: Number(chapterNumber), ...work }))
+    .sort((a, b) => a.chapterNumber - b.chapterNumber);
+  const chapterMs = chapters.reduce((sum, chapter) => sum + chapter.ms, 0);
+  const ms = entry?.ms ?? 0;
+  return {
+    date,
+    answers: answersByDay[date] ?? 0,
+    ms,
+    chapters,
+    mixedMs: Math.max(0, ms - chapterMs),
+  };
 }
 
 export interface ActivitySummary {

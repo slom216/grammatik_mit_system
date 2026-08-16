@@ -136,6 +136,53 @@ describe('progressStore', () => {
     );
   });
 
+  it('logs which chapter was practised on the day it was answered', () => {
+    const day = new Date(2026, 2, 10, 20, 0);
+    const store = useProgressStore.getState();
+    store.recordAttempt({
+      exerciseId: 'demo-ex-01',
+      chapterNumber: 3,
+      outcome: 'correctFirstAttempt',
+      now: day,
+    });
+    store.recordAttempt({
+      exerciseId: 'demo-ex-02',
+      chapterNumber: 7,
+      outcome: 'incorrect',
+      now: day,
+    });
+
+    const entry = useProgressStore.getState().dayLog['2026-03-10'];
+    expect(entry?.chapters[3]?.answers).toBe(1);
+    expect(entry?.chapters[7]?.answers).toBe(1);
+    expect(useProgressStore.getState().answersByDay['2026-03-10']).toBe(2);
+  });
+
+  it('logs study time against both the day and the chapter', () => {
+    const day = new Date(2026, 2, 10, 20, 0);
+    useProgressStore.getState().addStudyTime(3, 60_000, day);
+    useProgressStore.getState().addStudyTime(3, 30_000, day);
+
+    const state = useProgressStore.getState();
+    expect(state.dayLog['2026-03-10']).toEqual({
+      ms: 90_000,
+      chapters: { 3: { answers: 0, ms: 90_000 } },
+    });
+    expect(selectChapterProgress(state, 3).studyMs).toBe(90_000);
+  });
+
+  it('keeps time from a cumulative review out of any chapter', () => {
+    const day = new Date(2026, 2, 10, 20, 0);
+    useProgressStore.getState().addStudyTime(3, 60_000, day);
+    useProgressStore.getState().addStudyTime(null, 20_000, day);
+
+    const entry = useProgressStore.getState().dayLog['2026-03-10'];
+    // The day total carries it; the difference is the mixed-review time.
+    expect(entry?.ms).toBe(80_000);
+    expect(entry?.chapters[3]?.ms).toBe(60_000);
+    expect(useProgressStore.getState().otherStudyMs).toBe(20_000);
+  });
+
   it('survives a page refresh', () => {
     const store = useProgressStore.getState();
     store.recordSessionResult({

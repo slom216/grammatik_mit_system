@@ -1,10 +1,12 @@
 import type { z } from 'zod';
 import {
   PROGRESS_SCHEMA_VERSION,
-  persistedProgressV3Schema,
+  persistedProgressV4Schema,
   type ChapterProgress,
+  type DayChapterWork,
+  type DayLogEntry,
   type ExerciseHistory,
-  type PersistedProgressV3,
+  type PersistedProgressV4,
 } from '../../schemas/progressSchema';
 import { toDayKey } from './dayKey';
 
@@ -29,12 +31,13 @@ export function getDefaultStorage(): StorageLike | null {
   }
 }
 
-export function createEmptyProgress(): PersistedProgressV3 {
+export function createEmptyProgress(): PersistedProgressV4 {
   return {
     schemaVersion: PROGRESS_SCHEMA_VERSION,
     chapters: {},
     exerciseHistory: {},
     answersByDay: {},
+    dayLog: {},
     otherStudyMs: 0,
   };
 }
@@ -90,9 +93,18 @@ export const progressMigrations: Record<number, (state: unknown) => unknown> = {
    * starts at zero and the schema defaults fill the per-chapter field in.
    */
   2: (state) => ({ ...(state as object), schemaVersion: 3, otherStudyMs: 0 }),
+
+  /**
+   * v3 → v4: adds the per-day practice log. Neither the time nor the chapters
+   * of a past day were recorded anywhere, and `completedAt` is a completion
+   * date rather than a record of what was practised — seeding from it would
+   * invent days. The log therefore starts empty and earlier days keep only the
+   * exercise count `answersByDay` already holds.
+   */
+  3: (state) => ({ ...(state as object), schemaVersion: 4, dayLog: {} }),
 };
 
-export function migrateProgress(raw: unknown): PersistedProgressV3 | null {
+export function migrateProgress(raw: unknown): PersistedProgressV4 | null {
   if (raw === null || typeof raw !== 'object') return null;
 
   let candidate: unknown = raw;
@@ -105,15 +117,15 @@ export function migrateProgress(raw: unknown): PersistedProgressV3 | null {
     version = (candidate as { schemaVersion?: unknown }).schemaVersion;
   }
 
-  const parsed = persistedProgressV3Schema.safeParse(candidate);
+  const parsed = persistedProgressV4Schema.safeParse(candidate);
   if (!parsed.success) return null;
   return normalizeProgress(parsed.data);
 }
 
 /** Zod parses record keys as strings; the domain model uses chapter numbers. */
 function normalizeProgress(
-  data: z.infer<typeof persistedProgressV3Schema>,
-): PersistedProgressV3 {
+  data: z.infer<typeof persistedProgressV4Schema>,
+): PersistedProgressV4 {
   const chapters: Record<number, ChapterProgress> = {};
   for (const progress of Object.values(data.chapters)) {
     chapters[progress.chapterNumber] = progress;
@@ -122,11 +134,21 @@ function normalizeProgress(
   for (const history of Object.values(data.exerciseHistory)) {
     exerciseHistory[history.exerciseId] = history;
   }
-  const migrated: PersistedProgressV3 = {
+  const dayLog: Record<string, DayLogEntry> = {};
+  for (const [date, entry] of Object.entries(data.dayLog)) {
+    const chapterWork: Record<number, DayChapterWork> = {};
+    for (const [chapterNumber, work] of Object.entries(entry.chapters)) {
+      chapterWork[Number(chapterNumber)] = work;
+    }
+    dayLog[date] = { ms: entry.ms, chapters: chapterWork };
+  }
+
+  const migrated: PersistedProgressV4 = {
     schemaVersion: PROGRESS_SCHEMA_VERSION,
     chapters,
     exerciseHistory,
     answersByDay: data.answersByDay,
+    dayLog,
     otherStudyMs: data.otherStudyMs,
   };
   if (data.lastOpenedChapter !== undefined) {
@@ -136,7 +158,7 @@ function normalizeProgress(
 }
 
 export function loadProgress(storage: StorageLike | null = getDefaultStorage()): {
-  state: PersistedProgressV3;
+  state: PersistedProgressV4;
   recovered: boolean;
 } {
   if (!storage) return { state: createEmptyProgress(), recovered: false };
@@ -156,7 +178,7 @@ export function loadProgress(storage: StorageLike | null = getDefaultStorage()):
 }
 
 export function saveProgress(
-  state: PersistedProgressV3,
+  state: PersistedProgressV4,
   storage: StorageLike | null = getDefaultStorage(),
 ): boolean {
   if (!storage) return false;

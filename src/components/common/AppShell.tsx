@@ -36,6 +36,7 @@ const FOOTER_GROUPS = [
     links: [
       { to: '/progress', label: 'Your progress' },
       { to: '/activity', label: 'Practice activity' },
+      { to: '/calendar', label: 'Practice calendar' },
     ],
   },
   {

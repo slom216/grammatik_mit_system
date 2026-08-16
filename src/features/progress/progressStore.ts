@@ -4,8 +4,9 @@ import type {
   AttemptOutcome,
   ChapterProgress,
   ChapterStatus,
+  DayLogEntry,
   ExerciseHistory,
-  PersistedProgressV3,
+  PersistedProgressV4,
 } from '../../schemas/progressSchema';
 import { PROGRESS_SCHEMA_VERSION } from '../../schemas/progressSchema';
 import {
@@ -43,6 +44,8 @@ export interface ProgressState {
   exerciseHistory: Record<string, ExerciseHistory>;
   /** Exercises answered per local day, `YYYY-MM-DD` → count. */
   answersByDay: Record<string, number>;
+  /** Time and chapters per local day, `YYYY-MM-DD` → entry. */
+  dayLog: Record<string, DayLogEntry>;
   /** Practice time not tied to one chapter (cumulative reviews). */
   otherStudyMs: number;
   lastOpenedChapter?: number;
@@ -54,13 +57,13 @@ export interface ProgressState {
   acknowledgeRecovery: () => void;
   recordAttempt: (input: RecordAttemptInput) => void;
   /** Adds practice time; `null` for a session spanning several chapters. */
-  addStudyTime: (chapterNumber: number | null, ms: number) => void;
+  addStudyTime: (chapterNumber: number | null, ms: number, now?: Date) => void;
   recordSessionResult: (input: RecordSessionInput) => { mastered: boolean };
   setLastOpenedChapter: (chapterNumber: number) => void;
   toggleBookmark: (chapterNumber: number) => void;
   resetProgress: () => void;
-  replaceProgress: (state: PersistedProgressV3) => void;
-  snapshot: () => PersistedProgressV3;
+  replaceProgress: (state: PersistedProgressV4) => void;
+  snapshot: () => PersistedProgressV4;
 }
 
 export function createChapterProgress(chapterNumber: number): ChapterProgress {
@@ -78,18 +81,50 @@ export function createChapterProgress(chapterNumber: number): ChapterProgress {
   };
 }
 
+/**
+ * Adds a day's work to the log, without mutating what is already stored. Both
+ * counters are optional: answering an exercise adds one answer, the timer adds
+ * milliseconds, and a cumulative review has no chapter to credit — its time
+ * lands on the day total only.
+ */
+function bumpDay(
+  dayLog: Record<string, DayLogEntry>,
+  day: string,
+  chapterNumber: number | null,
+  work: { answers?: number; ms?: number },
+): Record<string, DayLogEntry> {
+  const entry = dayLog[day] ?? { ms: 0, chapters: {} };
+  const next: DayLogEntry = {
+    ms: entry.ms + (work.ms ?? 0),
+    chapters: entry.chapters,
+  };
+  if (chapterNumber !== null) {
+    const previous = entry.chapters[chapterNumber] ?? { answers: 0, ms: 0 };
+    next.chapters = {
+      ...entry.chapters,
+      [chapterNumber]: {
+        answers: previous.answers + (work.answers ?? 0),
+        ms: previous.ms + (work.ms ?? 0),
+      },
+    };
+  }
+  return { ...dayLog, [day]: next };
+}
+
 function toPersisted(state: {
   chapters: Record<number, ChapterProgress>;
   exerciseHistory: Record<string, ExerciseHistory>;
   answersByDay: Record<string, number>;
+  dayLog: Record<string, DayLogEntry>;
   otherStudyMs: number;
   lastOpenedChapter?: number;
-}): PersistedProgressV3 {
-  const persisted: PersistedProgressV3 = {
+}): PersistedProgressV4 {
+  const persisted: PersistedProgressV4 = {
     schemaVersion: PROGRESS_SCHEMA_VERSION,
     chapters: state.chapters,
     exerciseHistory: state.exerciseHistory,
     answersByDay: state.answersByDay,
+    dayLog: state.dayLog,
     otherStudyMs: state.otherStudyMs,
   };
   if (state.lastOpenedChapter !== undefined) {
@@ -114,6 +149,7 @@ export const useProgressStore = create<ProgressState>()((set, get) => {
         chapters: state.chapters,
         exerciseHistory: state.exerciseHistory,
         answersByDay: state.answersByDay,
+        dayLog: state.dayLog,
         otherStudyMs: state.otherStudyMs,
         lastOpenedChapter: state.lastOpenedChapter,
         hydrated: true,
@@ -152,6 +188,7 @@ export const useProgressStore = create<ProgressState>()((set, get) => {
           ...state.answersByDay,
           [day]: (state.answersByDay[day] ?? 0) + 1,
         },
+        dayLog: bumpDay(state.dayLog, day, chapterNumber, { answers: 1 }),
         chapters: {
           ...state.chapters,
           [chapterNumber]: { ...chapter, status, lastPracticedAt: now.toISOString() },
@@ -160,10 +197,17 @@ export const useProgressStore = create<ProgressState>()((set, get) => {
       persist();
     },
 
-    addStudyTime: (chapterNumber, ms) => {
+    addStudyTime: (chapterNumber, ms, now = new Date()) => {
       if (!Number.isFinite(ms) || ms <= 0) return;
+      // ponytail: a flush that straddles local midnight credits the whole chunk
+      // to the day it lands on. Bounded by the timer's 15 s flush interval —
+      // split the chunk at midnight only if that ever matters.
+      const day = toDayKey(now);
       if (chapterNumber === null) {
-        set((state) => ({ otherStudyMs: state.otherStudyMs + ms }));
+        set((state) => ({
+          otherStudyMs: state.otherStudyMs + ms,
+          dayLog: bumpDay(state.dayLog, day, null, { ms }),
+        }));
       } else {
         const chapter =
           get().chapters[chapterNumber] ?? createChapterProgress(chapterNumber);
@@ -172,6 +216,7 @@ export const useProgressStore = create<ProgressState>()((set, get) => {
             ...state.chapters,
             [chapterNumber]: { ...chapter, studyMs: chapter.studyMs + ms },
           },
+          dayLog: bumpDay(state.dayLog, day, chapterNumber, { ms }),
         }));
       }
       persist();
@@ -241,6 +286,7 @@ export const useProgressStore = create<ProgressState>()((set, get) => {
         chapters: state.chapters,
         exerciseHistory: state.exerciseHistory,
         answersByDay: state.answersByDay,
+        dayLog: state.dayLog,
         otherStudyMs: state.otherStudyMs,
         lastOpenedChapter: state.lastOpenedChapter,
         hydrated: true,

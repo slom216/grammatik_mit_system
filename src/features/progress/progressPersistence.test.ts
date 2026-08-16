@@ -13,7 +13,7 @@ import {
 import {
   PROGRESS_SCHEMA_VERSION,
   persistedSettingsV1Schema,
-  type PersistedProgressV3,
+  type PersistedProgressV4,
 } from '../../schemas/progressSchema';
 
 function memoryStorage(initial: Record<string, string> = {}): StorageLike {
@@ -29,7 +29,7 @@ function memoryStorage(initial: Record<string, string> = {}): StorageLike {
   };
 }
 
-const sampleProgress: PersistedProgressV3 = {
+const sampleProgress: PersistedProgressV4 = {
   schemaVersion: PROGRESS_SCHEMA_VERSION,
   chapters: {
     3: {
@@ -60,6 +60,9 @@ const sampleProgress: PersistedProgressV3 = {
     },
   },
   answersByDay: { '2026-03-03': 2 },
+  dayLog: {
+    '2026-03-03': { ms: 480_000, chapters: { 3: { answers: 2, ms: 360_000 } } },
+  },
   otherStudyMs: 120_000,
   lastOpenedChapter: 3,
 };
@@ -278,5 +281,28 @@ describe('createJsonStore', () => {
     const storage = memoryStorage({ 'test:settings': '{"schemaVersion":1}' });
     const store = createJsonStore('test:settings', persistedSettingsV1Schema, storage);
     expect(store.read()).toBeNull();
+  });
+});
+
+describe('migrateProgress: v3 → v4', () => {
+  it('adds an empty day log without touching the counts already recorded', () => {
+    const { dayLog: _dropped, ...v3Progress } = sampleProgress;
+    const migrated = migrateProgress({ ...v3Progress, schemaVersion: 3 });
+
+    expect(migrated?.schemaVersion).toBe(PROGRESS_SCHEMA_VERSION);
+    expect(migrated?.dayLog).toEqual({});
+    expect(migrated?.answersByDay).toEqual({ '2026-03-03': 2 });
+    expect(migrated?.chapters[3]?.studyMs).toBe(600_000);
+  });
+
+  it('reads chapter keys of the day log back as numbers', () => {
+    const { state } = loadProgress(
+      memoryStorage({ [PROGRESS_STORAGE_KEY]: JSON.stringify(sampleProgress) }),
+    );
+
+    expect(state.dayLog['2026-03-03']?.chapters[3]).toEqual({
+      answers: 2,
+      ms: 360_000,
+    });
   });
 });

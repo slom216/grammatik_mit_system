@@ -6,7 +6,7 @@ import { ANSWER_MODES, EXERCISE_TYPES } from './exerciseSchema';
  * shape requires a bump of `PROGRESS_SCHEMA_VERSION` plus a migration in
  * `features/progress/progressPersistence.ts`.
  */
-export const PROGRESS_SCHEMA_VERSION = 3;
+export const PROGRESS_SCHEMA_VERSION = 4;
 
 export const CHAPTER_STATUSES = [
   'notStarted',
@@ -81,7 +81,23 @@ export interface ExerciseHistory {
   hasBeenWrong: boolean;
 }
 
-export interface PersistedProgressV3 {
+export interface DayChapterWork {
+  answers: number;
+  ms: number;
+}
+
+/**
+ * What one local day of practice consisted of: how long, and on which chapters.
+ * `ms` counts every focused minute, `chapters[n].ms` only the minutes credited
+ * to a chapter — a cumulative review belongs to no single one, so the
+ * difference between the two is the time spent on mixed material.
+ */
+export interface DayLogEntry {
+  ms: number;
+  chapters: Record<number, DayChapterWork>;
+}
+
+export interface PersistedProgressV4 {
   schemaVersion: typeof PROGRESS_SCHEMA_VERSION;
   chapters: Record<number, ChapterProgress>;
   exerciseHistory: Record<string, ExerciseHistory>;
@@ -92,6 +108,12 @@ export interface PersistedProgressV3 {
    * that additions never overwrite.
    */
   answersByDay: Record<string, number>;
+  /**
+   * Per-day practice log, `YYYY-MM-DD` → time and chapters. `answersByDay`
+   * holds the day's exercise total and stays the source of truth for streaks
+   * and the heatmap; this adds the two dimensions it cannot express.
+   */
+  dayLog: Record<string, DayLogEntry>;
   /**
    * Study time that belongs to no single chapter — cumulative reviews mix
    * several. Counted in the course total, never in a chapter's own time.
@@ -133,11 +155,25 @@ export const exerciseHistorySchema = z.object({
   hasBeenWrong: z.boolean().default(false),
 });
 
-export const persistedProgressV3Schema = z.object({
+export const dayLogEntrySchema = z.object({
+  ms: z.number().min(0).default(0),
+  chapters: z
+    .record(
+      z.string(),
+      z.object({
+        answers: z.number().int().min(0).default(0),
+        ms: z.number().min(0).default(0),
+      }),
+    )
+    .default({}),
+});
+
+export const persistedProgressV4Schema = z.object({
   schemaVersion: z.literal(PROGRESS_SCHEMA_VERSION),
   chapters: z.record(z.string(), chapterProgressSchema),
   exerciseHistory: z.record(z.string(), exerciseHistorySchema),
   answersByDay: z.record(z.string(), z.number().int().min(0)).default({}),
+  dayLog: z.record(z.string(), dayLogEntrySchema).default({}),
   otherStudyMs: z.number().min(0).default(0),
   lastOpenedChapter: z.number().int().min(0).optional(),
 });

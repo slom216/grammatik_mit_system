@@ -1077,6 +1077,76 @@ a:hover {
   margin-top: var(--space-3);
 }
 
+/** Month grid. Same heat ramp as the yearly heatmap, at a readable size. */
+.calendar-month {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 3px;
+  table-layout: fixed;
+}
+
+.calendar-month th {
+  padding-bottom: var(--space-1);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.calendar-month__day {
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font: inherit;
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  cursor: pointer;
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-heat-0);
+}
+
+.calendar-month__day--level-1 {
+  background: var(--color-heat-1);
+}
+
+.calendar-month__day--level-2 {
+  background: var(--color-heat-2);
+}
+
+/* The two darkest tones swallow body text, so the date flips to the colour
+   that reads on the accent. */
+.calendar-month__day--level-3,
+.calendar-month__day--level-4 {
+  color: var(--color-on-accent);
+}
+
+.calendar-month__day--level-3 {
+  background: var(--color-heat-3);
+}
+
+.calendar-month__day--level-4 {
+  background: var(--color-heat-4);
+}
+
+/* The days padding the first and last week belong to a neighbouring month. */
+.calendar-month__day--outside {
+  opacity: 0.45;
+}
+
+.calendar-month__day--today {
+  border-color: var(--color-accent);
+}
+
+.calendar-month__day[aria-pressed='true'] {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 1px;
+}
+
 /** Long-form lesson: one reading column with generous section rhythm. */
 .lesson {
   max-width: var(--reading-max-width);

@@ -115,7 +115,9 @@ export function ActivityPage() {
       </Card>
 
       <p className="text-sm text-muted">
-        See overall mastery and level breakdown in <Link to="/progress">Progress</Link>.
+        See overall mastery and level breakdown in <Link to="/progress">Progress</Link>,
+        or a day-by-day view of chapters and time in{' '}
+        <Link to="/calendar">Calendar</Link>.
       </p>
     </div>
   );
