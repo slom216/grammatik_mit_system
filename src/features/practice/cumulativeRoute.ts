@@ -14,6 +14,16 @@ export interface CumulativeRouteResult {
   chapters: ChapterDefinition[];
   /** False when the range is invalid or any chapter in it has no content. */
   complete: boolean;
+  /* The three fields below are set by the topic loader (`topicRoute.ts`), which
+     drives the same page: a session built from one grammar tag rather than a
+     chapter range. A chapter range leaves them undefined and the page falls
+     back to its own heading and pool. */
+  /** The `grammarFocus` tag this session was built from. */
+  topic?: string;
+  /** Heading for the session, e.g. `Ending agreement`. */
+  label?: string;
+  /** Prebuilt pool. When absent the page builds one from the chapter range. */
+  exerciseIds?: string[];
 }
 
 /** Loads every chapter in a cumulative review range, in parallel. */

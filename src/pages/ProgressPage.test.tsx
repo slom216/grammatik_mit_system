@@ -58,12 +58,20 @@ describe('ProgressPage', () => {
     expect(topics).toEqual(['Dative', 'Accusative']);
   });
 
-  it('links a topic to the chapter that teaches it', async () => {
+  it('links a topic to a session on that topic and to the chapter that teaches it', async () => {
     answer('ch01-ex-01', ['word-order'], 'incorrect', 5);
 
     await renderWithRouter(<ProgressPage />, { route: '/progress' });
 
     const row = screen.getByRole('row', { name: /word order/i });
-    expect(within(row).getByRole('link')).toHaveAttribute('href', '/chapter/1');
+    // The topic itself is the point of the row, so practising it directly is
+    // the primary action; the chapter link is for reading the rule again.
+    expect(
+      within(row).getByRole('link', { name: /practise this topic/i }),
+    ).toHaveAttribute('href', '/review/topic/word-order');
+    expect(within(row).getByRole('link', { name: /personal pronouns/i })).toHaveAttribute(
+      'href',
+      '/chapter/1',
+    );
   });
 });

@@ -2,10 +2,15 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Card } from '../components/common/Card';
 import { Button } from '../components/common/Button';
 import { ChapterUnavailable } from '../components/common/ChapterUnavailable';
+import { MissedExercises } from '../components/practice/MissedExercises';
 import { SessionSummary } from '../components/practice/SessionSummary';
 import { MasteryBadge } from '../components/progress/MasteryBadge';
 import { selectNextChapter } from '../features/chapters/chapterSelectors';
-import { chapterPath, formatChapterNumber } from '../features/chapters/chapterUtils';
+import {
+  chapterPath,
+  findExercise,
+  formatChapterNumber,
+} from '../features/chapters/chapterUtils';
 import { useChapterParam } from '../features/chapters/useChapterParam';
 import { uncoveredFirst } from '../features/practice/coverage';
 import { usePracticeStore } from '../features/practice/practiceStore';
@@ -21,6 +26,7 @@ export function ResultsPage() {
   const { chapterNumber, chapter, registryEntry } = useChapterParam();
   const navigate = useNavigate();
   const summary = usePracticeStore((state) => state.summary);
+  const sessionDurationMs = usePracticeStore((state) => state.sessionDurationMs);
   const startSession = usePracticeStore((state) => state.startSession);
   const progress = useProgressStore();
 
@@ -42,6 +48,10 @@ export function ResultsPage() {
   const nextChapter = selectNextChapter(chapter.number);
   const coveredIds = selectCoveredExerciseIds(progress.exerciseHistory, chapter.number);
 
+  const missed = (summary?.incorrectExerciseIds ?? [])
+    .map((id) => findExercise(chapter, id))
+    .filter((exercise) => exercise !== undefined);
+
   return (
     <div className="stack">
       <header className="stack stack--tight">
@@ -59,7 +69,11 @@ export function ResultsPage() {
 
       {summary ? (
         <Card title="This session" titleLevel={2}>
-          <SessionSummary summary={summary} openReviewFlags={openFlags} />
+          <SessionSummary
+            summary={summary}
+            openReviewFlags={openFlags}
+            durationMs={sessionDurationMs}
+          />
           {/* The figure this session just moved: coverage across every session,
               which is what decides what the next run leads with. */}
           <p className="text-sm text-muted">
@@ -78,6 +92,12 @@ export function ResultsPage() {
             This summary comes from your saved progress. Start a new session for a
             detailed breakdown.
           </p>
+        </Card>
+      )}
+
+      {missed.length > 0 && (
+        <Card title="What to look at again" titleLevel={2}>
+          <MissedExercises exercises={missed} />
         </Card>
       )}
 

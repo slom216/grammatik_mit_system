@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import type { FormEvent } from 'react';
 import type { Exercise } from '../../schemas/exerciseSchema';
 import type { FeedbackState } from '../../features/practice/practiceStore';
+import { Icon } from '../common/Icon';
 import { DialogueExchange } from './DialogueExchange';
 import { DragToSlotsExercise } from './DragToSlotsExercise';
 import { ErrorSpottingExercise } from './ErrorSpottingExercise';
@@ -29,6 +30,8 @@ export interface ExerciseRendererProps {
   showUmlautHelper: boolean;
   /** Move on by itself once an answer is correct ("Move on automatically"). */
   autoAdvance: boolean;
+  /** Exercises right on the first attempt in a row, current one included. */
+  streak?: number;
   /** How many times "Try again" was used. Non-zero means this is a retry. */
   retryCount?: number;
   onSubmitChoice: (optionId: string) => void;
@@ -61,6 +64,26 @@ export const AUTO_ADVANCE_DELAY_MS = 1200;
 const AUTO_SUBMIT_TYPES = new Set<Exercise['type']>(['singleChoice', 'errorSpotting']);
 
 /**
+ * Longer than a click's debounce: filling the last slot is often followed by
+ * moving a word that turned out to be in the wrong place, and that second
+ * thought must not cost an attempt.
+ */
+const COMPLETION_COMMIT_DELAY_MS = 600;
+
+/** Slot id -> the word placed in it, which is what the store checks against. */
+function placedWordsFor(
+  exercise: Extract<Exercise, { type: 'dragToSlots' }>,
+  placedIndices: Record<string, number>,
+): Record<string, string> {
+  const placedWords: Record<string, string> = {};
+  for (const slot of exercise.slots) {
+    const index = placedIndices[slot.id];
+    if (index !== undefined) placedWords[slot.id] = exercise.wordBank[index] ?? '';
+  }
+  return placedWords;
+}
+
+/**
  * Renders one exercise of any supported type together with its feedback and
  * navigation. The parent must remount it per exercise (`key={exercise.id}`) so
  * the local answer state resets.
@@ -77,6 +100,7 @@ export function ExerciseRenderer({
   showHints,
   showUmlautHelper,
   autoAdvance,
+  streak = 0,
   retryCount = 0,
   onSubmitChoice,
   onSubmitText,
@@ -108,10 +132,11 @@ export function ExerciseRenderer({
 
   useEffect(() => () => window.clearTimeout(commitTimeoutRef.current), []);
 
-  // "Try again" remounts this component to clear the previous answer, which
-  // leaves focus on the removed button — i.e. on <body>. Put it back on the
-  // first control of the exercise so the keyboard path continues. Focusing a
-  // radio only moves the ring; it does not check it, so no attempt is spent.
+  // "Try again" removes the button that had focus, leaving it on <body>. Put it
+  // back on the first control of the exercise so the keyboard path continues.
+  // Focusing a radio only moves the ring; it does not check it, so no attempt
+  // is spent. This has to wait for the render that removes the button, hence an
+  // effect rather than the handler below.
   useEffect(() => {
     if (retryCount === 0) return;
     const form = formRef.current;
@@ -121,9 +146,20 @@ export function ExerciseRenderer({
         'input:not(:disabled), textarea:not(:disabled), button:not(:disabled)',
       )
       ?.focus();
-    // Only on mount: a later retry arrives with a new key anyway.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [retryCount]);
+
+  /**
+   * A retry keeps the answer — it is a correction, not a rebuild — with one
+   * exception. Single choice and error spotting carry their whole answer in a
+   * single selection, and a radio that is already `checked` fires no `onChange`
+   * when clicked again, so leaving the wrong choice in place would make it
+   * unpickable on the second attempt.
+   */
+  const handleRetry = () => {
+    setSelectedOptionId(null);
+    setSelectedTokenIndex(null);
+    onRetry();
+  };
 
   const canRetry = feedback?.canRetry === true;
   const inputsDisabled = resolved;
@@ -173,6 +209,36 @@ export function ExerciseRenderer({
   };
 
   /**
+   * Submits once the last position is filled. Nothing is left to decide at that
+   * point, so the separate "Check answer" click was ceremony between the
+   * learner and the next exercise. Cancelled again the moment a position opens
+   * up, and held long enough to move the piece you just put down.
+   */
+  const scheduleCompletionCommit = (complete: boolean, submit: () => void) => {
+    window.clearTimeout(commitTimeoutRef.current);
+    if (resolved || !complete) return;
+    commitTimeoutRef.current = window.setTimeout(() => {
+      if (!resolvedRef.current) submit();
+    }, COMPLETION_COMMIT_DELAY_MS);
+  };
+
+  const commitSlots = (next: Record<string, number>) => {
+    setPlacedIndices(next);
+    if (exercise.type !== 'dragToSlots') return;
+    scheduleCompletionCommit(Object.keys(next).length === exercise.slots.length, () =>
+      onSubmitSlots(placedWordsFor(exercise, next)),
+    );
+  };
+
+  const commitMatches = (next: Record<string, string>) => {
+    setMatches(next);
+    if (exercise.type !== 'matching') return;
+    scheduleCompletionCommit(Object.keys(next).length === exercise.pairs.length, () =>
+      onSubmitMatching(next),
+    );
+  };
+
+  /**
    * "Move on automatically": once an answer is right, step to the next exercise
    * after a beat long enough to read the feedback. Any key or click cancels it,
    * so it never takes the session away from someone still reading.
@@ -219,6 +285,8 @@ export function ExerciseRenderer({
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (resolved || canRetry || !canSubmit || isAutoSubmit) return;
+    // Beat the completion timer to it rather than submitting twice.
+    window.clearTimeout(commitTimeoutRef.current);
     switch (exercise.type) {
       case 'textInput':
         onSubmitText(textValue);
@@ -226,15 +294,9 @@ export function ExerciseRenderer({
       case 'sentenceOrdering':
         onSubmitOrdering(orderedIds);
         break;
-      case 'dragToSlots': {
-        const placedWords: Record<string, string> = {};
-        for (const slot of exercise.slots) {
-          const index = placedIndices[slot.id];
-          if (index !== undefined) placedWords[slot.id] = exercise.wordBank[index] ?? '';
-        }
-        onSubmitSlots(placedWords);
+      case 'dragToSlots':
+        onSubmitSlots(placedWordsFor(exercise, placedIndices));
         break;
-      }
       case 'matching':
         onSubmitMatching(matches);
         break;
@@ -285,7 +347,7 @@ export function ExerciseRenderer({
           exercise={exercise}
           wordBankOrder={wordBankOrder}
           placedIndices={placedIndices}
-          onChange={setPlacedIndices}
+          onChange={commitSlots}
           showAnswer={resolved}
           disabled={inputsDisabled}
         />
@@ -296,7 +358,7 @@ export function ExerciseRenderer({
           exercise={exercise}
           rightOrder={matchingRightOrder}
           matches={matches}
-          onChange={setMatches}
+          onChange={commitMatches}
           showAnswer={resolved}
           disabled={inputsDisabled}
         />
@@ -328,6 +390,18 @@ export function ExerciseRenderer({
         </div>
       )}
 
+      {/* Deliberately outside the live region below: a run of right answers is
+          reinforcement, not something the learner is waiting to hear. Three is
+          where a run stops being a coincidence. */}
+      {streak >= 3 && feedback?.kind === 'correct' && (
+        <p className="row">
+          <span className="badge badge--accent streak-chip">
+            <Icon name="flame" />
+            <span>{streak} correct in a row</span>
+          </span>
+        </p>
+      )}
+
       <ExerciseFeedback feedback={feedback} explanation={exercise.explanation} />
 
       {/* No aria-live: the feedback region above has already announced, and a
@@ -347,7 +421,7 @@ export function ExerciseRenderer({
         resolved={resolved}
         canRetry={canRetry}
         isLast={isLast}
-        onRetry={onRetry}
+        onRetry={handleRetry}
         onReveal={onReveal}
         onNext={onNext}
         onFinish={onFinish}

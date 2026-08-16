@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { ExerciseRenderer } from '../exercises/ExerciseRenderer';
-import { usePracticeStore } from '../../features/practice/practiceStore';
+import {
+  selectAnswerStreak,
+  usePracticeStore,
+} from '../../features/practice/practiceStore';
 import { useSettingsStore } from '../../features/settings/settingsStore';
 import type { Exercise } from '../../schemas/exerciseSchema';
 
@@ -33,18 +36,17 @@ export function PracticeExercise({
       ? practice.feedback
       : null;
 
-  // The renderer holds each type's answer in local state, so it has to be
-  // remounted to clear it. Counting retries here rather than reading
-  // `practice.attempts` is deliberate: attempts increments on *submission*, so
-  // keying on it would wipe the answer the instant feedback appeared — and the
-  // feedback is precisely when the learner wants to see what they wrote.
-  // Clearing on "Try again" instead leaves the failed attempt visible while it
-  // is being read, then hands back an empty exercise to redo.
+  // "Try again" deliberately does *not* remount the renderer. A second attempt
+  // at a twelve-segment ordering or a filled slot sentence should be a
+  // correction, not a rebuild from scratch, so each type's local answer stays
+  // put and the learner edits it. The count is still passed down: the renderer
+  // uses it to restore focus, and to clear the two types whose answer is a
+  // single selection.
   const [retries, setRetries] = useState(0);
 
   return (
     <ExerciseRenderer
-      key={`${exercise.id}:${retries}`}
+      key={exercise.id}
       exercise={exercise}
       optionOrder={
         practice.optionOrder[exercise.id] ??
@@ -74,6 +76,7 @@ export function PracticeExercise({
       showHints={showHints}
       showUmlautHelper={showUmlautHelper}
       autoAdvance={autoAdvance}
+      streak={selectAnswerStreak(practice)}
       retryCount={retries}
       onSubmitChoice={(optionId) => {
         if (exercise.type === 'singleChoice') {

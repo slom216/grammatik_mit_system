@@ -51,14 +51,18 @@ export function ExerciseNavigation({
         )}
 
         {canRetry && (
-          <>
-            <Button type="button" ref={tryAgainRef} onClick={onRetry}>
-              Try again
-            </Button>
-            <Button type="button" variant="secondary" onClick={onReveal}>
-              Show answer
-            </Button>
-          </>
+          <Button type="button" ref={tryAgainRef} onClick={onRetry}>
+            Try again
+          </Button>
+        )}
+
+        {/* Available from the start, not only after a wrong guess: an exercise
+            you have no idea about should not need a throwaway answer before it
+            will tell you anything. Revealing scores zero either way. */}
+        {!resolved && (
+          <Button type="button" variant="secondary" onClick={onReveal}>
+            {canRetry ? 'Show answer' : "I don't know"}
+          </Button>
         )}
 
         {resolved &&

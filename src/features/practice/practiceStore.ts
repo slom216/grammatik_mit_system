@@ -26,6 +26,7 @@ import {
 } from '../chapters/chapterUtils';
 import { createJsonStore } from '../progress/progressPersistence';
 import { useProgressStore } from '../progress/progressStore';
+import { useStudyTimer } from '../progress/studyTimer';
 import {
   checkDragToSlotsAnswer,
   checkErrorSpottingAnswer,
@@ -90,6 +91,13 @@ export interface PracticeState {
   feedback: FeedbackState | null;
   startedAt: string | null;
   summary: SessionSummary | null;
+  /**
+   * Focused time on the finished session, captured from the study timer at the
+   * moment it is scored. The timer resets when it unmounts on the way to the
+   * results page, so the number has to be banked here or it is lost exactly
+   * when it becomes worth showing.
+   */
+  sessionDurationMs: number | null;
 
   startSession: (
     chapter: ChapterDefinition,
@@ -136,7 +144,7 @@ export interface PracticeState {
   exitSession: () => void;
 }
 
-function expectedAnswerFor(exercise: Exercise): string {
+export function expectedAnswerFor(exercise: Exercise): string {
   switch (exercise.type) {
     case 'textInput':
       return primaryAcceptedAnswer(exercise);
@@ -273,6 +281,7 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
     feedback: null,
     startedAt: null,
     summary: null,
+    sessionDurationMs: null,
 
     startSession: (chapter, options = {}) => {
       const ordered = sortedExercises(chapter);
@@ -304,6 +313,7 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
         feedback: null,
         startedAt: new Date().toISOString(),
         summary: null,
+        sessionDurationMs: null,
       });
       persistSession();
     },
@@ -326,6 +336,7 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
         feedback: null,
         startedAt: new Date().toISOString(),
         summary: null,
+        sessionDurationMs: null,
       });
       // Not persisted: persistSession() no-ops while chapterNumber is null,
       // since a cumulative session isn't tied to one chapter.
@@ -614,7 +625,12 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
       });
 
       sessionStore.clear();
-      set({ status: 'finished', summary, feedback: null });
+      set({
+        status: 'finished',
+        summary,
+        feedback: null,
+        sessionDurationMs: useStudyTimer.getState().elapsedMs,
+      });
       return summary;
     },
 
@@ -625,7 +641,12 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
         .filter((record): record is ExerciseAttemptRecord => record !== undefined);
       const summary = summarizeSession(records, state.exerciseIds.length);
 
-      set({ status: 'finished', summary, feedback: null });
+      set({
+        status: 'finished',
+        summary,
+        feedback: null,
+        sessionDurationMs: useStudyTimer.getState().elapsedMs,
+      });
       return summary;
     },
 
@@ -650,6 +671,7 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
         attempts: {},
         feedback: null,
         startedAt: null,
+        sessionDurationMs: null,
       });
     },
   };
@@ -673,6 +695,22 @@ export function selectAnsweredCount(state: PracticeState): number {
 
 export function selectIsLastExercise(state: PracticeState): boolean {
   return state.currentIndex >= state.exerciseIds.length - 1;
+}
+
+/**
+ * How many exercises in a row, up to and including the current one, were right
+ * on the first attempt. Reset by anything else — a second attempt, a reveal, a
+ * miss — so it only ever describes an unbroken run.
+ */
+export function selectAnswerStreak(state: PracticeState): number {
+  let streak = 0;
+  for (let index = state.currentIndex; index >= 0; index -= 1) {
+    const id = state.exerciseIds[index];
+    const record = id === undefined ? undefined : state.results[id];
+    if (record?.outcome !== 'correctFirstAttempt') break;
+    streak += 1;
+  }
+  return streak;
 }
 
 export function selectSessionRecords(state: PracticeState): ExerciseAttemptRecord[] {

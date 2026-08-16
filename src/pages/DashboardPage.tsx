@@ -188,12 +188,16 @@ export function DashboardPage() {
           <div className="stack stack--tight weak-spots">
             <h3>Topics to work on</h3>
             {weakSpots.map((spot) => (
-              <ProgressBar
-                key={spot.tag}
-                label={spot.label}
-                value={spot.accuracyPercent}
-                valueText={`${spot.accuracyPercent}% of ${spot.answered}`}
-              />
+              <div key={spot.tag} className="weak-spots__row">
+                <ProgressBar
+                  label={spot.label}
+                  value={spot.accuracyPercent}
+                  valueText={`${spot.accuracyPercent}% of ${spot.answered}`}
+                />
+                <Link className="text-sm" to={`/review/topic/${spot.tag}`}>
+                  Practise <span className="visually-hidden">{spot.label}</span>
+                </Link>
+              </div>
             ))}
             <p className="text-sm text-muted">
               Accuracy across every exercise tagged with that topic.{' '}

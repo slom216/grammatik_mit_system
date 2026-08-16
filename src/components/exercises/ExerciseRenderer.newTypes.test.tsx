@@ -144,6 +144,37 @@ describe('ExerciseRenderer with dragToSlots', () => {
     expect(onSubmitSlots).toHaveBeenCalledWith({ slot1: 'kann' });
   });
 
+  it('checks the answer by itself once the last slot is filled', async () => {
+    const user = userEvent.setup();
+    const onSubmitSlots = vi.fn();
+
+    render(
+      <ExerciseRenderer
+        {...baseProps()}
+        exercise={twoSlotExercise}
+        wordBankOrder={[0, 1]}
+        onSubmitSlots={onSubmitSlots}
+      />,
+    );
+
+    await user.click(screen.getByRole('button', { name: 'kann' }));
+    const emptySlots = screen.getAllByRole('button', { name: /empty slot/i });
+    await user.click(emptySlots[0]!);
+
+    // One slot still open: nothing may be submitted yet.
+    await new Promise((resolve) => setTimeout(resolve, 700));
+    expect(onSubmitSlots).not.toHaveBeenCalled();
+
+    await user.click(screen.getByRole('button', { name: 'kannst' }));
+
+    await waitFor(
+      () =>
+        expect(onSubmitSlots).toHaveBeenCalledWith({ slot1: 'kann', slot2: 'kannst' }),
+      { timeout: 2000 },
+    );
+    expect(onSubmitSlots).toHaveBeenCalledTimes(1);
+  });
+
   it('lets the learner select a word then click a slot to fill it when multiple slots are empty', async () => {
     const user = userEvent.setup();
     const onSubmitSlots = vi.fn();

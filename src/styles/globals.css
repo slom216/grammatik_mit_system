@@ -814,6 +814,18 @@ a:hover {
   background: var(--color-warning);
 }
 
+/* The bar states the problem; the link beside it is the way out of it. */
+.weak-spots__row {
+  display: flex;
+  gap: var(--space-3);
+  align-items: baseline;
+}
+
+.weak-spots__row .progress-bar {
+  flex: 1;
+  min-width: 0;
+}
+
 /** One headline percentage: the arc reinforces the number stacked inside it. */
 .progress-ring {
   display: grid;
@@ -854,7 +866,18 @@ a:hover {
   stroke-width: 10;
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
+  stroke-dashoffset: var(--ring-offset);
   transition: stroke-dashoffset var(--transition-medium);
+  /* Drawn rather than dropped in: the ring is the headline of the results
+     page, and a score is worth watching arrive. No `to` — the keyframe ends at
+     the computed offset, whatever the score is. */
+  animation: ring-draw 700ms ease-out backwards;
+}
+
+@keyframes ring-draw {
+  from {
+    stroke-dashoffset: var(--ring-circumference);
+  }
 }
 
 .progress-ring .display-number {
@@ -1156,6 +1179,33 @@ a:hover {
   letter-spacing: var(--tracking-tight);
 }
 
+/* Missed exercises on the results page. Each entry is a small block rather
+   than a bullet: the prompt, the answer and the explanation belong together,
+   and a list marker beside three lines reads as three separate points. */
+.missed-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.missed-list__item {
+  padding-left: var(--space-3);
+  border-left: 2px solid var(--color-error);
+}
+
+.missed-list__item + .missed-list__item {
+  margin-top: var(--space-4);
+}
+
+.missed-list__prompt {
+  margin: 0 0 var(--space-1);
+  font-weight: 650;
+}
+
+.missed-list__item p:not(.missed-list__prompt) {
+  margin: 0;
+}
+
 /* The denominator is supporting detail, not part of the figure. */
 .stat__of {
   font-size: var(--text-lg);
@@ -1421,6 +1471,17 @@ a:hover {
   .option-hint {
     display: none;
   }
+
+  /* Native drag never fires from a touch, so the grip and the grab cursor
+     were promising an interaction that could not happen. Tapping one segment
+     then another is the touch path, and it needs no handle. */
+  .sentence-ordering__handle {
+    display: none;
+  }
+
+  .sentence-ordering__token {
+    cursor: default;
+  }
 }
 
 .exercise-navigation {
@@ -1477,8 +1538,30 @@ a:hover {
   color: var(--color-text-muted);
 }
 
+/* A button that has to keep reading as the sentence it is part of, so the
+   chrome comes off and only the pointer and the picked-up state remain. */
 .sentence-ordering__text {
+  padding: var(--space-1) var(--space-2);
+  border: none;
+  border-radius: var(--radius-sm);
+  background: none;
+  color: inherit;
+  font: inherit;
   font-size: var(--text-lg);
+  cursor: pointer;
+}
+
+.sentence-ordering__text:disabled {
+  cursor: default;
+}
+
+/* Picked up and waiting for its destination. Not colour alone: the button
+   carries aria-pressed, and the outline reads without colour vision. */
+.sentence-ordering__token--selected {
+  border-color: var(--color-accent);
+  background: var(--color-surface-muted);
+  outline: 2px solid var(--color-accent);
+  outline-offset: 1px;
 }
 
 .sentence-ordering__controls {
@@ -2016,7 +2099,8 @@ a:hover {
 }
 
 .option__marker,
-.error-spotting__correction {
+.error-spotting__correction,
+.streak-chip {
   animation: pop-in var(--transition-medium) 60ms backwards;
 }
 
@@ -2064,6 +2148,21 @@ a:hover {
 
   .app-brand {
     margin-right: auto;
+  }
+
+  /* On a phone a matching or drag-to-slots exercise is taller than the
+     viewport, which puts "Check answer" below the fold with nothing to say it
+     is there. Pinned to the bottom it stays in reach the whole way down. The
+     bleed to the container edges keeps its background from reading as a
+     narrower inset strip. */
+  .exercise-navigation {
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    margin: 0 calc(var(--container-padding) * -1);
+    padding: var(--space-4) var(--container-padding)
+      max(var(--space-3), env(safe-area-inset-bottom));
+    background-color: var(--color-bg);
   }
 }
 

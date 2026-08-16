@@ -8,6 +8,7 @@ import { NotFoundPage } from '../pages/NotFoundPage';
 import { chapterRouteLoader } from '../features/chapters/useChapterParam';
 import { cumulativeRouteLoader } from '../features/practice/cumulativeRoute';
 import { placementRouteLoader } from '../features/practice/placementRoute';
+import { topicRouteLoader } from '../features/practice/topicRoute';
 
 /**
  * Loads a page's chunk on first visit. React Router keeps the previous page
@@ -62,6 +63,14 @@ export const routes: RouteObject[] = [
         lazy: page(() => import('../pages/ResultsPage'), 'ResultsPage'),
       },
       { path: 'review', lazy: page(() => import('../pages/ReviewPage'), 'ReviewPage') },
+      {
+        // A session built from one grammar tag rather than a chapter range.
+        // Same page, different loader — declared first so the static `topic`
+        // segment is never read as a chapter number.
+        path: 'review/topic/:tag',
+        loader: topicRouteLoader,
+        lazy: page(() => import('../pages/CumulativeReviewPage'), 'CumulativeReviewPage'),
+      },
       {
         path: 'review/:from/:to',
         loader: cumulativeRouteLoader,

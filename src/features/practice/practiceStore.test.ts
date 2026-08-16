@@ -1,6 +1,7 @@
 import { beforeEach, describe, expect, it } from 'vitest';
 import {
   selectAnsweredCount,
+  selectAnswerStreak,
   selectCurrentExerciseId,
   selectIsLastExercise,
   usePracticeStore,
@@ -198,5 +199,44 @@ describe('practiceStore sessions', () => {
 
     const other = makeChapter({ number: 2 });
     expect(usePracticeStore.getState().resumeSession(other)).toBe(false);
+  });
+
+  describe('selectAnswerStreak', () => {
+    const second = chapter.exercises[1] as ReturnType<typeof makeSingleChoice>;
+
+    it('counts consecutive first-attempt-correct answers', () => {
+      start();
+      expect(selectAnswerStreak(usePracticeStore.getState())).toBe(0);
+
+      usePracticeStore.getState().submitSingleChoice(first, 'a');
+      expect(selectAnswerStreak(usePracticeStore.getState())).toBe(1);
+
+      usePracticeStore.getState().goToNext();
+      usePracticeStore.getState().submitSingleChoice(second, 'a');
+      expect(selectAnswerStreak(usePracticeStore.getState())).toBe(2);
+    });
+
+    it('is broken by a second-attempt answer, which was not a clean run', () => {
+      start();
+      usePracticeStore.getState().submitSingleChoice(first, 'a');
+      usePracticeStore.getState().goToNext();
+
+      usePracticeStore.getState().submitSingleChoice(second, 'b');
+      usePracticeStore.getState().submitSingleChoice(second, 'a');
+
+      expect(usePracticeStore.getState().results['ch1-ex-02']?.outcome).toBe(
+        'correctSecondAttempt',
+      );
+      expect(selectAnswerStreak(usePracticeStore.getState())).toBe(0);
+    });
+
+    it('is broken by a reveal', () => {
+      start();
+      usePracticeStore.getState().submitSingleChoice(first, 'a');
+      usePracticeStore.getState().goToNext();
+      usePracticeStore.getState().revealAnswer(second);
+
+      expect(selectAnswerStreak(usePracticeStore.getState())).toBe(0);
+    });
   });
 });

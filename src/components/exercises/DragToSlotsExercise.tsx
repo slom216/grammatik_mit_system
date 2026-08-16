@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import type { DragToSlotsExercise as DragToSlotsExerciseData } from '../../schemas/exerciseSchema';
+import { isCoarsePointer } from './coarsePointer';
 
 export interface DragToSlotsExerciseProps {
   exercise: DragToSlotsExerciseData;
@@ -28,6 +29,7 @@ export function DragToSlotsExercise({
 }: DragToSlotsExerciseProps) {
   const [draggedIndex, setDraggedIndex] = useState<number | null>(null);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const canDrag = !disabled && !isCoarsePointer();
 
   const usedIndices = new Set(Object.values(placedIndices));
   const emptySlots = exercise.slots.filter(
@@ -125,7 +127,7 @@ export function DragToSlotsExercise({
                 ]
                   .filter(Boolean)
                   .join(' ')}
-                draggable={!disabled && !isUsed}
+                draggable={canDrag && !isUsed}
                 disabled={disabled || isUsed}
                 // Selection is otherwise carried by colour alone, which a
                 // screen reader cannot report back.

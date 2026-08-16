@@ -164,7 +164,8 @@ export function ProgressPage() {
                     <th scope="col">Topic</th>
                     <th scope="col">Accuracy</th>
                     <th scope="col">Answered</th>
-                    <th scope="col">Practise in</th>
+                    <th scope="col">Practise</th>
+                    <th scope="col">Read up in</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -174,6 +175,12 @@ export function ProgressPage() {
                       <td>{spot.accuracyPercent}%</td>
                       <td>
                         {spot.correct} of {spot.answered}
+                      </td>
+                      {/* The topic itself, not the chapters it happens to live
+                          in: this row already says which grammar point is the
+                          problem, so the practice should be that point. */}
+                      <td>
+                        <Link to={`/review/topic/${spot.tag}`}>Practise this topic</Link>
                       </td>
                       <td>
                         {spot.chapterNumbers.map((number, index) => (

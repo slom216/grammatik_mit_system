@@ -200,7 +200,7 @@ describe('PracticePage', () => {
     expect(screen.queryByTestId('exercise-feedback')).not.toBeInTheDocument();
   });
 
-  it('checks a text answer, keeps it visible, then clears it for the retry', async () => {
+  it('checks a text answer and keeps it for the retry to be corrected', async () => {
     const user = userEvent.setup();
     await renderPractice();
 
@@ -216,14 +216,14 @@ describe('PracticePage', () => {
     expect(feedback).toHaveTextContent('sie');
     expect(field).toHaveValue('sie');
 
-    // "Try again" hands back an empty field: leaving the rejected answer in
-    // place hid what needed to change. The element is replaced, so it has to be
-    // looked up again rather than reusing `field`.
+    // "Try again" leaves the rejected answer in place to be edited. Wiping it
+    // made a second attempt a rebuild rather than a correction, which is a
+    // heavy price on the types whose answer takes a dozen interactions to make.
     await user.click(screen.getByRole('button', { name: /try again/i }));
-    const retryField = screen.getByLabelText('Der Mann ist müde. → ___ ist müde.');
-    expect(retryField).toHaveValue('');
+    expect(field).toHaveValue('sie');
 
-    await user.type(retryField, 'er');
+    await user.clear(field);
+    await user.type(field, 'er');
     await user.click(screen.getByRole('button', { name: /check answer/i }));
 
     expect(screen.getByTestId('exercise-feedback')).toHaveTextContent('Correct');

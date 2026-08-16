@@ -1,3 +1,5 @@
+import type { CSSProperties } from 'react';
+
 const SIZE = 120;
 const STROKE = 10;
 const RADIUS = (SIZE - STROKE) / 2;
@@ -39,13 +41,21 @@ export function ProgressRing({ percent, label, caption }: ProgressRingProps) {
             cy={SIZE / 2}
             r={RADIUS}
           />
+          {/* The offset goes through a custom property so the stylesheet can
+              animate the arc from empty to it — a keyframe cannot see an
+              inline `stroke-dashoffset`. */}
           <circle
             className="progress-ring__value"
             cx={SIZE / 2}
             cy={SIZE / 2}
             r={RADIUS}
             strokeDasharray={CIRCUMFERENCE}
-            strokeDashoffset={CIRCUMFERENCE * (1 - clamped / 100)}
+            style={
+              {
+                '--ring-circumference': CIRCUMFERENCE,
+                '--ring-offset': CIRCUMFERENCE * (1 - clamped / 100),
+              } as CSSProperties
+            }
           />
         </svg>
         <span className="display-number">{clamped}%</span>
