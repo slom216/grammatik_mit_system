@@ -209,12 +209,20 @@ describe('ExerciseRenderer with matching', () => {
       />,
     );
 
-    await user.click(screen.getByRole('button', { name: 'ich' }));
-    await user.click(screen.getByRole('button', { name: 'mein' }));
-    await user.click(screen.getByRole('button', { name: 'du' }));
-    await user.click(screen.getByRole('button', { name: 'dein' }));
-    await user.click(screen.getByRole('button', { name: 'er' }));
-    await user.click(screen.getByRole('button', { name: 'sein' }));
+    await user.click(screen.getByRole('button', { name: '1. ich' }));
+    await user.click(screen.getByRole('button', { name: 'mein — not matched' }));
+    await user.click(screen.getByRole('button', { name: '2. du' }));
+    await user.click(screen.getByRole('button', { name: 'dein — not matched' }));
+    await user.click(screen.getByRole('button', { name: '3. er' }));
+    await user.click(screen.getByRole('button', { name: 'sein — not matched' }));
+
+    // The pair number is what tells the learner which two items belong together.
+    expect(
+      screen.getByRole('button', { name: '1. ich — matched with mein' }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole('button', { name: 'mein — matched with 1. ich' }),
+    ).toBeInTheDocument();
 
     await user.click(screen.getByRole('button', { name: /check answer/i }));
 

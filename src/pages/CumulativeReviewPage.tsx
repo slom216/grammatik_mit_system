@@ -7,6 +7,7 @@ import { Modal } from '../components/common/Modal';
 import { ProgressBar } from '../components/common/ProgressBar';
 import { PracticeExercise } from '../components/practice/PracticeExercise';
 import { SessionSummary } from '../components/practice/SessionSummary';
+import { StudyTimer } from '../components/progress/StudyTimer';
 import {
   EXERCISE_TYPE_LABELS,
   findExerciseAcrossChapters,
@@ -133,9 +134,12 @@ export function CumulativeReviewPage() {
   return (
     <div className="stack">
       <header className="stack stack--tight">
-        <h1>
-          Cumulative Review · Chapters {fromNumber}–{toNumber}
-        </h1>
+        <div className="row practice__header-row">
+          <h1>
+            Cumulative Review · Chapters {fromNumber}–{toNumber}
+          </h1>
+          <StudyTimer chapterNumber={null} />
+        </div>
         <ProgressBar
           label={`Exercise ${position} of ${total}`}
           value={answered}

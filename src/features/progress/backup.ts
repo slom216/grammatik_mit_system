@@ -1,8 +1,8 @@
 import { z } from 'zod';
 import {
-  persistedProgressV2Schema,
+  persistedProgressV3Schema,
   persistedSettingsV1Schema,
-  type PersistedProgressV2,
+  type PersistedProgressV3,
   type PersistedSettingsV1,
 } from '../../schemas/progressSchema';
 
@@ -12,7 +12,7 @@ export interface ProgressBackup {
   format: 'grammatik-mit-system-backup';
   formatVersion: typeof BACKUP_FORMAT_VERSION;
   exportedAt: string;
-  progress: PersistedProgressV2;
+  progress: PersistedProgressV3;
   settings: PersistedSettingsV1;
 }
 
@@ -20,12 +20,12 @@ const backupSchema = z.object({
   format: z.literal('grammatik-mit-system-backup'),
   formatVersion: z.literal(BACKUP_FORMAT_VERSION),
   exportedAt: z.string().min(1),
-  progress: persistedProgressV2Schema,
+  progress: persistedProgressV3Schema,
   settings: persistedSettingsV1Schema,
 });
 
 export function createBackup(
-  progress: PersistedProgressV2,
+  progress: PersistedProgressV3,
   settings: PersistedSettingsV1,
   now: Date = new Date(),
 ): ProgressBackup {

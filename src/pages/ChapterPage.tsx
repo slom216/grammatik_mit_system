@@ -20,6 +20,7 @@ import {
   useProgressStore,
 } from '../features/progress/progressStore';
 import { ProgressBar } from '../components/common/ProgressBar';
+import { averageSessionMs, describeDuration } from '../features/progress/studyTime';
 
 export function ChapterPage() {
   const { chapterNumber, chapter, registryEntry } = useChapterParam();
@@ -41,6 +42,7 @@ export function ChapterPage() {
   const counts = exerciseCounts(chapter);
   const section = getSection(chapter.section);
   const covered = selectCoveredExerciseIds(progress.exerciseHistory, chapter.number).size;
+  const averageMs = averageSessionMs(chapterProgress);
 
   return (
     <div className="stack">
@@ -79,6 +81,18 @@ export function ChapterPage() {
           max={counts.total}
           valueText={`${covered} of ${counts.total} answered correctly`}
         />
+        <p className="text-sm text-muted">
+          {chapterProgress.studyMs === 0
+            ? 'Not practised yet'
+            : averageMs === null
+              ? // Time without a finished session: nothing to average over yet.
+                `Practised for ${describeDuration(chapterProgress.studyMs)} · no session finished yet`
+              : `Practised for ${describeDuration(chapterProgress.studyMs)} over ${
+                  chapterProgress.attempts
+                } ${chapterProgress.attempts === 1 ? 'session' : 'sessions'} · ${describeDuration(
+                  averageMs,
+                )} per session on average`}
+        </p>
       </header>
 
       <Card title="Objective" titleLevel={2}>

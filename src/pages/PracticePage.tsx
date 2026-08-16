@@ -6,6 +6,7 @@ import { LoadingBlock } from '../components/common/LoadingBlock';
 import { Modal } from '../components/common/Modal';
 import { ProgressBar } from '../components/common/ProgressBar';
 import { PracticeExercise } from '../components/practice/PracticeExercise';
+import { StudyTimer } from '../components/progress/StudyTimer';
 import {
   EXERCISE_TYPE_LABELS,
   chapterPath,
@@ -169,13 +170,16 @@ export function PracticePage() {
   return (
     <div className="stack practice">
       <header className="stack stack--tight">
-        <span className="eyebrow">
-          Chapter {formatChapterNumber(chapter.number)}
-          {reviewMode && ' · review'}
-          {quickMode && ' · quick session'}
-          {quickDueCount > 0 &&
-            ` · ${quickDueCount} due ${quickDueCount === 1 ? 'exercise' : 'exercises'} included`}
-        </span>
+        <div className="row practice__header-row">
+          <span className="eyebrow">
+            Chapter {formatChapterNumber(chapter.number)}
+            {reviewMode && ' · review'}
+            {quickMode && ' · quick session'}
+            {quickDueCount > 0 &&
+              ` · ${quickDueCount} due ${quickDueCount === 1 ? 'exercise' : 'exercises'} included`}
+          </span>
+          <StudyTimer chapterNumber={chapter.number} />
+        </div>
         <h1>
           Practice · {chapter.title}
           {reviewMode && ' (review)'}

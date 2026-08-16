@@ -6,7 +6,7 @@ import { ANSWER_MODES, EXERCISE_TYPES } from './exerciseSchema';
  * shape requires a bump of `PROGRESS_SCHEMA_VERSION` plus a migration in
  * `features/progress/progressPersistence.ts`.
  */
-export const PROGRESS_SCHEMA_VERSION = 2;
+export const PROGRESS_SCHEMA_VERSION = 3;
 
 export const CHAPTER_STATUSES = [
   'notStarted',
@@ -43,6 +43,12 @@ export interface ChapterProgress {
   correctTextInputs: number;
   attempts: number;
   bookmarked: boolean;
+  /**
+   * Milliseconds spent practising this chapter, summed over every session and
+   * counting only while the tab was focused. `attempts` counts the finished
+   * sessions, so `studyMs / attempts` is the average session length.
+   */
+  studyMs: number;
   lastPracticedAt?: string;
   completedAt?: string;
 }
@@ -75,7 +81,7 @@ export interface ExerciseHistory {
   hasBeenWrong: boolean;
 }
 
-export interface PersistedProgressV2 {
+export interface PersistedProgressV3 {
   schemaVersion: typeof PROGRESS_SCHEMA_VERSION;
   chapters: Record<number, ChapterProgress>;
   exerciseHistory: Record<string, ExerciseHistory>;
@@ -86,6 +92,11 @@ export interface PersistedProgressV2 {
    * that additions never overwrite.
    */
   answersByDay: Record<string, number>;
+  /**
+   * Study time that belongs to no single chapter — cumulative reviews mix
+   * several. Counted in the course total, never in a chapter's own time.
+   */
+  otherStudyMs: number;
   lastOpenedChapter?: number;
 }
 
@@ -99,6 +110,8 @@ export const chapterProgressSchema = z.object({
   correctTextInputs: z.number().int().min(0),
   attempts: z.number().int().min(0),
   bookmarked: z.boolean(),
+  // Defaulted so a chapter written before the timer existed still parses.
+  studyMs: z.number().min(0).default(0),
   lastPracticedAt: z.string().min(1).optional(),
   completedAt: z.string().min(1).optional(),
 });
@@ -120,11 +133,12 @@ export const exerciseHistorySchema = z.object({
   hasBeenWrong: z.boolean().default(false),
 });
 
-export const persistedProgressV2Schema = z.object({
+export const persistedProgressV3Schema = z.object({
   schemaVersion: z.literal(PROGRESS_SCHEMA_VERSION),
   chapters: z.record(z.string(), chapterProgressSchema),
   exerciseHistory: z.record(z.string(), exerciseHistorySchema),
   answersByDay: z.record(z.string(), z.number().int().min(0)).default({}),
+  otherStudyMs: z.number().min(0).default(0),
   lastOpenedChapter: z.number().int().min(0).optional(),
 });
 

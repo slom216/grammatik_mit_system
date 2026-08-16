@@ -58,7 +58,7 @@ export function MatchingExercise({
       </legend>
       <div className="matching__columns">
         <ul className="matching__column">
-          {exercise.pairs.map((pair) => {
+          {exercise.pairs.map((pair, index) => {
             const matchedRightId = matches[pair.id];
             const isMatched = matchedRightId !== undefined;
             const isCorrect = showAnswer && matchedRightId === pair.id;
@@ -81,10 +81,21 @@ export function MatchingExercise({
                   // Selection is otherwise carried by colour alone, which a
                   // screen reader cannot report back.
                   aria-pressed={selectedLeft === pair.id}
+                  aria-label={
+                    isMatched
+                      ? `${index + 1}. ${pair.left} — matched with ${
+                          exercise.pairs.find(
+                            (candidate) => candidate.id === matchedRightId,
+                          )?.right
+                        }`
+                      : `${index + 1}. ${pair.left}`
+                  }
                   onClick={() => (isMatched ? clearPair(pair.id) : selectLeft(pair.id))}
-                  lang="de"
                 >
-                  {pair.left}
+                  <span className="matching__badge" aria-hidden="true">
+                    {index + 1}
+                  </span>
+                  <span lang="de">{pair.left}</span>
                 </button>
               </li>
             );
@@ -94,7 +105,13 @@ export function MatchingExercise({
           {rightOrder.map((rightId) => {
             const pair = exercise.pairs.find((candidate) => candidate.id === rightId);
             if (!pair) return null;
-            const isUsed = Object.values(matches).includes(rightId);
+            const matchedLeft = exercise.pairs.find(
+              (candidate) => matches[candidate.id] === rightId,
+            );
+            const matchedLeftIndex = matchedLeft
+              ? exercise.pairs.indexOf(matchedLeft)
+              : -1;
+            const isUsed = matchedLeft !== undefined;
 
             return (
               <li key={rightId}>
@@ -104,10 +121,17 @@ export function MatchingExercise({
                     .filter(Boolean)
                     .join(' ')}
                   disabled={disabled}
+                  aria-label={
+                    matchedLeft
+                      ? `${pair.right} — matched with ${matchedLeftIndex + 1}. ${matchedLeft.left}`
+                      : `${pair.right} — not matched`
+                  }
                   onClick={() => selectRight(rightId)}
-                  lang="de"
                 >
-                  {pair.right}
+                  <span className="matching__badge" aria-hidden="true">
+                    {isUsed ? matchedLeftIndex + 1 : ''}
+                  </span>
+                  <span lang="de">{pair.right}</span>
                 </button>
               </li>
             );

@@ -8,9 +8,9 @@ import {
 } from './backup';
 import { defaultSettings } from '../settings/settingsStore';
 import { createEmptyProgress } from './progressPersistence';
-import type { PersistedProgressV2 } from '../../schemas/progressSchema';
+import type { PersistedProgressV3 } from '../../schemas/progressSchema';
 
-const progress: PersistedProgressV2 = {
+const progress: PersistedProgressV3 = {
   ...createEmptyProgress(),
   lastOpenedChapter: 7,
   chapters: {
@@ -24,6 +24,7 @@ const progress: PersistedProgressV2 = {
       correctTextInputs: 20,
       attempts: 1,
       bookmarked: true,
+      studyMs: 900_000,
     },
   },
   exerciseHistory: {

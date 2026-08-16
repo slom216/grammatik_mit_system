@@ -1,10 +1,10 @@
 import type { z } from 'zod';
 import {
   PROGRESS_SCHEMA_VERSION,
-  persistedProgressV2Schema,
+  persistedProgressV3Schema,
   type ChapterProgress,
   type ExerciseHistory,
-  type PersistedProgressV2,
+  type PersistedProgressV3,
 } from '../../schemas/progressSchema';
 import { toDayKey } from './dayKey';
 
@@ -29,12 +29,13 @@ export function getDefaultStorage(): StorageLike | null {
   }
 }
 
-export function createEmptyProgress(): PersistedProgressV2 {
+export function createEmptyProgress(): PersistedProgressV3 {
   return {
     schemaVersion: PROGRESS_SCHEMA_VERSION,
     chapters: {},
     exerciseHistory: {},
     answersByDay: {},
+    otherStudyMs: 0,
   };
 }
 
@@ -83,9 +84,15 @@ export const progressMigrations: Record<number, (state: unknown) => unknown> = {
 
     return { ...previous, schemaVersion: 2, answersByDay, exerciseHistory };
   },
+
+  /**
+   * v2 → v3: adds study time. Nothing was measured before, so every counter
+   * starts at zero and the schema defaults fill the per-chapter field in.
+   */
+  2: (state) => ({ ...(state as object), schemaVersion: 3, otherStudyMs: 0 }),
 };
 
-export function migrateProgress(raw: unknown): PersistedProgressV2 | null {
+export function migrateProgress(raw: unknown): PersistedProgressV3 | null {
   if (raw === null || typeof raw !== 'object') return null;
 
   let candidate: unknown = raw;
@@ -98,15 +105,15 @@ export function migrateProgress(raw: unknown): PersistedProgressV2 | null {
     version = (candidate as { schemaVersion?: unknown }).schemaVersion;
   }
 
-  const parsed = persistedProgressV2Schema.safeParse(candidate);
+  const parsed = persistedProgressV3Schema.safeParse(candidate);
   if (!parsed.success) return null;
   return normalizeProgress(parsed.data);
 }
 
 /** Zod parses record keys as strings; the domain model uses chapter numbers. */
 function normalizeProgress(
-  data: z.infer<typeof persistedProgressV2Schema>,
-): PersistedProgressV2 {
+  data: z.infer<typeof persistedProgressV3Schema>,
+): PersistedProgressV3 {
   const chapters: Record<number, ChapterProgress> = {};
   for (const progress of Object.values(data.chapters)) {
     chapters[progress.chapterNumber] = progress;
@@ -115,11 +122,12 @@ function normalizeProgress(
   for (const history of Object.values(data.exerciseHistory)) {
     exerciseHistory[history.exerciseId] = history;
   }
-  const migrated: PersistedProgressV2 = {
+  const migrated: PersistedProgressV3 = {
     schemaVersion: PROGRESS_SCHEMA_VERSION,
     chapters,
     exerciseHistory,
     answersByDay: data.answersByDay,
+    otherStudyMs: data.otherStudyMs,
   };
   if (data.lastOpenedChapter !== undefined) {
     migrated.lastOpenedChapter = data.lastOpenedChapter;
@@ -128,7 +136,7 @@ function normalizeProgress(
 }
 
 export function loadProgress(storage: StorageLike | null = getDefaultStorage()): {
-  state: PersistedProgressV2;
+  state: PersistedProgressV3;
   recovered: boolean;
 } {
   if (!storage) return { state: createEmptyProgress(), recovered: false };
@@ -148,7 +156,7 @@ export function loadProgress(storage: StorageLike | null = getDefaultStorage()):
 }
 
 export function saveProgress(
-  state: PersistedProgressV2,
+  state: PersistedProgressV3,
   storage: StorageLike | null = getDefaultStorage(),
 ): boolean {
   if (!storage) return false;

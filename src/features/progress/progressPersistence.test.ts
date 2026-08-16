@@ -13,7 +13,7 @@ import {
 import {
   PROGRESS_SCHEMA_VERSION,
   persistedSettingsV1Schema,
-  type PersistedProgressV2,
+  type PersistedProgressV3,
 } from '../../schemas/progressSchema';
 
 function memoryStorage(initial: Record<string, string> = {}): StorageLike {
@@ -29,7 +29,7 @@ function memoryStorage(initial: Record<string, string> = {}): StorageLike {
   };
 }
 
-const sampleProgress: PersistedProgressV2 = {
+const sampleProgress: PersistedProgressV3 = {
   schemaVersion: PROGRESS_SCHEMA_VERSION,
   chapters: {
     3: {
@@ -42,6 +42,7 @@ const sampleProgress: PersistedProgressV2 = {
       correctTextInputs: 11,
       attempts: 2,
       bookmarked: true,
+      studyMs: 600_000,
     },
   },
   exerciseHistory: {
@@ -59,6 +60,7 @@ const sampleProgress: PersistedProgressV2 = {
     },
   },
   answersByDay: { '2026-03-03': 2 },
+  otherStudyMs: 120_000,
   lastOpenedChapter: 3,
 };
 

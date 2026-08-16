@@ -10,7 +10,16 @@ import {
   selectLevelProgress,
 } from '../features/chapters/chapterSelectors';
 import { chapterPath, formatChapterNumber } from '../features/chapters/chapterUtils';
-import { selectDueHistories, useProgressStore } from '../features/progress/progressStore';
+import {
+  selectChapterProgress,
+  selectDueHistories,
+  useProgressStore,
+} from '../features/progress/progressStore';
+import {
+  averageSessionMs,
+  describeDuration,
+  totalStudyMs,
+} from '../features/progress/studyTime';
 import {
   MIN_ANSWERS_FOR_WEAK_SPOT,
   selectWeakSpots,
@@ -52,6 +61,10 @@ export function ProgressPage() {
     [progress.chapters, progress.exerciseHistory, progress.answersByDay],
   );
   const earnedCount = achievements.filter((achievement) => achievement.earned).length;
+  const totalMs = useMemo(
+    () => totalStudyMs(progress.chapters, progress.otherStudyMs),
+    [progress.chapters, progress.otherStudyMs],
+  );
 
   return (
     <div className="stack">
@@ -74,6 +87,14 @@ export function ProgressPage() {
           <p className="text-sm text-muted">
             {completion.masteredChapters} chapters mastered · {due.length} exercises due
             for review · {histories.length} exercises answered at least once.
+          </p>
+          <p className="text-sm text-muted">
+            {/* Only time with the tab focused counts, so this is time actually
+                spent practising rather than time the page was left open. */}
+            Time spent practising: <strong>{describeDuration(totalMs)}</strong>
+            {progress.otherStudyMs > 0 &&
+              ` · ${describeDuration(progress.otherStudyMs)} of it in cumulative reviews`}
+            .
           </p>
           <StreakDisplay answersByDay={progress.answersByDay} />
         </div>
@@ -190,26 +211,36 @@ export function ProgressPage() {
                   <th scope="col">Status</th>
                   <th scope="col">Covered</th>
                   <th scope="col">Best score</th>
+                  <th scope="col">Sessions</th>
+                  <th scope="col">Time</th>
+                  <th scope="col">Average</th>
                 </tr>
               </thead>
               <tbody>
-                {started.map((card) => (
-                  <tr key={card.number}>
-                    <th scope="row">
-                      <Link to={chapterPath(card.number)}>
-                        {formatChapterNumber(card.number)} · {card.title}
-                      </Link>
-                    </th>
-                    <td>{card.level}</td>
-                    <td>
-                      <MasteryBadge status={card.status} />
-                    </td>
-                    <td>
-                      {card.coveredCount} / {card.exerciseCount}
-                    </td>
-                    <td>{card.bestScorePercent}%</td>
-                  </tr>
-                ))}
+                {started.map((card) => {
+                  const chapter = selectChapterProgress(progress, card.number);
+                  const averageMs = averageSessionMs(chapter);
+                  return (
+                    <tr key={card.number}>
+                      <th scope="row">
+                        <Link to={chapterPath(card.number)}>
+                          {formatChapterNumber(card.number)} · {card.title}
+                        </Link>
+                      </th>
+                      <td>{card.level}</td>
+                      <td>
+                        <MasteryBadge status={card.status} />
+                      </td>
+                      <td>
+                        {card.coveredCount} / {card.exerciseCount}
+                      </td>
+                      <td>{card.bestScorePercent}%</td>
+                      <td>{chapter.attempts}</td>
+                      <td>{describeDuration(chapter.studyMs)}</td>
+                      <td>{averageMs === null ? '—' : describeDuration(averageMs)}</td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>

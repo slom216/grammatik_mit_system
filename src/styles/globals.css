@@ -1579,6 +1579,25 @@ a:hover {
   cursor: not-allowed;
 }
 
+.practice__header-row {
+  justify-content: space-between;
+}
+
+.study-timer {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Dimmed rather than hidden: the learner should see that the clock stopped. */
+.study-timer--paused {
+  opacity: 0.6;
+}
+
+.study-timer__state {
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+  font-size: var(--text-xs);
+}
+
 .matching__columns {
   display: grid;
   grid-template-columns: 1fr;
@@ -1594,6 +1613,9 @@ a:hover {
 }
 
 .matching__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
   width: 100%;
   min-height: var(--tap-target);
   padding: var(--space-3) var(--space-4);
@@ -1610,6 +1632,29 @@ a:hover {
     border-color var(--transition-fast);
 }
 
+/* The pair number is the only thing that says which left goes with which right. */
+.matching__badge {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: var(--border-width) dashed var(--color-border);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-text-muted);
+}
+
+.matching__item--matched .matching__badge,
+.matching__item--selected .matching__badge {
+  border-style: solid;
+  border-color: transparent;
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+}
+
 .matching__item:hover:not(:disabled) {
   background: var(--color-surface-muted);
 }
@@ -1617,10 +1662,12 @@ a:hover {
 .matching__item--selected {
   border-color: var(--color-accent);
   background: var(--color-accent-soft);
+  box-shadow: 0 0 0 2px var(--color-accent);
 }
 
 .matching__item--matched {
-  border-style: dashed;
+  border-color: var(--color-accent);
+  background: var(--color-accent-soft);
 }
 
 .matching__item--correct {
@@ -1631,6 +1678,14 @@ a:hover {
 .matching__item--incorrect {
   border-color: var(--color-danger-border);
   background: var(--color-danger-soft);
+}
+
+.matching__item--correct .matching__badge {
+  background: var(--color-success-border);
+}
+
+.matching__item--incorrect .matching__badge {
+  background: var(--color-danger-border);
 }
 
 .error-spotting__sentence {
