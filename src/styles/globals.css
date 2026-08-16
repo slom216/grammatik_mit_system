@@ -185,6 +185,11 @@ a:hover {
   line-height: 1.15;
 }
 
+/* DeuLern house style: the "Lern" half carries the accent. */
+.app-brand__accent {
+  color: var(--color-accent);
+}
+
 .app-brand__subtitle {
   display: block;
   font-family: var(--font-sans);

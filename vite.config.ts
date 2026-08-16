@@ -14,8 +14,8 @@ export default defineConfig({
       injectRegister: null,
       includeAssets: ['favicon.ico', 'apple-touch-icon-180x180.png'],
       manifest: {
-        name: 'Grammatik mit System',
-        short_name: 'Grammatik',
+        name: 'DeuLern Grammatik mit System',
+        short_name: 'DeuLern Grammatik',
         description: 'A German grammar course for levels A1 to B1.',
         start_url: '/',
         scope: '/',

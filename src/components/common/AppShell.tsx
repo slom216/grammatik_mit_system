@@ -6,7 +6,7 @@ import { useProgressStore } from '../../features/progress/progressStore';
 import { ReloadPrompt } from './ReloadPrompt';
 import { ThemeToggle } from './ThemeToggle';
 
-const APP_NAME = 'Grammatik mit System';
+const APP_NAME = 'DeuLern Grammatik mit System';
 
 /**
  * Five items, per design.md's 5–6 top-level maximum. Activity and About used to
@@ -94,7 +94,7 @@ export function AppShell() {
         )}
         <div className="app-header__inner">
           <NavLink to="/" className="app-brand">
-            Grammatik mit System
+            Deu<span className="app-brand__accent">Lern</span> Grammatik mit System
             <span className="app-brand__subtitle">German grammar, A1–B1</span>
           </NavLink>
           <nav className="app-nav" aria-label="Main">

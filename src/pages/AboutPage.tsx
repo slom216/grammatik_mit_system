@@ -7,9 +7,9 @@ export function AboutPage() {
 
       <Card title="What this is" titleLevel={2}>
         <p>
-          Grammatik mit System is an independent, browser-based course for German grammar
-          from A1 to B1. Each chapter contains an explanation, examples, typical mistakes,
-          a short summary and between 50 and 100 exercises.
+          DeuLern Grammatik mit System is an independent, browser-based course for German
+          grammar from A1 to B1. Each chapter contains an explanation, examples, typical
+          mistakes, a short summary and between 50 and 100 exercises.
         </p>
       </Card>
 

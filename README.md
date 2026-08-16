@@ -1,4 +1,4 @@
-# Grammatik mit System
+# DeuLern Grammatik mit System
 
 A browser-based German grammar course for levels A1–B1, built with React, Vite and
 TypeScript. Every chapter provides an explanation, examples, common mistakes, a short

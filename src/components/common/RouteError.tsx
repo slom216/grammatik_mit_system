@@ -35,7 +35,7 @@ export function RouteError() {
       <header className="app-header">
         <div className="app-header__inner">
           <Link to="/" className="app-brand">
-            Grammatik mit System
+            Deu<span className="app-brand__accent">Lern</span> Grammatik mit System
             <span className="app-brand__subtitle">German grammar, A1–B1</span>
           </Link>
         </div>
