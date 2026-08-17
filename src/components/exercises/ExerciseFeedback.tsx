@@ -1,5 +1,6 @@
 import type { FeedbackState } from '../../features/practice/practiceStore';
 import { Icon, type IconName } from '../common/Icon';
+import { SpeakButton } from '../common/SpeakButton';
 
 export interface ExerciseFeedbackProps {
   feedback: FeedbackState | null;
@@ -49,7 +50,14 @@ export function ExerciseFeedback({ feedback, explanation }: ExerciseFeedbackProp
             feedback.kind !== 'correct' &&
             feedback.expectedAnswer && (
               <p>
-                Expected answer: <strong lang="de">{feedback.expectedAnswer}</strong>
+                Expected answer: <strong lang="de">{feedback.expectedAnswer}</strong>{' '}
+                {/* An explicit short label rather than the default "Listen to
+                    <sentence>": this sits inside the live region, and the
+                    default would make a screen reader read the answer twice. */}
+                <SpeakButton
+                  text={feedback.expectedAnswer}
+                  label="Listen to the expected answer"
+                />
               </p>
             )}
 

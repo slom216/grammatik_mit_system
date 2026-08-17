@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { prefetchChapter } from '../../content/chapterLoader';
 import type { ChapterCardModel } from '../../features/chapters/chapterSelectors';
 import { chapterPath, formatChapterNumber } from '../../features/chapters/chapterUtils';
 import { Icon } from '../common/Icon';
@@ -21,6 +22,11 @@ export function ChapterProgressCard({ chapter }: ChapterProgressCardProps) {
   return (
     <article
       className={`card chapter-card${chapter.available ? ' card--interactive' : ''}`}
+      // Start the ~64 KB chapter chunk on intent rather than on the click, so
+      // the route loader usually has it already. A hover that goes nowhere
+      // costs one chunk, and the service worker keeps it for offline use.
+      onMouseEnter={() => chapter.available && prefetchChapter(chapter.number)}
+      onFocus={() => chapter.available && prefetchChapter(chapter.number)}
     >
       <div className="chapter-card__header">
         <span className="chapter-card__number" aria-hidden="true">

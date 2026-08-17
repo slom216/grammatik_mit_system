@@ -133,9 +133,62 @@ function toPersisted(state: {
   return persisted;
 }
 
+/**
+ * Progress is written on a short trailing timer rather than on every mutation.
+ *
+ * `toPersisted` + `JSON.stringify` walks the whole progress blob, and a learner
+ * working through all 6,197 exercises grows `exerciseHistory` into the low
+ * megabytes. `recordAttempt` runs on every answer and the study timer flushes
+ * every 15 s, so without this a multi-megabyte synchronous serialise sits on
+ * the answer path and gets slower the further the learner gets.
+ *
+ * The timer is not restarted by later calls, so continuous activity still
+ * reaches storage within the interval instead of being starved.
+ *
+ * ponytail: a tab killed inside the window loses at most the last answer.
+ * `pagehide` and a hidden `visibilitychange` — the two events a browser
+ * actually gives before discarding a tab — write first. Shrink the interval if
+ * that ever proves too coarse.
+ */
+const WRITE_DEBOUNCE_MS = 1_000;
+let writeTimer: ReturnType<typeof setTimeout> | null = null;
+let pendingWrite: (() => void) | null = null;
+
+function cancelPendingWrite(): void {
+  if (writeTimer !== null) clearTimeout(writeTimer);
+  writeTimer = null;
+  pendingWrite = null;
+}
+
+/** Writes any progress still waiting on the timer, right now. */
+export function flushProgress(): void {
+  const write = pendingWrite;
+  cancelPendingWrite();
+  write?.();
+}
+
+if (typeof window !== 'undefined') {
+  window.addEventListener('pagehide', flushProgress);
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'hidden') flushProgress();
+  });
+}
+
 export const useProgressStore = create<ProgressState>()((set, get) => {
+  // The queued closure reads state when it runs, not when it was queued, so a
+  // pending write always serialises the newest progress.
+  const write = () => saveProgress(toPersisted(get()));
+
   const persist = () => {
-    saveProgress(toPersisted(get()));
+    pendingWrite = write;
+    if (writeTimer !== null) return;
+    writeTimer = setTimeout(flushProgress, WRITE_DEBOUNCE_MS);
+  };
+
+  /** For the points worth surviving a crash: a finished session, a restore. */
+  const persistNow = () => {
+    cancelPendingWrite();
+    write();
   };
 
   return {
@@ -255,7 +308,9 @@ export const useProgressStore = create<ProgressState>()((set, get) => {
       }
 
       set((state) => ({ chapters: { ...state.chapters, [chapterNumber]: next } }));
-      persist();
+      // A finished session is the one result worth never losing, and the
+      // learner is about to navigate away from it.
+      persistNow();
       return { mastered: evaluation.mastered };
     },
 
@@ -277,6 +332,9 @@ export const useProgressStore = create<ProgressState>()((set, get) => {
     },
 
     resetProgress: () => {
+      // Without this a write queued moments ago would land after the wipe and
+      // put everything back.
+      cancelPendingWrite();
       clearProgress();
       set({ ...createEmptyProgress(), lastOpenedChapter: undefined, hydrated: true });
     },
@@ -291,7 +349,7 @@ export const useProgressStore = create<ProgressState>()((set, get) => {
         lastOpenedChapter: state.lastOpenedChapter,
         hydrated: true,
       });
-      persist();
+      persistNow();
     },
 
     snapshot: () => toPersisted(get()),

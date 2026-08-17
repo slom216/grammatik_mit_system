@@ -1,5 +1,7 @@
-import { beforeEach, describe, expect, it } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
+import { PROGRESS_STORAGE_KEY } from './progressPersistence';
 import {
+  flushProgress,
   selectChapterProgress,
   selectCoveredExerciseIds,
   selectDueHistories,
@@ -192,7 +194,9 @@ describe('progressStore', () => {
     });
     store.setLastOpenedChapter(0);
 
-    // Simulate a reload: wipe the in-memory state, then hydrate from storage.
+    // Simulate a reload: writes are on a timer, and a real unload flushes them
+    // before the page goes away.
+    flushProgress();
     useProgressStore.setState({ chapters: {}, exerciseHistory: {}, hydrated: false });
     useProgressStore.getState().hydrate();
 
@@ -200,6 +204,73 @@ describe('progressStore', () => {
     expect(state.hydrated).toBe(true);
     expect(state.lastOpenedChapter).toBe(0);
     expect(selectChapterProgress(state, 0).bestScorePercent).toBe(100);
+  });
+
+  describe('storage writes', () => {
+    /** Counts the writes to the progress key only; other stores share storage. */
+    function watchWrites() {
+      const spy = vi.spyOn(Storage.prototype, 'setItem');
+      return () => spy.mock.calls.filter(([key]) => key === PROGRESS_STORAGE_KEY).length;
+    }
+
+    afterEach(() => {
+      vi.restoreAllMocks();
+      vi.useRealTimers();
+    });
+
+    it('coalesces a burst of answers into a single write', () => {
+      vi.useFakeTimers();
+      const writes = watchWrites();
+
+      for (let index = 0; index < 10; index += 1) {
+        useProgressStore.getState().recordAttempt({
+          exerciseId: `burst-ex-${index}`,
+          chapterNumber: 0,
+          outcome: 'correctFirstAttempt',
+        });
+      }
+      expect(writes()).toBe(0);
+
+      vi.runAllTimers();
+      expect(writes()).toBe(1);
+
+      // The one write has to carry the whole burst, not just the first answer.
+      useProgressStore.setState({ exerciseHistory: {}, hydrated: false });
+      useProgressStore.getState().hydrate();
+      expect(Object.keys(useProgressStore.getState().exerciseHistory)).toHaveLength(10);
+    });
+
+    it('writes immediately when the tab is going away', () => {
+      vi.useFakeTimers();
+      const writes = watchWrites();
+
+      useProgressStore.getState().recordAttempt({
+        exerciseId: 'unload-ex',
+        chapterNumber: 0,
+        outcome: 'correctFirstAttempt',
+      });
+      window.dispatchEvent(new Event('pagehide'));
+
+      expect(writes()).toBe(1);
+      // And the timer must not fire a second, redundant write afterwards.
+      vi.runAllTimers();
+      expect(writes()).toBe(1);
+    });
+
+    it('does not let a queued write resurrect progress after a reset', () => {
+      vi.useFakeTimers();
+
+      useProgressStore.getState().recordAttempt({
+        exerciseId: 'doomed-ex',
+        chapterNumber: 0,
+        outcome: 'correctFirstAttempt',
+      });
+      useProgressStore.getState().resetProgress();
+      vi.runAllTimers();
+
+      useProgressStore.getState().hydrate();
+      expect(useProgressStore.getState().exerciseHistory).toEqual({});
+    });
   });
 
   it('toggles bookmarks and clears everything on reset', () => {

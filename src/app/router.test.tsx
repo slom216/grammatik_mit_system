@@ -44,7 +44,8 @@ describe('application routes', () => {
     expect(await screen.findByRole('heading', { level: 1 })).toHaveTextContent(
       /chapter 86/i,
     );
-    expect(screen.getByText(/has not been written yet/i)).toBeInTheDocument();
+    // 86 is past the end of the outline: a bad URL, not a failed download.
+    expect(screen.getByText(/not valid/i)).toBeInTheDocument();
   });
 
   it('rejects a non-numeric chapter parameter', async () => {

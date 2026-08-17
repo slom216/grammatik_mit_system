@@ -115,7 +115,9 @@ describe('LearnPage', () => {
   });
 
   it('reports an unavailable chapter instead of crashing', async () => {
+    // 86 is past the end of the outline, so this is a bad URL rather than a
+    // chapter whose chunk failed to arrive.
     await renderLearn(86);
-    expect(screen.getByText(/has not been written yet/i)).toBeInTheDocument();
+    expect(screen.getByText(/not valid/i)).toBeInTheDocument();
   });
 });

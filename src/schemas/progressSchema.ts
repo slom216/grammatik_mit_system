@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { ANSWER_MODES, EXERCISE_TYPES } from './exerciseSchema';
+import { EXERCISE_TYPES } from './exerciseSchema';
 
 /**
  * Persisted state lives in localStorage and is versioned. Every change to the
@@ -256,8 +256,6 @@ export interface PersistedSettingsV1 {
   showUmlautHelper: boolean;
   reducedMotion: boolean;
   autoAdvance: boolean;
-  /** Default answer mode used by authoring tools and tests. */
-  defaultAnswerMode: (typeof ANSWER_MODES)[number];
   theme: Theme;
   pronunciationAudio: boolean;
   /** Exercises to answer per day. `0` turns the goal off. */
@@ -274,7 +272,6 @@ export const persistedSettingsV1Schema = z.object({
   showUmlautHelper: z.boolean(),
   reducedMotion: z.boolean(),
   autoAdvance: z.boolean(),
-  defaultAnswerMode: z.enum(ANSWER_MODES),
   // `.catch` rather than `.default`: settings written before the theme existed
   // would otherwise fail the whole parse, and a failed parse resets every
   // other setting back to its default.

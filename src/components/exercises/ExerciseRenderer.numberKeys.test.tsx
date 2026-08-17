@@ -81,4 +81,22 @@ describe('single-choice number keys', () => {
     await userEvent.keyboard('1');
     expect(resolved.onSubmitChoice).not.toHaveBeenCalled();
   });
+
+  it('ignores numbers typed while a link or button has focus', async () => {
+    const { onSubmitChoice } = renderChoice();
+
+    const link = document.createElement('a');
+    link.href = '#main-content';
+    link.textContent = 'Skip to main content';
+    document.body.append(link);
+    link.focus();
+    await userEvent.keyboard('2');
+    expect(onSubmitChoice).not.toHaveBeenCalled();
+
+    screen.getByRole('button', { name: /show hint|i don't know/i }).focus();
+    await userEvent.keyboard('2');
+    expect(onSubmitChoice).not.toHaveBeenCalled();
+
+    link.remove();
+  });
 });

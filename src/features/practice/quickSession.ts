@@ -23,11 +23,11 @@ export function buildQuickExerciseIds(
 ): string[] {
   const chapterExercises = sortedExercises(chapter);
   const known = new Set(chapterExercises.map((exercise) => exercise.id));
-  // Anything the learner got wrong earns its place before a random pick does.
-  // ponytail: no quota — a chapter with 24+ due exercises fills the session
-  // with review alone and covers no new ground. Cap the due slice if that
-  // turns out to stall a learner in practice.
-  const due = dueIds.filter((id) => known.has(id)).slice(0, size);
+  // Anything the learner got wrong earns its place before a random pick does,
+  // but only up to half the session: uncapped, a chapter with 24+ due
+  // exercises produced quick sessions that were pure review and never moved
+  // the learner through the rest of the pool.
+  const due = dueIds.filter((id) => known.has(id)).slice(0, Math.ceil(size / 2));
 
   const picked = new Set(due);
   const uncovered = chapterExercises.filter((exercise) => !coveredIds.has(exercise.id));

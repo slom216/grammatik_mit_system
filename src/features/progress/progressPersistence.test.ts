@@ -266,7 +266,6 @@ describe('createJsonStore', () => {
       showUmlautHelper: true,
       reducedMotion: false,
       autoAdvance: false,
-      defaultAnswerMode: 'normalized',
       theme: 'system',
       pronunciationAudio: true,
       dailyGoal: 20,

@@ -281,7 +281,12 @@ export function ExerciseRenderer({
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.metaKey || event.ctrlKey || event.altKey) return;
       const target = event.target as HTMLElement | null;
-      if (target?.closest('input:not([type="radio"]), textarea, select')) return;
+      // Anything the learner can type into or activate keeps its own keys: a
+      // number pressed while focus sits on a link or a button (the skip link,
+      // the nav, "Show hint") used to submit an answer and burn an attempt.
+      // Focus on <main> or <body> — where a fresh page leaves it — still works.
+      if (target?.closest('input:not([type="radio"]), textarea, select, a, button'))
+        return;
       const index = Number(event.key) - 1;
       const optionId = optionOrder[index];
       if (!Number.isInteger(index) || index < 0 || !optionId) return;

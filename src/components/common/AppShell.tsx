@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef } from 'react';
 import { Link, NavLink, Outlet, useLocation, useNavigation } from 'react-router-dom';
+import { prefetchChapter } from '../../content/chapterLoader';
 import { selectContinueChapter } from '../../features/chapters/chapterSelectors';
 import { chapterPath } from '../../features/chapters/chapterUtils';
 import { useProgressStore } from '../../features/progress/progressStore';
@@ -116,6 +117,9 @@ export function AppShell() {
             <Link
               className="button button--primary app-header__action"
               to={chapterPath(continueChapter.number)}
+              // The most likely next navigation in the whole app: warm it.
+              onMouseEnter={() => prefetchChapter(continueChapter.number)}
+              onFocus={() => prefetchChapter(continueChapter.number)}
             >
               Continue
             </Link>

@@ -16,7 +16,6 @@ export const defaultSettings: PersistedSettingsV1 = {
   showUmlautHelper: true,
   reducedMotion: false,
   autoAdvance: false,
-  defaultAnswerMode: 'normalized',
   theme: 'system',
   pronunciationAudio: true,
   dailyGoal: 20,
@@ -26,7 +25,7 @@ const store = createJsonStore(SETTINGS_STORAGE_KEY, persistedSettingsV1Schema);
 
 export type SettingsToggle = Exclude<
   keyof PersistedSettingsV1,
-  'schemaVersion' | 'defaultAnswerMode' | 'theme' | 'dailyGoal'
+  'schemaVersion' | 'theme' | 'dailyGoal'
 >;
 
 export interface SettingsState extends PersistedSettingsV1 {
@@ -59,7 +58,6 @@ export const useSettingsStore = create<SettingsState>()((set, get) => {
       reducedMotion,
       autoAdvance,
       pronunciationAudio,
-      defaultAnswerMode: get().defaultAnswerMode,
       theme: get().theme,
       dailyGoal: get().dailyGoal,
     });

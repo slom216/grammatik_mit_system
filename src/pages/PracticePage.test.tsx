@@ -4,7 +4,7 @@ import userEvent from '@testing-library/user-event';
 import { PracticePage } from './PracticePage';
 import { renderWithRouter } from '../test/helpers/renderWithRouter';
 import { usePracticeStore } from '../features/practice/practiceStore';
-import { useProgressStore } from '../features/progress/progressStore';
+import { flushProgress, useProgressStore } from '../features/progress/progressStore';
 import { useSettingsStore } from '../features/settings/settingsStore';
 import { chapter001 } from '../content/chapters/chapter-001-personal-pronouns';
 import { chapterRouteLoader } from '../features/chapters/useChapterParam';
@@ -331,6 +331,8 @@ describe('PracticePage', () => {
 
     await answerChoiceCorrectly(user, 'wir');
 
+    // Writes are on a timer; a real unload flushes them first.
+    act(() => flushProgress());
     act(() =>
       useProgressStore.setState({ chapters: {}, exerciseHistory: {}, hydrated: false }),
     );

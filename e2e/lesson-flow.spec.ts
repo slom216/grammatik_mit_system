@@ -123,7 +123,10 @@ async function answerCurrentExercise(page: Page, index: number) {
         await page
           .locator('.matching__column')
           .nth(1)
-          .getByRole('button', { name: pair.right, exact: true })
+          // The button's accessible name is its aria-label ("<right> — not
+          // matched"), not its text, so this anchors on the label's prefix
+          // rather than matching the bare text.
+          .getByRole('button', { name: new RegExp(`^${escapeRegExp(pair.right)} — `) })
           .click();
       }
       await page.getByRole('button', { name: 'Check answer' }).click();
@@ -216,6 +219,12 @@ test.describe('lesson flow', () => {
 
     await page.getByRole('button', { name: 'Try again' }).click();
     await answerCurrentExercise(page, 0);
+
+    // Leave practice before touching storage. While the practice page is up it
+    // holds progress in memory and the study timer keeps writing it out, so an
+    // edit made underneath it is overwritten by the next flush. On a page with
+    // no session running, storage is the only copy.
+    await page.goto('/chapters');
 
     // The exercise is queued for a later day; move its due date into the past
     // so the review screen can be checked without waiting.

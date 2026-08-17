@@ -107,6 +107,26 @@ describe('buildQuickExerciseIds', () => {
     );
     expect(ids).toContain('ch1-ex-60');
   });
+
+  it('leaves room for new material when far more is due than fits', () => {
+    // 40 due exercises, all of them already covered: uncapped, they would take
+    // the whole session and the learner would never reach the rest of the pool.
+    const dueIds = chapter.exercises.slice(0, 40).map((exercise) => exercise.id);
+    const covered = new Set(dueIds);
+
+    const ids = buildQuickExerciseIds(
+      chapter,
+      QUICK_SESSION_SIZE,
+      Math.random,
+      dueIds,
+      covered,
+    );
+
+    expect(ids).toHaveLength(QUICK_SESSION_SIZE);
+    const dueCount = ids.filter((id) => covered.has(id)).length;
+    expect(dueCount).toBeLessThanOrEqual(QUICK_SESSION_SIZE / 2);
+    expect(ids.length - dueCount).toBeGreaterThan(0);
+  });
 });
 
 describe('quickMasteryRule', () => {

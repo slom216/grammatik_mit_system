@@ -108,7 +108,6 @@ export function SettingsPage() {
       showUmlautHelper: settings.showUmlautHelper,
       reducedMotion: settings.reducedMotion,
       autoAdvance: settings.autoAdvance,
-      defaultAnswerMode: settings.defaultAnswerMode,
       theme: settings.theme,
       pronunciationAudio: settings.pronunciationAudio,
       dailyGoal: settings.dailyGoal,

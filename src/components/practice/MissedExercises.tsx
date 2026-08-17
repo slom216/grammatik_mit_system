@@ -1,5 +1,6 @@
 import type { Exercise } from '../../schemas/exerciseSchema';
 import { expectedAnswerFor } from '../../features/practice/practiceStore';
+import { SpeakButton } from '../common/SpeakButton';
 
 export interface MissedExercisesProps {
   exercises: readonly Exercise[];
@@ -22,7 +23,8 @@ export function MissedExercises({ exercises }: MissedExercisesProps) {
           </p>
           <p className="text-sm">
             <span className="text-muted">Correct answer: </span>
-            <strong lang="de">{expectedAnswerFor(exercise)}</strong>
+            <strong lang="de">{expectedAnswerFor(exercise)}</strong>{' '}
+            <SpeakButton text={expectedAnswerFor(exercise)} />
           </p>
           <p className="text-sm text-muted">{exercise.explanation}</p>
         </li>
