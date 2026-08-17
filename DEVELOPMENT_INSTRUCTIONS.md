@@ -16,7 +16,7 @@ The application must:
 - support keyboard navigation and mobile use;
 - make it easy to add, review, and revise chapter content without changing UI code.
 
-The chapter structure is inspired by the topic progression of _Grammatik aktiv A1–B1, 2. aktualisierte Ausgabe_. Do **not** copy explanations, examples, exercise wording, answer choices, illustrations, page layouts, or answer keys from the book. All instructional text and exercises must be newly written.
+The chapter structure follows the conventional A1–B1 grammar progression used across CEFR-aligned German-as-a-foreign-language teaching. Do **not** copy explanations, examples, exercise wording, answer choices, illustrations, page layouts, or answer keys from any published course book. All instructional text and exercises must be newly written for this app.
 
 ---
 
@@ -91,14 +91,14 @@ Do not mark an exercise as complete merely because the user has clicked an answe
 
 The application must not:
 
-- scan or reproduce pages from the source book;
-- copy the book’s exercise wording;
-- copy the book’s example sentences;
-- use screenshots of the book;
-- reproduce the book’s visual design;
-- claim to be an official Cornelsen product.
+- scan or reproduce pages from any published course book;
+- copy exercise wording from a published course book;
+- copy example sentences from a published course book;
+- use screenshots of a published course book;
+- reproduce a published course book’s visual design;
+- claim to be affiliated with, endorsed by, or published by any textbook publisher.
 
-A short attribution may state that the curriculum is organized around common A1–B1 German grammar topics. Do not use the publisher’s branding.
+A short attribution may state that the curriculum is organized around common A1–B1 German grammar topics. Do not name or reference a specific course book, and do not use any publisher’s branding.
 
 ---
 
@@ -3006,7 +3006,7 @@ The development agent must:
 - complete phases in order;
 - not skip validation;
 - not fabricate a chapter as “complete” with placeholder exercises;
-- not copy source-book wording;
+- not copy wording from any published course book;
 - preserve chapter numbers and titles;
 - keep chapter content separate from rendering components;
 - use strict TypeScript;
