@@ -202,6 +202,132 @@ describe('checkTextAnswer', () => {
   });
 });
 
+/** The real chapter-7 exercise this was built for. */
+function translationExercise(): TextInputExercise {
+  return textExercise({
+    prompt: 'My grandmother says I should visit her more often.',
+    acceptedAnswers: [
+      'Meine Oma sagt, ich soll sie öfter besuchen.',
+      'Meine Großmutter sagt, ich soll sie öfter besuchen.',
+    ],
+  });
+}
+
+describe('checkTextAnswer near misses', () => {
+  it('forgives a single mistyped word and names the right spelling', () => {
+    const result = checkTextAnswer(
+      translationExercise(),
+      'Meine Oma sagt, ich soll sie öffter besuchen.',
+    );
+    expect(result.correct).toBe(true);
+    expect(result.typoCorrected).toBe('öfter');
+  });
+
+  it('refuses even a real typo once it disturbs the ending', () => {
+    // "öfetr" is only a transposition, but it lands on the last two characters,
+    // which is where German inflection lives. The guard cannot tell the two
+    // apart, so it declines — wrongly rejecting a typo is the safe direction.
+    const result = checkTextAnswer(
+      translationExercise(),
+      'Meine Oma sagt, ich soll sie öfetr besuchen.',
+    );
+    expect(result.correct).toBe(false);
+    expect(result.nearMiss?.kind).toBe('wordForm');
+  });
+
+  it('forgives a typo in the middle of a long word', () => {
+    const result = checkTextAnswer(
+      translationExercise(),
+      'Meine Oma sagt, ich soll sie öfter bseuchen.',
+    );
+    expect(result.correct).toBe(true);
+    expect(result.typoCorrected).toBe('besuchen');
+  });
+
+  // The whole point of the ending guard: German inflection lives in the last
+  // characters, so these are grammar mistakes and must stay wrong.
+  it.each([
+    ['a conjugation ending', 'Meine Oma sagt, ich sollst sie öfter besuchen.'],
+    ['a verb infinitive ending', 'Meine Oma sagt, ich soll sie öfter besuche.'],
+    ['a possessive ending', 'Meinen Oma sagt, ich soll sie öfter besuchen.'],
+  ])('never forgives %s', (_label, answer) => {
+    const result = checkTextAnswer(translationExercise(), answer);
+    expect(result.correct).toBe(false);
+    expect(result.typoCorrected).toBeUndefined();
+    expect(result.nearMiss?.kind).toBe('wordForm');
+  });
+
+  it.each([
+    ['an article', ['Der Mann ist alt.'], 'Dem Mann ist alt.'],
+    ['an adjective ending', ['Das ist ein guter Wein.'], 'Das ist ein gutes Wein.'],
+  ])('never forgives %s', (_label, acceptedAnswers, answer) => {
+    const result = checkTextAnswer(textExercise({ acceptedAnswers }), answer);
+    expect(result.correct).toBe(false);
+    expect(result.typoCorrected).toBeUndefined();
+  });
+
+  it('never forgives capitalisation, even inside a long word', () => {
+    const result = checkTextAnswer(
+      translationExercise(),
+      'Meine Oma sagt, ich soll sie öfter Besuchen.',
+    );
+    expect(result.correct).toBe(false);
+  });
+
+  it('does not forgive a typo that leaves the rest of the sentence wrong', () => {
+    // The word is one edit from "besuchen", but the comma is gone too, so the
+    // repaired answer still fails the ordinary match.
+    const result = checkTextAnswer(
+      translationExercise(),
+      'Meine Oma sagt ich soll sie öfter bseuchen.',
+    );
+    expect(result.correct).toBe(false);
+  });
+
+  it('reports the right words in the wrong order', () => {
+    const result = checkTextAnswer(
+      translationExercise(),
+      'Meine Oma sagt, ich soll sie besuchen öfter.',
+    );
+    expect(result.correct).toBe(false);
+    expect(result.nearMiss?.kind).toBe('wordOrder');
+  });
+
+  it('reports one word too few and one too many', () => {
+    expect(
+      checkTextAnswer(translationExercise(), 'Meine Oma sagt, ich soll sie besuchen.')
+        .nearMiss?.kind,
+    ).toBe('missingWord');
+    expect(
+      checkTextAnswer(
+        translationExercise(),
+        'Meine liebe Oma sagt, ich soll sie öfter besuchen.',
+      ).nearMiss?.kind,
+    ).toBe('extraWord');
+  });
+
+  it('says nothing about an answer that is nowhere near', () => {
+    const result = checkTextAnswer(translationExercise(), 'Ich weiß es nicht.');
+    expect(result.correct).toBe(false);
+    expect(result.nearMiss).toBeUndefined();
+  });
+
+  it('leaves a capitalisation-only mismatch to its own note', () => {
+    const result = checkTextAnswer(
+      translationExercise(),
+      'meine oma sagt, ich soll sie öfter besuchen.',
+    );
+    expect(result.correct).toBe(false);
+    expect(result.capitalisationOnlyMismatch).toBe(true);
+    expect(result.nearMiss).toBeUndefined();
+  });
+
+  it('leaves short words alone, where one edit is most of the word', () => {
+    const exercise = textExercise({ acceptedAnswers: ['Wir sind im Kino.'] });
+    expect(checkTextAnswer(exercise, 'Wir sind in Kino.').correct).toBe(false);
+  });
+});
+
 describe('checkSingleChoiceAnswer', () => {
   it('accepts only the correct option id', () => {
     const exercise = choiceExercise();

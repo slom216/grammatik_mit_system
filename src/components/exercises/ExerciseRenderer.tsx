@@ -1,8 +1,9 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import type { FormEvent } from 'react';
 import type { Exercise } from '../../schemas/exerciseSchema';
 import type { FeedbackState } from '../../features/practice/practiceStore';
 import { requiresCorrectionInput } from '../../features/practice/answerNormalization';
+import { shuffle } from '../../features/chapters/chapterUtils';
 import { Icon } from '../common/Icon';
 import { DialogueExchange } from './DialogueExchange';
 import { DragToSlotsExercise } from './DragToSlotsExercise';
@@ -60,6 +61,29 @@ const CHOICE_COMMIT_DELAY_MS = 300;
 
 /** Long enough to read "Correct" and the explanation before moving on. */
 export const AUTO_ADVANCE_DELAY_MS = 1200;
+
+/** Below this a bank of words would simply be the answer written out. */
+const MIN_WORD_BANK_WORDS = 4;
+
+/**
+ * The words of the expected answer, for the optional word bank.
+ *
+ * Producing a whole sentence from an empty field is what makes translation
+ * exercises get abandoned; seeing the words still leaves the learner to order,
+ * inflect and spell them. The terminal full stop is dropped from the last word,
+ * the same way sentence ordering does it, so the punctuation does not mark which
+ * word ends the sentence. Commas are kept — where a clause breaks is part of
+ * what the answer has to get right, and hiding them would mislead.
+ */
+function wordBankFor(exercise: Exercise): string[] {
+  if (exercise.type !== 'textInput') return [];
+  const words = (exercise.acceptedAnswers[0] ?? '').trim().split(/\s+/).filter(Boolean);
+  if (words.length < MIN_WORD_BANK_WORDS) return [];
+  const last = words.length - 1;
+  const trimmed = (words[last] ?? '').replace(/[.!?]+$/, '');
+  if (trimmed) words[last] = trimmed;
+  return words;
+}
 
 /** True for exercises resolved by a single click rather than an explicit "Check answer". */
 function isAutoSubmitExercise(exercise: Exercise): boolean {
@@ -128,6 +152,12 @@ export function ExerciseRenderer({
   const [selectedTokenIndex, setSelectedTokenIndex] = useState<number | null>(null);
   const [correctionValue, setCorrectionValue] = useState('');
   const [hintVisible, setHintVisible] = useState(false);
+  const [wordBankVisible, setWordBankVisible] = useState(false);
+  const wordBankId = useId();
+  // Shuffled once: this component is remounted per exercise, so an empty
+  // dependency list keeps the words still while the learner types.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const wordBank = useMemo(() => shuffle(wordBankFor(exercise)), []);
   const [advanceCancelled, setAdvanceCancelled] = useState(false);
   const commitTimeoutRef = useRef<number | undefined>(undefined);
   const resolvedRef = useRef(resolved);
@@ -410,6 +440,31 @@ export function ExerciseRenderer({
               onClick={() => setHintVisible(true)}
             >
               Show hint
+            </button>
+          )}
+        </div>
+      )}
+
+      {showHints && !resolved && wordBank.length > 0 && (
+        <div>
+          {wordBankVisible ? (
+            <>
+              <p className="text-sm text-muted" id={wordBankId}>
+                The words you need, in no particular order:
+              </p>
+              <ul className="drag-slots__bank" aria-labelledby={wordBankId} lang="de">
+                {wordBank.map((word, index) => (
+                  <li key={`${word}-${index}`}>{word}</li>
+                ))}
+              </ul>
+            </>
+          ) : (
+            <button
+              type="button"
+              className="button button--ghost"
+              onClick={() => setWordBankVisible(true)}
+            >
+              Stuck? Show the words
             </button>
           )}
         </div>

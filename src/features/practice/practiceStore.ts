@@ -44,6 +44,7 @@ import {
   primaryAcceptedAnswer,
   sentenceOrderingAnswerText,
 } from './answerNormalization';
+import type { NearMiss } from './answerNormalization';
 import {
   MAX_ATTEMPTS,
   outcomeForAttempt,
@@ -55,6 +56,30 @@ import type { SessionSummary } from './scoring';
 export const SESSION_STORAGE_KEY = 'grammatik-mit-system:session';
 
 const sessionStore = createJsonStore(SESSION_STORAGE_KEY, persistedSessionV1Schema);
+
+/**
+ * Turns a near miss into something the learner can act on. Without it a wrong
+ * first attempt reports only "Not correct yet", which leaves the one remaining
+ * attempt a guess — the reason full-sentence translations were being abandoned.
+ * The missing word is deliberately not named: on a short answer that would be
+ * the answer.
+ */
+function nearMissNote(nearMiss: NearMiss | undefined): string | undefined {
+  switch (nearMiss?.kind) {
+    case 'wordOrder':
+      return 'All the right words — check the word order.';
+    case 'missingWord':
+      return 'You are one word short.';
+    case 'extraWord':
+      return 'You have one word too many.';
+    case 'spelling':
+      return `Almost — check the spelling of “${nearMiss.written}”.`;
+    case 'wordForm':
+      return `Close — check the form of “${nearMiss.written}”.`;
+    default:
+      return undefined;
+  }
+}
 
 export type PracticeStatus = 'idle' | 'active' | 'finished';
 
@@ -422,12 +447,18 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
       if (check.correct) {
         const outcome = outcomeForAttempt(attempts, true);
         resolveExercise(exercise, outcome, attempts, value);
+        // A forgiven typo still has to be shown, or the learner keeps the wrong
+        // spelling and never finds out.
+        const typoNote = check.typoCorrected
+          ? `Accepted — the spelling is “${check.typoCorrected}”.`
+          : undefined;
         return setFeedback({
           exerciseId: exercise.id,
           kind: 'correct',
           attempts,
           canRetry: false,
           submittedAnswer: value,
+          ...(typoNote ? { note: typoNote } : {}),
           expectedAnswer: expectedAnswerFor(exercise),
         });
       }
@@ -441,7 +472,7 @@ export const usePracticeStore = create<PracticeState>()((set, get) => {
         ? 'Only the capitalisation is different — in German it is part of the grammar.'
         : check.missingTokens.length > 0
           ? `Your answer is missing: ${check.missingTokens.join(', ')}.`
-          : undefined;
+          : nearMissNote(check.nearMiss);
 
       return setFeedback({
         exerciseId: exercise.id,
