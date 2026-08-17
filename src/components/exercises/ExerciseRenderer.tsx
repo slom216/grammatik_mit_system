@@ -241,12 +241,13 @@ export function ExerciseRenderer({
     );
   };
 
+  /**
+   * Matching deliberately does not auto-submit: the last pair is often placed
+   * by elimination, and the learner wants to look over the whole board before
+   * committing. "Check answer" stays.
+   */
   const commitMatches = (next: Record<string, string>) => {
     setMatches(next);
-    if (exercise.type !== 'matching') return;
-    scheduleCompletionCommit(Object.keys(next).length === exercise.pairs.length, () =>
-      onSubmitMatching(next),
-    );
   };
 
   /**

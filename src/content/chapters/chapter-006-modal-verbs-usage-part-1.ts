@@ -937,7 +937,7 @@ export const chapter006: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['permission-vs-ability', 'können'],
       instruction: 'Choose the correct modal verb for the context.',
-      prompt: 'Der Torwart ___ hervorragend fangen — das ist sein großes Talent.',
+      prompt: 'Mein Bruder ___ sehr gut singen.',
       options: [
         { id: 'a', text: 'darf' },
         { id: 'b', text: 'kann' },
@@ -946,7 +946,7 @@ export const chapter006: ChapterDefinition = {
       ],
       correctOptionId: 'b',
       explanation:
-        "A goalkeeper's catching skill is a talent — ability, expressed with können.",
+        'Singing well is a skill — ability, expressed with können, not permission or obligation.',
     },
     {
       id: 'ch06-ex-40',
