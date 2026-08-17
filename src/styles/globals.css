@@ -1081,7 +1081,7 @@ a:hover {
 .calendar-month {
   width: 100%;
   border-collapse: separate;
-  border-spacing: 3px;
+  border-spacing: var(--space-1);
   table-layout: fixed;
 }
 
@@ -1095,18 +1095,21 @@ a:hover {
 }
 
 /* Not square any more: the cell carries three lines, and a square one clips
-   them on a phone. The min-height keeps an empty day from collapsing. */
+   them on a phone. The min-height fits all three, so a day with facts is no
+   taller than an empty one and every gap in the grid stays the same. */
 .calendar-month__day {
   width: 100%;
-  min-height: 3.25rem;
+  height: 100%;
+  min-height: 4.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: var(--space-1) 1px;
+  gap: 2px;
   overflow: hidden;
   font: inherit;
-  font-size: var(--text-sm);
+  font-size: var(--text-md);
   color: var(--color-text);
   cursor: pointer;
   border: var(--border-width) solid var(--color-border);
@@ -1114,12 +1117,13 @@ a:hover {
   background: var(--color-heat-0);
 }
 
-/* Below --text-xs on purpose: seven of these share a row on a 320px screen. */
+/* Still under --text-sm on purpose: seven of these share a row on a 320px
+   screen. */
 .calendar-month__facts {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 0.625rem;
+  font-size: var(--text-xs);
   line-height: 1.2;
   white-space: nowrap;
   opacity: 0.8;
@@ -2294,6 +2298,16 @@ a:hover {
 
   .exercise-navigation .row {
     width: 100%;
+  }
+
+  /* Seven day cells on a phone leave ~34px each, too narrow for "3 · A1"
+     at --text-xs. */
+  .calendar-month__day {
+    font-size: var(--text-base);
+  }
+
+  .calendar-month__facts {
+    font-size: 0.625rem;
   }
 }
 
