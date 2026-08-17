@@ -218,7 +218,7 @@ export function selectContinueChapter(
   const lastOpened = state.lastOpenedChapter;
   if (lastOpened !== undefined) {
     const card = cards.find((entry) => entry.number === lastOpened && entry.available);
-    if (card && card.status !== 'mastered') return card;
+    if (card && card.status !== 'mastered' && card.status !== 'completed') return card;
   }
   return cards.find(
     (card) => card.available && card.status !== 'mastered' && card.status !== 'completed',

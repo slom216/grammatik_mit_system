@@ -134,6 +134,33 @@ describe('chapter selectors', () => {
     expect(selectContinueChapter(useProgressStore.getState())?.number).toBe(2);
   });
 
+  it('moves past the last opened chapter once it is completed', () => {
+    const summary = summarizeSession(
+      [
+        {
+          exerciseId: 'x',
+          type: 'textInput',
+          attempts: 1,
+          outcome: 'correctFirstAttempt',
+          score: 1,
+          submittedAnswers: [],
+        },
+      ],
+      1,
+    );
+    // Enough answered to count as completed, but short of the mastery bar.
+    useProgressStore.getState().recordSessionResult({
+      chapterNumber: 1,
+      summary,
+      mastery: { passingPercent: 80, minimumAnswered: 1, requiredCorrectTextInputs: 2 },
+    });
+    useProgressStore.getState().setLastOpenedChapter(1);
+
+    const cards = selectChapterCards(useProgressStore.getState());
+    expect(cards.find((card) => card.number === 1)?.status).toBe('completed');
+    expect(selectContinueChapter(useProgressStore.getState())?.number).toBe(2);
+  });
+
   it('finds the next chapter with content after the given one', () => {
     expect(selectNextChapter(1)?.number).toBe(2);
   });
