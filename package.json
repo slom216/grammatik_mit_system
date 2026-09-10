@@ -1,6 +1,7 @@
 {
   "name": "grammatik-mit-system",
   "private": true,
+  "license": "MIT",
   "version": "0.1.0",
   "type": "module",
   "description": "Browser-based German grammar course (A1-B1) built with React, Vite and TypeScript.",
