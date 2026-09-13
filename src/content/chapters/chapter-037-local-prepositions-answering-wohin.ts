@@ -229,8 +229,8 @@ export const chapter037: ChapterDefinition = {
           'an describes movement to the edge of something, here a lake; it takes the accusative because it is a destination.',
       },
       {
-        german: 'Am liebsten würde ich ans Meer fahren.',
-        english: 'I would most like to travel to the seaside.',
+        german: 'Am liebsten fahre ich ans Meer.',
+        english: 'Most of all I like going to the seaside.',
         highlight: ['ans'],
         explanation: 'an + das contracts to ans; Meer is neuter.',
       },
@@ -374,8 +374,8 @@ export const chapter037: ChapterDefinition = {
       options: [
         { id: 'a', text: 'ins' },
         { id: 'b', text: 'im' },
-        { id: 'c', text: 'zum' },
-        { id: 'd', text: 'an das' },
+        { id: 'c', text: 'ans' },
+        { id: 'd', text: 'am' },
       ],
       correctOptionId: 'a',
       explanation:
@@ -412,7 +412,7 @@ export const chapter037: ChapterDefinition = {
         { id: 'a', text: 'auf den' },
         { id: 'b', text: 'in den' },
         { id: 'c', text: 'an den' },
-        { id: 'd', text: 'zum' },
+        { id: 'd', text: 'auf dem' },
       ],
       correctOptionId: 'a',
       explanation:
@@ -632,13 +632,13 @@ export const chapter037: ChapterDefinition = {
       grammarFocus: ['auf', 'open-public-space', 'no-contraction'],
       instruction:
         'Complete the phrase with the preposition and article shown in brackets. Capitalisation is not checked.',
-      prompt: 'Die Kinder spielen nachmittags ___ Spielplatz. (auf + den)',
+      prompt: 'Die Kinder gehen nachmittags ___ Spielplatz. (auf + den)',
       acceptedAnswers: ['auf den'],
       answerMode: 'caseInsensitive',
       placeholder: 'auf den',
       maxLength: 20,
       explanation:
-        'auf + den does not contract; Spielplatz is masculine and takes the accusative article den.',
+        'gehen expresses a destination (wohin?), so auf takes the accusative; Spielplatz is masculine, so den, and auf + den does not contract. (Once they are there, they spielen auf dem Spielplatz — dative.)',
     },
     {
       id: 'ch37-ex-21',
@@ -795,7 +795,7 @@ export const chapter037: ChapterDefinition = {
       options: [
         { id: 'a', text: 'auf den' },
         { id: 'b', text: 'in den' },
-        { id: 'c', text: 'zum' },
+        { id: 'c', text: 'auf dem' },
         { id: 'd', text: 'an den' },
       ],
       correctOptionId: 'a',
@@ -1594,16 +1594,15 @@ export const chapter037: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['an', 'contraction', 'body-of-water', 'word-order'],
       instruction: 'Arrange the segments into the correct German sentence.',
-      prompt: 'I would most like to travel to the seaside.',
+      prompt: 'Most of all I like going to the seaside.',
       segments: [
         { id: 'seg-1', text: 'Am liebsten' },
-        { id: 'seg-2', text: 'würde' },
+        { id: 'seg-2', text: 'fahre' },
         { id: 'seg-3', text: 'ich' },
-        { id: 'seg-4', text: 'ans Meer' },
-        { id: 'seg-5', text: 'fahren.' },
+        { id: 'seg-4', text: 'ans Meer.' },
       ],
       explanation:
-        'würde sends the infinitive fahren to the end; ans Meer (an + das) is the destination phrase before it.',
+        'Am liebsten opens the sentence, so the verb fahre comes second and the subject ich follows; ans Meer (an + das) is the destination at the end.',
     },
     {
       id: 'ch37-ex-79',

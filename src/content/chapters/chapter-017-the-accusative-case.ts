@@ -24,7 +24,8 @@ export const chapter017: ChapterDefinition = {
         heading: 'What the accusative case marks',
         paragraphs: [
           'The accusative case marks the direct object of a sentence — the person or thing that directly receives the action of the verb. In Ich kaufe einen Apfel (I am buying an apple), einen Apfel is the direct object: it is the thing being bought.',
-          'German nouns themselves almost never change their spelling for the accusative. What changes is the article or determiner standing in front of the noun — and that article change is what this chapter focuses on.',
+          'Most German nouns do not change their spelling for the accusative. What changes is the article or determiner standing in front of the noun — and that article change is what this chapter focuses on.',
+          'A small group of masculine nouns, the so-called n-nouns, is the exception: they add -(e)n in the accusative. Ich sehe den Herrn / den Jungen / den Nachbarn / den Studenten. You will meet this group properly later; for now, just recognise the pattern.',
         ],
       },
       {
@@ -62,7 +63,7 @@ export const chapter017: ChapterDefinition = {
         heading: 'Verbs that take an accusative object',
         paragraphs: [
           'Many everyday verbs are followed directly by an accusative object, with no preposition in between: haben, kaufen, sehen, suchen, brauchen, essen, trinken, lesen, kennen and lieben are some of the most common.',
-          'Ich habe einen Hund. Wir essen das Brot. Sie liest ein Buch. — in each sentence, the noun phrase right after the verb is the accusative direct object.',
+          'Ich habe einen Hund. Wir essen das Brot. Sie liest ein Buch. — in each sentence, the noun phrase that receives the action (einen Hund, das Brot, ein Buch) is the accusative direct object. It does not have to stand right after the verb: Ich habe heute einen Hund gesehen. Den Film kenne ich schon.',
         ],
       },
       {
@@ -1080,8 +1081,8 @@ export const chapter017: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['accusative-case', 'masculine', 'indefinite-article', 'word-order'],
-      instruction: 'Choose the sentence that correctly says: The boy needs a jacket.',
-      prompt: '"The boy needs a jacket."',
+      instruction: 'Choose the sentence that correctly says: The boy needs a coat.',
+      prompt: '"The boy needs a coat."',
       options: [
         { id: 'a', text: 'Der Junge braucht einen Mantel.' },
         { id: 'b', text: 'Der Junge braucht ein Mantel.' },

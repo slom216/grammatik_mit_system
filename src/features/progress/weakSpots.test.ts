@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { humanizeTag, selectWeakSpots } from './weakSpots';
+import { humanizeTag, selectWeakSpots, topicKey } from './weakSpots';
 import { createHistory } from '../practice/reviewScheduler';
 import type { ExerciseHistory } from '../../schemas/progressSchema';
 
@@ -29,7 +29,45 @@ describe('humanizeTag', () => {
   });
 });
 
+describe('topicKey', () => {
+  it('merges spellings of one topic', () => {
+    expect(topicKey('dragToSlots')).toBe(topicKey('drag-to-slots'));
+    expect(topicKey('comma-rules')).toBe('comma-rule');
+    expect(topicKey('accusative-case')).toBe('accusative');
+    expect(topicKey('Two-way prepositions')).toBe('two-way-preposition');
+  });
+
+  it('leaves German words and other -case tags alone', () => {
+    expect(topicKey('nichts')).toBe('nichts');
+    expect(topicKey('dass')).toBe('dass');
+    expect(topicKey('verb-case')).toBe('verb-case');
+  });
+});
+
 describe('selectWeakSpots', () => {
+  it('ranks neither exercise types nor difficulty levels', () => {
+    const spots = selectWeakSpots(
+      byId(
+        history('a', 1, ['controlled', 'dragToSlots', 'error-spotting', 'dative'], 10, 2),
+        history('b', 2, ['common-mistakes', 'sentenceOrdering'], 10, 0),
+      ),
+    );
+
+    expect(spots.map((spot) => spot.tag)).toEqual(['dative']);
+  });
+
+  it('merges near-duplicate tags into one topic', () => {
+    const spots = selectWeakSpots(
+      byId(
+        history('a', 1, ['adjective-endings'], 4, 1),
+        history('b', 2, ['adjective-ending', 'adjective-endings'], 4, 3),
+      ),
+    );
+
+    expect(spots).toHaveLength(1);
+    expect(spots[0]).toMatchObject({ tag: 'adjective-ending', answered: 8, correct: 4 });
+  });
+
   it('is empty without any answered exercises', () => {
     expect(selectWeakSpots({})).toEqual([]);
   });
@@ -76,9 +114,10 @@ describe('selectWeakSpots', () => {
       { minimumAnswers: 5 },
     );
 
+    // Plural tags are keyed by their singular form.
     expect(spots.map((spot) => spot.tag).sort()).toEqual([
       'owner-stem',
-      'possessive-articles',
+      'possessive-article',
     ]);
   });
 

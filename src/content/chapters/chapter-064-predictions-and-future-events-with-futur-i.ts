@@ -36,7 +36,7 @@ export const chapter064: ChapterDefinition = {
         heading: 'Forming Futur I: werden + infinitive',
         paragraphs: [
           'Futur I is built analytically: a conjugated, present-tense form of werden in position 2, plus the plain infinitive of the main verb sent to the very end of the clause. Ich werde kommen. Wir werden bleiben. Sie wird das Buch lesen.',
-          'werden conjugates in the present tense like this: ich werde, du wirst, er/sie/es wird, wir werden, ihr werdet, sie/Sie werden. Notice the irregular stem change in du and er/sie/es: e becomes i (wirst, wird), not the pattern you might expect from the infinitive werden. These are exactly the same present-tense forms werden takes as the passive auxiliary — do not confuse them with würdest/würde, the unrelated Konjunktiv II forms from chapter 60.',
+          'werden conjugates in the present tense like this: ich werde, du wirst, er/sie/es wird, wir werden, ihr werdet, sie/Sie werden. Notice the irregular stem change in du and er/sie/es: e becomes i (wirst, wird), not the pattern you might expect from the infinitive werden. These are exactly the same present-tense forms werden takes as the passive auxiliary — do not confuse them with würdest/würde, the Konjunktiv II forms of werden from chapter 60, which mean "would", not "will".',
           'Only werden changes shape for person; the infinitive at the end never changes, no matter who the subject is: Er wird das Buch kaufen. Sie werden das Buch kaufen.',
         ],
       },
@@ -221,7 +221,7 @@ export const chapter064: ChapterDefinition = {
         english: "The train arrives at 8 o'clock.",
         highlight: ['kommt', 'um 8 Uhr'],
         explanation:
-          'A fixed timetable event, stated with the present tense — Futur I would sound oddly uncertain here.',
+          'A fixed timetable event, stated with the present tense. Der Zug wird um 8 Uhr ankommen. is also correct, but the present is the usual everyday choice.',
       },
       {
         german: 'In zehn Jahren wird die Welt anders aussehen.',
@@ -284,10 +284,10 @@ export const chapter064: ChapterDefinition = {
           'In a subordinate clause introduced by dass, the conjugated werden moves to the very end, after the infinitive.',
       },
       {
-        incorrect: 'Der Zug wird um 8 Uhr ankommen.',
-        correct: 'Der Zug kommt um 8 Uhr an.',
+        incorrect: 'Morgen ich werde nach Berlin fahren.',
+        correct: 'Morgen werde ich nach Berlin fahren.',
         explanation:
-          'Fixed, scheduled timetable events are normally expressed with the present tense in German; using Futur I here sounds unnaturally uncertain or marked.',
+          'werden is the conjugated verb and must stay in position 2; when morgen comes first, the subject ich moves after werde. (For a fixed plan, Ich fahre morgen nach Berlin. is even more usual.)',
       },
       {
         incorrect: 'Er wird Arzt sein. (intending: "he is becoming a doctor")',
@@ -495,7 +495,7 @@ export const chapter064: ChapterDefinition = {
       grammarFocus: ['futur-i', 'assumptions', 'dialogue'],
       instruction:
         'Read the exchange, then choose the option that best completes the final line.',
-      prompt: 'Complete: "Er ___ wohl noch im Bett sein."',
+      prompt: "Complete Lea's reply.",
       dialogue: [
         {
           speaker: 'Anna',
@@ -516,7 +516,7 @@ export const chapter064: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'wird ... sein + wohl expresses a guess about the present ("he\'s probably..."); ist would be a flat statement of fact, wäre is the unrelated Konjunktiv II ("would be"), and war is simple past.',
+        'wird ... sein + wohl expresses a guess about the present ("he\'s probably..."); ist would be a flat statement of fact, wäre is Konjunktiv II ("would be"), and war is simple past.',
     },
     {
       id: 'ch64-ex-11',
@@ -594,7 +594,7 @@ export const chapter064: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'werde ... vergessen expresses a firm, emphatic promise; b changes the meaning entirely, c is present perfect (a claim about the past), and d is the unrelated Konjunktiv II ("I would never forget").',
+        'werde ... vergessen expresses a firm, emphatic promise; b changes the meaning entirely, c is present perfect (a claim about the past), and d is Konjunktiv II ("I would never forget").',
     },
     {
       id: 'ch64-ex-15',
@@ -876,8 +876,7 @@ export const chapter064: ChapterDefinition = {
         },
         {
           speaker: 'Jonas',
-          german: 'Er wird wohl noch schlafen.',
-          english: "He's probably still sleeping.",
+          german: '…',
         },
       ],
       acceptedAnswers: ['Er wird wohl noch schlafen.', 'Er wird wohl noch schlafen'],
@@ -945,8 +944,7 @@ export const chapter064: ChapterDefinition = {
         },
         {
           speaker: 'Mira',
-          german: 'Es wird morgen wahrscheinlich regnen.',
-          english: 'It will probably rain tomorrow.',
+          german: '…',
         },
       ],
       acceptedAnswers: [
@@ -1860,7 +1858,7 @@ export const chapter064: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'A fixed timetable event is normally described with the present tense; c is simple past and d is present perfect, both wrong tenses for a future showing.',
+        'A fixed timetable event is normally described with the present tense; b is grammatical but more formal or announcement-like, c is simple past and d is present perfect, both wrong tenses for a future showing.',
     },
     {
       id: 'ch64-ex-81',
@@ -1891,7 +1889,7 @@ export const chapter064: ChapterDefinition = {
       grammarFocus: ['futur-i', 'assumptions', 'dialogue'],
       instruction:
         'Read the exchange, then choose the option that best completes the final line.',
-      prompt: 'Complete: "Sie ___ wohl noch im Stau stehen."',
+      prompt: "Complete Nora's reply.",
       dialogue: [
         {
           speaker: 'Ben',
@@ -2105,12 +2103,18 @@ export const chapter064: ChapterDefinition = {
       acceptedAnswers: [
         'Sie wird sicher pünktlich kommen.',
         'Sie wird sicher pünktlich kommen',
+        'Sie wird bestimmt pünktlich kommen.',
+        'Sie wird bestimmt pünktlich kommen',
+        'Sie wird sicher pünktlich ankommen.',
+        'Sie wird sicher pünktlich ankommen',
+        'Sie wird bestimmt pünktlich ankommen.',
+        'Sie wird bestimmt pünktlich ankommen',
       ],
       answerMode: 'normalized',
       placeholder: 'Sie wird ...',
       maxLength: 45,
       explanation:
-        'wird + the infinitive kommen at the end, with the adverb sicher inside the bracket: Sie wird sicher pünktlich kommen.',
+        'wird + the infinitive kommen at the end, with the adverb sicher (or bestimmt) inside the bracket: Sie wird sicher pünktlich kommen. ankommen is also accepted.',
     },
     {
       id: 'ch64-ex-94',
@@ -2122,12 +2126,19 @@ export const chapter064: ChapterDefinition = {
       instruction:
         'Translate into German using Futur I with an adverb of probability. Capitalisation and punctuation are checked.',
       prompt: 'He is probably still working.',
-      acceptedAnswers: ['Er wird wohl noch arbeiten.', 'Er wird wohl noch arbeiten'],
+      acceptedAnswers: [
+        'Er wird wohl noch arbeiten.',
+        'Er wird wohl noch arbeiten',
+        'Er wird wahrscheinlich noch arbeiten.',
+        'Er wird wahrscheinlich noch arbeiten',
+        'Er wird vermutlich noch arbeiten.',
+        'Er wird vermutlich noch arbeiten',
+      ],
       answerMode: 'normalized',
       placeholder: 'Er wird ...',
       maxLength: 40,
       explanation:
-        'wird + the infinitive arbeiten at the end, with wohl inside the bracket marking this as a guess about the present: Er wird wohl noch arbeiten.',
+        'wird + the infinitive arbeiten at the end, with wohl inside the bracket marking this as a guess about the present: Er wird wohl noch arbeiten. wahrscheinlich or vermutlich work too.',
     },
     {
       id: 'ch64-ex-95',
@@ -2147,8 +2158,7 @@ export const chapter064: ChapterDefinition = {
         },
         {
           speaker: 'Julia',
-          german: 'Der Zug wird wahrscheinlich Verspätung haben.',
-          english: 'The train will probably be delayed.',
+          german: '…',
         },
       ],
       acceptedAnswers: [

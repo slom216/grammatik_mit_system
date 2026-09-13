@@ -503,7 +503,7 @@ export const chapter036: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['static-verb', 'dative', 'unter'],
       instruction: 'Choose the case that matches the verb.',
-      prompt: 'Die Kinder sitzen ___ Baum. (der Baum)',
+      prompt: 'Die Kinder sitzen unter ___ Baum. (der Baum)',
       options: [
         { id: 'a', text: 'dem' },
         { id: 'b', text: 'den' },
@@ -522,7 +522,7 @@ export const chapter036: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['movement-verb', 'accusative', 'unter'],
       instruction: 'Choose the case that matches the verb.',
-      prompt: 'Setz dich ___ Baum, es ist schattig dort! (der Baum)',
+      prompt: 'Setz dich unter ___ Baum, es ist schattig dort! (der Baum)',
       options: [
         { id: 'a', text: 'dem' },
         { id: 'b', text: 'den' },
@@ -1122,12 +1122,12 @@ export const chapter036: ChapterDefinition = {
       instruction:
         'Complete the phrase with preposition, article and noun. Capitalisation is not checked.',
       prompt: 'Wohin? (an / das Fenster) — Stell die Blumen ___!',
-      acceptedAnswers: ['an das Fenster'],
+      acceptedAnswers: ['an das Fenster', 'ans Fenster'],
       answerMode: 'caseInsensitive',
       placeholder: 'an das Fenster',
       maxLength: 25,
       explanation:
-        'das Fenster in the accusative stays das Fenster; an does not contract with das in this fixed phrase here, so the full form an das Fenster is used (destination, wohin?).',
+        'das Fenster in the accusative stays das Fenster (destination, wohin?). In everyday German an das usually contracts to ans: Stell die Blumen ans Fenster! The full form an das Fenster is also correct.',
     },
     {
       id: 'ch36-ex-47',
@@ -1671,7 +1671,7 @@ export const chapter036: ChapterDefinition = {
       grammarFocus: ['error-correction', 'movement-verb', 'accusative', 'auf'],
       instruction: 'Click the token with the wrong case.',
       prompt: 'Find and fix the mistake.',
-      tokens: ['Ich', 'stelle', 'das', 'Buch', 'auf', 'dem', 'Tisch', '.'],
+      tokens: ['Ich', 'stelle', 'das', 'Buch', 'auf', 'dem', 'Tisch.'],
       errorTokenIndex: 5,
       correction: 'den',
       explanation:
@@ -1686,7 +1686,7 @@ export const chapter036: ChapterDefinition = {
       grammarFocus: ['error-correction', 'static-verb', 'dative', 'auf'],
       instruction: 'Click the token with the wrong case.',
       prompt: 'Find and fix the mistake.',
-      tokens: ['Das', 'Buch', 'liegt', 'auf', 'den', 'Tisch', '.'],
+      tokens: ['Das', 'Buch', 'liegt', 'auf', 'den', 'Tisch.'],
       errorTokenIndex: 4,
       correction: 'dem',
       explanation:
@@ -1701,7 +1701,7 @@ export const chapter036: ChapterDefinition = {
       grammarFocus: ['error-correction', 'movement-verb', 'accusative', 'in'],
       instruction: 'Click the token with the wrong case.',
       prompt: 'Find and fix the mistake.',
-      tokens: ['Wir', 'gehen', 'in', 'dem', 'Supermarkt', '.'],
+      tokens: ['Wir', 'gehen', 'in', 'dem', 'Supermarkt.'],
       errorTokenIndex: 3,
       correction: 'den',
       explanation:
@@ -1716,7 +1716,7 @@ export const chapter036: ChapterDefinition = {
       grammarFocus: ['error-correction', 'static-verb', 'dative', 'in'],
       instruction: 'Click the token with the wrong case.',
       prompt: 'Find and fix the mistake.',
-      tokens: ['Die', 'Kinder', 'spielen', 'in', 'den', 'Garten', '.'],
+      tokens: ['Die', 'Kinder', 'spielen', 'in', 'den', 'Garten.'],
       errorTokenIndex: 4,
       correction: 'dem',
       explanation:
@@ -1731,7 +1731,7 @@ export const chapter036: ChapterDefinition = {
       grammarFocus: ['error-correction', 'movement-verb', 'accusative', 'an'],
       instruction: 'Click the token with the wrong case.',
       prompt: 'Find and fix the mistake.',
-      tokens: ['Wir', 'hängen', 'das', 'Bild', 'an', 'der', 'Wand', '.'],
+      tokens: ['Wir', 'hängen', 'das', 'Bild', 'an', 'der', 'Wand.'],
       errorTokenIndex: 5,
       correction: 'die',
       explanation:
@@ -1746,7 +1746,7 @@ export const chapter036: ChapterDefinition = {
       grammarFocus: ['error-correction', 'static-verb', 'dative', 'an'],
       instruction: 'Click the token with the wrong case.',
       prompt: 'Find and fix the mistake.',
-      tokens: ['Das', 'Bild', 'hängt', 'an', 'die', 'Wand', '.'],
+      tokens: ['Das', 'Bild', 'hängt', 'an', 'die', 'Wand.'],
       errorTokenIndex: 4,
       correction: 'der',
       explanation:
@@ -1761,7 +1761,7 @@ export const chapter036: ChapterDefinition = {
       grammarFocus: ['error-correction', 'movement-verb', 'accusative', 'neben'],
       instruction: 'Click the token with the wrong case.',
       prompt: 'Find and fix the mistake.',
-      tokens: ['Er', 'stellt', 'den', 'Stuhl', 'neben', 'dem', 'Schrank', '.'],
+      tokens: ['Er', 'stellt', 'den', 'Stuhl', 'neben', 'dem', 'Schrank.'],
       errorTokenIndex: 5,
       correction: 'den',
       explanation:
@@ -1776,7 +1776,7 @@ export const chapter036: ChapterDefinition = {
       grammarFocus: ['error-correction', 'static-verb', 'dative', 'neben'],
       instruction: 'Click the token with the wrong case.',
       prompt: 'Find and fix the mistake.',
-      tokens: ['Der', 'Stuhl', 'steht', 'neben', 'den', 'Schrank', '.'],
+      tokens: ['Der', 'Stuhl', 'steht', 'neben', 'den', 'Schrank.'],
       errorTokenIndex: 4,
       correction: 'dem',
       explanation:
@@ -1791,11 +1791,11 @@ export const chapter036: ChapterDefinition = {
       grammarFocus: ['error-correction', 'movement-verb', 'accusative', 'auf'],
       instruction: 'Click the token with the wrong case.',
       prompt: 'Find and fix the mistake.',
-      tokens: ['Die', 'Katze', 'springt', 'auf', 'dem', 'Sofa', '.'],
-      errorTokenIndex: 4,
+      tokens: ['Die', 'Katze', 'springt', 'vom', 'Boden', 'auf', 'dem', 'Sofa.'],
+      errorTokenIndex: 6,
       correction: 'das',
       explanation:
-        'springen describes movement toward a destination (wohin?), so auf takes the accusative das Sofa, not the dative dem Sofa.',
+        'The cat jumps from the floor up onto the sofa: a movement toward a destination (wohin?), so auf takes the accusative das Sofa. (Die Katze springt auf dem Sofa without vom Boden would mean it jumps around on the sofa, which is dative and correct.)',
     },
     {
       id: 'ch36-ex-82',
@@ -1806,7 +1806,7 @@ export const chapter036: ChapterDefinition = {
       grammarFocus: ['error-correction', 'static-verb', 'dative', 'unter'],
       instruction: 'Click the token with the wrong case.',
       prompt: 'Find and fix the mistake.',
-      tokens: ['Der', 'Ball', 'liegt', 'unter', 'den', 'Stuhl', '.'],
+      tokens: ['Der', 'Ball', 'liegt', 'unter', 'den', 'Stuhl.'],
       errorTokenIndex: 4,
       correction: 'dem',
       explanation:

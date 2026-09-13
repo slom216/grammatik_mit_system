@@ -9,7 +9,7 @@ export const chapter023: ChapterDefinition = {
   level: 'A2',
   section: 'pronouns-nouns-articles',
   objective:
-    'Recognize the small group of German verbs — such as helfen, danken, gefallen, gehören, and antworten — that take only a dative object and never an accusative object, and choose the correct dative article or pronoun after them.',
+    'Recognize the small group of German verbs — such as helfen, danken, gefallen, gehören, and antworten — that take their object in the dative where English uses a direct object, and choose the correct dative article or pronoun after them.',
   prerequisites: [18, 21],
   estimatedMinutes: 22,
   tags: [
@@ -24,16 +24,16 @@ export const chapter023: ChapterDefinition = {
   ],
   explanation: {
     introduction: [
-      'A number of very common German verbs take only a dative object and never take an accusative object at all. helfen (to help), danken (to thank), gefallen (to please/to like), gehören (to belong to), and antworten (to answer) are five of the most frequent examples — and there are more you will meet in this chapter, such as glauben, folgen, passen, schmecken, and gratulieren.',
-      'This is different from verbs such as geben (to give), which take both an accusative object (the thing given) and a dative object (the person who receives it). The verbs in this chapter have only one object, and that single object is always in the dative — there is no accusative object anywhere in the sentence.',
+      'A number of very common German verbs take their object in the dative, even though English treats it as a direct object. helfen (to help), danken (to thank), gefallen (to please/to like), gehören (to belong to), and antworten (to answer) are five of the most frequent examples — and there are more you will meet in this chapter, such as glauben, folgen, passen, schmecken, and gratulieren.',
+      'This is different from verbs such as geben (to give), which take both an accusative object (the thing given) and a dative object (the person who receives it). In the typical sentences of this chapter, the verb has only one object, and that object is in the dative.',
     ],
     rules: [
       {
         id: 'ch23-rule-01',
         heading: 'A group of verbs that take only a dative object',
         paragraphs: [
-          'Verbs like helfen, danken, gefallen, gehören, and antworten never take a direct object in the accusative. Whatever noun phrase or pronoun completes the sentence — the person helped, thanked, pleased, or answered — stands in the dative: Ich helfe dir. Wir danken ihm. Das Auto gehört ihr.',
-          'Compare this with a verb like geben: Ich gebe dir das Buch has an accusative object (das Buch) and a dative object (dir). The verbs in this chapter simply have no accusative object at all — the dative object is the only object in the sentence.',
+          'Verbs like helfen, danken, gefallen, gehören, and antworten do not put the person in the accusative. Whatever noun phrase or pronoun completes the sentence — the person helped, thanked, pleased, or answered — stands in the dative: Ich helfe dir. Wir danken ihm. Das Auto gehört ihr.',
+          'Compare this with a verb like geben: Ich gebe dir das Buch has an accusative object (das Buch) and a dative object (dir). In the sentences of this chapter the dative object is the only object. (A few of these verbs can also take a thing in the accusative: Ich glaube es. Ich glaube dir die Geschichte nicht.)',
         ],
       },
       {
@@ -89,7 +89,7 @@ export const chapter023: ChapterDefinition = {
           ['schmecken', 'to taste good to', 'Der Kuchen schmeckt uns.'],
           ['gratulieren', 'to congratulate', 'Wir gratulieren ihm.'],
         ],
-        note: 'None of these verbs ever takes an accusative object; the dative is the only object they allow.',
+        note: 'The person after these verbs is always in the dative. glauben can also take a thing in the accusative: Das glaube ich nicht.',
       },
       {
         id: 'ch23-table-02',
@@ -212,7 +212,7 @@ export const chapter023: ChapterDefinition = {
       },
     ],
     remember: [
-      'A small group of frequent verbs — helfen, danken, gefallen, gehören, antworten, glauben, folgen, passen, schmecken, gratulieren, and more — take only a dative object and never an accusative object.',
+      'A small group of frequent verbs — helfen, danken, gefallen, gehören, antworten, glauben, folgen, passen, schmecken, gratulieren, and more — take their object in the dative (glauben can also take a thing in the accusative: Ich glaube es).',
       'There is no rule that predicts these verbs from their meaning or spelling; they must be memorized as a group, ideally together with a short example sentence.',
       'The dative object usually marks the person affected by, benefiting from, or reacting to the action, not a physical recipient of a thing being handed over.',
       'English equivalents are often transitive ("help him," "thank her," "believe them"), which tempts learners to use the accusative in German — watch out for this trap and use the dative instead.',
@@ -405,7 +405,7 @@ export const chapter023: ChapterDefinition = {
       grammarFocus: ['glauben', 'dative', 'feminine'],
       instruction:
         'Choose the correct dative article. One option wrongly uses the accusative case.',
-      prompt: 'Er glaubt ___ Geschichte nicht. (die Geschichte = feminine)',
+      prompt: 'Er glaubt ___ Kollegin nicht. (die Kollegin = feminine)',
       options: [
         { id: 'a', text: 'die' },
         { id: 'b', text: 'den' },
@@ -414,7 +414,7 @@ export const chapter023: ChapterDefinition = {
       ],
       correctOptionId: 'c',
       explanation:
-        'glauben (believing a statement) takes the dative; Geschichte is feminine, so the dative article is der.',
+        'glauben (believing a person) takes the dative; Kollegin is feminine, so the dative article is der, not the accusative die.',
     },
     {
       id: 'ch23-ex-11',
@@ -645,7 +645,10 @@ export const chapter023: ChapterDefinition = {
       instruction:
         'Complete the exchange with the correct dative forms. Capitalisation and punctuation are checked.',
       prompt: 'Hilfst du ___ Kollegin? (deine Kollegin) – Ja, ich helfe ___ gern. (sie)',
-      acceptedAnswers: ['Hilfst du deiner Kollegin? – Ja, ich helfe ihr gern.'],
+      acceptedAnswers: [
+        'Hilfst du deiner Kollegin? – Ja, ich helfe ihr gern.',
+        'Hilfst du deiner Kollegin? Ja, ich helfe ihr gern.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Hilfst du ... – Ja, ich helfe ...',
       maxLength: 90,
@@ -1230,7 +1233,7 @@ export const chapter023: ChapterDefinition = {
         },
       ],
       explanation:
-        'glauben, folgen, passen, schmecken and gratulieren all take only a dative object, never an accusative one.',
+        'glauben, folgen, passen, schmecken and gratulieren all take a dative object for the person involved.',
     },
     {
       id: 'ch23-ex-58',
@@ -1268,11 +1271,31 @@ export const chapter023: ChapterDefinition = {
       instruction: 'Match each sentence beginning with a correct dative ending.',
       prompt: 'Match the sentence beginning to its correct dative ending.',
       pairs: [
-        { id: 'ch23-ex-59-p1', left: 'Ich helfe...', right: 'meinem Vater.' },
-        { id: 'ch23-ex-59-p2', left: 'Wir danken...', right: 'unserer Lehrerin.' },
-        { id: 'ch23-ex-59-p3', left: 'Das Auto gehört...', right: 'meiner Schwester.' },
-        { id: 'ch23-ex-59-p4', left: 'Der Rock passt...', right: 'meiner Freundin.' },
-        { id: 'ch23-ex-59-p5', left: 'Wir gratulieren...', right: 'unseren Freunden.' },
+        {
+          id: 'ch23-ex-59-p1',
+          left: 'Ich helfe... (mein Vater)',
+          right: 'meinem Vater.',
+        },
+        {
+          id: 'ch23-ex-59-p2',
+          left: 'Wir danken... (unsere Lehrerin)',
+          right: 'unserer Lehrerin.',
+        },
+        {
+          id: 'ch23-ex-59-p3',
+          left: 'Das Auto gehört... (meine Schwester)',
+          right: 'meiner Schwester.',
+        },
+        {
+          id: 'ch23-ex-59-p4',
+          left: 'Der Rock passt... (meine Freundin)',
+          right: 'meiner Freundin.',
+        },
+        {
+          id: 'ch23-ex-59-p5',
+          left: 'Wir gratulieren... (unsere Freunde)',
+          right: 'unseren Freunden.',
+        },
       ],
       explanation:
         'Each verb requires its object in the dative: meinem Vater (masc.), unserer Lehrerin (fem.), meiner Schwester (fem.), meiner Freundin (fem.), unseren Freunden (plural).',

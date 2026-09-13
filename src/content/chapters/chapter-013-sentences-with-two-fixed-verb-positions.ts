@@ -600,7 +600,10 @@ export const chapter013: ChapterDefinition = {
       instruction:
         'Write the complete sentence. Capitalisation and the full stop are checked.',
       prompt: 'ich – dürfen – heute – nicht – fernsehen',
-      acceptedAnswers: ['Ich darf heute nicht fernsehen.'],
+      acceptedAnswers: [
+        'Ich darf heute nicht fernsehen.',
+        'Heute darf ich nicht fernsehen.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich ...',
       maxLength: 60,
@@ -617,7 +620,11 @@ export const chapter013: ChapterDefinition = {
       instruction:
         'Write the complete sentence. Capitalisation and the full stop are checked.',
       prompt: 'wir – das Zimmer – jeden Samstag – aufräumen',
-      acceptedAnswers: ['Wir räumen das Zimmer jeden Samstag auf.'],
+      acceptedAnswers: [
+        'Wir räumen das Zimmer jeden Samstag auf.',
+        'Wir räumen jeden Samstag das Zimmer auf.',
+        'Jeden Samstag räumen wir das Zimmer auf.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wir ...',
       maxLength: 70,
@@ -634,7 +641,10 @@ export const chapter013: ChapterDefinition = {
       instruction:
         'Write the complete sentence using habe … gesehen. Capitalisation and the full stop are checked.',
       prompt: 'ich – gestern – einen Film – sehen (habe … gesehen)',
-      acceptedAnswers: ['Ich habe gestern einen Film gesehen.'],
+      acceptedAnswers: [
+        'Ich habe gestern einen Film gesehen.',
+        'Gestern habe ich einen Film gesehen.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich habe ...',
       maxLength: 70,
@@ -651,7 +661,7 @@ export const chapter013: ChapterDefinition = {
       instruction:
         'Unscramble the words into a correct sentence. Capitalisation and the full stop are checked.',
       prompt: 'kann / ich / morgen / nicht / kommen',
-      acceptedAnswers: ['Ich kann morgen nicht kommen.'],
+      acceptedAnswers: ['Ich kann morgen nicht kommen.', 'Morgen kann ich nicht kommen.'],
       answerMode: 'normalized',
       placeholder: 'Ich ...',
       maxLength: 60,
@@ -977,7 +987,10 @@ export const chapter013: ChapterDefinition = {
       instruction:
         'Write the complete sentence. Capitalisation and the full stop are checked.',
       prompt: 'wir – wollen – nächstes Jahr – nach Italien – reisen',
-      acceptedAnswers: ['Wir wollen nächstes Jahr nach Italien reisen.'],
+      acceptedAnswers: [
+        'Wir wollen nächstes Jahr nach Italien reisen.',
+        'Nächstes Jahr wollen wir nach Italien reisen.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wir ...',
       maxLength: 70,
@@ -1215,7 +1228,7 @@ export const chapter013: ChapterDefinition = {
         { id: 'ch13-ex53-slot1', correctWord: 'kann' },
         { id: 'ch13-ex53-slot2', correctWord: 'reparieren' },
       ],
-      wordBank: ['kann', 'reparieren', 'repariert', 'muss'],
+      wordBank: ['kann', 'reparieren', 'repariert', 'kannst'],
       explanation:
         'kann is the conjugated modal in position 2, and the infinitive reparieren closes the bracket at the very end: Er kann das Auto nicht reparieren.',
     },
@@ -1274,7 +1287,7 @@ export const chapter013: ChapterDefinition = {
         { id: 'ch13-ex56-slot1', correctWord: 'sollst' },
         { id: 'ch13-ex56-slot2', correctWord: 'unterschreiben' },
       ],
-      wordBank: ['sollst', 'unterschreiben', 'unterschreibst', 'kannst'],
+      wordBank: ['sollst', 'unterschreiben', 'unterschreibst', 'soll'],
       explanation:
         'sollst is the conjugated modal in position 2, and the infinitive unterschreiben closes the bracket at the very end: Du sollst das Formular sofort unterschreiben.',
     },

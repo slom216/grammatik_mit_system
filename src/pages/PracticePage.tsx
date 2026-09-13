@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { Button } from '../components/common/Button';
 import { ChapterUnavailable } from '../components/common/ChapterUnavailable';
@@ -6,6 +6,7 @@ import { LoadingBlock } from '../components/common/LoadingBlock';
 import { Modal } from '../components/common/Modal';
 import { ProgressBar } from '../components/common/ProgressBar';
 import { PracticeExercise } from '../components/practice/PracticeExercise';
+import { useExitConfirmation } from '../components/practice/useExitConfirmation';
 import { StudyTimer } from '../components/progress/StudyTimer';
 import {
   EXERCISE_TYPE_LABELS,
@@ -41,7 +42,7 @@ export function PracticePage() {
   const practice = usePracticeStore();
   const exerciseHistory = useProgressStore((state) => state.exerciseHistory);
   const shuffleOptions = useSettingsStore((state) => state.shuffleOptions);
-  const [exitDialogOpen, setExitDialogOpen] = useState(false);
+  const exit = useExitConfirmation();
 
   const reviewMode = searchParams.get('mode') === 'review';
   const quickMode = searchParams.get('mode') === 'quick';
@@ -163,8 +164,7 @@ export function PracticePage() {
 
   const handleExit = () => {
     // The session stays in storage so it can be resumed from the chapter page.
-    practice.pauseSession();
-    navigate(chapterPath(chapter.number));
+    exit.leave(practice.pauseSession, () => navigate(chapterPath(chapter.number)));
   };
 
   return (
@@ -200,17 +200,17 @@ export function PracticePage() {
         exercise={exercise}
         isLast={isLast}
         onFinish={handleFinish}
-        onExit={() => setExitDialogOpen(true)}
+        onExit={exit.request}
       />
 
       <Modal
-        open={exitDialogOpen}
+        open={exit.open}
         title="Leave this practice session?"
         description="Your answers so far are kept, but the session will not be scored until you finish it."
-        onClose={() => setExitDialogOpen(false)}
+        onClose={exit.stay}
       >
         <div className="row">
-          <Button variant="secondary" onClick={() => setExitDialogOpen(false)}>
+          <Button variant="secondary" onClick={exit.stay}>
             Stay in the session
           </Button>
           <Button variant="danger" onClick={handleExit}>

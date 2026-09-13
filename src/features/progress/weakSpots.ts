@@ -1,4 +1,5 @@
 import type { ExerciseHistory } from '../../schemas/progressSchema';
+import { EXERCISE_LEVELS, EXERCISE_TYPES } from '../../schemas/exerciseSchema';
 
 /**
  * Accuracy per grammar topic, aggregated from the `grammarFocus` tags every
@@ -32,6 +33,67 @@ export interface WeakSpotOptions {
   limit?: number;
 }
 
+// German words whose final "s" is not an English plural.
+const NOT_PLURAL = new Set([
+  'alles',
+  'angesichts',
+  'diesseits',
+  'durchs',
+  'etwas',
+  'jenseits',
+  'links',
+  'nichts',
+  'rechts',
+]);
+
+/**
+ * One key per topic. Content authors spelled the same tag several ways
+ * (`dragToSlots` / `drag-to-slots`, `comma-rule` / `comma-rules`,
+ * `accusative` / `accusative-case`), which split one weakness in two.
+ */
+export function topicKey(tag: string): string {
+  const key = tag
+    .trim()
+    .replace(/([a-z])([A-Z])/g, '$1-$2')
+    .toLowerCase()
+    .replace(/[\s_]+/g, '-')
+    .replace(/^(nominative|accusative|dative|genitive)-case$/, '$1');
+  const last = key.slice(key.lastIndexOf('-') + 1);
+  // ponytail: naive English singular (drop a final "s" on words of 5+ letters, not -ss/-is/-us),
+  // with a stoplist for German words; swap for an explicit alias map if it misfires.
+  return /^[a-z]{3,}[^isu]s$/.test(last) && !NOT_PLURAL.has(last)
+    ? key.slice(0, -1)
+    : key;
+}
+
+/**
+ * Tags that name an exercise format or difficulty rather than grammar, so they
+ * never rank as a topic. Compared by `topicKey`.
+ */
+const NON_TOPIC_TAGS = new Set(
+  [
+    ...EXERCISE_TYPES,
+    ...EXERCISE_LEVELS,
+    'error-spotting',
+    'spot-the-error',
+    'error-recognition',
+    'common-mistakes',
+    'sentence-order',
+    'sentence-production',
+    'fill-in',
+    'fill-in-the-blank',
+    'translation',
+    'dialogue',
+    'sorting',
+    'choice',
+    'mixed-review',
+  ].map(topicKey),
+);
+
+export function isTopicTag(tag: string): boolean {
+  return !NON_TOPIC_TAGS.has(topicKey(tag));
+}
+
 export function humanizeTag(tag: string): string {
   const spaced = tag.replace(/-/g, ' ');
   return spaced.charAt(0).toUpperCase() + spaced.slice(1);
@@ -52,7 +114,9 @@ export function selectWeakSpots(
 
   for (const history of Object.values(exerciseHistory)) {
     if (history.timesAnswered === 0) continue;
-    for (const tag of history.grammarFocus) {
+    // A Set, so two spellings of one topic on the same exercise count once.
+    const tags = new Set(history.grammarFocus.filter(isTopicTag).map(topicKey));
+    for (const tag of tags) {
       const entry = byTag.get(tag) ?? { answered: 0, correct: 0, chapters: new Set() };
       entry.answered += history.timesAnswered;
       entry.correct += history.timesCorrect;

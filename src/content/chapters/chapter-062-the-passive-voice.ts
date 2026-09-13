@@ -36,7 +36,7 @@ export const chapter062: ChapterDefinition = {
         paragraphs: [
           'Aktiv and Passiv describe the same event from two different angles. In the active voice, the grammatical subject performs the action: Der Techniker repariert den Computer. (The technician repairs the computer — the technician is doing something.) In the passive voice, the same event is reported from the point of view of what is affected: Der Computer wird repariert. (The computer is being repaired — the computer is having something done to it.)',
           'German reaches for the passive constantly wherever the process or the result matters more than the identity of whoever is responsible: instructions ("Der Antrag wird online eingereicht."), workplace routines ("Die Berichte werden montags abgegeben."), or news and science ("Das Medikament wird in mehreren Ländern getestet."). None of these sentences needs to name a specific person to be complete and natural.',
-          'Not every verb can form this kind of passive. Only transitive verbs — verbs that take a direct object in the accusative — qualify, because it is precisely that accusative object which moves into the new subject position. A verb like schlafen (to sleep), which has no accusative object at all, simply has nothing to promote, so it cannot be turned into this kind of passive sentence.',
+          'The passive with a new subject needs a transitive verb — a verb with a direct object in the accusative — because it is precisely that accusative object which moves into the subject position. A verb like schlafen or helfen has no accusative object to promote, but it can still form an impersonal passive with no subject at all: Hier wird nicht geschlafen. (No sleeping here.) Mir wird geholfen. (I am being helped.) This chapter practises the passive with a subject.',
         ],
       },
       {
@@ -64,7 +64,7 @@ export const chapter062: ChapterDefinition = {
         paragraphs: [
           'When it is useful to say who or what is responsible for the action, German adds an agent phrase. von + dative names a personal or animate agent — someone consciously carrying out the action: Das Auto wird von meinem Bruder repariert. (The car is being repaired by my brother.) Der Krankenwagen wird von der Nachbarin gerufen. (The ambulance is being called by the neighbor.)',
           'durch + accusative marks an impersonal means or cause rather than a deliberate agent — something that brings about the result without acting on purpose: Die Tür wird durch den Wind geöffnet. (The door is opened by the wind.) Der Fehler wird durch einen Test gefunden. (The mistake is found through a test.)',
-          'Choosing between them is a question of what kind of "doer" you are naming, not a free stylistic choice: a person or animal deliberately acting takes von + dative; weather, natural forces, accidents, and impersonal methods take durch + accusative.',
+          'Choosing between them depends on what kind of "doer" you are naming: a person or animal deliberately acting normally takes von + dative; weather, natural forces, accidents, and impersonal methods take durch + accusative. durch + person is possible when the person is only a go-between or means (Die Nachricht wurde durch einen Boten überbracht.), but for the one actually doing the action, use von.',
         ],
       },
       {
@@ -308,13 +308,13 @@ export const chapter062: ChapterDefinition = {
         incorrect: 'Das Auto wird durch meinem Bruder repariert.',
         correct: 'Das Auto wird von meinem Bruder repariert.',
         explanation:
-          'A personal agent deliberately performing the action takes von + dative, not durch; durch is reserved for impersonal means or causes.',
+          'durch never takes the dative (meinem), and a person deliberately performing the action is named with von + dative: von meinem Bruder.',
       },
       {
-        incorrect: 'Der Fehler wird durch den Techniker gefunden.',
+        incorrect: 'Der Fehler wird von den Techniker gefunden.',
         correct: 'Der Fehler wird von dem Techniker gefunden.',
         explanation:
-          'Der Techniker is a person deliberately performing the action, so the agent phrase needs von + dative, not durch + accusative, which marks impersonal means or causes instead.',
+          'von always takes the dative: von dem Techniker, or contracted vom Techniker. den Techniker is accusative.',
       },
       {
         incorrect: 'Der Bericht geschrieben wird.',
@@ -327,9 +327,9 @@ export const chapter062: ChapterDefinition = {
       'Present passive = a conjugated form of werden (position 2) + the past participle of the main verb (clause-final): Das Auto wird repariert.',
       'werden conjugates irregularly in du and er/sie/es: du wirst, er/sie/es wird — never "werdest" or "werdet" for these persons.',
       'The direct object (accusative) of the active sentence becomes the subject (nominative) of the passive sentence, and the verb agrees with this new subject.',
-      'Add an agent phrase only when it matters: von + dative for a person deliberately performing the action, durch + accusative for an impersonal means or cause.',
+      'Add an agent phrase only when it matters: von + dative (von dem / vom) for a person deliberately performing the action, durch + accusative for an impersonal means or cause.',
       'Most authentic German passive sentences omit the agent altogether — this is the norm, not the exception, whenever the doer is unknown, unimportant, or obvious.',
-      'Only transitive verbs (verbs with an accusative object) can form this kind of passive, because it is exactly that object which becomes the new subject.',
+      'A passive with a subject needs a verb with an accusative object, because that object becomes the new subject. Other verbs can still form an impersonal passive without a subject (Hier wird nicht geschlafen. Mir wird geholfen.).',
       'This werden-passive (Vorgangspassiv) always describes a process in progress; it never simply reports that something is already in a finished state.',
     ],
   },
@@ -1178,13 +1178,13 @@ export const chapter062: ChapterDefinition = {
       prompt: 'Der Schlüssel wird ___ den Nachbarn gefunden.',
       options: [
         { id: 'a', text: 'von' },
-        { id: 'b', text: 'durch' },
+        { id: 'b', text: 'aus' },
         { id: 'c', text: 'bei' },
         { id: 'd', text: 'mit' },
       ],
       correctOptionId: 'a',
       explanation:
-        'der Nachbar is a person, so the agent phrase takes von + dative (den Nachbarn), not durch, which is reserved for impersonal means or causes.',
+        'der Nachbar is a person doing the finding, so the agent phrase takes von + dative (den Nachbarn); aus, bei and mit do not name an agent.',
     },
     {
       id: 'ch62-ex-46',
@@ -1376,12 +1376,14 @@ export const chapter062: ChapterDefinition = {
       acceptedAnswers: [
         'Die Flasche wird von dem Kellner geöffnet.',
         'Die Flasche wird von dem Kellner geöffnet',
+        'Die Flasche wird vom Kellner geöffnet.',
+        'Die Flasche wird vom Kellner geöffnet',
       ],
       answerMode: 'normalized',
       placeholder: 'Die Flasche wird von dem Kellner geöffnet.',
       maxLength: 55,
       explanation:
-        'die Flasche becomes the subject; von dem Kellner (dative) names the personal agent; geöffnet takes a linking -e- after the stem öffn-.',
+        'die Flasche becomes the subject; von dem Kellner (dative) names the personal agent (vom Kellner is the usual contraction); geöffnet takes a linking -e- after the stem öffn-.',
     },
     {
       id: 'ch62-ex-57',
@@ -1913,14 +1915,14 @@ export const chapter062: ChapterDefinition = {
       order: 82,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['passive-voice', 'werden-vs-sein', 'common-mistakes'],
+      grammarFocus: ['passive-voice', 'werden-conjugation', 'common-mistakes'],
       instruction: 'Find the incorrect word and give its correction.',
-      prompt: 'Das Auto ist repariert.',
-      tokens: ['Das', 'Auto', 'ist', 'repariert.'],
+      prompt: 'Das Auto werden gerade repariert.',
+      tokens: ['Das', 'Auto', 'werden', 'gerade', 'repariert.'],
       errorTokenIndex: 2,
       correction: 'wird',
       explanation:
-        'The Vorgangspassiv (a process in progress) is built with werden, not sein; "ist repariert" describes a resulting state instead, which is a different construction not covered here.',
+        'werden agrees with the singular subject das Auto: Das Auto wird gerade repariert. (Das Auto ist repariert. is also correct, but it describes the finished state, not the process.)',
     },
     {
       id: 'ch62-ex-83',

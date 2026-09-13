@@ -215,8 +215,8 @@ export const chapter079: ChapterDefinition = {
     ],
     commonMistakes: [
       {
-        incorrect: 'Ich lerne Deutsch, um mein Bruder in Deutschland studiert.',
-        correct: 'Ich lerne Deutsch, damit mein Bruder in Deutschland studiert.',
+        incorrect: 'Ich schreibe die Adresse auf, um mein Bruder uns findet.',
+        correct: 'Ich schreibe die Adresse auf, damit mein Bruder uns findet.',
         explanation:
           'The subjects differ (ich vs. mein Bruder), so um ... zu is ungrammatical here — it has no slot for a second subject. damit introduces a full clause with its own subject and finite verb.',
       },
@@ -509,25 +509,25 @@ export const chapter079: ChapterDefinition = {
       grammarFocus: ['different-subject', 'error-correction'],
       instruction: 'This sentence is ungrammatical. Choose the correct version.',
       prompt:
-        'Falsch: "Ich lerne Deutsch, um mein Bruder in Deutschland studiert." Was ist richtig?',
+        'Falsch: "Ich schreibe die Adresse auf, um mein Bruder uns findet." Was ist richtig?',
       options: [
         {
           id: 'a',
-          text: 'Ich lerne Deutsch, um mein Bruder in Deutschland zu studieren.',
+          text: 'Ich schreibe die Adresse auf, um mein Bruder uns zu finden.',
         },
         {
           id: 'b',
-          text: 'Ich lerne Deutsch, damit mein Bruder in Deutschland studiert.',
+          text: 'Ich schreibe die Adresse auf, damit mein Bruder uns findet.',
         },
-        { id: 'c', text: 'Ich lerne Deutsch, um mein Bruder in Deutschland studieren.' },
+        { id: 'c', text: 'Ich schreibe die Adresse auf, um mein Bruder uns finden.' },
         {
           id: 'd',
-          text: 'Ich lerne Deutsch, damit mein Bruder in Deutschland zu studieren.',
+          text: 'Ich schreibe die Adresse auf, damit mein Bruder uns zu finden.',
         },
       ],
       correctOptionId: 'b',
       explanation:
-        'The subjects differ (ich vs. mein Bruder), so um ... zu is impossible; damit introduces a full clause with its own subject and finite verb studiert.',
+        'The subjects differ (ich vs. mein Bruder), so um ... zu is impossible; damit introduces a full clause with its own subject and finite verb findet.',
     },
     {
       id: 'ch79-ex-13',
@@ -670,7 +670,10 @@ export const chapter079: ChapterDefinition = {
       instruction:
         'Combine the two sentences with um ... zu. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich rufe dich an. + Ich sage dir Bescheid. (um ... zu)',
-      acceptedAnswers: ['Ich rufe dich an, um dir Bescheid zu sagen.'],
+      acceptedAnswers: [
+        'Ich rufe dich an, um dir Bescheid zu sagen.',
+        'Um dir Bescheid zu sagen, rufe ich dich an.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich rufe dich an, um ...',
       maxLength: 60,
@@ -687,7 +690,10 @@ export const chapter079: ChapterDefinition = {
       instruction:
         'Combine the two sentences with damit. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich flüstere. + Die Kinder wachen nicht auf. (damit)',
-      acceptedAnswers: ['Ich flüstere, damit die Kinder nicht aufwachen.'],
+      acceptedAnswers: [
+        'Ich flüstere, damit die Kinder nicht aufwachen.',
+        'Damit die Kinder nicht aufwachen, flüstere ich.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich flüstere, damit ...',
       maxLength: 60,
@@ -704,7 +710,10 @@ export const chapter079: ChapterDefinition = {
       instruction:
         'Combine the two sentences with um ... zu, negated. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich beeile mich. + Ich verpasse den Bus nicht. (um ... zu)',
-      acceptedAnswers: ['Ich beeile mich, um den Bus nicht zu verpassen.'],
+      acceptedAnswers: [
+        'Ich beeile mich, um den Bus nicht zu verpassen.',
+        'Um den Bus nicht zu verpassen, beeile ich mich.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich beeile mich, um ...',
       maxLength: 60,
@@ -721,7 +730,11 @@ export const chapter079: ChapterDefinition = {
       instruction:
         'Combine the two sentences with damit, negated. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Wir schließen die Tür. + Die Katze geht nicht raus. (damit)',
-      acceptedAnswers: ['Wir schließen die Tür, damit die Katze nicht rausgeht.'],
+      acceptedAnswers: [
+        'Wir schließen die Tür, damit die Katze nicht rausgeht.',
+        'Damit die Katze nicht rausgeht, schließen wir die Tür.',
+        'Wir schließen die Tür, damit die Katze nicht herausgeht.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wir schließen die Tür, damit ...',
       maxLength: 60,
@@ -738,7 +751,10 @@ export const chapter079: ChapterDefinition = {
       instruction:
         'Combine the two sentences with um ... zu. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich gehe in die Stadt. + Ich kaufe ein. (um ... zu)',
-      acceptedAnswers: ['Ich gehe in die Stadt, um einzukaufen.'],
+      acceptedAnswers: [
+        'Ich gehe in die Stadt, um einzukaufen.',
+        'Um einzukaufen, gehe ich in die Stadt.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich gehe in die Stadt, um ...',
       maxLength: 50,
@@ -800,7 +816,7 @@ export const chapter079: ChapterDefinition = {
           english: 'I am opening the window ___',
         },
       ],
-      prompt: 'Ich mache das Fenster auf, ___. (frische Luft / bekommen, um ... zu)',
+      prompt: "Lea's missing words: (frische Luft / bekommen, um ... zu)",
       acceptedAnswers: ['um frische Luft zu bekommen'],
       answerMode: 'caseInsensitive',
       placeholder: 'um frische Luft zu bekommen',
@@ -818,7 +834,10 @@ export const chapter079: ChapterDefinition = {
       instruction:
         'Combine the two sentences with damit. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Der Lehrer spricht laut. + Alle Schüler können ihn hören. (damit)',
-      acceptedAnswers: ['Der Lehrer spricht laut, damit alle Schüler ihn hören können.'],
+      acceptedAnswers: [
+        'Der Lehrer spricht laut, damit alle Schüler ihn hören können.',
+        'Damit alle Schüler ihn hören können, spricht der Lehrer laut.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Der Lehrer spricht laut, damit ...',
       maxLength: 70,
@@ -1303,7 +1322,10 @@ export const chapter079: ChapterDefinition = {
       instruction:
         'Combine the two sentences with um ... zu. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Wir stehen früh auf. + Wir kommen rechtzeitig an. (um ... zu)',
-      acceptedAnswers: ['Wir stehen früh auf, um rechtzeitig anzukommen.'],
+      acceptedAnswers: [
+        'Wir stehen früh auf, um rechtzeitig anzukommen.',
+        'Um rechtzeitig anzukommen, stehen wir früh auf.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wir stehen früh auf, um ...',
       maxLength: 60,
@@ -1322,6 +1344,7 @@ export const chapter079: ChapterDefinition = {
       prompt: 'Der Arzt schreibt es auf. + Der Patient kann es später lesen. (damit)',
       acceptedAnswers: [
         'Der Arzt schreibt es auf, damit der Patient es später lesen kann.',
+        'Damit der Patient es später lesen kann, schreibt der Arzt es auf.',
       ],
       answerMode: 'normalized',
       placeholder: 'Der Arzt schreibt es auf, damit ...',
@@ -1339,7 +1362,10 @@ export const chapter079: ChapterDefinition = {
       instruction:
         'Combine the two sentences with um ... zu, negated. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Sie schaltet ihr Handy aus. + Sie wird nicht gestört. (um ... zu)',
-      acceptedAnswers: ['Sie schaltet ihr Handy aus, um nicht gestört zu werden.'],
+      acceptedAnswers: [
+        'Sie schaltet ihr Handy aus, um nicht gestört zu werden.',
+        'Um nicht gestört zu werden, schaltet sie ihr Handy aus.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Sie schaltet ihr Handy aus, um ...',
       maxLength: 60,
@@ -1356,7 +1382,10 @@ export const chapter079: ChapterDefinition = {
       instruction:
         'Combine the two sentences with damit, negated. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Er flüstert. + Die Kinder wachen nicht auf. (damit)',
-      acceptedAnswers: ['Er flüstert, damit die Kinder nicht aufwachen.'],
+      acceptedAnswers: [
+        'Er flüstert, damit die Kinder nicht aufwachen.',
+        'Damit die Kinder nicht aufwachen, flüstert er.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Er flüstert, damit ...',
       maxLength: 60,
@@ -1421,7 +1450,7 @@ export const chapter079: ChapterDefinition = {
           english: 'I am taking a break now ___',
         },
       ],
-      prompt: 'Ich mache jetzt eine Pause, ___. (mich erholen, um ... zu)',
+      prompt: "Tim's missing words: (mich erholen, um ... zu)",
       acceptedAnswers: ['um mich zu erholen'],
       answerMode: 'caseInsensitive',
       placeholder: 'um mich zu erholen',
@@ -1450,8 +1479,8 @@ export const chapter079: ChapterDefinition = {
           english: 'I repeat the instructions ___',
         },
       ],
-      prompt: 'Ich wiederhole die Anweisungen, ___. (alle / sie verstehen, damit)',
-      acceptedAnswers: ['damit alle sie verstehen'],
+      prompt: "The employee's missing words: (alle / sie verstehen, damit)",
+      acceptedAnswers: ['damit alle sie verstehen', 'damit sie alle verstehen'],
       answerMode: 'caseInsensitive',
       placeholder: 'damit alle sie verstehen',
       maxLength: 40,
@@ -1468,7 +1497,10 @@ export const chapter079: ChapterDefinition = {
       instruction:
         'Combine the two sentences with um ... zu, negated. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Sie kauft nichts Süßes. + Sie hat kein schlechtes Gewissen. (um ... zu)',
-      acceptedAnswers: ['Sie kauft nichts Süßes, um kein schlechtes Gewissen zu haben.'],
+      acceptedAnswers: [
+        'Sie kauft nichts Süßes, um kein schlechtes Gewissen zu haben.',
+        'Um kein schlechtes Gewissen zu haben, kauft sie nichts Süßes.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Sie kauft nichts Süßes, um ...',
       maxLength: 70,
@@ -1782,7 +1814,7 @@ export const chapter079: ChapterDefinition = {
       prompt: 'Wir schließen die Tür, damit die Katze nicht ___.',
       templateParts: ['Wir schließen die Tür, damit die Katze nicht ', '.'],
       slots: [{ id: 'slot1', correctWord: 'rausgeht' }],
-      wordBank: ['rausgeht', 'rausgeh', 'geht raus', 'herausgeht'],
+      wordBank: ['rausgeht', 'rausgeh', 'geht raus', 'rauszugehen'],
       explanation:
         'The separable verb rausgehen joins as one conjugated word, rausgeht, at the very end of the clause.',
     },
@@ -2007,12 +2039,21 @@ export const chapter079: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['error-correction', 'um-zu', 'stated-subject'],
       instruction: 'Find the token that makes this sentence ungrammatical.',
-      prompt: 'Wir sparen Geld, um wir in den Urlaub fahren.',
-      tokens: ['Wir', 'sparen', 'Geld,', 'um', 'wir', 'in', 'den', 'Urlaub', 'fahren.'],
+      prompt: 'Wir sparen Geld, um unsere Kinder studieren können.',
+      tokens: [
+        'Wir',
+        'sparen',
+        'Geld,',
+        'um',
+        'unsere',
+        'Kinder',
+        'studieren',
+        'können.',
+      ],
       errorTokenIndex: 3,
       correction: 'damit',
       explanation:
-        'um ... zu can never introduce a clause with its own subject; since a subject (wir) follows, the connector must be damit instead.',
+        'The subjects differ (wir vs. unsere Kinder), and um ... zu can never introduce a clause with its own subject, so the connector must be damit.',
     },
     {
       id: 'ch79-ex-87',

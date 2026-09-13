@@ -1,10 +1,10 @@
 import { z } from 'zod';
 import {
-  persistedProgressV4Schema,
   persistedSettingsV1Schema,
   type PersistedProgressV4,
   type PersistedSettingsV1,
 } from '../../schemas/progressSchema';
+import { isNewerProgressVersion, migrateProgress } from './progressPersistence';
 
 export const BACKUP_FORMAT_VERSION = 1;
 
@@ -20,7 +20,7 @@ const backupSchema = z.object({
   format: z.literal('grammatik-mit-system-backup'),
   formatVersion: z.literal(BACKUP_FORMAT_VERSION),
   exportedAt: z.string().min(1),
-  progress: persistedProgressV4Schema,
+  // Progress goes through `migrateProgress`, so older backups upgrade like stored data.
   settings: persistedSettingsV1Schema,
 });
 
@@ -69,15 +69,25 @@ export function parseBackup(text: string): BackupParseResult {
     };
   }
 
+  const rawProgress = (raw as { progress?: unknown }).progress;
+  if (isNewerProgressVersion(rawProgress)) {
+    return {
+      ok: false,
+      error:
+        'That backup was made by a newer version of this app. Reload the page to update, then import it again.',
+    };
+  }
+
   const parsed = backupSchema.safeParse(raw);
-  if (!parsed.success) {
+  const progress = migrateProgress(rawProgress);
+  if (!parsed.success || !progress) {
     return {
       ok: false,
       error: 'That backup is incomplete or damaged, so nothing was changed.',
     };
   }
 
-  return { ok: true, backup: parsed.data };
+  return { ok: true, backup: { ...parsed.data, progress } };
 }
 
 /** Counts what an import would replace, so the confirmation can be specific. */

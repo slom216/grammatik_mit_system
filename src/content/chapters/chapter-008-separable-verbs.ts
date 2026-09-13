@@ -27,7 +27,8 @@ export const chapter008: ChapterDefinition = {
           'The prefix carries the main stress in speech (AUFstehen, ANrufen) and often changes the meaning of the base verb quite a lot: stehen means "to stand", but aufstehen means "to get up".',
         ],
         notes: [
-          'Not every verb prefix is separable. A small set of prefixes — be-, ge-, er-, ver-, ent-, zer-, emp-, miss- — are inseparable: they are never stressed and they never split off, in any tense. Compare verstehen (to understand) with aufstehen (to get up): only aufstehen splits.',
+          'Not every verb prefix is separable. The core inseparable prefixes are be-, ge-, er-, ver-, ent-, zer-, emp-, miss-; hinter-, wider- and voll- are inseparable in some verbs too (hinterlassen, widersprechen, vollenden). Inseparable prefixes are never stressed and never split off, in any tense. Compare verstehen (to understand) with aufstehen (to get up): only aufstehen splits.',
+          'A few prefixes — durch-, über-, um-, unter- — can be either: separable when stressed (UMsteigen → Ich steige um), inseparable when not (überSETZen → Ich übersetze). You will meet these variable prefixes later.',
         ],
       },
       {
@@ -44,7 +45,7 @@ export const chapter008: ChapterDefinition = {
         heading: 'The infinitive stays one word',
         paragraphs: [
           'In the infinitive — and in dictionary entries, vocabulary lists, and verb lists — the prefix and the base verb are written together as a single word: aufstehen, anrufen, einkaufen, mitkommen, not auf stehen, an rufen, ein kaufen, mit kommen.',
-          'Only in a conjugated main clause does the prefix detach. Whenever the verb is not conjugated — as an infinitive, or as we will see, after a modal verb — it stays attached.',
+          'In the present tense the prefix detaches when the separable verb is the conjugated verb of a main clause (and in commands: Steh auf!). As a plain infinitive — for example after a modal verb — it stays attached. Later you will see that other forms also keep the prefix in front but let something slip in between: aufzustehen, aufgestanden.',
         ],
       },
       {
@@ -87,7 +88,7 @@ export const chapter008: ChapterDefinition = {
           ],
           [
             'Inseparable (never splits)',
-            'be-, ge-, er-, ver-, ent-, zer-, emp-, miss-',
+            'be-, ge-, er-, ver-, ent-, zer-, emp-, miss- (also hinter-, wider-, voll- in some verbs)',
             'verstehen → Ich verstehe das.',
           ],
         ],
@@ -200,7 +201,7 @@ export const chapter008: ChapterDefinition = {
     remember: [
       'Separable prefixes (an-, auf-, aus-, ein-, mit-, vor-, weg-, zu-, zurück-, and more) move to the very end of a main clause; the conjugated stem stays in position 2 (or moves to the front in a yes/no question).',
       'In the infinitive and in dictionaries, prefix and verb are written as one word: aufstehen, anrufen, einkaufen.',
-      'Inseparable prefixes (be-, ge-, er-, ver-, ent-, zer-, emp-, miss-) never split off, in any tense — compare verstehen with aufstehen.',
+      'Inseparable prefixes (be-, ge-, er-, ver-, ent-, zer-, emp-, miss-, and in some verbs hinter-, wider-, voll-) never split off, in any tense — compare verstehen with aufstehen.',
       'With a modal verb, the separable verb is not conjugated: it stays whole, in the infinitive, at the end of the clause — Ich muss früh aufstehen.',
     ],
   },
@@ -299,7 +300,7 @@ export const chapter008: ChapterDefinition = {
       options: [
         { id: 'a', text: 'Kommst du heute Abend mit?' },
         { id: 'b', text: 'Kommst du mit heute Abend?' },
-        { id: 'c', text: 'Du kommst heute Abend mit?' },
+        { id: 'c', text: 'Kommst mit du heute Abend?' },
         { id: 'd', text: 'Mitkommst du heute Abend?' },
       ],
       correctOptionId: 'a',
@@ -541,7 +542,11 @@ export const chapter008: ChapterDefinition = {
       instruction:
         'Write the complete sentence. Capitalisation and the full stop are checked.',
       prompt: 'ich – heute – meine Mutter – anrufen',
-      acceptedAnswers: ['Ich rufe heute meine Mutter an.'],
+      acceptedAnswers: [
+        'Ich rufe heute meine Mutter an.',
+        'Ich rufe meine Mutter heute an.',
+        'Heute rufe ich meine Mutter an.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich ...',
       maxLength: 80,
@@ -558,7 +563,10 @@ export const chapter008: ChapterDefinition = {
       instruction:
         'Write the complete sentence. Capitalisation and the full stop are checked.',
       prompt: 'wir – am Sonntag – spät – aufstehen',
-      acceptedAnswers: ['Wir stehen am Sonntag spät auf.'],
+      acceptedAnswers: [
+        'Wir stehen am Sonntag spät auf.',
+        'Am Sonntag stehen wir spät auf.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wir ...',
       maxLength: 80,
@@ -717,7 +725,7 @@ export const chapter008: ChapterDefinition = {
       options: [
         { id: 'a', text: 'Holst du die Kinder heute ab?' },
         { id: 'b', text: 'Holst du ab die Kinder heute?' },
-        { id: 'c', text: 'Du holst die Kinder heute ab?' },
+        { id: 'c', text: 'Holst ab du die Kinder heute?' },
         { id: 'd', text: 'Abholst du die Kinder heute?' },
       ],
       correctOptionId: 'a',
@@ -904,7 +912,11 @@ export const chapter008: ChapterDefinition = {
       instruction:
         'Write the complete sentence. Capitalisation and the full stop are checked.',
       prompt: 'ich – heute – meine Freunde – einladen',
-      acceptedAnswers: ['Ich lade heute meine Freunde ein.'],
+      acceptedAnswers: [
+        'Ich lade heute meine Freunde ein.',
+        'Ich lade meine Freunde heute ein.',
+        'Heute lade ich meine Freunde ein.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich ...',
       maxLength: 80,
@@ -1010,7 +1022,7 @@ export const chapter008: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['separable-verbs', 'modal-verbs'],
       instruction: 'Arrange the segments to form a correct statement.',
-      prompt: 'Tell someone that you want to watch TV tonight.',
+      prompt: 'Tell someone that you and your partner (wir) want to watch TV tonight.',
       segments: [
         { id: 'ch08-ex46-s1', text: 'Wir' },
         { id: 'ch08-ex46-s2', text: 'wollen' },

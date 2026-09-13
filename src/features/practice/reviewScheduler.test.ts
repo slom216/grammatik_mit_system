@@ -14,9 +14,13 @@ import type { ExerciseHistory } from '../../schemas/progressSchema';
 
 const now = new Date('2026-03-01T10:00:00.000Z');
 
+/** Calendar days from `from`'s day to the day `iso` falls on. */
 function daysBetween(from: Date, iso: string | undefined): number {
   if (!iso) return Number.NaN;
-  return Math.round((new Date(iso).getTime() - from.getTime()) / (24 * 60 * 60 * 1000));
+  const start = addDays(from, 0).getTime();
+  return Math.round(
+    (addDays(new Date(iso), 0).getTime() - start) / (24 * 60 * 60 * 1000),
+  );
 }
 
 describe('scheduleNextReview', () => {
@@ -94,15 +98,32 @@ describe('scheduleNextReview', () => {
     );
   });
 
-  it('queues an exercise that needed a second attempt', () => {
+  // The first attempt failed, so it takes the 1-day step like a wrong answer.
+  it('queues an exercise that needed a second attempt for tomorrow', () => {
     const history = scheduleNextReview({
       exerciseId: 'e1',
       chapterNumber: 1,
       outcome: 'correctSecondAttempt',
       now,
     });
-    expect(daysBetween(now, history.dueAt)).toBe(3);
-    expect(history.stage).toBe('review1');
+    expect(daysBetween(now, history.dueAt)).toBe(1);
+    expect(history.stage).toBe('learning');
+    expect(history.timesCorrect).toBe(1);
+  });
+
+  it('is due from the start of the next local day, not 24 hours later', () => {
+    const evening = new Date(2026, 2, 1, 21, 0, 0);
+    const history = scheduleNextReview({
+      exerciseId: 'e1',
+      chapterNumber: 1,
+      outcome: 'incorrect',
+      now: evening,
+    });
+    expect(new Date(history.dueAt ?? '').getTime()).toBe(
+      new Date(2026, 2, 2, 0, 0, 0).getTime(),
+    );
+    expect(isDue(history, new Date(2026, 2, 1, 23, 59, 0))).toBe(false);
+    expect(isDue(history, new Date(2026, 2, 2, 8, 0, 0))).toBe(true);
   });
 
   it('schedules a wrong answer for the next day', () => {
@@ -157,7 +178,7 @@ describe('scheduleNextReview', () => {
     history = scheduleNextReview({
       exerciseId: 'e1',
       chapterNumber: 1,
-      outcome: 'correctSecondAttempt',
+      outcome: 'correctFirstAttempt',
       now,
       previous: history,
     });
@@ -229,6 +250,16 @@ describe('isDue', () => {
     };
     expect(isDue(history, now)).toBe(false);
     expect(isPending(history, now)).toBe(true);
+  });
+
+  // Older versions stored exact timestamps; those turn due at that day's midnight.
+  it('treats a stored exact timestamp as due from the start of its day', () => {
+    const history: ExerciseHistory = {
+      ...createHistory('e1', 1),
+      dueAt: new Date(2026, 2, 2, 21, 0, 0).toISOString(),
+    };
+    expect(isDue(history, new Date(2026, 2, 2, 8, 0, 0))).toBe(true);
+    expect(isDue(history, new Date(2026, 2, 1, 23, 0, 0))).toBe(false);
   });
 
   it('is never due without a date', () => {

@@ -419,10 +419,9 @@ export const chapter044: ChapterDefinition = {
         {
           speaker: 'Paul',
           german: 'Nein, ich gehe nicht ins Kino, ___ ins Theater.',
-          english: "No, I'm not going to the cinema, ... to the theater.",
         },
       ],
-      prompt: 'Nein, ich gehe nicht ins Kino, ___ ins Theater.',
+      prompt: 'Paul means: "No, I\'m not going to the cinema, ... to the theater."',
       options: [
         { id: 'a', text: 'sondern' },
         { id: 'b', text: 'aber' },
@@ -446,10 +445,10 @@ export const chapter044: ChapterDefinition = {
           speaker: 'Jonas',
           german:
             'Er war nicht besonders spannend, ___ die Schauspieler waren wirklich gut.',
-          english: "It wasn't especially exciting, ... the actors were really good.",
         },
       ],
-      prompt: 'Er war nicht besonders spannend, ___ die Schauspieler waren wirklich gut.',
+      prompt:
+        'Jonas means: "It wasn\'t especially exciting, ... the actors were really good."',
       options: [
         { id: 'a', text: 'aber' },
         { id: 'b', text: 'sondern' },
@@ -510,10 +509,9 @@ export const chapter044: ChapterDefinition = {
         {
           speaker: 'Kundin',
           german: 'Nein, ich möchte nicht die rote, ___ die blaue Jacke.',
-          english: "No, I don't want the red one, ... the blue jacket.",
         },
       ],
-      prompt: 'Nein, ich möchte nicht die rote, ___ die blaue Jacke.',
+      prompt: 'Kundin means: "No, I don\'t want the red one, ... the blue jacket."',
       acceptedAnswers: ['sondern'],
       answerMode: 'caseInsensitive',
       placeholder: 'sondern/aber',
@@ -691,12 +689,15 @@ export const chapter044: ChapterDefinition = {
       instruction:
         'Combine the two sentences with und. Keep the subject where it is grammatically required. Capitalisation and punctuation are checked.',
       prompt: 'Ich gehe heute ins Kino. Danach besuche ich meine Oma.',
-      acceptedAnswers: ['Ich gehe heute ins Kino und danach besuche ich meine Oma.'],
+      acceptedAnswers: [
+        'Ich gehe heute ins Kino und danach besuche ich meine Oma.',
+        'Ich gehe heute ins Kino, und danach besuche ich meine Oma.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich gehe heute ins Kino und danach ...',
       maxLength: 70,
       explanation:
-        'Here "danach" takes first position in the second clause, so the shared subject ich cannot be dropped — it must stay and moves after the verb, unlike when the shared subject itself would be first.',
+        'Here "danach" takes first position in the second clause, so the shared subject ich cannot be dropped — it must stay and moves after the verb, unlike when the shared subject itself would be first. The comma before und is optional between two main clauses.',
     },
     {
       id: 'ch44-ex-23',
@@ -733,10 +734,10 @@ export const chapter044: ChapterDefinition = {
         {
           speaker: 'Mitarbeiterin',
           german: 'Nein, ich bin noch nicht fertig, ___ ich brauche noch etwas Zeit.',
-          english: "No, I'm not finished yet, ... I still need some time.",
         },
       ],
-      prompt: 'Nein, ich bin noch nicht fertig, ___ ich brauche noch etwas Zeit.',
+      prompt:
+        'Mitarbeiterin means: "No, I\'m not finished yet, ... I still need some time."',
       options: [
         { id: 'a', text: 'denn' },
         { id: 'b', text: 'sondern' },
@@ -847,10 +848,9 @@ export const chapter044: ChapterDefinition = {
         {
           speaker: 'Gast',
           german: 'Nein, ich möchte nicht die Suppe, ___ den Salat.',
-          english: "No, I don't want the soup, ... the salad.",
         },
       ],
-      prompt: 'Nein, ich möchte nicht die Suppe, ___ den Salat.',
+      prompt: 'Gast means: "No, I don\'t want the soup, ... the salad."',
       options: [
         { id: 'a', text: 'sondern' },
         { id: 'b', text: 'aber' },
@@ -932,10 +932,10 @@ export const chapter044: ChapterDefinition = {
           speaker: 'Freundin',
           german:
             'Nein, ich fahre nicht in den Urlaub, ___ ich bleibe zu Hause und arbeite.',
-          english: "No, I'm not going on vacation, ... I'm staying home and working.",
         },
       ],
-      prompt: 'Nein, ich fahre nicht in den Urlaub, ___ ich bleibe zu Hause und arbeite.',
+      prompt:
+        'Freundin means: "No, I\'m not going on vacation, ... I\'m staying home and working."',
       options: [
         { id: 'a', text: 'sondern' },
         { id: 'b', text: 'aber' },
@@ -1036,10 +1036,9 @@ export const chapter044: ChapterDefinition = {
         {
           speaker: 'Kind',
           german: 'Nein, ich esse kein Gemüse mehr, ___ nur noch Obst.',
-          english: "No, I don't eat vegetables anymore, ... only fruit now.",
         },
       ],
-      prompt: 'Nein, ich esse kein Gemüse mehr, ___ nur noch Obst.',
+      prompt: 'Kind means: "No, I don\'t eat vegetables anymore, ... only fruit now."',
       options: [
         { id: 'a', text: 'sondern' },
         { id: 'b', text: 'aber' },
@@ -1160,12 +1159,15 @@ export const chapter044: ChapterDefinition = {
       instruction:
         'Combine the two sentences with und. Keep the subject where it is grammatically required. Capitalisation and punctuation are checked.',
       prompt: 'Ich lese ein Buch. Dann schlafe ich ein.',
-      acceptedAnswers: ['Ich lese ein Buch und dann schlafe ich ein.'],
+      acceptedAnswers: [
+        'Ich lese ein Buch und dann schlafe ich ein.',
+        'Ich lese ein Buch, und dann schlafe ich ein.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich lese ein Buch und dann ...',
       maxLength: 70,
       explanation:
-        '"dann" takes first position in the second clause, so the shared subject ich cannot be dropped — it stays and moves after the verb.',
+        '"dann" takes first position in the second clause, so the shared subject ich cannot be dropped — it stays and moves after the verb. The comma before und is optional between two main clauses.',
     },
     {
       id: 'ch44-ex-46',

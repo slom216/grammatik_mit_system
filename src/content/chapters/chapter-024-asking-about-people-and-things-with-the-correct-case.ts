@@ -225,7 +225,7 @@ export const chapter024: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['wen', 'accusative', 'person'],
       instruction:
-        'Choose the question word that asks about the underlined part of the answer.',
+        'Choose the question word that asks about the missing information in the answer.',
       prompt: 'Ich sehe meinen Bruder. → ___ siehst du?',
       options: [
         { id: 'a', text: 'Wer' },
@@ -245,7 +245,7 @@ export const chapter024: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['wer', 'nominative', 'person'],
       instruction:
-        'Choose the question word that asks about the underlined part of the answer.',
+        'Choose the question word that asks about the missing information in the answer.',
       prompt: 'Meine Schwester kocht heute. → ___ kocht heute?',
       options: [
         { id: 'a', text: 'Wer' },
@@ -265,7 +265,7 @@ export const chapter024: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['wem', 'dative', 'person'],
       instruction:
-        'Choose the question word that asks about the underlined part of the answer.',
+        'Choose the question word that asks about the missing information in the answer.',
       prompt: 'Ich helfe meinem Kollegen. → ___ hilfst du?',
       options: [
         { id: 'a', text: 'Wer' },
@@ -285,7 +285,7 @@ export const chapter024: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['was', 'nominative', 'thing'],
       instruction:
-        'Choose the question word that asks about the underlined part of the answer.',
+        'Choose the question word that asks about the missing information in the answer.',
       prompt: 'Der Kaffee steht auf dem Tisch. → ___ steht auf dem Tisch?',
       options: [
         { id: 'a', text: 'Wer' },
@@ -662,6 +662,7 @@ export const chapter024: ChapterDefinition = {
         '___ triffst du heute? (Freund = person, direct object) – Ich treffe meinen Freund. Und ___ schenkst du die Blumen? (Freundin = person, dative object) – Ich schenke sie meiner Freundin.',
       acceptedAnswers: [
         'Wen triffst du heute? – Ich treffe meinen Freund. Und wem schenkst du die Blumen? – Ich schenke sie meiner Freundin.',
+        'Wen triffst du heute? Ich treffe meinen Freund. Und wem schenkst du die Blumen? Ich schenke sie meiner Freundin.',
       ],
       answerMode: 'normalized',
       placeholder: 'Wen ... – Ich treffe ... Und wem ...',
@@ -678,7 +679,7 @@ export const chapter024: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['wen', 'accusative', 'person'],
       instruction:
-        'Choose the question word that asks about the underlined part of the answer.',
+        'Choose the question word that asks about the missing information in the answer.',
       prompt: 'Ich besuche meine Tante. → ___ besuchst du?',
       options: [
         { id: 'a', text: 'Wer' },
@@ -698,7 +699,7 @@ export const chapter024: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['wem', 'dative', 'person'],
       instruction:
-        'Choose the question word that asks about the underlined part of the answer.',
+        'Choose the question word that asks about the missing information in the answer.',
       prompt: 'Der Film gefällt meinem Vater. → ___ gefällt der Film?',
       options: [
         { id: 'a', text: 'Wer' },
@@ -718,7 +719,7 @@ export const chapter024: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['was', 'accusative', 'thing'],
       instruction:
-        'Choose the question word that asks about the underlined part of the answer.',
+        'Choose the question word that asks about the missing information in the answer.',
       prompt: 'Sie liest ein Buch. → ___ liest sie?',
       options: [
         { id: 'a', text: 'Wer' },
@@ -738,7 +739,7 @@ export const chapter024: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['wer', 'nominative', 'person'],
       instruction:
-        'Choose the question word that asks about the underlined part of the answer.',
+        'Choose the question word that asks about the missing information in the answer.',
       prompt: 'Der Arzt untersucht den Patienten. → ___ untersucht den Patienten?',
       options: [
         { id: 'a', text: 'Wer' },
@@ -873,7 +874,7 @@ export const chapter024: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['was', 'nominative', 'thing'],
       instruction:
-        'Choose the question word that asks about the underlined part of the answer.',
+        'Choose the question word that asks about the missing information in the answer.',
       prompt: 'Der Zug fällt aus. → ___ fällt aus?',
       options: [
         { id: 'a', text: 'Wer' },
@@ -893,7 +894,7 @@ export const chapter024: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['wer', 'nominative', 'person'],
       instruction:
-        'Choose the question word that asks about the underlined part of the answer.',
+        'Choose the question word that asks about the missing information in the answer.',
       prompt: 'Meine Kollegen kommen morgen. → ___ kommt morgen?',
       options: [
         { id: 'a', text: 'Wer' },
@@ -1123,6 +1124,7 @@ export const chapter024: ChapterDefinition = {
         '___ triffst du morgen? (Kollege = person, direct object) – Ich treffe meinen Kollegen. Und ___ gehört das Auto? (Nachbarin = person, dative object) – Es gehört meiner Nachbarin.',
       acceptedAnswers: [
         'Wen triffst du morgen? – Ich treffe meinen Kollegen. Und wem gehört das Auto? – Es gehört meiner Nachbarin.',
+        'Wen triffst du morgen? Ich treffe meinen Kollegen. Und wem gehört das Auto? Es gehört meiner Nachbarin.',
       ],
       answerMode: 'normalized',
       placeholder: 'Wen ... – Ich treffe ... Und wem ...',
@@ -1475,7 +1477,7 @@ export const chapter024: ChapterDefinition = {
         },
         {
           id: 'ch24-ex66-p2',
-          left: 'Der Kellner bringt der Gästin die Rechnung.',
+          left: 'Der Kellner bringt dem Gast die Rechnung.',
           right: 'Wem bringt der Kellner die Rechnung?',
         },
         {
@@ -1624,8 +1626,9 @@ export const chapter024: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['wen', 'accusative', 'person', 'error-correction'],
       instruction: 'Find the question word with the wrong case, and correct it.',
-      prompt: 'Jemand stellt eine falsche Frage. Etwas stimmt nicht.',
-      tokens: ['Was', 'besucht', 'ihr', 'eure', 'Großeltern', 'am', 'Sonntag?'],
+      prompt:
+        'Die Antwort lautet: Wir besuchen am Sonntag unsere Großeltern. Die Frage dazu enthält einen Fehler.',
+      tokens: ['Was', 'besucht', 'ihr', 'am', 'Sonntag?'],
       errorTokenIndex: 0,
       correction: 'Wen',
       explanation:

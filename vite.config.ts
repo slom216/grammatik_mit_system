@@ -1,12 +1,44 @@
 /// <reference types="vitest/config" />
+import { readFileSync } from 'node:fs';
 import { fileURLToPath, URL } from 'node:url';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
+const { version } = JSON.parse(readFileSync('./package.json', 'utf8')) as {
+  version: string;
+};
+// Chunks from an older release are dead weight. The name changes per release,
+// and sw-chapter-cache.js deletes every other chapter cache when the new worker
+// activates. Per release rather than per build: a deploy without a version
+// bump keeps chapters a learner already opened available offline.
+const CHAPTER_CACHE = `chapter-content-${version}`;
+
 export default defineConfig({
   plugins: [
     react(),
+    {
+      name: 'chapter-cache-cleanup',
+      apply: 'build',
+      generateBundle() {
+        this.emitFile({
+          type: 'asset',
+          fileName: 'sw-chapter-cache.js',
+          source: `self.addEventListener('activate', (event) => {
+  event.waitUntil(
+    caches.keys().then((keys) =>
+      Promise.all(
+        keys
+          .filter((key) => key.startsWith('chapter-content') && key !== ${JSON.stringify(CHAPTER_CACHE)})
+          .map((key) => caches.delete(key)),
+      ),
+    ),
+  );
+});
+`,
+        });
+      },
+    },
     VitePWA({
       // A new version waits until the learner reloads. Auto-updating would drop
       // the chunks a running practice session still needs.
@@ -42,13 +74,15 @@ export default defineConfig({
         globIgnores: ['assets/chapters/**'],
         navigateFallback: 'index.html',
         cleanupOutdatedCaches: true,
+        // cleanupOutdatedCaches only covers the precache, not runtime caches.
+        importScripts: ['sw-chapter-cache.js'],
         runtimeCaching: [
           {
             urlPattern: /\/assets\/chapters\/[^/]+\.js$/,
             // Filenames are content-hashed, so a cached chapter is never stale.
             handler: 'CacheFirst',
             options: {
-              cacheName: 'chapter-content',
+              cacheName: CHAPTER_CACHE,
               expiration: { maxEntries: 100 },
               cacheableResponse: { statuses: [0, 200] },
             },

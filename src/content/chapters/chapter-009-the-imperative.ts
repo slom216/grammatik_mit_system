@@ -28,9 +28,10 @@ export const chapter009: ChapterDefinition = {
     rules: [
       {
         id: 'ch09-rule-01',
-        heading: 'The du-imperative: drop -st',
+        heading: 'The du-imperative: the stem of the du-form',
         paragraphs: [
-          'To form the du-imperative, start from the du-form of the present tense and remove the ending -st. The subject pronoun du is also dropped: du kommst → Komm!',
+          'To form the du-imperative, start from the du-form of the present tense and remove the ending -st (or just -t when the stem ends in -s, -ß or -ss: du liest → Lies!, du isst → Iss!). The subject pronoun du is also dropped: du kommst → Komm!',
+          'Many verbs also have a longer form with -e: Komme!, Fahre!, Mache! Both are correct; the short form is more common in speech, the -e form sounds more formal or written. Verbs with an e→i or e→ie change never take this -e (Sprich!, Lies!, not Spreche!).',
           'If the verb stem ends in -d or -t (so that the du-form would end in an awkward consonant cluster), add an -e before dropping the pronoun: du arbeitest → Arbeite!, du wartest → Warte!',
           'Verbs with an e→i or e→ie vowel change in the du-form keep that change in the imperative: du sprichst → Sprich!, du liest → Lies! Verbs with an a→ä change do NOT keep the umlaut in the imperative: du fährst → Fahr! (not Fähr!).',
         ],
@@ -209,7 +210,7 @@ export const chapter009: ChapterDefinition = {
       },
     ],
     remember: [
-      'du-imperative: drop -st (and the pronoun) from the du-form: du kommst → Komm! Add -e after a stem ending in -d/-t; keep e→i/e→ie changes but drop a→ä changes.',
+      'du-imperative: drop -st (just -t after -s/-ß: du liest → Lies!) and the pronoun from the du-form: du kommst → Komm! (Komme! is also correct). Add -e after a stem ending in -d/-t; keep e→i/e→ie changes but drop a→ä changes.',
       'ihr-imperative: use the ihr present-tense form without the pronoun: ihr kommt → Kommt! It never changes its vowel.',
       'Sie-imperative: verb first, then Sie, which is always kept: Kommen Sie!',
       'sein is irregular in all three forms: Sei! / Seid! / Seien Sie! — learn it as its own set, and use bitte plus an exclamation mark or full stop to soften a command.',
@@ -459,7 +460,7 @@ export const chapter009: ChapterDefinition = {
       instruction:
         'Write only the du-imperative form of the verb. Capitalisation is not checked.',
       prompt: 'kommen (du)',
-      acceptedAnswers: ['Komm'],
+      acceptedAnswers: ['Komm', 'Komme'],
       answerMode: 'caseInsensitive',
       placeholder: 'imperative form',
       maxLength: 15,
@@ -491,7 +492,7 @@ export const chapter009: ChapterDefinition = {
       instruction:
         'Write only the du-imperative form of the verb. Capitalisation is not checked.',
       prompt: 'fahren (du)',
-      acceptedAnswers: ['Fahr'],
+      acceptedAnswers: ['Fahr', 'Fahre'],
       answerMode: 'caseInsensitive',
       placeholder: 'imperative form',
       maxLength: 15,
@@ -541,7 +542,12 @@ export const chapter009: ChapterDefinition = {
       instruction:
         'Turn the statement into a command for du. Capitalisation and punctuation are checked.',
       prompt: 'Du machst das Fenster zu.',
-      acceptedAnswers: ['Mach das Fenster zu!', 'Mach das Fenster zu.'],
+      acceptedAnswers: [
+        'Mach das Fenster zu!',
+        'Mach das Fenster zu.',
+        'Mache das Fenster zu!',
+        'Mache das Fenster zu.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Mach ...',
       maxLength: 60,
@@ -642,7 +648,12 @@ export const chapter009: ChapterDefinition = {
       instruction:
         'Correct the sentence: the pronoun does not belong in the imperative. Capitalisation and punctuation are checked.',
       prompt: 'Du komm sofort her!',
-      acceptedAnswers: ['Komm sofort her!', 'Komm sofort her.'],
+      acceptedAnswers: [
+        'Komm sofort her!',
+        'Komm sofort her.',
+        'Komme sofort her!',
+        'Komme sofort her.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Komm ...',
       maxLength: 60,
@@ -834,7 +845,7 @@ export const chapter009: ChapterDefinition = {
       instruction:
         'Write only the du-imperative form of the verb. Capitalisation is not checked.',
       prompt: 'schreiben (du)',
-      acceptedAnswers: ['Schreib'],
+      acceptedAnswers: ['Schreib', 'Schreibe'],
       answerMode: 'caseInsensitive',
       placeholder: 'imperative form',
       maxLength: 15,
@@ -1166,25 +1177,25 @@ export const chapter009: ChapterDefinition = {
       instruction: 'Match each situation to the correctly formed imperative.',
       prompt: 'Match the situation with the correct command.',
       pairs: [
-        { id: 'ch09-ex53-p1', left: 'Talking to a young child', right: 'Sei brav!' },
+        { id: 'ch09-ex53-p1', left: 'Tell a young child to behave', right: 'Sei brav!' },
         {
           id: 'ch09-ex53-p2',
-          left: 'Talking to a group of friends',
+          left: 'Tell a group of friends to be on time',
           right: 'Seid pünktlich!',
         },
         {
           id: 'ch09-ex53-p3',
-          left: 'Talking to a stranger on the street',
+          left: 'Warn a stranger on the street to be careful',
           right: 'Seien Sie vorsichtig!',
         },
         {
           id: 'ch09-ex53-p4',
-          left: 'Talking to a customer in a shop',
+          left: 'Offer a customer in a shop a seat',
           right: 'Nehmen Sie bitte Platz!',
         },
         {
           id: 'ch09-ex53-p5',
-          left: 'Talking to your little brother',
+          left: 'Tell your little brother to come here at once',
           right: 'Komm sofort her!',
         },
       ],

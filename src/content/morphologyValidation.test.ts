@@ -43,11 +43,11 @@ describe('synthesizeSimplePast / isValidSimplePastForm', () => {
     expect(synthesizeSimplePast('gehen', 'sie')).toBe('gingen');
   });
 
-  it('collapses the du-ending after a sibilant-final stem', () => {
-    expect(synthesizeSimplePast('lesen', 'du')).toBe('last');
+  it('uses the standard -est du-ending after a sibilant-final stem', () => {
+    expect(synthesizeSimplePast('lesen', 'du')).toBe('lasest');
     expect(synthesizeSimplePast('lesen', 'ihr')).toBe('last');
-    expect(synthesizeSimplePast('essen', 'du')).toBe('aßt');
-    expect(synthesizeSimplePast('heißen', 'du')).toBe('hießt');
+    expect(synthesizeSimplePast('essen', 'du')).toBe('aßest');
+    expect(synthesizeSimplePast('heißen', 'du')).toBe('hießest');
   });
 
   it('inserts a linking -e- before du/ihr endings after a dental-final strong stem', () => {

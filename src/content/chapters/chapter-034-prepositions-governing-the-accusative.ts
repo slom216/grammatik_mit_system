@@ -66,7 +66,7 @@ export const chapter034: ChapterDefinition = {
         heading: 'gegen (against) and ohne (without)',
         paragraphs: [
           'gegen means "against", both in a physical sense (collision or contact) and in an abstract sense (opposition): gegen die Wand (against the wall), gegen den Plan (against the plan).',
-          'ohne means "without": ohne das Auto (without the car), ohne meinen Bruder (without my brother). Note that ohne, like the other four, still triggers the accusative even though the meaning is about absence rather than a direct object.',
+          'ohne means "without": ohne das Kind (without the child), ohne meinen Bruder (without my brother). Note that ohne, like the other four, still triggers the accusative even though the meaning is about absence rather than a direct object.',
         ],
       },
       {
@@ -74,7 +74,7 @@ export const chapter034: ChapterDefinition = {
         heading: 'um: around — and the separate fixed time phrase',
         paragraphs: [
           'As an accusative-governing preposition, um usually means "around": um den Tisch (around the table), um die Ecke (around the corner), um den Block (around the block).',
-          "Um also appears in the fixed clock-time expression you learned in Chapter 33, um acht Uhr (at eight o'clock). That time phrase is a set expression for telling time and should simply be learned as a fixed pattern; it is not something you need to analyse case by case, unlike the spatial and abstract uses of um practised in this chapter.",
+          "Um also appears in the fixed clock-time expression you learned in Chapter 32, um acht Uhr (at eight o'clock). That time phrase is a set expression for telling time and should simply be learned as a fixed pattern; it is not something you need to analyse case by case, unlike the spatial and abstract uses of um practised in this chapter.",
         ],
       },
       {
@@ -172,10 +172,10 @@ export const chapter034: ChapterDefinition = {
         explanation: 'gegen + accusative; die Wand is feminine and stays unchanged.',
       },
       {
-        german: 'Wir fahren ohne das Auto.',
-        english: 'We are traveling without the car.',
-        highlight: ['ohne das Auto'],
-        explanation: 'ohne + accusative; das Auto is neuter and stays unchanged.',
+        german: 'Wir fahren ohne das Kind in den Urlaub.',
+        english: 'We are going on holiday without the child.',
+        highlight: ['ohne das Kind'],
+        explanation: 'ohne + accusative; das Kind is neuter and stays unchanged.',
       },
       {
         german: 'Sie kommt ohne ihren Bruder.',
@@ -202,7 +202,7 @@ export const chapter034: ChapterDefinition = {
         english: "We are meeting at eight o'clock.",
         highlight: ['um acht Uhr'],
         explanation:
-          'This is the fixed clock-time expression from Chapter 33, separate from the spatial use of um practised in this chapter.',
+          'This is the fixed clock-time expression from Chapter 32, separate from the spatial use of um practised in this chapter.',
       },
       {
         german: 'Ohne dich ist die Party langweilig.',
@@ -231,8 +231,8 @@ export const chapter034: ChapterDefinition = {
           'gegen always takes the accusative, never the dative, so the masculine article is den, not the dative dem.',
       },
       {
-        incorrect: 'Wir fahren ohne dem Auto.',
-        correct: 'Wir fahren ohne das Auto.',
+        incorrect: 'Wir fahren ohne dem Kind in den Urlaub.',
+        correct: 'Wir fahren ohne das Kind in den Urlaub.',
         explanation:
           'ohne always takes the accusative, so the neuter article stays das; the dative dem is not allowed after ohne.',
       },
@@ -284,7 +284,7 @@ export const chapter034: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['preposition meaning', 'ohne'],
       instruction: 'Which preposition means "without"?',
-      prompt: 'Wir fahren ___ das Auto. (without)',
+      prompt: 'Wir fahren ___ das Kind in den Urlaub. (without)',
       options: [
         { id: 'a', text: 'ohne' },
         { id: 'b', text: 'mit' },
@@ -292,7 +292,7 @@ export const chapter034: ChapterDefinition = {
         { id: 'd', text: 'bei' },
       ],
       correctOptionId: 'a',
-      explanation: 'ohne means "without" and always takes the accusative: ohne das Auto.',
+      explanation: 'ohne means "without" and always takes the accusative: ohne das Kind.',
     },
     {
       id: 'ch34-ex-03',
@@ -534,12 +534,12 @@ export const chapter034: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['preposition', 'ohne'],
       instruction: 'Write the missing preposition. Capitalisation is not checked.',
-      prompt: 'Wir fahren ___ unser Auto. (without)',
+      prompt: 'Wir fahren ___ unser Kind in den Urlaub. (without)',
       acceptedAnswers: ['ohne'],
       answerMode: 'caseInsensitive',
       placeholder: 'ohne',
       maxLength: 15,
-      explanation: 'ohne means "without" and takes the accusative: ohne unser Auto.',
+      explanation: 'ohne means "without" and takes the accusative: ohne unser Kind.',
     },
     {
       id: 'ch34-ex-17',
@@ -549,7 +549,7 @@ export const chapter034: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['accusative article', 'durch', 'feminine'],
       instruction: 'Write the missing article. Capitalisation is not checked.',
-      prompt: 'Wir laufen durch d___ Stadt. (die Stadt)',
+      prompt: 'Wir laufen durch ___ Stadt. (die Stadt)',
       acceptedAnswers: ['die'],
       answerMode: 'caseInsensitive',
       placeholder: 'die',
@@ -565,7 +565,7 @@ export const chapter034: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['accusative article', 'für', 'masculine'],
       instruction: 'Write the missing article. Capitalisation is not checked.',
-      prompt: 'Das Geschenk ist für d___ Lehrer. (der Lehrer)',
+      prompt: 'Das Geschenk ist für ___ Lehrer. (der Lehrer)',
       acceptedAnswers: ['den'],
       answerMode: 'caseInsensitive',
       placeholder: 'den',
@@ -580,7 +580,7 @@ export const chapter034: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['accusative article', 'gegen', 'feminine'],
       instruction: 'Write the missing article. Capitalisation is not checked.',
-      prompt: 'Sie protestieren gegen d___ Entscheidung. (die Entscheidung)',
+      prompt: 'Sie protestieren gegen ___ Entscheidung. (die Entscheidung)',
       acceptedAnswers: ['die'],
       answerMode: 'caseInsensitive',
       placeholder: 'die',
@@ -596,7 +596,7 @@ export const chapter034: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['accusative article', 'um', 'feminine', 'fixed phrase'],
       instruction: 'Write the missing article. Capitalisation is not checked.',
-      prompt: 'Der Supermarkt ist um d___ Ecke. (die Ecke)',
+      prompt: 'Der Supermarkt ist um ___ Ecke. (die Ecke)',
       acceptedAnswers: ['die'],
       answerMode: 'caseInsensitive',
       placeholder: 'die',
@@ -647,13 +647,20 @@ export const chapter034: ChapterDefinition = {
       grammarFocus: ['sentence-building', 'ohne', 'accusative article'],
       instruction:
         'Write a complete sentence from the cues, using the correct accusative article. Capitalisation is checked; no full stop is required.',
-      prompt: 'wir – fahren – ohne – das Auto',
-      acceptedAnswers: ['Wir fahren ohne das Auto.', 'Wir fahren ohne das Auto'],
+      prompt: 'wir – fahren – ohne – das Kind – in den Urlaub',
+      acceptedAnswers: [
+        'Wir fahren ohne das Kind in den Urlaub.',
+        'Wir fahren ohne das Kind in den Urlaub',
+        'In den Urlaub fahren wir ohne das Kind.',
+        'In den Urlaub fahren wir ohne das Kind',
+        'Ohne das Kind fahren wir in den Urlaub.',
+        'Ohne das Kind fahren wir in den Urlaub',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wir fahren ...',
       maxLength: 60,
       explanation:
-        'ohne takes the accusative, but the neuter article das does not change: Wir fahren ohne das Auto.',
+        'ohne takes the accusative, but the neuter article das does not change: Wir fahren ohne das Kind in den Urlaub.',
     },
     {
       id: 'ch34-ex-24',
@@ -1129,7 +1136,7 @@ export const chapter034: ChapterDefinition = {
       grammarFocus: ['error-correction', 'durch', 'accusative article'],
       instruction: 'Find the token with the error and give its correction.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Ich', 'gehe', 'durch', 'der', 'Park', '.'],
+      tokens: ['Ich', 'gehe', 'durch', 'der', 'Park.'],
       errorTokenIndex: 3,
       correction: 'den',
       explanation: 'durch always takes the accusative, so der must be corrected to den.',
@@ -1143,7 +1150,7 @@ export const chapter034: ChapterDefinition = {
       grammarFocus: ['error-correction', 'um', 'accusative-vs-dative'],
       instruction: 'Find the token with the error and give its correction.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Die', 'Kinder', 'laufen', 'um', 'dem', 'Baum', '.'],
+      tokens: ['Die', 'Kinder', 'laufen', 'um', 'dem', 'Baum.'],
       errorTokenIndex: 4,
       correction: 'den',
       explanation:

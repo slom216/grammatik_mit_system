@@ -52,7 +52,7 @@ export const chapter054: ChapterDefinition = {
         heading: 'Strong (irregular) verbs: a changed stem, and no -te',
         paragraphs: [
           'Strong verbs use a special past-tense stem instead of adding -te — often with a different vowel from the infinitive: gehen → ging, kommen → kam, sehen → sah. The ich-form and the er/sie/es-form use this stem with no personal ending at all: ich ging, er ging. This is the same "no ending" pattern you already learned for war and hatte in Chapter 25 — sein actually follows the strong-verb template itself.',
-          'The other four persons add regular personal endings onto the changed stem: du adds -st (gingst), wir and sie/Sie add -en (gingen), and ihr adds -t (gingt). When the past stem itself already ends in a sibilant sound (-s, -ß, -z), the du- and ihr-endings both contract to a single -t rather than doubling up: lesen → du last, ihr last (not lasst or lasest), and essen → du aßt, ihr aßt.',
+          'The other four persons add regular personal endings onto the changed stem: du adds -st (gingst), wir and sie/Sie add -en (gingen), and ihr adds -t (gingt). When the past stem itself already ends in a sibilant sound (-s, -ß, -z), du adds -est and ihr adds just -t: lesen → du lasest, ihr last; essen → du aßest, ihr aßt; heißen → du hießest, ihr hießt. In casual speech you will also hear du last or du aßt, but the -est forms are the standard ones.',
           'Strong verbs cannot be predicted by a rule the way weak verbs can — each one has its own past-tense stem, which you simply have to learn, ideally as one of three "principal parts" together with the infinitive and the past participle from Chapter 28: gehen – ging – gegangen; essen – aß – gegessen; sprechen – sprach – gesprochen.',
         ],
       },
@@ -61,7 +61,7 @@ export const chapter054: ChapterDefinition = {
         heading: 'Mixed verbs: weak endings on a changed stem',
         paragraphs: [
           'Mixed verbs combine both patterns: they change their stem vowel like a strong verb, but still add -te and the regular personal endings like a weak verb. wissen becomes wusste (not a strong-style wisste), bringen becomes brachte, denken becomes dachte, kennen becomes kannte, and nennen becomes nannte.',
-          'You already met this pattern with haben (hatte) in Chapter 25 and with all six modal verbs (konnte, musste, wollte, durfte, sollte, mochte) in Chapter 29 — every modal verb is, technically, a mixed verb. werden, which you will need for the passive voice and the future tense in later chapters, is mixed too: es wurde, sie wurden.',
+          'You already met this pattern with haben (hatte) in Chapter 25 and with all six modal verbs (konnte, musste, wollte, durfte, sollte, mochte) in Chapter 29 — every modal verb is, technically, a mixed verb. werden, which you will need for the passive voice and the future tense in later chapters, is not: wurde has no -te and the participle is geworden, so werden is a strong verb (es wurde, sie wurden).',
         ],
       },
       {
@@ -125,13 +125,13 @@ export const chapter054: ChapterDefinition = {
         columns: ['Person', 'gehen', 'lesen'],
         rows: [
           ['ich', 'ging', 'las'],
-          ['du', 'gingst', 'last'],
+          ['du', 'gingst', 'lasest'],
           ['er/sie/es', 'ging', 'las'],
           ['wir', 'gingen', 'lasen'],
           ['ihr', 'gingt', 'last'],
           ['sie/Sie', 'gingen', 'lasen'],
         ],
-        note: "lesen's past stem already ends in -s, so both the du- and ihr-endings contract to a single -t: du last, ihr last (not lasst, which is actually a present-tense form of the different verb lassen).",
+        note: "lesen's past stem already ends in -s, so du adds -est (du lasest; colloquially also du last) and ihr adds just -t (ihr last — not lasst, which is a present-tense form of the different verb lassen).",
       },
       {
         id: 'ch54-table-04',
@@ -199,11 +199,11 @@ export const chapter054: ChapterDefinition = {
           'tranken (trinken, wir-ending -en) and schrieb (schreiben, er/sie-form) are both strong simple-past forms.',
       },
       {
-        german: 'Du last das ganze Buch in einer einzigen Nacht.',
+        german: 'Du lasest das ganze Buch in einer einzigen Nacht.',
         english: 'You read the whole book in a single night.',
-        highlight: ['last'],
+        highlight: ['lasest'],
         explanation:
-          'lesen has a past stem ending in -s, so the du-ending contracts to a single -t: last, not lesst or lasest.',
+          'lesen has a past stem ending in -s, so du adds -est: lasest (in casual speech also last), not lasst.',
       },
       {
         german: 'Er sprach drei Sprachen fließend, aber er blieb trotzdem bescheiden.',
@@ -266,9 +266,9 @@ export const chapter054: ChapterDefinition = {
       },
       {
         incorrect: 'Du lasst das Buch schnell.',
-        correct: 'Du last das Buch schnell.',
+        correct: 'Du lasest das Buch schnell.',
         explanation:
-          "lesen's past stem las already ends in -s, so du takes just -t (last), not the doubled -sst of lasst, which is actually a present-tense form of the different verb lassen.",
+          "lesen's past stem las already ends in -s, so du takes -est (lasest). lasst is a present-tense form of the different verb lassen.",
       },
       {
         incorrect: 'Sie wisste die Antwort nicht.',
@@ -285,7 +285,7 @@ export const chapter054: ChapterDefinition = {
     ],
     remember: [
       'Weak (regular) verbs add -te + personal ending to an unchanged stem: machen → machte, machtest, machte, machten, machtet, machten.',
-      'Strong (irregular) verbs use a changed stem with no -te: gehen → ging, gingst, ging, gingen, gingt, gingen. When the stem ends in -s/-ß/-z, du and ihr both contract to just -t (lesen → last, last).',
+      'Strong (irregular) verbs use a changed stem with no -te: gehen → ging, gingst, ging, gingen, gingt, gingen. When the stem ends in -s/-ß/-z, du adds -est and ihr just -t (lesen → du lasest, ihr last).',
       'Mixed verbs combine a changed stem with the weak -te ending: wissen → wusste, bringen → brachte, denken → dachte, kennen → kannte, nennen → nannte — the same pattern you already know from haben and the modal verbs.',
       'In strong and mixed verbs (and in sein/haben), the ich-form and the er/sie/es-form are always identical.',
       'The simple past is the normal tense for written narration (Erzähltempus) — stories, fairy tales, news reports — even though spoken conversation usually prefers the present perfect for most verbs other than sein, haben, and the modals.',
@@ -689,12 +689,12 @@ export const chapter054: ChapterDefinition = {
       grammarFocus: ['strong-verbs', 'simple-past', 'sibilant-contraction'],
       instruction: 'Write the correct simple-past form. Capitalisation is not checked.',
       prompt: 'du → heißen (Präteritum)',
-      acceptedAnswers: ['hießt'],
+      acceptedAnswers: ['hießest', 'hießt'],
       answerMode: 'caseInsensitive',
-      placeholder: 'hießt ...',
+      placeholder: 'hieß...',
       maxLength: 15,
       explanation:
-        "heißen's stem ends in -ß, so du takes just -t on the changed stem hieß-, giving hießt.",
+        "heißen's past stem hieß- ends in -ß, so du adds -est: hießest (colloquially also hießt).",
     },
     {
       id: 'ch54-ex-23',
@@ -1044,9 +1044,9 @@ export const chapter054: ChapterDefinition = {
         { id: 'b', text: 'strong (irregular)' },
         { id: 'c', text: 'mixed' },
       ],
-      correctOptionId: 'c',
+      correctOptionId: 'b',
       explanation:
-        'werden changes its stem vowel (e → u) but still takes the weak -e ending: a mixed verb.',
+        'werden changes its stem vowel (e → u), has no -te in wurde, and its participle is geworden: a strong verb, not a mixed one.',
     },
     {
       id: 'ch54-ex-43',
@@ -1684,9 +1684,9 @@ export const chapter054: ChapterDefinition = {
       prompt: 'Du lasst das Buch schnell.',
       tokens: ['Du', 'lasst', 'das', 'Buch', 'schnell.'],
       errorTokenIndex: 1,
-      correction: 'last',
+      correction: 'lasest',
       explanation:
-        "lesen's past stem las already ends in -s, so du takes just -t: last, not the doubled lasst.",
+        "lesen's past stem las already ends in -s, so du takes -est: lasest. lasst is a present-tense form of lassen.",
     },
     {
       id: 'ch54-ex-81',

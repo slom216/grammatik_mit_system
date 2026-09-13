@@ -97,10 +97,10 @@ const GENITIVE_ES_ENDING = /(s|ß|x|z|sch)$/;
 
 /**
  * Common monosyllabic (or dental-cluster) nouns that take -es even though
- * they do not end in a sibilant — des Mannes, des Kindes, des Tages. Real
- * German also allows -s for some of these informally; this course teaches
- * only the -es form, so the list is hand-picked to the nouns chapter 68
- * actually uses, not derived from a syllable-counting rule.
+ * they do not end in a sibilant — des Mannes, des Kindes, des Tages. The
+ * short -s form (des Manns, des Kinds) is also correct for these, so
+ * isValidGenitiveNoun accepts both. ponytail: hand-picked to the nouns
+ * chapter 68 uses; derive from syllable count if more chapters need it.
  */
 const EXTRA_ES_NOUNS = new Set([
   'Mann',
@@ -132,7 +132,9 @@ export function genitiveNounEnding(noun: string): 'es' | 's' {
 }
 
 export function isValidGenitiveNoun(noun: string, form: string): boolean {
-  return `${noun}${genitiveNounEnding(noun)}` === form.trim();
+  const trimmed = form.trim();
+  if (EXTRA_ES_NOUNS.has(noun) && trimmed === `${noun}s`) return true;
+  return `${noun}${genitiveNounEnding(noun)}` === trimmed;
 }
 
 /**

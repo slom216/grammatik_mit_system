@@ -3,7 +3,7 @@ import { loadChapter } from '../../content/chapterLoader';
 import type { ChapterDefinition } from '../../schemas/chapterSchema';
 import { sortedExercises } from '../chapters/chapterUtils';
 import { useProgressStore } from '../progress/progressStore';
-import { humanizeTag, selectWeakSpots } from '../progress/weakSpots';
+import { humanizeTag, selectWeakSpots, topicKey } from '../progress/weakSpots';
 import type { CumulativeRouteResult } from './cumulativeRoute';
 
 /**
@@ -23,7 +23,8 @@ export const TOPIC_SESSION_SIZE = 15;
 export async function topicRouteLoader({
   params,
 }: LoaderFunctionArgs): Promise<CumulativeRouteResult> {
-  const tag = params.tag ?? '';
+  // Canonical, so links built from an old spelling (`dragToSlots`) still resolve.
+  const tag = topicKey(params.tag ?? '');
   const empty: CumulativeRouteResult = {
     from: 0,
     to: 0,
@@ -64,7 +65,8 @@ export async function topicRouteLoader({
 }
 
 /**
- * Every exercise carrying the tag, the ones not yet answered correctly first —
+ * Every exercise carrying the tag in any spelling (`tag` is a `topicKey`), the
+ * ones not yet answered correctly first —
  * the same "cover new ground before replaying" rule chapter practice uses.
  */
 export function topicExerciseIds(
@@ -75,7 +77,7 @@ export function topicExerciseIds(
 ): string[] {
   const tagged = chapters
     .flatMap((chapter) => sortedExercises(chapter))
-    .filter((exercise) => exercise.grammarFocus.includes(tag))
+    .filter((exercise) => exercise.grammarFocus.some((focus) => topicKey(focus) === tag))
     .map((exercise) => exercise.id);
 
   const notYetCorrect = (id: string) => (exerciseHistory[id]?.timesCorrect ?? 0) === 0;

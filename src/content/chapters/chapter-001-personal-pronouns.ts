@@ -405,13 +405,14 @@ export const chapter001: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['capitalisation', 'plural'],
-      instruction: 'Choose the correctly capitalised pronoun to open the sentence.',
+      instruction:
+        'Choose the pronoun that replaces the two people and opens the sentence.',
       prompt: 'Frau Berg und Herr Klein sind im Büro. → ___ sind im Büro.',
       options: [
         { id: 'a', text: 'Sie' },
-        { id: 'b', text: 'sie' },
+        { id: 'b', text: 'Er' },
         { id: 'c', text: 'Ihr' },
-        { id: 'd', text: 'ihr' },
+        { id: 'd', text: 'Es' },
       ],
       correctOptionId: 'a',
       explanation:
@@ -519,10 +520,10 @@ export const chapter001: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['subject-pronouns', 'capitalisation'],
       instruction:
-        'Write only the missing pronoun. It opens the sentence, so capitalisation matters.',
+        'Write only the missing pronoun. Capitalisation is not checked here, but in the sentence it would be written with a capital letter.',
       prompt: 'Die Wohnung ist ruhig. → ___ ist ruhig.',
       acceptedAnswers: ['Sie'],
-      answerMode: 'normalized',
+      answerMode: 'caseInsensitive',
       placeholder: 'pronoun',
       maxLength: 10,
       explanation:
@@ -602,10 +603,10 @@ export const chapter001: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['subject-pronouns', 'plural', 'capitalisation'],
       instruction:
-        'Write the pronoun that replaces the underlined names, matching number and capitalisation.',
+        'Write the pronoun that replaces the underlined names, matching number. Capitalisation is not checked.',
       prompt: 'Frau Berg und Herr Klein sind im Büro. → ___ sind im Büro.',
       acceptedAnswers: ['Sie'],
-      answerMode: 'normalized',
+      answerMode: 'caseInsensitive',
       placeholder: 'pronoun',
       maxLength: 10,
       explanation:
@@ -949,10 +950,10 @@ export const chapter001: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['subject-pronouns', 'capitalisation', 'plural'],
       instruction:
-        'Write only the missing pronoun. It opens the sentence, so capitalisation matters.',
+        'Write only the missing pronoun. Capitalisation is not checked here, but in the sentence it would be written with a capital letter.',
       prompt: 'Meine Kollegen sind im Meeting. → ___ sind im Meeting.',
       acceptedAnswers: ['Sie'],
-      answerMode: 'normalized',
+      answerMode: 'caseInsensitive',
       placeholder: 'pronoun',
       maxLength: 10,
       explanation:
@@ -983,13 +984,14 @@ export const chapter001: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['subject-pronouns'],
       instruction: 'Drag the correct pronouns into the gaps.',
-      prompt: 'Fill in the two missing pronouns.',
+      prompt:
+        'Fill in the two missing pronouns: I come from Germany, but he comes from Austria.',
       templateParts: ['', ' komme aus Deutschland, aber ', ' kommt aus Österreich.'],
       slots: [
         { id: 'slot1', correctWord: 'Ich' },
         { id: 'slot2', correctWord: 'er' },
       ],
-      wordBank: ['Ich', 'er', 'sie', 'ihr'],
+      wordBank: ['Ich', 'er', 'Du', 'wir'],
       explanation:
         'Ich komme (I come) pairs with the first-person verb form; er kommt (he comes) pairs with the third-person singular form.',
     },
@@ -1215,11 +1217,11 @@ export const chapter001: ChapterDefinition = {
       grammarFocus: ['subject-pronouns', 'plural', 'error-correction'],
       instruction: 'Find the token with the mistake.',
       prompt: 'Someone talks about their siblings. Find the mistake.',
-      tokens: ['Meine', 'Geschwister', 'sind', 'im', 'Café.', 'Er', 'ist', 'müde.'],
+      tokens: ['Meine', 'Geschwister', 'sind', 'im', 'Café.', 'Er', 'sind', 'müde.'],
       errorTokenIndex: 5,
       correction: 'Sie',
       explanation:
-        'Geschwister is plural, so it must be replaced by sie (they), not by the singular er.',
+        'Geschwister is plural, so it must be replaced by sie (they), not by the singular er: Sie sind müde. The verb sind already shows the plural.',
     },
     {
       id: 'ch01-ex-58',

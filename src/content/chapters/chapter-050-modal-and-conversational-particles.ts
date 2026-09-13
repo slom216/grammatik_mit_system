@@ -29,7 +29,7 @@ export const chapter050: ChapterDefinition = {
     introduction: [
       'German conversation is full of small, unstressed words that add almost nothing to the literal content of a sentence but change everything about how it is meant: doch, mal, ja, denn, eigentlich, and wohl. These are called modal particles (Modalpartikeln) or conversational particles, and they are one of the clearest markers of natural, spoken German — leaving them out does not make a sentence wrong, but it makes it sound flat, foreign, or oddly blunt.',
       'Modal particles do not have a one-to-one English translation. English usually conveys the same nuance through intonation, word order, or an added phrase ("after all", "just", "I wonder", "actually") rather than through a single dedicated word. Because of this, you cannot learn what a particle "means" in isolation — you have to learn what job it does in a specific conversational moment: softening a command, turning a statement into a genuine question, signalling that something should already be obvious, or hedging a guess.',
-      'A crucial feature of modal particles is that they are normally unstressed and sit in the middle of the sentence (in the "middle field", right after the finite verb or the subject) — never at the very front, and never carrying the main sentence stress. Several of these words are spelled exactly like other, ordinary words (mal = "once", ja = "yes", denn = "because/for", wohl = "well/probably" as a plain adverb), so the same word can be either a heavy, literal word or a light, pragmatic particle depending entirely on context and stress.',
+      'A crucial feature of modal particles is that they are normally unstressed and sit in the middle of the sentence (in the "middle field", right after the finite verb or the subject) — never at the very front, and never carrying the main sentence stress. Several of these words are spelled exactly like other, ordinary words (mal = "once", ja = "yes", denn = "because/for", wohl = "well/probably" as a plain adverb), so the same word can be either an ordinary word with its literal meaning or a light, pragmatic particle depending on context, position, and stress.',
     ],
     rules: [
       {
@@ -65,7 +65,7 @@ export const chapter050: ChapterDefinition = {
         paragraphs: [
           'denn appears in real, spoken w-questions and yes/no-questions to signal genuine interest or engagement — it makes a question sound like it grows naturally out of the conversation rather than being an abrupt interrogation. Without denn, a question can sound unexpectedly sharp or official in spoken German.',
           'Wie geht es dir denn? (So, how are you? — warm, conversational interest, picking up on something just said.) Was machst du denn hier? (What on earth are you doing here? — genuine surprise/curiosity, not a formal inquiry.)',
-          'denn only occurs in questions; it never appears in statements or imperatives. Do not confuse it with the coordinating conjunction denn meaning "because/for", which links two full clauses (Ich bleibe zu Hause, denn es regnet — I\'m staying home, because it\'s raining) and is stressed and clause-initial rather than a light, mid-sentence particle.',
+          'denn only occurs in questions; it never appears in statements or imperatives. Do not confuse it with the coordinating conjunction denn meaning "because/for", which links two full clauses (Ich bleibe zu Hause, denn es regnet — I\'m staying home, because it\'s raining) and stands at the start of its clause, before the subject, rather than in the middle field.',
         ],
       },
       {
@@ -73,7 +73,7 @@ export const chapter050: ChapterDefinition = {
         heading: 'eigentlich — shifting or introducing a topic',
         paragraphs: [
           'eigentlich as a particle introduces a new topic, a side thought, or gently changes the subject — roughly "by the way" or "actually, now that I think of it". It often opens a question that is only loosely connected to what was just said.',
-          'Eigentlich, wo wohnst du jetzt? (Actually, where do you live now? — a topic shift, moving the conversation somewhere new.) Was machst du eigentlich beruflich? (So what do you actually do for work? — mild curiosity, changing direction.)',
+          'Wo wohnst du eigentlich jetzt? (So where do you live now, actually? — a topic shift, moving the conversation somewhere new.) Was machst du eigentlich beruflich? (So what do you actually do for work? — mild curiosity, changing direction.)',
           'As a plain adverb, eigentlich can also mean "actually/strictly speaking" in a more contrastive sense (Eigentlich sollte ich arbeiten, aber ich bin müde — I\'m actually supposed to be working, but I\'m tired), which shades into the particle use; both share the core idea of gently reframing what is true or relevant right now.',
         ],
       },
@@ -132,7 +132,7 @@ export const chapter050: ChapterDefinition = {
             "Sie ist wohl im Büro. (She's probably at the office.)",
           ],
         ],
-        note: 'All six particles are normally unstressed and sit in the middle field of the sentence; several also exist as ordinary, stressed words with a literal, non-pragmatic meaning (mal "once", ja "yes", denn "because", wohl "well").',
+        note: 'All six particles are normally unstressed and sit in the middle field of the sentence; several also exist as ordinary words with a literal, non-pragmatic meaning (mal "once", ja "yes", denn "because", wohl "well").',
       },
     ],
     examples: [
@@ -229,18 +229,16 @@ export const chapter050: ChapterDefinition = {
           'A modal particle never stands in the front field (position 1) of the sentence; doch belongs in the middle field, right after the verb.',
       },
       {
-        incorrect:
-          'Ich war MAL in Berlin. (spoken with heavy stress on mal, meaning "just once, casually")',
-        correct:
-          'Ich war einmal in Berlin. / Ich war mal in Berlin. (unstressed, as a light aside)',
+        incorrect: 'Mal kannst du das Fenster aufmachen?',
+        correct: 'Kannst du mal das Fenster aufmachen?',
         explanation:
-          'As a particle, mal is unstressed; putting heavy stress on it turns it back into the literal adverb "once", which changes what the sentence claims.',
+          'The softening particle mal belongs in the middle field, after the verb and subject; it cannot open the sentence.',
       },
       {
-        incorrect: 'Wo warst du? (flat, out of the blue, with no conversational lead-in)',
+        incorrect: 'Denn wo warst du?',
         correct: 'Wo warst du denn?',
         explanation:
-          'Without denn, a spoken question can sound unexpectedly sharp or official; denn signals that the question grows naturally out of the conversation.',
+          'The particle denn sits in the middle field, after the verb and subject, never in front of the question word. (A plain "Wo warst du?" is also correct; denn just makes it sound friendlier and more engaged.)',
       },
       {
         incorrect:
@@ -260,7 +258,7 @@ export const chapter050: ChapterDefinition = {
     remember: [
       'Modal particles (doch, mal, ja, denn, eigentlich, wohl) are unstressed, sit in the middle field, and change how a sentence is meant, not what it literally states — there is no single English equivalent for any of them.',
       'doch reminds/insists, mal softens a request, ja marks something as obvious or surprising, denn signals genuine curiosity in a question, eigentlich shifts topic, and wohl hedges a guess.',
-      'Several particles double as ordinary, stressed words with a literal meaning: mal ("once"), ja ("yes"), denn ("because"), wohl ("well") — context and stress tell them apart from the light, pragmatic particle.',
+      'Several particles double as ordinary words with a literal meaning: mal ("once"), ja ("yes"), denn ("because"), wohl ("well") — context, position, and stress tell them apart from the light, pragmatic particle.',
       'Particles are most at home in spoken register; adding one to a command or question is often exactly what makes a written sentence sound naturally spoken rather than stiff.',
     ],
   },
@@ -399,7 +397,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['denn', 'dialogue', 'genuine-question'],
       instruction:
         'Read the exchange, then choose the particle that best completes the final line.',
-      prompt: 'Complete: "Wo warst du ___?"',
+      prompt: 'Lena means: "So where were you, then?"',
       dialogue: [
         {
           speaker: 'Lena',
@@ -414,7 +412,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Lena',
           german: 'Wo warst du ___?',
-          english: 'So where were you, then?',
         },
       ],
       options: [
@@ -436,7 +433,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['doch', 'dialogue', 'reminding'],
       instruction:
         'Read the exchange, then choose the particle that best completes the final line.',
-      prompt: 'Complete: "Du weißt ___, dass er kein Fleisch isst."',
+      prompt: 'Mira means: "You know, don\'t you, that he doesn\'t eat meat."',
       dialogue: [
         {
           speaker: 'Paul',
@@ -446,7 +443,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Mira',
           german: 'Du weißt ___, dass er kein Fleisch isst.',
-          english: "You know, don't you, that he doesn't eat meat.",
         },
       ],
       options: [
@@ -468,7 +464,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['mal', 'dialogue', 'softening'],
       instruction:
         'Read the exchange, then choose the particle that best completes the final line.',
-      prompt: 'Complete: "Kannst du mir ___ helfen, den Schrank zu tragen?"',
+      prompt: 'Jonas means: "Could you help me carry the wardrobe for a sec?"',
       dialogue: [
         {
           speaker: 'Jonas',
@@ -478,7 +474,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Jonas',
           german: 'Kannst du mir ___ helfen, den Schrank zu tragen?',
-          english: 'Could you help me carry the wardrobe for a sec?',
         },
       ],
       options: [
@@ -500,7 +495,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['ja', 'dialogue', 'surprise'],
       instruction:
         'Read the exchange, then choose the particle that best completes the final line.',
-      prompt: 'Complete: "Ihr seid ___ schon alle da!"',
+      prompt: 'Sabine means: "Oh, you\'re all already here!"',
       dialogue: [
         {
           speaker: 'Sabine',
@@ -510,7 +505,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Sabine',
           german: 'Ihr seid ___ schon alle da!',
-          english: "Oh, you're all already here!",
         },
       ],
       options: [
@@ -532,7 +526,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['wohl', 'dialogue', 'hedging'],
       instruction:
         'Read the exchange, then choose the particle that best completes the final line.',
-      prompt: 'Complete: "Er ist ___ noch im Stau."',
+      prompt: 'Nils means: "He\'s probably still stuck in traffic."',
       dialogue: [
         {
           speaker: 'Katrin',
@@ -542,7 +536,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Nils',
           german: 'Er ist ___ noch im Stau.',
-          english: "He's probably still stuck in traffic.",
         },
       ],
       options: [
@@ -564,7 +557,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['eigentlich', 'dialogue', 'topic-shift'],
       instruction:
         'Read the exchange, then choose the particle that best completes the final line.',
-      prompt: 'Complete: "Was machst du ___ am Wochenende?"',
+      prompt: 'Ali means: "So, what are you actually doing this weekend?"',
       dialogue: [
         {
           speaker: 'Ali',
@@ -574,7 +567,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Ali',
           german: 'Was machst du ___ am Wochenende?',
-          english: 'So, what are you actually doing this weekend?',
         },
       ],
       options: [
@@ -596,7 +588,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['doch', 'imperative', 'dialogue'],
       instruction:
         'Read the exchange, then choose the particle that best completes the final line.',
-      prompt: 'Complete: "Komm ___ mit ins Kino!"',
+      prompt: 'Ben means: "Oh, come on, come to the cinema with us!"',
       dialogue: [
         {
           speaker: 'Anna',
@@ -606,7 +598,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Ben',
           german: 'Ach, komm ___ mit ins Kino!',
-          english: 'Oh, come on, come to the cinema with us!',
         },
       ],
       options: [
@@ -695,7 +686,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['doch', 'dialogue', 'production'],
       instruction:
         'Read the exchange and fill in the missing particle. Capitalisation is not checked.',
-      prompt: 'Complete: "Mach ___ das Fenster zu, mir ist kalt!"',
+      prompt: 'Opa means: "Do close the window, I\'m cold!"',
       dialogue: [
         {
           speaker: 'Opa',
@@ -705,7 +696,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Opa',
           german: 'Mach ___ das Fenster zu, mir ist kalt!',
-          english: "Do close the window, I'm cold!",
         },
       ],
       acceptedAnswers: ['doch'],
@@ -724,7 +714,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['denn', 'dialogue', 'production'],
       instruction:
         'Read the exchange and fill in the missing particle. Capitalisation is not checked.',
-      prompt: 'Complete: "Was liest du ___ da?"',
+      prompt: 'Frau Berger means: "So what are you reading there?"',
       dialogue: [
         {
           speaker: 'Frau Berger',
@@ -734,7 +724,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Frau Berger',
           german: 'Was liest du ___ da?',
-          english: 'So what are you reading there?',
         },
       ],
       acceptedAnswers: ['denn'],
@@ -753,7 +742,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['mal', 'dialogue', 'production'],
       instruction:
         'Read the exchange and fill in the missing particle. Capitalisation is not checked.',
-      prompt: 'Complete: "Probier ___ diesen Kuchen!"',
+      prompt: 'Oma means: "Just try this cake!"',
       dialogue: [
         {
           speaker: 'Oma',
@@ -763,7 +752,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Oma',
           german: 'Probier ___ diesen Kuchen!',
-          english: 'Just try this cake!',
         },
       ],
       acceptedAnswers: ['mal'],
@@ -782,7 +770,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['ja', 'dialogue', 'production'],
       instruction:
         'Read the exchange and fill in the missing particle. Capitalisation is not checked.',
-      prompt: 'Complete: "Das ist ___ eine Überraschung!"',
+      prompt: 'Timo means: "Well, that\'s a surprise!"',
       dialogue: [
         {
           speaker: 'Timo',
@@ -792,7 +780,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Timo',
           german: 'Das ist ___ eine Überraschung!',
-          english: "Well, that's a surprise!",
         },
       ],
       acceptedAnswers: ['ja'],
@@ -811,7 +798,8 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['wohl', 'dialogue', 'production'],
       instruction:
         'Read the exchange and fill in the missing particle. Capitalisation is not checked.',
-      prompt: 'Complete: "Sie ist ___ im Büro, ich habe sie heute noch nicht gesehen."',
+      prompt:
+        'Kollegin means: "She\'s probably in the office, I haven\'t seen her today."',
       dialogue: [
         {
           speaker: 'Herr Klein',
@@ -821,7 +809,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Kollegin',
           german: 'Sie ist ___ im Büro, ich habe sie heute noch nicht gesehen.',
-          english: "She's probably in the office, I haven't seen her today.",
         },
       ],
       acceptedAnswers: ['wohl'],
@@ -840,7 +827,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['eigentlich', 'dialogue', 'production'],
       instruction:
         'Read the exchange and fill in the missing particle. Capitalisation is not checked.',
-      prompt: 'Complete: "Wie heißt du ___ mit Nachnamen?"',
+      prompt: 'Fahrgast means: "So, what\'s your last name, by the way?"',
       dialogue: [
         {
           speaker: 'Fahrgast',
@@ -850,7 +837,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Fahrgast',
           german: 'Wie heißt du ___ mit Nachnamen?',
-          english: "So, what's your last name, by the way?",
         },
       ],
       acceptedAnswers: ['eigentlich'],
@@ -877,6 +863,15 @@ export const chapter050: ChapterDefinition = {
         'Öffne doch das Fenster!',
         'Öffnest du mal das Fenster?',
         'Kannst du mal das Fenster öffnen?',
+        'Kannst du das Fenster mal öffnen?',
+        'Kannst du bitte mal das Fenster öffnen?',
+        'Kannst du mal das Fenster aufmachen?',
+        'Kannst du das Fenster mal aufmachen?',
+        'Öffnest du das Fenster mal?',
+        'Öffne bitte mal das Fenster!',
+        'Mach doch mal das Fenster auf!',
+        'Mach mal das Fenster auf!',
+        'Mach doch das Fenster auf!',
       ],
       answerMode: 'normalized',
       placeholder: 'Öffne doch mal das Fenster!',
@@ -898,6 +893,10 @@ export const chapter050: ChapterDefinition = {
         'Hilf mir mal!',
         'Kannst du mir mal helfen?',
         'Hilfst du mir mal?',
+        'Hilf mir doch mal!',
+        'Hilf mir bitte mal!',
+        'Kannst du mir bitte mal helfen?',
+        'Könntest du mir mal helfen?',
       ],
       answerMode: 'normalized',
       placeholder: 'Hilf mir mal!',
@@ -931,7 +930,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['denn', 'dialogue', 'transfer'],
       instruction:
         'Read the exchange and choose the particle that best fits the pragmatic tone of the final line.',
-      prompt: 'Complete: "Warum bist du ___ so spät dran?"',
+      prompt: 'Chef means: "So why are you so late, then?"',
       dialogue: [
         {
           speaker: 'Chef',
@@ -941,7 +940,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Chef',
           german: 'Warum bist du ___ so spät dran?',
-          english: 'So why are you so late, then?',
         },
       ],
       options: [
@@ -963,7 +961,8 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['ja', 'wohl', 'dialogue', 'transfer'],
       instruction:
         'Read the exchange and choose the particle that best fits the pragmatic tone of the final line.',
-      prompt: 'Complete: "Das war ___ keine gute Idee."',
+      prompt:
+        'Nora means: "Well, that clearly wasn\'t a good idea, opening the oven door so often."',
       dialogue: [
         {
           speaker: 'Felix',
@@ -973,8 +972,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Nora',
           german: 'Das war ___ keine gute Idee, die Ofentür so oft zu öffnen.',
-          english:
-            "Well, that clearly wasn't a good idea, opening the oven door so often.",
         },
       ],
       options: [
@@ -1116,7 +1113,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['doch', 'dialogue', 'imperative'],
       instruction:
         'Read the exchange, then choose the particle that best completes the final line.',
-      prompt: 'Complete: "Ach, komm ___ mit auf die Party!"',
+      prompt: 'Jan means: "Oh, come on, come to the party with us!"',
       dialogue: [
         {
           speaker: 'Sara',
@@ -1126,7 +1123,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Jan',
           german: 'Ach, komm ___ mit auf die Party!',
-          english: 'Oh, come on, come to the party with us!',
         },
       ],
       options: [
@@ -1148,7 +1144,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['mal', 'dialogue', 'softening'],
       instruction:
         'Read the exchange, then choose the particle that best completes the final line.',
-      prompt: 'Complete: "Kannst du mir ___ diese E-Mail übersetzen?"',
+      prompt: 'Kollegin means: "Could you translate this email for me for a second?"',
       dialogue: [
         {
           speaker: 'Kollegin',
@@ -1158,7 +1154,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Kollegin',
           german: 'Kannst du mir ___ diese E-Mail übersetzen?',
-          english: 'Could you translate this email for me for a second?',
         },
       ],
       options: [
@@ -1180,7 +1175,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['ja', 'dialogue', 'surprise'],
       instruction:
         'Read the exchange, then choose the particle that best completes the final line.',
-      prompt: 'Complete: "Du bist ___ groß geworden!"',
+      prompt: 'Tante Rosa means: "Wow, you\'ve gotten so tall!"',
       dialogue: [
         {
           speaker: 'Tante Rosa',
@@ -1190,7 +1185,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Tante Rosa',
           german: 'Du bist ___ groß geworden!',
-          english: "Wow, you've gotten so tall!",
         },
       ],
       options: [
@@ -1212,7 +1206,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['denn', 'dialogue', 'genuine-question'],
       instruction:
         'Read the exchange, then choose the particle that best completes the final line.',
-      prompt: 'Complete: "Wohin fährst du ___ mit so viel Gepäck?"',
+      prompt: 'Nachbar means: "So where are you going with all that luggage?"',
       dialogue: [
         {
           speaker: 'Nachbar',
@@ -1222,7 +1216,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Nachbar',
           german: 'Wohin fährst du ___ mit so viel Gepäck?',
-          english: 'So where are you going with all that luggage?',
         },
       ],
       options: [
@@ -1244,7 +1237,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['eigentlich', 'dialogue', 'topic-shift'],
       instruction:
         'Read the exchange, then choose the particle that best completes the final line.',
-      prompt: 'Complete: "Wie läuft es ___ mit deinem neuen Job?"',
+      prompt: 'Nina means: "So, how\'s your new job going, by the way?"',
       dialogue: [
         {
           speaker: 'Nina',
@@ -1254,7 +1247,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Nina',
           german: 'Wie läuft es ___ mit deinem neuen Job?',
-          english: "So, how's your new job going, by the way?",
         },
       ],
       options: [
@@ -1276,7 +1268,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['wohl', 'dialogue', 'hedging'],
       instruction:
         'Read the exchange, then choose the particle that best completes the final line.',
-      prompt: 'Complete: "Morgen wird es ___ regnen."',
+      prompt: 'Felix means: "It\'ll probably rain tomorrow, according to the forecast."',
       dialogue: [
         {
           speaker: 'Petra',
@@ -1286,7 +1278,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Felix',
           german: 'Morgen wird es ___ regnen, laut der Vorhersage.',
-          english: "It'll probably rain tomorrow, according to the forecast.",
         },
       ],
       options: [
@@ -1307,7 +1298,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['doch', 'dialogue', 'insisting'],
       instruction:
         'Read the exchange, then choose the particle that best fits the pragmatic tone of the final line.',
-      prompt: 'Complete: "Probier ___ noch ein Stück, es schadet doch nicht!"',
+      prompt: 'Gastgeberin means: "Come on, try one more piece, it won\'t hurt!"',
       dialogue: [
         {
           speaker: 'Gast',
@@ -1317,7 +1308,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Gastgeberin',
           german: 'Probier ___ noch ein Stück, es schadet doch nicht!',
-          english: "Come on, try one more piece, it won't hurt!",
         },
       ],
       options: [
@@ -1339,8 +1329,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['mal', 'ja', 'dialogue', 'transfer'],
       instruction:
         'Read the exchange and choose the particle that best fits the pragmatic tone of the final line, distinguishing a casual request from an expression of surprise.',
-      prompt:
-        'Complete: "Zeig mir ___ dein neues Auto, das habe ich noch nicht gesehen!"',
+      prompt: 'Lea means: "Show me your new car sometime, I haven\'t seen it yet!"',
       dialogue: [
         {
           speaker: 'Basti',
@@ -1350,7 +1339,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Lea',
           german: 'Zeig mir ___ dein neues Auto, das habe ich noch nicht gesehen!',
-          english: "Show me your new car sometime, I haven't seen it yet!",
         },
       ],
       options: [
@@ -1372,7 +1360,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['denn', 'eigentlich', 'dialogue', 'transfer'],
       instruction:
         'Read the exchange and choose the particle that best fits the pragmatic tone of the final line, distinguishing genuine curiosity from a topic shift.',
-      prompt: 'Complete: "Warum weinst du ___?"',
+      prompt: 'Lehrerin means: "So why are you crying?"',
       dialogue: [
         {
           speaker: 'Lehrerin',
@@ -1382,7 +1370,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Lehrerin',
           german: 'Warum weinst du ___?',
-          english: 'So why are you crying?',
         },
       ],
       options: [
@@ -1471,7 +1458,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['doch', 'dialogue', 'production'],
       instruction:
         'Read the exchange and fill in the missing particle. Capitalisation is not checked.',
-      prompt: 'Complete: "Nimm ___ meinen Regenschirm mit, es regnet!"',
+      prompt: 'Mama means: "Do take my umbrella, it\'s raining!"',
       dialogue: [
         {
           speaker: 'Mama',
@@ -1481,7 +1468,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Mama',
           german: 'Nimm ___ meinen Regenschirm mit, es regnet!',
-          english: "Do take my umbrella, it's raining!",
         },
       ],
       acceptedAnswers: ['doch'],
@@ -1500,8 +1486,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['mal', 'dialogue', 'production'],
       instruction:
         'Read the exchange and fill in the missing particle. Capitalisation is not checked.',
-      prompt:
-        'Complete: "Probier ___ diese Suppe, ich habe ein neues Rezept ausprobiert."',
+      prompt: 'Enkelin means: "Just try this soup, I tried a new recipe."',
       dialogue: [
         {
           speaker: 'Opa',
@@ -1511,7 +1496,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Enkelin',
           german: 'Probier ___ diese Suppe, ich habe ein neues Rezept ausprobiert.',
-          english: 'Just try this soup, I tried a new recipe.',
         },
       ],
       acceptedAnswers: ['mal'],
@@ -1529,7 +1513,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['ja', 'dialogue', 'production'],
       instruction:
         'Read the exchange and fill in the missing particle. Capitalisation is not checked.',
-      prompt: 'Complete: "Das ist ___ viel teurer geworden!"',
+      prompt: 'Tim means: "Wow, that\'s gotten a lot more expensive!"',
       dialogue: [
         {
           speaker: 'Tim',
@@ -1539,7 +1523,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Tim',
           german: 'Das ist ___ viel teurer geworden!',
-          english: "Wow, that's gotten a lot more expensive!",
         },
       ],
       acceptedAnswers: ['ja'],
@@ -1557,7 +1540,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['denn', 'dialogue', 'production'],
       instruction:
         'Read the exchange and fill in the missing particle. Capitalisation is not checked.',
-      prompt: 'Complete: "Warum weinst du ___, ist etwas passiert?"',
+      prompt: 'Freund means: "So why are you crying, did something happen?"',
       dialogue: [
         {
           speaker: 'Freund',
@@ -1567,7 +1550,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Freund',
           german: 'Warum weinst du ___, ist etwas passiert?',
-          english: 'So why are you crying, did something happen?',
         },
       ],
       acceptedAnswers: ['denn'],
@@ -1586,7 +1568,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['eigentlich', 'dialogue', 'production'],
       instruction:
         'Read the exchange and fill in the missing particle. Capitalisation is not checked.',
-      prompt: 'Complete: "Was machst du ___ in den Sommerferien?"',
+      prompt: 'Marek means: "So, what are you actually doing over summer break?"',
       dialogue: [
         {
           speaker: 'Marek',
@@ -1596,7 +1578,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Marek',
           german: 'Was machst du ___ in den Sommerferien?',
-          english: 'So, what are you actually doing over summer break?',
         },
       ],
       acceptedAnswers: ['eigentlich'],
@@ -1615,7 +1596,7 @@ export const chapter050: ChapterDefinition = {
       grammarFocus: ['wohl', 'dialogue', 'production'],
       instruction:
         'Read the exchange and fill in the missing particle. Capitalisation is not checked.',
-      prompt: 'Complete: "Die Schlüssel liegen ___ noch im Auto."',
+      prompt: 'Mitbewohnerin means: "Your keys are probably still in the car."',
       dialogue: [
         {
           speaker: 'Mitbewohner',
@@ -1625,7 +1606,6 @@ export const chapter050: ChapterDefinition = {
         {
           speaker: 'Mitbewohnerin',
           german: 'Die Schlüssel liegen ___ noch im Auto.',
-          english: 'Your keys are probably still in the car.',
         },
       ],
       acceptedAnswers: ['wohl'],
@@ -1722,6 +1702,10 @@ export const chapter050: ChapterDefinition = {
         'Mach doch das Licht aus!',
         'Machst du mal das Licht aus?',
         'Kannst du mal das Licht ausmachen?',
+        'Kannst du das Licht mal ausmachen?',
+        'Kannst du bitte mal das Licht ausmachen?',
+        'Machst du das Licht mal aus?',
+        'Mach bitte mal das Licht aus!',
       ],
       answerMode: 'normalized',
       placeholder: 'Mach doch mal das Licht aus!',
@@ -1884,7 +1868,7 @@ export const chapter050: ChapterDefinition = {
         },
       ],
       explanation:
-        'Several particles double as ordinary, stressed words with a completely different, literal function.',
+        'Several particles double as ordinary words with a completely different, literal function.',
     },
     {
       id: 'ch50-ex-64',

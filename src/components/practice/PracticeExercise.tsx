@@ -12,6 +12,7 @@ export interface PracticeExerciseProps {
   isLast: boolean;
   onFinish: () => void;
   onExit: () => void;
+  exitLabel?: string;
 }
 
 /**
@@ -25,6 +26,7 @@ export function PracticeExercise({
   isLast,
   onFinish,
   onExit,
+  exitLabel,
 }: PracticeExerciseProps) {
   const practice = usePracticeStore();
   const showHints = useSettingsStore((state) => state.showHints);
@@ -112,6 +114,7 @@ export function PracticeExercise({
       onNext={practice.goToNext}
       onFinish={onFinish}
       onExit={onExit}
+      exitLabel={exitLabel}
     />
   );
 }

@@ -111,7 +111,7 @@ export const chapter059: ChapterDefinition = {
           ['zu', 'dazu', 'wozu'],
           ['zwischen', 'dazwischen', 'wozwischen'],
         ],
-        note: 'The linking -r- appears only when the preposition begins with a vowel (an, auf, aus, in, über, um, unter); all consonant-initial prepositions in this table (mit, von, zu, nach, für, bei, gegen, durch, hinter, neben, vor, zwischen) take no -r-.',
+        note: 'The linking -r- appears only when the preposition begins with a vowel (an, auf, aus, in, über, um, unter); all consonant-initial prepositions in this table (mit, von, zu, nach, für, bei, gegen, durch, hinter, neben, vor, zwischen) take no -r-. wohinter, woneben and wozwischen exist but are rare; in questions, hinter was / neben was or Wo …? is far more common.',
       },
     ],
     examples: [
@@ -413,17 +413,17 @@ export const chapter059: ChapterDefinition = {
       grammarFocus: ['da-compound', 'whole-idea'],
       instruction:
         'Read the exchange, then choose the word that best completes the final line.',
-      prompt: 'Complete: "Kein Problem, ich habe nichts ___."',
+      prompt: 'Complete Mia\'s answer: "Kein Problem, ich habe nichts ___."',
       dialogue: [
         {
           speaker: 'Mia',
-          german: 'Kommst du am Samstag zur Party?',
-          english: 'Are you coming to the party on Saturday?',
+          german: 'Am Samstag feiere ich meinen Geburtstag.',
+          english: 'I am celebrating my birthday on Saturday.',
         },
         {
           speaker: 'Jonas',
-          german: 'Nein, ich habe leider keine Zeit.',
-          english: "No, unfortunately I don't have time.",
+          german: 'Darf ich meinen Bruder mitbringen?',
+          english: 'May I bring my brother along?',
         },
       ],
       options: [
@@ -434,7 +434,7 @@ export const chapter059: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'dagegen here refers back to the whole situation just described (Jonas not being able to come), not to a single noun.',
+        'etwas dagegen haben means to object to something; dagegen refers back to the whole idea just mentioned (Jonas bringing his brother), not to a single noun.',
     },
     {
       id: 'ch59-ex-10',
@@ -501,7 +501,7 @@ export const chapter059: ChapterDefinition = {
       grammarFocus: ['da-compound', 'person-vs-thing'],
       instruction:
         'Read the exchange, then choose the word that best completes the final line.',
-      prompt: 'Complete Nina\'s reply: "Ja, wir haben gestern lange ___ gesprochen."',
+      prompt: "Complete Nina's reply.",
       dialogue: [
         {
           speaker: 'Lukas',
@@ -533,7 +533,7 @@ export const chapter059: ChapterDefinition = {
       grammarFocus: ['pronoun', 'person-vs-thing'],
       instruction:
         'Read the exchange, then choose the word that best completes the final line.',
-      prompt: 'Complete Nina\'s reply: "Ja, ich habe gestern lange ___ gesprochen."',
+      prompt: "Complete Nina's reply.",
       dialogue: [
         {
           speaker: 'Lukas',
@@ -1039,7 +1039,7 @@ export const chapter059: ChapterDefinition = {
       grammarFocus: ['da-compound', 'person-vs-thing'],
       instruction:
         'Read the exchange, then choose the word that best completes the final line.',
-      prompt: 'Complete: "Ich bedanke mich herzlich ___."',
+      prompt: "Complete Emma's reply.",
       dialogue: [
         {
           speaker: 'Paul',
@@ -1071,7 +1071,7 @@ export const chapter059: ChapterDefinition = {
       grammarFocus: ['da-compound', 'whole-idea', 'linking-r'],
       instruction:
         'Read the exchange, then choose the word that best completes the final line.',
-      prompt: 'Complete: "Ich freue mich total ___."',
+      prompt: "Complete Lea's reply.",
       dialogue: [
         {
           speaker: 'Tom',

@@ -1125,7 +1125,7 @@ export const chapter040: ChapterDefinition = {
       grammarFocus: ['nominative', 'error-correction', 'masculine'],
       instruction: 'Click the word with the wrong adjective ending.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Der', 'rot', 'Apfel', 'schmeckt', 'gut', '.'],
+      tokens: ['Der', 'rot', 'Apfel', 'schmeckt', 'gut.'],
       errorTokenIndex: 1,
       correction: 'rote',
       explanation:
@@ -1140,7 +1140,7 @@ export const chapter040: ChapterDefinition = {
       grammarFocus: ['nominative', 'error-correction', 'masculine'],
       instruction: 'Click the word with the wrong adjective ending.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Ein', 'rote', 'Apfel', 'liegt', 'auf', 'dem', 'Tisch', '.'],
+      tokens: ['Ein', 'rote', 'Apfel', 'liegt', 'auf', 'dem', 'Tisch.'],
       errorTokenIndex: 1,
       correction: 'roter',
       explanation:
@@ -1155,7 +1155,7 @@ export const chapter040: ChapterDefinition = {
       grammarFocus: ['accusative', 'error-correction', 'masculine'],
       instruction: 'Click the word with the wrong adjective ending.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Ich', 'kaufe', 'den', 'rote', 'Apfel', '.'],
+      tokens: ['Ich', 'kaufe', 'den', 'rote', 'Apfel.'],
       errorTokenIndex: 3,
       correction: 'roten',
       explanation:
@@ -1170,7 +1170,7 @@ export const chapter040: ChapterDefinition = {
       grammarFocus: ['accusative', 'error-correction', 'masculine'],
       instruction: 'Click the word with the wrong adjective ending.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Er', 'kauft', 'einen', 'rote', 'Apfel', '.'],
+      tokens: ['Er', 'kauft', 'einen', 'rote', 'Apfel.'],
       errorTokenIndex: 3,
       correction: 'roten',
       explanation:
@@ -1185,7 +1185,7 @@ export const chapter040: ChapterDefinition = {
       grammarFocus: ['nominative', 'error-correction', 'neuter'],
       instruction: 'Click the word with the wrong adjective ending.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Ein', 'neus', 'Auto', 'kostet', 'viel', '.'],
+      tokens: ['Ein', 'neus', 'Auto', 'kostet', 'viel.'],
       errorTokenIndex: 1,
       correction: 'neues',
       explanation:
@@ -1200,7 +1200,7 @@ export const chapter040: ChapterDefinition = {
       grammarFocus: ['nominative', 'error-correction', 'feminine'],
       instruction: 'Click the word with the wrong adjective ending.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Die', 'klein', 'Tasche', 'ist', 'praktisch', '.'],
+      tokens: ['Die', 'klein', 'Tasche', 'ist', 'praktisch.'],
       errorTokenIndex: 1,
       correction: 'kleine',
       explanation:
@@ -1219,23 +1219,27 @@ export const chapter040: ChapterDefinition = {
       pairs: [
         {
           id: 'ch40-ex-57-p1',
-          left: 'der ___ Tisch (nominativ, maskulin)',
+          left: 'der ___ Tisch (alt; nominativ, maskulin)',
           right: 'alte',
         },
         {
           id: 'ch40-ex-57-p2',
-          left: 'die ___ Blume (nominativ, feminin)',
+          left: 'die ___ Blume (schön; nominativ, feminin)',
           right: 'schöne',
         },
-        { id: 'ch40-ex-57-p3', left: 'das ___ Buch (nominativ, neutrum)', right: 'neue' },
+        {
+          id: 'ch40-ex-57-p3',
+          left: 'das ___ Buch (neu; nominativ, neutrum)',
+          right: 'neue',
+        },
         {
           id: 'ch40-ex-57-p4',
-          left: 'ein ___ Tisch (nominativ, maskulin)',
+          left: 'ein ___ Tisch (alt; nominativ, maskulin)',
           right: 'alter',
         },
         {
           id: 'ch40-ex-57-p5',
-          left: 'ein ___ Buch (nominativ, neutrum)',
+          left: 'ein ___ Buch (neu; nominativ, neutrum)',
           right: 'neues',
         },
       ],
@@ -1255,23 +1259,27 @@ export const chapter040: ChapterDefinition = {
       pairs: [
         {
           id: 'ch40-ex-58-p1',
-          left: 'den ___ Hund (akkusativ, maskulin)',
+          left: 'den ___ Hund (braun; akkusativ, maskulin)',
           right: 'braunen',
         },
         {
           id: 'ch40-ex-58-p2',
-          left: 'die ___ Tasche (akkusativ, feminin)',
+          left: 'die ___ Tasche (rot; akkusativ, feminin)',
           right: 'rote',
         },
-        { id: 'ch40-ex-58-p3', left: 'das ___ Auto (akkusativ, neutrum)', right: 'neue' },
+        {
+          id: 'ch40-ex-58-p3',
+          left: 'das ___ Auto (neu; akkusativ, neutrum)',
+          right: 'neue',
+        },
         {
           id: 'ch40-ex-58-p4',
-          left: 'einen ___ Hund (akkusativ, maskulin)',
+          left: 'einen ___ Hund (klein; akkusativ, maskulin)',
           right: 'kleinen',
         },
         {
           id: 'ch40-ex-58-p5',
-          left: 'ein ___ Auto (akkusativ, neutrum)',
+          left: 'ein ___ Auto (schnell; akkusativ, neutrum)',
           right: 'schnelles',
         },
       ],
@@ -1289,11 +1297,27 @@ export const chapter040: ChapterDefinition = {
         'Match each phrase to the adjective form that correctly fills its gap.',
       prompt: 'Match the phrase to the correct nominative ending after ein/eine/ein.',
       pairs: [
-        { id: 'ch40-ex-59-p1', left: 'ein ___ Mann (nominativ)', right: 'freundlicher' },
-        { id: 'ch40-ex-59-p2', left: 'eine ___ Frau (nominativ)', right: 'freundliche' },
-        { id: 'ch40-ex-59-p3', left: 'ein ___ Kind (nominativ)', right: 'freundliches' },
-        { id: 'ch40-ex-59-p4', left: 'ein ___ Garten (nominativ)', right: 'grüner' },
-        { id: 'ch40-ex-59-p5', left: 'eine ___ Stadt (nominativ)', right: 'große' },
+        {
+          id: 'ch40-ex-59-p1',
+          left: 'ein ___ Mann (freundlich, nominativ)',
+          right: 'freundlicher',
+        },
+        {
+          id: 'ch40-ex-59-p2',
+          left: 'eine ___ Frau (freundlich, nominativ)',
+          right: 'freundliche',
+        },
+        {
+          id: 'ch40-ex-59-p3',
+          left: 'ein ___ Kind (freundlich, nominativ)',
+          right: 'freundliches',
+        },
+        {
+          id: 'ch40-ex-59-p4',
+          left: 'ein ___ Garten (grün, nominativ)',
+          right: 'grüner',
+        },
+        { id: 'ch40-ex-59-p5', left: 'eine ___ Stadt (groß, nominativ)', right: 'große' },
       ],
       explanation:
         'After ein/eine/ein in the nominative, the endings echo the der-words: -er (masculine, like der), -e (feminine, like die), -es (neuter, like das).',

@@ -13,6 +13,8 @@ export interface ExerciseNavigationProps {
   onNext: () => void;
   onFinish: () => void;
   onExit: () => void;
+  /** The placement test is not practice, so it names its own exit. */
+  exitLabel?: string;
 }
 
 export function ExerciseNavigation({
@@ -26,6 +28,7 @@ export function ExerciseNavigation({
   onNext,
   onFinish,
   onExit,
+  exitLabel = 'Exit practice',
 }: ExerciseNavigationProps) {
   const tryAgainRef = useRef<HTMLButtonElement>(null);
   const continueRef = useRef<HTMLButtonElement>(null);
@@ -78,7 +81,7 @@ export function ExerciseNavigation({
       </div>
 
       <Button type="button" variant="ghost" onClick={onExit}>
-        Exit practice
+        {exitLabel}
       </Button>
     </div>
   );

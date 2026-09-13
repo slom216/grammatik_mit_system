@@ -53,7 +53,7 @@ export const chapter060: ChapterDefinition = {
         id: 'ch60-rule-03',
         heading: 'Building synthetic forms for strong verbs: umlaut + endings',
         paragraphs: [
-          'For strong verbs that still keep a common synthetic Konjunktiv II form (kommen, gehen, geben, and a number of others), the form is built in two steps. First, take the simple-past stem and, if it contains the vowel a, o, or u, add an umlaut: a → ä, o → ö, u → ü. Second, add the personal ending -e / -est / -e / -en / -et / -en.',
+          'For strong verbs that still keep a common synthetic Konjunktiv II form (kommen, gehen, geben, and a number of others), the form is built in two steps. First, take the simple-past stem and, if it contains the vowel a, o, or u, add an umlaut: a → ä, o → ö, u → ü. Second, add the personal ending -e / -est / -e / -en / -et / -en. For du and ihr the e is often dropped (kämst, kämt, wärst, wärt, gäbst); these short forms are just as standard as kämest, kämet, wärest, wäret.',
           'kommen: simple past kam → umlauted stem käm- → käme, kämest, käme, kämen, kämet, kämen. finden: simple past fand → umlauted stem fänd- → fände, fändest, fände, fänden, fändet, fänden. geben: simple past gab → umlauted stem gäb- → gäbe.',
           'If the simple-past stem has no a, o, or u to umlaut, the stem stays exactly as it is and only the endings are added: gehen: simple past ging → ginge, gingest, ginge, gingen, ginget, gingen (no umlaut possible; i does not umlaut). bleiben: blieb → bliebe. schreiben: schrieb → schriebe.',
         ],
@@ -62,8 +62,8 @@ export const chapter060: ChapterDefinition = {
         id: 'ch60-rule-04',
         heading: 'A closed, memorizable list — not a productive rule',
         paragraphs: [
-          'It is tempting to think the umlaut-plus-ending pattern can be applied freely to any strong verb, but in practice only a limited set of high-frequency strong verbs still has a synthetic Konjunktiv II form that sounds natural today: sein, haben, werden, gehen, kommen, sehen, geben, nehmen, fahren, bleiben, essen, trinken, lesen, schreiben, sprechen, finden, wissen, stehen, tun, waschen, rufen, and the six modals.',
-          'For every other verb — bringen, denken, kennen, laufen, tragen, schlafen, treffen, beginnen, gewinnen, heißen, fliegen, ziehen, and any ordinary weak verb such as machen, kaufen, spielen, or lernen — modern German simply uses würde + infinitive. A synthetic form might technically be constructible, but it would sound archaic, overly literary, or simply wrong in everyday speech, so this course treats würde + infinitive as the only correct option for those verbs.',
+          'It is tempting to think the umlaut-plus-ending pattern can be applied freely to any strong verb, but in practice only a limited set of high-frequency strong verbs still has a synthetic Konjunktiv II form that sounds natural today: sein, haben, werden, gehen, kommen, sehen, geben, nehmen, fahren, bleiben, essen, trinken, lesen, schreiben, sprechen, finden, wissen, stehen, tun, and the six modals, plus the mixed verbs bringen (brächte) and denken (dächte). waschen (wüsche) and rufen (riefe) also have synthetic forms, but they are rarer and mostly written.',
+          'For every other verb — kennen, laufen, tragen, schlafen, treffen, beginnen, gewinnen, heißen, fliegen, ziehen, and any ordinary weak verb such as machen, kaufen, spielen, or lernen — modern German simply uses würde + infinitive. A synthetic form might technically be constructible, but it would sound archaic, overly literary, or simply wrong in everyday speech, so this course treats würde + infinitive as the only correct option for those verbs.',
           'The safest approach as a learner: actively use the synthetic forms only for the closed list above, and default to würde + infinitive for everything else. Nobody will ever fault you for using würde too often; using an obscure synthetic form will sound strange.',
         ],
       },
@@ -71,7 +71,7 @@ export const chapter060: ChapterDefinition = {
         id: 'ch60-rule-05',
         heading: 'Konjunktiv II vs. the simple past: same family, different endings',
         paragraphs: [
-          'Because Konjunktiv II grows out of the simple-past stem, the two forms are close relatives — but they are not built with the same endings. The simple past of a strong verb uses no ending at all for ich/er (kam, ging, fand); Konjunktiv II always adds -e for ich/er (käme, ginge, fände). The simple-past du-ending is -st (kamst); the Konjunktiv II du-ending is -est (kämest) — an extra e that chapter 54 did not use.',
+          'Because Konjunktiv II grows out of the simple-past stem, the two forms are close relatives — but they are not built with the same endings. The simple past of a strong verb uses no ending at all for ich/er (kam, ging, fand); Konjunktiv II always adds -e for ich/er (käme, ginge, fände). The simple-past du-form is kamst; the Konjunktiv II du-form is kämest or, just as standard, kämst — the umlaut is what tells it apart from the simple past.',
           'For weak verbs, this distinction disappears: the simple past of kaufen is kaufte, and a synthetic Konjunktiv II would also come out as kaufte — completely identical in shape. This ambiguity is exactly why weak verbs abandon the synthetic form altogether and use würde kaufen instead, keeping the two moods unmistakably apart.',
           'The modals split down the middle: können, müssen, dürfen, and mögen (as möchte) have an umlautable stem vowel, so their Konjunktiv II clearly differs in shape from their simple past (konnte vs. könnte, musste vs. müsste, durfte vs. dürfte, mochte vs. möchte). wollen and sollen have no umlautable vowel in their stem, so — just like weak verbs — wollte and sollte look exactly the same whether the sentence is simple past or Konjunktiv II; only the surrounding sentence tells you which mood is meant.',
         ],
@@ -98,6 +98,7 @@ export const chapter060: ChapterDefinition = {
           ['ihr', 'wäret', 'hättet', 'you (pl.) would be / would have'],
           ['sie/Sie', 'wären', 'hätten', 'they/you (formal) would be / would have'],
         ],
+        note: 'The short forms du wärst and ihr wärt are just as standard as wärest and wäret, and more common in speech.',
       },
       {
         id: 'ch60-table-02',
@@ -312,17 +313,17 @@ export const chapter060: ChapterDefinition = {
       },
       {
         incorrect: 'Wenn du Zeit hättest, kamst du gern mit.',
-        correct: 'Wenn du Zeit hättest, kämest du gern mit.',
+        correct: 'Wenn du Zeit hättest, kämst du gern mit.',
         explanation:
-          'kamst is the simple-past du-form (indicative); the Konjunktiv II du-form is kämest, with the umlaut and the -est ending.',
+          'kamst is the simple-past du-form (indicative); the Konjunktiv II du-form needs the umlaut: kämst, or the fuller kämest.',
       },
     ],
     remember: [
-      'Konjunktiv II has two building patterns: würde + infinitive (analytic, works for almost any verb) and a one-word synthetic form (used only for a closed set of high-frequency verbs).',
+      'Konjunktiv II has two building patterns: würde + infinitive (analytic, works for almost any verb) and a one-word synthetic form (used mainly for a limited set of high-frequency verbs).',
       'würde + infinitive is the safe default, and the only correct option for weak verbs (würde machen, würde kaufen) and most other verbs outside the closed list.',
       'sein, haben, and the six modal verbs almost always use their synthetic forms instead of würde: wäre, hätte, könnte, müsste, wollte, möchte, dürfte, sollte.',
-      'Synthetic strong-verb forms take the umlauted simple-past stem (a/o/u → ä/ö/ü, where possible) plus the endings -e/-est/-e/-en/-et/-en.',
-      'This ending set is different from the plain simple-past strong endings: compare kamst (simple past, du) with kämest (Konjunktiv II, du).',
+      'Synthetic strong-verb forms take the umlauted simple-past stem (a/o/u → ä/ö/ü, where possible) plus the endings -e/-est/-e/-en/-et/-en (du and ihr often shortened: kämst, wärt).',
+      'This ending set is different from the plain simple-past strong endings: compare kamst (simple past, du) with kämst / kämest (Konjunktiv II, du).',
       'For weak verbs, and for wollte/sollte, the Konjunktiv II form looks identical to the simple past — würde + infinitive (or context, for wollte/sollte) is what keeps the two moods apart.',
     ],
   },
@@ -600,14 +601,14 @@ export const chapter060: ChapterDefinition = {
         'Choose the correct Konjunktiv II counterpart of the factual statement.',
       prompt: 'Factual: "Ich habe keine Zeit." — Choose the Konjunktiv II version.',
       options: [
-        { id: 'a', text: 'Ich hätte Zeit.' },
+        { id: 'a', text: 'Ich hätte keine Zeit.' },
         { id: 'b', text: 'Ich habe Zeit gehabt.' },
         { id: 'c', text: 'Ich werde Zeit haben.' },
         { id: 'd', text: 'Ich hatte Zeit.' },
       ],
       correctOptionId: 'a',
       explanation:
-        'hätte is the synthetic Konjunktiv II form of haben, turning the factual statement into a hypothetical one.',
+        'hätte is the synthetic Konjunktiv II form of haben; the negation keine stays, so the meaning is kept but turned hypothetical: Ich hätte keine Zeit.',
     },
     {
       id: 'ch60-ex-15',
@@ -655,16 +656,17 @@ export const chapter060: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'endings', 'du-form'],
       instruction: 'Choose the correct rule about endings.',
-      prompt: 'Which ending do all synthetic Konjunktiv II forms take for du?',
+      prompt:
+        'Which statement about the du-form of synthetic Konjunktiv II (kommen) is correct?',
       options: [
-        { id: 'a', text: '-est' },
-        { id: 'b', text: '-st' },
-        { id: 'c', text: '-est or -st, depending on the verb' },
-        { id: 'd', text: '-te' },
+        { id: 'a', text: 'Both kämest and kämst are standard.' },
+        { id: 'b', text: 'Only kämest is correct.' },
+        { id: 'c', text: 'kamst is the Konjunktiv II form.' },
+        { id: 'd', text: 'The ending is -te: kämte.' },
       ],
       correctOptionId: 'a',
       explanation:
-        'The Konjunktiv II du-ending is always -est (kämest, hättest, wärest), unlike the simple-past du-ending -st (kamst).',
+        'The full ending -est (kämest, wärest) and the short -st (kämst, wärst) are both standard. What matters is the umlaut: kamst without it is simple past.',
     },
     {
       id: 'ch60-ex-18',
@@ -858,11 +860,12 @@ export const chapter060: ChapterDefinition = {
       instruction:
         'Write the synthetic Konjunktiv II form of sehen for du. Capitalisation is not checked.',
       prompt: 'du → sehen (Konjunktiv II)',
-      acceptedAnswers: ['sähest'],
+      acceptedAnswers: ['sähest', 'sähst'],
       answerMode: 'caseInsensitive',
       placeholder: 'sähest',
       maxLength: 15,
-      explanation: 'sah umlauts to säh-, plus the du-ending -est: sähest.',
+      explanation:
+        'sah umlauts to säh-, plus the du-ending -est: sähest (the short form sähst is also accepted).',
     },
     {
       id: 'ch60-ex-30',
@@ -874,12 +877,12 @@ export const chapter060: ChapterDefinition = {
       instruction:
         'Rewrite the statement in Konjunktiv II, using the synthetic form of haben. Capitalisation and punctuation are checked.',
       prompt: 'Ich habe keine Zeit. → Konjunktiv II mit hätte',
-      acceptedAnswers: ['Ich hätte Zeit.', 'Ich hätte Zeit'],
+      acceptedAnswers: ['Ich hätte keine Zeit.', 'Ich hätte keine Zeit'],
       answerMode: 'normalized',
       placeholder: 'Ich hätte ...',
       maxLength: 40,
       explanation:
-        'habe becomes hätte, and the factual statement turns into a hypothetical one: Ich hätte Zeit.',
+        'habe becomes hätte and keine stays, so the factual statement turns into a hypothetical one: Ich hätte keine Zeit.',
     },
     {
       id: 'ch60-ex-31',
@@ -1122,11 +1125,11 @@ export const chapter060: ChapterDefinition = {
         { id: 'a', text: 'gäbest' },
         { id: 'b', text: 'gabst' },
         { id: 'c', text: 'gibst' },
-        { id: 'd', text: 'gäbst' },
+        { id: 'd', text: 'gäbtest' },
       ],
       correctOptionId: 'a',
       explanation:
-        'gab umlauts to gäb-, and the Konjunktiv II du-ending is -est, giving gäbest; gäbst is missing the linking e.',
+        'gab umlauts to gäb-, and the Konjunktiv II du-ending is -est, giving gäbest (short form gäbst); gabst is simple past, gibst is present, and gäbtest is not a real form.',
     },
     {
       id: 'ch60-ex-44',
@@ -1177,11 +1180,11 @@ export const chapter060: ChapterDefinition = {
         { id: 'a', text: 'führest' },
         { id: 'b', text: 'fuhrst' },
         { id: 'c', text: 'fährst' },
-        { id: 'd', text: 'führst' },
+        { id: 'd', text: 'führtest' },
       ],
       correctOptionId: 'a',
       explanation:
-        'fuhr umlauts to führ-, and the du-ending is -est, giving führest; führst is missing the linking e.',
+        'fuhr umlauts to führ-, and the du-ending is -est, giving führest (short form führst); fuhrst is simple past, fährst is present, and führtest belongs to führen (to lead), not fahren.',
     },
     {
       id: 'ch60-ex-47',
@@ -1231,11 +1234,12 @@ export const chapter060: ChapterDefinition = {
       instruction:
         'Write the synthetic Konjunktiv II form of sein for du. Capitalisation is not checked.',
       prompt: 'du → sein (Konjunktiv II)',
-      acceptedAnswers: ['wärest'],
+      acceptedAnswers: ['wärest', 'wärst'],
       answerMode: 'caseInsensitive',
       placeholder: 'wärest',
       maxLength: 15,
-      explanation: 'The du-form of the synthetic Konjunktiv II of sein is wärest.',
+      explanation:
+        'The du-form of the synthetic Konjunktiv II of sein is wärst or the fuller wärest; both are standard.',
     },
     {
       id: 'ch60-ex-50',
@@ -1247,11 +1251,12 @@ export const chapter060: ChapterDefinition = {
       instruction:
         'Write the synthetic Konjunktiv II form of sein for ihr. Capitalisation is not checked.',
       prompt: 'ihr → sein (Konjunktiv II)',
-      acceptedAnswers: ['wäret'],
+      acceptedAnswers: ['wäret', 'wärt'],
       answerMode: 'caseInsensitive',
       placeholder: 'wäret',
       maxLength: 15,
-      explanation: 'The ihr-form of the synthetic Konjunktiv II of sein is wäret.',
+      explanation:
+        'The ihr-form of the synthetic Konjunktiv II of sein is wärt or the fuller wäret; both are standard.',
     },
     {
       id: 'ch60-ex-51',
@@ -1412,11 +1417,12 @@ export const chapter060: ChapterDefinition = {
       instruction:
         'Write the synthetic Konjunktiv II form of kommen for du. Capitalisation is not checked.',
       prompt: 'du → kommen (Konjunktiv II)',
-      acceptedAnswers: ['kämest'],
+      acceptedAnswers: ['kämest', 'kämst'],
       answerMode: 'caseInsensitive',
       placeholder: 'kämest',
       maxLength: 15,
-      explanation: 'kam umlauts to käm-, and the du-ending is -est: kämest.',
+      explanation:
+        'kam umlauts to käm-, and the du-ending is -est: kämest (the short form kämst is equally standard).',
     },
     {
       id: 'ch60-ex-61',
@@ -1574,9 +1580,9 @@ export const chapter060: ChapterDefinition = {
       prompt: 'Du ___ das bestimmt gern selbst.',
       templateParts: ['Du ', ' das bestimmt gern selbst.'],
       slots: [{ id: 'slot1', correctWord: 'sähest' }],
-      wordBank: ['sähest', 'sahst', 'siehst', 'sähst'],
+      wordBank: ['sähest', 'sahst', 'siehst', 'sähtest'],
       explanation:
-        'sah umlauts to säh-, and the du-ending is -est, giving sähest; sähst is missing the linking e.',
+        'sah umlauts to säh-, and the du-ending is -est, giving sähest (short form sähst); sahst is simple past, siehst is present, and sähtest is not a real form.',
     },
     {
       id: 'ch60-ex-71',
@@ -1822,13 +1828,13 @@ export const chapter060: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['konjunktiv-ii', 'synthetic-form', 'kommen', 'du-ending'],
       instruction:
-        'Find the token that is missing the correct Konjunktiv II du-ending and correct it.',
-      prompt: 'Du kämst gern mit.',
-      tokens: ['Du', 'kämst', 'gern', 'mit.'],
-      errorTokenIndex: 1,
-      correction: 'kämest',
+        'Find the verb that is simple past instead of Konjunktiv II and correct it.',
+      prompt: 'Wenn du Zeit hättest, kamst du gern mit.',
+      tokens: ['Wenn', 'du', 'Zeit', 'hättest,', 'kamst', 'du', 'gern', 'mit.'],
+      errorTokenIndex: 4,
+      correction: 'kämst',
       explanation:
-        'The Konjunktiv II du-ending is -est, not just -st: the umlauted stem käm- needs kämest, not kämst.',
+        'kamst is simple past; the unreal main clause needs Konjunktiv II with the umlaut: kämst (or the fuller kämest).',
     },
     {
       id: 'ch60-ex-85',

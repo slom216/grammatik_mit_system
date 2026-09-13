@@ -16,7 +16,7 @@ export const chapter025: ChapterDefinition = {
   explanation: {
     introduction: [
       'You already know sein (to be) and haben (to have) in the present tense: ich bin, ich habe. To talk about the past, German has a simple past tense (Präteritum) for these two verbs, formed with the stems war- and hatte-. It works like a completely new set of six endings that you attach to these stems, one for each person.',
-      'Almost every other German verb is normally talked about in the past using the present perfect tense (Perfekt) in conversation — a pattern chapter 30 will cover in detail. sein and haben are the big exception: even in casual, spoken German, people say ich war and ich hatte rather than the more formal-sounding ich bin gewesen or ich habe gehabt. So the simple past forms of sein and haben are not just for writing — you need them for everyday speaking, too.',
+      'Almost every other German verb is normally talked about in the past using the present perfect tense (Perfekt) in conversation — a pattern chapter 30 will cover in detail. sein and haben are the big exception: in much of Germany, people say ich war and ich hatte even in casual conversation. The Perfekt forms ich bin gewesen and ich habe gehabt are also correct and common in speech — in southern Germany, Austria and Switzerland they are the everyday colloquial choice. Either way, the simple past forms of sein and haben are not just for writing — you need them for everyday speaking, too.',
       'This chapter focuses only on war and hatte: how to conjugate them, how to negate them, and which time words typically signal that a sentence is about the past.',
     ],
     rules: [
@@ -40,7 +40,7 @@ export const chapter025: ChapterDefinition = {
         id: 'ch25-rule-03',
         heading: 'Why war and hatte instead of the present perfect',
         paragraphs: [
-          'Most German verbs use the present perfect (Perfekt) in everyday spoken conversation — for example ich habe gearbeitet (I worked) rather than a simple past form. sein and haben break this rule: in speech as well as in writing, German speakers overwhelmingly prefer war and hatte over the present perfect forms ich bin gewesen and ich habe gehabt, which sound stiff or overly formal in casual talk.',
+          'Most German verbs use the present perfect (Perfekt) in everyday spoken conversation — for example ich habe gearbeitet (I worked) rather than a simple past form. sein and haben break this rule: in speech as well as in writing, most speakers in northern and central Germany prefer war and hatte. The present perfect forms ich bin gewesen and ich habe gehabt are not wrong or formal — they are also used in conversation, and in the south, Austria and Switzerland they are the normal spoken form.',
           'For now, just remember this as a fact about these two verbs. Chapter 30 explains in full which tense to choose for other verbs and why sein and haben behave differently.',
         ],
       },
@@ -50,7 +50,7 @@ export const chapter025: ChapterDefinition = {
         paragraphs: [
           'war is negated with nicht, placed after the form of war (and after any other sentence elements that belong closely with the verb): Ich war nicht müde. (I was not tired.) Er war gestern nicht zu Hause. (He was not home yesterday.)',
           'hatte is negated with kein when it is followed by a noun without an article (or with an indefinite article in the positive), and with nicht in other cases: Ich hatte keine Zeit. (I did not have time.) Wir hatten kein Auto. (We did not have a car.) As with the present tense, kein agrees with the gender, number, and case of the noun it negates.',
-          'If hatte is used without a following noun, or the sentence negates the whole statement rather than one noun, nicht is used instead: Das hatte ich nicht gewusst — but for the simple sentences in this chapter, the rule of thumb is: noun without article → kein; everything else → nicht.',
+          'If the noun after hatte has a definite article or a possessive, or the sentence negates the whole statement rather than one noun, nicht is used instead: Ich hatte den Schlüssel nicht. Er hatte sein Handy nicht dabei. For the simple sentences in this chapter, the rule of thumb is: noun without article → kein; everything else → nicht.',
         ],
       },
       {
@@ -581,7 +581,7 @@ export const chapter025: ChapterDefinition = {
       instruction:
         'Rewrite the sentence in the simple past. Capitalisation is checked; no full stop is required.',
       prompt: 'Ich bin heute krank. → (change heute to gestern and use the simple past)',
-      acceptedAnswers: ['Ich war gestern krank.', 'Ich war gestern krank'],
+      acceptedAnswers: ['Ich war gestern krank.', 'Gestern war ich krank.'],
       answerMode: 'normalized',
       placeholder: 'Ich war ...',
       maxLength: 60,
@@ -601,7 +601,7 @@ export const chapter025: ChapterDefinition = {
         'Wir haben heute viel Arbeit. → (change heute to letzte Woche and use the simple past)',
       acceptedAnswers: [
         'Wir hatten letzte Woche viel Arbeit.',
-        'Wir hatten letzte Woche viel Arbeit',
+        'Letzte Woche hatten wir viel Arbeit.',
       ],
       answerMode: 'normalized',
       placeholder: 'Wir hatten ...',
@@ -619,7 +619,7 @@ export const chapter025: ChapterDefinition = {
       instruction:
         'Write a complete sentence in the simple past using the cue words and nicht. Capitalisation is checked; no full stop is required.',
       prompt: 'du – gestern – müde – sein (negate with nicht)',
-      acceptedAnswers: ['Du warst gestern nicht müde.', 'Du warst gestern nicht müde'],
+      acceptedAnswers: ['Du warst gestern nicht müde.', 'Gestern warst du nicht müde.'],
       answerMode: 'normalized',
       placeholder: 'Du warst ...',
       maxLength: 60,
@@ -636,7 +636,7 @@ export const chapter025: ChapterDefinition = {
       instruction:
         'Write a complete sentence in the simple past using the cue words and kein. Capitalisation is checked; no full stop is required.',
       prompt: 'wir – damals – Auto (neuter) – haben (negate with kein)',
-      acceptedAnswers: ['Wir hatten damals kein Auto.', 'Wir hatten damals kein Auto'],
+      acceptedAnswers: ['Wir hatten damals kein Auto.', 'Damals hatten wir kein Auto.'],
       answerMode: 'normalized',
       placeholder: 'Wir hatten ...',
       maxLength: 60,
@@ -671,13 +671,18 @@ export const chapter025: ChapterDefinition = {
         'Write two connected sentences using the cue words: the first with war, the second with hatte. Capitalisation and punctuation are checked.',
       prompt:
         'Satz 1: letztes Jahr – ich – in Portugal (sein). Satz 2: dort – ich – gutes Wetter (haben).',
-      acceptedAnswers: ['Letztes Jahr war ich in Portugal. Dort hatte ich gutes Wetter.'],
+      acceptedAnswers: [
+        'Letztes Jahr war ich in Portugal. Dort hatte ich gutes Wetter.',
+        'Ich war letztes Jahr in Portugal. Dort hatte ich gutes Wetter.',
+        'Letztes Jahr war ich in Portugal. Ich hatte dort gutes Wetter.',
+        'Ich war letztes Jahr in Portugal. Ich hatte dort gutes Wetter.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Letztes Jahr war ich ... Dort hatte ich ...',
       maxLength: 100,
       multiline: true,
       explanation:
-        'Sentence 1 uses war (letztes Jahr signals the past); sentence 2 uses hatte, with the time word dort in position 1 and ich after the verb: Letztes Jahr war ich in Portugal. Dort hatte ich gutes Wetter.',
+        'Sentence 1 uses war (letztes Jahr signals the past); sentence 2 uses hatte, with the place word dort in position 1 and ich after the verb: Letztes Jahr war ich in Portugal. Dort hatte ich gutes Wetter.',
     },
     {
       id: 'ch25-ex-25',
@@ -1070,7 +1075,7 @@ export const chapter025: ChapterDefinition = {
         'Rewrite the sentence in the simple past. Capitalisation is checked; no full stop is required.',
       prompt:
         'Er ist heute krank. → (change heute to letzte Woche and use the simple past)',
-      acceptedAnswers: ['Er war letzte Woche krank.', 'Er war letzte Woche krank'],
+      acceptedAnswers: ['Er war letzte Woche krank.', 'Letzte Woche war er krank.'],
       answerMode: 'normalized',
       placeholder: 'Er war ...',
       maxLength: 60,

@@ -76,9 +76,9 @@ export const chapter074: ChapterDefinition = {
         id: 'ch74-rule-06',
         heading: 'With zu vs. without zu: the key contrast',
         paragraphs: [
-          'German infinitive constructions split into two groups. A small, closed group of governing verbs — the modal verbs, lassen, gehen/kommen/fahren in fixed activity combinations, sehen/hören/fühlen, and lernen/lehren — take a bare infinitive sent to the end of the clause, exactly like a modal verb. Every other verb that introduces a following infinitive — versuchen, hoffen, beginnen, vergessen, planen, vorhaben, and the vast majority of German verbs — requires a zu-infinitive: Ich versuche zu schwimmen (I am trying to swim), never "Ich versuche schwimmen."',
+          'German infinitive constructions split into two groups. A small, closed group of governing verbs — the modal verbs, lassen, gehen/kommen/fahren in fixed activity combinations, sehen/hören/fühlen, and (for a simply named skill) lernen/lehren — take a bare infinitive sent to the end of the clause, exactly like a modal verb. Every other verb that introduces a following infinitive — versuchen, hoffen, beginnen, vergessen, planen, vorhaben, and the vast majority of German verbs — requires a zu-infinitive: Ich versuche zu schwimmen (I am trying to swim), never "Ich versuche schwimmen."',
           'A reliable strategy: if you are not sure whether a governing verb needs zu, check whether it belongs to this short, closed list from chapter 74. If it does, use the bare infinitive. If it does not, default to zu — the zu-infinitive group is by far the larger and more general pattern in German.',
-          'The two patterns are never mixed: a governing verb either always takes zu or never does. Ich kann zu schwimmen and Ich versuche schwimmen are both ungrammatical for the same reason in opposite directions — each governing verb belongs to only one of the two groups.',
+          'Almost every governing verb belongs firmly to one of the two groups: Ich kann zu schwimmen and Ich versuche schwimmen are both ungrammatical for the same reason in opposite directions. The main exceptions are lernen and lehren (rule 5): with a simply named skill they take the bare infinitive (Sie lernt schwimmen), but with a longer or more abstract complement they often take zu (Sie lernt, geduldig zu sein), and both patterns occur with many skills (Er lernt Auto fahren / Er lernt, Auto zu fahren).',
         ],
       },
     ],
@@ -158,7 +158,7 @@ export const chapter074: ChapterDefinition = {
             'I see him swim / swimming.',
           ],
         ],
-        note: 'The governing verb decides the whole pattern: it either always requires zu or never allows it.',
+        note: 'For almost every governing verb, the verb decides the pattern. lernen and lehren are the main exception: bare infinitive for a simply named skill, often zu for a longer complement.',
       },
       {
         id: 'ch74-table-03',
@@ -620,7 +620,7 @@ export const chapter074: ChapterDefinition = {
       options: [
         {
           id: 'a',
-          text: 'Modal verbs, lassen, gehen/kommen/fahren in fixed combinations, sehen/hören/fühlen, lernen/lehren',
+          text: 'Modal verbs, lassen, gehen/kommen/fahren in fixed combinations, sehen/hören/fühlen',
         },
         { id: 'b', text: 'versuchen, hoffen, beginnen, vergessen' },
         { id: 'c', text: 'All German verbs that are followed by another verb' },
@@ -628,7 +628,7 @@ export const chapter074: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'This closed list — modals, lassen, gehen/kommen/fahren, sehen/hören/fühlen, lernen/lehren — is exactly the group covered in this chapter; every other verb requires zu.',
+        'Modals, lassen, gehen/kommen/fahren in fixed combinations, and sehen/hören/fühlen always take a bare infinitive. lernen/lehren usually do with a simple skill (Sie lernt schwimmen) but can also take zu (Sie lernt, geduldig zu sein), so they do not belong to the "always" group; verbs like versuchen and hoffen require zu.',
     },
     {
       id: 'ch74-ex-17',
@@ -1570,15 +1570,15 @@ export const chapter074: ChapterDefinition = {
       type: 'matching',
       level: 'recognition',
       grammarFocus: ['modal-verbs', 'conjugation'],
-      instruction: 'Match each subject pronoun to the matching modal-verb form.',
-      prompt: 'Match the pronoun to the correct modal-verb form.',
+      instruction: 'Match each subject pronoun and modal verb to the conjugated form.',
+      prompt: 'Match the pronoun + modal verb to the correct form.',
       pairs: [
-        { id: 'p1', left: 'ich', right: 'kann (können)' },
-        { id: 'p2', left: 'du', right: 'musst (müssen)' },
-        { id: 'p3', left: 'er/sie/es', right: 'will (wollen)' },
-        { id: 'p4', left: 'wir', right: 'dürfen' },
-        { id: 'p5', left: 'ihr', right: 'sollt (sollen)' },
-        { id: 'p6', left: 'sie/Sie', right: 'mögen' },
+        { id: 'p1', left: 'ich + können', right: 'kann' },
+        { id: 'p2', left: 'du + müssen', right: 'musst' },
+        { id: 'p3', left: 'er/sie/es + wollen', right: 'will' },
+        { id: 'p4', left: 'wir + dürfen', right: 'dürfen' },
+        { id: 'p5', left: 'ihr + sollen', right: 'sollt' },
+        { id: 'p6', left: 'sie/Sie + mögen', right: 'mögen' },
       ],
       explanation:
         'Each modal verb conjugates for person and number just like any other verb, while the following infinitive stays bare and unconjugated.',
@@ -1684,14 +1684,14 @@ export const chapter074: ChapterDefinition = {
       order: 76,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['learning-teaching-verbs', 'zu-or-no-zu', 'error-correction'],
+      grammarFocus: ['perception-verbs', 'zu-or-no-zu', 'error-correction'],
       instruction: 'Click the word that wrongly uses a zu-infinitive, and correct it.',
-      prompt: 'Er lernt gerade aufzuräumen.',
-      tokens: ['Er', 'lernt', 'gerade', 'aufzuräumen.'],
-      errorTokenIndex: 3,
-      correction: 'aufräumen.',
+      prompt: 'Ich höre ihn die Treppe hinaufzugehen.',
+      tokens: ['Ich', 'höre', 'ihn', 'die', 'Treppe', 'hinaufzugehen.'],
+      errorTokenIndex: 5,
+      correction: 'hinaufgehen.',
       explanation:
-        'lernen takes a bare infinitive when naming a skill directly — aufräumen, never the zu-form aufzuräumen.',
+        'The perception verb hören takes a bare infinitive — hinaufgehen, never the zu-form hinaufzugehen.',
     },
     {
       id: 'ch74-ex-77',

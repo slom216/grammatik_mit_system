@@ -6,7 +6,7 @@
     "directory": "./dist",
     // SPA fallback: unknown paths serve index.html so deep links work on the
     // first visit, before the service worker's navigateFallback installs.
-    "not_found_handling": "single-page-application"
+    "not_found_handling": "single-page-application",
   },
-  "observability": { "enabled": true }
+  "observability": { "enabled": true },
 }

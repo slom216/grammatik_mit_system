@@ -24,14 +24,14 @@ export const chapter035: ChapterDefinition = {
   explanation: {
     introduction: [
       'German has a special group of nine prepositions — an, auf, hinter, in, neben, über, unter, vor, and zwischen — known as two-way prepositions (Wechselpräpositionen) because they can take either the accusative or the dative case. Which case is required depends entirely on the question the sentence answers: wo? (where?) for a fixed location, or wohin? (where to?) for a direction or movement.',
-      'This chapter deals only with the location use, which always takes the dative — the same dative case you already practised with prepositions like aus, bei, and mit in Chapter 34. You will learn the dative article forms after each of the nine prepositions, the two common contractions am and im, and how to describe where things are located in a room, a house, or a city. The direction use of these same nine prepositions, which takes the accusative, is the subject of the next chapter.',
+      'This chapter deals only with the location use, which always takes the dative — the same dative case you already practised with prepositions like aus, bei, and mit in Chapter 33. You will learn the dative article forms after each of the nine prepositions, the two common contractions am and im, and how to describe where things are located in a room, a house, or a city. The direction use of these same nine prepositions, which takes the accusative, is the subject of the next chapter.',
     ],
     rules: [
       {
         id: 'ch35-rule-01',
         heading: 'What are two-way prepositions?',
         paragraphs: [
-          'An, auf, hinter, in, neben, über, unter, vor, and zwischen are called two-way prepositions (Wechselpräpositionen) because each one can govern either the accusative or the dative case, depending on the question it answers. This is different from prepositions you have already met: für and durch always take the accusative (Chapter 33), while aus, bei, mit, nach, von, seit, and zu always take the dative (Chapter 34).',
+          'An, auf, hinter, in, neben, über, unter, vor, and zwischen are called two-way prepositions (Wechselpräpositionen) because each one can govern either the accusative or the dative case, depending on the question it answers. This is different from prepositions you have already met: für and durch always take the accusative (Chapter 34), while aus, bei, mit, nach, von, seit, and zu always take the dative (Chapter 33).',
           'The case a two-way preposition takes depends on the question: wo? (where? — a fixed location) always takes the dative, while wohin? (where to? — a direction, a change of place) takes the accusative. This chapter focuses only on the dative use for location; the accusative use for direction is the topic of the next chapter.',
         ],
       },
@@ -105,8 +105,8 @@ export const chapter035: ChapterDefinition = {
         ],
         columnCases: [null, 'dative', null],
         rows: [
-          ['masculine (der)', 'dem', 'an dem → am'],
-          ['neuter (das)', 'dem', 'in dem → im'],
+          ['masculine (der)', 'dem', 'an dem → am, in dem → im'],
+          ['neuter (das)', 'dem', 'an dem → am, in dem → im'],
           ['feminine (die)', 'der', '— (no contraction)'],
           ['plural (die)', 'den', '— (no contraction)'],
         ],
@@ -284,7 +284,7 @@ export const chapter035: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['two-way prepositions', 'unter', 'location'],
       instruction: 'Choose the preposition that best matches the meaning.',
-      prompt: 'Der Hund schläft ___ dem Bett.',
+      prompt: 'Der Hund schläft ___ dem Bett. (under)',
       options: [
         { id: 'a', text: 'unter' },
         { id: 'b', text: 'über' },
@@ -569,7 +569,7 @@ export const chapter035: ChapterDefinition = {
       grammarFocus: ['preposition + article', 'auf', 'masculine'],
       instruction:
         'Complete the sentence with the correct preposition and article. Capitalisation is not checked.',
-      prompt: 'Das Buch liegt ____ Tisch.',
+      prompt: 'Das Buch liegt ____ Tisch. (on top of – der Tisch)',
       acceptedAnswers: ['auf dem'],
       answerMode: 'caseInsensitive',
       placeholder: 'auf dem',
@@ -586,7 +586,7 @@ export const chapter035: ChapterDefinition = {
       grammarFocus: ['preposition + article', 'an', 'feminine'],
       instruction:
         'Complete the sentence with the correct preposition and article. Capitalisation is not checked.',
-      prompt: 'Die Tasche steht ____ Tür.',
+      prompt: 'Die Tasche steht ____ Tür. (right against – die Tür)',
       acceptedAnswers: ['an der'],
       answerMode: 'caseInsensitive',
       placeholder: 'an der',
@@ -714,7 +714,7 @@ export const chapter035: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['two-way prepositions', 'vor', 'location'],
       instruction: 'Choose the preposition that best matches the meaning.',
-      prompt: 'Die Schuhe stehen ___ der Tür.',
+      prompt: 'Die Schuhe stehen ___ der Tür. (in front of)',
       options: [
         { id: 'a', text: 'vor' },
         { id: 'b', text: 'hinter' },
@@ -770,7 +770,7 @@ export const chapter035: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['two-way prepositions', 'auf', 'location'],
       instruction: 'Choose the preposition that best matches the meaning.',
-      prompt: 'Die Vase steht ___ dem Tisch.',
+      prompt: 'Die Vase steht ___ dem Tisch. (on top of)',
       options: [
         { id: 'a', text: 'auf' },
         { id: 'b', text: 'an' },
@@ -964,7 +964,7 @@ export const chapter035: ChapterDefinition = {
       grammarFocus: ['preposition + article', 'unter', 'neuter'],
       instruction:
         'Complete the sentence with the correct preposition and article. Capitalisation is not checked.',
-      prompt: 'Der Hund schläft ____ Bett.',
+      prompt: 'Der Hund schläft ____ Bett. (under – das Bett)',
       acceptedAnswers: ['unter dem'],
       answerMode: 'caseInsensitive',
       placeholder: 'unter dem',
@@ -981,7 +981,7 @@ export const chapter035: ChapterDefinition = {
       grammarFocus: ['preposition + article', 'zwischen', 'plural'],
       instruction:
         'Complete the sentence with the correct preposition and article. Capitalisation is not checked.',
-      prompt: 'Die Bank steht ____ Bäumen.',
+      prompt: 'Die Bank steht ____ Bäumen. (between – die Bäume)',
       acceptedAnswers: ['zwischen den'],
       answerMode: 'caseInsensitive',
       placeholder: 'zwischen den',
@@ -1321,15 +1321,15 @@ export const chapter035: ChapterDefinition = {
         'Match each object with the preposition most naturally used to describe its location.',
       prompt: 'Match the objects to their typical preposition.',
       pairs: [
-        { id: 'p1', left: 'der Boden (floor)', right: 'auf' },
-        { id: 'p2', left: 'die Wand (wall)', right: 'an' },
-        { id: 'p3', left: 'die Decke (ceiling)', right: 'über' },
-        { id: 'p4', left: 'der Schrank (wardrobe)', right: 'neben' },
-        { id: 'p5', left: 'das Fenster (window)', right: 'vor' },
-        { id: 'p6', left: 'die Tür (door)', right: 'hinter' },
+        { id: 'p1', left: 'der Boden (lying on the floor)', right: 'auf' },
+        { id: 'p2', left: 'die Wand (hanging on the wall)', right: 'an' },
+        { id: 'p3', left: 'das Bett (under the bed)', right: 'unter' },
+        { id: 'p4', left: 'der Schrank (inside the wardrobe)', right: 'in' },
+        { id: 'p5', left: 'das Fenster (in front of the window)', right: 'vor' },
+        { id: 'p6', left: 'die Tür (behind the door)', right: 'hinter' },
       ],
       explanation:
-        'The preposition chosen depends on the physical relationship between the object and the reference point: on top of the floor (auf), attached to the wall (an), above the ceiling line (über), and so on.',
+        'The English cue fixes the physical relationship: on a horizontal surface (auf dem Boden), attached to a vertical surface (an der Wand — and also an der Decke for the ceiling), under (unter dem Bett), inside (im Schrank), in front of (vor dem Fenster), behind (hinter der Tür).',
     },
     {
       id: 'ch35-ex-62',
@@ -1361,7 +1361,7 @@ export const chapter035: ChapterDefinition = {
       grammarFocus: ['dative-vs-accusative', 'auf', 'masculine'],
       instruction: 'Find the token with the error and give its correction.',
       prompt: 'Das Buch liegt auf den Tisch.',
-      tokens: ['Das', 'Buch', 'liegt', 'auf', 'den', 'Tisch', '.'],
+      tokens: ['Das', 'Buch', 'liegt', 'auf', 'den', 'Tisch.'],
       errorTokenIndex: 4,
       correction: 'dem',
       explanation:
@@ -1376,7 +1376,7 @@ export const chapter035: ChapterDefinition = {
       grammarFocus: ['dative-vs-accusative', 'vor', 'neuter'],
       instruction: 'Find the token with the error and give its correction.',
       prompt: 'Das Auto steht vor das Haus.',
-      tokens: ['Das', 'Auto', 'steht', 'vor', 'das', 'Haus', '.'],
+      tokens: ['Das', 'Auto', 'steht', 'vor', 'das', 'Haus.'],
       errorTokenIndex: 4,
       correction: 'dem',
       explanation:
@@ -1391,7 +1391,7 @@ export const chapter035: ChapterDefinition = {
       grammarFocus: ['dative-vs-accusative', 'zwischen', 'plural'],
       instruction: 'Find the token with the error and give its correction.',
       prompt: 'Die Bank steht zwischen die Bäume.',
-      tokens: ['Die', 'Bank', 'steht', 'zwischen', 'die', 'Bäume', '.'],
+      tokens: ['Die', 'Bank', 'steht', 'zwischen', 'die', 'Bäume.'],
       errorTokenIndex: 4,
       correction: 'den',
       explanation:
@@ -1406,7 +1406,7 @@ export const chapter035: ChapterDefinition = {
       grammarFocus: ['dative-vs-accusative', 'unter', 'neuter'],
       instruction: 'Find the token with the error and give its correction.',
       prompt: 'Der Hund schläft unter das Bett.',
-      tokens: ['Der', 'Hund', 'schläft', 'unter', 'das', 'Bett', '.'],
+      tokens: ['Der', 'Hund', 'schläft', 'unter', 'das', 'Bett.'],
       errorTokenIndex: 4,
       correction: 'dem',
       explanation:
@@ -1421,7 +1421,7 @@ export const chapter035: ChapterDefinition = {
       grammarFocus: ['dative-vs-accusative', 'an', 'feminine'],
       instruction: 'Find the token with the error and give its correction.',
       prompt: 'Die Jacke hängt an die Garderobe.',
-      tokens: ['Die', 'Jacke', 'hängt', 'an', 'die', 'Garderobe', '.'],
+      tokens: ['Die', 'Jacke', 'hängt', 'an', 'die', 'Garderobe.'],
       errorTokenIndex: 4,
       correction: 'der',
       explanation:
@@ -1436,7 +1436,7 @@ export const chapter035: ChapterDefinition = {
       grammarFocus: ['dative-vs-accusative', 'in', 'masculine'],
       instruction: 'Find the token with the error and give its correction.',
       prompt: 'Die Blumen stehen in den Garten.',
-      tokens: ['Die', 'Blumen', 'stehen', 'in', 'den', 'Garten', '.'],
+      tokens: ['Die', 'Blumen', 'stehen', 'in', 'den', 'Garten.'],
       errorTokenIndex: 4,
       correction: 'dem',
       explanation:

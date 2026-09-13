@@ -94,6 +94,7 @@ export const chapter038: ChapterDefinition = {
         paragraphs: [
           'Chapter 37 taught how to say where you are going (wohin?): nach and in for places and countries, zu for people and specific destinations, an and auf for edges and open spaces. Each destination preposition has a direct wo? counterpart once you have arrived.',
           'nach and in as destinations both correspond to in as a location: Ich fahre nach Berlin. → Ich bin in Berlin. zu, which always points to a person or a specific destination, corresponds to bei: Ich gehe zu meiner Freundin. → Ich bin bei meiner Freundin. an and auf keep the very same preposition in both directions — only the case changes, from accusative to dative: Wir fahren an den See. → Wir sind am See.',
+          'Home is the one fixed pair to learn separately: the destination is nach Hause, the location is zu Hause, both without an article. Ich gehe jetzt nach Hause. → Ich bin zu Hause. Never say in Hause or bei Hause for "at home".',
         ],
       },
     ],
@@ -142,8 +143,9 @@ export const chapter038: ChapterDefinition = {
         title: 'From destination (wohin?) to location (wo?)',
         columns: ['Wohin? (Chapter 37)', 'Wo? (this chapter)', 'Example pair'],
         rows: [
+          ['nach Hause', 'zu Hause', 'Wir fahren nach Hause. → Wir sind zu Hause.'],
           [
-            'nach Hause / in die Stadt',
+            'in die Stadt',
             'in der Stadt',
             'Wir fahren in die Stadt. → Wir sind in der Stadt.',
           ],
@@ -275,6 +277,7 @@ export const chapter038: ChapterDefinition = {
       'an = at an edge or border, especially bodies of water: am See, am Meer.',
       'auf = on an open public space: auf dem Markt, auf dem Land.',
       'Contractions: in dem → im, an dem → am, bei dem → beim; auf dem never contracts.',
+      'Home: nach Hause (wohin?) → zu Hause (wo?): Ich gehe nach Hause. → Ich bin zu Hause.',
     ],
   },
   mastery: {
@@ -623,11 +626,12 @@ export const chapter038: ChapterDefinition = {
       instruction:
         'Complete the sentence with the correct preposition. Capitalisation is not checked.',
       prompt: 'Mein Onkel arbeitet ___ einer kleinen Firma.',
-      acceptedAnswers: ['bei'],
+      acceptedAnswers: ['bei', 'in'],
       answerMode: 'caseInsensitive',
       placeholder: 'bei',
       maxLength: 10,
-      explanation: 'A company as an employer is expressed with bei.',
+      explanation:
+        'A company as an employer is usually expressed with bei (bei einer kleinen Firma). in einer kleinen Firma is also correct.',
     },
     {
       id: 'ch38-ex-21',
@@ -877,7 +881,7 @@ export const chapter038: ChapterDefinition = {
       prompt: 'Herr Müller ist Chef ___ einer großen Firma.',
       options: [
         { id: 'a', text: 'bei' },
-        { id: 'b', text: 'in' },
+        { id: 'b', text: 'zu' },
         { id: 'c', text: 'an' },
         { id: 'd', text: 'auf' },
       ],
@@ -1032,11 +1036,12 @@ export const chapter038: ChapterDefinition = {
       instruction:
         'Complete the sentence with the correct preposition. Capitalisation is not checked.',
       prompt: 'Herr Müller arbeitet ___ einer großen Firma.',
-      acceptedAnswers: ['bei'],
+      acceptedAnswers: ['bei', 'in'],
       answerMode: 'caseInsensitive',
       placeholder: 'bei',
       maxLength: 10,
-      explanation: 'A company someone is employed by is expressed with bei.',
+      explanation:
+        'A company someone is employed by is usually expressed with bei. in einer großen Firma is also correct.',
     },
     {
       id: 'ch38-ex-44',
@@ -1241,7 +1246,7 @@ export const chapter038: ChapterDefinition = {
         { id: 'slot-1', correctWord: 'bei' },
         { id: 'slot-2', correctWord: 'einer' },
       ],
-      wordBank: ['bei', 'einer', 'in', 'einem', 'auf'],
+      wordBank: ['bei', 'einer', 'zu', 'einem', 'auf'],
       explanation:
         'bei is used for the company someone is employed by; die Firma is feminine, so einer is used.',
     },

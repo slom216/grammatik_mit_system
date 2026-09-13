@@ -366,8 +366,8 @@ export const chapter005: ChapterDefinition = {
       options: [
         { id: 'a', text: 'Musst du jetzt gehen?' },
         { id: 'b', text: 'Musst du gehen jetzt?' },
-        { id: 'c', text: 'Du musst jetzt gehen?' },
-        { id: 'd', text: 'Gehen musst du jetzt?' },
+        { id: 'c', text: 'Du jetzt musst gehen?' },
+        { id: 'd', text: 'Musst gehen du jetzt?' },
       ],
       correctOptionId: 'a',
       explanation:
@@ -582,7 +582,10 @@ export const chapter005: ChapterDefinition = {
       instruction:
         'Correct the word order and write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich kann sprechen gut Deutsch.',
-      acceptedAnswers: ['Ich kann gut Deutsch sprechen.'],
+      acceptedAnswers: [
+        'Ich kann gut Deutsch sprechen.',
+        'Ich kann Deutsch gut sprechen.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich ...',
       maxLength: 60,
@@ -616,7 +619,7 @@ export const chapter005: ChapterDefinition = {
       instruction:
         'Build a complete, correctly ordered sentence from these words. Capitalisation and punctuation are checked.',
       prompt: 'ihr – dürfen – hier – nicht – rauchen',
-      acceptedAnswers: ['Ihr dürft hier nicht rauchen.'],
+      acceptedAnswers: ['Ihr dürft hier nicht rauchen.', 'Hier dürft ihr nicht rauchen.'],
       answerMode: 'normalized',
       placeholder: 'Ihr ...',
       maxLength: 60,
@@ -893,7 +896,11 @@ export const chapter005: ChapterDefinition = {
       instruction:
         'Build a complete, correctly ordered sentence from these words. Capitalisation and punctuation are checked.',
       prompt: 'sie (she) – heute Nachmittag – ihre Freundin – besuchen – wollen',
-      acceptedAnswers: ['Sie will heute Nachmittag ihre Freundin besuchen.'],
+      acceptedAnswers: [
+        'Sie will heute Nachmittag ihre Freundin besuchen.',
+        'Heute Nachmittag will sie ihre Freundin besuchen.',
+        'Sie will ihre Freundin heute Nachmittag besuchen.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Sie ...',
       maxLength: 60,
@@ -910,7 +917,10 @@ export const chapter005: ChapterDefinition = {
       instruction:
         'Correct the word order and write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich will heute kaufen ein neues Handy.',
-      acceptedAnswers: ['Ich will heute ein neues Handy kaufen.'],
+      acceptedAnswers: [
+        'Ich will heute ein neues Handy kaufen.',
+        'Heute will ich ein neues Handy kaufen.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich ...',
       maxLength: 60,

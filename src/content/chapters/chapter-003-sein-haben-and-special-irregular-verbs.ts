@@ -42,8 +42,8 @@ export const chapter003: ChapterDefinition = {
         id: 'ch03-rule-03',
         heading: 'Other important irregular verbs: werden, wissen, tun',
         paragraphs: [
-          'werden (to become) changes its stem vowel from e to i in the du- and er/sie/es-forms: ich werde, du wirst, er/sie/es wird, wir werden, ihr werdet, sie/Sie werden.',
-          'wissen (to know a fact) has no ending at all in the singular, and its stem vowel changes from i to ei throughout the singular: ich weiß, du weißt, er/sie/es weiß. The plural returns to the regular stem wiss- with normal endings: wir wissen, ihr wisst, sie/Sie wissen.',
+          'werden (to become) changes its stem vowel from e to i in the du- and er/sie/es-forms, and these two forms are also shortened: du wirst drops the d of the stem, and er/sie/es wird takes no -t ending. The full set: ich werde, du wirst, er/sie/es wird, wir werden, ihr werdet, sie/Sie werden.',
+          'wissen (to know a fact) has no ending in the ich- and er/sie/es-forms, only the du-form adds -t, and its stem vowel changes from i to ei throughout the singular: ich weiß, du weißt, er/sie/es weiß. The plural returns to the regular stem wiss- with normal endings: wir wissen, ihr wisst, sie/Sie wissen.',
           'tun (to do) has an unusually short infinitive (only -n, not -en), but once you know the stem tu-, its endings follow the normal pattern: ich tue, du tust, er/sie/es tut, wir tun, ihr tut, sie/Sie tun.',
         ],
         notes: [
@@ -206,7 +206,7 @@ export const chapter003: ChapterDefinition = {
     ],
     remember: [
       'sein (bin, bist, ist, sind, seid, sind) and haben (habe, hast, hat, haben, habt, haben) must be memorised as full sets — they do not follow the regular ending pattern.',
-      'werden, wissen, and tun are also irregular: werden and wissen change their stem vowel in the singular, and wissen has no ending at all in the singular.',
+      'werden, wissen, and tun are also irregular: werden and wissen change their stem vowel in the singular (du wirst, er wird; ich weiß, du weißt), and ich weiß / er weiß take no ending.',
       'Use sein for identity, nationality, qualities, and states; use haben for possession.',
       'Fixed expressions like Hunger haben, Durst haben, and Angst haben always use haben in German, even where English uses "to be".',
     ],
@@ -382,7 +382,7 @@ export const chapter003: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'du takes wirst. werden changes its stem vowel from e to i in the du- and er/sie/es-forms.',
+        'du takes wirst. werden changes its stem vowel from e to i in the du- and er/sie/es-forms, and du wirst also drops the d.',
     },
     {
       id: 'ch03-ex-10',
@@ -401,7 +401,7 @@ export const chapter003: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'ich weiß has no ending at all in the singular; weißt is the du-form, wisst the ihr-form, wissen the wir/sie/Sie-form.',
+        'ich weiß has no ending; weißt is the du-form, wisst the ihr-form, wissen the wir/sie/Sie-form.',
     },
     {
       id: 'ch03-ex-11',
@@ -515,7 +515,7 @@ export const chapter003: ChapterDefinition = {
       placeholder: 'form',
       maxLength: 10,
       explanation:
-        'er/sie/es takes wird; werden changes its stem vowel from e to i here.',
+        'er/sie/es takes wird: the stem vowel changes from e to i, and no -t ending is added.',
     },
     {
       id: 'ch03-ex-18',
@@ -915,7 +915,7 @@ export const chapter003: ChapterDefinition = {
         { id: 'p3', left: 'Wir ___ ein Auto.', right: 'haben' },
         { id: 'p4', left: 'Du ___ Durst.', right: 'hast' },
         { id: 'p5', left: 'Ihr ___ Angst.', right: 'habt' },
-        { id: 'p6', left: 'Sie (sie, pl.) ___ Studenten.', right: 'sind' },
+        { id: 'p6', left: 'Sie (sie, pl.) ___ sehr müde.', right: 'sind' },
       ],
       explanation:
         'Hunger, Durst, and Angst always take haben; age and identity always take sein.',

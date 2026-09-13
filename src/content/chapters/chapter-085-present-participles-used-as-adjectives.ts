@@ -144,7 +144,7 @@ export const chapter085: ChapterDefinition = {
             'the shop that has been closed',
           ],
           [
-            'die öffnende Tür',
+            'die sich öffnende Tür',
             'the door that is opening right now',
             'die geöffnete Tür',
             'the door that has been opened',
@@ -895,8 +895,8 @@ export const chapter085: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['adjective-endings', 'weak-endings'],
       instruction: 'Drag the correctly declined participle into the gap.',
-      prompt: 'Der ___ Mann tanzt auf der Bühne. (tanzen)',
-      templateParts: ['Der ', ' Mann tanzt auf der Bühne.'],
+      prompt: 'Der ___ Mann lächelt ins Publikum. (tanzen)',
+      templateParts: ['Der ', ' Mann lächelt ins Publikum.'],
       slots: [{ id: 'slot1', correctWord: 'tanzende' }],
       wordBank: ['tanzende', 'tanzender', 'tanzendes', 'tanzenden'],
       explanation:
@@ -910,8 +910,8 @@ export const chapter085: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['adjective-endings', 'mixed-endings'],
       instruction: 'Drag the correctly declined participle into the gap.',
-      prompt: 'Ein ___ Kind singt im Chor. (singen)',
-      templateParts: ['Ein ', ' Kind singt im Chor.'],
+      prompt: 'Ein ___ Kind steht vorne auf der Bühne. (singen)',
+      templateParts: ['Ein ', ' Kind steht vorne auf der Bühne.'],
       slots: [{ id: 'slot1', correctWord: 'singendes' }],
       wordBank: ['singendes', 'singende', 'singender', 'singenden'],
       explanation:
@@ -1471,7 +1471,7 @@ export const chapter085: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['present-vs-past-participle', 'active-ongoing'],
       instruction: 'Choose what the phrase means.',
-      prompt: 'Was bedeutet "die öffnende Tür"?',
+      prompt: 'Was bedeutet "die sich öffnende Tür"?',
       options: [
         { id: 'a', text: 'the door that is opening right now (active, ongoing)' },
         { id: 'b', text: 'the door that has already been opened' },
@@ -1480,7 +1480,7 @@ export const chapter085: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'öffnend is the Partizip I of öffnen: active and ongoing — the door is itself in the process of opening right now.',
+        'sich öffnend is the Partizip I of the reflexive sich öffnen: active and ongoing — the door is itself in the process of opening right now. Without sich, öffnend would need an object (die die Tür öffnende Hand).',
     },
     {
       id: 'ch85-ex-63',

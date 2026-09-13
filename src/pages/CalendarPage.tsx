@@ -1,7 +1,7 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Card } from '../components/common/Card';
-import { selectChapterCards } from '../features/chapters/chapterSelectors';
+import { getRegistryEntry } from '../content/registry';
 import { chapterPath } from '../features/chapters/chapterUtils';
 import {
   buildMonthGrid,
@@ -17,12 +17,9 @@ import { CEFR_LEVELS, type CefrLevel } from '../schemas/chapterSchema';
 const WEEKDAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
 /** The CEFR levels the day's chapters belong to, in course order and deduplicated. */
-function levelsOf(
-  chapterNumbers: number[],
-  levelByNumber: Map<number, CefrLevel>,
-): CefrLevel[] {
+function levelsOf(chapterNumbers: number[]): CefrLevel[] {
   const found = new Set(
-    chapterNumbers.map((number) => levelByNumber.get(number)).filter(Boolean),
+    chapterNumbers.map((number) => getRegistryEntry(number)?.level).filter(Boolean),
   );
   return CEFR_LEVELS.filter((level) => found.has(level));
 }
@@ -34,7 +31,7 @@ function parseDayKey(dateKey: string): Date {
 }
 
 function formatDate(dateKey: string): string {
-  return parseDayKey(dateKey).toLocaleDateString('en-US', {
+  return parseDayKey(dateKey).toLocaleDateString('en-GB', {
     weekday: 'long',
     month: 'long',
     day: 'numeric',
@@ -52,7 +49,11 @@ function describeDay(
 ): string {
   const date = formatDate(dateKey);
   if (answers === 0 && ms === 0) return `${date}: nothing practised`;
-  const parts = [`${answers} ${answers === 1 ? 'exercise' : 'exercises'}`];
+  const parts = [
+    answers === 0
+      ? 'no exercises, lesson only'
+      : `${answers} ${answers === 1 ? 'exercise' : 'exercises'}`,
+  ];
   if (ms > 0) parts.push(describeDuration(ms));
   if (chapters > 0) parts.push(`${chapters} ${chapters === 1 ? 'chapter' : 'chapters'}`);
   if (levels.length > 0) parts.push(`level ${levels.join(' and ')}`);
@@ -60,9 +61,25 @@ function describeDay(
 }
 
 export function CalendarPage() {
-  const progress = useProgressStore();
+  // Only the two logs this page reads: the whole store changes on every study
+  // timer tick.
+  const answersByDay = useProgressStore((state) => state.answersByDay);
+  const dayLog = useProgressStore((state) => state.dayLog);
 
-  const today = useMemo(() => new Date(), []);
+  const [today, setToday] = useState(() => new Date());
+  // A tab left open overnight, or brought back the next day, moves on with the date.
+  useEffect(() => {
+    const refresh = () => {
+      if (toDayKey(new Date()) !== toDayKey(today)) setToday(new Date());
+    };
+    const midnight = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 1);
+    const timer = window.setTimeout(refresh, midnight.getTime() - Date.now() + 1000);
+    document.addEventListener('visibilitychange', refresh);
+    return () => {
+      window.clearTimeout(timer);
+      document.removeEventListener('visibilitychange', refresh);
+    };
+  }, [today]);
   // The first of the month on show. Kept as a date rather than an offset so the
   // grid builder needs no arithmetic of its own.
   const [month, setMonth] = useState(
@@ -71,21 +88,12 @@ export function CalendarPage() {
   const [selected, setSelected] = useState(() => toDayKey(today));
 
   const weeks = useMemo(
-    () => buildMonthGrid(month, progress.answersByDay, progress.dayLog),
-    [month, progress.answersByDay, progress.dayLog],
+    () => buildMonthGrid(month, answersByDay, dayLog),
+    [month, answersByDay, dayLog],
   );
   const detail = useMemo(
-    () => selectDayDetail(selected, progress.answersByDay, progress.dayLog),
-    [selected, progress.answersByDay, progress.dayLog],
-  );
-  const cards = useMemo(() => selectChapterCards(progress), [progress]);
-  const titleByNumber = useMemo(
-    () => new Map(cards.map((card) => [card.number, card.title])),
-    [cards],
-  );
-  const levelByNumber = useMemo(
-    () => new Map(cards.map((card) => [card.number, card.level])),
-    [cards],
+    () => selectDayDetail(selected, answersByDay, dayLog),
+    [selected, answersByDay, dayLog],
   );
 
   const monthTotals = useMemo(
@@ -104,7 +112,7 @@ export function CalendarPage() {
     [weeks],
   );
 
-  const monthLabel = month.toLocaleDateString('en-US', {
+  const monthLabel = month.toLocaleDateString('en-GB', {
     month: 'long',
     year: 'numeric',
   });
@@ -120,8 +128,8 @@ export function CalendarPage() {
       <header>
         <h1>Calendar</h1>
         <p className="text-muted prose">
-          Which chapters you practised on each day, and how long you spent. Everything
-          here is stored in this browser only.
+          Which chapters you studied on each day, and how long you spent. Everything here
+          is stored in this browser only.
         </p>
       </header>
 
@@ -158,8 +166,7 @@ export function CalendarPage() {
           <table className="calendar-month">
             <caption className="visually-hidden">
               Practice per day in {monthLabel}. Each day shows the time spent, then the
-              number of chapters practised and their levels. Pick a day to see its
-              chapters.
+              number of chapters studied and their levels. Pick a day to see its chapters.
             </caption>
             <thead>
               <tr>
@@ -175,7 +182,7 @@ export function CalendarPage() {
               {weeks.map((week) => (
                 <tr key={week[0]?.date}>
                   {week.map((day) => {
-                    const levels = levelsOf(day.chapterNumbers, levelByNumber);
+                    const levels = levelsOf(day.chapterNumbers);
                     return (
                       <td key={day.date}>
                         <button
@@ -222,7 +229,7 @@ export function CalendarPage() {
           </table>
 
           <p className="text-sm text-muted" aria-hidden="true">
-            Each day reads: time spent, then chapters practised · their levels.
+            Each day reads: time spent, then chapters studied · their levels.
           </p>
         </div>
       </Card>
@@ -243,11 +250,14 @@ export function CalendarPage() {
               {detail.chapters.map((chapter) => (
                 <li key={chapter.chapterNumber}>
                   <Link to={chapterPath(chapter.chapterNumber)}>
-                    {titleByNumber.get(chapter.chapterNumber) ??
+                    {getRegistryEntry(chapter.chapterNumber)?.title ??
                       `Chapter ${chapter.chapterNumber}`}
                   </Link>{' '}
                   <span className="text-sm text-muted">
-                    {chapter.answers} {chapter.answers === 1 ? 'exercise' : 'exercises'}
+                    {/* Time with no answers is reading the lesson, not practice. */}
+                    {chapter.answers === 0
+                      ? 'lesson only'
+                      : `${chapter.answers} ${chapter.answers === 1 ? 'exercise' : 'exercises'}`}
                     {chapter.ms > 0 ? ` · ${describeDuration(chapter.ms)}` : ''}
                   </span>
                 </li>

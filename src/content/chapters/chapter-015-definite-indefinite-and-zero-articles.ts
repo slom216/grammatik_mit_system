@@ -187,10 +187,10 @@ export const chapter015: ChapterDefinition = {
           'ein/eine has no plural form; a non-specific plural noun simply takes no article.',
       },
       {
-        incorrect: 'Ich trinke einen Kaffee jeden Morgen, weil ich Kaffee mag.',
-        correct: 'Ich trinke Kaffee jeden Morgen, weil ich Kaffee mag.',
+        incorrect: 'Ich mag einen Kaffee sehr.',
+        correct: 'Ich mag Kaffee sehr.',
         explanation:
-          'When talking about coffee in general rather than one specific cup, the zero article is used, not the indefinite article.',
+          'When talking about coffee in general as a drink you like, the zero article is used, not the indefinite article. einen Kaffee means one cup, which is fine when you count cups: Ich trinke jeden Morgen einen Kaffee.',
       },
       {
         incorrect: 'Der Frau kauft ein Brot.',
@@ -400,7 +400,7 @@ export const chapter015: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['plural', 'zero-article'],
       instruction: 'Choose the option that correctly completes the sentence.',
-      prompt: 'Im Park spielen ___ Kinder.',
+      prompt: 'Im Park spielen ___ Kinder. (some children, not specific ones)',
       options: [
         { id: 'a', text: 'eine' },
         { id: 'b', text: 'die' },
@@ -438,7 +438,7 @@ export const chapter015: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['zero-article', 'general-statements'],
       instruction: 'Choose the option that correctly completes the sentence.',
-      prompt: 'Meine Schwester mag ___ Musik sehr.',
+      prompt: 'Meine Schwester mag ___ Musik sehr. (music in general)',
       options: [
         { id: 'a', text: 'die' },
         { id: 'b', text: 'eine' },
@@ -543,7 +543,7 @@ export const chapter015: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['indefinite-article', 'noun-gender'],
       instruction:
-        'Write the missing indefinite article (ein or eine). Capitalisation is not checked.',
+        'Write the missing indefinite article (ein, eine or einen). Capitalisation is not checked.',
       prompt: 'Wir brauchen ___ Stuhl.',
       acceptedAnswers: ['einen'],
       answerMode: 'caseInsensitive',
@@ -595,7 +595,7 @@ export const chapter015: ChapterDefinition = {
       grammarFocus: ['plural', 'zero-article'],
       instruction:
         'Write only the missing word, or write "-" if no article is needed. Capitalisation is not checked.',
-      prompt: 'Auf dem Markt verkaufen sie ___ Äpfel.',
+      prompt: 'Auf dem Markt verkaufen sie ___ Äpfel. (apples in general)',
       acceptedAnswers: ['-'],
       answerMode: 'caseInsensitive',
       placeholder: '-',
@@ -614,7 +614,7 @@ export const chapter015: ChapterDefinition = {
         'Complete the second sentence with the correct article so it refers back to the noun already introduced. Capitalisation is checked.',
       prompt: 'Ich kaufe einen Rock. ___ Rock ist blau.',
       acceptedAnswers: ['Der'],
-      answerMode: 'exact',
+      answerMode: 'normalized',
       placeholder: 'Der / Die / Das',
       maxLength: 10,
       explanation:
@@ -708,7 +708,7 @@ export const chapter015: ChapterDefinition = {
       instruction:
         'Write a complete sentence using the cue words to say that plural things exist somewhere in general, with no article. Capitalisation and the full stop are checked, but a missing full stop is forgiven.',
       prompt: 'in – der Küche – stehen – Stühle',
-      acceptedAnswers: ['In der Küche stehen Stühle.', 'In der Küche stehen Stühle'],
+      acceptedAnswers: ['In der Küche stehen Stühle.', 'Stühle stehen in der Küche.'],
       answerMode: 'normalized',
       placeholder: 'In der Küche stehen ...',
       maxLength: 45,
@@ -835,7 +835,7 @@ export const chapter015: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['plural', 'zero-article'],
       instruction: 'Choose the option that correctly completes the sentence.',
-      prompt: 'Auf der Wiese laufen ___ Pferde.',
+      prompt: 'Auf der Wiese laufen ___ Pferde. (some horses, not specific ones)',
       options: [
         { id: 'a', text: 'die' },
         { id: 'b', text: 'eine' },
@@ -876,17 +876,21 @@ export const chapter015: ChapterDefinition = {
       dialogue: [
         {
           speaker: 'Anna',
-          german: 'Wohin gehst du heute Abend?',
-          english: 'Where are you going tonight?',
+          german: 'Gehen wir heute Abend essen?',
+          english: 'Shall we go out to eat tonight?',
         },
         {
           speaker: 'Ben',
-          german: 'Ich habe schon einen Tisch reserviert.',
-          english: "I've already reserved a table.",
+          german: 'Ja, ich habe schon einen Tisch reserviert.',
+          english: "Yes, I've already reserved a table.",
+        },
+        {
+          speaker: 'Anna',
+          german: 'Super! In welchem Restaurant?',
+          english: 'Great! At which restaurant?',
         },
       ],
-      prompt:
-        'A: Welches Restaurant meinst du? B: ___ Restaurant, das wir letztes Mal ausprobiert haben.',
+      prompt: 'Ben: ___ Restaurant, das wir letztes Mal ausprobiert haben.',
       options: [
         { id: 'a', text: 'Ein' },
         { id: 'b', text: 'Das' },
@@ -1024,7 +1028,7 @@ export const chapter015: ChapterDefinition = {
       grammarFocus: ['plural', 'zero-article'],
       instruction:
         'Write only the missing word, or write "-" if no article is needed. Capitalisation is not checked.',
-      prompt: 'Im Wald wachsen ___ Bäume.',
+      prompt: 'Im Wald wachsen ___ Bäume. (trees in general)',
       acceptedAnswers: ['-'],
       answerMode: 'caseInsensitive',
       placeholder: '-',
@@ -1142,7 +1146,7 @@ export const chapter015: ChapterDefinition = {
       prompt: 'Vervollständige den Satz: "Im Garten blühen ___ Blumen."',
       templateParts: ['Im Garten blühen ', ' Blumen.'],
       slots: [{ id: 'ch15-ex51-slot1', correctWord: '–' }],
-      wordBank: ['–', 'die', 'einige', 'eine'],
+      wordBank: ['–', 'ein', 'einen', 'eine'],
       explanation:
         'Blumen is a non-specific plural, and ein/eine has no plural form, so no article is used.',
     },
@@ -1217,7 +1221,7 @@ export const chapter015: ChapterDefinition = {
       instruction: 'Drag the correct word into the slot.',
       hint: 'These are the children from next door — already known.',
       prompt:
-        'Vervollständige den Satz: "___ Kinder aus der Nachbarschaft spielen im Hof."',
+        'Vervollständige den Satz: "___ Kinder aus der Nachbarschaft spielen im Hof." (the children from next door that we know)',
       templateParts: ['', ' Kinder aus der Nachbarschaft spielen im Hof.'],
       slots: [{ id: 'ch15-ex56-slot1', correctWord: 'Die' }],
       wordBank: ['Die', 'Ein', '–', 'Der'],
@@ -1414,7 +1418,7 @@ export const chapter015: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['zero-article', 'general-statements', 'error-correction'],
       instruction: 'Find the token that adds an unnecessary article, and correct it.',
-      prompt: 'Jemand beschreibt einen allgemeinen Vorlieb. Etwas stimmt nicht.',
+      prompt: 'Jemand spricht über eine allgemeine Vorliebe. Etwas stimmt nicht.',
       tokens: ['Sie', 'mag', 'einen', 'Kaffee', 'sehr.'],
       errorTokenIndex: 2,
       correction: '(no article)',

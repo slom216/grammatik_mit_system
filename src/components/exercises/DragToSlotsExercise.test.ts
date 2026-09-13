@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { promptWithoutSentence } from './DragToSlotsExercise';
+import { promptWithoutSentence } from './promptWithoutSentence';
 
 describe('promptWithoutSentence', () => {
   it('drops a prompt that is only the gapped sentence', () => {
@@ -31,10 +31,7 @@ describe('promptWithoutSentence', () => {
 
   it('leaves a prompt that says something else entirely', () => {
     expect(
-      promptWithoutSentence('Wähle das richtige Modalverb.', [
-        'Tom ',
-        ' schwimmen.',
-      ]),
+      promptWithoutSentence('Wähle das richtige Modalverb.', ['Tom ', ' schwimmen.']),
     ).toBe('Wähle das richtige Modalverb.');
   });
 });

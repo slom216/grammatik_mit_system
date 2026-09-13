@@ -705,7 +705,10 @@ export const chapter078: ChapterDefinition = {
       instruction:
         'Combine the two sentences with während. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich koche. + Meine Schwester hört Musik. (während)',
-      acceptedAnswers: ['Während ich koche, hört meine Schwester Musik.'],
+      acceptedAnswers: [
+        'Während ich koche, hört meine Schwester Musik.',
+        'Meine Schwester hört Musik, während ich koche.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Während ich koche, ...',
       maxLength: 60,
@@ -722,7 +725,10 @@ export const chapter078: ChapterDefinition = {
       instruction:
         'Combine the two sentences with bevor. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Wir deckten den Tisch. + Wir aßen. (bevor)',
-      acceptedAnswers: ['Wir deckten den Tisch, bevor wir aßen.'],
+      acceptedAnswers: [
+        'Wir deckten den Tisch, bevor wir aßen.',
+        'Bevor wir aßen, deckten wir den Tisch.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wir deckten den Tisch, bevor ...',
       maxLength: 60,
@@ -741,6 +747,7 @@ export const chapter078: ChapterDefinition = {
       prompt: 'Er bestand die Prüfung. + Er feierte die ganze Nacht. (nachdem)',
       acceptedAnswers: [
         'Nachdem er die Prüfung bestanden hatte, feierte er die ganze Nacht.',
+        'Er feierte die ganze Nacht, nachdem er die Prüfung bestanden hatte.',
       ],
       answerMode: 'normalized',
       placeholder: 'Nachdem er die Prüfung bestanden hatte, ...',
@@ -758,7 +765,10 @@ export const chapter078: ChapterDefinition = {
       instruction:
         'Combine the two sentences with seitdem. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Sie lebt in Berlin. + Sie spricht fließend Deutsch. (seitdem)',
-      acceptedAnswers: ['Seitdem sie in Berlin lebt, spricht sie fließend Deutsch.'],
+      acceptedAnswers: [
+        'Seitdem sie in Berlin lebt, spricht sie fließend Deutsch.',
+        'Sie spricht fließend Deutsch, seitdem sie in Berlin lebt.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Seitdem sie in Berlin lebt, ...',
       maxLength: 70,
@@ -871,7 +881,7 @@ export const chapter078: ChapterDefinition = {
       prompt: '___ die Kinder spielten, kochte die Mutter das Abendessen.',
       templateParts: ['', ' die Kinder spielten, kochte die Mutter das Abendessen.'],
       slots: [{ id: 'ch78-ex32-slot1', correctWord: 'Während' }],
-      wordBank: ['Während', 'Nachdem', 'Bevor', 'Seit'],
+      wordBank: ['Während', 'Nachdem', 'Dass', 'Seit'],
       explanation:
         'The two actions (the children playing, the mother cooking) happen at the same time, so während is correct.',
     },
@@ -1112,7 +1122,7 @@ export const chapter078: ChapterDefinition = {
       prompt: '___ meine Eltern nach Spanien gezogen sind, rufen wir öfter an.',
       templateParts: ['', ' meine Eltern nach Spanien gezogen sind, rufen wir öfter an.'],
       slots: [{ id: 'ch78-ex44-slot1', correctWord: 'Seit' }],
-      wordBank: ['Seit', 'Nachdem', 'Bevor', 'Während'],
+      wordBank: ['Seit', 'Als', 'Bevor', 'Während'],
       explanation:
         'The move is a completed event whose result continues, which seit pairs with the present perfect (gezogen sind) to express.',
     },
@@ -1239,7 +1249,7 @@ export const chapter078: ChapterDefinition = {
       prompt: '___ du duschst, mache ich das Frühstück.',
       templateParts: ['', ' du duschst, mache ich das Frühstück.'],
       slots: [{ id: 'ch78-ex50-slot1', correctWord: 'Während' }],
-      wordBank: ['Während', 'Bevor', 'Nachdem', 'Seit'],
+      wordBank: ['Während', 'Als', 'Nachdem', 'Seit'],
       explanation:
         'Showering and making breakfast happen at the same time, so während is correct.',
     },
@@ -1437,7 +1447,7 @@ export const chapter078: ChapterDefinition = {
       prompt: '___ sie in Berlin wohnt, spricht sie fließend Deutsch.',
       templateParts: ['', ' sie in Berlin wohnt, spricht sie fließend Deutsch.'],
       slots: [{ id: 'ch78-ex61-slot1', correctWord: 'Seit' }],
-      wordBank: ['Seit', 'Nachdem', 'Bevor', 'Während'],
+      wordBank: ['Seit', 'Nachdem', 'Bevor', 'Als'],
       explanation:
         'Living in Berlin is an ongoing action, which seit pairs with the present tense (wohnt) to express.',
     },
@@ -1554,7 +1564,10 @@ export const chapter078: ChapterDefinition = {
       instruction:
         'Combine the two sentences with nachdem: the main clause is in the present tense, so the nachdem-clause needs the present perfect. Capitalisation and punctuation are checked.',
       prompt: 'Ich räume mein Zimmer auf. + Ich gehe raus. (nachdem)',
-      acceptedAnswers: ['Nachdem ich mein Zimmer aufgeräumt habe, gehe ich raus.'],
+      acceptedAnswers: [
+        'Nachdem ich mein Zimmer aufgeräumt habe, gehe ich raus.',
+        'Ich gehe raus, nachdem ich mein Zimmer aufgeräumt habe.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Nachdem ich mein Zimmer aufgeräumt habe, ...',
       maxLength: 60,
@@ -1640,7 +1653,7 @@ export const chapter078: ChapterDefinition = {
       prompt: '___ er das Rauchen aufgegeben hat, fühlt er sich gesünder.',
       templateParts: ['', ' er das Rauchen aufgegeben hat, fühlt er sich gesünder.'],
       slots: [{ id: 'ch78-ex73-slot1', correctWord: 'Seit' }],
-      wordBank: ['Seit', 'Nachdem', 'Bevor', 'Während'],
+      wordBank: ['Seit', 'Als', 'Bevor', 'Während'],
       explanation:
         'Giving up smoking is a single completed event with a continuing result, which seit pairs with the present perfect (aufgegeben hat) to express.',
     },

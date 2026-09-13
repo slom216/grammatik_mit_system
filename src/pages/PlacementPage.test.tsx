@@ -81,7 +81,7 @@ describe('PlacementPage', () => {
     await renderPlacement();
     await user.click(await screen.findByRole('button', { name: /start the test/i }));
 
-    // Nothing answered correctly, so the first probe is where to begin.
+    // Nothing answered correctly, so the course starts at the beginning.
     act(() => {
       usePracticeStore.getState().finishCumulative();
     });
@@ -89,7 +89,7 @@ describe('PlacementPage', () => {
     expect(
       await screen.findByRole('heading', { level: 2, name: /where to start/i }),
     ).toBeInTheDocument();
-    expect(screen.getByText(/start with chapter 05/i)).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /go to chapter 05/i })).toBeInTheDocument();
+    expect(screen.getByText(/start with chapter 01/i)).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /go to chapter 01/i })).toBeInTheDocument();
   });
 });

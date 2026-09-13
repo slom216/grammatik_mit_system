@@ -27,7 +27,7 @@ export const chapter077: ChapterDefinition = {
     introduction: [
       'Chapter 46 introduced wenn as a subordinating conjunction meaning both "if" (a condition) and "when(ever)" (a repeated or future point in time). This chapter zooms in on that second, temporal meaning of wenn and puts it side by side with a connector that looks similar but works very differently: als. Both wenn and als can be translated "when" in English, and both send the finite verb to the end of their clause, but German speakers do not choose between them freely — the choice depends entirely on whether the event being described happened once, in the past, or not.',
       'The decisive question is always the same: is this a single, unrepeated event or period that took place in the past? If the answer is yes, German uses als — Als ich acht Jahre alt war, zogen wir nach Hamburg. (When I was eight, we moved to Hamburg — that childhood age happened exactly once.) For every other case — a habit repeated any number of times, even entirely in the past, a present situation, a future event, or a general condition — German uses wenn: Immer wenn er kam, freute sich der Hund. (Whenever he came, the dog was happy — this happened over and over, so wenn is required even though it is all in the past.)',
-      'This single-event-versus-everything-else rule trips up learners because English "when" does not draw this line at all, and because it is tempting to assume "als = past" and "wenn = present/future." That shortcut fails for repeated past actions, which are extremely common (childhood habits, routines, "every time X happened"). The rest of this chapter works through the rule in detail, reviews the familiar verb-final and clause-order patterns from Chapter 46, and briefly notes — without re-teaching it — that wenn can also mean "if," a meaning that context, not grammar, resolves.',
+      'This single-event-versus-everything-else rule trips up learners because English "when" does not draw this line at all, and because it is tempting to assume "als = past" and "wenn = present/future." That shortcut fails for repeated past actions, which are extremely common (holiday traditions, routines, "every time X happened"). The rest of this chapter works through the rule in detail, reviews the familiar verb-final and clause-order patterns from Chapter 46, and briefly notes — without re-teaching it — that wenn can also mean "if," a meaning that context, not grammar, resolves.',
     ],
     rules: [
       {
@@ -44,7 +44,7 @@ export const chapter077: ChapterDefinition = {
         heading: 'wenn — repeated events, even entirely in the past',
         paragraphs: [
           'When an action happened more than once — signalled by words like immer (always), jedes Mal (every time), oft (often), or jeden Tag (every day) — wenn is required, even if every single occurrence lies in the past. This is the case learners most often get wrong, because it feels like "the past" should automatically mean als.',
-          'Immer wenn er kam, freute sich der Hund. Jedes Mal, wenn es regnete, blieben wir zu Hause. Wenn wir Kinder waren, spielten wir jeden Tag draußen. In all three sentences, the events are past but repeated, so wenn — not als — is correct.',
+          'Immer wenn er kam, freute sich der Hund. Jedes Mal, wenn es regnete, blieben wir zu Hause. Wenn wir Ferien hatten, fuhren wir immer ans Meer. In all three sentences, the events are past but repeated, so wenn — not als — is correct. Be careful, though: when the clause names one whole past period, such as childhood, it takes als even if the activities inside it repeated (see Rule 4): Als wir Kinder waren, spielten wir jeden Tag draußen.',
         ],
       },
       {
@@ -131,7 +131,7 @@ export const chapter077: ChapterDefinition = {
             'Als ich acht Jahre alt war, zogen wir nach Hamburg.',
           ],
           [
-            'Der Hund freute sich, immer wenn er kam.',
+            'Der Hund freute sich immer, wenn er kam.',
             'Immer wenn er kam, freute sich der Hund.',
           ],
         ],
@@ -227,11 +227,11 @@ export const chapter077: ChapterDefinition = {
         explanation: 'A future plan, even a single one, is introduced with wenn.',
       },
       {
-        german: 'Wenn wir Kinder waren, spielten wir jeden Tag draußen.',
+        german: 'Als wir Kinder waren, spielten wir jeden Tag draußen.',
         english: 'When we were children, we played outside every day.',
-        highlight: ['jeden Tag'],
+        highlight: ['Als wir Kinder waren'],
         explanation:
-          'A repeated childhood habit uses wenn, not als, despite being entirely in the past — the classic trap for learners.',
+          'Childhood is one single past period, so it takes als, even though the playing inside it happened every day — the classic trap for learners, who see jeden Tag and reach for wenn.',
       },
     ],
     commonMistakes: [
@@ -247,10 +247,10 @@ export const chapter077: ChapterDefinition = {
         explanation: 'A single, one-time past event or period takes als, not wenn.',
       },
       {
-        incorrect: 'Als wir Kinder waren, spielten wir jeden Tag draußen.',
-        correct: 'Wenn wir Kinder waren, spielten wir jeden Tag draußen.',
+        incorrect: 'Wenn wir Kinder waren, spielten wir jeden Tag draußen.',
+        correct: 'Als wir Kinder waren, spielten wir jeden Tag draußen.',
         explanation:
-          'Repeated childhood actions (jeden Tag) use wenn even though they are entirely in the past; als is reserved for single events.',
+          'Childhood is one single past period, so it takes als; the repeated activity inside it (jeden Tag) does not change the connector.',
       },
       {
         incorrect: 'Als es klingelte, sie öffnete die Tür.',
@@ -267,7 +267,7 @@ export const chapter077: ChapterDefinition = {
     ],
     remember: [
       'als = one single, unrepeated event or period in the past; wenn = everything else (present, future, and any repetition — even repetition entirely in the past).',
-      'A repeated past action (immer, jedes Mal, jeden Tag) still takes wenn, not als — this is the case learners get wrong most often.',
+      'A repeated past action (immer, jedes Mal) still takes wenn, not als — but a clause naming one whole past period, such as childhood, takes als even if things inside it repeated: Als wir Kinder waren, spielten wir jeden Tag draußen.',
       'wenn also means "if" (a condition); context, not grammar, tells you whether a given wenn-clause is temporal or conditional.',
       'Both als and wenn push the finite verb to the end of their clause, exactly like weil and dass.',
       'A comma always separates the two clauses, whichever order they come in.',
@@ -541,16 +541,16 @@ export const chapter077: ChapterDefinition = {
           english: 'Nice! When we were children, we played outside every day.',
         },
       ],
-      prompt: '___ wir Kinder waren, spielten wir jeden Tag draußen.',
+      prompt: "Which connector completes Lena's reply?",
       options: [
         { id: 'a', text: 'Als' },
         { id: 'b', text: 'Wenn' },
         { id: 'c', text: 'Dass' },
         { id: 'd', text: 'Ob' },
       ],
-      correctOptionId: 'b',
+      correctOptionId: 'a',
       explanation:
-        'jeden Tag shows this childhood activity repeated; a repeated past habit takes wenn, even though "als Kinder" might feel tempting.',
+        'Childhood is one single past period, so it takes als; that the playing happened every day (jeden Tag) does not change the connector.',
     },
     {
       id: 'ch77-ex-14',
@@ -558,9 +558,9 @@ export const chapter077: ChapterDefinition = {
       order: 14,
       type: 'singleChoice',
       level: 'transfer',
-      grammarFocus: ['wenn-vs-als', 'common-mistake', 'repeated-past'],
+      grammarFocus: ['wenn-vs-als', 'common-mistake', 'single-past-event'],
       instruction: 'Choose the correct sentence.',
-      prompt: 'Which sentence correctly describes a repeated childhood habit?',
+      prompt: 'Which sentence correctly describes an everyday activity during childhood?',
       options: [
         { id: 'a', text: 'Als wir Kinder waren, spielten wir jeden Tag draußen.' },
         { id: 'b', text: 'Wenn wir Kinder waren, spielten wir jeden Tag draußen.' },
@@ -570,9 +570,9 @@ export const chapter077: ChapterDefinition = {
           text: 'Wenn wir Kinder gewesen sind, jeden Tag draußen spielten wir.',
         },
       ],
-      correctOptionId: 'b',
+      correctOptionId: 'a',
       explanation:
-        'A habitual, repeated action in the past (jeden Tag) takes wenn; als would wrongly suggest this happened only once.',
+        'Childhood is one single past period, so the clause takes als, and the main clause stays in the past (spielten); the daily playing inside that period does not turn als into wenn.',
     },
     {
       id: 'ch77-ex-15',
@@ -720,7 +720,10 @@ export const chapter077: ChapterDefinition = {
       instruction:
         'Combine the two sentences with als. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich war acht Jahre alt. + Wir zogen nach Hamburg. (als)',
-      acceptedAnswers: ['Als ich acht Jahre alt war, zogen wir nach Hamburg.'],
+      acceptedAnswers: [
+        'Als ich acht Jahre alt war, zogen wir nach Hamburg.',
+        'Wir zogen nach Hamburg, als ich acht Jahre alt war.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Als ich acht Jahre alt war, ...',
       maxLength: 70,
@@ -737,7 +740,10 @@ export const chapter077: ChapterDefinition = {
       instruction:
         'Combine the two sentences with immer wenn. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Er kam nach Hause. + Der Hund freute sich immer. (immer wenn)',
-      acceptedAnswers: ['Immer wenn er nach Hause kam, freute sich der Hund.'],
+      acceptedAnswers: [
+        'Immer wenn er nach Hause kam, freute sich der Hund.',
+        'Der Hund freute sich immer, wenn er nach Hause kam.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Immer wenn er nach Hause kam, ...',
       maxLength: 70,
@@ -754,7 +760,10 @@ export const chapter077: ChapterDefinition = {
       instruction:
         'Combine the two sentences with wenn. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich komme in Berlin an. + Ich rufe dich an. (wenn)',
-      acceptedAnswers: ['Ich rufe dich an, wenn ich in Berlin ankomme.'],
+      acceptedAnswers: [
+        'Ich rufe dich an, wenn ich in Berlin ankomme.',
+        'Wenn ich in Berlin ankomme, rufe ich dich an.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich rufe dich an, wenn ...',
       maxLength: 70,
@@ -817,16 +826,16 @@ export const chapter077: ChapterDefinition = {
       order: 29,
       type: 'textInput',
       level: 'transfer',
-      grammarFocus: ['error-correction', 'wenn-vs-als', 'repeated-past'],
+      grammarFocus: ['error-correction', 'wenn-vs-als', 'single-past-event'],
       instruction:
         'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
-      prompt: 'Falsch: Als wir Kinder waren, spielten wir jeden Tag draußen.',
-      acceptedAnswers: ['Wenn wir Kinder waren, spielten wir jeden Tag draußen.'],
+      prompt: 'Falsch: Wenn wir Kinder waren, spielten wir jeden Tag draußen.',
+      acceptedAnswers: ['Als wir Kinder waren, spielten wir jeden Tag draußen.'],
       answerMode: 'normalized',
-      placeholder: 'Wenn wir Kinder waren, ...',
+      placeholder: 'Als wir Kinder waren, ...',
       maxLength: 70,
       explanation:
-        'jeden Tag marks a repeated past habit, which needs wenn even though the whole thing happened in the past.',
+        'Childhood is one single past period, so it needs als; the daily playing inside it (jeden Tag) does not change the connector.',
     },
     {
       id: 'ch77-ex-30',
@@ -1617,21 +1626,22 @@ export const chapter077: ChapterDefinition = {
       instruction: 'One word is wrong. Identify it and give the correction.',
       prompt: 'Find the error in this sentence.',
       tokens: [
-        'Als',
+        'Jedes',
+        'Mal,',
+        'als',
         'wir',
-        'Kinder',
-        'waren,',
-        'gingen',
-        'wir',
-        'jeden',
-        'Sommer',
         'ans',
-        'Meer.',
+        'Meer',
+        'fuhren,',
+        'freuten',
+        'sich',
+        'die',
+        'Kinder.',
       ],
-      errorTokenIndex: 0,
-      correction: 'Wenn',
+      errorTokenIndex: 2,
+      correction: 'wenn',
       explanation:
-        'jeden Sommer signals repetition, so this childhood habit takes wenn, even though it lies entirely in the past.',
+        'jedes Mal signals repetition, so the clause takes wenn, even though every trip lies entirely in the past.',
     },
     {
       id: 'ch77-ex-68',
@@ -1985,7 +1995,7 @@ export const chapter077: ChapterDefinition = {
           english: 'When I was studying in Berlin, I met him at a party.',
         },
       ],
-      prompt: '___ ich in Berlin studierte, habe ich ihn auf einer Party getroffen.',
+      prompt: "Which connector completes Tom's reply?",
       options: [
         { id: 'a', text: 'Als' },
         { id: 'b', text: 'Wenn' },
@@ -2168,7 +2178,10 @@ export const chapter077: ChapterDefinition = {
       instruction:
         'Combine the two sentences with als. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Ich war achtzehn. + Ich habe meinen Führerschein gemacht. (als)',
-      acceptedAnswers: ['Als ich achtzehn war, habe ich meinen Führerschein gemacht.'],
+      acceptedAnswers: [
+        'Als ich achtzehn war, habe ich meinen Führerschein gemacht.',
+        'Ich habe meinen Führerschein gemacht, als ich achtzehn war.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Als ich achtzehn war, ...',
       maxLength: 70,
@@ -2185,7 +2198,10 @@ export const chapter077: ChapterDefinition = {
       instruction:
         'Combine the two sentences with immer wenn. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Meine Oma besuchte uns. + Sie brachte immer Kekse mit. (immer wenn)',
-      acceptedAnswers: ['Immer wenn meine Oma uns besuchte, brachte sie Kekse mit.'],
+      acceptedAnswers: [
+        'Immer wenn meine Oma uns besuchte, brachte sie Kekse mit.',
+        'Meine Oma brachte immer Kekse mit, wenn sie uns besuchte.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Immer wenn meine Oma uns besuchte, ...',
       maxLength: 80,

@@ -76,14 +76,14 @@ export const chapter082: ChapterDefinition = {
         heading: 'Genitive forms after these prepositions: the same rules as Chapter 68',
         paragraphs: [
           'No new endings need to be learned here — these prepositions simply trigger the genitive article and noun-ending rules you already know. Masculine and neuter singular nouns take des or eines and add -s or -es to the noun (wegen des Kindes, trotz eines Sturms); feminine singular nouns and all plurals take der or einer and never add an ending to the noun (während der Verspätung, wegen der Kinder).',
-          'The hand-picked group of monosyllabic masculine and neuter nouns that add -es also applies here without exception: wegen des Mannes, trotz des Jahres, statt des Wortes — exactly the same nouns and the same -es ending as in Chapter 68.',
+          'Most monosyllabic masculine and neuter nouns allow both endings: wegen des Mannes / des Manns, trotz des Jahres / des Jahrs, statt des Wortes / des Worts. The -es form is more common and slightly more formal, and both are correct. After s, ß, x or z, -es is required: wegen des Hauses, trotz des Schmerzes.',
         ],
       },
       {
         id: 'ch82-rule-07',
         heading: 'The colloquial dative variation: wegen dem Regen',
         paragraphs: [
-          'In everyday spoken German, trotz, während, wegen, and statt/anstatt are very often followed by the dative instead of the genitive: wegen dem Regen, trotz dem Wetter, statt dem Auto. This usage is extremely widespread — you will hear it constantly in casual conversation — but it is still considered informal or non-standard: careful speakers, textbooks, formal writing, and exams expect the genitive.',
+          'In everyday spoken German, trotz, während, wegen, and statt/anstatt are very often followed by the dative instead of the genitive: wegen dem Regen, trotz dem Wetter, statt dem Auto. This usage is extremely widespread — you will hear it constantly in casual conversation, and in some regions it is the normal spoken form — but it counts as colloquial: careful speakers, textbooks, formal writing, and exams expect the genitive. Standard German itself uses the dative only where the genitive would not be visible, as with a plural noun without an article: wegen Unfällen, trotz Schmerzen.',
           'One practical reason the dative spreads here is that many plural nouns look identical in the genitive and dative when no article distinguishes them, and because the genitive is generally retreating from casual speech in favour of simpler alternatives, exactly as von + dative can replace a possessive genitive (Chapter 68).',
           'For this course, treat the genitive as the form to produce and the target of every exercise; treat the dative variant purely as something to recognise and understand, not as an equally correct alternative to write yourself in formal contexts.',
         ],
@@ -141,7 +141,7 @@ export const chapter082: ChapterDefinition = {
           ],
           ['statt des Autos', 'statt dem Auto', 'instead of the car'],
         ],
-        note: 'The colloquial dative is widely heard but non-standard; prefer the genitive, especially in writing.',
+        note: 'The dative is widely heard in everyday speech but is colloquial; prefer the genitive, especially in writing.',
       },
     ],
     examples: [
@@ -204,7 +204,7 @@ export const chapter082: ChapterDefinition = {
         english: 'Because of the child, she had to leave earlier.',
         highlight: ['Wegen des Kindes'],
         explanation:
-          'Kind is in the hand-picked monosyllabic group that adds -es: des Kindes.',
+          'Kind is a monosyllabic neuter noun, so it takes -es or -s: des Kindes (the more common form) or des Kinds.',
       },
       {
         german: 'Trotz seiner Krankheit arbeitet er weiter.',
@@ -239,7 +239,7 @@ export const chapter082: ChapterDefinition = {
         incorrect: 'wegen das Kind',
         correct: 'wegen des Kindes',
         explanation:
-          'wegen governs the genitive, not the accusative; Kind is neuter and in the hand-picked group that adds -es.',
+          'wegen governs the genitive, not the accusative; Kind is neuter, so it becomes des Kindes (des Kinds is also correct).',
       },
       {
         incorrect: 'während die Ferien',
@@ -263,7 +263,7 @@ export const chapter082: ChapterDefinition = {
         incorrect: 'wegen dem Regen (in a formal essay)',
         correct: 'wegen des Regens',
         explanation:
-          'The dative after wegen is common in casual speech but is considered non-standard in formal writing, where the genitive is expected.',
+          'The dative after wegen is common in casual speech but too informal for formal writing, where the genitive is expected.',
       },
     ],
     remember: [
@@ -426,7 +426,7 @@ export const chapter082: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'Kind is neuter and belongs to the hand-picked monosyllabic group that adds -es: des Kindes.',
+        'Kind is a monosyllabic neuter noun, so it takes -es or -s: des Kindes (the more common form) or des Kinds.',
     },
     {
       id: 'ch82-ex-09',
@@ -474,7 +474,7 @@ export const chapter082: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['genitive', 'noun-endings', 'sibilant', 'wegen'],
       instruction: 'Choose the correctly formed genitive noun phrase.',
-      prompt: 'Wegen ___ kamen wir zu spät. (das Haus, i.e. the traffic near the house)',
+      prompt: 'Statt ___ kaufen wir eine Wohnung. (das Haus)',
       options: [
         { id: 'a', text: 'des Hauses' },
         { id: 'b', text: 'des Haus' },
@@ -490,18 +490,18 @@ export const chapter082: ChapterDefinition = {
       order: 12,
       type: 'singleChoice',
       level: 'controlled',
-      grammarFocus: ['genitive', 'noun-endings', 'hand-picked', 'trotz'],
+      grammarFocus: ['genitive', 'noun-endings', 'trotz'],
       instruction: 'Choose the correctly formed genitive noun phrase.',
-      prompt: 'Trotz ___ arbeitet er weiter. (das Jahr, i.e. despite the difficult year)',
+      prompt: 'Trotz ___ war er gut gelaunt. (der Regen)',
       options: [
-        { id: 'a', text: 'des Jahres' },
-        { id: 'b', text: 'des Jahrs' },
-        { id: 'c', text: 'des Jahr' },
-        { id: 'd', text: 'dem Jahr' },
+        { id: 'a', text: 'des Regens' },
+        { id: 'b', text: 'des Regen' },
+        { id: 'c', text: 'der Regens' },
+        { id: 'd', text: 'den Regen' },
       ],
       correctOptionId: 'a',
       explanation:
-        'Jahr belongs to the hand-picked monosyllabic group that adds -es: des Jahres.',
+        'Regen is masculine and has two syllables, so the genitive adds only -s: des Regens.',
     },
     {
       id: 'ch82-ex-13',
@@ -768,12 +768,12 @@ export const chapter082: ChapterDefinition = {
       instruction:
         'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
       prompt: 'trotz + das Kind →',
-      acceptedAnswers: ['des Kindes'],
+      acceptedAnswers: ['des Kindes', 'des Kinds'],
       answerMode: 'caseInsensitive',
       placeholder: 'des ...',
       maxLength: 25,
       explanation:
-        'Kind is in the hand-picked monosyllabic group, so it takes -es: des Kindes.',
+        'Kind is a monosyllabic neuter noun, so it takes -es or -s: des Kindes (the more common form) or des Kinds.',
     },
     {
       id: 'ch82-ex-28',
@@ -954,17 +954,19 @@ export const chapter082: ChapterDefinition = {
       order: 38,
       type: 'textInput',
       level: 'transfer',
-      grammarFocus: ['genitive', 'sentence-building', 'hand-picked', 'wegen'],
+      grammarFocus: ['genitive', 'sentence-building', 'wegen'],
       instruction:
         'Build a complete sentence from the cue words, using the correct genitive noun ending. Capitalisation and punctuation are checked.',
-      prompt:
-        'wegen – das Jahr – war – der Umsatz – niedriger (i.e. because of the [difficult] year, revenue was lower)',
-      acceptedAnswers: ['Wegen des Jahres war der Umsatz niedriger.'],
+      prompt: 'wegen – der Sturm – fiel – der Strom – aus',
+      acceptedAnswers: [
+        'Wegen des Sturms fiel der Strom aus.',
+        'Wegen des Sturmes fiel der Strom aus.',
+      ],
       answerMode: 'normalized',
-      placeholder: 'Wegen des Jahres ...',
+      placeholder: 'Wegen des ...',
       maxLength: 60,
       explanation:
-        'Jahr is in the hand-picked monosyllabic group that adds -es: wegen des Jahres.',
+        'Sturm is a monosyllabic masculine noun, so both genitive forms are correct: wegen des Sturms or wegen des Sturmes.',
     },
     {
       id: 'ch82-ex-39',
@@ -1095,7 +1097,7 @@ export const chapter082: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'Dorf is neuter, so the genitive definite article is des; the noun itself adds -es: des Dorfes.',
+        'Dorf is neuter, so the genitive definite article is des; the noun itself adds -es (or -s): des Dorfes / des Dorfs.',
     },
     {
       id: 'ch82-ex-46',
@@ -1300,7 +1302,7 @@ export const chapter082: ChapterDefinition = {
       slots: [{ id: 'slot1', correctWord: 'des Dorfes' }],
       wordBank: ['des Dorfes', 'dem Dorf', 'das Dorf', 'der Dorfes'],
       explanation:
-        'Dorf belongs to the hand-picked monosyllabic group that adds -es: des Dorfes.',
+        'Dorf is a monosyllabic neuter noun; des Dorfes is the usual genitive (des Dorfs also exists).',
     },
     {
       id: 'ch82-ex-58',
@@ -1392,7 +1394,7 @@ export const chapter082: ChapterDefinition = {
       errorTokenIndex: 2,
       correction: 'Dorfes',
       explanation:
-        'Dorf belongs to the hand-picked monosyllabic group that adds -es in the genitive: des Dorfes.',
+        'Dorf is a monosyllabic neuter noun, so the genitive adds -es: des Dorfes (des Dorfs is also possible).',
     },
     {
       id: 'ch82-ex-64',

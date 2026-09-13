@@ -27,7 +27,7 @@ export const chapter012: ChapterDefinition = {
           'Position 2 does not mean the second word — it means the second complete sentence element. An element can be one word, or it can be a whole phrase that belongs together and moves as a single block.',
         ],
         notes: [
-          'Ich (1) lerne (2) jeden Tag Deutsch. — three elements: Ich, lerne, jeden Tag Deutsch.',
+          'Ich (1) lerne (2) jeden Tag (3) Deutsch (4). — four elements: Ich, lerne, jeden Tag, Deutsch.',
           'Am Montag (1) beginnt (2) der Kurs. — "Am Montag" is a single element, even though it is two words.',
         ],
       },
@@ -620,7 +620,10 @@ export const chapter012: ChapterDefinition = {
       instruction:
         'Rewrite the sentence so that the subject stands in position 1 instead. Capitalisation and punctuation are checked.',
       prompt: 'Zum Geburtstag bekommt er ein neues Fahrrad.',
-      acceptedAnswers: ['Er bekommt zum Geburtstag ein neues Fahrrad.'],
+      acceptedAnswers: [
+        'Er bekommt zum Geburtstag ein neues Fahrrad.',
+        'Er bekommt ein neues Fahrrad zum Geburtstag.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Er ...',
       maxLength: 70,
@@ -966,11 +969,11 @@ export const chapter012: ChapterDefinition = {
       grammarFocus: ['fronting', 'inversion', 'word-order'],
       instruction:
         'Arrange the segments into a grammatical sentence with "Vielleicht" in position 1.',
-      prompt: 'unser Freund / kommt / morgen / Vielleicht',
+      prompt: 'er / kommt / morgen / Vielleicht',
       segments: [
         { id: 's1', text: 'Vielleicht' },
         { id: 's2', text: 'kommt' },
-        { id: 's3', text: 'unser Freund' },
+        { id: 's3', text: 'er' },
         { id: 's4', text: 'morgen' },
       ],
       explanation:

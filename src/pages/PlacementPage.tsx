@@ -2,8 +2,10 @@ import { useMemo } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import { Button } from '../components/common/Button';
 import { Card } from '../components/common/Card';
+import { Modal } from '../components/common/Modal';
 import { ProgressBar } from '../components/common/ProgressBar';
 import { PracticeExercise } from '../components/practice/PracticeExercise';
+import { useExitConfirmation } from '../components/practice/useExitConfirmation';
 import {
   EXERCISE_TYPE_LABELS,
   chapterPath,
@@ -35,6 +37,7 @@ export function PlacementPage() {
   const { chapters, complete } = useLoaderData() as PlacementRouteResult;
   const practice = usePracticeStore();
   const shuffleOptions = useSettingsStore((state) => state.shuffleOptions);
+  const exit = useExitConfirmation();
 
   const isPlacement = practice.mode === 'placement';
 
@@ -74,13 +77,12 @@ export function PlacementPage() {
           <div className="stack">
             <p className="lead">
               {result.clearedEverything
-                ? 'You answered every section well. Start wherever you like — the last section is the hardest material in the course.'
+                ? `You answered every section well. Start with ${chapterLabel(result.recommendedChapter)}, the first chapter after the last one tested.`
                 : `Start with ${chapterLabel(result.recommendedChapter)}.`}
             </p>
             <p className="text-sm text-muted">
-              This is the first section where the answers stopped holding up, so it is
-              where the course has something to teach you. Nothing above it is locked —
-              you can start anywhere.
+              This is the first chapter after the sections you answered well, so nothing
+              untested is skipped. Nothing is locked — you can start anywhere.
             </p>
             <p>
               <Link
@@ -201,8 +203,25 @@ export function PlacementPage() {
         exercise={exercise}
         isLast={selectIsLastExercise(practice)}
         onFinish={() => practice.finishCumulative()}
-        onExit={() => practice.exitSession()}
+        onExit={exit.request}
+        exitLabel="Exit the test"
       />
+
+      <Modal
+        open={exit.open}
+        title="Leave the placement test?"
+        description="Placement answers are not saved, so leaving ends the test. Next time it starts again from the first question."
+        onClose={exit.stay}
+      >
+        <div className="row">
+          <Button variant="secondary" onClick={exit.stay}>
+            Continue the test
+          </Button>
+          <Button variant="danger" onClick={() => exit.leave(practice.exitSession)}>
+            Leave the test
+          </Button>
+        </div>
+      </Modal>
     </div>
   );
 }

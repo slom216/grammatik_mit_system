@@ -16,7 +16,7 @@ export const chapter027: ChapterDefinition = {
   explanation: {
     introduction: [
       'You already know that most verbs build the present perfect with haben: Ich habe gegessen. (I have eaten.) But a smaller group of verbs uses sein instead: Ich bin gegangen. (I have gone / I went.) The choice of auxiliary is not random — it depends on the meaning of the main verb, not on the subject.',
-      'sein is used with verbs that describe movement from one place to another (gehen, fahren, fliegen, kommen, laufen) and with verbs that describe a change of state (aufwachen, einschlafen, sterben, werden). A few common verbs also take sein even though they do not obviously fit either group: sein itself, bleiben, and passieren. Everything else — including many movement verbs used without a destination — still takes haben.',
+      'sein is used with verbs that describe movement from one place to another (gehen, fahren, fliegen, kommen, laufen) and with verbs that describe a change of state (aufwachen, einschlafen, sterben, werden). A few common verbs also take sein even though they do not obviously fit either group: sein itself, bleiben, and passieren. Everything else still takes haben. Movement verbs keep sein even when no destination is named (Ich bin viel gelaufen.); they only switch to haben when they have a direct object (Ich habe das Auto gefahren.).',
     ],
     rules: [
       {
@@ -52,8 +52,8 @@ export const chapter027: ChapterDefinition = {
         heading: 'haben remains the default',
         paragraphs: [
           'Every other verb — including the large majority of German verbs — still takes haben: Ich habe gearbeitet. (I have worked.) Sie hat das Buch gelesen. (She has read the book.) Wir haben gegessen. (We have eaten.)',
-          'This includes movement verbs used transitively, that is, with a direct object, or used without any sense of arriving somewhere: Ich habe das Auto gefahren. (I drove the car.) Here fahren does not describe the driver moving to a destination; it describes what happened to the car, so haben is used, not sein. Compare this with Ich bin nach Berlin gefahren, where the same verb describes the speaker travelling to a place and takes sein.',
-          'Swimming and similar verbs behave the same way: if the sentence emphasises a destination reached (Er ist ans andere Ufer geschwommen. — He swam to the other bank.), sein is used; if it simply describes the activity without a destination, some speakers still prefer sein for schwimmen, but this fine detail is not tested in this chapter — focus on the clear cases above.',
+          'The one exception for movement verbs is transitive use, that is, with a direct object: Ich habe das Auto gefahren. (I drove the car.) Here fahren does not describe the driver moving to a destination; it describes what happened to the car, so haben is used, not sein. Compare this with Ich bin nach Berlin gefahren, where the same verb describes the speaker travelling to a place and takes sein.',
+          'Without a direct object, a movement verb keeps sein even when no destination is named: Ich bin gestern zwei Stunden gelaufen. (I ran for two hours yesterday.) Er ist ans andere Ufer geschwommen. (He swam to the other bank.) Wir sind im See geschwommen. (We swam in the lake.) In northern Germany you may also hear haben when the activity itself is the focus (Wir haben im See geschwommen), but sein is always correct.',
         ],
       },
       {

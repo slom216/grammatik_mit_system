@@ -62,8 +62,9 @@ export function DashboardPage() {
         <div className="notice" role="status">
           <p>
             <strong>Saved progress could not be read and was reset.</strong> This happens
-            when browser storage is damaged or written by an older version. If you have a
-            backup file, restore it in <Link to="/settings">Settings</Link>.
+            when browser storage is damaged. A copy of the unreadable data was kept in
+            this browser. If you have a backup file, restore it in{' '}
+            <Link to="/settings">Settings</Link>.
           </p>
           <Button variant="ghost" onClick={progress.acknowledgeRecovery}>
             Dismiss
@@ -101,6 +102,12 @@ export function DashboardPage() {
                 </Link>
               </p>
             </div>
+          ) : completion.availableChapters > 0 &&
+            completion.completedChapters >= completion.availableChapters ? (
+            <p>
+              You have completed every chapter. Keep it fresh in the{' '}
+              <Link to="/review">review queue</Link>.
+            </p>
           ) : (
             <p>
               No chapter content is available yet.{' '}

@@ -32,6 +32,7 @@ export function SentenceOrderingExercise({
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const correctOrder = exercise.segments.map((segment) => segment.id);
   const draggable = !disabled && !isCoarsePointer();
+  const listsSegments = promptListsSegments(exercise);
 
   // The full stop or question mark rides on the last segment in the content, so
   // shuffling it into the pile hands the learner the answer's final position for
@@ -82,12 +83,18 @@ export function SentenceOrderingExercise({
   };
 
   return (
-    <fieldset className="sentence-ordering">
+    <fieldset
+      className="sentence-ordering"
+      // The instruction is already on screen above; it names the group instead.
+      aria-label={listsSegments ? exercise.instruction : undefined}
+    >
       {/* Many prompts are the words with slashes between them, in the answer's
           own order — that is the answer, printed above the puzzle. Dropped in
           favour of a plain label, which still names the fieldset. */}
-      {promptListsSegments(exercise) ? (
-        <legend className="visually-hidden">Put the words in the correct order.</legend>
+      {listsSegments ? (
+        !exercise.instruction && (
+          <legend className="visually-hidden">Put the words in the correct order.</legend>
+        )
       ) : (
         <legend className="exercise__prompt" lang="de">
           {exercise.prompt}

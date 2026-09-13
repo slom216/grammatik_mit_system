@@ -35,7 +35,7 @@ export const chapter055: ChapterDefinition = {
         id: 'ch55-rule-01',
         heading: 'Two parts: hatte/war + past participle',
         paragraphs: [
-          'Just like the present perfect, the past perfect has two parts: an auxiliary and a past participle. The only difference is that the auxiliary is in the simple past instead of the present tense: hatte or war instead of habe/hat or bin/ist. Ich hatte das Buch gelesen. (I had read the book.) Er war schon angekommen. (He had already arrived.)',
+          'Just like the present perfect, the past perfect has two parts: an auxiliary and a past participle. The only difference is that the auxiliary is in the simple past instead of the present tense: hatte or war instead of habe/hat or bin/ist. Als der Film ins Kino kam, hatte ich das Buch schon gelesen. (When the film came out, I had already read the book.) Er war schon angekommen, als wir kamen. (He had already arrived when we came.)',
           'The participle itself never changes — it is exactly the same form you learned for the present perfect (gelesen, gegessen, gefahren, gegangen ...). Only the auxiliary changes, and only its tense changes, from present to simple past.',
         ],
       },
@@ -77,12 +77,12 @@ export const chapter055: ChapterDefinition = {
         id: 'ch55-rule-06',
         heading: 'Temporal connectors: nachdem, bevor, als',
         paragraphs: [
-          'nachdem ("after"), bevor ("before"), and als ("when") are the connectors most often used to link a past perfect clause with a simple-past clause, because they explicitly state the order of two past events. Whichever clause describes the earlier event needs the past perfect; the clause describing the later event stays in the simple past — this is true no matter which connector is used.',
-          'With nachdem, the nachdem-clause itself names the earlier event, so it takes the past perfect, and the main clause (the later event) takes the simple past: Nachdem ich gegessen hatte, ging ich spazieren. (After I had eaten, I went for a walk.) With bevor, it is the other way around: the bevor-clause names the later event and stays in the simple past, while the main clause names the earlier event and takes the past perfect: Bevor ich schlafen ging, hatte ich noch aufgeräumt. (Before I went to sleep, I had tidied up.)',
+          'nachdem ("after"), bevor ("before"), and als ("when") are the connectors most often used to order two past events. With nachdem and als, the clause describing the earlier event takes the past perfect and the clause describing the later event stays in the simple past. bevor works differently: it already makes the order clear, so both clauses normally keep the same tense.',
+          'With nachdem, the nachdem-clause itself names the earlier event, so it takes the past perfect, and the main clause (the later event) takes the simple past: Nachdem ich gegessen hatte, ging ich spazieren. (After I had eaten, I went for a walk.) With bevor, the bevor-clause names the later event, and normally both clauses are in the simple past: Bevor ich schlafen ging, räumte ich noch auf. (Before I went to sleep, I tidied up.) The past perfect in the main clause is also possible when you want to stress that the earlier action was already complete: Bevor ich schlafen ging, hatte ich schon aufgeräumt. (Before I went to sleep, I had already tidied up.) This chapter practises that second pattern with bevor, because it shows the past perfect at work.',
           'als introduces a single completed moment in the past, in the simple past; if something else had already finished by that moment, that other event is expressed with the past perfect, wherever it appears in the sentence: Als ich ankam, hatte der Film schon begonnen. (When I arrived, the film had already begun.)',
         ],
         notes: [
-          'Rule of thumb: find the earlier event first — that clause gets the past perfect. The connector (nachdem/bevor/als) then tells you which clause that is.',
+          'Rule of thumb: with nachdem and als, find the earlier event first — that clause gets the past perfect. With bevor, the same tense in both clauses is the normal choice; a past perfect in the main clause adds emphasis that the earlier event was already finished.',
         ],
       },
       {
@@ -149,8 +149,8 @@ export const chapter055: ChapterDefinition = {
           ],
           [
             'bevor (before)',
-            'subordinate clause (later event) = simple past; main clause (earlier event) = past perfect',
-            'Bevor ich schlafen ging, hatte ich noch aufgeräumt.',
+            'subordinate clause (later event) = simple past; main clause (earlier event) = normally simple past too, or past perfect to stress that it was already finished',
+            'Bevor ich schlafen ging, räumte ich noch auf. / Bevor ich schlafen ging, hatte ich schon aufgeräumt.',
           ],
           [
             'als (when)',
@@ -214,8 +214,9 @@ export const chapter055: ChapterDefinition = {
           'als introduces a single past moment (ankam, simple past); the past perfect hatte begonnen shows the film started even earlier.',
       },
       {
-        german: 'Ich hatte meinen Schlüssel nicht gefunden.',
-        english: 'I had not found my key.',
+        german:
+          'Ich hatte meinen Schlüssel nicht gefunden, deshalb wartete ich vor der Tür.',
+        english: "I hadn't found my key, so I waited outside the door.",
         highlight: ['hatte', 'nicht', 'gefunden'],
         explanation:
           'nicht stands directly before the participle, exactly as in the present perfect.',
@@ -271,8 +272,8 @@ export const chapter055: ChapterDefinition = {
           'When the main clause is in the simple past, the earlier event in a nachdem-clause needs the past perfect (hatte + participle), not the present perfect (habe + participle).',
       },
       {
-        incorrect: 'Ich hatte nach Hause gegangen.',
-        correct: 'Ich war nach Hause gegangen.',
+        incorrect: 'Als es dunkel wurde, hatte ich schon nach Hause gegangen.',
+        correct: 'Als es dunkel wurde, war ich schon nach Hause gegangen.',
         explanation:
           'gehen takes sein as its auxiliary, exactly as in the present perfect (ich bin gegangen) — the past perfect uses war, not hatte.',
       },
@@ -299,7 +300,7 @@ export const chapter055: ChapterDefinition = {
       'The past perfect (Plusquamperfekt) is built from the simple past of haben or sein (hatte/war) plus the past participle: hatte gemacht, war gegangen.',
       'The auxiliary choice (hatte vs. war) is exactly the same as in the present perfect: movement/change-of-state verbs and the exceptions sein, bleiben, werden, passieren take war; everything else takes hatte.',
       'Use the past perfect for an event that had already happened before another past event or moment — the "earlier past". The later event is normally told in the simple past.',
-      'nachdem, bevor, and als connect two past events: whichever clause names the earlier event takes the past perfect, and whichever names the later event stays in the simple past, no matter which connector is used.',
+      'nachdem and als connect two past events: the clause that names the earlier event takes the past perfect, and the clause that names the later event stays in the simple past. With bevor, both clauses normally keep the same tense; a past perfect in the main clause stresses that the earlier event was already finished.',
       'Word order: hatte/war stands in position 2 in a main clause (or position 1 in a question); in a subordinate clause, the participle comes first and hatte/war moves to the very end.',
     ],
   },
@@ -842,11 +843,11 @@ export const chapter055: ChapterDefinition = {
       grammarFocus: ['error-correction', 'aux-choice', 'transfer'],
       instruction:
         'Correct the mistake in auxiliary choice. Write the full corrected sentence. Capitalisation and punctuation are checked.',
-      prompt: 'Falsch: Ich hatte nach Hause gegangen.',
-      acceptedAnswers: ['Ich war nach Hause gegangen.'],
+      prompt: 'Falsch: Als es dunkel wurde, hatte ich schon nach Hause gegangen.',
+      acceptedAnswers: ['Als es dunkel wurde, war ich schon nach Hause gegangen.'],
       answerMode: 'normalized',
-      placeholder: 'Ich war ...',
-      maxLength: 40,
+      placeholder: 'Als es dunkel wurde, war ich ...',
+      maxLength: 70,
       explanation:
         'gehen takes sein, exactly as in the present perfect (ich bin gegangen); the past perfect is war gegangen, not hatte gegangen.',
     },
@@ -1113,13 +1114,13 @@ export const chapter055: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['als', 'connectors', 'controlled'],
       instruction: 'Fill in the missing connector. Capitalisation is not checked.',
-      prompt: '___ ich ankam, hatte der Zug schon abgefahren. (When)',
+      prompt: '___ ich ankam, war der Zug schon abgefahren. (When)',
       acceptedAnswers: ['Als', 'als'],
       answerMode: 'caseInsensitive',
       placeholder: 'Als',
       maxLength: 15,
       explanation:
-        'als introduces the single reference moment (ich ankam); the past perfect hatte abgefahren shows the train left even earlier.',
+        'als introduces the single reference moment (ich ankam); the past perfect war abgefahren (abfahren takes sein) shows the train left even earlier.',
     },
     {
       id: 'ch55-ex-45',
@@ -1201,11 +1202,11 @@ export const chapter055: ChapterDefinition = {
       grammarFocus: ['error-correction', 'aux-choice', 'transfer'],
       instruction:
         'Correct the mistake in auxiliary choice. Write the full corrected sentence. Capitalisation and punctuation are checked.',
-      prompt: 'Falsch: Sie hatte nach Berlin gefahren.',
-      acceptedAnswers: ['Sie war nach Berlin gefahren.'],
+      prompt: 'Falsch: Sie hatte schon nach Berlin gefahren, als wir anriefen.',
+      acceptedAnswers: ['Sie war schon nach Berlin gefahren, als wir anriefen.'],
       answerMode: 'normalized',
       placeholder: 'Sie war ...',
-      maxLength: 40,
+      maxLength: 70,
       explanation:
         'fahren with a destination takes sein, exactly as in the present perfect (sie ist gefahren); the past perfect is war gefahren, not hatte gefahren.',
     },
@@ -1311,7 +1312,7 @@ export const chapter055: ChapterDefinition = {
         { id: 'ch55-ex55-slot1', correctWord: 'waren' },
         { id: 'ch55-ex55-slot2', correctWord: 'gegangen' },
       ],
-      wordBank: ['waren', 'gegangen', 'hatten', 'gefahren'],
+      wordBank: ['waren', 'gegangen', 'hatten', 'gegeht'],
       explanation: 'gehen takes sein, so the past perfect with wir is waren gegangen.',
     },
     {
@@ -1398,10 +1399,14 @@ export const chapter055: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['participle', 'vergessen', 'controlled'],
       instruction: 'Drag the correct past participle into the gap.',
-      prompt: 'Ich hatte meinen Regenschirm ___.',
-      templateParts: ['Ich hatte meinen Regenschirm ', '.'],
+      prompt:
+        'Ich hatte meinen Regenschirm zu Hause ___, deshalb wurde ich nass. (vergessen)',
+      templateParts: [
+        'Ich hatte meinen Regenschirm zu Hause ',
+        ', deshalb wurde ich nass.',
+      ],
       slots: [{ id: 'ch55-ex61-slot1', correctWord: 'vergessen' }],
-      wordBank: ['vergessen', 'verloren', 'gefunden', 'gekauft'],
+      wordBank: ['vergessen', 'gevergessen', 'vergesst', 'vergaß'],
       explanation:
         'The past participle of vergessen is vergessen itself, unchanged, since ver- verbs do not take the ge- prefix.',
     },
@@ -1433,7 +1438,7 @@ export const chapter055: ChapterDefinition = {
         { id: 'ch55-ex63-slot1', correctWord: 'waren' },
         { id: 'ch55-ex63-slot2', correctWord: 'angekommen' },
       ],
-      wordBank: ['waren', 'angekommen', 'hatten', 'gekommen'],
+      wordBank: ['waren', 'angekommen', 'hatten', 'angekommt'],
       explanation:
         'ankommen takes sein, so the past perfect is waren angekommen — the earlier event, before the film began.',
     },
@@ -1572,9 +1577,20 @@ export const chapter055: ChapterDefinition = {
       grammarFocus: ['error-correction', 'aux-choice', 'gehen', 'production'],
       instruction: 'Find the token with the wrong auxiliary, and correct it.',
       prompt: 'Ein Lerner beschreibt seinen Abend. Etwas stimmt nicht.',
-      tokens: ['Ich', 'hatte', 'nach', 'Hause', 'gegangen.'],
-      errorTokenIndex: 1,
-      correction: 'Ich war nach Hause gegangen.',
+      tokens: [
+        'Als',
+        'es',
+        'dunkel',
+        'wurde,',
+        'hatte',
+        'ich',
+        'schon',
+        'nach',
+        'Hause',
+        'gegangen.',
+      ],
+      errorTokenIndex: 4,
+      correction: 'war',
       explanation:
         'gehen takes sein, exactly as in the present perfect (ich bin gegangen); the past perfect is war gegangen, not hatte gegangen.',
     },

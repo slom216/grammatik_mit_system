@@ -72,27 +72,35 @@ describe('scorePlacement', () => {
   const chapters = [probeChapter(5), probeChapter(13), probeChapter(21)];
   const ids = buildPlacementExerciseIds(chapters);
 
-  it('recommends the first chapter the learner did not pass', () => {
+  // Chapters 6-12 were never tested, so they must not be skipped.
+  it('recommends the chapter after the last probe passed', () => {
+    const result = scorePlacement(chapters, ids, answers(ids, { 5: 3, 13: 1, 21: 0 }));
+
+    expect(result.recommendedChapter).toBe(6);
+    expect(result.clearedEverything).toBe(false);
+  });
+
+  it('ignores a pass that comes after a failed probe', () => {
     // Chapter 5 solid, chapter 13 fails, chapter 21 irrelevant after that.
     const result = scorePlacement(chapters, ids, answers(ids, { 5: 3, 13: 1, 21: 3 }));
 
-    expect(result.recommendedChapter).toBe(13);
+    expect(result.recommendedChapter).toBe(6);
     expect(result.clearedEverything).toBe(false);
     expect(result.probes.map((probe) => probe.passed)).toEqual([true, false, true]);
   });
 
-  it('recommends the very first chapter when nothing is passed', () => {
+  it('recommends chapter 1 when nothing is passed', () => {
     const result = scorePlacement(chapters, ids, answers(ids, {}));
 
-    expect(result.recommendedChapter).toBe(5);
+    expect(result.recommendedChapter).toBe(1);
     expect(result.probes.every((probe) => !probe.passed)).toBe(true);
   });
 
-  it('reports a clean sweep against the last probe', () => {
+  it('reports a clean sweep and starts after the last probe', () => {
     const result = scorePlacement(chapters, ids, answers(ids, { 5: 3, 13: 3, 21: 3 }));
 
     expect(result.clearedEverything).toBe(true);
-    expect(result.recommendedChapter).toBe(21);
+    expect(result.recommendedChapter).toBe(22);
   });
 
   it('treats a 2-of-3 chapter as passed and 1-of-3 as not', () => {
@@ -111,7 +119,7 @@ describe('scorePlacement', () => {
 
     const result = scorePlacement(chapters, ids, answered);
 
-    expect(result.recommendedChapter).toBe(21);
+    expect(result.recommendedChapter).toBe(14);
     expect(result.clearedEverything).toBe(false);
     expect(result.probes[2]).toMatchObject({ answered: 0, correct: 0, passed: false });
   });

@@ -345,7 +345,7 @@ export const chapter031: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['reflexive pronoun', 'ihr'],
       instruction: 'Choose the correct reflexive pronoun.',
-      prompt: 'Interessiert ___ für Musik? (sich interessieren, ihr)',
+      prompt: 'Interessiert ihr ___ für Musik? (sich interessieren)',
       options: [
         { id: 'a', text: 'euch' },
         { id: 'b', text: 'uns' },
@@ -762,7 +762,7 @@ export const chapter031: ChapterDefinition = {
       grammarFocus: ['reflexive-agreement', 'error-correction'],
       instruction: 'Find the token with the reflexive-pronoun error.',
       prompt: 'Ich wasche dich jeden Tag.',
-      tokens: ['Ich', 'wasche', 'dich', 'jeden', 'Tag', '.'],
+      tokens: ['Ich', 'wasche', 'dich', 'jeden', 'Tag.'],
       errorTokenIndex: 2,
       correction: 'mich',
       explanation:
@@ -848,7 +848,7 @@ export const chapter031: ChapterDefinition = {
       grammarFocus: ['reflexive pronoun', 'dative', 'error-correction', 'body-part-verb'],
       instruction: 'Find the token with the reflexive-pronoun error.',
       prompt: 'Ich putze mich die Zähne.',
-      tokens: ['Ich', 'putze', 'mich', 'die', 'Zähne', '.'],
+      tokens: ['Ich', 'putze', 'mich', 'die', 'Zähne.'],
       errorTokenIndex: 2,
       correction: 'mir',
       explanation:
@@ -933,7 +933,7 @@ export const chapter031: ChapterDefinition = {
       grammarFocus: ['reflexive-agreement', 'error-correction'],
       instruction: 'Find the token with the reflexive-pronoun error.',
       prompt: 'Ich freue dich auf die Ferien.',
-      tokens: ['Ich', 'freue', 'dich', 'auf', 'die', 'Ferien', '.'],
+      tokens: ['Ich', 'freue', 'dich', 'auf', 'die', 'Ferien.'],
       errorTokenIndex: 2,
       correction: 'mich',
       explanation:
@@ -1019,7 +1019,7 @@ export const chapter031: ChapterDefinition = {
       grammarFocus: ['reflexive pronoun', 'dative', 'error-correction', 'body-part-verb'],
       instruction: 'Find the token with the reflexive-pronoun error.',
       prompt: 'Du putzt dich die Zähne.',
-      tokens: ['Du', 'putzt', 'dich', 'die', 'Zähne', '.'],
+      tokens: ['Du', 'putzt', 'dich', 'die', 'Zähne.'],
       errorTokenIndex: 2,
       correction: 'dir',
       explanation:
@@ -1112,7 +1112,7 @@ export const chapter031: ChapterDefinition = {
       grammarFocus: ['reflexive-agreement', 'error-correction'],
       instruction: 'Find the token with the reflexive-pronoun error.',
       prompt: 'Wir interessieren sich für Kunst.',
-      tokens: ['Wir', 'interessieren', 'sich', 'für', 'Kunst', '.'],
+      tokens: ['Wir', 'interessieren', 'sich', 'für', 'Kunst.'],
       errorTokenIndex: 2,
       correction: 'uns',
       explanation:
@@ -1198,7 +1198,7 @@ export const chapter031: ChapterDefinition = {
       grammarFocus: ['reflexive pronoun', 'dative', 'error-correction', 'body-part-verb'],
       instruction: 'Find the token with the reflexive-pronoun error.',
       prompt: 'Er wäscht ihm die Hände.',
-      tokens: ['Er', 'wäscht', 'ihm', 'die', 'Hände', '.'],
+      tokens: ['Er', 'wäscht', 'ihm', 'die', 'Hände.'],
       errorTokenIndex: 2,
       correction: 'sich',
       explanation:
@@ -1283,7 +1283,7 @@ export const chapter031: ChapterDefinition = {
       grammarFocus: ['reflexive-agreement', 'error-correction'],
       instruction: 'Find the token with the reflexive-pronoun error.',
       prompt: 'Ihr wascht sich jeden Tag.',
-      tokens: ['Ihr', 'wascht', 'sich', 'jeden', 'Tag', '.'],
+      tokens: ['Ihr', 'wascht', 'sich', 'jeden', 'Tag.'],
       errorTokenIndex: 2,
       correction: 'euch',
       explanation:

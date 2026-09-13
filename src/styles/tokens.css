@@ -118,10 +118,11 @@
   --color-border-strong: light-dark(#285f7459, #ffffff4d);
   --color-text: light-dark(var(--color-primary), var(--color-primary-10));
   /* design.md assigns primary-60 to muted text, but #5F8F9F only reaches
-     3.6:1 on white. Muted body copy uses the same hue darkened to 4.7:1;
+     3.6:1 on white. Muted body copy uses the same hue darkened to 5.3:1 (4.7:1
+     on the surface-muted tint badges sit on);
      primary-60 itself still does the decorative work it is good at (borders,
      dividers, quiet marks). */
-  --color-text-muted: light-dark(#4a7a8b, #a3c0c9);
+  --color-text-muted: light-dark(#437283, #a3c0c9);
   --color-text-inverse: light-dark(#ffffff, var(--color-primary));
 
   /* Emphasis, links, selected states, progress. design.md gives this role to

@@ -44,7 +44,7 @@ export const chapter018: ChapterDefinition = {
         paragraphs: [
           'In the dative plural, the noun itself also changes: it takes an extra -n ending, in addition to the article den.',
           'This -n is added unless the plural noun already ends in -n or in -s. die Kinder → den Kindern, die Frauen already ends in -n, so it stays den Frauen, and die Autos already ends in -s, so it stays den Autos.',
-          'This extra -n is easy to forget because it is the only case where the noun itself, not just the article, changes its ending.',
+          'This extra -n is easy to forget because the noun itself, not just the article, changes its ending. (A small group of masculine nouns, such as der Herr and der Student, also changes in the singular — dem Herrn, dem Studenten. You will meet them later.)',
         ],
         notes: [
           'Check the plural noun ending first: no -n or -s at the end → add -n in the dative.',
@@ -140,7 +140,8 @@ export const chapter018: ChapterDefinition = {
         german: 'Ich zeige den Touristen den Weg zum Bahnhof.',
         english: 'I show the tourists the way to the train station.',
         highlight: ['den Touristen'],
-        explanation: 'den Touristen is dative plural with the added -n ending.',
+        explanation:
+          'den Touristen is dative plural; the plural Touristen already ends in -n, so nothing more is added.',
       },
       {
         german: 'Das Auto gehört einer Kollegin von mir.',
@@ -379,16 +380,16 @@ export const chapter018: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['dative', 'plural', 'plural-n'],
       instruction: 'Choose the correctly formed dative plural.',
-      prompt: 'Der Mechaniker zeigt ___ (die Autos) die neue Werkstatt.',
+      prompt: 'Die Mutter gibt ___ (die Babys) die Flaschen.',
       options: [
-        { id: 'a', text: 'den Autosn' },
-        { id: 'b', text: 'den Auton' },
-        { id: 'c', text: 'den Autos' },
-        { id: 'd', text: 'der Autos' },
+        { id: 'a', text: 'den Babysn' },
+        { id: 'b', text: 'den Babyn' },
+        { id: 'c', text: 'den Babys' },
+        { id: 'd', text: 'der Babys' },
       ],
       correctOptionId: 'c',
       explanation:
-        'Autos already ends in -s, so no extra -n is added in the dative plural.',
+        'Babys already ends in -s, so no extra -n is added in the dative plural: den Babys.',
     },
     {
       id: 'ch18-ex-11',
@@ -433,7 +434,7 @@ export const chapter018: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['dative', 'case-choice', 'accusative-vs-dative'],
-      instruction: 'Choose the correctly cased noun phrase for the underlined role.',
+      instruction: 'Choose the correctly cased noun phrase for the role given.',
       prompt: 'Der Kellner bringt ___ die Rechnung. (der Gast — indirect object)',
       options: [
         { id: 'a', text: 'den Gast' },
@@ -510,8 +511,7 @@ export const chapter018: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['dative', 'articles', 'masculine'],
       instruction: 'Write the correct dative article. Capitalisation is not checked.',
-      prompt:
-        'Der Kellner bringt ___ Kellner die Speisekarte nicht — er bringt sie ___ Gast. (der Gast)',
+      prompt: 'Der Kellner bringt ___ Gast die Speisekarte. (der Gast)',
       acceptedAnswers: ['dem'],
       answerMode: 'caseInsensitive',
       placeholder: 'article',
@@ -591,13 +591,13 @@ export const chapter018: ChapterDefinition = {
       grammarFocus: ['dative', 'plural', 'plural-n'],
       instruction:
         'Write the correct dative plural form of the noun (with the article den). Capitalisation is not checked.',
-      prompt: 'Der Mechaniker repariert ___ die Bremsen. (die Fahrräder)',
-      acceptedAnswers: ['den Fahrrädern'],
+      prompt: 'Die Kinder geben ___ Wasser. (die Pferde)',
+      acceptedAnswers: ['den Pferden'],
       answerMode: 'caseInsensitive',
       placeholder: 'den ...',
       maxLength: 30,
       explanation:
-        'Fahrräder does not end in -n or -s, so it takes an extra -n in the dative plural: den Fahrrädern.',
+        'Pferde does not end in -n or -s, so it takes an extra -n in the dative plural: den Pferden.',
     },
     {
       id: 'ch18-ex-23',
@@ -638,7 +638,7 @@ export const chapter018: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['dative', 'case-choice', 'sentence-writing'],
       instruction:
-        'Write a complete sentence using the cue words. Put the underlined idea into the dative case. Capitalisation and punctuation are checked.',
+        'Write a complete sentence using the cue words. Put the person who receives or benefits into the dative case. Capitalisation and punctuation are checked.',
       prompt: 'ich – geben – der Freund – ein Geschenk',
       acceptedAnswers: ['Ich gebe dem Freund ein Geschenk.'],
       answerMode: 'normalized',
@@ -655,9 +655,12 @@ export const chapter018: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['dative', 'case-choice', 'sentence-writing'],
       instruction:
-        'Write a complete sentence using the cue words. Put the underlined idea into the dative case. Capitalisation and punctuation are checked.',
+        'Write a complete sentence using the cue words. Put the person who receives or benefits into the dative case. Capitalisation and punctuation are checked.',
       prompt: 'die Kellnerin – bringen – die Gäste – der Kaffee',
-      acceptedAnswers: ['Die Kellnerin bringt den Gästen den Kaffee.'],
+      acceptedAnswers: [
+        'Die Kellnerin bringt den Gästen den Kaffee.',
+        'Die Kellnerin bringt den Kaffee den Gästen.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Die Kellnerin bringt ...',
       maxLength: 60,
@@ -672,7 +675,7 @@ export const chapter018: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['dative-verbs', 'danken', 'sentence-writing'],
       instruction:
-        'Write a complete sentence using the cue words. Put the underlined idea into the dative case. Capitalisation and punctuation are checked.',
+        'Write a complete sentence using the cue words. Put the person who receives or benefits into the dative case. Capitalisation and punctuation are checked.',
       prompt: 'wir – danken – die Nachbarn – für die Hilfe',
       acceptedAnswers: ['Wir danken den Nachbarn für die Hilfe.'],
       answerMode: 'normalized',
@@ -1230,14 +1233,14 @@ export const chapter018: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['dative-verbs', 'danken', 'sentence-writing'],
       instruction:
-        'Write a complete sentence using the cue words. Put the underlined idea into the dative case. Capitalisation and punctuation are checked.',
+        'Write a complete sentence using the cue words. Put the person who receives or benefits into the dative case. Capitalisation and punctuation are checked.',
       prompt: 'die Kinder – danken – die Großeltern – für das Geschenk',
       acceptedAnswers: ['Die Kinder danken den Großeltern für das Geschenk.'],
       answerMode: 'normalized',
       placeholder: 'Die Kinder danken ...',
       maxLength: 60,
       explanation:
-        'danken takes a dative object; die Großeltern does not end in -n or -s, so it becomes den Großeltern in the dative plural.',
+        'danken takes a dative object; Großeltern already ends in -n, so nothing is added: den Großeltern.',
     },
     {
       id: 'ch18-ex-60',
@@ -1247,9 +1250,12 @@ export const chapter018: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['dative', 'case-choice', 'sentence-writing'],
       instruction:
-        'Write a complete sentence using the cue words. Put the underlined idea into the dative case. Capitalisation and punctuation are checked.',
+        'Write a complete sentence using the cue words. Put the person who receives or benefits into the dative case. Capitalisation and punctuation are checked.',
       prompt: 'der Verkäufer – zeigen – die Kundin – die neue Kollektion',
-      acceptedAnswers: ['Der Verkäufer zeigt der Kundin die neue Kollektion.'],
+      acceptedAnswers: [
+        'Der Verkäufer zeigt der Kundin die neue Kollektion.',
+        'Der Verkäufer zeigt die neue Kollektion der Kundin.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Der Verkäufer zeigt ...',
       maxLength: 60,

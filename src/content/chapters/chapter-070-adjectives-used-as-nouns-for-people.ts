@@ -114,7 +114,7 @@ export const chapter070: ChapterDefinition = {
           ['Dative', 'dem Deutschen', 'der Deutschen', 'den Deutschen'],
           ['Genitive', 'des Deutschen', 'der Deutschen', 'der Deutschen'],
         ],
-        note: 'This is exactly the Chapter 41 weak-adjective table: only the masculine nominative keeps -e; every other cell is -en.',
+        note: 'This is exactly the Chapter 41 weak-adjective table: the masculine nominative and the feminine nominative and accusative keep -e; every other cell is -en.',
       },
       {
         id: 'ch70-table-03',
@@ -220,7 +220,7 @@ export const chapter070: ChapterDefinition = {
         english: 'My relative from Hamburg is visiting us tomorrow.',
         highlight: ['Meine Verwandte'],
         explanation:
-          'meine behaves like a der-word here; feminine nominative singular takes -e.',
+          'meine is a possessive (an ein-word); in the feminine nominative singular it takes -e, the same ending as after die.',
       },
       {
         german: 'Die Firma hat drei neue Angestellte eingestellt.',
@@ -305,7 +305,7 @@ export const chapter070: ChapterDefinition = {
     ],
     remember: [
       'Adjectives describing a person can be used on their own as nouns; they are capitalized like nouns but keep declining exactly like ordinary attributive adjectives, as if an invisible noun still followed them.',
-      'After der-words, the pattern is the weak Chapter 41 ending: -e in the masculine nominative singular, -en everywhere else in the singular and throughout the plural (der Deutsche, den/dem/des Deutschen).',
+      'After der-words, the pattern is the weak Chapter 41 ending: -e in the masculine nominative and the feminine nominative/accusative singular, -en everywhere else in the singular and throughout the plural (der Deutsche, die Deutsche, den/dem/des Deutschen).',
       'After ein-words or with no article, the masculine nominative singular needs the strong ending -er (ein Deutscher), since nothing else marks the gender; the feminine still takes -e (eine Deutsche) in every one of these contexts.',
       'The word itself carries no fixed gender or number — der Deutsche, die Deutsche, and die Deutschen are the same underlying idea wearing three different articles and endings.',
       'The plural takes -en after die/keine/possessives, and the strong -e (nominative/accusative) or -en (dative) with no article at all, for general statements like Deutsche reisen gern.',
@@ -519,13 +519,13 @@ export const chapter070: ChapterDefinition = {
       prompt: '___ reisen gern ins Ausland.',
       options: [
         { id: 'a', text: 'Deutsche' },
-        { id: 'b', text: 'Die Deutschen' },
+        { id: 'b', text: 'Deutscher' },
         { id: 'c', text: 'Deutschen' },
         { id: 'd', text: 'Der Deutsche' },
       ],
       correctOptionId: 'a',
       explanation:
-        'With no article, a general statement about the group takes the bare strong plural ending -e: Deutsche reisen gern.',
+        'With no article, a general statement about the group takes the bare strong plural ending -e: Deutsche reisen gern. (With the article, Die Deutschen reisen gern is also correct.)',
     },
     {
       id: 'ch70-ex-12',
@@ -921,7 +921,7 @@ export const chapter070: ChapterDefinition = {
       prompt: 'Der Arzt sagt, dass der Patient Ruhe braucht.',
       templateParts: ['Der ', ' hat Fieber.'],
       slots: [{ id: 'slot-1', correctWord: 'Kranke' }],
-      wordBank: ['Kranke', 'Kranken', 'Kranker', 'Reisende'],
+      wordBank: ['Kranke', 'Kranken', 'Kranker', 'Krankes'],
       explanation: 'Masculine nominative singular after der: -e. Der Kranke hat Fieber.',
     },
     {
@@ -935,7 +935,7 @@ export const chapter070: ChapterDefinition = {
       prompt: 'Complete the sentence with the correct accusative form.',
       templateParts: ['Der Arzt untersucht den ', '.'],
       slots: [{ id: 'slot-1', correctWord: 'Kranken' }],
-      wordBank: ['Kranken', 'Kranke', 'Kranker', 'Bekannten'],
+      wordBank: ['Kranken', 'Kranke', 'Kranker', 'Krankem'],
       explanation:
         'Masculine accusative singular after den: -en. Der Arzt untersucht den Kranken.',
     },
@@ -950,7 +950,7 @@ export const chapter070: ChapterDefinition = {
       prompt: 'Complete the sentence with the correct dative form.',
       templateParts: ['Die Schwester hilft dem ', '.'],
       slots: [{ id: 'slot-1', correctWord: 'Kranken' }],
-      wordBank: ['Kranken', 'Kranke', 'Kranker', 'Angestellten'],
+      wordBank: ['Kranken', 'Kranke', 'Kranker', 'Krankes'],
       explanation: 'helfen takes the dative; masculine dative singular after dem: -en.',
     },
     {
@@ -964,7 +964,7 @@ export const chapter070: ChapterDefinition = {
       prompt: 'Complete the sentence with the correct genitive form.',
       templateParts: ['Die Akte des ', ' liegt hier.'],
       slots: [{ id: 'slot-1', correctWord: 'Kranken' }],
-      wordBank: ['Kranken', 'Kranke', 'Kranker', 'Arbeitslosen'],
+      wordBank: ['Kranken', 'Kranke', 'Kranker', 'Krankem'],
       explanation:
         'Masculine genitive singular after des: -en. Die Akte des Kranken liegt hier.',
     },
@@ -979,7 +979,7 @@ export const chapter070: ChapterDefinition = {
       prompt: 'Complete the sentence with the correct feminine nominative form.',
       templateParts: ['Die ', ' wartet im Flur.'],
       slots: [{ id: 'slot-1', correctWord: 'Reisende' }],
-      wordBank: ['Reisende', 'Reisenden', 'Reisender', 'Kranke'],
+      wordBank: ['Reisende', 'Reisenden', 'Reisender', 'Reisendes'],
       explanation:
         'Feminine nominative singular after die: -e. Die Reisende wartet im Flur.',
     },
@@ -994,7 +994,7 @@ export const chapter070: ChapterDefinition = {
       prompt: 'Complete the sentence with the correct feminine dative form.',
       templateParts: ['Der Schaffner hilft der ', '.'],
       slots: [{ id: 'slot-1', correctWord: 'Reisenden' }],
-      wordBank: ['Reisenden', 'Reisende', 'Reisender', 'Bekannten'],
+      wordBank: ['Reisenden', 'Reisende', 'Reisender', 'Reisendem'],
       explanation: 'helfen takes the dative; feminine dative singular after der: -en.',
     },
     {
@@ -1009,7 +1009,7 @@ export const chapter070: ChapterDefinition = {
         'Complete the sentence with the correct masculine nominative form after ein.',
       templateParts: ['Ein ', ' betrat den Warteraum.'],
       slots: [{ id: 'slot-1', correctWord: 'Reisender' }],
-      wordBank: ['Reisender', 'Reisende', 'Reisenden', 'Fremder'],
+      wordBank: ['Reisender', 'Reisende', 'Reisenden', 'Reisendes'],
       explanation:
         'After ein, the masculine nominative singular needs the strong ending -er: ein Reisender.',
     },
@@ -1024,7 +1024,7 @@ export const chapter070: ChapterDefinition = {
       prompt: 'Complete the sentence with the correct accusative form after einen.',
       templateParts: ['Ich sehe einen ', ' am Bahnsteig.'],
       slots: [{ id: 'slot-1', correctWord: 'Reisenden' }],
-      wordBank: ['Reisenden', 'Reisende', 'Reisender', 'Kranken'],
+      wordBank: ['Reisenden', 'Reisende', 'Reisender', 'Reisendem'],
       explanation: 'After einen, the masculine accusative singular ending is -en.',
     },
     {
@@ -1038,7 +1038,7 @@ export const chapter070: ChapterDefinition = {
       prompt: 'Complete the sentence with the correct dative form after einem.',
       templateParts: ['Ich spreche mit einem ', '.'],
       slots: [{ id: 'slot-1', correctWord: 'Reisenden' }],
-      wordBank: ['Reisenden', 'Reisende', 'Reisender', 'Angestellten'],
+      wordBank: ['Reisenden', 'Reisende', 'Reisender', 'Reisendes'],
       explanation: 'After einem, the masculine dative singular ending is -en.',
     },
     {
@@ -1052,7 +1052,7 @@ export const chapter070: ChapterDefinition = {
       prompt: 'Complete the sentence with the correct genitive form after eines.',
       templateParts: ['Der Koffer eines ', ' steht hier.'],
       slots: [{ id: 'slot-1', correctWord: 'Reisenden' }],
-      wordBank: ['Reisenden', 'Reisende', 'Reisender', 'Bekannten'],
+      wordBank: ['Reisenden', 'Reisende', 'Reisender', 'Reisendem'],
       explanation: 'After eines, the masculine genitive singular ending is -en.',
     },
     {
@@ -1067,7 +1067,7 @@ export const chapter070: ChapterDefinition = {
         'Complete the sentence with the correct feminine nominative form after eine.',
       templateParts: ['Sie ist eine ', ' aus Berlin.'],
       slots: [{ id: 'slot-1', correctWord: 'Bekannte' }],
-      wordBank: ['Bekannte', 'Bekannten', 'Bekannter', 'Fremde'],
+      wordBank: ['Bekannte', 'Bekannten', 'Bekannter', 'Bekanntes'],
       explanation:
         'Feminine nominative singular after eine: -e, the same shape as after die.',
     },
@@ -1082,7 +1082,7 @@ export const chapter070: ChapterDefinition = {
       prompt: 'Complete the sentence with the correct feminine dative form after einer.',
       templateParts: ['Ich helfe einer ', '.'],
       slots: [{ id: 'slot-1', correctWord: 'Bekannten' }],
-      wordBank: ['Bekannten', 'Bekannte', 'Bekannter', 'Verwandten'],
+      wordBank: ['Bekannten', 'Bekannte', 'Bekannter', 'Bekanntem'],
       explanation: 'helfen takes the dative; feminine dative singular after einer: -en.',
     },
     {
@@ -1096,7 +1096,7 @@ export const chapter070: ChapterDefinition = {
       prompt: 'Complete the sentence with the correct plural nominative form.',
       templateParts: ['Die ', ' verstehen sich gut.'],
       slots: [{ id: 'slot-1', correctWord: 'Jugendlichen' }],
-      wordBank: ['Jugendlichen', 'Jugendliche', 'Jugendlicher', 'Erwachsenen'],
+      wordBank: ['Jugendlichen', 'Jugendliche', 'Jugendlicher', 'Jugendliches'],
       explanation: 'Plural after die takes -en in every case: die Jugendlichen.',
     },
     {
@@ -1110,7 +1110,7 @@ export const chapter070: ChapterDefinition = {
       prompt: 'Complete the sentence with the correct plural accusative form.',
       templateParts: ['Wir sehen die ', ' im Park.'],
       slots: [{ id: 'slot-1', correctWord: 'Jugendlichen' }],
-      wordBank: ['Jugendlichen', 'Jugendliche', 'Jugendlicher', 'Kranken'],
+      wordBank: ['Jugendlichen', 'Jugendliche', 'Jugendlicher', 'Jugendlichem'],
       explanation: 'Plural accusative after die takes -en: die Jugendlichen.',
     },
     {
@@ -1124,7 +1124,7 @@ export const chapter070: ChapterDefinition = {
       prompt: 'Complete the sentence with the correct plural dative form.',
       templateParts: ['Die Stadt bietet den ', ' ein Freizeitzentrum.'],
       slots: [{ id: 'slot-1', correctWord: 'Jugendlichen' }],
-      wordBank: ['Jugendlichen', 'Jugendliche', 'Jugendlicher', 'Arbeitslosen'],
+      wordBank: ['Jugendlichen', 'Jugendliche', 'Jugendlicher', 'Jugendliches'],
       explanation: 'Plural dative after den takes -en: den Jugendlichen.',
     },
     {
@@ -1138,7 +1138,7 @@ export const chapter070: ChapterDefinition = {
       prompt: 'Complete the sentence with the correct plural genitive form.',
       templateParts: ['Die Probleme der ', ' sind vielfältig.'],
       slots: [{ id: 'slot-1', correctWord: 'Jugendlichen' }],
-      wordBank: ['Jugendlichen', 'Jugendliche', 'Jugendlicher', 'Reisenden'],
+      wordBank: ['Jugendlichen', 'Jugendliche', 'Jugendlicher', 'Jugendlichem'],
       explanation: 'Plural genitive after der takes -en: der Jugendlichen.',
     },
     {
@@ -1152,7 +1152,7 @@ export const chapter070: ChapterDefinition = {
       prompt: 'Complete the general statement with no article.',
       templateParts: ['', ' brauchen oft mehr Freiheit.'],
       slots: [{ id: 'slot-1', correctWord: 'Jugendliche' }],
-      wordBank: ['Jugendliche', 'Jugendlichen', 'Jugendlicher', 'Erwachsene'],
+      wordBank: ['Jugendliche', 'Jugendlichen', 'Jugendlicher', 'Jugendliches'],
       explanation:
         'With no article, the bare plural nominative takes the strong ending -e: Jugendliche brauchen oft mehr Freiheit.',
     },
@@ -1167,7 +1167,7 @@ export const chapter070: ChapterDefinition = {
       prompt: 'Complete the general statement with no article.',
       templateParts: ['Der Staat hilft ', ' finanziell.'],
       slots: [{ id: 'slot-1', correctWord: 'Arbeitslosen' }],
-      wordBank: ['Arbeitslosen', 'Arbeitslose', 'Arbeitsloser', 'Kranken'],
+      wordBank: ['Arbeitslosen', 'Arbeitslose', 'Arbeitsloser', 'Arbeitslosem'],
       explanation:
         'With no article, the bare plural dative takes the strong ending -en: Arbeitslosen.',
     },
@@ -1182,7 +1182,7 @@ export const chapter070: ChapterDefinition = {
       prompt: 'Complete the sentence stating his job with no article.',
       templateParts: ['Er ist ', ' bei dieser Firma.'],
       slots: [{ id: 'slot-1', correctWord: 'Angestellter' }],
-      wordBank: ['Angestellter', 'Angestellte', 'Angestellten', 'Reisender'],
+      wordBank: ['Angestellter', 'Angestellte', 'Angestellten', 'Angestelltes'],
       explanation:
         'A man stating his role with sein and no article uses the strong masculine ending -er: Angestellter.',
     },
@@ -1202,7 +1202,7 @@ export const chapter070: ChapterDefinition = {
       prompt: 'Complete the sentence stating her job with no article.',
       templateParts: ['Sie wird ', ' bei der neuen Firma.'],
       slots: [{ id: 'slot-1', correctWord: 'Angestellte' }],
-      wordBank: ['Angestellte', 'Angestellter', 'Angestellten', 'Bekannte'],
+      wordBank: ['Angestellte', 'Angestellter', 'Angestellten', 'Angestelltem'],
       explanation:
         'A woman stating her role with werden and no article uses the ending -e: Angestellte.',
     },

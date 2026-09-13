@@ -737,6 +737,8 @@ a:hover {
 /** Segmented control: a row of radios or pressed buttons. */
 .segmented {
   display: inline-flex;
+  flex-wrap: wrap;
+  max-width: 100%;
   padding: 3px;
   gap: 2px;
   border-radius: var(--radius-md);
@@ -960,6 +962,7 @@ a:hover {
 
 /** Listen control, sized to sit inline with a sentence without shifting it. */
 .speak-button {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -977,6 +980,13 @@ a:hover {
   transition:
     opacity var(--transition-fast),
     background-color var(--transition-fast);
+}
+
+/* Invisible 44px hit area around the 28px glyph box. */
+.speak-button::before {
+  content: '';
+  position: absolute;
+  inset: calc((var(--tap-target) - 1.75rem) / -2);
 }
 
 .speak-button:hover {
@@ -1154,7 +1164,8 @@ a:hover {
 
 /* The days padding the first and last week belong to a neighbouring month. */
 .calendar-month__day--outside {
-  opacity: 0.45;
+  /* 0.6 keeps the date at 4.5:1 in the dark theme; 0.45 was 3.6:1. */
+  opacity: 0.6;
 }
 
 .calendar-month__day--today {
@@ -1174,6 +1185,9 @@ a:hover {
 
 .lesson > section {
   display: grid;
+  /* An auto column grows to a wide table's min-content and widens the page;
+     minmax(0, …) keeps it at the column width so the table wrapper scrolls. */
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--space-4);
 }
 
@@ -2080,6 +2094,8 @@ a:hover {
 
 .setting-row {
   display: flex;
+  /* On a phone the control drops below its label instead of squeezing it. */
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: var(--space-4);
@@ -2309,6 +2325,47 @@ a:hover {
   .calendar-month__facts {
     font-size: 0.625rem;
   }
+
+  /* The brand wraps beside the toggle and the Continue pill instead of pushing
+     both onto a row of their own; the subtitle is the part that gives way. */
+  .app-brand {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .app-brand__subtitle {
+    display: none;
+  }
+}
+
+/* Fingers need 44px targets; the visual size stays as it is. */
+@media (pointer: coarse) {
+  .app-footer__group {
+    gap: 0;
+  }
+
+  .app-footer__group a {
+    display: flex;
+    align-items: center;
+    min-height: var(--tap-target);
+  }
+
+  /* Breadcrumb: padding grows the hit area, the negative margin cancels it
+     out of the layout. */
+  .eyebrow a {
+    display: inline-block;
+    padding-block: 0.8rem;
+    margin-block: -0.8rem;
+  }
+}
+
+/* A short viewport is usually a phone with the keyboard open: two pinned bars
+   would cover the prompt and the field being typed into. */
+@media (max-height: 500px) {
+  .app-header,
+  .exercise-navigation {
+    position: static;
+  }
 }
 
 @media (min-width: 48rem) {
@@ -2374,4 +2431,18 @@ a:hover {
 .reduced-motion .button:active:not(:disabled),
 .reduced-motion .option:active {
   transform: none;
+}
+
+@media print {
+  .skip-link,
+  .app-header,
+  .app-footer,
+  .study-timer,
+  .reload-prompt {
+    display: none;
+  }
+
+  .exercise-navigation {
+    position: static;
+  }
 }

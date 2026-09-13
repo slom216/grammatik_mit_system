@@ -47,6 +47,7 @@ export interface ExerciseRendererProps {
   onNext: () => void;
   onFinish: () => void;
   onExit: () => void;
+  exitLabel?: string;
 }
 
 /**
@@ -143,6 +144,7 @@ export function ExerciseRenderer({
   onNext,
   onFinish,
   onExit,
+  exitLabel,
 }: ExerciseRendererProps) {
   const [selectedOptionId, setSelectedOptionId] = useState<string | null>(null);
   const [textValue, setTextValue] = useState('');
@@ -506,6 +508,7 @@ export function ExerciseRenderer({
         onNext={onNext}
         onFinish={onFinish}
         onExit={onExit}
+        exitLabel={exitLabel}
       />
     </form>
   );

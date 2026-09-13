@@ -122,33 +122,58 @@ export interface PersistedProgressV4 {
   lastOpenedChapter?: number;
 }
 
+/** The course has 85 chapters; `contentValidation.test.ts` pins the registry to that. */
+export const MAX_CHAPTER_NUMBER = 85;
+/** Far above anything real (the course has ~6,200 exercises), low enough to keep statistics sane. */
+const MAX_COUNT = 100_000;
+
+const count = z.number().int().min(0).max(MAX_COUNT);
+const chapterNumber = z.number().int().min(1).max(MAX_CHAPTER_NUMBER);
+const isoDate = z.string().refine((value) => !Number.isNaN(Date.parse(value)), {
+  message: 'Expected an ISO date',
+});
+/** `YYYY-MM-DD` naming a real calendar day. */
+const dayKey = z
+  .string()
+  .regex(/^\d{4}-\d{2}-\d{2}$/)
+  .refine((value) => {
+    const date = new Date(`${value}T00:00:00Z`);
+    return !Number.isNaN(date.getTime()) && date.toISOString().startsWith(value);
+  }, 'Expected a real YYYY-MM-DD day');
+const chapterKey = z
+  .string()
+  .refine(
+    (value) => chapterNumber.safeParse(Number(value)).success,
+    'Expected a chapter',
+  );
+
 export const chapterProgressSchema = z.object({
-  chapterNumber: z.number().int().min(0),
+  chapterNumber,
   status: z.enum(CHAPTER_STATUSES),
   bestScorePercent: z.number().min(0).max(100),
   latestScorePercent: z.number().min(0).max(100),
   firstAttemptAccuracy: z.number().min(0).max(100),
-  answeredCount: z.number().int().min(0),
-  correctTextInputs: z.number().int().min(0),
-  attempts: z.number().int().min(0),
+  answeredCount: count,
+  correctTextInputs: count,
+  attempts: count,
   bookmarked: z.boolean(),
   // Defaulted so a chapter written before the timer existed still parses.
   studyMs: z.number().min(0).default(0),
-  lastPracticedAt: z.string().min(1).optional(),
-  completedAt: z.string().min(1).optional(),
+  lastPracticedAt: isoDate.optional(),
+  completedAt: isoDate.optional(),
 });
 
 export const exerciseHistorySchema = z.object({
   exerciseId: z.string().min(1),
-  chapterNumber: z.number().int().min(0),
-  timesAnswered: z.number().int().min(0),
-  timesCorrect: z.number().int().min(0),
-  timesIncorrect: z.number().int().min(0),
-  consecutiveCorrect: z.number().int().min(0),
+  chapterNumber,
+  timesAnswered: count,
+  timesCorrect: count,
+  timesIncorrect: count,
+  consecutiveCorrect: count,
   stage: z.enum(REVIEW_STAGES),
-  dueAt: z.string().min(1).optional(),
+  dueAt: isoDate.optional(),
   lastOutcome: z.enum(ATTEMPT_OUTCOMES).optional(),
-  lastAnsweredAt: z.string().min(1).optional(),
+  lastAnsweredAt: isoDate.optional(),
   // Defaulted rather than required: entries written before this field existed
   // are still valid, and fill in again the next time the exercise is answered.
   grammarFocus: z.array(z.string()).default([]),
@@ -159,9 +184,9 @@ export const dayLogEntrySchema = z.object({
   ms: z.number().min(0).default(0),
   chapters: z
     .record(
-      z.string(),
+      chapterKey,
       z.object({
-        answers: z.number().int().min(0).default(0),
+        answers: count.default(0),
         ms: z.number().min(0).default(0),
       }),
     )
@@ -172,10 +197,10 @@ export const persistedProgressV4Schema = z.object({
   schemaVersion: z.literal(PROGRESS_SCHEMA_VERSION),
   chapters: z.record(z.string(), chapterProgressSchema),
   exerciseHistory: z.record(z.string(), exerciseHistorySchema),
-  answersByDay: z.record(z.string(), z.number().int().min(0)).default({}),
-  dayLog: z.record(z.string(), dayLogEntrySchema).default({}),
+  answersByDay: z.record(dayKey, count).default({}),
+  dayLog: z.record(dayKey, dayLogEntrySchema).default({}),
   otherStudyMs: z.number().min(0).default(0),
-  lastOpenedChapter: z.number().int().min(0).optional(),
+  lastOpenedChapter: chapterNumber.optional(),
 });
 
 /* ------------------------------------------------------------------ */

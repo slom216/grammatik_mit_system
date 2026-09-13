@@ -27,7 +27,9 @@ export function ChapterUnavailable({ chapterNumber, title }: ChapterUnavailableP
       <h1>
         {chapterNumber === null
           ? 'Unknown chapter'
-          : `Chapter ${chapterNumber}${title ? ` · ${title}` : ''}`}
+          : known
+            ? `Chapter ${chapterNumber}${title ? ` · ${title}` : ''}`
+            : `Chapter ${chapterNumber} not found`}
       </h1>
       <p>
         {known

@@ -144,9 +144,15 @@ describe('checkTextAnswer', () => {
     expect(checkTextAnswer(exercise, 'Sind Sie Lehrer').correct).toBe(false);
   });
 
-  it('does not forgive a missing full stop in exact mode', () => {
+  it('forgives a missing full stop in exact mode too, but nothing else', () => {
     const exercise = textExercise({ answerMode: 'exact' });
-    expect(checkTextAnswer(exercise, 'Wir sind im Kino').correct).toBe(false);
+    expect(checkTextAnswer(exercise, 'Wir sind im Kino').correct).toBe(true);
+    expect(checkTextAnswer(exercise, 'wir sind im Kino.').correct).toBe(false);
+    const question = textExercise({
+      answerMode: 'exact',
+      acceptedAnswers: ['Sind Sie Lehrer?'],
+    });
+    expect(checkTextAnswer(question, 'Sind Sie Lehrer').correct).toBe(false);
   });
 
   it('rejects a wrong capitalisation in normalized mode and explains why', () => {
@@ -322,6 +328,39 @@ describe('checkTextAnswer near misses', () => {
     expect(result.nearMiss).toBeUndefined();
   });
 
+  it.each([
+    ['a dropped umlaut', ['Du fährst nach Berlin.'], 'Du fahrst nach Berlin.'],
+    ['a Konjunktiv II umlaut', ['Ich hätte gern Kaffee.'], 'Ich hatte gern Kaffee.'],
+    ['ß typed as s', ['Die großen Häuser.'], 'Die grosen Häuser.'],
+  ])('never forgives %s as a typo', (_label, acceptedAnswers, answer) => {
+    const result = checkTextAnswer(textExercise({ acceptedAnswers }), answer);
+    expect(result.correct).toBe(false);
+    expect(result.typoCorrected).toBeUndefined();
+    expect(result.nearMiss?.kind).toBe('wordForm');
+  });
+
+  it('accepts a short du-form outright, with no spelling note', () => {
+    const exercise = textExercise({
+      acceptedAnswers: ['Wenn du kämest', 'Wenn du kämst'],
+    });
+    const result = checkTextAnswer(exercise, 'Wenn du kämst');
+    expect(result.correct).toBe(true);
+    expect(result.typoCorrected).toBeUndefined();
+  });
+
+  it('points at the punctuation when only a comma or question mark is off', () => {
+    expect(
+      checkTextAnswer(
+        translationExercise(),
+        'Meine Oma sagt ich soll sie öfter besuchen.',
+      ).nearMiss?.kind,
+    ).toBe('punctuation');
+    const question = textExercise({ acceptedAnswers: ['Sind Sie Lehrer?'] });
+    expect(checkTextAnswer(question, 'Sind Sie Lehrer').nearMiss?.kind).toBe(
+      'punctuation',
+    );
+  });
+
   it('leaves short words alone, where one edit is most of the word', () => {
     const exercise = textExercise({ acceptedAnswers: ['Wir sind im Kino.'] });
     expect(checkTextAnswer(exercise, 'Wir sind in Kino.').correct).toBe(false);
@@ -375,6 +414,20 @@ describe('checkSentenceOrderingAnswer', () => {
 
   it('rejects an incomplete order', () => {
     expect(checkSentenceOrderingAnswer(exercise, ['s1', 's2'])).toBe(false);
+  });
+
+  it('accepts two tiles with identical text in either order', () => {
+    const twins: SentenceOrderingExercise = {
+      ...exercise,
+      segments: [
+        { id: 'a', text: 'Er' },
+        { id: 'b', text: 'sagt,' },
+        { id: 'c', text: 'dass' },
+        { id: 'd', text: 'dass' },
+      ],
+    };
+    expect(checkSentenceOrderingAnswer(twins, ['a', 'b', 'd', 'c'])).toBe(true);
+    expect(checkSentenceOrderingAnswer(twins, ['b', 'a', 'c', 'd'])).toBe(false);
   });
 });
 
@@ -569,6 +622,17 @@ describe('checkErrorSpottingAnswer', () => {
 
   it('forgives punctuation and surrounding space in the correction', () => {
     expect(checkErrorSpottingAnswer(exercise, 1, ' seid. ')).toBe(true);
+  });
+
+  it('holds punctuation when punctuation is the whole correction', () => {
+    const comma: ErrorSpottingExercise = {
+      ...exercise,
+      tokens: ['Ich', 'bin', 'müde', 'aber', 'froh.'],
+      errorTokenIndex: 2,
+      correction: 'müde,',
+    };
+    expect(checkErrorSpottingAnswer(comma, 2, 'müde')).toBe(false);
+    expect(checkErrorSpottingAnswer(comma, 2, ' müde, ')).toBe(true);
   });
 
   it('still holds capitalisation against the learner', () => {

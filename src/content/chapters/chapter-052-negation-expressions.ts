@@ -25,7 +25,7 @@ export const chapter052: ChapterDefinition = {
   ],
   explanation: {
     introduction: [
-      'Chapter 16 introduced the two core negators of German: nicht and kein. But German negation is a whole small system, not just two words. Alongside nicht and kein, German has a set of dedicated negative words, each one the negative counterpart of a specific positive word: nichts (nothing) answers to etwas (something), niemand (nobody) answers to jemand (somebody), and nie (never) answers to immer/oft (always/often). Once you recognize which positive word is being denied, the right negative word usually follows automatically.',
+      'Chapter 16 introduced the two core negators of German: nicht and kein. But German negation is a whole small system, not just two words. Alongside nicht and kein, German has a set of dedicated negative words, each one the negative counterpart of a specific positive word: nichts (nothing) answers to etwas (something), niemand (nobody) answers to jemand (somebody), and nie (never) answers to jemals/schon einmal (ever). Once you recognize which positive word is being denied, the right negative word usually follows automatically.',
       'German also draws a sharp line between two kinds of "not anymore" in English: noch nicht (not yet) and nicht mehr (no longer). These look similar in English but describe opposite situations in time — one says something has not started, the other says something has ended — and native speakers never confuse them.',
       'Finally, this chapter deepens the idea of scope from Chapter 16: nicht can negate the whole sentence, or it can stand directly before a single word or phrase to narrowly deny just that part, while the rest of the sentence stays true. Learning to place nicht precisely — and to reach for nichts, niemand, or nie instead when the context calls for it — is what makes negation sound natural rather than translated word-for-word from English.',
     ],
@@ -34,9 +34,9 @@ export const chapter052: ChapterDefinition = {
         id: 'ch52-rule-01',
         heading: 'From nicht/kein to a full negation system',
         paragraphs: [
-          'Besides nicht and kein, German has dedicated negative words that each replace one specific positive word rather than simply adding "not" in front of it: nichts replaces etwas (something/anything), niemand replaces jemand (somebody/anybody), and nie replaces immer or oft (always/often).',
-          'Ich sehe etwas. → Ich sehe nichts. Jemand ruft an. → Niemand ruft an. Er ist oft müde. → Er ist nie müde. In each pair, the negative word simply takes the exact grammatical slot — subject, object, adverb — that the positive word occupied.',
-          'These words already carry the negation by themselves. Unlike some languages, German never adds nicht in front of nichts, niemand, or nie to reinforce them — that would produce an ungrammatical double negation.',
+          'Besides nicht and kein, German has dedicated negative words that each replace one specific positive word rather than simply adding "not" in front of it: nichts replaces etwas (something/anything), niemand replaces jemand (somebody/anybody), and nie replaces jemals or schon einmal (ever) — it is also the opposite of immer (always).',
+          'Ich sehe etwas. → Ich sehe nichts. Jemand ruft an. → Niemand ruft an. Warst du schon einmal in Rom? → Ich war noch nie in Rom. In each pair, the negative word simply takes the exact grammatical slot — subject, object, adverb — that the positive word occupied.',
+          'These words already carry the negation by themselves. Unlike some languages, German does not add nicht in front of nichts, niemand, or nie to reinforce them: two negations cancel each other out. Ich habe nicht nichts gesagt means "I did say something" — possible as a deliberate figure of speech, but never a way to say "I said nothing".',
         ],
       },
       {
@@ -54,14 +54,14 @@ export const chapter052: ChapterDefinition = {
         paragraphs: [
           'niemand (nobody/no one) is the negative counterpart of jemand. Unlike nichts, niemand does decline for case, following almost the same pattern as the question word wer: niemand in the nominative, niemanden in the accusative, niemandem in the dative.',
           'Niemand kommt heute. (nominative, subject) Ich kenne niemanden hier. (accusative, direct object of kennen) Ich habe niemandem geholfen. (dative, because helfen requires a dative object).',
-          'In casual spoken German you will sometimes hear niemand left undeclined in the accusative (Ich kenne niemand), but the standard, grammatically correct form is niemanden.',
+          'The endings are often left off in both speech and writing (Ich kenne niemand, Ich habe niemand geholfen), and dictionaries accept this uninflected form as correct. This chapter practises the inflected forms niemanden and niemandem, which show the case clearly and are the more careful choice.',
         ],
       },
       {
         id: 'ch52-rule-04',
         heading: 'nie — negating frequency',
         paragraphs: [
-          'nie (never) is the negative counterpart of immer (always) and of oft/manchmal (often/sometimes). It stands in the position a frequency adverb would normally occupy in the sentence.',
+          'nie (never) is the negative counterpart of jemals/schon einmal (ever) and the opposite of immer (always); to deny oft (often), say nicht oft. It stands in the position a frequency adverb would normally occupy in the sentence.',
           'Er ist nie pünktlich. Ich trinke nie Kaffee am Abend. nie can also combine with noch to intensify the meaning "not even once, up to this point": Ich war noch nie in Japan (I have never been to Japan).',
           'Do not confuse nie with nicht immer (not always): nicht immer means the thing sometimes happens and sometimes does not, while nie rules it out completely, every single time.',
         ],
@@ -97,7 +97,12 @@ export const chapter052: ChapterDefinition = {
         rows: [
           ['etwas', 'nichts', 'Ich sehe etwas.', 'Ich sehe nichts.'],
           ['jemand', 'niemand', 'Jemand ruft an.', 'Niemand ruft an.'],
-          ['immer / oft', 'nie', 'Er ist oft müde.', 'Er ist nie müde.'],
+          [
+            'jemals / schon einmal',
+            'nie / noch nie',
+            'Warst du schon einmal in Rom?',
+            'Ich war noch nie in Rom.',
+          ],
           ['schon', 'noch nicht', 'Bist du schon fertig?', 'Ich bin noch nicht fertig.'],
           [
             'noch / immer noch',
@@ -221,10 +226,10 @@ export const chapter052: ChapterDefinition = {
           'kein must always accompany a noun and agree with its gender and case; when there is no noun at all — just "nothing" — use the invariable pronoun nichts.',
       },
       {
-        incorrect: 'Ich habe niemand geholfen.',
-        correct: 'Ich habe niemandem geholfen.',
+        incorrect: 'Niemanden kommt heute.',
+        correct: 'Niemand kommt heute.',
         explanation:
-          'helfen takes a dative object, so niemand must take the dative ending -em: niemandem.',
+          'niemand is the subject here, so it stays in the nominative: niemand. The ending -en belongs only to the accusative (Ich sehe niemanden).',
       },
       {
         incorrect: 'Ich habe nicht kein Geld.',
@@ -240,11 +245,11 @@ export const chapter052: ChapterDefinition = {
       },
     ],
     remember: [
-      'nichts, niemand, and nie are dedicated negative words that replace etwas, jemand, and immer/oft — they already carry the negation, so no extra nicht is added.',
-      'niemand declines like the question word wer: niemand (nominative), niemanden (accusative), niemandem (dative). nichts never changes form.',
+      'nichts, niemand, and nie are dedicated negative words that replace etwas, jemand, and jemals/schon einmal — they already carry the negation, so no extra nicht is added.',
+      'niemand declines like the question word wer: niemand (nominative), niemanden (accusative), niemandem (dative); the uninflected niemand is also accepted in the accusative and dative. nichts never changes form.',
       'noch nicht ("not yet") negates schon and points to a situation that has not started; nicht mehr ("no longer") negates noch and points to one that has ended — opposite time directions.',
       'kein negates a following noun (with an indefinite or zero article); nichts and niemand stand alone as pronouns, with no noun attached.',
-      'German never stacks two negation words to negate the same thing — nicht kein, nicht nichts, and nicht niemand are all ungrammatical.',
+      'Do not add nicht to kein, nichts, or niemand to strengthen a negation: two negation words cancel each other out (Er hat nicht nichts gesagt = he did say something).',
     ],
   },
   mastery: {
@@ -379,7 +384,7 @@ export const chapter052: ChapterDefinition = {
       prompt: 'Ich kenne ___ in dieser Stadt.',
       options: [
         { id: 'a', text: 'niemanden' },
-        { id: 'b', text: 'niemand' },
+        { id: 'b', text: 'niemandes' },
         { id: 'c', text: 'niemandem' },
         { id: 'd', text: 'nichts' },
       ],
@@ -399,7 +404,7 @@ export const chapter052: ChapterDefinition = {
       options: [
         { id: 'a', text: 'niemandem' },
         { id: 'b', text: 'niemanden' },
-        { id: 'c', text: 'niemand' },
+        { id: 'c', text: 'niemandes' },
         { id: 'd', text: 'nichts' },
       ],
       correctOptionId: 'a',
@@ -453,7 +458,7 @@ export const chapter052: ChapterDefinition = {
       grammarFocus: ['nicht-mehr', 'dialogue', 'time-contrast'],
       instruction:
         'Read the exchange, then choose the phrase that best completes the final line.',
-      prompt: 'Complete: "Nein, ich esse ___ Fleisch, ich bin jetzt Vegetarier."',
+      prompt: 'Jonas means: "No, I no longer eat meat, I\'m a vegetarian now."',
       dialogue: [
         {
           speaker: 'Mia',
@@ -463,7 +468,6 @@ export const chapter052: ChapterDefinition = {
         {
           speaker: 'Jonas',
           german: 'Nein, ich esse ___ Fleisch, ich bin jetzt Vegetarier.',
-          english: "No, I no longer eat meat, I'm a vegetarian now.",
         },
       ],
       options: [
@@ -485,7 +489,7 @@ export const chapter052: ChapterDefinition = {
       grammarFocus: ['noch-nicht', 'dialogue', 'time-contrast'],
       instruction:
         'Read the exchange, then choose the phrase that best completes the final line.',
-      prompt: 'Complete: "Nein, wir haben sie ___ gemacht, wir fangen gleich an."',
+      prompt: 'Schüler means: "No, we haven\'t done it yet, we\'re starting soon."',
       dialogue: [
         {
           speaker: 'Lehrerin',
@@ -495,7 +499,6 @@ export const chapter052: ChapterDefinition = {
         {
           speaker: 'Schüler',
           german: 'Nein, wir haben sie ___ gemacht, wir fangen gleich an.',
-          english: "No, we haven't done it yet, we're starting soon.",
         },
       ],
       options: [
@@ -517,7 +520,7 @@ export const chapter052: ChapterDefinition = {
       grammarFocus: ['nie', 'dialogue', 'frequency'],
       instruction:
         'Read the exchange, then choose the phrase that best completes the final line.',
-      prompt: 'Complete: "Nein, ich bin ___ nervös, das stresst mich nicht."',
+      prompt: 'Elena means: "No, I\'m never nervous, it doesn\'t stress me."',
       dialogue: [
         {
           speaker: 'Paul',
@@ -527,7 +530,6 @@ export const chapter052: ChapterDefinition = {
         {
           speaker: 'Elena',
           german: 'Nein, ich bin ___ nervös, das stresst mich nicht.',
-          english: "No, I'm never nervous, it doesn't stress me.",
         },
       ],
       options: [
@@ -618,7 +620,7 @@ export const chapter052: ChapterDefinition = {
       grammarFocus: ['niemand', 'accusative'],
       instruction: 'Fill in the missing word. Capitalisation is not checked.',
       prompt: 'Ich sehe ___ im Park.',
-      acceptedAnswers: ['niemanden'],
+      acceptedAnswers: ['niemanden', 'niemand'],
       answerMode: 'caseInsensitive',
       placeholder: 'niemanden',
       maxLength: 12,
@@ -633,7 +635,7 @@ export const chapter052: ChapterDefinition = {
       grammarFocus: ['niemand', 'dative'],
       instruction: 'Fill in the missing word. Capitalisation is not checked.',
       prompt: 'Sie erzählt ___ von dem Geheimnis.',
-      acceptedAnswers: ['niemandem'],
+      acceptedAnswers: ['niemandem', 'niemand'],
       answerMode: 'caseInsensitive',
       placeholder: 'niemandem',
       maxLength: 12,
@@ -746,13 +748,13 @@ export const chapter052: ChapterDefinition = {
       grammarFocus: ['nie', 'sentence-transformation'],
       instruction:
         'Rewrite the sentence in the negative form using nie. Capitalisation and punctuation are checked.',
-      prompt: 'Er ist oft krank.',
-      acceptedAnswers: ['Er ist nie krank.'],
+      prompt: 'Er war schon einmal in Rom.',
+      acceptedAnswers: ['Er war noch nie in Rom.', 'Er war nie in Rom.'],
       answerMode: 'normalized',
-      placeholder: 'Er ist ...',
+      placeholder: 'Er war ...',
       maxLength: 40,
       explanation:
-        'oft is replaced by nie in the same adverb position: Er ist nie krank.',
+        'schon einmal (ever/once before) is negated with nie, usually strengthened to noch nie: Er war noch nie in Rom.',
     },
     {
       id: 'ch52-ex-27',
@@ -797,7 +799,7 @@ export const chapter052: ChapterDefinition = {
       grammarFocus: ['niemand', 'dative', 'dialogue'],
       instruction:
         'Read the exchange and fill in the missing word. Capitalisation is not checked.',
-      prompt: 'Complete: "Ich habe es ___ erzählt, es bleibt unser Geheimnis."',
+      prompt: 'Mitarbeiter means: "I haven\'t told anyone, it stays our secret."',
       dialogue: [
         {
           speaker: 'Chef',
@@ -807,10 +809,9 @@ export const chapter052: ChapterDefinition = {
         {
           speaker: 'Mitarbeiter',
           german: 'Ich habe es ___ erzählt, es bleibt unser Geheimnis.',
-          english: "I haven't told anyone, it stays our secret.",
         },
       ],
-      acceptedAnswers: ['niemandem'],
+      acceptedAnswers: ['niemandem', 'niemand'],
       answerMode: 'caseInsensitive',
       placeholder: 'niemandem',
       maxLength: 12,
@@ -846,12 +847,12 @@ export const chapter052: ChapterDefinition = {
       pairs: [
         { id: 'ch52-ex31-p1', left: 'etwas', right: 'nichts' },
         { id: 'ch52-ex31-p2', left: 'jemand', right: 'niemand' },
-        { id: 'ch52-ex31-p3', left: 'immer', right: 'nie' },
+        { id: 'ch52-ex31-p3', left: 'jemals', right: 'nie' },
         { id: 'ch52-ex31-p4', left: 'schon', right: 'noch nicht' },
         { id: 'ch52-ex31-p5', left: 'noch', right: 'nicht mehr' },
       ],
       explanation:
-        'Each positive word has one dedicated negative counterpart: etwas/nichts, jemand/niemand, immer/nie, schon/noch nicht, noch/nicht mehr.',
+        'Each positive word has one dedicated negative counterpart: etwas/nichts, jemand/niemand, jemals/nie, schon/noch nicht, noch/nicht mehr.',
     },
     {
       id: 'ch52-ex-32',
@@ -866,13 +867,13 @@ export const chapter052: ChapterDefinition = {
       pairs: [
         { id: 'ch52-ex32-p1', left: 'Ich sehe etwas.', right: 'nichts' },
         { id: 'ch52-ex32-p2', left: 'Jemand ruft an.', right: 'Niemand' },
-        { id: 'ch52-ex32-p3', left: 'Er ist oft müde.', right: 'nie' },
+        { id: 'ch52-ex32-p3', left: 'Warst du schon einmal hier?', right: 'nie' },
         { id: 'ch52-ex32-p4', left: 'Bist du schon fertig?', right: 'noch nicht' },
         { id: 'ch52-ex32-p5', left: 'Wohnst du noch hier?', right: 'nicht mehr' },
         { id: 'ch52-ex32-p6', left: 'Ich habe ein Auto.', right: 'kein' },
       ],
       explanation:
-        'Each sentence contains a positive word (etwas, jemand, oft, schon, noch, ein) that is denied by its matching negative counterpart.',
+        'Each sentence contains a positive word (etwas, jemand, schon einmal, schon, noch, ein) that is denied by its matching negative counterpart.',
     },
     {
       id: 'ch52-ex-33',
@@ -920,7 +921,7 @@ export const chapter052: ChapterDefinition = {
       prompt: 'Ich kenne ___ in dieser Stadt.',
       templateParts: ['Ich kenne ', ' in dieser Stadt.'],
       slots: [{ id: 'ch52-ex35-slot1', correctWord: 'niemanden' }],
-      wordBank: ['niemanden', 'niemand', 'niemandem', 'nichts'],
+      wordBank: ['niemanden', 'niemandes', 'niemandem', 'nichts'],
       explanation:
         'kennen takes an accusative object, so niemand must take the accusative ending: niemanden.',
     },
@@ -995,7 +996,7 @@ export const chapter052: ChapterDefinition = {
       prompt: 'Ich habe ___ geholfen.',
       templateParts: ['Ich habe ', ' geholfen.'],
       slots: [{ id: 'ch52-ex40-slot1', correctWord: 'niemandem' }],
-      wordBank: ['niemandem', 'niemanden', 'niemand', 'nichts'],
+      wordBank: ['niemandem', 'niemanden', 'niemandes', 'nichts'],
       explanation:
         'helfen takes a dative object, so niemand must take the dative ending: niemandem.',
     },
@@ -1144,11 +1145,11 @@ export const chapter052: ChapterDefinition = {
       grammarFocus: ['niemand', 'accusative', 'declension', 'error-correction'],
       instruction: 'Find the token with the wrong ending, and correct it.',
       prompt: 'Zwei Freunde sprechen über die neue Stadt. Etwas stimmt nicht.',
-      tokens: ['Ich', 'kenne', 'niemand', 'hier.'],
+      tokens: ['Ich', 'kenne', 'niemandem', 'hier.'],
       errorTokenIndex: 2,
       correction: 'niemanden',
       explanation:
-        'kennen takes an accusative object, so niemand must take the accusative ending: niemanden.',
+        'kennen takes an accusative object, so the dative niemandem is wrong: niemanden (or uninflected niemand).',
     },
     {
       id: 'ch52-ex-51',
@@ -1159,11 +1160,11 @@ export const chapter052: ChapterDefinition = {
       grammarFocus: ['niemand', 'dative', 'declension', 'error-correction'],
       instruction: 'Find the token with the wrong ending, and correct it.',
       prompt: 'Jemand erzählt, wie er einer Person geholfen hat. Etwas stimmt nicht.',
-      tokens: ['Ich', 'habe', 'niemand', 'geholfen.'],
+      tokens: ['Ich', 'habe', 'niemanden', 'geholfen.'],
       errorTokenIndex: 2,
       correction: 'niemandem',
       explanation:
-        'helfen takes a dative object, so niemand must take the dative ending: niemandem.',
+        'helfen takes a dative object, so the accusative niemanden is wrong: niemandem (or uninflected niemand).',
     },
     {
       id: 'ch52-ex-52',
@@ -1272,10 +1273,10 @@ export const chapter052: ChapterDefinition = {
       grammarFocus: ['nichts', 'dialogue', 'pronoun'],
       instruction:
         'Read the exchange, then choose the word that best completes the answer.',
-      prompt: 'Complete: "___."',
+      prompt: 'Ben means: "Nothing."',
       dialogue: [
         { speaker: 'Anna', german: 'Was hast du gehört?', english: 'What did you hear?' },
-        { speaker: 'Ben', german: '___.', english: 'Nothing.' },
+        { speaker: 'Ben', german: '___.' },
       ],
       options: [
         { id: 'a', text: 'Nichts' },
@@ -1296,14 +1297,14 @@ export const chapter052: ChapterDefinition = {
       grammarFocus: ['niemand', 'dialogue', 'pronoun'],
       instruction:
         'Read the exchange, then choose the word that best completes the answer.',
-      prompt: 'Complete: "___."',
+      prompt: 'Mitarbeiterin means: "Nobody."',
       dialogue: [
         {
           speaker: 'Chef',
           german: 'Wer war im Büro?',
           english: 'Who was in the office?',
         },
-        { speaker: 'Mitarbeiterin', german: '___.', english: 'Nobody.' },
+        { speaker: 'Mitarbeiterin', german: '___.' },
       ],
       options: [
         { id: 'a', text: 'Niemand' },
@@ -1385,7 +1386,7 @@ export const chapter052: ChapterDefinition = {
       options: [
         { id: 'a', text: 'niemandem' },
         { id: 'b', text: 'niemanden' },
-        { id: 'c', text: 'niemand' },
+        { id: 'c', text: 'niemandes' },
         { id: 'd', text: 'nichts' },
       ],
       correctOptionId: 'a',
@@ -1404,7 +1405,7 @@ export const chapter052: ChapterDefinition = {
       options: [
         { id: 'a', text: 'niemanden' },
         { id: 'b', text: 'niemandem' },
-        { id: 'c', text: 'niemand' },
+        { id: 'c', text: 'niemandes' },
         { id: 'd', text: 'nichts' },
       ],
       correctOptionId: 'a',
@@ -1489,7 +1490,7 @@ export const chapter052: ChapterDefinition = {
       grammarFocus: ['niemand', 'dative'],
       instruction: 'Fill in the missing word. Capitalisation is not checked.',
       prompt: 'Ich vertraue ___.',
-      acceptedAnswers: ['niemandem'],
+      acceptedAnswers: ['niemandem', 'niemand'],
       answerMode: 'caseInsensitive',
       placeholder: 'niemandem',
       maxLength: 12,
@@ -1504,7 +1505,7 @@ export const chapter052: ChapterDefinition = {
       grammarFocus: ['niemand', 'accusative'],
       instruction: 'Fill in the missing word. Capitalisation is not checked.',
       prompt: 'Ich habe ___ gefragt.',
-      acceptedAnswers: ['niemanden'],
+      acceptedAnswers: ['niemanden', 'niemand'],
       answerMode: 'caseInsensitive',
       placeholder: 'niemanden',
       maxLength: 12,
@@ -1569,13 +1570,16 @@ export const chapter052: ChapterDefinition = {
       grammarFocus: ['nie', 'sentence-transformation'],
       instruction:
         'Rewrite the sentence in the negative form using nie. Capitalisation and punctuation are checked.',
-      prompt: 'Sie kommt oft zu spät.',
-      acceptedAnswers: ['Sie kommt nie zu spät.'],
+      prompt: 'Sie ist schon einmal zu spät gekommen.',
+      acceptedAnswers: [
+        'Sie ist noch nie zu spät gekommen.',
+        'Sie ist nie zu spät gekommen.',
+      ],
       answerMode: 'normalized',
-      placeholder: 'Sie kommt ...',
-      maxLength: 40,
+      placeholder: 'Sie ist ...',
+      maxLength: 45,
       explanation:
-        'oft is replaced by nie in the same frequency-adverb slot: Sie kommt nie zu spät.',
+        'schon einmal is negated with nie (often noch nie) in the same adverb slot: Sie ist noch nie zu spät gekommen.',
     },
     {
       id: 'ch52-ex-75',
@@ -1620,13 +1624,13 @@ export const chapter052: ChapterDefinition = {
       grammarFocus: ['error-correction', 'niemand', 'dative'],
       instruction:
         'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
-      prompt: 'Falsch: Ich habe niemand geholfen.',
-      acceptedAnswers: ['Ich habe niemandem geholfen.'],
+      prompt: 'Falsch: Ich habe niemanden geholfen.',
+      acceptedAnswers: ['Ich habe niemandem geholfen.', 'Ich habe niemand geholfen.'],
       answerMode: 'normalized',
       placeholder: 'Ich habe ...',
       maxLength: 30,
       explanation:
-        'helfen takes a dative object, so niemand must be corrected to the dative form niemandem.',
+        'helfen takes a dative object, so the accusative niemanden must be corrected to the dative form niemandem.',
     },
   ],
 };

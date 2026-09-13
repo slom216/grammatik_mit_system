@@ -1,5 +1,7 @@
 import { beforeEach, describe, expect, it } from 'vitest';
 import { act, screen, waitFor, within } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import { createMemoryRouter, RouterProvider } from 'react-router-dom';
 import userEvent from '@testing-library/user-event';
 import { PracticePage } from './PracticePage';
 import { renderWithRouter } from '../test/helpers/renderWithRouter';
@@ -342,5 +344,58 @@ describe('PracticePage', () => {
     expect(useProgressStore.getState().exerciseHistory['ch01-ex-01']?.timesCorrect).toBe(
       1,
     );
+  });
+});
+
+describe('PracticePage browser Back', () => {
+  beforeEach(() => {
+    window.localStorage.clear();
+    useProgressStore.getState().resetProgress();
+    usePracticeStore.getState().exitSession();
+    useSettingsStore.setState({ shuffleOptions: false });
+  });
+
+  function renderWithHistory() {
+    const router = createMemoryRouter(
+      [
+        { path: '/chapter/:chapterNumber', element: <h1>Chapter page</h1> },
+        {
+          path: '/chapter/:chapterNumber/practice',
+          element: <PracticePage />,
+          loader: chapterRouteLoader,
+          HydrateFallback: () => null,
+        },
+      ],
+      { initialEntries: ['/chapter/1', '/chapter/1/practice'], initialIndex: 1 },
+    );
+    render(<RouterProvider router={router} />);
+    return router;
+  }
+
+  it('asks before leaving, and goes back once the learner confirms', async () => {
+    const user = userEvent.setup();
+    const router = renderWithHistory();
+    await screen.findByTestId('exercise-counter');
+
+    await act(() => router.navigate(-1));
+
+    const dialog = await screen.findByRole('dialog');
+    expect(dialog).toHaveTextContent(/leave this practice session/i);
+    expect(router.state.location.pathname).toBe('/chapter/1/practice');
+
+    await user.click(
+      within(dialog).getByRole('button', { name: /stay in the session/i }),
+    );
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+
+    await act(() => router.navigate(-1));
+    await user.click(
+      within(await screen.findByRole('dialog')).getByRole('button', {
+        name: /leave practice/i,
+      }),
+    );
+
+    await screen.findByRole('heading', { name: 'Chapter page' });
+    expect(usePracticeStore.getState().status).toBe('idle');
   });
 });

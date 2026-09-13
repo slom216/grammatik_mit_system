@@ -225,7 +225,7 @@ export const chapter047: ChapterDefinition = {
           'The linking element -s- between Arbeit and Platz is part of the fixed spelling and cannot be left out.',
       },
       {
-        incorrect: 'der arbeitsplatz',
+        incorrect: 'der ArbeitsPlatz',
         correct: 'der Arbeitsplatz',
         explanation:
           'Like all German nouns, a compound noun is capitalised — as a single word, with only the first letter capitalised, not each part.',
@@ -607,7 +607,7 @@ export const chapter047: ChapterDefinition = {
       instruction:
         'Split the compound into its two component nouns, each with its article, joined by "+". Capitalisation is checked.',
       prompt: 'der Regenschirm → ?',
-      acceptedAnswers: ['der Regen + der Schirm'],
+      acceptedAnswers: ['der Regen + der Schirm', 'Der Regen + der Schirm'],
       answerMode: 'normalized',
       placeholder: 'der Regen + der Schirm',
       maxLength: 40,
@@ -624,7 +624,7 @@ export const chapter047: ChapterDefinition = {
       instruction:
         'Split the compound into its two component nouns, each with its article, joined by "+". Capitalisation is checked.',
       prompt: 'das Schlüsselwort → ?',
-      acceptedAnswers: ['der Schlüssel + das Wort'],
+      acceptedAnswers: ['der Schlüssel + das Wort', 'Der Schlüssel + das Wort'],
       answerMode: 'normalized',
       placeholder: 'der Schlüssel + das Wort',
       maxLength: 40,
@@ -713,7 +713,7 @@ export const chapter047: ChapterDefinition = {
       instruction:
         'Correct the mistake. Write the full, corrected phrase with article. Capitalisation is checked.',
       prompt: 'Falsch: die Haus Tür',
-      acceptedAnswers: ['die Haustür'],
+      acceptedAnswers: ['die Haustür', 'Die Haustür'],
       answerMode: 'normalized',
       placeholder: 'die Haustür',
       maxLength: 20,
@@ -730,7 +730,7 @@ export const chapter047: ChapterDefinition = {
       instruction:
         'Correct the mistake. Write the full, corrected phrase with article. Capitalisation is checked.',
       prompt: 'Falsch: der Arbeitplatz',
-      acceptedAnswers: ['der Arbeitsplatz'],
+      acceptedAnswers: ['der Arbeitsplatz', 'Der Arbeitsplatz'],
       answerMode: 'normalized',
       placeholder: 'der Arbeitsplatz',
       maxLength: 20,
@@ -1146,7 +1146,7 @@ export const chapter047: ChapterDefinition = {
       instruction:
         'Split the compound into its two component nouns, each with its article, joined by "+". Capitalisation is checked.',
       prompt: 'die Wasserflasche → ?',
-      acceptedAnswers: ['das Wasser + die Flasche'],
+      acceptedAnswers: ['das Wasser + die Flasche', 'Das Wasser + die Flasche'],
       answerMode: 'normalized',
       placeholder: 'das Wasser + die Flasche',
       maxLength: 40,
@@ -1163,7 +1163,7 @@ export const chapter047: ChapterDefinition = {
       instruction:
         'Split the compound into its two component nouns, each with its article, joined by "+". Capitalisation is checked.',
       prompt: 'der Briefkasten → ?',
-      acceptedAnswers: ['der Brief + der Kasten'],
+      acceptedAnswers: ['der Brief + der Kasten', 'Der Brief + der Kasten'],
       answerMode: 'normalized',
       placeholder: 'der Brief + der Kasten',
       maxLength: 40,
@@ -1180,7 +1180,7 @@ export const chapter047: ChapterDefinition = {
       instruction:
         'Correct the mistake. Write the full, corrected phrase with article. Capitalisation is checked.',
       prompt: 'Falsch: der Zeitungartikel',
-      acceptedAnswers: ['der Zeitungsartikel'],
+      acceptedAnswers: ['der Zeitungsartikel', 'Der Zeitungsartikel'],
       answerMode: 'normalized',
       placeholder: 'der Zeitungsartikel',
       maxLength: 25,
@@ -1473,7 +1473,7 @@ export const chapter047: ChapterDefinition = {
       grammarFocus: ['head-noun', 'gender', 'error-correction'],
       instruction: 'Click the token with the wrong gender and note the correction.',
       prompt: 'Der Kühlschrank has the wrong article. Find the error.',
-      tokens: ['Die', 'Kühlschrank', 'ist', 'kaputt', '.'],
+      tokens: ['Die', 'Kühlschrank', 'ist', 'kaputt.'],
       errorTokenIndex: 0,
       correction: 'Der',
       explanation:
@@ -1488,7 +1488,7 @@ export const chapter047: ChapterDefinition = {
       grammarFocus: ['head-noun', 'gender', 'error-correction'],
       instruction: 'Click the token with the wrong gender and note the correction.',
       prompt: 'Find the error in this sentence.',
-      tokens: ['Der', 'Handtuch', 'liegt', 'im', 'Bad', '.'],
+      tokens: ['Der', 'Handtuch', 'liegt', 'im', 'Bad.'],
       errorTokenIndex: 0,
       correction: 'Das',
       explanation:
@@ -1503,7 +1503,7 @@ export const chapter047: ChapterDefinition = {
       grammarFocus: ['head-noun', 'gender', 'error-correction'],
       instruction: 'Click the token with the wrong gender and note the correction.',
       prompt: 'Find the error in this sentence.',
-      tokens: ['Das', 'Autobahn', 'ist', 'sehr', 'lang', '.'],
+      tokens: ['Das', 'Autobahn', 'ist', 'sehr', 'lang.'],
       errorTokenIndex: 0,
       correction: 'Die',
       explanation:
@@ -1518,7 +1518,7 @@ export const chapter047: ChapterDefinition = {
       grammarFocus: ['head-noun', 'gender', 'error-correction'],
       instruction: 'Click the token with the wrong gender and note the correction.',
       prompt: 'Find the error in this sentence.',
-      tokens: ['Die', 'Buchladen', 'öffnet', 'um', 'neun', 'Uhr', '.'],
+      tokens: ['Die', 'Buchladen', 'öffnet', 'um', 'neun', 'Uhr.'],
       errorTokenIndex: 0,
       correction: 'Der',
       explanation:
@@ -1533,7 +1533,7 @@ export const chapter047: ChapterDefinition = {
       grammarFocus: ['head-noun', 'gender', 'error-correction'],
       instruction: 'Click the token with the wrong gender and note the correction.',
       prompt: 'Find the error in this sentence.',
-      tokens: ['Der', 'Sonnenblume', 'wächst', 'im', 'Garten', '.'],
+      tokens: ['Der', 'Sonnenblume', 'wächst', 'im', 'Garten.'],
       errorTokenIndex: 0,
       correction: 'Die',
       explanation:
@@ -1548,7 +1548,7 @@ export const chapter047: ChapterDefinition = {
       grammarFocus: ['head-noun', 'gender', 'error-correction'],
       instruction: 'Click the token with the wrong gender and note the correction.',
       prompt: 'Find the error in this sentence.',
-      tokens: ['Das', 'Gartenzaun', 'ist', 'neu', 'gestrichen', '.'],
+      tokens: ['Das', 'Gartenzaun', 'ist', 'neu', 'gestrichen.'],
       errorTokenIndex: 0,
       correction: 'Der',
       explanation:
@@ -1563,7 +1563,7 @@ export const chapter047: ChapterDefinition = {
       grammarFocus: ['head-noun', 'gender', 'error-correction'],
       instruction: 'Click the token with the wrong gender and note the correction.',
       prompt: 'Find the error in this sentence.',
-      tokens: ['Die', 'Wintermantel', 'hängt', 'im', 'Schrank', '.'],
+      tokens: ['Die', 'Wintermantel', 'hängt', 'im', 'Schrank.'],
       errorTokenIndex: 0,
       correction: 'Der',
       explanation:
@@ -1578,7 +1578,7 @@ export const chapter047: ChapterDefinition = {
       grammarFocus: ['head-noun', 'gender', 'error-correction'],
       instruction: 'Click the token with the wrong gender and note the correction.',
       prompt: 'Find the error in this sentence.',
-      tokens: ['Der', 'Hausaufgabe', 'ist', 'fertig', '.'],
+      tokens: ['Der', 'Hausaufgabe', 'ist', 'fertig.'],
       errorTokenIndex: 0,
       correction: 'Die',
       explanation:

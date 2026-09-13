@@ -1,5 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import {
+  PROGRESS_CORRUPT_BACKUP_KEY,
   PROGRESS_STORAGE_KEY,
   clearProgress,
   createEmptyProgress,
@@ -99,6 +100,27 @@ describe('saveProgress / loadProgress', () => {
     const { state, recovered } = loadProgress(storage);
     expect(recovered).toBe(true);
     expect(state).toEqual(createEmptyProgress());
+  });
+
+  it('keeps a copy of unreadable progress, without replacing an earlier copy', () => {
+    vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const storage = memoryStorage({ [PROGRESS_STORAGE_KEY]: '{ not json' });
+    loadProgress(storage);
+    expect(storage.getItem(PROGRESS_CORRUPT_BACKUP_KEY)).toBe('{ not json');
+
+    storage.setItem(PROGRESS_STORAGE_KEY, '{ also broken');
+    loadProgress(storage);
+    expect(storage.getItem(PROGRESS_CORRUPT_BACKUP_KEY)).toBe('{ not json');
+  });
+
+  it('reports progress from a newer version instead of treating it as damaged', () => {
+    vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const storage = memoryStorage({
+      [PROGRESS_STORAGE_KEY]: JSON.stringify({ ...sampleProgress, schemaVersion: 5 }),
+    });
+    const result = loadProgress(storage);
+    expect(result).toMatchObject({ recovered: false, newerVersion: true });
+    expect(storage.getItem(PROGRESS_CORRUPT_BACKUP_KEY)).toBeNull();
   });
 
   it('rejects a stored state that does not match the schema', () => {

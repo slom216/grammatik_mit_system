@@ -64,7 +64,7 @@ export const chapter058: ChapterDefinition = {
         id: 'ch58-rule-04',
         heading: 'The same preposition, different verb, different case',
         paragraphs: [
-          'Because an, auf, über, and vor are two-way prepositions in their ordinary spatial use, it is tempting to think their case can be predicted from a general pattern. Fixed verb phrases prove that this does not work: denken an and sich erinnern an both take the accusative, but teilnehmen an takes the dative. warten auf, sich freuen auf, and sich verlassen auf all take the accusative, but bestehen auf takes the dative.',
+          'Because an, auf, über, and vor are two-way prepositions in their ordinary spatial use, it is tempting to think their case can be predicted from a general pattern. Fixed verb phrases prove that this does not work: denken an and sich erinnern an both take the accusative, but teilnehmen an takes the dative. warten auf, sich freuen auf, and sich verlassen auf all take the accusative, but bestehen auf normally takes the dative (an accusative is occasionally found, but the dative is the standard choice).',
           'This is exactly why each combination has to be memorized individually, verb by verb, rather than derived from the preposition. Keep an eye out especially for bestehen auf + Dativ, since it goes against the more common accusative pattern of the other auf-verbs in this chapter.',
         ],
       },
@@ -307,10 +307,10 @@ export const chapter058: ChapterDefinition = {
           'Wrong case after a correctly chosen preposition: sich freuen auf is fixed with the accusative, so it must be die Party, not the dative der Party — even though auf is normally a two-way preposition.',
       },
       {
-        incorrect: 'Er besteht auf seine Meinung.',
+        incorrect: 'Er besteht an seiner Meinung.',
         correct: 'Er besteht auf seiner Meinung.',
         explanation:
-          'Wrong case after a correctly chosen preposition: unlike most other auf-verbs in this chapter, bestehen auf is fixed with the dative, so it must be seiner Meinung, not the accusative seine Meinung.',
+          'Wrong preposition: bestehen (to insist) is fixed with auf, never an. Unlike most other auf-verbs in this chapter, it normally takes the dative: auf seiner Meinung.',
       },
     ],
     remember: [
@@ -600,7 +600,7 @@ export const chapter058: ChapterDefinition = {
       grammarFocus: ['worauf', 'dialogue', 'sich freuen auf'],
       instruction:
         'Read the exchange, then choose the question word that fits the reply.',
-      prompt: 'Complete: "___ freust du dich am meisten?"',
+      prompt: "Complete Tom's question.",
       dialogue: [
         {
           speaker: 'Nina',
@@ -904,12 +904,13 @@ export const chapter058: ChapterDefinition = {
       prompt: 'Sie bewirbt sich ___ die Stelle.',
       options: [
         { id: 'a', text: 'um' },
-        { id: 'b', text: 'für' },
+        { id: 'b', text: 'auf' },
         { id: 'c', text: 'an' },
         { id: 'd', text: 'nach' },
       ],
       correctOptionId: 'a',
-      explanation: 'sich bewerben is always fixed with um + Akkusativ, not with für.',
+      explanation:
+        'sich bewerben is fixed with um + Akkusativ (für is also heard: sich für eine Stelle bewerben); auf, an and nach do not work here.',
     },
     {
       id: 'ch58-ex-34',
@@ -1130,7 +1131,7 @@ export const chapter058: ChapterDefinition = {
         'dialogue',
       ],
       instruction: 'Read the exchange, then choose the correct question word.',
-      prompt: 'Complete: "Über ___ beschwert er sich schon wieder?"',
+      prompt: "Complete Paul's question.",
       dialogue: [
         {
           speaker: 'Lena',
@@ -1192,11 +1193,12 @@ export const chapter058: ChapterDefinition = {
       grammarFocus: ['sich bewerben um'],
       instruction: 'Fill in the missing preposition. Capitalisation is not checked.',
       prompt: 'Sie bewirbt sich ___ ein Stipendium.',
-      acceptedAnswers: ['um'],
+      acceptedAnswers: ['um', 'für'],
       answerMode: 'caseInsensitive',
       placeholder: 'um',
       maxLength: 10,
-      explanation: 'sich bewerben is fixed with um + Akkusativ.',
+      explanation:
+        'sich bewerben is fixed with um + Akkusativ; für + Akkusativ is also common and accepted.',
     },
     {
       id: 'ch58-ex-49',
@@ -1485,7 +1487,7 @@ export const chapter058: ChapterDefinition = {
         { id: 'p3', left: 'denken', right: 'An wen' },
         { id: 'p4', left: 'träumen', right: 'Von wem' },
         { id: 'p5', left: 'Angst haben', right: 'Vor wem' },
-        { id: 'p6', left: 'teilnehmen', right: 'An wem' },
+        { id: 'p6', left: 'sich beschäftigen', right: 'Mit wem' },
       ],
       explanation:
         'The preposition simply attaches to wen (accusative verbs) or wem (dative verbs), depending on the fixed case of each verb.',
@@ -1794,7 +1796,7 @@ export const chapter058: ChapterDefinition = {
       grammarFocus: ['error-spotting', 'sich interessieren für', 'wrong-preposition'],
       instruction: 'Find the token with the wrong preposition.',
       prompt: 'Ich interessiere mich in Musik.',
-      tokens: ['Ich', 'interessiere', 'mich', 'in', 'Musik', '.'],
+      tokens: ['Ich', 'interessiere', 'mich', 'in', 'Musik.'],
       errorTokenIndex: 3,
       correction: 'für',
       explanation:
@@ -1809,7 +1811,7 @@ export const chapter058: ChapterDefinition = {
       grammarFocus: ['error-spotting', 'warten auf', 'wrong-preposition'],
       instruction: 'Find the token with the wrong preposition.',
       prompt: 'Ich warte für den Bus.',
-      tokens: ['Ich', 'warte', 'für', 'den', 'Bus', '.'],
+      tokens: ['Ich', 'warte', 'für', 'den', 'Bus.'],
       errorTokenIndex: 2,
       correction: 'auf',
       explanation:
@@ -1824,7 +1826,7 @@ export const chapter058: ChapterDefinition = {
       grammarFocus: ['error-spotting', 'denken an', 'wrong-preposition'],
       instruction: 'Find the token with the wrong preposition.',
       prompt: 'Er denkt oft über seine Familie.',
-      tokens: ['Er', 'denkt', 'oft', 'über', 'seine', 'Familie', '.'],
+      tokens: ['Er', 'denkt', 'oft', 'über', 'seine', 'Familie.'],
       errorTokenIndex: 3,
       correction: 'an',
       explanation:
@@ -1839,7 +1841,7 @@ export const chapter058: ChapterDefinition = {
       grammarFocus: ['error-spotting', 'sich freuen auf', 'wrong-case'],
       instruction: 'Find the token with the wrong case.',
       prompt: 'Ich freue mich auf der Party.',
-      tokens: ['Ich', 'freue', 'mich', 'auf', 'der', 'Party', '.'],
+      tokens: ['Ich', 'freue', 'mich', 'auf', 'der', 'Party.'],
       errorTokenIndex: 4,
       correction: 'die',
       explanation:
@@ -1851,14 +1853,14 @@ export const chapter058: ChapterDefinition = {
       order: 87,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['error-spotting', 'bestehen auf', 'wrong-case', 'auf-trap'],
-      instruction: 'Find the token with the wrong case.',
-      prompt: 'Er besteht auf seine Meinung.',
-      tokens: ['Er', 'besteht', 'auf', 'seine', 'Meinung', '.'],
-      errorTokenIndex: 3,
-      correction: 'seiner',
+      grammarFocus: ['error-spotting', 'bestehen auf', 'wrong-preposition', 'auf-trap'],
+      instruction: 'Find the token with the wrong preposition.',
+      prompt: 'Er besteht an seiner Meinung.',
+      tokens: ['Er', 'besteht', 'an', 'seiner', 'Meinung.'],
+      errorTokenIndex: 2,
+      correction: 'auf',
       explanation:
-        'bestehen auf is fixed with the dative, unlike most other auf-verbs in this chapter, so it must be seiner Meinung.',
+        'bestehen (to insist) is fixed with auf, not an; it normally takes the dative, so auf seiner Meinung.',
     },
     {
       id: 'ch58-ex-88',
@@ -1866,13 +1868,14 @@ export const chapter058: ChapterDefinition = {
       order: 88,
       type: 'errorSpotting',
       level: 'transfer',
-      grammarFocus: ['error-spotting', 'sich bewerben um', 'wrong-preposition'],
-      instruction: 'Find the token with the wrong preposition.',
-      prompt: 'Sie bewirbt sich für die Stelle.',
-      tokens: ['Sie', 'bewirbt', 'sich', 'für', 'die', 'Stelle', '.'],
-      errorTokenIndex: 3,
-      correction: 'um',
-      explanation: 'sich bewerben is always fixed with um, not für.',
+      grammarFocus: ['error-spotting', 'sich bewerben um', 'wrong-case'],
+      instruction: 'Find the token with the wrong case.',
+      prompt: 'Sie bewirbt sich um der Stelle.',
+      tokens: ['Sie', 'bewirbt', 'sich', 'um', 'der', 'Stelle.'],
+      errorTokenIndex: 4,
+      correction: 'die',
+      explanation:
+        'sich bewerben um takes the accusative (um always does), so it must be um die Stelle, not the dative der Stelle.',
     },
     {
       id: 'ch58-ex-89',
@@ -1887,8 +1890,7 @@ export const chapter058: ChapterDefinition = {
         { id: 'w1', text: 'Worüber' },
         { id: 'w2', text: 'freust' },
         { id: 'w3', text: 'du' },
-        { id: 'w4', text: 'dich' },
-        { id: 'w5', text: '?' },
+        { id: 'w4', text: 'dich?' },
       ],
       explanation:
         'The fused question word worüber comes first, followed by the verb, the subject, and the reflexive pronoun: Worüber freust du dich?',
@@ -1908,8 +1910,7 @@ export const chapter058: ChapterDefinition = {
         { id: 'w3', text: 'du' },
         { id: 'w4', text: 'dich' },
         { id: 'w5', text: 'am' },
-        { id: 'w6', text: 'meisten' },
-        { id: 'w7', text: '?' },
+        { id: 'w6', text: 'meisten?' },
       ],
       explanation:
         'The fused question word wofür comes first, followed by the verb, the subject, the reflexive pronoun, and the superlative phrase am meisten: Wofür interessierst du dich am meisten?',

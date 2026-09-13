@@ -72,7 +72,7 @@ export const chapter063: ChapterDefinition = {
         heading: 'Comparing all three passive tenses side by side',
         paragraphs: [
           'Because all three passive tenses share exactly the same past participle, the only thing that changes from one tense to the next is the auxiliary — and, for the present-perfect passive, the addition of worden at the end: wird gebaut (present, an action happening now or habitually), wurde gebaut (simple past, an action reported as a past fact), ist gebaut worden (present perfect, an action viewed from the present as completed).',
-          'As with the active voice, spoken German strongly favors the present-perfect passive (ist ... worden) for talking about the past, while the simple-past passive (wurde) is more common in writing — narration, news reports, history, textbook-style descriptions. Both describe events that are already over; the choice between them is mostly a matter of register, not meaning.',
+          'As with the active voice, conversation often prefers the present-perfect passive (ist ... worden) for talking about the past, while the simple-past passive (wurde) dominates in writing — narration, news reports, history, textbook-style descriptions. wurde-passives are still common in speech too (Ich wurde gestern operiert. Das Haus wurde 1985 gebaut.). Both describe events that are already over; the choice between them is mostly a matter of register, not meaning.',
         ],
       },
       {

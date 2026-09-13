@@ -220,7 +220,8 @@ export const chapter081: ChapterDefinition = {
         german: 'Je näher der Prüfungstermin rückt, desto nervöser wird er.',
         english: 'The closer the exam date gets, the more nervous he becomes.',
         highlight: ['Je näher', 'desto nervöser'],
-        explanation: 'nah has the irregular comparative näher, with an inserted h.',
+        explanation:
+          'nah has only an umlaut in the comparative: nah -> näher (the h is already part of the stem; only the superlative nächst- is irregular).',
       },
       {
         german: 'Je mehr man hat, desto mehr will man.',
@@ -419,7 +420,8 @@ export const chapter081: ChapterDefinition = {
         { id: 'd', text: 'nährer' },
       ],
       correctOptionId: 'a',
-      explanation: 'nah is irregular: nah -> näher (an extra h is inserted).',
+      explanation:
+        'nah has only an umlaut in the comparative: nah -> näher (the h is already part of the stem; only the superlative nächst- is irregular).',
     },
     {
       id: 'ch81-ex-08',
@@ -532,11 +534,11 @@ export const chapter081: ChapterDefinition = {
           english: 'Honestly, panicked: ...',
         },
       ],
-      prompt: '___',
+      prompt: "Which sentence completes Jonas's reply?",
       options: [
-        { id: 'a', text: 'Je näher der Prüfungstermin rückt, desto nervöser wird er.' },
-        { id: 'b', text: 'Je näher rückt der Prüfungstermin, desto wird er nervöser.' },
-        { id: 'c', text: 'Näher der Prüfungstermin rückt, je nervöser wird er.' },
+        { id: 'a', text: 'Je näher der Prüfungstermin rückt, desto nervöser werde ich.' },
+        { id: 'b', text: 'Je näher rückt der Prüfungstermin, desto werde ich nervöser.' },
+        { id: 'c', text: 'Näher der Prüfungstermin rückt, je nervöser werde ich.' },
       ],
       correctOptionId: 'a',
       explanation:
@@ -911,7 +913,7 @@ export const chapter081: ChapterDefinition = {
           english: 'Always very strong: ...',
         },
       ],
-      prompt: '___',
+      prompt: "Which sentence completes Tom's reply?",
       options: [
         { id: 'a', text: 'Je stärker der Kaffee ist, desto wacher fühle ich mich.' },
         { id: 'b', text: 'Je stärker ist der Kaffee, desto ich fühle wacher.' },
@@ -955,7 +957,8 @@ export const chapter081: ChapterDefinition = {
         { id: 'd', text: 'nährer' },
       ],
       correctOptionId: 'a',
-      explanation: 'nah is irregular: nah -> näher (an extra h is inserted).',
+      explanation:
+        'nah has only an umlaut in the comparative: nah -> näher (the h is already part of the stem; only the superlative nächst- is irregular).',
     },
     {
       id: 'ch81-ex-37',
@@ -1196,7 +1199,8 @@ export const chapter081: ChapterDefinition = {
       templateParts: ['Je ', ' wir dem Ziel kommen, desto aufgeregter werden wir.'],
       slots: [{ id: 'slot1', correctWord: 'näher' }],
       wordBank: ['näher', 'nah', 'nächste', 'naher'],
-      explanation: 'nah is irregular: nah -> näher.',
+      explanation:
+        'nah has only an umlaut in the comparative: nah -> näher (the h is already part of the stem; only the superlative nächst- is irregular).',
     },
     {
       id: 'ch81-ex-53',

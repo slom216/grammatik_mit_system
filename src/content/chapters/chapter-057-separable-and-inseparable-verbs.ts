@@ -34,7 +34,7 @@ export const chapter057: ChapterDefinition = {
         heading: 'Two verb families: separable and inseparable prefixes',
         paragraphs: [
           'German compound verbs fall into two large families, sorted purely by their prefix. Separable prefixes — ab-, an-, auf-, aus-, bei-, ein-, her-, hin-, los-, mit-, nach-, vor-, weg-, zu-, zurück-, zusammen-, and a few others — are stressed in speech (AUFstehen, EINkaufen, MITkommen) and detach from the base verb in a conjugated main clause.',
-          'Inseparable prefixes — be-, ge-, er-, ver-, zer-, ent-, emp-, miss- — are exactly eight, this list never grows, and they are always unstressed (verSTEHEN, beSUCHEN, entDECKEN). They fuse permanently to the base verb: no tense, no clause type, and no context ever pulls them apart.',
+          'Inseparable prefixes — the core set be-, ge-, er-, ver-, zer-, ent-, emp-, miss-, plus hinter-, wider- and voll- in some verbs (hinterlassen, widersprechen, vollenden) — are always unstressed (verSTEHEN, beSUCHEN, entDECKEN). They fuse permanently to the base verb: no tense, no clause type, and no context ever pulls them apart.',
         ],
         notes: [
           'If you are unsure which family a prefix belongs to, listen for the stress: a stressed first syllable almost always signals a separable prefix.',
@@ -96,7 +96,7 @@ export const chapter057: ChapterDefinition = {
           ],
           [
             'Inseparable',
-            'be-, ge-, er-, ver-, zer-, ent-, emp-, miss-',
+            'be-, ge-, er-, ver-, zer-, ent-, emp-, miss- (also hinter-, wider-, some voll-)',
             'Never stressed',
             'Never splits; blocks ge- completely; zu stands in front of the whole verb',
           ],
@@ -265,7 +265,7 @@ export const chapter057: ChapterDefinition = {
         incorrect: 'Er hat die Rechnung geverkauft.',
         correct: 'Er hat die Rechnung verkauft.',
         explanation:
-          'ver- is one of the eight inseparable prefixes and blocks ge- entirely, in every verb, without exception.',
+          'ver- is one of the core inseparable prefixes and blocks ge- entirely, in every verb, without exception.',
       },
       {
         incorrect: 'Ich mitkomme heute Abend.',
@@ -282,7 +282,7 @@ export const chapter057: ChapterDefinition = {
     ],
     remember: [
       'Separable prefixes (ab-, an-, auf-, aus-, bei-, ein-, her-, hin-, los-, mit-, nach-, vor-, weg-, zu-, zurück-, zusammen-, and others) are stressed, split off in a main clause, and let ge- and zu slide inside the word: aufgestanden, aufzustehen.',
-      'Inseparable prefixes (be-, ge-, er-, ver-, zer-, ent-, emp-, miss- — exactly eight, no more) are always unstressed, never split, and always block ge-; zu stands in front of the whole verb instead: verstanden, zu verstehen.',
+      'Inseparable prefixes (core set: be-, ge-, er-, ver-, zer-, ent-, emp-, miss-; also hinter-, wider- and some voll- verbs) are always unstressed, never split, and always block ge-; zu stands in front of the whole verb instead: verstanden, zu verstehen.',
       'In a zu-infinitive, zu goes between a separable prefix and its base verb, written as one word (einzukaufen, anzurufen, zuzumachen); with an inseparable verb, zu is a free word standing in front of the whole verb (zu verstehen, zu besuchen).',
       'durch-, um-, unter-, über-, and wieder- can be either separable or inseparable: the stressed, separable reading usually keeps the more literal, spatial meaning, while the unstressed, inseparable reading is usually more figurative — übersetzen (to ferry across) vs. übersetzen (to translate).',
       'When you learn a new compound verb, learn its meaning, its stress, and its separability together — with a two-way prefix, all three change at once.',
@@ -329,7 +329,7 @@ export const chapter057: ChapterDefinition = {
       ],
       correctOptionId: 'b',
       explanation:
-        'ver- belongs to the fixed set of eight inseparable prefixes; it is never stressed and never splits.',
+        'ver- belongs to the core inseparable prefixes; it is never stressed and never splits.',
     },
     {
       id: 'ch57-ex-03',
@@ -1022,7 +1022,7 @@ export const chapter057: ChapterDefinition = {
       errorTokenIndex: 5,
       correction: 'erklärt',
       explanation:
-        'erklären is inseparable (er- is one of the eight inseparable prefixes) and blocks ge-: the participle is erklärt, not geerklärt.',
+        'erklären is inseparable (er- is one of the core inseparable prefixes) and blocks ge-: the participle is erklärt, not geerklärt.',
     },
     {
       id: 'ch57-ex-41',
@@ -1437,7 +1437,7 @@ export const chapter057: ChapterDefinition = {
         { id: 'p6', left: 'gefallen', right: 'to please, to like' },
       ],
       explanation:
-        'Each of these verbs carries one of the eight fixed inseparable prefixes and never splits.',
+        'Each of these verbs carries one of the core inseparable prefixes and never splits.',
     },
     {
       id: 'ch57-ex-65',

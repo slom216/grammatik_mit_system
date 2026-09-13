@@ -28,6 +28,7 @@ export function ResultsPage() {
   const summary = usePracticeStore((state) => state.summary);
   const sessionDurationMs = usePracticeStore((state) => state.sessionDurationMs);
   const startSession = usePracticeStore((state) => state.startSession);
+  const mode = usePracticeStore((state) => state.mode);
   const progress = useProgressStore();
 
   if (!chapter) {
@@ -122,6 +123,18 @@ export function ResultsPage() {
                 <li>Complete a full practice session.</li>
               )}
             </ul>
+            {mode === 'quick' &&
+              summary &&
+              summary.answeredCount < chapter.mastery.minimumAnswered && (
+                <p>
+                  A quick session is too short for this: mastery needs{' '}
+                  {chapter.mastery.minimumAnswered} exercises answered in one session, so
+                  only a full practice session can master the chapter.{' '}
+                  <Link to={chapterPath(chapter.number, 'practice')}>
+                    Start full practice ({chapter.exercises.length})
+                  </Link>
+                </p>
+              )}
           </>
         )}
       </Card>

@@ -47,7 +47,7 @@ export const chapter043: ChapterDefinition = {
         id: 'ch43-rule-03',
         heading: 'The attributive superlative: der/die/das ...-ste',
         paragraphs: [
-          'When the superlative stands directly before a noun, it needs a definite article (der/die/das, matching the gender, number, and case of the noun) and the normal adjective ending you already know from weak-declension endings after der-words.',
+          "When the superlative stands directly before a noun, it usually comes with the definite article (der/die/das, matching the gender, number, and case of the noun) and takes the normal adjective ending you already know from the endings after der-words. A possessive can take the article's place, and the ending then follows the ein-word pattern: mein bester Freund, meine beste Freundin.",
           'Das ist der schnellste Zug. (That is the fastest train — masculine nominative, ending -e.) Ich fahre mit dem schnellsten Zug. (I am travelling with the fastest train — masculine dative, ending -en.) The article and the ending change with case; the superlative stem schnellst- stays the same.',
         ],
       },
@@ -56,8 +56,8 @@ export const chapter043: ChapterDefinition = {
         heading: 'Forming the stem: add -st, or -est after certain sounds',
         paragraphs: [
           'Most adjectives simply add -st to the comparative-free stem: schnell → schnellst-, klein → kleinst-, billig → billigst-.',
-          'Adjectives ending in -d, -t, -s, -ß, -z, or a sibilant sound (schön with its consonant cluster is fine, but words like laut, heiß, kurz are not) add -est instead, to keep the ending pronounceable: alt → ältest-, laut → lautest-, heiß → heißest-, kurz → kürzest-, intelligent → intelligentest-. Adjectives already ending in -sch also take -est: hübsch → hübschest-.',
-          'A small group of one-syllable adjectives with a, o, or u in the stem also add an umlaut in the superlative, exactly as they do in the comparative: alt → älter → ältest-, groß → größer → größt-, jung → jünger → jüngst-, kurz → kürzer → kürzest-.',
+          'Adjectives ending in -d, -t, -s, -ß, -x, or -z add -est instead, to keep the ending pronounceable: alt → ältest-, laut → lautest-, heiß → heißest-, kurz → kürzest-, intelligent → intelligentest-. Adjectives ending in -sch usually take -est too: hübsch → hübschest-.',
+          'A small group of one-syllable adjectives with a, o, or u in the stem also add an umlaut in the superlative, exactly as they do in the comparative: alt → älter → ältest-, jung → jünger → jüngst-, kurz → kürzer → kürzest-. groß is the one common exception to the -est rule: although it ends in -ß, its superlative is größt- (der größte, am größten), not größest-.',
         ],
       },
       {
@@ -99,7 +99,7 @@ export const chapter043: ChapterDefinition = {
             'Dieser Zug fährt am schnellsten.',
           ],
         ],
-        note: 'The attributive form always needs a definite article and agrees with the noun; the am ...-sten form is fixed and never takes an ending of its own.',
+        note: 'The attributive form usually takes the definite article (or a possessive: mein bester Freund) and agrees with the noun; the am ...-sten form is fixed and never takes an ending of its own.',
       },
       {
         id: 'ch43-table-02',
@@ -154,7 +154,7 @@ export const chapter043: ChapterDefinition = {
         english: 'In summer the days are the longest.',
         highlight: ['am längsten'],
         explanation:
-          'lang is a one-syllable adjective that adds an umlaut in the superlative: lang → länger → längst-; plus -est because the stem already ends in -ng, kept simple with -esten here for pronounceability (längsten).',
+          'lang is a one-syllable adjective that adds an umlaut in the superlative: lang → länger → längst-. It takes plain -st, not -est, because -ng is not one of the -d/-t/-s/-ß/-x/-z endings: am längsten.',
       },
       {
         german: 'Das ist die beste Idee, die ich je gehört habe.',
@@ -244,8 +244,8 @@ export const chapter043: ChapterDefinition = {
       },
     ],
     remember: [
-      'Two shapes for one superlative: am ...-sten (predicative/adverbial, never changes) versus der/die/das ...-ste (attributive, needs an article and a case ending).',
-      'Add -est instead of plain -st after d, t, s, ß, z, and sibilant/-sch endings: ältest-, lautest-, heißest-, kürzest-, hübschest-.',
+      'Two shapes for one superlative: am ...-sten (predicative/adverbial, never changes) versus der/die/das ...-ste (attributive, usually with the definite article or a possessive, and a case ending).',
+      'Add -est instead of plain -st after d, t, s, ß, x, z, and -sch endings: ältest-, lautest-, heißest-, kürzest-, hübschest- (exception: groß → größt-).',
       'One-syllable adjectives with a, o, or u often add an umlaut in the superlative, matching their comparative: alt → ältest-, groß → größt-, jung → jüngst-.',
       'Memorise the irregulars: gut → best-, viel → meist-, hoch → höchst-, nah → nächst-, gern → liebst- (adverbial only).',
       'Use the superlative once you compare three or more things; von + dative or in + dative often names the group being compared.',
@@ -621,12 +621,12 @@ export const chapter043: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['superlative', 'attributive', 'dative'],
       instruction:
-        'Write the attributive superlative with its article. Capitalisation is not checked.',
+        'Write in + article (contracted where natural) and the attributive superlative. Capitalisation is not checked.',
       prompt:
-        'Er wohnt in ___ Stadtteil der Stadt. (teuer, der Stadtteil, masculine dative after in + dem)',
-      acceptedAnswers: ['dem teuersten', 'im teuersten'],
+        'Er wohnt ___ Stadtteil der Stadt. (in + teuer, der Stadtteil, masculine dative)',
+      acceptedAnswers: ['im teuersten', 'in dem teuersten'],
       answerMode: 'caseInsensitive',
-      placeholder: 'dem teuersten',
+      placeholder: 'im teuersten',
       maxLength: 25,
       explanation:
         'in + dem contracts to im; the masculine dative attributive ending is -en: (im) teuersten.',
@@ -1185,10 +1185,9 @@ export const chapter043: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['superlative', 'attributive', 'dative'],
       instruction:
-        'Write the attributive superlative with its article. Capitalisation is not checked.',
-      prompt:
-        'Wir wohnen in ___ Haus der Straße. (nah, das Haus, neuter dative after in + dem)',
-      acceptedAnswers: ['dem nächsten', 'im nächsten'],
+        'Write in + article (contracted where natural) and the attributive superlative. Capitalisation is not checked.',
+      prompt: 'Wir wohnen ___ Haus der Straße. (in + nah, das Haus, neuter dative)',
+      acceptedAnswers: ['im nächsten', 'in dem nächsten'],
       answerMode: 'caseInsensitive',
       placeholder: 'im nächsten',
       maxLength: 25,
@@ -1272,7 +1271,7 @@ export const chapter043: ChapterDefinition = {
         { id: 'p4', left: 'die Züge (plural)', right: 'die schnellsten Züge' },
       ],
       explanation:
-        'The attributive superlative always agrees in gender and number with the article/noun it precedes.',
+        'The attributive superlative agrees in gender, number, and case with the article and noun it belongs to.',
     },
     {
       id: 'ch43-ex-56',
@@ -1323,17 +1322,29 @@ export const chapter043: ChapterDefinition = {
         'Match each sentence context to the correct superlative construction it needs.',
       prompt: 'Match the context to the correct construction.',
       pairs: [
-        { id: 'p1', left: 'after sein, no following noun', right: 'am schnellsten' },
-        { id: 'p2', left: 'directly before a noun', right: 'das schnellste Auto' },
-        { id: 'p3', left: 'describing how a verb is done', right: 'am besten' },
+        {
+          id: 'p1',
+          left: 'Dieser Zug ist ___. (schnell, after sein, no noun)',
+          right: 'am schnellsten',
+        },
+        {
+          id: 'p2',
+          left: 'Das ist ___. (schnell, before the noun Auto)',
+          right: 'das schnellste Auto',
+        },
+        {
+          id: 'p3',
+          left: 'Sie singt ___. (gut, describing how she sings)',
+          right: 'am besten',
+        },
         {
           id: 'p4',
-          left: 'comparing three or more, before noun',
-          right: 'der schnellste von allen',
+          left: 'Von allen Zügen ist dieser ___. (schnell, noun Zug understood)',
+          right: 'der schnellste',
         },
       ],
       explanation:
-        'am ...-sten is fixed and never takes an article; der/die/das ...-ste always needs an article and agrees with the noun.',
+        'am ...-sten is fixed and never takes an article; der/die/das ...-ste takes an article and agrees with the noun, even when the noun is only understood (der schnellste [Zug]).',
     },
     {
       id: 'ch43-ex-59',
@@ -1365,10 +1376,18 @@ export const chapter043: ChapterDefinition = {
         'Match each sentence half to its correct completion naming the comparison group.',
       prompt: 'Match the sentence beginning to its correct ending.',
       pairs: [
-        { id: 'p1', left: 'Peter ist der größte', right: 'von den dreien.' },
-        { id: 'p2', left: 'Tom isst am meisten', right: 'von allen Brüdern.' },
-        { id: 'p3', left: 'Sie ist die jüngste Schülerin', right: 'in der Klasse.' },
-        { id: 'p4', left: 'Das Auto fährt am schnellsten', right: 'in der Familie.' },
+        {
+          id: 'p1',
+          left: 'Peter, Tom und Max sind Brüder. Peter ist der größte',
+          right: 'von den dreien.',
+        },
+        { id: 'p2', left: 'Lisa ist die jüngste Schülerin', right: 'in der Klasse.' },
+        { id: 'p3', left: 'Der Mount Everest ist der höchste Berg', right: 'der Welt.' },
+        {
+          id: 'p4',
+          left: 'Unser Auto fährt am schnellsten',
+          right: 'von allen Autos auf der Straße.',
+        },
       ],
       explanation:
         'von + dative or in + dative typically introduces the group of three or more being compared.',
@@ -1547,7 +1566,7 @@ export const chapter043: ChapterDefinition = {
       grammarFocus: ['error-correction', 'superlative', 'predicative-vs-attributive'],
       instruction: 'Click the token that contains the error.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Dieser', 'Zug', 'ist', 'der', 'schnellsten', '.'],
+      tokens: ['Dieser', 'Zug', 'ist', 'der', 'schnellsten.'],
       errorTokenIndex: 3,
       correction: 'am',
       explanation:
@@ -1562,7 +1581,7 @@ export const chapter043: ChapterDefinition = {
       grammarFocus: ['error-correction', 'superlative', 'predicative-vs-attributive'],
       instruction: 'Click the token that contains the error.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Das', 'ist', 'am', 'schnellste', 'Auto', '.'],
+      tokens: ['Das', 'ist', 'am', 'schnellste', 'Auto.'],
       errorTokenIndex: 2,
       correction: 'das',
       explanation:
@@ -1577,7 +1596,7 @@ export const chapter043: ChapterDefinition = {
       grammarFocus: ['error-correction', 'superlative', 'irregular'],
       instruction: 'Click the token that contains the error.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Das', 'ist', 'der', 'gutste', 'Film', '.'],
+      tokens: ['Das', 'ist', 'der', 'gutste', 'Film.'],
       errorTokenIndex: 3,
       correction: 'beste',
       explanation: 'gut is irregular: its superlative stem is best-, not gutst-.',
@@ -1591,7 +1610,7 @@ export const chapter043: ChapterDefinition = {
       grammarFocus: ['error-correction', 'superlative', 'irregular'],
       instruction: 'Click the token that contains the error.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Das', 'ist', 'der', 'höhste', 'Berg', 'Europas', '.'],
+      tokens: ['Das', 'ist', 'der', 'höhste', 'Berg', 'Europas.'],
       errorTokenIndex: 3,
       correction: 'höchste',
       explanation:
@@ -1606,7 +1625,7 @@ export const chapter043: ChapterDefinition = {
       grammarFocus: ['error-correction', 'superlative', 'spelling'],
       instruction: 'Click the token that contains the error.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Das', 'war', 'der', 'heißste', 'Tag', 'des', 'Jahres', '.'],
+      tokens: ['Das', 'war', 'der', 'heißste', 'Tag', 'des', 'Jahres.'],
       errorTokenIndex: 3,
       correction: 'heißeste',
       explanation:
@@ -1621,7 +1640,7 @@ export const chapter043: ChapterDefinition = {
       grammarFocus: ['error-correction', 'superlative', 'comparing-groups'],
       instruction: 'Click the token that contains the error.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Peter', 'ist', 'größer', 'in', 'der', 'Klasse', '.'],
+      tokens: ['Peter', 'ist', 'größer', 'in', 'der', 'Klasse.'],
       errorTokenIndex: 2,
       correction: 'am größten',
       explanation:
@@ -1636,7 +1655,7 @@ export const chapter043: ChapterDefinition = {
       grammarFocus: ['error-correction', 'superlative', 'umlaut'],
       instruction: 'Click the token that contains the error.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Sie', 'ist', 'die', 'jungste', 'Schülerin', 'der', 'Klasse', '.'],
+      tokens: ['Sie', 'ist', 'die', 'jungste', 'Schülerin', 'der', 'Klasse.'],
       errorTokenIndex: 3,
       correction: 'jüngste',
       explanation:
@@ -1651,9 +1670,9 @@ export const chapter043: ChapterDefinition = {
       grammarFocus: ['error-correction', 'superlative', 'irregular'],
       instruction: 'Click the token that contains the error.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Von', 'allen', 'Ländern', 'reist', 'sie', 'am', 'vielsten', '.'],
+      tokens: ['Von', 'allen', 'Ländern', 'reist', 'sie', 'am', 'vielsten.'],
       errorTokenIndex: 6,
-      correction: 'meisten',
+      correction: 'meisten.',
       explanation:
         'viel is irregular: viel → mehr → meist-; the correct adverbial form is am meisten, not am vielsten.',
     },
@@ -1666,7 +1685,7 @@ export const chapter043: ChapterDefinition = {
       grammarFocus: ['error-correction', 'superlative', 'irregular', 'attributive'],
       instruction: 'Click the token that contains the error.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Wir', 'wohnen', 'im', 'nahsten', 'Haus', 'zur', 'Schule', '.'],
+      tokens: ['Wir', 'wohnen', 'im', 'nahsten', 'Haus', 'zur', 'Schule.'],
       errorTokenIndex: 3,
       correction: 'nächsten',
       explanation:

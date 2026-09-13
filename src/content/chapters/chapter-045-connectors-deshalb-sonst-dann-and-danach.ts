@@ -127,7 +127,7 @@ export const chapter045: ChapterDefinition = {
         columns: ['Clause 1', 'Connector', 'Verb', 'Subject', 'Rest of clause 2'],
         rows: [
           ['Es regnet.', 'Deshalb', 'bleiben', 'wir', 'zu Hause.'],
-          ['Er lernt nicht.', 'Sonst', 'besteht', 'er', 'die Prüfung nicht.'],
+          ['Lern mehr!', 'Sonst', 'bestehst', 'du', 'die Prüfung nicht.'],
           ['Wir kochen.', 'Dann', 'essen', 'wir', 'zusammen.'],
           ['Wir essen.', 'Danach', 'gehen', 'wir', 'spazieren.'],
         ],
@@ -245,16 +245,16 @@ export const chapter045: ChapterDefinition = {
       },
       {
         incorrect: 'Ich habe keine Zeit, und deshalb ich kann nicht kommen.',
-        correct: 'Ich habe keine Zeit, deshalb kann ich nicht kommen.',
+        correct: 'Ich habe keine Zeit, und deshalb kann ich nicht kommen.',
         explanation:
-          'deshalb already functions as the connector and fills position 1 on its own; it should not be combined with und, and the verb kann must directly follow deshalb.',
+          'und itself does not take a position, but deshalb still fills position 1 of its clause, so the verb kann must directly follow deshalb. With or without und (Ich habe keine Zeit, deshalb kann ich nicht kommen.), the word order after deshalb is the same.',
       },
     ],
     remember: [
       'deshalb, sonst, dann, and danach are adverbial connectors, not conjunctions: each one occupies position 1 of its own clause.',
       'Because they take position 1, the verb moves to position 2 and the subject follows the verb: Connector + Verb + Subject.',
       'deshalb links cause and result; sonst warns of a negative consequence; dann and danach both mean "then," but dann can also express a conditional result while danach is strictly "after that" in time.',
-      'Separate the two main clauses with a comma or a full stop — both are correct; do not add und or aber before these connectors.',
+      'Separate the two main clauses with a comma or a full stop — both are correct. You can also add und before the connector (…, und deshalb kann ich nicht kommen); the verb still follows the connector directly.',
     ],
   },
   mastery: {
@@ -1093,18 +1093,17 @@ export const chapter045: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['deshalb', 'common-mistake', 'word-order'],
-      instruction:
-        'Choose the sentence that correctly follows the rule that deshalb is not combined with und.',
+      instruction: 'Choose the sentence with the correct word order after deshalb.',
       prompt: 'Ich habe keine Zeit. ___',
       options: [
-        { id: 'a', text: 'Ich habe keine Zeit, deshalb kann ich nicht kommen.' },
+        { id: 'a', text: 'Ich habe keine Zeit, und deshalb kann ich nicht kommen.' },
         { id: 'b', text: 'Ich habe keine Zeit, und deshalb ich kann nicht kommen.' },
-        { id: 'c', text: 'Ich habe keine Zeit, und deshalb kann ich nicht kommen.' },
+        { id: 'c', text: 'Ich habe keine Zeit, deshalb ich kann nicht kommen.' },
         { id: 'd', text: 'Ich habe keine Zeit deshalb ich kann nicht kommen.' },
       ],
       correctOptionId: 'a',
       explanation:
-        'deshalb already functions as the connector, so it should not be combined with und, and kann must directly follow deshalb.',
+        'und may stand before deshalb, but deshalb still fills position 1 of its clause, so kann must directly follow it and ich comes after the verb.',
     },
     {
       id: 'ch45-ex-41',
@@ -1840,7 +1839,7 @@ export const chapter045: ChapterDefinition = {
       pairs: [
         { id: 'p1', left: 'Es regnet. Deshalb', right: 'bleiben wir zu Hause.' },
         { id: 'p2', left: 'Beeil dich, sonst', right: 'verpassen wir den Bus.' },
-        { id: 'p3', left: 'Wir essen. Dann', right: 'gehen wir spazieren.' },
+        { id: 'p3', left: 'Hast du Hunger? Dann', right: 'iss doch ein Brot!' },
         { id: 'p4', left: 'Wir duschen. Danach', right: 'frühstücken wir.' },
       ],
       explanation:

@@ -50,6 +50,7 @@ export const chapter056: ChapterDefinition = {
           'The choice between the two sets follows one simple rule: if the reflexive pronoun is the only object in the sentence, it is accusative. If the sentence already has a separate accusative object, the reflexive pronoun moves into the dative instead — because a verb normally cannot have two accusative objects at once.',
           'Compare Ich wasche mich. (no other object — mich is accusative) with Ich wasche mir die Hände. (die Hände is now the accusative object, so the reflexive pronoun becomes dative — mir). The same pair of verb forms, waschen and mich/mir, changes case purely because a second object has appeared.',
           'A useful check: ask "what is being washed/brushed/combed?" If the answer is "myself" (no separate thing), use the accusative. If the answer is a specific thing — teeth, hands, a face, hair — that thing is the accusative object, and the reflexive pronoun must be dative.',
+          'One limit: this rule is about verbs that normally take an accusative object (waschen, putzen, kämmen, anziehen). A verb that always governs the dative, such as helfen, keeps its dative even when the reflexive pronoun is the only object: Ich helfe mir selbst. (I help myself.) Du schadest dir nur. (You are only harming yourself.)',
         ],
       },
       {
@@ -57,7 +58,7 @@ export const chapter056: ChapterDefinition = {
         heading: 'Body parts and personal items: the definite article, not a possessive',
         paragraphs: [
           "German has a whole family of everyday expressions built on this pattern: sich die Zähne putzen (to brush one's teeth), sich die Hände waschen (to wash one's hands), sich das Gesicht waschen (to wash one's face), and sich die Haare kämmen (to comb one's hair). In every case, the body part takes the accusative case with the definite article, not a possessive article.",
-          'Ich putze mir die Zähne. — not Ich putze meine Zähne mir, and not (usually) Ich putze mir meine Zähne. The dative reflexive pronoun mir already shows whose teeth are being brushed, so adding a possessive on top of it is redundant; German simply uses die Zähne, dem Kontext nach clearly "my" teeth.',
+          'Ich putze mir die Zähne. — not Ich putze meine Zähne mir, and not (usually) Ich putze mir meine Zähne. The dative reflexive pronoun mir already shows whose teeth are being brushed, so adding a possessive on top of it is redundant; German simply uses die Zähne, and the context makes clear they are "my" teeth.',
           'This pattern is extremely common in daily-routine descriptions: Sie wäscht sich das Gesicht. Wir putzen uns die Zähne vor dem Schlafen. Kämmst du dir die Haare? — the article stays definite in every person.',
         ],
       },
@@ -218,10 +219,10 @@ export const chapter056: ChapterDefinition = {
           'with no separate accusative object, the reflexive pronoun is itself the direct object and must be accusative (mich), not dative (mir).',
       },
       {
-        incorrect: 'Er kämmt ihm die Haare.',
+        incorrect: 'Er kämmt ihm die Haare. (meaning: his own hair)',
         correct: 'Er kämmt sich die Haare.',
         explanation:
-          'a reflexive action always uses the reflexive pronoun sich, never the ordinary personal pronoun ihm/ihn — even when there is also an accusative object.',
+          "when he combs his own hair, the action is reflexive and needs sich. Er kämmt ihm die Haare. is grammatical, but it means he combs another man's hair.",
       },
       {
         incorrect: 'Ich überlege mich, ob ich mitkomme.',
@@ -232,7 +233,7 @@ export const chapter056: ChapterDefinition = {
     ],
     remember: [
       'Two sets of reflexive pronouns: accusative (mich, dich, sich, uns, euch, sich, from Chapter 31) and dative (mir, dir, sich, uns, euch, sich, new here). Only ich and du actually change shape.',
-      'Rule: if the reflexive pronoun is the only object, it is accusative. If the sentence already has a separate accusative object — often a body part or item — the reflexive pronoun becomes dative.',
+      'Rule: if the reflexive pronoun is the only object, it is accusative. If the sentence already has a separate accusative object — often a body part or item — the reflexive pronoun becomes dative. Verbs that always take the dative (helfen) keep it: Ich helfe mir.',
       'With body parts and personal items, German uses the definite article (die Zähne, die Hände), not a possessive — the dative reflexive pronoun already shows whose they are.',
       'Verbs like sich (Dat.) etwas kaufen, wünschen, überlegen, and vorstellen always take the dative reflexive pronoun, because etwas is the accusative object.',
       'Word order: the reflexive pronoun comes right after the conjugated verb, before the accusative object — Ich putze mir die Zähne, not Ich putze die Zähne mir.',
@@ -405,7 +406,7 @@ export const chapter056: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['reflexive pronoun', 'dative', 'er', 'sich-wünschen'],
       instruction: 'Choose the correct reflexive pronoun.',
-      prompt: 'Er wünscht ___ ein neues Fahrrad zum Geburtstag.',
+      prompt: 'Er wünscht ___ ein neues Fahrrad zum Geburtstag. (for himself)',
       options: [
         { id: 'a', text: 'sich' },
         { id: 'b', text: 'ihm' },
@@ -414,7 +415,7 @@ export const chapter056: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'reflexive actions always use the reflexive pronoun sich, never the ordinary personal pronoun ihm/ihn — here required by the accusative object ein neues Fahrrad.',
+        'he wants the bike for himself, so the pronoun refers back to the subject and must be the reflexive sich (dative, because ein neues Fahrrad is the accusative object). ihm would refer to another person.',
     },
     {
       id: 'ch56-ex-10',
@@ -523,7 +524,7 @@ export const chapter056: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['case-choice', 'error-recognition'],
       instruction: 'Choose the grammatically correct sentence.',
-      prompt: 'Welcher Satz ist richtig?',
+      prompt: 'Welcher Satz ist richtig? (He combs his own hair.)',
       options: [
         { id: 'a', text: 'Er kämmt ihm die Haare.' },
         { id: 'b', text: 'Er kämmt ihn die Haare.' },
@@ -532,7 +533,7 @@ export const chapter056: ChapterDefinition = {
       ],
       correctOptionId: 'c',
       explanation:
-        'a reflexive action needs the reflexive pronoun sich, never the personal pronoun ihm/ihn or the possessive sein.',
+        "he combs his own hair, so the action is reflexive and needs sich. Er kämmt ihm die Haare. would mean he combs someone else's hair; ihn and sein are ungrammatical here.",
     },
     {
       id: 'ch56-ex-16',
@@ -739,13 +740,13 @@ export const chapter056: ChapterDefinition = {
       grammarFocus: ['reflexive-vs-personal-pronoun', 'error-correction'],
       instruction:
         'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
-      prompt: 'Falsch: Er kämmt ihm die Haare.',
+      prompt: 'Falsch (he is combing his own hair): Er kämmt ihm die Haare.',
       acceptedAnswers: ['Er kämmt sich die Haare.'],
       answerMode: 'normalized',
       placeholder: 'Er kämmt ...',
       maxLength: 40,
       explanation:
-        'a reflexive action always uses the reflexive pronoun sich, never the ordinary personal pronoun ihm.',
+        "he combs his own hair, so the action is reflexive and needs sich; ihm would mean another person's hair.",
     },
     {
       id: 'ch56-ex-29',
@@ -808,13 +809,14 @@ export const chapter056: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['case-choice', 'error-spotting', 'sich-wuenschen'],
-      instruction: 'Find the word that is wrong and give its correction.',
+      instruction:
+        'He wants the bike for himself. Find the word that is wrong and give its correction.',
       prompt: 'Er wünscht ihm ein neues Fahrrad.',
-      tokens: ['Er', 'wünscht', 'ihm', 'ein', 'neues', 'Fahrrad', '.'],
+      tokens: ['Er', 'wünscht', 'ihm', 'ein', 'neues', 'Fahrrad.'],
       errorTokenIndex: 2,
       correction: 'sich',
       explanation:
-        'a reflexive action always uses the reflexive pronoun sich, never the ordinary personal pronoun ihm — here required by the accusative object ein neues Fahrrad.',
+        'he wants the bike for himself, so the pronoun must be the reflexive sich (dative, because ein neues Fahrrad is the accusative object); ihm would refer to someone else.',
     },
     {
       id: 'ch56-ex-33',
@@ -1676,7 +1678,7 @@ export const chapter056: ChapterDefinition = {
       grammarFocus: ['case-choice', 'error-spotting', 'sich-die-zaehne-putzen'],
       instruction: 'Find the word that is wrong and give its correction.',
       prompt: 'Ich putze mich die Zähne.',
-      tokens: ['Ich', 'putze', 'mich', 'die', 'Zähne', '.'],
+      tokens: ['Ich', 'putze', 'mich', 'die', 'Zähne.'],
       errorTokenIndex: 2,
       correction: 'mir',
       explanation:
@@ -1689,13 +1691,14 @@ export const chapter056: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['reflexive-vs-personal-pronoun', 'error-spotting'],
-      instruction: 'Find the word that is wrong and give its correction.',
+      instruction:
+        'He is combing his own hair. Find the word that is wrong and give its correction.',
       prompt: 'Er kämmt ihm die Haare.',
-      tokens: ['Er', 'kämmt', 'ihm', 'die', 'Haare', '.'],
+      tokens: ['Er', 'kämmt', 'ihm', 'die', 'Haare.'],
       errorTokenIndex: 2,
       correction: 'sich',
       explanation:
-        'a reflexive action always uses the reflexive pronoun sich, never the ordinary personal pronoun ihm — even when there is also an accusative object.',
+        "he combs his own hair, so the action is reflexive and needs sich, even with the accusative object die Haare; ihm would mean another person's hair.",
     },
     {
       id: 'ch56-ex-83',
@@ -1706,7 +1709,7 @@ export const chapter056: ChapterDefinition = {
       grammarFocus: ['reflexive-agreement', 'error-spotting'],
       instruction: 'Find the word that is wrong and give its correction.',
       prompt: 'Wir waschen sich die Hände.',
-      tokens: ['Wir', 'waschen', 'sich', 'die', 'Hände', '.'],
+      tokens: ['Wir', 'waschen', 'sich', 'die', 'Hände.'],
       errorTokenIndex: 2,
       correction: 'uns',
       explanation:
@@ -1721,7 +1724,7 @@ export const chapter056: ChapterDefinition = {
       grammarFocus: ['case-choice', 'error-spotting', 'sich-ueberlegen'],
       instruction: 'Find the word that is wrong and give its correction.',
       prompt: 'Ich überlege mich, ob ich mitkomme.',
-      tokens: ['Ich', 'überlege', 'mich', 'ob', 'ich', 'mitkomme', '.'],
+      tokens: ['Ich', 'überlege', 'mich,', 'ob', 'ich', 'mitkomme.'],
       errorTokenIndex: 2,
       correction: 'mir',
       explanation:

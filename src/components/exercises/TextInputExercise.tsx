@@ -35,6 +35,9 @@ export function TextInputExercise({
     lang: 'de',
     spellCheck: false,
     autoComplete: 'off' as const,
+    // Phone keyboards capitalise the first letter, which German grading rejects.
+    autoCapitalize: 'none',
+    autoCorrect: 'off',
     'aria-describedby': showUmlautHelper ? helperId : undefined,
     placeholder: exercise.placeholder,
     maxLength: exercise.maxLength,

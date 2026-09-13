@@ -10,7 +10,7 @@ export const chapter067: ChapterDefinition = {
   section: 'verbs-3',
   objective:
     'Distinguish the three intransitive position verbs stehen, liegen, and sitzen (static state, answer wo?, dative with a two-way preposition, strong verbs conjugated with haben) from their transitive placement counterparts stellen, legen, and setzen (act of putting something somewhere, answer wohin?, accusative with a two-way preposition, weak verbs), and use all six to describe where furniture and objects are, or are being put, in a room.',
-  prerequisites: [35, 18, 17],
+  prerequisites: [36, 35, 18, 17],
   estimatedMinutes: 30,
   tags: [
     'position-verbs',
@@ -79,7 +79,7 @@ export const chapter067: ChapterDefinition = {
         paragraphs: [
           'The three position verbs are strong (irregular) verbs: stehen → stand → hat gestanden, liegen → lag → hat gelegen, sitzen → saß → hat gesessen. Their simple-past and participle forms must be memorized individually.',
           'The three placement verbs are weak (regular) verbs: stellen → stellte → hat gestellt, legen → legte → hat gelegt, setzen → setzte → hat gesetzt. They follow the ordinary weak pattern you already know, with no stem-vowel change and the regular -te/ge-…-t endings.',
-          'Despite describing a state rather than an obviously dynamic action, all three position verbs form their perfect tense with haben, not sein: Die Lampe hat auf dem Tisch gestanden, never "ist … gestanden". Do not let the static meaning tempt you into using sein.',
+          'Despite describing a state rather than an obviously dynamic action, all three position verbs form their perfect tense with haben, not sein: Die Lampe hat auf dem Tisch gestanden. In northern and central Germany this haben form is the norm, and it is the form this course uses; in southern Germany, Austria, and Switzerland "Die Lampe ist auf dem Tisch gestanden" (ist gesessen, ist gelegen) is equally standard, so do not treat it as a mistake. Do not let the static meaning tempt you into using sein.',
         ],
       },
       {
@@ -265,10 +265,10 @@ export const chapter067: ChapterDefinition = {
           'stehen is intransitive and can never take a direct object; to describe putting something somewhere, use the transitive verb stellen.',
       },
       {
-        incorrect: 'Das Buch steht auf dem Tisch.',
-        correct: 'Das Buch liegt auf dem Tisch.',
+        incorrect: 'Der Teppich steht auf dem Boden.',
+        correct: 'Der Teppich liegt auf dem Boden.',
         explanation:
-          'A book lies flat, so it uses liegen, not stehen; stehen is reserved for objects resting upright on a base.',
+          'A rug lies flat, so it uses liegen, not stehen; stehen is for objects resting upright on a base. (Some objects can do either: a book stands upright on a shelf but lies flat on a table.)',
       },
       {
         incorrect: 'Ich lege das Buch auf dem Tisch.',
@@ -282,10 +282,10 @@ export const chapter067: ChapterDefinition = {
         explanation: 'A chair rests upright on its legs, so it uses stehen, not liegen.',
       },
       {
-        incorrect: 'Die Lampe ist auf dem Tisch gestanden.',
-        correct: 'Die Lampe hat auf dem Tisch gestanden.',
+        incorrect: 'Das Kind hat auf dem Stuhl gesitzt.',
+        correct: 'Das Kind hat auf dem Stuhl gesessen.',
         explanation:
-          'stehen — like liegen and sitzen — forms its perfect tense with haben, not sein, even though it describes a state rather than a motion.',
+          'sitzen is a strong verb with the irregular participle gesessen, not a weak -t form. (In southern Germany, Austria, and Switzerland ist gesessen is also standard.)',
       },
       {
         incorrect: 'Setz dich auf dem Stuhl!',
@@ -570,13 +570,13 @@ export const chapter067: ChapterDefinition = {
       prompt: 'Die Bücher ___ lange im Regal gestanden. (Perfekt, sie/plural)',
       options: [
         { id: 'a', text: 'haben' },
-        { id: 'b', text: 'sind' },
+        { id: 'b', text: 'werden' },
         { id: 'c', text: 'hätten' },
         { id: 'd', text: 'wären' },
       ],
       correctOptionId: 'a',
       explanation:
-        'stehen forms its perfect tense with haben, even though it describes a static state rather than a motion.',
+        'stehen forms its perfect tense with haben, even though it describes a static state rather than a motion. (In southern Germany, Austria, and Switzerland sind … gestanden is also standard.)',
     },
     {
       id: 'ch67-ex-15',
@@ -835,13 +835,13 @@ export const chapter067: ChapterDefinition = {
       grammarFocus: ['error-correction', 'liegen', 'verb-choice'],
       instruction:
         'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
-      prompt: 'Falsch: Das Buch steht auf dem Tisch.',
-      acceptedAnswers: ['Das Buch liegt auf dem Tisch.'],
+      prompt: 'Falsch: Der Teppich steht auf dem Boden.',
+      acceptedAnswers: ['Der Teppich liegt auf dem Boden.'],
       answerMode: 'normalized',
-      placeholder: 'Das Buch ...',
+      placeholder: 'Der Teppich ...',
       maxLength: 45,
       explanation:
-        'A book lies flat, so it uses liegen, not stehen, which is reserved for objects resting upright on a base.',
+        'A rug lies flat, so it uses liegen, not stehen, which is reserved for objects resting upright on a base.',
     },
     {
       id: 'ch67-ex-31',
@@ -852,13 +852,16 @@ export const chapter067: ChapterDefinition = {
       grammarFocus: ['error-correction', 'perfekt', 'auxiliary', 'stehen'],
       instruction:
         'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
-      prompt: 'Falsch: Die Lampe ist auf dem Tisch gestanden.',
-      acceptedAnswers: ['Die Lampe hat auf dem Tisch gestanden.'],
+      prompt: 'Falsch: Das Kind hat auf dem Stuhl gesitzt.',
+      acceptedAnswers: [
+        'Das Kind hat auf dem Stuhl gesessen.',
+        'Das Kind ist auf dem Stuhl gesessen.',
+      ],
       answerMode: 'normalized',
-      placeholder: 'Die Lampe ...',
+      placeholder: 'Das Kind ...',
       maxLength: 55,
       explanation:
-        'stehen forms its perfect tense with haben, not sein, even though it describes a state rather than a motion.',
+        'sitzen is a strong verb: its participle is gesessen, not gesitzt. The usual auxiliary is haben (in southern Germany, Austria, and Switzerland ist gesessen is also standard).',
     },
     {
       id: 'ch67-ex-32',
@@ -1269,12 +1272,12 @@ export const chapter067: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['error-correction', 'verb-choice', 'object-orientation'],
       instruction: 'Click the word that contains an error.',
-      prompt: 'Das Buch steht auf dem Tisch.',
-      tokens: ['Das', 'Buch', 'steht', 'auf', 'dem', 'Tisch.'],
+      prompt: 'Der Teppich steht auf dem Boden.',
+      tokens: ['Der', 'Teppich', 'steht', 'auf', 'dem', 'Boden.'],
       errorTokenIndex: 2,
       correction: 'liegt',
       explanation:
-        'A book lies flat, so it uses liegen, not stehen, which is reserved for objects resting upright on a base.',
+        'A rug lies flat, so it uses liegen, not stehen, which is reserved for objects resting upright on a base.',
     },
     {
       id: 'ch67-ex-55',
@@ -1314,12 +1317,12 @@ export const chapter067: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['error-correction', 'perfekt', 'auxiliary'],
       instruction: 'Click the word that contains an error.',
-      prompt: 'Die Lampe ist auf dem Tisch gestanden.',
-      tokens: ['Die', 'Lampe', 'ist', 'auf', 'dem', 'Tisch', 'gestanden.'],
-      errorTokenIndex: 2,
-      correction: 'hat',
+      prompt: 'Die Lampe hat auf dem Tisch gestellt.',
+      tokens: ['Die', 'Lampe', 'hat', 'auf', 'dem', 'Tisch', 'gestellt.'],
+      errorTokenIndex: 6,
+      correction: 'gestanden',
       explanation:
-        'stehen — like liegen and sitzen — forms its perfect tense with haben, not sein, even though it describes a state rather than a motion.',
+        'The lamp is simply in a position (wo? + dative), so the intransitive position verb stehen is needed: hat … gestanden. stellen (gestellt) means putting something somewhere and needs a direct object.',
     },
     {
       id: 'ch67-ex-58',
@@ -1442,8 +1445,7 @@ export const chapter067: ChapterDefinition = {
         { id: 's3', text: 'das' },
         { id: 's4', text: 'Buch' },
         { id: 's5', text: 'auf' },
-        { id: 's6', text: 'das' },
-        { id: 's7', text: 'Sofa.' },
+        { id: 's6', text: 'das Sofa.' },
       ],
       explanation:
         'legen answers wohin?, so auf takes the accusative das Sofa: Ich lege das Buch auf das Sofa.',
@@ -1654,13 +1656,13 @@ export const chapter067: ChapterDefinition = {
       prompt: 'Wir ___ lange auf dem Sofa gesessen. (Perfekt, wir)',
       options: [
         { id: 'a', text: 'haben' },
-        { id: 'b', text: 'sind' },
+        { id: 'b', text: 'werden' },
         { id: 'c', text: 'hätten' },
         { id: 'd', text: 'wären' },
       ],
       correctOptionId: 'a',
       explanation:
-        'sitzen forms its perfect tense with haben, like the other two position verbs stehen and liegen.',
+        'sitzen forms its perfect tense with haben, like the other two position verbs stehen and liegen. (In southern Germany, Austria, and Switzerland sind … gesessen is also standard.)',
     },
     {
       id: 'ch67-ex-76',

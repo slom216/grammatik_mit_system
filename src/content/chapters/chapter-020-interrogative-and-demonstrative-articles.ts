@@ -58,9 +58,9 @@ export const chapter020: ChapterDefinition = {
       },
       {
         id: 'ch20-rule-05',
-        heading: 'A spoken alternative: was für ein',
+        heading: 'For contrast: was für ein',
         paragraphs: [
-          'In everyday spoken German, was für ein(e) is sometimes used instead of welcher when the question is more open — asking about the type or kind of thing rather than choosing from a specific, already-known set: Was für ein Auto hast du? (What kind of car do you have?) asks about the type of car, not which one out of a visible row of cars.',
+          'was für ein(e) is a different question, not a colloquial replacement for welcher: it asks about the type or kind of thing, while welcher asks which one out of a specific, already-known set. Was für ein Auto hast du? (What kind of car do you have?) asks about the type of car; Welches Auto ist deins? asks which one out of a visible row of cars.',
           'This chapter focuses on welcher and dieser; was für ein is only mentioned here for contrast and is not practiced in the exercises.',
         ],
       },
@@ -202,8 +202,8 @@ export const chapter020: ChapterDefinition = {
           'Rock is the direct object of kaufe, so the masculine accusative ending -en is required: diesen, not the nominative dieser.',
       },
       {
-        incorrect: 'Welches Auto ist neu? — Welches ist rot.',
-        correct: 'Welches Auto ist neu? — Dieses ist rot.',
+        incorrect: 'Welches Auto ist neu? — Welches da drüben.',
+        correct: 'Welches Auto ist neu? — Dieses da drüben.',
         explanation:
           'A statement pointing something out uses dieser, not welcher; welcher only asks a question, it does not answer one.',
       },
@@ -663,7 +663,10 @@ export const chapter020: ChapterDefinition = {
         "Complete the shop assistant's question and the customer's answer with the correct forms of welcher and dieser. Write both sentences separated by a space; capitalisation and punctuation are checked.",
       prompt:
         '___ Schuhe möchten Sie? (plural, direct object) – ___ hier, bitte. (plural, direct object)',
-      acceptedAnswers: ['Welche Schuhe möchten Sie? – Diese hier, bitte.'],
+      acceptedAnswers: [
+        'Welche Schuhe möchten Sie? – Diese hier, bitte.',
+        'Welche Schuhe möchten Sie? Diese hier, bitte.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Welche ... – Diese ...',
       maxLength: 80,
@@ -965,7 +968,10 @@ export const chapter020: ChapterDefinition = {
         "Complete the shop assistant's question and the customer's answer with the correct forms of welcher and dieser. Write both sentences separated by a space; capitalisation and punctuation are checked.",
       prompt:
         '___ Mantel möchten Sie? (masculine, direct object) – ___ hier, bitte. (masculine, direct object)',
-      acceptedAnswers: ['Welchen Mantel möchten Sie? – Diesen hier, bitte.'],
+      acceptedAnswers: [
+        'Welchen Mantel möchten Sie? – Diesen hier, bitte.',
+        'Welchen Mantel möchten Sie? Diesen hier, bitte.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Welchen ... – Diesen ...',
       maxLength: 80,
@@ -1189,12 +1195,16 @@ export const chapter020: ChapterDefinition = {
       prompt: 'Match the question with the matching answer.',
       pairs: [
         { id: 'ch20-ex53-p1', left: 'Welcher Rock gefällt dir?', right: 'Dieser hier.' },
-        { id: 'ch20-ex53-p2', left: 'Welche Jacke möchten Sie?', right: 'Diese hier.' },
+        {
+          id: 'ch20-ex53-p2',
+          left: 'Welche Jacke möchten Sie?',
+          right: 'Diese hier, die blaue.',
+        },
         { id: 'ch20-ex53-p3', left: 'Welches Hemd nimmst du?', right: 'Dieses hier.' },
         {
           id: 'ch20-ex53-p4',
           left: 'Welche Schuhe sind billiger?',
-          right: 'Diese hier, glaube ich.',
+          right: 'Diese hier, die schwarzen.',
         },
       ],
       explanation:
@@ -1244,7 +1254,7 @@ export const chapter020: ChapterDefinition = {
       grammarFocus: ['welcher', 'nominative', 'masculine', 'error-correction'],
       instruction: 'Find the token with the wrong der-word ending, and correct it.',
       prompt: 'Ein Kunde fragt im Geschäft nach einem Mantel. Etwas stimmt nicht.',
-      tokens: ['Welche', 'Mantel', 'gefällt', 'dir', '?'],
+      tokens: ['Welche', 'Mantel', 'gefällt', 'dir?'],
       errorTokenIndex: 0,
       correction: 'Welcher',
       explanation:
@@ -1259,7 +1269,7 @@ export const chapter020: ChapterDefinition = {
       grammarFocus: ['dieser', 'accusative', 'masculine', 'error-correction'],
       instruction: 'Find the token with the wrong der-word ending, and correct it.',
       prompt: 'Ein Kunde beschreibt, was er kauft. Etwas stimmt nicht.',
-      tokens: ['Ich', 'kaufe', 'dieser', 'Rock', '.'],
+      tokens: ['Ich', 'kaufe', 'dieser', 'Rock.'],
       errorTokenIndex: 2,
       correction: 'diesen',
       explanation:
@@ -1274,7 +1284,7 @@ export const chapter020: ChapterDefinition = {
       grammarFocus: ['welcher', 'nominative', 'feminine', 'error-correction'],
       instruction: 'Find the token with the wrong der-word ending, and correct it.',
       prompt: 'Eine Verkäuferin fragt nach der gewünschten Jacke. Etwas stimmt nicht.',
-      tokens: ['Welcher', 'Jacke', 'möchten', 'Sie', '?'],
+      tokens: ['Welcher', 'Jacke', 'möchten', 'Sie?'],
       errorTokenIndex: 0,
       correction: 'Welche',
       explanation:
@@ -1289,7 +1299,7 @@ export const chapter020: ChapterDefinition = {
       grammarFocus: ['dieser', 'nominative', 'masculine', 'error-correction'],
       instruction: 'Find the token with the wrong der-word ending, and correct it.',
       prompt: 'Ein Schüler stellt seinen Lehrer vor. Etwas stimmt nicht.',
-      tokens: ['Dieses', 'Mann', 'ist', 'mein', 'Lehrer', '.'],
+      tokens: ['Dieses', 'Mann', 'ist', 'mein', 'Lehrer.'],
       errorTokenIndex: 0,
       correction: 'Dieser',
       explanation:

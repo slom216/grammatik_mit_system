@@ -60,7 +60,7 @@ export const chapter053: ChapterDefinition = {
         heading: 'Compounds: hierher, dorthin, daher, dahin',
         paragraphs: [
           'hier, da, and dort combine with hin and her to build four very common compound adverbs that pack both a location and a direction into a single word: hierher (to here, toward the speaker), dorthin (to there, away from the speaker), daher (from there, toward the speaker), and dahin (to there, away from the speaker).',
-          "Kannst du bitte hierher kommen? (Can you please come here?) Wir fahren morgen dorthin, wo meine Großeltern wohnen. (We're driving there tomorrow, to where my grandparents live.) Notice that the second half of the compound, not the first, tells you the direction: hierher and daher both point toward the speaker because they end in -her, while dorthin and dahin both point away because they end in -hin.",
+          "Kannst du bitte hierher kommen? (Can you please come here?) Wir fahren morgen dorthin, wo meine Großeltern wohnen. (We're driving there tomorrow, to where my grandparents live.) Notice that the second half of the compound, not the first, tells you the direction: hierher and daher both point toward the speaker because they end in -her, while dorthin and dahin both point away because they end in -hin. One caution: daher in this local sense (from there) sounds rather old-fashioned today. Everyday German usually says von da or da … her instead (Da komme ich gerade her.), and daher itself most often means therefore.",
           'dahin and dorthin are close in meaning and often interchangeable; dahin leans on da (a place already established in the conversation), while dorthin leans on dort (a place understood as more clearly separate). Both are far more natural in everyday speech than a bare hin or her standing with no location word at all.',
         ],
       },
@@ -142,7 +142,7 @@ export const chapter053: ChapterDefinition = {
           [
             'daher',
             'da + her',
-            'from there (toward the speaker)',
+            'from there (toward the speaker); old-fashioned in this sense — today daher usually means "therefore"',
             'Er kommt genau daher.',
           ],
           [
@@ -292,7 +292,7 @@ export const chapter053: ChapterDefinition = {
     remember: [
       'hier = here (speaker\'s location); da = there (nearby or already mentioned, also "present" in da sein); dort = there (farther away, clearly separate).',
       'hin = away from the speaker; her = toward the speaker — both attach to verbs (hingehen, herkommen) and can split off to the end of a clause (Wo gehst du hin? / Wo kommst du her?).',
-      'Compounds fuse location and direction: hierher (to here), dorthin (to there), daher (from there, toward the speaker), dahin (to there, away from the speaker) — the ending -her or -hin always signals the direction.',
+      'Compounds fuse location and direction: hierher (to here), dorthin (to there), daher (from there, toward the speaker; in this sense old-fashioned, today mostly "therefore"), dahin (to there, away from the speaker) — the ending -her or -hin always signals the direction.',
       'drinnen/draußen and oben/unten describe pure location (wo?); add nach to express a destination (nach draußen, nach oben).',
       'Context — usually who is speaking and from where — decides hin vs. her: the same journey can be hin for one speaker and her for another.',
     ],
@@ -518,13 +518,12 @@ export const chapter053: ChapterDefinition = {
       grammarFocus: ['her', 'speaker-perspective', 'dialogue'],
       instruction:
         "Read the exchange, then choose the adverb that fits the speaker's perspective.",
-      prompt: 'Complete: "Kannst du bitte ___ kommen?"',
+      prompt: 'Mama means: "Can you please come here?"',
       dialogue: [
         { speaker: 'Mama', german: 'Ich bin im Garten.', english: 'I am in the garden.' },
         {
           speaker: 'Mama',
           german: 'Kannst du bitte ___ kommen?',
-          english: 'Can you please come here?',
         },
       ],
       options: [
@@ -546,7 +545,7 @@ export const chapter053: ChapterDefinition = {
       grammarFocus: ['hin', 'speaker-perspective', 'dialogue'],
       instruction:
         "Read the exchange, then choose the adverb that fits the speaker's perspective.",
-      prompt: 'Complete: "Okay, ich gehe gleich ___."',
+      prompt: 'Lisa means: "Okay, I will go there right away."',
       dialogue: [
         {
           speaker: 'Jonas',
@@ -556,7 +555,6 @@ export const chapter053: ChapterDefinition = {
         {
           speaker: 'Lisa',
           german: 'Okay, ich gehe gleich ___.',
-          english: 'Okay, I will go there right away.',
         },
       ],
       options: [
@@ -578,7 +576,7 @@ export const chapter053: ChapterDefinition = {
       grammarFocus: ['hierher', 'speaker-perspective', 'dialogue'],
       instruction:
         "Read the exchange, then choose the compound adverb that fits the speaker's perspective.",
-      prompt: 'Complete: "Komm doch ___, wir haben noch einen Platz frei!"',
+      prompt: 'Anna means: "Do come here, we still have a free seat!"',
       dialogue: [
         {
           speaker: 'Anna',
@@ -588,7 +586,6 @@ export const chapter053: ChapterDefinition = {
         {
           speaker: 'Anna',
           german: 'Komm doch ___, wir haben noch einen Platz frei!',
-          english: 'Do come here, we still have a free seat!',
         },
       ],
       options: [
@@ -610,7 +607,8 @@ export const chapter053: ChapterDefinition = {
       grammarFocus: ['dahin', 'wohin', 'relative-clause', 'dialogue'],
       instruction:
         'Read the exchange, then choose the compound adverb that fits the answer.',
-      prompt: 'Complete: "Der Zug fährt ___, wo die Messe stattfindet."',
+      prompt:
+        'Schaffner means: "The train goes there, to where the trade fair is taking place."',
       dialogue: [
         {
           speaker: 'Paul',
@@ -620,7 +618,6 @@ export const chapter053: ChapterDefinition = {
         {
           speaker: 'Schaffner',
           german: 'Der Zug fährt ___, wo die Messe stattfindet.',
-          english: 'The train goes there, to where the trade fair is taking place.',
         },
       ],
       options: [
@@ -642,7 +639,7 @@ export const chapter053: ChapterDefinition = {
       grammarFocus: ['draussen', 'direction-vs-location', 'dialogue'],
       instruction:
         'Read the exchange, then choose the phrase that correctly expresses movement.',
-      prompt: 'Complete: "Lass ihn doch ___ gehen!"',
+      prompt: 'Opa means: "Just let him go outside!"',
       dialogue: [
         {
           speaker: 'Opa',
@@ -652,7 +649,6 @@ export const chapter053: ChapterDefinition = {
         {
           speaker: 'Opa',
           german: 'Lass ihn doch ___ gehen!',
-          english: 'Just let him go outside!',
         },
       ],
       options: [
@@ -721,7 +717,7 @@ export const chapter053: ChapterDefinition = {
       grammarFocus: ['her', 'speaker-perspective', 'dialogue'],
       instruction:
         'Read the exchange and fill in the missing adverb. Capitalisation is not checked.',
-      prompt: 'Complete: "Komm doch ___, das Spiel fängt gleich an!"',
+      prompt: 'Tim means: "Come here, the game is about to start!"',
       dialogue: [
         {
           speaker: 'Tim',
@@ -731,7 +727,6 @@ export const chapter053: ChapterDefinition = {
         {
           speaker: 'Tim',
           german: 'Komm doch ___, das Spiel fängt gleich an!',
-          english: 'Come here, the game is about to start!',
         },
       ],
       acceptedAnswers: ['her'],
@@ -750,7 +745,7 @@ export const chapter053: ChapterDefinition = {
       grammarFocus: ['hin', 'speaker-perspective', 'dialogue'],
       instruction:
         'Read the exchange and fill in the missing adverb. Capitalisation is not checked.',
-      prompt: 'Complete: "Geh bitte schnell ___ und hol das Paket!"',
+      prompt: 'Frau Meier means: "Please go there quickly and get the package!"',
       dialogue: [
         {
           speaker: 'Frau Meier',
@@ -760,7 +755,6 @@ export const chapter053: ChapterDefinition = {
         {
           speaker: 'Frau Meier',
           german: 'Geh bitte schnell ___ und hol das Paket!',
-          english: 'Please go there quickly and get the package!',
         },
       ],
       acceptedAnswers: ['hin'],
@@ -873,7 +867,7 @@ export const chapter053: ChapterDefinition = {
       grammarFocus: ['hin', 'wohin-split', 'dialogue'],
       instruction:
         'Read the exchange and fill in the missing word. Capitalisation is not checked.',
-      prompt: 'Complete: "Wo gehst du denn ___?"',
+      prompt: 'Ben means: "So where are you going?"',
       dialogue: [
         {
           speaker: 'Nina',
@@ -883,7 +877,6 @@ export const chapter053: ChapterDefinition = {
         {
           speaker: 'Ben',
           german: 'Wo gehst du denn ___?',
-          english: 'So where are you going?',
         },
       ],
       acceptedAnswers: ['hin'],
@@ -902,7 +895,7 @@ export const chapter053: ChapterDefinition = {
       grammarFocus: ['her', 'woher-split', 'dialogue'],
       instruction:
         'Read the exchange and fill in the missing word. Capitalisation is not checked.',
-      prompt: 'Complete: "Wo kommen Sie gerade ___?"',
+      prompt: 'Chef means: "Where are you coming from right now?"',
       dialogue: [
         {
           speaker: 'Chef',
@@ -912,7 +905,6 @@ export const chapter053: ChapterDefinition = {
         {
           speaker: 'Chef',
           german: 'Wo kommen Sie gerade ___?',
-          english: 'Where are you coming from right now?',
         },
       ],
       acceptedAnswers: ['her'],
@@ -949,12 +941,7 @@ export const chapter053: ChapterDefinition = {
       instruction:
         'Write a complete sentence using the cues. Capitalisation is checked; no full stop is required.',
       prompt: 'du (Befehl) – herkommen – sofort (bitte, dass jemand zu dir kommt)',
-      acceptedAnswers: [
-        'Komm sofort her!',
-        'Komm sofort her',
-        'Komm her sofort!',
-        'Komm her sofort',
-      ],
+      acceptedAnswers: ['Komm sofort her!', 'Komm sofort her'],
       answerMode: 'normalized',
       placeholder: 'Komm sofort her!',
       maxLength: 40,
@@ -1009,7 +996,7 @@ export const chapter053: ChapterDefinition = {
       grammarFocus: ['herunter', 'speaker-perspective', 'dialogue'],
       instruction:
         "Read the exchange, then choose the compound that fits the speaker's perspective.",
-      prompt: 'Complete: "Kannst du mir das Buch bitte ___ bringen?"',
+      prompt: 'Papa means: "Can you please bring me the book down here?"',
       dialogue: [
         {
           speaker: 'Papa',
@@ -1019,7 +1006,6 @@ export const chapter053: ChapterDefinition = {
         {
           speaker: 'Papa',
           german: 'Kannst du mir das Buch bitte ___ bringen?',
-          english: 'Can you please bring me the book down here?',
         },
       ],
       options: [
@@ -1041,14 +1027,14 @@ export const chapter053: ChapterDefinition = {
       grammarFocus: ['herein', 'speaker-perspective', 'dialogue'],
       instruction:
         "Read the exchange, then choose the compound that fits the speaker's perspective.",
-      prompt: 'Complete: "Kommen Sie ___!"',
+      prompt: 'Frau Bauer means: "Come in!"',
       dialogue: [
         {
           speaker: 'Frau Bauer',
           german: 'Es hat geklopft.',
           english: 'There was a knock at the door.',
         },
-        { speaker: 'Frau Bauer', german: 'Kommen Sie ___!', english: 'Come in!' },
+        { speaker: 'Frau Bauer', german: 'Kommen Sie ___!' },
       ],
       options: [
         { id: 'a', text: 'herein' },
@@ -1069,7 +1055,7 @@ export const chapter053: ChapterDefinition = {
       grammarFocus: ['hinaus', 'speaker-perspective', 'dialogue'],
       instruction:
         "Read the exchange, then choose the compound that fits the speaker's perspective.",
-      prompt: 'Complete: "Geh ___, du Kater!"',
+      prompt: 'Frau Klein means: "Go out, tomcat!"',
       dialogue: [
         {
           speaker: 'Frau Klein',
@@ -1079,7 +1065,6 @@ export const chapter053: ChapterDefinition = {
         {
           speaker: 'Frau Klein',
           german: 'Geh ___, du Kater!',
-          english: 'Go out, tomcat!',
         },
       ],
       options: [
@@ -1118,7 +1103,8 @@ export const chapter053: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['links', 'rechts', 'direction', 'dialogue'],
       instruction: 'Read the exchange, then choose the correct adverb.',
-      prompt: 'Complete: "Gehen Sie hier ___, dann sehen Sie die Post schon."',
+      prompt:
+        'Passantin means: "Go left here, then you will already see the post office."',
       dialogue: [
         {
           speaker: 'Tourist',
@@ -1128,7 +1114,6 @@ export const chapter053: ChapterDefinition = {
         {
           speaker: 'Passantin',
           german: 'Gehen Sie hier ___, dann sehen Sie die Post schon.',
-          english: 'Go left here, then you will already see the post office.',
         },
       ],
       options: [
@@ -1268,7 +1253,7 @@ export const chapter053: ChapterDefinition = {
       grammarFocus: ['herunter', 'speaker-perspective', 'dialogue'],
       instruction:
         'Read the exchange and fill in the missing word. Capitalisation is not checked.',
-      prompt: 'Complete: "Kannst du das Handtuch bitte ___ bringen?"',
+      prompt: 'Mama means: "Can you please bring the towel down here?"',
       dialogue: [
         {
           speaker: 'Mama',
@@ -1278,7 +1263,6 @@ export const chapter053: ChapterDefinition = {
         {
           speaker: 'Mama',
           german: 'Kannst du das Handtuch bitte ___ bringen?',
-          english: 'Can you please bring the towel down here?',
         },
       ],
       acceptedAnswers: ['herunter'],
@@ -1297,7 +1281,7 @@ export const chapter053: ChapterDefinition = {
       grammarFocus: ['hinunter', 'speaker-perspective', 'dialogue'],
       instruction:
         'Read the exchange and fill in the missing word. Capitalisation is not checked.',
-      prompt: 'Complete: "Geh ruhig ___, ich warte hier oben."',
+      prompt: 'Sara means: "Go on down, I\'ll wait up here."',
       dialogue: [
         {
           speaker: 'Lukas',
@@ -1307,7 +1291,6 @@ export const chapter053: ChapterDefinition = {
         {
           speaker: 'Sara',
           german: 'Geh ruhig ___, ich warte hier oben.',
-          english: "Go on down, I'll wait up here.",
         },
       ],
       acceptedAnswers: ['hinunter'],
@@ -1326,7 +1309,7 @@ export const chapter053: ChapterDefinition = {
       grammarFocus: ['herauf', 'speaker-perspective', 'dialogue'],
       instruction:
         'Read the exchange and fill in the missing word. Capitalisation is not checked.',
-      prompt: 'Complete: "Kommt doch ___, hier ist Platz für alle!"',
+      prompt: 'Emma means: "Do come up, there is room for everyone!"',
       dialogue: [
         {
           speaker: 'Emma',
@@ -1336,7 +1319,6 @@ export const chapter053: ChapterDefinition = {
         {
           speaker: 'Emma',
           german: 'Kommt doch ___, hier ist Platz für alle!',
-          english: 'Do come up, there is room for everyone!',
         },
       ],
       acceptedAnswers: ['herauf'],
@@ -1355,7 +1337,7 @@ export const chapter053: ChapterDefinition = {
       grammarFocus: ['hinauf', 'direction', 'dialogue'],
       instruction:
         'Read the exchange and fill in the missing word. Capitalisation is not checked.',
-      prompt: 'Complete: "Dann müssen wir eben zu Fuß ___ gehen."',
+      prompt: 'Ben means: "Then we will just have to walk up on foot."',
       dialogue: [
         {
           speaker: 'Ben',
@@ -1365,7 +1347,6 @@ export const chapter053: ChapterDefinition = {
         {
           speaker: 'Ben',
           german: 'Dann müssen wir eben zu Fuß ___ gehen.',
-          english: 'Then we will just have to walk up on foot.',
         },
       ],
       acceptedAnswers: ['hinauf'],
@@ -1384,14 +1365,14 @@ export const chapter053: ChapterDefinition = {
       grammarFocus: ['herein', 'speaker-perspective', 'dialogue'],
       instruction:
         'Read the exchange and fill in the missing word. Capitalisation is not checked.',
-      prompt: 'Complete: "Kommen Sie ___!"',
+      prompt: 'Herr Fischer means: "Come in!"',
       dialogue: [
         {
           speaker: 'Herr Fischer',
           german: 'Es hat geklopft, mach bitte auf!',
           english: 'There was a knock, please open the door!',
         },
-        { speaker: 'Herr Fischer', german: 'Kommen Sie ___!', english: 'Come in!' },
+        { speaker: 'Herr Fischer', german: 'Kommen Sie ___!' },
       ],
       acceptedAnswers: ['herein'],
       answerMode: 'caseInsensitive',
@@ -1409,13 +1390,12 @@ export const chapter053: ChapterDefinition = {
       grammarFocus: ['hinein', 'direction', 'dialogue'],
       instruction:
         'Read the exchange and fill in the missing word. Capitalisation is not checked.',
-      prompt: 'Complete: "Geh ruhig schon ___, ich komme gleich nach."',
+      prompt: 'Nora means: "Go on in, I will follow in a moment."',
       dialogue: [
         { speaker: 'Nora', german: 'Die Tür steht offen.', english: 'The door is open.' },
         {
           speaker: 'Nora',
           german: 'Geh ruhig schon ___, ich komme gleich nach.',
-          english: 'Go on in, I will follow in a moment.',
         },
       ],
       acceptedAnswers: ['hinein'],
@@ -1434,7 +1414,7 @@ export const chapter053: ChapterDefinition = {
       grammarFocus: ['heraus', 'speaker-perspective', 'dialogue'],
       instruction:
         'Read the exchange and fill in the missing word. Capitalisation is not checked.',
-      prompt: 'Complete: "Komm bitte ___, wir warten schon auf dich!"',
+      prompt: 'Opa means: "Please come out, we are already waiting for you!"',
       dialogue: [
         {
           speaker: 'Opa',
@@ -1444,7 +1424,6 @@ export const chapter053: ChapterDefinition = {
         {
           speaker: 'Opa',
           german: 'Komm bitte ___, wir warten schon auf dich!',
-          english: 'Please come out, we are already waiting for you!',
         },
       ],
       acceptedAnswers: ['heraus'],
@@ -1463,7 +1442,7 @@ export const chapter053: ChapterDefinition = {
       grammarFocus: ['hinaus', 'direction', 'dialogue'],
       instruction:
         'Read the exchange and fill in the missing word. Capitalisation is not checked.',
-      prompt: 'Complete: "Lass ihn doch ___ in den Garten!"',
+      prompt: 'Frau Weber means: "Just let him out into the garden!"',
       dialogue: [
         {
           speaker: 'Frau Weber',
@@ -1473,7 +1452,6 @@ export const chapter053: ChapterDefinition = {
         {
           speaker: 'Frau Weber',
           german: 'Lass ihn doch ___ in den Garten!',
-          english: 'Just let him out into the garden!',
         },
       ],
       acceptedAnswers: ['hinaus'],
@@ -1511,12 +1489,7 @@ export const chapter053: ChapterDefinition = {
         'Write a complete sentence using the cues. Capitalisation is checked; no full stop is required.',
       prompt:
         'du (Bitte) – hereinkommen – sofort (du bittest jemanden, ins Zimmer zu kommen, in dem du selbst stehst)',
-      acceptedAnswers: [
-        'Komm sofort herein!',
-        'Komm sofort herein',
-        'Komm herein sofort!',
-        'Komm herein sofort',
-      ],
+      acceptedAnswers: ['Komm sofort herein!', 'Komm sofort herein'],
       answerMode: 'normalized',
       placeholder: 'Komm sofort herein!',
       maxLength: 40,
@@ -1827,7 +1800,7 @@ export const chapter053: ChapterDefinition = {
       instruction: 'Find the word that does not fit the meaning of the sentence.',
       prompt:
         'The speaker is asking the listener to approach, but one word points the wrong way.',
-      tokens: ['Komm', 'hin', 'zu', 'mir', '!'],
+      tokens: ['Komm', 'hin', 'zu', 'mir!'],
       errorTokenIndex: 1,
       correction: 'her',
       explanation:
@@ -1843,7 +1816,7 @@ export const chapter053: ChapterDefinition = {
       instruction: 'Find the word that does not fit the meaning of the sentence.',
       prompt:
         'The speaker is sending the listener away to ask someone else, but one word points the wrong way.',
-      tokens: ['Geh', 'her', 'und', 'frag', 'ihn', '!'],
+      tokens: ['Geh', 'her', 'und', 'frag', 'ihn!'],
       errorTokenIndex: 1,
       correction: 'hin',
       explanation:
@@ -1859,7 +1832,7 @@ export const chapter053: ChapterDefinition = {
       instruction: "Find the word that does not fit the speaker's perspective.",
       prompt:
         'The speaker is standing inside the house, welcoming guests toward their own location.',
-      tokens: ['Die', 'Gäste', 'kommen', 'hinein', 'in', 'das', 'Haus', '.'],
+      tokens: ['Die', 'Gäste', 'kommen', 'hinein', 'in', 'das', 'Haus.'],
       errorTokenIndex: 3,
       correction: 'herein',
       explanation:
@@ -1875,7 +1848,7 @@ export const chapter053: ChapterDefinition = {
       instruction: "Find the word that does not fit the speaker's perspective.",
       prompt:
         'The speaker describes their own movement away, into the cellar, with no one waiting there.',
-      tokens: ['Ich', 'gehe', 'jetzt', 'herein', 'in', 'den', 'Keller', '.'],
+      tokens: ['Ich', 'gehe', 'jetzt', 'herein', 'in', 'den', 'Keller.'],
       errorTokenIndex: 3,
       correction: 'hinein',
       explanation:
@@ -1890,9 +1863,9 @@ export const chapter053: ChapterDefinition = {
       grammarFocus: ['dahin', 'hierher', 'error-correction'],
       instruction: 'Find the word that does not fit the invitation.',
       prompt: 'The speaker is inviting the listener to join them at their own table.',
-      tokens: ['Komm', 'doch', 'dahin', ',', 'wir', 'sitzen', 'hier', '!'],
+      tokens: ['Komm', 'doch', 'dahin,', 'wir', 'sitzen', 'hier!'],
       errorTokenIndex: 2,
-      correction: 'hierher',
+      correction: 'hierher,',
       explanation:
         'dahin points away from the speaker, but the invitation is to join the speaker at "hier"; the toward-the-speaker compound hierher is needed instead.',
     },
@@ -1906,7 +1879,7 @@ export const chapter053: ChapterDefinition = {
       instruction: 'Find the word that cannot express movement by itself.',
       prompt:
         'The speaker wants the dog to be allowed to go outside, not merely to be located outside.',
-      tokens: ['Lass', 'ihn', 'draußen', 'gehen', '!'],
+      tokens: ['Lass', 'ihn', 'draußen', 'gehen!'],
       errorTokenIndex: 2,
       correction: 'nach draußen',
       explanation:
@@ -1922,9 +1895,9 @@ export const chapter053: ChapterDefinition = {
       instruction: 'Find the word that does not match the intended question.',
       prompt:
         'The speaker wants to ask where the listener is going (a destination), not where they are coming from.',
-      tokens: ['Wo', 'gehst', 'du', 'her', '?'],
+      tokens: ['Wo', 'gehst', 'du', 'her?'],
       errorTokenIndex: 3,
-      correction: 'hin',
+      correction: 'hin?',
       explanation:
         'her belongs to woher? (origin); asking about a destination with gehen requires the split form of wohin?, ending in hin.',
     },
@@ -1942,18 +1915,16 @@ export const chapter053: ChapterDefinition = {
         'Der',
         'Keller',
         'ist',
-        'oben',
-        ',',
+        'oben,',
         'und',
         'das',
         'Dachgeschoss',
         'ist',
         'ganz',
-        'hoch',
-        '.',
+        'hoch.',
       ],
       errorTokenIndex: 3,
-      correction: 'unten',
+      correction: 'unten,',
       explanation:
         "A cellar (Keller) is normally below ground level, so unten is correct, not oben, which contradicts the sentence's own comparison with the attic.",
     },

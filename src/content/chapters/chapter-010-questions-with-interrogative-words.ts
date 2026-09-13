@@ -15,7 +15,7 @@ export const chapter010: ChapterDefinition = {
   tags: ['questions', 'w-fragen', 'word-order', 'wo-wohin-woher'],
   explanation: {
     introduction: [
-      'A W-question (W-Frage) starts with a question word — most of them begin with the letter w: wer, was, wo, wohin, woher, wann, wie, warum. The odd one out, welcher, does not start with w but behaves the same way. A W-question asks for a specific piece of missing information, not a simple yes or no.',
+      'A W-question (W-Frage) starts with a question word — they all begin with the letter w: wer, was, wo, wohin, woher, wann, wie, warum, welcher. welcher is special because its ending changes with the noun that follows it. A W-question asks for a specific piece of missing information, not a simple yes or no.',
       'This chapter shows you which question word fits which kind of answer — a person, a thing, a place, a time, a manner, a reason, a direction, an origin, or a choice — and how to build the question itself: which word comes first, and where the verb goes.',
     ],
     rules: [
@@ -69,7 +69,7 @@ export const chapter010: ChapterDefinition = {
     tables: [
       {
         id: 'ch10-table-01',
-        title: 'The nine question words',
+        title: 'Nine core question words',
         columns: ['Question word', 'Meaning', 'Asks for'],
         rows: [
           ['wer', 'who', 'a person (subject)'],
@@ -200,7 +200,7 @@ export const chapter010: ChapterDefinition = {
       },
     ],
     remember: [
-      'The nine question words: wer, was, wo, wohin, woher, wann, wie, warum, welcher.',
+      'Nine core question words: wer, was, wo, wohin, woher, wann, wie, warum, welcher — plus others such as wie viel(e), which you also meet in this chapter.',
       'Question word first, finite verb second, and every W-question ends with a question mark.',
       'wo = a fixed location; wohin = a direction, the goal of a movement; woher = an origin, the starting point of a movement.',
       'Pick the question word by the kind of answer you expect: person → wer, thing → was, time → wann, manner → wie, reason → warum, choice → welcher.',
@@ -607,7 +607,10 @@ export const chapter010: ChapterDefinition = {
       instruction:
         'Write a complete question asking about the destination of the journey. Capitalisation and the question mark are checked.',
       prompt: 'du – fahren – diesen Sommer (Ziel der Reise)',
-      acceptedAnswers: ['Wohin fährst du diesen Sommer?'],
+      acceptedAnswers: [
+        'Wohin fährst du diesen Sommer?',
+        'Wo fährst du diesen Sommer hin?',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wohin ...',
       maxLength: 60,
@@ -624,7 +627,7 @@ export const chapter010: ChapterDefinition = {
       instruction:
         'Write a complete question asking about the origin of the person. Capitalisation and the question mark are checked.',
       prompt: 'sie – kommen (Herkunft)',
-      acceptedAnswers: ['Woher kommt sie?'],
+      acceptedAnswers: ['Woher kommt sie?', 'Wo kommt sie her?'],
       answerMode: 'normalized',
       placeholder: 'Woher ...',
       maxLength: 60,
@@ -870,12 +873,12 @@ export const chapter010: ChapterDefinition = {
       instruction: 'Write the missing question phrase. Capitalisation is not checked.',
       prompt: '___ kostet der Kaffee? – Zwei Euro.',
       hint: 'Der Kaffee is one item with one price, not a countable plural.',
-      acceptedAnswers: ['wie viel'],
+      acceptedAnswers: ['wie viel', 'was'],
       answerMode: 'caseInsensitive',
       placeholder: 'question phrase',
       maxLength: 15,
       explanation:
-        'Asking about a price or an uncountable amount uses wie viel, not the plural wie viele.',
+        'Asking about a price or an uncountable amount uses wie viel, not the plural wie viele. Was kostet der Kaffee? is equally common for prices.',
     },
     {
       id: 'ch10-ex-39',
@@ -974,7 +977,7 @@ export const chapter010: ChapterDefinition = {
           left: 'Woher kommst du ursprünglich?',
           right: 'Aus Kanada.',
         },
-        { id: 'ch10-m43-wann', left: 'Wann isst ihr zu Mittag?', right: 'Um zwölf Uhr.' },
+        { id: 'ch10-m43-wann', left: 'Wann esst ihr zu Mittag?', right: 'Um zwölf Uhr.' },
       ],
       explanation:
         'Each answer matches the kind of information its question word asks for: a person, a thing, a fixed place, a destination, an origin, and a time.',

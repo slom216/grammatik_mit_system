@@ -102,7 +102,7 @@ export const chapter026: ChapterDefinition = {
           ['Wir', 'haben', 'den ganzen Tag', 'gearbeitet.'],
           ['Hast', 'du', 'das Buch', 'gelesen?'],
         ],
-        note: 'The second row shows a question, where haben itself moves to position 1; the participle still stays at the very end.',
+        note: 'The third row shows a yes/no question, where haben itself moves to position 1; the participle still stays at the very end.',
       },
     ],
     examples: [
@@ -211,10 +211,10 @@ export const chapter026: ChapterDefinition = {
           'haben must agree with the subject; the form for du is hast, not habt (which belongs to ihr).',
       },
       {
-        incorrect: 'Ich habe nicht das Buch gekauft.',
-        correct: 'Ich habe das Buch gekauft nicht.',
+        incorrect: 'Ich habe das Buch gekauft nicht.',
+        correct: 'Ich habe das Buch nicht gekauft.',
         explanation:
-          'This shows the wrong placement in the opposite direction: nicht must stand directly before the participle, not right after haben and not after the participle.',
+          'The participle must close the clause, so nicht cannot follow it; for a whole-sentence negation nicht stands directly before the participle. (Ich habe nicht das Buch gekauft is only used for a contrast: …, sondern die Zeitung.)',
       },
       {
         incorrect: 'Habe ich das Buch gekauft du?',
@@ -651,7 +651,11 @@ export const chapter026: ChapterDefinition = {
       instruction:
         'Write a short answer to the question using the present perfect and the cue word. Capitalisation is checked; no full stop is required.',
       prompt: 'Was hast du gestern gemacht? (kochen)',
-      acceptedAnswers: ['Ich habe gekocht.', 'Ich habe gekocht'],
+      acceptedAnswers: [
+        'Ich habe gekocht.',
+        'Ich habe gestern gekocht.',
+        'Gestern habe ich gekocht.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich habe ...',
       maxLength: 30,
@@ -949,17 +953,14 @@ export const chapter026: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['perfekt', 'negation', 'sentence-building'],
       instruction:
-        'Write a complete negative sentence in the present perfect using the cue words and nicht. Capitalisation is checked; no full stop is required.',
-      prompt: 'wir – Kaffee – trinken (nicht)',
-      acceptedAnswers: [
-        'Wir haben Kaffee nicht getrunken.',
-        'Wir haben Kaffee nicht getrunken',
-      ],
+        'Write a complete negative sentence in the present perfect using the cue words and the correct form of kein. Capitalisation is checked; no full stop is required.',
+      prompt: 'wir – Kaffee – trinken (kein)',
+      acceptedAnswers: ['Wir haben keinen Kaffee getrunken.'],
       answerMode: 'normalized',
       placeholder: 'Wir haben ... nicht ...',
       maxLength: 45,
       explanation:
-        'nicht stands directly before the participle: Wir haben Kaffee nicht getrunken.',
+        'Kaffee has no article, so it is negated with kein (Kaffee is masculine accusative: keinen), and the participle still closes the sentence: Wir haben keinen Kaffee getrunken.',
     },
     {
       id: 'ch26-ex-41',
@@ -1257,7 +1258,8 @@ export const chapter026: ChapterDefinition = {
       grammarFocus: ['perfekt', 'verb-bracket'],
       instruction:
         'Fill in the conjugated haben and the past participle that close the verb bracket.',
-      prompt: 'Vervollständige den Satz: "Sie ___ viel Wasser ___." (trinken)',
+      prompt:
+        'Vervollständige den Satz: "Sie ___ viel Wasser ___." (sie = they; trinken)',
       templateParts: ['Sie ', ' viel Wasser ', '.'],
       slots: [
         { id: 'ch26-ex56-slot1', correctWord: 'haben' },

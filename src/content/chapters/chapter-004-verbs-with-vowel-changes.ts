@@ -39,14 +39,14 @@ export const chapter004: ChapterDefinition = {
           'a → ä: the stem vowel a gets an umlaut, as in fahren → du fährst, er fährt; also schlafen, tragen.',
         ],
         notes: [
-          'The endings themselves (-st for du, -t for er/sie/es) stay completely regular; only the vowel in the middle of the word changes.',
+          "The endings are the usual ones (-st for du, -t for er/sie/es). Where the stem ends in -s/-ß or -t, the normal spelling adjustments apply: du liest (not liesst), er hält and er tritt (no extra -t after the stem's t).",
         ],
       },
       {
         id: 'ch04-rule-03',
         heading: 'Verbs that never change',
         paragraphs: [
-          'Most German verbs are regular (weak verbs) and never change their stem vowel: machen → du machst, er macht; the same is true for lernen, wohnen, spielen, and many more.',
+          'Most German verbs keep their stem vowel in the present tense: machen → du machst, er macht; the same is true for lernen, wohnen, spielen, and many more. This includes all regular (weak) verbs and also many irregular ones, such as gehen (du gehst) and kommen (du kommst).',
           'There is no way to predict from the infinitive alone whether a verb changes its vowel — you learn each vowel-changing verb individually, usually together with its du- and er/sie/es-forms.',
         ],
       },
@@ -55,7 +55,7 @@ export const chapter004: ChapterDefinition = {
         heading: 'A few irregular details',
         paragraphs: [
           'nehmen not only changes its vowel but also drops the h before the ending: du nimmst, er nimmt (not nehmst/nehmt).',
-          'essen already ends in -ss- in the stem, so du and er/sie/es share the identical form isst; no extra -t is added.',
+          'essen has a stem ending in -ss, so the s of the du-ending -st merges with it: du isst (not issst). er/sie/es isst is the regular iss- + -t. The two forms therefore look identical.',
         ],
       },
     ],
@@ -178,7 +178,7 @@ export const chapter004: ChapterDefinition = {
           'ihr always uses the regular stem, not the du-form with its vowel change.',
       },
       {
-        incorrect: 'Du nehmst Zucker?',
+        incorrect: 'Nehmst du Zucker?',
         correct: 'Nimmst du Zucker?',
         explanation:
           'nehmen changes e→i for du, and the h is also dropped: nimmst, not nehmst.',
@@ -486,7 +486,7 @@ export const chapter004: ChapterDefinition = {
       grammarFocus: ['vowel-change', 'a-to-a-umlaut', 'er-sie-es-form'],
       instruction:
         'Write the correct form. Sie here means "she", singular. Capitalisation does not matter.',
-      prompt: 'Sie ___ (fahren) nach Hamburg.',
+      prompt: 'Sie (she) ___ (fahren) nach Hamburg.',
       hint: 'Sie = she, singular, not the formal "you" here.',
       acceptedAnswers: ['fährt'],
       answerMode: 'caseInsensitive',
@@ -582,7 +582,11 @@ export const chapter004: ChapterDefinition = {
       instruction:
         'Write the complete sentence. Capitalisation and punctuation are checked.',
       prompt: 'er – seine Eltern – am Wochenende – sehen',
-      acceptedAnswers: ['Er sieht seine Eltern am Wochenende.'],
+      acceptedAnswers: [
+        'Er sieht seine Eltern am Wochenende.',
+        'Er sieht am Wochenende seine Eltern.',
+        'Am Wochenende sieht er seine Eltern.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Er ...',
       maxLength: 60,
@@ -828,7 +832,7 @@ export const chapter004: ChapterDefinition = {
       grammarFocus: ['vowel-change', 'e-to-i', 'er-sie-es-form'],
       instruction:
         'Write the correct form. Sie here means "she", singular. Capitalisation does not matter.',
-      prompt: 'Sie ___ (treffen) ihre Freundin im Café.',
+      prompt: 'Sie (she) ___ (treffen) ihre Freundin im Café.',
       hint: 'Sie = she, singular, not the formal "you" here.',
       acceptedAnswers: ['trifft'],
       answerMode: 'caseInsensitive',
@@ -935,7 +939,7 @@ export const chapter004: ChapterDefinition = {
       grammarFocus: ['vowel-change', 'a-to-a-umlaut', 'word-order'],
       instruction:
         'Write the complete sentence. Capitalisation and punctuation are checked.',
-      prompt: 'sie – eine – neue – Jacke – tragen',
+      prompt: 'sie (she) – eine – neue – Jacke – tragen',
       acceptedAnswers: ['Sie trägt eine neue Jacke.'],
       answerMode: 'normalized',
       placeholder: 'Sie ...',
@@ -1026,7 +1030,7 @@ export const chapter004: ChapterDefinition = {
       prompt: 'Complete the sentence with the correct form of tragen.',
       templateParts: ['Sie ', ' heute einen roten Mantel.'],
       slots: [{ id: 'slot1', correctWord: 'trägt' }],
-      wordBank: ['trägt', 'tragt', 'tragen', 'trägst'],
+      wordBank: ['trägt', 'tragt', 'trage', 'trägst'],
       explanation:
         'tragen changes a→ä for er/sie/es: Sie trägt heute einen roten Mantel.',
     },

@@ -76,6 +76,8 @@ function nearMissNote(nearMiss: NearMiss | undefined): string | undefined {
       return `Almost — check the spelling of “${nearMiss.written}”.`;
     case 'wordForm':
       return `Close — check the form of “${nearMiss.written}”.`;
+    case 'punctuation':
+      return 'All the right words — check the punctuation.';
     default:
       return undefined;
   }

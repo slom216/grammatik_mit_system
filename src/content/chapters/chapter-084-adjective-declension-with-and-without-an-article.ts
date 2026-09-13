@@ -1326,8 +1326,8 @@ export const chapter084: ChapterDefinition = {
       instruction: 'Drag the correctly inflected word into the gap.',
       prompt: '___ Milch schmeckt gut. (kein Artikel, Nominativ, feminin)',
       templateParts: ['', ' Milch schmeckt gut.'],
-      slots: [{ id: 's1', correctWord: 'frische' }],
-      wordBank: ['frische', 'frischen', 'frischer', 'frisches'],
+      slots: [{ id: 's1', correctWord: 'Frische' }],
+      wordBank: ['Frische', 'Frischen', 'Frischer', 'Frisches'],
       explanation:
         'With no article, strong nominative feminine mirrors die, taking -e: Frische Milch.',
     },
@@ -1634,23 +1634,23 @@ export const chapter084: ChapterDefinition = {
         {
           id: 'p1',
           left: 'der, die, das, dieser, jeder, welcher',
-          right: 'Schwache Deklension',
+          right: 'Schwache Deklination',
         },
-        { id: 'p2', left: 'ein, kein, mein, dein, sein', right: 'Gemischte Deklension' },
+        { id: 'p2', left: 'ein, kein, mein, dein, sein', right: 'Gemischte Deklination' },
         {
           id: 'p3',
           left: 'kein Artikel vorhanden',
-          right: 'Starke Deklension (kein Artikel)',
+          right: 'Starke Deklination (kein Artikel)',
         },
         {
           id: 'p4',
           left: 'viele, einige, mehrere, zwei, drei',
-          right: 'Starke Deklension (unveränderliche Mengenwörter)',
+          right: 'Starke Deklination (unveränderliche Mengenwörter)',
         },
         {
           id: 'p5',
           left: 'alle, beide, sämtliche',
-          right: 'Schwache Deklension (wie Der-Wörter)',
+          right: 'Schwache Deklination (wie Der-Wörter)',
         },
       ],
       explanation:

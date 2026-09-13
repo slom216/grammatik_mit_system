@@ -52,10 +52,12 @@ export interface PlacementResult {
 /**
  * Scores a finished placement test.
  *
- * The recommendation is the first probe the learner did not pass: that is where
- * their knowledge runs out, so it is where the course should start. Passing
- * everything recommends the last chapter rather than claiming there is nothing
- * left to learn.
+ * The recommendation is the chapter right after the last probe passed before
+ * the first failure: that much has been shown, and everything after it is
+ * untested, so starting at the failed probe would skip chapters. A pass after
+ * an earlier failure is ignored — the gap before it was never shown. Failing
+ * the first probe recommends chapter 1; passing everything recommends the
+ * chapter after the last probe.
  */
 export function scorePlacement(
   chapters: readonly ChapterDefinition[],
@@ -94,12 +96,13 @@ export function scorePlacement(
       passed: entry.answered > 0 && entry.correct / entry.answered >= passRatio,
     }));
 
-  const firstFailed = probes.find((probe) => !probe.passed);
-  const lastProbe = probes[probes.length - 1];
+  const firstFailedIndex = probes.findIndex((probe) => !probe.passed);
+  const passedRun = firstFailedIndex === -1 ? probes : probes.slice(0, firstFailedIndex);
+  const lastPassed = passedRun[passedRun.length - 1];
 
   return {
     probes,
-    recommendedChapter: firstFailed?.chapterNumber ?? lastProbe?.chapterNumber ?? 1,
-    clearedEverything: probes.length > 0 && firstFailed === undefined,
+    recommendedChapter: lastPassed ? lastPassed.chapterNumber + 1 : 1,
+    clearedEverything: probes.length > 0 && firstFailedIndex === -1,
   };
 }

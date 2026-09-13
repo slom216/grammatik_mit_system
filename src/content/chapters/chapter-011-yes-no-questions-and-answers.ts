@@ -30,6 +30,7 @@ export const chapter011: ChapterDefinition = {
         notes: [
           'A yes/no question always ends with a question mark, just like a W-question.',
           'To turn any simple statement into a yes/no question, move the finite verb to the very front and put the subject right after it.',
+          'In everyday speech, a statement said with rising intonation can also work as a question (Du hast Zeit?), usually to check something or to show surprise. It is not wrong, but the standard yes/no question — and the one this chapter practises — puts the verb first.',
         ],
       },
       {
@@ -178,10 +179,10 @@ export const chapter011: ChapterDefinition = {
           'To contradict a negative question, German uses doch, not ja; ja would confusingly seem to confirm the negative.',
       },
       {
-        incorrect: 'Du hast Zeit?',
+        incorrect: 'Hast Zeit du?',
         correct: 'Hast du Zeit?',
         explanation:
-          'A yes/no question needs the finite verb in position 1, before the subject, not after it.',
+          'In a yes/no question the finite verb stands in position 1 and the subject follows immediately in position 2. (Du hast Zeit? with rising intonation is also possible in speech.)',
       },
       {
         incorrect: 'Ja ich komme mit.',
@@ -196,10 +197,10 @@ export const chapter011: ChapterDefinition = {
           'Since the fact is positive (you do eat meat) but the question was negative, the contradiction requires doch; nein would wrongly confirm that you eat no meat.',
       },
       {
-        incorrect: 'Du stehst früh auf?',
+        incorrect: 'Aufstehst du früh?',
         correct: 'Stehst du früh auf?',
         explanation:
-          'Even with separable verbs, the finite verb part moves to position 1 in a yes/no question; the prefix (auf) stays at the end.',
+          'With separable verbs, only the finite verb part moves to position 1 in a yes/no question; the prefix (auf) stays at the end.',
       },
     ],
     remember: [
@@ -227,7 +228,7 @@ export const chapter011: ChapterDefinition = {
       prompt: 'Which sentence is a correctly formed yes/no question?',
       options: [
         { id: 'a', text: 'Kommst du mit?' },
-        { id: 'b', text: 'Du kommst mit?' },
+        { id: 'b', text: 'Du mit kommst?' },
         { id: 'c', text: 'Mit du kommst?' },
         { id: 'd', text: 'Kommst mit du?' },
       ],
@@ -246,8 +247,8 @@ export const chapter011: ChapterDefinition = {
       prompt: 'Statement: "Sie wohnt in Hamburg." Which is the matching yes/no question?',
       options: [
         { id: 'a', text: 'Wohnt sie in Hamburg?' },
-        { id: 'b', text: 'Sie wohnt in Hamburg?' },
-        { id: 'c', text: 'In Hamburg wohnt sie?' },
+        { id: 'b', text: 'Wohnt in Hamburg sie?' },
+        { id: 'c', text: 'Sie in Hamburg wohnt?' },
         { id: 'd', text: 'Wo wohnt sie?' },
       ],
       correctOptionId: 'a',
@@ -554,7 +555,10 @@ export const chapter011: ChapterDefinition = {
         'Answer the question with a full sentence, using ja and the cue words. Capitalisation and punctuation are checked.',
       prompt:
         'Frage: Machst du heute deine Hausaufgaben? (ja – ich – machen – heute – meine Hausaufgaben)',
-      acceptedAnswers: ['Ja, ich mache heute meine Hausaufgaben.'],
+      acceptedAnswers: [
+        'Ja, ich mache heute meine Hausaufgaben.',
+        'Ja, heute mache ich meine Hausaufgaben.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ja, ...',
       maxLength: 60,
@@ -571,13 +575,16 @@ export const chapter011: ChapterDefinition = {
       instruction:
         'Answer the question with a full sentence, using nein and the cue words. Capitalisation and punctuation are checked.',
       prompt:
-        'Frage: Trinkst du Kaffee am Abend? (nein – ich – trinken – keinen Kaffee – am Abend)',
-      acceptedAnswers: ['Nein, ich trinke keinen Kaffee am Abend.'],
+        'Frage: Arbeitest du am Samstag? (nein – ich – arbeiten – am Samstag – nicht)',
+      acceptedAnswers: [
+        'Nein, ich arbeite am Samstag nicht.',
+        'Nein, am Samstag arbeite ich nicht.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Nein, ...',
       maxLength: 60,
       explanation:
-        'Nein confirms the positive question negatively; the sentence then states the negative fact with kein.',
+        'Nein rejects the positive question; the sentence then states the negative fact with nicht near the end: Nein, ich arbeite am Samstag nicht.',
     },
     {
       id: 'ch11-ex-21',
@@ -715,7 +722,7 @@ export const chapter011: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['yes-no-questions', 'negation', 'word-order'],
       instruction: 'Arrange the segments to form a correct negated yes/no question.',
-      prompt: 'Ask whether they are not buying bread today.',
+      prompt: 'Ask your friends (ihr): aren’t you buying any bread today?',
       segments: [
         { id: 'ch11-ex28-s1', text: 'Kauft' },
         { id: 'ch11-ex28-s2', text: 'ihr' },
@@ -887,8 +894,8 @@ export const chapter011: ChapterDefinition = {
       prompt: 'Which sentence is a correctly formed yes/no question?',
       options: [
         { id: 'a', text: 'Arbeitest du heute?' },
-        { id: 'b', text: 'Du arbeitest heute?' },
-        { id: 'c', text: 'Heute arbeitest du?' },
+        { id: 'b', text: 'Du heute arbeitest?' },
+        { id: 'c', text: 'Heute du arbeitest?' },
         { id: 'd', text: 'Arbeitest heute du?' },
       ],
       correctOptionId: 'a',
@@ -1016,17 +1023,16 @@ export const chapter011: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['yes-no-questions'],
       instruction: 'Choose the question that fits the given answer.',
-      prompt:
-        'Which question fits this answer? "Doch, ich spreche ein bisschen Französisch."',
+      prompt: 'Which question fits this answer? "Doch, ich komme heute mit."',
       options: [
-        { id: 'a', text: 'Sprichst du Französisch?' },
-        { id: 'b', text: 'Sprichst du kein Französisch?' },
-        { id: 'c', text: 'Warum sprichst du Französisch?' },
-        { id: 'd', text: 'Wer spricht Französisch?' },
+        { id: 'a', text: 'Kommst du heute mit?' },
+        { id: 'b', text: 'Kommst du heute nicht mit?' },
+        { id: 'c', text: 'Warum kommst du heute mit?' },
+        { id: 'd', text: 'Wer kommt heute mit?' },
       ],
       correctOptionId: 'b',
       explanation:
-        'doch only answers a negative question, so the question must be negative: Sprichst du kein Französisch?',
+        'doch only answers a negative question, so the question must be negative: Kommst du heute nicht mit?',
     },
     {
       id: 'ch11-ex-45',
@@ -1161,7 +1167,11 @@ export const chapter011: ChapterDefinition = {
         'Answer the question with a full sentence, using ja and the cue words. Capitalisation and punctuation are checked.',
       prompt:
         'Frage: Besuchst du deine Oma am Sonntag? (ja – ich – besuchen – meine Oma – am Sonntag)',
-      acceptedAnswers: ['Ja, ich besuche meine Oma am Sonntag.'],
+      acceptedAnswers: [
+        'Ja, ich besuche meine Oma am Sonntag.',
+        'Ja, ich besuche am Sonntag meine Oma.',
+        'Ja, am Sonntag besuche ich meine Oma.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ja, ...',
       maxLength: 60,
@@ -1177,13 +1187,14 @@ export const chapter011: ChapterDefinition = {
       grammarFocus: ['short-full-answers', 'ja-nein-doch'],
       instruction:
         'Answer the question with a full sentence, using nein and the cue words. Capitalisation and punctuation are checked.',
-      prompt: 'Frage: Isst du gern Fleisch? (nein – ich – essen – kein Fleisch)',
-      acceptedAnswers: ['Nein, ich esse kein Fleisch.'],
+      prompt:
+        'Frage: Spielst du gern Tennis? (nein – ich – spielen – nicht gern – Tennis)',
+      acceptedAnswers: ['Nein, ich spiele nicht gern Tennis.'],
       answerMode: 'normalized',
       placeholder: 'Nein, ...',
       maxLength: 50,
       explanation:
-        'Nein confirms the negative fact; the sentence then states it with kein before the noun Fleisch.',
+        'Nein rejects the positive question; the sentence then states the negative fact with nicht gern: Nein, ich spiele nicht gern Tennis.',
     },
     {
       id: 'ch11-ex-54',
@@ -1195,7 +1206,7 @@ export const chapter011: ChapterDefinition = {
       instruction:
         'Answer with a full sentence. Capitalisation and punctuation are checked.',
       prompt:
-        'Dein Kollege fragt: "Arbeitest du nicht heute Nachmittag?" Du arbeitest aber heute Nachmittag. Antworte mit einem vollständigen Satz.',
+        'Dein Kollege fragt: "Arbeitest du heute Nachmittag nicht?" Du arbeitest aber heute Nachmittag. Antworte mit einem vollständigen Satz.',
       acceptedAnswers: ['Doch, ich arbeite heute Nachmittag.'],
       answerMode: 'normalized',
       placeholder: 'Doch, ...',
@@ -1228,13 +1239,13 @@ export const chapter011: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['yes-no-questions', 'word-order', 'error-correction'],
       instruction:
-        'Find the token that breaks the yes/no question word order, and correct it.',
+        'Find the token with the wrong verb form in this yes/no question, and correct it.',
       prompt: 'Ein Lerner versucht eine Ja/Nein-Frage zu bilden. Etwas stimmt nicht.',
-      tokens: ['Du', 'kommst', 'heute', 'mit?'],
+      tokens: ['Kommt', 'du', 'heute', 'mit?'],
       errorTokenIndex: 0,
       correction: 'Kommst',
       explanation:
-        'A yes/no question needs the finite verb in position 1; the sentence should begin with Kommst, not the subject Du: Kommst du heute mit?',
+        'The verb in position 1 must still agree with the subject du, so it needs the ending -st: Kommst du heute mit?',
     },
     {
       id: 'ch11-ex-57',
@@ -1244,13 +1255,13 @@ export const chapter011: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['yes-no-questions', 'word-order', 'error-correction'],
       instruction:
-        'Find the token that breaks the yes/no question word order, and correct it.',
-      prompt: 'Ein Lerner versucht eine Ja/Nein-Frage zu bilden. Etwas stimmt nicht.',
-      tokens: ['Sie', 'wohnt', 'in', 'München?'],
+        'Find the token with the wrong verb form in this yes/no question, and correct it.',
+      prompt: 'Ein Lerner fragt, ob seine Kollegin in München wohnt. Etwas stimmt nicht.',
+      tokens: ['Wohnst', 'sie', 'in', 'München?'],
       errorTokenIndex: 0,
       correction: 'Wohnt',
       explanation:
-        'The finite verb wohnt must move to position 1, before the subject sie: Wohnt sie in München?',
+        'sie (she) takes the ending -t, even when the verb stands in position 1: Wohnt sie in München?',
     },
     {
       id: 'ch11-ex-58',
@@ -1276,14 +1287,14 @@ export const chapter011: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['yes-no-questions', 'word-order', 'error-correction'],
       instruction:
-        'Find the token that breaks the yes/no question word order, and correct it.',
+        'Find the token where the separable verb was not split, then check the corrected question.',
       prompt:
         'Ein Lerner versucht eine Ja/Nein-Frage mit Trennverb zu bilden. Etwas stimmt nicht.',
-      tokens: ['Du', 'stehst', 'früh', 'auf?'],
+      tokens: ['Aufstehst', 'du', 'morgen', 'früh?'],
       errorTokenIndex: 0,
-      correction: 'Stehst',
+      correction: 'Stehst du morgen früh auf?',
       explanation:
-        'Even with a separable verb, the finite part must move to position 1: Stehst du früh auf? The prefix auf stays at the end.',
+        'With a separable verb, only the finite part moves to position 1; the prefix auf goes to the end: Stehst du morgen früh auf?',
     },
     {
       id: 'ch11-ex-60',

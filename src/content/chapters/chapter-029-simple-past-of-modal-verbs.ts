@@ -146,8 +146,10 @@ export const chapter029: ChapterDefinition = {
           'ihr takes -tet: durftet, describing a permission that used to apply.',
       },
       {
-        german: 'Du solltest deine Hausaufgaben machen, bevor du spielst.',
-        english: 'You were supposed to do your homework before playing.',
+        german:
+          'Gestern solltest du deine Hausaufgaben machen, aber du hast lieber gespielt.',
+        english:
+          'Yesterday you were supposed to do your homework, but you played instead.',
         highlight: ['solltest'],
         explanation:
           'sollen becomes sollte in the past, describing an obligation set by someone else.',
@@ -1008,7 +1010,7 @@ export const chapter029: ChapterDefinition = {
       grammarFocus: ['simple-past', 'modal-verbs', 'muessen'],
       instruction:
         'Write the missing simple-past form of müssen. Capitalisation is not checked.',
-      prompt: 'Ihr ___ die Rechnung bezahlen, bevor ihr gegangen seid.',
+      prompt: 'Ihr ___ die Rechnung schon gestern bezahlen.',
       acceptedAnswers: ['musstet'],
       answerMode: 'caseInsensitive',
       placeholder: 'form of müssen',
@@ -1336,7 +1338,7 @@ export const chapter029: ChapterDefinition = {
       grammarFocus: ['simple-past', 'modal-verbs', 'error-correction', 'umlaut'],
       instruction: 'Find the token that is wrong and correct it.',
       prompt: 'Ich könnte gestern nicht kommen.',
-      tokens: ['Ich', 'könnte', 'gestern', 'nicht', 'kommen', '.'],
+      tokens: ['Ich', 'könnte', 'gestern', 'nicht', 'kommen.'],
       errorTokenIndex: 1,
       correction: 'konnte',
       explanation:
@@ -1356,7 +1358,7 @@ export const chapter029: ChapterDefinition = {
       ],
       instruction: 'Find the token that is wrong and correct it.',
       prompt: 'Er mussten gestern arbeiten.',
-      tokens: ['Er', 'mussten', 'gestern', 'arbeiten', '.'],
+      tokens: ['Er', 'mussten', 'gestern', 'arbeiten.'],
       errorTokenIndex: 1,
       correction: 'musste',
       explanation:
@@ -1376,7 +1378,7 @@ export const chapter029: ChapterDefinition = {
       ],
       instruction: 'Find the token that is wrong and correct it.',
       prompt: 'Wir wollte letztes Jahr verreisen.',
-      tokens: ['Wir', 'wollte', 'letztes', 'Jahr', 'verreisen', '.'],
+      tokens: ['Wir', 'wollte', 'letztes', 'Jahr', 'verreisen.'],
       errorTokenIndex: 1,
       correction: 'wollten',
       explanation:
@@ -1396,7 +1398,7 @@ export const chapter029: ChapterDefinition = {
       ],
       instruction: 'Find the token that is wrong and correct it.',
       prompt: 'Du durfte als Kind nicht fernsehen.',
-      tokens: ['Du', 'durfte', 'als', 'Kind', 'nicht', 'fernsehen', '.'],
+      tokens: ['Du', 'durfte', 'als', 'Kind', 'nicht', 'fernsehen.'],
       errorTokenIndex: 1,
       correction: 'durftest',
       explanation: 'du takes the ending -test: durftest, not the ich/er-form durfte.',
@@ -1415,7 +1417,7 @@ export const chapter029: ChapterDefinition = {
       ],
       instruction: 'Find the token that is wrong and correct it.',
       prompt: 'Ihr sollten pünktlich kommen.',
-      tokens: ['Ihr', 'sollten', 'pünktlich', 'kommen', '.'],
+      tokens: ['Ihr', 'sollten', 'pünktlich', 'kommen.'],
       errorTokenIndex: 1,
       correction: 'solltet',
       explanation: 'ihr takes the ending -tet: solltet, not the wir/sie-form sollten.',
@@ -1434,7 +1436,7 @@ export const chapter029: ChapterDefinition = {
       ],
       instruction: 'Find the token that is wrong and correct it.',
       prompt: 'Wir mochte diesen Film sehr.',
-      tokens: ['Wir', 'mochte', 'diesen', 'Film', 'sehr', '.'],
+      tokens: ['Wir', 'mochte', 'diesen', 'Film', 'sehr.'],
       errorTokenIndex: 1,
       correction: 'mochten',
       explanation:
@@ -1449,7 +1451,7 @@ export const chapter029: ChapterDefinition = {
       grammarFocus: ['simple-past', 'modal-verbs', 'error-correction', 'moegen'],
       instruction: 'Find the token that is wrong and correct it.',
       prompt: 'Ich mögte diesen Lehrer sehr.',
-      tokens: ['Ich', 'mögte', 'diesen', 'Lehrer', 'sehr', '.'],
+      tokens: ['Ich', 'mögte', 'diesen', 'Lehrer', 'sehr.'],
       errorTokenIndex: 1,
       correction: 'mochte',
       explanation:
@@ -1469,7 +1471,7 @@ export const chapter029: ChapterDefinition = {
       ],
       instruction: 'Find the token that is wrong and correct it.',
       prompt: 'Du sollte deine Hausaufgaben machen.',
-      tokens: ['Du', 'sollte', 'deine', 'Hausaufgaben', 'machen', '.'],
+      tokens: ['Du', 'sollte', 'deine', 'Hausaufgaben', 'machen.'],
       errorTokenIndex: 1,
       correction: 'solltest',
       explanation: 'du takes the ending -test: solltest, not the ich/er-form sollte.',
@@ -1484,7 +1486,7 @@ export const chapter029: ChapterDefinition = {
       instruction:
         'Context: Er hat es oft versucht, aber es ist ihm nicht gelungen. Find the token that is wrong given this context, and correct it.',
       prompt: 'Er durfte das Problem nicht lösen.',
-      tokens: ['Er', 'durfte', 'das', 'Problem', 'nicht', 'lösen', '.'],
+      tokens: ['Er', 'durfte', 'das', 'Problem', 'nicht', 'lösen.'],
       errorTokenIndex: 1,
       correction: 'konnte',
       explanation:
@@ -1503,12 +1505,12 @@ export const chapter029: ChapterDefinition = {
         'person-agreement',
       ],
       instruction: 'Find the token that is wrong and correct it.',
-      prompt: 'Sie sollte pünktlich am Bahnhof sein.',
-      tokens: ['Sie', 'sollte', 'pünktlich', 'am', 'Bahnhof', 'sein', '.'],
-      errorTokenIndex: 1,
+      prompt: 'Die Kinder sollte pünktlich am Bahnhof sein.',
+      tokens: ['Die', 'Kinder', 'sollte', 'pünktlich', 'am', 'Bahnhof', 'sein.'],
+      errorTokenIndex: 2,
       correction: 'sollten',
       explanation:
-        'Here sie refers to "they" (plural), so it takes the ending -ten: sollten, not the singular form sollte.',
+        'Die Kinder is plural (sie, they), so the verb takes the ending -ten: sollten, not the singular form sollte.',
     },
     {
       id: 'ch29-ex-71',
@@ -1519,7 +1521,7 @@ export const chapter029: ChapterDefinition = {
       grammarFocus: ['simple-past', 'modal-verbs', 'error-correction', 'tense'],
       instruction: 'Find the token that is wrong and correct it.',
       prompt: 'Ihr müsst gestern früh aufstehen.',
-      tokens: ['Ihr', 'müsst', 'gestern', 'früh', 'aufstehen', '.'],
+      tokens: ['Ihr', 'müsst', 'gestern', 'früh', 'aufstehen.'],
       errorTokenIndex: 1,
       correction: 'musstet',
       explanation:
@@ -1535,7 +1537,7 @@ export const chapter029: ChapterDefinition = {
       instruction:
         'Context: Trotz intensiven Übens hat es einfach nicht geklappt. Find the token that is wrong given this context, and correct it.',
       prompt: 'Ich sollte sehr gut schwimmen.',
-      tokens: ['Ich', 'sollte', 'sehr', 'gut', 'schwimmen', '.'],
+      tokens: ['Ich', 'sollte', 'sehr', 'gut', 'schwimmen.'],
       errorTokenIndex: 1,
       correction: 'konnte',
       explanation:

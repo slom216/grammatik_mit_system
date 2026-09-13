@@ -680,7 +680,7 @@ export const chapter051: ChapterDefinition = {
       grammarFocus: ['spelling-change', '-ung', 'dialogue'],
       instruction:
         'Read the exchange, then choose the word that correctly completes the second line.',
-      prompt: 'Complete: "Ja, die ___ der Geschichte ist wirklich mitreißend."',
+      prompt: 'Paul means: "Yes, the plot of the story is really gripping."',
       dialogue: [
         {
           speaker: 'Nina',
@@ -690,7 +690,6 @@ export const chapter051: ChapterDefinition = {
         {
           speaker: 'Paul',
           german: 'Ja, die ___ der Geschichte ist wirklich mitreißend.',
-          english: 'Yes, the plot of the story is really gripping.',
         },
       ],
       options: [
@@ -886,7 +885,7 @@ export const chapter051: ChapterDefinition = {
       instruction:
         'Correct the mistake. Write the full corrected word (with article). Capitalisation is checked.',
       prompt: 'Falsch: das Hauschen',
-      acceptedAnswers: ['das Häuschen'],
+      acceptedAnswers: ['das Häuschen', 'Das Häuschen'],
       answerMode: 'normalized',
       placeholder: 'das Häuschen',
       maxLength: 20,
@@ -1111,7 +1110,7 @@ export const chapter051: ChapterDefinition = {
       grammarFocus: ['adjective-suffixes', '-los', 'error-correction'],
       instruction: 'Click the token that contains the error.',
       prompt: '"The film was very hopeless and disappointing." Find the mistake.',
-      tokens: ['Der', 'Film', 'war', 'sehr', 'hoffnungslich', 'und', 'enttäuschend', '.'],
+      tokens: ['Der', 'Film', 'war', 'sehr', 'hoffnungslich', 'und', 'enttäuschend.'],
       errorTokenIndex: 4,
       correction: 'hoffnungslos',
       explanation:
@@ -1292,7 +1291,7 @@ export const chapter051: ChapterDefinition = {
       grammarFocus: ['noun-suffixes', '-in', 'gender', 'error-correction'],
       instruction: 'Click the token that contains the error.',
       prompt: '"My sister is a teacher by profession." Find the mistake.',
-      tokens: ['Meine', 'Schwester', 'ist', 'Lehrer', 'von', 'Beruf', '.'],
+      tokens: ['Meine', 'Schwester', 'ist', 'Lehrer', 'von', 'Beruf.'],
       errorTokenIndex: 3,
       correction: 'Lehrerin',
       explanation:
@@ -1307,9 +1306,9 @@ export const chapter051: ChapterDefinition = {
       grammarFocus: ['verb-prefixes', 'be-', 'participle', 'error-correction'],
       instruction: 'Click the token that contains the error.',
       prompt: '"He visited his grandma." Find the mistake.',
-      tokens: ['Er', 'hat', 'seine', 'Oma', 'gebesucht', '.'],
+      tokens: ['Er', 'hat', 'seine', 'Oma', 'gebesucht.'],
       errorTokenIndex: 4,
-      correction: 'besucht',
+      correction: 'besucht.',
       explanation:
         'be- is an inseparable prefix, so its past participle never adds ge-: besucht, not gebesucht.',
     },
@@ -1416,9 +1415,9 @@ export const chapter051: ChapterDefinition = {
       grammarFocus: ['verb-suffix', '-ieren', 'participle', 'error-correction'],
       instruction: 'Click the token that contains the error.',
       prompt: '"We organized the party well." Find the mistake.',
-      tokens: ['Wir', 'haben', 'die', 'Party', 'gut', 'georganisiert', '.'],
+      tokens: ['Wir', 'haben', 'die', 'Party', 'gut', 'georganisiert.'],
       errorTokenIndex: 5,
-      correction: 'organisiert',
+      correction: 'organisiert.',
       explanation:
         '-ieren verbs never take ge- in the past participle: organisiert, not georganisiert.',
     },
@@ -1431,9 +1430,9 @@ export const chapter051: ChapterDefinition = {
       grammarFocus: ['verb-suffix', '-ieren', 'participle', 'error-correction'],
       instruction: 'Click the token that contains the error.',
       prompt: '"He photographed the mountains." Find the mistake.',
-      tokens: ['Er', 'hat', 'die', 'Berge', 'gefotografiert', '.'],
+      tokens: ['Er', 'hat', 'die', 'Berge', 'gefotografiert.'],
       errorTokenIndex: 4,
-      correction: 'fotografiert',
+      correction: 'fotografiert.',
       explanation:
         '-ieren verbs never take ge- in the past participle: fotografiert, not gefotografiert.',
     },
@@ -1641,11 +1640,10 @@ export const chapter051: ChapterDefinition = {
         'und',
         'spricht',
         'fließend',
-        'Türkeiisch',
-        '.',
+        'Türkeiisch.',
       ],
       errorTokenIndex: 8,
-      correction: 'Türkisch',
+      correction: 'Türkisch.',
       explanation:
         'The correct derived form is (das) Türkisch, formed with -isch and dropping the ending -ei of Türkei, not "Türkeiisch".',
     },
@@ -1763,9 +1761,9 @@ export const chapter051: ChapterDefinition = {
       grammarFocus: ['verb-prefixes', 'be-', 'ver-', 'false-friends', 'error-correction'],
       instruction: 'Click the token that contains the error.',
       prompt: '"He visited his grandma every Sunday." Find the mistake.',
-      tokens: ['Er', 'hat', 'seine', 'Oma', 'jeden', 'Sonntag', 'versucht', '.'],
+      tokens: ['Er', 'hat', 'seine', 'Oma', 'jeden', 'Sonntag', 'versucht.'],
       errorTokenIndex: 6,
-      correction: 'besucht',
+      correction: 'besucht.',
       explanation:
         'versuchen means "to try", not "to visit"; besuchen is the correct verb built on suchen for visiting someone.',
     },

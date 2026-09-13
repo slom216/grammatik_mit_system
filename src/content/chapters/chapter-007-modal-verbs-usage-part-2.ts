@@ -9,7 +9,7 @@ export const chapter007: ChapterDefinition = {
   level: 'A1',
   section: 'verbs-1',
   objective:
-    'Use sollen to give advice and report expectations, use mögen and möchte correctly for likes and polite wishes, and tell nicht müssen and nicht dürfen apart when choosing the right modal verb for a social situation.',
+    'Use sollen to pass on instructions and expectations and solltest to give advice, use mögen and möchte correctly for likes and polite wishes, and tell nicht müssen and nicht dürfen apart when choosing the right modal verb for a social situation.',
   prerequisites: [6],
   estimatedMinutes: 25,
   tags: [
@@ -28,14 +28,15 @@ export const chapter007: ChapterDefinition = {
     rules: [
       {
         id: 'ch07-rule-01',
-        heading: 'sollen: advice and someone else’s expectation',
+        heading: 'sollen: someone else’s instruction, and solltest for advice',
         paragraphs: [
           'sollen expresses what is expected, recommended, or asked of you by someone else, by an authority, or by a situation — it does not describe a necessity you have decided on yourself.',
-          'Use sollen to give friendly advice: Du sollst mehr schlafen. (You should sleep more.) It is also the natural choice when you report what another person wants: Der Arzt sagt, ich soll weniger Kaffee trinken. (The doctor says I should drink less coffee.)',
+          'sollen is the natural choice when you pass on what another person wants or has told you to do: Der Arzt sagt, ich soll weniger Kaffee trinken. (The doctor says I should drink less coffee.) Du sollst sofort nach Hause kommen. (You are to come home at once — someone wants that.)',
+          'When you give your own friendly advice, German uses the form solltest (from sollen): Du solltest mehr schlafen. (You should sleep more.) Learn it as a fixed phrase for advice: du solltest, ihr solltet, Sie sollten. "Du sollst mehr schlafen" sounds like an order you are relaying, not a friendly tip.',
           'sollen is also common in questions that ask for instructions or offer to do something: Soll ich das Fenster öffnen? (Should I open the window?)',
         ],
         notes: [
-          'Contrast with müssen: müssen expresses a necessity that comes from objective circumstances or from your own conviction, while sollen points outward, to someone else’s expectation or to a piece of advice.',
+          'Contrast with müssen: müssen expresses a necessity that comes from objective circumstances or from your own conviction, while sollen points outward, to someone else’s instruction or expectation. For your own advice, use solltest.',
         ],
       },
       {
@@ -44,7 +45,7 @@ export const chapter007: ChapterDefinition = {
         paragraphs: [
           'mögen expresses a general liking or preference, most often together with a noun: Ich mag Musik. (I like music.) Ich mag keinen Regen. (I don’t like rain.)',
           'möchte comes historically from mögen, but today it works as its own polite way of saying "would like" — a soft wish or a polite request in the here and now, not a general statement about taste: Ich möchte einen Kaffee. (I would like a coffee.)',
-          'Use möchte, not mögen, when you want something right now or want to ask for something politely; use mögen for likes and dislikes in general, including with an infinitive only in fairly formal writing — everyday speech prefers möchte for wishes.',
+          'Use möchte, not mögen, when you want something right now or want to ask for something politely. Use mögen for general likes and dislikes, usually with a noun (Ich mag Katzen). mögen with an infinitive exists (Ich mag nicht tanzen) but is less common; to say that you would like to do something, use möchte (Ich möchte tanzen).',
         ],
       },
       {
@@ -64,8 +65,8 @@ export const chapter007: ChapterDefinition = {
         id: 'ch07-rule-04',
         heading: 'Choosing the right modal verb for the situation',
         paragraphs: [
-          'Each German modal verb carries its own social meaning, so choosing the right one changes how your sentence is understood: müssen = necessity or obligation, dürfen = permission (nicht dürfen = prohibition), sollen = advice or someone else’s expectation, wollen = firm intention or plan, mögen/möchten = liking or a polite wish.',
-          'When you want to advise someone, reach for sollen. When you want to state a rule or grant/deny permission, use dürfen (with or without nicht). When something is simply required, use müssen. When you are expressing a wish or ordering something politely, use möchte.',
+          'Each German modal verb carries its own social meaning, so choosing the right one changes how your sentence is understood: müssen = necessity or obligation, dürfen = permission (nicht dürfen = prohibition), sollen = someone else’s instruction or expectation (solltest = advice), wollen = firm intention or plan, mögen/möchten = liking or a polite wish.',
+          'When you pass on someone else’s instruction, reach for sollen; when you give your own advice, use solltest. When you want to state a rule or grant/deny permission, use dürfen (with or without nicht). When something is simply required, use müssen. When you are expressing a wish or ordering something politely, use möchte.',
           'Short two-line dialogues are a good test of this skill: if the reply reports what a doctor, teacher, or parent said, expect sollen; if it states a strict rule, expect müssen or nicht dürfen; if it states a firm, already-decided plan, expect wollen rather than the softer möchte.',
         ],
       },
@@ -205,10 +206,10 @@ export const chapter007: ChapterDefinition = {
           'nicht müssen only says that something is optional, not that it is forbidden. To express a prohibition, use nicht dürfen.',
       },
       {
-        incorrect: 'Du musst mehr Wasser trinken. (said gently, as friendly advice)',
-        correct: 'Du sollst mehr Wasser trinken.',
+        incorrect: 'Du sollst mehr Wasser trinken. (meant as your own friendly advice)',
+        correct: 'Du solltest mehr Wasser trinken.',
         explanation:
-          'müssen sounds like a strict, personal necessity or a command. Friendly advice or a recommendation from someone else is expressed with sollen instead.',
+          'Du sollst passes on someone else’s instruction and sounds like an order. For your own friendly advice, use solltest. (Du musst mehr Wasser trinken is also possible, but it sounds more insistent.)',
       },
       {
         incorrect: 'Ich mag ins Kino gehen.',
@@ -220,20 +221,20 @@ export const chapter007: ChapterDefinition = {
         incorrect: 'Ich möchtet einen Kaffee.',
         correct: 'Ich möchte einen Kaffee.',
         explanation:
-          'möchte does not take a -t ending in the ich-form; that ending belongs to the du- or ihr-form pattern of other verbs, not to ich möchte.',
+          'ich möchte ends in -e, like er/sie/es möchte. The ending -et belongs to ihr (ihr möchtet), and du takes -est (du möchtest).',
       },
       {
-        incorrect: 'Ich darf nicht heute arbeiten.',
+        incorrect: 'Ich nicht darf heute arbeiten.',
         correct: 'Ich darf heute nicht arbeiten.',
         explanation:
-          'nicht normally stands close to the end of the sentence, right before the part it negates (here, arbeiten), not directly after the modal verb.',
+          'The modal verb must stay in position 2, so nicht cannot stand before it. nicht normally goes near the end, right before the infinitive: Ich darf heute nicht arbeiten. (Ich darf nicht heute arbeiten is only used for a contrast: not today, but tomorrow.)',
       },
     ],
     remember: [
-      'sollen = advice or someone else’s expectation; müssen = necessity that comes from circumstances or your own conviction.',
+      'sollen = someone else’s instruction or expectation, solltest = your own advice; müssen = necessity that comes from circumstances or your own conviction.',
       'mögen + noun = a general liking; möchte = a polite "would like", used for a wish or request right now.',
       'nicht müssen = not required, it’s optional; nicht dürfen = not allowed, it’s forbidden — never mix these two up.',
-      'Match the modal verb to the social situation: sollen for advice, dürfen for permission or prohibition, müssen for obligation, mögen/möchten for preference and polite wishes.',
+      'Match the modal verb to the social situation: sollen for passing on instructions, solltest for advice, dürfen for permission or prohibition, müssen for obligation, mögen/möchten for preference and polite wishes.',
     ],
   },
   mastery: {
@@ -289,16 +290,16 @@ export const chapter007: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['sollen', 'advice'],
       instruction: 'Choose the modal verb that correctly completes the sentence.',
-      prompt: 'Der Arzt sagt: Sie ___ mehr Wasser trinken.',
+      prompt: 'Der Arzt sagt, ich ___ mehr Wasser trinken.',
       options: [
-        { id: 'a', text: 'sollen' },
-        { id: 'b', text: 'müssen' },
-        { id: 'c', text: 'dürfen' },
-        { id: 'd', text: 'mögen' },
+        { id: 'a', text: 'soll' },
+        { id: 'b', text: 'möchte' },
+        { id: 'c', text: 'darf' },
+        { id: 'd', text: 'mag' },
       ],
       correctOptionId: 'a',
       explanation:
-        'Reported advice from the doctor is expressed with sollen, not with the stronger müssen.',
+        'Passing on what the doctor told you is expressed with sollen: ich soll.',
     },
     {
       id: 'ch07-ex-04',
@@ -388,14 +389,14 @@ export const chapter007: ChapterDefinition = {
         'Read the short dialogue and choose the modal verb that fits B’s reply.',
       prompt: 'A: Ich habe Kopfschmerzen.\nB: Dann ___ du eine Pause machen.',
       options: [
-        { id: 'a', text: 'sollst' },
-        { id: 'b', text: 'musst' },
+        { id: 'a', text: 'solltest' },
+        { id: 'b', text: 'sollst' },
         { id: 'c', text: 'darfst' },
         { id: 'd', text: 'möchtest' },
       ],
       correctOptionId: 'a',
       explanation:
-        'Friendly advice in response to a complaint is expressed with sollen, not the stronger müssen.',
+        'B gives friendly advice, which is expressed with solltest. sollst would relay someone else’s instruction, and darfst / möchtest do not express advice.',
     },
     {
       id: 'ch07-ex-09',
@@ -553,13 +554,14 @@ export const chapter007: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['nicht-duerfen'],
       instruction:
-        'Write the missing modal verb. The rest of the sentence, including nicht, is already given.',
-      prompt: 'Alkohol ist hier verboten. Du ___ nicht Alkohol trinken.',
+        'Write the missing modal verb. The rest of the sentence, including keinen, is already given.',
+      prompt: 'Alkohol ist hier verboten. Du ___ keinen Alkohol trinken.',
       acceptedAnswers: ['darfst'],
       answerMode: 'caseInsensitive',
       placeholder: 'modal verb',
       maxLength: 15,
-      explanation: 'verboten (forbidden) is a prohibition, so nicht dürfen is required.',
+      explanation:
+        'verboten (forbidden) is a prohibition, so dürfen with a negation (keinen Alkohol) is required.',
     },
     {
       id: 'ch07-ex-18',
@@ -568,7 +570,8 @@ export const chapter007: ChapterDefinition = {
       type: 'textInput',
       level: 'controlled',
       grammarFocus: ['sollen', 'reported-instruction'],
-      instruction: 'Write the missing modal verb. Capitalisation is not checked.',
+      instruction:
+        'Write the modal verb that passes on someone else’s instruction. Capitalisation is not checked.',
       prompt: 'Die Lehrerin sagt, wir ___ die Hausaufgaben bis Montag fertig haben.',
       acceptedAnswers: ['sollen'],
       answerMode: 'caseInsensitive',
@@ -604,14 +607,14 @@ export const chapter007: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['sollen', 'advice', 'dialogue'],
       instruction:
-        'Write B’s reply as a complete sentence, advising A to sleep more. Use sollen.',
+        'Write B’s reply as a complete sentence, advising A to sleep more. Use the advice form of sollen (solltest).',
       prompt: 'A: Ich bin so müde.\nB: ___',
-      acceptedAnswers: ['Du sollst mehr schlafen.'],
+      acceptedAnswers: ['Du solltest mehr schlafen.'],
       answerMode: 'normalized',
-      placeholder: 'Du sollst ...',
+      placeholder: 'Du solltest ...',
       maxLength: 60,
       explanation:
-        'Friendly advice in reply to a complaint is expressed with sollen: Du sollst mehr schlafen.',
+        'Your own friendly advice is expressed with solltest: Du solltest mehr schlafen. Du sollst would sound like an order passed on from someone else.',
     },
     {
       id: 'ch07-ex-21',
@@ -622,7 +625,10 @@ export const chapter007: ChapterDefinition = {
       grammarFocus: ['nicht-muessen', 'translation'],
       instruction: 'Translate the sentence into German, using nicht müssen.',
       prompt: 'You don’t have to come to the party.',
-      acceptedAnswers: ['Du musst nicht zur Party kommen.'],
+      acceptedAnswers: [
+        'Du musst nicht zur Party kommen.',
+        'Du musst nicht auf die Party kommen.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Du musst ...',
       maxLength: 60,
@@ -641,6 +647,7 @@ export const chapter007: ChapterDefinition = {
       acceptedAnswers: [
         'Kinder dürfen hier nicht allein schwimmen.',
         'Hier dürfen Kinder nicht allein schwimmen.',
+        'Kinder dürfen hier nicht alleine schwimmen.',
       ],
       answerMode: 'normalized',
       placeholder: 'Kinder dürfen ...',
@@ -696,13 +703,13 @@ export const chapter007: ChapterDefinition = {
       prompt: 'Die Lehrerin sagt: Ihr ___ eure Hausaufgaben immer pünktlich abgeben.',
       options: [
         { id: 'a', text: 'sollt' },
-        { id: 'b', text: 'müsst' },
+        { id: 'b', text: 'mögt' },
         { id: 'c', text: 'dürft' },
         { id: 'd', text: 'möchtet' },
       ],
       correctOptionId: 'a',
       explanation:
-        'A teacher’s expectation reported to the class is expressed with sollen (ihr sollt), not the stronger müssen.',
+        'The teacher states what she expects the class to do, which is expressed with sollen (ihr sollt).',
     },
     {
       id: 'ch07-ex-26',
@@ -766,8 +773,8 @@ export const chapter007: ChapterDefinition = {
       pairs: [
         {
           id: 'p1',
-          left: 'Der Trainer empfiehlt mehr Wasser trinken.',
-          right: 'Du sollst mehr Wasser trinken.',
+          left: 'Der Trainer sagt: mehr Wasser trinken!',
+          right: 'Der Trainer sagt, du sollst mehr Wasser trinken.',
         },
         {
           id: 'p2',
@@ -786,7 +793,7 @@ export const chapter007: ChapterDefinition = {
         },
       ],
       explanation:
-        'sollen fits advice, mögen fits a general liking, nicht dürfen fits a prohibition, and nicht müssen fits something that is no longer required.',
+        'sollen passes on the trainer’s instruction, mögen fits a general liking, nicht dürfen fits a prohibition, and nicht müssen fits something that is no longer required.',
     },
     {
       id: 'ch07-ex-30',
@@ -802,9 +809,9 @@ export const chapter007: ChapterDefinition = {
         'Prüfungsraum',
         'musst',
         'du',
-        'nicht',
         'dein',
         'Handy',
+        'nicht',
         'benutzen.',
       ],
       errorTokenIndex: 2,
@@ -852,13 +859,12 @@ export const chapter007: ChapterDefinition = {
       prompt: 'Laut Vertrag ___ ich jeden Monat bezahlen.',
       options: [
         { id: 'a', text: 'muss' },
-        { id: 'b', text: 'soll' },
+        { id: 'b', text: 'möchte' },
         { id: 'c', text: 'darf' },
         { id: 'd', text: 'mag' },
       ],
       correctOptionId: 'a',
-      explanation:
-        'A binding contract states a real necessity, which calls for müssen, not the softer sollen.',
+      explanation: 'A binding contract states a real necessity, which calls for müssen.',
     },
     {
       id: 'ch07-ex-34',
@@ -913,9 +919,9 @@ export const chapter007: ChapterDefinition = {
       prompt: 'Complete the polite offer with the correct word.',
       templateParts: ['', ' du auch einen Nachtisch?'],
       slots: [{ id: 'slot1', correctWord: 'Möchtest' }],
-      wordBank: ['Möchtest', 'Magst', 'Willst'],
+      wordBank: ['Möchtest', 'Sollst', 'Musst'],
       explanation:
-        'An offer made right now is a polite wish, expressed with möchte, not the general-liking mögen.',
+        'A polite offer made right now is expressed with möchte; sollst and musst would turn the offer into an instruction or an obligation.',
     },
     {
       id: 'ch07-ex-37',
@@ -937,7 +943,11 @@ export const chapter007: ChapterDefinition = {
           left: 'Du darfst nicht mitkommen.',
           right: 'You are not allowed to come along.',
         },
-        { id: 'p3', left: 'Du sollst mehr trinken.', right: 'You should drink more.' },
+        {
+          id: 'p3',
+          left: 'Du sollst mehr trinken.',
+          right: 'You are supposed to drink more.',
+        },
         {
           id: 'p4',
           left: 'Ich möchte ein Glas Wasser.',
@@ -945,7 +955,7 @@ export const chapter007: ChapterDefinition = {
         },
       ],
       explanation:
-        'nicht müssen means an option, nicht dürfen means a prohibition, sollen gives advice, and möchte states a polite wish.',
+        'nicht müssen means an option, nicht dürfen means a prohibition, sollen passes on someone else’s instruction, and möchte states a polite wish.',
     },
     {
       id: 'ch07-ex-38',
@@ -958,14 +968,14 @@ export const chapter007: ChapterDefinition = {
       prompt:
         'Your friend is stressed before an exam. Give friendly advice, telling them to relax.',
       options: [
-        { id: 'a', text: 'Du sollst dich entspannen.' },
-        { id: 'b', text: 'Du musst dich entspannen.' },
+        { id: 'a', text: 'Du solltest dich entspannen.' },
+        { id: 'b', text: 'Du sollst dich entspannen.' },
         { id: 'c', text: 'Du darfst dich entspannen.' },
         { id: 'd', text: 'Du magst dich entspannen.' },
       ],
       correctOptionId: 'a',
       explanation:
-        'Friendly advice is expressed with sollen; müssen would sound like a strict command.',
+        'Your own friendly advice is expressed with solltest. Du sollst would relay someone else’s order, darfst gives permission, and magst does not fit.',
     },
     {
       id: 'ch07-ex-39',
@@ -1068,7 +1078,7 @@ export const chapter007: ChapterDefinition = {
       prompt: 'Wie berichtet Ben weiter? Ich ___ weniger Fett essen.',
       options: [
         { id: 'a', text: 'soll' },
-        { id: 'b', text: 'muss' },
+        { id: 'b', text: 'möchte' },
         { id: 'c', text: 'darf' },
         { id: 'd', text: 'mag' },
       ],
@@ -1126,9 +1136,8 @@ export const chapter007: ChapterDefinition = {
       prompt: 'Complete the sentence with the correct modal verb.',
       templateParts: ['Der Arzt sagt, du ', ' mehr Obst essen.'],
       slots: [{ id: 'slot1', correctWord: 'sollst' }],
-      wordBank: ['sollst', 'musst', 'darfst'],
-      explanation:
-        'Reported advice from a doctor is expressed with sollen, not the stronger müssen.',
+      wordBank: ['sollst', 'magst', 'darfst'],
+      explanation: 'Passing on what the doctor said is expressed with sollen: du sollst.',
     },
     {
       id: 'ch07-ex-47',
@@ -1147,8 +1156,8 @@ export const chapter007: ChapterDefinition = {
         },
         {
           id: 'p2',
-          left: 'Die Eltern raten: mehr lesen.',
-          right: 'Du sollst mehr lesen.',
+          left: 'Die Eltern sagen: mehr lesen!',
+          right: 'Deine Eltern sagen, du sollst mehr lesen.',
         },
         {
           id: 'p3',
@@ -1162,7 +1171,7 @@ export const chapter007: ChapterDefinition = {
         },
       ],
       explanation:
-        'nicht dürfen fits a prohibition, sollen fits advice, mögen fits a general liking, and nicht müssen fits something no longer required.',
+        'nicht dürfen fits a prohibition, sollen passes on the parents’ instruction, mögen fits a general liking, and nicht müssen fits something no longer required.',
     },
     {
       id: 'ch07-ex-48',
@@ -1175,13 +1184,13 @@ export const chapter007: ChapterDefinition = {
       prompt: 'Der Chef sagt: Alle Mitarbeiter ___ pünktlich zur Arbeit kommen.',
       options: [
         { id: 'a', text: 'müssen' },
-        { id: 'b', text: 'sollen' },
+        { id: 'b', text: 'möchten' },
         { id: 'c', text: 'dürfen' },
         { id: 'd', text: 'mögen' },
       ],
       correctOptionId: 'a',
       explanation:
-        'A strict company rule is a real obligation, so müssen is correct; sollen would sound like a mere suggestion.',
+        'A strict company rule is a real obligation, so müssen is correct. (Der Chef sagt, alle sollen pünktlich kommen would also work as reported speech, but it is not an option here.)',
     },
     {
       id: 'ch07-ex-49',
@@ -1337,14 +1346,14 @@ export const chapter007: ChapterDefinition = {
       instruction: 'Match each modal expression to its core meaning.',
       prompt: 'Match the modal expressions with their core meaning.',
       pairs: [
-        { id: 'p1', left: 'sollen', right: 'advice or someone else’s expectation' },
+        { id: 'p1', left: 'sollen', right: 'someone else’s instruction or expectation' },
         { id: 'p2', left: 'mögen', right: 'a general liking' },
         { id: 'p3', left: 'möchte', right: 'a polite wish right now' },
         { id: 'p4', left: 'nicht dürfen', right: 'a prohibition' },
         { id: 'p5', left: 'nicht müssen', right: 'no obligation, it is optional' },
       ],
       explanation:
-        'Each modal expression carries a distinct social meaning, from advice and liking to prohibition and optionality.',
+        'Each modal expression carries a distinct social meaning, from passed-on instructions and liking to prohibition and optionality.',
     },
     {
       id: 'ch07-ex-58',
@@ -1468,7 +1477,11 @@ export const chapter007: ChapterDefinition = {
       grammarFocus: ['nicht-muessen', 'translation'],
       instruction: 'Translate the sentence into German, using nicht müssen.',
       prompt: 'We don’t have to clean the whole house today.',
-      acceptedAnswers: ['Wir müssen heute nicht das ganze Haus putzen.'],
+      acceptedAnswers: [
+        'Wir müssen heute nicht das ganze Haus putzen.',
+        'Heute müssen wir nicht das ganze Haus putzen.',
+        'Wir müssen das ganze Haus heute nicht putzen.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wir müssen ...',
       maxLength: 60,
@@ -1484,11 +1497,11 @@ export const chapter007: ChapterDefinition = {
       grammarFocus: ['sollen', 'muessen', 'error-correction'],
       instruction: 'Find the token with the error.',
       prompt: 'Find and correct the error in this sentence.',
-      tokens: ['Deine', 'Oma', 'sagt,', 'du', 'musst', 'mehr', 'Gemüse', 'essen.'],
+      tokens: ['Deine', 'Oma', 'sagt,', 'du', 'soll', 'mehr', 'Gemüse', 'essen.'],
       errorTokenIndex: 4,
       correction: 'sollst',
       explanation:
-        'Reported grandmotherly advice is friendly, not a strict command, so sollen (sollst) fits better than müssen.',
+        'Passing on what your grandmother said uses sollen, and with du the form is sollst, not soll (the ich/er-form).',
     },
     {
       id: 'ch07-ex-65',

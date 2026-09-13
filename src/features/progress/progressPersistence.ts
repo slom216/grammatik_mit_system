@@ -11,6 +11,8 @@ import {
 import { toDayKey } from './dayKey';
 
 export const PROGRESS_STORAGE_KEY = 'grammatik-mit-system:progress';
+/** Where unreadable progress is copied before anything can overwrite it. */
+export const PROGRESS_CORRUPT_BACKUP_KEY = `${PROGRESS_STORAGE_KEY}:corrupt-backup`;
 
 export interface StorageLike {
   getItem(key: string): string | null;
@@ -104,6 +106,12 @@ export const progressMigrations: Record<number, (state: unknown) => unknown> = {
   3: (state) => ({ ...(state as object), schemaVersion: 4, dayLog: {} }),
 };
 
+/** Progress from a newer app version: this code cannot read it and must not overwrite it. */
+export function isNewerProgressVersion(raw: unknown): boolean {
+  const version = (raw as { schemaVersion?: unknown } | null)?.schemaVersion;
+  return typeof version === 'number' && version > PROGRESS_SCHEMA_VERSION;
+}
+
 export function migrateProgress(raw: unknown): PersistedProgressV4 | null {
   if (raw === null || typeof raw !== 'object') return null;
 
@@ -160,21 +168,38 @@ function normalizeProgress(
 export function loadProgress(storage: StorageLike | null = getDefaultStorage()): {
   state: PersistedProgressV4;
   recovered: boolean;
+  /** Stored progress was written by a newer version; the caller must not save over it. */
+  newerVersion: boolean;
 } {
-  if (!storage) return { state: createEmptyProgress(), recovered: false };
+  const empty = { state: createEmptyProgress(), recovered: false, newerVersion: false };
+  if (!storage) return empty;
 
   const raw = storage.getItem(PROGRESS_STORAGE_KEY);
-  if (raw === null) return { state: createEmptyProgress(), recovered: false };
+  if (raw === null) return empty;
 
   try {
-    const migrated = migrateProgress(JSON.parse(raw));
-    if (migrated) return { state: migrated, recovered: false };
+    const parsed: unknown = JSON.parse(raw);
+    if (isNewerProgressVersion(parsed)) {
+      console.warn('[progress] stored progress is from a newer version; not saving.');
+      return { ...empty, newerVersion: true };
+    }
+    const migrated = migrateProgress(parsed);
+    if (migrated) return { ...empty, state: migrated };
   } catch {
     // fall through to the recovery path
   }
 
+  // Keep the unreadable original: the next save would otherwise destroy it. An
+  // existing copy is older and just as unreadable, so the first one wins.
+  try {
+    if (storage.getItem(PROGRESS_CORRUPT_BACKUP_KEY) === null) {
+      storage.setItem(PROGRESS_CORRUPT_BACKUP_KEY, raw);
+    }
+  } catch {
+    // Storage full or blocked: nothing more can be done here.
+  }
   console.warn('[progress] stored progress could not be read and was reset.');
-  return { state: createEmptyProgress(), recovered: true };
+  return { ...empty, recovered: true };
 }
 
 export function saveProgress(

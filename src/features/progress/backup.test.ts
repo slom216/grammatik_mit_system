@@ -74,6 +74,29 @@ describe('progress backup', () => {
     );
   });
 
+  it('upgrades an older backup the same way as stored progress', () => {
+    const { dayLog: _dayLog, ...v3Progress } = progress;
+    const backup = {
+      ...createBackup(progress, defaultSettings),
+      progress: { ...v3Progress, schemaVersion: 3 },
+    };
+    const parsed = parseBackup(JSON.stringify(backup));
+
+    expect(parsed.ok).toBe(true);
+    if (!parsed.ok) return;
+    expect(parsed.backup.progress).toEqual({ ...progress, dayLog: {} });
+  });
+
+  it('rejects values that would corrupt the statistics', () => {
+    const backup = createBackup(progress, defaultSettings);
+    const bad = {
+      ...backup,
+      progress: { ...backup.progress, answersByDay: { '9999-99-99': 1_000_000_000 } },
+    };
+    const parsed = parseBackup(JSON.stringify(bad));
+    expect(parsed.ok).toBe(false);
+  });
+
   it.each([
     ['not json at all', 'not valid JSON'],
     ['{"hello":"world"}', 'not exported from this app'],
@@ -90,6 +113,13 @@ describe('progress backup', () => {
         settings: defaultSettings,
       }),
       'incomplete or damaged',
+    ],
+    [
+      JSON.stringify({
+        ...createBackup(progress, defaultSettings),
+        progress: { ...progress, schemaVersion: 5 },
+      }),
+      'newer version',
     ],
   ])('rejects %s with a message that explains it', (text, expected) => {
     const parsed = parseBackup(text);

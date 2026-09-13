@@ -23,6 +23,7 @@ export function SpeakButton({ text, label }: SpeakButtonProps) {
   const pronunciationAudio = useSettingsStore((state) => state.pronunciationAudio);
   // Chrome fills its voice list asynchronously, so this is re-checked on change.
   const [available, setAvailable] = useState(hasGermanVoice);
+  const [failed, setFailed] = useState(false);
 
   useEffect(() => onVoicesChanged(() => setAvailable(hasGermanVoice())), []);
 
@@ -32,11 +33,16 @@ export function SpeakButton({ text, label }: SpeakButtonProps) {
     <button
       type="button"
       className="speak-button"
-      onClick={() => speakGerman(text)}
-      title="Listen"
+      onClick={() => speakGerman(text, () => setFailed(true))}
+      disabled={failed}
+      title={failed ? 'Audio is not working on this device' : 'Listen'}
     >
       <Icon name="speaker" />
-      <span className="visually-hidden">{label ?? `Listen to "${text}"`}</span>
+      <span className="visually-hidden">
+        {failed
+          ? 'Audio is not working on this device'
+          : (label ?? `Listen to "${text}"`)}
+      </span>
     </button>
   );
 }

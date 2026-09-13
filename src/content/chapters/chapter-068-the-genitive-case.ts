@@ -9,7 +9,7 @@ export const chapter068: ChapterDefinition = {
   level: 'B1',
   section: 'nouns-2',
   objective:
-    'Form the genitive case: choose the correct definite and indefinite genitive articles for each gender, add -s or -es to masculine and neuter singular nouns following the sibilant and hand-picked-monosyllabic rules, recognize that feminine and plural nouns never change their ending, form the genitive of proper names (including the apostrophe rule for sibilant-final names), and convert between the genitive and its everyday spoken alternative, von + dative.',
+    'Form the genitive case: choose the correct definite and indefinite genitive articles for each gender, add -s or -es to masculine and neuter singular nouns (-es after s, ß, x, z; -es or -s with most one-syllable nouns), recognize that feminine and plural nouns never change their ending, form the genitive of proper names (including the apostrophe rule for sibilant-final names), and convert between the genitive and its everyday spoken alternative, von + dative.',
   prerequisites: [15, 19],
   estimatedMinutes: 30,
   tags: [
@@ -53,8 +53,8 @@ export const chapter068: ChapterDefinition = {
         paragraphs: [
           'Alongside the article change, masculine and neuter singular nouns also add an ending in the genitive: either plain -s or the fuller -es. Most nouns take only the plain -s: des Autos, des Computers, des Gartens, des Zimmers.',
           'Nouns whose stem already ends in a sibilant sound — s, ß, x, z, or the cluster sch — take -es instead, because German cannot simply add a bare -s onto that kind of ending: des Hauses, des Flusses, des Tisches.',
-          'A small group of frequent monosyllabic nouns also takes -es even though they are not sibilant-final, purely as an inherited pattern that has to be learned as a list: des Mannes, des Kindes, des Tages, des Jahres, des Landes, des Buches, des Wortes, des Volkes, des Berges, des Waldes, des Briefes, des Sohnes, des Arztes, des Freundes, des Herbstes.',
-          'Every other masculine or neuter noun — in practice, almost any noun with two or more syllables that is not sibilant-final — takes only the plain -s: des Lehrers, des Fensters, des Bruders, des Onkels, des Chefs.',
+          'Most one-syllable nouns that are not sibilant-final can take either ending. The fuller -es is common, especially in writing, and it is the form this chapter uses: des Mannes, des Kindes, des Tages, des Jahres, des Landes, des Buches, des Wortes, des Berges, des Waldes, des Briefes, des Sohnes, des Arztes, des Freundes. The short -s is also correct: des Manns, des Kinds, des Tags, des Jahrs, des Buchs. Only after s, ß, x, or z is -es required.',
+          'Every other masculine or neuter noun — in practice, almost any noun with two or more syllables that is not sibilant-final — normally takes only the plain -s: des Lehrers, des Fensters, des Bruders, des Onkels, des Chefs.',
         ],
       },
       {
@@ -78,15 +78,15 @@ export const chapter068: ChapterDefinition = {
         id: 'ch68-rule-06',
         heading: 'A brief note on adjective endings in the genitive',
         paragraphs: [
-          'When an adjective stands before a genitive noun (after a der-word or ein-word), it takes its own genitive ending, which is always -en for masculine and neuter singular nouns, and -er for feminine singular and plural nouns: des kleinen Mannes, des großen Kindes, der kleinen Frau, meines guten Freundes.',
-          'This pattern is part of the complete adjective-declension system, which a later chapter covers in full. For now, it is enough to recognize -en and -er as the expected genitive adjective endings whenever you meet them.',
+          'When an adjective stands before a genitive noun (after a der-word or ein-word), it takes the genitive ending -en for every gender and for the plural: des kleinen Mannes, des großen Kindes, der kleinen Frau, der kleinen Kinder, meines guten Freundes. Only without any article does a feminine or plural adjective take -er (trotz großer Kälte).',
+          'This pattern is part of the complete adjective-declension system, which a later chapter covers in full. For now, it is enough to recognize -en as the expected genitive adjective ending after an article.',
         ],
       },
       {
         id: 'ch68-rule-07',
         heading: 'The everyday alternative: von + dative',
         paragraphs: [
-          'In spoken German — and increasingly in informal writing — the genitive is very often replaced by von + dative, especially with names and in casual conversation: das Auto von Anna instead of Annas Auto; der Hund von meinem Nachbarn instead of der Hund meines Nachbarn.',
+          'In spoken German — and increasingly in informal writing — the genitive is very often replaced by von + dative, especially with names and in casual conversation: das Auto von Anna instead of Annas Auto; der Hund von meinem Bruder instead of der Hund meines Bruders.',
           'The two constructions mean the same thing, but they are not always equally natural: with names, either is completely normal (Annas Auto and das Auto von Anna are both fine), while in formal writing, official documents, and fixed expressions the genitive remains the expected, more polished choice.',
           'To convert a von-phrase into the genitive: drop von, put the noun (or name) into the genitive, and place a genitive name directly before the thing possessed with no article, or keep a genitive common noun in its usual position after the thing possessed: die Farbe von dem Haus → die Farbe des Hauses; das Buch von Peter → Peters Buch.',
         ],
@@ -116,11 +116,11 @@ export const chapter068: ChapterDefinition = {
           ['das Haus', 'des Hauses', '-es', 'sibilant-final (s)'],
           ['der Fluss', 'des Flusses', '-es', 'sibilant-final (ss)'],
           ['der Tisch', 'des Tisches', '-es', 'sibilant-final (sch)'],
-          ['der Mann', 'des Mannes', '-es', 'hand-picked monosyllabic'],
-          ['das Jahr', 'des Jahres', '-es', 'hand-picked monosyllabic'],
-          ['das Kind', 'des Kindes', '-es', 'hand-picked monosyllabic'],
+          ['der Mann', 'des Mannes', '-es', 'monosyllabic (des Manns also correct)'],
+          ['das Jahr', 'des Jahres', '-es', 'monosyllabic (des Jahrs also correct)'],
+          ['das Kind', 'des Kindes', '-es', 'monosyllabic (des Kinds also correct)'],
         ],
-        note: 'Sibilant-final nouns and the hand-picked monosyllabic group take -es; every other masculine or neuter noun takes plain -s.',
+        note: 'Sibilant-final nouns must take -es; most one-syllable nouns take -es or -s (both correct); longer nouns normally take plain -s.',
         columnCases: [null, 'genitive', null, null],
       },
       {
@@ -156,11 +156,7 @@ export const chapter068: ChapterDefinition = {
         rows: [
           ['das Auto von Anna', 'Annas Auto', "Anna's car"],
           ['die Tasche von Julia', 'Julias Tasche', "Julia's bag"],
-          [
-            'der Hund von meinem Nachbarn',
-            'der Hund meines Nachbarn',
-            "my neighbor's dog",
-          ],
+          ['der Hund von meinem Bruder', 'der Hund meines Bruders', "my brother's dog"],
           ['das Büro von unserem Chef', 'das Büro unseres Chefs', "our boss's office"],
           ['die Farbe von dem Haus', 'die Farbe des Hauses', 'the color of the house'],
           ['der Roman von Max', "Max' Roman", "Max's novel"],
@@ -196,13 +192,13 @@ export const chapter068: ChapterDefinition = {
         english: 'The title of the book is very well-known.',
         highlight: ['des Buches'],
         explanation:
-          'Buch is one of the hand-picked monosyllabic nouns that takes -es in the genitive: des Buches.',
+          'Buch is a one-syllable noun, so it usually takes -es in the genitive: des Buches (des Buchs is also correct).',
       },
       {
         german: 'Das Ende des Jahres ist oft stressig.',
         english: 'The end of the year is often stressful.',
         highlight: ['des Jahres'],
-        explanation: 'Jahr is also in the hand-picked -es group: des Jahres.',
+        explanation: 'Jahr is also one syllable: des Jahres (des Jahrs is also correct).',
       },
       {
         german: 'Annas Auto steht vor dem Haus.',
@@ -219,11 +215,11 @@ export const chapter068: ChapterDefinition = {
           'Max already ends in a sibilant (x), so it takes only an apostrophe, not an extra -s.',
       },
       {
-        german: 'Der Hund meines Nachbarn bellt laut.',
-        english: "My neighbor's dog barks loudly.",
-        highlight: ['meines Nachbarn'],
+        german: 'Der Hund meines Bruders bellt laut.',
+        english: "My brother's dog barks loudly.",
+        highlight: ['meines Bruders'],
         explanation:
-          'meines is the masculine genitive possessive article; Nachbarn shows the genitive phrase in its everyday, natural word order.',
+          'meines is the masculine genitive possessive article, and Bruder, a two-syllable noun, takes plain -s: meines Bruders.',
       },
       {
         german: 'Das Auto von Anna ist rot.',
@@ -251,7 +247,7 @@ export const chapter068: ChapterDefinition = {
         english: "The doctor's son lives in Berlin.",
         highlight: ['des Arztes'],
         explanation:
-          'Arzt is in the hand-picked monosyllabic group, so it takes -es: des Arztes.',
+          'Arzt is a one-syllable noun, so it usually takes -es: des Arztes (des Arzts is also correct).',
       },
     ],
     commonMistakes: [
@@ -259,7 +255,7 @@ export const chapter068: ChapterDefinition = {
         incorrect: 'des Mann',
         correct: 'des Mannes',
         explanation:
-          'Mann is one of the hand-picked monosyllabic nouns that takes -es in the genitive, not just the article change.',
+          'A masculine noun needs a genitive ending as well as the article change: des Mannes (des Manns is also correct).',
       },
       {
         incorrect: 'der Auto',
@@ -289,12 +285,12 @@ export const chapter068: ChapterDefinition = {
         incorrect: 'des Kind',
         correct: 'des Kindes',
         explanation:
-          'Kind is one of the hand-picked monosyllabic nouns that takes -es, not just the bare noun after des.',
+          'A neuter noun needs a genitive ending, not just the bare noun after des: des Kindes (des Kinds is also correct).',
       },
     ],
     remember: [
       'Genitive definite articles: des (masc./neut.), der (fem./plural). Genitive indefinite articles: eines (masc./neut.), einer (fem.); possessive articles and kein follow the same pattern.',
-      'Masculine and neuter singular nouns add -s or -es: -es for sibilant-final nouns (Haus → Hauses) and a hand-picked group of monosyllabic nouns (Mann → Mannes, Kind → Kindes); every other noun takes plain -s (Auto → Autos, Computer → Computers).',
+      'Masculine and neuter singular nouns add -s or -es: -es is required for sibilant-final nouns (Haus → Hauses); most one-syllable nouns take -es or -s (Mann → Mannes/Manns, Kind → Kindes/Kinds); longer nouns normally take plain -s (Auto → Autos, Computer → Computers).',
       'Feminine and plural nouns never change their ending in the genitive — only the article changes: die Frau → der Frau, die Kinder → der Kinder.',
       "Proper names add plain -s (Annas, Peters, Julias); names already ending in a sibilant take only an apostrophe, no extra -s (Max', Felix', Hans').",
       'In everyday spoken German, von + dative very often replaces the genitive, especially with names: das Auto von Anna ≈ Annas Auto.',
@@ -460,18 +456,18 @@ export const chapter068: ChapterDefinition = {
       order: 9,
       type: 'singleChoice',
       level: 'controlled',
-      grammarFocus: ['genitive', 'noun-endings', 'hand-picked'],
+      grammarFocus: ['genitive', 'noun-endings', 'monosyllabic'],
       instruction: 'Choose the correctly formed genitive.',
       prompt: 'Das ist das Auto ___ (der Mann).',
       options: [
         { id: 'a', text: 'des Mannes' },
-        { id: 'b', text: 'des Manns' },
+        { id: 'b', text: 'des Männer' },
         { id: 'c', text: 'des Mann' },
         { id: 'd', text: 'dem Mann' },
       ],
       correctOptionId: 'a',
       explanation:
-        'Mann belongs to the hand-picked group of monosyllabic nouns that take -es: des Mannes.',
+        'Mann is masculine singular, so the article is des and the singular noun takes a genitive ending: des Mannes (des Manns is also correct).',
     },
     {
       id: 'ch68-ex-10',
@@ -721,16 +717,16 @@ export const chapter068: ChapterDefinition = {
       order: 24,
       type: 'textInput',
       level: 'controlled',
-      grammarFocus: ['genitive', 'noun-endings', 'hand-picked'],
+      grammarFocus: ['genitive', 'noun-endings', 'monosyllabic'],
       instruction:
         'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
       prompt: 'Nominative: das Kind → Genitive:',
-      acceptedAnswers: ['des Kindes'],
+      acceptedAnswers: ['des Kindes', 'des Kinds'],
       answerMode: 'caseInsensitive',
       placeholder: 'des ...',
       maxLength: 25,
       explanation:
-        'Kind is in the hand-picked monosyllabic group, so it takes -es: des Kindes.',
+        'Kind is a one-syllable noun, so it takes a genitive ending: des Kindes (des Kinds is also correct).',
     },
     {
       id: 'ch68-ex-25',
@@ -874,16 +870,16 @@ export const chapter068: ChapterDefinition = {
       grammarFocus: ['genitive', 'von-alternative', 'transformation', 'sentence-writing'],
       instruction:
         'Rewrite the sentence using the genitive instead of von + dative. Capitalisation and punctuation are checked.',
-      prompt: 'Der Hund von meinem Nachbarn bellt laut. → Genitiv',
+      prompt: 'Der Hund von meinem Bruder bellt laut. → Genitiv',
       acceptedAnswers: [
-        'Der Hund meines Nachbarn bellt laut.',
-        'Der Hund meines Nachbarn bellt laut',
+        'Der Hund meines Bruders bellt laut.',
+        'Der Hund meines Bruders bellt laut',
       ],
       answerMode: 'normalized',
       placeholder: 'Der Hund ...',
       maxLength: 60,
       explanation:
-        'von meinem Nachbarn becomes meines Nachbarn in the genitive: Der Hund meines Nachbarn bellt laut.',
+        'von meinem Bruder becomes meines Bruders in the genitive: Der Hund meines Bruders bellt laut.',
     },
     {
       id: 'ch68-ex-34',
@@ -1036,7 +1032,7 @@ export const chapter068: ChapterDefinition = {
       order: 42,
       type: 'singleChoice',
       level: 'controlled',
-      grammarFocus: ['genitive', 'noun-endings', 'hand-picked'],
+      grammarFocus: ['genitive', 'noun-endings', 'monosyllabic'],
       instruction: 'Choose the correctly formed genitive.',
       prompt: 'Das ist das Ende ___ (der Tag).',
       options: [
@@ -1047,7 +1043,7 @@ export const chapter068: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'Tag is in the hand-picked monosyllabic group, so it takes -es: des Tages.',
+        'Tag is a one-syllable noun, so it takes a genitive ending: des Tages (des Tags is also correct).',
     },
     {
       id: 'ch68-ex-43',
@@ -1108,16 +1104,16 @@ export const chapter068: ChapterDefinition = {
       order: 46,
       type: 'textInput',
       level: 'controlled',
-      grammarFocus: ['genitive', 'noun-endings', 'hand-picked'],
+      grammarFocus: ['genitive', 'noun-endings', 'monosyllabic'],
       instruction:
         'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
       prompt: 'Nominative: der Tag → Genitive:',
-      acceptedAnswers: ['des Tages'],
+      acceptedAnswers: ['des Tages', 'des Tags'],
       answerMode: 'caseInsensitive',
       placeholder: 'des ...',
       maxLength: 20,
       explanation:
-        'Tag is in the hand-picked monosyllabic group, so it takes -es: des Tages.',
+        'Tag is a one-syllable noun, so it takes a genitive ending: des Tages (des Tags is also correct).',
     },
     {
       id: 'ch68-ex-47',
@@ -1517,14 +1513,14 @@ export const chapter068: ChapterDefinition = {
       order: 71,
       type: 'dragToSlots',
       level: 'controlled',
-      grammarFocus: ['genitive', 'noun-endings', 'hand-picked'],
+      grammarFocus: ['genitive', 'noun-endings', 'monosyllabic'],
       instruction: 'Drag the correctly inflected noun into the slot.',
       prompt: 'Das ist das Buch des ___.',
       templateParts: ['Das ist das Buch des ', '.'],
       slots: [{ id: 'slot1', correctWord: 'Kindes' }],
-      wordBank: ['Kindes', 'Kind', 'Kinder', 'Kinds'],
+      wordBank: ['Kindes', 'Kind', 'Kinder', 'Kindern'],
       explanation:
-        'Kind is in the hand-picked monosyllabic group, so it takes -es: des Kindes.',
+        'Kind is a one-syllable noun, so it takes a genitive ending: des Kindes (des Kinds is also correct).',
     },
     {
       id: 'ch68-ex-72',
@@ -1532,14 +1528,14 @@ export const chapter068: ChapterDefinition = {
       order: 72,
       type: 'dragToSlots',
       level: 'controlled',
-      grammarFocus: ['genitive', 'noun-endings', 'hand-picked'],
+      grammarFocus: ['genitive', 'noun-endings', 'monosyllabic'],
       instruction: 'Drag the correctly inflected noun into the slot.',
       prompt: 'Der Titel des ___ ist bekannt.',
       templateParts: ['Der Titel des ', ' ist bekannt.'],
       slots: [{ id: 'slot1', correctWord: 'Buches' }],
-      wordBank: ['Buches', 'Buch', 'Buchs', 'Büchers'],
+      wordBank: ['Buches', 'Buch', 'Bücher', 'Büchers'],
       explanation:
-        'Buch is in the hand-picked monosyllabic group, so it takes -es: des Buches.',
+        'Buch is a one-syllable noun, so it takes a genitive ending: des Buches (des Buchs is also correct).',
     },
     {
       id: 'ch68-ex-73',
@@ -1732,8 +1728,8 @@ export const chapter068: ChapterDefinition = {
         { id: 'p3', left: 'die Farbe des Hauses', right: 'die Farbe von dem Haus' },
         {
           id: 'p4',
-          left: 'der Hund meines Nachbarn',
-          right: 'der Hund von meinem Nachbarn',
+          left: 'der Hund meines Bruders',
+          right: 'der Hund von meinem Bruder',
         },
         { id: 'p5', left: 'das Büro unseres Chefs', right: 'das Büro von unserem Chef' },
       ],
@@ -1749,7 +1745,7 @@ export const chapter068: ChapterDefinition = {
       grammarFocus: ['genitive', 'noun-endings', 'prepositions', 'wegen'],
       instruction: 'Click the token that contains the error.',
       prompt: 'Wegen des Regen bleiben wir zu Hause.',
-      tokens: ['Wegen', 'des', 'Regen', 'bleiben', 'wir', 'zu', 'Hause', '.'],
+      tokens: ['Wegen', 'des', 'Regen', 'bleiben', 'wir', 'zu', 'Hause.'],
       errorTokenIndex: 2,
       correction: 'Regens',
       explanation:
@@ -1764,7 +1760,7 @@ export const chapter068: ChapterDefinition = {
       grammarFocus: ['genitive', 'articles', 'feminine', 'prepositions', 'trotz'],
       instruction: 'Click the token that contains the error.',
       prompt: 'Trotz die Kälte bleiben wir drinnen.',
-      tokens: ['Trotz', 'die', 'Kälte', 'bleiben', 'wir', 'drinnen', '.'],
+      tokens: ['Trotz', 'die', 'Kälte', 'bleiben', 'wir', 'drinnen.'],
       errorTokenIndex: 1,
       correction: 'der',
       explanation:
@@ -1779,7 +1775,7 @@ export const chapter068: ChapterDefinition = {
       grammarFocus: ['genitive', 'noun-endings', 'possessive-articles'],
       instruction: 'Click the token that contains the error.',
       prompt: 'Das ist das Auto meines Vater.',
-      tokens: ['Das', 'ist', 'das', 'Auto', 'meines', 'Vater', '.'],
+      tokens: ['Das', 'ist', 'das', 'Auto', 'meines', 'Vater.'],
       errorTokenIndex: 5,
       correction: 'Vaters',
       explanation:
@@ -1794,7 +1790,7 @@ export const chapter068: ChapterDefinition = {
       grammarFocus: ['genitive', 'articles', 'indefinite', 'prepositions', 'innerhalb'],
       instruction: 'Click the token that contains the error.',
       prompt: 'Innerhalb einem Woche kommt er zurück.',
-      tokens: ['Innerhalb', 'einem', 'Woche', 'kommt', 'er', 'zurück', '.'],
+      tokens: ['Innerhalb', 'einem', 'Woche', 'kommt', 'er', 'zurück.'],
       errorTokenIndex: 1,
       correction: 'einer',
       explanation:
@@ -1809,7 +1805,7 @@ export const chapter068: ChapterDefinition = {
       grammarFocus: ['genitive', 'articles', 'feminine', 'prepositions', 'außerhalb'],
       instruction: 'Click the token that contains the error.',
       prompt: 'Außerhalb des Stadt gibt es einen Park.',
-      tokens: ['Außerhalb', 'des', 'Stadt', 'gibt', 'es', 'einen', 'Park', '.'],
+      tokens: ['Außerhalb', 'des', 'Stadt', 'gibt', 'es', 'einen', 'Park.'],
       errorTokenIndex: 1,
       correction: 'der',
       explanation:
@@ -1824,7 +1820,7 @@ export const chapter068: ChapterDefinition = {
       grammarFocus: ['genitive', 'names', 'apostrophe'],
       instruction: 'Click the token that contains the error.',
       prompt: "Das ist Annas' Auto.",
-      tokens: ['Das', 'ist', "Annas'", 'Auto', '.'],
+      tokens: ['Das', 'ist', "Annas'", 'Auto.'],
       errorTokenIndex: 2,
       correction: 'Annas',
       explanation:
@@ -1839,7 +1835,7 @@ export const chapter068: ChapterDefinition = {
       grammarFocus: ['genitive', 'articles', 'neuter', 'prepositions', 'statt'],
       instruction: 'Click the token that contains the error.',
       prompt: 'Statt der Auto fahre ich Fahrrad.',
-      tokens: ['Statt', 'der', 'Auto', 'fahre', 'ich', 'Fahrrad', '.'],
+      tokens: ['Statt', 'der', 'Auto', 'fahre', 'ich', 'Fahrrad.'],
       errorTokenIndex: 1,
       correction: 'des',
       explanation: 'Auto is neuter, so the genitive article after statt is des, not der.',
@@ -1850,14 +1846,14 @@ export const chapter068: ChapterDefinition = {
       order: 91,
       type: 'errorSpotting',
       level: 'production',
-      grammarFocus: ['genitive', 'noun-endings', 'hand-picked'],
+      grammarFocus: ['genitive', 'noun-endings', 'monosyllabic'],
       instruction: 'Click the token that contains the error.',
       prompt: 'Der Titel des Buch ist bekannt.',
-      tokens: ['Der', 'Titel', 'des', 'Buch', 'ist', 'bekannt', '.'],
+      tokens: ['Der', 'Titel', 'des', 'Buch', 'ist', 'bekannt.'],
       errorTokenIndex: 3,
       correction: 'Buches',
       explanation:
-        'Buch is in the hand-picked monosyllabic group, so it needs the genitive -es ending: des Buches.',
+        'Buch is a one-syllable noun, so it takes a genitive ending: des Buches (des Buchs is also correct).',
     },
   ],
 };

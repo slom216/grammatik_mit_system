@@ -6,8 +6,8 @@ summary and at least 24 graded exercises. Progress is stored in the browser.
 
 The build in this repository is at **Phase 9**: the application shell, the lesson and
 exercise engine, scoring, review scheduling and persistence are complete, and all 85
-chapters are shipped with full content. Chapters 21-30, 31-40, 41-50, 51-60, 61-70,
-71-80, and 81-85 each add a cumulative review session that mixes exercises across their
+chapters are shipped with full content. Chapters 1-10, 11-20, 21-30, 31-40, 41-50,
+51-60, 61-70, 71-80, and 81-85 each add a cumulative review session that mixes exercises across their
 chapter block, and chapters 72-80 (the whole "Sentences and Sentence Connections 2"
 section — indirect questions, infinitive constructions, relative clauses, temporal and
 purpose clauses, and paired conjunctions) additionally get a topic-scoped "B1 Clause
@@ -119,13 +119,15 @@ files are checked against it automatically.
 - Answer checking is exercise-specific (`exact`, `normalized`, `caseInsensitive`,
   `punctuationInsensitive`); nothing is lowercased globally, because German capitalisation
   is grammatically meaningful.
-- Wrong answers enter a review queue: 1 day → 3 days → 7 days → stable.
+- Wrong answers (including ones only right on the second attempt) enter a review
+  queue: 1 day → 3 days → 7 days → stable. Intervals are calendar days, due from local
+  midnight.
 
 ### Cumulative review
 
 Once every chapter in a checkpoint's range has content, `/review` offers it at
-`/review/:from/:to` (currently the ten-chapter blocks 21-30, 31-40, 41-50, 51-60, 61-70,
-and 71-80, plus the final five-chapter block 81-85). The session mixes every exercise
+`/review/:from/:to` (currently the ten-chapter blocks 1-10, 11-20, 21-30, 31-40, 41-50,
+51-60, 61-70, and 71-80, plus the final five-chapter block 81-85). The session mixes every exercise
 from the range that is due for spaced-repetition review with a shuffled sample from
 each chapter, so it stays useful before anything has been marked wrong. Each answer
 still updates that exercise's own chapter history and review schedule; the session

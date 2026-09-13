@@ -372,7 +372,7 @@ export function synthesizeWeakParticiple(infinitive: string): string {
 const DENTAL_END = /[dt]$/;
 
 function strongDuForm(pastStem: string): string {
-  if (SIBILANT_END.test(pastStem)) return `${pastStem}t`;
+  if (SIBILANT_END.test(pastStem)) return `${pastStem}est`; // las -> lasest, aß -> aßest (colloquial: last, aßt)
   if (DENTAL_END.test(pastStem)) return `${pastStem}est`; // fand -> fandest, stand -> standest, tat -> tatest
   return `${pastStem}st`;
 }

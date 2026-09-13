@@ -3,6 +3,7 @@ import type {
   ExerciseHistory,
   ReviewStage,
 } from '../../schemas/progressSchema';
+import { addDays as addCalendarDays } from '../progress/dayKey';
 import { isCorrectOutcome } from './scoring';
 
 /**
@@ -24,6 +25,9 @@ import { isCorrectOutcome } from './scoring';
  *  - correct twice       → review in 21 days
  *  - correct three times → stable, no further review
  *
+ * Intervals are calendar days: "+1 day" means due from the learner's next local
+ * midnight, so an evening session's mistakes are waiting the next morning.
+ *
  * Only remedial exercises count towards a chapter's `maxOpenReviewFlags`;
  * retention scheduling must never make mastery unreachable.
  */
@@ -38,10 +42,9 @@ export const RETENTION_INTERVAL_DAYS = {
   secondCorrect: 21,
 } as const;
 
-export const DAY_IN_MS = 24 * 60 * 60 * 1000;
-
+/** Start of the local calendar day `days` after `from`. */
 export function addDays(from: Date, days: number): Date {
-  return new Date(from.getTime() + days * DAY_IN_MS);
+  return addCalendarDays(from, days);
 }
 
 function stageFor(consecutiveCorrect: number): ReviewStage {
@@ -108,7 +111,10 @@ export function scheduleNextReview({
   const history = previous ?? createHistory(exerciseId, chapterNumber, grammarFocus);
   const correct = isCorrectOutcome(outcome);
 
-  const consecutiveCorrect = correct ? history.consecutiveCorrect + 1 : 0;
+  // A second-attempt success still started with a mistake, so it restarts the
+  // ladder at the 1-day step instead of counting as the first correct answer.
+  const consecutiveCorrect =
+    correct && outcome !== 'correctSecondAttempt' ? history.consecutiveCorrect + 1 : 0;
   // Sticky: once an exercise has been answered wrongly it stays on the fast
   // ladder for good. `correctSecondAttempt` counts — the first attempt failed,
   // which `timesIncorrect` does not record.
@@ -148,7 +154,9 @@ export function isStable(history: ExerciseHistory): boolean {
 
 export function isDue(history: ExerciseHistory, now: Date): boolean {
   if (history.dueAt === undefined) return false;
-  return new Date(history.dueAt).getTime() <= now.getTime();
+  // Normalised to the start of its day, so entries stored as exact timestamps
+  // by older versions also turn due at midnight.
+  return addCalendarDays(new Date(history.dueAt), 0).getTime() <= now.getTime();
 }
 
 /** Exercises that are in the queue but not due yet. */

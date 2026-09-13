@@ -4,6 +4,7 @@ import { prefetchChapter } from '../../content/chapterLoader';
 import { selectContinueChapter } from '../../features/chapters/chapterSelectors';
 import { chapterPath } from '../../features/chapters/chapterUtils';
 import { useProgressStore } from '../../features/progress/progressStore';
+import { ProgressStorageNotice } from './ProgressStorageNotice';
 import { ReloadPrompt } from './ReloadPrompt';
 import { ThemeToggle } from './ThemeToggle';
 
@@ -67,12 +68,21 @@ export function AppShell() {
   // the change audible, and the heading is read from the top.
   // The page's own h1 is its name, so taking the title from there means the tab
   // and the history entry can never drift from what is on screen.
-  // navigation.state is a dependency because a cold load renders the route
-  // fallback first: the heading only exists once the route's chunk has settled.
+  // Watched rather than read once per route: pages replace their h1 in place
+  // ("Preparing practice…" becomes the chapter name once the session starts).
   useEffect(() => {
-    const heading = mainRef.current?.querySelector('h1')?.textContent?.trim();
-    document.title = heading ? `${heading} · ${APP_NAME}` : APP_NAME;
-  }, [pathname, navigation.state]);
+    const main = mainRef.current;
+    if (!main) return;
+    const update = () => {
+      const heading = main.querySelector('h1')?.textContent?.trim();
+      const title = heading ? `${heading} · ${APP_NAME}` : APP_NAME;
+      if (document.title !== title) document.title = title;
+    };
+    update();
+    const observer = new MutationObserver(update);
+    observer.observe(main, { childList: true, subtree: true, characterData: true });
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     // Not on the first render: focus belongs where the browser put it when the
@@ -129,6 +139,7 @@ export function AppShell() {
 
       <main className="app-main" id="main-content" tabIndex={-1} ref={mainRef}>
         <div className="app-main__inner">
+          <ProgressStorageNotice />
           <Outlet />
         </div>
       </main>
@@ -149,9 +160,9 @@ export function AppShell() {
           </div>
           <p className="app-footer__note">
             An independent study app organised around common A1–B1 German grammar topics.
-            All explanations and exercises are written for this app. Progress is stored only
-            in this browser. Built with the help of AI, so there may be errors; every one we
-            find gets fixed.
+            All explanations and exercises are written for this app. Progress is stored
+            only in this browser. Built with the help of AI, so there may be errors; every
+            one we find gets fixed.
           </p>
         </div>
       </footer>

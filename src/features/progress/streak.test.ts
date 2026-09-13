@@ -43,6 +43,12 @@ describe('calculateStreak', () => {
     expect(calculateStreak(answersByDay, now)).toBe(2);
   });
 
+  // Clock set back after practising: later days must not hide the streak.
+  it('counts a streak stored under days after today', () => {
+    expect(calculateStreak({ '2026-03-11': 2, '2026-03-12': 1 }, now)).toBe(2);
+    expect(calculateStreak({ '2026-03-10': 1, '2026-03-11': 2 }, now)).toBe(2);
+  });
+
   it('counts across a month boundary', () => {
     const endOfFebruary = new Date(2026, 2, 1, 12, 0, 0);
     const answersByDay = { '2026-03-01': 1, '2026-02-28': 1, '2026-02-27': 1 };

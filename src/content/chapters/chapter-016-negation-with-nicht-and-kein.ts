@@ -27,7 +27,7 @@ export const chapter016: ChapterDefinition = {
           'kein simply takes the place of ein — you never use both together. It also negates plural nouns and nouns with no article in the singular (mass nouns like Zeit, Geld, Milch).',
         ],
         notes: [
-          'Ich habe kein Auto. (a car, no article word without kein)',
+          'Ich habe kein Auto. (affirmative: Ich habe ein Auto. — kein replaces ein)',
           'Ich habe keine Zeit. (Zeit normally has no article at all)',
         ],
       },
@@ -55,7 +55,8 @@ export const chapter016: ChapterDefinition = {
         id: 'ch16-rule-04',
         heading: 'Where does nicht go?',
         paragraphs: [
-          'When nicht negates the whole sentence (general, "not at all" negation), it usually stands near the end of the clause, after the verb, objects, and most other elements: Ich verstehe das nicht. Er kommt heute nicht.',
+          'When nicht negates the whole sentence (general, "not at all" negation), it usually stands near the end of the clause, after the conjugated verb, the objects and time expressions: Ich verstehe das nicht. Er kommt heute nicht. Ich kenne Anna nicht.',
+          'Some elements still come after nicht, because they belong closely to the verb: a second verb part (an infinitive, a participle or a separable prefix), a predicative adjective or noun after sein, and a place or direction. Ich kann heute nicht kommen. Er ruft mich nicht an. Das Auto ist nicht neu. Wir fahren heute nicht nach Hause.',
           'When nicht negates only one specific word or phrase (narrow negation), it stands directly in front of that word or phrase, not at the end: Er kommt nicht mit dem Auto, sondern mit dem Bus. Nicht Maria kommt heute, sondern Paul.',
           'This difference in placement changes the meaning: Maria kommt heute nicht (she is not coming at all today) is different from Nicht Maria kommt heute (someone else is coming today, not Maria).',
         ],
@@ -251,7 +252,7 @@ export const chapter016: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['negation', 'nicht', 'proper-noun'],
       instruction: 'Choose nicht or kein to complete the sentence correctly.',
-      prompt: 'Ich kenne ___ Tom.',
+      prompt: 'Ich kenne Tom ___.',
       options: [
         { id: 'a', text: 'nicht' },
         { id: 'b', text: 'kein' },
@@ -260,7 +261,7 @@ export const chapter016: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'Tom is a proper name. Names are always negated with nicht, never kein.',
+        'Tom is a proper name. Names are always negated with nicht, never kein. For a whole-sentence negation nicht goes after the name: Ich kenne Tom nicht.',
     },
     {
       id: 'ch16-ex-05',
@@ -270,7 +271,7 @@ export const chapter016: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['negation', 'nicht', 'definite-article'],
       instruction: 'Choose nicht or kein to complete the sentence correctly.',
-      prompt: 'Ich mag ___ den Film.',
+      prompt: 'Ich mag den Film ___.',
       options: [
         { id: 'a', text: 'nicht' },
         { id: 'b', text: 'kein' },
@@ -279,7 +280,7 @@ export const chapter016: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'den Film already has the definite article der, and kein can never combine with a definite article — only nicht works here.',
+        'den Film already has a definite article, and kein can never combine with a definite article — only nicht works here. It negates the whole sentence, so it goes after the object: Ich mag den Film nicht.',
     },
     {
       id: 'ch16-ex-06',
@@ -609,7 +610,7 @@ export const chapter016: ChapterDefinition = {
       instruction:
         'Write a complete negative sentence using the cue words and the correct form of kein. Capitalisation and punctuation are checked.',
       prompt: 'wir – heute – Zeit – haben',
-      acceptedAnswers: ['Wir haben heute keine Zeit.'],
+      acceptedAnswers: ['Wir haben heute keine Zeit.', 'Heute haben wir keine Zeit.'],
       answerMode: 'normalized',
       placeholder: 'Wir haben ...',
       maxLength: 45,
@@ -676,11 +677,11 @@ export const chapter016: ChapterDefinition = {
       grammarFocus: ['negation', 'nicht', 'proper-noun', 'error-correction'],
       instruction: 'Find the token that uses the wrong negation word, and correct it.',
       prompt: 'Jemand sagt, dass er eine Person nicht kennt. Etwas stimmt nicht.',
-      tokens: ['Ich', 'kenne', 'kein', 'Anna.'],
-      errorTokenIndex: 2,
-      correction: 'nicht',
+      tokens: ['Ich', 'kenne', 'Anna', 'kein.'],
+      errorTokenIndex: 3,
+      correction: 'nicht.',
       explanation:
-        'Anna is a proper name, and proper names are always negated with nicht — kein can never combine with a name.',
+        'Anna is a proper name, and proper names are always negated with nicht — kein can never combine with a name: Ich kenne Anna nicht.',
     },
     {
       id: 'ch16-ex-29',
@@ -707,11 +708,11 @@ export const chapter016: ChapterDefinition = {
       instruction: 'Find the token that uses the wrong negation word, and correct it.',
       prompt:
         'Jemand sagt, dass ihm ein bestimmter Film nicht gefällt. Etwas stimmt nicht.',
-      tokens: ['Ich', 'mag', 'kein', 'den', 'Film.'],
-      errorTokenIndex: 2,
-      correction: 'nicht',
+      tokens: ['Ich', 'mag', 'den', 'Film', 'kein.'],
+      errorTokenIndex: 4,
+      correction: 'nicht.',
       explanation:
-        'den Film already has a definite article, so kein cannot be used — only nicht is possible before a noun with der/die/das.',
+        'den Film already has a definite article, so kein cannot be used — only nicht negates a noun with der/die/das. It negates the whole sentence and goes after the object: Ich mag den Film nicht.',
     },
     {
       id: 'ch16-ex-31',
@@ -841,12 +842,12 @@ export const chapter016: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['negation', 'nicht', 'proper-noun'],
       instruction: 'Choose nicht or the correct form of kein to fill the gap.',
-      prompt: 'Vervollständige den Satz: "Ich kenne ___ Peter."',
-      templateParts: ['Ich kenne ', ' Peter.'],
+      prompt: 'Vervollständige den Satz: "Ich kenne Peter ___."',
+      templateParts: ['Ich kenne Peter ', '.'],
       slots: [{ id: 'ch16-ex39-slot1', correctWord: 'nicht' }],
       wordBank: ['nicht', 'kein', 'keine', 'keinen'],
       explanation:
-        'Peter is a proper name, so it is negated with nicht — kein can never combine with a name.',
+        'Peter is a proper name, so it is negated with nicht — kein can never combine with a name. nicht follows the name: Ich kenne Peter nicht.',
     },
     {
       id: 'ch16-ex-40',

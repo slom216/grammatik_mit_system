@@ -49,7 +49,8 @@ export const chapter039: ChapterDefinition = {
         heading: 'Pattern one: enclosed places and countries — in / in / aus',
         paragraphs: [
           'For enclosed places and most countries, the three question words you have now learned line up neatly: wohin? uses in with the accusative (Ich gehe ins Büro.), wo? uses in with the dative (Ich bin im Büro.), and woher? uses aus with the dative (Ich komme aus dem Büro.).',
-          'The same pattern applies to school, the cinema, the supermarket, the kitchen, and to countries: Wohin gehst du? — In die Schweiz. Wo bist du? — In der Schweiz. Woher kommst du? — Aus der Schweiz. Learning all three together for the same place makes each one easier to remember.',
+          'The same pattern applies to the cinema, the supermarket, the office, the kitchen, and to countries: Wohin gehst du? — In die Schweiz. Wo bist du? — In der Schweiz. Woher kommst du? — Aus der Schweiz. Learning all three together for the same place makes each one easier to remember.',
+          'School and university are flexible: wohin? is usually zur Schule / zur Uni (Chapter 37) or in die Schule, wo? is in der Schule, and woher? can be aus der Schule or von der Schule — both are correct.',
         ],
       },
       {
@@ -122,11 +123,7 @@ export const chapter039: ChapterDefinition = {
             'vom',
             'vom Bahnhof (from the train station)',
           ],
-          [
-            'von + dem (neuter, dative, person/institution)',
-            'vom',
-            "vom Arzt (from the doctor's)",
-          ],
+          ['von + dem (neuter, dative)', 'vom', 'vom Training (from training)'],
           [
             'von + der (feminine, dative)',
             'no contraction',
@@ -197,11 +194,11 @@ export const chapter039: ChapterDefinition = {
         english: 'We are just coming out of the cinema.',
         highlight: ['aus dem Kino'],
         explanation:
-          'The cinema is an enclosed building, so aus is used, just as with the office or the school.',
+          'The cinema is an enclosed building, so aus is used, just as with the office.',
       },
       {
-        german: 'Ich komme heute von zu Hause aus.',
-        english: 'Today I am working from home.',
+        german: 'Ich komme gerade von zu Hause.',
+        english: 'I am just coming from home.',
         highlight: ['von zu Hause'],
         explanation:
           'zu Hause (at home) is a fixed expression; the origin form uses von, not aus.',
@@ -446,13 +443,13 @@ export const chapter039: ChapterDefinition = {
       prompt: 'Ich komme gerade ___ der Universität.',
       options: [
         { id: 'a', text: 'aus' },
-        { id: 'b', text: 'von' },
+        { id: 'b', text: 'nach' },
         { id: 'c', text: 'zu' },
         { id: 'd', text: 'bei' },
       ],
       correctOptionId: 'a',
       explanation:
-        'The university is treated as an enclosed place you leave, following the same in / in / aus pattern as school or office.',
+        'aus describes leaving the building (aus der Schule / aus der Uni). von der Schule / von der Uni is just as common when you think of it as the place you are coming from, but von is not offered here; nach is used for cities and countries, zu and bei do not express origin.',
     },
     {
       id: 'ch39-ex-11',
@@ -715,13 +712,13 @@ export const chapter039: ChapterDefinition = {
       prompt: 'Ich komme gerade ___ der Schule.',
       options: [
         { id: 'a', text: 'aus' },
-        { id: 'b', text: 'von' },
+        { id: 'b', text: 'nach' },
         { id: 'c', text: 'zu' },
         { id: 'd', text: 'bei' },
       ],
       correctOptionId: 'a',
       explanation:
-        'School is an enclosed place, following the in / in / aus pattern, so it takes aus.',
+        'aus describes leaving the building (aus der Schule / aus der Uni). von der Schule / von der Uni is just as common when you think of it as the place you are coming from, but von is not offered here; nach is used for cities and countries, zu and bei do not express origin.',
     },
     {
       id: 'ch39-ex-27',
@@ -845,13 +842,13 @@ export const chapter039: ChapterDefinition = {
       prompt: 'Die Kinder kommen ___ der Schule.',
       options: [
         { id: 'a', text: 'aus' },
-        { id: 'b', text: 'von' },
+        { id: 'b', text: 'nach' },
         { id: 'c', text: 'zu' },
         { id: 'd', text: 'bei' },
       ],
       correctOptionId: 'a',
       explanation:
-        'School is treated as an enclosed place, so the children come aus der Schule.',
+        'aus describes leaving the building (aus der Schule / aus der Uni). von der Schule / von der Uni is just as common when you think of it as the place you are coming from, but von is not offered here; nach is used for cities and countries, zu and bei do not express origin.',
     },
     {
       id: 'ch39-ex-34',
@@ -864,13 +861,13 @@ export const chapter039: ChapterDefinition = {
       prompt: 'Ich komme heute spät ___ der Uni.',
       options: [
         { id: 'a', text: 'aus' },
-        { id: 'b', text: 'von' },
+        { id: 'b', text: 'nach' },
         { id: 'c', text: 'zu' },
         { id: 'd', text: 'bei' },
       ],
       correctOptionId: 'a',
       explanation:
-        'The university is an enclosed place, so it takes aus, like school or the office.',
+        'aus describes leaving the building (aus der Schule / aus der Uni). von der Schule / von der Uni is just as common when you think of it as the place you are coming from, but von is not offered here; nach is used for cities and countries, zu and bei do not express origin.',
     },
     {
       id: 'ch39-ex-35',
@@ -1005,11 +1002,12 @@ export const chapter039: ChapterDefinition = {
       grammarFocus: ['aus-vs-von', 'enclosed-place'],
       instruction: 'Complete with aus or von. Capitalisation is not checked.',
       prompt: 'Sie kommt ___ der Schule.',
-      acceptedAnswers: ['aus'],
+      acceptedAnswers: ['aus', 'von'],
       answerMode: 'caseInsensitive',
       placeholder: 'aus / von',
       maxLength: 10,
-      explanation: 'School is an enclosed place, so it takes aus.',
+      explanation:
+        'Both are correct: aus der Schule (out of the building) and von der Schule (from school as the place she was at).',
     },
     {
       id: 'ch39-ex-43',
@@ -1517,7 +1515,7 @@ export const chapter039: ChapterDefinition = {
       grammarFocus: ['aus-vs-von', 'countries', 'error-spotting'],
       instruction: 'Click the incorrect word.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Ich', 'komme', 'von', 'Deutschland', '.'],
+      tokens: ['Ich', 'komme', 'von', 'Deutschland.'],
       errorTokenIndex: 2,
       correction: 'aus',
       explanation:
@@ -1532,7 +1530,7 @@ export const chapter039: ChapterDefinition = {
       grammarFocus: ['aus-vs-von', 'person-origin', 'error-spotting'],
       instruction: 'Click the incorrect word.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Ich', 'komme', 'aus', 'meiner', 'Freundin', '.'],
+      tokens: ['Ich', 'komme', 'aus', 'meiner', 'Freundin.'],
       errorTokenIndex: 2,
       correction: 'von',
       explanation:
@@ -1547,7 +1545,7 @@ export const chapter039: ChapterDefinition = {
       grammarFocus: ['contraction', 'vom', 'error-spotting'],
       instruction: 'Click the incorrect word.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Der', 'Zug', 'kommt', 'von', 'Bahnhof', '.'],
+      tokens: ['Der', 'Zug', 'kommt', 'von', 'Bahnhof.'],
       errorTokenIndex: 3,
       correction: 'vom',
       explanation:
@@ -1562,7 +1560,7 @@ export const chapter039: ChapterDefinition = {
       grammarFocus: ['aus-vs-von', 'countries', 'error-spotting'],
       instruction: 'Click the incorrect word.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Ich', 'komme', 'von', 'der', 'Schweiz', '.'],
+      tokens: ['Ich', 'komme', 'von', 'der', 'Schweiz.'],
       errorTokenIndex: 2,
       correction: 'aus',
       explanation:
@@ -1577,7 +1575,7 @@ export const chapter039: ChapterDefinition = {
       grammarFocus: ['contraction', 'vom', 'person-institution', 'error-spotting'],
       instruction: 'Click the incorrect word.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Ich', 'komme', 'aus', 'Arzt', '.'],
+      tokens: ['Ich', 'komme', 'aus', 'Arzt.'],
       errorTokenIndex: 2,
       correction: 'vom',
       explanation:
@@ -1592,7 +1590,7 @@ export const chapter039: ChapterDefinition = {
       grammarFocus: ['aus-vs-von', 'enclosed-place', 'error-spotting'],
       instruction: 'Click the incorrect word.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Wir', 'kommen', 'von', 'dem', 'Kino', '.'],
+      tokens: ['Wir', 'kommen', 'von', 'dem', 'Kino.'],
       errorTokenIndex: 2,
       correction: 'aus',
       explanation: 'The cinema is an enclosed place, so it takes aus, not von.',
@@ -1606,7 +1604,7 @@ export const chapter039: ChapterDefinition = {
       grammarFocus: ['aus-vs-von', 'event', 'error-spotting'],
       instruction: 'Click the incorrect word.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Er', 'kommt', 'aus', 'der', 'Party', '.'],
+      tokens: ['Er', 'kommt', 'aus', 'der', 'Party.'],
       errorTokenIndex: 2,
       correction: 'von',
       explanation:
@@ -1621,7 +1619,7 @@ export const chapter039: ChapterDefinition = {
       grammarFocus: ['aus-vs-von', 'person-origin', 'error-spotting'],
       instruction: 'Click the incorrect word.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Sie', 'kommt', 'aus', 'ihrer', 'Oma', '.'],
+      tokens: ['Sie', 'kommt', 'aus', 'ihrer', 'Oma.'],
       errorTokenIndex: 2,
       correction: 'von',
       explanation:

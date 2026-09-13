@@ -79,8 +79,8 @@ export const chapter071: ChapterDefinition = {
         id: 'ch71-rule-06',
         heading: 'A capitalization exception: ander- stays lowercase',
         paragraphs: [
-          "One very common word breaks the capitalization rule you have just learned: ander- (other, different) is conventionally written in lowercase after etwas, nichts, and viel, even though it is functioning exactly like the other adjectives in this chapter. Das ist etwas ganz anderes. (That's something completely different.) Ich habe nichts anderes erwartet. (I expected nothing else.) Er hat sich für nichts anderes interessiert.",
-          'This is a well-established exception recognized by standard German spelling references (Duden), not a mistake in the source material — so resist the urge to "correct" ander- to Anderes the way you would correct etwas neues to etwas Neues. Everything else about the word behaves normally: it still takes the strong -es ending after etwas/nichts/viel (anderes), just without the capital letter.',
+          "One very common word is a partial exception to the capitalization rule you have just learned: ander- (other, different) is usually written in lowercase after etwas, nichts, and viel, even though it is functioning exactly like the other adjectives in this chapter. Das ist etwas ganz anderes. (That's something completely different.) Ich habe nichts anderes erwartet. (I expected nothing else.) Er hat sich für nichts anderes interessiert.",
+          'Since the 2006 spelling reform, Duden also permits the capital letter (etwas ganz Anderes), but it recommends lowercase, and lowercase is what you will see most often — so write etwas anderes, and do not treat Anderes as a mistake when you read it. Everything else about the word behaves normally: it still takes the strong -es ending after etwas/nichts/viel (anderes).',
         ],
       },
     ],
@@ -274,10 +274,10 @@ export const chapter071: ChapterDefinition = {
           'After the der-word das, the neuter nominative singular takes the weak ending -e; the strong -es belongs only after etwas/nichts-type pronouns.',
       },
       {
-        incorrect: 'Das ist etwas ganz Anderes.',
+        incorrect: 'Das ist etwas ganz anders.',
         correct: 'Das ist etwas ganz anderes.',
         explanation:
-          'ander- is a conventional exception to the capitalization rule: it stays lowercase after etwas/nichts/viel, unlike every other substantivized adjective in this chapter.',
+          'After etwas, ander- needs the strong -es ending: anderes. anders (without -e-) is the adverb "differently". Lowercase anderes is recommended; Duden also permits Anderes.',
       },
     ],
     remember: [
@@ -286,7 +286,7 @@ export const chapter071: ChapterDefinition = {
       'After a der-word like das, dieses, or jedes, the adjective takes the weak ending from Chapter 41: -e in the nominative/accusative, -en in the dative/genitive (das Gute, dem Guten, des Guten).',
       'alles is the odd one out among the indefinite words: it behaves like a der-word, so the following adjective takes the weak -e, not the strong -es — alles Gute, never alles Gutes.',
       'Superlatives are very often substantivized this way to mean "the best/most important/nicest thing": das Beste, das Wichtigste, das Schönste — following the same weak/strong rules as any other adjective here.',
-      'ander- is a fixed exception to the capitalization rule: etwas anderes and nichts anderes are conventionally written with a lowercase a.',
+      'ander- is a partial exception to the capitalization rule: etwas anderes and nichts anderes are usually written with a lowercase a (recommended by Duden; the capital, etwas Anderes, is also permitted).',
     ],
   },
   mastery: {
@@ -574,13 +574,13 @@ export const chapter071: ChapterDefinition = {
       prompt: 'Which sentence is correctly written?',
       options: [
         { id: 'a', text: 'Das ist etwas ganz anderes.' },
-        { id: 'b', text: 'Das ist etwas ganz Anderes.' },
+        { id: 'b', text: 'Das ist etwas ganz Anders.' },
         { id: 'c', text: 'Das ist Etwas ganz anderes.' },
         { id: 'd', text: 'Das ist etwas ganz anders.' },
       ],
       correctOptionId: 'a',
       explanation:
-        'ander- is a conventional exception: after etwas/nichts/viel it is written lowercase, unlike other substantivized adjectives — etwas anderes, not etwas Anderes.',
+        'After etwas, ander- takes the strong -es ending and is usually written lowercase: etwas anderes (Duden also permits etwas Anderes). anders is the adverb, and Etwas needs no capital mid-sentence.',
     },
     {
       id: 'ch71-ex-15',
@@ -882,12 +882,12 @@ export const chapter071: ChapterDefinition = {
       instruction:
         'Write the correctly declined form. This adjective is an exception — check the capitalization rule carefully.',
       prompt: 'etwas + ander (exception, nominative)',
-      acceptedAnswers: ['etwas anderes'],
+      acceptedAnswers: ['etwas anderes', 'etwas Anderes'],
       answerMode: 'normalized',
       placeholder: 'etwas anderes',
       maxLength: 20,
       explanation:
-        'ander- is conventionally kept lowercase after etwas, unlike every other adjective in this chapter: etwas anderes.',
+        'After etwas, ander- takes the strong -es ending and is usually kept lowercase: etwas anderes (the capital, etwas Anderes, is also permitted).',
     },
     {
       id: 'ch71-ex-31',
@@ -1752,12 +1752,12 @@ export const chapter071: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['substantivized-adjectives', 'capitalization', 'ander-exception'],
       instruction: 'Click the token that contains the error.',
-      prompt: 'Das ist etwas ganz Anderes.',
-      tokens: ['Das', 'ist', 'etwas', 'ganz', 'Anderes.'],
+      prompt: 'Das ist etwas ganz anders.',
+      tokens: ['Das', 'ist', 'etwas', 'ganz', 'anders.'],
       errorTokenIndex: 4,
       correction: 'anderes.',
       explanation:
-        'ander- is a conventional exception: after etwas/nichts/viel it stays lowercase, unlike every other substantivized adjective: etwas ganz anderes.',
+        'After etwas, ander- needs the strong -es ending: etwas ganz anderes. anders is the adverb "differently". Lowercase is recommended; Duden also permits Anderes.',
     },
     {
       id: 'ch71-ex-79',

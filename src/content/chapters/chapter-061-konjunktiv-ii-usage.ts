@@ -71,7 +71,7 @@ export const chapter061: ChapterDefinition = {
         heading: 'Unreal conditions: wenn-clause and main clause both in Konjunktiv II',
         paragraphs: [
           'A wenn-clause describing a real, likely, or open condition stays in the present indicative in both clauses: Wenn es regnet, nehme ich einen Schirm. (If it rains, I take an umbrella.) — this is simply a true, general fact, not a hypothetical. An unreal condition, by contrast, imagines something contrary to fact or merely possible, and both clauses switch to Konjunktiv II: Wenn ich Zeit hätte, würde ich kommen. (If I had time, I would come.) The hätte signals that, in fact, I do not have time; the würde-clause states what would follow if I did.',
-          'Both halves of the sentence need Konjunktiv II — using the present indicative in the main clause breaks the unreal meaning and sounds wrong: Wenn ich Zeit hätte, ich komme dich besuchen. is incorrect; it must be Wenn ich Zeit hätte, würde ich dich besuchen. The wenn-clause verb goes to the very end of its clause exactly as with weil or dass (chapters 46-47); the main clause verb takes second position, immediately after the comma.',
+          'Both halves of the sentence need Konjunktiv II — using the present indicative in the main clause breaks the unreal meaning and sounds wrong: Wenn ich Zeit hätte, ich komme dich besuchen. is incorrect; it must be Wenn ich Zeit hätte, würde ich dich besuchen. The wenn-clause verb goes to the very end of its clause exactly as with weil or dass (chapter 46); the main clause verb takes second position, immediately after the comma.',
           'Any combination of synthetic and analytic Konjunktiv II forms can appear in the same sentence, exactly as chapter 60 predicted: Wenn du mehr üben würdest, würdest du besser sprechen. (If you practiced more, you would speak better.) uses würde in both clauses because üben and sprechen have no natural synthetic forms; Wenn ich mehr Geld hätte, würde ich reisen. (If I had more money, I would travel.) combines the synthetic hätte with the analytic würde reisen.',
         ],
       },
@@ -376,10 +376,10 @@ export const chapter061: ChapterDefinition = {
           'sollst is present-tense sollen and sounds like an order or reported instruction; solltest (Konjunktiv II) is the natural, softer form for giving advice.',
       },
       {
-        incorrect: 'Du müsstest das nicht tun, wenn du nicht willst.',
-        correct: 'Du solltest das nicht tun, wenn du nicht willst.',
+        incorrect: 'Du würdest mehr Sport machen. (meant as advice)',
+        correct: 'Du solltest mehr Sport machen.',
         explanation:
-          'müsstest signals a strong near-obligation, which is too forceful for gentle advice; solltest is the standard form for a mild recommendation.',
+          'würdest + infinitive only describes what you would do; it does not give advice. Advice uses solltest (or the softer könntest).',
       },
       {
         incorrect: 'Könnten Sie mir bitte das Salz gibt?',
@@ -1307,7 +1307,8 @@ export const chapter061: ChapterDefinition = {
       grammarFocus: ['konjunktiv-ii', 'wenn-clause', 'word-order'],
       instruction:
         'Write the missing Konjunktiv II form to open the clause (wenn is dropped). Capitalisation is not checked.',
-      prompt: '___ ich mehr Geld, würde ich reisen. (haben, Konjunktiv II – ohne wenn)',
+      prompt:
+        '___ ich mehr Zeit, würde ich öfter Sport machen. (haben, Konjunktiv II – ohne wenn)',
       acceptedAnswers: ['Hätte', 'hätte'],
       answerMode: 'caseInsensitive',
       placeholder: 'Hätte',
@@ -2150,14 +2151,14 @@ export const chapter061: ChapterDefinition = {
       order: 88,
       type: 'errorSpotting',
       level: 'production',
-      grammarFocus: ['konjunktiv-ii', 'meaning-distinction'],
-      instruction: 'Find the token with the wrong meaning-shade and correct it.',
-      prompt: 'Er sollte eigentlich schon zu Hause sein.',
-      tokens: ['Er', 'sollte', 'eigentlich', 'schon', 'zu', 'Hause', 'sein.'],
+      grammarFocus: ['konjunktiv-ii', 'meaning-distinction', 'modal-verbs'],
+      instruction: 'Find the wrong verb form and correct it.',
+      prompt: 'Er müsstet eigentlich schon zu Hause sein.',
+      tokens: ['Er', 'müsstet', 'eigentlich', 'schon', 'zu', 'Hause', 'sein.'],
       errorTokenIndex: 1,
       correction: 'müsste',
       explanation:
-        'sollte would mean advice, but this sentence expresses a strong probability ("he should really be home by now, I am fairly sure"), which needs müsste.',
+        'er needs the Konjunktiv II form müsste (müsstet is the ihr-form). Er müsste eigentlich schon zu Hause sein expresses a confident expectation; Er sollte eigentlich schon zu Hause sein is also natural.',
     },
     {
       id: 'ch61-ex-89',

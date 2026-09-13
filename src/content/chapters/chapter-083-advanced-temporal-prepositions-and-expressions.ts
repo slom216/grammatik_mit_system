@@ -70,7 +70,7 @@ export const chapter083: ChapterDefinition = {
         id: 'ch83-rule-05',
         heading: 'ab — a starting point in the present or future, open-ended (+ dative)',
         paragraphs: [
-          'ab means "from ... on" and names a starting point in the present or future after which something begins and continues, with no end mentioned. It takes the dative: ab nächstem Montag (from next Monday on), ab dem 1. Januar (from 1 January on), ab sofort (effective immediately).',
+          'ab means "from ... on" and names a starting point in the present or future after which something begins and continues, with no end mentioned. It takes the dative: ab nächstem Montag (from next Monday on; with a bare time expression the accusative ab nächsten Montag is also standard), ab dem 1. Januar (from 1 January on), ab sofort (effective immediately).',
           'Ab nächstem Montag arbeite ich im neuen Büro. (From next Monday, I will be working in the new office.) The key contrast with seit is direction: seit looks backward from now to a past start, while ab looks forward from a present or future start, with the end left open.',
         ],
       },
@@ -94,8 +94,8 @@ export const chapter083: ChapterDefinition = {
         id: 'ch83-rule-08',
         heading: 'The timeline at a glance: choosing among seven expressions',
         paragraphs: [
-          'When you meet a temporal expression to translate or complete, ask five questions in order. Does the action start in the past and continue to now? Use seit. Does it start in the present or future with no end named? Use ab or, more formally, von ... an. Does the sentence name a closing endpoint? Use bis (bare, before an article-less noun) or bis zu (before an article or possessive). Is there a deadline that can be met anywhere inside a bounded window? Use innerhalb. Does something lie outside that bounded window instead? Use außerhalb. Does the action fill the entire named period rather than just needing to happen sometime within it? Use während.',
-          'These five directions — backward-and-ongoing (seit), forward-and-open (ab, von ... an), forward-to-an-endpoint (bis, bis zu), inside-a-window (innerhalb), spanning-the-whole-period (während), and outside-a-window (außerhalb) — cover almost every nuanced timeline statement you will need at this level. Case is a useful secondary check: if you have chosen a genitive form (innerhalb, außerhalb, während) but the noun phrase looks dative, or a dative expression (seit, ab, bis zu, von ... an) but the noun phrase looks genitive, you have very likely picked the wrong preposition, not just the wrong ending.',
+          'When you meet a temporal expression to translate or complete, ask six questions in order. Does the action start in the past and continue to now? Use seit. Does it start in the present or future with no end named? Use ab or, more formally, von ... an. Does the sentence name a closing endpoint? Use bis (bare, before an article-less noun) or bis zu (before an article or possessive). Is there a deadline that can be met anywhere inside a bounded window? Use innerhalb. Does something lie outside that bounded window instead? Use außerhalb. Does the action fill the entire named period rather than just needing to happen sometime within it? Use während.',
+          'These six directions — backward-and-ongoing (seit), forward-and-open (ab, von ... an), forward-to-an-endpoint (bis, bis zu), inside-a-window (innerhalb), spanning-the-whole-period (während), and outside-a-window (außerhalb) — cover almost every nuanced timeline statement you will need at this level. Case is a useful secondary check: if you have chosen a genitive form (innerhalb, außerhalb, während) but the noun phrase looks dative, or a dative expression (seit, ab, bis zu, von ... an) but the noun phrase looks genitive, you have very likely picked the wrong preposition, not just the wrong ending.',
         ],
       },
     ],
@@ -316,10 +316,10 @@ export const chapter083: ChapterDefinition = {
           'seit governs the dative; einen Monat is accusative and must become the dative einem Monat.',
       },
       {
-        incorrect: 'Ab nächsten Montag gilt die neue Regel.',
+        incorrect: 'Seit nächstem Montag gilt die neue Regel.',
         correct: 'Ab nächstem Montag gilt die neue Regel.',
         explanation:
-          'ab governs the dative; nächsten Montag is accusative and must become the dative nächstem Montag.',
+          'seit looks back to a start in the past; a start in the future with no end named takes ab.',
       },
       {
         incorrect: 'Die Bewerbung ist bis der Ferien möglich.',
@@ -567,7 +567,7 @@ export const chapter083: ChapterDefinition = {
             "I've been working at this company for two years, and I'd like to stay.",
         },
       ],
-      prompt: 'Ich arbeite ___ zwei Jahren bei dieser Firma.',
+      prompt: "Which preposition completes the applicant's reply?",
       options: [
         { id: 'a', text: 'seit' },
         { id: 'b', text: 'ab' },
@@ -625,10 +625,9 @@ export const chapter083: ChapterDefinition = {
       type: 'singleChoice',
       level: 'transfer',
       grammarFocus: ['außerhalb', 'notice-rewriting'],
-      instruction:
-        'Choose the sentence that correctly rewrites the notice with the same meaning.',
+      instruction: 'Choose the sentence that says the same thing as the notice.',
       prompt:
-        'Welcher Satz drückt denselben Sinn aus wie: "Das Büro ist am Wochenende nicht erreichbar."?',
+        'Welcher Satz drückt denselben Sinn aus wie: "Das Büro ist nur während der Geschäftszeiten erreichbar."?',
       options: [
         { id: 'a', text: 'Das Büro ist außerhalb der Geschäftszeiten nicht erreichbar.' },
         { id: 'b', text: 'Das Büro ist innerhalb der Geschäftszeiten nicht erreichbar.' },
@@ -637,7 +636,7 @@ export const chapter083: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'The weekend falls outside normal business hours, so außerhalb der Geschäftszeiten is the correct paraphrase; innerhalb would wrongly claim the office is unreachable during business hours.',
+        'Reachable only during business hours means unreachable outside them, so außerhalb der Geschäftszeiten is the correct paraphrase; innerhalb would wrongly claim the office is unreachable during business hours.',
     },
     {
       id: 'ch83-ex-15',
@@ -1131,13 +1130,13 @@ export const chapter083: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'controlled',
       grammarFocus: ['ab', 'dative', 'error-correction'],
-      instruction: 'Find and correct the case error.',
-      prompt: 'Ab nächsten Montag gilt die neue Regel.',
-      tokens: ['Ab', 'nächsten', 'Montag', 'gilt', 'die', 'neue', 'Regel.'],
-      errorTokenIndex: 1,
-      correction: 'nächstem',
+      instruction: 'Find and correct the wrong preposition.',
+      prompt: 'Seit nächstem Montag gilt die neue Regel.',
+      tokens: ['Seit', 'nächstem', 'Montag', 'gilt', 'die', 'neue', 'Regel.'],
+      errorTokenIndex: 0,
+      correction: 'Ab',
       explanation:
-        'ab governs the dative; nächsten Montag is accusative and must become the dative nächstem Montag.',
+        'seit looks back to a start in the past; next Monday is a future start with no end named, so it takes ab (+ dative: ab nächstem Montag).',
     },
     {
       id: 'ch83-ex-45',
@@ -1185,7 +1184,7 @@ export const chapter083: ChapterDefinition = {
       prompt: 'Die Prüfung findet ___ des nächsten Monats statt.',
       templateParts: ['Die Prüfung findet ', ' des nächsten Monats statt.'],
       slots: [{ id: 's1', correctWord: 'innerhalb' }],
-      wordBank: ['innerhalb', 'außerhalb', 'während', 'seit'],
+      wordBank: ['innerhalb', 'außerhalb', 'bis zu', 'seit'],
       explanation:
         'innerhalb marks a bounded window inside which the exam can be scheduled at any point.',
     },
@@ -1830,9 +1829,9 @@ export const chapter083: ChapterDefinition = {
       prompt: 'Ich habe das Buch ___ eines Sommers gelesen.',
       templateParts: ['Ich habe das Buch ', ' eines Sommers gelesen.'],
       slots: [{ id: 's1', correctWord: 'innerhalb' }],
-      wordBank: ['innerhalb', 'während', 'seit', 'bis zu'],
+      wordBank: ['innerhalb', 'ab', 'seit', 'bis zu'],
       explanation:
-        'innerhalb only guarantees the reading finished sometime before the summer ended, not that it took the whole season, unlike während.',
+        'innerhalb eines Sommers means the whole book was read within one summer; ab, seit and bis zu take the dative and do not fit a genitive phrase here.',
     },
     {
       id: 'ch83-ex-81',
@@ -2012,7 +2011,7 @@ export const chapter083: ChapterDefinition = {
       prompt: 'Der Vertrag muss ___ des Monats unterschrieben werden.',
       templateParts: ['Der Vertrag muss ', ' des Monats unterschrieben werden.'],
       slots: [{ id: 's1', correctWord: 'innerhalb' }],
-      wordBank: ['innerhalb', 'während', 'außerhalb', 'seit'],
+      wordBank: ['innerhalb', 'ab', 'außerhalb', 'seit'],
       explanation:
         'innerhalb names a bounded window inside which the contract can be signed at any point.',
     },

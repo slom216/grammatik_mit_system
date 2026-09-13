@@ -14,7 +14,7 @@ import { useProgressStore } from '../features/progress/progressStore';
 function formatDate(dateKey: string): string {
   // Parsed as local parts, matching how the key was built.
   const [year, month, day] = dateKey.split('-').map(Number);
-  return new Date(year ?? 0, (month ?? 1) - 1, day ?? 1).toLocaleDateString('en-US', {
+  return new Date(year ?? 0, (month ?? 1) - 1, day ?? 1).toLocaleDateString('en-GB', {
     weekday: 'short',
     month: 'short',
     day: 'numeric',
@@ -116,8 +116,7 @@ export function ActivityPage() {
 
       <p className="text-sm text-muted">
         See overall mastery and level breakdown in <Link to="/progress">Progress</Link>,
-        or a day-by-day view of chapters and time in{' '}
-        <Link to="/calendar">Calendar</Link>.
+        or a day-by-day view of chapters and time in <Link to="/calendar">Calendar</Link>.
       </p>
     </div>
   );

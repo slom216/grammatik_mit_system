@@ -47,7 +47,7 @@ export const chapter042: ChapterDefinition = {
         id: 'ch42-rule-03',
         heading: 'Five irregular comparatives to memorize',
         paragraphs: [
-          'A small group of very frequent adjectives and adverbs form the comparative irregularly and must simply be learned by heart: gut -> besser (good -> better), viel -> mehr (much -> more), gern -> lieber (gladly -> more gladly / prefer), hoch -> höher (high -> higher, note the ch drops), nah -> näher (near -> nearer, note an h is inserted).',
+          'A small group of very frequent adjectives and adverbs form the comparative irregularly and must simply be learned by heart: gut -> besser (good -> better), viel -> mehr (much -> more), gern -> lieber (gladly -> more gladly / prefer), hoch -> höher (high -> higher, note the c drops), nah -> näher (near -> nearer: the comparative only adds the umlaut and -er, but nah belongs on this list because its superlative nächst- is irregular).',
           'These five forms show up constantly in everyday speech, so they are worth memorizing as fixed pairs rather than trying to derive them from a rule.',
         ],
       },
@@ -169,14 +169,14 @@ export const chapter042: ChapterDefinition = {
         english: 'The mountains are higher than the hills.',
         highlight: ['höher', 'als'],
         explanation:
-          'hoch has the irregular comparative höher (the ch of hoch drops before the umlaut and ending).',
+          'hoch has the irregular comparative höher (the c of hoch drops, leaving höh-, before the ending).',
       },
       {
         german: 'Meine Wohnung ist näher am Bahnhof als deine.',
         english: 'My apartment is closer to the train station than yours.',
         highlight: ['näher', 'als'],
         explanation:
-          'nah has the irregular comparative näher (an extra h is inserted before the ending).',
+          'nah forms the comparative näher: umlaut plus -er, with the h kept. It is learned with the irregular group because its superlative, nächst-, is irregular.',
       },
       {
         german: 'Dieser Rock ist mir zu dunkel; hast du einen dunkleren?',
@@ -398,7 +398,7 @@ export const chapter042: ChapterDefinition = {
         { id: 'd', text: 'hochster' },
       ],
       correctOptionId: 'a',
-      explanation: 'hoch is irregular: hoch -> höher (the ch drops).',
+      explanation: 'hoch is irregular: hoch -> höher (the c drops).',
     },
     {
       id: 'ch42-ex-09',
@@ -416,7 +416,8 @@ export const chapter042: ChapterDefinition = {
         { id: 'd', text: 'nährer' },
       ],
       correctOptionId: 'a',
-      explanation: 'nah is irregular: nah -> näher (an extra h is inserted).',
+      explanation:
+        'nah -> näher: the umlaut is added and -er follows the h (the superlative nächst- is the irregular form).',
     },
     {
       id: 'ch42-ex-10',
@@ -1306,7 +1307,8 @@ export const chapter042: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'näher',
       maxLength: 20,
-      explanation: 'nah is irregular: nah -> näher (an extra h is inserted).',
+      explanation:
+        'nah -> näher: the umlaut is added and -er follows the h (the superlative nächst- is the irregular form).',
     },
   ],
 };

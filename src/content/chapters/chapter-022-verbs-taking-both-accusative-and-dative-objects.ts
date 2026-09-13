@@ -39,8 +39,8 @@ export const chapter022: ChapterDefinition = {
         id: 'ch22-rule-03',
         heading: 'Word order with two nouns: dative before accusative',
         paragraphs: [
-          'When both objects are full noun phrases, the dative (person) normally comes before the accusative (thing): Ich gebe meinem Bruder das Buch. — not das Buch meinem Bruder.',
-          'This dative-before-accusative order is the neutral, everyday pattern. At this level, always put the noun person first and the noun thing second.',
+          'When both objects are full noun phrases, the dative (person) normally comes before the accusative (thing): Ich gebe meinem Bruder das Buch.',
+          'This dative-before-accusative order is the neutral, everyday pattern, and it is the one to use by default. The other order is also correct when the thing is already known and the person is the new or important information: Ich gebe das Buch meinem Bruder (not my sister).',
         ],
       },
       {
@@ -198,10 +198,10 @@ export const chapter022: ChapterDefinition = {
     ],
     commonMistakes: [
       {
-        incorrect: 'Ich gebe das Buch dem Kind.',
-        correct: 'Ich gebe dem Kind das Buch.',
+        incorrect: 'Ich gebe dem Kind es.',
+        correct: 'Ich gebe es dem Kind.',
         explanation:
-          'With two full noun objects, the dative person normally comes before the accusative thing.',
+          'When one object is a pronoun, the pronoun comes first, even when it is the accusative object.',
       },
       {
         incorrect: 'Ich gebe ihm es.',
@@ -404,14 +404,14 @@ export const chapter022: ChapterDefinition = {
         'Choose the sentence with the correct word order (both objects are nouns).',
       prompt: 'Which sentence has the correct word order?',
       options: [
-        { id: 'a', text: 'Ich gebe das Buch meinem Bruder.' },
+        { id: 'a', text: 'Ich meinem Bruder gebe das Buch.' },
         { id: 'b', text: 'Ich gebe meinem Bruder das Buch.' },
         { id: 'c', text: 'Ich gebe meinem das Buch Bruder.' },
         { id: 'd', text: 'Gebe ich meinem Bruder das Buch.' },
       ],
       correctOptionId: 'b',
       explanation:
-        'With two nouns, the dative (person) comes before the accusative (thing): meinem Bruder das Buch.',
+        'The conjugated verb stands in position 2, and with two nouns the neutral order is dative (person) before accusative (thing): meinem Bruder das Buch.',
     },
     {
       id: 'ch22-ex-10',
@@ -832,14 +832,14 @@ export const chapter022: ChapterDefinition = {
         'Choose the sentence with the correct word order (both objects are nouns).',
       prompt: 'Which sentence has the correct word order?',
       options: [
-        { id: 'a', text: 'Ich schenke einen Blumenstrauß meiner Mutter.' },
+        { id: 'a', text: 'Ich meiner Mutter schenke einen Blumenstrauß.' },
         { id: 'b', text: 'Ich schenke meiner Mutter einen Blumenstrauß.' },
         { id: 'c', text: 'Ich schenke meiner einen Blumenstrauß Mutter.' },
         { id: 'd', text: 'Schenke ich meiner Mutter einen Blumenstrauß.' },
       ],
       correctOptionId: 'b',
       explanation:
-        'With two nouns, the dative (person) comes before the accusative (thing): meiner Mutter einen Blumenstrauß.',
+        'The conjugated verb stands in position 2, and with two nouns the neutral order is dative (person) before accusative (thing): meiner Mutter einen Blumenstrauß.',
     },
     {
       id: 'ch22-ex-33',
@@ -1106,8 +1106,7 @@ export const chapter022: ChapterDefinition = {
         { id: 's1', text: 'Ich' },
         { id: 's2', text: 'schenke' },
         { id: 's3', text: 'meiner Mutter' },
-        { id: 's4', text: 'einen Blumenstrauß' },
-        { id: 's5', text: '.' },
+        { id: 's4', text: 'einen Blumenstrauß.' },
       ],
       explanation:
         'With two nouns, the dative person (meiner Mutter) comes before the accusative thing (einen Blumenstrauß).',
@@ -1126,8 +1125,7 @@ export const chapter022: ChapterDefinition = {
         { id: 's1', text: 'Ich' },
         { id: 's2', text: 'schenke' },
         { id: 's3', text: 'ihr' },
-        { id: 's4', text: 'einen Blumenstrauß' },
-        { id: 's5', text: '.' },
+        { id: 's4', text: 'einen Blumenstrauß.' },
       ],
       explanation:
         'The dative pronoun ihr moves in front of the accusative noun einen Blumenstrauß.',
@@ -1146,8 +1144,7 @@ export const chapter022: ChapterDefinition = {
         { id: 's1', text: 'Ich' },
         { id: 's2', text: 'schenke' },
         { id: 's3', text: 'ihn' },
-        { id: 's4', text: 'meiner Mutter' },
-        { id: 's5', text: '.' },
+        { id: 's4', text: 'meiner Mutter.' },
       ],
       explanation:
         'The accusative pronoun ihn moves in front of the dative noun meiner Mutter, even though it is not the dative object.',
@@ -1165,8 +1162,7 @@ export const chapter022: ChapterDefinition = {
         { id: 's1', text: 'Ich' },
         { id: 's2', text: 'schenke' },
         { id: 's3', text: 'ihn' },
-        { id: 's4', text: 'ihr' },
-        { id: 's5', text: '.' },
+        { id: 's4', text: 'ihr.' },
       ],
       explanation:
         'When both objects are pronouns, the accusative pronoun ihn comes before the dative pronoun ihr.',
@@ -1184,8 +1180,7 @@ export const chapter022: ChapterDefinition = {
         { id: 's1', text: 'Er' },
         { id: 's2', text: 'erklärt' },
         { id: 's3', text: 'den Schülern' },
-        { id: 's4', text: 'die Regel' },
-        { id: 's5', text: '.' },
+        { id: 's4', text: 'die Regel.' },
       ],
       explanation:
         'With two nouns, the dative person (den Schülern) comes before the accusative thing (die Regel).',
@@ -1204,8 +1199,7 @@ export const chapter022: ChapterDefinition = {
         { id: 's1', text: 'Er' },
         { id: 's2', text: 'zeigt' },
         { id: 's3', text: 'ihnen' },
-        { id: 's4', text: 'die Karte' },
-        { id: 's5', text: '.' },
+        { id: 's4', text: 'die Karte.' },
       ],
       explanation:
         'The dative pronoun ihnen moves in front of the accusative noun die Karte.',
@@ -1224,8 +1218,7 @@ export const chapter022: ChapterDefinition = {
         { id: 's1', text: 'Er' },
         { id: 's2', text: 'zeigt' },
         { id: 's3', text: 'sie' },
-        { id: 's4', text: 'den Touristen' },
-        { id: 's5', text: '.' },
+        { id: 's4', text: 'den Touristen.' },
       ],
       explanation:
         'The accusative pronoun sie (referring to die Karte) moves in front of the dative noun den Touristen.',
@@ -1243,8 +1236,7 @@ export const chapter022: ChapterDefinition = {
         { id: 's1', text: 'Er' },
         { id: 's2', text: 'zeigt' },
         { id: 's3', text: 'sie' },
-        { id: 's4', text: 'ihnen' },
-        { id: 's5', text: '.' },
+        { id: 's4', text: 'ihnen.' },
       ],
       explanation:
         'When both objects are pronouns, the accusative pronoun sie comes before the dative pronoun ihnen.',
@@ -1364,7 +1356,7 @@ export const chapter022: ChapterDefinition = {
       grammarFocus: ['word-order', 'two-pronouns'],
       instruction:
         'Drag the correct pronoun into each slot (accusative pronoun before dative pronoun).',
-      prompt: 'Ich gebe ___ ___.',
+      prompt: 'Ich gebe ___ ___. (das Buch → pronoun, meinem Bruder → pronoun)',
       templateParts: ['Ich gebe ', ' ', '.'],
       slots: [
         { id: 'slot1', correctWord: 'es' },
@@ -1383,7 +1375,7 @@ export const chapter022: ChapterDefinition = {
       grammarFocus: ['word-order', 'two-pronouns'],
       instruction:
         'Drag the correct pronoun into each slot (accusative pronoun before dative pronoun).',
-      prompt: 'Er zeigt ___ ___.',
+      prompt: 'Er zeigt ___ ___. (die Karte → pronoun, den Touristen → pronoun)',
       templateParts: ['Er zeigt ', ' ', '.'],
       slots: [
         { id: 'slot1', correctWord: 'sie' },
@@ -1402,7 +1394,7 @@ export const chapter022: ChapterDefinition = {
       grammarFocus: ['dative-article', 'masculine'],
       instruction: 'Find the token with the wrong case.',
       prompt: 'Ich zeige der Mann den Weg.',
-      tokens: ['Ich', 'zeige', 'der', 'Mann', 'den', 'Weg', '.'],
+      tokens: ['Ich', 'zeige', 'der', 'Mann', 'den', 'Weg.'],
       errorTokenIndex: 2,
       correction: 'dem',
       explanation:
@@ -1417,7 +1409,7 @@ export const chapter022: ChapterDefinition = {
       grammarFocus: ['dative-article', 'feminine'],
       instruction: 'Find the token with the wrong case.',
       prompt: 'Ich schicke meine Schwester ein Geschenk.',
-      tokens: ['Ich', 'schicke', 'meine', 'Schwester', 'ein', 'Geschenk', '.'],
+      tokens: ['Ich', 'schicke', 'meine', 'Schwester', 'ein', 'Geschenk.'],
       errorTokenIndex: 2,
       correction: 'meiner',
       explanation:
@@ -1432,7 +1424,7 @@ export const chapter022: ChapterDefinition = {
       grammarFocus: ['dative-article', 'masculine'],
       instruction: 'Find the token with the wrong case.',
       prompt: 'Wir kaufen unser Sohn ein Fahrrad.',
-      tokens: ['Wir', 'kaufen', 'unser', 'Sohn', 'ein', 'Fahrrad', '.'],
+      tokens: ['Wir', 'kaufen', 'unser', 'Sohn', 'ein', 'Fahrrad.'],
       errorTokenIndex: 2,
       correction: 'unserem',
       explanation:

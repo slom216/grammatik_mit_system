@@ -64,7 +64,7 @@ export const chapter028: ChapterDefinition = {
           'This holds even when the base verb is strong: kommen is strong and becomes gekommen, but with the inseparable prefix be- it becomes bekommen — the ge- of gekommen simply disappears, leaving only the -en ending.',
         ],
         notes: [
-          'The eight inseparable prefixes to remember: be-, ge-, er-, ver-, zer-, ent-, emp-, miss-.',
+          'The core inseparable prefixes to remember: be-, ge-, er-, ver-, zer-, ent-, emp-, miss-. A few verbs with hinter-, wider- or voll- are inseparable too (hinterlassen → hinterlassen, widersprechen → widersprochen, vollenden → vollendet).',
         ],
       },
       {
@@ -292,7 +292,7 @@ export const chapter028: ChapterDefinition = {
       'Weak verbs: ge- + stem + -t (gemacht, gekauft); insert an extra -e- before -t if the stem ends in -t, -d, or a hard consonant cluster (gearbeitet, geöffnet).',
       'Strong verbs: ge- + stem (often vowel-changed) + -en; there is no reliable rule, so memorize each one as a fixed pair with its infinitive (gegangen, gegessen, gesprochen).',
       'Separable verbs: ge- goes between the prefix and the base participle (aufgestanden, eingekauft, mitgekommen).',
-      'Inseparable prefixes (be-, ge-, er-, ver-, zer-, ent-, emp-, miss-) and all -ieren verbs never take ge- at all (besucht, verstanden, studiert, telefoniert).',
+      'Inseparable prefixes (core list: be-, ge-, er-, ver-, zer-, ent-, emp-, miss-) and all -ieren verbs never take ge- at all (besucht, verstanden, studiert, telefoniert).',
       'Mixed verbs combine the weak -t ending with a strong-style vowel change; these must also be memorized (gebracht, gedacht, gekannt, gewusst).',
     ],
   },
@@ -527,7 +527,7 @@ export const chapter028: ChapterDefinition = {
       ],
       correctOptionId: 'd',
       explanation:
-        'ver- belongs to the fixed set of inseparable prefixes (be-, ge-, er-, ver-, zer-, ent-, emp-, miss-); auf-, mit-, and ein- are all separable.',
+        'ver- belongs to the core inseparable prefixes (be-, ge-, er-, ver-, zer-, ent-, emp-, miss-); auf-, mit-, and ein- are all separable.',
     },
     {
       id: 'ch28-ex-13',
@@ -1112,7 +1112,7 @@ export const chapter028: ChapterDefinition = {
       prompt: 'Er hat die Tür ___.',
       templateParts: ['Er hat die Tür ', '.'],
       slots: [{ id: 'ch28-ex46-slot1', correctWord: 'geöffnet' }],
-      wordBank: ['geöffnet', 'geöffnent', 'öffnet', 'aufgemacht'],
+      wordBank: ['geöffnet', 'geöffnent', 'öffnet', 'geöfft'],
       explanation:
         'öffnen is weak with a stem ending in a hard cluster, so an extra -e- is inserted before the final -t: geöffnet.',
     },
@@ -1229,8 +1229,8 @@ export const chapter028: ChapterDefinition = {
       grammarFocus: ['strong-verbs', 'error-correction'],
       instruction: 'Find the token with the mistake.',
       prompt: 'Someone talks about a phone call. Find the mistake.',
-      tokens: ['Ich', 'habe', 'gestern', 'gesprecht', 'mit', 'ihm.'],
-      errorTokenIndex: 3,
+      tokens: ['Ich', 'habe', 'gestern', 'mit', 'ihm', 'gesprecht.'],
+      errorTokenIndex: 5,
       correction: 'gesprochen',
       explanation:
         'sprechen is strong and changes its stem vowel to o; the weak-style ending in "gesprecht" is wrong. The correct form is gesprochen.',

@@ -46,7 +46,7 @@ export const chapter048: ChapterDefinition = {
         id: 'ch48-rule-03',
         heading: 'Inseparable prefixes: unstressed and always attached',
         paragraphs: [
-          'A small, fixed set of prefixes is always inseparable: be-, ge-, er-, ver-, zer-, ent-, emp-, miss-. These prefixes are never stressed (verSTEHEN, beZAHLEN, erKLÄREN) and they never split off, in any tense, in any clause type.',
+          'The core set of always-inseparable prefixes is be-, emp-, ent-, er-, ge-, miss-, ver-, and zer-. A few more prefixes are inseparable in some verbs, for example hinter- (hinterlassen), wider- (widersprechen), and voll- (vollenden). Inseparable prefixes are never stressed (verSTEHEN, beZAHLEN, erKLÄREN) and they never split off, in any tense, in any clause type.',
           'Ich verstehe die Frage. Wir bezahlen die Rechnung. Der Lehrer erklärt die Grammatik. Because these prefixes cannot stand alone as separate words, you cannot point to them at the end of a sentence the way you can with an, auf, or vor — they stay locked to the verb stem.',
         ],
       },
@@ -95,7 +95,11 @@ export const chapter048: ChapterDefinition = {
           ['ver-', 'stehen → verstehen', 'to stand → to understand'],
           ['zer-', 'stören → zerstören', 'to disturb → to destroy'],
           ['ent-', 'decken → entdecken', 'to cover → to discover'],
-          ['emp-', 'fehlen → empfehlen', '(related to fehlen) → to recommend'],
+          [
+            'emp-',
+            'empfehlen (no separate base verb)',
+            'to recommend (not built from fehlen)',
+          ],
           ['miss-', 'verstehen → missverstehen', 'to understand → to misunderstand'],
         ],
         note: 'These prefixes are never stressed and never split off, in any tense: Ich verstehe die Frage nicht.',
@@ -367,7 +371,7 @@ export const chapter048: ChapterDefinition = {
       ],
       correctOptionId: 'b',
       explanation:
-        'ver- belongs to the fixed set of prefixes that are always inseparable.',
+        'ver- belongs to the core set of prefixes that are always inseparable.',
     },
     {
       id: 'ch48-ex-07',
@@ -1234,7 +1238,7 @@ export const chapter048: ChapterDefinition = {
       grammarFocus: ['separable-verbs', 'word-order'],
       instruction: 'Find the token with the error and give its correction.',
       prompt: 'Ich aufmache das Fenster.',
-      tokens: ['Ich', 'aufmache', 'das', 'Fenster', '.'],
+      tokens: ['Ich', 'aufmache', 'das', 'Fenster.'],
       errorTokenIndex: 1,
       correction: 'mache',
       explanation:
@@ -1249,7 +1253,7 @@ export const chapter048: ChapterDefinition = {
       grammarFocus: ['inseparable-verbs', 'prefix-identification'],
       instruction: 'Find the token with the error and give its correction.',
       prompt: 'Er beklärt die Grammatik.',
-      tokens: ['Er', 'beklärt', 'die', 'Grammatik', '.'],
+      tokens: ['Er', 'beklärt', 'die', 'Grammatik.'],
       errorTokenIndex: 1,
       correction: 'erklärt',
       explanation:
@@ -1264,7 +1268,7 @@ export const chapter048: ChapterDefinition = {
       grammarFocus: ['separable-verbs', 'word-order'],
       instruction: 'Find the token with the error and give its correction.',
       prompt: 'Sie vorschlägt ein Restaurant.',
-      tokens: ['Sie', 'vorschlägt', 'ein', 'Restaurant', '.'],
+      tokens: ['Sie', 'vorschlägt', 'ein', 'Restaurant.'],
       errorTokenIndex: 1,
       correction: 'schlägt',
       explanation:
@@ -1279,7 +1283,7 @@ export const chapter048: ChapterDefinition = {
       grammarFocus: ['inseparable-verbs', 'two-way-prefixes'],
       instruction: 'Find the token with the error and give its correction.',
       prompt: 'Das Schiff durchquer den Atlantik.',
-      tokens: ['Das', 'Schiff', 'durchquer', 'den', 'Atlantik', '.'],
+      tokens: ['Das', 'Schiff', 'durchquer', 'den', 'Atlantik.'],
       errorTokenIndex: 2,
       correction: 'durchquert',
       explanation:
@@ -1294,7 +1298,7 @@ export const chapter048: ChapterDefinition = {
       grammarFocus: ['inseparable-verbs', 'prefix-identification'],
       instruction: 'Find the token with the error and give its correction.',
       prompt: 'Bitte unterstehen Sie hier.',
-      tokens: ['Bitte', 'unterstehen', 'Sie', 'hier', '.'],
+      tokens: ['Bitte', 'unterstehen', 'Sie', 'hier.'],
       errorTokenIndex: 1,
       correction: 'unterschreiben',
       explanation:

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { Link, useLoaderData, useNavigate } from 'react-router-dom';
 import { Button } from '../components/common/Button';
 import { Card } from '../components/common/Card';
@@ -7,6 +7,7 @@ import { Modal } from '../components/common/Modal';
 import { ProgressBar } from '../components/common/ProgressBar';
 import { MissedExercises } from '../components/practice/MissedExercises';
 import { PracticeExercise } from '../components/practice/PracticeExercise';
+import { useExitConfirmation } from '../components/practice/useExitConfirmation';
 import { SessionSummary } from '../components/practice/SessionSummary';
 import { StudyTimer } from '../components/progress/StudyTimer';
 import {
@@ -42,7 +43,7 @@ export function CumulativeReviewPage() {
   const practice = usePracticeStore();
   const exerciseHistory = useProgressStore((state) => state.exerciseHistory);
   const shuffleOptions = useSettingsStore((state) => state.shuffleOptions);
-  const [exitDialogOpen, setExitDialogOpen] = useState(false);
+  const exit = useExitConfirmation();
 
   // `chapters` comes from the route loader, so its identity is stable for the
   // whole navigation — adding revalidation to this route would restart the
@@ -150,8 +151,7 @@ export function CumulativeReviewPage() {
   };
 
   const handleExit = () => {
-    practice.exitSession();
-    navigate(topic ? '/progress' : '/review');
+    exit.leave(practice.exitSession, () => navigate(topic ? '/progress' : '/review'));
   };
 
   return (
@@ -181,17 +181,17 @@ export function CumulativeReviewPage() {
         exercise={exercise}
         isLast={isLast}
         onFinish={handleFinish}
-        onExit={() => setExitDialogOpen(true)}
+        onExit={exit.request}
       />
 
       <Modal
-        open={exitDialogOpen}
+        open={exit.open}
         title={topic ? 'Leave this topic practice?' : 'Leave this cumulative review?'}
         description="Your answers so far are kept for this visit, but the session is not saved across a page reload."
-        onClose={() => setExitDialogOpen(false)}
+        onClose={exit.stay}
       >
         <div className="row">
-          <Button variant="secondary" onClick={() => setExitDialogOpen(false)}>
+          <Button variant="secondary" onClick={exit.stay}>
             Stay in the session
           </Button>
           <Button variant="danger" onClick={handleExit}>

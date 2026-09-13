@@ -17,8 +17,10 @@ import {
 import { evaluateMastery, type SessionSummary } from '../practice/scoring';
 import { toDayKey } from './dayKey';
 import {
+  PROGRESS_STORAGE_KEY,
   clearProgress,
   createEmptyProgress,
+  getDefaultStorage,
   loadProgress,
   saveProgress,
 } from './progressPersistence';
@@ -52,6 +54,10 @@ export interface ProgressState {
   hydrated: boolean;
   /** True when stored progress could not be read and was reset on load. */
   recovered: boolean;
+  /** Stored progress is from a newer app version, so this tab must not save over it. */
+  readOnly: boolean;
+  /** The last save failed (storage blocked, full or missing), so progress is not kept. */
+  storageUnavailable: boolean;
 
   hydrate: () => void;
   acknowledgeRecovery: () => void;
@@ -169,6 +175,15 @@ export function flushProgress(): void {
 
 if (typeof window !== 'undefined') {
   window.addEventListener('pagehide', flushProgress);
+  // Another tab saved or deleted progress. Take its version: flushing or keeping
+  // this tab's queued write would put stale progress back over the newer data.
+  // ponytail: an answer this tab queued less than WRITE_DEBOUNCE_MS ago is
+  // dropped; merging both tabs' histories would be the fix if that ever matters.
+  window.addEventListener('storage', (event) => {
+    if (event.key !== PROGRESS_STORAGE_KEY && event.key !== null) return;
+    cancelPendingWrite();
+    useProgressStore.getState().hydrate();
+  });
   document.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'hidden') flushProgress();
   });
@@ -177,7 +192,11 @@ if (typeof window !== 'undefined') {
 export const useProgressStore = create<ProgressState>()((set, get) => {
   // The queued closure reads state when it runs, not when it was queued, so a
   // pending write always serialises the newest progress.
-  const write = () => saveProgress(toPersisted(get()));
+  const write = () => {
+    if (get().readOnly) return;
+    const saved = saveProgress(toPersisted(get()));
+    if (saved === get().storageUnavailable) set({ storageUnavailable: !saved });
+  };
 
   const persist = () => {
     pendingWrite = write;
@@ -195,9 +214,12 @@ export const useProgressStore = create<ProgressState>()((set, get) => {
     ...createEmptyProgress(),
     hydrated: false,
     recovered: false,
+    readOnly: false,
+    storageUnavailable: false,
 
     hydrate: () => {
-      const { state, recovered } = loadProgress();
+      const storage = getDefaultStorage();
+      const { state, recovered, newerVersion } = loadProgress(storage);
       set({
         chapters: state.chapters,
         exerciseHistory: state.exerciseHistory,
@@ -207,6 +229,8 @@ export const useProgressStore = create<ProgressState>()((set, get) => {
         lastOpenedChapter: state.lastOpenedChapter,
         hydrated: true,
         recovered,
+        readOnly: newerVersion,
+        storageUnavailable: storage === null,
       });
     },
 
@@ -336,7 +360,13 @@ export const useProgressStore = create<ProgressState>()((set, get) => {
       // put everything back.
       cancelPendingWrite();
       clearProgress();
-      set({ ...createEmptyProgress(), lastOpenedChapter: undefined, hydrated: true });
+      // An explicit delete also releases a newer version's progress.
+      set({
+        ...createEmptyProgress(),
+        lastOpenedChapter: undefined,
+        hydrated: true,
+        readOnly: false,
+      });
     },
 
     replaceProgress: (state) => {
@@ -348,6 +378,8 @@ export const useProgressStore = create<ProgressState>()((set, get) => {
         otherStudyMs: state.otherStudyMs,
         lastOpenedChapter: state.lastOpenedChapter,
         hydrated: true,
+        // Restoring a backup is an explicit choice to replace what is stored.
+        readOnly: false,
       });
       persistNow();
     },

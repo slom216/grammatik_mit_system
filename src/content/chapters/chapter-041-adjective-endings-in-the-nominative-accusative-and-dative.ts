@@ -26,7 +26,7 @@ export const chapter041: ChapterDefinition = {
   explanation: {
     introduction: [
       'In Chapter 40 you learned that an attributive adjective — one standing directly before a noun — takes -e after der/die/das, and -er, -e, or -es after ein/eine/ein in the nominative, while the accusative changes only the masculine ending to -en. This chapter adds the third case you already know from Chapter 18, the dative, and shows what happens to the ending when the noun is plural.',
-      'The good news is that both extensions simplify things rather than complicating them: in the dative, singular adjectives take -en no matter the gender or the article type, and in the plural, adjectives take -en in the nominative, the accusative, and the dative alike. By the end of this chapter you will have one compact strategy that covers almost every attributive adjective ending you will ever need.',
+      'The good news is that both extensions simplify things rather than complicating them: in the dative, singular adjectives take -en no matter the gender or the article type, and in the plural after an article or a word like keine or meine, adjectives take -en in the nominative, the accusative, and the dative alike. By the end of this chapter you will have one compact strategy for adjective endings after an article (plural nouns with no article at all work differently, as rule 4 shows).',
     ],
     rules: [
       {
@@ -58,10 +58,12 @@ export const chapter041: ChapterDefinition = {
       },
       {
         id: 'ch41-rule-04',
-        heading: 'Plural: nominative, accusative, and dative all take -en',
+        heading:
+          'Plural after die, keine, meine: nominative, accusative, and dative all take -en',
         paragraphs: [
           'German has no gender distinction in the plural, and the adjective ending reflects that simplicity: after the plural definite article die and after plural forms such as keine (no/not any) or meine (my), the adjective ending is -en in the nominative, the accusative, and the dative alike. Die kleinen Kinder spielen im Garten. (nominative) Ich sehe die kleinen Kinder. (accusative) Die Lehrerin hilft den kleinen Kindern. (dative)',
-          'So while the singular still distinguishes nominative from accusative from dative, the plural collapses almost all of that variation into a single, predictable -en ending on the adjective.',
+          'So while the singular still distinguishes nominative from accusative from dative, the plural after an article collapses almost all of that variation into a single, predictable -en ending on the adjective.',
+          'Watch out when there is no article at all. Then the adjective itself has to show the case, so it takes -e in the nominative and accusative plural: neue Schuhe, zwei kleine Kinder, Ich kaufe frische Äpfel. Only the dative plural keeps -en: mit kleinen Kindern. Numbers such as zwei or drei are not articles, so they do not change this. Chapter 84 covers these article-less endings in full.',
         ],
       },
       {
@@ -76,11 +78,11 @@ export const chapter041: ChapterDefinition = {
         id: 'ch41-rule-06',
         heading: 'Pattern-recognition strategy: when in doubt, guess -en',
         paragraphs: [
-          'Across everything covered in Chapters 40 and 41, -en is by far the most common attributive adjective ending: it appears in the masculine accusative singular, in the entire dative singular (all genders), and in the entire plural (nominative, accusative, and dative). A fast, reliable strategy is therefore to default to -en and only look for an exception in two situations: the nominative singular (any gender) and the feminine or neuter accusative singular — those are the spots where -e, -er, or -es appear instead.',
-          'In practice: first decide whether the noun phrase is plural or dative — if either is true, the ending is almost certainly -en. If it is singular and neither accusative-masculine nor dative, check the article type and gender against the Chapter 40 table for -e, -er, or -es.',
+          'Across everything covered in Chapters 40 and 41, -en is by far the most common attributive adjective ending after an article: it appears in the masculine accusative singular, in the entire dative singular (all genders), and in the entire plural after die, keine, meine and similar words (nominative, accusative, and dative). A fast, reliable strategy is therefore to default to -en and only look for an exception in two situations: the nominative singular (any gender) and the feminine or neuter accusative singular — those are the spots where -e, -er, or -es appear instead.',
+          'In practice: first decide whether the noun phrase is dative, or plural with an article or keine/meine in front — if so, the ending is almost certainly -en. If it is singular and neither accusative-masculine nor dative, check the article type and gender against the Chapter 40 table for -e, -er, or -es. The strategy does not cover plurals with no article: those take -e in the nominative and accusative (neue Schuhe, zwei kleine Kinder).',
         ],
         notes: [
-          'The -en pattern: masculine accusative singular + all dative singular + all plural (nom/acc/dat) = -en. Everything else in the singular nominative, and feminine/neuter accusative singular, keeps the Chapter 40 endings.',
+          'The -en pattern: masculine accusative singular + all dative singular + all plural after die/keine/meine (nom/acc/dat) = -en. Everything else in the singular nominative, and feminine/neuter accusative singular, keeps the Chapter 40 endings. Plural without an article: -e in the nominative and accusative (neue Schuhe).',
         ],
       },
     ],
@@ -125,7 +127,7 @@ export const chapter041: ChapterDefinition = {
             '-en (keinen roten Äpfeln)',
           ],
         ],
-        note: 'In the plural, the adjective ending is -en in all three cases. In the dative plural, the noun itself also adds -n: Äpfel → Äpfeln.',
+        note: 'After die, keine, or meine, the plural adjective ending is -en in all three cases. In the dative plural, the noun itself also adds -n: Äpfel → Äpfeln. Without an article, the plural ending is -e in the nominative and accusative (rote Äpfel) and -en in the dative (mit roten Äpfeln).',
       },
       {
         id: 'ch41-table-03',
@@ -145,12 +147,12 @@ export const chapter041: ChapterDefinition = {
           ['Masculine accusative singular', '-en', 'den roten Apfel'],
           ['Dative singular (any gender)', '-en', 'dem roten Apfel; der roten Tasche'],
           [
-            'Plural — nominative, accusative, dative',
+            'Plural after die/keine/meine — nominative, accusative, dative',
             '-en',
             'die roten Äpfel; den roten Äpfeln',
           ],
         ],
-        note: 'Use this table as a quick self-check: everything except the top two rows takes -en.',
+        note: 'Use this table as a quick self-check: everything except the top two rows takes -en. It covers noun phrases with an article; a plural with no article takes -e in the nominative and accusative (neue Schuhe).',
       },
     ],
     examples: [
@@ -239,12 +241,11 @@ export const chapter041: ChapterDefinition = {
           'Dative plural: the adjective takes -en; Nachbarn already ends in -n, so the noun form does not change further.',
       },
       {
-        german:
-          'Ich kaufe den roten Apfel, aber ich schenke der roten Tasche keine Beachtung.',
-        english: 'I am buying the red apple, but I am paying the red bag no attention.',
-        highlight: ['den', 'roten', 'der', 'roten'],
+        german: 'Ich kaufe den roten Apfel und gebe ihn der kleinen Tochter.',
+        english: 'I am buying the red apple and giving it to the little daughter.',
+        highlight: ['den', 'roten', 'der', 'kleinen'],
         explanation:
-          'den roten Apfel is masculine accusative (-en); der roten Tasche is feminine dative after schenken (-en) — both endings are -en, but for different reasons.',
+          'den roten Apfel is masculine accusative (-en); der kleinen Tochter is the feminine dative indirect object of geben (-en) — both endings are -en, but for different reasons.',
       },
       {
         german: 'Das Kind gibt dem Hund und der Katze Futter.',
@@ -265,7 +266,7 @@ export const chapter041: ChapterDefinition = {
         incorrect: 'Ich danke der nette Frau.',
         correct: 'Ich danke der netten Frau.',
         explanation:
-          'Even though der looks like the nominative/dative feminine article family, in the dative the adjective ending is -en, not -e.',
+          'danken takes the dative, so der here is the feminine dative article, not the masculine nominative der. After a dative article the adjective ending is -en, not -e.',
       },
       {
         incorrect: 'Wir danken einer freundliche Frau.',
@@ -294,9 +295,9 @@ export const chapter041: ChapterDefinition = {
     ],
     remember: [
       'Dative singular: the adjective ending is -en in every gender, after both der-words (dem/der/dem) and ein-words (einem/einer/einem).',
-      'Plural: the adjective ending is -en in the nominative, the accusative, and the dative alike, after die as well as after keine/meine and similar words.',
+      'Plural: the adjective ending is -en in the nominative, the accusative, and the dative alike, after die as well as after keine/meine and similar words. Without any article, the plural takes -e in the nominative and accusative: neue Schuhe, zwei kleine Kinder.',
       'Dative plural adds an extra -n to the noun itself, unless the noun already ends in -n or -s (die Kinder → den Kindern, but die Nachbarn → den Nachbarn).',
-      'Strategy: if a noun phrase is plural or dative, guess -en first. Only the nominative singular and the feminine/neuter accusative singular use -e, -er, or -es instead.',
+      'Strategy: if a noun phrase is dative, or plural after an article or keine/meine, guess -en first. Only the nominative singular and the feminine/neuter accusative singular use -e, -er, or -es instead.',
     ],
   },
   mastery: {
@@ -813,7 +814,7 @@ export const chapter041: ChapterDefinition = {
       ],
       correctOptionId: 'd',
       explanation:
-        'mit takes the dative, and the plural adjective ending is -en regardless of case: mit den kleinen Kindern.',
+        'mit takes the dative, and after the plural article den the adjective ending is -en: mit den kleinen Kindern.',
     },
     {
       id: 'ch41-ex-30',
@@ -1071,7 +1072,7 @@ export const chapter041: ChapterDefinition = {
         { id: 'p5', left: 'einem ___ Kind (klein)', right: 'einem kleinen Kind' },
       ],
       explanation:
-        'Dative singular (any gender) and the entire plural take -en; matching the blank to its filled form checks both patterns at once.',
+        'Dative singular (any gender) and the plural after an article take -en; matching the blank to its filled form checks both patterns at once.',
     },
     {
       id: 'ch41-ex-46',
@@ -1125,10 +1126,10 @@ export const chapter041: ChapterDefinition = {
         'Match each sentence beginning with the ending that correctly completes it.',
       prompt: 'Match the sentence halves.',
       pairs: [
-        { id: 'p1', left: 'Ich sehe...', right: 'den roten Apfel.' },
-        { id: 'p2', left: 'Ich helfe...', right: 'dem alten Mann.' },
+        { id: 'p1', left: 'Ich sehe das...', right: 'rote Auto.' },
+        { id: 'p2', left: 'Ich helfe dem...', right: 'alten Mann.' },
         { id: 'p3', left: 'Der rote Apfel...', right: 'liegt auf dem Tisch.' },
-        { id: 'p4', left: 'Wir danken...', right: 'der netten Frau.' },
+        { id: 'p4', left: 'Wir danken der...', right: 'netten Frau.' },
         { id: 'p5', left: 'Die kleinen Kinder...', right: 'spielen im Garten.' },
       ],
       explanation:
@@ -1150,7 +1151,7 @@ export const chapter041: ChapterDefinition = {
           right: 'den roten Apfel',
         },
         { id: 'p2', left: 'gesamter Dativ Singular', right: 'dem/der/dem + -en' },
-        { id: 'p3', left: 'gesamter Plural (alle Kasus)', right: 'die/den + -en' },
+        { id: 'p3', left: 'Plural mit Artikel (alle Kasus)', right: 'die/den + -en' },
         {
           id: 'p4',
           left: 'Nominativ nach der-Wort (alle Genera)',
@@ -1163,7 +1164,7 @@ export const chapter041: ChapterDefinition = {
         },
       ],
       explanation:
-        'This matches the "-en pattern" strategy from this chapter: masculine accusative, all dative singular, and all plural take -en; only the nominative keeps -e/-er/-es distinctions.',
+        'This matches the "-en pattern" strategy from this chapter: masculine accusative, all dative singular, and all plural after an article take -en; only the nominative keeps -e/-er/-es distinctions.',
     },
     {
       id: 'ch41-ex-50',
@@ -1174,7 +1175,7 @@ export const chapter041: ChapterDefinition = {
       grammarFocus: ['dative', 'der-word', 'masculine', 'error-recognition'],
       instruction: 'Click the word with the wrong ending.',
       prompt: 'Find the mistake.',
-      tokens: ['Ich', 'helfe', 'dem', 'alte', 'Mann', '.'],
+      tokens: ['Ich', 'helfe', 'dem', 'alte', 'Mann.'],
       errorTokenIndex: 3,
       correction: 'alten',
       explanation:
@@ -1189,7 +1190,7 @@ export const chapter041: ChapterDefinition = {
       grammarFocus: ['dative', 'der-word', 'feminine', 'error-recognition'],
       instruction: 'Click the word with the wrong ending.',
       prompt: 'Find the mistake.',
-      tokens: ['Ich', 'danke', 'der', 'nette', 'Frau', '.'],
+      tokens: ['Ich', 'danke', 'der', 'nette', 'Frau.'],
       errorTokenIndex: 3,
       correction: 'netten',
       explanation:
@@ -1204,7 +1205,7 @@ export const chapter041: ChapterDefinition = {
       grammarFocus: ['plural', 'dative', 'error-recognition'],
       instruction: 'Click the word that is wrong.',
       prompt: 'Find the mistake.',
-      tokens: ['Die', 'Lehrerin', 'hilft', 'die', 'kleinen', 'Kinder', '.'],
+      tokens: ['Die', 'Lehrerin', 'hilft', 'die', 'kleinen', 'Kinder.'],
       errorTokenIndex: 3,
       correction: 'den',
       explanation:
@@ -1219,7 +1220,7 @@ export const chapter041: ChapterDefinition = {
       grammarFocus: ['dative', 'ein-word', 'feminine', 'error-recognition'],
       instruction: 'Click the word with the wrong ending.',
       prompt: 'Find the mistake.',
-      tokens: ['Wir', 'danken', 'einer', 'freundliche', 'Frau', '.'],
+      tokens: ['Wir', 'danken', 'einer', 'freundliche', 'Frau.'],
       errorTokenIndex: 3,
       correction: 'freundlichen',
       explanation:
@@ -1234,9 +1235,9 @@ export const chapter041: ChapterDefinition = {
       grammarFocus: ['dative', 'plural', 'noun-ending', 'error-recognition'],
       instruction: 'Click the word that is wrong.',
       prompt: 'Find the mistake.',
-      tokens: ['Er', 'dankt', 'den', 'netten', 'Nachbarns', '.'],
+      tokens: ['Er', 'dankt', 'den', 'netten', 'Nachbarns.'],
       errorTokenIndex: 4,
-      correction: 'Nachbarn',
+      correction: 'Nachbarn.',
       explanation:
         'Nachbarn already ends in -n, so the dative plural does not add a further -s: den netten Nachbarn.',
     },
@@ -1249,7 +1250,7 @@ export const chapter041: ChapterDefinition = {
       grammarFocus: ['plural', 'nominative', 'error-recognition'],
       instruction: 'Click the word that is wrong.',
       prompt: 'Find the mistake.',
-      tokens: ['Die', 'klein', 'Kinder', 'spielen', 'im', 'Garten', '.'],
+      tokens: ['Die', 'klein', 'Kinder', 'spielen', 'im', 'Garten.'],
       errorTokenIndex: 1,
       correction: 'kleinen',
       explanation:

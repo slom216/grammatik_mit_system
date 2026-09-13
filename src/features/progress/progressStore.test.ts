@@ -188,11 +188,11 @@ describe('progressStore', () => {
   it('survives a page refresh', () => {
     const store = useProgressStore.getState();
     store.recordSessionResult({
-      chapterNumber: 0,
+      chapterNumber: 1,
       summary: summarizeSession(perfectRecords(), 4),
       mastery,
     });
-    store.setLastOpenedChapter(0);
+    store.setLastOpenedChapter(1);
 
     // Simulate a reload: writes are on a timer, and a real unload flushes them
     // before the page goes away.
@@ -202,8 +202,8 @@ describe('progressStore', () => {
 
     const state = useProgressStore.getState();
     expect(state.hydrated).toBe(true);
-    expect(state.lastOpenedChapter).toBe(0);
-    expect(selectChapterProgress(state, 0).bestScorePercent).toBe(100);
+    expect(state.lastOpenedChapter).toBe(1);
+    expect(selectChapterProgress(state, 1).bestScorePercent).toBe(100);
   });
 
   describe('storage writes', () => {
@@ -225,7 +225,7 @@ describe('progressStore', () => {
       for (let index = 0; index < 10; index += 1) {
         useProgressStore.getState().recordAttempt({
           exerciseId: `burst-ex-${index}`,
-          chapterNumber: 0,
+          chapterNumber: 1,
           outcome: 'correctFirstAttempt',
         });
       }
@@ -270,6 +270,114 @@ describe('progressStore', () => {
 
       useProgressStore.getState().hydrate();
       expect(useProgressStore.getState().exerciseHistory).toEqual({});
+    });
+  });
+
+  describe('other tabs and storage problems', () => {
+    function storedProgress() {
+      return JSON.parse(window.localStorage.getItem(PROGRESS_STORAGE_KEY) ?? 'null') as {
+        schemaVersion: number;
+        exerciseHistory: Record<string, unknown>;
+      } | null;
+    }
+
+    /** What another tab does: write storage, and this tab receives a `storage` event. */
+    function otherTabWrites(value: string | null) {
+      if (value === null) window.localStorage.removeItem(PROGRESS_STORAGE_KEY);
+      else window.localStorage.setItem(PROGRESS_STORAGE_KEY, value);
+      window.dispatchEvent(
+        new StorageEvent('storage', { key: PROGRESS_STORAGE_KEY, newValue: value }),
+      );
+    }
+
+    afterEach(() => {
+      vi.restoreAllMocks();
+      vi.useRealTimers();
+    });
+
+    it('takes the newer progress another tab saved, dropping its own stale write', () => {
+      vi.useFakeTimers();
+      const store = useProgressStore.getState();
+      store.recordAttempt({
+        exerciseId: 'fresh-ex',
+        chapterNumber: 1,
+        outcome: 'incorrect',
+      });
+      flushProgress();
+      const fresh = window.localStorage.getItem(PROGRESS_STORAGE_KEY);
+
+      // This tab is behind: it queues a write based on old state...
+      useProgressStore.setState({ exerciseHistory: {} });
+      useProgressStore.getState().recordAttempt({
+        exerciseId: 'stale-ex',
+        chapterNumber: 1,
+        outcome: 'incorrect',
+      });
+      // ...when the other tab's save arrives.
+      otherTabWrites(fresh);
+      vi.runAllTimers();
+
+      expect(Object.keys(useProgressStore.getState().exerciseHistory)).toEqual([
+        'fresh-ex',
+      ]);
+      expect(Object.keys(storedProgress()?.exerciseHistory ?? {})).toEqual(['fresh-ex']);
+
+      // Later writes build on the fresh state.
+      useProgressStore
+        .getState()
+        .recordAttempt({ exerciseId: 'next-ex', chapterNumber: 1, outcome: 'incorrect' });
+      vi.runAllTimers();
+      expect(Object.keys(storedProgress()?.exerciseHistory ?? {}).sort()).toEqual([
+        'fresh-ex',
+        'next-ex',
+      ]);
+    });
+
+    it('follows a "Delete all progress" in another tab', () => {
+      useProgressStore
+        .getState()
+        .recordAttempt({ exerciseId: 'gone-ex', chapterNumber: 1, outcome: 'incorrect' });
+      flushProgress();
+
+      otherTabWrites(null);
+      useProgressStore.getState().addStudyTime(1, 15_000);
+      flushProgress();
+
+      expect(useProgressStore.getState().exerciseHistory).toEqual({});
+      expect(storedProgress()?.exerciseHistory).toEqual({});
+    });
+
+    it('never saves over progress from a newer version', () => {
+      vi.spyOn(console, 'warn').mockImplementation(() => {});
+      const newer = JSON.stringify({ schemaVersion: 99, exerciseHistory: { a: {} } });
+      window.localStorage.setItem(PROGRESS_STORAGE_KEY, newer);
+
+      useProgressStore.getState().hydrate();
+      const state = useProgressStore.getState();
+      expect(state.readOnly).toBe(true);
+      expect(state.recovered).toBe(false);
+
+      state.recordAttempt({ exerciseId: 'x', chapterNumber: 1, outcome: 'incorrect' });
+      flushProgress();
+      expect(window.localStorage.getItem(PROGRESS_STORAGE_KEY)).toBe(newer);
+    });
+
+    it('flags a save that fails, and clears the flag once saving works again', () => {
+      vi.spyOn(console, 'warn').mockImplementation(() => {});
+      const setItem = vi.spyOn(Storage.prototype, 'setItem').mockImplementation(() => {
+        throw new Error('QuotaExceededError');
+      });
+
+      useProgressStore
+        .getState()
+        .recordAttempt({ exerciseId: 'x', chapterNumber: 1, outcome: 'incorrect' });
+      flushProgress();
+      expect(useProgressStore.getState().storageUnavailable).toBe(true);
+
+      setItem.mockRestore();
+      useProgressStore.getState().toggleBookmark(1);
+      flushProgress();
+      expect(useProgressStore.getState().storageUnavailable).toBe(false);
     });
   });
 

@@ -609,7 +609,8 @@ export const chapter033: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'zum',
       maxLength: 15,
-      explanation: 'zu + dem contracts to zum: Ich gehe zum Kino.',
+      explanation:
+        'zu + dem contracts to zum: Ich gehe zum Kino (to the cinema building). To say you are going to see a film, German usually says ins Kino (Chapter 37).',
     },
     {
       id: 'ch33-ex-18',

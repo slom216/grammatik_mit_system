@@ -42,7 +42,7 @@ export const chapter049: ChapterDefinition = {
         paragraphs: [
           'Beyond natural gender, whole categories of nouns share the same grammatical gender almost without exception. Days of the week, months, and seasons are masculine: der Montag, der Dienstag, der Januar, der Mai, der Sommer, der Winter. Most weather phenomena are also masculine: der Regen, der Schnee, der Wind, der Nebel, der Sturm.',
           'Cardinal points and many alcoholic drinks are masculine too: der Norden, der Süden, der Wein, der Sekt. Numbers used as nouns, most trees, and most flowers are typically feminine: die Eins, die Million, die Tanne, die Eiche, die Rose, die Tulpe — though der Ahorn ("maple") is a well-known exception among trees.',
-          'Metals and chemical elements are typically neuter: das Gold, das Silber, das Kupfer, das Eisen — though der Stahl ("steel", not a pure element) is a notable masculine exception. Letters of the alphabet and colors used as nouns are also neuter: das A, das Rot, das Blau.',
+          'Metals are typically neuter: das Gold, das Silber, das Kupfer, das Eisen — though der Stahl ("steel", an alloy rather than a pure metal) is a notable masculine exception. Do not stretch this rule to all chemical elements: many common ones are masculine, such as der Sauerstoff, der Wasserstoff, der Stickstoff, der Kohlenstoff, and der Schwefel. Letters of the alphabet and colors used as nouns are also neuter: das A, das Rot, das Blau.',
           'These semantic groups are a useful first guess whenever you meet a new noun that belongs to one of these categories, but — as with the suffix rules below — a handful of well-known exceptions exist in each group, so it is still worth confirming gender in a dictionary.',
         ],
       },
@@ -52,7 +52,7 @@ export const chapter049: ChapterDefinition = {
         paragraphs: [
           'Certain noun-forming suffixes are strong, reliable predictors of masculine gender. The agent suffix -er, which turns a verb stem into "someone or something that does X", is masculine: lehren → der Lehrer, fahren → der Fahrer, backen → der Bäcker. The same -er suffix also forms many nationality and instrument nouns: der Amerikaner, der Computer.',
           'The suffix -ling forms masculine nouns from adjectives or verb stems, often naming a person or a stage of development: der Frühling ("spring"), der Schmetterling ("butterfly"), der Lehrling ("apprentice"), der Feigling ("coward").',
-          'Loanword suffixes borrowed from Latin and Greek that end in -ismus, -or, and -us are masculine: der Tourismus, der Kapitalismus, der Motor, der Doktor, der Kurs. These suffixes are especially common in international and technical vocabulary, which makes them easy to recognize even without knowing the word.',
+          'Loanword suffixes borrowed from Latin and Greek that end in -ismus, -or, and -us are masculine: der Tourismus, der Kapitalismus, der Motor, der Doktor, der Kaktus, der Rhythmus. These suffixes are especially common in international and technical vocabulary, which makes them easy to recognize even without knowing the word.',
         ],
       },
       {
@@ -120,12 +120,12 @@ export const chapter049: ChapterDefinition = {
           [
             '-chen / -lein (diminutives)',
             'das Mädchen, das Fräulein',
-            'the girl, the young lady',
+            'the girl, Miss (old-fashioned)',
           ],
           ['-ment', 'das Dokument', 'the document'],
           ['Ge- nouns', 'das Gebirge', 'the mountain range'],
           ['infinitives used as nouns', 'das Essen, das Leben', 'eating/food, life'],
-          ['metals & elements', 'das Gold, das Eisen', 'gold, iron'],
+          ['metals', 'das Gold, das Eisen', 'gold, iron'],
         ],
       },
       {
@@ -155,7 +155,7 @@ export const chapter049: ChapterDefinition = {
             'Stahl (steel)',
             'neuter (like other metals)',
             'der Stahl',
-            'not a pure chemical element, so it does not follow the neuter-metal pattern',
+            'an alloy, not a pure metal, so it does not follow the neuter-metal pattern',
           ],
         ],
         note: 'These four nouns are among the most frequently confused in the whole language — memorize them individually rather than trying to force them into a rule.',
@@ -231,9 +231,10 @@ export const chapter049: ChapterDefinition = {
       },
       {
         german: 'das Fräulein',
-        english: 'the young lady',
+        english: 'Miss (old-fashioned form of address)',
         highlight: ['das Fräulein'],
-        explanation: 'The diminutive suffix -lein always makes a noun neuter.',
+        explanation:
+          'The diminutive suffix -lein always makes a noun neuter. Fräulein is outdated today; adult women are addressed as Frau.',
       },
       {
         german: 'das Dokument',
@@ -302,7 +303,7 @@ export const chapter049: ChapterDefinition = {
     remember: [
       'Suffixes are the most reliable gender clue: -chen/-lein/-ment are always neuter; -ung/-heit/-keit/-schaft/-ion/-tät/-in are always feminine; -er (agent nouns), -ling, and -ismus are (almost) always masculine.',
       "Diminutive endings -chen and -lein always make a noun neuter, regardless of the base noun's own gender or the natural sex of the person it refers to (das Mädchen, das Fräulein).",
-      'Days of the week, months, seasons, and most weather terms are masculine (der Montag, der Mai, der Winter, der Regen); metals and chemical elements are typically neuter (das Gold, das Eisen).',
+      'Days of the week, months, seasons, and most weather terms are masculine (der Montag, der Mai, der Winter, der Regen); metals are typically neuter (das Gold, das Eisen).',
       'Learn every new noun together with its article, and keep a written list of the exceptions that break the suffix and semantic-group rules (der Junge, das Mädchen, das Auto).',
       'No rule in this chapter is 100% exception-free — when in doubt, check a dictionary rather than guessing from the ending or meaning alone.',
     ],
@@ -522,8 +523,7 @@ export const chapter049: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['semantic-group', 'metals'],
       instruction: 'Choose the article that fits this whole semantic group.',
-      prompt:
-        'Welcher Artikel passt zu Metallen und chemischen Elementen (___ Gold, ___ Silber, ___ Eisen)?',
+      prompt: 'Welcher Artikel passt zu Metallen (___ Gold, ___ Silber, ___ Eisen)?',
       options: [
         { id: 'a', text: 'der' },
         { id: 'b', text: 'die' },
@@ -531,7 +531,7 @@ export const chapter049: ChapterDefinition = {
       ],
       correctOptionId: 'c',
       explanation:
-        'Metals and chemical elements are typically neuter (though der Stahl is a well-known exception).',
+        'Metals are typically neuter (though der Stahl is a well-known exception).',
     },
     {
       id: 'ch49-ex-13',
@@ -810,7 +810,7 @@ export const chapter049: ChapterDefinition = {
       instruction:
         'Complete the sentence with the correct article. Capitalisation and punctuation are checked.',
       prompt: '___ Freiheit ist ein hohes Gut.',
-      acceptedAnswers: ['Die Freiheit ist ein hohes Gut.'],
+      acceptedAnswers: ['Die Freiheit ist ein hohes Gut.', 'Die', 'Die Freiheit'],
       answerMode: 'normalized',
       placeholder: 'Die ...',
       maxLength: 40,
@@ -991,7 +991,7 @@ export const chapter049: ChapterDefinition = {
       grammarFocus: ['suffix-or-us', 'masculine-suffix'],
       instruction: 'Choose the gender that these loanword suffixes signal.',
       prompt:
-        'Welches Geschlecht haben Lehnwörter auf -or und -us (z. B. der Motor, der Kurs)?',
+        'Welches Geschlecht haben Lehnwörter auf -or und -us (z. B. der Motor, der Kaktus)?',
       options: [
         { id: 'a', text: 'maskulin (der)' },
         { id: 'b', text: 'feminin (die)' },
@@ -1117,12 +1117,13 @@ export const chapter049: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['suffix-us', 'article-choice'],
       instruction: 'Write the correct definite article (der, die, or das) for this noun.',
-      prompt: 'Kurs → ___',
-      acceptedAnswers: ['der', 'der Kurs'],
+      prompt: 'Kaktus → ___',
+      acceptedAnswers: ['der', 'der Kaktus'],
       answerMode: 'caseInsensitive',
       placeholder: 'der/die/das',
       maxLength: 20,
-      explanation: 'Kurs follows the masculine loanword pattern: der Kurs.',
+      explanation:
+        'Kaktus ends in the Latin loanword suffix -us, which is masculine: der Kaktus.',
     },
     {
       id: 'ch49-ex-48',
@@ -1348,8 +1349,8 @@ export const chapter049: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['semantic-group', 'trees', 'exception'],
-      instruction: 'Match each tree noun to its correct article.',
-      prompt: 'Ordne jeden Baum dem passenden Artikel zu.',
+      instruction: 'Match each tree or flower noun to its correct article.',
+      prompt: 'Ordne jeden Baum und jede Blume dem passenden Artikel zu.',
       pairs: [
         { id: 'p1', left: 'Tanne', right: 'die Tanne' },
         { id: 'p2', left: 'Eiche', right: 'die Eiche' },
@@ -1367,8 +1368,9 @@ export const chapter049: ChapterDefinition = {
       type: 'matching',
       level: 'controlled',
       grammarFocus: ['semantic-group', 'metals', 'exception'],
-      instruction: 'Match each metal noun to its correct article.',
-      prompt: 'Ordne jedes Metall dem passenden Artikel zu.',
+      instruction:
+        'Match each noun (metals, steel, and a colour) to its correct article.',
+      prompt: 'Ordne jedes Nomen dem passenden Artikel zu.',
       pairs: [
         { id: 'p1', left: 'Kupfer', right: 'das Kupfer' },
         { id: 'p2', left: 'Eisen', right: 'das Eisen' },
@@ -1450,7 +1452,7 @@ export const chapter049: ChapterDefinition = {
         'Ordne jede englische Bedeutung dem passenden deutschen Nomen mit Artikel zu.',
       pairs: [
         { id: 'p1', left: 'the girl', right: 'das Mädchen' },
-        { id: 'p2', left: 'the young lady', right: 'das Fräulein' },
+        { id: 'p2', left: 'Miss (old-fashioned form of address)', right: 'das Fräulein' },
         { id: 'p3', left: 'the document', right: 'das Dokument' },
         { id: 'p4', left: 'the element', right: 'das Element' },
         { id: 'p5', left: 'the mountain range', right: 'das Gebirge' },
@@ -1487,7 +1489,7 @@ export const chapter049: ChapterDefinition = {
       grammarFocus: ['suffix-ung', 'feminine-suffix', 'article-choice'],
       instruction: 'Find the token with the wrong article and correct it.',
       prompt: 'Finde den falschen Artikel im Satz.',
-      tokens: ['Der', 'Zeitung', 'liegt', 'auf', 'dem', 'Tisch', '.'],
+      tokens: ['Der', 'Zeitung', 'liegt', 'auf', 'dem', 'Tisch.'],
       errorTokenIndex: 0,
       correction: 'Die',
       explanation:
@@ -1502,7 +1504,7 @@ export const chapter049: ChapterDefinition = {
       grammarFocus: ['suffix-heit', 'feminine-suffix', 'article-choice'],
       instruction: 'Find the token with the wrong article and correct it.',
       prompt: 'Finde den falschen Artikel im Satz.',
-      tokens: ['Das', 'Freiheit', 'ist', 'wichtig', '.'],
+      tokens: ['Das', 'Freiheit', 'ist', 'wichtig.'],
       errorTokenIndex: 0,
       correction: 'Die',
       explanation:
@@ -1517,7 +1519,7 @@ export const chapter049: ChapterDefinition = {
       grammarFocus: ['suffix-ismus', 'masculine-suffix', 'article-choice'],
       instruction: 'Find the token with the wrong article and correct it.',
       prompt: 'Finde den falschen Artikel im Satz.',
-      tokens: ['Die', 'Tourismus', 'wächst', 'schnell', '.'],
+      tokens: ['Die', 'Tourismus', 'wächst', 'schnell.'],
       errorTokenIndex: 0,
       correction: 'Der',
       explanation:
@@ -1532,7 +1534,7 @@ export const chapter049: ChapterDefinition = {
       grammarFocus: ['diminutive', 'neuter-suffix', 'article-choice'],
       instruction: 'Find the token with the wrong article and correct it.',
       prompt: 'Finde den falschen Artikel im Satz.',
-      tokens: ['Der', 'Mädchen', 'spielt', 'im', 'Garten', '.'],
+      tokens: ['Der', 'Mädchen', 'spielt', 'im', 'Garten.'],
       errorTokenIndex: 0,
       correction: 'Das',
       explanation:
@@ -1547,7 +1549,7 @@ export const chapter049: ChapterDefinition = {
       grammarFocus: ['exception', 'natural-gender', 'article-choice'],
       instruction: 'Find the token with the wrong article and correct it.',
       prompt: 'Finde den falschen Artikel im Satz.',
-      tokens: ['Die', 'Junge', 'läuft', 'schnell', '.'],
+      tokens: ['Die', 'Junge', 'läuft', 'schnell.'],
       errorTokenIndex: 0,
       correction: 'Der',
       explanation:
@@ -1562,7 +1564,7 @@ export const chapter049: ChapterDefinition = {
       grammarFocus: ['suffix-schaft', 'feminine-suffix', 'article-choice'],
       instruction: 'Find the token with the wrong article and correct it.',
       prompt: 'Finde den falschen Artikel im Satz.',
-      tokens: ['Das', 'Freundschaft', 'dauert', 'lange', '.'],
+      tokens: ['Das', 'Freundschaft', 'dauert', 'lange.'],
       errorTokenIndex: 0,
       correction: 'Die',
       explanation:
@@ -1577,7 +1579,7 @@ export const chapter049: ChapterDefinition = {
       grammarFocus: ['suffix-tät', 'feminine-suffix', 'article-choice'],
       instruction: 'Find the token with the wrong article and correct it.',
       prompt: 'Finde den falschen Artikel im Satz.',
-      tokens: ['Der', 'Universität', 'ist', 'alt', '.'],
+      tokens: ['Der', 'Universität', 'ist', 'alt.'],
       errorTokenIndex: 0,
       correction: 'Die',
       explanation:
@@ -1592,7 +1594,7 @@ export const chapter049: ChapterDefinition = {
       grammarFocus: ['suffix-ment', 'neuter-suffix', 'article-choice'],
       instruction: 'Find the token with the wrong article and correct it.',
       prompt: 'Finde den falschen Artikel im Satz.',
-      tokens: ['Die', 'Dokument', 'liegt', 'hier', '.'],
+      tokens: ['Die', 'Dokument', 'liegt', 'hier.'],
       errorTokenIndex: 0,
       correction: 'Das',
       explanation:
@@ -1607,7 +1609,7 @@ export const chapter049: ChapterDefinition = {
       grammarFocus: ['suffix-ling', 'masculine-suffix', 'article-choice'],
       instruction: 'Find the token with the wrong article and correct it.',
       prompt: 'Finde den falschen Artikel im Satz.',
-      tokens: ['Die', 'Frühling', 'beginnt', 'im', 'März', '.'],
+      tokens: ['Die', 'Frühling', 'beginnt', 'im', 'März.'],
       errorTokenIndex: 0,
       correction: 'Der',
       explanation:
@@ -1622,7 +1624,7 @@ export const chapter049: ChapterDefinition = {
       grammarFocus: ['semantic-group', 'days-months-seasons', 'article-choice'],
       instruction: 'Find the token with the wrong article and correct it.',
       prompt: 'Finde den falschen Artikel im Satz.',
-      tokens: ['Die', 'Montag', 'ist', 'ein', 'Arbeitstag', '.'],
+      tokens: ['Die', 'Montag', 'ist', 'ein', 'Arbeitstag.'],
       errorTokenIndex: 0,
       correction: 'Der',
       explanation: 'Days of the week are masculine, so the article must be Der, not Die.',
@@ -1636,7 +1638,7 @@ export const chapter049: ChapterDefinition = {
       grammarFocus: ['semantic-group', 'metals', 'article-choice'],
       instruction: 'Find the token with the wrong article and correct it.',
       prompt: 'Finde den falschen Artikel im Satz.',
-      tokens: ['Der', 'Gold', 'glänzt', 'hell', '.'],
+      tokens: ['Der', 'Gold', 'glänzt', 'hell.'],
       errorTokenIndex: 0,
       correction: 'Das',
       explanation: 'Metals are typically neuter, so the article must be Das, not Der.',
@@ -1650,7 +1652,7 @@ export const chapter049: ChapterDefinition = {
       grammarFocus: ['diminutive', 'neuter-suffix', 'article-choice'],
       instruction: 'Find the token with the wrong article and correct it.',
       prompt: 'Finde den falschen Artikel im Satz.',
-      tokens: ['Die', 'Tischchen', 'steht', 'im', 'Zimmer', '.'],
+      tokens: ['Die', 'Tischchen', 'steht', 'im', 'Zimmer.'],
       errorTokenIndex: 0,
       correction: 'Das',
       explanation:

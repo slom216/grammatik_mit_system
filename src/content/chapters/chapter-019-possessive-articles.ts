@@ -46,7 +46,7 @@ export const chapter019: ChapterDefinition = {
           'mein Bruder (masc.), mein Kind (neut.), meine Schwester (fem.), meine Eltern (plural) — same stem mein-, four different endings.',
         ],
         notes: [
-          'euer loses its middle e as soon as an ending is added: euer becomes eure, not euere.',
+          'euer usually drops its middle e as soon as an ending is added: eure, euren. The fuller forms euere, eueren also exist but are rare — learn eure, euren.',
         ],
       },
       {
@@ -158,7 +158,7 @@ export const chapter019: ChapterDefinition = {
         english: 'Do you (plural) have your dog with you?',
         highlight: ['euren'],
         explanation:
-          'der Hund is masculine accusative, so euer takes -en, giving euren, not eueren.',
+          'der Hund is masculine accusative, so euer takes -en, giving the usual form euren.',
       },
       {
         german: 'Frau Klein, ist das Ihr Auto?',
@@ -199,7 +199,7 @@ export const chapter019: ChapterDefinition = {
         incorrect: 'Wir besuchen unser Großeltern.',
         correct: 'Wir besuchen unsere Großeltern.',
         explanation:
-          'die Großeltern is plural, and plural nouns always take the -e ending, regardless of case: unsere.',
+          'die Großeltern is plural, and plural nouns take the -e ending in the nominative and accusative: unsere. (The dative plural is different: mit unseren Großeltern.)',
       },
       {
         incorrect: 'Habt ihr euer Hund dabei?',
@@ -216,8 +216,8 @@ export const chapter019: ChapterDefinition = {
     ],
     remember: [
       'The owner chooses the stem: mein, dein, sein, ihr, unser, euer, Ihr — sein covers both er and es.',
-      'The noun chooses the ending: no ending for masculine/neuter, -e for feminine and plural, -en for masculine in the accusative — exactly like ein.',
-      'euer drops its middle e before an ending: euer → eure, euren, not euere, eueren.',
+      'The noun chooses the ending: no ending for masculine/neuter, -e for feminine and plural, -en for masculine in the accusative — exactly like ein (in the nominative and accusative).',
+      'euer usually drops its middle e before an ending: euer → eure, euren (the fuller euere, eueren are rare).',
       'ihr is ambiguous ("her" or "their"); Ihr, always capitalized, is the separate formal "your" that goes with Sie.',
     ],
   },
@@ -315,7 +315,7 @@ export const chapter019: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['possessive-articles', 'accusative-ending', 'owner-stem'],
       instruction: 'Choose the correct possessive article.',
-      prompt: 'Anna sucht ___ Schlüssel.',
+      prompt: 'Anna sucht ___ Schlüssel. (her key — just one)',
       options: [
         { id: 'a', text: 'ihren' },
         { id: 'b', text: 'ihr' },
@@ -334,7 +334,7 @@ export const chapter019: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['possessive-articles', 'ihr-ambiguity'],
       instruction: 'Choose the correct possessive article.',
-      prompt: 'Die Kinder lieben ___ Lehrerin.',
+      prompt: 'Die Kinder lieben ___ Lehrerin. (their teacher)',
       options: [
         { id: 'a', text: 'ihre' },
         { id: 'b', text: 'ihr' },
@@ -372,16 +372,16 @@ export const chapter019: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['possessive-articles', 'euer-contraction'],
       instruction: 'Choose the correct possessive article.',
-      prompt: '___ Freunde kommen heute.',
+      prompt: '___ Freunde kommen heute. (ihr, plural "you")',
       options: [
         { id: 'a', text: 'eure' },
-        { id: 'b', text: 'euere' },
+        { id: 'b', text: 'euren' },
         { id: 'c', text: 'euer' },
         { id: 'd', text: 'ihre' },
       ],
       correctOptionId: 'a',
       explanation:
-        'die Freunde is plural nominative, so euer needs the -e ending; the middle e is dropped, giving eure, not euere.',
+        'die Freunde is plural nominative, so euer needs the -e ending; the middle e is dropped, giving the usual form eure.',
     },
     {
       id: 'ch19-ex-09',
@@ -391,7 +391,7 @@ export const chapter019: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['possessive-articles', 'accusative-ending'],
       instruction: 'Choose the correct possessive article.',
-      prompt: 'Ich sehe ___ Bruder.',
+      prompt: 'Ich sehe ___ Bruder. (du)',
       options: [
         { id: 'a', text: 'deinen' },
         { id: 'b', text: 'dein' },
@@ -410,7 +410,7 @@ export const chapter019: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['possessive-articles', 'ihr-vs-Ihr'],
       instruction: 'Choose the correct possessive article.',
-      prompt: 'Tom kennt seine Nachbarn gut. Er mag ___ Garten.',
+      prompt: "Tom kennt seine Nachbarn gut. Er mag ___ Garten. (the neighbours' garden)",
       options: [
         { id: 'a', text: 'ihren' },
         { id: 'b', text: 'Ihren' },
@@ -429,7 +429,8 @@ export const chapter019: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['possessive-articles', 'formal-ihr'],
       instruction: 'Choose the correct possessive article.',
-      prompt: 'Guten Tag! Wie heißen ___ Kinder?',
+      prompt:
+        'Guten Tag! Wie heißen ___ Kinder? (You politely ask a parent about his or her children, Sie-form.)',
       options: [
         { id: 'a', text: 'Ihre' },
         { id: 'b', text: 'ihre' },
@@ -448,7 +449,7 @@ export const chapter019: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['possessive-articles', 'ihr-ambiguity'],
       instruction: 'Choose the correct possessive article.',
-      prompt: 'Die Studentinnen besuchen ___ Professorin.',
+      prompt: 'Die Studentinnen besuchen ___ Professorin. (their professor)',
       options: [
         { id: 'a', text: 'ihre' },
         { id: 'b', text: 'Ihre' },
@@ -525,7 +526,7 @@ export const chapter019: ChapterDefinition = {
       placeholder: 'possessive article',
       maxLength: 12,
       explanation:
-        'die Freunde is plural, and plural nouns always take -e, so sein becomes seine.',
+        'die Freunde is plural, and plural nouns take -e in the nominative and accusative, so sein becomes seine.',
     },
     {
       id: 'ch19-ex-17',
@@ -536,7 +537,7 @@ export const chapter019: ChapterDefinition = {
       grammarFocus: ['possessive-articles', 'accusative-ending'],
       instruction:
         'Fill in the correct possessive article for the owner in brackets. Capitalization is not checked.',
-      prompt: 'Wir suchen ___ Schlüssel. (wir)',
+      prompt: 'Wir suchen ___ Schlüssel. (wir — one key)',
       acceptedAnswers: ['unseren'],
       answerMode: 'caseInsensitive',
       placeholder: 'possessive article',
@@ -559,7 +560,7 @@ export const chapter019: ChapterDefinition = {
       placeholder: 'possessive article',
       maxLength: 12,
       explanation:
-        'die Wohnung is feminine nominative, so euer takes -e; the middle e drops, giving eure, not euere.',
+        'die Wohnung is feminine nominative, so euer takes -e; the middle e drops, giving the usual form eure.',
     },
     {
       id: 'ch19-ex-19',
@@ -573,7 +574,7 @@ export const chapter019: ChapterDefinition = {
       prompt:
         'Entschuldigung, ist das ___ Regenschirm? (You are politely addressing a stranger.)',
       acceptedAnswers: ['Ihr'],
-      answerMode: 'exact',
+      answerMode: 'normalized',
       placeholder: 'Ihr / ihr',
       maxLength: 5,
       explanation:
@@ -591,7 +592,7 @@ export const chapter019: ChapterDefinition = {
       prompt:
         'Frau Bauer hat zwei Kinder. Jeden Morgen bringt sie ___ Kinder zur Schule. (her)',
       acceptedAnswers: ['ihre'],
-      answerMode: 'exact',
+      answerMode: 'normalized',
       placeholder: 'ihre / Ihre',
       maxLength: 12,
       explanation:
@@ -680,7 +681,7 @@ export const chapter019: ChapterDefinition = {
         { id: 'a', text: 'ihre' },
         { id: 'b', text: 'ihr' },
         { id: 'c', text: 'unsere' },
-        { id: 'd', text: 'Ihre' },
+        { id: 'd', text: 'ihren' },
       ],
       correctOptionId: 'a',
       explanation:
@@ -714,7 +715,7 @@ export const chapter019: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['possessive-articles', 'accusative-ending'],
       instruction: 'Choose the correct possessive article.',
-      prompt: 'Wir laden ___ Nachbarn ein.',
+      prompt: 'Wir laden ___ Nachbarn ein. (wir — one neighbour, der Nachbar)',
       options: [
         { id: 'a', text: 'unseren' },
         { id: 'b', text: 'unser' },
@@ -723,7 +724,7 @@ export const chapter019: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'der Nachbar is masculine accusative (object of einladen), so unser takes the -en ending: unseren.',
+        'der Nachbar is masculine accusative (object of einladen), so unser takes the -en ending: unseren Nachbarn. (Nachbar also adds -n in the accusative.)',
     },
     {
       id: 'ch19-ex-28',
@@ -738,12 +739,12 @@ export const chapter019: ChapterDefinition = {
       options: [
         { id: 'a', text: 'eure' },
         { id: 'b', text: 'euer' },
-        { id: 'c', text: 'euere' },
+        { id: 'c', text: 'euren' },
         { id: 'd', text: 'ihre' },
       ],
       correctOptionId: 'a',
       explanation:
-        'die Wohnung is feminine nominative, so euer takes -e; the middle e drops, giving eure, not euere.',
+        'die Wohnung is feminine nominative, so euer takes -e; the middle e drops, giving the usual form eure.',
     },
     {
       id: 'ch19-ex-29',
@@ -757,7 +758,7 @@ export const chapter019: ChapterDefinition = {
       options: [
         { id: 'a', text: 'Ihren' },
         { id: 'b', text: 'Ihr' },
-        { id: 'c', text: 'Ihre' },
+        { id: 'c', text: 'Ihrem' },
         { id: 'd', text: 'ihren' },
       ],
       correctOptionId: 'a',
@@ -833,7 +834,7 @@ export const chapter019: ChapterDefinition = {
       placeholder: 'possessive article',
       maxLength: 12,
       explanation:
-        'die Freunde is plural, and plural nouns always take -e, so sein becomes seine.',
+        'die Freunde is plural, and plural nouns take -e in the nominative and accusative, so sein becomes seine.',
     },
     {
       id: 'ch19-ex-34',
@@ -844,13 +845,13 @@ export const chapter019: ChapterDefinition = {
       grammarFocus: ['possessive-articles', 'euer-contraction', 'accusative-ending'],
       instruction:
         'Fill in the correct possessive article for the owner in brackets. Capitalization is not checked.',
-      prompt: 'Habt ihr ___ Koffer dabei? (ihr, plural "you")',
+      prompt: 'Habt ihr ___ Koffer dabei? (ihr, plural "you" — one suitcase)',
       acceptedAnswers: ['euren'],
       answerMode: 'caseInsensitive',
       placeholder: 'possessive article',
       maxLength: 12,
       explanation:
-        'der Koffer is masculine accusative, so euer takes -en; the middle e drops, giving euren, not eueren.',
+        'der Koffer is masculine accusative, so euer takes -en; the middle e drops, giving the usual form euren.',
     },
     {
       id: 'ch19-ex-35',
@@ -863,7 +864,7 @@ export const chapter019: ChapterDefinition = {
         'Fill in the correct possessive article. Capitalization is checked here because it is the point of the exercise.',
       prompt: 'Herr Weber, wie heißt ___ Firma? (formal Sie-form)',
       acceptedAnswers: ['Ihre'],
-      answerMode: 'exact',
+      answerMode: 'normalized',
       placeholder: 'Ihre / ihre',
       maxLength: 6,
       explanation:
@@ -880,7 +881,7 @@ export const chapter019: ChapterDefinition = {
         'Fill in the correct possessive article. Capitalization is checked here because it is the point of the exercise.',
       prompt: 'Die Nachbarn renovieren ___ Küche. (their)',
       acceptedAnswers: ['ihre'],
-      answerMode: 'exact',
+      answerMode: 'normalized',
       placeholder: 'ihre / Ihre',
       maxLength: 12,
       explanation:
@@ -913,8 +914,8 @@ export const chapter019: ChapterDefinition = {
       instruction: 'Drag the correctly declined possessive article into the gap.',
       prompt: 'Vervollständige den Satz: "___ Mutter kocht heute." (ich)',
       templateParts: ['', ' Mutter kocht heute.'],
-      slots: [{ id: 'ch19-ex38-slot1', correctWord: 'meine' }],
-      wordBank: ['meine', 'mein', 'meinen', 'meiner'],
+      slots: [{ id: 'ch19-ex38-slot1', correctWord: 'Meine' }],
+      wordBank: ['Meine', 'Mein', 'Meinen', 'Meiner'],
       explanation:
         'die Mutter is feminine nominative, so mein takes the -e ending: meine.',
     },
@@ -972,10 +973,10 @@ export const chapter019: ChapterDefinition = {
       instruction: 'Drag the correctly declined possessive article into the gap.',
       prompt: 'Vervollständige den Satz: "___ Idee ist gut." (ihr, plural "you")',
       templateParts: ['', ' Idee ist gut.'],
-      slots: [{ id: 'ch19-ex42-slot1', correctWord: 'eure' }],
-      wordBank: ['eure', 'euer', 'euere', 'euren'],
+      slots: [{ id: 'ch19-ex42-slot1', correctWord: 'Eure' }],
+      wordBank: ['Eure', 'Euer', 'Eurer', 'Euren'],
       explanation:
-        'die Idee is feminine nominative, so euer takes -e; the middle e drops, giving eure, not euere.',
+        'die Idee is feminine nominative, so euer takes -e; the middle e drops, giving the usual form eure.',
     },
     {
       id: 'ch19-ex-43',
@@ -988,7 +989,7 @@ export const chapter019: ChapterDefinition = {
       prompt: 'Vervollständige den Satz: "Herr Klein, ich bringe ___ Koffer."',
       templateParts: ['Herr Klein, ich bringe ', ' Koffer.'],
       slots: [{ id: 'ch19-ex43-slot1', correctWord: 'Ihren' }],
-      wordBank: ['Ihren', 'Ihr', 'Ihre', 'ihren'],
+      wordBank: ['Ihren', 'Ihr', 'Ihrem', 'ihren'],
       explanation:
         'Herr Klein is addressed formally, so the stem is Ihr-; der Koffer is masculine accusative, so it takes -en: Ihren.',
     },
@@ -1002,8 +1003,8 @@ export const chapter019: ChapterDefinition = {
       instruction: 'Drag the correctly declined possessive article into the gap.',
       prompt: 'Vervollständige den Satz: "___ Kinder sind süß." (sie, plural "they")',
       templateParts: ['', ' Kinder sind süß.'],
-      slots: [{ id: 'ch19-ex44-slot1', correctWord: 'ihre' }],
-      wordBank: ['ihre', 'ihr', 'ihren', 'unsere'],
+      slots: [{ id: 'ch19-ex44-slot1', correctWord: 'Ihre' }],
+      wordBank: ['Ihre', 'Ihr', 'Ihren', 'Ihrem'],
       explanation:
         'Die Kinder ("they") is the owner, so the stem is ihr-; die Kinder is plural, so it takes -e: ihre.',
     },

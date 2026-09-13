@@ -9,6 +9,9 @@ describe('ChapterUnavailable', () => {
     await renderWithRouter(<ChapterUnavailable chapterNumber={999} />);
 
     expect(screen.getByText(/not valid/i)).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { name: 'Chapter 999 not found' }),
+    ).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /try again/i })).not.toBeInTheDocument();
   });
 

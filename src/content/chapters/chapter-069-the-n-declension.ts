@@ -43,7 +43,7 @@ export const chapter069: ChapterDefinition = {
         id: 'ch69-rule-02',
         heading: 'Two ending patterns: -n only vs. -en',
         paragraphs: [
-          'Weak nouns split into two groups by the ending they add. The first group already ends in -e in the nominative singular, so only a bare -n is added: der Junge → den/dem/des Jungen (the boy), der Kunde → den/dem/des Kunden (the customer), der Kollege → den/dem/des Kollegen (the colleague), der Name → den/dem/des Namen (the name). Der Nachbar (the neighbor) does not end in -e, but it patterns with this same -n-only group: den/dem/des Nachbarn.',
+          'Weak nouns split into two groups by the ending they add. The first group already ends in -e in the nominative singular, so only a bare -n is added: der Junge → den/dem/des Jungen (the boy), der Kunde → den/dem/des Kunden (the customer), der Kollege → den/dem/des Kollegen (the colleague), der Name → den/dem Namen, but genitive des Namens (the name). Der Nachbar (the neighbor) does not end in -e, but it patterns with this same -n-only group: den/dem/des Nachbarn.',
           'The second group ends in a consonant in the nominative singular and adds a full -en instead: der Patient → den/dem/des Patienten (the patient), der Student → den/dem/des Studenten (the student), der Tourist → den/dem/des Touristen (the tourist), der Mensch → den/dem/des Menschen (the person/human being).',
           'In both groups, the same single ending covers the accusative singular, the dative singular, the genitive singular, and every plural form — there is only one ending to memorize per noun, not four.',
         ],
@@ -70,7 +70,7 @@ export const chapter069: ChapterDefinition = {
         id: 'ch69-rule-05',
         heading: 'Identifying case forms: the noun stops helping, the article takes over',
         paragraphs: [
-          'Because the oblique singular and the plural share an identical ending for almost every weak noun, the noun\'s ending alone no longer tells you number or case: den Studenten could mean "the student" (accusative singular) or belong to "the students" (accusative plural, though there the article would be die, not den, in the nominative/accusative — dem/den/der signal singular vs. plural instead). The article, not the noun, is what carries that information.',
+          'Because the oblique singular and the plural share the same ending for almost every weak noun, the noun on its own no longer tells you its case or number: Studenten can be accusative, dative, or genitive singular, or any plural form. The article carries that information instead — den Studenten (accusative singular), dem Studenten (dative singular), des Studenten (genitive singular), die Studenten (nominative/accusative plural), der Studenten (genitive plural). Only den Studenten stays ambiguous: it can also be dative plural (mit den Studenten), so the verb or preposition decides.',
           'A practical test: if you can replace the weak-noun phrase with er/ihn/ihm, you are looking at a singular oblique form; if sie/ihnen fits instead, you are looking at a plural form. Ich sehe den Studenten → Ich sehe ihn confirms a single student, not several.',
           'The one weak noun where the ending itself already disambiguates number is Herr: Herrn is always singular, Herren is always plural — with this noun alone, the ending tells you the number without needing the article at all.',
         ],
@@ -139,7 +139,7 @@ export const chapter069: ChapterDefinition = {
         columns: [
           'Noun (nominative singular)',
           'Group',
-          'Oblique singular (acc./dat./gen.)',
+          'Oblique singular (acc./dat./gen.*)',
           'Plural',
         ],
         rows: [
@@ -154,7 +154,7 @@ export const chapter069: ChapterDefinition = {
           ['Mensch', 'consonant-final → -en', 'Menschen', 'Menschen'],
           ['Herr', 'irregular: -n (sg.) / -en (pl.)', 'Herrn', 'Herren'],
         ],
-        note: 'Herr is the only noun on this list where the oblique-singular and plural endings differ from each other.',
+        note: 'Herr is the only noun on this list where the oblique-singular and plural endings differ from each other. *Name is the exception in the genitive singular: des Namens (accusative/dative den/dem Namen).',
       },
       {
         id: 'ch69-table-06',
@@ -1302,7 +1302,7 @@ export const chapter069: ChapterDefinition = {
       grammarFocus: ['n-declension', 'accusative', 'junge', 'common-mistake'],
       instruction: 'Find the token with the missing weak-noun ending.',
       prompt: 'Ich sehe den Junge im Park.',
-      tokens: ['Ich', 'sehe', 'den', 'Junge', 'im', 'Park', '.'],
+      tokens: ['Ich', 'sehe', 'den', 'Junge', 'im', 'Park.'],
       errorTokenIndex: 3,
       correction: 'Jungen',
       explanation:
@@ -1317,7 +1317,7 @@ export const chapter069: ChapterDefinition = {
       grammarFocus: ['n-declension', 'dative', 'student', 'common-mistake'],
       instruction: 'Find the token with the missing weak-noun ending.',
       prompt: 'Wir helfen dem Student.',
-      tokens: ['Wir', 'helfen', 'dem', 'Student', '.'],
+      tokens: ['Wir', 'helfen', 'dem', 'Student.'],
       errorTokenIndex: 3,
       correction: 'Studenten',
       explanation:
@@ -1332,7 +1332,7 @@ export const chapter069: ChapterDefinition = {
       grammarFocus: ['n-declension', 'herr', 'plural', 'common-mistake'],
       instruction: 'Find the token with the wrong ending.',
       prompt: 'Die Herrn warten im Flur.',
-      tokens: ['Die', 'Herrn', 'warten', 'im', 'Flur', '.'],
+      tokens: ['Die', 'Herrn', 'warten', 'im', 'Flur.'],
       errorTokenIndex: 1,
       correction: 'Herren',
       explanation: 'The plural of Herr is Herren with -en; Herrn is only ever singular.',
@@ -1346,7 +1346,7 @@ export const chapter069: ChapterDefinition = {
       grammarFocus: ['n-declension', 'herr', 'oblique-singular', 'common-mistake'],
       instruction: 'Find the token with the wrong ending.',
       prompt: 'Ich habe Herren Schmidt getroffen.',
-      tokens: ['Ich', 'habe', 'Herren', 'Schmidt', 'getroffen', '.'],
+      tokens: ['Ich', 'habe', 'Herren', 'Schmidt', 'getroffen.'],
       errorTokenIndex: 2,
       correction: 'Herrn',
       explanation:
@@ -1361,7 +1361,7 @@ export const chapter069: ChapterDefinition = {
       grammarFocus: ['n-declension', 'genitive', 'nachbar', 'common-mistake'],
       instruction: 'Find the token with the missing weak-noun ending.',
       prompt: 'Das ist der Hut meines Nachbar.',
-      tokens: ['Das', 'ist', 'der', 'Hut', 'meines', 'Nachbar', '.'],
+      tokens: ['Das', 'ist', 'der', 'Hut', 'meines', 'Nachbar.'],
       errorTokenIndex: 5,
       correction: 'Nachbarn',
       explanation:
@@ -1376,7 +1376,7 @@ export const chapter069: ChapterDefinition = {
       grammarFocus: ['n-declension', 'plural', 'student', 'common-mistake'],
       instruction: 'Find the token with the missing weak-noun ending.',
       prompt: 'Ich sehe zwei Student im Café.',
-      tokens: ['Ich', 'sehe', 'zwei', 'Student', 'im', 'Café', '.'],
+      tokens: ['Ich', 'sehe', 'zwei', 'Student', 'im', 'Café.'],
       errorTokenIndex: 3,
       correction: 'Studenten',
       explanation:
@@ -1391,7 +1391,7 @@ export const chapter069: ChapterDefinition = {
       grammarFocus: ['n-declension', 'accusative', 'kunde', 'common-mistake'],
       instruction: 'Find the token with the missing weak-noun ending.',
       prompt: 'Der Verkäufer kennt den Kunde gut.',
-      tokens: ['Der', 'Verkäufer', 'kennt', 'den', 'Kunde', 'gut', '.'],
+      tokens: ['Der', 'Verkäufer', 'kennt', 'den', 'Kunde', 'gut.'],
       errorTokenIndex: 4,
       correction: 'Kunden',
       explanation:
@@ -1406,7 +1406,7 @@ export const chapter069: ChapterDefinition = {
       grammarFocus: ['n-declension', 'nominative', 'junge', 'common-mistake'],
       instruction: 'Find the token that was wrongly given a weak-noun ending.',
       prompt: 'Der Jungen spielt im Garten.',
-      tokens: ['Der', 'Jungen', 'spielt', 'im', 'Garten', '.'],
+      tokens: ['Der', 'Jungen', 'spielt', 'im', 'Garten.'],
       errorTokenIndex: 1,
       correction: 'Junge',
       explanation:
@@ -1502,8 +1502,7 @@ export const chapter069: ChapterDefinition = {
       segments: [
         { id: 's1', text: 'Der Junge' },
         { id: 's2', text: 'spielt' },
-        { id: 's3', text: 'im Garten' },
-        { id: 's4', text: '.' },
+        { id: 's3', text: 'im Garten.' },
       ],
       explanation:
         'Der Junge spielt im Garten. — Junge is nominative singular here, so it stays unmarked.',
@@ -1521,8 +1520,7 @@ export const chapter069: ChapterDefinition = {
         { id: 's1', text: 'Wir' },
         { id: 's2', text: 'helfen' },
         { id: 's3', text: 'dem Studenten' },
-        { id: 's4', text: 'mit den Hausaufgaben' },
-        { id: 's5', text: '.' },
+        { id: 's4', text: 'mit den Hausaufgaben.' },
       ],
       explanation:
         'Wir helfen dem Studenten mit den Hausaufgaben. — helfen takes the dative, so Studenten carries the weak ending after dem.',
@@ -1541,8 +1539,7 @@ export const chapter069: ChapterDefinition = {
         { id: 's2', text: 'habe' },
         { id: 's3', text: 'Herrn Schmidt' },
         { id: 's4', text: 'gestern' },
-        { id: 's5', text: 'getroffen' },
-        { id: 's6', text: '.' },
+        { id: 's5', text: 'getroffen.' },
       ],
       explanation:
         'Ich habe Herrn Schmidt gestern getroffen. — Before a name in the accusative, Herr takes just -n: Herrn.',

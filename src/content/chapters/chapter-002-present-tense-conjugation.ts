@@ -38,6 +38,7 @@ export const chapter002: ChapterDefinition = {
           'Each subject pronoun pairs with its own ending, which you attach directly to the stem: ich -e, du -st, er/sie/es -t, wir -en, ihr -t, sie/Sie -en.',
           'For example, with the stem mach-: ich mache, du machst, er/sie/es macht, wir machen, ihr macht, sie/Sie machen.',
           'Notice that wir, sie (plural) and the formal Sie all share the same ending, -en, which is identical to the infinitive itself.',
+          'If the stem already ends in -s, -ß, -z or -x, du adds only -t, because the s of -st merges with the stem: heißen → du heißt, tanzen → du tanzt, reisen → du reist, mixen → du mixt.',
         ],
       },
       {
@@ -53,7 +54,7 @@ export const chapter002: ChapterDefinition = {
         id: 'ch02-rule-04',
         heading: 'Extra e with stems ending in -t or -d',
         paragraphs: [
-          'When a verb stem ends in -t or -d, an extra e is inserted before any ending that begins with -s or -t. This makes the word easier to pronounce.',
+          'When a verb stem ends in -t or -d, an extra e is inserted before any ending that begins with -s or -t. This makes the word easier to pronounce. The same happens with many stems ending in a consonant + m or n: atmen → du atmest, öffnen → er öffnet, rechnen → ihr rechnet.',
           'Examples: arbeiten (stem arbeit-) → du arbeitest, er/sie/es arbeitet, ihr arbeitet. finden (stem find-) → du findest, er/sie/es findet, ihr findet.',
           'The wir- and sie/Sie-forms are not affected, because their ending -en does not start with -s or -t: wir arbeiten, sie finden.',
         ],
@@ -175,7 +176,7 @@ export const chapter002: ChapterDefinition = {
         incorrect: 'Du lernt Deutsch.',
         correct: 'Du lernst Deutsch.',
         explanation:
-          'du always takes the ending -st, not -t, which belongs to er/sie/es and ihr.',
+          'du takes the ending -st, not -t, which belongs to er/sie/es and ihr. (Only stems ending in -s, -ß, -z or -x add a bare -t for du: du heißt, du tanzt.)',
       },
       {
         incorrect: 'Er mache heute Sport.',
@@ -601,7 +602,7 @@ export const chapter002: ChapterDefinition = {
       instruction:
         'Write the complete sentence. Capitalisation and the full stop are checked.',
       prompt: 'wir – heute – Fußball – spielen',
-      acceptedAnswers: ['Wir spielen heute Fußball.'],
+      acceptedAnswers: ['Wir spielen heute Fußball.', 'Heute spielen wir Fußball.'],
       answerMode: 'normalized',
       placeholder: 'Wir ...',
       maxLength: 60,
@@ -1025,8 +1026,8 @@ export const chapter002: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['present-tense-endings', 'error-correction'],
       instruction: 'Tap the word that contains the error.',
-      prompt: 'Du lernt Deutsch jeden Tag.',
-      tokens: ['Du', 'lernt', 'Deutsch', 'jeden', 'Tag.'],
+      prompt: 'Du lernt jeden Tag Deutsch.',
+      tokens: ['Du', 'lernt', 'jeden', 'Tag', 'Deutsch.'],
       errorTokenIndex: 1,
       correction: 'lernst',
       explanation:
@@ -1075,7 +1076,7 @@ export const chapter002: ChapterDefinition = {
       instruction:
         'Write the complete sentence. Capitalisation and the full stop are checked.',
       prompt: 'sie (plural) – zusammen – kochen',
-      acceptedAnswers: ['Sie kochen zusammen.'],
+      acceptedAnswers: ['Sie kochen zusammen.', 'Zusammen kochen sie.'],
       answerMode: 'normalized',
       placeholder: 'Sie ...',
       maxLength: 60,
@@ -1163,7 +1164,7 @@ export const chapter002: ChapterDefinition = {
       instruction:
         'Write the complete sentence. Capitalisation and the full stop are checked.',
       prompt: 'heute – ich – Deutsch – lernen',
-      acceptedAnswers: ['Heute lerne ich Deutsch.'],
+      acceptedAnswers: ['Heute lerne ich Deutsch.', 'Ich lerne heute Deutsch.'],
       answerMode: 'normalized',
       placeholder: 'Heute ...',
       maxLength: 60,
@@ -1180,8 +1181,8 @@ export const chapter002: ChapterDefinition = {
       instruction: 'Drag the correctly conjugated verb into the gap to form a question.',
       prompt: '___ du eine Wohnung?',
       templateParts: ['', ' du eine Wohnung?'],
-      slots: [{ id: 'slot1', correctWord: 'mietest' }],
-      wordBank: ['mietest', 'mietst', 'mietet', 'mieten'],
+      slots: [{ id: 'slot1', correctWord: 'Mietest' }],
+      wordBank: ['Mietest', 'Mietst', 'Mietet', 'Mieten'],
       explanation:
         'The stem miet- ends in -t, so an extra e is inserted before the -st ending: Mietest du eine Wohnung?',
     },

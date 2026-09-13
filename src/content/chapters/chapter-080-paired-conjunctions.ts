@@ -26,7 +26,7 @@ export const chapter080: ChapterDefinition = {
     introduction: [
       'German pairs up several conjunctions into fixed two-part teams that must always appear together: entweder ... oder (either ... or), weder ... noch (neither ... nor), sowohl ... als auch (both ... and), and nicht nur ... sondern auch (not only ... but also). Like the coordinating conjunctions from Chapter 44, they connect elements of equal rank — two subjects, two verbs, two objects, or two full clauses — without changing the internal word order of what they connect.',
       'The main challenge with paired conjunctions is keeping both halves matched: each pair is a fixed unit (entweder always needs oder, never noch; weder always needs noch, never oder), and both halves must connect the same type of grammatical element, a property called parallel structure. A sentence where one half joins a full clause and the other half joins only a bare noun feels broken even if every individual word is correct.',
-      'A second, more subtle point concerns word order. Und, aber, oder, denn, and sondern never occupy a position in the sentence — they sit in what grammarians call "position 0" and never trigger inversion. But entweder, weder, noch, and nicht nur behave differently: when one of them is the very first word of its own clause, it fills position 1 and pushes the verb ahead of the subject, exactly like any other word that opens a German main clause. This chapter shows exactly when that inversion happens and when it does not.',
+      'A second, more subtle point concerns word order. Und, aber, oder, denn, and sondern never occupy a position in the sentence — they sit in what grammarians call "position 0" and never trigger inversion. But entweder, weder, noch, and nicht nur behave differently: when one of them is the very first word of its own clause, it normally fills position 1 and pushes the verb ahead of the subject, exactly like any other word that opens a German main clause. This chapter shows exactly when that inversion happens and when it does not.',
     ],
     rules: [
       {
@@ -73,7 +73,7 @@ export const chapter080: ChapterDefinition = {
         id: 'ch80-rule-06',
         heading: 'Word order: verb-second inside each clause, with one inversion twist',
         paragraphs: [
-          'When a paired conjunction links two independent clauses, each clause keeps its own normal verb-second word order — exactly like the coordinating conjunctions from Chapter 44. The interesting cases are entweder, weder, noch, and nicht nur: unlike the true coordinating conjunctions (und, aber, oder, denn, sondern), which never occupy a sentence position, these four words behave like adverbs. When one of them is the very first word of its clause, it fills position 1 and forces the verb ahead of the subject in that clause.',
+          'When a paired conjunction links two independent clauses, each clause keeps its own normal verb-second word order — exactly like the coordinating conjunctions from Chapter 44. The interesting cases are entweder, weder, noch, and nicht nur: unlike the true coordinating conjunctions (und, aber, oder, denn, sondern), which never occupy a sentence position, these four words behave like adverbs. When one of them is the very first word of its clause, it fills position 1 and forces the verb ahead of the subject in that clause. entweder is the one exception with a choice: it can also stand outside the clause in position 0, followed by normal order — Entweder ich komme, oder ich rufe an. is just as standard.',
           'Entweder komme ich, oder ich rufe an. (Either I will come, or I will call.) Entweder triggers inversion (komme ich); oder is a true coordinating conjunction, so the second clause keeps normal order (ich rufe an). Weder ... noch behaves differently from entweder ... oder: Weder hat er angerufen, noch hat er geschrieben. (He neither called nor wrote.) Here both weder and noch trigger inversion, because noch — unlike oder — is not one of the five true coordinating conjunctions.',
         ],
       },
@@ -111,8 +111,8 @@ export const chapter080: ChapterDefinition = {
         rows: [
           [
             'entweder ... oder',
-            'yes, but only entweder',
-            'entweder occupies position 1 → inversion in the first clause only; oder is a true coordinating conjunction (position 0) → normal order in the second clause',
+            'yes, but only entweder (optional)',
+            'entweder usually occupies position 1 → inversion in the first clause only (position 0 with normal order is also standard: Entweder ich komme, oder ich rufe an.); oder is a true coordinating conjunction (position 0) → normal order in the second clause',
             'Entweder komme ich, oder ich rufe an.',
           ],
           [
@@ -205,7 +205,7 @@ export const chapter080: ChapterDefinition = {
         english: 'Neither Tim nor Lisa likes the concert.',
         highlight: ['Weder', 'noch'],
         explanation:
-          'When weder ... noch joins two subjects, the verb typically stays singular, agreeing with the nearer subject.',
+          'When weder ... noch joins two singular subjects, the verb can be singular (mag) or plural (mögen); both are standard.',
       },
       {
         german: 'Das Restaurant ist sowohl günstig als auch lecker.',
@@ -230,10 +230,10 @@ export const chapter080: ChapterDefinition = {
           'entweder always pairs with oder, never with noch — noch belongs only to the weder ... noch pair.',
       },
       {
-        incorrect: 'Weder mag ich Fisch, oder Fleisch.',
-        correct: 'Weder mag ich Fisch, noch Fleisch.',
+        incorrect: 'Ich mag weder Fisch oder Fleisch.',
+        correct: 'Ich mag weder Fisch noch Fleisch.',
         explanation:
-          'weder must be completed with noch, not oder — oder belongs only to the entweder ... oder pair.',
+          'weder must be completed with noch, not oder — oder belongs only to the entweder ... oder pair. With two single elements there is no comma; only two full clauses take one: Weder mag ich Fisch, noch mag ich Fleisch.',
       },
       {
         incorrect: 'Er spricht nicht nur Deutsch.',
@@ -429,12 +429,12 @@ export const chapter080: ChapterDefinition = {
       prompt: 'Welcher Satz hat die richtige Wortstellung?',
       options: [
         { id: 'a', text: 'Entweder komme ich, oder ich rufe an.' },
-        { id: 'b', text: 'Entweder ich komme, oder ich rufe an.' },
+        { id: 'b', text: 'Entweder ich komme, oder rufe ich an.' },
         { id: 'c', text: 'Entweder komme ich, oder rufe ich an.' },
       ],
       correctOptionId: 'a',
       explanation:
-        'entweder occupies position 1 and triggers inversion (komme ich); oder is a true coordinating conjunction, so the second clause keeps normal order (ich rufe an), not inverted.',
+        'entweder occupies position 1 and triggers inversion (komme ich); oder is a true coordinating conjunction, so the second clause keeps normal order (ich rufe an), not inverted. (Entweder ich komme, oder ich rufe an. is also standard.)',
     },
     {
       id: 'ch80-ex-10',
@@ -510,7 +510,7 @@ export const chapter080: ChapterDefinition = {
           english: "I don't know yet. ... I'll come along, ... I'll stay home and study.",
         },
       ],
-      prompt: '___ komme ich mit, ___ ich bleibe zu Hause und lerne.',
+      prompt: "Which pair completes Paul's reply?",
       options: [
         { id: 'a', text: 'Entweder ... oder' },
         { id: 'b', text: 'Weder ... noch' },
@@ -667,7 +667,11 @@ export const chapter080: ChapterDefinition = {
       instruction:
         'Combine the two sentences into one with nicht nur ... sondern auch, remembering that only nicht nur triggers inversion. Capitalisation and punctuation are checked.',
       prompt: 'Er kocht gut. Er backt hervorragend.',
-      acceptedAnswers: ['Nicht nur kocht er gut, sondern er backt auch hervorragend.'],
+      acceptedAnswers: [
+        'Nicht nur kocht er gut, sondern er backt auch hervorragend.',
+        'Er kocht nicht nur gut, sondern backt auch hervorragend.',
+        'Er kocht nicht nur gut, sondern er backt auch hervorragend.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Nicht nur kocht er gut, sondern ...',
       maxLength: 70,
@@ -700,10 +704,10 @@ export const chapter080: ChapterDefinition = {
       grammarFocus: ['error-correction', 'weder-noch'],
       instruction:
         'Correct the mismatched pair. Write the full corrected sentence. Capitalisation and punctuation are checked.',
-      prompt: 'Falsch: Weder mag ich Fisch, oder Fleisch.',
-      acceptedAnswers: ['Weder mag ich Fisch, noch Fleisch.'],
+      prompt: 'Falsch: Ich mag weder Fisch oder Fleisch.',
+      acceptedAnswers: ['Ich mag weder Fisch noch Fleisch.'],
       answerMode: 'normalized',
-      placeholder: 'Weder mag ich Fisch, noch ...',
+      placeholder: 'Ich mag weder Fisch ...',
       maxLength: 60,
       explanation: 'weder only pairs with noch; oder belongs to entweder ... oder.',
     },
@@ -751,7 +755,10 @@ export const chapter080: ChapterDefinition = {
       instruction:
         'Combine the two sentences into one with entweder ... oder, using correct word order in both clauses. Capitalisation and punctuation are checked.',
       prompt: 'Wir bleiben zu Hause. Wir gehen spazieren.',
-      acceptedAnswers: ['Entweder bleiben wir zu Hause, oder wir gehen spazieren.'],
+      acceptedAnswers: [
+        'Entweder bleiben wir zu Hause, oder wir gehen spazieren.',
+        'Entweder wir bleiben zu Hause, oder wir gehen spazieren.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Entweder bleiben wir zu Hause, oder ...',
       maxLength: 70,
@@ -797,8 +804,8 @@ export const chapter080: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['pair-completion', 'weder-noch'],
       instruction: 'Drag the correct word into the blank.',
-      prompt: 'Er hat weder angerufen, ___ geschrieben.',
-      templateParts: ['Er hat weder angerufen, ', ' geschrieben.'],
+      prompt: 'Er hat weder angerufen ___ geschrieben.',
+      templateParts: ['Er hat weder angerufen ', ' geschrieben.'],
       slots: [{ id: 's1', correctWord: 'noch' }],
       wordBank: ['noch', 'oder', 'als auch', 'sondern auch'],
       explanation: 'weder only ever pairs with noch.',
@@ -925,8 +932,8 @@ export const chapter080: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['pair-completion', 'weder-noch'],
       instruction: 'Drag the correct word into the blank.',
-      prompt: '___ mag ich Fisch, noch Fleisch.',
-      templateParts: ['', ' mag ich Fisch, noch Fleisch.'],
+      prompt: '___ mag ich Fisch, noch mag ich Fleisch.',
+      templateParts: ['', ' mag ich Fisch, noch mag ich Fleisch.'],
       slots: [{ id: 's1', correctWord: 'Weder' }],
       wordBank: ['Weder', 'Entweder', 'Sowohl', 'Nicht nur'],
       explanation: 'noch in the second half signals the weder ... noch pair.',
@@ -1039,8 +1046,8 @@ export const chapter080: ChapterDefinition = {
         },
         {
           id: 'p2',
-          left: 'Weder mag ich Fisch, oder Fleisch.',
-          right: 'Weder mag ich Fisch, noch Fleisch.',
+          left: 'Ich mag weder Fisch oder Fleisch.',
+          right: 'Ich mag weder Fisch noch Fleisch.',
         },
         {
           id: 'p3',
@@ -1180,8 +1187,8 @@ export const chapter080: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['error-correction', 'weder-noch'],
       instruction: 'Find the token that breaks the pair and give its correction.',
-      prompt: 'Weder mag ich Fisch, oder Fleisch.',
-      tokens: ['Weder', 'mag', 'ich', 'Fisch,', 'oder', 'Fleisch.'],
+      prompt: 'Ich mag weder Fisch oder Fleisch.',
+      tokens: ['Ich', 'mag', 'weder', 'Fisch', 'oder', 'Fleisch.'],
       errorTokenIndex: 4,
       correction: 'noch',
       explanation: 'weder only pairs with noch; oder belongs only to entweder ... oder.',
@@ -1263,7 +1270,7 @@ export const chapter080: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['error-correction', 'nicht-nur-sondern-auch'],
       instruction: 'Find the token that breaks the pair and give its correction.',
-      prompt: 'Sie lernt nicht nur fleißig, noch hilft sie auch anderen.',
+      prompt: 'Sie lernt nicht nur fleißig, noch sie hilft auch anderen.',
       tokens: [
         'Sie',
         'lernt',
@@ -1271,8 +1278,8 @@ export const chapter080: ChapterDefinition = {
         'nur',
         'fleißig,',
         'noch',
-        'hilft',
         'sie',
+        'hilft',
         'auch',
         'anderen.',
       ],
@@ -1410,7 +1417,7 @@ export const chapter080: ChapterDefinition = {
         { id: 's7', text: 'Konzert.' },
       ],
       explanation:
-        'When weder ... noch joins two subjects within one clause, the verb stays in normal position and typically agrees with the nearer subject.',
+        'When weder ... noch joins two subjects within one clause, the verb stays in normal position; singular mag (agreeing with the nearer subject) and plural mögen are both standard.',
     },
     {
       id: 'ch80-ex-60',
@@ -1463,12 +1470,12 @@ export const chapter080: ChapterDefinition = {
       prompt: 'Weder Tim noch Lisa ___ das Konzert.',
       options: [
         { id: 'a', text: 'mag' },
-        { id: 'b', text: 'mögen' },
+        { id: 'b', text: 'mögt' },
         { id: 'c', text: 'magst' },
       ],
       correctOptionId: 'a',
       explanation:
-        'When weder ... noch joins two singular subjects, the verb typically stays singular, agreeing with the nearer subject: mag.',
+        'With two singular third-person subjects the verb is mag (agreeing with the nearer subject) or plural mögen; mögt and magst are second-person forms and do not fit.',
     },
     {
       id: 'ch80-ex-63',
@@ -1510,7 +1517,7 @@ export const chapter080: ChapterDefinition = {
             "I don't feel like exercising. I'm going neither jogging nor to the gym.",
         },
       ],
-      prompt: 'Ich gehe ___ joggen ___ ins Fitnessstudio.',
+      prompt: "Which pair completes Ben's reply?",
       options: [
         { id: 'a', text: 'weder ... noch' },
         { id: 'b', text: 'entweder ... oder' },
@@ -1542,7 +1549,7 @@ export const chapter080: ChapterDefinition = {
           english: 'Actually everyone is coming! Both the boys and the girls are coming.',
         },
       ],
-      prompt: '___ die Jungen ___ die Mädchen kommen mit.',
+      prompt: "Which pair completes the student's reply?",
       options: [
         { id: 'a', text: 'Sowohl ... als auch' },
         { id: 'b', text: 'Entweder ... oder' },
@@ -1606,12 +1613,12 @@ export const chapter080: ChapterDefinition = {
       grammarFocus: ['subject-verb-agreement', 'weder-noch'],
       instruction: 'Fill in the correct verb form. Capitalisation is not checked.',
       prompt: 'Weder Tim noch Lisa ___ das Konzert. (Verbform von "mögen")',
-      acceptedAnswers: ['mag'],
+      acceptedAnswers: ['mag', 'mögen'],
       answerMode: 'caseInsensitive',
       placeholder: 'mag/mögen',
       maxLength: 10,
       explanation:
-        'When weder ... noch joins two singular subjects, the verb typically agrees with the nearer subject and stays singular: mag.',
+        'When weder ... noch joins two singular subjects, both are standard: singular mag (agreeing with the nearer subject) or plural mögen.',
     },
     {
       id: 'ch80-ex-69',
@@ -1642,6 +1649,7 @@ export const chapter080: ChapterDefinition = {
       prompt: 'Sie lernt fleißig. Sie hilft anderen Studenten.',
       acceptedAnswers: [
         'Sie lernt nicht nur fleißig, sondern hilft auch anderen Studenten.',
+        'Sie lernt nicht nur fleißig, sondern sie hilft auch anderen Studenten.',
       ],
       answerMode: 'normalized',
       placeholder: 'Sie lernt nicht nur fleißig, sondern ...',
@@ -1676,7 +1684,10 @@ export const chapter080: ChapterDefinition = {
       instruction:
         'Combine the two sentences into one with entweder ... oder, using correct word order in both clauses. Capitalisation and punctuation are checked.',
       prompt: 'Wir gehen ins Kino. Wir bleiben zu Hause.',
-      acceptedAnswers: ['Entweder gehen wir ins Kino, oder wir bleiben zu Hause.'],
+      acceptedAnswers: [
+        'Entweder gehen wir ins Kino, oder wir bleiben zu Hause.',
+        'Entweder wir gehen ins Kino, oder wir bleiben zu Hause.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Entweder gehen wir ins Kino, oder ...',
       maxLength: 70,

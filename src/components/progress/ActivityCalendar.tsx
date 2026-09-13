@@ -12,7 +12,7 @@ const HEAT_LEVELS = [0, 1, 2, 3, 4] as const;
 function formatDayLabel(dateKey: string): string {
   // Parsed as local parts, matching how the key was built.
   const [year, month, day] = dateKey.split('-').map(Number);
-  return new Date(year ?? 0, (month ?? 1) - 1, day ?? 1).toLocaleDateString('en-US', {
+  return new Date(year ?? 0, (month ?? 1) - 1, day ?? 1).toLocaleDateString('en-GB', {
     weekday: 'long',
     month: 'long',
     day: 'numeric',

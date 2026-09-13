@@ -104,7 +104,8 @@ describe('genitive noun endings', () => {
 
   it('rejects the wrong ending', () => {
     expect(isValidGenitiveNoun('Auto', 'Autoes')).toBe(false);
-    expect(isValidGenitiveNoun('Mann', 'Manns')).toBe(false);
+    expect(isValidGenitiveNoun('Mann', 'Manns')).toBe(true);
+    expect(isValidGenitiveNoun('Haus', 'Haus')).toBe(false);
   });
 });
 
