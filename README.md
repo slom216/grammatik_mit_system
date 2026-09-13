@@ -207,3 +207,8 @@ for reduced motion.
 The curriculum is organised around common A1–B1 German grammar topics. All explanations,
 examples, exercises and translations are written for this app. Nothing is copied from any
 published course book, and the app is not affiliated with any textbook publisher.
+
+## Disclaimer
+
+This app and its content were built with the help of AI. It may contain errors.
+Every error we identify will be fixed. If you spot one, write to hallo@deulern.com.

@@ -149,8 +149,9 @@ export function AppShell() {
           </div>
           <p className="app-footer__note">
             An independent study app organised around common A1–B1 German grammar topics.
-            All explanations and exercises are original. Progress is stored only in this
-            browser.
+            All explanations and exercises are written for this app. Progress is stored only
+            in this browser. Built with the help of AI, so there may be errors; every one we
+            find gets fixed.
           </p>
         </div>
       </footer>
