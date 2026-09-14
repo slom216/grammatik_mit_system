@@ -273,7 +273,7 @@ export const chapter072: ChapterDefinition = {
         incorrect: 'Ich frage mich, kommt er morgen.',
         correct: 'Ich frage mich, ob er morgen kommt.',
         explanation:
-          'A yes/no question has no question word to embed, so ob must be inserted; simply dropping the question word entirely is not correct.',
+          'A yes/no question has no question word to embed, so ob must be inserted and the verb moves to the end; keeping the direct-question word order after the comma is not correct.',
       },
       {
         incorrect: 'Können Sie mir sagen, wo ist der Bahnhof?',

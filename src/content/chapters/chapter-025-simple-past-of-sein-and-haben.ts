@@ -25,7 +25,7 @@ export const chapter025: ChapterDefinition = {
         heading: 'sein in the simple past: war',
         paragraphs: [
           'The simple past of sein is built on the stem war-. It does not follow the regular weak-verb pattern (no -te- marker); instead it has its own irregular set of forms that you simply memorize: ich war, du warst, er/sie/es war, wir waren, ihr wart, sie/Sie waren.',
-          'Notice that the ich-form and the er/sie/es-form are identical (war), just like ich bin and er ist are different but ich war and er war are the same. This is a common pattern for irregular simple-past verbs in German.',
+          'Notice that the ich-form and the er/sie/es-form are identical (war), even though their present-tense forms (ich bin, er ist) are different. This is a common pattern for irregular simple-past verbs in German.',
         ],
       },
       {

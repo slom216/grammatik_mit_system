@@ -626,7 +626,7 @@ export const chapter085: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'The adverb schnell sits directly before the participle wachsende, and the whole expanded phrase stays directly before Baum; gewachsene would wrongly use the (unrelated) Partizip II.',
+        'The adverb schnell sits directly before the participle wachsende, and the whole expanded phrase stays directly before Baum; gewachsene would wrongly use the Partizip II (grown, completed).',
     },
     {
       id: 'ch85-ex-16',
@@ -807,7 +807,7 @@ export const chapter085: ChapterDefinition = {
       ],
       instruction:
         'Complete the sentence with the correct form of the participle. Capitalisation is not checked.',
-      prompt: 'Die Tür war früher zu, jetzt ist sie die ___ Tür. (öffnen)',
+      prompt: 'Die Tür war zu, jetzt hat jemand sie geöffnet. Das ist die ___ Tür. (öffnen)',
       acceptedAnswers: ['geöffnete'],
       answerMode: 'caseInsensitive',
       placeholder: 'geöffnete',
@@ -1019,8 +1019,8 @@ export const chapter085: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['adjective-endings', 'weak-endings', 'genitive'],
       instruction: 'Drag the correctly declined participle into the gap.',
-      prompt: 'Trotz des ___ Kindes blieben wir ruhig. (schlafen)',
-      templateParts: ['Trotz des ', ' Kindes blieben wir ruhig.'],
+      prompt: 'Wegen des ___ Kindes blieben wir ruhig. (schlafen)',
+      templateParts: ['Wegen des ', ' Kindes blieben wir ruhig.'],
       slots: [{ id: 'slot1', correctWord: 'schlafenden' }],
       wordBank: ['schlafenden', 'schlafende', 'schlafendes', 'schlafender'],
       explanation:
@@ -1433,7 +1433,7 @@ export const chapter085: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['adjective-endings', 'weak-endings', 'genitive'],
       instruction: 'Choose the correct form of the participle.',
-      prompt: 'Während des ___ Chores wurde es still. (singen)',
+      prompt: 'Die Stimmen des ___ Chores füllten den Saal. (singen)',
       options: [
         { id: 'a', text: 'singenden' },
         { id: 'b', text: 'singende' },

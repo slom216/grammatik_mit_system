@@ -915,7 +915,7 @@ export const chapter016: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'Sonne has no article and is feminine, so it is negated with kein in its feminine form: keine.',
+        'Here Sonne means sunshine and is used without an article, so it is negated with kein; Sonne is feminine, so kein becomes keine.',
     },
     {
       id: 'ch16-ex-44',
@@ -1003,7 +1003,7 @@ export const chapter016: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['kein-declension', 'accusative', 'masculine'],
       instruction: 'Choose the correct form of kein.',
-      prompt: 'Ich habe ___ Schlüssel dabei.',
+      prompt: 'Ich habe ___ Regenschirm dabei.',
       options: [
         { id: 'a', text: 'kein' },
         { id: 'b', text: 'keine' },

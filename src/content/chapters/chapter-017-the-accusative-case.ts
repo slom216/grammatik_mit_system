@@ -704,7 +704,7 @@ export const chapter017: ChapterDefinition = {
       prompt: 'Vervollständige den Satz: "Sie sucht ___ Schlüssel."',
       templateParts: ['Sie sucht ', ' Schlüssel.'],
       slots: [{ id: 'ch17-ex28-slot1', correctWord: 'den' }],
-      wordBank: ['der', 'den', 'die'],
+      wordBank: ['der', 'den', 'dem'],
       explanation:
         'Schlüssel is masculine and is the direct object of suchen, so der becomes den in the accusative.',
     },
@@ -954,7 +954,7 @@ export const chapter017: ChapterDefinition = {
         { id: 'a', text: 'der' },
         { id: 'b', text: 'den' },
         { id: 'c', text: 'dem' },
-        { id: 'd', text: 'die' },
+        { id: 'd', text: 'das' },
       ],
       correctOptionId: 'b',
       explanation:

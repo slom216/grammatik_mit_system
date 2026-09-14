@@ -211,7 +211,7 @@ export const chapter030: ChapterDefinition = {
         incorrect: 'Er hat gestern nicht kommen gekonnt, weil er hat krank gewesen.',
         correct: 'Er konnte gestern nicht kommen, weil er krank war.',
         explanation:
-          'Modal verbs and sein are the exception to the spoken preference for the Perfekt; konnte and war are the natural forms here, not their (rarely used) Perfekt equivalents.',
+          'Modal verbs and sein are the exception to the spoken preference for the Perfekt; konnte and war are the natural forms here. The incorrect version is also ungrammatical: a modal with an infinitive forms its Perfekt with können, not gekonnt (er hat nicht kommen können), sein takes ist gewesen, and weil sends the verb to the end.',
       },
       {
         incorrect: 'Die Frau öffnete die Tür und hat ihren Freund gesehen.',
@@ -516,7 +516,7 @@ export const chapter030: ChapterDefinition = {
       prompt: 'Gestern ___ ich den ganzen Tag zu Hause. (sein, ich)',
       acceptedAnswers: ['war'],
       answerMode: 'caseInsensitive',
-      placeholder: 'war',
+      placeholder: 'form of sein',
       maxLength: 10,
       explanation: 'The Präteritum of sein for ich is war, the normal spoken form.',
     },
@@ -532,7 +532,7 @@ export const chapter030: ChapterDefinition = {
       prompt: 'Er ___ leider keine Zeit für das Treffen. (haben, er)',
       acceptedAnswers: ['hatte'],
       answerMode: 'caseInsensitive',
-      placeholder: 'hatte',
+      placeholder: 'form of haben',
       maxLength: 10,
       explanation: 'The Präteritum of haben for er is hatte, the normal spoken form.',
     },
@@ -548,7 +548,7 @@ export const chapter030: ChapterDefinition = {
       prompt: 'Wir ___ gestern ins Kino gehen, aber es war schon voll. (wollen, wir)',
       acceptedAnswers: ['wollten'],
       answerMode: 'caseInsensitive',
-      placeholder: 'wollten',
+      placeholder: 'form of wollen',
       maxLength: 10,
       explanation:
         'The Präteritum of wollen for wir is wollten, natural even in casual speech.',
@@ -565,7 +565,7 @@ export const chapter030: ChapterDefinition = {
       prompt: '___ gestern keinen Kaffee mehr im Büro. (es gibt, past)',
       acceptedAnswers: ['es gab'],
       answerMode: 'caseInsensitive',
-      placeholder: 'Es gab',
+      placeholder: 'es ...',
       maxLength: 15,
       explanation:
         'es gab is the natural past-tense form of es gibt, used in speech far more than es hat gegeben.',
@@ -662,7 +662,7 @@ export const chapter030: ChapterDefinition = {
         'Story: "Der alte Mann wohnte allein in einem kleinen Haus. Jeden Morgen ging er in den Park. Er hat immer die Vögel gefüttert. Danach kehrte er nach Hause zurück." Which Präteritum form should replace hat ... gefüttert?',
       acceptedAnswers: ['fütterte'],
       answerMode: 'caseInsensitive',
-      placeholder: 'fütterte',
+      placeholder: 'Präteritum form',
       maxLength: 15,
       explanation:
         'The rest of the story is told in the Präteritum (wohnte, ging, kehrte zurück); to stay consistent, füttern should also appear as fütterte, not as the Perfekt hat gefüttert.',
@@ -760,7 +760,7 @@ export const chapter030: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['identification', 'modal-präteritum'],
       instruction: 'Identify the tense of the verb form in the sentence.',
-      prompt: 'In "Wir sollten pünktlich sein," which tense is sollten?',
+      prompt: 'In "Wir sollten gestern pünktlich sein," which tense is sollten?',
       options: [
         { id: 'a', text: 'Präteritum' },
         { id: 'b', text: 'Perfekt' },
@@ -1281,7 +1281,7 @@ export const chapter030: ChapterDefinition = {
       prompt: 'Als Kind ___ ich nicht allein zur Schule gehen. (dürfen, ich)',
       acceptedAnswers: ['durfte'],
       answerMode: 'caseInsensitive',
-      placeholder: 'durfte',
+      placeholder: 'form of dürfen',
       maxLength: 10,
       explanation:
         'The Präteritum of dürfen for ich is durfte, the normal form even in casual speech.',
@@ -1298,7 +1298,7 @@ export const chapter030: ChapterDefinition = {
       prompt: 'Du ___ mich gestern anrufen. (sollen, du)',
       acceptedAnswers: ['solltest'],
       answerMode: 'caseInsensitive',
-      placeholder: 'solltest',
+      placeholder: 'form of sollen',
       maxLength: 12,
       explanation:
         'The Präteritum of sollen for du is solltest, the normal form even in casual speech.',
@@ -1315,7 +1315,7 @@ export const chapter030: ChapterDefinition = {
       prompt: 'Sie ___ als Kind kein Gemüse. (mögen, sie/singular)',
       acceptedAnswers: ['mochte'],
       answerMode: 'caseInsensitive',
-      placeholder: 'mochte',
+      placeholder: 'form of mögen',
       maxLength: 10,
       explanation:
         'The Präteritum of mögen for sie (singular) is mochte, the normal form even in casual speech.',
@@ -1332,7 +1332,7 @@ export const chapter030: ChapterDefinition = {
       prompt: 'Wir ___ leider nicht kommen. (können, wir)',
       acceptedAnswers: ['konnten'],
       answerMode: 'caseInsensitive',
-      placeholder: 'konnten',
+      placeholder: 'form of können',
       maxLength: 12,
       explanation:
         'The Präteritum of können for wir is konnten, the normal form even in casual speech.',
@@ -1415,7 +1415,7 @@ export const chapter030: ChapterDefinition = {
         'Story: "Die Kinder rannten zum See. Sie sprangen ins Wasser. Sie haben laut gelacht. Danach liefen sie nach Hause." Which Präteritum form should replace haben ... gelacht?',
       acceptedAnswers: ['lachten'],
       answerMode: 'caseInsensitive',
-      placeholder: 'lachten',
+      placeholder: 'Präteritum form',
       maxLength: 15,
       explanation:
         'The rest of the story is told in the Präteritum (rannten, sprangen, liefen); to stay consistent, lachen should also appear as lachten, not as the Perfekt haben gelacht.',

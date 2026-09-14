@@ -97,7 +97,7 @@ export const chapter029: ChapterDefinition = {
         explanation: 'können becomes konnte in the simple past, with no umlaut.',
       },
       {
-        german: 'Kanntest du damals schon Deutsch? – Nein, aber ich konnte Englisch.',
+        german: 'Konntest du damals schon Deutsch? – Nein, aber ich konnte Englisch.',
         english:
           'Did you already know German back then? – No, but I could speak English.',
         highlight: ['konnte'],
@@ -545,7 +545,7 @@ export const chapter029: ChapterDefinition = {
       instruction:
         'Build a complete, correctly ordered sentence in the simple past from these words. Capitalisation and punctuation are checked.',
       prompt: 'ich – als Kind – nicht – schwimmen – können',
-      acceptedAnswers: ['Ich konnte als Kind nicht schwimmen.'],
+      acceptedAnswers: ['Ich konnte als Kind nicht schwimmen.', 'Als Kind konnte ich nicht schwimmen.'],
       answerMode: 'normalized',
       placeholder: 'Ich ...',
       maxLength: 60,
@@ -567,7 +567,7 @@ export const chapter029: ChapterDefinition = {
       instruction:
         'Build a complete, correctly ordered sentence in the simple past from these words. Capitalisation and punctuation are checked.',
       prompt: 'er – gestern – zum Arzt – gehen – müssen',
-      acceptedAnswers: ['Er musste gestern zum Arzt gehen.'],
+      acceptedAnswers: ['Er musste gestern zum Arzt gehen.', 'Gestern musste er zum Arzt gehen.'],
       answerMode: 'normalized',
       placeholder: 'Er ...',
       maxLength: 60,
@@ -589,7 +589,10 @@ export const chapter029: ChapterDefinition = {
       instruction:
         'Build a complete, correctly ordered sentence in the simple past from these words. Capitalisation and punctuation are checked.',
       prompt: 'wir – letztes Jahr – nach Italien – fahren – wollen',
-      acceptedAnswers: ['Wir wollten letztes Jahr nach Italien fahren.'],
+      acceptedAnswers: [
+        'Wir wollten letztes Jahr nach Italien fahren.',
+        'Letztes Jahr wollten wir nach Italien fahren.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wir ...',
       maxLength: 60,
@@ -684,7 +687,10 @@ export const chapter029: ChapterDefinition = {
       instruction:
         'Build a complete, correctly ordered sentence in the simple past from these words. Capitalisation and punctuation are checked.',
       prompt: 'ich – als Kind – abends – nicht – fernsehen – dürfen',
-      acceptedAnswers: ['Ich durfte als Kind abends nicht fernsehen.'],
+      acceptedAnswers: [
+        'Ich durfte als Kind abends nicht fernsehen.',
+        'Als Kind durfte ich abends nicht fernsehen.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich ...',
       maxLength: 60,
@@ -1032,7 +1038,7 @@ export const chapter029: ChapterDefinition = {
       instruction:
         'Build a complete, correctly ordered sentence in the simple past from these words. Capitalisation and punctuation are checked.',
       prompt: 'du – gestern – nicht – kommen – können',
-      acceptedAnswers: ['Du konntest gestern nicht kommen.'],
+      acceptedAnswers: ['Du konntest gestern nicht kommen.', 'Gestern konntest du nicht kommen.'],
       answerMode: 'normalized',
       placeholder: 'Du ...',
       maxLength: 60,
@@ -1054,7 +1060,10 @@ export const chapter029: ChapterDefinition = {
       instruction:
         'Build a complete, correctly ordered sentence in the simple past from these words. Capitalisation and punctuation are checked.',
       prompt: 'ihr – als Kinder – lange – draußen – spielen – dürfen',
-      acceptedAnswers: ['Ihr durftet als Kinder lange draußen spielen.'],
+      acceptedAnswers: [
+        'Ihr durftet als Kinder lange draußen spielen.',
+        'Als Kinder durftet ihr lange draußen spielen.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ihr ...',
       maxLength: 60,
@@ -1535,13 +1544,13 @@ export const chapter029: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['simple-past', 'modal-verbs', 'error-correction', 'meaning'],
       instruction:
-        'Context: Trotz intensiven Übens hat es einfach nicht geklappt. Find the token that is wrong given this context, and correct it.',
+        'Context: Ich habe als Kind jeden Tag trainiert und viele Wettkämpfe gewonnen. Find the token that is wrong given this context, and correct it.',
       prompt: 'Ich sollte sehr gut schwimmen.',
       tokens: ['Ich', 'sollte', 'sehr', 'gut', 'schwimmen.'],
       errorTokenIndex: 1,
       correction: 'konnte',
       explanation:
-        'The context describes an ability that despite practice never worked out, which is können (konnte), not an external obligation (sollen, sollte).',
+        'The context describes a skill built up through daily training, which is können (konnte), not an external obligation (sollen, sollte).',
     },
   ],
 };

@@ -323,7 +323,7 @@ export const chapter073: ChapterDefinition = {
         incorrect: 'Sie beginnt Deutsch lernen zu.',
         correct: 'Sie beginnt, Deutsch zu lernen.',
         explanation:
-          'zu always comes directly before the infinitive it belongs to (zu lernen), never after it, and the clause needs its comma.',
+          'zu always comes directly before the infinitive it belongs to (zu lernen), never after it. The comma after beginnen is optional but usually written.',
       },
     ],
     remember: [
@@ -359,7 +359,7 @@ export const chapter073: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'zu stands directly before the infinitive kommen, and the extended clause needs a comma: ..., pünktlich zu kommen.',
+        'zu stands directly before the infinitive kommen: ..., pünktlich zu kommen. After versuchen the comma is optional but usually written.',
     },
     {
       id: 'ch73-ex-02',
@@ -849,7 +849,7 @@ export const chapter073: ChapterDefinition = {
       placeholder: 'Ich hoffe, ...',
       maxLength: 60,
       explanation:
-        'The subjects differ (ich hofft, er kommt an), so a zu-infinitive is impossible; a dass-clause is required instead.',
+        'The subjects differ (ich hoffe, er kommt an), so a zu-infinitive is impossible; a dass-clause is required instead.',
     },
     {
       id: 'ch73-ex-28',
@@ -929,7 +929,7 @@ export const chapter073: ChapterDefinition = {
           english: 'What do you suggest for the evening?',
         },
       ],
-      prompt: 'Ich habe vor, ein Kino ___. (vorschlagen)',
+      prompt: 'Ich habe vor, einen Kinobesuch ___. (vorschlagen)',
       acceptedAnswers: ['vorzuschlagen'],
       answerMode: 'caseInsensitive',
       placeholder: 'vorzuschlagen',
@@ -951,7 +951,7 @@ export const chapter073: ChapterDefinition = {
       placeholder: 'Es ist wichtig, ...',
       maxLength: 60,
       explanation:
-        'The implied subject of üben matches the general subject man of the first clause, so they combine into one zu-infinitive clause.',
+        'The second sentence has the general subject man (people in general), which es ist wichtig can leave unnamed, so it becomes a zu-infinitive clause. The comma is required because es announces the clause.',
     },
     {
       id: 'ch73-ex-33',
@@ -1137,7 +1137,7 @@ export const chapter073: ChapterDefinition = {
       prompt: 'Er kam mit, ___ zu helfen.',
       templateParts: ['Er kam mit, ', ' zu helfen.'],
       slots: [{ id: 'ch73-ex42-s1', correctWord: 'um' }],
-      wordBank: ['um', 'ohne', 'statt', 'dass'],
+      wordBank: ['um', 'damit', 'weil', 'dass'],
       explanation:
         'um ... zu expresses the purpose of coming along: he came along in order to help.',
     },
@@ -1152,7 +1152,7 @@ export const chapter073: ChapterDefinition = {
       prompt: 'Sie ging, ___ sich zu verabschieden.',
       templateParts: ['Sie ging, ', ' sich zu verabschieden.'],
       slots: [{ id: 'ch73-ex43-s1', correctWord: 'ohne' }],
-      wordBank: ['ohne', 'um', 'statt', 'wenn'],
+      wordBank: ['ohne', 'damit', 'dass', 'wenn'],
       explanation:
         'ohne ... zu marks the missing action: she left without saying goodbye.',
     },
@@ -1203,7 +1203,7 @@ export const chapter073: ChapterDefinition = {
         { id: 'ch73-ex46-s1', correctWord: 'ohne' },
         { id: 'ch73-ex46-s2', correctWord: 'verabschieden' },
       ],
-      wordBank: ['ohne', 'um', 'statt', 'verabschieden', 'verabschiedet'],
+      wordBank: ['ohne', 'um', 'damit', 'verabschieden', 'verabschiedet'],
       explanation:
         'ohne ... zu marks an action he did not do before leaving; verabschieden takes the infinitive form after zu.',
     },
@@ -1512,7 +1512,7 @@ export const chapter073: ChapterDefinition = {
         { id: 'ch73-ex60-s3', text: 'zu unterstützen.' },
       ],
       explanation:
-        'um ... zu expresses the purpose of coming along; the whole clause is extended, so it needs a comma.',
+        'um ... zu expresses the purpose of coming along; a clause with um ... zu always needs a comma.',
     },
     {
       id: 'ch73-ex-61',
@@ -1726,7 +1726,10 @@ export const chapter073: ChapterDefinition = {
       instruction:
         'Combine the two sentences with (an)statt ... zu. Write the full sentence. Capitalisation and punctuation are checked.',
       prompt: 'Wir sollten eine Lösung suchen. + Wir klagen nicht. (anstatt ... zu)',
-      acceptedAnswers: ['Anstatt zu klagen, sollten wir eine Lösung suchen.'],
+      acceptedAnswers: [
+        'Anstatt zu klagen, sollten wir eine Lösung suchen.',
+        'Wir sollten eine Lösung suchen, anstatt zu klagen.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Anstatt zu klagen, ...',
       maxLength: 60,
@@ -1833,7 +1836,7 @@ export const chapter073: ChapterDefinition = {
       placeholder: 'Es ist möglich, ...',
       maxLength: 60,
       explanation:
-        'The implied subject of wechseln matches the general subject man of the first clause, so they combine into one zu-infinitive clause.',
+        'The second sentence has the general subject man (people in general), which es ist möglich can leave unnamed, so it becomes a zu-infinitive clause. The comma is required because es announces the clause.',
     },
     {
       id: 'ch73-ex-79',

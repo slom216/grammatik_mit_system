@@ -402,7 +402,7 @@ export const chapter081: ChapterDefinition = {
         { id: 'd', text: 'hochster' },
       ],
       correctOptionId: 'a',
-      explanation: 'hoch is irregular: hoch -> höher (the ch drops).',
+      explanation: 'hoch is irregular: hoch -> höher (the c drops).',
     },
     {
       id: 'ch81-ex-07',
@@ -939,7 +939,7 @@ export const chapter081: ChapterDefinition = {
         { id: 'd', text: 'hochster' },
       ],
       correctOptionId: 'a',
-      explanation: 'hoch is irregular: hoch -> höher (the ch drops).',
+      explanation: 'hoch is irregular: hoch -> höher (the c drops).',
     },
     {
       id: 'ch81-ex-36',
@@ -1925,7 +1925,7 @@ export const chapter081: ChapterDefinition = {
       ],
       errorTokenIndex: 1,
       correction: 'höher',
-      explanation: 'hoch is irregular: hoch -> höher (the ch drops), not hocher.',
+      explanation: 'hoch is irregular: hoch -> höher (the c drops), not hocher.',
     },
     {
       id: 'ch81-ex-87',
@@ -1953,7 +1953,7 @@ export const chapter081: ChapterDefinition = {
       ],
       errorTokenIndex: 1,
       correction: 'näher',
-      explanation: 'nah is irregular: nah -> näher (an extra h is inserted), not naher.',
+      explanation: 'nah takes an umlaut in the comparative: nah -> näher, not naher.',
     },
     {
       id: 'ch81-ex-88',

@@ -1153,12 +1153,12 @@ export const chapter010: ChapterDefinition = {
       grammarFocus: ['question-words', 'wann', 'warum'],
       instruction:
         'The intended answer is given below. Tap the word that does not fit it, then check the correction.',
-      prompt: 'Intended answer: Weil ich krank bin.',
+      prompt: 'Intended answer: Weil ich krank war.',
       tokens: ['Wann', 'bist', 'du', 'nicht', 'gekommen?'],
       errorTokenIndex: 0,
       correction: 'Warum',
       explanation:
-        'The intended answer gives a reason (weil ich krank bin), so the question needs Warum, not Wann.',
+        'The intended answer gives a reason (weil ich krank war), so the question needs Warum, not Wann.',
     },
     {
       id: 'ch10-ex-54',

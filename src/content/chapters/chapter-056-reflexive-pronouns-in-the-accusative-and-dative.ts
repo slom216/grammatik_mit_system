@@ -1250,7 +1250,7 @@ export const chapter056: ChapterDefinition = {
       grammarFocus: ['case-choice', 'error-correction', 'sich-anziehen'],
       instruction:
         'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
-      prompt: 'Falsch: Sie zieht sie die Jacke an.',
+      prompt: 'Falsch (she is putting on her own jacket): Sie zieht sie die Jacke an.',
       acceptedAnswers: ['Sie zieht sich die Jacke an.'],
       answerMode: 'normalized',
       placeholder: 'Sie zieht ...',

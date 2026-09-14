@@ -25,7 +25,7 @@ export const chapter059: ChapterDefinition = {
   ],
   explanation: {
     introduction: [
-      'German cannot simply say "preposition + it" the way English can. Instead of "an es" or "über es", German fuses the preposition together with da(r)- into a single word: Ich interessiere mich für Musik. wird zu Ich interessiere mich dafür. (I am interested in it.) These fused forms are called pronominal adverbs, and the most common family — the da(r)- compounds — replaces a preposition plus a thing or idea that has already been mentioned.',
+      'German cannot simply say "preposition + it" the way English can. Instead of "an es" or "über es", German fuses the preposition together with da(r)- into a single word: Ich interessiere mich für Musik. becomes Ich interessiere mich dafür. (I am interested in it.) These fused forms are called pronominal adverbs, and the most common family — the da(r)- compounds — replaces a preposition plus a thing or idea that has already been mentioned.',
       'The same fusion happens in questions: instead of asking "An was denkst du?", German asks Woran denkst du? (What are you thinking about?), fusing wo(r)- with the preposition. But this entire system — da(r)- and wo(r)- compounds — is reserved strictly for things and ideas. The moment the object of the preposition is a person, German switches back to the ordinary pattern you already know from Chapter 21: preposition + personal pronoun (an ihn, mit ihr, für sie), or, in a question, preposition + wer in the right case (an wen, mit wem, für wen).',
       'This chapter builds on the question words from Chapter 10, the personal pronouns from Chapter 21, and the fixed preposition + verb combinations from Chapter 58 — many of the verbs that take a fixed preposition (denken an, sich freuen auf, sich interessieren für, warten auf) are exactly the verbs where this person/thing distinction matters most.',
     ],
@@ -569,11 +569,11 @@ export const chapter059: ChapterDefinition = {
         { id: 'a', text: 'darin' },
         { id: 'b', text: 'dain' },
         { id: 'c', text: 'indar' },
-        { id: 'd', text: 'dahin' },
+        { id: 'd', text: 'dorin' },
       ],
       correctOptionId: 'a',
       explanation:
-        'in begins with a vowel (i), so the linking -r- is required: darin, not "dain". (dahin means "(to) there" and is an unrelated word.)',
+        'in begins with a vowel (i), so the linking -r- is required: darin, not "dain". The compound is always formed with da-, never do-.',
     },
     {
       id: 'ch59-ex-16',
@@ -1107,7 +1107,7 @@ export const chapter059: ChapterDefinition = {
         { id: 'a', text: 'darauf' },
         { id: 'b', text: 'dauf' },
         { id: 'c', text: 'aufdar' },
-        { id: 'd', text: 'dahin' },
+        { id: 'd', text: 'dorauf' },
       ],
       correctOptionId: 'a',
       explanation:
@@ -1305,12 +1305,12 @@ export const chapter059: ChapterDefinition = {
       grammarFocus: ['da-compound', 'whole-idea', 'linking-r'],
       instruction: 'Fill in the missing da(r)- compound. Capitalisation is not checked.',
       prompt: 'Er hat die Prüfung bestanden. Ich bin total ___ überrascht.',
-      acceptedAnswers: ['darüber'],
+      acceptedAnswers: ['darüber', 'davon'],
       answerMode: 'caseInsensitive',
       placeholder: 'darüber',
       maxLength: 15,
       explanation:
-        'darüber points back to the whole previous statement (passing the exam); über begins with a vowel, so the linking -r- is required.',
+        'darüber points back to the whole previous statement (passing the exam); über begins with a vowel, so the linking -r- is required. überrascht sein von is also standard, so davon is accepted too.',
     },
     {
       id: 'ch59-ex-57',
@@ -1637,7 +1637,7 @@ export const chapter059: ChapterDefinition = {
       grammarFocus: ['da-compound'],
       instruction: 'Drag the correct da(r)- compound into the slot.',
       prompt:
-        'Complete with the correct da(r)- compound. (Kontext: mit dem Auto reparieren.)',
+        'Complete with the correct da(r)- compound. (Kontext: das Auto, das er repariert, ist gemeint.)',
       templateParts: ['Er beschäftigt sich schon lange ', '.'],
       slots: [{ id: 'ch59-ex-77-s1', correctWord: 'damit' }],
       wordBank: ['damit', 'dafür', 'daran', 'davon'],
@@ -1653,7 +1653,7 @@ export const chapter059: ChapterDefinition = {
       grammarFocus: ['pronoun', 'person-vs-thing'],
       instruction: 'Drag the correct pronoun into the slot.',
       prompt:
-        'Complete with the correct personal pronoun. (Kontext: seinem Bruder ist gemeint.)',
+        'Complete with the correct personal pronoun. (Kontext: sein Bruder ist gemeint.)',
       templateParts: ['Er beschäftigt sich schon lange mit ', '.'],
       slots: [{ id: 'ch59-ex-78-s1', correctWord: 'ihm' }],
       wordBank: ['ihm', 'ihn', 'ihr', 'es'],
@@ -1745,7 +1745,7 @@ export const chapter059: ChapterDefinition = {
       grammarFocus: ['pronoun', 'person-vs-thing'],
       instruction: 'Drag the correct pronoun into the slot.',
       prompt:
-        'Complete with the correct personal pronoun. (Kontext: seinen alten Lehrer ist gemeint.)',
+        'Complete with the correct personal pronoun. (Kontext: sein alter Lehrer ist gemeint.)',
       templateParts: ['Er erinnert sich gern an ', '.'],
       slots: [{ id: 'ch59-ex-84-s1', correctWord: 'ihn' }],
       wordBank: ['ihn', 'ihm', 'es', 'daran'],

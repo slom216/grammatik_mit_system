@@ -1284,7 +1284,7 @@ export const chapter007: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['nicht-muessen', 'dialogue'],
       instruction:
-        'Write the missing modal verb. The rest of the sentence, including nicht, is already given.',
+        'Write the missing modal verb. The rest of the sentence, including keinen, is already given.',
       prompt: 'A: Muss ich einen Anzug tragen?\nB: Nein, du ___ keinen Anzug tragen.',
       acceptedAnswers: ['musst'],
       answerMode: 'caseInsensitive',

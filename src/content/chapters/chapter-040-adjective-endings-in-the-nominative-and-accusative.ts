@@ -988,7 +988,12 @@ export const chapter040: ChapterDefinition = {
       instruction:
         'Write a complete sentence using the cues. Capitalisation is checked; no full stop is required.',
       prompt: 'sie – besuchen – ein (klein, Kind)',
-      acceptedAnswers: ['Sie besucht ein kleines Kind.', 'Sie besucht ein kleines Kind'],
+      acceptedAnswers: [
+        'Sie besucht ein kleines Kind.',
+        'Sie besucht ein kleines Kind',
+        'Sie besuchen ein kleines Kind.',
+        'Sie besuchen ein kleines Kind',
+      ],
       answerMode: 'normalized',
       placeholder: 'Sie besucht ...',
       maxLength: 60,

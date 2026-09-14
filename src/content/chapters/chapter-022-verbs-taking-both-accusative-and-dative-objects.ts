@@ -895,7 +895,7 @@ export const chapter022: ChapterDefinition = {
         { id: 'a', text: 'Ich schenke ihr ihn.' },
         { id: 'b', text: 'Ich schenke ihn ihr.' },
         { id: 'c', text: 'Ich ihn schenke ihr.' },
-        { id: 'd', text: 'Ihn schenke ich ihr.' },
+        { id: 'd', text: 'Ihr ihn schenke ich.' },
       ],
       correctOptionId: 'b',
       explanation:

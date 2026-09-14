@@ -39,7 +39,7 @@ export const chapter083: ChapterDefinition = {
         heading: 'innerhalb — within a bounded window (+ genitive)',
         paragraphs: [
           'innerhalb means "within" and marks a bounded period during which something must happen, without saying exactly when inside that period it happens. It takes the genitive: innerhalb einer Woche (within a week), innerhalb eines Jahres (within a year), innerhalb der Frist (within the deadline).',
-          'Ich muss die Unterlagen innerhalb einer Woche einreichen. (I have to submit the documents within a week.) The deadline can be met on day one, day four, or day seven — innerhalb only fixes the outer boundary, not the moment of action. In everyday spoken German you will also meet innerhalb von + dative (innerhalb von drei Tagen) when the genitive form would be unclear, for example with an unmarked plural — but the genitive form taught here is the standard, and always correct, choice.',
+          'Ich muss die Unterlagen innerhalb einer Woche einreichen. (I have to submit the documents within a week.) The deadline can be met on day one, day four, or day seven — innerhalb only fixes the outer boundary, not the moment of action. You will also meet innerhalb von + dative (innerhalb von drei Tagen), which is standard and required when the genitive would not be visible, for example with a plural noun without an article — but whenever the genitive can be shown, the genitive form taught here is the standard choice.',
         ],
       },
       {
@@ -1510,8 +1510,8 @@ export const chapter083: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['ab', 'preposition-choice'],
       instruction: 'Drag the correct preposition into the gap.',
-      prompt: 'Das neue Gesetz gilt ___ dem 1. Januar.',
-      templateParts: ['Das neue Gesetz gilt ', ' dem 1. Januar.'],
+      prompt: 'Das neue Gesetz gilt ___ dem 1. Januar des nächsten Jahres.',
+      templateParts: ['Das neue Gesetz gilt ', ' dem 1. Januar des nächsten Jahres.'],
       slots: [{ id: 's1', correctWord: 'ab' }],
       wordBank: ['ab', 'seit', 'bis zu', 'während'],
       explanation:
@@ -1527,7 +1527,7 @@ export const chapter083: ChapterDefinition = {
       instruction: 'Match each sentence to the preposition that correctly completes it.',
       prompt: 'Match the sentences to the missing prepositions.',
       pairs: [
-        { id: 'p1', left: 'Sie arbeitet ___ Montag in der neuen Firma.', right: 'ab' },
+        { id: 'p1', left: 'Sie arbeitet ___ nächstem Montag in der neuen Firma.', right: 'ab' },
         { id: 'p2', left: 'Der Vertrag läuft ___ Ende des Jahres.', right: 'bis' },
         { id: 'p3', left: '___ drei Jahren lebt sie in München.', right: 'seit' },
         {
@@ -1949,8 +1949,8 @@ export const chapter083: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['ab', 'preposition-choice'],
       instruction: 'Drag the correct preposition into the gap.',
-      prompt: 'Die neue Regelung gilt ___ dem 1. März.',
-      templateParts: ['Die neue Regelung gilt ', ' dem 1. März.'],
+      prompt: 'Die neue Regelung gilt ___ dem 1. März des nächsten Jahres.',
+      templateParts: ['Die neue Regelung gilt ', ' dem 1. März des nächsten Jahres.'],
       slots: [{ id: 's1', correctWord: 'ab' }],
       wordBank: ['ab', 'seit', 'bis zu', 'während'],
       explanation:

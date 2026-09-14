@@ -361,7 +361,7 @@ export const chapter006: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'Asking permission from a teacher uses dürfen. Kann would ask whether the student is physically able to go — not the intended meaning.',
+        'Asking permission from a teacher uses dürfen. Kann ich ...? is common in casual speech, but Darf ich ...? is the precise, polite way to ask for permission.',
     },
     {
       id: 'ch06-ex-09',
@@ -615,7 +615,7 @@ export const chapter006: ChapterDefinition = {
       instruction:
         'Rewrite the sentence politely, using möchten. Capitalisation and punctuation are checked.',
       prompt: 'Ich will einen Tee.',
-      acceptedAnswers: ['Ich möchte einen Tee.'],
+      acceptedAnswers: ['Ich möchte einen Tee.', 'Ich möchte einen Tee, bitte.', 'Ich möchte bitte einen Tee.'],
       answerMode: 'normalized',
       placeholder: 'Ich ...',
       maxLength: 60,

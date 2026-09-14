@@ -446,7 +446,7 @@ export const chapter070: ChapterDefinition = {
         { id: 'a', text: 'der Verwandten' },
         { id: 'b', text: 'der Verwandte' },
         { id: 'c', text: 'die Verwandte' },
-        { id: 'd', text: 'den Verwandten' },
+        { id: 'd', text: 'die Verwandten' },
       ],
       correctOptionId: 'a',
       explanation:
@@ -918,7 +918,7 @@ export const chapter070: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['substantivized-adjectives', 'der-words', 'nominative'],
       instruction: 'Drag the correct form into the slot.',
-      prompt: 'Der Arzt sagt, dass der Patient Ruhe braucht.',
+      prompt: 'Complete the sentence with the correct masculine nominative form.',
       templateParts: ['Der ', ' hat Fieber.'],
       slots: [{ id: 'slot-1', correctWord: 'Kranke' }],
       wordBank: ['Kranke', 'Kranken', 'Kranker', 'Krankes'],
@@ -1907,7 +1907,7 @@ export const chapter070: ChapterDefinition = {
       prompt: 'Choose the best translation of: "A stranger helped me."',
       options: [
         { id: 'a', text: 'Ein Fremder half mir.' },
-        { id: 'b', text: 'Eine Fremde half mir.' },
+        { id: 'b', text: 'Ein Fremde half mir.' },
         { id: 'c', text: 'Der Fremde half mir.' },
         { id: 'd', text: 'Einen Fremden half mir.' },
       ],

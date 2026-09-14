@@ -64,7 +64,7 @@ export const chapter043: ChapterDefinition = {
         id: 'ch43-rule-05',
         heading: 'Irregular superlatives',
         paragraphs: [
-          'A few very common adjectives and adverbs do not follow the regular pattern at all and must be memorised: gut (good) → besser → best-, viel (much) → mehr → meist-, hoch (high) → höher → höchst- (note: the -ch drops before the ending), and gern (gladly) → lieber → liebst-.',
+          'A few very common adjectives and adverbs do not follow the regular pattern at all and must be memorised: gut (good) → besser → best-, viel (much) → mehr → meist-, hoch (high) → höher → höchst- (note: the c drops only in the comparative höher; the superlative keeps -ch-), and gern (gladly) → lieber → liebst-.',
           'Nah (near) is regular in shape but changes its consonant: nah → näher → nächst-. All of these combine with am ...-en/-sten or der/die/das ...-e exactly like regular superlatives: am besten, der beste; am höchsten, die höchste; am nächsten, das nächste.',
         ],
       },
@@ -126,7 +126,7 @@ export const chapter043: ChapterDefinition = {
         english: 'This mountain is the highest.',
         highlight: ['am höchsten'],
         explanation:
-          'Predicative superlative after sein; hoch loses its -c- and adds -sten: höchsten.',
+          'Predicative superlative after sein; hoch keeps its -ch- in the superlative (only the comparative höher drops the c) and adds -sten: höchsten.',
       },
       {
         german: 'Das ist der höchste Berg Deutschlands.',
@@ -228,7 +228,7 @@ export const chapter043: ChapterDefinition = {
         incorrect: 'Das ist der höhste Berg.',
         correct: 'Das ist der höchste Berg.',
         explanation:
-          'hoch drops its -c- and changes to höch- before adding the superlative ending: höchst-, not höhst-.',
+          'hoch keeps its -ch- in the superlative, even though the comparative höher drops the c: höchst-, not höhst-.',
       },
       {
         incorrect: 'Das war der heißste Tag des Jahres.',
@@ -351,7 +351,7 @@ export const chapter043: ChapterDefinition = {
       ],
       correctOptionId: 'c',
       explanation:
-        'hoch drops its -c- and changes to höch- before the ending: höchste, not höhste or hochste.',
+        'hoch keeps its -ch- in the superlative (only the comparative höher drops the c): höchste, not höhste or hochste.',
     },
     {
       id: 'ch43-ex-06',
@@ -494,7 +494,7 @@ export const chapter043: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['superlative', 'irregular', 'nah'],
       instruction: 'Choose the correct irregular superlative.',
-      prompt: 'Wir wohnen im ___ Haus zur Schule. (nah)',
+      prompt: 'Wir gehen zur ___ Apotheke. (nah)',
       options: [
         { id: 'a', text: 'nahsten' },
         { id: 'b', text: 'näheresten' },
@@ -503,7 +503,7 @@ export const chapter043: ChapterDefinition = {
       ],
       correctOptionId: 'c',
       explanation:
-        'nah is irregular: nah → näher → nächst-; attributive neuter dative ending -en gives nächsten.',
+        'nah is irregular: nah → näher → nächst-; after zur (zu + der, feminine dative) the ending is -en: zur nächsten Apotheke.',
     },
     {
       id: 'ch43-ex-14',
@@ -559,7 +559,7 @@ export const chapter043: ChapterDefinition = {
       placeholder: 'am höchsten',
       maxLength: 20,
       explanation:
-        'hoch is irregular and drops its -c-: höchst-; the predicative form is am höchsten.',
+        'hoch is irregular: höher drops the c, but the superlative keeps -ch-: höchst-; the predicative form is am höchsten.',
     },
     {
       id: 'ch43-ex-17',
@@ -701,7 +701,7 @@ export const chapter043: ChapterDefinition = {
       placeholder: 'Das ist der ...',
       maxLength: 60,
       explanation:
-        'hoch drops its -c- and changes to höch- before the superlative ending: höchste, not höhste.',
+        'hoch keeps its -ch- in the superlative (only the comparative höher drops the c): höchste, not höhste.',
     },
     {
       id: 'ch43-ex-25',
@@ -889,7 +889,7 @@ export const chapter043: ChapterDefinition = {
       ],
       correctOptionId: 'c',
       explanation:
-        'hoch drops its -c- before the ending: höchst-; attributive masculine nominative ending -e gives höchste.',
+        'hoch keeps its -ch- in the superlative: höchst-; attributive masculine nominative ending -e gives höchste.',
     },
     {
       id: 'ch43-ex-35',
@@ -1052,7 +1052,7 @@ export const chapter043: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'am höchsten',
       maxLength: 20,
-      explanation: 'hoch drops its -c-: höchst-; the predicative form is am höchsten.',
+      explanation: 'hoch keeps its -ch- in the superlative: höchst-; the predicative form is am höchsten.',
     },
     {
       id: 'ch43-ex-44',
@@ -1101,6 +1101,8 @@ export const chapter043: ChapterDefinition = {
       acceptedAnswers: [
         'Diese Suppe schmeckt am besten im Restaurant.',
         'Diese Suppe schmeckt am besten im Restaurant',
+        'Im Restaurant schmeckt diese Suppe am besten.',
+        'Im Restaurant schmeckt diese Suppe am besten',
       ],
       answerMode: 'normalized',
       placeholder: 'Diese Suppe schmeckt ...',
@@ -1169,7 +1171,7 @@ export const chapter043: ChapterDefinition = {
       grammarFocus: ['superlative', 'irregular', 'viel', 'predicative'],
       instruction:
         'Write the predicative superlative form. Capitalisation is not checked.',
-      prompt: 'Von allen Ländern reist Familie Müller ___. (viel, am ...-en)',
+      prompt: 'Von allen Familien reist Familie Müller ___. (viel, am ...-en)',
       acceptedAnswers: ['am meisten'],
       answerMode: 'caseInsensitive',
       placeholder: 'am meisten',
@@ -1450,7 +1452,7 @@ export const chapter043: ChapterDefinition = {
       slots: [{ id: 's1', correctWord: 'höchste' }],
       wordBank: ['höchste', 'hochste', 'höhste', 'hoheste'],
       explanation:
-        'hoch drops its -c- and changes to höch- before the ending: höchste, not höhste or hochste.',
+        'hoch keeps its -ch- in the superlative (only the comparative höher drops the c): höchste, not höhste or hochste.',
     },
     {
       id: 'ch43-ex-65',
@@ -1506,11 +1508,11 @@ export const chapter043: ChapterDefinition = {
       grammarFocus: ['superlative', 'irregular', 'nah'],
       instruction: 'Drag the correct word into the slot.',
       prompt: 'Complete the sentence with the correct irregular superlative (nah).',
-      templateParts: ['Wir wohnen im ', ' Haus zur Schule.'],
+      templateParts: ['Wir gehen zur ', ' Apotheke.'],
       slots: [{ id: 's1', correctWord: 'nächsten' }],
       wordBank: ['nächsten', 'nahsten', 'näheresten', 'näherste'],
       explanation:
-        'nah is irregular: nah → näher → nächst-; attributive neuter dative ending -en gives nächsten.',
+        'nah is irregular: nah → näher → nächst-; after zur (zu + der, feminine dative) the ending is -en: zur nächsten Apotheke.',
     },
     {
       id: 'ch43-ex-69',
@@ -1614,7 +1616,7 @@ export const chapter043: ChapterDefinition = {
       errorTokenIndex: 3,
       correction: 'höchste',
       explanation:
-        'hoch drops its -c- and changes to höch- before the superlative ending: höchste, not höhste.',
+        'hoch keeps its -ch- in the superlative (only the comparative höher drops the c): höchste, not höhste.',
     },
     {
       id: 'ch43-ex-76',
@@ -1670,7 +1672,7 @@ export const chapter043: ChapterDefinition = {
       grammarFocus: ['error-correction', 'superlative', 'irregular'],
       instruction: 'Click the token that contains the error.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Von', 'allen', 'Ländern', 'reist', 'sie', 'am', 'vielsten.'],
+      tokens: ['Von', 'allen', 'Freundinnen', 'reist', 'sie', 'am', 'vielsten.'],
       errorTokenIndex: 6,
       correction: 'meisten.',
       explanation:
@@ -1685,7 +1687,7 @@ export const chapter043: ChapterDefinition = {
       grammarFocus: ['error-correction', 'superlative', 'irregular', 'attributive'],
       instruction: 'Click the token that contains the error.',
       prompt: 'Find the mistake in this sentence.',
-      tokens: ['Wir', 'wohnen', 'im', 'nahsten', 'Haus', 'zur', 'Schule.'],
+      tokens: ['Wir', 'gehen', 'zur', 'nahsten', 'Apotheke.'],
       errorTokenIndex: 3,
       correction: 'nächsten',
       explanation:

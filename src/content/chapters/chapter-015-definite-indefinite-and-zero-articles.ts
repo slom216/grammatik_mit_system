@@ -287,16 +287,16 @@ export const chapter015: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['indefinite-article', 'noun-gender'],
       instruction: 'Choose the correct indefinite article.',
-      prompt: 'Ich habe ___ Bruder.',
+      prompt: 'Da kommt ___ Bus.',
       options: [
         { id: 'a', text: 'ein' },
         { id: 'b', text: 'eine' },
-        { id: 'c', text: 'der' },
-        { id: 'd', text: 'die' },
+        { id: 'c', text: 'einen' },
+        { id: 'd', text: 'eines' },
       ],
       correctOptionId: 'a',
       explanation:
-        'Bruder is masculine, so the indefinite article in the nominative is ein.',
+        'Bus is masculine and is the subject here, so the indefinite article in the nominative is ein.',
     },
     {
       id: 'ch15-ex-05',

@@ -146,7 +146,7 @@ export const chapter071: ChapterDefinition = {
       {
         id: 'ch71-table-05',
         title: 'Substantivized Superlatives',
-        columns: ['Positive', 'Superlative (attributive)', 'Substantivized', 'English'],
+        columns: ['Positive', 'Comparative / superlative', 'Substantivized', 'English'],
         rows: [
           ['gut', 'besser / am besten', 'das Beste', 'the best thing'],
           [
@@ -239,7 +239,7 @@ export const chapter071: ChapterDefinition = {
         english: "That's something completely different from what you said.",
         highlight: ['etwas ganz anderes'],
         explanation:
-          'ander- is a fixed exception: it stays lowercase after etwas, even though it still takes the strong ending -es.',
+          'ander- is a partial exception: it is usually written lowercase after etwas (Duden also permits Anderes), and it still takes the strong ending -es.',
       },
     ],
     commonMistakes: [
@@ -408,7 +408,7 @@ export const chapter071: ChapterDefinition = {
         'nominative',
         'wenig',
       ],
-      instruction: 'Choose the correct nominative form.',
+      instruction: 'Choose the correct accusative form (es gibt + accusative).',
       prompt: 'Zu diesem Thema gibt es ___ zu sagen. (little new)',
       options: [
         { id: 'a', text: 'wenig Neues' },
@@ -939,7 +939,7 @@ export const chapter071: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['substantivized-adjectives', 'capitalization', 'etwas'],
       instruction: 'Choose the correctly capitalized and spelled form.',
-      prompt: 'Das war ___ , was ich seit langem erlebt habe. (something complicated)',
+      prompt: 'Das war ___, was ich nicht sofort verstanden habe. (something complicated)',
       options: [
         { id: 'a', text: 'etwas Kompliziertes' },
         { id: 'b', text: 'etwas kompliziertes' },
@@ -1059,16 +1059,16 @@ export const chapter071: ChapterDefinition = {
       grammarFocus: ['substantivized-adjectives', 'superlatives', 'nominative'],
       instruction: 'Choose the correct substantivized superlative.',
       prompt:
-        'Der Verlust des Spiels war ___ , was uns passieren konnte. (the worst thing)',
+        'Der Verlust des Spiels war ___, was uns passieren konnte. (the worst thing)',
       options: [
-        { id: 'a', text: 'das Schlechteste' },
-        { id: 'b', text: 'das Schlechtestes' },
-        { id: 'c', text: 'dem Schlechtesten' },
-        { id: 'd', text: 'die Schlechteste' },
+        { id: 'a', text: 'das Schlimmste' },
+        { id: 'b', text: 'das Schlimmstes' },
+        { id: 'c', text: 'dem Schlimmsten' },
+        { id: 'd', text: 'die Schlimmste' },
       ],
       correctOptionId: 'a',
       explanation:
-        'A substantivized superlative after das takes the weak nominative ending -e: das Schlechteste.',
+        'A substantivized superlative after das takes the weak nominative ending -e: das Schlimmste.',
     },
     {
       id: 'ch71-ex-40',
@@ -1357,7 +1357,7 @@ export const chapter071: ChapterDefinition = {
       slots: [{ id: 'slot1', correctWord: 'Interessantes' }],
       wordBank: ['Interessantes', 'Interessante', 'Interessanten', 'Interessantem'],
       explanation:
-        'wenig is invariable; the adjective takes the strong nominative ending -es: Interessantes.',
+        'es gibt takes the accusative; wenig is invariable, so the adjective takes the strong accusative ending -es: Interessantes.',
     },
     {
       id: 'ch71-ex-56',
@@ -1367,8 +1367,8 @@ export const chapter071: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['substantivized-adjectives', 'strong-declension', 'dative'],
       instruction: 'Drag the correctly declined word into the slot.',
-      prompt: 'Ich kann mit ___ nichts anfangen.',
-      templateParts: ['Ich kann mit ', ' nichts anfangen.'],
+      prompt: 'Ich kann mit etwas ___ nichts anfangen.',
+      templateParts: ['Ich kann mit etwas ', ' nichts anfangen.'],
       slots: [{ id: 'slot1', correctWord: 'Einfachem' }],
       wordBank: ['Einfachem', 'Einfaches', 'Einfache', 'Einfachen'],
       explanation:
@@ -1455,8 +1455,8 @@ export const chapter071: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['substantivized-adjectives', 'superlatives', 'nominative'],
       instruction: 'Drag the correctly declined word into the slot.',
-      prompt: 'Das war ___ , was ich je gesehen habe.',
-      templateParts: ['Das war das ', ' , was ich je gesehen habe.'],
+      prompt: 'Das war ___, was ich je gesehen habe.',
+      templateParts: ['Das war das ', ', was ich je gesehen habe.'],
       slots: [{ id: 'slot1', correctWord: 'Schönste' }],
       wordBank: ['Schönste', 'Schönstes', 'Schönsten', 'Schöner'],
       explanation:

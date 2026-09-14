@@ -38,7 +38,7 @@ export const chapter066: ChapterDefinition = {
         paragraphs: [
           'lassen conjugates in the present tense as: ich lasse, du lässt, er/sie/es lässt, wir lassen, ihr lasst, sie/Sie lassen. Notice that the du- and er/sie/es-forms change the stem vowel from a to ä (lasse → lässt) — the same kind of vowel change you have already seen in strong verbs like fahren (du fährst) or schlafen (du schläfst).',
           'The wir-, ihr-, and sie/Sie-forms keep the plain stem lass- with the regular personal endings: lassen, lasst, lassen. Only du and er/sie/es take the umlaut.',
-          'Because the du-form already ends in -ssen → -ss-, no extra -s- is added for the ending: lässt, not lässst. This is the normal spelling simplification you see whenever a verb stem already ends in a sibilant.',
+          'Because the stem already ends in -ss, the du-ending -st only adds a -t: du lässt, not lässst. This is the normal spelling simplification you see whenever a verb stem already ends in a sibilant (du isst, du heißt).',
         ],
       },
       {
@@ -452,7 +452,7 @@ export const chapter066: ChapterDefinition = {
         { id: 'a', text: 'Ich lasse mein Auto reparieren.' },
         { id: 'b', text: 'Ich lasse reparieren mein Auto.' },
         { id: 'c', text: 'Ich mein Auto lasse reparieren.' },
-        { id: 'd', text: 'Reparieren lasse ich mein Auto.' },
+        { id: 'd', text: 'Ich lasse mein reparieren Auto.' },
       ],
       correctOptionId: 'a',
       explanation:
@@ -565,8 +565,8 @@ export const chapter066: ChapterDefinition = {
       dialogue: [
         {
           speaker: 'Tim',
-          german: 'Mama, darf ich mit Tim ins Kino gehen?',
-          english: 'Mum, may I go to the cinema with Tim?',
+          german: 'Mama, darf ich mit Jonas ins Kino gehen?',
+          english: 'Mum, may I go to the cinema with Jonas?',
         },
         {
           speaker: 'Mama',
@@ -615,7 +615,7 @@ export const chapter066: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'The double-infinitive perfect (lackieren lassen) with a paint shop context signals the causative meaning: arranging for someone else to do it.',
+        'The double-infinitive perfect (lackieren lassen) signals the causative meaning: arranging for someone else to do it.',
     },
     {
       id: 'ch66-ex-15',
@@ -909,6 +909,8 @@ export const chapter066: ChapterDefinition = {
       acceptedAnswers: [
         'Das Problem lässt sich lösen.',
         'Dieses Problem lässt sich lösen.',
+        'Das Problem lässt sich lösen',
+        'Dieses Problem lässt sich lösen',
       ],
       answerMode: 'normalized',
       placeholder: 'Das Problem lässt sich lösen.',
@@ -1125,7 +1127,7 @@ export const chapter066: ChapterDefinition = {
         },
         {
           speaker: 'Max',
-          german: 'Ich bin nicht sicher. Ich lasse dich wissen, wann ich Bescheid weiß.',
+          german: 'Ich bin nicht sicher. Ich lasse dich wissen, sobald ich Bescheid weiß.',
           english: "I'm not sure. I'll let you know once I find out.",
         },
       ],
@@ -1269,7 +1271,12 @@ export const chapter066: ChapterDefinition = {
       grammarFocus: ['lassen', 'translation', 'idiom'],
       instruction: 'Translate into German. Capitalisation and punctuation are checked.',
       prompt: "Let's go!",
-      acceptedAnswers: ['Lass uns gehen!', 'Lass uns gehen'],
+      acceptedAnswers: [
+        'Lass uns gehen!',
+        'Lass uns gehen',
+        'Lasst uns gehen!',
+        'Lasst uns gehen',
+      ],
       answerMode: 'normalized',
       placeholder: 'Lass uns gehen!',
       maxLength: 25,
@@ -1285,7 +1292,14 @@ export const chapter066: ChapterDefinition = {
       grammarFocus: ['lassen', 'translation', 'idiom', 'meaning-leave'],
       instruction: 'Translate into German. Capitalisation and punctuation are checked.',
       prompt: 'Leave me alone!',
-      acceptedAnswers: ['Lass mich in Ruhe!', 'Lass mich in Ruhe'],
+      acceptedAnswers: [
+        'Lass mich in Ruhe!',
+        'Lass mich in Ruhe',
+        'Lasst mich in Ruhe!',
+        'Lasst mich in Ruhe',
+        'Lassen Sie mich in Ruhe!',
+        'Lassen Sie mich in Ruhe',
+      ],
       answerMode: 'normalized',
       placeholder: 'Lass mich in Ruhe!',
       maxLength: 25,
@@ -1357,6 +1371,8 @@ export const chapter066: ChapterDefinition = {
       acceptedAnswers: [
         'Lass mich wissen, wann du ankommst.',
         'Lass mich wissen, wann du ankommst',
+        'Lass mich wissen, wenn du ankommst.',
+        'Lass mich wissen, wenn du ankommst',
       ],
       answerMode: 'normalized',
       placeholder: 'Lass mich wissen, wann du ankommst.',
@@ -1412,7 +1428,12 @@ export const chapter066: ChapterDefinition = {
       grammarFocus: ['lassen', 'translation', 'idiom'],
       instruction: 'Translate into German. Capitalisation and punctuation are checked.',
       prompt: "Let's go to the cinema!",
-      acceptedAnswers: ['Lass uns ins Kino gehen!', 'Lass uns ins Kino gehen'],
+      acceptedAnswers: [
+        'Lass uns ins Kino gehen!',
+        'Lass uns ins Kino gehen',
+        'Lasst uns ins Kino gehen!',
+        'Lasst uns ins Kino gehen',
+      ],
       answerMode: 'normalized',
       placeholder: 'Lass uns ins Kino gehen!',
       maxLength: 35,
@@ -1827,7 +1848,7 @@ export const chapter066: ChapterDefinition = {
       grammarFocus: ['lassen', 'perfect-tense', 'double-infinitive', 'error-correction'],
       instruction: 'Find the token that uses the wrong form, and correct it.',
       prompt:
-        'Ein Freund erzählt, warum er nicht selbst gefahren ist. Etwas stimmt nicht.',
+        'Ein Freund erzählt, warum er das Auto fahren durfte. Etwas stimmt nicht.',
       tokens: ['Er', 'hat', 'mich', 'gefahren', 'lassen.'],
       errorTokenIndex: 3,
       correction: 'fahren',

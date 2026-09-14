@@ -28,7 +28,7 @@ export const chapter076: ChapterDefinition = {
   ],
   explanation: {
     introduction: [
-      'Part 1 of this chapter covered relative clauses whose pronoun is the subject or direct object of its own clause — the nominative and accusative forms der/die/das/die and den/die/das/die. This chapter, Part 2, completes the relative pronoun system by adding the two remaining cases: the dative, used for indirect objects and for verbs that always take the dative (helfen, danken, gefallen, vertrauen...), and the genitive, which works like an embedded "whose" and shows possession inside the relative clause.',
+      'Part 1 (Chapter 75) covered relative clauses whose pronoun is the subject or direct object of its own clause — the nominative and accusative forms der/die/das/die and den/die/das/die. This chapter, Part 2, completes the relative pronoun system by adding the two remaining cases: the dative, used for indirect objects and for verbs that always take the dative (helfen, danken, gefallen, vertrauen...), and the genitive, which works like an embedded "whose" and shows possession inside the relative clause.',
       'Alongside the case system, this chapter also covers what happens when the shared element is not a direct or indirect object but the object of a preposition — der Mann, mit dem ich spreche — and a common, informal shortcut for places (and sometimes time) that many learners meet in everyday spoken German before they meet it in a textbook: wo, used instead of a preposition and a case-marked pronoun.',
       "None of this changes the fundamentals you already know from Part 1: a relative pronoun still takes its gender and number from its antecedent (the noun it refers back to), its clause is still set off by commas, and its finite verb still moves all the way to the end. What is new is simply a wider range of pronoun forms and preposition combinations to choose from, based on the pronoun's grammatical job inside its own clause.",
     ],
@@ -46,7 +46,7 @@ export const chapter076: ChapterDefinition = {
         heading: 'The dative relative pronouns: dem, der, dem, denen',
         paragraphs: [
           'Use the dative relative pronoun when the shared noun functions as an indirect object in its own clause, or follows a verb that always takes the dative — helfen, danken, gefallen, vertrauen, glauben, gratulieren, and others. The forms are dem (masculine), der (feminine), dem (neuter), and denen (plural).',
-          'Notice that the singular forms are identical to the dative definite articles you already know; only the plural form, denen, is new — it replaces the article den you would expect from the accusative plural, so it is easy to confuse the two if you are not paying attention to case.',
+          'Notice that the singular forms are identical to the dative definite articles you already know; only the plural form, denen, is new — it replaces the dative plural article den (den Kindern), so it is easy to confuse the two if you are not paying attention.',
           'Der Mann, dem ich geholfen habe, ist mein Nachbar. (helfen takes the dative; Mann is masculine, so dem.) Die Kinder, denen ich geholfen habe, sind meine Nichten. (plural, so denen, not den.)',
         ],
       },
@@ -83,7 +83,7 @@ export const chapter076: ChapterDefinition = {
         heading: 'Punctuation and combining more complex sentences',
         paragraphs: [
           'Every relative clause is still set off by commas on both sides (or by a comma and the end of the sentence), exactly as in Part 1 — regardless of which case the relative pronoun takes or whether a preposition precedes it.',
-          "To combine two sentences into one using a dative, genitive, or prepositional relative clause: find the noun the two sentences share, delete it (and its article) from the second sentence, replace it with the correct relative pronoun in the case its role in that second clause requires, move that pronoun — together with any preposition — to the front of the clause, and send the rest of that clause's finite verb to the end.",
+          "To combine two sentences into one using a dative, genitive, or prepositional relative clause: find the noun the two sentences share, delete it (and its article) from the second sentence, replace it with the correct relative pronoun in the case its role in that second clause requires, move that pronoun — together with any preposition — to the front of the clause, and send that clause's finite verb to the end.",
           'Ich kenne den Mann. + Ich habe dem Mann das Buch gegeben. → Ich kenne den Mann, dem ich das Buch gegeben habe.',
         ],
       },
@@ -1048,12 +1048,12 @@ export const chapter076: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['relative-pronouns', 'preposition', 'dative'],
       instruction: 'Write the missing relative pronoun. Capitalisation is not checked.',
-      prompt: 'Die Stadt, nach ___ wir fahren, liegt in Bayern. (nach + Dativ)',
+      prompt: 'Die Wohnung, nach ___ wir suchen, muss günstig sein. (suchen nach + Dativ)',
       acceptedAnswers: ['der'],
       answerMode: 'caseInsensitive',
       placeholder: 'der',
       maxLength: 10,
-      explanation: 'nach always governs the dative; Stadt is feminine, so nach der.',
+      explanation: 'nach always governs the dative; Wohnung is feminine, so nach der.',
     },
     {
       id: 'ch76-ex-46',

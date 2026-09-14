@@ -178,8 +178,8 @@ export const chapter054: ChapterDefinition = {
           'kamen (kommen, strong, wir-ending -en) and hatte (haben, mixed) combine freely in the same narrative sentence.',
       },
       {
-        german: 'Du gabst mir dein Buch zurück, bevor du wieder abfuhrst.',
-        english: 'You gave me back your book before you left again.',
+        german: 'Du gabst mir mein Buch zurück, bevor du wieder abfuhrst.',
+        english: 'You gave me back my book before you left again.',
         highlight: ['gabst'],
         explanation:
           'geben is strong: du takes the ending -st on the changed stem gab-, giving gabst.',
@@ -382,7 +382,7 @@ export const chapter054: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['strong-verbs', 'simple-past', 'conjugation'],
       instruction: 'Choose the correct simple-past form.',
-      prompt: 'Du ___ mir dein Buch zurück.',
+      prompt: 'Du ___ mir mein Buch zurück.',
       options: [
         { id: 'a', text: 'gibst' },
         { id: 'b', text: 'gabst' },
@@ -890,7 +890,7 @@ export const chapter054: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['strong-verbs', 'error-correction'],
       instruction:
-        'This sentence has a spelling error. Write the corrected sentence. Capitalisation is checked; no full stop is required.',
+        'This sentence has a simple-past error. Write the corrected sentence. Capitalisation is checked; no full stop is required.',
       prompt: 'Fehler: Er gehte nach Hause.',
       acceptedAnswers: ['Er ging nach Hause.', 'Er ging nach Hause'],
       answerMode: 'normalized',

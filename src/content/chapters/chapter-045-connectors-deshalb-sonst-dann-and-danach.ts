@@ -514,13 +514,13 @@ export const chapter045: ChapterDefinition = {
         'Wir packen zuerst die Koffer. Dann fahren wir zum Flughafen. ___ checken wir ein.',
       options: [
         { id: 'a', text: 'Danach' },
-        { id: 'b', text: 'Dann' },
+        { id: 'b', text: 'Denn' },
         { id: 'c', text: 'Deshalb' },
         { id: 'd', text: 'Sonst' },
       ],
       correctOptionId: 'a',
       explanation:
-        'Since dann already marks the previous step, danach ("after that") continues the sequence naturally, and checking in strictly follows arriving at the airport.',
+        'Checking in strictly follows arriving at the airport, so danach ("after that") continues the sequence. denn cannot fill position 1 before the verb, and deshalb and sonst do not express a time sequence.',
     },
     {
       id: 'ch45-ex-13',
@@ -643,8 +643,8 @@ export const chapter045: ChapterDefinition = {
         },
         {
           speaker: 'Mitarbeiterin',
-          german: 'Und wenn ich das nicht schaffe?',
-          english: "And if I can't manage that?",
+          german: 'Muss das wirklich heute sein?',
+          english: 'Does it really have to be today?',
         },
       ],
       prompt: '___ bekommen Sie Probleme mit dem Kunden.',
@@ -861,11 +861,11 @@ export const chapter045: ChapterDefinition = {
         { id: 'a', text: 'Danach' },
         { id: 'b', text: 'Deshalb' },
         { id: 'c', text: 'Sonst' },
-        { id: 'd', text: 'Dann' },
+        { id: 'd', text: 'Denn' },
       ],
       correctOptionId: 'a',
       explanation:
-        'Getting dressed strictly follows showering, so danach ("after that") fits best.',
+        'Getting dressed strictly follows showering, so danach ("after that") fits. denn cannot fill position 1 before the verb, and deshalb and sonst do not express a time sequence.',
     },
     {
       id: 'ch45-ex-30',
@@ -1257,13 +1257,13 @@ export const chapter045: ChapterDefinition = {
           english: 'I will call him right away.',
         },
       ],
-      prompt: 'Sei pünktlich, ___ wartet der Kunde vergeblich.',
+      prompt: 'Beeilen Sie sich, ___ wartet der Kunde vergeblich.',
       acceptedAnswers: ['sonst'],
       answerMode: 'caseInsensitive',
       placeholder: 'sonst',
       maxLength: 15,
       explanation:
-        'The clause warns of a negative consequence if punctuality is ignored, so sonst ("otherwise") fits.',
+        'The clause warns of a negative consequence if the employee does not hurry, so sonst ("otherwise") fits.',
     },
     {
       id: 'ch45-ex-49',
@@ -1349,7 +1349,10 @@ export const chapter045: ChapterDefinition = {
       instruction:
         'Write a complete sentence using sonst for the cues in brackets. Capitalisation and punctuation are checked.',
       prompt: 'du – schneller laufen müssen – den Zug verpassen',
-      acceptedAnswers: ['Du musst schneller laufen, sonst verpasst du den Zug.'],
+      acceptedAnswers: [
+        'Du musst schneller laufen, sonst verpasst du den Zug.',
+        'Du musst schneller laufen. Sonst verpasst du den Zug.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Du musst schneller laufen, sonst ...',
       maxLength: 70,

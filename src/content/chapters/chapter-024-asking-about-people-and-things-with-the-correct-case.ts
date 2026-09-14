@@ -1201,7 +1201,7 @@ export const chapter024: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['was', 'nominative', 'thing'],
       instruction: 'Drag the correct question word into the slot.',
-      prompt: 'Vervollständige die Frage: "___ liegt auf dem Sofa?"',
+      prompt: 'Vervollständige die Frage: "___ liegt auf dem Sofa?" (a thing)',
       templateParts: ['', ' liegt auf dem Sofa?'],
       slots: [{ id: 'ch24-ex54-slot1', correctWord: 'Was' }],
       wordBank: ['Wer', 'Was', 'Wem'],

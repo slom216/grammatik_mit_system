@@ -768,7 +768,7 @@ export const chapter011: ChapterDefinition = {
         { id: 'ch11-ex30-s5', text: 'Kaffee.' },
       ],
       explanation:
-        'Nein confirms the negative and is followed by a comma; the sentence then states the fact with normal word order: Nein, ich trinke keinen Kaffee.',
+        'Nein opens the negative answer and is followed by a comma; the sentence then states the fact with normal word order: Nein, ich trinke keinen Kaffee.',
     },
     {
       id: 'ch11-ex-31',

@@ -927,7 +927,10 @@ export const chapter057: ChapterDefinition = {
       instruction:
         'Correct the mistake and write the full, corrected sentence. Capitalisation and punctuation are checked.',
       prompt: 'Fehler: Ich versuche, verzustehen die Aufgabe.',
-      acceptedAnswers: ['Ich versuche, die Aufgabe zu verstehen.'],
+      acceptedAnswers: [
+        'Ich versuche, die Aufgabe zu verstehen.',
+        'Ich versuche die Aufgabe zu verstehen.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich versuche, ...',
       maxLength: 60,

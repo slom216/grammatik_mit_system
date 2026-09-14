@@ -298,7 +298,7 @@ export const chapter058: ChapterDefinition = {
         incorrect: 'Ich denke oft über meine Familie.',
         correct: 'Ich denke oft an meine Familie.',
         explanation:
-          'Wrong preposition: the English "think about" tempts learners to use über, but denken is always fixed with an.',
+          'Wrong preposition: the English "think about" tempts learners to use über, but denken meaning "to think of/about someone or something" is fixed with an. (über only appears when asking for an opinion: Wie denkst du über den Film?)',
       },
       {
         incorrect: 'Ich freue mich auf der Party.',
@@ -1367,7 +1367,7 @@ export const chapter058: ChapterDefinition = {
       grammarFocus: ['wofür', 'question-word', 'kämpfen für', 'transfer'],
       instruction:
         'Write the question that would produce exactly the underlined part of the statement as the answer. Capitalisation and the question mark are checked.',
-      prompt: 'Er kämpft für seine Familie. (underlined: seine Familie)',
+      prompt: 'Er kämpft für seine Rechte. (underlined: seine Rechte)',
       acceptedAnswers: ['Wofür kämpft er?'],
       answerMode: 'normalized',
       placeholder: 'Wofür ...',

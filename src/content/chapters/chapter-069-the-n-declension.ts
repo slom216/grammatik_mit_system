@@ -5,7 +5,7 @@ export const chapter069: ChapterDefinition = {
   number: 69,
   slug: 'the-n-declension',
   title: 'The N-Declension',
-  germanTitle: 'die n-Deklination',
+  germanTitle: 'Die n-Deklination',
   level: 'B1',
   section: 'nouns-2',
   objective:
@@ -61,7 +61,7 @@ export const chapter069: ChapterDefinition = {
         id: 'ch69-rule-04',
         heading: 'Suffixes that hint at a weak noun',
         paragraphs: [
-          'The n-declension is a closed, memorizable list rather than a fully productive rule, but certain suffixes are good statistical predictors. Many nouns in -e that denote a person, a role, or a profession are weak: Junge, Kollege, Kunde, Name (the wider language also has Erbe "heir" and Bote "messenger" on the same pattern).',
+          'The n-declension is a closed, memorizable list rather than a fully productive rule, but certain suffixes are good statistical predictors. Many masculine nouns in -e that denote a person, a role, or an animal are weak: Junge, Kollege, Kunde, and animals such as Löwe and Affe; Name follows the same pattern although it names no person (the wider language also has Erbe "heir" and Bote "messenger" on the same pattern).',
           'A second cluster comes from nouns borrowed from Latin, Greek, or French that end in -ent, -ist, -and, or -oge and denote a person: Patient, Student, and Tourist belong to this pattern in this chapter (the wider language also has words like Präsident, Doktorand, and Biologe on the same suffixes). These endings are a useful first guess for a new masculine noun that names a person, but the safest approach remains to learn each weak noun individually, since plenty of masculine nouns with similar shapes stay perfectly regular.',
           'Mensch, Herr, and Nachbar do not fit either suffix pattern at all — a reminder that the class has to be memorized noun by noun rather than derived purely from spelling.',
         ],
@@ -829,7 +829,7 @@ export const chapter069: ChapterDefinition = {
       placeholder: 'Name',
       maxLength: 15,
       explanation:
-        'As the subject of the implied "ist", Name is nominative singular and stays in its bare, unmarked form.',
+        'As the subject of lautet, Name is nominative singular and stays in its bare, unmarked form.',
     },
     {
       id: 'ch69-ex-28',
@@ -1091,8 +1091,8 @@ export const chapter069: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['n-declension', 'accusative', 'junge'],
       instruction: 'Drag the correct word into the gap.',
-      prompt: 'Ich sehe ___ im Park.',
-      templateParts: ['Ich sehe ', ' im Park.'],
+      prompt: 'Ich sehe den ___ im Park.',
+      templateParts: ['Ich sehe den ', ' im Park.'],
       slots: [{ id: 'slot1', correctWord: 'Jungen' }],
       wordBank: ['Jungen', 'Junge', 'Jung'],
       explanation:
@@ -1106,8 +1106,8 @@ export const chapter069: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['n-declension', 'dative', 'nachbar'],
       instruction: 'Drag the correct word into the gap.',
-      prompt: 'Wir helfen ___ jeden Tag.',
-      templateParts: ['Wir helfen ', ' jeden Tag.'],
+      prompt: 'Wir helfen unserem ___ jeden Tag.',
+      templateParts: ['Wir helfen unserem ', ' jeden Tag.'],
       slots: [{ id: 'slot1', correctWord: 'Nachbarn' }],
       wordBank: ['Nachbarn', 'Nachbar', 'Nachbars'],
       explanation:

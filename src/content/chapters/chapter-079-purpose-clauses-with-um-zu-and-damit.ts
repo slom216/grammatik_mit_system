@@ -734,6 +734,7 @@ export const chapter079: ChapterDefinition = {
         'Wir schließen die Tür, damit die Katze nicht rausgeht.',
         'Damit die Katze nicht rausgeht, schließen wir die Tür.',
         'Wir schließen die Tür, damit die Katze nicht herausgeht.',
+        'Wir schließen die Tür, damit die Katze nicht hinausgeht.',
       ],
       answerMode: 'normalized',
       placeholder: 'Wir schließen die Tür, damit ...',
@@ -1045,7 +1046,7 @@ export const chapter079: ChapterDefinition = {
       ],
       correctOptionId: 'b',
       explanation:
-        'Subjects differ (er vs. die Schüler), so damit is required; the finite verb verstehen (verstehen sie) goes to the end.',
+        'Subjects differ (er vs. die Schüler), so damit is required; the finite verb verstehen goes to the end, and sie refers to die Regel.',
     },
     {
       id: 'ch79-ex-38',
@@ -1829,7 +1830,7 @@ export const chapter079: ChapterDefinition = {
       prompt: 'Um die Prüfung zu bestehen, ___ er viel lernen.',
       templateParts: ['Um die Prüfung zu bestehen, ', ' er viel lernen.'],
       slots: [{ id: 'slot1', correctWord: 'muss' }],
-      wordBank: ['muss', 'musst', 'müssen', 'soll'],
+      wordBank: ['muss', 'musst', 'müssen', 'müsst'],
       explanation:
         "After the fronted um ... zu clause, the main clause's finite verb (muss) comes immediately after the comma.",
     },
@@ -2062,8 +2063,8 @@ export const chapter079: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['error-correction', 'um-zu', 'reflexive-verb'],
-      instruction: 'Find the token that makes this sentence ungrammatical.',
-      prompt: 'Er spart Geld, um ihm ein neues Auto zu kaufen.',
+      instruction: 'The car is for himself. Find the token with the mistake.',
+      prompt: 'Er spart Geld, um ihm ein neues Auto zu kaufen. (Das Auto ist für ihn selbst.)',
       tokens: [
         'Er',
         'spart',

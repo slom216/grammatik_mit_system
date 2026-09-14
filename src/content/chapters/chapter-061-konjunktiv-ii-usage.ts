@@ -556,7 +556,7 @@ export const chapter061: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'könnte expresses possibility ("it could rain"); würde would need a further condition, sollte would mean advice, and müsste would mean strong probability.',
+        'könnte expresses possibility ("it could rain"); würde would need a further condition, sollte would mean an expectation ("it is supposed to rain"), and müsste would mean strong probability.',
     },
     {
       id: 'ch61-ex-09',
@@ -575,7 +575,7 @@ export const chapter061: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'müsste expresses a near-certain probability ("he should/must be here soon"), distinct from sollte (advice) or könnte (mere possibility).',
+        'müsste expresses a near-certain probability ("he should/must be here soon"); sollte would be a milder expectation, dürfte a hedged guess, and könnte a mere possibility.',
     },
     {
       id: 'ch61-ex-10',
@@ -915,6 +915,8 @@ export const chapter061: ChapterDefinition = {
       acceptedAnswers: [
         'Könnten Sie das Fenster öffnen?',
         'Könnten Sie das Fenster öffnen',
+        'Könnten Sie bitte das Fenster öffnen?',
+        'Könnten Sie das Fenster bitte öffnen?',
       ],
       answerMode: 'normalized',
       placeholder: 'Könnten Sie ...?',
@@ -935,6 +937,7 @@ export const chapter061: ChapterDefinition = {
       acceptedAnswers: [
         'Ich wünschte, ich hätte ein Auto.',
         'Ich wünschte, ich hätte ein Auto',
+        'Ich wünschte, dass ich ein Auto hätte.',
       ],
       answerMode: 'normalized',
       placeholder: 'Ich wünschte, ich hätte ...',
@@ -952,7 +955,11 @@ export const chapter061: ChapterDefinition = {
       instruction:
         'Rewrite the statement as advice using sollte. Capitalisation and punctuation are checked.',
       prompt: 'Er raucht zu viel. → Ratschlag mit sollte',
-      acceptedAnswers: ['Er sollte weniger rauchen.', 'Er sollte weniger rauchen'],
+      acceptedAnswers: [
+        'Er sollte weniger rauchen.',
+        'Er sollte weniger rauchen',
+        'Er sollte nicht so viel rauchen.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Er sollte ...',
       maxLength: 50,
@@ -1452,7 +1459,7 @@ export const chapter061: ChapterDefinition = {
       ],
       wordBank: ['hätte', 'würde', 'habe', 'werde'],
       explanation:
-        'The wenn-clause needs the synthetic hätte, and the main clause needs würde, because kommen normally takes the analytic form here.',
+        'The wenn-clause needs the synthetic hätte, and the main clause needs würde + kommen (the synthetic käme ich would also be correct, but it is not in the word bank).',
     },
     {
       id: 'ch61-ex-54',
@@ -1570,7 +1577,7 @@ export const chapter061: ChapterDefinition = {
       grammarFocus: ['konjunktiv-ii', 'meaning-distinction'],
       instruction:
         'Find the token that expresses the wrong strength of certainty and correct it.',
-      prompt: 'Es müsste heute regnen.',
+      prompt: 'Kontext: Regen ist nur möglich, nicht wahrscheinlich. — Es müsste heute regnen.',
       tokens: ['Es', 'müsste', 'heute', 'regnen.'],
       errorTokenIndex: 1,
       correction: 'könnte',
@@ -1606,7 +1613,11 @@ export const chapter061: ChapterDefinition = {
       instruction:
         'Rewrite the factual statement as a wish using Ich wünschte. Capitalisation and punctuation are checked.',
       prompt: 'Ich bin nicht reich. → Wunsch mit Ich wünschte',
-      acceptedAnswers: ['Ich wünschte, ich wäre reich.', 'Ich wünschte, ich wäre reich'],
+      acceptedAnswers: [
+        'Ich wünschte, ich wäre reich.',
+        'Ich wünschte, ich wäre reich',
+        'Ich wünschte, dass ich reich wäre.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich wünschte, ich wäre ...',
       maxLength: 50,
@@ -1791,7 +1802,7 @@ export const chapter061: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'Both clauses need Konjunktiv II, and the main clause verb takes second position right after the comma (würde ich), not verb-first with the subject moved.',
+        'Both clauses need Konjunktiv II, and the main clause verb takes second position right after the comma (würde ich), not subject-first (ich würde).',
     },
     {
       id: 'ch61-ex-71',
@@ -1922,7 +1933,7 @@ export const chapter061: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'müsste expresses a strong, near-certain probability; sollte is advice, könnte is mere possibility, and dürfte is a more hedged probability.',
+        'müsste expresses a strong, near-certain probability; sollte is only a milder expectation, könnte is mere possibility, and dürfte is a more hedged probability.',
     },
     {
       id: 'ch61-ex-77',
@@ -1939,7 +1950,7 @@ export const chapter061: ChapterDefinition = {
       placeholder: 'würde',
       maxLength: 15,
       explanation:
-        'würde is needed here because regnen (as an impersonal verb with es) uses the analytic würde-construction.',
+        'regnen is a weak verb (regnete would look like the simple past), so the wenn-clause uses the würde-construction: würde ... regnen.',
     },
     {
       id: 'ch61-ex-78',
@@ -2045,7 +2056,11 @@ export const chapter061: ChapterDefinition = {
       instruction:
         'Rewrite the statement as advice using sollte. Capitalisation and punctuation are checked.',
       prompt: 'Sie raucht zu viel. → Ratschlag mit sollte',
-      acceptedAnswers: ['Sie sollte weniger rauchen.', 'Sie sollte weniger rauchen'],
+      acceptedAnswers: [
+        'Sie sollte weniger rauchen.',
+        'Sie sollte weniger rauchen',
+        'Sie sollte nicht so viel rauchen.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Sie sollte ...',
       maxLength: 50,
@@ -2191,7 +2206,11 @@ export const chapter061: ChapterDefinition = {
       instruction:
         'Rewrite the blunt command as a formal polite request using würden. Capitalisation and punctuation are checked.',
       prompt: 'Sei leiser! → höfliche Bitte mit würden (Sie)',
-      acceptedAnswers: ['Würden Sie bitte leiser sein?', 'Würden Sie bitte leiser sein'],
+      acceptedAnswers: [
+        'Würden Sie bitte leiser sein?',
+        'Würden Sie bitte leiser sein',
+        'Würden Sie leiser sein?',
+      ],
       answerMode: 'normalized',
       placeholder: 'Würden Sie ...?',
       maxLength: 50,

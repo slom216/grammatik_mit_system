@@ -46,7 +46,7 @@ export const chapter051: ChapterDefinition = {
         paragraphs: [
           '-heit and -keit attach to adjectives to name the quality the adjective describes, and the resulting noun is always feminine: schön → die Schönheit ("beauty"), frei → die Freiheit ("freedom"), möglich → die Möglichkeit ("possibility"), sauber → die Sauberkeit ("cleanliness"). As a rough rule of thumb, -keit tends to follow adjectives that already end in -ig, -lich, or -bar, while -heit follows most others, but both suffixes do the same job.',
           '-ung attaches to a verb stem to name the action or its result, and is likewise always feminine: bilden → die Bildung ("education, formation"), lösen → die Lösung ("solution"), wohnen → die Wohnung ("apartment"). -schaft attaches mainly to nouns to name a relationship, collective, or state, and is also feminine: Freund → die Freundschaft ("friendship"), Mann → die Mannschaft ("team").',
-          '-tum is different: it usually forms neuter nouns from other nouns or adjectives (König → das Königtum, "kingdom"; Christ → das Christentum, "Christianity"), but a handful of very frequent -tum nouns are masculine exceptions that must simply be memorized: reich → der Reichtum ("wealth"), irren → der Irrtum ("error, mistake").',
+          '-tum is different: it usually forms neuter nouns from other nouns or adjectives (König → das Königtum, "kingship, monarchy"; Christ → das Christentum, "Christianity"), but a handful of very frequent -tum nouns are masculine exceptions that must simply be memorized: reich → der Reichtum ("wealth"), irren → der Irrtum ("error, mistake").',
         ],
       },
       {
@@ -1280,7 +1280,7 @@ export const chapter051: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'das Königtum',
       maxLength: 25,
-      explanation: 'König + -tum → das Königtum ("kingdom"); most -tum nouns are neuter.',
+      explanation: 'König + -tum → das Königtum ("kingship, monarchy"); most -tum nouns are neuter.',
     },
     {
       id: 'ch51-ex-54',

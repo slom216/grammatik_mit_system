@@ -51,7 +51,7 @@ export const chapter021: ChapterDefinition = {
         heading: 'Which case? It depends on the verb, not on the meaning',
         paragraphs: [
           'The hardest part of this chapter is not memorising the forms but knowing which case a given verb needs, because German case does not always match English intuition. Verbs such as sehen (to see), hören (to hear), kennen (to know), lieben (to love), brauchen (to need), fragen (to ask), and besuchen (to visit) all take the accusative: Ich brauche dich. (I need you.)',
-          'Other very common verbs take the dative even though the English translation looks exactly like a direct object: helfen (to help), danken (to thank), gefallen (to please/like), gehören (to belong to), antworten (to answer), and glauben (to believe) all take the dative: Ich helfe dir. (I help you.) — even though "you" looks like a direct object in English, dir is dative in German because helfen is a dative verb.',
+          'Other very common verbs take the dative even though the English translation looks exactly like a direct object: helfen (to help), danken (to thank), gefallen (to please/like), gehören (to belong to), antworten (to answer), and glauben (to believe someone) all take the dative: Ich helfe dir. (I help you.) — even though "you" looks like a direct object in English, dir is dative in German because helfen is a dative verb.',
           "There is no shortcut other than learning which group a verb belongs to. When in doubt, learn the case together with the verb, as if it were part of the verb's spelling.",
         ],
       },
@@ -683,7 +683,7 @@ export const chapter021: ChapterDefinition = {
         { id: 'ch21-ex-25-p5', left: 'es', right: 'es' },
       ],
       explanation:
-        'The singular accusative pronouns are mich (ich), dich (du), ihn (er), sie (sie/she), and es (es) — er is the only singular form that changes shape.',
+        'The singular accusative pronouns are mich (ich), dich (du), ihn (er), sie (sie/she), and es (es) — of the third-person forms er, sie and es, only er changes shape.',
     },
     {
       id: 'ch21-ex-26',
@@ -778,7 +778,7 @@ export const chapter021: ChapterDefinition = {
         },
         { id: 'ch21-ex-30-p4', left: 'gehören', right: 'to belong to (dative object)' },
         { id: 'ch21-ex-30-p5', left: 'antworten', right: 'to answer (dative object)' },
-        { id: 'ch21-ex-30-p6', left: 'glauben', right: 'to believe (dative object)' },
+        { id: 'ch21-ex-30-p6', left: 'glauben', right: 'to believe someone (dative object)' },
       ],
       explanation:
         'helfen, danken, gefallen, gehören, antworten, and glauben all take an indirect object in the dative, even though several look like direct objects in English.',

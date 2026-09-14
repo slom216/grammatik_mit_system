@@ -1,5 +1,6 @@
 import { useEffect, useId, useRef } from 'react';
 import type { TextInputExercise as TextInputExerciseData } from '../../schemas/exerciseSchema';
+import { checkTextAnswer } from '../../features/practice/answerNormalization';
 import { UmlautHelper } from './UmlautHelper';
 
 export interface TextInputExerciseProps {
@@ -27,6 +28,13 @@ export function TextInputExercise({
     fieldRef.current?.focus();
   }, []);
 
+  // Many chapters set the answer itself as placeholder, which gives it away.
+  // Only show a hint that would not be graded as a correct answer.
+  const hint = exercise.placeholder;
+  const hintCheck = hint ? checkTextAnswer(exercise, hint) : undefined;
+  const placeholder =
+    hintCheck && (hintCheck.correct || hintCheck.capitalisationOnlyMismatch) ? undefined : hint;
+
   const sharedProps = {
     id: inputId,
     className: 'text-answer__field',
@@ -39,7 +47,7 @@ export function TextInputExercise({
     autoCapitalize: 'none',
     autoCorrect: 'off',
     'aria-describedby': showUmlautHelper ? helperId : undefined,
-    placeholder: exercise.placeholder,
+    placeholder,
     maxLength: exercise.maxLength,
   };
 

@@ -812,8 +812,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'c', text: '-n-' },
         { id: 'd', text: 'no linking element' },
       ],
-      correctOptionId: 'a',
-      explanation: 'Kranke adds a linking -en- before Haus: Krankenhaus (hospital).',
+      correctOptionId: 'c',
+      explanation: 'der Kranke already ends in -e, so only a linking -n- is added before Haus: Krankenhaus (hospital).',
     },
     {
       id: 'ch47-ex-32',
@@ -1134,7 +1134,7 @@ export const chapter047: ChapterDefinition = {
       answerMode: 'exact',
       placeholder: 'Krankenhaus',
       maxLength: 30,
-      explanation: 'Kranke adds a linking -en- before Haus: Krankenhaus (hospital).',
+      explanation: 'Kranke, which ends in -e, adds a linking -n- before Haus: Krankenhaus (hospital).',
     },
     {
       id: 'ch47-ex-50',
@@ -1239,7 +1239,7 @@ export const chapter047: ChapterDefinition = {
         { id: 'p1', left: 'Zahnbürste', right: 'no linking element' },
         { id: 'p2', left: 'Orangensaft', right: '-n-' },
         { id: 'p3', left: 'Zeitungsartikel', right: '-s-' },
-        { id: 'p4', left: 'Krankenhaus', right: '-en-' },
+        { id: 'p4', left: 'Menschenrecht', right: '-en-' },
         { id: 'p5', left: 'Gästezimmer', right: '-e-' },
       ],
       explanation:
@@ -1403,7 +1403,7 @@ export const chapter047: ChapterDefinition = {
       templateParts: ['Sie arbeitet als Ärztin in einem großen ', '.'],
       slots: [{ id: 's1', correctWord: 'Krankenhaus' }],
       wordBank: ['Krankenhaus', 'Krankhaus', 'Krankshaus', 'Krankenshaus'],
-      explanation: 'Kranke adds a linking -en- before Haus: das Krankenhaus.',
+      explanation: 'Kranke, which ends in -e, adds a linking -n- before Haus: das Krankenhaus.',
     },
     {
       id: 'ch47-ex-65',
@@ -1472,7 +1472,7 @@ export const chapter047: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['head-noun', 'gender', 'error-correction'],
       instruction: 'Click the token with the wrong gender and note the correction.',
-      prompt: 'Der Kühlschrank has the wrong article. Find the error.',
+      prompt: 'Find the error in this sentence.',
       tokens: ['Die', 'Kühlschrank', 'ist', 'kaputt.'],
       errorTokenIndex: 0,
       correction: 'Der',

@@ -1184,7 +1184,7 @@ export const chapter062: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'der Nachbar is a person doing the finding, so the agent phrase takes von + dative (den Nachbarn); aus, bei and mit do not name an agent.',
+        'die Nachbarn are the people doing the finding, so the agent phrase takes von + dative plural (den Nachbarn); aus, bei and mit do not name an agent.',
     },
     {
       id: 'ch62-ex-46',

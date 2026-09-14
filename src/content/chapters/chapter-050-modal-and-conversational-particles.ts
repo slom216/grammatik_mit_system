@@ -773,7 +773,7 @@ export const chapter050: ChapterDefinition = {
       prompt: 'Timo means: "Well, that\'s a surprise!"',
       dialogue: [
         {
-          speaker: 'Timo',
+          speaker: 'Lara',
           german: 'Ich habe die Prüfung bestanden!',
           english: 'I passed the exam!',
         },
@@ -978,7 +978,7 @@ export const chapter050: ChapterDefinition = {
         { id: 'a', text: 'ja' },
         { id: 'b', text: 'denn' },
         { id: 'c', text: 'eigentlich' },
-        { id: 'd', text: 'doch' },
+        { id: 'd', text: 'mal' },
       ],
       correctOptionId: 'a',
       explanation:
@@ -1058,7 +1058,7 @@ export const chapter050: ChapterDefinition = {
         { id: 'a', text: 'denn' },
         { id: 'b', text: 'ja' },
         { id: 'c', text: 'doch' },
-        { id: 'd', text: 'eigentlich' },
+        { id: 'd', text: 'mal' },
       ],
       correctOptionId: 'a',
       explanation:
@@ -1117,7 +1117,7 @@ export const chapter050: ChapterDefinition = {
       dialogue: [
         {
           speaker: 'Sara',
-          german: 'Ich bin heute so müde, ich glaube ich bleibe lieber zu Hause.',
+          german: 'Ich bin heute so müde, ich glaube, ich bleibe lieber zu Hause.',
           english: "I'm so tired today, I think I'd rather stay home.",
         },
         {

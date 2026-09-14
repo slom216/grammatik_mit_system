@@ -1178,13 +1178,13 @@ export const chapter044: ChapterDefinition = {
       grammarFocus: ['aber-vs-sondern', 'negation', 'sentence-formation'],
       instruction:
         'Combine the two sentences using sondern. Capitalisation and punctuation are checked.',
-      prompt: 'Das Auto ist nicht neu. Es ist zuverlässig.',
-      acceptedAnswers: ['Das Auto ist nicht neu, sondern zuverlässig.'],
+      prompt: 'Das Auto ist nicht neu. Es ist gebraucht.',
+      acceptedAnswers: ['Das Auto ist nicht neu, sondern gebraucht.'],
       answerMode: 'normalized',
       placeholder: 'Das Auto ist nicht neu, sondern ...',
       maxLength: 70,
       explanation:
-        'The first clause is negated (nicht neu) and zuverlässig replaces it, so the two clauses combine with sondern, dropping the repeated "es ist".',
+        'The first clause is negated (nicht neu) and gebraucht (used) replaces it, so the two clauses combine with sondern, dropping the repeated "es ist".',
     },
     {
       id: 'ch44-ex-47',
@@ -1656,12 +1656,22 @@ export const chapter044: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['aber-vs-sondern', 'negation'],
       instruction: 'Click the token that is wrong and note what it should be.',
-      prompt: 'Er kommt heute, sondern er bleibt morgen auch.',
-      tokens: ['Er', 'kommt', 'heute,', 'sondern', 'er', 'bleibt', 'morgen', 'auch.'],
+      prompt: 'Er kommt heute, sondern er kann nicht lange bleiben.',
+      tokens: [
+        'Er',
+        'kommt',
+        'heute,',
+        'sondern',
+        'er',
+        'kann',
+        'nicht',
+        'lange',
+        'bleiben.',
+      ],
       errorTokenIndex: 3,
       correction: 'aber',
       explanation:
-        'Neither clause is negated, so sondern cannot connect them; a simple contrast needs aber.',
+        'The first clause is not negated, and the second clause adds a contrast instead of replacing anything, so sondern cannot connect them; a simple contrast needs aber.',
     },
     {
       id: 'ch44-ex-71',

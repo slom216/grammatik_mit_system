@@ -257,7 +257,7 @@ export const chapter036: ChapterDefinition = {
       },
       {
         german: 'Stell dich neben die Tür!',
-        english: 'Stand yourself next to the door!',
+        english: 'Go and stand next to the door!',
         highlight: ['die Tür'],
         explanation:
           'sich stellen describes moving into a position, so neben takes the accusative die Tür.',
@@ -1578,12 +1578,12 @@ export const chapter036: ChapterDefinition = {
       instruction: 'Match each verb to the question it answers.',
       prompt: 'Match the verb to whether it typically answers wo? or wohin?.',
       pairs: [
-        { id: 'p1', left: 'stehen', right: 'answers wo? (static)' },
-        { id: 'p2', left: 'stellen', right: 'answers wohin? (destination)' },
-        { id: 'p3', left: 'liegen', right: 'answers wo? (location)' },
-        { id: 'p4', left: 'legen', right: 'answers wohin? (movement)' },
-        { id: 'p5', left: 'sitzen', right: 'answers wo? (fixed position)' },
-        { id: 'p6', left: 'setzen', right: 'answers wohin? (change of position)' },
+        { id: 'p1', left: 'stehen', right: 'answers wo? (something is standing)' },
+        { id: 'p2', left: 'stellen', right: 'answers wohin? (someone stands something upright)' },
+        { id: 'p3', left: 'liegen', right: 'answers wo? (something is lying)' },
+        { id: 'p4', left: 'legen', right: 'answers wohin? (someone lays something down)' },
+        { id: 'p5', left: 'sitzen', right: 'answers wo? (someone is sitting)' },
+        { id: 'p6', left: 'setzen', right: 'answers wohin? (someone sets something down)' },
       ],
       explanation:
         'stehen/liegen/sitzen describe a fixed position (wo?), while stellen/legen/setzen describe an action that creates a new position (wohin?).',
@@ -1641,7 +1641,7 @@ export const chapter036: ChapterDefinition = {
         { id: 'p5', left: 'vor (das Geschäft, wo?)', right: 'vor dem Geschäft' },
       ],
       explanation:
-        'Each phrase describes a static location (wo?), so the article is dative — contracted to im where in meets dem or das.',
+        'Each phrase describes a static location (wo?), so the article is dative — contracted to im where in meets dem.',
     },
     {
       id: 'ch36-ex-72',

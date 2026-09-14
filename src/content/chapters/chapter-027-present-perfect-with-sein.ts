@@ -61,7 +61,7 @@ export const chapter027: ChapterDefinition = {
         heading: 'Word order: ist/sind in position 2, participle at the end',
         paragraphs: [
           'The present perfect with sein follows the same word order as with haben: the conjugated form of sein stands in the normal verb position (position 2 in statements, position 1 in yes/no questions), and the past participle goes to the very end of the sentence.',
-          'Ich bin gestern ins Kino gegangen. (I went to the cinema yesterday.) Bist du schon angekommen? (Have you arrived yet?) Wann ist er geboren? (When was he born?)',
+          'Ich bin gestern ins Kino gegangen. (I went to the cinema yesterday.) Bist du schon angekommen? (Have you arrived yet?) Wann ist er gekommen? (When did he come?)',
         ],
       },
     ],
@@ -257,7 +257,7 @@ export const chapter027: ChapterDefinition = {
       },
     ],
     remember: [
-      'sein is used for movement to a destination (gehen, fahren, fliegen, kommen, laufen), change of state (aufwachen, einschlafen, sterben, werden), and the exceptions sein, bleiben, passieren.',
+      'sein is used for movement from one place to another (gehen, fahren, fliegen, kommen, laufen), change of state (aufwachen, einschlafen, sterben, werden), and the exceptions sein, bleiben, passieren.',
       'Every other verb — the large majority — takes haben by default.',
       'The same verb can take sein or haben depending on use: Ich bin gefahren (I travelled) vs. Ich habe das Auto gefahren (I drove the car).',
       'Word order stays the same as with haben: bin/bist/ist/sind in position 2 (or position 1 in yes/no questions), past participle at the very end.',
@@ -1059,6 +1059,7 @@ export const chapter027: ChapterDefinition = {
       acceptedAnswers: [
         'Wir sind letztes Jahr nach Kanada gereist.',
         'Wir sind letztes Jahr nach Kanada gereist',
+        'Letztes Jahr sind wir nach Kanada gereist.',
       ],
       answerMode: 'normalized',
       placeholder: 'Wir sind ...',

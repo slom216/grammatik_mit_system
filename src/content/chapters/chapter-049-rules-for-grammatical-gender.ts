@@ -69,7 +69,7 @@ export const chapter049: ChapterDefinition = {
         heading: 'Suffixes that (almost) always signal neuter',
         paragraphs: [
           'Diminutive suffixes give the strongest gender rule in German: any noun ending in -chen or -lein is neuter, no matter what gender the base word had and no matter what the noun refers to. Das Haus (neuter) gives das Häuschen; der Tisch (masculine) gives das Tischchen; die Frau (feminine) gives das Fräulein; and even a word for a female person becomes neuter once -chen is added: die Magd → das Mädchen.',
-          'The Latin/French loanword suffix -ment is neuter: das Dokument, das Instrument, das Element. Nouns formed by prefixing Ge- to a verb or noun stem, often naming a collection or a repeated activity, are typically neuter: das Gebirge ("mountain range", from der Berg), das Gebäude, das Geschenk, das Gerede.',
+          'The Latin/French loanword suffix -ment is almost always neuter: das Dokument, das Instrument, das Element (der Moment and der Zement are well-known masculine exceptions). Nouns formed by prefixing Ge- to a verb or noun stem, often naming a collection or a repeated activity, are typically neuter: das Gebirge ("mountain range", from der Berg), das Gebäude, das Geschenk, das Gerede.',
           'Infinitives used as nouns are always neuter, and this is one of the most productive noun-forming patterns in the language: essen → das Essen, leben → das Leben, rauchen → das Rauchen. Because any verb can be turned into a neuter noun this way, this pattern is worth learning as a rule rather than case by case.',
         ],
       },
@@ -301,7 +301,7 @@ export const chapter049: ChapterDefinition = {
       },
     ],
     remember: [
-      'Suffixes are the most reliable gender clue: -chen/-lein/-ment are always neuter; -ung/-heit/-keit/-schaft/-ion/-tät/-in are always feminine; -er (agent nouns), -ling, and -ismus are (almost) always masculine.',
+      'Suffixes are the most reliable gender clue: -chen/-lein are always neuter and -ment almost always (der Moment is an exception); -ung/-heit/-keit/-schaft/-ion/-tät/-in are always feminine; -er (agent nouns), -ling, and -ismus are (almost) always masculine.',
       "Diminutive endings -chen and -lein always make a noun neuter, regardless of the base noun's own gender or the natural sex of the person it refers to (das Mädchen, das Fräulein).",
       'Days of the week, months, seasons, and most weather terms are masculine (der Montag, der Mai, der Winter, der Regen); metals are typically neuter (das Gold, das Eisen).',
       'Learn every new noun together with its article, and keep a written list of the exceptions that break the suffix and semantic-group rules (der Junge, das Mädchen, das Auto).',
@@ -766,7 +766,7 @@ export const chapter049: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'der/die/das',
       maxLength: 20,
-      explanation: '-ment is always neuter: das Dokument.',
+      explanation: '-ment is (almost) always neuter: das Dokument.',
     },
     {
       id: 'ch49-ex-27',
@@ -1138,7 +1138,7 @@ export const chapter049: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'der/die/das',
       maxLength: 20,
-      explanation: '-ment is always neuter: das Element.',
+      explanation: '-ment is (almost) always neuter: das Element.',
     },
     {
       id: 'ch49-ex-49',
@@ -1153,7 +1153,7 @@ export const chapter049: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'der/die/das',
       maxLength: 20,
-      explanation: '-ment is always neuter: das Instrument.',
+      explanation: '-ment is (almost) always neuter: das Instrument.',
     },
     {
       id: 'ch49-ex-50',
@@ -1379,7 +1379,7 @@ export const chapter049: ChapterDefinition = {
         { id: 'p5', left: 'Blau', right: 'das Blau' },
       ],
       explanation:
-        'Metals and chemical elements are typically neuter, but der Stahl is a masculine exception since it is an alloy, not a pure element.',
+        'Metals are typically neuter, but der Stahl is a masculine exception since it is an alloy, not a pure metal; colours used as nouns are neuter too (das Blau).',
     },
     {
       id: 'ch49-ex-63',
@@ -1598,7 +1598,7 @@ export const chapter049: ChapterDefinition = {
       errorTokenIndex: 0,
       correction: 'Das',
       explanation:
-        'Dokument ends in -ment and is always neuter, so the article must be Das, not Die.',
+        'Dokument ends in -ment and is neuter, so the article must be Das, not Die.',
     },
     {
       id: 'ch49-ex-76',
@@ -1684,7 +1684,7 @@ export const chapter049: ChapterDefinition = {
       prompt: 'Setze den richtigen Artikel ein.',
       templateParts: ['', ' Mädchen spielt im Garten.'],
       slots: [{ id: 's1', correctWord: 'Das' }],
-      wordBank: ['Das', 'Der', 'Die', 'Ein'],
+      wordBank: ['Das', 'Der', 'Die', 'Eine'],
       explanation:
         'The diminutive suffix -chen makes Mädchen neuter: Das Mädchen spielt im Garten.',
     },
@@ -1729,9 +1729,9 @@ export const chapter049: ChapterDefinition = {
       prompt: 'Setze den richtigen Artikel ein.',
       templateParts: ['', ' Dokument liegt hier.'],
       slots: [{ id: 's1', correctWord: 'Das' }],
-      wordBank: ['Das', 'Der', 'Die', 'Ein'],
+      wordBank: ['Das', 'Der', 'Die', 'Eine'],
       explanation:
-        'Dokument ends in -ment and is always neuter: Das Dokument liegt hier.',
+        'Dokument ends in -ment and is neuter: Das Dokument liegt hier.',
     },
     {
       id: 'ch49-ex-85',

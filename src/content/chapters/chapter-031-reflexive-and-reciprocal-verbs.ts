@@ -40,6 +40,9 @@ export const chapter031: ChapterDefinition = {
           'Four of the six reflexive pronouns are identical to accusative personal pronouns you already know: mich (ich), dich (du), uns (wir), euch (ihr). The difference appears in the third person and the formal Sie: instead of ihn, sie, es, sie, Sie, reflexive sentences always use the single form sich, regardless of gender or number.',
           'So er, sie, es, the plural sie, and the formal Sie all take sich: Er wäscht sich., Sie (she) wäscht sich., Sie (they) waschen sich., Waschen Sie sich? — the verb ending changes with the subject, but the reflexive pronoun sich never does.',
         ],
+        notes: [
+          'When the verb already has a separate accusative object, as in sich die Zähne putzen or sich die Hände waschen, the reflexive pronoun is dative: only ich and du change (mir, dir), while sich, uns, and euch stay the same. Chapter 56 covers the dative reflexive pronouns in detail.',
+        ],
       },
       {
         id: 'ch31-rule-03',
@@ -678,7 +681,12 @@ export const chapter031: ChapterDefinition = {
       instruction:
         'Write a complete sentence using the cues. The pronoun expresses a reciprocal meaning ("each other"). Capitalisation is checked; no full stop is required.',
       prompt: 'ihr – sich treffen – am Freitag',
-      acceptedAnswers: ['Ihr trefft euch am Freitag.', 'Ihr trefft euch am Freitag'],
+      acceptedAnswers: [
+        'Ihr trefft euch am Freitag.',
+        'Ihr trefft euch am Freitag',
+        'Am Freitag trefft ihr euch.',
+        'Am Freitag trefft ihr euch',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ihr trefft ...',
       maxLength: 60,
@@ -760,7 +768,8 @@ export const chapter031: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['reflexive-agreement', 'error-correction'],
-      instruction: 'Find the token with the reflexive-pronoun error.',
+      instruction:
+        'The speaker is washing himself or herself. Find the token with the reflexive-pronoun error.',
       prompt: 'Ich wasche dich jeden Tag.',
       tokens: ['Ich', 'wasche', 'dich', 'jeden', 'Tag.'],
       errorTokenIndex: 2,
@@ -837,7 +846,7 @@ export const chapter031: ChapterDefinition = {
         { id: 'p6', left: 'sich vorstellen', right: 'to introduce oneself' },
       ],
       explanation:
-        'these verbs always appear with a reflexive pronoun, and each has a fixed English meaning built around that reflexive use.',
+        'each of these verbs has a fixed English meaning in its reflexive use; the first five are truly reflexive, while vorstellen can also take a different object (jemanden vorstellen).',
     },
     {
       id: 'ch31-ex-34',
@@ -862,7 +871,7 @@ export const chapter031: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['reflexive pronoun', 'dative', 'er'],
       instruction: 'Choose the correct reflexive pronoun.',
-      prompt: 'Er tut ___ weh. (sich weh tun, er)',
+      prompt: 'Er tut ___ weh. (sich wehtun, er)',
       options: [
         { id: 'a', text: 'sich' },
         { id: 'b', text: 'ihm' },
@@ -871,7 +880,7 @@ export const chapter031: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'sich weh tun governs the dative, but the third-person reflexive pronoun sich is identical for accusative and dative, so er still takes sich, not the personal dative pronoun ihm.',
+        'sich wehtun governs the dative, but the third-person reflexive pronoun sich is identical for accusative and dative, so er still takes sich, not the personal dative pronoun ihm.',
     },
     {
       id: 'ch31-ex-36',
@@ -1167,7 +1176,7 @@ export const chapter031: ChapterDefinition = {
       slots: [{ id: 's1', correctWord: 'sich' }],
       wordBank: ['sich', 'ihm', 'ihn', 'er'],
       explanation:
-        'sich weh tun governs the dative, but the third-person reflexive pronoun is sich for both cases, not the personal dative pronoun ihm.',
+        'sich wehtun governs the dative, but the third-person reflexive pronoun is sich for both cases, not the personal dative pronoun ihm.',
     },
     {
       id: 'ch31-ex-53',
@@ -1183,7 +1192,7 @@ export const chapter031: ChapterDefinition = {
         { id: 'p1', left: 'ich (die Zähne putzen)', right: 'mir' },
         { id: 'p2', left: 'du (die Hände waschen)', right: 'dir' },
         { id: 'p3', left: 'wir (die Haare kämmen)', right: 'uns' },
-        { id: 'p4', left: 'ihr (weh tun)', right: 'euch' },
+        { id: 'p4', left: 'ihr (wehtun)', right: 'euch' },
         { id: 'p5', left: 'er/sie/es/sie (Pl.)/Sie', right: 'sich' },
       ],
       explanation:
@@ -1196,13 +1205,14 @@ export const chapter031: ChapterDefinition = {
       type: 'errorSpotting',
       level: 'transfer',
       grammarFocus: ['reflexive pronoun', 'dative', 'error-correction', 'body-part-verb'],
-      instruction: 'Find the token with the reflexive-pronoun error.',
+      instruction:
+        'He is washing his own hands. Find the token with the reflexive-pronoun error.',
       prompt: 'Er wäscht ihm die Hände.',
       tokens: ['Er', 'wäscht', 'ihm', 'die', 'Hände.'],
       errorTokenIndex: 2,
       correction: 'sich',
       explanation:
-        'the dative reflexive pronoun for the third person is sich, not the personal dative pronoun ihm.',
+        'he washes his own hands, so the dative reflexive pronoun sich is needed; Er wäscht ihm die Hände. is grammatical but means he washes another man\'s hands.',
     },
     {
       id: 'ch31-ex-55',
@@ -1391,7 +1401,7 @@ export const chapter031: ChapterDefinition = {
       grammarFocus: ['reflexive-vs-personal-pronoun', 'error-correction'],
       instruction:
         'Correct the mistake. Write the full, corrected sentence. Capitalisation and punctuation are checked.',
-      prompt: 'Falsch: Er zieht ihn schnell an.',
+      prompt: 'Falsch (he is getting himself dressed): Er zieht ihn schnell an.',
       acceptedAnswers: ['Er zieht sich schnell an.'],
       answerMode: 'normalized',
       placeholder: 'Er zieht ...',

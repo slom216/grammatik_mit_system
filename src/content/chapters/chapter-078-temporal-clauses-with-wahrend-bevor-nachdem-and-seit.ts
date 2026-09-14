@@ -72,7 +72,7 @@ export const chapter078: ChapterDefinition = {
         heading:
           'seit / seitdem — an action that started in the past and still continues',
         paragraphs: [
-          'seit and seitdem both correspond to English "since" and introduce an action or state that began at some point in the past and is still ongoing now. They are largely interchangeable as conjunctions, though seit is more common in everyday speech. Chapter 32 already introduced seit as a preposition with a dative time expression (seit zwei Jahren); here seit/seitdem instead introduces a whole clause with its own verb.',
+          'seit and seitdem both correspond to English "since" and introduce an action or state that began at some point in the past and is still ongoing now. They are largely interchangeable as conjunctions, though seit is more common in everyday speech. Chapter 33 already introduced seit as a preposition with a dative time expression (seit zwei Jahren); here seit/seitdem instead introduces a whole clause with its own verb.',
           'The key difference from English is the tense: German normally uses the present tense in both clauses for an ongoing situation, where English uses the present perfect. Seit ich hier wohne, fühle ich mich viel wohler. (Since I have been living here, I feel much happier — wohne is present, not a perfect form.) Seitdem sie in Berlin lebt, spricht sie fließend Deutsch. (Since she has been living in Berlin, she speaks German fluently.)',
           'If the seit-clause instead names a single, already-completed event whose result continues (rather than a drawn-out ongoing activity), the present perfect can appear there too: Seit er umgezogen ist, sehen wir uns seltener. (Since he moved, we see each other less often — umgezogen ist reports the one-time move itself.) But for a genuinely ongoing action, the present tense is the default and the form to reach for first.',
         ],
@@ -842,7 +842,7 @@ export const chapter078: ChapterDefinition = {
       instruction:
         'Read the sentence, then answer in German with a short phrase naming the action that happened first. Capitalisation is not checked.',
       prompt: 'Nachdem ich gegessen hatte, ging ich spazieren. Was geschah zuerst?',
-      acceptedAnswers: ['essen', 'das Essen', 'ich habe gegessen', 'ich aß'],
+      acceptedAnswers: ['essen', 'das Essen', 'gegessen', 'ich habe gegessen', 'ich hatte gegessen', 'ich aß'],
       answerMode: 'normalized',
       placeholder: 'essen',
       maxLength: 30,

@@ -56,10 +56,10 @@ export const chapter003: ChapterDefinition = {
         paragraphs: [
           'Use sein to say what someone or something is, or what state it is in: identity (Ich bin Lehrer), nationality (Sie ist Deutsche), a quality (Er ist müde), or where someone is.',
           'Use haben to say what someone possesses: objects (Wir haben ein Auto), family (Sie hat zwei Brüder), or time (Habt ihr Zeit?).',
-          'A number of everyday feelings and needs that English expresses with "to be" are expressed with haben in German: Hunger haben (to be hungry), Durst haben (to be thirsty), Angst haben (to be afraid), Zeit haben (to have time). These are fixed expressions and must simply be learned with haben.',
+          'A number of everyday feelings and needs that English expresses with "to be" are expressed with haben in German: Hunger haben (to be hungry), Durst haben (to be thirsty), Angst haben (to be afraid). These are fixed expressions and must simply be learned with haben.',
         ],
         notes: [
-          'When translating from English, watch out especially for "I am hungry/thirsty/afraid" — German never uses sein for these expressions.',
+          'When translating from English, watch out especially for "I am hungry/thirsty/afraid" — with the nouns Hunger, Durst and Angst German always uses haben, never sein (Ich habe Hunger, not Ich bin Hunger).',
         ],
       },
     ],
@@ -116,7 +116,7 @@ export const chapter003: ChapterDefinition = {
         highlight: ['sind'],
       },
       {
-        german: 'Ihr seid heute spät.',
+        german: 'Ihr seid heute spät dran.',
         english: 'You (all) are late today.',
         highlight: ['seid'],
       },

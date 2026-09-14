@@ -145,7 +145,7 @@ export const chapter019: ChapterDefinition = {
         english: 'The family is visiting their grandparents.',
         highlight: ['ihre'],
         explanation:
-          'Here ihr- refers back to die Familie ("they"), not to a single woman; die Großeltern is plural, so it takes -e.',
+          'Here ihr- refers back to die Familie, which is grammatically feminine singular (sie), so the stem is ihr- even though English says "their"; die Großeltern is plural, so it takes -e.',
       },
       {
         german: 'Wir besuchen unsere Großeltern.',

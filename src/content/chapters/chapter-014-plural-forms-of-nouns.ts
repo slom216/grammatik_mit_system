@@ -826,7 +826,7 @@ export const chapter014: ChapterDefinition = {
         { id: 'ch14-ex33-p5', left: 'die Schwester', right: 'die Schwestern' },
       ],
       explanation:
-        'Feminine nouns almost always take the -(e)n plural, and it never combines with an umlaut: Frauen, Lampen, Taschen, Uhren, Schwestern.',
+        'Most feminine nouns take the -(e)n plural, and it never combines with an umlaut: Frauen, Lampen, Taschen, Uhren, Schwestern.',
     },
     {
       id: 'ch14-ex-34',
@@ -846,7 +846,7 @@ export const chapter014: ChapterDefinition = {
         { id: 'ch14-ex34-p5', left: 'der Garten', right: 'die Gärten' },
       ],
       explanation:
-        'Nouns already ending in -er or -el take no plural ending; Lehrer, Onkel, and Fenster stay unchanged, while Vater and Garten add an umlaut without any ending.',
+        'Nouns already ending in -er, -el or -en take no plural ending; Lehrer, Onkel, and Fenster stay unchanged, while Vater and Garten add an umlaut without any ending.',
     },
     {
       id: 'ch14-ex-35',
@@ -1058,7 +1058,7 @@ export const chapter014: ChapterDefinition = {
       options: [
         { id: 'a', text: 'die Mutter' },
         { id: 'b', text: 'die Mütter' },
-        { id: 'c', text: 'die Muttern' },
+        { id: 'c', text: 'die Mutters' },
         { id: 'd', text: 'die Müttern' },
       ],
       correctOptionId: 'b',

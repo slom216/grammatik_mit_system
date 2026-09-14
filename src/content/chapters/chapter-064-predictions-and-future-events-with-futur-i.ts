@@ -499,7 +499,7 @@ export const chapter064: ChapterDefinition = {
       dialogue: [
         {
           speaker: 'Anna',
-          german: 'Wo ist Tom? Er antwortet nicht auf mein Handy.',
+          german: 'Wo ist Tom? Er geht nicht an sein Handy.',
           english: "Where's Tom? He's not answering his phone.",
         },
         {
@@ -899,6 +899,8 @@ export const chapter064: ChapterDefinition = {
       acceptedAnswers: [
         'Wir werden nächstes Jahr heiraten.',
         'Wir werden nächstes Jahr heiraten',
+        'Nächstes Jahr werden wir heiraten.',
+        'Nächstes Jahr werden wir heiraten',
       ],
       answerMode: 'normalized',
       placeholder: 'Wir werden ...',
@@ -919,6 +921,8 @@ export const chapter064: ChapterDefinition = {
       acceptedAnswers: [
         'Ich fliege morgen nach Berlin.',
         'Ich fliege morgen nach Berlin',
+        'Morgen fliege ich nach Berlin.',
+        'Morgen fliege ich nach Berlin',
       ],
       answerMode: 'normalized',
       placeholder: 'Ich fliege ...',
@@ -952,6 +956,8 @@ export const chapter064: ChapterDefinition = {
         'Es wird wahrscheinlich morgen regnen.',
         'Es wird morgen wahrscheinlich regnen',
         'Es wird wahrscheinlich morgen regnen',
+        'Morgen wird es wahrscheinlich regnen.',
+        'Morgen wird es wahrscheinlich regnen',
       ],
       answerMode: 'normalized',
       placeholder: 'Es wird ...',
@@ -998,6 +1004,8 @@ export const chapter064: ChapterDefinition = {
       acceptedAnswers: [
         'Ab morgen werde ich jeden Tag Sport machen.',
         'Ab morgen werde ich jeden Tag Sport machen',
+        'Ich werde ab morgen jeden Tag Sport machen.',
+        'Ich werde ab morgen jeden Tag Sport machen',
       ],
       answerMode: 'normalized',
       placeholder: 'Ab morgen werde ich ...',

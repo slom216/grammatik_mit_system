@@ -1102,8 +1102,13 @@ export const chapter037: ChapterDefinition = {
       grammarFocus: ['nach-hause', 'fixed-expression', 'sentence-production'],
       instruction:
         'Write a complete sentence expressing the destination "home". Capitalisation is checked; no full stop is required.',
-      prompt: 'wir – fahren – jetzt – Hause (Reiseziel: zu Hause)',
-      acceptedAnswers: ['Wir fahren jetzt nach Hause.', 'Wir fahren jetzt nach Hause'],
+      prompt: 'wir – fahren – jetzt – Hause (Reiseziel: home)',
+      acceptedAnswers: [
+        'Wir fahren jetzt nach Hause.',
+        'Wir fahren jetzt nach Hause',
+        'Jetzt fahren wir nach Hause.',
+        'Jetzt fahren wir nach Hause',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wir fahren ...',
       maxLength: 60,

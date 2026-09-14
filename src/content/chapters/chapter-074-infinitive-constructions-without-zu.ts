@@ -1379,7 +1379,7 @@ export const chapter074: ChapterDefinition = {
         { id: 's1', correctWord: 'muss' },
         { id: 's2', correctWord: 'aufstehen' },
       ],
-      wordBank: ['muss', 'aufstehen', 'kann', 'aufzustehen', 'musst'],
+      wordBank: ['muss', 'aufstehen', 'müssen', 'aufzustehen', 'musst'],
       explanation:
         'The modal muss occupies position 2, and the bare infinitive aufstehen — never the zu-form aufzustehen — ends the clause.',
     },
@@ -1578,7 +1578,7 @@ export const chapter074: ChapterDefinition = {
         { id: 'p3', left: 'er/sie/es + wollen', right: 'will' },
         { id: 'p4', left: 'wir + dürfen', right: 'dürfen' },
         { id: 'p5', left: 'ihr + sollen', right: 'sollt' },
-        { id: 'p6', left: 'sie/Sie + mögen', right: 'mögen' },
+        { id: 'p6', left: 'ich + mögen', right: 'mag' },
       ],
       explanation:
         'Each modal verb conjugates for person and number just like any other verb, while the following infinitive stays bare and unconjugated.',

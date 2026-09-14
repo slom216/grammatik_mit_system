@@ -957,7 +957,7 @@ export const chapter026: ChapterDefinition = {
       prompt: 'wir – Kaffee – trinken (kein)',
       acceptedAnswers: ['Wir haben keinen Kaffee getrunken.'],
       answerMode: 'normalized',
-      placeholder: 'Wir haben ... nicht ...',
+      placeholder: 'Wir haben kein... ...',
       maxLength: 45,
       explanation:
         'Kaffee has no article, so it is negated with kein (Kaffee is masculine accusative: keinen), and the participle still closes the sentence: Wir haben keinen Kaffee getrunken.',

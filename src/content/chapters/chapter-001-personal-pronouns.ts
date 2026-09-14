@@ -539,7 +539,7 @@ export const chapter001: ChapterDefinition = {
       instruction:
         'Write the complete sentence. Capitalisation and the full stop are checked.',
       prompt: 'wir – im Garten – sein',
-      acceptedAnswers: ['Wir sind im Garten.'],
+      acceptedAnswers: ['Wir sind im Garten.', 'Im Garten sind wir.'],
       answerMode: 'normalized',
       placeholder: 'Wir ...',
       maxLength: 60,
@@ -588,12 +588,12 @@ export const chapter001: ChapterDefinition = {
       instruction:
         'Translate into German using ihr. The umlaut buttons under the field can help.',
       prompt: 'You (several friends) are late. Use the word spät.',
-      acceptedAnswers: ['Ihr seid spät.'],
+      acceptedAnswers: ['Ihr seid zu spät.', 'Ihr seid spät dran.', 'Ihr seid spät.'],
       answerMode: 'normalized',
       placeholder: 'Ihr ...',
       maxLength: 60,
       explanation:
-        'Several friends are addressed with ihr, which takes seid: Ihr seid spät. The ä in spät is required.',
+        'Several friends are addressed with ihr, which takes seid: Ihr seid zu spät. (or: Ihr seid spät dran.) The ä in spät is required.',
     },
     {
       id: 'ch01-ex-24',
@@ -1172,7 +1172,7 @@ export const chapter001: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['formal-address', 'capitalisation', 'error-correction'],
       instruction: 'Find the token with the mistake.',
-      prompt: 'Frau Fischer asks a colleague a formal question. Find the mistake.',
+      prompt: 'Someone asks Frau Fischer a formal question. Find the mistake.',
       tokens: ['Frau', 'Fischer,', 'sind', 'sie', 'zu', 'Hause?'],
       errorTokenIndex: 3,
       correction: 'Sie',
@@ -1187,7 +1187,7 @@ export const chapter001: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['informal-address', 'error-correction'],
       instruction: 'Find the token with the mistake.',
-      prompt: 'Someone introduces two friends. Find the mistake.',
+      prompt: 'Someone talks to two friends. Find the mistake.',
       tokens: ['Ihr', 'bist', 'meine', 'Freunde.'],
       errorTokenIndex: 1,
       correction: 'seid',

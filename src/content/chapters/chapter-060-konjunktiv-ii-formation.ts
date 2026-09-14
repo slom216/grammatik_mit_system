@@ -681,7 +681,7 @@ export const chapter060: ChapterDefinition = {
         { id: 'a', text: 'Ich würde gern nach Berlin fahren.' },
         { id: 'b', text: 'Ich würde fahren gern nach Berlin.' },
         { id: 'c', text: 'Ich gern würde nach Berlin fahren.' },
-        { id: 'd', text: 'Fahren würde ich gern nach Berlin.' },
+        { id: 'd', text: 'Ich nach Berlin würde gern fahren.' },
       ],
       correctOptionId: 'a',
       explanation:
@@ -1530,12 +1530,12 @@ export const chapter060: ChapterDefinition = {
       grammarFocus: ['konjunktiv-ii', 'modal-verbs', 'sollen'],
       instruction:
         'Drag the correct synthetic Konjunktiv II form of sollen into the slot.',
-      prompt: 'Sie ___ eigentlich mehr schlafen.',
-      templateParts: ['Sie ', ' eigentlich mehr schlafen.'],
+      prompt: 'Lisa ___ eigentlich mehr schlafen.',
+      templateParts: ['Lisa ', ' eigentlich mehr schlafen.'],
       slots: [{ id: 'slot1', correctWord: 'sollte' }],
       wordBank: ['sollte', 'solltest', 'sollten', 'soll'],
       explanation:
-        "sollte is the sie-singular form of sollen's Konjunktiv II, identical in shape to the simple past.",
+        "sollte is the er/sie/es form of sollen's Konjunktiv II (Lisa = sie), identical in shape to the simple past.",
     },
     {
       id: 'ch60-ex-68',

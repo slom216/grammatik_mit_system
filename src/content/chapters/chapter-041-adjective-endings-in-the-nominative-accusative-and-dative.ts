@@ -523,8 +523,8 @@ export const chapter041: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['case-identification'],
-      instruction: 'Which case does the underlined phrase use?',
-      prompt: 'Which case is used in: Ich schenke der netten Frau einen Blumenstrauß.?',
+      instruction: 'Which case does the quoted phrase use?',
+      prompt: 'Which case is "der netten Frau" in: Ich schenke der netten Frau einen Blumenstrauß.',
       options: [
         { id: 'a', text: 'Nominative' },
         { id: 'b', text: 'Accusative' },
@@ -833,7 +833,7 @@ export const chapter041: ChapterDefinition = {
       ],
       correctOptionId: 'b',
       explanation:
-        'aus always takes the dative, so the masculine adjective ending is -en: aus dem alten Haus.',
+        'aus always takes the dative, so the neuter adjective ending is -en: aus dem alten Haus.',
     },
     {
       id: 'ch41-ex-31',
@@ -1205,7 +1205,7 @@ export const chapter041: ChapterDefinition = {
       grammarFocus: ['plural', 'dative', 'error-recognition'],
       instruction: 'Click the word that is wrong.',
       prompt: 'Find the mistake.',
-      tokens: ['Die', 'Lehrerin', 'hilft', 'die', 'kleinen', 'Kinder.'],
+      tokens: ['Die', 'Lehrerin', 'hilft', 'die', 'kleinen', 'Kindern.'],
       errorTokenIndex: 3,
       correction: 'den',
       explanation:

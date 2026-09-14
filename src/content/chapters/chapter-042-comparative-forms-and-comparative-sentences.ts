@@ -1075,7 +1075,7 @@ export const chapter042: ChapterDefinition = {
         { id: 'ch42-ex-47-p5', left: 'scharf', right: 'schärfer' },
       ],
       explanation:
-        'neu is regular (no umlaut); arm, gesund, dumm, and scharf are short stems with a or u and take an umlaut in the comparative.',
+        'neu is regular (no umlaut); arm, dumm, and scharf are short stems with a or u, and gesund is a common two-syllable exception: all four take an umlaut in the comparative.',
     },
     {
       id: 'ch42-ex-48',
@@ -1253,7 +1253,7 @@ export const chapter042: ChapterDefinition = {
         { id: 'ch42-ex-57-p5', left: 'arm', right: 'ärmer' },
       ],
       explanation:
-        'All five are short adjectives with a or u as the stem vowel and take an umlaut in the comparative.',
+        'All five take an umlaut in the comparative: klug, scharf, dumm, and arm are short one-syllable adjectives, and gesund is a common two-syllable exception.',
     },
     {
       id: 'ch42-ex-58',

@@ -878,7 +878,10 @@ export const chapter012: ChapterDefinition = {
       instruction:
         'Write a complete sentence from the cue words, fronting the element given in brackets. Capitalisation and punctuation are checked.',
       prompt: 'die Kinder – jeden Tag – im Park – spielen (front: im Park)',
-      acceptedAnswers: ['Im Park spielen die Kinder jeden Tag.'],
+      acceptedAnswers: [
+        'Im Park spielen die Kinder jeden Tag.',
+        'Im Park spielen jeden Tag die Kinder.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Im Park ...',
       maxLength: 60,

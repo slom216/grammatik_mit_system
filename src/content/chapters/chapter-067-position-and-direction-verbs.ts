@@ -79,7 +79,7 @@ export const chapter067: ChapterDefinition = {
         paragraphs: [
           'The three position verbs are strong (irregular) verbs: stehen → stand → hat gestanden, liegen → lag → hat gelegen, sitzen → saß → hat gesessen. Their simple-past and participle forms must be memorized individually.',
           'The three placement verbs are weak (regular) verbs: stellen → stellte → hat gestellt, legen → legte → hat gelegt, setzen → setzte → hat gesetzt. They follow the ordinary weak pattern you already know, with no stem-vowel change and the regular -te/ge-…-t endings.',
-          'Despite describing a state rather than an obviously dynamic action, all three position verbs form their perfect tense with haben, not sein: Die Lampe hat auf dem Tisch gestanden. In northern and central Germany this haben form is the norm, and it is the form this course uses; in southern Germany, Austria, and Switzerland "Die Lampe ist auf dem Tisch gestanden" (ist gesessen, ist gelegen) is equally standard, so do not treat it as a mistake. Do not let the static meaning tempt you into using sein.',
+          'Despite describing a state rather than an obviously dynamic action, all three position verbs form their perfect tense with haben, not sein: Die Lampe hat auf dem Tisch gestanden. In northern and central Germany this haben form is the norm, and it is the form this course uses; in southern Germany, Austria, and Switzerland "Die Lampe ist auf dem Tisch gestanden" (ist gesessen, ist gelegen) is equally standard, so do not treat it as a mistake. The exercises in this course expect haben.',
         ],
       },
       {
@@ -873,7 +873,10 @@ export const chapter067: ChapterDefinition = {
       instruction:
         'Build a complete sentence from the cue words. Capitalisation and punctuation are checked.',
       prompt: 'sie – setzen – das Kind – auf – der Stuhl (wohin?, Akkusativ)',
-      acceptedAnswers: ['Sie setzt das Kind auf den Stuhl.'],
+      acceptedAnswers: [
+        'Sie setzt das Kind auf den Stuhl.',
+        'Sie setzen das Kind auf den Stuhl.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Sie setzt das Kind auf den Stuhl.',
       maxLength: 50,
@@ -1556,7 +1559,7 @@ export const chapter067: ChapterDefinition = {
       type: 'singleChoice',
       level: 'controlled',
       grammarFocus: ['verb-choice', 'sitzen', 'object-orientation'],
-      instruction: 'Choose the verb that matches how a cat rests on a windowsill.',
+      instruction: 'Choose the verb that matches a cat sitting upright on a windowsill.',
       prompt: 'Die Katze ___ auf der Fensterbank.',
       options: [
         { id: 'a', text: 'sitzt' },
@@ -1617,7 +1620,7 @@ export const chapter067: ChapterDefinition = {
       prompt: 'Ich ___ das Bild an die Wand.',
       options: [
         { id: 'a', text: 'hänge' },
-        { id: 'b', text: 'stelle' },
+        { id: 'b', text: 'stehe' },
         { id: 'c', text: 'lege' },
         { id: 'd', text: 'setze' },
       ],

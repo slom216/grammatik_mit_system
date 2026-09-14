@@ -60,7 +60,7 @@ export const chapter028: ChapterDefinition = {
         id: 'ch28-rule-04',
         heading: 'Inseparable prefixes: no ge- at all',
         paragraphs: [
-          'A fixed set of unstressed prefixes — be-, ge-, er-, ver-, zer-, ent-, emp-, and miss- — never separate from the verb and never allow a ge- in the participle. besuchen becomes besucht, verstehen becomes verstanden, and erklären becomes erklärt: the participle looks almost like a weak participle, just without the ge-.',
+          'A fixed set of unstressed prefixes — be-, ge-, er-, ver-, zer-, ent-, emp-, and miss- — never separate from the verb and never allow a ge- in the participle. besuchen becomes besucht, verstehen becomes verstanden, and erklären becomes erklärt: the participle is formed as usual, just without the ge-.',
           'This holds even when the base verb is strong: kommen is strong and becomes gekommen, but with the inseparable prefix be- it becomes bekommen — the ge- of gekommen simply disappears, leaving only the -en ending.',
         ],
         notes: [
@@ -188,7 +188,7 @@ export const chapter028: ChapterDefinition = {
         english: 'We ate pizza together.',
         highlight: ['gegessen'],
         explanation:
-          'essen is strong: gegessen changes both the stem and takes the -en ending.',
+          'essen is strong: gegessen takes the -en ending (with an extra g inserted), not the weak -t.',
       },
       {
         german: 'Hast du den Film schon gesehen?',
@@ -665,7 +665,7 @@ export const chapter028: ChapterDefinition = {
       prompt: 'Ich habe gestern mit meiner Mutter ___. (telefonieren)',
       acceptedAnswers: ['telefoniert'],
       answerMode: 'caseInsensitive',
-      placeholder: 'telefoniert',
+      placeholder: '...iert',
       maxLength: 20,
       explanation: '-ieren verbs never take ge- and end in -t: telefoniert.',
     },
@@ -681,7 +681,7 @@ export const chapter028: ChapterDefinition = {
       prompt: 'Ich habe die ganze Zeit an dich ___. (denken)',
       acceptedAnswers: ['gedacht'],
       answerMode: 'caseInsensitive',
-      placeholder: 'gedacht',
+      placeholder: 'ge...t',
       maxLength: 20,
       explanation:
         'denken is mixed: the weak -t ending combines with a stem-vowel change, giving gedacht.',
@@ -698,7 +698,7 @@ export const chapter028: ChapterDefinition = {
       prompt: 'Fehler: gesprecht (sprechen) → richtig: ___',
       acceptedAnswers: ['gesprochen'],
       answerMode: 'caseInsensitive',
-      placeholder: 'gesprochen',
+      placeholder: 'ge...en',
       maxLength: 20,
       explanation:
         'sprechen is strong and changes its stem vowel to o; the weak-style ending used in "gesprecht" is wrong. The correct form is gesprochen.',
@@ -715,7 +715,7 @@ export const chapter028: ChapterDefinition = {
       prompt: 'Fehler: geaufgestanden (aufstehen) → richtig: ___',
       acceptedAnswers: ['aufgestanden'],
       answerMode: 'caseInsensitive',
-      placeholder: 'aufgestanden',
+      placeholder: 'auf...en',
       maxLength: 20,
       explanation:
         'aufstehen is separable: ge- belongs between the prefix and the base participle (aufgestanden), never in front of the whole word.',
@@ -959,7 +959,7 @@ export const chapter028: ChapterDefinition = {
       prompt: 'reparieren → ___',
       acceptedAnswers: ['repariert'],
       answerMode: 'caseInsensitive',
-      placeholder: 'repariert',
+      placeholder: '...iert',
       maxLength: 20,
       explanation: '-ieren verbs never take ge- and always end in -t: repariert.',
     },

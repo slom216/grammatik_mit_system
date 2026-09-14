@@ -34,4 +34,21 @@ describe('TextInputExercise', () => {
       expect(field.getAttribute('autocorrect')).toBe('off');
     },
   );
+
+  it.each([
+    ['sind', null],
+    ['Sind', null],
+    ['form of sein', 'form of sein'],
+  ])('hides a placeholder that is an accepted answer (%s)', (placeholder, expected) => {
+    render(
+      <TextInputExercise
+        exercise={{ ...exercise, placeholder }}
+        value=""
+        onChange={() => undefined}
+        disabled={false}
+        showUmlautHelper={false}
+      />,
+    );
+    expect(screen.getByLabelText('Wir ___ im Kino.').getAttribute('placeholder')).toBe(expected);
+  });
 });

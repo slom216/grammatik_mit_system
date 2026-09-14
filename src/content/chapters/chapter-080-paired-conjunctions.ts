@@ -354,7 +354,7 @@ export const chapter080: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['pair-completion', 'entweder-oder'],
       instruction: 'Choose the word that correctly completes the pair.',
-      prompt: 'Entweder komm ich mit, ___ ich bleibe hier.',
+      prompt: 'Entweder komme ich mit, ___ ich bleibe hier.',
       options: [
         { id: 'a', text: 'oder' },
         { id: 'b', text: 'noch' },
@@ -632,7 +632,7 @@ export const chapter080: ChapterDefinition = {
       grammarFocus: ['sentence-formation', 'weder-noch', 'word-order'],
       instruction:
         'Combine the two sentences into one with weder ... noch, remembering that both halves trigger inversion. Capitalisation and punctuation are checked.',
-      prompt: 'Er ruft an. Er schreibt.',
+      prompt: 'Er ruft nicht an. Er schreibt nicht.',
       acceptedAnswers: ['Weder ruft er an, noch schreibt er.'],
       answerMode: 'normalized',
       placeholder: 'Weder ruft er an, noch ...',
@@ -774,7 +774,7 @@ export const chapter080: ChapterDefinition = {
       grammarFocus: ['sentence-formation', 'weder-noch', 'word-order'],
       instruction:
         'Combine the two sentences into one with weder ... noch, remembering that both halves trigger inversion. Capitalisation and punctuation are checked.',
-      prompt: 'Er kennt die Stadt. Er spricht die Sprache.',
+      prompt: 'Er kennt die Stadt nicht. Er spricht die Sprache nicht.',
       acceptedAnswers: ['Weder kennt er die Stadt, noch spricht er die Sprache.'],
       answerMode: 'normalized',
       placeholder: 'Weder kennt er die Stadt, noch ...',
@@ -900,15 +900,15 @@ export const chapter080: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['pair-completion', 'nicht-nur-sondern-auch', 'word-order'],
       instruction: 'Drag the correct words into both blanks.',
-      prompt: '___ kocht sie gut, ___ backt sie hervorragend.',
-      templateParts: ['', ' kocht sie gut, ', ' backt sie hervorragend.'],
+      prompt: '___ kocht sie gut, ___ sie backt auch hervorragend.',
+      templateParts: ['', ' kocht sie gut, ', ' sie backt auch hervorragend.'],
       slots: [
         { id: 's1', correctWord: 'Nicht nur' },
-        { id: 's2', correctWord: 'sondern auch' },
+        { id: 's2', correctWord: 'sondern' },
       ],
-      wordBank: ['Nicht nur', 'sondern auch', 'Entweder', 'oder', 'Weder', 'noch'],
+      wordBank: ['Nicht nur', 'sondern', 'Entweder', 'oder', 'Weder', 'noch'],
       explanation:
-        'Nicht nur opens the clause and triggers inversion (kocht sie); sondern auch keeps normal order after it.',
+        'Nicht nur opens the clause and triggers inversion (kocht sie); sondern is a true coordinating conjunction, so the second clause keeps normal order, with auch after the subject (sie backt auch).',
     },
     {
       id: 'ch80-ex-37',

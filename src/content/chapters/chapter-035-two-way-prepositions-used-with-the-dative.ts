@@ -604,7 +604,7 @@ export const chapter035: ChapterDefinition = {
       instruction:
         'Write a complete sentence describing the location. Capitalisation is checked; no full stop is required.',
       prompt: 'das Auto – stehen – vor – das Haus (Ort, Dativ)',
-      acceptedAnswers: ['Das Auto steht vor dem Haus.', 'Das Auto steht vor dem Haus'],
+      acceptedAnswers: ['Das Auto steht vor dem Haus.', 'Das Auto steht vor dem Haus', 'Vor dem Haus steht das Auto.', 'Vor dem Haus steht das Auto'],
       answerMode: 'normalized',
       placeholder: 'Das Auto steht ...',
       maxLength: 60,
@@ -624,6 +624,8 @@ export const chapter035: ChapterDefinition = {
       acceptedAnswers: [
         'Die Blumen stehen in der Küche.',
         'Die Blumen stehen in der Küche',
+        'In der Küche stehen die Blumen.',
+        'In der Küche stehen die Blumen',
       ],
       answerMode: 'normalized',
       placeholder: 'Die Blumen stehen ...',
@@ -644,6 +646,8 @@ export const chapter035: ChapterDefinition = {
       acceptedAnswers: [
         'Der Spiegel hängt über dem Waschbecken.',
         'Der Spiegel hängt über dem Waschbecken',
+        'Über dem Waschbecken hängt der Spiegel.',
+        'Über dem Waschbecken hängt der Spiegel',
       ],
       answerMode: 'normalized',
       placeholder: 'Der Spiegel hängt ...',
@@ -1002,6 +1006,8 @@ export const chapter035: ChapterDefinition = {
       acceptedAnswers: [
         'Die Schuhe stehen vor der Tür.',
         'Die Schuhe stehen vor der Tür',
+        'Vor der Tür stehen die Schuhe.',
+        'Vor der Tür stehen die Schuhe',
       ],
       answerMode: 'normalized',
       placeholder: 'Die Schuhe stehen ...',
@@ -1022,6 +1028,8 @@ export const chapter035: ChapterDefinition = {
       acceptedAnswers: [
         'Der Teppich liegt auf dem Boden.',
         'Der Teppich liegt auf dem Boden',
+        'Auf dem Boden liegt der Teppich.',
+        'Auf dem Boden liegt der Teppich',
       ],
       answerMode: 'normalized',
       placeholder: 'Der Teppich liegt ...',
@@ -1039,7 +1047,7 @@ export const chapter035: ChapterDefinition = {
       instruction:
         'Write a complete sentence describing the location. Capitalisation is checked; no full stop is required.',
       prompt: 'die Lampe – hängen – an – die Decke (Ort, Dativ)',
-      acceptedAnswers: ['Die Lampe hängt an der Decke.', 'Die Lampe hängt an der Decke'],
+      acceptedAnswers: ['Die Lampe hängt an der Decke.', 'Die Lampe hängt an der Decke', 'An der Decke hängt die Lampe.', 'An der Decke hängt die Lampe'],
       answerMode: 'normalized',
       placeholder: 'Die Lampe hängt ...',
       maxLength: 60,
@@ -1344,13 +1352,13 @@ export const chapter035: ChapterDefinition = {
       pairs: [
         { id: 'p1', left: 'die Küche', right: 'in der Küche' },
         { id: 'p2', left: 'der Garten', right: 'im Garten' },
-        { id: 'p3', left: 'das Zimmer', right: 'in dem Zimmer' },
+        { id: 'p3', left: 'das Zimmer', right: 'im Zimmer' },
         { id: 'p4', left: 'die Blumen', right: 'zwischen den Blumen' },
         { id: 'p5', left: 'der Stuhl', right: 'neben dem Stuhl' },
         { id: 'p6', left: 'die Decke', right: 'an der Decke' },
       ],
       explanation:
-        'Masculine and neuter nouns take dem in the dative, feminine nouns take der, and plural nouns take den; der Garten additionally contracts with in to im.',
+        'Masculine and neuter nouns take dem in the dative, feminine nouns take der, and plural nouns take den; der Garten and das Zimmer additionally contract with in to im.',
     },
     {
       id: 'ch35-ex-63',

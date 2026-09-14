@@ -828,7 +828,7 @@ export const chapter013: ChapterDefinition = {
       grammarFocus: ['verb-bracket', 'modal-verbs'],
       instruction: 'Choose the sentence with the correct verb bracket.',
       prompt:
-        'Which German sentence correctly means "I have to submit the letter immediately"?',
+        'Which German sentence correctly means "I have to send the letter off immediately"?',
       options: [
         { id: 'a', text: 'Ich muss den Brief sofort abschicken.' },
         { id: 'b', text: 'Ich muss abschicken den Brief sofort.' },

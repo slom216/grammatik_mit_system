@@ -675,6 +675,8 @@ export const chapter034: ChapterDefinition = {
       acceptedAnswers: [
         'Die Kinder laufen um den Baum.',
         'Die Kinder laufen um den Baum',
+        'Um den Baum laufen die Kinder.',
+        'Um den Baum laufen die Kinder',
       ],
       answerMode: 'normalized',
       placeholder: 'Die Kinder laufen ...',
@@ -925,6 +927,8 @@ export const chapter034: ChapterDefinition = {
       acceptedAnswers: [
         'Ich kaufe ein Geschenk für meinen Vater.',
         'Ich kaufe ein Geschenk für meinen Vater',
+        'Für meinen Vater kaufe ich ein Geschenk.',
+        'Für meinen Vater kaufe ich ein Geschenk',
       ],
       answerMode: 'normalized',
       placeholder: 'Ich kaufe ...',

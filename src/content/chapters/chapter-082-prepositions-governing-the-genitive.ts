@@ -872,7 +872,10 @@ export const chapter082: ChapterDefinition = {
       instruction:
         'Build a complete sentence from the cue words, using the genitive after wegen. Capitalisation and punctuation are checked.',
       prompt: 'wegen – die Verspätung – mussten – wir – warten',
-      acceptedAnswers: ['Wegen der Verspätung mussten wir warten.'],
+      acceptedAnswers: [
+        'Wegen der Verspätung mussten wir warten.',
+        'Wir mussten wegen der Verspätung warten.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Wegen der Verspätung ...',
       maxLength: 60,
@@ -889,7 +892,10 @@ export const chapter082: ChapterDefinition = {
       instruction:
         'Build a complete sentence from the cue words, using the genitive after während. Capitalisation and punctuation are checked.',
       prompt: 'während – die Ferien – fahren – wir – ans Meer',
-      acceptedAnswers: ['Während der Ferien fahren wir ans Meer.'],
+      acceptedAnswers: [
+        'Während der Ferien fahren wir ans Meer.',
+        'Wir fahren während der Ferien ans Meer.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Während der Ferien ...',
       maxLength: 60,
@@ -906,7 +912,10 @@ export const chapter082: ChapterDefinition = {
       instruction:
         'Build a complete sentence from the cue words, using the genitive after statt. Capitalisation and punctuation are checked.',
       prompt: 'statt – das Auto – nahmen – wir – das Fahrrad',
-      acceptedAnswers: ['Statt des Autos nahmen wir das Fahrrad.'],
+      acceptedAnswers: [
+        'Statt des Autos nahmen wir das Fahrrad.',
+        'Wir nahmen statt des Autos das Fahrrad.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Statt des Autos ...',
       maxLength: 60,
@@ -941,7 +950,10 @@ export const chapter082: ChapterDefinition = {
       instruction:
         'Build a complete sentence from the cue words, using the genitive possessive article after trotz. Capitalisation and punctuation are checked.',
       prompt: 'trotz – seine Krankheit – arbeitet – er – weiter',
-      acceptedAnswers: ['Trotz seiner Krankheit arbeitet er weiter.'],
+      acceptedAnswers: [
+        'Trotz seiner Krankheit arbeitet er weiter.',
+        'Er arbeitet trotz seiner Krankheit weiter.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Trotz seiner Krankheit ...',
       maxLength: 60,
@@ -961,6 +973,8 @@ export const chapter082: ChapterDefinition = {
       acceptedAnswers: [
         'Wegen des Sturms fiel der Strom aus.',
         'Wegen des Sturmes fiel der Strom aus.',
+        'Der Strom fiel wegen des Sturms aus.',
+        'Der Strom fiel wegen des Sturmes aus.',
       ],
       answerMode: 'normalized',
       placeholder: 'Wegen des ...',
@@ -1522,7 +1536,7 @@ export const chapter082: ChapterDefinition = {
       instruction:
         'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
       prompt: 'aufgrund + der Unfall →',
-      acceptedAnswers: ['des Unfalls'],
+      acceptedAnswers: ['des Unfalls', 'des Unfalles'],
       answerMode: 'caseInsensitive',
       placeholder: 'des ...',
       maxLength: 25,
@@ -1556,7 +1570,7 @@ export const chapter082: ChapterDefinition = {
       instruction:
         'Write the complete genitive noun phrase (article + noun). Capitalisation is not checked.',
       prompt: 'mithilfe + ein Wörterbuch →',
-      acceptedAnswers: ['eines Wörterbuchs'],
+      acceptedAnswers: ['eines Wörterbuchs', 'eines Wörterbuches'],
       answerMode: 'caseInsensitive',
       placeholder: 'eines ...',
       maxLength: 25,
@@ -1575,6 +1589,7 @@ export const chapter082: ChapterDefinition = {
       prompt: 'angesichts – die schwierige Lage – handelte – die Regierung – schnell',
       acceptedAnswers: [
         'Angesichts der schwierigen Lage handelte die Regierung schnell.',
+        'Die Regierung handelte angesichts der schwierigen Lage schnell.',
       ],
       answerMode: 'normalized',
       placeholder: 'Angesichts der schwierigen Lage ...',
@@ -1592,7 +1607,12 @@ export const chapter082: ChapterDefinition = {
       instruction:
         'Build a complete sentence from the cue words, using the genitive after infolge. Capitalisation and punctuation are checked.',
       prompt: 'infolge – der starke Sturm – fielen – viele Bäume – um',
-      acceptedAnswers: ['Infolge des starken Sturms fielen viele Bäume um.'],
+      acceptedAnswers: [
+        'Infolge des starken Sturms fielen viele Bäume um.',
+        'Infolge des starken Sturmes fielen viele Bäume um.',
+        'Viele Bäume fielen infolge des starken Sturms um.',
+        'Viele Bäume fielen infolge des starken Sturmes um.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Infolge des starken Sturms ...',
       maxLength: 70,
@@ -1627,7 +1647,10 @@ export const chapter082: ChapterDefinition = {
       instruction:
         'Build a complete sentence from the cue words, using the genitive after jenseits. Capitalisation and punctuation are checked.',
       prompt: 'jenseits – die Grenze – beginnt – ein anderes Land',
-      acceptedAnswers: ['Jenseits der Grenze beginnt ein anderes Land.'],
+      acceptedAnswers: [
+        'Jenseits der Grenze beginnt ein anderes Land.',
+        'Ein anderes Land beginnt jenseits der Grenze.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Jenseits der Grenze ...',
       maxLength: 60,

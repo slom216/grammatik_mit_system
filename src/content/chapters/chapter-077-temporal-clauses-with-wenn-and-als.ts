@@ -1447,7 +1447,7 @@ export const chapter077: ChapterDefinition = {
         { id: 'ch77-ex59-s8', text: 'an.' },
       ],
       explanation:
-        'wenn sends brauchst to the end of its clause; the separable verb an...ruf splits, with ruf right after the comma and an at the very end of the main clause.',
+        'wenn sends brauchst to the end of its clause; the separable verb anrufen splits, with ruf right after the comma and an at the very end of the main clause.',
     },
     {
       id: 'ch77-ex-60',
@@ -1906,7 +1906,7 @@ export const chapter077: ChapterDefinition = {
       grammarFocus: ['wenn-vs-als', 'connector-choice', 'single-past-event'],
       instruction: 'Choose the connector that fits.',
       prompt:
-        '___ ich nur einmal in New York war, hat es geschneit. (a single past event)',
+        '___ ich das einzige Mal in New York war, hat es geschneit. (a single past event)',
       options: [
         { id: 'a', text: 'als' },
         { id: 'b', text: 'wenn' },
@@ -1915,7 +1915,7 @@ export const chapter077: ChapterDefinition = {
       ],
       correctOptionId: 'a',
       explanation:
-        'nur einmal marks a single, unrepeated occurrence in the past, so als is required.',
+        'das einzige Mal marks a single, unrepeated occurrence in the past, so als is required.',
     },
     {
       id: 'ch77-ex-80',
@@ -1944,12 +1944,12 @@ export const chapter077: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['word-order', 'verb-final', 'als'],
       instruction: 'Choose the sentence with correct word order.',
-      prompt: '"We went to the cinema when the film started." Which sentence is correct?',
+      prompt: '"We arrived just as the film started." Which sentence is correct?',
       options: [
-        { id: 'a', text: 'Wir sind ins Kino gegangen, als der Film anfing.' },
-        { id: 'b', text: 'Wir sind ins Kino gegangen, als der Film hat angefangen.' },
-        { id: 'c', text: 'Wir sind ins Kino gegangen, als anfing der Film.' },
-        { id: 'd', text: 'Wir sind ins Kino gegangen, wenn der Film anfing.' },
+        { id: 'a', text: 'Wir kamen gerade an, als der Film anfing.' },
+        { id: 'b', text: 'Wir kamen gerade an, als der Film hat angefangen.' },
+        { id: 'c', text: 'Wir kamen gerade an, als anfing der Film.' },
+        { id: 'd', text: 'Wir kamen gerade an, wenn der Film anfing.' },
       ],
       correctOptionId: 'a',
       explanation:
