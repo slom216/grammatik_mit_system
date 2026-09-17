@@ -4,6 +4,7 @@ import { prefetchChapter } from '../../content/chapterLoader';
 import { selectContinueChapter } from '../../features/chapters/chapterSelectors';
 import { chapterPath } from '../../features/chapters/chapterUtils';
 import { useProgressStore } from '../../features/progress/progressStore';
+import { seoForPath } from '../../app/seo';
 import { ProgressStorageNotice } from './ProgressStorageNotice';
 import { ReloadPrompt } from './ReloadPrompt';
 import { ThemeToggle } from './ThemeToggle';
@@ -83,6 +84,34 @@ export function AppShell() {
     observer.observe(main, { childList: true, subtree: true, characterData: true });
     return () => observer.disconnect();
   }, []);
+
+  // Canonical and robots for the current route. index.html ships neither, and it is
+  // the same file for every URL — so until this runs, every route looks to a crawler
+  // like a copy of the last one. Google renders the app before indexing, so the tags
+  // written here are the ones it reads.
+  useEffect(() => {
+    const { canonical, index } = seoForPath(pathname);
+
+    let link = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    if (!link) {
+      link = document.createElement('link');
+      link.rel = 'canonical';
+      document.head.append(link);
+    }
+    link.href = canonical;
+
+    const robots = document.head.querySelector<HTMLMetaElement>('meta[name="robots"]');
+    if (index) {
+      robots?.remove();
+      return;
+    }
+    // follow, not none: these screens are dead ends for the index but their links
+    // still lead to chapters that are not.
+    const meta = robots ?? document.createElement('meta');
+    meta.name = 'robots';
+    meta.content = 'noindex, follow';
+    if (!robots) document.head.append(meta);
+  }, [pathname]);
 
   useEffect(() => {
     // Not on the first render: focus belongs where the browser put it when the
