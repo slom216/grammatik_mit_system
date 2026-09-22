@@ -7,6 +7,7 @@ export interface ModalProps {
   description?: string;
   onClose: () => void;
   children: ReactNode;
+  className?: string;
 }
 
 const FOCUSABLE =
@@ -16,7 +17,14 @@ const FOCUSABLE =
  * Accessible confirmation dialog: focus moves into the dialog, Tab is kept
  * inside it, Escape closes it and focus returns to the trigger.
  */
-export function Modal({ open, title, description, onClose, children }: ModalProps) {
+export function Modal({
+  open,
+  title,
+  description,
+  onClose,
+  children,
+  className,
+}: ModalProps) {
   const dialogRef = useRef<HTMLDivElement>(null);
   const previouslyFocused = useRef<HTMLElement | null>(null);
   const titleId = useId();
@@ -64,7 +72,7 @@ export function Modal({ open, title, description, onClose, children }: ModalProp
   return (
     <div className="modal__backdrop">
       <div
-        className="modal"
+        className={className ? `modal ${className}` : 'modal'}
         role="dialog"
         aria-modal="true"
         aria-labelledby={titleId}

@@ -282,6 +282,21 @@ describe('PracticePage', () => {
     );
   });
 
+  it('shows the chapter tables on T and on the Tables button', async () => {
+    const user = userEvent.setup();
+    await renderPractice();
+
+    await user.keyboard('t');
+    expect(screen.getByRole('dialog', { name: 'Tables' })).toBeInTheDocument();
+    await user.keyboard('t');
+    expect(screen.queryByRole('dialog', { name: 'Tables' })).not.toBeInTheDocument();
+
+    await user.click(screen.getByRole('button', { name: /^tables/i }));
+    expect(screen.getByRole('dialog', { name: 'Tables' })).toBeInTheDocument();
+    await user.keyboard('{Escape}');
+    expect(screen.queryByRole('dialog', { name: 'Tables' })).not.toBeInTheDocument();
+  });
+
   it('moves focus to "Try again" after an incorrect answer', async () => {
     const user = userEvent.setup();
     await renderPractice();

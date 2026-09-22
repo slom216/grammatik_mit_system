@@ -1996,6 +1996,13 @@ a:hover {
   width: 100%;
 }
 
+/* Reference content (chapter tables) needs the width and may scroll. */
+.modal--wide {
+  max-width: 48rem;
+  max-height: calc(100dvh - 2 * var(--space-4));
+  overflow-y: auto;
+}
+
 /* Progress presentation */
 
 .chapter-card {

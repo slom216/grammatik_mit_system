@@ -1,9 +1,11 @@
-import { useEffect, useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { Button } from '../components/common/Button';
 import { ChapterUnavailable } from '../components/common/ChapterUnavailable';
 import { LoadingBlock } from '../components/common/LoadingBlock';
+import { Card } from '../components/common/Card';
 import { Modal } from '../components/common/Modal';
+import { GrammarTable } from '../components/grammar/GrammarTable';
 import { ProgressBar } from '../components/common/ProgressBar';
 import { PracticeExercise } from '../components/practice/PracticeExercise';
 import { useExitConfirmation } from '../components/practice/useExitConfirmation';
@@ -43,6 +45,26 @@ export function PracticePage() {
   const exerciseHistory = useProgressStore((state) => state.exerciseHistory);
   const shuffleOptions = useSettingsStore((state) => state.shuffleOptions);
   const exit = useExitConfirmation();
+  const [tablesOpen, setTablesOpen] = useState(false);
+  const hasTables = (chapter?.explanation.tables.length ?? 0) > 0;
+
+  /** T toggles the chapter's tables, unless the learner is typing. */
+  useEffect(() => {
+    if (!hasTables) return;
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key.toLowerCase() !== 't') return;
+      if (event.metaKey || event.ctrlKey || event.altKey) return;
+      const target = event.target as HTMLElement | null;
+      if (
+        target?.closest('input:not([type="radio"]), textarea, select, [contenteditable]')
+      )
+        return;
+      event.preventDefault();
+      setTablesOpen((open) => !open);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [hasTables]);
 
   const reviewMode = searchParams.get('mode') === 'review';
   const quickMode = searchParams.get('mode') === 'quick';
@@ -178,7 +200,21 @@ export function PracticePage() {
             {quickDueCount > 0 &&
               ` · ${quickDueCount} due ${quickDueCount === 1 ? 'exercise' : 'exercises'} included`}
           </span>
-          <StudyTimer chapterNumber={chapter.number} />
+          <div className="row">
+            {hasTables && (
+              <Button
+                variant="ghost"
+                aria-keyshortcuts="t"
+                // Out of the Tab order so Tab still lands on the answer first;
+                // keyboard users have T.
+                tabIndex={-1}
+                onClick={() => setTablesOpen(true)}
+              >
+                Tables <kbd>T</kbd>
+              </Button>
+            )}
+            <StudyTimer chapterNumber={chapter.number} />
+          </div>
         </div>
         <h1>
           Practice · {chapter.title}
@@ -202,6 +238,26 @@ export function PracticePage() {
         onFinish={handleFinish}
         onExit={exit.request}
       />
+
+      <Modal
+        open={tablesOpen}
+        title="Tables"
+        onClose={() => setTablesOpen(false)}
+        className="modal--wide"
+      >
+        <div className="stack">
+          {chapter.explanation.tables.map((table) => (
+            <Card key={table.id}>
+              <GrammarTable table={table} />
+            </Card>
+          ))}
+          <div className="row">
+            <Button variant="secondary" onClick={() => setTablesOpen(false)}>
+              Back to the exercise
+            </Button>
+          </div>
+        </div>
+      </Modal>
 
       <Modal
         open={exit.open}
