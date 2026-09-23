@@ -52,8 +52,8 @@ export default defineConfig({
         start_url: '/',
         scope: '/',
         display: 'standalone',
-        theme_color: '#285f74',
-        background_color: '#f6fbfc',
+        theme_color: '#e6ddcc',
+        background_color: '#e6ddcc',
         lang: 'en',
         icons: [
           { src: 'pwa-192x192.png', sizes: '192x192', type: 'image/png' },
@@ -70,7 +70,7 @@ export default defineConfig({
         // The shell, page chunks, styles and fonts are precached (~600 KB).
         // Chapter chunks are not: precaching them would re-download the 4.4 MB
         // of course content the code split just removed from the first load.
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
+        globPatterns: ['**/*.{js,css,html,ico,png,svg,webp,woff2}'],
         globIgnores: ['assets/chapters/**'],
         navigateFallback: 'index.html',
         cleanupOutdatedCaches: true,

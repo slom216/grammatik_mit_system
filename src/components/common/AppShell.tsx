@@ -8,6 +8,8 @@ import { seoForPath } from '../../app/seo';
 import { ProgressStorageNotice } from './ProgressStorageNotice';
 import { ReloadPrompt } from './ReloadPrompt';
 import { ThemeToggle } from './ThemeToggle';
+import logoMark from '../../assets/art/logo-mark.png';
+import staircase from '../../assets/art/staircase.webp';
 
 const APP_NAME = 'DeuLern Grammatik mit System';
 
@@ -136,8 +138,15 @@ export function AppShell() {
         )}
         <div className="app-header__inner">
           <NavLink to="/" className="app-brand">
-            Deu<span className="app-brand__accent">Lern</span> Grammatik mit System
-            <span className="app-brand__subtitle">German grammar, A1–B1</span>
+            <img
+              className="app-brand__mark"
+              src={logoMark}
+              alt=""
+              width={28}
+              height={30}
+            />
+            <span className="app-brand__word">DeuLern</span>{' '}
+            <span className="app-brand__app">Grammatik mit System</span>
           </NavLink>
           <nav className="app-nav" aria-label="Main">
             {NAV_ITEMS.map((item) => (
@@ -175,24 +184,36 @@ export function AppShell() {
 
       <footer className="app-footer">
         <div className="app-footer__inner">
-          <div className="app-footer__groups">
-            {FOOTER_GROUPS.map((group) => (
-              <div className="app-footer__group" key={group.heading}>
-                <p className="app-footer__heading">{group.heading}</p>
-                {group.links.map((link) => (
-                  <Link key={link.to} to={link.to}>
-                    {link.label}
-                  </Link>
-                ))}
-              </div>
-            ))}
+          {/* The caption printed in the art ("Schritt für Schritt weiter") is
+              decoration, not content. */}
+          <img
+            className="app-footer__art"
+            src={staircase}
+            alt=""
+            width={289}
+            height={227}
+            loading="lazy"
+          />
+          <div className="app-footer__body">
+            <div className="app-footer__groups">
+              {FOOTER_GROUPS.map((group) => (
+                <div className="app-footer__group" key={group.heading}>
+                  <p className="app-footer__heading">{group.heading}</p>
+                  {group.links.map((link) => (
+                    <Link key={link.to} to={link.to}>
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              ))}
+            </div>
+            <p className="app-footer__note">
+              An independent study app organised around common A1–B1 German grammar
+              topics. All explanations and exercises are written for this app. Progress is
+              stored only in this browser. Built with the help of AI, so there may be
+              errors; every one we find gets fixed.
+            </p>
           </div>
-          <p className="app-footer__note">
-            An independent study app organised around common A1–B1 German grammar topics.
-            All explanations and exercises are written for this app. Progress is stored
-            only in this browser. Built with the help of AI, so there may be errors; every
-            one we find gets fixed.
-          </p>
         </div>
       </footer>
 

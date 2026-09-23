@@ -18,6 +18,9 @@ import { selectPracticeSummary } from '../features/progress/dailyActivity';
 import { selectWeakSpots } from '../features/progress/weakSpots';
 import { useSettingsStore } from '../features/settings/settingsStore';
 import { getRegistryEntry } from '../content/registry';
+import heroArt from '../assets/art/hero-symbol.webp';
+import cardArt from '../assets/art/continue-card-decoration.webp';
+import redWedge from '../assets/art/red-wedge.png';
 
 export function DashboardPage() {
   const progress = useProgressStore();
@@ -48,14 +51,33 @@ export function DashboardPage() {
   );
 
   return (
-    <div className="stack">
-      <header className="page-header">
-        <span className="eyebrow">A1–B1 grammar course</span>
-        <h1>Dashboard</h1>
-        <p className="lead">
-          {completion.availableChapters} chapters, each with a lesson and its own exercise
-          pool. Everything you answer stays in this browser.
-        </p>
+    <div className="dashboard">
+      <header className="dashboard-hero">
+        <div className="dashboard-hero__copy">
+          <span className="eyebrow">A1–B1 grammar course</span>
+          <p className="poster-line">
+            Your grammar, <span className="poster-line__accent">taking shape</span>.
+          </p>
+          <h1 className="dashboard-hero__title">Dashboard</h1>
+          <p className="lead">
+            {completion.availableChapters} chapters, each with a lesson and its own
+            exercise pool. Your progress stays in this browser.
+          </p>
+        </div>
+        {/* The four DeuLern apps as a poster slogan: live text rather than the
+            art's printed copy, so it stays legible on the night paper. */}
+        <div className="dashboard-hero__art" aria-hidden="true">
+          <img src={heroArt} alt="" width={324} height={246} />
+          <p className="dashboard-hero__slogan">
+            Grammatik
+            <br />
+            Wortschatz
+            <br />
+            Verben
+            <br />
+            Lesen
+          </p>
+        </div>
       </header>
 
       {progress.recovered && (
@@ -72,67 +94,80 @@ export function DashboardPage() {
         </div>
       )}
 
-      <div className="split">
-        <Card className="card--elevated" title="Continue learning" titleLevel={2}>
-          {continueChapter ? (
-            <div className="stack stack--tight">
-              <span className="display-number">
-                {formatChapterNumber(continueChapter.number)}
-              </span>
-              <h3>{continueChapter.title}</h3>
-              <p className="row">
-                <MasteryBadge
-                  status={continueChapter.status}
-                  bestScorePercent={continueChapter.bestScorePercent}
-                />
-                <span className="badge">{continueChapter.level}</span>
-              </p>
-              <p className="row">
-                <Link
-                  className="button button--primary"
-                  to={chapterPath(continueChapter.number)}
-                >
-                  Open chapter
-                </Link>
-                <Link
-                  className="button button--secondary"
-                  to={chapterPath(continueChapter.number, 'practice')}
-                >
-                  Start practice
-                </Link>
-              </p>
-            </div>
-          ) : completion.availableChapters > 0 &&
-            completion.completedChapters >= completion.availableChapters ? (
-            <p>
-              You have completed every chapter. Keep it fresh in the{' '}
-              <Link to="/review">review queue</Link>.
-            </p>
-          ) : (
-            <p>
-              No chapter content is available yet.{' '}
-              <Link to="/chapters">See the catalogue</Link> for the full course outline.
-            </p>
-          )}
-        </Card>
-
-        {!hasStarted && (
-          <Card title="Not sure where to begin?" titleLevel={2}>
-            <div className="stack">
-              <p>
-                A short placement test samples the course and suggests a starting chapter.
-                It is not saved to your progress.
-              </p>
-              <p>
-                <Link className="button button--secondary" to="/placement">
-                  Take the placement test
-                </Link>
-              </p>
-            </div>
-          </Card>
-        )}
-
+      <div className="dashboard-top">
         <div className="stack">
+          <Card
+            className="card--elevated continue-card"
+            title="Continue learning"
+            titleLevel={2}
+          >
+            <img
+              className="continue-card__art"
+              src={cardArt}
+              alt=""
+              width={148}
+              height={331}
+            />
+            {continueChapter ? (
+              <div className="continue-card__body">
+                <span className="display-number">
+                  {formatChapterNumber(continueChapter.number)}
+                </span>
+                <h3 className="continue-card__title">{continueChapter.title}</h3>
+                <p className="continue-card__meta">
+                  <MasteryBadge
+                    status={continueChapter.status}
+                    bestScorePercent={continueChapter.bestScorePercent}
+                  />
+                  <span>{continueChapter.level}</span>
+                </p>
+                <p className="row continue-card__actions">
+                  <Link
+                    className="button button--primary"
+                    to={chapterPath(continueChapter.number)}
+                  >
+                    Open chapter
+                  </Link>
+                  <Link
+                    className="button button--secondary"
+                    to={chapterPath(continueChapter.number, 'practice')}
+                  >
+                    Start practice
+                  </Link>
+                </p>
+              </div>
+            ) : completion.availableChapters > 0 &&
+              completion.completedChapters >= completion.availableChapters ? (
+              <p className="continue-card__body">
+                You have completed every chapter. Keep it fresh in the{' '}
+                <Link to="/review">review queue</Link>.
+              </p>
+            ) : (
+              <p className="continue-card__body">
+                No chapter content is available yet.{' '}
+                <Link to="/chapters">See the catalogue</Link> for the full course outline.
+              </p>
+            )}
+          </Card>
+
+          {!hasStarted && (
+            <Card title="Not sure where to begin?" titleLevel={2}>
+              <div className="stack stack--tight">
+                <p>
+                  A short placement test samples the course and suggests a starting
+                  chapter. It is not saved to your progress.
+                </p>
+                <p>
+                  <Link className="button button--secondary" to="/placement">
+                    Take the placement test
+                  </Link>
+                </p>
+              </div>
+            </Card>
+          )}
+        </div>
+
+        <div className="dashboard-stats">
           {/* The ring carries the headline percentage, so the stat row and the
               chapters bar that both repeated it are gone. */}
           <ProgressRing
@@ -165,35 +200,38 @@ export function DashboardPage() {
 
       {/* What to do next — the review queue and the weakest topics are the same
           question asked twice, so they share one panel instead of competing. */}
-      <section className="panel" aria-labelledby="dashboard-next-heading">
-        <h2 className="panel__title" id="dashboard-next-heading">
-          Work on next
-        </h2>
-
-        {due.length === 0 ? (
-          <p className="text-muted">
-            Nothing is due for review. Exercises you get wrong appear here.
-          </p>
-        ) : (
-          <div className="stack stack--tight">
-            <p>
-              {due.length} {due.length === 1 ? 'exercise is' : 'exercises are'} waiting in
-              the review queue.
-            </p>
-            <p>
-              <Link className="button button--primary" to="/review">
-                Go to review
-              </Link>
+      <section className="panel dashboard-next" aria-labelledby="dashboard-next-heading">
+        <img
+          className="dashboard-next__wedge"
+          src={redWedge}
+          alt=""
+          width={35}
+          height={85}
+        />
+        <div className="dashboard-next__head">
+          <div>
+            <h2 className="panel__title" id="dashboard-next-heading">
+              Work on next
+            </h2>
+            <p className="text-muted">
+              {due.length === 0
+                ? 'Nothing is due for review. Exercises you get wrong appear here.'
+                : `${due.length} ${due.length === 1 ? 'exercise is' : 'exercises are'} waiting in the review queue.`}
             </p>
           </div>
-        )}
+          {due.length > 0 && (
+            <Link className="button button--primary" to="/review">
+              Go to review
+            </Link>
+          )}
+        </div>
 
-        {/* Warning-toned, because here a short bar is the point: these are the
-            least accurate topics, and the accent used everywhere else would
-            read as progress earned rather than ground to make up. */}
+        {/* Mustard, because here a short bar is the point: these are the least
+            accurate topics, and the blue used everywhere else would read as
+            progress earned rather than ground to make up. */}
         {weakSpots.length > 0 && (
-          <div className="stack stack--tight weak-spots">
-            <h3>Topics to work on</h3>
+          <div className="weak-spots">
+            <h3 className="panel__title">Topics to work on</h3>
             {weakSpots.map((spot) => (
               <div key={spot.tag} className="weak-spots__row">
                 <ProgressBar
@@ -201,7 +239,7 @@ export function DashboardPage() {
                   value={spot.accuracyPercent}
                   valueText={`${spot.accuracyPercent}% of ${spot.answered}`}
                 />
-                <Link className="text-sm" to={`/review/topic/${spot.tag}`}>
+                <Link to={`/review/topic/${spot.tag}`}>
                   Practise <span className="visually-hidden">{spot.label}</span>
                 </Link>
               </div>
@@ -214,43 +252,46 @@ export function DashboardPage() {
         )}
       </section>
 
-      <section className="panel" aria-labelledby="dashboard-course-heading">
-        <h2 className="panel__title" id="dashboard-course-heading">
-          Your course
-        </h2>
-        <div className="stack">
-          {levels.map((level) => (
-            <ProgressBar
-              key={level.level}
-              label={`${level.level} chapters completed`}
-              value={level.completed}
-              max={level.total}
-              valueText={`${level.completed} / ${level.total}`}
-            />
-          ))}
-        </div>
+      <div className="dashboard-duo">
+        <section className="panel" aria-labelledby="dashboard-course-heading">
+          <h2 className="panel__title" id="dashboard-course-heading">
+            Your course
+          </h2>
+          <div className="stack stack--tight">
+            {levels.map((level) => (
+              <ProgressBar
+                key={level.level}
+                label={`${level.level} chapters completed`}
+                value={level.completed}
+                max={level.total}
+                valueText={`${level.completed} / ${level.total}`}
+              />
+            ))}
+          </div>
+        </section>
 
         {recentlyCompleted.length > 0 && (
-          <div className="stack stack--tight">
-            <h3>Recently completed</h3>
-            <ul>
+          <section className="panel" aria-labelledby="dashboard-recent-heading">
+            <h2 className="panel__title" id="dashboard-recent-heading">
+              Recently completed
+            </h2>
+            <ul className="recent-list">
               {recentlyCompleted.map((chapter) => {
                 const title = getRegistryEntry(chapter.chapterNumber)?.title ?? 'Chapter';
                 return (
                   <li key={chapter.chapterNumber}>
-                    <Link to={chapterPath(chapter.chapterNumber)}>
-                      {formatChapterNumber(chapter.chapterNumber)} · {title}
-                    </Link>{' '}
-                    <span className="text-sm text-muted">
-                      best {chapter.bestScorePercent}%
+                    <span>
+                      {formatChapterNumber(chapter.chapterNumber)} ·{' '}
+                      <Link to={chapterPath(chapter.chapterNumber)}>{title}</Link>
                     </span>
+                    <span className="text-muted">best {chapter.bestScorePercent}%</span>
                   </li>
                 );
               })}
             </ul>
-          </div>
+          </section>
         )}
-      </section>
+      </div>
     </div>
   );
 }

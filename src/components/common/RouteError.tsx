@@ -1,5 +1,6 @@
 import { Link, isRouteErrorResponse, useRouteError } from 'react-router-dom';
 import { Button } from './Button';
+import logoMark from '../../assets/art/logo-mark.png';
 
 /**
  * A dynamic import that fails because the chunk it points at is no longer on the
@@ -35,8 +36,15 @@ export function RouteError() {
       <header className="app-header">
         <div className="app-header__inner">
           <Link to="/" className="app-brand">
-            Deu<span className="app-brand__accent">Lern</span> Grammatik mit System
-            <span className="app-brand__subtitle">German grammar, A1–B1</span>
+            <img
+              className="app-brand__mark"
+              src={logoMark}
+              alt=""
+              width={28}
+              height={30}
+            />
+            <span className="app-brand__word">DeuLern</span>{' '}
+            <span className="app-brand__app">Grammatik mit System</span>
           </Link>
         </div>
       </header>

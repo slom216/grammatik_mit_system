@@ -16,7 +16,7 @@ export function StreakDisplay({ answersByDay, now }: StreakDisplayProps) {
   const week = buildActivityCalendar(answersByDay, 1, now)[0]?.days ?? [];
 
   return (
-    <p className="row">
+    <p className="row streak">
       <span className="badge badge--accent">
         <Icon name="flame" />
         <span>
