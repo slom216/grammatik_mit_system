@@ -1,4 +1,5 @@
 import { create } from 'zustand';
+import { RETIRED_CHAPTERS } from '../../content/registry';
 import type { MasteryRule } from '../../schemas/chapterSchema';
 import type {
   AttemptOutcome,
@@ -404,7 +405,11 @@ export function selectDueHistories(
   now: Date = new Date(),
   limit?: number,
 ): ExerciseHistory[] {
-  return selectDueExercises(Object.values(state.exerciseHistory), now, limit);
+  // A retired chapter's history stays in storage but can never be reviewed again.
+  const histories = Object.values(state.exerciseHistory).filter(
+    (history) => !RETIRED_CHAPTERS.has(history.chapterNumber),
+  );
+  return selectDueExercises(histories, now, limit);
 }
 
 /**

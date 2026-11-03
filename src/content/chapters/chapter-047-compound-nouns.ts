@@ -813,7 +813,8 @@ export const chapter047: ChapterDefinition = {
         { id: 'd', text: 'no linking element' },
       ],
       correctOptionId: 'c',
-      explanation: 'der Kranke already ends in -e, so only a linking -n- is added before Haus: Krankenhaus (hospital).',
+      explanation:
+        'der Kranke already ends in -e, so only a linking -n- is added before Haus: Krankenhaus (hospital).',
     },
     {
       id: 'ch47-ex-32',
@@ -1134,7 +1135,8 @@ export const chapter047: ChapterDefinition = {
       answerMode: 'exact',
       placeholder: 'Krankenhaus',
       maxLength: 30,
-      explanation: 'Kranke, which ends in -e, adds a linking -n- before Haus: Krankenhaus (hospital).',
+      explanation:
+        'Kranke, which ends in -e, adds a linking -n- before Haus: Krankenhaus (hospital).',
     },
     {
       id: 'ch47-ex-50',
@@ -1403,7 +1405,8 @@ export const chapter047: ChapterDefinition = {
       templateParts: ['Sie arbeitet als Ärztin in einem großen ', '.'],
       slots: [{ id: 's1', correctWord: 'Krankenhaus' }],
       wordBank: ['Krankenhaus', 'Krankhaus', 'Krankshaus', 'Krankenshaus'],
-      explanation: 'Kranke, which ends in -e, adds a linking -n- before Haus: das Krankenhaus.',
+      explanation:
+        'Kranke, which ends in -e, adds a linking -n- before Haus: das Krankenhaus.',
     },
     {
       id: 'ch47-ex-65',

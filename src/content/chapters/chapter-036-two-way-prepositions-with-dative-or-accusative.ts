@@ -1579,11 +1579,23 @@ export const chapter036: ChapterDefinition = {
       prompt: 'Match the verb to whether it typically answers wo? or wohin?.',
       pairs: [
         { id: 'p1', left: 'stehen', right: 'answers wo? (something is standing)' },
-        { id: 'p2', left: 'stellen', right: 'answers wohin? (someone stands something upright)' },
+        {
+          id: 'p2',
+          left: 'stellen',
+          right: 'answers wohin? (someone stands something upright)',
+        },
         { id: 'p3', left: 'liegen', right: 'answers wo? (something is lying)' },
-        { id: 'p4', left: 'legen', right: 'answers wohin? (someone lays something down)' },
+        {
+          id: 'p4',
+          left: 'legen',
+          right: 'answers wohin? (someone lays something down)',
+        },
         { id: 'p5', left: 'sitzen', right: 'answers wo? (someone is sitting)' },
-        { id: 'p6', left: 'setzen', right: 'answers wohin? (someone sets something down)' },
+        {
+          id: 'p6',
+          left: 'setzen',
+          right: 'answers wohin? (someone sets something down)',
+        },
       ],
       explanation:
         'stehen/liegen/sitzen describe a fixed position (wo?), while stellen/legen/setzen describe an action that creates a new position (wohin?).',

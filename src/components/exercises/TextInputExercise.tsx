@@ -33,7 +33,9 @@ export function TextInputExercise({
   const hint = exercise.placeholder;
   const hintCheck = hint ? checkTextAnswer(exercise, hint) : undefined;
   const placeholder =
-    hintCheck && (hintCheck.correct || hintCheck.capitalisationOnlyMismatch) ? undefined : hint;
+    hintCheck && (hintCheck.correct || hintCheck.capitalisationOnlyMismatch)
+      ? undefined
+      : hint;
 
   const sharedProps = {
     id: inputId,

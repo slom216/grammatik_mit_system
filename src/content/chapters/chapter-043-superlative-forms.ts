@@ -1052,7 +1052,8 @@ export const chapter043: ChapterDefinition = {
       answerMode: 'caseInsensitive',
       placeholder: 'am höchsten',
       maxLength: 20,
-      explanation: 'hoch keeps its -ch- in the superlative: höchst-; the predicative form is am höchsten.',
+      explanation:
+        'hoch keeps its -ch- in the superlative: höchst-; the predicative form is am höchsten.',
     },
     {
       id: 'ch43-ex-44',

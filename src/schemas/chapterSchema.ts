@@ -12,7 +12,7 @@ import {
 
 /** Content thresholds required by the specification. */
 export const CONTENT_RULES = {
-  /** All 85 chapters ship 50-100 exercises; the floor is enforced, not aspirational. */
+  /** Every chapter ships 50-100 exercises; the floor is enforced, not aspirational. */
   minExercises: 50,
   maxExercises: 100,
   minSingleChoice: 12,

@@ -42,8 +42,8 @@ describe('chapter selectors', () => {
 
   it('builds a card for every registry chapter, without loading chapter content', () => {
     const cards = selectChapterCards(useProgressStore.getState());
-    expect(cards).toHaveLength(85);
-    expect(cards.filter((card) => card.available)).toHaveLength(85);
+    expect(cards).toHaveLength(84);
+    expect(cards.filter((card) => card.available)).toHaveLength(84);
     // Comes from the registry now, not from the chapter body.
     expect(cards.every((card) => card.estimatedMinutes > 0)).toBe(true);
   });
@@ -51,16 +51,16 @@ describe('chapter selectors', () => {
   it('groups chapters by section', () => {
     const groups = groupBySection(selectChapterCards(useProgressStore.getState()));
     expect(groups[0]?.section.id).toBe('verbs-1');
-    expect(groups.reduce((sum, group) => sum + group.chapters.length, 0)).toBe(85);
+    expect(groups.reduce((sum, group) => sum + group.chapters.length, 0)).toBe(84);
   });
 
   it('filters by level and status', () => {
     const cards = selectChapterCards(useProgressStore.getState());
     const a1 = cards.filter((card) => matchesFilter(card, 'A1'));
     expect(a1.every((card) => card.level === 'A1')).toBe(true);
-    expect(cards.filter((card) => matchesFilter(card, 'all'))).toHaveLength(85);
+    expect(cards.filter((card) => matchesFilter(card, 'all'))).toHaveLength(84);
     expect(cards.filter((card) => matchesFilter(card, 'mastered'))).toHaveLength(0);
-    expect(cards.filter((card) => matchesFilter(card, 'notStarted'))).toHaveLength(85);
+    expect(cards.filter((card) => matchesFilter(card, 'notStarted'))).toHaveLength(84);
   });
 
   it('reflects mastery in the filters and level statistics', () => {
@@ -75,7 +75,7 @@ describe('chapter selectors', () => {
     expect(a1?.completed).toBe(1);
 
     const completion = selectCourseCompletion(useProgressStore.getState());
-    expect(completion.totalChapters).toBe(85);
+    expect(completion.totalChapters).toBe(84);
     expect(completion.completedChapters).toBe(1);
     expect(completion.masteredChapters).toBe(1);
   });
@@ -167,13 +167,26 @@ describe('chapter selectors', () => {
 
   it('finds the next chapter with content across a phase boundary', () => {
     expect(selectNextChapter(10)?.number).toBe(11);
-    expect(selectNextChapter(20)?.number).toBe(21);
     expect(selectNextChapter(30)?.number).toBe(31);
     expect(selectNextChapter(40)?.number).toBe(41);
     expect(selectNextChapter(50)?.number).toBe(51);
     expect(selectNextChapter(60)?.number).toBe(61);
     expect(selectNextChapter(70)?.number).toBe(71);
     expect(selectNextChapter(80)?.number).toBe(81);
+  });
+
+  it('follows course order, finishing a level before moving up', () => {
+    // 20 is A1 and 21 is A2, so the A1 chapters numbered 25-27 and 32-34 come first.
+    expect(selectNextChapter(20)?.number).toBe(25);
+    expect(selectNextChapter(27)?.number).toBe(32);
+    expect(selectNextChapter(34)?.number).toBe(21); // last A1 → first A2
+    expect(selectNextChapter(53)?.number).toBe(50); // last A2 → first B1
+  });
+
+  it('keeps the 41-50 checkpoint although chapter 48 is retired', () => {
+    expect(selectAvailableCheckpoints().map((checkpoint) => checkpoint.id)).toContain(
+      'checkpoint-41-50',
+    );
   });
 
   it('has no next chapter after the last chapter with content', () => {
@@ -245,7 +258,7 @@ describe('matchesQuery', () => {
       .map((card) => card.number);
 
   it('keeps every chapter for an empty query', () => {
-    expect(numbersMatching('   ')).toHaveLength(85);
+    expect(numbersMatching('   ')).toHaveLength(84);
   });
 
   it('matches a title fragment regardless of case', () => {

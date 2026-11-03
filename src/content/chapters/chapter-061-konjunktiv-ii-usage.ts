@@ -1577,7 +1577,8 @@ export const chapter061: ChapterDefinition = {
       grammarFocus: ['konjunktiv-ii', 'meaning-distinction'],
       instruction:
         'Find the token that expresses the wrong strength of certainty and correct it.',
-      prompt: 'Kontext: Regen ist nur möglich, nicht wahrscheinlich. — Es müsste heute regnen.',
+      prompt:
+        'Kontext: Regen ist nur möglich, nicht wahrscheinlich. — Es müsste heute regnen.',
       tokens: ['Es', 'müsste', 'heute', 'regnen.'],
       errorTokenIndex: 1,
       correction: 'könnte',

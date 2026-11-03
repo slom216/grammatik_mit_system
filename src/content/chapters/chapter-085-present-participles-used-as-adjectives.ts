@@ -807,7 +807,8 @@ export const chapter085: ChapterDefinition = {
       ],
       instruction:
         'Complete the sentence with the correct form of the participle. Capitalisation is not checked.',
-      prompt: 'Die Tür war zu, jetzt hat jemand sie geöffnet. Das ist die ___ Tür. (öffnen)',
+      prompt:
+        'Die Tür war zu, jetzt hat jemand sie geöffnet. Das ist die ___ Tür. (öffnen)',
       acceptedAnswers: ['geöffnete'],
       answerMode: 'caseInsensitive',
       placeholder: 'geöffnete',

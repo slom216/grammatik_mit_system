@@ -939,7 +939,8 @@ export const chapter071: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['substantivized-adjectives', 'capitalization', 'etwas'],
       instruction: 'Choose the correctly capitalized and spelled form.',
-      prompt: 'Das war ___, was ich nicht sofort verstanden habe. (something complicated)',
+      prompt:
+        'Das war ___, was ich nicht sofort verstanden habe. (something complicated)',
       options: [
         { id: 'a', text: 'etwas Kompliziertes' },
         { id: 'b', text: 'etwas kompliziertes' },

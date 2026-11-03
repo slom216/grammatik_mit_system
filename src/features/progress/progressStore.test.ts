@@ -63,6 +63,22 @@ describe('progressStore', () => {
     expect(due.map((history) => history.exerciseId)).toEqual(['demo-ex-01']);
   });
 
+  it('never queues exercises from a retired chapter', () => {
+    useProgressStore.getState().recordAttempt({
+      exerciseId: 'ch48-ex-01',
+      chapterNumber: 48,
+      outcome: 'incorrect',
+      now: new Date('2026-03-01T09:00:00.000Z'),
+    });
+
+    expect(
+      selectDueHistories(
+        useProgressStore.getState(),
+        new Date('2026-03-02T09:00:00.000Z'),
+      ),
+    ).toEqual([]);
+  });
+
   it('counts an exercise as covered only once it has been answered correctly', () => {
     const record = useProgressStore.getState().recordAttempt;
     record({ exerciseId: 'ch1-ex-01', chapterNumber: 1, outcome: 'correctFirstAttempt' });

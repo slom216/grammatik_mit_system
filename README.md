@@ -5,7 +5,7 @@ TypeScript. Every chapter provides an explanation, examples, common mistakes, a 
 summary and at least 24 graded exercises. Progress is stored in the browser.
 
 The build in this repository is at **Phase 9**: the application shell, the lesson and
-exercise engine, scoring, review scheduling and persistence are complete, and all 85
+exercise engine, scoring, review scheduling and persistence are complete, and all 84
 chapters are shipped with full content. Chapters 1-10, 11-20, 21-30, 31-40, 41-50,
 51-60, 61-70, 71-80, and 81-85 each add a cumulative review session that mixes exercises across their
 chapter block, and chapters 72-80 (the whole "Sentences and Sentence Connections 2"
@@ -107,8 +107,15 @@ exercise type, duplicate exercise ids, a multiple-choice exercise with fewer tha
 options or an unknown correct option, a text input without accepted answers, an example
 without an English translation, or fewer than three common mistakes.
 
-`src/content/registry.ts` is the single source of truth for the 85-chapter outline; chapter
+`src/content/registry.ts` is the single source of truth for the 84-chapter outline; chapter
 files are checked against it automatically.
+
+Chapter numbers are permanent ids (routes, progress and exercise ids use them), so they
+are never renumbered. Course order is level first (A1 → A2 → B1), then number:
+`chapterRegistry` is sorted that way, and "continue", "next chapter" and the placement
+recommendation all follow it. Retired chapter numbers are listed in `RETIRED_CHAPTERS`
+and must never be reused. Chapter 48 (Compound Verbs) duplicated chapter 57, so its
+unique exercises moved there as `ch57-ex-72`–`79`.
 
 ### Exercise engine
 

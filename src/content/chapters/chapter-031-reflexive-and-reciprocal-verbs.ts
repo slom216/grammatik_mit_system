@@ -1212,7 +1212,7 @@ export const chapter031: ChapterDefinition = {
       errorTokenIndex: 2,
       correction: 'sich',
       explanation:
-        'he washes his own hands, so the dative reflexive pronoun sich is needed; Er wäscht ihm die Hände. is grammatical but means he washes another man\'s hands.',
+        "he washes his own hands, so the dative reflexive pronoun sich is needed; Er wäscht ihm die Hände. is grammatical but means he washes another man's hands.",
     },
     {
       id: 'ch31-ex-55',

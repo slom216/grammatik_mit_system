@@ -1,4 +1,5 @@
 import type { ChapterProgress, ExerciseHistory } from '../../schemas/progressSchema';
+import { chapterRegistry, RETIRED_CHAPTERS } from '../../content/registry';
 import { calculateStreak } from './streak';
 import { selectWeakSpots } from './weakSpots';
 
@@ -51,7 +52,8 @@ export function selectAchievements({
   const histories = Object.values(exerciseHistory);
   const totalAnswers = histories.reduce((sum, entry) => sum + entry.timesAnswered, 0);
   const mastered = Object.values(chapters).filter(
-    (chapter) => chapter.status === 'mastered',
+    (chapter) =>
+      chapter.status === 'mastered' && !RETIRED_CHAPTERS.has(chapter.chapterNumber),
   ).length;
   const streak = calculateStreak(answersByDay, now);
   // "Retired" is the scheduler's own end state: three correct answers in a row.
@@ -103,10 +105,11 @@ export function selectAchievements({
         target: 10,
       },
       {
+        // Id kept from when the course had 85 chapters: unlocked badges are stored by id.
         id: 'mastered-85',
         title: 'The whole course',
-        description: 'Master all 85 chapters',
-        target: 85,
+        description: `Master all ${chapterRegistry.length} chapters`,
+        target: chapterRegistry.length,
       },
     ]),
     ...tiers(retired, [

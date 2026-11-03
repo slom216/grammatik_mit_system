@@ -615,7 +615,11 @@ export const chapter006: ChapterDefinition = {
       instruction:
         'Rewrite the sentence politely, using möchten. Capitalisation and punctuation are checked.',
       prompt: 'Ich will einen Tee.',
-      acceptedAnswers: ['Ich möchte einen Tee.', 'Ich möchte einen Tee, bitte.', 'Ich möchte bitte einen Tee.'],
+      acceptedAnswers: [
+        'Ich möchte einen Tee.',
+        'Ich möchte einen Tee, bitte.',
+        'Ich möchte bitte einen Tee.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich ...',
       maxLength: 60,

@@ -524,7 +524,8 @@ export const chapter041: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['case-identification'],
       instruction: 'Which case does the quoted phrase use?',
-      prompt: 'Which case is "der netten Frau" in: Ich schenke der netten Frau einen Blumenstrauß.',
+      prompt:
+        'Which case is "der netten Frau" in: Ich schenke der netten Frau einen Blumenstrauß.',
       options: [
         { id: 'a', text: 'Nominative' },
         { id: 'b', text: 'Accusative' },

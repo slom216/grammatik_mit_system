@@ -28,7 +28,7 @@ export interface ChapterRegistryEntry {
   tags: string[];
 }
 
-export const chapterRegistry = [
+const outline = [
   {
     number: 1,
     title: 'Personal Pronouns',
@@ -636,22 +636,6 @@ export const chapterRegistry = [
     ],
   },
   {
-    number: 48,
-    title: 'Compound Verbs',
-    section: 'words-and-word-formation',
-    level: 'A2',
-    estimatedMinutes: 25,
-    exerciseCount: 61,
-    tags: [
-      'compound-verbs',
-      'prefix-verbs',
-      'separable-verbs',
-      'inseparable-verbs',
-      'meaning-shift',
-      'word-formation',
-    ],
-  },
-  {
     number: 49,
     title: 'Rules for Grammatical Gender',
     section: 'words-and-word-formation',
@@ -816,8 +800,8 @@ export const chapterRegistry = [
     title: 'Separable and Inseparable Verbs',
     section: 'verbs-3',
     level: 'B1',
-    estimatedMinutes: 35,
-    exerciseCount: 71,
+    estimatedMinutes: 40,
+    exerciseCount: 79,
     tags: [
       'separable-verbs',
       'inseparable-verbs',
@@ -828,6 +812,7 @@ export const chapterRegistry = [
       'partizip-ii',
       'word-order',
       'two-way-prefixes',
+      'meaning-shift',
     ],
   },
   {
@@ -1396,6 +1381,18 @@ export const chapterRegistry = [
   },
 ] as const satisfies readonly ChapterRegistryEntry[];
 
+const LEVEL_RANK: Record<CefrLevel, number> = { A1: 0, A2: 1, B1: 2 };
+
+/**
+ * The outline in course order: level first (A1 → A2 → B1), then chapter number.
+ * Sections are topical and mix levels, so number order alone sends a learner
+ * from A2 chapters back to A1 ones (24 → 25). Chapter numbers are ids — progress,
+ * routes and exercise ids hang off them — so they never change; only the order does.
+ */
+export const chapterRegistry: readonly ChapterRegistryEntry[] = [...outline].sort(
+  (a, b) => LEVEL_RANK[a.level] - LEVEL_RANK[b.level] || a.number - b.number,
+);
+
 const registryByNumber = new Map<number, ChapterRegistryEntry>(
   chapterRegistry.map((entry) => [entry.number, entry]),
 );
@@ -1407,6 +1404,20 @@ export function getRegistryEntry(
 }
 
 /** True when the outline lists this chapter, and therefore a content file exists. */
+/** The chapter after this one in course order, if any. */
+export function nextChapterNumber(chapterNumber: number): number | undefined {
+  const index = chapterRegistry.findIndex((entry) => entry.number === chapterNumber);
+  return index === -1 ? undefined : chapterRegistry[index + 1]?.number;
+}
+
+/**
+ * Chapter numbers taken out of the course. Learners' old progress still refers
+ * to them, so the numbers stay reserved — never reuse one for a new chapter.
+ */
+export const RETIRED_CHAPTERS: ReadonlySet<number> = new Set([
+  48, // Compound Verbs: duplicated 57; its unique exercises moved there as ch57-ex-72..79
+]);
+
 export function hasChapter(chapterNumber: number): boolean {
   return registryByNumber.has(chapterNumber);
 }

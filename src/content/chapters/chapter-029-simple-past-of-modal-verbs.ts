@@ -545,7 +545,10 @@ export const chapter029: ChapterDefinition = {
       instruction:
         'Build a complete, correctly ordered sentence in the simple past from these words. Capitalisation and punctuation are checked.',
       prompt: 'ich – als Kind – nicht – schwimmen – können',
-      acceptedAnswers: ['Ich konnte als Kind nicht schwimmen.', 'Als Kind konnte ich nicht schwimmen.'],
+      acceptedAnswers: [
+        'Ich konnte als Kind nicht schwimmen.',
+        'Als Kind konnte ich nicht schwimmen.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Ich ...',
       maxLength: 60,
@@ -567,7 +570,10 @@ export const chapter029: ChapterDefinition = {
       instruction:
         'Build a complete, correctly ordered sentence in the simple past from these words. Capitalisation and punctuation are checked.',
       prompt: 'er – gestern – zum Arzt – gehen – müssen',
-      acceptedAnswers: ['Er musste gestern zum Arzt gehen.', 'Gestern musste er zum Arzt gehen.'],
+      acceptedAnswers: [
+        'Er musste gestern zum Arzt gehen.',
+        'Gestern musste er zum Arzt gehen.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Er ...',
       maxLength: 60,
@@ -1038,7 +1044,10 @@ export const chapter029: ChapterDefinition = {
       instruction:
         'Build a complete, correctly ordered sentence in the simple past from these words. Capitalisation and punctuation are checked.',
       prompt: 'du – gestern – nicht – kommen – können',
-      acceptedAnswers: ['Du konntest gestern nicht kommen.', 'Gestern konntest du nicht kommen.'],
+      acceptedAnswers: [
+        'Du konntest gestern nicht kommen.',
+        'Gestern konntest du nicht kommen.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Du ...',
       maxLength: 60,

@@ -604,7 +604,12 @@ export const chapter035: ChapterDefinition = {
       instruction:
         'Write a complete sentence describing the location. Capitalisation is checked; no full stop is required.',
       prompt: 'das Auto – stehen – vor – das Haus (Ort, Dativ)',
-      acceptedAnswers: ['Das Auto steht vor dem Haus.', 'Das Auto steht vor dem Haus', 'Vor dem Haus steht das Auto.', 'Vor dem Haus steht das Auto'],
+      acceptedAnswers: [
+        'Das Auto steht vor dem Haus.',
+        'Das Auto steht vor dem Haus',
+        'Vor dem Haus steht das Auto.',
+        'Vor dem Haus steht das Auto',
+      ],
       answerMode: 'normalized',
       placeholder: 'Das Auto steht ...',
       maxLength: 60,
@@ -1047,7 +1052,12 @@ export const chapter035: ChapterDefinition = {
       instruction:
         'Write a complete sentence describing the location. Capitalisation is checked; no full stop is required.',
       prompt: 'die Lampe – hängen – an – die Decke (Ort, Dativ)',
-      acceptedAnswers: ['Die Lampe hängt an der Decke.', 'Die Lampe hängt an der Decke', 'An der Decke hängt die Lampe.', 'An der Decke hängt die Lampe'],
+      acceptedAnswers: [
+        'Die Lampe hängt an der Decke.',
+        'Die Lampe hängt an der Decke',
+        'An der Decke hängt die Lampe.',
+        'An der Decke hängt die Lampe',
+      ],
       answerMode: 'normalized',
       placeholder: 'Die Lampe hängt ...',
       maxLength: 60,

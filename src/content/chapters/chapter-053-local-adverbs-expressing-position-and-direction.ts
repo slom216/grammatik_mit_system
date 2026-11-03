@@ -1222,7 +1222,8 @@ export const chapter053: ChapterDefinition = {
       level: 'recognition',
       grammarFocus: ['links', 'direction'],
       instruction: 'Fill in the missing adverb. Capitalisation is not checked.',
-      prompt: 'Die Apotheke finden Sie ___ um die Ecke, direkt gegenüber der Kirche. (on the left)',
+      prompt:
+        'Die Apotheke finden Sie ___ um die Ecke, direkt gegenüber der Kirche. (on the left)',
       acceptedAnswers: ['links'],
       answerMode: 'caseInsensitive',
       placeholder: 'links',
@@ -1237,7 +1238,8 @@ export const chapter053: ChapterDefinition = {
       level: 'controlled',
       grammarFocus: ['rechts', 'direction'],
       instruction: 'Fill in the missing adverb. Capitalisation is not checked.',
-      prompt: 'Biegen Sie an der nächsten Kreuzung ___ ab, dann sehen Sie das Museum. (turn right)',
+      prompt:
+        'Biegen Sie an der nächsten Kreuzung ___ ab, dann sehen Sie das Museum. (turn right)',
       acceptedAnswers: ['rechts'],
       answerMode: 'caseInsensitive',
       placeholder: 'rechts',
@@ -1765,7 +1767,8 @@ export const chapter053: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['links', 'rechts', 'vorne', 'hinten', 'direction'],
       instruction: 'Drag the correct word into the slot.',
-      prompt: 'Der Supermarkt ist nicht weit, er liegt gleich ___ um die Ecke. (on the left)',
+      prompt:
+        'Der Supermarkt ist nicht weit, er liegt gleich ___ um die Ecke. (on the left)',
       templateParts: ['Der Supermarkt ist nicht weit, er liegt gleich ', ' um die Ecke.'],
       slots: [{ id: 's1', correctWord: 'links' }],
       wordBank: ['links', 'rechts', 'vorne', 'hinten'],

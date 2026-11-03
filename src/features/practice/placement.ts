@@ -1,3 +1,4 @@
+import { nextChapterNumber } from '../../content/registry';
 import type { ChapterDefinition } from '../../schemas/chapterSchema';
 import type { ExerciseAttemptRecord } from '../../schemas/progressSchema';
 import { shuffle, sortedExercises, type RandomSource } from '../chapters/chapterUtils';
@@ -102,7 +103,9 @@ export function scorePlacement(
 
   return {
     probes,
-    recommendedChapter: lastPassed ? lastPassed.chapterNumber + 1 : 1,
+    recommendedChapter: lastPassed
+      ? (nextChapterNumber(lastPassed.chapterNumber) ?? lastPassed.chapterNumber)
+      : 1,
     clearedEverything: probes.length > 0 && firstFailedIndex === -1,
   };
 }

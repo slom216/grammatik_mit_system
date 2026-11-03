@@ -1730,8 +1730,7 @@ export const chapter049: ChapterDefinition = {
       templateParts: ['', ' Dokument liegt hier.'],
       slots: [{ id: 's1', correctWord: 'Das' }],
       wordBank: ['Das', 'Der', 'Die', 'Eine'],
-      explanation:
-        'Dokument ends in -ment and is neuter: Das Dokument liegt hier.',
+      explanation: 'Dokument ends in -ment and is neuter: Das Dokument liegt hier.',
     },
     {
       id: 'ch49-ex-85',

@@ -49,6 +49,8 @@ describe('TextInputExercise', () => {
         showUmlautHelper={false}
       />,
     );
-    expect(screen.getByLabelText('Wir ___ im Kino.').getAttribute('placeholder')).toBe(expected);
+    expect(screen.getByLabelText('Wir ___ im Kino.').getAttribute('placeholder')).toBe(
+      expected,
+    );
   });
 });

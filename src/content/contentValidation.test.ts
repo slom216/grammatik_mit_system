@@ -5,7 +5,7 @@ import {
   validateChapterCollection,
 } from './contentValidation';
 import { allChapters, chapterModules } from './allChapters';
-import { chapterRegistry } from './registry';
+import { chapterRegistry, RETIRED_CHAPTERS } from './registry';
 import { CHAPTER_SECTIONS, CONTENT_RULES } from '../schemas/chapterSchema';
 import { sections } from './sections';
 import {
@@ -61,7 +61,7 @@ describe('shipped content', () => {
 
   it('ships a content file for every registry chapter, and no others', () => {
     expect(allChapters.map((chapter) => chapter.number)).toEqual(
-      chapterRegistry.map((entry) => entry.number),
+      chapterRegistry.map((entry) => entry.number).sort((a, b) => a - b),
     );
   });
 
@@ -79,11 +79,22 @@ describe('shipped content', () => {
 });
 
 describe('chapter registry', () => {
-  it('lists all 85 chapters exactly once and in order', () => {
-    expect(chapterRegistry).toHaveLength(85);
-    expect(chapterRegistry.map((entry) => entry.number)).toEqual(
+  it('lists chapters 1-85 exactly once, minus the retired ones', () => {
+    expect(chapterRegistry).toHaveLength(84);
+    const numbers = [
+      ...chapterRegistry.map((entry) => entry.number),
+      ...RETIRED_CHAPTERS,
+    ];
+    expect(numbers.sort((a, b) => a - b)).toEqual(
       Array.from({ length: 85 }, (_unused, index) => index + 1),
     );
+  });
+
+  it('is in course order: level first, then chapter number', () => {
+    const rank = (entry: (typeof chapterRegistry)[number]) =>
+      ['A1', 'A2', 'B1'].indexOf(entry.level) * 1000 + entry.number;
+    const ranks = chapterRegistry.map(rank);
+    expect(ranks).toEqual([...ranks].sort((a, b) => a - b));
   });
 
   it('only uses known sections and levels', () => {

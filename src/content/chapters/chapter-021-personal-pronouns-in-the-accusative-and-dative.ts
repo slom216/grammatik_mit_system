@@ -778,7 +778,11 @@ export const chapter021: ChapterDefinition = {
         },
         { id: 'ch21-ex-30-p4', left: 'gehören', right: 'to belong to (dative object)' },
         { id: 'ch21-ex-30-p5', left: 'antworten', right: 'to answer (dative object)' },
-        { id: 'ch21-ex-30-p6', left: 'glauben', right: 'to believe someone (dative object)' },
+        {
+          id: 'ch21-ex-30-p6',
+          left: 'glauben',
+          right: 'to believe someone (dative object)',
+        },
       ],
       explanation:
         'helfen, danken, gefallen, gehören, antworten, and glauben all take an indirect object in the dative, even though several look like direct objects in English.',

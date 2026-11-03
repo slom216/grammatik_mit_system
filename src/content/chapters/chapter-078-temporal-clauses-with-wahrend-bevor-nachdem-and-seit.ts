@@ -842,7 +842,14 @@ export const chapter078: ChapterDefinition = {
       instruction:
         'Read the sentence, then answer in German with a short phrase naming the action that happened first. Capitalisation is not checked.',
       prompt: 'Nachdem ich gegessen hatte, ging ich spazieren. Was geschah zuerst?',
-      acceptedAnswers: ['essen', 'das Essen', 'gegessen', 'ich habe gegessen', 'ich hatte gegessen', 'ich aß'],
+      acceptedAnswers: [
+        'essen',
+        'das Essen',
+        'gegessen',
+        'ich habe gegessen',
+        'ich hatte gegessen',
+        'ich aß',
+      ],
       answerMode: 'normalized',
       placeholder: 'essen',
       maxLength: 30,

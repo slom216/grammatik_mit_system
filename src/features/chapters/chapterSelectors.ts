@@ -1,6 +1,9 @@
 import {
   chapterRegistry,
+  getRegistryEntry,
   hasChapter,
+  nextChapterNumber,
+  RETIRED_CHAPTERS,
   type ChapterRegistryEntry,
 } from '../../content/registry';
 import { sections, type SectionDefinition } from '../../content/sections';
@@ -257,20 +260,20 @@ export const COURSE_CHECKPOINTS: readonly CourseCheckpoint[] = [
   { id: 'checkpoint-81-85', title: 'Chapters 81-85', from: 81, to: 85 },
 ];
 
-/** Checkpoints whose full chapter range currently has content. */
+/** Checkpoints whose full chapter range has content. Retired numbers are gaps, not blockers. */
 export function selectAvailableCheckpoints(): CourseCheckpoint[] {
   return COURSE_CHECKPOINTS.filter((checkpoint) => {
     for (let number = checkpoint.from; number <= checkpoint.to; number += 1) {
-      if (!hasChapter(number)) return false;
+      if (!hasChapter(number) && !RETIRED_CHAPTERS.has(number)) return false;
     }
     return true;
   });
 }
 
-/** The next chapter with content after the given one. */
+/** The chapter after the given one in course order (level, then number). */
 export function selectNextChapter(chapterNumber: number): ChapterCardModel | undefined {
-  const ordered = [...chapterRegistry].sort((a, b) => a.number - b.number);
-  const next = ordered.find((entry) => entry.number > chapterNumber);
+  const nextNumber = nextChapterNumber(chapterNumber);
+  const next = nextNumber === undefined ? undefined : getRegistryEntry(nextNumber);
   if (!next) return undefined;
   return {
     number: next.number,

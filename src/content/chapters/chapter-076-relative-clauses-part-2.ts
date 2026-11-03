@@ -1048,7 +1048,8 @@ export const chapter076: ChapterDefinition = {
       level: 'production',
       grammarFocus: ['relative-pronouns', 'preposition', 'dative'],
       instruction: 'Write the missing relative pronoun. Capitalisation is not checked.',
-      prompt: 'Die Wohnung, nach ___ wir suchen, muss günstig sein. (suchen nach + Dativ)',
+      prompt:
+        'Die Wohnung, nach ___ wir suchen, muss günstig sein. (suchen nach + Dativ)',
       acceptedAnswers: ['der'],
       answerMode: 'caseInsensitive',
       placeholder: 'der',

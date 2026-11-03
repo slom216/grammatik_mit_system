@@ -1,5 +1,6 @@
 import type { LoaderFunctionArgs } from 'react-router-dom';
 import { loadChapter } from '../../content/chapterLoader';
+import { RETIRED_CHAPTERS } from '../../content/registry';
 import type { ChapterDefinition } from '../../schemas/chapterSchema';
 
 /**
@@ -36,11 +37,20 @@ export async function cumulativeRouteLoader({
     Number.isInteger(from) && Number.isInteger(to) && from <= to && to - from < MAX_RANGE;
   if (!valid) return { from, to, chapters: [], complete: false };
 
-  const numbers = Array.from({ length: to - from + 1 }, (_unused, index) => from + index);
+  // A retired chapter leaves a gap in the numbers; it is skipped, not missing.
+  const numbers = Array.from(
+    { length: to - from + 1 },
+    (_unused, index) => from + index,
+  ).filter((number) => !RETIRED_CHAPTERS.has(number));
   const loaded = await Promise.all(numbers.map(loadChapter));
   const chapters = loaded.filter(
     (chapter): chapter is ChapterDefinition => chapter !== undefined,
   );
 
-  return { from, to, chapters, complete: chapters.length === numbers.length };
+  return {
+    from,
+    to,
+    chapters,
+    complete: numbers.length > 0 && chapters.length === numbers.length,
+  };
 }

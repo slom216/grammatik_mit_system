@@ -1127,7 +1127,8 @@ export const chapter066: ChapterDefinition = {
         },
         {
           speaker: 'Max',
-          german: 'Ich bin nicht sicher. Ich lasse dich wissen, sobald ich Bescheid weiß.',
+          german:
+            'Ich bin nicht sicher. Ich lasse dich wissen, sobald ich Bescheid weiß.',
           english: "I'm not sure. I'll let you know once I find out.",
         },
       ],
@@ -1847,8 +1848,7 @@ export const chapter066: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['lassen', 'perfect-tense', 'double-infinitive', 'error-correction'],
       instruction: 'Find the token that uses the wrong form, and correct it.',
-      prompt:
-        'Ein Freund erzählt, warum er das Auto fahren durfte. Etwas stimmt nicht.',
+      prompt: 'Ein Freund erzählt, warum er das Auto fahren durfte. Etwas stimmt nicht.',
       tokens: ['Er', 'hat', 'mich', 'gefahren', 'lassen.'],
       errorTokenIndex: 3,
       correction: 'fahren',

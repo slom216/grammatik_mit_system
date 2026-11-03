@@ -1527,7 +1527,11 @@ export const chapter083: ChapterDefinition = {
       instruction: 'Match each sentence to the preposition that correctly completes it.',
       prompt: 'Match the sentences to the missing prepositions.',
       pairs: [
-        { id: 'p1', left: 'Sie arbeitet ___ nächstem Montag in der neuen Firma.', right: 'ab' },
+        {
+          id: 'p1',
+          left: 'Sie arbeitet ___ nächstem Montag in der neuen Firma.',
+          right: 'ab',
+        },
         { id: 'p2', left: 'Der Vertrag läuft ___ Ende des Jahres.', right: 'bis' },
         { id: 'p3', left: '___ drei Jahren lebt sie in München.', right: 'seit' },
         {

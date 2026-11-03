@@ -1280,7 +1280,8 @@ export const chapter051: ChapterDefinition = {
       answerMode: 'normalized',
       placeholder: 'das Königtum',
       maxLength: 25,
-      explanation: 'König + -tum → das Königtum ("kingship, monarchy"); most -tum nouns are neuter.',
+      explanation:
+        'König + -tum → das Königtum ("kingship, monarchy"); most -tum nouns are neuter.',
     },
     {
       id: 'ch51-ex-54',

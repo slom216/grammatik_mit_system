@@ -2064,7 +2064,8 @@ export const chapter079: ChapterDefinition = {
       level: 'transfer',
       grammarFocus: ['error-correction', 'um-zu', 'reflexive-verb'],
       instruction: 'The car is for himself. Find the token with the mistake.',
-      prompt: 'Er spart Geld, um ihm ein neues Auto zu kaufen. (Das Auto ist für ihn selbst.)',
+      prompt:
+        'Er spart Geld, um ihm ein neues Auto zu kaufen. (Das Auto ist für ihn selbst.)',
       tokens: [
         'Er',
         'spart',

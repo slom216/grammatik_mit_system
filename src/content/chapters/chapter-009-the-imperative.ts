@@ -931,7 +931,12 @@ export const chapter009: ChapterDefinition = {
       instruction:
         'Turn the statement into a command for du. Capitalisation and punctuation are checked.',
       prompt: 'Du isst dein Gemüse nicht. (Tell the child to eat their vegetables.)',
-      acceptedAnswers: ['Iss dein Gemüse!', 'Iss dein Gemüse.', 'Iss dein Gemüse auf!', 'Iss dein Gemüse auf.'],
+      acceptedAnswers: [
+        'Iss dein Gemüse!',
+        'Iss dein Gemüse.',
+        'Iss dein Gemüse auf!',
+        'Iss dein Gemüse auf.',
+      ],
       answerMode: 'normalized',
       placeholder: 'Iss ...',
       maxLength: 60,

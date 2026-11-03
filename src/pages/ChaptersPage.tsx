@@ -31,7 +31,7 @@ export function ChaptersPage() {
       <header>
         <h1>Chapter catalogue</h1>
         <p className="text-muted prose">
-          All 85 chapters of the course, grouped by section.
+          All {cards.length} chapters of the course, grouped by section.
         </p>
       </header>
 

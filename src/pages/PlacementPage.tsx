@@ -12,7 +12,7 @@ import {
   findExerciseAcrossChapters,
   formatChapterNumber,
 } from '../features/chapters/chapterUtils';
-import { getRegistryEntry } from '../content/registry';
+import { chapterRegistry, getRegistryEntry } from '../content/registry';
 import type { PlacementRouteResult } from '../features/practice/placementRoute';
 import {
   buildPlacementExerciseIds,
@@ -144,9 +144,10 @@ export function PlacementPage() {
         <Card title="Find your starting point" titleLevel={2}>
           <div className="stack">
             <p className="prose">
-              The course runs to 85 chapters from A1 to B1. This short test samples{' '}
-              {chapters.length} of them, {buildPlacementExerciseIds(chapters).length}{' '}
-              exercises in total, and suggests where to begin.
+              The course runs to {chapterRegistry.length} chapters from A1 to B1. This
+              short test samples {chapters.length} of them,{' '}
+              {buildPlacementExerciseIds(chapters).length} exercises in total, and
+              suggests where to begin.
             </p>
             <p className="text-sm text-muted">
               Answer what you can and guess at the rest — the point is to find where your
