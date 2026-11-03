@@ -54,6 +54,14 @@ const FOOTER_GROUPS = [
   },
 ];
 
+/** The other apps in the suite. External, so they stay plain anchors. */
+const DEULERN_LINKS = [
+  { href: 'https://deulern.com', label: 'All DeuLern apps' },
+  { href: 'https://wortschatz.deulern.com', label: 'Deutsch Wortschatz' },
+  { href: 'https://verben.deulern.com', label: 'Deutsch Verben Meister' },
+  { href: 'https://lese.deulern.com', label: 'Lese Reise' },
+];
+
 export function AppShell() {
   // Selected off the whole store rather than with a store selector: the
   // selector builds fresh objects, which zustand would see as a new snapshot
@@ -206,6 +214,14 @@ export function AppShell() {
                   ))}
                 </div>
               ))}
+              <div className="app-footer__group">
+                <p className="app-footer__heading">DeuLern</p>
+                {DEULERN_LINKS.map((link) => (
+                  <a key={link.href} href={link.href}>
+                    {link.label}
+                  </a>
+                ))}
+              </div>
             </div>
             <p className="app-footer__note">
               An independent study app organised around common A1–B1 German grammar

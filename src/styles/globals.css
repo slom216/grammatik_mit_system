@@ -317,7 +317,7 @@ a:hover {
 
 .app-footer__body {
   display: grid;
-  grid-template-columns: repeat(3, max-content) minmax(0, 1fr);
+  grid-template-columns: repeat(4, max-content) minmax(0, 1fr);
   margin-bottom: var(--space-5);
   padding-top: var(--space-5);
   border-top: var(--border-width) solid var(--color-border-strong);
@@ -2596,7 +2596,7 @@ a.button--primary::after {
   }
 
   .app-footer__body {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     padding-bottom: var(--space-5);
   }
 
